@@ -9,7 +9,6 @@ The mobile driver’s license holder’s hair color on record with the issuer.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ The full name of the service, as sent over the air.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

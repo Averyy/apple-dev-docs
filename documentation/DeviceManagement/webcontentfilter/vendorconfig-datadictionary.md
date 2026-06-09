@@ -11,8 +11,6 @@ A custom dictionary for the filtering service plug-in.
 - Mac Catalyst 7.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

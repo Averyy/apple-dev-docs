@@ -45,12 +45,12 @@ Update the leaderboards relationship for a specific Game Center leaderboard set.
   Add a leaderboard to a leaderboard set.
 - [Edit a Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_.md)
   Modify the metadata for a leaderboard set.
-- [Modify the Leaderboards in Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the leaderboards in a leaderboard set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Edit the positions of leaderboards in an existing leaderboard set.
-- [Edit the Releationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
+- [Edit the relationship between a leaderboard and a group leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
   Modify the group leaderboards in a leaderboard set.
 - [Delete a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_.md)
-  Delete a specifc leaderboard set.
+  Delete a specific leaderboard set.
 - [Delete the Relationship Between a Leaderboard and a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Remove a leaderboard from a leaderboard set.
 

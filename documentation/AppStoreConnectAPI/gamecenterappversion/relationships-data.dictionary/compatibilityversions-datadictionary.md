@@ -16,6 +16,7 @@ object GameCenterAppVersion.Relationships.CompatibilityVersions
 
 ### Objects
 - [object GameCenterAppVersion.Relationships.CompatibilityVersions.Data](gamecenterappversion/relationships-data.dictionary/compatibilityversions-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related Game Center app version resource.
 
 ## Properties
 

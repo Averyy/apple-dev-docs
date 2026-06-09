@@ -35,9 +35,9 @@
   Hashes the essential components of this value by feeding them into the given hasher.
 - [func lowercased() -> String](substring/lowercased.md)
 - [func uppercased() -> String](substring/uppercased.md)
-- [func withCString<Result>((UnsafePointer<CChar>) throws -> Result) rethrows -> Result](substring/withcstring(_:).md)
+- [func withCString<Result, E>((UnsafePointer<CChar>) throws(E) -> Result) throws(E) -> Result](substring/withcstring(_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
-- [func withCString<Result, TargetEncoding>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws -> Result) rethrows -> Result](substring/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](substring/withcstring(encodedas:_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 
 

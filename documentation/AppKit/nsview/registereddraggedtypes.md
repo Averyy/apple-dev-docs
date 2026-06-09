@@ -26,6 +26,8 @@ This property contains an array of [`NSString`](https://developer.apple.com/docu
   Unregisters the view as a possible destination in a dragging session.
 - [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nsview/begindraggingsession(with:event:source:).md)
   Initiates a dragging session with a group of dragging items.
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+  Initiates a drag operation using a gesture recognizer.
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nsview/shoulddelaywindowordering(for:).md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 

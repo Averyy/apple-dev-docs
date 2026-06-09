@@ -12,7 +12,7 @@ Apple builds an index of alternative marketplace apps in order to integrate them
 
 The application catalog-crawling mechanism is based on two standard industry practices: [`sitemaps`](https://developer.apple.comhttps://sitemaps.org) and semantic, [`structured data schemas`](https://developer.apple.comhttps://schema.org).
 
-App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a Marketplace Search Detail Url`](post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
+App developers for alternative marketplaces need to maintain a web presence, which means being reachable over the web, and use App Store Connect API to submit the URL of a root sitemap. To learn more see, [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md). Apple uses the root sitemap for further URL discovery and traverses subsequent sitemaps when a catalog is large enough to need fragmentation, or directly uses application URLs. Each application URL needs to return an HTML document enriched with structured data annotated in accordance with schema.org’s schemas, specifically the `MobileApplication` type. Apple defines which fields must be populated using a mixture of standard fields and additional proprietary properties specified using the `supportingData` field, which is described below.
 
 Here’s an example catalog with two applications – an app called Backyard Birds, and another called Camping App:
 
@@ -34,7 +34,7 @@ The following items are required for the alternative marketplace:
 
 > **Note**:  Apple infers the hostname from the root sitemap URL you configure by using `POST-v1-marketplaceDomains`.
 
-The marketplace submits the sitemap URL to App Store Connect with [`Add a Marketplace Search Detail Url`](post-v1-marketplacesearchdetails.md).
+The marketplace submits the sitemap URL to App Store Connect with [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md).
 
 The sitemap is the root file where Applebot start its crawl and then it proceeds to the application URLs.
 
@@ -213,7 +213,7 @@ Optionally, every instance *may* define additional ranking signals to facilitate
 | Property name | Name in code | Type | Note |
 | --- | --- | --- | --- |
 | Aggregate rating | `aggregateRating` | `object` | This object is not in `supportingData` object. All four fields are mandatory. For more information, see the next table. |
-| Country supported | `countriesSupported` | `array` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availabilty of apps per country for Spotlight. |
+| Country supported | `countriesSupported` | `array` ![None](https://docs-assets.developer.apple.com/published/67dc4b07a8d84366d4cc0e812eb40b4a/spacer.png) 2-letter country codes as defined per [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search/code/) | You can use this array to filter the availability of apps per country for Spotlight. |
 | Popularity | `com.apple.alternativeDistribution.search.ranking.popularity` | `float, 0` to `100` | A higher number means a more popular app, that gives a notion of popularity in an alternative marketplace by comparing apps within a specific marketplace. |
 
 This table shows details for the `AggregateRating` properties:
@@ -244,7 +244,7 @@ This example shows the `popularity` property as part of the `supportingData` cod
 
 Searchabilty for apps distributed on alternative marketplaces has two approaches: Applebot web crawler uses `countriesSupported`, while [`MarketplaceKit`](https://developer.apple.com/documentation/MarketplaceKit) uses `searchTerritory`.
 
-`countriesSupported` is an array that contains a list of 2-letter country codes as defined by [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search). Use these codes to filter the availabilty of an app per country for search. You’re responsible for setting an optional territory as necessary inside your marketplace app. To learn more about territory support, see the MarketplaceKit property `searchTerritory`.
+`countriesSupported` is an array that contains a list of 2-letter country codes as defined by [`ISO 3166-1 alpha-2`](https://developer.apple.comhttps://www.iso.org/obp/ui/#search). Use these codes to filter the availability of an app per country for search. You’re responsible for setting an optional territory as necessary inside your marketplace app. To learn more about territory support, see the MarketplaceKit property `searchTerritory`.
 
 When someone searchs inside Lookup, Safari, or Spotlight, the request context contains the territory, which you set through the `setSearchTerritory` instance method on `AppLibrary`.
 
@@ -258,14 +258,14 @@ For this example, the user searches for outdoor apps. There are three apps that 
 
 ## See Also
 
-- [Add a Marketplace Search Detail Url](post-v1-marketplacesearchdetails.md)
+- [Add a marketplace search detail url](post-v1-marketplacesearchdetails.md)
   Add a search detail URL for the alternative marketplace.
-- [Read the Marketplace Search Detail Url](get-v1-apps-_id_-marketplacesearchdetail.md)
+- [Read the marketplace search detail url](get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
-- [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
-- [Modify a Marketplace Search Detail Url](patch-v1-marketplacesearchdetails-_id_.md)
+- [Get the marketplace search detail ID for an app](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
+- [Modify a marketplace search detail url](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
-- [Delete a Marketplace Search Detail Url](delete-v1-marketplacesearchdetails-_id_.md)
+- [Delete a marketplace search detail url](delete-v1-marketplacesearchdetails-_id_.md)
   Delete search detail URL for the alternative marketplace.
 
 

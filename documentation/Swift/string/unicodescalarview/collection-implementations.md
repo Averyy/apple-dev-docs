@@ -68,7 +68,7 @@
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](string/unicodescalarview/subscript(_:)-gee0.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/unicodescalarview/subscript(_:)-qk0r.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/unicodescalarview/subscript(_:)-qk0r.md)
 ### Type Aliases
 - [String.UnicodeScalarView.Index](string/unicodescalarview/index.md)
   A type that represents a position in the collection.

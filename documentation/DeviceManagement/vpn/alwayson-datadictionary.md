@@ -10,8 +10,6 @@ The dictionary that contains IPSec settings.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -36,7 +34,7 @@ object VPN.AlwaysOn
 - `AllowAllCaptiveNetworkPlugins` (integer): If `1`, allows traffic from all captive networking apps outside the VPN tunnel to perform captive network handling.
 - `AllowCaptiveWebSheet` (integer): If `1`, allows traffic from Captive Web Sheet outside the VPN tunnel.
 - `AllowedCaptiveNetworkPlugins` ([VPN.AlwaysOn.AllowedCaptiveNetworkPluginElement]): The array of captive networking apps whose traffic is allowed outside the VPN tunnel, to perform captive network handling. Used only when `AllowAllCaptiveNetworkPlugins` is `false`.
-- `ApplicationExceptions` ([VPN.AlwaysOn.ApplicationExceptionElement]): An array that contains an arbitrary number of apps whose connections occur outside the VPN.
+- `ApplicationExceptions` ([VPN.AlwaysOn.ApplicationExceptionElement]): An array that contains an arbitrary number of apps whose connections occur outside the VPN. Available: iOS 13.6+ | iPadOS 13.6+ | visionOS 1+
 - `ServiceExceptions` ([VPN.AlwaysOn.ServiceExceptionElement]): An array that contains an arbitrary number of service exceptions.
 - `TunnelConfigurations` ([VPN.AlwaysOn.TunnelConfigurationElement]) *(required)*: An array that contains an arbitrary number of tunnel configurations.
 - `UIToggleEnabled` (integer): If `1`, allows the user to disable the VPN configuration.

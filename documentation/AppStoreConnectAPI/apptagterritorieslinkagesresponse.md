@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of IDs of related resources.
+A response containing the resource identifiers of territories associated with an app tag.
 
 **Availability**:
 - App Store Connect API 4.1+
@@ -18,7 +18,7 @@ object AppTagTerritoriesLinkagesResponse
 
 ### Dictionaries
 - [object AppTagTerritoriesLinkagesResponse.Data](apptagterritorieslinkagesresponse/data-data.dictionary.md)
-  The data structure that represents an app tag territories linkages response resource.
+  The resource linkage data identifying a territory associated with an app tag.
 
 ## Properties
 
@@ -29,13 +29,13 @@ object AppTagTerritoriesLinkagesResponse
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of tags associated with an app.
 - [object AppTag](apptag.md)
-  The data structure that represents an app tag resource.
+  A label used to categorize an app for internal organization or to control which App Store territories feature it.
 - [object AppTagResponse](apptagresponse.md)
-  A response that contains a single app tag response resource.
+  A response containing a single app tag.
 - [object AppTagsResponse](apptagsresponse.md)
-  A response that contains a list of app tags response resources.
+  A response containing a list of tags associated with apps.
 - [object AppTagUpdateRequest](apptagupdaterequest.md)
   The request body you use to update an app tag update request.
 

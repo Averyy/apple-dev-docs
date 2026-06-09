@@ -55,7 +55,6 @@ For more information on creating custom materials and writing shader functions, 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

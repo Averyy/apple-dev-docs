@@ -37,11 +37,6 @@ struct EntitySchema
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
 
-## See Also
-
-- [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
-- [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
-
 
 ---
 

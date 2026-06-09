@@ -37,6 +37,8 @@ Each instance of this class represents a website in a particular app category. F
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

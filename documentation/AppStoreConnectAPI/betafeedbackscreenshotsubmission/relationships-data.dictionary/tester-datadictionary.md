@@ -16,6 +16,7 @@ object BetaFeedbackScreenshotSubmission.Relationships.Tester
 
 ### Dictionaries
 - [object BetaFeedbackScreenshotSubmission.Relationships.Tester.Data](betafeedbackscreenshotsubmission/relationships-data.dictionary/tester-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a beta feedback screenshot submission.
 
 ## Properties
 

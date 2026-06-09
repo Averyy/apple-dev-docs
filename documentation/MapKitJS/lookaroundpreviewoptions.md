@@ -11,8 +11,7 @@ Options for initializing a LookAroundPreview object.
 ## Declaration
 
 ```swift
-interface LookAroundPreviewOptions
-    extends CommonLookAroundOptions
+interface LookAroundPreviewOptions extends CommonLookAroundOptions
 ```
 
 ## Topics

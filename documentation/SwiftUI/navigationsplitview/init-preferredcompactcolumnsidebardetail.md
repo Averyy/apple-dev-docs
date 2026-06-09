@@ -18,7 +18,7 @@ Creates a two-column navigation split view that enables programmatic control ove
 
 ```swift
 nonisolated
-init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, @ViewBuilder sidebar: () -> Sidebar, @ViewBuilder detail: () -> Detail) where Content == EmptyView
+init(preferredCompactColumn: Binding<NavigationSplitViewColumn>, @ContentBuilder sidebar: () -> Sidebar, @ContentBuilder detail: () -> Detail) where Content == EmptyView
 ```
 
 ## Parameters

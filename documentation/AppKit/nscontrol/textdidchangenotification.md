@@ -24,6 +24,8 @@ The field editor of the edited cell originally sends an [`didChangeNotification`
 
 See the [`controlTextDidChange:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidChange:) method for details. The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSControl.TextDidChangeMessage`](nscontrol/textdidchangemessage.md).
+
 ## See Also
 
 - [class let textDidBeginEditingNotification: NSNotification.Name](nscontrol/textdidbegineditingnotification.md)

@@ -26,6 +26,8 @@ If you don’t specify a departure date, the server will use the current date an
   An array of coordinates that represent end points for estimated arrival time requests.
 - [transportType](etarequestoptions/transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
+- [signal](etarequestoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

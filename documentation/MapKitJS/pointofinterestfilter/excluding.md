@@ -12,8 +12,8 @@ Creates a point-of-interest filter that excludes categories from a list that you
 
 ```swift
 static excluding(
-        categories: PointOfInterestCategory[],
-    ): PointOfInterestFilter;
+    categories: PointOfInterestCategory[],
+): PointOfInterestFilter;
 ```
 
 ## See Also

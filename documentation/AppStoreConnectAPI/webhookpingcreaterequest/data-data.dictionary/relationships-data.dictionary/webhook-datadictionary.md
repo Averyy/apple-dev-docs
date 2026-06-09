@@ -16,6 +16,7 @@ object WebhookPingCreateRequest.Data.Relationships.Webhook
 
 ### Dictionaries
 - [object WebhookPingCreateRequest.Data.Relationships.Webhook.Data](webhookpingcreaterequest/data-data.dictionary/relationships-data.dictionary/webhook-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a webhook ping.
 
 ## Properties
 

@@ -16,6 +16,7 @@ object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion
 
 ### Objects
 - [object GameCenterAppVersionCreateRequest.Data.Relationships.AppStoreVersion.Data](gamecenterappversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center app version.
 
 ## Properties
 

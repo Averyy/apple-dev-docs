@@ -11,6 +11,7 @@ Creates a builder with the an array of prompts.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,7 @@ static func buildArray(_ instructions: [some InstructionsRepresentable]) -> Inst
 ## See Also
 
 - [static func buildBlock<each I>(repeat each I) -> Instructions](instructionsbuilder/buildblock(_:).md)
-  Creates a builder with the a block.
+  Creates a builder with a block.
 - [static func buildEither(first: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(first:).md)
   Creates a builder with the first component.
 - [static func buildEither(second: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(second:).md)

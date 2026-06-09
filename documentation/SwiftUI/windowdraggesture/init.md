@@ -11,6 +11,7 @@ Creates a window drag gesture.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

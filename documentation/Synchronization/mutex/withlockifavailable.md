@@ -22,7 +22,7 @@ borrowing func withLockIfAvailable<Result, E>(_ body: (inout sending Value) thro
 
 #### Return Value
 
-The return value, if any, of the `body` closure parameter or nil if the lock couldn’t be acquired.
+The return value, if any, of the `body` closure parameter or `nil` if the lock couldn’t be acquired.
 
 #### Discussion
 
@@ -39,6 +39,8 @@ defer {
 }
 return try body(&value)
 ```
+
+> **Note**: This function cannot spuriously fail to acquire the lock. The behavior of similar functions in other languages (such as C’s `mtx_trylock()`) is platform-dependent and may differ from Swift’s behavior.
 
 ## Parameters
 

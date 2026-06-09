@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: enum
 
+Defines the external entity resolving policy used by an `NSXMLParser` instance.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -22,13 +24,21 @@ enum ExternalEntityResolvingPolicy
 
 ### Constants
 - [XMLParser.ExternalEntityResolvingPolicy.always](xmlparser/externalentityresolvingpolicy-swift.enum/always.md)
+  The parser always resolves external entities.
 - [XMLParser.ExternalEntityResolvingPolicy.never](xmlparser/externalentityresolvingpolicy-swift.enum/never.md)
+  The parser should never resolve external entities.
 - [XMLParser.ExternalEntityResolvingPolicy.noNetwork](xmlparser/externalentityresolvingpolicy-swift.enum/nonetwork.md)
+  The parser resolves external entities but does not load them over the network.
 - [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](xmlparser/externalentityresolvingpolicy-swift.enum/sameoriginonly.md)
+  The parser resolves external entities only from the same origin as the original URL. Only applies to `NSXMLParser` instances initialized with `-initWithContentsOfURL:`.
 - [XMLParser.ExternalEntityResolvingPolicy.always](xmlparser/externalentityresolvingpolicy-swift.enum/always.md)
+  The parser always resolves external entities.
 - [XMLParser.ExternalEntityResolvingPolicy.never](xmlparser/externalentityresolvingpolicy-swift.enum/never.md)
+  The parser should never resolve external entities.
 - [XMLParser.ExternalEntityResolvingPolicy.noNetwork](xmlparser/externalentityresolvingpolicy-swift.enum/nonetwork.md)
+  The parser resolves external entities but does not load them over the network.
 - [XMLParser.ExternalEntityResolvingPolicy.sameOriginOnly](xmlparser/externalentityresolvingpolicy-swift.enum/sameoriginonly.md)
+  The parser resolves external entities only from the same origin as the original URL. Only applies to `NSXMLParser` instances initialized with `-initWithContentsOfURL:`.
 ### Initializers
 - [init?(rawValue: UInt)](xmlparser/externalentityresolvingpolicy-swift.enum/init(rawvalue:).md)
 

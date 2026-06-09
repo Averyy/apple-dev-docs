@@ -30,7 +30,7 @@ Releases each key and value but doesn’t deallocate `table`. This method is use
 
 ## See Also
 
-- [func NSFreeMapTable(NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
+- [func NSFreeMapTable(consuming NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
   Deletes the specified map table.
 - [func NSAllMapTableKeys(NSMapTable<AnyObject, AnyObject>) -> [Any]](nsallmaptablekeys(_:).md)
   Returns all of the keys in the specified map table.
@@ -50,7 +50,7 @@ Releases each key and value but doesn’t deallocate `table`. This method is use
   Used when finished with an enumerator.
 - [func NSEnumerateMapTable(NSMapTable<AnyObject, AnyObject>) -> NSMapEnumerator](nsenumeratemaptable(_:).md)
   Creates an enumerator for the specified map table.
-- [func NSFreeMapTable(NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
+- [func NSFreeMapTable(consuming NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
   Deletes the specified map table.
 - [func NSMapGet(NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](nsmapget(_:_:).md)
   Returns a map table value for the specified key.

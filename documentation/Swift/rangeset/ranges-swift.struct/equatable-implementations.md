@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](rangeset/ranges-swift.struct/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](rangeset/ranges-swift.struct/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (RangeSet<Bound>.Ranges, RangeSet<Bound>.Ranges) -> Bool](rangeset/ranges-swift.struct/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

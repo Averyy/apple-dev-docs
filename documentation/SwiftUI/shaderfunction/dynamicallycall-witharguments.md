@@ -23,7 +23,9 @@ func dynamicallyCall(withArguments args: [Shader.Argument]) -> Shader
 
 Typically this subscript is used implicitly via function-call syntax, for example:
 
+```swift
 let shader = ShaderLibrary.default.myFunction(.float(42))
+```
 
 which creates a shader passing the value `42` to the first unbound parameter of `myFunction()`.
 

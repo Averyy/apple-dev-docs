@@ -14,6 +14,8 @@ Create, distribute, and update passes for the Wallet app.
 
 *Passes* are digital representations of information that previously might have been distributed on paper, plastic, or some other physical item. Passes enable people to take action, including board a flight, attend an event, or redeem a coupon. Use the Wallet Passes framework to create dynamic, interactive passes that stay up-to-date and provide people with relevant information.
 
+![An illustration showing three different passes. One pass is an annual pass for an art museum, the center pass shows an event pass for a soccer event, and the pass on the right is an airline boarding pass for a flight.](https://docs-assets.developer.apple.com/published/f17b9619dfa604cb5f33a58cf1114b7a/wallet-passes-overview%402x.png)
+
 With this framework you can:
 
 - Create boarding passes, event tickets, store cards, coupons, and generic passes.
@@ -21,8 +23,6 @@ With this framework you can:
 - Display multiple upcoming events on a single ticket.
 - Integrate with system features like Maps, notifications, and Live Activities.
 - Support automatic pass updates with flight tracking for boarding passes.
-
-![An illustration showing three different passes. One pass is a boarding pass for a flight, another pass is a event pass for a concert, and the other is a membership card.](https://docs-assets.developer.apple.com/published/9f2c671f1cb0aa608552e73de100fb90/overview-update-wallet-passes%402x.png)
 
 To enable a person to install your pass, you’ll:
 
@@ -35,10 +35,14 @@ You can further tailor passes for a personalized experience and make live update
 ## Topics
 
 ### Essentials
+- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+  Construct and customize a variety of pass styles with this easy-to-use tool.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
 - [Building a Pass](building-a-pass.md)
   Build a distributable pass.
+- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+  Provide customizable information for your Wallet Pass.
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
 - [object Pass](pass.md)

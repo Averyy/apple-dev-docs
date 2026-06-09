@@ -8,8 +8,11 @@ XPC dictionary keys used by the `interface_param` argument returned by the compl
 
 ### Constants
 - [let vmnet_mac_address_key: UnsafePointer<CChar>](vmnet_mac_address_key.md)
+  The MAC address to configure on the virtual interface in the guest operating system.
 - [let vmnet_mtu_key: UnsafePointer<CChar>](vmnet_mtu_key.md)
+  The maximum transmission unit (MTU) to configure on the virtual interface in the guest operating system.
 - [let vmnet_max_packet_size_key: UnsafePointer<CChar>](vmnet_max_packet_size_key.md)
+  The maximum size of the packet that an app can write to the interface.
 
 ## See Also
 

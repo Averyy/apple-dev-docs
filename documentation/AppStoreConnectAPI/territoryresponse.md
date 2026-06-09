@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Territories resource.
+The response body for endpoints that read a single App Store territory.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -22,10 +22,11 @@ object TerritoryResponse
 ## See Also
 
 - [object Territory](territory.md)
-  The data structure that represents a Territories resource.
+  An App Store region (country or territory) where apps, subscriptions, and in-app purchases are offered.
 - [object TerritoriesWithoutIncludesResponse](territorieswithoutincludesresponse.md)
+  A response containing a list of App Store territories, without related resources.
 - [object TerritoriesResponse](territoriesresponse.md)
-  A response that contains a list of Territory resources.
+  The response body for endpoints that list available App Store territories.
 
 
 ---

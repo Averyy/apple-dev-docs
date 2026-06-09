@@ -23,6 +23,7 @@ class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Nam
 
 - [var requiresFlushToResumeDecoding: Bool](avsamplebuffervideorenderer/requiresflushtoresumedecoding.md)
   A Boolean value that Indicates whether the renderer requires flushing to continue decoding frames.
+- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
 - [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](avsamplebuffervideorenderer/flush(removingdisplayedimage:completionhandler:).md)
   Tells the video renderer to discard pending enqueued sample buffers.
 

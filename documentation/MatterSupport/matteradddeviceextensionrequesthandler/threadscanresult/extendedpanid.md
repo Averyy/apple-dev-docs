@@ -33,7 +33,7 @@ var extendedPANID: UInt64
 - [var rssi: Int8](matteradddeviceextensionrequesthandler/threadscanresult/rssi.md)
   The observed RSSI of the network by the device.
 - [var version: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/version.md)
-  The version field, as specified by the Matter specificaiton.
+  The version field, as specified by the Matter specification.
 
 
 ---

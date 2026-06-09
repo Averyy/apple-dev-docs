@@ -11,6 +11,7 @@ The tool’s name.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,8 @@ var name: String
 
 - [var description: String](transcript/tooldefinition/description.md)
   A description of how and when to use the tool.
+- [var parameters: GenerationSchema](transcript/tooldefinition/parameters.md)
+  A schema that specifies the parameters of the tool.
 
 
 ---

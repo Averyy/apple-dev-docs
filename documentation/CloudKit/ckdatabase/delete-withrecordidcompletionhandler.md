@@ -17,7 +17,7 @@ Deletes a specific record.
 ## Declaration
 
 ```swift
-func deleteRecord(withID recordID: CKRecord.ID) async throws -> CKRecord.ID
+func delete(withRecordID recordID: CKRecord.ID) async throws -> CKRecord.ID
 ```
 
 #### Discussion

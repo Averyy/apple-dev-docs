@@ -9,7 +9,6 @@ Stops the room-capture session and indicates whether the app pauses the underlyi
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
 
 ## Declaration
 

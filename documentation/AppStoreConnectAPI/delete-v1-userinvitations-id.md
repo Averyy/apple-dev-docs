@@ -1,4 +1,4 @@
-# Cancel a User Invitation
+# Cancel a user invitation
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Cancel a pending invitation for a user to join your team.
 
 ## See Also
 
-- [Invite a User](post-v1-userinvitations.md)
+- [Invite a user](post-v1-userinvitations.md)
   Invite a user with assigned user roles to join your team.
 
 

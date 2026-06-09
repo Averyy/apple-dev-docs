@@ -90,6 +90,7 @@ The framework provides two playback coordinator subclasses that manage different
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 
 ---

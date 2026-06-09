@@ -76,7 +76,9 @@ Metadata items provide a simple interface to retrieve the available attribute na
 - [let NSMetadataItemContentCreationDateKey: String](nsmetadataitemcontentcreationdatekey.md)
 - [let NSMetadataItemContentModificationDateKey: String](nsmetadataitemcontentmodificationdatekey.md)
 - [let NSMetadataItemContentTypeKey: String](nsmetadataitemcontenttypekey.md)
+  The content type (UTI) of the metadata item.
 - [let NSMetadataItemContentTypeTreeKey: String](nsmetadataitemcontenttypetreekey.md)
+  The content type tree of the metadata item.
 - [let NSMetadataItemContributorsKey: String](nsmetadataitemcontributorskey.md)
 - [let NSMetadataItemCopyrightKey: String](nsmetadataitemcopyrightkey.md)
 - [let NSMetadataItemCountryKey: String](nsmetadataitemcountrykey.md)
@@ -194,9 +196,13 @@ Metadata items provide a simple interface to retrieve the available attribute na
 ### iCloud Keys
 - [let NSMetadataItemIsUbiquitousKey: String](nsmetadataitemisubiquitouskey.md)
 - [let NSMetadataUbiquitousItemContainerDisplayNameKey: String](nsmetadataubiquitousitemcontainerdisplaynamekey.md)
+  The display name of the container that stores the ubiquitous item.
 - [let NSMetadataUbiquitousItemDownloadRequestedKey: String](nsmetadataubiquitousitemdownloadrequestedkey.md)
+  A Boolean value indicating whether a download has been requested for the ubiquitous item.
 - [let NSMetadataUbiquitousItemIsExternalDocumentKey: String](nsmetadataubiquitousitemisexternaldocumentkey.md)
+  A Boolean value indicating whether the ubiquitous item is from an external document.
 - [let NSMetadataUbiquitousItemURLInLocalContainerKey: String](nsmetadataubiquitousitemurlinlocalcontainerkey.md)
+  The URL for the ubiquitous item in the local container.
 - [let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String](nsmetadataubiquitousitemhasunresolvedconflictskey.md)
 - [let NSMetadataUbiquitousItemIsDownloadedKey: String](nsmetadataubiquitousitemisdownloadedkey.md)
 - [let NSMetadataUbiquitousItemIsDownloadingKey: String](nsmetadataubiquitousitemisdownloadingkey.md)
@@ -208,20 +214,29 @@ Metadata items provide a simple interface to retrieve the available attribute na
 - [let NSMetadataUbiquitousItemDownloadingErrorKey: String](nsmetadataubiquitousitemdownloadingerrorkey.md)
 - [let NSMetadataUbiquitousItemUploadingErrorKey: String](nsmetadataubiquitousitemuploadingerrorkey.md)
 - [let NSMetadataUbiquitousItemIsSharedKey: String](nsmetadataubiquitousitemissharedkey.md)
+  A Boolean value indicating whether the ubiquitous item is shared.
 - [let NSMetadataUbiquitousSharedItemCurrentUserPermissionsKey: String](nsmetadataubiquitousshareditemcurrentuserpermissionskey.md)
+  The permissions for the current user, or `nil` if not shared.
 - [let NSMetadataUbiquitousSharedItemCurrentUserRoleKey: String](nsmetadataubiquitousshareditemcurrentuserrolekey.md)
+  The current user’s role for the shared item, or `nil` if not shared.
 - [let NSMetadataUbiquitousSharedItemMostRecentEditorNameComponentsKey: String](nsmetadataubiquitousshareditemmostrecenteditornamecomponentskey.md)
+  The name components of the most recent editor of the shared document, or `nil` if it is the current user.
 - [let NSMetadataUbiquitousSharedItemOwnerNameComponentsKey: String](nsmetadataubiquitousshareditemownernamecomponentskey.md)
+  The name components of the shared item’s owner, or `nil` if the current user is the owner.
 ### iCloud Download Status Values
 - [let NSMetadataUbiquitousItemDownloadingStatusCurrent: String](nsmetadataubiquitousitemdownloadingstatuscurrent.md)
 - [let NSMetadataUbiquitousItemDownloadingStatusDownloaded: String](nsmetadataubiquitousitemdownloadingstatusdownloaded.md)
 - [let NSMetadataUbiquitousItemDownloadingStatusNotDownloaded: String](nsmetadataubiquitousitemdownloadingstatusnotdownloaded.md)
 ### iCloud Sharing Permissions Values
 - [let NSMetadataUbiquitousSharedItemPermissionsReadOnly: String](nsmetadataubiquitousshareditempermissionsreadonly.md)
+  The current user is only allowed to read this item.
 - [let NSMetadataUbiquitousSharedItemPermissionsReadWrite: String](nsmetadataubiquitousshareditempermissionsreadwrite.md)
+  The current user is allowed to both read and write this item.
 ### iCloud Sharing Role Values
 - [let NSMetadataUbiquitousSharedItemRoleOwner: String](nsmetadataubiquitousshareditemroleowner.md)
+  The current user is the owner of the shared item.
 - [let NSMetadataUbiquitousSharedItemRoleParticipant: String](nsmetadataubiquitousshareditemroleparticipant.md)
+  The current user is a participant of the shared item.
 ### Initializers
 - [init?(URL: URL)](nsmetadataitem/init(url:)-viww.md)
 

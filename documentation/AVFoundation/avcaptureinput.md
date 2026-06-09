@@ -61,8 +61,12 @@ A capture makes connections between capture inputs and capture outputs using a [
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [AVCam: Building a camera app](avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [Build a responsive camera app that launches quickly](build-a-responsive-camera-app-that-launches-quickly.md)
+  Build a fast camera launch experience for your iOS and iPadOS apps.
 - [Capturing Cinematic video](capturing-cinematic-video.md)
   Capture video with an adjustable depth of field and focus points.
+- [Supporting Center Stage front camera in your iOS app](supporting-center-stage-front-camera-in-your-ios-app.md)
+  Enable Center Stage for photos and videos on the iPhone front camera.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](avmulticampip-capturing-from-multiple-cameras.md)
   Simultaneously record the output from the front and back cameras into a single movie file by using a multi-camera capture session.
 - [AVCamBarcode: detecting barcodes and faces](avcambarcode-detecting-barcodes-and-faces.md)

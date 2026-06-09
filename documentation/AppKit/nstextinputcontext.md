@@ -60,6 +60,8 @@ The text input system communicates primarily with the client of the activated in
 - [func textInputClientWillStartScrollingOrZooming()](nstextinputcontext/textinputclientwillstartscrollingorzooming.md)
 - [func textInputClientDidScroll()](nstextinputcontext/textinputclientdidscroll.md)
 - [func textInputClientDidUpdateSelection()](nstextinputcontext/textinputclientdidupdateselection.md)
+### Structures
+- [NSTextInputContext.KeyboardSelectionDidChangeMessage](nstextinputcontext/keyboardselectiondidchangemessage.md)
 
 ## Relationships
 

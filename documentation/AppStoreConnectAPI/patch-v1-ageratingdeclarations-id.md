@@ -1,4 +1,4 @@
-# Modify an Age Rating Declaration
+# Modify an age rating declaration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -153,7 +153,7 @@ PATCH https://api.appstoreconnect.apple.com/v1/ageRatingDeclarations/26b5c300-18
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the age rating declaration resource ID from the `GET-v1-appStoreVersions-{id}-ageRatingDeclaration` response.
 
 ## Request Body
 
@@ -161,9 +161,9 @@ The request body you use to update an Age Rating Declaration.
 
 ## See Also
 
-- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
-  Get the age rating declaration for the app info.
-- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
+- [Read the age-rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+  Get the age-rating declaration for an app info.
+- [Get the age rating declaration ID for an app info](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 
 
 ---

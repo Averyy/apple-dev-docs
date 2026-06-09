@@ -11,6 +11,7 @@ Creates a carousel table view style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

@@ -232,6 +232,8 @@ func addTimeObserver() {
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
 - [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
   An interface that responds to events from a continuity device picker view controller.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

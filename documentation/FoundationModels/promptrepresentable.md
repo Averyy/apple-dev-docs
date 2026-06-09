@@ -11,6 +11,7 @@ A type whose value can represent a prompt.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -60,8 +61,11 @@ let response = try await LanguageModelSession().respond {
 ### Inherited By
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
 - [Generable](generable.md)
+- [Transcript.CustomSegment](transcript/customsegment.md)
 ### Conforming Types
+- [Attachment](attachment.md)
 - [GeneratedContent](generatedcontent.md)
+- [ImageReference](imagereference.md)
 - [Prompt](prompt.md)
 
 ## See Also

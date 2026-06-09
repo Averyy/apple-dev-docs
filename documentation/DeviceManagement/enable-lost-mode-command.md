@@ -9,8 +9,6 @@ Enable Lost Mode on a device, which provides a message and phone number on the L
 - iOS 9.3+
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -23,10 +21,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -81,7 +79,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#EnableLostModeCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

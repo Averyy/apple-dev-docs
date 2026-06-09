@@ -77,6 +77,8 @@ Use [`fade(to:duration:)`](audiomixgroup/fade(to:duration:).md) to fade the volu
 
 ## See Also
 
+- [Mixing spatial music](mixing-spatial-music.md)
+  Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
 - [struct AudioMixGroup](audiomixgroup.md)
   A group that manages the playback properties of multiple playing sounds.
 

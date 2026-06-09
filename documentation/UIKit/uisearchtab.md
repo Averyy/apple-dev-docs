@@ -35,6 +35,9 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
 ### Instance Properties
 - [var automaticallyActivatesSearch: Bool](uisearchtab/automaticallyactivatessearch.md)
   Determines if the search tab should automatically activate the embedded search field when the tab becomes visible.
+### Type Properties
+- [class var identifier: String](uisearchtab/identifier.md)
+  The system-assigned identifier for search tabs.
 
 ## Relationships
 

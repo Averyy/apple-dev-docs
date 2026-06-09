@@ -36,8 +36,6 @@ The framework sets the left side padding value to `0`.
   Creates a padding object and initializes it with the provided top and right side values.
 - [new Padding(top, right, bottom, left)](padding/paddingconstructor5.md)
   Creates a padding object and initializes it with the provided values.
-- [interface PaddingConstructorOptions](paddingconstructoroptions.md)
-  Initial values of the edge insets for padding.
 
 
 ---

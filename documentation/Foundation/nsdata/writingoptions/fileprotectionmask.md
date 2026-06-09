@@ -35,6 +35,7 @@ static var fileProtectionMask: NSData.WritingOptions { get }
 - [static var completeFileProtectionUntilFirstUserAuthentication: NSData.WritingOptions](nsdata/writingoptions/completefileprotectionuntilfirstuserauthentication.md)
   An option to allow the file to be accessible after a user first unlocks the device.
 - [static var completeFileProtectionWhenUserInactive: NSData.WritingOptions](nsdata/writingoptions/completefileprotectionwhenuserinactive.md)
+  An option to allow the file to be accessible after a user first unlocks the device.
 
 
 ---

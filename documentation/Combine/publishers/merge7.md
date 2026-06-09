@@ -56,9 +56,7 @@ struct Merge7<A, B, C, D, E, F, G> where A : Publisher, B : Publisher, C : Publi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

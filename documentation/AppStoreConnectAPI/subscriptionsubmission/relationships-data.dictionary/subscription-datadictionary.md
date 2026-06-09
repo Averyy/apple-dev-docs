@@ -16,6 +16,7 @@ object SubscriptionSubmission.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionSubmission.Relationships.Subscription.Data](subscriptionsubmission/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription submission.
 
 ## Properties
 

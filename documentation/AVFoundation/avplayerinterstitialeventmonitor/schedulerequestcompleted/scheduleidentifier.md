@@ -18,6 +18,10 @@
 let scheduleIdentifier: String
 ```
 
+## See Also
+
+- [let result: Result<Data, any Error>](avplayerinterstitialeventmonitor/schedulerequestcompleted/result.md)
+
 
 ---
 

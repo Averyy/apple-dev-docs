@@ -25,10 +25,10 @@ Link quality measurement is a representation of the expected capabilities of the
 ## Topics
 
 ### Initializers
-- [init(UInt32)](nw_link_quality_t/init(_:).md)
-- [init(rawValue: UInt32)](nw_link_quality_t/init(rawvalue:).md)
+- [init(UInt8)](nw_link_quality_t/init(_:).md)
+- [init(rawValue: UInt8)](nw_link_quality_t/init(rawvalue:).md)
 ### Instance Properties
-- [var rawValue: UInt32](nw_link_quality_t/rawvalue.md)
+- [var rawValue: UInt8](nw_link_quality_t/rawvalue.md)
 
 ## Relationships
 

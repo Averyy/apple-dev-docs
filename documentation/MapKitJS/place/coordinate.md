@@ -11,7 +11,7 @@ The latitude and longitude for the place.
 ## Declaration
 
 ```swift
-coordinate?: Coordinate;
+coordinate: Coordinate | null;
 ```
 
 ## See Also

@@ -27,17 +27,17 @@ object UserUpdateRequest
 ## See Also
 
 - [object User](user.md)
-  The data structure that represents a Users resource.
+  A member of your App Store Connect team, with assigned roles and access to specific apps.
 - [object UserResponse](userresponse.md)
-  A response that contains a single Users resource.
+  The response body for endpoints that read or modify a single App Store Connect team member.
 - [object UsersResponse](usersresponse.md)
-  A response that contains a list of Users resources.
+  A response containing a list of team members who have access to your App Store Connect account.
 - [object UserVisibleAppsLinkagesRequest](uservisibleappslinkagesrequest.md)
   A request body you use to add or remove visible apps from a user.
 - [object UserVisibleAppsLinkagesResponse](uservisibleappslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [type UserRole](userrole.md)
-  Strings that represent user roles and permissions in App Store Connect.
+  A string that represents user roles and permissions in App Store Connect.
 
 
 ---

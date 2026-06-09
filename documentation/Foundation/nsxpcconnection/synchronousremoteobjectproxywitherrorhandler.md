@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
@@ -17,6 +19,10 @@
 ```swift
 func synchronousRemoteObjectProxyWithErrorHandler(_ handler: @escaping (any Error) -> Void) -> Any
 ```
+
+#### Discussion
+
+The error handler block and reply block will be invoked on the calling thread before the message to the proxy returns, instead of on the queue for the connection.
 
 ## See Also
 

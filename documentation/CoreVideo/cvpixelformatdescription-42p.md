@@ -18,11 +18,19 @@ The Core Video pixel format description API defines functions and types for defi
 ### Retrieving Format Descriptions
 - [func CVPixelFormatDescriptionArrayCreateWithAllPixelFormatTypes(CFAllocator?) -> CFArray?](cvpixelformatdescriptionarraycreatewithallpixelformattypes(_:).md)
   Returns all the pixel format descriptions known to Core Video.
+### Converting format types
+- [func CVPixelFormatTypeCopyFourCharCodeString(OSType) -> CFString](cvpixelformattypecopyfourcharcodestring(_:).md)
 ### Data Types
 - [struct CVPixelFormatDescription](cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
 - [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
   A structure for holding information that describes a custom extended pixel fill algorithm.
+- [struct CVPixelFormatType](cvpixelformattype.md)
+  Identifier for a pixel format type
+- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+  Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
+- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+  Pattern indicating sensel arrangement.
 ### Callbacks
 - [typealias CVFillExtendedPixelsCallBack](cvfillextendedpixelscallback.md)
   Defines a pointer to a custom extended pixel-fill function, which is called whenever the system needs to pad a buffer holding your custom pixel format.

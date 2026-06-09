@@ -60,11 +60,14 @@ The output of a `AVAudioUnitSampler` is a single stereo bus.
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [class AVAudioSequencer](avaudiosequencer.md)
   An object that plays audio from a collection of MIDI events the system organizes into music tracks.
+- [typealias AVMIDIEventListBlock](avmidieventlistblock.md)
 
 
 ---

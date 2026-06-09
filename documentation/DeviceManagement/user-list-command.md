@@ -10,8 +10,6 @@ Get a list of users with active accounts on a device.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -22,10 +20,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -89,7 +87,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#UserListCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -23,7 +23,7 @@ let entityType: any AppEntity.Type
 ## See Also
 
 - [let identifier: String](entityidentifier/identifier.md)
-  Value uniquely identifying the entity instance within its type
+  Value uniquely identifying the entity instance within its type.
 - [static let valueMaximumLength: Int](entityidentifier/valuemaximumlength.md)
   Maximum allowed length for the `identifier` value. This is a constraint imposed by the system and thus forces us to truncate the identifier if it exceeds the maximum length.
 

@@ -28,7 +28,9 @@ To request information using one of these keys, pass it to the `forKey:` paramet
 
 ### Application keys
 - [static let isApplicationKey: URLResourceKey](urlresourcekey/isapplicationkey.md)
+  `true` if resource is an application (Read-only, value type boolean `NSNumber`).
 - [static let applicationIsScriptableKey: URLResourceKey](urlresourcekey/applicationisscriptablekey.md)
+  `true` if the resource is scriptable. Only applies to applications (Read-only, value type boolean `NSNumber`).
 ### Directory keys
 - [static let isDirectoryKey: URLResourceKey](urlresourcekey/isdirectorykey.md)
   A key for determining whether the resource is a directory.
@@ -137,6 +139,7 @@ To request information using one of these keys, pass it to the `forKey:` paramet
 - [static let volumeResourceCountKey: URLResourceKey](urlresourcekey/volumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as an `NSNumber` object (read-only).
 - [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)
+  `true` if the volume supports setting POSIX access permissions with the `NSURLFileSecurityKey` property. (Read-only, value type boolean `NSNumber`).
 - [static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey](urlresourcekey/volumesupportsadvisoryfilelockingkey.md)
   Key for determining whether the volume implements whole-file advisory locks in the style of flock, along with the `O_EXLOCK` and `O_SHLOCK` flags of the open function, returned as a Boolean `NSNumber` object (read-only).
 - [static let volumeSupportsCasePreservedNamesKey: URLResourceKey](urlresourcekey/volumesupportscasepreservednameskey.md)
@@ -154,6 +157,7 @@ To request information using one of these keys, pass it to the `forKey:` paramet
 - [static let volumeSupportsHardLinksKey: URLResourceKey](urlresourcekey/volumesupportshardlinkskey.md)
   Key for determining whether the volume supports hard links, returned as a Boolean `NSNumber` object (read-only).
 - [static let volumeSupportsImmutableFilesKey: URLResourceKey](urlresourcekey/volumesupportsimmutablefileskey.md)
+  `true` if the volume supports making files immutable with the `NSURLIsUserImmutableKey` or `NSURLIsSystemImmutableKey` properties. (Read-only, value type boolean `NSNumber`).
 - [static let volumeSupportsJournalingKey: URLResourceKey](urlresourcekey/volumesupportsjournalingkey.md)
   Key for determining whether the volume supports journaling, returned as a Boolean `NSNumber` object (read-only).
 - [static let volumeSupportsPersistentIDsKey: URLResourceKey](urlresourcekey/volumesupportspersistentidskey.md)
@@ -218,7 +222,9 @@ To request information using one of these keys, pass it to the `forKey:` paramet
 - [struct URLUbiquitousSharedItemPermissions](urlubiquitousshareditempermissions.md)
   The key for the permissions of a shared item.
 - [static let ubiquitousItemIsSyncPausedKey: URLResourceKey](urlresourcekey/ubiquitousitemissyncpausedkey.md)
+  A Boolean value that indicates whether sync is paused for this item (value type boolean `NSNumber`).
 - [static let ubiquitousItemSupportedSyncControlsKey: URLResourceKey](urlresourcekey/ubiquitousitemsupportedsynccontrolskey.md)
+  The read-only value of the `NSFileManagerSupportedSyncControls` options (value type `NSNumber`).
 ### Thumbnail keys
 - [static let thumbnailKey: URLResourceKey](urlresourcekey/thumbnailkey.md)
   All thumbnails as a single NSImage (read-write).

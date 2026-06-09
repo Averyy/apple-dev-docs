@@ -11,8 +11,8 @@ A Boolean value that indicates whether map rotation is available.
 ## Declaration
 
 ```swift
-get isRotationAvailable(): boolean | undefined;
-set isRotationAvailable(_: boolean | undefined);
+get isRotationAvailable(): boolean;
+set isRotationAvailable(_: boolean);
 ```
 
 #### Discussion

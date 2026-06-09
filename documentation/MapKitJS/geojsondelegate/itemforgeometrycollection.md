@@ -12,9 +12,9 @@ Overrides a geometry collection with the provided item and object.
 
 ```swift
 itemForGeometryCollection?<D extends GeoJSONTypes.GeometryCollection>(
-        item: ItemCollection<D>,
-        object: D,
-    ): ItemCollection<D> | Item[] | null;
+    item: ItemCollection<D>,
+    object: D,
+): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value

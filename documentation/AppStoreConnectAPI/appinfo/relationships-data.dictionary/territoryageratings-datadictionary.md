@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents multiple-territory age-rating resources.
+The territory-specific age rating relationships for an app info record, linking to age ratings in individual App Store regions.
 
 **Availability**:
 - App Store Connect API 3.6+

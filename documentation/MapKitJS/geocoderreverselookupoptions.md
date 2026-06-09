@@ -23,14 +23,16 @@ Configure [`GeocoderReverseLookupOptions`](geocoderreverselookupoptions.md) when
 ### Options
 - [language](geocoderreverselookupoptions/language.md)
   The language to use when displaying the reverse lookup results.
+- [signal](geocoderreverselookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [lookup(place, callback, options)](geocoder/lookup.md)
+- [lookup(place, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
 - [interface GeocoderLookupOptions](geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
 - [interface GeocoderResponse](geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.

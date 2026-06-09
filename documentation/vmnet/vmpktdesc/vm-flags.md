@@ -3,7 +3,7 @@
 **Framework**: vmnet  
 **Kind**: property
 
-Option flags. Should be set to `0` on read.
+Option flags associated with the packet.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -14,6 +14,10 @@ Option flags. Should be set to `0` on read.
 ```swift
 var vm_flags: UInt32
 ```
+
+#### Discussion
+
+Should be set to `0` on read.
 
 ## See Also
 

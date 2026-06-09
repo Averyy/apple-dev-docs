@@ -18,6 +18,10 @@ Posts a single custom metric, the start time of a custom metric, or the end time
 func mxSignpost(_ type: OSSignpostType, dso: UnsafeRawPointer = #dsohandle, log: OSLog, name: StaticString, signpostID: OSSignpostID = .exclusive, _ format: StaticString = "%{public, signpost:metrics}@", _ arguments: [any CVarArg] = [Unmanaged<NSObject>.fromOpaque(_MXSignpostMetricsSnapshot()).takeUnretainedValue()])
 ```
 
+## Mentions
+
+- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+
 #### Discussion
 
 Call this function to mark a custom metric, custom metric start time, or custom metric end time in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md), the `type` of the event, a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit). Don’t alter the parameters `dso`, `signpostID`, or `format`.
@@ -36,6 +40,8 @@ Call this function to mark a custom metric, custom metric start time, or custom 
 
 ## See Also
 
+- [struct SignpostIntervalMetric](signpostintervalmetric.md)
+  A metric that measures the duration and count of custom signpost intervals.
 - [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
   Posts the start time of an animation interval to the log system.
 

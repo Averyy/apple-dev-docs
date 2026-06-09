@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a marketplace search detail update request.
+
 **Availability**:
 - App Store Connect API 3.3+
 
@@ -16,6 +18,7 @@ object MarketplaceSearchDetailUpdateRequest.Data
 
 ### Objects
 - [object MarketplaceSearchDetailUpdateRequest.Data.Attributes](marketplacesearchdetailupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a marketplace search detail update request resource.
 
 ## Properties
 

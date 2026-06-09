@@ -56,6 +56,8 @@ A [`PKDrawingReference`](pkdrawingreference.md) object stores the user-drawn con
   The version of PencilKit necessary to use the drawing.
 ### Initializers
 - [init?(coder: NSCoder)](pkdrawingreference/init(coder:).md)
+### Instance Methods
+- [func erasingStrokePath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform) -> PKDrawing](pkdrawingreference/erasingstrokepath(_:mask:transform:).md)
 
 ## Relationships
 

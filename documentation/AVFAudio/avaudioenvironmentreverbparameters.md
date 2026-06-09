@@ -52,6 +52,8 @@ You can’t create a standalone instance of [`AVAudioEnvironmentReverbParameters
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

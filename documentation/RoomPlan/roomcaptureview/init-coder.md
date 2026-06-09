@@ -9,7 +9,6 @@ Creates a view by deserializing from the specified coder.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

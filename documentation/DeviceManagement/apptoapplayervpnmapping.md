@@ -7,8 +7,6 @@ The payload that configures per-app VPN settings.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.vpn.managed.appmapping` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | macOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

@@ -6,8 +6,7 @@
 The response to a storefront request.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

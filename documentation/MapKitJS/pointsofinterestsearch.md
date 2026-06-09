@@ -50,15 +50,18 @@ If you set a language ID, the fetch returns addresses in the selected language, 
 - [MaxRadius](pointsofinterestsearch/maxradius.md)
   The maximum distance to use from the center of the region for fetching points of interest.
 ### Fetching points of interest
-- [search(callback, options)](pointsofinterestsearch/search.md)
+- [search(options)](pointsofinterestsearch/search.md)
   Fetches points of interest.
 - [type PointsOfInterestSearchDelegate](pointsofinterestsearchdelegate.md)
   An object or callback function that MapKit JS calls when fetching points of interest.
 - [interface PointsOfInterestSearchResponse](pointsofinterestsearchresponse.md)
   The result of a request used to fetch points of interest.
 ### Canceling a points of interest search
-- [cancel(id)](service/cancel.md)
-  Cancels a request using the provided request ID.
+- [cancel(promise)](service/cancel.md)
+  Cancels a request using the provided request promise.
+### Deprecated
+- [search(callback, options)](pointsofinterestsearch/search1.md)
+  Fetches points of interest.
 
 ## Relationships
 
@@ -77,10 +80,6 @@ If you set a language ID, the fetch returns addresses in the selected language, 
   An object that represents a map feature that the user selects.
 - [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
   An object that describes map feature annotation images.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
-  Point-of-interest categories.
-- [const MapFeatureType](mapfeaturetype.md)
-  Values that describe the feature type of a point of interest.
 
 
 ---

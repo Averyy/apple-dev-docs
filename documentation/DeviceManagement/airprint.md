@@ -11,8 +11,6 @@ The payload that configures AirPrint printer discoverability in the user’s pri
 - Mac Catalyst 7.0+
 - macOS 10.10+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,8 +29,8 @@ Specify `com.apple.airprint` as the payload type.
 | Device channel | iOS, macOS, Shared iPad, visionOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 

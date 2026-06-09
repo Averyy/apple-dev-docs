@@ -1,0 +1,28 @@
+# capability
+
+**Framework**: Foundation Models  
+**Kind**: property
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+var capability: LanguageModelCapabilities.Capability
+```
+
+## See Also
+
+- [var metadata: [String : any Sendable]](languagemodelerror/unsupportedcapability/metadata.md)
+- [var debugDescription: String](languagemodelerror/unsupportedcapability/debugdescription.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/languagemodelerror/unsupportedcapability/capability)*

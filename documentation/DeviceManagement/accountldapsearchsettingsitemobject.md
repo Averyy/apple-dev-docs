@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The settings for configuring the search behavior with an LDAP server.
+The array of nodes to start LDAP searches from. There must be at least one node for this account to be useful. macOS only searches one node and ignores other items in the array.
 
 **Availability**:
 - iOS 15.0+
@@ -11,8 +11,6 @@ The settings for configuring the search behavior with an LDAP server.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -43,6 +43,7 @@ A caption button responds to user interactions and can contain an image or text.
 - [TVLockupView](tvlockupview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

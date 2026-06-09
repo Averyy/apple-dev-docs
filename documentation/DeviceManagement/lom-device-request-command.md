@@ -7,8 +7,6 @@ Send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -21,9 +19,9 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
@@ -98,7 +96,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#LOMDeviceRequestCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

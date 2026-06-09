@@ -27,6 +27,8 @@ struct Configuration
 ### Instance Properties
 - [var allowsAirPlayForMediaPlayback: Bool](webpage/configuration/allowsairplayformediaplayback.md)
   Indicates whether the webpage allows media playback over AirPlay.
+- [var allowsImmersiveEnvironments: Bool](webpage/configuration/allowsimmersiveenvironments.md)
+  Indicates whether website immersive environments are allowed.
 - [var allowsInlinePredictions: Bool](webpage/configuration/allowsinlinepredictions.md)
   Indicates whether inline predictions are allowed.
 - [var applicationNameForUserAgent: String?](webpage/configuration/applicationnameforuseragent.md)

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s protocol capabilities.
+The status item that reports the devices’s protocol capabilities.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ A status report of the client’s protocol capabilities.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,15 +33,145 @@ object StatusManagementClientCapabilities
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
 | Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | NA |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+
+##### Status Item Example
+
+```json
+{
+    "management": {
+        "client-capabilities": {
+            "supported-features": {},
+            "supported-payloads": {
+                "declarations": {
+                    "activations": [
+                        "com.apple.activation.simple"
+                    ],
+                    "assets": [
+                        "com.apple.asset.credential.acme",
+                        "com.apple.asset.credential.certificate",
+                        "com.apple.asset.credential.identity",
+                        "com.apple.asset.credential.scep",
+                        "com.apple.asset.credential.userpassword",
+                        "com.apple.asset.data",
+                        "com.apple.asset.useridentity"
+                    ],
+                    "configurations": [
+                        "com.apple.configuration.account.caldav",
+                        "com.apple.configuration.account.carddav",
+                        "com.apple.configuration.account.exchange",
+                        "com.apple.configuration.account.google",
+                        "com.apple.configuration.account.ldap",
+                        "com.apple.configuration.account.mail",
+                        "com.apple.configuration.account.subscribed-calendar",
+                        "com.apple.configuration.app.managed",
+                        "com.apple.configuration.app.settings",
+                        "com.apple.configuration.audio-accessory.settings",
+                        "com.apple.configuration.extensible-sso",
+                        "com.apple.configuration.external-intelligence.settings",
+                        "com.apple.configuration.intelligence.settings",
+                        "com.apple.configuration.keyboard.settings",
+                        "com.apple.configuration.legacy",
+                        "com.apple.configuration.legacy.interactive",
+                        "com.apple.configuration.management.status-subscriptions",
+                        "com.apple.configuration.management.test",
+                        "com.apple.configuration.math.settings",
+                        "com.apple.configuration.network.dns-proxy",
+                        "com.apple.configuration.network.dns-settings",
+                        "com.apple.configuration.network.relay",
+                        "com.apple.configuration.network.vpn.always-on",
+                        "com.apple.configuration.network.vpn.ikev2",
+                        "com.apple.configuration.network.vpn.ipsec",
+                        "com.apple.configuration.network.vpn.vpn-plugin",
+                        "com.apple.configuration.passcode.settings",
+                        "com.apple.configuration.safari.bookmarks",
+                        "com.apple.configuration.safari.extensions.settings",
+                        "com.apple.configuration.safari.settings",
+                        "com.apple.configuration.security.certificate",
+                        "com.apple.configuration.security.identity",
+                        "com.apple.configuration.security.passkey.attestation",
+                        "com.apple.configuration.siri.settings",
+                        "com.apple.configuration.softwareupdate.enforcement.specific",
+                        "com.apple.configuration.softwareupdate.settings",
+                        "com.apple.configuration.watch.enrollment",
+                        "com.apple.configuration.webcontent-filter.plugin"
+                    ],
+                    "management": [
+                        "com.apple.management.organization-info",
+                        "com.apple.management.properties",
+                        "com.apple.management.server-capabilities"
+                    ]
+                },
+                "status-items": [
+                    "account.list.caldav",
+                    "account.list.carddav",
+                    "account.list.exchange",
+                    "account.list.google",
+                    "account.list.ldap",
+                    "account.list.mail.incoming",
+                    "account.list.mail.outgoing",
+                    "account.list.subscribed-calendar",
+                    "app.managed.list",
+                    "device.identifier.serial-number",
+                    "device.identifier.udid",
+                    "device.model.family",
+                    "device.model.identifier",
+                    "device.model.marketing-name",
+                    "device.model.number",
+                    "device.operating-system.build-version",
+                    "device.operating-system.family",
+                    "device.operating-system.marketing-name",
+                    "device.operating-system.supplemental.build-version",
+                    "device.operating-system.supplemental.extra-version",
+                    "device.operating-system.version",
+                    "device.power.battery-health",
+                    "device.system.health",
+                    "enhanced-logging.applecare-token",
+                    "enhanced-logging.status",
+                    "enhanced-logging.timestamp",
+                    "management.client-capabilities",
+                    "management.declarations",
+                    "mdm.app",
+                    "mdm.enrollment-type",
+                    "mdm.is-awaiting-configuration",
+                    "mdm.is-return-to-service",
+                    "mdm.is-shared-ipad",
+                    "mdm.push-magic",
+                    "mdm.push-token",
+                    "passcode.is-compliant",
+                    "passcode.is-present",
+                    "security.certificate.list",
+                    "security.lockdown-mode",
+                    "softwareupdate.beta-enrollment",
+                    "softwareupdate.device-id",
+                    "softwareupdate.failure-reason",
+                    "softwareupdate.install-reason",
+                    "softwareupdate.install-state",
+                    "softwareupdate.pending-version",
+                    "test.array-value",
+                    "test.boolean-value",
+                    "test.dictionary-value",
+                    "test.error-value",
+                    "test.integer-value",
+                    "test.real-value",
+                    "test.string-value"
+                ]
+            },
+            "supported-versions": [
+                "1.0.0"
+            ]
+        }
+    }
+}
+```
 
 ## Topics
 
 ### Objects
 - [object StatusManagementClientCapabilitiesCapabilitiesObject](statusmanagementclientcapabilitiescapabilitiesobject.md)
-  A collection of the device’s supported features, payloads, and versions.
+  An object that contains the client’s protocol capabilities. These typically only change when the device upgrades its software. An implicit status subscription for this status item is always present, so the client always reports changes to the server.
 
 ## Properties
 
@@ -51,35 +179,8 @@ object StatusManagementClientCapabilities
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+- [object StatusManagementDeclarations](statusmanagementdeclarations.md)
+  The status item that reports the device’s processed declarations.
 
 
 ---

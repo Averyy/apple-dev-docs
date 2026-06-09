@@ -35,6 +35,12 @@ environment.components.set(probeComponent)
 
 ## Topics
 
+### Creating a probe component
+- [init(source: VirtualEnvironmentProbeComponent.Source, influence: VirtualEnvironmentProbeComponent.Influence)](virtualenvironmentprobecomponent/init(source:influence:).md)
+### Configuring probe influence
+- [var influence: VirtualEnvironmentProbeComponent.Influence](virtualenvironmentprobecomponent/influence-swift.property.md)
+- [VirtualEnvironmentProbeComponent.Influence](virtualenvironmentprobecomponent/influence-swift.struct.md)
+  Defines the spatial influence of an environment probe.
 ### Structures
 - [VirtualEnvironmentProbeComponent.Probe](virtualenvironmentprobecomponent/probe.md)
   A sample of the environment around a point in a scene the system uses for environment-based lighting.

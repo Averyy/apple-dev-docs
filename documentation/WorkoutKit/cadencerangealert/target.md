@@ -20,8 +20,6 @@ var target: ClosedRange<Measurement<UnitFrequency>>
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](cadencerangealert/metric.md)
-  The metric for the alert.
 - [var targetQuantityLowerBound: HKQuantity](cadencerangealert/targetquantitylowerbound.md)
   The target’s lower bound.
 - [var targetQuantityUpperBound: HKQuantity](cadencerangealert/targetquantityupperbound.md)

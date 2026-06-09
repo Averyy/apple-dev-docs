@@ -36,7 +36,9 @@ CMTime(value: avAudioTime.sampleTime, timescale: CMTimeScale(avAudioTime.sampleR
 
 ## See Also
 
-- [init(buffer: AVAudioPCMBuffer)](analyzerinput/init(buffer:).md)
+- [init(buffer: CMReadySampleBuffer<CMReadOnlyDataBlockBuffer>)](analyzerinput/init(buffer:)-3nt02.md)
+  Creates an audio input object.
+- [init(buffer: AVAudioPCMBuffer)](analyzerinput/init(buffer:)-2ysg3.md)
   Creates an audio input object.
 
 

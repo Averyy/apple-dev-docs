@@ -4,8 +4,12 @@
 **Kind**: class
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 15.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -18,6 +22,7 @@ class SCRecordingOutputConfiguration
 ### Instance Properties
 - [var availableOutputFileTypes: [AVFileType]](screcordingoutputconfiguration/availableoutputfiletypes.md)
 - [var availableVideoCodecTypes: [AVVideoCodecType]](screcordingoutputconfiguration/availablevideocodectypes.md)
+- [var mixesAudioWithMicrophone: Bool](screcordingoutputconfiguration/mixesaudiowithmicrophone.md)
 - [var outputFileType: AVFileType](screcordingoutputconfiguration/outputfiletype.md)
 - [var outputURL: URL](screcordingoutputconfiguration/outputurl.md)
 - [var videoCodecType: AVVideoCodecType](screcordingoutputconfiguration/videocodectype.md)

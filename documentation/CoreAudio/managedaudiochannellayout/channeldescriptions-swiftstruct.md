@@ -25,9 +25,7 @@ struct ChannelDescriptions
 ### Conforms To
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [MutableCollection](../Swift/MutableCollection.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)

@@ -11,8 +11,13 @@ An overlay that covers an area of the map with bitmapped tiles.
 ## Declaration
 
 ```swift
-class TileOverlay extends MapKitEventTarget
+class TileOverlay extends EventTarget
 ```
+
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Overview
 
@@ -21,18 +26,20 @@ You use tile overlay objects to represent your own tile-based content and to coo
 ## Topics
 
 ### Creating a tile overlay
-- [new TileOverlay(urlTemplate, options)](tileoverlay/tileoverlayconstructor.md)
-  Creates a tile overlay with a URL template and style options.
+- [new TileOverlay(imageForTile, options)](tileoverlay/tileoverlayconstructor.md)
+  Creates a tile overlay with a URL template or image callback and style options.
 - [interface TileOverlayConstructorOptions](tileoverlayconstructoroptions.md)
   Attributes for initializing a tile overlay, including minimum and maximum zoom, opacity, and custom data.
 - [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
+- [type TileOverlayImageCallback](tileoverlayimagecallback.md)
+  A callback function that provides tile images for a tile overlay.
 ### Events
 - [class TileOverlayErrorEvent](tileoverlayerrorevent.md)
   An event object that notifies the developer of an error that occurred while loading tiles.
 ### Customizing the tile overlay
-- [urlTemplate](tileoverlay/urltemplate.md)
-  A string, or callback function that returns a string, with a URL that provides the requested tile.
+- [imageForTile](tileoverlay/imagefortile.md)
+  A string, or callback function, that provides the requested tile.
 - [data](tileoverlay/data.md)
   A dictionary of custom properties to use with the URL template.
 - [reload()](tileoverlay/reload.md)
@@ -44,11 +51,14 @@ You use tile overlay objects to represent your own tile-based content and to coo
   The maximum zoom level for a tile overlay.
 - [minimumZ](tileoverlay/minimumz.md)
   The minimum zoom level for a tile overlay.
+### Deprecated
+- [urlTemplate](tileoverlay/urltemplate.md)
+  A string, or callback function, that provides the requested tile.
 
 ## Relationships
 
 ### Inherits From
-- [MapKitEventTarget](mapkiteventtarget.md)
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 
 ## See Also
 

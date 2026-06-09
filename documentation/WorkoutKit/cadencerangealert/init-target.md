@@ -22,11 +22,6 @@ init(target: ClosedRange<Measurement<UnitFrequency>>)
 
 - `target`: A closed range that uses frequency units.
 
-## See Also
-
-- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](cadencerangealert/cadence(_:unit:).md)
-  Creates a new cadence alert for the target range.
-
 
 ---
 

@@ -44,7 +44,7 @@ if let removed = ingredients.remove(toRemove) {
 
 ## See Also
 
-- [func filter((Element) throws -> Bool) rethrows -> Set<Element>](set/filter(_:).md)
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
 - [func remove<ConcreteElement>(ConcreteElement) -> ConcreteElement?](set/remove(_:)-4d3i1.md)
 - [func removeFirst() -> Element](set/removefirst.md)

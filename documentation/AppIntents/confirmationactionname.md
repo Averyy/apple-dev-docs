@@ -67,14 +67,6 @@ struct ConfirmationActionName
 
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
   Use App Intents to register actions for your app.
-- [protocol StartWorkoutIntent](startworkoutintent.md)
-  An App Intent for starting a workout.
-- [protocol PauseWorkoutIntent](pauseworkoutintent.md)
-  An App Intent that lets someone pause your app’s current workout session.
-- [protocol ResumeWorkoutIntent](resumeworkoutintent.md)
-  An App Intent that lets someone resume your app’s paused workout session.
-- [protocol StartDiveIntent](startdiveintent.md)
-  An App Intent that lets people start a dive session when they press the Action button on Apple Watch Ultra.
 
 
 ---

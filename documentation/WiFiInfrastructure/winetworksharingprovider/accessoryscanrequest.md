@@ -8,6 +8,7 @@ A request for the accessory to scan for available Wi-Fi networks.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

@@ -12,6 +12,7 @@ A Boolean value that represents images that are not necessarily of poor image qu
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

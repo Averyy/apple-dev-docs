@@ -9,7 +9,6 @@ An object that combines multiple scan sessions into a single captured result.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
 
 ## Declaration
 

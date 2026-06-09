@@ -26,15 +26,6 @@ Volume activation occurs prior to any call to mount the volume.
 - `options`: Options to apply to the activation. These can include security-scoped file paths. There are no defined options currently.
 - `reply`: A block or closure to indicate success or failure. If activation succeeds, pass the root [`FSItem`](fsitem.md) and a `nil` error. If activation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem`](fsitem.md) in this case. In Swift, `reply` takes only the [`FSItem`](fsitem.md) as the parameter; you signal any error with a `throw`. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) or throw an error.
 
-## See Also
-
-- [class FSItem](fsitem.md)
-  A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/deactivate(options:replyhandler:).md)
-  Tears down a previously initialized volume instance.
-- [struct FSDeactivateOptions](fsdeactivateoptions.md)
-  Options that affect the behavior of deactivate methods.
-
 
 ---
 

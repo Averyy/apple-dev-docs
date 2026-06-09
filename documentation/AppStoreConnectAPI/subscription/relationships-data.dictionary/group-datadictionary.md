@@ -16,6 +16,7 @@ object Subscription.Relationships.Group
 
 ### Objects
 - [object Subscription.Relationships.Group.Data](subscription/relationships-data.dictionary/group-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription.
 
 ## Properties
 

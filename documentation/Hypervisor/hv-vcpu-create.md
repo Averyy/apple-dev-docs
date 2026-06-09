@@ -44,4 +44,4 @@ Intel-based Mac computers have different parameters:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_create(_:_:_:))*

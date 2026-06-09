@@ -9,8 +9,6 @@ An array of access point name dictionaries.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 4.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,7 +24,7 @@ object APN.DefaultsData
 
 ## Properties
 
-- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries (`APN.DefaultsData.Apns`).
+- `apns` ([APN.DefaultsData.ApnsItem]) *(required)*: An array of APN dictionaries (`APN.DefaultsData.Apns`). Deprecated: iOS 7+ | iPadOS 7+
 
 
 ---

@@ -11,8 +11,8 @@ The coordinate of the circle overlay’s center.
 ## Declaration
 
 ```swift
-get coordinate(): Coordinate;
-set coordinate(coordinate: Coordinate);
+get coordinate(): CoordinateData;
+set coordinate(coordinate: CoordinateData);
 ```
 
 ## See Also

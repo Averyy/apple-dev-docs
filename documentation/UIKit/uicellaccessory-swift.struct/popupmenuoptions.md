@@ -9,7 +9,6 @@ Configuration options for a popup menu accessory.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

@@ -29,7 +29,8 @@ The returned stack view has horizontal layout direction and its [`translatesAuto
 ## See Also
 
 - [View Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaViewsGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002978)
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853)
+- [class NSLayoutConstraint](nslayoutconstraint.md)
+  The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 
 
 ---

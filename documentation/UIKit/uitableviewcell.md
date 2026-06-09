@@ -178,6 +178,8 @@ To configure the content and appearance of your cell, you can set its [`contentC
 - [UIView](uiview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

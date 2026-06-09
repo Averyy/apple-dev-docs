@@ -11,6 +11,7 @@ A `TabViewStyle` that displays a vertical `TabView` interaction and appearance.
 ## Declaration
 
 ```swift
+nonisolated
 struct VerticalPageTabViewStyle
 ```
 

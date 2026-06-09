@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A collection of app versions referenced in a diagnostic insight, indicating which versions are affected.
+
 **Availability**:
 - App Store Connect API 3.5+
 

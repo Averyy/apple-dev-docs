@@ -465,6 +465,7 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](simd3/customdebugstringconvertible-implementations.md)
 - [Equatable Implementations](simd3/equatable-implementations.md)
+- [ProjectiveTransformable3DFloat Implementations](simd3/projectivetransformable3dfloat-implementations.md)
 - [SIMD Implementations](simd3/simd-implementations.md)
 
 ## Relationships
@@ -482,6 +483,8 @@ struct SIMD3<Scalar> where Scalar : SIMDScalar
 - [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
+- [ProjectiveTransformable3D](../Spatial/ProjectiveTransformable3D.md)
+- [ProjectiveTransformable3DFloat](../Spatial/ProjectiveTransformable3DFloat.md)
 - [SIMD](simd.md)
 - [SIMDStorage](simdstorage.md)
 - [Sendable](sendable.md)

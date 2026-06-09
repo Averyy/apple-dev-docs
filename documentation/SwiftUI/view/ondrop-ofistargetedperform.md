@@ -29,6 +29,8 @@ The drop destination is the same size and position as this view.
 
 Make sure to start loading the contents of `NSItemProvider` instances within the scope of the `action` closure. Do not perform loading asynchronously on a different actor. Loading the contents may finish later, but it must start here. For security reasons, the drop receiver can access the dropped payload only before this closure returns.
 
+To use `Transferable` types directly and access a richer feature set — including support for [`DropSession`](dropsession.md) — use [`dropDestination(for:isEnabled:action:)`](view/dropdestination(for:isenabled:action:).md) instead.
+
 ## Parameters
 
 - `supportedContentTypes`: The uniform type identifiers that describe the types of content this view can accept through drag and drop. If the drag-and-drop operation doesn’t contain any of the supported types, then this drop destination doesn’t activate and `isTargeted` doesn’t update.

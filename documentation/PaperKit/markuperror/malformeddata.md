@@ -18,6 +18,13 @@ The binary data was malformed in some way.
 case malformedData
 ```
 
+## See Also
+
+- [MarkupError.incorrectFormat](markuperror/incorrectformat.md)
+  Incorrect format or header.
+- [MarkupError.incompatibleFormatTooNew](markuperror/incompatibleformattoonew.md)
+  The data being decoded has a newer format that cannot be decoded.
+
 
 ---
 

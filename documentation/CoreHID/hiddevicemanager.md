@@ -42,7 +42,6 @@ Matching criteria are specified by creating [`HIDDeviceManager.DeviceMatchingCri
 
 ### Conforms To
 - [Actor](../Swift/Actor.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

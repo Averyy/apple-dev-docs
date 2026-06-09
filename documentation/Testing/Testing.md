@@ -65,6 +65,13 @@ With Swift Testing you leverage powerful and expressive capabilities of the Swif
 ### Test customization
 - [Traits](traits.md)
   Annotate test functions and suites, and customize their behavior.
+### Value description and reflection
+- [Describing and reflecting values](describing-values.md)
+  Add custom descriptions and mirrors to values you use in your tests.
+- [protocol CustomTestReflectable](customtestreflectable.md)
+  A protocol describing types with a custom reflection when presented as part of a test’s output.
+- [protocol CustomTestStringConvertible](customteststringconvertible.md)
+  A protocol describing types with a custom string representation when presented as part of a test’s output.
 ### Data collection
 - [Attachments](attachments.md)
   Attach values to tests to help diagnose issues and gather feedback.

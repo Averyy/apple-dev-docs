@@ -8,6 +8,7 @@ The user-entered form values to complete captive portal login.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

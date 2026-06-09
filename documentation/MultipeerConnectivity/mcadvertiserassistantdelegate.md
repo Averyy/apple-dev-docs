@@ -8,7 +8,7 @@ The `MCAdvertiserAssistantDelegate` protocol describes the methods that the dele
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst 13.1+
 - macOS 10.10+
 - tvOS 10.0+
 - visionOS 1.0+

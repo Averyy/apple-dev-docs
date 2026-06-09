@@ -18,6 +18,8 @@ enum AVCaptureEventPhase
 
 ## Topics
 
+### Creating a phase
+- [init?(rawValue: UInt)](avcaptureeventphase/init(rawvalue:).md)
 ### Event phases
 - [AVCaptureEventPhase.began](avcaptureeventphase/began.md)
   A phase that indicates the beginning of a capture event.
@@ -25,8 +27,6 @@ enum AVCaptureEventPhase
   A phase that indicates the end of a capture event.
 - [AVCaptureEventPhase.cancelled](avcaptureeventphase/cancelled.md)
   A phase that indicates the cancellation of a capture event.
-### Initializers
-- [init?(rawValue: UInt)](avcaptureeventphase/init(rawvalue:).md)
 
 ## Relationships
 

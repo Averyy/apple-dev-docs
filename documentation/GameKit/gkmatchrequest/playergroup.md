@@ -24,6 +24,7 @@ var playerGroup: Int { get set }
 
 - [Creating matchmaking rules for backward compatibility](creating-matchmaking-rules-for-backward-compatibility.md)
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
+- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 

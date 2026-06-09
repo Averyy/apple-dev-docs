@@ -24,8 +24,6 @@ var targetQuantityUpperBound: HKQuantity { get }
   The target range of speed measurements.
 - [var targetQuantityLowerBound: HKQuantity](speedrangealert/targetquantitylowerbound.md)
   The target range’s lower bounds.
-- [var metric: WorkoutAlertMetric](speedrangealert/metric.md)
-  The metric used to measure the speed.
 
 
 ---

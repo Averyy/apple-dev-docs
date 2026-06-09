@@ -139,6 +139,7 @@ struct UInt16
 - [BinaryInteger](binaryinteger.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)

@@ -11,8 +11,8 @@ Creates a list that computes its rows on demand from an underlying collection of
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init<Data, RowContent>(_ data: Binding<Data>, editActions: EditActions<Data>, selection: Binding<SelectionValue>, @ViewBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, Data.Element.ID>, Data.Element.ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable, Data.Index : Hashable
+nonisolated
+init<Data, RowContent>(_ data: Binding<Data>, editActions: EditActions<Data>, selection: Binding<SelectionValue>, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, Data.Element.ID>, Data.Element.ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable, Data.Index : Hashable
 ```
 
 #### Discussion
@@ -41,7 +41,7 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 - `data`: The identifiable data for computing the list.
 - `editActions`: The edit actions that are synthesized on `data`.
 - `selection`: A binding to a non optional selected value.
-- `rowContent`: A view builder that creates the view for a single row of the list.
+- `rowContent`: A content builder that creates the view for a single row of the list.
 
 ## See Also
 

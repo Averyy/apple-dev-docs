@@ -17,6 +17,7 @@ Transforms the subviews of a given view into a resulting content view.
 ## Declaration
 
 ```swift
+nonisolated
 struct GroupElementsOfContent<Subviews, Content> where Subviews : View, Content : View
 ```
 

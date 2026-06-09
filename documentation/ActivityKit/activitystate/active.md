@@ -8,6 +8,7 @@ The Live Activity is active, visible, and can receive content updates.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

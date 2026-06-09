@@ -7,8 +7,6 @@ The payload for configuring network proxies.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,7 +33,7 @@ object NetworkProxyConfiguration.Proxies
 - `HTTPSProxy` (string): The host name or IP address for the secure web proxy.
 - `ProxyAutoConfigEnable` (integer): If `true`, enables automatic proxy configuration.
 - `ProxyAutoConfigURLString` (string): The automatic proxy configuration URL.
-- `ProxyCaptiveLoginAllowed` (integer): If 1, allows client to log into captive portal network.
+- `ProxyCaptiveLoginAllowed` (integer): If 1, allows client to log into captive portal network. Available: macOS 10.9+
 - `RTSPEnable` (integer): If `true`, enable streaming proxy.
 - `RTSPPort` (integer): The streaming proxy port.
 - `RTSPProxy` (string): The host name or IP address for the streaming proxy.

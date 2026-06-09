@@ -48,6 +48,10 @@ In addition to indexing content, iOS provides additional strategies for making y
   An on-device index for your app’s searchable content.
 - [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)
   A protocol that defines methods a delegate object or app extension uses to handle communication from the on-device index.
+- [class CSSearchableIndexDescription](cssearchableindexdescription.md)
+### Foundation models support
+- [Spotlight search tool](spotlight-search-tool.md)
+  Make your app’s indexed content available to the system’s Foundation models as additional context to use when answering prompts.
 ### Spotlight app extensions
 - [Regenerating your app’s indexes on demand](regenerating-your-app-s-indexes-on-demand.md)
   Create an app extension to maintain your app’s indexes and regenerate them as needed.
@@ -70,6 +74,13 @@ In addition to indexing content, iOS provides additional strategies for making y
   The behavior configuration to use for a search query.
 - [class CSSuggestion](cssuggestion.md)
   The kind of suggestion to use in a query.
+### Type resolution
+- [class UTTypeHierarchyStrategy](uttypehierarchystrategy.md)
+  Strategy for resolving UTTypes by walking the LaunchServices type hierarchy using BFS traversal
+- [struct UTTypeResolutionResult](uttyperesolutionresult.md)
+  Result of a UTType resolution operation with confidence metrics and context
+- [protocol UTTypeResolutionStrategy](uttyperesolutionstrategy.md)
+  Protocol for pluggable UTType resolution strategies
 ### Errors
 - [struct CSIndexError](csindexerror.md)
   Index errors returned by Core Spotlight.

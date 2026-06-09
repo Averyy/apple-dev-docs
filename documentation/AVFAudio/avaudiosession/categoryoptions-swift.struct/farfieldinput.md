@@ -3,7 +3,7 @@
 **Framework**: AVFAudio  
 **Kind**: property
 
-This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) and [`record`](avaudiosession/category-swift.struct/record.md).
+This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 
 **Availability**:
 - iOS 26.2+

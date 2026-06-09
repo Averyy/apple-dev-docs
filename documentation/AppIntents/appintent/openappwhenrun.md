@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A boolean property that tells the system to consider the app intent even if its app is not in the foreground.
+A Boolean property that tells the system to consider the app intent even if its app is not in the foreground.
 
 **Availability**:
 - iOS 16.0+
@@ -24,11 +24,10 @@ static var openAppWhenRun: Bool { get }
 ## Mentions
 
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
-- [Creating your first app intent](creating-your-first-app-intent.md)
 
 #### Discussion
 
-This property is deprecated, use [`supportedModes`](appintent/supportedmodes.md) instead. For backward compatibility, provide `openAppWhenRun` in an extension, for example:
+This property is deprecated. Use [`supportedModes`](appintent/supportedmodes.md) instead. Setting this property to `true` generates an error if the app intent runs in an app extension. For backward compatability, you can set this property to `true` for app intents you run inside your app. For example:
 
 ```swift
 @available(*, deprecated)
@@ -39,12 +38,9 @@ extension OrderSoupIntent {
 
 ## See Also
 
-- [static var title: LocalizedStringResource](appintent/title.md)
-  A short, localized, human-readable string that describes the app intent using a verb and a noun in title case.
-- [static var description: IntentDescription?](appintent/description.md)
-  A description of the app intent that the system shows to people.
-- [static var isDiscoverable: Bool](appintent/isdiscoverable.md)
-  A boolean value that determines whether system features such as Shortcuts and Spotlight can discover this app intent.
+- [func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(result:confirmationactionname:showprompt:).md)
+  Requests user confirmation before performing the app intent.
+- [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(output:confirmationactionname:showprompt:).md)
 
 
 ---

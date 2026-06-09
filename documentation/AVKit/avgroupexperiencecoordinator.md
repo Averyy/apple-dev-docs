@@ -55,6 +55,10 @@ Access an experience coordinator by querying a player view controller for its [`
   An object that controls video experiences.
 - [class AVMultiviewManager](avmultiviewmanager.md)
   An object that manages viewing multiple videos at once.
+- [class AVViewport](avviewport.md)
+- [class AVPortalViewport](avportalviewport.md)
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

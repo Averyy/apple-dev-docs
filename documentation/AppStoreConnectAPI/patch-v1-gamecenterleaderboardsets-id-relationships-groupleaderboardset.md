@@ -1,4 +1,4 @@
-# Edit the Releationship Between a Leaderboard and a Group Leaderboard
+# Edit the relationship between a leaderboard and a group leaderboard
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -36,10 +36,10 @@ Modify the group leaderboards in a leaderboard set.
   Add a leaderboard to a leaderboard set.
 - [Edit a Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_.md)
   Modify the metadata for a leaderboard set.
-- [Modify the Leaderboards in Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the leaderboards in a leaderboard set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Edit the positions of leaderboards in an existing leaderboard set.
 - [Delete a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_.md)
-  Delete a specifc leaderboard set.
+  Delete a specific leaderboard set.
 - [Delete the Relationship Between a Leaderboard and a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Remove a leaderboard from a leaderboard set.
 

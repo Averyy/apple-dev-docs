@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The set of external entity URLs that the parser is allowed to load.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

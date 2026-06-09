@@ -22,6 +22,8 @@ The notification object is the `NSOutlineView` object that contains the item abo
 | --- | --- |
 | `@"NSObject"` | The item about to be collapsed (an id) |
 
+To observe this notification using Swift concurrency, use [`NSOutlineView.ItemWillCollapseMessage`](nsoutlineview/itemwillcollapsemessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nsoutlineview/columndidmovenotification.md)

@@ -11,7 +11,7 @@ The city of the place.
 ## Declaration
 
 ```swift
-locality?: string;
+locality: string | null;
 ```
 
 #### Discussion

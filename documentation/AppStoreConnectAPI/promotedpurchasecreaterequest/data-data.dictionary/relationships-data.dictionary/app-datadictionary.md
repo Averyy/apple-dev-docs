@@ -16,6 +16,7 @@ object PromotedPurchaseCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object PromotedPurchaseCreateRequest.Data.Relationships.App.Data](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a promoted purchase.
 
 ## Properties
 

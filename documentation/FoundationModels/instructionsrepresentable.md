@@ -11,6 +11,7 @@ A type that can be represented as instructions.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -29,8 +30,11 @@ protocol InstructionsRepresentable
 ### Inherited By
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
 - [Generable](generable.md)
+- [Transcript.CustomSegment](transcript/customsegment.md)
 ### Conforming Types
+- [Attachment](attachment.md)
 - [GeneratedContent](generatedcontent.md)
+- [ImageReference](imagereference.md)
 - [Instructions](instructions.md)
 
 ## See Also

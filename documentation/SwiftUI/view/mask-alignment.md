@@ -18,7 +18,7 @@ Masks this view using the alpha channel of the given view.
 
 ```swift
 nonisolated
-func mask<Mask>(alignment: Alignment = .center, @ViewBuilder _ mask: () -> Mask) -> some View where Mask : View
+func mask<Mask>(alignment: Alignment = .center, @ContentBuilder _ mask: () -> Mask) -> some View where Mask : View
 ```
 
 #### Discussion

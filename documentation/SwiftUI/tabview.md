@@ -17,6 +17,7 @@ A view that switches between multiple child views using interactive user interfa
 ## Declaration
 
 ```swift
+nonisolated
 struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content : View
 ```
 
@@ -245,7 +246,6 @@ TabView {
 
 ### Creating a tab view
 - [init(content:)](tabview/init(content:).md)
-  Creates a tab view that uses a builder to create its tabs.
 - [init(selection:content:)](tabview/init(selection:content:).md)
   Creates a tab view that uses a builder to create and specify selection values for its tabs.
 ### Configuring search activation

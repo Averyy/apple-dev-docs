@@ -61,14 +61,16 @@ Use the [`buttonBorderShape(_:)`](view/buttonbordershape(_:).md) view modifier t
   Sets the border shape for buttons in this view.
 - [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
   Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
-  Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
-- [struct ButtonRole](buttonrole.md)
-  A value that describes the purpose of a button.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+  Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
 - [struct ButtonSizing](buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
+- [struct ButtonRole](buttonrole.md)
+  A value that describes the purpose of a button.
 
 
 ---

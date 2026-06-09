@@ -10,8 +10,6 @@ Install a book on a device.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -161,7 +159,7 @@ This command installs a book from the Book Store.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InstallMediaCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

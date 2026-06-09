@@ -6,8 +6,7 @@
 The request for user management.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ object ManageUsersRequest
 
 ## Mentions
 
-- [Managing Users](managing-users.md)
+- [Managing users](managing-users.md)
 
 ## Topics
 

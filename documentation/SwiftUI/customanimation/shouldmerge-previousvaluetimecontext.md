@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Determines whether an instance of the animation can merge with other instance of the same type.
+Determines whether an instance of the animation can merge with other running animations.
 
 **Availability**:
 - iOS 17.0+
@@ -28,7 +28,7 @@ A Boolean value of `true` if the animation should merge with the previous animat
 
 #### Discussion
 
-When a view creates a new animation on an animatable value that already has a running animation of the same animation type, the system calls the `shouldMerge(previous:value:time:context:)` method on the new instance to determine whether it can merge the two instance. Implement this method if the animation can merge with another instance. The default implementation returns `false`.
+When a view creates a new animation on an animatable value that already is running an animation, the system calls the `shouldMerge(previous:value:time:context:)` method on the new instance to determine whether it can merge the two instances. Implement this method if the animation can merge with other instances. The default implementation returns `false`.
 
 If `shouldMerge(previous:value:time:context:)` returns `true`, the system merges the new animation instance with the previous animation. The system provides to the new instance the state and elapsed time from the previous one. Then it removes the previous animation.
 

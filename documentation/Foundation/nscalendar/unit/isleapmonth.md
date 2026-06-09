@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Identifier for the time zone of a date components object.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -17,6 +19,10 @@
 ```swift
 static var isLeapMonth: NSCalendar.Unit { get }
 ```
+
+#### Discussion
+
+The corresponding value is an `NSTimeZone`.
 
 ## See Also
 

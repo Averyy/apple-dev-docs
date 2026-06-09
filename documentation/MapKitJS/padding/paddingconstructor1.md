@@ -11,27 +11,21 @@ Creates a padding object and initializes its values with the provided object lit
 ## Declaration
 
 ```swift
-constructor(paddings: PaddingConstructorOptions);
+constructor(paddings: PaddingData);
 ```
 
 #### Discussion
 
-Use an object literal instance with the keys defined in [`PaddingConstructorOptions`](paddingconstructoroptions.md).
+Use an object literal instance with the keys defined in [`PaddingData`](paddingdata.md).
 
 ```javascript
-    // An object literal that conforms to `PaddingConstructorOptions`.
+    // An object literal that conforms to `PaddingData`.
     map.padding = new mapkit.Padding({top: 10, right: 10, bottom: 10, left:10});
-
-@Comment {
-    This document is generated from symbols produced
-    from the MapKit JS source code.
-    Feel free to remove this comment when the content is populated.
-}
 ```
 
 ## Parameters
 
-- `padding`: An object literal with the keys defined in [`PaddingConstructorOptions`](paddingconstructoroptions.md).
+- `padding`: An object literal with the keys defined in [`PaddingData`](paddingdata.md).
 
 ## See Also
 
@@ -45,8 +39,6 @@ Use an object literal instance with the keys defined in [`PaddingConstructorOpti
   Creates a padding object and initializes it with the provided top, right, and bottom values.
 - [new Padding(top, right, bottom, left)](padding/paddingconstructor5.md)
   Creates a padding object and initializes it with the provided values.
-- [interface PaddingConstructorOptions](paddingconstructoroptions.md)
-  Initial values of the edge insets for padding.
 
 
 ---

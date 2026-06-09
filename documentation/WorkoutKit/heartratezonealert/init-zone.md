@@ -22,11 +22,6 @@ init(zone: Int)
 
 - `zone`: The target heart rate zone.
 
-## See Also
-
-- [static func heartRate(zone: Int) -> Self](heartratezonealert/heartrate(zone:).md)
-  Returns an alert for the specified heart rate zone.
-
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Create and immediately start running a new detached task in the context of the calling thread/task.
+Create and immediately start running a new task in the context of the calling thread/task.
 
 **Availability**:
 - iOS 26.0+
@@ -43,11 +43,11 @@ Other than the execution semantics discussed above, the created task is semantic
 ## See Also
 
 - [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:executorpreference:operation:)-9bghc.md)
-  Create and immediately start running a new detached task in the context of the calling thread/task.
+  Create and immediately start running a new task in the context of the calling thread/task.
 - [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediatedetached(name:priority:executorpreference:operation:)-52ipd.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
+  Create and immediately start running a new detached task in the context of the calling thread/task.
 - [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediatedetached(name:priority:executorpreference:operation:)-7h41b.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
+  Create and immediately start running a new detached task in the context of the calling thread/task.
 
 
 ---

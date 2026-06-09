@@ -8,6 +8,7 @@ Features that your app’s current host device can support.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -39,6 +39,8 @@ Whether you explicitly stop PiP, the user stops it through interaction, or the s
   A Boolean value that indicates whether Picture in Picture starts automatically when the controller embeds its content inline and the app transitions to the background.
 - [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
   Stops Picture in Picture, if active.
+- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 
 ---

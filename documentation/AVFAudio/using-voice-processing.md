@@ -20,6 +20,8 @@ Before you run the sample code project in Xcode, ensure you’re using iOS 17 or
 
 ## See Also
 
+- [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
+  Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 - [class AVAudioPlayerNode](avaudioplayernode.md)

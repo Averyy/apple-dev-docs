@@ -1,4 +1,4 @@
-# Read Version IDs for an Alternative Distribution Package
+# Read version ids for an alternative distribution package
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Get version IDs about a specific alternative distribution package.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of alternative distribution package version resource identifiers to return.
 
 ## See Also
 
@@ -26,9 +26,9 @@ Get version IDs about a specific alternative distribution package.
   List deltas for a specific alternative distribution package version.
 - [List Variants Information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
-- [List Delta IDs](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+- [List delta ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
   List all delta Ids for a specific alternative distribution package version.
-- [List Variant IDs Information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
+- [List variant ids information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
   List variant Ids for specific alternative distribution package version.
 
 

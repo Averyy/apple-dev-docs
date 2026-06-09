@@ -20,6 +20,11 @@ The currently selected pointer mode.
 
 Default is `.selection`
 
+## See Also
+
+- [var indirectPointerTouchModes: [PaperMarkupViewController.TouchMode]](markuptoolbarviewcontroller/indirectpointertouchmodes.md)
+  The modes available for a user to select.
+
 
 ---
 

@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Information about connection groups with member connection references that the system couldn’t resolve.
+The status item that lists connection groups with member connection references that the device couldn’t resolve.
 
 **Availability**:
 - macOS 14.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,53 +21,72 @@ object StatusScreenSharingConnectionGroupUnresolvedConnections
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
+| Allowed in device enrollment | N/A |
 | Allowed in user enrollment | macOS |
 | Allowed in local enrollment | macOS |
 | Allowed in system scope | macOS |
 | Allowed in user scope | macOS |
 
+##### Status Item Example
+
+**New or updated connection group**:
+
+Reports a new or updated connection group.
+
+```json
+{
+    "screensharing": {
+        "connection": {
+            "group": {
+                "unresolved-connection": [
+                    {
+                        "identifier": "D4E5F6A7-B8C9-0123-DEFA-123456789012",
+                        "unresolved_connections": [
+                            "E5F6A7B8-C9D0-1234-EFAB-234567890123"
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
+**Removed connection group**:
+
+Reports a removed connection group.
+
+```json
+{
+    "screensharing": {
+        "connection": {
+            "group": {
+                "unresolved-connection": [
+                    {
+                        "identifier": "D4E5F6A7-B8C9-0123-DEFA-123456789012",
+                        "_removed": true
+                    }
+                ]
+            }
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject](statusscreensharingconnectiongroupunresolvedconnectionsunresolvedgroupobject.md)
-  A status item that contains an unresolved connection group.
+  The status item that contains an unresolved connection group.
 
 ## Properties
 
-- `screensharing.connection.group.unresolved-connection` ([StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject]) *(required)*: A status item that contains an array of unresolved connection groups.
+- `screensharing.connection.group.unresolved-connection` ([StatusScreenSharingConnectionGroupUnresolvedConnectionsUnresolvedGroupObject]) *(required)*: The status item that contains an array of unresolved connection groups.
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+- [object StatusServicesBackgroundTask](statusservicesbackgroundtask.md)
+  The status item that reports the device’s background task details.
 
 
 ---

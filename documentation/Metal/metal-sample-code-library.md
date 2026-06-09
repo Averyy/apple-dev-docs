@@ -22,6 +22,8 @@ Browse the topics below to find samples relevant to a concept you want to learn 
 ### Machine learning workflows
 - [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
   Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
+- [Training a neural network to render irradiance in real time](training-a-neural-network-to-render-irradiance-in-real-time.md)
+  Train a small neural network on the GPU to approximate diffuse irradiance, and compare the result against Monte Carlo integration and a pre-trained ML model.
 - [Running inline ML operations in a shader with Metal 4](running-inline-ml-operations-in-a-shader-with-metal-4.md)
   Multiply matrices across multiple GPU cores with inline tensor operations.
 ### Render workflows

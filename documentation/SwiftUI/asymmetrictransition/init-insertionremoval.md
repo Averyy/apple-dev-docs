@@ -17,6 +17,7 @@ Creates a composite `Transition` that uses a different transition for insertion 
 ## Declaration
 
 ```swift
+nonisolated
 init(insertion: Insertion, removal: Removal)
 ```
 

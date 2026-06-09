@@ -1,0 +1,27 @@
+# scaleKey
+
+**Framework**: RealityKit  
+**Kind**: property
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+static let scaleKey: String
+```
+
+## See Also
+
+- [static let textureKey: String](physicallybasedmaterial/subsurfacescatteranisotropy-swift.struct/texturekey.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/physicallybasedmaterial/subsurfacescatteranisotropy-swift.struct/scalekey)*

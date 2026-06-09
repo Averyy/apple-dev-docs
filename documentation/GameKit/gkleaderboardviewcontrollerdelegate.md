@@ -6,6 +6,9 @@
 The [`GKLeaderboardViewControllerDelegate`](gkleaderboardviewcontrollerdelegate.md) protocol is implemented by delegates of the [`GKLeaderboardViewController`](gkleaderboardviewcontroller.md) class. The delegate is called when the player dismisses the leaderboard.
 
 **Availability**:
+- iOS 4.1+
+- iPadOS 4.1+
+- Mac Catalyst 4.1+
 - macOS 10.8+
 - visionOS 1.0+
 

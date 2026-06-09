@@ -26,6 +26,11 @@ struct DataTaskPublisher
 
 ## Topics
 
+### Declaring publisher topography
+- [URLSession.DataTaskPublisher.Output](urlsession/datataskpublisher/output.md)
+  The kind of values published by this publisher.
+- [URLSession.DataTaskPublisher.Failure](urlsession/datataskpublisher/failure.md)
+  The kind of errors this publisher might publish.
 ### Creating a data task publisher
 - [init(request: URLRequest, session: URLSession)](urlsession/datataskpublisher/init(request:session:).md)
   Creates a data task publisher from the provided URL request and URL session.

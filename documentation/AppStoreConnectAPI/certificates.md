@@ -13,31 +13,33 @@ The `certificates` resource represents the digital certificates you use to sign 
 ## Topics
 
 ### Creating and modifying certificates
-- [Create a Certificate](post-v1-certificates.md)
+- [Create a certificate](post-v1-certificates.md)
   Create a new certificate using a certificate signing request.
 - [Modify a Certificate](patch-v1-certificates-_id_.md)
   Update the activation status for a specific certificate.
 ### Getting certificate infomation and data
-- [List and Download Certificates](get-v1-certificates.md)
+- [List and download certificates](get-v1-certificates.md)
   Find and list certificates and download their data.
-- [Read and Download Certificate Information](get-v1-certificates-_id_.md)
+- [Read and download certificate information](get-v1-certificates-_id_.md)
   Get information about a certificate and download the certificate data.
-- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
-- [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-relationships-passtypeid.md)
+  List all PassTypeIDId Ids for a specific certificate.
 ### Revoking certificates
-- [Revoke a Certificate](delete-v1-certificates-_id_.md)
+- [Revoke a certificate](delete-v1-certificates-_id_.md)
   Revoke a lost, stolen, compromised, or expiring signing certificate.
 ### Object and data types
 - [object Certificate](certificate.md)
-  The data structure that represents a Certificates resource.
+  A code signing certificate registered in your Apple developer account, used for development, distribution, or provisioning.
 - [object CertificatesWithoutIncludesResponse](certificateswithoutincludesresponse.md)
+  A response containing a list of certificates, without related resources.
 - [object CertificateCreateRequest](certificatecreaterequest.md)
   The request body you use to create a Certificate.
 - [object CertificateResponse](certificateresponse.md)
-  A response that contains a single Certificates resource.
+  The response body for endpoints that create or read a single signing certificate.
 - [object CertificatesResponse](certificatesresponse.md)
-  A response that contains a list of Certificates resources.
+  The response body for endpoints that list signing certificates.
 - [object CertificateUpdateRequest](certificateupdaterequest.md)
   The request body you use to update a certificate activation status.
 - [type CertificateType](certificatetype.md)

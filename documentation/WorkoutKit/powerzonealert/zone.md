@@ -18,11 +18,6 @@ The target power zone.
 var zone: Int
 ```
 
-## See Also
-
-- [var metric: WorkoutAlertMetric](powerzonealert/metric.md)
-  The metric for the alert.
-
 
 ---
 

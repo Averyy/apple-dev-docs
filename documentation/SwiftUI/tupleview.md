@@ -18,7 +18,7 @@ A View created from a swift tuple of View values.
 
 ```swift
 @frozen
-struct TupleView<T>
+nonisolated struct TupleView<T>
 ```
 
 ## Topics

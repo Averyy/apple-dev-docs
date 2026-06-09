@@ -8,6 +8,7 @@ A protocol for an error that describes an issue with decoding the configuration.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

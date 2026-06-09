@@ -1,4 +1,4 @@
-# List Territory Age Rating IDs for an App Info
+# List territory age rating IDs for an app info
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ List all territory age rating IDs for a specific app info.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of territory age rating resource identifiers to return.
 
 ## See Also
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single App Store Review Details resource.
+The response body for endpoints that read or modify App Store review details for a version.
 
 **Availability**:
 - App Store Connect API 1.2+

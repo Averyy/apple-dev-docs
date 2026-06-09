@@ -26,8 +26,8 @@ mutating func append(_ bytes: UnsafePointer<UInt8>, count: Int)
   Appends the specified data to the end of this data.
 - [func append<SourceType>(UnsafeBufferPointer<SourceType>)](data/append(_:)-xtlw.md)
   Append a buffer of bytes to the data.
-- [func append(contentsOf: [UInt8])](data/append(contentsof:).md)
-  Appends the bytes in the specified array to the end of the data.
+- [func reserveCapacity(Int)](data/reservecapacity(_:).md)
+  Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 
 
 ---

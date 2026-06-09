@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the Build Icons resource.
+A PNG icon image extracted from a build, used for display in App Store Connect and TestFlight.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -30,8 +30,9 @@ object BuildIcon
 ## See Also
 
 - [object BuildIconsResponse](buildiconsresponse.md)
-  A response that contains a list of Build Icon resources.
+  A response containing a list of icon images for a build.
 - [object BuildIconsWithoutIncludesResponse](buildiconswithoutincludesresponse.md)
+  A response containing a list of build icons, without related resources.
 - [object ImageAsset](imageasset.md)
   An image asset, including its height, width, and template URL.
 - [type IconAssetType](iconassettype.md)

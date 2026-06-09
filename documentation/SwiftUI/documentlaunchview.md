@@ -8,16 +8,18 @@ A view to present when launching document-related user experience.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 
 ```swift
+nonisolated
 struct DocumentLaunchView<Actions, DocumentView> where Actions : View, DocumentView : View
 ```
 
 #### Overview
 
-> **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
+> ❗ **Important**: To create new documents, set [`UISupportsDocumentBrowser`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UISupportsDocumentBrowser) to `YES` in your app’s information property list. Without this key, document creation doesn’t work.
 
 Configure `DocumentLaunchView` to open and display files and trigger custom actions.
 
@@ -45,6 +47,8 @@ extension UTType {
     static let book = UTType(exportedAs: "com.example.bookEditor")
 }
 ```
+
+> **Note**:  An alternative to `DocumentLaunchView` is a scene variant of this API: [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). If the app definition contains `DocumentGroup` scenes, consider using a `DocumentGroupLaunchScene` instead of this view.
 
 ## Topics
 
@@ -86,14 +90,20 @@ extension UTType {
 
 - [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
   A launch scene for document-based applications.
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+  Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
 - [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [protocol DocumentBaseBox](documentbasebox.md)
-  A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
+- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
+  Describes the source of data used to create a new document.
+- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+  The default label used for a new document button.
+- [struct DocumentCreationSource](documentcreationsource.md)
+  Describes the source used to create a new document.
 
 
 ---

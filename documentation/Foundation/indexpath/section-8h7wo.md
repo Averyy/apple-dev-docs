@@ -21,10 +21,14 @@ var section: Int { get set }
 
 ## See Also
 
+- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+  One past the index of the last node in the index path.
 - [var item: Int](indexpath/item-8cp0y.md)
   The value of the item element of the index path.
 - [var row: Int](indexpath/row.md)
   The value of the row element of the index path.
+- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+  The index of the first node in the index path.
 
 
 ---

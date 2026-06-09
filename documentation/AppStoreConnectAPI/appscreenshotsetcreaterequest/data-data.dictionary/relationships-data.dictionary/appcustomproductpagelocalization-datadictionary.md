@@ -16,6 +16,7 @@ object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLoca
 
 ### Objects
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app screenshot set.
 
 ## Properties
 

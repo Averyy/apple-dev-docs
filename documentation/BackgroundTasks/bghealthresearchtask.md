@@ -9,8 +9,8 @@ A time-consuming, necessary processing task that runs while the app is in the ba
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- tvOS ?+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 

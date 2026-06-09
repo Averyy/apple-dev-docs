@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an analytics report request create request resource.
+The data object within an analytics report request create request containing the resource type, attributes, and relationships for the create operation.
 
 **Availability**:
 - App Store Connect API 3.4+
@@ -20,6 +20,7 @@ object AnalyticsReportRequestCreateRequest.Data
 - [object AnalyticsReportRequestCreateRequest.Data.Attributes](analyticsreportrequestcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that describe an analytics report create request resource.
 - [object AnalyticsReportRequestCreateRequest.Data.Relationships](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

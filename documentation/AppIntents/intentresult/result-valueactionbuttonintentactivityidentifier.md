@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Indicates the Intent finished performing with an `AppIntent` to continue with
+Creates a result container with a value, a follow-on intent, and an identifier.
 
 **Availability**:
 - iOS 17.2+
@@ -23,6 +23,8 @@ static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, acti
 ## Parameters
 
 - `value`: The value produced by the `AppIntent`
+- `actionButtonIntent`: A follow-on intent that can run next.
+- `activityIdentifier`: An identifier for the follow-on intent.
 
 
 ---

@@ -18,7 +18,7 @@ Shows the specified content beside the modified view.
 
 ```swift
 nonisolated
-func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: () -> V) -> some View where V : View
+func safeAreaInset<V>(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Return Value
@@ -47,12 +47,14 @@ struct ScrollableViewWithSideBar: View {
 - `edge`: The horizontal edge of the view to inset by the width of `content`, to make space for `content`.
 - `alignment`: The alignment guide used to position `content` vertically.
 - `spacing`: Extra distance placed between the two views, or nil to use the default amount of spacing.
-- `content`: A view builder function providing the view to display in the inset space of the modified view.
+- `content`: A content builder function providing the view to display in the inset space of the modified view.
 
 ## See Also
 
 - [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
   Expands the safe area of a view.
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+  Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 - [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
   Adds the provided insets into the safe area of this view.
 - [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)

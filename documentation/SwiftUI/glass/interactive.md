@@ -31,6 +31,12 @@ func interactive(_ isEnabled: Bool = true) -> Glass
   Enhance your app experience with system-provided and custom Liquid Glass.
 - [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
   Applies the Liquid Glass effect to a view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+  Associates an identity value to Liquid Glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+  Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
 - [struct GlassEffectContainer](glasseffectcontainer.md)
   A view that combines multiple Liquid Glass shapes into a single shape that can morph individual shapes into one another.
 - [struct GlassEffectTransition](glasseffecttransition.md)

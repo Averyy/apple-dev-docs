@@ -26,6 +26,8 @@ The default value is [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md). I
 
 ## See Also
 
+- [func locale(Locale) -> Date.FormatStyle](date/formatstyle/locale(_:).md)
+  Modifies the date format style to use the specified locale.
 - [var timeZone: TimeZone](date/formatstyle/timezone.md)
   The time zone to use when formatting the date and time components.
 - [var calendar: Calendar](date/formatstyle/calendar.md)

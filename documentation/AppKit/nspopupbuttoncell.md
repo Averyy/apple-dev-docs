@@ -115,6 +115,8 @@ Changes made to a menu (such as adding, removing, or changing the items) are not
   This notification is posted just before a pop-up menu is attached to its window frame.
 ### Initializers
 - [init(coder: NSCoder)](nspopupbuttoncell/init(coder:).md)
+### Structures
+- [NSPopUpButtonCell.WillPopUpMessage](nspopupbuttoncell/willpopupmessage.md)
 
 ## Relationships
 

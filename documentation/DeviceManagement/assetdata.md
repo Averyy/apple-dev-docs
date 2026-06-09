@@ -13,8 +13,6 @@ A reference to arbitrary data with a specific media type.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -49,13 +47,13 @@ Specify `com.apple.asset.data` as the declaration type.
 
 ### Objects
 - [object AssetDataAuthenticationObject](assetdataauthenticationobject.md)
-  The server authentication details for an asset data.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 - [object AssetDataReferenceObject](assetdatareferenceobject.md)
-  The external reference for an asset data.
+  The external reference.
 
 ## Properties
 
-- `Authentication` (AssetDataAuthenticationObject): The server authentication details.
+- `Authentication` (AssetDataAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM.
 - `Reference` (AssetDataReferenceObject) *(required)*: The external reference.
 
 ## See Also

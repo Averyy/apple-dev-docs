@@ -1,4 +1,4 @@
-# Read the End User License Agreement Information of an App
+# Read the end user license agreement information of an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -52,23 +52,24 @@ https://api.appstoreconnect.apple.com/v1/apps/1000001234/endUserLicenseAgreement
 
 ## Parameters
 
-- `fields[endUserLicenseAgreements]` ([string])
+- `fields[endUserLicenseAgreements]` ([string]): Additional fields to include for each end user license agreement resource returned by the response.
 
 ## See Also
 
-- [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)
+- [List all app infos for an app](get-v1-apps-_id_-appinfos.md)
   Get information about an app that is currently live on App Store, or that goes live with the next version.
-- [GET /v1/apps/{id}/relationships/appInfos](get-v1-apps-_id_-relationships-appinfos.md)
-- [List All App Store Versions for an App](get-v1-apps-_id_-appstoreversions.md)
+- [List app info IDs for an app](get-v1-apps-_id_-relationships-appinfos.md)
+- [List all app store versions for an app](get-v1-apps-_id_-appstoreversions.md)
   Get a list of all App Store versions of an app across all platforms.
-- [GET /v1/apps/{id}/relationships/appStoreVersions](get-v1-apps-_id_-relationships-appstoreversions.md)
-- [GET /v1/apps/{id}/relationships/endUserLicenseAgreement](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
+- [List App Store version IDs for an app](get-v1-apps-_id_-relationships-appstoreversions.md)
+- [Get the end user license agreement ID for an app](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
 - [List All Custom Product Pages for an App](get-v1-apps-_id_-appcustomproductpages.md)
   Get a list of all custom product pages for a specific app.
-- [Get All Custom Product Page Resource IDs for an App](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+- [Get all custom product page resource ids for an app](get-v1-apps-_id_-relationships-appcustomproductpages.md)
   Get a list of custom product page resource IDs associated with an app.
-- [GET /v1/apps/{id}/appStoreVersionExperimentsV2](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
-- [GET /v1/apps/{id}/relationships/appStoreVersionExperimentsV2](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List all app store experiments for an app](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
+  Get a list of all App Store version experiments for a specific app.
+- [List App Store version experiment IDs for an app](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
 
 
 ---

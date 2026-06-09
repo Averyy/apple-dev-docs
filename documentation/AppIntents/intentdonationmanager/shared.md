@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: property
 
+The shared instance of this class.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -15,8 +17,13 @@
 ## Declaration
 
 ```swift
-static var shared: IntentDonationManager { get }
+nonisolated
+(unsafe) static let shared: IntentDonationManager
 ```
+
+#### Discussion
+
+Retrieve the shared donation manager and use it to donate app intents or delete existing donations that have become stale.
 
 
 ---

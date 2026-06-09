@@ -17,7 +17,7 @@ Creates a menu with a custom primary action that generates its label from a loca
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, @ViewBuilder content: () -> Content, primaryAction: @escaping () -> Void)
+init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void)
 ```
 
 ## Parameters

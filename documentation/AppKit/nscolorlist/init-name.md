@@ -28,7 +28,8 @@ This method invokes [`init(name:fromFile:)`](nscolorlist/init(name:fromfile:).md
 
 ## See Also
 
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [init?(name: NSColorList.Name, fromFile: String?)](nscolorlist/init(name:fromfile:).md)
+  Initializes and returns a color list from the specified file, registering it under the specified name if it isn’t in use already.
 - [init?(name: NSColorList.Name, fromFile: String?)](nscolorlist/init(name:fromfile:).md)
   Initializes and returns a color list from the specified file, registering it under the specified name if it isn’t in use already.
 

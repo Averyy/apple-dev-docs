@@ -12,17 +12,13 @@ An instance of the generation schema.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 static var generationSchema: GenerationSchema { get }
 ```
-
-## See Also
-
-- [struct GenerationSchema](generationschema.md)
-  A type that describes the properties of an object and any guides on their values.
 
 
 ---

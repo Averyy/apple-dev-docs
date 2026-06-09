@@ -30,7 +30,6 @@ This enumeration contains a failure [`ImageAnalysisInteraction.SubjectUnavailabl
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

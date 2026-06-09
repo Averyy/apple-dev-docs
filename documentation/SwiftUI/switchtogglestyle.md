@@ -17,6 +17,7 @@ A toggle style that displays a leading label and a trailing switch.
 ## Declaration
 
 ```swift
+nonisolated
 struct SwitchToggleStyle
 ```
 

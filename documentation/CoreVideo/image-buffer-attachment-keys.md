@@ -47,6 +47,10 @@ An image buffer associates its attachment keys in a [`CFDictionary`](https://dev
   A key to the content light level information.
 - [let kCVImageBufferMasteringDisplayColorVolumeKey: CFString](kcvimagebuffermasteringdisplaycolorvolumekey.md)
   A key to the mastering display color volume.
+- [let kCVImageBufferPostDecodeProcessingFrameMetadataKey: CFString](kcvimagebufferpostdecodeprocessingframemetadatakey.md)
+- [let kCVImageBufferPostDecodeProcessingSequenceMetadataKey: CFString](kcvimagebufferpostdecodeprocessingsequencemetadatakey.md)
+- [let kCVImageBufferSceneIlluminationKey: CFString](kcvimagebuffersceneilluminationkey.md)
+- [let kCVImageBufferHorizontalDisparityAdjustmentKey: CFString](kcvimagebufferhorizontaldisparityadjustmentkey.md)
 
 ## See Also
 
@@ -70,6 +74,12 @@ An image buffer associates its attachment keys in a [`CFDictionary`](https://dev
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
 - [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 
 ---

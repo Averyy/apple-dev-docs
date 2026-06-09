@@ -18,7 +18,7 @@ A shape provider that fills its shape.
 
 ```swift
 @frozen
-struct FillShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
+nonisolated struct FillShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
 ```
 
 #### Overview

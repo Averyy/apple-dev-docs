@@ -64,6 +64,7 @@ struct CMTimeRange
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)

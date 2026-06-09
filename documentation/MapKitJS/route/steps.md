@@ -30,8 +30,6 @@ The array contains one or more [`RouteStep`](routestep.md) objects representing 
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

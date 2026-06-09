@@ -54,7 +54,6 @@ Conversions between the two priorities are available as initializers on the resp
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

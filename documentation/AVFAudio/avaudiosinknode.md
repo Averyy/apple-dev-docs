@@ -49,6 +49,8 @@ An audio sink node doesn’t support manual rendering mode, and doesn’t have a
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

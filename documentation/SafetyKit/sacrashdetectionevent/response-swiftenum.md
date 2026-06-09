@@ -31,9 +31,6 @@ The Crash Detection event response indicates whether the system attempted to dia
   The system couldn’t contact the Emergency SOS - Call After Severe Crash provider because the feature is off in the Settings app.
 ### Initializers
 - [init?(rawValue: Int)](sacrashdetectionevent/response-swift.enum/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](sacrashdetectionevent/response-swift.enum/equatable-implementations.md)
-- [RawRepresentable Implementations](sacrashdetectionevent/response-swift.enum/rawrepresentable-implementations.md)
 
 ## Relationships
 

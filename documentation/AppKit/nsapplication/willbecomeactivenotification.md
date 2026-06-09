@@ -18,6 +18,8 @@ class let willBecomeActiveNotification: NSNotification.Name
 
 The notification object is `NSApp`. This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSApplication.WillBecomeActiveMessage`](nsapplication/willbecomeactivemessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

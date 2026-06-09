@@ -1,4 +1,4 @@
 Completed scraping AlarmKit!
-Total pages scraped: 123
+Total pages scraped: 126
 Pages skipped (unchanged): 1
 Pages failed: 0

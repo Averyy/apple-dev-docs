@@ -15,8 +15,8 @@ A Boolean value that indicates whether image generation is available on the curr
 ## Declaration
 
 ```swift
-@MainActor
-@objc(available) @preconcurrency dynamic class var isAvailable: Bool { get }
+@objc
+(available) nonisolated dynamic class var isAvailable: Bool { get }
 ```
 
 #### Discussion

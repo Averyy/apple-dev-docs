@@ -34,12 +34,15 @@ This protocol serves as the base type for conceptual interfaces like [`AppEntity
 ### Inherited By
 - [AppEntity](appentity.md)
 - [AppEnum](appenum.md)
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AssistantEntity](assistantentity.md)
 - [AssistantEnum](assistantenum.md)
 - [AssistantSchemaEntity](assistantschemaentity.md)
 - [AssistantSchemaEnum](assistantschemaenum.md)
 - [FileEntity](fileentity.md)
 - [IndexedEntity](indexedentity.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [SyncableEntity](syncableentity.md)
 - [TransientAppEntity](transientappentity.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)
@@ -50,9 +53,6 @@ This protocol serves as the base type for conceptual interfaces like [`AppEntity
 
 ## See Also
 
-- [class EntityProperty](entityproperty.md)
-  A property wrapper that exposes the associated property to the system.
-- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 - [protocol AnyIntentValue](anyintentvalue.md)
   A type the system uses to access a parameter or property value.
 

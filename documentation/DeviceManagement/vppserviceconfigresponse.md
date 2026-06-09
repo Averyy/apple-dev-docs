@@ -6,8 +6,7 @@
 The response with the service configuration.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 
@@ -19,7 +18,7 @@ object VppServiceConfigResponse
 
 - `associateLicenseSrvUrl` (string): The URL for the `Associate License` endpoint. Note the `Associate License` endpoint has been deprecated. Use [`Manage Licenses`](manage-licenses.md) instead.
 - `clientConfigSrvUrl` (string): The URL for the [`Client Configuration`](client-configuration.md) endpoint.
-- `contentMetadataLookupUrl` (string): The URL that returns metadata about a product in the iTunes Store. See [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md), for more information.
+- `contentMetadataLookupUrl` (string): The URL that returns metadata about a product in the iTunes Store. See [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md), for more information.
 - `disassociateLicenseSrvUrl` (string): The URL for the `Disassociate License` endpoint. Note the `Disassociate License`  endpoint has been deprecated. Use [`Manage Licenses`](manage-licenses.md) instead.
 - `editUserSrvUrl` (string): The URL for the [`Edit a User`](edit-a-user.md) endpoint.
 - `errorCodes` (VppErrorCode): List of possible error numbers and their human-readable explanations.

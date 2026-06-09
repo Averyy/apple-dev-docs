@@ -11,7 +11,8 @@ Constructs a new help link that opens the specified destination URL.
 ## Declaration
 
 ```swift
-init(destination: URL)
+@MainActor
+@preconcurrency init(destination: URL)
 ```
 
 #### Discussion

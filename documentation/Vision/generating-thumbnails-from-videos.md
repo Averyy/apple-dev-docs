@@ -148,6 +148,8 @@ For each result, the sample creates a new frame based on the timestamp and attac
 
 ## See Also
 
+- [Implementing saliency-based image cropping in iOS and watchOS](implementing-saliency-based-image-cropping-in-ios-and-watchos.md)
+  Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
 - [struct CalculateImageAestheticsScoresRequest](calculateimageaestheticsscoresrequest.md)
   A request that analyzes an image for aesthetically pleasing attributes.
 - [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)

@@ -20,7 +20,7 @@ This property contains the shadow’s blur radius, as measured in the default us
 
 ## See Also
 
-- [var shadowOffset: NSSize](nsshadow/shadowoffset.md)
+- [var shadowOffset: CGSize](nsshadow/shadowoffset.md)
   The shadow’s relative position, which you specify with horizontal and vertical offset values.
 - [var shadowColor: NSColor?](nsshadow/shadowcolor.md)
   The color of the shadow.

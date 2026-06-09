@@ -11,6 +11,7 @@ A gauge style that displays a bar with a marker that appears at a point along th
 ## Declaration
 
 ```swift
+nonisolated
 struct LinearGaugeStyle
 ```
 

@@ -101,6 +101,31 @@ Swift is developed in the open. To learn more about the open source Swift projec
   Use C++ APIs in Swift – and Swift APIs in C++ – in a single framework target, and consume the framework’s APIs in a separate app target.
 - [Calling APIs Across Language Boundaries](callingapisacrosslanguageboundaries.md)
   Use a variety of C++ APIs in Swift – and vice-versa – across multiple targets and frameworks in an Xcode project.
+### Protocols
+- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+  A type that provides borrowed access to the values of a borrowing sequence.
+- [protocol BorrowingSequence](borrowingsequence.md)
+  A type that provides sequential, borrowing access to its elements.
+### Structures
+- [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+- [struct SpanIterator](spaniterator.md)
+### Functions
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
+  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+  Enters a scope in which a task cancellation shield is active.
+- [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
+  Enters a scope in which a task cancellation shield is active.
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 
 
 ---

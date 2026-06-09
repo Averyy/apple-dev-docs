@@ -269,6 +269,8 @@ The performance of some collection operations depends on the type of index that 
   Finds and returns the ranges of the all occurrences of a given sequence within the collection.
 - [func removingSubranges(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](collection/removingsubranges(_:).md)
   Returns a collection of the elements in this collection that are not represented by the given range set.
+- [func saveJSONLines(to: URL, includeReportMetadata: Bool) throws -> URL](collection/savejsonlines(to:includereportmetadata:).md)
+  Saves the array of evaluation results as a JSONL file
 - [func suffix(Int) -> Self.SubSequence](collection/suffix(_:).md)
   Returns a subsequence, up to the given maximum length, containing the final elements of the collection.
 - [func suffix(from: Self.Index) -> Self.SubSequence](collection/suffix(from:).md)

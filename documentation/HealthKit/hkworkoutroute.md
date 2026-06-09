@@ -32,7 +32,7 @@ The route’s location data is stored as an array of [`CLLocation`](https://deve
 
 ##### Using Workout Routes
 
-Like many HealthKit classes, the [`HKWorkoutRoute`](hkworkoutroute.md) class should not be subclassed. You can extend [`HKWorkoutRoute`](hkworkoutroute.md) objects by adding custom metadata keys and values to the metadata dictionary when the object is created.
+As with many HealthKit classes, don’t subclass the [`HKWorkoutRoute`](hkworkoutroute.md) class. You can extend [`HKWorkoutRoute`](hkworkoutroute.md) objects by adding custom metadata keys and values to the metadata dictionary when the object is created.
 
 ## Relationships
 

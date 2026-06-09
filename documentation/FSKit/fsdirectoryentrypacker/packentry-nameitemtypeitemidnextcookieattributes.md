@@ -20,14 +20,14 @@ func packEntry(name: FSFileName, itemType: FSItem.ItemType, itemID: FSItem.Ident
 
 #### Discussion
 
-You call this method in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md), for each directory entry you want to provide to the enumeration.
+You call this method in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md), for each directory entry you want to provide to the enumeration.
 
 ## Parameters
 
 - `name`: The item’s name.
 - `itemType`: The type of the item.
 - `itemID`: The item’s identifier. Typically this is an inode number, or one of the constants defined by [`FSItem.Identifier`](fsitem/identifier.md) like [`FSItem.Identifier.rootDirectory`](fsitem/identifier/rootdirectory.md).
-- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the `cookie` parameter on the next call to [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md). Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
+- `nextCookie`: A value to indicate the next entry in the directory to enumerate. FSKit passes this value as the `cookie` parameter on the next call to [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md). Use whatever value is appropriate for your implementation; the value is opaque to FSKit.
 - `attributes`: The item’s attributes. Pass `nil` if the enumeration call didn’t request attributes.
 
 ## See Also

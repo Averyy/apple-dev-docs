@@ -36,8 +36,6 @@ To ensure that you report progress in known units of work, you typically work wi
 
 - [func becomeCurrent(withPendingUnitCount: Int64)](progress/becomecurrent(withpendingunitcount:).md)
   Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
-- [func addChild(Progress, withPendingUnitCount: Int64)](progress/addchild(_:withpendingunitcount:).md)
-  Adds a process object as a suboperation of a progress tree.
 - [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](progress/performascurrent(withpendingunitcount:using:).md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 - [func resignCurrent()](progress/resigncurrent.md)

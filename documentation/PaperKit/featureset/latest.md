@@ -20,7 +20,16 @@ static var latest: FeatureSet { get }
 
 #### Discussion
 
-To automatically get the latest features that PaperKit adds in new releases use `.latest`, to avoid new release adding unexpected functionality to your app use a specific version like `.version1`.
+To automatically get the latest features that PaperKit adds in new releases use `.latest`, to avoid new releases adding unexpected functionality to your app use a specific version like `.version1`.
+
+## See Also
+
+- [static var version1: FeatureSet](featureset/version1.md)
+  A new feature set supporting all features in version 1.
+- [static var version2: FeatureSet](featureset/version2.md)
+  A new feature set supporting all features in version 2.
+- [static var empty: FeatureSet](featureset/empty.md)
+  A maximally empty feature set.
 
 
 ---

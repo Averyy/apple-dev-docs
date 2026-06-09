@@ -36,7 +36,6 @@ Can be used to insert IP into a protocol stack.
 - [func hopLimit(UInt8) -> IP](ip/hoplimit(_:).md)
   Configure the IP hop limit.
 - [func localAddressPreference(NWProtocolIP.Options.AddressPreference) -> IP](ip/localaddresspreference(_:).md)
-  Specify a preference selecting the local addresses to use with outbound connections.
 - [func minimumMTU(Bool) -> IP](ip/minimummtu(_:).md)
   Configure IP to use the minimum MTU value.
 - [func multicastLoopbackDisabled(Bool) -> IP](ip/multicastloopbackdisabled(_:).md)
@@ -44,7 +43,6 @@ Can be used to insert IP into a protocol stack.
 - [func receiveTimeCalculated(Bool) -> IP](ip/receivetimecalculated(_:).md)
   Configure IP to calculate receive time for inbound packets.
 - [func version(NWProtocolIP.Options.Version) -> IP](ip/version(_:).md)
-  Specify a single version of the Internet Protocol to allow.
 
 ## Relationships
 

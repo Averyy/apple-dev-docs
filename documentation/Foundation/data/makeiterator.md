@@ -26,6 +26,8 @@ The iterator will increment byte-by-byte.
 
 ## See Also
 
+- [struct Iterator](data/iterator.md)
+  An iterator that operates over the contents of data.
 - [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](data/enumeratebytes(_:).md)
   Enumerates the contents of the data’s buffer.
 

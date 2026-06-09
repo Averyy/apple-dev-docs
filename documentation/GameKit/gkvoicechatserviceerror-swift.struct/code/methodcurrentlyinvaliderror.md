@@ -6,6 +6,9 @@
 A method on the voice chat service was called when it was not allowed to be called (for example, attempting to connect when the voice chat service was already connected).
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

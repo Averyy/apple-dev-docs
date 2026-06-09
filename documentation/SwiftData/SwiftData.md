@@ -79,7 +79,7 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
 - [macro Query()](query().md)
   Fetches all instances of the attached model type.
 - [Additional query macros](additionalquerymacros.md)
-  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort and order those results.
+  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort, order, and section those results.
 - [struct Query](query.md)
   A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
 - [struct FetchDescriptor](fetchdescriptor.md)
@@ -114,6 +114,11 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
 - [struct DefaultHistoryDelete](defaulthistorydelete.md)
 - [struct DefaultHistoryToken](defaulthistorytoken.md)
 - [struct DefaultHistoryTransaction](defaulthistorytransaction.md)
+### Data store observation
+- [class ResultsObserver](resultsobserver.md)
+  Observes and tracks changes to a collection of persistent models in a model context.
+- [class HistoryObserver](historyobserver.md)
+  Monitors a model container’s data stores for remote changes and notifies when new history transactions are available.
 ### Codeable support
 - [enum DataStoreSnapshotCodingKey](datastoresnapshotcodingkey.md)
   The key space to use when implementing custom coders and decoders for data store snapshots,

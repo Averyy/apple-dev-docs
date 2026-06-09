@@ -16,6 +16,8 @@ enum AVRoutePickerViewButtonStyle
 
 ## Topics
 
+### Creating a button style
+- [init?(rawValue: Int)](avroutepickerviewbuttonstyle/init(rawvalue:).md)
 ### Button Styles
 - [AVRoutePickerViewButtonStyle.custom](avroutepickerviewbuttonstyle/custom.md)
   A custom button style.
@@ -23,8 +25,6 @@ enum AVRoutePickerViewButtonStyle
   A plain button style.
 - [AVRoutePickerViewButtonStyle.system](avroutepickerviewbuttonstyle/system.md)
   A system-defined button style.
-### Initializers
-- [init?(rawValue: Int)](avroutepickerviewbuttonstyle/init(rawvalue:).md)
 
 ## Relationships
 

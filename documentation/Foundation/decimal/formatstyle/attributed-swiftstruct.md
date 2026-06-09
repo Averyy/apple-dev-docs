@@ -57,6 +57,9 @@ User interface frameworks like SwiftUI can use these attributes when presenting 
 ### Formatting a decimal value
 - [func format(Decimal) -> AttributedString](decimal/formatstyle/attributed-swift.struct/format(_:).md)
   Formats a decimal value, using this style.
+### Modifying the locale
+- [func locale(Locale) -> Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct/locale(_:).md)
+  Modifies the format style to use the specified locale.
 
 ## Relationships
 

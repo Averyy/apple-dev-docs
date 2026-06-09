@@ -38,7 +38,7 @@ For more information, see [`Initiating and maintaining a session`](initiating-an
   An object that communicates the device’s supported framework features.
 - [protocol NIDeviceCapability](nidevicecapability.md)
   An interface that adds Boolean values that indicate an interaction session feature support.
-### Connecting to A Peer Device
+### Connecting to a peer device
 - [var discoveryToken: NIDiscoveryToken?](nisession/discoverytoken.md)
   A temporary, random identifier for a device.
 - [class NIDiscoveryToken](nidiscoverytoken.md)
@@ -61,6 +61,11 @@ For more information, see [`Initiating and maintaining a session`](initiating-an
   Provides the framework with an existing AR session to use for Camera Assistance.
 - [func worldTransform(for: NINearbyObject) -> simd_float4x4?](nisession/worldtransform(for:).md)
   Returns a world transform to integrate a nearby object in an AR experience.
+### Providing accessory state information
+- [func updateMotionState(NIMotionActivityState, forObjectWithToken: NIDiscoveryToken)](nisession/updatemotionstate(_:forobjectwithtoken:).md)
+  Notifies the session of an accessory’s motion state change.
+- [enum NIMotionActivityState](nimotionactivitystate.md)
+  Motion states for a nearby accessory.
 ### Deprecated
 - [class var isSupported: Bool](nisession/issupported.md)
   A Boolean value that indicates whether the device supports basic interaction-session functionality.

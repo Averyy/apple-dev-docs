@@ -22,39 +22,42 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
 ## Topics
 
 ### Getting Xcode Cloud Workflows
-- [Read Xcode Cloud Workflow Information](get-v1-ciworkflows-_id_.md)
+- [Read xcode cloud workflow information](get-v1-ciworkflows-_id_.md)
   Get information about a specific Xcode Cloud workflow.
-- [List All Xcode Cloud Builds for a Workflow](get-v1-ciworkflows-_id_-buildruns.md)
+- [List all xcode cloud builds for a workflow](get-v1-ciworkflows-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific workflow.
-- [Read the Repository Information for an Xcode Cloud Workflow](get-v1-ciworkflows-_id_-repository.md)
+- [Read the repository information for an xcode cloud workflow](get-v1-ciworkflows-_id_-repository.md)
   Get information about the Git repository of a specific Xcode Cloud workflow.
-- [GET /v1/ciWorkflows/{id}/relationships/buildRuns](get-v1-ciworkflows-_id_-relationships-buildruns.md)
-- [GET /v1/ciWorkflows/{id}/relationships/repository](get-v1-ciworkflows-_id_-relationships-repository.md)
+- [List build run IDs for a CI workflow](get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [Get the repository ID for a CI workflow](get-v1-ciworkflows-_id_-relationships-repository.md)
 ### Managing Xcode Cloud Workflows
-- [Create a Workflow](post-v1-ciworkflows.md)
+- [Create a workflow](post-v1-ciworkflows.md)
   Create a new Xcode Cloud workflow for an Xcode Cloud product.
-- [Update an Xcode Cloud Workflow](patch-v1-ciworkflows-_id_.md)
+- [Update an xcode cloud workflow](patch-v1-ciworkflows-_id_.md)
   Make changes to an Xcode Cloud workflow.
-- [Delete a Workflow](delete-v1-ciworkflows-_id_.md)
+- [Delete a workflow](delete-v1-ciworkflows-_id_.md)
   Delete an Xcode Cloud workflow and all of its associated data.
-### Objects and Types
+### Objects and types
 - [object CiWorkflow](ciworkflow.md)
-  The data structure that represents a Workflows resource.
+  An Xcode Cloud automation configuration specifying when to build, which actions to run, and how to distribute the output.
 - [object CiAction](ciaction.md)
-  The data structure that represents an Xcode Cloud workflow action resource.
+  A step within an Xcode Cloud workflow, such as building, running tests, analyzing, or deploying an app.
 - [object CiWorkflowCreateRequest](ciworkflowcreaterequest.md)
   The request body you use to create a new Xcode Cloud workflow.
 - [object CiWorkflowUpdateRequest](ciworkflowupdaterequest.md)
   The request body you use to update an Xcode Cloud workflow.
 - [object CiWorkflowResponse](ciworkflowresponse.md)
-  A response that contains a single Workflows resource.
+  The response body for endpoints that create, read, or modify an Xcode Cloud workflow.
 - [object CiWorkflowsResponse](ciworkflowsresponse.md)
-  A response that contains a list of Workflows resources.
+  The response body for endpoints that list Xcode Cloud workflows for a product.
 - [object CiBuildRunsResponse](cibuildrunsresponse.md)
-  A response that contains a list of Build Runs resources.
+  The response body for endpoints that list build runs for an Xcode Cloud workflow.
 - [object CiManualBranchStartCondition](cimanualbranchstartcondition.md)
+  A workflow start condition that triggers an Xcode Cloud build when a specified branch is manually selected.
 - [object CiManualPullRequestStartCondition](cimanualpullrequeststartcondition.md)
+  A workflow start condition that triggers an Xcode Cloud build for a manually specified pull request.
 - [object CiManualTagStartCondition](cimanualtagstartcondition.md)
+  A workflow start condition that triggers an Xcode Cloud build when a specified tag is manually selected.
 - [object CiWorkflowBuildRunsLinkagesResponse](ciworkflowbuildrunslinkagesresponse.md)
 - [object CiWorkflowRepositoryLinkageResponse](ciworkflowrepositorylinkageresponse.md)
 

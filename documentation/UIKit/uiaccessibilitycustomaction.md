@@ -61,6 +61,9 @@ After creating an instance of this class, add it to the [`accessibilityCustomAct
   A closure type that defines a handler to perform for an action.
 ### Type Properties
 - [class let editCategory: String](uiaccessibilitycustomaction/editcategory.md)
+  A constant that an app specifies through the category property on a UIKit accessibility custom action.
+- [class let editCategory: String](uiaccessibilitycustomaction/editcategory.md)
+  A constant that an app specifies through the category property on a UIKit accessibility custom action.
 ### Instance Properties
 - [var category: String?](uiaccessibilitycustomaction/category.md)
 

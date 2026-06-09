@@ -27,9 +27,12 @@ class CPThumbnailImage
 - [var image: UIImage](cpthumbnailimage/image.md)
   The image displayed in the thumbnail.
 - [var imageOverlay: CPImageOverlay?](cpthumbnailimage/imageoverlay.md)
-  An optional  overlay for the thumbnail.
+  An optional overlay for the thumbnail.
 - [var sportsOverlay: CPSportsOverlay?](cpthumbnailimage/sportsoverlay.md)
   An optional sports overlay for the thumbnail.
+### Type Methods
+- [class func maximumImageSize(forAspectRatio: CGFloat) -> CGSize](cpthumbnailimage/maximumimagesize(foraspectratio:).md)
+  Returns the recommended maximum image size for a @c CPThumbnailImage with the given aspect ratio.
 
 ## Relationships
 

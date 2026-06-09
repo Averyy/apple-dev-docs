@@ -18,12 +18,12 @@ Creates a progress view for showing indeterminate progress that displays a custo
 
 ```swift
 nonisolated
-init(@ViewBuilder label: () -> Label)
+init(@ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
 
-- `label`: A view builder that creates a view that describes the task in progress.
+- `label`: A content builder that creates a view that describes the task in progress.
 
 ## See Also
 

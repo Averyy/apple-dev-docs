@@ -17,6 +17,7 @@ A value that indicates whether the scroll view displays the scrollable component
 ## Declaration
 
 ```swift
+nonisolated
 var showsIndicators: Bool { get set }
 ```
 

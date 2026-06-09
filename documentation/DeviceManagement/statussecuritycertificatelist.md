@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s managed certificates.
+The status item that lists the device’s managed certificates.
 
 **Availability**:
 - iOS 17.0+
@@ -13,8 +13,6 @@ A status report of the client’s managed certificates.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,11 +33,54 @@ object StatusSecurityCertificateList
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+##### Status Item Example
+
+**New or updated certificate**:
+
+Reports a new or updated certificate.
+
+```json
+{
+    "security": {
+        "certificate": {
+            "list": [
+                {
+                    "identifier": "F6A7B8C9-D0E1-2345-FABC-345678901234",
+                    "declaration-identifier": "com.example.certificate",
+                    "subject-summary": "Example Corp Root CA",
+                    "is-identity": false,
+                    "data": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA..."
+                }
+            ]
+        }
+    }
+}
+```
+
+**Removed certificate**:
+
+Reports a removed certificate.
+
+```json
+{
+    "security": {
+        "certificate": {
+            "list": [
+                {
+                    "identifier": "F6A7B8C9-D0E1-2345-FABC-345678901234",
+                    "_removed": true
+                }
+            ]
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object StatusSecurityCertificateListCertificateObject](statussecuritycertificatelistcertificateobject.md)
-  A status report of a security certificate.
+  A security certificate.
 
 ## Properties
 
@@ -47,35 +88,14 @@ object StatusSecurityCertificateList
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+- [object StatusPasscodeCompliance](statuspasscodecompliance.md)
+  The status item that reports the device’s passcode compliance.
+- [object StatusPasscodeIsPresent](statuspasscodeispresent.md)
+  The status item that reports whether the device has a passcode.
+- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
+  The status item that reports whether FileVault is enabled.
+- [object StatusSecurityLockdownMode](statussecuritylockdownmode.md)
+  The status item that reports the device’s Lockdown Mode state.
 
 
 ---

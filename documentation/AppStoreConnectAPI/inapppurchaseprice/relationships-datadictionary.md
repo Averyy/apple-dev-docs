@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -26,6 +28,7 @@ object InAppPurchasePrice.Relationships
 ## See Also
 
 - [object InAppPurchasePrice.Attributes](inapppurchaseprice/attributes-data.dictionary.md)
+  Attributes that describe an in-app purchase price resource.
 
 
 ---

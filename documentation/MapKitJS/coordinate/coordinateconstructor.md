@@ -28,6 +28,11 @@ coordinate.equals(otherCoordinate) // Returns true if otherCoordinate is at the 
 - `latitude`: The latitude in degrees.
 - `longitude`: The longitude in degrees.
 
+## See Also
+
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
+
 
 ---
 

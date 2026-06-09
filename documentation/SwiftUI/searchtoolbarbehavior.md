@@ -44,6 +44,8 @@ Use this type in combination with the [`searchToolbarBehavior(_:)`](view/searcht
 
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
+- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+  Hides an individual view within a control group toolbar item.
 - [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
 - [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)

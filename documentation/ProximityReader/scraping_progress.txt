@@ -1,4 +1,4 @@
 Completed scraping ProximityReader!
-Total pages scraped: 685
+Total pages scraped: 835
 Pages skipped (unchanged): 1
 Pages failed: 0

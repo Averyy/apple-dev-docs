@@ -127,6 +127,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
 - [class ASAuthorizationProviderExtensionUserLoginConfiguration](asauthorizationproviderextensionuserloginconfiguration.md)
 - [class ASCredentialDataManager](ascredentialdatamanager.md)
   This class allows submitting credentials and events to any credential manager enabled on the system.
+- [class ASDeliveredVerificationCodesManager](asdeliveredverificationcodesmanager.md)
+  This class allows interacting with one-time codes delivered to the system.
 - [class ASGeneratePasswordsRequest](asgeneratepasswordsrequest.md)
 - [class ASGeneratedPassword](asgeneratedpassword.md)
 - [class ASOneTimeCodeCredentialIdentity](asonetimecodecredentialidentity.md)
@@ -149,7 +151,10 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   A representation of FIDO2 LargeBlob extensions as defined in CXF.
 - [struct ASPhoneNumberIdentifier](asphonenumberidentifier.md)
 - [struct ASPublicKeyCredentialClientData](aspublickeycredentialclientdata-swift.struct.md)
+- [struct ASVerificationCode](asverificationcode.md)
+  This is an instance of a verification code.
 - [struct CredentialDataManager](credentialdatamanager.md)
+- [struct DeliveredVerificationCodesManager](deliveredverificationcodesmanager.md)
 ### Variables
 - [let ASCredentialExchangeActivity: String](ascredentialexchangeactivity.md)
   The activity type used in user activity objects sent to importing apps.

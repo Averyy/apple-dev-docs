@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Game Center player achievement resource.
+A response confirming a Game Center player achievement submission was processed.
 
 **Availability**:
 - App Store Connect API 3.2+
@@ -22,8 +22,9 @@ object GameCenterPlayerAchievementSubmissionResponse
 ## See Also
 
 - [object GameCenterPlayerAchievementSubmission](gamecenterplayerachievementsubmission.md)
+  A batch operation submitting achievement completions for a specific player in Game Center.
 - [object GameCenterPlayerAchievementSubmissionCreateRequest](gamecenterplayerachievementsubmissioncreaterequest.md)
-  The request body you use to create an Game Center player achievement.
+  The request body you use to create a Game Center player achievement.
 
 
 ---

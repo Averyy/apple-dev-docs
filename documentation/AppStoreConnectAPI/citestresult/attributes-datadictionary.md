@@ -16,7 +16,7 @@ object CiTestResult.Attributes
 
 ## Topics
 
-### Objects and Types
+### Objects and types
 - [object CiTestResult.Attributes.DestinationTestResults](citestresult/attributes-data.dictionary/destinationtestresults-data.dictionary.md)
   The results of a test action Xcode Cloud performed using a specific test destination.
 - [type CiTestStatus](citeststatus.md)

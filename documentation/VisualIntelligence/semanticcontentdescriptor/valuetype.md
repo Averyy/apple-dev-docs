@@ -8,7 +8,9 @@ A type that represents the value of a semantic content descriptor.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 
@@ -18,7 +20,7 @@ typealias ValueType = SemanticContentDescriptor
 
 #### Discussion
 
-This type defines the value type that the system uses when working with a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance. It’s an essential part of App Intents’ type system for processing visual intelligence data.
+This type defines the value type that the system uses when working with a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance. It’s part of the internal type system in App Intents for handling visual intelligence data.
 
 ## See Also
 

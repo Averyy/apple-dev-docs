@@ -15,6 +15,7 @@ A control used to select a color from the system color picker UI.
 ## Declaration
 
 ```swift
+nonisolated
 struct ColorPicker<Label> where Label : View
 ```
 

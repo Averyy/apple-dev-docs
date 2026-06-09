@@ -34,6 +34,14 @@ Don’t reuse the same nonce for multiple calls to encryption APIs. It’s criti
 ### Iterating over a nonce’s bytes
 - [func makeIterator() -> Array<UInt8>.Iterator](chachapoly/nonce/makeiterator.md)
   Returns an iterator over the elements of the nonce.
+### Initializers
+- [init(copying: RawSpan) throws](chachapoly/nonce/init(copying:).md)
+  Creates a nonce from the given data.
+### Instance Properties
+- [var bytes: RawSpan](chachapoly/nonce/bytes.md)
+  The bytes stored in the nonce.
+- [var count: Int](chachapoly/nonce/count.md)
+  The number of bytes stored in the nonce.
 
 ## Relationships
 

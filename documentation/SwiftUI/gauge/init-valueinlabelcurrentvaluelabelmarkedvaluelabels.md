@@ -16,7 +16,8 @@ Creates a gauge representing a value within a range.
 ## Declaration
 
 ```swift
-init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ViewBuilder label: () -> Label, @ViewBuilder currentValueLabel: () -> CurrentValueLabel, @ViewBuilder markedValueLabels: () -> MarkedValueLabels) where BoundsLabel == EmptyView, V : BinaryFloatingPoint
+nonisolated
+init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> CurrentValueLabel, @ContentBuilder markedValueLabels: () -> MarkedValueLabels) where BoundsLabel == EmptyView, V : BinaryFloatingPoint
 ```
 
 ## Parameters
@@ -25,7 +26,7 @@ init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ViewBuilder label: () -> L
 - `bounds`: The range of the valid values. Defaults to `0...1`.
 - `label`: A view that describes the purpose of the gauge.
 - `currentValueLabel`: A view that describes the current value of the gauge.
-- `markedValueLabels`: A view builder containing tagged views, each of which describes a particular value of the gauge. The method ignores this parameter.
+- `markedValueLabels`: A content builder containing tagged views, each of which describes a particular value of the gauge. The method ignores this parameter.
 
 ## See Also
 

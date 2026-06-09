@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The resource linkage data identifying a search keyword associated with an app.
+
 **Availability**:
 - App Store Connect API 3.6+
 

@@ -61,13 +61,13 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aa
 
 ## Parameters
 
-- `fields[appCustomProductPageLocalizations]` ([string])
-- `fields[appCustomProductPageVersions]` ([string])
-- `filter[state]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[appCustomProductPageLocalizations]` (integer)
-- `fields[appCustomProductPages]` ([string])
+- `fields[appCustomProductPageLocalizations]` ([string]): Additional fields to include for each app custom product page localization resource returned by the response.
+- `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
+- `filter[state]` ([string]): Filter the returned app custom product page versions by state.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app custom product page version resources to return.
+- `limit[appCustomProductPageLocalizations]` (integer): The maximum number of related app custom product page localizations resources to return.
+- `fields[appCustomProductPages]` ([string]): Additional fields to include for each app custom product page resource returned by the response.
 
 ## See Also
 
@@ -75,7 +75,8 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aa
   Get information about a specific app custom product page version.
 - [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+- [List localization IDs for a custom product page version](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+  Get a list of localization IDs for a specific custom product page version.
 - [Create a Custom Product Page Version](post-v1-appcustomproductpageversions.md)
   Add a version for your app custom product page.
 - [Modify a Custom Product Page Version](patch-v1-appcustomproductpageversions-_id_.md)

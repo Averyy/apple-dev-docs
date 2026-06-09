@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an app event.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -16,7 +18,9 @@ object AppEventCreateRequest.Data
 
 ### Objects
 - [object AppEventCreateRequest.Data.Attributes](appeventcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an app event create request resource.
 - [object AppEventCreateRequest.Data.Relationships](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

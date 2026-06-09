@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single App Clip Header Images resource.
+A response containing a single header image for a default App Clip experience.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -23,7 +23,7 @@ object AppClipHeaderImageResponse
 ## See Also
 
 - [object AppClipHeaderImage](appclipheaderimage.md)
-  The data structure that represents the image that appears on the App Clip card of a default App Clip experience.
+  The image displayed on the App Clip card for a default App Clip experience, uploaded as part of App Clip configuration.
 - [object AppClipHeaderImageCreateRequest](appclipheaderimagecreaterequest.md)
   The request body you use to reserve an image asset that appears on the App Clip card of a default App Clip experience.
 - [object AppClipHeaderImageUpdateRequest](appclipheaderimageupdaterequest.md)

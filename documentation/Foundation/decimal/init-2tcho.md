@@ -22,6 +22,8 @@ init(_ value: Int)
 
 ## See Also
 
+- [init?<T>(exactly: T)](decimal/init(exactly:).md)
+  Creates a new decimal value exactly representing the provided integer.
 - [init(Int8)](decimal/init(_:)-4gk29.md)
   Creates and initializes a decimal with the provided integer value.
 - [init(Int16)](decimal/init(_:)-5aznh.md)
@@ -29,6 +31,8 @@ init(_ value: Int)
 - [init(Int32)](decimal/init(_:)-7dmlc.md)
   Creates and initializes a decimal with the provided integer value.
 - [init(Int64)](decimal/init(_:)-7a033.md)
+  Creates and initializes a decimal with the provided integer value.
+- [init(integerLiteral: Int)](decimal/init(integerliteral:).md)
   Creates and initializes a decimal with the provided integer value.
 
 

@@ -78,6 +78,8 @@ This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCoun
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
 - [Debugging Out-of-Process Audio Units on Apple Silicon](debugging-out-of-process-audio-units-on-apple-silicon.md)
   Connect to out-of-process audio units using the Xcode debugger.
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+  Create a Spatial Audio extension that allows Bluetooth headphones to track the wearer’s head movements for spatial audio playback.
 - [class AUAudioUnit](auaudiounit.md)
   A class that defines a host’s interface to an audio unit.
 - [class AUAudioUnitBus](auaudiounitbus.md)
@@ -86,6 +88,8 @@ This version 3 class is bridged to the version 2 `kAudioUnitProperty_ElementCoun
   A class that describes an interface for custom parameter settings provided by the audio unit developer.
 - [class AUAudioUnitV2Bridge](auaudiounitv2bridge.md)
   A class that wraps a version 2 audio unit as version 3 audio unit.
+- [class AUHeadTrackingBinauralRenderer](auheadtrackingbinauralrenderer.md)
+  A subclass of AUAudioUnit specifically for 3rd party spatial Audio Units.
 - [func AudioUnitExtensionCopyComponentList(CFString) -> Unmanaged<CFArray>?](audiounitextensioncopycomponentlist(_:).md)
   Returns the component registrations for a given audio unit extension.
 - [func AudioUnitExtensionSetComponentList(CFString, CFArray?) -> OSStatus](audiounitextensionsetcomponentlist(_:_:).md)

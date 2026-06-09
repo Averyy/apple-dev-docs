@@ -75,6 +75,8 @@ Use the properties in this structure to access the different sensors.
   Creates a sensor from a raw value.
 ### Type Properties
 - [static let acousticSettings: SRSensor](srsensor/acousticsettings.md)
+- [static let headphoneMotion: SRSensor](srsensor/headphonemotion.md)
+- [static let headphoneSettings: SRSensor](srsensor/headphonesettings.md)
 - [static let sleepSessions: SRSensor](srsensor/sleepsessions.md)
 
 ## Relationships

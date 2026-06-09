@@ -6,6 +6,9 @@
 Invokes [`getCString(_:maxLength:range:remaining:)`](nsstring/getcstring(_:maxlength:range:remaining:).md) with `maxLength` as the maximum length in char-sized units, the receiver’s entire extent as the range, and `NULL` for the remaining range.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

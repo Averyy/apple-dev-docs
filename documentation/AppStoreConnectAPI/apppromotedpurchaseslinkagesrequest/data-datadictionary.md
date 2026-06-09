@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an app promoted purchases linkages request resource.
+The resource linkage identifying a promoted purchase associated with the app promoted purchases linkages request.
 
 **Availability**:
 - App Store Connect API 2.0+

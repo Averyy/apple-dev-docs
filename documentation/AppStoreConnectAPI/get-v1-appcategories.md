@@ -1,4 +1,4 @@
-# List App Categories
+# List app categories
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -10,7 +10,7 @@ List all categories on the App Store, including the category and subcategory hie
 
 #### Discussion
 
-Use this endpoint to retrieve the list of available App Store categories and subcategories. Associate an app with categories using the [`Modify an App Info`](patch-v1-appinfos-_id_.md) endpoint.
+Use this endpoint to retrieve the list of available App Store categories and subcategories. Associate an app with categories using the [`Modify an app info`](patch-v1-appinfos-_id_.md) endpoint.
 
 The first example retrieves the full category and subcategory hierarchy in one request. The second example retrieves just the top-level categories for macOS apps.
 
@@ -2176,18 +2176,18 @@ https://api.appstoreconnect.apple.com/v1/appCategories?exists[parent]=false&filt
 
 ## Parameters
 
-- `exists[parent]` (boolean)
-- `fields[appCategories]` ([string])
-- `filter[platforms]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[subcategories]` (integer)
+- `exists[parent]` (boolean): Filter the returned app categories to include only those that have a parent category (true) or are top-level categories (false).
+- `fields[appCategories]` ([string]): Additional fields to include for each App Categories resource returned by the response.
+- `filter[platforms]` ([string]): Filter the returned app categories by platform.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app category resources to return.
+- `limit[subcategories]` (integer): The maximum number of related subcategory resources to return.
 
 ## See Also
 
-- [List All Subcategories for an App Category](get-v1-appcategories-_id_-subcategories.md)
+- [List all subcategories for an app category](get-v1-appcategories-_id_-subcategories.md)
   List all App Store subcategories that belong to a specific category.
-- [GET /v1/appCategories/{id}/relationships/subcategories](get-v1-appcategories-_id_-relationships-subcategories.md)
+- [List subcategory IDs for an app category](get-v1-appcategories-_id_-relationships-subcategories.md)
 
 
 ---

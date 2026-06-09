@@ -18,7 +18,7 @@ Presents an alert with a message when an error is present.
 
 ```swift
 nonisolated
-func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, @ViewBuilder actions: (E) -> A, @ViewBuilder message: (E) -> M) -> some View where E : LocalizedError, A : View, M : View
+func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, @ContentBuilder actions: (E) -> A, @ContentBuilder message: (E) -> M) -> some View where E : LocalizedError, A : View, M : View
 ```
 
 #### Discussion
@@ -45,7 +45,7 @@ struct TicketPurchase: View {
 }
 ```
 
-All actions in an alert dismiss the alert after the action runs. The default button is shown with greater prominence.  You can influence the default button by assigning it the [`defaultAction`](keyboardshortcut/defaultaction.md) keyboard shortcut.
+All actions in an alert dismiss the alert after the action runs. The default button is shown with greater prominence. You can influence the default button by assigning it the [`defaultAction`](keyboardshortcut/defaultaction.md) keyboard shortcut.
 
 The system may reorder the buttons based on their role and prominence.
 
@@ -59,8 +59,8 @@ This modifier creates a [`Text`](text.md) view for the title on your behalf, and
 
 - `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
 - `error`: An optional localized Error that is used to generate the alert’s title.  The system passes the contents to the modifier’s closures. You use this data to populate the fields of an alert that you create that the system displays to the user.
-- `actions`: A [`ViewBuilder`](viewbuilder.md) returning the alert’s actions.
-- `message`: A view builder returning the message for the alert given the current error.
+- `actions`: A [`ContentBuilder`](contentbuilder.md) returning the alert’s actions.
+- `message`: A content builder returning the message for the alert given the current error.
 
 ## See Also
 
@@ -70,12 +70,20 @@ This modifier creates a [`Text`](text.md) view for the title on your behalf, and
   Presents an alert when a given condition is true, using a text view for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
+  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+  Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
   Presents an alert with a message when a given condition is true using a text view as a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+  Presents an alert with a message when an error is present.
 
 
 ---

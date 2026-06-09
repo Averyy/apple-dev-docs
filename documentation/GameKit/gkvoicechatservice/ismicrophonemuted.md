@@ -6,6 +6,9 @@
 A Boolean value that determines whether the user’s microphone is muted.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

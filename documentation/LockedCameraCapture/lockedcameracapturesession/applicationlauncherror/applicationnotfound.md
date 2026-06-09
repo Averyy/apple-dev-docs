@@ -8,6 +8,7 @@ An error that the launch failed because the system didn’t find the application
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Navigation links for the app dimension in the beta tester usage metric response.
+
 **Availability**:
 - App Store Connect API 3.1+
 

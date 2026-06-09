@@ -18,6 +18,8 @@ class let willCloseNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that’s about to close. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.WillCloseMessage`](nswindow/willclosemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

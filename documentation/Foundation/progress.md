@@ -106,7 +106,7 @@ If you don’t create any suboperation progress objects between the calls to [`b
 
 ###### Adding a Progress Operation Explicitly
 
-To add a progress operation explicitly, call [`addChild(_:withPendingUnitCount:)`](progress/addchild(_:withpendingunitcount:).md) on the containing progress object. The value for the pending unit count is the amount of the containing progress object’s [`totalUnitCount`](progress/totalunitcount.md) that the suboperation consumes, which conforms to the [`ProgressReporting`](progressreporting.md) protocol.
+To add a progress operation explicitly, call `addChild(_:withPendingUnitCount:)` on the containing progress object. The value for the pending unit count is the amount of the containing progress object’s [`totalUnitCount`](progress/totalunitcount.md) that the suboperation consumes, which conforms to the [`ProgressReporting`](progressreporting.md) protocol.
 
 In the following example, the overall progress object has 10 units. The suboperation progress for the download gets eight units and tracks the download of a photo. The progress for the filter takes a lot less time and gets the remaining two units. When the download completes, the system updates the containing progress object’s completed unit count by eight. When the filter completes, the system updates it by the remaining two units.
 
@@ -138,8 +138,6 @@ In the following example, the overall progress object has 10 units. The subopera
   Returns the progress instance, if any.
 - [func becomeCurrent(withPendingUnitCount: Int64)](progress/becomecurrent(withpendingunitcount:).md)
   Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
-- [func addChild(Progress, withPendingUnitCount: Int64)](progress/addchild(_:withpendingunitcount:).md)
-  Adds a process object as a suboperation of a progress tree.
 - [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](progress/performascurrent(withpendingunitcount:using:).md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 - [func resignCurrent()](progress/resigncurrent.md)
@@ -223,6 +221,13 @@ In the following example, the overall progress object has 10 units. The subopera
   A block that the system calls when an observed progress object matches the subscription.
 - [typealias UnpublishingHandler](progress/unpublishinghandler.md)
   A block that the system calls when an observed progress object terminates the subscription.
+### Instance Methods
+- [func addChild(ProgressReporter, withPendingUnitCount: Int)](progress/addchild(_:withpendingunitcount:)-4hi92.md)
+  Adds a ProgressReporter as a child to a Progress, which constitutes a portion of Progress’s totalUnitCount.
+- [func addChild(Progress, withPendingUnitCount: Int64)](progress/addchild(_:withpendingunitcount:)-9yrs3.md)
+  Adds a process object as a suboperation of a progress tree.
+- [func subprogress(assigningCount: Int) -> Subprogress](progress/subprogress(assigningcount:).md)
+  Returns a Subprogress which can be passed to any method that reports progress It can be then used to create a child `ProgressManager` reporting to this `Progress`
 
 ## Relationships
 

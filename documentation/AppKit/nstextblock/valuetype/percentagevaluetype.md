@@ -1,22 +1,22 @@
-# NSTextBlock.ValueType.percentageValueType
+# percentageValueType
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: property
 
 Percentage value (out of 100).
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-case percentageValueType
+static var percentageValueType: NSTextBlock.ValueType { get }
 ```
 
 ## See Also
 
-- [NSTextBlock.ValueType.absoluteValueType](nstextblock/valuetype/absolutevaluetype.md)
+- [static var absoluteValueType: NSTextBlock.ValueType](nstextblock/valuetype/absolutevaluetype.md)
   Absolute value in points.
 
 

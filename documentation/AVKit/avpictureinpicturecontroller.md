@@ -73,6 +73,8 @@ Before presenting a user interface to start Picture in Picture, call the [`isPic
   Starts Picture in Picture, if possible.
 - [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
   Stops Picture in Picture, if active.
+- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 ### Retrieving Picture in Picture Template Images
 - [class var pictureInPictureButtonStartImage: UIImage](avpictureinpicturecontroller/pictureinpicturebuttonstartimage.md)
   A system-default template image for the button that starts Picture in Picture in your app.
@@ -82,9 +84,6 @@ Before presenting a user interface to start Picture in Picture, call the [`isPic
   Returns a system-default template image that’s compatible with a trait collection for the button that starts Picture in Picture in your app.
 - [class func pictureInPictureButtonStopImage(compatibleWith: UITraitCollection?) -> UIImage](avpictureinpicturecontroller/pictureinpicturebuttonstopimage(compatiblewith:).md)
   Returns a system-default template image that’s compatible with a trait collection for the button that stops Picture in Picture in your app.
-### Instance Methods
-- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
-  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 ## Relationships
 

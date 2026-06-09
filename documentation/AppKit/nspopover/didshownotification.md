@@ -14,6 +14,10 @@ Sent after the popover has finished animating onscreen.
 class let didShowNotification: NSNotification.Name
 ```
 
+#### Discussion
+
+To observe this notification using Swift concurrency, use [`NSPopover.DidShowMessage`](nspopover/didshowmessage.md).
+
 ## See Also
 
 - [class let willShowNotification: NSNotification.Name](nspopover/willshownotification.md)

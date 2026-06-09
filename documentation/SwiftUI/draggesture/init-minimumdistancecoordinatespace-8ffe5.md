@@ -16,7 +16,8 @@ Creates a dragging gesture with the minimum dragging distance before the gesture
 ## Declaration
 
 ```swift
-init(minimumDistance: CGFloat = 10, coordinateSpace: some CoordinateSpaceProtocol = .local)
+@MainActor
+@preconcurrency init(minimumDistance: CGFloat = 10, coordinateSpace: some CoordinateSpaceProtocol = .local)
 ```
 
 ## Parameters
@@ -26,6 +27,12 @@ init(minimumDistance: CGFloat = 10, coordinateSpace: some CoordinateSpaceProtoco
 
 ## See Also
 
+- [init(minimumDistance:coordinateSpace:)](draggesture/init(minimumdistance:coordinatespace:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
+- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](draggesture/init(minimumdistance:coordinatespace3d:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
+- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](draggesture/init(minimumdistance:coordinatespace:inputkinds:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds, the coordinate space of the gesture’s location, and the input kinds the gesture recognizes.
 - [var minimumDistance: CGFloat](draggesture/minimumdistance.md)
   The minimum dragging distance before the gesture succeeds.
 - [var coordinateSpace: CoordinateSpace](draggesture/coordinatespace.md)

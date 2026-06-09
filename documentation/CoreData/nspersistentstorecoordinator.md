@@ -151,6 +151,13 @@ Use a coordinator to add or remove persistent stores, change the type or locatio
   Review unsupported symbols and their replacements.
 ### Instance Methods
 - [func managedObjectID(for: String) -> NSManagedObjectID?](nspersistentstorecoordinator/managedobjectid(for:).md)
+### Structures
+- [NSPersistentStoreCoordinator.RemoteChangeMessage](nspersistentstorecoordinator/remotechangemessage.md)
+  Posted when a store receives a remote change notification from another process.
+- [NSPersistentStoreCoordinator.StoresDidChangeAsyncMessage](nspersistentstorecoordinator/storesdidchangeasyncmessage.md)
+  Posted when stores are added to or removed from the persistent store coordinator on a background queue.
+- [NSPersistentStoreCoordinator.StoresDidChangeMessage](nspersistentstorecoordinator/storesdidchangemessage.md)
+  Posted when stores are added to or removed from the persistent store coordinator on the main queue.
 ### Type Methods
 - [class func cachedModelForPersistentStore(at: URL, options: [AnyHashable : Any]?) throws -> NSManagedObjectModel](nspersistentstorecoordinator/cachedmodelforpersistentstore(at:options:).md)
 

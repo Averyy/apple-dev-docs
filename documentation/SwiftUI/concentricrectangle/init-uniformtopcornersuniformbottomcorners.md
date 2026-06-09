@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a rectangle with a corner style set on the top two corners uniformly, and another style set on the bottom two corners uniformly.
+Creates a rectangle with a corner style set on the top two corners uniformly, and another style set on the bottom two corners uniformly.
 
 **Availability**:
 - iOS 26.0+
@@ -20,10 +20,19 @@ Create a rectangle with a corner style set on the top two corners uniformly, and
 init(uniformTopCorners: Edge.Corner.Style = .concentric, uniformBottomCorners: Edge.Corner.Style = .concentric)
 ```
 
+#### Discussion
+
+For the two top corners and two bottom corners, the system calculates the radius for each corner first. Then, it selects the largest top radius and applies it to each top corner, and it selects the largest bottom radius and applies it to each bottom corner to achieve the symmetric look.
+
 ## Parameters
 
-- `uniformTopCorners`: The corner style to be applied to the top two corners uniformly.
-- `uniformBottomCorners`: The corner style to be applied to the bottom two corners uniformly.
+- `uniformTopCorners`: The corner style to apply to the top two corners uniformly.
+- `uniformBottomCorners`: The corner style to apply to the bottom two corners uniformly.
+
+## See Also
+
+- [static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:uniformbottomcorners:).md)
+  Creates a rectangle with a corner style uniformly set on the two top corners, and another style uniformly set on the two bottom corners.
 
 
 ---

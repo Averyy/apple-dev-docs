@@ -26,7 +26,7 @@ Use the [`transactionTask(_:action:)`](https://developer.apple.com/documentation
 
 You can call the methods of `CredentialTransaction` and [`CredentialTransaction.Configuration`](credentialtransaction/configuration.md) from both apps and app extensions.
 
-> ⚠️ **Warning**:  Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
+> ⚠️ **Warning**: Don’t import UIKit in any file that imports this type. This causes ambiguity resolving the [`SecureElementCredential`](SecureElementCredential.md) framework’s SwiftUI and UIKit symbols.
 
 ## Topics
 

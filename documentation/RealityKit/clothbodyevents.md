@@ -1,0 +1,38 @@
+# ClothBodyEvents
+
+**Framework**: RealityKit  
+**Kind**: enum
+
+Types of events that a cloth body publishes during its lifetime.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+enum ClothBodyEvents
+```
+
+## Topics
+
+### Receiving simulation events
+- [ClothBodyEvents.NewSimulationPositions](clothbodyevents/newsimulationpositions.md)
+  An event type that a cloth body publishes (before simulation update) when its new positions are available.
+
+## See Also
+
+- [enum ClothSimulationEvents](clothsimulationevents.md)
+  Types of events that a cloth simulation publishes during its lifetime.
+- [enum ClothColliderEvents](clothcolliderevents.md)
+  Types of events that a cloth collider publishes during its lifetime.
+- [enum ClothQueryVolumeEvents](clothqueryvolumeevents.md)
+  Types of events that a cloth query volume publishes during its lifetime.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/clothbodyevents)*

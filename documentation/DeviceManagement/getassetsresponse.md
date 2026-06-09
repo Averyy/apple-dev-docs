@@ -6,8 +6,7 @@
 The paginated response that contains the requested assets.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,20 +16,23 @@ object GetAssetsResponse
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Managing Assets](managing-assets.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Managing assets](managing-assets.md)
 
 ## Topics
 
-### Objects and Data Types
+### Objects and data types
 - [object ResponseAsset](responseasset.md)
   The asset that the organization owns.
+- [object UnlimitedResponseAsset](unlimitedresponseasset.md)
+  An asset with an unlimited license that the organization owns.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
 
 ## Properties
 
 - `assets` ([ResponseAsset]): The set of requested assets.
+- `unlimitedAssets` ([UnlimitedResponseAsset]): The set of requested unlimited assets.
 - `currentPageIndex` (int32): The current page index of the paginated response.
 - `nextPageIndex` (int32): The next page index in the paginated response. The response only includes this field when  there is a next page.
 - `size` (int32): The number of assets on the current page.

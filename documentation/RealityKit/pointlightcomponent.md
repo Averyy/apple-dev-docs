@@ -73,6 +73,12 @@ The point light illuminates entities based on its distance from them. Here is a 
 ### Supporting types
 - [PointLightComponent.Color](pointlightcomponent/color-swift.typealias.md)
   A platform-specific type used to define color for a point light.
+### Assigning render layers
+- [var layers: RenderLayer.Set](pointlightcomponent/layers.md)
+  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+### Lighting the surroundings
+- [PointLightComponent.SurroundingsLight](pointlightcomponent/surroundingslight.md)
+  A component that specifies that the point light illuminates the physical and immersive environment.
 ### Initializers
 - [init(color:intensity:attenuationRadius:)](pointlightcomponent/init(color:intensity:attenuationradius:).md)
   Creates a point light component with a configuration.

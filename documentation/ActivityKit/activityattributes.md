@@ -8,6 +8,7 @@ The protocol you implement to describe the content of a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

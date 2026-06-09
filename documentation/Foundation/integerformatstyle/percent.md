@@ -30,6 +30,8 @@ struct Percent
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(IntegerFormatStyle<Value>.Percent.Configuration.Grouping) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(IntegerFormatStyle<Value>.Percent.Configuration.Notation) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(IntegerFormatStyle<Value>.Percent.Configuration.Precision) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/precision(_:).md)
@@ -55,8 +57,16 @@ struct Percent
 ### Accessing style properties
 - [var locale: Locale](integerformatstyle/percent/locale.md)
   The locale of the format style.
+### Parsing integer percent values
+- [var parseStrategy: IntegerParseStrategy<IntegerFormatStyle<Value>.Percent>](integerformatstyle/percent/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating percent values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](integerformatstyle/percent/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Default Implementations
+- [CustomConsumingRegexComponent Implementations](integerformatstyle/percent/customconsumingregexcomponent-implementations.md)
 - [FormatStyle Implementations](integerformatstyle/percent/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](integerformatstyle/percent/parseableformatstyle-implementations.md)
 
 ## Relationships
 

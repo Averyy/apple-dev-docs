@@ -16,7 +16,7 @@ Activates this view as the source of a drag and drop operation.
 
 ```swift
 nonisolated
-func onDrag<V>(_ data: @escaping () -> NSItemProvider, @ViewBuilder preview: () -> V) -> some View where V : View
+func onDrag<V>(_ data: @escaping () -> NSItemProvider, @ContentBuilder preview: () -> V) -> some View where V : View
 ```
 
 #### Return Value
@@ -28,6 +28,8 @@ A view that activates this view as the source of a drag-and- drop operation, beg
 Applying the `onDrag(_:preview:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of `preview` is generated and used as the preview image.
 
 To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`dragPreview`](contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
+
+To use `Transferable` types directly and access a richer feature set — including multi-item drag via [`dragContainer(for:in:_:)`](view/dragcontainer(for:in:_:).md) — use [`draggable(_:)`](view/draggable(_:).md) instead.
 
 ## Parameters
 

@@ -1,4 +1,4 @@
-# List All Builds for a Beta Group
+# List all builds for a beta group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,11 +19,11 @@ Get a list of builds associated with a specific beta group.
 
 ## See Also
 
-- [Get All Build IDs in a Beta Group](get-v1-betagroups-_id_-relationships-builds.md)
+- [Get all build ids in a beta group](get-v1-betagroups-_id_-relationships-builds.md)
   Get a list of build resource IDs in a specific beta group.
-- [List All Beta Testers in a Beta Group](get-v1-betagroups-_id_-betatesters.md)
+- [List all beta testers in a beta group](get-v1-betagroups-_id_-betatesters.md)
   Get a list of beta testers contained in a specific beta group.
-- [Get All Beta Tester IDs in a Beta Group](get-v1-betagroups-_id_-relationships-betatesters.md)
+- [Get all beta tester ids in a beta group](get-v1-betagroups-_id_-relationships-betatesters.md)
   Get a list of the beta tester resource IDs in a specific beta group.
 
 

@@ -39,38 +39,7 @@ struct StartPlaybackPresentationIntent: AppIntent {
 }
 ```
 
-For more information about the `.presentation` app intent domain, see [`Making presentation actions available to Siri and Apple Intelligence`](making-presentation-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var addAudioToSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/addaudiotoslide.md)
-  The app intent conforms to the schema for adding audio to a slide.
-- [var addCommentToSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/addcommenttoslide.md)
-  The app intent conforms to the schema for adding a comment to a slide.
-- [var addImageToSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/addimagetoslide.md)
-  The app intent conforms to the schema for adding an image to a slide.
-- [var addTextBoxToSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/addtextboxtoslide.md)
-  The app intent conforms to the schema for adding a text box to a slide.
-- [var addWebVideoToSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/addwebvideotoslide.md)
-  The app intent conforms to the schema for adding a video from the internet to a slide.
-- [var create: some AssistantSchemas.Intent](assistantschemas/presentationintent/create.md)
-  The app intent conforms to the schema for creating a presentation.
-- [var createSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/createslide.md)
-  The app intent conforms to the schema for creating a new slide for a presentation.
-- [var deleteSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/deleteslide.md)
-  The app intent conforms to the schema for deleting a slide.
-- [var open: some AssistantSchemas.Intent](assistantschemas/presentationintent/open.md)
-  The app intent conforms to the schema for opening a presentation.
-- [var openSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/openslide.md)
-  The app intent conforms to the schema for opening a slide of a presentation.
-- [var setSlideTitle: some AssistantSchemas.Intent](assistantschemas/presentationintent/setslidetitle.md)
-  The app intent conforms to the schema for setting the title of a slide.
-- [var stopPlayback: some AssistantSchemas.Intent](assistantschemas/presentationintent/stopplayback.md)
-  The app intent conforms to the schema for stopping a presentation.
-- [var update: some AssistantSchemas.Intent](assistantschemas/presentationintent/update.md)
-  The app intent conforms to the schema for updating the name of a presentation.
-- [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
-  Assistant schema conformance for app intents that offer presentation functionality.
+For more information about the `.presentation` app intent domain, see doc:Making-presentation-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

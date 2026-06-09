@@ -105,13 +105,15 @@ You can call this generic function with an instance of either `String` or `Subst
 - [var utf8Span: UTF8Span](substring/utf8span.md)
   A UTF-8 span over the code units that make up this substring.
 ### Instance Methods
-- [func filter((Substring.Element) throws -> Bool) rethrows -> String](substring/filter(_:).md)
+- [func filter<E>((Substring.Element) throws(E) -> Bool) throws(E) -> String](substring/filter(_:).md)
+- [func isTriviallyIdentical(to: Substring) -> Bool](substring/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this substring is identical to `other`.
 - [func makeContiguousUTF8()](substring/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the substring, it will invalidate any pre-existing indices.
 - [func replaceSubrange(Range<Substring.Index>, with: Substring)](substring/replacesubrange(_:with:)-mfwu.md)
 - [func withMutableCharacters<R>((inout Substring) -> R) -> R](substring/withmutablecharacters(_:).md)
   Applies the given closure to a mutable view of the string’s characters.
-- [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](substring/withutf8(_:).md)
+- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](substring/withutf8(_:).md)
   Runs `body` over the content of this substring in contiguous memory. If this substring is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the substring, it will invalidate any pre-existing indices.
 ### Type Aliases
 - [Substring.CharacterView](substring/characterview.md)

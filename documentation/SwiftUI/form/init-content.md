@@ -17,12 +17,13 @@ Creates a form with the provided content.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
 
-- `content`: A [`ViewBuilder`](viewbuilder.md) that provides the content for the form.
+- `content`: A [`ContentBuilder`](contentbuilder.md) that provides the content for the form.
 
 
 ---

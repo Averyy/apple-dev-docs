@@ -17,26 +17,26 @@ To learn more about setting up your Apple developer account and implementing App
 ### Managing merchant IDs
 - [Managing merchant IDs and Payment Processing certificates](managing-payment-processing-certificates.md)
   Create and update certificates so your app uses Apple Pay and Wallet.
-- [List Merchant IDs](get-v1-merchantids.md)
+- [List merchant ids](get-v1-merchantids.md)
   List all merchant Ids for your team.
-- [Read Details for a Merchant ID](get-v1-merchantids-_id_.md)
+- [Read details for a merchant id](get-v1-merchantids-_id_.md)
   Get information for a merchant ID.
-- [List Certificates for a Merchant ID](get-v1-merchantids-_id_-certificates.md)
+- [List certificates for a merchant id](get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
-- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
-- [Modify Merchant IDs](patch-v1-merchantids-_id_.md)
+- [List certificate IDs for a merchant ID](get-v1-merchantids-_id_-relationships-certificates.md)
+- [Modify merchant ids](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
-- [Create a Merchant ID](post-v1-merchantids.md)
+- [Create a merchant id](post-v1-merchantids.md)
   Add a new merchant ID to your team.
-- [Delete a Merchant ID](delete-v1-merchantids-_id_.md)
+- [Delete a merchant id](delete-v1-merchantids-_id_.md)
   Delete a specific merchant ID.
 ### Objects
 - [object MerchantId](merchantid.md)
-  The data structure that represents a merchant ID resource.
+  An Apple Pay merchant identifier registered to your account, used to associate payment capabilities with your app’s bundle ID.
 - [object MerchantIdResponse](merchantidresponse.md)
-  A response that contains a single merchant ID resource.
+  A response containing a single Apple Pay merchant identifier.
 - [object MerchantIdsResponse](merchantidsresponse.md)
-  A response that contains a list of merchant ID resources.
+  A response containing a list of Apple Pay merchant identifiers registered to your account.
 - [object MerchantIdCreateRequest](merchantidcreaterequest.md)
   The request body you use to create a merchant ID.
 - [object MerchantIdUpdateRequest](merchantidupdaterequest.md)

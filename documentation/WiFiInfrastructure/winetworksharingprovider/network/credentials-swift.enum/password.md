@@ -8,6 +8,7 @@ A password is available for the Wi-Fi network, with the associated value contain
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

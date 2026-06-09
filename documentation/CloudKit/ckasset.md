@@ -46,6 +46,12 @@ If you no longer require an asset that’s on the server, you don’t delete it.
 ### Getting the URL of the Asset
 - [var fileURL: URL?](ckasset/fileurl.md)
   The URL for accessing the asset.
+### Structures
+- [CKAsset.ExportedAssetID](ckasset/exportedassetid.md)
+  An identifier that can be used for creating a server-side copy of a [`CKAsset`](ckasset.md) that already exists in iCloud, potentially in a different container.
+### Initializers
+- [convenience init(importing: CKAsset.ExportedAssetID)](ckasset/init(importing:).md)
+  Initialize a new [`CKAsset`](ckasset.md) that can be used to create a copy of an asset that already exists in iCloud, potentially in a different container.
 
 ## Relationships
 

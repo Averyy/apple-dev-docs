@@ -51,6 +51,9 @@ The [`NSHelpManager`](nshelpmanager.md) class provides an approach to displaying
   Posted when the application enters context-sensitive help mode. This typically happens when the user holds down the Help key.
 - [class let contextHelpModeDidDeactivateNotification: NSNotification.Name](nshelpmanager/contexthelpmodediddeactivatenotification.md)
   Posted when the application exits context-sensitive help mode. This happens when the user clicks the mouse button while the cursor is anywhere on the screen after displaying a context-sensitive help topic.
+### Structures
+- [NSHelpManager.ContextHelpModeDidActivateMessage](nshelpmanager/contexthelpmodedidactivatemessage.md)
+- [NSHelpManager.ContextHelpModeDidDeactivateMessage](nshelpmanager/contexthelpmodediddeactivatemessage.md)
 
 ## Relationships
 

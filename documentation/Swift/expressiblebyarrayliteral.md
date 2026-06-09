@@ -130,6 +130,7 @@ extension OrderedSet: ExpressibleByArrayLiteral {
 - [Array](array.md)
 - [ArraySlice](arrayslice.md)
 - [ContiguousArray](contiguousarray.md)
+- [ObservationTracking.Options](../observation/observationtracking/options.md)
 - [SIMD16](simd16.md)
 - [SIMD2](simd2.md)
 - [SIMD3](simd3.md)

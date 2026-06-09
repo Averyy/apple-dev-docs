@@ -9,7 +9,6 @@ A closure type that defines a handler to perform when a user selects an element 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

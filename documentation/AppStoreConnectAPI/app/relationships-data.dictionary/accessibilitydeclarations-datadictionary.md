@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The link object for the app’s accessibility declarations relationship.
+
 **Availability**:
 - App Store Connect API 3.6+
 

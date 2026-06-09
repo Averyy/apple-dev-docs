@@ -32,6 +32,7 @@ It is important to consider the possible types of archiving that a coder support
 
 ### Initializing with a coder
 - [init?(coder: NSCoder)](nscoding/init(coder:).md)
+  Initializes the receiver from data in a given unarchiver.
 ### Encoding with a coder
 - [func encode(with: NSCoder)](nscoding/encode(with:).md)
   Encodes the receiver using a given archiver.

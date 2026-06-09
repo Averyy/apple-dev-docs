@@ -20,10 +20,6 @@ Assistant schema conformance for app intents that offer whiteboard functionality
 protocol WhiteboardIntent : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -49,23 +45,6 @@ protocol WhiteboardIntent : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
-
-## See Also
-
-- [var createBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/createboard.md)
-  The app intent conforms to the schema for creating a new whiteboard canvas.
-- [var createItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/createitem.md)
-  The app intent conforms to the schema for creating an item on a whiteboard canvas.
-- [var deleteBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteboard.md)
-  The app intent conforms to the schema for deleting a whiteboard canvas.
-- [var deleteItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/deleteitem.md)
-  The app intent conforms to the schema for deleting an item on a whiteboard canvas.
-- [var openBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/openboard.md)
-  The app intent conforms to the schema for opening a new whiteboard canvas.
-- [var updateBoard: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateboard.md)
-  The app intent conforms to the schema for updating a whiteboard canvas.
-- [var updateItem: some AssistantSchemas.Intent](assistantschemas/whiteboardintent/updateitem.md)
-  The app intent conforms to the schema for updating an item on a whiteboard canvas.
 
 
 ---

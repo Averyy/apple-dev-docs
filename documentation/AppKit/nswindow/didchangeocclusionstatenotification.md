@@ -20,6 +20,8 @@ The notification object is the `NSWindow` object whose occlusion state changed. 
 
 This notification indicates a change in the window’s occlusion state; it doesn’t indicate a change in the occlusion region. When you receive this notification, you can get the window’s current occlusion state and—based on the result—you may want to increase responsiveness and save power by halting expensive operations that the user can’t see.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidChangeOcclusionStateMessage`](nswindow/didchangeocclusionstatemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

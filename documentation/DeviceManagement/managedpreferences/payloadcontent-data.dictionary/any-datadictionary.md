@@ -7,8 +7,6 @@ The dictionary containing app preference domains.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

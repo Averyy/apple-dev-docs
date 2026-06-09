@@ -18,6 +18,10 @@ Performs layout in the viewport.
 func layoutViewport()
 ```
 
+## Mentions
+
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+
 ## See Also
 
 - [var viewportBounds: CGRect](nstextviewportlayoutcontroller/viewportbounds.md)

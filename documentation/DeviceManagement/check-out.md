@@ -13,8 +13,6 @@ Responds to the removal of the MDM enrollment profile from a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -31,8 +29,8 @@ On success, the server needs to respond with a `200 OK` status.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 
 ## Topics
@@ -43,7 +41,7 @@ On success, the server needs to respond with a `200 OK` status.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#CheckOutRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

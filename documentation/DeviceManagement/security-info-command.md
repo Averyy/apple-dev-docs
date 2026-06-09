@@ -13,8 +13,6 @@ Get security-related information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -26,7 +24,7 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowQuerySecurity |
 
@@ -97,7 +95,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#SecurityInfoCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

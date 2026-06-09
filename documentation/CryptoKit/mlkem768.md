@@ -27,6 +27,8 @@ enum MLKEM768
   A private key you use to decapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 - [MLKEM768.PublicKey](mlkem768/publickey.md)
   A public key you use to encapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
+### Structures
+- [MLKEM768.OneTimePrivateKey](mlkem768/onetimeprivatekey.md)
 
 ## Relationships
 

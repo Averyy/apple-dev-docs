@@ -86,6 +86,8 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [typealias Base64EncodingOptions](data/base64encodingoptions.md)
   Options to use when encoding data.
 ### Accessing Bytes
+- [subscript(Range<Data.Index>) -> Data](data/subscript(_:)-6lc96.md)
+  Accesses the bytes at the specified range of indexes.
 - [subscript(Data.Index) -> UInt8](data/subscript(_:)-8kg64.md)
   Accesses the byte at the specified index.
 ### Accessing Underlying Memory
@@ -106,12 +108,10 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
   Append a buffer of bytes to the data.
 - [func append(UnsafePointer<UInt8>, count: Int)](data/append(_:count:).md)
   Appends the specified bytes from memory to the end of the data.
-- [func append(contentsOf: [UInt8])](data/append(contentsof:).md)
-  Appends the bytes in the specified array to the end of the data.
+- [func reserveCapacity(Int)](data/reservecapacity(_:).md)
+  Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 ### Replacing a Range of Bytes
-- [func replaceSubrange(Range<Data.Index>, with: Data)](data/replacesubrange(_:with:)-3jcfi.md)
-  Replaces a region of bytes in the data with new data.
-- [func replaceSubrange<ByteCollection>(Range<Data.Index>, with: ByteCollection)](data/replacesubrange(_:with:)-9u7ry.md)
+- [func replaceSubrange(Range<Data.Index>, with: some Collection<UInt8>)](data/replacesubrange(_:with:)-9u7ry.md)
   Replaces a region of bytes in the data with new bytes from a collection.
 - [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](data/replacesubrange(_:with:)-9nzh.md)
   Replaces a region of bytes in the data with new bytes from a buffer.
@@ -128,6 +128,8 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 ### Iterating Over Bytes
 - [func makeIterator() -> Data.Iterator](data/makeiterator.md)
   Returns an iterator over the contents of the data.
+- [struct Iterator](data/iterator.md)
+  An iterator that operates over the contents of data.
 - [func enumerateBytes((UnsafeBufferPointer<UInt8>, Data.Index, inout Bool) -> Void)](data/enumeratebytes(_:).md)
   Enumerates the contents of the data’s buffer.
 ### Splitting the Buffer
@@ -137,10 +139,19 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [static func == (Data, Data) -> Bool](data/==(_:_:).md)
   Returns `true` if the two `Data` arguments are equal.
 ### Manipulating Indexes
+- [typealias Index](data/index.md)
+  A type used to indicate a position in a data’s buffer.
 - [var startIndex: Data.Index](data/startindex.md)
   The beginning index into the data.
 - [var endIndex: Data.Index](data/endindex.md)
   The end index into the data.
+- [func index(after: Data.Index) -> Data.Index](data/index(after:).md)
+  Returns the index that immediately follows the specified index.
+- [func index(before: Data.Index) -> Data.Index](data/index(before:).md)
+  Returns the index that immediately precedes the specified index.
+### Manipulating Index Ranges
+- [typealias Indices](data/indices.md)
+  A type used to indicate a range of positions in a data’s buffer.
 ### Describing Data
 - [var description: String](data/description.md)
   A human-readable description for the data.
@@ -152,6 +163,8 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [class NSMutableData](nsmutabledata.md)
   An object representing a dynamic byte buffer in memory.
 ### Initializers
+- [init(some ContiguousBytes & Sequence<UInt8>)](data/init(_:)-2r3sw.md)
+- [init(Data)](data/init(_:)-53ewf.md)
 - [init?(base64Encoded: Data, options: Data.Base64DecodingOptions)](data/init(base64encoded:options:)-1g88z.md)
   Initialize a `Data` from a Base-64, UTF-8 encoded `Data`.
 - [init?(base64Encoded: String, options: Data.Base64DecodingOptions)](data/init(base64encoded:options:)-654f.md)
@@ -159,8 +172,12 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [init(bytes: Array<UInt8>)](data/init(bytes:)-5krj4.md)
 - [init<S>(bytes: S)](data/init(bytes:)-5s0rs.md)
 - [init(bytes: ArraySlice<UInt8>)](data/init(bytes:)-9othw.md)
+- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<UInt8>) throws(E) -> Void) throws(E)](data/init(capacity:initializingwith:).md)
+  Creates a data instance with the specified capacity, and then calls the given closure with an output span covering the instance’s uninitialized memory.
 - [init(contentsOf: URL, options: Data.ReadingOptions) throws](data/init(contentsof:options:).md)
-  Initialize a `Data` with the contents of a `URL`.
+  Creates data by reading from the specified URL.
+- [init<E>(rawCapacity: Int, initializingWith: (inout OutputRawSpan) throws(E) -> Void) throws(E)](data/init(rawcapacity:initializingwith:).md)
+  Creates a data instance with the specified capacity, and then calls the given closure with an output span covering the instance’s uninitialized memory.
 - [init(referencing: NSData)](data/init(referencing:).md)
   Initialize a `Data` by adopting a reference type.
 - [init(repeating: UInt8, count: Int)](data/init(repeating:count:).md)
@@ -173,15 +190,22 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [var mutableSpan: MutableSpan<UInt8>](data/mutablespan.md)
 - [var span: Span<UInt8>](data/span.md)
 ### Instance Methods
-- [func hash(into: inout Hasher)](data/hash(into:).md)
-  The hash value for the data.
-- [func withUnsafeMutableBytes<ResultType>((UnsafeMutableRawBufferPointer) throws -> ResultType) rethrows -> ResultType](data/withunsafemutablebytes(_:)-8o6xa.md)
+- [func append(contentsOf: some Sequence<UInt8>)](data/append(contentsof:)-2ebzw.md)
+- [func append(contentsOf: some ContiguousBytes & Sequence<UInt8>)](data/append(contentsof:)-xeqk.md)
+  Appends the bytes in the specified sequence to the end of the data.
+- [func replaceSubrange(Range<Data.Index>, with: some ContiguousBytes & Collection<UInt8>)](data/replacesubrange(_:with:)-21ouz.md)
+  Replaces a region of bytes in the data with new bytes from a collection.
+- [func withUnsafeMutableBytes<E, ResultType>((UnsafeMutableRawBufferPointer) throws(E) -> ResultType) throws(E) -> ResultType](data/withunsafemutablebytes(_:)-79c12.md)
 ### Subscripts
 - [subscript<R>(R) -> Data](data/subscript(_:)-59z5z.md)
+  Accesses the bytes at the specified range of indexes.
 ### Default Implementations
 - [Attachable Implementations](data/attachable-implementations.md)
+- [Collection Implementations](data/collection-implementations.md)
 - [CustomDebugStringConvertible Implementations](data/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](data/customstringconvertible-implementations.md)
+- [Equatable Implementations](data/equatable-implementations.md)
+- [Hashable Implementations](data/hashable-implementations.md)
 
 ## Relationships
 
@@ -189,6 +213,7 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [Attachable](../Testing/Attachable.md)
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Collection](../Swift/Collection.md)
 - [ContiguousBytes](contiguousbytes.md)
 - [Copyable](../Swift/Copyable.md)

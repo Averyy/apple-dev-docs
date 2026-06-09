@@ -8,6 +8,7 @@ An asynchronous sequence you use to observe whether a person permitted you to up
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

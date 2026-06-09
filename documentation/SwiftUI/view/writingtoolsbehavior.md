@@ -15,8 +15,8 @@ Specifies the Writing Tools behavior for text and text input in the environment.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func writingToolsBehavior(_ behavior: WritingToolsBehavior) -> some View
+nonisolated
+func writingToolsBehavior(_ behavior: WritingToolsBehavior) -> some View
 ```
 
 #### Return Value
@@ -35,6 +35,8 @@ Use this view modifier to customize or disable the Writing Tools editing experie
 
 - [struct WritingToolsBehavior](writingtoolsbehavior.md)
   The Writing Tools editing experience for text and text input.
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+  Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 
 
 ---

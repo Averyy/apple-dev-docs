@@ -52,6 +52,33 @@ TextEditor(text: $text)
 
 To manually enforce constraints, e.g. before serializing text contents, use the [`constrain(_:)`](attributedtextformattingdefinition/constrain(_:)-1ur9c.md) method.
 
+## See Also
+
+- [func bold(Bool) -> some View](view/bold(_:).md)
+  Applies a bold font weight to the text in this view.
+- [func fontDesign(Font.Design?) -> some View](view/fontdesign(_:).md)
+  Sets the font design of the text in this view.
+- [func fontWeight(Font.Weight?) -> some View](view/fontweight(_:).md)
+  Sets the font weight of the text in this view.
+- [func fontWidth(Font.Width?) -> some View](view/fontwidth(_:).md)
+  Sets the font width of the text in this view.
+- [func italic(Bool) -> some View](view/italic(_:).md)
+  Applies italics to the text in this view.
+- [func monospaced(Bool) -> some View](view/monospaced(_:).md)
+  Modifies the fonts of all child views to use the fixed-width variant of the current font, if possible.
+- [func monospacedDigit() -> some View](view/monospaceddigit.md)
+  Modifies the fonts of all child views to use fixed-width digits, if possible, while leaving other characters proportionally spaced.
+- [func strikethrough(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/strikethrough(_:pattern:color:).md)
+  Applies a strikethrough to the text in this view.
+- [func textCase(Text.Case?) -> some View](view/textcase(_:).md)
+  Sets a transform for the case of the text contained in this view when displayed.
+- [func textScale(Text.Scale, isEnabled: Bool) -> some View](view/textscale(_:isenabled:).md)
+  Applies a text scale to text in the view.
+- [func textRenderer<T>(T) -> some View](view/textrenderer(_:).md)
+  Returns a new view such that any text views within it will use `renderer` to draw themselves.
+- [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/underline(_:pattern:color:).md)
+  Applies an underline to the text in this view.
+
 
 ---
 

@@ -15,6 +15,11 @@ Options for DADiskClaim().
 typealias DADiskClaimOptions = UInt32
 ```
 
+## Topics
+
+### Constants
+- [var kDADiskClaimOptionDefault: Int](kdadiskclaimoptiondefault.md)
+
 ## See Also
 
 - [typealias DADiskEjectOptions](dadiskejectoptions.md)

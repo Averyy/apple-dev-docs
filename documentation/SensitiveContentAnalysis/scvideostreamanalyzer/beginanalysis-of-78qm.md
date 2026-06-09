@@ -1,6 +1,6 @@
 # beginAnalysis(of:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Analyzes video frames for the given capture device input.

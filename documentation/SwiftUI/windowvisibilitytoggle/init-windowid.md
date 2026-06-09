@@ -11,6 +11,7 @@ Create a window visibility toggle to alter the visibility of a specific window.
 ## Declaration
 
 ```swift
+nonisolated
 init(windowID: String) where Label == DefaultWindowVisibilityToggleLabel
 ```
 

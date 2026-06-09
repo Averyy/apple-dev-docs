@@ -8,7 +8,7 @@ Indicates that the device needs more horizontal motion.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - watchOS 9.0+
 
 ## Declaration

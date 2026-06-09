@@ -39,88 +39,88 @@ To manage Apple-hosted background assets, be sure you have one of the following 
 - [Commit an Uploaded Asset Pack to a Background Asset Version](patch-v1-backgroundassetuploadfiles-_id_.md)
   Associate an uploaded asset pack with a background asset version to finish the upload process.
 ### Reading background asset information
-- [List All Assets Packs for an App](get-v1-apps-_id_-backgroundassets.md)
+- [List all background assets for an app](get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the assets packs ids for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
 - [Read Background Assets Information](get-v1-backgroundassets-_id_.md)
   Get details about a specific background asset.
 - [Read Version Details for a Background Asset](get-v1-backgroundassets-_id_-versions.md)
   Get details about a specific background asset version.
-- [Read Version IDs for a Background Asset](get-v1-backgroundassets-_id_-relationships-versions.md)
+- [Read version ids for a background asset](get-v1-backgroundassets-_id_-relationships-versions.md)
   Get version IDs about a specific background asset version.
 ### Reading background asset version information
-- [Read Background Asset Version App Store Releases Information.](get-v1-backgroundassetversionappstorereleases-_id_.md)
+- [Read background asset version app store releases information](get-v1-backgroundassetversionappstorereleases-_id_.md)
   Get the state of a background asset version App Store release.
 - [Read Background Assets External Beta Release Information](get-v1-backgroundassetversionexternalbetareleases-_id_.md)
   Get the state of a background asset version external beta release.
 - [Read Background Assets Internal Beta Release Information](get-v1-backgroundassetversioninternalbetareleases-_id_.md)
   Get the state of a background asset version internal beta release.
-- [Read Background Assets Information](get-v1-backgroundassetversions-_id_.md)
+- [Read background asset version information](get-v1-backgroundassetversions-_id_.md)
   Get details about a specific background asset version.
 - [Read Background Asset Upload File Information for a Background Asset Version](get-v1-backgroundassetversions-_id_-backgroundassetuploadfiles.md)
   Get details about a background asset upload file for a specific background asset version.
-- [Get the Background Asset Upload Files Resource ID for a Background Asset Version](get-v1-backgroundassetversions-_id_-relationships-backgroundassetuploadfiles.md)
+- [Get the background asset upload files resource id for a background asset version](get-v1-backgroundassetversions-_id_-relationships-backgroundassetuploadfiles.md)
   Get the ID for an uploaded asset pack Apple hosted background asset version
 ### Objects
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)
-  A response that contains a list of IDs of related background assets.
+  A response containing the resource identifiers of background asset versions linked to an app.
 - [object BackgroundAsset](backgroundasset.md)
-  The data structure that represents a background asset resource.
+  A downloadable content package that your app fetches in the background before or after installation, managed through Apple-hosted background assets.
 - [object BackgroundAssetCreateRequest](backgroundassetcreaterequest.md)
   The request body you use to create a background asset record.
 - [object BackgroundAssetResponse](backgroundassetresponse.md)
-  A response that contains a single background asset version resource.
+  A response containing a single background asset downloadable content package.
 - [object BackgroundAssetsResponse](backgroundassetsresponse.md)
-  A response that contains a list of background asset version resources.
+  A response containing a list of background assets for an app.
 - [object BackgroundAssetUploadFile](backgroundassetuploadfile.md)
-  The data structure that represents a background asset upload file resource.
+  A file included in a background asset upload operation, with its upload URL and verification checksum.
 - [object BackgroundAssetUploadFileCreateRequest](backgroundassetuploadfilecreaterequest.md)
   The request body you use to create a background asset upload file.
 - [object BackgroundAssetUploadFileResponse](backgroundassetuploadfileresponse.md)
-  A response that contains a single background asset upload file resource.
+  A response containing a single background asset upload file record.
 - [object BackgroundAssetUploadFilesResponse](backgroundassetuploadfilesresponse.md)
-  A response that contains a list of background asset upload file resources.
+  A response containing a list of upload files for a background asset.
 - [object BackgroundAssetUploadFileUpdateRequest](backgroundassetuploadfileupdaterequest.md)
   The request body you use to update a background asset upload file.
 - [object BackgroundAssetVersion](backgroundassetversion.md)
-  The data structure that represents a background asset version resource.
+  A specific version of a background asset, containing the upload files your app downloads after installation.
 - [object BackgroundAssetVersionAppStoreRelease](backgroundassetversionappstorerelease.md)
-  The data structure that represents a background asset version app store release resource.
+  A release of a background asset version to App Store customers, making the background content available on their devices.
 - [object BackgroundAssetVersionAppStoreReleaseResponse](backgroundassetversionappstorereleaseresponse.md)
-  A response that contains a single background asset version App Store release response resource.
+  A response containing a single App Store release record for a background asset version.
 - [type BackgroundAssetVersionAppStoreReleaseState](backgroundassetversionappstorereleasestate.md)
-  A string that represents the release of a asset.
+  A string that represents the release state of a background asset.
 - [object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse](backgroundassetversionbackgroundassetuploadfileslinkagesresponse.md)
-  A response that contains a list of background asset upload files related to a background asset version.
+  A response containing the resource identifiers of upload files associated with a background asset version.
 - [object BackgroundAssetVersionCreateRequest](backgroundassetversioncreaterequest.md)
   The request body you use to create a background asset version.
 - [object BackgroundAssetVersionExternalBetaRelease](backgroundassetversionexternalbetarelease.md)
-  The data structure that represents a background asset version external beta release resource.
+  A release of a background asset version to external TestFlight testers for validation.
 - [object BackgroundAssetVersionExternalBetaReleaseResponse](backgroundassetversionexternalbetareleaseresponse.md)
-  A response that contains a single background asset version external beta release response resource.
+  A response containing a single external beta release record for a background asset version.
 - [type BackgroundAssetVersionExternalBetaReleaseState](backgroundassetversionexternalbetareleasestate.md)
-  The data structure that represents a background asset version external beta release state.
+  A string value identifying the current state of a background asset version’s external beta release.
 - [object BackgroundAssetVersionInternalBetaRelease](backgroundassetversioninternalbetarelease.md)
-  The data structure that represents a background asset version internal beta release resource.
+  A release of a background asset version to internal testers, allowing you to validate asset delivery before public distribution.
 - [object BackgroundAssetVersionInternalBetaReleaseResponse](backgroundassetversioninternalbetareleaseresponse.md)
-  A response that contains a single background asset version internal beta release resource.
+  A response containing a single internal beta release record for a background asset version.
 - [object BackgroundAssetVersionResponse](backgroundassetversionresponse.md)
-  A response that contains a single background asset version resource.
+  A response containing a single version of a background asset.
 - [object BackgroundAssetVersionsLinkagesResponse](backgroundassetversionslinkagesresponse.md)
-  A response that contains a list of versions for background assets.
+  A response containing the resource identifiers of background asset versions linked to an app.
 - [object BackgroundAssetVersionsResponse](backgroundassetversionsresponse.md)
-  A response that contains a list of background asset version resources.
+  A response containing a list of versions for a background asset.
 - [type BackgroundAssetVersionState](backgroundassetversionstate.md)
   The possible states for a background asset version.
 - [type ChecksumAlgorithm](checksumalgorithm.md)
-  The data structure that represents a checksum algorithm resource.
+  A string value identifying the algorithm used to verify the integrity of an uploaded background asset file.
 - [object Checksums](checksums.md)
-  The data structure that represents a checksums resource.
+  A collection of integrity checksums for a background asset upload file, used to verify successful delivery.
 - [object StateDetail](statedetail.md)
   A resource describing import validation errors, warnings and information.
 - [object DeliveryFileUploadOperation](deliveryfileuploadoperation.md)
-  The data structure that represents a delivery file upload operation resource.
+  An upload operation descriptor containing the URL, HTTP method, and required headers for uploading a background asset file to Apple’s servers.
 
 
 ---

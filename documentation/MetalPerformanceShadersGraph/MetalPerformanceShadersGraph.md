@@ -83,6 +83,8 @@ Metal Performance Shaders Graph provides high-performance, energy-efficient comp
   The base type class for types on tensors.
 - [class MPSGraphVariableOp](mpsgraphvariableop.md)
   The class that defines the parameters for a variable.
+- [class MPSGraphSDPADescriptor](mpsgraphsdpadescriptor.md)
+  A descriptor that configures a scaled dot product attention (SDPA) operation.
 ### Structures
 - [struct MPSGraphReducedPrecisionFastMath](mpsgraphreducedprecisionfastmath.md)
   MPSGraph could use these reduced precision paths to deliver faster math, but it is not guaranteed.

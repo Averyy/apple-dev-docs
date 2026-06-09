@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A string containing a human-readable description of the receiver suitable for debugging.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+

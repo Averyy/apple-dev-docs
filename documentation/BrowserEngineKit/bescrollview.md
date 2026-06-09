@@ -40,6 +40,8 @@ In any of these scenarios, set the scroll view’s [`delegate`](bescrollview/del
 - [UIScrollView](../UIKit/UIScrollView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

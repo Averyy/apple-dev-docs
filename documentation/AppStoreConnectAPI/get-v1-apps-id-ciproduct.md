@@ -1,4 +1,4 @@
-# Read the Xcode Cloud Product for an App
+# Read the xcode cloud product for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -89,7 +89,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/ciProduct
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/ciProduct](get-v1-apps-_id_-relationships-ciproduct.md)
+- [Get the CI product ID for an app](get-v1-apps-_id_-relationships-ciproduct.md)
 
 
 ---

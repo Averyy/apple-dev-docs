@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Creates and returns an application address descriptor using the current process.
+
 **Availability**:
 - macOS 10.11+
 
@@ -11,6 +13,10 @@
 ```swift
 class func currentProcess() -> NSAppleEventDescriptor
 ```
+
+#### Discussion
+
+The result is suitable for use as the `targetDescriptor` parameter of `+appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:`.
 
 
 ---

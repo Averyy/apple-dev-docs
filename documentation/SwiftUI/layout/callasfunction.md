@@ -17,7 +17,7 @@ Combines the specified views into a single composite view using the layout algor
 ## Declaration
 
 ```swift
-func callAsFunction<V>(@ViewBuilder _ content: () -> V) -> some View where V : View
+func callAsFunction<V>(@ContentBuilder _ content: () -> V) -> some View where V : View
 ```
 
 #### Return Value
@@ -39,7 +39,7 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 
 ## Parameters
 
-- `content`: A [`ViewBuilder`](viewbuilder.md) that contains the views to lay out.
+- `content`: A [`ContentBuilder`](contentbuilder.md) that contains the views to lay out.
 
 
 ---

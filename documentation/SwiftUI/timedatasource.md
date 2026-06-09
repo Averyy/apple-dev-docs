@@ -46,7 +46,7 @@ Instances of this type provide [`Text`](text.md) with live and automatically upd
 ## See Also
 
 - [enum SystemFormatStyle](systemformatstyle.md)
-  A namespace for format styles that implement designs used across Apple’s platformes.
+  A collection of format styles for displaying live-updating time information in [`Text`](text.md) views.
 
 
 ---

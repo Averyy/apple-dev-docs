@@ -17,6 +17,7 @@ The default progress view style in the current context of the view being styled.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultProgressViewStyle
 ```
 

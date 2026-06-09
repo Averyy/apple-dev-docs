@@ -16,6 +16,7 @@ A gesture that provides information about ongoing spatial events like clicks and
 ## Declaration
 
 ```swift
+nonisolated
 struct SpatialEventGesture
 ```
 
@@ -71,12 +72,11 @@ The phase of events in the collection can change to [`SpatialEventCollection.Eve
 ### Creating a spatial event gesture
 - [init(coordinateSpace: any CoordinateSpaceProtocol)](spatialeventgesture/init(coordinatespace:).md)
   Creates the gesture with a desired coordinate space.
+- [init(coordinateSpace3D: some CoordinateSpace3D)](spatialeventgesture/init(coordinatespace3d:).md)
+  Creates the gesture with a desired coordinate space 3D.
 ### Getting gesture properties
 - [let coordinateSpace: CoordinateSpace](spatialeventgesture/coordinatespace.md)
   The coordinate space of the gesture.
-### Initializers
-- [init(coordinateSpace3D: some CoordinateSpace3D)](spatialeventgesture/init(coordinatespace3d:).md)
-  Creates the gesture with a desired coordinate space 3D.
 
 ## Relationships
 

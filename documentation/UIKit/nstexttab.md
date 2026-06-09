@@ -76,6 +76,8 @@ The text system supports four alignment types: left, center, right, and decimal 
   An object for changing the values of the subattributes in a paragraph style attribute.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
 
 
 ---

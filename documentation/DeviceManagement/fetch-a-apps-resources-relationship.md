@@ -4,8 +4,7 @@
 **Kind**: httpRequest
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.2+
 
 ## Endpoint
 
@@ -24,10 +23,7 @@
 ## See Also
 
 - [Fetch a books resource's relationship](fetch-a-books-resource's-relationship.md)
-- [Get Multiple Genres](get-multiple-genres.md)
-  Fetch metadata for genres from the catalog by using their identifiers.
-- [Get a Genre](get-a-genre.md)
-  Fetch metadata for a genre from the catalog by using its identifier.
+- [object RelationshipResponse](relationshipresponse.md)
 
 
 ---

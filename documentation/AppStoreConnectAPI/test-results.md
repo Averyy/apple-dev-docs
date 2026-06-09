@@ -20,13 +20,13 @@ The `ciTestResult` resource represents the test results that Xcode Cloud makes a
 ## Topics
 
 ### Getting Test Results
-- [Read Test Result Information](get-v1-citestresults-_id_.md)
+- [Read test result information](get-v1-citestresults-_id_.md)
   Get a specific test result Xcode Cloud created when it performed a build with a test action.
-### Objects and Types
+### Objects and types
 - [object CiTestResult](citestresult.md)
-  The data structure that represents a Test Results resource.
+  The outcome of a single test case in an Xcode Cloud test action, including its pass/fail status and duration.
 - [object CiTestResultResponse](citestresultresponse.md)
-  A response that contains a single Test Results resource.
+  The response body for endpoints that read a single test result from an Xcode Cloud build action.
 
 ## See Also
 

@@ -18,6 +18,8 @@ class let selectionDidChangeNotification: NSNotification.Name
 
 The notification object is the table view whose selection changed. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSTableView.SelectionDidChangeMessage`](nstableview/selectiondidchangemessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nstableview/columndidmovenotification.md)

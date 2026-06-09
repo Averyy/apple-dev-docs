@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a background asset versions linkages response resource.
+The resource linkage data identifying a background asset version in a linkage response.
 
 **Availability**:
 - App Store Connect API 4.0+

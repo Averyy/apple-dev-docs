@@ -11,6 +11,7 @@ Creates an instance of the field date picker style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

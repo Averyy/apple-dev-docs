@@ -299,10 +299,10 @@ struct MLTensor
   Returns a new tensor with the specified dimensions reversed.
 ### Accessing a multiarray’s elements
 - [subscript((any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:).md)
-- [subscript((UnboundedRange_) -> (), (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:).md)
-- [subscript((any MLTensorRangeExpression)?, (UnboundedRange_) -> (), (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:).md)
-- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, (UnboundedRange_) -> (), (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:_:).md)
-- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, (UnboundedRange_) -> (), (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:_:_:).md)
+- [subscript(UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:).md)
+- [subscript((any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:).md)
+- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:_:).md)
+- [subscript((any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, (any MLTensorRangeExpression)?, UnboundedRange, (any MLTensorRangeExpression)?...) -> MLTensor](mltensor/subscript(_:_:_:_:_:).md)
 ### Default Implementations
 - [CustomReflectable Implementations](mltensor/customreflectable-implementations.md)
 

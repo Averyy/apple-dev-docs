@@ -8,6 +8,7 @@ The current state of a Live Activity in its life cycle.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

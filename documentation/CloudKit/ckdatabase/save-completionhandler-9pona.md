@@ -17,7 +17,7 @@ Saves a specific subscription.
 ## Declaration
 
 ```swift
-func save(_ subscription: CKSubscription) async throws -> CKSubscription
+func save(_ subscription: CKSubscription, completionHandler: @escaping @Sendable (CKSubscription?, (any Error)?) -> Void)
 ```
 
 #### Discussion

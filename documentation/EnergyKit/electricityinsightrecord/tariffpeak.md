@@ -9,7 +9,6 @@ A struct describing energy tariff peaks or duration data, if available.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

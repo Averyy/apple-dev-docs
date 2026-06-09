@@ -15,6 +15,7 @@ Creates a plain text editor.
 ## Declaration
 
 ```swift
+nonisolated
 init(text: Binding<String>)
 ```
 

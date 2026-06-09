@@ -1,4 +1,4 @@
-# List All Subcategories for an App Category
+# List all subcategories for an app category
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,14 +14,14 @@ List all App Store subcategories that belong to a specific category.
 
 ## Parameters
 
-- `fields[appCategories]` ([string])
-- `limit` (integer)
+- `fields[appCategories]` ([string]): Additional fields to include for each app categories resource returned by the response.
+- `limit` (integer): The maximum number of app categories resources to return.
 
 ## See Also
 
-- [List App Categories](get-v1-appcategories.md)
+- [List app categories](get-v1-appcategories.md)
   List all categories on the App Store, including the category and subcategory hierarchy.
-- [GET /v1/appCategories/{id}/relationships/subcategories](get-v1-appcategories-_id_-relationships-subcategories.md)
+- [List subcategory IDs for an app category](get-v1-appcategories-_id_-relationships-subcategories.md)
 
 
 ---

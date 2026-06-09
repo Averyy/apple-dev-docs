@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: The numbering system’s BCP 47 identifier, such as `latn` for Latin digits.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/numberingsystem-swift.struct/init(stringliteral:).md)
+  Creates a numbering system instance from a BCP 47 identifier as a string literal.
+
 
 ---
 

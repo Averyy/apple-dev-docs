@@ -11,6 +11,7 @@ A date picker style that displays the components in an editable field.
 ## Declaration
 
 ```swift
+nonisolated
 struct FieldDatePickerStyle
 ```
 

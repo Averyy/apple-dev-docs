@@ -153,10 +153,14 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [DriverKit Namespaces](driverkit-namespaces.md)
 ### Macros
 - [Macros](driverkit-macros.md)
+- [SERIALIZABLE](serializable.md)
+- [kIOConfigOrderKey](kioconfigorderkey.md)
 - [kIOPropertyHashTypeKey](kiopropertyhashtypekey.md)
 - [kIOPropertySHA3256Key](kiopropertysha3256key.md)
 - [kIOPropertySHA3384Key](kiopropertysha3384key.md)
 - [kIOPropertySHA3512Key](kiopropertysha3512key.md)
+- [kIOUserPlatformFunctionHandlerGet](kiouserplatformfunctionhandlerget.md)
+- [kIOUserResourcesSetPropertyKey](kiouserresourcessetpropertykey.md)
 - [kIOUserServrMaxExitReasonLength](kiouserservrmaxexitreasonlength.md)
 - [kIOUserServrMaxModulePathLength](kiouserservrmaxmodulepathlength.md)
 - [kIOUserServrMaxPanicReasonLength](kiouserservrmaxpanicreasonlength.md)
@@ -166,6 +170,8 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [IOSysCtlByName](iosysctlbyname.md)
 - [getpid](getpid.md)
 ### Enumeration Cases
+- [kIOMemoryMapCacheModePostedCombinedReordered](kiomemorymapcachemodepostedcombinedreordered.md)
+- [kIORPCMessageDeepSerialization](kiorpcmessagedeepserialization.md)
 - [kIOServicePMAssertionCPUBit](kioservicepmassertioncpubit.md)
   kIOServicePMAssertionCPUBit When set, PM kernel will prefer to leave the CPU and core hardware running in “Dark Wake” state, instead of sleeping.
 - [kIOServicePMAssertionForceFullWakeupBit](kioservicepmassertionforcefullwakeupbit.md)
@@ -174,6 +180,8 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [kSCSICmd_ATA_PASS_THROUGH](kscsicmd_ata_pass_through.md)
 - [kSCSICmd_ATA_PASS_THROUGH_EXT](kscsicmd_ata_pass_through_ext.md)
 ### Type Aliases
+- [OSSerializationPortCopyInHandler](osserializationportcopyinhandler.md)
+- [OSSerializationPortCopyOutHandler](osserializationportcopyouthandler.md)
 - [pid_t](pid_t.md)
 
 

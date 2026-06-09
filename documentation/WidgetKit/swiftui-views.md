@@ -96,7 +96,7 @@ Widgets can use many, but not all, SwiftUI views to present content. Use the vie
 - [struct TransformedShape](../SwiftUI/TransformedShape.md)
   A shape with an affine transform applied to it.
 - [struct ContainerRelativeShape](../SwiftUI/ContainerRelativeShape.md)
-  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+  A shape whose dimensions the system calculates from an inset version of the current container shape.
 ### Styling views
 - [struct Color](../SwiftUI/Color.md)
   A representation of a color that adapts to a given context.

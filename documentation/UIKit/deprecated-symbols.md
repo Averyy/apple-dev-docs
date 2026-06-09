@@ -42,8 +42,6 @@ Review unsupported symbols and their replacements.
 - [class UIUserNotificationSettings](uiusernotificationsettings.md)
   The types of notifications that can be displayed to the user by your app.
 ### Deprecated protocols
-- [protocol UIAccelerometerDelegate](uiaccelerometerdelegate.md)
-  The interface for receiving acceleration-related data from the system.
 - [protocol UIActionSheetDelegate](uiactionsheetdelegate.md)
   The interface for the delegate of an action sheet object.
 - [protocol UIAlertViewDelegate](uialertviewdelegate.md)

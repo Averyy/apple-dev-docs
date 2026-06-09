@@ -63,6 +63,7 @@ struct OutputSpan<Element> where Element : ~Copyable
   Exchange the elements at the two given offsets
 - [func swapAt(unchecked: OutputSpan<Element>.Index, unchecked: OutputSpan<Element>.Index)](outputspan/swapat(unchecked:unchecked:).md)
   Exchange the elements at the two given offsets
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](outputspan/withbytes(_:).md)
 - [func withUnsafeMutableBufferPointer<E, R>((UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> R) throws(E) -> R](outputspan/withunsafemutablebufferpointer(_:).md)
   Call the given closure with the unsafe buffer pointer addressed by this OutputSpan and a mutable reference to its count of initialized elements.
 ### Subscripts
@@ -77,6 +78,7 @@ struct OutputSpan<Element> where Element : ~Copyable
 ## Relationships
 
 ### Conforms To
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

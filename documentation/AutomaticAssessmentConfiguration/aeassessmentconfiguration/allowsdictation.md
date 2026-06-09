@@ -8,7 +8,8 @@ A Boolean value that indicates whether to allow the use of dictation during an a
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an alternative distribution domain.
+
 **Availability**:
 - App Store Connect API 3.4.1+
 

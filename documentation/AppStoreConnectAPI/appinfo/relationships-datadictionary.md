@@ -37,7 +37,7 @@ object AppInfo.Relationships
   The data and links that describe the relationship between the resources.
 ### Dictionaries
 - [object AppInfo.Relationships.TerritoryAgeRatings](appinfo/relationships-data.dictionary/territoryageratings-data.dictionary.md)
-  The data structure that represents multiple-territory age-rating resources.
+  The territory-specific age rating relationships for an app info record, linking to age ratings in individual App Store regions.
 
 ## Properties
 

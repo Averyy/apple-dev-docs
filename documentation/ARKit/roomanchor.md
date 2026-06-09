@@ -40,16 +40,24 @@ A `RoomAnchor` structure describes an approximate representation of the room’s
   Returns the disjoint mesh geometries of a given classification.
 - [var description: String](roomanchor/description.md)
   A textual representation of this anchor.
+### Operators
+- [static func == (RoomAnchor, RoomAnchor) -> Bool](roomanchor/==(_:_:).md)
+  Returns a Boolean value indicating whether two room anchors are equal.
 ### Instance Methods
 - [func geometries(classifiedAs: SurfaceClassification) -> [MeshAnchor.Geometry]](roomanchor/geometries(classifiedas:).md)
   Get disjoint mesh geometries of a given surface classification.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](roomanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

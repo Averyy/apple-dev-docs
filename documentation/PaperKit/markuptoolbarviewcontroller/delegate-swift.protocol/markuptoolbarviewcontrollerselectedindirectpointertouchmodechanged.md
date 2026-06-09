@@ -20,6 +20,11 @@ func markupToolbarViewControllerSelectedIndirectPointerTouchModeChanged(_ toolba
 
 Default implementation provided.
 
+## See Also
+
+- [func markupToolbarViewControllerSelectedDrawingToolChanged(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerselecteddrawingtoolchanged(_:).md)
+  Called when the `selectedDrawingTool` changes.
+
 
 ---
 

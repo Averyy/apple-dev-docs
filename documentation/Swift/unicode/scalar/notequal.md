@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion
@@ -37,12 +37,6 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
   Returns a Boolean value indicating whether two values are equal.
 - [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-13yar.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func > (Self, Self) -> Bool](unicode/scalar/_(_:_:)-1xeim.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-7oywq.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

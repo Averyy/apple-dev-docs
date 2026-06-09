@@ -17,10 +17,12 @@ App Store Connect API version 1.7 provides resources that enable you to automate
 
 ##### Deprecations
 
-- The [`App Store version submissions`](app-store-version-submissions.md) resource and all its related endpoints and objects are now deprecated, including: `POST-v1-appStoreVersionSubmissions`, [`Delete an App Store Version Submission`](delete-v1-appstoreversionsubmissions-_id_.md), [`AppStoreVersionSubmission`](appstoreversionsubmission.md), `AppStoreVersionSubmissionCreateRequest`, and [`AppStoreVersionSubmissionResponse`](appstoreversionsubmissionresponse.md).
+- The [`App Store version submissions`](app-store-version-submissions.md) resource and all its related endpoints and objects are now deprecated, including: `POST-v1-appStoreVersionSubmissions`, [`Delete an app store version submission`](delete-v1-appstoreversionsubmissions-_id_.md), [`AppStoreVersionSubmission`](appstoreversionsubmission.md), `AppStoreVersionSubmissionCreateRequest`, and [`AppStoreVersionSubmissionResponse`](appstoreversionsubmissionresponse.md).
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -48,8 +50,6 @@ App Store Connect API version 1.7 provides resources that enable you to automate
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

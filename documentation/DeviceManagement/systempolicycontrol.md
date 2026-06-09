@@ -7,8 +7,6 @@ The payload that configures the system policy for assessments.
 
 **Availability**:
 - macOS 10.8+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,11 +23,11 @@ Specify `com.apple.systempolicy.control` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example
@@ -74,7 +72,7 @@ Specify `com.apple.systempolicy.control` as the payload type.
 
 - `AllowIdentifiedDevelopers` (boolean): If `true`, enables Gatekeeper’s “Mac App Store and identified developers” option. If `false`, enables Gatekeeper’s “Mac App Store” option. If the value of `EnableAssessment` isn’t set to `true`, this key has no effect.
 - `EnableAssessment` (boolean): If `true`, enables Gatekeeper. If `false`, disables Gatekeeper.
-- `EnableXProtectMalwareUpload` (boolean): If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection.
+- `EnableXProtectMalwareUpload` (boolean): If `false`, prevents Gatekeeper from prompting the user to upload blocked malware to Apple for purposes of improving malware detection. Available: macOS 15+
 
 ## See Also
 

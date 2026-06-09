@@ -16,6 +16,7 @@ object AppEventLocalization.Relationships.AppEventVideoClips
 
 ### Objects
 - [object AppEventLocalization.Relationships.AppEventVideoClips.Data](appeventlocalization/relationships-data.dictionary/appeventvideoclips-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app event localization.
 
 ## Properties
 

@@ -17,7 +17,8 @@ Creates a toolbar title menu.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

@@ -83,6 +83,8 @@ For more information about loading entities, see [`Loading entities from a file`
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
+- [Low-level rendering](low-level-rendering.md)
+  Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
 
 
 ---

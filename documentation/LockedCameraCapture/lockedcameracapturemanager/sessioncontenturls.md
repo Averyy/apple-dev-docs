@@ -8,6 +8,7 @@ An array of URLs that each point to a directory containing captured content.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

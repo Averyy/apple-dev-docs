@@ -29,6 +29,9 @@ Implement the methods of the [`PKCanvasViewDelegate`](pkcanvasviewdelegate.md) p
   Tells the delegate that the contents of the current drawing changed.
 - [func canvasViewDidFinishRendering(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidfinishrendering(_:).md)
   Tells the delegate that the previously drawn content is ready to display.
+### Responding to selection changes
+- [func canvasViewSelectionDidChange(PKCanvasView)](pkcanvasviewdelegate/canvasviewselectiondidchange(_:).md)
+  Tells the delegate that the selection changes.
 ### Responding to new event sequences
 - [func canvasViewDidBeginUsingTool(PKCanvasView)](pkcanvasviewdelegate/canvasviewdidbeginusingtool(_:).md)
   Tells the delegate that the user started a new drawing sequence with the currently selected tool.

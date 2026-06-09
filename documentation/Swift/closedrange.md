@@ -89,7 +89,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 ### Comparing Ranges
 - [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](closedrange/==(_:_:).md)
   Returns a Boolean value indicating whether two ranges are equal.
-- [static func != (Self, Self) -> Bool](closedrange/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func overlaps(Range<Bound>) -> Bool](closedrange/overlaps(_:)-947dt.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.
@@ -156,6 +156,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [Hashable](hashable.md)
 - [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
+- [NDArray.RangeExpression](../CoreAI/NDArray/RangeExpression.md)
 - [PositionScaleRange](../Charts/PositionScaleRange.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [RangeExpression](rangeexpression.md)

@@ -18,6 +18,8 @@ class let registryDidChangeNotification: NSNotification.Name
 
 The notification object is the image class that is registered or unregistered. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSImageRep.RegistryDidChangeMessage`](nsimagerep/registrydidchangemessage.md).
+
 
 ---
 

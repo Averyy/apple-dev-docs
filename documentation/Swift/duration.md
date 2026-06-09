@@ -76,6 +76,12 @@ Typical construction of `Duration` values should be created via the static metho
 ### Instance Properties
 - [var attoseconds: Int128](duration/attoseconds.md)
   The number of attoseconds represented by this `Duration`.
+### Type Aliases
+- [typealias Specification](duration/specification.md)
+- [typealias UnwrappedType](duration/unwrappedtype.md)
+- [typealias ValueType](duration/valuetype.md)
+### Type Properties
+- [static var defaultResolverSpecification: some ResolverSpecification](duration/defaultresolverspecification.md)
 ### Type Methods
 - [static func nanoseconds(Double) -> Duration](duration/nanoseconds(_:)-1cg32.md)
   Construct a `Duration` given a number of nanoseconds as a `Double` by converting the value into the closest attosecond scale value.
@@ -100,16 +106,22 @@ Typical construction of `Duration` values should be created via the static metho
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
+- [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)
 - [Decodable](decodable.md)
+- [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
 - [DurationProtocol](durationprotocol.md)
 - [ElectricityInsightMeasure](../EnergyKit/ElectricityInsightMeasure.md)
 - [Encodable](encodable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)
+- [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
+- [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
 
 ## See Also
 

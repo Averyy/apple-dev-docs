@@ -1,4 +1,4 @@
-# Read the Parent Information of an App Category
+# Read the parent information of an app category
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get the App Store category to which a specific subcategory belongs.
 
 ## Parameters
 
-- `fields[appCategories]` ([string])
+- `fields[appCategories]` ([string]): Additional fields to include for each app categories resource returned by the response.
 
 ## See Also
 
-- [Read App Category Information](get-v1-appcategories-_id_.md)
+- [Read app category information](get-v1-appcategories-_id_.md)
   Get a specific app category.
-- [GET /v1/appCategories/{id}/relationships/parent](get-v1-appcategories-_id_-relationships-parent.md)
+- [Get the parent category ID for an app category](get-v1-appcategories-_id_-relationships-parent.md)
 
 
 ---

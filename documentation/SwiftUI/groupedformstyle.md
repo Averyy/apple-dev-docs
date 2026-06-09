@@ -17,6 +17,7 @@ A form style with grouped rows.
 ## Declaration
 
 ```swift
+nonisolated
 struct GroupedFormStyle
 ```
 

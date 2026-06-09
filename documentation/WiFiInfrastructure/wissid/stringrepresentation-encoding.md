@@ -8,6 +8,7 @@ Converts the SSID’s raw data to a string representation using the specified en
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

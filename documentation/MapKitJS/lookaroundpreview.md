@@ -35,7 +35,7 @@ The HTML code below implements a webpage that renders a `container` which has bo
 
 ```html
 <script
-  src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.core.js"
+  src="https://cdn.apple-mapkit.com/mk/x/mapkit.core.js"
   crossorigin async
   data-callback="initMapKit"
   data-token="YOUR TOKEN HERE"

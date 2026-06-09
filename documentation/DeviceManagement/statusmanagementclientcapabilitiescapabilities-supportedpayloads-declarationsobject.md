@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A declaration that the client supports.
+A set of declarations that the client supports.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ A declaration that the client supports.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

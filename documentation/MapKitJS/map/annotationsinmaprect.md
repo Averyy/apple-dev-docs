@@ -11,7 +11,7 @@ Returns the list of annotation objects within the specified map rectangle.
 ## Declaration
 
 ```swift
-annotationsInMapRect(mapRect: MapRect): Annotation[];
+annotationsInMapRect(mapRect: MapRectData): Annotation[];
 ```
 
 ## Mentions

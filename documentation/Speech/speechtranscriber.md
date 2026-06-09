@@ -54,6 +54,8 @@ Use the [`isAvailable`](speechtranscriber/isavailable.md) or [`supportedLocales`
 - [static func supportedLocale(equivalentTo: Locale) async -> Locale?](speechtranscriber/supportedlocale(equivalentto:).md)
   A locale from the module’s supported locales equivalent to the given locale.
 ### Getting results
+- [var results: some Sendable & AsyncSequence<SpeechTranscriber.Result, any Error>](speechtranscriber/results.md)
+  The asynchronous sequence of transcription results.
 - [SpeechTranscriber.Result](speechtranscriber/result.md)
   A phrase or passage of transcribed speech. The phrases are sent in order.
 

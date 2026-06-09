@@ -9,8 +9,6 @@ Inform the device that it can continue past Setup Assistant and finish login.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -21,10 +19,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ## Topics
 
@@ -36,7 +34,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#UserConfiguredCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -10,7 +10,6 @@ Returns a collaboration highlight for a specified identifier string.
 - iPadOS 16.0+
 - Mac Catalyst ?+
 - macOS 13.0+
-- tvOS 16.0+
 - visionOS ?+
 
 ## Declaration

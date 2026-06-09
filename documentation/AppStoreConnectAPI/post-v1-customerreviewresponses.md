@@ -1,4 +1,4 @@
-# Create or Update a Response to a Customer Review
+# Create or update a response to a customer review
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -24,7 +24,7 @@ The request body of the customer review response.
 
 ## See Also
 
-- [Delete a Response to a Customer Review](delete-v1-customerreviewresponses-_id_.md)
+- [Delete a response to a customer review](delete-v1-customerreviewresponses-_id_.md)
   Delete a specific response you wrote to a customer review.
 
 

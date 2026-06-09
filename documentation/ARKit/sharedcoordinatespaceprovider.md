@@ -14,11 +14,15 @@ Provides ability to establish a shared coordinate space among multiple participa
 final class SharedCoordinateSpaceProvider
 ```
 
+#### Overview
+
+You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
+
 ## Topics
 
 ### Structures
 - [SharedCoordinateSpaceProvider.CoordinateSpaceData](sharedcoordinatespaceprovider/coordinatespacedata.md)
-  A coordinate space data.
+  A coordinate space data object.
 ### Initializers
 - [init()](sharedcoordinatespaceprovider/init.md)
   Create a shared coordinate space provider.
@@ -37,7 +41,7 @@ final class SharedCoordinateSpaceProvider
   The state of this shared coordinate space provider.
 ### Instance Methods
 - [func push(data: SharedCoordinateSpaceProvider.CoordinateSpaceData)](sharedcoordinatespaceprovider/push(data:).md)
-  Push data to shared coordinate space provider.
+  Push data to the shared coordinate space provider.
 ### Type Properties
 - [static var isSupported: Bool](sharedcoordinatespaceprovider/issupported.md)
   Determines whether this device supports the shared coordinate space provider.

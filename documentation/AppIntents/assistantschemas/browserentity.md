@@ -20,17 +20,15 @@ Assistant schema conformance for app entities that describe data for web browsin
 protocol BrowserEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
 - [var bookmark: some AssistantSchemas.Entity](assistantschemas/browserentity/bookmark.md)
   The app entity describes a bookmark.
+- [var readingListItem: some AssistantSchemas.Entity](assistantschemas/browserentity/readinglistitem.md)
 - [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
   The app entity describes a browser tab.
+- [var tabGroup: some AssistantSchemas.Entity](assistantschemas/browserentity/tabgroup.md)
 - [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
   The app entity describes a browser window.
 
@@ -41,15 +39,6 @@ protocol BrowserEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var bookmark: some AssistantSchemas.Entity](assistantschemas/browserentity/bookmark.md)
-  The app entity describes a bookmark.
-- [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
-  The app entity describes a browser tab.
-- [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
-  The app entity describes a browser window.
 
 
 ---

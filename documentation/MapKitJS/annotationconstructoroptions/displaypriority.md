@@ -11,7 +11,7 @@ A hint the map uses to prioritize displaying the annotation.
 ## Declaration
 
 ```swift
-displayPriority?: number;
+displayPriority?: AnnotationDisplayPriority;
 ```
 
 ## Mentions
@@ -20,7 +20,7 @@ displayPriority?: number;
 
 #### Discussion
 
-The default value is `Annotation.DisplayPriority.Required.`
+The default value is [`Required`](annotationdisplaypriority/required.md)
 
 ## See Also
 

@@ -1,4 +1,4 @@
-# App and Book Management (Legacy)
+# App and book management (Legacy)
 
 **Framework**: Device Management
 
@@ -7,21 +7,18 @@ Manage apps and books for your students and employees.
 ## Topics
 
 ### Essentials
-- [Getting App and Book Information (Legacy)](getting-app-and-book-information-legacy.md)
+- [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
   Use a web service to find details about apps and books to show to your users.
-### Getting Started
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services-legacy.md)
-  Associate volume purchases with users or devices using endpoints for Mobile Device Management (MDM), provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
-  Manage devices and content across an organization user base with a single destination.
-- [Interpreting Error Codes](interpreting-error-codes.md)
-  Investigate service request errors and troubleshoot solutions.
-### Configuration Management
+- [Managing apps and books through web services (Legacy)](managing-apps-and-books-through-web-services-legacy.md)
+  Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
+- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+  Manage devices and content across an organization’s user base with a single destination.
+### Configuration management
 - [Client Configuration](client-configuration.md)
   Store client-specific information on the server.
 - [Service Configuration](service-configuration.md)
   Provides the full list of web service URLs and a list of possible error numbers.
-### Asset and License Management
+### Asset and license management
 - [Get Assets](get-assets-44p83.md)
   Get the set of assets managed by your organization.
 - [Get Assignments](get-assignments-158kc.md)
@@ -30,7 +27,7 @@ Manage apps and books for your students and employees.
   Get the set of licenses managed by your organization.
 - [Manage Licenses](manage-licenses.md)
   Associate and disassociate licenses with users and devices.
-### User Management
+### User management
 - [Get a User](get-a-user.md)
   Get information about a particular user.
 - [Get Users](get-users-5boi1.md)
@@ -41,7 +38,7 @@ Manage apps and books for your students and employees.
   Modify details about a user.
 - [Retire a User](retire-a-user.md)
   Retire a user account.
-### Objects and Data Types
+### Objects and data types
 - [object VppAsset](vppasset.md)
   A particular asset in the purchase program.
 - [object VppAssignment](vppassignment.md)
@@ -56,6 +53,11 @@ Manage apps and books for your students and employees.
   A location used for managing purchases.
 - [object VppErrorCode](vpperrorcode.md)
   An error code.
+
+## See Also
+
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+  Migrate from API version 1 to version 2 for improved performance.
 
 
 ---

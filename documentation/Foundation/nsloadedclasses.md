@@ -28,6 +28,8 @@ let NSLoadedClasses: String
   The bundle’s principal class.
 - [class let didLoadNotification: NSNotification.Name](bundle/didloadnotification.md)
   A notification that lets observers know when classes are dynamically loaded.
+- [Bundle.DidLoadMessage](bundle/didloadmessage.md)
+  A message a bundle sends when it dynamically loads a class.
 
 
 ---

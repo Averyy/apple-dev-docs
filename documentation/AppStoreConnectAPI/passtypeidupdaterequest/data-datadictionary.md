@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a pass type id update request resource.
+The data wrapper for a pass type ID update request.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,7 +18,7 @@ object PassTypeIdUpdateRequest.Data
 
 ### Dictionaries
 - [object PassTypeIdUpdateRequest.Data.Attributes](passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  The data structure that represents a pass type id update request resource.
+  The updateable attributes of a pass type identifier.
 
 ## Properties
 

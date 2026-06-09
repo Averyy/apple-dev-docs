@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe media assets.
 protocol PhotosEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -40,14 +36,6 @@ protocol PhotosEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var album: some AssistantSchemas.Entity](assistantschemas/photosentity/album.md)
-  The app entity describes an album.
-- [var asset: some AssistantSchemas.Entity](assistantschemas/photosentity/asset.md)
-- [var recognizedPerson: some AssistantSchemas.Entity](assistantschemas/photosentity/recognizedperson.md)
-  The app entity describes a person who appears in an asset.
 
 
 ---

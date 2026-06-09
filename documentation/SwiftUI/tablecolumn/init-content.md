@@ -16,7 +16,7 @@ Creates an unsortable column with a text label
 
 ```swift
 nonisolated
-init(_ text: Text, @ViewBuilder content: @escaping (RowValue) -> Content)
+init(_ text: Text, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion

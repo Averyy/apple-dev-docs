@@ -96,7 +96,7 @@ class NSTextLayoutManager
   Values that describe where and how the framework extends segments of a selection.
 ### Instance Properties
 - [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextlayoutmanager/resolvesnaturalalignmentwithbasewritingdirection.md)
-  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
+  Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
 
 ## Relationships
 

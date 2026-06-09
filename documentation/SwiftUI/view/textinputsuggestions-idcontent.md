@@ -12,7 +12,7 @@ Configures the text input suggestions for this view.
 
 ```swift
 nonisolated
-func textInputSuggestions<Data, ID, Content>(_ data: Data, id: KeyPath<Data.Element, ID>, @ViewBuilder content: @escaping (Data.Element) -> Content) -> some View where Data : RandomAccessCollection, ID : Hashable, Content : View
+func textInputSuggestions<Data, ID, Content>(_ data: Data, id: KeyPath<Data.Element, ID>, @ContentBuilder content: @escaping (Data.Element) -> Content) -> some View where Data : RandomAccessCollection, ID : Hashable, Content : View
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ Use `Label` to get platform-standard visual representations of suggestion text a
 
 - `data`: The data that is used to create views dynamically.
 - `id`: The key path to the provided data’s identifier.
-- `content`: The view builder that creates views dynamically.
+- `content`: The content builder that creates views dynamically.
 
 ## See Also
 
@@ -57,6 +57,8 @@ Use `Label` to get platform-standard visual representations of suggestion text a
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
   A structure defining the system text formatting controls available on each platform.
 

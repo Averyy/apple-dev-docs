@@ -201,7 +201,7 @@ When you prompt the model with a question or make a request, the model decides w
 
 The app shows real-time content generation by streaming partial responses from the model. The `ItineraryPlanner` uses [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md) to generate `Itinerary.PartiallyGenerated` objects so itinerary items are shown incrementally to the person.
 
-You can opt for specific [`GenerationOptions`](generationoptions.md) to adjust the way the model generates these responses. For generating the itinerary, the app opts for a [`greedy`](generationoptions/samplingmode/greedy.md) sampling mode so the model always results in the same output for a given input. This ensures the prompt generates consistent recommendations for an itinerary specific to the given landmark.
+You can opt for specific [`GenerationOptions`](generationoptions.md) to adjust the way the model generates these responses. For generating the itinerary, the app opts for a [`greedy`](generationoptions/samplingmode-swift.struct/greedy.md) sampling mode so the model always results in the same output for a given input. This ensures the prompt generates consistent recommendations for an itinerary specific to the given landmark.
 
 ```swift
 private(set) var itinerary: Itinerary.PartiallyGenerated?
@@ -210,7 +210,7 @@ func suggestItinerary(dayCount: Int) async throws {
     let stream = session.streamResponse(
         generating: Itinerary.self,
         includeSchemaInPrompt: false,
-        options: GenerationOptions(sampling: .greedy)
+        options: GenerationOptions(samplingMode: .greedy)
     ) {
         "Generate a \(dayCount)-day itinerary to \(landmark.name)."
 
@@ -254,7 +254,7 @@ let contentTaggingModel = SystemLanguageModel(useCase: .contentTagging)
         let stream = session.streamResponse(
             to: landmark.description,
             generating: TaggingResponse.self,
-            options: GenerationOptions(sampling: .greedy)
+            options: GenerationOptions(samplingMode: .greedy)
         )
         for try await newTags in stream {
             generatedTags = newTags.content
@@ -307,8 +307,6 @@ The model generates location names as text, and the `LocationLookup` class conve
   Learn about important changes to Foundation Models.
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
   Enhance the experience in your app by prompting an on-device large language model.
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
 
 
 ---

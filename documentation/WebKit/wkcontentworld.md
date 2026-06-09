@@ -45,6 +45,8 @@ Use the methods and properties of this class to fetch the content world you need
   Returns the custom content world with the specified name.
 - [var name: String?](wkcontentworld/name.md)
   The name of a custom content world.
+### Type Methods
+- [class func world(with: WKContentWorldConfiguration) -> WKContentWorld](wkcontentworld/world(with:).md)
 
 ## Relationships
 

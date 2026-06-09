@@ -7,8 +7,6 @@ Enable Remote Desktop on a device.
 
 **Availability**:
 - macOS 10.14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -27,10 +25,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
-| Required access right |  |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -79,7 +77,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#EnableRemoteDesktopCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

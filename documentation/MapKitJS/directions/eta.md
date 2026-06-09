@@ -1,4 +1,4 @@
-# eta(request, callback)
+# eta(request)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -11,28 +11,22 @@ Retrieves estimated arrival times to up to 10 destinations from a single startin
 ## Declaration
 
 ```swift
-eta(
-        request: EtaRequestOptions,
-        callback: (error: Error | null, result?: EtaResponse) => void,
-    ): number | undefined;
+eta(request: EtaRequestOptions): Promise<EtaResponse>;
 ```
 
 #### Return Value
 
-A request ID, which you can pass to [`cancel(id)`](service/cancel.md) to cancel a pending request.
+A promise that resolves with an [`EtaResponse`](etaresponse.md) on success, or rejects with an `Error` on failure.
 
 #### Discussion
 
-To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta(request, callback)`](directions/eta.md) method. You may provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
+To get a set of estimated arrival times, provide an [`EtaRequestOptions`](etarequestoptions.md) object when you call the [`eta(request)`](directions/eta.md) method. You can provide up to 10 destinations. The server returns an error if you request more than 10 destinations in a single request.
 
-Estimated times are returned asynchronously via a callback function. MapKit JS invokes the callback function with two arguments, `error` on failure and `data` on success.
-
-`error` contains an error code and a text description of the error. `data` is an [`EtaResponse`](etaresponse.md) object.
+Pass an `AbortSignal` from an `AbortController` to the [`signal`](etarequestoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 
 ## Parameters
 
 - `request`: An [`EtaRequestOptions`](etarequestoptions.md) object that specifies details for the server to provide estimated arrival times at one or more destinations.
-- `callback`: A callback function that receives the estimated time response object, returned asynchronously.
 
 ## See Also
 

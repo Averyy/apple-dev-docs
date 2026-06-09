@@ -6,7 +6,7 @@
 The text table layout algorithm.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

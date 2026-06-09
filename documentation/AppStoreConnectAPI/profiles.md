@@ -13,35 +13,36 @@ Provisioning profiles include signing certificates, device identifiers, and a bu
 ## Topics
 
 ### Creating and Deleting Provisioning Profiles
-- [Create a Profile](post-v1-profiles.md)
+- [Create a profile](post-v1-profiles.md)
   Create a new provisioning profile.
-- [Delete a Profile](delete-v1-profiles-_id_.md)
+- [Delete a profile](delete-v1-profiles-_id_.md)
   Delete a provisioning profile that is used for app development or distribution.
 ### Getting Provisioning Profile Information
-- [List and Download Profiles](get-v1-profiles.md)
+- [List and download profiles](get-v1-profiles.md)
   Find and list provisioning profiles and download their data.
-- [Read and Download Profile Information](get-v1-profiles-_id_.md)
+- [Read and download profile information](get-v1-profiles-_id_.md)
   Get information for a specific provisioning profile and download its data.
 ### Getting Related Data
-- [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)
+- [Read the bundle id in a profile](get-v1-profiles-_id_-bundleid.md)
   Get the bundle ID information for a specific provisioning profile.
-- [GET /v1/profiles/{id}/relationships/bundleId](get-v1-profiles-_id_-relationships-bundleid.md)
-- [List All Certificates in a Profile](get-v1-profiles-_id_-certificates.md)
+- [Get the bundle ID for a profile](get-v1-profiles-_id_-relationships-bundleid.md)
+- [List all certificates in a profile](get-v1-profiles-_id_-certificates.md)
   Get a list of all certificates and their data for a specific provisioning profile.
-- [GET /v1/profiles/{id}/relationships/certificates](get-v1-profiles-_id_-relationships-certificates.md)
-- [List All Devices in a Profile](get-v1-profiles-_id_-devices.md)
+- [List certificate IDs for a profile](get-v1-profiles-_id_-relationships-certificates.md)
+- [List all devices in a profile](get-v1-profiles-_id_-devices.md)
   Get a list of all devices for a specific provisioning profile.
-- [GET /v1/profiles/{id}/relationships/devices](get-v1-profiles-_id_-relationships-devices.md)
+- [List device IDs for a profile](get-v1-profiles-_id_-relationships-devices.md)
 ### Objects
 - [object Profile](profile.md)
-  The data structure that represents a Profiles resource.
+  A provisioning profile that authorizes specific devices to run an app during development or distribution.
 - [object ProfileCreateRequest](profilecreaterequest.md)
   The request body you use to create a Profile.
 - [object ProfileResponse](profileresponse.md)
-  A response that contains a single Profiles resource.
+  The response body for endpoints that create or read a single provisioning profile.
 - [object ProfilesResponse](profilesresponse.md)
-  A response that contains a list of Profiles resources.
+  The response body for endpoints that list provisioning profiles.
 - [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+  A response containing a list of provisioning profiles, without related resources.
 - [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
 - [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
 - [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)

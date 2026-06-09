@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: class
 
-A type that represents capabillities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
+A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
 
 **Availability**:
 - macOS 15.4+
@@ -35,7 +35,7 @@ class SupportedCapabilities
   A Boolean property that indicates whether the volume currently uses a journal for speeding recovery after an unplanned shutdown.
 ### Declaring root capabilites
 - [var doesNotSupportRootTimes: Bool](fsvolume/supportedcapabilities/doesnotsupportroottimes.md)
-  A Boolan property that indicates the volume doesn’t store reliable times for the root directory.
+  A Boolean property that indicates the volume doesn’t store reliable times for the root directory.
 ### Declaring file capabilities
 - [var supportsSparseFiles: Bool](fsvolume/supportedcapabilities/supportssparsefiles.md)
   A Boolean property that indicates whether the volume supports sparse files.
@@ -84,9 +84,8 @@ class SupportedCapabilities
 
 ## See Also
 
-- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/operations/supportedvolumecapabilities.md)
-  A property that provides the supported capabilities of the volume.
-- [var volumeStatistics: FSStatFSResult](fsvolume/operations/volumestatistics.md)
+- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/handler/supportedvolumecapabilities.md)
+- [var volumeStatistics: FSStatFSResult](fsvolume/handler/volumestatistics.md)
   A property that provides up-to-date statistics of the volume.
 - [class FSStatFSResult](fsstatfsresult.md)
   A type used to report a volume’s statistics.

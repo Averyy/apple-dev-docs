@@ -18,7 +18,7 @@ Creates a navigation link that presents a destination view, with a text label th
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, @ViewBuilder destination: () -> Destination)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder destination: () -> Destination)
 ```
 
 ## Parameters

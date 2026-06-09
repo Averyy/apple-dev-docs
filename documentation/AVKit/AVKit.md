@@ -35,6 +35,8 @@ Create user interfaces for media playback, complete with transport controls, cha
   A sound object for a capture event.
 - [class AVInputPickerInteraction](avinputpickerinteraction.md)
   Use `AVInputPickerInteraction` to present an input picker.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 ### tvOS playback and capture
 - [Customizing the tvOS Playback Experience](customizing-the-tvos-playback-experience.md)
   Adopt the latest features of the redesigned tvOS player user interface to provide a more streamlined way to watch your content.
@@ -64,6 +66,8 @@ Create user interfaces for media playback, complete with transport controls, cha
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
 - [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
   An interface that responds to events from a continuity device picker view controller.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 ### visionOS playback
 - [Playing immersive media with AVKit](playing-immersive-media-with-avkit.md)
   Adopt the system playback interface to provide an immersive video watching experience.
@@ -83,6 +87,10 @@ Create user interfaces for media playback, complete with transport controls, cha
   An object that manages viewing multiple videos at once.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
+- [class AVViewport](avviewport.md)
+- [class AVPortalViewport](avportalviewport.md)
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 ### macOS playback and capture
 - [Implementing Trimming in a macOS Player](implementing-trimming-in-a-macos-player.md)
   Provide a QuickTime media-trimming experience in your macOS app.
@@ -106,6 +114,10 @@ Create user interfaces for media playback, complete with transport controls, cha
   Operate the camera in Split View, Slide Over, Picture in Picture, and Stage Manager modes.
 - [class AVPictureInPictureController](avpictureinpicturecontroller.md)
   A controller that responds to user-initiated Picture in Picture playback of video in a floating, resizable window.
+### Legible media options
+- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [enum AVLegibleMediaOptionsMenuType](avlegiblemediaoptionsmenutype.md)
 ### Playback route selection
 - [class AVRoutePickerView](avroutepickerview.md)
   A view that presents a list of nearby media receivers.
@@ -122,9 +134,8 @@ Create user interfaces for media playback, complete with transport controls, cha
 ### Macros
 - [Macros](avkit-macros.md)
 ### Classes
-- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
-### Structures
-- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [class AVInterfaceURLAlbumArtwork](avinterfaceurlalbumartwork.md)
+  An album artwork subclass that references artwork via a URL and content type.
 
 
 ---

@@ -29,13 +29,15 @@ interface EtaRequestOptions
   An array of coordinates that represent end points for estimated arrival time requests.
 - [transportType](etarequestoptions/transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
+- [signal](etarequestoptions/signal.md)
+  A signal object allowing you to cancel the request.
 ### Instance Properties
 - [arrivalDate](etarequestoptions/arrivaldate.md)
   The arrival date for the trip.
 
 ## See Also
 
-- [eta(request, callback)](directions/eta.md)
+- [eta(request)](directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
 - [interface EtaResponse](etaresponse.md)
   The estimated arrival times for a set of destinations.

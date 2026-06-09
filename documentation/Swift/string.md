@@ -23,7 +23,7 @@ struct String
 
 #### Overview
 
-A string is a series of characters, such as `"Swift"`, that forms a collection. Strings in Swift are Unicode correct and locale insensitive, and are designed to be efficient. The `String` type bridges with the Objective-C class `NSString` and offers interoperability with C functions that works with strings.
+A string is a series of characters, such as `"Swift"`, that forms a collection. Strings in Swift are Unicode correct and locale insensitive, and are designed to be efficient. The `String` type bridges with the Objective-C class `NSString` and offers interoperability with C functions that work with strings.
 
 You can create new strings using string literals or string interpolations. A *string literal* is a series of characters enclosed in quotes.
 
@@ -299,8 +299,7 @@ For more information about the Unicode terms used in this discussion, see the [`
   Creates a new string representing the given string repeated the specified number of times.
 - [init(repeating: Character, count: Int)](string/init(repeating:count:)-11bpi.md)
   Creates a string representing the given character repeated the specified number of times.
-- [init(unsafeUninitializedCapacity: Int, initializingUTF8With: (UnsafeMutableBufferPointer<UInt8>) throws -> Int) rethrows](string/init(unsafeuninitializedcapacity:initializingutf8with:).md)
-  Creates a new string with the specified capacity in UTF-8 code units, and then calls the given closure with a buffer covering the string’s uninitialized memory.
+- [init<E>(unsafeUninitializedCapacity: Int, initializingUTF8With: (UnsafeMutableBufferPointer<UInt8>) throws(E) -> Int) throws(E)](string/init(unsafeuninitializedcapacity:initializingutf8with:).md)
 ### Inspecting a String
 - [var isEmpty: Bool](string/isempty.md)
   A Boolean value indicating whether a string has no characters.
@@ -467,8 +466,6 @@ For more information about the Unicode terms used in this discussion, see the [`
   Removes the elements in the specified subrange from the collection.
 - [func removeSubrange<R>(R)](string/removesubrange(_:)-9twng.md)
   Removes the elements in the specified subrange from the collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](string/filter(_:).md)
-  Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](string/drop(while:).md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 - [func dropFirst(Int) -> Self.SubSequence](string/dropfirst(_:).md)
@@ -486,8 +483,6 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [static func == (String, String) -> Bool](string/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 - [static func == <RHS>(Self, RHS) -> Bool](string/==(_:_:)-8kzxf.md)
-- [static func != (Self, Self) -> Bool](string/!=(_:_:)-1bb05.md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func != <RHS>(Self, RHS) -> Bool](string/!=(_:_:)-frzf.md)
 - [static func ~= (String, Substring) -> Bool](string/~=(_:_:).md)
 ### Comparing Characters
@@ -547,7 +542,7 @@ For more information about the Unicode terms used in this discussion, see the [`
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](string/subscript(_:)-4h7s3.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
 - [func prefix(Int) -> Self.SubSequence](string/prefix(_:).md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
 - [func prefix(through: Self.Index) -> Self.SubSequence](string/prefix(through:).md)
@@ -587,7 +582,7 @@ For more information about the Unicode terms used in this discussion, see the [`
   Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
-- [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)
+- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](string/withutf8(_:).md)
   Runs `body` over the content of this string in contiguous memory. If this string is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the string, it will invalidate any pre-existing indices.
 ### Working with String Views
 - [var unicodeScalars: String.UnicodeScalarView](string/unicodescalars.md)
@@ -643,9 +638,9 @@ For more information about the Unicode terms used in this discussion, see the [`
 ### Getting C Strings
 - [var utf8CString: ContiguousArray<CChar>](string/utf8cstring.md)
   A contiguously stored null-terminated UTF-8 representation of the string.
-- [func withCString<Result>((UnsafePointer<Int8>) throws -> Result) rethrows -> Result](string/withcstring(_:).md)
+- [func withCString<Result, E>((UnsafePointer<Int8>) throws(E) -> Result) throws(E) -> Result](string/withcstring(_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
-- [func withCString<Result, TargetEncoding>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws -> Result) rethrows -> Result](string/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](string/withcstring(encodedas:_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 ### Working with Paths
 - [init(FilePath)](string/init(_:)-3a5mh.md)
@@ -741,6 +736,7 @@ For more information about the Unicode terms used in this discussion, see the [`
   Compares `String`s using one of a fixed set of standard comparison algorithms.
 ### Initializers
 - [init(URL.Template.VariableName)](string/init(_:)-1oup7.md)
+- [init(AttributedString.CharacterView)](string/init(_:)-2cuu.md)
 - [init(Slice<AttributedString.CharacterView>)](string/init(_:)-5ruqx.md)
 - [init(cString: inout CChar)](string/init(cstring:)-1gatt.md)
 - [init(cString: inout UInt8)](string/init(cstring:)-295hy.md)
@@ -794,6 +790,8 @@ For more information about the Unicode terms used in this discussion, see the [`
   A UTF-8 span over the code units that make up this string.
 ### Instance Methods
 - [func data(using: String.Encoding, allowLossyConversion: Bool) -> Data?](string/data(using:allowlossyconversion:).md)
+- [func isTriviallyIdentical(to: String) -> Bool](string/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this string is identical to `other`.
 - [func withMutableCharacters<R>((inout String) -> R) -> R](string/withmutablecharacters(_:).md)
   Applies the given closure to a mutable view of the string’s characters.
 - [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](string/withplatformstring(_:).md)
@@ -849,6 +847,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [BindableData](../RealityKit/BindableData.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [CodingKeyRepresentable](codingkeyrepresentable.md)
 - [Collection](collection.md)
@@ -873,6 +872,8 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
 - [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLIdentifier](../CreateML/MLIdentifier.md)
@@ -890,6 +891,9 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [TextOutputStream](textoutputstream.md)
 - [TextOutputStreamable](textoutputstreamable.md)
 - [Transferable](../CoreTransferable/Transferable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also
 

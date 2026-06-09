@@ -9,7 +9,7 @@ framework: HIG
 
 **Platforms:** ios, ipados, macos, visionos, watchos
 
-> **Updated 2025-01-17:** Added specifications for pass image dimensions.
+> **Updated 2026-06-08:** Updated to reflect guidance for iOS 27 and the Pass Designer app.
 
 Wallet helps people securely store their credit and debit cards, driver’s license or state ID, transit cards, event tickets, keys, and more on iPhone and Apple Watch.
 
@@ -18,89 +18,204 @@ People use their cards and passes in Wallet to make Apple Pay purchases, track t
 When you integrate Apple Wallet into your app, you can create custom passes and present them the moment people need them, securely verify an individual’s identity so they can access personal content, and offer detailed receipts and tracking information where it’s most convenient. For developer guidance, see [Wallet](../PassKit/wallet.md).
 
 ## Passes
-**Offer to add new passes to Wallet.** When people do something that results in a new pass — like checking into a flight, purchasing an event ticket, or registering for a store reward program — you can present system-provided UI that helps them add the pass to Wallet with one tap (for developer guidance, see [addPasses(_:withCompletionHandler:)](../PassKit/PKPassLibrary/addPasses(_:withCompletionHandler:).md)). If people want to review a pass before adding it, you can display a custom view that displays the pass and provides an Add to Apple Wallet button; for developer guidance, see [PKAddPassesViewController](../PassKit/PKAddPassesViewController.md).
-**Help people add a pass that they created outside of your app.** If people create a pass using your website or another device, suggest adding it to Wallet the next time they open your app. If people decline your suggestion, don’t ask them again.
-**Add related passes as a group.** If your app generates multiple passes, like boarding passes for a multi-connection flight, add all passes at the same time so people don’t have to add each one individually. If people can receive a group of passes from your website — such as a set of tickets for an event — bundle them together so that people can download all of them at one time. For developer guidance, see [Distributing and updating a pass](../WalletPasses/distributing-and-updating-a-pass.md).
-**Display an Add to Apple Wallet button to let people add an existing pass that isn’t already in Wallet.** If people previously declined your suggestion to add a pass to Wallet — or if they removed the pass — a button makes it easy to add it if they change their minds. You can display an Add to Apple Wallet button wherever the corresponding pass information appears in your app. For developer guidance, see [PKAddPassButton](../PassKit/PKAddPassButton.md). You can also display an Add to Apple Wallet badge in an email or on a webpage; for guidance, see [Add to Apple Wallet guidelines](https://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
+Passes are digital representations of information that people can add to Wallet, like event tickets, boarding passes, membership reward cards, and coupons.
+![Three Wallet passes displayed side by side, including a museum membership pass with a dinosaur skull background, a coupon pass for a discount on donuts with a food truck illustration, and a gym pass with a gym equipment background.](https://docs-assets.developer.apple.com/published/d8ddd96fbe8f3a2abc02dd6d8f8942bf/wallet-passes-hero%402x.png)
+**Offer to add new passes to Wallet.** When an action results in a new pass, like purchasing an event ticket or registering for a store reward program, you can present system UI that adds the pass to Wallet with one tap. For frequent, predictable actions like checking in for a flight, you can add passes in the background after a person grants a one-time authorization, so they don’t need to tap an Add to Apple Wallet button each time. Wallet notifies the person whenever a pass is added. If someone wants to review a pass first, you can show a custom view with an Add to Apple Wallet button. For developer guidance, see [addPasses(_:withCompletionHandler:)](../PassKit/PKPassLibrary/addPasses(_:withCompletionHandler:).md), [PKPassLibrary.Capability.backgroundAddPasses](../PassKit/PKPassLibrary/Capability/backgroundAddPasses.md), and [PKAddPassesViewController](../PassKit/PKAddPassesViewController.md).
+**Help people add a pass created outside your app.** If someone creates a pass using your website or another device, suggest adding it to Wallet the next time they open your app. If people decline your suggestion, don’t ask them again.
+**Add related passes as a group.** If your app generates multiple passes, like boarding passes for a multi-connection flight, add all passes at once so people don’t have to add each one individually. If your website distributes a group of passes, such as a set of event tickets, bundle them together so people can download them all at once. For developer guidance, see [Distributing and updating a pass](../WalletPasses/distributing-and-updating-a-pass.md).
+**Display an Add to Apple Wallet button to let people add an existing pass not already in Wallet.** If someone previously declined your suggestion to add a pass to Wallet — or if they removed the pass — a button makes it easy to add the pass if they change their mind. You can display an Add to Apple Wallet button wherever corresponding pass information appears in your app. For developer guidance, see [PKAddPassButton](../PassKit/PKAddPassButton.md). An Add to Apple Wallet badge is also available for emails and webpages; for guidance, see [Add to Apple Wallet guidelines](https://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
+![A screenshot of a food truck app on iPhone displaying a coupon pass offering 20% off a dozen donuts, with an Add to Apple Wallet button below the pass.](https://docs-assets.developer.apple.com/published/c34159672db99555d7312e0c2491d96a/wallet-passes-add-to-apple-wallet%402x.png)
 **Let people jump from your app to their pass in Wallet.** Wherever your app displays information about a pass that exists in Wallet, you can offer a link that opens it directly. Label the link something like “View in Wallet.”
-**Tell the system when your pass expires.** Wallet automatically hides expired passes to reduce crowding, while also providing a button that lets people revisit them. To help ensure the system hides passes appropriately, set the expiration date, relevant date, and voided properties of each pass correctly; for developer guidance, see [Pass](../WalletPasses/Pass.md).
-**Always get people’s permission before deleting a pass from Wallet.** For example, you could include an in-app setting that lets people specify whether they want to delete passes manually or have them removed automatically. If necessary, you can display an alert before deleting a pass.
-**Help the system suggest a pass when it’s contextually relevant.** Ideally, passes automatically appear when they’re needed so people don’t have to manually locate them. When you supply information about when and where your pass is relevant, the system can display a link to it on the Lock Screen when people are most likely to want it. For example, a gym membership card could appear on the Lock Screen as people enter the gym. For developer guidance, see [Showing a Pass on the Lock Screen](../WalletPasses/showing-a-pass-on-the-lock-screen.md). Starting in iOS 18 and watchOS 11, the system starts a Live Activity for poster event ticket style passes when they’re relevant.
-![A screenshot of the Lock Screen on iPhone, showing a notification about an upcoming flight.](https://docs-assets.developer.apple.com/published/93ab1919c97738f4688b4af67d2f6f06/screen-notification~dark%402x.png)
-![A screenshot of the Lock Screen on iPhone, showing a Live Activity of an upcoming event.](https://docs-assets.developer.apple.com/published/1fb12c1d6aa8a295ee97a709f68915ef/poster-event-live-activity%402x.png)
-**Update passes as needed.** Physical passes don’t typically change, but a digital pass can reflect updates to events. An airline boarding pass, for example, can automatically update to display flight delays and gate changes.
-**Use change messages only for updates to time-critical information.** A change message interrupts people’s current workflow, so it’s essential to send one only when you make an update they need to know about. For example, people need to know when there’s a gate change in a boarding pass, but they don’t need to know when a customer service phone number changes. Never use a change message for marketing or other noncritical communication. Change messages are available on a per-field basis; for developer guidance, see [Adding a Web Service to Update Passes](../WalletPasses/adding-a-web-service-to-update-passes.md).
+**Tell the system when your passes expire.** Wallet automatically hides expired passes to reduce crowding, and provides a button that lets people revisit them. To help ensure the system hides passes appropriately, set the expiration date, relevant date, and voided properties of each pass correctly; for developer guidance, see [Pass](../WalletPasses/Pass.md).
+**Always get permission before deleting passes from Wallet.** For example, you could include an in-app setting that lets people specify whether they want to delete passes manually or allow automatic removal. If necessary, you can show an alert before deleting a pass.
+**Help the system suggest a pass when relevant.** Ideally, passes automatically appear when they’re needed so people don’t have to manually locate them. When you provide information about when and where your pass is relevant, the system can display a link to it on the Lock Screen when people are most likely to want it. For example, a gym membership card could appear on the Lock Screen as people enter the gym. For certain types of passes, like event tickets, the system can also start a Live Activity. For developer guidance, see [Showing a Pass on the Lock Screen](../WalletPasses/showing-a-pass-on-the-lock-screen.md).
+![A screenshot of the bottom portion of the Lock Screen on iPhone showing a banner from the Gym app that reads 'Get ready for today's workout! Open your membership pass to badge in.'](https://docs-assets.developer.apple.com/published/34b7be1dc0d51e64da8d5e5f0e983c23/wallet-passes-pass-notification~dark%402x.png)
+![A screenshot of the bottom portion of the Lock Screen on iPhone showing a Live Activity for a soccer event ticket, displaying the seat location at level 3, row 12, seat 5.](https://docs-assets.developer.apple.com/published/4f79850739af90cf3131a2a4d2d258c7/wallet-passes-pass-live-activity~dark%402x.png)
+**Keep passes up to date.** Physical passes don’t typically change, but a digital pass can reflect changes as they happen. An airline boarding pass, for example, can automatically update to display flight delays and gate changes.
+**Use change messages only for updates to time-critical information.** A change message interrupts people, so send one only for updates they need to know about. For example, people need to know when there’s a gate change for a flight, but they don’t need to know when a customer service phone number changes. Never use a change message for marketing or other noncritical communication. Change messages are available per-field; for developer guidance, see [Adding a Web Service to Update Passes](../WalletPasses/adding-a-web-service-to-update-passes.md).
+
+## Pass anatomy
+You define the content and structure of a pass using a combination of pass fields and semantic tags. Pass fields define what information appears on a pass and how it’s arranged. Semantic tags describe pass content to the system, enabling features like surfacing a pass when it’s needed, and featured actions, which are quick links to related content like venue directions or event guides. For poster event and semantic boarding passes, semantic tags are required and enable automatic layout. Include pass fields alongside semantic tags for these pass types too, so the passes display correctly on devices running older versions of iOS.
+In some cases, you can provide supplemental information that people can access via sheets linked from the front of the pass. The back of the pass holds settings and information people rarely need to access, like legal text.
+For developer guidance, see [Wallet Passes](../WalletPasses.md).
+
+### Pass field types
+Pass fields are organized into the following areas:
+- Logo and logo text fields: Show the brand icon and name; they remain visible when the pass is collapsed in Wallet.
+- Header fields: Show critical information that remains visible when the pass is collapsed.
+- Primary field: Shows the most important information people need.
+- Secondary and auxiliary fields: Show useful, but less critical information.
+- Footer fields: Show supplemental information, such as pass category (for example, “Family” or “Annual”).
+- Back fields: Show supplemental details that appear in pass details in Wallet.
+Layout varies by pass style. For developer guidance, see [Defining the metadata of your Wallet Pass](../WalletPasses/defining-the-metadata-of-your-wallet-pass.md).
 
 ## Designing passes
-Wallet uses a consistent design aesthetic to strengthen familiarity and build trust. Instead of merely replicating the appearance of a physical item, design a clean, simple pass that looks at home in Wallet.
-![An illustration that represents an iPhone next to an Apple Watch. Each device displays a Wallet pass for a flight.](https://docs-assets.developer.apple.com/published/61549fb317c8daf83a9d8bef7d9e1296/pass-intro~dark%402x.png)
-**Design a pass that looks great and works well on all devices.** Passes can look different on different devices. For example, when a pass appears on Apple Watch, it doesn’t display all the images it displays when it appears on iPhone (for guidance, see [Passes for Apple Watch](wallet.md#Passes-for-Apple-Watch)). Don’t put essential information in elements that might be unavailable on certain devices. Also, don’t add padding to images; for example, watchOS crops white space from some images.
-**Avoid using device-specific language.** You can’t predict the device people will use to view your pass, so don’t write text that might not make sense on a particular device. For example, text that tells people to “slide to view” content doesn’t make sense when it appears on Apple Watch.
-**Make your pass instantly identifiable.** Using color — especially a color that’s linked to your brand — can help people recognize your pass as soon as they see it. Make sure that pass content remains comfortably readable against the background you choose.
-**Keep the front of a pass uncluttered so people can get important information at a glance.** Show essential information — like an event date or account balance — in the top-right area of the pass so people can still see it when the pass is collapsed in Wallet. Use the rest of the pass front to provide important information; consider putting extra information on the back of a pass (iOS) or in a details screen (watchOS).
-**Prefer an NFC-compatible pass.** People appreciate having a contactless pass, because it means that they can just hold their device near a reader. If you support both NFC and a barcode or QR code, the code appears on the back of the pass (in iOS) or in the details screen (in watchOS). In iOS, you can display a QR code or barcode on the front of your pass if necessary for your design.
-**Reduce image sizes for optimal performance.** People can receive passes via email or a webpage. To make downloads as fast as possible, use the smallest image files that still look great.
-**Provide an icon that represents your company or brand.** The system includes your icon when displaying information about a relevant pass on the Lock Screen. Mail also uses the icon to represent your pass in an email message. You can use your app icon or design an icon for this purpose.
-
-### Pass styles
-The system defines several pass *styles* for categories like boarding pass, coupon, store card, and event ticket. Pass styles specify the appearance and layout of content in your pass, and the information that the system needs to suggest your pass when it’s relevant (for guidance, see [Passes](wallet.md#Passes)).
-Although each pass style is different, all styles display information using the basic layout areas shown below:
-![A diagram that shows a four-row arrangement of layout areas in a pass. The top row contains a logo, logo text, and an essential area. The second row contains a primary area. The third row contains an area for secondary and auxiliary fields, and the bottom row contains an area for codes and an optional footer.](https://docs-assets.developer.apple.com/published/cb0d7746bd828d216813725d918a4362/pass-layout-diagram~dark%402x.png)
-All passes display a logo image, and some can display additional images in other areas depending on the pass style. To display information in the layout areas, use the following [PassFields](../WalletPasses/PassFields.md).
-| Field | Layout area | Use to provide… |
-| --- | --- | --- |
-| Header | Essential | Critical information that needs to remain visible when the pass is collapsed in Wallet. |
-| Primary | Primary | Important information that helps people use the pass. |
-| Secondary and auxiliary | Secondary and auxiliary | Useful information that people might not need every time they use the pass. |
-| Back | Not shown in diagram | Supplemental details that don’t need to be on the pass front. |
-
-In general, a pass can have up to three header fields, one primary field, up to four secondary fields, and up to four auxiliary fields. Depending on the amount of content you display in each field, some fields may not be visible.
-**Display text only in pass fields.** Don’t embed text in images — it’s not accessible and not all images are displayed on all devices — and avoid using custom fonts that might make text hard to read.
-
-#### Boarding passes
-Use the boarding pass style for train tickets, airline boarding passes, and other types of transit passes. Typically, each pass corresponds to a single trip with a specific starting and ending point.
-A boarding pass can display logo and footer images, and it can have up to two primary fields and up to five auxiliary fields.
-
-#### Coupons
-Use the coupon style for coupons, special offers, and other discounts. A coupon can display logo and strip images, and it can have up to four secondary and auxiliary fields, all displayed on one row.
-
-#### Store cards
-Use the store card style for store loyalty cards, discount cards, points cards, and gift cards. If an account related to a store card carries a balance, the pass usually shows the current balance.
-A store card can display logo and strip images, and it can have up to four secondary and auxiliary fields, all displayed on one row.
-
-#### Event tickets
-Use the event ticket pass style to give people entry into events like concerts, movies, plays, and sporting events. Typically, each pass corresponds to a specific event, but you can also use a single pass for several events, as with a season ticket.
-An event ticket can display logo, strip, background, or thumbnail images. However, if you supply a strip image, don’t include a background or thumbnail image. You can also include an extra row of up to four auxiliary fields. For developer guidance, see the `row` property of [PassFields.AuxiliaryFields](../WalletPasses/PassFields/AuxiliaryFields-data.dictionary.md).
-In iOS 18 and later, the system defines an additional style for contactless event tickets called *poster event ticket*. Poster event tickets offer a rich visual experience that prominently features the event artwork, provides easy access to additional event information, and integrates with system apps like Weather and Maps.
-
-> **Important:** Poster event tickets aren’t compatible with tickets that require a QR code or barcode for entry.
-A poster event ticket displays an event logo and background image, and can optionally display a separate ticket issuer or event company logo. The system uses metadata about your event to structure ticket information and suggest relevant actions. You must provide a required set of metadata in [SemanticTags](../WalletPasses/SemanticTags.md) for all poster event tickets, and an additional set of required metadata depending on the event type — general, sports, or live performance. You can also add optional metadata to further enhance your ticket. For example, you can specify an admission level for a live performance, like General Admission, which the system displays with the seating information. For developer guidance, see [Supporting semantic tags in Wallet passes](../WalletPasses/supporting-semantic-tags-in-wallet-passes.md).
-The system uses the metadata that you provide to generate a Maps shortcut to the venue directions and an event guide below the ticket when in the Wallet app. The event guide provides convenient access to information like the weather forecast and venue map, and to quick actions like checking the baggage policy and ordering food. You can display a minimum of one and up to four quick action buttons in the event guide; if you include more than four, the system collapses them into a menu. You can optionally include additional ticket information, such as pre-paid parking details, which the system also displays below the ticket.
-![An illustration of a poster event ticket in the Wallet app with additional ticket information, Maps shortcut, and event guide tiles displayed below the ticket.](https://docs-assets.developer.apple.com/published/029cbed0597ce786988cff2e6ea57cd6/poster-event-in-wallet-app~dark%402x.png)
-![An illustration of the event guide with three quick actions, a weather forecast, and a venue map.](https://docs-assets.developer.apple.com/published/94823fb4cf0252c61d0d534ae129e7b8/poster-event-event-guide~dark%402x.png)
-**Create a vibrant and engaging background.** As the centerpiece of a poster event ticket, your background image serves as a visual representation of the event. Limit text in your artwork, and create an image that’s easily identifiable to help people quickly find their ticket among other passes in their Wallet app. If your background image is a solid color or includes a solid color in the footer, consider setting a footer background color to better blend the background image with the footer.
-**Position your background image in the safe area.** The system displays ticket information in the header and footer, which overlap the background image. To ensure that the content in your artwork isn’t covered, position it in the safe area. For developer guidance, see `footerBackgroundColor` in [Pass](../WalletPasses/Pass.md).
-**Ensure sufficient contrast so that ticket information is easy to read.** By default, the system applies a gradient in the header and a blur effect in the footer of your poster event ticket to provide sufficient contrast between the background image and ticket information. Consider adjusting the gradient and blur effect if you need more contrast. The system can also automatically determine the best text color for ticket information and labels based on your background image. If you choose to customize text colors, make sure to select a color that provides sufficient contrast, especially if you set a footer background color or a seat section color to support wayfinding. For developer guidance, see `useAutomaticColors` in [Pass](../WalletPasses/Pass.md) and `seatSectionColor` in [SemanticTagType.Seat](../WalletPasses/SemanticTagType/Seat-data.dictionary.md).
-![An illustration of a poster event ticket with good contrast between the background image and ticket information.](https://docs-assets.developer.apple.com/published/eb1dcdb8d7e2e2867927fe038db19b9a/poster-event-ticket-good-contrast%402x.png)
+Wallet uses a consistent visual style to build familiarity and trust. Instead of merely replicating the appearance of its physical counterpart, design a clean, simple pass that feels at home in Wallet.
+![A screenshot of a museum membership pass open in Wallet on iPhone, showing a full-art background with a dinosaur skull illustration, a QR code, and member details. Below the pass are two featured actions: View Membership Benefits and Go to Location.](https://docs-assets.developer.apple.com/published/3dbde17f0d57e64eadf0fe0a0128ee8e/wallet-passes-wallet-app~dark%402x.png)
+Use Pass Designer to design and preview passes for Apple Wallet. Starting from Apple-provided templates or a blank pass, you can create boarding passes, coupons, event tickets, store cards, generic passes, and poster generic passes. For more information, see [Creating a pass with Pass Designer](../WalletPasses/creating-a-pass-with-pass-designer.md).
+![A screenshot of Pass Designer on Mac showing a preview of a museum poster generic pass with an illustration featuring a dinosaur skull, butterflies, and marine creatures, along with member details and a QR code.](https://docs-assets.developer.apple.com/published/79bbd59850b42bee6f496e9483663eda/wallet-pass-pass-designer-overview~dark%402x.png)
+**Design a pass that looks great and works well on all devices.** Passes can look different depending on the device. For example, a pass on Apple Watch shows less information and fewer images than on iPhone. Don’t put essential information in elements that might be unavailable on certain devices, and avoid adding padding to images; for example, watchOS crops white space from some images. For guidance, see [watchOS](wallet.md#watchOS).
+**Keep the pass front uncluttered.** Show essential information, like an event date or account balance, in the header so people can see it when the pass is collapsed in Wallet. Use the rest of the pass front for information people need quick access to. Place details people don’t need often on the additional pass information sheet.
+**Make your pass instantly identifiable.** Use brand colors and visual elements like images, icons, and full-art backgrounds to help people recognize your pass at a glance.
+**Ensure sufficient contrast between background and text colors.** Pick label colors that keep text legible against both solid backgrounds and background images.
+![A gym membership pass with a solid purple background and white label text that's clearly legible against the background.](https://docs-assets.developer.apple.com/published/1ea332e76886bcf95c9514008b8c9e4b/wallet-passes-text-sufficient-contrast%402x.png)
 ![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
-![An illustration of a poster event ticket with poor contrast between the background image and ticket information.](https://docs-assets.developer.apple.com/published/ad1b01e421bb814d97f375fc1ec7f9db/poster-event-ticket-poor-contrast%402x.png)
+![A gym membership pass with a solid purple background and label text that's difficult to distinguish from the background.](https://docs-assets.developer.apple.com/published/9b0f80a6e76155b529ef1351dbf58977/wallet-passes-text-insufficient-contrast%402x.png)
 ![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
-**Consider using the additional information tile for extra event details.** When you have more information about the event that people may find helpful, the additional information tile below the ticket is a great place to put it. If you have additional information that’s essential to display on the front of the ticket, keep the text short to avoid cluttering the footer. For developer guidance, see `additionalTicketAttributes` in [SemanticTags](../WalletPasses/SemanticTags.md) and [PassFields.AdditionalInfoFields](../WalletPasses/PassFields/AdditionalInfoFields-data.dictionary.md).
-**Continue to support event tickets for earlier versions of iOS.** People expect contactless event tickets to work, regardless of their device’s software version. Continue to provide primary, secondary, and auxiliary information in [PassFields](../WalletPasses/PassFields.md) and image assets for your event ticket. This enables the system to automatically generate the appropriate ticket style for a person’s device; otherwise, your ticket appears empty on devices running earlier versions of iOS.
+![A concert ticket pass with an image background and white label text that's clearly legible against the background.](https://docs-assets.developer.apple.com/published/6415f7fb142ae3c942e446a23d66b0b3/wallet-passes-background-sufficient-contrast%402x.png)
+![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
+![A concert ticket pass with an image background and label text that's difficult to distinguish from the background.](https://docs-assets.developer.apple.com/published/bd8077b53db433cfb9c95cd0d42327ab/wallet-passes-background-insufficient-contrast%402x.png)
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+**Use language that works on any device.** Passes can appear on multiple devices, so use text that makes sense everywhere. For example, “Slide to view” is meaningful on iPhone but doesn’t apply on Apple Watch.
 
-#### Generic passes
-Use the generic style for a type of pass that doesn’t fit into the other categories, such as a gym membership card or coat-check claim ticket. A generic pass can display logo and thumbnail images, and it can have up to four secondary and auxiliary fields, all displayed on one row.
+## Pass styles
+You can choose from a variety of pass styles. Each one defines the appearance and layout of your pass.
 
-### Passes for Apple Watch
-On Apple Watch, Wallet displays passes in a scrolling carousel of cards. People can add your pass to their Apple Watch even if you don’t create a watch-specific app, so it’s important to understand how your pass can look on the device.
-![A screenshot of a selected flight pass in a list of passes on Apple Watch. The pass includes information about a flight from SFO to LGA. The next pass in the list is a gym membership card with a barcode.](https://docs-assets.developer.apple.com/published/9b54ebf2a350a1e748a38c0b2cc3b74a/watch-card-and-details%402x.png)
-People can tap a pass on their Apple Watch to reveal a details screen that displays additional information in a scroll view. In some cases, people can also tap a specific transaction to get more information.
-![A screenshot of a flight pass on Apple Watch. The pass includes information about a flight from SFO to LGA, and appears above a QR code.](https://docs-assets.developer.apple.com/published/0f74b7b757684a79981367adf14d6adb/watch-pass-design-intro%402x.png)
-Each pass style specifies the fields and images that can appear in the basic layout areas shown below:
-![A diagram that shows the basic layout of a pass on Apple Watch. A top row contains a logo image and an essential field area. A second row contains a primary field area. A third row contains a secondary and auxiliary fields area.](https://docs-assets.developer.apple.com/published/717668c6f264c021ef97013edbba4f51/watch-layout-diagram~dark%402x.png)
-If some information doesn’t fit within the layout areas, the system displays it in the scrolling details screen.
+### Boarding passes
+The boarding pass style is for travel tickets: airline boarding passes, train tickets, bus tickets, boat tickets, and generic transit passes. Typically, each pass corresponds to a single trip with a specific starting and ending point. Use semantic tags for airline boarding passes; use pass fields for all other transit types. For developer guidance, see [Creating an airline boarding pass using semantic tags](../WalletPasses/creating-an-airline-boarding-pass-using-semantic-tags.md).
+![An airline boarding pass on a blue background for a flight from San Francisco (SFO) to Tokyo (NRT), displaying passenger details, boarding information, and a QR code.](https://docs-assets.developer.apple.com/published/0c4e6d08916a6742a5966d4407222316/wallet-passes-types-airline-boarding%402x.png)
 
-> **Important:** In every style, watchOS crops the strip image to fit the aspect ratio of the card interface and may crop white space from other images.
+### Coupons
+The coupon style is for coupons, special offers, and other discounts. For developer guidance, see [Creating a coupon pass](../WalletPasses/creating-a-coupon-pass.md).
+![A food truck coupon pass with a strip image of a food truck across the upper portion and a solid blue background below, offering 20% off a dozen donuts, with member details and a barcode at the bottom.](https://docs-assets.developer.apple.com/published/a6e91e486376e34259a262cab1863ab1/wallet-passes-types-coupon%402x.png)
+
+### Event tickets
+The event ticket pass style is for entry into events like sporting events, concerts, movies, and plays. Typically each pass corresponds to a specific event, but you can also use a single pass for multiple events, as with a season ticket. An event ticket supports a full-art background to evoke the look and feel of your event. For developer guidance, see [Creating a poster event pass using semantic tags](../WalletPasses/creating-an-event-pass-using-semantic-tags.md).
+![A soccer event poster ticket with an illustration of a soccer player kicking a ball in a stadium, displaying match details, seat information, and a barcode.](https://docs-assets.developer.apple.com/published/e8fa49aaf4a7e6b3e29c0ed080799ec1/wallet-passes-types-poster-event-ticket%402x.png)
+Non-poster style event tickets use standard pass fields and can use a background image and thumbnail.
+![A soccer event ticket with a blurred full-image background of a soccer player in motion, displaying event details, seat information, and a barcode at the bottom.](https://docs-assets.developer.apple.com/published/6bf21fa9739d07f58dcf311d48303036/wallet-passes-types-event-ticket-background%402x.png)
+![A soccer event ticket on a solid dark blue background, displaying event details, seat information, a thumbnail, and a barcode at the bottom.](https://docs-assets.developer.apple.com/published/ec1d8c8c37a4b262cc1deab5e614581b/wallet-passes-types-event-ticket%402x.png)
+
+### Store cards
+The store card style is for store loyalty cards, discount cards, points cards, and gift cards. If an account carries a balance, the pass usually displays it. For developer guidance, see [Creating a store card pass](../WalletPasses/creating-a-store-card-pass.md).
+![A coffee shop store card with a strip illustration of a coffee shop scene and a solid dark red background, displaying member name, points balance, reward value, and a QR code.](https://docs-assets.developer.apple.com/published/8c9f0d6bc420749481a3cf4d4091a48a/wallet-passes-types-store-card%402x.png)
+
+### Poster generic passes
+The poster generic pass style features a full background image and a pass field layout distinct from other pass styles, offering a flexible option that supports a wide range of use cases. It’s not tied to a specific category, so you can use it whenever another pass style doesn’t fit.
+![A museum poster generic pass with a full-art illustration featuring a dinosaur skull, butterflies, and marine creatures, displaying member details and a QR code.](https://docs-assets.developer.apple.com/published/b36adaf362945cdf359aeb21e7e01ead/wallet-passes-types-generic-poster-pass%402x.png)
+
+### Generic passes
+The generic style is for passes that don’t fit the other categories, such as a gym membership card or coat-check claim ticket. For developer guidance, see [Creating a generic pass](../WalletPasses/creating-a-generic-pass.md).
+![A gym membership generic pass on a solid purple background with a dumbbell thumbnail, member details, and a barcode at the bottom.](https://docs-assets.developer.apple.com/published/1ea332e76886bcf95c9514008b8c9e4b/wallet-passes-types-generic-pass%402x.png)
+
+## Pass images
+Passes support a variety of image types. Create pass images in PNG format in @2x and @3x format.
+**Reserve pass images for visual content.** Embedded text isn’t accessible and may not be visible if images don’t display on all devices. For text information, use text fields and semantic tags instead. Use Pass Designer or corresponding APIs to add barcodes rather than embedding them in pass images.
+**Keep image file sizes small.** People can receive passes via email or a webpage. To make downloads as fast as possible, use the smallest image files that still look great.
+**Provide a pass icon.** The system uses it to represent your pass on the Lock Screen, in Mail, and on passes in Wallet. You can use your app icon or design a separate one.
+
+### Logo
+The logo appears in the top leading corner of passes with pass fields. It’s typically a horizontal text logo representing your brand, optionally combined with a graphic element.
+![The top portion of a food truck coupon pass with a callout identifying the logo position in the top-left corner of the pass.](https://docs-assets.developer.apple.com/published/84f4b3c76352c6892cdf1790ae1a28a6/wallet-passes-images-logo~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Non-semantic airline boarding passes, non-airline boarding pass styles, coupons, non-poster event tickets, generic passes, store cards |
+| **Filename** | logo.png |
+| **Minimum width** | 50 pt |
+| **Maximum width** | 160 pt |
+| **Height** | 50 pt |
+
+**Avoid inner drop shadows on logo artwork.** They can reduce legibility when the logo renders on the pass.
+![A brown paper bag icon with a flat appearance and no inner drop shadow.](https://docs-assets.developer.apple.com/published/5bc53b33abd72ad21cac57c52a4e848c/wallet-passes-images-logo-no-shadow%402x.png)
+![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
+![A brown paper bag icon with an inner drop shadow applied, creating a recessed effect inside the icon shape.](https://docs-assets.developer.apple.com/published/3ecc13739f3f900734971cf1527d11fe/wallet-passes-images-logo-with-shadow-incorrect%402x.png)
+![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
+
+### Primary logo
+Like the logo, the primary logo appears in the top-leading corner of your pass, but is used exclusively for semantic passes.
+![The top portion of an airline boarding pass with callouts identifying a square primary logo in the top-left corner and the logo text beside it.](https://docs-assets.developer.apple.com/published/f66040775fcaf390d9277bb6e1735150/wallet-passes-images-primary-logo-square~dark%402x.png)
+![The top portion of an airline boarding pass with a callout identifying a rectangular text-based primary logo in the top-left corner.](https://docs-assets.developer.apple.com/published/11bc5f9202e4f4de1e19a170fcfdf58c/wallet-passes-images-primary-logo-wide~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Airline boarding passes, poster event tickets, and poster generic passes |
+| **Filename** | primaryLogo.png |
+| **Minimum width** | 30 pt |
+| **Maximum width** | 126 pt |
+| **Height** | 30 pt |
+
+
+### Secondary logo
+The secondary logo displays an additional logo for a ticket issuer or event organizer. It appears in the bottom-trailing corner of a poster event ticket.
+![The bottom portion of a soccer event poster ticket with a callout identifying the secondary logo in the bottom-trailing corner.](https://docs-assets.developer.apple.com/published/4838b2c7111140a26343252d8008437a/wallet-passes-images-secondary-logo~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Poster event ticket |
+| **Filename** | secondaryLogo.png |
+| **Minimum width** | 12 pt |
+| **Maximum width** | 135 pt |
+| **Height** | 12 pt |
+
+
+### Icon
+Icons are square and represent your company or brand when your pass appears on the Lock Screen, in Mail, and on passes in Wallet. The system automatically applies rounded corners, so you don’t need to round them.
+![A screenshot of the bottom portion of the Lock Screen on iPhone showing an airline boarding pass banner that reads 'Get ready for flight AP 1042 to Tokyo!', with the pass icon appearing in the leading edge of the banner.](https://docs-assets.developer.apple.com/published/d8a1fffbcdf0f911518fa4fb64699576/wallet-passes-images-icon-notification~dark%402x.png)
+![The bottom portion of an airline boarding pass open in Wallet on iPhone, with the pass icon visible in the bottom-leading corner of the pass, and two featured actions below: Go to Terminal I and Track Luggage.](https://docs-assets.developer.apple.com/published/845fcef8d36d807c44258692b62753be/wallet-passes-images-icon-wallet~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | All |
+| **Filename** | icon.png |
+| **Width** | 38 pt |
+| **Height** | 38 pt |
+
+
+### Strip image
+Strip images appear on coupons and store cards to reinforce your brand or offer. Because text can appear over strip images, ensure sufficient contrast between your text and the image. Keep areas behind text uncluttered, and place important visual elements toward the bottom or trailing edge. Avoid embedding text in the strip image.
+![The upper portion of a food truck coupon pass with callouts identifying the primary field and the strip image, outlined with dashed borders.](https://docs-assets.developer.apple.com/published/59068cbef1eeea077055c4e81cb7b7c7/wallet-passes-images-strip-image~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Coupon, store card |
+| **Filename** | strip.png |
+| **Width** | 375 pt |
+| **Height** | 144 pt |
+
+
+### Thumbnail
+Thumbnails are small images, such as a movie poster, that appear on event tickets and generic passes. Thumbnails are square — use rounded corners on your artwork and export as a transparent PNG.
+![The top portion of a gym membership pass on a solid purple background with a callout identifying the thumbnail in the upper-trailing area of the pass.](https://docs-assets.developer.apple.com/published/13a90993f985cfdc92fd1a95001ea026/wallet-passes-images-thumbnail~dark%402x.png)
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Event ticket, generic pass |
+| **Filename** | thumbnail.png |
+| **Minimum width** | 60 pt |
+| **Maximum width** | 90 pt |
+| **Height** | 90 pt |
+
+
+### Background
+The background image is the visual centerpiece of a pass.
+![A soccer event ticket with a blurred full-image background of a soccer player in motion, displaying event details, seat information, and a barcode at the bottom.](https://docs-assets.developer.apple.com/published/6bf21fa9739d07f58dcf311d48303036/wallet-passes-types-event-ticket-background%402x.png)
+![A food truck coupon pass with a background illustration of a food truck in an outdoor setting, a barcode overlaid on the illustration, and coupon details at the top and bottom.](https://docs-assets.developer.apple.com/published/7a7b68c3d3b8b75c41138708a1e2a7f5/wallet-passes-images-background-unblurred%402x.png)
+**Non-poster pass backgrounds**
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Event tickets |
+| **Filename** | background.png |
+| **Width** | 343 pt |
+| **Height** | 503 pt |
+
+**Poster pass backgrounds**
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Poster event tickets, poster generic passes |
+| **Filename** | artwork.png |
+| **Width** | 358 pt |
+| **Height** | 448 pt |
+
+Position content within the safe area — on poster generic passes and poster event tickets, a material strip covers the bottom edge of the image. If your pass includes a barcode, account for it in your background design. You can preview your pass layout in Pass Designer to verify placement. For developer guidance, see `footerBackgroundColor` in [Pass](../WalletPasses/Pass.md).
+![A museum poster generic pass with a background illustration featuring a dinosaur skull, butterflies, and marine creatures, with a QR code and member details at the bottom.](https://docs-assets.developer.apple.com/published/b36adaf362945cdf359aeb21e7e01ead/wallet-passes-images-background-layout-qr-code%402x.png)
+![A museum poster generic pass with a background illustration featuring a dinosaur skull, butterflies, and marine creatures. Blue overlays show the safe areas for pass content, including a header area at the top and QR code and footer areas below.](https://docs-assets.developer.apple.com/published/5dab4daa5f28b378c82d0630aa6d9071/wallet-passes-images-background-layout-qr-code-safe-areas%402x.png)
+![An art museum poster generic pass with a full-art background illustration of a waterfall scene, with a barcode and member details at the bottom.](https://docs-assets.developer.apple.com/published/8492f0d3a48b91fe4ee188dd831aeb0c/wallet-passes-images-background-layout-barcode%402x.png)
+![A background artwork image of a waterfall scene. Blue overlays show the safe areas for pass content, including a header area at the top and barcode and footer areas below.](https://docs-assets.developer.apple.com/published/693aa10fac97cee7b647e6b85df925b2/wallet-passes-images-background-layout-barcode-safe-areas%402x.png)
+
+### Footer
+The footer is only available for airline boarding passes.
+|  |  |
+| --- | --- |
+| **Supported pass styles** | Airline boarding passes |
+| **Filename** | footer.png |
+| **Width** | 268 pt |
+| **Height** | 15 pt |
+
 
 ## Order tracking
 When you support order tracking, Wallet can display information about an order a customer placed through your app or website, updating the information whenever the status of the order changes. In iOS 17 and later, you can help people start tracking their order right from your app or website and offer additional ways to add their order to Wallet.
@@ -115,7 +230,7 @@ The [Wallet Orders](../WalletOrders.md) schema defines the properties you use to
 **Provide fulfillment information as soon as it’s available, and keep the status up to date.** When you supply fulfillment data or you change the status of an order, the system updates the order information and can automatically send a notification to customers. The system uses the fulfillment status you report to update the order’s current status to a value like Order Placed, Processing, Ready for Pickup, Picked Up, Out for Delivery, Delivered, or — if something goes wrong — Issue or Canceled. For guidance on describing a status, see [Displaying order and fulfillment details](wallet.md#Displaying-order-and-fulfillment-details).
 **Supply a high-resolution logo image that uses a nontransparent background.** The system displays your logo image in the dashboard and detail view, so you want to make sure that people can instantly recognize it at various sizes. Use the PNG or JPEG format to create a logo image that measures 300x300 pixels. To help ensure that your logo image renders correctly, be sure to use a nontransparent background. For developer guidance, see [logo](https://developer.apple.com/documentation/walletorders/merchant).
 **Supply distinct, high-resolution product images that use nontransparent backgrounds.** The system displays a product’s image — along with descriptive information you supply — in the detail views, order dashboard, and notifications for an order or a fulfillment. When creating a product image, use a straightforward depiction and a solid, nontransparent background. Showing a product in a “lifestyle” context or against a busy background can make the item hard to distinguish at small sizes. For each product, use the PNG or JPEG format to create an image that measures 300x300 pixels.
-![An illustration of donut, representing a product image. Horizontal and vertical lines extend along the bottom and right side of the image, and include labels that denote the illustration is 300 pixels wide by 300 pixels high.](https://docs-assets.developer.apple.com/published/60f1baa1a1e6d5c9532421a66ee7a4da/wallet-ot-product-images~dark%402x.png)
+![An illustration of a donut, representing a product image. Horizontal and vertical lines extend along the bottom and right side of the image, and include labels that denote the illustration is 300 pixels wide by 300 pixels high.](https://docs-assets.developer.apple.com/published/60f1baa1a1e6d5c9532421a66ee7a4da/wallet-ot-product-images~dark%402x.png)
 **In general, keep text brief.** People appreciate being able to read text at a glance, and the system can truncate text that’s too long.
 **Use clear, approachable language, and localize the text you provide.** You want to make sure that all your customers can read the information in an order. Also, make sure the price you show matches the final price the customer confirmed.
 
@@ -141,8 +256,8 @@ An order gives people ways to contact the merchant and displays details about th
 On iPhone running iOS 16 and later, people can store an ID card in Wallet, and later allow an app or App Clip to access information on the card to verify their identity without leaving their current context. For example, a person might need to confirm their identity when they apply for a credit card within their banking app. To learn how to support in-person mobile ID verification, see [ID Verifier](id-verifier.md).
 
 > **Note:** Apple doesn’t create or see the ID documents that people add to Wallet, and when people agree to share identifying information with your app, you receive only encrypted data that isn’t readable on the device. For developer guidance, see [Requesting identity data from a Wallet pass](../PassKit/requesting-identity-data-from-a-wallet-pass.md).
-To help you offer a consistent experience that people can trust, Apple provides a Verify with Wallet button you can use in your app when you need to ask for identify verification. The button reveals a sheet that describes your request and lets people agree to share their information or cancel.
-**Present a Wallet verification option only when the device supports it.** If the current device can’t return the identify information you request, don’t display a Verify with Apple Wallet button. Be prepared to present a fallback view that offers a different verification method if Verify with Apple Wallet isn’t available; for developer guidance, see [VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md).
+To help you offer a consistent experience that people can trust, Apple provides a Verify with Wallet button you can use in your app when you need to ask for identity verification. The button reveals a sheet that describes your request and lets people agree to share their information or cancel.
+**Present a Wallet verification option only when the device supports it.** If the current device can’t return the identity information you request, don’t display a Verify with Apple Wallet button. Be prepared to present a fallback view that offers a different verification method if Verify with Apple Wallet isn’t available; for developer guidance, see [VerifyIdentityWithWalletButton](../PassKit/VerifyIdentityWithWalletButton.md).
 **Ask for identity information only at the precise moment you need it.** People can be suspicious of a request for personal information if it doesn’t seem to be related to their current action. If your app needs identity verification, for example, wait to ask for this information until people are completing the process or transaction that requires it; don’t request verification before people are ready to start the process or when they’re simply creating an account.
 **Clearly and succinctly describe the reason you need the information you’re requesting.** You must write text that explains why people need to share identity information with your app (this text is called a *purpose string* or *usage description string*). The system displays your purpose string in the verification sheet so people can make an informed decision. Here are a couple of examples:
 | To verify… | To support… | Example purpose string |
@@ -165,25 +280,18 @@ All button labels are also available in a multiline variant that the system auto
 The verification button always uses white letters on a black background. You can choose the style that includes a light outline if you need to ensure that the button contrasts well with a dark background in your app. In addition, you can use the [cornerRadius](../PassKit/PKIdentityButton/cornerRadius.md) property to adjust the verification button’s corners to match other related buttons in your interface. For developer guidance, see [PKIdentityButton.Style.blackOutline](../PassKit/PKIdentityButton/Style/blackOutline.md).
 
 ## Platform considerations
-*No additional considerations for iOS, iPadOS, macOS, visionOS, or watchOS. Not supported in tvOS.*
+*No additional considerations for iOS, iPadOS, macOS, or visionOS. Not supported in tvOS.*
 
-## Specifications
+### watchOS
+On Apple Watch, Wallet displays passes in a scrolling carousel of cards. People can add your pass to their Apple Watch even if you don’t create a watch-specific app, so it’s important to understand how your pass can look on the device.
+![A screenshot of a selected flight pass in a list of passes on Apple Watch. The pass includes information about a flight from SFO to LGA. The next pass in the list is a gym membership card with a barcode.](https://docs-assets.developer.apple.com/published/9b54ebf2a350a1e748a38c0b2cc3b74a/watch-card-and-details%402x.png)
+People can tap a pass on their Apple Watch to reveal a details screen that displays additional information in a scroll view. In some cases, people can also tap a specific transaction to get more information.
+![A screenshot of a flight pass on Apple Watch. The pass includes information about a flight from SFO to LGA, and appears above a QR code.](https://docs-assets.developer.apple.com/published/0f74b7b757684a79981367adf14d6adb/watch-pass-design-intro%402x.png)
+Each pass style specifies the fields and images that can appear in the basic layout areas shown below:
+![A diagram that shows the basic layout of a pass on Apple Watch. A top row contains a logo image and an essential field area. A second row contains a primary field area. A third row contains a secondary and auxiliary fields area.](https://docs-assets.developer.apple.com/published/717668c6f264c021ef97013edbba4f51/watch-layout-diagram~dark%402x.png)
+If some information doesn’t fit within the layout areas, the system displays it in the scrolling details screen.
 
-### Pass image dimensions
-As you design images for your wallet passes, create PNG files and use the following values for guidance.
-| Image | Supported pass styles | Filename | Dimensions (pt) |
-| --- | --- | --- | --- |
-| Logo | Boarding pass, coupon, store card, event ticket, generic pass | `logo.png` | Any, up to 160x50 |
-| Primary logo | Poster event ticket | `primaryLogo.png` | Any, up to 126x30 |
-| Secondary logo | Poster event ticket | `secondaryLogo.png` | Any, up to 135x12 |
-| Icon | All | `icon.png` | 38x38 |
-| Background | Event ticket, poster event ticket | `background.png` (event ticket), `artwork.png` (poster event ticket) | 180x220 (event ticket), 358x448 (poster event ticket) |
-| Strip | Coupon, store card, event ticket | `strip.png` | 375x144 (coupon, store card), 375x98 (event ticket) |
-| Footer | Boarding pass | `footer.png` | Any, up to 286x15 |
-| Thumbnail | Event ticket, generic pass | `thumbnail.png` | 90x90 |
-
-
-> **Note:** Dimensions for the logo, primary logo, and secondary logo images are the maximum — not the required — values. For example, if you create a primary logo image that measures 30x30 points, you don’t need to add unnecessary padding so that it measures the maximum 126x30 points.
+> **Important:** In every style, watchOS crops the strip image to fit the aspect ratio of the card interface and may crop white space from other images.
 
 ## Resources
 
@@ -199,13 +307,12 @@ As you design images for your wallet passes, create PNG files and use the follow
 [Wallet Orders](../WalletOrders.md)
 
 #### Videos
-- [What’s new in Wallet and Apple Pay](https://developer.apple.com/videos/play/wwdc2024/10108) - Take passes and payments to the next level with new enhancements to Wallet and Apple Pay. Make your event tickets shine with rich pass designs in Wallet, and bring great Apple Pay experiences to even more people with third-party browser support. We’ll also look at how to disburse funds with Apple Pay on the Web and highlight new API changes that help you integrate Apple Pay into even more purchasing flows.
-- [What’s new in Wallet and Apple Pay](https://developer.apple.com/videos/play/wwdc2023/10114) - Discover the latest updates to Wallet and Apple Pay. Learn how to take advantage of preauthorized payments, funds transfer, and Apple Pay Later merchandising to create great Apple Pay experiences in your app or for the web. Explore improved support for Mail, Messages, Safari, and third-party apps in Wallet Order Tracking, and find out how you can add more information to an order’s transaction or receipt details. And we’ll introduce you to Tap to Present ID on iPhone (or ID Verifier), a new way to accept IDs in Wallet using iPhone — no additional hardware needed.
-- [What’s new in Wallet and Apple Pay](https://developer.apple.com/videos/play/wwdc2022/10041) - Discover the latest updates to Wallet & Apple Pay. We'll show you how to support Orders in Wallet for your apps and websites and securely validate someone's age and identity with the Identity Verification API. We'll also explore PassKit support for SwiftUI, and discuss how you how you can improve your Apple Pay experience with Automatic Payments.
+- [What’s new in Wallet](https://developer.apple.com/videos/play/wwdc2026/209) - Explore the newest design updates and developer tools for Apple Wallet passes. Refresh your passes with beautiful new styles for rich, vibrant designs. Discover new barcode formats and a flexible pass actions API. Meet Pass Designer and Pass Builder, powerful tools that simplify designing, personalizing, and distributing your passes at scale.
 
 ## Change log
 | Date | Changes |
 | --- | --- |
+| June 8, 2026 | Updated to reflect guidance for iOS 27 and the Pass Designer app. |
 | January 17, 2025 | Added specifications for pass image dimensions. |
 | December 18, 2024 | Added guidance for the poster event ticket style. |
 | September 12, 2023 | Added guidance for helping people add orders to Wallet. |

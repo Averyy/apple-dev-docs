@@ -15,12 +15,12 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](unicode/canonicalcombiningclass/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](unicode/canonicalcombiningclass/_(_:_:)-5jtn9.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](unicode/canonicalcombiningclass/_(_:_:)-2wioh.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](unicode/canonicalcombiningclass/_=(_:_:)-4pgnv.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](unicode/canonicalcombiningclass/_=(_:_:)-q66b.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](unicode/canonicalcombiningclass/_=(_:_:)-5hq43.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](unicode/canonicalcombiningclass/_=(_:_:)-7khwd.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 
 ---

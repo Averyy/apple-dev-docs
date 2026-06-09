@@ -1,4 +1,4 @@
-# Revoke a Certificate
+# Revoke a certificate
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

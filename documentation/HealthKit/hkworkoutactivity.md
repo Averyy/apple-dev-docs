@@ -25,7 +25,7 @@ class HKWorkoutActivity
 
 #### Overview
 
-Workout activity objects partition a workout into a set of separate activities. For example, you can use workout activities to record the swim, bike, and running portions of a multisport event, like a triathlon, or to represent the active and rest periods during interval training. All [`HKWorkout`](hkworkout.md) instance have at least one, associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly set workout activities, HealthKit assigns a workout activity that matches the [`HKWorkout`](hkworkout.md) object’s activity type. For more information, see [`Dividing a HealthKit workout into activities`](dividing-a-healthkit-workout-into-activities.md).
+Workout activity objects partition a workout into a set of separate activities. For example, you can use workout activities to record the swim, bike, and running portions of a multisport event, like a triathlon, or to represent the active and rest periods during interval training. All [`HKWorkout`](hkworkout.md) instances have at least one associated [`HKWorkoutActivity`](hkworkoutactivity.md). If you don’t explicitly set workout activities, HealthKit assigns a workout activity that matches the [`HKWorkout`](hkworkout.md) object’s activity type. For more information, see [`Dividing a HealthKit workout into activities`](dividing-a-healthkit-workout-into-activities.md).
 
 ## Topics
 
@@ -51,6 +51,9 @@ Workout activity objects partition a workout into a set of separate activities. 
   The configuration information for this part of the workout.
 - [var workoutEvents: [HKWorkoutEvent]](hkworkoutactivity/workoutevents.md)
   An array of events associated with the containing workout and occurring during the activity’s duration.
+### Accessing zone data
+- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkoutactivity/zonegroupsbytype.md)
+  A property that contains a dictionary that maps quantity types to their zone groups for this activity.
 ### Specifying predicate key paths
 - [let HKPredicateKeyPathWorkoutActivity: String](hkpredicatekeypathworkoutactivity.md)
   The key path for accessing a specific workout activity.
@@ -73,6 +76,8 @@ Workout activity objects partition a workout into a set of separate activities. 
 ### Initializers
 - [init?(coder: NSCoder)](hkworkoutactivity/init(coder:).md)
 - [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](hkworkoutactivity/init(workoutconfiguration:startdate:enddate:metadata:).md)
+### Instance Methods
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutactivity/zonegroup(for:).md)
 
 ## Relationships
 

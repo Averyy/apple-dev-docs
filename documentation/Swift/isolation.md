@@ -38,7 +38,7 @@ If the type annotation provided for `#isolation` is not `(any Actor)?`, the type
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
+  A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

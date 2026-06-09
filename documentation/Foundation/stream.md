@@ -112,6 +112,7 @@ Implement [`streamStatus`](stream/streamstatus.md) to return the current status 
 - [class func getBoundStreams(withBufferSize: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](stream/getboundstreams(withbuffersize:inputstream:outputstream:).md)
   Creates and returns by reference a bound pair of input and output streams.
 - [class func getStreamsToHost(withName: String, port: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)](stream/getstreamstohost(withname:port:inputstream:outputstream:).md)
+  Creates and returns by reference an `NSInputStream` object and `NSOutputStream` object for a socket connection with a given host on a given port.
 
 ## Relationships
 

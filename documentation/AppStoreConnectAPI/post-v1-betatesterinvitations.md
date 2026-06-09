@@ -1,4 +1,4 @@
-# Send an Invitation to a Beta Tester
+# Send an invitation to a beta tester
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

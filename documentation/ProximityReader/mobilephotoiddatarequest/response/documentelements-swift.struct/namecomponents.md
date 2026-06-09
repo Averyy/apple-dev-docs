@@ -9,12 +9,11 @@ The photo ID holder’s name components.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 
 ```swift
-let nameComponents: PersonNameComponents?
+var nameComponents: PersonNameComponents? { get }
 ```
 
 

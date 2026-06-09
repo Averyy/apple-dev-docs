@@ -7,8 +7,6 @@ The payload that configures the second wired, active Ethernet interface.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,9 +20,9 @@ Specify `com.apple.secondactiveethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
 
-- **Interface (String)**: This payload uses the value `SecondActiveEthernet`.
-- **EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md))**: The dictionary that defines the enterprise profile for the network.
-- **SetupModes (String)**: The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
+- Interface (String): This payload uses the value `SecondActiveEthernet`.
+- EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md)): The dictionary that defines the enterprise profile for the network.
+- SetupModes (String): The type of connection mode, which is either “System” or “Loginwindow.” “System” is the default.
 
 Payloads with `active` in their name apply to Ethernet interfaces that are working at the time of profile installation. If there’s no active Ethernet interface working, this payload configures the interface with the highest service-order priority.
 
@@ -35,10 +33,10 @@ Payloads with `active` in their name apply to Ethernet interfaces that are worki
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | macOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

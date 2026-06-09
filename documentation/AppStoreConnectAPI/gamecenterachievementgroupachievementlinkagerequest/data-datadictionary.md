@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a achievement resource.
+The resource linkage data for setting the group achievement associated with a Game Center achievement.
 
 **Availability**:
 - App Store Connect API 3.0+

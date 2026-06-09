@@ -1,4 +1,4 @@
-# Replace All Compatible Versions for a Game Center Enabled Version
+# Replace all compatible versions for a game center enabled version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Remove Compatible Versions From a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Remove compatible versions from a game center enabled version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 
 
 ---

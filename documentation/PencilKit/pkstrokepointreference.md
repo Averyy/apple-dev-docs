@@ -44,10 +44,14 @@ class PKStrokePointReference
 - [var secondaryScale: CGFloat](pkstrokepointreference/secondaryscale.md)
 ### Initializers
 - [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)](pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).md)
-  Create a new point with the provided properties.
+  Creates a stroke point with the specified properties, including a rendering threshold.
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat, lateralJitter: CGFloat)](pkstrokepointreference/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:lateraljitter:).md)
+  Creates a stroke point with the specified properties, including lateral jitter.
 ### Instance Properties
+- [var lateralJitter: CGFloat](pkstrokepointreference/lateraljitter.md)
+  The amount of lateral particle jitter at the stroke edge for supported inks.
 - [var threshold: CGFloat](pkstrokepointreference/threshold.md)
-  The threshold for clipping the stroke rendering.
+  The alpha threshold for clipping the stroke rendering for supported inks.
 
 ## Relationships
 

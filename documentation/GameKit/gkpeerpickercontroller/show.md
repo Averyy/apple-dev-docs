@@ -6,6 +6,9 @@
 Displays the peer picker dialog to the user.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 
 ## Declaration

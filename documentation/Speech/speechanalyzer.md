@@ -19,6 +19,10 @@ Analyzes spoken audio content in various ways and manages the analysis session.
 final actor SpeechAnalyzer
 ```
 
+## Mentions
+
+- [Asking Permission to Use Speech Recognition](asking-permission-to-use-speech-recognition.md)
+
 #### Overview
 
 The Speech framework provides several modules that can be added to an analyzer to provide specific types of analysis and transcription. Many use cases only need a [`SpeechTranscriber`](speechtranscriber.md) module, which performs speech-to-text transcriptions.
@@ -44,9 +48,9 @@ To perform analysis on audio files and streams, follow these general steps:
 
 1. Create and configure the necessary modules.
 2. Ensure the relevant assets are installed or already present. See [`AssetInventory`](assetinventory.md).
-3. Create an input sequence you can use to provide the spoken audio.
+3. Create an input sequence you can use to provide the spoken audio. See helper classes [`AssetInputSequenceProvider`](assetinputsequenceprovider.md) and [`CaptureInputSequenceProvider`](captureinputsequenceprovider.md).
 4. Create and configure the analyzer with the modules and input sequence.
-5. Supply audio.
+5. Supply audio. See helper class [`AnalyzerInputConverter`](analyzerinputconverter.md).
 6. Start analysis.
 7. Act on results.
 8. Finish analysis when desired.
@@ -60,7 +64,7 @@ import Speech
 guard let locale = SpeechTranscriber.supportedLocale(equivalentTo: Locale.current) else {
     /* Note unsupported language */
 }
-let transcriber = SpeechTranscriber(locale: locale, preset: .offlineTranscription)
+let transcriber = SpeechTranscriber(locale: locale, preset: .transcription)
 
 // Step 2: Assets
 if let installationRequest = try await AssetInventory.assetInstallationRequest(supporting: [transcriber]) {
@@ -75,12 +79,17 @@ let audioFormat = await SpeechAnalyzer.bestAvailableAudioFormat(compatibleWith: 
 let analyzer = SpeechAnalyzer(modules: [transcriber])
 
 // Step 5: Supply audio
+let converter = AnalyzerInputConverter(analyzerFormat: audioFormat)
 Task {
     while /* audio remains */ {
-        /* Get some audio */
-        /* Convert to audioFormat */
-        let pcmBuffer = /* an AVAudioPCMBuffer containing some converted audio */
-        let input = AnalyzerInput(buffer: pcmBuffer)
+        let buffer = /* Get some audio */
+        let inputs = try converter.convert(buffer, at: nil)
+        for input in inputs {
+            inputBuilder.yield(input)
+        }
+    }
+    let inputs = try converter.flush()
+    for input in inputs {
         inputBuilder.yield(input)
     }
     inputBuilder.finish()
@@ -110,27 +119,42 @@ if let lastSampleTime {
 }
 ```
 
-##### Analyze Audio Files
+##### Analyze Audio From Files or Capture Devices
 
-To analyze one or more audio files represented by an `AVAudioFile` object, call methods such as [`analyzeSequence(from:)`](speechanalyzer/analyzesequence(from:).md) or [`start(inputAudioFile:finishAfterFile:)`](speechanalyzer/start(inputaudiofile:finishafterfile:).md), or create the analyzer with one of the initializers that has a file parameter. These methods automatically convert the file to a supported audio format and process the file in its entirety.
+To read audio from a file, asset, or capture device such as a microphone, create an [`AssetInputSequenceProvider`](assetinputsequenceprovider.md) or [`CaptureInputSequenceProvider`](captureinputsequenceprovider.md) object.
 
-To end the analysis session after one file, pass `true` for the `finishAfterFile` parameter or call one of the `finish` methods.
+Get the provider object’s [`analyzerInputs`](assetinputsequenceprovider/analyzerinputs.md) or [`analyzerInputs`](captureinputsequenceprovider/analyzerinputs.md) property to convert the source’s audio to a supported format and obtain an asynchronous input sequence of the audio. Pass that sequence to [`analyzeSequence(_:)`](speechanalyzer/analyzesequence(_:).md), [`start(inputSequence:)`](speechanalyzer/start(inputsequence:).md), or a similar parameter of the analyzer’s initializer.
 
-Otherwise, by default, the analyzer won’t terminate its result streams and will wait for additional audio files or buffers. The analysis session doesn’t reset the audio timeline after each file; the next audio is assumed to come immediately after the completed file.
+To end the analysis session after processing the audio track or captured audio, call one of the analyzer’s `finish` methods. Otherwise, by default, the analyzer won’t terminate its result streams and will wait for additional audio input sequences or buffers. See the “Finish analysis” section below for more details.
 
-##### Analyze Audio Buffers
+##### Analyze Audio From Audio Buffers
 
-To analyze audio buffers directly, convert them to a supported audio format, either on the fly or in advance. You can use [`bestAvailableAudioFormat(compatibleWith:)`](speechanalyzer/bestavailableaudioformat(compatiblewith:).md) or individual modules’ [`availableCompatibleAudioFormats`](speechmodule/availablecompatibleaudioformats.md) methods to select a format to convert to.
+You can analyze audio buffers directly without using [`AssetInputSequenceProvider`](assetinputsequenceprovider.md) or [`CaptureInputSequenceProvider`](captureinputsequenceprovider.md).
 
-Create an [`AnalyzerInput`](analyzerinput.md) object for each audio buffer and add the object to an input sequence you create. Supply that input sequence to [`analyzeSequence(_:)`](speechanalyzer/analyzesequence(_:).md), [`start(inputSequence:)`](speechanalyzer/start(inputsequence:).md), or a similar parameter of the analyzer’s initializer.
+To do this:
 
-To skip past part of an audio stream, omit the buffers you want to skip from the input sequence. When you resume analysis with a later buffer, you can ensure the time-code of each module’s result accounts for the skipped audio. To do this, pass the later buffer’s time-code within the audio stream as the `bufferStartTime` parameter of the later `AnalyzerInput` object.
+1. Create an asynchronous input sequence of [`AnalyzerInput`](analyzerinput.md) elements that is appropriate for your use case.
+2. Supply the input sequence to [`analyzeSequence(_:)`](speechanalyzer/analyzesequence(_:).md), [`start(inputSequence:)`](speechanalyzer/start(inputsequence:).md), or a similar parameter of the analyzer’s initializer.
+3. Convert each audio buffer to a supported audio format, either on the fly or in advance.
+4. Create [`AnalyzerInput`](analyzerinput.md) objects for each buffer.
+5. Add the `AnalyzerInput` objects to the input sequence.
+
+To convert `AVAudioBuffer` audio buffers to a supported format as `AnalyzerInput` objects on the fly, use [`AnalyzerInputConverter`](analyzerinputconverter.md).
+
+To convert audio buffers to a supported format in advance or with some other technique:
+
+1. Detemine the format to convert to by calling [`bestAvailableAudioFormat(compatibleWith:)`](speechanalyzer/bestavailableaudioformat(compatiblewith:).md) or individual modules’ [`availableCompatibleAudioFormats`](speechmodule/availablecompatibleaudioformats.md) methods
+2. Convert the audio and create `AnalyzerInput` objects as necessary
+
+To skip past part of an audio stream, omit the buffers you want to skip from the input sequence. You can resume with a later buffer.
+
+When you resume analysis with a later `AVAudioPCMBuffer` buffer, you may need to supply the correct time-code to account for skipped audio. To do this, pass the time-code of the later buffer as the `bufferStartTime` parameter of the corresponding `AnalyzerInput` object.
 
 ##### Analyze Autonomously
 
 You can and usually should perform analysis using the [`analyzeSequence(_:)`](speechanalyzer/analyzesequence(_:).md) or [`analyzeSequence(from:)`](speechanalyzer/analyzesequence(from:).md) methods; those methods work well with Swift structured concurrency techniques. However, you may prefer that the analyzer proceed independently and perform its analysis autonomously as audio input becomes available in a task managed by the analyzer itself.
 
-To use this capability, create the analyzer with one of the initializers that has an input sequence or file parameter, or call [`start(inputSequence:)`](speechanalyzer/start(inputsequence:).md) or [`start(inputAudioFile:finishAfterFile:)`](speechanalyzer/start(inputaudiofile:finishafterfile:).md). To end the analysis when the input ends, call [`finalizeAndFinishThroughEndOfInput()`](speechanalyzer/finalizeandfinishthroughendofinput().md). To end the analysis of that input and start analysis of different input, call one of the `start` methods again.
+To use this capability, create the analyzer with one of the initializers that has an input sequence or file parameter, or call [`start(inputSequence:)`](speechanalyzer/start(inputsequence:).md) or [`start(inputAudioFile:finishAfterFile:)`](speechanalyzer/start(inputaudiofile:finishafterfile:).md). To end the analysis of that input only and start analysis of different input, call one of the `start` methods again. To end the analysis session when the input ends, call [`finalizeAndFinishThroughEndOfInput()`](speechanalyzer/finalizeandfinishthroughendofinput().md).
 
 ##### Control Processing and Timing of Results
 
@@ -146,7 +170,7 @@ To proactively load system resources and “preheat” the analyzer, call [`prep
 
 To delay or prevent unloading an analyzer’s resources — caching them for later use by a different analyzer instance — you can select a [`SpeechAnalyzer.Options.ModelRetention`](speechanalyzer/options/modelretention-swift.enum.md) option and create the analyzer with an appropriate [`SpeechAnalyzer.Options`](speechanalyzer/options.md) object.
 
-To set the priority of analysis work, create the analyzer with a [`SpeechAnalyzer.Options`](speechanalyzer/options.md) object given a `priority` value.
+To set the priority of analysis work, create the analyzer with a [`SpeechAnalyzer.Options`](speechanalyzer/options.md) object with the desired `priority` value.
 
 Specific modules may also offer options that improve responsiveness.
 
@@ -156,15 +180,27 @@ To end an analysis session, you must use one of the analyzer’s `finish` method
 
 When the analysis session transitions to the *finished* state:
 
-- The analyzer won’t take additional input from the input sequence
+- The analyzer won’t consume additional input from the input sequence (but note that it doesn’t drain or terminate the sequence)
 - Most methods won’t do anything; in particular, the analyzer won’t accept different input sequences or modules
 - Module result streams terminate and modules won’t publish additional results, though the app can continue to iterate over already-published results
 
-> **Note**: While you can terminate the input sequence you created with a method such as `AsyncStream.Continuation.finish()`, finishing the input sequence does *not* cause the analysis session to become finished, and you can continue the session with a different input sequence.
+> **Note**: While you can terminate the input sequence you created with a method such as `AsyncStream.Continuation.finish()`, terminating the input sequence does *not* generally finish the analysis session, and you can continue the session with a different input sequence. (See [`finalizeAndFinishThroughEndOfInput()`](speechanalyzer/finalizeandfinishthroughendofinput().md) for an exception.)
 
 ##### Respond to Errors
 
 When the analyzer or its modules’ result streams throw an error, the analysis session becomes finished as described above, and the same error (or a `CancellationError`) is thrown from all waiting methods and result streams.
+
+When this happens, you may wish to terminate the input sequence, or create a new analyzer to continue working on the remaining (and any additional) input.
+
+##### Manage Simultaneous Analyses
+
+The system normally limits simultaneous analyses to a conservative number, considering hardware capabilities of different devices. If you exceed that number, the system throws an [`insufficientResources`](sfspeecherror/code/insufficientresources.md) error.
+
+However, under certain use cases, the hardware may be able to accommodate additional simultaneous analyses; for example, several simultaneous transcription sessions may use the same language and settings, or only receive audio in an interleaved schedule. To support these use cases, you can override the system to ignore the predefined conservative system resource limits.
+
+To override the normal limits, create an analyzer with a [`SpeechAnalyzer.Options`](speechanalyzer/options.md) object with its [`ignoresResourceLimits`](speechanalyzer/options/ignoresresourcelimits.md) value set to `true`. The system allows an unlimited number of analyzers configured with this option. However, the hardware requirements of numerous analyzers will eventually exceed the system’s actual capacity, and one or more of the analyzers will fail, throwing an unpredictable error.
+
+> ⚠️ **Warning**: When using this option, test your app on a variety of devices under a variety of scenarios to experimentally determine how many analyzers you can reliably create and expect to function. Consider how to recover in the event one or more analyzers fail.
 
 ## Topics
 
@@ -184,7 +220,7 @@ When the analyzer or its modules’ result streams throw an error, the analysis 
   The modules performing analysis on the audio input.
 ### Performing analysis
 - [func analyzeSequence<InputSequence>(InputSequence) async throws -> CMTime?](speechanalyzer/analyzesequence(_:).md)
-  Analyzes an input sequence, returning when the sequence is consumed.
+  Analyzes an input sequence, returning when the sequence terminates.
 - [func analyzeSequence(from: AVAudioFile) async throws -> CMTime?](speechanalyzer/analyzesequence(from:).md)
   Analyzes an input sequence created from an audio file, returning when the file has been read.
 ### Performing autonomous analysis
@@ -201,7 +237,7 @@ When the analyzer or its modules’ result streams throw an error, the analysis 
 - [func cancelAndFinishNow() async](speechanalyzer/cancelandfinishnow.md)
   Finishes analysis immediately.
 - [func finalizeAndFinishThroughEndOfInput() async throws](speechanalyzer/finalizeandfinishthroughendofinput.md)
-  Finishes analysis after an audio input sequence has been fully consumed and its results are finalized.
+  Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
 - [func finalizeAndFinish(through: CMTime) async throws](speechanalyzer/finalizeandfinish(through:).md)
   Finishes analysis after finalizing results for a given time-code.
 - [func finish(after: CMTime) async throws](speechanalyzer/finish(after:).md)
@@ -236,6 +272,8 @@ When the analyzer or its modules’ result streams throw an error, the analysis 
 
 ## See Also
 
+- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
+  Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)
   Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 - [class AssetInventory](assetinventory.md)

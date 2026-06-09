@@ -24,7 +24,7 @@ An audio file group.
 
 ### Creating a resource
 - [init([AudioFileResource]) throws](audiofilegroupresource/init(_:).md)
-  Creates a group resource from an array of audio file resources.
+  Creates a group resource from an array of audio file resources (backward compatibility).
 - [convenience init(named: String, from: String, in: Bundle) async throws](audiofilegroupresource/init(named:from:in:).md)
   Initializes an audio resource from a Reality Composer Pro project.
 - [static func load(named: String, from: String, in: Bundle?) throws -> AudioFileGroupResource](audiofilegroupresource/load(named:from:in:).md)
@@ -40,7 +40,6 @@ An audio file group.
 ### Inherits From
 - [AudioResource](audioresource.md)
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

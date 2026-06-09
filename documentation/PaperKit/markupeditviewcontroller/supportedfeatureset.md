@@ -18,6 +18,11 @@ The supported features of this edit UI.
 @preconcurrency final let supportedFeatureSet: FeatureSet
 ```
 
+## See Also
+
+- [var delegate: (any MarkupEditViewController.Delegate)?](markupeditviewcontroller/delegate-swift.property.md)
+  The delegate for responding to user actions.
+
 
 ---
 

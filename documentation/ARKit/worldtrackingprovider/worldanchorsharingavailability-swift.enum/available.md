@@ -3,10 +3,9 @@
 **Framework**: ARKit  
 **Kind**: case
 
-World anchors can be shared with nearby participants. Indicates that the device is in a SharePlay session with nearby participants.
+World anchors can be shared with nearby participants. This indicates that the device is in a SharePlay session with nearby participants.
 
 **Availability**:
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -8,6 +8,7 @@ Prompts a person to give FinanceKit authorization to access financial data.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

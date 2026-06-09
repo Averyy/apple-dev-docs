@@ -17,7 +17,7 @@ Constructs a new span over all the bytes of this span.
 ## Declaration
 
 ```swift
-func extracting(_: (UnboundedRange_) -> ()) -> RawSpan
+func extracting(_: UnboundedRange) -> RawSpan
 ```
 
 #### Return Value

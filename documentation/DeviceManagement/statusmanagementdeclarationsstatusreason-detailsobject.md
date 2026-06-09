@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains further details about an error.
+A dictionary that contains further details about this error.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ A dictionary that contains further details about an error.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

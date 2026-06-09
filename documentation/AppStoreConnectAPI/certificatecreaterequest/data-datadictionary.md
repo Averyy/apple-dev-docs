@@ -19,7 +19,6 @@ object CertificateCreateRequest.Data
 ### Objects
 - [object CertificateCreateRequest.Data.Attributes](certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
   Attributes that you set that describe the new resource.
-### Dictionaries
 - [object CertificateCreateRequest.Data.Relationships](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
 
 ## Properties

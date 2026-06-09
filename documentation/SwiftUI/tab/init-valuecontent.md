@@ -18,7 +18,7 @@ Creates a new tab that you can use in a tab view, with an empty label.
 
 ```swift
 nonisolated
-init(value: Value, @ViewBuilder content: () -> Content) where Label == EmptyView
+init(value: Value, @ContentBuilder content: () -> Content) where Label == EmptyView
 ```
 
 ## Parameters

@@ -8,13 +8,38 @@ Learn about important changes to Bundle Resources.
 
 Browse notable changes in [`Bundle Resources`](https://developer.apple.com/documentation/BundleResources).
 
+#### June 2026
+
+##### New Entitlements
+
+- Access Private Cloud Compute in your [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels) app using the [`com.apple.developer.private-cloud-compute`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.private-cloud-compute) entitlement.
+- Request insights relating to transactional activities using the [`TrustInsights`](https://developer.apple.com/documentation/TrustInsights) framework with the [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base) entitlement.
+- Display energy device names and usage statistics in the Home app using the [`EnergyKit`](https://developer.apple.com/documentation/EnergyKit) framework with the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience) entitlement.
+- Add suggested actions to your messaging app based on message content with the [`Suggested Actions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.suggested-actions) entitlement and the [`Suggested Actions`](https://developer.apple.com/documentation/SuggestedActions) framework.
+- Integrate a third-party media sharing protocol into the system route picker with the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.media-device-extension) entitlement.
+- Manage access to connected USB devices for macOS and Linux virtual machines with the [`Accessory Access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.accessory-access.usb) entitlement.
+- Protect your app against use-after-free vulnerabilities with guard objects, which the system enables automatically when you set [`com.apple.security.hardened-process.enhanced-security-version`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.enhanced-security-version) to version `2` or greater. To turn off guard objects if they impact performance, use the [`com.apple.security.hardened-process.no-guard-objects`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.no-guard-objects) entitlement.
+
+##### New Information Property List Keys
+
+- Declare the media device extension protocols your app supports with [`MDESupportedProtocols`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MDESupportedProtocols).
+- Indicate that your app supports URL-based playback through a media device extension with [`MDESupportsUniversalURLPlayback`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MDESupportsUniversalURLPlayback).
+- Control whether only one view’s gesture recognizers can be active at a time with [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSViewGestureRecognizerIsExclusive).
+- Declare that your app handles touch input natively, without relying on AppKit’s extra mouse emulation, with [`NSIsTouchNative`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSIsTouchNative).
+- Suppress keyboard shortcuts for menu items while any non-exclusive gesture recognizer is active with [`NSGestureRecognizerSuppressesMainMenuActions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGestureRecognizerSuppressesMainMenuActions).
+
+##### Updated Entitlements
+
+- Define the app category to enable Cellular Network Slicing with [`5G Network Slicing App Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.appcategory). To set the application category for web browser apps, use `browser-9003`. You can also set the category to `mc-9500` for mission-critical apps that need access to ultra-constrained cellular networks.
+- Define the app category for carrier-constrained satellite network access with [`com.apple.developer.networking.carrier-constrained.appcategory`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.carrier-constrained.appcategory). To set the application category for payment apps, use `payment-8015`. You can also set the category to `health-fitness-8014` for health and fitness apps.
+
 #### June 2025
 
 ##### New Entitlements
 
 - Include passthrough in screen capture on visionOS with the  [`Passthrough in screen capture`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.screen-capture.include-passthrough) entitlement.
 - Enable low-latency wireless networking for streaming game content on visionOS with the  [`Low-Latency Streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.low-latency-streaming) entitlement.
-- Manage home device electricity usage with the [`com.apple.developer.energykit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement.
+- Manage home device electricity usage with the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement.
 - Access the GPU from a background task with the [`Background GPU Access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.background-tasks.continued-processing.gpu) entitlement.
 - Opt in to additional security checks with the [`com.apple.security.hardened-process`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process) entitlement.
 - Enable security hardening protections with the [`com.apple.security.hardened-process.enhanced-security-version`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.enhanced-security-version) entitlement.
@@ -32,7 +57,7 @@ Browse notable changes in [`Bundle Resources`](https://developer.apple.com/docum
 - Share a coordinate space with other devices with the [`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
 - Stop the system from capturing your app’s content with the [`App-Protected Content`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.protected-content) entitlement.
 - Lock your app’s windows in place relative to a person with the [`Window Follow Mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow) entitlement.
-- Add custom adapters to the Foundation Models framework with the [`com.apple.developer.foundation-model-adapter`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foundation-model-adapter) entitlement.
+- Add custom adapters to the Foundation Models framework with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.foundation-model-adapter entitlement.
 - Indicate that your app can be the default dialer app on someone’s device with the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement.
 
 ##### New Information Property List Keys

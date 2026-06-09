@@ -6,6 +6,9 @@
 The `GKLeaderboardViewController` class provides a standard user interface that displays leaderboard scores to the player. If the [`GKGameCenterViewController`](gkgamecenterviewcontroller.md) class is available, you should use it instead.
 
 **Availability**:
+- iOS 4.1+
+- iPadOS 4.1+
+- Mac Catalyst 4.1+
 - macOS 10.8+
 - visionOS 1.0+
 

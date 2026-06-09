@@ -8,6 +8,31 @@ Learn about important changes to AppKit.
 
 Browse notable changes in [`AppKit`](https://developer.apple.comhttps://developer.apple.com/documentation/appkit).
 
+#### June 2026
+
+##### General
+
+- Create events similar to `UIControl` events on [`NSControl`](https://developer.apple.com/documentation/AppKit/NSControl) with the new [`NSControl.Events`](https://developer.apple.com/documentation/AppKit/NSControl/Events) type.
+
+##### Gesture Recognizers
+
+- Initiate a drag operation from a gesture recognizer using the new [`beginDraggingSession(items:gesture:source:)`](https://developer.apple.com/documentation/AppKit/NSView/beginDraggingSession(items:gesture:source:)) method on [`NSView`](https://developer.apple.com/documentation/AppKit/NSView).
+- Adopt gesture recognizers to receive touch input from a Sidecar-connected iPad. For more information, see [`TN3212: Adopting gesture recognizers for Sidecar touch support`](https://developer.apple.com/documentation/Technotes/tn3212-adopting-gesture-recognizers-for-sidecar-touch-support).
+
+##### Scroll Views
+
+- Configure pull-to-refresh and touch scrolling with [`NSRefreshController`](https://developer.apple.com/documentation/AppKit/NSRefreshController) and updated [`NSScrollView`](https://developer.apple.com/documentation/AppKit/NSScrollView) properties.
+
+##### Swift and Swiftui
+
+- Update views automatically in response to [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model changes using the guidance in [`Updating views automatically with observation tracking`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking).
+- Limit a SwiftUI gesture to specific types of input, such as touch or mouse, using [`GestureInputKinds`](https://developer.apple.com/documentation/SwiftUI/GestureInputKinds).
+
+##### Information Property List
+
+- Configure app-wide gesture recognizer exclusivity and touch emulation using the [`NSViewGestureRecognizerIsExclusive`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSViewGestureRecognizerIsExclusive) and [`NSIsTouchNative`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSIsTouchNative) keys.
+- Control whether gesture recognizers suppress menu keyboard shortcuts using [`NSGestureRecognizerSuppressesMainMenuActions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSGestureRecognizerSuppressesMainMenuActions).
+
 #### June 2025
 
 ##### General

@@ -30,15 +30,15 @@ For more information on schemes, see [`Customizing the build schemes for a proje
 
 ##### Tell Xcode Where to Run Your App
 
-After you choose a scheme to build, choose a real or simulated device depending on the scheme where you want to run the built products. Click the run destination name next to the scheme name in the toolbar, and choose a real or simulated device from the pop-up menu.
+After you choose a scheme to build, click the run destination name next to the scheme name in the toolbar, and choose a simulated or physical device from the pop-up menu.
 
 ![A screenshot of the project editor showing the run destination pop-up menu displayed in the toolbar with My Mac selected.](https://docs-assets.developer.apple.com/published/292a795d5fa6f2f532ab1c4a00ae57c0/build-select-device%402x.png)
 
-Choose a run destination that gives you the capabilities you need. For Mac products, choose My Mac. For other platforms, if the app doesn’t require actual hardware, you can choose a simulator to test features quickly on your Mac. If your app requires actual hardware, or you’re ready to see how your app behaves in real conditions, choose a real device.
+Choose a run destination that gives you the capabilities you need. For Mac products, choose My Mac. For other platforms, if the app doesn’t require actual hardware, you can choose a simulator to test features quickly on your Mac. If your app requires actual hardware, or you’re ready to see how your app behaves in real conditions, choose a physical device.
 
-For information on configuring new simulated devices or connecting to a real device, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md).
+For information on configuring new simulators or connecting to a physical device, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
 
-> ❗ **Important**: Before you ship any code, test and gather metrics on real devices. Simulators offer quick turnaround times during development, but they don’t simulate the actual performance of target devices.
+> ❗ **Important**: Before you ship any code, test and gather metrics on physical devices. Simulators offer quick turnaround times during development, but they don’t simulate the actual performance of target devices.
 
 ##### Build Run and Debug Your App
 

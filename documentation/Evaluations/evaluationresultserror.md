@@ -1,0 +1,59 @@
+# EvaluationResultsError
+
+**Framework**: Evaluations  
+**Kind**: enum
+
+Errors the framework throws when parsing evaluation results.
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- visionOS ?+
+- watchOS ?+
+
+## Declaration
+
+```swift
+enum EvaluationResultsError
+```
+
+#### Overview
+
+```swift
+do {
+    throw EvaluationResultsError.fileNotFound(URL(fileURLWithPath: "/tmp/results.json"))
+} catch EvaluationResultsError.fileNotFound(let url) {
+    print("File not found: \(url)")
+}
+```
+
+## Topics
+
+### Enumeration Cases
+- [EvaluationResultsError.emptyJSONFile](evaluationresultserror/emptyjsonfile.md)
+  The JSON file exists but contains no data.
+- [EvaluationResultsError.fileNotFound(_:)](evaluationresultserror/filenotfound(_:).md)
+  The specified file URL is not findable on disk.
+- [EvaluationResultsError.invalidJSONFormat](evaluationresultserror/invalidjsonformat.md)
+  The JSON data doesn’t match the expected evaluation result format.
+
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Error](../Swift/Error.md)
+- [LocalizedError](../Foundation/LocalizedError.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [enum EvaluationError](evaluationerror.md)
+  Errors thrown during an evaluation run.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/evaluations/evaluationresultserror)*

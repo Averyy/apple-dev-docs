@@ -49,6 +49,7 @@ enum ParameterSummaryCaseBuilder<Intent, Value> where Intent : AppIntent, Value 
 - [init(ParameterSummarySwitchCondition<Intent, Value, CaseCondition>.WidgetFamily, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-4vxvs.md)
   Initializes a parameter summary Switch statement over widget family.
 - [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+  Creates a `Switch` statement that branches based on union value parameter cases.
 - [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)
   An enum that represents a parameter summary Switch statement over widget family.
 

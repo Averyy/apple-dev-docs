@@ -34,20 +34,7 @@ struct StopCaptureIntent: AppIntent {
 }
 ```
 
-For more information about the `.camera` app intent domain, see [`Making camera actions available to Siri and Apple Intelligence`](making-camera-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var openInCaptureMode: some AssistantSchemas.Intent](assistantschemas/cameraintent/openincapturemode.md)
-  The app intent conforms to the schema for opening the app’s camera functionality, ready to capture a photo or video.
-- [var setDevice: some AssistantSchemas.Intent](assistantschemas/cameraintent/setdevice.md)
-  The app intent conforms to the schema for choosing a device to capture a photo.
-- [var startCapture: some AssistantSchemas.Intent](assistantschemas/cameraintent/startcapture.md)
-  The app intent conforms to the schema for starting the capture of a photo or video.
-- [var switchDevice: some AssistantSchemas.Intent](assistantschemas/cameraintent/switchdevice.md)
-  The app intent conforms to the schema for switching between cameras or devices.
-- [AssistantSchemas.CameraIntent](assistantschemas/cameraintent.md)
-  Assistant schema conformance for app intents that offer camera functionality.
+For more information about the `.camera` app intent domain, see doc:Making-camera-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

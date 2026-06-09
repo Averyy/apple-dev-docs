@@ -29,6 +29,15 @@ A view that uses the symbol variable value mode you supply.
 
 - `mode`: The symbol variable value mode to use.
 
+## See Also
+
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+  Sets the rendering mode for symbol images within this view.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](view/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
+- [func symbolVariant(SymbolVariants) -> some View](view/symbolvariant(_:).md)
+  Makes symbols within the view show a particular variant.
+
 
 ---
 

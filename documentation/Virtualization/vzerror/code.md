@@ -121,6 +121,17 @@ The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an erro
   The framework can’t find the device.
 - [VZError.Code.usbControllerNotFound](vzerror/code/usbcontrollernotfound.md)
   The framework can’t find the controller.
+### Enumeration Cases
+- [VZError.Code.efiSecureBootEnrollmentFailed](vzerror/code/efisecurebootenrollmentfailed.md)
+  An error that indicates the Secure Boot signatures failed to enroll.
+- [VZError.Code.efiVariableInaccessible](vzerror/code/efivariableinaccessible.md)
+  An error that indicates the framework can’t access the EFI variable store.
+- [VZError.Code.guestProvisioningInvalidFullName](vzerror/code/guestprovisioninginvalidfullname.md)
+  An error that indicates the full name for guest provisioning is invalid.
+- [VZError.Code.guestProvisioningInvalidPassword](vzerror/code/guestprovisioninginvalidpassword.md)
+  An error that indicates the password for guest provisioning is invalid.
+- [VZError.Code.guestProvisioningInvalidUsername](vzerror/code/guestprovisioninginvalidusername.md)
+  An error that indicates the username for guest provisioning is invalid.
 ### Initializers
 - [init?(rawValue: Int)](vzerror/code/init(rawvalue:).md)
 

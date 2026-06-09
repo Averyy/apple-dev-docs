@@ -47,16 +47,7 @@ struct SheetEntity: AppEntity {
     public var sheetIndex: Int
 ```
 
-For more information about the `.spreadsheet` app intent domain, see [`Making spreadsheet actions available to Siri and Apple Intelligence`](making-spreadsheet-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/document.md)
-  The app entity describes a spreadsheet.
-- [var template: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/template.md)
-  The app entity describes a template for a spreadsheet.
-- [AssistantSchemas.SpreadsheetEntity](assistantschemas/spreadsheetentity.md)
-  Assistant schema conformance for app entities that describe spreadsheet data.
+For more information about the `.spreadsheet` app intent domain, see doc:Making-spreadsheet-actions-available-to-Siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

@@ -27,9 +27,9 @@ object BuildBetaNotificationCreateRequest
 ## See Also
 
 - [object BuildBetaNotification](buildbetanotification.md)
-  The data structure that represents a Build Beta Notifications resource.
+  A push notification sent to eligible TestFlight testers when a new build is available to install.
 - [object BuildBetaNotificationResponse](buildbetanotificationresponse.md)
-  A response that contains a single Build Beta Notifications resource.
+  The response body for the endpoint that sends a beta test notification for a build.
 
 
 ---

@@ -52,9 +52,7 @@ If either upstream publisher finishes successfully or fails with an error, so to
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

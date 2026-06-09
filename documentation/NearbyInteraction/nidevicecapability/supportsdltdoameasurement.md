@@ -31,6 +31,8 @@ Only create a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) instance if th
   A Boolean value that indicates whether the device can leverage ARKit to improve interaction.
 - [var supportsExtendedDistanceMeasurement: Bool](nidevicecapability/supportsextendeddistancemeasurement.md)
   A Boolean value that indicates whether this device supports extended distance measurement.
+- [var supportsBluetoothChannelSounding: Bool](nidevicecapability/supportsbluetoothchannelsounding.md)
+  A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
 
 
 ---

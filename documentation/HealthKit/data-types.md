@@ -158,6 +158,17 @@ You can use the resulting object types to request permission to access the data,
   A category type that represents the results from a home pregnancy test.
 - [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
   A category type that records lactation.
+- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+  A value that indicates the intensity of vaginal bleeding.
+### Menopause
+- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+  Personalize someone’s experience on a health app by tracking the information they record on menopausal state.
+- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+  An identifier for samples that record a person’s menopausal state.
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+  An identifier for samples that record bleeding after menopause.
+- [enum HKCategoryValueMenopausalState](hkcategoryvaluemenopausalstate.md)
+  A value that indicates the menopausal state at a recorded point in time.
 ### Hearing
 - [static let environmentalAudioExposure: HKQuantityTypeIdentifier](hkquantitytypeidentifier/environmentalaudioexposure.md)
   A quantity sample type that measures audio exposure to sounds in the environment.

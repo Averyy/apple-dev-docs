@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-Returns the latest viewpoint properties, if available.
+The latest viewpoint properties, if available.
 
 **Availability**:
 - visionOS 2.4+

@@ -20,10 +20,8 @@ init(sectionProvider: @escaping UICollectionViewCompositionalLayoutSectionProvid
 
 ## See Also
 
-- [init(section: NSCollectionLayoutSection)](uicollectionviewcompositionallayout/init(section:).md)
-  Creates a compositional layout object with a single section.
-- [init(section: NSCollectionLayoutSection, configuration: UICollectionViewCompositionalLayoutConfiguration)](uicollectionviewcompositionallayout/init(section:configuration:).md)
-  Creates a compositional layout object with a single section and an additional configuration.
+- [typealias UICollectionViewCompositionalLayoutSectionProvider](uicollectionviewcompositionallayoutsectionprovider.md)
+  A closure that creates and returns each of the layout’s sections.
 - [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider, configuration: UICollectionViewCompositionalLayoutConfiguration)](uicollectionviewcompositionallayout/init(sectionprovider:configuration:).md)
   Creates a compositional layout object with a section provider and an additional configuration.
 

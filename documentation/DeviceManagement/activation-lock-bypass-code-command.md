@@ -11,18 +11,16 @@ Get the code to bypass Activation Lock on a device.
 - Mac Catalyst 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
-- [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
+- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
 
 #### Discussion
 
 This command allows organizations to retrieve the device’s bypass code. Organizations can use the bypass code to remove the Activation Lock from supervised devices prior to device activation without knowing the user’s personal Apple Account and password.
 
-Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and Using Bypass Codes`](creating-and-using-bypass-codes.md).
+Supervised devices generate a device-specific Activation Lock bypass code. The activation server verifies this code to bypass Activation Lock on the device. For more information, see [`Creating and using bypass codes`](creating-and-using-bypass-codes.md).
 
 A device creates a new bypass code when:
 
@@ -35,10 +33,10 @@ A device creates a new bypass code when:
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, visionOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -89,7 +87,7 @@ A device creates a new bypass code when:
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ActivationLockBypassCodeCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

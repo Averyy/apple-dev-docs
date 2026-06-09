@@ -56,7 +56,7 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
   The compression to apply when creating an environment resource.
 ### Accessing resource data
 - [var skybox: TextureResource](environmentresource/skybox.md)
-  The cube color texture that contains environment surrounding details.
+  The cube color texture that contains environment surrounding details, or a low-resolution proxy of the original skybox if the `EnvironmentResource` was created with `CreateOptions(skyboxMode: .discard)`.
 ### Deprecated
 - [static func generate(fromEquirectangular: CGImage, withName: String?) throws -> EnvironmentResource](environmentresource/generate(fromequirectangular:withname:)-3wtpe.md)
   Synchronously generates an environment resource from an equirectangular image.
@@ -64,9 +64,22 @@ RealityKit supports the same input formats as Image I/O, such as `.png` and `.jp
   Asynchronously generates an environment resource from an equirectangular image.
 - [static func loadAsync(named: String, in: Bundle?) -> LoadRequest<EnvironmentResource>](environmentresource/loadasync(named:in:).md)
   Asynchronously loads an environment resource from a bundle.
+### Creating an environment resource
+- [convenience init(named: String, in: Bundle?, skyboxMode: EnvironmentResource.SkyboxMode) async throws](environmentresource/init(named:in:skyboxmode:).md)
+  Asynchronously loads an environment resource from a bundle.
+- [EnvironmentResource.SkyboxMode](environmentresource/skyboxmode.md)
+  An enumeration controlling how to preserve the skybox.
+- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) async throws](environmentresource/init(equirectangular:options:)-8e7wv.md)
+  Asynchronously generates an environment resource from an equirectangular image.
+- [convenience init(equirectangular: CGImage, options: EnvironmentResource.CreateOptions) throws](environmentresource/init(equirectangular:options:)-5bxl3.md)
+  Synchronously creates an environment resource from an equirectangular image.
+- [convenience init(skybox: TextureResource?, specular: TextureResource, diffuse: TextureResource) throws](environmentresource/init(skybox:specular:diffuse:).md)
+  Creates an EnvironmentResource a skybox, specular and diffuse texture resources.
 ### Initializers
 - [convenience(cube:options:)](environmentresource/init(cube:options:).md)
   Asynchronously creates an environment resource from a cube texture.
+- [convenience(equirectangular:options:)](environmentresource/init(equirectangular:options:).md)
+  Asynchronously generates an environment resource from an equirectangular image.
 - [convenience(equirectangular:withName:)](environmentresource/init(equirectangular:withname:).md)
   Asynchronously generates an environment resource from an equirectangular image.
 ### Type Methods

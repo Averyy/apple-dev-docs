@@ -18,7 +18,7 @@ Presents a confirmation dialog using data to produce the dialog’s content and 
 
 ```swift
 nonisolated
-func confirmationDialog<A, T>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, presenting data: T?, @ViewBuilder actions: (T) -> A) -> some View where A : View
+func confirmationDialog<A, T>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, presenting data: T?, @ContentBuilder actions: (T) -> A) -> some View where A : View
 ```
 
 #### Discussion
@@ -78,7 +78,7 @@ On iOS, tvOS, and watchOS, confirmation dialogs only support controls with label
 - `isPresented`: A binding to a Boolean value that determines whether to present the dialog. When the user presses or taps the dialog’s default action button, the system sets this value to `false`, dismissing the dialog.
 - `titleVisibility`: The visibility of the dialog’s title. The default value is [`Visibility.automatic`](visibility/automatic.md).
 - `data`: An optional source of truth for the confirmation dialog. The system passes the contents to the modifier’s closures. You use this data to populate the fields of a confirmation dialog that you create that the system displays to the user.
-- `actions`: A view builder returning the dialog’s actions given the currently available data.
+- `actions`: A [`ContentBuilder`](contentbuilder.md) returning the dialog’s actions given the currently available data.
 
 ## See Also
 

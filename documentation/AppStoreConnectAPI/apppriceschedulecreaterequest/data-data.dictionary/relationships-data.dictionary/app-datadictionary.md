@@ -16,6 +16,7 @@ object AppPriceScheduleCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object AppPriceScheduleCreateRequest.Data.Relationships.App.Data](apppriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app price schedule.
 
 ## Properties
 

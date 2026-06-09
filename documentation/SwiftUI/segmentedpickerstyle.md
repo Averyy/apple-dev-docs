@@ -48,6 +48,8 @@ You can also use [`segmented`](pickerstyle/segmented.md) to construct this style
   A picker style that presents the options as a row of compact elements.
 - [struct RadioGroupPickerStyle](radiogrouppickerstyle.md)
   A picker style that presents the options as a group of radio buttons.
+- [struct TabsPickerStyle](tabspickerstyle.md)
+  A picker style that presents options as segmented tabs.
 - [struct WheelPickerStyle](wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 

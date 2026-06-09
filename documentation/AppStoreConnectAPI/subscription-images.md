@@ -13,22 +13,23 @@ Create, modify, and delete promotion images for your auto-renewalable subscripti
   Read details about a specific subscription image.
 - [List Subscription Images](get-v1-subscriptions-_id_-images.md)
   List all images for a specific subscription.
-- [GET /v1/subscriptions/{id}/relationships/images](get-v1-subscriptions-_id_-relationships-images.md)
-- [Read Subscription Image Information](patch-v1-subscriptionimages-_id_.md)
-  Read details about a specific subscription image.
-- [Delete an Subscription Image](delete-v1-subscriptionimages-_id_.md)
-  Delete the image asset that appears on the App Store listing that represents an subscription.
+- [List subscription image ids](get-v1-subscriptions-_id_-relationships-images.md)
+  List all images IDs for a specific subscription.
+- [Commit a subscription image](patch-v1-subscriptionimages-_id_.md)
+  Commit an uploaded subscription image.
+- [Delete a subscription image](delete-v1-subscriptionimages-_id_.md)
+  Delete the image asset that appears on the App Store listing that represents a subscription.
 ### Objects
 - [object SubscriptionImage](subscriptionimage.md)
-  The data structure that represents a subscription image resource.
+  An image used to represent a subscription product on the App Store product page.
 - [object SubscriptionImageCreateRequest](subscriptionimagecreaterequest.md)
   The request body you use to create a subscription purchase image reservation.
 - [object SubscriptionImageResponse](subscriptionimageresponse.md)
-  A response that contains a single subscription images resource.
+  A response containing a single subscription product image.
 - [object SubscriptionImagesResponse](subscriptionimagesresponse.md)
-  A response that contains a list of subscription image resources.
+  A response containing a list of images for a subscription product.
 - [object SubscriptionImageUpdateRequest](subscriptionimageupdaterequest.md)
-  The data structure that represents a subscription image update request resource.
+  The request body for updating the upload status or content of a subscription product image.
 - [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
 
 ## See Also
@@ -43,6 +44,8 @@ Create, modify, and delete promotion images for your auto-renewalable subscripti
   Manage scheduled price changes for auto-renewable subscriptions and get price point information.
 - [Subscription availability](subscription-availability.md)
   Read and modify territory availability for an auto-renewable subscription.
+- [Subscription plan availability](subscription-plan-availability.md)
+  Create and manage subscription plan availability for auto-renewable subscriptions.
 - [Billing Grace Periods](billing-grace-periods.md)
   Get information about the grace period and modify the opt-in value.
 

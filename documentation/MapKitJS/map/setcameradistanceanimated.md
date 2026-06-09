@@ -51,7 +51,7 @@ By default, the change of distance animates.
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.

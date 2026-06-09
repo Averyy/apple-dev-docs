@@ -12,6 +12,7 @@ Creates a normalized rectangle from a rectangle in an image coordinate space.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

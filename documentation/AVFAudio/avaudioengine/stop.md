@@ -36,8 +36,8 @@ This method stops the audio engine and the audio hardware, and releases any allo
   Pauses the audio engine.
 - [func reset()](avaudioengine/reset.md)
   Resets all audio nodes in the audio engine.
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence.md)
-  The music sequence instance that you attach to the audio engine, if any.
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+  Provides scoped access to the AVAudioEngine’s MusicSequence
 
 
 ---

@@ -16,7 +16,7 @@ class func validateTag(_ tag: String) throws
 
 ## Mentions
 
-- [Running Intel Binaries in Linux VMs with Rosetta](running-intel-binaries-in-linux-vms-with-rosetta.md)
+- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
 
 #### Discussion
 

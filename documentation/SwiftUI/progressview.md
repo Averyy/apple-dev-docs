@@ -17,6 +17,7 @@ A view that shows the progress toward completion of a task.
 ## Declaration
 
 ```swift
+nonisolated
 struct ProgressView<Label, CurrentValueLabel> where Label : View, CurrentValueLabel : View
 ```
 

@@ -6,7 +6,6 @@
 A Boolean value that indicates whether the passthrough camera feed is tinted, emphasizing the video content.
 
 **Availability**:
-- Mac Catalyst 18.0+
 - visionOS 1.0+
 
 ## Declaration

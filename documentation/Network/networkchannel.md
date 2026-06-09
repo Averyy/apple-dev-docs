@@ -39,7 +39,6 @@ The interface exposed by this type (and any derived classes) is dependent on the
 - [var messages: AsyncThrowingStream<ApplicationProtocol.Message<ApplicationProtocol.ContentType>, any Error>](networkchannel/messages.md)
   Receive data from a connection as an async stream.
 - [var parameters: NWParameters](networkchannel/parameters.md)
-  The set of parameters with which the channel was created
 - [var state: NetworkChannel<ApplicationProtocol>.State](networkchannel/state-swift.property.md)
   Access the current state of the connection
 ### Instance Methods
@@ -51,6 +50,12 @@ The interface exposed by this type (and any derived classes) is dependent on the
   Asynchronously request the establishment report for this connection. If called prior to the connection being in the .ready state, this method will wait until the connection becomes ready and then deliver the report. This method will start the connection if it isn’t already started.
 - [func metadata(definition: NWProtocolDefinition) -> NWProtocolMetadata?](networkchannel/metadata(definition:).md)
   Access connection-wide protocol metadata on the connection. This allows access to state for protocols like TCP and TLS that have long-term state.
+- [func onBetterPathUpdate((Self, Bool) -> Void) -> Self](networkchannel/onbetterpathupdate(_:).md)
+  A better path being available indicates that the system thinks there is a preferred path or interface to use, compared to the one this connection is actively using. As an example, the connection is established over an expensive cellular interface and an unmetered Wi-Fi interface is now available.
+- [func onPathUpdate((Self, NWPath) -> Void) -> Self](networkchannel/onpathupdate(_:).md)
+  Set a closure to be called when the connection’s path has changed, which may be called multiple times until the connection is cancelled.
+- [func onViabilityUpdate((Self, Bool) -> Void) -> Self](networkchannel/onviabilityupdate(_:).md)
+  Set a closure to be called when the connection’s viability changes, which may be called multiple times until the connection is cancelled.
 - [func ping<Content>(Content?, metadata: () -> [NWProtocolMetadata]) async throws](networkchannel/ping(_:metadata:).md)
   Send a ping frame on a connection.
 - [func pong<Content>(Content?, metadata: () -> [NWProtocolMetadata]) async throws](networkchannel/pong(_:metadata:).md)

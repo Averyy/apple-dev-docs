@@ -17,7 +17,8 @@ Creates a navigation link that presents the destination view.
 ## Declaration
 
 ```swift
-init(@ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Label)
+nonisolated
+init(@ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
 ```
 
 ## Mentions
@@ -27,7 +28,7 @@ init(@ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Labe
 ## Parameters
 
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

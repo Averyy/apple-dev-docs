@@ -11,37 +11,39 @@ The `passTypeId` resource represents a pass type certificates unique identifier 
 ## Topics
 
 ### Managing pass type Ids
-- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
-- [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
-- [List Pass Type IDs](get-v1-passtypeids.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-relationships-passtypeid.md)
+  List all PassTypeIDId Ids for a specific certificate.
+- [List pass type ids](get-v1-passtypeids.md)
   Find and list pass type IDs that are registered to your team.
-- [Read Passtypeid Information](get-v1-passtypeids-_id_.md)
+- [Read passtypeid information](get-v1-passtypeids-_id_.md)
   Get information about a specific pass type ID.
-- [List All Certificates for a Passtypeid](get-v1-passtypeids-_id_-certificates.md)
+- [List all certificates for a passtypeid](get-v1-passtypeids-_id_-certificates.md)
   List all certificates for a specific pass type ID.
-- [GET /v1/passTypeIds/{id}/relationships/certificates](get-v1-passtypeids-_id_-relationships-certificates.md)
-- [Modify a Passtypeid](patch-v1-passtypeids-_id_.md)
+- [List certificate ids for a passtypeid](get-v1-passtypeids-_id_-relationships-certificates.md)
+  List all certificate IDs for a specific pass type ID.
+- [Modify a passtypeid](patch-v1-passtypeids-_id_.md)
   Update a specific pass type ID’s name.
-- [Create a Passtypeid](post-v1-passtypeids.md)
+- [Create a passtypeid](post-v1-passtypeids.md)
   Create a new identifier for use with a pass type ID certificate using a certificate signing request.
-- [Delete a Passtypeid](delete-v1-passtypeids-_id_.md)
+- [Delete a passtypeid](delete-v1-passtypeids-_id_.md)
   Delete a pass type ID that is used for app distribution.
 ### Object and data types
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
   A response body that contains the ID of a single related resource.
 - [object PassTypeId](passtypeid.md)
-  The data structure that represents a pass type id resource.
+  A pass type identifier used to create and manage Wallet passes such as boarding passes, coupons, or loyalty cards.
 - [object PassTypeIdCertificatesLinkagesResponse](passtypeidcertificateslinkagesresponse.md)
-  A response that contains a list of pass type id certificates linkages response resources.
+  A response containing the resource identifiers of signing certificates associated with a pass type identifier.
 - [object PassTypeIdCreateRequest](passtypeidcreaterequest.md)
-  The request body you use to create a pass type id create request resource.
+  The request body for registering a new pass type identifier for Wallet pass signing.
 - [object PassTypeIdResponse](passtypeidresponse.md)
-  A response that contains a single pass type id response resource.
+  A response containing a single Wallet pass type identifier.
 - [object PassTypeIdUpdateRequest](passtypeidupdaterequest.md)
   The request body you use to update a pass type id update request.
 - [object PassTypeIdsResponse](passtypeidsresponse.md)
-  A response that contains a list of pass type ids response resources.
+  A response containing a list of Wallet pass type identifiers registered in your account.
 
 ## See Also
 

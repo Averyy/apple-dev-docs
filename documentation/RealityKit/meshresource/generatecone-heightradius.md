@@ -22,12 +22,12 @@ Creates a new cone mesh with the specified dimensions.
 
 #### Discussion
 
-The cone is centered at the local origin.
+The cone is centered at the local origin with its axis aligned along the y-axis.
 
 ## Parameters
 
-- `height`: The height of the cone in meters [m].
-- `radius`: The radius of the cone in meters [m].
+- `height`: The height of the cone, in meters, along the y-axis.
+- `radius`: The base radius of the cone, in meters.
 
 ## See Also
 

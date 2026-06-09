@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a review submission create request resource.
+The data wrapper for a review submission create request, containing the resource type and app relationship.
 
 **Availability**:
 - App Store Connect API 1.7+

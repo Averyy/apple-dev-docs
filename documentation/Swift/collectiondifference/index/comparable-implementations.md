@@ -17,12 +17,12 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (CollectionDifference<ChangeElement>.Index, CollectionDifference<ChangeElement>.Index) -> Bool](collectiondifference/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](collectiondifference/index/_(_:_:)-3fyv7.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_(_:_:)-8ex7m.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](collectiondifference/index/_=(_:_:)-3zh7l.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](collectiondifference/index/_=(_:_:)-9z65w.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_=(_:_:)-2ady7.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](collectiondifference/index/_=(_:_:)-6a17u.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

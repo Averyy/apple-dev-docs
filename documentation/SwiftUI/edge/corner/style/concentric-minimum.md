@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-The concentric corner style with an optional minimum corner style. When a corner is concentric to its container, it will adjust the current corner radius to ensure that the container corner radius equals to current corner radius plus the distance between corners. If the current corner is too far away from the container corner, the radius will be resolved as zero unless a minimum corner style is provided.
+A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius, with an optional minimum radius.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,10 @@ The concentric corner style with an optional minimum corner style. When a corner
 ```swift
 static func concentric(minimum: Edge.Corner.Style? = nil) -> Edge.Corner.Style
 ```
+
+#### Discussion
+
+When a corner is concentric to its container, the system calculates the corner radius to equal the container shape’s corner radius minus the distance between corners. If the radius that the system calculates is less than the minimum radius you provide, the system uses the minimum radius. When the system calculates a zero radius, the corner is square.
 
 
 ---

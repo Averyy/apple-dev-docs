@@ -7,14 +7,17 @@ Get information about who or which service made a review submission.
 ## Topics
 
 ### Reading actor information
-- [List All Actors](get-v1-actors.md)
+- [List all actors](get-v1-actors.md)
   Get a list of actors.
-- [Read Actor Information](get-v1-actors-_id_.md)
+- [Read actor information](get-v1-actors-_id_.md)
   Get information about a specific actor.
 ### Objects
 - [object Actor](actor.md)
+  An entity in the audit log representing the person, service, or system that performed an action in App Store Connect.
 - [object ActorResponse](actorresponse.md)
+  A response containing a single audit log actor who performed a tracked action in App Store Connect.
 - [object ActorsResponse](actorsresponse.md)
+  A response containing a list of audit log actors who performed actions in App Store Connect.
 
 ## See Also
 

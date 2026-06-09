@@ -16,7 +16,7 @@ Adds an item-based context menu to a view.
 
 ```swift
 nonisolated
-func contextMenu<I, M>(forSelectionType itemType: I.Type = I.self, @ViewBuilder menu: @escaping (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)? = nil) -> some View where I : Hashable, M : View
+func contextMenu<I, M>(forSelectionType itemType: I.Type = I.self, @ContentBuilder menu: @escaping (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)? = nil) -> some View where I : Hashable, M : View
 ```
 
 #### Return Value

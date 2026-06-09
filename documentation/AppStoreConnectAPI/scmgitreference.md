@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Git References resource.
+A Git branch, tag, or commit reference in a source code repository connected to Xcode Cloud.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -16,7 +16,7 @@ object ScmGitReference
 
 ## Topics
 
-### Objects and Types
+### Objects and types
 - [object ScmGitReference.Attributes](scmgitreference/attributes-data.dictionary.md)
   The attributes that describe a Git Reference resource.
 - [object ScmGitReference.Relationships](scmgitreference/relationships-data.dictionary.md)
@@ -35,9 +35,9 @@ object ScmGitReference
 ## See Also
 
 - [object ScmGitReferenceResponse](scmgitreferenceresponse.md)
-  A response that contains a single Git References resource.
+  The response body for endpoints that read a single SCM Git reference in Xcode Cloud.
 - [object ScmGitReferencesResponse](scmgitreferencesresponse.md)
-  A response that contains a list of Git References resources.
+  The response body for endpoints that list Git references in an Xcode Cloud repository.
 
 
 ---

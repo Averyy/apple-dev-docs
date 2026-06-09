@@ -17,6 +17,7 @@ A scrollable view.
 ## Declaration
 
 ```swift
+nonisolated
 struct ScrollView<Content> where Content : View
 ```
 
@@ -50,7 +51,7 @@ var body: some View {
 
 You can influence where a scroll view is initially scrolled by using the [`defaultScrollAnchor(_:)`](view/defaultscrollanchor(_:).md) view modifier.
 
-Provide a value of `UnitPoint/center`` to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
+Provide a value of [`center`](unitpoint/center.md) to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
 
 ```swift
 ScrollView([.horizontal, .vertical]) {
@@ -59,7 +60,7 @@ ScrollView([.horizontal, .vertical]) {
 .defaultScrollAnchor(.center)
 ```
 
-Or provide an alignment of `UnitPoint/bottom`` to have the scroll view start at the bottom of its content when a scroll view is scrollable in its vertical axes.
+Or provide an alignment of [`bottom`](unitpoint/bottom.md) to have the scroll view start at the bottom of its content when a scroll view is scrollable in its vertical axes.
 
 ```swift
 ScrollView {

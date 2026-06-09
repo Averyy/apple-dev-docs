@@ -16,6 +16,7 @@ object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationshi
 
 ### Objects
 - [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest.Data.Relationships.SandboxTesters.Data](sandboxtestersclearpurchasehistoryrequestv2createrequest/data-data.dictionary/relationships-data.dictionary/sandboxtesters-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a request to clear sandbox tester purchase history.
 
 ## Properties
 

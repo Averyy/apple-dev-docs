@@ -23,10 +23,11 @@ object ImageAsset
 ## See Also
 
 - [object BuildIcon](buildicon.md)
-  The data structure that represents the Build Icons resource.
+  A PNG icon image extracted from a build, used for display in App Store Connect and TestFlight.
 - [object BuildIconsResponse](buildiconsresponse.md)
-  A response that contains a list of Build Icon resources.
+  A response containing a list of icon images for a build.
 - [object BuildIconsWithoutIncludesResponse](buildiconswithoutincludesresponse.md)
+  A response containing a list of build icons, without related resources.
 - [type IconAssetType](iconassettype.md)
   String that represents the type of icon contained in the build.
 

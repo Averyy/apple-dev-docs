@@ -8,6 +8,7 @@ The user-provided name of the device as a string, or `nil` if not available.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

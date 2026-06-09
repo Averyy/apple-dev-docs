@@ -93,6 +93,10 @@ protocol NSBrowserDelegate : NSObjectProtocol
 ### Displaying Cell Content
 - [func browser(NSBrowser, shouldShowCellExpansionForRow: Int, column: Int) -> Bool](nsbrowserdelegate/browser(_:shouldshowcellexpansionforrow:column:).md)
   Invoked to allow the delegate to control cell expansion for a specific row and column.
+### Instance Methods
+- [func browser(NSBrowser, draggingSession: NSDraggingSession, endedAt: NSPoint, operation: NSDragOperation)](nsbrowserdelegate/browser(_:draggingsession:endedat:operation:).md)
+- [func browser(NSBrowser, draggingSession: NSDraggingSession, willBeginAt: NSPoint, forRowsWith: IndexSet, column: Int)](nsbrowserdelegate/browser(_:draggingsession:willbeginat:forrowswith:column:).md)
+- [func browser(NSBrowser, pasteboardWriterForRow: Int, column: Int) -> (any NSPasteboardWriting)?](nsbrowserdelegate/browser(_:pasteboardwriterforrow:column:).md)
 
 ## Relationships
 

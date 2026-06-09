@@ -55,6 +55,8 @@ struct ExampleSelfPreviewWhenFocusedView: View {
   A view that displays content from a player and a native user interface to control playback.
 - [func continuityDevicePicker(isPresented: Binding<Bool>, onDidConnect: ((AVContinuityDevice?) -> Void)?) -> some View](view/continuitydevicepicker(ispresented:ondidconnect:).md)
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 
 ---

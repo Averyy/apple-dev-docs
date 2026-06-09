@@ -8,6 +8,7 @@ An error that occurs if your app doesn’t have access to any paired devices.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ Fetches the share participant with the specified email address.
 ## Declaration
 
 ```swift
-func shareParticipant(forEmailAddress emailAddress: String) async throws -> CKShare.Participant
+func fetchShareParticipant(withEmailAddress emailAddress: String, completionHandler: @escaping @Sendable (CKShare.Participant?, (any Error)?) -> Void)
 ```
 
 #### Discussion

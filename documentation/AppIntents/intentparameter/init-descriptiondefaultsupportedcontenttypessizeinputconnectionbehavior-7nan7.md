@@ -17,7 +17,7 @@ Creates an app intent parameter for an array with a specified size.
 ## Declaration
 
 ```swift
-convenience init(description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, supportedContentTypes: Array<UTType>? = nil, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior = .default)
+convenience init(description: LocalizedStringResource? = nil, default defaultValue: Value.UnwrappedType? = nil, supportedContentTypes: [UTType]? = nil, size: IntentCollectionSize, inputConnectionBehavior: InputConnectionBehavior = .default)
 ```
 
 ## Parameters

@@ -35,28 +35,28 @@ Other properties and methods let you track the progress of a download, change th
 
 ## Topics
 
-### Initializing a Resource Request
+### Initializing a resource request
 - [convenience init(tags: Set<String>)](nsbundleresourcerequest/init(tags:).md)
   Initializes a resource request for managing the on-demand resources marked with any of the set of specified tags. The managed resources are loaded into the main bundle.
 - [init(tags: Set<String>, bundle: Bundle)](nsbundleresourcerequest/init(tags:bundle:).md)
   Initializes a resource request for managing the on-demand resources marked with any of the set of specified tags. The managed resources are loaded into the specified bundle.
-### Accessing the Configuration
+### Accessing the configuration
 - [var bundle: Bundle](nsbundleresourcerequest/bundle.md)
   A reference to the bundle used for storing the downloaded resources. (read-only)
 - [var tags: Set<String>](nsbundleresourcerequest/tags.md)
   A set of strings, with each string specifying a tag used to mark on-demand resources managed by the request. (read-only)
-### Requesting Resources
+### Requesting resources
 - [func beginAccessingResources(completionHandler: ((any Error)?) -> Void)](nsbundleresourcerequest/beginaccessingresources(completionhandler:).md)
   Requests access to the resources marked with the managed tags. If any of the resources are not on the device, they are requested from the App Store.
 - [func conditionallyBeginAccessingResources(completionHandler: (Bool) -> Void)](nsbundleresourcerequest/conditionallybeginaccessingresources(completionhandler:).md)
   Checks whether the resources marked with the tags managed by the request are already on the device. If all of the resources are on the device, you can begin accessing those resources.
 - [func endAccessingResources()](nsbundleresourcerequest/endaccessingresources.md)
   Informs the system that you have finished accessing the resources marked with the tags managed by the request.
-### Setting the Download Priority
+### Setting the download priority
 - [var loadingPriority: Double](nsbundleresourcerequest/loadingpriority.md)
   A hint to the system of the relative priority of the resource request.
 - [let NSBundleResourceRequestLoadingPriorityUrgent: Double](nsbundleresourcerequestloadingpriorityurgent.md)
-### Tracking Progress
+### Tracking progress
 - [var progress: Progress](nsbundleresourcerequest/progress.md)
   A reference to the progress object associated with the specified resource request. (read-only)
 ### Errors
@@ -70,11 +70,12 @@ Other properties and methods let you track the progress of a download, change th
   The application specified a tag that the system couldn’t find in the application tag manifest.
 - [var NSBundleOnDemandResourceOutOfSpaceError: Int](nsbundleondemandresourceoutofspaceerror-swift.var.md)
   Insufficient space available to download the requested on-demand resources.
-### Notifications
+### Working with notifications
 - [static let NSBundleResourceRequestLowDiskSpace: NSNotification.Name](nsnotification/name-swift.struct/nsbundleresourcerequestlowdiskspace.md)
   Posted after the system detects that the amount of available disk space is getting low. The notification is posted to the default notification center.
-### Structures
+### Working with notification messages
 - [NSBundleResourceRequest.LowDiskSpaceMessage](nsbundleresourcerequest/lowdiskspacemessage.md)
+  A message the system sends when it detects the amount of available disk space getting low.
 
 ## Relationships
 

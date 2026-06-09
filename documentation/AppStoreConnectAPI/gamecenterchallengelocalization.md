@@ -20,6 +20,7 @@ object GameCenterChallengeLocalization
 - [object GameCenterChallengeLocalization.Attributes](gamecenterchallengelocalization/attributes-data.dictionary.md)
   Attributes that describe a challenge resource.
 - [object GameCenterChallengeLocalization.Relationships](gamecenterchallengelocalization/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -32,14 +33,14 @@ object GameCenterChallengeLocalization
 ## See Also
 
 - [object GameCenterChallengeLocalizationCreateRequest](gamecenterchallengelocalizationcreaterequest.md)
-  The request body you use to create a challenge resource.
+  The request body for creating a localization for a Game Center challenge.
 - [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
 - [object GameCenterChallengeLocalizationResponse](gamecenterchallengelocalizationresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single localization for a Game Center challenge.
 - [object GameCenterChallengeLocalizationUpdateRequest](gamecenterchallengelocalizationupdaterequest.md)
   The request body you use to update a challenge.
 - [object GameCenterChallengeLocalizationsResponse](gamecenterchallengelocalizationsresponse.md)
-  A response that contains a list of challenge resources.
+  A response containing a list of localizations for a Game Center challenge.
 - [object GameCenterChallengeVersionLocalizationsLinkagesResponse](gamecenterchallengeversionlocalizationslinkagesresponse.md)
 
 

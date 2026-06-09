@@ -1,4 +1,4 @@
-# Read Device Information
+# Read device information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Get information for a specific device registered to your team.
 
 ## See Also
 
-- [List Devices](get-v1-devices.md)
+- [List devices](get-v1-devices.md)
   Find and list devices registered to your team.
 
 

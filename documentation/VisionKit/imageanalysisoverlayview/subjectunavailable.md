@@ -27,7 +27,6 @@ This enumeration contains a failure [`ImageAnalysisOverlayView.SubjectUnavailabl
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

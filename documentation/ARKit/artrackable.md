@@ -44,6 +44,7 @@ Trackable anchor classes affect other ARKit behaviors:
 - [ARFaceAnchor](arfaceanchor.md)
 - [ARGeoAnchor](argeoanchor.md)
 - [ARImageAnchor](arimageanchor.md)
+- [ARObjectAnchor](arobjectanchor.md)
 
 ## See Also
 

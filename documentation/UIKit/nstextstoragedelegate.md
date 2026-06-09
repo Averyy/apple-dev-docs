@@ -6,11 +6,11 @@
 The optional methods that delegates of text storage objects implement to handle text-edit processing.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 7.0+
+- iPadOS 7.0+
+- Mac Catalyst 13.1+
+- tvOS 9.0+
+- visionOS 1.0+
 
 ## Declaration
 

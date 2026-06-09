@@ -1,4 +1,4 @@
-# Delete a Bundle ID
+# Delete a bundle id
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,7 +20,7 @@ You can only delete bundle IDs that are used for development. You can’t delete
 
 ## See Also
 
-- [Modify a Bundle ID](patch-v1-bundleids-_id_.md)
+- [Modify a bundle id](patch-v1-bundleids-_id_.md)
   Update a specific bundle ID’s name.
 
 

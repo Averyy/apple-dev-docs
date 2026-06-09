@@ -1,4 +1,4 @@
-# Create a Subscription Offer
+# Create a subscription offer
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Create a subscription offer that provides offer codes for an auto-renewable subs
 
 ## See Also
 
-- [Read Subscription Offer Code Information](get-v1-subscriptionoffercodes-_id_.md)
+- [Read subscription offer code information](get-v1-subscriptionoffercodes-_id_.md)
   Get details about a specific subscription offer that has offer codes for an auto-renewable subscription.
-- [Deactivate a Subscription Offer With Offer Codes](patch-v1-subscriptionoffercodes-_id_.md)
+- [Deactivate a subscription offer with offer codes](patch-v1-subscriptionoffercodes-_id_.md)
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
-- [List All Subscription Offer Code Prices](get-v1-subscriptionoffercodes-_id_-prices.md)
+- [List all subscription offer code prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
-- [GET /v1/subscriptionOfferCodes/{id}/relationships/prices](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
+- [List price IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
 
 
 ---

@@ -43,6 +43,18 @@ var body: some View {
 - `label`: The accessibility label to apply.
 - `isEnabled`: If true the accessibility label is applied; otherwise the accessibility label is unchanged.
 
+## See Also
+
+- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+  Communicates to the user what happens after selecting the tab.
+- [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
+](tabcontent/accessibilityidentifier(_:isenabled:).md)
+  Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
+- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+  Sets alternate input labels with which users identify a tab.
+- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+  Adds a textual description of the value that the tab contains.
+
 
 ---
 

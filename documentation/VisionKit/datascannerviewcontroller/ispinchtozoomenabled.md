@@ -8,6 +8,7 @@ A Boolean value that indicates whether people can use a two-finger pinch-to-zoom
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

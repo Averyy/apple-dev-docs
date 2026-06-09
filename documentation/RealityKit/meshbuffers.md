@@ -21,6 +21,17 @@ enum MeshBuffers
 
 ## Topics
 
+### Creating texture coordinate buffers
+- [static func textureCoordinates(Int) -> MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates(_:).md)
+- [MeshBuffers.UVs](meshbuffers/uvs.md)
+### Accessing coordinate channels
+- [static let textureCoordinates1: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates1.md)
+- [static let textureCoordinates2: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates2.md)
+- [static let textureCoordinates3: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates3.md)
+- [static let textureCoordinates4: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates4.md)
+- [static let textureCoordinates5: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates5.md)
+- [static let textureCoordinates6: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates6.md)
+- [static let textureCoordinates7: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates7.md)
 ### Structures
 - [MeshBuffers.Identifier](meshbuffers/identifier.md)
 - [MeshBuffers.Semantic](meshbuffers/semantic.md)
@@ -40,6 +51,12 @@ enum MeshBuffers
 - [static let tangents: MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/tangents-swift.type.property.md)
 - [static let textureCoordinates: MeshBuffers.Semantic<SIMD2<Float>>](meshbuffers/texturecoordinates-swift.type.property.md)
 - [static let triangleIndices: MeshBuffers.Semantic<UInt32>](meshbuffers/triangleindices-swift.type.property.md)
+- [static let uv2: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv2.md)
+- [static let uv3: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv3.md)
+- [static let uv4: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv4.md)
+- [static let uv5: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv5.md)
+- [static let uv6: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv6.md)
+- [static let uv7: MeshBuffers.Semantic<SIMD4<Float>>](meshbuffers/uv7.md)
 ### Type Methods
 - [static func blendShapeOffsets(named: String) -> MeshBuffers.Semantic<SIMD3<Float>>](meshbuffers/blendshapeoffsets(named:).md)
 - [static func custom<Value>(String, type: Value.Type) -> MeshBuffers.Semantic<Value>](meshbuffers/custom(_:type:).md)

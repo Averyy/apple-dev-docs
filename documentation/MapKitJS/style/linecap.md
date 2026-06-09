@@ -11,8 +11,8 @@ The style to use when drawing line endings.
 ## Declaration
 
 ```swift
-get lineCap(): CanvasLineCap;
-set lineCap(lineCap: CanvasLineCap);
+get lineCap(): "square" | "butt" | "round";
+set lineCap(lineCap: "square" | "butt" | "round");
 ```
 
 #### Discussion

@@ -11,6 +11,7 @@ Enforces values fall within a range.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,16 +21,18 @@ static func range(_ range: ClosedRange<Decimal>) -> GenerationGuide<Decimal>
 
 #### Discussion
 
-Use a `range` generation guide — whose bounds are inclusive — to ensure the model produces a value that falls within a range. For example, you can specify that the level of characters in your game are between 1 and 100:
+Bounds are inclusive.
+
+A `range` generation guide may be used when you want to ensure the model produces a value that falls in some range, such as the cost for an item in a game.
 
 ```swift
 @Generable
-struct GameCharacter {
-    @Guide(description: "A creative name appropriate for a fantasy RPG character")
+struct ShopItem {
+    @Guide(description: "A creative name for an item sold in a fantasy RPG")
     var name: String
 
-    @Guide(description: "A level for the character", .range(1...100))
-    var level: Int
+    @Guide(description: "A cost for the item", .range(0.25...1000))
+    var cost: Decimal
 }
 ```
 

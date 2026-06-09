@@ -22,6 +22,11 @@ var dimensions: MTLTensorExtents { get set }
 
 #### Discussion
 
+You are responsible for ensuring `dimensions` meets the following requirements:
+
+- `dimensions[i]` must be greater than 0.
+- If [`dataType`](mtltensordescriptor/datatype.md) is a format [`MTLTensorDataType`](mtltensordatatype.md), `dimensions[0]` must be a multiple of 32 elements.
+
 The default value of this property is a rank one extents with size one.
 
 

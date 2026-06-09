@@ -8,6 +8,7 @@ A value that indicates whether the balance is a credit or a debit balance.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -11,6 +11,7 @@ Immersive space content that uses a SwiftUI view hierarchy as the content.
 ## Declaration
 
 ```swift
+nonisolated
 struct ImmersiveSpaceViewContent<Content> where Content : View
 ```
 

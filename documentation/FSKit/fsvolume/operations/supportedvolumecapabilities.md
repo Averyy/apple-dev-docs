@@ -18,7 +18,7 @@ var supportedVolumeCapabilities: FSVolume.SupportedCapabilities { get }
 ## See Also
 
 - [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
-  A type that represents capabillities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
+  A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
 - [var volumeStatistics: FSStatFSResult](fsvolume/operations/volumestatistics.md)
   A property that provides up-to-date statistics of the volume.
 - [class FSStatFSResult](fsstatfsresult.md)

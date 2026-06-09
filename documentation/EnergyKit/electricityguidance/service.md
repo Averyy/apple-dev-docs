@@ -9,7 +9,6 @@ An interface for obtaining electricity guidance data.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

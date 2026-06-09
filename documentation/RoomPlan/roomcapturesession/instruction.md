@@ -9,7 +9,6 @@ Instructions that the framework recommends the app display to the user.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 
@@ -44,7 +43,6 @@ Your app receives instructions through the [`captureSession(_:didProvide:)`](roo
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

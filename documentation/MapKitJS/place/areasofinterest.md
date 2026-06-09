@@ -11,7 +11,7 @@ Common names of the area in which the place resides.
 ## Declaration
 
 ```swift
-areasOfInterest?: string[];
+areasOfInterest: string[] | null;
 ```
 
 #### Discussion

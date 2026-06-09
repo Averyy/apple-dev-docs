@@ -12,9 +12,9 @@ Overrides a polygon.
 
 ```swift
 itemForPolygon?(
-        overlay: PolygonOverlay,
-        geoJSON: GeoJSONTypes.Polygon,
-    ): PolygonOverlay | null;
+    overlay: PolygonOverlay,
+    geoJSON: GeoJSONTypes.Polygon,
+): PolygonOverlay | null;
 ```
 
 #### Return Value

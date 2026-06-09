@@ -25,7 +25,7 @@ subscript(bounds: PartialRangeUpTo<Int>) -> CMBlockBuffer.Slice { get }
 - [subscript(Range<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-1go3.md)
 - [subscript(PartialRangeFrom<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-9ntfs.md)
 - [subscript(PartialRangeThrough<Int>) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-532k5.md)
-- [subscript((UnboundedRange_) -> ()) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-8jilq.md)
+- [subscript(UnboundedRange) -> CMBlockBuffer.Slice](cmblockbufferprotocol/subscript(_:)-8jilq.md)
 
 
 ---

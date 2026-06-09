@@ -9,7 +9,6 @@ A structure describing a query that you use to obtain environmental impact infor
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -47,10 +46,10 @@ struct ElectricityInsightQuery
 
 ## See Also
 
-- [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [actor ElectricityInsightService](electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
+- [struct ElectricityInsightRecord](electricityinsightrecord.md)
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
   A protocol for types that can measure electricity usage data.
 

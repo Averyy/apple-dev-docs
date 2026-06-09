@@ -17,7 +17,8 @@ Creates a label with a custom title and icon.
 ## Declaration
 
 ```swift
-init(@ViewBuilder title: () -> Title, @ViewBuilder icon: () -> Icon)
+nonisolated
+init(@ContentBuilder title: () -> Title, @ContentBuilder icon: () -> Icon)
 ```
 
 ## See Also

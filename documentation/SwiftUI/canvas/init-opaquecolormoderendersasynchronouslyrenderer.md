@@ -17,6 +17,7 @@ Creates and configures a canvas.
 ## Declaration
 
 ```swift
+nonisolated
 init(opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear, rendersAsynchronously: Bool = false, renderer: @escaping (inout GraphicsContext, CGSize) -> Void)
 ```
 

@@ -16,7 +16,7 @@ object CiAction.TestConfiguration
 
 ## Topics
 
-### Objects and Types
+### Objects and types
 - [object CiTestDestination](citestdestination.md)
   The test destination of a test action that Xcode Cloud performs.
 - [type CiTestDestinationKind](citestdestinationkind.md)

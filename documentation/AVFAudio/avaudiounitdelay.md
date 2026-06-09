@@ -46,6 +46,8 @@ A delay unit delays the input signal by the specified time interval and then ble
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

@@ -27,7 +27,11 @@ protocol CaseDisplayRepresentable : CustomLocalizedStringResourceConvertible, Ca
   A dictionary that maps each value to the visual elements that represent it.
 ### Providing a localized description
 - [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-7gj71.md)
+  A resource that helps provide a description of this instance.
 - [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-78c15.md)
+  A resource that helps provide a description of this instance.
+### Default Implementations
+- [CustomLocalizedStringResourceConvertible Implementations](casedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
 
 ## Relationships
 
@@ -38,6 +42,7 @@ protocol CaseDisplayRepresentable : CustomLocalizedStringResourceConvertible, Ca
 - [Hashable](../Swift/Hashable.md)
 ### Inherited By
 - [AppEnum](appenum.md)
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AssistantEnum](assistantenum.md)
 - [AssistantSchemaEnum](assistantschemaenum.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)

@@ -23,7 +23,9 @@ final class DataStoreSaveChangesResult<T> where T : DataStoreSnapshot
 
 ### Initializers
 - [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T])](datastoresavechangesresult/init(for:remappedidentifiers:snapshotstoreregister:).md)
+- [init(for: String, remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier], snapshotsToReregister: [PersistentIdentifier : T], historyToken: (any HistoryToken)?)](datastoresavechangesresult/init(for:remappedidentifiers:snapshotstoreregister:historytoken:).md)
 ### Instance Properties
+- [let historyToken: (any HistoryToken)?](datastoresavechangesresult/historytoken.md)
 - [let remappedIdentifiers: [PersistentIdentifier : PersistentIdentifier]](datastoresavechangesresult/remappedidentifiers.md)
 - [let snapshotsToReregister: [PersistentIdentifier : T]](datastoresavechangesresult/snapshotstoreregister.md)
 - [let storeIdentifier: String](datastoresavechangesresult/storeidentifier.md)

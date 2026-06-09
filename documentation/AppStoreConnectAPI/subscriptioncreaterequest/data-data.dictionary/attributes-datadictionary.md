@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription create request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -28,6 +30,7 @@ object SubscriptionCreateRequest.Data.Attributes
 ## See Also
 
 - [object SubscriptionCreateRequest.Data.Relationships](subscriptioncreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

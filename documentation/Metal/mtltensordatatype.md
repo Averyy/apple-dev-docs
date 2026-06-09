@@ -23,17 +23,41 @@ enum MTLTensorDataType
 
 ### Enumeration Cases
 - [MTLTensorDataType.bfloat16](mtltensordatatype/bfloat16.md)
+  A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits and 1 sign bit.
 - [MTLTensorDataType.float16](mtltensordatatype/float16.md)
+  A half-precision floating point data type.
 - [MTLTensorDataType.float32](mtltensordatatype/float32.md)
+  A single-precision floating point data type.
+- [MTLTensorDataType.float4e2m1](mtltensordatatype/float4e2m1.md)
+  A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and 1 sign bit.
+- [MTLTensorDataType.float8e4m3](mtltensordatatype/float8e4m3.md)
+  An 8-bit floating point format data type with 4 exponent bits, 3 mantissa bits and 1 sign bit.
+- [MTLTensorDataType.float8e5m2](mtltensordatatype/float8e5m2.md)
+  An 8-bit floating point format data type with 5 exponent bits, 2 mantissa bits and 1 sign bit.
+- [MTLTensorDataType.float8ue8m0](mtltensordatatype/float8ue8m0.md)
+  An 8-bit floating point format data type with 8 exponent bits.
 - [MTLTensorDataType.int16](mtltensordatatype/int16.md)
+  A 16-bit signed integer data type.
+- [MTLTensorDataType.int2](mtltensordatatype/int2.md)
+  A 2-bit signed integer format data type.
 - [MTLTensorDataType.int32](mtltensordatatype/int32.md)
+  A 32-bit integer data type.
 - [MTLTensorDataType.int4](mtltensordatatype/int4.md)
+  A 4-bit signed integer format data type.
 - [MTLTensorDataType.int8](mtltensordatatype/int8.md)
+  An 8-bit signed integer data type.
 - [MTLTensorDataType.none](mtltensordatatype/none.md)
+  An invalid data type.
 - [MTLTensorDataType.uint16](mtltensordatatype/uint16.md)
+  A 16-bit unsigned integer data type.
+- [MTLTensorDataType.uint2](mtltensordatatype/uint2.md)
+  A 2-bit unsigned integer format data type.
 - [MTLTensorDataType.uint32](mtltensordatatype/uint32.md)
+  A 32-bit unsigned integer data type.
 - [MTLTensorDataType.uint4](mtltensordatatype/uint4.md)
+  A 4-bit unsigned integer format data type.
 - [MTLTensorDataType.uint8](mtltensordatatype/uint8.md)
+  An 8-bit unsigned integer data type.
 ### Initializers
 - [init?(rawValue: Int)](mtltensordatatype/init(rawvalue:).md)
 

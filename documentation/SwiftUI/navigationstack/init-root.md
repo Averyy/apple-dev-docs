@@ -17,8 +17,8 @@ Creates a navigation stack that manages its own navigation state.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(@ViewBuilder root: () -> Root) where Data == NavigationPath
+nonisolated
+init(@ContentBuilder root: () -> Root) where Data == NavigationPath
 ```
 
 ## Parameters

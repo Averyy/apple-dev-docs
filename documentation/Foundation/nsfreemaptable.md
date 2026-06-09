@@ -17,7 +17,7 @@ Deletes the specified map table.
 ## Declaration
 
 ```swift
-func NSFreeMapTable(_ table: NSMapTable<AnyObject, AnyObject>)
+func NSFreeMapTable(_ table: consuming NSMapTable<AnyObject, AnyObject>)
 ```
 
 #### Discussion

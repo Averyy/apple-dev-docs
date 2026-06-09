@@ -285,6 +285,24 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
 ### Deprecated
 - [Deprecated Symbols](nsapplication-deprecated-symbols.md)
   Review symbols that are no longer supported, and find the replacements to use instead.
+### Structures
+- [NSApplication.DidBecomeActiveMessage](nsapplication/didbecomeactivemessage.md)
+- [NSApplication.DidChangeOcclusionStateMessage](nsapplication/didchangeocclusionstatemessage.md)
+- [NSApplication.DidChangeScreenParametersMessage](nsapplication/didchangescreenparametersmessage.md)
+- [NSApplication.DidFinishRestoringWindowsMessage](nsapplication/didfinishrestoringwindowsmessage.md)
+- [NSApplication.DidHideMessage](nsapplication/didhidemessage.md)
+- [NSApplication.DidResignActiveMessage](nsapplication/didresignactivemessage.md)
+- [NSApplication.DidUnhideMessage](nsapplication/didunhidemessage.md)
+- [NSApplication.DidUpdateWindowsMessage](nsapplication/didupdatewindowsmessage.md)
+- [NSApplication.ProtectedDataDidBecomeAvailableMessage](nsapplication/protecteddatadidbecomeavailablemessage.md)
+- [NSApplication.ProtectedDataWillBecomeUnavailableMessage](nsapplication/protecteddatawillbecomeunavailablemessage.md)
+- [NSApplication.WillBecomeActiveMessage](nsapplication/willbecomeactivemessage.md)
+- [NSApplication.WillFinishLaunchingMessage](nsapplication/willfinishlaunchingmessage.md)
+- [NSApplication.WillHideMessage](nsapplication/willhidemessage.md)
+- [NSApplication.WillResignActiveMessage](nsapplication/willresignactivemessage.md)
+- [NSApplication.WillTerminateMessage](nsapplication/willterminatemessage.md)
+- [NSApplication.WillUnhideMessage](nsapplication/willunhidemessage.md)
+- [NSApplication.WillUpdateWindowsMessage](nsapplication/willupdatewindowsmessage.md)
 ### Instance Methods
 - [func addSceneRepresentation<C>(NSHostingSceneRepresentation<C>)](nsapplication/addscenerepresentation(_:).md)
   Adds the specified SwiftUI scene representation to the current application.
@@ -322,6 +340,8 @@ Do not override [`shared`](nsapplication/shared.md). The default implementation,
   A set of methods that manage your app’s life cycle and its interaction with common system services.
 - [func NSApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> Int32](nsapplicationmain(_:_:).md)
   Called by the main function to create and run the application.
+- [Managing ongoing background processes in your Mac](managing-ongoing-background-processes-in-your-mac.md)
+  Configure your app to help people understand when background processes may continue after they close your app.
 
 
 ---

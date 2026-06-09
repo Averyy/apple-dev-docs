@@ -15,6 +15,7 @@ A type of table row content that creates table rows created by iterating over a 
 ## Declaration
 
 ```swift
+nonisolated
 struct TableForEachContent<Data> where Data : RandomAccessCollection, Data.Element : Identifiable
 ```
 

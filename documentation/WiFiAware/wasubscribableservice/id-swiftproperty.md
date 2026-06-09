@@ -8,6 +8,7 @@ A stable ID that can be used to identify this subscribable service.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Configures a network listener to publish a service over Wi-Fi Aware and accept i
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

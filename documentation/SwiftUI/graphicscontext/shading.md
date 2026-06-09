@@ -41,11 +41,11 @@ Use a shading instance to describe the color or pattern of a path that you outli
 - [static func color(Color.RGBColorSpace, white: Double, opacity: Double) -> GraphicsContext.Shading](graphicscontext/shading/color(_:white:opacity:).md)
   Returns a shading instance that fills with a monochrome color in the given color space.
 ### Gradients
-- [static func linearGradient(Gradient, startPoint: CGPoint, endPoint: CGPoint, options: GraphicsContext.GradientOptions) -> GraphicsContext.Shading](graphicscontext/shading/lineargradient(_:startpoint:endpoint:options:).md)
+- [static linearGradient(_:startPoint:endPoint:options:)](graphicscontext/shading/lineargradient(_:startpoint:endpoint:options:).md)
   Returns a shading instance that fills a linear (axial) gradient.
-- [static func radialGradient(Gradient, center: CGPoint, startRadius: CGFloat, endRadius: CGFloat, options: GraphicsContext.GradientOptions) -> GraphicsContext.Shading](graphicscontext/shading/radialgradient(_:center:startradius:endradius:options:).md)
+- [static radialGradient(_:center:startRadius:endRadius:options:)](graphicscontext/shading/radialgradient(_:center:startradius:endradius:options:).md)
   Returns a shading instance that fills a radial gradient.
-- [static func conicGradient(Gradient, center: CGPoint, angle: Angle, options: GraphicsContext.GradientOptions) -> GraphicsContext.Shading](graphicscontext/shading/conicgradient(_:center:angle:options:).md)
+- [static conicGradient(_:center:angle:options:)](graphicscontext/shading/conicgradient(_:center:angle:options:).md)
   Returns a shading instance that fills a conic (angular) gradient.
 ### Other shape styles
 - [static func style<S>(S) -> GraphicsContext.Shading](graphicscontext/shading/style(_:).md)
@@ -66,6 +66,8 @@ Use a shading instance to describe the color or pattern of a path that you outli
 ### Type Methods
 - [static func meshGradient(MeshGradient) -> GraphicsContext.Shading](graphicscontext/shading/meshgradient(_:).md)
   Returns a shading instance that fills with a mesh gradient.
+- [static radialGradient(_:startCenter:startRadius:endCenter:endRadius:options:)](graphicscontext/shading/radialgradient(_:startcenter:startradius:endcenter:endradius:options:).md)
+  Returns a shading that fills a two-point radial gradient.
 
 ## Relationships
 

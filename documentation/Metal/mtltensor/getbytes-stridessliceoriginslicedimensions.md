@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Copies the data corresponding to a slice of this tensor into a pointer you provide.
+Copies data from a slice of the data plane of this tensor into a pointer you provide.
 
 **Availability**:
 - iOS 26.0+
@@ -20,13 +20,18 @@ Copies the data corresponding to a slice of this tensor into a pointer you provi
 func getBytes(_ bytes: UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents)
 ```
 
+#### Discussion
+
+Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method. Strides must be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
+
+The first dimension of `sliceOrigin` and `sliceDimensions` must be byte aligned.
+
 ## Parameters
 
-- `bytes`: A pointer to bytes of data that this method copies into the slice you specify with `sliceOrigin` and `sliceDimensions`.
-- `strides`: An array of strides, in elements, that describes the layout of the data in `bytes`. You are responsible for ensuring `strides` meets the following requirements: - Elements of `strides`are in monotonically non-decreasing order.
-- For any `i` larger than zero, `strides[i]` is greater than or equal to `strides[i-1] * dimensions[i-1]`.
-- `sliceOrigin`: An array of offsets, in elements, to the first element of the slice that this method reads data from.
-- `sliceDimensions`: An array of sizes, in elements, of the slice this method reads data from.
+- `bytes`: A pointer to bytes of data that this method copies the slice into.
+- `strides`: An array of strides, in elements, that describes the layout of the data in `bytes`.
+- `sliceOrigin`: An array of per-dimension offsets that together locate the first element to copy in the tensor. Each element in this array corresponds to the dimension at the same index in `sliceDimensions`. Each offset value represents the number of elements from the start of that dimension.
+- `sliceDimensions`: An array of per-dimension sizes that together define the extent of the slice to copy from the tensor. Each element in this array corresponds to the dimension at the same index in `sliceOrigin`. Each size value represents the number of elements to include along that dimension, starting from the corresponding offset in `sliceOrigin`.
 
 
 ---

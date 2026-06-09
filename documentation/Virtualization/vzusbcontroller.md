@@ -30,6 +30,10 @@ The concrete type of a `VZUSBController` corresponds to the type the configurati
   Attaches a USB device to the controller.
 - [func detach(device: any VZUSBDevice, completionHandler: ((any Error)?) -> Void)](vzusbcontroller/detach(device:completionhandler:).md)
   Detaches a USB device from the controller.
+### Protocols
+- [VZUSBController.Delegate](vzusbcontroller/delegate-swift.protocol.md)
+### Instance Properties
+- [var delegate: (any VZUSBController.Delegate)?](vzusbcontroller/delegate-swift.property.md)
 
 ## Relationships
 

@@ -12,7 +12,7 @@ Creates a layout view with the specified depth alignment.
 
 ```swift
 nonisolated
-func depthAlignment<Content>(_ alignment: DepthAlignment, @ViewBuilder content: () -> Content) -> some View where Content : View
+func depthAlignment<Content>(_ alignment: DepthAlignment, @ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

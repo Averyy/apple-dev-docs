@@ -18,6 +18,7 @@ object GameCenterLeaderboardReleaseCreateRequest
 
 ### Objects
 - [object GameCenterLeaderboardReleaseCreateRequest.Data](gamecenterleaderboardreleasecreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center leaderboard release.
 
 ## Properties
 
@@ -26,9 +27,9 @@ object GameCenterLeaderboardReleaseCreateRequest
 ## See Also
 
 - [object GameCenterLeaderboardRelease](gamecenterleaderboardrelease.md)
-  The data structure that represents a leaderboard release.
+  A record indicating that a Game Center leaderboard has been released to players, making it visible in the game.
 - [object GameCenterLeaderboardReleaseResponse](gamecenterleaderboardreleaseresponse.md)
-  A response that contains a single leaderboard release resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard release.
 - [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
 - [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)

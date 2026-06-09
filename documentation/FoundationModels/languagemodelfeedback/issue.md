@@ -11,6 +11,7 @@ An issue with the model’s response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +21,7 @@ struct Issue
 
 ## Topics
 
-### Initializing an issue
+### Creating an issue
 - [init(category: LanguageModelFeedback.Issue.Category, explanation: String?)](languagemodelfeedback/issue/init(category:explanation:).md)
   Creates a new issue
 - [LanguageModelFeedback.Issue.Category](languagemodelfeedback/issue/category.md)
@@ -36,8 +37,6 @@ struct Issue
 
 - [LanguageModelFeedback.Sentiment](languagemodelfeedback/sentiment.md)
   A sentiment regarding the model’s response.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
-  Logs and serializes data that includes session information that you attach when reporting feedback to Apple.
 
 
 ---

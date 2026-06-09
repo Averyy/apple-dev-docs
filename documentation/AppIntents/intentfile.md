@@ -23,6 +23,7 @@ struct IntentFile
 ## Mentions
 
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
@@ -75,6 +76,8 @@ Provide an intent file entity implementation to describe data you store in a fil
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [IntentValueConvertible](intentvalueconvertible.md)
+- [IntentValueExpressing](intentvalueexpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)

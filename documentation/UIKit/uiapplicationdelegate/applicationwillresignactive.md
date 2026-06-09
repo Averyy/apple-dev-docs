@@ -21,6 +21,7 @@ optional func applicationWillResignActive(_ application: UIApplication)
 ## Mentions
 
 - [About the background execution sequence](about-the-background-execution-sequence.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Discussion
 

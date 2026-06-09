@@ -67,6 +67,8 @@ class NSColorPanel
 - [protocol NSColorChanging](nscolorchanging.md)
 - [class let colorDidChangeNotification: NSNotification.Name](nscolorpanel/colordidchangenotification.md)
   Posted when the color of the `NSColorPanel` is set, as when [`NSColorPanel`](nscolorpanel.md) is invoked.
+### Structures
+- [NSColorPanel.ColorDidChangeMessage](nscolorpanel/colordidchangemessage.md)
 
 ## Relationships
 

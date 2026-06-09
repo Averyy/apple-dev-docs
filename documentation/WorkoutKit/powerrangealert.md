@@ -21,33 +21,17 @@ struct PowerRangeAlert
 ## Topics
 
 ### Creating new power range alerts
-- [static func power(ClosedRange<Double>, unit: UnitPower) -> Self](powerrangealert/power(_:unit:).md)
-  Returns a new power alert for the target range.
 - [init(target: ClosedRange<Measurement<UnitPower>>)](powerrangealert/init(target:).md)
   Creates a new power alert for the target range.
 ### Accessing the alert value
-- [var metric: WorkoutAlertMetric](powerrangealert/metric.md)
-  The metric for the alert.
 - [var target: ClosedRange<Measurement<UnitPower>>](powerrangealert/target.md)
   The target range.
 - [var targetQuantityLowerBound: HKQuantity](powerrangealert/targetquantitylowerbound.md)
   The target’s lower bound.
 - [var targetQuantityUpperBound: HKQuantity](powerrangealert/targetquantityupperbound.md)
   The target’s upper bound.
-### Comparing alerts
-- [var hashValue: Int](powerrangealert/hashvalue.md)
-  The hashed value of the power range alert.
-- [func hash(into: inout Hasher)](powerrangealert/hash(into:).md)
-  Hashes the essential components of the power range alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](powerrangealert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two power range alerts aren’t equal.
-- [static func == (PowerRangeAlert, PowerRangeAlert) -> Bool](powerrangealert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two power range alerts are equal.
 ### Initializers
 - [init(target: ClosedRange<Measurement<UnitPower>>, metric: WorkoutAlertMetric)](powerrangealert/init(target:metric:).md)
-### Default Implementations
-- [Equatable Implementations](powerrangealert/equatable-implementations.md)
-- [WorkoutAlert Implementations](powerrangealert/workoutalert-implementations.md)
 
 ## Relationships
 

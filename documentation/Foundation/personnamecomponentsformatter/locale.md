@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Specifies the locale to format names.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,10 @@
 ```swift
 var locale: Locale! { get set }
 ```
+
+#### Discussion
+
+Defaults to `autoupdatingCurrentLocale`. Also resets to `autoupdatingCurrentLocale` on assignment of `nil`.
 
 
 ---

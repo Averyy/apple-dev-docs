@@ -67,7 +67,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript<R>(R) -> Self.SubSequence](arrayslice/subscript(_:)-4bx21.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](arrayslice/subscript(_:)-4x3qz.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](arrayslice/subscript(_:)-4x3qz.md)
 ### Type Aliases
 - [ArraySlice.Iterator](arrayslice/iterator.md)
   The type that allows iteration over an array’s elements.

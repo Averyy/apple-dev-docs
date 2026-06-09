@@ -29,19 +29,20 @@ enum Code
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [let dataProvider: (any DataProvider)?](arkitsession/error/dataprovider.md)
   The data provider that causes an error in a session, if any.
-- [var code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
+- [let code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
   The error code for an ARKit session error.
-- [var errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](arkitsession/error/errordescription.md)
   A localized message that describes the error that occurred.
 
 

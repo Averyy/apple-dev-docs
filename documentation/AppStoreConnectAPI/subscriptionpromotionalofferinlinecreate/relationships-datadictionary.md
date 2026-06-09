@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -26,6 +28,7 @@ object SubscriptionPromotionalOfferInlineCreate.Relationships
 ## See Also
 
 - [object SubscriptionPromotionalOfferInlineCreate.Attributes](subscriptionpromotionalofferinlinecreate/attributes-data.dictionary.md)
+  Attributes that describe a subscription promotional offer inline create resource.
 
 
 ---

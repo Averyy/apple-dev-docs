@@ -61,6 +61,8 @@ Basal body temperature measures the body’s temperature when at rest (for examp
   A category type that represents the results from a home pregnancy test.
 - [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
   A category type that records lactation.
+- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+  A value that indicates the intensity of vaginal bleeding.
 
 
 ---

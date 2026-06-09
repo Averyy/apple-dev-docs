@@ -1,20 +1,23 @@
-# Commands and Queries
+# Commands and queries
 
 **Framework**: Device Management
 
-Manage the configuration and behavior of your devices.
+Remotely execute management commands and queries on managed devices.
 
 #### Overview
 
-The Mobile Device Management (MDM) protocol provides a way to tell a device to remotely execute certain management commands or queries. First, a device registers with the MDM server. Then, the server sends push notifications to the device when there are commands to process on the device.
+The Mobile Device Management (MDM) protocol provides a way to tell a device to remotely execute certain management commands or queries. When a device registers with the device management service, the service sends push notifications to the device when there are commands to process on the device.
 
-When the device receives the notification, it polls the server for the command, processes the command, and reports the command results to the server. The device then checks for other commands to process.
+When the device receives the notification, it polls the device management service for the command, processes the command, and reports the command results to the service. The device then checks for other commands to process.
 
-> ❗ **Important**:  Mobile Device Management is for enterprise use only. To use it in your app, the Account Holder of your app’s development team must request the Mobile Device Management capability. See [`Request a Mobile Device Management Capability`](https://developer.apple.comhttps://developer.apple.com/contact/request/mdm-capability).
+> ❗ **Important**:  Device management is for enterprise use only. To use it in your app, the Account Holder of your app’s development team must request the Mobile Device Management capability. For more information, see [`Request a Mobile Device Management Capability`](https://developer.apple.comhttps://developer.apple.com/contact/request/mdm-capability).
 
 ## Topics
 
-### Profile Management
+### Declarative management
+- [Declarative Management](declarative-management-command.md)
+  Enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
+### Profile management
 - [Install Profile](install-profile-command.md)
   Install a configuration profile on a device.
 - [Profile List](profile-list-command.md)
@@ -27,7 +30,7 @@ When the device receives the notification, it polls the server for the command, 
   Get a list of installed provisioning profiles on a device.
 - [Remove Provisioning Profile](remove-provisioning-profile-command.md)
   Remove a previously installed provisioning profile from a device.
-### Device Details
+### Device details
 - [Device Information](device-information-command.md)
   Get detailed information about a device.
 - [Device Configured](device-configured-command.md)
@@ -36,7 +39,7 @@ When the device receives the notification, it polls the server for the command, 
   Inform the device that it can continue past Setup Assistant and finish login.
 - [Restrictions](restrictions-command.md)
   Get a list of restrictions on the device.
-### Device State
+### Device state
 - [Erase Device](erase-device-command.md)
   Remotely and immediately erase a device.
 - [Device Lock](device-lock-command.md)
@@ -45,7 +48,7 @@ When the device receives the notification, it polls the server for the command, 
   Remotely and immediately restart a device.
 - [Shut Down Device](shut-down-device-command.md)
   Remotely and immediately shut down a device.
-### Managed Apps
+### Managed apps
 - [Install Application](install-application-command.md)
   Install a third-party app on a device.
 - [Install Enterprise Application](install-enterprise-application-command.md)
@@ -66,7 +69,7 @@ When the device receives the notification, it polls the server for the command, 
   Get app configurations from managed apps on a device.
 - [Managed Application Feedback](managed-application-feedback-command.md)
   Get app feedback from a managed app on the device.
-### Managed Media
+### Managed media
 - [Install Media](install-media-command.md)
   Install a book on a device.
 - [Managed Media List](managed-media-list-command.md)
@@ -91,16 +94,7 @@ When the device receives the notification, it polls the server for the command, 
   Change or clear the firmware password on a device.
 - [Verify Firmware Password](verify-firmware-password-command.md)
   Verify the firmware password on a device.
-### Updates
-- [Schedule OS Update Scan](schedule-os-update-scan-command.md)
-  Schedule a background scan for operating-system updates on a device.
-- [Available OS Updates](available-os-updates-command.md)
-  Get a list of available operating-system updates for a device.
-- [Schedule OS Update](schedule-os-update-command.md)
-  Schedule an update of the operating system on a device.
-- [OS Update Status](os-update-status-command.md)
-  Get the status of operating-system updates on a device.
-### Lost Device
+### Lost device
 - [Enable Lost Mode](enable-lost-mode-command.md)
   Enable Lost Mode on a device, which provides a message and phone number on the Lock Screen.
 - [Device Location](device-location-command.md)
@@ -114,25 +108,25 @@ When the device receives the notification, it polls the server for the command, 
   Set or clear the Recovery Lock password.
 - [Verify Recovery Lock](verify-recovery-lock-command.md)
   Verify the device’s Recovery Lock password.
-### Content Caching
+### Content caching
 - [Content Caching Information](content-caching-information-command.md)
   Get the status of the content caches on a device.
-### AirPlay Mirroring
+### AirPlay mirroring
 - [Request Mirroring](request-mirroring-command.md)
   Prompt the user to share their screen using AirPlay Mirroring.
 - [Stop Mirroring](stop-mirroring-command.md)
   Stop mirroring the display to another device.
-### eSim Management
+### eSIM management
 - [Refresh Cellular Plans](refresh-cellular-plans-command.md)
   Query a carrier URL for active eSIM cellular-plan profiles on a device.
-### Managed Settings
+### Managed settings
 - [Disable Remote Desktop](disable-remote-desktop-command.md)
   Disable Remote Desktop on a device.
 - [Enable Remote Desktop](enable-remote-desktop-command.md)
   Enable Remote Desktop on a device.
 - [Settings](settings-command.md)
   Configure settings on a device.
-### Lights-Out Management
+### Lights-out management
 - [LOM Device Request](lom-device-request-command.md)
   Send requests to a device using lights-out management (LOM).
 - [LOM Setup Request](lom-setup-request-command.md)
@@ -153,27 +147,23 @@ When the device receives the notification, it polls the server for the command, 
   Get a list of active extensions for a user on a device.
 - [NSExtension Mappings](nsextension-mappings-command.md)
   Get a list of the installed extensions for a user on a device.
-### User Management
+### Enhanced logging
+- [Trigger Enhanced Log Collection](trigger-enhanced-log-collection-command.md)
+  Trigger enhanced log collection on the device.
+- [Cancel Enhanced Log Collection](cancel-enhanced-log-collection-command.md)
+  Cancel enhanced log collection on the device.
+### User management
 - [User List](user-list-command.md)
   Get a list of users with active accounts on a device.
 - [Log Out User](log-out-user-command.md)
   Force the current user to log out of a device.
 - [Delete User](delete-user-command.md)
   Delete a user’s account from a device.
-### Declarative Management
-- [Declarative Management](declarative-management-command.md)
-  Enable your server to support declarative management or trigger a declarative management synchronization operation on the device.
 
 ## See Also
 
-- [Implementing Device Management](implementing-device-management.md)
-  Set up an MDM server and send commands to managed devices.
 - [Check-in](check-in.md)
-  Authenticate devices and maintain push tokens with these commands.
-- [Account-driven enrollment](account-driven-enrollment.md)
-  Authenticate devices using a user identity-focused workflow.
-- [Migrating managed devices](migrating-managed-devices.md)
-  Migrate managed devices from one device management service to another.
+  Authenticate devices and maintain push tokens.
 
 
 ---

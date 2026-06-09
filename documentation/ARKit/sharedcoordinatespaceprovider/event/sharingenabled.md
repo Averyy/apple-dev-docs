@@ -14,7 +14,7 @@ case sharingEnabled
 
 #### Discussion
 
-Provider has been enabled to produce data and the user is allowed to push data to the provider.
+> **Note**: Provider has been enabled to produce data and the user is allowed to push data to the provider.
 
 
 ---

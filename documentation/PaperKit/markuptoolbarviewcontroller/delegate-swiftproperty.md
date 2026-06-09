@@ -20,6 +20,11 @@ The delegate for responding to user actions.
 
 Observe `selectedIndirectPointerTouchMode` or `selectedDrawingTool` to watch for mode / tool changes.
 
+## See Also
+
+- [let supportedFeatureSet: FeatureSet](markuptoolbarviewcontroller/supportedfeatureset.md)
+  The supported features of this toolbar.
+
 
 ---
 

@@ -24,8 +24,6 @@ MapKit JS localizes the instructions according to the [`Directions`](directions.
   The step distance, in meters.
 - [transportType](routestep/transporttype.md)
   The transport type of the step.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

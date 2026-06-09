@@ -18,6 +18,8 @@ class let colorSpaceDidChangeNotification: NSNotification.Name
 
 The notification object is the [`NSScreen`](nsscreen.md) object whose [`colorSpace`](nsscreen/colorspace.md) has changed.. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSScreen.ColorSpaceDidChangeMessage`](nsscreen/colorspacedidchangemessage.md).
+
 
 ---
 

@@ -20,8 +20,6 @@ The server returns up to three [`Route`](route.md) objects in the array.
 
 ## See Also
 
-- [request](directionsresponse/request.md)
-  The request object associated with the direction’s response.
 - [origin](directionsresponse/origin.md)
   An optional starting point for routing directions.
 - [destination](directionsresponse/destination.md)

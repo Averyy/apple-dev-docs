@@ -31,6 +31,7 @@ Although the Core Spotlight framework provides several predefined attributes, su
   Returns a new custom attribute key with the specified name.
 - [init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool, multiValued: Bool)](cscustomattributekey/init(keyname:searchable:searchablebydefault:unique:multivalued:).md)
   Returns a new custom attribute key with the specified name and properties.
+- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
 ### Getting the attribute details
 - [var keyName: String](cscustomattributekey/keyname.md)
   The name of the custom attribute key.
@@ -42,8 +43,6 @@ Although the Core Spotlight framework provides several predefined attributes, su
   A Boolean value that indicates if the custom attribute should be searchable by default.
 - [var isUnique: Bool](cscustomattributekey/isunique.md)
   A Boolean value that indicates if duplicate custom attribute values should be treated as the same value to save storage space.
-### Initializers
-- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
 
 ## Relationships
 

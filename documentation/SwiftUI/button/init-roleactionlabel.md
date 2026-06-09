@@ -18,7 +18,7 @@ Creates a button with a specified role that displays a custom label.
 
 ```swift
 @preconcurrency
-nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @ViewBuilder label: () -> Label)
+nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

@@ -110,7 +110,6 @@ The `NSAlert` class is not designed for subclassing.
 
 ## See Also
 
-- [Sheet Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Sheets/Sheets.html#//apple_ref/doc/uid/10000002i)
 - [Dialogs and Special Panels](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Dialog/Dialog.html#//apple_ref/doc/uid/10000071i)
 - [protocol NSAlertDelegate](nsalertdelegate.md)
   A set of optional methods implemented by the delegate of an [`NSAlert`](nsalert.md) object to respond to a user’s request for help.

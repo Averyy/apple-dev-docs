@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: The BCP 47 collation identifier, like `standard` for a language’s standard ordering, or `phonetic` for phonetic ordering.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/collation-swift.struct/init(stringliteral:).md)
+  Creates a collation from a BCP 47 identifier as a string literal.
+
 
 ---
 

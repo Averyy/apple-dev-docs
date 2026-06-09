@@ -18,7 +18,7 @@ Creates a text field with a preferred axis and a prompt generated from a `Text`.
 
 ```swift
 nonisolated
-init(text: Binding<String>, prompt: Text? = nil, axis: Axis, @ViewBuilder label: () -> Label)
+init(text: Binding<String>, prompt: Text? = nil, axis: Axis, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion

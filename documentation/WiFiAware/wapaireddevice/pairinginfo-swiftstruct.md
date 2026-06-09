@@ -8,6 +8,7 @@ A collection of unauthenticated information the system receives from a device be
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

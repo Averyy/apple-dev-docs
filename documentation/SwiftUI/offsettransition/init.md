@@ -17,6 +17,7 @@ Creates a transition that offset the view by the specified amount.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ offset: CGSize)
 ```
 

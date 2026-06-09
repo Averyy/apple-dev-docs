@@ -8,6 +8,7 @@ The tries remaining before the underlying credential locks itself
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

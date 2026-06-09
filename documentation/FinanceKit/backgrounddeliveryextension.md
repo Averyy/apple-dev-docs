@@ -8,6 +8,7 @@ An extension used to receive updates about changes to data within the finance st
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

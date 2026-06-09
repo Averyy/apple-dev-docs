@@ -8,6 +8,7 @@ Present an activity picker sheet for selecting apps and websites to manage.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -51,6 +52,15 @@ struct ContentView: View {
 - `footerText`: An optional string that provides text for the footer of the picker view.
 - `isPresented`: A binding that indicates whether the app presents the picker view.
 - `selection`: A binding that manages the selected categories, apps, and web domains.
+
+## See Also
+
+- [struct FamilyActivityPicker](../FamilyControls/FamilyActivityPicker.md)
+  A view in which users specify applications, web domains, and categories without revealing their choices to the app.
+- [func familyActivityPicker(isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(ispresented:selection:).md)
+  Presents an activity picker view as a sheet.
+- [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
+  Presents an activity picker view as a sheet.
 
 
 ---

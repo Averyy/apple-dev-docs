@@ -22,6 +22,13 @@ The value of this type’s nested content.
 <Self.TabValue> @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
+## See Also
+
+- [associatedtype Body : TabContent](tabcontent/body-swift.associatedtype.md)
+  The type of content representing the body of this content type.
+- [associatedtype TabValue : Hashable](tabcontent/tabvalue.md)
+  The type used to drive selection for the containing tab view.
+
 
 ---
 

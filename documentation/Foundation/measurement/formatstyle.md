@@ -76,9 +76,14 @@ After you create an instance of a format style, you can use it to format measure
   The visibility of the unit name of a temperature.
 - [var locale: Locale](measurement/formatstyle/locale.md)
   The locale of the format style.
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+  Modifies the measurement format style to use the specified locale.
 ### Inspecting a measurement format style
 - [var attributed: Measurement<UnitType>.AttributedStyle](measurement/formatstyle/attributed.md)
   The attributed style for the measurement format style.
+### Formatting a measurement
+- [func format(Measurement<UnitType>) -> String](measurement/formatstyle/format(_:).md)
+  Creates a string representation of a measurement.
 ### Applying byte count styles
 - [Measurement.FormatStyle.ByteCount](measurement/formatstyle/bytecount.md)
   A format style that provides string representations of byte counts, expressed as measurements of information storage.

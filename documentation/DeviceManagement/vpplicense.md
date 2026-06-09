@@ -6,8 +6,7 @@
 A license for a product in the purchase program.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 

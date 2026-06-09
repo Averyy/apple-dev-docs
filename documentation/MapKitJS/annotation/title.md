@@ -11,8 +11,8 @@ The text to display in the annotation’s callout.
 ## Declaration
 
 ```swift
-get title(): string | undefined;
-set title(value: string | undefined);
+get title(): string | null;
+set title(value: string | null | undefined);
 ```
 
 #### Discussion

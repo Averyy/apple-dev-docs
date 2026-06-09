@@ -16,6 +16,7 @@ object InAppPurchaseContent.Relationships.InAppPurchaseV2
 
 ### Objects
 - [object InAppPurchaseContent.Relationships.InAppPurchaseV2.Data](inapppurchasecontent/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an in-app purchase content.
 
 ## Properties
 

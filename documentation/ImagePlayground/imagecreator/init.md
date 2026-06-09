@@ -22,6 +22,8 @@ init() async throws
 
 If the device doesn’t support image creation or the feature is currently unavailable, this initializer throws an error.
 
+> **Note**: `ImageCreator.Error.notSupported` on iOS 27.0+, macOS 27.0+, and visionOS 27.0+.
+
 
 ---
 

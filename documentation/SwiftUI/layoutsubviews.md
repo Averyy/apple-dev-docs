@@ -22,7 +22,7 @@ struct LayoutSubviews
 
 #### Overview
 
-You receive a `LayoutSubviews` input to your implementations of [`Layout`](layout.md) protocol methods, like [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) and [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md). The `subviews` parameter (which the protocol aliases to the [`Layout.Subviews`](layout/subviews.md) type) is a collection that contains proxies for the layout’s subviews (of type [`LayoutSubview`](layoutsubview.md)). The proxies appear in the collection in the same order that they appear in the [`ViewBuilder`](viewbuilder.md) input to the layout container. Use the proxies to perform layout operations.
+You receive a `LayoutSubviews` input to your implementations of [`Layout`](layout.md) protocol methods, like [`placeSubviews(in:proposal:subviews:cache:)`](layout/placesubviews(in:proposal:subviews:cache:).md) and [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md). The `subviews` parameter (which the protocol aliases to the [`Layout.Subviews`](layout/subviews.md) type) is a collection that contains proxies for the layout’s subviews (of type [`LayoutSubview`](layoutsubview.md)). The proxies appear in the collection in the same order that they appear in the [`ContentBuilder`](contentbuilder.md) input to the layout container. Use the proxies to perform layout operations.
 
 Access the proxies in the collection as you would the contents of any Swift random-access collection. For example, you can enumerate all of the subviews and their indices to inspect or operate on them:
 

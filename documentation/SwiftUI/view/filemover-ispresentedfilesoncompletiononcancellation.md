@@ -59,6 +59,8 @@ For example, a button that allows the user to move files might look like this:
   }
 ```
 
+To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileDialogURLEnabled(_:)`](view/filedialogurlenabled(_:).md), [`fileDialogImportsUnresolvedAliases(_:)`](view/filedialogimportsunresolvedaliases(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
+
 ## Parameters
 
 - `isPresented`: A binding to whether the dialog should be shown.
@@ -69,9 +71,9 @@ For example, a button that allows the user to move files might look like this:
 ## See Also
 
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/filemover(ispresented:file:oncompletion:).md)
-  Presents a system interface for allowing the user to move an existing file to a new location.
+  Presents a system dialog for allowing the user to move an existing file to a new location.
 - [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/filemover(ispresented:files:oncompletion:).md)
-  Presents a system interface for allowing the user to move a collection of existing files to a new location.
+  Presents a system dialog for allowing the user to move a collection of existing files to a new location.
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:file:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to move an existing file to a new location.
 

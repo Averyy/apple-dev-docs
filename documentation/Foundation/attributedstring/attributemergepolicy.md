@@ -22,7 +22,7 @@ enum AttributeMergePolicy
 
 #### Overview
 
-Use an [`AttributedString.AttributeMergePolicy`](attributedstring/attributemergepolicy.md) when working with methods like `AttributedString/mergeAttributes(_:mergePolicy:)` to indicate how to resolve conflicts between multiple sets of attributes. When a source string and a merging attribute container both contain a given attribute with different values, the merge policy determines how to resolve the conflict.
+Use an [`AttributedString.AttributeMergePolicy`](attributedstring/attributemergepolicy.md) when working with methods like [`mergeAttributes(_:mergePolicy:)`](attributedstring/mergeattributes(_:mergepolicy:).md) to indicate how to resolve conflicts between multiple sets of attributes. When a source string and a merging attribute container both contain a given attribute with different values, the merge policy determines how to resolve the conflict.
 
 ## Topics
 
@@ -35,7 +35,6 @@ Use an [`AttributedString.AttributeMergePolicy`](attributedstring/attributemerge
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -44,6 +43,12 @@ Use an [`AttributedString.AttributeMergePolicy`](attributedstring/attributemerge
 
 ## See Also
 
+- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+  Sets the attributed string’s attributes to those in a specified attribute container.
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+  Merges the attributed string’s attributes with those in a specified attribute container.
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+  Replaces occurrences of attributes in one attribute container with those in another attribute container.
 - [protocol AttributedStringAttributeMutation](attributedstringattributemutation.md)
   A protocol that defines in-place mutations for attributes in an attributed string.
 

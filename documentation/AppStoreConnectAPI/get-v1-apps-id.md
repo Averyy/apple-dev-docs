@@ -1,4 +1,4 @@
-# Read App Information
+# Read app information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -283,13 +283,13 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023
 
 ## See Also
 
-- [List Apps](get-v1-apps.md)
+- [List apps](get-v1-apps.md)
   Find and list apps in App Store Connect.
-- [Modify an App](patch-v1-apps-_id_.md)
+- [Modify an app](patch-v1-apps-_id_.md)
   Update app information, including bundle ID, primary locale, price schedule, and global availability.
-- [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an App’s Encryption Declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
 
 

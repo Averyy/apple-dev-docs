@@ -36,6 +36,8 @@ class NSTextAlternatives
 ### Notifications
 - [class let selectedAlternativeStringNotification: NSNotification.Name](nstextalternatives/selectedalternativestringnotification.md)
   Posted when the user selects an alternate string.
+### Structures
+- [NSTextAlternatives.SelectedAlternativeStringMessage](nstextalternatives/selectedalternativestringmessage.md)
 ### Initializers
 - [init?(coder: NSCoder)](nstextalternatives/init(coder:).md)
 

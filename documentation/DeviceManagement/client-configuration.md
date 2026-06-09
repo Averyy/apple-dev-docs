@@ -6,12 +6,7 @@
 Store client-specific information on the server.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
-## Mentions
-
-- [Protecting Your VPP Account](protecting-your-vpp-account.md)
+- VPP License Management 1.0+
 
 #### Discussion
 

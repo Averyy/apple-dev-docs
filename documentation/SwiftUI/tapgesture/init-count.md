@@ -17,6 +17,7 @@ Creates a tap gesture with the number of required taps.
 ## Declaration
 
 ```swift
+nonisolated
 init(count: Int = 1)
 ```
 
@@ -26,6 +27,8 @@ init(count: Int = 1)
 
 ## See Also
 
+- [init(count: Int, inputKinds: GestureInputKinds)](tapgesture/init(count:inputkinds:).md)
+  Creates a tap gesture with the number of required taps and the input kinds the gesture recognizes.
 - [var count: Int](tapgesture/count.md)
   The required number of tap events.
 

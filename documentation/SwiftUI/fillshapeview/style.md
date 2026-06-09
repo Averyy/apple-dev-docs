@@ -17,6 +17,7 @@ The style that fills this view’s shape.
 ## Declaration
 
 ```swift
+nonisolated
 var style: Style { get set }
 ```
 

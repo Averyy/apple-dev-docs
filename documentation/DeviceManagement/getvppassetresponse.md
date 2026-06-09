@@ -6,8 +6,7 @@
 The response with the asset.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 
@@ -18,7 +17,7 @@ object GetVppAssetResponse
 ## Properties
 
 - `assets` ([VppAsset]): The list of assets managed by the provided `sToken`.
-- `clientContext` (string): The value currently associated with the provided `sToken`. This field is only included in the response when a value has been set via the [`Client Configuration`](client-configuration.md) endpoint. See [`Protecting Your VPP Account`](protecting-your-vpp-account.md) for more information.
+- `clientContext` (string): The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [`Client Configuration`](client-configuration.md) endpoint.
 - `errorMessage` (string): The human-readable explanation of the error.
 - `errorNumber` (int32): The numeric code of the error.
 - `expirationMillis` (int64): The UNIX epoch timestamp, in milliseconds, when the account’s `sToken` or password expires (whichever is earlier).

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of IDs of related resources.
+A response containing the resource identifiers of versions for a Game Center activity.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -18,7 +18,7 @@ object GameCenterActivityVersionsLinkagesResponse
 
 ### Dictionaries
 - [object GameCenterActivityVersionsLinkagesResponse.Data](gamecenteractivityversionslinkagesresponse/data-data.dictionary.md)
-  The data structure that represents an activity resource.
+  The resource linkage data identifying a version of a Game Center activity.
 
 ## Properties
 
@@ -29,21 +29,21 @@ object GameCenterActivityVersionsLinkagesResponse
 ## See Also
 
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)
-  The data structure that represents an activity version resource.
+  A versioned configuration of a Game Center activity, containing its localizations and release status.
 - [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
-  The request body you use to create an activity version resource.
+  The request body for creating a version of a Game Center activity.
 - [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
-  A response that contains a single activity version resource.
+  A response containing a single version of a Game Center activity.
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
   The request body you use to update an activity version version.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
-  A response that contains a list of activity version resources.
+  A response containing a list of versions for a Game Center activity.
 - [object GameCenterActivityVersionDefaultImageLinkageResponse](gamecenteractivityversiondefaultimagelinkageresponse.md)
 - [object GameCenterActivityVersionLocalizationsLinkagesResponse](gamecenteractivityversionlocalizationslinkagesresponse.md)
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
   The request body you use to update an activity version version.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
-  A response that contains a list of activity version resources.
+  A response containing a list of versions for a Game Center activity.
 
 
 ---

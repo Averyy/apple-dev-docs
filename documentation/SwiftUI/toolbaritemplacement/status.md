@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The item represents a change in status for the current context.
+A placement for items that represents a change in status.
 
 **Availability**:
 - iOS 14.0+
@@ -32,9 +32,9 @@ In tvOS, this placement is only available from within the sidebar of a [`Navigat
 ## See Also
 
 - [static let automatic: ToolbarItemPlacement](toolbaritemplacement/automatic.md)
-  The system places the item automatically, depending on many factors including the platform, size class, or presence of other items.
+  A placement the system positions automatically.
 - [static let principal: ToolbarItemPlacement](toolbaritemplacement/principal.md)
-  The system places the item in the principal item section.
+  A placement for the principal item section.
 
 
 ---

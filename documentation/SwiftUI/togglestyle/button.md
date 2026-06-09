@@ -16,8 +16,8 @@ A toggle style that displays as a button with its label as the title.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var button: ButtonToggleStyle { get }
+nonisolated
+static var button: ButtonToggleStyle { get }
 ```
 
 #### Discussion

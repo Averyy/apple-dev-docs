@@ -17,12 +17,12 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (SuspendingClock.Instant, SuspendingClock.Instant) -> Bool](suspendingclock/instant/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](suspendingclock/instant/_(_:_:)-877n2.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](suspendingclock/instant/_(_:_:)-6dx5n.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](suspendingclock/instant/_=(_:_:)-4o9y7.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](suspendingclock/instant/_=(_:_:)-897gt.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](suspendingclock/instant/_=(_:_:)-3661z.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](suspendingclock/instant/_=(_:_:)-75vdm.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

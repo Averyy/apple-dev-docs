@@ -8,6 +8,7 @@ A structure you use to configure an alert that appears when you update your Live
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

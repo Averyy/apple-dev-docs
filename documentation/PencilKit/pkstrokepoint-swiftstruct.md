@@ -24,6 +24,10 @@ struct PKStrokePoint
 - [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:).md)
   Creates a new point with the provided properties.
 - [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:).md)
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).md)
+  Creates a stroke point with the specified properties, including a rendering threshold.
+- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat, lateralJitter: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:lateraljitter:).md)
+  Creates a stroke point with the specified properties, including lateral jitter.
 ### Getting the point’s location
 - [var location: CGPoint](pkstrokepoint-swift.struct/location.md)
   The location of this point.
@@ -42,15 +46,13 @@ struct PKStrokePoint
 - [var opacity: CGFloat](pkstrokepoint-swift.struct/opacity.md)
   Opacity of the point.
 - [var secondaryScale: CGFloat](pkstrokepoint-swift.struct/secondaryscale.md)
+- [var threshold: CGFloat](pkstrokepoint-swift.struct/threshold.md)
+  The alpha threshold for clipping the stroke rendering for supported inks.
+- [var lateralJitter: CGFloat](pkstrokepoint-swift.struct/lateraljitter.md)
+  The amount of lateral particle jitter at the stroke edge for supported inks.
 ### Using reference types
 - [class PKStrokePointReference](pkstrokepointreference.md)
   A class that represents the properties of a specific point along a stroke’s path.
-### Initializers
-- [init(location: CGPoint, timeOffset: TimeInterval, size: CGSize, opacity: CGFloat, force: CGFloat, azimuth: CGFloat, altitude: CGFloat, secondaryScale: CGFloat, threshold: CGFloat)](pkstrokepoint-swift.struct/init(location:timeoffset:size:opacity:force:azimuth:altitude:secondaryscale:threshold:).md)
-  Create a new point with the provided properties.
-### Instance Properties
-- [var threshold: CGFloat](pkstrokepoint-swift.struct/threshold.md)
-  The threshold for clipping the stroke rendering.
 
 ## Relationships
 
@@ -68,6 +70,8 @@ struct PKStrokePoint
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)

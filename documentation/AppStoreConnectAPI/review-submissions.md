@@ -17,9 +17,9 @@ The attribute `platform` is no longer required when using [`Create a Review Subm
   Read information about a specific review submisison.
 - [List the Items in a Review Submission](get-v1-reviewsubmissions-_id_-items.md)
   List all the items in a specific review submission.
-- [List Item IDs](get-v1-reviewsubmissions-_id_-relationships-items.md)
+- [List item IDs](get-v1-reviewsubmissions-_id_-relationships-items.md)
   Get the list of item IDs for a specific review submission.
-- [List Review Submission IDs](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List review submission IDs](get-v1-apps-_id_-relationships-reviewsubmissions.md)
   Get the list of review submission IDs for a specific app.
 - [Modify a Review Submission](patch-v1-reviewsubmissions-_id_.md)
   Edit the details or contents of a review submission.
@@ -27,21 +27,21 @@ The attribute `platform` is no longer required when using [`Create a Review Subm
   Create a review submission for a specific app.
 ### Objects
 - [object ReviewSubmission](reviewsubmission.md)
-  The data structure that represents a review submission resource.
+  A formal submission to App Store review grouping one or more items — app versions, in-app purchases, or events — for simultaneous review.
 - [object ReviewSubmissionItem](reviewsubmissionitem.md)
-  The data structure that represents a review submission item resource.
+  An individual reviewable item — such as an app version, in-app purchase, or App Clip — included in a review submission.
 - [object ReviewSubmissionUpdateRequest](reviewsubmissionupdaterequest.md)
   The request body you use to update a review submission update request.
 - [object ReviewSubmissionCreateRequest](reviewsubmissioncreaterequest.md)
-  The request body you use to create a review submission create request resource.
+  The request body for creating a review submission for an App Store version or associated items.
 - [object ReviewSubmissionResponse](reviewsubmissionresponse.md)
-  A response that contains a single review submission resource.
+  The response body for endpoints that create, read, or modify a single review submission.
 - [object ReviewSubmissionsResponse](reviewsubmissionsresponse.md)
-  A response that contains a list of review submission resources.
+  The response body for endpoints that list review submissions for an app.
 - [object AppReviewSubmissionsLinkagesResponse](appreviewsubmissionslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of review submissions associated with an app.
 - [object ReviewSubmissionItemsLinkagesResponse](reviewsubmissionitemslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of items included in a review submission.
 
 ## See Also
 

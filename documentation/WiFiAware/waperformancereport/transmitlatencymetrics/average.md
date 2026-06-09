@@ -8,6 +8,7 @@ The average per-packet transmit latency measured for this flow’s peers.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Produces an optional view for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
+Produces optional content for conditional statements in multi-statement closures that’s only included when the condition evaluates to true.
 
 **Availability**:
 - iOS 13.0+
@@ -17,17 +17,16 @@ Produces an optional view for conditional statements in multi-statement closures
 ## Declaration
 
 ```swift
-static func buildIf<Content>(_ content: Content?) -> Content? where Content : View
+static func buildIf<Content>(_ content: Content?) -> Content?
 ```
 
 ## See Also
 
-- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(first:).md)
-  Produces content for a conditional statement in a multi-statement closure when the condition is true.
-- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(second:).md)
-  Produces content for a conditional statement in a multi-statement closure when the condition is false.
-- [static func buildLimitedAvailability<Content>(Content) -> AnyView](viewbuilder/buildlimitedavailability(_:).md)
-  Processes view content for a conditional compiler-control statement that performs an availability check.
+- [static buildEither(first:)](viewbuilder/buildeither(first:).md)
+  Builds a partial result from a condition that’s true.
+- [static buildEither(second:)](viewbuilder/buildeither(second:).md)
+  Builds a partial result from a condition that’s false.
+- [static buildLimitedAvailability(_:)](viewbuilder/buildlimitedavailability(_:).md)
 
 
 ---

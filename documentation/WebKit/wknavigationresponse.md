@@ -33,6 +33,8 @@ Use a [`WKNavigationResponse`](wknavigationresponse.md) object to make policy de
   A Boolean value that indicates whether WebKit is capable of displaying the response’s MIME type natively.
 - [var isForMainFrame: Bool](wknavigationresponse/isformainframe.md)
   A Boolean value that indicates whether the response targets the web view’s main frame.
+### Instance Properties
+- [var mainFrameNavigation: WKNavigation?](wknavigationresponse/mainframenavigation.md)
 
 ## Relationships
 

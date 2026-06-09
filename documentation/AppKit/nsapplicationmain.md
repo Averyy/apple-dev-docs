@@ -39,6 +39,8 @@ Creates the application, loads the main nib file from the application’s main b
   An object that can manipulate and provide information for a single instance of an app.
 - [protocol NSApplicationDelegate](nsapplicationdelegate.md)
   A set of methods that manage your app’s life cycle and its interaction with common system services.
+- [Managing ongoing background processes in your Mac](managing-ongoing-background-processes-in-your-mac.md)
+  Configure your app to help people understand when background processes may continue after they close your app.
 
 
 ---

@@ -9,7 +9,6 @@ The presentation style for modal view controllers.
 - iOS 18.1+
 - iPadOS 18.1+
 - Mac Catalyst 18.1+
-- macOS 15.1+
 - visionOS 2.4+
 
 ## Declaration
@@ -21,7 +20,7 @@ The presentation style for modal view controllers.
 
 #### Discussion
 
-Setting this property has no effect on visionOS.
+The view controller overrides this method to establish its preferred presentation style in visionOS. Changing the value of this property has no effect in visionOS.
 
 
 ---

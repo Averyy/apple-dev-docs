@@ -34,6 +34,8 @@ A floating-point percent format style modified to use the specified notation.
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(FloatingPointFormatStyle<Value>.Percent.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(FloatingPointFormatStyle<Value>.Percent.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func rounded(rule: FloatingPointFormatStyle<Value>.Percent.Configuration.RoundingRule, increment: Double?) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/rounded(rule:increment:).md)

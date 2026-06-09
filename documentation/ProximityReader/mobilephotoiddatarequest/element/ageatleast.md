@@ -9,7 +9,6 @@ A Boolean value that indicates whether the photo ID holder’s age is at least t
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

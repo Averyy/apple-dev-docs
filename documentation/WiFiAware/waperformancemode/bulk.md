@@ -8,6 +8,7 @@ A mode that prioritizes throughput, power, and support for other concurrent Wi-F
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

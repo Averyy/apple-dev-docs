@@ -22,9 +22,14 @@ struct KeyPathComparator<Compared>
 
 ## Topics
 
+### Using Key Path Comparators
+- [func compare(Compared, Compared) -> ComparisonResult](keypathcomparator/compare(_:_:).md)
+  Provides the relative ordering of two items according to the ordering of the properties that the comparator’s key path references.
 ### Inspecting Key Path Comparators
 - [let keyPath: any PartialKeyPath<Compared> & Sendable](keypathcomparator/keypath.md)
   The key path that the comparator uses to compare properties.
+- [var order: SortOrder](keypathcomparator/order.md)
+  The sort order that the comparator uses to compare properties.
 ### Initializers
 - [init<Value, Comparator>(any KeyPath<Compared, Value> & Sendable, comparator: Comparator)](keypathcomparator/init(_:comparator:)-8b13q.md)
 - [init<Value, Comparator>(any KeyPath<Compared, Value?> & Sendable, comparator: Comparator)](keypathcomparator/init(_:comparator:)-284rt.md)

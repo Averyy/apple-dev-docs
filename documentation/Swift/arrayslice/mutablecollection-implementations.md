@@ -30,7 +30,7 @@
 - [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?](arrayslice/withcontiguousmutablestorageifavailable(_:)-5vekj.md)
   Executes a closure on the collection’s contiguous storage.
 ### Subscripts
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](arrayslice/subscript(_:)-3f18y.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](arrayslice/subscript(_:)-3f18y.md)
 - [subscript(Range<Self.Index>) -> Self.SubSequence](arrayslice/subscript(_:)-6gtfn.md)
 - [subscript<R>(R) -> Self.SubSequence](arrayslice/subscript(_:)-7gag3.md)
 - [subscript(Range<Self.Index>) -> Slice<Self>](arrayslice/subscript(_:)-7xg8e.md)

@@ -11,7 +11,7 @@ Creates a customizable Touch Bar view container with a globally unique identifie
 ## Declaration
 
 ```swift
-init(id: String, @ViewBuilder content: () -> Content)
+init(id: String, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

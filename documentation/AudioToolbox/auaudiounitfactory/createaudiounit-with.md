@@ -20,6 +20,10 @@ Creates an instance of an extension’s audio unit.
 func createAudioUnit(with desc: AudioComponentDescription) throws -> AUAudioUnit
 ```
 
+## Mentions
+
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+
 #### Return Value
 
 An instance of the extension’s audio unit.

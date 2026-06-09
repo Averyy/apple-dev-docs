@@ -22,6 +22,8 @@ var minimumAngleDelta: Angle
 
 - [init(minimumAngleDelta: Angle)](rotategesture/init(minimumangledelta:).md)
   Creates a rotation gesture with a minimum delta for the gesture to start.
+- [init(minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture/init(minimumangledelta:inputkinds:).md)
+  Creates a rotation gesture with a minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 
 
 ---

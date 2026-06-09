@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-An object that is the error or assocaited errors.
+An arbitrary metadata key-value entry within an error response’s meta object.
 
 **Availability**:
 - App Store Connect API 3.2+
@@ -13,6 +13,10 @@ An object that is the error or assocaited errors.
 ```swift
 object ErrorResponse.Errors.Meta.Any Key
 ```
+
+#### Overview
+
+An object that is the error or assocaited errors.
 
 
 ---

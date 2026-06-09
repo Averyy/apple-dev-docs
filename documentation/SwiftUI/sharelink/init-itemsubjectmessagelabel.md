@@ -17,7 +17,7 @@ Creates an instance that presents the share interface.
 
 ```swift
 nonisolated
-init(item: String, subject: Text? = nil, message: Text? = nil, @ViewBuilder label: () -> Label) where Data == CollectionOfOne<String>
+init(item: String, subject: Text? = nil, message: Text? = nil, @ContentBuilder label: () -> Label) where Data == CollectionOfOne<String>
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ init(item: String, subject: Text? = nil, message: Text? = nil, @ViewBuilder labe
 - `item`: The item to share.
 - `subject`: A title for the item to show when sharing to activities that support a subject field.
 - `message`: A description of the item to show when sharing to activities that support a message field. Activities may support attributed text or HTML strings.
-- `label`: A view builder that produces a label that describes the share action.
+- `label`: A content builder that produces a label that describes the share action.
 
 ## See Also
 

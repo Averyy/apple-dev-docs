@@ -8,6 +8,7 @@ The current estimated average throughput capacity of the data path, given the cu
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

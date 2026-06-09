@@ -8,6 +8,7 @@ The anchor capability that enables face tracking.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

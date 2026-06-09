@@ -17,6 +17,7 @@ Loads and displays an image from the specified URL.
 ## Declaration
 
 ```swift
+nonisolated
 init(url: URL?, scale: CGFloat = 1) where Content == Image
 ```
 

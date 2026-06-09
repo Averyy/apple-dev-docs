@@ -7,8 +7,6 @@ The payload that configures system extensions.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,11 +30,11 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example
@@ -97,9 +95,9 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
 - `AllowedSystemExtensionTypes` (SystemExtensions.AllowedSystemExtensionTypes): A dictionary that maps a team identifier to an array of strings, where each string is a type of system extension that you can install for that team identifier. The allowed extension types are `DriverExtension`, `NetworkExtension`, and `EndpointSecurityExtension`. If there’s no entry for a specified team identifier in the dictionary, the system allows all extension types.
 - `AllowedTeamIdentifiers` ([string]): An array of team identifiers that defines valid, signed system extensions that are allowable to load. Approved system extensions are those signed with any of the specified team identifiers. To avoid requiring an administrator to authorize the operation, you can activate system extensions that this key specifies using [`activationRequest(forExtensionWithIdentifier:queue:)`](https://developer.apple.com/documentation/SystemExtensions/OSSystemExtensionRequest/activationRequest(forExtensionWithIdentifier:queue:)). It’s an error for the same team identifier to appear in both this array and as a key in the `AllowedSystemExtensions` dictionary.
 - `AllowUserOverrides` (boolean): If `false`, restricts users from approving additional system extensions that configuration profiles don’t explicitly allow.
-- `NonRemovableFromUISystemExtensions` (SystemExtensions.NonRemovableFromUISystemExtensions): A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled from System Settings or Finder. The set of system extensions between `RemovableSystemExtensions` and `NonRemovableFromUISystemExtensions` can to overlap.
-- `NonRemovableSystemExtensions` (SystemExtensions.NonRemovableSystemExtensions): A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled when SIP is enabled. It’s an error for the same mapping to appear in the dictionary values corresponding to `RemovableSystemExtensions` and `NonRemovableSystemExtensions` keys.
-- `RemovableSystemExtensions` (SystemExtensions.RemovableSystemExtensions): A dictionary of system extensions that are allowed to remove themselves from the machine. The dictionary maps team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension. An application using the `OSSystemExtensionDeactivationRequest` API can deactivate the specified system extensions without requiring an administrator to authorize the operation. Available in macOS 12 and later.
+- `NonRemovableFromUISystemExtensions` (SystemExtensions.NonRemovableFromUISystemExtensions): A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled from System Settings or Finder. The set of system extensions between `RemovableSystemExtensions` and `NonRemovableFromUISystemExtensions` can’t overlap. Available: macOS 15+
+- `NonRemovableSystemExtensions` (SystemExtensions.NonRemovableSystemExtensions): A dictionary of system extensions on the computer. The dictionary maps the team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension which can’t be disabled or uninstalled when SIP is enabled. It’s an error for the same mapping to appear in the dictionary values corresponding to `RemovableSystemExtensions` and `NonRemovableSystemExtensions` keys. Available: macOS 15+
+- `RemovableSystemExtensions` (SystemExtensions.RemovableSystemExtensions): A dictionary of system extensions that are allowed to remove themselves from the machine. The dictionary maps team identifiers (keys) to arrays of bundle identifiers, where the bundle identifier defines the system extension. An application using the `OSSystemExtensionDeactivationRequest` API can deactivate the specified system extensions without requiring an administrator to authorize the operation. Available: macOS 12+
 
 ## See Also
 
@@ -115,8 +113,6 @@ Beginning in macOS 11.3, installing or removing this payload can change the stat
   The payload that configures a Lock Screen message.
 - [object Screensaver](screensaver.md)
   The payload that configures the screen saver.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

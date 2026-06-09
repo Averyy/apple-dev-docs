@@ -50,8 +50,6 @@ class MXGPUMetric
   An object representing metrics about the use of location-tracking features of a device.
 - [class MXNetworkTransferMetric](mxnetworktransfermetric.md)
   An object representing metrics about network transfers.
-- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
-  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
 
 
 ---

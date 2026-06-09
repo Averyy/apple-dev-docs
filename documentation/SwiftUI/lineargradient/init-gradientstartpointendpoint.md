@@ -17,6 +17,7 @@ Creates a linear gradient from a base gradient.
 ## Declaration
 
 ```swift
+nonisolated
 init(gradient: Gradient, startPoint: UnitPoint, endPoint: UnitPoint)
 ```
 

@@ -50,6 +50,8 @@ This type holds the generated video mask texture and its relevant information.
 
 ## See Also
 
+- [struct ImmersiveVideoFrame](immersivevideoframe.md)
+  A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
 - [struct ImmersiveCameraViewModel](immersivecameraviewmodel.md)
   A view model that holds all the resources needed to render an immersive camera view.
 

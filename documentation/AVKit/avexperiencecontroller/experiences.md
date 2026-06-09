@@ -11,6 +11,7 @@ A structure that represents a collection of experiences to use with an experienc
 ## Declaration
 
 ```swift
+@preconcurrency
 struct Experiences
 ```
 
@@ -32,6 +33,8 @@ Experiences can be explicitly included or excluded from this list with the corre
 
 ### Conforms To
 - [Collection](../Swift/Collection.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [Sequence](../Swift/Sequence.md)
 
 ## See Also

@@ -34,6 +34,8 @@ The source node can only be an [`AVAudioUnit`](avaudiounit.md) node with the typ
 
 ## See Also
 
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-8tmk8.md)
+- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-35k1c.md)
 - [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-7qtd5.md)
   Establishes a MIDI connection between a source node and multiple destination nodes.
 - [func disconnectMIDI(AVAudioNode, from: AVAudioNode)](avaudioengine/disconnectmidi(_:from:)-1kssy.md)

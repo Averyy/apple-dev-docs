@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The HTTP request details of a webhook delivery attempt, including headers and body.
+
 **Availability**:
 - App Store Connect API 4.0+
 

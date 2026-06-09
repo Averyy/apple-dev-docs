@@ -116,10 +116,15 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
   Posted when the spell checker changed text using automatic text replacement.  This notification is posted to the app’s default notification center.
 ### Type Properties
 - [class let didChangeAutomaticCapitalizationNotification: NSNotification.Name](nsspellchecker/didchangeautomaticcapitalizationnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticCapitalizationMessage`](nsspellchecker/didchangeautomaticcapitalizationmessage.md).
 - [class let didChangeAutomaticDashSubstitutionNotification: NSNotification.Name](nsspellchecker/didchangeautomaticdashsubstitutionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage`](nsspellchecker/didchangeautomaticdashsubstitutionmessage.md).
 - [class let didChangeAutomaticPeriodSubstitutionNotification: NSNotification.Name](nsspellchecker/didchangeautomaticperiodsubstitutionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticPeriodSubstitutionMessage`](nsspellchecker/didchangeautomaticperiodsubstitutionmessage.md).
 - [class let didChangeAutomaticQuoteSubstitutionNotification: NSNotification.Name](nsspellchecker/didchangeautomaticquotesubstitutionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage`](nsspellchecker/didchangeautomaticquotesubstitutionmessage.md).
 - [class let didChangeAutomaticTextCompletionNotification: NSNotification.Name](nsspellchecker/didchangeautomatictextcompletionnotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticTextCompletionMessage`](nsspellchecker/didchangeautomatictextcompletionmessage.md).
 - [class var isAutomaticCapitalizationEnabled: Bool](nsspellchecker/isautomaticcapitalizationenabled.md)
 - [class var isAutomaticDashSubstitutionEnabled: Bool](nsspellchecker/isautomaticdashsubstitutionenabled.md)
 - [class var isAutomaticInlinePredictionEnabled: Bool](nsspellchecker/isautomaticinlinepredictionenabled.md)
@@ -134,6 +139,15 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
 - [func preventsAutocorrection(before: String, language: String?) -> Bool](nsspellchecker/preventsautocorrection(before:language:).md)
 - [func requestCandidates(forSelectedRange: NSRange, in: String, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any]?, inSpellDocumentWithTag: Int, completionHandler: ((Int, [NSTextCheckingResult]) -> Void)?) -> Int](nsspellchecker/requestcandidates(forselectedrange:in:types:options:inspelldocumentwithtag:completionhandler:).md)
 - [func showInlinePrediction(forCandidates: [NSTextCheckingResult], client: any NSTextInputClient)](nsspellchecker/showinlineprediction(forcandidates:client:).md)
+### Structures
+- [NSSpellChecker.DidChangeAutomaticCapitalizationMessage](nsspellchecker/didchangeautomaticcapitalizationmessage.md)
+- [NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage](nsspellchecker/didchangeautomaticdashsubstitutionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticInlinePredictionMessage](nsspellchecker/didchangeautomaticinlinepredictionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticPeriodSubstitutionMessage](nsspellchecker/didchangeautomaticperiodsubstitutionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage](nsspellchecker/didchangeautomaticquotesubstitutionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticSpellingCorrectionMessage](nsspellchecker/didchangeautomaticspellingcorrectionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticTextCompletionMessage](nsspellchecker/didchangeautomatictextcompletionmessage.md)
+- [NSSpellChecker.DidChangeAutomaticTextReplacementMessage](nsspellchecker/didchangeautomatictextreplacementmessage.md)
 
 ## Relationships
 

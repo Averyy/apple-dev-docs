@@ -13,8 +13,6 @@ The declaration to configure status subscriptions.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,6 +22,7 @@ object ManagementStatusSubscriptions
 
 ## Mentions
 
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
 
@@ -38,11 +37,14 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
 | Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | NA |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Example
+
+This configuration subscribes to a set of device status items.
 
 ```json
 {
@@ -105,20 +107,20 @@ Specify `com.apple.configuration.management.status-subscriptions` as the declara
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

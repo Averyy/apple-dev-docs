@@ -8,6 +8,7 @@ Provides information about possible problems with the capture session.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 
@@ -40,7 +41,6 @@ enum Feedback
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

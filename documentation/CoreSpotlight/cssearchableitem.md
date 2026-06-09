@@ -22,6 +22,7 @@ class CSSearchableItem
 
 - [Generating summary and priority data for indexed items](generating-summary-and-priority-data-for-indexed-items.md)
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
+- [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
 - [Searching for information in your app](searching-for-information-in-your-app.md)
 
 #### Overview
@@ -37,10 +38,15 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
 ### Getting a searchable item
 - [init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearchableItemAttributeSet)](cssearchableitem/init(uniqueidentifier:domainidentifier:attributeset:).md)
   Returns a searchable item associated with the specified identifier, domain identifier, and attribute set.
-- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
+- [convenience init(appEntity: some IndexedEntity) async](cssearchableitem/init(appentity:)-3hv5.md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
+- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:)-89ehq.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity.
-- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:)-7h9s.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity.
+- [convenience init<Entity>(appEntity: Entity, priority: Int) async](cssearchableitem/init(appentity:priority:)-7xlow.md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
+- [init?(coder: NSCoder)](cssearchableitem/init(coder:).md)
 ### Setting attributes on a searchable item
 - [var uniqueIdentifier: String](cssearchableitem/uniqueidentifier.md)
   The value that uniquely identifies the searchable item within your app.
@@ -68,11 +74,13 @@ After creating a searchable item, index it using a [`CSSearchableIndex`](cssearc
 ### Comparing items
 - [func compare(byRank: CSSearchableItem) -> ComparisonResult](cssearchableitem/compare(byrank:).md)
   Compares two items by rank and returns the result.
-### Deprecated
-- [func associateAppEntity(some IndexedEntity, priority: Int)](cssearchableitem/associateappentity(_:priority:).md)
+### Associating an entity with an item
+- [func associateAppEntity(some IndexedEntity, priority: Int) async](cssearchableitem/associateappentity(_:priority:)-6h7ym.md)
+  Associates an app entity with this searchable item. Resolves deferred properties before association.
+- [func associateAppEntity(some IndexedEntity, priority: Int)](cssearchableitem/associateappentity(_:priority:)-736lx.md)
   Associates an app entity with this searchable item.
-### Initializers
-- [init?(coder: NSCoder)](cssearchableitem/init(coder:).md)
+- [var relatedAppEntityIdentifier: EntityIdentifier?](cssearchableitem/relatedappentityidentifier.md)
+  The identifier of the related indexed entity for this searchable item.
 
 ## Relationships
 

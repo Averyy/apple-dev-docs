@@ -12,6 +12,7 @@ The protocol for a type that builds evidence of a condition over time.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -49,6 +50,7 @@ protocol StatefulRequest : VisionRequest
 - [DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)
 - [DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
+- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 - [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
 - [TrackObjectRequest](trackobjectrequest.md)
 - [TrackOpticalFlowRequest](trackopticalflowrequest.md)

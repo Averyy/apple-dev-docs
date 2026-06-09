@@ -8,6 +8,7 @@ A dictionary of all publishable services declared by your app, indexed by servic
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

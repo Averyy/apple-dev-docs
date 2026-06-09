@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a Game Center activity version release.
+
 **Availability**:
 - App Store Connect API 4.0+
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The response body for endpoints that list promoted in-app purchases and subscriptions for an app.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -22,12 +24,15 @@ object PromotedPurchasesResponse
 ## See Also
 
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
+  The response body for endpoints that read or modify a promoted in-app purchase or subscription.
 - [object PromotedPurchaseCreateRequest](promotedpurchasecreaterequest.md)
+  The request body you use to create a promoted purchase.
 - [object PromotedPurchaseUpdateRequest](promotedpurchaseupdaterequest.md)
+  The request body you use to update a promoted purchase update request.
 - [object AppPromotedPurchasesLinkagesRequest](apppromotedpurchaseslinkagesrequest.md)
-  The data structure that represents an app promoted purchases linkages request resource.
+  The request body for updating the ordered list of in-app purchases and subscriptions promoted on an app’s product page.
 - [object AppPromotedPurchasesLinkagesResponse](apppromotedpurchaseslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of in-app purchases and subscriptions promoted on an app’s product page.
 
 
 ---

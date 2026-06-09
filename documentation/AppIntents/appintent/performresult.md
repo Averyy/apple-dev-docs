@@ -22,9 +22,9 @@ associatedtype PerformResult : IntentResult
 ## See Also
 
 - [func perform() async throws -> Self.PerformResult](appintent/perform.md)
-  Performs the intent after resolving the provided parameters.
+  Performs the intent’s action and returns a result, after resolving any parameters.
 - [var systemContext: IntentSystemContext](appintent/systemcontext.md)
-  Context information that’s available while the system performs the app intent’s action.
+  Contextual information that the system provides while it performs the app intent.
 
 
 ---

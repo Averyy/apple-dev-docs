@@ -107,6 +107,8 @@ A rule editor lets the user visually create and configure a list of options that
 ### Notifications
 - [class let rowsDidChangeNotification: NSNotification.Name](nsruleeditor/rowsdidchangenotification.md)
   This notification is posted to the default notification center whenever the view’s rows change.
+### Structures
+- [NSRuleEditor.RowsDidChangeMessage](nsruleeditor/rowsdidchangemessage.md)
 
 ## Relationships
 

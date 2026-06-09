@@ -11,8 +11,6 @@ The payload that configures profile removal.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - tvOS 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,9 +32,9 @@ This payload provides a password to allow users to remove a locked configuration
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS |
 | Requires supervision | iOS, tvOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

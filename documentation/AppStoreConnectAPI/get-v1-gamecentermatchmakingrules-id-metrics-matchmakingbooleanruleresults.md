@@ -1,4 +1,4 @@
-# Get Boolean Rule Results
+# Get boolean rule results
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

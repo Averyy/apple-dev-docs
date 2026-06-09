@@ -8,6 +8,7 @@ The maximum number of unique devices your app can connect to simultaneously.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

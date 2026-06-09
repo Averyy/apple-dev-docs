@@ -73,13 +73,15 @@ AVFoundation combines several major technology areas that together encompass a w
   A structure that defines the errors that framework operations can generate.
 ### Macros
 - [Macros](avfoundation-macros.md)
+### Classes
+- [class AVAssetWritingPlanner](avassetwritingplanner.md)
+- [class AVAssetWritingPlannerProgress](avassetwritingplannerprogress.md)
+- [class AVProVideoStorage](avprovideostorage.md)
+  A class to track and manage pre-allocated storage for high data rate video capture.
 ### Variables
-- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
-  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
-- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
-  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
-- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
-  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
+- [let AVVideoLogTransferFunctionKey: String](avvideologtransferfunctionkey.md)
+- [let AVVideoLogTransferFunction_AppleLog: String](avvideologtransferfunction_applelog.md)
+- [let AVVideoLogTransferFunction_AppleLog2: String](avvideologtransferfunction_applelog2.md)
 
 
 ---

@@ -44,6 +44,10 @@ enum operating_modes_t
   A virtual network interface.
 - [struct interface_event_t](interface_event_t.md)
   Interface event types.
+- [typealias vmnet_mode_t](vmnet_mode_t.md)
+  A type that defines the operating modes of the vmnet interface.
+- [typealias vmnet_network_ref](vmnet_network_ref.md)
+  A pointer to a network structure.
 
 
 ---

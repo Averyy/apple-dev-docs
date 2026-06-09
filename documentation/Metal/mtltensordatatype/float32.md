@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+A single-precision floating point data type.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

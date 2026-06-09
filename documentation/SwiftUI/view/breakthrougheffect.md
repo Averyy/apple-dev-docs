@@ -74,6 +74,14 @@ This also applies to RealityKit presentations using `RealityKit/PresentationComp
 
 - `effect`: The type of effect to apply when the view is occluded by other content.
 
+## See Also
+
+- [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](view/preferredsurroundingseffect(_:).md)
+  Applies an effect to passthrough video.
+- [struct SurroundingsEffect](surroundingseffect.md)
+  Effects that the system can apply to passthrough video.
+- [struct BreakthroughEffect](breakthrougheffect.md)
+
 
 ---
 

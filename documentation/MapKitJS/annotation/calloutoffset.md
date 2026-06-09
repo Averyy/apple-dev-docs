@@ -11,8 +11,8 @@ An offset that changes the annotation callout’s default placement.
 ## Declaration
 
 ```swift
-get calloutOffset(): DOMPoint | undefined;
-set calloutOffset(value: DOMPoint | undefined);
+get calloutOffset(): DOMPoint;
+set calloutOffset(value: DOMPoint);
 ```
 
 #### Discussion

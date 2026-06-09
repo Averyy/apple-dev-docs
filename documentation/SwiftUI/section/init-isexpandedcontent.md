@@ -17,7 +17,7 @@ Creates a section with the provided section content.
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ViewBuilder con
 ## See Also
 
 - [init(isExpanded:content:header:)](section/init(isexpanded:content:header:).md)
-  Creates a section with a header, the provided section content, and a binding representing the section’s expansion state.
+  Creates a section with the provided section content.
 
 
 ---

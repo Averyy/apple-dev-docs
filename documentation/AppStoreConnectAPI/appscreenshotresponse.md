@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single App Screenshots resource.
+The response body for endpoints that create, read, or modify an app screenshot.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -29,7 +29,7 @@ object AppScreenshotResponse
 - [object AppScreenshotUpdateRequest](appscreenshotupdaterequest.md)
   The request body you use to update an App Screenshot.
 - [object AppScreenshotsResponse](appscreenshotsresponse.md)
-  A response that contains a list of App Screenshots resources.
+  The response body for endpoints that list screenshots in an app screenshot set.
 - [object UploadOperation](uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
 

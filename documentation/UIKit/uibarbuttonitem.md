@@ -170,6 +170,10 @@ In general, specify a value for the normal state so that other states without a 
 ### Instance Properties
 - [var identifier: String?](uibarbuttonitem/identifier.md)
   An identifier used to match bar button items across transitions in a navigation bar or toolbar.
+- [var isPaddingRemoved: Bool](uibarbuttonitem/ispaddingremoved.md)
+  Whether the standard padding around the item should be removed. Default: NO
+- [var visibilityPriority: UIBarButtonItemVisibilityPriority](uibarbuttonitem/visibilitypriority.md)
+  Visibility priority for this item when placed in a button bar.
 
 ## Relationships
 

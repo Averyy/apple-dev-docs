@@ -11,8 +11,6 @@ Gets the bootstrap token from the server.
 - Mac Catalyst 26.0+
 - macOS 10.15+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -29,9 +27,9 @@ Requires a device enrolled using Automated Device Enrollment.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, visionOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 
 ## Topics
 
@@ -43,7 +41,7 @@ Requires a device enrolled using Automated Device Enrollment.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#GetBootstrapTokenRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

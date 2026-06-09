@@ -8,6 +8,7 @@ An enum that lists all possible states of an alarm.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -30,7 +31,6 @@ enum State
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

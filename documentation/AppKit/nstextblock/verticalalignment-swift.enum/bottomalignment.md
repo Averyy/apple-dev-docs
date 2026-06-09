@@ -1,26 +1,26 @@
-# NSTextBlock.VerticalAlignment.bottomAlignment
+# bottomAlignment
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: property
 
 Aligns adjacent blocks at their bottom.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-case bottomAlignment
+static var bottomAlignment: NSTextBlock.VerticalAlignment { get }
 ```
 
 ## See Also
 
-- [NSTextBlock.VerticalAlignment.topAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
+- [static var topAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
   Aligns adjacent blocks at their top.
-- [NSTextBlock.VerticalAlignment.middleAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
+- [static var middleAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
   Aligns adjacent blocks at their middle.
-- [NSTextBlock.VerticalAlignment.baselineAlignment](nstextblock/verticalalignment-swift.enum/baselinealignment.md)
+- [static var baselineAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/baselinealignment.md)
   Aligns adjacent blocks at the baseline of the first line of text in the block.
 
 

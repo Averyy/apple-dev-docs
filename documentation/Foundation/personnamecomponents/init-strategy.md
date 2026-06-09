@@ -35,6 +35,8 @@ This method uses a combination of locale rules and the provided parse strategy o
 
 - [init(String) throws](personnamecomponents/init(_:).md)
   Creates a person name components object from a given string.
+- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+  The strategy used to parse a string into person name components.
 
 
 ---

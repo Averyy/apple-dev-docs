@@ -16,6 +16,11 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+- [init(contentType: UTType)](cssearchableitemattributeset/init(contenttype:).md)
+  Creates an attribute set for the specified content type.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the reports ID for analytics report request resource.
+The resource linkage identifying an analytics report associated with a report request.
 
 **Availability**:
 - App Store Connect API 3.4+

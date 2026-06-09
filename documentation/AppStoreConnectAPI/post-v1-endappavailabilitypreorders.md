@@ -1,4 +1,4 @@
-# End an App Pre-Order
+# End an app pre-order
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,14 +14,15 @@ End the pre-order for your app and release to store immediately.
 
 ## See Also
 
-- [Read App Availabilty](get-v2-appavailabilities-_id_.md)
+- [Read app availability](get-v2-appavailabilities-_id_.md)
   Get information about your app’s availalbility.
-- [Read App Availability Territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
+- [Read app availablity territories](get-v2-appavailabilities-_id_-territoryavailabilities.md)
   Read the territory availablity for a specific app.
-- [GET /v2/appAvailabilities/{id}/relationships/territoryAvailabilities](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
-- [Create an App Pre-Order](post-v2-appavailabilities.md)
+- [List territory availability IDs for an app availability](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
+  Get a list of territory availability IDs for a specific app availability.
+- [Create an app pre-order](post-v2-appavailabilities.md)
   Create an app pre-order and set the expected app release date.
-- [Modify the Territory Availabilty for an App Pre-Order](patch-v1-territoryavailabilities-_id_.md)
+- [Modify the territory availability for an app pre-order](patch-v1-territoryavailabilities-_id_.md)
   Update the release territories for your app pre-order.
 
 

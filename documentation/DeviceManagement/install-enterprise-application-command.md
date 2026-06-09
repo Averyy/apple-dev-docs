@@ -7,8 +7,6 @@ Install an enterprise app on a device.
 
 **Availability**:
 - macOS 10.13.6+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -27,8 +25,8 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | macOS |
 | Required access right | AllowAppInstallation |
 
@@ -85,7 +83,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InstallEnterpriseApplicationCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

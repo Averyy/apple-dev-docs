@@ -41,7 +41,7 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   Returns the offsets where the memory of `other` is located within the memory represented by `self`
 - [func extracting(Range<Int>) -> RawSpan](rawspan/extracting(_:)-2imhy.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
-- [func extracting((UnboundedRange_) -> ()) -> RawSpan](rawspan/extracting(_:)-3elv4.md)
+- [func extracting(UnboundedRange) -> RawSpan](rawspan/extracting(_:)-3elv4.md)
   Constructs a new span over all the bytes of this span.
 - [func extracting(some RangeExpression<Int>) -> RawSpan](rawspan/extracting(_:)-8oy0e.md)
   Constructs a new span over the bytes within the supplied range of positions within this span.
@@ -59,6 +59,8 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   Constructs a new span over the bytes within the supplied range of positions within this span.
 - [func isIdentical(to: RawSpan) -> Bool](rawspan/isidentical(to:).md)
   Returns a Boolean value indicating whether two `RawSpan` instances refer to the same region in memory.
+- [func isTriviallyIdentical(to: RawSpan) -> Bool](rawspan/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func unsafeLoad<T>(fromByteOffset: Int, as: T.Type) -> T](rawspan/unsafeload(frombyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func unsafeLoad<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](rawspan/unsafeload(fromuncheckedbyteoffset:as:).md)
@@ -67,13 +69,18 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](rawspan/unsafeloadunaligned(fromuncheckedbyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](rawspan/withbytes(_:).md)
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](rawspan/withunsafebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
+### Default Implementations
+- [BorrowingSequence Implementations](rawspan/borrowingsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
+- [BorrowingSequence](borrowingsequence.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

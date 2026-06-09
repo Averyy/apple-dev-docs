@@ -33,6 +33,11 @@ class CPRouteChoice
   An object containing custom information associated with the route choice.
 ### Initializers
 - [init?(coder: NSCoder)](cproutechoice/init(coder:).md)
+- [init(summaryVariants: [String], additionalInformationVariants: [String], selectionSummaryVariants: [String], travelEstimates: CPTravelEstimates?)](cproutechoice/init(summaryvariants:additionalinformationvariants:selectionsummaryvariants:travelestimates:).md)
+  Initialize a @c CPRouteChoice with summary variants, additional information variants, selection summary variants, and travel estimates.
+### Instance Properties
+- [var travelEstimates: CPTravelEstimates?](cproutechoice/travelestimates.md)
+  Trip preview information such as battery, fuel, or toll information to display for this route choice.
 
 ## Relationships
 

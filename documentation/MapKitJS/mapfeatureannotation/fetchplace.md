@@ -11,8 +11,14 @@ Fetches the place object associated with the map feature.
 ## Declaration
 
 ```swift
-fetchPlace(callback: (error: Error | null, result?: Place) => void): number;
+fetchPlace(
+    callback: (error: Error | null, result: Place | null) => void,
+): Promise<Place | null>;
 ```
+
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
 
 ## Parameters
 

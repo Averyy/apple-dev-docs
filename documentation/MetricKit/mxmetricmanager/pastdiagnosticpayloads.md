@@ -3,7 +3,7 @@
 **Framework**: MetricKit  
 **Kind**: property
 
-Returns an array of the diagnostic reports generated since the last allocation of the shared manager instance.
+The diagnostic reports since the last initialization of the shared manager instance.
 
 **Availability**:
 - iOS 14.0+
@@ -17,6 +17,12 @@ Returns an array of the diagnostic reports generated since the last allocation o
 ```swift
 var pastDiagnosticPayloads: [MXDiagnosticPayload] { get }
 ```
+
+#### Discussion
+
+You can access this property after you register your first subscriber using [`add(_:)`](mxmetricmanager/add(_:).md) and receive at least one [`MXMetricManagerSubscriber`](mxmetricmanagersubscriber.md) callback.
+
+This property only reflects diagnostic reports from the current session and lifetime of the [`MXMetricManager`](mxmetricmanager.md) instance. It doesn’t include diagnostics from previous app instances.
 
 ## See Also
 

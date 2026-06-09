@@ -160,6 +160,27 @@ func fetchRecords(
   The type of database.
 - [CKDatabase.Scope](ckdatabase/scope.md)
   Constants that represent the scope of a database.
+### Instance Methods
+- [func allRecordZones() async throws -> [CKRecordZone]](ckdatabase/allrecordzones.md)
+  Fetches all record zones from the current database.
+- [func allSubscriptions() async throws -> [CKSubscription]](ckdatabase/allsubscriptions.md)
+  Fetches all subscriptions from the current database.
+- [func deleteRecord(withID: CKRecord.ID) async throws -> CKRecord.ID](ckdatabase/deleterecord(withid:).md)
+  Deletes a specific record.
+- [func deleteRecordZone(withID: CKRecordZone.ID) async throws -> CKRecordZone.ID](ckdatabase/deleterecordzone(withid:).md)
+  Deletes a specific record zone.
+- [func perform(CKQuery, inZoneWith: CKRecordZone.ID?) async throws -> [CKRecord]](ckdatabase/perform(_:inzonewith:).md)
+  Searches for records matching a predicate in the specified record zone.
+- [func record(for: CKRecord.ID) async throws -> CKRecord](ckdatabase/record(for:).md)
+  Fetches a specific record.
+- [func recordZone(for: CKRecordZone.ID) async throws -> CKRecordZone](ckdatabase/recordzone(for:).md)
+  Fetches a specific record zone.
+- [func save(CKRecord) async throws -> CKRecord](ckdatabase/save(_:)-1j6fq.md)
+  Saves a specific record.
+- [func save(CKSubscription) async throws -> CKSubscription](ckdatabase/save(_:)-69wq8.md)
+  Saves a specific subscription.
+- [func save(CKRecordZone) async throws -> CKRecordZone](ckdatabase/save(_:)-7btlo.md)
+  Saves a specific record zone.
 
 ## Relationships
 

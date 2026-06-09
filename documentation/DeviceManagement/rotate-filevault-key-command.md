@@ -7,8 +7,6 @@ Change the FileVault primary password on a device.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -21,9 +19,9 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
@@ -187,7 +185,7 @@ This command changes the File Vault institutional recovery key.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#RotateFileVaultKeyCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

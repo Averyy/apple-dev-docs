@@ -8,6 +8,7 @@ The type of account that Family Controls is currently managing.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

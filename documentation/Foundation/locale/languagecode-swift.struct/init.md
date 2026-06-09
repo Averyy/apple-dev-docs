@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: A two-letter ISO 639-1 or three-letter ISO 639-2 code, such as `en` for English. You can also use a code of your own choice for a custom language.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/languagecode-swift.struct/init(stringliteral:).md)
+  Creates a language code from an identifier as a string literal.
+
 
 ---
 

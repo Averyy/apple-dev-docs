@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+Options for formatting person name components.
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
@@ -41,6 +43,7 @@ struct Options
 ## See Also
 
 - [PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.enum.md)
+  The formatting styles for person name components.
 - [Attributed String Key](attributed-string-key.md)
   This constant is used as a key for person name component attributes in attributed strings returned by the [`annotatedString(from:)`](personnamecomponentsformatter/annotatedstring(from:).md) method
 - [Attributed String Components](attributed-string-components.md)

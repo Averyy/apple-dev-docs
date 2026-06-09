@@ -10,8 +10,6 @@ The bookmark in the allow list of the web content filter.
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

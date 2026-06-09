@@ -34,6 +34,7 @@ To create custom attribute key names, use a reverse DNS format that includes you
 
 - [init?(keyName: String, searchable: Bool, searchableByDefault: Bool, unique: Bool, multiValued: Bool)](cscustomattributekey/init(keyname:searchable:searchablebydefault:unique:multivalued:).md)
   Returns a new custom attribute key with the specified name and properties.
+- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
 
 
 ---

@@ -18,6 +18,10 @@ Tells the delegate that the app has become active.
 optional func applicationDidBecomeActive(_ application: UIApplication)
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneDidBecomeActive(_:)`](uiscenedelegate/scenedidbecomeactive(_:).md) instead to restart any tasks or refresh your app’s user interface. UIKit posts a [`didBecomeActiveNotification`](uiapplication/didbecomeactivenotification.md) regardless of whether your app uses scenes.

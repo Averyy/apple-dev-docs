@@ -32,6 +32,12 @@ When the format is in an interleaved state, the pointers refer to the same buffe
 
 ## See Also
 
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+  Returns read-only access to a specific channel’s data.
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+  Returns mutable access to a specific channel’s data.
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+  Provides scoped read-only access to the audio buffer list.
 - [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
   The buffer’s capacity, in audio sample frames.
 - [var int16ChannelData: UnsafePointer<UnsafeMutablePointer<Int16>>?](avaudiopcmbuffer/int16channeldata.md)
@@ -40,6 +46,10 @@ When the format is in an interleaved state, the pointers refer to the same buffe
   The buffer’s 32-bit integer audio samples.
 - [var stride: Int](avaudiopcmbuffer/stride.md)
   The buffer’s number of interleaved channels.
+- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+  Represents read-only channel data.
+- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+  Represents mutable channel data.
 
 
 ---

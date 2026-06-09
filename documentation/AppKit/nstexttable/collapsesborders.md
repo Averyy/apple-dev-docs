@@ -6,7 +6,7 @@
 A Boolean value indicating whether the text table borders are collapsible.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

@@ -9,6 +9,7 @@ The framework requests that the sheet expand.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

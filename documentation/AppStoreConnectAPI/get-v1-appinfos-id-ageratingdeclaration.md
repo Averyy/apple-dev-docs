@@ -1,9 +1,9 @@
-# Read Age Rating Declaration
+# Read the age-rating declaration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get the age rating declaration for the app info.
+Get the age-rating declaration for an app info.
 
 **Availability**:
 - App Store Connect API 1.4+
@@ -12,6 +12,7 @@ Get the age rating declaration for the app info.
 
 - [App Store Connect API 4.0 release notes](app-store-connect-api-4-0-release-notes.md)
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
 
 #### Discussion
 
@@ -65,12 +66,12 @@ GET https://api.appstoreconnect.apple.com/v1/appInfos/994af4c0-ff6c-fdb9-e053-d2
 
 ## Parameters
 
-- `fields[ageRatingDeclarations]` ([string])
+- `fields[ageRatingDeclarations]` ([string]): Additional fields to include for each age-rating declaration resource that the response returns.
 
 ## See Also
 
-- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
-- [Modify an Age Rating Declaration](patch-v1-ageratingdeclarations-_id_.md)
+- [Get the age rating declaration ID for an app info](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
+- [Modify an age rating declaration](patch-v1-ageratingdeclarations-_id_.md)
   Provide age-related information so the App Store can determine the age rating for your app.
 
 

@@ -13,8 +13,6 @@ A dictionary that describes a profile payload content item.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,7 +27,7 @@ object ProfileListResponse.ProfileListItem.PayloadContentItem
 - `PayloadIdentifier` (string) *(required)*: The reverse-DNS-style identifier of the payload, such as `com.example.mypayload`.
 - `PayloadOrganization` (string): The human-readable name of the organization that provided the payload.
 - `PayloadType` (string) *(required)*: The type of payload, such as `com.apple.wifi.managed`.
-- `PayloadUUID` (string) *(required)*: The unique identifier of the payload.
+- `PayloadUUID` (string) *(required)*: The unique identifier of the payload. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 - `PayloadVersion` (integer) *(required)*: The version of the payload. The value is `1`.
 
 

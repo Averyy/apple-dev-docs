@@ -1,0 +1,30 @@
+# average
+
+**Framework**: MetricKit  
+**Kind**: property
+
+The average measurement value.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+let average: Measurement<DimensionType>
+```
+
+## See Also
+
+- [let count: Int](averagestatistics/count.md)
+  The number of samples used to calculate the average.
+- [let standardDeviation: Double?](averagestatistics/standarddeviation.md)
+  The standard deviation of the distribution of values used to calculate the average.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/metrickit/averagestatistics/average)*

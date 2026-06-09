@@ -15,7 +15,8 @@ Creates a disclosure group with the given label and content views.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: @escaping () -> Content, @ViewBuilder label: () -> Label)
+nonisolated
+init(@ContentBuilder content: @escaping () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

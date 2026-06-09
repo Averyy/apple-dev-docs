@@ -1,6 +1,6 @@
 # analyzeImage(at:completionHandler:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Analyzes an image file on disk at a URL and runs code on completion.

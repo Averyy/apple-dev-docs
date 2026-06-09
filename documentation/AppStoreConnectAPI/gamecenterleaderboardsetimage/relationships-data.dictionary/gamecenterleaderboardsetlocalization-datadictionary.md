@@ -16,6 +16,7 @@ object GameCenterLeaderboardSetImage.Relationships.GameCenterLeaderboardSetLocal
 
 ### Objects
 - [object GameCenterLeaderboardSetImage.Relationships.GameCenterLeaderboardSetLocalization.Data](gamecenterleaderboardsetimage/relationships-data.dictionary/gamecenterleaderboardsetlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a leaderboard.
 
 ## Properties
 

@@ -3,10 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift

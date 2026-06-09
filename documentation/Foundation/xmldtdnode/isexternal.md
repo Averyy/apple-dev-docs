@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+True if the system id is set. Valid for entities and notations.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 10.0+
@@ -12,10 +14,6 @@
 ```swift
 var isExternal: Bool { get }
 ```
-
-#### Discussion
-
-True if the system id is set. Valid for entities and notations.
 
 ## See Also
 

@@ -1,9 +1,9 @@
-# allowsWindowActivationEvents()
+# allowsWindowActivationEvents(_:)
 
 **Framework**: SwiftUI  
 **Kind**: method
 
-Configures gestures in this view hierarchy to handle events that activate the containing window.
+Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 
 **Availability**:
 - iOS 18.0+
@@ -16,7 +16,7 @@ Configures gestures in this view hierarchy to handle events that activate the co
 
 ```swift
 nonisolated
-func allowsWindowActivationEvents() -> some View
+func allowsWindowActivationEvents(_ value: Bool?) -> some View
 ```
 
 #### Discussion
@@ -34,7 +34,13 @@ HStack {
 
 > **Note**: It’s only possible to disallow handling events that activate the containing window for views that allow it by default or that inherit this behavior from their ancestors. Views that explicitly already disallow this functionality can’t have it turned on.
 
+> **Note**: Prefer using [`allowsWindowActivationEvents()`](view/allowswindowactivationevents().md) if the parameter is always `true` and it never changes.
+
+## Parameters
+
+- `value`: A Boolean value that indicates whether gestures in this view hierarchy can handle events that activate the containing window. If `nil`, or if the modifier is not present, the behavior will be inherited from the view’s ancestors.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents())*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/view/allowswindowactivationevents(_:))*

@@ -21,10 +21,6 @@ case algorithmAES256GCM
 
 ## See Also
 
-- [NEVPNIKEv2EncryptionAlgorithm.algorithmDES](nevpnikev2encryptionalgorithm/algorithmdes.md)
-  Data Encryption Standard (DES)
-- [NEVPNIKEv2EncryptionAlgorithm.algorithm3DES](nevpnikev2encryptionalgorithm/algorithm3des.md)
-  Triple Data Encryption Algorithm (aka 3DES)
 - [NEVPNIKEv2EncryptionAlgorithm.algorithmAES128](nevpnikev2encryptionalgorithm/algorithmaes128.md)
   Advanced Encryption Standard 256-bit (AES256).
 - [NEVPNIKEv2EncryptionAlgorithm.algorithmAES256](nevpnikev2encryptionalgorithm/algorithmaes256.md)

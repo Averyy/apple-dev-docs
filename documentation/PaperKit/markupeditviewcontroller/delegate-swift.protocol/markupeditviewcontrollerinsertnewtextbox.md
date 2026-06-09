@@ -22,6 +22,15 @@ func markupEditViewControllerInsertNewTextbox(_ markupEditViewController: Markup
 
 - `markupEditViewController`: The source of the action.
 
+## See Also
+
+- [func markupEditViewController(MarkupEditViewController, insertNewShape: ShapeConfiguration.Shape)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewshape:).md)
+  Add a new shape on top of the paper.
+- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+  Add a new line on top of the paper.
+- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).md)
+  Add new content on top of the paper.
+
 
 ---
 

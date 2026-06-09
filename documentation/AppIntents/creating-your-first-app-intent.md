@@ -6,97 +6,173 @@ Create your first app intent that makes your app available in system experiences
 
 #### Overview
 
-To let people leverage your app’s features outside of the app itself, system experiences like Spotlight and the Shortcuts app require your help to understand your app’s actions and content so the system can expose that functionality. Use [`App Intents`](AppIntents.md) to express your app’s capabilities and make your app’s actions available to the system. App intents are self-contained types that act as a bridge between your code and system experiences and services. Each app intent encapsulates a single action that’s specific to your app. It provides the system with any action that makes sense for your app’s audience, such as showing information about a hiking trail from a hiking app, exporting a person’s transaction history from a budgeting app, or converting between two specific units of measurement with a converter app.
+An *app intent* is an action that your app performs, and that you make available to the system and other apps. App intents serve as a bridge between your app’s features and Apple Intelligence to enable system experiences like Siri, widgets, the Shortcuts app, and more. For example, when someone asks Siri to play a song using your app, Siri fulfills the request using an app intent you provide. Similarly, people use the Shortcuts app to assemble workflows from the app intents that various apps make available.
 
-Every app intent provides descriptive information about itself that experiences and services like Siri can display or announce. When you build an app that contains app intents, the compiler examines your source and generates data about those intents that Xcode stores in the app bundle. After someone installs your app, the system uses that data to discover the intents and makes them available to the system.
+As you build your app, create app intents for features that people might want to use from Siri or other parts of the system. For common features that multiple apps share, the system provides templates to use when defining your app intent. These templates simplify the creation of your code and define a common structure that Apple Intelligence uses when responding to prompts. When a template isn’t available, create the app intent code yourself using the available types of the App Intents framework.
 
-Before you get started creating your first app intent, read [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md) to review App Intents framework features and functionality. Then, identify an action and create your first app intent, and offer an App Shortcut as described below. App Shortcuts make your app intent even more useful. For example, App Shortcuts don’t require configuration, and people can place them on the Action button.  Additionally, App Shortcuts appear in Spotlight even when a person hasn’t launched your app.
+##### Declare Your App Intent Type
 
-##### Identify an Action
+An app intent is a structure that implements the [`AppIntent`](appintent.md) protocol, which defines the required behavior for all app intents. You use this structure to provide the basic information about your app intent’s action, and to store the data and code you need to perform the action. You create this structure manually for app intents that are unique to your app. However, if you support app intents from one of the system-defined schemas, you can also use Xcode code completion to generate it for you.
 
-Think about actions and tasks people perform in your app, an action’s input and output data, and how the system could surface actions in its services and experiences. In general, implement your [`AppIntent`](appintent.md) to have a narrow focus and do one thing well. People can invoke it individually, or create custom shortcuts by combining it with app intents from other apps in the Shortcuts app.
+Some actions are common to multiple apps on the system, and the system-defined schemas serve as templates for the app intents you create. For example, multiple apps might support playing audio, sending mail or messages, or managing photos and photo albums. To use Xcode code generation to create your initial type, type the domain you support followed by an underscore character and select an app intent from the list Xcode provides. For example, if you type “photos_” into your source file, Xcode displays code completion options from the photos domain. The following example shows the initial code for a show in app search results app intent from the photos domain:
 
-For your first app intent, choose an action that people are likely to use frequently. Then, add an App Shortcut that includes the app intent.
+```swift
+@AppIntent(schema: .photos.search)
+struct SearchMediaIntent: ShowInAppSearchResultsIntent {
+    static var searchScopes: [StringSearchScope] = [.general]
+    
+    var criteria: StringSearchCriteria
+    
+    func perform() async throws -> some IntentResult {
+    }
+}
+```
 
-> 💡 **Tip**: To get familiar with the App Intents framework, consider creating your first app intent for functionality that doesn’t use a specialized app intent protocol; for example, an app intent that opens your app. When you’ve successfully created your first app intent, make changes to adopt a specialized app intent or add more app intents for more complex app functionality.
+> **Note**: If you already declared your app intent structure manually, add support for a schema by adding the `@AppIntent` property wrapper to your declaration. When you add this property wrapper manually, you’re responsible for adding any properties or methods the schema requires. During compilation, the compiler generates errors for any required schema elements missing from your code. Include this property wrapper only if your app intent supports a schema.
 
-##### Review When to Adopt Specialized App Intent Protocols
+For some app intents, you need to declare your type using one of the other protocols the App Intents framework provides. There are several protocols that conform to [`AppIntent`](appintent.md) and unlock additional abilities. For example, if your app intent needs to open your app and display some data, use the [`OpenIntent`](openintent.md) protocol as your starting point instead. In the code above, the structure adopts the [`ShowInAppSearchResultsIntent`](showinappsearchresultsintent.md) protocol because the app intent’s purpose is to show search results in the app’s interface. Choose the protocol that matches the action you support, and fall back to the [`AppIntent`](appintent.md) protocol as needed.
 
-For many app intents, the [`AppIntent`](appintent.md) protocol is the preferred protocol to adopt. However, depending on your app’s specific behaviors, you might prefer your code to conform to one of the other intent protocols; for example:
+For a list of specialized protocols you can use to define app intents, see [`App intent types`](app-intent-types.md). For a list of app intent schemas organized by functional domains, see [`App schema domains`](app-schema-domains.md).
 
-- Create app intents that conform to assistant schemas that make sure your actions and content work well with the enhanced action capabilities of Siri that Apple Intelligence provides.
-- If your app plays or records audio and you want to offer that same functionality in an app intent, adopt [`AudioPlaybackIntent`](audioplaybackintent.md) instead. This protocol inherits from `AppIntent` and indicates the audio-related behavior to the system so that, where possible, it avoids audio interactions and other potential interruptions.
+##### Add Parameters for Any Data You Require
 
-The App Intents framework provides a number of other specialized app intent protocols. For more information about integrating your app intents with Siri and Apple Intelligence, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md) and [`App intent domains`](app-intent-domains.md). For more information about other specialized protocols, see [`App intents`](app-intents.md).
+An app intent performs an action, and its parameters specify what data to use when performing the action. Parameters are properties with app-specfic data or settings your app intent code needs to run, and you use them to make your app intent more flexible. For example, instead of creating one app intent type to play songs and another to play albums, you can create one app intent type to play any music your app supports. The parameters of the app intent tell it whether to play a song, an album, or some other type of audio content.
 
-##### Create an App Intent That Opens Your App
+If your app intent supports one of the system-defined schemas, the schema defines which properties are parameters. For app intents you create yourself, you designate properties as parameters by adding the `@Parameter` property wrapper to your declaration. This property wrapper is a typealias for the [`IntentParameter`](intentparameter.md) type, so you can use it to specify additional parameter-related information such as a custom title, description, or Spotlight indexing key. The following example shows a parameter declaration with an optional [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement) type. The property wrapper parameters tell the system that the property contains a distance in kilometers and that it only supports positive numbers.
 
-To define an action, create a type that adopts the [`AppIntent`](appintent.md) protocol, or a related protocol that provides the specific behavior you need. If possible, start with a simple action that doesn’t require parameters. Alternatively, if your action requires a parameter, consider initially hard-coding the parameter to get your first app intent implementation to work. Then make changes to add parameters to your first app intent as described in [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
+```swift
+@Parameter(defaultUnit: .kilometers, supportsNegativeNumbers: false)
+var searchRadius: Measurement<UnitLength>?
+```
 
-For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project provides an app intent that opens the app and displays a person’s favorite hiking trails:
+> **Note**: The `@Parameter` property wrapper is necessary only for custom app intent types. The app intents you create from system schemas don’t include this wrapper because the system adds it implicitly at compile time and defines relevant values for any attributes.
+
+Before asking an app intent to perform its action, the system resolves all required parameters by filling them with valid data. The system fills in parameter values automatically when it’s able to determine the value reliably. When the value is ambiguous or unavailable, the system can ask the person to supply a prompt using custom UI you provide or using other means. For example, if someone doesn’t specify which song to play, Siri can ask them to say the name of the song. If the system can’t resolve all required parameters, it reports an error.
+
+For more information about adding parameters to your app intent, including the supported types you can use, see [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
+
+##### Write Code for the Action
+
+An app intent’s main purpose is to perform its designated action, which you do in the [`perform()`](appintent/perform().md) method of your type. Use this method to run your app’s code with the provided parameter data and return a result. The system calls the method only after resolving all required parameters, so your code can rely on the values being present. The following example shows an implementation of this method that navigates to the destination in the `navigationOption` parameter using the same `navigator` object the rest of the app uses for this purpose.
+
+```swift
+    func perform() async throws -> some IntentResult {
+        await navigator.navigate(to: navigationOption)
+
+        return .result()
+    }
+```
+
+The system can call your [`perform()`](appintent/perform().md) method under a variety of conditions, so write your code to be as robust as possible. The type of your intent and its configuration determine whether your method runs while your app is in the foreground or background. You can also place your app intent types in an app extension, and run them in a separate process from the rest of your app. Design your code with these possibilities in mind and configure your type to support the capabilities you need:
+
+- **Configure the foreground and background options for your app intent.** Tell the system when to run your app intent in the foreground or background using the [`supportedModes`](appintent/supportedmodes.md) property. Design app intents to run in the background whenever possible, but add foreground modes to faciltate interactions or update your app’s interface.
+- **Add support for long-running actions.** If your code needs extra time to run, add support for the [`LongRunningIntent`](longrunningintent.md) protocol to your app intent. This protocol gives you extra time to perform long-running computations or to ensure a critical task such as writing a file to disk is able to finish.
+- **Respond gracefully to cancellation requests.** Support system- or person-initiated requests to cancel an in-progress action using the [`CancellableIntent`](cancellableintent.md) protocol. Typically, you combine this protocol with [`LongRunningIntent`](longrunningintent.md) to give people a way to cancel long-running operations safely.
+- **Support undoable actions.** If an action affects your app’s interface or content in a way people might want to reverse, add support for the [`UndoableIntent`](undoableintent.md) protocol. This protocol provides an [`UndoManager`](https://developer.apple.com/documentation/Foundation/UndoManager) type you can use to add your action to your app’s undo stack.
+
+##### Return a Result Back to the Caller
+
+At the end of your app intent’s [`perform()`](appintent/perform().md) method, you need to return a result back to the system. Results indicate the success or failure of the action, but you can also use them to deliver relevant information back to the system. The following example returns a custom view with information about the selected trail as part of the result. If the system is able to display this view, it can do so to present the result. However, if it isn’t available to display the view, perhaps because the person is using Siri while in their car, it can display or speak the dialog information instead.
+
+```swift
+    func perform() async throws -> some IntentResult & ReturnsValue<TrailEntity> & ProvidesDialog & ShowsSnippetView {
+        guard let trailData = trailManager.trail(with: trail.id) else {
+            throw TrailIntentError.trailNotFound
+        }
+                
+        /**
+         You provide a custom view by conforming the return type of the `perform()` function to the `ShowsSnippetView` protocol.
+         */
+        let snippet = TrailInfoView(trail: trailData, includeConditions: true)
+        
+        /**
+         This intent displays a custom view that includes the trail conditions as part of the view. The dialog includes the trail conditions when
+         the system can only read the response, but not display it. When the system can display the response, the dialog omits the trail
+         conditions.
+         */
+        let dialog = IntentDialog(full: "The latest reported conditions for \(trail.name) indicate: \(trail.currentConditions).",
+                                  supporting: "Here's the latest information on trail conditions.")
+        
+        return .result(value: trail, dialog: dialog, view: snippet)
+    }
+```
+
+The result of an app intent can take many forms:
+
+- An [`IntentDialog`](intentdialog.md) with the text to speak or display.
+- The [`ReturnsValue`](returnsvalue.md) or [`ResultsCollection`](resultscollection.md) types, which the system can use as input to another action.
+- A [`ShowsSnippetView`](showssnippetview.md) type with a custom view the system can incorporate into response-related interfaces.
+- An [`OpensIntent`](opensintent.md) value to direct the system to open your app and display a specific value.
+
+For an example of how to design custom responses, see [`Design custom responses`](acceleratingappinteractionswithappintents#Design-custom-responses.md).
+
+##### Register Dependencies to Other Parts of Your Code
+
+Most app intents are lightweight wrappers that call your app’s existing code to perform their actions. To ensure an app intent has the code it needs to function, you can add dependencies to other types in your app. A dependency tells the system that it can’t run the app intent until the specified object is available. For example, if an app intent requires access to your app’s database, you can create a dependency between the app intent and the object you use to access that database. Configure a dependency by doing the following in your code:
+
+- Register the object on which your app intent depends with the [`AppDependencyManager`](appdependencymanager.md) type.
+- Wrap a property in your app intent with the `@Dependency` property wrapper, and store the dependent object in that property.
+
+The system can run app intents soon after your app or app extension launches, so register dependent objects as soon as possible in your app’s code. The following example shows a portion of the initialization code for an app that manages trail information. After creating the trail data manager, the app uses the [`AppDependencyManager`](appdependencymanager.md) type to register the two objects it uses later in an app intent.
+
+```swift
+struct AppIntentsSampleApp: App {
+    
+    private var trailManager: TrailDataManager
+    
+    init() {
+        let trailDataManager = TrailDataManager.shared
+        trailManager = trailDataManager
+
+        let navigationModel = NavigationModel(selectedCollection: trailDataManager.nearMeCollection)
+        sceneNavigationModel = navigationModel
+                
+        // Register the trail data manager as a dependent object.
+        AppDependencyManager.shared.add(dependency: trailDataManager)
+        AppDependencyManager.shared.add(dependency: navigationModel)
+
+        // Additional app initialization...
+    }
+
+    // Additional content.
+}
+```
+
+To access a dependent object, add a property to your app intent and set the property’s name to the variable name you used at registration time. Add the `@Dependency` property wrapper to tell the system to populate the property with the registered object. When creating your app intent, the system automatically populates this property with the dependent object if it’s available. The following example shows an app intent for opening a person’s favorite trails. The code in the intent’s [`perform()`](appintent/perform().md) method uses two previoiusly registered objects to retrieve the favorite trails and show them in the app’s interface.
 
 ```swift
 struct OpenFavorites: AppIntent {
     
-    static var title: LocalizedStringResource = "Open Favorite Trails"
-
-    static var description = IntentDescription("Opens the app and goes to your favorite trails.")
-    
-    static var openAppWhenRun: Bool = true
-    
-    @MainActor
-    func perform() async throws -> some IntentResult {
-        navigationModel.selectedCollection = trailManager.favoritesCollection
-        
-        return .result()
-    }
-    
-    @Dependency
+    // Configure any dependent objects on which the app intent relies.
+     @Dependency
     private var navigationModel: NavigationModel
     
     @Dependency
     private var trailManager: TrailDataManager
-}
-```
 
-In the structure, implement the protocol’s [`title`](appintent/title.md) requirement to provide the localized text that the Shortcuts app displays in its Action Library and shortcut editor. To include additional context for the intent, implement the optional [`description`](appintent/description.md) requirement to provide localized text that describes the app intent’s behavior. The Shortcuts app shows the description in its Action Library.
-
-##### Perform the App Intents Action
-
-To provide your intent’s functionality, implement the [`perform()`](appintent/perform().md) protocol requirement. The system invokes this method after it resolves any required parameters, meaning those parameters are safe for your code to access from the function’s body.
-
-Your implementation must complete the necessary work and return a result to the system. A result may include, among other things, a value that a shortcut can use in subsequent connected actions, dialogue to display or announce, and a [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI) snippet view.
-
-For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project returns a dialog for the `GetTrailInfo` app intent:
-
-```swift
-func perform() async throws -> some IntentResult & ReturnsValue<TrailEntity> & ProvidesDialog & ShowsSnippetView {
-    guard let trailData = trailManager.trail(with: trail.id) else {
-        throw TrailIntentError.trailNotFound
+   @MainActor
+    func perform() async throws -> some IntentResult {
+        navigationModel.selectedCollection = trailManager.favoritesCollection
+        
+        /// Return an empty result, indicating that the intent is complete.
+        return .result()
     }
-            
-    /**
-     You provide a custom view by conforming the return type of the `perform()` function to the `ShowsSnippetView` protocol.
-     */
-    let snippet = TrailInfoView(trail: trailData, includeConditions: true)
     
-    /**
-     This intent displays a custom view that includes the trail conditions as part of the view. The dialog includes the trail conditions when
-     the system can only read the response, but not display it. When the system can display the response, the dialog omits the trail
-     conditions.
-     */
-    let dialog = IntentDialog(full: "The latest conditions reported for \(trail.name) indicate: \(trail.currentConditions).",
-                              supporting: "Here's the latest information on trail conditions.")
-    
-    return .result(value: trail, dialog: dialog, view: snippet)
 }
 ```
 
-If it doesn’t make sense for your intent to return a concrete result, return `.result()` to tell the system the intent is complete.
+##### Customize Your App Intents Description and Behavior
 
-> ❗ **Important**: By default, the system launches your app in a limited mode in the background and executes the intent’s `perform()` method on an arbitrary queue. To override this behavior and launch the app in the foreground, set the intent’s [`openAppWhenRun`](appintent/openappwhenrun.md) variable to `true`. If your intent updates the app’s user interface, annotate [`perform()`](appintent/perform().md) with `@MainActor` to make sure the method executes on the main queue.
+Several properties of the [`AppIntent`](appintent.md) protocol provide the system with information about your app intent instance. Implement these properties and use them to describe the action your app intent performs and provide additional configuration details. For each app intent, implement the following properties:
 
-##### Verify the Behavior of Your Intent in Simulator or on Device
+- **[`title`](appintent/title.md)**: Add a short, human-readable description of your app intent’s action.
+- **[`description`](appintent/description.md)**: Provide a detailed description of your app intent’s action.
+- **[`isDiscoverable`](appintent/isdiscoverable.md)**: Specify whether your app intent is available to the system or private to your app.
+- **[`parameterSummary`](appintent/parametersummary.md)**: Provide one or more descriptions of the actions for the Shortcuts app to present to people. Create the descriptions using a [`ParameterSummaryBuilder`](parametersummarybuilder.md) result builder.
+
+For more information about how to create a parameter summary, see [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
+
+##### Test the Behavior of Your Code in Simulator or on Device
 
 During development, validate that your intents behave as you expect by testing them in Simulator or on-device. If you’re adding intents to a macOS app, build and run the app. For other platforms, select the relevant simulator or connected device and then build and run. After your app launches, follow these steps:
 
@@ -110,45 +186,18 @@ During development, validate that your intents behave as you expect by testing t
 
 Set a breakpoint at the top of your `perform()` method to confirm your implementation is working. The debugger pauses execution immediately after you run the shortcut, enabling you to step through the code and inspect the intent’s parameters to verify they have the values they require.
 
-##### Design Custom Responses
-
-People may interact with your app intent through Siri. For a good user experience, consider communicating the intent’s result with a visual response using a custom UI snippet, and as a dialog for Siri to communicate the same information. For more information, see [`Design custom responses`](acceleratingappinteractionswithappintents#Design-custom-responses.md).
-
-##### Receive Input with Parameters and Return Results
-
-Creating an app intent that opens a screen in your app is the first step to becoming familiar with the App Intents framework and to making your app and its content discoverable. Many actions in your app receive input and return data. To describe actions that receive and return data, add parameters to the app intent to tell the system about that data and whether it’s required or optional. By exposing parameters, you enable people to configure your intents with values unique to their requirements and enable the App Intents framework to communicate with system experiences to write those values at runtime. For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project enables people to choose which hiking trail information to view when they invoke an app intent. For more information about using parameters in an app intent, see [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
-
-##### Create an App Shortcut
-
-App intents you create appear in the Shortcuts app. People can create custom shortcuts that initiate your app intent and combine app intents to perform custom workflows. To enable people to discover and run your app intents without any configuration, bundle your app’s app intents into App Shortcuts to provide workflows of your app’s actions.
-
-By offering App Shortcuts, you make your app’s functionality instantly available for use in Shortcuts, Spotlight, and Siri from the moment a person installs your app — without any setup in the Shortcuts app or an Add to Siri button. On devices that support the Action button, people can invoke your App Shortcut with the Action button for quick access to your app’s functionality.
-
-To offer an App Shortcut for your first app intent:
-
-1. Create the [`AppShortcut`](appshortcut.md) object for your app intent using the [`init(intent:phrases:shortTitle:systemImageName:)`](appshortcut/init(intent:phrases:shorttitle:systemimagename:)-8yntq.md) initializer and provide phrases that people can use to run the app intent and the metadata that appears in the Shortcuts app.
-2. Implement the [`AppShortcutsProvider`](appshortcutsprovider.md) protocol that provides the App Shortcuts you offer to the Shortcuts app.
-
-For more information about creating App Shortcuts, see [`App Shortcuts`](app-shortcuts.md) and [`Create App Shortcuts`](acceleratingappinteractionswithappintents#Create-App-Shortcuts.md).
-
-To learn more about supporting the Action button, refer to [`Action button on iPhone and Apple Watch`](actionbutton.md).
-
-##### Donate App Intents to the System
-
-Make your app intents discoverable by explicitly donating them to the system. When someone performs an action in your app, donate an intent that corresponds to that action. The system uses the information you provide to predict actions someone might take in the future. For example, if someone requests the weather from your app each morning, the system might proactively offer the corresponding app intent at the same time each day.
-
-For more information, see [`Intent discovery`](intent-discovery.md).
+Another way to test your code is using the App Intents Testing framework. For more information about how to use it, see [`App Intents Testing`](https://developer.apple.com/documentation/AppIntentsTesting).
 
 ## See Also
 
 - [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [App intents](app-intents.md)
-  Define the custom actions your app exposes to the system using specialized intents.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Intent infrastructure](intent-infrastructure.md)
-  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
+- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
+- [protocol AppIntent](appintent.md)
+  An interface you use to express app-specific actions and make them available to the rest of the system.
+- [App intent types](app-intent-types.md)
+  Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.
 
 
 ---

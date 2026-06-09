@@ -2,18 +2,20 @@
 
 **Framework**: UIKit
 
-Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
+Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- Xcode 14.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC22 session [`10090: What’s new in TextKit and text views`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10090/).
+> **Note**: This sample code project is associated with the following WWDC sessions: - WWDC26 session [`370: Elevate your app’s text experience with TextKit`](https://developer.apple.comhttps://developer.apple.com/wwdc26/370/).
+- WWDC22 session [`10090: What’s new in TextKit and text views`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10090/).
 
 ## See Also
 

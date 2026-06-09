@@ -12,6 +12,7 @@ The origin of a coordinate system relative to an image.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -30,7 +31,6 @@ enum CoordinateOrigin
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

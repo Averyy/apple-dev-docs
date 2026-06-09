@@ -11,7 +11,7 @@ An event that represents a configuration change.
 ## Declaration
 
 ```swift
-class MapKitConfigurationChangeEvent extends MapKitEvent
+class MapKitConfigurationChangeEvent extends Event
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ The event’s `status` property indicates the configuration change status.
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

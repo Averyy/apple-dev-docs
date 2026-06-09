@@ -68,8 +68,7 @@ Some mismatched attributes cannot be resolved. Calling this function results in 
   Returns the amount of extended pixel padding in the pixel buffer.
 - [func CVPixelBufferGetIOSurface(CVPixelBuffer?) -> Unmanaged<IOSurfaceRef>?](cvpixelbuffergetiosurface(_:).md)
   Returns the IOSurface backing the pixel buffer, or `NULL` if it is not backed by an IOSurface.
-- [func CVPixelBufferGetTypeID() -> CFTypeID](cvpixelbuffergettypeid().md)
-  Returns the Core Foundation type identifier of the pixel buffer type.
+- [func CVPixelBufferIsCompatibleWithAttributes(CVPixelBuffer, CFDictionary?) -> Bool](cvpixelbufferiscompatiblewithattributes(_:_:).md)
 
 
 ---

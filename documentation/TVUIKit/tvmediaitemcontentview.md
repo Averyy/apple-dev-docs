@@ -50,6 +50,7 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [UIView](../UIKit/UIView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -59,8 +60,6 @@ override func updateConfiguration(using state: UICellConfigurationState) {
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

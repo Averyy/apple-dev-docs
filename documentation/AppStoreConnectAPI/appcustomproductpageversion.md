@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an app custom product page version resource.
+A version of a custom App Store product page, containing its localizations and review status.
 
 **Availability**:
 - App Store Connect API 1.7+
@@ -18,7 +18,9 @@ object AppCustomProductPageVersion
 
 ### Objects
 - [object AppCustomProductPageVersion.Attributes](appcustomproductpageversion/attributes-data.dictionary.md)
+  Attributes that describe an app custom product page version resource.
 - [object AppCustomProductPageVersion.Relationships](appcustomproductpageversion/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -33,13 +35,13 @@ object AppCustomProductPageVersion
 - [object AppCustomProductPageVersionCreateRequest](appcustomproductpageversioncreaterequest.md)
   The request body you use to create an app custom product page version.
 - [object AppCustomProductPageVersionInlineCreate](appcustomproductpageversioninlinecreate.md)
-  The data structure that represents an app custom product page version inline create resource.
+  An inline object for specifying a custom product page version when creating or updating a related resource.
 - [object AppCustomProductPageVersionUpdateRequest](appcustomproductpageversionupdaterequest.md)
   The request body you use to update an app custom product page version.
 - [object AppCustomProductPageVersionResponse](appcustomproductpageversionresponse.md)
-  A response that contains a single app custom product page resource.
+  The response body for endpoints that create, read, or modify a single custom product page version.
 - [object AppCustomProductPageVersionsResponse](appcustomproductpageversionsresponse.md)
-  A response that contains a list of app customer product page version resources.
+  The response body for endpoints that list versions of a custom App Store product page.
 - [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 

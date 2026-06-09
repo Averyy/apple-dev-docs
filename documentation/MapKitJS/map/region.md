@@ -12,8 +12,12 @@ The area the map is displaying.
 
 ```swift
 get region(): CoordinateRegion;
-set region(region: CoordinateRegion);
+set region(region: CoordinateRegionData);
 ```
+
+## Mentions
+
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Discussion
 
@@ -43,7 +47,7 @@ const center = new mapkit.Coordinate(48.8468, 2.3364),
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.

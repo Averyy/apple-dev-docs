@@ -62,6 +62,10 @@ var body: some View {
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 - [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](view/accessorywidgetgroupstyle(_:).md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
+- [func controlWidgetActionHint(_:)](view/controlwidgetactionhint(_:).md)
+  The action hint of the control described by the modified label.
+- [func controlWidgetStatus(_:)](view/controlwidgetstatus(_:).md)
+  The status of the control described by the modified label.
 
 
 ---

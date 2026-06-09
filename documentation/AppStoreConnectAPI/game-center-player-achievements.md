@@ -15,10 +15,11 @@ This endpoint is different than most in App Store Connect API, this’s used to 
   Add a new entry for a player’s score for a Game Center achievement.
 ### Objects
 - [object GameCenterPlayerAchievementSubmission](gamecenterplayerachievementsubmission.md)
+  A batch operation submitting achievement completions for a specific player in Game Center.
 - [object GameCenterPlayerAchievementSubmissionCreateRequest](gamecenterplayerachievementsubmissioncreaterequest.md)
-  The request body you use to create an Game Center player achievement.
+  The request body you use to create a Game Center player achievement.
 - [object GameCenterPlayerAchievementSubmissionResponse](gamecenterplayerachievementsubmissionresponse.md)
-  A response that contains a single Game Center player achievement resource.
+  A response confirming a Game Center player achievement submission was processed.
 
 ## See Also
 

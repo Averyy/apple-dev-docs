@@ -17,7 +17,8 @@ Creates a horizontal row of child views in a grid.
 ## Declaration
 
 ```swift
-init(alignment: VerticalAlignment? = nil, @ViewBuilder content: () -> Content)
+nonisolated
+init(alignment: VerticalAlignment? = nil, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

@@ -6,12 +6,12 @@
 Called by the layout manager to draw any colors and other decorations before the text is drawn.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-func drawBackground(withFrame frameRect: NSRect, in controlView: NSView, characterRange charRange: NSRange, layoutManager: NSLayoutManager)
+func drawBackground(withFrame frameRect: NSRect, in controlView: NSView?, characterRange charRange: NSRange, layoutManager: NSLayoutManager)
 ```
 
 ## Parameters

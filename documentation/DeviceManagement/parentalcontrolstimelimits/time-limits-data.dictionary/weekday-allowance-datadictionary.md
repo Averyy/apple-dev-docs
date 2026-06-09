@@ -7,8 +7,6 @@ The weekday allowance dictionary.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

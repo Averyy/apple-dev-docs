@@ -57,7 +57,7 @@ Create and save workouts on the device that makes the most sense for your applic
 
 ##### Extend Workouts
 
-Like many HealthKit classes, the `HKWorkout` class should not be subclassed. You may extend workouts by adding metadata with custom keys as appropriate for your app.
+As with many HealthKit classes, don’t subclass the [`HKWorkout`](hkworkout.md) class. You may extend workouts by adding metadata with custom keys as appropriate for your app.
 
 For more information, see the methods [`init(activityType:start:end:duration:totalEnergyBurned:totalDistance:metadata:)`](hkworkout/init(activitytype:start:end:duration:totalenergyburned:totaldistance:metadata:).md) and [`init(activityType:start:end:workoutEvents:totalEnergyBurned:totalDistance:metadata:)`](hkworkout/init(activitytype:start:end:workoutevents:totalenergyburned:totaldistance:metadata:).md).
 
@@ -98,6 +98,9 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
   The total number of flights of stairs climbed during the workout.
 - [var totalSwimmingStrokeCount: HKQuantity?](hkworkout/totalswimmingstrokecount.md)
   The total stroke count for the workout.
+### Accessing zone data
+- [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkout/zonegroupsbytype.md)
+  A property that contains a dictionary that maps quantity types to their zone groups for this workout.
 ### Specifying sort identifiers
 - [let HKWorkoutSortIdentifierDuration: String](hkworkoutsortidentifierduration.md)
   A constant for sorting workouts based on their duration.
@@ -125,6 +128,8 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 ### Specifying metadata keys
 - [Workout Metadata Keys](workout-metadata-keys.md)
   Constants that can be used to add metadata to workouts.
+### Setting additional properties
+- [var workoutPlan: WorkoutPlan?](hkworkout/workoutplan.md)
 ### Initializers
 - [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date)](hkworkout/init(activitytype:startdate:enddate:).md)
 - [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, duration: TimeInterval, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:duration:totalenergyburned:totaldistance:device:metadata:).md)
@@ -133,8 +138,8 @@ For more information, see the methods [`init(activityType:start:end:duration:tot
 - [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:metadata:).md)
 - [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalFlightsClimbed: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalflightsclimbed:device:metadata:).md)
 - [convenience init(activityType: HKWorkoutActivityType, startDate: Date, endDate: Date, workoutEvents: [HKWorkoutEvent]?, totalEnergyBurned: HKQuantity?, totalDistance: HKQuantity?, totalSwimmingStrokeCount: HKQuantity?, device: HKDevice?, metadata: [String : Any]?)](hkworkout/init(activitytype:startdate:enddate:workoutevents:totalenergyburned:totaldistance:totalswimmingstrokecount:device:metadata:).md)
-### Instance Properties
-- [var workoutPlan: WorkoutPlan?](hkworkout/workoutplan.md)
+### Instance Methods
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkout/zonegroup(for:).md)
 
 ## Relationships
 

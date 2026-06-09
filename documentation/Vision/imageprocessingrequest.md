@@ -12,6 +12,7 @@ A type for image-analysis requests that focus on a specific part of an image.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -70,9 +71,11 @@ protocol ImageProcessingRequest : VisionRequest
 - [GenerateAttentionBasedSaliencyImageRequest](generateattentionbasedsaliencyimagerequest.md)
 - [GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
 - [GenerateImageFeaturePrintRequest](generateimagefeatureprintrequest.md)
+- [GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
 - [GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
 - [GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
+- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 - [RecognizeAnimalsRequest](recognizeanimalsrequest.md)
 - [RecognizeDocumentsRequest](recognizedocumentsrequest.md)
 - [RecognizeTextRequest](recognizetextrequest.md)

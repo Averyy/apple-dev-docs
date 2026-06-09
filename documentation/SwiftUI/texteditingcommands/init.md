@@ -15,6 +15,7 @@ A new value describing the built-in text-editing commands.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

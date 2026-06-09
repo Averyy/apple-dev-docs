@@ -10,8 +10,6 @@ The payload that configures a Google account.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -36,8 +34,8 @@ The payload never contains credentials; the system prompts the user to enter cre
 | Device channel | iOS, visionOS |
 | User channel | Shared iPad |
 | Allow manual install | iOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
@@ -91,9 +89,9 @@ The payload never contains credentials; the system prompts the user to enter cre
 
 - `AccountDescription` (string): A user-visible description of the Google account, shown in the Mail and Settings apps.
 - `AccountName` (string): The user’s full name for the Google account. This name appears in sent messages.
-- `CommunicationServiceRules` (GoogleAccount.CommunicationServiceRules): The communication service handler rules for this account.
+- `CommunicationServiceRules` (GoogleAccount.CommunicationServiceRules): The communication service handler rules for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
 - `EmailAddress` (string) *(required)*: The full Google email address for the account.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 

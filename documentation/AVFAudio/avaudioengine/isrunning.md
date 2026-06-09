@@ -36,8 +36,8 @@ The value is [`true`](https://developer.apple.com/documentation/Swift/true) if t
   Stops the audio engine and releases any previously prepared resources.
 - [func reset()](avaudioengine/reset.md)
   Resets all audio nodes in the audio engine.
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence.md)
-  The music sequence instance that you attach to the audio engine, if any.
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+  Provides scoped access to the AVAudioEngine’s MusicSequence
 
 
 ---

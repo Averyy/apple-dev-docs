@@ -20,16 +20,16 @@ struct Error
 ### Inspecting ARKit errors
 - [let dataProvider: (any DataProvider)?](arkitsession/error/dataprovider.md)
   The data provider that causes an error in a session, if any.
-- [var code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
+- [let code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
   The error code for an ARKit session error.
 - [ARKitSession.Error.Code](arkitsession/error/code-swift.enum.md)
   The error codes for ARKit sessions.
-- [var errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](arkitsession/error/errordescription.md)
   A localized message that describes the error that occurred.
 ### Providing recovery suggestions
-- [var recoverySuggestion: String?](arkitsession/error/recoverysuggestion.md)
+- [let recoverySuggestion: String?](arkitsession/error/recoverysuggestion.md)
   A localized message that describes how someone might recover from the error.
-- [var failureReason: String?](arkitsession/error/failurereason.md)
+- [let failureReason: String?](arkitsession/error/failurereason.md)
   A localized message that describes why the error occurred.
 ### Instance Properties
 - [var description: String](arkitsession/error/description.md)

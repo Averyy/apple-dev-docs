@@ -38,6 +38,7 @@ If you don’t provide an image, the system provides a generic placeholder image
 - [TVLockupView](tvlockupview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

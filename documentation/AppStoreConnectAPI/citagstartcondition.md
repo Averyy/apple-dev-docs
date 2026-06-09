@@ -29,11 +29,11 @@ object CiTagStartCondition
 ## See Also
 
 - [object CiProduct](ciproduct.md)
-  The data structure that represents a Products resource.
+  An app or framework registered in Xcode Cloud that has one or more workflows and build history.
 - [object CiProductResponse](ciproductresponse.md)
-  A response that contains a single Products resource.
+  The response body for endpoints that read a single Xcode Cloud product.
 - [object CiProductsResponse](ciproductsresponse.md)
-  A response that contains a list of Products resources.
+  The response body for endpoints that list Xcode Cloud products.
 - [object CiProductAdditionalRepositoriesLinkagesResponse](ciproductadditionalrepositorieslinkagesresponse.md)
 - [object CiProductAppLinkageResponse](ciproductapplinkageresponse.md)
 - [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
@@ -44,9 +44,9 @@ object CiTagStartCondition
 - [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
   Settings Xcode Cloud uses to determine whether a change should start a new build or not.
 - [object CiGitUser](cigituser.md)
-  The data structure that represents a Git Users resource.
+  The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
 - [object CiIssueCounts](ciissuecounts.md)
-  The data structure that represents an Issue Counts resource.
+  A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
 - [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
   Settings for a start condition that starts a build if a pull request changes.
 - [object CiScheduledStartCondition](cischeduledstartcondition.md)

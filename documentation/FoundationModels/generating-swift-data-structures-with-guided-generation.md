@@ -99,6 +99,16 @@ The response you get is an instance of [`GeneratedContent`](generatedcontent.md)
 
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
+- [struct GenerationSchema](generationschema.md)
+  A type that describes the properties of an object and any guides on their values.
+- [struct DynamicGenerationSchema](dynamicgenerationschema.md)
+  The dynamic counterpart to the generation schema type that you use to construct schemas at runtime.
+- [struct GeneratedContent](generatedcontent.md)
+  A type that represents structured, generated content.
+- [protocol ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+  A type that can be converted to generated content.
+- [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
+  A type that can be initialized from generated content.
 
 
 ---

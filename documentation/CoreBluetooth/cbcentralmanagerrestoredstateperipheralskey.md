@@ -22,7 +22,7 @@ let CBCentralManagerRestoredStatePeripheralsKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`CBPeripheral`](cbperipheral.md) objects. The array contains all of the peripherals connected to the central manager (or had a pending connection) at the time the system terminated the app.
+The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of [`CBPeripheral`](cbperipheral.md) objects. The array contains all of the peripherals connected to the central manager (or had a pending connection) at the time the system stopped the app.
 
 When possible, the system restores all information about a peripheral, including any discovered services, characteristics, characteristic descriptors, and characteristic notification states.
 

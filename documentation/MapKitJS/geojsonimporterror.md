@@ -18,6 +18,11 @@ class GeoJSONImportError extends Error
 
 The `message` property contains a string that describes the error.
 
+## Relationships
+
+### Inherits From
+- [Error](doc://com.apple.mapkitjs/__unknown__/Error)
+
 ## See Also
 
 - [importGeoJSON(data, callback)](mapkit/importgeojson.md)

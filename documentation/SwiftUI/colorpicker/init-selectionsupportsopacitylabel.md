@@ -15,7 +15,8 @@ Creates an instance that selects a color.
 ## Declaration
 
 ```swift
-init(selection: Binding<CGColor>, supportsOpacity: Bool = true, @ViewBuilder label: () -> Label)
+nonisolated
+init(selection: Binding<CGColor>, supportsOpacity: Bool = true, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

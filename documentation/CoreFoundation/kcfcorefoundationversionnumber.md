@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var kCFCoreFoundationVersionNumber: Double
+let kCFCoreFoundationVersionNumber: Double
 ```
 
 #### Discussion

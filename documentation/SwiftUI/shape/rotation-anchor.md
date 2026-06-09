@@ -17,6 +17,7 @@ Rotates this shape around an anchor point at the angle you specify.
 ## Declaration
 
 ```swift
+nonisolated
 func rotation(_ angle: Angle, anchor: UnitPoint = .center) -> RotatedShape<Self>
 ```
 

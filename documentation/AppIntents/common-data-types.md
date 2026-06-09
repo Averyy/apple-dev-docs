@@ -2,11 +2,11 @@
 
 **Framework**: App Intents
 
-Specify common types that your app supports, including currencies, files, and contacts.
+Use framework-defined types for common parameter and result data types such as contacts, files, currencies, and more.
 
 #### Overview
 
-Use these types to manage specific types of data when you create a parameter for an app intent or a property for an app entity.
+When creating your app intents or app entities, use existing types for parameters and properties whenever possible. The App Intents framework provides common data types to represent people, files, currencies, and more. Choose the type that matches your app’s data and fill its properties with data from your app.
 
 ## Topics
 
@@ -16,6 +16,11 @@ Use these types to manage specific types of data when you create a parameter for
 ### Files
 - [struct IntentFile](intentfile.md)
   An interface for providing an app entity that represents an on-disk file or file-based resource.
+### Media
+- [struct AudioSearch](../MediaIntents/AudioSearch.md)
+  Results and metadata for a person’s audio search and playback request with Siri.
+- [Media Intents](../MediaIntents/MediaIntents.md)
+  Enable people to use Siri to find and play media from your app.
 ### Monetary types
 - [struct IntentCurrencyAmount](intentcurrencyamount.md)
   An amount of money to transfer during a financial transaction.
@@ -29,23 +34,18 @@ Use these types to manage specific types of data when you create a parameter for
 - [struct IntentItemSection](intentitemsection.md)
   An object you use to divide dynamic options into sections.
 - [struct IntentCollectionSize](intentcollectionsize.md)
+- [struct IntentResponseStream](intentresponsestream.md)
 
 ## See Also
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+- [App intents](app-intents.md)
+  Make your app’s custom actions available to the system by using app intent types.
 - [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Static parameter types](app-enums.md)
-  Types that represent an enumerable list of static parameter values.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
-- [Property comparators](property-comparators.md)
-  Specify the type of comparison to perform during a property-matched query.
+  Make your app’s core types and data concepts available to the system using app entity types.
+- [App enums](app-enums.md)
+  Make your app’s enumerations and predefined values available to the system by using app enum types.
+- [App extension](app-extension.md)
+  Deliver app intents in an app extension or other package that lives outside your app’s code.
 
 
 ---

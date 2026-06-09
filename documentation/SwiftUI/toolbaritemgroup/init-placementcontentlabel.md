@@ -18,7 +18,7 @@ Creates a toolbar item group with the specified placement, content, and a label 
 
 ```swift
 nonisolated
-init<C, L>(placement: ToolbarItemPlacement = .automatic, @ViewBuilder content: () -> C, @ViewBuilder label: () -> L) where Content == LabeledToolbarItemGroupContent<C, L>, C : View, L : View
+init<C, L>(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> C, @ContentBuilder label: () -> L) where Content == LabeledToolbarItemGroupContent<C, L>, C : View, L : View
 ```
 
 #### Discussion

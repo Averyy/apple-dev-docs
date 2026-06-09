@@ -21,18 +21,16 @@ var allAssetPacks: Set<AssetPack> { get async throws }
 
 #### Discussion
 
-Accessing this property might cause an attempt to get the latest asset-pack information from the server.
+Accessing this property may cause an attempt to get the latest asset-pack information from the server.
 
 ## See Also
 
+- [var manifest: AssetPackManifest](assetpackmanager/manifest.md)
+  The manifest of asset packs that are available to download.
+- [struct AssetPackManifest](assetpackmanifest.md)
+  A manifest of asset packs that are available to download.
 - [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
   Returns the asset pack with the given ID.
-- [func contents(at: FilePath, searchingInAssetPackWithID: String?, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:searchinginassetpackwithid:options:).md)
-  Returns the contents of an asset file at the specified relative path.
-- [func descriptor(for: FilePath, searchingInAssetPackWithID: String?) throws -> FileDescriptor](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md)
-  Opens and returns a file descriptor for an asset file at the specified relative path.
-- [func url(for: FilePath) throws -> URL](assetpackmanager/url(for:).md)
-  Returns a URL for the specified relative path.
 
 
 ---

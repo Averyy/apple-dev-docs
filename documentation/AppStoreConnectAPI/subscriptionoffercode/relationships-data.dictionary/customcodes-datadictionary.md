@@ -16,6 +16,7 @@ object SubscriptionOfferCode.Relationships.CustomCodes
 
 ### Objects
 - [object SubscriptionOfferCode.Relationships.CustomCodes.Data](subscriptionoffercode/relationships-data.dictionary/customcodes-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription offer code.
 
 ## Properties
 

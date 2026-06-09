@@ -28,13 +28,26 @@ The root entity of the loaded file.
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files.
 
+For Reality files that contain multiple scenes, specify which scene to load by appending a URL fragment with the scene name — for example, `my.reality#MyScene`. Construct the URL using `URLComponents` or `URL(string:)` to preserve the fragment:
+
+```swift
+var components = URLComponents()
+components.scheme = "file"
+components.path = "/path/to/MyContent.reality"
+components.fragment = "MyScene"
+
+if let url = components.url {
+    let entity = try await Entity(contentsOf: url)
+}
+```
+
 For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
 
 See [`init(named:in:)`](entity/init(named:in:).md) for an example of optimally loading content.
 
 ## Parameters
 
-- `url`: A file URL representing the file to load.
+- `url`: A file URL representing the file to load. For Reality files, append a URL fragment to specify a scene name — for example, `my.reality#MyScene`.
 - `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also

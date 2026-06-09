@@ -17,6 +17,7 @@ Creates a tab view that uses a builder to create and specify selection values fo
 ## Declaration
 
 ```swift
+nonisolated
 init<C>(selection: Binding<SelectionValue>, @TabContentBuilder<SelectionValue> content: () -> C) where Content == TabContentBuilder<SelectionValue>.Content<C>, C : TabContent
 ```
 
@@ -28,7 +29,6 @@ init<C>(selection: Binding<SelectionValue>, @TabContentBuilder<SelectionValue> c
 ## See Also
 
 - [init(content:)](tabview/init(content:).md)
-  Creates a tab view that uses a builder to create its tabs.
 
 
 ---

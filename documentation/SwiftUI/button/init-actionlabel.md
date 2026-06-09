@@ -18,7 +18,7 @@ Creates a button that displays a custom label.
 
 ```swift
 @preconcurrency
-init(action: @escaping @MainActor () -> Void, @ViewBuilder label: () -> Label)
+nonisolated init(action: @escaping @MainActor () -> Void, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

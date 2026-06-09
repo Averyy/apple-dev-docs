@@ -11,8 +11,6 @@ The configuration settings for return to service.
 - Mac Catalyst 17.0+
 - tvOS 18.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,9 +20,10 @@ object EraseDeviceCommand.Command.ReturnToService
 
 ## Properties
 
-- `BootstrapToken` (data): The bootstrap token the system uses to implement return to service with app preservation. Required when enabling return to service through the cloud configuration.
+- `BootstrapToken` (data): The bootstrap token the system uses to implement return to service with app preservation. Required when enabling return to service through the cloud configuration. Available: iOS 26+ | iPadOS 26+ | visionOS 26+
 - `Enabled` (boolean) *(required)*: If `true`, the device tries to reenroll itself automatically after erasure. The user needs to deactivate all activation locks for this feature to work correctly.
 - `MDMProfileData` (data): The MDM profile that installs after erasure when using return to service. This key is required for all unsupervised devices, as well as supervised devices that don’t enroll with Automated Device Enrollment. If provided, the device uses this profile directly instead of fetching it from the server. For devices that enroll with Automated Device Enrollment, this key isn’t necessary unless the cloud configuration profile of the device contains the `configuration-web-url` key. The cloud configuration still downloads from Apple’s servers when the profile contains this key, so the supervision identity, MDM removability, and other settings from the cloud configuration still apply. However, the device doesn’t use the specified URL in the cloud configuration to fetch the MDM profile.
+- `ShouldRetryEnrollment` (boolean): If `true`, the device retries service enrollment when the initial enrollment fails after erasure. Available: iOS 27+ | iPadOS 27+
 - `WiFiProfileData` (data): The Wi-Fi profile that installs after erasure when using return to service. This is required when the device doesn’t have an Ethernet or cellular connection.
 
 

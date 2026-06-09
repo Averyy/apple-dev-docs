@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of activity localization resources.
+A response containing a list of localizations for a Game Center activity.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -24,11 +24,11 @@ object GameCenterActivityLocalizationsResponse
 ## See Also
 
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)
-  The data structure that represents an activity localization resource.
+  The localized name, description, and image for a Game Center activity in a specific language.
 - [object GameCenterActivityLocalizationCreateRequest](gamecenteractivitylocalizationcreaterequest.md)
-  The request body you use to create an activity localization resource.
+  The request body for creating a localization for a Game Center activity.
 - [object GameCenterActivityLocalizationResponse](gamecenteractivitylocalizationresponse.md)
-  A response that contains a single activity localization resource.
+  A response containing a single localization for a Game Center activity.
 - [object GameCenterActivityLocalizationUpdateRequest](gamecenteractivitylocalizationupdaterequest.md)
   The request body you use to update an activity localization.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)

@@ -18,7 +18,7 @@ The content and behavior of the chart content.
 ## Declaration
 
 ```swift
-@ChartContentBuilder
+@ContentBuilder
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 

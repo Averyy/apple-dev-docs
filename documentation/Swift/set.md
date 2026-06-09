@@ -151,7 +151,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [func reserveCapacity(Int)](set/reservecapacity(_:).md)
   Reserves enough space to store the specified number of elements.
 ### Removing Elements
-- [func filter((Element) throws -> Bool) rethrows -> Set<Element>](set/filter(_:).md)
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
 - [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
   Removes the specified element from the set.
@@ -190,7 +190,7 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 ### Comparing Sets
 - [static func == (Set<Element>, Set<Element>) -> Bool](set/==(_:_:).md)
   Returns a Boolean value indicating whether two sets have equal elements.
-- [static func != (Self, Self) -> Bool](set/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](set/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func isSubset(of: Set<Element>) -> Bool](set/issubset(of:)-1d7pp.md)
   Returns a Boolean value that indicates whether this set is a subset of the given set.
@@ -303,6 +303,9 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
   Creates a set containing the elements of the given array literal.
 - [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](set/withcontiguousstorageifavailable(_:).md)
   Executes a closure on the sequence’s contiguous storage.
+### Instance Methods
+- [func isTriviallyIdentical(to: Set<Element>) -> Bool](set/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this set is identical to `other`.
 ### Type Aliases
 - [typealias Specification](set/specification.md)
 - [typealias UnderlyingSequence](set/underlyingsequence.md)
@@ -320,12 +323,15 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [Equatable Implementations](set/equatable-implementations.md)
 - [ExpressibleByArrayLiteral Implementations](set/expressiblebyarrayliteral-implementations.md)
 - [Hashable Implementations](set/hashable-implementations.md)
+- [IntentValueConvertible Implementations](set/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](set/intentvalueexpressing-implementations.md)
 - [Sequence Implementations](set/sequence-implementations.md)
 - [SetAlgebra Implementations](set/setalgebra-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)
@@ -338,6 +344,8 @@ Bridging from `NSSet` to `Set` first calls the `copy(with:)` method (`- copyWith
 - [Escapable](escapable.md)
 - [ExpressibleByArrayLiteral](expressiblebyarrayliteral.md)
 - [Hashable](hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

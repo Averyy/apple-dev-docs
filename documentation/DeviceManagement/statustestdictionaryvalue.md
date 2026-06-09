@@ -13,8 +13,6 @@ A test status item for a dictionary.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,11 +33,24 @@ object StatusTestDictionaryValue
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+##### Status Item Example
+
+```json
+{
+    "test": {
+        "dictionary-value": {
+            "key1": "test-value-1",
+            "key2": "test-value-2"
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object StatusTestDictionaryValueDictionaryObject](statustestdictionaryvaluedictionaryobject.md)
-  A status value for the test status item dictionary.
+  The test status dictionary value.
 
 ## Properties
 

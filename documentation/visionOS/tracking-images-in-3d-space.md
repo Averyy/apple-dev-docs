@@ -54,7 +54,7 @@ If you know the real-world dimensions of the images you’re tracking, use the [
 - [Tracking specific points in world space](tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
 - [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
-  Find and track real-world objects in visionOS using reference objects trained with Create ML.
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
@@ -63,6 +63,10 @@ If you know the real-world dimensions of the images you’re tracking, use the [
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message about a stopped task.
+
 **Availability**:
 - macOS 26.0+
 

@@ -1,4 +1,4 @@
-# Read an App Store Version’s Alternative Distribution Package
+# Read an app store version’s alternative distribution package
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -49,10 +49,10 @@ https://api.appstoreconnect.apple.com/v1/appStoreVersions/f6586f8b-12db-4861-818
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageVersions]` ([string])
-- `fields[alternativeDistributionPackages]` ([string])
-- `include` ([string])
-- `limit[versions]` (integer)
+- `fields[alternativeDistributionPackageVersions]` ([string]): Additional fields to include for each alternative distribution package version resource returned by the response.
+- `fields[alternativeDistributionPackages]` ([string]): Additional fields to include for each alternative distribution package resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[versions]` (integer): The maximum number of related versions resources to return.
 
 ## See Also
 

@@ -1,10 +1,12 @@
-# GET /v1/certificates/{id}/relationships/passTypeId
+# List passtypeid ids for a certificate
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+List all PassTypeIDId Ids for a specific certificate.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +18,11 @@
 
 ## See Also
 
-- [List and Download Certificates](get-v1-certificates.md)
+- [List and download certificates](get-v1-certificates.md)
   Find and list certificates and download their data.
-- [Read and Download Certificate Information](get-v1-certificates-_id_.md)
+- [Read and download certificate information](get-v1-certificates-_id_.md)
   Get information about a certificate and download the certificate data.
-- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
 
 

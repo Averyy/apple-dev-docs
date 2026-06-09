@@ -1,4 +1,4 @@
-# List All Build Uploads IDs for an App
+# List all build uploads ids for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

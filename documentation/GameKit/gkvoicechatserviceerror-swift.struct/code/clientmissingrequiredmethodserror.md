@@ -6,6 +6,9 @@
 The voice chat service did not find an expected method defined by the client.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

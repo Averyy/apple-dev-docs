@@ -24,6 +24,8 @@ class MTLTensorReferenceType
 ### Instance Properties
 - [var access: MTLBindingAccess](mtltensorreferencetype/access.md)
   A value that represents the read/write permissions of the tensor.
+- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](mtltensorreferencetype/auxiliaryplanes.md)
+  The auxiliary planes that this tensor reference requires.
 - [var dimensions: MTLTensorExtents?](mtltensorreferencetype/dimensions.md)
   The array of sizes, in elements, one for each dimension of this tensor.
 - [var indexType: MTLDataType](mtltensorreferencetype/indextype.md)

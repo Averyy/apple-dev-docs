@@ -8,6 +8,7 @@ The property that configures default parameters that prioritize bulk throughput,
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

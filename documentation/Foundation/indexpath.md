@@ -37,13 +37,24 @@ Each index in an index path represents the index into an array of children from 
   Creates an index path from an array of elements.
 - [init<ElementSequence>(indexes: ElementSequence)](indexpath/init(indexes:)-55we8.md)
   Creates an index path from a sequence of integers.
+- [IndexPath.Element](indexpath/element.md)
+  A type that represents one node of an index path.
 ### Working with Special Node Names
+- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+  One past the index of the last node in the index path.
 - [var item: Int](indexpath/item-8cp0y.md)
   The value of the item element of the index path.
 - [var row: Int](indexpath/row.md)
   The value of the row element of the index path.
 - [var section: Int](indexpath/section-8h7wo.md)
   The value of the section element of the index path.
+- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+  The index of the first node in the index path.
+### Accessing Nodes
+- [subscript(IndexPath.Index) -> IndexPath.Element](indexpath/subscript(_:)-6p6ul.md)
+  Accesses one of the index path’s nodes.
+- [subscript(Range<IndexPath.Index>) -> IndexPath](indexpath/subscript(_:)-4pgu1.md)
+  Accesses a contiguous subrange of the index path’s nodes.
 ### Adding Nodes
 - [static func + (IndexPath, IndexPath) -> IndexPath](indexpath/+(_:_:).md)
   Combines the elements of two index paths into a single index path.
@@ -66,12 +77,34 @@ Each index in an index path represents the index into an array of children from 
   Compares this index path to another in depth-first traversal order.
 - [func dropLast() -> IndexPath](indexpath/droplast.md)
   Return a new index path containing all but the last element.
+- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+  Returns the index that follows the given index.
+- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+  Returns the index that precedes the given index.
+- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+  Returns an iterator over the nodes of the index path.
 ### Excluding Nodes
 - [func dropLast() -> IndexPath](indexpath/droplast.md)
   Return a new index path containing all but the last element.
+### Iterating over Nodes
+- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+  Returns an iterator over the nodes of the index path.
 ### Comparing Index Paths
 - [func compare(IndexPath) -> ComparisonResult](indexpath/compare(_:).md)
   Compares this index path to another in depth-first traversal order.
+### Manipulating Indexes
+- [IndexPath.Index](indexpath/index.md)
+  A type that points to a particular node in an index path, similar to an array index.
+- [var startIndex: IndexPath.Index](indexpath/startindex.md)
+  The index of the first node in the index path.
+- [var endIndex: IndexPath.Index](indexpath/endindex.md)
+  One past the index of the last node in the index path.
+- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+  Returns the index that follows the given index.
+- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+  Returns the index that precedes the given index.
+- [IndexPath.Indices](indexpath/indices.md)
+  A type that represents a group of nodes in an index path.
 ### Using Reference Types
 - [class NSIndexPath](nsindexpath.md)
   A list of indexes that together represent the path to a specific location in a tree of nested arrays.

@@ -26,7 +26,7 @@ The `NSBundle` object with the bundle identifier `identifier`, or `nil` if the r
 
 #### Discussion
 
-This method is typically used by frameworks and plug-ins to locate their own bundle at runtime. This method may be somewhat more efficient than trying to locate the bundle using the [`init(for:)`](bundle/init(for:).md) method. However, if the initial lookup of an already loaded and cached bundle with the specified identifier fails, this method uses potentially time-consuming heuristics to attempt to locate the bundle. As an optimization, you can use the [`bundleWithPath:`](nsbundle/bundlewithpath:.md) or [`bundleWithURL:`](nsbundle/bundlewithurl:.md) method instead to avoid file system traversal.
+This method is typically used by frameworks and plug-ins to locate their own bundle at runtime. This method may be somewhat more efficient than trying to locate the bundle using the [`init(for:)`](bundle/init(for:).md) method. However, if the initial lookup of an already loaded and cached bundle with the specified identifier fails, this method uses potentially time-consuming heuristics to attempt to locate the bundle. As an optimization, you can use the [`bundleWithPath:`](nsbundle/bundlewithpath:.md) or [`init(url:)`](bundle/init(url:)-a2t0.md) method instead to avoid file system traversal.
 
 ## Parameters
 
@@ -34,10 +34,10 @@ This method is typically used by frameworks and plug-ins to locate their own bun
 
 ## See Also
 
+- [convenience init?(url: URL)](bundle/init(url:)-a2t0.md)
+  Returns an `NSBundle` object that corresponds to the specified file URL.
 - [init(for: AnyClass)](bundle/init(for:).md)
   Returns the `NSBundle` object with which the specified class is associated.
-- [convenience init?(url: URL)](bundle/init(url:)-3n9rf.md)
-  Returns an `NSBundle` object initialized to correspond to the specified file URL.
 - [init?(path: String)](bundle/init(path:).md)
   Returns an `NSBundle` object initialized to correspond to the specified directory.
 

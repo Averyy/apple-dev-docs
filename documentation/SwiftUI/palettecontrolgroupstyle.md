@@ -15,6 +15,7 @@ A control group style that presents its content as a palette.
 ## Declaration
 
 ```swift
+nonisolated
 struct PaletteControlGroupStyle
 ```
 

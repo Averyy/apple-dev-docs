@@ -40,7 +40,10 @@ An [`FSEntityIdentifier`](fsentityidentifier.md) is a UUID to identify a contain
 - [init(UUID: UUID)](fsentityidentifier/init(uuid:)-1cibs.md)
 - [init(UUID: UUID, data: Data)](fsentityidentifier/init(uuid:data:)-1cpve.md)
 - [init(UUID: UUID, qualifier: UInt64)](fsentityidentifier/init(uuid:qualifier:)-x26c.md)
+- [init?(UUID: UUID, qualifierData: Data)](fsentityidentifier/init(uuid:qualifierdata:)-49874.md)
 - [init?(coder: NSCoder)](fsentityidentifier/init(coder:).md)
+- [init?(uuid: UUID, qualifierData: Data)](fsentityidentifier/init(uuid:qualifierdata:)-8xlg1.md)
+  Creates an entity identifier with the given UUID and qualifier data.
 
 ## Relationships
 

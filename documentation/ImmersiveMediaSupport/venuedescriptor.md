@@ -31,7 +31,7 @@ This type contains information that includes camera definitions such as the lens
   Creates a venue descriptor instance from an AIME file.
 ### Configuring cameras
 - [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
-  An array of all the immersive cameras contained in the venue descriptor.
+  An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
 - [func addCamera(ImmersiveCamera) throws](venuedescriptor/addcamera(_:).md)
   Adds a new immersive camera definition to the venue descriptor.
 - [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
@@ -58,12 +58,16 @@ This type contains information that includes camera definitions such as the lens
 
 - [struct ImmersiveCamera](immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 - [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
   A structure that represents immersive media camera calibration data.
 - [enum ImmersiveCameraMask](immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
 - [struct ImmersiveDynamicMask](immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
+- [class ImmersiveImageMask](immersiveimagemask.md)
+  An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 
 ---

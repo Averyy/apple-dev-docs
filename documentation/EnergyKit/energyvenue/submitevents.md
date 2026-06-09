@@ -9,7 +9,6 @@ Submits electrical load events to be used by EnergyKit to generate energy insigh
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

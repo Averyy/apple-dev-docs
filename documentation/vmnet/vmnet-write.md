@@ -17,7 +17,7 @@ func vmnet_write(_ interface: interface_ref, _ packets: UnsafeMutablePointer<vmp
 
 #### Return Value
 
-Returns `vmnet` on success, or an error code on failure. See `vmnet` for possible values.
+`vmnet` on success, or an error code on failure. See `vmnet` for possible values.
 
 #### Discussion
 
@@ -27,7 +27,7 @@ None of the packet to be written should exceed the size of the value of [`vmnet_
 
 - `interface`: The interface reference.
 - `packets`: An array of packets to be written.
-- `pktcnt`: The number of packets to write. On return, this parameter is populated with the number of packets written.
+- `pktcnt`: The number of packets to write. On return, this parameter is populated with the number of packets the framework wrote.
 
 ## See Also
 

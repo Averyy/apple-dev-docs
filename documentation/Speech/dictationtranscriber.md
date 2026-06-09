@@ -60,6 +60,8 @@ To adjust the transcriber’s algorithm, configure the transcriber with relevant
 - [static func supportedLocale(equivalentTo: Locale) async -> Locale?](dictationtranscriber/supportedlocale(equivalentto:).md)
   A locale from the module’s supported locales equivalent to the given locale.
 ### Getting results
+- [var results: some Sendable & AsyncSequence<DictationTranscriber.Result, any Error>](dictationtranscriber/results.md)
+  The asynchronous sequence of transcription results.
 - [DictationTranscriber.Result](dictationtranscriber/result.md)
   A phrase or passage of transcribed speech. The phrases are sent in order.
 

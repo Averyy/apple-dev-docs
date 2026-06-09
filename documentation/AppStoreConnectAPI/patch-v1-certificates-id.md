@@ -19,11 +19,11 @@ Update the activation status for a specific certificate.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List and Download Certificates`](get-v1-certificates.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List and download certificates`](get-v1-certificates.md) response.
 
 ## See Also
 
-- [Create a Certificate](post-v1-certificates.md)
+- [Create a certificate](post-v1-certificates.md)
   Create a new certificate using a certificate signing request.
 
 

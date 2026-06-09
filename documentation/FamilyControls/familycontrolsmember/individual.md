@@ -8,6 +8,7 @@ A value indicating that Family Controls is managing an individual account, so th
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

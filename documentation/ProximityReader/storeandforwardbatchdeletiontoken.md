@@ -9,7 +9,6 @@ A secure token that you use to delete a Store and Forward batch.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

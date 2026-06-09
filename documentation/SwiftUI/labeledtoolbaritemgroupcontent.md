@@ -17,6 +17,7 @@ A view that represents the view of a toolbar item group with a specified label.
 ## Declaration
 
 ```swift
+nonisolated
 struct LabeledToolbarItemGroupContent<Content, Label> where Content : View, Label : View
 ```
 

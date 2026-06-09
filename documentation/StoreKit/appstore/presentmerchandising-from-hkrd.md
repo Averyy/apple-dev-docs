@@ -3,6 +3,8 @@
 **Framework**: StoreKit  
 **Kind**: method
 
+Display a merchandising view.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -15,6 +17,19 @@
 @MainActor
 static func presentMerchandising(_ kind: AppStoreMerchandisingKind, from controller: UIViewController) async throws -> AppStoreMerchandisingKind.PresentationResult
 ```
+
+#### Return Value
+
+The result of the App Store merchandising presentation.
+
+#### Discussion
+
+> **Note**: A `StoreKitError`.
+
+## Parameters
+
+- `kind`: The merchandising kind to merchandise.
+- `controller`: The view controller to show the merchandising UI in proximity to.
 
 
 ---

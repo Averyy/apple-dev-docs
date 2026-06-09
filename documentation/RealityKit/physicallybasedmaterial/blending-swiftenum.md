@@ -34,6 +34,12 @@ enum Blending
 - [PhysicallyBasedMaterial.Opacity](physicallybasedmaterial/opacity.md)
   An object that defines the opacity of an entity.
 
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+
 ## See Also
 
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)

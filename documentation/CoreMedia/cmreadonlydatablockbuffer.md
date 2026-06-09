@@ -42,7 +42,6 @@ Block buffer provides a contiguous range of data offsets (from 0 to [`count`](cm
 - [init(consuming CMMutableDataBlockBuffer)](cmreadonlydatablockbuffer/init(_:)-5fdm2.md)
   Create a readonly block buffer from existing block buffer.
 - [init(DispatchData)](cmreadonlydatablockbuffer/init(_:)-80jym.md)
-  Create a new block buffer referencing bytes from DispatchData. DispatchData objects consisting of multiple regions will produce a non-contiguous block buffer with each dispatch data region corresponding to a region in the block buffer.
 - [init(Data)](cmreadonlydatablockbuffer/init(_:)-w7h3.md)
   Create a new block buffer referencing bytes from Data.
 - [init(subBlockCapacity: Int)](cmreadonlydatablockbuffer/init(subblockcapacity:).md)
@@ -50,6 +49,7 @@ Block buffer provides a contiguous range of data offsets (from 0 to [`count`](cm
 - [init(unsafeBlockBuffer: sending CMBlockBuffer)](cmreadonlydatablockbuffer/init(unsafeblockbuffer:).md)
   Create a readonly block buffer from an existing block buffer.
 ### Instance Properties
+- [var attachments: CMReadOnlyDataBlockBuffer.Attachments](cmreadonlydatablockbuffer/attachments-swift.property.md)
 - [var isContiguous: Bool](cmreadonlydatablockbuffer/iscontiguous.md)
   Determine whether the block buffer is contiguous.
 ### Instance Methods
@@ -61,6 +61,8 @@ Block buffer provides a contiguous range of data offsets (from 0 to [`count`](cm
   Access contents of the buffer if available as contiguous memory block.
 - [func withUnsafeBlockBuffer<R>((CMBlockBuffer) throws -> sending R) rethrows -> sending R](cmreadonlydatablockbuffer/withunsafeblockbuffer(_:).md)
   Access the underlying CMBlockBuffer instance.
+### Type Aliases
+- [CMReadOnlyDataBlockBuffer.Attachments](cmreadonlydatablockbuffer/attachments-swift.typealias.md)
 ### Default Implementations
 - [Collection Implementations](cmreadonlydatablockbuffer/collection-implementations.md)
 - [DataProtocol Implementations](cmreadonlydatablockbuffer/dataprotocol-implementations.md)

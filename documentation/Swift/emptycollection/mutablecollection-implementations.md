@@ -28,7 +28,7 @@
 ### Subscripts
 - [subscript(Range<Self.Index>) -> Slice<Self>](emptycollection/subscript(_:)-1atow.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](emptycollection/subscript(_:)-27szq.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](emptycollection/subscript(_:)-27szq.md)
 - [subscript(Range<Self.Index>) -> Self.SubSequence](emptycollection/subscript(_:)-6sv7g.md)
 - [subscript<R>(R) -> Self.SubSequence](emptycollection/subscript(_:)-9ngyd.md)
 

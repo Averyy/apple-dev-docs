@@ -24,6 +24,7 @@ var title: String? { get set }
 
 - [Creating a user activity object](creating-a-user-activity-object.md)
 - [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
 
 #### Discussion
 
@@ -33,26 +34,14 @@ Always specify a title string for activity objects that are eligible for searche
 
 - [var activityType: String](nsuseractivity/activitytype.md)
   The user activity object’s activity type.
-- [var requiredUserInfoKeys: Set<String>?](nsuseractivity/requireduserinfokeys.md)
-  A set of keys that represent the minimal information about the activity that should be stored for later restoration.
-- [var userInfo: [AnyHashable : Any]?](nsuseractivity/userinfo.md)
-  A dictionary containing app-specific state information needed to continue an activity on another device.
-- [func addUserInfoEntries(from: [AnyHashable : Any])](nsuseractivity/adduserinfoentries(from:).md)
-  Adds the contents of the specified dictionary to the user info dictionary.
-- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
-  A string that identifies the user activity’s content.
-- [var needsSave: Bool](nsuseractivity/needssave.md)
-  A Boolean value that indicates whether the state of the activity needs to be updated.
-- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
-  A set of properties that describe the activity.
 - [var keywords: Set<String>](nsuseractivity/keywords.md)
   A set of localized keywords that can help users find the activity in search results.
 - [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
-  A value used to identify the user activity.
+  A unique and persistent value you use to identify the activity.
 - [typealias NSUserActivityPersistentIdentifier](nsuseractivitypersistentidentifier.md)
-  The type that defines a persistent identifier value for a user activity.
-- [var appClipActivationPayload: APActivationPayload?](nsuseractivity/appclipactivationpayload.md)
-  An object containing the payload information that launches an App Clip.
+  The type that defines a persistent identifier value for an activity.
+- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
+  A set of properties that describe the activity.
 
 
 ---

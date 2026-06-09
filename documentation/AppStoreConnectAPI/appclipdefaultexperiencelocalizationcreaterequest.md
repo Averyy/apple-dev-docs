@@ -27,13 +27,13 @@ object AppClipDefaultExperienceLocalizationCreateRequest
 ## See Also
 
 - [object AppClipDefaultExperienceLocalization](appclipdefaultexperiencelocalization.md)
-  The data structure that represents a Default App Clip Experience Localizations resource.
+  The localized metadata for a default App Clip experience, including the subtitle displayed on the App Clip card.
 - [object AppClipDefaultExperienceLocalizationResponse](appclipdefaultexperiencelocalizationresponse.md)
-  A response that contains a single Default App Clip Experience Localizations resource.
+  The response body for endpoints that create, read, or modify a localized App Clip card subtitle.
 - [object AppClipDefaultExperienceLocalizationUpdateRequest](appclipdefaultexperiencelocalizationupdaterequest.md)
-  The request body you use to update a Default App Clip Experiences resource.
+  The request body for updating the localized subtitle and action button label for a default App Clip experience.
 - [object AppClipDefaultExperienceLocalizationsResponse](appclipdefaultexperiencelocalizationsresponse.md)
-  A response that contains a list of Default App Clip Experience Localizations resources.
+  The response body for endpoints that list localized App Clip card subtitles for a default experience.
 
 
 ---

@@ -129,7 +129,7 @@ With this option, the HUD visualizes common metrics in three columns:
 - [Validating your app’s Metal API usage](validating-your-apps-metal-api-usage.md)
   Catch runtime issues in your Metal app using API Validation.
 - [Validating your app’s Metal shader usage](validating-your-apps-metal-shader-usage.md)
-  Catch common shader runtime issues using Shader Validation while your app is running.
+  Catch common shader runtime issues using Shader Validation.
 - [Customizing the Metal Performance HUD](customizing-metal-performance-hud.md)
   Modify the appearance of your Metal heads-up display to monitor your graphics performance.
 - [Understanding the Metal Performance HUD metrics](understanding-metal-performance-hud-metrics.md)

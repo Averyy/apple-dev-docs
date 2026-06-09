@@ -11,14 +11,16 @@ The get bootstrap token request details.
 - Mac Catalyst 26.0+
 - macOS 10.15+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object GetBootstrapTokenRequest
 ```
+
+## Mentions
+
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 
 ## Properties
 

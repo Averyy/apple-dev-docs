@@ -16,7 +16,7 @@ var selectedRanges: [NSValue] { get set }
 
 #### Discussion
 
-The objects in the array are sorted, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length
+The objects in the array are sorted by location in ascending order, non-overlapping, non-contiguous, and (except for the case of a single range) have non-zero-length.
 
 ## See Also
 

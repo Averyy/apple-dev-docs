@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a team.
+A team configuration within a Game Center matchmaking rule set, defining team size and composition rules.
 
 **Availability**:
 - App Store Connect API 3.1+

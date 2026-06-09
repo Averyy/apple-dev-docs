@@ -16,9 +16,7 @@ any if(boolean $condition, any $ifTrue, any $ifFalse)
 
 ##### Parameters
 
-- **`condition`**: An expression that evaluates to a Boolean value.
-- **`ifTrue`**: The value to return if `condition` is `true`.
-- **`ifFalse`**: The value to return if `condition` is `false`.
+-`condition`: An expression that evaluates to a Boolean value. -`ifTrue`: The value to return if `condition` is `true`. -`ifFalse`: The value to return if `condition` is `false`.
 
 ##### Return Value
 

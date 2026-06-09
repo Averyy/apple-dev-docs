@@ -31,9 +31,34 @@ A [`CVBuffer`](cvbuffer.md) serves as an abstract base class that defines how to
   Retrieves a specific attachment of a Core Video buffer.
 - [func CVBufferGetAttachments(CVBuffer, CVAttachmentMode) -> CFDictionary?](cvbuffergetattachments(_:_:).md)
   Retrieves all attachments of a Core Video buffer.
+### Protocols
+- [protocol CVBufferRepresentable](cvbufferrepresentable.md)
+  CVBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVBuffer type.
+- [protocol CVAttachmentKeyDefinitions](cvattachmentkeydefinitions.md)
+  Marks a type as a collection of attachment keys for an attachment bearer.
+- [protocol CVAttachmentModePreference](cvattachmentmodepreference.md)
+  Defines preferred mode for an attachment key.
+- [protocol CVAttachmentValueRepresentable](cvattachmentvaluerepresentable.md)
+  Allows Swift types to be used as buffer attachment value.
+### Attachment system (Swift)
+- [struct CVAttachmentAccess](cvattachmentaccess.md)
+  Provides access to the attachments of a buffer.
+- [struct CVAttachmentContainer](cvattachmentcontainer.md)
+  Provides storage for buffer attachments independent of the buffer lifetime
+- [struct CVAttachmentRawValue](cvattachmentrawvalue.md)
+  A lightweight wrapper around raw attachment values.
+- [struct CVAttachmentKeyDefinition](cvattachmentkeydefinition.md)
+  Associates a raw attachment key with a value type and preferred propagation mode.
+- [struct CVAttachmentKeyDefinitionWithDefault](cvattachmentkeydefinitionwithdefault.md)
+  Associates a raw attachment key with a default value and preferred propagation mode.
+- [struct CVAttachmentCompositeKeyDefinition](cvattachmentcompositekeydefinition.md)
+  Associates a set of raw attachment keys with a value type and preferred propagation mode.
+- [enum CVAttachmentModePreferenceShouldPropagate](cvattachmentmodepreferenceshouldpropagate.md)
+  Sets preferred mode for attachment to should propagate
+- [enum CVAttachmentModePreferenceShouldNotPropagate](cvattachmentmodepreferenceshouldnotpropagate.md)
+  Sets preferred mode for attachment to should not propagate
 ### Data types
 - [class CVBuffer](cvbuffer.md)
-  A reference to a Core Video buffer.
 - [enum CVAttachmentMode](cvattachmentmode.md)
   The propagation modes of a Core Video buffer attachment.
 ### Constants

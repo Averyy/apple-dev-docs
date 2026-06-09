@@ -38,6 +38,8 @@ The [`NumberFormatStyleConfiguration.Precision`](numberformatstyleconfiguration/
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/presentation(_:).md)
   Modifies the format style to use the specified presentation.
 - [func rounded(rule: Decimal.FormatStyle.Currency.Configuration.RoundingRule, increment: Int?) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/rounded(rule:increment:).md)

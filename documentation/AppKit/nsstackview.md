@@ -16,7 +16,7 @@ class NSStackView
 
 #### Overview
 
-A stack view employs Auto Layout (the system’s constraint-based layout feature) to arrange and align an array of views according to your specification. To use a stack view effectively, you need to understand the basics of Auto Layout constraints as described in [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
+A stack view employs Auto Layout (the system’s constraint-based layout feature) to arrange and align an array of views according to your specification. For more information on using a stack view effectively, see [`NSLayoutConstraint`](nslayoutconstraint.md).
 
 ##### Basic Features of Stack Views
 

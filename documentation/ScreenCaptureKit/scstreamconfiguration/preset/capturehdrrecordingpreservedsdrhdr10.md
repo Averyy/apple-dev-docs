@@ -4,6 +4,8 @@
 **Kind**: case
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 26.0+
 - macOS 26.0+
 

@@ -27,9 +27,9 @@ class NSBatchInsertRequest
   Creates a batch-insertion request for a managed entity, and specifies a closure that provides data dictionaries for insertion.
 - [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entity:managedobjecthandler:).md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that inserts data into the entity.
-- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:).md)
+- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:)-5l4ps.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that provides data dictionaries for insertion.
-- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:).md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-7dr6p.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that inserts data into the entity.
 - [init(entity: NSEntityDescription, objects: [[String : Any]])](nsbatchinsertrequest/init(entity:objects:).md)
   Creates a batch-insertion request for a managed entity, and provides an array of data dictionaries for insertion.
@@ -50,6 +50,9 @@ class NSBatchInsertRequest
   An array of dictionaries that represents the objects to insert with the keys as attribute names and their assigned values.
 - [var resultType: NSBatchInsertRequestResultType](nsbatchinsertrequest/resulttype.md)
   The type of result that Core Data returns from this request.
+### Initializers
+- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:)-74gtn.md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-2dgkw.md)
 
 ## Relationships
 

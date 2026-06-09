@@ -8,6 +8,7 @@ Presents the system UI that allows people to manage their permission to forward 
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

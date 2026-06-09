@@ -1,8 +1,7 @@
 # manager(_:didUpdate:)
 
 **Framework**: Core Motion  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Provides the delegate with a new set of pressure and depth measurements.
 
@@ -16,7 +15,7 @@ Provides the delegate with a new set of pressure and depth measurements.
 ## Declaration
 
 ```swift
-func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterSubmersionMeasurement)
+optional func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterSubmersionMeasurement)
 ```
 
 #### Discussion

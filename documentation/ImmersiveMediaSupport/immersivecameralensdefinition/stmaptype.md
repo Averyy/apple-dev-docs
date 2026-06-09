@@ -33,10 +33,14 @@ Use this value for STMap generation output when using the `ImmersiveLensDefiniti
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [ImmersiveCameraLensDefinition.Eye](immersivecameralensdefinition/eye.md)
+  A value that represents a camera lens eye.
 
 
 ---

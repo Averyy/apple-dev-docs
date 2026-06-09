@@ -91,6 +91,8 @@ Don’t use an scroller when a slider would be more appropriate. An [`NSSlider`]
   The proportion of the knob slot that the knob should fill.
 ### Type Properties
 - [class var isCompatibleWithOverlayScrollers: Bool](nsscroller/iscompatiblewithoverlayscrollers.md)
+### Structures
+- [NSScroller.PreferredScrollerStyleDidChangeMessage](nsscroller/preferredscrollerstyledidchangemessage.md)
 
 ## Relationships
 

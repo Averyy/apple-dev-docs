@@ -55,6 +55,7 @@ For multipath protocols, this is the local port of the initial flow. If the app 
 - [URLSessionTaskMetrics.ResourceFetchType](urlsessiontaskmetrics/resourcefetchtype.md)
   The manner in which a resource is fetched.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontasktransactionmetrics/domainresolutionprotocol.md)
+  DNS protocol used for domain resolution.
 
 
 ---

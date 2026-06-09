@@ -153,6 +153,23 @@ When using an [`NSClipView`](nsclipview.md) object within a scroll view (the usu
 ### Initializers
 - [init?(coder: NSCoder)](nsscrollview/init(coder:).md)
 - [init(frame: NSRect)](nsscrollview/init(frame:).md)
+### Structures
+- [NSScrollView.DidEndLiveMagnifyMessage](nsscrollview/didendlivemagnifymessage.md)
+- [NSScrollView.DidEndLiveScrollMessage](nsscrollview/didendlivescrollmessage.md)
+- [NSScrollView.DidLiveScrollMessage](nsscrollview/didlivescrollmessage.md)
+- [NSScrollView.WillStartLiveMagnifyMessage](nsscrollview/willstartlivemagnifymessage.md)
+- [NSScrollView.WillStartLiveScrollMessage](nsscrollview/willstartlivescrollmessage.md)
+### Instance Properties
+- [var isTouchScrollingEnabled: Bool](nsscrollview/istouchscrollingenabled.md)
+  Enable touch scrolling
+- [var maximumNumberOfTouchesForScrolling: Int](nsscrollview/maximumnumberoftouchesforscrolling.md)
+  The maximum number of touches needed for scrolling
+- [var minimumNumberOfTouchesForScrolling: Int](nsscrollview/minimumnumberoftouchesforscrolling.md)
+  The minimum number of touches needed for scrolling
+- [var refreshController: NSRefreshController?](nsscrollview/refreshcontroller.md)
+  The refresh controller associated with this scroll view.
+- [var scrollGestureForRelationships: NSGestureRecognizer](nsscrollview/scrollgestureforrelationships.md)
+  A gesture recognizer for setting up failure or exclusion relationships against scrolling gestures
 
 ## Relationships
 

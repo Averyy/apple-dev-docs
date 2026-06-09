@@ -16,6 +16,7 @@ object SubscriptionPrice.Relationships.Territory
 
 ### Objects
 - [object SubscriptionPrice.Relationships.Territory.Data](subscriptionprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription price.
 
 ## Properties
 

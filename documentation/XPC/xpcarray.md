@@ -80,6 +80,35 @@ struct XPCArray
 ### Supporting types
 - [typealias IndexValuePair](xpcarray/indexvaluepair.md)
   A type that contains an index and the object at that index.
+### Subscripts
+- [subscript(Int) -> XPCArray?](xpcarray/subscript(_:)-6ud0q.md)
+  Get or set a value in this array as an XPCArray.
+- [subscript(Int) -> XPCEndpoint?](xpcarray/subscript(_:)-7io5d.md)
+  Get or set a value in this array as an endpoint.
+- [subscript(Int) -> uuid_t?](xpcarray/subscript(_:)-9akd5.md)
+  Get or set a value in this array as a UUID.
+- [subscript(Int) -> FileDescriptor?](xpcarray/subscript(_:)-9c21w.md)
+  Get or set a value in this array as a file descriptor.
+- [subscript(Int) -> RawSpan?](xpcarray/subscript(_:)-us15.md)
+  Get or set a value in this array as data.
+- [subscript(Int, as _: uuid_t.Type) -> uuid_t?](xpcarray/subscript(_:as:)-4xkvt.md)
+  Get a value in this array as a UUID.
+- [subscript(Int, as _: FileDescriptor.Type) -> FileDescriptor?](xpcarray/subscript(_:as:)-54977.md)
+  Get a value in this array as a file descriptor.
+- [subscript(Int, as _: XPCEndpoint.Type) -> XPCEndpoint?](xpcarray/subscript(_:as:)-5g1u8.md)
+  Get a value in this array as an endpoint.
+- [subscript(Int, as _: XPCArray.Type) -> XPCArray?](xpcarray/subscript(_:as:)-6vjz.md)
+  Get a value in this array as an XPCArray.
+- [subscript(Int, as _: RawSpan.Type) -> RawSpan?](xpcarray/subscript(_:as:)-96zf2.md)
+  Get a value in this array as data.
+- [subscript(Int, as _: FileDescriptor.Type, default _: @autoclosure () -> FileDescriptor) -> FileDescriptor](xpcarray/subscript(_:as:default:)-3h2ng.md)
+  Get a value in this array as a file descriptor.
+- [subscript(Int, as _: XPCEndpoint.Type, default _: @autoclosure () -> XPCEndpoint) -> XPCEndpoint](xpcarray/subscript(_:as:default:)-46zsb.md)
+  Get a value in this array as an endpoint.
+- [subscript(Int, as _: uuid_t.Type, default _: @autoclosure () -> uuid_t) -> uuid_t](xpcarray/subscript(_:as:default:)-4ey7n.md)
+  Get a value in this array as a UUID.
+- [subscript(Int, as _: XPCArray.Type, default _: @autoclosure () -> XPCArray) -> XPCArray](xpcarray/subscript(_:as:default:)-645o4.md)
+  Get a value in this array as an XPCArray.
 
 ## Relationships
 

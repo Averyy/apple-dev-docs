@@ -38,6 +38,14 @@ Creates or returns a cached CVMetalBuffer object mapped to the CVImageBuffer. Th
 - `bufferCache`: The buffer cache object that will manage the buffer.
 - `bufferOut`: The newly created buffer object will be placed here.
 
+## See Also
+
+- [func CVMetalBufferCacheCreate(CFAllocator?, CFDictionary?, any MTLDevice, UnsafeMutablePointer<CVMetalBufferCache?>) -> CVReturn](cvmetalbuffercachecreate(_:_:_:_:).md)
+- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](cvmetalbuffercacheflush(_:_:).md)
+- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](cvmetalbuffercachegettypeid().md)
+- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](cvmetalbuffergetbuffer(_:).md)
+- [func CVMetalBufferGetTypeID() -> CFTypeID](cvmetalbuffergettypeid().md)
+
 
 ---
 

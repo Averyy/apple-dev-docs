@@ -7,8 +7,6 @@ The payload that configures the names of the account user.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | macOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -45,7 +43,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>CalDAVAccountDescription</key>
             <string>My CalDAV Account</string>
             <key>CalDAVHostName</key>
-            <string>server.companyemail.com</string>
+            <string>server.example.com</string>
             <key>CalDAVPassword</key>
             <string>Password123</string>
             <key>CalDAVPort</key>
@@ -53,7 +51,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>CalDAVUseSSL</key>
             <true/>
             <key>CalDAVUsername</key>
-            <string>juanchaves4@companyemail.com</string>
+            <string>juanchaves4@example.com</string>
             <key>PayloadIdentifier</key>
             <string>com.example.mycaldavpayload</string>
             <key>PayloadType</key>
@@ -67,11 +65,11 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
             <key>PayloadIdentification</key>
             <dict>
                 <key>UserName</key>
-                <string>juanchaves4@companyemail.com</string>
+                <string>juanchaves4@example.com</string>
                 <key>FullName</key>
                 <string>Juan Chavez</string>
                 <key>EmailAddress</key>
-                <string>juanchaves4@companyemail.com</string>
+                <string>juanchaves4@example.com</string>
                 <key>AuthMethod</key>
                 <string>UserEnteredPassword</string>
                 <key>Password</key>
@@ -113,7 +111,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 
 ## Properties
 
-- `PayloadIdentification` (Identification.PayloadIdentification) *(required)*: The dictionary that contains details about the user.
+- `PayloadIdentification` (Identification.PayloadIdentification) *(required)*: The dictionary that contains details about the user. Deprecated: macOS 15.4+
 
 ## See Also
 

@@ -45,7 +45,6 @@ For more information on using `ServiceClass` with Wi-Fi Aware, refer to [`WAAcce
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

@@ -1,22 +1,24 @@
-# Managing Users
+# Managing users
 
 **Framework**: Device Management
 
-Retrieve key information to effectively manage users across an organization.
+Register and manage users for your organization’s managed location.
 
 #### Overview
 
-Deployment of an organization’s owned assets to users’ owned devices requires registering those users for the location you’re managing. The provided API allows for asynchronous management of these users in the organization.
+Deployment of an organization’s owned assets to user-owned devices requires registering those users for the location you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
 ##### Retrieve Users
 
-Before managing the users in the organization, the MDM client needs to determine what users are currently active. Making a request to [`Get Users`](get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
+Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
+
+> **Note**:  The Get Users endpoint can return multiple entries with the same `clientUserId` if a user has been retired and re-created. For a given `clientUserId` at a location, there can be zero or more entries in the Retired state, but only zero or one entry in the Created or Associated state. To retrieve only active users, pass `activeOnly=true` as a query parameter.
 
 The following code shows an example of requesting an organization’s users:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users' \ 
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -50,6 +52,24 @@ The code above results in a response like the following:
     "versionId": "021f10a0-7035-11eb-9f67-bd1df52e1e13"
 }
 ```
+
+Use query parameters to filter user results.
+
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `activeOnly` | Boolean | When `true`, returns only active (nonretired) users. |
+| `retiredOnly` | Boolean | When `true`, returns only retired users. |
+| `clientUserId` | string | Filter by a specific user identifier. |
+| `sinceVersionId` | string | Returns users modified since this version identifier. |
+
+The following code shows an example of looking up a specific user:
+
+```javascript
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users?clientUserId=client-101' \
+--header 'Authorization: Bearer {sToken}'
+```
+
+For pagination response fields and versioned queries using `sinceVersionId`, see [`Using paginated endpoints`](using-paginated-endpoints.md).
 
 ##### Invite Users
 
@@ -86,9 +106,9 @@ A user has an `email` key and either an `idHash` or an `inviteCode` key, dependi
 | Retired | Indicates that the server has retired the user. |
 | Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple Account with a new user that shares the same `clientUserId`. |
 
-##### Request Sizes
+##### Check Request Size Limits
 
-The size limits for a [`ManageUsersRequest`](manageusersrequest.md) are dynamic and can change without notice, so the MDM server should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](serviceconfigresponse/limits-data.dictionary.md).
+The size limits for a [`ManageUsersRequest`](manageusersrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](serviceconfigresponse/limits-data.dictionary.md).
 
 The sole key that is specific to [`ManageUsersRequest`](manageusersrequest.md) is `maxUsers,` which represents the maximum number of unique users in a manage request.
 
@@ -111,6 +131,8 @@ The code above results in a response like the following:
         "maxClientUserIds": 1000,
         "maxSerialNumbers": 1000,
         "maxRevokeSerialNumbers": 100,
+        "maxSubscriptions": 25,
+        "maxSubscriptionClientUserIds": 1000,
         "maxMdmNameLength": 100,
         "maxMdmMetadataLength": 255,
         "maxMdmIdLength": 100
@@ -121,14 +143,14 @@ The code above results in a response like the following:
 
 ##### Manage Users
 
-Use [`ManageUsersRequest`](manageusersrequest.md) to asynchronously create, update, or retire users.
+Use [`ManageUsersRequest`](manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in MDM deployments.
 
 The following code shows an example of creating users to associate in the organization:
 
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/users/create' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer {cToken}' \
+--header 'Authorization: Bearer {sToken}' \
 --data-raw '{
     "users": [
         {
@@ -158,7 +180,7 @@ The following code shows an example of updating users in the organization:
 ```javascript
 curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/users/update' \
 --header 'Content-Type: application/json' \
---header 'Authorization: Bearer {cToken}' \
+--header 'Authorization: Bearer {sToken}' \
 --data-raw '{
     "users": [
         {
@@ -183,7 +205,7 @@ To view progress for your create, update, or retire event, make a request to [`E
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=1039246b-97f5-4bdc-b3b6-78362dbf7652' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -203,7 +225,7 @@ The following code shows the status of a complete create event:
 
 ```javascript
 curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventId=1039246b-97f5-4bdc-b3b6-78362dbf7652' \
---header 'Authorization: Bearer {cToken}'
+--header 'Authorization: Bearer {sToken}'
 ```
 
 The code above results in a response like the following:
@@ -223,24 +245,16 @@ The [`StatusResponse`](statusresponse.md) returns as `PENDING`, `COMPLETE`, or `
 
 ##### Handle Notifications
 
-For MDM clients that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [`Subscribing to Notifications`](subscribing-to-notifications.md).
+For device management services that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [`Subscribing to notifications`](subscribing-to-notifications.md).
 
 ## See Also
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-  Associate app and book purchases with users or devices.
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-  Manage devices and content across your organization using the new API version.
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
-- [Managing Assets](managing-assets.md)
-  Retrieve key information to effectively manage assets across an organization’s users and devices.
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-  Manage paginated endpoints to efficiently work with large record sets.
-- [Subscribing to Notifications](subscribing-to-notifications.md)
-  Listen to notifications to keep track of the latest events for an organization.
-- [Handling Error Responses](handling-error-responses.md)
-  Investigate service request errors and troubleshoot solutions.
+- [Managing assets](managing-assets.md)
+  Assign and revoke app and book licenses across your organization.
+- [Managing subscriptions](managing-subscriptions.md)
+  Administer auto-renewable subscription seats for your organization.
+- [Setting up and assigning content with your MDM](setting-up-and-assigning-content-with-your-mdm.md)
+  Distribute purchased licenses to managed users through your MDM server.
 
 
 ---

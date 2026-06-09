@@ -17,6 +17,7 @@ Creates a gesture with two gestures that can receive updates or succeed independ
 ## Declaration
 
 ```swift
+nonisolated
 init(_ first: First, _ second: Second)
 ```
 

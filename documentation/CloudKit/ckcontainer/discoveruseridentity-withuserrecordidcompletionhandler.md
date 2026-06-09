@@ -17,7 +17,7 @@ Fetches the user identity for the specified user record ID.
 ## Declaration
 
 ```swift
-func userIdentity(forUserRecordID userRecordID: CKRecord.ID) async throws -> CKUserIdentity?
+func discoverUserIdentity(withUserRecordID userRecordID: CKRecord.ID, completionHandler: @escaping @Sendable (CKUserIdentity?, (any Error)?) -> Void)
 ```
 
 #### Discussion

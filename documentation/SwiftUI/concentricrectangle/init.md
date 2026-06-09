@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a concentric rectangle with each corner being concentric individually to the container shape.
+Creates a rectangle using the concentric corner style on each corner individually.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,10 @@ Create a concentric rectangle with each corner being concentric individually to 
 ```swift
 init()
 ```
+
+#### Discussion
+
+The system may calculate a different radius for each corner. This can happen when the rectangle is not centered within the container shape, or the container shape’s corners have different radii.
 
 
 ---

@@ -9,13 +9,16 @@ An error that indicates the app exceeds the rate limit for using the framework.
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 
 ```swift
 case rateLimitExceeded
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

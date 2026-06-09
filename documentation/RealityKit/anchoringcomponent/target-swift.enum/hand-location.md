@@ -6,7 +6,6 @@
 An anchor point attached to a specific location on the user’s hand.
 
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

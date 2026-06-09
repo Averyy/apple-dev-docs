@@ -64,6 +64,12 @@ struct CVPixelFormatDescription
 
 - [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
   A structure for holding information that describes a custom extended pixel fill algorithm.
+- [struct CVPixelFormatType](cvpixelformattype.md)
+  Identifier for a pixel format type
+- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+  Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
+- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+  Pattern indicating sensel arrangement.
 
 
 ---

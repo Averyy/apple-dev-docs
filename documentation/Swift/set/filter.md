@@ -18,7 +18,7 @@ Returns a new set containing the elements of the set that satisfy the given pred
 ## Declaration
 
 ```swift
-func filter(_ isIncluded: (Element) throws -> Bool) rethrows -> Set<Element>
+consuming func filter<E>(_ isIncluded: (Element) throws(E) -> Bool) throws(E) -> Set<Element> where E : Error
 ```
 
 #### Return Value

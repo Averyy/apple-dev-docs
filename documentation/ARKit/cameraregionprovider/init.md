@@ -14,10 +14,6 @@ Create a camera region provider.
 init()
 ```
 
-#### Return Value
-
-The camera region provider.
-
 
 ---
 

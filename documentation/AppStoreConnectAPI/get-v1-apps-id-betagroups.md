@@ -1,4 +1,4 @@
-# List All Beta Groups for an App
+# List all beta groups for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -53,8 +53,8 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/betaGroups
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/betaGroups](get-v1-apps-_id_-relationships-betagroups.md)
-- [Remove Specified Beta Testers From All Groups and Builds of an App](delete-v1-apps-_id_-relationships-betatesters.md)
+- [List beta group IDs for an app](get-v1-apps-_id_-relationships-betagroups.md)
+- [Remove specified beta testers from all groups and builds of an app](delete-v1-apps-_id_-relationships-betatesters.md)
   Remove one or more beta testers’ access to test any builds of a specific app.
 
 

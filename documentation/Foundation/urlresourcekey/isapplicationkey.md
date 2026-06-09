@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+`true` if resource is an application (Read-only, value type boolean `NSNumber`).
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
@@ -21,6 +23,7 @@ static let isApplicationKey: URLResourceKey
 ## See Also
 
 - [static let applicationIsScriptableKey: URLResourceKey](urlresourcekey/applicationisscriptablekey.md)
+  `true` if the resource is scriptable. Only applies to applications (Read-only, value type boolean `NSNumber`).
 
 
 ---

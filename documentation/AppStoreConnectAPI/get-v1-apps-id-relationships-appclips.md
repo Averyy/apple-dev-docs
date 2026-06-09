@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/appClips
+# List App Clip IDs for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [List All App Clips for an App](get-v1-apps-_id_-appclips.md)
+- [List all app clips for an app](get-v1-apps-_id_-appclips.md)
   List your app’s associated App Clips.
 
 

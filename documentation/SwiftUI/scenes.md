@@ -48,6 +48,13 @@ You configure scenes using modifiers, similar to how you configure views. For ex
 ### Creating watch notifications
 - [struct WKNotificationScene](wknotificationscene.md)
   A scene which appears in response to receiving the specified category of remote or local notifications.
+### Presenting content on an external display
+- [func sceneAccessory<C>(content: () -> C) -> some View](view/sceneaccessory(content:).md)
+  Defines any scene accessories associated with `self`.
+- [protocol SceneAccessoryContent](sceneaccessorycontent.md)
+  Conforming types represent items which define content for scene accessories.
+- [struct ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)
+  A scene accessory that presents non-interactive content on an external display.
 
 ## See Also
 

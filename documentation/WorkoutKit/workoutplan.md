@@ -26,10 +26,6 @@ struct WorkoutPlan
 - [WorkoutPlan.Workout](workoutplan/workout-swift.enum.md)
   The workout for the workout plan.
 ### Accessing workout plan data
-- [var id: UUID](workoutplan/id-swift.property.md)
-  A unique identity for the workout plan.
-- [WorkoutPlan.ID](workoutplan/id-swift.typealias.md)
-  The data type of the workout plan’s ID.
 - [var workout: WorkoutPlan.Workout](workoutplan/workout-swift.property.md)
   The workout represented by this plan.
 ### Opening the workout plan
@@ -39,14 +35,6 @@ struct WorkoutPlan
 - [init(from: Data) throws](workoutplan/init(from:).md)
 ### Instance Properties
 - [var dataRepresentation: Data](workoutplan/datarepresentation.md)
-- [var hashValue: Int](workoutplan/hashvalue.md)
-### Instance Methods
-- [func hash(into: inout Hasher)](workoutplan/hash(into:).md)
-### Operator Functions
-- [static func != (Self, Self) -> Bool](workoutplan/!=(_:_:).md)
-- [static func == (WorkoutPlan, WorkoutPlan) -> Bool](workoutplan/==(_:_:).md)
-### Default Implementations
-- [Equatable Implementations](workoutplan/equatable-implementations.md)
 
 ## Relationships
 

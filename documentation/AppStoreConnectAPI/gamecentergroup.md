@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a group resource.
+A named group that shares leaderboards and achievements across multiple apps in Game Center.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -18,7 +18,9 @@ object GameCenterGroup
 
 ### Objects
 - [object GameCenterGroup.Attributes](gamecentergroup/attributes-data.dictionary.md)
+  Attributes that describe a group resource.
 - [object GameCenterGroup.Relationships](gamecentergroup/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -57,7 +59,7 @@ object GameCenterGroup
 - [object GameCenterGroupGameCenterLeaderboardsLinkagesResponse](gamecentergroupgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a group and a leaderboard.
 - [object GameCenterGroupResponse](gamecentergroupresponse.md)
-  A response that contains a single group resource.
+  A response containing a single Game Center group that shares leaderboards and achievements across apps.
 - [object GameCenterGroupUpdateRequest](gamecentergroupupdaterequest.md)
   The request body you use to update a group.
 

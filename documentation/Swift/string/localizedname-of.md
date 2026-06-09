@@ -38,7 +38,7 @@ A human-readable string giving the name of `encoding` in the current locale.
   Returns whether this string’s storage contains validly-encoded UTF-8 contents in contiguous memory.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
-- [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)
+- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](string/withutf8(_:).md)
   Runs `body` over the content of this string in contiguous memory. If this string is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the string, it will invalidate any pre-existing indices.
 
 

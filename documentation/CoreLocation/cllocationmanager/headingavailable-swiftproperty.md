@@ -6,6 +6,9 @@
 A Boolean value indicating whether the location manager is able to generate heading-related events.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - macOS 10.15+
 - visionOS 1.0+
 

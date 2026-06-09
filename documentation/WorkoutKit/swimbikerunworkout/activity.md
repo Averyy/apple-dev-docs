@@ -27,17 +27,6 @@ enum Activity
   A running workout activity, with the specified location type.
 - [case swimming(HKWorkoutSwimmingLocationType)](swimbikerunworkout/activity/swimming(_:).md)
   A swimming workout activity, with the specified location type.
-### Comparing activities
-- [var hashValue: Int](swimbikerunworkout/activity/hashvalue.md)
-  The hashed value of the activity.
-- [func hash(into: inout Hasher)](swimbikerunworkout/activity/hash(into:).md)
-  Hashes the essential components of the activity by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](swimbikerunworkout/activity/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two activities aren’t equal.
-- [static func == (SwimBikeRunWorkout.Activity, SwimBikeRunWorkout.Activity) -> Bool](swimbikerunworkout/activity/==(_:_:).md)
-  Returns a Boolean value that indicates whether two activities are equal.
-### Default Implementations
-- [Equatable Implementations](swimbikerunworkout/activity/equatable-implementations.md)
 
 ## Relationships
 

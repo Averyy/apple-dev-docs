@@ -3,9 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
 
 ## Declaration
 
@@ -17,7 +15,9 @@ object ServiceConfigResponse
 
 ### Dictionaries
 - [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
+  Request limits for the managed location. Each entry maps a limit name to its current integer value.
 - [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
+  Service URLs for the managed location. Each entry maps a URL name to its corresponding endpoint.
 
 ## Properties
 

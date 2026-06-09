@@ -22,7 +22,13 @@ func executeCommands(buffer indirectCommandbuffer: any MTLIndirectCommandBuffer,
 
 #### Discussion
 
+Use this method to indicate to Metal the span of indices in the command buffer to execute indirectly via an [`MTLBuffer`](mtlbuffer.md) instance you provide in the `indirectRangeBuffer` parameter. This allows you to calculate the span of commands Metal executes in the GPU timeline, enabling GPU-driven workflows.
+
+Metal requires that the contents of this buffer match the layout of struct [`MTLIndirectCommandBufferExecutionRange`](mtlindirectcommandbufferexecutionrange.md), which specifies a location and a length within the indirect command buffer. You are responsible for ensuring the address of this buffer has 4-byte alignment.
+
 Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of the indirect buffer that the `indirectRangeBuffer` parameter references.
+
+> **Note**: If the `indirectCommandBuffer` parameter references any pipeline state objects, you are responsible for adding them to a [`MTLResidencySet`](mtlresidencyset.md) instance in use when you commit the command buffer. An indirect compute command references a pipeline state when you pass it as an argument to the command’s [`setComputePipelineState(_:)`](mtlindirectcomputecommand/setcomputepipelinestate(_:).md) method during CPU encoding, or `set_compute_pipeline_state()` during GPU encoding.
 
 ## Parameters
 

@@ -43,7 +43,7 @@ This property sets the altitude of the camera relative to the elevation of the c
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.

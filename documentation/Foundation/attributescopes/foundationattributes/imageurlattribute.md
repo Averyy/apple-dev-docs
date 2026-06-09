@@ -21,6 +21,14 @@ A type for using an image URL as an attribute.
 enum ImageURLAttribute
 ```
 
+## Topics
+
+### Accessing the Attribute Name and Value
+- [static let name: String](attributescopes/foundationattributes/imageurlattribute/name.md)
+  The name of the image URL attribute.
+- [AttributeScopes.FoundationAttributes.ImageURLAttribute.Value](attributescopes/foundationattributes/imageurlattribute/value.md)
+  The type of the image URL attribute.
+
 ## Relationships
 
 ### Conforms To

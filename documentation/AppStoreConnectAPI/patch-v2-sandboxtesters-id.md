@@ -1,4 +1,4 @@
-# Modify a Sandbox Tester
+# Modify a sandbox tester
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -53,13 +53,13 @@ https://api.appstoreconnect.apple.com/v2/sandboxTesters/47be9e57-1a3f-49c2-8ce7-
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Sandbox Tester resource ID from the [`List Sandbox Testers`](get-v2-sandboxtesters.md) response
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Sandbox Tester resource ID from the [`List sandbox testers`](get-v2-sandboxtesters.md) response
 
 ## See Also
 
-- [List Sandbox Testers](get-v2-sandboxtesters.md)
+- [List sandbox testers](get-v2-sandboxtesters.md)
   Get a list of Sandbox Testers for your team.
-- [Clear Purchase History for a Sandbox Tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
+- [Clear purchase history for a sandbox tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
   Remove purchase history from a Sandbox Apple Account.
 
 

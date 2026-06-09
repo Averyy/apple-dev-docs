@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The localized name, description, and badge image for a Game Center achievement in a specific language.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -16,7 +18,9 @@ object GameCenterAchievementLocalization
 
 ### Objects
 - [object GameCenterAchievementLocalization.Attributes](gamecenterachievementlocalization/attributes-data.dictionary.md)
+  Attributes that describe a achievement resource.
 - [object GameCenterAchievementLocalization.Relationships](gamecenterachievementlocalization/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -41,9 +45,13 @@ object GameCenterAchievementLocalization
 - [object GameCenterAchievementLocalizationV2ImageLinkageResponse](gamecenterachievementlocalizationv2imagelinkageresponse.md)
   A response that contains a single Game Center achievement localization v2 image linkage resource.
 - [object GameCenterAchievementLocalizationCreateRequest](gamecenterachievementlocalizationcreaterequest.md)
+  The request body you use to create a Game Center achievement localization.
 - [object GameCenterAchievementLocalizationResponse](gamecenterachievementlocalizationresponse.md)
+  The response body for endpoints that create, read, or modify a single Game Center achievement localization.
 - [object GameCenterAchievementLocalizationUpdateRequest](gamecenterachievementlocalizationupdaterequest.md)
+  The request body you use to update a achievement.
 - [object GameCenterAchievementLocalizationsResponse](gamecenterachievementlocalizationsresponse.md)
+  The response body for endpoints that list Game Center achievement localizations.
 - [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
 - [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
 - [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)

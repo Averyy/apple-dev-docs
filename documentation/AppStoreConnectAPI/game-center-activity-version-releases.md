@@ -23,15 +23,15 @@ To manage Game Center activity version releases, be sure you have one of the fol
   Remove a specific version release from a Game Center activity.
 ### Objects
 - [object GameCenterActivityVersionRelease](gamecenteractivityversionrelease.md)
-  The data structure that represents an activity version release resource.
+  A record indicating that a version of a Game Center activity has been released to players.
 - [object GameCenterActivityVersionReleaseCreateRequest](gamecenteractivityversionreleasecreaterequest.md)
-  The request body you use to create an activity version release resource.
+  The request body for releasing a Game Center activity version to players.
 - [object GameCenterActivityVersionReleaseResponse](gamecenteractivityversionreleaseresponse.md)
-  A response that contains a single activity version release resource.
+  A response containing a single release record for a Game Center activity version.
 - [object GameCenterActivityVersionReleasesResponse](gamecenteractivityversionreleasesresponse.md)
-  A response that contains a list of activity version release resources.
+  A response containing a list of release records for a Game Center activity version.
 - [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
-  A response that contains a single activity version resource.
+  A response containing a single version of a Game Center activity.
 
 ## See Also
 

@@ -39,10 +39,14 @@ ARKit persists world anchor UUIDs and transforms across multiple runs of your ap
 ### Instance Properties
 - [var isSharedWithNearbyParticipants: Bool](worldanchor/issharedwithnearbyparticipants.md)
   Check if a world anchor is shared with nearby participants.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](worldanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](worldanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

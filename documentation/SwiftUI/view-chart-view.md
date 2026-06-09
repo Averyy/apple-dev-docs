@@ -29,6 +29,11 @@ Use these modifiers to configure a [`Chart`](https://developer.apple.com/documen
   Configures the foreground style scale for charts.
 - [func chartPlotStyle<Content>(content: (ChartPlotContent) -> Content) -> some View](view/chartplotstyle(content:).md)
   Configures the plot area of charts.
+### 3D configuration
+- [func chart3DCameraProjection(Chart3DCameraProjection) -> some View](view/chart3dcameraprojection(_:).md)
+- [func chart3DPose(_:)](view/chart3dpose(_:).md)
+  Associates a binding to be updated when the 3D chart’s pose is changed by an interaction.
+- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](view/chart3drenderingstyle(_:).md)
 ### Legends
 - [func chartLegend(Visibility) -> some View](view/chartlegend(_:).md)
   Configures the legend for charts.
@@ -52,6 +57,10 @@ Use these modifiers to configure a [`Chart`](https://developer.apple.com/documen
   Configures the y-axis for charts in the view.
 - [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartyaxisstyle(content:).md)
   Configures the y axis content of charts.
+- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+  Sets the visibility of the z axis.
+- [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
+  Configures the z-axis for 3D charts in the view.
 ### Axis Labels
 - [func chartXAxisLabel(_:position:alignment:spacing:)](view/chartxaxislabel(_:position:alignment:spacing:).md)
   Adds x axis label for charts in the view.
@@ -61,6 +70,8 @@ Use these modifiers to configure a [`Chart`](https://developer.apple.com/documen
   Adds y axis label for charts in the view.
 - [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartyaxislabel(position:alignment:spacing:content:).md)
   Adds y axis label for charts in the view.
+- [func chartZAxisLabel(_:position:alignment:spacing:)](view/chartzaxislabel(_:position:alignment:spacing:).md)
+  Adds z axis label for charts in the view. It effects 3D charts only.
 ### Axis scales
 - [func chartXScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartxscale(domain:range:type:).md)
   Configures the x scale for charts.
@@ -78,6 +89,12 @@ Use these modifiers to configure a [`Chart`](https://developer.apple.com/documen
   Configures the y scale for charts.
 - [func chartYScale(type: ScaleType?) -> some View](view/chartyscale(type:).md)
   Configures the y scale for charts.
+- [func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartzscale(domain:range:type:).md)
+  Configures the z scale for 3D charts.
+- [func chartZScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartzscale(domain:type:).md)
+  Configures the z scale for 3D charts.
+- [func chartZScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartzscale(range:type:).md)
+  Configures the z scale for 3D charts.
 ### Symbol scales
 - [func chartSymbolScale(_:)](view/chartsymbolscale(_:).md)
   Configures the symbol scale for charts.
@@ -137,6 +154,8 @@ Use these modifiers to configure a [`Chart`](https://developer.apple.com/documen
 - [func chartXSelection<P>(value: Binding<P?>) -> some View](view/chartxselection(value:).md)
 - [func chartYSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartyselection(range:).md)
 - [func chartYSelection<P>(value: Binding<P?>) -> some View](view/chartyselection(value:).md)
+- [func chartZSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartzselection(range:).md)
+- [func chartZSelection<P>(value: Binding<P?>) -> some View](view/chartzselection(value:).md)
 - [func chartAngleSelection<P>(value: Binding<P?>) -> some View](view/chartangleselection(value:).md)
 ### Visible domain
 - [func chartXVisibleDomain<P>(length: P) -> some View](view/chartxvisibledomain(length:).md)

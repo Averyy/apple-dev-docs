@@ -18,6 +18,8 @@ class let didUpdateNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that received the [`update()`](nswindow/update().md) message. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidUpdateMessage`](nswindow/didupdatemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

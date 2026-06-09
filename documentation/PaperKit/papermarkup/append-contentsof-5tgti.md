@@ -22,6 +22,11 @@ mutating func append(contentsOf drawing: PKDrawing)
 
 - `drawing`: The drawing whose contents is added on top of this paper.
 
+## See Also
+
+- [func append(contentsOf: PaperMarkup)](papermarkup/append(contentsof:)-5668.md)
+  Adds the contents of a data model on top of this paper.
+
 
 ---
 

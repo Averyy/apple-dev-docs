@@ -11,6 +11,7 @@ A scene that presents an interface for viewing and modifying an app’s settings
 ## Declaration
 
 ```swift
+nonisolated
 struct Settings<Content> where Content : View
 ```
 

@@ -17,7 +17,7 @@ Creates a new dictionary whose keys are the groupings returned by the given clos
 ## Declaration
 
 ```swift
-init<S>(grouping values: S, by keyForValue: (S.Element) throws -> Key) rethrows where Value == [S.Element], S : Sequence
+init<S, E>(grouping values: S, by keyForValue: (S.Element) throws(E) -> Key) throws(E) where Value == [S.Element], S : Sequence, E : Error
 ```
 
 #### Discussion
@@ -47,7 +47,7 @@ The new `studentsByLetter` dictionary has three entries, with students’ names 
   Creates an empty dictionary with preallocated space for at least the specified number of elements.
 - [init<S>(uniqueKeysWithValues: S)](dictionary/init(uniquekeyswithvalues:).md)
   Creates a new dictionary from the key-value pairs in the given sequence.
-- [init<S>(S, uniquingKeysWith: (Value, Value) throws -> Value) rethrows](dictionary/init(_:uniquingkeyswith:).md)
+- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/init(_:uniquingkeyswith:).md)
   Creates a new dictionary from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
 
 

@@ -26,8 +26,8 @@ mutating func append(_ other: Data)
   Append a buffer of bytes to the data.
 - [func append(UnsafePointer<UInt8>, count: Int)](data/append(_:count:).md)
   Appends the specified bytes from memory to the end of the data.
-- [func append(contentsOf: [UInt8])](data/append(contentsof:).md)
-  Appends the bytes in the specified array to the end of the data.
+- [func reserveCapacity(Int)](data/reservecapacity(_:).md)
+  Prepares the collection to store the specified number of elements, when doing so is appropriate for the underlying type.
 
 
 ---

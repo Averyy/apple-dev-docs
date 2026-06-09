@@ -17,6 +17,7 @@ Whether this shape should be drawn antialiased.
 ## Declaration
 
 ```swift
+nonisolated
 var isAntialiased: Bool { get set }
 ```
 

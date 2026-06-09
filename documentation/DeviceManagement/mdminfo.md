@@ -6,8 +6,7 @@
 Information about the MDM client.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,14 +16,47 @@ object MdmInfo
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
 
 ## Properties
 
 - `id` (string): A unique identifier that MDM uses for an organization.
 - `metadata` (string): A free-form field that MDM uses to store metadata for an organization.
 - `name` (string): The name of the current MDM client.
+
+## See Also
+
+- [object Asset](asset.md)
+  A product in the store.
+- [object ResponseAsset](responseasset.md)
+  The asset that the organization owns.
+- [object UnlimitedResponseAsset](unlimitedresponseasset.md)
+  An asset with an unlimited license that the organization owns.
+- [object Assignment](assignment.md)
+  The asset assignment for a user or device.
+- [object RequestUser](requestuser.md)
+  The requested user in the organization.
+- [object ResponseUser](responseuser.md)
+  The user in the organization.
+- [object ResponseSubscription](responsesubscription.md)
+  A subscription with its assignment counts.
+- [object ResponseSubscriptionAssignment](responsesubscriptionassignment.md)
+  An assignment of a subscription to a user.
+- [object SubscriptionCounts](subscriptioncounts.md)
+  The subscription assignment counts broken down by assigned and available.
+- [object SubscriptionCountsBreakdown](subscriptioncountsbreakdown.md)
+  The breakdown of subscription counts by renewing and expiring status.
+- [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
+  The request for subscription management.
+- [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
+  Request body for adding or removing subscription administrators.
+- [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
+  Confirmation response returned after adding or removing subscription administrators.
+- [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
+  An administrator for a subscription.
+- [object EventResponse](eventresponse.md)
+  The response that contains the event identifier.
 
 
 ---

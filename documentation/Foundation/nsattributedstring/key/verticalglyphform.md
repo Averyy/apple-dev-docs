@@ -9,7 +9,7 @@ The vertical glyph form of the text.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- macOS 10.7+
+- macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

@@ -22,7 +22,7 @@ object AppCustomProductPageLocalization.Relationships
 - [object AppCustomProductPageLocalization.Relationships.AppScreenshotSets](appcustomproductpagelocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary.md)
 ### Dictionaries
 - [object AppCustomProductPageLocalization.Relationships.SearchKeywords](appcustomproductpagelocalization/relationships-data.dictionary/searchkeywords-data.dictionary.md)
-  The data and links that describe the Search Keywords related to an custom.
+  The data and links that describe the search keywords related to a custom product page localization.
 
 ## Properties
 

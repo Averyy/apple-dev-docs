@@ -34,12 +34,12 @@ It’s not necessary to allocate and initialize an instance for the main bundle;
 
 ## See Also
 
+- [convenience init?(url: URL)](bundle/init(url:)-a2t0.md)
+  Returns an `NSBundle` object that corresponds to the specified file URL.
 - [init(for: AnyClass)](bundle/init(for:).md)
   Returns the `NSBundle` object with which the specified class is associated.
 - [init?(identifier: String)](bundle/init(identifier:).md)
   Returns the `NSBundle` instance that has the specified bundle identifier.
-- [convenience init?(url: URL)](bundle/init(url:)-3n9rf.md)
-  Returns an `NSBundle` object initialized to correspond to the specified file URL.
 
 
 ---

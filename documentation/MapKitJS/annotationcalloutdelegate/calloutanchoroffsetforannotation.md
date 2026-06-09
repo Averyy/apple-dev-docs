@@ -12,9 +12,9 @@ Returns a point determining the callout’s anchor offset.
 
 ```swift
 calloutAnchorOffsetForAnnotation?(
-        annotation: Annotation,
-        size: Size,
-    ): DOMPoint;
+    annotation: Annotation,
+    size: Size,
+): DOMPoint;
 ```
 
 #### Return Value

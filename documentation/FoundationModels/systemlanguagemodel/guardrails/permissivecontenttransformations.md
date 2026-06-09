@@ -24,9 +24,9 @@ static let permissiveContentTransformations: SystemLanguageModel.Guardrails
 
 #### Discussion
 
-In this mode, requests you make to the model that generate a string won’t throw [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) errors. However, when the purpose of your instructions and prompts isn’t to transform input from a person, the model may still refuse to respond to potentially unsafe prompts by generating an explanation.
+The `permissiveContentTransform` guardrail model lets the model handle potentially unsafe content, such as summarizing a news article. In this mode, requests you make to the model that generate a `String` will not throw [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) errors. However, the model may still sometimes refuse to respond to a sensitive prompt, in which case it generates a `String` refusal message.
 
-When you generate responses other than string, this mode behaves the same way as [`default`](systemlanguagemodel/guardrails/default.md).
+When you generate responses other than `String`, this mode behaves the same way as [`default`](systemlanguagemodel/guardrails/default.md) mode and throws [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) errors.
 
 ## See Also
 

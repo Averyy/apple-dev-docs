@@ -59,6 +59,7 @@ These constants are used as keys in the change dictionary passed to [`observeVal
   An asychronous sequence of Unicode scalar values.
 - [struct Expression](expression.md)
 - [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+  A type that represents a key in the formatting context dictionary.
 - [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)
 - [struct NSKeyValueOperator](nskeyvalueoperator.md)
   These constants define the available array operators. See [`Using Collection Operators`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/CollectionOperators.html) for more information.

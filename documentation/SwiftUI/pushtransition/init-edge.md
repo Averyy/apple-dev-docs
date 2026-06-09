@@ -17,6 +17,7 @@ Creates a transition that animates a view by moving and fading it.
 ## Declaration
 
 ```swift
+nonisolated
 init(edge: Edge)
 ```
 

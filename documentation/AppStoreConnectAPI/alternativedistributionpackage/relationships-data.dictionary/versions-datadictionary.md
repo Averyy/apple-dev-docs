@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the versions for the relationships of an alternative distribution package resource.
+The relationship container linking an alternative distribution package to its associated versions.
 
 **Availability**:
 - App Store Connect API 3.3+
@@ -22,7 +22,7 @@ For more information on the object that owns these versions, see [`AlternativeDi
 
 ### Objects
 - [object AlternativeDistributionPackage.Relationships.Versions.Data](alternativedistributionpackage/relationships-data.dictionary/versions-data.dictionary/data-data.dictionary.md)
-  The data structure that represents a version for the relationships of an alternative distribution package resource.
+  The resource linkage identifying an alternative distribution package version associated with a package.
 
 ## Properties
 

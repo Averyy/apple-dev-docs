@@ -153,8 +153,6 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
   Returns a sequence containing all but the given number of final elements.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](sequence/drop(while:).md)
   Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
-- [func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/filter(_:)-5y9d2.md)
-  Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 ### Transforming a Sequence
 - [func map<T, E>((Self.Element) throws(E) -> T) throws(E) -> [T]](sequence/map(_:).md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
@@ -235,8 +233,11 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 - [func count<E>(where: (Self.Element) throws(E) -> Bool) throws(E) -> Int](sequence/count(where:).md)
   Returns the number of elements in the sequence that satisfy the given predicate.
 - [func donatedWithin<DonationInfo>(Tips.DonationTimeRange) -> [Self.Element]](sequence/donatedwithin(_:).md)
+  Filters donations to only those that occurred within the specified time range.
 - [func fill(using: NSCompositingOperation)](sequence/fill(using:)-6sdhf.md)
   Fills this list of rects in the current NSGraphicsContext with that rect’s associated gray component value in the DeviceGray color space. The compositing operation of the fill defaults to the context’s compositing operation, not necessarily using `.copy` like `NSRectFillListWithGrays()`.
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element]](sequence/filter(_:)-3gbw.md)
+  Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 - [func filter(Predicate<Self.Element>) throws -> [Self.Element]](sequence/filter(_:)-8li9y.md)
 - [func filter<T>(matchingCategory: CMTypedTag<T>.Category) -> [CMTypedTag<T>]](sequence/filter(matchingcategory:).md)
   Filters a sequence of tags based on matching the specified category.  Returns the tags that match the specified category.
@@ -245,6 +246,8 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 - [func firstValue<T>(matchingCategory: CMTypedTag<T>.Category) -> T?](sequence/firstvalue(matchingcategory:).md)
   Finds the first tag matching the specified category and returns the value of the matching tag.
 - [func largestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](sequence/largestsubset(groupedby:).md)
+  Returns the largest group of donations when grouped by the specified key path.
+- [func makeBorrowingIterator() -> BorrowingIteratorAdapter<Self.Iterator>](sequence/makeborrowingiterator.md)
 - [func mapAnnotations<Feature, Input, Output>((Input) async throws -> Output) async rethrows -> [AnnotatedFeature<Feature, Output>]](sequence/mapannotations(_:)-48olp.md)
   Returns an array containing the results of mapping the given async closure over the sequence’s annotations.
 - [func mapAnnotations<Feature, Input, Output>((Input) throws -> Output) rethrows -> [AnnotatedFeature<Feature, Output>]](sequence/mapannotations(_:)-9q4pb.md)
@@ -262,6 +265,7 @@ A sequence should provide its iterator in O(1). The `Sequence` protocol makes no
 - [func randomSplit<Feature, Annotation, Generator>(by: Double, using: inout Generator) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>])](sequence/randomsplit(by:using:)-9i5e5.md)
   Generates two AnnotatedFeatures by randomly splitting the elements of the sequence, at the same proportion within each unique Annotation.
 - [func smallestSubset<DonationInfo, Value>(groupedBy: KeyPath<DonationInfo, Value>) -> [Self.Element]](sequence/smallestsubset(groupedby:).md)
+  Returns the smallest group of donations when grouped by the specified key path.
 - [func sorted<S, Comparator>(using: S) -> [Self.Element]](sequence/sorted(using:)-69w5u.md)
   Returns the elements of the sequence, sorted using the given array of `SortComparator`s to compare elements.
 - [func sorted<Comparator>(using: Comparator) -> [Self.Element]](sequence/sorted(using:)-95lls.md)

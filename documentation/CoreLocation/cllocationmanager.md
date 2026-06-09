@@ -172,6 +172,8 @@ For more information, see [`Configuring your app to use location services`](conf
   Review unsupported symbols and their replacements.
 ### Instance Methods
 - [func requestHistoricalLocations(purposeKey: String, sampleCount: Int, completionHandler: ([CLLocation], (any Error)?) -> Void)](cllocationmanager/requesthistoricallocations(purposekey:samplecount:completionhandler:).md)
+### Instance Properties
+- [var headingBody: (any CLBodyIdentifiable)?](cllocationmanager/headingbody.md)
 
 ## Relationships
 

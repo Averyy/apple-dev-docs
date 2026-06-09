@@ -53,9 +53,9 @@ Get a list of achievements for a specific Game Center detail.
   Get a list of achievement resource IDs for a specific Game Center detail.
 - [List All Achievements](get-v1-gamecenterdetails-_id_-gamecenterachievements.md)
   List all achievement information for a Game Center detail.
-- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List achievement releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
+- [List achievement release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 - [List Achievements](get-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)
   List the achievements for a Game Center detail.
 - [Modify Associated Achievements](patch-v1-gamecenterdetails-_id_-relationships-gamecenterachievements.md)

@@ -8,6 +8,7 @@ An object that provides handling of captured content and transitioning to the ex
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

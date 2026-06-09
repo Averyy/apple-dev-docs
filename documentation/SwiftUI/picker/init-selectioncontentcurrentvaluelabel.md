@@ -18,7 +18,7 @@ Creates a picker that generates its label from a localized string key and accept
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder currentValueLabel: () -> some View)
+init(_ titleKey: LocalizedStringKey, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View)
 ```
 
 #### Discussion

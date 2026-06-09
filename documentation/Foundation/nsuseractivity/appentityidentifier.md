@@ -24,7 +24,14 @@ var appEntityIdentifier: EntityIdentifier? { get set }
 
 By associating an app entity with a user activity, you make the entity available to Siri and Apple Intelligence. To clear the association with the app entity, set `appEntityIdentifier` to `nil`.
 
-For more information, refer to [`Making onscreen content available to Siri and Apple Intelligence`](https://developer.apple.com/documentation/AppIntents/Making-onscreen-content-available-to-siri-and-apple-intelligence) and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+For more information, refer to doc://com.apple.documentation/documentation/appintents/Making-onscreen-content-available-to-siri-and-apple-intelligence and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+
+## See Also
+
+- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
+  A string that identifies the user activity’s content.
+- [var externalMediaContentIdentifier: String?](nsuseractivity/externalmediacontentidentifier.md)
+  A unique identifier from the app’s media content catalog for the currently displayed media item.
 
 
 ---

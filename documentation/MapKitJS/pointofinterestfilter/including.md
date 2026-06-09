@@ -12,8 +12,8 @@ Creates a point-of-interest filter that includes categories from a list that you
 
 ```swift
 static including(
-        categories: PointOfInterestCategory[],
-    ): PointOfInterestFilter;
+    categories: PointOfInterestCategory[],
+): PointOfInterestFilter;
 ```
 
 ## See Also

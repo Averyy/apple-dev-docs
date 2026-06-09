@@ -37,6 +37,8 @@ The platform values in `AppStore.Platform` are the same as those in App Store Co
   A value that indicates the tvOS platform.
 - [static let visionOS: AppStore.Platform](appstore/platform/visionos.md)
   A value that indicates the visionOS platform.
+### Type Properties
+- [static var managed: AppStore.Platform](appstore/platform/managed.md)
 
 ## Relationships
 

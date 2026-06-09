@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a leaderboard release.
+A record indicating that a Game Center leaderboard has been released to players, making it visible in the game.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -18,7 +18,9 @@ object GameCenterLeaderboardRelease
 
 ### Objects
 - [object GameCenterLeaderboardRelease.Attributes](gamecenterleaderboardrelease/attributes-data.dictionary.md)
+  Attributes that describe a leaderboard resource.
 - [object GameCenterLeaderboardRelease.Relationships](gamecenterleaderboardrelease/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -33,7 +35,7 @@ object GameCenterLeaderboardRelease
 - [object GameCenterLeaderboardReleaseCreateRequest](gamecenterleaderboardreleasecreaterequest.md)
   The request body you use to create a leaderboard release.
 - [object GameCenterLeaderboardReleaseResponse](gamecenterleaderboardreleaseresponse.md)
-  A response that contains a single leaderboard release resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard release.
 - [object GameCenterLeaderboardReleasesResponse](gamecenterleaderboardreleasesresponse.md)
   A response that contains multiple leaderboard release resource.
 - [object GameCenterLeaderboardReleasesLinkagesResponse](gamecenterleaderboardreleaseslinkagesresponse.md)

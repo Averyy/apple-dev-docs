@@ -20,10 +20,6 @@ Assistant schema conformance for app intents that offer web browsing functionali
 protocol BrowserIntent : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -39,10 +35,12 @@ protocol BrowserIntent : AssistantSchemas.Model
   The app intent conforms to the schema for closing one or more browser windows.
 - [var createTab: some AssistantSchemas.Intent](assistantschemas/browserintent/createtab.md)
   The app intent conforms to the schema for creating a browser tab.
+- [var createTabGroup: some AssistantSchemas.Intent](assistantschemas/browserintent/createtabgroup.md)
 - [var createWindow: some AssistantSchemas.Intent](assistantschemas/browserintent/createwindow.md)
   The app intent conforms to the schema for creating a new browser window.
 - [var deleteBookmarks: some AssistantSchemas.Intent](assistantschemas/browserintent/deletebookmarks.md)
   The app intent conforms to the schema for deleting a bookmark.
+- [var deleteTabGroups: some AssistantSchemas.Intent](assistantschemas/browserintent/deletetabgroups.md)
 - [var findOnPage: some AssistantSchemas.Intent](assistantschemas/browserintent/findonpage.md)
   The app intent conforms to the schema for finding text on a web page.
 - [var openBookmark: some AssistantSchemas.Intent](assistantschemas/browserintent/openbookmark.md)
@@ -61,33 +59,6 @@ protocol BrowserIntent : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
-
-## See Also
-
-- [var bookmarkTab: some AssistantSchemas.Intent](assistantschemas/browserintent/bookmarktab.md)
-  The app intent conforms to the schema for creating a new bookmark for a browser tab.
-- [var bookmarkURL: some AssistantSchemas.Intent](assistantschemas/browserintent/bookmarkurl.md)
-  The app intent conforms to the schema for creating a bookmark for a URL.
-- [var clearHistory: some AssistantSchemas.Intent](assistantschemas/browserintent/clearhistory.md)
-  The app intent conforms to the schema for clearing the browser history.
-- [var closeTabs: some AssistantSchemas.Intent](assistantschemas/browserintent/closetabs.md)
-  The app intent conforms to the schema for closing a browser tab.
-- [var closeWindows: some AssistantSchemas.Intent](assistantschemas/browserintent/closewindows.md)
-  The app intent conforms to the schema for closing one or more browser windows.
-- [var createTab: some AssistantSchemas.Intent](assistantschemas/browserintent/createtab.md)
-  The app intent conforms to the schema for creating a browser tab.
-- [var createWindow: some AssistantSchemas.Intent](assistantschemas/browserintent/createwindow.md)
-  The app intent conforms to the schema for creating a new browser window.
-- [var deleteBookmarks: some AssistantSchemas.Intent](assistantschemas/browserintent/deletebookmarks.md)
-  The app intent conforms to the schema for deleting a bookmark.
-- [var findOnPage: some AssistantSchemas.Intent](assistantschemas/browserintent/findonpage.md)
-  The app intent conforms to the schema for finding text on a web page.
-- [var openBookmark: some AssistantSchemas.Intent](assistantschemas/browserintent/openbookmark.md)
-  The app intent conforms to the Assistant schema for opening a bookmarked URL.
-- [var openURLInTab: some AssistantSchemas.Intent](assistantschemas/browserintent/openurlintab.md)
-  The app intent conforms to the Assistant schema for loading a URL in a browser tab.
-- [var switchTab: some AssistantSchemas.Intent](assistantschemas/browserintent/switchtab.md)
-  The app intent conforms to the schema for switching to a specific tab.
 
 
 ---

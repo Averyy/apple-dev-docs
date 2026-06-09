@@ -39,6 +39,8 @@ Measure, investigate, and address the use of system resources and issues impacti
   Locate and fix pipeline stalls, cache misses, and other performance issues.
 - [Analyzing CPU usage with the Processor Trace instrument](analyzing-cpu-usage-with-processor-trace.md)
   Identify code where your app uses the CPU inefficiently.
+- [Analyzing CPU profiles with call tree views](analyzing-cpu-profiles-with-call-tree-views.md)
+  Use call tree visualizations to find performance bottlenecks in Instruments.
 ### Memory and size
 - [Reducing your app’s memory use](reducing-your-app-s-memory-use.md)
   Improve your app’s performance by analyzing memory-use metrics and making changes to maximize memory efficiency.
@@ -61,6 +63,8 @@ Measure, investigate, and address the use of system resources and issues impacti
   Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
 - [Reducing your app’s disk usage](reducing-your-app-s-disk-usage.md)
   Measure and minimize the space your app uses to store its files.
+- [Monitoring your app’s storage metrics](monitoring-your-app-s-storage-metrics.md)
+  Track your app’s storage footprint over time using Xcode Organizer to catch regressions in Documents & Data and App Size.
 ### Network
 - [Analyzing HTTP traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md)
   Measure HTTP-based network performance and usage of your apps.
@@ -70,8 +74,8 @@ Measure, investigate, and address the use of system resources and issues impacti
 
 ## See Also
 
-- [Devices and Simulator](devices-and-simulator.md)
-  Configure and manage devices connected to your Mac or devices in Simulator and use them to run your app.
+- [Device Hub](device-hub.md)
+  Manage the simulated and physical devices that you use to test your app.
 - [Debugging](debugging.md)
   Identify and address issues in your app using the Xcode debugger, Xcode Organizer, Metal debugger, and Instruments.
 - [Testing](testing.md)

@@ -9,7 +9,6 @@ The state of the session.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -34,7 +33,6 @@ When a device transitions from from idle to consuming or generating electricity,
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

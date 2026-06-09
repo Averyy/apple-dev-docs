@@ -16,7 +16,7 @@ Creates a disclosure group, using a provided localized string key to create a te
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: @escaping () -> Content)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: @escaping () -> Content)
 ```
 
 ## Parameters

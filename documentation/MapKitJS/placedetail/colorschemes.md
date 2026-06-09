@@ -11,7 +11,7 @@ A static property that allows you to access the Look Around color scheme enumera
 ## Declaration
 
 ```swift
-static ColorSchemes: typeof ColorScheme;
+static get ColorSchemes(): typeof ColorScheme;
 ```
 
 ## See Also

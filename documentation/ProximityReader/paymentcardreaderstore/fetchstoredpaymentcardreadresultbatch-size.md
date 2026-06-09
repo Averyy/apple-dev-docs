@@ -9,7 +9,6 @@ Returns a batch of reads the framework previously stored, in chronological order
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

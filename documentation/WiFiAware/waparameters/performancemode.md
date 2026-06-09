@@ -8,6 +8,7 @@ The initial performance configuration of the data path when connected.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -35,6 +35,7 @@ Authenticate users, and search for contact information in Open Directory and LDA
   An `ODSession` object serves as a Cocoa wrapper for an Open Directory session.
 - [class ODSessionRef](odsessionref.md)
   An Open Directory session type.
+- [class ODContextRef](odcontextref.md)
 ### Protocols
 - [protocol ODQueryDelegate](odquerydelegate.md)
   The `ODQueryDelegate` protocol defines methods for receiving results returned from an Open Directory query.

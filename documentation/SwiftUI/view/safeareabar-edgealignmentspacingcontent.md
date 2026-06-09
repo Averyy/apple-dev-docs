@@ -18,7 +18,7 @@ Shows the specified content as a custom bar beside the modified view.
 
 ```swift
 nonisolated
-func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ViewBuilder content: () -> some View) -> some View
+func safeAreaBar(edge: HorizontalEdge, alignment: VerticalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> some View) -> some View
 ```
 
 #### Return Value
@@ -36,7 +36,7 @@ Additionally, it extends the edge effect of any scroll views affected by the ins
 - `edge`: The horizontal edge of the view on which `content` is placed.
 - `alignment`: The alignment guide used to position `content` vertically.
 - `spacing`: Extra distance placed between the two views, or nil to use the default amount of spacing.
-- `content`: A view builder function providing the view to display as a custom bar.
+- `content`: A content builder function providing the view to display as a custom bar.
 
 ## See Also
 
@@ -45,7 +45,7 @@ Additionally, it extends the edge effect of any scroll views affected by the ins
 - [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
   Hides any scroll edge effects for scroll views within this hierarchy.
 - [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
-  A structure that defines the style of pocket a scroll view will have.
+  A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
 
 
 ---

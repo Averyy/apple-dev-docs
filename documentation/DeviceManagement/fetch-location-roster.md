@@ -6,8 +6,7 @@
 Obtain a list of the locations the server manages.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Topics
 

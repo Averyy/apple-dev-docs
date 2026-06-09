@@ -30,7 +30,7 @@ You can use an [`NSShadow`](nsshadow.md) object in one of two ways. First, you c
 - [init()](nsshadow/init.md)
   Creates a shadow object with default values.
 ### Managing a shadow
-- [var shadowOffset: NSSize](nsshadow/shadowoffset.md)
+- [var shadowOffset: CGSize](nsshadow/shadowoffset.md)
   The shadow’s relative position, which you specify with horizontal and vertical offset values.
 - [var shadowBlurRadius: CGFloat](nsshadow/shadowblurradius.md)
   The blur radius of the shadow.

@@ -25,6 +25,9 @@ This object provides a “zero-copy” buffer, for use when reading data from fi
   Performs the given closure with an unsafe pointer to the underlying bytes of the data buffer.
 - [var length: Int](fsmutablefiledatabuffer/length.md)
   The data length of the buffer.
+### Instance Methods
+- [func createMutableRawSpan() throws -> MutableRawSpan](fsmutablefiledatabuffer/createmutablerawspan.md)
+  Return a MutableRawSpan to the underlying bytes of the data buffer.
 
 ## Relationships
 
@@ -40,10 +43,14 @@ This object provides a “zero-copy” buffer, for use when reading data from fi
 
 ## See Also
 
-- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/read(from:at:length:into:replyhandler:).md)
+- [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (FSReadFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/read(from:at:length:into:replyhandler:).md)
   Reads the contents of the given file item.
-- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/write(contents:to:at:replyhandler:).md)
+- [class FSReadFileResult](fsreadfileresult.md)
+  The result of a read-file call.
+- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (FSWriteFileResult?, (any Error)?) -> Void)](fsvolume/readwritehandler/write(contents:to:at:replyhandler:).md)
   Writes contents to the given file item.
+- [class FSWriteFileResult](fswritefileresult.md)
+  The result of a read-file call.
 
 
 ---

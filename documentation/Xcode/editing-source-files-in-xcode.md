@@ -98,6 +98,8 @@ For more information on writing and distributing documentation of your code, see
 
 ## See Also
 
+- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+  Submit prompts in the same place you want to make changes to your code.
 - [Running code snippets using the playground macro](running-code-snippets-using-the-playground-macro.md)
   Add playgrounds to your code that run and display results in the canvas.
 

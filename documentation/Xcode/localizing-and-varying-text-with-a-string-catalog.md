@@ -2,78 +2,46 @@
 
 **Framework**: Xcode
 
-Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+Use string catalogs to manage localizable strings, add languages, translate text, handle plurals, and vary text by device.
 
 #### Overview
 
-Your app delivers the best experience when it runs well in a person’s locale and displays content in their native language. Supporting multiple languages is more than translating text. It includes handling plurals for nouns and units, as well as displaying the right form of text on specific devices.
+Your app delivers the best experience when it runs well in a person’s locale and displays content in their native language. Supporting multiple languages and regions is more than translating text. It includes handling plurals for nouns and units, as well as displaying the right form of text on specific devices.
 
 ![None](https://docs-assets.developer.apple.com/published/ca1cd2ff0166df7b3fb34dee9d839e39/localizing-and-varying-text-with-a-string-catalog-0-hero%402x.png)
 
-Use a string catalog to localize and translate all your app’s text in a visual editor right in Xcode. A string catalog automatically tracks all the localizable strings from your code, and keeps your translations in one place.
+Use string catalogs to manage your localizable strings in one place using a visual editor in Xcode. Take advantage of the localization tasks that Xcode performs for you, such as extracting the localizable strings from your app, generating comments and translations, and adding plural variants for each language.
 
-Use string catalogs to host translations, vary strings that contain plurals for different regions and locales, and change how text appears on different devices.
+To get started using string catalogs:
+
+1. Add a string catalog to your project.
+2. Build your app to populate the string catalog.
+3. Add a language to the string catalog.
+4. Generate the translations for that language.
+
+Then, fine tune your code and translations, add plural and device variants as needed, and test your app in each language and region you support. Also, explore the other features of string catalogs, such as generating comments for people localizing and using localizable symbols instead of string literals in your code.
+
+For more information on internationalizing your app, see [`Supporting multiple languages in your app`](supporting-multiple-languages-in-your-app.md), and for testing, see [`Previewing localizations`](previewing-localizations.md) and [`Testing localizations when running your app`](testing-localizations-when-running-your-app.md).
 
 > **Note**: Session 225: [`Code-along: Explore localization with Xcode`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/225)
 
-##### Localize Your Apps Text
-
-Before you can translate text, you need to make it localizable. This involves wrapping the user-facing strings in your app in constructs that make them translatable.
-
-In SwiftUI, all string literals within a view are automatically localizable.
-
-```swift
-// SwiftUI localizable text.
-Text("Title")
-```
-
-Make general text localizable using the `String(localized:)` initializer. For apps targeting older platforms, use the `NSLocalizedString` macro.
-
-```swift
-// General localizable text.
-String(localized: "Add a description for your collection here.")
-```
-
-Add comments to give context and assist localizers when translating your text. Alternatively, you can use coding intelligence later to generate comments after you create a string catalog.
-
-```swift
-// Localizable text with comments.
-Text("Edit", comment: "The text label on a button to switch to editor mode.")
-String(localized: "North America", comment: "The name of a continent.")
-```
-
-When your code isn’t running in the main bundle, use the `bundle` parameter to tell the system where to find the string at runtime. You can pass the explicit bundle name or pass the [`bundle()`](https://developer.apple.com/documentation/Foundation/bundle()) macro to refer to the bundle that contains resources for the current target.
-
-```swift
-// Localizable text in a Swift package or framework.
-Text("My Collections" bundle: #bundle, comment: "Section title above user-created collections."
-```
-
-To refer to the main app, pass `Bundle.main`, which is also the default bundle.
-
 ##### Add a String Catalog to Your Project
 
-To add a string catalog to your project, choose File > New > File from Template.
+Add one or more string catalog files to your project. You can start with the default `Localizable.xcstrings` file and later, add more depending on the complexity of your code.
 
-In the sheet that appears, select the platform, enter `string` in the filter field, select String Catalog under Resource, and click Next. In the dialog that appears, accept the default name `Localizable`, choose the Resources folder in your project as the location, and click Create.
+To add a string catalog to your project:
 
-![An Xcode screenshot showing the new file template with a string catalog file selected and highlighted.](https://docs-assets.developer.apple.com/published/ef07cdb78aeabd997ea0105435bb02d4/localizing-and-varying-text-with-a-string-catalog-1-add-a-string-catalog%402x.png)
+1. Choose File > New > File from Template.
+2. In the sheet that appears, select the platform, enter `string` in the filter field, select String Catalog under Resource, and click Next.
+3. In the dialog that appears, accept the default name `Localizable` or enter another name, choose a folder in your project as the location, and click Create.
 
-If your string catalog gets too big, you can create multiple string catalog files within a single Xcode project, and give each a unique name. Then choose which string catalog to use for each translation by passing the string catalog name to the `tableName` or `table` parameter to the respective localization API as follows:
-
-```swift
-// A SwiftUI localization example pointing to a specific string catalog.
-Text("Explore", tableName: "Navigation")
-
-// A general text localization example pointing to a specific string catalog.
-String(localized: "Gorgeous mountain peaks!", table: "LandmarkCollectionData")
-```
+If you add multiple string catalogs, choose which string catalog to use for each localizable string by passing its name to the localizable APIs in your code. For more information, see [`Organize localizable strings into tables`](preparing-your-apps-text-for-translation#Organize-localizable-strings-into-tables.md).
 
 ##### Add Your Localizable Text to the String Catalog
 
-Xcode automatically keeps your string catalog and app in sync each time you build your project. To populate your string catalog with the localizable text from your app, choose Product > Build. Xcode identifies strings in your app that support localization, and then adds them to your string catalog.
+To populate your string catalog with the localizable text from your app, choose Product > Build. Xcode discovers the localizable strings in your app and adds them to string catalogs in your project automatically. Each time you build your project, Xcode updates your string catalogs with changes you make to localizable strings in your code.
 
-![An Xcode screenshot of the string catalog editor that shows English as the source language and the populated localizable strings from your code.](https://docs-assets.developer.apple.com/published/77915fcc62b2f6f6a43ba6db7cbbd624/localizing-and-varying-text-with-a-string-catalog-2a-add-text%402x.png)
+Most SwiftUI strings inside views are automatically localizable and appear in the string catalog files. If some strings are missing, verify that you are using localizable APIs in your code so that Xcode finds all the user-facing text. For more information, see [`Preparing your app’s text for translation`](preparing-your-apps-text-for-translation.md) and [`Preparing dates, currencies, and numbers for translation`](preparing-dates-numbers-with-formatters.md).
 
 ##### Review the Source of Localizable Text in the Assistant
 
@@ -81,26 +49,13 @@ After you populate your string catalog, you can review the location of localizab
 
 In the Project navigator, select the string catalog file and choose Editor > Assistant. Then select a key in the catalog to see the source of the localizable text in the assistant.
 
-![An Xcode screenshot of the string catalog editor on the left showing a key selected and the assistant on the right showing the location of the key in the source editor.](https://docs-assets.developer.apple.com/published/b4bd24fb3e35d9f1da7179f0ef6baf5d/localizing-and-varying-text-with-a-string-catalog-2b-review-localizable%402x.png)
-
 If necessary, make edits to the localizable text in the source editor and choose Product > Build to update the string catalog.
 
-Alternatively, to jump to the text in the source editor, click the arrow button that appears next to a key when you hover over it in the string catalog.
-
-##### Generate Comments Automatically
-
-You can let Xcode automatically create comments for your localizable strings to provide more context for translators. Comments should describe the interface element, surrounding interface, placeholder content, and variables in the string.
-
-To generate a comment for a specific key:
-
-1. In the string catalog editor, Control-click the key you want to add a comment to.
-2. Choose Generate Comment from the context menu.
-
-You can also enable automatic comment generation for all projects. In Xcode > Settings > Editing, turn on “Automatically generate string catalog comments.”
-
-Later, when you export your localization files, an “auto-generated” note appears next to any automatically generated comments to distinguish them from manually written comments.
+To jump to the text in the source editor, click the arrow button that appears next to a key when you hover over it in the string catalog. You can also jump to the code and see example usages in the Attributes inspector for a key.
 
 ##### Add Variants for Strings That Contain Plurals
+
+If you use string interpolation in your localizable strings, Xcode can add plural variants for you to string catalogs.
 
 Languages have different grammatical rules for handling plurals of nouns and units. For example, in English, you can return `1 item` when the value of `%lld` is `1`. And you can return `%lld items` for all other cases. Other languages can have fewer or more plural variants, depending on their region and locale.
 
@@ -109,29 +64,25 @@ Languages have different grammatical rules for handling plurals of nouns and uni
 | One | `%lld item` |
 | Other | `%lld items` |
 
-First localize the text in your app using the value the string is dependent on, using string interpolation.
+First pass the string with the interpolated variable to a localizable API so that Xcode discovers it and adds it to the string catalog.
 
 ```swift
 Text("\(collection.landmarks.count) items")
 ```
 
-Then, add plural variants to the source localization to assist localizers when translating your text in other languages. When you add other languages, Xcode automatically adds the language-specific variations for those languages to the strings file too. For example, Xcode adds One and Other variants for English, and One, Few, Many, and Other variants for Russian.
+In the string catalog editor, Control-click the key that contains variables and select Vary by Plural from the contextual menu. Xcode adds plural variants to the source localization.
 
-In the string catalog editor, Control-click the key that contains variables and select Vary by Plural from the contextual menu.
+Then enter the translations for the different plurals in the source localization. Click the language in the sidebar, click the text field in the Language column for each variation of that string key, and then enter the translation for the system to use when that plural displays.
 
-![An Xcode screenshot of the string catalog editor showing one of the localized strings selected with a contextual menu. The Vary by Plural option is selected.](https://docs-assets.developer.apple.com/published/ff2d09e2d18730b2cf3e162dd18f3a19/localizing-and-varying-text-with-a-string-catalog-4-add-pluralization%402x.png)
+Later, when you add other languages to a string catalog, Xcode automatically adds the language-specific variations for those languages to the string catalog too. For example, Xcode adds One and Other variants for English when it’s the source localization, and One, Few, Many, and Other variants for Russian when you add Russian.
 
-When you add plural variants, the system does the following:
+When you select Vary by Plural, Xcode:
 
 - Adds all the plural forms for that language to the string catalog editor.
 - Determines which specifier to use for the interpolated string (`%lld` representing a 64-bit integer in this case).
 - Prepopulates the variant fields with the value of that key.
 
-> **Note**: If you add plural variants to the source localization after you add languages, the system propagates the variants to the other languages, if possible. If you add variants to a nonsource localization, that change affects only that language.
-
-Click the language in the sidebar, click the text field in the Language column for each variation of that string key, and then enter the text for the system to use when that plural displays.
-
-When you run the app, the plural variants update based on the value of the interpolated string.
+You can add plural variants to the source localization before or after you add languages and Xcode keeps all the plural variants in sync. If you add plural variants to a language other than the source localization, that change affects only that language.
 
 ##### Vary Strings By Device
 
@@ -150,42 +101,45 @@ Enter the text you want to display for that selected device, while retaining the
 
 When the app runs on the selected device, the system displays the new message for that device.
 
-##### Add Languages to Your Project
+##### Generate Comments Automatically
 
-To support multiple languages in your app, add additional languages to your project. For each language, select the string catalog in the Project navigator, click the Add button (+) near the bottom of the string catalog editor, and select a language from the pop-up menu.
+You can let Xcode automatically create comments for your localizable strings to provide more context for localizers. These comments describe the interface element, surrounding interface, placeholder content, and variables in the string.
 
-You can also add and remove languages using the Info pane in the project editor. Under Localizations, click the Add button, or select a language and click the Remove button (-).
+To generate a comment for a specific key:
 
-##### Add Your Translations Using the String Catalog Editor
+1. In the string catalog editor, Control-click the key you want to add a comment to.
+2. Choose Generate Comment from the context menu.
 
-If you know the translations for the languages that you add, you can enter them directly in the string catalog editor. Otherwise, you can export the languages, send them to a third-party for translation, and then import them.
+You can also enable automatic comment generation for all projects. In Xcode > Settings > Editing, turn on “Automatically generate string catalog comments.” under Localized Strings.
 
-To enter translations, select the language (German in this example) that you want to add translations for in the sidebar. Then click the text field for each key in that language’s column and enter the translation for that key.
+Later, when you export your localization files, an “auto-generated” note appears next to any automatically generated comments to distinguish them from human-written comments.
 
-Newly added strings that require translation appear with a New icon in the State column. When you add a translation, the New icon changes to a green checkmark. As you add translations, the percent symbol beside the language updates, displaying the translation percentage for that language. When a string catalog language reaches full translation, the percent symbol changes to a green checkmark.
+Alternatively, pass comments to the localizable APIs in your code. For more information, see [`Add comments to your localizable strings`](preparing-your-apps-text-for-translation#Add-comments-to-your-localizable-strings.md).
 
-![An Xcode screenshot showing the Project navigator on the left with a string catalog selected. The string catalog editor on the right contains English strings with German translations.](https://docs-assets.developer.apple.com/published/367cb330fee2289959fd4d69d72bb626/localizing-and-varying-text-with-a-string-catalog-3-add-translations%402x.png)
+##### Add Localizations to Your Project
 
-For information about exporting and importing translations in Xcode, see [`Exporting localizations`](exporting-localizations.md) and [`Importing localizations`](importing-localizations.md).
+Add the language and region combinations you want to support to your string catalogs.
 
-##### Test Your Translations
+For each localization, select the string catalog in the Project navigator, click the Add button (+) at the bottom of the sidebar in the string catalog editor, and select a language and optionally, a region, from the pop-up menu.
 
-To test your translations in the simulator:
+For example, select a language and region, such as Portuguese (Brazil) (pt-BR) or Portuguese (Portugal) (pt-PT), or just a language, such as French (fr) or Greek (el). For more information on languages and regions, see [`Choosing localization regions and scripts`](choosing-localization-regions-and-scripts.md).
 
-1. Change the app language of your current scheme by choosing Product > Scheme > Edit Scheme.
-2. In the dialog that appears, select the Run action on the left and click the Options tab.
-3. Choose the language you want to test from the App Language drop-down menu and click Close.
+You can also add and remove languages using the Info pane in the project editor. Under Localizations, click the Add button, or select a localization and click the Remove button (-).
 
-![An Xcode screenshot showing an open scheme editor with the German language selected in the App Language drop-down.](https://docs-assets.developer.apple.com/published/fca1a83518030afef74236b4e1e10d1b/localizing-and-varying-text-with-a-string-catalog-6-testing%402x.png)
+##### Add Translations to the String Catalog
 
-You can also navigate to Settings on the individual simulated device and change the deviceʼs language there. When your app runs, the translations for the selected language appear in the simulator.
+If you know the translations for the languages that you add, you can enter them directly in the string catalog editor. To enter translations, select the language that you want to add translations for in the sidebar. Then click the text field for each key in that language’s column and enter the translation for that key.
 
-For more information on testing localizations, see [`Previewing localizations`](previewing-localizations.md) and [`Testing localizations when running your app`](testing-localizations-when-running-your-app.md).
+Newly added strings that require translation appear with a New icon in the State column. When you add a translation, the state changes from new to translated indicated by a green checkmark. As you add translations, the percent symbol beside the language updates, displaying the translation percentage for that language. When a string catalog language reaches full translation, the percent symbol changes to a green checkmark.
 
 ## See Also
 
+- [Localizing your app using agents](localizing-your-app-using-agents.md)
+  Use agentic coding tools to translate the strings in your app into multiple languages and regions.
 - [Supporting multiple languages in your app](supporting-multiple-languages-in-your-app.md)
-  Internationalize your app’s strings, images, and other resource types to prepare for the translation process.
+  Internationalize your app’s strings, images, and other resource types to prepare for localization.
+- [Localizing your app using agents](localizing-your-app-using-agents.md)
+  Use agentic coding tools to translate the strings in your app into multiple languages and regions.
 - [Using generated localizable symbols in your code](using-generated-localizable-symbols-in-your-code.md)
   Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 - [Localizing Landmarks](localizing-landmarks.md)

@@ -23,9 +23,9 @@ func scrollPosition(id: Binding<(some Hashable)?>, anchor: UnitPoint? = nil) -> 
 
 #### Discussion
 
-Use this modifier along with the `View/scrollTargetLayout()` modifier to know the identity of the view that is actively scrolled. As the scroll view scrolls, the binding will be updated with the identity of the leading-most / top-most view.
+Use this modifier along with the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to know the identity of the view that is actively scrolled. As the scroll view scrolls, the binding will be updated with the identity of the leading-most / top-most view.
 
-Use the `View/scrollTargetLayout()` modifier to configure which the layout that contains your scroll targets. In the following example, the top-most ItemView will update with the scrolledID binding as the scroll view scrolls.
+Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which the layout that contains your scroll targets. In the following example, the top-most ItemView will update with the scrolledID binding as the scroll view scrolls.
 
 ```swift
 @Binding var items: [Item]

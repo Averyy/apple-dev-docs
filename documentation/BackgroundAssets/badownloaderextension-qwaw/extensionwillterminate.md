@@ -11,7 +11,6 @@ This method may be called shortly before the extension is terminated.
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 13.0+
-- tvOS 18.4+
 - visionOS 2.4+
 
 ## Declaration
@@ -25,6 +24,10 @@ func extensionWillTerminate()
 This method is invoked if all extension callbacks have returned or if the extension has run over it’s alotted runtime. This callback provides a last chance to tidy up state before process termination.
 
 > ⚠️ **Warning**: This method is advisory only, there will be instances where the extension is terminated before this method is invoked. Do not rely on this method being invoked before the extension is terminated.
+
+## See Also
+
+- [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate-236ac.md)
 
 
 ---

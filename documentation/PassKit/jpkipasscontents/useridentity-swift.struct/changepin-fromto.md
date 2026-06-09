@@ -8,6 +8,7 @@ A function that allows for the change of the PIN associated with the user identi
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

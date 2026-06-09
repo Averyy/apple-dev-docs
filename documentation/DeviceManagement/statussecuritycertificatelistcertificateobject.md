@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of a security certificate.
+A security certificate.
 
 **Availability**:
 - iOS 17.0+
@@ -13,8 +13,6 @@ A status report of a security certificate.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object StatusSecurityCertificateListCertificateObject
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the system removed the app and only this key and the `identifier` key are present in the status item object.
+- `_removed` (boolean): If `true`, the system removed the certificate and only this key and the `identifier` key are present in the status item object.
 - `data` (string) *(required)*: The certificate data in DER-encoded X.509 format.
 - `declaration-identifier` (string): The identifier of the asset declaration that installed the certificate, which is only present if a declaration installed the certificate.
 - `identifier` (string) *(required)*: The unique identifier of the certificate which the system uses as the primary key.

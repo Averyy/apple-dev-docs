@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-Get the singleton shared instance of this class.
+The shared instance of this class.
 
 **Availability**:
 - iOS 17.0+

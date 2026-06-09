@@ -26,15 +26,21 @@ In iOS 15 and later, and macOS 12 and later, you can apply postprocess effects t
   Send nontexture data from Swift to your Metal shaders using a shared header file.
 - [Implementing postprocess effects using Metal compute functions](implementing-postprocess-effects-using-metal-compute-functions.md)
   Create custom shaders to implement postprocess effects.
+### Bloom and tone mapping
+- [struct BloomComponent](bloomcomponent.md)
+  The `BloomComponent` adds a luminous glow effect around bright objects in the scene by extracting and blurring the brightest parts of the image, then combining them back with the original rendering. If scope is set to `unbounded` Bloom will be computed on the entire screen. If scope is set to `hierarchical` multiple Bloom Components can be used to opt in only the regions around certain objects for blooming.
+- [struct BloomOptionsComponent](bloomoptionscomponent.md)
+  A component that sets the properties for the bloom post-processing effects.
+- [struct BloomSettingsComponent](bloomsettingscomponent.md)
+  A component that sets the properties for the bloom post-processing effects.
+- [struct ToneMappingComponent](tonemappingcomponent.md)
 
 ## See Also
 
-- [ARView.PostProcessContext](arview/postprocesscontext.md)
-  An object the framework uses to pass data to a postprocess callback.
-- [ARView.RenderCallbacks](arview/rendercallbacks-swift.struct.md)
-  A container that holds the view’s render callbacks.
-- [protocol PostProcessEffect](postprocesseffect.md)
-  A protocol that defines hooks for custom post processing effects.
+- [Views and attachments](presentation-views-and-attachments.md)
+  Bring RealityKit content into your app with views and renderers.
+- [Presentation UI](presentation-user-interface.md)
+  Control your app’s content and how people can interact with it.
 
 
 ---

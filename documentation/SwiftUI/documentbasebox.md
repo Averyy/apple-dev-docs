@@ -20,25 +20,23 @@ protocol DocumentBaseBox<Document> : AnyObject
 
 ## Topics
 
-### Associated Types
+### Specifying the document type
 - [associatedtype Document](documentbasebox/document.md)
   The underlying document type.
-### Instance Properties
+### Accessing the document
 - [var base: Self.Document?](documentbasebox/base.md)
   Updates the underlying document to a new value.
 
 ## See Also
 
-- [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
-  A launch scene for document-based applications.
-- [struct DocumentLaunchView](documentlaunchview.md)
-  A view to present when launching document-related user experience.
-- [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
-  A proxy for access to the frame of the scene and its title view.
-- [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
-  The default actions for the document group launch scene and the document launch view.
-- [struct NewDocumentButton](newdocumentbutton.md)
-  A button that creates and opens new documents.
+- [protocol ReadableDocument](readabledocument.md)
+  A type that you use to read documents from file.
+- [protocol WritableDocument](writabledocument.md)
+  A type that you use to write documents to file.
+- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+  A set of settings and properties of an open document.
+- [struct DocumentCreationContext](documentcreationcontext.md)
+  Provides context about how a document was created or opened.
 
 
 ---

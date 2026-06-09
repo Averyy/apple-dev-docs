@@ -30,7 +30,6 @@ Save panels do not call this method; they always disable URLs. Implementations o
 
 ## See Also
 
-- [Sheet Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Sheets/Sheets.html#//apple_ref/doc/uid/10000002i)
 - [func panel(Any, validate: URL) throws](nsopensavepaneldelegate/panel(_:validate:).md)
   Asks the delegate to validate the URL for a file that the user selected.
 

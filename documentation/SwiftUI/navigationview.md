@@ -17,6 +17,7 @@ A view for presenting a stack of views that represents a visible path in a navig
 ## Declaration
 
 ```swift
+nonisolated
 struct NavigationView<Content> where Content : View
 ```
 

@@ -11,8 +11,6 @@ A dictionary of AirPrint printer details.
 - Mac Catalyst 7.0+
 - macOS 10.10+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,9 +20,9 @@ object AirPrint.AirPrintItem
 
 ## Properties
 
-- `ForceTLS` (boolean): If `true`, AirPrint connections are secured by Transport Layer Security (TLS). Available only in iOS 11 and later.
+- `ForceTLS` (boolean): If `true`, AirPrint connections are secured by Transport Layer Security (TLS). Available only in iOS 11 and later. Available: iOS 11+ | iPadOS 11+ | visionOS 2+
 - `IPAddress` (string) *(required)*: The IP address or hostname of the AirPrint destination.
-- `Port` (integer): The listening port of the AirPrint destination. Available only in iOS 11 and later.
+- `Port` (integer): The listening port of the AirPrint destination. Available only in iOS 11 and later. Available: iOS 11+ | iPadOS 11+ | visionOS 2+
 - `ResourcePath` (string) *(required)*: The resource path associated with the printer. This path corresponds to the `rp` parameter of the `_ipps.tcp` Bonjour record. For example: - `printers/Canon_MG5300_series`
 - `printers/Xerox_Phaser_7600`
 - `ipp/print`

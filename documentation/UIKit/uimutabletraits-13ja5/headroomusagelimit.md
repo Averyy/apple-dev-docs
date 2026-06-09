@@ -9,7 +9,6 @@ The HDR headroom usage limit associated with the current environment.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

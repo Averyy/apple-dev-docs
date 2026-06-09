@@ -17,17 +17,17 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Self, Self) -> Bool](int8/_(_:_:)-14f22.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](int8/_(_:_:)-1r3uj.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func > (Int8, Int8) -> Bool](int8/_(_:_:)-59kbk.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](int8/_=(_:_:)-2nsgl.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](int8/_(_:_:)-8gy25.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](int8/_=(_:_:)-5x114.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](int8/_=(_:_:)-6lpau.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func <= (Int8, Int8) -> Bool](int8/_=(_:_:)-7pwh6.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func >= (Int8, Int8) -> Bool](int8/_=(_:_:)-863du.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](int8/_=(_:_:)-qbgp.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

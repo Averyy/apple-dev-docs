@@ -31,8 +31,15 @@ For an example of how to use a body-tracked entity, see [`Capturing Body Motion 
 
 ## Topics
 
-### Configuring body tracking
-- [Configuring body tracking](bodytrackedentity#Configuring-body-tracking.md)
+### Loading a body-tracked entity
+- [static func loadBodyTracked(named: String, in: Bundle?) throws -> BodyTrackedEntity](entity/loadbodytracked(named:in:).md)
+  Synchronously loads a body-tracked entity from a bundle.
+- [static func loadBodyTracked(contentsOf: URL, withName: String?) throws -> BodyTrackedEntity](entity/loadbodytracked(contentsof:withname:).md)
+  Synchronously loads a body-tracked entity from a file URL.
+- [static func loadBodyTrackedAsync(named: String, in: Bundle?) -> LoadRequest<BodyTrackedEntity>](entity/loadbodytrackedasync(named:in:).md)
+  Asynchronously loads a body-tracked entity from a bundle.
+- [static func loadBodyTrackedAsync(contentsOf: URL, withName: String?) -> LoadRequest<BodyTrackedEntity>](entity/loadbodytrackedasync(contentsof:withname:).md)
+  Asynchronously loads a body-tracked entity from a file URL.
 
 ## Relationships
 

@@ -9,6 +9,7 @@ A component that specifies an entity is participating in the system’s scene-un
 - iOS 13.4+
 - iPadOS 13.4+
 - Mac Catalyst 14.0+
+- macOS 27.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -25,7 +26,7 @@ struct SceneUnderstandingComponent
 
 Scene understanding refers to RealityKit features like physics collision, shadows, and occlusion with real-world geometry. In iOS, `SceneUnderstandingComponent` is a read-only component. Manually adding it doesn’t have any effect.
 
-In visionOS, `SceneUnderstandingComponent` is a write-only component. Add `SceneUnderstandingComponent` to your custom entities to let it behave as a virtual scene-understanding mesh.
+In visionOS and macOS, `SceneUnderstandingComponent` is a write-only component. Add `SceneUnderstandingComponent` to your custom entities to let it behave as a virtual scene-understanding mesh.
 
 For more information about scene-understanding features, see [`Implementing scene understanding and reconstruction in your RealityKit app`](realitykit-scene-understanding.md).
 

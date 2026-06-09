@@ -17,16 +17,17 @@ interface EtaResponse
 ## Topics
 
 ### Estimated Arrival Time Responses
-- [request](etaresponse/request.md)
-  The request object associated with the estimated time of arrival response.
 - [origin](etaresponse/origin.md)
   The coordinates that represent the starting point for estimated arrival time requests.
 - [etas](etaresponse/etas.md)
   An array of estimated arrival times.
+### Deprecated
+- [request](etaresponse/request.md)
+  The request object associated with the estimated time of arrival response.
 
 ## See Also
 
-- [eta(request, callback)](directions/eta.md)
+- [eta(request)](directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
 - [interface EtaRequestOptions](etarequestoptions.md)
   The options you may provide for requesting estimated arrival times.

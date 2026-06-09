@@ -26,6 +26,12 @@ To cancel a group, call the `ThrowingTaskGroup.cancelAll()` method.
 
 If the task that’s currently running this group is canceled, the group is also implicitly canceled, which is also reflected in this property’s value.
 
+##### Interaction with Task Cancellation Shields
+
+Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
+
+> **Note**: `withTaskCancellationShield(operation:)`
+
 ## See Also
 
 - [func cancelAll()](throwingtaskgroup/cancelall.md)

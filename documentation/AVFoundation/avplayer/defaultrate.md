@@ -41,6 +41,10 @@ This value represents the default playback rate the player uses when you call it
   The current playback rate.
 - [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+  Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
+- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
+  Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 
 
 ---

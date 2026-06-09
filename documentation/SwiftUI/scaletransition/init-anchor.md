@@ -17,6 +17,7 @@ Creates a transition that scales the view by the specified amount.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ scale: Double, anchor: UnitPoint = .center)
 ```
 

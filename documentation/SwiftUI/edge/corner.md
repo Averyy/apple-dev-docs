@@ -26,7 +26,7 @@ enum Corner
 - [Edge.Corner.Set](edge/corner/set.md)
   An efficient set of corners.
 - [Edge.Corner.Style](edge/corner/style.md)
-  The per-corner style of a rectangular shape. A corner can be of fixed corner radius, or be concentric to the container shape. To create such a shape with configurable corner styles, call one of the initializers of [`ConcentricRectangle`](concentricrectangle.md) and pass in the style.
+  A style that describes the corner of a rectangular shape.
 ### Enumeration Cases
 - [Edge.Corner.bottomLeading](edge/corner/bottomleading.md)
 - [Edge.Corner.bottomTrailing](edge/corner/bottomtrailing.md)

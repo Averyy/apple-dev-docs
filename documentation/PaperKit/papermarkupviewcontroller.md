@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: class
 
-A view controller for interactively creating, and showing markup.
+A view controller for interactively creating and showing markup.
 
 **Availability**:
 - iOS 26.0+
@@ -43,59 +43,78 @@ Task { [weak self] in
 
 ## Topics
 
-### Protocols
-- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
-### Initializers
+### Creating a view controller
 - [init(markup: PaperMarkup?, supportedFeatureSet: FeatureSet)](papermarkupviewcontroller/init(markup:supportedfeatureset:).md)
-  Create a new `PaperMarkupViewController` with the provided data model.
-### Instance Properties
-- [var acceptsFirstResponder: Bool](papermarkupviewcontroller/acceptsfirstresponder.md)
-- [var canBecomeFirstResponder: Bool](papermarkupviewcontroller/canbecomefirstresponder.md)
+  Creates a new markup view controller with the provided data model.
+### Displaying markup
+- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
+  The paper data that this view controller displays.
 - [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
-  The content that markup happens on top of.
+  The content that markup appears on top of.
 - [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
-  The content that markup happens on top of.
-- [var contentVisibleFrame: CGRect](papermarkupviewcontroller/contentvisibleframe.md)
-  The visible area of content in the scroll view.
-- [var delegate: (any PaperMarkupViewController.Delegate)?](papermarkupviewcontroller/delegate-swift.property.md)
-  The delegate for responding to user actions.
-- [var directTouchAutomaticallyDraws: Bool](papermarkupviewcontroller/directtouchautomaticallydraws.md)
-  A Boolean value that indicates that direct touches should automatically draw based on system state.
-- [var directTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/directtouchmode.md)
-  The interaction mode for direct touches on the canvas.
-- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
-  The tool used to draw on the canvas.
-- [var indirectPointerTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/indirectpointertouchmode.md)
-  The interaction mode for indirect pointer touches on the canvas.
+  The content that markup appears on top of.
+- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
+  The supported PaperKit features on this canvas.
+### Editing markup
 - [var isEditable: Bool](papermarkupviewcontroller/iseditable.md)
-  A Boolean value that indicates whether the contents of the canvas is editable.
+  A Boolean value that indicates whether a person can edit the canvas contents.
+- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
+  The tool for drawing on the canvas.
 - [var isRulerActive: Bool](papermarkupviewcontroller/isruleractive.md)
   A Boolean value that indicates whether a ruler view is visible on the canvas.
-- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
-  The paper data shown in this view controller.
-- [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
-  The selected contents in the UI.
-- [var showsHorizontalScrollIndicator: Bool](papermarkupviewcontroller/showshorizontalscrollindicator.md)
-  A Boolean value that controls whether the horizontal scroll indicator is visible.
-- [var showsVerticalScrollIndicator: Bool](papermarkupviewcontroller/showsverticalscrollindicator.md)
-  A Boolean value that controls whether the vertical scroll indicator is visible.
-- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
-  The supported PaperKIt features on this canvas.
-- [var undoManager: UndoManager?](papermarkupviewcontroller/undomanager.md)
-- [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
-  A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
-### Instance Methods
-- [func loadView()](papermarkupviewcontroller/loadview.md)
-- [func setContentVisibleFrame(CGRect, animated: Bool)](papermarkupviewcontroller/setcontentvisibleframe(_:animated:).md)
-  Zooms to a specific area of the content so that it’s visible in the scroll view.
-- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
-  The frame that should be used for inserting shapes and other content.
-- [func viewDidAppear()](papermarkupviewcontroller/viewdidappear.md)
-- [func viewDidLayout()](papermarkupviewcontroller/viewdidlayout.md)
-- [func viewDidLoad()](papermarkupviewcontroller/viewdidload.md)
-### Enumerations
+### Controlling touch input
+- [var directTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/directtouchmode.md)
+  The interaction mode for direct touches on the canvas.
+- [var directTouchAutomaticallyDraws: Bool](papermarkupviewcontroller/directtouchautomaticallydraws.md)
+  A Boolean value that indicates whether direct touches automatically draw based on system state.
+- [var indirectPointerTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/indirectpointertouchmode.md)
+  The interaction mode for indirect pointer touches on the canvas.
 - [PaperMarkupViewController.TouchMode](papermarkupviewcontroller/touchmode.md)
   The canvas behavior for touches.
+### Selecting elements
+- [var selection: Set<MarkupOrderedSet.ElementID>](papermarkupviewcontroller/selection.md)
+  The current selected elements on the canvas.
+- [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
+  The selected contents in the UI.
+- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
+  Returns the suggested frame for inserting shapes and other content.
+### Managing adornments
+- [var adornments: [MarkupAdornment]](papermarkupviewcontroller/adornments.md)
+  An array of visual adornments that appear on the markup canvas.
+- [func adornmentFrame(for: UUID) -> CGRect?](papermarkupviewcontroller/adornmentframe(for:).md)
+  Returns the current frame of the specified adornment.
+- [func frame(forAdornmentWithID: UUID) -> CGRect?](papermarkupviewcontroller/frame(foradornmentwithid:).md)
+  Returns the current frame of the specified adornment.
+### Scrolling and zooming
+- [var scrollConfiguration: PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.property.md)
+  The configuration object that provides access to scroll view functionality.
+- [PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.class.md)
+  A cross-platform type that provides access to scroll view functionality.
+- [var contentVisibleFrame: CGRect](papermarkupviewcontroller/contentvisibleframe.md)
+  The visible area of content in the scroll view.
+- [func setContentVisibleFrame(CGRect, animated: Bool)](papermarkupviewcontroller/setcontentvisibleframe(_:animated:).md)
+  Zooms to a specific area of the content so that it’s visible in the scroll view.
+- [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
+  A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
+### Responding to changes
+- [var delegate: (any PaperMarkupViewController.Delegate)?](papermarkupviewcontroller/delegate-swift.property.md)
+  The delegate for responding to a person’s actions.
+- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
+  The interface for responding to interactions in a markup view controller.
+- [var undoManager: UndoManager?](papermarkupviewcontroller/undomanager.md)
+### Managing first responder status
+- [var acceptsFirstResponder: Bool](papermarkupviewcontroller/acceptsfirstresponder.md)
+- [var canBecomeFirstResponder: Bool](papermarkupviewcontroller/canbecomefirstresponder.md)
+### Managing view lifecycle
+- [func loadView()](papermarkupviewcontroller/loadview.md)
+- [func viewDidLoad()](papermarkupviewcontroller/viewdidload.md)
+- [func viewDidAppear()](papermarkupviewcontroller/viewdidappear.md)
+- [func viewDidLayout()](papermarkupviewcontroller/viewdidlayout.md)
+### Deprecated
+- [var showsVerticalScrollIndicator: Bool](papermarkupviewcontroller/showsverticalscrollindicator.md)
+  A Boolean value that controls whether the vertical scroll indicator is visible.
+- [var showsHorizontalScrollIndicator: Bool](papermarkupviewcontroller/showshorizontalscrollindicator.md)
+  A Boolean value that controls whether the horizontal scroll indicator is visible.
 
 ## Relationships
 

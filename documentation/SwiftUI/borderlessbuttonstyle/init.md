@@ -17,6 +17,7 @@ Creates a borderless button style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

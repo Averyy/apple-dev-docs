@@ -16,6 +16,7 @@ object InAppPurchasePriceInlineCreate.Relationships.InAppPurchaseV2
 
 ### Objects
 - [object InAppPurchasePriceInlineCreate.Relationships.InAppPurchaseV2.Data](inapppurchasepriceinlinecreate/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an in-app purchase price inline create.
 
 ## Properties
 

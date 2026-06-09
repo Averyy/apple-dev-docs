@@ -32,7 +32,8 @@ Override this method to respond to the values in `mask` or do other custom initi
 
 - [var colorPanel: NSColorPanel](nscolorpicker/colorpanel.md)
   The color panel instance that owns the color picker.
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [init?(pickerMask: Int, colorPanel: NSColorPanel)](nscolorpickingdefault/init(pickermask:colorpanel:).md)
+  Initializes the receiver with a given color panel and its mode.
 
 
 ---

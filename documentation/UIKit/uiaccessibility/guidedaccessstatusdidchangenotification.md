@@ -23,7 +23,7 @@ static let guidedAccessStatusDidChangeNotification: NSNotification.Name
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 
-Use the [`isGuidedAccessEnabled`](uiaccessibility/isguidedaccessenabled.md) function to determine whether a Guided Access session is currently active.
+Use the [`isGuidedAccessEnabled`](uiaccessibility/isguidedaccessenabled.md) property to determine whether the Guided Access setting is enabled.
 
 ## See Also
 

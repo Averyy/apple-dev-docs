@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](anyhashable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](anyhashable/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (AnyHashable, AnyHashable) -> Bool](anyhashable/==(_:_:).md)
   Returns a Boolean value indicating whether two type-erased hashable instances wrap the same value.

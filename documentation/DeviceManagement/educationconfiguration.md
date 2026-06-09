@@ -10,8 +10,6 @@ The payload that configures the users, groups, and departments within an educati
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,18 +21,18 @@ object EducationConfiguration
 
 Specify `com.apple.education` as the payload type.
 
-In iOS, send this payload over the device channel. Additionally, the system requires supervision unless the payload only specifies as teacher configuration.
+In iOS, send this payload over the device channel. Additionally, the system requires supervision unless the payload only specifies a teacher configuration.
 
 In macOS, send this payload over the user channel. The system supports student payloads in macOS 10.14.4 and later.
 
-Additionally, configure:
+Additionally, ensure:
 
-- All identities as both SSL clients and servers
-- All certificates with a key size of at least 2048 bits
-- All certificates to use a hashing algorithm of SHA256 or stronger
-- Leader certificates to have the common name prefix leader, which is case-insensitive
-- Member certificates to have the common name prefix member, which is case-insensitive
-- TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period greater than 398 days; see [`About Upcoming Limits on Trusted Certificates`](https://developer.apple.comhttps://support.apple.com/en-us/HT211025) for more information.
+- You configure all identities as both TLS clients and servers
+- You configure all certificates with a key size of at least 2048 bits
+- You configure all certificates to use a hashing algorithm of SHA256 or stronger
+- You configure leader certificates to have the common name prefix “leader”, which is case-insensitive
+- You configure  member certificates to have the common name prefix “member”, which is case-insensitive
+- You configure TLS server certificates issued on or after September 1, 2020 00:00 GMT/UTC to have a validity period greater than 398 days; see [`About Upcoming Limits on Trusted Certificates`](https://developer.apple.comhttps://support.apple.com/en-us/HT211025) for more information.
 
 ##### Profile Availability
 
@@ -43,10 +41,10 @@ Additionally, configure:
 | Device channel | iOS, Shared iPad |
 | User channel | macOS |
 | Allow manual install | iOS, macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -229,9 +227,9 @@ Additionally, configure:
                 </dict>
             </array>
             <key>PayloadDescription</key>
-            <string>Configures the EDU mode loginwindow.</string>
+            <string>Configures the Shared iPad loginwindow.</string>
             <key>PayloadDisplayName</key>
-            <string>EDU mode</string>
+            <string>Shared iPad</string>
             <key>PayloadIdentifier</key>
             <string>com.example.myedconfigpayload</string>
             <key>PayloadType</key>
@@ -279,7 +277,7 @@ Additionally, configure:
 - `OrganizationUUID` (string) *(required)*: The organization’s UUID identifier. This identifier can be any valid UUID. All teacher and student devices that need to communicate with one another must have the same organization UUID, particularly if they originated from different Device Enrollment Programs.
 - `PayloadCertificateUUID` (string): The UUID of an identity certificate payload within the same profile to use for performing client authentication with other devices. This property supports PKCS12 certificates. Required to configure Classroom. Has no effect on the configuration of the Shared iPad login screen.
 - `ResourcePayloadCertificateUUID` (string): The UUID of an identity certificate payload within the same profile that the system uses to perform client authentication when fetching additional resources, such as student images. If set, the system uses this key to configure both Classroom and the Shared iPad login screen. If not set, the system uses MDM client identity.
-- `ScreenObservationPermissionModificationAllowed` (boolean): If `true`, the system allows students enrolled in managed classes to modify their teacher’s permissions for screen observation on their device.
+- `ScreenObservationPermissionModificationAllowed` (boolean): If `true`, the system allows students enrolled in managed classes to modify their teacher’s permissions for screen observation on their device. Available: iOS 10.3+ | iPadOS 10.3+ | macOS 10.14+
 - `UserIdentifier` (string) *(required)*: The unique string that identifies the user of this device within the organization. Don’t set this value in payloads intended to configure the Shared iPad login screen.
 - `Users` ([EducationConfiguration.UsersItem]) *(required)*: For Shared iPad profiles: The array of dictionaries that define the users that the system displays in the iOS Login Window. *For leader/teacher profiles:* The array of dictionaries that define users that are members of the teacher’s groups. *For member/student profiles:* The array of dictionaries that needs to contain the definition of the user specified in the `UserIdentifier` key. With one-to-one member devices, this key should include only the device user and the teacher but not other class members.
 

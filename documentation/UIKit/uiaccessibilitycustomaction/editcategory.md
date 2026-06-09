@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+A constant that an app specifies through the category property on a UIKit accessibility custom action.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -16,6 +18,10 @@
 nonisolated
 class let editCategory: String
 ```
+
+#### Discussion
+
+This value provides information to VoiceOver that helps organize the action into the edit rotor
 
 
 ---

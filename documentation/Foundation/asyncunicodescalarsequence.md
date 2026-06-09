@@ -20,6 +20,12 @@ An asychronous sequence of Unicode scalar values.
 struct AsyncUnicodeScalarSequence<Base> where Base : AsyncSequence, Base.Element == UInt8
 ```
 
+## Topics
+
+### Supporting types
+- [AsyncUnicodeScalarSequence.Element](asyncunicodescalarsequence/element.md)
+  The type of elements produced by this asynchronous sequence.
+
 ## Relationships
 
 ### Conforms To
@@ -35,6 +41,7 @@ struct AsyncUnicodeScalarSequence<Base> where Base : AsyncSequence, Base.Element
   An asynchronous sequence of lines of text.
 - [struct Expression](expression.md)
 - [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+  A type that represents a key in the formatting context dictionary.
 - [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
 - [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)

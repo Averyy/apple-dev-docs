@@ -28,7 +28,7 @@ This method has no effect for entities without a mesh. Nevertheless, the method 
 
 ## Parameters
 
-- `recursive`: A Boolean that you set to `true` to also generate the collision shapes for all descendants of the entity.
+- `recursive`: A Boolean that you set to `true` to also generate the collision shapes for all descendants of the entity. If a descendant is in a `LevelOfDetailComponent`’s level and is not the base level it will be skipped.
 - `isStatic`: A Boolean value that indicates whether the colliders move. Set this to `true` to indicate the colliders don’t move. Non-moving, static colliders are more efficient to use than non-static ones.
 
 ## See Also

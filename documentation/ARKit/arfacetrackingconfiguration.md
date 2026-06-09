@@ -46,6 +46,9 @@ When you enable the [`isLightEstimationEnabled`](arconfiguration/islightestimati
   The number of faces to track during the session.
 - [class var supportedNumberOfTrackedFaces: Int](arfacetrackingconfiguration/supportednumberoftrackedfaces.md)
   The maximum number of faces that the framework can track.
+### Instance Properties
+- [var isEnvironmentTexturingEnabled: Bool](arfacetrackingconfiguration/isenvironmenttexturingenabled.md)
+  Enable or disable environment texturing.
 
 ## Relationships
 

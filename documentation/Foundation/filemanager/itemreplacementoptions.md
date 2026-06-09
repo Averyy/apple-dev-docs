@@ -48,7 +48,7 @@ These options are used by [`replaceItem(at:withItemAt:backupItemName:options:res
 
 ## See Also
 
-- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-4210g.md)
+- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 - [func replaceItem(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.

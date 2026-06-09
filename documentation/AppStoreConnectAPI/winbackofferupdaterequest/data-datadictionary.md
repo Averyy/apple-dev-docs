@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a win-back offer update resource.
+The updateable attributes of a win-back offer, including its duration, start date, and eligibility conditions.
 
 **Availability**:
 - App Store Connect API 3.6+

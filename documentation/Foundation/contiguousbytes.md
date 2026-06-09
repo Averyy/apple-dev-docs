@@ -17,7 +17,7 @@ A protocol that declares the type offers direct access to the underlying raw byt
 ## Declaration
 
 ```swift
-protocol ContiguousBytes
+protocol ContiguousBytes : ~Copyable, ~Escapable
 ```
 
 ## Topics
@@ -25,6 +25,9 @@ protocol ContiguousBytes
 ### Accessing Underlying Storage
 - [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](contiguousbytes/withunsafebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the type’s contiguous storage.
+### Instance Methods
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](contiguousbytes/withbytes(_:).md)
+  Calls the given closure with the contents of underlying storage.
 
 ## Relationships
 

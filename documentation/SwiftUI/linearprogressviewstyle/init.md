@@ -17,6 +17,7 @@ Creates a linear progress view style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

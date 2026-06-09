@@ -149,6 +149,8 @@ To redownload an asset pack, call the [`ensureLocalAvailability(of:)`](assetpack
   Create managed asset packs, choose download options, and upload Apple-hosted asset packs  to App Store Connect.
 - [Testing asset packs locally](testing-asset-packs-locally.md)
   Test your system-managed asset packs using a mock server on your Mac.
+- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+  Improve peoples’ experience of your app by downloading only immediately needed language assets.
 
 
 ---

@@ -15,7 +15,8 @@ Creates a disclosure group with the given label and content views, and a binding
 ## Declaration
 
 ```swift
-init(isExpanded: Binding<Bool>, @ViewBuilder content: @escaping () -> Content, @ViewBuilder label: () -> Label)
+nonisolated
+init(isExpanded: Binding<Bool>, @ContentBuilder content: @escaping () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

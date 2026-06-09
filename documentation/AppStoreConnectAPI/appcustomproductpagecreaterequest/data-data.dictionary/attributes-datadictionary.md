@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an app customer product page create request resource.
+Attributes that describe an app custom product page create request resource.
 
 **Availability**:
 - App Store Connect API 1.7+
@@ -21,6 +21,7 @@ object AppCustomProductPageCreateRequest.Data.Attributes
 ## See Also
 
 - [object AppCustomProductPageCreateRequest.Data.Relationships](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

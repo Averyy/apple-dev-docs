@@ -1,4 +1,4 @@
-# Assign Builds to an App Encryption Declaration
+# Assign builds to an app encryption declaration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,11 +14,11 @@ Assign one or more builds to an app encryption declaration.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Encryption Declarations resource ID from the [`List App Encryption Declarations`](get-v1-appencryptiondeclarations.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app encryption declaration resource ID from the [`List app encryption declarations`](get-v1-appencryptiondeclarations.md) response.
 
 ## See Also
 
-- [Create an App Encryption Declarations](post-v1-appencryptiondeclarations.md)
+- [Create an app encryption declaration](post-v1-appencryptiondeclarations.md)
   Add an app encryption delcaration for a specific app.
 
 

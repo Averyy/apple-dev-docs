@@ -15,6 +15,7 @@ Creates a sortable column that displays a string property and has a text label.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
 ```
 

@@ -38,6 +38,11 @@ const height = mapRect.size.height; // 0.4
 - `width`: The distance, in map units, along the east-west axis of the map projection.
 - `height`: The distance, in map units, along the north-south axis of the map projection.
 
+## See Also
+
+- [interface MapRectData](maprectdata.md)
+  A plain object representation of a rectangular region, in map units, of a two-dimensional map projection.
+
 
 ---
 

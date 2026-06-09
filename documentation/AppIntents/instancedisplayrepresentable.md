@@ -27,6 +27,12 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
   The visual elements to display when presenting an instance of the type.
 ### Providing a localized description
 - [var localizedStringResource: LocalizedStringResource](instancedisplayrepresentable/localizedstringresource.md)
+  A resource that helps provide a description of this instance.
+### Instance Methods
+- [func displayRepresentation(with: DisplayRepresentation.Components) async -> DisplayRepresentation](instancedisplayrepresentable/displayrepresentation(with:).md)
+  Asynchronous method to retrieve the DisplayRepresentation with the requested components.
+### Default Implementations
+- [CustomLocalizedStringResourceConvertible Implementations](instancedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
 
 ## Relationships
 
@@ -39,8 +45,10 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
 - [DisplayRepresentable](displayrepresentable.md)
 - [FileEntity](fileentity.md)
 - [IndexedEntity](indexedentity.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
 - [SetFocusFilterIntent](setfocusfilterintent.md)
 - [StartWorkoutIntent](startworkoutintent.md)
+- [SyncableEntity](syncableentity.md)
 - [TransientAppEntity](transientappentity.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [UniqueAppEntity](uniqueappentity.md)
@@ -49,6 +57,7 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
 - [IntentFile](intentfile.md)
 - [IntentPaymentMethod](intentpaymentmethod.md)
 - [IntentPerson](intentperson.md)
+- [SystemShortcut](systemshortcut.md)
 
 ## See Also
 

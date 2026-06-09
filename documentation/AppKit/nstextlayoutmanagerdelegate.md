@@ -23,6 +23,10 @@ protocol NSTextLayoutManagerDelegate : NSObjectProtocol
   The method the framework calls to determine the soft line break point.
 - [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
   The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
+### Instance Methods
+- [func textLayoutManager(NSTextLayoutManager, cacheTextAttachmentViewProvider: NSTextAttachmentViewProvider, for: NSTextAttachment)](nstextlayoutmanagerdelegate/textlayoutmanager(_:cachetextattachmentviewprovider:for:).md)
+- [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](nstextlayoutmanagerdelegate/textlayoutmanager(_:retrievecachedtextattachmentviewproviderfor:).md)
+- [func textLayoutManager(NSTextLayoutManager, textViewportLayoutControllerFor: NSTextContainer) -> NSTextViewportLayoutController?](nstextlayoutmanagerdelegate/textlayoutmanager(_:textviewportlayoutcontrollerfor:).md)
 
 ## Relationships
 

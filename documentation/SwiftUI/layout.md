@@ -51,7 +51,7 @@ struct BasicVStack: Layout {
 }
 ```
 
-Use your layout the same way you use a built-in layout container, by providing a [`ViewBuilder`](viewbuilder.md) with the list of subviews to arrange:
+Use your layout the same way you use a built-in layout container, by providing a [`ContentBuilder`](contentbuilder.md) with the list of subviews to arrange:
 
 ```swift
 BasicVStack {

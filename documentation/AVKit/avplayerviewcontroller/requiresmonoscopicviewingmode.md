@@ -34,6 +34,8 @@ The default value is `false`.
   The experience controller for this view controller.
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
+- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [class AVViewport](avviewport.md)
 
 
 ---

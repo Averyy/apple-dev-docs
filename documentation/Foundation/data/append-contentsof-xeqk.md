@@ -1,0 +1,26 @@
+# append(contentsOf:)
+
+**Framework**: Foundation  
+**Kind**: method
+
+Appends the bytes in the specified sequence to the end of the data.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+mutating func append(contentsOf elements: some ContiguousBytes & Sequence<UInt8>)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/data/append(contentsof:)-xeqk)*

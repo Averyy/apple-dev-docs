@@ -25,7 +25,7 @@ To be able to use HomeKit, you enable the HomeKit capability and include the [`N
 Perform the following steps before building and running the app:
 
 1. Set a valid signing team in the target’s General pane so that Xcode can create a provisioning profile containing the HomeKit entitlement when you build for the first time.
-2. Download and install the Home Accessory Simulator (HAS) on your Mac to be able to emulate HomeKit-enabled accessories. See [`Testing Your App with the HomeKit Accessory Simulator`](https://developer.apple.comhttps://developer.apple.com/documentation/homekit/testing_your_app_with_the_homekit_accessory_simulator).
+2. Download and install the HomeKit Accessory Simulator (HAS) on your Mac to be able to emulate HomeKit-enabled accessories. See [`Testing Your App with the HomeKit Accessory Simulator`](https://developer.apple.comhttps://developer.apple.com/documentation/homekit/testing_your_app_with_the_homekit_accessory_simulator).
 3. Import the `hasaccessory` file that the sample app bundles to define the specific garage door opener accessory that the app controls. Choose `File > Import Accessory` from the HAS menu. In the dialog that appears, navigate to the downloaded sample code project’s `Documentation` folder, and select the `garage.hasaccessory` file.
 
 The import creates a single accessory with a hidden accessory information service that all accessories have, and two user-interactive services: one that controls a garage door and another to control an attached light bulb. Most of the associated characteristics are standard for their service. Only one—the light bulb’s fade rate—is custom. You can use HAS to inspect and manipulate all of these items.

@@ -21,7 +21,7 @@ var pastPayloads: [MXMetricPayload] { get }
 ## See Also
 
 - [var pastDiagnosticPayloads: [MXDiagnosticPayload]](mxmetricmanager/pastdiagnosticpayloads.md)
-  Returns an array of the diagnostic reports generated since the last allocation of the shared manager instance.
+  The diagnostic reports since the last initialization of the shared manager instance.
 
 
 ---

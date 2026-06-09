@@ -23,6 +23,11 @@ object CertificateCreateRequest.Data.Relationships
 - `merchantId` (CertificateCreateRequest.Data.Relationships.MerchantId)
 - `passTypeId` (CertificateCreateRequest.Data.Relationships.PassTypeId)
 
+## See Also
+
+- [object CertificateCreateRequest.Data.Attributes](certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that you set that describe the new resource.
+
 
 ---
 

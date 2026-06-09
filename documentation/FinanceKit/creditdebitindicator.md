@@ -8,6 +8,7 @@ Values that the framework uses to describe transactions as credits or debits.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

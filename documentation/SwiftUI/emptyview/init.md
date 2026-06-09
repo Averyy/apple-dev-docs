@@ -17,6 +17,7 @@ Creates an empty view.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

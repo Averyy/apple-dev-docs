@@ -68,6 +68,7 @@ Implement the methods of the [`WKNavigationDelegate`](wknavigationdelegate.md) p
   Tells the delegate that a navigation action became a download.
 ### Instance Methods
 - [func webView(WKWebView, shouldGoTo: WKBackForwardListItem, willUseInstantBack: Bool, completionHandler: (Bool) -> Void)](wknavigationdelegate/webview(_:shouldgoto:willuseinstantback:completionhandler:).md)
+- [func webView(WKWebView, willSubmitForm: WKFormInfo, submissionHandler: () -> Void)](wknavigationdelegate/webview(_:willsubmitform:submissionhandler:).md)
 
 ## Relationships
 

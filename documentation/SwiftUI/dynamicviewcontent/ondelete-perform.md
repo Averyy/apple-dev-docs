@@ -35,7 +35,7 @@ A view that calls `action` when elements are deleted from the original view.
 
 ## See Also
 
-- [func onInsert(of: [UTType], perform: (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent](dynamicviewcontent/oninsert(of:perform:)-418bq.md)
+- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
   Sets the insert action for the dynamic view.
 - [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](dynamicviewcontent/onmove(perform:).md)
   Sets the move action for the dynamic view.

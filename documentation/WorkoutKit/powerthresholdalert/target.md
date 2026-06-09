@@ -20,8 +20,6 @@ var target: Measurement<UnitPower>
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](powerthresholdalert/metric.md)
-  The metric for the alert.
 - [var targetQuantity: HKQuantity](powerthresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target power threshold.
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The edge insets structure representation of the value.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

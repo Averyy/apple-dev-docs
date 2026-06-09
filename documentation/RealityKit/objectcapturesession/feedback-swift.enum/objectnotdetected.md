@@ -8,6 +8,7 @@ If the detection of the object fails and a default manual box is presented inste
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

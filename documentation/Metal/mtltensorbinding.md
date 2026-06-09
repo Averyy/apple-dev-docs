@@ -22,6 +22,8 @@ protocol MTLTensorBinding : MTLBinding
 ## Topics
 
 ### Instance Properties
+- [var auxiliaryPlanes: [MTLTensorAuxiliaryPlaneType]](mtltensorbinding/auxiliaryplanes.md)
+  An array of the tensor’s auxiliary planes.
 - [var dimensions: MTLTensorExtents?](mtltensorbinding/dimensions.md)
   The array of sizes, in elements, one for each dimension of this tensor.
 - [var indexType: MTLDataType](mtltensorbinding/indextype.md)

@@ -141,12 +141,16 @@ Before shipping your app, always test your app’s behavior in the production en
 - [static let CKAccountChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/CKAccountChanged.md)
   A notification that a container posts when the status of an iCloud account changes.
 ### Instance Methods
-- [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](ckcontainer/accept(_:).md)
+- [func accept(CKShare.Metadata) async throws -> CKShare](ckcontainer/accept(_:)-5vv8p.md)
+  Accepts the specified share metadata and returns the accepted share to an awaiting caller.
+- [func accept([CKShare.Metadata]) async throws -> [CKShare.Metadata : Result<CKShare, any Error>]](ckcontainer/accept(_:)-t0ny.md)
   Accepts the specified share metadatas and returns the accepted shares to an awaiting caller.
 - [func accept([CKShare.Metadata], completionHandler: (Result<[CKShare.Metadata : Result<CKShare, any Error>], any Error>) -> Void)](ckcontainer/accept(_:completionhandler:)-7s3t7.md)
   Accepts the specified share metadatas.
 - [func allLongLivedOperationIDs() async throws -> [CKOperation.ID]](ckcontainer/alllonglivedoperationids.md)
   Fetches the IDs of any long-lived operations that are running and returns them to an awaiting caller.
+- [func allUserIdentitiesFromContacts() async throws -> [CKUserIdentity]](ckcontainer/alluseridentitiesfromcontacts.md)
+  Fetches all user identities that match entries in the user’s Contacts.
 - [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) throws -> R) rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-40x6k.md)
   Applies a temporary configuration to the container within the scope of a closure.
 - [func configuredWith<R>(configuration: CKOperation.Configuration?, group: CKOperationGroup?, body: (CKContainer) async throws -> R) async rethrows -> R](ckcontainer/configuredwith(configuration:group:body:)-4kc2l.md)
@@ -169,8 +173,16 @@ Before shipping your app, always test your app’s behavior in the production en
   Fetches the long-lived operation for the specified operation ID and returns it to an awaiting caller.
 - [func requestShareAccess(for: [URL]) async throws -> [URL : Result<Void, any Error>]](ckcontainer/requestshareaccess(for:).md)
   Requests access to the specified share URLs, and returns the results to an awaiting caller.
+- [func shareMetadata(for: URL) async throws -> CKShare.Metadata](ckcontainer/sharemetadata(for:).md)
+  Fetches the share metadata for the specified share URL.
 - [func shareMetadatas(for: [URL]) async throws -> [URL : Result<CKShare.Metadata, any Error>]](ckcontainer/sharemetadatas(for:).md)
   Fetches share metadatas for the specified share URLs and returns them to an awaiting caller.
+- [func shareParticipant(forEmailAddress: String) async throws -> CKShare.Participant](ckcontainer/shareparticipant(foremailaddress:).md)
+  Fetches the share participant with the specified email address.
+- [func shareParticipant(forPhoneNumber: String) async throws -> CKShare.Participant](ckcontainer/shareparticipant(forphonenumber:).md)
+  Fetches the share participant with the specified phone number.
+- [func shareParticipant(forUserRecordID: CKRecord.ID) async throws -> CKShare.Participant](ckcontainer/shareparticipant(foruserrecordid:).md)
+  Fetches the share participant with the specified user record ID.
 - [func shareParticipants(for: [CKUserIdentity.LookupInfo]) async throws -> [CKUserIdentity.LookupInfo : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(for:).md)
   Fetches share participants with the specified lookup infos and returns them to an awaiting caller.
 - [func shareParticipants(forEmailAddresses: [String]) async throws -> [String : Result<CKShare.Participant, any Error>]](ckcontainer/shareparticipants(foremailaddresses:).md)
@@ -185,6 +197,12 @@ Before shipping your app, always test your app’s behavior in the production en
   Fetches the user identities for the specified phone numbers and returns them to an awaiting caller.
 - [func userIdentities(forUserRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : CKUserIdentity]](ckcontainer/useridentities(foruserrecordids:).md)
   Fetches the user identities for the specified user record IDs and returns them to an awaiting caller.
+- [func userIdentity(forEmailAddress: String) async throws -> CKUserIdentity?](ckcontainer/useridentity(foremailaddress:).md)
+  Fetches the user identity for the specified email address.
+- [func userIdentity(forPhoneNumber: String) async throws -> CKUserIdentity?](ckcontainer/useridentity(forphonenumber:).md)
+  Fetches the user identity for the specified phone number.
+- [func userIdentity(forUserRecordID: CKRecord.ID) async throws -> CKUserIdentity?](ckcontainer/useridentity(foruserrecordid:).md)
+  Fetches the user identity for the specified user record ID.
 
 ## Relationships
 

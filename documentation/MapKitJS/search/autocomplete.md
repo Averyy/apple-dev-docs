@@ -1,4 +1,4 @@
-# autocomplete(query, callback, options)
+# autocomplete(query, options)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -12,32 +12,25 @@ Retrieves a list of autocomplete results for the specified search query.
 
 ```swift
 autocomplete(
-        query: string,
-        callback: SearchDelegate<SearchAutocompleteResponse>,
-        options?: SearchAutocompleteOptions,
-    ): number;
+    query: string,
+    options?: SearchAutocompleteOptions,
+): Promise<SearchAutocompleteResponse>;
 ```
 
 #### Return Value
 
-This method returns an integer ID that you can pass to the [`cancel(id)`](service/cancel.md) method to cancel a pending request.
+A promise that resolves with a [`SearchAutocompleteResponse`](searchautocompleteresponse.md) on success, or rejects with an `Error` on failure.
 
 #### Discussion
 
-To provide the user with a menu of search suggestions, invoke the [`autocomplete(query, callback, options)`](search/autocomplete.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
+To provide the user with a menu of search suggestions, invoke the [`autocomplete(query, options)`](search/autocomplete.md) method as users type. This method minimizes typing and brings users the results they’re looking for.
 
-MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data`:
-
-- `error`. An error object that contains an error code and descriptive message.
-- `data`. A [`SearchAutocompleteResponse`](searchautocompleteresponse.md) object that the system parses from a server-returned JSON response.
-
-The system doesn’t call the callback function or delegate if you cancel the request before MapKit JS receives a response.
+Pass an `AbortSignal` from an `AbortController` to the [`signal`](searchoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 
 ## Parameters
 
 - `query`: A string that represents the user’s search in progress.
-- `callback`: A callback function or delegate object.
-- `options`: With the [`SearchAutocompleteOptions`](searchautocompleteoptions.md) hash, you have the option to constrain the search to a desired area using the [`coordinate`](searchconstructoroptions/coordinate.md) or [`region`](searchconstructoroptions/region.md) properties. A coordinate or region you supply here overrides the same property you supply to the [`Search`](search.md) constructor. You also have the option to override the [`language`](service/language.md) for the search constructor. For example, `{ "language: "fr-CA" }` tells the server to send results localized to Canadian French. For a complete list of options you can use to constrain your search, see [`SearchAutocompleteOptions`](searchautocompleteoptions.md).
+- `options`: Options for this specific query that supersede values set on the [`Search`](search.md) object. See [`SearchAutocompleteOptions`](searchautocompleteoptions.md).
 
 ## See Also
 

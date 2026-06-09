@@ -15,7 +15,8 @@ A value describing the addition of the given views to the end of the indicated g
 ## Declaration
 
 ```swift
-init(after group: CommandGroupPlacement, @ViewBuilder addition: () -> Content)
+nonisolated
+init(after group: CommandGroupPlacement, @ContentBuilder addition: () -> Content)
 ```
 
 ## See Also

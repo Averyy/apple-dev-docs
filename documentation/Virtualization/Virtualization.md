@@ -42,7 +42,7 @@ To set up a VM, configure a [`VZVirtualMachineConfiguration`](vzvirtualmachinec
   Configure and run macOS guests on Apple silicon.
 - [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs with Rosetta](running-intel-binaries-in-linux-vms-with-rosetta.md)
+- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 - [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.
@@ -79,6 +79,8 @@ To set up a VM, configure a [`VZVirtualMachineConfiguration`](vzvirtualmachinec
 - [Clipboard sharing](clipboard-sharing.md)
   Share the pasteboard between the host and guest system.
 - [USB Devices](usb-devices.md)
+- [Custom Virtio drivers](custom-drivers.md)
+  Create custom Virtio drivers for Linux virtual machines.
 ### Enumerations
 - [Virtualization enumerations](virtualization-enumerations.md)
   Control the caching modes, disk synchronization, and macOS auxiliary storage options of VMs.

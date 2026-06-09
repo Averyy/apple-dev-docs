@@ -24,11 +24,6 @@ FSKit calls this method as a signal that some process is trying to mount this vo
 - `options`: Options to apply to the mount. These can include security-scoped file paths. There are no defined options currently.
 - `reply`: A block or closure to indicate success or failure. If mounting fails, pass an error as the one parameter to the reply handler. If mounting succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply return normally.
 
-## See Also
-
-- [func unmount(replyHandler: () -> Void)](fsvolume/operations/unmount(replyhandler:).md)
-  Unmounts this volume.
-
 
 ---
 

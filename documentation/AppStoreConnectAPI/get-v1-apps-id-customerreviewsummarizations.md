@@ -27,9 +27,9 @@ Get the customer review summarization for a specific app.
 
 ## See Also
 
-- [List All Customer Reviews for an App](get-v1-apps-_id_-customerreviews.md)
+- [List all customer reviews for an app](get-v1-apps-_id_-customerreviews.md)
   Get a list of customer reviews for a specific app.
-- [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
+- [List customer review IDs for an app](get-v1-apps-_id_-relationships-customerreviews.md)
 
 
 ---

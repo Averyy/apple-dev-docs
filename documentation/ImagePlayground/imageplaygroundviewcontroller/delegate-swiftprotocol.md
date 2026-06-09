@@ -31,6 +31,9 @@ Adopt the [`ImagePlaygroundViewController.Delegate`](imageplaygroundviewcontroll
 ### Handling cancellation events
 - [func imagePlaygroundViewControllerDidCancel(ImagePlaygroundViewController)](imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontrollerdidcancel(_:).md)
   Notifies the delegate that the person canceled the generation of the image.
+### Instance Methods
+- [func imagePlaygroundViewController(ImagePlaygroundViewController, didCreate: NSAdaptiveImageGlyph)](imageplaygroundviewcontroller/delegate-swift.protocol/imageplaygroundviewcontroller(_:didcreate:).md)
+  Returns the generated genmoji to the delegate.
 
 ## Relationships
 

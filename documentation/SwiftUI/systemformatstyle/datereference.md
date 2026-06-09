@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-A system format style to refer to a date in the most natural way.
+A format style that refers to a date using the most natural phrasing based on how much time separates it from the current time.
 
 **Availability**:
 - iOS 18.0+
@@ -22,15 +22,55 @@ struct DateReference
 
 #### Overview
 
-The reference format is designed for referring to a certain date in the most natural way possible. The concrete format depends on the distance to the date. E.g. if an event is one minute away, most people would refer to it in a relative way, e.g. the event starts “in one minute”. However, if dates are really far away, it becomes easier to refer to them in an absolute way, e.g. the original iPhone was announced in “January 2007”.
+`DateReference` adapts its output based on how far the referenced date is from the input (which is typically the current time). Close dates use a relative representation, while distant dates switch to an absolute one.
 
-Use the style by initializing it with the date it should refer to and format it with the point of reference, usually the current time.
+```swift
+// Displays "in 5 minutes", "tomorrow", "June 2019", etc.
+Text(.currentDate, format: .reference(to: eventDate))
+```
+
+##### Relative Vs Absolute Representation
+
+The style uses a relative format (“in 2 hours”, “3 days ago”) when the referenced date is within the threshold distance. Beyond that threshold, it switches to an absolute format (“Monday, June 3”, “June 2019”).
+
+The `thresholdField` parameter controls where this switch happens. With the default value of `.day`, the style uses the relative format as long as the date falls within approximately one month of the reference date:
+
+| Distance | Style | Output |
+| --- | --- | --- |
+| < 1 min | Relative | `now` |
+| 5 min | Relative | `in 5 minutes` |
+| 3 hours | Relative | `in 3 hours` |
+| 1 day | Relative | `tomorrow` |
+| 3 days | Relative | `3 days ago` |
+| 27 days | Relative | `27 days ago` |
+| > 1 month | Absolute | `Monday, June 3` |
+| > 1 year | Absolute | `June 2019` |
+
+##### Controlling the Absolute Representation
+
+The `maxFieldCount` parameter determines how many date components appear in the absolute representation:
+
+```swift
+// maxFieldCount: 2 (default)
+// Output for a date in a different year: "June 2019"
+
+// maxFieldCount: 3
+.reference(to: date, maxFieldCount: 3)
+// Output: "June 3, 2019"
+```
+
+The style automatically removes higher-order fields that match the reference date. For a date within the same year, the year field is dropped, leaving room for day-level detail:
+
+```swift
+// Same year as reference date, maxFieldCount: 2
+// Output: "Monday, June 3" (instead of "June 2019")
+```
 
 ## Topics
 
 ### Initializers
 - [init(to: Date, allowedFields: Set<Date.RelativeFormatStyle.Field>, maxFieldCount: Int, thresholdField: Date.RelativeFormatStyle.Field)](systemformatstyle/datereference/init(to:allowedfields:maxfieldcount:thresholdfield:).md)
-  Create a format style to refer to a date in the most natural way.
+  Creates a format style that refers to a comparison date using natural language.
 ### Instance Methods
 - [func calendar(Calendar) -> SystemFormatStyle.DateReference](systemformatstyle/datereference/calendar(_:).md)
 

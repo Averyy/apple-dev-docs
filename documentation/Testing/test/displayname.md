@@ -19,7 +19,7 @@ The customized display name of this instance, if specified.
 ## Declaration
 
 ```swift
-var displayName: String?
+var displayName: String? { get set }
 ```
 
 

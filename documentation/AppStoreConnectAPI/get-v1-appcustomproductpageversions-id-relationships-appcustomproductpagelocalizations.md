@@ -1,10 +1,12 @@
-# GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations
+# List localization IDs for a custom product page version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get a list of localization IDs for a specific custom product page version.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -12,7 +14,7 @@
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app custom product page localization resource identifiers to return.
 
 ## See Also
 

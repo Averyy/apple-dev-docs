@@ -66,7 +66,7 @@
 ### Subscripts
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](string/subscript(_:)-392on.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
 - [subscript<R>(R) -> Self.SubSequence](string/subscript(_:)-4h7s3.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 ### Type Aliases

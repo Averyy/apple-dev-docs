@@ -11,29 +11,30 @@ The `bundleIds` resource represents the app’s unique identifier that you can r
 ## Topics
 
 ### Registering Bundle IDs
-- [Register a New Bundle ID](post-v1-bundleids.md)
+- [Register a new bundle id](post-v1-bundleids.md)
   Register a new bundle ID for app development.
 ### Modifying and Removing Bundle IDs
-- [Modify a Bundle ID](patch-v1-bundleids-_id_.md)
+- [Modify a bundle id](patch-v1-bundleids-_id_.md)
   Update a specific bundle ID’s name.
-- [Delete a Bundle ID](delete-v1-bundleids-_id_.md)
+- [Delete a bundle id](delete-v1-bundleids-_id_.md)
 ### Getting Bundle ID Information
-- [List Bundle IDs](get-v1-bundleids.md)
+- [List bundle ids](get-v1-bundleids.md)
   Find and list bundle IDs that are registered to your team.
-- [Read Bundle ID Information](get-v1-bundleids-_id_.md)
+- [Read bundle id information](get-v1-bundleids-_id_.md)
   Get information about a specific bundle ID.
 ### Getting Related Data
-- [Read the App Information of a Bundle ID](get-v1-bundleids-_id_-app.md)
-- [List All Profiles for a Bundle ID](get-v1-bundleids-_id_-profiles.md)
+- [Read the app information of a bundle id](get-v1-bundleids-_id_-app.md)
+- [List all profiles for a bundle id](get-v1-bundleids-_id_-profiles.md)
   Get a list of all profiles for a specific bundle ID.
-- [List All Capabilities for a Bundle ID](get-v1-bundleids-_id_-bundleidcapabilities.md)
+- [List all capabilities for a bundle id](get-v1-bundleids-_id_-bundleidcapabilities.md)
   Get a list of all capabilities for a specific bundle ID.
-- [GET /v1/bundleIds/{id}/relationships/app](get-v1-bundleids-_id_-relationships-app.md)
-- [GET /v1/bundleIds/{id}/relationships/bundleIdCapabilities](get-v1-bundleids-_id_-relationships-bundleidcapabilities.md)
-- [GET /v1/bundleIds/{id}/relationships/profiles](get-v1-bundleids-_id_-relationships-profiles.md)
-### Objects and Types
+- [Get the app ID for a bundle ID](get-v1-bundleids-_id_-relationships-app.md)
+- [Read bundle Id capabilities ids for a bundle Id](get-v1-bundleids-_id_-relationships-bundleidcapabilities.md)
+  List all bundleIdCapabilities IDs for a specific bundle Id.
+- [List profile IDs for a bundle ID](get-v1-bundleids-_id_-relationships-profiles.md)
+### Objects and types
 - [object BundleId](bundleid.md)
-  The data structure that represents a Bundle IDs resource.
+  An App ID registered with Apple, associating a specific bundle identifier with capabilities and provisioning profiles.
 - [type BundleIdPlatform](bundleidplatform.md)
   Strings that represent the operating system intended for the bundle.
 - [object BundleIdCreateRequest](bundleidcreaterequest.md)
@@ -41,10 +42,11 @@ The `bundleIds` resource represents the app’s unique identifier that you can r
 - [object BundleIdUpdateRequest](bundleidupdaterequest.md)
   The request body you use to update a Bundle ID.
 - [object BundleIdResponse](bundleidresponse.md)
-  A response that contains a single Bundle IDs resource.
+  The response body for endpoints that create, read, or modify a single bundle ID.
 - [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
+  A response containing a single bundle ID, without including capability and profile details.
 - [object BundleIdsResponse](bundleidsresponse.md)
-  A response that contains a list of Bundle ID resources.
+  The response body for endpoints that list bundle IDs.
 - [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
 - [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
 - [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)

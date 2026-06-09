@@ -1,4 +1,4 @@
-# Get All Version IDs for an App Custom Product Page
+# Get all version ids for an app custom product page
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

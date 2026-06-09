@@ -36,6 +36,8 @@ func chartXAxisLabel(_ labelKey: LocalizedStringKey, position: AnnotationPositio
   Adds y axis label for charts in the view.
 - [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartyaxislabel(position:alignment:spacing:content:).md)
   Adds y axis label for charts in the view.
+- [func chartZAxisLabel(_:position:alignment:spacing:)](view/chartzaxislabel(_:position:alignment:spacing:).md)
+  Adds z axis label for charts in the view. It effects 3D charts only.
 
 
 ---

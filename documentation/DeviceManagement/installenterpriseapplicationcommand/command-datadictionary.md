@@ -7,8 +7,6 @@ The command to install an enterprise app on a device.
 
 **Availability**:
 - macOS 10.13.6+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,11 +24,11 @@ object InstallEnterpriseApplicationCommand.Command
 
 ## Properties
 
-- `ChangeManagementState` (string): The change management state. This value doesn’t work with the user enrollments. The only possible value is: - **`Managed`**: Take management of the app if the user installed it already and `InstallAsManaged` is `true`. Available in macOS 11 and later.
-- `Configuration` (InstallEnterpriseApplicationCommand.Command.Configuration): A dictionary that contains the initial configuration of the app, if you choose to provide it. Available in macOS 11 and later.
-- `InstallAsManaged` (boolean): If `true`, install the app as a managed app. Otherwise, the system installs the app as unmanaged. If you reinstall a manged app and omit this value or set it to `false`, the app becomes unmanaged. For manifest-based installs, if `true`, the system only considers apps installed in `/Applications` as managed. In macOS 11 through 13, the system requires that the `pkg` only contains a single signed app. Available in macOS 11 and later.
-- `iOSApp` (boolean): If `true`, the app is an iOS app that can run on a Mac with Apple silicon in macOS 11 and later.
-- `ManagementFlags` (integer): The management flags. The possible values are: - **`1`**: If `InstallAsManaged` is `true`, remove the app upon removal of the MDM profile. Available in macOS 11 and later.
+- `ChangeManagementState` (string): The change management state. This value doesn’t work with the user enrollments. The only possible value is: - `Managed`: Take management of the app if the user installed it already and `InstallAsManaged` is `true`. Available: macOS 11+
+- `Configuration` (InstallEnterpriseApplicationCommand.Command.Configuration): A dictionary that contains the initial configuration of the app, if you choose to provide it. Available: macOS 11+
+- `InstallAsManaged` (boolean): If `true`, install the app as a managed app. Otherwise, the system installs the app as unmanaged. If you reinstall a manged app and omit this value or set it to `false`, the app becomes unmanaged. For manifest-based installs, if `true`, the system only considers apps installed in `/Applications` as managed. In macOS 11 through 13, the system requires that the `pkg` only contains a single signed app. Available: macOS 11+
+- `iOSApp` (boolean): If `true`, the app is an iOS app that can run on a Mac with Apple silicon in macOS 11 and later. Available: macOS 11+
+- `ManagementFlags` (integer): The management flags. The possible values are: - `1`: If `InstallAsManaged` is `true`, remove the app upon removal of the MDM profile. Available: macOS 11+
 - `Manifest` (InstallEnterpriseApplicationCommand.Command.Manifest): A dictionary that specifies where to download the app. This value uses the [`ManifestURL`](manifesturl.md) format.
 - `ManifestURL` (string): The URL of the app manifest, which needs to begin with `https:`. The manifest is returned as a property list that uses the [`ManifestURL`](manifesturl.md) format.
 - `ManifestURLPinningCerts` ([data]): An array of DER-encoded certificates to pin the connection when fetching the `ManifestURL`.

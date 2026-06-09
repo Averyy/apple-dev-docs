@@ -36,7 +36,7 @@ The method centers the box at the entity’s origin and aligns the box’s faces
 - [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-2ovma.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and a radius for the corners.
 - [static func generateBox(width: Float, height: Float, depth: Float, cornerRadius: Float, splitFaces: Bool) -> MeshResource](meshresource/generatebox(width:height:depth:cornerradius:splitfaces:).md)
-  Creates a box mesh from a width, height, depth, a radius for the corners, and a Boolean option that splits faces.
+  Creates a box mesh from a width, height, depth and a corner radius, with the ability to assign different materials to each face.
 - [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and radii for the corners.
 

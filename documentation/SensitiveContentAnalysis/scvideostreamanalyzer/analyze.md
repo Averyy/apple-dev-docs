@@ -1,6 +1,6 @@
 # analyze(_:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Analyzes individual video-stream frames for sensitive content.

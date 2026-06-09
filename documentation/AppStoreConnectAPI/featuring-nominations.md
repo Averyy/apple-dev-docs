@@ -6,7 +6,7 @@ Tell Apple about a noteworthy app or update to an existing one for consideration
 
 #### Overview
 
-When you launch a noteworthy app or make an important update to an existing one, you can nominate it to be featured by telling Apple about your plans in App Store Connect. To learn more, see [`Getting featured on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/getting-featured) and [`Nominate your app for featuring`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring).
+When you launch a noteworthy app or make an important update to an existing one, you can nominate it for featuring by telling Apple about your plans in App Store Connect. To learn more, see [`Getting featured on the App Store`](https://developer.apple.comhttps://developer.apple.com/app-store/getting-featured) and [`Nominate your app for featuring`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring).
 
 ## Topics
 
@@ -23,15 +23,15 @@ When you launch a noteworthy app or make an important update to an existing one,
   Remove a specific featuring nomination.
 ### Objects
 - [object Nomination](nomination.md)
-  The data structure that represents a nomination resource.
+  A developer recommendation submitted to Apple proposing an app or in-app event for App Store editorial featuring.
 - [object NominationUpdateRequest](nominationupdaterequest.md)
   The request body you use to update a featuring nomination.
 - [object NominationCreateRequest](nominationcreaterequest.md)
   The request body you use to create a featuring nomination.
 - [object NominationResponse](nominationresponse.md)
-  A response that contains a single featuring nomination resource.
+  A response containing a single App Store nomination submission.
 - [object NominationsResponse](nominationsresponse.md)
-  A response that contains a list of featuring nominations.
+  A response containing a list of app nominations submitted for App Store editorial featuring consideration.
 
 
 ---

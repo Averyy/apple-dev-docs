@@ -28,7 +28,8 @@ This is one of four designated initializers you must implement when subclassing.
 
 ## See Also
 
-- [Control and Cell Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/ControlCell.html#//apple_ref/doc/uid/10000015i)
+- [class NSCell](nscell.md)
+  A mechanism for displaying text or images in a view object without the overhead of a full [`NSView`](nsview.md) subclass.
 - [init(textCell: String)](nscell/init(textcell:).md)
   Returns an NSCell object initialized with the specified string and set to have the cell’s default menu.
 

@@ -89,8 +89,9 @@ Using [PencilKit](../PencilKit.md), you can let people take notes, annotate docu
 [PaperKit](../PaperKit.md)
 
 #### Videos
+- [Read between the strokes with PencilKit](https://developer.apple.com/videos/play/wwdc2026/203) - Unlock handwriting recognition in your apps using the same powerful technology behind Apple apps like Freeform and Notes. Discover how to use handwriting recognition across a wide range of alphabets and languages, and explore new capabilities for integrating PencilKit into a wider variety of apps.
+- [Unwrap PaperKit](https://developer.apple.com/videos/play/wwdc2026/372) - Craft a canvas-based application with PaperKit. Explore the new data model APIs that let you access, create, and modify markup elements. Learn how to add custom controls and annotations, and discover best practices for integrating these features into your app to build a fully featured creative canvas.
 - [Meet PaperKit](https://developer.apple.com/videos/play/wwdc2025/285) - Discover how to bring PaperKit to your iOS, iPadOS, macOS, and visionOS apps. We’ll cover how to seamlessly integrate PencilKit drawing with markup features like shapes and images, and how to customize the user interface. Learn best practices for forward compatibility, and discover advanced customization options to create truly unique markup experiences in your apps.
-- [Squeeze the most out of Apple Pencil](https://developer.apple.com/videos/play/wwdc2024/10214) - New in iOS 18, iPadOS 18, and visionOS 2, the PencilKit tool picker gains the ability to have completely custom tools, with custom attributes. Learn how to express your custom drawing experience in the tool picker using the same great tool picking experience available across the system. Discover how to access the new features of the Apple Pencil Pro, including roll angle, the squeeze gesture, and haptic feedback.
 
 ## Change log
 | Date | Changes |

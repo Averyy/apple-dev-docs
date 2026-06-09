@@ -26,12 +26,8 @@ Use [`requestConfirmation(conditions:actionName:dialog:)`](appintent/requestconf
 
 ## See Also
 
-- [func requestConfirmation() async throws](appintent/requestconfirmation.md)
-  Requests user confirmation before performing the app intent.
-- [func requestConfirmation(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog) async throws](appintent/requestconfirmation(conditions:actionname:dialog:).md)
-  Requests user confirmation before performing the app intent.
-- [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:content:).md)
-  Request user confirmation before performing the app intent.
+- [static var openAppWhenRun: Bool](appintent/openappwhenrun.md)
+  A Boolean property that tells the system to consider the app intent even if its app is not in the foreground.
 - [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(output:confirmationactionname:showprompt:).md)
 
 

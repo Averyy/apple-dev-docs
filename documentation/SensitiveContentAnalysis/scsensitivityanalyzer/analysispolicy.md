@@ -1,6 +1,6 @@
 # analysisPolicy
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 A property that determines if the app detects nudity and how the app responds.
@@ -20,7 +20,7 @@ var analysisPolicy: SCSensitivityAnalysisPolicy { get }
 
 ## Mentions
 
-- [Detecting nudity in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
@@ -31,10 +31,10 @@ let policy = analyzer.analysisPolicy
 if policy == .disabled { return }
 ```
 
-An app can utilize the SensitiveContentAnalysis framework when the system sets the value of this property to either:
+An app can utilize the Sensitive Content Analysis framework when the system sets the value of this property to either:
 
-- [`SCSensitivityAnalysisPolicy.simpleInterventions`](scsensitivityanalysispolicy/simpleinterventions.md), which indicates that a user activates the Communication Safety parental control in Screen Time.
-- [`SCSensitivityAnalysisPolicy.descriptiveInterventions`](scsensitivityanalysispolicy/descriptiveinterventions.md), which indicates that the user activates the Sensitive Content Warning user preference.
+- [`SCSensitivityAnalysisPolicy.simpleInterventions`](scsensitivityanalysispolicy/simpleinterventions.md), which indicates that someone activates the Communication Safety parental control in Screen Time.
+- [`SCSensitivityAnalysisPolicy.descriptiveInterventions`](scsensitivityanalysispolicy/descriptiveinterventions.md), which indicates that someone activates the Sensitive Content Warning user preference.
 
 The framework won’t detect nudity if the system disables this property. For more information on why the system disables sensitive content analysis, see [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
 

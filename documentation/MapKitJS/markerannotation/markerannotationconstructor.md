@@ -12,9 +12,9 @@ Creates a marker annotation at the coordinate location with provided options.
 
 ```swift
 constructor(
-        location: Coordinate | Place | SearchAutocompleteResult,
-        options?: MarkerAnnotationConstructorOptions,
-    );
+    location: CoordinateData | Place | SearchAutocompleteResult,
+    options?: MarkerAnnotationConstructorOptions,
+);
 ```
 
 ## Parameters

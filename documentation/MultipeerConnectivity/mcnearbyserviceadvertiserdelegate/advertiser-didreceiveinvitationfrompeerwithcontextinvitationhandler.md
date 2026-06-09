@@ -7,11 +7,11 @@
 Called when an invitation to join a session is received from a nearby peer.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
+- iOS 7.0+
+- iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS 9.0+
+- tvOS 10.0+
 - visionOS 1.0+
 
 ## Declaration

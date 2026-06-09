@@ -8,6 +8,7 @@ The human-readable name of the manufacturer or vendor of the physical device as 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

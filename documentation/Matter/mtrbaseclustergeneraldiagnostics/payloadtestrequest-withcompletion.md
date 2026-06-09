@@ -22,7 +22,7 @@ func payloadTestRequest(with params: MTRGeneralDiagnosticsClusterPayloadTestRequ
 
 #### Discussion
 
-Request a variable length payload response.
+This command provides a means for certification tests or manufacturer’s internal tests to validate particular command handling and encoding constraints by generating a response of a given size.
 
 
 ---

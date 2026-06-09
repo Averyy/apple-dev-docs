@@ -8,6 +8,7 @@ A mode indicating the alarm timer is active.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

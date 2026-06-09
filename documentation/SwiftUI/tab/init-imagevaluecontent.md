@@ -18,7 +18,7 @@ Creates a tab that the tab view presents when the tab view’s selection matches
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, image: String, value: Value, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel
+init(_ titleKey: LocalizedStringKey, image: String, value: Value, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
 ## Parameters

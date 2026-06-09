@@ -1,4 +1,4 @@
-# Read the Beta App Review Details Resource of an App
+# Read the beta app review details resource of an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -60,18 +60,18 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/betaAppReviewDetail
 
 ## Parameters
 
-- `fields[betaAppReviewDetails]` ([string]): Fields to return for included related types.
+- `fields[betaAppReviewDetails]` ([string]): Additional fields to include for each beta app review detail resource returned by the response.
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/betaAppReviewDetail](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
-- [GET /v1/apps/{id}/relationships/betaAppReviewDetail](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
-- [Read the Beta License Agreement of an App](get-v1-apps-_id_-betalicenseagreement.md)
+- [Get the beta app review detail ID for an app](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
+- [Get the beta app review detail ID for an app](get-v1-apps-_id_-relationships-betaappreviewdetail.md)
+- [Read the beta license agreement of an app](get-v1-apps-_id_-betalicenseagreement.md)
   Get the beta license agreement for a specific app.
-- [GET /v1/apps/{id}/relationships/betaLicenseAgreement](get-v1-apps-_id_-relationships-betalicenseagreement.md)
-- [List All Beta App Localizations of an App](get-v1-apps-_id_-betaapplocalizations.md)
+- [Get the beta license agreement ID for an app](get-v1-apps-_id_-relationships-betalicenseagreement.md)
+- [List all beta app localizations of an app](get-v1-apps-_id_-betaapplocalizations.md)
   Get a list of localized beta test information for a specific app.
-- [GET /v1/apps/{id}/relationships/betaAppLocalizations](get-v1-apps-_id_-relationships-betaapplocalizations.md)
+- [List beta app localization IDs for an app](get-v1-apps-_id_-relationships-betaapplocalizations.md)
 
 
 ---

@@ -20,7 +20,7 @@ Resend a webhook notification from a specified template.
 
 - [Read the Deliveries for a Webhook](get-v1-webhooks-_id_-deliveries.md)
   Get a list of deliveries for a specific webhook configuration.
-- [GET /v1/webhooks/{id}/relationships/deliveries](get-v1-webhooks-_id_-relationships-deliveries.md)
+- [List delivery IDs for a webhook](get-v1-webhooks-_id_-relationships-deliveries.md)
 
 
 ---

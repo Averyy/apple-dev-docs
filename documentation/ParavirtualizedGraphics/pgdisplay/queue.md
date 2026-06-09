@@ -18,8 +18,6 @@ var queue: dispatch_queue_t? { get }
 
 ## See Also
 
-- [var cursorGlyphHandler: PGDisplayCursorGlyphHandler?](pgdisplay/cursorglyphhandler.md)
-  A handler that the framework calls to change the cursor’s appearance.
 - [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplay/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
 - [var modeChangeHandler: PGDisplayModeChangeHandler?](pgdisplay/modechangehandler.md)

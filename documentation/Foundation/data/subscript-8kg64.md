@@ -20,6 +20,11 @@ Accesses the byte at the specified index.
 subscript(index: Data.Index) -> UInt8 { get set }
 ```
 
+## See Also
+
+- [subscript(Range<Data.Index>) -> Data](data/subscript(_:)-6lc96.md)
+  Accesses the bytes at the specified range of indexes.
+
 
 ---
 

@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: A BCP 47 script subtag identifier, such as `Arab`, `Cyrl`, or `Latn`. This value is case-insensitive.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/script/init(stringliteral:).md)
+  Creates a script from a BCP 47 identifier as a string literal.
+
 
 ---
 

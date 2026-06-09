@@ -37,7 +37,6 @@ Apply one of the `Leading` values to a font using the [`leading(_:)`](font/leadi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

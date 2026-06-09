@@ -12,6 +12,7 @@ Returns the text marker at a point in the view’s coordinate system.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
+- watchOS 11.2+
 
 ## Declaration
 

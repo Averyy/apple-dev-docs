@@ -16,7 +16,7 @@ Update your existing app to leverage the benefits of Observation in Swift.
 Starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10, SwiftUI provides support for [`Observation`](https://developer.apple.com/documentation/Observation), a Swift-specific implementation of the observer design pattern. Adopting Observation provides your app with the following benefits:
 
 - Tracking optionals and collections of objects, which isn’t possible when using [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject).
-- Using existing data flow primitives like [`State`](state.md) and [`Environment`](environment.md) instead of object-based equivalents such as [`StateObject`](stateobject.md) and [`EnvironmentObject`](environmentobject.md).
+- Using existing data flow primitives like [`State()`](state().md) and [`Environment`](environment.md) instead of object-based equivalents such as [`StateObject`](stateobject.md) and [`EnvironmentObject`](environmentobject.md).
 - Updating views based on changes to the observable properties that a view’s [`body`](view/body-8kl5o.md) reads instead of any property changes that occur to an observable object, which can help improve your app’s performance.
 
 To take advantage of these benefits in your app, you’ll discover how to replace existing source code that relies on [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) with code that leverages the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro.
@@ -43,7 +43,7 @@ You may notice slight behavioral differences in your app based on the tracking m
 
 The only change made to the sample app so far is to apply the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro to `Library` and remove support for the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) protocol. The app still uses the [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject) data flow primitive like [`StateObject`](stateobject.md) to manage an instance of `Library`. If you were to build and run the app, SwiftUI still updates the views as expected. That’s because data flow property wrappers such as [`StateObject`](stateobject.md) and [`EnvironmentObject`](environmentobject.md) support types that use the [`Observable()`](https://developer.apple.com/documentation/Observation/Observable()) macro. SwiftUI provides this support so apps can make source code changes incrementally.
 
-However, to fully adopt [`Observation`](https://developer.apple.com/documentation/Observation), replace the use of [`StateObject`](stateobject.md) with [`State`](state.md) after updating your data model type. For example, in the following code the main app structure creates an instance of `Library` and stores it as a `StateObject`. It also adds the `Library` instance to the environment using the [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
+However, to fully adopt [`Observation`](https://developer.apple.com/documentation/Observation), replace the use of [`StateObject`](stateobject.md) with [`State()`](state().md) after updating your data model type. For example, in the following code the main app structure creates an instance of `Library` and stores it as a `StateObject`. It also adds the `Library` instance to the environment using the [`environmentObject(_:)`](view/environmentobject(_:).md) modifier.
 
 ```swift
 // BEFORE
@@ -60,7 +60,7 @@ struct BookReaderApp: App {
 }
 ```
 
-Now that `Library` no longer conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), the code can change to use [`State`](state.md) instead of [`StateObject`](stateobject.md) and to add `library` to the environment using the [`environment(_:)`](view/environment(_:).md) modifier.
+Now that `Library` no longer conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), the code can change to use [`State()`](state().md) instead of [`StateObject`](stateobject.md) and to add `library` to the environment using the [`environment(_:)`](view/environment(_:).md) modifier.
 
 ```swift
 // AFTER

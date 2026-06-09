@@ -8,6 +8,7 @@ A class that provides configurations that an MDM admin provisions for a managed 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

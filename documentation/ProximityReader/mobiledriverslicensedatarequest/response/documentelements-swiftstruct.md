@@ -9,7 +9,6 @@ A type that contains the document elements from a successful mobile driver’s l
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -59,7 +58,9 @@ struct DocumentElements
   A Boolean value indicating whether the identity document holder is a veteran.
 - [let issuingAuthority: MobileDriversLicenseDataRequest.Response.DocumentElements.IssuingAuthority?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/issuingauthority-swift.property.md)
   The state or government that issued the identity document.
-- [let nameComponents: PersonNameComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/namecomponents.md)
+- [let name: MobileDocumentHolderName?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/name.md)
+  The mobile driver’s license holder’s name.
+- [var nameComponents: PersonNameComponents?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/namecomponents.md)
   The mobile driver’s license holder’s name components.
 - [let nationality: String?](mobiledriverslicensedatarequest/response/documentelements-swift.struct/nationality.md)
   The nationality of the identity document holder on record with the issuer.

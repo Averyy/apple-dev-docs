@@ -137,6 +137,8 @@ Every contact in the contacts database has a unique ID, which you access using t
 - [var debugDescription: String](cncontact/debugdescription.md)
 - [var description: String](cncontact/description.md)
 - [var shortDebugDescription: String](cncontact/shortdebugdescription.md)
+### Type Methods
+- [class func debugDescriptionForName(String) -> String](cncontact/debugdescriptionforname(_:).md)
 
 ## Relationships
 

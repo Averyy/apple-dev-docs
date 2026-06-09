@@ -11,7 +11,7 @@ The output of a Secure Hashing Algorithm 3 (SHA-2) hash with a 384-bit digest.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- visionOS 2.0+
+- visionOS 26.0+
 - watchOS 26.0+
 
 ## Declaration

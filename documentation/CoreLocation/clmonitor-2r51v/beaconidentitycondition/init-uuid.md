@@ -8,6 +8,7 @@ Creates a beacon identity condition with the UUID characteristic only, and wildc
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

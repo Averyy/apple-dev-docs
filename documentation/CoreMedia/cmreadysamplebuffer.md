@@ -60,8 +60,8 @@ struct CMReadySampleBuffer<Content> where Content : CMSampleBuffer.Content
 - [init(unsafeWithTaggedBuffers: sending CMSampleBuffer)](cmreadysamplebuffer/init(unsafewithtaggedbuffers:).md)
   Create a ready sample buffer with tagged buffers content from an existing sample buffer.
 ### Instance Properties
+- [var attachments: CMReadySampleBuffer<Content>.Attachments](cmreadysamplebuffer/attachments-swift.property.md)
 - [var audioStreamPacketDescriptions: [AudioStreamPacketDescription]?](cmreadysamplebuffer/audiostreampacketdescriptions.md)
-  Get an array of AudioStreamPacketDescriptions describing audio samples in the buffer.
 - [var content: CMSampleDataReference](cmreadysamplebuffer/content-12bds.md)
   Payload containing the samples.
 - [var content: CMSampleBuffer.DynamicContent](cmreadysamplebuffer/content-14qb7.md)
@@ -123,6 +123,8 @@ struct CMReadySampleBuffer<Content> where Content : CMSampleBuffer.Content
   Split sample buffer into a smaller representation, ideally carrying a single sample per resulting sample buffer.
 - [func withUnsafeSampleBuffer<R>((CMSampleBuffer) throws -> sending R) rethrows -> sending R](cmreadysamplebuffer/withunsafesamplebuffer(_:).md)
   Access the underlying CMSampleBuffer instance.
+### Type Aliases
+- [CMReadySampleBuffer.Attachments](cmreadysamplebuffer/attachments-swift.typealias.md)
 
 ## Relationships
 

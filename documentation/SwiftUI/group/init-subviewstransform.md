@@ -17,7 +17,7 @@ Constructs a group from the subviews of the given view.
 ## Declaration
 
 ```swift
-init<Base, Result>(subviews view: Base, @ViewBuilder transform: @escaping (SubviewsCollection) -> Result) where Content == GroupElementsOfContent<Base, Result>, Base : View, Result : View
+init<Base, Result>(subviews view: Base, @ContentBuilder transform: @escaping (SubviewsCollection) -> Result) where Content == GroupElementsOfContent<Base, Result>, Base : View, Result : View
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ Use this initializer to create a group that gives you programmatic access to the
 struct CardsView<Content: View>: View {
     var content: Content
 
-    init(@ViewBuilder content: () -> Content) {
+    init(@ContentBuilder content: () -> Content) {
         self.content = content()
     }
 
@@ -55,7 +55,7 @@ struct CardsView<Content: View>: View {
 }
 ```
 
-You can use `CardsView` with its view builder-based initializer to arrange a collection of subviews:
+You can use `CardsView` with its content builder-based initializer to arrange a collection of subviews:
 
 ```swift
 CardsView {
@@ -74,6 +74,13 @@ Subviews are proxies to the view they represent, which means that modifiers that
 
 - `view`: The view to get the subviews of.
 - `transform`: A closure that constructs a view from the collection of subviews.
+
+## See Also
+
+- [init(content:)](group/init(content:).md)
+  Creates a group of map content.
+- [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](group/init(sections:transform:).md)
+  Constructs a group from the sections of the given view.
 
 
 ---

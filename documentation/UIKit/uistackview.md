@@ -242,6 +242,8 @@ Finally, you can define size-class specific values for many of the stack view’
 - [UIView](uiview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

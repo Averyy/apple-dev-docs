@@ -6,10 +6,6 @@
 Creates a P-256 private key for signing from the specified data representation.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
 

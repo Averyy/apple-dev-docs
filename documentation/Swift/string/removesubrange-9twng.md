@@ -61,8 +61,6 @@ Calling this method may invalidate any existing indices for use with this collec
   Removes the characters in the given range.
 - [func removeSubrange(Range<Self.Index>)](string/removesubrange(_:)-8maxn.md)
   Removes the elements in the specified subrange from the collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](string/filter(_:).md)
-  Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](string/drop(while:).md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 - [func dropFirst(Int) -> Self.SubSequence](string/dropfirst(_:).md)

@@ -8,6 +8,7 @@ Provides an asynchronous sequence of configurations that the MDM admin specifies
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration
@@ -40,7 +41,7 @@ The device reports the result of decoding to the MDM server. On success, the dev
 
 If the decoder throws an error that doesn’t conform to [`ManagedAppConfigurationDecodingError`](managedappconfigurationdecodingerror.md) or if the error code is reserved, the device reports a generic error.
 
-For more information on status reporting, see [`Leveraging the declarative management data model to scale devices`](https://developer.apple.com/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices#Use-status-to-report-device-state), and [`Status Reports`](https://developer.apple.com/documentation/DeviceManagement/status-reports).
+For more information on status reporting, see [`Leveraging the declarative management data model to scale devices`](https://developer.apple.com/documentation/DeviceManagement/leveraging-the-declarative-management-data-model-to-scale-devices#Use-status-to-report-device-state), and doc://com.apple.documentation/documentation/devicemanagement/status-reports.
 
 ## Parameters
 

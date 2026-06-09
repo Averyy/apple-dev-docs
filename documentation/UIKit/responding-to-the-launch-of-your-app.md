@@ -134,6 +134,8 @@ For a list of launch option keys and information about how to handle them, see [
   A set of methods to manage shared behaviors for your app.
 - [Scenes](scenes.md)
   Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+  Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 
 ---

@@ -1,6 +1,6 @@
 # shouldMuteAudio
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 Intervention guidance that suggests the app mute the audio of the current video stream.

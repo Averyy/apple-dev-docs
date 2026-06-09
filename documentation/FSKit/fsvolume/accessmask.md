@@ -34,7 +34,7 @@ struct AccessMask
   The file system allows searching files.
 ### Declaring file maniulation access
 - [static var execute: FSVolume.AccessMask](fsvolume/accessmask/execute.md)
-  The file system allows file executuion.
+  The file system allows file execution.
 - [static var delete: FSVolume.AccessMask](fsvolume/accessmask/delete.md)
   The file system allows deleting a file.
 - [static var appendData: FSVolume.AccessMask](fsvolume/accessmask/appenddata.md)
@@ -72,8 +72,10 @@ struct AccessMask
 
 ## See Also
 
-- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, replyHandler: (Bool, (any Error)?) -> Void)](fsvolume/accesscheckoperations/checkaccess(to:requestedaccess:replyhandler:).md)
+- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, context: FSContext, replyHandler: (FSCheckAccessResult?, (any Error)?) -> Void)](fsvolume/accesscheckhandler/checkaccess(to:requestedaccess:context:replyhandler:).md)
   Checks whether the file system allows access to the given item.
+- [class FSCheckAccessResult](fscheckaccessresult.md)
+  The result of a check-access call.
 
 
 ---

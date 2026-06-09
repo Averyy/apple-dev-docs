@@ -47,7 +47,7 @@ ScrollView(.horizontal) {
 }
 ```
 
-Use the `View/containerRelativeFrame(_:count:spacing:alignment:)` modifier to size a view such that multiple views will be visible in the container. When using this modifier, the count refers to the total number of rows or columns that the length of the container size in a particular axis should be divided into. The span refers to the number of rows or columns that the modified view should actually occupy. Thus the size of the element can be described like so:
+Use the [`containerRelativeFrame(_:count:span:spacing:alignment:)`](view/containerrelativeframe(_:count:span:spacing:alignment:).md) modifier to size a view such that multiple views will be visible in the container. When using this modifier, the count refers to the total number of rows or columns that the length of the container size in a particular axis should be divided into. The span refers to the number of rows or columns that the modified view should actually occupy. Thus the size of the element can be described like so:
 
 ```swift
 let availableWidth = (containerWidth - (spacing * (count - 1)))

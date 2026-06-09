@@ -18,7 +18,7 @@ Modify a preview by applying the shared context.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor func body(content: Self.Content, context: Self.Context) -> Self.Body
 ```
 

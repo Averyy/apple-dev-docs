@@ -8,6 +8,7 @@ The person has not yet made a choice about sharing Wi-Fi networks with the acces
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

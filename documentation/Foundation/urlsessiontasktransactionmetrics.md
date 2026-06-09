@@ -113,6 +113,7 @@ Tasks to different hosts can reuse the same transport connection, just like how 
 - [URLSessionTaskMetrics.ResourceFetchType](urlsessiontaskmetrics/resourcefetchtype.md)
   The manner in which a resource is fetched.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontasktransactionmetrics/domainresolutionprotocol.md)
+  DNS protocol used for domain resolution.
 - [URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontaskmetrics/domainresolutionprotocol.md)
 ### Creating transaction metrics
 - [init()](urlsessiontasktransactionmetrics/init.md)

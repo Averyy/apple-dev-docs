@@ -107,8 +107,12 @@ If your pass doesn’t build correctly, check whether the following are all true
 
 ## See Also
 
+- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+  Construct and customize a variety of pass styles with this easy-to-use tool.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
+- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+  Provide customizable information for your Wallet Pass.
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
 - [object Pass](pass.md)

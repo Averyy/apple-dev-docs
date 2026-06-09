@@ -9,7 +9,6 @@ Returns the default set of interface orientations to use for the view controller
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- visionOS 1.0+
 
 ## Declaration
 

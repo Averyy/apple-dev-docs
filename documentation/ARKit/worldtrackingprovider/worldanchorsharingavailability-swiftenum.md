@@ -6,7 +6,6 @@
 Enumeration indicating the availability of world anchor sharing.
 
 **Availability**:
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -19,14 +18,16 @@ enum WorldAnchorSharingAvailability
 
 ### Enumeration Cases
 - [WorldTrackingProvider.WorldAnchorSharingAvailability.available](worldtrackingprovider/worldanchorsharingavailability-swift.enum/available.md)
-  World anchors can be shared with nearby participants. Indicates that the device is in a SharePlay session with nearby participants.
+  World anchors can be shared with nearby participants. This indicates that the device is in a SharePlay session with nearby participants.
 - [WorldTrackingProvider.WorldAnchorSharingAvailability.unavailable](worldtrackingprovider/worldanchorsharingavailability-swift.enum/unavailable.md)
   World anchors cannot be shared with nearby participants. This indicates that either there’s no SharePlay session or the session has ended.
+### Instance Properties
+- [var description: String](worldtrackingprovider/worldanchorsharingavailability-swift.enum/description.md)
+  A textual representation of this world anchor sharing availability.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)

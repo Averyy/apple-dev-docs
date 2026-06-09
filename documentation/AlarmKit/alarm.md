@@ -8,6 +8,7 @@ An object that describes an alarm that can alert once or on a repeating schedule
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

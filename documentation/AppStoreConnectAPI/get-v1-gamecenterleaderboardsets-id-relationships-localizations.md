@@ -1,10 +1,10 @@
-# GET /v1/gameCenterLeaderboardSets/{id}/relationships/localizations
+# List localization IDs for a Game Center leaderboard set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -40,7 +40,7 @@
   List all the group leaderboard sets in a leaderboard set.
 - [List Releases for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
   Read the state of releases for a leaderboard set and related information.
-- [GET /v1/gameCenterLeaderboardSets/{id}/relationships/releases](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
 
 
 ---

@@ -8,6 +8,7 @@ A structure that offers functionality to observe changes to the dynamic content 
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

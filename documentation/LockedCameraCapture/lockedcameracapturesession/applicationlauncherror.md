@@ -8,6 +8,7 @@ Indicates why launching the extension’s containing app failed.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 
@@ -36,7 +37,6 @@ enum ApplicationLaunchError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomNSError](../Foundation/CustomNSError.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)

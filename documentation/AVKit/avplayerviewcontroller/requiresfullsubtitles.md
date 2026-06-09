@@ -24,6 +24,7 @@ The default value is `false`.
 
 - [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
   An array of language codes that restrict the set of subtitle languages available to the user.
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 
 ---

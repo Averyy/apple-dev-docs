@@ -42,7 +42,7 @@ The command copies all identical mipmap sizes. If both textures are arrays, the 
 - [func copy(from: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sourceOrigin: MTLOrigin, sourceSize: MTLSize, to: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin)](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationslice:destinationlevel:destinationorigin:).md)
   Encodes a command that copies image data from a texture’s slice into another slice.
 - [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:to:destinationorigin:destinationdimensions:).md)
-  Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
+  Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
 
 
 ---

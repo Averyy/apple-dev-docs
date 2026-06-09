@@ -10,7 +10,6 @@ The physical position of the capture device.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS 2.1+
 
 ## Declaration
 

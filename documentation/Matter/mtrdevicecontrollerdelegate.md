@@ -29,6 +29,8 @@ protocol MTRDeviceControllerDelegate : NSObjectProtocol
 - [func controller(MTRDeviceController, statusUpdate: MTRCommissioningStatus)](mtrdevicecontrollerdelegate/controller(_:statusupdate:).md)
 - [func controller(MTRDeviceController, commissioneeHasReceivedNetworkCredentials: NSNumber)](mtrdevicecontrollerdelegate/controller(_:commissioneehasreceivednetworkcredentials:).md)
   Notify the delegate that we have successfully communicated the network credentials to the device being commissioned and are about to tell it to join that network.  Note that for devices that are already on-network this notification will not happen.
+- [func controller(MTRDeviceController, commissioningComplete: (any Error)?, nodeID: NSNumber?, metrics: MTRMetrics, context: [String : Any])](mtrdevicecontrollerdelegate/controller(_:commissioningcomplete:nodeid:metrics:context:).md)
+  Notify the delegate when commissioning is completed.
 - [func controller(MTRDeviceController, read: MTRCommissioneeInfo)](mtrdevicecontrollerdelegate/controller(_:read:).md)
   Notify the delegate when commissioning infomation has been read from the commissionee.
 - [func controller(MTRDeviceController, suspendedChangedTo: Bool)](mtrdevicecontrollerdelegate/controller(_:suspendedchangedto:).md)

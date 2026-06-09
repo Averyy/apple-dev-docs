@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A grace period configuration for a subscription, allowing subscribers continued access while payment issues are resolved.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object SubscriptionGracePeriod
 
 ### Objects
 - [object SubscriptionGracePeriod.Attributes](subscriptiongraceperiod/attributes-data.dictionary.md)
+  Attributes that describe a subscription grace period resource.
 
 ## Properties
 
@@ -27,8 +30,11 @@ object SubscriptionGracePeriod
 ## See Also
 
 - [type SubscriptionGracePeriodDuration](subscriptiongraceperiodduration.md)
+  A string that represents the grace period duration for a subscription.
 - [object SubscriptionGracePeriodResponse](subscriptiongraceperiodresponse.md)
+  A response containing a single grace period configuration for a subscription.
 - [object SubscriptionGracePeriodUpdateRequest](subscriptiongraceperiodupdaterequest.md)
+  The request body you use to update a subscription grace period update request.
 - [object AppSubscriptionGracePeriodLinkageResponse](appsubscriptiongraceperiodlinkageresponse.md)
 
 

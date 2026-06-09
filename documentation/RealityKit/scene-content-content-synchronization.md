@@ -65,6 +65,8 @@ Synchronize the contents of entities locally or across the network.
   Present videos in your RealityKit experiences.
 - [Images](scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 
 ---

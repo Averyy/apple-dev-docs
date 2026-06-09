@@ -11,6 +11,7 @@ A full history of interactions, including user inputs and model responses.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,12 +21,8 @@ final var transcript: Transcript { get }
 
 ## Mentions
 
+- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 - [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
-
-## See Also
-
-- [var isResponding: Bool](languagemodelsession/isresponding.md)
-  A Boolean value that indicates a response is being generated.
 
 
 ---

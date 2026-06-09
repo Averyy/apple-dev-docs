@@ -113,6 +113,7 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 - [Escapable](escapable.md)
 - [MLShapedArrayRangeExpression](../CoreML/MLShapedArrayRangeExpression.md)
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
+- [NDArray.RangeExpression](../CoreAI/NDArray/RangeExpression.md)
 - [RangeExpression](rangeexpression.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

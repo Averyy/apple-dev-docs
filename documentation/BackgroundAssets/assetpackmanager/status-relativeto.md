@@ -21,7 +21,7 @@ func status(relativeTo assetPack: AssetPack) async throws -> AssetPack.Status
 
 #### Return Value
 
-The asset pack’s status.
+The current status relative to the asset pack.
 
 #### Discussion
 
@@ -29,7 +29,7 @@ This method checks whether any version of the specified asset pack is currently 
 
 For example, consider the following sequence of events, assuming that version 1 of the relevant asset pack is already available locally:
 
-1. Your app calls [`assetPack(withID:)`](assetpackmanager/assetpack(withid:).md) to obtain an [`AssetPack`](assetpack.md) instance.
+1. Your app calls [`assetPack(withID:)`](assetpackmanifest/assetpack(withid:).md) on the [`AssetPackManifest`](assetpackmanifest.md) instance that [`manifest`](assetpackmanager/manifest.md) returns to obtain an [`AssetPack`](assetpack.md) instance.
 2. The asset pack is updated to version 2 on the server.
 3. Your app calls this method, passing the [`AssetPack`](assetpack.md) instance from step 1.
 
@@ -40,6 +40,27 @@ This method doesn’t automatically trigger any downloads, updates, or removals.
 ## Parameters
 
 - `assetPack`: The asset pack.
+
+## See Also
+
+- [func checkForUpdates() async throws -> (updatingIDs: Set<String>, removedIDs: Set<String>)](assetpackmanager/checkforupdates.md)
+  Gets the latest asset-pack information from the server, updates outdated asset packs, and removes obsolete asset packs.
+- [func ensureLocalAvailability(of: AssetPack, requireLatestVersion: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversion:).md)
+  Ensures that an asset pack is available locally, performing a download if necessary.
+- [func ensureLocalAvailability(of: Set<AssetPack>, requireLatestVersions: Bool) async throws](assetpackmanager/ensurelocalavailability(of:requirelatestversions:).md)
+  Ensures the specified asset packs are available locally, performing a batch download if necessary.
+- [func assetPackIsAvailableLocally(withID: String) -> Bool](assetpackmanager/assetpackisavailablelocally(withid:).md)
+  Checks whether an asset pack is available locally.
+- [func localStatus(ofAssetPackWithID: String) async -> AssetPack.Status](assetpackmanager/localstatus(ofassetpackwithid:).md)
+  Checks an asset pack’s local status.
+- [AssetPack.Status](assetpack/status.md)
+  The status of an asset pack.
+- [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
+  Removes the specified asset pack from the device.
+- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
+  Checks an asset pack’s status.
+- [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
+  Ensures that the specified asset pack be available locally.
 
 
 ---

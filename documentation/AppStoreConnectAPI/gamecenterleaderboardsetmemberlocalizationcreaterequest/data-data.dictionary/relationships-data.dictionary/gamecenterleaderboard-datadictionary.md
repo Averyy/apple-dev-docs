@@ -16,6 +16,7 @@ object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationship
 
 ### Objects
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest.Data.Relationships.GameCenterLeaderboard.Data](gamecenterleaderboardsetmemberlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboard-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center leaderboard set member localization.
 
 ## Properties
 

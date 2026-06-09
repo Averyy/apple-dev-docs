@@ -22,6 +22,8 @@ The notification object is the instance of `NSMenu` that just removed the menu i
 | --- | --- |
 | `@"NSMenuItemIndex"` | An `NSNumber` object containing the integer index of the menu item that was removed. Note that this index may no longer be valid and in any event no longer points to the menu item that was removed. |
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidRemoveItemMessage`](nsmenu/didremoveitemmessage.md).
+
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

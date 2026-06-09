@@ -38,10 +38,14 @@ struct HandAnchor
 ### Enumerations
 - [HandAnchor.Fidelity](handanchor/fidelity-swift.enum.md)
   Enumeration to distinguish hand fidelity
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](handanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](handanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

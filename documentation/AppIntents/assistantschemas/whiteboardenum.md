@@ -20,10 +20,6 @@ Assistant schema conformance for whiteboard types.
 protocol WhiteboardEnum : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -39,13 +35,6 @@ protocol WhiteboardEnum : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
 - [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-
-## See Also
-
-- [var color: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/color.md)
-  The color of a whiteboard canvas.
-- [var itemType: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/itemtype.md)
-  The type of an item on a whiteboard canvas.
 
 
 ---

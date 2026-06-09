@@ -9,13 +9,16 @@ A unique token for the guidance that you use to create an electrical load event.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 let guidanceToken: UUID
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

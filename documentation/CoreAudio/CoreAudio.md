@@ -37,7 +37,7 @@ Use the Core Audio framework to interact with device’s audio hardware.
 - [class AudioHardwareClock](audiohardwareclock.md)
   Instances of the AudioHardwareClock class encapsulate individual audio clocks. All audio devices inherit from the audio clock class, which provides several base properties and contains a list of control objects. Clock objects can be used as a time source when run in an aggregate device, but contain no IO streams.
 - [class AudioHardwareControl](audiohardwarecontrol.md)
-  Instances of the AudioHardwareControl class encapsulate a single audio control, which provides properties that describe/manipulate a particular aspect of the owning object such as gain, mute, data source selection, etc.
+  Instances of the AudioHardwareControl class encapsulate a single audio control, which provides properties that describe/manipulate a particular aspect of the owning device such as gain, mute, data source selection, etc.
 - [class AudioHardwareDevice](audiohardwaredevice.md)
   Instances of the AudioHardwareDevice class encapsulate individual audio devices. An audio device serves as the basic unit of IO. AudioHardwareDevice provides properties and methods to access and manipulate a device’s state and run IO.
 - [class AudioHardwareObject](audiohardwareobject.md)
@@ -62,8 +62,11 @@ Use the Core Audio framework to interact with device’s audio hardware.
 - [struct ManagedAudioChannelLayout](managedaudiochannellayout.md)
   This structure is used to specify channel layouts in files and hardware.
 ### Variables
+- [var kAudioDevicePropertySuggestedReferenceDevice: AudioObjectPropertySelector](kaudiodevicepropertysuggestedreferencedevice.md)
 - [var kAudioDevicePropertyWantsControlsRestored: AudioObjectPropertySelector](kaudiodevicepropertywantscontrolsrestored.md)
 - [var kAudioDevicePropertyWantsStreamFormatsRestored: AudioObjectPropertySelector](kaudiodevicepropertywantsstreamformatsrestored.md)
+- [var kAudioDeviceTransportTypeRemoteScreen: UInt32](kaudiodevicetransporttyperemotescreen.md)
+- [var kAudioDeviceTransportTypeRemoteStreaming: UInt32](kaudiodevicetransporttyperemotestreaming.md)
 
 
 ---

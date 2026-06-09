@@ -75,7 +75,8 @@ For more information on using layout anchors, see [`NSLayoutAnchor`](nslayoutanc
 
 - [class NSLayoutConstraint](nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853)
+- [class NSLayoutXAxisAnchor](nslayoutxaxisanchor.md)
+  A factory class for creating horizontal layout constraint objects using a fluent API.
 - [class NSLayoutAnchor](nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
 - [class NSLayoutXAxisAnchor](nslayoutxaxisanchor.md)

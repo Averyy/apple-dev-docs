@@ -58,6 +58,8 @@ RealityKit simulates physical interactions between virtual objects in your scene
   Control the movement of virtual objects with forces.
 - [Physics joints and pins](physics-joints-and-pins.md)
   Simulate joint physics that connect virtual objects.
+- [Cloth simulation](physics-cloth-simulation.md)
+  Add fabric, soft surfaces, and draping materials that bend, fold, and respond to forces and contact in your 3D scenes.
 
 
 ---

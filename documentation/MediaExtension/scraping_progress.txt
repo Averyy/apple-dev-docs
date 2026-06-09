@@ -1,4 +1,4 @@
 Completed scraping MediaExtension!
-Total pages scraped: 237
+Total pages scraped: 239
 Pages skipped (unchanged): 1
 Pages failed: 0

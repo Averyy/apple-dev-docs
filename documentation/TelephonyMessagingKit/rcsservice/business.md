@@ -104,7 +104,17 @@ An [`RCSService.IncomingMessageNotification`](rcsservice/incomingmessagenotifica
   Structure containing the telephone number details provided by a business.
 - [RCSService.Business.URIEntry](rcsservice/business/urientry.md)
   Structure containing details of a URI provided by a business.
+### Structures
+- [RCSService.Business.Capabilities](rcsservice/business/capabilities-swift.struct.md)
+  Structure containing details about a business’ capabilities.
+- [RCSService.Business.WelcomeMessage](rcsservice/business/welcomemessage-swift.struct.md)
+  Structure containing details about a business’ welcome message.
+### Instance Properties
+- [let capabilities: RCSService.Business.Capabilities?](rcsservice/business/capabilities-swift.property.md)
+- [let welcomeMessage: RCSService.Business.WelcomeMessage?](rcsservice/business/welcomemessage-swift.property.md)
 ### Enumerations
+- [RCSService.Business.Feature](rcsservice/business/feature.md)
+  Enumeration representing an RCS service feature supported by a business.
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.
 

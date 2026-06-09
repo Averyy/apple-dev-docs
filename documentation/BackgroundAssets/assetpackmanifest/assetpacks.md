@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: property
 
-The asset packs that are available to download.
+The asset packs in this manifest that are available to download.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,11 @@ The asset packs that are available to download.
 ```swift
 let assetPacks: Set<AssetPack>
 ```
+
+## See Also
+
+- [func assetPack(withID: String) -> AssetPack?](assetpackmanifest/assetpack(withid:).md)
+  Returns the asset pack in this manifest with the given ID.
 
 
 ---

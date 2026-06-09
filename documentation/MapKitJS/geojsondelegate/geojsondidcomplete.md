@@ -12,9 +12,9 @@ Completes the GeoJSON import.
 
 ```swift
 geoJSONDidComplete?<D extends GeoJSONTypes.GeoJSON>(
-        result: ItemCollection<D>,
-        geoJSON: D,
-    ): void;
+    result: ItemCollection<D>,
+    geoJSON: D,
+): void;
 ```
 
 #### Discussion

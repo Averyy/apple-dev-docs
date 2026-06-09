@@ -11,7 +11,8 @@ Constructs a new help link with the specified action.
 ## Declaration
 
 ```swift
-init(action: @escaping () -> Void)
+@MainActor
+@preconcurrency init(action: @escaping () -> Void)
 ```
 
 #### Discussion

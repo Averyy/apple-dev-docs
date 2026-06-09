@@ -21,12 +21,8 @@ typealias PGDisplayCursorShowHandler = (Bool) -> Void
 
 ## See Also
 
-- [var cursorGlyphHandler: PGDisplayCursorGlyphHandler?](pgdisplaydescriptor/cursorglyphhandler.md)
-  A handler that the framework calls to change the cursor’s appearance.
 - [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplaydescriptor/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
-- [typealias PGDisplayCursorGlyphHandler](pgdisplaycursorglyphhandler.md)
-  The block signature for a routine that handles changes to the cursor’s appearance.
 
 
 ---

@@ -49,6 +49,11 @@ This configuration can do either purely temporal interpolation (frame-rate conve
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencyframeinterpolationconfiguration/destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](vtlowlatencyframeinterpolationconfiguration/supportedpixelformats.md)
+### Type Methods
+- [class func maximumDimension(forSpatialScaleFactor: Int) -> Int](vtlowlatencyframeinterpolationconfiguration/maximumdimension(forspatialscalefactor:).md)
+  The maximum value for either dimension of the source frame, in pixels, for a given spatial scale factor.
+- [class func maximumPixelCount(forSpatialScaleFactor: Int) -> Int](vtlowlatencyframeinterpolationconfiguration/maximumpixelcount(forspatialscalefactor:).md)
+  The maximum total number of pixels in the source frame for a given spatial scale factor.
 
 ## Relationships
 

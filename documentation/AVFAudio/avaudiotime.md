@@ -82,6 +82,10 @@ Instances of this class are immutable.
 
 - [class AVAudioBuffer](avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
 - [class AVAudioFile](avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
 - [Audio settings](audio-settings.md)

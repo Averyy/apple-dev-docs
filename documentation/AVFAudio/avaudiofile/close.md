@@ -32,8 +32,7 @@ Calling this method closes the underlying file, if open. It’s normally unneces
   Reads an entire audio buffer.
 - [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
   Reads a portion of an audio buffer using the number of frames you specify.
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:).md)
-  Writes an audio buffer sequentially.
+- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
 
 
 ---

@@ -11,6 +11,7 @@ A control that requests text input from the user when pressed.
 ## Declaration
 
 ```swift
+nonisolated
 struct TextFieldLink<Label> where Label : View
 ```
 

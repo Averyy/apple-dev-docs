@@ -16,6 +16,7 @@ object GameCenterActivityVersionReleaseCreateRequest.Data.Relationships.GameCent
 
 ### Dictionaries
 - [object GameCenterActivityVersionReleaseCreateRequest.Data.Relationships.GameCenterDetail.Data](gamecenteractivityversionreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center activity version release.
 
 ## Properties
 

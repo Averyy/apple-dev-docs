@@ -163,9 +163,9 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
   Creates an empty dictionary with preallocated space for at least the specified number of elements.
 - [init<S>(uniqueKeysWithValues: S)](dictionary/init(uniquekeyswithvalues:).md)
   Creates a new dictionary from the key-value pairs in the given sequence.
-- [init<S>(S, uniquingKeysWith: (Value, Value) throws -> Value) rethrows](dictionary/init(_:uniquingkeyswith:).md)
+- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/init(_:uniquingkeyswith:).md)
   Creates a new dictionary from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
-- [init<S>(grouping: S, by: (S.Element) throws -> Key) rethrows](dictionary/init(grouping:by:).md)
+- [init<S, E>(grouping: S, by: (S.Element) throws(E) -> Key) throws(E)](dictionary/init(grouping:by:).md)
   Creates a new dictionary whose keys are the groupings returned by the given closure and whose values are arrays of the elements that returned each key.
 ### Inspecting a Dictionary
 - [var isEmpty: Bool](dictionary/isempty.md)
@@ -196,18 +196,10 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ### Adding Keys and Values
 - [func updateValue(Value, forKey: Key) -> Value?](dictionary/updatevalue(_:forkey:).md)
   Updates the value stored in the dictionary for the given key, or adds a new key-value pair if the key does not exist.
-- [func merge([Key : Value], uniquingKeysWith: (Value, Value) throws -> Value) rethrows](dictionary/merge(_:uniquingkeyswith:)-m2ub.md)
-  Merges the given dictionary into this dictionary, using a combining closure to determine the value for any duplicate keys.
-- [func merge<S>(S, uniquingKeysWith: (Value, Value) throws -> Value) rethrows](dictionary/merge(_:uniquingkeyswith:)-7smbb.md)
-  Merges the key-value pairs in the given sequence into the dictionary, using a combining closure to determine the value for any duplicate keys.
-- [func merging([Key : Value], uniquingKeysWith: (Value, Value) throws -> Value) rethrows -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-3vtfs.md)
-  Creates a dictionary by merging the given dictionary into this dictionary, using a combining closure to determine the value for duplicate keys.
-- [func merging<S>(S, uniquingKeysWith: (Value, Value) throws -> Value) rethrows -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-9bik6.md)
-  Creates a dictionary by merging key-value pairs in a sequence into the dictionary, using a combining closure to determine the value for duplicate keys.
 - [func reserveCapacity(Int)](dictionary/reservecapacity(_:).md)
   Reserves enough space to store the specified number of key-value pairs.
 ### Removing Keys and Values
-- [func filter((Dictionary<Key, Value>.Element) throws -> Bool) rethrows -> [Key : Value]](dictionary/filter(_:).md)
+- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](dictionary/filter(_:).md)
   Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
 - [func removeValue(forKey: Key) -> Value?](dictionary/removevalue(forkey:).md)
   Removes the given key and its associated value from the dictionary.
@@ -218,7 +210,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ### Comparing Dictionaries
 - [static func == ([Key : Value], [Key : Value]) -> Bool](dictionary/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](dictionary/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](dictionary/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Iterating over Keys and Values
 - [func forEach((Self.Element) throws -> Void) rethrows](dictionary/foreach(_:).md)
@@ -245,7 +237,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 - [func max(by: (Self.Element, Self.Element) throws -> Bool) rethrows -> Self.Element?](dictionary/max(by:).md)
   Returns the maximum element in the sequence, using the given predicate as the comparison between elements.
 ### Transforming a Dictionary
-- [func mapValues<T>((Value) throws -> T) rethrows -> Dictionary<Key, T>](dictionary/mapvalues(_:).md)
+- [func mapValues<T, E>((Value) throws(E) -> T) throws(E) -> Dictionary<Key, T>](dictionary/mapvalues(_:).md)
   Returns a new dictionary containing the keys of this dictionary with the values transformed by the given closure.
 - [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](dictionary/reduce(_:_:).md)
   Returns the result of combining the elements of the sequence using the given closure.
@@ -308,6 +300,24 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
   Creates a dictionary initialized with a dictionary literal.
 - [var hashValue: Int](dictionary/hashvalue.md)
   The hash value.
+### Instance Methods
+- [func isTriviallyIdentical(to: Dictionary<Key, Value>) -> Bool](dictionary/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this dictionary is identical to `other`.
+- [func merge<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/merge(_:uniquingkeyswith:)-1u8be.md)
+  Merges the given dictionary into this dictionary, using a combining closure to determine the value for any duplicate keys.
+- [func merge<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/merge(_:uniquingkeyswith:)-84ffe.md)
+  Merges the key-value pairs in the given sequence into the dictionary, using a combining closure to determine the value for any duplicate keys.
+- [func merging<E>([Key : Value], uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-4vrqz.md)
+  Creates a dictionary by merging the given dictionary into this dictionary, using a combining closure to determine the value for duplicate keys.
+- [func merging<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-6cztu.md)
+  Creates a dictionary by merging key-value pairs in a sequence into the dictionary, using a combining closure to determine the value for duplicate keys.
+### Subscripts
+- [subscript(String) -> USDValue?](dictionary/subscript(_:)-1uuzk.md)
+  Subscript that shadows the standard Dictionary subscript to provide path-based access. When the key contains `":"`, it is treated as a path with `":"` as the delimiter; otherwise the regular dictionary key semantics apply.
+- [subscript([String]) -> USDValue?](dictionary/subscript(_:)-7mdw0.md)
+  Accesses the value at the given key path.
+- [subscript(String, String) -> USDValue?](dictionary/subscript(_:_:).md)
+  Accesses the value at the given delimited key path.
 ### Type Aliases
 - [Dictionary.Element](dictionary/element.md)
   The element type of a dictionary: a tuple containing an individual key-value pair.
@@ -326,6 +336,7 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
 ## Relationships
 
 ### Conforms To
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [Copyable](copyable.md)

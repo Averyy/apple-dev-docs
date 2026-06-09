@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The device’s battery health.
+The status item that reports the device’s battery health.
 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -33,10 +31,22 @@ For more information about battery health, see the following support articles:
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad |
 | Allowed in device enrollment | iOS, Shared iPad |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Allowed in local enrollment | iOS, macOS, Shared iPad |
 | Allowed in system scope | iOS, macOS, Shared iPad |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+
+##### Status Item Example
+
+```json
+{
+    "device": {
+        "power": {
+            "battery-health": "normal"
+        }
+    }
+}
+```
 
 ## Properties
 
@@ -44,39 +54,36 @@ For more information about battery health, see the following support articles:
 - `normal`: The battery is operating normally.
 - `service-recommended`: The system recommends battery service.
 - `unknown`: The system couldn’t determine battery health information.
-- `unsupported`: The device doesn’t support battery health reporting. Available in iOS 17 and later on iPhone, iPadOS 18.4 and later on supported iPad models, and macOS 14.4 and later on a Mac with Apple silicon.
+- `unsupported`: The device doesn’t support battery health reporting. Supported on iPhones, specific iPad models, and Mac computers with Apple silicon.
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
 - [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
+  The status item that reports the device’s hardware model family.
 - [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
+  The status item that reports the device’s hardware model identifier.
 - [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
+  The status item that reports the device’s model marketing name.
 - [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
+  The status item that reports the device’s hardware number.
 - [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
+  The status item that reports the device’s operating system build version.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
+  The status item that reports the device’s operating system family.
 - [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
+  The status item that reports the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
+  The status item that reports the device’s operating system supplemental build version and Background Security Improvement version.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
+  The status item that reports the device’s operating system Background Security Improvement version.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
+  The status item that reports the device’s operating system version.
 - [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
+  The status item that reports the device’s serial number.
+- [object StatusDeviceSystemHealth](statusdevicesystemhealth.md)
+  The status item that reports the device’s system health.
 - [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
+  The status item that reports the device’s UDID.
 
 
 ---

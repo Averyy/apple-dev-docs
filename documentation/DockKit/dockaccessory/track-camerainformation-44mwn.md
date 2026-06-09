@@ -10,7 +10,6 @@ Automatically generate and send tracking vectors to the device.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS 2.1+
 
 ## Declaration
 

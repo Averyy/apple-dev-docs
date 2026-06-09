@@ -9,7 +9,7 @@ Tells the delegate that the highlight was removed from the row at the specified 
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

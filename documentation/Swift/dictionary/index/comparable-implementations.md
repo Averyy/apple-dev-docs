@@ -17,12 +17,12 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Dictionary<Key, Value>.Index, Dictionary<Key, Value>.Index) -> Bool](dictionary/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](dictionary/index/_(_:_:)-7cwwa.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](dictionary/index/_(_:_:)-6db0b.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](dictionary/index/_=(_:_:)-2svy0.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](dictionary/index/_=(_:_:)-6o53l.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](dictionary/index/_=(_:_:)-4hik4.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](dictionary/index/_=(_:_:)-6cxa9.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 
 ---

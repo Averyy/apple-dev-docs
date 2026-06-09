@@ -1,4 +1,4 @@
-# Read Default App Clip Experience Information
+# Read default app clip experience information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,25 +14,25 @@ Get a specific default App Clip experience.
 
 ## Parameters
 
-- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
-- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
-- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
-- `fields[appStoreVersions]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each app clip App Store review detail resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each default App Clip experience localization resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each default App Clip experience resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit[appClipDefaultExperienceLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the default App Clip experience localizations relationship is included.
+- `limit[appClipDefaultExperienceLocalizations]` (integer): The maximum number of related default App Clip experience localizations resources to return.
 - `fields[appClips]` ([string])
 
 ## See Also
 
-- [Read the App Store Review Detail for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
+- [Read the app store review detail for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
   Get App Store Review details for a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipAppStoreReviewDetail](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
-- [Read Localization Information for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md)
+- [Get the App Store review detail ID for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
+- [Read localization information for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md)
   Get localized metadata that appears on the App Clip card for a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipDefaultExperienceLocalizations](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
-- [Read App Store Version Information for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-releasewithappstoreversion.md)
+- [List localization IDs for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
+- [Read app store version information for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-releasewithappstoreversion.md)
   Get App Store Version information for a default App Clip experience.
-- [Get the App Store Versions Resource ID for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
+- [Get the app store versions resource id for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
   Get IDs for App Store Versions related to a default App Clip experience.
 
 

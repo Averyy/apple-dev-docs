@@ -22,12 +22,14 @@ When your app enters a multitasking mode, this entitlement allows it to continue
 
 ## See Also
 
-- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
-  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
+- [com.apple.developer.media-device-extension](entitlements/com.apple.developer.media-device-extension.md)
+  An array of media sharing protocol identifiers that an extension supports.
 - [com.apple.developer.coremotion.head-pose](entitlements/com.apple.developer.coremotion.head-pose.md)
   An entitlement that enables someone’s head movement to determine the orientation of spatialized sound output.
 - [com.apple.developer.spatial-audio.profile-access](entitlements/com.apple.developer.spatial-audio.profile-access.md)
   An entitlement that enables your app to use the personalized spatial audio profile.
+- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
+  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 
 
 ---

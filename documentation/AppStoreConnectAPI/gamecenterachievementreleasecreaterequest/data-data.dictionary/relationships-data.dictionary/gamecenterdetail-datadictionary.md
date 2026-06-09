@@ -16,6 +16,7 @@ object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDe
 
 ### Objects
 - [object GameCenterAchievementReleaseCreateRequest.Data.Relationships.GameCenterDetail.Data](gamecenterachievementreleasecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center achievement release.
 
 ## Properties
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create a challenge resource.
+The request body for creating a localization for a Game Center challenge.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,6 +18,7 @@ object GameCenterChallengeLocalizationCreateRequest
 
 ### Dictionaries
 - [object GameCenterChallengeLocalizationCreateRequest.Data](gamecenterchallengelocalizationcreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center challenge localization.
 
 ## Properties
 
@@ -29,11 +30,11 @@ object GameCenterChallengeLocalizationCreateRequest
   The data structure that represent a challenge localization.
 - [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
 - [object GameCenterChallengeLocalizationResponse](gamecenterchallengelocalizationresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single localization for a Game Center challenge.
 - [object GameCenterChallengeLocalizationUpdateRequest](gamecenterchallengelocalizationupdaterequest.md)
   The request body you use to update a challenge.
 - [object GameCenterChallengeLocalizationsResponse](gamecenterchallengelocalizationsresponse.md)
-  A response that contains a list of challenge resources.
+  A response containing a list of localizations for a Game Center challenge.
 - [object GameCenterChallengeVersionLocalizationsLinkagesResponse](gamecenterchallengeversionlocalizationslinkagesresponse.md)
 
 

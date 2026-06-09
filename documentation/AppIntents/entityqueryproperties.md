@@ -55,12 +55,6 @@ var properties = QueryProperties {
   An object that provides the supported comparators you use to describe the different ways users can query against a property of an app entity.
 - [Property comparators](property-comparators.md)
   Specify the type of comparison to perform during a property-matched query.
-- [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
-  The potential properties you can use to sort the results of a query.
-- [struct EntityQuerySortableByProperty](entityquerysortablebyproperty.md)
-  Details about a specific property you use to sort the query results.
-- [struct EntityQuerySort](entityquerysort.md)
-  The properties to use to sort the results when the query runs.
 
 
 ---

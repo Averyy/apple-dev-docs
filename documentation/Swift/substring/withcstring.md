@@ -17,7 +17,7 @@ Calls the given closure with a pointer to the contents of the string, represente
 ## Declaration
 
 ```swift
-func withCString<Result>(_ body: (UnsafePointer<CChar>) throws -> Result) rethrows -> Result
+func withCString<Result, E>(_ body: (UnsafePointer<CChar>) throws(E) -> Result) throws(E) -> Result where E : Error
 ```
 
 #### Return Value

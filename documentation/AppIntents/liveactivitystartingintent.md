@@ -28,12 +28,10 @@ protocol LiveActivityStartingIntent : SystemIntent
 
 ## See Also
 
-- [protocol ControlConfigurationIntent](controlconfigurationintent.md)
-  An interface for configuring a Control Center module.
-- [protocol LiveActivityIntent](liveactivityintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
-- [protocol WidgetConfigurationIntent](widgetconfigurationintent.md)
-  An interface for configuring a WidgetKit widget.
+- [protocol AudioStartingIntent](audiostartingintent.md)
+  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
+- [protocol ForegroundContinuableIntent](foregroundcontinuableintent.md)
+  A protocol you use for app intents which begin their work with the app in the background but may request to continue in the foreground.
 
 
 ---

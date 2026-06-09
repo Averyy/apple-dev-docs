@@ -47,7 +47,6 @@ You set these attributes when adding attachments to a [`CVBuffer`](cvbuffer.md) 
 ## See Also
 
 - [class CVBuffer](cvbuffer.md)
-  A reference to a Core Video buffer.
 
 
 ---

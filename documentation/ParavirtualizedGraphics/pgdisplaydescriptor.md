@@ -26,12 +26,8 @@ class PGDisplayDescriptor
 - [var queue: dispatch_queue_t?](pgdisplaydescriptor/queue.md)
   The queue that the framework uses when dispatching messages to any of the display’s registered handlers.
 ### Managing Cursor Events
-- [var cursorGlyphHandler: PGDisplayCursorGlyphHandler?](pgdisplaydescriptor/cursorglyphhandler.md)
-  A handler that the framework calls to change the cursor’s appearance.
 - [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplaydescriptor/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
-- [typealias PGDisplayCursorGlyphHandler](pgdisplaycursorglyphhandler.md)
-  The block signature for a routine that handles changes to the cursor’s appearance.
 - [typealias PGDisplayCursorShowHandler](pgdisplaycursorshowhandler.md)
   The block signature for a routine that handles changes to the cursor’s visibility.
 ### Handling Mode Changes

@@ -1,4 +1,4 @@
-# Download Sales and Trends Reports
+# Download sales and trends reports
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -59,7 +59,7 @@ Each sales report type has specific valid values for `reportType`, `reportSubTyp
 
 ## See Also
 
-- [Download Finance Reports](get-v1-financereports.md)
+- [Download finance reports](get-v1-financereports.md)
   Download finance reports filtered by your specified criteria.
 
 

@@ -11,6 +11,7 @@ A specialized button for toggling the visibility of a window.
 ## Declaration
 
 ```swift
+nonisolated
 struct WindowVisibilityToggle<Label> where Label : View
 ```
 

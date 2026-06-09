@@ -158,9 +158,7 @@ Assign texture resources to material parameters to provide color and fine surfac
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

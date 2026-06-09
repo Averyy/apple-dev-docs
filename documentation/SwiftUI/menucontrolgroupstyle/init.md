@@ -16,6 +16,7 @@ Creates a menu control group style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

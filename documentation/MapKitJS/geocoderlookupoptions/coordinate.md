@@ -11,7 +11,7 @@ Coordinates for constraining the lookup results.
 ## Declaration
 
 ```swift
-coordinate?: Coordinate;
+coordinate?: CoordinateData;
 ```
 
 #### Discussion
@@ -26,6 +26,8 @@ Tell the geocoder to return results around this coordinate. For example, constra
   A list of countries for constraining the lookup results.
 - [region](geocoderlookupoptions/region.md)
   A region for constraining lookup results.
+- [signal](geocoderlookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

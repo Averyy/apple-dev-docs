@@ -1,4 +1,4 @@
-# Get the Image ID for a Challenge Localization
+# Get the image id for a challenge localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -24,7 +24,7 @@ Get the image ID for a specific Game Center challenge localization.
   Get details about the image for a specific Game Center challenge localization.
 - [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the Localization IDs for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the localization ids for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
 - [Add a Challenge Localization](post-v1-gamecenterchallengelocalizations.md)
   Add a localization for a specific Game Center challenge.

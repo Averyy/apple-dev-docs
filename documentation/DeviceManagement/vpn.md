@@ -12,8 +12,6 @@ The payload that configures a VPN.
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,9 +30,9 @@ Specify `com.apple.vpn.managed` as the payload type.
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS |
 
 ##### Profile Example
@@ -133,14 +131,14 @@ Specify `com.apple.vpn.managed` as the payload type.
 
 ## Properties
 
-- `AlwaysOn` (VPN.AlwaysOn): The dictionary to use when `VPNType` is `AlwaysOn`. Not available in tvOS or watchOS.
-- `DNS` (VPN.DNS): A dictionary to use for all VPN types.
-- `IKEv2` (VPN.IKEv2): The dictionary to use when `VPNType` is `IKEv2`.
-- `IPSec` (VPN.IPSec): The dictionary that contains IPSec settings. Not available in watchOS.
-- `IPv4` (VPN.IPv4): The dictionary that contains IPv4 settings. Not available in watchOS.
-- `PPP` (VPN.PPP): The dictionary to use when `VPNType` is `L2TP` or `PTPP`. Not available in watchOS.
-- `Proxies` (VPN.Proxies): The dictionary to use to configure `Proxies` for use with `VPN`.
-- `TransparentProxy` (VPN.TransparentProxy): The dictionary to use when `VPNType` is `TransparentProxy`. Available in macOS 14 and later.
+- `AlwaysOn` (VPN.AlwaysOn): The dictionary to use when `VPNType` is `AlwaysOn`. Not available in tvOS or watchOS. Available: iOS 8+ | iPadOS 8+ | visionOS 1+
+- `DNS` (VPN.DNS): A dictionary to use for all VPN types. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+- `IKEv2` (VPN.IKEv2): The dictionary to use when `VPNType` is `IKEv2`. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+- `IPSec` (VPN.IPSec): The dictionary that contains IPSec settings. Not available in watchOS. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
+- `IPv4` (VPN.IPv4): The dictionary that contains IPv4 settings. Not available in watchOS. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
+- `PPP` (VPN.PPP): The dictionary to use when `VPNType` is `L2TP` or `PTPP`. Not available in watchOS. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1+
+- `Proxies` (VPN.Proxies): The dictionary to use to configure `Proxies` for use with `VPN`. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | tvOS 17+ | visionOS 1+ | watchOS 10+
+- `TransparentProxy` (VPN.TransparentProxy): The dictionary to use when `VPNType` is `TransparentProxy`. Available: macOS 14+
 - `UserDefinedName` (string) *(required)*: The description of the VPN connection that the system displays on the device. Not available in watchOS.
 - `VendorConfig` (VPN.VendorConfig): The vendor-specific configuration dictionary, which the system reads only when `VPNSubType` has a value. Not available in watchOS.
 - `VPN` (VPN.VPN): The dictionary to use when `VPNType` is `VPN`.

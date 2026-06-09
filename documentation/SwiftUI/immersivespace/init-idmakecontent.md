@@ -11,6 +11,7 @@ Creates the immersive space associated with the specified identifier.
 ## Declaration
 
 ```swift
+nonisolated
 init(id: String, @ImmersiveSpaceContentBuilder makeContent: @escaping () -> Content) where Data == Never
 ```
 

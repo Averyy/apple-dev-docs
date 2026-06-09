@@ -112,6 +112,9 @@ enum Code
 - [NFCReaderError.Code.readerErrorSecurityViolation](nfcreadererror-swift.struct/code/readererrorsecurityviolation.md)
   A security violation associated with the reader session has occurred.
 ### Enumeration Cases
+- [NFCReaderError.Code.paymentTagReaderSessionErrorLocationAuthorizationDenied](nfcreadererror-swift.struct/code/paymenttagreadersessionerrorlocationauthorizationdenied.md)
+- [NFCReaderError.Code.paymentTagReaderSessionErrorLocationServiceRestricted](nfcreadererror-swift.struct/code/paymenttagreadersessionerrorlocationservicerestricted.md)
+- [NFCReaderError.Code.paymentTagReaderSessionErrorOnDeviceLocationUnavailable](nfcreadererror-swift.struct/code/paymenttagreadersessionerrorondevicelocationunavailable.md)
 - [NFCReaderError.Code.readerErrorAccessNotAccepted](nfcreadererror-swift.struct/code/readererroraccessnotaccepted.md)
 - [NFCReaderError.Code.readerErrorIneligible](nfcreadererror-swift.struct/code/readererrorineligible.md)
 ### Initializers

@@ -50,7 +50,7 @@ print(x.overlaps(y))
 
 - [static func == (Range<Bound>, Range<Bound>) -> Bool](range/==(_:_:).md)
   Returns a Boolean value indicating whether two ranges are equal.
-- [static func != (Self, Self) -> Bool](range/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](range/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func overlaps(ClosedRange<Bound>) -> Bool](range/overlaps(_:)-9fkb2.md)
   Returns a Boolean value indicating whether this range and the given closed range contain an element in common.

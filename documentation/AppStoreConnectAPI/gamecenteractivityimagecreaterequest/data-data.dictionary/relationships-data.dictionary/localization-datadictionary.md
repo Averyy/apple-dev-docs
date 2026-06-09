@@ -16,6 +16,7 @@ object GameCenterActivityImageCreateRequest.Data.Relationships.Localization
 
 ### Dictionaries
 - [object GameCenterActivityImageCreateRequest.Data.Relationships.Localization.Data](gamecenteractivityimagecreaterequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center activity image.
 
 ## Properties
 

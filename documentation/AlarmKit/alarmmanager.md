@@ -8,6 +8,7 @@ An object that exposes functions to work with alarms: scheduling, snoozing, canc
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

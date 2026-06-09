@@ -18,7 +18,7 @@ Creates a progress view for showing determinate progress, with a custom label.
 
 ```swift
 nonisolated
-init<V>(value: V?, total: V = 1.0, @ViewBuilder label: () -> Label) where CurrentValueLabel == EmptyView, V : BinaryFloatingPoint
+init<V>(value: V?, total: V = 1.0, @ContentBuilder label: () -> Label) where CurrentValueLabel == EmptyView, V : BinaryFloatingPoint
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ If the value is non-`nil`, but outside the range of `0.0` through `total`, the p
 
 - `value`: The completed amount of the task to this point, in a range of `0.0` to `total`, or `nil` if the progress is indeterminate.
 - `total`: The full amount representing the complete scope of the task, meaning the task is complete if `value` equals `total`. The default value is `1.0`.
-- `label`: A view builder that creates a view that describes the task in progress.
+- `label`: A content builder that creates a view that describes the task in progress.
 
 ## See Also
 

@@ -5,9 +5,9 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](uint128/!=(_:_:)-68qot.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](uint128/!=(_:_:)-32vjl.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func != (Self, Self) -> Bool](uint128/!=(_:_:)-988om.md)
+- [static func != (Self, Self) -> Bool](uint128/!=(_:_:)-68qot.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (UInt128, UInt128) -> Bool](uint128/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

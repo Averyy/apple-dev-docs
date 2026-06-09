@@ -115,6 +115,14 @@ The [`isDelegate`](https://developer.apple.com/documentation/EventKit/EKSource/i
 
 ## See Also
 
+- [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
+  Test your app and improve compatibility with iPhone Mirroring.
+- [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
+  Update existing code for two foundational changes in SwiftUI built with Xcode 27.
+- [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
+  Use gesture recognizers to handle Sidecar touch input and update your event-handling code for macOS 27.
+- [TN3208: Preparing your app’s launch screen to meet App Store requirements](tn3208-preparing-your-apps-launch-screen-to-meet-app-store-requirements.md)
+  Understand the launch screen requirement for App Store submission starting in iOS 27 and iPadOS 27.
 - [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
   Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
@@ -137,14 +145,6 @@ The [`isDelegate`](https://developer.apple.com/documentation/EventKit/EKSource/i
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
-- [TN3189: Managing Mail background traffic load](tn3189-managing-mail-background-traffic-load.md)
-  Identify iOS Mail background traffic and manage its impact on your IMAP server.
-- [TN3187: Migrating to the UIKit scene-based life cycle](tn3187-migrating-to-the-uikit-scene-based-life-cycle.md)
-  Update your app to receive scene-based life-cycle events and manage your user interface using scene objects and methods.
-- [TN3188: Troubleshooting In-App Purchases availability in the App Store](tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md)
-  Verify your In-App Purchases are approved and available for sale in the App Store.
 
 
 ---

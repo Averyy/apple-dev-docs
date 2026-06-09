@@ -101,6 +101,7 @@ enum Track
 - [MusicPlaylistAddable](musicplaylistaddable.md)
 - [MusicPropertyContainer](musicpropertycontainer.md)
 - [MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
+- [PickableMusicItem](pickablemusicitem.md)
 - [PlayableMusicItem](playablemusicitem.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

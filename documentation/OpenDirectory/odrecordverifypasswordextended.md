@@ -12,7 +12,7 @@ Verifies a given password for a record given a specified authentication method.
 ## Declaration
 
 ```swift
-func ODRecordVerifyPasswordExtended(_ record: ODRecordRef!, _ authType: String!, _ authItems: CFArray!, _ outAuthItems: UnsafeMutablePointer<Unmanaged<CFArray>?>!, _ outContext: UnsafeMutablePointer<Unmanaged<ODContext>?>!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ODRecordVerifyPasswordExtended(_ record: ODRecordRef!, _ authType: String!, _ authItems: CFArray!, _ outAuthItems: UnsafeMutablePointer<Unmanaged<CFArray>?>!, _ outContext: UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
 #### Return Value
@@ -58,7 +58,7 @@ func ODRecordVerifyPasswordExtended(_ record: ODRecordRef!, _ authType: String!,
   Removes a value from a record’s attribute.
 - [func ODRecordSetNodeCredentials(ODRecordRef!, CFString!, CFString!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordsetnodecredentials(_:_:_:_:).md)
   Sets node authentication credentials for a given record.
-- [func ODRecordSetNodeCredentialsExtended(ODRecordRef!, String!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContext>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordsetnodecredentialsextended(_:_:_:_:_:_:_:).md)
+- [func ODRecordSetNodeCredentialsExtended(ODRecordRef!, String!, String!, CFArray!, UnsafeMutablePointer<Unmanaged<CFArray>?>!, UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordsetnodecredentialsextended(_:_:_:_:_:_:_:).md)
   Sets node authentication credentials for a record using a specified authentication method.
 - [func ODRecordSetValue(ODRecordRef!, String!, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](odrecordsetvalue(_:_:_:_:).md)
   Sets one or more attribute values of a record.

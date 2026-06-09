@@ -23,9 +23,9 @@ object BetaGroupsWithoutIncludesResponse
 ## See Also
 
 - [object BetaGroup](betagroup.md)
-  The data structure that represents a Beta Groups resource.
+  A group of beta testers and builds that you use to manage TestFlight distribution for an app.
 - [object BetaGroupResponse](betagroupresponse.md)
-  A response that contains a single Beta Groups resource.
+  The response body for endpoints that create, read, or modify a TestFlight beta group.
 - [object BetaGroupCreateRequest](betagroupcreaterequest.md)
   The request body you use to create a Beta Group.
 - [object BetaGroupUpdateRequest](betagroupupdaterequest.md)
@@ -39,8 +39,9 @@ object BetaGroupsWithoutIncludesResponse
 - [object BetaGroupBuildsLinkagesResponse](betagroupbuildslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [object BetaPublicLinkUsagesV1MetricResponse](betapubliclinkusagesv1metricresponse.md)
+  A metrics response containing usage data for a TestFlight public invite link, showing tester enrollment trends.
 - [object BetaGroupsResponse](betagroupsresponse.md)
-  A response that contains a list of Beta Group resources.
+  The response body for endpoints that list TestFlight beta groups.
 - [object BetaGroupAppLinkageResponse](betagroupapplinkageresponse.md)
 - [object BetaGroupBetaRecruitmentCriteriaLinkageResponse](betagroupbetarecruitmentcriterialinkageresponse.md)
 - [object BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse](betagroupbetarecruitmentcriterioncompatiblebuildchecklinkageresponse.md)

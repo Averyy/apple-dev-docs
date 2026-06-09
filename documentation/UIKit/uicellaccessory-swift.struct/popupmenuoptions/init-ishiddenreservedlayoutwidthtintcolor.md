@@ -9,7 +9,6 @@ Creates a popup menu accessory options structure.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

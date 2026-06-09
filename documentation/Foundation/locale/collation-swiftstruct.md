@@ -25,6 +25,8 @@ struct Collation
 ### Creating a collation
 - [init(String)](locale/collation-swift.struct/init(_:).md)
   Creates a collation from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/collation-swift.struct/init(stringliteral:).md)
+  Creates a collation from a BCP 47 identifier as a string literal.
 ### Examining collation properties
 - [var identifier: String](locale/collation-swift.struct/identifier.md)
   The collation’s BCP 47 identifier.

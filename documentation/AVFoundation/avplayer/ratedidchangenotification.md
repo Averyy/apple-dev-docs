@@ -48,6 +48,10 @@ Observing this notification is similar to key-value observing the rate property,
   Pauses playback of the current item.
 - [var rate: Float](avplayer/rate.md)
   The current playback rate.
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+  Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
+- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
+  Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 
 
 ---

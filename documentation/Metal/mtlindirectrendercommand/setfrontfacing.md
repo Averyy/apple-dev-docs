@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func setFrontFacing(_ frontFacingWindning: MTLWinding)
+func setFrontFacing(_ frontFacingWinding: MTLWinding)
 ```
 
 

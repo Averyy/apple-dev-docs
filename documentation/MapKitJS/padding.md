@@ -11,7 +11,7 @@ The values that define content padding within the map view frame.
 ## Declaration
 
 ```swift
-class Padding
+class Padding implements PaddingData
 ```
 
 #### Overview
@@ -35,8 +35,6 @@ You can use a [`Padding`](padding.md) object when setting the map’s [`padding`
   Creates a padding object and initializes it with the provided top, right, and bottom values.
 - [new Padding(top, right, bottom, left)](padding/paddingconstructor5.md)
   Creates a padding object and initializes it with the provided values.
-- [interface PaddingConstructorOptions](paddingconstructoroptions.md)
-  Initial values of the edge insets for padding.
 ### Controlling the map’s padding
 - [bottom](padding/bottom.md)
   The amount of padding, in CSS pixels, to inset the map from the bottom edge.
@@ -57,10 +55,15 @@ You can use a [`Padding`](padding.md) object when setting the map’s [`padding`
 - [toString()](padding/tostring.md)
   Returns a string representation of the padding object.
 
+## Relationships
+
+### Conforms To
+- [PaddingData](paddingdata.md)
+
 ## See Also
 
-- [const FeatureVisibility](featurevisibility.md)
-  Constants indicating the visibility of different adaptive map features.
+- [interface PaddingData](paddingdata.md)
+  A plain object representation of edge inset values.
 
 
 ---

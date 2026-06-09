@@ -13,6 +13,7 @@ A polygon that defines the boundary of an area in the image.
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

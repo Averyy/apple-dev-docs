@@ -71,6 +71,8 @@ Manage the configuration of new scenes from your [`UIApplicationDelegate`](uiapp
   The centralized point of control and coordination for apps running in iOS.
 - [protocol UIApplicationDelegate](uiapplicationdelegate.md)
   A set of methods to manage shared behaviors for your app.
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+  Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 
 ---

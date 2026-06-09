@@ -16,6 +16,7 @@ object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices
 
 ### Objects
 - [object InAppPurchasePriceScheduleCreateRequest.Data.Relationships.ManualPrices.Data](inapppurchasepriceschedulecreaterequest/data-data.dictionary/relationships-data.dictionary/manualprices-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an in-app purchase price schedule.
 
 ## Properties
 

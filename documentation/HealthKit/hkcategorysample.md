@@ -22,6 +22,7 @@ class HKCategorySample
 ## Mentions
 
 - [About the HealthKit framework](about-the-healthkit-framework.md)
+- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
 - [Saving data to HealthKit](saving-data-to-healthkit.md)
 
 #### Overview

@@ -73,7 +73,7 @@
   Accesses the element at `position`.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazysequence/subscript(_:)-1iwxl.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](lazysequence/subscript(_:)-1rlj.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](lazysequence/subscript(_:)-1rlj.md)
 - [subscript(Range<Self.Index>) -> Slice<Self>](lazysequence/subscript(_:)-8iflg.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](lazysequence/subscript(_:)-9kt1v.md)

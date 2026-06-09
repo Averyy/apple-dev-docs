@@ -37,7 +37,6 @@ struct AppShortcutPhrase<Intent> where Intent : AppIntent
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
-- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
   Dynamic values you can include in the spoken phrases that run your shortcut.
 - [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
@@ -52,6 +51,7 @@ struct AppShortcutPhrase<Intent> where Intent : AppIntent
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 - [enum ShortcutTileColor](shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 
 
 ---

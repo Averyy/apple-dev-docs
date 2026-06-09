@@ -29,6 +29,24 @@ class VZEFIVariableStore
 ### Initializers
 - [init(URL: URL)](vzefivariablestore/init(url:)-8ewtl.md)
 - [init(creatingVariableStoreAtURL: URL, options: VZEFIVariableStore.InitializationOptions) throws](vzefivariablestore/init(creatingvariablestoreaturl:options:).md)
+### Instance Properties
+- [var enrolledSecureBootSignatures: VZEFISignatureDatabaseConfiguration](vzefivariablestore/enrolledsecurebootsignatures.md)
+  The currently enrolled Key Exchange Key (KEK), allowed signature database (db), and forbidden signature database (dbx) signatures.
+- [var isSecureBootEnabled: Bool](vzefivariablestore/issecurebootenabled.md)
+  A Boolean value that indicates whether Secure Boot is in an enabled state in the variable store.
+### Instance Methods
+- [func disableSecureBoot() throws](vzefivariablestore/disablesecureboot.md)
+  Disables Secure Boot while preserving the existing configuration.
+- [func enableSecureBoot(platformKey: SecCertificate) throws](vzefivariablestore/enablesecureboot(platformkey:).md)
+  Enables Secure Boot with a custom Platform Key.
+- [func enableSecureBootUsingDefaultPlatformKey() throws](vzefivariablestore/enablesecurebootusingdefaultplatformkey.md)
+  Enables Secure Boot with an Apple-managed Platform Key.
+- [func enrollDefaultSecureBootSignatures() throws](vzefivariablestore/enrolldefaultsecurebootsignatures.md)
+  Enrolls the default signatures to Secure Boot databases.
+- [func enrollSecureBootSignatures(VZEFISignatureDatabaseConfiguration) throws](vzefivariablestore/enrollsecurebootsignatures(_:).md)
+  Enrolls the given signatures to Secure Boot databases.
+- [func resetSecureBoot() throws](vzefivariablestore/resetsecureboot.md)
+  Clears any previously applied Secure Boot configuration and disables Secure Boot.
 
 ## Relationships
 

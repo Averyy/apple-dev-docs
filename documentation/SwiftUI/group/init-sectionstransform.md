@@ -17,7 +17,7 @@ Constructs a group from the sections of the given view.
 ## Declaration
 
 ```swift
-init<Base, Result>(sections view: Base, @ViewBuilder transform: @escaping (SectionCollection) -> Result) where Content == GroupSectionsOfContent<Base, Result>, Base : View, Result : View
+init<Base, Result>(sections view: Base, @ContentBuilder transform: @escaping (SectionCollection) -> Result) where Content == GroupSectionsOfContent<Base, Result>, Base : View, Result : View
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ Sections are constructed lazily, on demand, so access only as much of this colle
 struct SectionedStack<Content: View>: View {
     var content: Content
 
-    init(@ViewBuilder content: () -> Content) {
+    init(@ContentBuilder content: () -> Content) {
         self.content = content()
     }
 
@@ -50,7 +50,7 @@ struct SectionedStack<Content: View>: View {
 }
 ```
 
-This can then be used by creating a `SectionedStack` with it’s view builder-based initializer.
+This can then be used by creating a `SectionedStack` with it’s content builder-based initializer.
 
 ```swift
 SectionedStack {
@@ -84,6 +84,13 @@ SectionedStack {
 ## Parameters
 
 - `view`: The view to extract the sections of.
+
+## See Also
+
+- [init(content:)](group/init(content:).md)
+  Creates a group of map content.
+- [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](group/init(subviews:transform:).md)
+  Constructs a group from the subviews of the given view.
 
 
 ---

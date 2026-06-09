@@ -11,6 +11,7 @@ The default label of a window visibility toggle.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultWindowVisibilityToggleLabel
 ```
 

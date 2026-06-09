@@ -25,6 +25,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
+- [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 - [struct ModelComponent](modelcomponent.md)
   A component that contains a mesh and materials for the visual appearance of an entity.
 - [class MeshResource](meshresource.md)
@@ -176,6 +178,8 @@ Display meshes in your scene by creating a [`ModelComponent`](modelcomponent.md)
   Present videos in your RealityKit experiences.
 - [Images](scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 
 ---

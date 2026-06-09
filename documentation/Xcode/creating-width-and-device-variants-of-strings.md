@@ -6,7 +6,7 @@ Change a localized string for different interface widths and devices.
 
 #### Overview
 
-> ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to create width and device variants of strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
+> ❗ **Important**: In Xcode 15 and later, use Dynamic Type instead of width variants and string catalogs to create device variants. For more information, see [`Supporting multiple languages in your app`](supporting-multiple-languages-in-your-app.md) and  [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
 
 You can use a `.stringsdict` file to provide variants of a string for different view widths and for different devices. For example, display a different string for an iOS device in landscape or in portrait mode, or display a different string when your iPad app built with Mac Catalyst runs on a Mac.
 
@@ -24,7 +24,7 @@ To add a `.stringsdict` file to your project, choose File > New > File from Temp
 
 A *width rule* specifies variants for different available widths in the user interface. It contains a single dictionary with a single key-value pair. The key in the dictionary is `NSStringVariableWidthRuleType` and the value is another dictionary with key-value pairs for each variant. The key for a variant is a width and the value is a string.
 
-In the following `.stringsdict` file, for the `hello `string in the code,` `the width variations are `1`, `22`, and `53`, and the values are `Hi`, `Hello`, and `Greetings and Salutations`:
+In the following `.stringsdict` file, for the `hello` string in the code, the width variations are `1`, `22`, and `53`, and the values are `Hi`, `Hello`, and `Greetings and Salutations`:
 
 ```other
 <plist version="1.0">
@@ -53,7 +53,7 @@ The width rule defines variants for a range of widths:
 - If the width is between two numerically sequential keys, the API returns the variant with the smaller key.
 - If the width is less than all keys, the API returns the variant for the smallest key.
 
-In the code above, if the width is `2`, the macro returns `Hi`. If the width is `55`, the macro returns `Hello`.
+In the code above, if the width is `2`, the macro returns `Hi`. If the width is `52`, the macro returns `Hello`.
 
 To get a variant for a specific width in your code, see the [`variantFittingPresentationWidth(_:)`](https://developer.apple.com/documentation/Foundation/NSString/variantFittingPresentationWidth(_:)) method.
 

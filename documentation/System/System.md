@@ -35,6 +35,23 @@ Perform low-level file operations using type-safe APIs.
   An error number used by system calls to communicate what kind of error occurred.
 ### Protocols
 - [protocol MachPortRight](machportright.md)
+### Structures
+- [struct DeviceID](deviceid.md)
+  A Swift wrapper of the C `dev_t` type.
+- [struct FileFlags](fileflags.md)
+  File-specific flags found in the `st_flags` property of a `stat` struct or used as input to `chflags()`.
+- [struct FileMode](filemode.md)
+  A strongly-typed file mode representing a C `mode_t`.
+- [struct FileType](filetype.md)
+  A file type matching those contained in a C `mode_t`.
+- [struct GroupID](groupid.md)
+  A Swift wrapper of the C `gid_t` type.
+- [struct Inode](inode.md)
+  A Swift wrapper of the C `ino_t` type.
+- [struct Stat](stat.md)
+  A Swift wrapper of the C `stat` struct.
+- [struct UserID](userid.md)
+  A Swift wrapper of the C `uid_t` type.
 ### Enumerations
 - [enum CInterop](cinterop.md)
   A namespace for C and platform types

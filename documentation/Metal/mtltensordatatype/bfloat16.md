@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits and 1 sign bit.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

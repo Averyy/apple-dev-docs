@@ -1,4 +1,4 @@
-# Modify a Beta App Localization
+# Modify a beta app localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,13 +22,13 @@ Update the localized information for a specific beta app and locale.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaAppLocalizations` resource ID from the [`List Beta App Localizations`](get-v1-betaapplocalizations.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `betaAppLocalizations` resource ID from the [`List beta app localizations`](get-v1-betaapplocalizations.md) response.
 
 ## See Also
 
-- [Create a Beta App Localization](post-v1-betaapplocalizations.md)
+- [Create a beta app localization](post-v1-betaapplocalizations.md)
   Create localized descriptive information for an app.
-- [Delete a Beta App Localization](delete-v1-betaapplocalizations-_id_.md)
+- [Delete a beta app localization](delete-v1-betaapplocalizations-_id_.md)
   Delete a beta app localization associated with an app.
 
 

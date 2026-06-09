@@ -17,6 +17,7 @@ Creates an automatic labeled content style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

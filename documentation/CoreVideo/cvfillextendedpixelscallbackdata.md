@@ -47,6 +47,12 @@ For more information about defining a custom pixel format, see [`Pixel Format De
 
 - [struct CVPixelFormatDescription](cvpixelformatdescription.md)
   Defines a pixel format which can be used to create custom pixel buffer types.
+- [struct CVPixelFormatType](cvpixelformattype.md)
+  Identifier for a pixel format type
+- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+  Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
+- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+  Pattern indicating sensel arrangement.
 
 
 ---

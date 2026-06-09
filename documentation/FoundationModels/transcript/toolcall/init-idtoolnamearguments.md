@@ -9,12 +9,17 @@
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(id: String, toolName: String, arguments: GeneratedContent)
 ```
+
+## See Also
+
+- [init(id: String, metadata: [String : any Codable & Sendable & Equatable], toolName: String, arguments: GeneratedContent)](transcript/toolcall/init(id:metadata:toolname:arguments:).md)
 
 
 ---

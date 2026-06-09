@@ -22,12 +22,12 @@ For more information see [`App Review information`](https://developer.apple.comh
 ## Topics
 
 ### Creating, Modifying, and Reading Review Details
-- [Create an App Store Review Detail](post-v1-appstorereviewdetails.md)
+- [Create an app store review detail](post-v1-appstorereviewdetails.md)
   Add App Store review details to an App Store version, including contact and demo account information.
-- [Read App Store Review Detail Information](get-v1-appstorereviewdetails-_id_.md)
+- [Read app store review detail information](get-v1-appstorereviewdetails-_id_.md)
   Get App Review details you provided, including contact information, demo account, and notes.
-- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
-- [Modify an App Store Review Detail](patch-v1-appstorereviewdetails-_id_.md)
+- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [Modify an app store review detail](patch-v1-appstorereviewdetails-_id_.md)
   Update the App Store review details, including the contact information, demo account, and notes.
 ### Objects
 - [object AppStoreReviewDetail](appstorereviewdetail.md)
@@ -37,7 +37,7 @@ For more information see [`App Review information`](https://developer.apple.comh
 - [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
 - [object AppStoreReviewDetailResponse](appstorereviewdetailresponse.md)
-  A response that contains a single App Store Review Details resource.
+  The response body for endpoints that read or modify App Store review details for a version.
 - [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 ## See Also

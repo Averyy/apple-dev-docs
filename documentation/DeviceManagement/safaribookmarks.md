@@ -11,8 +11,6 @@ The declaration to configure managed bookmarks in Safari.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,10 +28,11 @@ Specify `com.apple.configuration.safari.bookmarks` as the declaration type.
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, visionOS |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Example
 
@@ -106,20 +105,20 @@ This configuration applies a set of managed bookmarks: two bookmarks and one boo
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

@@ -16,6 +16,7 @@ object GameCenterActivityLocalization.Relationships.Image
 
 ### Dictionaries
 - [object GameCenterActivityLocalization.Relationships.Image.Data](gamecenteractivitylocalization/relationships-data.dictionary/image-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a activity.
 
 ## Properties
 

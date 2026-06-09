@@ -32,6 +32,8 @@ Thie value is key-value observable.
   Starts Picture in Picture, if possible.
 - [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
   Stops Picture in Picture, if active.
+- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 
 ---

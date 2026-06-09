@@ -11,8 +11,6 @@ Clear the Activation Lock bypass code on a device.
 - Mac Catalyst 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -23,10 +21,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, visionOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -75,7 +73,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ClearActivationLockBypassCodeCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

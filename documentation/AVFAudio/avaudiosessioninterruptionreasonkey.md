@@ -9,6 +9,7 @@ A user info key to retrieve the interruption reason.
 - iOS 14.5+
 - iPadOS 14.5+
 - Mac Catalyst 14.5+
+- tvOS ?+
 - visionOS 1.0+
 - watchOS 7.3+
 

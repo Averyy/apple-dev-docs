@@ -40,6 +40,8 @@ For more information on formatting your merchant token usage information, see [`
   Details about a deferred payment, such as a hotel booking or a preorder.
 - [object PastPayment](../applepaymerchanttokenusageinformation/pastpayment.md)
   A past payment.
+- [object PaymentIssueDetails](../applepaymerchanttokenusageinformation/paymentissuedetails.md)
+  Details about a payment issue, such as a declined payment.
 - [object RecurringPaymentDetails](../applepaymerchanttokenusageinformation/recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
 - [object UpcomingPayment](../applepaymerchanttokenusageinformation/upcomingpayment.md)

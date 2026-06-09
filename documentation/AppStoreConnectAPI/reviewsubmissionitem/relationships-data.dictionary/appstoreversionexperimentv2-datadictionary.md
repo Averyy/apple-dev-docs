@@ -16,6 +16,7 @@ object ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2
 
 ### Objects
 - [object ReviewSubmissionItem.Relationships.AppStoreVersionExperimentV2.Data](reviewsubmissionitem/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a review submission item.
 
 ## Properties
 

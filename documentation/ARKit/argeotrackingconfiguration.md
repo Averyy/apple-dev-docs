@@ -85,6 +85,9 @@ Localization imagery is available for specific areas in over 20 countries, inclu
   A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
 - [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
+### Instance Properties
+- [var trackingObjects: Set<ARReferenceObject>](argeotrackingconfiguration/trackingobjects.md)
+  Objects to track in the scene.
 
 ## Relationships
 

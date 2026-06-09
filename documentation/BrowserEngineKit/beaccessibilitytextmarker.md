@@ -11,6 +11,7 @@ An abstract class that represents a location in an element’s accessibility tex
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
+- watchOS 11.2+
 
 ## Declaration
 

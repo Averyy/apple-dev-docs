@@ -26,7 +26,7 @@ func CFPreferencesSynchronize(_ applicationID: CFString, _ userName: CFString, _
 
 #### Discussion
 
-This function is the primitive synchronize mechanism for the higher level preference function [`CFPreferencesAppSynchronize(_:)`](cfpreferencesappsynchronize(_:).md); it writes updated preferences to permanent storage, and reads the latest preferences from permanent storage. Only the exact domain specified is modified. Note that to modify “Any User” preferences requires root privileges (or Admin privileges prior to OS X v10.6)—see [`Authorization Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995).
+This function is the primitive synchronize mechanism for the higher level preference function [`CFPreferencesAppSynchronize(_:)`](cfpreferencesappsynchronize(_:).md); it writes updated preferences to permanent storage, and reads the latest preferences from permanent storage. Only the exact domain specified is modified. Note that to modify “Any User” preferences requires root privileges (or Admin privileges prior to OS X v10.7)—see [`Authorization Services Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html#//apple_ref/doc/uid/TP30000995).
 
 Do not use this function directly unless you have a specific need. All arguments must be non- `NULL`. Do not use arbitrary user and host names, instead pass the pre-defined constants.
 

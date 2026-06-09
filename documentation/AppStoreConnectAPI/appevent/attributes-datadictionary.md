@@ -22,7 +22,9 @@ object AppEvent.Attributes
 
 ### Objects
 - [object AppEvent.Attributes.ArchivedTerritorySchedules](appevent/attributes-data.dictionary/archivedterritoryschedules-data.dictionary.md)
+  The archived per-territory schedule attributes within an app event, representing previously active territory schedules.
 - [object AppEvent.Attributes.TerritorySchedules](appevent/attributes-data.dictionary/territoryschedules-data.dictionary.md)
+  The per-territory schedule attributes within an app event, defining the start, end, publish dates, and targeted territories.
 
 ## Properties
 
@@ -40,6 +42,7 @@ object AppEvent.Attributes
 ## See Also
 
 - [object AppEvent.Relationships](appevent/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

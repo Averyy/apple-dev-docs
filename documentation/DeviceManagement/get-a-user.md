@@ -6,8 +6,7 @@
 Get information about a particular user.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 #### Discussion
 

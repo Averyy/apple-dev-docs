@@ -27,7 +27,7 @@ The example below defines a view that shows its content with a rounded rectangle
 
 ```swift
 struct PlatterContainer<Content: View> : View {
-    @ViewBuilder var content: Content
+    @ContentBuilder var content: Content
     var body: some View {
         content
             .padding()
@@ -45,7 +45,7 @@ struct PlatterContainer<Content: View> : View {
 - [protocol InsettableShape](insettableshape.md)
   A shape type that is able to inset itself to produce another shape.
 - [struct ContainerRelativeShape](containerrelativeshape.md)
-  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+  A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 
 ---

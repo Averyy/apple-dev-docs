@@ -11,7 +11,7 @@ The country or region of the place.
 ## Declaration
 
 ```swift
-country?: string;
+country: string | null;
 ```
 
 #### Discussion

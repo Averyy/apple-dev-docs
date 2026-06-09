@@ -36,6 +36,11 @@ In this gesture recognizer, the [`location(in:)`](nsgesturerecognizer/location(i
   Changes the current translation value of the gesture recognizer.
 - [func velocity(in: NSView?) -> NSPoint](nspangesturerecognizer/velocity(in:).md)
   The velocity of the pan, measured in points per second.
+### Instance Properties
+- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
+  The maximum number of touches allowed to recognize this gesture
+- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+  The minimum number of touches needed to recognize this gesture
 
 ## Relationships
 

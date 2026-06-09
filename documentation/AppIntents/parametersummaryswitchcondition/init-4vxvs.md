@@ -42,6 +42,7 @@ static var parameterSummary: some ParameterSummary {
 ## See Also
 
 - [init(KeyPath<Intent, IntentParameter<Value>>, () -> CaseCondition)](parametersummaryswitchcondition/init(_:_:)-6cdw3.md)
+  Creates a `Switch` statement that branches based on union value parameter cases.
 - [enum ParameterSummaryCaseBuilder](parametersummarycasebuilder.md)
   A result builder that allows you to declaratively describe the cases of a switch statement in a parameter summary.
 - [ParameterSummarySwitchCondition.WidgetFamily](parametersummaryswitchcondition/widgetfamily.md)

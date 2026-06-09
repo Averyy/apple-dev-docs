@@ -9,7 +9,6 @@ An error that indicates the device resides in an unsupported region.
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

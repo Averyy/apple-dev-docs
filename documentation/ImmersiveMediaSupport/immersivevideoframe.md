@@ -40,6 +40,13 @@ struct ImmersiveVideoFrame
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct ImmersiveCameraViewModel](immersivecameraviewmodel.md)
+  A view model that holds all the resources needed to render an immersive camera view.
+- [struct ImmersiveVideoMask](immersivevideomask.md)
+  A video mask to use during video rendering to smooth the edges of the mesh.
+
 
 ---
 

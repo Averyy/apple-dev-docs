@@ -16,6 +16,7 @@ object GameCenterActivityCreateRequest.Data.Relationships.GameCenterDetail
 
 ### Dictionaries
 - [object GameCenterActivityCreateRequest.Data.Relationships.GameCenterDetail.Data](gamecenteractivitycreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center activity.
 
 ## Properties
 

@@ -41,6 +41,29 @@ The modifier provides a `sizeToFit` parameter to indicate how the view should be
 - `edges`: The set of edges which the container view should add corner insets from.
 - `sizeToFit`: A flag indicating when this view is offset off a corner inset whether its size should attempt to fit into its remaining space of the view or fill its original size.
 
+## See Also
+
+- [func frame(width: CGFloat?, height: CGFloat?, alignment: Alignment) -> some View](view/frame(width:height:alignment:).md)
+  Positions this view within an invisible frame with the specified size.
+- [func frame(depth: CGFloat?, alignment: DepthAlignment) -> some View](view/frame(depth:alignment:).md)
+  Positions this view within an invisible frame with the specified depth.
+- [func frame(minWidth: CGFloat?, idealWidth: CGFloat?, maxWidth: CGFloat?, minHeight: CGFloat?, idealHeight: CGFloat?, maxHeight: CGFloat?, alignment: Alignment) -> some View](view/frame(minwidth:idealwidth:maxwidth:minheight:idealheight:maxheight:alignment:).md)
+  Positions this view within an invisible frame having the specified size constraints.
+- [func frame(minDepth: CGFloat?, idealDepth: CGFloat?, maxDepth: CGFloat?, alignment: DepthAlignment) -> some View](view/frame(mindepth:idealdepth:maxdepth:alignment:).md)
+  Positions this view within an invisible frame having the specified depth constraints.
+- [func containerRelativeFrame(Axis.Set, alignment: Alignment) -> some View](view/containerrelativeframe(_:alignment:).md)
+  Positions this view within an invisible frame with a size relative to the nearest container.
+- [func containerRelativeFrame(Axis.Set, alignment: Alignment, (CGFloat, Axis) -> CGFloat) -> some View](view/containerrelativeframe(_:alignment:_:).md)
+  Positions this view within an invisible frame with a size relative to the nearest container.
+- [func containerRelativeFrame(Axis.Set, count: Int, span: Int, spacing: CGFloat, alignment: Alignment) -> some View](view/containerrelativeframe(_:count:span:spacing:alignment:).md)
+  Positions this view within an invisible frame with a size relative to the nearest container.
+- [func fixedSize() -> some View](view/fixedsize.md)
+  Fixes this view at its ideal size.
+- [func fixedSize(horizontal: Bool, vertical: Bool) -> some View](view/fixedsize(horizontal:vertical:).md)
+  Fixes this view at its ideal size in the specified dimensions.
+- [func layoutPriority(Double) -> some View](view/layoutpriority(_:).md)
+  Sets the priority by which a parent layout should apportion space to this child.
+
 
 ---
 

@@ -14,6 +14,7 @@ Instantiates a document group for viewing documents described by the last `Schem
 ## Declaration
 
 ```swift
+nonisolated
 init(viewing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: @escaping () -> Content)
 ```
 

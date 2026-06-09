@@ -8,6 +8,7 @@ Parameters configuring a Wi-Fi Aware data path connection.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

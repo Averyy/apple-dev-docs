@@ -7,8 +7,6 @@ The command to unlock a user account that the system locked because of too many 
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,7 +16,7 @@ object UnlockUserAccountCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

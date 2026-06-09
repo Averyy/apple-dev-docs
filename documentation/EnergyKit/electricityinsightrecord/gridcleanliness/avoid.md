@@ -9,7 +9,6 @@ A category for electricity usage during periods that the framework suggests a pe
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

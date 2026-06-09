@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: case
 
-Medium vaginal bleeding.
+A value that indicates a medium amount of vaginal bleeding.
 
 **Availability**:
 - iOS 18.0+
@@ -18,6 +18,17 @@ Medium vaginal bleeding.
 ```swift
 case medium
 ```
+
+## See Also
+
+- [HKCategoryValueVaginalBleeding.unspecified](hkcategoryvaluevaginalbleeding/unspecified.md)
+  A value that indicates an unspecified amount of vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.light](hkcategoryvaluevaginalbleeding/light.md)
+  A value that indicates light vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.heavy](hkcategoryvaluevaginalbleeding/heavy.md)
+  A value that indicates a heavy amount of vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.none](hkcategoryvaluevaginalbleeding/none.md)
+  A value that indicates no vaginal bleeding.
 
 
 ---

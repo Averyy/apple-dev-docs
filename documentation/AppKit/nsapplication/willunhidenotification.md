@@ -18,6 +18,8 @@ class let willUnhideNotification: NSNotification.Name
 
 The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSApplication.WillUnhideMessage`](nsapplication/willunhidemessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

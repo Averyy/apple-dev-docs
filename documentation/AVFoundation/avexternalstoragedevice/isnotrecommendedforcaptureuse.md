@@ -30,6 +30,8 @@ var isNotRecommendedForCaptureUse: Bool { get }
   The amount of free storage space, in bytes, that’s available on the external storage device.
 - [var totalSize: Int](avexternalstoragedevice/totalsize.md)
   The total amount of storage space, in bytes, that’s available on the external storage device.
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
 
 
 ---

@@ -143,6 +143,12 @@ File paths conform to the [`Equatable`](https://developer.apple.com/documentatio
   Reserve enough storage space to store `minimumCapacity` platform characters.
 - [func starts(with: FilePath) -> Bool](filepath/starts(with:).md)
   Returns whether `other` is a prefix of `self`, only considering whole path components.
+- [func stat(flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(flags:retryoninterrupt:).md)
+  Creates a `Stat` struct for the file referenced by this `FilePath` using the given `Flags`.
+- [func stat(followTargetSymlink: Bool, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(followtargetsymlink:retryoninterrupt:).md)
+  Creates a `Stat` struct for the file referenced by this `FilePath`.
+- [func stat(relativeTo: FileDescriptor, flags: Stat.Flags, retryOnInterrupt: Bool) throws(Errno) -> Stat](filepath/stat(relativeto:flags:retryoninterrupt:).md)
+  Creates a `Stat` struct for the file referenced by this `FilePath` using the given `Flags`, including a `FileDescriptor` to resolve a relative path.
 - [func withPlatformString<Result>((UnsafePointer<CInterop.PlatformChar>) throws -> Result) rethrows -> Result](filepath/withplatformstring(_:).md)
   Calls the given closure with a pointer to the contents of the file path, represented as a null-terminated platform string.
 ### Default Implementations

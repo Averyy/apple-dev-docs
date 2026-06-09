@@ -50,6 +50,7 @@ protocol UIInteraction : NSObjectProtocol
 - [UIImpactFeedbackGenerator](uiimpactfeedbackgenerator.md)
 - [UIIndirectScribbleInteraction](uiindirectscribbleinteraction-1nfjm.md)
 - [UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)
+- [UILookToScrollInteraction](uilooktoscrollinteraction.md)
 - [UINotificationFeedbackGenerator](uinotificationfeedbackgenerator.md)
 - [UIPencilInteraction](uipencilinteraction.md)
 - [UIPointerInteraction](uipointerinteraction.md)

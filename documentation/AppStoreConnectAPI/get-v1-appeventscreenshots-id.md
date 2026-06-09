@@ -12,15 +12,15 @@
 
 ## Parameters
 
-- `fields[appEventScreenshots]` ([string])
-- `include` ([string])
+- `fields[appEventScreenshots]` ([string]): Additional fields to include for each app event screenshot resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appEventLocalizations]` ([string])
 
 ## See Also
 
-- [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)
-- [POST /v1/appEventScreenshots](post-v1-appeventscreenshots.md)
-- [Delete an App Event Screenshot](delete-v1-appeventscreenshots-_id_.md)
+- [Update an app event screenshot](patch-v1-appeventscreenshots-_id_.md)
+- [Create an app event screenshot](post-v1-appeventscreenshots.md)
+- [Delete an app event screenshot](delete-v1-appeventscreenshots-_id_.md)
   Delete a specific screenshot from an in-app event.
 
 

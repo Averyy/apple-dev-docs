@@ -77,7 +77,7 @@
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazymapsequence/subscript(_:)-4tv8v.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](lazymapsequence/subscript(_:)-88114.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](lazymapsequence/subscript(_:)-88114.md)
 ### Type Aliases
 - [LazyMapSequence.Index](lazymapsequence/index.md)
   A type that represents a position in the collection.

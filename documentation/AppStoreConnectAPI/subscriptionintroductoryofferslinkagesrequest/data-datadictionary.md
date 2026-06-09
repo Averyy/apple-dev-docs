@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a subscription introductory offers linkages request resource.
+The resource linkage data identifying an introductory offer linked to a subscription.
 
 **Availability**:
 - App Store Connect API 2.0+

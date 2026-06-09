@@ -50,6 +50,9 @@ If you specify a default object without any custom handler blocks, the system di
   The preferred menu-element ordering strategy for the menu.
 - [UIContextMenuConfiguration.ElementOrder](uicontextmenuconfiguration/elementorder.md)
   Constants that define the ordering strategy for menu elements in a context menu.
+### Instance Properties
+- [var allowsTypeSelect: Bool](uicontextmenuconfiguration/allowstypeselect.md)
+  A Boolean value that indicates whether the context menu supports keystroke-based navigation.
 
 ## Relationships
 

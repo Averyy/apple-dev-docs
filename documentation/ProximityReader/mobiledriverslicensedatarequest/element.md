@@ -9,7 +9,6 @@ A type that represents an element you can request from a mobile driver’s licen
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -48,6 +47,8 @@ struct Element
   The mobile driver’s license holder’s height on record with the issuer.
 - [static let issuingAuthority: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/issuingauthority.md)
   The state or government that issued the identity document.
+- [static let name: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/name.md)
+  The mobile driver’s license holder’s name.
 - [static let nationality: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/nationality.md)
   The mobile driver’s license holder’s nationality on record with the issuer.
 - [static let organDonorStatus: MobileDriversLicenseDataRequest.Element](mobiledriverslicensedatarequest/element/organdonorstatus.md)

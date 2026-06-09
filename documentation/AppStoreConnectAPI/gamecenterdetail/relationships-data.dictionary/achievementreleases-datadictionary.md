@@ -16,6 +16,7 @@ object GameCenterDetail.Relationships.AchievementReleases
 
 ### Objects
 - [object GameCenterDetail.Relationships.AchievementReleases.Data](gamecenterdetail/relationships-data.dictionary/achievementreleases-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a detail.
 
 ## Properties
 

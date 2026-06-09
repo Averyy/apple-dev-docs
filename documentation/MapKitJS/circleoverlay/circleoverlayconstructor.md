@@ -12,10 +12,10 @@ Creates a circle overlay with a center coordinate, radius, and style options.
 
 ```swift
 constructor(
-        coordinate: Coordinate,
-        radius: number,
-        options?: OverlayOptions,
-    );
+    coordinate: CoordinateData,
+    radius: number,
+    options?: OverlayOptions,
+);
 ```
 
 #### Discussion

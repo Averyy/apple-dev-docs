@@ -18,6 +18,7 @@ object GameCenterMatchmakingSessionsV1MetricResponse.Data
 
 ### Objects
 - [object GameCenterMatchmakingSessionsV1MetricResponse.Data.DataPoints](gamecentermatchmakingsessionsv1metricresponse/data-data.dictionary/datapoints-data.dictionary.md)
+  The time-series data points for the Game Center matchmaking sessions metric.
 
 ## Properties
 

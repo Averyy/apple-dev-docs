@@ -17,7 +17,8 @@ Creates an Assistive Access scene.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

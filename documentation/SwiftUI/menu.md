@@ -16,6 +16,7 @@ A control for presenting a menu of actions.
 ## Declaration
 
 ```swift
+nonisolated
 struct Menu<Label, Content> where Label : View, Content : View
 ```
 
@@ -41,7 +42,7 @@ Menu("Actions") {
 }
 ```
 
-You can create the menu’s title with a [`LocalizedStringKey`](localizedstringkey.md), as seen in the previous example, or with a view builder that creates multiple views, such as an image and a text view:
+You can create the menu’s title with a [`LocalizedStringKey`](localizedstringkey.md), as seen in the previous example, or with a content builder that creates multiple views, such as an image and a text view:
 
 ```swift
 Menu {

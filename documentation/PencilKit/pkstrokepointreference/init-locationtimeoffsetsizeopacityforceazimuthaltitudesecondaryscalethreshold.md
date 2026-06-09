@@ -3,14 +3,14 @@
 **Framework**: PencilKit  
 **Kind**: init
 
-Create a new point with the provided properties.
+Creates a stroke point with the specified properties, including a rendering threshold.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- visionOS 1.0+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

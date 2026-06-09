@@ -47,6 +47,7 @@ Use [`NSException`](nsexception.md) to implement exception handling. An exceptio
   An array containing the current call stack symbols.
 ### Related Types
 - [typealias NSUncaughtExceptionHandler](nsuncaughtexceptionhandler.md)
+  The type for uncaught exception handler functions.
 - [struct NSExceptionName](nsexceptionname.md)
 ### Functions
 - [func NSGetUncaughtExceptionHandler() -> ((NSException) -> Void)?](nsgetuncaughtexceptionhandler().md)

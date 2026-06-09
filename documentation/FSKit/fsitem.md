@@ -40,6 +40,9 @@ Methods that get or set an item’s attribute use [`FSItem.GetAttributesRequest`
   A request to get attributes from an item.
 - [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
   A request to set attributes on an item.
+### Reclaiming items
+- [func tryReclaim(() -> Void) -> Bool](fsitem/tryreclaim(_:).md)
+  Reclaims the item by executing the given block, if conditions allow.
 
 ## Relationships
 

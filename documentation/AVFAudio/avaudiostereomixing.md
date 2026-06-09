@@ -17,7 +17,7 @@ A protocol that defines stereo mixing properties a mixer uses.
 ## Declaration
 
 ```swift
-protocol AVAudioStereoMixing : NSObjectProtocol
+protocol AVAudioStereoMixing : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -34,6 +34,8 @@ protocol AVAudioStereoMixing : NSObjectProtocol
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [AVAudioMixing](avaudiomixing.md)
 ### Conforming Types

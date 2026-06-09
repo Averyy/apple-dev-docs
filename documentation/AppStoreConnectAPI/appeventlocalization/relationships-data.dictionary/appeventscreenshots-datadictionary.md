@@ -16,6 +16,7 @@ object AppEventLocalization.Relationships.AppEventScreenshots
 
 ### Objects
 - [object AppEventLocalization.Relationships.AppEventScreenshots.Data](appeventlocalization/relationships-data.dictionary/appeventscreenshots-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app event localization.
 
 ## Properties
 

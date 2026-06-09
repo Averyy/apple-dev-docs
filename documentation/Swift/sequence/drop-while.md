@@ -48,8 +48,6 @@ If `predicate` matches every element in the sequence, the result is an empty seq
   Returns a sequence containing all but the given number of initial elements.
 - [func dropLast(Int) -> [Self.Element]](sequence/droplast(_:).md)
   Returns a sequence containing all but the given number of final elements.
-- [func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/filter(_:)-5y9d2.md)
-  Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 
 
 ---

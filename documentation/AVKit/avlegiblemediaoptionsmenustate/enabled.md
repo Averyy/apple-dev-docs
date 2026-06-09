@@ -18,6 +18,11 @@ Whether or not the legible options menu is
 var enabled: ObjCBool
 ```
 
+## See Also
+
+- [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenustate/reason.md)
+  The reason for changing the menu state
+
 
 ---
 

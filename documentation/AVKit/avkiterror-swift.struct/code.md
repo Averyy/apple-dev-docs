@@ -20,6 +20,8 @@ enum Code
 
 ## Topics
 
+### Creating an error code
+- [init?(rawValue: Int)](avkiterror-swift.struct/code/init(rawvalue:).md)
 ### Error Codes
 - [AVKitError.Code.unknown](avkiterror-swift.struct/code/unknown.md)
   An unknown error.
@@ -31,8 +33,6 @@ enum Code
   The system failed to start Picture in Picture.
 - [AVKitError.Code.contentDisallowedByProfile](avkiterror-swift.struct/code/contentdisallowedbyprofile.md)
   An installed profile restricts access to this content.
-### Initializers
-- [init?(rawValue: Int)](avkiterror-swift.struct/code/init(rawvalue:).md)
 
 ## Relationships
 

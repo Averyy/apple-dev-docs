@@ -37,7 +37,7 @@ For more information on creating systems, see [`Implementing systems for entitie
 ## See Also
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
-  Build, create, and design 3D content for your RealityKit apps.
+  Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -56,12 +56,14 @@ For more information on creating systems, see [`Implementing systems for entitie
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
-- [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
-  Create engaging interactions by training models to recognize and track real-world objects in your app.
+- [Implementing object tracking in your app](implementing-object-tracking-in-your-app.md)
+  Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
+- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
+  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 
 ---

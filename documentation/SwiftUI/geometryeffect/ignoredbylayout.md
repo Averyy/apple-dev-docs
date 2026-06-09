@@ -17,6 +17,7 @@ Returns an effect that produces the same geometry transform as this effect, but 
 ## Declaration
 
 ```swift
+nonisolated
 func ignoredByLayout() -> _IgnoredByLayoutEffect<Self>
 ```
 

@@ -20,7 +20,7 @@ Delete a beta feedback screenshot submission from your app.
 
 - [List All Beta Feedback Screenshot Submissions for an App](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
   Get beta feedback screenshot submissions for a specific app.
-- [List All Beta Feedback Screenshot Submission IDs for an App](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
+- [List all beta feedback screenshot submission ids for an app](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
   Get a list of beta feedback screenshot submissions for a specific app.
 - [Read a Beta Feedback Screenshot Submission](get-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Get information for a specific beta feedback screenshot submission.

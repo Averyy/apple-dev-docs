@@ -23,6 +23,17 @@ func invalidatePlaybackState()
 
 Call this method whenever you start or pause playback and when the underlying content duration changes.
 
+## See Also
+
+- [var canStopPictureInPicture: Bool](avpictureinpicturecontroller/canstoppictureinpicture.md)
+  A Boolean value that indicates whether Picture in Picture is active and is able to stop.
+- [var canStartPictureInPictureAutomaticallyFromInline: Bool](avpictureinpicturecontroller/canstartpictureinpictureautomaticallyfrominline.md)
+  A Boolean value that indicates whether Picture in Picture starts automatically when the controller embeds its content inline and the app transitions to the background.
+- [func startPictureInPicture()](avpictureinpicturecontroller/startpictureinpicture.md)
+  Starts Picture in Picture, if possible.
+- [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
+  Stops Picture in Picture, if active.
+
 
 ---
 

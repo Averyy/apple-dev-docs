@@ -63,20 +63,20 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/reviewSubmissions
 
 ## Parameters
 
-- `fields[reviewSubmissionItems]` ([string])
-- `fields[reviewSubmissions]` ([string])
-- `filter[platform]` ([string])
-- `filter[state]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[items]` (integer)
-- `fields[appStoreVersions]` ([string])
-- `fields[apps]` ([string])
-- `fields[actors]` ([string])
+- `fields[reviewSubmissionItems]` ([string]): Additional fields to include for each review submission item resource returned by the response.
+- `fields[reviewSubmissions]` ([string]): Additional fields to include for each review submission resource returned by the response.
+- `filter[platform]` ([string]): Filter the returned review submissions by platform.
+- `filter[state]` ([string]): Filter the returned review submissions by state.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of review submission resources to return.
+- `limit[items]` (integer): The maximum number of related items resources to return.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+- `fields[actors]` ([string]): Additional fields to include for each actor resource returned by the response.
 
 ## See Also
 
-- [List Review Submission IDs](get-v1-apps-_id_-relationships-reviewsubmissions.md)
+- [List review submission IDs](get-v1-apps-_id_-relationships-reviewsubmissions.md)
   Get the list of review submission IDs for a specific app.
 
 

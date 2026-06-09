@@ -50,6 +50,11 @@ Checking a digest doesn’t guard against changes made by a malicious user who a
 ### Inspecting hash information
 - [static var blockByteCount: Int](hashfunction/blockbytecount.md)
   The number of bytes that represents the hash function’s internal state.
+### Instance Methods
+- [func update(bytes: RawSpan)](hashfunction/update(bytes:).md)
+### Type Methods
+- [static func hash(bytes: RawSpan) -> Self.Digest](hashfunction/hash(bytes:).md)
+  Computes a digest of a span of bytes.
 
 ## Relationships
 

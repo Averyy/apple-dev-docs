@@ -26,6 +26,8 @@ func prepare(withFrameCount frameCount: AVAudioFrameCount)
 
 ## See Also
 
+- [func playAudio() throws](avaudioplayernode/playaudio.md)
+- [func playAudio(at: AVAudioTime?) throws](avaudioplayernode/playaudio(at:).md)
 - [func play()](avaudioplayernode/play.md)
   Starts or resumes playback immediately.
 - [func play(at: AVAudioTime?)](avaudioplayernode/play(at:).md)

@@ -113,6 +113,24 @@ For additional information about how to use views and controls, see [`Human Inte
 - [NSGlassEffectView.Style](nsglasseffectview/style-swift.enum.md)
 - [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
   A view that efficiently merges descendant glass effect views together when they are within a specified proximity to each other.
+### Observing data in views
+- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
+- [func layout()](nsview/layout.md)
+  Perform layout in concert with the constraint-based layout system.
+- [func updateConstraints()](nsview/updateconstraints.md)
+  Update constraints for the view.
+- [func updateLayer()](nsview/updatelayer.md)
+  Updates the view’s content by modifying its underlying layer.
+- [func draw(NSRect)](nsview/draw(_:).md)
+  Overridden by subclasses to draw the view’s image within the specified rectangle.
+### Observing data in view controllers
+- [func viewWillLayout()](nsviewcontroller/viewwilllayout.md)
+  Called just before the [`layout()`](nsview/layout().md) method of the view controller’s view is called.
+- [func viewDidLayout()](nsviewcontroller/viewdidlayout.md)
+  Called immediately after the [`layout()`](nsview/layout().md) method of the view controller’s view is called.
+- [func updateViewConstraints()](nsviewcontroller/updateviewconstraints.md)
+  Called during Auto Layout constraint updating to enable the view controller to mediate the process.
 ### Interacting with adjacent views
 - [class NSBackgroundExtensionView](nsbackgroundextensionview.md)
   A view that extends content to fill its own bounds.

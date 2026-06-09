@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an app custom product page version.
+
 **Availability**:
 - App Store Connect API 1.7+
 

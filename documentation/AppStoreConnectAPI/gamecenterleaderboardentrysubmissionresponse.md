@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a Game Center leaderboard entry submission.
+A response confirming a player’s score submission to a Game Center leaderboard.
 
 **Availability**:
 - App Store Connect API 3.2+
@@ -22,9 +22,9 @@ object GameCenterLeaderboardEntrySubmissionResponse
 ## See Also
 
 - [object GameCenterLeaderboardEntrySubmission](gamecenterleaderboardentrysubmission.md)
-  The data structure that represent an Game Center leaderboard entry submission resource.
+  A player’s score submission to a Game Center leaderboard, including the score value and context.
 - [object GameCenterLeaderboardEntrySubmissionCreateRequest](gamecenterleaderboardentrysubmissioncreaterequest.md)
-  The request body you use to create an Game Center leaderboard entry submssion.
+  The request body you use to create a Game Center leaderboard entry submission.
 
 
 ---

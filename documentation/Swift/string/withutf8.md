@@ -17,7 +17,7 @@ Runs `body` over the content of this string in contiguous memory. If this string
 ## Declaration
 
 ```swift
-mutating func withUTF8<R>(_ body: (UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R
+mutating func withUTF8<R, E>(_ body: (UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
 #### Discussion

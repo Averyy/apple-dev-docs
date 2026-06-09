@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field that applies a format style to a bound value, with a label generated from a view builder.
+Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 
 **Availability**:
 - iOS 15.0+
@@ -18,7 +18,7 @@ Creates a text field that applies a format style to a bound value, with a label 
 
 ```swift
 nonisolated
-init<F>(value: Binding<F.FormatInput>, format: F, prompt: Text? = nil, @ViewBuilder label: () -> Label) where F : ParseableFormatStyle, F.FormatOutput == String
+init<F>(value: Binding<F.FormatInput>, format: F, prompt: Text? = nil, @ContentBuilder label: () -> Label) where F : ParseableFormatStyle, F.FormatOutput == String
 ```
 
 #### Discussion
@@ -53,7 +53,7 @@ var body: some View {
 - `value`: The underlying value to edit.
 - `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the text field leaves the value unchanged. If the user stops editing the text in an invalid state, the text field updates the field’s text to the last known valid value.
 - `prompt`: A `Text` which provides users with guidance on what to type into the text field.
-- `label`: A view builder that produces a label for the text field, describing its purpose.
+- `label`: A content builder that produces a label for the text field, describing its purpose.
 
 ## See Also
 
@@ -64,7 +64,7 @@ var body: some View {
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
   Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
 - [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
-  Creates a text field that applies a formatter to a bound optional value, with a label generated from a view builder.
+  Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 
 
 ---

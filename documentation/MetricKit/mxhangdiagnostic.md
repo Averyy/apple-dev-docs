@@ -43,12 +43,14 @@ class MXHangDiagnostic
 
 ## See Also
 
-- [class MXAnimationMetric](mxanimationmetric.md)
-  An object representing metrics about the responsiveness of animation in the app.
-- [class MXAppLaunchMetric](mxapplaunchmetric.md)
-  An object representing metrics about app launch time.
-- [class MXAppResponsivenessMetric](mxappresponsivenessmetric.md)
-  An object representing metrics about the responsiveness of the app to user interaction.
+- [class MXAppLaunchDiagnostic](mxapplaunchdiagnostic.md)
+  A diagnostic subclass that encapsulates app launch diagnostic reports.
+- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
+  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
+- [class MXCrashDiagnostic](mxcrashdiagnostic.md)
+  An object representing a diagnostic report for an app crash.
+- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
+  An object representing a diagnostic report for a disk write exception.
 
 
 ---

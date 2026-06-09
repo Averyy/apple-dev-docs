@@ -12,7 +12,7 @@ Creates a TextFieldLink which when pressed will request text input from the user
 
 ```swift
 nonisolated
-init(prompt: Text? = nil, @ViewBuilder label: () -> Label, onSubmit: @escaping (String) -> Void)
+init(prompt: Text? = nil, @ContentBuilder label: () -> Label, onSubmit: @escaping (String) -> Void)
 ```
 
 ## Parameters

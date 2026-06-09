@@ -16,6 +16,7 @@ object AppPriceSchedule.Relationships.BaseTerritory
 
 ### Objects
 - [object AppPriceSchedule.Relationships.BaseTerritory.Data](apppriceschedule/relationships-data.dictionary/baseterritory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app price schedule.
 
 ## Properties
 

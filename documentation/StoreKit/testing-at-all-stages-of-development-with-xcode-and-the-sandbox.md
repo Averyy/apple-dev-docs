@@ -61,6 +61,7 @@ All apps that offer in-app purchases need to support restoring purchases, displa
 | Repurchase a non-consumable purchase for repeated testing | Yes | Yes |
 | Purchase an auto-renewable subscription | Yes | Yes |
 | Purchase a non-renewing subscription | Yes | Yes |
+| Redeem an offer code | Yes | Yes |
 | Refund an in-app purchase | Yes | Yes |
 | Test an interrupted purchase, where the user must complete actions outside the app | Yes | Yes |
 | Test a failed purchase attempt when payment authorization fails | Yes | Yes |
@@ -78,7 +79,6 @@ Depending on the in-app purchases your app offers, you may need to test scenario
 | Resolve an Ask to Buy transaction by approving or rejecting it | No | Yes |
 | Redeem an introductory offer for an auto-renewable subscription | Yes | Yes |
 | Redeem a promotional offer for an auto-renewable subscription | Yes | Yes |
-| Redeem an offer code | No | Yes |
 | Process a subscription renewal | Yes | Yes |
 | Process a revoked or refunded subscription | Yes | Yes |
 | Respond to a customer canceling a subscription and disabling auto-renew | Yes | Yes |

@@ -35,6 +35,7 @@ See the [`DateComponents`](datecomponents.md) property [`yearForWeekOfYear`](dat
 - [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
   Identifier for the month unit.
 - [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
+  Identifier for the time zone of a date components object.
 
 
 ---

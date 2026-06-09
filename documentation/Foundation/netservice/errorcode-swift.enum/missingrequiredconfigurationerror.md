@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+Missing required configuration for local network access.
+
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -16,6 +18,10 @@
 ```swift
 case missingRequiredConfigurationError
 ```
+
+#### Discussion
+
+`NSBonjourServices` and `NSLocalNetworkUsageDescription` are required in Info.plist.
 
 
 ---

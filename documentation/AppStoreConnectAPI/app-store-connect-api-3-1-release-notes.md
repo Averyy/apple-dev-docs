@@ -16,12 +16,14 @@ App Store Connect API version 3.1 provides resources that enable you to automate
 
 ##### Deprecations
 
-- The `GET-v1-appPreOrders-{id}` endpoint is now deprecated and replaced with [`Read App Availabilty`](get-v2-appavailabilities-_id_.md).
-- The `POST-v1-appPreOrders` endpoint is now deprecated and replaced with [`Create an App Pre-Order`](post-v2-appavailabilities.md).
-- The `GET-v1-appAvailabilities-{id}-availableTerritories` endpoint is now deprecated and replaced with [`Read App Availability Territories`](get-v2-appavailabilities-_id_-territoryavailabilities.md).
+- The `GET-v1-appPreOrders-{id}` endpoint is now deprecated and replaced with [`Read app availability`](get-v2-appavailabilities-_id_.md).
+- The `POST-v1-appPreOrders` endpoint is now deprecated and replaced with [`Create an app pre-order`](post-v2-appavailabilities.md).
+- The `GET-v1-appAvailabilities-{id}-availableTerritories` endpoint is now deprecated and replaced with [`Read app availablity territories`](get-v2-appavailabilities-_id_-territoryavailabilities.md).
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -49,8 +51,6 @@ App Store Connect API version 3.1 provides resources that enable you to automate
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

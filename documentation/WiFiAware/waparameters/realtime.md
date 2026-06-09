@@ -8,6 +8,7 @@ The property that configures parameters that prioritize latency at the expense o
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

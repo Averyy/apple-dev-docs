@@ -24,16 +24,16 @@ You can update localized metadata when your app is in an editable state. For mor
 - [Managing metadata in your app by using locale shortcodes](managing-metadata-in-your-app-by-using-locale-shortcodes.md)
   Optimize your app’s user experience by adding localized metadata with App Store Connect API.
 ### Reading App Localization Information
-- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List all app info localizations for an app info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
-- [Read App Info Localization Information](get-v1-appinfolocalizations-_id_.md)
+- [Read app info localization information](get-v1-appinfolocalizations-_id_.md)
   Read localized app-level information.
 ### Creating, Modifying, and Deleting Localized App Information
-- [Create an App Info Localization](post-v1-appinfolocalizations.md)
+- [Create an app info localization](post-v1-appinfolocalizations.md)
   Add app-level localized information for a new locale.
-- [Modify an App Info Localization](patch-v1-appinfolocalizations-_id_.md)
+- [Modify an app info localization](patch-v1-appinfolocalizations-_id_.md)
   Modify localized app-level information for a particular language.
-- [Delete an App Info Localization](delete-v1-appinfolocalizations-_id_.md)
+- [Delete an app info localization](delete-v1-appinfolocalizations-_id_.md)
   Delete an app information localization that is associated with an app.
 ### Objects
 - [object AppInfoLocalization](appinfolocalization.md)
@@ -41,11 +41,11 @@ You can update localized metadata when your app is in an editable state. For mor
 - [object AppInfoLocalizationCreateRequest](appinfolocalizationcreaterequest.md)
   The request body you use to create an App Info Localization.
 - [object AppInfoLocalizationResponse](appinfolocalizationresponse.md)
-  A response that contains a single App Info Localizations resource.
+  The response body for endpoints that create, read, or modify a localized app info entry.
 - [object AppInfoLocalizationUpdateRequest](appinfolocalizationupdaterequest.md)
   The request body you use to update an App Info Localization.
 - [object AppInfoLocalizationsResponse](appinfolocalizationsresponse.md)
-  A response that contains a list of AppInfoLocalizations resources.
+  The response body for endpoints that list localized app info entries for an app.
 
 ## See Also
 

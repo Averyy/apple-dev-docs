@@ -11,8 +11,6 @@ The dictionary that contains IPV4 settings.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

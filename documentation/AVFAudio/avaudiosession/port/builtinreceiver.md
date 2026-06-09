@@ -39,6 +39,8 @@ Typically, this speaker is available only on iPhone devices.
   An output to wired headphones.
 - [static let lineOut: AVAudioSession.Port](avaudiosession/port/lineout.md)
   A line-level output to the dock connector.
+- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+  Output to a media device vended through a system-wide extension that the user has installed
 
 
 ---

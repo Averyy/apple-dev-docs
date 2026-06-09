@@ -22,7 +22,7 @@ init(_ elementType: Element.Type = Element.self, bufferingPolicy limit: AsyncThr
 
 #### Discussion
 
-The `AsyncStream.Continuation` received by the `build` closure is appropriate for use in concurrent contexts. It is thread safe to send and finish; all calls are to the continuation are serialized. However, calling this from multiple concurrent contexts could result in out-of-order delivery.
+The `AsyncStream.Continuation` received by the `build` closure is appropriate for use in concurrent contexts. It is thread safe to send and finish; all calls to the continuation are serialized. However, calling this from multiple concurrent contexts could result in out-of-order delivery.
 
 The following example shows an `AsyncStream` created with this initializer that produces 100 random numbers on a one-second interval, calling `yield(_:)` to deliver each element to the awaiting call point. When the `for` loop exits, the stream finishes by calling the continuation’s `finish()` method. If the random number is divisible by 5 with no remainder, the stream throws a `MyRandomNumberError`.
 

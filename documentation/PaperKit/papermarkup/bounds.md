@@ -22,6 +22,20 @@ var bounds: CGRect { get set }
 
 The contents of the paper are positioned relative to its bounds.
 
+## See Also
+
+- [var subelements: MarkupOrderedSet](papermarkup/subelements.md)
+  The subelements of the paper markup.
+- [var id: MarkupID<PaperMarkup>](papermarkup/id.md)
+  The unique identifier of the markup.
+- [var contentsRenderFrame: CGRect](papermarkup/contentsrenderframe.md)
+  The frame that tightly fits the rendered contents on the paper.
+- [var featureSet: FeatureSet](papermarkup/featureset.md)
+  The set of features used by this data model.
+- [var indexableContent: String?](papermarkup/indexablecontent.md)
+- [var backgroundColor: CGColor?](papermarkup/backgroundcolor.md)
+  The background color of the paper.
+
 
 ---
 

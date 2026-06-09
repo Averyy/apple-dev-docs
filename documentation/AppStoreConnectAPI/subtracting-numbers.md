@@ -16,8 +16,7 @@ number sub(number $minuend, number $subtrahend)
 
 ##### Parameters
 
-- **`minuend`**: The left side of the subtraction equation.
-- **`subtrahend`**: The right side of the subtraction equation.
+-`minuend`: The left side of the subtraction equation. -`subtrahend`: The right side of the subtraction equation.
 
 ##### Return Value
 

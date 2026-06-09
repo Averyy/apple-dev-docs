@@ -27,9 +27,9 @@ object AppClipAppStoreReviewDetailCreateRequest
 ## See Also
 
 - [object AppClipAppStoreReviewDetail](appclipappstorereviewdetail.md)
-  The data structure that represents an App Clip App Store Review Details resource.
+  The review submission details for an App Clip, including the invocation URLs required for App Store review.
 - [object AppClipAppStoreReviewDetailResponse](appclipappstorereviewdetailresponse.md)
-  A response that contains a single App Clip App Store Review Details resource.
+  A response containing the App Store review details for a single App Clip.
 - [object AppClipAppStoreReviewDetailUpdateRequest](appclipappstorereviewdetailupdaterequest.md)
   The request body you use to update App Clip information that you provide to App Store Review.
 

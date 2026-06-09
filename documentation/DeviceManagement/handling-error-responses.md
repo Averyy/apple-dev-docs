@@ -1,8 +1,8 @@
-# Handling Error Responses
+# Handling error responses
 
 **Framework**: Device Management
 
-Investigate service request errors and troubleshoot solutions.
+Investigate and resolve service request errors.
 
 #### Overview
 
@@ -37,7 +37,7 @@ If notifications for an event are missing, use [`Event Status`](events-status.md
 
 ##### Handle Error Responses in Status
 
-If a task for a submitted service request fails while processing in the background, the status endpoint for that task provides information about the failure. The status endpoint includes a `failures` field with a value that is an array of `ErrorResponse` objects.
+If a task for a submitted service request fails while processing in the background, the `Status` endpoint for that task provides information about the failure. The `Status` endpoint includes a `failures` field with a value that’s an array of `ErrorResponse` objects.
 
 ```javascript
 {
@@ -95,7 +95,7 @@ If a task for a submitted service request fails while processing in the backgrou
 }
 ```
 
-Error Codes for Synchronous Failures
+##### Review Synchronous Error Codes
 
 | Error number | Error message | HTTP status code |
 | --- | --- | --- |
@@ -104,9 +104,12 @@ Error Codes for Synchronous Failures
 | 9603 | Internal error. | 500 |
 | 9609 | Unable to find the registered user. | 400 |
 | 9621 | The token has expired. You need to generate a new token online using your organization’s account at either `school.apple.com` or `business.apple.com`. | 401 |
-| 9625 | The server has revoked the `cToken`. | 401 |
+| 9623 | The provided Apple Push Notification token is invalid. | 400 |
+| 9625 | The server has revoked the `sToken`. | 401 |
 | 9634 | This service is no longer available. | 410 |
-| 9646 | There are too many requests for the current Organization and the request has been rejected, either due to high server volume or an MDM issue. Use an incremental/exponential backoff strategy to retry the request until successful. | 429 |
+| 9637 | This operation isn’t allowed for facilitator accounts. | 403 |
+| 9646 | There are too many requests for the current organization, and the server rejected the request, either due to high server volume or an MDM issue. Use an incremental/exponential backoff strategy to retry the request until successful. | 429 |
+| 9647 | This operation isn’t supported for legacy tokens. | 403 |
 | 9650 | The provided page index must be greater than `0`, and less than the total number of pages. | 400 |
 | 9700 | This request exceeds the maximum `assets` limit. Change the request to stay within the specified limit. | 400 |
 | 9701 | This request exceeds the maximum `clientUserIds` limit. Change the request to stay within the specified limit. | 400 |
@@ -128,22 +131,31 @@ Error Codes for Synchronous Failures
 | 9719 | Either `clientUserIds` or `serialNumbers` are required arguments. Change the request to provide assignable users and devices. | 400 |
 | 9720 | Users are a required argument. Change the request to provide a user. | 400 |
 | 9721 | This request contains an invalid version ID. Change the request to send the version ID from the read APIs. | 400 |
-| 9722 | This request contains an invalid authorization header. Change the request to send an authorization header that matches the format `'Bearer {cToken}'`. | 401 |
+| 9722 | This request contains an invalid authorization header. Change the request to send an authorization header that matches the format `'Bearer {sToken}'`. | 401 |
 | 9723 | You must provide an MDM name, ID, and metadata when setting the MDM information. | 400 |
 | 9724 | The MDM ID exceeds the maximum length. Change the request to stay within the specified limit. | 400 |
 | 9725 | The MDM name exceeds the maximum length. Change the request to stay within the specified limit. | 400 |
 | 9726 | This request contains an unsupported HTTP method for the requested endpoint. | 405 |
 | 9727 | This request contains an unsupported `Content-Type` for the requested endpoint. | 415 |
 | 9728 | The provided notification URL is unreachable. | 400 |
+| 9729 | The service is temporarily unavailable. Try again later. | 503 |
+| 9800 | The subscription association request is invalid. | 400 |
+| 9801 | The provided cursor is invalid. | 400 |
+| 9802 | The provided Adam ID is invalid. | 400 |
+| 9803 | Unable to find an associated registered user for the provided `clientUserId`. | 400 |
+| 9804 | The registered user isn’t assigned the requested `adamId`. | 400 |
+| 9805 | This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit. | 400 |
 
-Error Codes for Asynchronous Failures
+##### Review Asynchronous Error Codes
 
 The server may return these error codes in either [`StatusResponse`](statusresponse.md) or in background notifications.
 
 | Error number | Error message |
 | --- | --- |
 | 9603 | Internal error. |
-| 9609 | Unable to find registered user. |
+| 9635 | Unable to associate the Apple Account with this user. |
+| 9641 | The Apple Account is already associated with another user. |
+| 9644 | The service is in maintenance mode. Try again later. |
 | 9709 | There aren’t enough assets available to complete this association. |
 | 9716 | A registered user already exists with the specified `clientUserId`. |
 
@@ -151,20 +163,10 @@ The server may return these error codes in either [`StatusResponse`](statusrespo
 
 ## See Also
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-  Associate app and book purchases with users or devices.
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-  Manage devices and content across your organization using the new API version.
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
-- [Managing Assets](managing-assets.md)
-  Retrieve key information to effectively manage assets across an organization’s users and devices.
-- [Managing Users](managing-users.md)
-  Retrieve key information to effectively manage users across an organization.
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-  Manage paginated endpoints to efficiently work with large record sets.
-- [Subscribing to Notifications](subscribing-to-notifications.md)
-  Listen to notifications to keep track of the latest events for an organization.
+- [Using paginated endpoints](using-paginated-endpoints.md)
+  Traverse large result sets with page-index and cursor-based pagination.
+- [Subscribing to notifications](subscribing-to-notifications.md)
+  Monitor events for assets, assignments, and users in your organization.
 
 
 ---

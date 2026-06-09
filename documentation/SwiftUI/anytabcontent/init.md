@@ -17,6 +17,7 @@ Create an instance that type-erases `tabContent`.
 ## Declaration
 
 ```swift
+nonisolated
 init<T>(_ tabContent: T) where SelectionValue == T.TabValue, T : TabContent
 ```
 

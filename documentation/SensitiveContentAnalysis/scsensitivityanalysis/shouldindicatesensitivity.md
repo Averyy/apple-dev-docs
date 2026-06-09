@@ -1,6 +1,6 @@
 # shouldIndicateSensitivity
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 Intervention guidance that suggests the app indicate the presence of sensitive content.

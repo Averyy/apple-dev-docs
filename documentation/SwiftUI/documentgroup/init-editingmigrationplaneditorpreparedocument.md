@@ -14,6 +14,7 @@ Instantiates a document group for creating and editing documents described by th
 ## Declaration
 
 ```swift
+nonisolated
 init(editing contentType: UTType, migrationPlan: any SchemaMigrationPlan.Type, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
 ```
 

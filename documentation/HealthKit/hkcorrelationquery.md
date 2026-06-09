@@ -130,7 +130,7 @@ Once the sample code finishes declaring the completion handler, the query is rea
 
 ##### Subclassing Correlation Queries
 
-Like many HealthKit classes, the `HKCorrelationQuery` class should not be subclassed.
+As with many HealthKit classes, don’t subclass the [`HKCorrelationQuery`](hkcorrelationquery.md) class.
 
 ## Topics
 

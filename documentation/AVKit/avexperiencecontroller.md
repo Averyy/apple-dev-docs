@@ -37,6 +37,10 @@ Use this class to control, observe, and respond to experience changes for an [`A
 - [AVExperienceController.Configuration](avexperiencecontroller/configuration-swift.struct.md)
   A structure that stores per-experience configuration.
 ### Transitioning experiences
+- [AVExperienceController.TransitionGroup](avexperiencecontroller/transitiongroup.md)
+  A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
+- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](avexperiencecontroller/withtransitiongroup(body:).md)
+  Coordinates multiple experience transitions to perform together as a single visual transition.
 - [func transition(to: AVExperienceController.Experience) async -> AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transition(to:).md)
   Transitions the video to a different experience.
 ### Configuring a delegate
@@ -74,6 +78,10 @@ Use this class to control, observe, and respond to experience changes for an [`A
   An object that manages viewing multiple videos at once.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
+- [class AVViewport](avviewport.md)
+- [class AVPortalViewport](avportalviewport.md)
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

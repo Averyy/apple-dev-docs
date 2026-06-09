@@ -12,6 +12,7 @@ A type that describes the request and revision combination.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -99,6 +100,9 @@ enum RequestDescriptor
 ### Getting the machine learning image-analysis descriptor
 - [case coreMLRequest(CoreMLRequest.Revision)](requestdescriptor/coremlrequest(_:).md)
   A descriptor that describes a Core ML request.
+### Enumeration Cases
+- [case generateIterativeSegmentationRequest(GenerateIterativeSegmentationRequest.Revision)](requestdescriptor/generateiterativesegmentationrequest(_:).md)
+- [case generateSelectedObjectSegmentationRequest(GenerateSelectedObjectSegmentationRequest.Revision)](requestdescriptor/generateselectedobjectsegmentationrequest(_:).md)
 
 ## Relationships
 

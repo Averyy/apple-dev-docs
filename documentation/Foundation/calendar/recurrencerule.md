@@ -32,9 +32,9 @@ struct RecurrenceRule
 - [static var defaultResolverSpecification: some ResolverSpecification](calendar/recurrencerule/defaultresolverspecification.md)
 ### Structures
 - [Calendar.RecurrenceRule.End](calendar/recurrencerule/end-swift.struct.md)
-  When a recurring event stops recurring
+  When a recurring event stops recurring.
 - [Calendar.RecurrenceRule.Month](calendar/recurrencerule/month.md)
-  Uniquely identifies a month in any calendar system
+  Uniquely identifies a month in any calendar system.
 ### Instance Properties
 - [var calendar: Calendar](calendar/recurrencerule/calendar.md)
   The calendar in which the recurrence occurs
@@ -109,6 +109,8 @@ struct RecurrenceRule
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

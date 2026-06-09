@@ -38,10 +38,12 @@ struct OpenModes
 
 ## See Also
 
-- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
+- [func openItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](fsvolume/openclosehandler/openitem(_:modes:context:replyhandler:).md)
   Opens a file for access.
-- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
+- [func closeItem(FSItem, modes: FSVolume.OpenModes, context: FSContext, replyHandler: ((any Error)?) -> Void)](fsvolume/openclosehandler/closeitem(_:modes:context:replyhandler:).md)
   Closes a file from further access.
+- [class FSContext](fscontext.md)
+  A context object that provides information about the initiator of a file system operation.
 
 
 ---

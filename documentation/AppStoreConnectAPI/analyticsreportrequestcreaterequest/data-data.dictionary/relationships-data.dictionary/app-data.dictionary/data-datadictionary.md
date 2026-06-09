@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the app Apple ID for analytics report create request resource.
+The resource linkage identifying the app to associate with an analytics report request create operation.
 
 **Availability**:
 - App Store Connect API 3.4+
@@ -16,7 +16,7 @@ object AnalyticsReportRequestCreateRequest.Data.Relationships.App.Data
 
 ## Properties
 
-- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`List Apps`](get-v1-apps.md) response.
+- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`List apps`](get-v1-apps.md) response.
 - `type` (string) *(required)*
 
 

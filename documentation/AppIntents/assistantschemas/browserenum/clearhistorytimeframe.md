@@ -20,10 +20,6 @@ The time frame for clearing the browser history
 var clearHistoryTimeFrame: some AssistantSchemas.Enum { get }
 ```
 
-## Mentions
-
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.browser.clearHistoryTimeFrame` schema:
@@ -48,12 +44,7 @@ enum ClearHistoryTimeFrame: AppEnum {
 }
 ```
 
-For more information about the `.browser` app intent domain, see [`Making browser actions available to Siri and Apple Intelligence`](making-browser-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [AssistantSchemas.BrowserEnum](assistantschemas/browserenum.md)
-  Assistant schema conformance for types you use for web browsing functionality.
+For more information about the `.browser` app intent domain, see doc:Making-browser-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

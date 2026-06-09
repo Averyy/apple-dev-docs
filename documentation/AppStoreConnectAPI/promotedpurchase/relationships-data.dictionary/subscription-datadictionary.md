@@ -16,6 +16,7 @@ object PromotedPurchase.Relationships.Subscription
 
 ### Objects
 - [object PromotedPurchase.Relationships.Subscription.Data](promotedpurchase/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a promoted purchase.
 
 ## Properties
 

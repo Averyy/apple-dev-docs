@@ -16,6 +16,7 @@ Creates a button toggle style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

@@ -7,8 +7,6 @@ The dictionary that contains details about a Dock item.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

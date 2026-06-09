@@ -18,8 +18,8 @@ typealias TraitMutations = (inout any UIMutableTraits) -> Void
 
 ## See Also
 
-- [convenience init(mutations: (inout any UIMutableTraits) -> Void)](uitraitcollection/init(mutations:).md)
-- [func modifyingTraits((inout any UIMutableTraits) -> Void) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
+- [convenience init(mutations: UITraitCollection.TraitMutations)](uitraitcollection/init(mutations:).md)
+- [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
 
 
 ---

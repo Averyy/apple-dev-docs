@@ -101,6 +101,8 @@ To get started with a basic layout, see [`Layout fundamentals`](layout-fundament
 ### Staying in the safe areas
 - [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
   Expands the safe area of a view.
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+  Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 - [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
   Shows the specified content beside the modified view.
 - [func safeAreaPadding(_:)](view/safeareapadding(_:).md)

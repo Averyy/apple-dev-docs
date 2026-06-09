@@ -6,8 +6,7 @@
 An object that represents the properties of a color gradient for an artwork object.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

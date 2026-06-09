@@ -18,7 +18,7 @@ object BackgroundAssetVersionCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object BackgroundAssetVersionCreateRequest.Data.Relationships.BackgroundAsset](backgroundassetversioncreaterequest/data-data.dictionary/relationships-data.dictionary/backgroundasset-data.dictionary.md)
-  The data structure that represents a background asset version create request resource.
+  The resource linkage identifying the background asset to which a new version belongs.
 
 ## Properties
 

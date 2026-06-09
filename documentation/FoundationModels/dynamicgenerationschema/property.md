@@ -11,6 +11,7 @@ A property that belongs to a dynamic generation schema.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,6 +28,12 @@ Fields are named members of object types. Fields are strongly typed and have opt
 ### Creating a property
 - [init(name: String, description: String?, schema: DynamicGenerationSchema, isOptional: Bool)](dynamicgenerationschema/property/init(name:description:schema:isoptional:).md)
   Creates a property referencing a dynamic schema.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

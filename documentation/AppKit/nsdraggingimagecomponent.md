@@ -54,7 +54,7 @@ An array of [`NSDraggingImageComponent`](nsdraggingimagecomponent.md) instances 
 - [class NSDraggingItem](nsdraggingitem.md)
   A single dragged item within a dragging session.
 - [class NSDraggingSession](nsdraggingsession.md)
-  The encapsulation of a drag-and-drop action that supports modification of the drag while in progress.
+  An object that encapsulates a drag-and-drop action.
 
 
 ---

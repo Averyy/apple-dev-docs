@@ -29,6 +29,8 @@ For information about handling user interactions on Apple Pencil in your UIKit a
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)
@@ -41,6 +43,13 @@ For information about handling user interactions on Apple Pencil in your UIKit a
   A structure that represents the properties of a specific point along a stroke’s path.
 - [struct PKInk](pkink-swift.struct.md)
   A structure that represents an ink that specifies its type, color, and width.
+### Handwriting recognition
+- [Building a handwriting recognition experience with PencilKit](building-a-handwriting-recognition-experience-with-pencilkit.md)
+  Integrate handwriting recognition into your app to identify written text across multiple languages, and explore path conversion and substrokes to enhance the drawing experience.
+- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+  Analyze handwritten strokes in a PencilKit canvas using on-device recognition, and convert them to text that your app can display, copy, or index.
+- [actor PKStrokeRecognizer](pkstrokerecognizer.md)
+  An actor that recognizes handwriting and searches for text within a PencilKit drawing.
 ### Tools
 - [Configuring the PencilKit tool picker](configuring-the-pencilkit-tool-picker.md)
   Incorporate a custom PencilKit tool picker with a variety of system and custom tools into a drawing app.
@@ -59,12 +68,6 @@ For information about handling user interactions on Apple Pencil in your UIKit a
   Leverage the latest PencilKit features while providing a good user experience in earlier versions of the OS that don’t support those features.
 - [enum PKContentVersion](pkcontentversion.md)
   Constants that represent versions of PencilKit for backward compatibility.
-### Classes
-- [class PKResponderState](pkresponderstate.md)
-  The state of PencilKit behavior related to a `UIResponder`.
-### Enumerations
-- [enum PKToolPickerVisibility](pktoolpickervisibility.md)
-  The visibility state of a tool picker.
 
 
 ---

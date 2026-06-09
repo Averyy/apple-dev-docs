@@ -17,8 +17,6 @@ var kCGDisplayModeUsableForDesktopGUI: String { get }
 
 ## See Also
 
-- [class let colorSpace: CFString](cgdisplaystream/colorspace.md)
-  This key specifies the color space of the output buffer. If this key is not included in the dictionary, the output buffer uses the same color space as the display. The value associated with this key must be a [`CGColorSpace`](cgcolorspace.md) for the desired color space.
 - [class let conversionBlackPointCompensation: CFString](cgcolor/conversionblackpointcompensation.md)
   An option for whether to apply black point compensation when converting between color profiles.
 - [var kCGDisplayBitsPerPixel: String](kcgdisplaybitsperpixel.md)
@@ -46,6 +44,8 @@ var kCGDisplayModeUsableForDesktopGUI: String { get }
   Specifies a CFBoolean value indicating that the I/O Kit stretched mode flag is set.
 - [var kCGDisplayModeIsTelevisionOutput: String](kcgdisplaymodeistelevisionoutput.md)
   Specifies a CFBoolean value indicating that the I/O Kit television output mode flag is set.
+- [var kCGDisplayRefreshRate: String](kcgdisplayrefreshrate.md)
+  Specifies a `CFNumber` double-precision floating point value that represents the refresh rate of a CRT display.
 
 
 ---

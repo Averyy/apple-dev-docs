@@ -17,7 +17,7 @@ Creates a new tab that you can use in a tab view using a system image for the ta
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, systemImage: String, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel
+init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
 ## Parameters

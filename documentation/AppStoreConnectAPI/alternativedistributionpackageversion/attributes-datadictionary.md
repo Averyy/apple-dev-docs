@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an alternative distribution package version resource.
+
 **Availability**:
 - App Store Connect API 3.3+
 
@@ -23,6 +25,7 @@ object AlternativeDistributionPackageVersion.Attributes
 ## See Also
 
 - [object AlternativeDistributionPackageVersion.Relationships](alternativedistributionpackageversion/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

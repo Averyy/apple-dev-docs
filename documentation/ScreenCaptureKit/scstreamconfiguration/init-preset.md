@@ -4,7 +4,9 @@
 **Kind**: init
 
 **Availability**:
-- Mac Catalyst 18.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 18.2+
 - macOS 15.0+
 
 ## Declaration

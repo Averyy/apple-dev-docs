@@ -8,6 +8,7 @@ A type of value that uniquely identifies the paired device.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

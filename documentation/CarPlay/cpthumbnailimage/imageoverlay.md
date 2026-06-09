@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-An optional  overlay for the thumbnail.
+An optional overlay for the thumbnail.
 
 **Availability**:
 - iOS 26.4+

@@ -8,6 +8,7 @@ A deposit of money by a payer directly into a payee’s bank account.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

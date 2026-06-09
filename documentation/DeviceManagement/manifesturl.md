@@ -13,8 +13,6 @@ The URL to the app manifest.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -84,6 +82,11 @@ Use SHA-256 hashes instead of MD5 because SHA-256 has stronger security. If both
 ## Properties
 
 - `items` ([ManifestURL.ItemsItem]) *(required)*: An array of dictionaries representing what the manifest installs.
+
+## See Also
+
+- [object PasswordHash](passwordhash.md)
+  A dictionary that contains the password hash for the account.
 
 
 ---

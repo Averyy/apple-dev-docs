@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of a background task.
+The status item that reports a background task.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,11 +18,11 @@ object StatusServicesBackgroundTaskBackgroundTaskObject
 
 ### Objects
 - [object StatusServicesBackgroundTaskBackgroundTask_LaunchdObject](statusservicesbackgroundtaskbackgroundtask_launchdobject.md)
-  A status report of a background task that’s based on a launch daemon.
+  Details about a `launchd`-based background task, which is only present when the type is `daemon` or `agent`.
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the background task is removed and the status item object only contains this key and the `identifier` key.
+- `_removed` (boolean): If `true`, the system removed the background task and the status item object only contains this key and the `identifier` key.
 - `code-signature` (string): For types other than `agent` or `daemon`, this is the code signature designated requirement of the item, if available.
 - `identifier` (string) *(required)*: The background task UUID which the system uses as the primary key.
 - `launchd` (StatusServicesBackgroundTaskBackgroundTask_LaunchdObject): Details about a `launchd`-based background task, which is only present when the type is `daemon` or `agent`.

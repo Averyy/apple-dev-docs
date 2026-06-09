@@ -27,6 +27,8 @@ enum SRAuthorizationStatus
   User has not yet made a choice regarding this application
 ### Initializers
 - [init?(rawValue: Int)](srauthorizationstatus/init(rawvalue:).md)
+### Type Methods
+- [static func requestAuthorization(for: [any SRDataSensor]) async throws](srauthorizationstatus/requestauthorization(for:).md)
 
 ## Relationships
 

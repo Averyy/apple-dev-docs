@@ -16,7 +16,8 @@ class var shared: NSATSTypesetter { get }
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSTypesetter](nstypesetter.md)
+  An abstract class that performs various type layout tasks.
 
 
 ---

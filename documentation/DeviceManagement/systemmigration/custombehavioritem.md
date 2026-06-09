@@ -7,8 +7,6 @@ The custom behavior dictionary.
 
 **Availability**:
 - macOS 10.12.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

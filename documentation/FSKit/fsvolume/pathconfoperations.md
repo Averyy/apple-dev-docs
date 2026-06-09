@@ -47,12 +47,15 @@ Properties that represent limits and have a numeric type use `-1` to represent n
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
+- [FSVolume.Handler](fsvolume/handler.md)
 - [FSVolume.Operations](fsvolume/operations.md)
 
 ## See Also
 
-- [FSVolume.Operations](fsvolume/operations.md)
+- [FSVolume.Handler](fsvolume/handler.md)
   Methods that all volumes implement to provide required capabilities.
+- [class FSVolumeHandlerResult](fsvolumehandlerresult.md)
+  An abstract base class for all result objects in FSKit handler-style protocols.
 
 
 ---

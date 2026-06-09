@@ -123,7 +123,7 @@ For design guidance, see [`Scroll views`](https://developer.apple.com/design/Hum
 - [func scrollEdgeEffectHidden(Bool, for: Edge.Set) -> some View](view/scrolledgeeffecthidden(_:for:).md)
   Hides any scroll edge effects for scroll views within this hierarchy.
 - [struct ScrollEdgeEffectStyle](scrolledgeeffectstyle.md)
-  A structure that defines the style of pocket a scroll view will have.
+  A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
 - [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
   Shows the specified content as a custom bar beside the modified view.
 ### Interacting with a software keyboard

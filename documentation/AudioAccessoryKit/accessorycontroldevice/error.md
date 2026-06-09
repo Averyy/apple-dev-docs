@@ -34,7 +34,6 @@ Use error cases to identify the cause of failures when registering devices or up
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

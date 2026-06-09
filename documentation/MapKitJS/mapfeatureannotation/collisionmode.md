@@ -11,7 +11,7 @@ A value that determines how the map handles collisions between annotations.
 ## Declaration
 
 ```swift
-get collisionMode(): CollisionMode;
+get collisionMode(): AnnotationCollisionMode;
 ```
 
 #### Discussion

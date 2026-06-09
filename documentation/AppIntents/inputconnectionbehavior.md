@@ -33,19 +33,24 @@ enum InputConnectionBehavior
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also
 
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
 - [class IntentParameter](intentparameter.md)
   A property wrapper that indicates the associated property is an input argument of the app intent.
 - [class IntentParameterDependency](intentparameterdependency.md)
   A property wrapper that represents an app intent dependency you use to provide dynamic options.
 - [struct IntentParameterContext](intentparametercontext.md)
   A type that provides information about an associated parameter during value resolution.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
 
 ---

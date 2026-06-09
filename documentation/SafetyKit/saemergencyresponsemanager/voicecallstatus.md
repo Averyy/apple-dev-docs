@@ -31,9 +31,6 @@ enum VoiceCallStatus
   The voice call failed to connect to the desired contact.
 ### Initializers
 - [init?(rawValue: Int)](saemergencyresponsemanager/voicecallstatus/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](saemergencyresponsemanager/voicecallstatus/equatable-implementations.md)
-- [RawRepresentable Implementations](saemergencyresponsemanager/voicecallstatus/rawrepresentable-implementations.md)
 
 ## Relationships
 

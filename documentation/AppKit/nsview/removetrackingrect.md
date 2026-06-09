@@ -23,7 +23,7 @@ func removeTrackingRect(_ tag: NSView.TrackingRectTag)
 - [func removeTrackingArea(NSTrackingArea)](nsview/removetrackingarea(_:).md)
   Removes a given tracking area from the view.
 - [func addTrackingRect(NSRect, owner: Any, userData: UnsafeMutableRawPointer?, assumeInside: Bool) -> NSView.TrackingRectTag](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md)
-  Establishes  an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
+  Establishes an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
 - [typealias TrackingRectTag](nsview/trackingrecttag.md)
   This type describes the rectangle used to track the mouse.
 

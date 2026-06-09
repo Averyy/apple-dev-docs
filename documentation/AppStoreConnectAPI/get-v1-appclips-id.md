@@ -1,4 +1,4 @@
-# Read App Clip Information
+# Read app clip information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,10 +14,10 @@ Get a specific App Clip.
 
 ## Parameters
 
-- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each App Clips resource returned by the response.
-- `fields[appClips]` ([string]): Additional fields to include for each App Clips resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each default App Clip experience resource returned by the response.
+- `fields[appClips]` ([string]): Additional fields to include for each app clip resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit[appClipDefaultExperiences]` (integer): The number of included App Clips resources to return if the default App Clip experience localizations relationship is included.
+- `limit[appClipDefaultExperiences]` (integer): The maximum number of related default App Clip experience resources to return.
 - `fields[apps]` ([string])
 
 

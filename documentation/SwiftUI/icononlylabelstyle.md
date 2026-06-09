@@ -17,6 +17,7 @@ A label style that only displays the icon of the label.
 ## Declaration
 
 ```swift
+nonisolated
 struct IconOnlyLabelStyle
 ```
 

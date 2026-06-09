@@ -18,7 +18,7 @@ Adds an accessibility action to the view. Actions allow assistive technologies, 
 
 ```swift
 nonisolated
-func accessibilityAction<Label>(action: @escaping () -> Void, @ViewBuilder label: () -> Label) -> some View where Label : View
+func accessibilityAction<Label>(action: @escaping () -> Void, @ContentBuilder label: () -> Label) -> some View where Label : View
 ```
 
 #### Discussion

@@ -1,0 +1,29 @@
+# qualityLevel
+
+**Framework**: Vision  
+**Kind**: property
+
+Controls the resolution of the produced mask.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+final var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel { get set }
+```
+
+#### Discussion
+
+Higher resolutions will produce a smoother mask. Lower resolutions will be faster.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/vision/generateiterativesegmentationrequest/qualitylevel-swift.property)*

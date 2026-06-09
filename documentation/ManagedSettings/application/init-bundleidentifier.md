@@ -9,7 +9,6 @@ Creates an object that represents the app with the specified bundle identifier.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst ?+
-- visionOS 1.0+
 
 ## Declaration
 

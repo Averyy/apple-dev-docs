@@ -1,10 +1,10 @@
-# GET /v1/gameCenterActivityVersions/{id}/relationships/localizations
+# List localization IDs for a Game Center activity version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -18,12 +18,12 @@
 
 - [Read the Versions for an Activity](get-v1-gamecenteractivities-_id_-versions.md)
   Get a list of versions for a specific Game Center activity.
-- [GET /v1/gameCenterActivities/{id}/relationships/versions](get-v1-gamecenteractivities-_id_-relationships-versions.md)
+- [List version IDs for a Game Center activity](get-v1-gamecenteractivities-_id_-relationships-versions.md)
 - [Read Activity Version Information](get-v1-gamecenteractivityversions-_id_.md)
   Get information for a specific Game Center activity version.
 - [Read Default Image Information for an Activity Version](get-v1-gamecenteractivityversions-_id_-defaultimage.md)
   Get details about the default image for a specific Game Center activity version.
-- [GET /v1/gameCenterActivityVersions/{id}/relationships/defaultImage](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
+- [Get the default image ID for a Game Center activity version](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
 - [List All Localizations for an Activity Version](get-v1-gamecenteractivityversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center activity version.
 - [Add an Activity Version Release](post-v1-gamecenteractivityversionreleases.md)

@@ -16,6 +16,7 @@ object SubscriptionGroupSubmissionCreateRequest.Data.Relationships.SubscriptionG
 
 ### Objects
 - [object SubscriptionGroupSubmissionCreateRequest.Data.Relationships.SubscriptionGroup.Data](subscriptiongroupsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription group submission.
 
 ## Properties
 

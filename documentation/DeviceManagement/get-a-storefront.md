@@ -6,8 +6,7 @@
 Fetch a single storefront by using its identifier.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Endpoint
 

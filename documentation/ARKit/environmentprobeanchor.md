@@ -34,13 +34,21 @@ Use environment probes to light virtual geometry by producing environment textur
   The unique identifier of this anchor.
 - [var description: String](environmentprobeanchor/description.md)
   A textual representation of this anchor.
+### Operators
+- [static func == (EnvironmentProbeAnchor, EnvironmentProbeAnchor) -> Bool](environmentprobeanchor/==(_:_:).md)
+  Returns a Boolean value indicating whether two environment probe anchors are equal.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](environmentprobeanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

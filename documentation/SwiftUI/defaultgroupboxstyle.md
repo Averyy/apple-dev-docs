@@ -15,6 +15,7 @@ The default style for group box views.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultGroupBoxStyle
 ```
 

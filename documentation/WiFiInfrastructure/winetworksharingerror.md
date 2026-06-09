@@ -8,6 +8,7 @@ Error codes for Wi-Fi network-sharing functionality.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 
@@ -61,7 +62,6 @@ The Wi-Fi network-sharing API throws `WINetworkSharingError` instances when ther
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

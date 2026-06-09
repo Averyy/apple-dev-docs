@@ -40,7 +40,7 @@ If an error occurs and the original item is not in the original location or a te
 
 ## See Also
 
-- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-4210g.md)
+- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 - [FileManager.ItemReplacementOptions](filemanager/itemreplacementoptions.md)
   Options for specifying the behavior of file replacement operations.

@@ -47,6 +47,19 @@ class PKStrokePathReference
   Returns the B-spline control point at an index point that you provide.
 - [subscript(Int) -> PKStrokePoint](pkstrokepathreference/subscript(_:).md)
   Returns the B-spline control point the location index that you provide.
+### Initializers
+- [convenience init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKConvertedBezierPointReference) -> PKStrokePoint)](pkstrokepathreference/init(bezierpath:creationdate:pointprovider:).md)
+  Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
+- [convenience init(controlPoints: [PKStrokePoint], creationDate: Date, strokePathID: UUID)](pkstrokepathreference/init(controlpoints:creationdate:strokepathid:).md)
+  Creates a stroke path with the specified control points and a unique identifier.
+### Instance Properties
+- [var bezierRepresentation: CGPath](pkstrokepathreference/bezierrepresentation.md)
+  A Bézier path representation of the path’s curve, computed in linear time.
+- [var strokePathID: UUID](pkstrokepathreference/strokepathid.md)
+  The unique identity of the stroke path.
+### Instance Methods
+- [func subpath(with: __PKFloatRange) -> PKStrokePath](pkstrokepathreference/subpath(with:).md)
+  Returns a copy of the path containing the control points in the specified parametric range.
 
 ## Relationships
 

@@ -36,6 +36,8 @@ For example, this method returns a subdivision with the `uszzzz` identifier for 
 
 - [init(String)](locale/subdivision-swift.struct/init(_:).md)
   Creates a sudivision from a Unicode identifier.
+- [init(stringLiteral: String)](locale/subdivision-swift.struct/init(stringliteral:).md)
+  Creates a sudivision from a Unicode identifier as a string literal.
 
 
 ---

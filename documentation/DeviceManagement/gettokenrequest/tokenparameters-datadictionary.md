@@ -11,8 +11,6 @@ Parameters that the system uses to generate the token.
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,9 +20,9 @@ object GetTokenRequest.TokenParameters
 
 ## Properties
 
-- `PhoneUDID` (string): The identifier of the phone paired to the watch. Required by the `com.apple.watch.pairing` service type.
-- `SecurityToken` (string): A security token to generate the server token. Required by the `com.apple.watch.pairing` service type.
-- `WatchUDID` (string): The identifier of the watch paired to the phone. Required by the `com.apple.watch.pairing` service type.
+- `PhoneUDID` (string): The identifier of the phone paired to the watch. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
+- `SecurityToken` (string): A security token to generate the server token. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
+- `WatchUDID` (string): The identifier of the watch paired to the phone. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
 
 
 ---

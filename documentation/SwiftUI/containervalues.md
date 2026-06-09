@@ -44,7 +44,7 @@ Even if a stack has only one child, container values still won’t be readable o
 In this example, a direct subview writes a container value, allowing its direct container view to read it back:
 
 ```swift
-@ViewBuilder var content: some View {
+@ContentBuilder var content: some View {
     Text("A")
         .containerValue(\.myCustomValue, 1)
 }
@@ -57,7 +57,7 @@ ForEach(subviews: content) { subview in
 However in the next example, the wrapping `VStack` means the `Text` view is not a direct subview of the outer container, so that container cannot read the changed value:
 
 ```swift
-@ViewBuilder var containedContent: some View {
+@ContentBuilder var containedContent: some View {
     VStack {
         Text("A")
             .containerValue(\.myCustomValue, 1)

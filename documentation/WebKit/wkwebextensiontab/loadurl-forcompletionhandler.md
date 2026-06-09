@@ -20,7 +20,7 @@ optional func loadURL(_ url: URL, for context: WKWebExtensionContext) async thro
 
 #### Discussion
 
-If the tab is already loading a page, calling this method should stop the current page from loading and start loading the new URL. Loads the URL in the tab’s web view via [`load(_:)`](wkwebview/load(_:).md) if not implemented.
+If the tab is already loading a page, calling this method should stop the current page from loading and start loading the new URL. Loads the URL in the tab’s web view via [`load(_:)`](wkwebview/load(_:)-5siv6.md) if not implemented.
 
 ## Parameters
 

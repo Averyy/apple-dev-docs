@@ -18,6 +18,7 @@ object GameCenterGroupCreateRequest
 
 ### Objects
 - [object GameCenterGroupCreateRequest.Data](gamecentergroupcreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center group.
 
 ## Properties
 
@@ -26,7 +27,7 @@ object GameCenterGroupCreateRequest
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)
-  The data structure that represents a group resource.
+  A named group that shares leaderboards and achievements across multiple apps in Game Center.
 - [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest](gamecentergroupgamecenterachievementsv2linkagesrequest.md)
   The data structure that represents a Game Center group Game Center achievement linkage request resource.
 - [object GameCenterGroupGameCenterAchievementsV2LinkagesResponse](gamecentergroupgamecenterachievementsv2linkagesresponse.md)
@@ -52,7 +53,7 @@ object GameCenterGroupCreateRequest
 - [object GameCenterGroupGameCenterLeaderboardsLinkagesResponse](gamecentergroupgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a group and a leaderboard.
 - [object GameCenterGroupResponse](gamecentergroupresponse.md)
-  A response that contains a single group resource.
+  A response containing a single Game Center group that shares leaderboards and achievements across apps.
 - [object GameCenterGroupUpdateRequest](gamecentergroupupdaterequest.md)
   The request body you use to update a group.
 

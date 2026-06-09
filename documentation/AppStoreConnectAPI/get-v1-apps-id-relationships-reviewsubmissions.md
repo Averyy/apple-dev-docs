@@ -1,4 +1,4 @@
-# List Review Submission IDs
+# List review submission IDs
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

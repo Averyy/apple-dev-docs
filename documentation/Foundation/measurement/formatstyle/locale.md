@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale of the format style.
+Modifies the measurement format style to use the specified locale.
 
 **Availability**:
 - iOS 15.0+
@@ -17,12 +17,16 @@ The locale of the format style.
 ## Declaration
 
 ```swift
-var locale: Locale
+func locale(_ locale: Locale) -> Measurement<UnitType>.FormatStyle
 ```
 
-#### Discussion
+#### Return Value
 
-By default, the format style displays a measurement in the unit that `locale` specifies. The default value is [`autoupdatingCurrent`](locale/autoupdatingcurrent.md).
+A measurement format style with the specified locale.
+
+## Parameters
+
+- `locale`: The locale to use when formatting a measurement.
 
 ## See Also
 
@@ -36,8 +40,10 @@ By default, the format style displays a measurement in the unit that `locale` sp
   The intended purpose of the formatted measurement.
 - [var hidesScaleName: Bool](measurement/formatstyle/hidesscalename.md)
   The visibility of the unit name of a temperature.
+- [var locale: Locale](measurement/formatstyle/locale.md)
+  The locale of the format style.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/measurement/formatstyle/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/measurement/formatstyle/locale(_:))*

@@ -16,7 +16,7 @@ object AlternativeDistributionKeyCreateRequest.Data.Relationships.App.Data
 
 ## Properties
 
-- `id` (string) *(required)*: This is the Apple app ID for the Marketplace app or your web distribution app. An opaque resource ID that uniquely identifies the resource. Obtain the `apps` ID from the [`List Apps`](get-v1-apps.md) response.
+- `id` (string) *(required)*: This is the Apple app ID for the Marketplace app or your web distribution app. An opaque resource ID that uniquely identifies the resource. Obtain the `apps` ID from the [`List apps`](get-v1-apps.md) response.
 - `type` (string) *(required)*
 
 

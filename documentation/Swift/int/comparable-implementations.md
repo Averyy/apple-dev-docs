@@ -15,19 +15,19 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](int/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](int/_(_:_:)-24u4v.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](int/_(_:_:)-3izph.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func > (Int, Int) -> Bool](int/_(_:_:)-9cdiy.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](int/_(_:_:)-fe4g.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (Self, Self) -> Bool](int/_=(_:_:)-1ii8.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func <= (Int, Int) -> Bool](int/_=(_:_:)-28qlv.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func >= (Int, Int) -> Bool](int/_=(_:_:)-443dp.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](int/_=(_:_:)-8lyh0.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](int/_=(_:_:)-5i1r4.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](int/_=(_:_:)-5nvzs.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

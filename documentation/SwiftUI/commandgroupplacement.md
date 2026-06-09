@@ -92,7 +92,7 @@ The names of these placements aren’t visible in the user interface, but the di
 - [struct CommandGroup](commandgroup.md)
   Groups of controls that you can add to existing command menus.
 - [struct CommandsBuilder](commandsbuilder.md)
-  Constructs command sets from multi-expression closures. Like `ViewBuilder`, it supports up to ten expressions in the closure body.
+  Constructs command sets from multi-expression closures. Like `ContentBuilder`, it supports up to ten expressions in the closure body.
 
 
 ---

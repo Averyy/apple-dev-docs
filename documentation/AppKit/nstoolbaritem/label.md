@@ -19,7 +19,7 @@ var label: String { get set }
 
 #### Discussion
 
-For a discussion on labels, see [`Setting a Toolbar Item’s Representation`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Toolbars/Tasks/SettingTBItemRep.html#//apple_ref/doc/uid/20000722).
+For more information, see [`Integrating a Toolbar and Touch Bar into Your App`](integrating-a-toolbar-and-touch-bar-into-your-app.md).
 
 ## See Also
 

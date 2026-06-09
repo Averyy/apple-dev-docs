@@ -16,7 +16,7 @@ subtitle?: string;
 
 #### Discussion
 
-The default value is `""` (empty string).
+The default value is `null`.
 
 ## See Also
 

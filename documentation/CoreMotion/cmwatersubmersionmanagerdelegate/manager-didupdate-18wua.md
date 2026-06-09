@@ -1,8 +1,7 @@
 # manager(_:didUpdate:)
 
 **Framework**: Core Motion  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Provides the delegate with updated water temperature data.
 
@@ -16,7 +15,7 @@ Provides the delegate with updated water temperature data.
 ## Declaration
 
 ```swift
-func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterTemperature)
+optional func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement: CMWaterTemperature)
 ```
 
 #### Discussion

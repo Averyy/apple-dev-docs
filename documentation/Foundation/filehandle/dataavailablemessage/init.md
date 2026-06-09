@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message that indicates a file handle has data available for reading.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

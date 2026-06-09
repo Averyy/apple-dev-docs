@@ -11,14 +11,15 @@ Use `buildIcons` to identify which icons were uploaded to App Store Connect insi
 ## Topics
 
 ### Getting Metadata and Downloading Icons
-- [List All Icons for a Build](get-v1-builds-_id_-icons.md)
+- [List all icons for a build](get-v1-builds-_id_-icons.md)
   List all the icons for various platforms delivered with a build.
-### Objects and Types
+### Objects and types
 - [object BuildIcon](buildicon.md)
-  The data structure that represents the Build Icons resource.
+  A PNG icon image extracted from a build, used for display in App Store Connect and TestFlight.
 - [object BuildIconsResponse](buildiconsresponse.md)
-  A response that contains a list of Build Icon resources.
+  A response containing a list of icon images for a build.
 - [object BuildIconsWithoutIncludesResponse](buildiconswithoutincludesresponse.md)
+  A response containing a list of build icons, without related resources.
 - [object ImageAsset](imageasset.md)
   An image asset, including its height, width, and template URL.
 - [type IconAssetType](iconassettype.md)

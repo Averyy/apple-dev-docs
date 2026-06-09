@@ -24,22 +24,7 @@ string PreviewType
 
 Possible values
 
-- `IPHONE_67`
-- `IPHONE_65`
-- `IPHONE_61`
-- `IPHONE_58`
-- `IPHONE_55`
-- `IPHONE_47`
-- `IPHONE_40`
-- `IPHONE_35`
-- `IPAD_PRO_3GEN_129`
-- `IPAD_PRO_3GEN_11`
-- `IPAD_PRO_129`
-- `IPAD_105`
-- `IPAD_97`
-- `DESKTOP`
-- `APPLE_TV`
-- `APPLE_VISION_PRO`
+-`IPHONE_67` -`IPHONE_65` -`IPHONE_61` -`IPHONE_58` -`IPHONE_55` -`IPHONE_47` -`IPHONE_40` -`IPHONE_35` -`IPAD_PRO_3GEN_129` -`IPAD_PRO_3GEN_11` -`IPAD_PRO_129` -`IPAD_105` -`IPAD_97` -`DESKTOP` -`APPLE_TV` -`APPLE_VISION_PRO`
 
 ## See Also
 
@@ -50,9 +35,9 @@ Possible values
 - [object AppPreviewUpdateRequest](apppreviewupdaterequest.md)
   The request body you use to update an App Preview.
 - [object AppPreviewResponse](apppreviewresponse.md)
-  A response that contains a single App Previews resource.
+  The response body for endpoints that create, read, or modify an app preview video.
 - [object AppPreviewsResponse](apppreviewsresponse.md)
-  A response that contains a list of App Preview resources.
+  The response body for endpoints that list app preview videos in a preview set.
 - [object UploadOperation](uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
 - [object PreviewFrameImage](previewframeimage.md)

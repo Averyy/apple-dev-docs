@@ -28,6 +28,8 @@ var attributed: PersonNameComponents.AttributedStyle { get }
   The type that represents the style of the formatted result.
 - [var locale: Locale](personnamecomponents/formatstyle/locale.md)
   The locale to use when formatting the person name components.
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+  Modifies the person name components format style to use the specified locale.
 
 
 ---

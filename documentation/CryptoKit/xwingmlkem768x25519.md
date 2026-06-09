@@ -25,6 +25,8 @@ enum XWingMLKEM768X25519
 ### Keys
 - [XWingMLKEM768X25519.PrivateKey](xwingmlkem768x25519/privatekey.md)
 - [XWingMLKEM768X25519.PublicKey](xwingmlkem768x25519/publickey.md)
+### Structures
+- [XWingMLKEM768X25519.OneTimePrivateKey](xwingmlkem768x25519/onetimeprivatekey.md)
 
 ## Relationships
 

@@ -12,9 +12,9 @@ Overrides a multipoint object.
 
 ```swift
 itemForMultiPoint?<D extends GeoJSONTypes.MultiPoint>(
-        itemCollection: ItemCollection<D>,
-        geoJSON: D,
-    ): ItemCollection<D> | Item[] | null;
+    itemCollection: ItemCollection<D>,
+    geoJSON: D,
+): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the in-app purchase for a in-app purchase image resource.
+The resource linkage identifying the in-app purchase associated with an in-app purchase image.
 
 **Availability**:
 - App Store Connect API 3.6+

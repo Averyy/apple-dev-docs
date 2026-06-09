@@ -18,6 +18,8 @@ class let didEnterFullScreenNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that entered full-screen mode. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidEnterFullScreenMessage`](nswindow/didenterfullscreenmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

@@ -21,15 +21,13 @@ Returns a load request that creates an entity by asynchronously loading it from 
 
 #### Discussion
 
-RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files.
-
-When building your app, Xcode automatically converts any Reality Composer projects (`.rcproject`) in the selected target into Reality files, which it then copies into your app’s bundle.
+RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files. For Reality files that contain multiple scenes, specify which scene to load by appending a URL fragment with the scene name — for example, `my.reality#MyScene`.
 
 For more information on loading entities, see [`Loading entities from a file`](loading-entities-from-a-file.md).
 
 ## Parameters
 
-- `url`: The location of a file that represents an entity.
+- `url`: A file URL representing the file to load. For Reality files, append a URL fragment to specify a scene name — for example, `my.reality#MyScene`.
 - `resourceName`: A unique name the method assigns to the resource it loads, for use in network synchronization.
 
 ## See Also

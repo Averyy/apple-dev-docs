@@ -15,33 +15,33 @@ For more information about the metadata in the `appInfos` resource, see [`App an
 ## Topics
 
 ### Reading App Information
-- [Read App Info Information](get-v1-appinfos-_id_.md)
+- [Read app info information](get-v1-appinfos-_id_.md)
   Read App Store information including your App Store state, age ratings, Brazil age rating, and kids’ age band.
-- [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)
+- [List all app infos for an app](get-v1-apps-_id_-appinfos.md)
   Get information about an app that is currently live on App Store, or that goes live with the next version.
-- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List all app info localizations for an app info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 ### Modifying App Information
-- [Modify an App Info](patch-v1-appinfos-_id_.md)
+- [Modify an app info](patch-v1-appinfos-_id_.md)
   Update the App Store categories and sub-categories for your app.
 ### Reading Category Information
 - [App Categories and Subcategories](app-categories-and-subcategories.md)
   Read the category and subcategory information of an App Info.
 ### Reading Localization Information
-- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List all app info localizations for an app info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
-- [GET /v1/appInfos/{id}/relationships/appInfoLocalizations](get-v1-appinfos-_id_-relationships-appinfolocalizations.md)
+- [List app info localization IDs for an app info](get-v1-appinfos-_id_-relationships-appinfolocalizations.md)
 ### Reading Age Rating Information
-- [Read Age Rating Declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
-  Get the age rating declaration for the app info.
-- [GET /v1/appInfos/{id}/relationships/ageRatingDeclaration](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
+- [Read the age-rating declaration](get-v1-appinfos-_id_-ageratingdeclaration.md)
+  Get the age-rating declaration for an app info.
+- [Get the age rating declaration ID for an app info](get-v1-appinfos-_id_-relationships-ageratingdeclaration.md)
 ### Objects
 - [object AppInfo](appinfo.md)
   The data structure that represent an App Infos resource.
 - [object AppInfoResponse](appinforesponse.md)
-  A response that contains a single App Infos resource.
+  The response body for endpoints that read or modify an app’s App Store information.
 - [object AppInfosResponse](appinfosresponse.md)
-  A response that contains a list of App Info resources.
+  The response body for endpoints that list an app’s App Store information entries.
 - [object AppInfoUpdateRequest](appinfoupdaterequest.md)
   The request body you use to update an App Info.
 - [object AppInfoAppInfoLocalizationsLinkagesResponse](appinfoappinfolocalizationslinkagesresponse.md)

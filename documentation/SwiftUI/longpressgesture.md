@@ -17,6 +17,7 @@ A gesture that succeeds when the user performs a long press.
 ## Declaration
 
 ```swift
+nonisolated
 struct LongPressGesture
 ```
 
@@ -66,6 +67,8 @@ struct LongPressGestureView: View {
   Creates a long-press gesture with a minimum duration
 - [init(minimumDuration: Double, maximumDistance: CGFloat)](longpressgesture/init(minimumduration:maximumdistance:).md)
   Creates a long-press gesture with a minimum duration and a maximum distance that the interaction can move before the gesture fails.
+- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](longpressgesture/init(minimumduration:maximumdistance:inputkinds:).md)
+  Creates a long-press gesture with a minimum duration, a maximum distance, and the input kinds the gesture recognizes.
 - [var minimumDuration: Double](longpressgesture/minimumduration.md)
   The minimum duration of the long press that must elapse before the gesture succeeds.
 - [var maximumDistance: CGFloat](longpressgesture/maximumdistance.md)
@@ -79,6 +82,8 @@ struct LongPressGestureView: View {
 ## See Also
 
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
+  Adds an action to perform when this view recognizes a long press gesture.
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.

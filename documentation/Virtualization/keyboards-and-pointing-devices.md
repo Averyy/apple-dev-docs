@@ -50,6 +50,8 @@ Configure a keyboard and a pointing device to allow people to interact with macO
 - [Clipboard sharing](clipboard-sharing.md)
   Share the pasteboard between the host and guest system.
 - [USB Devices](usb-devices.md)
+- [Custom Virtio drivers](custom-drivers.md)
+  Create custom Virtio drivers for Linux virtual machines.
 
 
 ---

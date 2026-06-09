@@ -135,7 +135,7 @@ func updateDragStartPosition(dragStartPosition: SIMD3<Float>,
 }
 ```
 
-> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Interacting with your app in the visionOS simulator`](https://developer.apple.com/documentation/Xcode/interacting-with-your-app-in-the-visionos-simulator#Interact-with-your-app).
+> **Note**: When running the sample project in Simulator, you can hold the Shift key on your keyboard while dragging the mouse to improve the feel of the simulated drag gesture. To learn more, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub#Interact-with-your-app).
 
 #### Climb the Butte with Dual Input Gestures
 
@@ -368,7 +368,7 @@ rotationComponent.angle
 
 #### Prepare Assets for Gameplay
 
-Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see [`Adding assets to your Reality Composer Pro scene`](https://developer.apple.com/documentation/RealityComposerPro/Adding-assets-into-your-Reality-Composer-Pro-scene).
+Using third-party digital content creation (DCC) tools to create the visual assets for this sample app, you can export those assets as USD files, and then import and arrange them inside Reality Composer Pro. Then you can apply custom components to the entities in a Reality Composer Pro scene, and custom systems can look for those components to process entities for gameplay. For more information, see doc://com.apple.documentation/documentation/realitycomposerpro/adding-assets-into-your-reality-composer-pro-scene.
 
 To generate the collision component that uses the shape of the butte, you first use a DCC to generate a model that matches the shape of the butte and platforms, but that contains fewer vertices. In Reality Composer Pro, you apply a custom component to the model entity. The custom system looks for that component by subscribing to the [`ComponentEvents.DidAdd`](https://developer.apple.com/documentation/RealityKit/ComponentEvents/DidAdd) event for a custom type in the initializer for a custom system.
 
@@ -661,7 +661,7 @@ The design of the music scoring separates linear and nonlinear categories. The l
 ## See Also
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
-  Build, create, and design 3D content for your RealityKit apps.
+  Build, design, and orchestrate 3D content for your RealityKit apps.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -680,12 +680,14 @@ The design of the music scoring separates linear and nonlinear categories. The l
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
-- [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
-  Create engaging interactions by training models to recognize and track real-world objects in your app.
+- [Implementing object tracking in your app](implementing-object-tracking-in-your-app.md)
+  Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
+- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
+  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 
 ---

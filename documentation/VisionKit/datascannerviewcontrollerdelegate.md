@@ -8,6 +8,7 @@ A delegate object that responds when people interact with items that the data sc
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

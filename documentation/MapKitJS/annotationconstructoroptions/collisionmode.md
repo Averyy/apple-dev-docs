@@ -11,17 +11,17 @@ A mode that determines the shape of the collision frame.
 ## Declaration
 
 ```swift
-collisionMode?: CollisionMode;
+collisionMode?: AnnotationCollisionMode;
 ```
 
 #### Discussion
 
-Use one of the modes available in [`CollisionMode`](collisionmode.md):
+Use one of the modes available in [`AnnotationCollisionMode`](annotationcollisionmode.md):
 
-- `mapkit.Annotation.CollisionMode.Rectangle` — Indicates the bounding box of the annotation.
-- `mapkit.Annotation.CollisionMode.Circle` — Indicates a circle within the bounding box.
+- [`Rectangle`](annotationcollisionmode/rectangle.md) — Indicates the bounding box of the annotation.
+- [`Circle`](annotationcollisionmode/circle.md) — Indicates a circle within the bounding box.
 
-The default value is `Annotation.CollisionMode.Rectangle`.
+The default value is [`Rectangle`](annotationcollisionmode/rectangle.md).
 
 ## See Also
 

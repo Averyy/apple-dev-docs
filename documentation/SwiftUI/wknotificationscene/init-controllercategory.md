@@ -11,6 +11,7 @@ Creates a scene that appears in response to receiving a specific category of rem
 ## Declaration
 
 ```swift
+nonisolated
 init(controller: Controller.Type = Controller.self, category: String)
 ```
 

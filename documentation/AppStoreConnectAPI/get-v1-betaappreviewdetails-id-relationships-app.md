@@ -1,10 +1,10 @@
-# GET /v1/betaAppReviewDetails/{id}/relationships/app
+# Get the app ID for a beta app review detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [List Beta App Review Details](get-v1-betaappreviewdetails.md)
+- [List beta app review details](get-v1-betaappreviewdetails.md)
   Find and list beta app review details for all apps.
-- [Read Beta App Review Detail Information](get-v1-betaappreviewdetails-_id_.md)
+- [Read beta app review detail information](get-v1-betaappreviewdetails-_id_.md)
   Get beta app review details for a specific app.
-- [Read the App Information of a Beta App Review Detail](get-v1-betaappreviewdetails-_id_-app.md)
+- [Read the app information of a beta app review detail](get-v1-betaappreviewdetails-_id_-app.md)
   Get the app information for a specific beta app review details resource.
 
 

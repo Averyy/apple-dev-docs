@@ -39,6 +39,8 @@ func payLaterViewDisplayStyle(_ displayStyle: PayLaterViewDisplayStyle) -> some 
   Called when a user selected a shipping method. This is required if the user is being asked to provide a shipping method.
 - [func payLaterViewAction(PayLaterViewAction) -> some View](view/paylaterviewaction(_:).md)
   Sets the action on the PayLaterView. See `PKPayLaterAction`.
+- [func payWithApplePayButtonDisableCardArt() -> some View](view/paywithapplepaybuttondisablecardart.md)
+  Sets the features that should be allowed to show on the payment buttons.
 - [func payWithApplePayButtonStyle(PayWithApplePayButtonStyle) -> some View](view/paywithapplepaybuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)

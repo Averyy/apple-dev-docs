@@ -17,17 +17,17 @@ For more information about app previews, see [`App information`](https://develop
 ## Topics
 
 ### Endpoints
-- [Create an App Preview Set](post-v1-apppreviewsets.md)
+- [Create an app preview set](post-v1-apppreviewsets.md)
   Add a new app preview set to an App Store version localization for a specific app preview type and display size.
-- [Delete an App Preview Set](delete-v1-apppreviewsets-_id_.md)
+- [Delete an app preview set](delete-v1-apppreviewsets-_id_.md)
   Delete an app preview set and all of its previews.
 - [List App Preview Sets for a Custom Product Page Localization](get-v1-appcustomproductpagelocalizations-_id_-apppreviewsets.md)
   List the app preview sets for a specific custom product page localization.
-- [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)
+- [List all app previews for an app preview set](get-v1-apppreviewsets-_id_-apppreviews.md)
   List all ordered app previews in a preview set.
-- [Get All App Preview IDs for an App Preview Set](get-v1-apppreviewsets-_id_-relationships-apppreviews.md)
+- [Get all app preview ids for an app preview set](get-v1-apppreviewsets-_id_-relationships-apppreviews.md)
   Get the ordered app preview IDs in a preview set.
-- [Replace All App Previews for an App Preview Set](patch-v1-apppreviewsets-_id_-relationships-apppreviews.md)
+- [Replace all app previews for an app preview set](patch-v1-apppreviewsets-_id_-relationships-apppreviews.md)
   Change the order of the app previews in a preview set.
 ### Objects
 - [object AppPreviewSet](apppreviewset.md)
@@ -35,9 +35,9 @@ For more information about app previews, see [`App information`](https://develop
 - [object AppPreviewSetCreateRequest](apppreviewsetcreaterequest.md)
   The request body you use to create an App Preview Set.
 - [object AppPreviewSetResponse](apppreviewsetresponse.md)
-  A response that contains a single App Preview Sets resource.
+  The response body for endpoints that create or read a set of app preview videos for a display size.
 - [object AppPreviewSetsResponse](apppreviewsetsresponse.md)
-  A response that contains a list of App Preview Set resources.
+  The response body for endpoints that list app preview sets for an App Store version localization.
 - [object AppPreviewSetAppPreviewsLinkagesRequest](apppreviewsetapppreviewslinkagesrequest.md)
   A request body you use to reorder the app previews in a preview set.
 - [object AppPreviewSetAppPreviewsLinkagesResponse](apppreviewsetapppreviewslinkagesresponse.md)

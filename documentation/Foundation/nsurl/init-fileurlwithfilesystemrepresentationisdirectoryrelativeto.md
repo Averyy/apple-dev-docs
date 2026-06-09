@@ -47,9 +47,13 @@ The file system representation format is described in File Encodings and Fonts.
 - [init(fileURLWithPath: String, isDirectory: Bool)](nsurl/init(fileurlwithpath:isdirectory:).md)
   Initializes a newly created NSURL referencing the local file or directory at `path`.
 - [class func fileURL(withPath: String, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [init(fileURLWithPath: String, relativeTo: URL?)](nsurl/init(fileurlwithpath:relativeto:).md)
+  Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String, isDirectory: Bool, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:isdirectory:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativeto:).md)
+  Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String) -> URL](nsurl/fileurl(withpath:).md)
   Initializes and returns a newly created NSURL object as a file URL with a specified path.
 - [init(fileURLWithPath: String)](nsurl/init(fileurlwithpath:).md)

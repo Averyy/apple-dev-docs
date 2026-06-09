@@ -8,7 +8,9 @@ A default implementation of an internal type that the App Intents framework uses
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 

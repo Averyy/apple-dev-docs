@@ -21,6 +21,12 @@ The data to animate.
 var animatableData: Self.AnimatableData { get set }
 ```
 
+#### Discussion
+
+SwiftUI reads this property to capture the current vector representation of the animatable state, and writes it back on each animation frame with an interpolated value. The default implementation returns [`EmptyAnimatableData`](emptyanimatabledata.md), meaning nothing is animated.
+
+Use the [`Animatable()`](animatable().md) macro to synthesize this property automatically. Implement it by hand only when you need custom interpolation logic such as clamping, normalization, or mapping to a derived value.
+
 ## See Also
 
 - [macro Animatable()](animatable().md)

@@ -25,6 +25,8 @@ Alternatively, you can construct the snippet yourself by manually adjusting the 
   Generate your token to access MapKit services with proper authorization.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
+- [Understanding Browser Support](browser-support.md)
+  Supported browsers and compatibility information for MapKit JS.
 - [class mapkit](mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 

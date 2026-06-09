@@ -141,6 +141,9 @@ The system triggers scene events named [`VideoPlayerEvents.ImmersiveViewingModeW
   The viewer’s selected immersive-viewing mode.
 - [var immersiveViewingMode: VideoPlayerComponent.ImmersiveViewingMode?](videoplayercomponent/immersiveviewingmode-swift.property.md)
   The current immersive-viewing mode.
+### Sizing the video portal
+- [var portalSize: SIMD2<Float>](videoplayercomponent/portalsize.md)
+  The portal entity size in meters.
 ### Instance Properties
 - [var currentRenderingStatus: VideoPlayerComponent.RenderingStatus](videoplayercomponent/currentrenderingstatus.md)
 - [var desiredSpatialVideoMode: VideoPlayerComponent.SpatialVideoMode](videoplayercomponent/desiredspatialvideomode.md)

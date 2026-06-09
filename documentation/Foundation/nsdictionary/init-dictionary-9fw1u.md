@@ -32,6 +32,8 @@ An initialized dictionaryâ€”which might be different than the original receiverâ
 
 - [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
+- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+  Initializes a newly allocated dictionary from the given key-value pairs.
 
 
 ---

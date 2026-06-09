@@ -17,7 +17,7 @@ Creates a menu with a custom label.
 
 ```swift
 nonisolated
-init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

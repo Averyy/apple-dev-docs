@@ -29,6 +29,7 @@ struct UnownedTaskExecutor
 - [func asTaskExecutor() -> (any TaskExecutor)?](unownedtaskexecutor/astaskexecutor.md)
 ### Default Implementations
 - [Equatable Implementations](unownedtaskexecutor/equatable-implementations.md)
+- [Hashable Implementations](unownedtaskexecutor/hashable-implementations.md)
 
 ## Relationships
 
@@ -37,6 +38,7 @@ struct UnownedTaskExecutor
 - [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
+- [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

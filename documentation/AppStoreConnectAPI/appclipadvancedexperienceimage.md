@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an image that appears on the App Clip card for an advanced App Clip experience.
+The image displayed on the App Clip card for an advanced App Clip experience, shown when a user scans an NFC tag, QR code, or location-based trigger.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -30,7 +30,7 @@ object AppClipAdvancedExperienceImage
 ## See Also
 
 - [object AppClipAdvancedExperienceImageResponse](appclipadvancedexperienceimageresponse.md)
-  A response that contains a single Advanced App Clip Experience Images resource.
+  A response containing a single image for an App Clip advanced experience card.
 - [object AppClipAdvancedExperienceImageCreateRequest](appclipadvancedexperienceimagecreaterequest.md)
   The request body you use to reserve an image asset for an advanced App Clip experience.
 - [object AppClipAdvancedExperienceImageUpdateRequest](appclipadvancedexperienceimageupdaterequest.md)

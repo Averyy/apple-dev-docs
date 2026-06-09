@@ -25,6 +25,8 @@ struct Region
 ### Creating a region
 - [init(String)](locale/region-swift.struct/init(_:).md)
   Creates a region from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/region-swift.struct/init(stringliteral:).md)
+  Creates a region from a BCP 47 identifier as a string literal.
 ### Examining region properties
 - [var identifier: String](locale/region-swift.struct/identifier.md)
   The BCP 47 identifier of the region.

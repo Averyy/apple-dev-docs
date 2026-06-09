@@ -14,6 +14,7 @@ Creates a toolbar spacer item with the specified sizing behavior and placement.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ sizing: SpacerSizing = .flexible, placement: ToolbarItemPlacement = .automatic)
 ```
 

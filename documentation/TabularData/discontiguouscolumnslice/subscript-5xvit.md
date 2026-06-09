@@ -17,7 +17,7 @@ Accesses a contiguous range of elements with an unbounded range.
 ## Declaration
 
 ```swift
-subscript(range: (UnboundedRange_) -> ()) -> DiscontiguousColumnSlice<WrappedElement> { get set }
+subscript(range: UnboundedRange) -> DiscontiguousColumnSlice<WrappedElement> { get set }
 ```
 
 ## Parameters

@@ -11,7 +11,7 @@ Adds an annotation to the map.
 ## Declaration
 
 ```swift
-addAnnotation(annotation: Annotation): Annotation | undefined;
+addAnnotation(annotation: Annotation): Annotation | null;
 ```
 
 #### Return Value

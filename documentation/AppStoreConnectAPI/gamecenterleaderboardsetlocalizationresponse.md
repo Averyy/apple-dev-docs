@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single leaderboard set localization resource.
+The response body for endpoints that create, read, or modify a single Game Center leaderboard set localization.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -41,7 +41,7 @@ object GameCenterLeaderboardSetLocalizationResponse
 - [object GameCenterLeaderboardSetLocalizationUpdateRequest](gamecenterleaderboardsetlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
 - [object GameCenterLeaderboardSetLocalizationsResponse](gamecenterleaderboardsetlocalizationsresponse.md)
-  A response that contains multiple leaderboard localizations resources.
+  The response body for endpoints that list Game Center leaderboard set localizations.
 
 
 ---

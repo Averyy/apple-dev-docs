@@ -17,6 +17,7 @@ The default label to use for a button.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultButtonLabel
 ```
 

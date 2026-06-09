@@ -17,6 +17,7 @@ The default labeled content style.
 ## Declaration
 
 ```swift
+nonisolated
 struct AutomaticLabeledContentStyle
 ```
 

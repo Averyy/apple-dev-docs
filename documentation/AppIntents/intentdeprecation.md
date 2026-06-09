@@ -32,8 +32,16 @@ struct IntentDeprecation<ReplacementIntent> where ReplacementIntent : AppIntent
 
 ## See Also
 
+- [struct IntentModes](intentmodes.md)
+  A set of options you use to configure the runtime behavior of an app intent.
 - [struct IntentSystemContext](intentsystemcontext.md)
-  Information that the system makes available to an app intent while it performs its action.
+  Contextual information that the system provides while it performs an app intent.
+- [struct IntentDescription](intentdescription.md)
+  The human-readable description and metadata for an app intent.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [class IntentProjection](intentprojection.md)
+  Projections for an app intent that returns non-optional values for parameters.
 
 
 ---

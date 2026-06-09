@@ -15,6 +15,14 @@ Options for DADiskGetOptions() and DADiskSetOptions().
 typealias DADiskOptions = UInt32
 ```
 
+## Topics
+
+### Constants
+- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
+- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+
 ## See Also
 
 - [typealias DADiskClaimOptions](dadiskclaimoptions.md)

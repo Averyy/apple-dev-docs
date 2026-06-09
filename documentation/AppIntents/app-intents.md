@@ -2,87 +2,134 @@
 
 **Framework**: App Intents
 
-Define the custom actions your app exposes to the system using specialized intents.
+Make your app’s custom actions available to the system by using app intent types.
 
 #### Overview
 
-Use app intents to express your app’s capabilities to the system. An app intent includes the code you need to perform an action, and expresses the data you require from the system. The system exposes your actions directly from the Shortcuts app and in system experiences like Siri.
+An app intent expresses one of your app’s capabilities to the system, and contains code to perform that action. You express your app intents as types that adopt the [`AppIntent`](appintent.md) protocol and specify the data you need to perform the action. For specific types of actions, you might also base your intents on other [`App intent types`](app-intent-types.md). For example, if your app intent launches your app and displays some content, use the [`OpenIntent`](openintent.md) protocol instead. If an app intent supports system features, adopt a schema from an [`App schema domains`](app-schema-domains.md).
 
-To define an action, create a type that adopts the [`AppIntent`](appintent.md) protocol, or a related protocol that provides the specific behavior you need. Annotate any key properties with the `@Parameter` property wrapper to let the system know you need the associated information to perform the action.
+If your app intent requires data to complete its action, specify those data requirements using parameters. An app intent parameter is a property that you annotate with the `@Parameter` macro. To improve the experience of specifying parameter values, include parameter summaries.
 
-The system uses intent attributes like [`title`](appintent/title.md) and [`description`](appintent/description.md) to inform people about your intent’s functionality in the Shortcuts app. Supplement this information with [`IntentDescription`](intentdescription.md) metadata, and provide additional context through human-readable explanations of your intent’s functionality, including category information and search keywords. This metadata helps your intents appear in interfaces like the Shortcuts app and improves their discoverability.
-
-For more information about features App Intents enables, see [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md).
+An intent returns a result to tell the system when it completes its action, and whether the action was successful or failed. A result can also provide textual or view-based content for Siri or the Shortcuts app to incorporate into conversations.
 
 ## Topics
 
-### General actions
+### App intent definition
+- [Creating your first app intent](creating-your-first-app-intent.md)
+  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
+  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
 - [protocol AppIntent](appintent.md)
-  An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
+  An interface you use to express app-specific actions and make them available to the rest of the system.
+- [App intent types](app-intent-types.md)
+  Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.
+### Add-on behaviors
+- [protocol UndoableIntent](undoableintent.md)
+  An interface you use to register undoable actions in your app intent code.
+- [protocol CancellableIntent](cancellableintent.md)
+  An interface to support the graceful cancellation of your app intent’s task.
+- [protocol LongRunningIntent](longrunningintent.md)
+  An interface you use to extend the background execution time of an app intent that performs a long-running task.
+- [protocol PredictableIntent](predictableintent.md)
+  An interface that indicates the system can suggest the intent as a potential action to run.
+- [struct IntentPrediction](intentprediction.md)
+  A prediction for an app intent that the system might display to someone when it’s relevant.
+### Parameters
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
+- [class IntentParameter](intentparameter.md)
+  A property wrapper that indicates the associated property is an input argument of the app intent.
+- [class IntentParameterDependency](intentparameterdependency.md)
+  A property wrapper that represents an app intent dependency you use to provide dynamic options.
+- [struct IntentParameterContext](intentparametercontext.md)
+  A type that provides information about an associated parameter during value resolution.
+- [enum InputConnectionBehavior](inputconnectionbehavior.md)
+  Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
+### Disambiguation
+- [struct IntentChoiceOption](intentchoiceoption.md)
+  A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
+- [struct ConfirmationConditions](confirmationconditions.md)
+  Conditions for a confirmation request.
+### Results
+- [protocol IntentResult](intentresult.md)
+  A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [struct IntentResultContainer](intentresultcontainer.md)
+  An object that represents the output of a completed intent.
+- [protocol ProvidesDialog](providesdialog.md)
+  The result of performing an action that delivers a dialog back to the initiator of the action.
+- [protocol ReturnsValue](returnsvalue.md)
+  The result of performing an action that delivers a value back to the initiator.
+- [protocol ShowsSnippetView](showssnippetview.md)
+  The result of performing an action that delivers a view back to the initiator of the action.
+- [protocol ResultsCollection](resultscollection.md)
+  A protocol representing a collection of returned items with support for sectioning.
+- [protocol OpensIntent](opensintent.md)
+  The result of performing an action that delivers an app intent back to the initiator of the action.
+### Dependency management
+- [class AppDependencyManager](appdependencymanager.md)
+  An object that manages the registration and initialization of an app intent’s dependencies.
+- [class AppDependency](appdependency.md)
+  A property wrapper that resolves a registered dependency at runtime.
+### Shortcuts support
+- [protocol ParameterSummary](parametersummary.md)
+  An interface for defining the visual representation of an app intent’s parameters.
+- [struct IntentParameterSummary](intentparametersummary.md)
+  A type that describes the user interface configuration of an app intent’s parameters.
+- [struct ParameterSummaryString](parametersummarystring.md)
+  A human-readable string that interpolates parameter key paths to provide user-configurable placeholders in the Shortcuts app.
+- [struct ParameterSummaryWhenCondition](parametersummarywhencondition.md)
+  A type that represents a conditional statement in a parameter summary.
+- [struct ParameterSummarySwitchCondition](parametersummaryswitchcondition.md)
+  A type that represents a switch statement in a parameter summary.
+- [struct ParameterSummaryCaseCondition](parametersummarycasecondition.md)
+  A type that represents an individual case of a switch statement in a parameter summary.
+- [struct ParameterSummaryDefaultCaseCondition](parametersummarydefaultcasecondition.md)
+  A type that represents the default case of a switch statement in a parameter summary.
+### Intent-related data
+- [struct IntentModes](intentmodes.md)
+  A set of options you use to configure the runtime behavior of an app intent.
+- [struct IntentSystemContext](intentsystemcontext.md)
+  Contextual information that the system provides while it performs an app intent.
 - [struct IntentDescription](intentdescription.md)
   The human-readable description and metadata for an app intent.
-### Specialized actions
-- [protocol DeleteIntent](deleteintent.md)
-  Delete the associated entity(s).
-- [protocol DeprecatedAppIntent](deprecatedappintent.md)
-  An app intent that marks an action as deprecated and informs people which action to use instead.
-- [protocol ForegroundContinuableIntent](foregroundcontinuableintent.md)
-  A protocol you use for app intents which begin their work with the app in the background but may request to continue in the foreground.
-- [protocol OpenIntent](openintent.md)
-  Open the associated item.
-- [struct OpenURLIntent](openurlintent.md)
-  An intent that opens a universal link.
-- [protocol ProgressReportingIntent](progressreportingintent.md)
-  An intent that reports progress to the system during its execution
-- [protocol SetValueIntent](setvalueintent.md)
-  An intent that contains a value which can be set.
-- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
-- [protocol SnippetIntent](snippetintent.md)
-  An app intent that presents an interactive snippet onscreen.
-- [protocol SystemIntent](systemintent.md)
-  Designates intent types provided by App Intents.
-- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
-- [protocol UISceneAppIntent](uisceneappintent.md)
-- [protocol URLRepresentableIntent](urlrepresentableintent.md)
-  An app intent with a URL representation.
-### Media actions
-- [protocol AudioPlaybackIntent](audioplaybackintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol AudioRecordingIntent](audiorecordingintent.md)
-  An app intent that starts, stops or otherwise modifies audio recording state.
-- [protocol AudioStartingIntent](audiostartingintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol CameraCaptureIntent](cameracaptureintent.md)
-  Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
-- [protocol PlayVideoIntent](playvideointent.md)
-  An intent that looks for videos based on a search term, then plays the content.
-### Communication actions
-- [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
-  An intent that begins or ends an audio transmission with the Push to Talk framework.
-### Controls, widgets, and Live Activities
-- [protocol ControlConfigurationIntent](controlconfigurationintent.md)
-  An interface for configuring a Control Center module.
-- [protocol LiveActivityStartingIntent](liveactivitystartingintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity.
-- [protocol LiveActivityIntent](liveactivityintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
-- [protocol WidgetConfigurationIntent](widgetconfigurationintent.md)
-  An interface for configuring a WidgetKit widget.
-### SiriKit intent migration
-- [protocol CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
-  An interface for replacing a custom SiriKit intent that allows existing shortcuts and donations to continue working.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [struct IntentDeprecation](intentdeprecation.md)
+- [class IntentProjection](intentprojection.md)
+  Projections for an app intent that returns non-optional values for parameters.
+### Type conversions
+- [protocol IntentValueConvertible](intentvalueconvertible.md)
+  A protocol that allows the system to use types to as app intent parameters or properties.
+- [protocol IntentValueConvertibleWrapper](intentvalueconvertiblewrapper.md)
+  A protocol for types that wrap another intent value that supports conversion.
+- [protocol IntentValueExpressing](intentvalueexpressing.md)
+  A protocol for types that can create intent value expressions.
+### Intent queries
+- [protocol IntentValueQuery](intentvaluequery.md)
+  A query that provides entity values to the system; for example, for visual intelligence search.
+- [struct IntentValueContainer](intentvaluecontainer.md)
+  A container that stores a value that supports intent value conversion.
+- [struct IntentValueExpression](intentvalueexpression.md)
+  A type that represents a lazily evaluated intent value.
 
 ## See Also
 
-- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
-  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Creating your first app intent](creating-your-first-app-intent.md)
-  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Intent infrastructure](intent-infrastructure.md)
-  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
+- [App entities](app-entities.md)
+  Make your app’s core types and data concepts available to the system using app entity types.
+- [App enums](app-enums.md)
+  Make your app’s enumerations and predefined values available to the system by using app enum types.
+- [Common data types](common-data-types.md)
+  Use framework-defined types for common parameter and result data types such as contacts, files, currencies, and more.
+- [App extension](app-extension.md)
+  Deliver app intents in an app extension or other package that lives outside your app’s code.
 
 
 ---

@@ -32,6 +32,8 @@ func compare(_ other: Date) -> ComparisonResult
   Returns true if the left hand `Date` is later in time than the right hand `Date`.
 - [static func < (Date, Date) -> Bool](date/_(_:_:)-42kro.md)
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
+- [func distance(to: Date) -> TimeInterval](date/distance(to:).md)
+  Returns the distance from this date to another date, specified as a time interval.
 
 
 ---

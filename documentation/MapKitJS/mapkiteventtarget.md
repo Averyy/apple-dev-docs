@@ -14,6 +14,11 @@ An abstract class that defines the interface for objects that can dispatch event
 class MapKitEventTarget
 ```
 
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+
 #### Discussion
 
 [`MapKitEventTarget`](mapkiteventtarget.md) is the base class for all objects that can dispatch events. [`MapKitEventTarget`](mapkiteventtarget.md) offers an interface that’s similar to the DOM `EventTarget` interface, but with different semantics. Don’t mix them.
@@ -27,15 +32,6 @@ class MapKitEventTarget
   Dispatches an event to registered listeners.
 - [removeEventListener(eventType, listener, thisObject)](mapkiteventtarget/removeeventlistener.md)
   Unsubscribes a listener function from an event type.
-
-## Relationships
-
-### Inherited By
-- [Annotation](annotation.md)
-- [Map](map.md)
-- [Overlay](overlay.md)
-- [TileOverlay](tileoverlay.md)
-- [mapkit](mapkit.md)
 
 ## See Also
 

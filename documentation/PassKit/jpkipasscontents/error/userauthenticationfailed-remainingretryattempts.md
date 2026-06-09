@@ -8,6 +8,7 @@ Credential authentication request provided was rejected.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -31,8 +31,9 @@ object AppStoreVersionPhasedReleaseUpdateRequest
 - [object AppStoreVersionPhasedReleaseCreateRequest](appstoreversionphasedreleasecreaterequest.md)
   The request body you use to create an App Store Version Phased Release.
 - [object AppStoreVersionPhasedReleaseResponse](appstoreversionphasedreleaseresponse.md)
-  A response that contains a single App Store Version Phased Releases resource.
+  The response body for endpoints that create, read, or modify the phased release schedule for an App Store version.
 - [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](appstoreversionphasedreleasewithoutincludesresponse.md)
+  A response containing a single phased release configuration, without related resources.
 - [type PhasedReleaseState](phasedreleasestate.md)
   String that represents the progress of a phased release for an app version.
 

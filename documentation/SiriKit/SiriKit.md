@@ -15,11 +15,11 @@ Empower users to interact with their devices through voice, intelligent suggesti
 
 #### Overview
 
-The Intents and IntentsUI frameworks drive interactions that start with “Hey Siri…”, Shortcuts actions, and widget configuration. The system also incorporates intents and user activities your app donates into contextual suggestions in Maps, Calendar, Watch complications, widgets, and search results.
+> **Note**: SiriKit and the Intents and IntentsUI frameworks offer legacy support for Siri interactions, Shortcuts actions, and widget configuration. To implement modern support for these features, including support for Apple Intelligence, use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework instead.
+
+For SiriKit, use the standard intents that the system provides to empower actions users already ask Siri to do, such as playing music or sending a text message. You can also offer your app’s unique capabilities throughout the system by designing custom intents. For more details about defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
 ![A collection of devices, including a MacBook Air, an iPhone, an Apple Watch, and a HomePod mini. The devices display user interactions that SiriKit enables. On the MacBook Air, the Shortcuts app is open with a collection of shortcuts in the All Shortcuts section. The iPhone displays a Siri Suggestion with the Maps icon. The Apple Watch displays the Siri animation and the words “What can I help you with?”](https://docs-assets.developer.apple.com/published/06419e94cd4dfe4473c92e9964f7377f/media-3849683%402x.png)
-
-Use the standard intents that the system provides to empower actions users already ask Siri to do, such as playing music or sending a text message. You can also offer your app’s unique capabilities throughout the system by designing custom intents. For more details about defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
 You can process intents directly in your app, or in an Intents app extension. For guidance on setting up an app extension and sharing information between your app and extension, see [`Structuring Your Code to Support App Extensions`](structuring-your-code-to-support-app-extensions.md).
 

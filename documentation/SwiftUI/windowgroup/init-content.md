@@ -17,7 +17,8 @@ Creates a window group with a text view title.
 ## Declaration
 
 ```swift
-init(_ title: Text, @ViewBuilder content: () -> Content)
+nonisolated
+init(_ title: Text, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

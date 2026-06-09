@@ -1,58 +1,58 @@
-# Enabling Network and Mobile User Logins
+# Enabling network and mobile user logins
 
 **Framework**: Device Management
 
-Manage network users on macOS devices bound to an Open Directory server, and mobile users on shared iPads.
+Manage network users on macOS devices bound to an Open Directory server, and mobile users on Shared iPad.
 
 #### Overview
 
-MDM protocol extensions enable network users to log in to a macOS device that’s bound to an Open Directory server. Upon login, these users also become managed by the MDM server with their user profiles.
+MDM protocol extensions enable network users to log in to a macOS device that’s bound to an Open Directory server. Upon login, these users also become managed by the device management service with their user profiles.
 
-A network login begins when a network user logs in; the server then issues a challenge to the device and it responds with a digest, and then the server validates the digest and issues an auth token.
+A network login begins when a network user logs in; the device management service then issues a challenge to the device and it responds with a digest, and then the service validates the digest and issues an authentication token.
 
-##### A Network User Logs in
+#### Log in a Network User
 
-At login time, if the user is a network user or has a mobile home, the device issues a `UserAuthenticate` request to the server to authenticate the current user to the MDM server and obtain an `AuthToken` value. The device uses this token in subsequent requests made by this user to the server.
+At login time, if the user is a network user or has a mobile home, the device issues a `UserAuthenticate` request to the device management service to authenticate the current user to the service and obtain an `AuthToken` value. The device uses this token in subsequent requests made by this user to the device management service.
 
-The authentication transaction is an HTTP `PUT` request to the `CheckInURL` address specified in the MDM enrollment-profile payload. The message body contains a property list with the following values:
+The authentication transaction is an HTTP `PUT` request to the `CheckInURL` address specified in the device management (MDM) enrollment profile. The message body contains a property list with the following values:
 
 | Key | Type | Content |
 | --- | --- | --- |
 | `MessageType` | String | `UserAuthenticate` |
-| `UDID` | String | The `UDID` to use for all MDM requests for the user. |
+| `UDID` | String | The `UDID` to use for all management requests for the user. |
 | `UserID` | String | The local user’s `GUID`, or the network user’s `GUID` from the Open Directory record. |
 
-##### The Server Issues a Challenge
+#### Issue a Challenge
 
-The server response contains a dictionary with a `DigestChallenge` value that contains the standard HTTP digest. The server provides a `200` response, but a zero-length (empty) `DigestChallenge` value if it doesn’t require an `AuthToken` for this user. Otherwise, the server provides a `200` response and a non-empty `DigestChallenge` value, and the client generates a digest from the userʼs shortname, their clear-text password, and the `DigestChallenge` value.
+The device management service response contains a dictionary with a `DigestChallenge` value that contains the standard HTTP digest. The service provides a `200` response, but a zero-length (empty) `DigestChallenge` value if it doesn’t require an `AuthToken` for this user. Otherwise, the device management service provides a `200` response and a non-empty `DigestChallenge` value, and the client generates a digest from the userʼs shortname, their clear-text password, and the `DigestChallenge` value.
 
-##### The Device Sends a Digest Response
+#### Send a Digest Response
 
-The device sends this digest in a second request to the server. This request is also sent to the `CheckInURL` specified in the MDM enrollment profile payload, and it includes the same identity used for all other MDM requests. The message body contains these values:
+The device sends this digest in a second request to the device management service. This request is also sent to the `CheckInURL` specified in the device management (MDM) enrollment profile, and it includes the same identity used for all other management requests. The message body contains these values:
 
 | Key | Type | Content |
 | --- | --- | --- |
 | `DigestResponse` | String | The digest that the device generates from the user’s shortname, password, and `DigestChallenge` value. |
 | `MessageType` | String | `UserAuthenticate` |
-| `UDID` | String | The `UDID` to use for all MDM requests for the user. |
+| `UDID` | String | The `UDID` to use for all management requests for the user. |
 | `UserID` | String | The local user’s `GUID`, or the network user’s `GUID` from the Open Directory record. |
 
-##### The Server Validates the Digest to Issue an Auth Token
+#### Validate the Digest to Issue an Authentication Token
 
-If the server rejects the `DigestResponse` value, for example if the password is invalid, it returns a `200` response and an empty `AuthToken` value. Otherwise, the server returns an `AuthToken` value for use by the device on subsequent requests to the server. This token remains valid until the next time the device sends a `UserAuthenticate` handshake request, which it does each time a network user logs in.
+If the device management service rejects the `DigestResponse` value, for example if the password is invalid, it returns a `200` response and an empty `AuthToken` value. Otherwise, the service returns an `AuthToken` value for use by the device on subsequent requests to the device management service. This token remains valid until the next time the device sends a `UserAuthenticate` handshake request, which it does each time a network user logs in.
 
-When a server rejects a `DigestResponse` value, that server returns a `410` HTTP status code to indicate it won’t manage this user. The device won’t make additional requests to the server on behalf of this user for the duration of the login session. However, the next time the user logs in, the device again sends a `UserAuthenticate` request. The server can optionally return `410` again to indicate it still won’t manage that user.
+When a device management service rejects a `DigestResponse` value, that service returns a `410` HTTP status code to indicate it won’t manage this user. The device won’t make additional requests to the service on behalf of this user for the duration of the login session. However, the next time the user logs in, the device again sends a `UserAuthenticate` request again. The device management service can again optionally return `410` again to indicate it still won’t manage that user.
 
-For push notifications, the device uses different push tokens for device and user connections. The device sends each token to the server using the `TokenUpdate` request. The server determines whether the token is for the device or a user based on the `UDID` and `UserID` values in the request. If the user is a network or mobile user, the server includes the `AuthToken`.
+For push notifications, the device uses different push tokens for device and user connections. The device sends each token to the device management service using the `TokenUpdate` request. The service determines whether the token is for the device or a user based on the `UDID` and `UserID` values in the request. If the user is a network or mobile user, the service includes the `AuthToken`.
 
 > ⚠️ **Warning**:  Push notification tokens and `AuthToken` are separate values.
 
-##### Review a Complete Login
+#### Review a Complete Login
 
 The following is an example of a `UserAuthenticate` transaction:
 
-```other
-// The client sends a UserAuthenticate request to the server.
+```xml
+// The client sends a UserAuthenticate request to the device management service.
 <dict>
     <key>MessageType</key>
     <string>UserAuthenticate</string>
@@ -62,7 +62,7 @@ The following is an example of a `UserAuthenticate` transaction:
     <string>16C0477E-EB2F-4B5E-AAFD-92B2B91C4B16</string> 
 </dict>
 
-// The server sends a challenge.
+// The device management service sends a challenge.
 <dict>
     <key>DigestChallenge</key>
     <string>Digest nonce="8BrAkk4GZgrG2XaDLMSSSo89VenjV5E8Se73z98RvSW7Rs",realm="fusion.home"<string>
@@ -80,7 +80,7 @@ The following is an example of a `UserAuthenticate` transaction:
     <string>16C0477E-EB2F-4B5E-AAFD-92B2B91C4B16</string> 
 </dict>
 
-// The server validates the digest response and responds with AuthToken for client session.
+// The service validates the digest response and responds with AuthToken for a client session.
 <key>AuthToken</key>
 <string>uEOcQRJrXGbMJUDAkDZSCny5e90=</string>
 
@@ -101,30 +101,24 @@ The following is an example of a `UserAuthenticate` transaction:
 </dict>
 ```
 
-##### Supporting Multiple Mobile User Logins
+#### Support Multiple Users on Ipad
 
-MDM manages a shared iPad device and its users, using a similar technique to the process described above for enabling network users in macOS.
+A device management service manages a Shared iPad and its users using a similar technique to the process described above for enabling network users in macOS.
 
-An MDM server indicates that it supports both device and user connections through Shared iPad when it includes the string `com.apple.mdm.per-user-connections` in the `ServerCapabilities` array of the MDM enrollment-profile payload. Then, when a user logs in the device sends a `TokenUpdate` request on the user channel.
+A device management service indicates that it supports both device and user connections through Shared iPad when it includes the string `com.apple.mdm.per-user-connections` in the `ServerCapabilities` array of the device management (MDM) enrollment profile. Then, when a user logs in the device sends a `TokenUpdate` request on the user channel.
 
-The device and its users each use different push tokens. The server determines from each token it receives from a device or user whether the device or user contacts the server with an `Idle` request.
+The device and its users each use different push tokens. The device management service determines from each token it receives from a device or user whether the device or user contacts the service with an `Idle` request.
 
-User requests contain additional values to help the server distinguish them from device requests. For more information on managing independent devices, see [`Managing MDM Devices and Users in macOS`](managing-mdm-devices-and-users-in-macos.md). However, the value for `UserID` is always set to `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` for devices, to indicate that no user authentication occurs.
+User requests contain additional values to help the device management service distinguish them from device requests. However, the value for `UserID` is always set to `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` for devices, to indicate that no user authentication occurs. For more information on managing independent devices, see [`Managing devices and users in macOS`](managing-devices-and-users-in-macos.md).
 
-To manage a user, the server stores the user push token and returns a `200` HTTP status code response. At this point, the device polls the server for a command on the user channel.
+To manage a user, the device management service stores the user push token and returns a `200` HTTP status code response. At this point, the device polls the service for a command on the user channel.
 
-To indicate that it won’t manage the user, a server returns a `410` HTTP status code. The device won’t make additional requests to the server on behalf of this user for the duration of the login session. However, the next time the user logs in, the device again sends a `UserAuthenticate` request. The server can optionally return `410` again to indicate it still won’t manage that user.
+To indicate that it won’t manage the user, a device management service returns a `410` HTTP status code. The device won’t make additional requests to the service on behalf of this user for the duration of the login session. However, the next time the user logs in, the device again sends a `UserAuthenticate` request. The service can optionally return `410` again to indicate it still won’t manage that user.
 
 ## See Also
 
-- [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
+- [Managing devices and users in macOS](managing-devices-and-users-in-macos.md)
   Manage devices and users as separate entities in macOS.
-- [Managing Passcodes](managing-passcodes.md)
-  Ensure data security by managing device passcodes and compliance with policies.
-- [Dealing with Inactive MDM Devices and Invalid Push Tokens](dealing-with-inactive-mdm-devices-and-invalid-push-tokens.md)
-  Handle when devices become unmanageable due to inactivity or invalid push tokens.
-- [Returning a managed device to service](returning-a-managed-device-to-service.md)
-  Use a device management service to return managed devices to service quickly after use.
 
 
 ---

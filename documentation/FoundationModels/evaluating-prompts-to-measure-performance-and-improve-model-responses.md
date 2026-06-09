@@ -125,22 +125,10 @@ Your evaluation suite catches these trade-offs and lets you refine the approach 
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
-  Tailor your prompts to get effective results from an on-device model.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
-  Manage the prompts your app uses by versioning them to make the most out of model improvements.
+- [Evaluating language model responses](../Evaluations/evaluating-language-model-responses.md)
+  Build an evaluation that runs your intelligence-powered feature against samples and scores each response.
 - [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
-  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
-- [class LanguageModelSession](languagemodelsession.md)
-  An object that represents a session that interacts with a language model.
-- [struct Instructions](instructions.md)
-  Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
-  A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct GenerationOptions](generationoptions.md)
-  Options that control how the model generates its response to a prompt.
+  Measure how prompts, responses, and tool calls affect token consumption and response times in Instruments.
 
 
 ---

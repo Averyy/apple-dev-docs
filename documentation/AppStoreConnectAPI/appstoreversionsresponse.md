@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of App Store Version resources.
+The response body for endpoints that list App Store versions for an app.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -26,11 +26,11 @@ object AppStoreVersionsResponse
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)
   The request body you use to update an App Store Version.
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
-  The data structure that represents an Age Rating Declarations resource.
+  A set of content descriptors for your app that App Store Connect uses to assign an age rating.
 - [object AppStoreVersion](appstoreversion.md)
   The data structure that represent an App Store Versions resource.
 - [object AppStoreVersionResponse](appstoreversionresponse.md)
-  A response that contains a single App Store Versions resource.
+  The response body for endpoints that create, read, or modify an App Store version.
 - [object AppStoreVersionCreateRequest](appstoreversioncreaterequest.md)
   The request body you use to create an App Store Version.
 - [object AppStoreVersionBuildLinkageRequest](appstoreversionbuildlinkagerequest.md)

@@ -36,6 +36,8 @@ If you set this property to `nil`, the format style resets to using `unknown`.
   The calendar to use when formatting relative dates.
 - [var locale: Locale](date/relativeformatstyle/locale.md)
   The locale to use when formatting the relative date.
+- [func locale(Locale) -> Date.RelativeFormatStyle](date/relativeformatstyle/locale(_:).md)
+  Modifies the relative date format style to use the specified locale.
 
 
 ---

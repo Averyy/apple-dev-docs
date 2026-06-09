@@ -28,7 +28,8 @@ If a cell has been specified for controls of this type, this method also creates
 
 ## See Also
 
-- [Control and Cell Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/ControlCell.html#//apple_ref/doc/uid/10000015i)
+- [class NSControl](nscontrol.md)
+  A specialized view, such as a button or text field, that notifies your app of relevant events using the target-action design pattern.
 - [init?(coder: NSCoder)](nscontrol/init(coder:).md)
   Initializes a control with data in an unarchiver.
 

@@ -8,6 +8,7 @@ The process that tried to recreate the Live Activity is not the process that ori
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

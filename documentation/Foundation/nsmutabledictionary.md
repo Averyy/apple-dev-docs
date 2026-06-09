@@ -110,9 +110,8 @@ You must also override the primitive methods of the [`NSDictionary`](nsdictionar
 - [func addUserDefinedHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](nsmutabledictionary/adduserdefinedheader(_:length:).md)
 - [func addWhoHeader(UnsafeRawPointer!, length: UInt32) -> OBEXError](nsmutabledictionary/addwhoheader(_:length:).md)
 - [func getHeaderBytes() -> NSMutableData!](nsmutabledictionary/getheaderbytes.md)
-### Subscripts
-- [subscript(Any) -> Any?](nsmutabledictionary/subscript(_:).md)
 ### Default Implementations
+- [NSDictionary Implementations](nsmutabledictionary/nsdictionary-implementations.md)
 - [NSMutableDictionary Implementations](nsmutabledictionary/nsmutabledictionary-implementations.md)
 
 ## Relationships

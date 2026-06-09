@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The data and links that describe the Game Center Challenges related to a group.
+
 **Availability**:
 - App Store Connect API 3.6+
 
@@ -16,6 +18,7 @@ object GameCenterGroup.Relationships.GameCenterChallenges
 
 ### Dictionaries
 - [object GameCenterGroup.Relationships.GameCenterChallenges.Data](gamecentergroup/relationships-data.dictionary/gamecenterchallenges-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related resource.
 
 ## Properties
 

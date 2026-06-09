@@ -33,9 +33,20 @@ On iPhone, the search field in the bottom toolbar can be configured to appear as
 NavigationStack {
     RecipeList()
         .searchable($searchText)
-        .searchToolbarBehavior(.minimize)
+        .searchToolbarBehavior(.minimized)
 }
 ```
+
+## See Also
+
+- [func searchable(text:placement:prompt:)](view/searchable(text:placement:prompt:).md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text:isPresented:placement:prompt:)](view/searchable(text:ispresented:placement:prompt:).md)
+  Marks this view as searchable with programmatic presentation of the search field.
+- [func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View](view/searchpresentationtoolbarbehavior(_:).md)
+  Configures the search toolbar presentation behavior for any searchable modifiers within this view.
+- [func searchSelection(Binding<TextSelection?>) -> some View](view/searchselection(_:).md)
+  Binds the selection of the search field associated with the nearest searchable modifier to the given [`TextSelection`](textselection.md) value.
 
 
 ---

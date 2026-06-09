@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: case
 
-The audio file could not be read.
+The audio source could not be read.
 
 **Availability**:
 - iOS 17.0+

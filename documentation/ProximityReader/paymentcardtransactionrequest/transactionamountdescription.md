@@ -9,7 +9,6 @@ Values that provide additional information about the transaction amount.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 

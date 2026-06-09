@@ -16,6 +16,7 @@ object SubscriptionIntroductoryOfferInlineCreate.Relationships.Territory
 
 ### Objects
 - [object SubscriptionIntroductoryOfferInlineCreate.Relationships.Territory.Data](subscriptionintroductoryofferinlinecreate/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription introductory offer inline create.
 
 ## Properties
 

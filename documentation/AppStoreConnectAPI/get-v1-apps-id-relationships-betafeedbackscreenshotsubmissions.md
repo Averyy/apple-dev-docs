@@ -1,4 +1,4 @@
-# List All Beta Feedback Screenshot Submission IDs for an App
+# List all beta feedback screenshot submission ids for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ List All Introductory Offer Resource IDs for an Auto-Renewable Subscription,Get 
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of beta feedback screenshot submission resource identifiers to return.
 
 ## See Also
 

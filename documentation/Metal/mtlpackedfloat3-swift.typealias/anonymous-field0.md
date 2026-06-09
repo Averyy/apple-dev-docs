@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0
+var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0.__Unnamed_struct___Anonymous_field0 { get set }
 ```
 
 

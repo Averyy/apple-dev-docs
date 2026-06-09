@@ -17,6 +17,7 @@ An opaque value representing a subview of another view.
 ## Declaration
 
 ```swift
+nonisolated
 struct Subview
 ```
 

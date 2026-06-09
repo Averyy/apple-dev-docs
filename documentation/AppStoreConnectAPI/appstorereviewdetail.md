@@ -37,7 +37,7 @@ object AppStoreReviewDetail
 - [object AppStoreReviewDetailUpdateRequest](appstorereviewdetailupdaterequest.md)
   The request body you use to update an App Store Review Detail.
 - [object AppStoreReviewDetailResponse](appstorereviewdetailresponse.md)
-  A response that contains a single App Store Review Details resource.
+  The response body for endpoints that read or modify App Store review details for a version.
 - [object AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse](appstorereviewdetailappstorereviewattachmentslinkagesresponse.md)
 
 

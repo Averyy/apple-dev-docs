@@ -48,6 +48,7 @@ Only the child classes should be used.
 - [MPSGraphPooling2DOpDescriptor](mpsgraphpooling2dopdescriptor.md)
 - [MPSGraphPooling4DOpDescriptor](mpsgraphpooling4dopdescriptor.md)
 - [MPSGraphRandomOpDescriptor](mpsgraphrandomopdescriptor.md)
+- [MPSGraphSDPADescriptor](mpsgraphsdpadescriptor.md)
 - [MPSGraphSingleGateRNNDescriptor](mpsgraphsinglegaternndescriptor.md)
 - [MPSGraphStencilOpDescriptor](mpsgraphstencilopdescriptor.md)
 - [MPSGraphTensor](mpsgraphtensor.md)

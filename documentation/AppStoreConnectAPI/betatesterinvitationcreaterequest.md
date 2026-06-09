@@ -27,9 +27,9 @@ object BetaTesterInvitationCreateRequest
 ## See Also
 
 - [object BetaTesterInvitation](betatesterinvitation.md)
-  The data structure that represents a Beta Tester Invitations resource.
+  A pending email invitation sent to recruit someone as a TestFlight beta tester for an app.
 - [object BetaTesterInvitationResponse](betatesterinvitationresponse.md)
-  A response that contains a single Beta Tester Invitations resource.
+  The response body for the endpoint that sends a TestFlight invitation to a beta tester.
 
 
 ---

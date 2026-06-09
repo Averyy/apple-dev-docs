@@ -22,10 +22,10 @@ protocol AppEnum : AppValue, StaticDisplayRepresentable, RawRepresentable where 
 
 ## Mentions
 
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 
 #### Overview
 
@@ -57,17 +57,13 @@ Because this type conforms to the [`StaticDisplayRepresentable`](staticdisplayre
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AssistantEnum](assistantenum.md)
 - [AssistantSchemaEnum](assistantschemaenum.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)
 ### Conforming Types
 - [StringSearchScope](stringsearchscope.md)
 - [VideoCategory](videocategory.md)
-
-## See Also
-
-- [protocol URLRepresentableEnum](urlrepresentableenum.md)
-  An app enum with a URL representation.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a descriptor that stores the specified file URL.
+
 **Availability**:
 - macOS 10.11+
 

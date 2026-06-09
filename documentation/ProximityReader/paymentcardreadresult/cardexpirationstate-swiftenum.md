@@ -9,7 +9,6 @@ Values that describe the expiration state of the card that the system read.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 
@@ -32,7 +31,6 @@ enum CardExpirationState
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

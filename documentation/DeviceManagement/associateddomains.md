@@ -7,8 +7,6 @@ The payload that configures associated domains.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,8 +30,8 @@ You can use associated domains with features such as Extensible AppSSO, universa
 | --- | --- |
 | Device channel | macOS |
 | User channel | macOS |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |

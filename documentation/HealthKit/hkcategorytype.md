@@ -19,6 +19,10 @@ A type that identifies samples that contain a value from a small set of possible
 class HKCategoryType
 ```
 
+## Mentions
+
+- [Recording and querying menopausal state](recording-and-querying-menopausal-state.md)
+
 #### Overview
 
 The [`HKCategoryType`](hkcategorytype.md) class is a concrete subclass of the HKObjectType class. To create a category type instance, use the [`init(_:)`](hkcategorytype/init(_:).md) convenience method.  For example, the following code creates a category sample type for handwashing events.

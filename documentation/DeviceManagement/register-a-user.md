@@ -6,12 +6,7 @@
 Register a user with the volume-purchase program.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
-## Mentions
-
-- [Associating an Apple Account with a Volume Purchase Program (VPP) User](associating-an-apple-id-with-a-volume-purchase-program-vpp-user.md)
+- VPP License Management 1.0+
 
 #### Discussion
 

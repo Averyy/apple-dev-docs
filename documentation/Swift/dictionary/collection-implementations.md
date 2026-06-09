@@ -74,7 +74,7 @@
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](dictionary/subscript(_:)-392o0.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](dictionary/subscript(_:)-4al9z.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](dictionary/subscript(_:)-4al9z.md)
 - [subscript(Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/subscript(_:)-4bhoo.md)
   Accesses the key-value pair at the specified position.
 - [subscript<R>(R) -> Self.SubSequence](dictionary/subscript(_:)-4h7sk.md)

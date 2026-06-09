@@ -23,15 +23,15 @@ func entities(for identifiers: [Self.Entity.ID]) async throws -> [Self.Entity]
 
 ## Mentions
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 
 #### Discussion
 
-Identifiers for which there is no matching entity are skipped, so the number of elements in the resulting array of entities can be smaller than the number of supplied identifiers.
+The system skips identifiers that have no matching entity, so the returned array can have fewer entries than the supplied identifiers.
 
 ## Parameters
 
-- `identifiers`: Array of entity identifiers
+- `identifiers`: An array of entity identifiers.
 
 ## See Also
 

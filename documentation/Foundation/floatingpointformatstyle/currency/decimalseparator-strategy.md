@@ -32,6 +32,8 @@ A floating-point currency format style modified to use the specified decimal sep
 
 - [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(FloatingPointFormatStyle<Value>.Currency.Configuration.Presentation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/presentation(_:).md)

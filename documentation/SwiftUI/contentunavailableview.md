@@ -17,6 +17,7 @@ An interface, consisting of a label and additional content, that you display whe
 ## Declaration
 
 ```swift
+nonisolated
 struct ContentUnavailableView<Label, Description, Actions> where Label : View, Description : View, Actions : View
 ```
 

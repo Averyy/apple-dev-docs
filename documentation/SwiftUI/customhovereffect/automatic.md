@@ -15,6 +15,7 @@ The default hover effect based on the surrounding context.
 ## Declaration
 
 ```swift
+nonisolated
 static var automatic: AutomaticHoverEffect { get }
 ```
 

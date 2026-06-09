@@ -10,7 +10,7 @@ Keys used to specify options when creating a peripheral manager.
 - [let CBPeripheralManagerOptionShowPowerAlertKey: String](cbperipheralmanageroptionshowpoweralertkey.md)
   A Boolean value specifying whether the system should warn if Bluetooth is in the powered-off state when instantiating the peripheral manager.
 - [let CBPeripheralManagerOptionRestoreIdentifierKey: String](cbperipheralmanageroptionrestoreidentifierkey.md)
-  A unique identifier (UID) with which to instantiate the peripheral manager.
+  A string containing a unique identifier (UID) for the peripheral manager to instantiate.
 
 ## See Also
 

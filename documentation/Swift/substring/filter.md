@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-func filter(_ isIncluded: (Substring.Element) throws -> Bool) rethrows -> String
+func filter<E>(_ isIncluded: (Substring.Element) throws(E) -> Bool) throws(E) -> String where E : Error
 ```
 
 

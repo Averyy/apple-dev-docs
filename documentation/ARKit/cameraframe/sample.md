@@ -26,6 +26,9 @@ Use this structure to access information about a sample from a [`CameraFrame`](c
 - [CameraFrame.Sample.Parameters](cameraframe/sample/parameters-swift.struct.md)
   A frame’s parameters, such as the camera type, intrinsics, timestamps, exposure, and so on.
 - [var pixelBuffer: CVPixelBuffer](cameraframe/sample/pixelbuffer.md)
+### Operators
+- [static func == (CameraFrame.Sample, CameraFrame.Sample) -> Bool](cameraframe/sample/==(_:_:).md)
+  Returns a Boolean value indicating whether two camera frame samples are equal.
 ### Instance Properties
 - [var buffer: CVReadOnlyPixelBuffer](cameraframe/sample/buffer.md)
   The pixel buffer.

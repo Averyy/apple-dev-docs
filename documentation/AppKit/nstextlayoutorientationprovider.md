@@ -6,7 +6,7 @@
 A set of methods that define the orientation of text for an object.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

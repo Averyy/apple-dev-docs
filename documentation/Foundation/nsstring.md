@@ -420,18 +420,23 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init?(bytesNoCopy: UnsafeMutableRawPointer, length: Int, encoding: UInt, deallocator: ((UnsafeMutableRawPointer, Int) -> Void)?)](nsstring/init(bytesnocopy:length:encoding:deallocator:).md)
 - [convenience init?(cString: UnsafePointer<CChar>)](nsstring/init(cstring:)-5mpk8.md)
 - [convenience init?(cString: UnsafePointer<CChar>, encoding: UInt)](nsstring/init(cstring:encoding:)-20f9h.md)
+  Returns an @c NSString object initialized using the characters in a given C array, interpreted according to a given encoding.
 - [convenience init?(cString: UnsafePointer<CChar>, length: Int)](nsstring/init(cstring:length:)-4bbpi.md)
 - [convenience init?(cStringNoCopy: UnsafeMutablePointer<CChar>, length: Int, freeWhenDone: Bool)](nsstring/init(cstringnocopy:length:freewhendone:)-7ssxw.md)
 - [convenience init(charactersNoCopy: UnsafeMutablePointer<unichar>, length: Int, deallocator: ((UnsafeMutablePointer<unichar>, Int) -> Void)?)](nsstring/init(charactersnocopy:length:deallocator:).md)
 - [init?(coder: NSCoder)](nsstring/init(coder:).md)
 - [convenience init?(contentsOf: URL)](nsstring/init(contentsof:).md)
+  Returns an @c NSString object initialized by reading data from the URL named by @c url.
 - [convenience init(contentsOf: URL, encoding: UInt) throws](nsstring/init(contentsof:encoding:).md)
+  Returns an @c NSString object initialized by reading data from a given URL interpreted using a given encoding.
 - [convenience init(contentsOf: URL, usedEncoding: UnsafeMutablePointer<UInt>?) throws](nsstring/init(contentsof:usedencoding:).md)
+  Returns an @c NSString object initialized by reading data from a given URL and returns by reference the encoding used to interpret the data.
 - [convenience init(format: NSString, any CVarArg...)](nsstring/init(format:_:).md)
 - [convenience init(format: NSString, locale: Locale?, any CVarArg...)](nsstring/init(format:locale:_:).md)
 - [convenience init(string: NSString)](nsstring/init(string:)-7xgq7.md)
   Returns an `NSString` object initialized by copying the characters from another given string.
 - [convenience init?(utf8String: UnsafePointer<CChar>)](nsstring/init(utf8string:)-vg2b.md)
+  Returns an @c NSString object initialized by copying the characters from a given C array of UTF8-encoded bytes.
 ### Instance Properties
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](nsstring/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.

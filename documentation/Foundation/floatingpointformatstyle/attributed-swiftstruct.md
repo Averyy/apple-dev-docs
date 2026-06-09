@@ -57,6 +57,9 @@ User interface frameworks like SwiftUI can use these attributes when presenting 
 ### Formatting a floating-point value
 - [func format(Value) -> AttributedString](floatingpointformatstyle/attributed-swift.struct/format(_:).md)
   Formats a floating-point value, using this style.
+### Modifying the locale
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Attributed](floatingpointformatstyle/attributed-swift.struct/locale(_:).md)
+  Modifies the format style to use the specified locale.
 
 ## Relationships
 

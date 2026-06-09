@@ -47,9 +47,7 @@ The publisher can’t actually fail with the specified type and finishes normall
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

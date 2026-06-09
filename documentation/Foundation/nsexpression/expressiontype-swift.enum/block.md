@@ -45,6 +45,7 @@ case block
 - [NSExpression.ExpressionType.anyKey](nsexpression/expressiontype-swift.enum/anykey.md)
   An expression that represents any key.
 - [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
+  A conditional expression that evaluates a predicate to determine which expression to return.
 
 
 ---

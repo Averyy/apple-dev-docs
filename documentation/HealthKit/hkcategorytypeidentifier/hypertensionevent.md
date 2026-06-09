@@ -17,6 +17,13 @@
 static let hypertensionEvent: HKCategoryTypeIdentifier
 ```
 
+## See Also
+
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+  An identifier for samples that record bleeding after menopause.
+- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+  An identifier for samples that record a person’s menopausal state.
+
 
 ---
 

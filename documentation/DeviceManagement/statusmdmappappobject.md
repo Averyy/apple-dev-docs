@@ -12,8 +12,6 @@ A status report that contains details about an MDM-installed app.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object StatusMDMAppAppObject
 ## Properties
 
 - `_removed` (boolean): If `true`, the system removed the app and only this key and the `identifier` key are present in the status item object. The device reports an MDM-installed app as removed if management of the app has been transferred to Declarative Device Management.
-- `external-version-id` (string): The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and Books for Organizations`](apps-and-books-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
+- `external-version-id` (string): The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and books metadata for organizations`](apps-and-books-metadata-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
 - `identifier` (string) *(required)*: The app’s bundle id, which is unique.
 - `name` (string): The name of the app.
 - `short-version` (string): The short version of the app.

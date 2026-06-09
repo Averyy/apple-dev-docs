@@ -18,12 +18,12 @@ Populates the toolbar or navigation bar with the specified items.
 
 ```swift
 nonisolated
-func toolbar<Content>(@ToolbarContentBuilder content: () -> Content) -> some View where Content : ToolbarContent
+func toolbar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : ToolbarContent
 ```
 
 #### Discussion
 
-Use this method to populate a toolbar with a collection of views that you provide to a toolbar view builder.
+Use this method to populate a toolbar with a collection of views that you provide to a toolbar content builder.
 
 The toolbar modifier expects a collection of toolbar items which you can provide either by supplying a collection of views with each view wrapped in a [`ToolbarItem`](toolbaritem.md), or by providing a collection of views as a [`ToolbarItemGroup`](toolbaritemgroup.md). The example below uses a collection of [`ToolbarItem`](toolbaritem.md) views to create a macOS toolbar that supports text editing features:
 
@@ -85,6 +85,10 @@ Although it’s not mandatory, wrapping a related group of toolbar items togethe
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
 - [struct ToolbarItemPlacement](toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+  Configures the overflow menu of a toolbar.
+- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+  The overflow menu of a toolbar.
 - [protocol ToolbarContent](toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)

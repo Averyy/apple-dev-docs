@@ -16,6 +16,7 @@ object SubscriptionAvailability.Relationships.AvailableTerritories
 
 ### Objects
 - [object SubscriptionAvailability.Relationships.AvailableTerritories.Data](subscriptionavailability/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription availability.
 
 ## Properties
 
@@ -26,6 +27,7 @@ object SubscriptionAvailability.Relationships.AvailableTerritories
 ## See Also
 
 - [object Subscription](subscription.md)
+  An auto-renewable subscription product offered within an app, with configurable pricing, duration, and promotional offers.
 
 
 ---

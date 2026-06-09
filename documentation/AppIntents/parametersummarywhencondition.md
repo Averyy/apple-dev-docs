@@ -47,6 +47,13 @@ struct ParameterSummaryWhenCondition<Intent, WhenCondition, Otherwise> where Int
   Operators that indicate the type of value check for a conditional statement.
 - [enum OneOfComparisonOperator](oneofcomparisonoperator.md)
   Operators that indicate the type of containment check for a conditional statement.
+### Initializers
+- [init<ValueType, Parameter>(KeyPath<Intent, Parameter>, EquatableComparisonOperator, ValueType.ValueType.Cases, () -> WhenCondition, otherwise: () -> Otherwise)](parametersummarywhencondition/init(_:_:_:_:otherwise:)-2qooo.md)
+  Creates a `When` condition comparing an optional union value parameter to a specific case.
+- [init<ValueType, Parameter>(KeyPath<Intent, Parameter>, OneOfComparisonOperator, [ValueType.ValueType.Cases], () -> WhenCondition, otherwise: () -> Otherwise)](parametersummarywhencondition/init(_:_:_:_:otherwise:)-8d14d.md)
+  Creates a `When` condition checking if a union value parameter matches any case in a list.
+- [init<ValueType, Parameter>(KeyPath<Intent, Parameter>, EquatableComparisonOperator, ValueType.ValueType.Cases, () -> WhenCondition, otherwise: () -> Otherwise)](parametersummarywhencondition/init(_:_:_:_:otherwise:)-tyz2.md)
+  Creates a `When` condition comparing a union value parameter to a specific case.
 
 ## Relationships
 

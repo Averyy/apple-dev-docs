@@ -1,4 +1,4 @@
-# Get All App Preview IDs for an App Preview Set
+# Get all app preview ids for an app preview set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get the ordered app preview IDs in a preview set.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app preview resource identifiers to return.
 
 ## See Also
 
-- [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)
+- [List all app previews for an app preview set](get-v1-apppreviewsets-_id_-apppreviews.md)
   List all ordered app previews in a preview set.
-- [Replace All App Previews for an App Preview Set](patch-v1-apppreviewsets-_id_-relationships-apppreviews.md)
+- [Replace all app previews for an app preview set](patch-v1-apppreviewsets-_id_-relationships-apppreviews.md)
   Change the order of the app previews in a preview set.
 
 

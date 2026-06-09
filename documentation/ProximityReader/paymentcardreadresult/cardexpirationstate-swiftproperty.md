@@ -9,7 +9,6 @@ The expiration state of the card that the system read.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

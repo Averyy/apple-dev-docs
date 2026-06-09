@@ -12,6 +12,7 @@ The moving average radius of the object the request is tracking.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

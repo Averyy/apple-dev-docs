@@ -18,7 +18,7 @@ object BetaAppClipInvocationCreateRequest
 
 ### Objects
 - [object BetaAppClipInvocationLocalizationInlineCreate](betaappclipinvocationlocalizationinlinecreate.md)
-  The data structure that represents a Beta App Clip Invocation Localization Inline Creates resource.
+  An inline object for specifying a localized title for a beta App Clip invocation within a parent create or update request.
 - [object BetaAppClipInvocationCreateRequest.Data](betaappclipinvocationcreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
@@ -30,9 +30,9 @@ object BetaAppClipInvocationCreateRequest
 ## See Also
 
 - [object BetaAppClipInvocation](betaappclipinvocation.md)
-  The data structure that represents a Beta App Clip Invocations resource.
+  A TestFlight URL scheme invocation that allows beta testers to launch an App Clip during testing.
 - [object BetaAppClipInvocationResponse](betaappclipinvocationresponse.md)
-  A response that contains a single Beta App Clip Invocations resource.
+  A response containing a single TestFlight App Clip invocation URL.
 - [object BetaAppClipInvocationUpdateRequest](betaappclipinvocationupdaterequest.md)
   The request body you use to update a Beta App Clip Invocation.
 

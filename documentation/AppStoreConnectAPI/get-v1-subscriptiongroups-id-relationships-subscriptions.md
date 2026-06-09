@@ -1,10 +1,10 @@
-# GET /v1/subscriptionGroups/{id}/relationships/subscriptions
+# List subscription IDs for a subscription group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,21 +16,21 @@
 
 ## See Also
 
-- [Create a Subscription Group](post-v1-subscriptiongroups.md)
+- [Create a subscription group](post-v1-subscriptiongroups.md)
   Create a subscription group for an app.
-- [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)
+- [List all subscription groups for an app](get-v1-apps-_id_-subscriptiongroups.md)
   Get a list of subscription groups for a specific app.
-- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
-- [Read Subscription Group Information](get-v1-subscriptiongroups-_id_.md)
+- [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
+- [Read subscription group information](get-v1-subscriptiongroups-_id_.md)
   Get the details of a specific subscription group.
-- [Modify a Subscription Group](patch-v1-subscriptiongroups-_id_.md)
+- [Modify a subscription group](patch-v1-subscriptiongroups-_id_.md)
   Update the reference name for a specific subscription group.
-- [Delete a Subscription Group](delete-v1-subscriptiongroups-_id_.md)
+- [Delete a subscription group](delete-v1-subscriptiongroups-_id_.md)
   Delete a specific empty subscription group.
-- [List All Subscription Group Localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
+- [List all subscription group localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
   Get a list of all localized metadata for a specific subscription group.
-- [GET /v1/subscriptionGroups/{id}/relationships/subscriptionGroupLocalizations](get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
-- [List All Subscriptions for a Subscription Group](get-v1-subscriptiongroups-_id_-subscriptions.md)
+- [List localization IDs for a subscription group](get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
+- [List all subscriptions for a subscription group](get-v1-subscriptiongroups-_id_-subscriptions.md)
   Get a list of all auto-renewable subscriptions in a subscription group.
 
 

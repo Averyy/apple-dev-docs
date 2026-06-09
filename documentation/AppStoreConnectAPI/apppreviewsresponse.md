@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of App Preview resources.
+The response body for endpoints that list app preview videos in a preview set.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -30,7 +30,7 @@ object AppPreviewsResponse
 - [object AppPreviewUpdateRequest](apppreviewupdaterequest.md)
   The request body you use to update an App Preview.
 - [object AppPreviewResponse](apppreviewresponse.md)
-  A response that contains a single App Previews resource.
+  The response body for endpoints that create, read, or modify an app preview video.
 - [object UploadOperation](uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
 - [type PreviewType](previewtype.md)

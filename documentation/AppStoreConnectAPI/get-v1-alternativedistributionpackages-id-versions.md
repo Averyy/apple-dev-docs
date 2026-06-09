@@ -73,15 +73,15 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/e651dbc
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageDeltas]` ([string])
-- `fields[alternativeDistributionPackageVariants]` ([string])
-- `fields[alternativeDistributionPackageVersions]` ([string])
-- `fields[alternativeDistributionPackages]` ([string])
-- `filter[state]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[deltas]` (integer)
-- `limit[variants]` (integer)
+- `fields[alternativeDistributionPackageDeltas]` ([string]): Additional fields to include for each Alternative Distribution Package Deltas resource returned by the response.
+- `fields[alternativeDistributionPackageVariants]` ([string]): Additional fields to include for each Alternative Distribution Package Variants resource returned by the response.
+- `fields[alternativeDistributionPackageVersions]` ([string]): Additional fields to include for each Alternative Distribution Package Versions resource returned by the response.
+- `fields[alternativeDistributionPackages]` ([string]): Additional fields to include for each Alternative Distribution Packages resource returned by the response.
+- `filter[state]` ([string]): Filter the returned versions by state.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of alternative distribution package version resources to return.
+- `limit[deltas]` (integer): The maximum number of related delta resources to return.
+- `limit[variants]` (integer): The maximum number of related variant resources to return.
 
 ## See Also
 
@@ -91,7 +91,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/e651dbc
   Get information about a specific alternative distribution package.
 - [Create an Alternative Distribution Package](post-v1-alternativedistributionpackages.md)
   Create an alternative distribution package for an App Store version.
-- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an app store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
 
 

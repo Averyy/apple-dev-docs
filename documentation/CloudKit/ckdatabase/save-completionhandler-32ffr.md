@@ -17,7 +17,7 @@ Saves a specific record zone.
 ## Declaration
 
 ```swift
-func save(_ zone: CKRecordZone) async throws -> CKRecordZone
+func save(_ zone: CKRecordZone, completionHandler: @escaping @Sendable (CKRecordZone?, (any Error)?) -> Void)
 ```
 
 #### Discussion

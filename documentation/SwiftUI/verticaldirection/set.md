@@ -30,9 +30,9 @@ struct Set
 - [static let all: VerticalDirection.Set](verticaldirection/set/all.md)
   A set containing the upward and downward vertical directions.
 - [static let down: VerticalDirection.Set](verticaldirection/set/down.md)
-  A set containing only the trailing horizontal direction.
+  A set containing only the downward vertical direction.
 - [static let up: VerticalDirection.Set](verticaldirection/set/up.md)
-  A set containing only the leading horizontal direction.
+  A set containing only the upward vertical direction.
 
 ## Relationships
 

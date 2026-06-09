@@ -16,6 +16,7 @@ object App.Relationships.AppEvents
 
 ### Objects
 - [object App.Relationships.AppEvents.Data](app/relationships-data.dictionary/appevents-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related app event resource.
 
 ## Properties
 

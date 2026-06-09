@@ -11,6 +11,7 @@ Creates a schema by providing an array of properties.
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -33,7 +34,7 @@ init(type: any Generable.Type, description: String? = nil, representNilExplicitl
 - [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](generationschema/init(type:description:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  A property that belongs to a generation schema.
+  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
 
 
 ---

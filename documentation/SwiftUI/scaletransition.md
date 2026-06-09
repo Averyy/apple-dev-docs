@@ -17,6 +17,7 @@ Returns a transition that scales the view.
 ## Declaration
 
 ```swift
+nonisolated
 struct ScaleTransition
 ```
 

@@ -18,7 +18,7 @@ Masks chart content using the alpha channel of the specified content.
 
 ```swift
 nonisolated
-func mask<C>(@ChartContentBuilder content: () -> C) -> some ChartContent where C : ChartContent
+func mask<C>(@ContentBuilder content: () -> C) -> some ChartContent where C : ChartContent
 ```
 
 #### Discussion

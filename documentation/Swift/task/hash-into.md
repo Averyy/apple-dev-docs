@@ -34,7 +34,7 @@ Implement this method to conform to the `Hashable` protocol. The components used
 
 - [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [var hashValue: Int](task/hashvalue.md)
   The hash value.

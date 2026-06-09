@@ -15,6 +15,7 @@ A container that presents rows of data arranged in one or more columns, optional
 ## Declaration
 
 ```swift
+nonisolated
 struct Table<Value, Rows, Columns> where Value == Rows.TableRowValue, Rows : TableRowContent, Columns : TableColumnContent, Rows.TableRowValue == Columns.TableRowValue
 ```
 

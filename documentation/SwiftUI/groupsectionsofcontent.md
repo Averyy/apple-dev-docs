@@ -17,6 +17,7 @@ Transforms the sections of a given view into a resulting content view.
 ## Declaration
 
 ```swift
+nonisolated
 struct GroupSectionsOfContent<Sections, Content> where Sections : View, Content : View
 ```
 

@@ -31,7 +31,7 @@ case concurrentRequests(LanguageModelSession.GenerationError.Context)
 - [case rateLimited(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/ratelimited(_:).md)
   An error that indicates your session has been rate limited.
 - [case refusal(LanguageModelSession.GenerationError.Refusal, LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/refusal(_:_:).md)
-  An error that happens when the session refuses the request.
+  An error indicating that the model refused to answer.
 - [case unsupportedGuide(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedguide(_:).md)
   An error that indicates a generation guide with an unsupported pattern was used.
 - [case unsupportedLanguageOrLocale(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md)

@@ -21,15 +21,12 @@ class UIStepper
 ## Mentions
 
 - [Attaching gesture recognizers to UIKit controls](attaching-gesture-recognizers-to-uikit-controls.md)
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
 
 #### Overview
 
 By default, pressing and holding a stepper’s button increments or decrements the stepper’s value repeatedly. The rate of change depends on how long the user continues pressing the control. To turn off this behavior, set the [`autorepeat`](uistepper/autorepeat.md) property to [`false`](https://developer.apple.com/documentation/Swift/false).
 
 The maximum value must be greater than or equal to the minimum value. If you set a maximum or minimum value that would break this invariant, both values are set to the new value. For example, if the minimum value is 200 and you set a maximum value of 100, then both the minimum and maximum become 200.
-
-> ❗ **Important**:  [`UIStepper`](uistepper.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
 
 ## Topics
 
@@ -73,6 +70,8 @@ The maximum value must be greater than or equal to the minimum value. If you set
 - [UIControl](uicontrol.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

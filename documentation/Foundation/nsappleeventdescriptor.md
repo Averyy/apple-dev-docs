@@ -131,21 +131,33 @@ If you need to send Apple events, or if you need more information on some of the
 ### Initializers
 - [init(AEDescNoCopy: UnsafePointer<AEDesc>)](nsappleeventdescriptor/init(aedescnocopy:)-236vs.md)
 - [init(applicationURL: URL)](nsappleeventdescriptor/init(applicationurl:).md)
+  Creates and returns an application address descriptor using the specified application URL.
 - [init(bundleIdentifier: String)](nsappleeventdescriptor/init(bundleidentifier:).md)
+  Creates and returns an application address descriptor using the specified bundle identifier.
 - [init?(coder: NSCoder)](nsappleeventdescriptor/init(coder:).md)
 - [init(date: Date)](nsappleeventdescriptor/init(date:).md)
+  Creates a descriptor that stores the specified date value.
 - [init(double: Double)](nsappleeventdescriptor/init(double:).md)
+  Creates a descriptor initialized with Apple event type `typeIEEE64BitFloatingPoint` that stores the specified double value.
 - [init(fileURL: URL)](nsappleeventdescriptor/init(fileurl:).md)
+  Creates a descriptor that stores the specified file URL.
 - [init(processIdentifier: pid_t)](nsappleeventdescriptor/init(processidentifier:).md)
+  Creates and returns an application address descriptor using the specified process identifier.
 ### Instance Properties
 - [var dateValue: Date?](nsappleeventdescriptor/datevalue.md)
+  The contents of the receiver as a date, coercing if necessary.
 - [var doubleValue: Double](nsappleeventdescriptor/doublevalue.md)
+  The contents of the receiver as a double value, coercing (to `typeIEEE64BitFloatingPoint`) if necessary.
 - [var fileURLValue: URL?](nsappleeventdescriptor/fileurlvalue.md)
+  The contents of the receiver as a file URL, coercing if necessary.
 - [var isRecordDescriptor: Bool](nsappleeventdescriptor/isrecorddescriptor.md)
+  Returns whether or not the receiver is a record-like descriptor.
 ### Instance Methods
 - [func sendEvent(options: NSAppleEventDescriptor.SendOptions, timeout: TimeInterval) throws -> NSAppleEventDescriptor](nsappleeventdescriptor/sendevent(options:timeout:).md)
+  Sends an Apple event.
 ### Type Methods
 - [class func currentProcess() -> NSAppleEventDescriptor](nsappleeventdescriptor/currentprocess.md)
+  Creates and returns an application address descriptor using the current process.
 
 ## Relationships
 

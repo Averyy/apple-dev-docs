@@ -7,8 +7,6 @@ Get the status of the content caches on a device.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -17,9 +15,9 @@ Get the status of the content caches on a device.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowQueryNetworkInformation |
 
 ## Topics
@@ -32,7 +30,7 @@ Get the status of the content caches on a device.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ContentCachingInformationCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

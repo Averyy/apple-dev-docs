@@ -11,6 +11,7 @@ Creates a circular gauge.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

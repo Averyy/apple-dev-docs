@@ -16,6 +16,7 @@ object AppEventCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object AppEventCreateRequest.Data.Relationships.App.Data](appeventcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app event.
 
 ## Properties
 

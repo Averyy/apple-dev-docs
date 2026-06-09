@@ -32,6 +32,8 @@ This property is `true` when the value is negative or `-0.0`; otherwise, `false`
   The exponent of the decimal.
 - [var significand: Decimal](decimal/significand.md)
   The significand of the decimal.
+- [var magnitude: Decimal](decimal/magnitude.md)
+  The magnitude of this decimal.
 - [var floatingPointClass: FloatingPointClassification](decimal/floatingpointclass.md)
   The IEEE 754 class of this type.
 - [var isCanonical: Bool](decimal/iscanonical.md)
@@ -54,8 +56,6 @@ This property is `true` when the value is negative or `-0.0`; otherwise, `false`
   A Boolean value indicating whether this value is zero.
 - [var nextDown: Decimal](decimal/nextdown.md)
   The greatest representable value that is less than this decimal.
-- [var nextUp: Decimal](decimal/nextup.md)
-  The least representable value that is greater than this decimal.
 
 
 ---

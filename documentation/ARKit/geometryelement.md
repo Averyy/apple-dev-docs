@@ -29,14 +29,14 @@ struct GeometryElement
   The number of bytes that represent an index value.
 - [var description: String](geometryelement/description.md)
   A textual representation of this geometry element.
+### Default Implementations
+- [Equatable Implementations](geometryelement/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

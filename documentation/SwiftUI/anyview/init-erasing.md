@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init<V>(erasing view: V) where V : View
 ```
 

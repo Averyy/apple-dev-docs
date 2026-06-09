@@ -20,8 +20,6 @@ var modeChangeHandler: PGDisplayModeChangeHandler? { get }
 
 - [var queue: dispatch_queue_t?](pgdisplay/queue.md)
   The queue that the framework uses when dispatching messages to any of the display’s registered handlers.
-- [var cursorGlyphHandler: PGDisplayCursorGlyphHandler?](pgdisplay/cursorglyphhandler.md)
-  A handler that the framework calls to change the cursor’s appearance.
 - [var cursorShowHandler: PGDisplayCursorShowHandler?](pgdisplay/cursorshowhandler.md)
   A handler that the framework calls to change the cursor’s visibility.
 - [var newFrameEventHandler: PGDisplayNewFrameEventHandler?](pgdisplay/newframeeventhandler.md)

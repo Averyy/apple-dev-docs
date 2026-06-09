@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: init
 
-Creates a representation of a manifest in memory given JSON-encoded data.
+Creates a manifest in memory given JSON-encoded data.
 
 **Availability**:
 - iOS 26.0+
@@ -27,7 +27,7 @@ init(from data: Data, appGroupID: String) throws
 ## See Also
 
 - [init(contentsOf: URL, appGroupID: String) throws](assetpackmanifest/init(contentsof:appgroupid:).md)
-  Creates a representation of a manifest in memory given a URL to the manifest’s representation as a JSON file on disk.
+  Creates a manifest in memory given a URL to the manifest’s representation as a JSON file on disk.
 
 
 ---

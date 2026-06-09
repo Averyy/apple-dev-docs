@@ -57,6 +57,24 @@ The system displays the primary and secondary actions as buttons on the alert. A
   A set of reasons for dismissing a navigation alert.
 ### Initializers
 - [init?(coder: NSCoder)](cpnavigationalert/init(coder:).md)
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](cpnavigationalert/init(titlevariants:subtitlevariants:avatarimage:alert:actions:duration:).md)
+  Initialize a @c CPNavigationAlert with a title, image, an array of actions, and duration.
+- [init(titleVariants: [String], subtitleVariants: [String], avatarImage: UIImage?, alertImage: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](cpnavigationalert/init(titlevariants:subtitlevariants:avatarimage:alertimage:actions:duration:).md)
+### Instance Properties
+- [var actions: [CPAlertAction]](cpnavigationalert/actions.md)
+  The array of actions associated with this navigation alert.
+- [var alertImage: UIImage?](cpnavigationalert/alertimage.md)
+- [var avatarImage: UIImage?](cpnavigationalert/avatarimage.md)
+### Instance Methods
+- [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](cpnavigationalert/updatetitlevariants(_:subtitlevariants:avatarimage:alert:actions:duration:).md)
+  Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.
+### Type Properties
+- [class var maximumActionsCount: Int](cpnavigationalert/maximumactionscount.md)
+  The maximum number of actions that a @c CPNavigationAlert can display.
+- [class var maximumAlertImageSize: CGSize](cpnavigationalert/maximumalertimagesize.md)
+  The maximum image size for the alert image that a @c CPNavigationAlert can display.
+- [class var maximumAvatarImageSize: CGSize](cpnavigationalert/maximumavatarimagesize.md)
+  The maximum image size for the avatar image that a @c CPNavigationAlert can display.
 
 ## Relationships
 

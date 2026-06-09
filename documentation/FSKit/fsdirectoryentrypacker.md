@@ -16,7 +16,7 @@ class FSDirectoryEntryPacker
 
 #### Overview
 
-You use this type in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md).
+You use this type in your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md).
 
 Packing allows your implementation to provide information FSKit needs, including each item’s name, type, and identifier (such as an inode number). Some directory enumerations require other attributes, as indicated by the [`FSItem.GetAttributesRequest`](fsitem/getattributesrequest.md) sent to the enumerate method.
 
@@ -50,16 +50,18 @@ Packing allows your implementation to provide information FSKit needs, including
 
 ## See Also
 
-- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, replyHandler: (FSDirectoryVerifier, (any Error)?) -> Void)](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md)
+- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md)
   Enumerates the contents of the given directory.
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
+  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
+  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+- [class FSEnumerateDirectoryResult](fsenumeratedirectoryresult.md)
+  The result of an enumerate-directory call.
 
 
 ---

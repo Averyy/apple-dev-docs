@@ -13,8 +13,6 @@ A reference to a SCEP identity.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -46,15 +44,15 @@ Specify `com.apple.asset.credential.scep` as the declaration type.
 
 ### Objects
 - [object AssetCredentialSCEPAuthenticationObject](assetcredentialscepauthenticationobject.md)
-  The server authentication details for a SCEP asset credential.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 - [object AssetCredentialSCEPReferenceObject](assetcredentialscepreferenceobject.md)
-  The external reference for a SCEP asset credential.
+  The external reference. Ensure that the asset data:
 
 ## Properties
 
 - `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values: - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
 - `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
-- `Authentication` (AssetCredentialSCEPAuthenticationObject): The server authentication details.
+- `Authentication` (AssetCredentialSCEPAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM.
 - `Reference` (AssetCredentialSCEPReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.scep` credential type
 - Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 

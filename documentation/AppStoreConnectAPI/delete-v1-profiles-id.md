@@ -1,4 +1,4 @@
-# Delete a Profile
+# Delete a profile
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,7 +22,7 @@ You can delete provisioning profiles, and may wish to do so if they are expiring
 
 ## See Also
 
-- [Create a Profile](post-v1-profiles.md)
+- [Create a profile](post-v1-profiles.md)
   Create a new provisioning profile.
 
 

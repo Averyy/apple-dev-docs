@@ -28,7 +28,7 @@ This property provides programmatic access to the actions defined on a [`Section
 struct MailboxView<Content: View>: View {
     var content: Content
 
-    init(@ViewBuilder content: () -> Content) {
+    init(@ContentBuilder content: () -> Content) {
         self.content = content()
     }
 

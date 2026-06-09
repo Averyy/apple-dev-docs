@@ -16,6 +16,7 @@ object SubscriptionPriceInlineCreate.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionPriceInlineCreate.Relationships.Subscription.Data](subscriptionpriceinlinecreate/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription price inline create.
 
 ## Properties
 

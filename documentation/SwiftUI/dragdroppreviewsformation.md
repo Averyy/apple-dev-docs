@@ -39,6 +39,13 @@ struct DragDropPreviewsFormation
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func dragPreviewsFormation(DragDropPreviewsFormation) -> some View](view/dragpreviewsformation(_:).md)
+  Describes the way dragged previews are visually composed.
+- [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](view/droppreviewsformation(_:).md)
+  Describes the way previews for a drop are composed.
+
 
 ---
 

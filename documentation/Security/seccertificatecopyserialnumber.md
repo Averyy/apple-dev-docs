@@ -32,4 +32,4 @@ A data instance containing a DER-encoded integer for the certificate’s serial 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/security/seccertificatecopyserialnumber(_:_:))*

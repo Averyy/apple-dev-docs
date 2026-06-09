@@ -49,6 +49,8 @@ You can search for audio units in the following ways:
 - [var tagNames: [String]](avaudiounitcomponentmanager/tagnames.md)
   An array of all tags the audio unit associates with the current user, and the system tags the audio units define.
 ### Observing registration changes
+- [AVAudioUnitComponentManager.RegistrationsChangedMessage](avaudiounitcomponentmanager/registrationschangedmessage.md)
+  Type-safe notification message for audio unit component registration changes.
 - [class let registrationsChangedNotification: NSNotification.Name](avaudiounitcomponentmanager/registrationschangednotification.md)
   A notification the component manager generates when it updates its list of components.
 

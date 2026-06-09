@@ -8,6 +8,7 @@ An object that encapsulates the XPC communication between the host process and t
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

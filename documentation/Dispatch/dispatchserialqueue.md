@@ -33,8 +33,6 @@ You do not create objects of this type directly. You receive a queue of the appr
 
 ## Relationships
 
-### Inherits From
-- [DispatchQueue](dispatchqueue.md)
 ### Inherited By
 - [OS_dispatch_queue_main](os_dispatch_queue_main-swift.class.md)
 ### Conforms To

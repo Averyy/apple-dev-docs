@@ -23,7 +23,7 @@ This property contains either an [`NSTrackingArea`](nstrackingarea.md) object or
 - [class func enterExitEvent(with: NSEvent.EventType, location: NSPoint, modifierFlags: NSEvent.ModifierFlags, timestamp: TimeInterval, windowNumber: Int, context: NSGraphicsContext?, eventNumber: Int, trackingNumber: Int, userData: UnsafeMutableRawPointer?) -> NSEvent?](nsevent/enterexitevent(with:location:modifierflags:timestamp:windownumber:context:eventnumber:trackingnumber:userdata:).md)
   Creates and returns a new event object that describes a tracking-rectangle or cursor-update event.
 - [func addTrackingRect(NSRect, owner: Any, userData: UnsafeMutableRawPointer?, assumeInside: Bool) -> NSView.TrackingRectTag](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md)
-  Establishes  an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
+  Establishes an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
 - [var eventNumber: Int](nsevent/eventnumber.md)
   The counter value of the latest mouse or tracking-rectangle event object.
 - [var trackingArea: NSTrackingArea?](nsevent/trackingarea.md)

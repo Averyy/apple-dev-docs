@@ -3,11 +3,10 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Create users to assign apps and books to.
+Create users to assign apps, books, and subscriptions to.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 #### Discussion
 

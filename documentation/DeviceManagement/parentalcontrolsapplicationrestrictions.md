@@ -7,8 +7,6 @@ The payload that configures parental controls for apps.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,9 +33,9 @@ To determine if an app can be launched, the app is evaluated with these rules:
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example
@@ -107,10 +105,16 @@ To determine if an app can be launched, the app is evaluated with these rules:
 
 ## Properties
 
-- `familyControlsEnabled` (boolean) *(required)*: If `true`, enables app access restrictions.
-- `pathBlackList` ([string]): The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later.
-- `pathWhiteList` ([string]): The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later.
-- `whiteList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries.
+- `allowList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries. Available: macOS 10.15+
+Deprecated: macOS 27+
+- `familyControlsEnabled` (boolean) *(required)*: If `true`, enables app access restrictions. Deprecated: macOS 27+
+- `pathAllowList` ([string]): The paths to apps in the allow list. Available: macOS 10.15+
+Deprecated: macOS 27+
+- `pathBlackList` ([string]): The paths to apps in the deny list. This property is deprecated in macOS 10.15 and later - use `pathDenyList` instead. Deprecated: macOS 10.15+
+- `pathDenyList` ([string]): The paths to apps in the deny list. Available: macOS 10.15+
+Deprecated: macOS 27+
+- `pathWhiteList` ([string]): The paths to apps in the allow list. This property is deprecated in macOS 10.15 and later - use `pathAllowList` instead. Deprecated: macOS 10.15+
+- `whiteList` ([ParentalControlsApplicationRestrictions.ApplicationItem]): The allow list of app item dictionaries. This property is deprecated in macOS 10.15 and later - use `allowList` instead. Deprecated: macOS 10.15+
 
 ## See Also
 

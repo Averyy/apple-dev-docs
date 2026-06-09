@@ -16,6 +16,13 @@
 @preconcurrency override dynamic var undoManager: UndoManager? { get }
 ```
 
+## See Also
+
+- [var delegate: (any PaperMarkupViewController.Delegate)?](papermarkupviewcontroller/delegate-swift.property.md)
+  The delegate for responding to a person’s actions.
+- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
+  The interface for responding to interactions in a markup view controller.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single App Store Version Submissions resource.
+The response body for endpoints that submit an App Store version for review.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -27,7 +27,7 @@ object AppStoreVersionSubmissionResponse
 ## See Also
 
 - [object AppStoreVersionSubmission](appstoreversionsubmission.md)
-  The data structure that represents an App Store Version Submissions resource.
+  A submission of an App Store version to Apple’s review queue, triggering the review process.
 
 
 ---

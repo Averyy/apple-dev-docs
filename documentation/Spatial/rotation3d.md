@@ -130,6 +130,7 @@ struct Rotation3D
 - [Encodable Implementations](rotation3d/encodable-implementations.md)
 - [Equatable Implementations](rotation3d/equatable-implementations.md)
 - [Hashable Implementations](rotation3d/hashable-implementations.md)
+- [ProjectiveTransformable3D Implementations](rotation3d/projectivetransformable3d-implementations.md)
 
 ## Relationships
 
@@ -142,6 +143,7 @@ struct Rotation3D
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
 - [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)

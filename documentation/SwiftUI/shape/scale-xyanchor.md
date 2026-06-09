@@ -17,6 +17,7 @@ Scales this shape without changing its bounding frame.
 ## Declaration
 
 ```swift
+nonisolated
 func scale(x: CGFloat = 1, y: CGFloat = 1, anchor: UnitPoint = .center) -> ScaledShape<Self>
 ```
 

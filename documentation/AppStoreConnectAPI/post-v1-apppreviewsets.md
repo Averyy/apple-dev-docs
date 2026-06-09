@@ -1,4 +1,4 @@
-# Create an App Preview Set
+# Create an app preview set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Add a new app preview set to an App Store version localization for a specific ap
 
 ## See Also
 
-- [Delete an App Preview Set](delete-v1-apppreviewsets-_id_.md)
+- [Delete an app preview set](delete-v1-apppreviewsets-_id_.md)
   Delete an app preview set and all of its previews.
 
 

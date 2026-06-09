@@ -51,6 +51,8 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-2du3k.md)
 - [init(width: Double, height: Double)](cgsize/init(width:height:)-63ffm.md)
 - [init(width: Int, height: Int)](cgsize/init(width:height:)-83b96.md)
+### Instance Properties
+- [var formattedDescription: String](cgsize/formatteddescription.md)
 ### Instance Methods
 - [func equalTo(CGSize) -> Bool](cgsize/equalto(_:).md)
 
@@ -59,6 +61,7 @@ A [`CGSize`](cgsize.md) structure is sometimes used to represent a distance vect
 ### Conforms To
 - [Animatable](../SwiftUI/Animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)

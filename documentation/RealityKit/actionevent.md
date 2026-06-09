@@ -25,6 +25,8 @@ Actions perform their function within one or more custom event handlers associat
 
 The event structure contains useful information for an action to perform its function when an action event is raised.
 
+> ❗ **Important**: Do not store [`ActionEvent`](actionevent.md) instances beyond the event handler’s scope. The event contains references (like `actionStatus`) that are only valid during the callback. Storing the event and accessing it later results in undefined behavior.
+
 ## Topics
 
 ### Instance Properties
@@ -34,6 +36,8 @@ The event structure contains useful information for an action to perform its fun
   The animation state for the action.
 - [let duration: TimeInterval](actionevent/duration.md)
   The duration of the the event.
+- [var entity: Entity?](actionevent/entity.md)
+  The entity that owns the `BehaviorTreeComponent` and initiated this action.
 - [let parameter: ActionType.EventParameterType?](actionevent/parameter.md)
   The event parameter data that can vary for each event.
 - [let playbackController: AnimationPlaybackController](actionevent/playbackcontroller.md)

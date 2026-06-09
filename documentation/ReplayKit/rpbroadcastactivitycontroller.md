@@ -6,7 +6,7 @@
 A controller object that presents the macOS broadcast picker.
 
 **Availability**:
-- macOS ?+
+- macOS 11.0+
 
 ## Declaration
 

@@ -6,16 +6,15 @@
 Provides the full list of web service URLs, notification types, request limits, and possible error codes.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Managing Users](managing-users.md)
-- [Getting App and Book Information (Legacy)](getting-app-and-book-information-legacy.md)
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Managing Assets](managing-assets.md)
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Managing users](managing-users.md)
+- [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Managing assets](managing-assets.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
 
 #### Discussion
 
@@ -193,6 +192,8 @@ Provides the full list of web service URLs, notification types, request limits, 
         "maxClientUserIds": 1000,
         "maxSerialNumbers": 1000,
         "maxRevokeSerialNumbers": 100,
+        "maxSubscriptions": 25,
+        "maxSubscriptionClientUserIds": 1000,
         "maxMdmNameLength": 100,
         "maxMdmMetadataLength": 255,
         "maxMdmIdLength": 100
@@ -225,11 +226,12 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 ### Response
 - [object ServiceConfigResponse](serviceconfigresponse.md)
+  Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
+- [Apps and books metadata for organizations](apps-and-books-metadata-for-organizations.md)
+  Get metadata for apps and books your organization owns.
 
 ## Endpoint
 

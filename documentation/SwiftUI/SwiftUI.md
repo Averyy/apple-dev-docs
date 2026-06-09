@@ -145,9 +145,6 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
-### Articles
-- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
-  Build a travel planning app that organizes trips into collections and tracks activity completion.
 
 
 ---

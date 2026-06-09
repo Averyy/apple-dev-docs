@@ -53,9 +53,7 @@ struct Merge4<A, B, C, D> where A : Publisher, B : Publisher, C : Publisher, D :
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

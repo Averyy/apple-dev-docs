@@ -1,4 +1,4 @@
-# Anonymous
+# Disk mount options
 
 **Framework**: Disk Arbitration
 
@@ -11,8 +11,8 @@
 
 ## See Also
 
-- [Anonymous](anonymous-kdadiskunmountoptions.md)
-- [Anonymous](anonymous-kdadiskoptions.md)
+- [Disk unmount options](anonymous-kdadiskunmountoptions.md)
+- [Disk options](anonymous-kdadiskoptions.md)
 
 
 ---

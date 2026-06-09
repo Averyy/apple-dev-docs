@@ -79,10 +79,8 @@ How you implement a server-based solution is up to you, but consider a common co
 
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
-- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
-  Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
-  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
+- [Managing the context window](managing-the-context-window.md)
+  Optimize your app’s token usage when prompting a model with the Foundation Models framework.
 - [class LanguageModelSession](languagemodelsession.md)
   An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)
@@ -91,8 +89,12 @@ How you implement a server-based solution is up to you, but consider a common co
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
   A linear history of entries that reflect an interaction with a session.
+- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
+  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
+- [struct ContextOptions](contextoptions.md)
+  Options that configure details that should appear in the prompt.
 
 
 ---

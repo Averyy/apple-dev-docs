@@ -17,6 +17,7 @@ The default type of the current value label when used by a date-relative progres
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultDateProgressLabel
 ```
 

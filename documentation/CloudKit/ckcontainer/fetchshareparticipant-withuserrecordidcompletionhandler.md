@@ -17,7 +17,7 @@ Fetches the share participant with the specified user record ID.
 ## Declaration
 
 ```swift
-func shareParticipant(forUserRecordID userRecordID: CKRecord.ID) async throws -> CKShare.Participant
+func fetchShareParticipant(withUserRecordID userRecordID: CKRecord.ID, completionHandler: @escaping @Sendable (CKShare.Participant?, (any Error)?) -> Void)
 ```
 
 #### Discussion

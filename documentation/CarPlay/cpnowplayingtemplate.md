@@ -68,6 +68,8 @@ When CarPlay presents Now Playing information for your app, it uses the shared i
 - [protocol CPNowPlayingTemplateObserver](cpnowplayingtemplateobserver.md)
   The methods for responding to the user interacting with the Now Playing template.
 ### Instance Properties
+- [var allowsMiniPlayer: Bool](cpnowplayingtemplate/allowsminiplayer.md)
+  A Boolean value indicating whether the mini player is allowed to appear.
 - [var nowPlayingMode: CPNowPlayingMode?](cpnowplayingtemplate/nowplayingmode.md)
   The currently-active now playing mode. See @c CPNowPlayingMode.
 

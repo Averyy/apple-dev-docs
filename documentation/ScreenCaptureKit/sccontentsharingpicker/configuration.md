@@ -6,8 +6,12 @@
 Sets the configuration for the content capture picker for all streams, providing allowed selection modes and content excluded from selection.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 14.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-TThe collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
+The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
 
 **Availability**:
 - iOS 13.0+

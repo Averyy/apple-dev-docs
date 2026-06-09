@@ -90,7 +90,7 @@ ProductList(departmentId: departmentId, productId: $productId)
     }
 ```
 
-In this version of the searchable modifier, SwiftUI uses one view builder to describe the appearance of the tokens in both the search field and the suggestions container.
+In this version of the searchable modifier, SwiftUI uses one content builder to describe the appearance of the tokens in both the search field and the suggestions container.
 
 ##### Update Suggestions Dynamically
 

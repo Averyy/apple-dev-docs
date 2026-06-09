@@ -22,6 +22,8 @@ Set the run destination to an iPhone that contains an Ultra Wideband chip. The s
 
 - [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
   A configuration that enables interaction between iPhone and third-party accessories.
+- [enum NIMotionActivityState](nimotionactivitystate.md)
+  Motion states for a nearby accessory.
 
 
 ---

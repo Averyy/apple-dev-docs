@@ -16,6 +16,7 @@ object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocaliz
 
 ### Objects
 - [object AppPreviewSetCreateRequest.Data.Relationships.AppCustomProductPageLocalization.Data](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpagelocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app preview set.
 
 ## Properties
 

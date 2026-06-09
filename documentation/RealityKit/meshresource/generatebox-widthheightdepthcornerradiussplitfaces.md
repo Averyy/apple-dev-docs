@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Creates a box mesh from a width, height, depth, a radius for the corners, and a Boolean option that splits faces.
+Creates a box mesh from a width, height, depth and a corner radius, with the ability to assign different materials to each face.
 
 **Availability**:
 - iOS 13.0+
@@ -23,6 +23,17 @@ Creates a box mesh from a width, height, depth, a radius for the corners, and a 
 #### Discussion
 
 The method centers the box at the entity’s origin and aligns the box’s faces with the coordinate system’s axes.
+
+When `splitFaces` is `true`, the box contains six submeshes, one per face, allowing you to assign a different material to each face. The faces correspond to material indices in the following order:
+
+| Material Index | Face |
+| --- | --- |
+| 0 | Front (+Z) |
+| 1 | Top (+Y) |
+| 2 | Back (-Z) |
+| 3 | Bottom (-Y) |
+| 4 | Right (+X) |
+| 5 | Left (-X) |
 
 > **Note**: The method clamps `cornerRadius` so that it doesn’t exceed half the length of the box’s smallest dimension.
 

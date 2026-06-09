@@ -11,7 +11,7 @@ App Store Connect API version 3.2 provides resources that enable you to automate
 ##### New Features
 
 - visionOS is now available in multiple endpoints. App Store Connect API now supports `APP_APPLE_VISION_PRO` for [`ScreenshotDisplayType`](screenshotdisplaytype.md), and `APPLE_VISION_PRO` for [`PreviewType`](previewtype.md).
-- A new `Installs` report type is available with four subtypes: `SUMMARY_INSTALL_TYPE, SUMMARY_TERRITORY, SUMMARY_CHANNEL,` and `DETAILED.` For more information see [`Download Sales and Trends Reports`](get-v1-salesreports.md).
+- A new `Installs` report type is available with four subtypes: `SUMMARY_INSTALL_TYPE, SUMMARY_TERRITORY, SUMMARY_CHANNEL,` and `DETAILED.` For more information see [`Download sales and trends reports`](get-v1-salesreports.md).
 - You can now add achievements and leaderboard entries with [`Add a Player's Score`](post-v1-gamecenterplayerachievementsubmissions.md) and  [`Add a Score to a Leaderbaord`](post-v1-gamecenterleaderboardentrysubmissions.md).
 - [`GameCenterMatchmakingQueue`](gamecentermatchmakingqueue.md) now supports backwards compatibility with the addition of a new attribute `classicMatchmakingBundleIds`.
 - You can now download Xcode Cloud `Notarized and Stapled App` artifacts through the Public API. For more information, see [`CiArtifact.Attributes`](ciartifact/attributes-data.dictionary.md).
@@ -25,6 +25,8 @@ App Store Connect API version 3.2 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -52,8 +54,6 @@ App Store Connect API version 3.2 provides resources that enable you to automate
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

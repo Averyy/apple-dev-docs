@@ -44,6 +44,9 @@ The table below provides detailed mappings of these weights to their respective 
 
 ## Topics
 
+### Creating a rig
+- [init(named: String, rootJoint: SkeletonResource.Joint) throws](ikrig/init(named:rootjoint:).md)
+  Creates an IK rig from a joint hierarchy.
 ### Structures
 - [struct Constraint](ikrig/constraint.md)
   A definition of a rig constraint.

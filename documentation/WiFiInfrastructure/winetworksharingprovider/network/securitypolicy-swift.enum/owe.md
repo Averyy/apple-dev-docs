@@ -8,6 +8,7 @@ Allows Opportunistic Wireless Encryption (OWE), providing encryption without aut
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

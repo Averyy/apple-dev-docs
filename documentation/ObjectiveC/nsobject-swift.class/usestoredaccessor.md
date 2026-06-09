@@ -6,6 +6,9 @@
 Returns `true` if the stored value methods [`storedValue(forKey:)`](nsobject-swift.class/storedvalue(forkey:).md) and [`takeStoredValue(_:forKey:)`](nsobject-swift.class/takestoredvalue(_:forkey:).md) should use private accessor methods in preference to public accessors.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

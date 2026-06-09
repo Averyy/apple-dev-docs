@@ -20,24 +20,24 @@ class MXMetricManager
 
 #### Overview
 
-The `MXMetricManager` shared object manages your subscription for receiving on-device daily metrics.
+The `MXMetricManager` shared object manages your subscription for receiving on-device daily metrics. It receives daily metric reports when the device your app is installed on is running iOS 13 and later or macOS 26 and later.
 
-MetricKit starts accumulating reports for your app after calling [`shared`](mxmetricmanager/shared.md) for the first time. To receive the reports, call [`add(_:)`](mxmetricmanager/add(_:).md) with an object that adopts the [`MXMetricManagerSubscriber`](mxmetricmanagersubscriber.md) protocol. The system then delivers metric reports at most once per day, and diagnostic reports immediately in iOS 15 and later and macOS 12 and later. The reports contain the metrics from the past 24 hours and any previously undelivered daily reports. To pause receiving reports, call [`remove(_:)`](mxmetricmanager/remove(_:).md).
+MetricKit starts accumulating reports for your app after calling [`shared`](mxmetricmanager/shared.md) for the first time. To receive the reports, call [`add(_:)`](mxmetricmanager/add(_:).md) with an object that adopts the [`MXMetricManagerSubscriber`](mxmetricmanagersubscriber.md) protocol. The system delivers metric reports at most once per day per metric source, and diagnostic reports immediately in iOS 15 and later and macOS 12 and later. Some metrics originate from different system sources and arrive in a separate payload, so your app may receive more than one metric payload per day. The reports contain the metrics from the past 24 hours and any previously undelivered daily reports. To pause receiving reports, call [`remove(_:)`](mxmetricmanager/remove(_:).md).
 
-The calls to add a subscriber and for receiving reports are safe to use in performance-sensitive code, such as app launch.
+Calls to add a subscriber and to receive reports are safe to use in performance-sensitive code, such as during app launch.
 
-The snippet below shows a simple class for using MetricKit.
+The following example shows a class that subscribes to and receives MetricKit reports.
 
 ```swift
 class AppMetrics: NSObject, MXMetricManagerSubscriber {
     func receiveReports() {
-       let shared = MXMetricManager.shared
-       shared.add(self)
+       let manager = MXMetricManager.shared
+       manager.add(self)
     }
 
     func pauseReports() {
-       let shared = MXMetricManager.shared
-       shared.remove(self)
+       let manager = MXMetricManager.shared
+       manager.remove(self)
     }
 
     // Receive daily metrics.
@@ -53,7 +53,7 @@ class AppMetrics: NSObject, MXMetricManagerSubscriber {
 
 ```
 
-> **Note**:  MetricKit delivers daily metric reports from iOS 13 or later, and macOS 26 or later.
+> **Note**: To test MetricKit in your app, run your app on a physical device to receive metric reports and `didReceive(_:)` callbacks.
 
 ## Topics
 
@@ -69,7 +69,7 @@ class AppMetrics: NSObject, MXMetricManagerSubscriber {
 - [var pastPayloads: [MXMetricPayload]](mxmetricmanager/pastpayloads.md)
   Returns an array of the daily metrics reports generated since the last allocation of the shared manager instance.
 - [var pastDiagnosticPayloads: [MXDiagnosticPayload]](mxmetricmanager/pastdiagnosticpayloads.md)
-  Returns an array of the diagnostic reports generated since the last allocation of the shared manager instance.
+  The diagnostic reports since the last initialization of the shared manager instance.
 ### Creating custom metric logs
 - [class func makeLogHandle(category: String) -> OSLog](mxmetricmanager/makeloghandle(category:).md)
   Returns a log handle used for writing custom metric events.

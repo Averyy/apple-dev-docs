@@ -15,8 +15,8 @@ A system button that reads items from the pasteboard and delivers it to a closur
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct PasteButton
+nonisolated
+struct PasteButton
 ```
 
 #### Overview

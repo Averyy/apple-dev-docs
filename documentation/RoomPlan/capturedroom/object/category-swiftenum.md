@@ -67,7 +67,6 @@ Each [`CapturedRoom.Object`](capturedroom/object.md) instance in a captured room
 
 ### Conforms To
 - [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

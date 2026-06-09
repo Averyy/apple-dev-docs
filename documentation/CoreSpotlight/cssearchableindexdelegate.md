@@ -40,6 +40,7 @@ The index delegate methods are called when there is an issue with the index and 
 ### Providing data for an item
 - [func searchableItems(forIdentifiers: [String], searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:searchableitemshandler:).md)
   Requests that the delegate provide searchable items for the provided identifiers.
+- [func searchableItems(forIdentifiers: [String], protectionClass: FileProtectionType, searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:protectionclass:searchableitemshandler:).md)
 - [func data(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String) throws -> Data](cssearchableindexdelegate/data(for:itemidentifier:typeidentifier:).md)
   Returns the data for the requested item during a drag-and-drop operation.
 - [func fileURL(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String, inPlace: Bool) throws -> URL](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md)
@@ -63,6 +64,7 @@ The index delegate methods are called when there is an issue with the index and 
   Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 - [class CSSearchableIndex](cssearchableindex.md)
   An on-device index for your app’s searchable content.
+- [class CSSearchableIndexDescription](cssearchableindexdescription.md)
 
 
 ---

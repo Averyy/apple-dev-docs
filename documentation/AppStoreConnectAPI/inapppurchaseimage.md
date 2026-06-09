@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a in-app purchase image resource.
+A screenshot or image associated with an in-app purchase or subscription, displayed on the App Store product page.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -20,7 +20,7 @@ object InAppPurchaseImage
 - [object InAppPurchaseImage.Attributes](inapppurchaseimage/attributes-data.dictionary.md)
   Attributes that describe a subscription image resource.
 - [object InAppPurchaseImage.Relationships](inapppurchaseimage/relationships-data.dictionary.md)
-  The data structure that represents the relationships of a subscription image resource.
+  The relationships for an in-app purchase image, linking it to its associated in-app purchase.
 
 ## Properties
 
@@ -33,13 +33,13 @@ object InAppPurchaseImage
 ## See Also
 
 - [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)
-  The request body you use to create a in-app purchase purchase image reservation.
+  The request body you use to create an in-app purchase image reservation.
 - [object InAppPurchaseImageResponse](inapppurchaseimageresponse.md)
-  A response that contains a single in-app purchase images resource.
+  A response containing a single image for an in-app purchase.
 - [object InAppPurchaseImageUpdateRequest](inapppurchaseimageupdaterequest.md)
-  The data structure that represents a in-app purchase image resource.
+  The request body for updating the upload state or file content of an in-app purchase image.
 - [object InAppPurchaseImagesResponse](inapppurchaseimagesresponse.md)
-  A response that contains a list of in-app purchase image resources.
+  A response containing a list of images for an in-app purchase.
 
 
 ---

@@ -34,7 +34,7 @@ Contiguous strings always operate in O(1) time for withUTF8, always give a resul
   Returns a human-readable string giving the name of the specified encoding.
 - [func makeContiguousUTF8()](string/makecontiguousutf8.md)
   If this string is not contiguous, make it so. If this mutates the string, it will invalidate any pre-existing indices.
-- [func withUTF8<R>((UnsafeBufferPointer<UInt8>) throws -> R) rethrows -> R](string/withutf8(_:).md)
+- [func withUTF8<R, E>((UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R](string/withutf8(_:).md)
   Runs `body` over the content of this string in contiguous memory. If this string is not contiguous, this will first make it contiguous, which will also speed up subsequent access. If this mutates the string, it will invalidate any pre-existing indices.
 
 

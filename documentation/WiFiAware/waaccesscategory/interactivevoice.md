@@ -8,6 +8,7 @@ A quality-of-service (QoS) type that provides very low-latency for low-throughpu
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

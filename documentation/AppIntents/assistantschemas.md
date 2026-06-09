@@ -22,7 +22,7 @@ enum AssistantSchemas
 
 ### Protocols
 - [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
-  Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
+  Assistant schema conformance for types you use for assistant functionality.
 - [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
   Assistant schema conformance for app entities that describe ebooks or audiobooks.
 - [AssistantSchemas.BooksEnum](assistantschemas/booksenum.md)
@@ -63,6 +63,8 @@ enum AssistantSchemas
   Assistant schema conformance for app intents that offer photo and video functionality.
 - [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
   Assistant schema conformance for app entities that describe presentation data.
+- [AssistantSchemas.PresentationEnum](assistantschemas/presentationenum.md)
+  Assistant schema conformance for types you use for presentation functionality.
 - [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
   Assistant schema conformance for app intents that offer presentation functionality.
 - [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
@@ -96,6 +98,15 @@ enum AssistantSchemas
 
 ## See Also
 
+- [protocol AssistantEnum](assistantenum.md)
+  A value that Apple Intelligence and Siri use to fulfill a person’s request.
+- [protocol AssistantEntity](assistantentity.md)
+  An app entity that Apple Intelligence can discover to fulfill a person’s request.
+- [protocol AssistantIntent](assistantintent.md)
+  An app intent that Siri performs to fulfill a person’s request.
+- [protocol AssistantSchemaEnum](assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](assistantschemaintent.md)
 - [struct AssistantSchema](assistantschema.md)
 
 

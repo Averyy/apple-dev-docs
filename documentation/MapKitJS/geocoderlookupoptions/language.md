@@ -26,6 +26,8 @@ Tell the geocoder to return results in this language. For example, setting the o
   A list of countries for constraining the lookup results.
 - [region](geocoderlookupoptions/region.md)
   A region for constraining lookup results.
+- [signal](geocoderlookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

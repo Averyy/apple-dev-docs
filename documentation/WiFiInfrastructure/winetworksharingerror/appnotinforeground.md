@@ -8,6 +8,7 @@ Indicates your app can’t perform the requested operation because it isn’t ru
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

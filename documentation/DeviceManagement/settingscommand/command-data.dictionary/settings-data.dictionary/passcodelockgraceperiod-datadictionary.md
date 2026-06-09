@@ -9,8 +9,6 @@ A dictionary that contains settings for the password lock grace period.
 - iOS 9.3.2+
 - iPadOS 9.3.2+
 - Mac Catalyst 9.3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,8 @@ object SettingsCommand.Command.Settings.PasscodeLockGracePeriod
 
 ## Properties
 
-- `Item` (string) *(required)*: A string that identifies this setting.
-- `PasscodeLockGracePeriod` (integer) *(required)*: The number of seconds before a locked screen requires the user to enter the device passcode to unlock it. The minimum value is `0` seconds and the maximum value is `14400` seconds. If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode. For this reason, it’s better to set this value before the user sets a passcode. If the value is less than one of the known values, the device uses the next lowest value. For example a value of 299 results in an effective setting of 60. This setting won’t take effect if `TemporarySessionOnly` is `true` because there’s no passcode for a temporary session.
+- `Item` (string) *(required)*: A string that identifies this setting. Deprecated: iOS 17+ | iPadOS 17+
+- `PasscodeLockGracePeriod` (integer) *(required)*: The number of seconds before a locked screen requires the user to enter the device passcode to unlock it. The minimum value is `0` seconds and the maximum value is `14400` seconds. If a device has a passcode, a change to a larger value doesn’t take effect until the user logs out or removes the passcode. For this reason, it’s better to set this value before the user sets a passcode. If the value is less than one of the known values, the device uses the next lowest value. For example a value of 299 results in an effective setting of 60. This setting won’t take effect if `TemporarySessionOnly` is `true` because there’s no passcode for a temporary session. Deprecated: iOS 17+ | iPadOS 17+
 
 ## See Also
 

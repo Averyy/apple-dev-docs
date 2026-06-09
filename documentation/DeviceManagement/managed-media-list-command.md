@@ -9,8 +9,6 @@ Get a list of the managed books on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -21,8 +19,8 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS |
 | Required access right | AllowAppInstallation |
 
@@ -90,7 +88,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ManagedMediaListCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

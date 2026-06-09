@@ -75,6 +75,7 @@ enum ResourceFetchType
 - [var resourceFetchType: URLSessionTaskMetrics.ResourceFetchType](urlsessiontasktransactionmetrics/resourcefetchtype.md)
   A value that indicates whether the resource was loaded, pushed, or retrieved from the local cache.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontasktransactionmetrics/domainresolutionprotocol.md)
+  DNS protocol used for domain resolution.
 
 
 ---

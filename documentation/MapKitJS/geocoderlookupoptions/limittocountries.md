@@ -26,6 +26,8 @@ This property tells the geocoder to return results within a list of countries. S
   The language to use when displaying the lookup results.
 - [region](geocoderlookupoptions/region.md)
   A region for constraining lookup results.
+- [signal](geocoderlookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

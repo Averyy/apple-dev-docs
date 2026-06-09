@@ -1,10 +1,10 @@
-# GET /v1/gameCenterLeaderboardLocalizations/{id}/relationships/gameCenterLeaderboardImage
+# Get the leaderboard image ID for a Game Center leaderboard localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 4.0+
 
 ## Endpoint
 

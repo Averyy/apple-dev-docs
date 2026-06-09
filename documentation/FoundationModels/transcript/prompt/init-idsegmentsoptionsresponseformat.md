@@ -11,6 +11,7 @@ Creates a prompt.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -24,6 +25,11 @@ init(id: String = UUID().uuidString, segments: [Transcript.Segment], options: Ge
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 - `responseFormat`: A response format that describes the output structure.
+
+## See Also
+
+- [init(id: String, metadata: [String : any Codable & Sendable & Equatable], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](transcript/prompt/init(id:metadata:segments:options:responseformat:contextoptions:).md)
+  Creates a prompt.
 
 
 ---

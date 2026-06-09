@@ -1,4 +1,4 @@
-# Create an App Screenshot Set
+# Create an app screenshot set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Add a new screenshot set to an App Store version localization for a specific scr
 
 ## See Also
 
-- [Delete an App Screenshot Set](delete-v1-appscreenshotsets-_id_.md)
+- [Delete an app screenshot set](delete-v1-appscreenshotsets-_id_.md)
   Delete an app screenshot set and all of its screenshots.
 
 

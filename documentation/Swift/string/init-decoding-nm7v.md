@@ -46,8 +46,7 @@ If the content of the file path isn’t a well-formed Unicode string, this initi
   Creates a new string representing the given string repeated the specified number of times.
 - [init(repeating: Character, count: Int)](string/init(repeating:count:)-11bpi.md)
   Creates a string representing the given character repeated the specified number of times.
-- [init(unsafeUninitializedCapacity: Int, initializingUTF8With: (UnsafeMutableBufferPointer<UInt8>) throws -> Int) rethrows](string/init(unsafeuninitializedcapacity:initializingutf8with:).md)
-  Creates a new string with the specified capacity in UTF-8 code units, and then calls the given closure with a buffer covering the string’s uninitialized memory.
+- [init<E>(unsafeUninitializedCapacity: Int, initializingUTF8With: (UnsafeMutableBufferPointer<UInt8>) throws(E) -> Int) throws(E)](string/init(unsafeuninitializedcapacity:initializingutf8with:).md)
 
 
 ---

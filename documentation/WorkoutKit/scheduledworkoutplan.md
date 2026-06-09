@@ -30,17 +30,6 @@ struct ScheduledWorkoutPlan
   Date components that determine when the workout should begin.
 - [var complete: Bool](scheduledworkoutplan/complete.md)
   A Boolean value that indicates whether the workout is complete.
-### Comparing plans
-- [var hashValue: Int](scheduledworkoutplan/hashvalue.md)
-  The hashed value of the scheduled plan.
-- [func hash(into: inout Hasher)](scheduledworkoutplan/hash(into:).md)
-  Hashes the essential components of the scheduled plan by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](scheduledworkoutplan/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two scheduled plans aren’t equal.
-- [static func == (ScheduledWorkoutPlan, ScheduledWorkoutPlan) -> Bool](scheduledworkoutplan/==(_:_:).md)
-  Returns a Boolean value that indicates whether two scheduled plans are equal.
-### Default Implementations
-- [Equatable Implementations](scheduledworkoutplan/equatable-implementations.md)
 
 ## Relationships
 

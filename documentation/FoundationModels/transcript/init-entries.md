@@ -11,6 +11,7 @@ Creates a transcript.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -28,6 +29,8 @@ init(entries: some Sequence<Transcript.Entry> = [])
   An entry in a transcript.
 - [Transcript.Segment](transcript/segment.md)
   The types of segments that may be included in a transcript entry.
+- [Transcript.Attachment](transcript/attachment.md)
+  The types of attached content.
 
 
 ---

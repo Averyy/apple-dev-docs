@@ -48,6 +48,7 @@ enum ExpressionType
 - [NSExpression.ExpressionType.block](nsexpression/expressiontype-swift.enum/block.md)
   An expression that uses a Block.
 - [NSExpression.ExpressionType.conditional](nsexpression/expressiontype-swift.enum/conditional.md)
+  A conditional expression that evaluates a predicate to determine which expression to return.
 ### Initializers
 - [init?(rawValue: UInt)](nsexpression/expressiontype-swift.enum/init(rawvalue:).md)
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of merchant ID resources.
+A response containing a list of Apple Pay merchant identifiers registered to your account.
 
 **Availability**:
 - App Store Connect API 3.8+
@@ -24,9 +24,9 @@ object MerchantIdsResponse
 ## See Also
 
 - [object MerchantId](merchantid.md)
-  The data structure that represents a merchant ID resource.
+  An Apple Pay merchant identifier registered to your account, used to associate payment capabilities with your app’s bundle ID.
 - [object MerchantIdResponse](merchantidresponse.md)
-  A response that contains a single merchant ID resource.
+  A response containing a single Apple Pay merchant identifier.
 - [object MerchantIdCreateRequest](merchantidcreaterequest.md)
   The request body you use to create a merchant ID.
 - [object MerchantIdUpdateRequest](merchantidupdaterequest.md)

@@ -7,8 +7,6 @@ The payload that configures a smart card.
 
 **Availability**:
 - macOS 10.12.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,12 +23,12 @@ Specify `com.apple.security.smartcard` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -85,9 +83,9 @@ Specify `com.apple.security.smartcard` as the payload type.
 - `1`: Turns on certificate trust check. A standard validity check is performed but doesn’t include additional revocation checks.
 - `2`: Turns on certificate trust check. A soft revocation check is also performed. Until the certificate is explicitly rejected by CRL/OCSP, it’s considered valid. This setting means that unavailable or unreachable CRL/OCSP allow this check to succeed.
 - `3`: Turns on certificate trust check. A hard revocation check is also performed. Unless CRL/OCSP explicitly says “This certificate is OK,” it’s considered invalid. This option is the most secure.
-- `enforceSmartCard` (boolean): If `true`, a user can only log in or authenticate with a smart card. Available in macOS 10.13.2 and later.
+- `enforceSmartCard` (boolean): If `true`, a user can only log in or authenticate with a smart card. Available: macOS 10.13.2+
 - `oneCardPerUser` (boolean): If `true`, a user can pair with only one smart card, although existing pairings are allowed if already set up.
-- `tokenRemovalAction` (integer): If `1`, the system enables the screen saver when the smart card is removed. Available in macOS 10.13.4 and later.
+- `tokenRemovalAction` (integer): If `1`, the system enables the screen saver when the smart card is removed. Available: macOS 10.13.4+
 - `UserPairing` (boolean): If `false`, users don’t get the pairing dialog, although existing pairings still work.
 
 ## See Also

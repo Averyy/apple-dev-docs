@@ -22,7 +22,7 @@ func setActivePresetRequestWith(_ params: MTRThermostatClusterSetActivePresetReq
 
 #### Discussion
 
-ID
+This command will set the active preset to the provided preset handle.
 
 
 ---

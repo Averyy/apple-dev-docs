@@ -4,12 +4,77 @@
 
 Enhance and expand your knowledge of Apple technologies by exploring the full library of sample code projects.
 
-#### Featured at Wwdc25
+#### Featured at Wwdc26
 
 Explore samples that highlight new APIs featured at this year’s conference.
 
 ## Topics
 
+### WWDC26
+- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
+- [Adopting SwiftData for a Core Data app](../CoreData/adopting-swiftdata-for-a-core-data-app.md)
+  Persist data in your app intuitively with the Swift native persistence framework.
+- [AVCam: Building a camera app](../AVFoundation/avcam-building-a-camera-app.md)
+  Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [Book Tracker: Using Evaluations to evaluate an intelligent feature](../Evaluations/book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md)
+  Measure and improve the quality of your app’s intelligence-powered features using the Evaluations framework.
+- [Build a responsive camera app that launches quickly](../AVFoundation/build-a-responsive-camera-app-that-launches-quickly.md)
+  Build a fast camera launch experience for your iOS and iPadOS apps.
+- [Building a cross-platform web browser](../WebKit/building-a-cross-platform-web-browser.md)
+  Implement a browser on multiple platforms that loads content, manages navigation history, and saves favorite websites, using WebKit for SwiftUI.
+- [Building a handwriting recognition experience with PencilKit](../PencilKit/building-a-handwriting-recognition-experience-with-pencilkit.md)
+  Integrate handwriting recognition into your app to identify written text across multiple languages, and explore path conversion and substrokes to enhance the drawing experience.
+- [Building an audio sequencer to arrange and play clips](../AVFAudio/building-an-audio-sequencer-to-arrange-and-play-clips.md)
+  Synchronize audio loops with a main tempo by creating a real-time clip launcher.
+- [Building and testing a Safari web extension](../SafariServices/building-and-testing-a-safari-web-extension.md)
+  Get started with Safari web extensions by creating one from the ground up, using any code editor.
+- [Composing advanced graphics effects with SwiftUI](../SwiftUI/Composing-advanced-graphics-effects-with-SwiftUI.md)
+  Create compelling visuals in your app by combining graphical effects.
+- [Creating visuals with Music Understanding analysis results](../MusicUnderstanding/create-visuals-using-musicunderstanding-analysis-results.md)
+  Create a multiplatform app that presents analysis results from the Music Understanding framework.
+- [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
+  Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
+- [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
+  Offer In-App Purchases and manage entitlements using signed transactions and status information.
+- [Implementing age assurance and permissions](../DeclaredAgeRange/implementing-age-assurance-and-permissions.md)
+  Create a significant change flow to inform people about important updates in your app and request age-related permissions.
+- [Implementing saliency-based image cropping in iOS and watchOS](../Vision/implementing-saliency-based-image-cropping-in-iOS-and-watchOS.md)
+  Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
+- [Integrating MusicKit into your app](../MusicKit/integrating-musickit-into-your-app.md)
+  Enhance your workouts with Apple Music playback.
+- [Integrating your calendar app with Apple Intelligence](../AppIntents/integrating-your-calendar-app-with-apple-intelligence.md)
+  Adopt calendar schemas so people can create, find, and manage events with Siri.
+- [Integrating your messaging app with Apple Intelligence](../AppIntents/integrating-your-messaging-app-with-apple-intelligence.md)
+  Adopt message schemas so people can send messages and manage conversations with Siri.
+- [Integrating your music app with Apple Intelligence](../AppIntents/integrating-your-music-app-with-apple-intelligence.md)
+  Adopt the audio and clock schemas so people can play music and set alarms with Siri.
+- [Integrating your photo app with Apple Intelligence](../AppIntents/integrating-your-photo-app-with-apple-intelligence.md)
+  Adopt photo schemas so people can edit and manage photos with Siri.
+- [Making a card game with drag, drop, and reordering in SwiftUI](../SwiftUI/Making-a-card-game-with-drag-drop-and-reordering-in-swiftui.md)
+  Move cards between positions in a card game using drag, drop, and reordering modifiers.
+- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
+- [Mixing spatial music](../RealityKit/mixing-spatial-music.md)
+  Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
+- [Origami: Crafting a dynamic tutorial for Apple Intelligence](../FoundationModels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
+  Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
+- [Processing Apple Immersive Video with foveation](../ImmersiveMediaSupport/processing-apple-immersive-video-with-foveation.md)
+  Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
+- [Segmenting objects using taps, scribbles or rectangles](../Vision/segmenting-objects-using-taps-scribbles-or-rectangles.md)
+  Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
+- [Supporting Center Stage front camera in your iOS app](../AVFoundation/supporting-center-stage-front-camera-in-your-ios-app.md)
+  Enable Center Stage for photos and videos on the iPhone front camera.
+- [Track performance by app state using MetricKit](../MetricKit/track-performance-by-app-state-using-metrickit.md)
+  Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
+- [Tracking heart rate zones for workouts](../HealthKit/tracking-heart-rate-zones-for-workouts.md)
+  Start a workout on iOS or watchOS and track and display heart rate zones.
+- [Training a neural network to render irradiance in real time](../Metal/training-a-neural-network-to-render-irradiance-in-real-time.md)
+  Train a small neural network on the GPU to approximate diffuse irradiance, and compare the result against Monte Carlo integration and a pre-trained ML model.
+- [Wishlist: Planning travel in a SwiftUI app](../SwiftUI/wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
+- [Working with content from your Mac app using Spatial Preview](../SpatialPreview/working-with-content-from-your-mac-app-using-spatial-preview.md)
+  Send and update documents, and work with 3D content live from your macOS app to a visionOS device through the Spatial Preview framework.
 ### Accelerate
 - [Adding a bokeh effect to images](../Accelerate/adding-a-bokeh-effect-to-images.md)
   Simulate a bokeh effect by applying dilation.
@@ -116,12 +181,12 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Using JSON with custom types](../Foundation/using-json-with-custom-types.md)
   Encode and decode JSON data, regardless of its structure, using Swift’s JSON support.
 ### App Intents and SiriKit
-- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
 - [Accelerating app interactions with App Intents](../AppIntents/AcceleratingAppInteractionsWithAppIntents.md)
   Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
 - [Adding Shortcuts for Wind Down](../SiriKit/adding-shortcuts-for-wind-down.md)
   Reveal your app’s shortcuts inside the Health app.
+- [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
 - [Booking Rides with SiriKit](../SiriKit/booking-rides-with-sirikit.md)
   Add Intents extensions to your app to handle requests to book rides using Siri and Maps.
 - [Defining your app’s Focus filter](../AppIntents/defining-your-app-s-focus-filter.md)
@@ -132,8 +197,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add an Intent Extension to your app that handles requests to control workouts with Siri.
 - [Integrating Your App with Siri Event Suggestions](../SiriKit/integrating-your-app-with-siri-event-suggestions.md)
   Donate reservations and provide quick access to event details throughout the system.
-- [Making your app’s functionality available to Siri](../AppIntents/making-your-app-s-functionality-available-to-siri.md)
-  Add app intent schemas to your app so Siri can complete requests, and integrate your app with Apple Intelligence, Spotlight, and other system experiences.
 - [Managing Audio with SiriKit](../SiriKit/managing-audio-with-sirikit.md)
   Control audio playback and handle requests to add media using SiriKit Media Intents.
 - [Providing Hands-Free App Control with Intents](../SiriKit/providing-hands-free-app-control-with-intents.md)
@@ -177,7 +240,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Build Mail App Extensions](../MailKit/build-mail-app-extensions.md)
   Create app extensions that block content, perform message and composing actions, and help message security.
 - [Checking IDs with the Verifier API](../ProximityReader/checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license information without any additional hardware.
+  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
 - [Configuring a home automation device](../HomeKit/configuring-a-home-automation-device.md)
   Give users a familiar experience when they manage HomeKit accessories.
 - [Configuring the PencilKit tool picker](../PencilKit/configuring-the-pencilkit-tool-picker.md)
@@ -369,7 +432,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Playing Haptics on Game Controllers](../CoreHaptics/playing-haptics-on-game-controllers.md)
   Add haptic feedback to supported game controllers by using Core Haptics.
 - [Recognizing speech in live audio](../Speech/recognizing-speech-in-live-audio.md)
-  Perform speech recognition on audio coming from the microphone of an iOS device.
+  Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [ShazamKit Dance Finder with Managed Session](../ShazamKit/shazamkit-dance-finder-with-managed-session.md)
   Find a video of dance moves for a specific song by matching the audio to a custom catalog, and show a history of recognized songs.
 - [Transferring Data Between Bluetooth Low Energy Devices](../CoreBluetooth/transferring-data-between-bluetooth-low-energy-devices.md)
@@ -378,7 +441,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Generate continuous and transient haptic patterns in response to user touch.
 - [Using Core Bluetooth Classic](../CoreBluetooth/using-core-bluetooth-classic.md)
   Discover and communicate with a Bluetooth Classic device by using the Core Bluetooth APIs.
-- [Using MusicKit to Integrate with Apple Music](../musickit/using_musickit_to_integrate_with_apple_music.md)
+- [Using MusicKit to integrate with Apple Music](../MusicKit/using-musickit-to-integrate-with-apple-music.md)
   Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 - [Using voice processing](../AVFAudio/using-voice-processing.md)
   Add voice-processing capabilities to your app by using audio engine.
@@ -398,10 +461,10 @@ Explore samples that highlight new APIs featured at this year’s conference.
 ### AVFoundation
 - [Adding a display mask rectangle metadata track to a movie file](../AVFoundation/adding-a-display-mask-rectangle-metadata-track-to-a-movie-file.md)
   Show a specific area of a video by using timed display mask rectangle metadata.
-- [AVCamBarcode: detecting barcodes and faces](../AVFoundation/avcambarcode-detecting-barcodes-and-faces.md)
-  Identify machine readable codes or faces by using the camera.
 - [AVCam: Building a camera app](../AVFoundation/avcam-building-a-camera-app.md)
   Capture photos and record video using the front and rear iPhone and iPad cameras.
+- [AVCamBarcode: detecting barcodes and faces](../AVFoundation/avcambarcode-detecting-barcodes-and-faces.md)
+  Identify machine readable codes or faces by using the camera.
 - [AVCamFilter: Applying filters to a capture stream](../AVFoundation/avcamfilter-applying-filters-to-a-capture-stream.md)
   Render a capture stream with rose-colored filtering and depth effects.
 - [AVMultiCamPiP: Capturing from Multiple Cameras](../AVFoundation/avmulticampip-capturing-from-multiple-cameras.md)
@@ -781,8 +844,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - [Integrating virtual objects with your environment](../RealityKit/integrating-virtual-objects-with-your-environment.md)
   Create an immersive game using native anchor support, environmental blending, model manipulation, and mesh instance duplication.
-- [Loading entities with ShaderGraph materials](../RealityComposerPro/loading-entities-with-shadergraph-materials.md)
-  Bring entities that contain materials created with Reality Composer Pro for use in your visionOS app.
 - [Presenting an artist’s scene](../RealityKit/presenting-an-artists-scene.md)
   Display a scene from Reality Composer Pro in visionOS.
 - [Presenting images in RealityKit](../RealityKit/presenting-images-in-realitykit.md)
@@ -816,8 +877,6 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.
 - [Generating a Promotional Offer Signature on the Server](../StoreKit/generating-a-promotional-offer-signature-on-the-server.md)
   Generate a signature using your private key and lightweight cryptography libraries.
-- [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
-  Offer In-App Purchases and manage entitlements using signed transactions and status information.
 - [Offering, completing, and restoring in-app purchases](../StoreKit/offering-completing-and-restoring-in-app-purchases.md)
   Fetch, display, purchase, validate, and finish transactions in your app.
 - [Offering media for sale in your app](../StoreKit/offering-media-for-sale-in-your-app.md)
@@ -953,6 +1012,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Process keyboard-related data from a human interface device and dispatch events to the system.
 - [Handling Stylus Input from a Human Interface Device](../HIDDriverKit/handling-stylus-input-from-a-human-interface-device.md)
   Process stylus-related input from a human interface device and dispatch events to the system.
+- [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
+  Offer In-App Purchases and manage entitlements using signed transactions and status information.
 - [Implementing netcat with Network Framework](../Network/implementing-netcat-with-network-framework.md)
   Build a simple `netcat` tool that establishes network connections and transfers data.
 - [Monitoring System Events with Endpoint Security](../EndpointSecurity/monitoring-system-events-with-endpoint-security.md)
@@ -1064,7 +1125,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Enhancing your iPad app with pointer interactions](../UIKit/enhancing-your-ipad-app-with-pointer-interactions.md)
   Provide a great user experience with pointing devices, by incorporating pointer content effects and shape customizations.
 - [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
-  Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
+  Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [Illustrating the force, altitude, and azimuth properties of touch input](../UIKit/illustrating-the-force-altitude-and-azimuth-properties-of-touch-input.md)
   Capture Apple Pencil and touch input in views.
 - [Implementing modern collection views](../UIKit/implementing-modern-collection-views.md)
@@ -1159,6 +1220,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Substitute a person’s hands with custom models in a fully immersive space.
 - [Applying mesh to real-world surroundings](../visionOS/applying-mesh-to-real-world-surroundings.md)
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
+- [Associating a window with an immersive space](../visionOS/associating-a-window-with-an-immersive-space.md)
+  Tightly couple a window with an immersive space for persistent controls.
 - [Authoring Apple Immersive Video](../ImmersiveMediaSupport/authoring-apple-immersive-video.md)
   Prepare and package immersive video content for delivery.
 - [BOT-anist](../visionOS/BOT-anist.md)
@@ -1203,12 +1266,16 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Show video from devices connected with the Developer Strap in your visionOS app.
 - [Drawing in the air and on surfaces with a spatial stylus](../visionOS/drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
+- [Embedding controls in an immersive space](../visionOS/embedding-controls-in-an-immersive-space.md)
+  Keep controls visible throughout an immersive experience by displaying them in a window or a view attachment.
 - [Enabling video reflections in an immersive environment](../visionOS/enabling-video-reflections-in-an-immersive-environment.md)
   Create a more immersive experience by adding video reflections in a custom environment.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
-  Find and track real-world objects in visionOS using reference objects trained with Create ML.
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
 - [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
+- [Handling the window life cycle with multiple scenes](../visionOS/handling-the-window-life-cycle-with-multiple-scenes.md)
+  Track scene state across different window types.
 - [Happy Beam](../visionOS/happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
 - [Hello World](../visionOS/World.md)

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the Advanced App Clip Localizations resource.
+The localized text and action button label for an App Clip advanced experience in a specific language.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -30,15 +30,15 @@ object AppClipAdvancedExperienceLocalization
 ## See Also
 
 - [object AppClipAdvancedExperience](appclipadvancedexperience.md)
-  The data structure that represents an Advanced App Clip Experiences resource.
+  A configured trigger for an App Clip experience, associated with a physical location, NFC tag, QR code, or App Store link.
 - [object AppClipAdvancedExperienceResponse](appclipadvancedexperienceresponse.md)
-  A response that contains a single Advanced App Clip Experiences resource.
+  A response containing a single App Clip advanced experience configuration.
 - [object AppClipAdvancedExperienceCreateRequest](appclipadvancedexperiencecreaterequest.md)
   The request body you use to create an advanced App Clip experience.
 - [object AppClipAdvancedExperienceUpdateRequest](appclipadvancedexperienceupdaterequest.md)
   The request body you use to update an advanced App Clip experience.
 - [type AppClipAdvancedExperienceLanguage](appclipadvancedexperiencelanguage.md)
-  The data structure that represents the language you configure for an advanced App Clip experience.
+  A string value identifying the language for an App Clip advanced experience localization.
 
 
 ---

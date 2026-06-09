@@ -23,6 +23,11 @@ enum MarkdownSourcePositionAttribute
 
 ## Topics
 
+### Encoding and Decoding
+- [static let name: String](attributescopes/foundationattributes/markdownsourcepositionattribute/name.md)
+  The name of the attribute, for use in encoding and decoding.
+- [AttributeScopes.FoundationAttributes.MarkdownSourcePositionAttribute.Value](attributescopes/foundationattributes/markdownsourcepositionattribute/value.md)
+  The value type of a Markdown source position attribute.
 ### Supporting Types
 - [AttributedString.MarkdownSourcePosition](attributedstring/markdownsourceposition.md)
   The position of attributed string text in its original Markdown source string.

@@ -32,6 +32,7 @@ protocol PersistentlyIdentifiable
 - [AppEntity](appentity.md)
 - [AppEnum](appenum.md)
 - [AppIntent](appintent.md)
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AppValue](appvalue.md)
 - [AssistantEntity](assistantentity.md)
 - [AssistantEnum](assistantenum.md)
@@ -43,6 +44,7 @@ protocol PersistentlyIdentifiable
 - [AudioRecordingIntent](audiorecordingintent.md)
 - [AudioStartingIntent](audiostartingintent.md)
 - [CameraCaptureIntent](cameracaptureintent.md)
+- [CancellableIntent](cancellableintent.md)
 - [ControlConfigurationIntent](controlconfigurationintent.md)
 - [CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
 - [DeleteIntent](deleteintent.md)
@@ -54,10 +56,13 @@ protocol PersistentlyIdentifiable
 - [FileEntity](fileentity.md)
 - [ForegroundContinuableIntent](foregroundcontinuableintent.md)
 - [IndexedEntity](indexedentity.md)
+- [IndexedEntityQuery](indexedentityquery.md)
 - [IntentValueQuery](intentvaluequery.md)
 - [LiveActivityIntent](liveactivityintent.md)
 - [LiveActivityStartingIntent](liveactivitystartingintent.md)
+- [LongRunningIntent](longrunningintent.md)
 - [OpenIntent](openintent.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
 - [PauseWorkoutIntent](pauseworkoutintent.md)
 - [PlayVideoIntent](playvideointent.md)
 - [PredictableIntent](predictableintent.md)
@@ -70,6 +75,7 @@ protocol PersistentlyIdentifiable
 - [SnippetIntent](snippetintent.md)
 - [StartDiveIntent](startdiveintent.md)
 - [StartWorkoutIntent](startworkoutintent.md)
+- [SyncableEntity](syncableentity.md)
 - [SystemIntent](systemintent.md)
 - [TargetContentProvidingIntent](targetcontentprovidingintent.md)
 - [TransientAppEntity](transientappentity.md)
@@ -84,7 +90,9 @@ protocol PersistentlyIdentifiable
 ### Conforming Types
 - [EmptySnippetIntent](emptysnippetintent.md)
 - [OpenURLIntent](openurlintent.md)
+- [RunSystemShortcutIntent](runsystemshortcutintent.md)
 - [StringSearchScope](stringsearchscope.md)
+- [SystemShortcut](systemshortcut.md)
 - [UniqueAppEntityProvider](uniqueappentityprovider.md)
 - [VideoCategory](videocategory.md)
 
@@ -96,6 +104,15 @@ protocol PersistentlyIdentifiable
   An interface for converting between an entity’s identifier and its string representation.
 - [struct FileEntityIdentifier](fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
+- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+  A type-safe wrapper you use to specify different local and stable identifiers for an entity.
+- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+  A unique identifier for an app entity instance within an application.
+- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+  A unique identifier for an app entity or transient app entity type within an application bundle.
+- [protocol AppEntityAnnotatable](appentityannotatable.md)
+  An interface that system types adopt and use to manage their relationship to app entities.
+- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

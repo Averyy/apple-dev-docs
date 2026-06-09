@@ -9,7 +9,6 @@ A type that contains the response information from a successful mobile driver’
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 

@@ -16,7 +16,7 @@ glyphText?: string;
 
 #### Discussion
 
-The text to display in the balloon instead of a glyph image. The default value is `""` (empty string). There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
+The text to display in the balloon instead of a glyph image. The default value is `null`. There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
 
 If you specify both a [`glyphImage`](markerannotationconstructoroptions/glyphimage.md) and [`glyphText`](markerannotationconstructoroptions/glyphtext.md), MapKit JS ignores the glyph image and displays the glyph text.
 

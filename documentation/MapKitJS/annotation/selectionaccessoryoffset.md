@@ -11,8 +11,8 @@ An offset that changes the selection accessory’s default anchor point.
 ## Declaration
 
 ```swift
-get selectionAccessoryOffset(): DOMPoint | undefined;
-set selectionAccessoryOffset(value: DOMPoint | undefined);
+get selectionAccessoryOffset(): DOMPoint | null;
+set selectionAccessoryOffset(value: DOMPoint | null);
 ```
 
 ## See Also

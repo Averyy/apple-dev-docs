@@ -48,7 +48,7 @@ print(numbers.prefix(10))
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](string/subscript(_:)-4h7s3.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
 - [func prefix(through: Self.Index) -> Self.SubSequence](string/prefix(through:).md)
   Returns a subsequence from the start of the collection through the specified position.
 - [func prefix(upTo: Self.Index) -> Self.SubSequence](string/prefix(upto:).md)

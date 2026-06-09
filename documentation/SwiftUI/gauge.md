@@ -16,6 +16,7 @@ A view that shows a value within a range.
 ## Declaration
 
 ```swift
+nonisolated
 struct Gauge<Label, CurrentValueLabel, BoundsLabel, MarkedValueLabels> where Label : View, CurrentValueLabel : View, BoundsLabel : View, MarkedValueLabels : View
 ```
 

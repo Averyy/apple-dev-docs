@@ -93,6 +93,9 @@ func testPressingActionButton() throws {
 ### Deprecated
 - [init()](xcuidevice/init.md)
   Creates an instance that represents the current device.
+### Instance Properties
+- [var voiceOverService: XCUIVoiceOverService](xcuidevice/voiceoverservice.md)
+  Provides access to VoiceOver for UI testing.
 
 ## Relationships
 

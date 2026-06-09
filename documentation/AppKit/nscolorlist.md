@@ -58,6 +58,8 @@ A color list manages a list of [`NSColor`](nscolor.md) objects, each of which ha
 ### Notifications
 - [class let didChangeNotification: NSNotification.Name](nscolorlist/didchangenotification.md)
   Posted whenever a color list changes.
+### Structures
+- [NSColorList.DidChangeMessage](nscolorlist/didchangemessage.md)
 ### Initializers
 - [init?(coder: NSCoder)](nscolorlist/init(coder:).md)
 

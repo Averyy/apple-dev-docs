@@ -9,7 +9,6 @@ Creates the most suitable options for rendering on a device with the specified t
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration
@@ -21,6 +20,11 @@ init(traitCollection: UITraitCollection)
 ## Parameters
 
 - `traitCollection`: The trait collection to use.
+
+## See Also
+
+- [init(darkUserInterfaceStyle: Bool, layoutRightToLeft: Bool)](renderingoptions/init(darkuserinterfacestyle:layoutrighttoleft:).md)
+  Creates a new rendering options value.
 
 
 ---

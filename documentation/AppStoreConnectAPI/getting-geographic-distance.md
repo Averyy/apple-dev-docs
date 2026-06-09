@@ -16,8 +16,7 @@ number geoLatency(object $request1, object $request2)
 
 ##### Parameters
 
-- **`request1`**: A match request to compare with `request2`.
-- **`request2`**: A match request to compare with `request1`.
+-`request1`: A match request to compare with `request2`. -`request2`: A match request to compare with `request1`.
 
 ##### Return Value
 

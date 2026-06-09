@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The height, in pixels, of the input color texture for the frame interpolator.
+The height, in pixels, of the input depth and motion texture for the frame interpolator.
 
 **Availability**:
 - iOS 26.0+

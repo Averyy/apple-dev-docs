@@ -18,7 +18,7 @@ Creates a chart composed of a series of marks.
 
 ```swift
 nonisolated
-init<Data, ID, C>(_ data: Data, id: KeyPath<Data.Element, ID>, @ChartContentBuilder content: @escaping (Data.Element) -> C) where Content == ForEach<Data, ID, C>, Data : RandomAccessCollection, ID : Hashable, C : ChartContent
+init<Data, ID, C>(_ data: Data, id: KeyPath<Data.Element, ID>, @ContentBuilder content: @escaping (Data.Element) -> C) where Content == ForEach<Data, ID, C>, Data : RandomAccessCollection, ID : Hashable, C : ChartContent
 ```
 
 #### Discussion

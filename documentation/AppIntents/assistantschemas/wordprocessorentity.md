@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe text documents.
 protocol WordProcessorEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making word processor actions available to Siri and Apple Intelligence](making-word-processor-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -41,15 +37,6 @@ protocol WordProcessorEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/document.md)
-  The app entity describes a text document.
-- [var page: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/page.md)
-  The app entity describes a page in a text document.
-- [var template: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/template.md)
-  The app entity describes a text document template.
 
 
 ---

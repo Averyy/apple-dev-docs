@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The supported PaperKIt features on this canvas.
+The supported PaperKit features on this canvas.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,15 @@ The supported PaperKIt features on this canvas.
 @MainActor
 @preconcurrency final let supportedFeatureSet: FeatureSet
 ```
+
+## See Also
+
+- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
+  The paper data that this view controller displays.
+- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+  The content that markup appears on top of.
+- [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
+  The content that markup appears on top of.
 
 
 ---

@@ -52,11 +52,15 @@ The accelerometer measures the sum of two acceleration vectors: gravity and user
   The location of the sensors that compute the device-motion data.
 - [CMDeviceMotion.SensorLocation](cmdevicemotion/sensorlocation-swift.enum.md)
   Defines the device’s sensor locations.
+### Instance Properties
+- [var headingAccuracy: Double](cmdevicemotion/headingaccuracy.md)
 
 ## Relationships
 
 ### Inherits From
 - [CMLogItem](cmlogitem.md)
+### Inherited By
+- [CMRecordedDeviceMotion](cmrecordeddevicemotion.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

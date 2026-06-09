@@ -22,6 +22,7 @@ Use the [`kCVImageBufferTransferFunctionKey`](kcvimagebuffertransferfunctionkey.
 - [let kCVImageBufferTransferFunction_SMPTE_ST_428_1: CFString](kcvimagebuffertransferfunction_smpte_st_428_1.md)
 - [let kCVImageBufferTransferFunction_ITU_R_2100_HLG: CFString](kcvimagebuffertransferfunction_itu_r_2100_hlg.md)
 - [let kCVImageBufferTransferFunction_SMPTE_ST_2084_PQ: CFString](kcvimagebuffertransferfunction_smpte_st_2084_pq.md)
+- [let kCVImageBufferLogTransferFunction_AppleLog2: CFString](kcvimagebufferlogtransferfunction_applelog2.md)
 
 ## See Also
 
@@ -45,6 +46,12 @@ Use the [`kCVImageBufferTransferFunctionKey`](kcvimagebuffertransferfunctionkey.
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
 - [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 
 ---

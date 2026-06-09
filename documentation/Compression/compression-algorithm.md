@@ -24,14 +24,14 @@ struct compression_algorithm
 
 Choose an algorithm according to the following guidelines:
 
-- If speed and compression ratio are important, use [`COMPRESSION_LZFSE`](compression_lzfse.md).
+- If speed and compression ratio are important, use [`COMPRESSION_LZMESH`](compression_lzmesh.md).
 - If you require interoperability with non-Apple devices, use [`COMPRESSION_ZLIB`](compression_zlib.md).
 - If speed is critical, and you’re willing to sacrifice compression ratio to achieve it, use [`COMPRESSION_LZ4`](compression_lz4.md).
-- If compression ratio is critical, and you’re willing to sacrifice speed to achieve it, use [`COMPRESSION_LZMA`](compression_lzma.md). Note that [`COMPRESSION_LZMA`](compression_lzma.md) is an order of magnitude slower for both compression and decompression than other choices.
+- If compression ratio is critical, and you can sacrifice speed to achieve it, use [`COMPRESSION_LZRAVEN`](compression_lzraven.md). Note that [`COMPRESSION_LZRAVEN`](compression_lzraven.md) is an order of magnitude slower for both compression and decompression than other choices.
 
-[`COMPRESSION_LZFSE`](compression_lzfse.md) is faster than [`COMPRESSION_ZLIB`](compression_zlib.md) and generally achieves a better compression ratio. However, it’s slower than [`COMPRESSION_LZ4`](compression_lz4.md) and doesn’t compress as well as [`COMPRESSION_LZMA`](compression_lzma.md).
+[`COMPRESSION_LZMESH`](compression_lzmesh.md) is faster than [`COMPRESSION_ZLIB`](compression_zlib.md) and generally achieves a better compression ratio. However, it’s slower than [`COMPRESSION_LZ4`](compression_lz4.md) and doesn’t compress as well as [`COMPRESSION_LZRAVEN`](compression_lzraven.md).
 
-[`COMPRESSION_LZBITMAP`](compression_lzbitmap.md) provides a compression-ratio and performance that’s between [`COMPRESSION_LZ4`](compression_lz4.md) and [`COMPRESSION_LZFSE`](compression_lzfse.md). When compression ratio and performance are equally important, use [`COMPRESSION_LZFSE`](compression_lzfse.md) to favor compression ratio and [`COMPRESSION_LZBITMAP`](compression_lzbitmap.md) to favor performance.
+[`COMPRESSION_LZBITMAP`](compression_lzbitmap.md) provides a compression-ratio that’s between [`COMPRESSION_LZ4`](compression_lz4.md) and [`COMPRESSION_LZMESH`](compression_lzmesh.md). When compression ratio and performance are equally important, use [`COMPRESSION_LZMESH`](compression_lzmesh.md) to favor compression ratio and [`COMPRESSION_LZBITMAP`](compression_lzbitmap.md) to favor performance.
 
 ## Topics
 
@@ -50,6 +50,10 @@ Choose an algorithm according to the following guidelines:
   The Brotli compression algorithm, which is recommended for text compression.
 - [var COMPRESSION_LZBITMAP: compression_algorithm](compression_lzbitmap.md)
   The LZBITMAP compression algorithm, which is designed to exploit the vector instruction set of current CPUs.
+- [var COMPRESSION_LZMESH: compression_algorithm](compression_lzmesh.md)
+  The LZMESH compression algorithm, which is recommended for fast, general-purpose compression on Apple platforms.
+- [var COMPRESSION_LZRAVEN: compression_algorithm](compression_lzraven.md)
+  The LZRAVEN compression algorithm, which is recommended for high-compression ratio with fast decoding on Apple platforms.
 ### Initializers
 - [init(UInt32)](compression_algorithm/init(_:).md)
   Creates a new constant from the given raw value.

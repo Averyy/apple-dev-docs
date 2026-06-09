@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The archived per-territory schedule attributes within an app event, representing previously active territory schedules.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -22,6 +24,7 @@ object AppEvent.Attributes.ArchivedTerritorySchedules
 ## See Also
 
 - [object AppEvent.Attributes.TerritorySchedules](appevent/attributes-data.dictionary/territoryschedules-data.dictionary.md)
+  The per-territory schedule attributes within an app event, defining the start, end, publish dates, and targeted territories.
 
 
 ---

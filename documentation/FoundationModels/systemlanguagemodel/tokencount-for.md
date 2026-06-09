@@ -19,6 +19,10 @@ nonisolated
 (nonsending) final func tokenCount(for instructions: Instructions) async throws -> Int
 ```
 
+## Mentions
+
+- [Managing the context window](managing-the-context-window.md)
+
 #### Return Value
 
 The token count for the instructions.

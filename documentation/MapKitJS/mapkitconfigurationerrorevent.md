@@ -11,7 +11,7 @@ An event that represents a configuration error.
 ## Declaration
 
 ```swift
-class MapKitConfigurationErrorEvent extends MapKitEvent
+class MapKitConfigurationErrorEvent extends Event
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ The event’s `status` property indicates the configuration error status.
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

@@ -16,6 +16,7 @@ A tab bar style that adapts to each platform.
 ## Declaration
 
 ```swift
+nonisolated
 struct SidebarAdaptableTabViewStyle
 ```
 

@@ -17,11 +17,11 @@ let dataProvider: (any DataProvider)?
 
 ## See Also
 
-- [var code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
+- [let code: ARKitSession.Error.Code](arkitsession/error/code-swift.property.md)
   The error code for an ARKit session error.
 - [ARKitSession.Error.Code](arkitsession/error/code-swift.enum.md)
   The error codes for ARKit sessions.
-- [var errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](arkitsession/error/errordescription.md)
   A localized message that describes the error that occurred.
 
 

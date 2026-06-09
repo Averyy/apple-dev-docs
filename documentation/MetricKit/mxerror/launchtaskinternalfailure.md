@@ -19,6 +19,7 @@ static var launchTaskInternalFailure: MXError.Code { get }
 
 ## See Also
 
+- [static var errorDomain: String](mxerror/errordomain.md)
 - [static var launchTaskDuplicated: MXError.Code](mxerror/launchtaskduplicated.md)
   A task with the same ID has already been started.
 - [static var launchTaskInvalidID: MXError.Code](mxerror/launchtaskinvalidid.md)

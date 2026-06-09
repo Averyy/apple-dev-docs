@@ -22,8 +22,6 @@ var targetQuantity: HKQuantity { get }
 
 - [var target: Measurement<UnitSpeed>](speedthresholdalert/target.md)
   A speed measurement that represents the target threshold.
-- [var metric: WorkoutAlertMetric](speedthresholdalert/metric.md)
-  The metric used to measure the speed.
 
 
 ---

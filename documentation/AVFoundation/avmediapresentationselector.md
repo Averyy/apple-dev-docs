@@ -26,14 +26,14 @@ Subclasses of this type that are used from Swift must fulfill the requirements o
 
 ## Topics
 
-### Instance Properties
+### Identifying the selector
 - [var identifier: String](avmediapresentationselector/identifier.md)
   Provides the authored identifier for the selector.
-- [var settings: [AVMediaPresentationSetting]](avmediapresentationselector/settings.md)
-  Provides selectable mutually exclusive settings for the selector.
-### Instance Methods
 - [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationselector/displayname(forlocaleidentifier:).md)
   Returns the display name for the selector that best matches the specified locale identifier.
+### Accessing settings
+- [var settings: [AVMediaPresentationSetting]](avmediapresentationselector/settings.md)
+  Provides selectable mutually exclusive settings for the selector.
 
 ## Relationships
 

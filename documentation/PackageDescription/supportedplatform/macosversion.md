@@ -38,6 +38,8 @@ struct MacOSVersion
   The value that represents macOS 15.0.
 - [static let v26: SupportedPlatform.MacOSVersion](supportedplatform/macosversion/v26.md)
   The value that represents macOS 26.0.
+- [static let v27: SupportedPlatform.MacOSVersion](supportedplatform/macosversion/v27.md)
+  The value that represents macOS 27.0.
 
 ## Relationships
 

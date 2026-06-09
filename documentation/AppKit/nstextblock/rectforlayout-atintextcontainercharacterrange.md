@@ -6,7 +6,7 @@
 Returns the rectangle within which glyphs should be laid out for the specified arguments.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

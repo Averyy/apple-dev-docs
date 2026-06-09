@@ -37,7 +37,7 @@ For more information about generating tokens, see [`Generating Tokens for API Re
 
 ##### Identify Your App Id and Build Id
 
-To retrieve power and performance metrics for your app, you need to know its App ID. Use the [`List Apps`](get-v1-apps.md) endpoint to get a list of your apps and metadata about them, including App IDs.
+To retrieve power and performance metrics for your app, you need to know its App ID. Use the [`List apps`](get-v1-apps.md) endpoint to get a list of your apps and metadata about them, including App IDs.
 
 Create a JWT, then use that token with `curl` to request a list of your apps:
 
@@ -46,7 +46,7 @@ TOKEN=$(python3 generate-token.py $ISSUER_ID $KEY_ID $KEY_FILE_PATH)
 curl -H "Authorization: Bearer ${TOKEN}" "https://api.appstoreconnect.apple.com/v1/apps"
 ```
 
-Retrieving diagnostic logs, or build-specific metrics, requires a build ID. Use [`List All Builds of an App`](get-v1-apps-_id_-builds.md) to get a list of the builds.
+Retrieving diagnostic logs, or build-specific metrics, requires a build ID. Use [`List all builds of an app`](get-v1-apps-_id_-builds.md) to get a list of the builds.
 
 Use the following `curl` command to request a list of builds for an App:
 
@@ -104,13 +104,13 @@ Usage:
 
 ## See Also
 
-- [Get Power and Performance Metrics for an App](get-v1-apps-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for an app](get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
-- [Get Power and Performance Metrics for a Build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [List All Diagnostic Signatures for a Build](get-v1-builds-_id_-diagnosticsignatures.md)
+- [List all diagnostic signatures for a build](get-v1-builds-_id_-diagnosticsignatures.md)
   List the aggregate backtrace signatures captured for a specific build.
-- [Download Logs for a Diagnostic Signature](get-v1-diagnosticsignatures-_id_-logs.md)
+- [Download logs for a diagnostic signature](get-v1-diagnosticsignatures-_id_-logs.md)
   Get the anonymized backtrace logs associated with a specific diagnostic signature.
 
 

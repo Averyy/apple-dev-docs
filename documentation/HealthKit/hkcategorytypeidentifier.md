@@ -61,6 +61,10 @@ For the complete list of quantity type identifiers, see Activity.
   A category type that represents the results from a home pregnancy test.
 - [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
   A category type that records lactation.
+- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+  An identifier for samples that record a person’s menopausal state.
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+  An identifier for samples that record bleeding after menopause.
 ### Hearing
 - [static let environmentalAudioExposureEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/environmentalaudioexposureevent.md)
   A category sample type that records exposure to potentially damaging sounds from the environment.
@@ -98,8 +102,12 @@ For the complete list of quantity type identifiers, see Activity.
 ### Initializers
 - [init(rawValue: String)](hkcategorytypeidentifier/init(rawvalue:).md)
   Returns a newly initialized category type identifier using the provided string.
-### Type Properties
+### Type Properties - generated
+- [static let bleedingAfterMenopause: HKCategoryTypeIdentifier](hkcategorytypeidentifier/bleedingaftermenopause.md)
+  An identifier for samples that record bleeding after menopause.
 - [static let hypertensionEvent: HKCategoryTypeIdentifier](hkcategorytypeidentifier/hypertensionevent.md)
+- [static let menopausalState: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menopausalstate.md)
+  An identifier for samples that record a person’s menopausal state.
 
 ## Relationships
 
@@ -112,6 +120,8 @@ For the complete list of quantity type identifiers, see Activity.
 
 ## See Also
 
+- [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](hkobjecttype/categorytype(foridentifier:).md)
+  Returns the shared category type for the provided identifier.
 - [class func categoryType(forIdentifier: HKCategoryTypeIdentifier) -> HKCategoryType?](hkobjecttype/categorytype(foridentifier:).md)
   Returns the shared category type for the provided identifier.
 

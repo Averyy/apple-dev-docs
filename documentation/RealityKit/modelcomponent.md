@@ -86,6 +86,8 @@ Use other components like [`CollisionComponent`](collisioncomponent.md), [`Physi
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
+- [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 - [class MeshResource](meshresource.md)
   A high-level representation of a collection of vertices and edges that define a shape.
 - [class ModelEntity](modelentity.md)

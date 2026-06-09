@@ -3,9 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+Request limits for the managed location. Each entry maps a limit name to its current integer value.
 
 ## Declaration
 
@@ -15,8 +13,9 @@ object ServiceConfigResponse.Limits
 
 ## Mentions
 
-- [Managing Assets](managing-assets.md)
-- [Managing Users](managing-users.md)
+- [Managing assets](managing-assets.md)
+- [Managing subscriptions](managing-subscriptions.md)
+- [Managing users](managing-users.md)
 
 ## Properties
 

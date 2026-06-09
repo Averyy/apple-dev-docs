@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-A rectangle shape that is aligned inside the frame of the view containing it. Each of the corners can be customized in style to be square, rounded, or concentric to the container shape.
+Creates a rectangle with individual styles for each corner.
 
 **Availability**:
 - iOS 26.0+
@@ -26,6 +26,11 @@ static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Co
 - `topTrailingCorner`: The top trailing corner style.
 - `bottomLeadingCorner`: The bottom leading corner style.
 - `bottomTrailingCorner`: The bottom trailing corner style.
+
+## See Also
+
+- [init(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style)](concentricrectangle/init(topleadingcorner:toptrailingcorner:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with individual corner styles on all four corners.
 
 
 ---

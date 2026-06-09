@@ -11,6 +11,7 @@ The state of the transition provided to the delegate object.
 ## Declaration
 
 ```swift
+@preconcurrency
 struct TransitionContext
 ```
 
@@ -22,24 +23,26 @@ Not all transitions are `.completed`, instead they are `.reversed` back to the `
 
 ## Topics
 
-### Instance Properties
+### Inspecting the transition
 - [let fromExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/fromexperience.md)
   The experience of the `AVExperienceController` before the transition was initiated.
-- [let status: AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.property.md)
-  The status of the transition.
 - [let toExperience: AVExperienceController.Experience](avexperiencecontroller/transitioncontext/toexperience.md)
   The experience to which the `AVExperienceController` has been requested to transition to.
-### Enumerations
-- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
+- [let status: AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.property.md)
+  The status of the transition.
+### Understanding transition results
 - [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
   Describes the status of a transition.
 - [AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transitioncontext/transitionresult.md)
   Describes the result of a transition.
+- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

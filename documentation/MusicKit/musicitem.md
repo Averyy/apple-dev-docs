@@ -49,6 +49,7 @@ protocol MusicItem : Sendable
 - [MusicPersonalRecommendationItem](musicpersonalrecommendationitem.md)
 - [MusicPlaylistAddable](musicplaylistaddable.md)
 - [MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
+- [PickableMusicItem](pickablemusicitem.md)
 - [PlayableMusicItem](playablemusicitem.md)
 ### Conforming Types
 - [Album](album.md)

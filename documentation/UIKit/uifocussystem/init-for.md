@@ -26,11 +26,6 @@ The [`UIFocusSystem`](uifocussystem.md) object that manages the state for the sp
 
 - `environment`: The object whose state you want to return. Specify the view, view controller, or window whose state you want. You can also specify any other object that adopts the [`UIFocusEnvironment`](uifocusenvironment.md) protocol.
 
-## See Also
-
-- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:).md)
-  Retrieves the focus system for the specified environment.
-
 
 ---
 

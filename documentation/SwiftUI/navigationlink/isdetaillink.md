@@ -14,6 +14,7 @@ Sets the navigation link to present its destination as the detail component of t
 ## Declaration
 
 ```swift
+nonisolated
 func isDetailLink(_ isDetailLink: Bool) -> some View
 ```
 

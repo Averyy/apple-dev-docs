@@ -176,7 +176,7 @@ When App Store Connect sends a notification to your webhook, it does so in the f
 
 ##### Process a Specific Notification
 
-This example uses the notification type `appStoreVersionAppVersionStateUpdated`. The attributes include the `version`, states, and a `timestamp` that shows when the state change. The payload includes a relationship to the `appStoreVersions id`. Use this information to read more about your app’s version using [`Read App Store Version Information`](get-v1-appstoreversions-_id_.md).
+This example uses the notification type `appStoreVersionAppVersionStateUpdated`. The attributes include the `version`, states, and a `timestamp` that shows when the state change. The payload includes a relationship to the `appStoreVersions id`. Use this information to read more about your app’s version using [`Read app store version information`](get-v1-appstoreversions-_id_.md).
 
 ```json
 {

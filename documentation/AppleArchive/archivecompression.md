@@ -34,6 +34,7 @@ struct ArchiveCompression
 - [static let zlib: ArchiveCompression](archivecompression/zlib.md)
   The zlib compression algorithm, that’s recommended for cross-platform compression.
 - [static let lzbitmap: ArchiveCompression](archivecompression/lzbitmap.md)
+- [static let lzraven: ArchiveCompression](archivecompression/lzraven.md)
 ### Initializers
 - [init(algo: Algorithm)](archivecompression/init(algo:).md)
 

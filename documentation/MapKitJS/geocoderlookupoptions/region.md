@@ -11,7 +11,7 @@ A region for constraining lookup results.
 ## Declaration
 
 ```swift
-region?: CoordinateRegion;
+region?: CoordinateRegionData;
 ```
 
 #### Discussion
@@ -26,6 +26,8 @@ Tell the geocoder to return results in this region. For example, constrain the g
   The language to use when displaying the lookup results.
 - [limitToCountries](geocoderlookupoptions/limittocountries.md)
   A list of countries for constraining the lookup results.
+- [signal](geocoderlookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

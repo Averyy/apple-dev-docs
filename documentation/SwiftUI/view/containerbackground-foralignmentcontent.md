@@ -18,7 +18,7 @@ Sets the container background of the enclosing container using a view.
 
 ```swift
 nonisolated
-func containerBackground<V>(for container: ContainerBackgroundPlacement, alignment: Alignment = .center, @ViewBuilder content: () -> V) -> some View where V : View
+func containerBackground<V>(for container: ContainerBackgroundPlacement, alignment: Alignment = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Discussion

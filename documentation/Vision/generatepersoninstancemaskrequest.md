@@ -12,6 +12,7 @@ A request that produces a mask of individual people it finds in the input image.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -65,6 +66,8 @@ The request returns the resulting image mask in an instance of [`InstanceMaskObs
 
 ## See Also
 
+- [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
+  Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
 - [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticeable objects to separate from the background.
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)

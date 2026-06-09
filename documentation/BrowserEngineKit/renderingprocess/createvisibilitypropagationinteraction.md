@@ -8,7 +8,6 @@ Returns an interaction that associates a view with the rendering process.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- macOS 14.3+
 
 ## Declaration
 

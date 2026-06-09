@@ -15,6 +15,7 @@ Creates a magnification gesture with a given minimum delta for the gesture to st
 ## Declaration
 
 ```swift
+nonisolated
 init(minimumScaleDelta: CGFloat = 0.01)
 ```
 

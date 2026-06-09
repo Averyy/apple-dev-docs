@@ -58,6 +58,8 @@ The coding tools communicate with the same large language model to generate the 
 
 - [Editing source files in Xcode](editing-source-files-in-xcode.md)
   Use features of the source editor to help you write, navigate, document, and understand code more quickly.
+- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+  Submit prompts in the same place you want to make changes to your code.
 
 
 ---

@@ -22,7 +22,7 @@ func setActiveScheduleRequestWith(_ params: MTRThermostatClusterSetActiveSchedul
 
 #### Discussion
 
-Upon receipt, if the Schedules attribute contains a ScheduleStruct whose ScheduleHandle field matches the value of the ScheduleHandle field, the server SHALL set the thermostat’s ActiveScheduleHandle attribute to the value of the ScheduleHandle field.
+This command will set the active schedule to the provided schedule handle.
 
 
 ---

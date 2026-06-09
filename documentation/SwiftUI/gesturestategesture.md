@@ -18,7 +18,7 @@ A gesture that updates the state provided by a gesture’s updating callback.
 
 ```swift
 @frozen
-struct GestureStateGesture<Base, State> where Base : Gesture
+nonisolated struct GestureStateGesture<Base, State> where Base : Gesture
 ```
 
 #### Overview

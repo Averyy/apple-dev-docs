@@ -17,7 +17,7 @@ The version of the Foundation framework in the current environment.
 ## Declaration
 
 ```swift
-var NSFoundationVersionNumber: Double
+let NSFoundationVersionNumber: Double
 ```
 
 

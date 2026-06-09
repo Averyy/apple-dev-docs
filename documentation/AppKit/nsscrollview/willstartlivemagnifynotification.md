@@ -20,6 +20,8 @@ The notification object is the scroll view performing the magnification.
 
 This notification indicates that the magnification property is being changed due to user action. This may be due to the user performing a pinch gesture or a smart zoom gesture. When animating the magnification value yourself via the object’s animator, this notification is not sent.
 
+To observe this notification using Swift concurrency, use [`NSScrollView.WillStartLiveMagnifyMessage`](nsscrollview/willstartlivemagnifymessage.md).
+
 ## See Also
 
 - [class let didEndLiveMagnifyNotification: NSNotification.Name](nsscrollview/didendlivemagnifynotification.md)

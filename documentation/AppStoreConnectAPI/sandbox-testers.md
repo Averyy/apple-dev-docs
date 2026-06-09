@@ -11,20 +11,27 @@ The `sandboxTesters` resource represents a Sandbox Apple Account, which is an ac
 ## Topics
 
 ### Sandbox Tester Lookup and Modification
-- [List Sandbox Testers](get-v2-sandboxtesters.md)
+- [List sandbox testers](get-v2-sandboxtesters.md)
   Get a list of Sandbox Testers for your team.
-- [Modify a Sandbox Tester](patch-v2-sandboxtesters-_id_.md)
+- [Modify a sandbox tester](patch-v2-sandboxtesters-_id_.md)
   Change the subscription renewal time rate, set interrupted purchases or change territory of Sandbox Apple Account.
-- [Clear Purchase History for a Sandbox Tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
+- [Clear purchase history for a sandbox tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
   Remove purchase history from a Sandbox Apple Account.
 ### Objects
 - [object SandboxTesterV2Response](sandboxtesterv2response.md)
+  The response body for endpoints that read or modify a single sandbox Apple ID for testing.
 - [object SandboxTesterV2UpdateRequest](sandboxtesterv2updaterequest.md)
+  The request body you use to update a sandbox tester v2update request.
 - [object SandboxTestersClearPurchaseHistoryRequestV2](sandboxtestersclearpurchasehistoryrequestv2.md)
+  A batch request to reset the in-app purchase and subscription history for one or more sandbox Apple IDs.
 - [object SandboxTestersClearPurchaseHistoryRequestV2CreateRequest](sandboxtestersclearpurchasehistoryrequestv2createrequest.md)
+  The request body you use to create a request to clear sandbox tester purchase history.
 - [object SandboxTestersClearPurchaseHistoryRequestV2Response](sandboxtestersclearpurchasehistoryrequestv2response.md)
+  A response confirming that the purchase history for sandbox testers was cleared.
 - [object SandboxTestersV2Response](sandboxtestersv2response.md)
+  The response body for endpoints that list sandbox Apple IDs used for testing.
 - [object SandboxTesterV2](sandboxtesterv2.md)
+  A sandbox Apple ID you use to test in-app purchases and subscriptions in the Xcode sandbox environment.
 
 ## See Also
 

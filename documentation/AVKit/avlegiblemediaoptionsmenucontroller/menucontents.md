@@ -36,9 +36,9 @@ struct MenuContents
 
 ## Topics
 
-### Initializers
+### Creating menu contents
 - [init(rawValue: Int)](avlegiblemediaoptionsmenucontroller/menucontents/init(rawvalue:).md)
-### Type Properties
+### Menu Content Options
 - [static var all: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/all.md)
 - [static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/captionappearance.md)
 - [static var legible: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/legible.md)
@@ -54,6 +54,13 @@ struct MenuContents
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
+- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
 
 
 ---

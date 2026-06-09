@@ -41,6 +41,8 @@ All RealityKit APIs for loading resources, creating entities and adding componen
 ### Instance Properties
 - [var activeCamera: Entity?](realityrenderer/activecamera.md)
   The camera to be used for rendering.
+- [var audioListener: Entity?](realityrenderer/audiolistener.md)
+  The entity which defines the listener position and orientation for spatial audio.
 - [var cameraSettings: RealityRenderer.CameraSettings](realityrenderer/camerasettings-swift.property.md)
   The settings to be used for rendering with `activeCamera`.
 - [var entities: RealityRenderer.EntityCollection](realityrenderer/entities.md)

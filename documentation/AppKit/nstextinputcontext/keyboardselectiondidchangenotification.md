@@ -14,6 +14,10 @@ Posted after the selected text input source changes.
 class let keyboardSelectionDidChangeNotification: NSNotification.Name
 ```
 
+#### Discussion
+
+To observe this notification using Swift concurrency, use [`NSTextInputContext.KeyboardSelectionDidChangeMessage`](nstextinputcontext/keyboardselectiondidchangemessage.md).
+
 
 ---
 

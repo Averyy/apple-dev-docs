@@ -14,6 +14,11 @@ Returns the map rectangle that corresponds to the calling coordinate region.
 toMapRect(): MapRect;
 ```
 
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+
 #### Return Value
 
 A [`MapRect`](maprect.md) that corresponds to the calling [`CoordinateRegion`](coordinateregion.md).

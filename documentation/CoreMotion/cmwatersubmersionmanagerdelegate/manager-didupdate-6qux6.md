@@ -1,8 +1,7 @@
 # manager(_:didUpdate:)
 
 **Framework**: Core Motion  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Tells the delegate when a water submersion event occurs.
 
@@ -16,7 +15,7 @@ Tells the delegate when a water submersion event occurs.
 ## Declaration
 
 ```swift
-func manager(_ manager: CMWaterSubmersionManager, didUpdate event: CMWaterSubmersionEvent)
+optional func manager(_ manager: CMWaterSubmersionManager, didUpdate event: CMWaterSubmersionEvent)
 ```
 
 #### Discussion

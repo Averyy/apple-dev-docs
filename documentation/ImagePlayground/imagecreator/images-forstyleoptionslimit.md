@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: method
 
-Starts the creation of images based on the description and style information you provide.
+Creates one or more images from the provided description and style information and returns the results asynchronously.
 
 **Availability**:
 - iOS 26.4+
@@ -24,7 +24,7 @@ An asynchronous stream you use to receive the images.
 
 #### Discussion
 
-Call this method to start the image generation process with the specified parameters. The method executes asynchronously and returns the images on the provided [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive.
+Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
 
 ```swift
 do {
@@ -33,6 +33,7 @@ do {
     var options = ImagePlaygroundOptions()
     options.creationVariety = .high
     options.personalization = .enabled
+    options.sizeSpecification = ImagePlaygroundOptions.SizeSpecification.closest(to: CGSize(width: 1024.0, height: 1024.0))
 
     let images = creator.images(
         for: [.text("A cat wearing mittens.")]
@@ -54,9 +55,9 @@ catch ImageCreator.Error.notSupported {
 
 ## Parameters
 
-- `concepts`: The elements that describe the expected contents of the image.
+- `concepts`: An array of initial concepts (text descriptions, concepts extracted from text, drawings) that describe the expected contents of the returned images.
 - `style`: The style you want the model to apply to the output image. It is a programmer error to specify a style that’s not in the `availableStyles` property.
-- `options`: A set of options influencing image creation.
+- `options`: Options that influence the image creation behavior.
 - `limit`: The maximum number of images you want the system to create. The system limits the maximum number of images to 4.
 
 

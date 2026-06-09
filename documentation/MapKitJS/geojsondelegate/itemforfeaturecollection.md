@@ -12,9 +12,9 @@ Overrides a feature collection.
 
 ```swift
 itemForFeatureCollection?<D extends GeoJSONTypes.FeatureCollection>(
-        itemCollection: ItemCollection<D>,
-        geoJSON: D,
-    ): ItemCollection<D> | Item[] | null;
+    itemCollection: ItemCollection<D>,
+    geoJSON: D,
+): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value

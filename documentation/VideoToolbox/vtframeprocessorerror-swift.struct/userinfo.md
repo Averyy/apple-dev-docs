@@ -12,7 +12,6 @@ The user-info dictionary for an error that was bridged from NSError.
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS 1.0+
-- watchOS 2.0+
 
 ## Declaration
 

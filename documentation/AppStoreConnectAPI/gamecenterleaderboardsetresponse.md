@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single leaderboard set resource.
+The response body for endpoints that create, read, or modify a single Game Center leaderboard set.
 
 **Availability**:
 - App Store Connect API 3.0+

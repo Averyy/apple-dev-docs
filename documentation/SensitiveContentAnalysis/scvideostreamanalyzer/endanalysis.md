@@ -1,6 +1,6 @@
 # endAnalysis()
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Stops stream analysis.

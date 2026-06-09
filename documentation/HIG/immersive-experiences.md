@@ -83,9 +83,9 @@ When your app or game transitions to a Full Space, you can replace passthrough w
 [Immersive spaces](../SwiftUI/Immersive-spaces.md) — SwiftUI
 
 #### Videos
+- [Design immersive environments for visionOS apps and the spatial web](https://developer.apple.com/videos/play/wwdc2026/234) - Learn how you can create photoreal visionOS environments for your apps, websites, and SharePlay experiences. Discover the design principles that make environments feel truly immersive and find out how you can create or capture reference materials, prepare high-fidelity CG assets, and craft real-time effects such as motion and lighting.
 - [Principles of spatial design](https://developer.apple.com/videos/play/wwdc2023/10072) - Discover the fundamentals of spatial design. Learn how to design with depth, scale, windows, and immersion, and apply best practices for creating comfortable, human-centered experiences that transform reality. Find out how you can use these spatial design principles to extend your existing app or bring a new idea to life.
 - [Design spatial SharePlay experiences](https://developer.apple.com/videos/play/wwdc2023/10075) - Explore the types of shared activities you can create in your visionOS apps and find out how your apps can use Spatial Persona templates to support meaningful interactions between people. Discover how to design your UI around a shared context, handle immersive content in a shared activity, and more.
-- [Create custom environments for your immersive apps in visionOS](https://developer.apple.com/videos/play/wwdc2024/10087) - Discover how to create visually rich and performant customized app environments for Apple Vision Pro. Learn design guidelines, get expert recommendations, and explore techniques you can use in any digital content creation tool to begin building your immersive environment.
 
 ## Change log
 | Date | Changes |

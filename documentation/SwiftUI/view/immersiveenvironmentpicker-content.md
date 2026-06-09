@@ -12,7 +12,7 @@ Add menu items to open immersive spaces from a media player’s environment pick
 
 ```swift
 nonisolated
-func immersiveEnvironmentPicker<Content>(@ViewBuilder content: () -> Content) -> some View where Content : View
+func immersiveEnvironmentPicker<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

@@ -8,6 +8,7 @@ The set of security types allowed for connecting to this network.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

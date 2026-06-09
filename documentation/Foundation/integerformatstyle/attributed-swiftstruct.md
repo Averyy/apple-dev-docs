@@ -58,6 +58,9 @@ User interface frameworks like SwiftUI can use these attributes when presenting 
 ### Formatting an integer
 - [func format(Value) -> AttributedString](integerformatstyle/attributed-swift.struct/format(_:).md)
   Formats an integer, using this style.
+### Modifying style locale
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Attributed](integerformatstyle/attributed-swift.struct/locale(_:).md)
+  Modifies the format style to use the specified locale.
 
 ## Relationships
 

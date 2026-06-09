@@ -71,8 +71,12 @@ func render() {
 - [Migrating from the Observable Object protocol to the Observable macro](../SwiftUI/Migrating-from-the-observable-object-protocol-to-the-observable-macro.md)
   Update your existing app to leverage the benefits of Observation in Swift.
 ### Structures
+- [struct ObservationTracking](observationtracking.md)
 - [struct Observations](observations.md)
-  An asychronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
+  An asynchronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
+### Functions
+- [func withContinuousObservation(options: ObservationTracking.Options, apply: (borrowing ObservationTracking.Event) -> Void) -> ObservationTracking.Token](withcontinuousobservation(options:apply:).md)
+- [func withObservationTracking<Result, Failure>(options: ObservationTracking.Options, () throws(Failure) -> Result, onChange: (borrowing ObservationTracking.Event) -> Void) throws(Failure) -> Result](withobservationtracking(options:_:onchange:).md)
 ### Macros
 - [macro ObservationIgnored()](observationignored().md)
   Disables observation tracking of a property.

@@ -12,7 +12,6 @@ Processes a surface by analyzing pixels for sequences of flashing lights and mit
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- watchOS 10.0+
 
 ## Declaration
 

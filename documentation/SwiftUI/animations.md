@@ -142,10 +142,7 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/Human-Int
   A kind of transition that applies to the content within a single view, rather than to the insertion or removal of a view.
 - [struct PlaceholderContentView](placeholdercontentview.md)
   A placeholder used to construct an inline modifier, transition, or other helper type.
-- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
-  Sets the navigation transition style for this view.
-- [protocol NavigationTransition](navigationtransition.md)
-  A type that defines the transition to use when navigating to a view.
+### Defining matched transitions
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some View](view/matchedtransitionsource(id:in:).md)
   Identifies this view as the source of a navigation transition, such as a zoom transition.
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](view/matchedtransitionsource(id:in:configuration:).md)
@@ -154,6 +151,15 @@ For design guidance, see [`Motion`](https://developer.apple.com/design/Human-Int
   A configuration that defines the appearance of a matched transition source.
 - [struct EmptyMatchedTransitionSourceConfiguration](emptymatchedtransitionsourceconfiguration.md)
   An unstyled matched transition source configuration.
+### Defining navigation transitions
+- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
+  Sets the navigation transition style for this view.
+- [protocol NavigationTransition](navigationtransition.md)
+  A type that defines the transition to use when navigating to a view.
+- [struct AnyNavigationTransition](anynavigationtransition.md)
+  A type-erasing navigation transition that allows for providing any navigation transition value dynamically.
+- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+  A navigation transition that cross-fades between the appearing view and the disappearing view.
 ### Moving an animation to another view
 - [func withTransaction<Result>(Transaction, () throws -> Result) rethrows -> Result](withtransaction(_:_:).md)
   Executes a closure with the specified transaction and returns the result.

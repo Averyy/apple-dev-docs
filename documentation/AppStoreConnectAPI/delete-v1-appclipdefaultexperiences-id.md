@@ -1,4 +1,4 @@
-# Delete a Default App Clip Experience
+# Delete a default app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Delete a specific default App Clip experience.
 
 ## Parameters
 
-- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Default App Clip Experiences resource.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the default App Clip experience resource ID from the [`List all default app clip experiences for an app clip`](get-v1-appclips-_id_-appclipdefaultexperiences.md) response.
 
 ## See Also
 
-- [Create a Default App Clip Experience](post-v1-appclipdefaultexperiences.md)
+- [Create a default app clip experience](post-v1-appclipdefaultexperiences.md)
   Configure a new default App Clip experience.
-- [Modify a Default App Clip Experience](patch-v1-appclipdefaultexperiences-_id_.md)
+- [Modify a default app clip experience](patch-v1-appclipdefaultexperiences-_id_.md)
   Update a default App Clip experience.
-- [Modify the Related App Store Version for a Default App Clip Experience](patch-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
+- [Modify the related app store version for a default app clip experience](patch-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
   Update the relationship between a default App Clip experience and an App Store Version.
 
 

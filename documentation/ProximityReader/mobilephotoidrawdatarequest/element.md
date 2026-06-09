@@ -9,7 +9,6 @@ A type representing an element that you can request from a photo ID.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 
@@ -38,6 +37,8 @@ struct Element
   The photo ID holder’s given name or first name.
 - [static let issuingAuthority: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/issuingauthority.md)
   The state or government that issued the identity document.
+- [static let name: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/name.md)
+  The photo ID holder’s name.
 - [static let portrait: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/portrait.md)
   The portrait of the photo ID holder on record with the issuer.
 - [static let sex: MobilePhotoIDRawDataRequest.Element](mobilephotoidrawdatarequest/element/sex.md)

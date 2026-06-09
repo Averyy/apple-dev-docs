@@ -21,12 +21,11 @@ struct Configuration
   Configuration options for an expanded experience.
 - [AVExperienceController.ExpandedConfiguration](avexperiencecontroller/expandedconfiguration.md)
   A structure that specifies options for an expanded experience.
-### Structures
-- [AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct.md)
-  A struct used to set the placement for the media playback to be experienced.
-### Instance Properties
+### Configuring placement
 - [var placement: AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.property.md)
   Supply a Placement to be used when the original container isn’t added to the view controller hierarchy; i.e. the AVPlayerViewController is off-screen.
+- [AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct.md)
+  A struct used to set the placement for the media playback to be experienced.
 
 ## See Also
 

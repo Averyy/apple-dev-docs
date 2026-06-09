@@ -17,6 +17,7 @@ Creates an angular gradient from a collection of color stops.
 ## Declaration
 
 ```swift
+nonisolated
 init(stops: [Gradient.Stop], center: UnitPoint, startAngle: Angle, endAngle: Angle)
 ```
 

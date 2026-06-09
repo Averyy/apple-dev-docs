@@ -7,8 +7,6 @@ A dictionary that describes the parent content cache’s connection to its local
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

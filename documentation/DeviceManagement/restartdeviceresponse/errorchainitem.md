@@ -11,8 +11,6 @@ A dictionary that describes an error chain item.
 - Mac Catalyst 10.3+
 - macOS 10.13+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

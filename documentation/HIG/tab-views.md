@@ -36,7 +36,7 @@ When you hide the tabbed control, the content area can be borderless, bezeled, o
 For similar functionality, consider using a [segmented control](https://developer.apple.com/design/human-interface-guidelines/segmented-controls) instead.
 
 ### watchOS
-watchOS displays tab views using [page controls](https://developer.apple.com/design/human-interface-guidelines/components/presentation/page-controls). For developer guidance, see [TabView](../SwiftUI/TabView.md) and [verticalPage](../SwiftUI/TabViewStyle/verticalPage.md).
+watchOS displays tab views using [page controls](https://developer.apple.com/design/human-interface-guidelines/components/presentation/page-controls). For developer guidance, see [TabView](../SwiftUI/TabView.md).
 ![An illustration showing the page control next to the Digital Crown on Apple Watch. The current dot is enlarged, indicating that people can scroll through the current content, as well as scroll between pages.](https://docs-assets.developer.apple.com/published/10938a94cb663210f148e0fbce431e70/tab-view-watch-vertical%402x.png)
 
 ## Resources

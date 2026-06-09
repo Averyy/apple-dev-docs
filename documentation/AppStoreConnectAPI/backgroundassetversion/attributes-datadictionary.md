@@ -23,6 +23,7 @@ object BackgroundAssetVersion.Attributes
 ## Properties
 
 - `createdDate` (date-time)
+- `locale` (string)
 - `platforms` ([Platform])
 - `state` (BackgroundAssetVersionState)
 - `stateDetails` (BackgroundAssetVersion.Attributes.StateDetails)

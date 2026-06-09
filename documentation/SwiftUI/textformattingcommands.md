@@ -15,6 +15,7 @@ A built-in set of commands for transforming the styles applied to selections of 
 ## Declaration
 
 ```swift
+nonisolated
 struct TextFormattingCommands
 ```
 

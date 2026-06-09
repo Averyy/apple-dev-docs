@@ -24,9 +24,13 @@ struct Options
 ### Creating an options object
 - [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention)](speechanalyzer/options/init(priority:modelretention:).md)
   Creates a structure containing analysis processing options.
+- [init(priority: TaskPriority, modelRetention: SpeechAnalyzer.Options.ModelRetention, ignoresResourceLimits: Bool)](speechanalyzer/options/init(priority:modelretention:ignoresresourcelimits:).md)
+  Creates a structure containing analysis processing options.
 - [SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.enum.md)
   A model caching strategy.
 ### Inspecting options
+- [let ignoresResourceLimits: Bool](speechanalyzer/options/ignoresresourcelimits.md)
+  A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
 - [let modelRetention: SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.property.md)
   The analyzer’s model caching strategy.
 - [let priority: TaskPriority](speechanalyzer/options/priority.md)

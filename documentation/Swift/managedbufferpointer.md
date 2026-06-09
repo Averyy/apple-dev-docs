@@ -74,7 +74,7 @@ A valid buffer class is non-`@objc`, with no declared stored properties.  Its `d
 - [func withUnsafeMutablePointers<E, R>((UnsafeMutablePointer<Header>, UnsafeMutablePointer<Element>) throws(E) -> R) throws(E) -> R](managedbufferpointer/withunsafemutablepointers(_:).md)
   Call `body` with `UnsafeMutablePointer`s to the stored `Header` and raw `Element` storage.
 ### Comparing Buffers
-- [static func != (Self, Self) -> Bool](managedbufferpointer/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](managedbufferpointer/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Default Implementations
 - [Equatable Implementations](managedbufferpointer/equatable-implementations.md)
@@ -82,9 +82,7 @@ A valid buffer class is non-`@objc`, with no declared stored properties.  Its `d
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 
 ## See Also
 

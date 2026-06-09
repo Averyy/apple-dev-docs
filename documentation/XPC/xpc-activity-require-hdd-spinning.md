@@ -6,6 +6,9 @@
 A Boolean value indicating whether the activity should only be performed while the hard disk drive (HDD) is spinning.
 
 **Availability**:
+- iOS 7.0+
+- iPadOS 7.0+
+- Mac Catalyst 7.0+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 

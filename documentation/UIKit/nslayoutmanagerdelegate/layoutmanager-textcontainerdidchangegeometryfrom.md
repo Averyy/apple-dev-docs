@@ -9,7 +9,7 @@ Informs the delegate when the layout manager invalidates layout due to a change 
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

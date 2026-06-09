@@ -1,4 +1,4 @@
-# setCameraBoundaryAnimated(mapRect, animated)
+# setCameraBoundaryAnimated(cameraBoundary, animated)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -12,9 +12,9 @@ Changes the map’s camera boundary with an animated transition.
 
 ```swift
 setCameraBoundaryAnimated(
-        mapRect: null | CoordinateRegion | MapRect,
-        animated?: boolean,
-    ): Map;
+    cameraBoundary: null | CoordinateRegionData | MapRectData,
+    animated?: boolean,
+): Map;
 ```
 
 ## Mentions

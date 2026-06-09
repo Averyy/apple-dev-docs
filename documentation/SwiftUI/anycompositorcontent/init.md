@@ -12,6 +12,7 @@ Create an instance that type-erases `CompositorContent`.
 ## Declaration
 
 ```swift
+nonisolated
 init<T>(_ content: T) where T : CompositorContent
 ```
 

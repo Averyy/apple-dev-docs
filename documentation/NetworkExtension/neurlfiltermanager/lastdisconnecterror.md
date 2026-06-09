@@ -8,7 +8,7 @@ The most recent error that caused the URL Filter to stop.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst ?+
 - macOS 26.0+
 
 ## Declaration

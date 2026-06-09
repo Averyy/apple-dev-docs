@@ -11,6 +11,7 @@ A toggle style that displays a checkbox followed by its label.
 ## Declaration
 
 ```swift
+nonisolated
 struct CheckboxToggleStyle
 ```
 

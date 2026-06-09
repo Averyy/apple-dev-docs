@@ -16,6 +16,8 @@ enum AVPlayerViewControlsStyle
 
 ## Topics
 
+### Creating a controls style
+- [init?(rawValue: Int)](avplayerviewcontrolsstyle/init(rawvalue:).md)
 ### Controls Styles
 - [AVPlayerViewControlsStyle.none](avplayerviewcontrolsstyle/none.md)
   The view displays no playback controls.
@@ -27,8 +29,6 @@ enum AVPlayerViewControlsStyle
   The view presents basic controls to play and pause playback.
 - [static var `default`: AVPlayerViewControlsStyle](avplayerviewcontrolsstyle/default.md)
   The view’s default controls style.
-### Initializers
-- [init?(rawValue: Int)](avplayerviewcontrolsstyle/init(rawvalue:).md)
 
 ## Relationships
 

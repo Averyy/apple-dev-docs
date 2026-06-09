@@ -25,7 +25,7 @@ For more information on places, see [`Identifying unique locations with Place ID
 ## Topics
 
 ### Creating a selection accessory
-- [new PlaceSelectionAccessory({ style })](placeselectionaccessory/placeselectionaccessoryconstructor.md)
+- [new PlaceSelectionAccessory(options)](placeselectionaccessory/placeselectionaccessoryconstructor.md)
   Creates a new place selection accessory.
 ### Working with styles
 - [style](placeselectionaccessory/style.md)

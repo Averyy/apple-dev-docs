@@ -21,6 +21,8 @@ These are values you use to control aspects of the operation of the virtual driv
 ### Mac-specific auxiliary storage options
 - [VZMacAuxiliaryStorage.InitializationOptions](vzmacauxiliarystorage/initializationoptions.md)
   Options you can set when creating new auxiliary storage.
+### Extensible firmware interface (EFI) signatures
+- [enum VZEFISignature](vzefisignature-swift.enum.md)
 ### Rosetta availability states
 - [enum VZLinuxRosettaAvailability](vzlinuxrosettaavailability.md)
   Constants that describe the availability and installation status of Rosetta.

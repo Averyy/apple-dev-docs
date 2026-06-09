@@ -19,6 +19,10 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents an alert when a given condition is true, using a text view for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
+  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+  Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 ### Alerts with a message
@@ -26,6 +30,10 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents an alert with a message when a given condition is true using a text view as a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+  Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.
 ### Confirmation dialogs
@@ -33,12 +41,16 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents a confirmation dialog when a given condition is true, using a text view for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:).md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+- [func confirmationDialog(_:item:titleVisibility:actions:)](view/confirmationdialog(_:item:titlevisibility:actions:).md)
+  Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
   Presents a confirmation dialog when a dismiss action has been triggered.
 ### Confirmation dialogs with a message
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
+- [func confirmationDialog(_:item:titleVisibility:actions:message:)](view/confirmationdialog(_:item:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
   Presents a confirmation dialog when a dismiss action has been triggered.
@@ -50,6 +62,8 @@ For more information about how to use these modifiers, see [`Modal presentations
   Enables user suppression of dialogs and alerts presented within `self`, with a default suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(_:isSuppressed:)](view/dialogsuppressiontoggle(_:issuppressed:).md)
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
+- [func dialogPreventsAppTermination(Bool?) -> some View](view/dialogpreventsapptermination(_:).md)
+  Whether the alert or confirmation dialog prevents the app from being quit/terminated by the system or app termination menu item.
 ### Sheets
 - [func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)?, content: () -> Content) -> some View](view/sheet(ispresented:ondismiss:content:).md)
   Presents a sheet when a binding to a Boolean value that you provide is true.
@@ -89,33 +103,39 @@ For more information about how to use these modifiers, see [`Modal presentations
   Requests that the presentation have a specific corner radius.
 - [func presentationSizing(some PresentationSizing) -> some View](view/presentationsizing(_:).md)
   Sets the sizing of the containing presentation.
+- [func presentationBreakthroughEffect(BreakthroughEffect) -> some View](view/presentationbreakthrougheffect(_:).md)
+  Changes the way the enclosing presentation breaks through content occluding it.
+- [func presentationPreventsAppTermination(Bool?) -> some View](view/presentationpreventsapptermination(_:).md)
+  Whether a presentation prevents the app from being terminated/quit by the system or app termination menu item.
 ### File exporter
 - [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
-  Presents a system interface for exporting a document that’s stored in a value type, like a structure, to a file on disk.
+  Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
 - [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
-  Presents a system interface for exporting a collection of value type documents to files on disk.
+  Presents a system dialog for exporting a collection of value type documents to files on disk.
+- [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType?, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: (() -> Void)?) -> some View](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:oncancellation:).md)
+  Presents a system dialog for allowing the user to export a `WritableDocument` to a file on disk.
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface for allowing the user to export a `FileDocument` to a file on disk.
+  Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a `Transferable` item to file on disk.
+  Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a collection of items to files on disk.
+  Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 ### File importer
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
-  Presents a system interface for allowing the user to import multiple files.
+  Presents a system dialog for allowing the user to import multiple files.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:oncompletion:).md)
-  Presents a system interface for allowing the user to import an existing file.
+  Presents a system dialog for allowing the user to import an existing file.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to import multiple files.
 ### File mover
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/filemover(ispresented:file:oncompletion:).md)
-  Presents a system interface for allowing the user to move an existing file to a new location.
+  Presents a system dialog for allowing the user to move an existing file to a new location.
 - [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/filemover(ispresented:files:oncompletion:).md)
-  Presents a system interface for allowing the user to move a collection of existing files to a new location.
+  Presents a system dialog for allowing the user to move a collection of existing files to a new location.
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:file:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to move an existing file to a new location.
 - [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:files:oncompletion:oncancellation:).md)
@@ -135,6 +155,12 @@ For more information about how to use these modifiers, see [`Modal presentations
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
   On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
+### Foveated streaming
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
+### Document browser
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+  Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 ### Inspectors
 - [func inspector<V>(isPresented: Binding<Bool>, content: () -> V) -> some View](view/inspector(ispresented:content:).md)
   Inserts an inspector at the applied position in the view hierarchy.
@@ -152,21 +178,33 @@ For more information about how to use these modifiers, see [`Modal presentations
   Presents an activity picker view as a sheet.
 - [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
   Presents an activity picker view as a sheet.
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
+  Present an activity picker sheet for selecting apps and websites to manage.
 ### Live Activities
 - [func activitySystemActionForegroundColor(Color?) -> some View](view/activitysystemactionforegroundcolor(_:).md)
   The text color for the auxiliary action button that the system shows next to a Live Activity on the Lock Screen.
 - [func activityBackgroundTint(Color?) -> some View](view/activitybackgroundtint(_:).md)
   Sets the tint color for the background of a Live Activity that appears on the Lock Screen.
+### Game saving
+- [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
+  Presents a modal view while the game synced directory loads.
 ### Apple Music
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
+### Contacts
+- [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](view/contactaccessbuttoncaption(_:).md)
+- [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
+- [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
+  Modally present UI which allows the user to select which contacts your app has access to.
 ### StoreKit
 - [func appStoreOverlay(isPresented: Binding<Bool>, configuration: () -> SKOverlay.Configuration) -> some View](view/appstoreoverlay(ispresented:configuration:).md)
   Presents a StoreKit overlay when a given condition is true.
+- [func appStoreMerchandising(isPresented: Binding<Bool>, kind: AppStoreMerchandisingKind, onDismiss: ((Result<AppStoreMerchandisingKind.PresentationResult, any Error>) async -> ())?) -> some View](view/appstoremerchandising(ispresented:kind:ondismiss:).md)
+  Display a merchandising view.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](view/managesubscriptionssheet(ispresented:).md)
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](view/refundrequestsheet(for:ispresented:ondismiss:).md)
   Display the refund request sheet for the given transaction.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
+- [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](view/offercoderedemption(options:ispresented:oncompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 ### PhotoKit
 - [func photosPicker(isPresented: Binding<Bool>, selection: Binding<PhotosPickerItem?>, matching: PHPickerFilter?, preferredItemEncoding: PhotosPickerItem.EncodingDisambiguationPolicy) -> some View](view/photospicker(ispresented:selection:matching:preferreditemencoding:).md)
@@ -181,8 +219,16 @@ For more information about how to use these modifiers, see [`Modal presentations
   Sets the accessory visibility of the Photos picker. Accessories include anything between the content and the edge, like the navigation bar or the sidebar.
 - [func photosPickerDisabledCapabilities(PHPickerCapabilities) -> some View](view/photospickerdisabledcapabilities(_:).md)
   Disables capabilities of the Photos picker.
+- [func photosPickerSearchText(_:)](view/photospickersearchtext(_:).md)
+  Sets search text of the Photos picker.
 - [func photosPickerStyle(PhotosPickerStyle) -> some View](view/photospickerstyle(_:).md)
   Sets the mode of the Photos picker.
+- [func photosSharedAlbumCreationSheet(isPresented: Binding<Bool>, defaultTitle: String?, defaultSharingPolicy: PHSharedAlbumCreationSharingPolicy?, photoLibrary: PHPhotoLibrary, onCompletion: ((PHSharedAlbumCreationResult?) -> Void)?) -> some View](view/photossharedalbumcreationsheet(ispresented:defaulttitle:defaultsharingpolicy:photolibrary:oncompletion:).md)
+  Presents a view for allowing the user to create a new shared album.
+- [func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (() -> Void)?) -> some View](view/photossharedalbumcustomizationsheet(ispresented:albumidentifier:photolibrary:oncompletion:).md)
+  Presents a view for allowing the user to customize a specified shared album.
+- [func photosSharedAlbumPostingSheet(isPresented:items:defaultAlbumIdentifier:photoLibrary:completion:)](view/photossharedalbumpostingsheet(ispresented:items:defaultalbumidentifier:photolibrary:completion:).md)
+  Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
 ### Translation
 - [func translationPresentation(isPresented: Binding<Bool>, text: String, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge, replacementAction: ((String) -> Void)?) -> some View](view/translationpresentation(ispresented:text:attachmentanchor:arrowedge:replacementaction:).md)
   Presents a translation popover when a given condition is true.
@@ -192,6 +238,9 @@ For more information about how to use these modifiers, see [`Modal presentations
   Adds a task to perform before this view appears or when the specified source or target languages change.
 - [func translationTask(source: Locale.Language?, target: Locale.Language?, preferredStrategy: TranslationSession.Strategy, action: (TranslationSession) async -> Void) -> some View](view/translationtask(source:target:preferredstrategy:action:).md)
   Adds a task to perform before this view appears or when the specified source or target languages change.
+### Security
+- [func certificateSheet(trust: Binding<SecTrust?>, title: String?, message: String?, help: URL?) -> some View](view/certificatesheet(trust:title:message:help:).md)
+  Displays a certificate sheet using the provided certificate trust.
 
 ## See Also
 

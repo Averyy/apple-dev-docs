@@ -18,6 +18,8 @@ class let selectionIsChangingNotification: NSNotification.Name
 
 The notification object is the `NSComboBox` whose selection is changing. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSComboBox.SelectionIsChangingMessage`](nscombobox/selectionischangingmessage.md).
+
 ## See Also
 
 - [class let selectionDidChangeNotification: NSNotification.Name](nscombobox/selectiondidchangenotification.md)

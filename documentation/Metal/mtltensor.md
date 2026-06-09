@@ -22,25 +22,31 @@ protocol MTLTensor : MTLResource
 ## Topics
 
 ### Instance Properties
+- [var auxiliaryPlanes: [any MTLTensorAuxiliaryPlane]](mtltensor/auxiliaryplanes.md)
+  The auxiliary planes of this tensor.
 - [var buffer: (any MTLBuffer)?](mtltensor/buffer.md)
-  A buffer instance this tensor shares its storage with or nil if this tensor does not wrap an underlying buffer.
+  A buffer instance this tensor shares its storage with or `nil` if this tensor does not wrap an underlying buffer.
 - [var bufferOffset: Int](mtltensor/bufferoffset.md)
   An offset, in bytes, into the buffer instance this tensor shares its storage with, or zero if this tensor does not wrap an underlying buffer.
 - [var dataType: MTLTensorDataType](mtltensor/datatype.md)
-  An underlying data format of this tensor.
+  The underlying data format of the data plane.
 - [var dimensions: MTLTensorExtents](mtltensor/dimensions.md)
   An array of sizes, in elements, one for each dimension of this tensor.
 - [var gpuResourceID: MTLResourceID](mtltensor/gpuresourceid.md)
   A handle that represents the GPU resource, which you can store in an argument buffer.
 - [var strides: MTLTensorExtents?](mtltensor/strides.md)
-  An array of strides, in elements, one for each dimension of this tensor.
+  An array of strides, in elements, one for each dimension of this tensor, if applicable.
 - [var usage: MTLTensorUsage](mtltensor/usage.md)
   A set of contexts in which you can use this tensor.
 ### Instance Methods
 - [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents)](mtltensor/getbytes(_:strides:sliceorigin:slicedimensions:).md)
-  Copies the data corresponding to a slice of this tensor into a pointer you provide.
+  Copies data from a slice of the data plane of this tensor into a pointer you provide.
+- [func getBytes(UnsafeMutableRawPointer, strides: MTLTensorExtents, sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType)](mtltensor/getbytes(_:strides:sliceorigin:slicedimensions:plane:).md)
+  Copies data from a slice of a plane of this tensor into a pointer you provide.
+- [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:plane:withbytes:strides:).md)
+  Replaces a slice of a plane of this tensor with data from a pointer you provide.
 - [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:withbytes:strides:).md)
-  Replaces the contents of a slice of this tensor with data you provide.
+  Replaces a slice of the data plane plane of this tensor with data from a pointer you provide.
 
 ## Relationships
 

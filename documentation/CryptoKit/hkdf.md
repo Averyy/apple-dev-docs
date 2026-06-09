@@ -24,7 +24,7 @@ struct HKDF<H> where H : HashFunction
 
 The key derivation functions allow you to derive one or more secrets of the size of your choice from a main key or passcode. The key derivation function is compliant with IETF RFC 5869. Use one of the `deriveKey` functions, such as [`deriveKey(inputKeyMaterial:outputByteCount:)`](hkdf/derivekey(inputkeymaterial:outputbytecount:).md) or [`deriveKey(inputKeyMaterial:salt:info:outputByteCount:)`](hkdf/derivekey(inputkeymaterial:salt:info:outputbytecount:).md), to derive a key from a main secret or passcode in a single function.
 
-To derive a key with more fine-grained control, use [`extract(inputKeyMaterial:salt:)`](hkdf/extract(inputkeymaterial:salt:).md) to create cryptographically strong key material in the form of a hashed authentication code, then call [`expand(pseudoRandomKey:info:outputByteCount:)`](hkdf/expand(pseudorandomkey:info:outputbytecount:).md) using that key material to generate a symmetric key of the length you specify.
+To derive a key with more fine-grained control, use `extract(inputKeyMaterial:salt:)` to create cryptographically strong key material in the form of a hashed authentication code, then call [`expand(pseudoRandomKey:info:outputByteCount:)`](hkdf/expand(pseudorandomkey:info:outputbytecount:).md) using that key material to generate a symmetric key of the length you specify.
 
 ## Topics
 
@@ -38,10 +38,17 @@ To derive a key with more fine-grained control, use [`extract(inputKeyMaterial:s
 - [static func deriveKey<Salt, Info>(inputKeyMaterial: SymmetricKey, salt: Salt, info: Info, outputByteCount: Int) -> SymmetricKey](hkdf/derivekey(inputkeymaterial:salt:info:outputbytecount:).md)
   Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with information and salt you specify.
 ### Controlling key derivation
-- [static func extract<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt?) -> HashedAuthenticationCode<H>](hkdf/extract(inputkeymaterial:salt:).md)
-  Creates cryptographically strong key material from a main key or passcode that you specify.
 - [static func expand<PRK, Info>(pseudoRandomKey: PRK, info: Info?, outputByteCount: Int) -> SymmetricKey](hkdf/expand(pseudorandomkey:info:outputbytecount:).md)
   Expands cryptographically strong key material into a derived symmetric key.
+### Type Methods
+- [static func deriveKey(inputKeyMaterial: SymmetricKey, salt: RawSpan?, info: RawSpan?, output: inout OutputRawSpan)](hkdf/derivekey(inputkeymaterial:salt:info:output:).md)
+  Derives a symmetric encryption key from a main key or passcode using HKDF key derivation with information and salt you specify.
+- [static func expand(pseudoRandomKey: RawSpan, info: RawSpan?, into: inout OutputRawSpan)](hkdf/expand(pseudorandomkey:info:into:).md)
+  Expands cryptographically strong key material into a derived symmetric key.
+- [static func extract<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt?) -> HashedAuthenticationCode<H>](hkdf/extract(inputkeymaterial:salt:)-4f5wf.md)
+  Creates cryptographically strong key material from a main key or passcode that you specify.
+- [static func extract(inputKeyMaterial: SymmetricKey, salt: RawSpan?) -> HashedAuthenticationCode<H>](hkdf/extract(inputkeymaterial:salt:)-7qmzj.md)
+  Creates cryptographically strong key material from a main key or passcode that you specify.
 
 ## Relationships
 

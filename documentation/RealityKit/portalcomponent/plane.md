@@ -38,6 +38,9 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
 
 ## Topics
 
+### Creating a plane
+- [init(position: SIMD3<Float>, normal: SIMD3<Float>, radius: Float)](portalcomponent/plane/init(position:normal:radius:).md)
+  Creates a curved portal plane (cylinder) with position, normal, and curvature.
 ### Initializers
 - [init(position: SIMD3<Float>, normal: SIMD3<Float>)](portalcomponent/plane/init(position:normal:).md)
   Creates a portal plane with position and normal.
@@ -46,6 +49,8 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
   The normal of the portal plane, in entity local space.
 - [var position: SIMD3<Float>](portalcomponent/plane/position.md)
   The position of the portal plane, in entity local space.
+- [var radius: Float](portalcomponent/plane/radius.md)
+  The radius of the portal plane.
 ### Type Properties
 - [static let negativeX: PortalComponent.Plane](portalcomponent/plane/negativex.md)
   A portal plane sitting at the origin facing the negative x direction.

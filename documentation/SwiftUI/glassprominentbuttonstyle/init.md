@@ -16,6 +16,7 @@ Creates a prominent glass button style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

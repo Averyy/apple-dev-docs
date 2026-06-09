@@ -58,8 +58,6 @@ Subclass this class to define the user interface for your content proposal.
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -98,6 +96,8 @@ Subclass this class to define the user interface for your content proposal.
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
 - [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
   An interface that responds to events from a continuity device picker view controller.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

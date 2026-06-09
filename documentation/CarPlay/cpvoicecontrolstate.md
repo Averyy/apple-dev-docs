@@ -32,9 +32,13 @@ class CPVoiceControlState
   A Boolean value that indicates whether the display of an animated image repeats the animation sequence indefinitely.
 ### Initializers
 - [init?(coder: NSCoder)](cpvoicecontrolstate/init(coder:).md)
+- [init(identifier: String, titleVariants: [String]?, image: UIImage?, backgroundImage: UIImage?, repeats: Bool)](cpvoicecontrolstate/init(identifier:titlevariants:image:backgroundimage:repeats:).md)
+  Initialize a voice control state with a title and image.
 ### Instance Properties
 - [var actionButtons: [CPButton]](cpvoicecontrolstate/actionbuttons.md)
   An array of action buttons displayed in the template.
+- [var backgroundImage: UIImage?](cpvoicecontrolstate/backgroundimage.md)
+  A custom background image to be displayed behind the voice control template content.
 ### Type Properties
 - [class var maximumActionButtonCount: Int](cpvoicecontrolstate/maximumactionbuttoncount.md)
   The maximum number of action buttons that can be displayed in the CPVoiceControlTemplate.

@@ -23,6 +23,8 @@ The notification object is the table view in which a column was resized. The `us
 | `@"NSTableColumn"` | The column that was resized. |
 | `@"NSOldWidth"` | An NSNumber containing the integer value of the column’s original width. |
 
+To observe this notification using Swift concurrency, use [`NSTableView.ColumnDidResizeMessage`](nstableview/columndidresizemessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nstableview/columndidmovenotification.md)

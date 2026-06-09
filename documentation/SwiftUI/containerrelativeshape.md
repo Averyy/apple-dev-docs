@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 **Availability**:
 - iOS 14.0+
@@ -20,6 +20,10 @@ A shape that is replaced by an inset version of the current container shape. If 
 @frozen
 struct ContainerRelativeShape
 ```
+
+#### Overview
+
+If there is not a current container shape, the system provides a rectangle.
 
 ## Topics
 

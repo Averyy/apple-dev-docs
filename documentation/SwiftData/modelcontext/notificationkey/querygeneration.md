@@ -31,6 +31,8 @@ case queryGeneration
   A set of values identifying the context’s invalidated models.
 - [ModelContext.NotificationKey.updatedIdentifiers](modelcontext/notificationkey/updatedidentifiers.md)
   A set of values identifying the context’s updated models.
+- [ModelContext.NotificationKey.historyTokens](modelcontext/notificationkey/historytokens.md)
+  A history token representing the persistent store state after the save.
 
 
 ---

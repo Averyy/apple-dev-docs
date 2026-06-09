@@ -67,6 +67,9 @@ To bundle reference objects into an app, use your Xcode project’s asset catalo
   A coarse representation of the space-mapping data contained in the reference object.
 ### Initializers
 - [init?(coder: NSCoder)](arreferenceobject/init(coder:).md)
+### Instance Properties
+- [var usdzFile: URL?](arreferenceobject/usdzfile.md)
+  The URL to the extracted USDZ model, if available.
 
 ## Relationships
 

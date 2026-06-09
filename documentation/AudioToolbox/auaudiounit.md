@@ -22,6 +22,7 @@ class AUAudioUnit
 ## Mentions
 
 - [Adding Parallel Real-Time Threads to Audio Workgroups](adding-parallel-real-time-threads-to-audio-workgroups.md)
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
 
 #### Overview
 
@@ -258,6 +259,7 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](auaudiounit.md)
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Inherited By
 - [AUAudioUnitV2Bridge](auaudiounitv2bridge.md)
+- [AUHeadTrackingBinauralRenderer](auheadtrackingbinauralrenderer.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -276,6 +278,8 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](auaudiounit.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
 - [Debugging Out-of-Process Audio Units on Apple Silicon](debugging-out-of-process-audio-units-on-apple-silicon.md)
   Connect to out-of-process audio units using the Xcode debugger.
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+  Create a Spatial Audio extension that allows Bluetooth headphones to track the wearer’s head movements for spatial audio playback.
 - [class AUAudioUnitBus](auaudiounitbus.md)
   A class that defines an input or output connection point on an audio unit.
 - [class AUAudioUnitBusArray](auaudiounitbusarray.md)
@@ -284,6 +288,8 @@ A host does not need to be aware of the concrete [`AUAudioUnit`](auaudiounit.md)
   A class that describes an interface for custom parameter settings provided by the audio unit developer.
 - [class AUAudioUnitV2Bridge](auaudiounitv2bridge.md)
   A class that wraps a version 2 audio unit as version 3 audio unit.
+- [class AUHeadTrackingBinauralRenderer](auheadtrackingbinauralrenderer.md)
+  A subclass of AUAudioUnit specifically for 3rd party spatial Audio Units.
 - [func AudioUnitExtensionCopyComponentList(CFString) -> Unmanaged<CFArray>?](audiounitextensioncopycomponentlist(_:).md)
   Returns the component registrations for a given audio unit extension.
 - [func AudioUnitExtensionSetComponentList(CFString, CFArray?) -> OSStatus](audiounitextensionsetcomponentlist(_:_:).md)

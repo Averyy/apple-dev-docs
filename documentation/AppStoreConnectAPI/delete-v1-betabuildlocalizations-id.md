@@ -1,4 +1,4 @@
-# Delete a Beta Build Localization
+# Delete a beta build localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Delete a specific beta build localization associated with a build.
 
 ## See Also
 
-- [Create a Beta Build Localization](post-v1-betabuildlocalizations.md)
+- [Create a beta build localization](post-v1-betabuildlocalizations.md)
   Create localized What’s New text for a build.
-- [Modify a Beta Build Localization](patch-v1-betabuildlocalizations-_id_.md)
+- [Modify a beta build localization](patch-v1-betabuildlocalizations-_id_.md)
   Update the localized What’s New text for a specific beta build and locale.
 
 

@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: init
 
-Initialize a `CoordinateSpaceData` from a Data blob received over network.
+Initialize a `CoordinateSpaceData` from a data blob.
 
 **Availability**:
 - visionOS 26.0+
@@ -16,7 +16,7 @@ init?(data: Data)
 
 ## Parameters
 
-- `data`: Data blob received over the network..
+- `data`: Data blob.
 
 
 ---

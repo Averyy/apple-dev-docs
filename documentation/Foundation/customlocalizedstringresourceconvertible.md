@@ -34,6 +34,7 @@ Similar to [`CustomStringConvertible`](https://developer.apple.com/documentation
 
 ### Conforming Types
 - [LocalizedStringResource](localizedstringresource.md)
+- [PersonNameComponents](personnamecomponents.md)
 
 ## See Also
 

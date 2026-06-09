@@ -16,6 +16,7 @@ A toggle style that displays as a button with its label as the title.
 ## Declaration
 
 ```swift
+nonisolated
 struct ButtonToggleStyle
 ```
 

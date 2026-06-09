@@ -46,6 +46,8 @@ AVAudioFormat *format = [input outputFormatForBus: 0];
 
 ## See Also
 
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+  Install a tap on a bus using a sendable block
 - [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
   Removes an audio tap on a bus you specify.
 - [typealias AVAudioNodeTapBlock](avaudionodetapblock.md)

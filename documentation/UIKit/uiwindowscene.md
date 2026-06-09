@@ -21,6 +21,7 @@ class UIWindowScene
 
 ## Mentions
 
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Providing data to the view hierarchy with custom traits](providing-data-to-the-view-hierarchy-with-custom-traits.md)
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
@@ -127,6 +128,13 @@ Don’t create window scene objects directly. Instead, specify that you want a [
   The coordinate space occupied by the scene.
 - [var interfaceOrientation: UIInterfaceOrientation](uiwindowscene/interfaceorientation.md)
   The orientation to use when displaying content in your windows.
+### Instance Properties
+- [var closureConfirmation: UISceneClosureConfirmation?](uiwindowscene/closureconfirmation.md)
+  A configuration describing a confirmation dialog to be shown when a user action will result in destruction of the scene session and disconnection of the scene.
+### Instance Methods
+- [func displayLink(action: (CADisplayLink) -> Void) -> CADisplayLink?](uiwindowscene/displaylink(action:).md)
+- [func displayLink(target: Any, selector: Selector) -> CADisplayLink?](uiwindowscene/displaylink(target:selector:).md)
+  Creates a display link targeting the display associated with this scene.
 
 ## Relationships
 

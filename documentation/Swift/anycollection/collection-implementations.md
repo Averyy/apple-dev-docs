@@ -69,7 +69,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript(AnyCollection<Element>.Index) -> Element](anycollection/subscript(_:)-87z1l.md)
   Accesses the element indicated by `position`.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](anycollection/subscript(_:)-9guhy.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](anycollection/subscript(_:)-9guhy.md)
 - [subscript<R>(R) -> Self.SubSequence](anycollection/subscript(_:)-t0ed.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(Range<AnyCollection<Element>.Index>) -> AnyCollection<Element>.SubSequence](anycollection/subscript(_:)-vb3o.md)

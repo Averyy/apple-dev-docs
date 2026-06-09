@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains multiple leaderboard resources.
+The response body for endpoints that list Game Center leaderboards.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -46,7 +46,7 @@ object GameCenterLeaderboardsResponse
 - [object GameCenterLeaderboardCreateRequest](gamecenterleaderboardcreaterequest.md)
   The request body you use to create a leaderboard.
 - [object GameCenterLeaderboardResponse](gamecenterleaderboardresponse.md)
-  A response that contains a single leaderboard image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](gamecenterleaderboardgroupleaderboardlinkageresponse.md)

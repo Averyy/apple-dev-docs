@@ -17,6 +17,7 @@ A view that arranges its children in a line that grows horizontally, creating it
 ## Declaration
 
 ```swift
+nonisolated
 struct LazyHStack<Content> where Content : View
 ```
 

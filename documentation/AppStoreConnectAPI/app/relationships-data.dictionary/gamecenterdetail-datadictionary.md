@@ -16,6 +16,7 @@ object App.Relationships.GameCenterDetail
 
 ### Objects
 - [object App.Relationships.GameCenterDetail.Data](app/relationships-data.dictionary/gamecenterdetail-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related Game Center detail resource.
 
 ## Properties
 

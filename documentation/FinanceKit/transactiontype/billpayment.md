@@ -8,6 +8,7 @@ A bill payment, usually carried out through an eBill or eCheck system.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

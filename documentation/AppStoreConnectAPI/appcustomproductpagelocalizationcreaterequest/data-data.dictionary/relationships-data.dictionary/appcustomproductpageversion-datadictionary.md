@@ -16,7 +16,7 @@ object AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCusto
 
 ### Objects
 - [object AppCustomProductPageLocalizationCreateRequest.Data.Relationships.AppCustomProductPageVersion.Data](appcustomproductpagelocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
-  The request body you use to update an app custom product page localization create request.
+  The request body you use to create an app custom product page localization.
 
 ## Properties
 

@@ -6,9 +6,9 @@ A person may have difficulty remembering a sequence of steps, or they may find a
 
 #### Overview
 
-People who have cognitive impairments or challenges with maintaining focus can use Apple’s cognitive accessibility features to stay focused, streamline tasks, or limit the number of decisions to make. Design and develop your app to support cognitive accessibility features and provide a great experience for people who rely on these features.
+People who need support with comprehension, attention, or communication can use Apple’s cognitive accessibility features to stay focused, streamline tasks, or limit the number of decisions to make. Design and develop your app to support cognitive accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows a person in a room with an easel, desk, lamp, computer chair, Mac, and their pet cat. The person is holding a paintbrush and painting while wearing AirPods to maintain focus on their task.](https://docs-assets.developer.apple.com/published/e9d29f6acd65c88746859f7e48fea15a/accessibility-scene-cognitive%402x.png)
+![An illustration that shows a person in a room with an easel, desk, lamp, computer chair, Mac, and their pet cat. The person is holding a paintbrush and painting while wearing AirPods to maintain focus on their task.](https://docs-assets.developer.apple.com/published/f88d682c62c7444a826873ed38a7711d/accessibility-scene-cognitive%402x.png)
 
 ##### Related Videos
 

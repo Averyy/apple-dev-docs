@@ -6,29 +6,33 @@ Expand the market for your app by supporting multiple languages and regions.
 
 #### Overview
 
-Localization is the process of translating and adapting your app into multiple languages and regions. Localize your app to provide access for users who speak a variety of languages, and who download from different App Store territories.
+Localization is the process of translating and adapting your app into multiple languages and regions. Localize your app so it adapts for people who speak a variety of languages, and who download your app from different App Store territories.
 
-First, *internationalize* your code with APIs that automatically format and translate strings correctly for the language and region. Then add support for content that includes plural nouns and verbs by following language plural rules to increase the accuracy of your translations.
+First, use localizable APIs that format and translate strings correctly for the language and region setting on the device. For more information, see [`Supporting multiple languages in your app`](supporting-multiple-languages-in-your-app.md).
 
-##### Translate and Adapt Your App
+Then, you have several options for localizing your app that you can use separately or in combination:
 
-In Xcode, localization refers specifically to the set of resources for a specific language and region that you support.
+- Let agents in the coding assistant add languages, string catalog files, and translations for you. For more information, see [`Localizing your app using agents`](localizing-your-app-using-agents.md).
+- Add string catalogs to your app and manage languages, comments, and translations using the string catalog editor. For more information, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
+- Export localizations and send the files to *localizers*, who translate the strings and adapt resources. For more information, see [`Exporting localizations`](exporting-localizations.md) and [`Importing localizations`](importing-localizations.md).
 
-You add a localization to your project and select the resources you want to include for that language and region. Export the localization and send the files to *localizers*, who translate the user-facing text and adapt resources for particular cultures and regions. Finally, you import the localized files and test the app in that language and region directly in Xcode.
+Next, test your app in the languages and regions you support in Xcode previews and by running your app on simulated and physical devices. For more information, see [`Previewing localizations`](previewing-localizations.md) and [`Testing localizations when running your app`](testing-localizations-when-running-your-app.md).
 
-When you release a localized version of your app, you can also localize the App Store information in App Store Connect for the specific territories where you offer your app.
+To get the best feedback on your translations, distribute your app to native speakers in the languages that you support. For more information on using TestFlight, see [`Distributing your app for beta testing and releases`](distributing-your-app-for-beta-testing-and-releases.md).
 
-For other localization tips, tools, and resources, see [`Expanding Your App to New Markets`](https://developer.apple.comhttps://developer.apple.com/localization/).
+Finally, when you release a localized version of your app, localize the App Store information in App Store Connect for the specific territories where you offer your app. For more information, see [`Localize app information`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information/).
 
-> ❗ **Important**: In Xcode 15 and later, string catalogs are the recommended way to localize strings. In earlier versions of Xcode, use strings and `stringsdict` files. For more information about string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
+For other localization tips, tools, and resources, see [`Expand your app to new markets`](https://developer.apple.comhttps://developer.apple.com/localization/).
 
 ## Topics
 
 ### Essentials
 - [Supporting multiple languages in your app](supporting-multiple-languages-in-your-app.md)
-  Internationalize your app’s strings, images, and other resource types to prepare for the translation process.
+  Internationalize your app’s strings, images, and other resource types to prepare for localization.
+- [Localizing your app using agents](localizing-your-app-using-agents.md)
+  Use agentic coding tools to translate the strings in your app into multiple languages and regions.
 - [Localizing and varying text with a string catalog](localizing-and-varying-text-with-a-string-catalog.md)
-  Use a string catalog to translate text, handle plurals, and vary the text your app displays on specific devices.
+  Use string catalogs to manage localizable strings, add languages, translate text, handle plurals, and vary text by device.
 - [Using generated localizable symbols in your code](using-generated-localizable-symbols-in-your-code.md)
   Add keys directly to your string catalog that you can reference in your code using Xcode generated localizable symbols.
 - [Localizing Landmarks](localizing-landmarks.md)
@@ -37,7 +41,7 @@ For other localization tips, tools, and resources, see [`Expanding Your App to N
 - [Preparing your interface for localization](preparing-your-interface-for-localization.md)
   Find text in your app that needs translation and verify that your interface adapts to translated text.
 - [Preparing your app’s text for translation](preparing-your-apps-text-for-translation.md)
-  Make your app’s text translatable by leveraging the localization APIs in the Foundation framework.
+  Use localizable APIs to populate string catalogs automatically with your app’s user-facing text.
 - [Preparing dates, currencies, and numbers for translation](preparing-dates-numbers-with-formatters.md)
   Ensure that dates, currencies, and numbers display correctly across multiple languages and locales by using formatters.
 ### Layouts and views

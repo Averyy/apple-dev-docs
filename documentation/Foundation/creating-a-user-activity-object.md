@@ -27,10 +27,18 @@ The system associates user activity objects from your app with your developer Te
 
 ## See Also
 
-- [init(activityType: String)](nsuseractivity/init(activitytype:).md)
-  Creates a user activity object with the specified type.
-- [convenience init()](nsuseractivity/init.md)
-  Creates a user activity object using the first activity type declared in the app’s information property list file.
+- [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
+  Create, send, and receive user activities directly.
+- [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
+  Define and manage which of your app’s activities can be continued between devices.
+- [Increasing App Usage with Suggestions Based on User Activities](increasing-app-usage-with-suggestions-based-on-user-activities.md)
+  Provide a continuous user experience by capturing information from your app and displaying this information as proactive suggestions across the system.
+- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
+  Support the creation of notes that include your app’s content.
+- [class NSUserActivity](nsuseractivity.md)
+  A representation of the state of your app at a moment in time.
+- [protocol NSUserActivityDelegate](nsuseractivitydelegate.md)
+  The interface through which a user activity instance notifies its delegate of updates.
 
 
 ---

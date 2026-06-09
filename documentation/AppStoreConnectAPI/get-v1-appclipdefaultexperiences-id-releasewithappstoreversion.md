@@ -1,4 +1,4 @@
-# Read App Store Version Information for a Default App Clip Experience
+# Read app store version information for a default app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,34 +14,34 @@ Get App Store Version information for a default App Clip experience.
 
 ## Parameters
 
-- `fields[appStoreVersionLocalizations]` ([string]): Additional fields to include for each App Store Versions resource returned by the response.
-- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store Versions resource returned by the response.
+- `fields[appStoreVersionLocalizations]` ([string]): Additional fields to include for each App Store version localization resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit[appStoreVersionLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the App Store version localizations relationship is included.
-- `fields[appStoreVersionExperiments]` ([string])
-- `limit[appStoreVersionExperiments]` (integer)
-- `fields[appStoreVersionSubmissions]` ([string])
-- `fields[appStoreReviewDetails]` ([string])
-- `fields[apps]` ([string])
-- `fields[routingAppCoverages]` ([string])
-- `fields[appClipDefaultExperiences]` ([string])
-- `fields[appStoreVersionPhasedReleases]` ([string])
-- `fields[builds]` ([string])
-- `limit[appStoreVersionExperimentsV2]` (integer)
-- `fields[alternativeDistributionPackages]` ([string])
+- `limit[appStoreVersionLocalizations]` (integer): The maximum number of related App Store version localizations resources to return.
+- `fields[appStoreVersionExperiments]` ([string]): Additional fields to include for each App Store version experiment resource returned by the response.
+- `limit[appStoreVersionExperiments]` (integer): The maximum number of related App Store version experiments resources to return.
+- `fields[appStoreVersionSubmissions]` ([string]): Additional fields to include for each App Store version submission resource returned by the response.
+- `fields[appStoreReviewDetails]` ([string]): Additional fields to include for each App Store review detail resource returned by the response.
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+- `fields[routingAppCoverages]` ([string]): Additional fields to include for each routing app coverage resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each default App Clip experience resource returned by the response.
+- `fields[appStoreVersionPhasedReleases]` ([string]): Additional fields to include for each App Store version phased release resource returned by the response.
+- `fields[builds]` ([string]): Additional fields to include for each build resource returned by the response.
+- `limit[appStoreVersionExperimentsV2]` (integer): The maximum number of related App Store version experiments (v2) resources to return.
+- `fields[alternativeDistributionPackages]` ([string]): Additional fields to include for each alternative distribution package resource returned by the response.
 - `fields[gameCenterAppVersions]` ([string])
 
 ## See Also
 
-- [Read Default App Clip Experience Information](get-v1-appclipdefaultexperiences-_id_.md)
+- [Read default app clip experience information](get-v1-appclipdefaultexperiences-_id_.md)
   Get a specific default App Clip experience.
-- [Read the App Store Review Detail for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
+- [Read the app store review detail for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
   Get App Store Review details for a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipAppStoreReviewDetail](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
-- [Read Localization Information for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md)
+- [Get the App Store review detail ID for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
+- [Read localization information for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-appclipdefaultexperiencelocalizations.md)
   Get localized metadata that appears on the App Clip card for a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipDefaultExperienceLocalizations](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
-- [Get the App Store Versions Resource ID for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
+- [List localization IDs for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
+- [Get the app store versions resource id for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
   Get IDs for App Store Versions related to a default App Clip experience.
 
 

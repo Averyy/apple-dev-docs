@@ -23,6 +23,8 @@ Before you run the sample code project in Xcode, open Safari and choose Develop 
 
 - [Creating a Safari web extension](creating-a-safari-web-extension.md)
   Build a Safari web extension in Xcode.
+- [Building and testing a Safari web extension](building-and-testing-a-safari-web-extension.md)
+  Get started with Safari web extensions by creating one from the ground up, using any code editor.
 - [Developing a Safari Web Extension](developing-a-safari-web-extension.md)
   Customize and enhance web pages by building a Safari web extension.
 

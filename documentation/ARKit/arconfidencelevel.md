@@ -27,15 +27,15 @@ enum ARConfidenceLevel
   Depth-value accuracy in which the framework is fairly confident.
 ### Initializers
 - [init?(rawValue: Int)](arconfidencelevel/init(rawvalue:).md)
+### Default Implementations
+- [Comparable Implementations](arconfidencelevel/comparable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)

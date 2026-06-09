@@ -16,7 +16,7 @@ transportType?: TransportType;
 
 #### Discussion
 
-Use `transportType` to specify the mode of transportation for your [`route(request, callback)`](directions/route.md) and [`eta(request, callback)`](directions/eta.md) requests.
+Use `transportType` to specify the mode of transportation for your [`route(request)`](directions/route.md) and [`eta(request)`](directions/eta.md) requests.
 
 The default value of this property is [`Automobile`](transporttype/automobile.md).
 
@@ -28,6 +28,8 @@ The default value of this property is [`Automobile`](transporttype/automobile.md
   The time of departure used in an estimated arrival time request.
 - [destinations](etarequestoptions/destinations.md)
   An array of coordinates that represent end points for estimated arrival time requests.
+- [signal](etarequestoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

@@ -25,6 +25,8 @@ Safari web extensions are available in macOS with Safari 14 and later, visionOS 
 ### New extensions
 - [Creating a Safari web extension](creating-a-safari-web-extension.md)
   Build a Safari web extension in Xcode.
+- [Building and testing a Safari web extension](building-and-testing-a-safari-web-extension.md)
+  Get started with Safari web extensions by creating one from the ground up, using any code editor.
 - [Modernizing Safari Web Extensions](modernizing-safari-web-extensions.md)
   Learn about enhancements to Safari Web Extensions.
 - [Developing a Safari Web Extension](developing-a-safari-web-extension.md)

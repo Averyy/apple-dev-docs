@@ -16,6 +16,7 @@ object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTr
 
 ### Objects
 - [object AppPreviewSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](apppreviewsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app preview set.
 
 ## Properties
 

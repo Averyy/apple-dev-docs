@@ -16,6 +16,8 @@ enum AVContentProposalAction
 
 ## Topics
 
+### Creating an action
+- [init?(rawValue: Int)](avcontentproposalaction/init(rawvalue:).md)
 ### Actions
 - [AVContentProposalAction.accept](avcontentproposalaction/accept.md)
   The user accepted the content proposal.
@@ -23,8 +25,6 @@ enum AVContentProposalAction
   The user rejected the content proposal.
 - [AVContentProposalAction.defer](avcontentproposalaction/defer.md)
   The user deferred the content proposal.
-### Initializers
-- [init?(rawValue: Int)](avcontentproposalaction/init(rawvalue:).md)
 
 ## Relationships
 

@@ -9,7 +9,6 @@ Settings that configure the room-scanning process.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

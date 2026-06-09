@@ -12,17 +12,17 @@ The method MapKit JS calls when the framework creates a map feature annotation.
 
 ```swift
 get annotationForMapFeature():
+    | ((
+          mapFeatureAnnotation: MapFeatureAnnotation,
+      ) => Annotation | undefined)
+    | undefined;
+set annotationForMapFeature(
+    value:
         | ((
               mapFeatureAnnotation: MapFeatureAnnotation,
           ) => Annotation | undefined)
-        | undefined;
-set annotationForMapFeature(
-        value:
-            | ((
-                  mapFeatureAnnotation: MapFeatureAnnotation,
-              ) => Annotation | undefined)
-            | undefined,
-    );
+        | undefined,
+);
 ```
 
 #### Discussion

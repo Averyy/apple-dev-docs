@@ -25,7 +25,6 @@ The delegate implements this method only to override the help-anchor lookup beha
 
 ## See Also
 
-- [Sheet Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Sheets/Sheets.html#//apple_ref/doc/uid/10000002i)
 - [var showsHelp: Bool](nsalert/showshelp.md)
   Specifies whether the alert has a help button.
 - [Dialogs and Special Panels](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Dialog/Dialog.html#//apple_ref/doc/uid/10000071i)

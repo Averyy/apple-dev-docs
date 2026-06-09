@@ -17,6 +17,7 @@ A control into which people securely enter private text.
 ## Declaration
 
 ```swift
+nonisolated
 struct SecureField<Label> where Label : View
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Donates an AppIntent to the transcript.
+Donates the specified app intent to the system asynchronously.
 
 **Availability**:
 - iOS 16.0+
@@ -21,14 +21,26 @@ Donates an AppIntent to the transcript.
 func donate(intent: some AppIntent) async throws -> IntentDonationIdentifier
 ```
 
+#### Return Value
+
+A unique identifier you can use to refer to the donation later.
+
+#### Discussion
+
+When someone completes an action in your app, call this method to donate a matching app intent. The system doesn’t run the app intent you provide, but uses the information to predict future actions. If an error occurs during the donation process, this method throws that error so you can handle it.
+
+## Parameters
+
+- `intent`: An app intent for an action your app performed. Put enough information into the app intent that your app can replicate the action later.
+
 ## See Also
 
 - [func donate(intent: some AppIntent) -> IntentDonationIdentifier](intentdonationmanager/donate(intent:)-57fg4.md)
-  Donates an AppIntent to the transcript.
+  Donates the specified app intent to the system synchronously.
 - [func donate(intent: some AppIntent, result: some IntentResult) async throws -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-1ltmi.md)
-  Donates an AppIntent and IntentResult to the transcript.
+  Donates the specified app intent and result to the system asynchronously.
 - [func donate(intent: some AppIntent, result: some IntentResult) -> IntentDonationIdentifier](intentdonationmanager/donate(intent:result:)-7ztce.md)
-  Donates an AppIntent and IntentResult to the transcript.
+  Donates the specified app intent and result to the system synchronously.
 
 
 ---

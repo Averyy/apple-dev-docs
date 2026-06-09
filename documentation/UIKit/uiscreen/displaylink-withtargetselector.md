@@ -9,7 +9,7 @@ Returns a display link object for the current screen.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 
 ## Declaration
 

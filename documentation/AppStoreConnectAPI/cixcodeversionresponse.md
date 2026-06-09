@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Xcode Versions resource.
+The response body for endpoints that read a single Xcode version available in Xcode Cloud.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -23,9 +23,9 @@ object CiXcodeVersionResponse
 ## See Also
 
 - [object CiXcodeVersion](cixcodeversion.md)
-  The data structure that represents an Xcode Versions resource.
+  An Xcode version available in Xcode Cloud for running workflow builds and tests.
 - [object CiXcodeVersionsResponse](cixcodeversionsresponse.md)
-  A response that contains a list of Xcode Versions resources.
+  The response body for endpoints that list Xcode versions available for Xcode Cloud.
 - [object CiXcodeVersionMacOsVersionsLinkagesResponse](cixcodeversionmacosversionslinkagesresponse.md)
 
 

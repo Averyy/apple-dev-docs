@@ -6,6 +6,9 @@
 You implement the [`GKChallengeEventHandlerDelegate`](gkchallengeeventhandlerdelegate.md) delegate to control how challenges are displayed in your game.
 
 **Availability**:
+- iOS 6.0+
+- iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.8+
 - visionOS 1.0+
 

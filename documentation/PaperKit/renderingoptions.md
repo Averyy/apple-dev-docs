@@ -20,12 +20,12 @@ struct RenderingOptions
 
 ## Topics
 
-### Initializers
+### Creating rendering options
 - [init(darkUserInterfaceStyle: Bool, layoutRightToLeft: Bool)](renderingoptions/init(darkuserinterfacestyle:layoutrighttoleft:).md)
   Creates a new rendering options value.
 - [init(traitCollection: UITraitCollection)](renderingoptions/init(traitcollection:).md)
   Creates the most suitable options for rendering on a device with the specified traits.
-### Instance Properties
+### Configuring style
 - [var darkUserInterfaceStyle: Bool](renderingoptions/darkuserinterfacestyle.md)
   Use a dark user interface style for rendering.
 - [var rightToLeftLayoutDirection: Bool](renderingoptions/righttoleftlayoutdirection.md)
@@ -41,9 +41,10 @@ struct RenderingOptions
 ## See Also
 
 - [struct FeatureSet](featureset.md)
-  The features supported by PaperKit UI / data models.
+  The features PaperKit supports in its UI and data models.
 - [struct ShapeConfiguration](shapeconfiguration.md)
   A configuration that specifies the appearance of a shape.
+- [enum PaperDocumentDisplayMode](paperdocumentdisplaymode.md)
 
 
 ---

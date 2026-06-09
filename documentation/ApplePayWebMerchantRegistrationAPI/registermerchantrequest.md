@@ -20,7 +20,10 @@ The following example shows the structure of a JSON object with information on h
 
 ```json
 {
-    "domainNames" : ["subdomain-1.example.com", "subdomain-2.example.com"],
+    "domainNames" : [
+        "subdomain-1.example.com",
+        "subdomain-2.example.com"
+    ],
     "partnerMerchantName" : "Example Merchant",
     "partnerInternalMerchantIdentifier": "ABC-123456",
     "encryptTo" : "platformintegrator.com.example",

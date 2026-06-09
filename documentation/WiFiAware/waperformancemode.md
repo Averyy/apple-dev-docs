@@ -8,6 +8,7 @@ The performance mode that indicates what performance criterion to prioritize.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -66,8 +66,6 @@ print(numbers.dropLast(10))
   Removes the elements in the specified subrange from the collection.
 - [func removeSubrange<R>(R)](string/removesubrange(_:)-9twng.md)
   Removes the elements in the specified subrange from the collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](string/filter(_:).md)
-  Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> Self.SubSequence](string/drop(while:).md)
   Returns a subsequence by skipping elements while `predicate` returns `true` and returning the remaining elements.
 - [func dropFirst(Int) -> Self.SubSequence](string/dropfirst(_:).md)

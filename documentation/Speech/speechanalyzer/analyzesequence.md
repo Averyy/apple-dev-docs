@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: method
 
-Analyzes an input sequence, returning when the sequence is consumed.
+Analyzes an input sequence, returning when the sequence terminates.
 
 **Availability**:
 - iOS 26.0+
@@ -21,11 +21,13 @@ final func analyzeSequence<InputSequence>(_ inputSequence: InputSequence) async 
 
 #### Return Value
 
-The time-code of the last audio sample of the input, or `nil` if the input sequence was empty. You may use this value for the parameter of [`finalizeAndFinish(through:)`](speechanalyzer/finalizeandfinish(through:).md) (or other methods).
+The time-code of the last audio sample that was consumed from this or an earlier input sequence, or `nil` if no audio sample has been consumed. You may use this value for the parameter of [`finalizeAndFinish(through:)`](speechanalyzer/finalizeandfinish(through:).md) (or other methods).
 
 #### Discussion
 
-When this method returns, the input sequence will have been consumed, but the last of the audio may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](speechanalyzer/finalize(through:).md) and await its return.
+When this method returns, the last audio consumed from the input sequence may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](speechanalyzer/finalize(through:).md) and await its return.
+
+If you cancel the task executing this method, most input sequences will terminate early, causing this method to return early. The method returns the time-code of the last audio sample that was consumed and does not throw `CancellationError`.
 
 ## Parameters
 

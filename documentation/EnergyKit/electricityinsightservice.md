@@ -9,7 +9,6 @@ A service for retrieving insights about electricity consumption.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -37,10 +36,10 @@ final actor ElectricityInsightService
 
 ## See Also
 
-- [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
+- [struct ElectricityInsightRecord](electricityinsightrecord.md)
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
   A protocol for types that can measure electricity usage data.
 

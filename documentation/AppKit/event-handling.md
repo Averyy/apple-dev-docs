@@ -63,7 +63,7 @@ Respond to mouse, keyboard, touch, and tablet events and gestures that originate
   Posted whenever a view recalculates its tracking areas.
 ### Managing Tracking Rectangles
 - [func addTrackingRect(NSRect, owner: Any, userData: UnsafeMutableRawPointer?, assumeInside: Bool) -> NSView.TrackingRectTag](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md)
-  Establishes  an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
+  Establishes an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
 - [func removeTrackingRect(NSView.TrackingRectTag)](nsview/removetrackingrect(_:).md)
   Removes the tracking rectangle identified by a tag.
 - [typealias TrackingRectTag](nsview/trackingrecttag.md)
@@ -101,6 +101,8 @@ Respond to mouse, keyboard, touch, and tablet events and gestures that originate
   The array of pasteboard drag types that the view can accept.
 - [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nsview/begindraggingsession(with:event:source:).md)
   Initiates a dragging session with a group of dragging items.
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+  Initiates a drag operation using a gesture recognizer.
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nsview/shoulddelaywindowordering(for:).md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 

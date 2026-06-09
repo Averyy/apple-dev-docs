@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration to install a package.
+The declaration to configure a package.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,11 +29,12 @@ This declaration installs a package on a device. Packages can contain apps, font
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | macOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
 
@@ -59,12 +58,15 @@ This configuration installs a required package.
 
 ### Objects
 - [object PackageInstallBehaviorObject](packageinstallbehaviorobject.md)
-  Specifies the install behavior of the package.
+  A dictionary that describes how and when to install the package.
+- [object PackageUninstallBehaviorObject](packageuninstallbehaviorobject.md)
+  A dictionary that describes how to uninstall the package.
 
 ## Properties
 
 - `InstallBehavior` (PackageInstallBehaviorObject): A dictionary that describes how and when to install the package.
 - `ManifestURL` (string) *(required)*: The URL of the manifest document for the package that the device downloads. The manifest is returned as a [`ManifestURL`](manifesturl.md) property list. The `url` property of the manifest must point to the package (.pkg) file to install.
+- `UninstallBehavior` (PackageUninstallBehaviorObject): A dictionary that describes how to uninstall the package. Available: macOS 27+
 
 ## See Also
 
@@ -84,20 +86,20 @@ This configuration installs a required package.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

@@ -30,6 +30,8 @@ Coordinate the scheduling and synchronization of your app’s tasks, and log inf
   Review unsupported symbols and their replacements.
 ### Reference
 - [os Constants](os-constants.md)
+### Variables
+- [var OS_LOG_STRING_SECTION: String](os_log_string_section.md)
 
 
 ---

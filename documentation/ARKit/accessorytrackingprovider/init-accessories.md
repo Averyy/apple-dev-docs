@@ -14,10 +14,6 @@ Create an accessory tracking provider.
 convenience init(accessories: [Accessory])
 ```
 
-#### Return Value
-
-The accessory tracking provider.
-
 ## Parameters
 
 - `accessories`: Accessories to track.

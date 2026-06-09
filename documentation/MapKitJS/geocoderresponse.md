@@ -20,7 +20,7 @@ interface GeocoderResponse
 
 #### Overview
 
-The `data` parameter of the [`lookup(place, callback, options)`](geocoder/lookup.md) or [`reverseLookup(coordinate, callback, options)`](geocoder/reverselookup.md) callback function contains the geocoder response. MapKit JS parses the `data` object from the geocoder JSON response, which contains an array of [`Place`](place.md) objects.
+The `data` parameter of the [`lookup(place, options)`](geocoder/lookup.md) or [`reverseLookup(coordinate, options)`](geocoder/reverselookup.md) callback function contains the geocoder response. MapKit JS parses the `data` object from the geocoder JSON response, which contains an array of [`Place`](place.md) objects.
 
 If there’s no response, [`results`](geocoderresponse/results.md) is an empty array.
 
@@ -32,11 +32,11 @@ If there’s no response, [`results`](geocoderresponse/results.md) is an empty a
 
 ## See Also
 
-- [lookup(place, callback, options)](geocoder/lookup.md)
+- [lookup(place, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
 - [interface GeocoderLookupOptions](geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
 - [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.

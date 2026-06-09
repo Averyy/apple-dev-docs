@@ -51,13 +51,14 @@ entity.components.set(AudioMixGroupsComponent(mixGroups: [mixGroup]))
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also
 
+- [Mixing spatial music](mixing-spatial-music.md)
+  Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
 - [struct AudioMixGroupsComponent](audiomixgroupscomponent.md)
   A component that provides functionality for controlling the playback of audio you assign to mix groups in a scene.
 

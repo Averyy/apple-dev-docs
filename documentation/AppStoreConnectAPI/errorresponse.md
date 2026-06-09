@@ -34,6 +34,7 @@ object ErrorResponse
 ## See Also
 
 - [object ErrorLinks](errorlinks.md)
+  Navigation links within an error response, providing references to related resources or documentation.
 - [object JsonPointer](jsonpointer.md)
   An object that contains the JSON pointer that indicates the location of the error.
 - [object Parameter](parameter.md)

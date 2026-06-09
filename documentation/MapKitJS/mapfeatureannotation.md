@@ -14,6 +14,11 @@ An object that represents a map feature that the user selects.
 class MapFeatureAnnotation extends PlaceAnnotation
 ```
 
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+
 #### Overview
 
 MapKit JS creates a `MapFeatureAnnotation` when you set [`selectableMapFeatures`](map/selectablemapfeatures.md), and when a person taps a map feature. The instance is available from the [`selectedAnnotation`](map/selectedannotation.md) property when a person selects a map feature and MapKit JS passes it to the [`annotationForMapFeature`](map/annotationformapfeature.md) delegate method.
@@ -35,7 +40,7 @@ MapKit JS removes the annotation as soon as a person deselects the map feature.
   The glyph image for the place.
 - [selectedGlyphImage](placeannotation/selectedglyphimage.md)
   The selected glyph image for the place.
-### Fetching places
+### Deprecated
 - [fetchPlace(callback)](mapfeatureannotation/fetchplace.md)
   Fetches the place object associated with the map feature.
 ### Instance Properties
@@ -69,10 +74,6 @@ MapKit JS removes the annotation as soon as a person deselects the map feature.
   An object that fetches points of interest within a specified region.
 - [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
   An object that describes map feature annotation images.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
-  Point-of-interest categories.
-- [const MapFeatureType](mapfeaturetype.md)
-  Values that describe the feature type of a point of interest.
 
 
 ---

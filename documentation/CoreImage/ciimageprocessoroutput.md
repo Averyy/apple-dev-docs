@@ -50,6 +50,11 @@ To access input pixel data in your image processor block, see the [`CIImageProce
 ### Instance Properties
 - [var digest: UInt64](ciimageprocessoroutput/digest.md)
   A 64-bit digest that uniquely describes the contents of the output of a processor.
+### Instance Methods
+- [func temporaryPixelBuffer(withIdentifier: String, format: OSType, width: Int, height: Int, attributes: [AnyHashable : Any]?) -> Unmanaged<CVPixelBuffer>?](ciimageprocessoroutput/temporarypixelbuffer(withidentifier:format:width:height:attributes:).md)
+  Returns a temporary CVPixelBuffer that your Core Image Processor Kernel can use as scratch storage during processing.
+- [func temporarySurface(withIdentifier: String, format: OSType, width: Int, height: Int) -> IOSurface?](ciimageprocessoroutput/temporarysurface(withidentifier:format:width:height:).md)
+  Returns a temporary IOSurface that your Core Image Processor Kernel can use as scratch storage during processing.
 
 ## See Also
 

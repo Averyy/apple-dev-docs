@@ -18,6 +18,7 @@ object GameCenterDetailCreateRequest
 
 ### Objects
 - [object GameCenterDetailCreateRequest.Data](gamecenterdetailcreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center detail.
 
 ## Properties
 
@@ -26,7 +27,7 @@ object GameCenterDetailCreateRequest
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)
-  The data structure that represents a Game Center detail resource.
+  The Game Center configuration for an app, linking it to leaderboards, achievement sets, and groups.
 - [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest](gamecenterdetailgamecenterachievementsv2linkagesrequest.md)
   The data structure that represents a Game Center detail Game Center achievement linkage request resource.
 - [object GameCenterDetailGameCenterAchievementsV2LinkagesResponse](gamecenterdetailgamecenterachievementsv2linkagesresponse.md)
@@ -52,9 +53,9 @@ object GameCenterDetailCreateRequest
 - [object GameCenterDetailGameCenterLeaderboardsLinkagesResponse](gamecenterdetailgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a Game Center detail and a leaderboard.
 - [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest](gamecenterdetailchallengesminimumplatformversionslinkagesrequest.md)
-  The data structure that represents a detail resource.
+  The request body for updating the minimum platform versions required for challenges in a Game Center detail.
 - [object GameCenterDetailResponse](gamecenterdetailresponse.md)
-  A response that contains a single Game Center detail resource.
+  The response body for endpoints that read or modify the Game Center details for an app.
 
 
 ---

@@ -11,8 +11,6 @@ The payload that configures a Mail account.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,8 +29,8 @@ Specify `com.apple.mail.managed` as the payload type.
 | Device channel | iOS, visionOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
@@ -118,8 +116,8 @@ Specify `com.apple.mail.managed` as the payload type.
 
 ## Properties
 
-- `allowMailDrop` (boolean): If `true`, the system enables this account to use Mail Drop.
-- `disableMailRecentsSyncing` (boolean): If `true`, the system excludes this account from Recent Addresses syncing.
+- `allowMailDrop` (boolean): If `true`, the system enables this account to use Mail Drop. Available: iOS 9.2+ | iPadOS 9.2+ | macOS 10.12+ | visionOS 1.1+
+- `disableMailRecentsSyncing` (boolean): If `true`, the system excludes this account from Recent Addresses syncing. Available: iOS 6+ | iPadOS 6+ | macOS 10.7+ | visionOS 1.1+
 - `EmailAccountDescription` (string): A user-visible description of the email account, shown in the Mail and Settings applications.
 - `EmailAccountName` (string): The full user name for the account. The system displays this name in sent messages.
 - `EmailAccountType` (string) *(required)*: Defines the protocol to use for the account.
@@ -138,21 +136,22 @@ Specify `com.apple.mail.managed` as the payload type.
 - `OutgoingMailServerUseSSL` (boolean): If `true`, the system enables SSL authentication on the outgoing mail server.
 - `OutgoingPassword` (string): The password for the outgoing mail server. Only use this in encrypted profiles.
 - `OutgoingPasswordSameAsIncomingPassword` (boolean): If `true`, the system prompts the user only once for the password, which it uses for both outgoing and incoming mail. This setting is only supported by interactive profile installations. Not supported by non-interactive installations, such as MDM on iOS.
-- `PreventAppSheet` (boolean): If `true`, the system prevents this account from sending mail in any app other than the Apple Mail app.
-- `PreventMove` (boolean): If `true`, the system prevents moving messages out of this email account and into another account. It also prevents forwarding or replying from an account other than the recipient of the message.
-- `SMIMEEnabled` (boolean): If `true`, the system enables S/MIME encryption. The system ignores this key in iOS 10.0 and later.
-- `SMIMEEnableEncryptionPerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI.
-- `SMIMEEnablePerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Deprecated in iOS 12.0. Use `SMIMEEnableEncryptionPerMessageSwitch` instead.
-- `SMIMEEncryptByDefault` (boolean): If `true`, the system enables S/MIME encryption by default.
-- `SMIMEEncryptByDefaultUserOverrideable` (boolean): If `true`, the user can turn encryption by default on/off, and encryption is on.
-- `SMIMEEncryptionCertificateUUID` (string): The UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in their Sent mailbox.
-- `SMIMEEncryptionCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the S/MIME encryption identity, and encryption is on.
-- `SMIMEEncryptionEnabled` (boolean): If `true`, the system enables S/MIME encryption for this account.
-- `SMIMESigningCertificateUUID` (string): The payload UUID of the identity certificate used to sign messages sent from this account.
-- `SMIMESigningCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the signing identity.
-- `SMIMESigningEnabled` (boolean): If `true`, the system enables S/MIME signing for this account.
-- `SMIMESigningUserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+- `PreventAppSheet` (boolean): If `true`, the system prevents this account from sending mail in any app other than the Apple Mail app. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `PreventMove` (boolean): If `true`, the system prevents moving messages out of this email account and into another account. It also prevents forwarding or replying from an account other than the recipient of the message. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMEEnabled` (boolean): If `true`, the system enables S/MIME encryption. The system ignores this key in iOS 10.0 and later. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMEEnableEncryptionPerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `SMIMEEnablePerMessageSwitch` (boolean): If `true`, the system displays the per-message encryption switch in the Mail Compose UI. Deprecated in iOS 12.0. Use `SMIMEEnableEncryptionPerMessageSwitch` instead. Available: iOS 8+ | iPadOS 8+
+Deprecated: iOS 10+ | iPadOS 10+
+- `SMIMEEncryptByDefault` (boolean): If `true`, the system enables S/MIME encryption by default. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `SMIMEEncryptByDefaultUserOverrideable` (boolean): If `true`, the user can turn encryption by default on/off, and encryption is on. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `SMIMEEncryptionCertificateUUID` (string): The UUID of the identity certificate used to decrypt messages sent to this account. The system attaches the public certificate to outgoing mail to allow the user to receive encrypted mail. When the user sends encrypted mail, the system uses the public certificate to encrypt the copy of the mail in their Sent mailbox. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMEEncryptionCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the S/MIME encryption identity, and encryption is on. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `SMIMEEncryptionEnabled` (boolean): If `true`, the system enables S/MIME encryption for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `SMIMESigningCertificateUUID` (string): The payload UUID of the identity certificate used to sign messages sent from this account. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
+- `SMIMESigningCertificateUUIDUserOverrideable` (boolean): If `true`, the user can select the signing identity. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `SMIMESigningEnabled` (boolean): If `true`, the system enables S/MIME signing for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `SMIMESigningUserOverrideable` (boolean): If `true`, the user can turn S/MIME signing on or off in Settings. Available: iOS 12+ | iPadOS 12+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 

@@ -17,7 +17,7 @@ Fetches a specific record.
 ## Declaration
 
 ```swift
-func record(for recordID: CKRecord.ID) async throws -> CKRecord
+func fetch(withRecordID recordID: CKRecord.ID) async throws -> CKRecord
 ```
 
 #### Discussion

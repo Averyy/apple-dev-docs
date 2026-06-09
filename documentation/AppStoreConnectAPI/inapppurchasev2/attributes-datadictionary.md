@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an in-app purchase v2 resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -25,7 +27,9 @@ object InAppPurchaseV2.Attributes
 ## See Also
 
 - [type InAppPurchaseType](inapppurchasetype.md)
+  A string that represents the type of an In-App Purchase.
 - [type InAppPurchaseState](inapppurchasestate.md)
+  A string that represents the review state of an In-App Purchase.
 - [object InAppPurchaseV2.Relationships](inapppurchasev2/relationships-data.dictionary.md)
 
 

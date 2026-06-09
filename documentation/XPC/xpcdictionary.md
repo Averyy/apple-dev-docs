@@ -91,10 +91,34 @@ struct XPCDictionary
 - [func map<ReturnType>((XPCDictionary.KeyValuePair) throws -> ReturnType) rethrows -> [ReturnType]](xpcdictionary/map(_:).md)
   Returns an array containing the results of mapping the given closure over the sequence’s elements.
 ### Subscripts
+- [subscript(String) -> uuid_t?](xpcdictionary/subscript(_:)-11qvo.md)
+  Get or set a value in this dictionary as a UUID.
 - [subscript(String) -> XPCEndpoint?](xpcdictionary/subscript(_:)-2p7tp.md)
   Get or set an `XPCEndpoint` value in this dictionary.
+- [subscript(String) -> FileDescriptor?](xpcdictionary/subscript(_:)-hl1w.md)
+  Get or set a value in this dictionary as a file descriptor.
+- [subscript(String) -> RawSpan?](xpcdictionary/subscript(_:)-n49r.md)
+  Get or set a value in this dictionary as data.
+- [subscript(String) -> XPCArray?](xpcdictionary/subscript(_:)-u6bo.md)
+  Get or set a value in this dictionary as an XPCArray.
+- [subscript(String, as _: RawSpan.Type) -> RawSpan?](xpcdictionary/subscript(_:as:)-1nvet.md)
+  Get a value in this dictionary as data.
+- [subscript(String, as _: FileDescriptor.Type) -> FileDescriptor?](xpcdictionary/subscript(_:as:)-279le.md)
+  Get a value in this dictionary as a file descriptor.
+- [subscript(String, as _: XPCArray.Type) -> XPCArray?](xpcdictionary/subscript(_:as:)-58a41.md)
+  Get a value in this dictionary as an XPCArray.
 - [subscript(String, as _: XPCEndpoint.Type) -> XPCEndpoint?](xpcdictionary/subscript(_:as:)-7rdzi.md)
   Get an `XPCEndpoint` value in this dictionary.
+- [subscript(String, as _: uuid_t.Type) -> uuid_t?](xpcdictionary/subscript(_:as:)-91g9b.md)
+  Get a value in this dictionary as a UUID.
+- [subscript(String, as _: XPCArray.Type, default _: @autoclosure () -> XPCArray) -> XPCArray](xpcdictionary/subscript(_:as:default:)-17z80.md)
+  Get a value in this dictionary as an XPCArray.
+- [subscript(String, as _: FileDescriptor.Type, default _: @autoclosure () -> FileDescriptor) -> FileDescriptor](xpcdictionary/subscript(_:as:default:)-51ffh.md)
+  Get a value in this dictionary as a file descriptor.
+- [subscript(String, as _: uuid_t.Type, default _: @autoclosure () -> uuid_t) -> uuid_t](xpcdictionary/subscript(_:as:default:)-vwea.md)
+  Get a value in this dictionary as a UUID.
+### Default Implementations
+- [ExpressibleByDictionaryLiteral Implementations](xpcdictionary/expressiblebydictionaryliteral-implementations.md)
 
 ## Relationships
 
@@ -103,6 +127,7 @@ struct XPCDictionary
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
+- [ExpressibleByDictionaryLiteral](../Swift/ExpressibleByDictionaryLiteral.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

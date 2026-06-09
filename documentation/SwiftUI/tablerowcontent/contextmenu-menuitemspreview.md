@@ -16,7 +16,7 @@ Adds a context menu with a preview to a table row.
 
 ```swift
 @MainActor
-@preconcurrency func contextMenu<M, P>(@ViewBuilder menuItems: () -> M, @ViewBuilder preview: () -> P) -> ModifiedContent<Self, _ContextMenuPreviewTableRowModifier<M, P>> where M : View, P : View
+@preconcurrency func contextMenu<M, P>(@ContentBuilder menuItems: () -> M, @ContentBuilder preview: () -> P) -> ModifiedContent<Self, _ContextMenuPreviewTableRowModifier<M, P>> where M : View, P : View
 ```
 
 #### Return Value

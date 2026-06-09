@@ -41,6 +41,7 @@ Create this device either by instantiating it directly and passing [`VZUSBMassSt
 
 - [class VZUSBController](vzusbcontroller.md)
   A class that represents a USB controller in a VM.
+- [class VZUSBPassthroughDevice](vzusbpassthroughdevice.md)
 
 
 ---

@@ -1,4 +1,4 @@
-# List App Preview Set IDs for a Custom Product Page Localization
+# List app preview set IDs for a custom product page localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ List the app preview set IDs for a specific custom product page localization.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app preview set resource identifiers to return.
 
 ## See Also
 

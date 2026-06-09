@@ -17,6 +17,7 @@ Changes the relative position of this shape using the specified point.
 ## Declaration
 
 ```swift
+nonisolated
 func offset(_ offset: CGPoint) -> OffsetShape<Self>
 ```
 

@@ -23,6 +23,11 @@ Associates a binding to be updated when the 3D chart’s pose is changed by an i
 
 - `pose`: The 3D chart’s current pose.
 
+## See Also
+
+- [func chart3DCameraProjection(Chart3DCameraProjection) -> some View](view/chart3dcameraprojection(_:).md)
+- [func chart3DRenderingStyle(Chart3DRenderingStyle) -> some View](view/chart3drenderingstyle(_:).md)
+
 
 ---
 

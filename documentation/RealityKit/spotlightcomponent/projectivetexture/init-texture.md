@@ -1,0 +1,25 @@
+# init(texture:)
+
+**Framework**: RealityKit  
+**Kind**: init
+
+Creates a new instance with the specified texture
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS ?+
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+init(texture: TextureResource)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/spotlightcomponent/projectivetexture/init(texture:))*

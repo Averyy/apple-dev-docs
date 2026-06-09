@@ -26,8 +26,6 @@ The zoom range describes the minimum and maximum camera distance in meters.
   Creates an instance of a camera zoom range object with an object literal.
 - [new CameraZoomRange(min, max)](camerazoomrange/camerazoomrangeconstructor2.md)
   Creates an instance of a camera zoom range object with the specified numeric arguments that specify minimum and maximum camera distances.
-- [interface CameraZoomRangeConstructorOptions](camerazoomrangeconstructoroptions.md)
-  Initialization options for the camera zoom range.
 
 
 ---

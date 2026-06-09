@@ -18,15 +18,11 @@
 var search: some AssistantSchemas.Intent { get }
 ```
 
-## Mentions
-
-- [Making in-app search actions available to Siri and Apple Intelligence](making-in-app-search-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 To integrate your app’s functionality with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 
-For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
+For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 The following example shows an app intent that conforms to the `system.search` schema:
 
@@ -40,11 +36,6 @@ func perform() async throws -> some IntentResult {
     }
 }
 ```
-
-## See Also
-
-- [AssistantSchemas.SystemIntent](assistantschemas/systemintent.md)
-  Assistant schema conformance for types you use for system functionality.
 
 
 ---

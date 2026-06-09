@@ -10,7 +10,6 @@ Creates a P-256 private key for signing from a data representation of the key wi
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
-- tvOS 13.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

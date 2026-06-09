@@ -11,6 +11,7 @@ A gesture that recognizes the motion of and handles dragging a window.
 ## Declaration
 
 ```swift
+nonisolated
 struct WindowDragGesture
 ```
 
@@ -43,12 +44,12 @@ struct MyView: View {
 
 ## Topics
 
-### Structures
-- [WindowDragGesture.Value](windowdraggesture/value.md)
-  The properties of a window drag gesture.
-### Initializers
+### Creating a window drag gesture
 - [init()](windowdraggesture/init.md)
   Creates a window drag gesture.
+### Getting the gesture’s value
+- [WindowDragGesture.Value](windowdraggesture/value.md)
+  The properties of a window drag gesture.
 
 ## Relationships
 

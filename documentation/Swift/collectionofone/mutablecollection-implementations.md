@@ -28,7 +28,7 @@
 ### Subscripts
 - [subscript(Range<Self.Index>) -> Self.SubSequence](collectionofone/subscript(_:)-5ny44.md)
 - [subscript<R>(R) -> Self.SubSequence](collectionofone/subscript(_:)-7b34k.md)
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](collectionofone/subscript(_:)-7lp8k.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](collectionofone/subscript(_:)-7lp8k.md)
 - [subscript(Range<Self.Index>) -> Slice<Self>](collectionofone/subscript(_:)-82bqh.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(Range<Self.Index>) -> Slice<Self>](collectionofone/subscript(_:)-8buws.md)

@@ -105,6 +105,7 @@ When implementing a custom type that conforms to the `SetAlgebra` protocol, you 
 ### Inherited By
 - [OptionSet](optionset.md)
 ### Conforming Types
+- [ObservationTracking.Options](../observation/observationtracking/options.md)
 - [Set](set.md)
 
 

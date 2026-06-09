@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe files.
 protocol FilesEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making file management actions available to Siri and Apple Intelligence](making-file-management-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,11 +33,6 @@ protocol FilesEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var file: some AssistantSchemas.Entity](assistantschemas/filesentity/file.md)
-  The app entity describes a file.
 
 
 ---

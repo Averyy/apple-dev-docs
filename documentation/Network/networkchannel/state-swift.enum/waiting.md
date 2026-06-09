@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: case
 
-Waiting connections have not yet been started, or do not have a viable network
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

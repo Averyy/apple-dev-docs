@@ -27,11 +27,11 @@ object BetaAppClipInvocationLocalizationUpdateRequest
 ## See Also
 
 - [object BetaAppClipInvocationLocalization](betaappclipinvocationlocalization.md)
-  The data structure that represents a Beta App Clip Invocation Localizations resource.
+  The localized title displayed to beta testers for a specific App Clip invocation.
 - [object BetaAppClipInvocationLocalizationCreateRequest](betaappclipinvocationlocalizationcreaterequest.md)
   The request body you use to create a Beta App Clip Localization.
 - [object BetaAppClipInvocationLocalizationResponse](betaappclipinvocationlocalizationresponse.md)
-  A response that contains a single Beta App Clip Invocation Localizations resource.
+  A response containing a single localized title for a beta App Clip invocation.
 
 
 ---

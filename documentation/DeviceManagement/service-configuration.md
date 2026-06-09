@@ -6,8 +6,7 @@
 Provides the full list of web service URLs and a list of possible error numbers.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 #### Discussion
 
@@ -223,7 +222,7 @@ Clients should use this endpoint every 5 minutes to retrieve the list of service
 - [object VppServiceConfigResponse](vppserviceconfigresponse.md)
   The response with the service configuration.
 ### Product Metadata
-- [Getting App and Book Information (Legacy)](getting-app-and-book-information-legacy.md)
+- [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
   Use a web service to find details about apps and books to show to your users.
 
 ## Endpoint

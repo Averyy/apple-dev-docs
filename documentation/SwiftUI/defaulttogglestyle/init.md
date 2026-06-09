@@ -17,6 +17,7 @@ Creates a default toggle style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

@@ -18,18 +18,13 @@ An error that signals the session reached its context window size limit.
 case exceededContextWindowSize(LanguageModelSession.GenerationError.Context)
 ```
 
-## Mentions
-
-- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-
 #### Discussion
 
 This error occurs when you use the available tokens for the context window of 4,096 tokens. The token count includes instructions, prompts, and outputs for a session instance. A single token corresponds to approximately three to four characters in languages like English, Spanish, or German, and one token per character in languages like Japanese, Chinese, and Korean.
 
 Start a new session when you exceed the content window size, and try again using a shorter prompt or shorter output length.
 
-For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
 ## See Also
 
@@ -42,7 +37,7 @@ For more information on managing the context window size, see [`TN3193: Managing
 - [case rateLimited(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/ratelimited(_:).md)
   An error that indicates your session has been rate limited.
 - [case refusal(LanguageModelSession.GenerationError.Refusal, LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/refusal(_:_:).md)
-  An error that happens when the session refuses the request.
+  An error indicating that the model refused to answer.
 - [case concurrentRequests(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/concurrentrequests(_:).md)
   An error that happens if you attempt to make a session respond to a second prompt while it’s still responding to the first one.
 - [case unsupportedGuide(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedguide(_:).md)

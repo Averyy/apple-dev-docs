@@ -80,10 +80,14 @@ In addition to managing local files, the system also uses this class to manage c
 - [init?(ofItemAtURL: URL, forPersistentIdentifier: Any)](nsfileversion/init(ofitematurl:forpersistentidentifier:).md)
 ### Instance Properties
 - [var hasLocalContents: Bool](nsfileversion/haslocalcontents.md)
+  Whether the version has local contents. Versions that are returned by +getNonlocalVersionsOfItemAtURL:completionHandler: do not initially have local contents. You can only access their contents, either directly via the URL or by invoking -replaceItemAtURL:options:error:, from within a coordinated read on the NSFileVersion’s URL.
 - [var hasThumbnail: Bool](nsfileversion/hasthumbnail.md)
+  Whether the version has a thumbnail image available. Thumbnails for versions from +getNonlocalVersionsOfItemAtURL:completionHandler: may not immediately be available. As soon as it becomes available, this property will change from NO to YES. You can use KVO to be notified of this change. If a thumbnail is available, you can access it using NSURLThumbnailKey or NSURLThumbnailDictionaryKey.
 - [var originatorNameComponents: PersonNameComponents?](nsfileversion/originatornamecomponents.md)
+  The name components of the user who created this version of the file. Is nil if the file is not shared or if the current user is the originator.
 ### Type Methods
 - [class func getNonlocalVersionsOfItem(at: URL, completionHandler: ([NSFileVersion]?, (any Error)?) -> Void)](nsfileversion/getnonlocalversionsofitem(at:completionhandler:).md)
+  Asynchronously returns an array of NSFileVersions associated with the file located by the given URL, or nil if there is no such file or another error occurs.
 
 ## Relationships
 

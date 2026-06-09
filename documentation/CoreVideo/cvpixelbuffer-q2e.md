@@ -50,6 +50,7 @@ A Core Video pixel buffer is an image buffer that holds pixels in main memory. A
   Returns the IOSurface backing the pixel buffer, or `NULL` if it is not backed by an IOSurface.
 - [func CVPixelBufferCreateResolvedAttributesDictionary(CFAllocator?, CFArray?, UnsafeMutablePointer<CFDictionary?>) -> CVReturn](cvpixelbuffercreateresolvedattributesdictionary(_:_:_:).md)
   Resolves an array of `CFDictionary` objects describing various pixel buffer attributes into a single dictionary.
+- [func CVPixelBufferIsCompatibleWithAttributes(CVPixelBuffer, CFDictionary?) -> Bool](cvpixelbufferiscompatiblewithattributes(_:_:).md)
 - [func CVPixelBufferGetTypeID() -> CFTypeID](cvpixelbuffergettypeid().md)
   Returns the Core Foundation type identifier of the pixel buffer type.
 ### Modifying Pixel Buffers
@@ -59,6 +60,26 @@ A Core Video pixel buffer is an image buffer that holds pixels in main memory. A
   Locks the base address of the pixel buffer.
 - [func CVPixelBufferUnlockBaseAddress(CVPixelBuffer, CVPixelBufferLockFlags) -> CVReturn](cvpixelbufferunlockbaseaddress(_:_:).md)
   Unlocks the base address of the pixel buffer.
+### Protocols
+- [protocol CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
+  CVPixelBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVPixelBuffer type.
+- [enum CVPixelBufferAttachmentKeyDefinitions](cvpixelbufferattachmentkeydefinitions.md)
+  A namespace for pixel buffer attachment keys.
+### Swift overlay types
+- [class CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+  CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
+- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+  CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
+- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+  A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
+- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+  Attributes needed for creating a pixel buffer.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+  Metadata associated with ProRes RAW images.
 ### Data Types
 - [typealias CVPixelBuffer](cvpixelbuffer.md)
   A reference to a Core Video pixel buffer object.

@@ -11,6 +11,7 @@ The table style that describes the behavior and appearance of a table with stand
 ## Declaration
 
 ```swift
+nonisolated
 struct BorderedTableStyle
 ```
 

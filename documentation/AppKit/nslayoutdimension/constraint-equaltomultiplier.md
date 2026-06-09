@@ -66,7 +66,6 @@ saveButton.widthAnchor.constraintEqualToAnchor(cancelButton.widthAnchor, multipl
 
 - [class NSLayoutConstraint](nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853)
 - [class NSLayoutAnchor](nslayoutanchor.md)
   A factory class for creating layout constraint objects using a fluent API.
 - [func constraint(equalTo: NSLayoutDimension, multiplier: CGFloat, constant: CGFloat) -> NSLayoutConstraint](nslayoutdimension/constraint(equalto:multiplier:constant:).md)

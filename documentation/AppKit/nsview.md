@@ -101,16 +101,34 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [Deprecated Symbols](nsview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Structures
+- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
+- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
 - [NSView.LayoutRegion](nsview/layoutregion.md)
 ### Instance Properties
+- [var appEntityUIElementProvider: ((NSView, AppEntityUIElementsContext) -> [AppEntityUIElement])?](nsview/appentityuielementprovider.md)
+  A closure that provides app entity identifiers to make custom view content discoverable by Apple Intelligence and Siri when it appears onscreen.
+- [var cornerConfiguration: NSViewCornerConfiguration?](nsview/cornerconfiguration.md)
+  Defines the corner styles (e.g., square, capsule, concentric, etc) for the view’s corners.
+- [var effectiveCornerRadii: NSViewCornerRadii?](nsview/effectivecornerradii.md)
+  The effective radius of each corner in the view, calculated based on the corner configuration (`cornerConfiguration`). This value is `nil` when the corner configuration is `nil`.
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+  Declares whether gesture recognizers should be exclusive in this view and its subviews.
 - [var prefersCompactControlSizeMetrics: Bool](nsview/preferscompactcontrolsizemetrics.md)
-  When this property is true, any NSControls in the view or its descendants will be sized with compact metrics compatible with macOS 15 and earlier. Defaults to false
+  When this property is `YES`, any `NSControl`s in the view or its descendants will be sized with compact metrics compatible with macOS 15.0 and earlier. Defaults to `NO`.
+- [var textSelectionManager: NSTextSelectionManager?](nsview/textselectionmanager.md)
+  The text selection manager for this view.
 - [var writingToolsCoordinator: NSWritingToolsCoordinator?](nsview/writingtoolscoordinator.md)
 ### Instance Methods
 - [func edgeInsets(for: NSView.LayoutRegion) -> NSEdgeInsets](nsview/edgeinsets(for:).md)
+- [func invalidateCornerConfiguration()](nsview/invalidatecornerconfiguration.md)
+  Invalidates the corner configuration, causing both the configuration and its dependencies to be recomputed.
 - [func layoutGuide(for: NSView.LayoutRegion) -> NSLayoutGuide](nsview/layoutguide(for:).md)
 - [func rect(for: NSView.LayoutRegion) -> NSRect](nsview/rect(for:).md)
+- [func viewDidChangeEffectiveCornerRadii()](nsview/viewdidchangeeffectivecornerradii.md)
+  Informs the view that its effective corner radii changed. This method should be overridden to apply the corner radii to the view as required.
 ### Enumerations
+- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+  Exclusive gesture behavior
 - [NSView.Invalidations](nsview/invalidations.md)
   Changes that cause aspects of a view to be invalid and require an update.
 
@@ -143,6 +161,7 @@ If your view descends from a class other than `NSView`, call `super` to let the 
 - [NSTextInsertionIndicator](nstextinsertionindicator.md)
 - [NSVisualEffectView](nsvisualeffectview.md)
 ### Conforms To
+- [AppEntityAnnotatable](../AppIntents/AppEntityAnnotatable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

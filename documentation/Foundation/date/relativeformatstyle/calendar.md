@@ -34,6 +34,8 @@ Defaults to [`autoupdatingCurrent`](nscalendar/autoupdatingcurrent.md). If you s
   The capitalization context to use when formatting the relative dates.
 - [var locale: Locale](date/relativeformatstyle/locale.md)
   The locale to use when formatting the relative date.
+- [func locale(Locale) -> Date.RelativeFormatStyle](date/relativeformatstyle/locale(_:).md)
+  Modifies the relative date format style to use the specified locale.
 
 
 ---

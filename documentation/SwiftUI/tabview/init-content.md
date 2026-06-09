@@ -3,26 +3,21 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a tab view that uses a builder to create its tabs.
-
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- tvOS 18.0+
-- visionOS 2.0+
-- watchOS 11.0+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 7.0+
 
 ## Declaration
 
 ```swift
-init<C>(@TabContentBuilder<Never> content: () -> C) where SelectionValue == Never, Content == TabContentBuilder<Never>.Content<C>, C : TabContent
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
-
-## Parameters
-
-- `content`: The [`Tab`](tab.md) content.
 
 ## See Also
 

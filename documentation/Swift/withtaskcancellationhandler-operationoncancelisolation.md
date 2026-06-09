@@ -18,7 +18,7 @@ Execute an operation with a cancellation handler that’s immediately invoked if
 
 ```swift
 @backDeployed(before: macOS 15.0, iOS 18.0, watchOS 11.0, tvOS 18.0, visionOS 2.0)
-func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel handler: @Sendable () -> Void, isolation: isolated (any Actor)? = #isolation) async rethrows -> T
+func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel handler: @Sendable () -> Void, isolation: isolated (any Actor)?) async rethrows -> T
 ```
 
 #### Discussion

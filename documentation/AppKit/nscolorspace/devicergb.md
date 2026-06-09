@@ -20,7 +20,8 @@ The `NSColorSpace` object. This color space has red, green, blue, and alpha comp
 
 ## See Also
 
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [class NSColorSpace](nscolorspace.md)
+  An object that represents a custom color space.
 - [class var genericRGB: NSColorSpace](nscolorspace/genericrgb.md)
   A color space object that represents a device-independent RGB color space.
 - [class var deviceCMYK: NSColorSpace](nscolorspace/devicecmyk.md)

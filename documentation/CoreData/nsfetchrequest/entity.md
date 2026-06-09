@@ -26,10 +26,10 @@ When an [`NSFetchRequest`](nsfetchrequest.md) instance is created with `init()`,
 
 ## See Also
 
+- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+  Returns a fetch request configured with a given entity name.
 - [init()](nsfetchrequest/init.md)
   Creates a new fetch request.
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:).md)
-  Initializes a fetch request configured with a given entity name.
 - [var entityName: String?](nsfetchrequest/entityname.md)
   The name of the entity the request is configured to fetch.
 - [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)

@@ -12,6 +12,7 @@ Creates a high-resolution image with everything except for the instances you spe
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

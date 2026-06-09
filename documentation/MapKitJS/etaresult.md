@@ -30,7 +30,7 @@ interface EtaResult
 
 ## See Also
 
-- [eta(request, callback)](directions/eta.md)
+- [eta(request)](directions/eta.md)
   Retrieves estimated arrival times to up to 10 destinations from a single starting point.
 - [interface EtaRequestOptions](etarequestoptions.md)
   The options you may provide for requesting estimated arrival times.

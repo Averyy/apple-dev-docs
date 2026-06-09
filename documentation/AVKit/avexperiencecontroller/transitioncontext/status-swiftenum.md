@@ -11,6 +11,7 @@ Describes the status of a transition.
 ## Declaration
 
 ```swift
+@preconcurrency
 enum Status
 ```
 
@@ -20,18 +21,26 @@ Transitions go through a sequence of `Status`s as they progress.
 
 ## Topics
 
-### Enumeration Cases
-- [case finished(result: AVExperienceController.TransitionContext.TransitionResult)](avexperiencecontroller/transitioncontext/status-swift.enum/finished(result:).md)
-  Transition finished. Perform cleanup based on result.
+### Statuses
 - [AVExperienceController.TransitionContext.Status.preparing](avexperiencecontroller/transitioncontext/status-swift.enum/preparing.md)
   The transition is preparing for `toExperience`.
 - [AVExperienceController.TransitionContext.Status.transitioning](avexperiencecontroller/transitioncontext/status-swift.enum/transitioning.md)
   The transition is in progress.
+- [case finished(result: AVExperienceController.TransitionContext.TransitionResult)](avexperiencecontroller/transitioncontext/status-swift.enum/finished(result:).md)
+  Transition finished. Perform cleanup based on result.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transitioncontext/transitionresult.md)
+  Describes the result of a transition.
+- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
 
 
 ---

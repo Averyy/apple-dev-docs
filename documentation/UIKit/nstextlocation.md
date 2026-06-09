@@ -24,6 +24,10 @@ protocol NSTextLocation : NSObjectProtocol
 ### Comparing text locations
 - [func compare(any NSTextLocation) -> ComparisonResult](nstextlocation/compare(_:).md)
   Compares and returns the logical ordering to location.
+### Instance Properties
+- [var hash: Int](nstextlocation/hash.md)
+### Instance Methods
+- [func isEqual(Any?) -> Bool](nstextlocation/isequal(_:).md)
 
 ## Relationships
 

@@ -39,7 +39,6 @@ When the framework observes a sofa in the physical environment during a scan, it
 ### Conforms To
 - [CapturedRoomAttribute](capturedroomattribute.md)
 - [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

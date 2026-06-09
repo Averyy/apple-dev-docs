@@ -35,8 +35,6 @@ Use this method to navigate to a webpage that you loaded yourself and saved in a
 
 ## See Also
 
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:).md)
-  Loads the web content that the specified URL request object references and navigates to that content.
 - [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)
   Loads the contents of the specified HTML string and navigates to it.
 - [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](wkwebview/loadfilerequest(_:allowingreadaccessto:).md)

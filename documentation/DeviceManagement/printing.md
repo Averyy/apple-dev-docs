@@ -7,8 +7,6 @@ The payload that configures printers.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,10 +27,10 @@ Removing this profile from a device doesn’t automatically remove printers from
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

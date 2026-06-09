@@ -8,6 +8,7 @@ The hash of a MAC Address, which you may use to identify a device the accessory 
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

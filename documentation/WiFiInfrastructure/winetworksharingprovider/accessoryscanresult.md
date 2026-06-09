@@ -8,6 +8,7 @@ An access point that the accessory was able to discover in its Wi-Fi scans.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

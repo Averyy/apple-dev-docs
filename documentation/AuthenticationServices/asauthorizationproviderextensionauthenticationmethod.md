@@ -23,6 +23,7 @@ enum ASAuthorizationProviderExtensionAuthenticationMethod
   Secure Enclave key authentication.
 ### Enumeration Cases
 - [ASAuthorizationProviderExtensionAuthenticationMethod.smartCard](asauthorizationproviderextensionauthenticationmethod/smartcard.md)
+- [ASAuthorizationProviderExtensionAuthenticationMethod.openID](asauthorizationproviderextensionauthenticationmethod/openid.md)
 ### Initializers
 - [init?(rawValue: Int)](asauthorizationproviderextensionauthenticationmethod/init(rawvalue:).md)
 

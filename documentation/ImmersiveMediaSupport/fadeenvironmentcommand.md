@@ -65,6 +65,8 @@ Opacity fade is used to apply requested opacity to the AIV environment backdrops
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
+- [struct ShotFlipCommand](shotflipcommand.md)
+  A command type to flip the video frames vertically during playback for the duration of the command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

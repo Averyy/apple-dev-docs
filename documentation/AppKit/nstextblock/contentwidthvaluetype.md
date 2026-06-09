@@ -6,7 +6,7 @@
 The type of value stored for the text block width.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

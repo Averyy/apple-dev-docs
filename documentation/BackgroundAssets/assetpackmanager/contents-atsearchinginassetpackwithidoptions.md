@@ -40,17 +40,19 @@ All asset packs share the same namespace, so you can treat the overall collectio
 
 - `path`: The relative path.
 - `assetPackID`: The ID of the asset pack in which to search for the file. By default, all downloaded asset packs are searched.
-- `options`: Options for how to read the contents of the file into a `Data` instance.
+- `options`: Options for how to read the file’s contents into a `Data` instance.
 
 ## See Also
 
-- [var allAssetPacks: Set<AssetPack>](assetpackmanager/allassetpacks.md)
-  The asset packs that are available to download.
-- [func assetPack(withID: String) async throws -> AssetPack](assetpackmanager/assetpack(withid:).md)
-  Returns the asset pack with the given ID.
+- [func contents(at: FilePath, asLocalizedFor: Locale.Language, options: Data.ReadingOptions) throws -> Data](assetpackmanager/contents(at:aslocalizedfor:options:).md)
+  Returns the contents of a localized asset file at the specified relative path.
 - [func descriptor(for: FilePath, searchingInAssetPackWithID: String?) throws -> FileDescriptor](assetpackmanager/descriptor(for:searchinginassetpackwithid:).md)
   Opens and returns a file descriptor for an asset file at the specified relative path.
+- [func descriptor(for: FilePath, asLocalizedFor: Locale.Language) throws -> FileDescriptor](assetpackmanager/descriptor(for:aslocalizedfor:).md)
+  Opens and returns a file descriptor for a localized asset file at the specified relative path.
 - [func url(for: FilePath) throws -> URL](assetpackmanager/url(for:).md)
+  Returns a URL for the specified relative path.
+- [func url(for: FilePath, asLocalizedFor: Locale.Language) throws -> URL](assetpackmanager/url(for:aslocalizedfor:).md)
   Returns a URL for the specified relative path.
 
 

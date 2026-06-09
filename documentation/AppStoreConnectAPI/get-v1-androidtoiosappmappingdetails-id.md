@@ -14,7 +14,7 @@ Get information about a specific android to iOS app mapping detail.
 
 ## Parameters
 
-- `fields[androidToIosAppMappingDetails]` ([string])
+- `fields[androidToIosAppMappingDetails]` ([string]): Additional fields to include for each android to iOS app mapping details resource returned by the response.
 
 ## See Also
 

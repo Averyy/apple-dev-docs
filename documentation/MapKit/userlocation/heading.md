@@ -10,7 +10,6 @@ A value that indicates the heading of the person’s device.
 - iPadOS 17.0+
 - Mac Catalyst ?+
 - macOS 14.0+
-- tvOS 17.0+
 - watchOS 10.0+
 
 ## Declaration

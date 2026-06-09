@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single challenge version resource.
+A response containing a single version of a Game Center challenge.
 
 **Availability**:
 - App Store Connect API 4.0+

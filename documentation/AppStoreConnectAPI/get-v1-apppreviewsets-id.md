@@ -1,4 +1,4 @@
-# Read App Preview Set Information
+# Read app preview set information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,10 +14,10 @@ Get an app preview set that includes its display target, language, and the previ
 
 ## Parameters
 
-- `fields[appPreviewSets]` ([string])
-- `fields[appPreviews]` ([string])
-- `include` ([string])
-- `limit[appPreviews]` (integer)
+- `fields[appPreviewSets]` ([string]): Additional fields to include for each app preview set resource returned by the response.
+- `fields[appPreviews]` ([string]): Additional fields to include for each app preview resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appPreviews]` (integer): The maximum number of related app previews resources to return.
 - `fields[appCustomProductPageLocalizations]` ([string])
 - `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
 - `fields[appStoreVersionLocalizations]` ([string])

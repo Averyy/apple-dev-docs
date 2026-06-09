@@ -46,6 +46,8 @@ This type is effectively a namespace to collect types that configure parts of a 
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](decimal/formatstyle/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle](decimal/formatstyle/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](decimal/formatstyle/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](decimal/formatstyle/precision(_:).md)

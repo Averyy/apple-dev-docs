@@ -51,7 +51,6 @@ Playgrounds and the debugger will show a representation similar to the one used 
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

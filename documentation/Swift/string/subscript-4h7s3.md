@@ -57,7 +57,7 @@ print(streetsSlice[0])
 
 - [subscript(Range<String.Index>) -> Substring](string/subscript(_:)-2so14.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
 - [func prefix(Int) -> Self.SubSequence](string/prefix(_:).md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
 - [func prefix(through: Self.Index) -> Self.SubSequence](string/prefix(through:).md)

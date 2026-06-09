@@ -7,7 +7,7 @@ Recognize the constants for comparing the current running version of Foundation 
 ## Topics
 
 ### Current Version
-- [var NSFoundationVersionNumber: Double](nsfoundationversionnumber.md)
+- [let NSFoundationVersionNumber: Double](nsfoundationversionnumber.md)
   The version of the Foundation framework in the current environment.
 ### macOS Version Numbers
 - [var NSFoundationVersionNumber10_0: Double](nsfoundationversionnumber10_0.md)

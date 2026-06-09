@@ -8,6 +8,7 @@ The styles to apply to the tip views you use to display spoken phrases.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+

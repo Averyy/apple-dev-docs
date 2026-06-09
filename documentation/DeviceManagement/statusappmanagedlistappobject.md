@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that describes a declarative managed app.
+A managed app.
 
 **Availability**:
 - iOS 17.2+
@@ -11,8 +11,6 @@ A dictionary that describes a declarative managed app.
 - Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,16 +22,16 @@ object StatusAppManagedListAppObject
 
 ### Objects
 - [object StatusAppManagedListManagedConfigurationObject](statusappmanagedlistmanagedconfigurationobject.md)
-  A dictionary that contains details about a declarative managed app’s managed configuration.
+  The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
 - [object StatusAppManagedListStatusReasonObject](statusappmanagedliststatusreasonobject.md)
-  A dictionary that contains details about a declarative managed app’s state.
+  Information about a status error.
 
 ## Properties
 
 - `_removed` (boolean): If `true`, the system removed the app and only this key and the `identifier` key are present in the status item object.
-- `config-state` (StatusAppManagedListManagedConfigurationObject): The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
+- `config-state` (StatusAppManagedListManagedConfigurationObject): The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions. Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
 - `declaration-identifier` (string): The identifier of the declaration that controls the app.
-- `external-version-id` (integer): The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and Books for Organizations`](apps-and-books-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
+- `external-version-id` (integer): The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and books metadata for organizations`](apps-and-books-metadata-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device.
 - `identifier` (string) *(required)*: The app’s bundle id, which is unique.
 - `name` (string): The name of the app.
 - `reasons` ([StatusAppManagedListStatusReasonObject]): An array that contains additional details about the app state, including errors.

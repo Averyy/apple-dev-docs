@@ -11,7 +11,7 @@ The query string for performing the search.
 ## Declaration
 
 ```swift
-query?: string | SearchAutocompleteResult;
+query: string | SearchAutocompleteResult | null;
 ```
 
 #### Discussion

@@ -14,6 +14,7 @@ A control for picking multiple dates.
 ## Declaration
 
 ```swift
+nonisolated
 struct MultiDatePicker<Label> where Label : View
 ```
 

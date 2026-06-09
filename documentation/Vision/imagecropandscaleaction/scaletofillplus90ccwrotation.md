@@ -12,6 +12,7 @@ An action that scales the image and rotates it by 90 degrees counter clockwise.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

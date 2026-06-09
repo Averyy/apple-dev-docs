@@ -24,6 +24,7 @@ class MEFileInfo
 - [MEFileInfo.FragmentsStatus](mefileinfo/fragmentsstatus-swift.enum.md)
   An enumeration that describes if a media asset contains or supports fragments.
 ### Instance Properties
+- [var constituentFileNames: [String]](mefileinfo/constituentfilenames.md)
 - [var sidecarFileName: String?](mefileinfo/sidecarfilename.md)
 
 ## Relationships

@@ -17,7 +17,7 @@ Creates a menu that generates its label from a localized string key.
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content) where Label == Text
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content) where Label == Text
 ```
 
 ## Parameters

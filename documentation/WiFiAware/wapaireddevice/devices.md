@@ -8,6 +8,7 @@ A dictionary holding a snapshot of currently paired devices accessible and known
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

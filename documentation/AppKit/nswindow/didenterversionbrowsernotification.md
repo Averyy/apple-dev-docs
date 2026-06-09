@@ -18,6 +18,8 @@ class let didEnterVersionBrowserNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that entered version browser mode. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidEnterVersionBrowserMessage`](nswindow/didenterversionbrowsermessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

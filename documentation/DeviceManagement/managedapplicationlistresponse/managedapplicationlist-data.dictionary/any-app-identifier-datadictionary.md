@@ -13,8 +13,6 @@ The bundle identifier of the managed app.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,10 +22,10 @@ object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier
 
 ## Properties
 
-- `ExternalVersionIdentifier` (integer) *(required)*: The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and Books for Organizations`](apps-and-books-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device. Available in iOS 10.3 and later, macOS 11.3 and later, and tvOS 10.2 and later. > **Note**:  A newer version of an app might not be available for installation on the device for a variety of reasons. A common reason is that the device’s operating system version or hardware is incompatible with the available version of the app.
-- `HasConfiguration` (boolean) *(required)*: If ‘true’, the app has an update available. This key is present only for App Store apps. In macOS, this key is present only for Volume Purchase Program (VPP) apps. This status updates daily and isn’t always up-to-date when installing an app.
-- `HasFeedback` (boolean) *(required)*: If ‘true’, the app has feedback for the server. This value is available in iOS 7 and later, and tvOS 10.2 and later. On macOS 11.3 and later, this value is available if the request was sent on the user channel.
-- `IsValidated` (boolean) *(required)*: If ‘true’, the app is valid and can run on the device. If the app is enterprise-distributed and unvalidated, it won’t be able to run until validation has occurred. This value is available in iOS 9.2 and later, and tvOS 10.2 and later.
+- `ExternalVersionIdentifier` (integer) *(required)*: The app’s external version identifier. You can also retrieve this value from the App Store. For more information, see [`Apps and books metadata for organizations`](apps-and-books-metadata-for-organizations.md). If the current external version identifier of an app on the App Store doesn’t match the external version identifier reported by the device, there may be an app update available for the device. > **Note**:  A newer version of an app might not be available for installation on the device for a variety of reasons. A common reason is that the device’s operating system version or hardware is incompatible with the available version of the app. Available: iOS 10.3+ | iPadOS 10.3+ | macOS 11.3+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `HasConfiguration` (boolean) *(required)*: If ‘true’, the app has a server-provided managed configuration. Available: iOS 7+ | iPadOS 7+ | macOS 11+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `HasFeedback` (boolean) *(required)*: If ‘true’, the app has feedback for the server. On macOS 11.3 and later, this value is available if the request was sent on the user channel. Available: iOS 7+ | iPadOS 7+ | macOS 11.3+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `IsValidated` (boolean) *(required)*: If ‘true’, the app is valid and can run on the device. If the app is enterprise-distributed and unvalidated, it won’t be able to run until validation has occurred. Available: iOS 9.2+ | iPadOS 9.2+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 - `ManagementFlags` (integer) *(required)*: The bitwise OR of the following management flags: - ‘1’: Remove app upon removal of MDM profile.
 - ‘4’: Prevent backup of app data.
 - `Status` (string) *(required)*: The status of the managed app, which is one of the following values: - `Queued`: The app is scheduled for installation.
@@ -49,7 +47,7 @@ object ManagedApplicationListResponse.ManagedApplicationList.ANY app identifier
 - `UpdateRejected`: The user rejected the offer to update the app.
 - `ManagementRejected`:The user rejected management of an installed app.
 - `Failed`: The app installation failed.
-- `UnusedRedemptionCode` (string) *(required)*: If the user already purchased a paid app, this code is available for use by another user. This code reports only once. This value is available in iOS 5 and later.
+- `UnusedRedemptionCode` (string) *(required)*: If the user already purchased a paid app, this code is available for use by another user. This code reports only once. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+ | watchOS 10+
 
 
 ---

@@ -5,6 +5,9 @@
 
 An object that provides a session.
 
+**Availability**:
+- visionOS 1.0+
+
 ## Declaration
 
 ```swift

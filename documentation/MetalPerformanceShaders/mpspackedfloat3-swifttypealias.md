@@ -25,7 +25,7 @@ typealias MPSPackedFloat3 = _MPSPackedFloat3
 - [MPSPackedFloat3.__Unnamed_struct___Anonymous_field0](mpspackedfloat3-swift.typealias/__unnamed_struct___anonymous_field0.md)
 - [MPSPackedFloat3.__Unnamed_union___Anonymous_field0](mpspackedfloat3-swift.typealias/__unnamed_union___anonymous_field0.md)
 ### Instance Properties
-- [var __Anonymous_field0: _MPSPackedFloat3.__Unnamed_union___Anonymous_field0.__Unnamed_struct___Anonymous_field0](mpspackedfloat3-swift.typealias/__anonymous_field0.md)
+- [var __Anonymous_field0: _MPSPackedFloat3.__Unnamed_union___Anonymous_field0](mpspackedfloat3-swift.typealias/__anonymous_field0.md)
 - [var elements: (Float, Float, Float)](mpspackedfloat3-swift.typealias/elements-3jtie.md)
 - [var elements: (Float, Float, Float)](mpspackedfloat3-swift.typealias/elements-7t2oh.md)
 - [var x: Float](mpspackedfloat3-swift.typealias/x-3faxq.md)

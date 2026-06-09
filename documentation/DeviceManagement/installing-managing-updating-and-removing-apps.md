@@ -16,7 +16,7 @@ The [`AppManaged`](appmanaged.md) configuration type is `com.apple.configuration
 
 The [`AppManaged`](appmanaged.md) configuration specifies how the device installs and manages an app. This includes defining the type of App Store license the devices uses for an App Store app, whether the device installs the app immediately or waits for the user to request the install, whether the device pins the version of the app and how it updates the app, and controlling the use of the cellular network. The configuration also specifies managed app attributes, configuration, and secrets.
 
-##### Define the Source of Apps
+#### Define the Source of Apps
 
 The device manages apps it installs from three sources:
 
@@ -44,19 +44,19 @@ To create a composed identifier string value:
 - Start with the bundle ID, append a space, then add the team ID in parentheses. For example: `com.example.app (ABCDE12345)` is an app with a bundle ID of `com.example.app` and a team ID of `ABCDE12345`.
 - Start with the bundle ID, append a space, then add the designated requirement in curly brackets. For example, `com.example.app {anchor apple generic and identifier = "com.example.app"}` is an app with a bundle ID of `com.example.app` and a designated requirement of `anchor apple generic and identifier = "com.example.app"`.
 
-The designated requirement uses the text form of the [`Code Signing Requirement Language`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5-SW1). Admins need to ensure that they use a designated requirement that uniquely matches the app they want to manage, and ensure it doesn’t match other apps. If the admin wants to allow people to use different versions of the managed app, the designated requirement needs to be broad enough to match all versions. In particular, the `cdhash` designated requirement constraint matches a specific version of the app, so the admin should only use that constraint when management of the app is pinned to a specific app version.
+The designated requirement uses the text form of the [`Code Signing Requirement Language`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5-SW1). Administrators need to ensure that they use a designated requirement that uniquely matches the app they want to manage, and ensure it doesn’t match other apps. If the administrator wants to allow people to use different versions of the managed app, the designated requirement needs to be broad enough to match all versions. In particular, the `cdhash` designated requirement constraint matches a specific version of the app, so the administrator should only use that constraint when management of the app is pinned to a specific app version.
 
-Admins should contact the app developer to determine what designated requirement constraints to use. In macOS, admins can also use the `codesign` command-line utility to inspect an app’s code signature to determine what constraints to use in a designated requirement. For more information on using the `codesign` command-line utility, see [`Examining a Code Signature`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html#//apple_ref/doc/uid/TP40005929-CH4-SW10).
+Administrators should contact the app developer to determine what designated requirement constraints to use. In macOS, administrators can also use the `codesign` command-line utility to inspect an app’s code signature to determine what constraints to use in a designated requirement. For more information on using the `codesign` command-line utility, see [`Examining a Code Signature`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html#//apple_ref/doc/uid/TP40005929-CH4-SW10).
 
 > **Note**:  In macOS, the device installs managed apps only in the `/Applications` folder of the current system data volume. It manages existing apps using the `AppComposedIdentifier` key only if they’re in the `/Applications` folder. If the user renames a managed app or moves it out of the `/Applications` folder, the device stops managing it and removes it from the declarative app management status.
 
-##### Define the Install Behavior
+#### Define the Install Behavior
 
 The configuration’s [`AppManagedInstallBehaviorObject`](appmanagedinstallbehaviorobject.md) object defines how the device installs and manages an app for the first time.
 
-###### Set the Install Type
+#### Set the Install Type
 
-The device installs an app immediately after it applies a configuration or waits for the user to choose when to trigger the app install. The value of the configuration’s `Install` key controls this behavior:
+The device installs an app immediately after it applies a configuration or waits for the user to choose when to start the app install. The value of the configuration’s `Install` key controls this behavior:
 
 | Value | Description |
 | --- | --- |
@@ -71,15 +71,15 @@ When the value is set to `Required`:
 
 When the value is set to `Optional`:
 
-- The device doesn’t automatically install or manage the app after applying a configuration. - The user triggers installation and management using a management app.
+- The device doesn’t automatically install or manage the app after applying a configuration. - The user starts installation and management using a management app.
 - The device doesn’t prompt the user for consent before installation.
 - The user can remove the managed app, but it remains visible in the management app for reinstallation, and the device treats it as unmanaged.
-- If the app is present on the device, the device doesn’t automatically manage it when it installs a configuration. The user needs to directly trigger management using a management app.
-- After the device installs a configuration, if the user installs the app themselves, for example via the App Store, the device doesn’t automatically take over management of it. The user needs to directly trigger management using a management app.
+- If the app is present on the device, the device doesn’t automatically manage it when it installs a configuration. The user needs to directly activate management using a management app.
+- After the device installs a configuration, if the user installs the app themselves, for example via the App Store, the device doesn’t automatically take over management of it. The user needs to directly activate management using a management app.
 
 A management app displays details of required and optional managed apps, and allows the user to install optional apps. For more information, see [`Displaying managed apps and packages`](displaying-managed-apps-and-packages.md).
 
-###### Set the License
+#### Set the License
 
 When the device management service specifies an App Store app, it needs to include an `Assignment` key in the [`AppManagedInstallBehavior_LicenseObject`](appmanagedinstallbehavior_licenseobject.md) object in the configuration, otherwise the device can’t install or update the app. That key specifies the app’s App Store license type that the device uses for installation:
 
@@ -92,7 +92,7 @@ The device management service needs to assign an App Store license before the de
 
 > **Note**:  In macOS, configurations applied in the `system` scope (using the device channel) require a `Device` license, whereas those in the `user` scope (the user channel) require a `User` license.
 
-###### Handle Existing Apps
+#### Handle Existing Apps
 
 If an app is present when the device applies a configuration for it, the device follows these rules:
 
@@ -101,7 +101,7 @@ If an app is present when the device applies a configuration for it, the device 
 - In macOS, if the app is an existing app that the configuration’s `AppComposedIdentifier` key specifies, the device manages the app.
 - When the device is able to manage the app, it updates it if a newer version or one specified by the configuration’s `Version` key is available.
 
-###### Pin the Version of an App
+#### Pin the Version of an App
 
 The device management service can install a specific version of an App Store app using the `Version` key in the [`AppManagedInstallBehaviorObject`](appmanagedinstallbehaviorobject.md) object. The key’s value specifies an App Store External Version Identifier (EVID) for the version to install. If that key isn’t present, the device uses the latest version when installing or updating the app.
 
@@ -118,18 +118,18 @@ If a device updates a configuration and the configuration contains this key, the
 - If its version is older than the specified version, the device updates it to the specified version.
 - If its version is newer than the specified version, the device doesn’t update it and reports an error status to the device management service in the [`StatusAppManagedList`](statusappmanagedlist.md) status item. The existing version of the app remains managed.
 
-To find the EVID of an App Store app, you can use one of these procedures:
+To find the EVID of an App Store app, use one of these procedures:
 
-- If the device management server is managing the app using declarative management, look for the `external-version-id` key in the [`StatusAppManagedList`](statusappmanagedlist.md) status item that the device reports to the server.
-- If the device management server is managing the app using MDM commands, look for the `ExternalVersionIdentifier` key in the [`Installed Application List`](installed-application-list-command.md) command response that the device returns to the server.
-- Use the [`Apps and Books for Organizations`](apps-and-books-for-organizations.md) API to look up the `externalVersionId` key in the [`Apps.Attributes`](apps/attributes-data.dictionary.md) for the app.
+- If the device management service manages the app using declarative management, look for the `external-version-id` key in the [`StatusAppManagedList`](statusappmanagedlist.md) status item that the device reports to the service.
+- If the device management service manages the app using MDM commands, look for the `ExternalVersionIdentifier` key in the [`Installed Application List`](installed-application-list-command.md) command response that the device returns to the service.
+- Use the [`Apps and books metadata for organizations`](apps-and-books-metadata-for-organizations.md) API to look up the `externalVersionId` key in the [`Apps.Attributes`](apps/attributes-data.dictionary.md) for the app.
 - Ask the app developer to provide the value.
 
-> **Note**: Note EVIDs can vary depending on region and type of device. Make sure you correctly specify region and device type when you look up the EVID.
+> **Note**:  EVIDs can vary depending on region and type of device. Make sure you correctly specify region and device type when you look up the EVID.
 
-###### Control Cellular Settings
+#### Control Cellular Settings
 
-The `AllowDownloadsOverCellular` key in the [`AppManagedInstallBehaviorObject`](appmanagedinstallbehaviorobject.md) object determines whether the device downloads apps over cellular networks when it applies or updates a configuration, or when it automatically updates a managed app. These settings apply only to non-user-initiated downloads that the device automatically triggers. The following values control this behavior:
+The `AllowDownloadsOverCellular` key in the [`AppManagedInstallBehaviorObject`](appmanagedinstallbehaviorobject.md) object determines whether the device downloads apps over cellular networks when it applies or updates a configuration, or when it automatically updates a managed app. These settings apply only to non-user-initiated downloads that the device automatically starts. The following values control this behavior:
 
 | Value | Description |
 | --- | --- |
@@ -164,7 +164,7 @@ For enterprise apps, there are additional behaviors based on the value of the `A
 - `AlwaysOn`: The device’s periodic check redownloads the manifest document, and the device checks the `bundle-version` key and updates the app if different. The servers hosting the manifest document need to handle the extra load caused by the periodic polling.
 - `StoreSettings`: The device doesn’t automatically update the app.
 
-A device management service triggers an update check for a managed app at any time by changing the configuration’s `ServerToken` key, without needing to change anything else. The device updates the app if the check indicates an update is available.
+A device management service initiates an update check for a managed app at any time by changing the configuration’s `ServerToken` key, without needing to change anything else. The device updates the app if the check indicates an update is available.
 
 > **Note**:  The device ignores the configuration’s `AutomaticAppUpdates` key when the `Version` key is present, as the pinned version behavior supersedes the automatic update behavior.
 
@@ -189,7 +189,7 @@ The device reports errors to the device management service in two ways:
 - [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
   Provide managed apps and extensions with app configuration and secrets.
 - [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Seamlessly transition apps to declarative management without needing to reinstall.
+  Transition apps to declarative management.
 - [Processing status for managed apps](processing-status-for-managed-apps.md)
   Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)

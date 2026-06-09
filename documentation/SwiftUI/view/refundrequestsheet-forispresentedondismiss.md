@@ -30,8 +30,10 @@ nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresent
 - [func appStoreOverlay(isPresented: Binding<Bool>, configuration: () -> SKOverlay.Configuration) -> some View](view/appstoreoverlay(ispresented:configuration:).md)
   Presents a StoreKit overlay when a given condition is true.
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](view/managesubscriptionssheet(ispresented:).md)
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
+- [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](view/offercoderedemption(options:ispresented:oncompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
+- [func musicPicker(isPresented:title:selection:)](view/musicpicker(ispresented:title:selection:).md)
+  Presents a music picker to select items from the Apple Music catalog and the user’s music library.
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)
@@ -53,8 +55,6 @@ nonisolated func refundRequestSheet(for transactionID: Transaction.ID, isPresent
   Specifies the visibility of auxiliary buttons that store view and subscription store view instances may use.
 - [func storeProductTask(for: Product.ID, priority: TaskPriority, action: (Product.TaskState) async -> ()) -> some View](view/storeproducttask(for:priority:action:).md)
   Declares the view as dependent on an In-App Purchase product and returns a modified view.
-- [func storeProductsTask(for: some Collection<String> & Equatable & Sendable, priority: TaskPriority, action: (Product.CollectionTaskState) async -> ()) -> some View](view/storeproductstask(for:priority:action:).md)
-  Declares the view as dependent on a collection of In-App Purchase products and returns a modified view.
 
 
 ---

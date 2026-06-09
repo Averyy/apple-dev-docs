@@ -66,8 +66,8 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageVariants]` ([string])
-- `limit` (integer)
+- `fields[alternativeDistributionPackageVariants]` ([string]): Additional fields to include for each alternative distribution package variants resource returned by the response.
+- `limit` (integer): The maximum number of alternative distribution package variants resources to return.
 
 ## See Also
 
@@ -77,11 +77,11 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/
   Get version detail information about a specific alternative distribution package.
 - [List Deltas Information](get-v1-alternativedistributionpackageversions-_id_-deltas.md)
   List deltas for a specific alternative distribution package version.
-- [List Delta IDs](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+- [List delta ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
   List all delta Ids for a specific alternative distribution package version.
-- [List Variant IDs Information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
+- [List variant ids information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
   List variant Ids for specific alternative distribution package version.
-- [Read Version IDs for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
+- [Read version ids for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
   Get version IDs about a specific alternative distribution package.
 
 

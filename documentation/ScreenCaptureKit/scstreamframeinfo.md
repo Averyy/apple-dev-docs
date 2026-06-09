@@ -6,8 +6,12 @@
 An instance that defines metadata keys for a stream frame.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -51,6 +55,8 @@ let scaleFactor = attachments[.scaleFactor] as? Double ?? 0.0
 ### Initializers
 - [init(rawValue: String)](scstreamframeinfo/init(rawvalue:).md)
   Creates a new instance with a raw value.
+### Type Properties
+- [static let videoOrientation: SCStreamFrameInfo](scstreamframeinfo/videoorientation.md)
 
 ## Relationships
 

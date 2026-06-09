@@ -12,7 +12,6 @@ Creates a CVPixelBuffer backed by the given `ioSurface`. The CVPixelBuffer will 
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
-- watchOS 26.0+
 
 ## Declaration
 

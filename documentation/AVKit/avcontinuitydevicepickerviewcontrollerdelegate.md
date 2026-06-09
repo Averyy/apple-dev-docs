@@ -67,6 +67,8 @@ Your app can respond to the various outcome events from an [`AVContinuityDeviceP
   A tvOS management object that controls whether a TV switches modes to match the video’s native mode.
 - [class AVContinuityDevicePickerViewController](avcontinuitydevicepickerviewcontroller.md)
   A view controller that provides an interface to a person so they can select and connect a continuity device to the system.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

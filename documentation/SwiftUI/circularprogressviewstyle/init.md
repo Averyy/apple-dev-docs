@@ -17,6 +17,7 @@ Creates a circular progress view style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

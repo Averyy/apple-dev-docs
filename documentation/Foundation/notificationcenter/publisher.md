@@ -22,6 +22,11 @@ struct Publisher
 
 ## Topics
 
+### Declaring Publisher Topography
+- [NotificationCenter.Publisher.Output](notificationcenter/publisher/output.md)
+  The kind of values published by this publisher.
+- [NotificationCenter.Publisher.Failure](notificationcenter/publisher/failure.md)
+  The kind of errors this publisher might publish.
 ### Creating a Notification Publisher
 - [init(center: NotificationCenter, name: Notification.Name, object: AnyObject?)](notificationcenter/publisher/init(center:name:object:).md)
   Creates a publisher that emits events when broadcasting notifications.
@@ -36,9 +41,7 @@ struct Publisher
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](../Combine/Publisher.md)
 
 ## See Also

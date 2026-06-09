@@ -17,6 +17,7 @@ The shape that this type draws and provides for other drawing operations.
 ## Declaration
 
 ```swift
+nonisolated
 var shape: Content { get set }
 ```
 

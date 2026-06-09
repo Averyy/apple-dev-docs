@@ -26,12 +26,16 @@ For design guidance, see [`Gestures`](https://developer.apple.com/design/Human-I
   Adds an action to perform when this view recognizes a tap gesture.
 - [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
+- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [struct TapGesture](tapgesture.md)
   A gesture that recognizes one or more taps.
 - [struct SpatialTapGesture](spatialtapgesture.md)
   A gesture that recognizes one or more taps and reports their location.
-### Recognizing long press gestures
+### Recognizing long-press gestures
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
+  Adds an action to perform when this view recognizes a long press gesture.
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
@@ -101,6 +105,9 @@ For design guidance, see [`Gestures`](https://developer.apple.com/design/Human-I
   A gesture containing two gestures that can happen at the same time with neither of them preceding the other.
 - [struct ExclusiveGesture](exclusivegesture.md)
   A gesture that consists of two gestures where only one of them can succeed.
+### Customizing gestures
+- [struct GestureInputKinds](gestureinputkinds.md)
+  An option set that specifies which input kinds a gesture should recognize.
 ### Defining custom gestures
 - [func highPriorityGesture<T>(T, including: GestureMask) -> some View](view/highprioritygesture(_:including:).md)
   Attaches a gesture to the view with a higher precedence than gestures defined by the view.

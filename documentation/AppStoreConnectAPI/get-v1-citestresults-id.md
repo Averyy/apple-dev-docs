@@ -1,4 +1,4 @@
-# Read Test Result Information
+# Read test result information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

@@ -17,8 +17,8 @@ A label style that shows both the title and icon of the label using a system-sta
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var titleAndIcon: TitleAndIconLabelStyle { get }
+nonisolated
+static var titleAndIcon: TitleAndIconLabelStyle { get }
 ```
 
 ## Mentions

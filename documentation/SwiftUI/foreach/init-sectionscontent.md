@@ -17,13 +17,24 @@ Creates an instance that uniquely identifies and creates views across updates ba
 ## Declaration
 
 ```swift
-init<V>(sections view: V, @ViewBuilder content: @escaping (SectionConfiguration) -> Content) where Data == ForEachSectionCollection<Content>, ID == SectionConfiguration.ID, Content : View, V : View
+init<V>(sections view: V, @ContentBuilder content: @escaping (SectionConfiguration) -> Content) where Data == ForEachSectionCollection<Content>, ID == SectionConfiguration.ID, Content : View, V : View
 ```
 
 ## Parameters
 
 - `view`: The view to extract the sections of.
-- `content`: The view builder that creates views from sections
+- `content`: The content builder that creates views from sections
+
+## See Also
+
+- [init(Data)](foreach/init(_:).md)
+  Creates an instance that uniquely identifies and creates table rows across updates based on the identity of the underlying data.
+- [init(_:content:)](foreach/init(_:content:).md)
+  Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
+- [init(_:id:content:)](foreach/init(_:id:content:).md)
+  Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
+- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
+  Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
 
 ---

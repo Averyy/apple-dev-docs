@@ -66,7 +66,7 @@ https://api.appstoreconnect.apple.com/v1/betaTesters/1aa1fe09-bb5c-47dd-a067-a60
 
 ## Parameters
 
-- `filter[apps]` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `apps` resource ID from the [`List Apps`](get-v1-apps.md) response.
+- `filter[apps]` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `apps` resource ID from the [`List apps`](get-v1-apps.md) response.
 - `limit` (integer)
 - `period` (string): -`P7D`: 7 days -`P30D`: 30 days -`P90D`: 90 days -`P365D`: 356 days
 

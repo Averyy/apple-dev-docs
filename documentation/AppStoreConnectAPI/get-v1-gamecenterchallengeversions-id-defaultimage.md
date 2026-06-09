@@ -20,17 +20,17 @@ Get details about the default image for a specific Game Center challenge version
 
 - [Create a Challenge Version](post-v1-gamecenterchallengeversions.md)
   Add a version for a specific Game Center challenge.
-- [Read the Challenges for a Game Center Group](get-v1-gamecenterchallenges-_id_-relationships-versions.md)
-  Get challenge information for a specific Game Center group.
+- [Read the versions for a Game Center challenge](get-v1-gamecenterchallenges-_id_-relationships-versions.md)
+  Get version information for a specific Game Center challenge.
 - [Read the Versions for a Challenge](get-v1-gamecenterchallenges-_id_-versions.md)
   Get a list of versions for a specific Game Center challenge.
 - [Read Challenge Version Information](get-v1-gamecenterchallengeversions-_id_.md)
   Get information for a specific Game Center challenge localization.
 - [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the Default Image ID for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
+- [Get the default image id for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
   Get the default image ID for a specific Game Center challenge version.
-- [Get the Localization IDs for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the localization ids for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
 
 

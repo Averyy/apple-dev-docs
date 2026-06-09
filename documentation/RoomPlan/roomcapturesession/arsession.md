@@ -9,7 +9,6 @@ An object that manages an ARKit session.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

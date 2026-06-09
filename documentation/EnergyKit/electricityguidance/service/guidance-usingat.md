@@ -9,7 +9,6 @@ Returns an async sequence of electricity guidance forecasts for the requested ve
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

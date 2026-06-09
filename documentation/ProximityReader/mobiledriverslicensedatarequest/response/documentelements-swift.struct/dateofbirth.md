@@ -9,7 +9,6 @@ The date of birth of the mobile driver’s license holder.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 

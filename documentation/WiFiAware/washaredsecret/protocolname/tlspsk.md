@@ -8,6 +8,7 @@ Derive a shared secret to bootstrap TLS, using the resulting shared secret as a 
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

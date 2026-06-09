@@ -26,9 +26,6 @@ enum Code
   An error occurred while trying to queue or send the email message.
 ### Initializers
 - [init?(rawValue: Int)](mfmailcomposeerror/code/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](mfmailcomposeerror/code/equatable-implementations.md)
-- [RawRepresentable Implementations](mfmailcomposeerror/code/rawrepresentable-implementations.md)
 
 ## Relationships
 

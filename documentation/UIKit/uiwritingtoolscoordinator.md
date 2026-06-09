@@ -39,7 +39,7 @@ When defining the delegate, choose an object from your app that has access to yo
   Creates a writing tools coordinator and assigns the specified delegate object to it.
 ### Checking the availability of Writing Tools
 - [class var isWritingToolsAvailable: Bool](uiwritingtoolscoordinator/iswritingtoolsavailable.md)
-  A Boolean value that indicates whether Writing Tools features are currently available.
+  A Boolean value that indicates whether Writing Tools features are available to enable.
 ### Managing Writing Tools interactions
 - [var delegate: (any UIWritingToolsCoordinator.Delegate)?](uiwritingtoolscoordinator/delegate-swift.property.md)
   The object that handles Writing Tools interactions for your view.

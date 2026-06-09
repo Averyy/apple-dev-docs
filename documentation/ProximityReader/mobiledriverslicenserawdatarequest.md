@@ -9,7 +9,6 @@ A mobile driver’s license request which retrieves elements from the holder and
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -31,6 +30,12 @@ struct MobileDriversLicenseRawDataRequest
 ### Handling the response
 - [MobileDriversLicenseRawDataRequest.Response](mobiledriverslicenserawdatarequest/response.md)
   A type that contains the response information from a successful mobile driver’s license raw data request.
+### Initializers
+- [init(retainedElements: [MobileDriversLicenseRawDataRequest.Element], nonRetainedElements: [MobileDriversLicenseRawDataRequest.Element], issuerIdentifiers: [Data])](mobiledriverslicenserawdatarequest/init(retainedelements:nonretainedelements:issueridentifiers:).md)
+  Returns a mobile driver’s license raw data request with issuer identifiers.
+### Instance Properties
+- [var issuerIdentifiers: [Data]](mobiledriverslicenserawdatarequest/issueridentifiers.md)
+  The subject key identifiers of the issuers trusted by the reader.
 ### Default Implementations
 - [MobileDocumentRequest Implementations](mobiledriverslicenserawdatarequest/mobiledocumentrequest-implementations.md)
 

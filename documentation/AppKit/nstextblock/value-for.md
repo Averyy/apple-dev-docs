@@ -6,7 +6,7 @@
 Returns the value of the specified text block dimension.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

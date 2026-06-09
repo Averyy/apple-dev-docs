@@ -17,7 +17,9 @@ These constants are used to identify individual components of attributed strings
 ## See Also
 
 - [PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.enum.md)
+  The formatting styles for person name components.
 - [PersonNameComponentsFormatter.Options](personnamecomponentsformatter/options.md)
+  Options for formatting person name components.
 - [Attributed String Key](attributed-string-key.md)
   This constant is used as a key for person name component attributes in attributed strings returned by the [`annotatedString(from:)`](personnamecomponentsformatter/annotatedstring(from:).md) method
 - [Component Delimiter](component-delimiter.md)

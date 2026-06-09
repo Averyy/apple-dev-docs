@@ -7,8 +7,6 @@ Get a list of the installed extensions for a user on a device.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -20,10 +18,10 @@ Refer to the following sections to determine supported channels and requirements
 
 |  |  |
 | --- | --- |
-| Device channel | NA |
+| Device channel | N/A |
 | User channel | macOS |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | QueryInstalledApps |
 
 ##### Example Request and Response
@@ -116,7 +114,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#NSExtensionMappingsCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

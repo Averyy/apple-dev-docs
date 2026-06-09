@@ -6,6 +6,9 @@
 Returns the original version of a secure message by optionally decrypting it and then extracting and verifying the attached MIC.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - visionOS 1.0+
 
 ## Declaration

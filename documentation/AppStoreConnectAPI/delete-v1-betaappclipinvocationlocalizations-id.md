@@ -1,4 +1,4 @@
-# Delete a Beta App Clip Invocation Localization
+# Delete a beta app clip invocation localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Delete localized metadata you configured for an App Clip that testers launch usi
 
 ## See Also
 
-- [Create Localized Metadata for a Beta App Clip Invocation](post-v1-betaappclipinvocationlocalizations.md)
+- [Create localized metadata for a beta app clip invocation](post-v1-betaappclipinvocationlocalizations.md)
   Provide localized metadata for an App Clip experience you make available to testers.
-- [Modify Localized Metadata of an App Clip Invocation for Testers](patch-v1-betaappclipinvocationlocalizations-_id_.md)
+- [Modify localized metadata of an app clip invocation for testers](patch-v1-betaappclipinvocationlocalizations-_id_.md)
   Change the metadata for an App Clip you make available to testers in the TestFlight app.
 
 

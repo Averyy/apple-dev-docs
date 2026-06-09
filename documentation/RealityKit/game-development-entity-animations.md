@@ -73,6 +73,11 @@ Dynamically move, rotate, and scale entities at runtime.
   A blend tree node that’s internal only or sources from an invalid definition.
 - [enum BlendWeight](blendweight.md)
   A numerical representation of the impact an animation has on a scene or entity.
+### Animation graphs
+- [class AnimationGraphResource](animationgraphresource.md)
+  A compiled animation graph resource that drives skeletal animation on an entity.
+- [struct AnimationGraphComponent](animationgraphcomponent.md)
+  A component that drives skeletal animation on an entity using a node-based animation graph.
 
 ## See Also
 
@@ -80,6 +85,14 @@ Dynamically move, rotate, and scale entities at runtime.
   Explore a collection of projects relating to game development.
 - [Character control, skeletons, and inverse kinematics](game-development-character-skeletons.md)
   Direct the movements and animation of models.
+- [struct NavigationComponent](navigationcomponent.md)
+  A component that defines which areas of a navigation mesh an entity can move through.
+- [struct NavigationMeshComponent](navigationmeshcomponent.md)
+  A component that provides the navigation meshes an entity uses to find paths through a scene.
+- [struct NavigationController](navigationcontroller.md)
+  An interface for finding paths for an entity moving across a scene’s navigation mesh.
+- [class NavigationMeshResource](navigationmeshresource.md)
+  A representation of a scene’s navigable surfaces that the system uses to compute paths.
 
 
 ---

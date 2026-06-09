@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription introductory offer resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -19,10 +21,12 @@ object SubscriptionIntroductoryOffer.Attributes
 - `numberOfPeriods` (integer)
 - `offerMode` (SubscriptionOfferMode)
 - `startDate` (date)
+- `targetSubscriptionPlanType` (SubscriptionPlanType)
 
 ## See Also
 
 - [object SubscriptionIntroductoryOffer.Relationships](subscriptionintroductoryoffer/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

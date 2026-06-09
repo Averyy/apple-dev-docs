@@ -10,8 +10,6 @@ A device group in the organization.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.14+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

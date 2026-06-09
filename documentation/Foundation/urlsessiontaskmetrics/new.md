@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Creates a task metrics instance.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
@@ -17,6 +19,10 @@
 ```swift
 class func new() -> Self
 ```
+
+#### Discussion
+
+You should never need to create your own [`URLSessionTaskMetrics`](urlsessiontaskmetrics.md) instances.
 
 
 ---

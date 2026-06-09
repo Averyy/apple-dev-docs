@@ -9,6 +9,7 @@ Creates a component that makes an entity aware of certain aspects of the physica
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- macOS 27.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

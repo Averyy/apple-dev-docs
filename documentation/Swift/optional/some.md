@@ -20,6 +20,11 @@ The presence of a value, stored as `Wrapped`.
 case some(Wrapped)
 ```
 
+## See Also
+
+- [init(consuming Wrapped)](optional/init(_:).md)
+  Creates an instance that stores the given value.
+
 
 ---
 

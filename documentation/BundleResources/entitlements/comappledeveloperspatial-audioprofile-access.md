@@ -31,12 +31,14 @@ Add this entitlement to your app by enabling the Spatial Audio Profile capabilit
 
 ## See Also
 
-- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
-  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
+- [com.apple.developer.media-device-extension](entitlements/com.apple.developer.media-device-extension.md)
+  An array of media sharing protocol identifiers that an extension supports.
 - [com.apple.developer.coremotion.head-pose](entitlements/com.apple.developer.coremotion.head-pose.md)
   An entitlement that enables someone’s head movement to determine the orientation of spatialized sound output.
 - [com.apple.developer.avfoundation.multitasking-camera-access](entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md)
   A Boolean value that indicates whether an app may continue using the camera at the same time as another foreground app.
+- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
+  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 
 
 ---

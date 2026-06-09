@@ -211,6 +211,11 @@ Use [`WebPage`](webpage.md) to programmatically navigate to various types of res
   Changes whether the webpage is using the camera to capture images or video.
 - [func setMicrophoneCaptureState(WKMediaCaptureState) async](webpage/setmicrophonecapturestate(_:).md)
   Changes whether the webpage is using the microphone to capture audio.
+### Structures
+- [WebPage.FormInfo](webpage/forminfo.md)
+  A type that contains information about a form submission from a webpage.
+- [WebPage.ImmersiveEnvironment](webpage/immersiveenvironment.md)
+  An object representing a website-provided immersive environment that is ready for presentation.
 
 ## Relationships
 

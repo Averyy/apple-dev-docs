@@ -19,8 +19,11 @@ struct SendEncryptedMessageRequest
 
 ### Creating a request
 - [init(content: RCSMessage.GeolocationPush, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-3ox0y.md)
+  Creates a new send encrypted message request with the given parameters.
 - [init(content: RCSMessage.Text, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-6dm2z.md)
+  Creates a new send encrypted message request with the given parameters.
 - [init(content: RCSMessage.FileTransfer, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-jqfv.md)
+  Creates a new send encrypted message request with the given parameters.
 ### Inspecting receipts
 - [var secureSendReceipt: RCSMessage.SecureSendReceipt?](rcsservice/sendencryptedmessagerequest/securesendreceipt.md)
   The send receipt of the original message.

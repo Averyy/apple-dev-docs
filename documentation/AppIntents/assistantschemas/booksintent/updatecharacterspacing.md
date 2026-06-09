@@ -39,26 +39,7 @@ struct UpdateCharacterSpacingIntent: AppIntent {
 }
 ```
 
-For more information about the `.books` app intent domain, see [`Making ebook actions available to Siri and Apple Intelligence`](making-ebook-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var navigatePage: some AssistantSchemas.Intent](assistantschemas/booksintent/navigatepage.md)
-  The app intent conforms to the schema for navigating to a specific page of an ebook.
-- [var openBook: some AssistantSchemas.Intent](assistantschemas/booksintent/openbook.md)
-  The app intent conforms to the schema for opening an ebook.
-- [var playAudiobook: some AssistantSchemas.Intent](assistantschemas/booksintent/playaudiobook.md)
-  The app intent conforms to the schema for playing an audiobook.
-- [var updateFontSize: some AssistantSchemas.Intent](assistantschemas/booksintent/updatefontsize.md)
-  The app intent conforms to the schema for updating the font size.
-- [var updateLineSpacing: some AssistantSchemas.Intent](assistantschemas/booksintent/updatelinespacing.md)
-  The app intent conforms to the schema for updating the line spacing.
-- [var updateSettings: some AssistantSchemas.Intent](assistantschemas/booksintent/updatesettings.md)
-  The app intent conforms to the schema for updating settings for an ebook.
-- [var updateWordSpacing: some AssistantSchemas.Intent](assistantschemas/booksintent/updatewordspacing.md)
-  The app intent conforms to the schema for updating the spacing between words.
-- [AssistantSchemas.BooksIntent](assistantschemas/booksintent.md)
-  Assistant schema conformance for app intents that offer ebook and audiobook functionality.
+For more information about the `.books` app intent domain, see doc:Making-ebook-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

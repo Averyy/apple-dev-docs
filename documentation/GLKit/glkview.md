@@ -82,6 +82,8 @@ Typically, there is no need to subclass the [`GLKView`](glkview.md) class. Inste
 - [UIView](../UIKit/UIView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
@@ -89,6 +91,8 @@ Typically, there is no need to subclass the [`GLKView`](glkview.md) class. Inste
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

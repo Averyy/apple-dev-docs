@@ -55,6 +55,7 @@ extension MyCustomType: Transition {
 - [CommandGroup](commandgroup.md)
 - [CommandMenu](commandmenu.md)
 - [EmptyCommands](emptycommands.md)
+- [EmptyView](emptyview.md)
 - [Group](group.md)
 - [ImportFromDevicesCommands](importfromdevicescommands.md)
 - [InspectorCommands](inspectorcommands.md)
@@ -62,6 +63,7 @@ extension MyCustomType: Transition {
 - [TextEditingCommands](texteditingcommands.md)
 - [TextFormattingCommands](textformattingcommands.md)
 - [ToolbarCommands](toolbarcommands.md)
+- [TupleContent](tuplecontent.md)
 
 ## See Also
 
@@ -76,7 +78,7 @@ extension MyCustomType: Transition {
 - [struct CommandGroup](commandgroup.md)
   Groups of controls that you can add to existing command menus.
 - [struct CommandsBuilder](commandsbuilder.md)
-  Constructs command sets from multi-expression closures. Like `ViewBuilder`, it supports up to ten expressions in the closure body.
+  Constructs command sets from multi-expression closures. Like `ContentBuilder`, it supports up to ten expressions in the closure body.
 - [struct CommandGroupPlacement](commandgroupplacement.md)
   The standard locations that you can place new command groups relative to.
 

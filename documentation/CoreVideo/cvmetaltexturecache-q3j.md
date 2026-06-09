@@ -33,6 +33,8 @@ A Core Video Metal texture cache creates and manages [`CVMetalTexture`](cvmetalt
 
 - [CVMetalTexture](cvmetaltexture-q3g.md)
   A texture-based image buffer that supplies source image data for use with the Metal framework.
+- [class CVMetalBufferCache](cvmetalbuffercache.md)
+  A cache used to create and manage Metal buffer objects.
 
 
 ---

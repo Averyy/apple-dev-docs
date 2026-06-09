@@ -6,23 +6,23 @@ Process the status that declarative management reports for managed apps.
 
 #### Overview
 
-Devices report the status of each declarative managed app in the [`StatusAppManagedList`](statusappmanagedlist.md) status item, which device management servers can subscribe to. Devices report incremental updates to the [`StatusAppManagedList`](statusappmanagedlist.md) status item elements when the managed app status changes.
+Devices report the status of each declarative managed app in the [`StatusAppManagedList`](statusappmanagedlist.md) status item, which device management services can subscribe to. Devices report incremental updates to the [`StatusAppManagedList`](statusappmanagedlist.md) status item elements when the managed app status changes.
 
 #### Process the Status Item
 
 The [`StatusAppManagedList`](statusappmanagedlist.md) status item type is `app.managed.list`, which contains the device’s declarative managed apps.
 
-The status item value is an array of objects that represent each managed app. The device reports changes incrementally to the device management server using normal status-item array value reporting behavior (see [`StatusReport`](statusreport.md)). The status includes required and optional apps, whether installed or not.
+The status item value is an array of objects that represent each managed app. The device reports changes incrementally to the device management service using normal status-item array value reporting behavior (see [`StatusReport`](statusreport.md)). The status includes required and optional apps, regardless of whether they are installed.
 
 The `identifier` key is the bundle ID of the managed app and is the unique identifier for incremental reporting of the overall status item (see [`StatusReport`](statusreport.md)). The `declaration-identifier` key is the `Identifier` of the managed app configuration. Additional properties show the app’s name and version identifiers.
 
 The `state` key indicates the app’s management state, for example, `queued`, `downloading`, `installing`, and `managed`. If an error occurs, the device reports the `failed` state with the `reasons` key for more details. The device can also include the `reasons` key for other states, providing additional information, for example, if an update for the app is available.
 
-If a configuration provisions declarative app configurations for an app or its extensions, the app or extension reports the state back to the device management server using the `config-state` key. The device management service should communicate errors back to the admin for corrective actions.
+If a configuration provisions declarative app configurations for an app or its extensions, the app or extension reports the state back to the device management service using the `config-state` key. The device management service should communicate errors back to the administrator for corrective actions.
 
 #### Use Managed App Status in a Predicate
 
-You can include managed app status in declarative device management activation predicates to test the status values and trigger activations based on them. To use properties of a specific app in a predicate term, use the `SUBQUERY` operator. The following example shows a predicate that triggers when an app’s management state is set to `managed`:
+Include managed app status in declarative device management activation predicates to test the status values and initiate activations based on them. To use properties of a specific app in a predicate term, use the `SUBQUERY` operator. The following example shows a predicate that evaluates to true when an app’s management state is set to `managed`:
 
 ```None
 SUBQUERY(@status(app.managed.list), $app, ($app.@key(identifier) == "com.example.app") AND ($app.@key(state) == "managed")).@count != 0
@@ -41,7 +41,7 @@ In this example, two terms exist: one tests for a specific app bundle identifier
 - [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
   Provide managed apps and extensions with app configuration and secrets.
 - [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Seamlessly transition apps to declarative management without needing to reinstall.
+  Transition apps to declarative management.
 - [Installing packages](installing-packages.md)
   Use declarative package management to install and remove packages in macOS.
 

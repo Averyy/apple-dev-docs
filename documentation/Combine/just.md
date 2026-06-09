@@ -46,9 +46,7 @@ In contrast with [`Result.Publisher`](https://developer.apple.com/documentation/
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

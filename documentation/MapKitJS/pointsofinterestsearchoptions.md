@@ -27,6 +27,8 @@ interface PointsOfInterestSearchOptions
   A filter that lists points of interest categories to include or exclude.
 - [language](serviceconstructoroptions/language.md)
   A language identifier that determines the language for the service results text.
+- [signal](pointsofinterestsearchoptions/signal.md)
+  A signal object allowing you to cancel the request.
 ### Instance Properties
 - [language](pointsofinterestsearchoptions/language.md)
   The language ID to use when fetching points of interest.

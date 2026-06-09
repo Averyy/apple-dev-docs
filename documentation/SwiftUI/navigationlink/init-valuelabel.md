@@ -18,7 +18,7 @@ Creates a navigation link that presents the view corresponding to a codable valu
 
 ```swift
 nonisolated
-init<P>(value: P?, @ViewBuilder label: () -> Label) where P : Decodable, P : Encodable, P : Hashable
+init<P>(value: P?, @ContentBuilder label: () -> Label) where P : Decodable, P : Encodable, P : Hashable
 ```
 
 ## Mentions

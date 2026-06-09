@@ -17,7 +17,7 @@ Creates a new tab that you can use in a tab view, with an empty label.
 ## Declaration
 
 ```swift
-init(role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel
+init(role: TabRole?, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
 ## Parameters

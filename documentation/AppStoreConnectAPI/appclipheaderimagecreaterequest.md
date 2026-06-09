@@ -27,9 +27,9 @@ object AppClipHeaderImageCreateRequest
 ## See Also
 
 - [object AppClipHeaderImage](appclipheaderimage.md)
-  The data structure that represents the image that appears on the App Clip card of a default App Clip experience.
+  The image displayed on the App Clip card for a default App Clip experience, uploaded as part of App Clip configuration.
 - [object AppClipHeaderImageResponse](appclipheaderimageresponse.md)
-  A response that contains a single App Clip Header Images resource.
+  A response containing a single header image for a default App Clip experience.
 - [object AppClipHeaderImageUpdateRequest](appclipheaderimageupdaterequest.md)
   The request body you use to commit the image asset for a default App Clip experience.
 

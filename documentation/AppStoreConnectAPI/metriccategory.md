@@ -14,24 +14,24 @@ Categories of metric reports for apps that you distribute through the App Store.
 string MetricCategory
 ```
 
-#### Discussion
+## Mentions
 
--HANG: The number of seconds per hour that the main thread of the app is unresponsive for more than 250ms, which is the maximum amount of time an app can respond to a typical user event before the user perceives it as slow. -LAUNCH: The average launch time, which is the time between the user tapping on your app icon and the time that the system draws a screen other than the launch screen. The launch time is measured in milliseconds. -MEMORY: The amount of memory the app uses, in megabytes. -DISK: The amount of megabytes per day the app writes to long term storage. -BATTERY: The amount of battery power the app uses over a 24 hour period when the device is disconnected from power. -TERMINATION: The average amount of non-user-initiated app terminations, including background terminations, per day. -ANIMATION: The duration of pauses that occur while scrolling an app.
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
 
 ## See Also
 
 - [object xcodeMetrics](xcodemetrics.md)
   A response that contains power and performance measurements for your app.
 - [object DiagnosticInsight](diagnosticinsight.md)
-  The data structure that represents the Diagnostic Insight resource.
+  An AI-generated analysis of a recurring performance issue identified in your app’s diagnostic logs, with suggested fixes.
 - [object DiagnosticSignaturesResponse](diagnosticsignaturesresponse.md)
-  A response that contains a list of Diagnostic Signature resources.
+  A response containing a list of unique performance issue signatures identified in your app’s diagnostic data.
 - [object DiagnosticSignature](diagnosticsignature.md)
-  The data structure that represents the Diagnostic Signatures resource.
+  A unique pattern identifying a recurring crash, hang, or disk-write exception in your app’s diagnostic logs.
 - [object diagnosticLogs](diagnosticlogs.md)
   A response containing log data for a diagnostic signature.
 - [object DiagnosticLog](diagnosticlog.md)
-  The data structure that represents the Diagnostic Logs resource.
+  A raw performance log file associated with a diagnostic signature, downloadable for detailed analysis.
 - [object DiagnosticLogCallStackNode](diagnosticlogcallstacknode.md)
   Diagnostic information that describes a single line in a call stack.
 - [object MetricsInsight](metricsinsight.md)

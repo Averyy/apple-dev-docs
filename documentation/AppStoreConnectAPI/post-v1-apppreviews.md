@@ -1,4 +1,4 @@
-# Create an App Preview
+# Create an app preview
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,9 +14,9 @@ Add a new app preview to a preview set.
 
 ## See Also
 
-- [Modify an App Preview](patch-v1-apppreviews-_id_.md)
+- [Modify an app preview](patch-v1-apppreviews-_id_.md)
   Commit the app preview after uploading it, and update the poster frame timecode.
-- [Delete an App Preview](delete-v1-apppreviews-_id_.md)
+- [Delete an app preview](delete-v1-apppreviews-_id_.md)
   Delete an app preview within a preview set.
 
 

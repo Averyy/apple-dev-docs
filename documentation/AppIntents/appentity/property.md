@@ -18,10 +18,6 @@
 typealias Property = EntityProperty
 ```
 
-## Mentions
-
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-
 
 ---
 

@@ -28,6 +28,8 @@ struct Feature
 ### Extended Scan Features
 - [static var extendedScanAndConnect: CBCentralManager.Feature](cbcentralmanager/feature/extendedscanandconnect.md)
   The hardware supports extended scans and enhanced connection creation.
+### Type Properties
+- [static var channelSounding: CBCentralManager.Feature](cbcentralmanager/feature/channelsounding.md)
 
 ## Relationships
 

@@ -6,6 +6,9 @@
 A server advertises itself to local devices using its [`sessionID`](gksession/sessionid.md) property.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+

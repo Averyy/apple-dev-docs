@@ -18,6 +18,8 @@ class let willPopUpNotification: NSNotification.Name
 
 The notification object is the selected `NSPopUpButton` object. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSPopUpButton.WillPopUpMessage`](nspopupbutton/willpopupmessage.md).
+
 
 ---
 

@@ -13,8 +13,6 @@ A dictionary that contains the configurations to apply to the app.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,7 +29,7 @@ object SettingsCommand.Command.Settings.ApplicationConfiguration
 ## Properties
 
 - `Configuration` (SettingsCommand.Command.Settings.ApplicationConfiguration.Configuration): A dictionary that contains the configurations to apply to the app. Omit this setting to remove existing configurations.
-- `Identifier` (string) *(required)*: The bundle identifier of the managed app. > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md).
+- `Identifier` (string) *(required)*: The bundle identifier of the managed app. > ❗ **Important**:  For a watchOS app, the identifier needs to be the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired. Obtain the watch’s bundle identifier for an app with a watch bundle, in the `watchBundleId` key that’s part of the Content Metadata query. For more information on this query, see [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md).
 - `Item` (string) *(required)*: A string that identifies this setting.
 
 ## See Also

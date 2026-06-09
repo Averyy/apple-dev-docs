@@ -38,6 +38,8 @@ Hiding the unit name only affects the presentation of the measurement. Unless yo
   The intended purpose of the formatted measurement.
 - [var locale: Locale](measurement/formatstyle/locale.md)
   The locale of the format style.
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+  Modifies the measurement format style to use the specified locale.
 
 
 ---

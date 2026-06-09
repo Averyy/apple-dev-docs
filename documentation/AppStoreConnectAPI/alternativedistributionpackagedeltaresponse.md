@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single alternative distribution package delta resource.
+A response containing a single delta update for an alternative distribution package.
 
 **Availability**:
 - App Store Connect API 3.3+
@@ -46,27 +46,27 @@ This object is the response that contains a single alternative distribution pack
 ## See Also
 
 - [object AlternativeDistributionPackage](alternativedistributionpackage.md)
-  The data structure that represents an alternative distribution package resource.
+  The distributable package for an app on an alternative marketplace or web distribution, containing versioned variants and delta updates.
 - [object AlternativeDistributionPackageCreateRequest](alternativedistributionpackagecreaterequest.md)
   The request body you use to create an alternative distribution package.
 - [object AlternativeDistributionPackageResponse](alternativedistributionpackageresponse.md)
-  A response that contains a single alternative distribution package resource.
+  The response body for endpoints that read a single alternative distribution package.
 - [object AlternativeDistributionPackageVersion](alternativedistributionpackageversion.md)
-  The data structure that represents an alternative distribution package version resource.
+  A versioned snapshot of an alternative distribution package, containing its variants and delta updates.
 - [object AlternativeDistributionPackageVersionResponse](alternativedistributionpackageversionresponse.md)
-  A response that contains a single alternative distribution package version resource.
+  The response body for endpoints that read a single alternative distribution package version.
 - [object AlternativeDistributionPackageVersionsResponse](alternativedistributionpackageversionsresponse.md)
-  A response that contains a list of alternative distribution package version resources.
+  The response body for endpoints that list versions of an alternative distribution package.
 - [object AlternativeDistributionPackageDelta](alternativedistributionpackagedelta.md)
-  The data structure that represents an alternative distribution package delta resource.
+  An incremental update package for an alternative distribution app, containing only the changes between two versions to reduce download size.
 - [object AlternativeDistributionPackageDeltasResponse](alternativedistributionpackagedeltasresponse.md)
-  A response that contains a list of alternative distribution package delta resources.
+  A response containing a list of delta updates available for an alternative distribution package.
 - [object AlternativeDistributionPackageVariant](alternativedistributionpackagevariant.md)
-  The data structure that represents an alternative distribution package variant resource.
+  A device-specific file package within an alternative distribution app, targeting a particular device family.
 - [object AlternativeDistributionPackageVariantResponse](alternativedistributionpackagevariantresponse.md)
-  A response that contains a single alternative distribution package variant resource.
+  A response containing a single variant of an alternative distribution package.
 - [object AlternativeDistributionPackageVariantsResponse](alternativedistributionpackagevariantsresponse.md)
-  A response that contains a list of alternative distribution package variant resources.
+  A response containing a list of device-specific variants within an alternative distribution package.
 - [object AlternativeDistributionPackageVersionDeltasLinkagesResponse](alternativedistributionpackageversiondeltaslinkagesresponse.md)
 - [object AlternativeDistributionPackageVersionVariantsLinkagesResponse](alternativedistributionpackageversionvariantslinkagesresponse.md)
 - [object AlternativeDistributionPackageVersionsLinkagesResponse](alternativedistributionpackageversionslinkagesresponse.md)

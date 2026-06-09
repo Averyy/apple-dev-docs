@@ -39,7 +39,6 @@ The new entry has no tag, target, or action, but is enabled and editable.
 - [var tag: Int](nsactioncell/tag.md)
   Returns the receiver’s tag.
 - [Form Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Form/Form.html#//apple_ref/doc/uid/10000021i)
-- [Matrix Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Matrix/Matrix.html#//apple_ref/doc/uid/10000022i)
 - [func insertEntry(String, at: Int) -> NSFormCell!](nsform/insertentry(_:at:).md)
   Inserts an entry with the specified title into the receiver.
 - [func removeEntry(at: Int)](nsform/removeentry(at:).md)

@@ -11,7 +11,7 @@ The street name at the place.
 ## Declaration
 
 ```swift
-thoroughfare?: string;
+thoroughfare: string | null;
 ```
 
 #### Discussion

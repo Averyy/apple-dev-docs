@@ -46,7 +46,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageDeltas/9d
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageDeltas]` ([string])
+- `fields[alternativeDistributionPackageDeltas]` ([string]): Additional fields to include for each alternative distribution package deltas resource returned by the response.
 
 ## See Also
 

@@ -64,7 +64,7 @@ protocol InsettableShape : Shape
 - [func containerShape(_:)](view/containershape(_:).md)
   Sets the container shape to use for any container relative shape or concentric rectangle within this view.
 - [struct ContainerRelativeShape](containerrelativeshape.md)
-  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+  A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 
 ---

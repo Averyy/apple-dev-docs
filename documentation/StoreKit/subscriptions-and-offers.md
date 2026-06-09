@@ -35,7 +35,7 @@ Offer customers additional time-based content and services through purchases the
   The signed discount to apply to a payment.
 ### Offer codes
 - [Implementing offer codes in your app](implementing-offer-codes-in-your-app.md)
-  Provide subscription service for customers who redeem offer codes through the App Store or within an app that uses receipts.
+  Enable customers to redeem offer codes through the App Store or within an app that uses receipts.
 ### Subscription service entitlement
 - [Determining service entitlement on the server](determining-service-entitlement-on-the-server.md)
   Identify a customer’s entitlement to your service, offers, and messaging by analyzing a validated receipt and the state of their subscription.

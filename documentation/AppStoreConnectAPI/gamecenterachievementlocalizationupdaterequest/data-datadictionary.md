@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a achievement.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -16,6 +18,7 @@ object GameCenterAchievementLocalizationUpdateRequest.Data
 
 ### Objects
 - [object GameCenterAchievementLocalizationUpdateRequest.Data.Attributes](gamecenterachievementlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a achievement resource.
 
 ## Properties
 

@@ -8,6 +8,7 @@ Requests network-sharing authorization for the specified accessory at initial se
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

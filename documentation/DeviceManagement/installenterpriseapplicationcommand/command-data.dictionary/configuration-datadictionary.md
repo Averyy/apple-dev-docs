@@ -7,8 +7,6 @@ A dictionary that contains the configuration to install an enterprise app.
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

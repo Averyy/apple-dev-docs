@@ -20,25 +20,30 @@ enum Feature
 
 ## Topics
 
-### Enumeration Cases
-- [FeatureSet.Feature.drawing](featureset/feature/drawing.md)
-  Supports drawing.
+### Describing element features
 - [FeatureSet.Feature.images](featureset/feature/images.md)
   Supports image elements.
-- [FeatureSet.Feature.links](featureset/feature/links.md)
-  Supports link elements.
-- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
-  Supports loupe elements.
-- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
-  Supports shapes with fills.
-- [FeatureSet.Feature.shapeOpacity](featureset/feature/shapeopacity.md)
-  Supports shapes with opacity.
-- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
-  Supports shapes with strokes.
 - [FeatureSet.Feature.stickers](featureset/feature/stickers.md)
   Supports inserting stickers.
+- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+  Supports loupe elements.
+- [FeatureSet.Feature.links](featureset/feature/links.md)
+  Supports link elements.
+### Describing shape features
+- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
+  Supports shapes with fills.
+- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
+  Supports shapes with strokes.
+- [FeatureSet.Feature.shapeOpacity](featureset/feature/shapeopacity.md)
+  Supports shapes with opacity.
 - [FeatureSet.Feature.text](featureset/feature/text.md)
   Supports shapes with text.
+### Describing drawing features
+- [FeatureSet.Feature.drawing](featureset/feature/drawing.md)
+  Supports drawing.
+### Type Properties
+- [static var allCases: [FeatureSet.Feature]](featureset/feature/allcases.md)
+  All cases of the feature enumeration, including platform-restricted ones.
 
 ## Relationships
 
@@ -48,6 +53,12 @@ enum Feature
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [FeatureSet.ContentVersion](featureset/contentversion-swift.enum.md)
+- [FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.struct.md)
+  The arrow marker positions for the ends of a line.
 
 
 ---

@@ -8,6 +8,7 @@ Pauses the alarm with the specified ID if it’s in the countdown state.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

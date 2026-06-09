@@ -18,7 +18,7 @@ Creates a window group with an identifier.
 
 ```swift
 nonisolated
-init(id: String, @ViewBuilder makeContent: @escaping () -> Content)
+init(id: String, @ContentBuilder makeContent: @escaping () -> Content)
 ```
 
 #### Discussion

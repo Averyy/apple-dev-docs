@@ -21,7 +21,7 @@ var dimensions: MTLTensorExtents? { get }
 
 #### Discussion
 
-Because shader-bound tensors have dynamic extents, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and `MTLTensorExtents/extentsAtDimensionIndex:` always returns a value of -1.
+For shader-bound tensors with dynamic extents, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](mtltensorextents/extentatdimensionindex:.md) always returns a value of -1.
 
 
 ---

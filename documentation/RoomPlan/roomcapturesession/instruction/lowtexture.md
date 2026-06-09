@@ -9,7 +9,6 @@ An instruction that indicates the framework doesn’t detect distinguishable roo
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

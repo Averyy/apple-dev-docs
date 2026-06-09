@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an app tag update request resource.
+The updateable attributes of an app tag, including its territory associations.
 
 **Availability**:
 - App Store Connect API 4.1+

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The resource linkage data identifying a platform version requirement for Game Center challenges.
+
 **Availability**:
 - App Store Connect API 3.6+
 

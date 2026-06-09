@@ -49,7 +49,7 @@ When you create an activity you use a payload like this:
 }
 ```
 
-In the response you get an `id` in the top-level data object. This `id` represents the Game Center activity. You can find this `id` at anytime using [`List All Activities for a Game Center Detail`](get-v1-gamecenterdetails-_id_-gamecenteractivities.md) or [`List All Activities for a Game Center Group`](get-v1-gamecentergroups-_id_-gamecenteractivities.md) for a grouped app.
+In the response you get an `id` in the top-level data object. This `id` represents the Game Center activity. You can find this `id` at anytime using [`List all activities for a game center detail`](get-v1-gamecenterdetails-_id_-gamecenteractivities.md) or [`List all activities for a game center group`](get-v1-gamecentergroups-_id_-gamecenteractivities.md) for a grouped app.
 
 ##### Create the Activity Version
 
@@ -149,7 +149,7 @@ To learn more uploading images, see [`Uploading Assets to App Store Connect`](up
 
 ##### Relate Your Activity to a Leaderboard
 
-If your activity is not a multiplayer activity, it must be have a relationship to a leaderboard. If you don’t have an existing or appropriate leaderboard for your activity, you can create one using [`Create a Leaderboard`](post-v1-gamecenterleaderboards.md). A multiplayer activity, using the `supportsPartyCode` attribute, can be used as a lobby for a group game session.  When you’re ready to relate your activity to your leaderboard, use [`PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity`](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md) with the Game Center leaderboard `id` in the request URL and with a payload like this:
+If your activity is not a multiplayer activity, it must be have a relationship to a leaderboard. If you don’t have an existing or appropriate leaderboard for your activity, you can create one using [`Create a Leaderboard`](post-v1-gamecenterleaderboards.md). A multiplayer activity, using the `supportsPartyCode` attribute, can be used as a lobby for a group game session.  When you’re ready to relate your activity to your leaderboard, use [`Modify the activity for a Game Center leaderboard`](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md) with the Game Center leaderboard `id` in the request URL and with a payload like this:
 
 ```json
 {
@@ -164,7 +164,7 @@ If your activity is not a multiplayer activity, it must be have a relationship t
 
 > **Note**: One localization and a default image are required for submission.
 
-Now, you’re ready to submit your activity version for review. Use [`Add an Activity Version Release`](post-v1-gamecenteractivityversionreleases.md) to attach your activity version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated activity version to app review.
+Now, you’re ready to submit your activity version for review. Use [`Add an Activity Version Release`](post-v1-gamecenteractivityversionreleases.md) to attach your activity version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the state of game center for an app`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated activity version to app review.
 
 Use a payload like this:
 
@@ -190,7 +190,7 @@ Use a payload like this:
 }
 ```
 
-> 💡 **Tip**: Read a list of the past activity version releases using [`Get Activity Releases for a Game Center Detail`](get-v1-gamecenterdetails-_id_-activityreleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center activity version that is currently `LIVE`.
+> 💡 **Tip**: Read a list of the past activity version releases using [`Get activity releases for a game center detail`](get-v1-gamecenterdetails-_id_-activityreleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center activity version that is currently `LIVE`.
 
 ## See Also
 

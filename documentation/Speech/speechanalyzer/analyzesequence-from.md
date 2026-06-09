@@ -25,16 +25,16 @@ The time-code of the last audio sample of the input, or `nil` if the file was em
 
 #### Discussion
 
-When this method returns, the input sequence will have been consumed, but the last of the audio may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](speechanalyzer/finalize(through:).md) and await its return.
+When this method returns, the file will have been read, but the last of the audio may still be undergoing analysis. To wait for the analysis to complete, call another method such as [`finalize(through:)`](speechanalyzer/finalize(through:).md) and await its return.
 
 ## Parameters
 
-- `audioFile`: An AVAudioFile opened for reading.
+- `audioFile`: An `AVAudioFile` opened for reading.
 
 ## See Also
 
 - [func analyzeSequence<InputSequence>(InputSequence) async throws -> CMTime?](speechanalyzer/analyzesequence(_:).md)
-  Analyzes an input sequence, returning when the sequence is consumed.
+  Analyzes an input sequence, returning when the sequence terminates.
 
 
 ---

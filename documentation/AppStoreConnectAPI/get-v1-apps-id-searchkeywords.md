@@ -1,10 +1,12 @@
-# GET /v1/apps/{id}/searchKeywords
+# List all search keywords for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get search keywords for a specific app.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -12,14 +14,15 @@
 
 ## Parameters
 
-- `fields[appKeywords]` ([string])
-- `filter[locale]` ([string])
-- `filter[platform]` ([string])
-- `limit` (integer)
+- `fields[appKeywords]` ([string]): Additional fields to include for each app keyword resource returned by the response.
+- `filter[locale]` ([string]): Filter the returned app keywords by locale.
+- `filter[platform]` ([string]): Filter the returned app keywords by platform.
+- `limit` (integer): The maximum number of app keyword resources to return.
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/searchKeywords](get-v1-apps-_id_-relationships-searchkeywords.md)
+- [List search keyword IDs for an app](get-v1-apps-_id_-relationships-searchkeywords.md)
+  Get a list of search keyword IDs for a specific app.
 
 
 ---

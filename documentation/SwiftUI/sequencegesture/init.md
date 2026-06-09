@@ -17,6 +17,7 @@ Creates a sequence gesture with two gestures.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ first: First, _ second: Second)
 ```
 

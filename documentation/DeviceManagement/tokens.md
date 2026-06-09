@@ -5,10 +5,6 @@
 
 The request for sending the device token details.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Topics
 
 ### Supporting Object
@@ -17,7 +13,7 @@ The request for sending the device token details.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#tokens`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## See Also
 

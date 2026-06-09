@@ -72,6 +72,12 @@ Attach a video output to an [`AVPlayer`](avplayer.md) object to access the playe
   An object that vends collections of metadata items that a player item’s tracks carry.
 - [protocol AVPlayerItemOutputPushDelegate](avplayeritemoutputpushdelegate.md)
   A protocol that defines the methods to implement to respond to changes in the media data sequence.
+- [class AVPlayerItemSampleBufferOutput](avplayeritemsamplebufferoutput.md)
+  [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md) delivers `CMSampleBuffers` for [`AVPlayerItem`](avplayeritem.md) playback.
+- [class AVPlayerItemSampleBufferOutputConfiguration](avplayeritemsamplebufferoutputconfiguration.md)
+  Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
+- [class AVPlayerItemSampleBufferOutputAudioConfiguration](avplayeritemsamplebufferoutputaudioconfiguration.md)
+  Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
 
 
 ---

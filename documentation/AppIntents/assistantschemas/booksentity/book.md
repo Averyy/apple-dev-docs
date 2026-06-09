@@ -20,10 +20,6 @@ The app entity describes an ebook.
 var book: some AssistantSchemas.Entity { get }
 ```
 
-## Mentions
-
-- [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.books.book` schema:
@@ -61,16 +57,7 @@ struct BookEntity: AppEntity {
 }
 ```
 
-For more information about the `.books` app intent domain, see [`Making ebook actions available to Siri and Apple Intelligence`](making-ebook-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var audiobook: some AssistantSchemas.Entity](assistantschemas/booksentity/audiobook.md)
-  The app entity describes an audiobook.
-- [var settings: some AssistantSchemas.Entity](assistantschemas/booksentity/settings.md)
-  The app entity describes settings for an audiobook or ebook.
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
-  Assistant schema conformance for app entities that describe ebooks or audiobooks.
+For more information about the `.books` app intent domain, see doc:Making-ebook-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

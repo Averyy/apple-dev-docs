@@ -9,7 +9,7 @@ Asks the delegate if the specified row should be highlighted.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

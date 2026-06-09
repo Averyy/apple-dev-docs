@@ -19,6 +19,10 @@ A builder object that incrementally constructs a workout.
 class HKWorkoutBuilder
 ```
 
+## Mentions
+
+- [Accessing workout zone data](accessing-workout-zone-data.md)
+
 #### Overview
 
 Incrementally collect samples and events associated with a workout. When the workout ends, call [`finishWorkout(completion:)`](hkworkoutbuilder/finishworkout(completion:).md) to create an [`HKWorkout`](hkworkout.md) sample and save it to the HealthKit store.
@@ -78,6 +82,14 @@ For watchOS, use an [`HKWorkoutSession`](hkworkoutsession.md) and an [`HKLiveWor
 ### Accessing workout statistics
 - [var allStatistics: [HKQuantityType : HKStatistics]](hkworkoutbuilder/allstatistics.md)
   A dictionary that contains all the statistics for the workout builder.
+### Configuring zone data
+- [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md)
+  Sets the zone configuration for the specified quantity type for this workout. In order to provide a custom workout zone configuration, this must be called before beginning collection on the builder. If a custom configuration is not provided, the user’s preferred workout zone configuration will be used for zone calculations.
+- [func zoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkworkoutbuilder/zoneconfiguration(for:).md)
+  Returns the zone configuration for the specified quantity type.
+### Instance Methods
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutbuilder/zonegroup(for:).md)
+  Returns the current zone group for the specified quantity type, including real-time duration calculations.
 
 ## Relationships
 

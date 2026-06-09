@@ -5,8 +5,8 @@
 Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
 
 **Availability**:
-- visionOS 2.0+
-- Xcode 16.0+
+- visionOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 #### Overview
 
@@ -251,6 +251,10 @@ if !supportsEmbeddedPlaybackExperience, context.toExperience == .expanded {
   An object that manages viewing multiple videos at once.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
+- [class AVViewport](avviewport.md)
+- [class AVPortalViewport](avportalviewport.md)
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

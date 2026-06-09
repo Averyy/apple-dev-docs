@@ -9,7 +9,6 @@ A type that represents an element you can request from a mobile national ID card
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 
@@ -30,6 +29,8 @@ struct Element
   The mobile national ID card holder’s family name or last name.
 - [static let givenName: MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/givenname.md)
   The mobile national ID card holder’s given name or first name.
+- [static let name: MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/name.md)
+  The mobile national ID card holder’s name.
 - [static let portrait: MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/portrait.md)
   The picture of the mobile national ID card holder on record with the issuer.
 - [static let sex: MobileNationalIDCardDataRequest.Element](mobilenationalidcarddatarequest/element/sex.md)

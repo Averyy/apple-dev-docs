@@ -27,6 +27,12 @@ struct Descriptor
 - [var sizeMultiple: Int](lowlevelbuffer/descriptor-swift.struct/sizemultiple.md)
   For variable length buffers, bytesUsed needs to be a multiple of this value.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 
 ---
 

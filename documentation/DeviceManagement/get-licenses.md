@@ -6,17 +6,16 @@
 Get the set of licenses managed by your organization.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Mentions
 
-- [Retrieving a Large Record Set](retrieving-a-large-record-set.md)
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
+- [Retrieving a large record set](retrieving-a-large-record-set.md)
+- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
 
 #### Discussion
 
-This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [`Get Assets`](get-assets-44p83.md)  and [`Get Assignments`](get-assignments-158kc.md) as described in the initial import process in [`Managing Apps and Books Through Web Services`](managing-apps-and-books-through-web-services-legacy.md) instead of this API.
+This call returns an exhaustive list of individual licenses managed by your organization. For performance reasons, it’s recommended that you use a combination of [`Get Assets`](get-assets-44p83.md)  and [`Get Assignments`](get-assignments-158kc.md) as described in the initial import process in [`Managing apps and books through web services (Legacy)`](managing-apps-and-books-through-web-services-legacy.md) instead of this API.
 
 Additionally, it’s not recommended to use the Apple license IDs returned in the [`GetVppLicensesResponse`](getvpplicensesresponse.md) in MDM implementations because it creates an unnecessary dependence on internal data models, which can change.
 

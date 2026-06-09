@@ -11,8 +11,6 @@ The declaration to configure a managed app.
 - Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -40,9 +38,10 @@ Specify `com.apple.configuration.app.managed` as the declaration type.
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, visionOS |
 | Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | NA |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
 | Allowed in user scope | macOS |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Examples
 
@@ -173,29 +172,29 @@ This configuration installs an enterprise app with declarative app configuration
 - [object AppManagedAppConfigDictionaryObject](appmanagedappconfigdictionaryobject.md)
   A dictionary of app config data and credentials.
 - [object AppManagedAttributesObject](appmanagedattributesobject.md)
-  A dictionary of values associated with an app.
+  A dictionary of values to associate with the app.
 - [object AppManagedExtensionConfigsObject](appmanagedextensionconfigsobject.md)
-  A dictionary of values associated with an extension config.
+  A dictionary of extension config data and credentials.
 - [object AppManagedInstallBehaviorObject](appmanagedinstallbehaviorobject.md)
-  A dictionary that describes how and when to install an app.
+  A dictionary that describes how and when to install the app.
 - [object AppManagedUpdateBehaviorObject](appmanagedupdatebehaviorobject.md)
-  Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
+  A dictionary that specifies how the device updates apps.
 
 ## Properties
 
-- `AppComposedIdentifier` (string): A string that specifies the composed identifier of an existing app that needs to be managed. The device uses this to take over management of an app installed by some other process, for example installed manually by the user, or via a package configuration. If the app isn’t present when the device applies the configuration, the device takes over management of it when it does install. The following rules apply when the device takes over management: - If the `InstallBehavior.Install` key is set to `Required`, the device takes over management of the app.
-- If the `InstallBehavior.Install` key is set to `Optional`, the device takes over management of the app when the user “installs” it using an MDM management app. The format of the composed identifier is either “Bundle-ID (Team-ID)” or “Bundle-ID {Designated-Requirement}”. For example, `com.example.app (ABCD1234)` for the team ID format, or `com.example.app {anchor apple generic}` for the designated requirement format. Management of the app occurs only if its code signature matches the composed identifier. In macOS, only one of `AppStoreID`, `BundleID`, or `AppComposedIdentifier` needs to be present. Available only in macOS.
-- `AppConfig` (AppManagedAppConfigDictionaryObject): A dictionary of app config data and credentials. Available only in iOS and visionOS.
+- `AppComposedIdentifier` (string): A string that specifies the composed identifier of an existing app that needs to be managed. The device uses this to take over management of an app installed by some other process, for example installed manually by the user, or via a package configuration. If the app isn’t present when the device applies the configuration, the device takes over management of it when it does install. Management of the app occurs only if its code signature matches the composed identifier. The following rules apply when the device takes over management: - If the `InstallBehavior.Install` key is set to `Required`, the device takes over management of the app.
+- If the `InstallBehavior.Install` key is set to `Optional`, the device takes over management of the app when the user “installs” it using an MDM management app. The format of the composed identifier is either “Bundle-ID” or “Bundle-ID (Team-ID)”. “Bundle-ID” is the bundle identifier string of the provider. “Team-ID” is the team identifier from the provider’s code signature. For example, “com.example.app” for the bundle ID format, or “com.example.app (ABCD1234)” for the team ID format. In macOS, only one of `AppStoreID`, `BundleID`, or `AppComposedIdentifier` needs to be present. Available: macOS 26+
+- `AppConfig` (AppManagedAppConfigDictionaryObject): A dictionary of app config data and credentials. Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
 - `AppStoreID` (string): The App Store ID of the managed app that is downloaded from the App Store. Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present.
-- `Attributes` (AppManagedAttributesObject): A dictionary of values to associate with the app. Available only in iOS and visionOS.
+- `Attributes` (AppManagedAttributesObject): A dictionary of values to associate with the app. Available: iOS 17.2+ | iPadOS 17.2+ | visionOS 2.4+
 - `BundleID` (string): The bundle ID of the managed app that is downloaded from the App Store. Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present.
-- `ExtensionConfigs` (AppManagedExtensionConfigsObject): A dictionary of extension config data and credentials. Available only in iOS and visionOS.
-- `IncludeInBackup` (boolean): If `true`, backups contain the app and its data. Available only in iOS and visionOS.
+- `ExtensionConfigs` (AppManagedExtensionConfigsObject): A dictionary of extension config data and credentials. Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
+- `IncludeInBackup` (boolean): If `true`, backups contain the app and its data. Available: iOS 17.2+ | iPadOS 17.2+ | visionOS 2.4+
 - `InstallBehavior` (AppManagedInstallBehaviorObject): A dictionary that describes how and when to install the app.
-- `iOSApp` (boolean): If `true`, the device installs an iOS or iPadOS app that runs on a Mac with Apple Silicon. This is only used when the app is an App Store app. Available only in macOS.
-- `LegacyAppConfigAssetReference` (string): The identifier of an asset declaration containing a reference to the app config data. The device provides the app config data to the app using the MDMv1 behavior. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type. Available only in iOS and visionOS.
-- `ManifestURL` (string): The URL of the manifest for the managed app that the device downloads from a web site. The manifest is returned as a [`ManifestURL`](manifesturl.md) property list. Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present. Available only in iOS and visionOS.
-- `UpdateBehavior` (AppManagedUpdateBehaviorObject): A dictionary that specifies how the device updates apps.
+- `iOSApp` (boolean): If `true`, the device installs an iOS or iPadOS app that runs on a Mac with Apple silicon. This is only used when the app is an App Store app. Available: macOS 26+
+- `LegacyAppConfigAssetReference` (string): The identifier of an asset declaration containing a reference to the app config data. The device provides the app config data to the app using the MDMv1 behavior. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type. Available: iOS 18.4+ | iPadOS 18.4+ | macOS 27+ | visionOS 2.4+
+- `ManifestURL` (string): The URL of the manifest for the managed app that the device downloads from a web site. The manifest is a [`ManifestURL`](manifesturl.md) property list. Only one of `AppStoreID`, `BundleID`, `ManifestURL`, or `AppComposedIdentifier` needs to be present. Available: iOS 17.2+ | iPadOS 17.2+ | visionOS 2.4+
+- `UpdateBehavior` (AppManagedUpdateBehaviorObject): A dictionary that specifies how the device updates apps. Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
 
 ## See Also
 
@@ -213,22 +212,22 @@ This configuration installs an enterprise app with declarative app configuration
   The declaration to configure a Mail account.
 - [object AccountSubscribedCalendar](accountsubscribedcalendar.md)
   The declaration to configure a subscribed calendar.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
 - [object KeyboardSettings](keyboardsettings.md)
   The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
-- [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
-  The declaration to configure status subscriptions.
 
 
 ---

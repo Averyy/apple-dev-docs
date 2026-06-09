@@ -30,21 +30,19 @@ People use Focus on macOS, iOS, and iPadOS to minimize distractions. For example
 ## See Also
 
 - [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Siri](siri.md)
-  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
-- [Visual intelligence](visual-intelligence.md)
-  Integrate your app with visual intelligence and include your content in its search results.
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
+- [Apple Intelligence and Siri AI](apple-intelligence-and-siri-ai.md)
+  Integrate your app with Apple Intelligence and bring it to Siri AI.
+- [Spotlight integration](spotlight.md)
+  Add your entities to your app’s Spotlight index, and automate the indexing of your content.
 - [App Shortcuts](app-shortcuts.md)
-  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
-- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
-  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
-- [Action button on iPhone and Apple Watch](actionbutton.md)
-  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+  Improve the experience of using your app intents and entities in system experiences like Siri, Spotlight, and the Shortcuts app.
+- [Widgets, Live Activities, and Controls](widgets-live-activities-and-controls.md)
+  Implement interactive widgets, controls, watch complications, and Live Activities using app intents.
+- [Hardware interactions](hardware-interactions.md)
+  Run your App Shortcuts from the Action button on iPhone or Apple Watch, or launch your own conversational app from the side button on iPhone.
+- [Visual intelligence](visual-intelligence.md)
+  Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 
 
 ---

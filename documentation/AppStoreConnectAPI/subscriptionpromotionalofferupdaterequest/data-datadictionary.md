@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a subscription promotional offer update request.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object SubscriptionPromotionalOfferUpdateRequest.Data
 
 ### Objects
 - [object SubscriptionPromotionalOfferUpdateRequest.Data.Relationships](subscriptionpromotionalofferupdaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

@@ -13,8 +13,6 @@ The command to enable your server to support declarative management or trigger a
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object DeclarativeManagementCommand
 
 ## Mentions
 
-- [Integrating Declarative Management](integrating-declarative-management.md)
+- [Integrating declarative management](integrating-declarative-management.md)
 
 ## Topics
 

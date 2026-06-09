@@ -28,6 +28,8 @@ struct Shadow
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
 - [init(maximumDistance: Float, depthBias: Float)](directionallightcomponent/shadow/init(maximumdistance:depthbias:).md)
   Creates a directional light shadow with a maximum distance and depth bias.
+- [init(layers: RenderLayer.Set?)](directionallightcomponent/shadow/init(layers:).md)
+  Creates a directional light shadow with the specified layers.
 ### Configuring the shadow
 - [var depthBias: Float](directionallightcomponent/shadow/depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
@@ -37,8 +39,13 @@ struct Shadow
   Sets the shadow projection used for shadow map rendering
 - [var maximumDistance: Float](directionallightcomponent/shadow/maximumdistance.md)
   The maximum distance for the shadow.
-### Registering a component type
-- [Registering a component type](directionallightcomponent/shadow#Registering-a-component-type.md)
+### Specifying affected layers
+- [var layers: RenderLayer.Set?](directionallightcomponent/shadow/layers.md)
+  The layers from which this light accepts shadow casters. If nil, uses layers for shadow casting. Only entities whose RenderLayerComponent.layers intersect with these layers will cast shadows in this light’s shadow map. If `nil`, the light uses its `layers` for shadow casting. Set to an empty set to disable shadow casting entirely.
+### Configuring shadow cascades
+- [var cascades: DirectionalLightComponent.Shadow.Cascades](directionallightcomponent/shadow/cascades-swift.property.md)
+  Number of shadow cascades to use when rendering shadows for this light.
+- [DirectionalLightComponent.Shadow.Cascades](directionallightcomponent/shadow/cascades-swift.struct.md)
 ### Type Aliases
 - [DirectionalLightComponent.Shadow.ShadowMapCullMode](directionallightcomponent/shadow/shadowmapcullmode.md)
 ### Enumerations

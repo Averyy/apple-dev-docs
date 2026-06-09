@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An option to allow the file to be accessible after a user first unlocks the device.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,10 @@
 ```swift
 static var completeFileProtectionWhenUserInactive: NSData.WritingOptions { get }
 ```
+
+#### Discussion
+
+The app can read or write to the file while the device is unlocked, but while it’s booting up, the file has the protection equivalent to `NSDataWritingFileProtectionComplete`.
 
 ## See Also
 

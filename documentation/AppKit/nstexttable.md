@@ -6,7 +6,7 @@
 An object that represents a text table as a whole.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

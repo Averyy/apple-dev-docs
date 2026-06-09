@@ -58,6 +58,14 @@ The following table shows some real-world scenarios, to better explain how you c
 ### Supporting types
 - [SpotLightComponent.Color](spotlightcomponent/color-swift.typealias.md)
   A platform-specific type used to define color for a spotlight.
+### Specifying the render layers
+- [var layers: RenderLayer.Set](spotlightcomponent/layers.md)
+  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+### Defining the light contribution
+- [SpotLightComponent.SurroundingsLight](spotlightcomponent/surroundingslight.md)
+  A component that specifies that the spot light illuminates the physical and immersive environment.
+- [SpotLightComponent.ProjectiveTexture](spotlightcomponent/projectivetexture.md)
+  A component that specifies a map of a projective texture or cookie light to use for shadow mapping.
 ### Structures
 - [SpotLightComponent.Shadow](spotlightcomponent/shadow.md)
   A spotlight component that adds shadows to entities that it illuminates.

@@ -1,4 +1,4 @@
-# Modify the Default App Clip Experience of an App Store Version
+# Modify the default app clip experience of an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,9 +22,9 @@ The request body you use to update the relationship between an App Store version
 
 ## See Also
 
-- [Get the Default App Clip Experience for an App Store Version](get-v1-appstoreversions-_id_-appclipdefaultexperience.md)
+- [Get the default app clip experience for an app store version](get-v1-appstoreversions-_id_-appclipdefaultexperience.md)
   Get the default App Clip experience for an App Store version of your app.
-- [Get the Default App Clip Experiences Resource ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
+- [Get the default app clip experiences resource id for an app store version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
   Get the ID of an app’s related default App Clip experience.
 
 

@@ -8,6 +8,7 @@ The policy for fetching activity data.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 
@@ -26,7 +27,6 @@ enum Policy
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

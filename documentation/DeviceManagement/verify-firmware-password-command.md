@@ -7,8 +7,6 @@ Verify the firmware password on a device.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -23,10 +21,10 @@ This command isn’t supported on a Mac with Apple silicon.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -82,7 +80,7 @@ This command isn’t supported on a Mac with Apple silicon.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#VerifyFirmwarePasswordCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

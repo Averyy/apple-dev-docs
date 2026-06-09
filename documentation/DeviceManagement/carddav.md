@@ -11,8 +11,6 @@ The payload that configures a Contacts account.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,8 +29,8 @@ Specify `com.apple.carddav.account` as the payload type.
 | Device channel | iOS, visionOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
@@ -94,11 +92,11 @@ Specify `com.apple.carddav.account` as the payload type.
 - `CardDAVHostName` (string) *(required)*: The server’s address.
 - `CardDAVPassword` (string): The user’s password. Only use this in encrypted profiles.
 - `CardDAVPort` (integer): The server’s port.
-- `CardDAVPrincipalURL` (string): The base URL to the user’s address book.
+- `CardDAVPrincipalURL` (string): The base URL to the user’s address book. Available: iOS 4+ | iPadOS 4+ | visionOS 1.1+
 - `CardDAVUsername` (string): The user name for logins.
 - `CardDAVUseSSL` (boolean): If `true`, the system enables SSL.
-- `CommunicationServiceRules` (CardDAV.CommunicationServiceRules): An array of communication service rules for this account.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+- `CommunicationServiceRules` (CardDAV.CommunicationServiceRules): An array of communication service rules for this account. Available: iOS 10+ | iPadOS 10+ | visionOS 1.1+
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 

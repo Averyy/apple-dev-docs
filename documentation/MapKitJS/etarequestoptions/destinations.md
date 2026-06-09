@@ -11,12 +11,12 @@ An array of coordinates that represent end points for estimated arrival time req
 ## Declaration
 
 ```swift
-destinations: Coordinate[];
+destinations: CoordinateData[];
 ```
 
 #### Discussion
 
-A [`Coordinate`](coordinate.md) represents each destination in the array. You may get coordinates from [`search(query, callback, options)`](search/search.md) or [`lookup(place, callback, options)`](geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
+A [`Coordinate`](coordinate.md) represents each destination in the array. You may get coordinates from [`search(query, options)`](search/search.md) or [`lookup(place, options)`](geocoder/lookup.md), which return [`Place`](place.md) objects that contain coordinates. You may provide up to 10 destinations in the array.
 
 ## See Also
 
@@ -26,6 +26,8 @@ A [`Coordinate`](coordinate.md) represents each destination in the array. You ma
   The time of departure used in an estimated arrival time request.
 - [transportType](etarequestoptions/transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
+- [signal](etarequestoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

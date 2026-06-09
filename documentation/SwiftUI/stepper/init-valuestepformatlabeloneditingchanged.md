@@ -17,7 +17,7 @@ Creates a stepper configured to increment or decrement a binding to a value usin
 
 ```swift
 nonisolated
-init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, @ViewBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
+init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, @ContentBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
 ```
 
 #### Discussion

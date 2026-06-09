@@ -6,8 +6,7 @@
 The request for asset management.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ object ManageAssetsRequest
 
 ## Mentions
 
-- [Managing Assets](managing-assets.md)
+- [Managing assets](managing-assets.md)
 
 ## Topics
 

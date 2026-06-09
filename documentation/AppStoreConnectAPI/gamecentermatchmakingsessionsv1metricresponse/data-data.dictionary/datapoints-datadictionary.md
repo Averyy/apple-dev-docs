@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The time-series data points for the Game Center matchmaking sessions metric.
+
 **Availability**:
 - App Store Connect API 3.1+
 

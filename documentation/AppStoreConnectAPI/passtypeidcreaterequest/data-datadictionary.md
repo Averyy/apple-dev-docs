@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a pass type id create request resource.
+The data wrapper for a pass type ID create request, containing the resource type and identifier attributes.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,7 +18,7 @@ object PassTypeIdCreateRequest.Data
 
 ### Dictionaries
 - [object PassTypeIdCreateRequest.Data.Attributes](passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  The data structure that represents a pass type id create request resource.
+  The identifying attributes for a new pass type ID, including the identifier string.
 
 ## Properties
 

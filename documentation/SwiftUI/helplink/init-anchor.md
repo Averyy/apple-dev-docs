@@ -11,7 +11,8 @@ Constructs a new help link with the specified anchor in the main app bundle’s 
 ## Declaration
 
 ```swift
-init(anchor: NSHelpManager.AnchorName)
+@MainActor
+@preconcurrency init(anchor: NSHelpManager.AnchorName)
 ```
 
 #### Discussion

@@ -119,6 +119,8 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [UIView](uiview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

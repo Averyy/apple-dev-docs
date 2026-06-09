@@ -170,6 +170,14 @@ class NSMenu
   Posted just after the application dispatches a menu item’s action method to the menu item’s target.
 - [class let willSendActionNotification: NSNotification.Name](nsmenu/willsendactionnotification.md)
   Posted just before the application dispatches a menu item’s action method to the menu item’s target.
+### Structures
+- [NSMenu.DidAddItemMessage](nsmenu/didadditemmessage.md)
+- [NSMenu.DidBeginTrackingMessage](nsmenu/didbegintrackingmessage.md)
+- [NSMenu.DidChangeItemMessage](nsmenu/didchangeitemmessage.md)
+- [NSMenu.DidEndTrackingMessage](nsmenu/didendtrackingmessage.md)
+- [NSMenu.DidRemoveItemMessage](nsmenu/didremoveitemmessage.md)
+- [NSMenu.DidSendActionMessage](nsmenu/didsendactionmessage.md)
+- [NSMenu.WillSendActionMessage](nsmenu/willsendactionmessage.md)
 ### Instance Properties
 - [var automaticallyInsertsWritingToolsItems: Bool](nsmenu/automaticallyinsertswritingtoolsitems.md)
 

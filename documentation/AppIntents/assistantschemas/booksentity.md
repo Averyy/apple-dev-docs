@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe ebooks or audiobooks
 protocol BooksEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making ebook actions available to Siri and Apple Intelligence](making-ebook-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -41,15 +37,6 @@ protocol BooksEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var book: some AssistantSchemas.Entity](assistantschemas/booksentity/book.md)
-  The app entity describes an ebook.
-- [var audiobook: some AssistantSchemas.Entity](assistantschemas/booksentity/audiobook.md)
-  The app entity describes an audiobook.
-- [var settings: some AssistantSchemas.Entity](assistantschemas/booksentity/settings.md)
-  The app entity describes settings for an audiobook or ebook.
 
 
 ---

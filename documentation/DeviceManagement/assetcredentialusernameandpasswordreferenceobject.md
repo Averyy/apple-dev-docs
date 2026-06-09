@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The external reference for an asset-credential user name and password.
+The external reference. Ensure that the asset data:
 
 **Availability**:
 - iOS 15.0+
@@ -13,14 +13,17 @@ The external reference for an asset-credential user name and password.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object AssetCredentialUserNameAndPasswordReferenceObject
 ```
+
+#### Discussion
+
+- Is a JSON document that represents the `com.apple.credential.usernameandpassword` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 
 ## Properties
 
@@ -32,7 +35,7 @@ object AssetCredentialUserNameAndPasswordReferenceObject
 ## See Also
 
 - [object AssetCredentialUserNameAndPasswordAuthenticationObject](assetcredentialusernameandpasswordauthenticationobject.md)
-  The server authentication details for an asset-credential user name and password.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 
 
 ---

@@ -11,6 +11,7 @@ Creates a bordered button menu style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

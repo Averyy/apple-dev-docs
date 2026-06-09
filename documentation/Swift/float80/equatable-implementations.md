@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](float80/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](float80/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Self, Self) -> Bool](float80/==(_:_:)-1i6lb.md)
   Returns a Boolean value indicating whether two values are equal.

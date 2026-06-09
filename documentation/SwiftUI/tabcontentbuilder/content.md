@@ -17,6 +17,7 @@ A view representation of the content of a builder-based tab view with selection.
 ## Declaration
 
 ```swift
+nonisolated
 struct Content<C> where C : TabContent
 ```
 

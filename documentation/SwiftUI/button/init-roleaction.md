@@ -18,14 +18,27 @@ Creates a button that displays a default label.
 
 ```swift
 @preconcurrency
-init(role: ButtonRole, action: @escaping @MainActor () -> Void)
+nonisolated init(role: ButtonRole, action: @escaping @MainActor () -> Void)
 ```
 
 #### Discussion
 
 For example, the following view would display a button with a ‘x’ symbol in the toolbar.
 
-struct NewContactSheet: View { var body: some View { NavigationStack { NewContactEditor() .toolbar { Button(role: .cancel) { dismissView() } } } } }
+```swift
+struct NewContactSheet: View {
+    var body: some View {
+        NavigationStack {
+            NewContactEditor()
+                .toolbar {
+                    Button(role: .cancel) {
+                        dismissView()
+                    }
+                }
+        }
+    }
+}
+```
 
 ## Parameters
 

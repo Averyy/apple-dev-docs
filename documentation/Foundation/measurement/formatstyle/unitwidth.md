@@ -52,6 +52,8 @@ struct UnitWidth
   The visibility of the unit name of a temperature.
 - [var locale: Locale](measurement/formatstyle/locale.md)
   The locale of the format style.
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle](measurement/formatstyle/locale(_:).md)
+  Modifies the measurement format style to use the specified locale.
 
 
 ---

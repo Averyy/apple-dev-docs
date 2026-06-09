@@ -6,8 +6,7 @@
 Fetch the Account-Driven Enrollment profile that the MDM server sets, which includes information about service discovery for account-driven enrollment.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.1+
 
 ## Topics
 

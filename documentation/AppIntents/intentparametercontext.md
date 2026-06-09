@@ -46,6 +46,7 @@ struct IntentParameterContext<Value> where Value : _IntentValue, Value : Sendabl
 - [var defaultUnit: IntentParameter<Measurement<UnitDuration>>.Duration?](intentparametercontext/defaultunit-7uvfx.md)
 - [var defaultUnit: IntentParameter<Measurement<UnitIlluminance>>.Illuminance?](intentparametercontext/defaultunit-847tm.md)
 - [var defaultUnit: IntentParameter<Measurement<UnitInformationStorage>>.InformationStorage?](intentparametercontext/defaultunit-8ois6.md)
+- [var defaultUnit: IntentParameter<Duration>.DurationUnit?](intentparametercontext/defaultunit-9delu.md)
 - [var defaultUnit: IntentParameter<Measurement<UnitPower>>.Power?](intentparametercontext/defaultunit-9ibfi.md)
 - [var defaultUnit: IntentParameter<Measurement<UnitPressure>>.Pressure?](intentparametercontext/defaultunit-b5mb.md)
 - [var defaultUnit: IntentParameter<Measurement<UnitSpeed>>.Speed?](intentparametercontext/defaultunit-dk7x.md)
@@ -100,6 +101,7 @@ struct IntentParameterContext<Value> where Value : _IntentValue, Value : Sendabl
 - [var unit: IntentParameter<Measurement<UnitConcentrationMass>>.ConcentrationMass?](intentparametercontext/unit-8omlm.md)
 - [var unit: IntentParameter<Measurement<UnitAcceleration>>.Acceleration?](intentparametercontext/unit-fzbg.md)
 - [var unit: IntentParameter<Measurement<UnitDuration>>.Duration?](intentparametercontext/unit-i68w.md)
+- [var unit: IntentParameter<Duration>.DurationUnit?](intentparametercontext/unit-vecd.md)
 - [var unitAdjustForLocale: Bool?](intentparametercontext/unitadjustforlocale-108qa.md)
 - [var unitAdjustForLocale: Bool?](intentparametercontext/unitadjustforlocale-10odh.md)
 - [var unitAdjustForLocale: Bool?](intentparametercontext/unitadjustforlocale-18j21.md)
@@ -147,12 +149,18 @@ struct IntentParameterContext<Value> where Value : _IntentValue, Value : Sendabl
 
 ## See Also
 
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
 - [class IntentParameter](intentparameter.md)
   A property wrapper that indicates the associated property is an input argument of the app intent.
 - [class IntentParameterDependency](intentparameterdependency.md)
   A property wrapper that represents an app intent dependency you use to provide dynamic options.
 - [enum InputConnectionBehavior](inputconnectionbehavior.md)
   Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
 
 ---

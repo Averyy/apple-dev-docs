@@ -8,6 +8,7 @@ The value that indicates the system allows the Tunneled Transport Layer Security
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

@@ -48,7 +48,7 @@ let compactMapped: [Int] = possibleNumbers.compactMap { str in Int(str) }
 
 ## See Also
 
-- [func mapValues<T>((Value) throws -> T) rethrows -> Dictionary<Key, T>](dictionary/mapvalues(_:).md)
+- [func mapValues<T, E>((Value) throws(E) -> T) throws(E) -> Dictionary<Key, T>](dictionary/mapvalues(_:).md)
   Returns a new dictionary containing the keys of this dictionary with the values transformed by the given closure.
 - [func reduce<Result>(Result, (Result, Self.Element) throws -> Result) rethrows -> Result](dictionary/reduce(_:_:).md)
   Returns the result of combining the elements of the sequence using the given closure.

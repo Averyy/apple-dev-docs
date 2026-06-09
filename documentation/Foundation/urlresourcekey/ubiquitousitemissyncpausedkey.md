@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A Boolean value that indicates whether sync is paused for this item (value type boolean `NSNumber`).
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A key for the inflection concepts in the formatting context dictionary.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+

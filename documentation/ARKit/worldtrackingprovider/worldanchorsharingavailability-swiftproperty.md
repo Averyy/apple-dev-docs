@@ -6,7 +6,6 @@
 A sequence of world anchor sharing availability changes.
 
 **Availability**:
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

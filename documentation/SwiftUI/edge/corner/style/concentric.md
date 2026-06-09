@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The concentric corner style. When a corner is concentric to its container, it will adjust the current corner radius to ensure that the container corner radius equals to current corner radius plus the distance between corners.
+A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,10 @@ The concentric corner style. When a corner is concentric to its container, it wi
 ```swift
 static var concentric: Edge.Corner.Style { get }
 ```
+
+#### Discussion
+
+When a corner is concentric to its container, the system calculates the corner radius to equal the container shape’s corner radius minus the distance between corners. When the system calculates a zero radius, the corner is square.
 
 
 ---

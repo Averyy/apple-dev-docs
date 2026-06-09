@@ -9,6 +9,7 @@ An entity that models the physical shape of the environment within a given cubic
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
+- macOS 27.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration
@@ -16,6 +17,13 @@ An entity that models the physical shape of the environment within a given cubic
 ```swift
 case meshChunk
 ```
+
+#### Discussion
+
+When `SpotLightComponent.SurroundingsLight` or `PointLightComponent.SurroundingsLight`is enabled:
+
+- On visionOS, RealityKit automatically selects the opaque meshes that intersects the bounding box of the entity’s mesh and illuminates them with surroundings light.
+- On macOS, surroundings light illuminates the entity’s mesh.
 
 ## See Also
 

@@ -37,6 +37,7 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 ### Creating an attribute set
 - [init(contentType: UTType)](cssearchableitemattributeset/init(contenttype:).md)
   Creates an attribute set for the specified content type.
+- [init?(coder: NSCoder)](cssearchableitemattributeset/init(coder:).md)
 ### Accessing custom attributes
 - [func setValue((any NSSecureCoding)?, forCustomKey: CSCustomAttributeKey)](cssearchableitemattributeset/setvalue(_:forcustomkey:).md)
   Sets the value for a custom attribute key.
@@ -445,8 +446,6 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 ### Deprecated
 - [init(itemContentType: String)](cssearchableitemattributeset/init(itemcontenttype:).md)
   Creates an attribute set for the specified content type.
-### Initializers
-- [init?(coder: NSCoder)](cssearchableitemattributeset/init(coder:).md)
 
 ## Relationships
 

@@ -8,6 +8,7 @@ A regular payment of a fixed amount that’s paid on a specified date.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -378,6 +378,8 @@ If the virtual machine was running when the sample app last exited, the app call
 
 The `startVirtualMachine` method calls the VM’s [`start(completionHandler:)`](vzvirtualmachine/start(completionhandler:).md) method.
 
+For a sendable wrapper that connects a [`VZVirtualMachineView`](vzvirtualmachineview.md) to a virtual machine, see  [`VZVirtualMachineViewAdaptor`](vzvirtualmachineviewadaptor.md).
+
 **Swift**:
 
 ```swift
@@ -534,7 +536,7 @@ The system defers app termination until the [`saveMachineStateTo(url:completionH
   Configure and run macOS guests on Apple silicon.
 - [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs with Rosetta](running-intel-binaries-in-linux-vms-with-rosetta.md)
+- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 - [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.

@@ -3,10 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift
@@ -23,6 +19,11 @@ object RelationshipResponse
 - `data` ([Resource]) *(required)*
 - `meta` (RelationshipResponse.Meta)
 - `next` (string)
+
+## See Also
+
+- [Fetch a apps resource's relationship](fetch-a-apps-resource's-relationship.md)
+- [Fetch a books resource's relationship](fetch-a-books-resource's-relationship.md)
 
 
 ---

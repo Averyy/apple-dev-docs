@@ -9,7 +9,6 @@ Asks the delegate for the interface orientations to use for the view controllers
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
-- visionOS 1.0+
 
 ## Declaration
 

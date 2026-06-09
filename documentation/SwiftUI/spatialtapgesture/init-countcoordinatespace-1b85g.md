@@ -16,6 +16,7 @@ Creates a tap gesture with the number of required taps and the coordinate space 
 ## Declaration
 
 ```swift
+nonisolated
 init(count: Int = 1, coordinateSpace: CoordinateSpace = .local)
 ```
 

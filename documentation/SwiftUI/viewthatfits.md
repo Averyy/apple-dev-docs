@@ -18,7 +18,7 @@ A view that adapts to the available space by providing the first child view that
 
 ```swift
 @frozen
-struct ViewThatFits<Content> where Content : View
+nonisolated struct ViewThatFits<Content> where Content : View
 ```
 
 #### Overview
@@ -71,7 +71,7 @@ VStack {
 
 ### Creating a view that fits
 - [init(in: Axis.Set, content: () -> Content)](viewthatfits/init(in:content:).md)
-  Produces a view constrained in the given axes from one of several alternatives provided by a view builder.
+  Produces a view constrained in the given axes from one of several alternatives provided by a content builder.
 
 ## Relationships
 

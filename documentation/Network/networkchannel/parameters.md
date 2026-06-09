@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: property
 
-The set of parameters with which the channel was created
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

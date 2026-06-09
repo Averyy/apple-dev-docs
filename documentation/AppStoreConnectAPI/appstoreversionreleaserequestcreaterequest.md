@@ -27,9 +27,9 @@ object AppStoreVersionReleaseRequestCreateRequest
 ## See Also
 
 - [object AppStoreVersionReleaseRequestResponse](appstoreversionreleaserequestresponse.md)
-  A response that contains a single App Store Version Release Request resource.
+  A response containing a single manual release request for an App Store version.
 - [object AppStoreVersionReleaseRequest](appstoreversionreleaserequest.md)
-  The data structure that represents an App Store Version Release Request resource.
+  A request to manually release an App Store version that was set to manual release after review approval.
 
 
 ---

@@ -9,6 +9,7 @@ Establishes communication between the data provider extension and the system.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Navigation links within an error response, providing references to related resources or documentation.
+
 **Availability**:
 - App Store Connect API 3.5+
 
@@ -16,6 +18,7 @@ object ErrorLinks
 
 ### Objects
 - [object ErrorLinks.Associated](errorlinks/associated-data.dictionary.md)
+  The associated resource links within an error’s navigation links.
 
 ## Properties
 

@@ -96,6 +96,8 @@ The Metal Performance Shaders framework supports the following functionality:
 - [class MPSCNNMultiaryKernel](mpscnnmultiarykernel.md)
 - [class MPSCNNNeuronGeLUNode](mpscnnneurongelunode.md)
 - [class MPSCommandBuffer](mpscommandbuffer.md)
+- [class MPSFColorConversion](mpsfcolorconversion.md)
+- [class MPSFunction](mpsfunction.md)
 - [class MPSImageCanny](mpsimagecanny.md)
 - [class MPSImageEDLines](mpsimageedlines.md)
 - [class MPSImageNormalizedHistogram](mpsimagenormalizedhistogram.md)
@@ -192,6 +194,8 @@ The Metal Performance Shaders framework supports the following functionality:
 - [protocol MPSNNLossCallback](mpsnnlosscallback.md)
 - [protocol MPSSVGFTextureAllocator](mpssvgftextureallocator.md)
 ### Structures
+- [struct MPSFColorConversionOptions](mpsfcolorconversionoptions.md)
+- [struct MPSFunctions_AABB](mpsfunctions_aabb.md)
 - [struct MPSOrigin](mpsorigin.md)
   A position in an image used as the source origin.
 - [struct MPSSize](mpssize.md)
@@ -219,6 +223,9 @@ The Metal Performance Shaders framework supports the following functionality:
 - [var MPSDeviceSupportsSimdShuffleAndFill: MPSDeviceCapsValues](mpsdevicesupportssimdshuffleandfill.md)
 - [var MPSDeviceSupportsSimdgroupBarrier: MPSDeviceCapsValues](mpsdevicesupportssimdgroupbarrier.md)
 - [var MPSDeviceSupportsWritableArrayOfTextures: MPSDeviceCapsValues](mpsdevicesupportswritablearrayoftextures.md)
+- [var MPSFColorConversion_h: Int32](mpsfcolorconversion_h.md)
+- [let MPSFunctions_AABB_SDR: MPSFunctions_AABB](mpsfunctions_aabb_sdr.md)
+- [let MPSFunctions_AABB_Unbounded: MPSFunctions_AABB](mpsfunctions_aabb_unbounded.md)
 - [var MPSImageType2d: MPSImageType](mpsimagetype2d.md)
 - [var MPSImageType2d_array: MPSImageType](mpsimagetype2d_array.md)
 - [var MPSImageType2d_array_noAlpha: MPSImageType](mpsimagetype2d_array_noalpha.md)

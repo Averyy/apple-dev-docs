@@ -36,6 +36,8 @@ These are commands that dictate part of the presentation of the video frames dur
   A value that represents a command that adds fade-in and fade-out effects to backdrop transitions.
 - [PresentationCommand.setCamera(_:)](presentationcommand/setcamera(_:).md)
   A value that represents a command that specifies the camera ID for a specific frame during playback.
+- [PresentationCommand.shotFlip(_:)](presentationcommand/shotflip(_:).md)
+  A value that represents a command that mirrors a whole frame vertically for the duration of the command.
 - [PresentationCommand.shotFlop(_:)](presentationcommand/shotflop(_:).md)
   A value that represents a command that mirrors a whole frame horizontally for the duration of the command.
 
@@ -57,6 +59,8 @@ These are commands that dictate part of the presentation of the video frames dur
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
+- [struct ShotFlipCommand](shotflipcommand.md)
+  A command type to flip the video frames vertically during playback for the duration of the command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

@@ -18,7 +18,7 @@ func messageHandler(_ message: TransportMessage)
 
 #### Discussion
 
-The system calls this method when your accessory sends data through the transport extension using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSession/sendMessageToDataProvider(_:)). The message arrives decrypted and ready for processing.
+The system calls this method when your accessory sends data to the data provider extension. For Bluetooth transport, the accessory sends data through your transport extension using [`sendMessageToDataProvider(_:)`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSession/sendMessageToDataProvider(_:)). For internet transport, the accessory routes data to the device through APNs using [`pushToken`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSession/pushToken). In either case, the system delivers decrypted messages to this method regardless of the transport type.
 
 #### Process Notification Responses
 

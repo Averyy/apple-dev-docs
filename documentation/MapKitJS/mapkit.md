@@ -11,12 +11,14 @@ The JavaScript API for embedding Apple Maps on your website.
 ## Declaration
 
 ```swift
-class MapKit extends MapKitEventTarget
+class MapKit extends EventTarget
 ```
 
 ## Mentions
 
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 - [Creating a Maps token](creating-a-maps-token.md)
+- [MapKit JS 6](mapkit-js-6.md)
 
 #### Overview
 
@@ -53,8 +55,6 @@ MapKit JS lets you customize the look of your map. You can choose style details 
 - [class Geocoder](geocoder.md)
   A geocoder that converts human-readable addresses to geographic coordinates, and vice versa.
 ### Search
-- [const AddressCategory](addresscategory.md)
-  The categories of address components that users can search for with an address filter.
 - [class AddressFilter](addressfilter.md)
   An object that filters which address options to include or exclude in search results.
 - [class Search](search.md)
@@ -72,18 +72,39 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   An object that represents a map feature that the user selects.
 - [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
   An object that describes map feature annotation images.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
-  Point-of-interest categories.
-- [const MapFeatureType](mapfeaturetype.md)
-  Values that describe the feature type of a point of interest.
 ### Directions
 - [class Directions](directions.md)
   An object that provides directions and estimated travel time based on the options you provide.
+### Enumerations
+- [const AddressCategory](addresscategory.md)
+  The categories of address components that users can search for with an address filter.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
+- [const ColorScheme](colorscheme.md)
+  Constants that indicate the color scheme of the map or a place detail.
+- [const DistanceUnitSystem](distanceunitsystem.md)
+  Constants that indicate the system of measurement that displays on the map.
+- [const FeatureVisibility](featurevisibility.md)
+  Constants indicating the visibility of different adaptive map features.
+- [const MapFeatureType](mapfeaturetype.md)
+  Values that describe the feature type of a point of interest.
+- [const MapLoadPriority](maploadpriority.md)
+  Constants that prioritize the visibility of specific map features during map loading.
+- [const MapType](maptype.md)
+  Constants representing the type of map to display.
+- [const PointOfInterestCategory](pointofinterestcategory.md)
+  Point-of-interest categories.
+- [const RegionPriority](regionpriority.md)
+  A value that indicates the importance of the configured region.
+- [const TransportType](transporttype.md)
+  The modes of transportation.
 ### Map view customization
 - [class Padding](padding.md)
   The values that define content padding within the map view frame.
-- [const FeatureVisibility](featurevisibility.md)
-  Constants indicating the visibility of different adaptive map features.
+- [interface PaddingData](paddingdata.md)
+  A plain object representation of edge inset values.
 ### Geographical features
 - [importGeoJSON(data, callback)](mapkit/importgeojson.md)
   Converts imported GeoJSON data to MapKit JS compatible items.
@@ -134,21 +155,35 @@ MapKit JS lets you customize the look of your map. You can choose style details 
 ### Map coordinates
 - [class Coordinate](coordinate.md)
   An object representing the latitude and longitude for a point on the Earth’s surface.
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
 - [class CoordinateRegion](coordinateregion.md)
   A rectangular area on a map that a center coordinate and a span define, in degrees of latitude and longitude.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
 - [class CoordinateSpan](coordinatespan.md)
   The width and height of a map region.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 - [class BoundingRegion](boundingregion.md)
   A rectangular area on a map, which coordinates of the rectangle’s northeast and southwest corners define.
 ### Map units
 - [class MapPoint](mappoint.md)
   A location, in map units, of a point on the Earth’s surface projected onto a 2D map.
+- [interface MapPointData](mappointdata.md)
+  A plain object representation of a map point in map units.
 - [class MapRect](maprect.md)
   A rectangular region, in map units, of a two-dimensional map projection.
+- [interface MapRectData](maprectdata.md)
+  A plain object representation of a rectangular region, in map units, of a two-dimensional map projection.
 - [class MapSize](mapsize.md)
   A pair of values, in map units, that define the width and height of a rectangular area of a map projection.
+- [interface MapSizeData](mapsizedata.md)
+  A plain object representation of dimensions in map units.
 - [class CameraZoomRange](camerazoomrange.md)
   A minimum and maximum camera distance, in meters, from the center of the map.
+- [interface CameraZoomRangeData](camerazoomrangedata.md)
+  A plain object representation of a camera zoom range.
 ### Version and language
 - [language](mapkit/language.md)
   A language ID indicating the selected language.
@@ -160,11 +195,15 @@ MapKit JS lets you customize the look of your map. You can choose style details 
 - [type ImageHashObject](imagehashobject.md)
   An object that defines a set of images URLs for different scales.
 - [interface ImageDelegate](imagedelegate.md)
-  An object you use to specify image URLs.
+  An object you use to provide images for annotations.
+- [type ImageSource](imagesource.md)
+  A union type that represents image sources that the framework can use for annotations and tile overlays.
 ### Service
 - [class Service](service.md)
   An abstract class that provides common interfaces for service objects.
-### Events
+- [class RequestError](requesterror.md)
+  The error that a service method’s returned promise rejects with when a request fails.
+### Deprecated
 - [class MapKitEvent](mapkitevent.md)
   A generic MapKit JS event object.
 - [type MapKitEventListener](mapkiteventlistener.md)
@@ -173,17 +212,23 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   An abstract class that defines the interface for objects that can dispatch events.
 ### Namespace properties
 - [AddressCategory](mapkit/addresscategory.md)
-  The getter to use to access the address category enumeration.
+  An accessor for the address category enumeration.
 - [AddressFilter](mapkit/addressfilter.md)
   The getter to use to access the address filter class.
 - [Annotation](mapkit/annotation.md)
   The getter to use to for access the annotation class.
+- [AnnotationCollisionMode](mapkit/annotationcollisionmode.md)
+  An accessor for the annotation collision mode enumeration.
+- [AnnotationDisplayPriority](mapkit/annotationdisplaypriority.md)
+  An accessor for the annotation display priority enumeration.
 - [BoundingRegion](mapkit/boundingregion.md)
   The getter to use to access the the bounding region class.
 - [CameraZoomRange](mapkit/camerazoomrange.md)
   The getter to use to access the camera zoom range class.
 - [CircleOverlay](mapkit/circleoverlay.md)
   The getter to use to access the circle overlay class.
+- [ColorScheme](mapkit/colorscheme.md)
+  An accessor for the color scheme enumeration.
 - [Coordinate](mapkit/coordinate.md)
   The getter to use to access the coordinate class.
 - [CoordinateRegion](mapkit/coordinateregion.md)
@@ -192,8 +237,10 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   The getter to use to access the coordinate span class.
 - [Directions](mapkit/directions.md)
   The getter to use to access the directions class.
+- [DistanceUnitSystem](mapkit/distanceunitsystem.md)
+  An accessor for the distance unit system enumeration.
 - [FeatureVisibility](mapkit/featurevisibility.md)
-  The getter to use to access the feature-visibility enumeration.
+  An accessor for the feature visibility enumeration.
 - [Geocoder](mapkit/geocoder.md)
   The getter to use to access the geocoder class.
 - [ImageAnnotation](mapkit/imageannotation.md)
@@ -211,13 +258,17 @@ MapKit JS lets you customize the look of your map. You can choose style details 
 - [MapFeatureAnnotation](mapkit/mapfeatureannotation.md)
   The getter to use to access the map feature annotation class.
 - [MapFeatureType](mapkit/mapfeaturetype.md)
-  The getter to use to access the map feature type enumeration.
+  An accessor for the map feature type enumeration.
+- [MapLoadPriority](mapkit/maploadpriority.md)
+  An accessor for the map load priority enumeration.
 - [MapPoint](mapkit/mappoint.md)
   The getter to use to access the map point class.
 - [MapRect](mapkit/maprect.md)
   The getter to use to access the map rect class.
 - [MapSize](mapkit/mapsize.md)
   The getter to use to access the map size class.
+- [MapType](mapkit/maptype.md)
+  An accessor for the map type enumeration.
 - [MarkerAnnotation](mapkit/markerannotation.md)
   The getter to use to access the marker annotation class.
 - [Padding](mapkit/padding.md)
@@ -233,7 +284,7 @@ MapKit JS lets you customize the look of your map. You can choose style details 
 - [PlaceSelectionAccessory](mapkit/placeselectionaccessory.md)
   The getter to use to access the place selection accessory class.
 - [PointOfInterestCategory](mapkit/pointofinterestcategory.md)
-  The getter to use to access the point-of-interest category enumeration.
+  An accessor for the point-of-interest category enumeration.
 - [PointOfInterestFilter](mapkit/pointofinterestfilter.md)
   The getter to use to access the point-of-interest filter class.
 - [PointsOfInterestSearch](mapkit/pointsofinterestsearch.md)
@@ -242,6 +293,8 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   The getter to use to access the polygon overlay class.
 - [PolylineOverlay](mapkit/polylineoverlay.md)
   The getter to use to access the polyline overlay class.
+- [RegionPriority](mapkit/regionpriority.md)
+  An accessor for the region priority enumeration.
 - [Search](mapkit/search.md)
   The getter to use to access the search class.
 - [SearchAutocompleteResult](mapkit/searchautocompleteresult.md)
@@ -250,11 +303,13 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   The getter to use to access the style class.
 - [TileOverlay](mapkit/tileoverlay.md)
   The getter to use to access the tile overlay class.
+- [TransportType](mapkit/transporttype.md)
+  An accessor for the transport type enumeration.
 
 ## Relationships
 
 ### Inherits From
-- [MapKitEventTarget](mapkiteventtarget.md)
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 
 ## See Also
 
@@ -264,6 +319,8 @@ MapKit JS lets you customize the look of your map. You can choose style details 
   Generate your token to access MapKit services with proper authorization.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
+- [Understanding Browser Support](browser-support.md)
+  Supported browsers and compatibility information for MapKit JS.
 
 
 ---

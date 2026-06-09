@@ -9,7 +9,6 @@ Constants that describe the style of the outline disclosure accessory.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration
@@ -31,7 +30,6 @@ enum Style
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

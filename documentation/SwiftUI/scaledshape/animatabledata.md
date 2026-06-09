@@ -17,6 +17,7 @@ The data to animate.
 ## Declaration
 
 ```swift
+nonisolated
 var animatableData: ScaledShape<Content>.AnimatableData { get set }
 ```
 

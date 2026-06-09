@@ -17,6 +17,7 @@ Returns a transition that offset the view by the specified amount.
 ## Declaration
 
 ```swift
+nonisolated
 struct OffsetTransition
 ```
 

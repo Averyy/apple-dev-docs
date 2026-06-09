@@ -55,6 +55,8 @@ The action data stored within an action animation is available to the action’s
 
 ## Relationships
 
+### Inherited By
+- [BehaviorTreeAction](behaviortreeaction.md)
 ### Conforming Types
 - [BillboardAction](billboardaction.md)
 - [EmphasizeAction](emphasizeaction.md)

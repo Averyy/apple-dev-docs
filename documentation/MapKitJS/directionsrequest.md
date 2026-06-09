@@ -16,18 +16,15 @@ interface DirectionsRequest
 
 #### Overview
 
-Provide a `DirectionsRequest` object to the [`route(request, callback)`](directions/route.md) method to get directions between two points, as shown in the code listing that follows. Direction requests require [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
+Provide a `DirectionsRequest` object to the [`route(request)`](directions/route.md) method to get directions between two points. You must provide [`origin`](directionsrequest/origin.md) and [`destination`](directionsrequest/destination.md).
 
 ```javascript
 const myDirections = new mapkit.Directions();
-myDirections.route({
-  origin: "San Francisco, CA",
-  destination: "Oakland, CA",
-  transportType: TransportType/Automobile },
-  function(error, data) {
-    // Results return asynchronously via this callback function, in `data`.
-  }
-);
+const data = await myDirections.route({
+    origin: "San Francisco, CA",
+    destination: "Oakland, CA",
+    transportType: mapkit.Directions.Transport.Automobile,
+});
 ```
 
 ## Topics
@@ -47,15 +44,15 @@ myDirections.route({
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
+- [signal](directionsrequest/signal.md)
+  A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [route(request, callback)](directions/route.md)
+- [route(request)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
 - [interface DirectionsResponse](directionsresponse.md)
-  The directions and estimated travel time that return for a route.
+  The directions and estimated travel time for a route.
 - [class Route](route.md)
   Information about a route, including step-by-step instructions, distance, and estimated travel time.
 - [class RouteStep](routestep.md)

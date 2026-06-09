@@ -8,6 +8,7 @@ The result of signing the data provided by the caller using the requested digita
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

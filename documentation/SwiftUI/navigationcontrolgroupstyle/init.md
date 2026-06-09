@@ -15,6 +15,7 @@ Creates a navigation control group style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

@@ -20,7 +20,8 @@ class func menuBarVisible() -> Bool
 
 ## See Also
 
-- [Application Menu and Pop-up List Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MenuList/MenuList.html#//apple_ref/doc/uid/10000032i)
+- [class func setMenuBarVisible(Bool)](nsmenu/setmenubarvisible(_:).md)
+  Sets whether the menu bar is visible and selectable by the user.
 - [class func setMenuBarVisible(Bool)](nsmenu/setmenubarvisible(_:).md)
   Sets whether the menu bar is visible and selectable by the user.
 - [var menuBarHeight: CGFloat](nsmenu/menubarheight.md)

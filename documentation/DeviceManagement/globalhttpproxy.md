@@ -12,8 +12,6 @@ The payload that configures a global HTTP proxy.
 - macOS 10.9+
 - tvOS 9.0+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,12 +30,12 @@ There can only be one payload of this type on the device at any time.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, macOS, tvOS, visionOS |
 | Requires supervision | iOS, tvOS, visionOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -87,8 +85,8 @@ There can only be one payload of this type on the device at any time.
 
 ## Properties
 
-- `ProxyCaptiveLoginAllowed` (boolean): If `true`, allows the device to bypass the proxy server to display the login page for captive networks.
-- `ProxyPACFallbackAllowed` (boolean): If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable.
+- `ProxyCaptiveLoginAllowed` (boolean): If `true`, allows the device to bypass the proxy server to display the login page for captive networks. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
+- `ProxyPACFallbackAllowed` (boolean): If `true`, allows connecting directly to the destination if the proxy autoconfiguration (PAC) file is unreachable. Available: iOS 7+ | iPadOS 7+ | macOS 10.9+ | tvOS 9+ | visionOS 2+
 - `ProxyPACURL` (string): The URL of the PAC file that defines the proxy configuration. Starting in iOS 13 and macOS 10.15, only URLs that begin with `http://` or `https://` are allowed. This is only used if `ProxyType` is set to `Automatic`, and is ignored if `ProxyType` is set to `Manual`.
 - `ProxyPassword` (string): The password used to authenticate to the proxy server. The device only uses this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.
 - `ProxyServer` (string): The proxy server’s network address. The device requires this if `ProxyType` is set to `Manual`, and ignores it if `ProxyType` is set to `Automatic`.

@@ -24,6 +24,8 @@ pointOfInterestFilter?: PointOfInterestFilter;
   The distance provided in meters, or the longest distance derived from the center point to the region’s bounding box.
 - [language](serviceconstructoroptions/language.md)
   A language identifier that determines the language for the service results text.
+- [signal](pointsofinterestsearchoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

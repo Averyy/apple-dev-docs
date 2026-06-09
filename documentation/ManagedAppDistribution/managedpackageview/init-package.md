@@ -6,7 +6,6 @@
 Create a managed packaged view from a managed package.
 
 **Availability**:
-- Mac Catalyst 26.4+
 - macOS 26.4+
 
 ## Declaration

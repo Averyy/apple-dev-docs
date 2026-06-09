@@ -10,11 +10,11 @@ Xcode is the suite of tools you use to build apps for Apple platforms. Use Xcode
 
 ![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/e1b60f9edde6ed1d1f80b5578dba24c0/xcode-overview-landmarks-hero%402x.png)
 
-Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Use coding intelligence to explain and write code, analyze bugs, and generate fixes. Add playground macros to run code snippets, and add SwiftUI previews to see your UI as you build it.
+Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Use coding intelligence to explain and write code, analyze bugs, and generate fixes. Add playground macros to run code snippets, and add previews to see your UI as you build it.
 
 Xcode also includes several tools to help you rapidly develop and test your app:
 
-- Run your entire app in Simulator without using a real device.
+- Run your entire app on a simulated device without using a physical device.
 - Create a single, multilayer icon for your app using the Icon Composer app.
 - Use Instruments to profile and analyze your app, improve performance, and investigate system resource usage.
 - Construct 3D content with Reality Composer.
@@ -50,6 +50,8 @@ Xcode also includes several tools to help you rapidly develop and test your app:
 ### Code
 - [Source editor](source-editor.md)
   Edit your source files, locate issues, and make necessary changes using the source editor.
+- [Coding intelligence](coding-intelligence.md)
+  Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 - [Bundles and frameworks](bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
 - [Swift packages](swift-packages.md)
@@ -65,8 +67,8 @@ Xcode also includes several tools to help you rapidly develop and test your app:
 - [Writing documentation](writing-documentation.md)
   Produce rich and engaging developer documentation for your apps, frameworks, and packages.
 ### Tuning and debugging
-- [Devices and Simulator](devices-and-simulator.md)
-  Configure and manage devices connected to your Mac or devices in Simulator and use them to run your app.
+- [Device Hub](device-hub.md)
+  Manage the simulated and physical devices that you use to test your app.
 - [Debugging](debugging.md)
   Identify and address issues in your app using the Xcode debugger, Xcode Organizer, Metal debugger, and Instruments.
 - [Performance and metrics](performance-and-metrics.md)

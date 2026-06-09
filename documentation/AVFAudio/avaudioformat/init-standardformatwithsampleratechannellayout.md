@@ -51,6 +51,7 @@ The returned `AVAudioFormat` instance uses the [`AVAudioCommonFormat.pcmFormatFl
   Creates an audio format instance from a stream description.
 - [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
   Creates an audio format instance from a stream description and channel layout.
+- [init?(formatDescription: CMAudioFormatDescription)](avaudioformat/init(formatdescription:).md)
 - [init(cmAudioFormatDescription: CMAudioFormatDescription)](avaudioformat/init(cmaudioformatdescription:)-8rdfj.md)
   Creates an audio format instance from a Core Media audio format description.
 

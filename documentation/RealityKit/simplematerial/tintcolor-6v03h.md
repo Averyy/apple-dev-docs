@@ -6,11 +6,7 @@
 A tint color applied to the base color in macOS.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
-- visionOS ?+
 
 ## Declaration
 

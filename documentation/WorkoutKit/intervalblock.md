@@ -28,17 +28,6 @@ struct IntervalBlock
   A series of work and recovery steps for the interval block.
 - [var iterations: Int](intervalblock/iterations.md)
   The number of times the interval block repeats its steps.
-### Hashing interval blocks
-- [var hashValue: Int](intervalblock/hashvalue.md)
-  The hashed value of the interval block.
-- [func hash(into: inout Hasher)](intervalblock/hash(into:).md)
-  Hashes the essential components of the interval block by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](intervalblock/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two interval blocks aren’t equal.
-- [static func == (IntervalBlock, IntervalBlock) -> Bool](intervalblock/==(_:_:).md)
-  Returns a Boolean value that indicates whether two interval blocks are equal.
-### Default Implementations
-- [Equatable Implementations](intervalblock/equatable-implementations.md)
 
 ## Relationships
 

@@ -11,6 +11,7 @@ Creates the immersive space for a specified type of presented data.
 ## Declaration
 
 ```swift
+nonisolated
 init(for type: Data.Type, @ImmersiveSpaceContentBuilder content: @escaping (Binding<Data?>) -> Content)
 ```
 

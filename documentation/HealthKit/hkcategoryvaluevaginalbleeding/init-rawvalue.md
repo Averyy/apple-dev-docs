@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: init
 
+Initializes a vaginal bleeding value.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

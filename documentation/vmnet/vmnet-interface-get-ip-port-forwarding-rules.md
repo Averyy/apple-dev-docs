@@ -23,6 +23,7 @@ func vmnet_interface_get_ip_port_forwarding_rules(_ interface: interface_ref, _ 
 - [func vmnet_interface_remove_port_forwarding_rule(interface_ref, UInt8, UInt16, vmnet_interface_completion_handler_t?) -> vmnet_return_t](vmnet_interface_remove_port_forwarding_rule(_:_:_:_:).md)
 - [func vmnet_ip_port_forwarding_rule_get_details(xpc_object_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<UInt16>, UInt8, UnsafeMutableRawPointer, UnsafeMutablePointer<UInt16>) -> vmnet_return_t](vmnet_ip_port_forwarding_rule_get_details(_:_:_:_:_:_:).md)
 - [func vmnet_port_forwarding_rule_get_details(xpc_object_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<UInt16>, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<UInt16>) -> vmnet_return_t](vmnet_port_forwarding_rule_get_details(_:_:_:_:_:).md)
+  Extracts port forwarding rule details from the rule XPC dictionary object.
 
 
 ---

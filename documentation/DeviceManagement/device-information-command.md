@@ -13,8 +13,6 @@ Get detailed information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -31,7 +29,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 | Support status | iPhone, iPad | Mac | Apple TV | Apple Watch | Vision Pro |
 | --- | --- | --- | --- | --- | --- |
 | Unsupported | A10x Fusion and earlier | Intel | A10x Fusion and earlier | S3 and earlier | none |
-| Supported | A11 Bionic and laterAll M series | Apple Silicon | A12 Bionic and later | S4 and later | All |
+| Supported | A11 Bionic and laterAll M series | Apple silicon | A12 Bionic and later | S4 and later | All |
 
 ##### Command Availability
 
@@ -39,7 +37,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS, Shared iPad |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | Special Case |
 
@@ -321,7 +319,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#DeviceInformationCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

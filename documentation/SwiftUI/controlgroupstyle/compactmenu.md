@@ -15,8 +15,8 @@ A control group style that presents its content as a compact menu when the user 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var compactMenu: CompactMenuControlGroupStyle { get }
+nonisolated
+static var compactMenu: CompactMenuControlGroupStyle { get }
 ```
 
 #### Discussion

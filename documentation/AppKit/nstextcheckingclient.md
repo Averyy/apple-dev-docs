@@ -27,6 +27,7 @@ protocol NSTextCheckingClient : NSTextInputClient, NSTextInputTraits
 ## Relationships
 
 ### Inherits From
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTextInputClient](nstextinputclient.md)
 - [NSTextInputTraits](nstextinputtraits.md)
 

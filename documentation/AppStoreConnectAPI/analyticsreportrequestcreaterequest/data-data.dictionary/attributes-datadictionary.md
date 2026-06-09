@@ -21,6 +21,7 @@ object AnalyticsReportRequestCreateRequest.Data.Attributes
 ## See Also
 
 - [object AnalyticsReportRequestCreateRequest.Data.Relationships](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

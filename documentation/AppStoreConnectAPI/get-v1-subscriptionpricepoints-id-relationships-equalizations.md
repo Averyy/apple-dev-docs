@@ -1,10 +1,10 @@
-# GET /v1/subscriptionPricePoints/{id}/relationships/equalizations
+# List equalization IDs for a subscription price point
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,13 +16,13 @@
 
 ## See Also
 
-- [Read Subscription Price Point Information](get-v1-subscriptionpricepoints-_id_.md)
+- [Read subscription price point information](get-v1-subscriptionpricepoints-_id_.md)
   Get details about a specific subscription price point.
-- [List All Subscription Price Point Equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)
+- [List all subscription price point equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)
   Get a list of subscription price points and their equivalent in a specified currency.
-- [Create a Subscription Price Change](post-v1-subscriptionprices.md)
+- [Create a subscription price change](post-v1-subscriptionprices.md)
   Schedule a subscription price change for a specific territory.
-- [Delete Subscription Prices](delete-v1-subscriptionprices-_id_.md)
+- [Delete subscription prices](delete-v1-subscriptionprices-_id_.md)
   Delete a scheduled price change for an auto-renewable subscription.
 
 

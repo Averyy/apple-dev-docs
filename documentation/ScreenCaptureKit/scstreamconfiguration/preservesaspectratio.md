@@ -6,7 +6,7 @@
 A Boolean value that determines if the stream preserves aspect ratio.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- Mac Catalyst 18.2+
 - macOS 14.0+
 
 ## Declaration

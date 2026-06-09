@@ -8,6 +8,7 @@ Includes only devices the user selects or pairs in DeviceDiscoveryUI’s `Device
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

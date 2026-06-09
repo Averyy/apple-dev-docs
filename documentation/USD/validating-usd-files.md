@@ -6,32 +6,36 @@ Ensure that the renderer that displays your USD assets supports its features.
 
 #### Overview
 
-Depending on the device, its operating system, and the app, there are three renderers that might display your 3D assets: RealityKit, SceneKit, or Storm. Each renderer supports a subset of the USD features. Use the tables below to determine which features are available. See [`Creating USD files for Apple devices`](creating-usd-files-for-apple-devices.md) for more information on how to determine which engine renders your USD asset. This article identifies feature support for assets imported from USD files. In some cases, the renderers might support features listed below, but do not support importing those features from USD files. In the case of Storm, feature support may differ from the open source version.
+Depending on the device, its operating system, and the app, there are four renderers that might display your 3D assets: RealityKit, Raytracer, Storm, or SceneKit. Each renderer supports a subset of the USD features. Use the tables below to determine which features are available. See [`Creating USD files for Apple devices`](creating-usd-files-for-apple-devices.md) for more information on how to determine which engine renders your USD asset. This article identifies feature support for assets imported from USD files.
+
+In some cases, the renderers might support features listed below, but do not support importing those features from USD files, and will be marked as unsupported. In the case of Storm, feature support may differ from the open source version.
 
 #### Review General and Media Features
 
 Each rendering engine supports a set of general and media attributes that cover fundamental features, such as which file types the renderer supports, and whether it supports *instancing*, which is a performance optimization where a renderer can inexpensively display a single asset multiple times in a scene.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Instancing | ✔ | ✔ | ✔ |
-| Point instancing |  |  | ✔ |
-| Transform animation | ✔ | ✔ | ✔ |
-| .usdz files | ✔ | ✔ | ✔ |
-| .usd / .usdc / .usda | ✔ | ✔ | ✔ |
-| Visibility attribute | ✔ | ✔ | ✔ |
-| Defer payload loading |  |  | ✔ |
-| Variants | ✔ | partial | ✔ |
-| Spatial audio | ✔ |  |  |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Instancing | ✔ | ✔ | ✔ | ✔ |
+| Point instancing |  | ✔ | ✔ |  |
+| Transform animation | ✔ | ✔ | ✔ | ✔ |
+| .usdz files | ✔ | ✔ | ✔ | ✔ |
+| .usd / .usdc / .usda | ✔ | ✔ | ✔ | ✔ |
+| Visibility attribute | ✔ | ✔ | ✔ | ✔ |
+| Defer payload loading |  | ✔ | ✔ |  |
+| Variants | ✔ | ✔ | ✔ | partial |
+| Spatial audio | ✔ |  |  |  |
+| Accessibility | ✔ |  |  |  |
 
-Variant support is handled differently between the three renderers:
+- RealityKit supports instancing of mesh and texture data from imported USD files.
+- Accessibility data is supported when using USDKit to visualize content with RealityKit.
 
-- All three renderers support loading the active variant.
-- Storm supports changing the variant after loading the asset.
+Variant support is handled differently between the renderers:
+
+- All renderers support loading the active variant.
+- RalityKit, Storm and Raytracer support changing the variant after loading the asset but this depends on the context. they are presented in
 - In Reality Composer Pro, RealityKit also supports changing the variant after loading the asset.
 - QuickLook allows you to change variants on the default prim after loading a USDZ asset.
-- RealityKit supports instancing of mesh and texture data from imported USD files.
-- RealityKit supports instancing, .usd, .usdc, .usda, visibility attribute, and variants starting with visionOS 2.0, Reality Composer Pro, macOS 15, iOS 18, and iPadOS 18.
 
 #### Review Geometry Feature Support
 
@@ -40,95 +44,103 @@ USD supports multiple ways to represent the shape of a 3D object, and has severa
 If a renderer doesn’t support a feature that:
 
 - defines the shape of a 3D object, such as a NURBS patch (a mathematical description of a 3D surface), then the object doesn’t render at all. For example, assets defined using a NURBS patch render on Storm, but not on SceneKit or RealityKit.
-- modifies how an asset renders, the feature is just not used, but the object still displays. For example, an asset that uses subdivision surfaces (a feature that generates additional geometry on the fly) displays on all three renderers, but only generates the additional geometry when supported.
+- modifies how an asset renders, the feature is just not used, but the object still displays. For example, an asset that uses subdivision surfaces (a feature that generates additional geometry on the fly) displays on all renderers, but only generates the additional geometry when supported.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Polygon meshes | ✔ | ✔ | ✔ |
-| Vertex animation |  |  | ✔ |
-| Primitive shapes | ✔ | ✔ | ✔ |
-| Double-sided meshes |  | ✔ | ✔ |
-| Subdivision | ✔ | ✔ | ✔ |
-| NURBS patches |  |  |  |
-| Basis curves |  |  |  |
-| Points |  | ✔ | ✔ |
-| Camera |  | ✔ | ✔ |
-| Geometry subsets | ✔ | ✔ | ✔ |
-| Alembic | ✔ | ✔ | ✔ |
-| Draco compression |  |  |  |
-| Vertex colors | ✔ | ✔ | ✔ |
-| Purpose | ✔ | ✔ | ✔ |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Polygon meshes | ✔ | ✔ | ✔ | ✔ |
+| Vertex animation |  | ✔ | ✔ |  |
+| Primitive shapes | ✔ | ✔ | ✔ | ✔ |
+| Double-sided meshes |  | ✔ | ✔ | ✔ |
+| Subdivision | ✔ | ✔ | ✔ | ✔ |
+| NURBS patches |  |  |  |  |
+| Basis curves |  | partial |  |  |
+| Tetrahedral meshes |  |  |  |  |
+| Points |  |  | ✔ | ✔ |
+| Camera |  | ✔ | ✔ | ✔ |
+| Spatial cameras | ✔ | ✔ | ✔ |  |
+| Immersive cameras |  | ✔ |  |  |
+| Geometry subsets | ✔ | ✔ | ✔ | ✔ |
+| Alembic | ✔ | ✔ | ✔ | ✔ |
+| Draco compression |  |  |  |  |
+| Vertex colors | ✔ | ✔ | ✔ | ✔ |
+| Purpose | ✔ | ✔ | ✔ | ✔ |
 
-All three renderers support using attributes specified in the USD file, but RealityKit only supports Alembic and vertex colors on Reality Composer Pro, visionOS, visionOS Simulator, macOS 15, iOS 18, iPadOS 18 and later.
+All renderers support using attributes specified in the USD file.
 
 - Primitive Shapes are basic geometry types such as cubes, cones, and spheres. The plane type is not supported.
 - Alembic supports requires files written using the Ogawa format. The Legacy HDF5 format is not supported.
-- The Preview purpose is used by all three renderers.
-- RealityKit supports subdivision on objects using a USD preview surface shader, starting with visionOS 2, macOS 15, iOS 18, and iPadOS 18. Objects with custom MaterialX materials use standard polygonal meshes.
+- The Preview purpose is used by all renderers.
+- RealityKit supports subdivision on objects using a USD preview surface shader. Objects with custom MaterialX materials use standard polygonal meshes.
+- Tetrahedral meshes (`TetMesh`) are volumetric meshes used in simulation and engineering data.
+- Spatial and Immersive cameras are Apple camera types only supported in the Preview app on macOS 27 and later.
+- Raytracer supports catmull-rom basis curves only.
 
 #### Review Lighting Support
 
 The USD specification supports many kinds of lights, some that are well-suited to real-time use and others that are primarily intended for use in offline production tasks, such as rendering animations or special effects for movies, because they are computationally expensive. SceneKit and Storm don’t support USD light types that are too computationally expensive for real-time use. Because RealityKit is an AR-first renderer, it doesn’t use any lights included in a USD file, and instead bases its lighting on the scene’s real-world lighting.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Rectangle light |  |  |  |
-| Distant light |  | ✔ | ✔ |
-| Sphere light |  | ✔ | ✔ |
-| Cylinder light |  |  | ✔ |
-| Dome light |  | ✔ | ✔ |
-| Disk light |  |  |  |
-| Mesh light |  |  |  |
-| Volume light |  |  |  |
-| Light shaping |  | ✔ |  |
-| Shadow API |  |  |  |
-| Light lists |  |  |  |
-| Light filters |  |  |  |
-| Portal light |  |  |  |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Rectangle light |  | ✔ |  |  |
+| Distant light |  | ✔ | ✔ | ✔ |
+| Sphere light |  | ✔ | ✔ | ✔ |
+| Cylinder light |  | ✔ | ✔ |  |
+| Dome light |  | ✔ | ✔ | ✔ |
+| Disk light |  | ✔ |  |  |
+| Mesh light |  | partial |  |  |
+| Volume light |  | partial |  |  |
+| Light shaping |  | partial |  | ✔ |
+| Shadow API |  | ✔ |  |  |
+| Light lists |  | ✔ |  |  |
+| Portal light |  | ✔ |  |  |
+
+- Raytracer supports mesh lights and volume lights, but without proper light sampling.
+- Raytracer has partial support for light shaping.
 
 #### Review Physics Support
 
 USD supports many physics simulation features. Only the RealityKit renderer supports simulation features.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Physics scene | ✔ |  |  |
-| Rigid body | ✔ |  |  |
-| Mass | ✔ |  |  |
-| Collisions | ✔ |  |  |
-| Mesh collisions |  |  |  |
-| Physics materials | ✔ |  |  |
-| Collision groups |  |  |  |
-| Filtered pairs |  |  |  |
-| Physics joints |  |  |  |
-| Physics limits |  |  |  |
-| Physics drive |  |  |  |
-| Articulation root |  |  |  |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Physics scene | ✔ |  |  |  |
+| Rigid body | ✔ |  |  |  |
+| Mass | ✔ |  |  |  |
+| Collisions | ✔ |  |  |  |
+| Mesh collisions |  |  |  |  |
+| Physics materials | ✔ |  |  |  |
+| Collision groups |  |  |  |  |
+| Filtered pairs |  |  |  |  |
+| Physics joints |  |  |  |  |
+| Physics limits |  |  |  |  |
+| Physics drive |  |  |  |  |
+| Articulation root |  |  |  |  |
+
+- USDKit does not support loading Physics data into RealityKit.
 
 #### Review Shader Features
 
 The USD specification includes a number of features for use by shaders and even includes a number of pre-defined shaders to ensure consistent rendering across platforms.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Material graph | ✔ | ✔ | ✔ |
-| USD preview surface shader | ✔ | ✔ | ✔ |
-| MaterialX | ✔ |  | ✔ |
-| Textures | ✔ | ✔ | ✔ |
-| AVIF Textures | ✔ | ✔ | ✔ |
-| Texture wrap modes | ✔ | ✔ | ✔ |
-| Texture channel references | partial | ✔ | ✔ |
-| Texture transforms | partial | ✔ | ✔ |
-| Specular workflow |  |  | ✔ |
-| Multiple UV sets | partial | ✔ | ✔ |
-| Scale | partial | ✔ | ✔ |
-| Bias |  | ✔ | ✔ |
-| ColorSpace | ✔ |  | ✔ |
-| Displacement |  |  |  |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Material graph | ✔ | ✔ | ✔ | ✔ |
+| USD preview surface shader | ✔ | ✔ | ✔ | ✔ |
+| MaterialX | ✔ | ✔ | ✔ |  |
+| Textures | ✔ | ✔ | ✔ | ✔ |
+| AVIF Textures | ✔ | ✔ | ✔ | ✔ |
+| Texture wrap modes | ✔ | ✔ | ✔ | ✔ |
+| Texture channel references | partial | ✔ | ✔ | ✔ |
+| Texture transforms | partial | ✔ | ✔ | ✔ |
+| Specular workflow |  | ✔ | ✔ |  |
+| Multiple UV sets | partial | ✔ | ✔ | ✔ |
+| Scale | partial | ✔ | ✔ | ✔ |
+| Bias |  | ✔ | ✔ | ✔ |
+| ColorSpace | ✔ | ✔ | ✔ |  |
+| Displacement |  | ✔ |  |  |
 
-MaterialX support is available on Reality Composer Pro, visionOS, visionOS Simulator, macOS 15, iOS 18, iPadOS 18 and later.
-
-Textures in the AVIF format are supported in visionOS 2.4, visionOS Simulator 2.4, macOS 15.4, iOS 18.4, iPadOS 18.4 and later.
+Each renderer may support MaterialX nodes to different degrees. Verify your asset rendering against your renderer of choice. The [`ShaderGraph`](https://developer.apple.comhttps://developer.apple.com/documentation/shadergraph) documentation covers the support for RealityKit.
 
 RealityKit has partial support for some shader features:
 
@@ -145,13 +157,22 @@ If no colorSpace or sourceColorSpace value is provided then the embedded image c
 
 Skeletal animation deforms a model based on a hierarchy of joints, which allows you to animate character assets and complex mechanical objects.
 
-| USD | RealityKit | SceneKit | Storm |
-| --- | --- | --- | --- |
-| Skeletons | ✔ | ✔ | ✔ |
-| Skeleton animation | ✔ | ✔ | ✔ |
-| Blend Shapes | ✔ | ✔ | ✔ |
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Skeletons | ✔ | ✔ | ✔ | ✔ |
+| Skeleton animation | ✔ | ✔ | ✔ | ✔ |
+| Blend Shapes | ✔ | ✔ | ✔ | ✔ |
 
-- RealityKit supports Blend Shapes starting with visionOS 2, macOS 15, iOS 18, and iPadOS 18.
+#### Review Volumes and Particles
+
+USD supports volumetric data and particle-based representations. These are used for effects such as smoke, fire, and clouds, as well as for 3D Gaussian Splats captured from real-world scenes.
+
+| USD | RealityKit | Raytracer | Storm | SceneKit |
+| --- | --- | --- | --- | --- |
+| Volumes (OpenVDB) |  | ✔ | ✔ |  |
+| Gaussian Splats |  |  | partial |  |
+
+- Storm renders Gaussian Splats as points rather than full volumetric splats.
 
 ## See Also
 

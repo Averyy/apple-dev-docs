@@ -25,7 +25,7 @@ class Provider<Payload> where Payload : AVAssetReaderOutput.SupportedPayload
 - [func captionsNotPresentInPreviousGroups(in: AVCaptionGroup) -> [AVCaption]](avassetreaderoutput/provider/captionsnotpresentinpreviousgroups(in:).md)
   Returns the set of captions that are present in the given group but were not present in any group previously vended by calls to next().
 - [func next() async throws -> Payload?](avassetreaderoutput/provider/next.md)
-  Retruns the next piece of media data.
+  Returns the next piece of media data.
 
 ## See Also
 

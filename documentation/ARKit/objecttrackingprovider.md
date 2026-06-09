@@ -58,9 +58,9 @@ Use this class to configure ARKIt to track reference objects in a person’s env
 - [struct ObjectAnchor](objectanchor.md)
   A reference object ARKit is tracking.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
-  Find and track real-world objects in visionOS using reference objects trained with Create ML.
-- [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
-  Create engaging interactions by training models to recognize and track real-world objects in your app.
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
+- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
+  Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 
 
 ---

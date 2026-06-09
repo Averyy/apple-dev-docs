@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a format style to display the offset to a certain date.
+Creates a format style that displays the offset between a comparison date and an anchor date that you provide.
 
 **Availability**:
 - iOS 18.0+
@@ -22,16 +22,14 @@ init(to anchor: Date, allowedFields: Set<Date.ComponentsFormatStyle.Field> = [.y
 
 #### Discussion
 
-The time format (`3:46`) is used as long as only minutes and seconds, or hours, minutes, and second may be shown. Otherwise, calendar units are used, resulting in outputs like `3 months, 11 days`.
-
-The offset to the `anchor` is “positive” if the formatted `date` is greater than the given `anchor` specified here. Conversely, “negative” offsets are displayed if the input `date` is smaller than the `anchor`.
+The style uses a time-pattern representation (`3:46`) when `allowedFields` contains only `.minute` and `.second`, or contains `.hour`, `.minute`, and `.second`. For any other combination of fields, it uses calendar units like `3 months, 11 days`.
 
 ## Parameters
 
-- `anchor`: The date the offset is measured to from the format input.
-- `allowedFields`: The units of time that may be used in the format to express the offset.
-- `maxFieldCount`: The number of fields that can be shown at once. For example, 1 hour, 34 minutes, and 23 seconds is shown as `1 hour, 34 minutes` by default, but as `1 hour` if the `maxFieldCount` is set to one.
-- `sign`: The strategy for displaying a sign to signal whether the offset points to ward the future or past.
+- `anchor`: The date the style uses to calculate the offset from the format input date.
+- `allowedFields`: The units of time that may appear in the formatted output.
+- `maxFieldCount`: The maximum number of units shown at once. For example, 1 hour, 34 minutes, and 23 seconds is shown as `1 hour, 34 minutes` by default, but as `1 hour` if `maxFieldCount` is set to 1.
+- `sign`: The strategy for displaying a sign to signal whether the offset points toward the future or past.
 
 
 ---

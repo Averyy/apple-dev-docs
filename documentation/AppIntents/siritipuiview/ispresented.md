@@ -8,6 +8,7 @@ Determines if the view should be presented to the user.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

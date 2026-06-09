@@ -25,6 +25,8 @@ static let unsupportedKeyPath: SwiftDataError
 - [static let sortingPendingChangesWithIdentifiers: SwiftDataError](swiftdataerror/sortingpendingchangeswithidentifiers.md)
 - [static let unsupportedPredicate: SwiftDataError](swiftdataerror/unsupportedpredicate.md)
 - [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
+- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
 
 
 ---

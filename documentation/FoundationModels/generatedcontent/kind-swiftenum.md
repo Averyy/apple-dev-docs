@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
-The representation of the generated content.
+A representation of the different types of content that can be stored in generated content.
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +11,7 @@ The representation of the generated content.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +21,7 @@ enum Kind
 
 #### Overview
 
-This property provides access to the content in a strongly-typed enumeration representation, preserving the hierarchical structure of the data and the data’s [`GenerationID`](generationid.md) values.
+`Kind` represents the various types of JSON-compatible data that can be held within a [`GeneratedContent`](generatedcontent.md) instance, including primitive types, arrays, and structured objects.
 
 ## Topics
 
@@ -47,8 +48,20 @@ This property provides access to the content in a strongly-typed enumeration rep
 
 ## See Also
 
-- [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
-  Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
+- [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
+  The representation of the generated content.
+- [func value<Value>(Value.Type) throws -> Value](generatedcontent/value(_:).md)
+  Reads a top level, concrete partially `Generable` type from a named property.
+- [func value(_:forProperty:)](generatedcontent/value(_:forproperty:).md)
+  Reads a concrete `Generable` type from named property.
+- [var isComplete: Bool](generatedcontent/iscomplete.md)
+  A Boolean that indicates whether the generated content is completed.
+- [var generatedContent: GeneratedContent](generatedcontent/generatedcontent.md)
+  A representation of this instance.
+- [var jsonString: String](generatedcontent/jsonstring.md)
+  Returns a JSON string representation of the generated content.
+- [var debugDescription: String](generatedcontent/debugdescription.md)
+  A string representation for the debug description.
 
 
 ---

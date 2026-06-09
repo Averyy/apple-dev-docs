@@ -251,6 +251,8 @@ Browser
   Sets the matrix class to be used in the browser’s columns.
 ### Instance Methods
 - [func selectedCell() -> Any?](nsbrowser/selectedcell.md)
+### Structures
+- [NSBrowser.ColumnConfigurationDidChangeMessage](nsbrowser/columnconfigurationdidchangemessage.md)
 
 ## Relationships
 

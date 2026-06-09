@@ -71,11 +71,9 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

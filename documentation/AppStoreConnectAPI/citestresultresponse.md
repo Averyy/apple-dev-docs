@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Test Results resource.
+The response body for endpoints that read a single test result from an Xcode Cloud build action.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -22,7 +22,7 @@ object CiTestResultResponse
 ## See Also
 
 - [object CiTestResult](citestresult.md)
-  The data structure that represents a Test Results resource.
+  The outcome of a single test case in an Xcode Cloud test action, including its pass/fail status and duration.
 
 
 ---

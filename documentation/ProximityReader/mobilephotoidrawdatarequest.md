@@ -9,7 +9,6 @@ A photo ID request which retrieves elements from the holder and returns the raw 
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 
@@ -31,6 +30,12 @@ struct MobilePhotoIDRawDataRequest
 ### Handling the response
 - [MobilePhotoIDRawDataRequest.Response](mobilephotoidrawdatarequest/response.md)
   A type that contains the response information from a successful photo ID raw data request.
+### Initializers
+- [init(retainedElements: [MobilePhotoIDRawDataRequest.Element], nonRetainedElements: [MobilePhotoIDRawDataRequest.Element], issuerIdentifiers: [Data])](mobilephotoidrawdatarequest/init(retainedelements:nonretainedelements:issueridentifiers:).md)
+  Returns a photo ID raw data request with issuer identifiers.
+### Instance Properties
+- [var issuerIdentifiers: [Data]](mobilephotoidrawdatarequest/issueridentifiers.md)
+  The subject key identifiers of the issuers trusted by the reader.
 ### Default Implementations
 - [MobileDocumentRequest Implementations](mobilephotoidrawdatarequest/mobiledocumentrequest-implementations.md)
 

@@ -8,6 +8,7 @@ The account ID the balance belongs to.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

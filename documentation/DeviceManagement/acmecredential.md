@@ -13,8 +13,6 @@ An ACME identity that the device generates.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -37,7 +35,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 | Attest key support | iPhone, iPad | Mac | Apple TV | Apple Watch | Vision Pro |
 | --- | --- | --- | --- | --- | --- |
 | Ignored | A10x Fusion and earlier | Intel | A10x Fusion and earlier | S3 and earlier | none |
-| Supported | A11 Bionic and laterAll M series | Apple Silicon | A12 Bionic and later | S4 and later | All |
+| Supported | A11 Bionic and laterAll M series | Apple silicon | A12 Bionic and later | S4 and later | All |
 
 ##### Credential Example
 
@@ -67,7 +65,7 @@ The following table indicates which System on Chips (SoCs) support ACME attestat
 
 ### Objects
 - [object ACMECredentialSubjectAltNameObject](acmecredentialsubjectaltnameobject.md)
-  Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues.
+  Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues. The ACME server may override or ignore this field in the certificate it issues.
 
 ## Properties
 

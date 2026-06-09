@@ -19,7 +19,7 @@ The source location of this test.
 ## Declaration
 
 ```swift
-var sourceLocation: SourceLocation
+var sourceLocation: SourceLocation { get set }
 ```
 
 

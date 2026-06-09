@@ -17,6 +17,7 @@ Creates an elliptical gradient.
 ## Declaration
 
 ```swift
+nonisolated
 init(gradient: Gradient, center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5)
 ```
 

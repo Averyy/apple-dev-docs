@@ -26,6 +26,7 @@ Notations are applicable to unparsed external entities, processing instructions,
 ## See Also
 
 - [var isExternal: Bool](xmldtdnode/isexternal.md)
+  True if the system id is set. Valid for entities and notations.
 - [var publicID: String?](xmldtdnode/publicid.md)
   Returns the public identifier associated with the receiver.
 - [var systemID: String?](xmldtdnode/systemid.md)

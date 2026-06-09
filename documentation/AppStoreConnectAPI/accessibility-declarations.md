@@ -12,7 +12,7 @@ Accessibility declarations enable you to show the accessibility modalities and t
 
 > **Note**: The default value for each attribute in an accessibility declaration is `false`. If you modify a subset of the available attributes, the remaining attributes default to `false`.
 
-To add an accessibility URL to your the App Store page for your app, use [`Modify an App`](patch-v1-apps-_id_.md) and update the the `accessibilityUrl` attribute.
+To add an accessibility URL to your the App Store page for your app, use [`Modify an app`](patch-v1-apps-_id_.md) and update the the `accessibilityUrl` attribute.
 
 To manage accessibility declarations, be sure you have one of the following user roles:
 
@@ -30,7 +30,7 @@ Both Team and Individual API keys can use these endpoints with the correct role.
 ### Managing accessibility metadata
 - [List All Accessibility Declarations for an App](get-v1-apps-_id_-accessibilitydeclarations.md)
   Get a list of the accessibility declarations for a specific app.
-- [GET /v1/apps/{id}/relationships/accessibilityDeclarations](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
+- [List accessibility declaration IDs for an app](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
 - [Read Accessibility Declaration Information](get-v1-accessibilitydeclarations-_id_.md)
   Get information about a specific accessibility declaration.
 - [Create an Accessibility Declaration](post-v1-accessibilitydeclarations.md)
@@ -41,13 +41,13 @@ Both Team and Individual API keys can use these endpoints with the correct role.
   Delete a specific accessibility declaration.
 ### Objects
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)
-  The data structure that represents an accessibility declarations resource.
+  An app’s self-reported accessibility features and conformance information submitted for App Store review.
 - [object AccessibilityDeclarationsResponse](accessibilitydeclarationsresponse.md)
-  A response that contains a list of accessibility declaration resources.
+  A response containing a list of accessibility declarations.
 - [object AccessibilityDeclarationCreateRequest](accessibilitydeclarationcreaterequest.md)
   The request body you use to create an accessibility declaration for an app.
 - [object AccessibilityDeclarationResponse](accessibilitydeclarationresponse.md)
-  A response that contains a single accessibility declaration resource.
+  A response containing a single accessibility declaration for an app.
 - [object AccessibilityDeclarationUpdateRequest](accessibilitydeclarationupdaterequest.md)
   The request body you use to update an accessibility declaration for an app.
 - [object AppAccessibilityDeclarationsLinkagesResponse](appaccessibilitydeclarationslinkagesresponse.md)

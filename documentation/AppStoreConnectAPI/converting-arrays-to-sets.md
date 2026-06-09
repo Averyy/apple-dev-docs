@@ -16,7 +16,7 @@ array[Any] asSet(array[Any] list)
 
 ##### Parameters
 
-- **`list`**: An array to convert to a set.
+-`list`: An array to convert to a set.
 
 ##### Return Value
 

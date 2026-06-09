@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Match all transcript records with the given set of donation identifiers
+Creates a predicate that matches one or more previous donations.
 
 **Availability**:
 - iOS 26.4+
@@ -19,6 +19,18 @@ Match all transcript records with the given set of donation identifiers
 ```swift
 static func donationIdentifiers(_ identifiers: [IntentDonationIdentifier]) -> IntentDonationMatchingPredicate
 ```
+
+#### Return Value
+
+A predicate that matches the specified donations.
+
+#### Discussion
+
+When you donate an app intent using the methods of [`IntentDonationManager`](intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches all of the donations you specified.
+
+## Parameters
+
+- `identifiers`: An array of donation identifiers you received after donating app intents.
 
 
 ---

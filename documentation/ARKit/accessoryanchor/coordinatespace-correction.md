@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: method
 
-The anchor coordinate space.
+The anchor’s coordinate space.
 
 **Availability**:
 - visionOS 26.0+
@@ -16,11 +16,11 @@ func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordi
 
 #### Return Value
 
-The anchor coordinate space.
+The anchor’s coordinate space.
 
-#### Discussion
+## Parameters
 
-- Parameters - correction: Correction type to apply.
+- `correction`: Correction type to apply.
 
 
 ---

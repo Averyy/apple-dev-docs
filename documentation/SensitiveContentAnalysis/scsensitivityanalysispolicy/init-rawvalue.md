@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: init
 
 Creates an analysis policy value from the enumeration’s underlying type.

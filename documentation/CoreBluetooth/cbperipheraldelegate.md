@@ -64,6 +64,9 @@ The delegate of a [`CBPeripheral`](cbperipheral.md) object must adopt the [`CBPe
 ### Monitoring L2CAP Channels
 - [func peripheral(CBPeripheral, didOpen: CBL2CAPChannel?, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didopen:error:).md)
   Delivers the result of an attempt to open an L2CAP channel.
+### Instance Methods
+- [func peripheral(CBPeripheral, didCompleteChannelSoundingSession: (any Error)?)](cbperipheraldelegate/peripheral(_:didcompletechannelsoundingsession:).md)
+- [func peripheral(CBPeripheral, didReceive: CBChannelSoundingProcedureResults?, error: (any Error)?)](cbperipheraldelegate/peripheral(_:didreceive:error:).md)
 
 ## Relationships
 

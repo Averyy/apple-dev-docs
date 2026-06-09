@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Pull Requests resources.
+The response body for endpoints that list SCM pull requests linked to Xcode Cloud.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -24,9 +24,9 @@ object ScmPullRequestsResponse
 ## See Also
 
 - [object ScmPullRequest](scmpullrequest.md)
-  The data structure that represents a Pull Requests resource.
+  A pull request in a source code repository connected to Xcode Cloud, which can automatically trigger workflow builds.
 - [object ScmPullRequestResponse](scmpullrequestresponse.md)
-  A response that contains a single Pull Requests resource.
+  The response body for endpoints that read a single SCM pull request linked to Xcode Cloud.
 
 
 ---

@@ -65,6 +65,11 @@ Create and configure a filter that produces an image processing effect, like add
   Returns a filter that applies `shader` as a geometric distortion effect on the location of each pixel.
 - [static func layerShader(Shader, maxSampleOffset: CGSize) -> GraphicsContext.Filter](graphicscontext/filter/layershader(_:maxsampleoffset:).md)
   Returns a filter that applies `shader` to the contents of the source layer.
+### Type Methods
+- [static func alphaMultiply(Color) -> GraphicsContext.Filter](graphicscontext/filter/alphamultiply(_:).md)
+  Returns a filter that multiplies the alpha component by a given color.
+- [static func colorMatrix(ColorMatrix, isPremultiplied: Bool) -> GraphicsContext.Filter](graphicscontext/filter/colormatrix(_:ispremultiplied:).md)
+  Returns a filter that multiplies by a given color matrix.
 
 ## Relationships
 

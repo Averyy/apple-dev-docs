@@ -11,7 +11,6 @@ The entry point that provides access to a collection of functions that help mana
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

@@ -71,7 +71,7 @@
   Accesses the element at `position`.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazyfiltersequence/subscript(_:)-6uzbx.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](lazyfiltersequence/subscript(_:)-7ge85.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](lazyfiltersequence/subscript(_:)-7ge85.md)
 - [subscript<R>(R) -> Self.SubSequence](lazyfiltersequence/subscript(_:)-lelz.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 ### Type Aliases

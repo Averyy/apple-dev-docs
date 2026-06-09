@@ -50,6 +50,8 @@ After you add a cross-project reference, you can refer to the other project’s 
 
 - [Managing files and folders in your Xcode project](managing-files-and-folders-in-your-xcode-project.md)
   Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
+- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
+  Add more simulated devices, optional features, and support for additional platforms.
 
 
 ---

@@ -19,10 +19,6 @@ An object that specifies a key press perform on a hardware keyboard and the resu
 class UIKeyCommand
 ```
 
-## Mentions
-
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-
 #### Overview
 
 Hardware keyboards allow a user to hold down the Control, Option, Command, or other modifier key and press another key in combination to initiate commands such as Cut, Copy, or Paste. You can use instances of this class to define custom command sequences that your app recognizes and then provide an appropriate response.
@@ -91,6 +87,8 @@ iPad apps that run in macOS can use [`UIKeyCommand`](uikeycommand.md) to create 
 ### Deprecated
 - [convenience init(input: String, modifierFlags: UIKeyModifierFlags, action: Selector, discoverabilityTitle: String)](uikeycommand/init(input:modifierflags:action:discoverabilitytitle:).md)
   Creates a key command object that matches the specified input and has a title.
+### Initializers
+- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, action: Selector, input: String, modifierFlags: UIKeyModifierFlags, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uikeycommand/init(title:subtitle:image:selectedimage:preferredimagevisibility:action:input:modifierflags:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
 
 ## Relationships
 

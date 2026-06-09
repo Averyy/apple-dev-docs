@@ -22,6 +22,11 @@ mutating func append(contentsOf other: PaperMarkup)
 
 - `other`: The data model whose contents is added on top of this paper.
 
+## See Also
+
+- [func append(contentsOf: PKDrawing)](papermarkup/append(contentsof:)-5tgti.md)
+  Adds the contents of a PencilKit drawing on top of this paper.
+
 
 ---
 

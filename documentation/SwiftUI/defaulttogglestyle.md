@@ -17,6 +17,7 @@ The default toggle style.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultToggleStyle
 ```
 

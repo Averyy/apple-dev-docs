@@ -36,7 +36,6 @@ Use one of these values with the [`navigationBarTitleDisplayMode(_:)`](view/navi
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

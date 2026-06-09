@@ -18,7 +18,7 @@ object ErrorResponse.Errors.Meta
 
 ### Objects
 - [object ErrorResponse.Errors.Meta.Any Key](errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.md)
-  An object that is the error or assocaited errors.
+  An arbitrary metadata key-value entry within an error response’s meta object.
 
 ## Properties
 

@@ -9,6 +9,7 @@
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,8 +21,10 @@
 ## See Also
 
 - [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
-  Logs and serializes data that includes session information that you attach when reporting feedback to Apple.
+  Logs and serializes a feedback attachment that can be submitted to Apple.
 - [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredResponseContent: (any ConvertibleToGeneratedContent)?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredresponsecontent:).md)
+- [struct LanguageModelFeedback](languagemodelfeedback.md)
+  Feedback appropriate for logging or attaching to Feedback Assistant.
 
 
 ---

@@ -44,7 +44,7 @@ If the coder doesn’t require secure coding, it ignores the `cls` parameter and
   Decode an object as one of several expected types, failing if the archived type doesn’t match any of the types.
 - [func decodeTopLevelObject() throws -> Any?](nscoder/decodetoplevelobject.md)
   Decodes a previously-encoded object.
-- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:)-7cram.md)
+- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:).md)
   Decodes the previously-encoded object associated by a key.
 - [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](nscoder/decodetoplevelobject(of:forkey:)-3w6pd.md)
   Decode an object as one of several expected types, failing if the archived type does not match.

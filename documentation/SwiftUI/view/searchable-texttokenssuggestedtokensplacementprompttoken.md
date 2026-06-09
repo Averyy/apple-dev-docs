@@ -16,7 +16,7 @@ Marks this view as searchable with text, tokens, and suggestions.
 
 ```swift
 nonisolated
-func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: S, @ViewBuilder token: @escaping (C.Element) -> T) -> some View where C : MutableCollection, C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, S : StringProtocol, C.Element : Identifiable
+func searchable<C, T, S>(text: Binding<String>, tokens: Binding<C>, suggestedTokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: S, @ContentBuilder token: @escaping (C.Element) -> T) -> some View where C : MutableCollection, C : RandomAccessCollection, C : RangeReplaceableCollection, T : View, S : StringProtocol, C.Element : Identifiable
 ```
 
 ## Mentions
@@ -35,7 +35,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 - `suggestedTokens`: A collection of tokens to display as suggestions.
 - `placement`: The preferred placement of the search field within the containing view hierarchy.
 - `prompt`: A string representing the prompt of the search field which provides users with guidance on what to search for.
-- `token`: A view builder that creates a view given an element in tokens.
+- `token`: A content builder that creates a view given an element in tokens.
 
 ## See Also
 

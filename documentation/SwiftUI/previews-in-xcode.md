@@ -26,6 +26,8 @@ You typically rely on preview macros to create previews in your code. However, i
   Creates a preview of a SwiftUI view using the specified traits.
 - [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](preview(_:traits:body:cameras:).md)
   Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](preview(_:traits:arguments:body:).md)
+  Creates a group of previews of a parameterized SwiftUI view, varying its inputs over the provided arguments.
 ### Creating a preview in the context of a scene
 - [macro Preview<Style>(String?, immersionStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View)](preview(_:immersionstyle:traits:body:).md)
   Creates a preview of a SwiftUI view in an immersive space.

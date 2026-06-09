@@ -8,7 +8,6 @@
 - iPadOS 16.1+
 - Mac Catalyst 16.1+
 - macOS 13.0+
-- tvOS 18.4+
 - visionOS 2.4+
 
 ## Declaration
@@ -16,6 +15,11 @@
 ```swift
 func extensionWillTerminate()
 ```
+
+## See Also
+
+- [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate.md)
+  This method may be called shortly before the extension is terminated.
 
 
 ---

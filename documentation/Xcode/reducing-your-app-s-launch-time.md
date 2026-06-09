@@ -34,9 +34,9 @@ Variations in launching mean that understanding how your app is operating in the
 
 For iOS apps, use the Launch Time pane in the Xcode Organizer to view the number of milliseconds between the user tapping your icon and when your first screen is drawn, after the static splash screen. Use the filters to check launch times on different devices and for the typical (50th percentile) and longest (90th percentile) times. Compare the launch time of the current release with a previous one by clicking on the bar in the graph for the desired release.
 
-![Screenshot of the Launch Time metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the launch time over the last 8 app versions, the selected version bar highlighted in the graph, and the comparison data for the selected and latest versions on the right side. ](https://docs-assets.developer.apple.com/published/631e3c55db2b5606763b801cd454caa0/reducing-your-app-s-launch-time-1%402x.png)
+![Screenshot of the Launch Time metric pane in the Xcode Organizer. From left to right is the list of metrics and reports, the metric UI with a bar graph showing the launch time over the last 8 app versions, the selected version bar highlighted in the graph, and the comparison data for the selected and latest versions on the right side. ](https://docs-assets.developer.apple.com/published/b223c14508f0f0d07c006e3e90747f11/reducing-your-app-s-launch-time-1%402x.png)
 
-[`MetricKit`](https://developer.apple.com/documentation/MetricKit) reports the time to resume the application in addition to the launch time. [`MXAppLaunchMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/mxapplaunchmetric) contains a histogram of your launch and resume times for the previous day.
+[`MetricKit`](https://developer.apple.com/documentation/MetricKit) reports the time to resume the application in addition to the launch time. [`TimeToFirstDrawMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/timetofirstdrawmetric) and [`ApplicationResumeTimeMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/applicationresumetimemetric) contain histograms of your launch and resume times for the previous day.
 
 ##### Identify Areas of Launch Time Improvement
 
@@ -52,7 +52,11 @@ Clicking a report in the Report List shows the function that ran along with its 
 
 Prioritize reducing launch times by using the percent of time spent metric, as well as information on the operating system and the impacted device types. Identify the code responsible for the increase in app launch time by using the function signature for a specific report in the Report List and the corresponding stack trace. After updating the code and verifying the fix, mark the report as resolved.
 
-![Screenshot of the Launches pane in the Xcode Organizer. From left to right, the Report List which is a list of functions taking the most time to run as a percentage, the corresponding call stack for the function selected in the Report List, and launch log details and statistics including the 14-day reporting trend.](https://docs-assets.developer.apple.com/published/8c4c973b049c9dedaaf57d8dd1e23e37/reducing-your-app-s-launch-time-6%402x.png)
+![Screenshot of the Launches pane in the Xcode Organizer. From left to right, the Report List which is a list of functions taking the most time to run as a percentage, the corresponding call stack for the function selected in the Report List, and launch log details and statistics including the 14-day reporting trend.](https://docs-assets.developer.apple.com/published/7baa8a19f0b130c23463519f6785cc33/reducing-your-app-s-launch-time-7%402x.png)
+
+##### Get Coding Assistant Recommendations for Launch Time Issues
+
+After selecting a launch report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and launch-time contribution into the coding assistant to help you identify and fix the root cause of the launch time regression.
 
 ##### Profile Your Apps Launch Time
 

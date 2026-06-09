@@ -22,12 +22,12 @@ type SearchDelegate<
           autocompleteDidError: (error: Error) => void;
           autocompleteDidComplete: (result: SearchAutocompleteResponse) => void;
       }
-    | ((error: Error | null, result?: T) => void);
+    | ((error: Error | null, result: T | null) => void);
 ```
 
 #### Discussion
 
-You can also pass an object to the [`search(query, callback, options)`](search/search.md) and [`autocomplete(query, callback, options)`](search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
+You can also pass an object to the [`search(query, options)`](search/search.md) and [`autocomplete(query, options)`](search/autocomplete.md) methods instead of a search delegate callback function. A delegate object can include the following methods:
 
 - `searchDidComplete`. Upon successful completion of a search request, this method returns a data object that’s the same as the one that passes to the search callback function.
 - `searchDidError`. The system calls this when the search request fails.
@@ -36,7 +36,7 @@ You can also pass an object to the [`search(query, callback, options)`](search/s
 
 ## See Also
 
-- [search(query, callback, options)](search/search.md)
+- [search(query, options)](search/search.md)
   Retrieves the results of a search query.
 - [interface SearchOptions](searchoptions.md)
   An object that contains options to adjust a search.

@@ -30,6 +30,8 @@ A `continuityDevicePicker` should be used to discover and connect nearby continu
   A view that displays content from a player and a native user interface to control playback.
 - [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 
 
 ---

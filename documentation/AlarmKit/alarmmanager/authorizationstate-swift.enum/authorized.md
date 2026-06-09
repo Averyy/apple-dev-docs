@@ -8,6 +8,7 @@ The person authorized the client to use alarms and timers.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

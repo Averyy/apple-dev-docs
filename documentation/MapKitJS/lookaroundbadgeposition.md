@@ -16,6 +16,8 @@ const LookAroundBadgePosition: Readonly<{
     readonly TopTrailing: "topTrailing";
     readonly BottomTrailing: "bottomTrailing";
 }>
+type LookAroundBadgePosition =
+    (typeof LookAroundBadgePosition)[keyof typeof LookAroundBadgePosition];
 ```
 
 ## Topics
@@ -27,9 +29,6 @@ const LookAroundBadgePosition: Readonly<{
   Places the badge on the top leading corner of the Look Around preview.
 - [TopTrailing](lookaroundbadgeposition/toptrailing.md)
   Places the badge on the top trailing corner of the Look Around preview.
-### Type Aliases
-- [type LookAroundBadgePosition](lookaroundbadgeposition/lookaroundbadgeposition.md)
-  A type alias that represents the values of the Look Around badge position enumeration.
 
 ## See Also
 

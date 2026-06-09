@@ -22,7 +22,7 @@ func cancelRequest(with params: MTRMessagesClusterCancelMessagesRequestParams) a
 
 #### Discussion
 
-Command for cancelling message present requests
+This command will cancel the message IDs specified.
 
 
 ---

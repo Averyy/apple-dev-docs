@@ -1,4 +1,4 @@
-# List All Promoted Purchases for an App
+# List all promoted purchases for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -87,17 +87,17 @@ https://api.appstoreconnect.apple.com/v1/apps/1000001234/promotedPurchases
 
 ## Parameters
 
-- `fields[inAppPurchases]` ([string])
-- `fields[promotedPurchases]` ([string])
-- `fields[subscriptions]` ([string])
+- `fields[inAppPurchases]` ([string]): Additional fields to include for each in-app purchase resource returned by the response.
+- `fields[promotedPurchases]` ([string]): Additional fields to include for each promoted purchase resource returned by the response.
+- `fields[subscriptions]` ([string]): Additional fields to include for each subscription resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit` (integer): The number of Promoted Purchases resources to return.
+- `limit` (integer): The maximum number of promoted purchase resources to return.
 
 ## See Also
 
-- [Read In-App Purchase Information](get-v1-inapppurchases-_id_.md)
+- [Read in-app purchase information](get-v1-inapppurchases-_id_.md)
   Get information about an in-app purchase.
-- [List All In-App Purchases for an App V1](get-v1-apps-_id_-inapppurchases.md)
+- [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
   List the in-app purchases that are available for your app.
 
 

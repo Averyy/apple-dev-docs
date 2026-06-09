@@ -25,22 +25,13 @@ If a request sets the file size below the current end-of-file, truncate the file
 
 Ignore attempts to set the size of directories or symbolic links; don’t produce an error.
 
-If the caller attepts to sest an attribute not supported by the on-disk file system format, don’t produce an error. The upper layers of the framework will detect this situation.
+If the caller attempts to set an attribute not supported by the on-disk file system format, don’t produce an error. The upper layers of the framework will detect this situation.
 
 ## Parameters
 
 - `newAttributes`: A request containing the attributes to set.
 - `item`: The item on which to set the attributes.
 - `reply`: A block or closure to indicate success or failure. If setting attributes succeeds, pass an [`FSItem.Attributes`](fsitem/attributes.md) with the item’s updated attributes and a `nil` error. If setting attributes fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem.Attributes`](fsitem/attributes.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem.Attributes`](fsitem/attributes.md) or throw an error.
-
-## See Also
-
-- [func getAttributes(FSItem.GetAttributesRequest, of: FSItem, replyHandler: (FSItem.Attributes?, (any Error)?) -> Void)](fsvolume/operations/getattributes(_:of:replyhandler:).md)
-  Fetches attributes for the given item.
-- [FSItem.GetAttributesRequest](fsitem/getattributesrequest.md)
-  A request to get attributes from an item.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
-  A request to set attributes on an item.
 
 
 ---

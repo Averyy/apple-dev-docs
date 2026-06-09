@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: case
 
-An option to use high creation variety for all provided concepts.
+An option to use a lot of variety when creating images.
 
 **Availability**:
 - iOS 26.4+

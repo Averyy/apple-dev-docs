@@ -7,11 +7,11 @@
 The minimal texture usage options that your app’s input reactive texture needs in order to support this denoiser scaler.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- tvOS 26.0+
+- iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
+- macOS 14.4+
+- tvOS 17.4+
 
 ## Declaration
 

@@ -12,7 +12,7 @@ The padding options for the Look Around view.
 
 ```swift
 get padding(): Padding;
-set padding(value: Padding);
+set padding(value: PaddingData);
 ```
 
 #### Discussion

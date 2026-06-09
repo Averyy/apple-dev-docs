@@ -27,6 +27,8 @@ Organize code and resources in bundles and frameworks.
 
 - [Source editor](source-editor.md)
   Edit your source files, locate issues, and make necessary changes using the source editor.
+- [Coding intelligence](coding-intelligence.md)
+  Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 - [Swift packages](swift-packages.md)
   Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.
 

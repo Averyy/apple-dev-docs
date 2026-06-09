@@ -8,6 +8,7 @@ The reason that tracking quality has degraded.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 
@@ -30,7 +31,6 @@ enum Reason
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

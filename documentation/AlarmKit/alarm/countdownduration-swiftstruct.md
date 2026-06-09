@@ -8,6 +8,7 @@ An object that defines the durations used in an alarm that has a countdown.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -34,6 +34,10 @@ struct AsyncBytes
   The URL session task that performs the data transfer.
 ### Structures
 - [URLSession.AsyncBytes.Iterator](urlsession/asyncbytes/iterator.md)
+### Type Aliases
+- [URLSession.AsyncBytes.AsyncIterator](urlsession/asyncbytes/asynciterator.md)
+- [URLSession.AsyncBytes.Element](urlsession/asyncbytes/element.md)
+  The type of element produced by this asynchronous sequence.
 
 ## Relationships
 

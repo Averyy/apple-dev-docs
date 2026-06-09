@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The item represents a navigation action.
+A placement for navigation actions.
 
 **Availability**:
 - iOS 14.0+
@@ -30,15 +30,15 @@ In iOS, iPadOS, and tvOS, navigation items appear in the leading edge of the nav
 ## See Also
 
 - [static let primaryAction: ToolbarItemPlacement](toolbaritemplacement/primaryaction.md)
-  The item represents a primary action.
+  A placement for the primary action.
 - [static let secondaryAction: ToolbarItemPlacement](toolbaritemplacement/secondaryaction.md)
-  The item represents a secondary action.
+  A placement for secondary actions.
 - [static let confirmationAction: ToolbarItemPlacement](toolbaritemplacement/confirmationaction.md)
-  The item represents a confirmation action for a modal interface.
+  A placement for confirmation actions in a modal interface.
 - [static let cancellationAction: ToolbarItemPlacement](toolbaritemplacement/cancellationaction.md)
-  The item represents a cancellation action for a modal interface.
+  A placement for cancellation actions in a modal interface.
 - [static let destructiveAction: ToolbarItemPlacement](toolbaritemplacement/destructiveaction.md)
-  The item represents a destructive action for a modal interface.
+  A placement for destructive actions in a modal interface.
 
 
 ---

@@ -45,7 +45,7 @@ The `DebugDescription` macro supports both `debugDescription`, `description`, as
 
 The description implementation has the following requirements:
 
-- The body of the description implementation must a single string expression. String concatenation is not supported, use string interpolation instead.
+- The body of the description implementation must be a single string expression. String concatenation is not supported, use string interpolation instead.
 - String interpolation can reference stored properties only, functions calls and other arbitrary computation are not supported. Of note, conditional logic and computed properties are not supported.
 - Overloaded string interpolation cannot be used.
 

@@ -8,6 +8,7 @@ The content required for the various states of the UI.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

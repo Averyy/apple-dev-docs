@@ -30,10 +30,15 @@ A searchable item that’s associated with the specified identifier, domain iden
 
 ## See Also
 
-- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:).md)
+- [convenience init(appEntity: some IndexedEntity) async](cssearchableitem/init(appentity:)-3hv5.md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
+- [convenience init(appEntity: some IndexedEntity)](cssearchableitem/init(appentity:)-89ehq.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity.
-- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:).md)
+- [convenience init<Entity>(appEntity: Entity, priority: Int)](cssearchableitem/init(appentity:priority:)-7h9s.md)
   Initializes a new searchable item with the relevant fields populated from the provided app entity.
+- [convenience init<Entity>(appEntity: Entity, priority: Int) async](cssearchableitem/init(appentity:priority:)-7xlow.md)
+  Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
+- [init?(coder: NSCoder)](cssearchableitem/init(coder:).md)
 
 
 ---

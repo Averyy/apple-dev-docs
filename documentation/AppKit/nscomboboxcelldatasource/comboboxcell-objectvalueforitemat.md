@@ -31,7 +31,7 @@ An `NSComboBoxCell` object uses this method to populate the items displayed in i
 
 ## See Also
 
-- [Combo Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ComboBox/ComboBox.html#//apple_ref/doc/uid/10000020i)
+- [protocol NSComboBoxCellDataSource](nscomboboxcelldatasource.md)
 - [func comboBoxCell(NSComboBoxCell, completedString: String) -> String?](nscomboboxcelldatasource/comboboxcell(_:completedstring:).md)
   Returns the item from the combo box’s pop-up list that matches the text entered by the user.
 - [func comboBoxCell(NSComboBoxCell, indexOfItemWithStringValue: String) -> Int](nscomboboxcelldatasource/comboboxcell(_:indexofitemwithstringvalue:).md)

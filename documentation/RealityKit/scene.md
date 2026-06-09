@@ -70,6 +70,9 @@ To add content to the view’s scene, you first create and add one or more [`Anc
   Returns a `Publisher` for events of the specified type in a `Scene`.
 - [func subscribe<E>(to: E.Type, on: (any EventSource)?, componentType: (any Component.Type)?, (E) -> Void) -> any Cancellable](scene/subscribe(to:on:componenttype:_:).md)
   Subscribes to an event type, optionally limited to events affecting a source entity or scene, or limited to a specific component type for component events.
+### Accessing the command queue
+- [var commandQueue: (any MTLCommandQueue)?](scene/commandqueue.md)
+  If this scene uses a MTLCommandQueue for rendering, returns it.
 ### Structures
 - [struct AnchorCollection](scene/anchorcollection.md)
   A collection of anchor entities.

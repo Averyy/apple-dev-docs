@@ -59,6 +59,9 @@ When [`NSApplication`](nsapplication.md) receives a parameter value that does no
 ### Initializers
 - [init(rawValue: UInt)](nsapplication/presentationoptions-swift.struct/init(rawvalue:).md)
   Initializes a new presentation options structure.
+### Type Properties
+- [static var disableScreenCornerInteractions: NSApplication.PresentationOptions](nsapplication/presentationoptions-swift.struct/disablescreencornerinteractions.md)
+  Disable screen corner interactions when the application is frontmost.
 
 ## Relationships
 

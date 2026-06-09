@@ -1,10 +1,10 @@
-# GET /v1/appStoreVersions/{id}/relationships/routingAppCoverage
+# Get the routing app coverage ID for an App Store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
+- [Read the routing app coverage information of an app store version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
 
 

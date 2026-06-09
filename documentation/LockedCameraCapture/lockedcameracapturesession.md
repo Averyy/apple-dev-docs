@@ -8,6 +8,7 @@ An object that can request to open the extension’s containing app and receives
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

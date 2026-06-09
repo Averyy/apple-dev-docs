@@ -26,7 +26,7 @@ object GameCenterMatchmakingRuleResponse
 - [object GameCenterMatchmakingRuleUpdateRequest](gamecentermatchmakingruleupdaterequest.md)
   The request body you use to modify a rule.
 - [object GameCenterMatchmakingRule](gamecentermatchmakingrule.md)
-  The data structure that represents a matchmaking rule.
+  A JavaScript expression evaluated during Game Center matchmaking to determine player compatibility.
 
 
 ---

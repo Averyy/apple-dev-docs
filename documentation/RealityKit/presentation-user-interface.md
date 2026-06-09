@@ -60,6 +60,8 @@ RealityKit provides controls that enable interactions specific to each platform 
 
 - [Views and attachments](presentation-views-and-attachments.md)
   Bring RealityKit content into your app with views and renderers.
+- [Postprocessing effects](postprocessing-effects.md)
+  Create special rendering effects for your RealityKit scenes.
 
 
 ---

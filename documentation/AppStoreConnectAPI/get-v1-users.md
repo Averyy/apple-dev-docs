@@ -1,4 +1,4 @@
-# List Users
+# List users
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -26,7 +26,7 @@ Get a list of the users on your team.
 
 ## See Also
 
-- [Read User Information](get-v1-users-_id_.md)
+- [Read user information](get-v1-users-_id_.md)
   Get information about a user on your team, such as name, roles, and app visibility.
 
 

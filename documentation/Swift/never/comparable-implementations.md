@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Never, Never) -> Bool](never/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](never/_(_:_:)-26oxe.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](never/_(_:_:)-29dcq.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](never/_=(_:_:)-8zp5u.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](never/_=(_:_:)-7u3hd.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](never/_=(_:_:)-999en.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](never/_=(_:_:)-8jqcc.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

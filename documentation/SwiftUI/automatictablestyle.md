@@ -15,6 +15,7 @@ The default table style in the current context.
 ## Declaration
 
 ```swift
+nonisolated
 struct AutomaticTableStyle
 ```
 

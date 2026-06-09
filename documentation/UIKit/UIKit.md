@@ -116,6 +116,21 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 ### Classes
 - [class UIColorEffect](uicoloreffect.md)
   A visual effect that applies a solid color background.
+- [class UILookToScrollInteraction](uilooktoscrollinteraction.md)
+- [class UISceneAccessory](uisceneaccessory.md)
+  A type which can be used to register for a specific type of scene accessory presentation.
+- [class UISceneAccessoryRegistration](uisceneaccessoryregistration.md)
+  A type which represents the registration for a given scene accessory.
+- [class UISceneClosureConfirmation](uisceneclosureconfirmation.md)
+  A configuration specifying a confirmation dialog that will be shown before a user action will result in destruction of the scene session and the disconnection of the scene.
+### Structures
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
+### Macros
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
+### Enumerations
+- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
+- [enum UIBarMinimizeBehavior](uibarminimizebehavior.md)
 
 
 ---

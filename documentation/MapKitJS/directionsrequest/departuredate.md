@@ -36,8 +36,8 @@ Specify either a `departureDate` or an [`arrivalDate`](directionsrequest/arrival
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
+- [signal](directionsrequest/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

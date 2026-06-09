@@ -16,6 +16,7 @@ A menu style that displays a button that toggles the display of the menu’s con
 ## Declaration
 
 ```swift
+nonisolated
 struct ButtonMenuStyle
 ```
 

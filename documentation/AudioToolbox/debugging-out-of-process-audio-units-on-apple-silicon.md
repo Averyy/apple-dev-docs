@@ -41,6 +41,8 @@ Debugging is generally a seamless process, but if you encounter issues, consider
   Add custom audio-effect processing to apps like Logic Pro X and GarageBand by creating Audio Unit (AU) plug-ins.
 - [Incorporating Audio Effects and Instruments](incorporating-audio-effects-and-instruments.md)
   Add custom audio processing and MIDI instruments to your app by hosting Audio Unit (AU) plug-ins.
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+  Create a Spatial Audio extension that allows Bluetooth headphones to track the wearer’s head movements for spatial audio playback.
 - [class AUAudioUnit](auaudiounit.md)
   A class that defines a host’s interface to an audio unit.
 - [class AUAudioUnitBus](auaudiounitbus.md)
@@ -51,6 +53,8 @@ Debugging is generally a seamless process, but if you encounter issues, consider
   A class that describes an interface for custom parameter settings provided by the audio unit developer.
 - [class AUAudioUnitV2Bridge](auaudiounitv2bridge.md)
   A class that wraps a version 2 audio unit as version 3 audio unit.
+- [class AUHeadTrackingBinauralRenderer](auheadtrackingbinauralrenderer.md)
+  A subclass of AUAudioUnit specifically for 3rd party spatial Audio Units.
 - [func AudioUnitExtensionCopyComponentList(CFString) -> Unmanaged<CFArray>?](audiounitextensioncopycomponentlist(_:).md)
   Returns the component registrations for a given audio unit extension.
 - [func AudioUnitExtensionSetComponentList(CFString, CFArray?) -> OSStatus](audiounitextensionsetcomponentlist(_:_:).md)

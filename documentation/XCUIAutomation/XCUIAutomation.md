@@ -58,6 +58,11 @@ UI testing lets you verify that when you change parts of your app’s data model
 ### UI testing availability
 - [var XCUI_UI_TESTING_AVAILABLE: Int32](xcui_ui_testing_available.md)
   Indicates whether the current environment supports UI testing.
+### Classes
+- [class XCUIVoiceOverService](xcuivoiceoverservice.md)
+### Variables
+- [let XCUIVoiceOverServiceErrorDomain: String](xcuivoiceoverserviceerrordomain.md)
+  Error domain for XCUIVoiceOverService errors.
 
 
 ---

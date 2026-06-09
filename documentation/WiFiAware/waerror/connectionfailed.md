@@ -8,6 +8,7 @@ An error that occurs if the service is unable to connect.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

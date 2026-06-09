@@ -35,7 +35,7 @@ if traitCollection.userInterfaceIdiom == .mac {
 }
 ```
 
-[`UIPageControl`](uipagecontrol.md), [`UIRefreshControl`](uirefreshcontrol.md), and [`UIStepper`](uistepper.md) aren’t available to apps running in the Mac idiom. If you attempt to display these controls in a view, your app throws an exception. Replace these controls with similar functionality when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). For example, replace [`UIRefreshControl`](uirefreshcontrol.md) with a Refresh menu item by creating a [`UIKeyCommand`](uikeycommand.md) object with the title “Refresh” and the keyboard shortcut Command-R. Then add the command to your app’s menu system. For more information, see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
+[`UIPageControl`](uipagecontrol.md) isn’t available to apps running in the Mac idiom. If you attempt to display this control in a view, your app throws an exception. Replace it with similar functionality when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md).
 
 ##### Determine the Current User Interface Idiom
 

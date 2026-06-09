@@ -1,4 +1,4 @@
-# reverseLookup(coordinate, callback, options)
+# reverseLookup(coordinate, options)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -12,26 +12,27 @@ Converts a geographic coordinate to an address.
 
 ```swift
 reverseLookup(
-        coordinate: Coordinate,
-        callback: (error: Error | null, result?: GeocoderResponse) => void,
-        options?: GeocoderReverseLookupOptions,
-    ): number;
+    coordinate: Coordinate,
+    options?: GeocoderReverseLookupOptions,
+): Promise<GeocoderResponse>;
 ```
 
 #### Return Value
 
-A request ID that you can pass to [`cancel(id)`](service/cancel.md) to stop a pending request.
+A promise that resolves with a [`GeocoderResponse`](geocoderresponse.md) on success, or rejects with an `Error` on failure.
 
 #### Discussion
 
 Reverse geocoding converts geographic coordinates to the nearest human-readable address.
 
+The resolved [`GeocoderResponse`](geocoderresponse.md) contains an array of places named [`results`](geocoderresponse/results.md). Each place in [`results`](geocoderresponse/results.md) has a [`coordinate`](place/coordinate.md) property and a [`formattedAddress`](place/formattedaddress.md) property. [`results`](geocoderresponse/results.md) is an empty array if there isn’t a match.
+
+Pass an `AbortSignal` from an `AbortController` to the [`signal`](geocoderreverselookupoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
+
 ## Parameters
 
 - `coordinate`: The coordinate to convert to a human-readable address. For example, `new` ``Coordinate```(37.779268, -122.419248)`, which represents San Francisco City Hall.
-- `callback`: MapKit JS invokes this callback function with two arguments, `error` on failure and `data` on success. If you cancel the request before you receive a response, the framework doesn’t call this function. - `error` (Error). Contains an error code and descriptive message.
-- `data` (Object). An array of places named [`results`](geocoderresponse/results.md), which is an object the system parses from a server-returned JSON response. Each place in [`results`](geocoderresponse/results.md) has a [`coordinate`](place/coordinate.md) property and a [`formattedAddress`](place/formattedaddress.md) property. [`results`](geocoderresponse/results.md) is an empty array if there isn’t a match.
-- `options`: [`language`](geocoderreverselookupoptions/language.md) is the only option that you can set for the reverse geocoder. For example, `{ language: 'fr-CA' }` tells the server to send results localized to Canadian French. If you set it, this option overrides the language you provide in the [`Geocoder`](geocoder.md) constructor.
+- `options`: An option that constrains reverse lookup results to a specific language. See [`GeocoderReverseLookupOptions`](geocoderreverselookupoptions.md).
 
 ## Topics
 
@@ -40,7 +41,7 @@ Reverse geocoding converts geographic coordinates to the nearest human-readable 
 
 ## See Also
 
-- [lookup(place, callback, options)](geocoder/lookup.md)
+- [lookup(place, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
 - [interface GeocoderLookupOptions](geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.

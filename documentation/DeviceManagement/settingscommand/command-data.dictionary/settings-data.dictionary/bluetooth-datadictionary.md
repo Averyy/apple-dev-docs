@@ -10,8 +10,6 @@ A dictionary that contains Bluetooth settings.
 - iPadOS 11.3+
 - Mac Catalyst 11.3+
 - macOS 10.13.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

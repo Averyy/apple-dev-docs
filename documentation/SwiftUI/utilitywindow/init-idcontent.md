@@ -11,7 +11,8 @@ Creates a utility window with a title and identifier.
 ## Declaration
 
 ```swift
-init(_ title: Text, id: String, @ViewBuilder content: () -> Content)
+nonisolated
+init(_ title: Text, id: String, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

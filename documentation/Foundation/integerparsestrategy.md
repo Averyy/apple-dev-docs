@@ -50,11 +50,16 @@ let parsedUSDollars = try? Int(formattedUSDollars, format: .currency(code: "USD"
   Creates a parse strategy instance using the specified integer currency format style.
 - [init<Value>(format: Format, lenient: Bool)](integerparsestrategy/init(format:lenient:)-3gbvo.md)
   Creates a parse strategy instance using the specified integer percentage format style.
+### Parsing strings
+- [func parse(String) throws -> Format.FormatInput](integerparsestrategy/parse(_:).md)
+  Parses an integer string in accordance with this strategy and returns the parsed value.
 ### Accessing strategy properties
 - [var formatStyle: Format](integerparsestrategy/formatstyle.md)
   The format style this strategy uses when parsing strings.
 - [var lenient: Bool](integerparsestrategy/lenient.md)
   A Boolean value that indicates whether parsing allows any discrepencies in the expected format.
+### Default Implementations
+- [ParseStrategy Implementations](integerparsestrategy/parsestrategy-implementations.md)
 
 ## Relationships
 

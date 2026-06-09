@@ -85,6 +85,9 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 ### Articles
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
   Provide subscription service for customers who redeem offer codes through the App Store or within your app.
+### Structures
+- [struct RedeemOption](redeemoption.md)
+  An option that customizes the behavior of an offer code redemption.
 
 ## See Also
 

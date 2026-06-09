@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The link object for the app’s webhooks relationship.
+
 **Availability**:
 - App Store Connect API 3.6+
 

@@ -54,7 +54,7 @@ For textures that use a PVRTC pixel format, you can use this method to copy the 
 - [func copy(from: any MTLTexture, sourceSlice: Int, sourceLevel: Int, to: any MTLTexture, destinationSlice: Int, destinationLevel: Int, sliceCount: Int, levelCount: Int)](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:to:destinationslice:destinationlevel:slicecount:levelcount:).md)
   Encodes a command that copies slices of a texture to another texture’s slices.
 - [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:to:destinationorigin:destinationdimensions:).md)
-  Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
+  Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
 
 
 ---

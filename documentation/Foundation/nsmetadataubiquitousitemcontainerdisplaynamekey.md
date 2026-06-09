@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+The display name of the container that stores the ubiquitous item.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -22,8 +24,11 @@ let NSMetadataUbiquitousItemContainerDisplayNameKey: String
 
 - [let NSMetadataItemIsUbiquitousKey: String](nsmetadataitemisubiquitouskey.md)
 - [let NSMetadataUbiquitousItemDownloadRequestedKey: String](nsmetadataubiquitousitemdownloadrequestedkey.md)
+  A Boolean value indicating whether a download has been requested for the ubiquitous item.
 - [let NSMetadataUbiquitousItemIsExternalDocumentKey: String](nsmetadataubiquitousitemisexternaldocumentkey.md)
+  A Boolean value indicating whether the ubiquitous item is from an external document.
 - [let NSMetadataUbiquitousItemURLInLocalContainerKey: String](nsmetadataubiquitousitemurlinlocalcontainerkey.md)
+  The URL for the ubiquitous item in the local container.
 - [let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String](nsmetadataubiquitousitemhasunresolvedconflictskey.md)
 - [let NSMetadataUbiquitousItemIsDownloadedKey: String](nsmetadataubiquitousitemisdownloadedkey.md)
 - [let NSMetadataUbiquitousItemIsDownloadingKey: String](nsmetadataubiquitousitemisdownloadingkey.md)
@@ -35,6 +40,7 @@ let NSMetadataUbiquitousItemContainerDisplayNameKey: String
 - [let NSMetadataUbiquitousItemDownloadingErrorKey: String](nsmetadataubiquitousitemdownloadingerrorkey.md)
 - [let NSMetadataUbiquitousItemUploadingErrorKey: String](nsmetadataubiquitousitemuploadingerrorkey.md)
 - [let NSMetadataUbiquitousItemIsSharedKey: String](nsmetadataubiquitousitemissharedkey.md)
+  A Boolean value indicating whether the ubiquitous item is shared.
 
 
 ---

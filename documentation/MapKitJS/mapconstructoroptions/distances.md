@@ -11,14 +11,14 @@ The system of measurement that displays on the map.
 ## Declaration
 
 ```swift
-distances?: Distance;
+distances?: DistanceUnitSystem;
 ```
 
 #### Discussion
 
-Sets the system of measurement for displaying map distances. See [`Distance`](distance.md) for accepted values.
+Sets the system of measurement for displaying map distances. See [`DistanceUnitSystem`](distanceunitsystem.md) for accepted values.
 
-This property applies to the scale, if it displays. The default value is [`Adaptive`](distance/adaptive.md), which means that the measurement system depends on the map’s set [`language`](mapkitinitializationoptions/language.md). This property affects displayed distances only; it doesn’t affect data that returns from a service, such as [`Directions`](directions.md).
+This property applies to the scale, if it displays. The default value is [`Adaptive`](distanceunitsystem/adaptive.md), which means that the measurement system depends on the map’s set [`language`](mapkitinitializationoptions/language.md). This property affects displayed distances only; it doesn’t affect data that returns from a service, such as [`Directions`](directions.md).
 
 
 ---

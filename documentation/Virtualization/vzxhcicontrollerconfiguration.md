@@ -41,6 +41,7 @@ Use this configuration to create a USB XHCI controller device for the guest.
 
 - [class VZUSBControllerConfiguration](vzusbcontrollerconfiguration.md)
   The base class for a USB controller configuration.
+- [class VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)
 
 
 ---

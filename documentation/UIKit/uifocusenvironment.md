@@ -49,8 +49,6 @@ The [`UIFocusEnvironment`](uifocusenvironment.md) protocol provides a common int
 - [struct UIFocusSoundIdentifier](uifocussoundidentifier.md)
   An identifier for a focus-related sound.
 ### Checking the ancestry of the environment
-- [func contains(any UIFocusEnvironment) -> Bool](uifocusenvironment/contains(_:).md)
-  Returns a Boolean value that indicates whether the focus environment contains the specified environment.
 - [var parentFocusEnvironment: (any UIFocusEnvironment)?](uifocusenvironment/parentfocusenvironment.md)
   The parent focus environment for this environment.
 - [var focusItemContainer: (any UIFocusItemContainer)?](uifocusenvironment/focusitemcontainer.md)
@@ -58,6 +56,9 @@ The [`UIFocusEnvironment`](uifocusenvironment.md) protocol provides a common int
 ### Identifying the focus group
 - [var focusGroupIdentifier: String?](uifocusenvironment/focusgroupidentifier.md)
   The identifier of the focus group that the environment belongs to.
+### Instance Methods
+- [func contains(any UIFocusEnvironment) -> Bool](uifocusenvironment/contains(_:)-4budh.md)
+- [func contains(any UIFocusEnvironment) -> Bool](uifocusenvironment/contains(_:)-8yqav.md)
 
 ## Relationships
 

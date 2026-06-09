@@ -6,7 +6,7 @@
 A Boolean value indicating whether the text table hides empty cells.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

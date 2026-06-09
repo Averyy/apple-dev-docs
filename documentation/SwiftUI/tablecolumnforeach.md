@@ -15,6 +15,7 @@ A structure that computes columns on demand from an underlying collection of ide
 ## Declaration
 
 ```swift
+nonisolated
 struct TableColumnForEach<Data, ID, RowValue, Sort, Content> where Data : RandomAccessCollection, ID : Hashable, RowValue == Content.TableRowValue, Sort == Content.TableColumnSortComparator, Content : TableColumnContent
 ```
 

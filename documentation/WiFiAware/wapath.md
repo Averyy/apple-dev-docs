@@ -8,6 +8,7 @@ A representation of the current Wi-Fi Aware path.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

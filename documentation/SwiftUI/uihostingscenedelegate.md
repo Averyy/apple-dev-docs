@@ -9,7 +9,7 @@ Extends `UIKit/UISceneDelegate` to bridge SwiftUI scenes.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- tvOS 26.0+
+- tvOS 27.0+ (Beta)
 - visionOS 26.0+
 
 ## Declaration

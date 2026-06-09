@@ -18,7 +18,7 @@ func focusSection() -> some View
 
 #### Return Value
 
-A view that can guide focus to its focusable descendents.
+A view that can guide focus to its focusable descendants.
 
 #### Discussion
 

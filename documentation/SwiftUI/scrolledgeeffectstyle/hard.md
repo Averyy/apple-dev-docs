@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A scroll edge effect with a hard cutoff and dividing line.
+A scroll edge effect that provides a linear, nearly opaque boundary between pinned controls and scrolling content.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,13 @@ A scroll edge effect with a hard cutoff and dividing line.
 ```swift
 static var hard: ScrollEdgeEffectStyle { get }
 ```
+
+## See Also
+
+- [static var automatic: ScrollEdgeEffectStyle](scrolledgeeffectstyle/automatic.md)
+  A scroll edge effect the system applies automatically when pinned content overlaps scrolling content.
+- [static var soft: ScrollEdgeEffectStyle](scrolledgeeffectstyle/soft.md)
+  A scroll edge effect that provides a subtle, blurred boundary between pinned controls and scrolling content.
 
 
 ---

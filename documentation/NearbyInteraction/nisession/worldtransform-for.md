@@ -8,7 +8,7 @@ Returns a world transform to integrate a nearby object in an AR experience.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 
 ## Declaration
 

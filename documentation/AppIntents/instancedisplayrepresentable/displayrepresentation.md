@@ -23,8 +23,8 @@ var displayRepresentation: DisplayRepresentation { get }
 
 ## Mentions
 
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
 
 
 ---

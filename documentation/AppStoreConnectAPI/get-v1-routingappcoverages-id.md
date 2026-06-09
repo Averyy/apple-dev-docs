@@ -1,4 +1,4 @@
-# Read Routing App Coverage Information
+# Read routing app coverage information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,9 +20,9 @@ Get information about the routing app coverage file and its upload and processin
 
 ## See Also
 
-- [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
+- [Read the routing app coverage information of an app store version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
-- [Create a Routing App Coverage](post-v1-routingappcoverages.md)
+- [Create a routing app coverage](post-v1-routingappcoverages.md)
   Attach a routing app coverage file to an App Store version.
 
 

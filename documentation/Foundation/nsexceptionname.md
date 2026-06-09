@@ -134,6 +134,7 @@ struct NSExceptionName
 ## See Also
 
 - [typealias NSUncaughtExceptionHandler](nsuncaughtexceptionhandler.md)
+  The type for uncaught exception handler functions.
 
 
 ---

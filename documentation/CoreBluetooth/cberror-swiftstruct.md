@@ -59,6 +59,8 @@ struct CBError
 - [static var leGattNearBackgroundNotificationLimit: CBError.Code](cberror-swift.struct/legattnearbackgroundnotificationlimit.md)
 - [static var peerRemovedPairingInformation: CBError.Code](cberror-swift.struct/peerremovedpairinginformation.md)
 - [static var tooManyLEPairedDevices: CBError.Code](cberror-swift.struct/toomanylepaireddevices.md)
+- [static var channelSoundingConfigurationFailed: CBError.Code](cberror-swift.struct/channelsoundingconfigurationfailed.md)
+- [static var channelSoundingProcedureFailed: CBError.Code](cberror-swift.struct/channelsoundingprocedurefailed.md)
 - [static var errorDomain: String](cberror-swift.struct/errordomain.md)
 ### Enumerations
 - [CBError.Code](cberror-swift.struct/code.md)

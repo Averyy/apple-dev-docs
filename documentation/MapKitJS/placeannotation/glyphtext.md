@@ -11,12 +11,12 @@ The glyph text for the place.
 ## Declaration
 
 ```swift
-get glyphText(): string;
+get glyphText(): string | null;
 ```
 
 #### Discussion
 
-This property always returns an empty string. You can’t set the glyph text property of a place annotation.
+This property always returns `null`. You can’t set the glyph text property of a place annotation.
 
 
 ---

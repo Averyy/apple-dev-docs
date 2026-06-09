@@ -1,4 +1,4 @@
-# List Beta App Localizations
+# List beta app localizations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -23,11 +23,11 @@ Find and list beta app localizations for all apps and locales.
 
 ## See Also
 
-- [Read Beta App Localization Information](get-v1-betaapplocalizations-_id_.md)
+- [Read beta app localization information](get-v1-betaapplocalizations-_id_.md)
   Get localized beta app information for a specific app and locale.
-- [Read the App Information of a Beta App Localization](get-v1-betaapplocalizations-_id_-app.md)
+- [Read the app information of a beta app localization](get-v1-betaapplocalizations-_id_-app.md)
   Get the app information associated with a specific beta app localization.
-- [GET /v1/betaAppLocalizations/{id}/relationships/app](get-v1-betaapplocalizations-_id_-relationships-app.md)
+- [Get the app ID for a beta app localization](get-v1-betaapplocalizations-_id_-relationships-app.md)
 
 
 ---

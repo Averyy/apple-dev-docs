@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A processed declaration for the client.
+Status for a declaration processed by the client.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ A processed declaration for the client.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,7 +24,7 @@ object StatusManagementDeclarationsDeclarationObject
 
 ### Objects
 - [object StatusManagementDeclarationsStatusReasonObject](statusmanagementdeclarationsstatusreasonobject.md)
-  The details of an error in a status report.
+  Information about a status error.
 
 ## Properties
 

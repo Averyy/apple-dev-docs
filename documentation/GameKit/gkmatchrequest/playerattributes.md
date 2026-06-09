@@ -23,6 +23,7 @@ var playerAttributes: UInt32 { get set }
 ## Mentions
 
 - [Finding players using matchmaking rules](finding-players-using-matchmaking-rules.md)
+- [Starting turn-based matches and passing turns between players](starting-turn-based-matches-and-passing-turns-between-players.md)
 
 #### Discussion
 

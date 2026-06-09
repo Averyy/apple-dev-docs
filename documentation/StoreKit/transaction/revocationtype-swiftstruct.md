@@ -21,6 +21,8 @@ struct RevocationType
 ## Topics
 
 ### Type Properties
+- [static var assignmentRevocation: Transaction.RevocationType](transaction/revocationtype-swift.struct/assignmentrevocation.md)
+  The transaction was revoked by the organization administrator.
 - [static let familyRevocation: Transaction.RevocationType](transaction/revocationtype-swift.struct/familyrevocation.md)
   The transaction was revoked due to a family sharing revocation.
 - [static let fullRefund: Transaction.RevocationType](transaction/revocationtype-swift.struct/fullrefund.md)

@@ -17,6 +17,7 @@ Creates a system-defined toolbar item from a `ToolbarDefaultItemKind` at the giv
 ## Declaration
 
 ```swift
+nonisolated
 init(kind: ToolbarDefaultItemKind, placement: ToolbarItemPlacement = .automatic)
 ```
 

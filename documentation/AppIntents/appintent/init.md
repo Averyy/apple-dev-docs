@@ -4,7 +4,7 @@
 **Kind**: init  
 **Required**: Yes
 
-Creates an app intent.
+Creates and returns the app intent.
 
 **Availability**:
 - iOS 16.0+

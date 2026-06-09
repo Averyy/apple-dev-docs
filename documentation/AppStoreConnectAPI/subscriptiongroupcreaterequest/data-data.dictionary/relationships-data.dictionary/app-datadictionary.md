@@ -16,6 +16,7 @@ object SubscriptionGroupCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object SubscriptionGroupCreateRequest.Data.Relationships.App.Data](subscriptiongroupcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription group.
 
 ## Properties
 

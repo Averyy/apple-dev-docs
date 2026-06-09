@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a merchant ID.
+
 **Availability**:
 - App Store Connect API 3.8+
 
@@ -16,6 +18,7 @@ object MerchantIdCreateRequest.Data
 
 ### Dictionaries
 - [object MerchantIdCreateRequest.Data.Attributes](merchantidcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a merchant id create request resource.
 
 ## Properties
 

@@ -13,8 +13,6 @@ The command to get a list of installed profiles on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object ProfileListCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

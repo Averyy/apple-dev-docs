@@ -8,6 +8,7 @@ A view that displays the phrase a person uses to invoke an App Shortcut.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration
@@ -49,7 +50,10 @@ You must call `UISiriTip/setIntent(intent:)` before displaying the view.
 ### Inherits From
 - [UIView](../UIKit/UIView.md)
 ### Conforms To
+- [AppEntityAnnotatable](appentityannotatable.md)
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

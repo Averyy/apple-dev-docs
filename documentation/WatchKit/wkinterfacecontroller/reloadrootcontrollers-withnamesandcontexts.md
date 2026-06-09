@@ -6,9 +6,6 @@
 Loads the specified interface controllers and rebuilds the app’s page-based interface.
 
 **Availability**:
-- iOS 8.2+
-- iPadOS 8.2+
-- Mac Catalyst 8.2+
 - watchOS ?+
 
 ## Declaration

@@ -16,7 +16,10 @@ type PointsOfInterestSearchDelegate =
           searchDidError: (error: Error) => void;
           searchDidComplete: (result: PointsOfInterestSearchResponse) => void;
       }
-    | ((error: Error | null, result?: PointsOfInterestSearchResponse) => void);
+    | ((
+          error: Error | null,
+          result: PointsOfInterestSearchResponse | null,
+      ) => void);
 ```
 
 #### Discussion
@@ -28,7 +31,7 @@ You may pass an object to the search method instead of using of a search delegat
 
 ## See Also
 
-- [search(callback, options)](pointsofinterestsearch/search.md)
+- [search(options)](pointsofinterestsearch/search.md)
   Fetches points of interest.
 - [interface PointsOfInterestSearchResponse](pointsofinterestsearchresponse.md)
   The result of a request used to fetch points of interest.

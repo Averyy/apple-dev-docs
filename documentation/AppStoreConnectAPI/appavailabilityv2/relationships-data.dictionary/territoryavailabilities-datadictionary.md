@@ -16,6 +16,7 @@ object AppAvailabilityV2.Relationships.TerritoryAvailabilities
 
 ### Objects
 - [object AppAvailabilityV2.Relationships.TerritoryAvailabilities.Data](appavailabilityv2/relationships-data.dictionary/territoryavailabilities-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app availability v2.
 
 ## Properties
 

@@ -8,6 +8,7 @@ The possible states the framework sets for Automatic Sign-In.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
@@ -35,7 +36,6 @@ The framework sets the [`authorization`](vsuseraccountmanager/autosignintoken-sw
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

@@ -30,6 +30,8 @@ struct Currency
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(FloatingPointFormatStyle<Value>.Currency.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(FloatingPointFormatStyle<Value>.Currency.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(FloatingPointFormatStyle<Value>.Currency.Configuration.Presentation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/presentation(_:).md)
@@ -44,6 +46,9 @@ struct Currency
   The type the format style uses for configuration settings.
 - [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
+### Formatting floating-point currency values
+- [func format(Value) -> String](floatingpointformatstyle/currency/format(_:).md)
+  Formats a floating-point value, using this style.
 ### Creating attributed strings
 - [var attributed: FloatingPointFormatStyle<Value>.Attributed](floatingpointformatstyle/currency/attributed.md)
   An attributed format style based on the floating-point currency format style.
@@ -60,9 +65,19 @@ struct Currency
 ### Applying list styles
 - [struct ListFormatStyle](listformatstyle.md)
   A type that formats lists of items with a separator and conjunction appropriate for a given locale.
+### Parsing floating-point currency values
+- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Currency>](floatingpointformatstyle/currency/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating currency values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](floatingpointformatstyle/currency/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Instance Methods
 - [func notation(FloatingPointFormatStyle<Value>.Currency.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Currency](floatingpointformatstyle/currency/notation(_:).md)
   Modifies the format style to use the specified notation.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](floatingpointformatstyle/currency/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](floatingpointformatstyle/currency/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](floatingpointformatstyle/currency/parseableformatstyle-implementations.md)
 
 ## Relationships
 

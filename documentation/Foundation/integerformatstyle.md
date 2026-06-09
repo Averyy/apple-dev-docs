@@ -168,7 +168,9 @@ let localizedInteger = match?.1 // 123456
 - [IntegerFormatStyle.Percent](integerformatstyle/percent.md)
   A format style that converts between integer percentage values and their textual representations.
 ### Default Implementations
+- [CustomConsumingRegexComponent Implementations](integerformatstyle/customconsumingregexcomponent-implementations.md)
 - [FormatStyle Implementations](integerformatstyle/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](integerformatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 

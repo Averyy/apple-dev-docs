@@ -35,6 +35,7 @@ let kCVImageBufferTransferFunction_ITU_R_709_2: CFString
 - [let kCVImageBufferTransferFunction_SMPTE_ST_428_1: CFString](kcvimagebuffertransferfunction_smpte_st_428_1.md)
 - [let kCVImageBufferTransferFunction_ITU_R_2100_HLG: CFString](kcvimagebuffertransferfunction_itu_r_2100_hlg.md)
 - [let kCVImageBufferTransferFunction_SMPTE_ST_2084_PQ: CFString](kcvimagebuffertransferfunction_smpte_st_2084_pq.md)
+- [let kCVImageBufferLogTransferFunction_AppleLog2: CFString](kcvimagebufferlogtransferfunction_applelog2.md)
 
 
 ---

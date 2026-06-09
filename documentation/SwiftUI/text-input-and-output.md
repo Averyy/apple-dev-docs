@@ -156,7 +156,7 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 ### Formatting date and time
 - [enum SystemFormatStyle](systemformatstyle.md)
-  A namespace for format styles that implement designs used across Apple’s platformes.
+  A collection of format styles for displaying live-updating time information in [`Text`](text.md) views.
 - [struct TimeDataSource](timedatasource.md)
   A source of time related data.
 ### Managing text entry
@@ -188,6 +188,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
   A structure defining the system text formatting controls available on each platform.
 ### Dictating text
@@ -200,6 +202,8 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   Specifies the Writing Tools behavior for text and text input in the environment.
 - [struct WritingToolsBehavior](writingtoolsbehavior.md)
   The Writing Tools editing experience for text and text input.
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+  Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 ### Specifying text equivalents
 - [func typeSelectEquivalent(_:)](view/typeselectequivalent(_:).md)
   Sets an explicit type select equivalent text in a collection, such as a list or table.

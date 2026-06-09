@@ -8,6 +8,7 @@ Tells the system that the application wants to delay the application launch duri
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
+- Mac Catalyst 18.1+
 
 ## Declaration
 

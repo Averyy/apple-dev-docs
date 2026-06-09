@@ -3,9 +3,16 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
+Provides details about an error for an item in a status report.
+
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 13.0+
+- tvOS 16.0+
+- visionOS 1.1+
+- watchOS 10.0+
 
 ## Declaration
 
@@ -19,6 +26,10 @@ object StatusReport
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
 - [Processing status for managed apps](processing-status-for-managed-apps.md)
 
+#### Discussion
+
+The device sends a status report when a subscribed status item changes. The report contains just the status items that have changed. About once a day, the device also sends a full status report containing all the subscribed status items, and the `FullReport` key is set to `true` in the report. This allows servers to reset their status items in case they missed an incremental report.
+
 ## Topics
 
 ### Dictionaries
@@ -27,42 +38,14 @@ object StatusReport
 
 ## Properties
 
-- `Errors` ([StatusReport.Error]) *(required)*
-- `FullReport` (boolean)
-- `StatusItems` (StatusReport.StatusItems) *(required)*
+- `StatusItems` (StatusReport.StatusItems) *(required)*: A dictionary where the keys are the status item paths and values are the corresponding status item value.
+- `Errors` ([StatusReport.Error]) *(required)*: An array of errors for this status report.
+- `FullReport` (boolean): The system sets this to `true` to indicate that the status report contains the full set of current status, and is not an incremental report. A full status report includes the full set of items in any status array item, not just the changes. Servers use this to replace their entire status for the device, rather than do an incremental update to the existing status. The system sets this to `true` when sending a “safety sync” status report, which is typically sent every 24 hours or so.
 
 ## See Also
 
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
+- [object StatusReason](statusreason.md)
+  Provides details about an error for an item in a status report.
 
 
 ---

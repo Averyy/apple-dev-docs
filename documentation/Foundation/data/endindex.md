@@ -26,8 +26,14 @@ This is the “one-past-the-end” position, and will always be equal to the `co
 
 ## See Also
 
+- [typealias Index](data/index.md)
+  A type used to indicate a position in a data’s buffer.
 - [var startIndex: Data.Index](data/startindex.md)
   The beginning index into the data.
+- [func index(after: Data.Index) -> Data.Index](data/index(after:).md)
+  Returns the index that immediately follows the specified index.
+- [func index(before: Data.Index) -> Data.Index](data/index(before:).md)
+  Returns the index that immediately precedes the specified index.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration to install an identity on the device.
+The declaration to configure an identity.
 
 **Availability**:
 - iOS 17.0+
@@ -13,8 +13,6 @@ The declaration to install an identity on the device.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -36,8 +34,11 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
 | Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
+
+This configuration installs a certificate identity on the device.
 
 ```json
 {
@@ -52,9 +53,9 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
 
 ## Properties
 
-- `AllowAllAppsAccess` (boolean): If `true`, apps can access the private key.
+- `AllowAllAppsAccess` (boolean): If `true`, apps can access the private key. Available: macOS 14+
 - `CredentialAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the identity to install.
-- `KeyIsExtractable` (boolean): If `true`, the private key is extractable in the keychain.
+- `KeyIsExtractable` (boolean): If `true`, the private key is extractable in the keychain. Available: macOS 14+
 
 ## See Also
 
@@ -74,20 +75,20 @@ Specify `com.apple.configuration.security.identity` as the declaration type.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

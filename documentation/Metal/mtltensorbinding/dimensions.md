@@ -22,7 +22,9 @@ var dimensions: MTLTensorExtents? { get }
 
 #### Discussion
 
-Because shader-bound tensors have dynamic extents, if this tensor is shader bound, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and `MTLTensorExtents/extentsAtDimensionIndex:` always returns a value of -1. In the case of functions used with machine learning pipelines, `dimensions` corresponds to the default shape, if you provide one. Otherwise, it’s `nil` in the case of an undefined shape.
+For shader-bound tensors with dynamic extents, the [`rank`](mtltensorextents/rank.md) of `dimensions` corresponds to the rank the shader function specifies, and [`extentAtDimensionIndex:`](mtltensorextents/extentatdimensionindex:.md) always returns a value of -1.
+
+For machine learning pipelines, `dimensions` corresponds to the default shape, if you provide one. Otherwise, it’s `nil` in the case of an undefined shape.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-A property that returns latest version of PaperKit, which supports all currently available features.
+The latest version of PaperKit, which supports all currently available features.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +17,13 @@ A property that returns latest version of PaperKit, which supports all currently
 ```swift
 static var latest: FeatureSet.ContentVersion { get }
 ```
+
+## See Also
+
+- [FeatureSet.ContentVersion.version1](featureset/contentversion-swift.enum/version1.md)
+  The PaperKit version that supports markup.
+- [FeatureSet.ContentVersion.version2](featureset/contentversion-swift.enum/version2.md)
+  The PaperKit version that supports markup from iOS 27.
 
 
 ---

@@ -1,4 +1,4 @@
-# List All Apps Visible to an Invited User
+# List all apps visible to an invited user
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,7 +19,7 @@ Get a list of apps that will be visible to a user with a pending invitation.
 
 ## See Also
 
-- [GET /v1/userInvitations/{id}/relationships/visibleApps](get-v1-userinvitations-_id_-relationships-visibleapps.md)
+- [List visible app IDs for a user invitation](get-v1-userinvitations-_id_-relationships-visibleapps.md)
 
 
 ---

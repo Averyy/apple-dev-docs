@@ -10,12 +10,12 @@ Requests that the delegate provide searchable items for the provided identifiers
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 15.4+
-- visionOS 2.4+
+- visionOS 41.4+ (Beta)
 
 ## Declaration
 
 ```swift
-optional func searchableItems(forIdentifiers identifiers: [String], searchableItemsHandler: @escaping ([CSSearchableItem]) -> Void)
+optional func searchableItems(forIdentifiers identifiers: [String]) async -> [CSSearchableItem]
 ```
 
 #### Discussion
@@ -29,6 +29,7 @@ Use this method to provide the framework with a list of identifiers to search fo
 
 ## See Also
 
+- [func searchableItems(forIdentifiers: [String], protectionClass: FileProtectionType, searchableItemsHandler: ([CSSearchableItem]) -> Void)](cssearchableindexdelegate/searchableitems(foridentifiers:protectionclass:searchableitemshandler:).md)
 - [func data(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String) throws -> Data](cssearchableindexdelegate/data(for:itemidentifier:typeidentifier:).md)
   Returns the data for the requested item during a drag-and-drop operation.
 - [func fileURL(for: CSSearchableIndex, itemIdentifier: String, typeIdentifier: String, inPlace: Bool) throws -> URL](cssearchableindexdelegate/fileurl(for:itemidentifier:typeidentifier:inplace:).md)

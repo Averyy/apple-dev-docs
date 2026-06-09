@@ -30,6 +30,21 @@ If multiple views request margins, the scene’s preferred margins will be the m
 - `edges`: The edges that should receive margins.
 - `length`: The amount of margin requested on each specified edge.
 
+## See Also
+
+- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
+  Configures the dismiss functionality for the window enclosing `self`.
+- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
+  Configures the full screen functionality for the window enclosing `self`.
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+  Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
+  Configures the minimize functionality for the window enclosing `self`.
+- [func windowResizeAnchor(UnitPoint?) -> some View](view/windowresizeanchor(_:).md)
+  Sets the window anchor point used when the size of the view changes such that the window must resize.
+- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
+  Configures the resize functionality for the window enclosing `self`.
+
 
 ---
 

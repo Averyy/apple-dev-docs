@@ -16,6 +16,7 @@ object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppSto
 
 ### Objects
 - [object AppStoreVersionExperimentTreatmentCreateRequest.Data.Relationships.AppStoreVersionExperimentV2.Data](appstoreversionexperimenttreatmentcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimentv2-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an App Store version experiment treatment.
 
 ## Properties
 

@@ -4,7 +4,7 @@
 **Kind**: dictionary
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API ?+ - Deprecated
 
 ## Declaration
 
@@ -26,8 +26,11 @@ object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse
 ## See Also
 
 - [object SubscriptionAvailability](subscriptionavailability.md)
+  The territory availability configuration for a subscription, specifying which App Store regions it’s offered in.
 - [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
+  The request body you use to create a subscription availability.
 - [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+  A response containing a single territory availability configuration for a subscription.
 
 
 ---

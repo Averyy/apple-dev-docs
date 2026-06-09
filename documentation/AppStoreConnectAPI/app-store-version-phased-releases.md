@@ -13,12 +13,12 @@ For more information, see [`Release a version update in phases`](https://develop
 ## Topics
 
 ### Managing Phased Releases
-- [Create an App Store Version Phased Release](post-v1-appstoreversionphasedreleases.md)
+- [Create an app store version phased release](post-v1-appstoreversionphasedreleases.md)
   Enable phased release for an App Store version.
-- [Modify an App Store Version Phased Release](patch-v1-appstoreversionphasedreleases-_id_.md)
+- [Modify an app store version phased release](patch-v1-appstoreversionphasedreleases-_id_.md)
   Pause or resume a phased release, or immediately release an app.
 ### Canceling Phased Releases
-- [Delete an App Store Version Phased Release](delete-v1-appstoreversionphasedreleases-_id_.md)
+- [Delete an app store version phased release](delete-v1-appstoreversionphasedreleases-_id_.md)
   Cancel a planned phased release that has not been started.
 ### Objects and Data Types
 - [object AppStoreVersionPhasedRelease](appstoreversionphasedrelease.md)
@@ -26,8 +26,9 @@ For more information, see [`Release a version update in phases`](https://develop
 - [object AppStoreVersionPhasedReleaseCreateRequest](appstoreversionphasedreleasecreaterequest.md)
   The request body you use to create an App Store Version Phased Release.
 - [object AppStoreVersionPhasedReleaseResponse](appstoreversionphasedreleaseresponse.md)
-  A response that contains a single App Store Version Phased Releases resource.
+  The response body for endpoints that create, read, or modify the phased release schedule for an App Store version.
 - [object AppStoreVersionPhasedReleaseWithoutIncludesResponse](appstoreversionphasedreleasewithoutincludesresponse.md)
+  A response containing a single phased release configuration, without related resources.
 - [object AppStoreVersionPhasedReleaseUpdateRequest](appstoreversionphasedreleaseupdaterequest.md)
   The request body you use to update an App Store Version Phased Release.
 - [type PhasedReleaseState](phasedreleasestate.md)

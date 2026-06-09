@@ -9,7 +9,6 @@ Provides a default, blank implementation for when the session removes surfaces a
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

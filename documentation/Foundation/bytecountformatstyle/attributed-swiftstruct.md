@@ -28,6 +28,9 @@ The attributed strings that this fomat style creates contain attributes from the
 
 ## Topics
 
+### Formatting a byte count
+- [func format(Int64) -> AttributedString](bytecountformatstyle/attributed-swift.struct/format(_:).md)
+  Formats a numeric byte count, using this style.
 ### Customizing style behavior
 - [var style: ByteCountFormatStyle.Style](bytecountformatstyle/attributed-swift.struct/style.md)
   The semantic style the format style uses to represent a byte count value.
@@ -42,6 +45,9 @@ The attributed strings that this fomat style creates contain attributes from the
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
 - [var locale: Locale](bytecountformatstyle/attributed-swift.struct/locale.md)
   The locale to use to format the numeric part of the byte count.
+### Modifying style locale
+- [func locale(Locale) -> ByteCountFormatStyle.Attributed](bytecountformatstyle/attributed-swift.struct/locale(_:).md)
+  Modifies the format style to use the specified locale.
 
 ## Relationships
 

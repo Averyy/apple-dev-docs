@@ -16,6 +16,7 @@ object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimen
 
 ### Objects
 - [object AppStoreVersionExperimentTreatment.Relationships.AppStoreVersionExperimentTreatmentLocalizations.Data](appstoreversionexperimenttreatment/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app store version experiment treatment.
 
 ## Properties
 

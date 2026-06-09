@@ -15,8 +15,12 @@ Shift electric vehicle charging schedules to times when the grid is cleaner and 
 
 ## See Also
 
-- [com.apple.developer.energykit](../BundleResources/Entitlements/com.apple.developer.energykit.md)
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+  Track energy consumption and provide people detailed insights into the charging of their electric vehicle.
+- [EnergyKit Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.md)
   The entitlement the system requires for an app to use the EnergyKit framework.
+- [EnergyKit LoadEvents Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience.md)
+  An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 
 
 ---

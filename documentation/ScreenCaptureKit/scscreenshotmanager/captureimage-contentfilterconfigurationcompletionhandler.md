@@ -6,7 +6,7 @@
 Captures a single frame from a stream as an image, using a filter.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- Mac Catalyst 18.2+
 - macOS 14.0+
 
 ## Declaration

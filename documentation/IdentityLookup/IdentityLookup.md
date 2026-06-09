@@ -20,6 +20,8 @@ SMS and Call Reporting provides app extensions to manage unwanted communication.
 - ****Unwanted Communication app extension****: Lets people report unwanted SMS messages and calls as spam.
 - ****Live Caller ID Lookup app extension****: Enables up-to-date calling and blocking information.
 
+Register your Live Caller ID configuration on the [`Identity & Trust`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/identity) page in the [`CloudKit Console`](https://developer.apple.comhttps://icloud.developer.apple.com/).
+
 ## Topics
 
 ### Message filtering

@@ -7,11 +7,11 @@ Creates a borderless button menu style, specifying whether to show a visual menu
 
 **Availability**:
 - macOS 11.0+
-- tvOS 17.0+
 
 ## Declaration
 
 ```swift
+nonisolated
 init(showsMenuIndicator: Bool)
 ```
 

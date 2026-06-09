@@ -152,6 +152,7 @@ You can use ordered sets as an alternative to arrays when the order of elements 
 - [init?(coder: NSCoder)](nsorderedset/init(coder:).md)
 - [convenience init(objects: Any...)](nsorderedset/init(objects:).md)
 ### Default Implementations
+- [ExpressibleByArrayLiteral Implementations](nsorderedset/expressiblebyarrayliteral-implementations.md)
 - [Sequence Implementations](nsorderedset/sequence-implementations.md)
 
 ## Relationships

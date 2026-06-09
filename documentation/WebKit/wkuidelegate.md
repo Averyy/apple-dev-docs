@@ -76,6 +76,9 @@ Web view user interface delegates implement this protocol to control the opening
 ### Deprecated
 - [Deprecated symbols](wkuidelegate-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Methods
+- [func webView(WKWebView, insertInputSuggestion: UIInputSuggestion)](wkuidelegate/webview(_:insertinputsuggestion:).md)
+- [func webView(WKWebView, requestGeolocationPermissionFor: WKSecurityOrigin, initiatedByFrame: WKFrameInfo, decisionHandler: (WKPermissionDecision) -> Void)](wkuidelegate/webview(_:requestgeolocationpermissionfor:initiatedbyframe:decisionhandler:).md)
 
 ## Relationships
 

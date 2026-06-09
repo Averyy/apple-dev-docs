@@ -27,20 +27,21 @@ guard let date = date else {
 }
 ```
 
-##### Review Supported Parameter Types
+##### Define Parameters Using Only the Supported Types
 
-You can use the `@Parameter` property wrapper with common Swift and Foundation types:
+For every parameter you add to your app intent, choose only types that the App Intents framework supports. The system needs to know how to handle your chosen types because it customizes interactions based on those types. The following table lists the supported types.
 
-- Primitives such as [`Bool`](https://developer.apple.com/documentation/Swift/Bool), [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`String`](https://developer.apple.com/documentation/Swift/String), [`Duration`](https://developer.apple.com/documentation/Swift/Duration), [`Date`](https://developer.apple.com/documentation/Foundation/Date), [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal), [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement), and [`URL`](https://developer.apple.com/documentation/Foundation/URL).
-- Collections such as [`Array`](https://developer.apple.com/documentation/Swift/Array) and [`Set`](https://developer.apple.com/documentation/Swift/Set). Make sure the collection’s elements are of a type that’s compatible with [`IntentParameter`](intentparameter.md).
+| Category | Types | Notes |
+| --- | --- | --- |
+| Primitive value types | [`Bool`](https://developer.apple.com/documentation/Swift/Bool), [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Double`](https://developer.apple.com/documentation/Swift/Double), [`String`](https://developer.apple.com/documentation/Swift/String), [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString), [`Duration`](https://developer.apple.com/documentation/Swift/Duration), [`Date`](https://developer.apple.com/documentation/Foundation/Date), [`Decimal`](https://developer.apple.com/documentation/Foundation/Decimal), [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement), and [`URL`](https://developer.apple.com/documentation/Foundation/URL) | None |
+| Collection types | [`Array`](https://developer.apple.com/documentation/Swift/Array), [`Set`](https://developer.apple.com/documentation/Swift/Set) | Make sure the collection’s elements are of a type that’s compatible with [`IntentParameter`](intentparameter.md). |
+| App Intents framework types | [`EntityCollection`](entitycollection.md), [`IntentPerson`](intentperson.md), [`IntentFile`](intentfile.md), [`IntentCurrencyAmount`](intentcurrencyamount.md), [`IntentPaymentMethod`](intentpaymentmethod.md), [`SystemShortcut`](systemshortcut.md), [`UnionValue()`](unionvalue().md) | For additional information, see [`Common data types`](common-data-types.md). |
+| Other system types | [`AudioSearch`](https://developer.apple.com/documentation/MediaIntents/AudioSearch), [`DateComponents`](https://developer.apple.com/documentation/Foundation/DateComponents), [`LinkMetadata`](https://developer.apple.com/documentation/LinkPresentation/LinkMetadata), [`PersonNameComponents`](https://developer.apple.com/documentation/Foundation/PersonNameComponents), [`PHAsset`](https://developer.apple.com/documentation/Photos/PHAsset), [`PlaceDescriptor`](https://developer.apple.com/documentation/GeoToolbox/PlaceDescriptor), [`Calendar.RecurrenceRule`](https://developer.apple.com/documentation/Foundation/Calendar/RecurrenceRule), [`SemanticContentDescriptor`](https://developer.apple.com/documentation/VisualIntelligence/SemanticContentDescriptor) | None |
+| Custom app data | [`AppEntity`](appentity.md), [`AppEnum`](appenum.md) | Use these types to store app-specific data. |
 
-Additionally:
+> **Note**: App intent results support the same set of types.
 
-- Use framework-specific types such as [`IntentPerson`](intentperson.md) and [`IntentFile`](intentfile.md). For additional types, see [`Common data types`](common-data-types.md).
-- Use enumerable types that conform to the [`AppEnum`](appenum.md) protocol for parameters that have known static values at build time.
-- Use custom types that adopt the [`AppEntity`](appentity.md) protocol and that the system can request at runtime.
-
-For example, the [`Accelerating app interactions with App Intents`](acceleratingappinteractionswithappintents.md) sample code project makes its trail data available in an app intent through the `TrailEntity` type, which is a structure conforming to the [`AppEntity`](appentity.md) protocol.
+When you want to specify app-specific data in a parameter, create an [`AppEntity`](appentity.md) or [`AppEnum`](appenum.md) type and use it to specify your data. Apps make their app entities findable using queries, and the system can use those same queries to resolve parameters that contain entities. Similarly, app enums provide a static set of options from which to choose, making it easier for the system to identify possible values.
 
 ##### Transform Input Into Your Intent Parameters Types
 
@@ -120,32 +121,28 @@ For example, the [`Accelerating app interactions with App Intents`](accelerating
     }
 ```
 
-For more information, see [`Parameter resolution`](parameter-resolution.md).
-
 ##### Review the Role of App Entities
 
 App entities provide the system with information about your app’s data, or about concepts related to your app’s data. App entities describe your app’s custom data types you use for parameters, and help the system resolve parameters for app intents by letting it inspect relevant types. For example, a photo app that provides app entities for its photos and albums might also provide app entities to represent “the most recent photo” or “the default album.” These specific app entities help resolve intents more quickly and with fewer verbal interactions.
 
 Define app entities for core types and concepts that you want to make available to system experiences, and make sure to include properties for any data values that help people discover the entities using queries. For example, create an entity that describes a photo album and add a property to the entity for the name of the photo album.
 
-For more information about expressing your app’s data as entities, see [`Integrating custom data types into your intents`](integrating-custom-types-into-your-intents.md).
+For more information about expressing your app’s data as entities, see [`Defining app entities for your custom data types`](defining-app-entities-for-your-custom-data-types.md).
 
 ## See Also
 
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
+- [class IntentParameter](intentparameter.md)
+  A property wrapper that indicates the associated property is an input argument of the app intent.
+- [class IntentParameterDependency](intentparameterdependency.md)
+  A property wrapper that represents an app intent dependency you use to provide dynamic options.
+- [struct IntentParameterContext](intentparametercontext.md)
+  A type that provides information about an associated parameter during value resolution.
+- [enum InputConnectionBehavior](inputconnectionbehavior.md)
+  Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
 - [Resolvers](resolvers.md)
   Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-- [Common data types](common-data-types.md)
-  Specify common types that your app supports, including currencies, files, and contacts.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Static parameter types](app-enums.md)
-  Types that represent an enumerable list of static parameter values.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
-- [Property comparators](property-comparators.md)
-  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

@@ -16,6 +16,7 @@ The default menu style, based on the menu’s context.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultMenuStyle
 ```
 

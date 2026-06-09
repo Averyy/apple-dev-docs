@@ -47,8 +47,15 @@ struct IntentDescription
 
 ## See Also
 
-- [protocol AppIntent](appintent.md)
-  An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
+- [struct IntentModes](intentmodes.md)
+  A set of options you use to configure the runtime behavior of an app intent.
+- [struct IntentSystemContext](intentsystemcontext.md)
+  Contextual information that the system provides while it performs an app intent.
+- [struct IntentDialog](intentdialog.md)
+  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
+- [struct IntentDeprecation](intentdeprecation.md)
+- [class IntentProjection](intentprojection.md)
+  Projections for an app intent that returns non-optional values for parameters.
 
 
 ---

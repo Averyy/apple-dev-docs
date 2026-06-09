@@ -11,18 +11,21 @@ A rectangular area on a map that a center coordinate and a span define, in degre
 ## Declaration
 
 ```swift
-class CoordinateRegion
+class CoordinateRegion implements CoordinateRegionData
 ```
 
 ## Mentions
 
 - [MapKit JS 5](mapkit-js-5.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 ## Topics
 
 ### Creating a coordinate region
 - [new CoordinateRegion(center, span)](coordinateregion/coordinateregionconstructor.md)
   A rectangular geographic region that centers around a latitude and longitude coordinate.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
 ### Defining the region
 - [center](coordinateregion/center.md)
   The center point of the region.
@@ -44,12 +47,23 @@ class CoordinateRegion
 - [toString()](coordinateregion/tostring.md)
   Returns a string representation of the coordinate region object.
 
+## Relationships
+
+### Conforms To
+- [CoordinateRegionData](coordinateregiondata.md)
+
 ## See Also
 
 - [class Coordinate](coordinate.md)
   An object representing the latitude and longitude for a point on the Earth’s surface.
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
 - [class CoordinateSpan](coordinatespan.md)
   The width and height of a map region.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 - [class BoundingRegion](boundingregion.md)
   A rectangular area on a map, which coordinates of the rectangle’s northeast and southwest corners define.
 

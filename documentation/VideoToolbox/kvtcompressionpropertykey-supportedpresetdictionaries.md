@@ -24,7 +24,7 @@ Where supported by video encoders, returns a dictionary whose keys are the avail
 Clients can select a compression preset for their encoding needs and use its encoder settings to configure the encoder. Clients may also use the encoder settings as a base configuration that they can customize as they require.
 
 ```None
-See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing.
+See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_Balanced, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing, kVTCompressionPreset_ConsistentQuality.
 ```
 
 ## See Also

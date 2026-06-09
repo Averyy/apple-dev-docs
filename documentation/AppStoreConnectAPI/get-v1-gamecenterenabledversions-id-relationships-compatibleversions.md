@@ -1,4 +1,4 @@
-# Get All Compatible Version IDs for a Game Center Enabled Version
+# Get all compatible version ids for a game center enabled version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [Add Compatible Versions to a Game Center Enabled Version](post-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Add compatible versions to a game center enabled version](post-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 
 
 ---

@@ -8,6 +8,7 @@ A default quality-of-service (QoS) type that provides high throughput for data t
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

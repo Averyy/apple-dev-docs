@@ -9,7 +9,6 @@ The session information.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -27,6 +26,8 @@ An electric vehicle between charging or discharging sessions can be idling and l
   The unique identifier of the electrical load event.
 - [let timestamp: Date](electricvehicleloadevent/timestamp.md)
   The timestamp for when the event occurred.
+- [ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.struct.md)
+  A session that tracks the event.
 
 
 ---

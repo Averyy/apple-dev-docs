@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An interface for locating entities using their identifiers.
+An interface for locating app entity instances by identifier.
 
 **Availability**:
 - iOS 16.0+
@@ -22,21 +22,17 @@ protocol EntityQuery : DynamicOptionsProvider, PersistentlyIdentifiable, Sendabl
 
 ## Mentions
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 
 #### Overview
 
-The entity query provides the model object in which ways instances of a particular app entity type can be queried by Siri and the Shortcuts app, and implements the retrieval of such instances.
+An entity query defines how Apple Intelligence, Siri, and the Shortcuts app retrieve instances of a specific [`AppEntity`](appentity.md) type, and implements the lookup logic. To let Siri and Shortcuts retrieve `AppEntity` instances, create a type that conforms to [`EntityQuery`](entityquery.md).
 
-##### Conform to the Entityquery Protocol
+##### Resolve Entities By Identifier
 
-In order to allow Siri and Shortcuts to retrieve [`AppEntity`](appentity.md) instances, create a new type conforming to `EntityQuery`.
+In some scenarios, Apple Intelligence already knows exactly which entity the person is referring to, and needs to retrieve the actual entity instance given its unique identifier.
 
-##### Resolving Entities By Identifier
-
-In some scenarios, Siri or Shortcuts already knows exactly which entity the user is referring to, and needs to retrieve the actual entity instance given its unique identifier.
-
-To support this retrieval method, implement [`entities(for:)`](entityquery/entities(for:).md), which given an array of AppEntity identifiers, returns corresponding entity instances. The method should first lookup if said instance already exists in memory. If the instance doesn’t exist, then `perform` can make asynchronous calls to retrieve the entity (ex: from disk or from a remote back-end). If the entity corresponding to a supplied identifier is not available anymore, then it should be omitted from the returned array.
+To support this retrieval method, implement [`entities(for:)`](entityquery/entities(for:).md), which, given an array of [`AppEntity`](appentity.md) identifiers, returns corresponding entity instances. In your `entities(for:)` implementation, first look up whether the instance already exists in memory. If the instance doesn’t exist, make asynchronous calls — for example, retrieving from disk or a backend service. If the entity for a provided identifier is no longer available, omit it from the returned array.
 
 ```swift
 struct MyPhotoQuery: EntityQuery {
@@ -57,9 +53,17 @@ struct MyPhotoQuery: EntityQuery {
   The entity type that this query knows how to resolve.
 ### Suggesting entities
 - [func suggestedEntities() async throws -> Self.Result](entityquery/suggestedentities.md)
-  Returns the initial results shown when a list of options backed by this query is presented.
+  Returns the initial results to display when the system presents options backed by this query.
 ### Associated Types
 - [associatedtype Result = [Self.Entity]](entityquery/result.md)
+### Instance Methods
+- [func displayRepresentations(for: [Self.Entity.ID], requestedComponents: DisplayRepresentation.Components) async throws -> [Self.Entity.ID : DisplayRepresentation]](entityquery/displayrepresentations(for:requestedcomponents:).md)
+  Returns a list of display representation values by identifier based on the requested components.
+### Type Aliases
+- [EntityQuery.ExecutionTargets](entityquery/executiontargets.md)
+### Type Properties
+- [static var allowedExecutionTargets: IntentExecutionTargets](entityquery/allowedexecutiontargets.md)
+  A set of targets that can run this query.
 
 ## Relationships
 
@@ -72,12 +76,15 @@ struct MyPhotoQuery: EntityQuery {
 - [EntityPropertyQuery](entitypropertyquery.md)
 - [EntityStringQuery](entitystringquery.md)
 - [EnumerableEntityQuery](enumerableentityquery.md)
+- [IndexedEntityQuery](indexedentityquery.md)
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 ### Conforming Types
 - [UniqueAppEntityProvider](uniqueappentityprovider.md)
 
 ## See Also
 
+- [protocol IndexedEntityQuery](indexedentityquery.md)
+  An interface that adds Spotlight reindexing support to your entity query.
 - [protocol EnumerableEntityQuery](enumerableentityquery.md)
   An interface you use to provide a short list of entities that are relatively small in size.
 

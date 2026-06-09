@@ -56,8 +56,6 @@ You can also optionally augment the behavior of presenting and dismissing alert 
 
 ## See Also
 
-- [protocol UIAccelerometerDelegate](uiaccelerometerdelegate.md)
-  The interface for receiving acceleration-related data from the system.
 - [protocol UIActionSheetDelegate](uiactionsheetdelegate.md)
   The interface for the delegate of an action sheet object.
 - [protocol UIPopoverControllerDelegate](uipopovercontrollerdelegate.md)

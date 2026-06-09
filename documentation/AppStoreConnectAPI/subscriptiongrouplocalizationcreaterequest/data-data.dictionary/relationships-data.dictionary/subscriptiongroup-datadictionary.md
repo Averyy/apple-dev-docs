@@ -16,6 +16,7 @@ object SubscriptionGroupLocalizationCreateRequest.Data.Relationships.Subscriptio
 
 ### Objects
 - [object SubscriptionGroupLocalizationCreateRequest.Data.Relationships.SubscriptionGroup.Data](subscriptiongrouplocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription group localization.
 
 ## Properties
 

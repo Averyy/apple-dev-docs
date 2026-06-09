@@ -50,11 +50,16 @@ let parsedUSDollars = try? Double(formattedUSDollars, format: .currency(code: "U
   Creates a parse strategy instance using the specified floating-point currency format style.
 - [init<Value>(format: Format, lenient: Bool)](floatingpointparsestrategy/init(format:lenient:)-1nldg.md)
   Creates a parse strategy instance using the specified floating-point percentage format style.
+### Parsing strings
+- [func parse(String) throws -> Format.FormatInput](floatingpointparsestrategy/parse(_:).md)
+  Parses a floating-point string in accordance with this strategy and returns the parsed value.
 ### Accessing strategy properties
 - [var formatStyle: Format](floatingpointparsestrategy/formatstyle.md)
   The format style this strategy uses when parsing strings.
 - [var lenient: Bool](floatingpointparsestrategy/lenient.md)
   A Boolean value that indicates whether parsing allows any discrepencies in the expected format.
+### Default Implementations
+- [ParseStrategy Implementations](floatingpointparsestrategy/parsestrategy-implementations.md)
 
 ## Relationships
 

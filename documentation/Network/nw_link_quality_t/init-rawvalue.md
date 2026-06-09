@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init(rawValue: UInt32)
+init(rawValue: UInt8)
 ```
 
 

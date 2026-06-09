@@ -1,4 +1,4 @@
-# com.apple.developer.energykit
+# EnergyKit Entitlement
 
 **Framework**: Bundle Resources  
 **Kind**: typealias
@@ -21,6 +21,11 @@ The entitlement the system requires for an app to use the EnergyKit framework.
 This entitlement works with the [`EnergyKit`](https://developer.apple.com/documentation/EnergyKit) framework, which provides insights and suggestions to manage home device electricity usage.
 
 To use EnergyKit, add this entitlement to your app by enabling the EnergyKit capability on your target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+
+## See Also
+
+- [EnergyKit LoadEvents Entitlement](entitlements/com.apple.developer.energykit.loadevents-experience.md)
+  An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 
 
 ---

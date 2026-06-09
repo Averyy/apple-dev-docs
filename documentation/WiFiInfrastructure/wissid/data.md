@@ -8,6 +8,7 @@ The raw binary data of the SSID as transmitted over-the-air.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

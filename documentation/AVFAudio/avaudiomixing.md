@@ -54,6 +54,8 @@ Source nodes maintain mixing settings when switching between different mixers. F
 - [AVAudio3DMixing](avaudio3dmixing.md)
 - [AVAudioStereoMixing](avaudiostereomixing.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Conforming Types
 - [AVAudioEnvironmentNode](avaudioenvironmentnode.md)
 - [AVAudioInputNode](avaudioinputnode.md)

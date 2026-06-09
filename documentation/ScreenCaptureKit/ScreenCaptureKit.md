@@ -75,6 +75,13 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
   A string representation of the error domain.
 - [struct SCStreamError](scstreamerror.md)
   An instance representing a ScreenCaptureKit framework error.
+### Classes
+- [class SCClipBufferingOutput](scclipbufferingoutput.md)
+- [class SCRecordingEditor](screcordingeditor.md)
+- [class SCVideoEffectOutput](scvideoeffectoutput.md)
+### Protocols
+- [protocol SCClipBufferingOutputDelegate](scclipbufferingoutputdelegate.md)
+- [protocol SCRecordingEditorDelegate](screcordingeditordelegate.md)
 
 
 ---

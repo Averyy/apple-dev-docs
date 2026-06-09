@@ -1,4 +1,4 @@
-# Send Notification of an Available Build
+# Send notification of an available build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

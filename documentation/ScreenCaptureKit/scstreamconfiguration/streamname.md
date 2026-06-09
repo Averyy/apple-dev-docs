@@ -6,7 +6,7 @@
 A name that you provide for identifying the stream.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- Mac Catalyst 18.2+
 - macOS 14.0+
 
 ## Declaration

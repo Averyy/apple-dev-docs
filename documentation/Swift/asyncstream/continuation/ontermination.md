@@ -26,6 +26,8 @@ If an `onTermination` callback is set, using task cancellation to terminate iter
 
 Canceling an active iteration invokes the `onTermination` callback first, then resumes by yielding `nil`. This means that you can perform needed cleanup in the cancellation handler. After reaching a terminal state as a result of cancellation, the `AsyncStream` sets the callback to `nil`.
 
+> **Note**: Because the system might call the `onTermination` callback as part of task cancellation, it’s subject to the same considerations for avoiding deadlock as outlined in the documentation for [`withTaskCancellationHandler(operation:onCancel:)`](withtaskcancellationhandler(operation:oncancel:).md).
+
 ## See Also
 
 - [AsyncStream.Continuation.Termination](asyncstream/continuation/termination.md)

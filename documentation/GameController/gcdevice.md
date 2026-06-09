@@ -46,6 +46,7 @@ This protocol provides common properties for game controllers, and mouse and key
 - [GCKeyboard](gckeyboard.md)
 - [GCMouse](gcmouse.md)
 - [GCRacingWheel](gcracingwheel.md)
+- [GCSpatialAccessory](gcspatialaccessory.md)
 - [GCStylus](gcstylus.md)
 
 ## See Also

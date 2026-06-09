@@ -24,6 +24,8 @@ Use this identifier to restore connection state if your transport extension need
 
 - [var transport: AccessoryTransport?](accessorytransportsession/transport.md)
   A transport method that the session uses to communicate with the accessory.
+- [var pushToken: Data?](accessorytransportsession/pushtoken.md)
+  A token that identifies the iOS device to the Apple Push Notification service for routing accessory responses over the internet.
 
 
 ---

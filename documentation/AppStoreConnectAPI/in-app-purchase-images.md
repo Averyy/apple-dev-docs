@@ -12,22 +12,22 @@ Create, modify, and delete promotion images for your in-app purchases.
 - [Read In-App Purchase Image Information](get-v1-inapppurchaseimages-_id_.md)
   Read details about a specific in-app purchase image.
 - [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
-  List all images for a specific in-app purchase.
-- [Read In-App Purchase Image Information](patch-v1-inapppurchaseimages-_id_.md)
-  Read details about a specific in-app purchase image.
+  The data structure that represents a get-v2-in-app purchases-{id}-images resource.
+- [Commit an image for an in-app purchase](patch-v1-inapppurchaseimages-_id_.md)
+  Commit an uploaded image asset for an in-app purchase.
 - [Delete an In-App Purchase Image](delete-v1-inapppurchaseimages-_id_.md)
   Delete the image asset that appears on the App Store listing that represents an in-app purchase.
 ### Objects
 - [object InAppPurchaseImage](inapppurchaseimage.md)
-  The data structure that represents a in-app purchase image resource.
+  A screenshot or image associated with an in-app purchase or subscription, displayed on the App Store product page.
 - [object InAppPurchaseImageCreateRequest](inapppurchaseimagecreaterequest.md)
-  The request body you use to create a in-app purchase purchase image reservation.
+  The request body you use to create an in-app purchase image reservation.
 - [object InAppPurchaseImageResponse](inapppurchaseimageresponse.md)
-  A response that contains a single in-app purchase images resource.
+  A response containing a single image for an in-app purchase.
 - [object InAppPurchaseImageUpdateRequest](inapppurchaseimageupdaterequest.md)
-  The data structure that represents a in-app purchase image resource.
+  The request body for updating the upload state or file content of an in-app purchase image.
 - [object InAppPurchaseImagesResponse](inapppurchaseimagesresponse.md)
-  A response that contains a list of in-app purchase image resources.
+  A response containing a list of images for an in-app purchase.
 
 ## See Also
 

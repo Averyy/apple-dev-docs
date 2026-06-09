@@ -24,6 +24,8 @@ var calendar: Calendar
 
 - [func timeZone(Date.IntervalFormatStyle.Symbol.TimeZone) -> Date.IntervalFormatStyle](date/intervalformatstyle/timezone(_:).md)
   Modifies the date interval format style to use the specified time zone format.
+- [func locale(Locale) -> Date.IntervalFormatStyle](date/intervalformatstyle/locale(_:).md)
+  Modifies the date interval format style to use the specified locale.
 - [var locale: Locale](date/intervalformatstyle/locale.md)
   The locale for formatting the date and time interval components.
 - [var timeZone: TimeZone](date/intervalformatstyle/timezone.md)

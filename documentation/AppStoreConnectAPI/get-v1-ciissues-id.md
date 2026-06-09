@@ -1,4 +1,4 @@
-# Read Xcode Cloud Issue Information
+# Read xcode cloud issue information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

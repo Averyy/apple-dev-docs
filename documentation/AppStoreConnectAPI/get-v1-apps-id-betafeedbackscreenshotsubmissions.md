@@ -14,19 +14,19 @@ Get beta feedback screenshot submissions for a specific app.
 
 ## Parameters
 
-- `fields[betaFeedbackScreenshotSubmissions]` ([string])
-- `fields[betaTesters]` ([string])
-- `fields[builds]` ([string])
-- `filter[appPlatform]` ([string])
-- `filter[build.preReleaseVersion]` ([string])
-- `filter[build]` ([string])
-- `filter[deviceModel]` ([string])
-- `filter[devicePlatform]` ([string])
-- `filter[osVersion]` ([string])
-- `filter[tester]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `sort` ([string])
+- `fields[betaFeedbackScreenshotSubmissions]` ([string]): Additional fields to include for each beta feedback screenshot submission resource returned by the response.
+- `fields[betaTesters]` ([string]): Additional fields to include for each beta tester resource returned by the response.
+- `fields[builds]` ([string]): Additional fields to include for each build resource returned by the response.
+- `filter[appPlatform]` ([string]): Filter the returned beta feedback screenshot submissions by app platform.
+- `filter[build.preReleaseVersion]` ([string]): Filter the returned beta feedback screenshot submissions by build pre-release version.
+- `filter[build]` ([string]): Filter the returned beta feedback screenshot submissions by build.
+- `filter[deviceModel]` ([string]): Filter the returned beta feedback screenshot submissions by device model.
+- `filter[devicePlatform]` ([string]): Filter the returned beta feedback screenshot submissions by device platform.
+- `filter[osVersion]` ([string]): Filter the returned beta feedback screenshot submissions by OS version.
+- `filter[tester]` ([string]): Filter the returned beta feedback screenshot submissions by tester.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of beta feedback screenshot submission resources to return.
+- `sort` ([string]): Attributes by which to sort.
 
 ## See Also
 

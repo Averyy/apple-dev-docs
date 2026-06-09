@@ -31,7 +31,7 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
 ### Essentials
 - [Using Automatic Developer Token Generation for Apple Music API](using-automatic-token-generation-for-apple-music-api.md)
   Enable your app’s integration with the MusicKit App Service in the developer portal.
-- [Using MusicKit to Integrate with Apple Music](using_musickit_to_integrate_with_apple_music.md)
+- [Using MusicKit to integrate with Apple Music](using-musickit-to-integrate-with-apple-music.md)
   Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 - [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
   A message that tells people why the app is requesting access to their media library.
@@ -162,6 +162,9 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
   A partially type-erased identifier for a music item property from a concrete root type to any resulting value type.
 - [class AnyMusicProperty](anymusicproperty.md)
   A type-erased identifier for a music item property, from any root type to any resulting value type.
+### Articles
+- [Integrating MusicKit into your app](integrating-musickit-into-your-app.md)
+  Enhance your workouts with Apple Music playback.
 ### Classes
 - [class MusicLibrary](musiclibrary.md)
   An object your app uses to access the user’s music library.
@@ -220,6 +223,8 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
   A protocol for music items that your app can add to a playlist.
 - [protocol MusicRecentlyPlayedRequestable](musicrecentlyplayedrequestable.md)
   A protocol for music items that your app can fetch by using a recently played request.
+- [protocol PickableMusicItem](pickablemusicitem.md)
+  A protocol for the MusicKit item type that can be selected in the music picker.
 ### Structures
 - [struct MusicCatalogChart](musiccatalogchart.md)
   An object that contains popular items in the Apple Music catalog.

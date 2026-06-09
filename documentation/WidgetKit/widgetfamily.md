@@ -75,7 +75,6 @@ Use the [`WidgetFamily`](widgetfamily.md) value to return the appropriate conten
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)

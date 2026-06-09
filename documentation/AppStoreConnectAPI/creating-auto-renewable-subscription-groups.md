@@ -22,7 +22,7 @@ For the full list of App Store Connect user roles, see [`UserRole`](userrole.md)
 
 ##### Plan Your Subscription Offerings
 
-Before you get started with creating your subscription, first identify which app to include this subscription in. To get the Apple ID of the app, use `GET /v1/apps` ([`List Apps`](get-v1-apps.md)) and search the resulting pages for the name of the app you want to use. In the response, make note of the `id` of that app, which appears in the following format:
+Before you get started with creating your subscription, first identify which app to include this subscription in. To get the Apple ID of the app, use `GET /v1/apps` ([`List apps`](get-v1-apps.md)) and search the resulting pages for the name of the app you want to use. In the response, make note of the `id` of that app, which appears in the following format:
 
 ```other
 {
@@ -47,7 +47,7 @@ To arrange your subscription groups, make sure to map out all your offerings cle
 
 ##### Create Your Subscription Group
 
-After you plan your subscription offerings, create a subscription group, which is the container for your subscriptions. You can create your subscription group by using `POST /v1/subscriptionGroups` ([`Create a Subscription Group`](post-v1-subscriptiongroups.md)) with a payload.
+After you plan your subscription offerings, create a subscription group, which is the container for your subscriptions. You can create your subscription group by using `POST /v1/subscriptionGroups` ([`Create a subscription group`](post-v1-subscriptiongroups.md)) with a payload.
 
 Here’s an example payload:
 
@@ -90,7 +90,7 @@ The response contains an `id` field in the primary `data` object. You need this 
 
 Your localized subscription group name shows up in your app when a user goes through the process of reviewing or purchasing your auto-renewable subscription. To add a localization to your subscription group, you need the `id` of the subscription group from the previous step.
 
-Use `POST /v1/subscriptionGroupLocalizations` ([`Create a Subscription Group Localization`](post-v1-subscriptiongrouplocalizations.md)) with a payload that specifies the localized name of the subscription group, the locale that you’re adding, and an optional custom app name. Depending on your app and subscriptions, you might need to add many localizations. If that’s the case, you can add many in one call to `/v1/subscriptionGroupLocalizations`.
+Use `POST /v1/subscriptionGroupLocalizations` ([`Create a subscription group localization`](post-v1-subscriptiongrouplocalizations.md)) with a payload that specifies the localized name of the subscription group, the locale that you’re adding, and an optional custom app name. Depending on your app and subscriptions, you might need to add many localizations. If that’s the case, you can add many in one call to `/v1/subscriptionGroupLocalizations`.
 
 Here’s an example payload:
 

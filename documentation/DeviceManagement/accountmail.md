@@ -11,8 +11,6 @@ The declaration to configure a Mail account.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,8 +32,11 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 | Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
+
+This configuration sets up an IMAP email account with SMTP outgoing mail.
 
 ```json
 {
@@ -64,9 +65,9 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 
 ### Objects
 - [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)
-  The settings for configuring an incoming mail server.
+  The settings for the incoming mail server for this account.
 - [object AccountMailOutgoingServerObject](accountmailoutgoingserverobject.md)
-  The settings for configuring an outgoing mail server.
+  The settings for the outgoing mail server for this account.
 - [object AccountMailSMIMEObject](accountmailsmimeobject.md)
   Settings for S/MIME.
 
@@ -74,7 +75,7 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
 
 - `IncomingServer` (AccountMailIncomingServerObject) *(required)*: The settings for the incoming mail server for this account.
 - `OutgoingServer` (AccountMailOutgoingServerObject) *(required)*: The settings for the outgoing mail server for this account.
-- `SMIME` (AccountMailSMIMEObject): Settings for S/MIME.
+- `SMIME` (AccountMailSMIMEObject): Settings for S/MIME. Available: iOS 17+ | iPadOS 17+ | visionOS 1.1+
 - `UserIdentityAssetReference` (string): The identifier of an asset declaration that contains the user identity for this account. Set the corresponding asset type to `UserIdentity`.
 - `VisibleName` (string): The name that apps show to the user for this mail account. If not present, the system generates a suitable default.
 
@@ -94,22 +95,22 @@ Specify `com.apple.configuration.account.mail` as the declaration type.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
 - [object KeyboardSettings](keyboardsettings.md)
   The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
-- [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
-  The declaration to configure status subscriptions.
 
 
 ---

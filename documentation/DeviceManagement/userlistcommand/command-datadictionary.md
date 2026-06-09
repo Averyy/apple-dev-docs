@@ -10,8 +10,6 @@ The command to get a list of users with active accounts on a device.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

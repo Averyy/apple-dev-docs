@@ -22,11 +22,6 @@ init(target: ClosedRange<Measurement<UnitPower>>)
 
 - `target`: A closed range of measurement values using power units.
 
-## See Also
-
-- [static func power(ClosedRange<Double>, unit: UnitPower) -> Self](powerrangealert/power(_:unit:).md)
-  Returns a new power alert for the target range.
-
 
 ---
 

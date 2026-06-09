@@ -18,7 +18,7 @@ A radial gradient that draws an ellipse.
 
 ```swift
 @frozen
-struct EllipticalGradient
+nonisolated struct EllipticalGradient
 ```
 
 #### Overview

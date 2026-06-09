@@ -8,7 +8,7 @@ Creates an accessory setup payload instance that includes an ownership token.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst 13.1+
 - visionOS 1.0+
 
 ## Declaration

@@ -30,8 +30,8 @@ List all the alternative distribution domains for your account.
 
 ## Parameters
 
-- `fields[alternativeDistributionDomains]` ([string])
-- `limit` (integer)
+- `fields[alternativeDistributionDomains]` ([string]): Additional fields to include for each alternative distribution domains resource returned by the response.
+- `limit` (integer): The maximum number of alternative distribution domains resources to return.
 
 ## See Also
 

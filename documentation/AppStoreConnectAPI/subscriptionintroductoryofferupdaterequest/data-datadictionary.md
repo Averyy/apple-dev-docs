@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a subscription introductory offer update request.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object SubscriptionIntroductoryOfferUpdateRequest.Data
 
 ### Objects
 - [object SubscriptionIntroductoryOfferUpdateRequest.Data.Attributes](subscriptionintroductoryofferupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a subscription introductory offer update request resource.
 
 ## Properties
 

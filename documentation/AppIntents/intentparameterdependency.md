@@ -78,12 +78,18 @@ struct SoupQuery: EntityStringQuery {
 
 ## See Also
 
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
 - [class IntentParameter](intentparameter.md)
   A property wrapper that indicates the associated property is an input argument of the app intent.
 - [struct IntentParameterContext](intentparametercontext.md)
   A type that provides information about an associated parameter during value resolution.
 - [enum InputConnectionBehavior](inputconnectionbehavior.md)
   Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
+- [protocol DynamicOptionsProvider](dynamicoptionsprovider.md)
+  An interface for providing a dynamic list of options for a parameter of your app intent.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
 
 ---

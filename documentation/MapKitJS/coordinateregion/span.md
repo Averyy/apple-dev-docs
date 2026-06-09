@@ -11,7 +11,8 @@ The horizontal and vertical span representing the amount of map to display.
 ## Declaration
 
 ```swift
-span: CoordinateSpan;
+get span(): CoordinateSpan;
+set span(span: CoordinateSpanData);
 ```
 
 #### Discussion

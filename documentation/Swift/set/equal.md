@@ -31,7 +31,7 @@ static func == (lhs: Set<Element>, rhs: Set<Element>) -> Bool
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](set/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](set/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func isSubset(of: Set<Element>) -> Bool](set/issubset(of:)-1d7pp.md)
   Returns a Boolean value that indicates whether this set is a subset of the given set.

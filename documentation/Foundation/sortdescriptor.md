@@ -25,6 +25,9 @@ struct SortDescriptor<Compared>
 ### Creating Sort Descriptors
 - [init?(NSSortDescriptor, comparing: Compared.Type)](sortdescriptor/init(_:comparing:).md)
   Creates a sort descriptor using a sort descriptor and a type that you specify.
+### Using Sort Descriptors
+- [func compare(Compared, Compared) -> ComparisonResult](sortdescriptor/compare(_:_:).md)
+  Provides the relative ordering of two elements.
 ### Inspecting Sort Descriptors
 - [var order: SortOrder](sortdescriptor/order.md)
   The sort order that the sort descriptor uses to compare.

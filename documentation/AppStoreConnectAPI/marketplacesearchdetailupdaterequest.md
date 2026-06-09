@@ -18,6 +18,7 @@ object MarketplaceSearchDetailUpdateRequest
 
 ### Objects
 - [object MarketplaceSearchDetailUpdateRequest.Data](marketplacesearchdetailupdaterequest/data-data.dictionary.md)
+  The request body you use to update a marketplace search detail update request.
 
 ## Properties
 
@@ -26,11 +27,11 @@ object MarketplaceSearchDetailUpdateRequest
 ## See Also
 
 - [object MarketplaceSearchDetail](marketplacesearchdetail.md)
-  The data structure that represents an alternative marketplace search detail resource.
+  The search configuration for an alternative marketplace, specifying how apps are indexed and surfaced in search.
 - [object MarketplaceSearchDetailCreateRequest](marketplacesearchdetailcreaterequest.md)
   The request body you use to create an alternative marketplace search detail.
 - [object MarketplaceSearchDetailResponse](marketplacesearchdetailresponse.md)
-  A response that contains a single alternative marketplace search detail resource.
+  A response containing the search configuration for a single alternative marketplace.
 - [object AppMarketplaceSearchDetailLinkageResponse](appmarketplacesearchdetaillinkageresponse.md)
 
 

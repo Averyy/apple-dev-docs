@@ -22,6 +22,8 @@ var timeZone: TimeZone
 
 ## See Also
 
+- [func locale(Locale) -> Date.FormatStyle](date/formatstyle/locale(_:).md)
+  Modifies the date format style to use the specified locale.
 - [var calendar: Calendar](date/formatstyle/calendar.md)
   The calendar to use when formatting the date.
 - [var capitalizationContext: FormatStyleCapitalizationContext](date/formatstyle/capitalizationcontext.md)

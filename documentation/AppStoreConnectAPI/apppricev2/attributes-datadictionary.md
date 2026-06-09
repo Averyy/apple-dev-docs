@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an app price v2 resource.
+
 **Availability**:
 - App Store Connect API 2.3+
 
@@ -21,6 +23,7 @@ object AppPriceV2.Attributes
 ## See Also
 
 - [object AppPriceV2.Relationships](apppricev2/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

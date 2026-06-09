@@ -20,7 +20,8 @@ The shared system typesetter. This typesetter is reentrant.
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSATSTypesetter](nsatstypesetter.md)
+  A concrete typesetter object that places glyphs during the text layout process.
 - [class func sharedSystemTypesetter(for: NSLayoutManager.TypesetterBehavior) -> Any](nstypesetter/sharedsystemtypesetter(for:).md)
   Returns a shared instance of a reentrant typesetter that implements typesetting with the specified behavior.
 

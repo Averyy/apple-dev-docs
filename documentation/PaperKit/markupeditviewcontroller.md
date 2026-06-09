@@ -22,19 +22,23 @@ A view controller that manages the interface for inserting content into a canvas
 
 - [Integrating PaperKit into your app](getting-started-with-paperkit.md)
 
+#### Overview
+
+Use `MarkupToolbarViewController` for macOS.
+
 ## Topics
 
-### Protocols
-- [MarkupEditViewController.Delegate](markupeditviewcontroller/delegate-swift.protocol.md)
-### Initializers
+### Creating a view controller
 - [init(supportedFeatureSet: FeatureSet, additionalActions: [UIMenuElement])](markupeditviewcontroller/init(supportedfeatureset:additionalactions:).md)
   Creates a markup edit view controller.
-### Instance Properties
-- [var delegate: (any MarkupEditViewController.Delegate)?](markupeditviewcontroller/delegate-swift.property.md)
-  The delegate for responding to user actions.
+### Configuring the view controller
 - [let supportedFeatureSet: FeatureSet](markupeditviewcontroller/supportedfeatureset.md)
   The supported features of this edit UI.
-### Instance Methods
+- [var delegate: (any MarkupEditViewController.Delegate)?](markupeditviewcontroller/delegate-swift.property.md)
+  The delegate for responding to user actions.
+### Responding to changes
+- [MarkupEditViewController.Delegate](markupeditviewcontroller/delegate-swift.protocol.md)
+### Managing view lifecycle
 - [func viewDidLoad()](markupeditviewcontroller/viewdidload.md)
 
 ## Relationships
@@ -65,7 +69,7 @@ A view controller that manages the interface for inserting content into a canvas
 ## See Also
 
 - [class PaperMarkupViewController](papermarkupviewcontroller.md)
-  A view controller for interactively creating, and showing markup.
+  A view controller for interactively creating and showing markup.
 - [class MarkupToolbarViewController](markuptoolbarviewcontroller.md)
 
 

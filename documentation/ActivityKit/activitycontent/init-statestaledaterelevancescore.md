@@ -8,6 +8,7 @@ Creates the object that describes the state and configuration of a Live Activity
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

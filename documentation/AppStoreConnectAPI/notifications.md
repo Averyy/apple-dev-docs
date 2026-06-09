@@ -33,13 +33,13 @@ To learn more about server-side processing of marketplace webhook notifications,
   Delete a specific marketplace notifcation endpoint URL.
 ### Objects
 - [object MarketplaceWebhook](marketplacewebhook.md)
-  The data structure that represents a marketplace webhook resource.
+  A webhook endpoint that receives event notifications from an alternative marketplace, such as app availability changes.
 - [object MarketplaceWebhookCreateRequest](marketplacewebhookcreaterequest.md)
   The request body you use to create a marketplace webhook url.
 - [object MarketplaceWebhookResponse](marketplacewebhookresponse.md)
-  A response that contains a single marketplace webhook resource.
+  A response containing a single marketplace webhook endpoint configuration.
 - [object MarketplaceWebhooksResponse](marketplacewebhooksresponse.md)
-  A response that contains a list of a marketplace webhook resources.
+  A response containing a list of webhook endpoints for an alternative marketplace.
 - [object MarketplaceWebhookUpdateRequest](marketplacewebhookupdaterequest.md)
   The request body you use to update a marketplace webhook url.
 

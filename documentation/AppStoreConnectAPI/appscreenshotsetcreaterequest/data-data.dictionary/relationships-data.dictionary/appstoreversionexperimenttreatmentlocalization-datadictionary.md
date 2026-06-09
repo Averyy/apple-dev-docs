@@ -16,6 +16,7 @@ object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimen
 
 ### Objects
 - [object AppScreenshotSetCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](appscreenshotsetcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app screenshot set.
 
 ## Properties
 

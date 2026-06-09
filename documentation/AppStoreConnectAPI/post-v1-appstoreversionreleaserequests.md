@@ -1,4 +1,4 @@
-# Manually Release an App Store Approved Version of Your App
+# Manually release an app store approved version of your app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

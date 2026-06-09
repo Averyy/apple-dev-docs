@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init<E>(initializingWith initializer: (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
+init<E>(initializingWith initializer: @_lifetime(0: copy 0) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
 

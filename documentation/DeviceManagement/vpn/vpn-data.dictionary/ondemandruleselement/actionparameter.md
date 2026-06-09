@@ -12,8 +12,6 @@ Dictionary containing parameters for action settings
 - macOS 10.7+
 - tvOS 17.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

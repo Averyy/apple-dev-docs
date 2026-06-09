@@ -3,7 +3,7 @@
 **Framework**: PencilKit  
 **Kind**: property
 
-The threshold for clipping the stroke rendering.
+The alpha threshold for clipping the stroke rendering for supported inks.
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +20,7 @@ var threshold: CGFloat { get }
 
 #### Discussion
 
-When rendering only pixels with an alpha greater than the threshold are drawn. A threshold of 0 has no affect on rendering, a threshold of 1 does not draw anything. Thresholds are only used for some inks, eg. `PKInkIdentifierReed`.
+Only pixels with an alpha greater than the threshold are drawn. A threshold of `0` has no effect on rendering; a threshold of `1` draws nothing. Thresholds apply only to some inks, such as `PKInkIdentifierReed`.
 
 
 ---

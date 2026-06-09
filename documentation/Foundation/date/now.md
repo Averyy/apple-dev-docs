@@ -6,17 +6,18 @@
 Returns a date instance that represents the current date and time, at the moment of access.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- macOS 10.10+
+- tvOS 9.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 2.0+
 
 ## Declaration
 
 ```swift
+@backDeployed(before: macOS 12, iOS 15, tvOS 15, watchOS 8)
 static var now: Date { get }
 ```
 

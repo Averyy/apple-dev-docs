@@ -17,6 +17,7 @@ Applies an affine transform to this shape.
 ## Declaration
 
 ```swift
+nonisolated
 func transform(_ transform: CGAffineTransform) -> TransformedShape<Self>
 ```
 

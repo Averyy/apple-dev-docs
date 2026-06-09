@@ -41,7 +41,7 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
 
 ## Topics
 
-### Configuring Queries
+### Configuring queries
 - [var searchScopes: [Any]](nsmetadataquery/searchscopes.md)
   An array containing the search scopes.
 - [var predicate: NSPredicate?](nsmetadataquery/predicate.md)
@@ -58,7 +58,7 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
   The query’s delegate.
 - [var searchItems: [Any]?](nsmetadataquery/searchitems.md)
   An array of objects that define the query’s scope.
-### Running Queries
+### Running queries
 - [var isStarted: Bool](nsmetadataquery/isstarted.md)
   A Boolean value that indicates whether the query has started. (read-only)
 - [func start() -> Bool](nsmetadataquery/start.md)
@@ -69,7 +69,7 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
   A Boolean value that indicates whether the query has stopped.
 - [func stop()](nsmetadataquery/stop.md)
   Stops the receiver’s current query from gathering any further results.
-### Getting Query Results
+### Getting query results
 - [var results: [Any]](nsmetadataquery/results.md)
   An array containing the query’s results.
 - [var resultCount: Int](nsmetadataquery/resultcount.md)
@@ -98,14 +98,7 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
   Disables updates to the query results.
 - [var operationQueue: OperationQueue?](nsmetadataquery/operationqueue.md)
   The queue on which query result notifications are posted.
-### Constants
-- [Metadata Query Search Scopes](metadata-query-search-scopes.md)
-  Constants for the predefined search scopes used by [`searchScopes`](nsmetadataquery/searchscopes.md).
-- [Content Relevance](content-relevance.md)
-  In addition to including the requested metadata attributes, a query result also includes content relevance, accessed with the following key.
-- [Keys for Use with a Notification Info Dictionary](keys-for-use-with-a-notification-info-dictionary.md)
-  Constants for keys to retrieve the collection of changed items from a notification’s user info dictionary.
-### Notifications
+### Working with notifications
 - [static let NSMetadataQueryDidFinishGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidfinishgathering.md)
   Posted when the receiver has finished with the initial result-gathering phase of the query.
 - [static let NSMetadataQueryDidStartGathering: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerydidstartgathering.md)
@@ -114,9 +107,18 @@ You must set a predicate with the [`predicate`](nsmetadataquery/predicate.md) pr
   Posted when the receiver’s results have changed during the live-update phase of the query.
 - [static let NSMetadataQueryGatheringProgress: NSNotification.Name](nsnotification/name-swift.struct/nsmetadataquerygatheringprogress.md)
   Posted as the receiver is collecting results during the initial result-gathering phase of the query.
-### Structures
+### Working with notification messages
 - [NSMetadataQuery.DidFinishGatheringMessage](nsmetadataquery/didfinishgatheringmessage.md)
+  A message a metadata query sends when it finishes the initial result-gathering phase of the query.
 - [NSMetadataQuery.DidStartGatheringMessage](nsmetadataquery/didstartgatheringmessage.md)
+  A message a metadata query sends when it starts the initial result-gathering phase of the query.
+### Constants
+- [Metadata Query Search Scopes](metadata-query-search-scopes.md)
+  Constants for the predefined search scopes used by [`searchScopes`](nsmetadataquery/searchscopes.md).
+- [Content Relevance](content-relevance.md)
+  In addition to including the requested metadata attributes, a query result also includes content relevance, accessed with the following key.
+- [Keys for Use with a Notification Info Dictionary](keys-for-use-with-a-notification-info-dictionary.md)
+  Constants for keys to retrieve the collection of changed items from a notification’s user info dictionary.
 
 ## Relationships
 

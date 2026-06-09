@@ -26,7 +26,7 @@ object AppStoreVersionExperimentV2CreateRequest.Data.Relationships
 ## See Also
 
 - [object AppStoreVersionExperimentV2CreateRequest.Data.Attributes](appstoreversionexperimentv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an app store version experiment v2create request resource.
+  Attributes that describe an App Store version experiment create request resource.
 
 
 ---

@@ -44,6 +44,7 @@ Supports rank up to [`MTL_TENSOR_MAX_RANK`](mtl_tensor_max_rank.md).
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also

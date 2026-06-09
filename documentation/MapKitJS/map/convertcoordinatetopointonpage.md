@@ -11,7 +11,7 @@ Converts a coordinate on the map to a point in the page’s coordinate system.
 ## Declaration
 
 ```swift
-convertCoordinateToPointOnPage(coordinate: Coordinate): DOMPoint;
+convertCoordinateToPointOnPage(coordinate: CoordinateData): DOMPoint;
 ```
 
 #### Return Value

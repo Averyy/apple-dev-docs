@@ -15,8 +15,8 @@ Creates an instance that accepts values of the specified type.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init<T>(payloadType: T.Type, onPaste: @escaping ([T]) -> Void) where T : Transferable
+nonisolated
+init<T>(payloadType: T.Type, onPaste: @escaping ([T]) -> Void) where T : Transferable
 ```
 
 ## Parameters

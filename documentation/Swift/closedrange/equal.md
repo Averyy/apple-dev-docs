@@ -39,7 +39,7 @@ print(x == 10...20)
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](closedrange/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func overlaps(Range<Bound>) -> Bool](closedrange/overlaps(_:)-947dt.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.

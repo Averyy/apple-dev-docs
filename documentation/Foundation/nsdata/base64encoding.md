@@ -6,6 +6,9 @@
 Initializes a Base64 encoded string from the string.
 
 **Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 4.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

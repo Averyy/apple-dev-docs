@@ -223,6 +223,15 @@ Although not part of the Accelerate framework, the following libraries are close
   Approximate the definite integral of a function over a finite or infinite interval.
 ### Macros
 - [Macros](macros.md)
+### Functions
+- [func clarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](clarf1f_(_:_:_:_:_:_:_:_:_:).md)
+- [func clarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](clarf1l_(_:_:_:_:_:_:_:_:_:).md)
+- [func dlarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, UnsafePointer<Double>?, UnsafePointer<__LAPACK_int>, UnsafePointer<Double>, UnsafeMutablePointer<Double>?, UnsafePointer<__LAPACK_int>, UnsafeMutablePointer<Double>?)](dlarf1f_(_:_:_:_:_:_:_:_:_:).md)
+- [func dlarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, UnsafePointer<Double>?, UnsafePointer<__LAPACK_int>, UnsafePointer<Double>, UnsafeMutablePointer<Double>?, UnsafePointer<__LAPACK_int>, UnsafeMutablePointer<Double>?)](dlarf1l_(_:_:_:_:_:_:_:_:_:).md)
+- [func slarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>, UnsafeMutablePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafeMutablePointer<Float>?)](slarf1f_(_:_:_:_:_:_:_:_:_:).md)
+- [func slarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafePointer<Float>, UnsafeMutablePointer<Float>?, UnsafePointer<__LAPACK_int>, UnsafeMutablePointer<Float>?)](slarf1l_(_:_:_:_:_:_:_:_:_:).md)
+- [func zlarf1f_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](zlarf1f_(_:_:_:_:_:_:_:_:_:).md)
+- [func zlarf1l_(UnsafePointer<CChar>, UnsafePointer<__LAPACK_int>, UnsafePointer<__LAPACK_int>, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer, OpaquePointer?, UnsafePointer<__LAPACK_int>, OpaquePointer?)](zlarf1l_(_:_:_:_:_:_:_:_:_:).md)
 
 
 ---

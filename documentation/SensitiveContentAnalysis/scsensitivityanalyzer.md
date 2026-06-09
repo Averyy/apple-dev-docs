@@ -1,6 +1,6 @@
 # SCSensitivityAnalyzer
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: class
 
 An object that analyzes media for sensitive content.
@@ -20,12 +20,12 @@ class SCSensitivityAnalyzer
 
 ## Mentions
 
-- [Detecting nudity in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
 - [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
 
 #### Overview
 
-To check an image for nudity, call one of this class’s `analyzeImage` methods and pass in a user-provided image, or a URL to the image.
+To check an image for sensitive content, call one of this class’s `analyzeImage` methods and pass in a user-provided image, or a URL to the image.
 
 ```swift
 // Analyze an image file at a particular URL.
@@ -39,7 +39,7 @@ let handler = analyzer.videoAnalysis(forFileAt: videoFileUrl)
 let response = try await handler.hasSensitiveContent()
 ```
 
-This class successfully detects nudity only when [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
+This class successfully detects sensitive content only when [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
 
 > **Note**:  To analyze a video stream rather than static files, see [`SCVideoStreamAnalyzer`](scvideostreamanalyzer.md).
 
@@ -48,7 +48,7 @@ This class successfully detects nudity only when [`analysisPolicy`](scsensitivit
 ### Creating a sensitivity analyzer
 - [init()](scsensitivityanalyzer/init.md)
   Creates a sensitivity analyzer.
-### Determining a nudity detection strategy
+### Determining a detection strategy
 - [var analysisPolicy: SCSensitivityAnalysisPolicy](scsensitivityanalyzer/analysispolicy.md)
   A property that determines if the app detects nudity and how the app responds.
 ### Analyzing images

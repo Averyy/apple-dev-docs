@@ -18,7 +18,7 @@ A type-erased view.
 
 ```swift
 @frozen
-struct AnyView
+nonisolated struct AnyView
 ```
 
 #### Overview

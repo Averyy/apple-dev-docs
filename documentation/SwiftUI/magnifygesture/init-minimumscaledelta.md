@@ -15,6 +15,7 @@ Creates a magnify gesture with a given minimum delta for the gesture to start.
 ## Declaration
 
 ```swift
+nonisolated
 init(minimumScaleDelta: CGFloat = 0.01)
 ```
 
@@ -24,6 +25,8 @@ init(minimumScaleDelta: CGFloat = 0.01)
 
 ## See Also
 
+- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](magnifygesture/init(minimumscaledelta:inputkinds:).md)
+  Creates a magnify gesture with a given minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 - [var minimumScaleDelta: CGFloat](magnifygesture/minimumscaledelta.md)
   The minimum required delta before the gesture starts.
 

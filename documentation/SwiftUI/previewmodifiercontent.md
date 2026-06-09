@@ -17,6 +17,7 @@ The type-erased content of a preview.
 ## Declaration
 
 ```swift
+nonisolated
 struct PreviewModifierContent
 ```
 

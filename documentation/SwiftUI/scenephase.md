@@ -26,7 +26,7 @@ enum ScenePhase
 
 #### Overview
 
-The system moves your app’s [`Scene`](scene.md) instances through phases that reflect a scene’s operational state. You can trigger actions when the phase changes. Read the current phase by observing the [`scenePhase`](environmentvalues/scenephase.md) value in the [`Environment`](environment.md):
+The system moves your app’s [`Scene`](scene.md) instances through phases that reflect a scene’s operational state. A scene’s operational state can vary depending on what platform it’s on and whether it’s in the foreground, minimized, in the app switcher, or in the background. You can perform actions when the phase changes. Read the current phase by observing the [`scenePhase`](environmentvalues/scenephase.md) value in the [`Environment`](environment.md):
 
 ```swift
 @Environment(\.scenePhase) private var scenePhase
@@ -83,7 +83,6 @@ struct MyApp: App {
 
 ### Conforms To
 - [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

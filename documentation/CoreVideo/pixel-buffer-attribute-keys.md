@@ -59,6 +59,7 @@ To create an attributes dictionary that’s compatible for multiple clients, pas
   A key to a Boolean value that indicates whether OpenGL performs format conversions of the texture-cache data in a shader.
 - [let kCVPixelBufferOpenGLESTextureCacheCompatibilityKey: CFString](kcvpixelbufferopenglestexturecachecompatibilitykey.md)
   A key to a Boolean value that indicates whether OpenGL ES performs format conversions of the texture-cache data in a shader.
+- [let kCVPixelBufferIOSurfacePurgeableKey: CFString](kcvpixelbufferiosurfacepurgeablekey.md)
 
 
 ---

@@ -8,6 +8,7 @@ Includes only paired devices matching the provided live filter predicate.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

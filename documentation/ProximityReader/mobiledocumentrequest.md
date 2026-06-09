@@ -9,7 +9,6 @@ A type that represents a mobile document request.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -59,9 +58,15 @@ protocol MobileDocumentRequest : Hashable, Sendable
 ### Type Methods
 - [static func displayDocument([MobileDocumentDisplayRequest.Element], options: MobileDocumentDisplayRequest.Options) -> Self](mobiledocumentrequest/displaydocument(_:options:).md)
   A request that displays document elements onscreen.
+- [static func driversLicenseRawData(retaining: [MobileDriversLicenseRawDataRequest.Element], notRetaining: [MobileDriversLicenseRawDataRequest.Element], issuerIdentifiers: [Data]) -> Self](mobiledocumentrequest/driverslicenserawdata(retaining:notretaining:issueridentifiers:).md)
+  A request which retrieves mobile driver’s license elements from the holder and returns the raw response data for processing.
+- [static func nationalIDCardRawData(region: Locale.Region, retaining: [MobileNationalIDCardRawDataRequest.Element], notRetaining: [MobileNationalIDCardRawDataRequest.Element], issuerIdentifiers: [Data]) -> Self](mobiledocumentrequest/nationalidcardrawdata(region:retaining:notretaining:issueridentifiers:).md)
+  A request which retrieves mobile national ID card elements from the holder and returns the raw response data for processing.
 - [static func photoIDData(retaining: [MobilePhotoIDDataRequest.Element], notRetaining: [MobilePhotoIDDataRequest.Element]) -> Self](mobiledocumentrequest/photoiddata(retaining:notretaining:).md)
   A request which retrieves elements from the holder and returns the validated document elements.
 - [static func photoIDRawData(retaining: [MobilePhotoIDRawDataRequest.Element], notRetaining: [MobilePhotoIDRawDataRequest.Element]) -> Self](mobiledocumentrequest/photoidrawdata(retaining:notretaining:).md)
+  A request which retrieves photo ID elements from the holder and returns the raw response data for processing.
+- [static func photoIDRawData(retaining: [MobilePhotoIDRawDataRequest.Element], notRetaining: [MobilePhotoIDRawDataRequest.Element], issuerIdentifiers: [Data]) -> Self](mobiledocumentrequest/photoidrawdata(retaining:notretaining:issueridentifiers:).md)
   A request which retrieves photo ID elements from the holder and returns the raw response data for processing.
 
 ## Relationships

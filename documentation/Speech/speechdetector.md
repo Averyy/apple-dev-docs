@@ -56,6 +56,8 @@ try await analyzer.setModules([transcriber, speechDetector])
 - [SpeechDetector.SensitivityLevel](speechdetector/sensitivitylevel.md)
   Determines how “aggressive” the voice activity detection (VAD) model will be.
 ### Getting results
+- [var results: some Sendable & AsyncSequence<SpeechDetector.Result, any Error>](speechdetector/results.md)
+  The asynchronous sequence of speech detection results.
 - [SpeechDetector.Result](speechdetector/result.md)
   A result from the speech detector. Please note, these must be enabled via [`init(detectionOptions:reportResults:)`](speechdetector/init(detectionoptions:reportresults:).md) and currently only support error handling from the VAD model.
 

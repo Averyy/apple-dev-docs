@@ -1,4 +1,4 @@
-# Read Beta App Review Submission Information
+# Read beta app review submission information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,7 +20,7 @@ Get a specific beta app review submission.
 
 ## See Also
 
-- [List Beta App Review Submissions](get-v1-betaappreviewsubmissions.md)
+- [List beta app review submissions](get-v1-betaappreviewsubmissions.md)
   Find and list beta app review submissions for all builds.
 
 

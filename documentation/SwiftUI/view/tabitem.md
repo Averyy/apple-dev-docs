@@ -18,7 +18,7 @@ Sets the tab bar item associated with this view.
 
 ```swift
 nonisolated
-func tabItem<V>(@ViewBuilder _ label: () -> V) -> some View where V : View
+func tabItem<V>(@ContentBuilder _ label: () -> V) -> some View where V : View
 ```
 
 #### Discussion

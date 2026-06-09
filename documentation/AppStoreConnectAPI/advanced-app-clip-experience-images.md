@@ -11,17 +11,17 @@ The `appClipAdvancedExperienceImages` resource represents an image asset that ap
 ## Topics
 
 ### Managing Images for Advanced App Clip Experiences
-- [Read Image Information for an Advanced App Clip Experience](get-v1-appclipadvancedexperienceimages-_id_.md)
+- [Read image information for an advanced app clip experience](get-v1-appclipadvancedexperienceimages-_id_.md)
   Get information about the image that appears on the App Clip card of an advanced App Clip experience.
-- [Create an App Clip Card Image for an Advanced App Clip Experience](post-v1-appclipadvancedexperienceimages.md)
+- [Create an app clip card image for an advanced app clip experience](post-v1-appclipadvancedexperienceimages.md)
   Reserve an image asset that appears on the App Clip card of an advanced App Clip experience.
-- [Modify the Image for an Advanced App Clip Experience](patch-v1-appclipadvancedexperienceimages-_id_.md)
+- [Modify the image for an advanced app clip experience](patch-v1-appclipadvancedexperienceimages-_id_.md)
   Update image information or commit the image asset of an advanced App Clip experience.
 ### Objects
 - [object AppClipAdvancedExperienceImage](appclipadvancedexperienceimage.md)
-  The data structure that represents an image that appears on the App Clip card for an advanced App Clip experience.
+  The image displayed on the App Clip card for an advanced App Clip experience, shown when a user scans an NFC tag, QR code, or location-based trigger.
 - [object AppClipAdvancedExperienceImageResponse](appclipadvancedexperienceimageresponse.md)
-  A response that contains a single Advanced App Clip Experience Images resource.
+  A response containing a single image for an App Clip advanced experience card.
 - [object AppClipAdvancedExperienceImageCreateRequest](appclipadvancedexperienceimagecreaterequest.md)
   The request body you use to reserve an image asset for an advanced App Clip experience.
 - [object AppClipAdvancedExperienceImageUpdateRequest](appclipadvancedexperienceimageupdaterequest.md)

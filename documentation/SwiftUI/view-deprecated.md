@@ -90,6 +90,8 @@ Avoid using deprecated modifiers in your app. Select a modifier to see the repla
 - [func cornerRadius(CGFloat, antialiased: Bool) -> some View](view/cornerradius(_:antialiased:).md)
   Clips this view to its bounding frame, with the specified corner radius.
 ### Input and events modifiers
+- [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](view/dropdestination(for:action:istargeted:).md)
+  Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 - [func onChange<V>(of: V, perform: (V) -> Void) -> some View](view/onchange(of:perform:).md)
   Adds an action to perform when the given value changes.
 - [func onTapGesture(count: Int, coordinateSpace: CoordinateSpace, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:perform:)-36x9h.md)
@@ -125,6 +127,16 @@ Avoid using deprecated modifiers in your app. Select a modifier to see the repla
 ### Tab modifiers
 - [func tabItem<V>(() -> V) -> some View](view/tabitem(_:).md)
   Sets the tab bar item associated with this view.
+### Generating image modifiers
+- [func imagePlaygroundPersonalizationPolicy(ImagePlaygroundPersonalizationPolicy) -> some View](view/imageplaygroundpersonalizationpolicy(_:).md)
+  Policy determining whether to support the usage of people in the playground or not.
+### Technology-specific modifiers
+- [func postToPhotosSharedAlbumSheet(isPresented:items:photoLibrary:defaultAlbumIdentifier:completion:)](view/posttophotossharedalbumsheet(ispresented:items:photolibrary:defaultalbumidentifier:completion:).md)
+  Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
+- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
+- [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View](view/subscriptionpromotionaloffer(offer:signature:).md)
+  Selects a promotional offer to apply to a purchase a customer makes from a subscription store view.
 
 
 ---

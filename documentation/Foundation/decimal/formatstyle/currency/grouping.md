@@ -32,6 +32,8 @@ A decimal currency format style modified to use the specified grouping.
 
 - [func decimalSeparator(strategy: Decimal.FormatStyle.Currency.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/decimalseparator(strategy:).md)
   Modifies the format style to use the specified decimal separator display strategy.
+- [func locale(Locale) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(Decimal.FormatStyle.Currency.Configuration.Precision) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/presentation(_:).md)

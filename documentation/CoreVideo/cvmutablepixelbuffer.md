@@ -32,6 +32,9 @@ struct CVMutablePixelBuffer
   Creates a CVPixelBuffer backed by the given `ioSurface`. The CVPixelBuffer will retain the `ioSurface`. **IMPORTANT** If you are using IOSurface to share CVPixelBuffers between processes and those CVPixelBuffers are allocated via a CVPixelBufferPool, it is important that the CVPixelBufferPool does not reuse CVPixelBuffers whose IOSurfaces are still in use in other processes. CoreVideo and IOSurface will take care of this for if you use IOSurfaceCreateMachPort and IOSurfaceLookupFromMachPort, but NOT if you pass IOSurfaceIDs.
 - [init(unsafeBuffer: sending CVPixelBuffer)](cvmutablepixelbuffer/init(unsafebuffer:).md)
   Initialize a mutable pixel buffer by transferring existing CVPixelBuffer value.
+### Instance Properties
+- [var attachments: CVMutablePixelBuffer.Attachments](cvmutablepixelbuffer/attachments.md)
+  Access attachments of this pixel buffer.
 ### Instance Methods
 - [func accessUnsafeMutableRawPlaneBytes<R>(([(properties: CVPixelBufferPlaneProperties, bytes: UnsafeMutableRawBufferPointer)]) throws -> sending R) rethrows -> sending R](cvmutablepixelbuffer/accessunsafemutablerawplanebytes(_:).md)
   Access the pixels in the planes contained within this buffer. The base address is locked for writing during the execution of the block.
@@ -45,8 +48,26 @@ struct CVMutablePixelBuffer
 - [CVBufferRepresentable](cvbufferrepresentable.md)
 - [CVImageBufferRepresentable](cvimagebufferrepresentable.md)
 - [CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
+- [Escapable](../Swift/Escapable.md)
+- [InferenceValue.MutableViewRepresentable](../CoreAI/InferenceValue/MutableViewRepresentable.md)
+- [InferenceValue.ViewRepresentable](../CoreAI/InferenceValue/ViewRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+  CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
+- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+  A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
+- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+  Attributes needed for creating a pixel buffer.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+  Metadata associated with ProRes RAW images.
 
 
 ---

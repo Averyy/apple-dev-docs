@@ -72,7 +72,7 @@ To help the system determine your widget’s relevance, donate app intents to pr
 
 For example, a tour guide app displays information for cities around the world, such as popular tourist attractions, restaurants, and upcoming festivals throughout the year. The app offers several configurable widgets that display these details. To offer configurable widgets, the app’s widget configurations make use of custom intents, such as `CityInfoAppIntent`, `AttractionAppIntent`, `RestaurantAppIntent`, and `FestivalAppIntent`. As people interact with the app, the app donates these app intents to inform Smart Rotate and Widget Suggestions in Smart Stacks.
 
-> **Note**: App intent donations inform much more than Smart Stacks. The system uses donated app intents to display Spotlight search results, offer shortcuts on the Lock Screen, and more. For more information about donating app intents, refer to [`Intent discovery`](https://developer.apple.com/documentation/AppIntents/intent-discovery).
+> **Note**: App intent donations inform much more than Smart Stacks. The system uses donated app intents to display Spotlight search results, offer shortcuts on the Lock Screen, and more. For more information about donating app intents, refer to doc://com.apple.documentation/documentation/appintents/intent-discovery.
 
 To enable Smart Stacks to suggest your widget or show it more prominently:
 

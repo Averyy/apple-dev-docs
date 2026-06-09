@@ -1,10 +1,10 @@
-# GET /v1/appClips/{id}/relationships/appClipAdvancedExperiences
+# List App Clip advanced experience IDs for an App Clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [List All Default App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
+- [List all default app clip experiences for an app clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
   Get all default App Clip experiences for an App Clip.
-- [List All Advanced App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
+- [List all advanced app clip experiences for an app clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
   Get all advanced App Clip experiences for an App Clip.
-- [GET /v1/appClips/{id}/relationships/appClipDefaultExperiences](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
+- [List default experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
 
 
 ---

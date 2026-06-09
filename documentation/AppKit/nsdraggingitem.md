@@ -57,7 +57,7 @@ When you call the [`NSDraggingSession`](nsdraggingsession.md) method [`beginDrag
 - [protocol NSDraggingSource](nsdraggingsource.md)
   A set of methods that are implemented by the source object in a dragging session.
 - [class NSDraggingSession](nsdraggingsession.md)
-  The encapsulation of a drag-and-drop action that supports modification of the drag while in progress.
+  An object that encapsulates a drag-and-drop action.
 - [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
   A single object in a dragging item.
 

@@ -11,8 +11,6 @@ An array of search settings dictionaries.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

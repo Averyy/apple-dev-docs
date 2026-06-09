@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+An iterator that produces the bytes of a file handle.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

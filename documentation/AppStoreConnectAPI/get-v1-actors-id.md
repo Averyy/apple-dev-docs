@@ -1,4 +1,4 @@
-# Read Actor Information
+# Read actor information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -48,11 +48,11 @@ https://api.appstoreconnect.apple.com/v1/actors/USER:2cd2a1ef-cb74-411c-a078-0eb
 
 ## Parameters
 
-- `fields[actors]` ([string])
+- `fields[actors]` ([string]): Additional fields to include for each actors resource returned by the response.
 
 ## See Also
 
-- [List All Actors](get-v1-actors.md)
+- [List all actors](get-v1-actors.md)
   Get a list of actors.
 
 

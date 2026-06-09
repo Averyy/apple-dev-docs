@@ -50,14 +50,14 @@ Get information about a specific Game Center achievement.
   Read information about the release for specific achievement.
 - [Read Release Information for an Achievement](get-v1-gamecenterachievements-_id_-releases.md)
   Read the state of an achievement release and related information.
-- [GET /v1/gameCenterAchievements/{id}/relationships/releases](get-v1-gamecenterachievements-_id_-relationships-releases.md)
+- [List release IDs for a Game Center achievement](get-v1-gamecenterachievements-_id_-relationships-releases.md)
 - [List Associated Group Achievement Information for an Achievement](get-v1-gamecenterachievements-_id_-groupachievement.md)
   Read information about the group for specific achievement.
 - [List Group Achievements for an Achievement](get-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   List associated group achievements for a specific achievement.
-- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List achievement releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
+- [List achievement release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 
 
 ---

@@ -12,13 +12,13 @@ Creates a new annotation given its location and initialization options.
 
 ```swift
 constructor(
-        location: Coordinate | Place | SearchAutocompleteResult,
-        factory: (
-            location?: Coordinate,
-            options?: AnnotationConstructorOptions,
-        ) => HTMLElement,
+    location: CoordinateData | Place | SearchAutocompleteResult,
+    factory: (
+        location?: Coordinate,
         options?: AnnotationConstructorOptions,
-    );
+    ) => HTMLElement,
+    options?: AnnotationConstructorOptions,
+);
 ```
 
 #### Return Value

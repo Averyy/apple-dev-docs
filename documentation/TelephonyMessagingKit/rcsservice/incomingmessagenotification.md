@@ -28,6 +28,8 @@ struct IncomingMessageNotification
   An array of suggestions associated with the message.
 - [RCSService.Business.Suggestion](rcsservice/business/suggestion.md)
   Enumeration representing a suggestion from a business.
+### Instance Properties
+- [let requestedDispositions: [RCSMessage.Disposition]](rcsservice/incomingmessagenotification/requesteddispositions.md)
 
 ## Relationships
 

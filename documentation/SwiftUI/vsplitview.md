@@ -11,6 +11,7 @@ A layout container that arranges its children in a vertical line and allows the 
 ## Declaration
 
 ```swift
+nonisolated
 struct VSplitView<Content> where Content : View
 ```
 

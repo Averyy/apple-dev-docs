@@ -7,8 +7,6 @@ The payload that configures Autonomous Single App mode.
 
 **Availability**:
 - macOS 10.13.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ The system only allows installation of one profile of this type, and it requires
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

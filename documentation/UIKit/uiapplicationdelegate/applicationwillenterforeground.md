@@ -18,6 +18,10 @@ Tells the delegate that the app is about to enter the foreground.
 optional func applicationWillEnterForeground(_ application: UIApplication)
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [`Scenes`](scenes.md)), UIKit will not call this method. Use [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md) instead to prepare your app to enter the foreground. UIKit posts a [`willEnterForegroundNotification`](uiapplication/willenterforegroundnotification.md) regardless of whether your app uses [`Scenes`](scenes.md).

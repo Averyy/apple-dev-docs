@@ -16,6 +16,7 @@ object GameCenterChallengeImageCreateRequest.Data.Relationships.Localization
 
 ### Dictionaries
 - [object GameCenterChallengeImageCreateRequest.Data.Relationships.Localization.Data](gamecenterchallengeimagecreaterequest/data-data.dictionary/relationships-data.dictionary/localization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center challenge image.
 
 ## Properties
 

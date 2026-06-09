@@ -33,8 +33,7 @@ You use this method to read fewer frames than the buffer’s `frameCapacity`.
 
 - [func read(into: AVAudioPCMBuffer) throws](avaudiofile/read(into:).md)
   Reads an entire audio buffer.
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:).md)
-  Writes an audio buffer sequentially.
+- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
 - [func close()](avaudiofile/close.md)
   Closes the audio file.
 

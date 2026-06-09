@@ -42,7 +42,7 @@ Within the execution of a Swift program, `Hasher` guarantees that finalizing it 
 - [init()](hasher/init.md)
   Creates a new hasher.
 ### Adding Values
-- [func combine<H>(H)](hasher/combine(_:).md)
+- [func combine<H>(borrowing H)](hasher/combine(_:).md)
   Adds the given value to this hasher, mixing its essential parts into the hasher state.
 - [func combine(bytes: UnsafeRawBufferPointer)](hasher/combine(bytes:).md)
   Adds the contents of the given buffer to this hasher, mixing it into the hasher state.

@@ -6,6 +6,9 @@
 The MacRoman encoding. MacRoman is an ASCII variant originally created for use in the Mac OS, in which characters 127 and lower are ASCII, and characters 128 and higher are non-English characters and symbols.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

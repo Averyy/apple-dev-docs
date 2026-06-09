@@ -13,7 +13,7 @@ Controls act as a button that initiates an action from your app or opens your ap
 - On Mac, people place controls from your macOS app in Control Center or as menu bar items.
 - On Apple Watch, people place controls from your watchOS app or from a paired iPhone in Control Center or the Smart Stack. If you offer watchOS app in addition to an iPhone app and both apps offer controls, people can only place controls from your watchOS app in Control Center or the Smart Stack.
 
-To offer a control for your app, use WidgetKit API to configure and update the control,  create its layout with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), and perform its action using [`App Intents`](https://developer.apple.com/documentation/AppIntents). For more information about the App Intents framework, refer to [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available).
+To offer a control for your app, use WidgetKit API to configure and update the control,  create its layout with [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI), and perform its action using [`App Intents`](https://developer.apple.com/documentation/AppIntents). For more information about the App Intents framework, refer to doc://com.apple.documentation/documentation/appintents/making-actions-and-content-discoverable-and-widely-available.
 
 ## Topics
 

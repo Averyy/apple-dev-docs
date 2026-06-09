@@ -11,6 +11,7 @@ Temperature influences the confidence of the models response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,6 +28,21 @@ Temperature is an adjustment applied to the probability distribution prior to sa
 The net effect is that low temperatures manifest as more stable and predictable responses, while high temperatures give the model more creative license.
 
 > **Note**: Leaving `temperature` nil lets the system choose a reasonable default on your behalf.
+
+## See Also
+
+- [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
+  A sampling strategy for how the model picks tokens when generating a response.
+- [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
+  A sampling strategy for how the model picks tokens when generating a response.
+- [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
+  A type that defines how values are sampled from a probability distribution.
+- [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
+  Configure the tool calling requirements.
+- [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
+  A value you use to describe the model behavior when it comes to tool usage.
+- [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
+  The maximum number of tokens the model is allowed to produce in its response.
 
 
 ---

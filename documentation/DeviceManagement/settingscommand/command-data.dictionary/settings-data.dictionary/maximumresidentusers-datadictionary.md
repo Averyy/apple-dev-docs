@@ -9,8 +9,6 @@ A dictionary that contains settings for maximum resident users.
 - iOS 9.3+
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,8 @@ object SettingsCommand.Command.Settings.MaximumResidentUsers
 
 ## Properties
 
-- `Item` (string) *(required)*: A string that identifies this setting.
-- `MaximumResidentUsers` (integer) *(required)*: The maximum number of users that can use the device. If this value is greater than the value for the maximum possible number of users that the device supports, the MDM server uses that value instead. This setting requires that the device is in the `AwaitingConfiguration` phase before it receives the [`DeviceConfiguredCommand`](deviceconfiguredcommand.md) message. When a device reaches the maximum number of resident users and a new user tries to sign in, the MDM server removes a synchronized user to make space for the new user. If there are no synchronized users, the new user sign-in fails. A synchronized user is a user that has completed syncing their data.
+- `Item` (string) *(required)*: A string that identifies this setting. Deprecated: iOS 13.4+ | iPadOS 13.4+
+- `MaximumResidentUsers` (integer) *(required)*: The maximum number of users that can use the device. If this value is greater than the value for the maximum possible number of users that the device supports, the MDM server uses that value instead. This setting requires that the device is in the `AwaitingConfiguration` phase before it receives the [`DeviceConfiguredCommand`](deviceconfiguredcommand.md) message. When a device reaches the maximum number of resident users and a new user tries to sign in, the MDM server removes a synchronized user to make space for the new user. If there are no synchronized users, the new user sign-in fails. A synchronized user is a user that has completed syncing their data. Deprecated: iOS 13.4+ | iPadOS 13.4+
 
 ## See Also
 

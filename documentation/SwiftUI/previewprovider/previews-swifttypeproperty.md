@@ -18,7 +18,7 @@ A collection of views to preview.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency static var previews: Self.Previews { get }
 ```
 

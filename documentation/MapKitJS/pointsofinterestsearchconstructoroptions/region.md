@@ -11,7 +11,7 @@ Sets the region that bounds the area in which to fetch points of interest.
 ## Declaration
 
 ```swift
-region?: CoordinateRegion;
+region?: CoordinateRegionData;
 ```
 
 #### Discussion

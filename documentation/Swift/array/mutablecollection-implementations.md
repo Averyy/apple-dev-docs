@@ -33,7 +33,7 @@
 - [subscript(Range<Self.Index>) -> Slice<Self>](array/subscript(_:)-3i28.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
 - [subscript(Range<Self.Index>) -> Self.SubSequence](array/subscript(_:)-9v9l6.md)
 
 

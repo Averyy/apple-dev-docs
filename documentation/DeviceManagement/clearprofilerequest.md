@@ -6,8 +6,7 @@
 The request used to remove a profile from devices.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Declaration
 

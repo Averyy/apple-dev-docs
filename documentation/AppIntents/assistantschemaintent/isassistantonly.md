@@ -19,6 +19,10 @@
 static var isAssistantOnly: Bool { get }
 ```
 
+## Mentions
+
+- [Making actions and content discoverable by Apple Intelligence](making-actions-and-content-discoverable-by-apple-intelligence.md)
+
 
 ---
 

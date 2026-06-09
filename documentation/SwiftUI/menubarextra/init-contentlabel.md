@@ -11,7 +11,8 @@ Creates a menu bar extra that will be displayed in the system menu bar, and defi
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+nonisolated
+init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion

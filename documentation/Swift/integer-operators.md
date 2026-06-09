@@ -52,8 +52,6 @@ Perform arithmetic and bitwise operations or compare values.
   Returns a Boolean value indicating whether two values are equal.
 - [static func == <Other>(Self, Other) -> Bool](int/==(_:_:)-1zalu.md)
   Returns a Boolean value indicating whether the two given values are equal.
-- [static func != (Self, Self) -> Bool](int/!=(_:_:)-1baz3.md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func != <Other>(Self, Other) -> Bool](int/!=(_:_:)-4jphg.md)
   Returns a Boolean value indicating whether the two given values are not equal.
 ### Range Expressions

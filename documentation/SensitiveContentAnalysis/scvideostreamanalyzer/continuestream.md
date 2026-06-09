@@ -1,6 +1,6 @@
 # continueStream()
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Indicates that your app is ready to resume video stream analysis.

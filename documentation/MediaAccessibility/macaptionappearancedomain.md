@@ -26,6 +26,8 @@ enum MACaptionAppearanceDomain
   The system default value for the setting should be returned.
 - [MACaptionAppearanceDomain.user](macaptionappearancedomain/user.md)
   The user’s preferred value for the setting should be returned.
+### Enumeration Cases
+- [MACaptionAppearanceDomain.videoConferencing](macaptionappearancedomain/videoconferencing.md)
 ### Initializers
 - [init?(rawValue: CFIndex)](macaptionappearancedomain/init(rawvalue:).md)
 

@@ -9,15 +9,10 @@ Edit your source files, locate issues, and make necessary changes using the sour
 ### Source file creation, organization, and editing
 - [Editing source files in Xcode](editing-source-files-in-xcode.md)
   Use features of the source editor to help you write, navigate, document, and understand code more quickly.
+- [Using coding intelligence in the source editor](using-coding-intelligence-in-the-source-editor.md)
+  Submit prompts in the same place you want to make changes to your code.
 - [Running code snippets using the playground macro](running-code-snippets-using-the-playground-macro.md)
   Add playgrounds to your code that run and display results in the canvas.
-### Coding intelligence
-- [Setting up coding intelligence](setting-up-coding-intelligence.md)
-  Enable third-party coding tools that you want to use in the coding assistant.
-- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
-  Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
-- [Giving external agents access to Xcode](giving-external-agents-access-to-xcode.md)
-  Let agents access your project and Xcode capabilities using the Model Context Protocol.
 ### Issue detection
 - [Fixing issues in your code as you type](fixing-issues-in-your-code-as-you-type.md)
   Minimize typing-related errors using code completion, and let Xcode fix common mistakes for you.
@@ -27,6 +22,8 @@ Edit your source files, locate issues, and make necessary changes using the sour
 
 ## See Also
 
+- [Coding intelligence](coding-intelligence.md)
+  Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 - [Bundles and frameworks](bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
 - [Swift packages](swift-packages.md)

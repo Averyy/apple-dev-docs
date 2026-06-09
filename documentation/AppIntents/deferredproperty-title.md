@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: macro
 
-A macro that creates an async property for an AppEntity that allows for providing an async get accessor.
+A macro that adds an asynchronous app entity property with an asynchronous get accessor.
 
 **Availability**:
 - iOS 26.0+
@@ -23,10 +23,10 @@ A macro that creates an async property for an AppEntity that allows for providin
 
 #### Overview
 
-Deferred properties have a few trade offs to consider:
+A deferred property has a few trade-offs:
 
-- They are not included when indexing and IndexedEntity
-- They are not sent to Shortcuts and Siri automatically and will only be fetched when needed
+- The system doesn’t index it when you donate an [`IndexedEntity`](indexedentity.md) to a Spotlight index.
+- The system doesn’t send it to Shortcuts or Siri automatically; it fetches the value only when needed.
 
 #### Example
 
@@ -50,19 +50,28 @@ struct Restaurant: AppEntity {
 ## See Also
 
 - [macro ComputedProperty()](computedproperty().md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
 - [macro ComputedProperty(title: LocalizedStringResource)](computedproperty(title:).md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
 - [macro ComputedProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(indexingkey:).md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with get and set accessors.
 - [macro ComputedProperty(customIndexingKey: CSCustomAttributeKey)](computedproperty(customindexingkey:).md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
 - [macro ComputedProperty(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](computedproperty(title:customindexingkey:).md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
 - [macro ComputedProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(title:indexingkey:).md)
-  A macro that creates a computed property for an AppEntity that allows for providing a get and/or set accessor
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
 - [macro DeferredProperty()](deferredproperty().md)
-  A macro that creates an async property for an AppEntity that allows for providing an async get accessor
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [macro DeferredProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](deferredproperty(indexingkey:).md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [macro DeferredProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](deferredproperty(title:indexingkey:).md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [class EntityProperty](entityproperty.md)
+  A property wrapper that exposes the associated property to the system.
+- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
+- [Property comparators](property-comparators.md)
+  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

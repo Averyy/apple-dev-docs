@@ -21,8 +21,12 @@ let bufferStartTime: CMTime?
 
 ## See Also
 
-- [let buffer: AVAudioPCMBuffer](analyzerinput/buffer.md)
-  The audio buffer containing this input.
+- [let bufferDuration: CMTime](analyzerinput/bufferduration.md)
+  The length of this input.
+- [let bufferFormat: AVAudioFormat](analyzerinput/bufferformat.md)
+  The audio format of this input.
+- [var buffer: AVAudioPCMBuffer](analyzerinput/buffer.md)
+  A new copy of the audio data for this input.
 
 
 ---

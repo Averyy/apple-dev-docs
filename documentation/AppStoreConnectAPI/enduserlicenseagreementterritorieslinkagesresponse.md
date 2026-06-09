@@ -26,14 +26,15 @@ object EndUserLicenseAgreementTerritoriesLinkagesResponse
 ## See Also
 
 - [object EndUserLicenseAgreement](enduserlicenseagreement.md)
-  The data structure that represents the End User License Agreement resource.
+  A custom end-user license agreement (EULA) for an app, targeting specific territories where it applies.
 - [object EndUserLicenseAgreementCreateRequest](enduserlicenseagreementcreaterequest.md)
   The request body you use to create an End User License Agreement.
 - [object EndUserLicenseAgreementUpdateRequest](enduserlicenseagreementupdaterequest.md)
   The request body you use to update an End User License Agreement.
 - [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
-  A response that contains a single End User License Agreements resource.
+  The response body for endpoints that read or modify a custom end user license agreement for an app.
 - [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+  A response containing a single EULA, without including territory details.
 - [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
 
 

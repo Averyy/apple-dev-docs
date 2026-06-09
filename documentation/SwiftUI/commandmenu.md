@@ -15,6 +15,7 @@ Command menus are stand-alone, top-level containers for controls that perform re
 ## Declaration
 
 ```swift
+nonisolated
 struct CommandMenu<Content> where Content : View
 ```
 
@@ -51,7 +52,7 @@ Command menus are realized as menu bar menus on macOS, inserted between the buil
 - [struct CommandGroup](commandgroup.md)
   Groups of controls that you can add to existing command menus.
 - [struct CommandsBuilder](commandsbuilder.md)
-  Constructs command sets from multi-expression closures. Like `ViewBuilder`, it supports up to ten expressions in the closure body.
+  Constructs command sets from multi-expression closures. Like `ContentBuilder`, it supports up to ten expressions in the closure body.
 - [struct CommandGroupPlacement](commandgroupplacement.md)
   The standard locations that you can place new command groups relative to.
 

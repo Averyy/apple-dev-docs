@@ -77,6 +77,8 @@ struct ManagedApp
   The app’s localized developer release notes.
 - [let releaseDate: Date?](managedapp/releasedate.md)
   The app’s release date.
+### Instance Properties
+- [var licenseAgreementText: AttributedString?](managedapp/licenseagreementtext.md)
 
 ## Relationships
 

@@ -39,6 +39,23 @@ Use arguments such as `position:` or `values:` to control the placement of the a
 
 - `content`: The axis content.
 
+## See Also
+
+- [func chartXAxis(Visibility) -> some View](view/chartxaxis(_:).md)
+  Sets the visibility of the x axis.
+- [func chartXAxis<Content>(content: () -> Content) -> some View](view/chartxaxis(content:).md)
+  Configures the x-axis for charts in the view.
+- [func chartXAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartxaxisstyle(content:).md)
+  Configures the x axis content of charts.
+- [func chartYAxis(Visibility) -> some View](view/chartyaxis(_:).md)
+  Sets the visibility of the y axis.
+- [func chartYAxis<Content>(content: () -> Content) -> some View](view/chartyaxis(content:).md)
+  Configures the y-axis for charts in the view.
+- [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartyaxisstyle(content:).md)
+  Configures the y axis content of charts.
+- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+  Sets the visibility of the z axis.
+
 
 ---
 

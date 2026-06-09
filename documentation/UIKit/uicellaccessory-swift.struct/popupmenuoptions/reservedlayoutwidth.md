@@ -9,7 +9,6 @@ The layout width that the system reserves for the accessory, and then centers th
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

@@ -8,6 +8,7 @@ An asynchronous sequence that emits events when authorization to use alarms chan
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

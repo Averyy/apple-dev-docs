@@ -114,10 +114,10 @@ const annotation = new mapkit.MarkerAnnotation(
 
 ## See Also
 
-- [const CollisionMode](collisionmode.md)
-  Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view.
-- [const DisplayPriority](displaypriority.md)
-  Constant values that provide a hint the map uses to prioritize displaying annotations.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
 - [interface Size](size.md)
   A structure that represents a size.
 

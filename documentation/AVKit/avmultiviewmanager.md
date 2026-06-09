@@ -57,6 +57,10 @@ Watch multiple videos at the same time with [`AVExperienceController.Experience.
   An object that controls video experiences.
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
+- [class AVViewport](avviewport.md)
+- [class AVPortalViewport](avportalviewport.md)
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

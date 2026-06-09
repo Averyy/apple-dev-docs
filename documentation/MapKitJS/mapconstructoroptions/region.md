@@ -11,7 +11,7 @@ The area the map is displaying.
 ## Declaration
 
 ```swift
-region?: CoordinateRegion;
+region?: CoordinateRegionData;
 ```
 
 ## See Also

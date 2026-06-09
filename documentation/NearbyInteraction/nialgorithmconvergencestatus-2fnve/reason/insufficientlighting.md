@@ -8,7 +8,7 @@ Indicates that the camera needs to view the physical environment under better li
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
+- Mac Catalyst ?+
 - watchOS 9.0+
 
 ## Declaration

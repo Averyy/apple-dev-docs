@@ -22,6 +22,8 @@ var minimumScaleDelta: CGFloat
 
 - [init(minimumScaleDelta: CGFloat)](magnifygesture/init(minimumscaledelta:).md)
   Creates a magnify gesture with a given minimum delta for the gesture to start.
+- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](magnifygesture/init(minimumscaledelta:inputkinds:).md)
+  Creates a magnify gesture with a given minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 
 
 ---

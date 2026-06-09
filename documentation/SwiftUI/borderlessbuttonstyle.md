@@ -17,6 +17,7 @@ A button style that doesn’t apply a border.
 ## Declaration
 
 ```swift
+nonisolated
 struct BorderlessButtonStyle
 ```
 

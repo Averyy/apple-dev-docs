@@ -33,6 +33,8 @@ enum AUReverbRoomType
 - [AUReverbRoomType.reverbRoomType_MediumRoom](aureverbroomtype/reverbroomtype_mediumroom.md)
 - [AUReverbRoomType.reverbRoomType_Plate](aureverbroomtype/reverbroomtype_plate.md)
 - [AUReverbRoomType.reverbRoomType_SmallRoom](aureverbroomtype/reverbroomtype_smallroom.md)
+### Enumeration Cases
+- [AUReverbRoomType.reverbRoomType_OutdoorGeneral](aureverbroomtype/reverbroomtype_outdoorgeneral.md)
 ### Initializers
 - [init?(rawValue: UInt32)](aureverbroomtype/init(rawvalue:).md)
 

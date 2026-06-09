@@ -49,18 +49,14 @@ A CPU exception occurs when your app uses an excessive amount of CPU time over a
 
 ## See Also
 
-- [class MXCellularConditionMetric](mxcellularconditionmetric.md)
-  An object representing metrics about the condition of the cellular network.
-- [class MXCPUMetric](mxcpumetric.md)
-  An object representing metrics about the use of the CPU.
-- [class MXDisplayMetric](mxdisplaymetric.md)
-  An object representing metrics about the power used to display the app on the screen.
-- [class MXGPUMetric](mxgpumetric.md)
-  An object representing metrics about the use of the GPU.
-- [class MXLocationActivityMetric](mxlocationactivitymetric.md)
-  An object representing metrics about the use of location-tracking features of a device.
-- [class MXNetworkTransferMetric](mxnetworktransfermetric.md)
-  An object representing metrics about network transfers.
+- [class MXAppLaunchDiagnostic](mxapplaunchdiagnostic.md)
+  A diagnostic subclass that encapsulates app launch diagnostic reports.
+- [class MXCrashDiagnostic](mxcrashdiagnostic.md)
+  An object representing a diagnostic report for an app crash.
+- [class MXHangDiagnostic](mxhangdiagnostic.md)
+  An object representing a diagnostic report for an app that is too busy to handle user input responsively.
+- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
+  An object representing a diagnostic report for a disk write exception.
 
 
 ---

@@ -27,8 +27,13 @@ Use [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift
 
 Use [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md) to allow contents within the portal world with a [`PortalCrossingComponent`](portalcrossingcomponent.md) to cross out of this planar definition of the portal boundary.
 
+Use [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md) to allow contents to cross using a volumetric box boundary.
+
 ## Topics
 
+### Setting the crossing mode
+- [PortalComponent.CrossingMode.volume(_:)](portalcomponent/crossingmode-swift.enum/volume(_:).md)
+  Allows contents within the portal to cross using a volumetric box.
 ### Enumeration Cases
 - [PortalComponent.CrossingMode.disabled](portalcomponent/crossingmode-swift.enum/disabled.md)
   Disallows contents within the portal to cross out of the portal boundary.

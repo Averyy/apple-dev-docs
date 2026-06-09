@@ -16,7 +16,7 @@ title?: string;
 
 #### Discussion
 
-The title to show in the callout. The default value is `""` (empty string).
+The title to show in the callout. The default value is `null`.
 
 ## See Also
 

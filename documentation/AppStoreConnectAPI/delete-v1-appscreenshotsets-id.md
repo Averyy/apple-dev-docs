@@ -1,4 +1,4 @@
-# Delete an App Screenshot Set
+# Delete an app screenshot set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,11 +14,11 @@ Delete an app screenshot set and all of its screenshots.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app screenshot set resource ID from the [`List all app screenshot sets for an app store version localization`](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md) response.
 
 ## See Also
 
-- [Create an App Screenshot Set](post-v1-appscreenshotsets.md)
+- [Create an app screenshot set](post-v1-appscreenshotsets.md)
   Add a new screenshot set to an App Store version localization for a specific screenshot type and display size.
 
 

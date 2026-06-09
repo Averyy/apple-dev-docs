@@ -9,7 +9,6 @@ Encodes an instruction to run commands from an indirect buffer, using another bu
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.11+
 - tvOS 13.0+
 - visionOS ?+
 

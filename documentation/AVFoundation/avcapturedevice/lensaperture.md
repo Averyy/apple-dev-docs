@@ -25,14 +25,14 @@ This value doesn’t change.
 
 ## See Also
 
-- [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
-  The length of time over which exposure takes place.
-- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
-  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
-- [var iso: Float](avcapturedevice/iso.md)
-  The current exposure ISO value.
 - [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
   Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
+- [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
+  The length of time over which exposure takes place.
+- [var iso: Float](avcapturedevice/iso.md)
+  The current exposure ISO value.
+- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
+  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 
 
 ---

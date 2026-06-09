@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The device’s declarative managed apps.
+The status item that lists the device’s declarative managed apps.
 
 **Availability**:
 - iOS 17.2+
@@ -11,8 +11,6 @@ The device’s declarative managed apps.
 - Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -36,7 +34,7 @@ object StatusAppManagedList
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, visionOS |
 | Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | NA |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, visionOS |
 | Allowed in user scope | macOS |
 
@@ -57,11 +55,56 @@ object StatusAppManagedList
 - `Info.UpdateAvailable`: An update is available for the app.
 - `Error.UpdateFailed`: The app update failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last update failure.
 
+##### Status Item Example
+
+**New or updated app**:
+
+Reports a new or updated app.
+
+```json
+{
+    "app": {
+        "managed": {
+            "list": [
+                {
+                    "identifier": "com.example.productivity",
+                    "declaration-identifier": "com.example.app-management",
+                    "name": "Productivity App",
+                    "external-version-id": 845960,
+                    "version": "5.2.1",
+                    "short-version": "5.2.1",
+                    "state": "managed"
+                }
+            ]
+        }
+    }
+}
+```
+
+**Removed app**:
+
+Reports a removed app.
+
+```json
+{
+    "app": {
+        "managed": {
+            "list": [
+                {
+                    "identifier": "com.example.productivity",
+                    "_removed": true
+                }
+            ]
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object StatusAppManagedListAppObject](statusappmanagedlistappobject.md)
-  A dictionary that describes a declarative managed app.
+  A managed app.
 
 ## Properties
 
@@ -69,35 +112,10 @@ object StatusAppManagedList
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
+- [object StatusMDMApp](statusmdmapp.md)
+  The status item that lists the devices’s MDM-installed apps.
+- [object StatusPackageList](statuspackagelist.md)
+  The status item that lists the device’s declarative packages.
 
 
 ---

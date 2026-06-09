@@ -12,6 +12,7 @@ A quality option that prefers processing that balances image quality and perform
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -10,8 +10,6 @@ Remotely and immediately shut down a device.
 - iPadOS 10.3+
 - Mac Catalyst 10.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -24,9 +22,9 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
 ##### Example Request and Response
@@ -76,7 +74,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ShutDownDeviceCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

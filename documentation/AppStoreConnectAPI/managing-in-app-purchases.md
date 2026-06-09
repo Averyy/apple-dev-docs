@@ -22,7 +22,7 @@ For the full list of App Store Connect user roles, see [`UserRole`](userrole.md)
 
 ##### Create Your in App Purchase
 
-To create an in-app purchase, use `POST /v2/inAppPurchases` ([`Create an In-App Purchase`](post-v2-inapppurchases.md)) with a payload that contains the required information, including an internal name, a product ID, the in-app purchase type, a review note, and territory availability. Additionally, supply the Apple ID of the app that contains this in-app purchase.
+To create an in-app purchase, use `POST /v2/inAppPurchases` ([`Create an in-app purchase`](post-v2-inapppurchases.md)) with a payload that contains the required information, including an internal name, a product ID, the in-app purchase type, a review note, and territory availability. Additionally, supply the Apple ID of the app that contains this in-app purchase.
 
 Here’s an example payload:
 
@@ -77,15 +77,15 @@ Make note of the `id` in the response because you use this ID to look up or edit
 "id": "6446452615"
 ```
 
-To look up a specific in-app purchase, use the `id` with `GET /v2/inAppPurchases/{id}` ([`Read In-App Purchase Information`](get-v1-inapppurchases-_id_.md)). You can also look up all in-app purchases for an app using `GET /v1/apps/{id}/inAppPurchasesV2` ([`List All In-App Purchases for an App V1`](get-v1-apps-_id_-inapppurchases.md)). Note that this is a `v1` endpoint.
+To look up a specific in-app purchase, use the `id` with `GET /v2/inAppPurchases/{id}` ([`Read in-app purchase information`](get-v1-inapppurchases-_id_.md)). You can also look up all in-app purchases for an app using `GET /v1/apps/{id}/inAppPurchasesV2` ([`List all in-app purchases for an app v1`](get-v1-apps-_id_-inapppurchases.md)). Note that this is a `v1` endpoint.
 
-Editing an in-app purchase is similar, but you use `PATCH /v2/inAppPurchases/{id}` ([`Modify an In-App Purchase`](patch-v2-inapppurchases-_id_.md)). The editable fields are `name`, `availableInAllTerritories`, and `reviewNote`.
+Editing an in-app purchase is similar, but you use `PATCH /v2/inAppPurchases/{id}` ([`Modify an in-app purchase`](patch-v2-inapppurchases-_id_.md)). The editable fields are `name`, `availableInAllTerritories`, and `reviewNote`.
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases.
 
 ##### Localize Metadata for Your in App Purchase
 
-To make your in-app purchase ready for consumption, add localized display names and descriptions. Use `POST /v1/inAppPurchaseLocalizations` ([`List All Localizations for an In-App Purchase`](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)) with a payload that describes the locale, the localized display name, and the localized description for the in-app purchase.
+To make your in-app purchase ready for consumption, add localized display names and descriptions. Use `POST /v1/inAppPurchaseLocalizations` ([`List all localizations for an in-app purchase`](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)) with a payload that describes the locale, the localized display name, and the localized description for the in-app purchase.
 
 Here’s an example payload:
 
@@ -130,7 +130,7 @@ Here’s an example response, truncated for clarity:
 
 To set a price point for your in-app purchase, look up the `id` of the price point you want to assign to the in-app purchase. The following example uses the price point `4.99`.
 
-To look up the price point ID, use the [`List All Price Points for an In-App Purchase`](get-v2-inapppurchases-_id_-pricepoints.md) endpoint:
+To look up the price point ID, use the [`List all price points for an in-app purchase`](get-v2-inapppurchases-_id_-pricepoints.md) endpoint:
 
 ```other
 GET /v2/inAppPurchases/{id}/pricePoints?filter[territory]=USA&include=territory&limit=200
@@ -248,10 +248,10 @@ You accomplish this task by using the `/v1/inAppPurchaseAppStoreReviewScreenshot
 
 In the case of the in-app purchase screenshot, you submit a single image using the following steps:
 
-1. Make an image reservation with `POST /v1/inAppPurchaseAppStoreReviewScreenshots` ([`Create an In-App Purchase Review Screenshot`](post-v1-inapppurchaseappstorereviewscreenshots.md)).
+1. Make an image reservation with `POST /v1/inAppPurchaseAppStoreReviewScreenshots` ([`Create an in-app purchase review screenshot`](post-v1-inapppurchaseappstorereviewscreenshots.md)).
 2. Upload the image using the `PUT` URL provided in the response to the previous `POST`.
-3. After your image uploads, use `PATCH /v1/inAppPurchaseAppStoreReviewScreenshots/{id}` ([`Commit a Review Screenshot for an In-App Purchase`](patch-v1-inapppurchaseappstorereviewscreenshots-_id_.md)) to commit the image.
-4. Finally, use `GET /v1/inAppPurchaseAppStoreReviewScreenshots/{id}` ([`Read In-App Purchase Review Screenshot Information`](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)) to confirm that the image is in place.
+3. After your image uploads, use `PATCH /v1/inAppPurchaseAppStoreReviewScreenshots/{id}` ([`Commit a review screenshot for an in-app purchase`](patch-v1-inapppurchaseappstorereviewscreenshots-_id_.md)) to commit the image.
+4. Finally, use `GET /v1/inAppPurchaseAppStoreReviewScreenshots/{id}` ([`Read in-app purchase review screenshot information`](get-v1-inapppurchaseappstorereviewscreenshots-_id_.md)) to confirm that the image is in place.
 
 For more information, see [`Uploading Assets to App Store Connect`](uploading-assets-to-app-store-connect.md).
 
@@ -259,7 +259,7 @@ After you upload your screenshot for App Review, the next step is submission.
 
 > ❗ **Important**:  You need to submit your first in-app purchase with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent in-app purchases, you can submit using the following API endpoint without an associated app binary submission.
 
-If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissions` ([`Create a Review Submission for an In-App Purchase`](post-v1-inapppurchasesubmissions.md)) with a payload like this:
+If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissions` ([`Create a review submission for an in-app purchase`](post-v1-inapppurchasesubmissions.md)) with a payload like this:
 
 ```other
 {
@@ -279,7 +279,7 @@ If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissio
 
 ##### Promote Your in App Purchase
 
-After your in-app purchase gets approved, you can to promote it to users who visit your app listing in the App Store. To accomplish this task, use `POST /v1/promotedPurchases` ([`Promote a Purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your in-app purchase. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read Promoted Purchase Information for an In-App Purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases by using `GET /v1/apps/{id}/promotedPurchases` ([`List All Promoted Purchases for an App`](get-v1-apps-_id_-promotedpurchases.md)).
+After your in-app purchase gets approved, you can to promote it to users who visit your app listing in the App Store. To accomplish this task, use `POST /v1/promotedPurchases` ([`Promote a purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your in-app purchase. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read promoted purchase information for an in-app purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](get-v1-apps-_id_-promotedpurchases.md)).
 
 Here’s an example payload:
 
@@ -398,7 +398,7 @@ Here’s an example response that includes the information from the request abov
 }
 ```
 
-This first portion of the response is shown below. This portion shows an `inAppPurchasePrices` with `id`, but the `startDate` attribute is `null`, which means this is the current price. You can look up the customer price for a particular territory by looking up the `inAppPurchasePricePoints` by `id` using `GET /v2/inAppPurchases/{id}/pricePoints` ([`List All Price Points for an In-App Purchase`](get-v2-inapppurchases-_id_-pricepoints.md)) and searching the response for the ID.
+This first portion of the response is shown below. This portion shows an `inAppPurchasePrices` with `id`, but the `startDate` attribute is `null`, which means this is the current price. You can look up the customer price for a particular territory by looking up the `inAppPurchasePricePoints` by `id` using `GET /v2/inAppPurchases/{id}/pricePoints` ([`List all price points for an in-app purchase`](get-v2-inapppurchases-_id_-pricepoints.md)) and searching the response for the ID.
 
 ```other
 {

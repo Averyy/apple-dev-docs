@@ -33,7 +33,8 @@ Both view-based table views and cell-based table views must implement this metho
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
+- [class NSTableView](nstableview.md)
+  A set of related records, displayed in rows that represent individual records and columns that represent the attributes of those records.
 - [func tableView(NSTableView, objectValueFor: NSTableColumn?, row: Int) -> Any?](nstableviewdatasource/tableview(_:objectvaluefor:row:).md)
   Called by the table view to return the data object associated with the specified row and column.
 

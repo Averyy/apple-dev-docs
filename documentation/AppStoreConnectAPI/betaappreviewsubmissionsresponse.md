@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Beta App Review Submission resources.
+The response body for endpoints that list beta app review submissions.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -23,15 +23,16 @@ object BetaAppReviewSubmissionsResponse
 
 ## See Also
 
-- [List Beta App Review Submissions](get-v1-betaappreviewsubmissions.md)
+- [List beta app review submissions](get-v1-betaappreviewsubmissions.md)
   Find and list beta app review submissions for all builds.
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)
-  The data structure that represents a Beta App Review Submissions resource.
+  A submission of a build to Apple’s beta app review process, required before external testing.
 - [object BetaAppReviewSubmissionCreateRequest](betaappreviewsubmissioncreaterequest.md)
   The request body you use to create a Beta App Review Submission.
 - [object BetaAppReviewSubmissionResponse](betaappreviewsubmissionresponse.md)
-  A response that contains a single Beta App Review Submissions resource.
+  The response body for endpoints that submit a build for beta app review.
 - [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
+  A response containing a single beta app review submission, without related resources.
 - [type BetaReviewState](betareviewstate.md)
   String that indicates the review state of a beta app.
 - [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)

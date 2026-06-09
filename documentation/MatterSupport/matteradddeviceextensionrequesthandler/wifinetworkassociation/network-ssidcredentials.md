@@ -25,7 +25,7 @@ The credentials represent the passphrase that the system needs to associate to t
 ## Parameters
 
 - `ssid`: The SSID of the Wi-Fi network to associate to.
-- `credentials`: The credentials that the sytems requires for associating to that network.
+- `credentials`: The credentials that the systems requires for associating to that network.
 
 ## See Also
 

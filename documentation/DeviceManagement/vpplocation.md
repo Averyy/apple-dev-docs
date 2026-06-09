@@ -6,8 +6,7 @@
 A location used for managing purchases.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 

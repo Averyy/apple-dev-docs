@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -24,6 +26,7 @@ object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseAppStoreReviewScreenshotCreateRequest.Data.Attributes](inapppurchaseappstorereviewscreenshotcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an in-app purchase App Store review screenshot create request resource.
 
 
 ---

@@ -16,6 +16,7 @@ object InAppPurchasePricePoint.Relationships.Territory
 
 ### Objects
 - [object InAppPurchasePricePoint.Relationships.Territory.Data](inapppurchasepricepoint/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an in-app purchase price point.
 
 ## Properties
 

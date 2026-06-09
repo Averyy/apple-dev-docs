@@ -6,12 +6,11 @@
 The Account-Driven Enrollment profile defines key attributes related to service discovery for account-driven enrollment by MDM.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.1+
 
 ## Mentions
 
-- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)
 
 #### Overview
 

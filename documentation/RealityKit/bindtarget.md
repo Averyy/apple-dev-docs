@@ -66,6 +66,9 @@ For nested entities, the [`BindTarget.path(_:)`](bindtarget/path(_:).md) case re
 - [BindTarget.TextureCoordinateTransformPath](bindtarget/texturecoordinatetransformpath.md)
   The texture coordinate parameters for a given texture layer that an animation can target.
 - [BindTarget.IkSolverPath](bindtarget/iksolverpath.md)
+### Binding to root motion
+- [BindTarget.rootMotion](bindtarget/rootmotion.md)
+  A target that indicates root motion animation.
 ### Operators
 - [static func == (BindTarget, BindTarget) -> Bool](bindtarget/==(_:_:).md)
   Returns a Boolean value that indicates whether two bind targets are equal.

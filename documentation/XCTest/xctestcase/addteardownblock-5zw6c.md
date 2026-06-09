@@ -9,7 +9,6 @@ Registers a block of teardown code to run after the current test method ends.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
 

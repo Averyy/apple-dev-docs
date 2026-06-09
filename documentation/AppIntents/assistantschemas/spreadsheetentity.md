@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe spreadsheet data.
 protocol SpreadsheetEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making spreadsheet actions available to Siri and Apple Intelligence](making-spreadsheet-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -41,15 +37,6 @@ protocol SpreadsheetEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/document.md)
-  The app entity describes a spreadsheet.
-- [var sheet: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/sheet.md)
-  The app entity describes a sheet in a spreadsheet.
-- [var template: some AssistantSchemas.Entity](assistantschemas/spreadsheetentity/template.md)
-  The app entity describes a template for a spreadsheet.
 
 
 ---

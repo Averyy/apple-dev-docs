@@ -53,7 +53,7 @@ enum FrameResizePosition
 - [enum HorizontalDirection](horizontaldirection.md)
   A direction on the horizontal axis.
 - [enum VerticalDirection](verticaldirection.md)
-  A direction on the horizontal axis.
+  A direction on the vertical axis.
 - [enum FrameResizeDirection](frameresizedirection.md)
   The direction in which a rectangular frame can be resized.
 

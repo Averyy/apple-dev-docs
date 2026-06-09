@@ -30,9 +30,6 @@ enum MFMailComposeResult
   The email message was not saved or queued, possibly due to an error.
 ### Initializers
 - [init?(rawValue: Int)](mfmailcomposeresult/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](mfmailcomposeresult/equatable-implementations.md)
-- [RawRepresentable Implementations](mfmailcomposeresult/rawrepresentable-implementations.md)
 
 ## Relationships
 

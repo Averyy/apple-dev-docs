@@ -42,6 +42,8 @@ struct WritingToolsBehavior
 
 - [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
   Specifies the Writing Tools behavior for text and text input in the environment.
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+  Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
 
 
 ---

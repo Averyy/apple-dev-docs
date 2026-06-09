@@ -32,7 +32,7 @@ If you need the efficiency or flexibility of immediate mode drawing — for exam
 - [struct RectangleCornerInsets](rectanglecornerinsets.md)
   The inset sizes for the corners of a rectangle.
 - [struct ConcentricRectangle](concentricrectangle.md)
-  A shape that is replaced by a concentric version of the current container shape. If the container shape is a rectangle derived shape with four corners, this shape could choose to respect corners individually.
+  A shape whose corners you configure, individually or uniformly, to be squared, rounded, or concentric relative to a container shape’s corners.
 ### Creating circular shapes
 - [struct Circle](circle.md)
   A circle centered on the frame of the view containing it.
@@ -77,7 +77,7 @@ If you need the efficiency or flexibility of immediate mode drawing — for exam
 - [protocol InsettableShape](insettableshape.md)
   A shape type that is able to inset itself to produce another shape.
 - [struct ContainerRelativeShape](containerrelativeshape.md)
-  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
+  A shape whose dimensions the system calculates from an inset version of the current container shape.
 
 ## See Also
 

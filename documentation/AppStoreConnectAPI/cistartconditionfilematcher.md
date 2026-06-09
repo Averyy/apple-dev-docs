@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Start Condition File Matchers resource.
+A path pattern filter applied to an Xcode Cloud workflow start condition, restricting triggers to changes in specific files or directories.
 
 **Availability**:
 - App Store Connect API 1.5+

@@ -1,4 +1,4 @@
-# List All Promotional Offer Prices for a Subscription
+# List all promotional offer prices for a subscription
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -23,14 +23,14 @@ Get a list of prices of a promotional offer for an auto-renewable subscription, 
 
 ## See Also
 
-- [Create a Promotional Offer](post-v1-subscriptionpromotionaloffers.md)
+- [Create a promotional offer](post-v1-subscriptionpromotionaloffers.md)
   Create a promotional offer for an auto-renewable subscription.
-- [GET /v1/subscriptionPromotionalOffers/{id}/relationships/prices](get-v1-subscriptionpromotionaloffers-_id_-relationships-prices.md)
-- [Read Promotional Offer Information](get-v1-subscriptionpromotionaloffers-_id_.md)
+- [List price IDs for a subscription promotional offer](get-v1-subscriptionpromotionaloffers-_id_-relationships-prices.md)
+- [Read promotional offer information](get-v1-subscriptionpromotionaloffers-_id_.md)
   Get details about a specific promotional offer for an auto-renewable subscription.
-- [Modify a Promotional Offer](patch-v1-subscriptionpromotionaloffers-_id_.md)
+- [Modify a promotional offer](patch-v1-subscriptionpromotionaloffers-_id_.md)
   Update the prices for a specific promotional offer for an auto-renewable subscription.
-- [Delete a Promotional Offer From a Subscription](delete-v1-subscriptionpromotionaloffers-_id_.md)
+- [Delete a promotional offer from a subscription](delete-v1-subscriptionpromotionaloffers-_id_.md)
   Delete a specific promotional offer from an auto-renewable subscription.
 
 

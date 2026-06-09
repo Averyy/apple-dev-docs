@@ -6,7 +6,6 @@
 Sets the audio device by using the device identifier.
 
 **Availability**:
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 ## Declaration

@@ -11,6 +11,7 @@ A menu style that displays a bordered button that toggles the display of the men
 ## Declaration
 
 ```swift
+nonisolated
 struct BorderedButtonMenuStyle
 ```
 

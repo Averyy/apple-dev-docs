@@ -1,8 +1,7 @@
 # manager(_:errorOccurred:)
 
 **Framework**: Core Motion  
-**Kind**: method  
-**Required**: Yes
+**Kind**: method
 
 Tells the delegate when an error occurs.
 
@@ -16,7 +15,7 @@ Tells the delegate when an error occurs.
 ## Declaration
 
 ```swift
-func manager(_ manager: CMWaterSubmersionManager, errorOccurred error: any Error)
+optional func manager(_ manager: CMWaterSubmersionManager, errorOccurred error: any Error)
 ```
 
 ## Mentions

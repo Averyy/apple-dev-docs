@@ -36,7 +36,9 @@ struct Opacity
 ## Relationships
 
 ### Conforms To
+- [Equatable](../Swift/Equatable.md)
 - [ExpressibleByFloatLiteral](../Swift/ExpressibleByFloatLiteral.md)
+- [Hashable](../Swift/Hashable.md)
 
 ## See Also
 

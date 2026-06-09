@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a promoted purchase.
+
 **Availability**:
 - App Store Connect API 2.0+
 

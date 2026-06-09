@@ -20,8 +20,6 @@ var targetQuantity: HKQuantity { get }
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](powerthresholdalert/metric.md)
-  The metric for the alert.
 - [var target: Measurement<UnitPower>](powerthresholdalert/target.md)
   The target measurement using power units.
 

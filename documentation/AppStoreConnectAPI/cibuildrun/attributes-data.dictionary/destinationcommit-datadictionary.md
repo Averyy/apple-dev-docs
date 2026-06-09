@@ -27,9 +27,9 @@ object CiBuildRun.Attributes.DestinationCommit
 - [object CiBuildRun.Attributes.SourceCommit](cibuildrun/attributes-data.dictionary/sourcecommit-data.dictionary.md)
   The latest commit of a Git branch or tag, or of a pull request’s source branch.
 - [object CiGitUser](cigituser.md)
-  The data structure that represents a Git Users resource.
+  The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
 - [object CiIssueCounts](ciissuecounts.md)
-  The data structure that represents an Issue Counts resource.
+  A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
 - [type CiCompletionStatus](cicompletionstatus.md)
   A string that represents the completion status of an Xcode Cloud build.
 - [type CiExecutionProgress](ciexecutionprogress.md)

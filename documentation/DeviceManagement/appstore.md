@@ -7,8 +7,6 @@ The payload that configures macOS App Store restrictions.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.appstore` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -74,10 +72,10 @@ Specify `com.apple.appstore` as the payload type.
 
 ## Properties
 
-- `DisableSoftwareUpdateNotifications` (boolean): If `true`, the system disables software update notifications. Available in macOS 10.10 and later.
-- `restrict-store-disable-app-adoption` (boolean): If `true`, the system disables app adoption by users. Available in macOS 10.10 and later.
-- `restrict-store-require-admin-to-install` (boolean): If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead.
-- `restrict-store-softwareupdate-only` (boolean): If `true`, the system prevents App Store from launching. Available in macOS 10.14 and later. Restricts installations to software updates only in macOS 10.10 through 10.13.
+- `DisableSoftwareUpdateNotifications` (boolean): If `true`, the system disables software update notifications. Available: macOS 10.10+
+- `restrict-store-disable-app-adoption` (boolean): If `true`, the system disables app adoption by users. Available: macOS 10.10+
+- `restrict-store-require-admin-to-install` (boolean): If `true`, the system restricts app installations to admin users only. Deprecated in macOS 10.14. Use the `com.apple.SoftwareUpdate` payload key `restrict-software-update-require-admin-to-install` instead. Deprecated: macOS 10.14+
+- `restrict-store-softwareupdate-only` (boolean): If `true`, the system prevents App Store from launching. Restricts installations to software updates only in macOS 10.10 through 10.13. Available: macOS 10.10+
 
 
 ---

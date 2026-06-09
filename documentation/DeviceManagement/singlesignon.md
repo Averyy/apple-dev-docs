@@ -9,8 +9,6 @@ The payload that configures single sign-on (SSO).
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 |  |  |
 | --- | --- |
 | Device channel | iOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -95,8 +93,8 @@ Deprecated in iOS 26. Use the [`ExtensibleSingleSignOn`](extensiblesinglesignon.
 
 ## Properties
 
-- `Kerberos` (SingleSignOn.Kerberos): The Kerberos dictionary.
-- `Name` (string) *(required)*: The human-readable name for the account.
+- `Kerberos` (SingleSignOn.Kerberos): The Kerberos dictionary. Deprecated: iOS 26+ | iPadOS 26+
+- `Name` (string) *(required)*: The human-readable name for the account. Deprecated: iOS 26+ | iPadOS 26+
 
 ## See Also
 

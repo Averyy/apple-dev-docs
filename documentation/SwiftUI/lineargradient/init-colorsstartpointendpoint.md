@@ -17,6 +17,7 @@ Creates a linear gradient from a collection of colors.
 ## Declaration
 
 ```swift
+nonisolated
 init(colors: [Color], startPoint: UnitPoint, endPoint: UnitPoint)
 ```
 

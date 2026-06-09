@@ -47,7 +47,6 @@ Use the resource to create an [`AudioPlaybackController`](audioplaybackcontrolle
 ### Inherits From
 - [AudioResource](audioresource.md)
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

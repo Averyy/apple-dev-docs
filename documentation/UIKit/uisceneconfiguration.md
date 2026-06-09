@@ -19,6 +19,10 @@ Information about the objects and storyboard for UKit to use when creating a par
 class UISceneConfiguration
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Overview
 
 Use a [`UISceneConfiguration`](uisceneconfiguration.md) object to specify information that UIKit can use to create a new scene for your app. Specifically, you must provide the class of the specific scene you want, the class of the scene delegate object your app uses to manage scenes of that type, and a storyboard containing the scene’s initial view controller.
@@ -45,7 +49,11 @@ When the user requests a new instance of your app’s user interface, UIKit look
 - [UISceneSession.Role](uiscenesession/role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 ### Initializers
+- [convenience init()](uisceneconfiguration/init.md)
+  Creates a scene-configuration object.
 - [init?(coder: NSCoder)](uisceneconfiguration/init(coder:).md)
+- [convenience init(name: String?)](uisceneconfiguration/init(name:).md)
+  Creates a scene-configuration object with the specified name.
 
 ## Relationships
 

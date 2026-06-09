@@ -61,7 +61,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript<R>(R) -> Self.SubSequence](contiguousarray/subscript(_:)-997ec.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](contiguousarray/subscript(_:)-9rwz8.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](contiguousarray/subscript(_:)-9rwz8.md)
 ### Type Aliases
 - [ContiguousArray.Iterator](contiguousarray/iterator.md)
   The type that allows iteration over an array’s elements.

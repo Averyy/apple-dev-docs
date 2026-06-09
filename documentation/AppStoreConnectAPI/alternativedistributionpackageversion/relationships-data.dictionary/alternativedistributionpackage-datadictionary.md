@@ -16,6 +16,7 @@ object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributi
 
 ### Objects
 - [object AlternativeDistributionPackageVersion.Relationships.AlternativeDistributionPackage.Data](alternativedistributionpackageversion/relationships-data.dictionary/alternativedistributionpackage-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an alternative distribution package version.
 
 ## Properties
 

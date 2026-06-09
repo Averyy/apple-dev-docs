@@ -95,6 +95,7 @@ struct Pose3D
 - [Encodable Implementations](pose3d/encodable-implementations.md)
 - [Equatable Implementations](pose3d/equatable-implementations.md)
 - [Hashable Implementations](pose3d/hashable-implementations.md)
+- [ProjectiveTransformable3D Implementations](pose3d/projectivetransformable3d-implementations.md)
 - [Rotatable3D Implementations](pose3d/rotatable3d-implementations.md)
 
 ## Relationships
@@ -108,6 +109,7 @@ struct Pose3D
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
 - [Rotatable3D](rotatable3d.md)
 - [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)

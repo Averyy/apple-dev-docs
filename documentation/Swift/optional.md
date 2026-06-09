@@ -121,6 +121,8 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 ### Creating an Optional Value
 - [case some(Wrapped)](optional/some(_:).md)
   The presence of a value, stored as `Wrapped`.
+- [init(consuming Wrapped)](optional/init(_:).md)
+  Creates an instance that stores the given value.
 ### Creating a Nil Value
 - [Optional.none](optional/none.md)
   The absence of a value.
@@ -170,16 +172,10 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
   Returns a Boolean value indicating whether the right-hand-side argument is `nil`.
 - [static func == (borrowing Wrapped?, _OptionalNilComparisonType) -> Bool](optional/==(_:_:)-2tyup.md)
   Returns a Boolean value indicating whether the left-hand-side argument is `nil`.
-### Initializers
-- [init(consuming Wrapped)](optional/init(_:)-1j774.md)
-  Creates an instance that stores the given value.
-- [init(consuming Wrapped)](optional/init(_:)-46x3s.md)
-  Creates an instance that stores the given value.
 ### Instance Methods
 - [func take() -> Optional<Wrapped>](optional/take.md)
   Takes the wrapped value being stored in this instance and returns it while also setting the instance to `nil`. If there is no value being stored in this instance, this returns `nil` instead.
 ### Type Aliases
-- [typealias Body](optional/body.md)
 - [typealias PartiallyGenerated](optional/partiallygenerated.md)
 - [typealias Specification](optional/specification.md)
 - [typealias TableRowBody](optional/tablerowbody.md)
@@ -197,10 +193,13 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [Equatable Implementations](optional/equatable-implementations.md)
 - [ExpressibleByNilLiteral Implementations](optional/expressiblebynilliteral-implementations.md)
 - [Hashable Implementations](optional/hashable-implementations.md)
+- [IntentValueConvertible Implementations](optional/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](optional/intentvalueexpressing-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [AccessibilityRotorContent](../SwiftUI/AccessibilityRotorContent.md)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [AttachmentContent](../RealityKit/AttachmentContent.md)
 - [AttributedTextFormattingDefinition](../SwiftUI/AttributedTextFormattingDefinition.md)
@@ -218,6 +217,7 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [CustomizableToolbarContent](../SwiftUI/CustomizableToolbarContent.md)
 - [Decodable](decodable.md)
 - [DecodableWithConfiguration](../Foundation/DecodableWithConfiguration.md)
+- [DynamicInstructions](../FoundationModels/DynamicInstructions.md)
 - [Encodable](encodable.md)
 - [EncodableWithConfiguration](../Foundation/EncodableWithConfiguration.md)
 - [Equatable](equatable.md)
@@ -226,9 +226,12 @@ Unconditionally unwrapping a `nil` instance with `!` triggers a runtime error.
 - [Gesture](../SwiftUI/Gesture.md)
 - [Hashable](hashable.md)
 - [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [MapContent](../MapKit/MapContent.md)
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [RelationshipCollection](../SwiftData/RelationshipCollection.md)
+- [SceneAccessoryContent](../SwiftUI/SceneAccessoryContent.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [SliderTickContent](../SwiftUI/SliderTickContent.md)

@@ -13,8 +13,6 @@ Get the status of all managed apps on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -36,7 +34,7 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
@@ -105,7 +103,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ManagedApplicationListCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

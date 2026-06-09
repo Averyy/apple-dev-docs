@@ -225,6 +225,7 @@ enum ErrorCode
 ## See Also
 
 - [XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.enum.md)
+  Defines the external entity resolving policy used by an `NSXMLParser` instance.
 - [class let errorDomain: String](xmlparser/errordomain.md)
   Indicates an error in XML parsing.
 

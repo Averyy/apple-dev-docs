@@ -2,7 +2,7 @@
 
 **Framework**: Device Management
 
-The available declarations for device management.
+Configure devices using declarative device management.
 
 ## Topics
 
@@ -23,10 +23,16 @@ The available declarations for device management.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
@@ -40,13 +46,27 @@ The available declarations for device management.
 - [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
   The declaration to configure status subscriptions.
 - [object ManagementTest](managementtest.md)
-  The declaration to test declarative device management.
-- [object MigrationAssistantSettings](migrationassistantsettings.md)
-  The declaration to configure Migration Assistant settings.
+  The declaration to configure a declarative device management test.
 - [object MathSettings](mathsettings.md)
   The declaration to configure the math and calculator apps.
+- [object MigrationAssistantSettings](migrationassistantsettings.md)
+  The declaration to configure Migration Assistant settings.
+- [object NetworkDNSProxy](networkdnsproxy.md)
+  The declaration to configure DNS proxy settings.
+- [object NetworkDNSSettings](networkdnssettings.md)
+  The declaration to configure encrypted DNS settings.
+- [object NetworkRelay](networkrelay.md)
+  The declaration to configure Network Relay settings.
+- [object NetworkVPNAlwaysOn](networkvpnalwayson.md)
+  The declaration to configure a VPN using the Always On sub-type.
+- [object NetworkVPNIKEV2](networkvpnikev2.md)
+  The declaration to configure a VPN using the IKEv2 sub-type.
+- [object NetworkVPNIPSec](networkvpnipsec.md)
+  The declaration to configure a VPN using the IPSec sub-type.
+- [object NetworkVPNVPNPlugin](networkvpnvpnplugin.md)
+  The declaration to configure a VPN using the VPN plugin sub-type.
 - [object Package](package.md)
-  The declaration to install a package.
+  The declaration to configure a package.
 - [object PasscodeSettings](passcodesettings.md)
   The declaration to configure passcode policy settings.
 - [object SafariBookmarks](safaribookmarks.md)
@@ -62,23 +82,25 @@ The available declarations for device management.
 - [object ScreenSharingHostSettings](screensharinghostsettings.md)
   The declaration to configure screen-sharing host settings and restrictions.
 - [object SecurityCertificate](securitycertificate.md)
-  The declaration to add a certificate to the device.
+  The declaration to configure a certificate.
 - [object SecurityIdentity](securityidentity.md)
-  The declaration to install an identity on the device.
+  The declaration to configure an identity.
 - [object SecurityPasskeyAttestation](securitypasskeyattestation.md)
   The declaration to configure the device to allow WebAuthn enterprise attestation for certain passkeys.
 - [object ServicesBackgroundTasks](servicesbackgroundtasks.md)
   The declaration to configure background tasks.
 - [object ServicesConfigurationFiles](servicesconfigurationfiles.md)
-  The managed configuration files for services.
+  The declaration to configure managed configuration files for services.
 - [object SiriSettings](sirisettings.md)
   The declaration to configure Siri settings.
 - [object SoftwareUpdateEnforcementSpecific](softwareupdateenforcementspecific.md)
-  A software update enforcement policy for a specific OS release.
+  The declaration to configure a software update enforcement policy for a specific OS release.
 - [object SoftwareUpdateSettings](softwareupdatesettings.md)
   The declaration to configure software updates.
 - [object WatchEnrollment](watchenrollment.md)
   The declaration to configure an MDMv1 profile for Apple Watch enrollment.
+- [object WebContentFilterPlugin](webcontentfilterplugin.md)
+  The declaration to configure a WebContent Filter that uses a plugin.
 ### Activations
 - [object ActivationSimple](activationsimple.md)
   The declaration to activate a set of configurations.
@@ -113,20 +135,14 @@ The available declarations for device management.
   The declaration to configure the properties on the device.
 - [object ManagementServerCapabilities](managementservercapabilities.md)
   The declaration to configure the server’s feature set.
-### Base Declaration
+### Base declaration
 - [object DeclarationBase](declarationbase.md)
   Keys common to all declarations used with the Remote Management protocol.
 
 ## See Also
 
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
-  Use declarative management to make devices more autonomous and proactive.
-- [Integrating Declarative Management](integrating-declarative-management.md)
-  Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
-- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
-  Use declarative app configurations to deploy managed apps to devices.
-- [Status Reports](status-reports.md)
-  Reports from the device about its current state.
+- [Status items](status-items.md)
+  Monitor device state using status reports.
 
 
 ---

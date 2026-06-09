@@ -33,7 +33,7 @@ do {
 }
 ```
 
-For complete instructions on installing Rosetta see [`Running Intel Binaries in Linux VMs with Rosetta`](running-intel-binaries-in-linux-vms-with-rosetta.md), which includes additional information about checking for Rosetta availability, mounting the directory share, and registering the Rosetta runtime binary to run Intel binaries in a guest VM.
+For complete instructions on installing Rosetta see doc:running-intel-binaries-in-linux-vms-with-rosetta, which includes additional information about checking for Rosetta availability, mounting the directory share, and registering the Rosetta runtime binary to run Intel binaries in a guest VM.
 
 For information on using a custom kernel to enhance Rosetta performance, see [`Accelerating the performance of Rosetta`](accelerating-the-performance-of-rosetta.md).
 

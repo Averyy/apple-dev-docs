@@ -1,10 +1,12 @@
-# GET /v1/passTypeIds/{id}/relationships/certificates
+# List certificate ids for a passtypeid
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+List all certificate IDs for a specific pass type ID.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,20 +18,21 @@
 
 ## See Also
 
-- [List Passtypeid IDs for a Certificate](get-v1-certificates-_id_-passtypeid.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-passtypeid.md)
   List all PassTypeID Ids for a specific certificate.
-- [GET /v1/certificates/{id}/relationships/passTypeId](get-v1-certificates-_id_-relationships-passtypeid.md)
-- [List Pass Type IDs](get-v1-passtypeids.md)
+- [List passtypeid ids for a certificate](get-v1-certificates-_id_-relationships-passtypeid.md)
+  List all PassTypeIDId Ids for a specific certificate.
+- [List pass type ids](get-v1-passtypeids.md)
   Find and list pass type IDs that are registered to your team.
-- [Read Passtypeid Information](get-v1-passtypeids-_id_.md)
+- [Read passtypeid information](get-v1-passtypeids-_id_.md)
   Get information about a specific pass type ID.
-- [List All Certificates for a Passtypeid](get-v1-passtypeids-_id_-certificates.md)
+- [List all certificates for a passtypeid](get-v1-passtypeids-_id_-certificates.md)
   List all certificates for a specific pass type ID.
-- [Modify a Passtypeid](patch-v1-passtypeids-_id_.md)
+- [Modify a passtypeid](patch-v1-passtypeids-_id_.md)
   Update a specific pass type ID’s name.
-- [Create a Passtypeid](post-v1-passtypeids.md)
+- [Create a passtypeid](post-v1-passtypeids.md)
   Create a new identifier for use with a pass type ID certificate using a certificate signing request.
-- [Delete a Passtypeid](delete-v1-passtypeids-_id_.md)
+- [Delete a passtypeid](delete-v1-passtypeids-_id_.md)
   Delete a pass type ID that is used for app distribution.
 
 

@@ -46,6 +46,13 @@ struct RootView: View {
 
 - `action`: A closure to run when the state of the window’s interactive resize changes.
 
+## See Also
+
+- [func onGeometryChange(for:of:action:)](view/ongeometrychange(for:of:action:).md)
+  Adds an action to be performed when a value, created from a geometry proxy, changes.
+- [func onGeometryChange3D(for:of:action:)](view/ongeometrychange3d(for:of:action:).md)
+  Returns a new view that arranges to call `action(value)` whenever the value computed by `transform(proxy)` changes, where `proxy` provides access to the view’s 3D geometry properties.
+
 
 ---
 

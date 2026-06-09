@@ -34,7 +34,7 @@ struct MutableSpan<Element> where Element : ~Copyable
 - [var span: Span<Element>](mutablespan/span.md)
 ### Instance Methods
 - [func extracting(some RangeExpression<Int>) -> MutableSpan<Element>](mutablespan/extracting(_:)-2g8w3.md)
-- [func extracting((UnboundedRange_) -> ()) -> MutableSpan<Element>](mutablespan/extracting(_:)-80srp.md)
+- [func extracting(UnboundedRange) -> MutableSpan<Element>](mutablespan/extracting(_:)-80srp.md)
 - [func extracting(Range<MutableSpan<Element>.Index>) -> MutableSpan<Element>](mutablespan/extracting(_:)-bphj.md)
 - [func extracting(droppingFirst: Int) -> MutableSpan<Element>](mutablespan/extracting(droppingfirst:).md)
 - [func extracting(droppingLast: Int) -> MutableSpan<Element>](mutablespan/extracting(droppinglast:).md)
@@ -45,6 +45,7 @@ struct MutableSpan<Element> where Element : ~Copyable
 - [func swapAt(MutableSpan<Element>.Index, MutableSpan<Element>.Index)](mutablespan/swapat(_:_:).md)
 - [func swapAt(unchecked: MutableSpan<Element>.Index, unchecked: MutableSpan<Element>.Index)](mutablespan/swapat(unchecked:unchecked:).md)
 - [func update(repeating: consuming Element)](mutablespan/update(repeating:).md)
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](mutablespan/withbytes(_:).md)
 - [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebufferpointer(_:).md)
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebytes(_:).md)
 - [func withUnsafeMutableBufferPointer<E, Result>((UnsafeMutableBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafemutablebufferpointer(_:).md)
@@ -56,10 +57,14 @@ struct MutableSpan<Element> where Element : ~Copyable
   Accesses the element at the specified position in the `MutableSpan`.
 ### Type Aliases
 - [MutableSpan.Index](mutablespan/index.md)
+### Default Implementations
+- [BorrowingSequence Implementations](mutablespan/borrowingsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [BorrowingSequence](borrowingsequence.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

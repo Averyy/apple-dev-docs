@@ -55,10 +55,10 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageVersions]` ([string])
-- `fields[alternativeDistributionPackages]` ([string])
-- `include` ([string])
-- `limit[versions]` (integer)
+- `fields[alternativeDistributionPackageVersions]` ([string]): Additional fields to include for each alternative distribution package versions resource returned by the response.
+- `fields[alternativeDistributionPackages]` ([string]): Additional fields to include for each alternative distribution packages resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[versions]` (integer): The maximum number of related versions resources to return.
 
 ## See Also
 
@@ -66,7 +66,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages/c925443
   Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
 - [Create an Alternative Distribution Package](post-v1-alternativedistributionpackages.md)
   Create an alternative distribution package for an App Store version.
-- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an app store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
 - [Read Version Information for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-versions.md)
   Get version detail information about a specific alternative distribution package.

@@ -17,6 +17,7 @@ A button that triggers a standard rename action.
 ## Declaration
 
 ```swift
+nonisolated
 struct RenameButton<Label> where Label : View
 ```
 
@@ -30,7 +31,7 @@ struct RowView: View {
     @FocusState private var isFocused: Bool
 
     var body: some View {
-        TextField(text: $item.name) {
+        TextField(text: $text) {
             Text("Prompt")
         }
         .focused($isFocused)
@@ -38,7 +39,8 @@ struct RowView: View {
             RenameButton()
             // ... your own custom actions
         }
-        .renameAction { $isFocused = true }
+        .renameAction { isFocused = true }
+    }
 }
 ```
 
@@ -48,7 +50,8 @@ You can use this button inside of a navigation title menu and the navigation tit
 
 ```swift
 ContentView()
-    .navigationTitle($contentTitle) {
+    .navigationTitle($contentTitle)
+    .toolbarTitleMenu {
         // ... your own custom actions
         RenameButton()
     }

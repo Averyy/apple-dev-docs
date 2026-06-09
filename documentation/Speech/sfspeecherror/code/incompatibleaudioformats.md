@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: property
 
-The selected modules do not have an audio format in common.
+The selected modules do not have an audio format in common or do not support an audio format.
 
 **Availability**:
 - iOS 26.0+

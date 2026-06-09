@@ -44,22 +44,22 @@ https://api.appstoreconnect.apple.com/v1/appPriceSchedules/6447402192/baseTerrit
 
 ## Parameters
 
-- `fields[territories]` ([string])
+- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
 
 ## See Also
 
 - [Read Price Schedule Information for an App](get-v1-apps-_id_-apppriceschedule.md)
   Read price schedule details for a specific app.
-- [GET /v1/apps/{id}/relationships/appPriceSchedule](get-v1-apps-_id_-relationships-apppriceschedule.md)
+- [Get the app price schedule ID for an app](get-v1-apps-_id_-relationships-apppriceschedule.md)
 - [Read an App's Price Schedule Information](get-v1-apppriceschedules-_id_.md)
   List the price schedule details for a specific app.
 - [List Automatically Generated Prices for an App](get-v1-apppriceschedules-_id_-automaticprices.md)
   List the automatically calculated prices for an app generated from a base territory.
 - [List Manually Chosen Prices for an App](get-v1-apppriceschedules-_id_-manualprices.md)
   List the prices you chose for a specific app.
-- [GET /v1/appPriceSchedules/{id}/relationships/automaticPrices](get-v1-apppriceschedules-_id_-relationships-automaticprices.md)
-- [GET /v1/appPriceSchedules/{id}/relationships/baseTerritory](get-v1-apppriceschedules-_id_-relationships-baseterritory.md)
-- [GET /v1/appPriceSchedules/{id}/relationships/manualPrices](get-v1-apppriceschedules-_id_-relationships-manualprices.md)
+- [List automatic price IDs for an app price schedule](get-v1-apppriceschedules-_id_-relationships-automaticprices.md)
+- [Get the base territory ID for an app price schedule](get-v1-apppriceschedules-_id_-relationships-baseterritory.md)
+- [List manual price IDs for an app price schedule](get-v1-apppriceschedules-_id_-relationships-manualprices.md)
 - [Add a Scheduled Price Change to an App](post-v1-apppriceschedules.md)
   Create a scheduled price change for an app.
 

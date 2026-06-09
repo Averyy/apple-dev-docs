@@ -11,6 +11,7 @@ A scene that presents its content in an unbounded space.
 ## Declaration
 
 ```swift
+nonisolated
 struct ImmersiveSpace<Content, Data> where Content : ImmersiveSpaceContent, Data : Decodable, Data : Encodable, Data : Hashable
 ```
 

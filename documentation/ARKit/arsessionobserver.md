@@ -9,6 +9,7 @@ Methods you can implement to respond to changes in the state of an AR session.
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
+- visionOS 1.0+
 
 ## Declaration
 

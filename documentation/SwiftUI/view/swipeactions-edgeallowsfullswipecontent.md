@@ -17,7 +17,7 @@ Adds custom swipe actions to a row in a list.
 
 ```swift
 nonisolated
-func swipeActions<T>(edge: HorizontalEdge = .trailing, allowsFullSwipe: Bool = true, @ViewBuilder content: () -> T) -> some View where T : View
+func swipeActions<T>(edge: HorizontalEdge = .trailing, allowsFullSwipe: Bool = true, @ContentBuilder content: () -> T) -> some View where T : View
 ```
 
 #### Discussion

@@ -37,10 +37,12 @@ struct MXLaunchTaskID
 
 ## See Also
 
-- [class func extendLaunchMeasurement(forTaskID: MXLaunchTaskID) throws](mxmetricmanager/extendlaunchmeasurement(fortaskid:).md)
-  Starts to measure an extended launch task with the given task identifier.
-- [class func finishExtendedLaunchMeasurement(forTaskID: MXLaunchTaskID) throws](mxmetricmanager/finishextendedlaunchmeasurement(fortaskid:).md)
-  Signals the end of an extended launch task.
+- [class MXAnimationMetric](mxanimationmetric.md)
+  An object representing metrics about the responsiveness of animation in the app.
+- [class MXAppLaunchMetric](mxapplaunchmetric.md)
+  An object representing metrics about app launch time.
+- [class MXAppResponsivenessMetric](mxappresponsivenessmetric.md)
+  An object representing metrics about the responsiveness of the app to user interaction.
 
 
 ---

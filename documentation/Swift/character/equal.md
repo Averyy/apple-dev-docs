@@ -31,7 +31,7 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](character/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](character/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

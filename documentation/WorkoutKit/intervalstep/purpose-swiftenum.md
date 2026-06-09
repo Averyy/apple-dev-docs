@@ -25,18 +25,10 @@ enum Purpose
   A recovery step.
 - [IntervalStep.Purpose.work](intervalstep/purpose-swift.enum/work.md)
   A work step.
-### Comparing purposes
-- [var hashValue: Int](intervalstep/purpose-swift.enum/hashvalue.md)
-- [func hash(into: inout Hasher)](intervalstep/purpose-swift.enum/hash(into:).md)
-- [static func != (Self, Self) -> Bool](intervalstep/purpose-swift.enum/!=(_:_:).md)
-- [static func == (IntervalStep.Purpose, IntervalStep.Purpose) -> Bool](intervalstep/purpose-swift.enum/==(_:_:).md)
-### Default Implementations
-- [Equatable Implementations](intervalstep/purpose-swift.enum/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

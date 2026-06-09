@@ -16,8 +16,8 @@ Creates a list that identifies its rows based on a key path to the identifier of
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, selection: Binding<SelectionValue?>?, @ViewBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<LazyMapSequence<Data.Indices, (Data.Index, ID)>, ID, RowContent>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
+nonisolated
+init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, selection: Binding<SelectionValue?>?, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<LazyMapSequence<Data.Indices, (Data.Index, ID)>, ID, RowContent>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ Creates a list that identifies its rows based on a key path to the identifier of
 - `data`: The data for populating the list.
 - `id`: The key path to the data model’s identifier.
 - `selection`: A binding to a selected value.
-- `rowContent`: A view builder that creates the view for a single row of the list.
+- `rowContent`: A content builder that creates the view for a single row of the list.
 
 ## See Also
 

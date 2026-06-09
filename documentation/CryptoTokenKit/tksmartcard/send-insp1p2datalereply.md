@@ -37,8 +37,6 @@ This call handles all ISO7816-4 APDU cases, translating to proper the sequences 
 
 ## See Also
 
-- [func send(ins: UInt8, p1: UInt8, p2: UInt8, data: Data?, le: Int?) throws -> (sw: UInt16, response: Data)](tksmartcard/send(ins:p1:p2:data:le:).md)
-  Synchronously transmits an APDU command to the card and returns the response.
 - [func withSession<T>(() throws -> T) throws -> T](tksmartcard/withsession(_:).md)
   Synchronously begins a session, executes the given closure, and ends the session.
 

@@ -22,11 +22,6 @@ init(target: Measurement<UnitFrequency>)
 
 - `target`: A measurement that uses frequency units.
 
-## See Also
-
-- [static func cadence(Double, unit: UnitFrequency) -> Self](cadencethresholdalert/cadence(_:unit:).md)
-  Returns a new cadence threshold alert for the target value.
-
 
 ---
 

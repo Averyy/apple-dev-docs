@@ -17,6 +17,7 @@ A view type that supports immediate mode drawing.
 ## Declaration
 
 ```swift
+nonisolated
 struct Canvas<Symbols> where Symbols : View
 ```
 

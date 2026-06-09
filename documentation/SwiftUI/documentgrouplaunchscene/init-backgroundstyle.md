@@ -15,7 +15,7 @@ Creates a launch scene for document-based applications with a title, a backgroun
 
 ```swift
 nonisolated
-init<B>(_ title: LocalizedStringKey, backgroundStyle: B = BackgroundStyle(), @ViewBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }) where B : ShapeStyle
+init<B>(_ title: LocalizedStringKey, backgroundStyle: B = BackgroundStyle(), @ContentBuilder _ actions: () -> Actions = { DefaultDocumentGroupLaunchActions() }) where B : ShapeStyle
 ```
 
 #### Discussion
@@ -26,7 +26,7 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 
 - `title`: A key to use for the view title.
 - `backgroundStyle`: A background style of the view.
-- `actions`: A view builder for returning the view’s actions.
+- `actions`: A content builder for returning the view’s actions.
 
 
 ---

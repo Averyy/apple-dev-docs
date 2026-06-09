@@ -16,6 +16,7 @@ object AppPricePointV3.Relationships.Territory
 
 ### Objects
 - [object AppPricePointV3.Relationships.Territory.Data](apppricepointv3/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app price point v3.
 
 ## Properties
 

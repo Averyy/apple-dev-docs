@@ -2,81 +2,23 @@
 
 **Framework**: Xcode
 
-Make your app’s text translatable by leveraging the localization APIs in the Foundation framework.
+Use localizable APIs to populate string catalogs automatically with your app’s user-facing text.
 
 #### Overview
 
-Before the system can translate your app’s text, you need to prepare your app’s strings for translation by creating localizable versions of these strings using the `String(localized:)` and `AttributedString(localized:)` APIs found in the Foundation framework.
+Wrap all user-facing text in localizable APIs that look up translations for strings based on the Language & Region settings on the device. Xcode also finds strings in localizable APIs and adds them to string catalog files for you at build time. Optionally, pass comments to localizable APIs to give localizers additional context. You can also pass table names to organize strings into separate string catalogs.
 
-Localizable strings are user-facing strings you present to people at runtime. These strings signal to the system that they should be considered for translation, and thus added to your string catalog file. You then export those strings from your string catalog and send them to a localizer for translation or you edit the string catalog yourself and enter the translations directly there.
+For more information on string catalogs, see [`Localizing and varying text with a string catalog`](localizing-and-varying-text-with-a-string-catalog.md).
 
-##### Make Your String Literals Localizable
+##### Localize Text in Your View Hierarchy
 
-String literals — strings created only with double quotes — aren’t localizable by themselves.
+When you use SwiftUI, all string literals of type [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey) within a view are automatically localizable.
 
-```swift
-// An example of a nonlocalizable string literal.
-let name = "Lightbulbs"
-```
-
-There’s no way for the system to know whether the string literal is a user-facing string in need of translation or simply a print statement there for debugging.
-
-To make a string localizable, create a [`String`](https://developer.apple.com/documentation/Swift/String) object using the [`init(localized:)`](https://developer.apple.com/documentation/Swift/String/init(localized:)) initializer.
-
-```swift
-// Localizable string with the same key and value.
-String(localized: "Lightbulbs")
-```
-
-This initializer takes the string literal passed in as a [`LocalizedStringResource`](https://developer.apple.com/documentation/Foundation/LocalizedStringResource) and assigns it to a key equal to the value of the string literal itself. Your string catalog uses this key to look up translations based on the language and locale of the user’s device, and then returns the translated value associated with that key. With this initializer, the key and underlying string value are the same. This means you can use the text of your development language as the keys for your translations.
-
-To create localizable strings with different keys and values, use the  [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:defaultValue:options:table:bundle:locale:comment:)) initializer. This initializer assigns the first string literal as the string’s key and makes the second parameter the default string value.
-
-```swift
-// Localizable string with a different key and value.
-String(localized: "LIGHTING_KEY", defaultValue: "Lightbulbs")
-```
-
-If someone else translates your strings, consider adding helpful comments to your string initializers to provide additional context about how and when the string displays.
-
-```swift
-// Localizable string with a comment providing additional context.
-String(localized: "Lightbulbs", comment: "Label: The icon name displayed on the control screen")
-```
-
-If the number of translations in your string catalog grows too large, consider breaking the default catalog up into several smaller catalogs. Then specify which catalog a translation comes from using the `table` parameter in the [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:defaultValue:options:table:bundle:locale:comment:)) initializer.
-
-```swift
-// Localizable string referenced from the Greetings.xcstrings string catalog file.
-String(localized: "Welcome", table: "Greetings")
-```
-
-Use `String(localized:)` and `AttributedString(localized:)` initializers to initialize UIKit and AppKit controls as well as general Swift structures containing variables of type [`String`](https://developer.apple.com/documentation/Swift/String).
-
-```swift
-struct Accessory {
-     // Nonlocalizable string literal.
-     let name: String
-}
-// Made localizable using the String(localized:) initializer.
-Accessory(name: String(localized: "Welcome"))
-
-// Localizable string passed into a UIKit control.
-let label = UILabel()
-label.text = String(localized: "Welcome")
-
-// Localizable string passed into a AppKit UI control.
-let textField = NSTextField()
-textField.stringValue = String(localized: "Welcome")
-```
-
-##### Localize Text Automatically in Swiftui
-
-SwiftUI views that accept string literals of type [`LocalizedStringKey`](https://developer.apple.com/documentation/SwiftUI/LocalizedStringKey) are automatically considered localizable. For example, the following strings are all automatically considered localizable in SwiftUI:
+For example, Xcode adds the following string literals in this code snippet to the default string catalog:
 
 ```swift
 // Text made localizable with LocalizedStringKey.
-
+Text("Title")
 Label("Thanks for shopping with us!", systemImage: "bag")
     .font(.title)
 HStack {
@@ -85,7 +27,31 @@ HStack {
 }
 ```
 
-To help translators better understand the context for a localized string, use the [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)) initializer of your [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view and provide a comment with additional details.
+##### Create Localizable Strings
+
+Use the [`init(localized:)`](https://developer.apple.com/documentation/Swift/String/init(localized:)) initializer when creating [`String`](https://developer.apple.com/documentation/Swift/String) and [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) objects that contain text you want to localize.
+
+```swift
+// General localizable text.
+String(localized: "Add a description for your collection here.")
+```
+
+The initializer uses the string that you pass as the key to look up the translation based on the device settings.
+
+To create localizable strings with different keys and values, use the  [`init(localized:defaultValue:options:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:defaultValue:options:table:bundle:locale:comment:)) initializer. Xcode uses the first parameter as the key and the second parameter as the default source string.
+
+```swift
+// Localizable string with a different key and value.
+String(localized: "LIGHTING_KEY", defaultValue: "Lightbulbs")
+```
+
+For additional initializer options, see [`String`](https://developer.apple.com/documentation/Swift/String#Creating-a-Localized-String). For apps targeting older platforms, use the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) instead.
+
+##### Add Comments to Your Localizable Strings
+
+Add comments to give context and assist localizers when translating your text.
+
+In SwiftUI, use the [`init(_:tableName:bundle:comment:)`](https://developer.apple.com/documentation/SwiftUI/Text/init(_:tableName:bundle:comment:)) initializer of your [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) view and provide a comment with additional details.
 
 ```swift
 // Provide additional localizable data with a `TextView`.
@@ -98,6 +64,32 @@ Stepper {
     // ...
 }
 ```
+
+In Swift, use the [`init(localized:table:bundle:locale:comment:)`](https://developer.apple.com/documentation/Swift/String/init(localized:table:bundle:locale:comment:)) initializer:
+
+```swift
+// Localizable text with comments.
+Text("Edit", comment: "The text label on a button to switch to editor mode.")
+String(localized: "North America", comment: "The name of a continent.")
+```
+
+Alternatively, let Xcode generate comments for you from the context of your code. For more information, see [`Generate comments automatically`](localizing-and-varying-text-with-a-string-catalog#Generate-comments-automatically.md).
+
+##### Organize Localizable Strings Into Tables
+
+If the number of translations in your string catalog grows too large, consider using multiple string catalogs in one project. Then, when you build your app, Xcode adds the localizable strings to the catalog that you specify with a name.
+
+In your code, choose which string catalog to use for each translation by passing the string catalog name to the localizable API using the `tableName` or `table` parameter.
+
+```swift
+// A SwiftUI localization example pointing to a specific string catalog.
+Text("Explore", tableName: "Navigation")
+
+// A general text localization example pointing to a specific string catalog.
+String(localized: "Gorgeous mountain peaks!", table: "LandmarkCollectionData")
+```
+
+Use `String(localized:)` and `AttributedString(localized:)` initializers to initialize UIKit and AppKit controls as well.
 
 ##### Pass Localizable Strings with a Localizable Type
 
@@ -141,23 +133,22 @@ let action = UserAction(title: "Order items")
 let actionWithComment = UserAction(title: LocalizedStringResource("Order items", comment: "Action title displayed in button"))
 ```
 
-##### Define and Load Localizable Strings From Within Your Framework
+##### Load Localizable Strings That Reside Outside of the Main Bundle
 
-If you define the strings that you want to localize in another module, framework, or Swift Package, use the `bundle` argument in their definition. For example, say you want to modularize your project and you create a framework called `BirdFinderUtilities`. To look up a localizable string from within that framework:
+When localizable strings reside in another module, framework, or Swift Package, pass the [`bundle()`](https://developer.apple.com/documentation/Foundation/bundle()) macro as the `bundle` parameter in localizable APIs to tell the system to look up the translation in the bundle associated with that target.
 
-1. Identify the name of a class within the framework (in this case, `BirdSongs`).
-2. Pass that class into an instance of [`Bundle`](https://developer.apple.com/documentation/Foundation/Bundle) using the [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer.
-3. Use that `Bundle` to look up the localizable string.
+```swift
+    // Localizable string within a framework.
+    String(localized: "Songs", bundle: #bundle)
+```
+
+If you invoke this code in the app target, the macro returns the main bundle. Or you can explicitly pass `Bundle.main` which is also the default bundle.
+
+Alternatively, you can create a bundle from a specific class that resides in that target using the [`init(for:)`](https://developer.apple.com/documentation/Foundation/Bundle/init(for:)) initializer and pass that as the `bundle` parameter to localizable APIs. For example, you can use this initializer in the framework code where the `BirdSongs` class resides.
 
 ```swift
 // Localizable string within a framework.
 String(localized: "Songs", bundle: Bundle(for: (BirdSongs.self)))
-
-// Localizable string within a framework in SwiftUI.
-Text("Songs", bundle: Bundle(for: (BirdSongs.self)))
-
-// Localizable string within a framework for a `LocalizedStringResource`.
-LocalizedStringResource("Songs", bundle: .forClass(BirdSongs.self), comment: "Headline above the name of the song currently playing.")
 ```
 
 > ❗ **Important**: Avoid looking up strings from bundles you don’t own. Doing so may prevent automatic string extraction from properly working in the string catalog.

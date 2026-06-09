@@ -17,6 +17,7 @@ A non-scrolling form style with a trailing aligned column of labels next to a le
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

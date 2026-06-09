@@ -36,6 +36,12 @@ func dropLast() -> IndexPath
   Returns a new index path containing the elements of this one plus an array of additional elements.
 - [func compare(IndexPath) -> ComparisonResult](indexpath/compare(_:).md)
   Compares this index path to another in depth-first traversal order.
+- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+  Returns the index that follows the given index.
+- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+  Returns the index that precedes the given index.
+- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+  Returns an iterator over the nodes of the index path.
 
 
 ---

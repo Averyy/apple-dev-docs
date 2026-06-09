@@ -25,7 +25,8 @@ An initialized `NSPopUpButton` object, or `nil` if the object could not be initi
 
 ## See Also
 
-- [Application Menu and Pop-up List Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MenuList/MenuList.html#//apple_ref/doc/uid/10000032i)
+- [init(textCell: String, pullsDown: Bool)](nspopupbuttoncell/init(textcell:pullsdown:).md)
+  Returns an `NSPopUpButtonCell` object initialized with the specified title.
 - [var pullsDown: Bool](nspopupbutton/pullsdown.md)
   A Boolean value indicating whether the button displays a pull-down or pop-up menu.
 

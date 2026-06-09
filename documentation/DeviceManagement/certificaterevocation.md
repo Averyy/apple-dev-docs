@@ -10,8 +10,6 @@ The payload that configures certificate revocation checking.
 - iPadOS 14.2+
 - Mac Catalyst 14.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,10 +26,10 @@ Specify `com.apple.security.certificaterevocation` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 

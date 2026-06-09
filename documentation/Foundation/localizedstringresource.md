@@ -72,6 +72,11 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
 
 ## Topics
 
+### Creating a localized string resource from literal values
+- [init(stringLiteral: String)](localizedstringresource/init(stringliteral:).md)
+  Creates a localized string resource from the specified string literal.
+- [init(stringInterpolation: String.LocalizationValue.StringInterpolation)](localizedstringresource/init(stringinterpolation:).md)
+  Creates a localized string resource from the given string interpolation.
 ### Accessing resource properties
 - [let key: String](localizedstringresource/key.md)
   The key to use to look up a localized string.
@@ -85,10 +90,15 @@ The [`App Intents`](https://developer.apple.com/documentation/AppIntents) framew
   The location of a bundle to use for looking up localized strings, such as the main bundle, or a bundle at a specific file URL.
 - [var locale: Locale](localizedstringresource/locale.md)
   The locale to use to look up the localized string from the string resource.
+### Describing a resource
+- [var localizedStringResource: LocalizedStringResource](localizedstringresource/localizedstringresource.md)
+  A resource that helps provide a description of the instance.
 ### Initializers
 - [init(StaticString, defaultValue: String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:defaultvalue:table:locale:bundle:comment:)-1apqa.md)
+  Creates a localized string resource from a static string and its bundle properties.
 - [init(StaticString, defaultValue: String.LocalizationValue, table: String?, locale: Locale, bundle: Bundle, comment: StaticString?)](localizedstringresource/init(_:defaultvalue:table:locale:bundle:comment:)-8jyvr.md)
 - [init(String.LocalizationValue, table: String?, locale: Locale, bundle: LocalizedStringResource.BundleDescription, comment: StaticString?)](localizedstringresource/init(_:table:locale:bundle:comment:)-69k32.md)
+  Creates a localized string resource from a localization key and its bundle properties.
 - [init(String.LocalizationValue, table: String?, locale: Locale, bundle: Bundle, comment: StaticString?)](localizedstringresource/init(_:table:locale:bundle:comment:)-8o153.md)
 
 ## Relationships

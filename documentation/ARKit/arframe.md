@@ -89,6 +89,9 @@ Each frame can contain additional data, for example, EXIF ([`exifData`](arframe/
   The session’s condition with respect to geographic tracking at the time the session captured the frame.
 - [class ARGeoTrackingStatus](argeotrackingstatus.md)
   The state, accuracy, and reason that are possible for geo-tracking’s current condition.
+### Instance Properties
+- [var metadataObjects: [AVMetadataObject]](arframe/metadataobjects.md)
+  Metadata objects associated with the current frame.
 
 ## Relationships
 

@@ -9,13 +9,16 @@ The total electrical energy consumed or generated.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 var totalEnergy: Measurement<UnitEnergy>?
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 ## See Also
 

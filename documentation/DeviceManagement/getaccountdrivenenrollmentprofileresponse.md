@@ -6,8 +6,7 @@
 The details for an account-driven enrollment profile.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.1+
 
 ## Declaration
 

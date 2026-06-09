@@ -11,7 +11,7 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion

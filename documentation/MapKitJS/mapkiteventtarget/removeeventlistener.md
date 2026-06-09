@@ -18,10 +18,6 @@ removeEventListener(
     ): boolean;
 ```
 
-## Mentions
-
-- [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
-
 #### Discussion
 
 Unlike a DOM `EventTarget`, a [`MapKitEventTarget`](mapkiteventtarget.md) doesn’t go through bubbling or capturing phases. The system also interprets the second and the third parameters differently from the DOM’s `EventTarget`.

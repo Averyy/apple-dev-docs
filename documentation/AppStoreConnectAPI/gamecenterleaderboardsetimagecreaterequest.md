@@ -18,6 +18,7 @@ object GameCenterLeaderboardSetImageCreateRequest
 
 ### Objects
 - [object GameCenterLeaderboardSetImageCreateRequest.Data](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center leaderboard set image.
 
 ## Properties
 
@@ -36,7 +37,7 @@ object GameCenterLeaderboardSetImageCreateRequest
 - [object GameCenterLeaderboardSetImage](gamecenterleaderboardsetimage.md)
   The data structure that represent a leaderboard set image resource.
 - [object GameCenterLeaderboardSetImageResponse](gamecenterleaderboardsetimageresponse.md)
-  A response that contains a single leaderboard set image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard set image.
 - [object GameCenterLeaderboardSetImageUpdateRequest](gamecenterleaderboardsetimageupdaterequest.md)
   The request body you use to update a leaderboard set image.
 

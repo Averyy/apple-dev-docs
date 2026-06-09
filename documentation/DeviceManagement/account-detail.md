@@ -6,8 +6,7 @@
 Obtain the details for your account.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 #### Discussion
 

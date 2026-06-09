@@ -8,6 +8,7 @@ A property that indicates a cumulative duration data path is connected on this W
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

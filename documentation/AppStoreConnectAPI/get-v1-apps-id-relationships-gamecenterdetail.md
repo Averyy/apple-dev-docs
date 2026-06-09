@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/gameCenterDetail
+# Get the Game Center detail ID for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,9 +16,9 @@
 
 ## See Also
 
-- [Read the State of Game Center for an App](get-v1-apps-_id_-gamecenterdetail.md)
+- [Read the state of game center for an app](get-v1-apps-_id_-gamecenterdetail.md)
   Get Game Center detail information for an app.
-- [GET /v1/apps/{id}/relationships/gameCenterEnabledVersions](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
+- [List Game Center-enabled version IDs for an app](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
 
 
 ---

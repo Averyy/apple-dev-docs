@@ -38,6 +38,8 @@ struct CameraTextureMapping
 
 - [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
   A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
+- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+  Calibration mesh geometry based on USDZ data.
 
 
 ---

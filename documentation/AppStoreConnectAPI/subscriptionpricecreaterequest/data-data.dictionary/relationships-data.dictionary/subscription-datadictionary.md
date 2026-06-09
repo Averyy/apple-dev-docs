@@ -16,6 +16,7 @@ object SubscriptionPriceCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionPriceCreateRequest.Data.Relationships.Subscription.Data](subscriptionpricecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription price.
 
 ## Properties
 

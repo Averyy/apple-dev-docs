@@ -8,6 +8,7 @@ The possible reasons the data scanner is unavailable.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -27,7 +28,6 @@ enum ScanningUnavailable
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

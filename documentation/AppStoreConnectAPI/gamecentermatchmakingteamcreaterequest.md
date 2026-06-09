@@ -33,7 +33,7 @@ object GameCenterMatchmakingTeamCreateRequest
 - [object GameCenterMatchmakingTeamsResponse](gamecentermatchmakingteamsresponse.md)
   The response body for endpoints that get multiple teams.
 - [object GameCenterMatchmakingTeam](gamecentermatchmakingteam.md)
-  The data structure that represents a team.
+  A team configuration within a Game Center matchmaking rule set, defining team size and composition rules.
 
 
 ---

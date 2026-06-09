@@ -62,8 +62,7 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 - [var defaultTabInterval: CGFloat](nsmutableparagraphstyle/defaulttabinterval.md)
   A number used as the document’s default tab spacing.
 ### Setting text blocks and lists
-- [var textBlocks: [NSTextBlock]](../AppKit/NSMutableParagraphStyle/textBlocks.md)
-  The text blocks that contain the paragraph.
+- [var textBlocks: [NSTextBlock]](nsmutableparagraphstyle/textblocks.md)
 - [var textLists: [NSTextList]](nsmutableparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
 ### Setting line-break information
@@ -108,6 +107,8 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
   A tab in a paragraph.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
 
 
 ---

@@ -43,31 +43,32 @@ For backward compatibility on Mach, `-[NSPort allocWithZone:]` returns an instan
   Marks the receiver as invalid and posts an [`didBecomeInvalidNotification`](port/didbecomeinvalidnotification.md) to the default notification center.
 - [var isValid: Bool](port/isvalid.md)
   A Boolean value that indicates whether the receiver is valid.
-### Setting the Delegate
+### Working with the delegate
 - [func setDelegate((any PortDelegate)?)](port/setdelegate(_:).md)
   Sets the receiver’s delegate to a given object.
 - [func delegate() -> (any PortDelegate)?](port/delegate.md)
   Returns the receiver’s delegate.
-### Setting Information
+### Setting information
 - [func send(before: Date, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](port/send(before:components:from:reserved:).md)
   This method is provided for subclasses that have custom types of `NSPort`.
 - [func send(before: Date, msgid: Int, components: NSMutableArray?, from: Port?, reserved: Int) -> Bool](port/send(before:msgid:components:from:reserved:).md)
   This method is provided for subclasses that have custom types of `NSPort`.
 - [var reservedSpaceLength: Int](port/reservedspacelength.md)
   The number of bytes of space reserved by the receiver for sending data.
-### Port Monitoring
+### Port monitoring
 - [func remove(from: RunLoop, forMode: RunLoop.Mode)](port/remove(from:formode:).md)
   This method should be implemented by a subclass to stop monitoring of a port when removed from a give run loop in a given input mode.
 - [func schedule(in: RunLoop, forMode: RunLoop.Mode)](port/schedule(in:formode:).md)
   This method should be implemented by a subclass to set up monitoring of a port when added to a given run loop in a given input mode.
-### Notifications
+### Working with notifications
 - [class let didBecomeInvalidNotification: NSNotification.Name](port/didbecomeinvalidnotification.md)
   Posted from the [`invalidate()`](port/invalidate().md) method, which is invoked when the `NSPort` is deallocated or when it notices that its communication channel has been damaged. The notification object is the `NSPort` object that has become invalid. This notification does not contain a `userInfo` dictionary.
+### Working with notification messages
+- [struct DidBecomeInvalidMessage](port/didbecomeinvalidmessage.md)
+  A message the system sends when a port becomes invalid.
 ### Data Types
 - [typealias SocketNativeHandle](socketnativehandle.md)
   Type for the platform-specific native socket handle.
-### Structures
-- [struct DidBecomeInvalidMessage](port/didbecomeinvalidmessage.md)
 ### Initializers
 - [init?(coder: NSCoder)](port/init(coder:).md)
 

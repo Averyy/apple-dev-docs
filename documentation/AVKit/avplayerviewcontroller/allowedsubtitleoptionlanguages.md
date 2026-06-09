@@ -24,6 +24,7 @@ To allow only a restricted subset of subtitles, set this property value to an ar
 
 - [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
   A Boolean value that indicates whether the user can disable the display of subtitles.
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 
 ---

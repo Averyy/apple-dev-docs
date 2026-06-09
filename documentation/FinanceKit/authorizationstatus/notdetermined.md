@@ -8,6 +8,7 @@ A person has not chosen whether the app can use FinanceKit services.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

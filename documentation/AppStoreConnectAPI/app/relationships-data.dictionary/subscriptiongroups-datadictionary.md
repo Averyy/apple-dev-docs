@@ -16,6 +16,7 @@ object App.Relationships.SubscriptionGroups
 
 ### Objects
 - [object App.Relationships.SubscriptionGroups.Data](app/relationships-data.dictionary/subscriptiongroups-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related subscription group resource.
 
 ## Properties
 

@@ -6,6 +6,9 @@
 Specifies an action that adds validated items to a view in response to the system’s Paste command.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration

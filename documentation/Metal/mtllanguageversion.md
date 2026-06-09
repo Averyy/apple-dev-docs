@@ -46,6 +46,7 @@ enum MTLLanguageVersion
   Version 1.0 of the Metal shading language.
 ### Enumeration Cases
 - [MTLLanguageVersion.version4_0](mtllanguageversion/version4_0.md)
+- [MTLLanguageVersion.version4_1](mtllanguageversion/version4_1.md)
 ### Initializers
 - [init?(rawValue: UInt)](mtllanguageversion/init(rawvalue:).md)
 

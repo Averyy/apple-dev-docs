@@ -19,6 +19,7 @@ class CPMapTemplateWaypoint
 ## Topics
 
 ### Initializers
+- [init?(coder: NSCoder)](cpmaptemplatewaypoint/init(coder:).md)
 - [init(waypoint: CPNavigationWaypoint, travelEstimates: CPTravelEstimates)](cpmaptemplatewaypoint/init(waypoint:travelestimates:).md)
   Initializes a new CPMapTemplateWaypoint with the specified waypoint and travel estimates.
 ### Instance Properties
@@ -37,7 +38,9 @@ class CPMapTemplateWaypoint
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+- [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 
 
 ---

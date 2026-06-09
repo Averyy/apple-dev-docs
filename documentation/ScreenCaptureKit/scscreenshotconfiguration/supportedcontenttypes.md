@@ -6,8 +6,8 @@
 An array of uniform type identifiers that correspond to file formats the output image supports.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

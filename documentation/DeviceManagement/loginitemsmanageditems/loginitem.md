@@ -7,8 +7,6 @@ A dictionary with the details about a login item.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

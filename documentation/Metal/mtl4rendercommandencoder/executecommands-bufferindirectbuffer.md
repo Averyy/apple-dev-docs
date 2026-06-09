@@ -28,6 +28,8 @@ Metal requires that the contents of this buffer match the layout of struct [`MTL
 
 Use an instance of [`MTLResidencySet`](mtlresidencyset.md) to mark residency of the indirect buffer that the `indirectRangeBuffer` parameter references.
 
+> **Note**: If the `indirectCommandBuffer` parameter references any pipeline state objects, you are responsible for adding them to a [`MTLResidencySet`](mtlresidencyset.md) instance in use when you commit the command buffer. An indirect render command references a pipeline state when you pass it as an argument to the command’s [`setRenderPipelineState(_:)`](mtlindirectrendercommand/setrenderpipelinestate(_:).md) method during CPU encoding, or `set_render_pipeline_state()` during GPU encoding.
+
 ## Parameters
 
 - `indirectCommandBuffer`: A [`MTLIndirectCommandBuffer`](mtlindirectcommandbuffer.md) instance that contains other commands the current command runs.

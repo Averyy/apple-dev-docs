@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init(content: Content)
 ```
 

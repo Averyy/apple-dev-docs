@@ -3,7 +3,7 @@
 **Framework**: MatterSupport  
 **Kind**: property
 
-The version field, as specified by the Matter specificaiton.
+The version field, as specified by the Matter specification.
 
 **Availability**:
 - iOS 16.1+

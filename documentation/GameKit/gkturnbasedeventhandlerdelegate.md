@@ -6,6 +6,9 @@
 The [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol is implemented by an object to receive notifications events for turn-based matches. All methods are called on the main thread.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 3.0+

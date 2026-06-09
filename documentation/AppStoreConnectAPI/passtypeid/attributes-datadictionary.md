@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a pass type id resource.
+The configurable attributes of a pass type identifier, including its identifier string and description.
 
 **Availability**:
 - App Store Connect API 4.0+

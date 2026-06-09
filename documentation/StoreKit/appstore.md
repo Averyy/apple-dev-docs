@@ -70,7 +70,13 @@ Use these static functions and variables to perform tasks like showing the manag
 - [struct AppStoreMerchandisingKind](appstoremerchandisingkind.md)
 ### Type Methods
 - [static func presentMerchandising(AppStoreMerchandisingKind, from: NSWindow) async throws -> AppStoreMerchandisingKind.PresentationResult](appstore/presentmerchandising(_:from:)-8bblo.md)
+  Display a merchandising view.
 - [static func presentMerchandising(AppStoreMerchandisingKind, from: UIViewController) async throws -> AppStoreMerchandisingKind.PresentationResult](appstore/presentmerchandising(_:from:)-hkrd.md)
+  Display a merchandising view.
+- [static func presentOfferCodeRedeemSheet(from: UIViewController, options: Set<RedeemOption>) async throws -> VerificationResult<Transaction>](appstore/presentoffercoderedeemsheet(from:options:)-89agc.md)
+  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
+- [static func presentOfferCodeRedeemSheet(from: NSWindow, options: Set<RedeemOption>) async throws -> VerificationResult<Transaction>](appstore/presentoffercoderedeemsheet(from:options:)-gj8m.md)
+  Presents a sheet that enables users to redeem subscription offer codes that you configure in App Store Connect.
 
 ## Relationships
 

@@ -36,7 +36,6 @@ The framework throws errors of this type when security-session operations fail. 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)

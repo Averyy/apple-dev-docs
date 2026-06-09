@@ -13,27 +13,28 @@ API users can get the `betaAppReviewSubmissions` to see if the build has been ac
 ## Topics
 
 ### Submitting an App for Beta Review
-- [Submit an App for Beta Review](post-v1-betaappreviewsubmissions.md)
+- [Submit an app for beta review](post-v1-betaappreviewsubmissions.md)
   Submit an app for beta app review to allow external testing.
 ### Getting Beta App Review Submissions Info
-- [List Beta App Review Submissions](get-v1-betaappreviewsubmissions.md)
+- [List beta app review submissions](get-v1-betaappreviewsubmissions.md)
   Find and list beta app review submissions for all builds.
-- [Read Beta App Review Submission Information](get-v1-betaappreviewsubmissions-_id_.md)
+- [Read beta app review submission information](get-v1-betaappreviewsubmissions-_id_.md)
   Get a specific beta app review submission.
 ### Getting Build Information
-- [Read the Build Information of a Beta App Review Submission](get-v1-betaappreviewsubmissions-_id_-build.md)
+- [Read the build information of a beta app review submission](get-v1-betaappreviewsubmissions-_id_-build.md)
   Get the build information for a specific beta app review submission.
-- [GET /v1/betaAppReviewSubmissions/{id}/relationships/build](get-v1-betaappreviewsubmissions-_id_-relationships-build.md)
+- [Get the build ID for a beta app review submission](get-v1-betaappreviewsubmissions-_id_-relationships-build.md)
 ### Objects and Data Types
 - [object BetaAppReviewSubmission](betaappreviewsubmission.md)
-  The data structure that represents a Beta App Review Submissions resource.
+  A submission of a build to Apple’s beta app review process, required before external testing.
 - [object BetaAppReviewSubmissionCreateRequest](betaappreviewsubmissioncreaterequest.md)
   The request body you use to create a Beta App Review Submission.
 - [object BetaAppReviewSubmissionResponse](betaappreviewsubmissionresponse.md)
-  A response that contains a single Beta App Review Submissions resource.
+  The response body for endpoints that submit a build for beta app review.
 - [object BetaAppReviewSubmissionWithoutIncludesResponse](betaappreviewsubmissionwithoutincludesresponse.md)
+  A response containing a single beta app review submission, without related resources.
 - [object BetaAppReviewSubmissionsResponse](betaappreviewsubmissionsresponse.md)
-  A response that contains a list of Beta App Review Submission resources.
+  The response body for endpoints that list beta app review submissions.
 - [type BetaReviewState](betareviewstate.md)
   String that indicates the review state of a beta app.
 - [object BetaAppReviewSubmissionBuildLinkageResponse](betaappreviewsubmissionbuildlinkageresponse.md)

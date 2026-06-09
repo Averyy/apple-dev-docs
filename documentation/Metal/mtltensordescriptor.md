@@ -22,10 +22,12 @@ class MTLTensorDescriptor
 ## Topics
 
 ### Instance Properties
+- [var auxiliaryPlanes: MTLTensorAuxiliaryPlaneDescriptorMap?](mtltensordescriptor/auxiliaryplanes.md)
+  The auxiliary plane configurations for this tensor.
 - [var cpuCacheMode: MTLCPUCacheMode](mtltensordescriptor/cpucachemode.md)
   A value that configures the cache mode of CPU mapping of tensors you create with this descriptor.
 - [var dataType: MTLTensorDataType](mtltensordescriptor/datatype.md)
-  A data format for the tensors you create with this descriptor.
+  The data format of all elements in the data plane.
 - [var dimensions: MTLTensorExtents](mtltensordescriptor/dimensions.md)
   An array of sizes, in elements, one for each dimension of the tensors you create with this descriptor.
 - [var hazardTrackingMode: MTLHazardTrackingMode](mtltensordescriptor/hazardtrackingmode.md)

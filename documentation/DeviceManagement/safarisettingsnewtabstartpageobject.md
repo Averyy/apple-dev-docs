@@ -11,8 +11,6 @@ Sets the start page for new tabs in Safari.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,6 +25,11 @@ object SafariSettingsNewTabStartPageObject
 - `PageType` (string) *(required)*: Sets the start page type in Safari: - `Start` - Safari uses the default start page. Safari disables the Homepage.
 - `Home` - Safari uses the page specified by `HomepageURL`, and Safari also sets that as the Homepage.
 - `Extension` - Safari uses the page specified by the Safari extension whose identifier is `ExtensionIdentifier`. Safari disables the Homepage.
+
+## See Also
+
+- [object SafariSettingsPrivacyObject](safarisettingsprivacyobject.md)
+  The dictionary of website privacy settings.
 
 
 ---

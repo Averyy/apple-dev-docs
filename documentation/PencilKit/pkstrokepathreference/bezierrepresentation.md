@@ -1,0 +1,24 @@
+# bezierRepresentation
+
+**Framework**: PencilKit  
+**Kind**: property
+
+A Bézier path representation of the path’s curve, computed in linear time.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+var bezierRepresentation: CGPath { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/pencilkit/pkstrokepathreference/bezierrepresentation)*

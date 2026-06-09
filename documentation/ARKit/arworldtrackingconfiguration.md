@@ -90,6 +90,9 @@ World-tracking sessions also provide several ways for your app to recognize or i
   A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
 - [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
+### Instance Properties
+- [var trackingObjects: Set<ARReferenceObject>](arworldtrackingconfiguration/trackingobjects.md)
+  Objects to track in the scene.
 
 ## Relationships
 

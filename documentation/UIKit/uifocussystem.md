@@ -28,8 +28,6 @@ Use a [`UIFocusSystem`](uifocussystem.md) object to obtain the focus-related sta
 ### Getting a focus system object
 - [init?(for: any UIFocusEnvironment)](uifocussystem/init(for:).md)
   Retrieves a focus system object that contains the state information for the specified object.
-- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:).md)
-  Retrieves the focus system for the specified environment.
 ### Getting the currently focused item
 - [var focusedItem: (any UIFocusItem)?](uifocussystem/focuseditem.md)
   The item that’s currently focused.
@@ -55,6 +53,9 @@ Use a [`UIFocusSystem`](uifocussystem.md) object to obtain the focus-related sta
 - [UIFocusSystem.MovementDidFailMessage](uifocussystem/movementdidfailmessage.md)
 ### Initializers
 - [init?(forEnvironment: any UIFocusEnvironment)](uifocussystem/init(forenvironment:).md)
+### Type Methods
+- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:)-5htbd.md)
+- [class func focusSystem(for: any UIFocusEnvironment) -> UIFocusSystem?](uifocussystem/focussystem(for:)-7tm2f.md)
 
 ## Relationships
 

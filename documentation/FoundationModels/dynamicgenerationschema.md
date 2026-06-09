@@ -11,6 +11,7 @@ The dynamic counterpart to the generation schema type that you use to construct 
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -52,6 +53,21 @@ An individual schema may reference other schemas by name, and references are res
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+  Create robust apps by describing output you want programmatically.
+- [protocol Generable](generable.md)
+  A type that the model uses when responding to prompts.
+- [struct GenerationSchema](generationschema.md)
+  A type that describes the properties of an object and any guides on their values.
+- [struct GeneratedContent](generatedcontent.md)
+  A type that represents structured, generated content.
+- [protocol ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+  A type that can be converted to generated content.
+- [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
+  A type that can be initialized from generated content.
 
 
 ---

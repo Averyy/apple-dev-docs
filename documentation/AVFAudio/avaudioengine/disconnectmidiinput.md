@@ -25,6 +25,8 @@ func disconnectMIDIInput(_ node: AVAudioNode)
 
 ## See Also
 
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-8tmk8.md)
+- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-35k1c.md)
 - [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-73cd1.md)
   Establishes a MIDI connection between two nodes.
 - [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-7qtd5.md)

@@ -33,6 +33,12 @@ Use this structure to define the characteristics and capabilities of your audio 
   The Bluetooth address of the device providing the primary source of audio.
 - [var secondaryAudioSourceDeviceIdentifier: Data?](accessorycontroldevice/configuration-swift.struct/secondaryaudiosourcedeviceidentifier.md)
   The Bluetooth address of the device providing the secondary source of audio.
+### Initializers
+- [init(devicePlacement: AccessoryControlDevice.Placement?, deviceCapabilities: AccessoryControlDevice.Capabilities, primaryAudioSourceDeviceIdentifier: Data?, secondaryAudioSourceDeviceIdentifier: Data?, spatialExtensionDescription: AudioComponentDescription?)](accessorycontroldevice/configuration-swift.struct/init(deviceplacement:devicecapabilities:primaryaudiosourcedeviceidentifier:secondaryaudiosourcedeviceidentifier:spatialextensiondescription:).md)
+  Creates a new device configuration with spatial audio support.
+### Instance Properties
+- [var spatialExtensionDescription: AudioComponentDescription?](accessorycontroldevice/configuration-swift.struct/spatialextensiondescription.md)
+  The spatial audio component description.
 
 ## Relationships
 

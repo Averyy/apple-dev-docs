@@ -4,12 +4,12 @@
 **Kind**: init
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-init?(rawValue: UInt)
+init?(rawValue: Int)
 ```
 
 

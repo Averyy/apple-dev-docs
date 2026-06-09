@@ -33,6 +33,10 @@ A view with an expanded safe area.
 
 By default, the SwiftUI layout system sizes and positions views to avoid certain safe areas. This ensures that system content like the software keyboard or edges of the device don’t obstruct your views. To extend your content into these regions, you can ignore safe areas on specific edges by applying this modifier.
 
+When expanding the safe area, the SwiftUI layout system proposes the expanded size to the view. If your view has a fixed size, the alignment of the view may not be what you expect.
+
+By default, SwiftUI resolves the alignment based on the edges being ignored. For example, providing only the bottom edge will result in a bottom alignment being used. You can use the `View/ignoresSafeArea(_:alignment:)` modifier to explicitly configure the alignment.
+
 For examples of how to use this modifier, see [`Adding a background to your view`](adding-a-background-to-your-view.md).
 
 ## Parameters
@@ -42,6 +46,8 @@ For examples of how to use this modifier, see [`Adding a background to your view
 
 ## See Also
 
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+  Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 - [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
   Shows the specified content beside the modified view.
 - [func safeAreaPadding(_:)](view/safeareapadding(_:).md)

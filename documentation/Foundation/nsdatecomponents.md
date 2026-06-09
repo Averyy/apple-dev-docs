@@ -129,6 +129,7 @@ For more details, see [`Calendars, Date Components, and Calendar Units`](https:/
 - [init?(coder: NSCoder)](nsdatecomponents/init(coder:).md)
 ### Instance Properties
 - [var dayOfYear: Int](nsdatecomponents/dayofyear.md)
+  The day of the year value of the date components.
 - [var isRepeatedDay: Bool](nsdatecomponents/isrepeatedday.md)
 
 ## Relationships

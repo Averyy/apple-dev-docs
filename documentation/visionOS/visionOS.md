@@ -62,7 +62,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Create persistent and contextually relevant spatial experiences by managing scene restoration, customizing window behaviors, and surface snapping data.
 ### RealityKit and Reality Composer Pro
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
-  Build, create, and design 3D content for your RealityKit apps.
+  Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -83,12 +83,14 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Learn how to use Transforms to move, scale, and rotate entities in RealityKit.
 - [Capturing screenshots and video from Apple Vision Pro for 2D viewing](capturing-screenshots-and-video-from-your-apple-vision-pro-for-2d-viewing.md)
   Create screenshots and record high-quality video of your visionOS app and its surroundings for app previews.
-- [Implementing object tracking in your visionOS app](implementing-object-tracking-in-your-visionos-app.md)
-  Create engaging interactions by training models to recognize and track real-world objects in your app.
+- [Implementing object tracking in your app](implementing-object-tracking-in-your-app.md)
+  Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
+- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
+  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 ### ARKit
 - [Happy Beam](happybeam.md)
   Leverage a Full Space to create a fun game using ARKit.
@@ -103,7 +105,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Tracking preregistered images in 3D space](tracking-images-in-3d-space.md)
   Place content based on the current position of a known image in a person’s surroundings.
 - [Exploring object tracking with ARKit](exploring_object_tracking_with_arkit.md)
-  Find and track real-world objects in visionOS using reference objects trained with Create ML.
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
 - [Object tracking with Reality Composer Pro experiences](object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Building local experiences with room tracking](building-local-experiences-with-room-tracking.md)
@@ -112,6 +114,10 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Drawing in the air and on surfaces with a spatial stylus](drawing-in-the-air-and-on-surfaces-with-a-spatial-stylus.md)
   Create a spatial stylus drawing experience that balances latency and accuracy for both in-air and on-surface drawing.
+- [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 ### SharePlay
 - [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
@@ -151,10 +157,10 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Inspect your app to isolate bugs, locate crashes, identify excess system-resource usage, visualize memory bugs, and investigate problems in its appearance.
 - [Diagnosing issues in the appearance of a running app](../Xcode/diagnosing-issues-in-the-appearance-of-your-running-app.md)
   Inspect your running app to investigate issues in the appearance and placement of the content it displays.
-- [Running your app in Simulator or on a device](../Xcode/running-your-app-in-simulator-or-on-a-device.md)
-  Launch your app in a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a device connected to a Mac.
-- [Interacting with your app in the visionOS simulator](../Xcode/interacting-with-your-app-in-the-visionos-simulator.md)
-  Use your Mac to navigate spaces and control interactions with your visionOS apps in Simulator.
+- [Running your app on simulated or physical devices](../Xcode/running-your-app-on-simulated-or-physical-devices.md)
+  Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
+- [Device Hub](../Xcode/device-hub.md)
+  Manage the simulated and physical devices that you use to test your app.
 ### Performance
 - [Creating a performance plan for your visionOS app](creating-a-performance-plan-for-visionos-app.md)
   Identify your app’s performance and power goals and create a plan to measure and assess them.

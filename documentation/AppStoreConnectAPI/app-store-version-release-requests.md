@@ -13,15 +13,15 @@ For more information about version releases, see [`Select a version release opti
 ## Topics
 
 ### Releasing Approved Versions Manually
-- [Manually Release an App Store Approved Version of Your App](post-v1-appstoreversionreleaserequests.md)
+- [Manually release an app store approved version of your app](post-v1-appstoreversionreleaserequests.md)
   Release an approved version of your app to the App Store.
 ### Objects
 - [object AppStoreVersionReleaseRequestCreateRequest](appstoreversionreleaserequestcreaterequest.md)
   The request body you use to manually release an App Store approved version of your app.
 - [object AppStoreVersionReleaseRequestResponse](appstoreversionreleaserequestresponse.md)
-  A response that contains a single App Store Version Release Request resource.
+  A response containing a single manual release request for an App Store version.
 - [object AppStoreVersionReleaseRequest](appstoreversionreleaserequest.md)
-  The data structure that represents an App Store Version Release Request resource.
+  A request to manually release an App Store version that was set to manual release after review approval.
 
 ## See Also
 

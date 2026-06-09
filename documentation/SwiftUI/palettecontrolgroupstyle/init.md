@@ -15,6 +15,7 @@ Creates a palette control group style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

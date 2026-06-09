@@ -11,6 +11,7 @@ A sentiment regarding the model’s response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +21,7 @@ enum Sentiment
 
 ## Topics
 
-### Getting sentiment
+### Sentiment values
 - [LanguageModelFeedback.Sentiment.negative](languagemodelfeedback/sentiment/negative.md)
   A negative sentiment
 - [LanguageModelFeedback.Sentiment.neutral](languagemodelfeedback/sentiment/neutral.md)
@@ -32,7 +33,6 @@ enum Sentiment
 
 ### Conforms To
 - [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -43,8 +43,6 @@ enum Sentiment
 
 - [LanguageModelFeedback.Issue](languagemodelfeedback/issue.md)
   An issue with the model’s response.
-- [func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, issues: [LanguageModelFeedback.Issue], desiredOutput: Transcript.Entry?) -> Data](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md)
-  Logs and serializes data that includes session information that you attach when reporting feedback to Apple.
 
 
 ---

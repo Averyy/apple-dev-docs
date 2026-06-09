@@ -7,8 +7,6 @@ A dictionary that contains a manifest.
 
 **Availability**:
 - macOS 10.13.6+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

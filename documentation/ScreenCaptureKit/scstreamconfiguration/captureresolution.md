@@ -6,7 +6,7 @@
 The resolution at which to capture source content.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- Mac Catalyst 18.2+
 - macOS 14.0+
 
 ## Declaration

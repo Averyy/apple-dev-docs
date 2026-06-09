@@ -1,4 +1,4 @@
 Completed scraping WorkoutKit!
-Total pages scraped: 314
+Total pages scraped: 155
 Pages skipped (unchanged): 1
 Pages failed: 0

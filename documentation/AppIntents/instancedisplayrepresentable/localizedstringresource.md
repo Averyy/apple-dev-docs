@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: property
 
+A resource that helps provide a description of this instance.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

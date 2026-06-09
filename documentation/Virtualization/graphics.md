@@ -6,7 +6,7 @@ Configure a device for a guest to display its UI.
 
 #### Overview
 
-A graphics devices allows people to see and interact with the UI of a VM, you use this device to attach a display that’s shown in a [`VZVirtualMachineView`](vzvirtualmachineview.md).
+A graphics device that allows people to see and interact with the UI of a VM, you use this device to attach a display that’s shown in a [`VZVirtualMachineView`](vzvirtualmachineview.md).
 
 ## Topics
 
@@ -34,6 +34,8 @@ A graphics devices allows people to see and interact with the UI of a VM, you us
   An object that represents the graphics display on a Mac.
 - [class VZVirtioGraphicsDevice](vzvirtiographicsdevice.md)
   A Virtio graphics device.
+- [struct VZVirtualMachineViewAdaptor](vzvirtualmachineviewadaptor.md)
+  A sendable wrapper that connects a virtual machine view to a virtual machine.
 
 ## See Also
 
@@ -60,6 +62,8 @@ A graphics devices allows people to see and interact with the UI of a VM, you us
 - [Clipboard sharing](clipboard-sharing.md)
   Share the pasteboard between the host and guest system.
 - [USB Devices](usb-devices.md)
+- [Custom Virtio drivers](custom-drivers.md)
+  Create custom Virtio drivers for Linux virtual machines.
 
 
 ---

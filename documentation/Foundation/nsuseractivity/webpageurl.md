@@ -22,6 +22,7 @@ var webpageURL: URL? { get set }
 
 ## Mentions
 
+- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
 - [Creating a user activity object](creating-a-user-activity-object.md)
 
 #### Discussion
@@ -38,6 +39,10 @@ If [`isEligibleForSearch`](nsuseractivity/iseligibleforsearch.md) is [`true`](ht
 
 - [var referrerURL: URL?](nsuseractivity/referrerurl.md)
   The URL of the webpage that linked to the webpage URL.
+- [let NSUserActivityTypeBrowsingWeb: String](nsuseractivitytypebrowsingweb.md)
+  An activity that continues from Handoff or a universal link.
+- [let TVUserActivityTypeBrowsingChannelGuide: String](../TVServices/TVUserActivityTypeBrowsingChannelGuide.md)
+  An activity for viewing your app’s channel guide.
 
 
 ---

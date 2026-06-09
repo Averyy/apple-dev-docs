@@ -24,10 +24,10 @@ If you override this method, you must call this method on `super` at some point 
 
 This method is called only for apps that link against macOS 10.10 or later.
 
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+
 ## See Also
 
-- [var preferredContentSize: NSSize](nsviewcontroller/preferredcontentsize.md)
-  The desired size of the view controller’s view, in screen units.
 - [func viewWillLayout()](nsviewcontroller/viewwilllayout.md)
   Called just before the [`layout()`](nsview/layout().md) method of the view controller’s view is called.
 - [func viewDidLayout()](nsviewcontroller/viewdidlayout.md)

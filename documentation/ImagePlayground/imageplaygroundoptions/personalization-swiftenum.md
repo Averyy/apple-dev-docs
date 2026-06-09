@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: enum
 
-An option for enabling or disabling people support in the system interface.
+Options for enabling and disabling personalization features when generating images.
 
 **Availability**:
 - iOS 26.4+
@@ -20,18 +20,9 @@ enum Personalization
 
 #### Overview
 
-Enabling people support will allow the user to condition image generation using:
+The SwiftUI sheets, [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) type, and [`ImageCreator`](imagecreator.md) type offer ways to personalize the images you create using an existing photo or other information. When configuring one of those types, create an instance of [`ImagePlaygroundOptions`](imageplaygroundoptions.md) and configure its [`personalization`](imageplaygroundoptions/personalization-swift.property.md) property with your personalization preferences.
 
-- A person from their system Photos library
-- A character represented by an appearance and a skin tone
-
-Personalization options are available through several user interfaces, including:
-
-- A people picker
-- Detection of people names in the prompt text field
-- Importing images containing people faces from the system photo library
-
-Use this type to configure the personalization behavior for the view controllers and SwiftUI view modifiers you use in your interface, or when interacting with an `ImageCreator` instance.
+Personalization tells the system how to craft the appearance of people in the images it creates. The system can derive appearance choices for people from additional sources, such as from photos in the person’s Photos library. If you disable personalization, the system uses only the prompts and starting image you provide to generate the images.
 
 ## Topics
 
@@ -39,9 +30,9 @@ Use this type to configure the personalization behavior for the view controllers
 - [ImagePlaygroundOptions.Personalization.automatic](imageplaygroundoptions/personalization-swift.enum/automatic.md)
   An option to choose the most appropriate personalization behavior.
 - [ImagePlaygroundOptions.Personalization.disabled](imageplaygroundoptions/personalization-swift.enum/disabled.md)
-  An option to disable personalization features in the view controller.
+  An option to disable personalization features during image generation.
 - [ImagePlaygroundOptions.Personalization.enabled](imageplaygroundoptions/personalization-swift.enum/enabled.md)
-  An option to enable personalization features in the view controller.
+  An option to enable personalization features during image generation.
 
 ## Relationships
 

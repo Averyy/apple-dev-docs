@@ -11,7 +11,8 @@ Creates a menu bar extra. The item will be displayed in the system menu bar when
 ## Declaration
 
 ```swift
-init(isInserted: Binding<Bool>, @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+nonisolated
+init(isInserted: Binding<Bool>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

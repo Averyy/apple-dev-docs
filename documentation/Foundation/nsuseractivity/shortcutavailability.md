@@ -28,8 +28,8 @@ If none of the availability options apply to your intent, use the empty set. The
 
 ## See Also
 
-- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
-  A Boolean value that determines whether Siri can suggest the user activity as a shortcut to the user.
+- [var interaction: INInteraction?](nsuseractivity/interaction.md)
+  The SiriKit interaction object to use when configuring your app.
 - [var suggestedInvocationPhrase: String?](nsuseractivity/suggestedinvocationphrase.md)
   A phrase suggested to the user when they create a shortcut.
 

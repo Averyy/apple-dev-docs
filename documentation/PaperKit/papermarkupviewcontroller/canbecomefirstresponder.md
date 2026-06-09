@@ -16,6 +16,10 @@
 @preconcurrency override dynamic var canBecomeFirstResponder: Bool { get }
 ```
 
+## See Also
+
+- [var acceptsFirstResponder: Bool](papermarkupviewcontroller/acceptsfirstresponder.md)
+
 
 ---
 

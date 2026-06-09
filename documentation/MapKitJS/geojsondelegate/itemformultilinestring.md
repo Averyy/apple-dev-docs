@@ -12,9 +12,9 @@ Overrides a multiline string.
 
 ```swift
 itemForMultiLineString?<D extends GeoJSONTypes.MultiLineString>(
-        itemCollection: ItemCollection<D>,
-        geoJSON: D,
-    ): ItemCollection<D> | Item[] | null;
+    itemCollection: ItemCollection<D>,
+    geoJSON: D,
+): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value

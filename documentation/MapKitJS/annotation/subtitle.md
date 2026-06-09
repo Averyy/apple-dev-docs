@@ -11,8 +11,8 @@ The text to display as a subtitle on the second line of an annotation’s callou
 ## Declaration
 
 ```swift
-get subtitle(): string | undefined;
-set subtitle(value: string | undefined);
+get subtitle(): string | null;
+set subtitle(value: string | null | undefined);
 ```
 
 #### Discussion

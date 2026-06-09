@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-mutating func extracting(_: (UnboundedRange_) -> ()) -> MutableSpan<Element>
+mutating func extracting(_: UnboundedRange) -> MutableSpan<Element>
 ```
 
 

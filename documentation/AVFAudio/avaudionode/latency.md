@@ -26,7 +26,9 @@ This latency reflects the delay due to signal processing. A value of `0` indicat
 
 ## See Also
 
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit.md)
+- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
+  Provides scoped access to the node’s AUAudioUnit
+- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
 - [var outputPresentationLatency: TimeInterval](avaudionode/outputpresentationlatency.md)
   The maximum render pipeline latency downstream of the node, in seconds.

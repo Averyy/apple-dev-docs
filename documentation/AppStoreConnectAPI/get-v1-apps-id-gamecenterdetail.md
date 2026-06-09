@@ -1,4 +1,4 @@
-# Read the State of Game Center for an App
+# Read the state of game center for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,24 +19,24 @@ Get Game Center detail information for an app.
 
 ## Parameters
 
-- `fields[apps]` ([string])
-- `fields[gameCenterAchievementReleases]` ([string])
-- `fields[gameCenterAchievements]` ([string])
-- `fields[gameCenterAppVersions]` ([string])
-- `fields[gameCenterDetails]` ([string])
-- `fields[gameCenterGroups]` ([string])
-- `fields[gameCenterLeaderboardReleases]` ([string])
-- `fields[gameCenterLeaderboardSetReleases]` ([string])
-- `fields[gameCenterLeaderboardSets]` ([string])
-- `fields[gameCenterLeaderboards]` ([string])
-- `include` ([string])
-- `limit[achievementReleases]` (integer)
-- `limit[gameCenterAchievements]` (integer)
-- `limit[gameCenterAppVersions]` (integer)
-- `limit[gameCenterLeaderboardSets]` (integer)
-- `limit[gameCenterLeaderboards]` (integer)
-- `limit[leaderboardReleases]` (integer)
-- `limit[leaderboardSetReleases]` (integer)
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+- `fields[gameCenterAchievementReleases]` ([string]): Additional fields to include for each Game Center achievement release resource returned by the response.
+- `fields[gameCenterAchievements]` ([string]): Additional fields to include for each Game Center achievement resource returned by the response.
+- `fields[gameCenterAppVersions]` ([string]): Additional fields to include for each Game Center app version resource returned by the response.
+- `fields[gameCenterDetails]` ([string]): Additional fields to include for each Game Center detail resource returned by the response.
+- `fields[gameCenterGroups]` ([string]): Additional fields to include for each Game Center group resource returned by the response.
+- `fields[gameCenterLeaderboardReleases]` ([string]): Additional fields to include for each Game Center leaderboard release resource returned by the response.
+- `fields[gameCenterLeaderboardSetReleases]` ([string]): Additional fields to include for each Game Center leaderboard set release resource returned by the response.
+- `fields[gameCenterLeaderboardSets]` ([string]): Additional fields to include for each Game Center leaderboard set resource returned by the response.
+- `fields[gameCenterLeaderboards]` ([string]): Additional fields to include for each Game Center leaderboard resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[achievementReleases]` (integer): The maximum number of related achievement releases resources to return.
+- `limit[gameCenterAchievements]` (integer): The maximum number of related Game Center achievements resources to return.
+- `limit[gameCenterAppVersions]` (integer): The maximum number of related Game Center app versions resources to return.
+- `limit[gameCenterLeaderboardSets]` (integer): The maximum number of related Game Center leaderboard sets resources to return.
+- `limit[gameCenterLeaderboards]` (integer): The maximum number of related Game Center leaderboards resources to return.
+- `limit[leaderboardReleases]` (integer): The maximum number of related leaderboard releases resources to return.
+- `limit[leaderboardSetReleases]` (integer): The maximum number of related leaderboard set releases resources to return.
 - `fields[appStoreVersions]` ([string])
 - `fields[gameCenterActivities]` ([string])
 - `fields[gameCenterActivityVersionReleases]` ([string])
@@ -53,8 +53,8 @@ Get Game Center detail information for an app.
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/gameCenterDetail](get-v1-apps-_id_-relationships-gamecenterdetail.md)
-- [GET /v1/apps/{id}/relationships/gameCenterEnabledVersions](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
+- [Get the Game Center detail ID for an app](get-v1-apps-_id_-relationships-gamecenterdetail.md)
+- [List Game Center-enabled version IDs for an app](get-v1-apps-_id_-relationships-gamecenterenabledversions.md)
 
 
 ---

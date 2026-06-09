@@ -142,10 +142,10 @@ GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9b
 
 ## Parameters
 
-- `fields[analyticsReports]` ([string])
-- `filter[category]` ([string]): Possible values: -`APP_USAGE`: A string representing the App Usage category. -`APP_STORE_ENGAGEMENT`: A string representing the App Store Engagement category. -`COMMERCE`: A string representing the App Store Commerce category. -`FRAMEWORK_USAGE`: A string representing the Framework Usage category. -`PERFORMANCE`: A string representing the Performance category.
-- `filter[name]` ([string])
-- `limit` (integer)
+- `fields[analyticsReports]` ([string]): Additional fields to include for each analytics reports resource returned by the response.
+- `filter[category]` ([string]): Filter the returned reports by category. Possible values: -`APP_USAGE`: A string representing the App Usage category. -`APP_STORE_ENGAGEMENT`: A string representing the App Store Engagement category. -`COMMERCE`: A string representing the App Store Commerce category. -`FRAMEWORK_USAGE`: A string representing the Framework Usage category. -`PERFORMANCE`: A string representing the Performance category.
+- `filter[name]` ([string]): Filter the returned reports by name.
+- `limit` (integer): The maximum number of analytics reports resources to return.
 
 ## See Also
 
@@ -155,7 +155,7 @@ GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9b
   Read analytics report requests for a specific app.
 - [Read Report Request Information](get-v1-analyticsreportrequests-_id_.md)
   Get details for and the state of a specific analytics report request.
-- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 - [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.

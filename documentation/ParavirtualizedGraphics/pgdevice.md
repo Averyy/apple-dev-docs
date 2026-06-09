@@ -51,8 +51,6 @@ protocol PGDevice : NSObjectProtocol
 
 ## See Also
 
-- [func PGNewDeviceWithDescriptor(PGDeviceDescriptor) -> (any PGDevice)?](pgnewdevicewithdescriptor(_:).md)
-  Creates a new paravirtualized graphics device.
 - [class PGDeviceDescriptor](pgdevicedescriptor.md)
   A description of the paravirtualized graphics device to create.
 

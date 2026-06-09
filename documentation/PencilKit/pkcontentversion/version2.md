@@ -28,6 +28,10 @@ case version2
   The PencilKit version that supports inks from iPadOS 14 and earlier, including marker, pen, and pencil.
 - [PKContentVersion.version3](pkcontentversion/version3.md)
   The PencilKit version that supports barrel-roll angle data in inks.
+- [PKContentVersion.version4](pkcontentversion/version4.md)
+  The version that adds the Reed Pen ink.
+- [PKContentVersion.version5](pkcontentversion/version5.md)
+  The version that adds stroke render state support.
 
 
 ---

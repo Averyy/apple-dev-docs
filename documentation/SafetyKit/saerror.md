@@ -21,13 +21,7 @@ struct SAError
 ## Topics
 
 ### Inspecting error information
-- [var localizedDescription: String](saerror/localizeddescription.md)
-  Retrieve the localized description for this error.
 - [static var errorDomain: String](saerror/errordomain.md)
-  The domain of the error.
-### Comparing errors
-- [static func != (Self, Self) -> Bool](saerror/!=(_:_:).md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Identifying an error cause
 - [SAError.Code](saerror/code.md)
   Codes for identifying errors in SafetyKit.
@@ -41,10 +35,6 @@ struct SAError
   The system denies the app from performing the requested operation.
 - [static var operationFailed: SAError.Code](saerror/operationfailed.md)
   The requested operation failed; retrying may succeed.
-### Default Implementations
-- [CustomNSError Implementations](saerror/customnserror-implementations.md)
-- [Equatable Implementations](saerror/equatable-implementations.md)
-- [Error Implementations](saerror/error-implementations.md)
 
 ## Relationships
 

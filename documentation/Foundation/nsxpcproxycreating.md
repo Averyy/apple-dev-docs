@@ -32,6 +32,7 @@ protocol NSXPCProxyCreating
 - [func remoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcproxycreating/remoteobjectproxywitherrorhandler(_:).md)
   Returns a proxy object that invokes the error handling block if an error occurs on the connection.
 - [func synchronousRemoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcproxycreating/synchronousremoteobjectproxywitherrorhandler(_:).md)
+  Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
 
 ## Relationships
 

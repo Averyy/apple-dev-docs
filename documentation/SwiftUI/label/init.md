@@ -8,10 +8,12 @@ Creates a label representing a family activity application.
 **Availability**:
 - iOS 15.2+
 - iPadOS 15.2+
+- Mac Catalyst 15.2+
 
 ## Declaration
 
 ```swift
+nonisolated
 init(_ applicationToken: ApplicationToken)
 ```
 

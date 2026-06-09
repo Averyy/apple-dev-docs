@@ -16,6 +16,7 @@ The default label used for a share link.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultShareLinkLabel
 ```
 

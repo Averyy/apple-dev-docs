@@ -22,7 +22,7 @@ Get errors that occur for a specific matchmaking rule.
 
 ## See Also
 
-- [Get Boolean Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
+- [Get boolean rule results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
   Get the results of a specific matchmaking rule that returns Boolean values.
 - [Get Numeric Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults.md)
   Get the results of a specific matchmaking rule that returns numeric values.

@@ -13,8 +13,6 @@ The dictionary that contains the Proxies settings.
 - tvOS 17.0+
 - visionOS 1.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

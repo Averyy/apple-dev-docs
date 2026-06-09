@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an app event video clip resource.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -32,6 +34,7 @@ object AppEventVideoClip.Attributes
 ## See Also
 
 - [object AppEventVideoClip.Relationships](appeventvideoclip/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

@@ -21,6 +21,7 @@ func downloads(for request: BAContentRequest, manifestURL: URL, extensionInfo: B
 ## See Also
 
 - [enum BAContentRequest](bacontentrequest.md)
+  The content request type used in the downloader extension.
 - [class BAAppExtensionInfo](baappextensioninfo.md)
 
 

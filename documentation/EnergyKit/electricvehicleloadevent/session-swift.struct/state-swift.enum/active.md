@@ -9,13 +9,16 @@ A state that represents all electricity consumption or production events with ac
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 case active
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

@@ -11,19 +11,19 @@ A mode that determines the shape of the collision frame.
 ## Declaration
 
 ```swift
-get collisionMode(): CollisionMode;
-set collisionMode(value: CollisionMode);
+get collisionMode(): AnnotationCollisionMode;
+set collisionMode(value: AnnotationCollisionMode);
 ```
 
 #### Discussion
 
 The collision mode indicates whether the annotation collides, and, if so, the shape of an annotation’s collision frame:
 
-- **[`Rectangle`](collisionmode/rectangle.md)**: Indicates the bounding box of the annotation.
-- **[`Circle`](collisionmode/circle.md)**: Indicates a circle within the bounding box.
-- **[`None`](collisionmode/none.md)**: Indicates the annotation doesn’t collide with other annotations.
+- **[`Rectangle`](annotationcollisionmode/rectangle.md)**: Indicates the bounding box of the annotation.
+- **[`Circle`](annotationcollisionmode/circle.md)**: Indicates a circle within the bounding box.
+- **[`None`](annotationcollisionmode/none.md)**: Indicates the annotation doesn’t collide with other annotations.
 
-The default value is [`Rectangle`](collisionmode/rectangle.md).
+The default value is [`Rectangle`](annotationcollisionmode/rectangle.md).
 
 ## See Also
 

@@ -26,7 +26,7 @@ var isEmpty: Bool { get }
 
 #### Discussion
 
-At the start of the body of a `withDiscardingTaskGroup(of:returning:body:)` call, the task group is always empty.
+At the start of the body of a `withDiscardingTaskGroup(returning:body:)` call, the task group is always empty.
 
 It’s guaranteed to be empty when returning from that body because a task group waits for all child tasks to complete before returning.
 

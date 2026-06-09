@@ -11,7 +11,7 @@ Common names for the local area or neighborhood of the place.
 ## Declaration
 
 ```swift
-dependentLocalities?: string[];
+dependentLocalities: string[] | null;
 ```
 
 #### Discussion

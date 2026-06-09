@@ -35,6 +35,27 @@ The layout system will use a bounding box that completely contains the rotated v
 - `angle`: The angle by which to rotate the view and its frame.
 - `axis`: The axis of rotation.
 
+## See Also
+
+- [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
+  Rotates a view’s rendered output in two dimensions around the specified point.
+- [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some View](view/rotation3deffect(_:anchor:).md)
+  Rotates the view’s content by the specified 3D rotation value.
+- [func rotation3DEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/rotation3deffect(_:axis:anchor:anchorz:perspective:).md)
+  Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
+- [func rotation3DEffect(_:axis:anchor:)](view/rotation3deffect(_:axis:anchor:).md)
+  Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
+- [func rotation3DLayout(Rotation3D) -> some View](view/rotation3dlayout(_:).md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:).md)
+  Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
+- [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
+  Applies a projection transformation to this view’s rendered output.
+- [func transformEffect(CGAffineTransform) -> some View](view/transformeffect(_:).md)
+  Applies an affine transformation to this view’s rendered output.
+- [func transform3DEffect(AffineTransform3D) -> some View](view/transform3deffect(_:).md)
+  Applies a 3D transformation to this view’s rendered output.
+
 
 ---
 

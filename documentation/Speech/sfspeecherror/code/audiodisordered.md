@@ -22,7 +22,7 @@ static var audioDisordered: SFSpeechError.Code { get }
 ## See Also
 
 - [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
-  The audio file could not be read.
+  The audio source could not be read.
 
 
 ---

@@ -17,6 +17,7 @@ A visual element that can be used to separate other content.
 ## Declaration
 
 ```swift
+nonisolated
 struct Divider
 ```
 

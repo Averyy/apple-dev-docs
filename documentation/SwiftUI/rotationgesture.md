@@ -15,6 +15,7 @@ A gesture that recognizes a rotation motion and tracks the angle of the rotation
 ## Declaration
 
 ```swift
+nonisolated
 struct RotationGesture
 ```
 

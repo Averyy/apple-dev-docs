@@ -1,7 +1,9 @@
-# PATCH /v1/appEventLocalizations/{id}
+# Modify an app event localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Update the localized metadata for a specific in-app event.
 
 **Availability**:
 - App Store Connect API 1.7+
@@ -12,17 +14,21 @@
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event localization resource ID from the [`List all localizations for an in-app event`](get-v1-appevents-_id_-localizations.md) response.
 
 ## See Also
 
-- [GET /v1/appEventLocalizations/{id}](get-v1-appeventlocalizations-_id_.md)
-- [GET /v1/appEventLocalizations/{id}/appEventVideoClips](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
-- [GET /v1/appEventLocalizations/{id}/relationships/appEventVideoClips](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
-- [GET /v1/appEventLocalizations/{id}/appEventScreenshots](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
-- [GET /v1/appEventLocalizations/{id}/relationships/appEventScreenshots](get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
-- [POST /v1/appEventLocalizations](post-v1-appeventlocalizations.md)
-- [Delete an App Event Localization](delete-v1-appeventlocalizations-_id_.md)
+- [Read app event localization information](get-v1-appeventlocalizations-_id_.md)
+  Get information about a specific app event localization.
+- [List all video clips for an app event localization](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
+  Get a list of video clips for a specific app event localization.
+- [List app event video clip IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
+- [List all screenshots for an app event localization](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
+  Get a list of screenshots for a specific app event localization.
+- [List app event screenshot IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventscreenshots.md)
+- [Create an app event localization](post-v1-appeventlocalizations.md)
+  Add a new localization for an in-app event.
+- [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
 
 

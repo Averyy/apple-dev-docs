@@ -33,6 +33,8 @@ static let thunderbolt: AVAudioSession.Port
   An I/O connection to a DisplayPort device.
 - [static let fireWire: AVAudioSession.Port](avaudiosession/port/firewire.md)
   An I/O connection to a FireWire device.
+- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+  Output to a media device vended through a system-wide extension that the user has installed
 - [static let usbAudio: AVAudioSession.Port](avaudiosession/port/usbaudio.md)
   An I/O connection to a Universal Serial Bus (USB) device.
 - [static let virtual: AVAudioSession.Port](avaudiosession/port/virtual.md)

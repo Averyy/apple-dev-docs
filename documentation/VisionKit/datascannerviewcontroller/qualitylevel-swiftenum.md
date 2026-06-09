@@ -8,6 +8,7 @@ The possible quality levels that the scanner uses to find data.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -33,7 +34,6 @@ The quality levels mostly impact the camera resolution.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

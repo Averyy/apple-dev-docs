@@ -1,4 +1,4 @@
-# List All Compatible Versions for a Game Center Enabled Version
+# List all compatible versions for a game center enabled version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -25,7 +25,8 @@
 
 ## See Also
 
-- [List All Game Center Enabled Versions for an App](get-v1-apps-_id_-gamecenterenabledversions.md)
+- [List all game center enabled versions for an app](get-v1-apps-_id_-gamecenterenabledversions.md)
+  Get a list of Game Center enabled versions for a specific app.
 
 
 ---

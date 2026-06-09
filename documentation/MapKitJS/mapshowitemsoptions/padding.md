@@ -11,7 +11,7 @@ Spacing that the framework adds around the computed map region when showing item
 ## Declaration
 
 ```swift
-padding?: Padding;
+padding?: PaddingData;
 ```
 
 ## See Also

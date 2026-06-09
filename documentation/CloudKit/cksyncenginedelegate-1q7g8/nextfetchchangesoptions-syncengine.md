@@ -43,6 +43,22 @@ func nextFetchChangesOptions(_ context: CKSyncEngine.FetchChangesContext, syncEn
     // Start with the options from the context.
     var options = context.options
 
+    // You can customize the quality-of-service based on the phase of changes being fetched.
+    // For example, you might want to fetch database changes at a higher priority.
+    if context.syncPhase == .databaseChanges {
+        options.operationGroup.defaultConfiguration.qualityOfService = .userInitiated
+    } else if context.syncPhase == .recordZoneChanges {
+        options.operationGroup.defaultConfiguration.qualityOfService = .utility
+    }
+
+    // You can also customize the queue priority to control execution order.
+    // Queue priority is independent of QoS and determines the order operations execute.
+    // For example, prioritize fetching changes for zones the user is currently viewing.
+    if let currentZoneID = self.currentlyViewingZoneID,
+       context.options.zoneIDs.contains(currentZoneID) {
+        options.operationGroup.defaultConfiguration.queuePriority = .high
+    }
+
     // By default, the sync engine automatically fetches changes for all zones.
     // If you know that you only want to sync a specific set of zones, you can override that here.
     options.scope = .zoneIDs([...])

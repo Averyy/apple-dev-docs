@@ -1,10 +1,10 @@
-# GET /v1/gameCenterDetails/{id}/relationships/gameCenterGroup
+# Get the Game Center group ID for a Game Center detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,18 +16,18 @@
 
 ## See Also
 
-- [Read the State of Game Center for an App](get-v1-apps-_id_-gamecenterdetail.md)
+- [Read the state of game center for an app](get-v1-apps-_id_-gamecenterdetail.md)
   Get Game Center detail information for an app.
-- [Read Game Center Details](get-v1-gamecenterdetails-_id_.md)
+- [Read game center details](get-v1-gamecenterdetails-_id_.md)
   Read a specific Game Center detail and related information.
-- [Read App Versions for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
+- [Read app versions for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
   Get a list of app versions for a Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/gameCenterAppVersions](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
-- [Read the Groups in a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecentergroup.md)
+- [List Game Center app version IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
+- [Read the groups in a game center detail](get-v1-gamecenterdetails-_id_-gamecentergroup.md)
   Get a list of groups in a Game Center detail.
-- [Read the Challenges for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center detail.
-- [Read Challenge IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterchallenges.md)
+- [Read challenge ids for a game center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterchallenges.md)
   List all the challenge IDs for a specific Game Center detail.
 
 

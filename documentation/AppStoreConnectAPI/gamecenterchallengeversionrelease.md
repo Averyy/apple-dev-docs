@@ -18,6 +18,7 @@ object GameCenterChallengeVersionRelease
 
 ### Dictionaries
 - [object GameCenterChallengeVersionRelease.Relationships](gamecenterchallengeversionrelease/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -31,11 +32,11 @@ object GameCenterChallengeVersionRelease
 - [object GameCenterChallenge](gamecenterchallenge.md)
   The data structure that represent a challenge.
 - [object GameCenterChallengesResponse](gamecenterchallengesresponse.md)
-  A response that contains a list of Game Center challenge resources.
+  A response containing a list of Game Center challenges configured for an app.
 - [object GameCenterChallengeCreateRequest](gamecenterchallengecreaterequest.md)
   The request body you use to create a challenge.
 - [object GameCenterChallengeResponse](gamecenterchallengeresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single Game Center challenge configuration.
 - [object GameCenterChallengeUpdateRequest](gamecenterchallengeupdaterequest.md)
   The request body you use to update a challenge.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)

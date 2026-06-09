@@ -8,6 +8,7 @@ Shows the locations where shots have been taken. Example: ObjectCapturePointClou
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

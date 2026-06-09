@@ -6,8 +6,8 @@
 An object that contains all images requested by the client.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

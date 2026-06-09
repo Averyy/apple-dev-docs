@@ -37,6 +37,10 @@ Consult the [`Apple Developer Documentation`](https://developer.apple.comhttps:/
   Add intelligent features with Apple Intelligence, machine learning, and related technologies.
 - [Audio and video](audio-and-video.md)
   Support audio and video content in your app.
+- [Graphics, drawing, and animation](graphics-drawing-and-animation.md)
+  Create 2D and 3D content for your app, and learn how to animate and print that content.
+- [Tools and distribution](tools-and-distribution.md)
+  Create software on Apple platforms using Xcode and the Swift programming language, and distribute your apps on the App Store.
 - [Hardware, networking, and sensors](hardware-networking-sensors.md)
   Access device-related sensors, connect to a network, and build low-level drivers and software to support custom hardware.
 

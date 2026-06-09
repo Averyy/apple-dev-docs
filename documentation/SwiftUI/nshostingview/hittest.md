@@ -10,7 +10,7 @@
 
 ```swift
 @MainActor
-@preconcurrency override dynamic func hitTest(_ point: NSPoint) -> NSView?
+@preconcurrency override dynamic func hitTest(_ point: CGPoint) -> NSView?
 ```
 
 

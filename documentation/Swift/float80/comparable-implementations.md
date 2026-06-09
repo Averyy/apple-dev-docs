@@ -17,13 +17,13 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Self, Self) -> Bool](float80/_(_:_:)-3kkyi.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](float80/_(_:_:)-6oc8z.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](float80/_(_:_:)-5us6c.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](float80/_(_:_:)-972rs.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func >= (Self, Self) -> Bool](float80/_=(_:_:)-464mx.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](float80/_=(_:_:)-20kb7.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](float80/_=(_:_:)-4j9kt.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](float80/_=(_:_:)-9cso2.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

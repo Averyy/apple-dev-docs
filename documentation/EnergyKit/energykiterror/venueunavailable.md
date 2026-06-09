@@ -9,7 +9,6 @@ An error that indicates a referenced venue is invalid, nonexistent, or restricte
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

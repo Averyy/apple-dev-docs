@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+The content type tree of the metadata item.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

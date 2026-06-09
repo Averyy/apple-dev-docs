@@ -17,6 +17,10 @@ Use search view modifiers to add search capability to your app. For more informa
   Marks this view as searchable with programmatic presentation of the search field.
 - [func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View](view/searchpresentationtoolbarbehavior(_:).md)
   Configures the search toolbar presentation behavior for any searchable modifiers within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](view/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
+- [func searchSelection(Binding<TextSelection?>) -> some View](view/searchselection(_:).md)
+  Binds the selection of the search field associated with the nearest searchable modifier to the given [`TextSelection`](textselection.md) value.
 ### Searching with tokens
 - [func searchable(text:tokens:placement:prompt:token:)](view/searchable(text:tokens:placement:prompt:token:).md)
   Marks this view as searchable with text and tokens.

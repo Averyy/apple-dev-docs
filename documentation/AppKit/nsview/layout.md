@@ -14,6 +14,10 @@ Perform layout in concert with the constraint-based layout system.
 func layout()
 ```
 
+## Mentions
+
+- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+
 #### Discussion
 
 Override this method if your custom view needs to perform custom layout not expressible using the constraint-based layout system. In this case you are responsible for setting [`needsLayout`](nsview/needslayout.md) to [`true`](https://developer.apple.com/documentation/Swift/true) when something that impacts your custom layout changes.
@@ -22,18 +26,18 @@ You may not invalidate any constraints as part of your layout phase, nor invalid
 
 You must call `[super layout]` as part of your implementation.
 
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+
 ## See Also
 
-- [var needsLayout: Bool](nsview/needslayout.md)
-  A Boolean value indicating whether the view needs a layout pass before it can be drawn.
-- [func layoutSubtreeIfNeeded()](nsview/layoutsubtreeifneeded.md)
-  Updates the layout of the receiving view and its subviews based on the current views and constraints.
-- [var needsUpdateConstraints: Bool](nsview/needsupdateconstraints.md)
-  A Boolean value indicating whether the view’s constraints need to be updated.
+- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
 - [func updateConstraints()](nsview/updateconstraints.md)
   Update constraints for the view.
-- [func updateConstraintsForSubtreeIfNeeded()](nsview/updateconstraintsforsubtreeifneeded.md)
-  Updates the constraints for the receiving view and its subviews.
+- [func updateLayer()](nsview/updatelayer.md)
+  Updates the view’s content by modifying its underlying layer.
+- [func draw(NSRect)](nsview/draw(_:).md)
+  Overridden by subclasses to draw the view’s image within the specified rectangle.
 
 
 ---

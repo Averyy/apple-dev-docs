@@ -24,20 +24,19 @@ Supports both media track selection and caption appearance customization. When i
 
 ## Topics
 
-### Protocols
-- [AVLegibleMediaOptionsMenuController.Delegate](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
-### Structures
-- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
-### Initializers
+### Creating a menu controller
 - [init(player: AVPlayer?)](avlegiblemediaoptionsmenucontroller/init(player:).md)
-### Instance Properties
-- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
-- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
-- [var player: AVPlayer](avlegiblemediaoptionsmenucontroller/player.md)
-### Instance Methods
+### Managing the menu
 - [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
-### Enumerations
+- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
 - [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
+### Accessing the player
+- [var player: AVPlayer](avlegiblemediaoptionsmenucontroller/player.md)
+### Configuring a delegate
+- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
+- [AVLegibleMediaOptionsMenuController.Delegate](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
 
 ## Relationships
 
@@ -50,6 +49,11 @@ Supports both media track selection and caption appearance customization. When i
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [enum AVLegibleMediaOptionsMenuType](avlegiblemediaoptionsmenutype.md)
 
 
 ---

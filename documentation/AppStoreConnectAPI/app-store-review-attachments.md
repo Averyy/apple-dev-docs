@@ -13,29 +13,29 @@ For more information, see [`App Review information`](https://developer.apple.com
 ## Topics
 
 ### Reading Attachment Information
-- [Read App Store Review Attachment Information](get-v1-appstorereviewattachments-_id_.md)
+- [Read app store review attachment information](get-v1-appstorereviewattachments-_id_.md)
   Get information about an App Store review attachment and its upload and processing status.
-- [List All Review Attachments for an App Store Review Detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
+- [List all review attachments for an app store review detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
   List all the App Store review attachments you include with a version when you submit it for App Review.
-- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 ### Creating, Modifying, and Deleting Attachments
-- [Create an App Store Review Attachment](post-v1-appstorereviewattachments.md)
+- [Create an app store review attachment](post-v1-appstorereviewattachments.md)
   Attach a document for App Review to an App Store version.
-- [Commit an App Store Review Attachment](patch-v1-appstorereviewattachments-_id_.md)
+- [Commit an app store review attachment](patch-v1-appstorereviewattachments-_id_.md)
   Commit an app screenshot after uploading it to the App Store.
-- [Delete an App Store Review Attachment](delete-v1-appstorereviewattachments-_id_.md)
+- [Delete an app store review attachment](delete-v1-appstorereviewattachments-_id_.md)
   Remove an attachment before you send your app to App Review.
 ### Objects
 - [object AppStoreReviewAttachment](appstorereviewattachment.md)
-  The data structure that represent an App Store Review Attachments resource.
+  A file attached to an App Store review submission to provide reviewers with additional context, such as demo credentials or notes.
 - [object AppStoreReviewAttachmentCreateRequest](appstorereviewattachmentcreaterequest.md)
   The request body you use to create an App Store Review Attachment.
 - [object AppStoreReviewAttachmentResponse](appstorereviewattachmentresponse.md)
-  A response that contains a single App Store Review Attachments resource.
+  The response body for endpoints that create, read, or modify a file attached to an App Store review submission.
 - [object AppStoreReviewAttachmentUpdateRequest](appstorereviewattachmentupdaterequest.md)
   The request body you use to update an App Store Review Attachment.
 - [object AppStoreReviewAttachmentsResponse](appstorereviewattachmentsresponse.md)
-  A response that contains a list of App Store Review Attachment resources.
+  The response body for endpoints that list files attached to an App Store review submission.
 
 ## See Also
 

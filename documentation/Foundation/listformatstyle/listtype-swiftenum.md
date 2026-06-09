@@ -55,6 +55,8 @@ The possible values of a [`listType`](listformatstyle/listtype-swift.property.md
   The type of the list.
 - [var locale: Locale](listformatstyle/locale.md)
   The locale to use when formatting items in the list.
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+  Modifies the list format style to use the specified locale.
 
 
 ---

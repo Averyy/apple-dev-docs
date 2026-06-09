@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A metrics response containing usage data for a TestFlight public invite link, showing tester enrollment trends.
+
 **Availability**:
 - App Store Connect API 3.6+
 
@@ -16,6 +18,7 @@ object BetaPublicLinkUsagesV1MetricResponse
 
 ### Dictionaries
 - [object BetaPublicLinkUsagesV1MetricResponse.Data](betapubliclinkusagesv1metricresponse/data-data.dictionary.md)
+  The request body you use to update a beta public link usages v1metric response.
 
 ## Properties
 
@@ -26,9 +29,9 @@ object BetaPublicLinkUsagesV1MetricResponse
 ## See Also
 
 - [object BetaGroup](betagroup.md)
-  The data structure that represents a Beta Groups resource.
+  A group of beta testers and builds that you use to manage TestFlight distribution for an app.
 - [object BetaGroupResponse](betagroupresponse.md)
-  A response that contains a single Beta Groups resource.
+  The response body for endpoints that create, read, or modify a TestFlight beta group.
 - [object BetaGroupsWithoutIncludesResponse](betagroupswithoutincludesresponse.md)
   A response body that contains a list of beta groups without any includes.
 - [object BetaGroupCreateRequest](betagroupcreaterequest.md)
@@ -44,7 +47,7 @@ object BetaPublicLinkUsagesV1MetricResponse
 - [object BetaGroupBuildsLinkagesResponse](betagroupbuildslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [object BetaGroupsResponse](betagroupsresponse.md)
-  A response that contains a list of Beta Group resources.
+  The response body for endpoints that list TestFlight beta groups.
 - [object BetaGroupAppLinkageResponse](betagroupapplinkageresponse.md)
 - [object BetaGroupBetaRecruitmentCriteriaLinkageResponse](betagroupbetarecruitmentcriterialinkageresponse.md)
 - [object BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse](betagroupbetarecruitmentcriterioncompatiblebuildchecklinkageresponse.md)

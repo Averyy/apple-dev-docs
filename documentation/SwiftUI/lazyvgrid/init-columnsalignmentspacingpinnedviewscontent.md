@@ -17,7 +17,8 @@ Creates a grid that grows vertically.
 ## Declaration
 
 ```swift
-init(columns: [GridItem], alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ViewBuilder content: () -> Content)
+nonisolated
+init(columns: [GridItem], alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

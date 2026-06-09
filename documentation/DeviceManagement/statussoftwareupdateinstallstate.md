@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the software update install state.
+The status item that reports the device’s software update install state.
 
 **Availability**:
 - iOS 17.0+
@@ -12,14 +12,17 @@ A status report of the software update install state.
 - macOS 14.0+
 - tvOS 18.4+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object StatusSoftwareUpdateInstallState
 ```
+
+## Mentions
+
+- [Phases of software update enforcement](phases-of-software-update-enforcement.md)
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 
 #### Discussion
 
@@ -29,15 +32,24 @@ object StatusSoftwareUpdateInstallState
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+
+##### Status Item Example
+
+```json
+{
+    "softwareupdate": {
+        "install-state": "none"
+    }
+}
+```
 
 ## Properties
 
 - `softwareupdate.install-state` (string) *(required)*: The software update install status, which has the following values: - `none`: There’s no software update pending, and any previous software update succeeded.
-- `waiting’: A software update is waiting to start.
 - `downloading`: The system is downloading data for a software update.
 - `prepared`: The system prepared the software update and it’s ready for installation.
 - `installing`: The system is installing the software update.
@@ -45,35 +57,16 @@ object StatusSoftwareUpdateInstallState
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+- [object StatusSoftwareUpdateBetaEnrollment](statussoftwareupdatebetaenrollment.md)
+  The status item that reports the device’s enrolled beta program.
+- [object StatusSoftwareUpdateDeviceID](statussoftwareupdatedeviceid.md)
+  The status item that reports the device’s software update device ID.
+- [object StatusSoftwareUpdateFailureReason](statussoftwareupdatefailurereason.md)
+  The status item that reports the device’s software update failure reason.
+- [object StatusSoftwareUpdateInstallReason](statussoftwareupdateinstallreason.md)
+  The status item that reports the device’s pending software update reason.
+- [object StatusSoftwareUpdatePendingVersion](statussoftwareupdatependingversion.md)
+  The status item that reports the device’s pending software update version.
 
 
 ---

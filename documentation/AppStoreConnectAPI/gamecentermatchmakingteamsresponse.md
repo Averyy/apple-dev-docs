@@ -29,7 +29,7 @@ object GameCenterMatchmakingTeamsResponse
 - [object GameCenterMatchmakingTeamResponse](gamecentermatchmakingteamresponse.md)
   The response body for endpoints that create or modify a team.
 - [object GameCenterMatchmakingTeam](gamecentermatchmakingteam.md)
-  The data structure that represents a team.
+  A team configuration within a Game Center matchmaking rule set, defining team size and composition rules.
 
 
 ---

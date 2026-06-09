@@ -2,40 +2,17 @@
 
 **Framework**: App Intents
 
-Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
+Improve the experience of using your app intents and entities in system experiences like Siri, Spotlight, and the Shortcuts app.
 
 #### Overview
 
-Create a preconfigured App Shortcut that enables people to discover and run your app intent without any configuration. By creating App Shortcuts, you make your app’s functionality instantly available for use in Shortcuts, Spotlight, and Siri from the moment a person installs your app — without any setup in the Shortcuts app or an Add to Siri button. On iPhone models that support the Action button, people can associate your preconfigured App Shortcut on the Action button for quick access of your app’s functionality.
+App Shortcuts provide a polished experience for your app intents and entities in the Shortcuts app and other system experiences. An App Shortcut combines the action from your app intent with other data, such as a title, image, and spoken phrases that someone might use to run the shortcut. A shortcut can also contain preconfigured parameters, so someone can run the action quickly, and without having to specify additional information. For example, a hiking app might offer an app intent to start a hike, but require you to select a trail before starting the action. Without a shortcut, someone must provide the trail information each time they run the intent. However, a shortcut can simplify this flow by offering to start a hike on the person’s favorite trail.
+
+You create App Shortcuts programmatically in your code, and the compiler generates the information the rest of the system needs to use it. This approach means that the shortcuts you create are available as soon as someone installs your app, and you don’t have to register them yourself. Specify your shortcuts in your code by defining a custom type that adopts the [`AppShortcutsProvider`](appshortcutsprovider.md) protocol. Include this type in your app, app extension, Swift package, or library that you use to manage your intents-related code. Inside this type, construct one or more [`AppShortcut`](appshortcut.md) types using static data. Define your shortcuts in the same place you define the app intents that those shortcuts use.
 
 > **Note**: Apple may extract anonymized App Shortcuts data such as localized phrases, display representation values, and the title and description of related intents. Machine learning models use this data when training to help improve the App Shortcuts experience.
 
-Key app functionalities that people use to complete a task quickly and that you expose to the system with app intents are great candidates for App Shortcuts. For each high-value app intent, create an App Shortcut that specifies the intended action, the required parameters, the spoken phrases someone uses to run it, and the short title and the image that appear in the Shortcuts app.
-
-To offer an App Shortcut:
-
-1. Create an app intent for a key app functionality as described in [`Creating your first app intent`](creating-your-first-app-intent.md).
-2. Create the [`AppShortcut`](appshortcut.md) object for your app intent using the [`init(intent:phrases:shortTitle:systemImageName:)`](appshortcut/init(intent:phrases:shorttitle:systemimagename:)-2hk1x.md) initializer with phrases people can use to run the app intent and with the metadata that appears in the Shortcuts app.
-3. Implement the [`AppShortcutsProvider`](appshortcutsprovider.md) protocol that provides the App Shortcuts you offer to the Shortcuts app.
-
-With these three steps, you make your app’s functionality more discoverable and enable people to interact with your app in a lightweight way. However, the system displays a default interface for your App Shortcut. To display a custom view for each shortcut, return a SwiftUI view in your app intent’s [`perform()`](appintent/perform().md) method.
-
-> **Note**: [`Session 10170: Implement App Shortcuts with App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10170) and [`Session 10169: Design App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10169).
-
-#### Offer App Shortcuts with Preconfigured Parameters
-
-With App Shortcuts, you can also preconfigure phrases for app intents that use specific parameters. When you include parameters, people can use one phrase to start an interaction with an app without Siri having to ask for clarification. For example, a meditation app could offer an app intent to start a meditation with the phrase “Start a meditation”. Because the app offers many different meditations, Siri would require an additional clarification which meditation a person wants to start.
-
-With an App Shortcut, you can supply preconfigured parameters ahead of time that enable a person to skip this clarification step. For example, the meditation app could provide parameterized phrases where each phrase represents a common meditation. A person could then start a meditation with one phrase like “Start a mindfulness meditation.” or “Start a short meditation.”
-
-#### Make Your App Shortcuts Even More Discoverable
-
-Although App Shortcuts don’t require a person to do any configuration in the Shortcuts app or by using the Add to Siri button, you may want to present elements in your app to tell people about an available App Shortcut. You have two options:
-
-- [`SiriTipView`](siritipview.md) and [`SiriTipUIView`](siritipuiview.md) present a view that tells a person that an App Shortcut is available.
-- [`ShortcutsLink`](shortcutslink.md) enables you to display a link to your App Shortcut.
-
-`ShortcutsLink` is especially convenient if your app displays a list of its available App Shortcuts.
+Although the Shortcuts app and other system features find your shortcuts automatically, you can also make them available from your app using tip views. The [`SiriTipView`](siritipview.md) and [`SiriTipUIView`](siritipuiview.md) types display the relevant shortcuts for the app intent you specify. You can also use a [`ShortcutsLink`](shortcutslink.md) or [`ShortcutsUIButton`](shortcutsuibutton.md) to open your app’s page in the Shortcuts app.
 
 ## Topics
 
@@ -45,7 +22,6 @@ Although App Shortcuts don’t require a person to do any configuration in the S
 ### App Shortcut definition
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
-- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
 - [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
@@ -62,6 +38,7 @@ Although App Shortcuts don’t require a person to do any configuration in the S
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 - [enum ShortcutTileColor](shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 ### App Shortcut options
 - [struct AppShortcutOptionsCollection](appshortcutoptionscollection.md)
   Represents a collection of options for parameters of an App Shortcut.
@@ -95,21 +72,19 @@ Although App Shortcuts don’t require a person to do any configuration in the S
 ## See Also
 
 - [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Siri](siri.md)
-  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
-- [Visual intelligence](visual-intelligence.md)
-  Integrate your app with visual intelligence and include your content in its search results.
-- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
-  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
-- [Action button on iPhone and Apple Watch](actionbutton.md)
-  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
+- [Apple Intelligence and Siri AI](apple-intelligence-and-siri-ai.md)
+  Integrate your app with Apple Intelligence and bring it to Siri AI.
+- [Spotlight integration](spotlight.md)
+  Add your entities to your app’s Spotlight index, and automate the indexing of your content.
+- [Widgets, Live Activities, and Controls](widgets-live-activities-and-controls.md)
+  Implement interactive widgets, controls, watch complications, and Live Activities using app intents.
+- [Hardware interactions](hardware-interactions.md)
+  Run your App Shortcuts from the Action button on iPhone or Apple Watch, or launch your own conversational app from the side button on iPhone.
 - [Focus](focus.md)
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
+- [Visual intelligence](visual-intelligence.md)
+  Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 
 
 ---

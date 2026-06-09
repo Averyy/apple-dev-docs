@@ -11,7 +11,7 @@ An array of DOM event objects that list the low-level events that led to the rec
 ## Declaration
 
 ```swift
-readonly domEvents?: Event[] | undefined;
+readonly domEvents: Event[];
 ```
 
 #### Discussion

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The launch requirement data for the receiver.
+
 **Availability**:
 - macOS 14.4+
 

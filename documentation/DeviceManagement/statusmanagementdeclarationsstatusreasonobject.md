@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The details of an error in a status report.
+Information about a status error.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ The details of an error in a status report.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,7 +24,7 @@ object StatusManagementDeclarationsStatusReasonObject
 
 ### Objects
 - [object StatusManagementDeclarationsStatusReason_DetailsObject](statusmanagementdeclarationsstatusreason_detailsobject.md)
-  A dictionary that contains further details about an error.
+  A dictionary that contains further details about this error.
 
 ## Properties
 

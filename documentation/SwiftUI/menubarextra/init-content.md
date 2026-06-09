@@ -12,7 +12,7 @@ Creates a menu bar extra with a key for a localized string to use as the label. 
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

@@ -90,6 +90,7 @@ Adopt the [`AVPlaybackCoordinatorPlaybackControlDelegate`](avplaybackcoordinator
 - [class AVPlayerPlaybackCoordinator](avplayerplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of player objects in a connected group.
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 
 ---

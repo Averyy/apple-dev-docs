@@ -1,4 +1,4 @@
-# Create an Advanced App Clip Experience
+# Create an advanced app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ The request body you use to create a new advanced App Clip experience.
 
 ## See Also
 
-- [Read Advanced App Clip Experience Information](get-v1-appclipadvancedexperiences-_id_.md)
+- [Read advanced app clip experience information](get-v1-appclipadvancedexperiences-_id_.md)
   Get information about a specific advanced App Clip experience.
-- [Modify and Delete an Advanced App Clip Experience](patch-v1-appclipadvancedexperiences-_id_.md)
+- [Modify and delete an advanced app clip experience](patch-v1-appclipadvancedexperiences-_id_.md)
   Update and delete an existing advanced App Clip experience.
 
 

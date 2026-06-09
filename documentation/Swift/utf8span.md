@@ -57,17 +57,21 @@ struct UTF8Span
   Whether `self` is equivalent to `other` under Unicode Canonical Equivalence.
 - [func isCanonicallyLessThan(UTF8Span) -> Bool](utf8span/iscanonicallylessthan(_:).md)
   Whether `self` orders less than `other` under Unicode Canonical Equivalence using normalized code-unit order (in NFC).
+- [func isTriviallyIdentical(to: UTF8Span) -> Bool](utf8span/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region, and have the same flags (such as [`isKnownASCII`](utf8span/isknownascii.md)).
 - [func makeCharacterIterator() -> UTF8Span.CharacterIterator](utf8span/makecharacteriterator.md)
   Returns an iterator that will construct `Character`s from the underlying UTF-8 content.
 - [func makeUnicodeScalarIterator() -> UTF8Span.UnicodeScalarIterator](utf8span/makeunicodescalariterator.md)
   Returns an iterator that will decode the code units into `Unicode.Scalar`s.
 - [func unicodeScalarsEqual(to: some Sequence<Unicode.Scalar>) -> Bool](utf8span/unicodescalarsequal(to:).md)
   Whether this span has the same `Unicode.Scalar`s as `other`.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](utf8span/withbytes(_:).md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 
 ## See Also
 

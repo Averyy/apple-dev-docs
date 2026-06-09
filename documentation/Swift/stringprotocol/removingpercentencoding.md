@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-A new string made from the string by replacing all percent encoded sequences with the matching UTF-8 characters.
+Returns a new string created by replacing all percent-encoded sequences with the matching UTF-8 characters.
 
 **Availability**:
 - iOS 8.0+

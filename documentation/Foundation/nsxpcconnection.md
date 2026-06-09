@@ -78,6 +78,7 @@ This class is the primary means of creating and configuring the communication me
 - [func remoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcconnection/remoteobjectproxywitherrorhandler(_:).md)
   Returns a proxy for the remote object (that is, the object exported from the other side of this connection) with the specified error handler.
 - [func synchronousRemoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcconnection/synchronousremoteobjectproxywitherrorhandler(_:).md)
+  Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
 ### Working with code signing
 - [func setCodeSigningRequirement(String)](nsxpcconnection/setcodesigningrequirement(_:).md)
   Sets the code signing requirement for this connection.

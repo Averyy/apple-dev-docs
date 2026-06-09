@@ -6,8 +6,12 @@
 An instance for configuring the system content-sharing picker.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 14.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -29,6 +33,9 @@ struct SCContentSharingPickerConfiguration
   A list of bundle IDs to exclude from the sharing picker.
 - [var excludedWindowIDs: Array<Int>](sccontentsharingpickerconfiguration-swift.struct/excludedwindowids.md)
   A list of window IDs to exclude from the sharing picker.
+### Instance Properties
+- [var showsCameraControl: Bool](sccontentsharingpickerconfiguration-swift.struct/showscameracontrol.md)
+- [var showsMicrophoneControl: Bool](sccontentsharingpickerconfiguration-swift.struct/showsmicrophonecontrol.md)
 
 ## See Also
 

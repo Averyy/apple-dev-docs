@@ -11,6 +11,7 @@ A scene that presents its content in an unbounded space on a remote device.
 ## Declaration
 
 ```swift
+nonisolated
 struct RemoteImmersiveSpace<Content, Data> where Content : ImmersiveSpaceContent, Data : Decodable, Data : Encodable, Data : Hashable
 ```
 

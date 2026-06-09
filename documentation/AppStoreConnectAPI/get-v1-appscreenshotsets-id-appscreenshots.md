@@ -1,4 +1,4 @@
-# List All App Screenshots for an App Screenshot Set
+# List all app screenshots for an app screenshot set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,16 +14,16 @@ List all ordered screenshots in a screenshot set.
 
 ## Parameters
 
-- `fields[appScreenshots]` ([string])
-- `limit` (integer)
-- `fields[appScreenshotSets]` ([string])
-- `include` ([string])
+- `fields[appScreenshots]` ([string]): Additional fields to include for each app screenshot resource returned by the response.
+- `limit` (integer): The maximum number of app screenshot resources to return.
+- `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 
 ## See Also
 
-- [Get All App Screenshot IDs for an App Screenshot Set](get-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
+- [Get all app screenshot ids for an app screenshot set](get-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
   Get the ordered screenshot IDs in a screenshot set.
-- [Replace All App Screenshots for an App Screenshot Set](patch-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
+- [Replace all app screenshots for an app screenshot set](patch-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
   Change the order of the screenshots in a screenshot set.
 
 

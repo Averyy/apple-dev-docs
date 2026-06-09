@@ -13,8 +13,8 @@ An accessory for displaying place information when a person selects a map featur
 ```swift
 get selectableMapFeatureSelectionAccessory(): PlaceSelectionAccessory | null;
 set selectableMapFeatureSelectionAccessory(
-        value: PlaceSelectionAccessory | null,
-    );
+    value: PlaceSelectionAccessory | null,
+);
 ```
 
 ## See Also

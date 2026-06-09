@@ -9,7 +9,6 @@ A structure that provides environmental impact and cost insights for electricity
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

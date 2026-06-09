@@ -1,10 +1,10 @@
-# GET /v1/appStoreVersions/{id}/relationships/customerReviews
+# List customer review IDs for an App Store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,7 +16,7 @@
 
 ## See Also
 
-- [List All Customer Reviews for an App Store Version](get-v1-appstoreversions-_id_-customerreviews.md)
+- [List all customer reviews for an app store version](get-v1-appstoreversions-_id_-customerreviews.md)
   Get a list of customer reviews for a specific version of your app.
 
 

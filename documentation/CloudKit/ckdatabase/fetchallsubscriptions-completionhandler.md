@@ -17,7 +17,7 @@ Fetches all subscriptions from the current database.
 ## Declaration
 
 ```swift
-func allSubscriptions() async throws -> [CKSubscription]
+func fetchAllSubscriptions(completionHandler: @escaping @Sendable ([CKSubscription]?, (any Error)?) -> Void)
 ```
 
 #### Discussion

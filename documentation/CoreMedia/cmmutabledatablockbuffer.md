@@ -47,6 +47,7 @@ Mutable block buffer provides a contiguous range of data offsets (from 0 to [`co
 - [init(unsafeBlockBuffer: sending CMBlockBuffer)](cmmutabledatablockbuffer/init(unsafeblockbuffer:).md)
   Creates a mutable block buffer from an existing block buffer.
 ### Instance Properties
+- [var attachments: CMMutableDataBlockBuffer.Attachments](cmmutabledatablockbuffer/attachments-swift.property.md)
 - [var count: Int](cmmutabledatablockbuffer/count.md)
   The number of bytes in the block buffer.
 - [var endIndex: Int](cmmutabledatablockbuffer/endindex.md)
@@ -96,6 +97,7 @@ Mutable block buffer provides a contiguous range of data offsets (from 0 to [`co
 - [subscript(Int) -> UInt8](cmmutabledatablockbuffer/subscript(_:).md)
   Accesses the data byte at the specified position.
 ### Type Aliases
+- [CMMutableDataBlockBuffer.Attachments](cmmutabledatablockbuffer/attachments-swift.typealias.md)
 - [CMMutableDataBlockBuffer.Index](cmmutabledatablockbuffer/index.md)
 - [CMMutableDataBlockBuffer.Indices](cmmutabledatablockbuffer/indices-swift.typealias.md)
 

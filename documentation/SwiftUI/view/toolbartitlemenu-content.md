@@ -18,7 +18,7 @@ Configure the title menu of a toolbar.
 
 ```swift
 nonisolated
-func toolbarTitleMenu<C>(@ViewBuilder content: () -> C) -> some View where C : View
+func toolbarTitleMenu<C>(@ContentBuilder content: () -> C) -> some View where C : View
 ```
 
 #### Discussion

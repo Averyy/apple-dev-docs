@@ -6,7 +6,7 @@
 Initializes and returns an empty text block object.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -24,7 +24,8 @@ This is the designated initializer for `NSTextBlock`.
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSTextTableBlock](nstexttableblock.md)
+  A text block that appears as a cell in a text table.
 
 
 ---

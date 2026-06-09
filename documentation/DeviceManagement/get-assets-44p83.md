@@ -6,13 +6,12 @@
 Get the set of assets managed by your organization.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Mentions
 
-- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
-- [Handling Error Responses](handling-error-responses.md)
+- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+- [Handling error responses](handling-error-responses.md)
 
 #### Discussion
 

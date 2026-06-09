@@ -18,12 +18,6 @@ mapType?: MapType;
 
 The map’s initial view type can be one of the types defined by [`MapType`](maptype.md). The default map type is [`Standard`](maptype/standard.md).
 
-## Topics
-
-### Map types
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
-
 ## See Also
 
 - [colorScheme](mapconstructoroptions/colorscheme.md)

@@ -17,6 +17,7 @@ A gesture that recognizes one or more taps.
 ## Declaration
 
 ```swift
+nonisolated
 struct TapGesture
 ```
 
@@ -47,6 +48,8 @@ struct TapGestureView: View {
 ### Creating a tap gesture
 - [init(count: Int)](tapgesture/init(count:).md)
   Creates a tap gesture with the number of required taps.
+- [init(count: Int, inputKinds: GestureInputKinds)](tapgesture/init(count:inputkinds:).md)
+  Creates a tap gesture with the number of required taps and the input kinds the gesture recognizes.
 - [var count: Int](tapgesture/count.md)
   The required number of tap events.
 
@@ -60,6 +63,8 @@ struct TapGestureView: View {
 - [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture.
 - [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
+- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [struct SpatialTapGesture](spatialtapgesture.md)
   A gesture that recognizes one or more taps and reports their location.

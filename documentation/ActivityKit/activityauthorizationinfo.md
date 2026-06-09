@@ -8,6 +8,7 @@ An object with information about whether a person allowed your app to start Live
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

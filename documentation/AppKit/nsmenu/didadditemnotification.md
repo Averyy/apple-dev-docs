@@ -22,6 +22,8 @@ The notification object is the instance of `NSMenu` that just added the new menu
 | --- | --- |
 | `@"NSMenuItemIndex"` | An `NSNumber` object containing the integer index of the menu item that was added. |
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidAddItemMessage`](nsmenu/didadditemmessage.md).
+
 ## See Also
 
 - [class let didChangeItemNotification: NSNotification.Name](nsmenu/didchangeitemnotification.md)

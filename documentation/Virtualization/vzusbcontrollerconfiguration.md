@@ -43,6 +43,7 @@ Don’t create `VZUSBControllerConfiguration` objects directly. Use one of its s
 
 - [class VZXHCIControllerConfiguration](vzxhcicontrollerconfiguration.md)
   The configuration object for the USB Extensible Host Controller Interface (XHCI) controller.
+- [class VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)
 
 
 ---

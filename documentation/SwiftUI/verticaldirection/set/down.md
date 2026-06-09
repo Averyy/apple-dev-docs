@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A set containing only the trailing horizontal direction.
+A set containing only the downward vertical direction.
 
 **Availability**:
 - iOS 18.0+

@@ -4,26 +4,6 @@
 
 These keys are used to populate the `properties` dictionary used when creating a new display stream.
 
-## Topics
-
-### Constants
-- [class let sourceRect: CFString](cgdisplaystream/sourcerect.md)
-  This key specifies that the display stream only samples a subset of the display’s framebuffer.
-- [class let destinationRect: CFString](cgdisplaystream/destinationrect.md)
-  This key specifies that the display stream outputs the frame data into a subset of the output `IOSurface` object.
-- [class let preserveAspectRatio: CFString](cgdisplaystream/preserveaspectratio.md)
-  This key specifies whether the display stream preserves the aspect ratio of the source pixel data. If this key is not included in the dictionary, then the aspect ratio is preserved. If the aspect ratio is preserved, then the display stream adds black bars to the output data. If the aspect ratio is not preserved, then the pixel data is stretched to fit the output buffer’s dimensions. The value associated with the key must be a `CFBoolean`.
-- [class let colorSpace: CFString](cgdisplaystream/colorspace.md)
-  This key specifies the color space of the output buffer. If this key is not included in the dictionary, the output buffer uses the same color space as the display. The value associated with this key must be a [`CGColorSpace`](cgcolorspace.md) for the desired color space.
-- [class let minimumFrameTime: CFString](cgdisplaystream/minimumframetime.md)
-  This key specifies the desired minimum time between frame updates, allowing you to throttle the rate at which updates are received. If this key is not included in the dictionary, the default value is `0`, meaning that updates are not throttled. The value must be specified as a `CFNumber`.
-- [class let showCursor: CFString](cgdisplaystream/showcursor.md)
-  This key specifies whether the cursor should appear in the stream. If this key is not included in the dictionary, the cursor is visible. The value must be specified as a `CFBoolean`.
-- [class let queueDepth: CFString](cgdisplaystream/queuedepth.md)
-  This key specifies the number of frames to keep in the queue. If this key is not included in the dictionary, the default value is `3` frames. Specifying more frames uses more memory, but may allow you to process frame data without stalling the display stream. The value associated with this key should be specified as a `CFNumber`, and should not exceed `8` frames.
-- [class let yCbCrMatrix: CFString](cgdisplaystream/ycbcrmatrix.md)
-  This key should only be included if you the display stream is creating output frames in either the 420v or 420f formats. It is used to specify the YCbCr matrix applied to the output surface.
-
 ## See Also
 
 - [struct CGCaptureOptions](cgcaptureoptions.md)
@@ -55,7 +35,7 @@ These keys are used to populate the `properties` dictionary used when creating a
 - [enum CGDisplayStreamFrameStatus](cgdisplaystreamframestatus.md)
   Describes a frame update event.
 - [Display Stream YCbCr to RGB conversion Matrix Options](display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
-  These strings are used to specify a matrix for the [`yCbCrMatrix`](cgdisplaystream/ycbcrmatrix.md) option.
+  These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
 
 
 ---

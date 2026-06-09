@@ -35,7 +35,7 @@ DELETE https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5
 
 ## Parameters
 
-- `id` (string) *(required)*: The opaque resource ID that uniquely identifies the Apps resource. Obtain the app resource ID from the [`Read Report Requests`](get-v1-apps-_id_-analyticsreportrequests.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the analytics report request resource ID from the [`Read Report Requests`](get-v1-apps-_id_-analyticsreportrequests.md) response.
 
 ## See Also
 
@@ -47,7 +47,7 @@ DELETE https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5
   Get details for and the state of a specific analytics report request.
 - [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 
 

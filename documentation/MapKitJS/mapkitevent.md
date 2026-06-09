@@ -33,21 +33,6 @@ The event object implements similar interfaces as the DOM `Event`, but you shoul
 - [stopPropagation()](mapkitevent/stoppropagation.md)
   Stops further propagation of the event.
 
-## Relationships
-
-### Inherited By
-- [AnnotationDragEvent](annotationdragevent.md)
-- [MapAnnotationDragEvent](mapannotationdragevent.md)
-- [MapAnnotationSelectionEvent](mapannotationselectionevent.md)
-- [MapEvent](mapevent.md)
-- [MapKitConfigurationChangeEvent](mapkitconfigurationchangeevent.md)
-- [MapKitConfigurationErrorEvent](mapkitconfigurationerrorevent.md)
-- [MapKitLibraryLoadEvent](mapkitlibraryloadevent.md)
-- [MapOverlaySelectionEvent](mapoverlayselectionevent.md)
-- [MapUserLocationChangeEvent](mapuserlocationchangeevent.md)
-- [MapUserLocationErrorEvent](mapuserlocationerrorevent.md)
-- [TileOverlayErrorEvent](tileoverlayerrorevent.md)
-
 ## See Also
 
 - [type MapKitEventListener](mapkiteventlistener.md)

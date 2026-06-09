@@ -140,6 +140,14 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
   The view controller associated with the currently selected tab item.
 - [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
   The index of the view controller associated with the currently selected tab item.
+### Instance Properties
+- [var prominentTabIdentifier: String?](uitabbarcontroller/prominenttabidentifier.md)
+  The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
+### Instance Methods
+- [func performBatchUpdates(() -> Void)](uitabbarcontroller/performbatchupdates(_:).md)
+  Animates multiple tab changes as a single update.
+- [func setProminentTabIdentifier(String?, animated: Bool)](uitabbarcontroller/setprominenttabidentifier(_:animated:).md)
+  Sets the prominent tab identifier with an option to animate the change.
 
 ## Relationships
 

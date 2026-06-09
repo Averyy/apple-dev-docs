@@ -7,8 +7,6 @@ The payload that configures a certificate preference.
 
 **Availability**:
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,11 +30,11 @@ See also [`IdentityPreference`](identitypreference.md)  for information about se
 
 |  |  |
 | --- | --- |
-| Device channel | NA |
+| Device channel | N/A |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 

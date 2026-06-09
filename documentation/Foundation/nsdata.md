@@ -141,10 +141,14 @@ For more information, see [`Securing File Operations`](https://developer.apple.c
   An error code value that indicates a failure to decompress data using the provided algorithm.
 ### Initializers
 - [init?(base64Encoded: String, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-3ksry.md)
+  Initializes a data object with the given Base64 encoded string.
 - [init?(base64Encoded: Data, options: NSData.Base64DecodingOptions)](nsdata/init(base64encoded:options:)-4t5yq.md)
+  Initializes a data object with the given Base64 encoded data.
 - [init?(coder: NSCoder)](nsdata/init(coder:).md)
 - [init?(contentsOf: URL)](nsdata/init(contentsof:).md)
+  Creates a data object from the data at the specified file URL, or returns `nil` if the system can’t create one.
 - [init(contentsOf: URL, options: NSData.ReadingOptions) throws](nsdata/init(contentsof:options:).md)
+  Creates a data object from the data at the provided file URL using specific reading options.
 ### Default Implementations
 - [NSData Implementations](nsdata/nsdata-implementations.md)
 

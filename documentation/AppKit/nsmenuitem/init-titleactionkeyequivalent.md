@@ -30,7 +30,8 @@ For instances of the `NSMenuItem` class, the default initial state is `NSOffStat
 
 ## See Also
 
-- [Application Menu and Pop-up List Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MenuList/MenuList.html#//apple_ref/doc/uid/10000032i)
+- [class NSMenuItem](nsmenuitem.md)
+  A command item in an app menu.
 - [init(coder: NSCoder)](nsmenuitem/init(coder:).md)
 
 

@@ -64,6 +64,8 @@ Before you distribute your Safari web extension, create icons for the iOS and ma
 
 ## See Also
 
+- [Building and testing a Safari web extension](building-and-testing-a-safari-web-extension.md)
+  Get started with Safari web extensions by creating one from the ground up, using any code editor.
 - [Modernizing Safari Web Extensions](modernizing-safari-web-extensions.md)
   Learn about enhancements to Safari Web Extensions.
 - [Developing a Safari Web Extension](developing-a-safari-web-extension.md)

@@ -17,7 +17,7 @@ The video composition settings to be applied during playback.
 
 ```swift
 @NSCopying
-var videoComposition: AVVideoComposition? { get set }
+nonisolated var videoComposition: AVVideoComposition? { get set }
 ```
 
 #### Discussion

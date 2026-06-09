@@ -38,6 +38,9 @@ A descriptor object describes the type of document that your app can request or 
 ### Getting an elements intent
 - [func intentToStore(element: PKIdentityElement) -> PKIdentityIntentToStore?](pkidentitydocumentdescriptor/intenttostore(element:).md)
   Gets the intent to store for an identity element you specify.
+### Instance Properties
+- [var issuerIdentifiers: [Data]](pkidentitydocumentdescriptor/issueridentifiers.md)
+  A list of X.509 authority key identifiers which are accepted by the relying party.
 
 ## Relationships
 

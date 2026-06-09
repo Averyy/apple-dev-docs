@@ -22,11 +22,6 @@ init(zone: Int)
 
 - `zone`: The target power zone.
 
-## See Also
-
-- [static func power(zone: Int) -> Self](powerzonealert/power(zone:).md)
-  Returns a new power zone alert.
-
 
 ---
 

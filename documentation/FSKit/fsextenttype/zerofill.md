@@ -22,6 +22,8 @@ Only use this extent type in file systems that support sparse files, and only th
 
 - [FSExtentType.data](fsextenttype/data.md)
   An extent type to indicate valid data.
+- [FSExtentType.readOnly](fsextenttype/readonly.md)
+  An extent type to indicate read-only data.
 
 
 ---

@@ -8,6 +8,7 @@ The current state of the capture session.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

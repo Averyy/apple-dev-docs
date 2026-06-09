@@ -1,4 +1,4 @@
-# Read Advanced App Clip Experience Information
+# Read advanced app clip experience information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,18 +14,18 @@ Get information about a specific advanced App Clip experience.
 
 ## Parameters
 
-- `fields[appClipAdvancedExperiences]` ([string]): Additional fields to include for each Advanced App Clip Experiences resource returned by the response.
+- `fields[appClipAdvancedExperiences]` ([string]): Additional fields to include for each advanced App Clip experiences resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit[localizations]` (integer): The number of included Advanced App Clip Experiences resources to return if the advanced App Clip experience localizations relationship is included.
+- `limit[localizations]` (integer): The maximum number of related localizations resources to return.
 - `fields[appClipAdvancedExperienceImages]` ([string])
 - `fields[appClipAdvancedExperienceLocalizations]` ([string])
 - `fields[appClips]` ([string])
 
 ## See Also
 
-- [Create an Advanced App Clip Experience](post-v1-appclipadvancedexperiences.md)
+- [Create an advanced app clip experience](post-v1-appclipadvancedexperiences.md)
   Configure a new advanced App Clip experience.
-- [Modify and Delete an Advanced App Clip Experience](patch-v1-appclipadvancedexperiences-_id_.md)
+- [Modify and delete an advanced app clip experience](patch-v1-appclipadvancedexperiences-_id_.md)
   Update and delete an existing advanced App Clip experience.
 
 

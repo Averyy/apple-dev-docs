@@ -14,6 +14,11 @@ Describes the system default behavior.
 case `default`
 ```
 
+## See Also
+
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive.none](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum/none.md)
+  Describes no behavior.
+
 
 ---
 

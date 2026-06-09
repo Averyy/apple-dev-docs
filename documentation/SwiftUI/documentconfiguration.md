@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -34,6 +36,8 @@ struct DocumentConfiguration
 
 - [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
   The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+  The undo manager used to register a view’s undo operations.
 
 
 ---

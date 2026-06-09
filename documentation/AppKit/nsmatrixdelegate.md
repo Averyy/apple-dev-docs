@@ -26,7 +26,8 @@ This protocol simply adopts the `NSControlTextEditingDelegate` protocol, adding 
 
 ## See Also
 
-- [Matrix Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Matrix/Matrix.html#//apple_ref/doc/uid/10000022i)
+- [class NSMatrix](nsmatrix.md)
+  A legacy interface for grouping radio buttons or other types of cells together.
 - [var delegate: (any NSMatrixDelegate)?](nsmatrix/delegate.md)
   The delegate for messages from the field editor.
 

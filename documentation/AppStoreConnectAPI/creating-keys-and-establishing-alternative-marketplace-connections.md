@@ -38,7 +38,7 @@ This command creates the file `public_key.pem`, which contains your public key. 
 
 Next, upload your public key to App Store Connect using the endpoint described in [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md).
 
-An alternative distribution key applies to all apps in your account. You can optionally make an application-specific alternative distirbution key by adding the app Apple ID for your marketplace app in the `relationships` object in the JSON payload when calling [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md). You can find this app Apple ID by calling [`List Apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect. This relationship is optional. If you don’t include a relationship to an app Apple ID, the alternative distribution key is associated with all alternative distubution apps on your account.
+An alternative distribution key applies to all apps in your account. You can optionally make an application-specific alternative distirbution key by adding the app Apple ID for your marketplace app in the `relationships` object in the JSON payload when calling [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md). You can find this app Apple ID by calling [`List apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect. This relationship is optional. If you don’t include a relationship to an app Apple ID, the alternative distribution key is associated with all alternative distubution apps on your account.
 
 To access your marketplace app’s app Apple ID, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/).
 
@@ -125,7 +125,7 @@ After you sign the JWT, provide the token to the app developer so they can uploa
   List the alternative distribution key for your account.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)

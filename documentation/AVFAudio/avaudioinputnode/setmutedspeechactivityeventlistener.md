@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-func setMutedSpeechActivityEventListener(_ listenerBlock: ((AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool
+func setMutedSpeechActivityEventListener(_ listenerBlock: (@Sendable (AVAudioVoiceProcessingSpeechActivityEvent) -> Void)?) -> Bool
 ```
 
 ## See Also

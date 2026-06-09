@@ -46,6 +46,12 @@ final class WorkoutScheduler
 - [func removeAllWorkouts() async](workoutscheduler/removeallworkouts.md)
   Removes all scheduled workouts.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [struct WorkoutPlan](workoutplan.md)

@@ -29,6 +29,7 @@ If you create a `CSPerson` object to represent a specific contact, you can use t
 ### Initializing a person object
 - [init(displayName: String?, handles: [String], handleIdentifier: String)](csperson/init(displayname:handles:handleidentifier:).md)
   Returns a new `CSPerson` object initialized with the specified display name and contact attributes.
+- [init?(coder: NSCoder)](csperson/init(coder:).md)
 ### Accessing person properties
 - [var contactIdentifier: String?](csperson/contactidentifier.md)
   The identifier for the contact associated with the person.
@@ -38,8 +39,6 @@ If you create a `CSPerson` object to represent a specific contact, you can use t
   A key that identifies the type of contact property represented by the person object’s handle.
 - [var handles: [String]](csperson/handles.md)
   An array of contact handles related to the person.
-### Initializers
-- [init?(coder: NSCoder)](csperson/init(coder:).md)
 
 ## Relationships
 

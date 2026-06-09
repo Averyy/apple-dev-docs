@@ -46,6 +46,7 @@ case largeRoom
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
 - [AVAudioUnitReverbPreset.largeHall2](avaudiounitreverbpreset/largehall2.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative large-sized hall environment.
+- [AVAudioUnitReverbPreset.outdoorGeneral](avaudiounitreverbpreset/outdoorgeneral.md)
 
 
 ---

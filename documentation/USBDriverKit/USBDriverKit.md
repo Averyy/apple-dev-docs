@@ -58,6 +58,7 @@ Develop your driver by subclassing [`IOService`](https://developer.apple.com/doc
 - [kUSBHostBillboardDevicePropertySupportedModes](kusbhostbillboarddevicepropertysupportedmodes.md)
 - [kUSBHostBillboardDevicePropertyVersion](kusbhostbillboarddevicepropertyversion.md)
 - [kUSBHostControllerPropertyProtocolRevision](kusbhostcontrollerpropertyprotocolrevision.md)
+- [kUSBHostDevicePropertyFunction](kusbhostdevicepropertyfunction.md)
 - [kUSBHostDevicePropertyIdlePolicy](kusbhostdevicepropertyidlepolicy.md)
 - [kUSBHostDevicePropertyPowerSinkAllocation](kusbhostdevicepropertypowersinkallocation.md)
 - [kUSBHostDevicePropertyUSB3Preferred](kusbhostdevicepropertyusb3preferred.md)

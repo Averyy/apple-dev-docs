@@ -33,7 +33,7 @@ HealthKit provides two correlation types: blood pressure and food.
 
 ##### Using Correlation Types
 
-Like many HealthKit classes, correlation types are not extensible and should not be subclassed.
+As with many HealthKit classes, don’t subclass correlation types.
 
 This class reuses the same instance whenever possible. Letting multiple queries share the same workout type helps reduce the overall memory usage.
 

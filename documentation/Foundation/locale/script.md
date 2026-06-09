@@ -25,6 +25,8 @@ struct Script
 ### Creating a script
 - [init(String)](locale/script/init(_:).md)
   Creates a script from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/script/init(stringliteral:).md)
+  Creates a script from a BCP 47 identifier as a string literal.
 ### Examining script properties
 - [var identifier: String](locale/script/identifier.md)
 ### Using defined scripts

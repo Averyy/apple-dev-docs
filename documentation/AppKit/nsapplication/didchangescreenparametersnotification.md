@@ -20,6 +20,8 @@ The configuration change can be made either programmatically or when the user ch
 
 The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSApplication.DidChangeScreenParametersMessage`](nsapplication/didchangescreenparametersmessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

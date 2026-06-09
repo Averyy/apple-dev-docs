@@ -27,14 +27,15 @@ object BetaAppLocalizationCreateRequest
 ## See Also
 
 - [object BetaAppLocalization](betaapplocalization.md)
-  The data structure that represents a Beta App Localizations resource.
+  The localized feedback URL, marketing URL, and privacy policy URL shown to TestFlight testers for a specific language.
 - [object BetaAppLocalizationResponse](betaapplocalizationresponse.md)
-  A response that contains a single Beta App Localizations resource.
+  The response body for endpoints that create, read, or modify localized TestFlight app metadata.
 - [object BetaAppLocalizationsWithoutIncludesResponse](betaapplocalizationswithoutincludesresponse.md)
+  A response containing a list of TestFlight app localizations, without related resources.
 - [object BetaAppLocalizationUpdateRequest](betaapplocalizationupdaterequest.md)
   The request body you use to update a Beta App Localization.
 - [object BetaAppLocalizationsResponse](betaapplocalizationsresponse.md)
-  A response that contains a list of Beta App Localization resources.
+  The response body for endpoints that list localized TestFlight app metadata entries.
 - [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 

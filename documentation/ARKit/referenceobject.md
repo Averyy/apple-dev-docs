@@ -21,6 +21,10 @@ struct ReferenceObject
   Creates a reference object from a URL you provide.
 - [init(named: String, from: Bundle?) async throws](referenceobject/init(named:from:).md)
   Creates a reference object from a bundle.
+- [init(from: URL, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(from:configuration:).md)
+  Initializes a reference object from a URL, with reference object configuration.
+- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(named:from:configuration:).md)
+  Initializes a reference object from a bundle, with reference object configuration.
 ### Inspecting a reference object
 - [var id: UUID](referenceobject/id-swift.property.md)
   The unique identifier of this reference object.
@@ -34,6 +38,12 @@ struct ReferenceObject
   The name of a reference object.
 - [var description: String](referenceobject/description.md)
   A textual representation of this reference object.
+### Structures
+- [ReferenceObject.Configuration](referenceobject/configuration.md)
+  Defines a configuration for an individual reference object.
+### Operators
+- [static func == (ReferenceObject, ReferenceObject) -> Bool](referenceobject/==(_:_:).md)
+  Returns a Boolean value indicating whether two reference objects are equal.
 
 ## Relationships
 

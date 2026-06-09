@@ -2,7 +2,7 @@
 
 **Framework**: Core Graphics
 
-These strings are used to specify a matrix for the [`yCbCrMatrix`](cgdisplaystream/ycbcrmatrix.md) option.
+These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
 
 ## Topics
 

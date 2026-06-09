@@ -25,7 +25,7 @@ In a compatible iPad or iPhone app running in visionOS, the framework reports th
 
 ## Topics
 
-### Session features
+### Checking session features
 - [var supportsPreciseDistanceMeasurement: Bool](nidevicecapability/supportsprecisedistancemeasurement.md)
   A Boolean value that indicates whether the device produces precise distance measurements to nearby objects.
 - [var supportsDirectionMeasurement: Bool](nidevicecapability/supportsdirectionmeasurement.md)
@@ -36,6 +36,8 @@ In a compatible iPad or iPhone app running in visionOS, the framework reports th
   A Boolean value that indicates whether this device supports extended distance measurement.
 - [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
   A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
+- [var supportsBluetoothChannelSounding: Bool](nidevicecapability/supportsbluetoothchannelsounding.md)
+  A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
 
 ## See Also
 

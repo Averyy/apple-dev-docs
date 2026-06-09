@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Defines the summary of this intent in relation to how its parameters are populated.
+The parameter summary the Shortcuts app uses to generate shortcuts for this intent.
 
 **Availability**:
 - iOS 16.0+
@@ -24,10 +24,13 @@ static var parameterSummary: Self.SummaryContent { get }
 ## Mentions
 
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Creating your first app intent](creating-your-first-app-intent.md)
 
 #### Discussion
 
-For more information about using parameters and providing a parameter summary, see [`Provide an interactive parameter summary for your intent`](adding-parameters-to-an-app-intent#Provide-an-interactive-parameter-summary-for-your-intent.md).
+Use this property to create interactive descriptions of your app intent that include relevant parameter values. You can use this property to provide multiple summaries reflecting specific parameter values or combinations of values. You can also incorporate specific parameters values into your descriptions using variable substitution. The Shortcuts app uses the contents of this property to create bespoke shortcuts for your app.
+
+For information about how to create parameter summaries for an app intent, see [`Provide an interactive parameter summary for your intent`](adding-parameters-to-an-app-intent#Provide-an-interactive-parameter-summary-for-your-intent.md).
 
 ## See Also
 
@@ -42,6 +45,8 @@ For more information about using parameters and providing a parameter summary, s
 - [AppIntent.Summary](appintent/summary.md)
 - [AppIntent.Switch](appintent/switch.md)
 - [AppIntent.When](appintent/when.md)
+- [AppIntent.Option](appintent/option.md)
+  A convenience type alias that represents a choice option within the scope of an app intent.
 
 
 ---

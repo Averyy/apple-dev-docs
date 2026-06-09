@@ -16,6 +16,7 @@ object BetaFeedbackCrashSubmission.Relationships.Build
 
 ### Dictionaries
 - [object BetaFeedbackCrashSubmission.Relationships.Build.Data](betafeedbackcrashsubmission/relationships-data.dictionary/build-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a beta feedback crash submission.
 
 ## Properties
 

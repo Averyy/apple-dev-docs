@@ -16,7 +16,7 @@ Adds custom actions to a section.
 
 ```swift
 nonisolated
-func sectionActions<Content>(@ViewBuilder content: () -> Content) -> some View where Content : View
+func sectionActions<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

@@ -1,4 +1,4 @@
-# List All App Screenshot Sets for an App Store Version Localization
+# List all app screenshot sets for an app store version localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,24 +14,24 @@ List all screenshot sets for a specific localization.
 
 ## Parameters
 
-- `fields[appScreenshotSets]` ([string])
-- `fields[appScreenshots]` ([string])
-- `filter[screenshotDisplayType]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[appScreenshots]` (integer)
-- `filter[appStoreVersionExperimentTreatmentLocalization]` ([string])
-- `filter[appCustomProductPageLocalization]` ([string])
-- `fields[appCustomProductPageLocalizations]` ([string])
-- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
-- `fields[appStoreVersionLocalizations]` ([string])
+- `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+- `fields[appScreenshots]` ([string]): Additional fields to include for each app screenshot resource returned by the response.
+- `filter[screenshotDisplayType]` ([string]): Filter the returned app screenshot sets by screenshot display type.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app screenshot set resources to return.
+- `limit[appScreenshots]` (integer): The maximum number of related app screenshot resources to return.
+- `filter[appStoreVersionExperimentTreatmentLocalization]` ([string]): Filter the returned app screenshot sets by App Store version experiment treatment localization.
+- `filter[appCustomProductPageLocalization]` ([string]): Filter the returned app screenshot sets by app custom product page localization.
+- `fields[appCustomProductPageLocalizations]` ([string]): Additional fields to include for each app custom product page localization resource returned by the response.
+- `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string]): Additional fields to include for each App Store version experiment treatment localization resource returned by the response.
+- `fields[appStoreVersionLocalizations]` ([string]): Additional fields to include for each App Store version localization resource returned by the response.
 
 ## See Also
 
-- [List All App Preview Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
+- [List all app preview sets for an app store version localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
   List all app preview sets for a specific localization.
-- [GET /v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets](get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
-- [GET /v1/appStoreVersionLocalizations/{id}/relationships/appScreenshotSets](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
+- [List preview set IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-apppreviewsets.md)
+- [List screenshot set IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
 
 
 ---

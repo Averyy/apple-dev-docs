@@ -11,6 +11,7 @@ Creates an immersive space.
 ## Declaration
 
 ```swift
+nonisolated
 init(@ImmersiveSpaceContentBuilder content: @escaping () -> Content) where Data == Never
 ```
 

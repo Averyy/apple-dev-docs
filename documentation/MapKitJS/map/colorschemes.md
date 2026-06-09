@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: var
 
-A static property that allows you to access to access the look color scheme enumeration.
+A static property that lets you access the color scheme enumeration.
 
 **Availability**:
 - MapKit JS 5.13+
@@ -11,17 +11,12 @@ A static property that allows you to access to access the look color scheme enum
 ## Declaration
 
 ```swift
-static ColorSchemes: typeof ColorScheme;
+static get ColorSchemes(): typeof ColorScheme;
 ```
 
-#### Discussion
+## Mentions
 
-Use this object to access the [`ColorScheme`](colorscheme.md) enumeration with `mapkit.Map.ColorSchemes`.
-
-## Topics
-
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 ## See Also
 

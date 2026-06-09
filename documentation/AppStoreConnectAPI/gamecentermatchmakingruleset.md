@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a rule set.
+A named collection of matchmaking rules and queues that defines the logic for matching players in a Game Center game.
 
 **Availability**:
 - App Store Connect API 3.1+

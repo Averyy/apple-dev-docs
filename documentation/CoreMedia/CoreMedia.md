@@ -90,6 +90,32 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [Core Media Constants](core-media-constants.md)
 - [Core Media Functions](core-media-functions.md)
 - [Core Media Type Aliases](core-media-type-aliases.md)
+### Structures
+- [struct CMCameraIntrinsicMatrix](cmcameraintrinsicmatrix.md)
+  A matrix that describes the camera’s intrinsic properties.
+- [struct CMCustomNotificationInfo](cmcustomnotificationinfo.md)
+  Holds custom userInfo for notification sent for a buffer event.
+### Variables
+- [let kCMFormatDescriptionLogTransferFunction_AppleLog2: CFString](kcmformatdescriptionlogtransferfunction_applelog2.md)
+  Log Transfer Function identifier for Apple Log 2.
+- [let kCMMetadataBaseDataType_ISOLatin1: CFString](kcmmetadatabasedatatype_isolatin1.md)
+- [let kCMMetadataBaseDataType_MacRoman: CFString](kcmmetadatabasedatatype_macroman.md)
+- [let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString](kcmmetadatadatatype_quicktimemetadatasmpte2094_50.md)
+- [let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString](kcmmetadataidentifier_itut_t35metadatasmpte2094_50.md)
+### Type Aliases
+- [typealias CMAttachmentAccess](cmattachmentaccess.md)
+- [typealias CMAttachmentContainer](cmattachmentcontainer.md)
+- [typealias CMAttachmentKeyDefinitions](cmattachmentkeydefinitions.md)
+- [typealias CMAttachmentPropagationMode](cmattachmentpropagationmode.md)
+- [typealias CMAttachmentRawValue](cmattachmentrawvalue.md)
+- [typealias CMAttachmentValueRepresentable](cmattachmentvaluerepresentable.md)
+### Enumerations
+- [enum CMBlockBufferAttachmentKeyDefinitions](cmblockbufferattachmentkeydefinitions.md)
+  A namespace for block buffer attachment keys.
+- [enum CMDroppedFrameReason](cmdroppedframereason.md)
+- [enum CMSampleBufferAttachmentKeyDefinitions](cmsamplebufferattachmentkeydefinitions.md)
+  A namespace for sample buffer attachment keys.
+- [enum CMStillImageLensStabilization](cmstillimagelensstabilization.md)
 
 
 ---

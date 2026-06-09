@@ -6,8 +6,7 @@
 Update details for existing users.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 #### Discussion
 
@@ -68,7 +67,7 @@ missing
 - [Get Users](get-users-4mwln.md)
   Get information about a set of users.
 - [Create Users](create-users.md)
-  Create users to assign apps and books to.
+  Create users to assign apps, books, and subscriptions to.
 - [Retire Users](retire-users.md)
   Retire users by client user IDs.
 

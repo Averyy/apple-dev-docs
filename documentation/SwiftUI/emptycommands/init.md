@@ -15,6 +15,7 @@ Creates an empty command hierarchy.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

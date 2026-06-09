@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents Build Bundles resource.
+A specific binary bundle within a build, such as an app extension, App Clip, or nested app target.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -35,15 +35,15 @@ object BuildBundle
 - [type BuildBundleType](buildbundletype.md)
   A string that represents the possible components of a build bundle.
 - [object AppClipDomainStatus](appclipdomainstatus.md)
-  The data structure that represents the App Clip Domain Statuses resource.
+  The validation status of the associated domains configured for an App Clip, indicating whether each domain is reachable and correctly set up.
 - [object BuildBundleFileSize](buildbundlefilesize.md)
-  The data structure that represents a Build Bundle File Sizes resource.
+  The estimated and actual download and install sizes for a build bundle, broken down by device type.
 - [object AppClipDomainStatusResponse](appclipdomainstatusresponse.md)
-  A response that contains a single App Clip Domain Statuses resource.
+  A response containing the validation status of associated domains configured for an App Clip.
 - [object BetaAppClipInvocationsResponse](betaappclipinvocationsresponse.md)
-  A response that contains a list of Beta App Clip Invocations resources.
+  A response containing a list of TestFlight App Clip invocations for a beta build.
 - [object BuildBundleFileSizesResponse](buildbundlefilesizesresponse.md)
-  A response that contains a list of Build Bundle File Sizes resources.
+  A response containing a list of download and install size estimates for a build’s bundles.
 
 
 ---

@@ -34,6 +34,11 @@ enum CalibrationType
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
+
 
 ---
 

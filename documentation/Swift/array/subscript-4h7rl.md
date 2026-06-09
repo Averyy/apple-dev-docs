@@ -64,7 +64,7 @@ print(streetsSlice[0])
 - [subscript(Range<Int>) -> ArraySlice<Element>](array/subscript(_:)-53fvb.md)
   Accesses a contiguous subrange of the array’s elements.
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
 - [func randomElement() -> Self.Element?](array/randomelement.md)
   Returns a random element of the collection.
 - [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)

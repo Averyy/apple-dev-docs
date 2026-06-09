@@ -14,6 +14,7 @@ Creates an Edit button instance.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

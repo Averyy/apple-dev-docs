@@ -14,10 +14,6 @@ Create a shared coordinate space provider.
 init()
 ```
 
-#### Return Value
-
-The shared coordinate space provider.
-
 
 ---
 

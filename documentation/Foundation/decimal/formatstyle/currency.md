@@ -30,6 +30,8 @@ struct Currency
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Currency.Configuration.Grouping) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(Decimal.FormatStyle.Currency.Configuration.Precision) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(Decimal.FormatStyle.Currency.Configuration.Presentation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/presentation(_:).md)
@@ -44,6 +46,9 @@ struct Currency
   The type the format style uses for configuration settings.
 - [enum CurrencyFormatStyleConfiguration](currencyformatstyleconfiguration.md)
   Configuration settings for formatting currency values.
+### Formatting decimal currency values
+- [func format(Decimal) -> String](decimal/formatstyle/currency/format(_:).md)
+  Formats a decimal value, using this style.
 ### Creating attributed strings
 - [var attributed: Decimal.FormatStyle.Attributed](decimal/formatstyle/currency/attributed.md)
   An attributed format style based on the decimal currency format style.
@@ -54,9 +59,18 @@ struct Currency
   The currency code this format style uses.
 - [var locale: Locale](decimal/formatstyle/currency/locale.md)
   The locale of the format style.
+### Parsing decimal currency values
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Currency>](decimal/formatstyle/currency/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating currency values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](decimal/formatstyle/currency/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Instance Methods
 - [func notation(Decimal.FormatStyle.Currency.Configuration.Notation) -> Decimal.FormatStyle.Currency](decimal/formatstyle/currency/notation(_:).md)
   Modifies the format style to use the specified notation.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](decimal/formatstyle/currency/customconsumingregexcomponent-implementations.md)
+- [ParseableFormatStyle Implementations](decimal/formatstyle/currency/parseableformatstyle-implementations.md)
 
 ## Relationships
 

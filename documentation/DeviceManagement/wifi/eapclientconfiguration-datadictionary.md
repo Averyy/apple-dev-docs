@@ -13,8 +13,6 @@ A dictionary that configures an enterprise network.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,17 +32,17 @@ object WiFi.EAPClientConfiguration
 - `EAPFASTProvisionPAC` (boolean): If ‘true’, allows PAC provisioning. This value is only applicable if ‘EAPFASTUsePAC’ is ‘true’. This value must be ‘true’ for EAP-FAST PAC usage to succeed because there’s no other way to provision a PAC.
 - `EAPFASTProvisionPACAnonymously` (boolean): If ‘true’, provisions the device anonymously. Note that there are known machine-in-the-middle attacks for anonymous provisioning.
 - `EAPFASTUsePAC` (boolean): If ‘true’, the device uses an existing PAC if it’s present. Otherwise, the server must present its identity using a certificate.
-- `EAPSIMNumberOfRANDs` (integer): The minimum number of RAND values to accept from the server. For use with EAP-SIM only. Available in iOS 8 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
-- `OneTimeUserPassword` (boolean): If ‘true’, the user receives a prompt for a password each time they connect to the network. Available in iOS 8 and later, macOS 10.8 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
+- `EAPSIMNumberOfRANDs` (integer): The minimum number of RAND values to accept from the server. For use with EAP-SIM only. Available: iOS 8+ | iPadOS 8+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
+- `OneTimeUserPassword` (boolean): If ‘true’, the user receives a prompt for a password each time they connect to the network. Available: iOS 8+ | iPadOS 8+ | macOS 10.8+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 - `OuterIdentity` (string): A name that hides the user’s true name. The user’s actual name appears only inside the encrypted tunnel. For example, you might set this to anonymous or anon, or anon@mycompany.net. It can increase security because an attacker can’t see the authenticating user’s name in the clear. This key is only relevant to TTLS, PEAP, and EAP-FAST. This field is required if ‘TLSMinimumVersion’ is ‘1.3’.
 - `PayloadCertificateAnchorUUID` ([string]): An array of the UUID of each certificate payload in the same profile to trust for authentication. Use this key to prevent the device from asking the user whether to trust the listed certificates. Dynamic trust (the certificate dialogue) is in a disabled state if you specify this property without also enabling ‘TLSAllowTrustExceptions’.
 - `SystemModeCredentialsSource` (string): Set this string to ‘ActiveDirectory’ to use the AD computer name and password credentials. If using this property, you can’t use ‘SystemModeUseOpenDirectoryCredentials’.
 - `SystemModeUseOpenDirectoryCredentials` (boolean): If ‘true’, the system mode connection tries to use the Open Directory credentials. If using this property, you can’t use ‘SystemModeCredentialsSource’.
-- `TLSCertificateIsRequired` (boolean): If ‘true’, allows for two-factor authentication for EAP-TTLS, PEAP, or EAP-FAST. If ‘false’, allows for zero-factor authentication for EAP-TLS. If you don’t specify a value, the default is ‘true’ for EAP-TLS, and ‘false’ for other EAP types. Available in iOS 7 and later, macOS 10.7 and later, tvOS 9 and later, visionOS 1 and later, and watchOS 3.2 and later.
-- `TLSMaximumVersion` (string): The maximum TLS version for EAP authentication. Available in iOS 11 and later, macOS 10.13 and later, tvOS 11 and later, visionOS 1 and later, and watchOS 3.2 and later.
-- `TLSMinimumVersion` (string): The minimum TLS version for EAP authentication. Available in iOS 11 and later, macOS 10.13 and later, tvOS 11 and later, visionOS 1 and later, and watchOS 3.2 and later.
+- `TLSCertificateIsRequired` (boolean): If ‘true’, allows for two-factor authentication for EAP-TTLS, PEAP, or EAP-FAST. If ‘false’, allows for zero-factor authentication for EAP-TLS. If you don’t specify a value, the default is ‘true’ for EAP-TLS, and ‘false’ for other EAP types. Available: iOS 7+ | iPadOS 7+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
+- `TLSMaximumVersion` (string): The maximum TLS version for EAP authentication. Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 11+ | visionOS 1+ | watchOS 3.2+
+- `TLSMinimumVersion` (string): The minimum TLS version for EAP authentication. Available: iOS 11+ | iPadOS 11+ | macOS 10.13+ | tvOS 11+ | visionOS 1+ | watchOS 3.2+
 - `TLSTrustedCertificates` ([string]): An array of trusted certificates. Each entry in the array must contain certificate data that represents an anchor certificate used for verifying the server certificate.
-- `TLSTrustedServerNames` ([string]): The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use wildcards to specify the name, such as ‘wpa.*.example.com’.
+- `TLSTrustedServerNames` ([string]): The list of accepted server certificate common names. If a server presents a certificate that isn’t in this list, the system doesn’t trust it. If you specify this property, the system disables dynamic trust (the certificate dialog) unless you also specify ‘TLSAllowTrustExceptions’ with the value ‘true’. If necessary, use a single “*” character to specify a wildcard for an individual component of the name, such as ’wpa.*.example.com’.
 - `TTLSInnerAuthentication` (string): The inner authentication that the TTLS module uses.
 - `UserName` (string): The user name for the account. If you don’t specify a value, the system prompts the user during login.
 - `UserPassword` (string): The user’s password. If you don’t specify a value, the system prompts the user during login.

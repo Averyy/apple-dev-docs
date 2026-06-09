@@ -11,8 +11,6 @@ The dictionary to use for an IPSec VPN type.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,9 +26,9 @@ object VPN.IPSec
 - `LocalIdentifier` (string): The name of the group. For hybrid authentication, the string needs to end with “hybrid”. Present only for Cisco IPSec if `AuthenticationMethod` is `SharedSecret`.
 - `LocalIdentifierType` (string): Present only if `AuthenticationMethod` is `SharedSecret`. The value is `KeyID`. The system uses this value for L2TP and Cisco IPSec VPNs.
 - `OnDemandEnabled` (integer): If `1`, enables bringing the VPN connection up on demand.
-- `OnDemandMatchDomainsAlways` ([string]): Deprecated. A list of domain names. In iOS 7 and later, if this key is present, the system treats associated domain names as though they’re associated with the `OnDemandMatchDomainsOnRetry` key. This behavior can be overridden by `OnDemandRules`.
-- `OnDemandMatchDomainsNever` ([string]): Deprecated. A list of domain names. In iOS 7 and later, this key is deprecated (but still supported) in favor of `EvaluateConnection` actions in the `OnDemandRules` dictionaries.
-- `OnDemandMatchDomainsOnRetry` ([string]): Deprecated. A list of domain names. In iOS 7 and later, this field is deprecated (but still supported) in favor of `EvaluateConnection` actions in the `OnDemandRules` dictionaries.
+- `OnDemandMatchDomainsAlways` ([string]): Deprecated. A list of domain names. In iOS 7 and later, if this key is present, the system treats associated domain names as though they’re associated with the `OnDemandMatchDomainsOnRetry` key. This behavior can be overridden by `OnDemandRules`. Deprecated: iOS 7+ | iPadOS 7+
+- `OnDemandMatchDomainsNever` ([string]): Deprecated. A list of domain names. In iOS 7 and later, this key is deprecated (but still supported) in favor of `EvaluateConnection` actions in the `OnDemandRules` dictionaries. Deprecated: iOS 7+ | iPadOS 7+
+- `OnDemandMatchDomainsOnRetry` ([string]): Deprecated. A list of domain names. In iOS 7 and later, this field is deprecated (but still supported) in favor of `EvaluateConnection` actions in the `OnDemandRules` dictionaries. Deprecated: iOS 7+ | iPadOS 7+
 - `OnDemandRules` ([VPN.VPN.OnDemandRulesElement]): The on-demand rules dictionary.
 - `PayloadCertificateUUID` (string): The UUID of the certificate payload within the same profile to use for the account credentials. Only use this with Cisco IPSec VPNs and if the `AuthenticationMethod` key is to `Certificate`.
 - `PromptForVPNPIN` (boolean): If `true`, prompts for a PIN when connecting to Cisco IPSec VPNs.

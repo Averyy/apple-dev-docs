@@ -11,6 +11,7 @@ A system style that displays the components in an editable field, with adjoining
 ## Declaration
 
 ```swift
+nonisolated
 struct StepperFieldDatePickerStyle
 ```
 

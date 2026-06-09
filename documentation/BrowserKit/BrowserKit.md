@@ -62,6 +62,8 @@ If the device supports alternative browser engines, you can offer the person a d
   An error that occurs during browser data import or export operations.
 - [let BEBrowserDataExchangeErrorDomain: String](bebrowserdataexchangeerrordomain.md)
   A constant that identifies the error domain for browser data exchange errors.
+### Classes
+- [class BEBrowserContentFilter](bebrowsercontentfilter.md)
 
 
 ---

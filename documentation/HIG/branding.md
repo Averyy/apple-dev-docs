@@ -34,6 +34,9 @@ In addition to expressing your brand in your [app icon](https://developer.apple.
 [Show more with app previews](https://developer.apple.com/app-store/app-previews/)
 [Color](color.md)
 
+#### Videos
+- [Communicate your brand identity on iOS](https://developer.apple.com/videos/play/wwdc2026/251) - Explore practical approaches to branding using typography, color, components, and interactions that balance the familiar with the unique.
+
 
 
 ---

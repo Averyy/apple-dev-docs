@@ -50,7 +50,7 @@ LabeledContent {
 }
 ```
 
-The `label` view builder accepts any kind of view, like a [`Label`](label.md):
+The `label` content builder accepts any kind of view, like a [`Label`](label.md):
 
 ```swift
 LabeledContent {

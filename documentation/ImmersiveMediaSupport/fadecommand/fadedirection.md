@@ -30,7 +30,6 @@ enum FadeDirection
 
 ### Conforms To
 - [CodingKey](../Swift/CodingKey.md)
-- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)

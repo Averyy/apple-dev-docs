@@ -26,9 +26,9 @@ An attributed string representation of the date.
 
 #### Discussion
 
-The [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) [`format(_:)`](formatstyle/format(_:).md) instance method generates an attributed string from the provided date. Once you create a style, you can use it to format dates multiple times.
+The [`Date.ISO8601FormatStyle`](date/iso8601formatstyle.md) [`format(_:)`](date/formatstyle/format(_:).md) instance method generates an attributed string from the provided date. Once you create a style, you can use it to format dates multiple times.
 
-For an example of formatting multiple dates into plain strings, see [`format(_:)`](formatstyle/format(_:).md).
+For an example of formatting multiple dates into plain strings, see [`format(_:)`](date/formatstyle/format(_:).md).
 
 ## Parameters
 

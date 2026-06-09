@@ -16,7 +16,7 @@ number diff(array[number] $values)
 
 ##### Parameters
 
-- **`values`**: An array that contains the numeric values to compare.
+-`values`: An array that contains the numeric values to compare.
 
 ##### Return Value
 

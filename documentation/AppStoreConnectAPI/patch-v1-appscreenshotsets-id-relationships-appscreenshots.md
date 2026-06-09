@@ -1,4 +1,4 @@
-# Replace All App Screenshots for an App Screenshot Set
+# Replace all app screenshots for an app screenshot set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Change the order of the screenshots in a screenshot set.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app screenshot set resource ID from the [`List all app screenshot sets for an app store version localization`](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md) response.
 
 ## See Also
 
-- [Get All App Screenshot IDs for an App Screenshot Set](get-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
+- [Get all app screenshot ids for an app screenshot set](get-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
   Get the ordered screenshot IDs in a screenshot set.
-- [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
+- [List all app screenshots for an app screenshot set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
   List all ordered screenshots in a screenshot set.
 
 

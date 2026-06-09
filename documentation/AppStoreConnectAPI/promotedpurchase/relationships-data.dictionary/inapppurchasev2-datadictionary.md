@@ -16,6 +16,7 @@ object PromotedPurchase.Relationships.InAppPurchaseV2
 
 ### Objects
 - [object PromotedPurchase.Relationships.InAppPurchaseV2.Data](promotedpurchase/relationships-data.dictionary/inapppurchasev2-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a promoted purchase.
 
 ## Properties
 

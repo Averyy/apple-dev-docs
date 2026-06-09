@@ -42,6 +42,13 @@ struct RemoteCapabilities
 ### Supporting RCS encryption
 - [let supportsEndToEndEncryption: Bool](rcsservice/remotecapabilities/supportsendtoendencryption.md)
   A Boolean value indicating whether the remote end supports end-to-end encryption.
+### Instance Properties
+- [let supportsExtendedMessagingCustomReaction: Bool](rcsservice/remotecapabilities/supportsextendedmessagingcustomreaction.md)
+  Whether remote end supports extended messaging custom reaction feature.
+- [let supportsExtendedMessagingReaction: Bool](rcsservice/remotecapabilities/supportsextendedmessagingreaction.md)
+  Whether remote end supports extended messaging reaction feature.
+- [let supportsExtendedMessagingReply: Bool](rcsservice/remotecapabilities/supportsextendedmessagingreply.md)
+  Whether remote end supports extended messaging reply feature.
 
 ## Relationships
 

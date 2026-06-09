@@ -28,6 +28,10 @@ For more information on universal links, see [`Allowing apps and websites to lin
 
 ## See Also
 
+- [var webpageURL: URL?](nsuseractivity/webpageurl.md)
+  The URL of the webpage to load in a browser to continue the activity.
+- [var referrerURL: URL?](nsuseractivity/referrerurl.md)
+  The URL of the webpage that linked to the webpage URL.
 - [let TVUserActivityTypeBrowsingChannelGuide: String](../TVServices/TVUserActivityTypeBrowsingChannelGuide.md)
   An activity for viewing your app’s channel guide.
 

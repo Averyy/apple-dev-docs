@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: class
 
-An observable object that helps apps handle receiving commands and data sent from an immersive media remote preview sender object.
+An observable object that helps applications handle receiving commands and data sent from an immersive media remote preview sender object.
 
 **Availability**:
 - macOS 26.0+
@@ -56,6 +56,15 @@ To properly render an immersive video preview, the receiver also needs access to
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class ImmersiveMediaPreviewMessagingProtocol](immersivemediapreviewmessagingprotocol.md)
+  An object that represents the messaging protocol a remote preview sender and receiver use to communicate.
+- [class ImmersiveMediaRemotePreviewSender](immersivemediaremotepreviewsender.md)
+  An observable object that helps an app send the required data to all connected receiver applications to help facilitate the complete preview of the immersive media playback.
+- [class ImmersivePreviewRenderer](immersivepreviewrenderer.md)
+  An object that renders an immersive video frame into a texture and exposes the command buffer for presentation.
 
 
 ---

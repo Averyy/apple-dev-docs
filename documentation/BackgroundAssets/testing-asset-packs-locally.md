@@ -108,6 +108,8 @@ Include the HTTPS scheme in the base URL and omit the path. Now, when you build 
   Create managed asset packs, choose download options, and upload Apple-hosted asset packs  to App Store Connect.
 - [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
   Configure your project and write the code to download asset packs hosted by Apple.
+- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+  Improve peoples’ experience of your app by downloading only immediately needed language assets.
 
 
 ---

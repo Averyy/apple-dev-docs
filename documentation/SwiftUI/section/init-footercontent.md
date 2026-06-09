@@ -17,7 +17,7 @@ Creates a section with a footer and the provided section content.
 ## Declaration
 
 ```swift
-init(footer: Footer, @ViewBuilder content: () -> Content)
+init(footer: Footer, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

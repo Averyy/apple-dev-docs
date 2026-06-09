@@ -41,6 +41,7 @@ When the view first appears, SwiftUI will check the state of the modifier keys a
 ## Parameters
 
 - `mask`: A set of modifier keys controlling which keys to observe for changes. The default mask includes all keys.
+- `initial`: A flag indicating whether the view should be updated automatically with the state of the modifier keys when the view appears. If `false`, the callback won’t fire until modifier key press state actually changes. The default value is `true`.
 - `action`: A closure to receive updates when modifier key press state changes. The closure receives the old and new values as input.
 
 ## See Also

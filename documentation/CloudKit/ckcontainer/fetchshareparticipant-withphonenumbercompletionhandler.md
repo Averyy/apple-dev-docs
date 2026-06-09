@@ -17,7 +17,7 @@ Fetches the share participant with the specified phone number.
 ## Declaration
 
 ```swift
-func shareParticipant(forPhoneNumber phoneNumber: String) async throws -> CKShare.Participant
+func fetchShareParticipant(withPhoneNumber phoneNumber: String, completionHandler: @escaping @Sendable (CKShare.Participant?, (any Error)?) -> Void)
 ```
 
 #### Discussion

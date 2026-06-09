@@ -9,7 +9,6 @@ A set of options that specify optional information to include in electricity ins
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

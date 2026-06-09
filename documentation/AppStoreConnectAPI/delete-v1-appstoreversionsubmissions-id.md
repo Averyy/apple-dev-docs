@@ -1,4 +1,4 @@
-# Delete an App Store Version Submission
+# Delete an app store version submission
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

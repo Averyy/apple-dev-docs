@@ -25,7 +25,7 @@ struct CustomWorkout
   Create a new custom workout.
 - [static func supportsActivity(HKWorkoutActivityType) -> Bool](customworkout/supportsactivity(_:).md)
   Returns a Boolean value that indicates whether the system supports the specified workout activity .
-- [static func supportsAlert(WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
+- [static func supportsAlert(any WorkoutAlert, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsalert(_:activity:location:).md)
   Returns a Boolean value that indicates whether the system supports the specified alert for the given activity type and location.
 - [static func supportsGoal(WorkoutGoal, activity: HKWorkoutActivityType, location: HKWorkoutSessionLocationType) -> Bool](customworkout/supportsgoal(_:activity:location:).md)
   Returns a Boolean value that indicates whether the system supports the specified goal for the given activity type and location.
@@ -42,17 +42,6 @@ struct CustomWorkout
   A block of repeating work and recovery steps.
 - [var cooldown: WorkoutStep?](customworkout/cooldown.md)
   The cooldown step (if any).
-### Comparing workouts
-- [var hashValue: Int](customworkout/hashvalue.md)
-  The hashed value of the custom workout.
-- [func hash(into: inout Hasher)](customworkout/hash(into:).md)
-  Hashes the essential components of the custom workout by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](customworkout/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two custom workouts aren’t equal.
-- [static func == (CustomWorkout, CustomWorkout) -> Bool](customworkout/==(_:_:).md)
-  Returns a Boolean value that indicates whether two custom workouts are equal.
-### Default Implementations
-- [Equatable Implementations](customworkout/equatable-implementations.md)
 
 ## Relationships
 

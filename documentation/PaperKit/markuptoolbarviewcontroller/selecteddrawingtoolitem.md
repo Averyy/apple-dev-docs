@@ -15,6 +15,11 @@ The currently selected drawing tool.
 @preconcurrency var selectedDrawingToolItem: PKToolPickerItem { get }
 ```
 
+## See Also
+
+- [var selectedDrawingTool: any PKTool](markuptoolbarviewcontroller/selecteddrawingtool.md)
+  The currently selected drawing tool.
+
 
 ---
 

@@ -42,7 +42,7 @@ Label {
 }
 ```
 
-Many SwiftUI controls have view builder initializers that enable you to follow this pattern. For more information on how to make your app’s text translatable, see [`Preparing your app’s text for translation`](https://developer.apple.com/documentation/Xcode/preparing-your-apps-text-for-translation).
+Many SwiftUI controls have content builder initializers that enable you to follow this pattern. For more information on how to make your app’s text translatable, see [`Preparing your app’s text for translation`](https://developer.apple.com/documentation/Xcode/preparing-your-apps-text-for-translation).
 
 ## See Also
 

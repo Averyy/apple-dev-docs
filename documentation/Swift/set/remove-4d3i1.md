@@ -21,7 +21,7 @@ mutating func remove<ConcreteElement>(_ member: ConcreteElement) -> ConcreteElem
 
 ## See Also
 
-- [func filter((Element) throws -> Bool) rethrows -> Set<Element>](set/filter(_:).md)
+- [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)
   Returns a new set containing the elements of the set that satisfy the given predicate.
 - [func remove(Element) -> Element?](set/remove(_:)-8p2tv.md)
   Removes the specified element from the set.

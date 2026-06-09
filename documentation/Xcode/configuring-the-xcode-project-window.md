@@ -34,7 +34,7 @@ Configure the areas of the main window to focus on your specific task. To show o
 
 To switch the navigator, click a navigator in the control above the navigator area.
 
-For information about the coding assistant, which appears in the navigator area when you click the Coding Assistant button, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
+For information about the coding assistant, which appears in the navigator area when you click the coding assistant button, see [`Writing code with intelligence in Xcode`](writing-code-with-intelligence-in-xcode.md).
 
 ##### Navigate the Project Files
 

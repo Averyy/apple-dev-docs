@@ -17,6 +17,7 @@ Creates an angular gradient.
 ## Declaration
 
 ```swift
+nonisolated
 init(gradient: Gradient, center: UnitPoint, startAngle: Angle = .zero, endAngle: Angle = .zero)
 ```
 

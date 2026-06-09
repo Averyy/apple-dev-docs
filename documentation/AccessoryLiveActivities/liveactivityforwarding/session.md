@@ -8,6 +8,7 @@ An object that represents the active connection between your data provider exten
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

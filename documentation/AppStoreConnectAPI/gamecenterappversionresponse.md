@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single app version resource.
+A response containing a single app version with its Game Center configuration.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -32,7 +32,7 @@ object GameCenterAppVersionResponse
 - [object GameCenterAppVersionUpdateRequest](gamecenterappversionupdaterequest.md)
   The request body you use to update an app version.
 - [object GameCenterAppVersionsResponse](gamecenterappversionsresponse.md)
-  A response that contains a list of app version resources.
+  A response containing a list of app versions with Game Center enabled.
 - [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
 - [type GameCenterVersionState](gamecenterversionstate.md)
   A string representing the state of a Game Center version.

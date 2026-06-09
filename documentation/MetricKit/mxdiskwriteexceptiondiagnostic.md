@@ -47,10 +47,14 @@ A disk write exception occurs when the app writes an excessive amount of data to
 
 ## See Also
 
-- [class MXDiskIOMetric](mxdiskiometric.md)
-  An object representing metrics about disk usage.
-- [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
-  An object representing metrics about your app’s disk space usage.
+- [class MXAppLaunchDiagnostic](mxapplaunchdiagnostic.md)
+  A diagnostic subclass that encapsulates app launch diagnostic reports.
+- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
+  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
+- [class MXCrashDiagnostic](mxcrashdiagnostic.md)
+  An object representing a diagnostic report for an app crash.
+- [class MXHangDiagnostic](mxhangdiagnostic.md)
+  An object representing a diagnostic report for an app that is too busy to handle user input responsively.
 
 
 ---

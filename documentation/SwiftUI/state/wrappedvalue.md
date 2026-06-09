@@ -20,10 +20,6 @@ The underlying value referenced by the state variable.
 var wrappedValue: Value { get nonmutating set }
 ```
 
-## Mentions
-
-- [Managing user interface state](managing-user-interface-state.md)
-
 #### Discussion
 
 This property provides primary access to the value’s data. However, you don’t typically access `wrappedValue` explicitly. Instead, you gain access to the wrapped value by referring to the property variable that you create with the `@State` attribute.

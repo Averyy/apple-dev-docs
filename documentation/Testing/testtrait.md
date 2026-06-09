@@ -26,6 +26,12 @@ protocol TestTrait : Trait
 
 The testing library defines a number of traits that you can add to test functions. You can also define your own traits by creating types that conform to this protocol, or to the [`SuiteTrait`](suitetrait.md) protocol.
 
+## Topics
+
+### Type Methods
+- [static func evaluates(any Evaluation, info: [String : String]) -> Self](testtrait/evaluates(_:info:).md)
+  Creates a trait that runs a single evaluation and makes its result available through the current evaluation context.
+
 ## Relationships
 
 ### Inherits From

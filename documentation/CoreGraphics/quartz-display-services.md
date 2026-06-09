@@ -57,11 +57,6 @@ You can use Quartz Display Services to:
   Returns the window level of the shield window for a captured display.
 - [func CGDisplayGetDrawingContext(CGDirectDisplayID) -> CGContext?](cgdisplaygetdrawingcontext(_:).md)
   Returns a graphics context suitable for drawing to a captured display.
-### Creating Images from the Display
-- [func CGDisplayCreateImage(CGDirectDisplayID) -> CGImage?](cgdisplaycreateimage(_:).md)
-  Returns an image containing the contents of the specified display.
-- [func CGDisplayCreateImage(CGDirectDisplayID, rect: CGRect) -> CGImage?](cgdisplaycreateimage(_:rect:).md)
-  Returns an image containing the contents of a portion of the specified display.
 ### Configuring Displays
 - [func CGBeginDisplayConfiguration(UnsafeMutablePointer<CGDisplayConfigRef?>?) -> CGError](cgbegindisplayconfiguration(_:).md)
   Begins a new set of display configuration changes.
@@ -235,29 +230,6 @@ You can use Quartz Display Services to:
   Waits for screen update operations.
 - [func CGReleaseScreenRefreshRects(UnsafeMutablePointer<CGRect>?)](cgreleasescreenrefreshrects(_:).md)
   Deallocates a list of rectangles that represent changed areas on local displays.
-### Streaming the Contents of a Display
-- [init?(display: CGDirectDisplayID, outputWidth: Int, outputHeight: Int, pixelFormat: Int32, properties: CFDictionary?, handler: CGDisplayStreamFrameAvailableHandler?)](cgdisplaystream/init(display:outputwidth:outputheight:pixelformat:properties:handler:).md)
-  Creates a new display stream to be used with a `CFRunloop`.
-- [init?(dispatchQueueDisplay: CGDirectDisplayID, outputWidth: Int, outputHeight: Int, pixelFormat: Int32, properties: CFDictionary?, queue: dispatch_queue_t, handler: CGDisplayStreamFrameAvailableHandler?)](cgdisplaystream/init(dispatchqueuedisplay:outputwidth:outputheight:pixelformat:properties:queue:handler:).md)
-  Creates a new display stream whose updates are delivered to a dispatch queue.
-- [func start() -> CGError](cgdisplaystream/start.md)
-  Tells a stream to start sending updates.
-- [func stop() -> CGError](cgdisplaystream/stop.md)
-  Tells a stream to stop sending updates.
-- [var runLoopSource: CFRunLoopSource?](cgdisplaystream/runloopsource.md)
-  Gets the run loop source for a display stream.
-- [func getRects(CGDisplayStreamUpdateRectType, rectCount: UnsafeMutablePointer<Int>) -> UnsafePointer<CGRect>?](cgdisplaystreamupdate/getrects(_:rectcount:).md)
-  Returns an array of rectangles that describe where the frame has changed since the previous frame.
-- [init?(mergedUpdateFirstUpdate: CGDisplayStreamUpdate?, secondUpdate: CGDisplayStreamUpdate?)](cgdisplaystreamupdate/init(mergedupdatefirstupdate:secondupdate:).md)
-  Combines two updates into a new update that includes the metadata for both source updates.
-- [func getMovedRectsDelta(dx: UnsafeMutablePointer<CGFloat>, dy: UnsafeMutablePointer<CGFloat>)](cgdisplaystreamupdate/getmovedrectsdelta(dx:dy:).md)
-  Return the movement delta values for a single update.
-- [var dropCount: Int](cgdisplaystreamupdate/dropcount.md)
-  Returns the number of frames that have been dropped since the last call to your update handler.
-- [class var typeID: CFTypeID](cgdisplaystream/typeid.md)
-  Returns the type identifier of a Quartz display stream.
-- [class var typeID: CFTypeID](cgdisplaystreamupdate/typeid.md)
-  Returns the type identifier of a Quartz display stream update.
 ### Callbacks
 - [typealias CGDisplayReconfigurationCallBack](cgdisplayreconfigurationcallback.md)
   A client-supplied callback function that’s invoked whenever the configuration of a local display is changed.
@@ -334,7 +306,7 @@ You can use Quartz Display Services to:
 - [Display Stream Optional Property Keys](display-stream-optional-property-keys.md)
   These keys are used to populate the `properties` dictionary used when creating a new display stream.
 - [Display Stream YCbCr to RGB conversion Matrix Options](display-stream-ycbcr-to-rgb-conversion-matrix-options.md)
-  These strings are used to specify a matrix for the [`yCbCrMatrix`](cgdisplaystream/ycbcrmatrix.md) option.
+  These strings are used to specify a matrix for the `CGDisplayStream/yCbCrMatrix` option.
 
 ## See Also
 

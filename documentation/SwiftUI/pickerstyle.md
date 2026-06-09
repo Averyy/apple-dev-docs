@@ -37,6 +37,8 @@ protocol PickerStyle
   A picker style that presents the options as a group of radio buttons.
 - [static var segmented: SegmentedPickerStyle](pickerstyle/segmented.md)
   A picker style that presents the options in a segmented control.
+- [static var tabs: TabsPickerStyle](pickerstyle/tabs.md)
+  A picker style that presents options as segmented tabs.
 - [static var wheel: WheelPickerStyle](pickerstyle/wheel.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 ### Supporting types
@@ -54,6 +56,8 @@ protocol PickerStyle
   A picker style that presents the options as a group of radio buttons.
 - [struct SegmentedPickerStyle](segmentedpickerstyle.md)
   A picker style that presents the options in a segmented control.
+- [struct TabsPickerStyle](tabspickerstyle.md)
+  A picker style that presents options as segmented tabs.
 - [struct WheelPickerStyle](wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 ### Deprecated styles
@@ -71,6 +75,7 @@ protocol PickerStyle
 - [PopUpButtonPickerStyle](popupbuttonpickerstyle.md)
 - [RadioGroupPickerStyle](radiogrouppickerstyle.md)
 - [SegmentedPickerStyle](segmentedpickerstyle.md)
+- [TabsPickerStyle](tabspickerstyle.md)
 - [WheelPickerStyle](wheelpickerstyle.md)
 
 ## See Also

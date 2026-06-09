@@ -266,7 +266,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-4h7rl.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
 - [func randomElement() -> Self.Element?](array/randomelement.md)
   Returns a random element of the collection.
 - [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)
@@ -438,7 +438,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 ### Comparing Arrays
 - [static func == (Array<Element>, Array<Element>) -> Bool](array/==(_:_:).md)
   Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
-- [static func != (Self, Self) -> Bool](array/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](array/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](array/elementsequal(_:).md)
   Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.
@@ -541,13 +541,36 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [init(fromSplitComplex: DSPDoubleSplitComplex, scale: Double, count: Int)](array/init(fromsplitcomplex:scale:count:)-5kgr3.md)
   Creates a new array of single-precision values from a `DSPDoubleSplitComplex` structure.
 ### Instance Properties
+- [var byStateReportingDomain: [StateReportingDomain : [MetricManager.ReportedState]]](array/bystatereportingdomain-7plu4.md)
+  All states from all interval entries grouped by their StateReporting domain.
+- [var byStateReportingDomain: [StateReportingDomain : [MetricReport.StateEntry]]](array/bystatereportingdomain-8k1ux.md)
+  State entries grouped by their StateReporting domain.
+- [var fullDayEntry: MetricReport.IntervalEntry](array/fulldayentry.md)
+  The full day interval entry spanning the entire report collection period.
 - [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
 - [var span: Span<Element>](array/span.md)
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
+- [func applyListOrder([String])](array/applylistorder(_:)-33po6.md)
+  Reorders elements in place to match `order`, preserving elements not in `order`. Implements USD’s “ordered” list-op semantics.
+- [func applyListOrder([USDToken])](array/applylistorder(_:)-8ncuj.md)
+  Reorders elements in place to match `order`, preserving elements not in `order`. Implements USD’s “ordered” list-op semantics.
+- [func isTriviallyIdentical(to: Array<Element>) -> Bool](array/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this array is identical to `other`.
+- [func makeSamples<T>(Prompt, targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, validator: ((ModelSample<T>) async throws -> Bool)?) -> some AsyncSequence<ModelSample<T>, any Error>
+](array/makesamples(_:targetcount:sessionprovider:validator:)-5j7t0.md)
+  Generates synthetic data based on this dataset and returns a stream of new samples.
+- [func makeSamples(Prompt, targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, validator: ((Element) async throws -> Bool)?) -> some AsyncSequence<Element, any Error>
+](array/makesamples(_:targetcount:sessionprovider:validator:)-5s9y1.md)
+  Generates synthetic data based on this dataset and returns a stream of new samples.
+- [func toDictionary<Key>(with: (Element) -> Key) -> [Key : Element]](array/todictionary(with:).md)
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](array/withbytes(_:).md)
 - [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
   Access the underlying CMTaggedBuffers.
+### Subscripts
+- [subscript(Metric) -> Metric?](array/subscript(_:)-dplx.md)
+  Returns the first metric whose `Metric/name` equals the given metric’s name, or `nil` if not found.
 ### Type Aliases
 - [typealias Specification](array/specification.md)
 - [typealias UnderlyingSequence](array/underlyingsequence.md)
@@ -572,6 +595,8 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Equatable Implementations](array/equatable-implementations.md)
 - [ExpressibleByArrayLiteral Implementations](array/expressiblebyarrayliteral-implementations.md)
 - [Hashable Implementations](array/hashable-implementations.md)
+- [IntentValueConvertible Implementations](array/intentvalueconvertible-implementations.md)
+- [IntentValueExpressing Implementations](array/intentvalueexpressing-implementations.md)
 - [MutableCollection Implementations](array/mutablecollection-implementations.md)
 - [OperationParameter Implementations](array/operationparameter-implementations.md)
 - [RandomAccessCollection Implementations](array/randomaccesscollection-implementations.md)
@@ -590,6 +615,7 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
 - [CMSampleBuffer.Content](../CoreMedia/CMSampleBuffer/Content.md)
 - [CMSampleBuffer.ContentWithFormatDescription](../CoreMedia/CMSampleBuffer/ContentWithFormatDescription.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
@@ -610,6 +636,8 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
 - [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MutableCollection](mutablecollection.md)
 - [MutableDataProtocol](../Foundation/MutableDataProtocol.md)

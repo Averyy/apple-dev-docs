@@ -137,6 +137,13 @@ Core Video does not provide support for all of these formats; this list defines 
 - [var kCVPixelFormatType_OneComponent12: OSType](kcvpixelformattype_onecomponent12.md)
 - [var kCVPixelFormatType_OneComponent16: OSType](kcvpixelformattype_onecomponent16.md)
 - [var kCVPixelFormatType_TwoComponent16: OSType](kcvpixelformattype_twocomponent16.md)
+- [var kCVPixelFormatType_30RGBLE_8A_BiPlanar: OSType](kcvpixelformattype_30rgble_8a_biplanar.md)
+- [var kCVPixelFormatType_30RGB_r210: OSType](kcvpixelformattype_30rgb_r210.md)
+- [var kCVPixelFormatType_96VersatileBayerPacked12: OSType](kcvpixelformattype_96versatilebayerpacked12.md)
+- [var kCVPixelFormatType_Lossless_30RGBLEPackedWideGamut: OSType](kcvpixelformattype_lossless_30rgblepackedwidegamut.md)
+- [var kCVPixelFormatType_Lossless_30RGBLE_8A_BiPlanar: OSType](kcvpixelformattype_lossless_30rgble_8a_biplanar.md)
+- [var kCVPixelFormatType_Lossless_420YpCbCr10PackedBiPlanarFullRange: OSType](kcvpixelformattype_lossless_420ypcbcr10packedbiplanarfullrange.md)
+- [var kCVPixelFormatType_Lossless_64RGBAHalf: OSType](kcvpixelformattype_lossless_64rgbahalf.md)
 
 ## See Also
 

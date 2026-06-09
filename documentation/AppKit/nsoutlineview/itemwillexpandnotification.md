@@ -22,6 +22,8 @@ The notification object is the outline view that contains an item about to be ex
 | --- | --- |
 | `@"NSObject"` | The item that is to be expanded (an `id`) |
 
+To observe this notification using Swift concurrency, use [`NSOutlineView.ItemWillExpandMessage`](nsoutlineview/itemwillexpandmessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nsoutlineview/columndidmovenotification.md)

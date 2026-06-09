@@ -12,8 +12,6 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 - macOS 10.11+
 - tvOS 10.2+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -23,7 +21,7 @@ Inform the device that it can allow the user to continue in Setup Assistant.
 
 #### Discussion
 
-This command only works on Device Enrollment Program (DEP) devices that have their cloud configuration set to await configuration.
+This command only works on Automated Device Enrollment (ADE) devices that have their cloud configuration set to await configuration.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
@@ -32,10 +30,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, tvOS, visionOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -84,7 +82,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#DeviceConfiguredCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

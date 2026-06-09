@@ -11,8 +11,8 @@ Data that you define that’s specific to an annotation.
 ## Declaration
 
 ```swift
-get data(): {};
-set data(data: {});
+get data(): object;
+set data(data: object);
 ```
 
 #### Discussion

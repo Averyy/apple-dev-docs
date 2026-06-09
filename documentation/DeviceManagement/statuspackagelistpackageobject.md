@@ -7,8 +7,6 @@ A dictionary that describes a declarative package.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

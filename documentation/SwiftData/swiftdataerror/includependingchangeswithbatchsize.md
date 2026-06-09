@@ -25,6 +25,8 @@ static let includePendingChangesWithBatchSize: SwiftDataError
 - [static let unsupportedKeyPath: SwiftDataError](swiftdataerror/unsupportedkeypath.md)
 - [static let unsupportedPredicate: SwiftDataError](swiftdataerror/unsupportedpredicate.md)
 - [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
+- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
 
 
 ---

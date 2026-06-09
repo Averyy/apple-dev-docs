@@ -15,13 +15,14 @@ Creates a group box with the provided label and view content.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+nonisolated
+init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
 
-- `content`: A [`ViewBuilder`](viewbuilder.md) that produces the content for the group box.
-- `label`: A [`ViewBuilder`](viewbuilder.md) that produces a label for the group box.
+- `content`: A [`ContentBuilder`](contentbuilder.md) that produces the content for the group box.
+- `label`: A [`ContentBuilder`](contentbuilder.md) that produces a label for the group box.
 
 ## See Also
 

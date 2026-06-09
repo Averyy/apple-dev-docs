@@ -35,6 +35,12 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
 - [var frameLength: AVAudioFrameCount](avaudiopcmbuffer/framelength.md)
   The current number of valid sample frames in the buffer.
 ### Accessing PCM Buffer Data
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+  Returns read-only access to a specific channel’s data.
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+  Returns mutable access to a specific channel’s data.
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+  Provides scoped read-only access to the audio buffer list.
 - [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](avaudiopcmbuffer/floatchanneldata.md)
   The buffer’s audio samples as floating point values.
 - [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
@@ -45,9 +51,17 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
   The buffer’s 32-bit integer audio samples.
 - [var stride: Int](avaudiopcmbuffer/stride.md)
   The buffer’s number of interleaved channels.
+- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+  Represents read-only channel data.
+- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+  Represents mutable channel data.
 ### Initializers
 - [init?(PCMFormat: AVAudioFormat, bufferListNoCopy: UnsafePointer<AudioBufferList>, deallocator: ((UnsafePointer<AudioBufferList>) -> Void)?)](avaudiopcmbuffer/init(pcmformat:bufferlistnocopy:deallocator:)-2ms1j.md)
 - [init?(PCMFormat: AVAudioFormat, frameCapacity: AVAudioFrameCount)](avaudiopcmbuffer/init(pcmformat:framecapacity:)-7scyk.md)
+- [convenience init(copying: AVAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-68es5.md)
+  Creates a mutable buffer by copying another PCM buffer’s audio data.
+- [convenience init(copying: AVReadOnlyAudioPCMBuffer)](avaudiopcmbuffer/init(copying:)-875xm.md)
+  Creates a mutable buffer by copying a read-only buffer’s audio data.
 
 ## Relationships
 
@@ -65,8 +79,16 @@ The PCM buffer class provides methods that are useful for manipulating buffers o
 
 ## See Also
 
-- [class AVAudioCompressedBuffer](avaudiocompressedbuffer.md)
-  An object that represents an audio buffer that you use for compressed audio formats.
+- [class AVAudioBuffer](avaudiobuffer.md)
+  An object that represents a buffer of audio data with a format.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
+- [class AVAudioFile](avaudiofile.md)
+  An object that represents an audio file that the system can open for reading or writing.
+- [class AVAudioTime](avaudiotime.md)
+  An object you use to represent a moment in time.
+- [Audio settings](audio-settings.md)
+  Configure audio processing settings using standard key and value constants.
 
 
 ---

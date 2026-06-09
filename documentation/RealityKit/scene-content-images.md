@@ -51,6 +51,8 @@ Present images and spatial scenes in your RealityKit experiences.
   Create personalized and realistic spatial audio experiences.
 - [Videos](scene-content-videos.md)
   Present videos in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 
 ---

@@ -18,7 +18,7 @@ object AppClipAdvancedExperienceCreateRequest
 
 ### Objects
 - [object AppClipAdvancedExperienceLocalizationInlineCreate](appclipadvancedexperiencelocalizationinlinecreate.md)
-  The data structure that represents an Advanced App Clip Experience Localization Inline Creates resource.
+  An inline object for specifying localized text and action button when creating an App Clip advanced experience.
 - [object AppClipAdvancedExperienceCreateRequest.Data](appclipadvancedexperiencecreaterequest/data-data.dictionary.md)
   The data element of the request body.
 
@@ -30,15 +30,15 @@ object AppClipAdvancedExperienceCreateRequest
 ## See Also
 
 - [object AppClipAdvancedExperience](appclipadvancedexperience.md)
-  The data structure that represents an Advanced App Clip Experiences resource.
+  A configured trigger for an App Clip experience, associated with a physical location, NFC tag, QR code, or App Store link.
 - [object AppClipAdvancedExperienceResponse](appclipadvancedexperienceresponse.md)
-  A response that contains a single Advanced App Clip Experiences resource.
+  A response containing a single App Clip advanced experience configuration.
 - [object AppClipAdvancedExperienceLocalization](appclipadvancedexperiencelocalization.md)
-  The data structure that represents the Advanced App Clip Localizations resource.
+  The localized text and action button label for an App Clip advanced experience in a specific language.
 - [object AppClipAdvancedExperienceUpdateRequest](appclipadvancedexperienceupdaterequest.md)
   The request body you use to update an advanced App Clip experience.
 - [type AppClipAdvancedExperienceLanguage](appclipadvancedexperiencelanguage.md)
-  The data structure that represents the language you configure for an advanced App Clip experience.
+  A string value identifying the language for an App Clip advanced experience localization.
 
 
 ---

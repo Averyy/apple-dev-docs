@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a promoted purchase create request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -20,6 +22,7 @@ object PromotedPurchaseCreateRequest.Data.Attributes
 ## See Also
 
 - [object PromotedPurchaseCreateRequest.Data.Relationships](promotedpurchasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

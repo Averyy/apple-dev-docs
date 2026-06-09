@@ -17,7 +17,7 @@ Fetches the share metadata for the specified share URL.
 ## Declaration
 
 ```swift
-func shareMetadata(for url: URL) async throws -> CKShare.Metadata
+func fetchShareMetadata(with url: URL, completionHandler: @escaping @Sendable (CKShare.Metadata?, (any Error)?) -> Void)
 ```
 
 #### Discussion

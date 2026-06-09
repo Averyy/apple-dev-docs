@@ -20,10 +20,6 @@ Assistant schema conformance for app intents that offer file management function
 protocol FilesIntent : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making file management actions available to Siri and Apple Intelligence](making-file-management-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,6 +33,7 @@ protocol FilesIntent : AssistantSchemas.Model
   The app intent conforms to the schema for opening a file.
 - [var renameFile: some AssistantSchemas.Intent](assistantschemas/filesintent/renamefile.md)
   The app intent conforms to the schema for renaming a file.
+- [var showDocumentScanner: some AssistantSchemas.Intent](assistantschemas/filesintent/showdocumentscanner.md)
 
 ## Relationships
 
@@ -45,19 +42,6 @@ protocol FilesIntent : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
-
-## See Also
-
-- [var createFolder: some AssistantSchemas.Intent](assistantschemas/filesintent/createfolder.md)
-  The app intent conforms to the schema for creating a folder.
-- [var deleteFiles: some AssistantSchemas.Intent](assistantschemas/filesintent/deletefiles.md)
-  The app intent conforms to the schema for deleting files.
-- [var moveFiles: some AssistantSchemas.Intent](assistantschemas/filesintent/movefiles.md)
-  The app intent conforms to the schema for moving a file.
-- [var openFile: some AssistantSchemas.Intent](assistantschemas/filesintent/openfile.md)
-  The app intent conforms to the schema for opening a file.
-- [var renameFile: some AssistantSchemas.Intent](assistantschemas/filesintent/renamefile.md)
-  The app intent conforms to the schema for renaming a file.
 
 
 ---

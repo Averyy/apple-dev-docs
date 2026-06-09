@@ -1,4 +1,4 @@
-# List All Default App Clip Experiences for an App Clip
+# List all default app clip experiences for an app clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,22 +14,22 @@ Get all default App Clip experiences for an App Clip.
 
 ## Parameters
 
-- `exists[releaseWithAppStoreVersion]` (boolean): Only include Default App Clip Experiences resources that have a related App Store Versions resource.
-- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
-- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `exists[releaseWithAppStoreVersion]` (boolean): Filter the returned default App Clip experiences to include only those that have (true) or don’t have (false) a related App Store version.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each default App Clip experience localization resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each default App Clip experience resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit` (integer): The number of Default App Clip Experiences resources to return.
-- `limit[appClipDefaultExperienceLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the default App Clip experience localizations relationship is included.
-- `fields[appClips]` ([string])
-- `fields[appClipAppStoreReviewDetails]` ([string])
-- `fields[appStoreVersions]` ([string])
+- `limit` (integer): The maximum number of default App Clip experience resources to return.
+- `limit[appClipDefaultExperienceLocalizations]` (integer): The maximum number of related default App Clip experience localizations resources to return.
+- `fields[appClips]` ([string]): Additional fields to include for each app clip resource returned by the response.
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each app clip App Store review detail resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
 
 ## See Also
 
-- [List All Advanced App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
+- [List all advanced app clip experiences for an app clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
   Get all advanced App Clip experiences for an App Clip.
-- [GET /v1/appClips/{id}/relationships/appClipAdvancedExperiences](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
-- [GET /v1/appClips/{id}/relationships/appClipDefaultExperiences](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
+- [List App Clip advanced experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
+- [List default experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
 
 
 ---

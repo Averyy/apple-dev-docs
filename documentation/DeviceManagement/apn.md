@@ -9,8 +9,6 @@ The payload that configures access point names.
 - iOS 4.0+
 - iPadOS 4.0+
 - Mac Catalyst 4.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ## Topics
 
@@ -44,23 +42,15 @@ This profile is deprecated. Use the [`Cellular`](cellular.md) profile instead.
 
 ## Properties
 
-- `DefaultsData` (APN.DefaultsData) *(required)*: The list of access point names (APNs).
-- `DefaultsDomainName` (string) *(required)*: The domain name.
+- `DefaultsData` (APN.DefaultsData) *(required)*: The list of access point names (APNs). Deprecated: iOS 7+ | iPadOS 7+
+- `DefaultsDomainName` (string) *(required)*: The domain name. Deprecated: iOS 7+ | iPadOS 7+
 
 ## See Also
 
-- [object AIMAccount](aimaccount.md)
-  The payload that configures an AIM account on the device.
 - [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object JabberAccount](jabberaccount.md)
-  The payload that configures a Jabber account.
-- [object MacOSServerAccount](macosserveraccount.md)
-  The payload that configures a macOS Server account.
 - [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)

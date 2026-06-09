@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Providers resource.
+A source code management provider, such as GitHub or Bitbucket, connected to Xcode Cloud for accessing repositories.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -16,7 +16,7 @@ object ScmProvider
 
 ## Topics
 
-### Objects and Types
+### Objects and types
 - [object ScmProvider.Attributes](scmprovider/attributes-data.dictionary.md)
   The attributes that describe a Providers resource.
 - [object ScmProviderType](scmprovidertype.md)
@@ -35,9 +35,9 @@ object ScmProvider
 ## See Also
 
 - [object ScmProviderResponse](scmproviderresponse.md)
-  A response that contains a single Providers resource.
+  The response body for endpoints that read a single SCM provider connected to Xcode Cloud.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
-  A response that contains a list of Providers resources.
+  The response body for endpoints that list SCM providers connected to Xcode Cloud.
 - [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
 
 

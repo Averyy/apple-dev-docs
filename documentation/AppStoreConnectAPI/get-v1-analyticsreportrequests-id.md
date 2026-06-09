@@ -59,10 +59,10 @@ GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9b
 
 ## Parameters
 
-- `fields[analyticsReportRequests]` ([string])
-- `fields[analyticsReports]` ([string])
-- `include` ([string])
-- `limit[reports]` (integer)
+- `fields[analyticsReportRequests]` ([string]): Additional fields to include for each analytics report requests resource returned by the response.
+- `fields[analyticsReports]` ([string]): Additional fields to include for each analytics reports resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[reports]` (integer): The maximum number of related reports resources to return.
 
 ## See Also
 
@@ -72,7 +72,7 @@ GET https://api.appstoreconnect.apple.com/v1/analyticsReportRequests/d48c69c5-9b
   Read analytics report requests for a specific app.
 - [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 - [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.

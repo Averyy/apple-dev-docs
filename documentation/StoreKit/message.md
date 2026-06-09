@@ -73,7 +73,6 @@ For a code example that uses SwiftUI, see [`DisplayMessageAction`](displaymessag
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

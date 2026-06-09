@@ -34,6 +34,11 @@
   An event that represents when the playback seek completes.
 - [class AVMetricPlayerItemSeekEvent](avmetricplayeritemseekevent.md)
   An event that represents when a playback seek occurs.
+### Playback mode
+- [enum AVMetricPlaybackMode](avmetricplaybackmode.md)
+  These constants are the possible playback modes returned by the property “mode” on AVMetricPlaybackModeSwitchEvent
+- [class AVMetricPlaybackModeSwitchEvent](avmetricplaybackmodeswitchevent.md)
+  Represents a change in playback state, entering one of AVMetricPlaybackMode
 ### Summary
 - [class AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
   An event that represents the combined metrics for the entire playback session.

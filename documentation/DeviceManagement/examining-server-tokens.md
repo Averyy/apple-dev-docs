@@ -1,4 +1,4 @@
-# Examining Server Tokens
+# Examining server tokens
 
 **Framework**: Device Management
 
@@ -52,7 +52,7 @@ b1e482ef22093c7d54b23252f3bdb4d19b4d49","consumer_secret":"CS_27c083df1ab7271e
 
 ## See Also
 
-- [Interpreting Error Codes](dep-server-interpreting-error-codes.md)
+- [Interpreting Automated Device Enrollment program error codes](interpreting-automated-device-enrollment-program-error-codes.md)
   Interpret the error codes you might encounter or that can happen during authentication.
 
 

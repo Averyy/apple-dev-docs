@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: struct
 
-A prediction for a specific app intent that the system might display to someone when it’s relevant.
+A prediction for an app intent that the system might display to someone when it’s relevant.
 
 **Availability**:
 - iOS 16.0+
@@ -22,7 +22,32 @@ struct IntentPrediction<Intent, T> where Intent : AppIntent
 
 #### Overview
 
-Includes the predicted parameters, and ways to get a user-visible description for a predicted or suggested action given those parameters.
+Use the `IntentPrediction` type to provide a description of your app intent that the system can use when offering proactive suggestions. You create this type from the [`predictionConfiguration`](predictableintent/predictionconfiguration.md) property of your app intent. Use the type to provide a [`DisplayRepresentation`](displayrepresentation.md) structure with a suitable description of your app intent’s purpose.
+
+The following example shows an implementation of the [`predictionConfiguration`](predictableintent/predictionconfiguration.md) property that creates an `IntentPrediction` type. During creation of the type, the code passes the app intent’s `name` property to the `IntentPrediction` initializer, and maps it to the `name` parameter in the closure. The description incorporates this value in the text it provides.
+
+```swift
+struct CreateBook: AppIntent, PredictableIntent {
+    @Parameter(title: "Book Name")
+    var name: String?
+
+    @Parameter(title: "Author", query: AuthorQuery.self)
+    var author: AuthorEntity?
+
+    static var predictionConfiguration: some IntentPredictionConfiguration {
+        IntentPrediction(parameters: (\Self.$name)) { name in
+            DisplayRepresentation(
+                title: "Create a book named \(name)"
+            )
+        }
+    }
+
+    @MainActor
+    func perform() async throws -> IntentResult<BookEntity> {
+        ...
+    }
+}
+```
 
 ## Topics
 
@@ -53,8 +78,14 @@ Includes the predicted parameters, and ways to get a user-visible description fo
 
 ## See Also
 
+- [protocol UndoableIntent](undoableintent.md)
+  An interface you use to register undoable actions in your app intent code.
+- [protocol CancellableIntent](cancellableintent.md)
+  An interface to support the graceful cancellation of your app intent’s task.
+- [protocol LongRunningIntent](longrunningintent.md)
+  An interface you use to extend the background execution time of an app intent that performs a long-running task.
 - [protocol PredictableIntent](predictableintent.md)
-  An interface that allows the system to suggest the app intent to someone in the future using predictions you provide.
+  An interface that indicates the system can suggest the intent as a potential action to run.
 
 
 ---

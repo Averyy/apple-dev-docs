@@ -27,13 +27,13 @@ Get information for a specific Game Center activity version.
 
 - [Read the Versions for an Activity](get-v1-gamecenteractivities-_id_-versions.md)
   Get a list of versions for a specific Game Center activity.
-- [GET /v1/gameCenterActivities/{id}/relationships/versions](get-v1-gamecenteractivities-_id_-relationships-versions.md)
+- [List version IDs for a Game Center activity](get-v1-gamecenteractivities-_id_-relationships-versions.md)
 - [Read Default Image Information for an Activity Version](get-v1-gamecenteractivityversions-_id_-defaultimage.md)
   Get details about the default image for a specific Game Center activity version.
-- [GET /v1/gameCenterActivityVersions/{id}/relationships/defaultImage](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
+- [Get the default image ID for a Game Center activity version](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
 - [List All Localizations for an Activity Version](get-v1-gamecenteractivityversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center activity version.
-- [GET /v1/gameCenterActivityVersions/{id}/relationships/localizations](get-v1-gamecenteractivityversions-_id_-relationships-localizations.md)
+- [List localization IDs for a Game Center activity version](get-v1-gamecenteractivityversions-_id_-relationships-localizations.md)
 - [Add an Activity Version Release](post-v1-gamecenteractivityversionreleases.md)
   Add a version release for a specific Game Center activity.
 - [Create an Activity Version](post-v1-gamecenteractivityversions.md)

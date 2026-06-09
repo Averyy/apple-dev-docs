@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a format style to refer to a date in the most natural way.
+Creates a format style that refers to a comparison date using natural language.
 
 **Availability**:
 - iOS 18.0+
@@ -23,9 +23,9 @@ init(to date: Date, allowedFields: Set<Date.RelativeFormatStyle.Field> = [.year,
 ## Parameters
 
 - `date`: The date this format references.
-- `allowedFields`: The units of time that may be used in the format to express the reference. The `thresholdField` is always assumed to be allowed.
-- `maxFieldCount`: The number of fields that can be shown at once when   using an abolute format. For example, January 9, 2007 is shown as `January 2007` by default, but as `January 9, 2007` if the `maxFieldCount` is set to three. The style automatically excludes more significant fields if their value is equal to the value in the reference date and they are not necessary for the format pattern, making room for less significant fields.
-- `thresholdField`: The least precise field preserving which warrants increasing the field count from one, i.e. switching from the relative   to the absolute representation.
+- `allowedFields`: The units of time that may appear in the relative representation. The style always includes the `thresholdField` regardless of this set.
+- `maxFieldCount`: The maximum number of fields the style shows in the absolute representation. The style excludes more significant fields whose value matches the reference date, making room for less significant ones.
+- `thresholdField`: The time unit that tells the style when to switch from relative to absolute representation. For example, if you provide `.minute` and the time difference extends to hours or days, the style switches from relative to absolute.
 
 
 ---

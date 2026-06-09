@@ -13,23 +13,23 @@ An app launch involves a complex sequence of steps, most of which the system han
 1. The system executes the `main()` function that Xcode provides in an Objective-C project, or that’s available when you use `@main` in a Swift project.
 2. The `main()` function calls [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md), which creates an instance of [`UIApplication`](uiapplication.md) and your app delegate.
 3. UIKit calls the [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) method in your app delegate.
-4. UIKit performs view controller state restoration, which results in the execution of additional methods in your app delegate and app’s view controllers. For more information, see [`About the UI restoration process`](about-the-ui-restoration-process.md).
+4. UIKit performs view controller state restoration, which calls additional methods in your app delegate and view controllers. For more information, see [`About the UI restoration process`](about-the-ui-restoration-process.md).
 5. UIKit calls your app delegate’s [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) method.
 6. After the app launch completes, UIKit prepares a scene to connect to your app, and then calls [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md). UIKit may deliver a user activity to this method for you to handle during scene connection.
 
 After the launch sequence completes, the system displays your app’s user interface and informs your app or scene delegates when life-cycle events occur.
 
-##### Prepare Your App for Prewarming
+Depending on device conditions, the system may *prewarm* your app — launch nonrunning app processes to reduce the amount of time a person waits before the app is usable. Prewarming creates your process and loads the libraries your app links against, then suspends your process without allowing any application code to run.
 
-In iOS 15 and later, the system may, depending on device conditions, *prewarm* your app — launch nonrunning application processes to reduce the amount of time the user waits before the app is usable. Prewarming executes an app’s launch sequence up until, but not including, when `main()` calls [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md). This provides the system with an opportunity to build and cache any low-level structures it requires in anticipation of a full launch.
+After the system prewarms your app’s process, that new process remains in a suspended state until the system wakes your app to continue into the standard launch sequence, or the system ends the prewarmed process to reclaim resources. The system can prewarm your app after a device reboot, and periodically as system conditions allow.
 
-> **Note**:  For more information about the low-level structures the system requires during app launch, see the WWDC session video [`App Startup Time: Past, Present, and Future`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/413).
+##### Optimize App Launch Performance
 
-After the system prewarms your app, its launch sequence remains in a paused state until the app launches and the sequence resumes, or the system removes the prewarmed app from memory to reclaim resources. The system can prewarm your app after a device reboot, and periodically as system conditions allow.
+To achieve faster startup times, minimize the amount of work your app performs before the call to [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md). Running expensive or time-consuming code in methods that the system calls automatically before `main()`, such as [`load()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/load()), can slow down your app’s launch time.
 
-If your app executes code before the call to [`UIApplicationMain(_:_:_:_:)`](uiapplicationmain(_:_:_:_:)-1yub7.md), such as in static initializers like [`load()`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/load()), don’t make assumptions about what services and resources are available. For example, keychain items may be unavailable because their data protection policies require an unlocked device and prewarming happens even when the device is in a locked state. If your code is dependent upon access to a specific service or resource, migrate that code to a later part of the launch sequence.
+Consider deferring complex initialization tasks to later in the launch sequence. For UI-level tasks — such as configuring your interface or responding to a user activity — defer work to your scene delegate’s [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md), [`sceneWillEnterForeground(_:)`](uiscenedelegate/scenewillenterforeground(_:).md), or [`sceneDidBecomeActive(_:)`](uiscenedelegate/scenedidbecomeactive(_:).md) methods. For tasks that aren’t specific to a scene, such as setting up a database layer or configuring app-wide services, use your app delegate’s [`application(_:willFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:willfinishlaunchingwithoptions:).md) or [`application(_:didFinishLaunchingWithOptions:)`](uiapplicationdelegate/application(_:didfinishlaunchingwithoptions:).md) methods. This approach improves launch performance and ensures that initialization occurs when your app has full access to system services.
 
-Prewarming an app results in an indeterminate amount of time between when the prewarming phase completes and when the user, or system, fully launches the app. Because of this, use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to accurately measure user-driven launch and resume times instead of manually signposting various points of the launch sequence.
+Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to accurately measure user-driven launch and resume times and identify opportunities for optimization.
 
 ## See Also
 

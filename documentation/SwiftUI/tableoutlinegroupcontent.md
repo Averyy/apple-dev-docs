@@ -15,6 +15,7 @@ An opaque table row type created by a table’s hierarchical initializers.
 ## Declaration
 
 ```swift
+nonisolated
 struct TableOutlineGroupContent<Data> where Data : RandomAccessCollection, Data.Element : Identifiable
 ```
 

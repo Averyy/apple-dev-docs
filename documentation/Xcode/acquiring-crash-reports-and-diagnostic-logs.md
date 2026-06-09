@@ -14,7 +14,7 @@ For issues that aren’t crashes, inspect the operating system’s console log t
 
 TestFlight and the App Store collect crash reports for every submitted version of your app. Crash reports automatically contain identifiable symbol information if you include symbol information when submitting a build to the App Store. Review [`Building your app to include debugging information`](building-your-app-to-include-debugging-information.md) for the recommended settings.
 
-Crash reports from customers who send diagnostic and usage information are presented in the Crashes organizer, as described in [`Share crash, energy, and metrics data with developers`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deve2819c518). TestFlight users of your app automatically share crash reports with you, regardless of the device settings for sharing diagnostic and use data. If no crash reports appear in the Crashes organizer, see [`If no crash, energy, or metrics reports appear in the organizer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev9a80ab71d) to enable collection of crash reports from your customers.
+The Crashes organizer presents crash reports from customers who share diagnostic and usage information, as described in [`Share crash, energy, and metrics data with developers`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/deve2819c518). TestFlight users of your app automatically share crash reports with you, regardless of the device settings for sharing diagnostic and use data. If no crash reports appear in the Crashes organizer, see [`If no crash, energy, or metrics reports appear in the organizer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/#/dev9a80ab71d) to enable collection of crash reports from your customers.
 
 The following crash report types aren’t available through the Crashes organizer, but are available by other means. See [`Transfer crash reports and device logs to a Mac`](acquiring-crash-reports-and-diagnostic-logs#Transfer-crash-reports-and-device-logs-to-a-Mac.md) and [`Locate crash reports and memory logs on the device`](acquiring-crash-reports-and-diagnostic-logs#Locate-crash-reports-and-memory-logs-on-the-device.md).
 
@@ -22,6 +22,12 @@ The following crash report types aren’t available through the Crashes organize
 - Invalid code-signature crashes
 - Thermal events, where a device overheats because an app uses too much CPU
 - Jetsam events, where an app has high memory use
+
+##### Get Coding Assistant Recommendations for Crash Issues
+
+After selecting a crash report in the Crashes organizer, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the crash stack trace into coding assistant to help you identify and fix the root cause of the crash.
+
+![A screenshot showing the Generate Recommendations button in the Inspector of the Crashes reports pane in Xcode Organizer.](https://docs-assets.developer.apple.com/published/d6c43e06fa82d84dea841181b1f81896/acquiring-crash-reports-and-diagnostic-logs-1%402x.png)
 
 ##### Transfer Crash Reports and Device Logs to a Mac
 

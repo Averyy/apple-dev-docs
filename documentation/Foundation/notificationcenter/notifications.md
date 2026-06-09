@@ -29,8 +29,13 @@ Use the [`notifications(named:object:)`](notificationcenter/notifications(named:
 ## Topics
 
 ### Creating an Iterator
+- [func makeAsyncIterator() -> NotificationCenter.Notifications.Iterator](notificationcenter/notifications/makeasynciterator.md)
+  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 - [NotificationCenter.Notifications.Iterator](notificationcenter/notifications/iterator.md)
   The asynchronous iterator created by this asynchronous sequence.
+### Supporting Types
+- [NotificationCenter.Notifications.Element](notificationcenter/notifications/element.md)
+  The type of element produced by this asynchronous sequence.
 
 ## Relationships
 

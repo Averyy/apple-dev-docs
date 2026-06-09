@@ -66,7 +66,7 @@
   Accesses the element at the specified position.
 - [subscript(Range<Self.Index>) -> Slice<Self>](enumeratedsequence/subscript(_:)-5gng6.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](enumeratedsequence/subscript(_:)-7y5my.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](enumeratedsequence/subscript(_:)-7y5my.md)
 - [subscript<R>(R) -> Self.SubSequence](enumeratedsequence/subscript(_:)-8ubal.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](enumeratedsequence/subscript(_:)-91gqg.md)

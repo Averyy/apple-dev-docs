@@ -9,7 +9,6 @@ The cell’s drop state.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

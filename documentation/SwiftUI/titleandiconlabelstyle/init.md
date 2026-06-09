@@ -17,6 +17,7 @@ Creates a label style that shows both the title and icon of the label using a sy
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

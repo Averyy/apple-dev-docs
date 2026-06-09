@@ -18,6 +18,8 @@ class let didExitVersionBrowserNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that exited version browser mode. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidExitVersionBrowserMessage`](nswindow/didexitversionbrowsermessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

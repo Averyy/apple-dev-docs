@@ -13,8 +13,6 @@ The command to get a list of installed provisioning profiles on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object ProvisioningProfileListCommand.Command
 
 ## Properties
 
-- `ManagedOnly` (boolean): If `true`, only include profiles that MDM has installed. For user enrollments, the device ignores this key and always limits the results to managed profiles. This value is available in iOS 13 and later, and tvOS 13 and later.
+- `ManagedOnly` (boolean): If `true`, only include profiles that MDM has installed. For user enrollments, the device ignores this key and always limits the results to managed profiles. Available: iOS 13+ | iPadOS 13+ | macOS 11+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
 - `RequestType` (string) *(required)*: The request type for this command.
 

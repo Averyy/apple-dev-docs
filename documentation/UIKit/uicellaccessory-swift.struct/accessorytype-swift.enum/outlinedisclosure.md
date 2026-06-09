@@ -9,7 +9,6 @@ The outline disclosure accessory type.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

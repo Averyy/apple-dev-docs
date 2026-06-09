@@ -6,8 +6,12 @@
 The display style of the sharable content.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 18.2+
 - macOS 14.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

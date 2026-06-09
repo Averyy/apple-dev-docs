@@ -11,6 +11,7 @@ Creates a linear gauge style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

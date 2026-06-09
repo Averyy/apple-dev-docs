@@ -8,7 +8,7 @@ A person may have a speech disability or prefer to connect without using their v
 
 People who are unable to speak, have a speech disability, or prefer to communicate through text can use Apple’s speech accessibility features to communicate through their Apple devices. Design and develop your app to support speech accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows two people. On the left, a person in an electric wheelchair is sitting at a desk and communicating using speech synthesis features on a Mac. On the right, a person is sitting at a desk and communicating through a text message exchange on an iPad.](https://docs-assets.developer.apple.com/published/3651dce5cfbe69b68c2d7f3b168969e3/accessibility-scene-speech%402x.png)
+![An illustration that shows two people. On the left, a person is sitting at a desk and communicating using speech synthesis features on a Mac. On the right, a person is sitting at a desk and communicating through a text message exchange on an iPad.](https://docs-assets.developer.apple.com/published/80ef01897ccf3ede233c7e2c4d2ec5f2/accessibility-scene-speech%402x.png)
 
 ##### Related Videos
 

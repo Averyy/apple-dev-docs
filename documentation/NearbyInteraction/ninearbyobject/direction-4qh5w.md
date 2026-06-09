@@ -8,8 +8,7 @@ A vector that points from the user’s device in the direction of the peer devic
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
-- tvOS 14.4+
+- Mac Catalyst ?+
 - watchOS 7.3+
 
 ## Declaration

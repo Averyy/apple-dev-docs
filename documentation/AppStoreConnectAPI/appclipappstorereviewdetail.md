@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an App Clip App Store Review Details resource.
+The review submission details for an App Clip, including the invocation URLs required for App Store review.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -33,7 +33,7 @@ object AppClipAppStoreReviewDetail
 ## See Also
 
 - [object AppClipAppStoreReviewDetailResponse](appclipappstorereviewdetailresponse.md)
-  A response that contains a single App Clip App Store Review Details resource.
+  A response containing the App Store review details for a single App Clip.
 - [object AppClipAppStoreReviewDetailCreateRequest](appclipappstorereviewdetailcreaterequest.md)
   The request body you use to create an App Clip App Store Review Detail.
 - [object AppClipAppStoreReviewDetailUpdateRequest](appclipappstorereviewdetailupdaterequest.md)

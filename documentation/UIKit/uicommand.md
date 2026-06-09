@@ -71,6 +71,7 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
   A value that identifies a command as a Share menu.
 ### Initializers
 - [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:selectedimage:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, action: Selector, propertyList: Any?, alternates: [UICommandAlternate], discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State)](uicommand/init(title:subtitle:image:selectedimage:preferredimagevisibility:action:propertylist:alternates:discoverabilitytitle:attributes:state:).md)
 
 ## Relationships
 
@@ -88,8 +89,6 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIMenuLeaf](uimenuleaf.md)
 

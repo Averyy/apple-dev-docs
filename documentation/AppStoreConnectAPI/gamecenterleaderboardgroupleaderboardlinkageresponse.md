@@ -18,7 +18,7 @@ object GameCenterLeaderboardGroupLeaderboardLinkageResponse
 
 ### Objects
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse.Data](gamecenterleaderboardgroupleaderboardlinkageresponse/data-data.dictionary.md)
-  The data structure that represents a leaderboard resource.
+  The resource linkage data identifying the group leaderboard associated with a leaderboard.
 
 ## Properties
 
@@ -46,13 +46,13 @@ object GameCenterLeaderboardGroupLeaderboardLinkageResponse
 - [object GameCenterLeaderboardUpdateRequest](gamecenterleaderboardupdaterequest.md)
   The request body you use to update a leaderboard.
 - [object GameCenterLeaderboardsResponse](gamecenterleaderboardsresponse.md)
-  A response that contains multiple leaderboard resources.
+  The response body for endpoints that list Game Center leaderboards.
 - [object GameCenterLeaderboard](gamecenterleaderboard.md)
   The data structure that represent a leaderboard resource.
 - [object GameCenterLeaderboardCreateRequest](gamecenterleaderboardcreaterequest.md)
   The request body you use to create a leaderboard.
 - [object GameCenterLeaderboardResponse](gamecenterleaderboardresponse.md)
-  A response that contains a single leaderboard image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
 - [object GameCenterLeaderboardActivityLinkageRequest](gamecenterleaderboardactivitylinkagerequest.md)

@@ -16,6 +16,7 @@ object CertificateCreateRequest.Data.Relationships.MerchantId
 
 ### Dictionaries
 - [object CertificateCreateRequest.Data.Relationships.MerchantId.Data](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/merchantid-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a certificate.
 
 ## Properties
 

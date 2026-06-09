@@ -117,10 +117,25 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
 - [Metal constants](metal-constants.md)
 - [Metal data types](metal-data-types.md)
 - [Metal variables](metal-variables.md)
+### Classes
+- [class MTLTensorAuxiliaryPlaneDescriptor](mtltensorauxiliaryplanedescriptor.md)
+  A configuration for an auxiliary plane in a multi-plane tensor.
+- [class MTLTensorAuxiliaryPlaneDescriptorMap](mtltensorauxiliaryplanedescriptormap.md)
+  A map of auxiliary plane descriptors keyed by plane type.
+- [class MTLTensorAuxiliaryPlaneType](mtltensorauxiliaryplanetype.md)
+  An auxiliary plane that a shader’s tensor argument requires.
+- [class MTLTensorBufferAttachments](mtltensorbufferattachments.md)
+  Per-plane buffer backing storage for multi-plane tensor creation.
+### Protocols
+- [protocol MTLTensorAuxiliaryPlane](mtltensorauxiliaryplane.md)
+  A type that represents the configuration and storage of an auxiliary plane in a multi-plane tensor.
 ### Structures
 - [struct MTLDeviceError](mtldeviceerror-swift.struct.md)
 ### Variables
 - [let MTLDeviceErrorDomain: String](mtldeviceerrordomain.md)
+### Enumerations
+- [enum MTLTensorPlaneType](mtltensorplanetype.md)
+  The possible tensor plane types.
 
 ## See Also
 

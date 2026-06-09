@@ -39,9 +39,7 @@ Pass a value of this type to the [`scrollIndicators(_:axes:)`](view/scrollindica
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

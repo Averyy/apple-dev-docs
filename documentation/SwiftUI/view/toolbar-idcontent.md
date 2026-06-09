@@ -18,7 +18,7 @@ Populates the toolbar or navigation bar with the specified items, allowing for u
 
 ```swift
 nonisolated
-func toolbar<Content>(id: String, @ToolbarContentBuilder content: () -> Content) -> some View where Content : CustomizableToolbarContent
+func toolbar<Content>(id: String, @ContentBuilder content: () -> Content) -> some View where Content : CustomizableToolbarContent
 ```
 
 #### Discussion
@@ -114,6 +114,8 @@ When you add the toolbar commands, the system adds a menu item to your app’s m
 
 ## See Also
 
+- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+  Hides an individual view within a control group toolbar item.
 - [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
 - [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)

@@ -12,6 +12,8 @@ Network Extension URL Filter examines all URL requests sent via WebKit and the [
 
 For an example of writing and configuring a URL filter extension, see the [`Filtering traffic by URL`](filtering-traffic-by-url.md) sample code project.
 
+Register your Network Extension URL Filter configuration on the [`Identity & Trust`](https://developer.apple.comhttps://icloud.developer.apple.com/dashboard/identity) page in the [`CloudKit Console`](https://developer.apple.comhttps://icloud.developer.apple.com/).
+
 For browsers or any app that doesn’t use WebKit or [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession), use the [`NEURLFilter`](neurlfilter.md) Participation API to voluntarily check URLs. Call the [`verdict(for:)`](neurlfilter/verdict(for:).md) method to check all URL requests and honor the returned verdict by failing the URL requests for blocked URLs.
 
 ## Topics

@@ -9,7 +9,6 @@ Configures the pipeline for reading payment or loyalty cards in Store and Forwar
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

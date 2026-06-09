@@ -16,6 +16,7 @@ object AppStoreVersion.Relationships.AppStoreVersionExperiments
 
 ### Objects
 - [object AppStoreVersion.Relationships.AppStoreVersionExperiments.Data](appstoreversion/relationships-data.dictionary/appstoreversionexperiments-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app store version.
 
 ## Properties
 
@@ -26,7 +27,7 @@ object AppStoreVersion.Relationships.AppStoreVersionExperiments
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
-  The data structure that represents an Age Rating Declarations resource.
+  A set of content descriptors for your app that App Store Connect uses to assign an age rating.
 - [object AppStoreVersion.Relationships.App](appstoreversion/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 - [object AppStoreVersion.Relationships.AppClipDefaultExperience](appstoreversion/relationships-data.dictionary/appclipdefaultexperience-data.dictionary.md)

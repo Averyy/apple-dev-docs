@@ -48,6 +48,9 @@ let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB"
   Initializes a byte count format style.
 - [ByteCountFormatStyle.Units](bytecountformatstyle/units.md)
   The units to use when formatting a byte count, such as kilobytes or gigabytes.
+### Formatting byte count values
+- [func format(Int64) -> String](bytecountformatstyle/format(_:).md)
+  Formats a numeric byte count, using this style.
 ### Customizing style behavior
 - [var style: ByteCountFormatStyle.Style](bytecountformatstyle/style-swift.property.md)
   The semantic style the format style uses to represent a byte count value.
@@ -64,6 +67,9 @@ let formatted = counts.map ( {style.format($0) } ) // ["Zero kB", "1 kB", "2 kB"
   A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
 - [var locale: Locale](bytecountformatstyle/locale.md)
   The locale to use to format the numeric part of the byte count.
+### Modifying style locale
+- [func locale(Locale) -> ByteCountFormatStyle](bytecountformatstyle/locale(_:).md)
+  Modifies the format style to use the specified locale.
 ### Creating attributed strings
 - [var attributed: ByteCountFormatStyle.Attributed](bytecountformatstyle/attributed-swift.property.md)
   An attributed format style based on the byte count format style.

@@ -1,4 +1,4 @@
-# Create an App Screenshot
+# Create an app screenshot
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,9 +14,9 @@ Add a new screenshot to a screenshot set.
 
 ## See Also
 
-- [Modify an App Screenshot](patch-v1-appscreenshots-_id_.md)
+- [Modify an app screenshot](patch-v1-appscreenshots-_id_.md)
   Commit an app screenshot after uploading it.
-- [Delete an App Screenshot](delete-v1-appscreenshots-_id_.md)
+- [Delete an app screenshot](delete-v1-appscreenshots-_id_.md)
   Delete an app screenshot that is associated with a screenshot set.
 
 

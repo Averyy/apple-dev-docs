@@ -16,6 +16,7 @@ object Webhook.Relationships.App
 
 ### Dictionaries
 - [object Webhook.Relationships.App.Data](webhook/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a webhook.
 
 ## Properties
 

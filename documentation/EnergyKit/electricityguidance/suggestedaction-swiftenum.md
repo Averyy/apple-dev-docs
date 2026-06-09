@@ -9,13 +9,16 @@ A description of how the electrical load uses the guidance.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 enum SuggestedAction
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Overview
 
@@ -32,7 +35,6 @@ An example of suggested actions for the load could be shift-able load or reduce-
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

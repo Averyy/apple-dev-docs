@@ -18,6 +18,8 @@ class let willExitFullScreenNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that will exit full-screen mode. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.WillExitFullScreenMessage`](nswindow/willexitfullscreenmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

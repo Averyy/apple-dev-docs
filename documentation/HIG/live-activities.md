@@ -201,7 +201,7 @@ The system may scale your Live Activity to best fit a vehicle’s screen size an
 | 240x100 |
 | 170x78 |
 
-Test your designs with the CarPlay Simulator and the following configurations for Smart Display Zoom  — available in in Settings > Display in CarPlay:
+Test your designs with the CarPlay simulator and the following configurations for Smart Display Zoom  — available in in Settings > Display in CarPlay:
 | Configuration | Resolution (pt) |
 | --- | --- |
 | Widescreen | 1920x720 |
@@ -283,11 +283,9 @@ Live Activities in the Smart Stack use the same dimensions as watchOS widgets.
 [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md) — WidgetKit
 
 #### Videos
+- [Live Activities essentials](https://developer.apple.com/videos/play/wwdc2026/223) - Elevate your app experience with Live Activities. Explore many of the places where Live Activities appear, including a new style in the Dynamic Island that delivers more information when iPhone is used in landscape. Learn how to tailor your Live Activity for each space, structure your content and data, and drive real time updates from start to finish using ActivityKit and push notifications.
 - [Turbocharge your app for CarPlay](https://developer.apple.com/videos/play/wwdc2025/216) - Learn how to bring your Live Activities and widgets to CarPlay and CarPlay Ultra so people can view progress of their activities and see relevant information at a glance. Explore new template options available to all CarPlay apps, and learn how navigation apps can provide turn-by-turn metadata for display in the car’s instrument cluster or HUD.
 - [What’s new in widgets](https://developer.apple.com/videos/play/wwdc2025/278) - WidgetKit elevates your app with updates to widgets, Live Activities, and controls. Learn how to bring your widgets to visionOS, take them on the road with CarPlay, and make them look their best with accented rendering modes. Plus, find out how relevant widgets can be surfaced in the Smart Stack on watchOS, and discover how push notifications can be used to keep your widgets up to date.
-- [Design Live Activities for Apple Watch](https://developer.apple.com/videos/play/wwdc2024/10098) - Starting in watchOS 11, Live Activities from your iOS app will automatically appear in the Smart Stack on a connected Apple Watch. Learn how to optimize the layout of your Live Activity for the wrist, and provide the right level of information and interactivity at the right time.
-- [Design dynamic Live Activities ](https://developer.apple.com/videos/play/wwdc2023/10194) - Live Activities allow your app to display live information in key system locations on iOS and iPadOS. Learn the best way to create graphically rich layouts that update seamlessly on the Lock Screen, in StandBy, and in the Dynamic Island. Incorporate interactivity and animation to help people stay in touch with live updating events from your app as they navigate outside of your app. 
-- [Meet ActivityKit](https://developer.apple.com/videos/play/wwdc2023/10184) - Live Activities are a glanceable way for someone to keep track of the progress of a task within your app. We’ll teach you how you can create helpful experiences for the Lock Screen, the Dynamic Island, and StandBy. Learn how to update your app’s Live Activities, monitor activity state, and take advantage of WidgetKit and SwiftUI to build richer experiences.
 
 ## Change log
 | Date | Changes |

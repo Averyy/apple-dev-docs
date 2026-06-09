@@ -57,12 +57,8 @@ The example above provides a default value for the `focus` intent parameter. By 
 
 ## See Also
 
-- [protocol LiveActivityStartingIntent](liveactivitystartingintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity.
-- [protocol LiveActivityIntent](liveactivityintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
-- [protocol WidgetConfigurationIntent](widgetconfigurationintent.md)
-  An interface for configuring a WidgetKit widget.
+- [Controls](../WidgetKit/Controls-Collection.md)
+  Offer controls that people place in Control Center, on the Lock Screen, and on the Action button to quickly perform an action from your app.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an app tag update request resource.
+The data wrapper for an app tag update request, containing the resource type and attributes.
 
 **Availability**:
 - App Store Connect API 4.1+
@@ -18,7 +18,7 @@ object AppTagUpdateRequest.Data
 
 ### Dictionaries
 - [object AppTagUpdateRequest.Data.Attributes](apptagupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
-  The data structure that represents an app tag update request resource.
+  The updateable attributes of an app tag, including its territory associations.
 
 ## Properties
 

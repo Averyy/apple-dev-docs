@@ -9,7 +9,6 @@ A category of electricity usage when grid cleanliness information is unavailable
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

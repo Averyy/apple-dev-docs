@@ -114,6 +114,9 @@ If you are building a hardware device or accessory that uses Wi-Fi Aware, refer 
   The errors returned by objects in the Network framework.
 - [enum WAError](waerror.md)
   An error in Wi-Fi Aware.
+### Structures
+- [struct WAPerformanceForecast](waperformanceforecast.md)
+  The performance forecast for a connection setup to the remote device.
 
 
 ---

@@ -24,7 +24,6 @@ enum State
 - [NetworkChannel.State.cancelled](networkchannel/state-swift.enum/cancelled.md)
   Cancelled connections have been invalidated by the client and will send no more events
 - [NetworkChannel.State.failed(_:)](networkchannel/state-swift.enum/failed(_:).md)
-  Failed connections are disconnected and can no longer send or receive data
 - [NetworkChannel.State.preparing](networkchannel/state-swift.enum/preparing.md)
   Preparing connections are actively establishing the connection
 - [NetworkChannel.State.ready](networkchannel/state-swift.enum/ready.md)
@@ -32,7 +31,6 @@ enum State
 - [NetworkChannel.State.setup](networkchannel/state-swift.enum/setup.md)
   The initial state prior to start
 - [NetworkChannel.State.waiting(_:)](networkchannel/state-swift.enum/waiting(_:).md)
-  Waiting connections have not yet been started, or do not have a viable network
 
 ## Relationships
 

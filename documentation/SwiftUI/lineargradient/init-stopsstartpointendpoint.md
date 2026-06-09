@@ -17,6 +17,7 @@ Creates a linear gradient from a collection of color stops.
 ## Declaration
 
 ```swift
+nonisolated
 init(stops: [Gradient.Stop], startPoint: UnitPoint, endPoint: UnitPoint)
 ```
 

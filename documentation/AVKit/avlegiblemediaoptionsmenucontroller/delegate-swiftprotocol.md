@@ -24,7 +24,7 @@ Provides callbacks for caption preview display and enablement state changes.
 
 ## Topics
 
-### Instance Methods
+### Responding to menu changes
 - [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didchange:).md)
 - [func legibleMenuController(AVLegibleMediaOptionsMenuController, didRequestCaptionPreviewForProfileID: String)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didrequestcaptionpreviewforprofileid:).md)
 - [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview(_:).md)
@@ -33,6 +33,10 @@ Provides callbacks for caption preview display and enablement state changes.
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+
+## See Also
+
+- [var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)?](avlegiblemediaoptionsmenucontroller/delegate-swift.property.md)
 
 
 ---

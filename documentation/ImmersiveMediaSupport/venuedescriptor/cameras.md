@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: property
 
-An array of all the immersive cameras contained in the venue descriptor.
+An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
 
 **Availability**:
 - iOS 26.4+

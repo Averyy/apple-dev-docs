@@ -43,6 +43,18 @@ class PKStrokeReference
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](pkstrokereference/requiredcontentversion.md)
   The version of PencilKit necessary to use the stroke.
+### Initializers
+- [init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, strokeID: UUID, renderGroupID: UUID?, renderState: __PKStrokeRenderState?)](pkstrokereference/init(ink:strokepath:transform:mask:randomseed:strokeid:rendergroupid:renderstate:).md)
+### Instance Properties
+- [var renderGroupID: UUID?](pkstrokereference/rendergroupid.md)
+  A UUID that groups strokes for wet-ink compositing with compatible inks such as marker.
+- [var renderState: __PKStrokeRenderState?](pkstrokereference/renderstate.md)
+  The render details of the stroke, such as particle positioning. Uses default rendering when nil.
+- [var strokeID: UUID](pkstrokereference/strokeid.md)
+  The unique identity of the stroke.
+### Instance Methods
+- [func substroke(with: __PKFloatRange) -> PKStroke](pkstrokereference/substroke(with:).md)
+  Returns a copy of the stroke containing the control points in the specified range.
 
 ## Relationships
 

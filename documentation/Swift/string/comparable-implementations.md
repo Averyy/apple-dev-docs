@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (String, String) -> Bool](string/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](string/_(_:_:)-24u5x.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](string/_(_:_:)-3izr3.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](string/_=(_:_:)-1ih6.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](string/_=(_:_:)-5i1qy.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](string/_=(_:_:)-8lyim.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](string/_=(_:_:)-5nvya.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

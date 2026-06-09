@@ -25,11 +25,13 @@ enum TrackingState
   Both position and orientation are tracked, but with low accuracy.
 - [AccessoryAnchor.TrackingState.untracked](accessoryanchor/trackingstate-swift.enum/untracked.md)
   Neither position nor orientation are tracked.
+### Instance Properties
+- [var description: String](accessoryanchor/trackingstate-swift.enum/description.md)
+  A textual representation of this tracking state.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)

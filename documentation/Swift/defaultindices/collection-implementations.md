@@ -87,7 +87,7 @@
   Accesses the element at the specified position.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](defaultindices/subscript(_:)-392od.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](defaultindices/subscript(_:)-4ala2.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](defaultindices/subscript(_:)-4ala2.md)
 - [subscript<R>(R) -> Self.SubSequence](defaultindices/subscript(_:)-4h7sp.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(Range<DefaultIndices<Elements>.Index>) -> DefaultIndices<Elements>](defaultindices/subscript(_:)-8o3ct.md)

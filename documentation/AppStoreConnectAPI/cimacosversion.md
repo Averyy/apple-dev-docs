@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a macOS Versions resource.
+A macOS version available in Xcode Cloud infrastructure for running workflow builds.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -33,9 +33,9 @@ object CiMacOsVersion
 ## See Also
 
 - [object CiMacOsVersionResponse](cimacosversionresponse.md)
-  A response that contains a single macOS Versions resource.
+  A response containing a single macOS version available in Xcode Cloud.
 - [object CiMacOsVersionsResponse](cimacosversionsresponse.md)
-  A response that contains a list of macOS Versions resources.
+  A response containing a list of macOS versions supported by Xcode Cloud.
 - [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
 
 

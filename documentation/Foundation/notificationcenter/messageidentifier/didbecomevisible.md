@@ -19,8 +19,6 @@ static var didBecomeVisible: NotificationCenter.BaseMessageIdentifier<UIWindow.D
 ## See Also
 
 - [static var didBecomeHidden: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeHiddenMessage>](notificationcenter/messageidentifier/didbecomehidden.md)
-- [static var didBecomeKey: NotificationCenter.BaseMessageIdentifier<UIWindow.DidBecomeKeyMessage>](notificationcenter/messageidentifier/didbecomekey.md)
-- [static var didResignKey: NotificationCenter.BaseMessageIdentifier<UIWindow.DidResignKeyMessage>](notificationcenter/messageidentifier/didresignkey.md)
 - [static var showDetailTargetDidChange: NotificationCenter.BaseMessageIdentifier<UIViewController.ShowDetailTargetDidChangeMessage>](notificationcenter/messageidentifier/showdetailtargetdidchange.md)
 
 

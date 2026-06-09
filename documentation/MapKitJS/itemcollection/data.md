@@ -11,8 +11,8 @@ The raw GeoJSON data.
 ## Declaration
 
 ```swift
-get data(): D | undefined;
-set data(data: D | undefined);
+get data(): D | null;
+set data(data: D | null);
 ```
 
 #### Discussion

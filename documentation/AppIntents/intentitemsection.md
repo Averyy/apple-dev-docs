@@ -52,6 +52,7 @@ The system returns an `IntentItemSection` within an [`IntentItemCollection`](int
 - [struct IntentItemCollection](intentitemcollection.md)
   Return this object to provide an advanced list of options, optionally divided in sections.
 - [struct IntentCollectionSize](intentcollectionsize.md)
+- [struct IntentResponseStream](intentresponsestream.md)
 
 
 ---

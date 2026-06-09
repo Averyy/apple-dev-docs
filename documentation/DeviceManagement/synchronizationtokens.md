@@ -5,10 +5,6 @@
 
 The server’s synchronization token.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift
@@ -17,7 +13,7 @@ object SynchronizationTokens
 
 ## Mentions
 
-- [Integrating Declarative Management](integrating-declarative-management.md)
+- [Integrating declarative management](integrating-declarative-management.md)
 
 ## Properties
 

@@ -20,8 +20,6 @@ var targetQuantityLowerBound: HKQuantity { get }
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](powerrangealert/metric.md)
-  The metric for the alert.
 - [var target: ClosedRange<Measurement<UnitPower>>](powerrangealert/target.md)
   The target range.
 - [var targetQuantityUpperBound: HKQuantity](powerrangealert/targetquantityupperbound.md)

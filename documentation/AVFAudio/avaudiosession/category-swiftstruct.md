@@ -72,7 +72,7 @@ The audio session category [`playAndRecord`](avaudiosession/category-swift.struc
 - [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
 - [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) and [`record`](avaudiosession/category-swift.struct/record.md).
+  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 
 
 ---

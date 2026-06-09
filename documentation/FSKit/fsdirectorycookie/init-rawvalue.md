@@ -12,10 +12,6 @@
 init(rawValue: UInt64)
 ```
 
-## See Also
-
-- [init(UInt64)](fsdirectorycookie/init(_:).md)
-
 
 ---
 

@@ -34,10 +34,18 @@ struct Match
   Values that suggest how to style a highlighted item.
 - [DataDetector.Match.SemanticDetails](datadetector/match/semanticdetails.md)
   An enumeration of types of matches returned by the scanner.
+### Initializers
+- [init(originalRange: NSRange, range: Range<String.Index>?, preferredHighlightStyle: DataDetector.Match.HighlightStyle, details: DataDetector.Match.SemanticDetails)](datadetector/match/init(originalrange:range:preferredhighlightstyle:details:).md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
+- [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
+- [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

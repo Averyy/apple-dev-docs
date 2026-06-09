@@ -1,4 +1,4 @@
-# List App Screenshot Sets IDs for a Custom Product Page Localization
+# List app screenshot sets IDs for a custom product page localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ List the app screenshot set IDs for a specific custom product page localization.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app screenshot set resource identifiers to return.
 
 ## See Also
 

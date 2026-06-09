@@ -34,14 +34,22 @@ You typically derive a symmetric key from an instance of a shared secret ([`Shar
 ### Getting the key length
 - [var bitCount: Int](symmetrickey/bitcount.md)
   The number of bits in the key.
+### Initializers
+- [init(copying: RawSpan)](symmetrickey/init(copying:).md)
+  Creates a key from the given data.
+- [init(copyingWithZeroing: inout MutableRawSpan)](symmetrickey/init(copyingwithzeroing:).md)
+  Creates a key from the given data, zeroing out the bytes afterward.
+- [init<E>(size: SymmetricKeySize, initializingWith: (inout OutputRawSpan) throws(E) -> Void) throws(E)](symmetrickey/init(size:initializingwith:).md)
+  Creates a new key of the given size where the key contents are initialized via a callback.
+### Instance Properties
+- [var bytes: RawSpan](symmetrickey/bytes.md)
+  Access the raw bytes of the key.
 
 ## Relationships
 
 ### Conforms To
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

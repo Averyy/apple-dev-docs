@@ -21,7 +21,7 @@ Keys used to pass options when initializing a central manager.
 - [init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, options: [String : Any]?)](cbcentralmanager/init(delegate:queue:options:).md)
   Initializes the central manager with specified delegate, dispatch queue, and initialization options.
 - [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
-  Keys used to pass state restoration options to the central manager initializer.
+  Restore central manager state in scene-based apps.
 
 
 ---

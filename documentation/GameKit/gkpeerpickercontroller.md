@@ -6,6 +6,9 @@
 Provides a standard user interface to allow one iOS device to discover and connect to another.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 
 ## Declaration

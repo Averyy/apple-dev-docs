@@ -41,8 +41,14 @@ protocol AttributedStringAttributeMutation
 
 ## See Also
 
+- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+  Sets the attributed string’s attributes to those in a specified attribute container.
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+  Merges the attributed string’s attributes with those in a specified attribute container.
 - [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+  Replaces occurrences of attributes in one attribute container with those in another attribute container.
 
 
 ---

@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (LazyPrefixWhileCollection<Base>.Index, LazyPrefixWhileCollection<Base>.Index) -> Bool](lazyprefixwhilesequence/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](lazyprefixwhilesequence/index/_(_:_:)-9hg6k.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_(_:_:)-3x5po.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-5m6n5.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-3vwue.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-7wk7h.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/_=(_:_:)-69pbk.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

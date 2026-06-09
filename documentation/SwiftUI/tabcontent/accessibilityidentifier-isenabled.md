@@ -26,6 +26,17 @@ func accessibilityIdentifier(_ identifier: String, isEnabled: Bool = true) -> so
 - `identifier`: The accessibility identifier to apply.
 - `isEnabled`: If true the accessibility identifier is applied; otherwise the accessibility identifier is unchanged.
 
+## See Also
+
+- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+  Communicates to the user what happens after selecting the tab.
+- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+  Sets alternate input labels with which users identify a tab.
+- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+  Adds a label to the tab that describes its contents.
+- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+  Adds a textual description of the value that the tab contains.
+
 
 ---
 

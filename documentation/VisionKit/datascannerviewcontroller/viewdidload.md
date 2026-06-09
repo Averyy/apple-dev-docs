@@ -8,6 +8,7 @@ Performs some action after the system loads the view into memory.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

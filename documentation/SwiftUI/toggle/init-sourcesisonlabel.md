@@ -17,7 +17,8 @@ Creates a toggle representing a collection of values with a custom label.
 ## Declaration
 
 ```swift
-init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, @ViewBuilder label: () -> Label) where C : RandomAccessCollection
+nonisolated
+init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, @ContentBuilder label: () -> Label) where C : RandomAccessCollection
 ```
 
 #### Discussion

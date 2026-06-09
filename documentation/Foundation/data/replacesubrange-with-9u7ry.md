@@ -17,7 +17,7 @@ Replaces a region of bytes in the data with new bytes from a collection.
 ## Declaration
 
 ```swift
-mutating func replaceSubrange<ByteCollection>(_ subrange: Range<Data.Index>, with newElements: ByteCollection) where ByteCollection : Collection, ByteCollection.Element == UInt8
+@abi(func repalceSubrangeFast(_ subrange: Range<Data.Index>, with newElements: some Collection<UInt8>)) mutating func replaceSubrange(_ subrange: Range<Data.Index>, with newElements: some Collection<UInt8>)
 ```
 
 #### Discussion
@@ -33,8 +33,6 @@ Precondition: The bounds of `subrange` must be valid indices of the collection.
 
 ## See Also
 
-- [func replaceSubrange(Range<Data.Index>, with: Data)](data/replacesubrange(_:with:)-3jcfi.md)
-  Replaces a region of bytes in the data with new data.
 - [func replaceSubrange<SourceType>(Range<Data.Index>, with: UnsafeBufferPointer<SourceType>)](data/replacesubrange(_:with:)-9nzh.md)
   Replaces a region of bytes in the data with new bytes from a buffer.
 - [func replaceSubrange(Range<Data.Index>, with: UnsafeRawPointer, count: Int)](data/replacesubrange(_:with:count:).md)

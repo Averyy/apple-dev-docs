@@ -8,6 +8,7 @@ A Boolean value that determines whether the devices are listening for an applica
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

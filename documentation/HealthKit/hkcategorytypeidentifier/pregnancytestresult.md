@@ -55,6 +55,8 @@ Samples of this type use values from the [`HKCategoryValuePregnancyTestResult`](
   A category type that records pregnancy.
 - [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
   A category type that records lactation.
+- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+  A value that indicates the intensity of vaginal bleeding.
 
 
 ---

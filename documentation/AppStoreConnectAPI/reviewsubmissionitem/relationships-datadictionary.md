@@ -52,7 +52,9 @@ object ReviewSubmissionItem.Relationships
 ## See Also
 
 - [object ReviewSubmissionItem.Attributes](reviewsubmissionitem/attributes-data.dictionary.md)
+  Attributes that describe a review submission item resource.
 - [object ReviewSubmissionItem.Attributes](reviewsubmissionitem/attributes-data.dictionary.md)
+  Attributes that describe a review submission item resource.
 
 
 ---

@@ -7,8 +7,6 @@ The payload that configures Apple TV for a particular style of AirPlay security.
 
 **Availability**:
 - tvOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,12 +23,12 @@ Specify `com.apple.airplay.security` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | tvOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | tvOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -76,9 +74,9 @@ Specify `com.apple.airplay.security` as the payload type.
 
 - `AccessType` (string) *(required)*: The access policy for AirPlay. `ANY` allows connections from both Ethernet, Wi-Fi, and Apple Wireless Direct Link. `WIFI_ONLY` allows connections only from devices on the same Ethernet or Wi-Fi network as Apple TV.
 - `Password` (string): The AirPlay password; required if `SecurityType` is `PASSWORD`.
-- `SecurityType` (string) *(required)*: The security policy for AirPlay. Allowed values: - **`PASSCODE_ONCE`**: Requires an onscreen passcode on first connection from a device. Subsequent connections from the same device aren’t prompted.
-- **`PASSCODE_ALWAYS`**: Requires an onscreen passcode for every AirPlay connection. After an AirPlay connection ends, the system allows reconnecting within 30 seconds without a password.
-- **`PASSWORD`**: Requires the passphrase set for `Password`. > **Note**:  `NONE` was deprecated in tvOS 11.3. Existing profiles that use `NONE` get the `PASSWORD_ONCE` behavior.
+- `SecurityType` (string) *(required)*: The security policy for AirPlay. Allowed values: - `PASSCODE_ONCE`: Requires an onscreen passcode on first connection from a device. Subsequent connections from the same device aren’t prompted.
+- `PASSCODE_ALWAYS`: Requires an onscreen passcode for every AirPlay connection. After an AirPlay connection ends, the system allows reconnecting within 30 seconds without a password.
+- `PASSWORD`: Requires the passphrase set for `Password`. > **Note**:  `NONE` was deprecated in tvOS 11.3. Existing profiles that use `NONE` get the `PASSWORD_ONCE` behavior.
 
 ## See Also
 

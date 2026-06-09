@@ -1,0 +1,33 @@
+# init(_:bounds:state:subelements:)
+
+**Framework**: App Intents  
+**Kind**: init
+
+Creates a wrapper object that combines an app entity with additional information to make it discoverable by Apple Intelligence and Siri.
+
+**Availability**:
+- iOS 18.4+
+- iPadOS 18.4+
+- Mac Catalyst ?+
+- macOS 15.4+
+- tvOS 18.4+
+- visionOS 2.4+
+- watchOS 11.4+
+
+## Declaration
+
+```swift
+init<Entity>(_ entity: Entity, bounds: CGRect, state: AppEntityUIElement.State = .init(), subelements: [AppEntityUIElement] = []) where Entity : AppEntity
+```
+
+## Parameters
+
+- `entity`: The app entity that describes the content of an UI element.
+- `bounds`: The UI element’s bounds in the local coordinate space of the entity provider’s associated custom view.
+- `state`: The object that indicates whether the UI element is selected.
+- `subelements`: An array of UI elements that represent a group of UI elements.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/appintents/appentityuielement/init(_:bounds:state:subelements:))*

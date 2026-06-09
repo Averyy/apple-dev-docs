@@ -54,7 +54,7 @@ The value that `table` maps to `key`, or `NULL` if `table` doesn’t contain `ke
   Used when finished with an enumerator.
 - [func NSEnumerateMapTable(NSMapTable<AnyObject, AnyObject>) -> NSMapEnumerator](nsenumeratemaptable(_:).md)
   Creates an enumerator for the specified map table.
-- [func NSFreeMapTable(NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
+- [func NSFreeMapTable(consuming NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
   Deletes the specified map table.
 - [func NSMapInsert(NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer?, UnsafeRawPointer?)](nsmapinsert(_:_:_:).md)
   Inserts a key-value pair into the specified table.

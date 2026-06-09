@@ -7,8 +7,6 @@ A dictionary that describes a peer content cache alert.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

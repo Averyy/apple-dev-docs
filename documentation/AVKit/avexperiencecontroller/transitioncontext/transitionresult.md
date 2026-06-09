@@ -11,6 +11,7 @@ Describes the result of a transition.
 ## Declaration
 
 ```swift
+@preconcurrency
 enum TransitionResult
 ```
 
@@ -20,7 +21,7 @@ A transition can successfully complete to the `toExperience` or reverse back to 
 
 ## Topics
 
-### Enumeration Cases
+### Results
 - [AVExperienceController.TransitionContext.TransitionResult.completed](avexperiencecontroller/transitioncontext/transitionresult/completed.md)
 - [case reversed(reason: AVExperienceController.TransitionContext.ReversedReason)](avexperiencecontroller/transitioncontext/transitionresult/reversed(reason:).md)
 
@@ -28,6 +29,14 @@ A transition can successfully complete to the `toExperience` or reverse back to 
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
+  Describes the status of a transition.
+- [AVExperienceController.TransitionContext.ReversedReason](avexperiencecontroller/transitioncontext/reversedreason.md)
 
 
 ---

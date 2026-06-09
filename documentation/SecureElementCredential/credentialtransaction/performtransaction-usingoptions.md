@@ -22,7 +22,7 @@ func performTransaction(using credential: Credential, options: CardEmulationOpti
 
 #### Discussion
 
-If this call succeeds, the session state trasitions to [`CredentialSession.State.cardEmulation(credential:)`](credentialsession/state-swift.enum/cardemulation(credential:).md), and the event stream publishes a [`CredentialSession.Event.fieldStateChanged(info:)`](credentialsession/event/fieldstatechanged(info:).md) event.
+If this call succeeds, the session state trasitions to [`CredentialSession.State.cardEmulation(credential:)`](credentialsession/state-swift.enum/cardemulation(credential:).md).
 
 Card emulation ends after 60 seconds, at which point the the event stream publishes a [`CredentialSession.Event.cardEmulationTimeout`](credentialsession/event/cardemulationtimeout.md) event. If you complete your transaction before the timeout, call [`endCardEmulation()`](credentialsession/endcardemulation().md) to exit card emulation mode.
 

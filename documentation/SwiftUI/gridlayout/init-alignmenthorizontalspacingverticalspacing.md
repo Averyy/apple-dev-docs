@@ -17,6 +17,7 @@ Creates a grid with the specified spacing and alignment.
 ## Declaration
 
 ```swift
+nonisolated
 init(alignment: Alignment = .center, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil)
 ```
 

@@ -29,6 +29,8 @@ This type corresponds to the Unicode variant subtag, such as `posix`.
 ### Creating a variant
 - [init(String)](locale/variant-swift.struct/init(_:).md)
   Creates a variant from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/variant-swift.struct/init(stringliteral:).md)
+  Creates a variant from a BCP 47 identifier as a string literal.
 ### Examining variant properties
 - [var identifier: String](locale/variant-swift.struct/identifier.md)
   The variant’s BCP 47 identifier.

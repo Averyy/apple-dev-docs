@@ -40,6 +40,9 @@ class PKSecureElementPass
   An opaque value that identifies the primary account number that funds the pass’s transactions.
 - [var primaryAccountNumberSuffix: String](pksecureelementpass/primaryaccountnumbersuffix.md)
   A display-ready version of the primary account number.
+### Instance Properties
+- [var isProvisioningAvailable: Bool](pksecureelementpass/isprovisioningavailable.md)
+  A Boolean value indicating whether provisioning is available for this pass.
 
 ## Relationships
 

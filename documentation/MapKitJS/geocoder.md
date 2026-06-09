@@ -40,19 +40,24 @@ Provide context to the geocoder to get the most relevant results. The geocoder c
 - [language](service/language.md)
   A language ID that determines the language to use for displaying addresses.
 ### Getting geocoder results
-- [lookup(place, callback, options)](geocoder/lookup.md)
+- [lookup(place, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
 - [interface GeocoderLookupOptions](geocoderlookupoptions.md)
   Options that constrain geocoder lookup results to a specific area or a specific language.
-- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
 - [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.
 - [interface GeocoderResponse](geocoderresponse.md)
   The response from a geocoder lookup or reverse lookup.
 ### Canceling a geocoder request
-- [cancel(id)](service/cancel.md)
-  Cancels a request using the provided request ID.
+- [cancel(promise)](service/cancel.md)
+  Cancels a request using the provided request promise.
+### Deprecated
+- [lookup(place, callback, options)](geocoder/lookup1.md)
+  Converts an address to geographic coordinates.
+- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup1.md)
+  Converts a geographic coordinate to an address.
 
 ## Relationships
 

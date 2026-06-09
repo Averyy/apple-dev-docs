@@ -19,6 +19,12 @@ class VZEFIBootLoader
 ### Creating an EFI boot loader
 - [init()](vzefibootloader/init.md)
   Creates a new EFI boot loader.
+### Working with secure boot configurations
+- [class VZEFISignatureDatabaseConfiguration](vzefisignaturedatabaseconfiguration.md)
+  A container for Unified Extensible Firmware Interface (UEFI) Secure Boot signature lists.
+- [class VZEFISignatureList](vzefisignaturelist.md)
+  A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
+- [enum VZEFISignature](vzefisignature-swift.enum.md)
 ### Instance properties
 - [var variableStore: VZEFIVariableStore?](vzefibootloader/variablestore.md)
   The boot loader’s EFI variable store.

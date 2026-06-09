@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns a new string created by replacing all characters in the string not in the specified set with percent encoded characters.
+Returns a new string created by replacing all characters not in the specified set with percent-encoded characters.
 
 **Availability**:
 - iOS 8.0+

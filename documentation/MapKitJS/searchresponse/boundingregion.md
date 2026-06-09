@@ -11,7 +11,7 @@ The region that encloses the places from the search results.
 ## Declaration
 
 ```swift
-boundingRegion?: CoordinateRegion;
+boundingRegion: CoordinateRegion | null;
 ```
 
 #### Discussion

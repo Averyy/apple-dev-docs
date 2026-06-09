@@ -6,6 +6,9 @@
 Releases the memory associated with an object identifier.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,7 +1,9 @@
-# POST /v1/appEventVideoClips
+# Create an app event video clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Reserve a video clip asset for an in-app event.
 
 **Availability**:
 - App Store Connect API 1.7+
@@ -12,9 +14,11 @@
 
 ## See Also
 
-- [GET /v1/appEventVideoClips/{id}](get-v1-appeventvideoclips-_id_.md)
-- [PATCH /v1/appEventVideoClips/{id}](patch-v1-appeventvideoclips-_id_.md)
-- [Delete an App Event Video Clip](delete-v1-appeventvideoclips-_id_.md)
+- [Read app event video clip information](get-v1-appeventvideoclips-_id_.md)
+  Get information about a specific video clip for an in-app event.
+- [Modify an app event video clip](patch-v1-appeventvideoclips-_id_.md)
+  Commit an uploaded video clip asset for an in-app event.
+- [Delete an app event video clip](delete-v1-appeventvideoclips-_id_.md)
   Delete a specific video clip from an in-app event.
 
 

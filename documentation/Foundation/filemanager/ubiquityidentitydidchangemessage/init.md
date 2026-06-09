@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message for a ubiquity identity change.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

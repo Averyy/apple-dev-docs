@@ -34,6 +34,13 @@ The samples on this page are a starting point for developers new to visionOS. Ea
   Display an interactive car model using gestures in a reality view.
 - [Creating an immersive space in visionOS](creating-immersive-spaces-in-visionos-with-swiftui.md)
   Enhance your visionOS app by adding an immersive space using RealityKit.
+### Managing multiple scenes
+- [Handling the window life cycle with multiple scenes](handling-the-window-life-cycle-with-multiple-scenes.md)
+  Track scene state across different window types.
+- [Associating a window with an immersive space](associating-a-window-with-an-immersive-space.md)
+  Tightly couple a window with an immersive space for persistent controls.
+- [Embedding controls in an immersive space](embedding-controls-in-an-immersive-space.md)
+  Keep controls visible throughout an immersive experience by displaying them in a window or a view attachment.
 ### Integrating ARKit
 - [Animating hand models in visionOS](animating-hand-models-in-visionos.md)
   Substitute a person’s hands with custom models in a fully immersive space.

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A data format for the tensors you create with this descriptor.
+The data format of all elements in the data plane.
 
 **Availability**:
 - iOS 26.0+

@@ -18,6 +18,8 @@ class let didMiniaturizeNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that minimized. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidMiniaturizeMessage`](nswindow/didminiaturizemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

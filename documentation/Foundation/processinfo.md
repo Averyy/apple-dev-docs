@@ -134,10 +134,10 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
 
 ## Topics
 
-### Getting the Process Information Agent
+### Getting the process-information agent
 - [class var processInfo: ProcessInfo](processinfo/processinfo.md)
   Returns the process information agent for the process.
-### Accessing Process Information
+### Accessing process information
 - [var arguments: [String]](processinfo/arguments.md)
   Array of strings with the command-line arguments for the process.
 - [var environment: [String : String]](processinfo/environment.md)
@@ -154,24 +154,24 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   The identifier of the process (often called process ID).
 - [var processName: String](processinfo/processname.md)
   The name of the process.
-### Accessing User Information
+### Accessing user information
 - [var userName: String](processinfo/username.md)
   Returns the account name of the current user.
 - [var fullUserName: String](processinfo/fullusername.md)
   Returns the full name of the current user.
-### Sudden Application Termination
+### Working with sudden application termination
 - [func disableSuddenTermination()](processinfo/disablesuddentermination.md)
   Disables the application for quickly killing using sudden termination.
 - [func enableSuddenTermination()](processinfo/enablesuddentermination.md)
   Enables the application for quick killing using sudden termination.
-### Controlling Automatic Termination
+### Controlling automatic termination
 - [func disableAutomaticTermination(String)](processinfo/disableautomatictermination(_:).md)
   Disables automatic termination for the application.
 - [func enableAutomaticTermination(String)](processinfo/enableautomatictermination(_:).md)
   Enables automatic termination for the application.
 - [var automaticTerminationSupportEnabled: Bool](processinfo/automaticterminationsupportenabled.md)
   A Boolean value indicating whether the app supports automatic termination.
-### Getting Host Information
+### Getting host information
 - [var hostName: String](processinfo/hostname.md)
   The name of the host computer on which the process is executing.
 - [var operatingSystemVersionString: String](processinfo/operatingsystemversionstring.md)
@@ -188,7 +188,7 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   The following constants are provided by the `NSProcessInfo` class as return values for [`operatingSystem()`](processinfo/operatingsystem().md).
 - [func operatingSystemName() -> String](processinfo/operatingsystemname.md)
   Returns a string containing the name of the operating system on which the process is executing.
-### Getting Computer Information
+### Getting computer information
 - [var processorCount: Int](processinfo/processorcount.md)
   The number of processing cores available on the computer.
 - [var activeProcessorCount: Int](processinfo/activeprocessorcount.md)
@@ -201,7 +201,7 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   Indicates whether an app is running under a known performance profile.
 - [var systemUptime: TimeInterval](processinfo/systemuptime.md)
   The amount of time the system has been awake since the last time it was restarted.
-### Managing Activities
+### Managing activities
 - [func beginActivity(options: ProcessInfo.ActivityOptions, reason: String) -> any NSObjectProtocol](processinfo/beginactivity(options:reason:).md)
   Begin an activity using the given options and reason.
 - [func endActivity(any NSObjectProtocol)](processinfo/endactivity(_:).md)
@@ -212,22 +212,24 @@ print (long)[[NSClassFromString(@"NSProcessInfo") processInfo] _suddenTerminatio
   Performs the specified block asynchronously and notifies you if the process is about to be suspended.
 - [ProcessInfo.ActivityOptions](processinfo/activityoptions.md)
   Option flags used with [`beginActivity(options:reason:)`](processinfo/beginactivity(options:reason:).md) and [`performActivity(options:reason:using:)`](processinfo/performactivity(options:reason:using:).md).
-### Getting the Thermal State
+### Getting the thermal state
 - [var thermalState: ProcessInfo.ThermalState](processinfo/thermalstate-swift.property.md)
   The current thermal state of the system.
 - [ProcessInfo.ThermalState](processinfo/thermalstate-swift.enum.md)
   Values used to indicate the system’s thermal state.
-### Determining Whether Low Power Mode is Enabled
+### Determining whether low power mode is enabled
 - [var isLowPowerModeEnabled: Bool](processinfo/islowpowermodeenabled.md)
   A Boolean value that indicates the current state of Low Power Mode.
-### Notifications
+### Working with notifications
 - [class let thermalStateDidChangeNotification: NSNotification.Name](processinfo/thermalstatedidchangenotification.md)
   Posts when the thermal state of the system changes.
 - [static let NSProcessInfoPowerStateDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfopowerstatedidchange.md)
   Posts when the power state of a device changes.
-### Structures
+### Working with notification messsages
 - [ProcessInfo.PowerStateDidChangeMessage](processinfo/powerstatedidchangemessage.md)
+  A message the system sends when the device’s power state changes.
 - [ProcessInfo.ThermalStateDidChangeMessage](processinfo/thermalstatedidchangemessage.md)
+  A message the system sends when the device’s thermal state changes.
 
 ## Relationships
 

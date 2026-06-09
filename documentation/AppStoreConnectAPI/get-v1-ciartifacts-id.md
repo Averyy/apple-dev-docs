@@ -1,4 +1,4 @@
-# Read Xcode Cloud Artifact Information
+# Read xcode cloud artifact information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

@@ -35,6 +35,7 @@ A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect).
   The method the framework calls when the text viewport layout controller finishes its layout process.
 - [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerwilllayout(_:).md)
   The method the framework calls before the text viewport layout controller starts its layout process.
+- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
 
 
 ---

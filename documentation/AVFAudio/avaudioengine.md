@@ -100,6 +100,9 @@ audioEngine.stop()
 - [var mainMixerNode: AVAudioMixerNode](avaudioengine/mainmixernode.md)
   The audio engine’s optional singleton main mixer node.
 ### Connecting and Disconnecting Audio Nodes
+- [func connectNode(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:format:).md)
+- [func connectNode(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:tobus:format:).md)
+- [func connectNode(AVAudioNode, to: [AVAudioConnectionPoint], fromBus: AVAudioNodeBus, format: AVAudioFormat?) throws](avaudioengine/connectnode(_:to:frombus:format:).md)
 - [func connect(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?)](avaudioengine/connect(_:to:format:).md)
   Establishes a connection between two nodes.
 - [func connect(AVAudioNode, to: AVAudioNode, fromBus: AVAudioNodeBus, toBus: AVAudioNodeBus, format: AVAudioFormat?)](avaudioengine/connect(_:to:frombus:tobus:format:).md)
@@ -113,6 +116,8 @@ audioEngine.stop()
 - [func disconnectNodeOutput(AVAudioNode, bus: AVAudioNodeBus)](avaudioengine/disconnectnodeoutput(_:bus:).md)
   Removes the output connection of a node on the specified bus.
 ### Managing MIDI Nodes
+- [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-8tmk8.md)
+- [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListProvider: AVMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistprovider:)-35k1c.md)
 - [func connectMIDI(AVAudioNode, to: AVAudioNode, format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-73cd1.md)
   Establishes a MIDI connection between two nodes.
 - [func connectMIDI(AVAudioNode, to: [AVAudioNode], format: AVAudioFormat?, eventListBlock: AUMIDIEventListBlock?)](avaudioengine/connectmidi(_:to:format:eventlistblock:)-7qtd5.md)
@@ -142,8 +147,8 @@ audioEngine.stop()
   Stops the audio engine and releases any previously prepared resources.
 - [func reset()](avaudioengine/reset.md)
   Resets all audio nodes in the audio engine.
-- [var musicSequence: MusicSequence?](avaudioengine/musicsequence.md)
-  The music sequence instance that you attach to the audio engine, if any.
+- [func withMusicSequence<R, E>((borrowing MusicSequence?) throws(E) -> R) throws(E) -> R](avaudioengine/withmusicsequence(_:).md)
+  Provides scoped access to the AVAudioEngine’s MusicSequence
 ### Manually Rendering an Audio Engine
 - [func enableManualRenderingMode(AVAudioEngineManualRenderingMode, format: AVAudioFormat, maximumFrameCount: AVAudioFrameCount) throws](avaudioengine/enablemanualrenderingmode(_:format:maximumframecount:).md)
   Sets the engine to operate in manual rendering mode with the render format and maximum frame count you specify.
@@ -184,6 +189,8 @@ audioEngine.stop()
   The two modes for manual rendering.
 - [enum AVAudioEngineManualRenderingStatus](avaudioenginemanualrenderingstatus.md)
   Status codes that return from the render call to the engine operating in manual rendering mode.
+### Instance Properties
+- [var musicSequence: MusicSequence?](avaudioengine/musicsequence-1z47z.md)
 
 ## Relationships
 
@@ -196,6 +203,8 @@ audioEngine.stop()
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

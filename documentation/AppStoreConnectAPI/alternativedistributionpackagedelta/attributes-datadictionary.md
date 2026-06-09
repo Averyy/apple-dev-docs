@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an alternative distribution package delta resource.
+
 **Availability**:
 - App Store Connect API 3.3+
 

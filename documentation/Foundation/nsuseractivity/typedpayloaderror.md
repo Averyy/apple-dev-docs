@@ -35,7 +35,6 @@ Use this enumeration to manage errors from [`typedPayload(_:)`](nsuseractivity/t
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

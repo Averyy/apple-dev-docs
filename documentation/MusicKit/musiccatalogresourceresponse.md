@@ -25,6 +25,9 @@ struct MusicCatalogResourceResponse<MusicItemType> where MusicItemType : MusicIt
 ### Instance Properties
 - [let items: MusicItemCollection<MusicItemType>](musiccatalogresourceresponse/items.md)
   A collection of items matching the filter used in the originating [`MusicCatalogResourceRequest`](musiccatalogresourcerequest.md).
+### Instance Methods
+- [func item(for: MusicItemID) -> MusicItemType?](musiccatalogresourceresponse/item(for:).md)
+  Returns the item in this response that corresponds to the given identifier.
 
 ## Relationships
 

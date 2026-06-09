@@ -8,6 +8,7 @@ An event that occurred, indicating an update to the available shared networks.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

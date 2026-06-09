@@ -12,7 +12,7 @@ Creates a preview of a SwiftUI view using the specified traits and custom viewpo
 
 ```swift
 @freestanding
-(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @ViewBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera])
+(declaration) macro Preview(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera])
 ```
 
 #### Overview
@@ -38,7 +38,7 @@ Other preview macros provide different customization options. For example, if yo
 
 - `name`: An optional display name for the preview. If you don’t specify a name, the canvas labels the preview using the line number where the preview appears in source.
 - `traits`: An optional list of [`PreviewTrait`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait) instances that customize the appearance of the preview.
-- `body`: A [`ViewBuilder`](viewbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
+- `body`: A [`ContentBuilder`](contentbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
 - `cameras`: One or more preview cameras that indicate the custom, fixed viewpoints that you want to be able to view the preview from. The first of these replaces the front viewpoint as the default.
 
 ## See Also
@@ -47,6 +47,8 @@ Other preview macros provide different customization options. For example, if yo
   Creates a preview of a SwiftUI view.
 - [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>, PreviewTrait<Preview.ViewTraits>..., body: () -> any View)](preview(_:traits:_:body:).md)
   Creates a preview of a SwiftUI view using the specified traits.
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](preview(_:traits:arguments:body:).md)
+  Creates a group of previews of a parameterized SwiftUI view, varying its inputs over the provided arguments.
 
 
 ---

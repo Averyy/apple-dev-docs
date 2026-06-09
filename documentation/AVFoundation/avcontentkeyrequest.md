@@ -64,7 +64,12 @@ class AVContentKeyRequest
   A dictionary of options used to initialize key loading.
 - [AVContentKeyRequest.RetryReason](avcontentkeyrequest/retryreason.md)
   The reason for asking the client to retry a content key request.
+### Instance Properties
+- [var canBeFulfilledWithAdvisoryKey: Bool](avcontentkeyrequest/canbefulfilledwithadvisorykey.md)
+  Indicates whether this key request was initiated for an advisory key.
 ### Instance Methods
+- [func makeOptionalStreamingContentKeyRequestData(forApp: Data, contentIdentifier: Data?, options: [String : Any]?, completionHandler: (Data?, (any Error)?) -> Void)](avcontentkeyrequest/makeoptionalstreamingcontentkeyrequestdata(forapp:contentidentifier:options:completionhandler:).md)
+  Obtains an optional content key request data for a specific combination of application and content.
 - [func respondByRequestingPersistableContentKeyRequest()](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-1ci4q.md)
   Tells the receiver that the app requires a persistable content key request object for processing.
 - [func respondByRequestingPersistableContentKeyRequestAndReturnError() throws](avcontentkeyrequest/respondbyrequestingpersistablecontentkeyrequest-7i2pw.md)

@@ -20,6 +20,11 @@ Returns the display name for the selector that best matches the specified locale
 func displayName(forLocaleIdentifier localeIdentifier: String) -> String
 ```
 
+## See Also
+
+- [var identifier: String](avmediapresentationselector/identifier.md)
+  Provides the authored identifier for the selector.
+
 
 ---
 

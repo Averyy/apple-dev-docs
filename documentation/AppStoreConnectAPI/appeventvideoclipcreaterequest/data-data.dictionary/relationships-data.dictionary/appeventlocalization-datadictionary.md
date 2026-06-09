@@ -16,6 +16,7 @@ object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization
 
 ### Objects
 - [object AppEventVideoClipCreateRequest.Data.Relationships.AppEventLocalization.Data](appeventvideoclipcreaterequest/data-data.dictionary/relationships-data.dictionary/appeventlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app event video clip.
 
 ## Properties
 

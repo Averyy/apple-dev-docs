@@ -38,12 +38,17 @@ A `BarcodeAnchor` describes a barcode that ARKit detects in a person’s surroun
 ### Instance Properties
 - [var description: String](barcodeanchor/description.md)
   A textual representation of this anchor.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](barcodeanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

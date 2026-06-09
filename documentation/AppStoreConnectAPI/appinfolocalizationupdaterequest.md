@@ -31,9 +31,9 @@ object AppInfoLocalizationUpdateRequest
 - [object AppInfoLocalizationCreateRequest](appinfolocalizationcreaterequest.md)
   The request body you use to create an App Info Localization.
 - [object AppInfoLocalizationResponse](appinfolocalizationresponse.md)
-  A response that contains a single App Info Localizations resource.
+  The response body for endpoints that create, read, or modify a localized app info entry.
 - [object AppInfoLocalizationsResponse](appinfolocalizationsresponse.md)
-  A response that contains a list of AppInfoLocalizations resources.
+  The response body for endpoints that list localized app info entries for an app.
 
 
 ---

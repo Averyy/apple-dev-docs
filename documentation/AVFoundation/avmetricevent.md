@@ -40,6 +40,7 @@ class AVMetricEvent
 - [AVMetricHLSMediaSegmentRequestEvent](avmetrichlsmediasegmentrequestevent.md)
 - [AVMetricHLSPlaylistRequestEvent](avmetrichlsplaylistrequestevent.md)
 - [AVMetricMediaResourceRequestEvent](avmetricmediaresourcerequestevent.md)
+- [AVMetricPlaybackModeSwitchEvent](avmetricplaybackmodeswitchevent.md)
 - [AVMetricPlayerItemLikelyToKeepUpEvent](avmetricplayeritemlikelytokeepupevent.md)
 - [AVMetricPlayerItemPlaybackSummaryEvent](avmetricplayeritemplaybacksummaryevent.md)
 - [AVMetricPlayerItemRateChangeEvent](avmetricplayeritemratechangeevent.md)

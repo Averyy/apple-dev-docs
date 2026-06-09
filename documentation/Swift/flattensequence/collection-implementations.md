@@ -78,7 +78,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript<R>(R) -> Self.SubSequence](flattensequence/subscript(_:)-cutv.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](flattensequence/subscript(_:)-v1s4.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](flattensequence/subscript(_:)-v1s4.md)
 ### Type Aliases
 - [FlattenSequence.Indices](flattensequence/indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.

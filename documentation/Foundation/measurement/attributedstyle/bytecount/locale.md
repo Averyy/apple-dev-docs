@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale to use to format the numeric part of the byte count.
+Modifies the format style to use the specified locale.
 
 **Availability**:
 - iOS 16.0+
@@ -17,29 +17,18 @@ The locale to use to format the numeric part of the byte count.
 ## Declaration
 
 ```swift
-var locale: Locale { get set }
+func locale(_ locale: Locale) -> Measurement<UnitType>.AttributedStyle.ByteCount
 ```
 
-#### Discussion
+#### Return Value
 
-To change the format style’s locale, use [`locale(_:)`](formatstyle/locale(_:).md).
+A format style that uses the specified locale.
 
-## See Also
+## Parameters
 
-- [var allowedUnits: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/allowedunits.md)
-  The units the format style can use to express the byte count.
-- [Measurement.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/units.md)
-  The type the measurement format style uses to represent byte-counting units.
-- [var spellsOutZero: Bool](measurement/attributedstyle/bytecount/spellsoutzero.md)
-  A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var includesActualByteCount: Bool](measurement/attributedstyle/bytecount/includesactualbytecount.md)
-  A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
-- [var style: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Style](measurement/attributedstyle/bytecount/style-swift.property.md)
-  The style of byte count to express, such as memory or file system storage.
-- [Measurement.AttributedStyle.ByteCount.Style](measurement/attributedstyle/bytecount/style-swift.typealias.md)
-  The type used to represent the style of the formatted byte count.
+- `locale`: The locale to apply to the format style.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/measurement/attributedstyle/bytecount/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/measurement/attributedstyle/bytecount/locale(_:))*

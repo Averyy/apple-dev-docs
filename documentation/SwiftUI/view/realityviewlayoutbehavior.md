@@ -39,7 +39,14 @@ struct ModelWrapperView: View {
 }
 ```
 
-See `RealityViewLayoutOption` for a list of options to pass into `realityViewLayoutBehavior(_:)`.
+See [`RealityViewLayoutOption`](https://developer.apple.com/documentation/RealityKit/RealityViewLayoutOption) for a list of options to pass into `realityViewLayoutBehavior(_:)`.
+
+## See Also
+
+- [var realityViewCameraControls: CameraControls](environmentvalues/realityviewcameracontrols.md)
+  The camera controls for the reality view.
+- [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
+  Adds gestures that control the position and direction of a virtual camera.
 
 
 ---

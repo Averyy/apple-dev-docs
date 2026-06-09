@@ -15,6 +15,8 @@ Learn about the objects that you use to interact with the system.
   A set of methods that manage your app’s life cycle and its interaction with common system services.
 - [func NSApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> Int32](nsapplicationmain(_:_:).md)
   Called by the main function to create and run the application.
+- [Managing ongoing background processes in your Mac](managing-ongoing-background-processes-in-your-mac.md)
+  Configure your app to help people understand when background processes may continue after they close your app.
 ### Environment
 - [class NSWorkspace](nsworkspace.md)
   A workspace that can launch other apps and perform a variety of file-handling services.

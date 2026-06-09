@@ -20,6 +20,10 @@ A type that describes the user interface presentation of a custom type.
 struct TypeDisplayRepresentation
 ```
 
+## Mentions
+
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+
 ## Topics
 
 ### Initializers

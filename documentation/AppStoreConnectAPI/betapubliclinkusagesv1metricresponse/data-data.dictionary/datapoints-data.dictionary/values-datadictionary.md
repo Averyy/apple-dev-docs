@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The tester enrollment values within a single data point of the public link usage metric.
+
 **Availability**:
 - App Store Connect API 3.6+
 

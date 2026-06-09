@@ -23,6 +23,15 @@ The interaction mode for indirect pointer touches on the canvas.
 
 Default is `.selection`.
 
+## See Also
+
+- [var directTouchMode: PaperMarkupViewController.TouchMode](papermarkupviewcontroller/directtouchmode.md)
+  The interaction mode for direct touches on the canvas.
+- [var directTouchAutomaticallyDraws: Bool](papermarkupviewcontroller/directtouchautomaticallydraws.md)
+  A Boolean value that indicates whether direct touches automatically draw based on system state.
+- [PaperMarkupViewController.TouchMode](papermarkupviewcontroller/touchmode.md)
+  The canvas behavior for touches.
+
 
 ---
 

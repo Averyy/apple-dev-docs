@@ -11,7 +11,7 @@ A combination of thoroughfare and subthoroughfare.
 ## Declaration
 
 ```swift
-fullThoroughfare?: string;
+fullThoroughfare: string | null;
 ```
 
 #### Discussion

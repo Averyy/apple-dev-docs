@@ -15,6 +15,7 @@ A view that represents the content of a presented window.
 ## Declaration
 
 ```swift
+nonisolated
 struct PresentedWindowContent<Data, Content> where Data : Decodable, Data : Encodable, Data : Hashable, Content : View
 ```
 

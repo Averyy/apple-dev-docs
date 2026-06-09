@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a system language model for a specific use case.
+Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
 
 **Availability**:
 - iOS 26.0+

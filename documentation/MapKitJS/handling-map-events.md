@@ -14,7 +14,7 @@ Event listeners receive a single argument that is an event object. The event obj
 
 ##### Respond to Map Display Events
 
-MapKit JS sends the following [`MapKitEvent`](mapkitevent.md) events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
+MapKit JS dispatches the following events that allow you to respond to changes in the map display and a person’s interactions with the map and its controls.
 
 - **`region-change-start`**: The map’s visible region is about to change.
 - **`region-change-end`**: The map’s visible region finishes changing.
@@ -49,7 +49,7 @@ MapKit JS sends [`MapEvent`](mapevent.md) events when someone taps or presses on
 
 - **`single-tap`**: The framework sends an event when a single tap occurs on the map outside an annotation or an overlay. If an annotation or an overlay is in a selected state when a single tap occurs, MapKit JS deselects the annotation or the overlay and dispatches a single-tap event.
 - **`double-tap`**: The framework sends an event when a double tap occurs on the map without zooming the map.
-- **`long-press`**: The framework send an event when a long press occurs on the map outside an annotation. A long press may be the beginning of a panning or pinching gesture on the map. You can prevent the gesture from starting by calling the [`preventDefault()`](mapkitevent/preventdefault.md) method of the event. Annotations need to be draggable to dispatch long-press events.
+- **`long-press`**: The framework sends an event when a long press occurs on the map outside an annotation. A long press may be the beginning of a panning or pinching gesture on the map. You can prevent the gesture from starting by calling the `preventDefault` method of the event. Annotations need to be draggable to dispatch long-press events.
 
 ## Topics
 

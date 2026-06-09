@@ -18,6 +18,15 @@ Supports shapes with opacity.
 case shapeOpacity
 ```
 
+## See Also
+
+- [FeatureSet.Feature.shapeFills](featureset/feature/shapefills.md)
+  Supports shapes with fills.
+- [FeatureSet.Feature.shapeStrokes](featureset/feature/shapestrokes.md)
+  Supports shapes with strokes.
+- [FeatureSet.Feature.text](featureset/feature/text.md)
+  Supports shapes with text.
+
 
 ---
 

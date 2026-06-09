@@ -18,7 +18,7 @@ Creates a new timeline view that uses the given schedule.
 
 ```swift
 nonisolated
-init(_ schedule: Schedule, @ViewBuilder content: @escaping (TimelineViewDefaultContext) -> Content)
+init(_ schedule: Schedule, @ContentBuilder content: @escaping (TimelineViewDefaultContext) -> Content)
 ```
 
 ## Parameters

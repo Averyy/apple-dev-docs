@@ -7,8 +7,6 @@ The payload that configures the kernel extension policies.
 
 **Availability**:
 - macOS 10.13.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,11 +23,11 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example
@@ -93,7 +91,7 @@ Specify `com.apple.syspolicy.kernel-extension-policy` as the payload type.
 
 - `AllowedKernelExtensions` (SystemPolicyKernelExtensions.AllowedKernelExtensions): The dictionary that represents a set of kernel extensions that the system always allows to load on the computer. The dictionary maps team identifiers (keys) to arrays of bundle identifiers.
 - `AllowedTeamIdentifiers` ([string]): The array of team identifiers that define which validly signed kernel extensions can load.
-- `AllowNonAdminUserApprovals` (boolean): If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences. Available in macOS 11 and later.
+- `AllowNonAdminUserApprovals` (boolean): If `true`, nonadministrative users can approve additional kernel extensions in the Security & Privacy preferences. Available: macOS 11+
 - `AllowUserOverrides` (boolean): If `true`, users can approve additional kernel extensions that configuration profiles don’t explicitly allow.
 
 ## See Also

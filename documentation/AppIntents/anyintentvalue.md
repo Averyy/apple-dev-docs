@@ -40,9 +40,6 @@ protocol AnyIntentValue : Sendable
 
 ## See Also
 
-- [class EntityProperty](entityproperty.md)
-  A property wrapper that exposes the associated property to the system.
-- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 - [protocol AppValue](appvalue.md)
   An interface that describes conceptual types you use in app intents.
 

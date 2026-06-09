@@ -18,7 +18,7 @@ Creates a standard labeled element, with a view that conveys the value of the el
 
 ```swift
 nonisolated
-init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

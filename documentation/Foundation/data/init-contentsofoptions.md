@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: init
 
-Initialize a `Data` with the contents of a `URL`.
+Creates data by reading from the specified URL.
 
 **Availability**:
 - iOS 8.0+

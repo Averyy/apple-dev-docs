@@ -7,8 +7,6 @@ Authenticates a user with a two-step authentication protocol.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -24,10 +22,10 @@ The next time the user logs in, the client sends a new request and the server ca
 
 |  |  |
 | --- | --- |
-| Device channel | NA |
+| Device channel | N/A |
 | User channel | macOS |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 
 ## Topics
 
@@ -37,7 +35,7 @@ The next time the user logs in, the client sends a new request and the server ca
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#UserAuthenticateRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

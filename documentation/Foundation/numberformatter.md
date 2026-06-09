@@ -215,6 +215,7 @@ On earlier versions of the operating system, or when using the legacy formatter 
   These constants are used to specify how numbers should be rounded. These constants are used by the [`roundingMode`](numberformatter/roundingmode-swift.property.md) property.
 ### Instance Properties
 - [var minimumGroupingDigits: Int](numberformatter/minimumgroupingdigits.md)
+  See \c kCFNumberFormatterMinGroupingDigits in \c CFNumberFormatter for an explanation on how minimum grouping digits is used.
 
 ## Relationships
 

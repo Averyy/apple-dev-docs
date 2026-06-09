@@ -22,6 +22,12 @@ var stride: Int { get }
 
 ## See Also
 
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+  Returns read-only access to a specific channel’s data.
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+  Returns mutable access to a specific channel’s data.
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+  Provides scoped read-only access to the audio buffer list.
 - [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](avaudiopcmbuffer/floatchanneldata.md)
   The buffer’s audio samples as floating point values.
 - [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
@@ -30,6 +36,10 @@ var stride: Int { get }
   The buffer’s 16-bit integer audio samples.
 - [var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>?](avaudiopcmbuffer/int32channeldata.md)
   The buffer’s 32-bit integer audio samples.
+- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+  Represents read-only channel data.
+- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+  Represents mutable channel data.
 
 
 ---

@@ -11,6 +11,7 @@ Creates a new `VerticalPageTabViewStyle` with a transition style.
 ## Declaration
 
 ```swift
+nonisolated
 init(transitionStyle: VerticalPageTabViewStyle.TransitionStyle)
 ```
 

@@ -50,12 +50,21 @@ struct FileEntityIdentifier
 
 ## See Also
 
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
-  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
 - [struct EntityIdentifier](entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
 - [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
   An interface for converting between an entity’s identifier and its string representation.
+- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
+- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+  A type-safe wrapper you use to specify different local and stable identifiers for an entity.
+- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+  A unique identifier for an app entity instance within an application.
+- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+  A unique identifier for an app entity or transient app entity type within an application bundle.
+- [protocol AppEntityAnnotatable](appentityannotatable.md)
+  An interface that system types adopt and use to manage their relationship to app entities.
+- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

@@ -30,6 +30,8 @@ The framework is the foundation for domain-specific frameworks and functionality
 
 ![A block diagram of the machine learning stack. The top layer is a single block labeled “Your app,” which spans the entire width of the block diagram. The second layer has four blocks labeled “Vision,” “Natural Language,” “Speech,” and “Sound Analysis.” The third layer is labeled “Core ML,” which also spans the entire width. The fourth and final layer has two blocks, “Accelerate and BNNS” and “Metal Performance Shaders.”](https://docs-assets.developer.apple.com/published/2ab0327b082af0332b528cc4171ee629/media-3330367%402x.png)
 
+If your app integrates AI models using the latest architectures and inference techniques, see [`Core AI`](https://developer.apple.com/documentation/CoreAI).
+
 ## Topics
 
 ### Core ML models

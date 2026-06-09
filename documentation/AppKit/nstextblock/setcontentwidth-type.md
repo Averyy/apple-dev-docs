@@ -6,17 +6,16 @@
 Sets the width of the text block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-func setContentWidth(_ val: CGFloat, type: NSTextBlock.ValueType)
+func setContentWidth(_ contentWidth: CGFloat, type: NSTextBlock.ValueType)
 ```
 
 ## Parameters
 
-- `val`: The new value for the width.
 - `type`: The type of value being provided. This controls how `val` is interpreted.
 
 ## See Also

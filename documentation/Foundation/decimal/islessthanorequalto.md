@@ -28,6 +28,10 @@ func isLessThanOrEqualTo(_ other: Decimal) -> Bool
   Indicates whether this decimal is less than the specified one.
 - [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](decimal/istotallyordered(beloworequalto:).md)
   Returns a Boolean value indicating whether this instance should precede the given value in an ascending sort.
+- [func distance(to: Decimal) -> Decimal](decimal/distance(to:).md)
+  Returns the distance from this value to the specified value.
+- [func advanced(by: Decimal) -> Decimal](decimal/advanced(by:).md)
+  Returns a new value advanced by the given distance.
 - [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](nsdecimalcompare(_:_:).md)
   Compares two decimal values.
 

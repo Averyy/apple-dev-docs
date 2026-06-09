@@ -111,6 +111,8 @@ content.add(dockingEntity)
 
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
 
 
 ---

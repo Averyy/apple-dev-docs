@@ -14,15 +14,6 @@ The request object associated with the direction’s response.
 request: object;
 ```
 
-## See Also
-
-- [routes](directionsresponse/routes.md)
-  An array of route objects.
-- [origin](directionsresponse/origin.md)
-  An optional starting point for routing directions.
-- [destination](directionsresponse/destination.md)
-  An optional end point for routing directions.
-
 
 ---
 

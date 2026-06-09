@@ -35,9 +35,13 @@ The value of this key is an [`NSString`](nsstring.md) with the replacement phras
 - [static let inflectionRule: NSAttributedString.Key](nsattributedstring/key/inflectionrule.md)
   An attribute that tells the system how to apply grammar rules and other modifiers to the range of text.
 - [static let agreeWithArgument: NSAttributedString.Key](nsattributedstring/key/agreewithargument.md)
+  An attribute key whose value indicates inflection agreement with a specific argument.
 - [static let agreeWithConcept: NSAttributedString.Key](nsattributedstring/key/agreewithconcept.md)
+  An attribute key whose value indicates inflection agreement with a specific concept.
 - [static let referentConcept: NSAttributedString.Key](nsattributedstring/key/referentconcept.md)
+  An attribute key whose value indicates the referent concept for inflection.
 - [static let localizedNumberFormat: NSAttributedString.Key](nsattributedstring/key/localizednumberformat.md)
+  An attribute key whose value specifies a localized number format.
 
 
 ---

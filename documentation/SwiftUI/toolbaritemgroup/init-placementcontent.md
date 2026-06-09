@@ -17,13 +17,14 @@ Creates a toolbar item group with a specified placement and content.
 ## Declaration
 
 ```swift
-init(placement: ToolbarItemPlacement = .automatic, @ViewBuilder content: () -> Content)
+nonisolated
+init(placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
 
 - placement: Which section of the toolbar all of its vended `ToolbarItem`s should be placed in.
-- content: The content of the group. Each view specified in the `ViewBuilder` will be given its own `ToolbarItem` in the toolbar.
+- content: The content of the group. Each view specified in the `ContentBuilder` will be given its own `ToolbarItem` in the toolbar.
 
 ## See Also
 

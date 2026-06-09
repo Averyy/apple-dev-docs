@@ -1,4 +1,4 @@
-# Create a Workflow
+# Create a workflow
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -164,9 +164,9 @@ The request body you use to create a new Xcode Cloud workflow.
 
 ## See Also
 
-- [Update an Xcode Cloud Workflow](patch-v1-ciworkflows-_id_.md)
+- [Update an xcode cloud workflow](patch-v1-ciworkflows-_id_.md)
   Make changes to an Xcode Cloud workflow.
-- [Delete a Workflow](delete-v1-ciworkflows-_id_.md)
+- [Delete a workflow](delete-v1-ciworkflows-_id_.md)
   Delete an Xcode Cloud workflow and all of its associated data.
 
 

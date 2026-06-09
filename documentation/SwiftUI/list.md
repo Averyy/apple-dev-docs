@@ -17,8 +17,8 @@ A container that presents rows of data arranged in a single column, optionally p
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : View
+nonisolated
+struct List<SelectionValue, Content> where SelectionValue : Hashable, Content : View
 ```
 
 ## Mentions

@@ -6,8 +6,7 @@
 Fetch metadata for your apps by using their identifiers.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 #### Discussion
 
@@ -150,7 +149,7 @@ Fetch metadata for your apps by using their identifiers.
 - [Get Metadata for Multiple Catalog Books](get-v1-catalog-_storefront_-books.md)
   Fetch metadata for books from the catalog by using their identifiers.
 - [Get Catalog Search Results](get-catalog-search-results.md)
-  Fetch metadata for apps and books from the catalog by using a search term.
+  Fetch metadata for apps, books, and subscriptions from the catalog by using a search term.
 
 
 ---

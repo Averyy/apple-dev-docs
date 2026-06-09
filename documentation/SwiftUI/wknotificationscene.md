@@ -11,6 +11,7 @@ A scene which appears in response to receiving the specified category of remote 
 ## Declaration
 
 ```swift
+nonisolated
 struct WKNotificationScene<Content, Controller> where Content : View, Controller : WKUserNotificationHostingController<Content>
 ```
 

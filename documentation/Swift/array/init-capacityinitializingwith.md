@@ -17,7 +17,7 @@ Creates an array with the specified capacity, and then calls the given closure w
 ## Declaration
 
 ```swift
-init<E>(capacity: Int, initializingWith initializer: (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
+init<E>(capacity: Int, initializingWith initializer: @_lifetime(span: copy span) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
 #### Discussion

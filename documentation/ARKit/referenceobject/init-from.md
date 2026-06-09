@@ -22,6 +22,10 @@ init(from url: URL) async throws
 
 - [init(named: String, from: Bundle?) async throws](referenceobject/init(named:from:).md)
   Creates a reference object from a bundle.
+- [init(from: URL, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(from:configuration:).md)
+  Initializes a reference object from a URL, with reference object configuration.
+- [init(named: String, from: Bundle?, configuration: ReferenceObject.Configuration) async throws](referenceobject/init(named:from:configuration:).md)
+  Initializes a reference object from a bundle, with reference object configuration.
 
 
 ---

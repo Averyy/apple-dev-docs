@@ -8,6 +8,7 @@ A type that contains the unavailable capabilities of the current spatial trackin
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 2.0+
 
 ## Declaration

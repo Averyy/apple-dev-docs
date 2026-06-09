@@ -44,7 +44,7 @@ DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys/52c5
   List the alternative distribution key for your account.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 

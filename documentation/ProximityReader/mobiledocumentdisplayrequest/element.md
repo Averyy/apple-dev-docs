@@ -9,7 +9,6 @@ A type that represents an element you can request from a mobile document.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 
@@ -26,6 +25,8 @@ struct Element
   The mobile document holder’s family name or last name.
 - [static let givenName: MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element/givenname.md)
   The mobile document holder’s given name or first name.
+- [static let name: MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element/name.md)
+  The mobile document holder’s name.
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileDocumentDisplayRequest.Element](mobiledocumentdisplayrequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile document holder’s age is at least the given age.

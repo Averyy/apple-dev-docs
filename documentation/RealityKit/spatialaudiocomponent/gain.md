@@ -16,7 +16,7 @@ The overall level for all sounds that an entity emits.
 ## Declaration
 
 ```swift
-var gain: Audio.Decibel
+var gain: Audio.Decibel { get set }
 ```
 
 #### Discussion

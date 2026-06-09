@@ -10,8 +10,6 @@ The dictionary of user-editable options to set for the app.
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,9 +19,9 @@ object AppLock.App.UserEnabledOptions
 
 ## Properties
 
-- `AssistiveTouch` (boolean): If `true`, the system allows the user to toggle AssistiveTouch.
+- `AssistiveTouch` (boolean): If `true`, the system allows the user to toggle AssistiveTouch. Available: iOS 7+ | iPadOS 7+
 - `InvertColors` (boolean): If `true`, the system allows the user to toggle Invert Colors.
-- `VoiceControl` (boolean): If `true`, the system allows the user to toggle Voice Control.
+- `VoiceControl` (boolean): If `true`, the system allows the user to toggle Voice Control. Available: iOS 13+ | iPadOS 13+
 - `VoiceOver` (boolean): If `true`, the system allows the user to toggle VoiceOver.
 - `Zoom` (boolean): If `true`, the system allows the user to toggle Zoom.
 

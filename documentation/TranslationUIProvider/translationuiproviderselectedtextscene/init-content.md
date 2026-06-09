@@ -8,6 +8,7 @@ Creates the scene to translate the user’s selected text, with the provided Vie
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

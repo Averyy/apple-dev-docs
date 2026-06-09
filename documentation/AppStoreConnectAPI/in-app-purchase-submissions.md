@@ -7,12 +7,15 @@ Create a review submission for an in-app purchase.
 ## Topics
 
 ### Endpoints
-- [Create a Review Submission for an In-App Purchase](post-v1-inapppurchasesubmissions.md)
+- [Create a review submission for an in-app purchase](post-v1-inapppurchasesubmissions.md)
   Create an in-app purchase submission for review.
 ### Objects
 - [object InAppPurchaseSubmissionCreateRequest](inapppurchasesubmissioncreaterequest.md)
+  The request body you use to create an in-app purchase submission.
 - [object InAppPurchaseSubmissionResponse](inapppurchasesubmissionresponse.md)
+  A response confirming the submission of an in-app purchase for App Store review.
 - [object InAppPurchaseSubmission](inapppurchasesubmission.md)
+  A submission of an in-app purchase to App Store review, triggering the review process for that item.
 
 ## See Also
 

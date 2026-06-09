@@ -43,8 +43,6 @@ The testing library throws instances of this type when the `#require()` macro re
 
 - [struct Expectation](expectation.md)
   A type describing an expectation that has been evaluated.
-- [protocol CustomTestStringConvertible](customteststringconvertible.md)
-  A protocol describing types with a custom string representation when presented as part of a test’s output.
 
 
 ---

@@ -120,13 +120,13 @@ deinit actor
   Runs the given nonthrowing operation asynchronously as part of a new *unstructured* *detached* top-level task.
 ### Creating a Task that Starts Immediately
 - [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediate(name:priority:executorpreference:operation:)-88o80.md)
-  Create and immediately start running a new detached task in the context of the calling thread/task.
+  Create and immediately start running a new task in the context of the calling thread/task.
 - [static func immediate(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediate(name:priority:executorpreference:operation:)-9bghc.md)
-  Create and immediately start running a new detached task in the context of the calling thread/task.
+  Create and immediately start running a new task in the context of the calling thread/task.
 - [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async throws -> Success) -> Task<Success, any Error>](task/immediatedetached(name:priority:executorpreference:operation:)-52ipd.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
+  Create and immediately start running a new detached task in the context of the calling thread/task.
 - [static func immediateDetached(name: String?, priority: TaskPriority?, executorPreference: consuming (any TaskExecutor)?, operation: sending () async -> Success) -> Task<Success, Never>](task/immediatedetached(name:priority:executorpreference:operation:)-7h41b.md)
-  Create and immediately start running a new task in the context of the calling thread/task.
+  Create and immediately start running a new detached task in the context of the calling thread/task.
 ### Accessing Results
 - [var value: Success](task/value-60t02.md)
   The result from a throwing task, after it completes.
@@ -134,9 +134,6 @@ deinit actor
   The result from a nonthrowing task, after it completes.
 - [var result: Result<Success, Failure>](task/result.md)
   The result or error from a throwing task, after it completes.
-### Accessing the Current Task’s Name
-- [static var name: String?](task/name.md)
-  Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 ### Canceling Tasks
 - [struct CancellationError](cancellationerror.md)
   An error that indicates a task was canceled.
@@ -166,7 +163,7 @@ deinit actor
 ### Comparing Tasks
 - [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [var hashValue: Int](task/hashvalue.md)
   The hash value.
@@ -188,6 +185,14 @@ deinit actor
   Deprecated, available only for source compatibility reasons.
 - [static func withCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](task/withcancellationhandler(handler:operation:).md)
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
+### Instance Properties
+- [var name: String?](task/name-swift.property.md)
+  Return the task’s name, if it was set during its creation.
+### Type Properties
+- [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
+  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
+- [static var name: String?](task/name-swift.type.property.md)
+  Returns the human-readable name of the current task, if it was set during the tasks’ creation.
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)
 - [Hashable Implementations](task/hashable-implementations.md)
@@ -195,7 +200,6 @@ deinit actor
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

@@ -42,6 +42,8 @@ The system uses quick actions to provide users with a fast alternative interacti
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
 - [var accessibilityPrefersHeadAnchorAlternative: Bool](environmentvalues/accessibilityprefersheadanchoralternative.md)
   Whether the system setting to prefer alternatives to head-anchored content is on.
+- [var accessibilityPrefersCrossFadeTransitions: Bool](environmentvalues/accessibilitypreferscrossfadetransitions.md)
+  A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
 - [var accessibilityReduceMotion: Bool](environmentvalues/accessibilityreducemotion.md)
   Whether the system preference for Reduce Motion is enabled.
 - [var accessibilityReduceTransparency: Bool](environmentvalues/accessibilityreducetransparency.md)

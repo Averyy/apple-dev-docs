@@ -18,7 +18,7 @@ object CustomerReviewSummarization.Relationships
 
 ### Dictionaries
 - [object CustomerReviewSummarization.Relationships.Territory](customerreviewsummarization/relationships-data.dictionary/territory-data.dictionary.md)
-  The data structure that represents a territory for a customer review summarization resource.
+  The relationship linking a review summarization to the App Store territory it covers.
 
 ## Properties
 

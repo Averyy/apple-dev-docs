@@ -8,7 +8,7 @@ The configuration hasn’t been loaded.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst ?+
 - macOS 26.0+
 
 ## Declaration

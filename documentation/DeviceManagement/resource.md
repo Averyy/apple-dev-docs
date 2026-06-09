@@ -6,8 +6,7 @@
 A resource such as an app or book.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Initializes the user authentication request options for the signing identity typ
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

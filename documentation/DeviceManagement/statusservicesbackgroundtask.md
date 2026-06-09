@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the device’s background task details.
+The status item that reports the device’s background task details.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,17 +21,66 @@ object StatusServicesBackgroundTask
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
 | Allowed in local enrollment | macOS |
 | Allowed in system scope | macOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+
+##### Status Item Example
+
+**New or updated task**:
+
+Reports a new or updated background task.
+
+```json
+{
+    "services": {
+        "background-task": [
+            {
+                "identifier": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+                "uid": 501,
+                "path": "/Library/LaunchDaemons/com.example.daemon.plist",
+                "state": "enabled",
+                "type": "daemon",
+                "launchd": {
+                    "label": "com.example.daemon",
+                    "program": "/usr/local/bin/example-daemon",
+                    "program-arguments": [
+                        "/usr/local/bin/example-daemon",
+                        "--config",
+                        "/etc/example/config.json"
+                    ],
+                    "checksum": "a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6"
+                }
+            }
+        ]
+    }
+}
+```
+
+**Removed task**:
+
+Reports a removed background task.
+
+```json
+{
+    "services": {
+        "background-task": [
+            {
+                "identifier": "A1B2C3D4-E5F6-7890-ABCD-EF1234567890",
+                "_removed": true
+            }
+        ]
+    }
+}
+```
 
 ## Topics
 
 ### Objects
 - [object StatusServicesBackgroundTaskBackgroundTaskObject](statusservicesbackgroundtaskbackgroundtaskobject.md)
-  A status report of a background task.
+  The status item that reports a background task.
 
 ## Properties
 
@@ -41,35 +88,8 @@ object StatusServicesBackgroundTask
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+- [object StatusScreenSharingConnectionGroupUnresolvedConnections](statusscreensharingconnectiongroupunresolvedconnections.md)
+  The status item that lists connection groups with member connection references that the device couldn’t resolve.
 
 
 ---

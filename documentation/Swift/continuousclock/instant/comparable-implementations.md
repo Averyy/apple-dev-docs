@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (ContinuousClock.Instant, ContinuousClock.Instant) -> Bool](continuousclock/instant/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](continuousclock/instant/_(_:_:)-7pn1h.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](continuousclock/instant/_(_:_:)-6spv6.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](continuousclock/instant/_=(_:_:)-1inkc.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](continuousclock/instant/_=(_:_:)-3twpp.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](continuousclock/instant/_=(_:_:)-3yi5q.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](continuousclock/instant/_=(_:_:)-5a3de.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

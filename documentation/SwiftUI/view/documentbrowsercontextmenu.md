@@ -15,7 +15,7 @@ Adds to a `DocumentLaunchView` actions that accept a list of selected files as t
 
 ```swift
 @MainActor
-@preconcurrency func documentBrowserContextMenu(@ViewBuilder _ menu: @escaping ([URL]?) -> some View) -> some View
+@preconcurrency func documentBrowserContextMenu(@ContentBuilder _ menu: @escaping ([URL]?) -> some View) -> some View
 ```
 
 #### Discussion
@@ -69,6 +69,25 @@ The actions are displayed in the document browser navigation bar when a document
 ## Parameters
 
 - `menu`: Items representing the content of the menu.
+
+## See Also
+
+- [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
+  A launch scene for document-based applications.
+- [struct DocumentLaunchView](documentlaunchview.md)
+  A view to present when launching document-related user experience.
+- [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
+  A proxy for access to the frame of the scene and its title view.
+- [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
+  The default actions for the document group launch scene and the document launch view.
+- [struct NewDocumentButton](newdocumentbutton.md)
+  A button that creates and opens new documents.
+- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
+  Describes the source of data used to create a new document.
+- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+  The default label used for a new document button.
+- [struct DocumentCreationSource](documentcreationsource.md)
+  Describes the source used to create a new document.
 
 
 ---

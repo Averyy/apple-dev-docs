@@ -43,7 +43,8 @@ Beginning with OS X v10.5, the [`init(rect:options:owner:userInfo:)`](nstracking
   The object owning the receiver, which is the recipient of mouse-tracking, mouse-movement, and cursor-update messages.
 - [var options: NSTrackingArea.Options](nstrackingarea/options-swift.property.md)
   The options specified for the receiver.
-- [Cocoa Event Handling Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html#//apple_ref/doc/uid/10000060i)
+- [class NSTrackingArea](nstrackingarea.md)
+  A region of a view that generates mouse-tracking and cursor-update events when the pointer is over that region.
 
 
 ---

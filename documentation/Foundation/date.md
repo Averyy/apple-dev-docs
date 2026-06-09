@@ -62,6 +62,8 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
   Returns true if the left hand `Date` is earlier in time than the right hand `Date`.
 - [func compare(Date) -> ComparisonResult](date/compare(_:).md)
   Compares another date to this one.
+- [func distance(to: Date) -> TimeInterval](date/distance(to:).md)
+  Returns the distance from this date to another date, specified as a time interval.
 ### Getting Time Intervals
 - [func timeIntervalSince(Date) -> TimeInterval](date/timeintervalsince(_:).md)
   Returns the interval between this date and another given date.
@@ -75,11 +77,15 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
 - [static let timeIntervalBetween1970AndReferenceDate: Double](date/timeintervalbetween1970andreferencedate.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
+- [typealias Stride](date/stride.md)
+  A type alias to define the stride of a date.
 ### Adding or Subtracting a Time Interval
 - [func addTimeInterval(TimeInterval)](date/addtimeinterval(_:).md)
   Adds a time interval to this date.
 - [func addingTimeInterval(TimeInterval) -> Date](date/addingtimeinterval(_:).md)
   Creates a new date value by adding a time interval to this date.
+- [func advanced(by: TimeInterval) -> Date](date/advanced(by:).md)
+  Returns a date offset the specified time interval from this date.
 - [static func + (Date, TimeInterval) -> Date](date/+(_:_:).md)
   Returns a date with a specified amount of time added to it.
 - [static func += (inout Date, TimeInterval)](date/+=(_:_:).md)
@@ -126,6 +132,7 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [struct ComponentsFormatStyle](date/componentsformatstyle.md)
   A style for formatting a date interval in terms of specific date components.
 - [struct FormatString](date/formatstring.md)
+  A type that represents a fixed date format string using string interpolation.
 - [struct HTTPFormatStyle](date/httpformatstyle.md)
   Options for generating and parsing string representations of dates following the HTTP date format from [`RFC 9110 § 5.6.7`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc9110.html#http.date).
 - [struct ParseStrategy](date/parsestrategy.md)
@@ -143,11 +150,13 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [static var defaultResolverSpecification: some ResolverSpecification](date/defaultresolverspecification.md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](date/customstringconvertible-implementations.md)
+- [Strideable Implementations](date/strideable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -158,6 +167,8 @@ The [`Date`](date.md) structure provides methods for comparing dates, calculatin
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
 - [ReferenceConvertible](referenceconvertible.md)

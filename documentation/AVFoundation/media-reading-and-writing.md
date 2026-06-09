@@ -11,6 +11,13 @@ Read images from video, export to alternative formats, and perform sample-level 
   Convert an existing movie file to a different format.
 - [class AVAssetExportSession](avassetexportsession.md)
   An object that exports assets in a format that you specify using an export preset.
+### Planned export
+- [class AVAssetTrackPlan](avassettrackplan.md)
+- [class AVAssetVideoTrackPlan](avassetvideotrackplan.md)
+- [class AVPlannedSegmentConfiguration](avplannedsegmentconfiguration.md)
+- [class AVPlannedVideoSegmentConfiguration](avplannedvideosegmentconfiguration.md)
+- [class AVPlannedSegmentWritingRequest](avplannedsegmentwritingrequest.md)
+- [class AVPlannedVideoSegmentWritingRequest](avplannedvideosegmentwritingrequest.md)
 ### Image generation
 - [Creating images from a video asset](creating-images-from-a-video-asset.md)
   Display images for specific times within the media timeline by generating images from a video’s frames.

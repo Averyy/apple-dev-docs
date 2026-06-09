@@ -6,6 +6,9 @@
 The [`GKTurnBasedEventHandler`](gkturnbasedeventhandler.md) class is used to respond to important messages related to turn-based matches. To use it, call the [`shared()`](gkturnbasedeventhandler/shared().md) class method to get the singleton instance and assign an object that implements the [`GKTurnBasedEventHandlerDelegate`](gkturnbasedeventhandlerdelegate.md) protocol to its [`delegate`](gkturnbasedeventhandler/delegate.md) property. All methods are called on the main thread.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 3.0+

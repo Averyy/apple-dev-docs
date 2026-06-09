@@ -18,7 +18,7 @@ The internal content of this `AccessibilityRotorContent`.
 ## Declaration
 
 ```swift
-@AccessibilityRotorContentBuilder
+@ContentBuilder
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 

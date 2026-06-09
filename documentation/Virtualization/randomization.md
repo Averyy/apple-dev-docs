@@ -37,6 +37,8 @@ Configure a device for the guest system to use to generate random numbers.
 - [Clipboard sharing](clipboard-sharing.md)
   Share the pasteboard between the host and guest system.
 - [USB Devices](usb-devices.md)
+- [Custom Virtio drivers](custom-drivers.md)
+  Create custom Virtio drivers for Linux virtual machines.
 
 
 ---

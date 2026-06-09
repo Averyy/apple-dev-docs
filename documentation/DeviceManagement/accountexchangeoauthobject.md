@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration for configuring OAuth authentication of an Exchange account.
+The configuration settings for OAuth for this account.
 
 **Availability**:
 - iOS 15.0+
@@ -11,8 +11,6 @@ The declaration for configuring OAuth authentication of an Exchange account.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object AccountExchangeOAuthObject
 
 - `Enabled` (boolean) *(required)*: If `true`, enables OAuth for this account.
 - `SignInURL` (string): The URL that this account uses for signing in with OAuth. The system ignores this value unless `Enabled` is `true`. The system doesn’t use autodiscovery when a declaration contains this URL, so the declaration must also contain a `HostName`.
-- `TokenRequestURL` (string): The URL that this account uses for token requests with OAuth. The system ignores this value unless `Enabled` is `true`.
+- `TokenRequestURL` (string): The URL that this account uses for token requests with OAuth. The system ignores this value unless `Enabled` is `true`. Available: iOS 15+ | iPadOS 15+ | visionOS 1.1+
 
 ## See Also
 

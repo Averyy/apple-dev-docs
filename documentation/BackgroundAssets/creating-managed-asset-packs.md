@@ -87,6 +87,8 @@ For more information about managing your asset packs in App Store Connect, see [
   Configure your project and write the code to download asset packs hosted by Apple.
 - [Testing asset packs locally](testing-asset-packs-locally.md)
   Test your system-managed asset packs using a mock server on your Mac.
+- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+  Improve peoples’ experience of your app by downloading only immediately needed language assets.
 
 
 ---

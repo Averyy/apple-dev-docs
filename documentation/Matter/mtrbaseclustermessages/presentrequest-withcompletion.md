@@ -22,7 +22,7 @@ func presentRequest(with params: MTRMessagesClusterPresentMessagesRequestParams)
 
 #### Discussion
 
-Command for requesting messages be presented
+Upon receipt, this SHALL cause the message in the passed fields to be appended to the Messages attribute.
 
 
 ---

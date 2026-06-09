@@ -49,6 +49,8 @@ protocol TrackableAnchor : Anchor
   The possible states of a data provider.
 - [protocol Anchor](anchor.md)
   The identity, location, and orientation of an object in world space.
+- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+  A type that provides an ARKit coordinate space with an optional correction applied.
 - [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 

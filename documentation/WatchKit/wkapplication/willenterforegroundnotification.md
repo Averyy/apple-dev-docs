@@ -11,8 +11,7 @@ A message indicating that the watchOS app is about to transition from the backgr
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static let willEnterForegroundNotification: NSNotification.Name
+class let willEnterForegroundNotification: NSNotification.Name
 ```
 
 #### Discussion
@@ -21,13 +20,13 @@ When creating an app that uses the SwiftUI [`App`](https://developer.apple.com/d
 
 ## See Also
 
-- [static let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
+- [class let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [static let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
+- [class let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [static let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
+- [class let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [static let didEnterBackgroundNotification: NSNotification.Name](wkapplication/didenterbackgroundnotification.md)
+- [class let didEnterBackgroundNotification: NSNotification.Name](wkapplication/didenterbackgroundnotification.md)
   A message indicating that the watchOS app transitioned from the foreground to the background.
 
 

@@ -29,19 +29,8 @@ enum WorkoutGoal
   A goal based on the amount of energy burned during the workout.
 - [case time(Double, UnitDuration)](workoutgoal/time(_:_:).md)
   A goal based on the amount of time that has elapsed during the workout.
-### Comparing workout goals
-- [var hashValue: Int](workoutgoal/hashvalue.md)
-  The hashed value of the workout goal.
-- [func hash(into: inout Hasher)](workoutgoal/hash(into:).md)
-  Hashes the essential components of the workout goal by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](workoutgoal/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two workout goals aren’t equal.
-- [static func == (WorkoutGoal, WorkoutGoal) -> Bool](workoutgoal/==(_:_:).md)
-  Returns a Boolean value that indicates whether two workout goals are equal.
 ### Enumeration Cases
 - [case poolSwimDistanceWithTime(Measurement<UnitLength>, Measurement<UnitDuration>)](workoutgoal/poolswimdistancewithtime(_:_:).md)
-### Default Implementations
-- [Equatable Implementations](workoutgoal/equatable-implementations.md)
 
 ## Relationships
 

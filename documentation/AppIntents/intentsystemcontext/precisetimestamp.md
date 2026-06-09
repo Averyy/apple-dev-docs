@@ -22,7 +22,7 @@ var preciseTimestamp: Date? { get }
 
 #### Discussion
 
-A precise timestamp is available when a person started the app intent’s action using the Action button on Apple Watch Ultra.
+The system records this timestamp when a person starts the app intent’s action using the Action button on Apple Watch Ultra.
 
 
 ---

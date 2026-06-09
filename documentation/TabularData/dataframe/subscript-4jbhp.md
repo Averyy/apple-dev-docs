@@ -1,0 +1,25 @@
+# subscript(_:)
+
+**Framework**: TabularData  
+**Kind**: subscript
+
+Accesses a result column by its typed descriptor.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+subscript<T>(column: ResultColumn<T>) -> Column<T> { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/tabulardata/dataframe/subscript(_:)-4jbhp)*

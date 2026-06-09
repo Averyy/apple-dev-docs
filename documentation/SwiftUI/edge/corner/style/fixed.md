@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-The fixed radius corner style.
+A rounded corner style where the corner’s radius is the value you provide.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,10 @@ The fixed radius corner style.
 ```swift
 static func fixed(_ radius: CGFloat) -> Edge.Corner.Style
 ```
+
+#### Discussion
+
+Provide a value of zero for a square corner.
 
 
 ---

@@ -54,10 +54,13 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
 - [func extracting(some RangeExpression<Int>) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-47z4z.md)
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
-- [func extracting((UnboundedRange_) -> ()) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-4bn8q.md)
+- [func extracting(UnboundedRange) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-4bn8q.md)
   Extracts and returns a copy of the entire buffer.
 - [func extracting(Range<Int>) -> UnsafeBufferPointer<Element>](unsafebufferpointer/extracting(_:)-nivx.md)
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
+- [func isTriviallyIdentical(to: UnsafeBufferPointer<Element>) -> Bool](unsafebufferpointer/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsafebufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafebufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the memory referenced by this buffer to the given type.
 ### Subscripts

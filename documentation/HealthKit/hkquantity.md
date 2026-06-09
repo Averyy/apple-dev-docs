@@ -36,7 +36,7 @@ You can request the value from a quantity object in any compatible units. For ex
 
 ##### Using Quantities
 
-Like many HealthKit classes, the [`HKQuantity`](hkquantity.md) class is not extendible and should not be subclassed. To help promote sharing data between apps, [`HKQuantity`](hkquantity.md) objects use only the units defined by the [`HKUnit`](hkunit.md) class.
+As with many HealthKit classes, don’t subclass the [`HKQuantity`](hkquantity.md) class. To help promote sharing data between apps, [`HKQuantity`](hkquantity.md) objects use only the units defined by the [`HKUnit`](hkunit.md) class.
 
 ## Topics
 

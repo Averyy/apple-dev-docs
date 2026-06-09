@@ -25,6 +25,8 @@ func webViewBackForwardNavigationGestures(_ value: WebView.BackForwardNavigation
   A view that displays some web content.
 - [class WebPage](../WebKit/WebPage.md)
   An object that controls and manages the behavior of interactive web content.
+- [func onWebViewImmersiveEnvironmentRequest(shouldAllow: (WebPage.FrameInfo) async -> Bool, present: (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: (WebPage.ImmersiveEnvironment) async -> Void) -> some View](view/onwebviewimmersiveenvironmentrequest(shouldallow:present:dismiss:).md)
+  Manages the lifecycle of immersive environments requested by websites.
 - [func webViewContentBackground(Visibility) -> some View](view/webviewcontentbackground(_:).md)
   Specifies the visibility of the webpage’s natural background color within this view.
 - [func webViewContextMenu(menu: (WebView.ActivatedElementInfo) -> some View) -> some View](view/webviewcontextmenu(menu:).md)

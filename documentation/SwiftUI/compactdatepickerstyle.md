@@ -15,6 +15,7 @@ A date picker style that displays the components in a compact, textual format.
 ## Declaration
 
 ```swift
+nonisolated
 struct CompactDatePickerStyle
 ```
 

@@ -85,7 +85,41 @@ See [`SRSensor`](srsensor.md) for the complete list.
   The sample photoplethysmogram (PPG) sensor data.
 ### Classes
 - [class SRAcousticSettings](sracousticsettings.md)
+- [class SRHeadphoneSettings](srheadphonesettings.md)
+- [class SRReader](srreader.md)
+  `SRReader` serves as the primary interface for accessing sensor data from various device sensors.
 - [class SRSleepSession](srsleepsession.md)
+- [class SRSourceDevice](srsourcedevice.md)
+### Protocols
+- [protocol SRDataSensor](srdatasensor.md)
+  `SRDataSensor` serves as the foundational protocol for all sensor types, providing type safety and consistency across the SensorKit ecosystem. Each conforming sensor type specifies the kind of data it produces, enabling compile-time verification and type-safe data access patterns.
+### Structures
+- [struct SRAccelerometerSensor](sraccelerometersensor.md)
+- [struct SRAcousticSettingsSensor](sracousticsettingssensor.md)
+- [struct SRAmbientLightSensor](srambientlightsensor.md)
+- [struct SRAmbientPressureSensor](srambientpressuresensor.md)
+- [struct SRDeviceUsageSensor](srdeviceusagesensor.md)
+- [struct SRElectrocardiogramSensor](srelectrocardiogramsensor.md)
+- [struct SRFaceMetricsSensor](srfacemetricssensor.md)
+- [struct SRFetchResponse](srfetchresponse.md)
+  A generic container that holds sensor data samples retrieved from SensorKit data streams.
+- [struct SRHeadphoneMotionSensor](srheadphonemotionsensor.md)
+- [struct SRHeadphoneSettingsSensor](srheadphonesettingssensor.md)
+- [struct SRHeartRateSensor](srheartratesensor.md)
+- [struct SRKeyboardMetricsSensor](srkeyboardmetricssensor.md)
+- [struct SRMediaEventsSensor](srmediaeventssensor.md)
+- [struct SRMessagesUsageSensor](srmessagesusagesensor.md)
+- [struct SROdometerSensor](srodometersensor.md)
+- [struct SROnWristStateSensor](sronwriststatesensor.md)
+- [struct SRPedometerDataSensor](srpedometerdatasensor.md)
+- [struct SRPhoneUsageSensor](srphoneusagesensor.md)
+- [struct SRPhotoplethysmogramSensor](srphotoplethysmogramsensor.md)
+- [struct SRRotationRateSensor](srrotationratesensor.md)
+- [struct SRSiriSpeechMetricsSensor](srsirispeechmetricssensor.md)
+- [struct SRSleepSessionsSensor](srsleepsessionssensor.md)
+- [struct SRTelephonySpeechMetricsSensor](srtelephonyspeechmetricssensor.md)
+- [struct SRVisitsSensor](srvisitssensor.md)
+- [struct SRWristTemperatureSensor](srwristtemperaturesensor.md)
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Returns whether or not the receiver is a record-like descriptor.
+
 **Availability**:
 - macOS 10.11+
 
@@ -11,6 +13,10 @@
 ```swift
 var isRecordDescriptor: Bool { get }
 ```
+
+#### Discussion
+
+Record-like descriptors function as records, but may have a `descriptorType` other than `typeAERecord`, such as `typeObjectSpecifier`.
 
 
 ---

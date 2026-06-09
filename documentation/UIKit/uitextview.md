@@ -22,7 +22,9 @@ class UITextView
 ## Mentions
 
 - [Customizing Writing Tools behavior for UIKit views](customizing-writing-tools-behavior-for-system-views.md)
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
 - [About app development with UIKit](about-app-development-with-uikit.md)
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
 - [Adding Writing Tools support to a custom UIKit view](adding-writing-tools-support-to-a-custom-uiview.md)
 - [Adopting system selection UI in custom text views](adopting-system-selection-ui-in-custom-text-views.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
@@ -31,37 +33,37 @@ class UITextView
 
 #### Overview
 
-[`UITextView`](uitextview.md) supports the display of text using custom style information and also supports text editing. You typically use a text view to display multiple lines of text, such as when displaying the body of a large text document.
+A text view displays multiple lines of text and supports editing, custom styles, and rich formatting. Use it when you need to display or edit a body of text, such as the contents of a document.
 
-This class supports multiple text styles through use of the [`attributedText`](uitextview/attributedtext.md) property. (Styled text isn’t supported in versions of iOS earlier than iOS 6.) Setting a value for this property causes the text view to use the style information provided in the attributed string. You can still use the [`font`](uitextview/font.md), [`textColor`](uitextview/textcolor.md), and [`textAlignment`](uitextview/textalignment.md) properties to set style attributes, but those properties apply to all of the text in the text view. It’s recommended that you use a text view—and not a [`UIWebView`](uiwebview.md) object—to display both plain and rich text in your app.
+For rich text, set the [`attributedText`](uitextview/attributedtext.md) property to provide per-range style information. You can also use [`font`](uitextview/font.md), [`textColor`](uitextview/textcolor.md), and [`textAlignment`](uitextview/textalignment.md) to apply a single style across all text in the view.
 
 ##### Manage the Keyboard
 
-When the user taps in an editable text view, that text view becomes the first responder and automatically asks the system to display the associated keyboard. Because the appearance of the keyboard has the potential to obscure portions of your user interface, it’s up to you to make sure that doesn’t happen by repositioning any views that might be obscured. Some system views, like table views, help you by scrolling the first responder into view automatically. If the first responder is at the bottom of the scrolling region, however, you may still need to resize or reposition the scroll view itself to ensure the first responder is visible.
+When someone taps in an editable text view, it becomes the first responder and the system displays the keyboard. Because the keyboard can obscure parts of your interface, reposition any views that would otherwise be hidden. Some system views, like table views, scroll the first responder into view automatically. If the first responder is at the bottom of the scrolling region, you may still need to resize or reposition the scroll view to keep it visible.
 
-It’s your application’s responsibility to dismiss the keyboard at the time of your choosing. You might dismiss the keyboard in response to a specific user action, such as the user tapping a particular button in your user interface. To dismiss the keyboard, send the [`resignFirstResponder()`](uiresponder/resignfirstresponder().md) message to the text view that’s currently the first responder. Doing so causes the text view object to end the current editing session (with the delegate object’s consent) and hide the keyboard.
+Your app is responsible for dismissing the keyboard. Dismiss it in response to a user action, such as tapping a Done button. To dismiss the keyboard, call [`resignFirstResponder()`](uiresponder/resignfirstresponder().md) on the text view that’s currently the first responder. This ends the editing session and hides the keyboard, with your delegate’s consent.
 
-The appearance of the keyboard itself can be customized using the properties provided by the [`UITextInputTraits`](uitextinputtraits.md) protocol. Text view objects implement this protocol and support the properties it defines. You can use these properties to specify the type of keyboard (ASCII, Numbers, URL, Email, and others) to display. You can also configure the basic text entry behavior of the keyboard, such as whether it supports automatic capitalization and correction of the text.
+To customize the keyboard, use the properties from the [`UITextInputTraits`](uitextinputtraits.md) protocol, which text views implement. You can set the keyboard type (ASCII, Numbers, URL, Email, and others) and configure text entry behavior like autocapitalization and autocorrection.
 
 ##### Keyboard Notifications
 
-When the system shows or hides the keyboard, it posts several keyboard notifications. These notifications contain information about the keyboard, including its size, which you can use for calculations that involve repositioning or resizing views. Registering for these notifications is the only way to get some types of information about the keyboard. The system delivers the following notifications for keyboard-related events:
+When the system shows or hides the keyboard, it posts notifications that include the keyboard’s size and position. Register for these notifications to reposition or resize views as needed:
 
 - [`keyboardWillShowNotification`](uiresponder/keyboardwillshownotification.md)
 - [`keyboardDidShowNotification`](uiresponder/keyboarddidshownotification.md)
 - [`keyboardWillHideNotification`](uiresponder/keyboardwillhidenotification.md)
 - [`keyboardDidHideNotification`](uiresponder/keyboarddidhidenotification.md)
 
-For more information about these notifications, see their descriptions in [`UIWindow`](uiwindow.md).
+For more information about these notifications, see [`UIWindow`](uiwindow.md).
 
 ##### State Preservation
 
-In iOS 6 and later, if you assign a value to this view’s [`restorationIdentifier`](uiview/restorationidentifier.md) property, it preserves the following information:
+If you assign a value to this view’s [`restorationIdentifier`](uiview/restorationidentifier.md) property, the view preserves the following information:
 
-- The selected range of text, as reported by the [`selectedRange`](uitextview/selectedrange.md) property.
+- The selected range of text.
 - The editing state of the text view, as reported by the [`isEditable`](uitextview/iseditable.md) property.
 
-During the next launch cycle, the view attempts to restore these properties to their saved values. If the selection range can’t be applied to the text in the restored view, no text is selected. For more information about how state preservation and restoration works, see [`App Programming Guide for iOS`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
+On the next launch, the view restores these properties. If the saved selection range doesn’t apply to the current text, no text is selected.
 
 For design guidance, see [`Human Interface Guidelines`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/content/text-views/).
 
@@ -162,6 +164,20 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
   The text container object that defines the area where text displays in the text view.
 - [var textStorage: NSTextStorage](uitextview/textstorage.md)
   The text storage object holding the text that displays in the text view.
+### Customizing viewport layout
+- [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](uitextview/viewportbounds(for:).md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls to request the current viewport, which is the view visible bounds plus the overdraw area. Requires a call to super.
+- [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](uitextview/textviewportlayoutcontrollerwilllayout(_:).md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller starts its layout process. Requires a call to super.
+- [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](uitextview/textviewportlayoutcontrollerdidlayout(_:).md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller finishes its layout process. Requires a call to super.
+- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](uitextview/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the text viewport layout controller receives a `setNeedsLayout` call. Requires a call to super.
+### Managing attachment view reuse
+- [func register(UITextAttachmentViewProviderReusePolicy, forTextAttachmentViewProviderType: AnyClass)](uitextview/register(_:fortextattachmentviewprovidertype:).md)
+  Register the UITextAttachmentViewProviderReusePolicy for all instances of a particular subclass of NSTextAttachmentViewProvider.
+- [struct UITextAttachmentViewProviderReusePolicy](uitextattachmentviewproviderreusepolicy.md)
+  An option set that controls whether a text view reuses attachment view providers when scrolling or editing.
 ### Supporting state restoration
 - [var interactionState: Any](uitextview/interactionstate.md)
 ### Structures
@@ -172,6 +188,9 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [var selectedRanges: [NSRange]](uitextview/selectedranges-70g3h.md)
 - [var textFormattingConfiguration: UITextFormattingViewController.Configuration?](uitextview/textformattingconfiguration.md)
   For text views that have flag `allowsEditingTextAttributes` set, this configuration will be used for `UITextFormattingViewController` when its presentation is requested.
+### Instance Methods
+- [func textViewportLayoutController(NSTextViewportLayoutController, configureRenderingSurfaceFor: NSTextLayoutFragment)](uitextview/textviewportlayoutcontroller(_:configurerenderingsurfacefor:).md)
+  `NSTextViewportLayoutControllerDelegate` method that the framework calls when the layout controller lays out a text layout fragment in the UI. Requires a call to super.
 
 ## Relationships
 
@@ -179,6 +198,8 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [UIScrollView](uiscrollview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -188,6 +209,7 @@ For design guidance, see [`Human Interface Guidelines`](https://developer.apple.
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [NSTextViewportLayoutControllerDelegate](nstextviewportlayoutcontrollerdelegate.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

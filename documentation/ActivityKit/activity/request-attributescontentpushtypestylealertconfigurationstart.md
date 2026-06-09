@@ -8,6 +8,7 @@ Requests and schedules a Live Activity for a specific date.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

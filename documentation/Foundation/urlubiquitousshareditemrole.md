@@ -27,7 +27,9 @@ struct URLUbiquitousSharedItemRole
   Creates a shared item role instance from the provided constant string.
 ### Constants
 - [static let owner: URLUbiquitousSharedItemRole](urlubiquitousshareditemrole/owner.md)
+  The values returned for the `NSURLUbiquitousSharedItemCurrentUserRoleKey`. The current user is the owner of this shared item.
 - [static let participant: URLUbiquitousSharedItemRole](urlubiquitousshareditemrole/participant.md)
+  The current user is a participant of this shared item.
 
 ## Relationships
 

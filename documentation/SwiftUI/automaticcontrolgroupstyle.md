@@ -16,6 +16,7 @@ The default control group style.
 ## Declaration
 
 ```swift
+nonisolated
 struct AutomaticControlGroupStyle
 ```
 

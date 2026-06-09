@@ -3,9 +3,10 @@
 **Framework**: ARKit  
 **Kind**: property
 
-Returns the parent space of this ARKit coordinate space.
+The parent space of this ARKit coordinate space.
 
 **Availability**:
+- macOS 27.0+ (Beta)
 - visionOS 26.0+
 
 ## Declaration

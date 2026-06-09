@@ -122,6 +122,10 @@ extension MyCustomType: Transition {
   The properties of a button.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
+- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
+- [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 
 
 ---

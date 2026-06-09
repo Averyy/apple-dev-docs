@@ -63,6 +63,15 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
 ### Configuring audio behavior
 - [var intendedSpatialAudioExperience: any SpatialAudioExperience](avsamplebufferrendersynchronizer/intendedspatialaudioexperience-3z7d3.md)
   The synchronizer’s intended Spatial Audio experience.
+### Instance Methods
+- [func removeReceiver(sending AVSampleBufferAudioRenderer.Receiver, at: CMTime) async -> Bool](avsamplebufferrendersynchronizer/removereceiver(_:at:).md)
+  Removes a receiver and its renderer from the synchronizer.
+- [func removeReceiver(receiver: sending AVSampleBufferVideoRenderer.Receiver, at: CMTime) async -> Bool](avsamplebufferrendersynchronizer/removereceiver(receiver:at:).md)
+  Removes a receiver and its renderer from the synchronizer.
+- [func sampleBufferReceiver(adding: AVSampleBufferAudioRenderer) -> sending AVSampleBufferAudioRenderer.Receiver](avsamplebufferrendersynchronizer/samplebufferreceiver(adding:)-5dw84.md)
+  Adds a renderer to the list of renderers under the synchronizer’s control and returns a sample buffer receiver to enqueue samples.
+- [func sampleBufferReceiver(adding: AVSampleBufferVideoRenderer) -> sending AVSampleBufferVideoRenderer.Receiver](avsamplebufferrendersynchronizer/samplebufferreceiver(adding:)-rxap.md)
+  Adds a renderer to the list of renderers under the synchronizer’s control and returns a sample buffer receiver to enqueue samples.
 
 ## Relationships
 
@@ -75,6 +84,8 @@ This class synchronizes multiple objects that conform to [`AVQueuedSampleBufferR
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

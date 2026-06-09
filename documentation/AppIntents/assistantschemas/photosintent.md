@@ -20,10 +20,6 @@ Assistant schema conformance for app intents that offer photo and video function
 protocol PhotosIntent : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -45,6 +41,7 @@ protocol PhotosIntent : AssistantSchemas.Model
   The app intent conforms to the schema for deleting an asset.
 - [var duplicateAssets: some AssistantSchemas.Intent](assistantschemas/photosintent/duplicateassets.md)
   The app intent conforms to the schema for duplicating an asset.
+- [var editAsset: some AssistantSchemas.Intent](assistantschemas/photosintent/editasset.md)
 - [var openAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/openalbum.md)
   The app intent conforms to the schema for opening an album.
 - [var openAsset: some AssistantSchemas.Intent](assistantschemas/photosintent/openasset.md)
@@ -89,39 +86,6 @@ protocol PhotosIntent : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
-
-## See Also
-
-- [var addAssetsToAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/addassetstoalbum.md)
-  The app intent conforms to the schema for adding an asset to an album.
-- [var cleanupPhoto: some AssistantSchemas.Intent](assistantschemas/photosintent/cleanupphoto.md)
-  The app intent conforms to the schema for undoing edits to an asset.
-- [var copyEdits: some AssistantSchemas.Intent](assistantschemas/photosintent/copyedits.md)
-  The app intent conforms to the schema for copying edits to an asset.
-- [var createAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/createalbum.md)
-  The app intent conforms to the schema for creating an album.
-- [var createAssets: some AssistantSchemas.Intent](assistantschemas/photosintent/createassets.md)
-  The app intent conforms to the schema for creating an asset.
-- [var crop: some AssistantSchemas.Intent](assistantschemas/photosintent/crop.md)
-  The app intent conforms to the schema for cropping an asset.
-- [var deleteAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/deletealbum.md)
-  The app intent conforms to the schema for deleting an album.
-- [var deleteAssets: some AssistantSchemas.Intent](assistantschemas/photosintent/deleteassets.md)
-  The app intent conforms to the schema for deleting an asset.
-- [var duplicateAssets: some AssistantSchemas.Intent](assistantschemas/photosintent/duplicateassets.md)
-  The app intent conforms to the schema for duplicating an asset.
-- [var openAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/openalbum.md)
-  The app intent conforms to the schema for opening an album.
-- [var pasteEdits: some AssistantSchemas.Intent](assistantschemas/photosintent/pasteedits.md)
-  The app intent conforms to the schema for pasting edits to an asset.
-- [var postToSharedAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/posttosharedalbum.md)
-  The app intent conforms to the schema for posting an asset to a shared album.
-- [var removeAssetsFromAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/removeassetsfromalbum.md)
-  The app intent conforms to the schema for removing an asset from an album.
-- [var search: some AssistantSchemas.Intent](assistantschemas/photosintent/search.md)
-  The app intent conforms to the schema for searching the content in the media library.
-- [var setDepth: some AssistantSchemas.Intent](assistantschemas/photosintent/setdepth.md)
-  The app intent conforms to the schema for setting the aperture of an asset.
 
 
 ---

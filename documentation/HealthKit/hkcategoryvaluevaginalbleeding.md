@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: enum
 
+A value that indicates the intensity of vaginal bleeding.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,21 +19,26 @@
 enum HKCategoryValueVaginalBleeding
 ```
 
+#### Overview
+
+Use these values when creating [`HKCategorySample`](hkcategorysample.md) instances for bleeding-related category types, including [`bleedingDuringPregnancy`](hkcategorytypeidentifier/bleedingduringpregnancy.md), [`bleedingAfterMenopause`](hkcategorytypeidentifier/bleedingaftermenopause.md), and other vaginal bleeding types. Each value represents a different intensity level or confirmation of no bleeding.
+
 ## Topics
 
-### Enumeration Cases
-- [HKCategoryValueVaginalBleeding.heavy](hkcategoryvaluevaginalbleeding/heavy.md)
-  Heavy vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.light](hkcategoryvaluevaginalbleeding/light.md)
-  Light vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.medium](hkcategoryvaluevaginalbleeding/medium.md)
-  Medium vaginal bleeding.
-- [HKCategoryValueVaginalBleeding.none](hkcategoryvaluevaginalbleeding/none.md)
-  No vaginal bleeding.
+### Specifiying bleeding intensity values
 - [HKCategoryValueVaginalBleeding.unspecified](hkcategoryvaluevaginalbleeding/unspecified.md)
-  An unspecified amount of vaginal bleeding.
-### Initializers
+  A value that indicates an unspecified amount of vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.light](hkcategoryvaluevaginalbleeding/light.md)
+  A value that indicates light vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.medium](hkcategoryvaluevaginalbleeding/medium.md)
+  A value that indicates a medium amount of vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.heavy](hkcategoryvaluevaginalbleeding/heavy.md)
+  A value that indicates a heavy amount of vaginal bleeding.
+- [HKCategoryValueVaginalBleeding.none](hkcategoryvaluevaginalbleeding/none.md)
+  A value that indicates no vaginal bleeding.
+### Creating a value
 - [init?(rawValue: Int)](hkcategoryvaluevaginalbleeding/init(rawvalue:).md)
+  Initializes a vaginal bleeding value.
 
 ## Relationships
 
@@ -48,25 +55,36 @@ enum HKCategoryValueVaginalBleeding
 
 ## See Also
 
-- [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
-- [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
-- [HKGAD7Assessment.Answer](hkgad7assessment/answer.md)
-- [HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.enum.md)
-- [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
-- [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)
-- [HKStateOfMind.Association](hkstateofmind/association.md)
-- [HKStateOfMind.Kind](hkstateofmind/kind-swift.enum.md)
-- [HKStateOfMind.Label](hkstateofmind/label.md)
-- [HKStateOfMind.ValenceClassification](hkstateofmind/valenceclassification-swift.enum.md)
-- [enum HKWorkoutEffortRelationshipQueryOptions](hkworkouteffortrelationshipqueryoptions.md)
-- [enum HKBiologicalSex](hkbiologicalsex.md)
-  Constants indicating the user’s sex.
-- [enum HKBloodType](hkbloodtype.md)
-  Constants indicating the user’s blood type.
-- [enum HKFitzpatrickSkinType](hkfitzpatrickskintype.md)
-  Categories representing the user’s skin type based on the Fitzpatrick scale.
-- [enum HKWheelchairUse](hkwheelchairuse.md)
-  Constants indicating the user’s wheelchair use.
+- [static let menstrualFlow: HKCategoryTypeIdentifier](hkcategorytypeidentifier/menstrualflow.md)
+  A category sample type that records menstrual cycles.
+- [static let intermenstrualBleeding: HKCategoryTypeIdentifier](hkcategorytypeidentifier/intermenstrualbleeding.md)
+  A category sample type that records spotting outside the normal menstruation period.
+- [static let infrequentMenstrualCycles: HKCategoryTypeIdentifier](hkcategorytypeidentifier/infrequentmenstrualcycles.md)
+  A category sample that indicates an infrequent menstrual cycle.
+- [static let irregularMenstrualCycles: HKCategoryTypeIdentifier](hkcategorytypeidentifier/irregularmenstrualcycles.md)
+  A category sample that indicates an irregular menstrual cycle.
+- [static let persistentIntermenstrualBleeding: HKCategoryTypeIdentifier](hkcategorytypeidentifier/persistentintermenstrualbleeding.md)
+  A category sample that indicates persistent intermenstrual bleeding.
+- [static let prolongedMenstrualPeriods: HKCategoryTypeIdentifier](hkcategorytypeidentifier/prolongedmenstrualperiods.md)
+  A category sample that indicates a prolonged menstrual cycle.
+- [static let basalBodyTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/basalbodytemperature.md)
+  A quantity sample type that records the user’s basal body temperature.
+- [static let cervicalMucusQuality: HKCategoryTypeIdentifier](hkcategorytypeidentifier/cervicalmucusquality.md)
+  A category sample type that records the quality of the user’s cervical mucus.
+- [static let ovulationTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/ovulationtestresult.md)
+  A category sample type that records the result of an ovulation home test.
+- [static let progesteroneTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/progesteronetestresult.md)
+  A category type that represents the results from a home progesterone test.
+- [static let sexualActivity: HKCategoryTypeIdentifier](hkcategorytypeidentifier/sexualactivity.md)
+  A category sample type that records sexual activity.
+- [static let contraceptive: HKCategoryTypeIdentifier](hkcategorytypeidentifier/contraceptive.md)
+  A category sample type that records the use of contraceptives.
+- [static let pregnancy: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pregnancy.md)
+  A category type that records pregnancy.
+- [static let pregnancyTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pregnancytestresult.md)
+  A category type that represents the results from a home pregnancy test.
+- [static let lactation: HKCategoryTypeIdentifier](hkcategorytypeidentifier/lactation.md)
+  A category type that records lactation.
 
 
 ---

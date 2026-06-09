@@ -16,6 +16,7 @@ object SubscriptionSubmissionCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionSubmissionCreateRequest.Data.Relationships.Subscription.Data](subscriptionsubmissioncreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription submission.
 
 ## Properties
 

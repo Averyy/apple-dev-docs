@@ -10,8 +10,6 @@ The return-to-service response details.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,7 +29,7 @@ object ReturnToServiceResponse
 
 ## Properties
 
-- `PreserveDataPlan` (boolean): If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists. This value is available in iOS 26.4 and later.
+- `PreserveDataPlan` (boolean): If `true`, the device preserves the data plan on an iPhone or iPad with eSIM functionality, if one exists. Available: iOS 26.4+ | iPadOS 26.4+
 - `ReturnToService` (ReturnToServiceResponse.ReturnToService) *(required)*: A dictionary containing the configuration for return to service.
 
 ## See Also

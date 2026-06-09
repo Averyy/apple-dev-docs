@@ -53,6 +53,9 @@ A canvas view conforms to the [`PKToolPickerObserver`](pktoolpickerobserver.md) 
 ### Getting the captured data
 - [var drawing: PKDrawing](pkcanvasview/drawing.md)
   The data object that the canvas uses to store drawn content.
+### Managing stroke selection
+- [var selection: Set<UUID>](pkcanvasview/selection.md)
+  The identifiers of the strokes selected on the canvas.
 ### Supporting PencilKit versions
 - [var maximumSupportedContentVersion: PKContentVersion](pkcanvasview/maximumsupportedcontentversion.md)
   The maximum version of PencilKit to support.
@@ -65,6 +68,8 @@ A canvas view conforms to the [`PKToolPickerObserver`](pktoolpickerobserver.md) 
 - [UIScrollView](../UIKit/UIScrollView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
@@ -100,6 +105,8 @@ A canvas view conforms to the [`PKToolPickerObserver`](pktoolpickerobserver.md) 
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [struct PKDrawing](pkdrawing-swift.struct.md)
   A structure representing the drawing information captured by a canvas view.
 - [struct PKStroke](pkstroke-swift.struct.md)

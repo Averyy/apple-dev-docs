@@ -18,7 +18,7 @@ Creates a navigation link that presents a destination view when a bound selectio
 
 ```swift
 nonisolated
-init<S, V>(_ title: S, tag: V, selection: Binding<V?>, @ViewBuilder destination: () -> Destination) where S : StringProtocol, V : Hashable
+init<S, V>(_ title: S, tag: V, selection: Binding<V?>, @ContentBuilder destination: () -> Destination) where S : StringProtocol, V : Hashable
 ```
 
 ## Parameters

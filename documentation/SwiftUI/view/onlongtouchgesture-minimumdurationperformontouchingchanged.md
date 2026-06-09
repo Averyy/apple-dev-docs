@@ -25,6 +25,8 @@ func onLongTouchGesture(minimumDuration: Double = 0.5, perform action: @escaping
 
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
+  Adds an action to perform when this view recognizes a long press gesture.
 - [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
 - [struct LongPressGesture](longpressgesture.md)

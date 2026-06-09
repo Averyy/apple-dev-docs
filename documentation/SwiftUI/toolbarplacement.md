@@ -22,7 +22,7 @@ struct ToolbarPlacement
 
 #### Overview
 
-Use this type in conjunction with modifiers like [`toolbarBackground(_:for:)`](view/toolbarbackground(_:for:).md) and [`toolbar(_:for:)`](view/toolbar(_:for:).md) to customize the appearance of different bars managed by SwiftUI. Not all bars support all types of customizations.
+Use this type in conjunction with modifiers like [`toolbarBackground(_:for:)`](view/toolbarbackground(_:for:).md) and [`toolbarVisibility(_:for:)`](view/toolbarvisibility(_:for:).md) to customize the appearance of different bars managed by SwiftUI. Not all bars support all types of customizations.
 
 See [`ToolbarItemPlacement`](toolbaritemplacement.md) to learn about the different regions of these toolbars that you can place your own controls into.
 
@@ -46,6 +46,9 @@ See [`ToolbarItemPlacement`](toolbaritemplacement.md) to learn about the differe
 ### Deprecated symbols
 - [init<ID>(id: ID)](toolbarplacement/init(id:).md)
   Creates a custom accessory bar placement.
+### Type Properties
+- [static var statusBar: ToolbarPlacement](toolbarplacement/statusbar.md)
+  The system status bar.
 
 ## See Also
 

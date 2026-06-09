@@ -9,7 +9,6 @@ The unique identifier of the electrical load event.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -19,10 +18,12 @@ let id: UUID
 
 ## See Also
 
-- [let session: ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.property.md)
-  The session information.
 - [let timestamp: Date](electricvehicleloadevent/timestamp.md)
   The timestamp for when the event occurred.
+- [let session: ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.property.md)
+  The session information.
+- [ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.struct.md)
+  A session that tracks the event.
 
 
 ---

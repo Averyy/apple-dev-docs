@@ -46,6 +46,8 @@ Each storage device instance corresponds to a physical external storage device w
   The total amount of storage space, in bytes, that’s available on the external storage device.
 - [var isNotRecommendedForCaptureUse: Bool](avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
   A Boolean value that indicates whether the external storage device is suitable for camera capture.
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
 
 ## Relationships
 

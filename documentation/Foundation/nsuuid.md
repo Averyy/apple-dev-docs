@@ -52,6 +52,7 @@ The `NSUUID` class is *not* toll-free bridged with CoreFoundation’s [`CFUUID`]
 - [init?(coder: NSCoder)](nsuuid/init(coder:).md)
 ### Instance Methods
 - [func compare(UUID) -> ComparisonResult](nsuuid/compare(_:).md)
+  Compares the receiver to another NSUUID in constant time.
 
 ## Relationships
 

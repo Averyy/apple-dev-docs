@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The current user is allowed to both read and write this item.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
@@ -19,6 +21,7 @@ static let readWrite: URLUbiquitousSharedItemPermissions
 ## See Also
 
 - [static let readOnly: URLUbiquitousSharedItemPermissions](urlubiquitousshareditempermissions/readonly.md)
+  The values returned for the `NSURLUbiquitousSharedItemCurrentUserPermissionsKey`. The current user is only allowed to read this item.
 
 
 ---

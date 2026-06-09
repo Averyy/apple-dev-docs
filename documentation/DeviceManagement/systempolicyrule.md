@@ -7,8 +7,6 @@ The payload that configures the system policy.
 
 **Availability**:
 - macOS 10.8+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,11 +27,11 @@ This payload can only exist in a device profile. If the payload is present in a 
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example

@@ -10,8 +10,6 @@ Gets the return-to-service configuration from the server.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -26,9 +24,9 @@ The device sends the `ReturnToService` message when the user triggers a return t
 |  |  |
 | --- | --- |
 | Device channel | iOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, visionOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 
 ## Topics
 
@@ -40,7 +38,7 @@ The device sends the `ReturnToService` message when the user triggers a return t
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#ReturnToServiceRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

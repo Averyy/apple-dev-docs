@@ -11,7 +11,7 @@ A DOM point with the coordinate of the event on the page.
 ## Declaration
 
 ```swift
-readonly pointOnPage?: DOMPoint | undefined;
+readonly pointOnPage: DOMPoint;
 ```
 
 #### Discussion

@@ -26,6 +26,12 @@ The comparator uses the relevant type’s [`Comparable`](https://developer.apple
 
 ## Topics
 
+### Using a Comparator
+- [func compare(Compared, Compared) -> ComparisonResult](comparablecomparator/compare(_:_:).md)
+  Provides the relative ordering of two elements.
+### Inspecting a Comparator
+- [var order: SortOrder](comparablecomparator/order.md)
+  The sort order that the comparator uses to compare.
 ### Initializers
 - [init(order: SortOrder)](comparablecomparator/init(order:).md)
 

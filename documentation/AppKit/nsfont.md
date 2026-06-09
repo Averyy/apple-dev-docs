@@ -159,6 +159,8 @@ You don’t create [`NSFont`](nsfont.md) objects using the `alloc` and `init` me
 - [func withSize(CGFloat) -> NSFont](nsfont/withsize(_:).md)
 ### Type Methods
 - [class func systemFont(ofSize: CGFloat, weight: NSFont.Weight, width: NSFont.Width) -> NSFont](nsfont/systemfont(ofsize:weight:width:).md)
+### Structures
+- [NSFont.FontSetChangedMessage](nsfont/fontsetchangedmessage.md)
 ### Initializers
 - [init?(coder: NSCoder)](nsfont/init(coder:).md)
 

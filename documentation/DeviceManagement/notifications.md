@@ -10,8 +10,6 @@ The payload that configures notifications.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,8 +29,8 @@ Specify `com.apple.notificationsettings` as the payload type.
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS |
 | Requires supervision | iOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example

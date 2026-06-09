@@ -16,6 +16,7 @@ object AppPriceSchedule.Relationships.AutomaticPrices
 
 ### Objects
 - [object AppPriceSchedule.Relationships.AutomaticPrices.Data](apppriceschedule/relationships-data.dictionary/automaticprices-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app price schedule.
 
 ## Properties
 

@@ -216,7 +216,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6448250830/metrics/betaTesterUsage
 
 ## Parameters
 
-- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the betaTester resource ID from the [`List Beta Testers`](get-v1-betatesters.md) response.
+- `filter[betaTesters]` (string): An opaque resource ID that uniquely identifies the resource. Obtain the betaTester resource ID from the [`List beta testers`](get-v1-betatesters.md) response.
 - `groupBy` ([string])
 - `limit` (integer)
 - `period` (string): - **`P7D`**: 7 days

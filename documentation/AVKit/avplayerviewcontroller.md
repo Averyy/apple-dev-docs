@@ -115,6 +115,8 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   The experience controller for this view controller.
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
+- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [class AVViewport](avviewport.md)
 ### Presenting the visionOS trimming UI
 - [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.
@@ -153,6 +155,7 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   An array of language codes that restrict the set of subtitle languages available to the user.
 - [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
   A Boolean value that indicates whether the user can disable the display of subtitles.
+- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 ### Preventing navigation
 - [var requiresLinearPlayback: Bool](avplayerviewcontroller/requireslinearplayback.md)
   A Boolean value that determines whether the player allows the user to skip media content.
@@ -188,8 +191,6 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   Describes how High Dynamic Range (HDR) video content renders.
 - [enum AVDisplayDynamicRange](avdisplaydynamicrange.md)
   Describes how High Dynamic Range (HDR) video content renders.
-### Type Properties
-- [class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaCharacteristic]](avplayerviewcontroller/mediacharacteristicsforsupportedcustommediaselectionschemes.md)
 
 ## Relationships
 
@@ -232,6 +233,8 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
   A sound object for a capture event.
 - [class AVInputPickerInteraction](avinputpickerinteraction.md)
   Use `AVInputPickerInteraction` to present an input picker.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

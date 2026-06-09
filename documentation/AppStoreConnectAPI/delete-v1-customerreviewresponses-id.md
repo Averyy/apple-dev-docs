@@ -1,4 +1,4 @@
-# Delete a Response to a Customer Review
+# Delete a response to a customer review
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,7 +22,7 @@ Deletions of responses don’t take effect instantly in the App Store. Allow som
 
 ## See Also
 
-- [Create or Update a Response to a Customer Review](post-v1-customerreviewresponses.md)
+- [Create or update a response to a customer review](post-v1-customerreviewresponses.md)
   Create a response or replace an existing response you wrote to a customer review.
 
 

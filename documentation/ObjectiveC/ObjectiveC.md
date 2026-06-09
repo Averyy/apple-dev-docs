@@ -41,6 +41,9 @@ You typically don’t need to use this module directly.
 - [Objective-C Data Types](objective-c-data-types.md)
 - [Objective-C Macros](objective-c-macros.md)
 - [Objective-C Enumerations](objective-c-enums.md)
+### Functions
+- [func objc_copyImageHeaders(UnsafeMutablePointer<UInt32>?) -> UnsafeMutablePointer<OpaquePointer>](objc_copyimageheaders(_:).md)
+  Returns the Mach headers of all the images loaded into the current process that contain Objective-C or Swift code.
 
 
 ---

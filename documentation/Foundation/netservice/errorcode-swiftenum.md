@@ -40,6 +40,7 @@ enum ErrorCode
   The net service has timed out.
 ### Enumeration Cases
 - [NetService.ErrorCode.missingRequiredConfigurationError](netservice/errorcode-swift.enum/missingrequiredconfigurationerror.md)
+  Missing required configuration for local network access.
 ### Initializers
 - [init?(rawValue: Int)](netservice/errorcode-swift.enum/init(rawvalue:).md)
 

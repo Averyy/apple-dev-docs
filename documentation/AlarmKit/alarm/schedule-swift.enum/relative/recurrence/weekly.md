@@ -8,6 +8,7 @@ An alarm that repeats weekly, on the specified day.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

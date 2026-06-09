@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A style for formatting decimal values.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,10 @@
 ```swift
 static var number: Decimal.FormatStyle { get }
 ```
+
+#### Discussion
+
+Use this type property when the call point allows the use of [`Decimal.FormatStyle`](decimal/formatstyle.md). You typically do this when calling the [`formatted(_:)`](decimal/formatted(_:).md) method of [`Decimal`](decimal.md).
 
 
 ---

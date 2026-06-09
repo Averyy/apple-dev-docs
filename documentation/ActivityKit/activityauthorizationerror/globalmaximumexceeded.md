@@ -8,6 +8,7 @@ The device reached the maximum number of ongoing Live Activities.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

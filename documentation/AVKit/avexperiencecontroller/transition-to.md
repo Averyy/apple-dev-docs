@@ -29,6 +29,13 @@ You determine the success of a transition by evaluating the [`AVExperienceContro
 
 - `toExperience`: The experience to transition to.
 
+## See Also
+
+- [AVExperienceController.TransitionGroup](avexperiencecontroller/transitiongroup.md)
+  A group of experience transitions that prepare concurrently and run simultaneously as a single visual transition.
+- [static func withTransitionGroup<ChildTransitionResult>(body: (inout AVExperienceController.TransitionGroup<ChildTransitionResult>) async -> Void) async -> [ChildTransitionResult]](avexperiencecontroller/withtransitiongroup(body:).md)
+  Coordinates multiple experience transitions to perform together as a single visual transition.
+
 
 ---
 

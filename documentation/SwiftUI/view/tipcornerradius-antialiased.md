@@ -25,8 +25,16 @@ func tipCornerRadius(_ cornerRadius: CGFloat, antialiased: Bool = true) -> some 
 
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedge:action:).md)
+  Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdges: Edge.Set, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedges:action:).md)
+  Presents a popover tip on the modified view.
+- [func tipAnchor<AnchorID>(AnchorID) -> some View](view/tipanchor(_:).md)
+  Sets a value for the specified tip anchor to be used to anchor a tip view to the `.bounds` of the view.
 - [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
-  Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
+  Sets the tip’s view background to a style.
+- [func tipBackgroundInteraction(PresentationBackgroundInteraction) -> some View](view/tipbackgroundinteraction(_:).md)
+  Controls whether people can interact with the view behind a presented tip.
 - [func tipImageSize(CGSize) -> some View](view/tipimagesize(_:).md)
   Sets the size for a tip’s image.
 - [func tipViewStyle(some TipViewStyle) -> some View](view/tipviewstyle(_:).md)

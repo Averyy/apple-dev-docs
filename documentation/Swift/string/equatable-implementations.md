@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](string/!=(_:_:)-1bb05.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](string/!=(_:_:)-9vqnx.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (String, String) -> Bool](string/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

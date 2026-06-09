@@ -3,7 +3,7 @@
 **Framework**: Observation  
 **Kind**: struct
 
-An asychronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
+An asynchronous sequence generated from a closure that tracks the transactional changes of `@Observable` types.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ struct Observations<Element, Failure> where Element : Sendable, Failure : Error
 
 #### Overview
 
-`Observations` conforms to `AsyncSequence`, providing a intutive and safe mechanism to track changes to types that are marked as `@Observable` by using Swift Concurrency to indicate transactional boundaries starting from the willSet of the first mutation to the next suspension point of the safe access.
+`Observations` conforms to `AsyncSequence`, providing an intuitive and safe mechanism to track changes to types that are marked as `@Observable` by using Swift Concurrency to indicate transactional boundaries starting from the willSet of the first mutation to the next suspension point of the safe access.
 
 ## Topics
 

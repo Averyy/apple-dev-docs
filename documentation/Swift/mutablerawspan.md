@@ -31,7 +31,7 @@ struct MutableRawSpan
 ### Instance Methods
 - [func extracting(Range<Int>) -> MutableRawSpan](mutablerawspan/extracting(_:)-18k75.md)
 - [func extracting(some RangeExpression<Int>) -> MutableRawSpan](mutablerawspan/extracting(_:)-6fpo6.md)
-- [func extracting((UnboundedRange_) -> ()) -> MutableRawSpan](mutablerawspan/extracting(_:)-7d5f1.md)
+- [func extracting(UnboundedRange) -> MutableRawSpan](mutablerawspan/extracting(_:)-7d5f1.md)
 - [func extracting(droppingFirst: Int) -> MutableRawSpan](mutablerawspan/extracting(droppingfirst:).md)
 - [func extracting(droppingLast: Int) -> MutableRawSpan](mutablerawspan/extracting(droppinglast:).md)
 - [func extracting(first: Int) -> MutableRawSpan](mutablerawspan/extracting(first:).md)
@@ -48,12 +48,17 @@ struct MutableRawSpan
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](mutablerawspan/unsafeloadunaligned(fromuncheckedbyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](mutablerawspan/withbytes(_:).md)
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablerawspan/withunsafebytes(_:).md)
 - [func withUnsafeMutableBytes<E, Result>((UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablerawspan/withunsafemutablebytes(_:).md)
+### Default Implementations
+- [BorrowingSequence Implementations](mutablerawspan/borrowingsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [BorrowingSequence](borrowingsequence.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

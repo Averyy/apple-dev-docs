@@ -65,8 +65,14 @@ The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an erro
   The framework can’t find the device.
 - [static var usbControllerNotFound: VZError.Code](vzerror/usbcontrollernotfound.md)
   The framework can’t find the controller.
+- [static var efiSecureBootEnrollmentFailed: VZError.Code](vzerror/efisecurebootenrollmentfailed.md)
+- [static var efiVariableInaccessible: VZError.Code](vzerror/efivariableinaccessible.md)
+- [static var guestProvisioningInvalidFullName: VZError.Code](vzerror/guestprovisioninginvalidfullname.md)
+- [static var guestProvisioningInvalidPassword: VZError.Code](vzerror/guestprovisioninginvalidpassword.md)
+- [static var guestProvisioningInvalidUsername: VZError.Code](vzerror/guestprovisioninginvalidusername.md)
 - [VZError.Code](vzerror/code.md)
   Errors you might encounter when configuring or using a virtual machine.
+- [static var errorDomain: String](vzerror/errordomain.md)
 ### Accessing the error information
 - [static var virtualMachineLimitExceeded: VZError.Code](vzerror/virtualmachinelimitexceeded.md)
   Returns an error code that indicates whether the system exceeded the limit on the number of running virtual machines.
@@ -75,8 +81,6 @@ The domain for these errors is [`VZErrorDomain`](vzerrordomain.md). When an erro
   Returns a value that indicates the connection state of the network block device.
 - [static var networkBlockDeviceNegotiationFailed: VZError.Code](vzerror/networkblockdevicenegotiationfailed.md)
   Returns a value that indicates whether the network block device negotiation failed.
-### Type Properties
-- [static var errorDomain: String](vzerror/errordomain.md)
 
 ## Relationships
 

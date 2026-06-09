@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale to use when formatting items in the list.
+Modifies the list format style to use the specified locale.
 
 **Availability**:
 - iOS 15.0+
@@ -17,16 +17,16 @@ The locale to use when formatting items in the list.
 ## Declaration
 
 ```swift
-var locale: Locale
+func locale(_ locale: Locale) -> ListFormatStyle<Style, Base>
 ```
 
-#### Discussion
+#### Return Value
 
-A [`Locale`](locale.md) instance is typically used to provide, format, and interpret information about and according to the user’s customs and preferences.
+A list format style with the provided locale.
 
-Examples include ISO region and language codes, currency code, calendar, system of measurement, and decimal separator.
+## Parameters
 
-The default value is [`autoupdatingCurrent`](locale/autoupdatingcurrent.md). If you set this property to `nil`, the formatter resets to using `autoupdatingCurrent`.
+- `locale`: The locale to use when formatting items in the list.
 
 ## See Also
 
@@ -38,8 +38,10 @@ The default value is [`autoupdatingCurrent`](locale/autoupdatingcurrent.md). If 
   The type of the list.
 - [ListFormatStyle.ListType](listformatstyle/listtype-swift.enum.md)
   A type that describes whether the returned list contains cumulative or alternative elements.
+- [var locale: Locale](listformatstyle/locale.md)
+  The locale to use when formatting items in the list.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/listformatstyle/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/listformatstyle/locale(_:))*

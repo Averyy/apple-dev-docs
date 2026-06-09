@@ -3,7 +3,7 @@
 **Framework**: Compression  
 **Kind**: module
 
-Leverage common compression algorithms for lossless data compression.
+Leverage compression algorithms for lossless data compression.
 
 **Availability**:
 - iOS 9.0+

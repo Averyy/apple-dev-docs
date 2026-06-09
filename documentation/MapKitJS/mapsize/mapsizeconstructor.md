@@ -29,6 +29,11 @@ const height = mapSize.height; // 0.4
 - `width`: The distance in map units along the east-west axis of the map projection.
 - `height`: The distance in map units along the north-south axis of the map projection.
 
+## See Also
+
+- [interface MapSizeData](mapsizedata.md)
+  A plain object representation of dimensions in map units.
+
 
 ---
 

@@ -16,6 +16,7 @@ object InAppPurchaseV2.Relationships.AppStoreReviewScreenshot
 
 ### Objects
 - [object InAppPurchaseV2.Relationships.AppStoreReviewScreenshot.Data](inapppurchasev2/relationships-data.dictionary/appstorereviewscreenshot-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an in-app purchase v2.
 
 ## Properties
 

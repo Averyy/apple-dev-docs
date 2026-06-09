@@ -113,6 +113,8 @@ Prefer CryptoKit over lower-level interfaces. CryptoKit frees your app from mana
   A type that represents the public key in HPKE
 - [protocol HPKEPublicKeySerialization](hpkepublickeyserialization.md)
   A type that [`HPKE`](hpke.md) uses to encode the public key.
+- [protocol KEMOneTimePrivateKey](kemonetimeprivatekey.md)
+  A one-time private key for a key encapsulation mechanism, which can only decapsulate once but it does so faster.
 ### Structures
 - [struct CorecryptoCurveType](corecryptocurvetype.md)
 - [struct SHA3_256](sha3_256.md)

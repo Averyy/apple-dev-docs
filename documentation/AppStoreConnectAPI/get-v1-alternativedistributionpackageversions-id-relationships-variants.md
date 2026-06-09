@@ -1,4 +1,4 @@
-# List Variant IDs Information
+# List variant ids information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ List variant Ids for specific alternative distribution package version.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of alternative distribution package variant resource identifiers to return.
 
 ## See Also
 
@@ -26,9 +26,9 @@ List variant Ids for specific alternative distribution package version.
   List deltas for a specific alternative distribution package version.
 - [List Variants Information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
-- [List Delta IDs](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+- [List delta ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
   List all delta Ids for a specific alternative distribution package version.
-- [Read Version IDs for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
+- [Read version ids for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
   Get version IDs about a specific alternative distribution package.
 
 

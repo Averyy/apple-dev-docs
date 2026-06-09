@@ -1,0 +1,69 @@
+# Text display
+
+**Framework**: Technology Overviews
+
+Display localized text from your app’s interface, and discover how to lay out and render text yourself.
+
+Words are a powerful communication tool and have multiple roles within apps. Whether you display words in your interface, or capture someone else’s words as data or input, the presentation of text involves the collaboration of several different types:
+
+- Strings are data objects that store the characters you want to display. Some string types also store data about how to format individual characters.
+- Fonts provide the visual appearance of text. The font family defines the shape of characters, while size and style values change the dimensions or appearance of those shapes.
+- Views display strings using the font information you provide. Views use layout objects to help calculate the position of individual characters based on their font and the available space.
+
+#### Manage Text As String Data
+
+Store text in your app using the provided [`String`](https://developer.apple.com/documentation/Swift/String) type, which is Unicode-correct, efficient, and suitable for managing text of any length or in any language. The type is also interchangeable with the [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) type common in Objective-C interfaces, so you can use it in both Swift and Objective-C code.
+
+When you need to manage text and style information together, store that text in an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) type instead of a regular string. Attributed strings are also strings, but they allow you to apply font, style, and other visual and nonvisual characteristics to the characters of that string. For example, you can store a URL with a range of characters and use it to create a link during rendering. You can apply attributes to the entire string, to a subset of characters, or to a single character.
+
+> **Note**: If you build a custom text view using TextKit for [`TextKit`](https://developer.apple.com/documentation/UIKit/textkit) or [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit), you also use the [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) and [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString) types to manage text.
+
+#### Choose the Fonts for Your Text
+
+The [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography#Using-system-fonts) on Apple platforms is a great choice for text because it’s always present and supports an extensive range of weights, sizes, and languages. The system font also adapts readly to support [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography#Supporting-Dynamic-Type) and [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility) features. You can also choose from a variety of other fonts available on the system or use a [`Applying custom fonts to text`](https://developer.apple.com/documentation/SwiftUI/Applying-Custom-Fonts-to-Text) that you provide.
+
+When specifying the system font, choose from the predefined text styles as much as possible. Text styles are preconfigured versions of the font that impart specific meaning to your text. For example, apply the [`title`](https://developer.apple.com/documentation/SwiftUI/Font/title) text style to section titles that need a bigger font to make them stand out from the surrounding [`body`](https://developer.apple.com/documentation/SwiftUI/Font/body) text. Create fonts with text styles using predefined constants for [`Font`](https://developer.apple.com/documentation/SwiftUI/Font), [`UIFont.TextStyle`](https://developer.apple.com/documentation/UIKit/UIFont/TextStyle), and [`NSFont.TextStyle`](https://developer.apple.com/documentation/AppKit/NSFont/TextStyle). Font characteristics for each text style can differ from one Apple platform to another.
+
+![A screenshot showing text on an iPhone in several different styles, including a large title, a title, body text, and a subtitle.](https://docs-assets.developer.apple.com/published/40b979f08d21d9d667c179e0f2ee806f/typography-text-hierarchy-levels%402x.png)
+
+Typically, you choose the fonts you use in your interface, but a word processor or text-creation app might want to give someone the option to select the fonts for their content. [`UIFontPickerViewController`](https://developer.apple.com/documentation/UIKit/UIFontPickerViewController) and [`NSFontPanel`](https://developer.apple.com/documentation/AppKit/NSFontPanel) provide a font picker interface, which displays the available fonts and reports selections back to your app. Present this interface from appropriate places in your app when you want someone to choose a font for their content.
+
+#### Display Text in Your Interface
+
+Display text in your interface using the standard text views that [`Text input and output`](https://developer.apple.com/documentation/SwiftUI/Text-input-and-output), [`Text display and fonts`](https://developer.apple.com/documentation/UIKit/text-display-and-fonts), and [`Text Display`](https://developer.apple.com/documentation/AppKit/text-display) provide. Standard text views render the text you specify in a consistent and efficient way. They also adapt automatically to [`Dark Mode`](https://developer.apple.com/design/Human-Interface-Guidelines/dark-mode), [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography#Supporting-Dynamic-Type), [`Accessibility`](https://developer.apple.com/design/Human-Interface-Guidelines/accessibility), and other system settings so you don’t have to handle those changes yourself.
+
+When you add text to one of the standard text views, the view displays that text using the [`Typography`](https://developer.apple.com/design/Human-Interface-Guidelines/typography#Using-system-fonts) by default. For labels and text fields, you typically use the same font for the entire string. For text views, you you can specify multiple fonts using an attributed string or continue to use a single font for all of the text.
+
+Each app-builder framework defines how you apply fonts to your text:
+
+- In SwiftUI, you [`Applying custom fonts to text`](https://developer.apple.com/documentation/SwiftUI/Applying-Custom-Fonts-to-Text) to standard text views using a [`Text input and output`](https://developer.apple.com/documentation/SwiftUI/Text-input-and-output#Setting-a-font). Choose a predefined [`Font`](https://developer.apple.com/documentation/SwiftUI/Font) type for the text style you want, or create a custom instance with your preferred font information.
+- In UIKit, you apply fonts to the standard text views using the methods and properties of those views. Retrieve predefined instances of the [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont#Creating-System-Fonts) or [`UIFont.TextStyle`](https://developer.apple.com/documentation/UIKit/UIFont/TextStyle) from the [`UIFont`](https://developer.apple.com/documentation/UIKit/UIFont) type, or create custom fonts using the initializers of that type. You can also collect the font attributes you want in a [`UIFontDescriptor`](https://developer.apple.com/documentation/UIKit/UIFontDescriptor) type, and use that type to create a font object.
+- In AppKit, you apply fonts to the standard text views using the methods and properties of those views. Retrieve predefined instances of the [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont#Creating-System-Fonts) from the [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont) type. You can also retrieve fonts meant for specific types of [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont#Creating-UI-Element-Fonts), or create custom font objects from [`NSFont`](https://developer.apple.com/documentation/AppKit/NSFont#Creating-Arbitrary-Fonts).
+
+When you need more control over the placement of text in your view, [`Build a custom text view`](text-display#Build-a-custom-text-view.md) using TextKit for [`TextKit`](https://developer.apple.com/documentation/UIKit/textkit) or [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit). TextKit provides the types you need to lay out and render text efficiently, and in a way that’s compatible with the [`App design and UI`](app-design-and-ui.md).
+
+#### Prepare Your Text for Translation
+
+If you’re planning to support multiple languages, [`Supporting multiple languages in your app`](https://developer.apple.com/documentation/Xcode/supporting-multiple-languages-in-your-app) your code to make it ready to handle different languages. During this process, identify the [`Preparing your app’s text for translation`](https://developer.apple.com/documentation/Xcode/preparing-your-apps-text-for-translation) and other content that require translation and look for places where you use [`Preparing dates, currencies, and numbers for translation`](https://developer.apple.com/documentation/Xcode/preparing-dates-numbers-with-formatters), images, and other content that might change after translation. Update your code to create this information in a localization-friendly way.
+
+[`Localizing and varying text with a string catalog`](https://developer.apple.com/documentation/Xcode/localizing-and-varying-text-with-a-string-catalog) offer a modern way to manage localizable string resources in your app. A string catalog keeps all of your translations in one place, and gives you ways to customize translations based on grammatical differences. For example, a string that contains a number can have different translations when the number indicates zero, one, or more than one item. You can also specify per-device translations to adjust text for different device sizes.
+
+Xcode automatically collects properly marked strings in your code and places them in string catalogs. In SwiftUI, the view initializers always mark text as localizable and add them to your string catalogs. To add other strings, use a [`String`](https://developer.apple.com/documentation/Swift/String) initializer that takes a localized value, as shown in the following example:
+
+```swift
+myLabel.string = String(localized: "There are \(peopleInChat) people in this chat.",
+              comment: "Label indicating number of chat participants.")
+```
+
+All string types store text as Unicode characters and support both left-to-right and right-to-left languages. If you support bidirectional text, make sure the rest of your text [`Get it right (to left)`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10107) correctly. For example, use [`RangeSet`](https://developer.apple.com/documentation/Swift/RangeSet) to correctly manage text selections with bidirectional text.
+
+> **Note**: Translate only the strings and data that appear in your interface. Don’t translate strings you use internally to manage your data. For example, don’t translate key names you use to identify data in a custom file format.
+
+#### Build a Custom Text View
+
+If you need more control over the placement and display of text than the standard text views offer, create a custom view with [`Meet TextKit 2`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10061) for [`TextKit`](https://developer.apple.com/documentation/UIKit/textkit) or [`TextKit`](https://developer.apple.com/documentation/AppKit/textkit). Use this approach if you’re building a word processor or similarly advanced app that requires sophisticated text handling. TextKit gives you the types you need to manage and lay out text precisely in your custom view. It also integrates with other system features, like [`Dive deeper into Writing Tools`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/265), so you can incorporate those features into your own text-based code.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/technologyoverviews/text-display)*

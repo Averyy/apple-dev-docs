@@ -18,6 +18,15 @@ case immersive
 
 It is valid to transition to `immersive` even when the `AVPlayerViewController` is not in the view hiearchy. In this case, a Placement must be specified through the Configuration object. If no placement is specified, the transition result will be `.reversed`.
 
+## See Also
+
+- [AVExperienceController.Experience.embedded](avexperiencecontroller/experience-swift.enum/embedded.md)
+  An experience where the video embeds within its original container.
+- [AVExperienceController.Experience.expanded](avexperiencecontroller/experience-swift.enum/expanded.md)
+  An experience where the system places the video outside of its original container.
+- [AVExperienceController.Experience.multiview](avexperiencecontroller/experience-swift.enum/multiview.md)
+  An experience where multiple videos play together.
+
 
 ---
 

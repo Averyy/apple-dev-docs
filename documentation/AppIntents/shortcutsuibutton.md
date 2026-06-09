@@ -40,7 +40,10 @@ You can add additional targets to observe when the button is tapped.
 ### Inherits From
 - [UIButton](../UIKit/UIButton.md)
 ### Conforms To
+- [AppEntityAnnotatable](appentityannotatable.md)
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

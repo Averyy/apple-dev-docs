@@ -17,6 +17,7 @@ A button style that applies standard border artwork based on the button’s cont
 ## Declaration
 
 ```swift
+nonisolated
 struct BorderedButtonStyle
 ```
 

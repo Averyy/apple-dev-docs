@@ -22,6 +22,11 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Adds an asynchronous handler that can update the data the view displays when a person initiates a request, such as by pulling to refresh.
 - [func selectionDisabled(Bool) -> some View](view/selectiondisabled(_:).md)
   Adds a condition that controls whether users can select this view.
+### Container controls
+- [func swipeActions(edge: HorizontalEdge, allowsFullSwipe: Bool, content: () -> some View, onPresentationChanged: (Bool) -> Void) -> some View](view/swipeactions(edge:allowsfullswipe:content:onpresentationchanged:).md)
+  Adds custom swipe actions to a row in a list or container, notifying you when the actions are revealed or dismissed.
+- [func swipeActionsContainer() -> some View](view/swipeactionscontainer.md)
+  Coordinates swipe action dismissal and mutual exclusion across rows in a container.
 ### Scroll controls
 - [func scrollPosition(Binding<ScrollPosition>, anchor: UnitPoint?) -> some View](view/scrollposition(_:anchor:).md)
   Associates a binding to a scroll position with a scroll view within this view.
@@ -35,6 +40,8 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Sets the scroll behavior of views scrollable in the provided axes.
 - [func scrollTargetLayout(isEnabled: Bool) -> some View](view/scrolltargetlayout(isenabled:).md)
   Configures the outermost layout as a scroll target layout.
+- [func scrollInputBehavior(ScrollInputBehavior, for: ScrollInputKind) -> some View](view/scrollinputbehavior(_:for:).md)
+  Enables or disables scrolling in scrollable views when using particular inputs.
 - [func scrollTransition(ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(_:axis:transition:).md)
   Applies the given transition, animating between the phases of the transition as this view appears and disappears within the visible region of the containing scroll view.
 - [func scrollTransition(topLeading: ScrollTransitionConfiguration, bottomTrailing: ScrollTransitionConfiguration, axis: Axis?, transition: (EmptyVisualEffect, ScrollTransitionPhase) -> some VisualEffect) -> some View](view/scrolltransition(topleading:bottomtrailing:axis:transition:).md)
@@ -50,12 +57,20 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 ### Geometry
 - [func onGeometryChange(for:of:action:)](view/ongeometrychange(for:of:action:).md)
   Adds an action to be performed when a value, created from a geometry proxy, changes.
+- [func onGeometryChange3D(for:of:action:)](view/ongeometrychange3d(for:of:action:).md)
+  Returns a new view that arranges to call `action(value)` whenever the value computed by `transform(proxy)` changes, where `proxy` provides access to the view’s 3D geometry properties.
+- [func onInteractiveResizeChange((Bool) -> Void) -> some View](view/oninteractiveresizechange(_:).md)
+  Adds an action to perform when the enclosing window is being interactively resized.
 ### Taps and gestures
 - [func onTapGesture(count: Int, perform: () -> Void) -> some View](view/ontapgesture(count:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture.
 - [func onTapGesture(count:coordinateSpace:perform:)](view/ontapgesture(count:coordinatespace:perform:).md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
+- [func onTapGesture(count: Int, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:inputkinds:perform:).md)
+  Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:perform:onpressingchanged:).md)
+  Adds an action to perform when this view recognizes a long press gesture.
+- [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:inputkinds:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
 - [func onLongPressGesture(minimumDuration: Double, perform: () -> Void, onPressingChanged: ((Bool) -> Void)?) -> some View](view/onlongpressgesture(minimumduration:perform:onpressingchanged:).md)
   Adds an action to perform when this view recognizes a long press gesture.
@@ -87,6 +102,8 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Adds an action to perform after the user double-taps their Apple Pencil.
 - [func onPencilSqueeze(perform: (PencilSqueezeGesturePhase) -> Void) -> some View](view/onpencilsqueeze(perform:).md)
   Adds an action to perform when the user squeezes their Apple Pencil.
+- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
 - [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
   Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 ### Keyboard input
@@ -111,6 +128,19 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Defines a keyboard shortcut and assigns it to the modified control.
 - [func modifierKeyAlternate<V>(EventModifiers, () -> V) -> some View](view/modifierkeyalternate(_:_:).md)
   Builds a view to use in place of the modified view when the user presses the modifier key(s) indicated by the given set.
+### Hand interactions
+- [func handGestureShortcut(HandGestureShortcut, isEnabled: Bool) -> some View](view/handgestureshortcut(_:isenabled:).md)
+  Assigns a hand gesture shortcut to the modified control.
+- [func handPointerBehavior(HandPointerBehavior?) -> some View](view/handpointerbehavior(_:).md)
+  Sets the behavior of the hand pointer while the user is interacting with the view.
+- [func manipulable(coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](view/manipulable(coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Allows this view to be manipulated using common hand gestures.
+- [func manipulable(transform: Binding<AffineTransform3D>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](view/manipulable(transform:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Applies the given 3D affine transform to the view and allows it to be manipulated using common hand gestures.
+- [func manipulable(using: Manipulable.GestureState) -> some View](view/manipulable(using:).md)
+  Allows the view to be manipulated using a manipulation gesture attached to a different view.
+- [func manipulationGesture(updating: Binding<Manipulable.GestureState>, coordinateSpace: some CoordinateSpaceProtocol, operations: Manipulable.Operation.Set, inertia: Manipulable.Inertia, isEnabled: Bool, onChanged: ((Manipulable.Event) -> Void)?) -> some View](view/manipulationgesture(updating:coordinatespace:operations:inertia:isenabled:onchanged:).md)
+  Adds a manipulation gesture to this view without allowing this view to be manipulable itself.
 ### Hover
 - [func onHover(perform: (Bool) -> Void) -> some View](view/onhover(perform:).md)
   Adds an action to perform when the user moves the pointer over or away from the view’s frame.
@@ -194,24 +224,61 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 - [func onPasteCommand(of:validator:perform:)](view/onpastecommand(of:validator:perform:).md)
   Adds an action to perform in response to the system’s Paste command with items that you validate.
 ### Drag and drop
-- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
-  Activates this view as the source of a drag and drop operation.
-- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
-  Activates this view as the source of a drag and drop operation.
-- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](view/itemprovider(_:).md)
-  Provides a closure that vends the drag representation to be used for a particular data element.
-- [func onDrop(of:isTargeted:perform:)](view/ondrop(of:istargeted:perform:).md)
-  Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
-- [func onDrop(of:delegate:)](view/ondrop(of:delegate:).md)
-  Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
-- [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](view/dropdestination(for:action:istargeted:).md)
-  Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func dragConfiguration(DragConfiguration) -> some View](view/dragconfiguration(_:).md)
+  Configures a drag session.
+- [func dragContainer(for:in:_:)](view/dragcontainer(for:in:_:).md)
+  A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
+- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+  A container with draggable views.
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+  Provides multiple item selection support for drag containers.
+- [func dragPreviewsFormation(DragDropPreviewsFormation) -> some View](view/dragpreviewsformation(_:).md)
+  Describes the way dragged previews are visually composed.
 - [func draggable<T>(@autoclosure () -> T) -> some View](view/draggable(_:).md)
   Activates this view as the source of a drag and drop operation.
 - [func draggable<V, T>(@autoclosure () -> T, preview: () -> V) -> some View](view/draggable(_:preview:).md)
   Activates this view as the source of a drag and drop operation.
+- [func draggable<Item>(Item.Type, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:containernamespace:_:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, containerNamespace: Namespace.ID?, () -> Item?) -> some View](view/draggable(_:id:containernamespace:_:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item, ItemID>(Item.Type, id: KeyPath<Item, ItemID>, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:id:item:containernamespace:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<Item>(Item.Type, item: @autoclosure () -> Item?, containerNamespace: Namespace.ID?) -> some View](view/draggable(_:item:containernamespace:).md)
+  Activates this view as the source of a drag and drop operation, allowing to provide optional identifiable payload and specify the namespace of the drag container this view belongs to.
+- [func draggable<ItemID>(containerItemID: ItemID, containerNamespace: Namespace.ID?) -> some View](view/draggable(containeritemid:containernamespace:).md)
+  Inside a drag container, activates this view as the source of a drag and drop operation. Supports lazy drag containers.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](view/dropconfiguration(_:).md)
+  Configures a drop session.
+- [func dropDestination<T>(for: T.Type, isEnabled: Bool, action: ([T], DropSession) -> Void) -> some View](view/dropdestination(for:isenabled:action:).md)
+  Defines the destination of a drag and drop operation that provides a drop operation proposal and handles the dropped content with a closure that you specify.
+- [func dropPreviewsFormation(DragDropPreviewsFormation) -> some View](view/droppreviewsformation(_:).md)
+  Describes the way previews for a drop are composed.
+- [func itemProvider(Optional<() -> NSItemProvider?>) -> some View](view/itemprovider(_:).md)
+  Provides a closure that vends the drag representation to be used for a particular data element.
+- [func onDrag<V>(() -> NSItemProvider, preview: () -> V) -> some View](view/ondrag(_:preview:).md)
+  Activates this view as the source of a drag and drop operation.
+- [func onDrag(() -> NSItemProvider) -> some View](view/ondrag(_:).md)
+  Activates this view as the source of a drag and drop operation.
+- [func onDragSessionUpdated((DragSession) -> Void) -> some View](view/ondragsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing dragging operation activated by `draggable(_:)` or anther drag modifiers.
+- [func onDrop(of:isTargeted:perform:)](view/ondrop(of:istargeted:perform:).md)
+  Defines the destination of a drag-and-drop operation that handles the dropped content with a closure that you specify.
+- [func onDrop(of:delegate:)](view/ondrop(of:delegate:).md)
+  Defines the destination of a drag and drop operation using behavior controlled by the delegate that you provide.
+- [func onDropSessionUpdated((DropSession) -> Void) -> some View](view/ondropsessionupdated(_:).md)
+  Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 - [func springLoadingBehavior(SpringLoadingBehavior) -> some View](view/springloadingbehavior(_:).md)
   Sets the spring loading behavior this view.
+### Reordering
+- [func reorderContainer<Item>(for: Item.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:isenabled:move:).md)
+  Defines a container that allows its items to be reordered.
+- [func reorderContainer<Item, CollectionID>(for: Item.Type, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:in:isenabled:move:).md)
+  Defines a container that allows its items to be reordered.
+- [func reorderContainer<Item, ItemID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, isEnabled: Bool, move: (ReorderDifference<ItemID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:itemid:isenabled:move:).md)
+  Defines a container that allows its items to be reordered.
+- [func reorderContainer<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<ItemID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:itemid:in:isenabled:move:).md)
+  Defines a container that allows its items to be reordered.
 ### Submission
 - [func onAssignedDocumentDidSubmit((URL) -> Void) -> some View](view/onassigneddocumentdidsubmit(_:).md)
   Adds an action to perform after submitting an assigned document.
@@ -261,9 +328,18 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Tracks Digital Crown rotations by updating the specified binding.
 - [func digitalCrownRotation<V>(Binding<V>, from: V, through: V, by: V.Stride?, sensitivity: DigitalCrownRotationalSensitivity, isContinuous: Bool, isHapticFeedbackEnabled: Bool) -> some View](view/digitalcrownrotation(_:from:through:by:sensitivity:iscontinuous:ishapticfeedbackenabled:).md)
   Tracks Digital Crown rotations by updating the specified binding.
-### Immersive Spaces
+### Game controller
+- [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](view/handlesgamecontrollerevents(matching:).md)
+  Specifies the game controllers events which should be delivered through the GameController framework when the view, or one of its descendants has focus.
+- [func handlesGameControllerEvents(matching: GCUIEventTypes, withOptions: GameControllerEventHandlingOptions?) -> some View](view/handlesgamecontrollerevents(matching:withoptions:).md)
+  Specifies the game controllers events which should be delivered through the GameController framework when the view or one of its descendants has focus.
+### Immersive spaces
 - [func onImmersionChange(initial: Bool, (ImmersionChangeContext, ImmersionChangeContext) -> Void) -> some View](view/onimmersionchange(initial:_:).md)
   Performs an action when the immersion state of your app changes.
+- [func onWorldRecenter(action:)](view/onworldrecenter(action:).md)
+  Adds an action to perform when recentering the view with the digital crown.
+- [func immersiveEnvironmentPicker<Content>(content: () -> Content) -> some View](view/immersiveenvironmentpicker(content:).md)
+  Add menu items to open immersive spaces from a media player’s environment picker.
 ### Volumes
 - [func onVolumeViewpointChange(updateStrategy: VolumeViewpointUpdateStrategy, initial: Bool, (Viewpoint3D, Viewpoint3D) -> Void) -> some View](view/onvolumeviewpointchange(updatestrategy:initial:_:).md)
   Adds an action to perform when the viewpoint of the volume changes.
@@ -285,14 +361,27 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Adds an action to perform after this view disappears.
 - [func onChange(of:initial:_:)](view/onchange(of:initial:_:).md)
   Adds a modifier for this view that fires an action when a specific value changes.
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+  Adds an asynchronous task to perform before this view appears.
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(name:priority:file:line:_:).md)
+  Adds an asynchronous task to perform before this view appears.
 ### File renaming
 - [func renameAction(_:)](view/renameaction(_:).md)
   Sets a closure to run for the rename action.
 ### URLs
 - [func onOpenURL(perform: (URL) -> ()) -> some View](view/onopenurl(perform:).md)
   Registers a handler to invoke in response to a URL that your app receives.
+- [func onOpenURL(prefersInApp: Bool) -> some View](view/onopenurl(prefersinapp:).md)
+  Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 - [func widgetURL(URL?) -> some View](view/widgeturl(_:).md)
   Sets the URL to open in the containing app when the user clicks the widget.
+### Asyncronous image loading
+- [func asyncImageURLSession(URLSession) -> some View](view/asyncimageurlsession(_:).md)
+  A modifier that adds a URL session for asynchronous images contained in the view to use when fetching image data.
 ### Publisher events
 - [func onReceive<P>(P, perform: (P.Output) -> Void) -> some View](view/onreceive(_:perform:).md)
   Adds an action to perform when this view detects data emitted by the given publisher.
@@ -318,6 +407,14 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 - [func importableFromServices<T>(for: T.Type, action: ([T]) -> Bool) -> some View](view/importablefromservices(for:action:).md)
   Enables importing items from services, such as Continuity Camera on macOS.
 ### App intents
+- [func appEntityIdentifier(EntityIdentifier?) -> some View](view/appentityidentifier(_:).md)
+  Associates a SwiftUI view with an app entity to make its content discoverable by Apple Intelligence and Siri.
+- [func appEntityIdentifier<I>(forSelectionType: I.Type, identifier: (I) -> EntityIdentifier?) -> some View](view/appentityidentifier(forselectiontype:identifier:).md)
+  Associates the items in a SwiftUI list view with app entities to make them discoverable by Apple Intelligence and Siri.
+- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
+  Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
+- [func onAppIntentExecution<I>(I.Type, perform: (I) -> Void) -> some View](view/onappintentexecution(_:perform:).md)
+  Registers a handler to invoke in response to the specified app intent that your app receives.
 - [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
   Sets the given style for ShortcutsLinks within the view hierarchy
 - [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)
@@ -325,6 +422,10 @@ Use input and event modifiers to configure and provide handlers for a wide varie
 ### Camera
 - [func onCameraCaptureEvent(isEnabled: Bool, action: (AVCaptureEvent) -> Void) -> some View](view/oncameracaptureevent(isenabled:action:).md)
   Used to register an action triggered by system capture events.
+- [func onCameraCaptureEvent(isEnabled:defaultSoundDisabled:action:)](view/oncameracaptureevent(isenabled:defaultsounddisabled:action:).md)
+  Used to register an action triggered by system capture events.
+- [func onCameraCaptureEvent(isEnabled:defaultSoundDisabled:primaryAction:secondaryAction:)](view/oncameracaptureevent(isenabled:defaultsounddisabled:primaryaction:secondaryaction:).md)
+  Used to register actions triggered by system capture events.
 - [func onCameraCaptureEvent(isEnabled: Bool, primaryAction: (AVCaptureEvent) -> Void, secondaryAction: (AVCaptureEvent) -> Void) -> some View](view/oncameracaptureevent(isenabled:primaryaction:secondaryaction:).md)
   Used to register actions triggered by system capture events.
 - [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)

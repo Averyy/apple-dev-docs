@@ -8,6 +8,7 @@ A Boolean value indicating whether the access point broadcasts the SSID.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

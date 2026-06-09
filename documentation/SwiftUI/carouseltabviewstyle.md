@@ -11,6 +11,7 @@ A style that implements the carousel interaction and appearance.
 ## Declaration
 
 ```swift
+nonisolated
 struct CarouselTabViewStyle
 ```
 

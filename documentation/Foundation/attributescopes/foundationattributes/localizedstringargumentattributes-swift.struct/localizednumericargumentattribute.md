@@ -21,6 +21,14 @@ A type for a numeric argument used to format the run with this attribute.
 enum LocalizedNumericArgumentAttribute
 ```
 
+## Topics
+
+### Inspecting attributed string key properties
+- [static let name: String](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/name.md)
+  The name of the attribute.
+- [AttributeScopes.FoundationAttributes.LocalizedStringArgumentAttributes.LocalizedNumericArgumentAttribute.Value](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizednumericargumentattribute/value.md)
+  The value type represented by this attribute.
+
 ## Relationships
 
 ### Conforms To

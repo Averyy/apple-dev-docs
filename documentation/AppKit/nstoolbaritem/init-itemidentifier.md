@@ -27,7 +27,8 @@ A new toolbar item.
 
 ## See Also
 
-- [Toolbar Programming Topics for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Toolbars/Toolbars.html#//apple_ref/doc/uid/10000109i)
+- [Integrating a Toolbar and Touch Bar into Your App](integrating-a-toolbar-and-touch-bar-into-your-app.md)
+  Provide users quick access to your app’s features from a toolbar and corresponding Touch Bar.
 - [convenience init(itemIdentifier: NSToolbarItem.Identifier, barButtonItem: UIBarButtonItem)](nstoolbaritem/init(itemidentifier:barbuttonitem:).md)
   Creates a toolbar item with property values from the specified bar button item.
 

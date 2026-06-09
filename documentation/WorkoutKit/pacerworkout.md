@@ -34,17 +34,6 @@ struct PacerWorkout
   A length measurement representing the distance goal.
 - [var time: Measurement<UnitDuration>](pacerworkout/time.md)
   A time measurement representing the time goal.
-### Comparing workouts
-- [var hashValue: Int](pacerworkout/hashvalue.md)
-  The hashed value of the workout.
-- [func hash(into: inout Hasher)](pacerworkout/hash(into:).md)
-  Hashes the essential components of the workout by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](pacerworkout/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two workouts aren’t equal.
-- [static func == (PacerWorkout, PacerWorkout) -> Bool](pacerworkout/==(_:_:).md)
-  Returns a Boolean value that indicates whether two workouts are equal.
-### Default Implementations
-- [Equatable Implementations](pacerworkout/equatable-implementations.md)
 
 ## Relationships
 

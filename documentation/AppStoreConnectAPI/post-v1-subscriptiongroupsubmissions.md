@@ -1,4 +1,4 @@
-# Create a Review Submission for a Subscription Group
+# Create a review submission for a subscription group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Create a subscription group submission for review.
 
 ## See Also
 
-- [Create a Review Submission for a Subscription](post-v1-subscriptionsubmissions.md)
+- [Create a review submission for a subscription](post-v1-subscriptionsubmissions.md)
   Create a review submission for an auto-renewable subscription.
 
 

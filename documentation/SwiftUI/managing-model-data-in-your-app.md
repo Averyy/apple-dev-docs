@@ -191,7 +191,7 @@ struct LibraryItemView: View {
 
 ##### Create the Source of Truth for Model Data
 
-To create and store the source of truth for model data, declare a private variable and initialize it with a instance of an observable data model type. Then wrap it with a [`State`](state.md) property wrapper. For example, the following code stores an instance of the data model type `Book` in the state variable `book`:
+To create and store the source of truth for model data, declare a private variable and initialize it with a instance of an observable data model type. Then add the [`State()`](state().md) macro to declare that SwiftUI manages the property. For example, the following code stores an instance of the data model type `Book` in the state variable `book`:
 
 ```swift
 struct BookView: View {
@@ -203,7 +203,7 @@ struct BookView: View {
 }
 ```
 
-By wrapping the book with [`State`](state.md), you’re telling SwiftUI to manage the storage of the instance. Each time SwiftUI re-creates `BookView`, it connects the `book` variable to the managed instance, providing the view a single source of truth for the model data.
+By wrapping the book with [`State()`](state().md), you’re telling SwiftUI to manage the storage of the instance. Each time SwiftUI re-creates `BookView`, it connects the `book` variable to the managed instance, providing the view a single source of truth for the model data.
 
 You can also create a state object in your top-level [`App`](app.md) instance or in one of your app’s [`Scene`](scene.md) instances. For example, the following code creates an instance of `Library` in the app’s top-level structure:
 

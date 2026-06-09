@@ -17,7 +17,7 @@ Creates an instance that selects a `Date` with an unbounded range.
 
 ```swift
 nonisolated
-init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ViewBuilder label: () -> Label)
+init(selection: Binding<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

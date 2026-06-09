@@ -11,7 +11,7 @@ The accessibility label for the annotation.
 ## Declaration
 
 ```swift
-get accessibilityLabel(): string | null | undefined;
+get accessibilityLabel(): string | null;
 ```
 
 #### Discussion

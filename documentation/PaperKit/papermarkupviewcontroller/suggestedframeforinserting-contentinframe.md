@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: method
 
-The frame that should be used for inserting shapes and other content.
+Returns the suggested frame for inserting shapes and other content.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,7 @@ The frame that should be used for inserting shapes and other content.
 
 #### Return Value
 
-The suggested frame, for where the content should go. This can be used to transform a `PaperMarkup` before inserting it.
+The suggested frame for the content. Use this value to transform a `PaperMarkup` before inserting it.
 
 #### Discussion
 
@@ -34,7 +34,14 @@ paperViewController.markup.insertNewShape(configuration: shapeConfiguration, fra
 
 ## Parameters
 
-- `frame`: The frame of the content to be inserted.
+- `frame`: The frame of the content you want to insert.
+
+## See Also
+
+- [var selection: Set<MarkupOrderedSet.ElementID>](papermarkupviewcontroller/selection.md)
+  The current selected elements on the canvas.
+- [var selectedMarkup: PaperMarkup](papermarkupviewcontroller/selectedmarkup.md)
+  The selected contents in the UI.
 
 
 ---

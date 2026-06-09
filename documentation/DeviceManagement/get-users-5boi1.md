@@ -6,13 +6,12 @@
 Get information about a set of users.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Mentions
 
-- [Retrieving a Large Record Set](retrieving-a-large-record-set.md)
-- [Handling Error Responses](handling-error-responses.md)
+- [Retrieving a large record set](retrieving-a-large-record-set.md)
+- [Handling error responses](handling-error-responses.md)
 
 #### Discussion
 

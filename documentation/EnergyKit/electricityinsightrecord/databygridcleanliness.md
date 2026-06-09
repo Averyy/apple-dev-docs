@@ -9,13 +9,16 @@ Energy consumption or production, or device operational runtime categorized by t
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 
 ```swift
 var dataByGridCleanliness: ElectricityInsightRecord<Measure>.GridCleanliness?
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

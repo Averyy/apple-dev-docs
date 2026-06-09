@@ -30,6 +30,8 @@ enum NEVPNIKEv2TLSVersion
   A value to use TLS version 1.1.
 - [NEVPNIKEv2TLSVersion.version1_2](nevpnikev2tlsversion/version1_2.md)
   A value to use TLS version 1.2.
+### Enumeration Cases
+- [NEVPNIKEv2TLSVersion.version1_3](nevpnikev2tlsversion/version1_3.md)
 ### Initializers
 - [init?(rawValue: Int)](nevpnikev2tlsversion/init(rawvalue:).md)
 

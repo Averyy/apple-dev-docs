@@ -11,6 +11,7 @@ The default label to use for a settings link.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultSettingsLinkLabel
 ```
 

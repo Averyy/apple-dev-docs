@@ -133,6 +133,13 @@ When the mouse button is pressed while the cursor is within the bounds of the re
   Causes the specified action to be sent to the target.
 - [func sendAction(on: NSEvent.EventTypeMask) -> Int](nscontrol/sendaction(on:).md)
   Sets the conditions on which the receiver sends action messages to its target.
+### Handling Control Events
+- [NSControl.Events](nscontrol/events.md)
+  A set of events that a control can report to its target.
+- [func addTarget(Any?, action: Selector, for: NSControl.Events)](nscontrol/addtarget(_:action:for:).md)
+  Registers a target-action pair for the specified control events.
+- [func removeTarget(Any?, action: Selector?, for: NSControl.Events)](nscontrol/removetarget(_:action:for:).md)
+  Stops the delivery of events to the specified target object.
 ### Accessing Tags
 - [var tag: Int](nscontrol/tag.md)
   The tag identifying the receiver (not the tag of the receiver’s cell).
@@ -152,6 +159,10 @@ When the mouse button is pressed while the cursor is within the bounds of the re
 ### Deprecated
 - [Deprecated Symbols](nscontrol-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [NSControl.TextDidBeginEditingMessage](nscontrol/textdidbegineditingmessage.md)
+- [NSControl.TextDidChangeMessage](nscontrol/textdidchangemessage.md)
+- [NSControl.TextDidEndEditingMessage](nscontrol/textdidendeditingmessage.md)
 
 ## Relationships
 

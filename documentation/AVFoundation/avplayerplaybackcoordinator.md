@@ -72,6 +72,7 @@ This object may automatically suspend coordinated playback when a system state c
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 
 ---

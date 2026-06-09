@@ -17,7 +17,8 @@ Creates a two-column navigation split view that enables programmatic control of 
 ## Declaration
 
 ```swift
-init(columnVisibility: Binding<NavigationSplitViewVisibility>, @ViewBuilder sidebar: () -> Sidebar, @ViewBuilder detail: () -> Detail) where Content == EmptyView
+nonisolated
+init(columnVisibility: Binding<NavigationSplitViewVisibility>, @ContentBuilder sidebar: () -> Sidebar, @ContentBuilder detail: () -> Detail) where Content == EmptyView
 ```
 
 ## Parameters

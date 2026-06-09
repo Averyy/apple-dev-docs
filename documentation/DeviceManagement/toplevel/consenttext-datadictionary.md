@@ -13,8 +13,6 @@ The dictionary of consent agreements per language.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

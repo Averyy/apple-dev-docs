@@ -17,7 +17,7 @@ An empty widget configuration.
 
 ```swift
 @frozen
-struct EmptyWidgetConfiguration
+nonisolated struct EmptyWidgetConfiguration
 ```
 
 ## Topics

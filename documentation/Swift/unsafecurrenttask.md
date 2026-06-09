@@ -37,8 +37,12 @@ For information about the language-level concurrency model that `UnsafeCurrentTa
 ### Instance Properties
 - [var basePriority: TaskPriority](unsafecurrenttask/basepriority.md)
   The current task’s base priority.
+- [var hasActiveCancellationShield: Bool](unsafecurrenttask/hasactivecancellationshield.md)
+  Checks if this task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
 - [var isCancelled: Bool](unsafecurrenttask/iscancelled.md)
   A Boolean value that indicates whether the current task was canceled.
+- [var name: String?](unsafecurrenttask/name.md)
+  Return the task’s name, if it was set during its creation.
 - [var priority: TaskPriority](unsafecurrenttask/priority.md)
   The current task’s priority.
 - [var unownedTaskExecutor: UnownedTaskExecutor?](unsafecurrenttask/unownedtaskexecutor.md)
@@ -55,7 +59,6 @@ For information about the language-level concurrency model that `UnsafeCurrentTa
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

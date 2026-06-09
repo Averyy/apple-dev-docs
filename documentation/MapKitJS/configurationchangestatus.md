@@ -15,6 +15,8 @@ const ConfigurationChangeStatus: Readonly<{
     readonly Initialized: "Initialized";
     readonly Refreshed: "Refreshed";
 }>
+type ConfigurationChangeStatus =
+    (typeof ConfigurationChangeStatus)[keyof typeof ConfigurationChangeStatus];
 ```
 
 ## Topics
@@ -24,9 +26,6 @@ const ConfigurationChangeStatus: Readonly<{
   A status value that indicates the initialization of the configuration is successful.
 - [Refreshed](configurationchangestatus/refreshed.md)
   A status value that indicates the configuration refresh is successful.
-### Type Aliases
-- [type ConfigurationChangeStatus](configurationchangestatus/configurationchangestatus.md)
-  A type alias that represents the values of the configuration change status enumeration.
 
 ## See Also
 

@@ -19,6 +19,10 @@ Returns the maximum context size (in tokens) supported by the model.
 final var contextSize: Int { get }
 ```
 
+## Mentions
+
+- [Managing the context window](managing-the-context-window.md)
+
 #### Return Value
 
 The maximum number of tokens the model can process in a single context.
@@ -28,6 +32,13 @@ The maximum number of tokens the model can process in a single context.
 The context size represents the total number of tokens that can be used in a single session, including both input prompts and generated responses.
 
 > **Note**: An error if the context size cannot be determined. Typically this is due to the model not being available or Apple Intelligence is disabled.
+
+## See Also
+
+- [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
+  Languages that the model supports.
+- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
+  Returns a Boolean indicating whether the given locale is supported by the model.
 
 
 ---

@@ -57,7 +57,6 @@ enum ShortcutTileColor
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -68,7 +67,6 @@ enum ShortcutTileColor
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
-- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
 - [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
@@ -83,6 +81,7 @@ enum ShortcutTileColor
   The names of the colors to use for the background of the App Shortcuts platter.
 - [enum AppShortcutsBuilder](appshortcutsbuilder.md)
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 
 
 ---

@@ -6,6 +6,9 @@
 A peer that invited the session to connect to them canceled the connection request.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

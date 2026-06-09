@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: @escaping (GeometryProxy3D) -> Content)
+nonisolated
+init(@ContentBuilder content: @escaping (GeometryProxy3D) -> Content)
 ```
 
 ## See Also

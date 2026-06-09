@@ -40,6 +40,7 @@ struct Options
 - [init(rawValue: UInt)](iso8601dateformatter/options/init(rawvalue:).md)
 ### Type Properties
 - [static var withFractionalSeconds: ISO8601DateFormatter.Options](iso8601dateformatter/options/withfractionalseconds.md)
+  The date representation uses the colon separator (`:`) in the time zone.
 
 ## Relationships
 

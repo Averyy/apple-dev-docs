@@ -32,8 +32,6 @@ Use this method to build a tree of progress objects, as [`Reporting Progress for
 
 - [class func current() -> Progress?](progress/current.md)
   Returns the progress instance, if any.
-- [func addChild(Progress, withPendingUnitCount: Int64)](progress/addchild(_:withpendingunitcount:).md)
-  Adds a process object as a suboperation of a progress tree.
 - [func performAsCurrent<ReturnType>(withPendingUnitCount: Int64, using: () throws -> ReturnType) rethrows -> ReturnType](progress/performascurrent(withpendingunitcount:using:).md)
   Retrieves the current thread’s progress object, executes the specified block, and increments the progress object by the specified units of work.
 - [func resignCurrent()](progress/resigncurrent.md)

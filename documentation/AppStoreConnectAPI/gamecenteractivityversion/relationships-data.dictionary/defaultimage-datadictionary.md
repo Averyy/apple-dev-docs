@@ -16,7 +16,7 @@ object GameCenterActivityVersion.Relationships.DefaultImage
 
 ### Dictionaries
 - [object GameCenterActivityVersion.Relationships.DefaultImage.Data](gamecenteractivityversion/relationships-data.dictionary/defaultimage-data.dictionary/data-data.dictionary.md)
-  The request body you use to update an activity.
+  The request body you use to update a activity.
 
 ## Properties
 

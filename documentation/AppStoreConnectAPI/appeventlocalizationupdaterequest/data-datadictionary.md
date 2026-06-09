@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update an app event localization update request.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -16,6 +18,7 @@ object AppEventLocalizationUpdateRequest.Data
 
 ### Objects
 - [object AppEventLocalizationUpdateRequest.Data.Attributes](appeventlocalizationupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an app event localization update request resource.
 
 ## Properties
 

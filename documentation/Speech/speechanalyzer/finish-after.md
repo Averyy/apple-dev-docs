@@ -40,7 +40,7 @@ You do not need to call this method before releasing this analyzer or its module
 - [func cancelAndFinishNow() async](speechanalyzer/cancelandfinishnow.md)
   Finishes analysis immediately.
 - [func finalizeAndFinishThroughEndOfInput() async throws](speechanalyzer/finalizeandfinishthroughendofinput.md)
-  Finishes analysis after an audio input sequence has been fully consumed and its results are finalized.
+  Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
 - [func finalizeAndFinish(through: CMTime) async throws](speechanalyzer/finalizeandfinish(through:).md)
   Finishes analysis after finalizing results for a given time-code.
 

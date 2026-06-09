@@ -39,7 +39,7 @@ The `onTermination` closure receives an instance of this type.
 ### Comparing Termination Values
 - [static func == (AsyncStream<Element>.Continuation.Termination, AsyncStream<Element>.Continuation.Termination) -> Bool](asyncstream/continuation/termination/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](asyncstream/continuation/termination/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](asyncstream/continuation/termination/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Default Implementations
 - [Equatable Implementations](asyncstream/continuation/termination/equatable-implementations.md)
@@ -47,7 +47,6 @@ The `onTermination` closure receives an instance of this type.
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

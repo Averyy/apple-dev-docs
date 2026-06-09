@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The day of the year value of the date components.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

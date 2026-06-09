@@ -102,6 +102,9 @@ let mediaItem = SHMediaItem(properties: [.episode: 42,
   Requests the media item for the song with the specified Shazam ID.
 ### Initializers
 - [init?(coder: NSCoder)](shmediaitem/init(coder:).md)
+### Instance Methods
+- [func songs() async throws -> [Song]](shmediaitem/songs.md)
+  An array of MusicKit song objects that represent the media item.
 ### Default Implementations
 - [Identifiable Implementations](shmediaitem/identifiable-implementations.md)
 

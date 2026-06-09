@@ -118,6 +118,13 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
 ### Accessing the asset
 - [var asset: AVAsset](avassetexportsession/asset.md)
   An asset that a session exports.
+### Configuring resumable export
+- [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
+  Configures the export session for resumable export.
+- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+### Enumerations
+- [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
+  Represents the resumption state of the export session.
 
 ## Relationships
 

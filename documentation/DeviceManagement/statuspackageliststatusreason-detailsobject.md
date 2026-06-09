@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains further details about this error.
+A dictionary that contains additional details about the state.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

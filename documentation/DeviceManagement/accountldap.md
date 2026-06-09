@@ -11,8 +11,6 @@ The declaration to configure a Lightweight Directory Access Protocol (LDAP) acco
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,8 +32,11 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 | Allowed in local enrollment | iOS, macOS, Shared iPad, visionOS |
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
+
+This configuration sets up an LDAP directory account.
 
 ```json
 {
@@ -60,7 +61,7 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
 
 ### Objects
 - [object AccountLDAPSearchSettingsItemObject](accountldapsearchsettingsitemobject.md)
-  The settings for configuring the search behavior with an LDAP server.
+  The array of nodes to start LDAP searches from. There must be at least one node for this account to be useful. macOS only searches one node and ignores other items in the array.
 
 ## Properties
 
@@ -86,22 +87,22 @@ Specify `com.apple.configuration.account.ldap` as the declaration type.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
 - [object KeyboardSettings](keyboardsettings.md)
   The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
-- [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
-  The declaration to configure status subscriptions.
 
 
 ---

@@ -17,7 +17,7 @@ Creates a view representing the body of a control group.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 

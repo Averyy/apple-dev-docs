@@ -13,8 +13,6 @@ A dictionary that describes a profile list item.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object ProfileListResponse.ProfileListItem
 
 ## Mentions
 
-- [Dealing with Inactive MDM Devices and Invalid Push Tokens](dealing-with-inactive-mdm-devices-and-invalid-push-tokens.md)
+- [Dealing with inactive managed devices and invalid push tokens](dealing-with-inactive-managed-devices-and-invalid-push-tokens.md)
 
 ## Topics
 
@@ -36,7 +34,7 @@ object ProfileListResponse.ProfileListItem
 
 - `HasRemovalPasscode` (boolean): If `true`, the profile has a passcode for removal.
 - `IsEncrypted` (boolean): If `true`, it’s an encrypted profile.
-- `IsManaged` (boolean): If `true`, the current MDM service installed the profile. MDM doesn’t return this value for supervised devices, and can remove or replace all profiles on supervised devices.
+- `IsManaged` (boolean): If `true`, the current MDM service installed the profile. MDM can remove or replace all profiles on supervised devices. Available: iOS 4+ | iPadOS 4+ | tvOS 9+ | visionOS 1.1+ | watchOS 10+
 - `PayloadContent` ([ProfileListResponse.ProfileListItem.PayloadContentItem]): An array of payload content items. This value isn’t present if `IsEncrypted` is `true`.
 - `PayloadDescription` (string): The description of the profile.
 - `PayloadDisplayName` (string): The human-readable name of the profile.
@@ -46,7 +44,7 @@ object ProfileListResponse.ProfileListItem
 - `PayloadUUID` (string) *(required)*: The unique identifier for the profile.
 - `PayloadVersion` (integer): The version of the configuration profile as a whole, not of the individual profiles within it. The value should be `1`.
 - `SignerCertificates` ([data]): An array that contains the certificate for signing the profile, followed by any intermediate certificates, in DER-encoded X.509 format.
-- `Source` (string): A string set to `Declarative Device Management` when the profile is managed by Declarative Device Management.
+- `Source` (string): A string set to `Declarative Device Management` when the profile is managed by Declarative Device Management. Available: iOS 18+ | iPadOS 18+ | macOS 15+ | tvOS 18+ | visionOS 2+ | watchOS 11+
 
 ## See Also
 

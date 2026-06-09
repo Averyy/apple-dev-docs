@@ -16,7 +16,7 @@ enum ButtonType
 
 #### Overview
 
-For examples of how these types behave, see [`Button Programming Topics`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Button/Button.html#//apple_ref/doc/uid/10000019i).
+For more information, see [`setButtonType(_:)`](nsbuttoncell/setbuttontype(_:).md).
 
 ## Topics
 

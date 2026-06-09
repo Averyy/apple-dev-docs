@@ -22,7 +22,7 @@ func withUnsafeMutablePointers<E, R>(_ body: (UnsafeMutablePointer<Header>, Unsa
 
 #### Discussion
 
-> **Note**: These pointers are valid only for the duration of the call to `body`.
+> **Note**: These pointers are valid only for the duration of the call to `body`. The caller is responsible for ensuring that the buffer is not being accessed elsewhere while performing this call.
 
 ## See Also
 

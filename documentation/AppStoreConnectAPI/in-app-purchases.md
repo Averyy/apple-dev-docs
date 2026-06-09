@@ -7,62 +7,82 @@ Create, modify, and delete in-app purchases for your app.
 ## Topics
 
 ### Endpoints
-- [Create an In-App Purchase](post-v2-inapppurchases.md)
+- [Create an in-app purchase](post-v2-inapppurchases.md)
   Create an in-app purchase, including a consumable, non-consumable, or non-renewing subscription.
-- [Read In-App Purchase Information](get-v2-inapppurchases-_id_.md)
+- [Read in-app purchase information](get-v2-inapppurchases-_id_.md)
   Get information about a specific in-app purchase.
-- [List All In-App Purchases for an App](get-v1-apps-_id_-inapppurchasesv2.md)
+- [List all in-app purchases for an app](get-v1-apps-_id_-inapppurchasesv2.md)
   Get a list of the in-app purchases for a specific app.
-- [Modify an In-App Purchase](patch-v2-inapppurchases-_id_.md)
+- [Modify an in-app purchase](patch-v2-inapppurchases-_id_.md)
   Update the reference name of a specific in-app purchase.
-- [Delete an In-App Purchase](delete-v2-inapppurchases-_id_.md)
+- [Delete an in-app purchase](delete-v2-inapppurchases-_id_.md)
   Delete a specific in-app purchase from your app.
-- [List All Price Points for an In-App Purchase](get-v2-inapppurchases-_id_-pricepoints.md)
+- [List all price points for an in-app purchase](get-v2-inapppurchases-_id_-pricepoints.md)
   Get a list of possible price points for an in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/pricePoints](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
+- [List price point IDs for an in-app purchase](get-v2-inapppurchases-_id_-relationships-pricepoints.md)
+  Get a list of price point IDs for a specific in-app purchase.
 - [List All In-App Purchase Price Point Equalizations](get-v1-inapppurchasepricepoints-_id_-equalizations.md)
   Get a list of in-app purchase price points and their equivalent in a specified currency.
-- [GET /v1/inAppPurchasePricePoints/{id}/relationships/equalizations](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
-- [Read Promoted Purchase Information for an In-App Purchase](get-v2-inapppurchases-_id_-promotedpurchase.md)
+- [List equalization IDs for an in-app purchase price point](get-v1-inapppurchasepricepoints-_id_-relationships-equalizations.md)
+- [Read promoted purchase information for an in-app purchase](get-v2-inapppurchases-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/promotedPurchase](get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
-- [List All Localizations for an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
+- [Read the promoted purchase ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-promotedpurchase.md)
+  Get the promoted purchase ID for a specific in-app purchase.
+- [List all localizations for an in-app purchase](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)
   Get a list of localized display names and descriptions for a specific in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/inAppPurchaseLocalizations](get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
-- [Read Review Screenshot Information for an In-App Purchase](get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
+- [List localization IDs for an in-app purchase](get-v2-inapppurchases-_id_-relationships-inapppurchaselocalizations.md)
+  Get a list of localization IDs for a specific in-app purchase.
+- [Read review screenshot information for an in-app purchase](get-v2-inapppurchases-_id_-appstorereviewscreenshot.md)
   Get information about a review screenshot for a specific in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/appStoreReviewScreenshot](get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
-- [Create a Review Submission for an In-App Purchase](post-v1-inapppurchasesubmissions.md)
+- [Read the App Store review screenshot ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-appstorereviewscreenshot.md)
+  Get the App Store review screenshot ID for a specific in-app purchase.
+- [Create a review submission for an in-app purchase](post-v1-inapppurchasesubmissions.md)
   Create an in-app purchase submission for review.
-- [Read the Price Schedule for an In-App Purchase](get-v2-inapppurchases-_id_-iappriceschedule.md)
+- [Read the price schedule for an in-app purchase](get-v2-inapppurchases-_id_-iappriceschedule.md)
   Get a list of the scheduled prices for an in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/iapPriceSchedule](get-v2-inapppurchases-_id_-relationships-iappriceschedule.md)
-- [Read Content Information for an In-App Purchase](get-v2-inapppurchases-_id_-content.md)
+- [Read the price schedule ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-iappriceschedule.md)
+  Get the price schedule ID for a specific in-app purchase.
+- [Read content information for an in-app purchase](get-v2-inapppurchases-_id_-content.md)
   Get the details about hosted content for an in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/content](get-v2-inapppurchases-_id_-relationships-content.md)
-- [Read In-App Purchase Content Information](get-v1-inapppurchasecontents-_id_.md)
+- [Read the content ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-content.md)
+  Get the content ID for a specific in-app purchase.
+- [Read in-app purchase content information](get-v1-inapppurchasecontents-_id_.md)
   Get details about uploaded in-app purchase content.
-- [Read Information About the Availability of an In-App Purchase](get-v2-inapppurchases-_id_-inapppurchaseavailability.md)
+- [Read information about the availability of an in-app purchase](get-v2-inapppurchases-_id_-inapppurchaseavailability.md)
   Get information about the territory availablity for an in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/inAppPurchaseAvailability](get-v2-inapppurchases-_id_-relationships-inapppurchaseavailability.md)
+- [Read the availability ID for an in-app purchase](get-v2-inapppurchases-_id_-relationships-inapppurchaseavailability.md)
+  Get the availability ID for a specific in-app purchase.
 - [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
-  List all images for a specific in-app purchase.
-- [GET /v2/inAppPurchases/{id}/relationships/images](get-v2-inapppurchases-_id_-relationships-images.md)
+  The data structure that represents a get-v2-in-app purchases-{id}-images resource.
+- [List image IDs for an in-app purchase](get-v2-inapppurchases-_id_-relationships-images.md)
+  Get a list of image IDs for a specific in-app purchase.
 - [GET /v2/inAppPurchases/{id}/offerCodes](get-v2-inapppurchases-_id_-offercodes.md)
 - [GET /v2/inAppPurchases/{id}/relationships/offerCodes](get-v2-inapppurchases-_id_-relationships-offercodes.md)
 ### Objects
 - [object InAppPurchaseV2Response](inapppurchasev2response.md)
+  A response containing a single in-app purchase configured via the v2 API.
 - [object InAppPurchasesV2Response](inapppurchasesv2response.md)
+  A response containing a list of in-app purchases configured via the v2 API.
 - [object InAppPurchaseV2](inapppurchasev2.md)
+  An in-app purchase item configured via the v2 API, supporting both consumable and non-consumable types.
 - [object InAppPurchaseV2CreateRequest](inapppurchasev2createrequest.md)
+  The request body you use to create an in-app purchase.
 - [object InAppPurchaseV2UpdateRequest](inapppurchasev2updaterequest.md)
+  The request body you use to update an in-app purchase v2update request.
 - [object InAppPurchaseContentResponse](inapppurchasecontentresponse.md)
+  A response containing a single hosted content record for an in-app purchase.
 - [object InAppPurchaseLocalizationResponse](inapppurchaselocalizationresponse.md)
+  The response body for endpoints that create, read, or modify a single in-app purchase localization.
 - [object InAppPurchasePricePointsResponse](inapppurchasepricepointsresponse.md)
+  The response body for endpoints that list available price points for an in-app purchase.
 - [object InAppPurchasePricePoint](inapppurchasepricepoint.md)
+  A standard price tier for in-app purchases, specifying the customer price and developer proceeds in a territory.
 - [object InAppPurchasePricesResponse](inapppurchasepricesresponse.md)
+  A response containing a list of configured prices for an in-app purchase.
 - [object InAppPurchasePrice](inapppurchaseprice.md)
+  A configured price for an in-app purchase in a specific App Store territory.
 - [object InAppPurchasePriceInlineCreate](inapppurchasepriceinlinecreate.md)
+  An inline object for specifying a territory-specific price when creating or updating an in-app purchase price schedule.
 - [object AppInAppPurchasesLinkagesResponse](appinapppurchaseslinkagesresponse.md)
 - [object AppInAppPurchasesV2LinkagesResponse](appinapppurchasesv2linkagesresponse.md)
 - [object InAppPurchasePricePointEqualizationsLinkagesResponse](inapppurchasepricepointequalizationslinkagesresponse.md)

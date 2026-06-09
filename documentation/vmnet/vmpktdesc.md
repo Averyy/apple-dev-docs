@@ -19,7 +19,7 @@ struct vmpktdesc
 
 ### Fields
 - [var vm_flags: UInt32](vmpktdesc/vm_flags.md)
-  Option flags. Should be set to `0` on read.
+  Option flags associated with the packet.
 - [var vm_pkt_iov: UnsafeMutablePointer<iovec>](vmpktdesc/vm_pkt_iov.md)
   An array of packet buffers.
 - [var vm_pkt_iovcnt: UInt32](vmpktdesc/vm_pkt_iovcnt.md)
@@ -44,6 +44,10 @@ struct vmpktdesc
   Interface event types.
 - [enum operating_modes_t](operating_modes_t.md)
   The operating modes for an interface.
+- [typealias vmnet_mode_t](vmnet_mode_t.md)
+  A type that defines the operating modes of the vmnet interface.
+- [typealias vmnet_network_ref](vmnet_network_ref.md)
+  A pointer to a network structure.
 
 
 ---

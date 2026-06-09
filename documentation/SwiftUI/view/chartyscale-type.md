@@ -41,6 +41,12 @@ func chartYScale(type: ScaleType? = nil) -> some View
   Configures the y scale for charts.
 - [func chartYScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartyscale(range:type:).md)
   Configures the y scale for charts.
+- [func chartZScale<Domain, Range>(domain: Domain, range: Range, type: ScaleType?) -> some View](view/chartzscale(domain:range:type:).md)
+  Configures the z scale for 3D charts.
+- [func chartZScale<Domain>(domain: Domain, type: ScaleType?) -> some View](view/chartzscale(domain:type:).md)
+  Configures the z scale for 3D charts.
+- [func chartZScale<Range>(range: Range, type: ScaleType?) -> some View](view/chartzscale(range:type:).md)
+  Configures the z scale for 3D charts.
 
 
 ---

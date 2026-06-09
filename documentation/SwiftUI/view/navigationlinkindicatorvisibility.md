@@ -44,6 +44,21 @@ struct NoIndicatorLink: View {
 
 > ❗ **Important**: Setting the link indicator visibility to `.visible` is only supported for navigation links contained in a `List` built with the Xcode 16 SDKs and earlier. Current releases support setting the indicator visibility to `.visible` regardless of whether the link is within a list.
 
+## See Also
+
+- [func navigationDestination<D, C>(for: D.Type, destination: (D) -> C) -> some View](view/navigationdestination(for:destination:).md)
+  Associates a destination view with a presented data type for use within a navigation stack.
+- [func navigationDestination<V>(isPresented: Binding<Bool>, destination: () -> V) -> some View](view/navigationdestination(ispresented:destination:).md)
+  Associates a destination view with a binding that can be used to push the view onto a [`NavigationStack`](navigationstack.md).
+- [func navigationDestination<D, C>(item: Binding<Optional<D>>, destination: (D) -> C) -> some View](view/navigationdestination(item:destination:).md)
+  Associates a destination view with a bound value for use within a navigation stack or navigation split view
+- [func navigationSplitViewColumnWidth(CGFloat) -> some View](view/navigationsplitviewcolumnwidth(_:).md)
+  Sets a fixed, preferred width for the column containing this view.
+- [func navigationSplitViewColumnWidth(min: CGFloat?, ideal: CGFloat, max: CGFloat?) -> some View](view/navigationsplitviewcolumnwidth(min:ideal:max:).md)
+  Sets a flexible, preferred width for the column containing this view.
+- [func navigationTransition(some NavigationTransition) -> some View](view/navigationtransition(_:).md)
+  Sets the navigation transition style for this view.
+
 
 ---
 

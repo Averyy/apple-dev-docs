@@ -3,10 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift
@@ -22,6 +18,7 @@ object AssignProfileResponse
 
 - `devices` (AssignProfileResponse.Devices)
 - `profile_uuid` (string)
+- `retry_after_seconds` (integer)
 
 ## See Also
 

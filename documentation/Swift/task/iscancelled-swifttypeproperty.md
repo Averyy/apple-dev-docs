@@ -24,7 +24,13 @@ static var isCancelled: Bool { get }
 
 After the value of this property becomes `true`, it remains `true` indefinitely. There is no way to uncancel a task.
 
-> **Note**: `checkCancellation()`
+##### Interaction with Task Cancellation Shields
+
+Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
+
+> **Note**: [`checkCancellation()`](task/checkcancellation().md)
+
+> **Note**: `withTaskCancellationShield(operation:)`
 
 ## See Also
 

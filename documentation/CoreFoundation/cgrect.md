@@ -31,6 +31,7 @@ struct CGRect
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](cgrect/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 - [var dictionaryRepresentation: CFDictionary](cgrect/dictionaryrepresentation.md)
+- [var formattedDescription: String](cgrect/formatteddescription.md)
 - [var height: CGFloat](cgrect/height.md)
 - [var integral: CGRect](cgrect/integral.md)
 - [var isEmpty: Bool](cgrect/isempty.md)
@@ -74,6 +75,7 @@ struct CGRect
 ### Conforms To
 - [Animatable](../SwiftUI/Animatable.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)

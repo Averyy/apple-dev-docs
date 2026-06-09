@@ -11,7 +11,7 @@ The width and height of a map region.
 ## Declaration
 
 ```swift
-class CoordinateSpan
+class CoordinateSpan implements CoordinateSpanData
 ```
 
 #### Overview
@@ -23,6 +23,8 @@ You use the delta values in a coordinate span to indicate the desired zoom level
 ### Creating a coordinate span
 - [new CoordinateSpan(latitudeDelta, longitudeDelta)](coordinatespan/coordinatespanconstructor.md)
   Creates a new coordinate span object with the specified latitude and longitude deltas.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 ### Defining the span
 - [latitudeDelta](coordinatespan/latitudedelta.md)
   The amount of north-to-south distance (in degrees) to display for the map region.
@@ -37,12 +39,23 @@ You use the delta values in a coordinate span to indicate the desired zoom level
 - [toString()](coordinatespan/tostring.md)
   Returns a string representation of the coordinate span object.
 
+## Relationships
+
+### Conforms To
+- [CoordinateSpanData](coordinatespandata.md)
+
 ## See Also
 
 - [class Coordinate](coordinate.md)
   An object representing the latitude and longitude for a point on the Earth’s surface.
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
 - [class CoordinateRegion](coordinateregion.md)
   A rectangular area on a map that a center coordinate and a span define, in degrees of latitude and longitude.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 - [class BoundingRegion](boundingregion.md)
   A rectangular area on a map, which coordinates of the rectangle’s northeast and southwest corners define.
 

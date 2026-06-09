@@ -17,6 +17,7 @@ A progress view that uses a circular gauge to indicate the partial completion of
 ## Declaration
 
 ```swift
+nonisolated
 struct CircularProgressViewStyle
 ```
 

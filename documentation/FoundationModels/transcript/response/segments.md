@@ -11,6 +11,7 @@ Ordered prompt segments.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,8 @@ var segments: [Transcript.Segment]
 
 - [var assetIDs: [String]](transcript/response/assetids.md)
   Version aware identifiers for all assets used to generate this response.
+- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/response/metadata.md)
+  Metadata associated with generating the response.
 
 
 ---

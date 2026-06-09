@@ -6,8 +6,7 @@
 Fetch metadata for genres from the catalog by using their identifiers.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.2+
 
 #### Discussion
 
@@ -45,8 +44,6 @@ Fetch metadata for genres from the catalog by using their identifiers.
 
 ## See Also
 
-- [Fetch a apps resource's relationship](fetch-a-apps-resource's-relationship.md)
-- [Fetch a books resource's relationship](fetch-a-books-resource's-relationship.md)
 - [Get a Genre](get-a-genre.md)
   Fetch metadata for a genre from the catalog by using its identifier.
 

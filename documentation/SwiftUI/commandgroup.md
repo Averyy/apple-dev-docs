@@ -15,6 +15,7 @@ Groups of controls that you can add to existing command menus.
 ## Declaration
 
 ```swift
+nonisolated
 struct CommandGroup<Content> where Content : View
 ```
 
@@ -54,7 +55,7 @@ In macOS, SwiftUI realizes command groups as collections of menu items in a menu
 - [struct CommandMenu](commandmenu.md)
   Command menus are stand-alone, top-level containers for controls that perform related, app-specific commands.
 - [struct CommandsBuilder](commandsbuilder.md)
-  Constructs command sets from multi-expression closures. Like `ViewBuilder`, it supports up to ten expressions in the closure body.
+  Constructs command sets from multi-expression closures. Like `ContentBuilder`, it supports up to ten expressions in the closure body.
 - [struct CommandGroupPlacement](commandgroupplacement.md)
   The standard locations that you can place new command groups relative to.
 

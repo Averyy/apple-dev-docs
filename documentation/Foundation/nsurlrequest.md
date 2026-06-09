@@ -118,10 +118,14 @@ If you implement a custom URL protocol by subclassing [`URLProtocol`](urlprotoco
 - [init?(coder: NSCoder)](nsurlrequest/init(coder:).md)
 ### Instance Properties
 - [var allowsPersistentDNS: Bool](nsurlrequest/allowspersistentdns.md)
+  A Boolean value that indicates whether storing and usage of DNS answers in a persistent per-process cache is allowed.
 - [var allowsUltraConstrainedNetworkAccess: Bool](nsurlrequest/allowsultraconstrainednetworkaccess.md)
+  A Boolean value that indicates whether a connection created with this request is allowed to use network interfaces which have been marked as ultra constrained.
 - [var assumesHTTP3Capable: Bool](nsurlrequest/assumeshttp3capable.md)
+  A Boolean value that indicates whether the server is assumed to support HTTP/3.
 - [var cookiePartitionIdentifier: String?](nsurlrequest/cookiepartitionidentifier.md)
 - [var requiresDNSSECValidation: Bool](nsurlrequest/requiresdnssecvalidation.md)
+  A Boolean value that indicates whether a request requires DNSSEC validation during DNS lookup.
 
 ## Relationships
 

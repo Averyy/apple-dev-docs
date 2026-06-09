@@ -17,8 +17,12 @@ Compose a custom view by combining built-in views that SwiftUI provides with oth
 ### Creating a view
 - [Declaring a custom view](declaring-a-custom-view.md)
   Define views and assemble them into a view hierarchy.
+- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [protocol View](view.md)
   A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
+- [typealias ContentBuilder](contentbuilder.md)
+  A custom parameter attribute that constructs views and other content types from closures.
 - [struct ViewBuilder](viewbuilder.md)
   A custom parameter attribute that constructs views from closures.
 ### Modifying a view
@@ -49,6 +53,15 @@ Compose a custom view by combining built-in views that SwiftUI provides with oth
   Adds an action to perform before this view appears.
 - [func onDisappear(perform: (() -> Void)?) -> some View](view/ondisappear(perform:).md)
   Adds an action to perform after this view disappears.
+### Assigning tasks
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+  Adds an asynchronous task to perform before this view appears.
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(name:priority:file:line:_:).md)
+  Adds an asynchronous task to perform before this view appears.
 ### Managing the view hierarchy
 - [func id<ID>(ID) -> some View](view/id(_:).md)
   Binds a view’s identity to the given proxy value.
@@ -56,6 +69,11 @@ Compose a custom view by combining built-in views that SwiftUI provides with oth
   Sets the unique tag value of this view.
 - [func equatable() -> EquatableView<Self>](view/equatable.md)
   Prevents the view from updating its child view when its new value is the same as its old value.
+### Supporting content types
+- [typealias EmptyContent](emptycontent.md)
+  Content which contains nothing.
+- [struct TupleContent](tuplecontent.md)
+  Content created from a tuple of content to be treated as siblings.
 ### Supporting view types
 - [struct AnyView](anyview.md)
   A type-erased view.

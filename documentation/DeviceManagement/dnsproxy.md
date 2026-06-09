@@ -11,8 +11,6 @@ The payload that configures DNS proxies.
 - Mac Catalyst 11.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,12 +29,12 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, visionOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -93,9 +91,10 @@ Beginning with iOS 15, this profile is unsupervised and needs to be installed th
 ## Properties
 
 - `AppBundleIdentifier` (string) *(required)*: The bundle identifier of the app containing the DNS proxy network extension.
-- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment.
+- `DNSProxyUUID` (string): A globally unique identifier for this DNS proxy configuration. The proxy processes DNS lookups traffic for managed apps with the same `DNSProxyUUID` in their app attributes. This key is required for user enrollment. Available: iOS 16+ | iPadOS 16+ | visionOS 1.1+
 - `ProviderBundleIdentifier` (string): The bundle identifier of the DNS proxy network extension to use. Declaring the bundle identifier is useful for apps that contain more than one DNS proxy extension.
 - `ProviderConfiguration` (DNSProxy.ProviderConfiguration): The dictionary of vendor-specific configuration items.
+- `ProviderDesignatedRequirement` (string): The designated requirement string that the system embeds in the code signature of the DNS proxy network extension. Use this to correctly identify the DNS proxy extension when `ProviderBundleIdentifier` is present. Available: macOS 10.15+
 
 ## See Also
 

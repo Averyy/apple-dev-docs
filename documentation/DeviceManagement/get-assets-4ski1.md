@@ -6,15 +6,14 @@
 Get the set of assets that your organization manages.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-- [Managing Assets](managing-assets.md)
+- [Using paginated endpoints](using-paginated-endpoints.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Managing assets](managing-assets.md)
 
 #### Discussion
 
@@ -109,8 +108,8 @@ Get the set of assets that your organization manages.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
+- [Apps and books metadata for organizations](apps-and-books-metadata-for-organizations.md)
+  Get metadata for apps and books your organization owns.
 
 ## Endpoint
 
@@ -128,6 +127,7 @@ Get the set of assets that your organization manages.
 - `maxAssignedCount` (int32): The filter for the maximum inclusive assets assigned count.
 - `minAssignedCount` (int32): The filter for the minimum inclusive assets assigned count.
 - `adamId` (string): The filter for the asset product unique identifier.
+- `unlimited` (boolean)
 
 ## See Also
 

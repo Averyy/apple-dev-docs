@@ -6,8 +6,7 @@
 Notify Apple’s servers that your organization no longer owns the specified devices.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Topics
 

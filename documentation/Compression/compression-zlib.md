@@ -44,6 +44,10 @@ deflateInit2(zstream,5,Z_DEFLATED,-15,8,Z_DEFAULT_STRATEGY)
   The Brotli compression algorithm, which is recommended for text compression.
 - [var COMPRESSION_LZBITMAP: compression_algorithm](compression_lzbitmap.md)
   The LZBITMAP compression algorithm, which is designed to exploit the vector instruction set of current CPUs.
+- [var COMPRESSION_LZMESH: compression_algorithm](compression_lzmesh.md)
+  The LZMESH compression algorithm, which is recommended for fast, general-purpose compression on Apple platforms.
+- [var COMPRESSION_LZRAVEN: compression_algorithm](compression_lzraven.md)
+  The LZRAVEN compression algorithm, which is recommended for high-compression ratio with fast decoding on Apple platforms.
 
 
 ---

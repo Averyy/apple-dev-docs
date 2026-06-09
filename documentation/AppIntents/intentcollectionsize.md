@@ -38,6 +38,7 @@ struct IntentCollectionSize
   Return this object to provide an advanced list of options, optionally divided in sections.
 - [struct IntentItemSection](intentitemsection.md)
   An object you use to divide dynamic options into sections.
+- [struct IntentResponseStream](intentresponsestream.md)
 
 
 ---

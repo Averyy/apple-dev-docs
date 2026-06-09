@@ -36,6 +36,8 @@ Develop your system extension with Endpoint Security and package it in an app th
 ### Structures
 - [struct es_cs_validation_category_t](es_cs_validation_category_t.md)
   es_cs_validation_category
+- [struct es_deadline_miss_mode_t](es_deadline_miss_mode_t.md)
+  Deadline miss mode for ES clients
 - [struct es_event_tcc_modify_t](es_event_tcc_modify_t.md)
 - [struct es_tcc_authorization_reason_t](es_tcc_authorization_reason_t.md)
   ess_tcc_authorization_reason_t
@@ -56,6 +58,12 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_CS_VALIDATION_CATEGORY_PLATFORM: es_cs_validation_category_t](es_cs_validation_category_platform.md)
 - [var ES_CS_VALIDATION_CATEGORY_ROSETTA: es_cs_validation_category_t](es_cs_validation_category_rosetta.md)
 - [var ES_CS_VALIDATION_CATEGORY_TESTFLIGHT: es_cs_validation_category_t](es_cs_validation_category_testflight.md)
+- [var ES_DEADLINE_MISS_MODE_FAIL_CLOSED: es_deadline_miss_mode_t](es_deadline_miss_mode_fail_closed.md)
+  Deny the operation when client fails to respond, but don’t kill the client
+- [var ES_DEADLINE_MISS_MODE_FAIL_OPEN: es_deadline_miss_mode_t](es_deadline_miss_mode_fail_open.md)
+  Allow the operation when client fails to respond, but don’t kill the client
+- [var ES_DEADLINE_MISS_MODE_KILL: es_deadline_miss_mode_t](es_deadline_miss_mode_kill.md)
+  Kill the client when it fails to respond to an auth event (default behavior)
 - [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](es_event_type_notify_tcc_modify.md)
 - [var ES_EVENT_TYPE_RESERVED_0: es_event_type_t](es_event_type_reserved_0.md)
 - [var ES_EVENT_TYPE_RESERVED_1: es_event_type_t](es_event_type_reserved_1.md)
@@ -106,9 +114,21 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_TCC_IDENTITY_TYPE_EXECUTABLE_PATH: es_tcc_identity_type_t](es_tcc_identity_type_executable_path.md)
 - [var ES_TCC_IDENTITY_TYPE_FILE_PROVIDER_DOMAIN_ID: es_tcc_identity_type_t](es_tcc_identity_type_file_provider_domain_id.md)
 - [var ES_TCC_IDENTITY_TYPE_POLICY_ID: es_tcc_identity_type_t](es_tcc_identity_type_policy_id.md)
-### Type Aliases
-- [typealias es_statfs_t](es_statfs_t.md)
-  This typedef is no longer used, but exists for API backwards compatibility.
+### Functions
+- [func es_get_deadline_max_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_max_milliseconds(_:_:_:).md)
+  Get the current maximum deadline in milliseconds for a specific event type
+- [func es_get_deadline_min_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_min_milliseconds(_:_:_:).md)
+  Get the current minimum deadline in milliseconds for a specific event type
+- [func es_get_deadline_miss_mode(OpaquePointer, UnsafeMutablePointer<es_deadline_miss_mode_t>) -> es_return_t](es_get_deadline_miss_mode(_:_:).md)
+  Get the current deadline miss mode for the specified client
+- [func es_new_descendants_client(UnsafeMutablePointer<OpaquePointer?>, es_handler_block_t) -> es_new_client_result_t](es_new_descendants_client(_:_:).md)
+  Create a new ES client scoped to descendant processes only.
+- [func es_set_deadline_max_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](es_set_deadline_max_milliseconds(_:_:_:_:).md)
+  Set the maximum deadline in milliseconds for specified auth event types for this client
+- [func es_set_deadline_min_milliseconds(OpaquePointer, UnsafePointer<es_event_type_t>, UInt32, UInt32) -> es_return_t](es_set_deadline_min_milliseconds(_:_:_:_:).md)
+  Set the minimum deadline in milliseconds for specified auth event types for this client
+- [func es_set_deadline_miss_mode(OpaquePointer, es_deadline_miss_mode_t) -> es_return_t](es_set_deadline_miss_mode(_:_:).md)
+  Set the deadline miss mode for the specified client
 
 
 ---

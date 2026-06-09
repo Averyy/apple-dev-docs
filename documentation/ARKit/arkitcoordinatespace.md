@@ -6,6 +6,7 @@
 An object which represents an ARKit coordinate space.
 
 **Availability**:
+- macOS 27.0+ (Beta)
 - visionOS 26.0+
 
 ## Declaration
@@ -18,10 +19,10 @@ struct ARKitCoordinateSpace
 
 ### Instance Properties
 - [var ancestorSpace: WorldReferenceCoordinateSpace?](arkitcoordinatespace/ancestorspace.md)
-  Returns the parent space of this ARKit coordinate space.
+  The parent space of this ARKit coordinate space.
 ### Instance Methods
 - [func ancestorFromSpaceTransformFloat() -> ProjectiveTransform3DFloat](arkitcoordinatespace/ancestorfromspacetransformfloat.md)
-  Returns the transformation to ancestor space from this ARKit coordinate space.
+  Get the transformation to ancestor space from this ARKit coordinate space.
 ### Enumerations
 - [ARKitCoordinateSpace.Correction](arkitcoordinatespace/correction.md)
   A correction type to apply on coordinate spaces returned from ARKit APIs.
@@ -46,6 +47,8 @@ struct ARKitCoordinateSpace
   The identity, location, and orientation of an object in world space.
 - [protocol TrackableAnchor](trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
+- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+  A type that provides an ARKit coordinate space with an optional correction applied.
 
 
 ---

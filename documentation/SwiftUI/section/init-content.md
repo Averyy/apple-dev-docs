@@ -17,7 +17,7 @@ Creates a section with the provided section content.
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

@@ -1,4 +1,4 @@
-# Read Leaderboard Information
+# Get leaderboards information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -39,7 +39,7 @@ Get all leaderboards and related information for a Game Center detail.
   Get a list of leaderboard resource IDs for a specific Game Center detail.
 - [Read Leaderboard Releases](get-v1-gamecenterdetails-_id_-leaderboardreleases.md)
   List all leaderboard releases for a Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/leaderboardReleases](get-v1-gamecenterdetails-_id_-relationships-leaderboardreleases.md)
+- [List leaderboard release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-leaderboardreleases.md)
 - [List Leaderboards](get-v1-gamecenterdetails-_id_-relationships-gamecenterleaderboards.md)
   ​List all leaderboards for a Game Center detail.
 

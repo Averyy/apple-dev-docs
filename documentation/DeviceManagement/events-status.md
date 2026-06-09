@@ -6,14 +6,14 @@
 Retrieve the status of an asynchronous event.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Handling Error Responses](handling-error-responses.md)
-- [Managing Assets](managing-assets.md)
-- [Managing Users](managing-users.md)
+- [Handling error responses](handling-error-responses.md)
+- [Managing assets](managing-assets.md)
+- [Managing users](managing-users.md)
+- [Subscribing to notifications](subscribing-to-notifications.md)
 
 #### Discussion
 
@@ -42,6 +42,7 @@ Retrieve the status of an asynchronous event.
 
 ### Response
 - [object StatusResponse](statusresponse.md)
+  Status of an asynchronous event, including event type, current status, completion counts, and any failure details.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 

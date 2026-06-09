@@ -20,26 +20,29 @@
 
 ## Topics
 
-### Protocols
-- [MarkupToolbarViewController.Delegate](markuptoolbarviewcontroller/delegate-swift.protocol.md)
-### Initializers
-- [init?(coder: NSCoder)](markuptoolbarviewcontroller/init(coder:).md)
+### Creating a toolbar
 - [init(supportedFeatureSet: FeatureSet)](markuptoolbarviewcontroller/init(supportedfeatureset:).md)
   Creates a markup toolbar view controller.
-### Instance Properties
+- [init?(coder: NSCoder)](markuptoolbarviewcontroller/init(coder:).md)
+### Configuring the toolbar
+- [let supportedFeatureSet: FeatureSet](markuptoolbarviewcontroller/supportedfeatureset.md)
+  The supported features of this toolbar.
 - [var delegate: (any MarkupToolbarViewController.Delegate)?](markuptoolbarviewcontroller/delegate-swift.property.md)
   The delegate for responding to user actions.
+### Managing touch modes
 - [var indirectPointerTouchModes: [PaperMarkupViewController.TouchMode]](markuptoolbarviewcontroller/indirectpointertouchmodes.md)
   The modes available for a user to select.
+- [var selectedIndirectPointerTouchMode: PaperMarkupViewController.TouchMode](markuptoolbarviewcontroller/selectedindirectpointertouchmode.md)
+  The currently selected pointer mode.
+### Managing drawing tools
 - [var selectedDrawingTool: any PKTool](markuptoolbarviewcontroller/selecteddrawingtool.md)
   The currently selected drawing tool.
 - [var selectedDrawingToolItem: PKToolPickerItem](markuptoolbarviewcontroller/selecteddrawingtoolitem.md)
   The currently selected drawing tool.
-- [var selectedIndirectPointerTouchMode: PaperMarkupViewController.TouchMode](markuptoolbarviewcontroller/selectedindirectpointertouchmode.md)
-  The currently selected pointer mode.
-- [let supportedFeatureSet: FeatureSet](markuptoolbarviewcontroller/supportedfeatureset.md)
-  The supported features of this toolbar.
-### Instance Methods
+### Responding to changes
+- [MarkupToolbarViewController.Delegate](markuptoolbarviewcontroller/delegate-swift.protocol.md)
+  The delegate for a PaperKit toolbar.
+### Managing view lifecycle
 - [func viewDidLoad()](markuptoolbarviewcontroller/viewdidload.md)
 
 ## Relationships
@@ -79,7 +82,7 @@
 ## See Also
 
 - [class PaperMarkupViewController](papermarkupviewcontroller.md)
-  A view controller for interactively creating, and showing markup.
+  A view controller for interactively creating and showing markup.
 - [class MarkupEditViewController](markupeditviewcontroller.md)
   A view controller that manages the interface for inserting content into a canvas.
 

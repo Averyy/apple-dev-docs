@@ -20,10 +20,6 @@ An interface for converting between an entity’s identifier and its string repr
 protocol EntityIdentifierConvertible
 ```
 
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-
 #### Overview
 
 Every entity provides a stable, unique identifier that the framework uses as a concrete reference to the entity while mediating between your app and other parts of the system. To enforce this requirement, the [`AppEntity`](appentity.md) protocol inherits the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
@@ -57,15 +53,25 @@ extension MusicItemID: EntityIdentifierConvertible {
 
 ### Conforming Types
 - [FileEntityIdentifier](fileentityidentifier.md)
+- [SyncableEntityIdentifier](syncableentityidentifier.md)
 
 ## See Also
 
-- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
-  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
 - [struct EntityIdentifier](entityidentifier.md)
   A type that uniquely identifies a specific instance of an app entity.
 - [struct FileEntityIdentifier](fileentityidentifier.md)
   An identifier for an app entity that refers to a document or other file.
+- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
+- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+  A type-safe wrapper you use to specify different local and stable identifiers for an entity.
+- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+  A unique identifier for an app entity instance within an application.
+- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+  A unique identifier for an app entity or transient app entity type within an application bundle.
+- [protocol AppEntityAnnotatable](appentityannotatable.md)
+  An interface that system types adopt and use to manage their relationship to app entities.
+- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

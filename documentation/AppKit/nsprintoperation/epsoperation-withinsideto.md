@@ -30,7 +30,8 @@ The new `NSPrintOperation` object uses the default `NSPrintInfo` object. This me
 
 ## See Also
 
-- [Printing Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Printing/osxp_aboutprinting/osxp_aboutprt.html#//apple_ref/doc/uid/10000083i)
+- [class NSPrintOperation](nsprintoperation.md)
+  An object that controls operations that generate Encapsulated PostScript (EPS) code, Portable Document Format (PDF) code, or print jobs.
 - [func run() -> Bool](nsprintoperation/run.md)
   Runs the print operation on the current thread.
 - [class func epsOperation(with: NSView, inside: NSRect, to: NSMutableData, printInfo: NSPrintInfo) -> NSPrintOperation](nsprintoperation/epsoperation(with:inside:to:printinfo:).md)

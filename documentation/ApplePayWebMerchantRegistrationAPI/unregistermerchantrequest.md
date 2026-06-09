@@ -20,7 +20,9 @@ The following example shows the format of an `UnregisterMerchant` request.
 
 ```json
 {
-    "domainNames" : ["subdomain-1.example.com"],
+    "domainNames" : [
+        "subdomain-1.example.com"
+    ],
     "partnerInternalMerchantIdentifier": "ABC-123456",
     "reason": "merchant has closed their account"
 }

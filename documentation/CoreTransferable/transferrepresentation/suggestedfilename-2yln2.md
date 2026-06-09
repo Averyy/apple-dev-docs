@@ -36,7 +36,7 @@ Any transfer representation can be written to disk.
          DataRepresentation(exportedContentType: .png) { layer in
              layer.pngData()
          }
-         .suggestedFileName("Layer.png")
+         .suggestedFileName("Layer")
      }
  }
 ```

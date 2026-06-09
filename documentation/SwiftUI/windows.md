@@ -141,6 +141,10 @@ For design guidance, see [`Windows`](https://developer.apple.com/design/Human-In
   Configures the resize functionality for the window enclosing `self`.
 - [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](scene/windowbackgrounddragbehavior(_:).md)
   Configures the behavior of dragging a window by its background.
+- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
+- [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
+  Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 ### Interacting with volumes
 - [func onVolumeViewpointChange(updateStrategy: VolumeViewpointUpdateStrategy, initial: Bool, (Viewpoint3D, Viewpoint3D) -> Void) -> some View](view/onvolumeviewpointchange(updatestrategy:initial:_:).md)
   Adds an action to perform when the viewpoint of the volume changes.

@@ -45,6 +45,7 @@ class BAAppExtensionInfo
 
 - [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](badownloaderextension-qwaw/downloads(for:manifesturl:extensioninfo:).md)
 - [enum BAContentRequest](bacontentrequest.md)
+  The content request type used in the downloader extension.
 
 
 ---

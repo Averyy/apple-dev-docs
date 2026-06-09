@@ -22,8 +22,6 @@ var target: Measurement<UnitSpeed>
 
 - [var targetQuantity: HKQuantity](speedthresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target speed threshold.
-- [var metric: WorkoutAlertMetric](speedthresholdalert/metric.md)
-  The metric used to measure the speed.
 
 
 ---

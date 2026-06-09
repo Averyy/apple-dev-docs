@@ -43,7 +43,7 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
   Constructs a new span over the items within the supplied range of positions within this span.
 - [func extracting(some RangeExpression<Int>) -> Span<Element>](span/extracting(_:)-48neh.md)
   Constructs a new span over the items within the supplied range of positions within this span.
-- [func extracting((UnboundedRange_) -> ()) -> Span<Element>](span/extracting(_:)-57peb.md)
+- [func extracting(UnboundedRange) -> Span<Element>](span/extracting(_:)-57peb.md)
   Constructs a new span over all the items of this span.
 - [func extracting(droppingFirst: Int) -> Span<Element>](span/extracting(droppingfirst:).md)
   Returns a span over all but the given number of initial elements.
@@ -61,6 +61,9 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
   Returns the indices within `self` where the memory represented by `other` is located, or `nil` if `other` is not located within `self`.
 - [func isIdentical(to: Span<Element>) -> Bool](span/isidentical(to:).md)
   Returns a Boolean value indicating whether two `Span` instances refer to the same region in memory.
+- [func isTriviallyIdentical(to: Span<Element>) -> Bool](span/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](span/withbytes(_:).md)
 - [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](span/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the viewed contiguous storage.
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](span/withunsafebytes(_:).md)
@@ -77,11 +80,15 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
 ### Type Aliases
 - [typealias Index](span/index.md)
   The representation for a position in `Span`.
+### Default Implementations
+- [BorrowingSequence Implementations](span/borrowingsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
+- [BorrowingSequence](borrowingsequence.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

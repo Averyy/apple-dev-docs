@@ -21,31 +21,31 @@ To update a workflow’s actions, use the [`Workflows`](workflows.md) resource.
 ## Topics
 
 ### Getting Build Actions
-- [Read Build Action Information](get-v1-cibuildactions-_id_.md)
+- [Read build action information](get-v1-cibuildactions-_id_.md)
   Get information about a specific action Xcode Cloud performed as part of a build.
-- [List All Artifacts for a Build Action](get-v1-cibuildactions-_id_-artifacts.md)
+- [List all artifacts for a build action](get-v1-cibuildactions-_id_-artifacts.md)
   List all artifacts Xcode Cloud created when it performed an action.
-- [Read the Xcode Cloud Build Information for a Build Action](get-v1-cibuildactions-_id_-buildrun.md)
+- [Read the xcode cloud build information for a build action](get-v1-cibuildactions-_id_-buildrun.md)
   Get Xcode Cloud build information for a given build action.
-- [List All Issues for a Build Action](get-v1-cibuildactions-_id_-issues.md)
+- [List all issues for a build action](get-v1-cibuildactions-_id_-issues.md)
   List all issues that occurred for a specific action that Xcode Cloud performed as part of a build.
-- [List All Test Results for an Xcode Cloud Test Action](get-v1-cibuildactions-_id_-testresults.md)
+- [List all test results for an xcode cloud test action](get-v1-cibuildactions-_id_-testresults.md)
   List all test results for a specific test action Xcode Cloud performed as part of a build.
-- [GET /v1/ciBuildActions/{id}/relationships/artifacts](get-v1-cibuildactions-_id_-relationships-artifacts.md)
-- [GET /v1/ciBuildActions/{id}/relationships/buildRun](get-v1-cibuildactions-_id_-relationships-buildrun.md)
-- [GET /v1/ciBuildActions/{id}/relationships/issues](get-v1-cibuildactions-_id_-relationships-issues.md)
-- [GET /v1/ciBuildActions/{id}/relationships/testResults](get-v1-cibuildactions-_id_-relationships-testresults.md)
+- [List artifact IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-artifacts.md)
+- [Get the build run ID for a CI build action](get-v1-cibuildactions-_id_-relationships-buildrun.md)
+- [List issue IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-issues.md)
+- [List test result IDs for a CI build action](get-v1-cibuildactions-_id_-relationships-testresults.md)
 ### Objects
 - [object CiBuildAction](cibuildaction.md)
-  The data structure that represents a Build Actions resource.
+  The execution result of a specific action step within an Xcode Cloud build run, including its status and issues.
 - [object CiArtifactsResponse](ciartifactsresponse.md)
-  A response that contains a list of Artifacts resources.
+  The response body for endpoints that list artifacts produced by an Xcode Cloud build action.
 - [object CiBuildActionResponse](cibuildactionresponse.md)
-  A response that contains a single Build Actions resource.
+  The response body for endpoints that read a single Xcode Cloud build action.
 - [object CiIssuesResponse](ciissuesresponse.md)
-  A response that contains a list of Issues resources.
+  The response body for endpoints that list issues from an Xcode Cloud build action.
 - [object CiTestResultsResponse](citestresultsresponse.md)
-  A response that contains a list of Test Results resources.
+  The response body for endpoints that list test results from an Xcode Cloud build action.
 - [object CiBuildActionArtifactsLinkagesResponse](cibuildactionartifactslinkagesresponse.md)
 - [object CiBuildActionBuildRunLinkageResponse](cibuildactionbuildrunlinkageresponse.md)
 - [object CiBuildActionIssuesLinkagesResponse](cibuildactionissueslinkagesresponse.md)

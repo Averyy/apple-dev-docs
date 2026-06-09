@@ -1,4 +1,4 @@
-# Get Challenge Releases for a Game Center Detail
+# Get challenge releases for a game center detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -25,7 +25,7 @@ List all challenge release information for a specific Game Center detail.
 
 ## See Also
 
-- [Read Challenge Release IDs for a Game Center Detail](get-v1-gamecenterdetails-_id_-relationships-challengereleases.md)
+- [Read challenge release ids for a game center detail](get-v1-gamecenterdetails-_id_-relationships-challengereleases.md)
   List all the challenge release IDs for a specific Game Center detail.
 
 

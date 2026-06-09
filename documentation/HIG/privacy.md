@@ -113,9 +113,9 @@ Developer access to device cameras works differently in visionOS than it does in
 [App Tracking Transparency](../AppTrackingTransparency.md)
 
 #### Videos
+- [Meet Trust Insights](https://developer.apple.com/videos/play/wwdc2026/379) - Uncover how Trust Insights can help protect people from social scams and coercion. Explore how this new framework uses privacy-preserving machine learning to detect when someone may be coached into risky actions. Find out how to integrate Trust Insights into your app, interpret its signals, and design thoughtful interventions that safeguard people while respecting their privacy.
 - [Integrate privacy into your development process](https://developer.apple.com/videos/play/wwdc2025/246) - Learn how to build privacy into your apps from the planning stages through deployment. We’ll cover practical ways to integrate privacy at each step of the development lifecycle, focusing on data minimization, on-device processing, and transparency and control. You’ll discover how to use Apple’s tools and frameworks to protect user data and create a privacy-respecting app experience. 
 - [What’s new in passkeys](https://developer.apple.com/videos/play/wwdc2025/279) - Discover how iOS, iPadOS, macOS, and visionOS 26 enhance passkeys. We’ll explore key updates including: the new account creation API for streamlined sign-up, keeping passkeys up-to-date, new ways to drive passkey upgrades through automatic passkey upgrades and passkey management endpoints, and the secure import/export of passkeys. Learn how these improvements enhance user experience and security, and how to implement these updates in your apps to provide a smoother, more secure authentication experience. To get the most out of this video, first watch “Meet passkeys” from WWDC22.
-- [What’s new in privacy](https://developer.apple.com/videos/play/wwdc2024/10123) - At Apple, we believe privacy is a fundamental human right. Learn about new and improved permission flows and other features that manage data in a privacy-preserving way, so that you can focus on creating great app experiences.
 
 ## Change log
 | Date | Changes |

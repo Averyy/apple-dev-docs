@@ -18,15 +18,6 @@ MapKit JS also provides interactive views for place details, and Look Around ima
 
 MapKit JS requires authorization through a Maps token for initialization and some API calls. To create a Maps token, see [`Creating a Maps token`](creating-a-maps-token.md).
 
-##### Browser Compatibility
-
-MapKit JS supports the following browser versions:
-
-- Firefox 79 or later
-- Google Chrome 109 or later (desktop mode only)
-- Microsoft Edge
-- Safari 13.1 or later
-
 ## Topics
 
 ### Essentials
@@ -36,14 +27,15 @@ MapKit JS supports the following browser versions:
   Generate your token to access MapKit services with proper authorization.
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
   Link to the most recent autoupdating version of MapKit JS, or a version of your choice.
+- [Understanding Browser Support](browser-support.md)
+  Supported browsers and compatibility information for MapKit JS.
 - [class mapkit](mapkit.md)
   The JavaScript API for embedding Apple Maps on your website.
 ### Version notes
 - [MapKit JS Release Notes](mapkit-js-release-notes.md)
   Learn about updates, bug fixes, and API changes for MapKit JS.
-### Enumerations
-- [const RegionPriority](regionpriority.md)
-  A value that indicates the importance of the configured region.
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+  Adopt modern web platform conventions introduced in MapKit JS version 6.
 
 ## See Also
 

@@ -17,16 +17,16 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Self, Self) -> Bool](uint32/_(_:_:)-5v5ah.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](uint32/_(_:_:)-67i4z.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func > (UInt32, UInt32) -> Bool](uint32/_(_:_:)-9eky4.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](uint32/_=(_:_:)-3rq79.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func > (borrowing Self, borrowing Self) -> Bool](uint32/_(_:_:)-9s96g.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](uint32/_=(_:_:)-1bqf5.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func <= (UInt32, UInt32) -> Bool](uint32/_=(_:_:)-573ra.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](uint32/_=(_:_:)-9dxms.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](uint32/_=(_:_:)-9xu82.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 - [static func >= (UInt32, UInt32) -> Bool](uint32/_=(_:_:)-apxe.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 

@@ -38,9 +38,9 @@ bytes.withUnsafeBufferPointer { ptr in
 
 ## See Also
 
-- [func withCString<Result>((UnsafePointer<Int8>) throws -> Result) rethrows -> Result](string/withcstring(_:).md)
+- [func withCString<Result, E>((UnsafePointer<Int8>) throws(E) -> Result) throws(E) -> Result](string/withcstring(_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of UTF-8 code units.
-- [func withCString<Result, TargetEncoding>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws -> Result) rethrows -> Result](string/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](string/withcstring(encodedas:_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 
 

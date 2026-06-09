@@ -9,7 +9,6 @@ The total time that electricity-consuming devices actively ran.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

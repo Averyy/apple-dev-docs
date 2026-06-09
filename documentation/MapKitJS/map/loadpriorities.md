@@ -11,17 +11,17 @@ A static property that allows you to access the load priority enumeration.
 ## Declaration
 
 ```swift
-static LoadPriorities: typeof LoadPriority;
+static get LoadPriorities(): typeof MapLoadPriority;
 ```
 
-#### Discussion
+## Mentions
 
-Use this object to access the [`LoadPriority`](loadpriority.md) enumeration with `mapkit.Map.LoadPriorities`.
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 ## See Also
 
 - [ColorSchemes](map/colorschemes.md)
-  A static property that allows you to access to access the look color scheme enumeration.
+  A static property that lets you access the color scheme enumeration.
 - [Distances](map/distances-data.var.md)
   A static property that allows you to access the distance enumeration.
 - [MapTypes](map/maptypes.md)

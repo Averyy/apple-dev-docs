@@ -26,6 +26,13 @@ final var supportedLanguages: Set<Locale.Language> { get }
 
 To check if a given locale is considered supported by the model, use `supportsLocale(_:)`, which will also take into consideration language fallbacks.
 
+## See Also
+
+- [var contextSize: Int](systemlanguagemodel/contextsize.md)
+  Returns the maximum context size (in tokens) supported by the model.
+- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
+  Returns a Boolean indicating whether the given locale is supported by the model.
+
 
 ---
 

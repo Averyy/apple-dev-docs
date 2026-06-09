@@ -17,6 +17,8 @@ Learn how to incorporate live speech-to-text transcription into your app with Sp
 
 ## See Also
 
+- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
+  Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [actor SpeechAnalyzer](speechanalyzer.md)
   Analyzes spoken audio content in various ways and manages the analysis session.
 - [class AssetInventory](assetinventory.md)

@@ -30,6 +30,12 @@ Call this method when the user stops engaging in the associated activity and tha
   Marks the activity as currently in use by the user.
 - [func resignCurrent()](nsuseractivity/resigncurrent.md)
   Marks this activity object as inactive without invalidating it.
+- [var needsSave: Bool](nsuseractivity/needssave.md)
+  A Boolean value that indicates whether the state of the activity needs to be updated.
+- [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](nsuseractivity/deleteallsaveduseractivities(completionhandler:).md)
+  Deletes all user activities created by your app.
+- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
+  Deletes user activities created by your app that have the specified persistent identifiers.
 
 
 ---

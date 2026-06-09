@@ -32,8 +32,6 @@ The `userInfo` dictionary may also have custom data defined by the provider acco
 
 If you implement [`applicationDidFinishLaunching(_:)`](nsapplicationdelegate/applicationdidfinishlaunching(_:).md) and a push notification for the application has recently arrived, this method is not invoked for that push notification. In this case, you can access the JSON data in the [`userInfo`](https://developer.apple.com/documentation/Foundation/NSNotification/userInfo) dictionary of the passed-in [`NSNotification`](https://developer.apple.com/documentation/Foundation/NSNotification) object.
 
-For more information about how to implement push notifications in your application, see [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
-
 ## Parameters
 
 - `application`: The application that received the remote notification.

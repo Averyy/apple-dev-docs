@@ -11,8 +11,6 @@ The command to force validation of developer and universal provisioning profiles
 - Mac Catalyst 9.2+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -74,7 +74,7 @@ let cdaQuery = HKDocumentQuery(documentType: cdaType,
 
 ##### Subclassing Document Queries
 
-Like many HealthKit classes, the `HKDocumentQuery` class should not be subclassed.
+As with many HealthKit classes, don’t subclass the [`HKDocumentQuery`](hkdocumentquery.md) class.
 
 ## Topics
 

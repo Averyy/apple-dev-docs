@@ -11,7 +11,7 @@ An array of annotations that the framework groups together in a cluster.
 ## Declaration
 
 ```swift
-get memberAnnotations(): Annotation[] | undefined;
+get memberAnnotations(): Annotation[] | null;
 ```
 
 #### Discussion

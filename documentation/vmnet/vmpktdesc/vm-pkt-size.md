@@ -18,7 +18,7 @@ var vm_pkt_size: Int
 ## See Also
 
 - [var vm_flags: UInt32](vmpktdesc/vm_flags.md)
-  Option flags. Should be set to `0` on read.
+  Option flags associated with the packet.
 - [var vm_pkt_iov: UnsafeMutablePointer<iovec>](vmpktdesc/vm_pkt_iov.md)
   An array of packet buffers.
 - [var vm_pkt_iovcnt: UInt32](vmpktdesc/vm_pkt_iovcnt.md)

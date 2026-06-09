@@ -26,7 +26,7 @@ Do not instantiate `HKCDADocument` objects directly. Instead, create a new [`HKC
 
 `HKCDADocument` objects are immutable. When you create a new document sample, HealthKit parses the title, patient name, author name, and custodian name from the XML to populates the document object’s properties. These properties cannot be changed.
 
-Like many HealthKit classes, the [`HKCDADocument`](hkcdadocument.md) class should not be subclassed.
+As with many HealthKit classes, don’t subclass the [`HKCDADocument`](hkcdadocument.md) class.
 
 ## Topics
 

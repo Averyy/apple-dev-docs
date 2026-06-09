@@ -68,6 +68,8 @@ All interaction between your protocol and the connection occurs through this obj
 ### Instance Properties
 - [var options: NWProtocolFramer.Options](nwprotocolframer/instance/options.md)
 ### Instance Methods
+- [func prependApplicationProtocolIgnoringReady(options: NWProtocolOptions) throws](nwprotocolframer/instance/prependapplicationprotocolignoringready(options:).md)
+  Dynamically add a protocol to a connection establishment attempt “above” the framer protocol. This means that the protocol above will start running once the framer becomes ready by calling markReady(). This can only be used with framers that return a value of willMarkReady to their start handlers. An example of using this functionality is adding a security protocol, like TLS, above a framer once that framer completes its initial handshake.
 - [func writeOutput<Output>(data: Output)](nwprotocolframer/instance/writeoutput(data:)-9axn3.md)
 
 ## Relationships

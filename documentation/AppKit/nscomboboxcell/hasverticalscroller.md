@@ -22,7 +22,6 @@ If you set this property to [`false`](https://developer.apple.com/documentation/
 
 ## See Also
 
-- [Combo Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ComboBox/ComboBox.html#//apple_ref/doc/uid/10000020i)
 - [func scrollItemAtIndexToTop(Int)](nscomboboxcell/scrollitematindextotop(_:).md)
   Scrolls the combo box’s pop-up list vertically so that the item at the given index is as close to the top as possible.
 - [var numberOfItems: Int](nscomboboxcell/numberofitems.md)

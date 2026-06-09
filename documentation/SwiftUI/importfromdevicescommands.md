@@ -11,6 +11,7 @@ A built-in set of commands that enables importing content from nearby devices.
 ## Declaration
 
 ```swift
+nonisolated
 struct ImportFromDevicesCommands
 ```
 

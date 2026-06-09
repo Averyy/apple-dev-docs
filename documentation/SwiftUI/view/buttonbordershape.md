@@ -39,18 +39,20 @@ The border shape affects buttons of the [`bordered`](primitivebuttonstyle/border
   A control that initiates an action.
 - [func buttonStyle(_:)](view/buttonstyle(_:).md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
-- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
-  Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
-- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
-  Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
 - [struct ButtonBorderShape](buttonbordershape.md)
   A shape used to draw a button’s border.
-- [struct ButtonRole](buttonrole.md)
-  A value that describes the purpose of a button.
+- [func buttonRepeatBehavior(ButtonRepeatBehavior) -> some View](view/buttonrepeatbehavior(_:).md)
+  Sets whether buttons in this view should repeatedly trigger their actions on prolonged interactions.
 - [struct ButtonRepeatBehavior](buttonrepeatbehavior.md)
   The options for controlling the repeatability of button actions.
+- [var buttonRepeatBehavior: ButtonRepeatBehavior](environmentvalues/buttonrepeatbehavior.md)
+  Whether buttons with this associated environment should repeatedly trigger their actions on prolonged interactions.
+- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
 - [struct ButtonSizing](buttonsizing.md)
   The sizing behavior of `Button`s and other button-like controls.
+- [struct ButtonRole](buttonrole.md)
+  A value that describes the purpose of a button.
 
 
 ---

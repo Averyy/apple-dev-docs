@@ -79,8 +79,16 @@ The Foundation framework provides a base layer of functionality for apps and fra
 - [Foundation Enumerations](foundation-enumerations.md)
 - [Foundation Data Types](foundation-data-types.md)
   This document describes the data types and constants found in the Foundation framework.
+### Classes
+- [class ProgressManager](progressmanager.md)
+  An object that conveys ongoing progress to the user for a specified task.
+- [class ProgressReporter](progressreporter.md)
+  ProgressReporter is a wrapper for ProgressManager that carries information about ProgressManager.
 ### Protocols
 - [protocol NSPredicateValidating](nspredicatevalidating.md)
+### Structures
+- [struct Subprogress](subprogress.md)
+  Subprogress is used to establish parent-child relationship between two instances of `ProgressManager`.
 
 
 ---

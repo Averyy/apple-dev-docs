@@ -12,7 +12,7 @@ Configures the text input suggestions for this view.
 
 ```swift
 nonisolated
-func textInputSuggestions<S>(@ViewBuilder _ suggestions: () -> S) -> some View where S : View
+func textInputSuggestions<S>(@ContentBuilder _ suggestions: () -> S) -> some View where S : View
 ```
 
 #### Discussion
@@ -57,7 +57,7 @@ If the model’s `suggestedVenues` begins as an empty array, the interface doesn
 
 ## Parameters
 
-- `suggestions`: A view builder that produces content that populates a list of suggestions.
+- `suggestions`: A content builder that produces content that populates a list of suggestions.
 
 ## See Also
 
@@ -87,6 +87,8 @@ If the model’s `suggestedVenues` begins as an empty array, the interface doesn
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 - [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
   A structure defining the system text formatting controls available on each platform.
 

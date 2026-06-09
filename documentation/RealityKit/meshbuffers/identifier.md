@@ -19,6 +19,14 @@ struct Identifier
 
 ## Topics
 
+### Accessing texture coordinates
+- [static let textureCoordinates1: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates1.md)
+- [static let textureCoordinates2: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates2.md)
+- [static let textureCoordinates3: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates3.md)
+- [static let textureCoordinates4: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates4.md)
+- [static let textureCoordinates5: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates5.md)
+- [static let textureCoordinates6: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates6.md)
+- [static let textureCoordinates7: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates7.md)
 ### Instance Properties
 - [let isBlendShape: Bool](meshbuffers/identifier/isblendshape.md)
 - [let isCustom: Bool](meshbuffers/identifier/iscustom.md)
@@ -31,6 +39,12 @@ struct Identifier
 - [static let tangents: MeshBuffers.Identifier](meshbuffers/identifier/tangents.md)
 - [static let textureCoordinates: MeshBuffers.Identifier](meshbuffers/identifier/texturecoordinates.md)
 - [static let triangleIndices: MeshBuffers.Identifier](meshbuffers/identifier/triangleindices.md)
+- [static let uv2: MeshBuffers.Identifier](meshbuffers/identifier/uv2.md)
+- [static let uv3: MeshBuffers.Identifier](meshbuffers/identifier/uv3.md)
+- [static let uv4: MeshBuffers.Identifier](meshbuffers/identifier/uv4.md)
+- [static let uv5: MeshBuffers.Identifier](meshbuffers/identifier/uv5.md)
+- [static let uv6: MeshBuffers.Identifier](meshbuffers/identifier/uv6.md)
+- [static let uv7: MeshBuffers.Identifier](meshbuffers/identifier/uv7.md)
 
 ## Relationships
 

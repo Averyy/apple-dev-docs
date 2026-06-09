@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a App Price V2 Inline Create resource.
+An inline object for specifying a territory-specific price when creating or updating an app price schedule.
 
 **Availability**:
 - App Store Connect API 2.3+
@@ -14,38 +14,51 @@ The data structure that represents a App Price V2 Inline Create resource.
 object AppPriceV2InlineCreate
 ```
 
+## Topics
+
+### Dictionaries
+- [object AppPriceV2InlineCreate.Attributes](apppricev2inlinecreate/attributes-data.dictionary.md)
+- [object AppPriceV2InlineCreate.Relationships](apppricev2inlinecreate/relationships-data.dictionary.md)
+
 ## Properties
 
+- `attributes` (AppPriceV2InlineCreate.Attributes)
 - `id` (string)
+- `relationships` (AppPriceV2InlineCreate.Relationships)
 - `type` (string) *(required)*
 
 ## See Also
 
 - [object App](app.md)
-  The data structure that represents an Apps resource.
+  An app registered in App Store Connect, representing all versions, metadata, and configuration for your iOS, macOS, tvOS, or watchOS application.
 - [object AppWithoutIncludesResponse](appwithoutincludesresponse.md)
+  A response containing a single app, without including related resources.
 - [object AppsWithoutIncludesResponse](appswithoutincludesresponse.md)
+  A response containing a list of apps, without including related resources.
 - [object AppUpdateRequest](appupdaterequest.md)
   The request body you use to update an App Update.
 - [object AppClipsResponse](appclipsresponse.md)
-  A response that contains a list of App Clips resources.
+  The response body for endpoints that list App Clips for an app.
 - [object AppResponse](appresponse.md)
-  A response that contains a single Apps resource.
+  The response body for endpoints that read or modify a single app in your team.
 - [object AppsResponse](appsresponse.md)
-  A response that contains a list of Apps resources.
+  A response containing a list of apps registered in your App Store Connect team.
 - [object InAppPurchase](inapppurchase.md)
-  The data structure that represents the In-App Purchases resource.
+  A one-time purchasable item available in an app, such as a consumable, non-consumable, or non-renewing subscription.
 - [object InAppPurchaseResponse](inapppurchaseresponse.md)
-  A response that contains a single In-App Purchases resource.
+  The response body for endpoints that read a single in-app purchase.
 - [object InAppPurchasesResponse](inapppurchasesresponse.md)
-  A response that contains a list of In-App Purchases resources.
+  The response body for endpoints that list in-app purchases for an app.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
 - [object AppPricePointV3](apppricepointv3.md)
-  The data structure that represents an App Price Point V3 resource.
+  A specific price tier in App Store pricing, defining the customer price and developer proceeds across territories.
 - [object AppPricePointV3Response](apppricepointv3response.md)
+  A response containing a single App Store price point with its territory-specific pricing details.
 - [object AppPricePointsV3Response](apppricepointsv3response.md)
+  A response containing a list of available App Store price points.
 - [object AppPriceSchedule](apppriceschedule.md)
+  The pricing schedule for an app, specifying base territory prices, manual prices for other territories, and scheduled price changes.
 
 
 ---

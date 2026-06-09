@@ -36,6 +36,7 @@ var kAudioUnitType_Generator: UInt32 { get }
   An offline effect unit provides digital signal processing of a sort that cannot proceed in realtime. For example, level normalization requires examination of an entire sound, beginning to end, before the normalization factor can be calculated. As such, offline effect units also have a notion of a priming stage that can be performed before the actual rendering/processing phase is executed.
 - [var kAudioUnitType_MIDIProcessor: UInt32](kaudiounittype_midiprocessor.md)
 - [var kAudioUnitType_SpeechSynthesizer: UInt32](kaudiounittype_speechsynthesizer.md)
+- [var kAudioUnitType_HeadTrackingBinauralRenderer: UInt32](kaudiounittype_headtrackingbinauralrenderer.md)
 
 
 ---

@@ -35,6 +35,14 @@ struct CreateOptions
 ### Instance Properties
 - [var compression: TextureResource.Compression](textureresource/createoptions/compression.md)
 
+## Relationships
+
+### Conforms To
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)

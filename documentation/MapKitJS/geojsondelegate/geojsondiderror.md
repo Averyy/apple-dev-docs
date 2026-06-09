@@ -12,9 +12,9 @@ Indicates when the GeoJSON import fails.
 
 ```swift
 geoJSONDidError?(
-        error: GeoJSONImportError | Error,
-        geoJSON?: GeoJSONTypes.GeoJSON,
-    ): void;
+    error: GeoJSONImportError | Error,
+    geoJSON?: GeoJSONTypes.GeoJSON,
+): void;
 ```
 
 #### Discussion

@@ -27,6 +27,9 @@ To place virtual 3D content that matches the position or size of the detected ob
 ### Identifying Detected Objects
 - [var referenceObject: ARReferenceObject](arobjectanchor/referenceobject.md)
   The detected object referenced by the object anchor.
+### Instance Properties
+- [var isTracked: Bool](arobjectanchor/istracked.md)
+  A Boolean value indicating whether the anchor is currently being tracked.
 
 ## Relationships
 
@@ -34,6 +37,7 @@ To place virtual 3D content that matches the position or size of the detected ob
 - [ARAnchor](aranchor.md)
 ### Conforms To
 - [ARAnchorCopying](aranchorcopying.md)
+- [ARTrackable](artrackable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

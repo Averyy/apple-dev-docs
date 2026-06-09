@@ -18,6 +18,11 @@ Start a session by rehydrating from a transcript.
 convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], transcript: Transcript)
 ```
 
+## Mentions
+
+- [Managing the context window](managing-the-context-window.md)
+- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+
 #### Discussion
 
 - Parameters - model: The language model to use for this session.
@@ -26,8 +31,8 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 
 ## See Also
 
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
+- [convenience(model:tools:instructions:)](languagemodelsession/init(model:tools:instructions:).md)
+  Start a new session in blank slate state with instructions builder.
 
 
 ---

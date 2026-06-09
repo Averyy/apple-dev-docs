@@ -11,7 +11,8 @@ Creates a settings link with a custom label.
 ## Declaration
 
 ```swift
-init(@ViewBuilder label: () -> Label)
+nonisolated
+init(@ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

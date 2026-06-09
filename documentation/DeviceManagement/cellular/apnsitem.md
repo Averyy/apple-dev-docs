@@ -10,8 +10,6 @@ A dictionary that contains details about an access point name (APN) configuratio
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,20 +19,21 @@ object Cellular.APNsItem
 
 ## Properties
 
-- `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Available in iOS 10.3 and later. Allowed values: - `1`: IPv4
+- `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Allowed values: - `1`: IPv4
 - `2`: IPv6
-- `3`: Both
-- `AllowedProtocolMaskInDomesticRoaming` (integer): The Internet Protocol versions that the system supports while roaming. Available in iOS 10.3 and later. Allowed values: - `1`: IPv4
+- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+- `AllowedProtocolMaskInDomesticRoaming` (integer): The Internet Protocol versions that the system supports while roaming. Allowed values: - `1`: IPv4
 - `2`: IPv6
-- `3`: Both
-- `AllowedProtocolMaskInRoaming` (integer): The Internet Protocol versions that the system supports while roaming. Available in iOS 10.3 and later. Allowed values: - `1`: IPv4
+- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+- `AllowedProtocolMaskInRoaming` (integer): The Internet Protocol versions that the system supports while roaming. Allowed values: - `1`: IPv4
 - `2`: IPv6
-- `3`: Both
+- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
 - `AuthenticationType` (string): The authentication type for logging in.
-- `DefaultProtocolMask` (integer): The default Internet Protocol versions. Available in iOS 10.3 but no longer used in iOS 11 and later. Allowed values: - `1`: IPv4
+- `DefaultProtocolMask` (integer): The default Internet Protocol versions. Allowed values: - `1`: IPv4
 - `2`: IPv6
-- `3`: Both
-- `EnableXLAT464` (boolean): If `true`, the system enables XLAT464. Available in iOS 16 and later and watchOS 9 and later.
+- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
+Deprecated: iOS 11+ | iPadOS 11+
+- `EnableXLAT464` (boolean): If `true`, the system enables XLAT464. Available: iOS 16+ | iPadOS 16+ | watchOS 9+
 - `Name` (string) *(required)*: The name for this configuration.
 - `Password` (string): The user’s password for the APN.
 - `ProxyPort` (integer): The proxy server’s port number.

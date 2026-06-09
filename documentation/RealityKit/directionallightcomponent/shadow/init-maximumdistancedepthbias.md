@@ -34,6 +34,8 @@ The `maximumDistance` parameter in this initializer is equivalent to setting [`s
   Creates a directional light shadow using default values.
 - [init(shadowProjection: DirectionalLightComponent.Shadow.ShadowProjectionType, depthBias: Float, cullMode: DirectionalLightComponent.Shadow.ShadowMapCullMode?)](directionallightcomponent/shadow/init(shadowprojection:depthbias:cullmode:).md)
   Creates a directional light shadow with a shadow projection, depth bias and cull mode.
+- [init(layers: RenderLayer.Set?)](directionallightcomponent/shadow/init(layers:).md)
+  Creates a directional light shadow with the specified layers.
 
 
 ---

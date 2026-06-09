@@ -16,6 +16,7 @@ object GameCenterActivity.Relationships.GameCenterGroup
 
 ### Dictionaries
 - [object GameCenterActivity.Relationships.GameCenterGroup.Data](gamecenteractivity/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a activity.
 
 ## Properties
 

@@ -8,6 +8,7 @@ The system removes the Live Activity that ended at the specified time within a f
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

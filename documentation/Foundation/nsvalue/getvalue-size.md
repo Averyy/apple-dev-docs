@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Copies the value into the specified buffer.
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
@@ -17,6 +19,11 @@
 ```swift
 func getValue(_ value: UnsafeMutableRawPointer, size: Int)
 ```
+
+## Parameters
+
+- `value`: A buffer into which to copy the value. The buffer must be large enough to hold the value.
+- `size`: The number of bytes to copy.
 
 
 ---

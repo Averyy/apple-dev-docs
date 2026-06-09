@@ -11,7 +11,7 @@ App Store Connect API version 1.8 provides resources that enable you to automate
 ##### New Features
 
 - The app price point information is now updated to `AppPricePointV2` to reflect the effect of the tax category settings on proceeds.
-- The [`Download Sales and Trends Reports`](get-v1-salesreports.md) endpoint supports a new `reportType` value of `SUBSCRIPTION_OFFER_CODE_REDEMPTION`.
+- The [`Download sales and trends reports`](get-v1-salesreports.md) endpoint supports a new `reportType` value of `SUBSCRIPTION_OFFER_CODE_REDEMPTION`.
 - TestFlight now offers a new relationship, [`Build.Relationships.BetaGroups`](build/relationships-data.dictionary/betagroups-data.dictionary.md), that identifies all beta groups for a specific build.
 
 ##### Deprecations
@@ -20,6 +20,8 @@ App Store Connect API version 1.8 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -47,8 +49,6 @@ App Store Connect API version 1.8 provides resources that enable you to automate
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

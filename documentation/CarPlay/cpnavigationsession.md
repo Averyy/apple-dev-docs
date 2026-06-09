@@ -69,11 +69,15 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
 ### Instance Properties
 - [var currentSegment: CPRouteSegment](cpnavigationsession/currentsegment.md)
   The current route segment.
+- [var optionsPanel: CPMapPanel?](cpnavigationsession/optionspanel.md)
+  The options panel to display when the ellipsis button on the travel estimates is tapped.
 - [var routeSegments: [CPRouteSegment]](cpnavigationsession/routesegments.md)
   The route segments associated with this navigation session.
 ### Instance Methods
 - [func addRouteSegments([CPRouteSegment])](cpnavigationsession/addroutesegments(_:).md)
   Use this method to add CPRouteSegments in chronological order to the navigation session. CPRouteSegment objects must be added as soon as they are available.
+- [func resumeNavigation(updatedTrip: CPTrip, routeSegments: [CPRouteSegment], currentSegment: CPRouteSegment, rerouteReason: CPRerouteReason)](cpnavigationsession/resumenavigation(updatedtrip:routesegments:currentsegment:reroutereason:).md)
+  Resume navigation with an updated trip and route segments for cases such as the trip destination changing.
 - [func resumeTrip(updatedRouteSegments: [CPRouteSegment], currentSegment: CPRouteSegment, rerouteReason: CPRerouteReason)](cpnavigationsession/resumetrip(updatedroutesegments:currentsegment:reroutereason:).md)
   Resume the current trip with updated route segments
 

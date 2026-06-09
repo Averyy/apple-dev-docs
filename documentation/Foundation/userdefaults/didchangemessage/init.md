@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message for a settings change to the user defaults.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

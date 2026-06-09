@@ -57,6 +57,10 @@ struct MyApp: App {
   Configures the minimize functionality for the window enclosing `self`.
 - [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](scene/windowbackgrounddragbehavior(_:).md)
   Configures the behavior of dragging a window by its background.
+- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
+- [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
+  Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 
 
 ---

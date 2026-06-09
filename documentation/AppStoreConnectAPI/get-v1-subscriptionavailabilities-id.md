@@ -1,4 +1,4 @@
-# Read the Availability of a Subscription
+# Read the availability of a subscription
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -63,10 +63,10 @@ https://api.appstoreconnect.apple.com/v1/subscriptionAvailabilities/6447589418
 
 ## See Also
 
-- [List the Territory Availability of a Subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)
+- [List the territory availability of a subscription](get-v1-subscriptionavailabilities-_id_-availableterritories.md)
   List the territory availability and currency of a specific subscription.
-- [GET /v1/subscriptionAvailabilities/{id}/relationships/availableTerritories](get-v1-subscriptionavailabilities-_id_-relationships-availableterritories.md)
-- [Modify the Territory Availability of a Subscription](post-v1-subscriptionavailabilities.md)
+- [List available territory IDs for a subscription availability](get-v1-subscriptionavailabilities-_id_-relationships-availableterritories.md)
+- [Modify the territory availability of a subscription](post-v1-subscriptionavailabilities.md)
   Update the territory availability of a specific subscription.
 
 

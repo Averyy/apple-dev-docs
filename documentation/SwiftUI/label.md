@@ -17,6 +17,7 @@ A standard label for user interface items, consisting of an icon with a title.
 ## Declaration
 
 ```swift
+nonisolated
 struct Label<Title, Icon> where Title : View, Icon : View
 ```
 

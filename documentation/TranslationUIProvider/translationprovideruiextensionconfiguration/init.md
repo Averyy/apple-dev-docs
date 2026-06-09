@@ -8,6 +8,7 @@ Creates a default configuration for the given extension.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -11,6 +11,7 @@ Creates a style that doesn’t pad a button’s content and applies a motion eff
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

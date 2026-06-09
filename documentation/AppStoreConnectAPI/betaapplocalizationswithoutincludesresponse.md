@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response containing a list of TestFlight app localizations, without related resources.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -21,15 +23,15 @@ object BetaAppLocalizationsWithoutIncludesResponse
 ## See Also
 
 - [object BetaAppLocalization](betaapplocalization.md)
-  The data structure that represents a Beta App Localizations resource.
+  The localized feedback URL, marketing URL, and privacy policy URL shown to TestFlight testers for a specific language.
 - [object BetaAppLocalizationCreateRequest](betaapplocalizationcreaterequest.md)
   The request body you use to create a Beta App Localization.
 - [object BetaAppLocalizationResponse](betaapplocalizationresponse.md)
-  A response that contains a single Beta App Localizations resource.
+  The response body for endpoints that create, read, or modify localized TestFlight app metadata.
 - [object BetaAppLocalizationUpdateRequest](betaapplocalizationupdaterequest.md)
   The request body you use to update a Beta App Localization.
 - [object BetaAppLocalizationsResponse](betaapplocalizationsresponse.md)
-  A response that contains a list of Beta App Localization resources.
+  The response body for endpoints that list localized TestFlight app metadata entries.
 - [object BetaAppLocalizationAppLinkageResponse](betaapplocalizationapplinkageresponse.md)
 
 

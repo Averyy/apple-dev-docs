@@ -8,6 +8,7 @@ An asynchronous array of items that the data scanner currently recognizes in the
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

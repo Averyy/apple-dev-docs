@@ -1,4 +1,4 @@
-# Remove a User Account
+# Remove a user account
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Remove a user from your team.
 
 ## See Also
 
-- [Modify a User Account](patch-v1-users-_id_.md)
+- [Modify a user account](patch-v1-users-_id_.md)
   Change a user’s role, app visibility information, or other account details.
 
 

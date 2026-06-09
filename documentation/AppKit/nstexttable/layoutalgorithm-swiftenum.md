@@ -6,7 +6,7 @@
 These constants, specifying the type of text table layout algorithm, are used with [`layoutAlgorithm`](nstexttable/layoutalgorithm-swift.property.md).
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -17,12 +17,15 @@ enum LayoutAlgorithm
 ## Topics
 
 ### Constants
-- [NSTextTable.LayoutAlgorithm.automaticLayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
+- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
   Specifies automatic layout algorithm
-- [NSTextTable.LayoutAlgorithm.fixedLayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/fixedlayoutalgorithm.md)
+- [static var fixedLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/fixedlayoutalgorithm.md)
   Specifies fixed layout algorithm
+### Enumeration Cases
+- [NSTextTable.LayoutAlgorithm.automatic](nstexttable/layoutalgorithm-swift.enum/automatic.md)
+- [NSTextTable.LayoutAlgorithm.fixed](nstexttable/layoutalgorithm-swift.enum/fixed.md)
 ### Initializers
-- [init?(rawValue: UInt)](nstexttable/layoutalgorithm-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](nstexttable/layoutalgorithm-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

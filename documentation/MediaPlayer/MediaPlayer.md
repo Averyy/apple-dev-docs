@@ -131,6 +131,10 @@ You can’t play video media items directly using the Media Player framework. To
 ### Deprecated
 - [Deprecated types](deprecated-types.md)
   Review deprecated symbols and avoid using them in your app.
+### Classes
+- [class MPAppEntityIdentifier](mpappentityidentifier.md)
+### Variables
+- [let MPNowPlayingInfoPropertyAppEntityIdentifiers: String](mpnowplayinginfopropertyappentityidentifiers.md)
 
 
 ---

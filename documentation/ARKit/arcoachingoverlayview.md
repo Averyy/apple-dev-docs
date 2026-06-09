@@ -9,6 +9,7 @@ A view that displays standardized onboarding instructions to direct users toward
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- visionOS 1.0+
 
 ## Declaration
 
@@ -96,6 +97,8 @@ For more information about relocalization, see [`Managing Session Life Cycle and
 - [UIView](../UIKit/UIView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

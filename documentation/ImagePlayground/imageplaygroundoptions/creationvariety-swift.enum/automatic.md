@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: case
 
-An option to choose the most appropriate creation variety behavior.
+An option to programmatically determine how much variety to use when creating images.
 
 **Availability**:
 - iOS 26.4+
@@ -17,6 +17,10 @@ An option to choose the most appropriate creation variety behavior.
 ```swift
 case automatic
 ```
+
+#### Discussion
+
+This option offers a middle ground between low and high variety. It modifies the creation parameters for some, but not all, of the images.
 
 
 ---

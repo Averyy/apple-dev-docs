@@ -8,6 +8,7 @@ The type for a translation UI provider extension’s configuration object.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

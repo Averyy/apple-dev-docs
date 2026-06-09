@@ -6,7 +6,7 @@
 The text container’s text view.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

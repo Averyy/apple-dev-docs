@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Match all transcript records referencing the given AppEntity instance
+Creates a predicate to match any donation that contains the specified entity in a parameter.
 
 **Availability**:
 - iOS 16.0+
@@ -20,12 +20,24 @@ Match all transcript records referencing the given AppEntity instance
 static func entityIdentifier(_ identifier: EntityIdentifier) -> IntentDonationMatchingPredicate
 ```
 
+#### Return Value
+
+A predicate that matches a donation if it contains a parameter with the specified entity.
+
+#### Discussion
+
+When you delete the data for an entity from your app’s data store, use this method to remove any donations that refer to that [`AppEntity`](appentity.md) instance. This predicate matches all donations in which the app intent contains a parameter with the specified entity. Removing those donations prevents the system from suggesting an app intent that your app can’t run because it doesn’t have the needed data.
+
+## Parameters
+
+- `identifier`: The identifier for one of your app’s entities. Typically, you find an entity’s identifier in its `id` property, which you add as part of your implementation of the [`Identifiable`](https://developer.apple.com/documentation/Swift/Identifiable) protocol.
+
 ## See Also
 
 - [static func donationIdentifier(IntentDonationIdentifier) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/donationidentifier(_:).md)
-  Match the transcript record with the given donation identifier
+  Creates a predicate that matches a single, previous donation.
 - [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/intenttype(_:entityidentifier:).md)
-  Match all transcript records for the given AppIntent type, optionally only those referencing a given AppEntity instance identifier
+  Creates a predicate to match app intents of the specified type that optionally refers to a specific entity.
 
 
 ---

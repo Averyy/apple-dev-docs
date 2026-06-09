@@ -33,6 +33,10 @@ static func transformable(by transformerName: String) -> Schema.Attribute.Option
   Ensures the property’s value is unique across all models of the same type.
 - [static func transformable(by: ValueTransformer.Type) -> Schema.Attribute.Option](schema/attribute/option/transformable(by:)-9d4xh.md)
   Transforms the property’s value between an in-memory form and a persisted form.
+- [static var ephemeral: Schema.Attribute.Option](schema/attribute/option/ephemeral.md)
+  Track changes to this property but do not persist
+- [static var codable: Schema.Attribute.Option](schema/attribute/option/codable.md)
+  Uses the property’s codable representation to store the property.
 
 
 ---

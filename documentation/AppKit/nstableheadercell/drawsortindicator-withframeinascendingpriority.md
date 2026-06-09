@@ -27,7 +27,8 @@ Override this method to customize the sorting user interface.
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
+- [class NSTableHeaderCell](nstableheadercell.md)
+  An object that a table header view uses to draw the content of the column headers.
 - [func sortIndicatorRect(forBounds: NSRect) -> NSRect](nstableheadercell/sortindicatorrect(forbounds:).md)
   Returns the location to display the sorting indicator given `theRect`.
 

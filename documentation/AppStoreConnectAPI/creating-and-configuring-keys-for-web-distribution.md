@@ -38,7 +38,7 @@ This command creates the file `public_key.pem`, which contains your public key. 
 
 Next, upload your public key to App Store Connect using the endpoint described in [`Add an Alternative Distribution Key`](post-v1-alternativedistributionkeys.md).
 
-The `id` in the `relationships` object is the app Apple ID for your app. You can find this app Apple ID by calling [`List Apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect.
+The `id` in the `relationships` object is the app Apple ID for your app. You can find this app Apple ID by calling [`List apps`](get-v1-apps.md) and filtering for your app name or by going to App Store Connect.
 
 To access your web distribution app’s Apple ID, log in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/).
 
@@ -80,7 +80,7 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
   List the alternative distribution key for your account.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)

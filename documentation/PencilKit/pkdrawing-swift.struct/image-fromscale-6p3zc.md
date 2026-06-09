@@ -6,9 +6,6 @@
 Returns an image object that contains the specified portion of the drawing.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 ## Declaration

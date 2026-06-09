@@ -55,6 +55,7 @@ This value is a 2-byte sequence in host byte order. See [`tls_protocol_version_t
 - [URLSessionTaskMetrics.ResourceFetchType](urlsessiontaskmetrics/resourcefetchtype.md)
   The manner in which a resource is fetched.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontasktransactionmetrics/domainresolutionprotocol.md)
+  DNS protocol used for domain resolution.
 
 
 ---

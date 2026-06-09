@@ -12,9 +12,9 @@ Overrides a line string.
 
 ```swift
 itemForLineString?(
-        overlay: PolylineOverlay,
-        geoJSON: GeoJSONTypes.LineString,
-    ): PolylineOverlay | null;
+    overlay: PolylineOverlay,
+    geoJSON: GeoJSONTypes.LineString,
+): PolylineOverlay | null;
 ```
 
 #### Return Value

@@ -16,6 +16,7 @@ A tab view style that displays a tab bar when possible.
 ## Declaration
 
 ```swift
+nonisolated
 struct TabBarOnlyTabViewStyle
 ```
 

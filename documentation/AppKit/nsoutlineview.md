@@ -133,6 +133,15 @@ Subclassing `NSOutlineView` is not recommended. Customization can be accomplishe
   Posted after the outline view’s selection changes.
 - [class let selectionIsChangingNotification: NSNotification.Name](nsoutlineview/selectionischangingnotification.md)
   Posted as the outline view’s selection changes (while the mouse button is still down).
+### Structures
+- [NSOutlineView.ColumnDidMoveMessage](nsoutlineview/columndidmovemessage.md)
+- [NSOutlineView.ColumnDidResizeMessage](nsoutlineview/columndidresizemessage.md)
+- [NSOutlineView.ItemDidCollapseMessage](nsoutlineview/itemdidcollapsemessage.md)
+- [NSOutlineView.ItemDidExpandMessage](nsoutlineview/itemdidexpandmessage.md)
+- [NSOutlineView.ItemWillCollapseMessage](nsoutlineview/itemwillcollapsemessage.md)
+- [NSOutlineView.ItemWillExpandMessage](nsoutlineview/itemwillexpandmessage.md)
+- [NSOutlineView.SelectionDidChangeMessage](nsoutlineview/selectiondidchangemessage.md)
+- [NSOutlineView.SelectionIsChangingMessage](nsoutlineview/selectionischangingmessage.md)
 
 ## Relationships
 

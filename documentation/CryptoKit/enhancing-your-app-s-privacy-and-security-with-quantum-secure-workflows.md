@@ -96,6 +96,36 @@ internal func testMLKEM(type: MLKEMType, useSecureEnclave: Bool) throws -> (Test
 }
 ```
 
+#### Encapsulate Cryptographic Keys with One Time Use Private Keys
+
+When you use each ML-KEM private key only once — such as in ephemeral key exchange for messaging or transport protocols — use `OneTimePrivateKey` instead of a standard `PrivateKey`. One-time-use private keys are faster because they skip the extra hardening that long-lived keys require.
+
+Swift enforces the single-use constraint at compile time. When you call `decapsulate`, Swift consumes the key, so you can’t copy or use it again.
+
+Generate a one-time-use private key and encapsulate a shared secret using its public key:
+
+```swift
+let privateKey = try MLKEM768.OneTimePrivateKey()
+let encapsulation = try privateKey.publicKey.encapsulate()
+```
+
+Decapsulate the shared secret by consuming the private key:
+
+```swift
+let sharedSecret = try privateKey.decapsulate(encapsulation.encapsulated)
+```
+
+If you try to use `privateKey` again — either to call `decapsulate` a second time or to copy it — the compiler reports a compile-time error:
+
+```swift
+let sharedSecret2 = try privateKey.decapsulate(encapsulation.encapsulated)
+// error: 'privateKey' consumed more than once
+```
+
+One-time-use private keys are only suitable for ephemeral use because you can’t save or load them. If you need to persist or re-import a key, use `MLKEM768.PrivateKey` or `MLKEM1024.PrivateKey` instead.
+
+> **Note**: The Secure Enclave doesn’t support `OneTimePrivateKey`. Use `SecureEnclave.MLKEM768.PrivateKey` when you need long-term hardware-backed storage.
+
 #### Create Digital Signatures
 
 The two `check(_:)` functions in the file `KeyTest+MLDSA.swift` generate and validate digital signatures using the quantum-secure Module-Lattice Digital Signature Algorithm (ML-DSA), by calling methods on the [`MLDSA65`](MLDSA65.md) and [`MLDSA87`](MLDSA87.md) types. Each function accepts a private key, which it uses to sign a test message:

@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/subscriptionGroups
+# List subscription group IDs for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)
+- [Read the billing grace period value for an app](get-v1-apps-_id_-subscriptiongraceperiod.md)
   Get the Boolean value that represents the grace period opt-in state for your app.
-- [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)
+- [List all subscription groups for an app](get-v1-apps-_id_-subscriptiongroups.md)
   Get a list of subscription groups for a specific app.
-- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
 
 
 ---

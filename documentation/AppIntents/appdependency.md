@@ -46,10 +46,6 @@ final class AppDependency<Value> where Value : Sendable
 
 - [class AppDependencyManager](appdependencymanager.md)
   An object that manages the registration and initialization of an app intent’s dependencies.
-- [protocol AppIntentsExtension](appintentsextension.md)
-  An interface for managing an extension’s configuration.
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
 
 
 ---

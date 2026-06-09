@@ -21,6 +21,17 @@ enum Audio
 
 ## Topics
 
+### Playing audio resources
+- [static func playAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/playaudio(_:).md)
+  Prepares and plays multiple audio resources for synchronized playback
+- [static func playAudio([(AudioResource, Entity)], at: AVAudioTime) throws -> AudioPlaybackGroupController](audio/playaudio(_:at:).md)
+  Prepares and plays multiple audio resources for synchronized playback at a specified time.
+- [static func prepareAudio([(AudioResource, Entity)]) throws -> AudioPlaybackGroupController](audio/prepareaudio(_:).md)
+  Prepares multiple audio resources for synchronized playback without starting them.
+### Defining acoustic properties
+- [struct Material](audio/material.md)
+- [struct Absorption](audio/absorption.md)
+- [struct Scattering](audio/scattering.md)
 ### Type Aliases
 - [typealias Decibel](audio/decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.

@@ -8,6 +8,7 @@ An object that represents the four corners of a recognized item.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

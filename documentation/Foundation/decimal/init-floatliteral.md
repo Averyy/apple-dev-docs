@@ -1,0 +1,31 @@
+# init(floatLiteral:)
+
+**Framework**: Foundation  
+**Kind**: init
+
+Creates and initializes a decimal with the provided floating point value.
+
+**Availability**:
+- iOS 8.0+
+- iPadOS 8.0+
+- Mac Catalyst 8.0+
+- macOS 10.10+
+- tvOS 9.0+
+- visionOS 1.0+
+- watchOS 2.0+
+
+## Declaration
+
+```swift
+init(floatLiteral value: Double)
+```
+
+## See Also
+
+- [init(Double)](decimal/init(_:)-6wgru.md)
+  Creates and initializes a decimal with the provided floating point value.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/decimal/init(floatliteral:))*

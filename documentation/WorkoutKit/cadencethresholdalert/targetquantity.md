@@ -20,8 +20,6 @@ var targetQuantity: HKQuantity { get }
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](cadencethresholdalert/metric.md)
-  The metric for the alert.
 - [var target: Measurement<UnitFrequency>](cadencethresholdalert/target.md)
   The target threshold.
 

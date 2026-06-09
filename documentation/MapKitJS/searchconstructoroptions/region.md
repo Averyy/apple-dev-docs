@@ -11,7 +11,7 @@ A map region that provides a hint for the geographic area to search.
 ## Declaration
 
 ```swift
-region?: CoordinateRegion;
+region?: CoordinateRegionData;
 ```
 
 #### Discussion

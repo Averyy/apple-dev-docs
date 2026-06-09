@@ -12,13 +12,13 @@ A delegate method for modifying an annotation that represents a group of annotat
 
 ```swift
 get annotationForCluster():
-        | ((clusterAnnotation: ClusterAnnotation) => Annotation | undefined)
-        | null;
+    | ((clusterAnnotation: ClusterAnnotation) => Annotation | undefined)
+    | null;
 set annotationForCluster(
-        value:
-            | ((clusterAnnotation: ClusterAnnotation) => Annotation | undefined)
-            | null,
-    );
+    value:
+        | ((clusterAnnotation: ClusterAnnotation) => Annotation | undefined)
+        | null,
+);
 ```
 
 #### Discussion

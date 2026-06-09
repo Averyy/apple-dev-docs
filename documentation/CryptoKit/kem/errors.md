@@ -11,7 +11,7 @@ Errors that CryptoKit throws when it encounters problems in key encapsulation me
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- visionOS 2.0+
+- visionOS 26.0+
 - watchOS 26.0+
 
 ## Declaration
@@ -31,7 +31,6 @@ enum Errors
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

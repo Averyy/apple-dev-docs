@@ -8,6 +8,7 @@ Creates a MAC Address from the provided case-insensitive string, of the format `
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

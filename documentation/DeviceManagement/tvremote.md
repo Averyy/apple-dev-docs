@@ -10,8 +10,6 @@ The payload that configures the Apple TV remote.
 - iPadOS 11.3+
 - Mac Catalyst 11.3+
 - tvOS 11.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,9 +29,9 @@ Specify `com.apple.tvremote` as the payload type.
 | User channel | Shared iPad |
 | Allow manual install | iOS, tvOS |
 | Requires supervision | iOS, tvOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -88,8 +86,8 @@ Specify `com.apple.tvremote` as the payload type.
 
 ## Properties
 
-- `AllowedRemotes` ([TVRemote.AllowedRemotesItem]): The array of valid devices that Apple TV can connect to.
-- `AllowedTVs` ([TVRemote.AllowedTVsItem]): The array of valid Apple TV identifiers that the remote can connect to.
+- `AllowedRemotes` ([TVRemote.AllowedRemotesItem]): The array of valid devices that Apple TV can connect to. Available: tvOS 11.3+
+- `AllowedTVs` ([TVRemote.AllowedTVsItem]): The array of valid Apple TV identifiers that the remote can connect to. Available: iOS 11.3+ | iPadOS 11.3+
 
 ## See Also
 

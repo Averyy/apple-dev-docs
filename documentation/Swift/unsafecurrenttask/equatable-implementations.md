@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](unsafecurrenttask/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](unsafecurrenttask/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (UnsafeCurrentTask, UnsafeCurrentTask) -> Bool](unsafecurrenttask/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: struct
 
-The error code itself.
+Codes that describe errors within the URL loading API.
 
 **Availability**:
 - iOS 8.0+

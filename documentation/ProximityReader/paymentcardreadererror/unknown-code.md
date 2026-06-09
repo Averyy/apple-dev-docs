@@ -9,7 +9,6 @@ An unexpected error happened, try again.
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 

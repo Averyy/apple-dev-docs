@@ -11,7 +11,7 @@ The state or province of the place.
 ## Declaration
 
 ```swift
-administrativeArea?: string;
+administrativeArea: string | null;
 ```
 
 #### Discussion

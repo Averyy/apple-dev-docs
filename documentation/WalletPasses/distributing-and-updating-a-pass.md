@@ -33,10 +33,14 @@ You can distribute a bundle of passes the same way you distribute a single pass.
 
 ## See Also
 
+- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+  Construct and customize a variety of pass styles with this easy-to-use tool.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
 - [Building a Pass](building-a-pass.md)
   Build a distributable pass.
+- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+  Provide customizable information for your Wallet Pass.
 - [object Pass](pass.md)
   An object that represents a pass.
 - [object PassFields](passfields.md)

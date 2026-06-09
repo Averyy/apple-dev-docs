@@ -17,8 +17,8 @@ The default button style, based on the button’s context.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var automatic: DefaultButtonStyle { get }
+nonisolated
+static var automatic: DefaultButtonStyle { get }
 ```
 
 #### Discussion

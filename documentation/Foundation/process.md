@@ -27,15 +27,15 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
 
 ## Topics
 
-### Creating and Initializing
+### Creating and initializing a process
 - [class func run(URL, arguments: [String], terminationHandler: ((Process) -> Void)?) throws -> Process](process/run(_:arguments:terminationhandler:).md)
   Creates and runs a task with a specified executable and arguments.
 - [init()](process/init.md)
   Returns an initialized process object with the environment of the current process.
-### Returning Information
+### Returning information
 - [var processIdentifier: Int32](process/processidentifier.md)
   The receiver’s process identifier.
-### Running and Stopping
+### Running and stopping
 - [func run() throws](process/run.md)
   Runs the process with the current environment.
 - [func interrupt()](process/interrupt.md)
@@ -48,14 +48,14 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
   Sends a terminate signal to the receiver and all of its subtasks.
 - [func waitUntilExit()](process/waituntilexit.md)
   Blocks the process until the receiver is finished.
-### Querying the State
+### Querying the process state
 - [var isRunning: Bool](process/isrunning.md)
   A status that indicates whether the receiver is still running.
 - [var terminationStatus: Int32](process/terminationstatus.md)
   The exit status the receiver’s executable returns.
 - [var terminationReason: Process.TerminationReason](process/terminationreason-swift.property.md)
   The reason the system terminated the task.
-### Configuring
+### Configuring a process
 - [var arguments: [String]?](process/arguments.md)
   The command arguments that the system uses to launch the executable.
 - [var currentDirectoryURL: URL?](process/currentdirectoryurl.md)
@@ -72,17 +72,20 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
   The standard input for the receiver.
 - [var standardOutput: Any?](process/standardoutput.md)
   The standard output for the receiver.
-### Termination Handler
+### Working with termination handlers
 - [var terminationHandler: ((Process) -> Void)?](process/terminationhandler.md)
   A completion block the system invokes when the task completes.
-### Constants
+### Working with constants
 - [Process.TerminationReason](process/terminationreason-swift.enum.md)
   Constants that specify the termination reason values that the system returns.
 - [enum QualityOfService](qualityofservice.md)
   Constants that indicate the nature and importance of work to the system.
-### Notifications
+### Working with notifications
 - [class let didTerminateNotification: NSNotification.Name](process/didterminatenotification.md)
   Posted when the task has stopped execution.
+### Working with notification messages
+- [Process.DidTerminateMessage](process/didterminatemessage.md)
+  A message the system sends when a task stops operation.
 ### Deprecated
 - [class func launchedProcess(launchPath: String, arguments: [String]) -> Process](process/launchedprocess(launchpath:arguments:).md)
   Creates and launches a task with a specified executable and arguments.
@@ -92,11 +95,10 @@ You can only run the subprocess once per instance. Subsequent attempts raise an 
   Sets the receiver’s executable.
 - [func launch()](process/launch.md)
   Launches the task represented by the receiver.
-### Structures
-- [Process.DidTerminateMessage](process/didterminatemessage.md)
 ### Instance Properties
 - [var launchRequirement: LaunchCodeRequirement?](process/launchrequirement.md)
 - [var launchRequirementData: Data?](process/launchrequirementdata.md)
+  The launch requirement data for the receiver.
 
 ## Relationships
 

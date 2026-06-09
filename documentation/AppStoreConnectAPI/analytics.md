@@ -24,7 +24,7 @@ This table outlines which roles can use which resources:
 | Finance |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
 | Sales and Reports |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
 
-The Sales and Reports role can also read [`Download Sales and Trends Reports`](get-v1-salesreports.md) in addition to Analytics Reports.
+The Sales and Reports role can also read [`Download sales and trends reports`](get-v1-salesreports.md) in addition to Analytics Reports.
 
 To learn more about roles, see [`Program Roles`](https://developer.apple.comhttps://developer.apple.com/support/roles/).
 
@@ -44,7 +44,7 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
   Get details for and the state of a specific analytics report request.
 - [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 - [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.
@@ -57,39 +57,39 @@ To learn more about roles, see [`Program Roles`](https://developer.apple.comhttp
   Get details for a specific instance of an analytics report.
 - [Read the Segments for a Report](get-v1-analyticsreportinstances-_id_-segments.md)
   Get details for a specific analytics report segment.
-- [Read Segment IDs for a Report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
+- [Read segment ids for a report](get-v1-analyticsreportinstances-_id_-relationships-segments.md)
   Get Ids for a specific analytics report segment.
 - [Read the Details for a Report Segment](get-v1-analyticsreportsegments-_id_.md)
   Get details and download information for a specific analytics report segment.
-- [Read a List of a Report Instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
+- [Read a list of a report instance ids](get-v1-analyticsreports-_id_-relationships-instances.md)
   Read list of all the instance IDs for a specific type of analytics report.
 ### Objects
 - [object AnalyticsReportRequest](analyticsreportrequest.md)
-  The data structure that represents an analytics report request.
+  A request to generate ongoing analytics reports for an app, specifying the report type and access frequency.
 - [object AnalyticsReportRequestCreateRequest](analyticsreportrequestcreaterequest.md)
   The request body you use to create an analytics report request.
 - [object AnalyticsReportRequestResponse](analyticsreportrequestresponse.md)
-  A response that contains a single analytics report request resource.
+  The response body for endpoints that create or read an analytics report request.
 - [object AnalyticsReportRequestsResponse](analyticsreportrequestsresponse.md)
-  A response that contains a list of analytics report request resources.
+  The response body for endpoints that list analytics report requests for an app.
 - [object AnalyticsReport](analyticsreport.md)
-  The data structure that represents an analytics report.
+  A generated analytics report containing App Store performance data produced from a report request.
 - [object AnalyticsReportResponse](analyticsreportresponse.md)
-  A response that contains a single analytics report resource.
+  The response body for endpoints that read a single analytics report.
 - [object AnalyticsReportsResponse](analyticsreportsresponse.md)
-  A response that contains a list of analytics report resources.
+  The response body for endpoints that list analytics reports for a report request.
 - [object AnalyticsReportInstance](analyticsreportinstance.md)
-  The data structure that represents an analytics report instance.
+  A time-bounded instance of an analytics report, representing data for a specific reporting period.
 - [object AnalyticsReportInstanceResponse](analyticsreportinstanceresponse.md)
-  A response that contains a single analytics report instance resource.
+  The response body for endpoints that read a single analytics report instance.
 - [object AnalyticsReportInstancesResponse](analyticsreportinstancesresponse.md)
-  A response that contains a list of analytics report instance resources.
+  The response body for endpoints that list instances of an analytics report.
 - [object AnalyticsReportSegment](analyticsreportsegment.md)
-  The data structure that represents an analytics report segment.
+  A downloadable segment within an analytics report instance, containing a portion of the report’s CSV data.
 - [object AnalyticsReportSegmentResponse](analyticsreportsegmentresponse.md)
-  A response that contains a single analytics report segment resource.
+  The response body for endpoints that read a single downloadable segment of an analytics report.
 - [object AnalyticsReportSegmentsResponse](analyticsreportsegmentsresponse.md)
-  A response that contains a list of analytics report segment resources.
+  The response body for endpoints that list the downloadable segments of an analytics report instance.
 - [object AnalyticsReportInstanceSegmentsLinkagesResponse](analyticsreportinstancesegmentslinkagesresponse.md)
 - [object AnalyticsReportInstancesLinkagesResponse](analyticsreportinstanceslinkagesresponse.md)
 - [object AnalyticsReportRequestReportsLinkagesResponse](analyticsreportrequestreportslinkagesresponse.md)

@@ -18,6 +18,8 @@ class let didEndTrackingNotification: NSNotification.Name
 
 The notification object is the main menu bar (`[NSApp mainMenu]`) or the root menu of a popup button. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidEndTrackingMessage`](nsmenu/didendtrackingmessage.md).
+
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

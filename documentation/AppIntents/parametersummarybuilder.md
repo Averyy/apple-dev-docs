@@ -24,6 +24,7 @@ enum ParameterSummaryBuilder<Intent> where Intent : AppIntent
 ## Mentions
 
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Creating your first app intent](creating-your-first-app-intent.md)
 
 #### Overview
 
@@ -40,7 +41,7 @@ For more information about using parameters and providing a parameter summary, s
 - [associatedtype SummaryContent : ParameterSummary](appintent/summarycontent.md)
   The type of parameter summary representing this intent.
 - [static var parameterSummary: Self.SummaryContent](appintent/parametersummary.md)
-  Defines the summary of this intent in relation to how its parameters are populated.
+  The parameter summary the Shortcuts app uses to generate shortcuts for this intent.
 - [static var parameterSummary: some ParameterSummary](appintent/parametersummary-4vgic.md)
 - [AppIntent.Parameter](appintent/parameter.md)
 - [AppIntent.Case](appintent/case.md)
@@ -48,6 +49,8 @@ For more information about using parameters and providing a parameter summary, s
 - [AppIntent.Summary](appintent/summary.md)
 - [AppIntent.Switch](appintent/switch.md)
 - [AppIntent.When](appintent/when.md)
+- [AppIntent.Option](appintent/option.md)
+  A convenience type alias that represents a choice option within the scope of an app intent.
 
 
 ---

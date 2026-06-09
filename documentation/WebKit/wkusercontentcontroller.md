@@ -68,6 +68,9 @@ Create and configure a [`WKUserContentController`](wkusercontentcontroller.md) o
   A compiled list of rules to apply to web content.
 ### Initializers
 - [init?(coder: NSCoder)](wkusercontentcontroller/init(coder:).md)
+### Instance Methods
+- [func add(WKJSScriptingBuffer, name: String, contentWorld: WKContentWorld)](wkusercontentcontroller/add(_:name:contentworld:).md)
+- [func removeBuffer(withName: String, contentWorld: WKContentWorld)](wkusercontentcontroller/removebuffer(withname:contentworld:).md)
 
 ## Relationships
 

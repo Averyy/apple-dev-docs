@@ -6,7 +6,7 @@
 A Boolean value that indicates if the window is currently streaming.
 
 **Availability**:
-- Mac Catalyst 16.2+
+- Mac Catalyst 18.2+
 - macOS 13.1+
 
 ## Declaration

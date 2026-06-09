@@ -18,15 +18,16 @@ enum ContentVersion
 
 ## Topics
 
-### Enumeration Cases
+### Choosing a version
 - [FeatureSet.ContentVersion.version1](featureset/contentversion-swift.enum/version1.md)
   The PaperKit version that supports markup.
+- [FeatureSet.ContentVersion.version2](featureset/contentversion-swift.enum/version2.md)
+  The PaperKit version that supports markup from iOS 27.
+- [static var latest: FeatureSet.ContentVersion](featureset/contentversion-swift.enum/latest.md)
+  The latest version of PaperKit, which supports all currently available features.
 ### Instance Properties
 - [var pencilKitContentVersion: PKContentVersion](featureset/contentversion-swift.enum/pencilkitcontentversion.md)
   The PencilKit content version that this PaperKit version relies on.
-### Type Properties
-- [static var latest: FeatureSet.ContentVersion](featureset/contentversion-swift.enum/latest.md)
-  A property that returns latest version of PaperKit, which supports all currently available features.
 
 ## Relationships
 
@@ -38,6 +39,13 @@ enum ContentVersion
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [FeatureSet.Feature](featureset/feature.md)
+  The features that PaperKit markup supports.
+- [FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.struct.md)
+  The arrow marker positions for the ends of a line.
 
 
 ---

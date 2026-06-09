@@ -34,9 +34,9 @@ Use this initializer to avoid intermediate reallocations of a dictionary’s sto
   Creates an empty dictionary.
 - [init<S>(uniqueKeysWithValues: S)](dictionary/init(uniquekeyswithvalues:).md)
   Creates a new dictionary from the key-value pairs in the given sequence.
-- [init<S>(S, uniquingKeysWith: (Value, Value) throws -> Value) rethrows](dictionary/init(_:uniquingkeyswith:).md)
+- [init<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E)](dictionary/init(_:uniquingkeyswith:).md)
   Creates a new dictionary from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
-- [init<S>(grouping: S, by: (S.Element) throws -> Key) rethrows](dictionary/init(grouping:by:).md)
+- [init<S, E>(grouping: S, by: (S.Element) throws(E) -> Key) throws(E)](dictionary/init(grouping:by:).md)
   Creates a new dictionary whose keys are the groupings returned by the given closure and whose values are arrays of the elements that returned each key.
 
 

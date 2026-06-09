@@ -6,7 +6,7 @@
 Returns the width of an edge of a specified layer of the text block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

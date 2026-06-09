@@ -26,7 +26,7 @@ The rectangle mesh.
 
 #### Discussion
 
-The rectangle is centered at the entity’s origin and aligned with its x and y axes. The surface normal points along the y-axis. The depth along the y-axis is 0.
+The rectangle is centered at the entity’s origin and aligned with its x and z axes. The surface normal points along the y-axis. The depth along the y-axis is 0.
 
 > **Note**: The xz-plane is a plane that aligns with the x and z axes.
 

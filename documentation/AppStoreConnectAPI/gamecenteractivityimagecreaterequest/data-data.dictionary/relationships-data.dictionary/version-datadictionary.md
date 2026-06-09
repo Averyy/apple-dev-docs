@@ -16,6 +16,7 @@ object GameCenterActivityImageCreateRequest.Data.Relationships.Version
 
 ### Dictionaries
 - [object GameCenterActivityImageCreateRequest.Data.Relationships.Version.Data](gamecenteractivityimagecreaterequest/data-data.dictionary/relationships-data.dictionary/version-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center activity image.
 
 ## Properties
 

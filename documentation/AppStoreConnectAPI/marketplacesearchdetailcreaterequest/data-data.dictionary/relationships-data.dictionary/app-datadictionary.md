@@ -16,6 +16,7 @@ object MarketplaceSearchDetailCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object MarketplaceSearchDetailCreateRequest.Data.Relationships.App.Data](marketplacesearchdetailcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a marketplace search detail.
 
 ## Properties
 

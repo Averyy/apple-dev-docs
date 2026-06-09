@@ -23,6 +23,15 @@ static var maximumReservedLocales: Int { get }
 
 This value is the largest allowed count of [`reservedLocales`](assetinventory/reservedlocales.md). The value may vary between devices according to storage space.
 
+## See Also
+
+- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+  Add an asset locale to the app’s current reservations.
+- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+  Removes an asset locale reservation.
+- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+  The app’s current asset locale reservations.
+
 
 ---
 

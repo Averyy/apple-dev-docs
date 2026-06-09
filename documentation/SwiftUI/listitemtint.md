@@ -22,7 +22,7 @@ struct ListItemTint
 
 #### Overview
 
-Use one of these tint values with the [`listItemTint(_:)`](view/listitemtint(_:).md) view modifier. The containing list applies the tint in a platform-specific way.
+Use one of these tint values with the [`listItemTint(_:)`](view/listitemtint(_:).md) view modifier. The containing list applies the tint in a platform-specific way. On iOS and macOS, sidebars apply the tint color to [`Label`](label.md) icons, which otherwise use the app’s accent color by default.
 
 ## Topics
 

@@ -37,6 +37,15 @@ struct AssistantSchema
 
 ## See Also
 
+- [protocol AssistantEnum](assistantenum.md)
+  A value that Apple Intelligence and Siri use to fulfill a person’s request.
+- [protocol AssistantEntity](assistantentity.md)
+  An app entity that Apple Intelligence can discover to fulfill a person’s request.
+- [protocol AssistantIntent](assistantintent.md)
+  An app intent that Siri performs to fulfill a person’s request.
+- [protocol AssistantSchemaEnum](assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](assistantschemaintent.md)
 - [enum AssistantSchemas](assistantschemas.md)
 
 

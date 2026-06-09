@@ -26,7 +26,10 @@ struct CVPixelBufferCreationAttributes
 - [init?(CVPixelBufferAttributes)](cvpixelbuffercreationattributes/init(_:).md)
   Convert Attributes to CreationAttributes. This init will fail if [`pixelFormatType`](cvpixelbuffercreationattributes/pixelformattype.md) or [`size`](cvpixelbuffercreationattributes/size.md) properties are absent.
 - [init(pixelFormatType: CVPixelFormatType, size: CVImageSize, compatibility: CVPixelFormatDescription.Compatibility, bytesPerRowAlignment: Int?, planeAlignment: Int?, extendedPixels: CVPixelBufferPadding?)](cvpixelbuffercreationattributes/init(pixelformattype:size:compatibility:bytesperrowalignment:planealignment:extendedpixels:).md)
+- [init(pixelFormatType: CVPixelFormatType, size: CVImageSize, compatibility: CVPixelFormatDescription.Compatibility, bytesPerRowAlignment: Int?, planeAlignment: Int?, extendedPixels: CVPixelBufferPadding?, attachments: CVAttachmentContainer<CVPixelBufferAttachmentKeyDefinitions>?)](cvpixelbuffercreationattributes/init(pixelformattype:size:compatibility:bytesperrowalignment:planealignment:extendedpixels:attachments:).md)
 ### Instance Properties
+- [var attachments: CVAttachmentContainer<CVPixelBufferAttachmentKeyDefinitions>?](cvpixelbuffercreationattributes/attachments.md)
+  Attachments to set on the pixel buffer.
 - [var backing: CVPixelBufferCreationAttributes.Backing](cvpixelbuffercreationattributes/backing-swift.property.md)
   Defines how the memory for the pixel buffer backing is allocated. IOSurface backed pixel buffers can be shared between CPU and GPU also across process boundaries. Defaults to `Backing.ioSurface`.
 - [var bytesPerRowAlignment: Int?](cvpixelbuffercreationattributes/bytesperrowalignment.md)
@@ -51,6 +54,21 @@ struct CVPixelBufferCreationAttributes
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+  CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
+- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+  CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
+- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+  A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+  Metadata associated with ProRes RAW images.
 
 
 ---

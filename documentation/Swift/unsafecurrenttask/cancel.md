@@ -20,6 +20,18 @@ Cancel the current task.
 func cancel()
 ```
 
+#### Discussion
+
+The task will be immediately cancelled and cancellation will propagate towards any child tasks it has.
+
+##### Interaction with Task Cancellation Shields
+
+Note that cancellation may not be observed if a task is currently executing with an active task cancellation shield. Refer to cancellation shield documentation for detailed semantics.
+
+> **Note**: `withTaskCancellationShield(operation:)`
+
+> **Note**: `Task/hasActiveTaskCancellationShield`
+
 
 ---
 

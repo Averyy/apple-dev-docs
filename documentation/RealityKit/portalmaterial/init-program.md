@@ -1,0 +1,25 @@
+# init(program:)
+
+**Framework**: RealityKit  
+**Kind**: init
+
+Create a PortalMaterial with an already initialized Program. Use this method when you want to preload a library of shaders and create instances of them quickly and synchronously via PortalMaterial at runtime.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+init(program: PortalMaterial.Program)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/portalmaterial/init(program:))*

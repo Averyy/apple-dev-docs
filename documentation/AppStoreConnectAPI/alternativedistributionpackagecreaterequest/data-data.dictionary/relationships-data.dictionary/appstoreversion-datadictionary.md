@@ -16,6 +16,7 @@ object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVe
 
 ### Objects
 - [object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVersion.Data](alternativedistributionpackagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an alternative distribution package.
 
 ## Properties
 

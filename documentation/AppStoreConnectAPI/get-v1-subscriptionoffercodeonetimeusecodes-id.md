@@ -1,4 +1,4 @@
-# Read One-Time Use Offer Code Information
+# Read one-time use offer code information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,15 +20,15 @@ Get details about a specific one-time use offer code for an auto-renewable subsc
 
 ## See Also
 
-- [Create One-Time Use Offer Codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
+- [Create one-time use offer codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
   Create one-time use codes for an auto-renewable subscription offer.
-- [Deactivate One-Time Use Offer Codes](patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
+- [Deactivate one-time use offer codes](patch-v1-subscriptionoffercodeonetimeusecodes-_id_.md)
   Deactivate a batch of one-time use offer codes for an auto-renewable subscription.
-- [List All One-Time Use Offer Codes for an Auto-Renewable Subscription](get-v1-subscriptionoffercodes-_id_-onetimeusecodes.md)
+- [List all one-time use offer codes for an auto-renewable subscription](get-v1-subscriptionoffercodes-_id_-onetimeusecodes.md)
   Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
-- [List One-Time Use Offer Code Values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
+- [List one-time use offer code values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
-- [GET /v1/subscriptionOfferCodes/{id}/relationships/oneTimeUseCodes](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+- [List one-time-use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
 
 
 ---

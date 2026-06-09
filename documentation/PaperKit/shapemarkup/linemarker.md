@@ -1,0 +1,41 @@
+# ShapeMarkup.LineMarker
+
+**Framework**: PaperKit  
+**Kind**: enum
+
+A marker that can be attached to a line.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+enum LineMarker
+```
+
+## Topics
+
+### Enumeration Cases
+- [ShapeMarkup.LineMarker.arrow](shapemarkup/linemarker/arrow.md)
+  An arrow marker pointing in the direction of the line.
+- [ShapeMarkup.LineMarker.none](shapemarkup/linemarker/none.md)
+  No marker.
+
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
+- [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/paperkit/shapemarkup/linemarker)*

@@ -154,7 +154,7 @@ You can exclude other traffic using the following keys in the always-on VPN prof
 - `ApplicationExceptions` ([`VPN.AlwaysOn.ApplicationExceptionElement`](https://developer.apple.com/documentation/DeviceManagement/VPN/AlwaysOn-data.dictionary/ApplicationExceptionElement)) — specifies apps to exclude from an always-on VPN.
 - `ServiceExceptions` ([`VPN.AlwaysOn.ServiceExceptionElement`](https://developer.apple.com/documentation/DeviceManagement/VPN/AlwaysOn-data.dictionary/ServiceExceptionElement)) — specifies services to exclude from an always-on VPN. Possible values are `VoiceMail`, `AirPrint`, and `CellularServices`.
 
-For more information on MDM and configuring always-on VPNs, see [`Configuring Multiple Devices Using Profiles`](https://developer.apple.com/documentation/DeviceManagement/configuring-multiple-devices-using-profiles) and [`Profile-Specific Payload Keys`](https://developer.apple.com/documentation/DeviceManagement/profile-specific-payload-keys).
+For more information on MDM and configuring always-on VPNs, see [`Configuring multiple devices using profiles`](https://developer.apple.com/documentation/DeviceManagement/configuring-multiple-devices-using-profiles) and [`Profile-specific payload keys`](https://developer.apple.com/documentation/DeviceManagement/profile-specific-payload-keys).
 
 ## See Also
 

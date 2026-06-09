@@ -20,10 +20,6 @@ Assistant schema conformance for app intents that offer email functionality.
 protocol MailIntent : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making email actions available to Siri and Apple Intelligence](making-email-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,12 +33,17 @@ protocol MailIntent : AssistantSchemas.Model
   The app intent conforms to the schema for deleting email messages.
 - [var forwardMail: some AssistantSchemas.Intent](assistantschemas/mailintent/forwardmail.md)
   The app intent conforms to the schema for forwarding an email message.
+- [var openDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/opendraft.md)
+- [var openMessage: some AssistantSchemas.Intent](assistantschemas/mailintent/openmessage.md)
 - [var replyMail: some AssistantSchemas.Intent](assistantschemas/mailintent/replymail.md)
   The app intent conforms to the schema for replying to an email message.
 - [var saveDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/savedraft.md)
   The app intent conforms to the schema for saving an email draft.
 - [var sendDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/senddraft.md)
   The app intent conforms to the schema for sending an email draft.
+- [var summarizeMessages: some AssistantSchemas.Intent](assistantschemas/mailintent/summarizemessages.md)
+- [var undoSend: some AssistantSchemas.Intent](assistantschemas/mailintent/undosend.md)
+- [var unsubscribe: some AssistantSchemas.Intent](assistantschemas/mailintent/unsubscribe.md)
 - [var updateDraft: some AssistantSchemas.Intent](assistantschemas/mailintent/updatedraft.md)
   The app intent conforms to the schema for updating an email draft.
 - [var updateMail: some AssistantSchemas.Intent](assistantschemas/mailintent/updatemail.md)

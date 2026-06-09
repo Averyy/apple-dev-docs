@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a review submission item.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -16,6 +18,7 @@ object ReviewSubmissionItemCreateRequest.Data
 
 ### Objects
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

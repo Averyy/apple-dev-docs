@@ -1,4 +1,4 @@
-# Assign the App Encryption Declaration for a Build
+# Assign the app encryption declaration for a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Assign an app encryption declaration to a build.
 
 ## See Also
 
-- [Modify a Build](patch-v1-builds-_id_.md)
+- [Modify a build](patch-v1-builds-_id_.md)
   Expire a build or change its encryption exemption setting.
 
 

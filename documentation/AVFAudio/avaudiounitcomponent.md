@@ -94,6 +94,9 @@ Details can include information such as type, subtype, manufacturer, and locatio
   An audio unit type that represents an offline effect.
 - [let AVAudioUnitTypeMIDIProcessor: String](avaudiounittypemidiprocessor.md)
   An audio unit type that represents a MIDI processor.
+### Structures
+- [AVAudioUnitComponent.TagsDidChangeMessage](avaudiounitcomponent/tagsdidchangemessage.md)
+  Type-safe notification message for audio unit component tag changes.
 
 ## Relationships
 

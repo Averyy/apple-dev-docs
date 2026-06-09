@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Build Beta Notifications resource.
+A push notification sent to eligible TestFlight testers when a new build is available to install.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -25,7 +25,7 @@ object BuildBetaNotification
 - [object BuildBetaNotificationCreateRequest](buildbetanotificationcreaterequest.md)
   The request body you use to create a Build Beta Notification.
 - [object BuildBetaNotificationResponse](buildbetanotificationresponse.md)
-  A response that contains a single Build Beta Notifications resource.
+  The response body for the endpoint that sends a beta test notification for a build.
 
 
 ---

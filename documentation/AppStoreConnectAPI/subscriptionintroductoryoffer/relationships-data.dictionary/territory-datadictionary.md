@@ -16,6 +16,7 @@ object SubscriptionIntroductoryOffer.Relationships.Territory
 
 ### Objects
 - [object SubscriptionIntroductoryOffer.Relationships.Territory.Data](subscriptionintroductoryoffer/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription introductory offer.
 
 ## Properties
 

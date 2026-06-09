@@ -17,7 +17,7 @@ static var appendData: FSVolume.AccessMask { get }
 ## See Also
 
 - [static var execute: FSVolume.AccessMask](fsvolume/accessmask/execute.md)
-  The file system allows file executuion.
+  The file system allows file execution.
 - [static var delete: FSVolume.AccessMask](fsvolume/accessmask/delete.md)
   The file system allows deleting a file.
 

@@ -58,6 +58,8 @@ Don’t create [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) objec
   A CredentialSession event has triggered a UIKit scene creation.
 - [var gameControllerActivationContext: GCGameControllerActivationContext?](uiscene/connectionoptions/gamecontrolleractivationcontext.md)
 - [var marketplaceDisplayOption: MarketplaceDisplayOption?](uiscene/connectionoptions/marketplacedisplayoption.md)
+- [var sceneAccessoryUserInfo: Any?](uiscene/connectionoptions/sceneaccessoryuserinfo.md)
+  An optional user info object, provided when creating the `UISceneAccessory` for this scene accessory.
 - [var shouldHandleActiveWorkoutRecovery: Bool](uiscene/connectionoptions/shouldhandleactiveworkoutrecovery.md)
 
 ## Relationships

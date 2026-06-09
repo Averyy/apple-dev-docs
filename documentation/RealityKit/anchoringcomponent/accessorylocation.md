@@ -24,7 +24,7 @@ Accessories may include locations such as buttons, and thumb sticks, and grips.
 - [var name: String?](anchoringcomponent/accessorylocation/name.md)
   The name of the accessory location.
 ### Type Properties
-- [static let origin: AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation/origin.md)
+- [static var origin: AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation/origin.md)
   A location situated at the accessory origin.
 
 ## Relationships

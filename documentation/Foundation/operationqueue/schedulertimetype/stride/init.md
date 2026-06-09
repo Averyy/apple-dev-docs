@@ -20,6 +20,15 @@ Creates a stride using the specified time interval.
 init(_ timeInterval: TimeInterval)
 ```
 
+## See Also
+
+- [init?<T>(exactly: T)](operationqueue/schedulertimetype/stride/init(exactly:).md)
+  Creates a stride using the specified integer, if it can be represented exactly.
+- [init(floatLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(floatliteral:).md)
+  Creates a stride using the specified floating-point value.
+- [init(integerLiteral: TimeInterval)](operationqueue/schedulertimetype/stride/init(integerliteral:).md)
+  Creates a stride using the specified integer value.
+
 
 ---
 

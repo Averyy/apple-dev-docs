@@ -6,8 +6,7 @@
 Obtain a list of people the server manages, across the organization.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 #### Discussion
 

@@ -15,15 +15,15 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](float/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](float/_(_:_:)-24u4g.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](float/_(_:_:)-3izpm.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](float/_(_:_:)-7lwp7.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 - [static func < (Self, Self) -> Bool](float/_(_:_:)-fe4v.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (Self, Self) -> Bool](float/_=(_:_:)-1iin.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](float/_=(_:_:)-5i1rj.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](float/_=(_:_:)-8lyh7.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](float/_=(_:_:)-5nvzr.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

@@ -20,7 +20,7 @@ protocol MTL4FXTemporalScaler : MTLFXTemporalScalerBase
 
 ### Instance Methods
 - [func encode(commandBuffer: any MTL4CommandBuffer)](mtl4fxtemporalscaler/encode(commandbuffer:).md)
-  Encode this spatial scaler work into a command buffer.
+  Adds a scaling pass to a command buffer.
 
 ## Relationships
 

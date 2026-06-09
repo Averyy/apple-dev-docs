@@ -11,6 +11,7 @@ Creates a checkbox toggle style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

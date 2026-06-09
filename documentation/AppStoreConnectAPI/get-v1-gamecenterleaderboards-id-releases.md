@@ -24,7 +24,7 @@ Read the state of releases for a leaderboard and related information.
 
 ## See Also
 
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 - [Read Leaderboard Release Information](get-v1-gamecenterleaderboardreleases-_id_.md)
   Read the state of a specific leaderboard release.
 - [Create a Leaderboard Release](post-v1-gamecenterleaderboardreleases.md)

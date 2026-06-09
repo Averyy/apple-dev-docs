@@ -34,6 +34,8 @@ struct TVOSVersion
   The value that represents tvOS 18.0.
 - [static let v26: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v26.md)
   The value that represents tvOS 26.0.
+- [static let v27: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v27.md)
+  The value that represents tvOS 27.0.
 - [static let v9: SupportedPlatform.TVOSVersion](supportedplatform/tvosversion/v9.md)
   The value that represents tvOS 9.0.
 

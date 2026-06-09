@@ -35,7 +35,7 @@ The credential session can be in any state when calling this method. If the call
 
 An app extension calling this method needs to have the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement.
 
-> ❗ **Important**:  Calling this method may generate a billable event to the credential provider.
+> ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
 ## Parameters
 

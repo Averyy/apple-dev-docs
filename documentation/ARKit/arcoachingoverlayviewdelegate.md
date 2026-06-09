@@ -9,6 +9,7 @@ A set of callbacks you implement to be notified of coaching events.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.1+
+- visionOS 1.0+
 
 ## Declaration
 

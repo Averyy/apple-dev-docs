@@ -30,7 +30,12 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Customizing the behavior
 - [func customizationBehavior(ToolbarCustomizationBehavior) -> some CustomizableToolbarContent](customizabletoolbarcontent/customizationbehavior(_:).md)
   Configures the customization behavior of customizable toolbar content.
+### Setting visibility
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some CustomizableToolbarContent](customizabletoolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
 ### Instance Methods
+- [func contentMarginsRemoved(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/contentmarginsremoved(_:).md)
+  Configures whether the content margins are removed.
 - [func hidden(Bool) -> some CustomizableToolbarContent](customizabletoolbarcontent/hidden(_:).md)
   Hides a toolbar item within its toolbar.
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some CustomizableToolbarContent](customizabletoolbarcontent/matchedtransitionsource(id:in:).md)
@@ -43,15 +48,21 @@ protocol CustomizableToolbarContent : ToolbarContent where Self.Body : Customiza
 ### Inherits From
 - [ToolbarContent](toolbarcontent.md)
 ### Conforming Types
+- [EmptyView](emptyview.md)
+- [ForEach](foreach.md)
 - [Group](group.md)
 - [ToolbarItem](toolbaritem.md)
+- [ToolbarOverflowMenu](toolbaroverflowmenu.md)
 - [ToolbarSpacer](toolbarspacer.md)
 - [ToolbarTitleMenu](toolbartitlemenu.md)
+- [TupleContent](tuplecontent.md)
 
 ## See Also
 
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
+- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+  Hides an individual view within a control group toolbar item.
 - [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
   The customization behavior of customizable toolbar content.
 - [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)

@@ -18,7 +18,7 @@ Reserve an image for a Game Center activity.
 
 ## See Also
 
-- [Read Activity Image Information](get-v1-gamecenteractivityimages-_id_.md)
+- [Read activity image information](get-v1-gamecenteractivityimages-_id_.md)
   Get information for a specific Game Center activity image.
 - [Commit an Image for an Activity](patch-v1-gamecenteractivityimages-_id_.md)
   Commit an uploaded image asset as a Game Center activity image.

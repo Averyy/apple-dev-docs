@@ -18,13 +18,6 @@ The workout represented by this plan.
 var workout: WorkoutPlan.Workout
 ```
 
-## See Also
-
-- [var id: UUID](workoutplan/id-swift.property.md)
-  A unique identity for the workout plan.
-- [WorkoutPlan.ID](workoutplan/id-swift.typealias.md)
-  The data type of the workout plan’s ID.
-
 
 ---
 

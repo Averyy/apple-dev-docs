@@ -16,6 +16,7 @@ Creates a switch style with a tint color.
 ## Declaration
 
 ```swift
+nonisolated
 init(tint: Color)
 ```
 

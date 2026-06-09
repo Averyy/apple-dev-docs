@@ -12,6 +12,7 @@ A type that describes the algorithm or implementation that the request performs.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -24,6 +25,8 @@ enum Revision
 ### Getting the revision
 - [DetectFaceLandmarksRequest.Revision.revision3](detectfacelandmarksrequest/revision-swift.enum/revision3.md)
   An algorithm or implementation that represents the third revision.
+### Enumeration Cases
+- [DetectFaceLandmarksRequest.Revision.revision4](detectfacelandmarksrequest/revision-swift.enum/revision4.md)
 
 ## Relationships
 

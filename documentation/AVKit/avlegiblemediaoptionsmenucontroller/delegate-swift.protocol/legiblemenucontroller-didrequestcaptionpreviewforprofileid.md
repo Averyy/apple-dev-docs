@@ -27,6 +27,11 @@ The client should display a caption preview using the MACaptionAppearance profil
 - `menuController`: The legible options menu controller.
 - `profileID`: MACaptionAppearance profile ID as an NSString for the caption style to preview
 
+## See Also
+
+- [func legibleMenuController(AVLegibleMediaOptionsMenuController, didChange: AVLegibleMediaOptionsMenuState)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontroller(_:didchange:).md)
+- [func legibleMenuControllerDidRequestStoppingSubtitleCaptionPreview(AVLegibleMediaOptionsMenuController)](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol/legiblemenucontrollerdidrequeststoppingsubtitlecaptionpreview(_:).md)
+
 
 ---
 

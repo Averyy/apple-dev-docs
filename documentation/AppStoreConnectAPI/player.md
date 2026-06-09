@@ -10,9 +10,7 @@ Use a `Player` object in the expression of a matchmaking rule to access informat
 
 ##### Properties
 
-- **`properties`**: The game-specific properties of the game or player that initiates a match request.
-- **`playerId`**: A unique identifier for the player.
-- **`requestName`**: An identifier for the associated match request.
+-`properties`: The game-specific properties of the game or player that initiates a match request. -`playerId`: A unique identifier for the player. -`requestName`: An identifier for the associated match request.
 
 ## See Also
 

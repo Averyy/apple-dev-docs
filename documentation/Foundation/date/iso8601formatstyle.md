@@ -81,6 +81,14 @@ let formatted = meetNow.formatted(.iso8601
   Modifies the ISO 8601 date format style to include the time zone in the formatted output.
 - [func timeZoneSeparator(Date.ISO8601FormatStyle.TimeZoneSeparator) -> Date.ISO8601FormatStyle](date/iso8601formatstyle/timezoneseparator(_:).md)
   Modifies the ISO 8601 date format style to use the specified time zone separator.
+### Parsing an ISO 8601 Format Style
+- [func parse(String) throws -> Date](date/iso8601formatstyle/parse(_:).md)
+  Parses a string into a date.
+- [var parseStrategy: Date.ISO8601FormatStyle](date/iso8601formatstyle/parsestrategy.md)
+  The strategy used to parse a string into a date.
+### Applying an ISO 8601 Format Style
+- [func format(Date) -> String](date/iso8601formatstyle/format(_:).md)
+  Creates a locale-aware ISO 8601 string representation from a date value.
 ### Comparing ISO 8601 Format Styles
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.
@@ -100,6 +108,12 @@ let formatted = meetNow.formatted(.iso8601
   If set, the style includes fractional seconds when formatting. Before Swift 6.2, if true when parsing, fractional seconds must be present. If false when parsing, fractional seconds must not be present. After Swift 6.2, fractional seconds may be present in the String regardless of the setting of this property.
 - [var timeSeparator: Date.ISO8601FormatStyle.TimeSeparator](date/iso8601formatstyle/timeseparator-swift.property.md)
 - [var timeZoneSeparator: Date.ISO8601FormatStyle.TimeZoneSeparator](date/iso8601formatstyle/timezoneseparator-swift.property.md)
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](date/iso8601formatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](date/iso8601formatstyle/formatstyle-implementations.md)
+- [ParseStrategy Implementations](date/iso8601formatstyle/parsestrategy-implementations.md)
+- [ParseableFormatStyle Implementations](date/iso8601formatstyle/parseableformatstyle-implementations.md)
+- [RegexComponent Implementations](date/iso8601formatstyle/regexcomponent-implementations.md)
 
 ## Relationships
 

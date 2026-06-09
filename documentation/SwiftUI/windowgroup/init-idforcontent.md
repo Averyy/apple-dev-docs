@@ -16,7 +16,7 @@ Creates a data-presenting window group with a text view title and an identifier.
 
 ```swift
 nonisolated
-init<D, C>(_ title: Text, id: String, for type: D.Type, @ViewBuilder content: @escaping (Binding<D?>) -> C) where Content == PresentedWindowContent<D, C>, D : Decodable, D : Encodable, D : Hashable, C : View
+init<D, C>(_ title: Text, id: String, for type: D.Type, @ContentBuilder content: @escaping (Binding<D?>) -> C) where Content == PresentedWindowContent<D, C>, D : Decodable, D : Encodable, D : Hashable, C : View
 ```
 
 #### Discussion

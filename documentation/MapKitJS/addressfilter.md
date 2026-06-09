@@ -37,8 +37,6 @@ Use this object to filter search results by criteria, such as country, region, a
 
 ## See Also
 
-- [const AddressCategory](addresscategory.md)
-  The categories of address components that users can search for with an address filter.
 - [class Search](search.md)
   An object that retrieves map-based search results for a user-entered query.
 

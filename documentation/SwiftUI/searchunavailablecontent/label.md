@@ -17,13 +17,13 @@ A view that represents the label of a static placeholder search view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Label
+nonisolated
+struct Label
 ```
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a search[`ContentUnavailableView`](contentunavailableview.md).
+You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](contentunavailableview.md).
 
 ## Relationships
 

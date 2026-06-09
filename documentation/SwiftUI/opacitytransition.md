@@ -17,6 +17,7 @@ A transition from transparent to opaque on insertion, and from opaque to transpa
 ## Declaration
 
 ```swift
+nonisolated
 struct OpacityTransition
 ```
 

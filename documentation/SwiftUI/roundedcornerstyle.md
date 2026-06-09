@@ -31,7 +31,6 @@ enum RoundedCornerStyle
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -55,7 +54,7 @@ enum RoundedCornerStyle
 - [struct RectangleCornerInsets](rectanglecornerinsets.md)
   The inset sizes for the corners of a rectangle.
 - [struct ConcentricRectangle](concentricrectangle.md)
-  A shape that is replaced by a concentric version of the current container shape. If the container shape is a rectangle derived shape with four corners, this shape could choose to respect corners individually.
+  A shape whose corners you configure, individually or uniformly, to be squared, rounded, or concentric relative to a container shape’s corners.
 
 
 ---

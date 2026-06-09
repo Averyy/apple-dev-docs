@@ -6,7 +6,7 @@
 The following constants specify values used by the methods [`setValue(_:type:for:)`](nstextblock/setvalue(_:type:for:).md), [`value(for:)`](nstextblock/value(for:).md), and [`valueType(for:)`](nstextblock/valuetype(for:).md) to specify text block dimensions.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -30,7 +30,7 @@ enum Dimension
 - [NSTextBlock.Dimension.maximumHeight](nstextblock/dimension/maximumheight.md)
   Maximum height of the text block.
 ### Initializers
-- [init?(rawValue: UInt)](nstextblock/dimension/init(rawvalue:).md)
+- [init?(rawValue: Int)](nstextblock/dimension/init(rawvalue:).md)
 
 ## Relationships
 

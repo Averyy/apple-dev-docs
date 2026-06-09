@@ -35,7 +35,7 @@ Custom views should override this to return [`true`](https://developer.apple.com
 - [func layoutIfNeeded()](uiview/layoutifneeded.md)
   Lays out the subviews immediately, if layout updates are pending.
 - [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
-  A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
+  A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 
 
 ---

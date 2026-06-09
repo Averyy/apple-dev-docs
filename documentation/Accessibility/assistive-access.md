@@ -6,7 +6,7 @@ A mode that tailors the iOS and iPadOS experience for people with cognitive disa
 
 #### Overview
 
-Assistive Access is an accessibility feature that tailors the iOS and iPadOS experience for people with cognitive disabilities. A trusted supporter, such as a family member or caregiver, sets up this feature in Settings > Accessibility > Assistive Access. They choose the system and third-party apps to make available in Assistive Access.
+Assistive Access is an accessibility feature that offers a distinctive interface with high-contrast buttons, large text labels, and visual alternatives to text for people with cognitive disabilities. A trusted supporter, such as a family member or caregiver, sets up this feature in Settings > Accessibility > Assistive Access. They choose the system and third-party apps to make available in Assistive Access.
 
 ![](https://docs-assets.developer.apple.com/published/74e17932b9b8096a565e7c9b884a798b/assistive-access%402x.png)
 

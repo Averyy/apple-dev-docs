@@ -74,6 +74,8 @@ Fetch metadata using [`LPMetadataProvider`](lpmetadataprovider.md). For remote U
 - [Encodable](../Swift/Encodable.md)
 - [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

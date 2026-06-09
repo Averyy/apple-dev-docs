@@ -11,7 +11,6 @@ The shared Live Caller ID Lookup manager instance for the app.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ A control that displays an editable text interface.
 ## Declaration
 
 ```swift
+nonisolated
 struct TextField<Label> where Label : View
 ```
 
@@ -76,7 +77,7 @@ var body: some View {
 
 You can set an explicit prompt on the text field to guide users on what text they should provide. Each text field style determines where and when the text field uses a prompt and label. For example, a form on macOS always places the label at the leading edge of the field and uses a prompt, when available, as placeholder text within the field itself. In the same context on iOS, the text field uses either the prompt or label as placeholder text, depending on whether the initializer provided a prompt.
 
-The following example shows a [`Form`](form.md) with two text fields, each of which provides a prompt to indicate that the field is required, and a view builder to provide a label:
+The following example shows a [`Form`](form.md) with two text fields, each of which provides a prompt to indicate that the field is required, and a content builder to provide a label:
 
 ```swift
 Form {
@@ -140,13 +141,13 @@ var body: some View {
 - [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
   Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
 - [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
-  Creates a text field that applies a format style to a bound value, with a label generated from a view builder.
+  Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
   Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
 - [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
-  Creates a text field that applies a formatter to a bound optional value, with a label generated from a view builder.
+  Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 ### Deprecated initializers
 - [Deprecated initializers](textfield-deprecated.md)
   Review deprecated text field initializers.

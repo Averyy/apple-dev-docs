@@ -18,23 +18,23 @@ enum Shape
 
 ## Topics
 
-### Enumeration Cases
-- [ShapeConfiguration.Shape.arrowShape](shapeconfiguration/shape/arrowshape.md)
-  A filled arrow shape.
-- [ShapeConfiguration.Shape.chatBubble](shapeconfiguration/shape/chatbubble.md)
-  A chat bubble shape.
+### Choosing a shape
+- [ShapeConfiguration.Shape.rectangle](shapeconfiguration/shape/rectangle.md)
+  A rectangle shape.
 - [ShapeConfiguration.Shape.ellipse](shapeconfiguration/shape/ellipse.md)
   An ellipse shape.
 - [ShapeConfiguration.Shape.line](shapeconfiguration/shape/line.md)
   A line shape.
-- [ShapeConfiguration.Shape.rectangle](shapeconfiguration/shape/rectangle.md)
-  A rectangle shape.
-- [ShapeConfiguration.Shape.regularPolygon](shapeconfiguration/shape/regularpolygon.md)
-  A n-sided polygon shape.
+- [ShapeConfiguration.Shape.chatBubble](shapeconfiguration/shape/chatbubble.md)
+  A chat bubble shape.
 - [ShapeConfiguration.Shape.roundedRectangle](shapeconfiguration/shape/roundedrectangle.md)
   A rounded rectangle.
+- [ShapeConfiguration.Shape.regularPolygon](shapeconfiguration/shape/regularpolygon.md)
+  A n-sided polygon shape.
 - [ShapeConfiguration.Shape.star](shapeconfiguration/shape/star.md)
   A n-pointed star shape.
+- [ShapeConfiguration.Shape.arrowShape](shapeconfiguration/shape/arrowshape.md)
+  A filled arrow shape.
 
 ## Relationships
 
@@ -44,6 +44,11 @@ enum Shape
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var type: ShapeConfiguration.Shape](shapeconfiguration/type.md)
+  The type of shape.
 
 
 ---

@@ -11,8 +11,6 @@ The additional data to pass to the app extension.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

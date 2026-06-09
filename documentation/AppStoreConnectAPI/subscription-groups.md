@@ -7,38 +7,45 @@ Create, modify, and delete subscription groups for your app.
 ## Topics
 
 ### Endpoints
-- [Create a Subscription Group](post-v1-subscriptiongroups.md)
+- [Create a subscription group](post-v1-subscriptiongroups.md)
   Create a subscription group for an app.
-- [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)
+- [List all subscription groups for an app](get-v1-apps-_id_-subscriptiongroups.md)
   Get a list of subscription groups for a specific app.
-- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
-- [Read Subscription Group Information](get-v1-subscriptiongroups-_id_.md)
+- [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
+- [Read subscription group information](get-v1-subscriptiongroups-_id_.md)
   Get the details of a specific subscription group.
-- [Modify a Subscription Group](patch-v1-subscriptiongroups-_id_.md)
+- [Modify a subscription group](patch-v1-subscriptiongroups-_id_.md)
   Update the reference name for a specific subscription group.
-- [Delete a Subscription Group](delete-v1-subscriptiongroups-_id_.md)
+- [Delete a subscription group](delete-v1-subscriptiongroups-_id_.md)
   Delete a specific empty subscription group.
-- [List All Subscription Group Localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
+- [List all subscription group localizations](get-v1-subscriptiongroups-_id_-subscriptiongrouplocalizations.md)
   Get a list of all localized metadata for a specific subscription group.
-- [GET /v1/subscriptionGroups/{id}/relationships/subscriptionGroupLocalizations](get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
-- [List All Subscriptions for a Subscription Group](get-v1-subscriptiongroups-_id_-subscriptions.md)
+- [List localization IDs for a subscription group](get-v1-subscriptiongroups-_id_-relationships-subscriptiongrouplocalizations.md)
+- [List all subscriptions for a subscription group](get-v1-subscriptiongroups-_id_-subscriptions.md)
   Get a list of all auto-renewable subscriptions in a subscription group.
-- [GET /v1/subscriptionGroups/{id}/relationships/subscriptions](get-v1-subscriptiongroups-_id_-relationships-subscriptions.md)
+- [List subscription IDs for a subscription group](get-v1-subscriptiongroups-_id_-relationships-subscriptions.md)
 ### Objects
 - [object SubscriptionGroupResponse](subscriptiongroupresponse.md)
+  The response body for endpoints that create, read, or modify a single subscription group.
 - [object SubscriptionGroup](subscriptiongroup.md)
+  A group of related auto-renewable subscriptions that share upgrade, downgrade, and cross-grade eligibility for customers.
 - [object SubscriptionGroupLocalizationsResponse](subscriptiongrouplocalizationsresponse.md)
+  The response body for endpoints that list localizations for a subscription group.
 - [object SubscriptionGroupLocalization](subscriptiongrouplocalization.md)
+  The localized display name and optional custom app name for a subscription group, shown to customers on the App Store.
 - [object SubscriptionGroupCreateRequest](subscriptiongroupcreaterequest.md)
+  The request body you use to create a subscription group.
 - [object SubscriptionGroupUpdateRequest](subscriptiongroupupdaterequest.md)
+  The request body you use to update a subscription group update request.
 - [object SubscriptionGroupsResponse](subscriptiongroupsresponse.md)
+  The response body for endpoints that list subscription groups for an app.
 - [object AppSubscriptionGroupsLinkagesResponse](appsubscriptiongroupslinkagesresponse.md)
 - [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
 - [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of subscriptions within a subscription group.
 - [object SubscriptionGroupSubscriptionGroupLocalizationsLinkagesResponse](subscriptiongroupsubscriptiongrouplocalizationslinkagesresponse.md)
 - [object SubscriptionGroupSubscriptionsLinkagesResponse](subscriptiongroupsubscriptionslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of subscriptions within a subscription group.
 
 ## See Also
 

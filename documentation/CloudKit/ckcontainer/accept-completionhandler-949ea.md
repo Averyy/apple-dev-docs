@@ -17,7 +17,7 @@ Accepts the specified share metadata.
 ## Declaration
 
 ```swift
-func accept(_ metadata: CKShare.Metadata) async throws -> CKShare
+func accept(_ metadata: CKShare.Metadata, completionHandler: @escaping @Sendable (CKShare?, (any Error)?) -> Void)
 ```
 
 #### Discussion

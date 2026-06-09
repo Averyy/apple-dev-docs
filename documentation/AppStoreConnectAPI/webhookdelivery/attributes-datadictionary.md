@@ -18,7 +18,9 @@ object WebhookDelivery.Attributes
 
 ### Dictionaries
 - [object WebhookDelivery.Attributes.Request](webhookdelivery/attributes-data.dictionary/request-data.dictionary.md)
+  The HTTP request details of a webhook delivery attempt, including headers and body.
 - [object WebhookDelivery.Attributes.Response](webhookdelivery/attributes-data.dictionary/response-data.dictionary.md)
+  The HTTP response received from the webhook endpoint during a delivery attempt.
 
 ## Properties
 

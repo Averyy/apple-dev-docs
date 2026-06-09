@@ -1,4 +1,4 @@
-# Read Beta Tester Information
+# Read beta tester information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -25,7 +25,7 @@ Get a specific beta tester.
 
 ## See Also
 
-- [List Beta Testers](get-v1-betatesters.md)
+- [List beta testers](get-v1-betatesters.md)
   Find and list beta testers for all apps, builds, and beta groups.
 
 

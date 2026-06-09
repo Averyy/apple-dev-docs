@@ -9,6 +9,7 @@ A dictionary of all services declared by your app, indexed by service name.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

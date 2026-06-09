@@ -16,7 +16,7 @@ interface GeocoderLookupOptions
 
 #### Overview
 
-Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup(place, callback, options)`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
+Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a [`lookup(place, options)`](geocoder/lookup.md) to constrain geocoder results to a specific area or return results in a specific language.
 
 ## Topics
 
@@ -29,12 +29,14 @@ Configure [`GeocoderLookupOptions`](geocoderlookupoptions.md) when performing a 
   A list of countries for constraining the lookup results.
 - [region](geocoderlookupoptions/region.md)
   A region for constraining lookup results.
+- [signal](geocoderlookupoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 ## See Also
 
-- [lookup(place, callback, options)](geocoder/lookup.md)
+- [lookup(place, options)](geocoder/lookup.md)
   Converts an address to geographic coordinates.
-- [reverseLookup(coordinate, callback, options)](geocoder/reverselookup.md)
+- [reverseLookup(coordinate, options)](geocoder/reverselookup.md)
   Converts a geographic coordinate to an address.
 - [interface GeocoderReverseLookupOptions](geocoderreverselookupoptions.md)
   An option that constrains reverse lookup results to a specific language.

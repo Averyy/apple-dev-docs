@@ -41,7 +41,7 @@ struct UserCell: View {
 
 A new accessibility element is created when:
 
-- The view contains multiple or zero accessibility elements
+- The view contains multiple or zero accessibility elements.
 - The view wraps a [`UIViewRepresentable`](uiviewrepresentable.md)/[`NSViewRepresentable`](nsviewrepresentable.md).
 
 > **Note**: If an accessibility element is not created, the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element is modified.

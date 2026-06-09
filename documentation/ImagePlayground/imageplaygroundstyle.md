@@ -37,6 +37,10 @@ When you create images programmatically, you can ask the system to create images
 - [let id: String](imageplaygroundstyle/id.md)
   A text-based description of the style option.
 ### Type Properties
+- [static let any: ImagePlaygroundStyle](imageplaygroundstyle/any.md)
+  An option that yields images in a style inferred from the prompt.
+- [static let emoji: ImagePlaygroundStyle](imageplaygroundstyle/emoji.md)
+  An option that yields images in an emoji style.
 - [static let externalProvider: ImagePlaygroundStyle](imageplaygroundstyle/externalprovider.md)
   An option that yields images in a style provided by an external provider
 

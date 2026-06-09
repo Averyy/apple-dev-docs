@@ -50,6 +50,8 @@ You can also use [`navigationLink`](pickerstyle/navigationlink.md) to construct 
   A picker style that presents the options as a group of radio buttons.
 - [struct SegmentedPickerStyle](segmentedpickerstyle.md)
   A picker style that presents the options in a segmented control.
+- [struct TabsPickerStyle](tabspickerstyle.md)
+  A picker style that presents options as segmented tabs.
 - [struct WheelPickerStyle](wheelpickerstyle.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 

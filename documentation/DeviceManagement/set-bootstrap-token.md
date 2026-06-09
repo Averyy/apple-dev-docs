@@ -11,11 +11,10 @@ Sends the bootstrap token to the server.
 - Mac Catalyst 26.0+
 - macOS 10.15+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion
@@ -31,9 +30,9 @@ Requires a device enrolled using Automated Device Enrollment.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, visionOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 
 ## Topics
 
@@ -43,7 +42,7 @@ Requires a device enrolled using Automated Device Enrollment.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#SetBootstrapTokenRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

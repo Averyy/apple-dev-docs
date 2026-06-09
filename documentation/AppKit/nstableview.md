@@ -317,6 +317,14 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
   Posted after an `NSTableView` object’s selection changes.
 - [class let selectionIsChangingNotification: NSNotification.Name](nstableview/selectionischangingnotification.md)
   Posted as an `NSTableView` object’s selection changes (while the mouse button is still down).
+### Structures
+- [NSTableView.ColumnDidMoveMessage](nstableview/columndidmovemessage.md)
+- [NSTableView.ColumnDidResizeMessage](nstableview/columndidresizemessage.md)
+- [NSTableView.SelectionDidChangeMessage](nstableview/selectiondidchangemessage.md)
+- [NSTableView.SelectionIsChangingMessage](nstableview/selectionischangingmessage.md)
+### Instance Properties
+- [var appIntentsDataSource: (any NSTableViewAppIntentsDataSource)?](nstableview/appintentsdatasource.md)
+  The object acting as the table view’s data source for app entity identifiers that make a cell’s content discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 
@@ -352,7 +360,6 @@ Use the [`isEnabled`](nscontrol/isenabled.md) property to enable or disable the 
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
 - [class NSTableCellView](nstablecellview.md)
   A reusable container view shown for a particular cell in a table view that uses rows for content.
 

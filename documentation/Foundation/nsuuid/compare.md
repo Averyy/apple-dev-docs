@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Compares the receiver to another NSUUID in constant time.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

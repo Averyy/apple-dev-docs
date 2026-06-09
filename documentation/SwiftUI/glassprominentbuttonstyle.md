@@ -16,6 +16,7 @@ A button style that applies prominent glass border artwork based on the buttonâ€
 ## Declaration
 
 ```swift
+nonisolated
 struct GlassProminentButtonStyle
 ```
 
@@ -45,6 +46,12 @@ You can also use [`glassProminent`](primitivebuttonstyle/glassprominent.md) to c
   Enhance your app experience with system-provided and custom Liquid Glass.
 - [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
   Applies the Liquid Glass effect to a view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+  Associates an identity value to Liquid Glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+  Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
 - [func interactive(Bool) -> Glass](glass/interactive(_:).md)
   Returns a copy of the structure configured to be interactive.
 - [struct GlassEffectContainer](glasseffectcontainer.md)

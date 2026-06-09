@@ -18,7 +18,7 @@ The composition of content that comprise the toolbar content.
 ## Declaration
 
 ```swift
-@ToolbarContentBuilder
+@ContentBuilder
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 

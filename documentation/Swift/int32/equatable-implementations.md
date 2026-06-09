@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](int32/!=(_:_:)-4itgo.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](int32/!=(_:_:)-4pbzo.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func != (Self, Self) -> Bool](int32/!=(_:_:)-7g1j5.md)
   Returns a Boolean value indicating whether two values are not equal.

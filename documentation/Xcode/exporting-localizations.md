@@ -25,7 +25,7 @@ Xcode creates an Xcode Localization Catalog (a folder with a `.xcloc` file exten
 - Creates a strings file for the localizable properties in the information property list file.
 - Copies all localizable resources into the `Source Contents` folder to provide context for localizers.
 
-Xcode extracts strings that you pass to [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, and similar APIs in your code. For example, if you pass a string with a comment to the `NSLocalizedString` macro, Xcode includes the comment in the XLIFF file.
+Xcode extracts strings that you pass to [`Text`](https://developer.apple.com/documentation/SwiftUI/Text) structures, the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, and similar APIs in your code. For example, if you pass a string with a comment to the [`NSLocalizedString`](https://developer.apple.com/documentation/Foundation/NSLocalizedString) macro, Xcode includes the comment in the XLIFF file.
 
 In addition, each localization folder in the catalog contains only the resources and assets that you mark as localizable. Prior to localization, the file is a copy of the development language file—a placeholder to provide context for the localizers.
 

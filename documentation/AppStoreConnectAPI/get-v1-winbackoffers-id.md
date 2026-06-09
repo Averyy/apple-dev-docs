@@ -3,10 +3,14 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Read details about a specific win-back offer.
+The data structure that represents a get-v1-win back offers-{id} resource.
 
 **Availability**:
 - App Store Connect API 3.6+
+
+#### Overview
+
+Read details about a specific win-back offer.
 
 #### Discussion
 
@@ -83,17 +87,17 @@ https://api.appstoreconnect.apple.com/v1/winBackOffers/10778326500
 - [Creating and configuring win-back offers](creating-and-configuring-win-back-offers.md)
   Configure win-back offers for your auto-renewable subscriptions with the App Store Connect API.
 - [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
-  List all win-back offers for a specific subscription.
-- [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+  The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
+- [List win-back offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
 - [List Win-Back Offer Prices](get-v1-winbackoffers-_id_-prices.md)
-  List all prices for specific win-back offers.
-- [GET /v1/winBackOffers/{id}/relationships/prices](get-v1-winbackoffers-_id_-relationships-prices.md)
+  The data structure that represents a get-v1-win back offers-{id}-prices resource.
+- [List price IDs for a win-back offer](get-v1-winbackoffers-_id_-relationships-prices.md)
 - [Create a Win-Back Offer](post-v1-winbackoffers.md)
   Create a win-back offer for a specific subscription.
 - [Modify a Win-Back Offer](patch-v1-winbackoffers-_id_.md)
-  Edit details for a specific win-back offer.
+  The data structure that represents a patch-v1-win back offers-{id} resource.
 - [Delete a Win-Back Offer](delete-v1-winbackoffers-_id_.md)
-  Remove a win-back offer for a specific subscription.
+  The data structure that represents a delete-v1-win back offers-{id} resource.
 
 
 ---

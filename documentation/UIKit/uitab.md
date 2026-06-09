@@ -72,6 +72,8 @@ For more information, see [`Elevating your iPad app with a tab bar and sidebar`]
   Determines if the tab is enabled. When NO, tabs will have a disabled appearance and cannot be selected by the user. Default is YES.
 - [var managingTabGroup: UITabGroup?](uitab/managingtabgroup.md)
   The managing tab group for the tab. This returns the root-most `UITabGroup` in the tab’s parent hierarchy with an active `managingNavigationController`. This can be different to `parent` if the tab is nested in multiple levels of tab groups. If the tab does not belong to a hierarchy with a managing navigation controller, then this will return nil. Default is nil.
+- [var selectedImage: UIImage?](uitab/selectedimage.md)
+  An alternate image to display when the tab is selected. Default is nil.
 
 ## Relationships
 

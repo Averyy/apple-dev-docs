@@ -22,12 +22,14 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, willRestoreSt
 
 #### Discussion
 
-For apps that opt in to the state preservation and restoration feature, Core Bluetooth invokes this method when relaunching your app into the background to complete some Bluetooth-related task. Use this method to synchronize the state of your app with the state of the Bluetooth system.
+This method only applies to your app if it opts in to state restoration by providing [`CBPeripheralManagerOptionRestoreIdentifierKey`](cbperipheralmanageroptionrestoreidentifierkey.md) when initializing a [`CBPeripheralManager`](cbperipheralmanager.md). The system invokes this method when relaunching your app to handle active advertising or peripheral operations in progress when your app stopped.
+
+If the system calls this method but the parameters are missing, your app is responsible for restoring its previous state. Initialize any services and characteristics your app requires, and resume any activities from where they stopped.
 
 ## Parameters
 
 - `peripheral`: The peripheral manager undergoing state restoration.
-- `dict`: A dictionary that contains information about the peripheral manager, which the system preserved when the app terminated. For the available keys to this dictionary, see [`Peripheral Manager State Restoration Options`](peripheral-manager-state-restoration-options.md).
+- `dict`: A dictionary containing information about the peripheral manager that the system preserved when your app stopped. For the available keys to this dictionary, see [`Peripheral Manager State Restoration Options`](peripheral-manager-state-restoration-options.md).
 
 ## See Also
 

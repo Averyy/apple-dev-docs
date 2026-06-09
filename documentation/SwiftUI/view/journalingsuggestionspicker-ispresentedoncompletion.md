@@ -26,6 +26,11 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 - `isPresented`: A binding to a `Bool` value that determines whether to show the picker.
 - `onCompletion`: Code that you supply, which processes any suggestions that a person may choose in the picker.
 
+## See Also
+
+- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, journalingSuggestionToken: JournalingSuggestionPresentationToken?, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion:).md)
+  Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
+
 
 ---
 

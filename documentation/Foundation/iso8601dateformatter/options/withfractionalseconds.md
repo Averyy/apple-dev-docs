@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The date representation uses the colon separator (`:`) in the time zone.
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+

@@ -3,7 +3,7 @@
 **Framework**: Core Video  
 **Kind**: property
 
-Number of bytes in each row of the plane. Note that this may be greater than the bytes required for all pixels in the row.
+Number of bytes in each row of the plane. Note that this may be greater than the number of bytes required for all pixels in the row.
 
 **Availability**:
 - iOS 26.0+

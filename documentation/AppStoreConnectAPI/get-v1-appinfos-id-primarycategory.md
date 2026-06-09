@@ -1,4 +1,4 @@
-# Read the Primary Category Information of an App Info
+# Read the primary category information of an app info
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,10 +20,10 @@ Get an app’s primary App Store category.
 
 ## See Also
 
-- [Read the Secondary Category Information of an App Info](get-v1-appinfos-_id_-secondarycategory.md)
+- [Read the secondary category information of an app info](get-v1-appinfos-_id_-secondarycategory.md)
   Get an app’s secondary App Store category.
-- [GET /v1/appInfos/{id}/relationships/primaryCategory](get-v1-appinfos-_id_-relationships-primarycategory.md)
-- [GET /v1/appInfos/{id}/relationships/secondaryCategory](get-v1-appinfos-_id_-relationships-secondarycategory.md)
+- [Get the primary category ID for an app info](get-v1-appinfos-_id_-relationships-primarycategory.md)
+- [Get the secondary category ID for an app info](get-v1-appinfos-_id_-relationships-secondarycategory.md)
 
 
 ---

@@ -8,6 +8,55 @@ Learn about important changes to SwiftUI.
 
 Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/SwiftUI).
 
+#### June 2026
+
+##### General
+
+- Build your project in Xcode 27 or later so that the `@State` attribute uses the [`State()`](https://developer.apple.com/documentation/SwiftUI/State()) macro to create a state value in an [`App`](https://developer.apple.com/documentation/SwiftUI/App), [`Scene`](https://developer.apple.com/documentation/SwiftUI/Scene), or [`View`](https://developer.apple.com/documentation/SwiftUI/View). This change only initializes and stores your property once when it’s a class.
+- Build your project in Xcode 27 or later to construct type-agnostic content from closures that you mark with [`ContentBuilder`](https://developer.apple.com/documentation/SwiftUI/ContentBuilder), which serves as the unified replacement for type-specific builders like [`ToolbarContentBuilder`](https://developer.apple.com/documentation/SwiftUI/ToolbarContentBuilder) and [`CommandsBuilder`](https://developer.apple.com/documentation/SwiftUI/CommandsBuilder).
+- Add reordering by drag-and-drop in containers such as lists, stacks, grids, or custom layouts with [`reorderable()`](https://developer.apple.com/documentation/SwiftUI/DynamicViewContent/reorderable()) and [`reorderContainer(for:isEnabled:move:)`](https://developer.apple.com/documentation/SwiftUI/View/reorderContainer(for:isEnabled:move:)).
+- Add custom swipe actions to views in containers such as scroll views, stacks, grids, or custom layouts using [`swipeActions(edge:allowsFullSwipe:content:onPresentationChanged:)`](https://developer.apple.com/documentation/SwiftUI/View/swipeActions(edge:allowsFullSwipe:content:onPresentationChanged:)) and [`swipeActionsContainer()`](https://developer.apple.com/documentation/SwiftUI/View/swipeActionsContainer()).
+
+##### Transitions
+
+- Specify the  [`crossFade`](https://developer.apple.com/documentation/SwiftUI/NavigationTransition/crossFade) transition to have a sheet appear by fading in over content.
+
+##### Images
+
+- Cache images locally that you download with [`AsyncImage`](https://developer.apple.com/documentation/SwiftUI/AsyncImage), using [`asyncImageURLSession(_:)`](https://developer.apple.com/documentation/SwiftUI/View/asyncImageURLSession(_:)), [`init(request:scale:)`](https://developer.apple.com/documentation/SwiftUI/AsyncImage/init(request:scale:)), [`init(request:scale:content:placeholder:)`](https://developer.apple.com/documentation/SwiftUI/AsyncImage/init(request:scale:content:placeholder:)), and [`init(request:scale:transaction:content:)`](https://developer.apple.com/documentation/SwiftUI/AsyncImage/init(request:scale:transaction:content:)).
+
+##### Toolbars
+
+- Use the [`visibilityPriority(_:)`](https://developer.apple.com/documentation/SwiftUI/ToolbarContent/visibilityPriority(_:)) modifier to prioritize important toolbar actions so SwiftUI keeps them visible as space shrinks, moving lower-priority items to the overflow menu first.
+- Send secondary toolbar actions, like archive or delete, directly to the overflow menu by wrapping them in a [`ToolbarOverflowMenu`](https://developer.apple.com/documentation/SwiftUI/ToolbarOverflowMenu), keeping your primary toolbar focused on key actions.
+- Anchor a toolbar item to the trailing edge of the top bar using the [`topBarPinnedTrailing`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemPlacement/topBarPinnedTrailing) placement so it stays in place even as other items shift or move to the overflow menu.
+- Control how toolbars minimize in response to scrolling using the [`toolbarMinimizeBehavior(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/toolbarMinimizeBehavior(_:for:)) modifier.
+
+##### Documents
+
+- Build document-based apps that read directly from a file URL by conforming your document class to [`ReadableDocument`](https://developer.apple.com/documentation/SwiftUI/ReadableDocument), enabling access to large files and integration with URL-based frameworks.
+- Add write support to a URL-based document by also conforming to [`WritableDocument`](https://developer.apple.com/documentation/SwiftUI/WritableDocument).
+- Implement custom reading and writing logic with [`DocumentReader`](https://developer.apple.com/documentation/SwiftUI/DocumentReader) and [`DocumentWriter`](https://developer.apple.com/documentation/SwiftUI/DocumentWriter), or use [`FileWrapperDocumentReader`](https://developer.apple.com/documentation/SwiftUI/FileWrapperDocumentReader) and [`FileWrapperDocumentWriter`](https://developer.apple.com/documentation/SwiftUI/FileWrapperDocumentWriter) for simpler file-wrapper-based cases.
+- Access the document’s file URL and last modification date, and coordinate additional file access, using [`URLDocumentConfiguration`](https://developer.apple.com/documentation/SwiftUI/URLDocumentConfiguration).
+- Export a [`WritableDocument`](https://developer.apple.com/documentation/SwiftUI/WritableDocument) to disk using the [`fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)`](https://developer.apple.com/documentation/SwiftUI/View/fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:onCancellation:)) modifier.
+
+##### Tab Bars
+
+- Set the [`prominent`](https://developer.apple.com/documentation/SwiftUI/TabRole/prominent) role on a tab to place the tab in a separate, trailing position of the tab bar.
+
+##### Alerts and Confirmation Dialogs
+
+- Present an alert or confirmation dialog from an optional data item or error object, and use that data to produce the content and title: - [`alert(_:item:actions:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(_:item:actions:))
+- [`alert(error:actions:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(error:actions:))
+- [`alert(_:item:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(_:item:actions:message:))
+- [`alert(error:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/alert(error:actions:message:))
+- [`confirmationDialog(_:item:titleVisibility:actions:)`](https://developer.apple.com/documentation/SwiftUI/View/confirmationDialog(_:item:titleVisibility:actions:))
+- [`confirmationDialog(_:item:titleVisibility:actions:message:)`](https://developer.apple.com/documentation/SwiftUI/View/confirmationDialog(_:item:titleVisibility:actions:message:))
+
+##### Gestures
+
+- Specify the sources of gesture input to recognize, such as direct or indirect touches, pencil, or pointer. The following gestures have initializers that you can use to specify the sources of gesture input: [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture), [`LongPressGesture`](https://developer.apple.com/documentation/SwiftUI/LongPressGesture), [`MagnifyGesture`](https://developer.apple.com/documentation/SwiftUI/MagnifyGesture), [`RotateGesture`](https://developer.apple.com/documentation/SwiftUI/RotateGesture), [`RotateGesture3D`](https://developer.apple.com/documentation/SwiftUI/RotateGesture3D), [`SpatialEventGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialEventGesture), [`SpatialTapGesture`](https://developer.apple.com/documentation/SwiftUI/SpatialTapGesture), [`TapGesture`](https://developer.apple.com/documentation/SwiftUI/TapGesture), [`WindowDragGesture`](https://developer.apple.com/documentation/SwiftUI/WindowDragGesture). For more information see [`GestureInputKinds`](https://developer.apple.com/documentation/SwiftUI/GestureInputKinds).
+
 #### June 2025
 
 ##### General

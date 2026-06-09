@@ -110,6 +110,12 @@ struct TitleEditView: View {
 
 - [Managing user interface state](managing-user-interface-state.md)
   Encapsulate view-specific data within your app’s view hierarchy to make your views reusable.
+- [macro State()](state().md)
+  Creates a property that can read and write a value managed by SwiftUI.
+- [macro State<Value>(initialValue: Value)](state(initialvalue:).md)
+  Creates a property with an initial value that can read and write a value managed by SwiftUI.
+- [macro State<Value>(wrappedValue: Value)](state(wrappedvalue:).md)
+  Creates a property with a wrapped value that can read and write a value managed by SwiftUI.
 - [struct State](state.md)
   A property wrapper type that can read and write a value managed by SwiftUI.
 - [struct Binding](binding.md)

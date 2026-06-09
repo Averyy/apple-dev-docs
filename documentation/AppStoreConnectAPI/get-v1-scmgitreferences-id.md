@@ -1,4 +1,4 @@
-# Read Git Reference Information
+# Read git reference information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

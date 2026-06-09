@@ -22,7 +22,7 @@ struct DisplayRepresentation
 
 ## Mentions
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 
 ## Topics
 
@@ -33,6 +33,9 @@ struct DisplayRepresentation
 - [var subtitle: LocalizedStringResource?](displayrepresentation/subtitle.md)
 - [var image: DisplayRepresentation.Image?](displayrepresentation/image-swift.property.md)
 - [DisplayRepresentation.Image](displayrepresentation/image-swift.struct.md)
+### Structures
+- [DisplayRepresentation.Components](displayrepresentation/components.md)
+  Components of the `DisplayRepresentation`.
 ### Initializers
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](displayrepresentation/init(title:subtitle:image:synonyms:).md)
 ### Instance Properties

@@ -13,8 +13,6 @@ The payload that applies a set of declarations to the device through the Setting
 - tvOS 17.0+
 - visionOS 1.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -37,9 +35,9 @@ This profile applies a set of declarations to the device. Users use this profile
 | Device channel | iOS, macOS, tvOS, visionOS, watchOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, tvOS, visionOS, watchOS |
 
 ##### Profile Example
@@ -123,8 +121,6 @@ This profile applies a set of declarations to the device. Users use this profile
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

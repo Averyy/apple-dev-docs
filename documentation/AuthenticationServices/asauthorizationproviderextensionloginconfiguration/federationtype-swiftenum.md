@@ -18,6 +18,8 @@ enum FederationType
 - [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicWSTrust](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicwstrust.md)
 - [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.none](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/none.md)
 - [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.wsTrust](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/wstrust.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicOpenID](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicopenid.md)
+- [ASAuthorizationProviderExtensionLoginConfiguration.FederationType.openID](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/openid.md)
 ### Initializers
 - [init?(rawValue: Int)](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/init(rawvalue:).md)
 

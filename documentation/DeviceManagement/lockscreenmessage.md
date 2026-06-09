@@ -9,8 +9,6 @@ The payload that configures a Lock Screen message.
 - iOS 9.3+
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ This payload allows administrators to specify optional text displayed in the Log
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS |
 | Requires supervision | iOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -77,8 +75,8 @@ This payload allows administrators to specify optional text displayed in the Log
 ## Properties
 
 - `AssetTagInformation` (string): The asset tag information for the device, displayed in the Login Window and Lock Screen.
-- `IfLostReturnToMessage` (string): Deprecated. Use `LockScreenFootnote` instead.
-- `LockScreenFootnote` (string): The footnote displayed in the Login Window and Lock Screen.
+- `IfLostReturnToMessage` (string): Deprecated. Use `LockScreenFootnote` instead. Deprecated: iOS 9.3.1+ | iPadOS 9.3.1+
+- `LockScreenFootnote` (string): The footnote displayed in the Login Window and Lock Screen. Available: iOS 9.3.1+ | iPadOS 9.3.1+
 
 ## See Also
 
@@ -94,8 +92,6 @@ This payload allows administrators to specify optional text displayed in the Log
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

@@ -41,6 +41,7 @@ static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey
 - [static let volumeResourceCountKey: URLResourceKey](urlresourcekey/volumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as an `NSNumber` object (read-only).
 - [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)
+  `true` if the volume supports setting POSIX access permissions with the `NSURLFileSecurityKey` property. (Read-only, value type boolean `NSNumber`).
 - [static let volumeSupportsCasePreservedNamesKey: URLResourceKey](urlresourcekey/volumesupportscasepreservednameskey.md)
   Key for determining whether the volume supports case-preserved names, returned as a Boolean `NSNumber` object (read-only).
 - [static let volumeSupportsCaseSensitiveNamesKey: URLResourceKey](urlresourcekey/volumesupportscasesensitivenameskey.md)

@@ -11,25 +11,25 @@ Every build has a `buildBetaDetails` resource that represents TestFlight-specifi
 ## Topics
 
 ### Getting Build Beta Details Information
-- [List Build Beta Details](get-v1-buildbetadetails.md)
+- [List build beta details](get-v1-buildbetadetails.md)
   Find and list build beta details for all builds.
-- [Read Build Beta Detail Information](get-v1-buildbetadetails-_id_.md)
+- [Read build beta detail information](get-v1-buildbetadetails-_id_.md)
   Get a specific build beta details resource.
-- [Read the Build Information of a Build Beta Detail](get-v1-buildbetadetails-_id_-build.md)
+- [Read the build information of a build beta detail](get-v1-buildbetadetails-_id_-build.md)
   Get the build information for a specific build beta details resource.
-- [GET /v1/buildBetaDetails/{id}/relationships/build](get-v1-buildbetadetails-_id_-relationships-build.md)
+- [Get the build ID for a build beta detail](get-v1-buildbetadetails-_id_-relationships-build.md)
 ### Modifying Build Beta Details
-- [Modify a Build Beta Detail](patch-v1-buildbetadetails-_id_.md)
+- [Modify a build beta detail](patch-v1-buildbetadetails-_id_.md)
   Update beta test details for a specific build.
 ### Objects and Data Types
 - [object BuildBetaDetail](buildbetadetail.md)
-  The data structure that represents a Build Beta Details resource.
+  The TestFlight distribution settings for a build, including whether it is available for external testing.
 - [object BuildBetaDetailUpdateRequest](buildbetadetailupdaterequest.md)
   The request body you use to update a Build Data Detail.
 - [object BuildBetaDetailResponse](buildbetadetailresponse.md)
-  A response that contains a single Build Beta Details resource.
+  The response body for endpoints that read or modify beta testing details for a build.
 - [object BuildBetaDetailsResponse](buildbetadetailsresponse.md)
-  A response that contains a list of Build Beta Detail resources.
+  The response body for endpoints that list beta testing details across builds.
 - [type ExternalBetaState](externalbetastate.md)
   String that represents a build’s availability for external testing.
 - [type InternalBetaState](internalbetastate.md)

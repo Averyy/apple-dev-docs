@@ -22,7 +22,7 @@ static var unexpectedAudioFormat: SFSpeechError.Code { get }
 ## See Also
 
 - [static var incompatibleAudioFormats: SFSpeechError.Code](sfspeecherror/code/incompatibleaudioformats.md)
-  The selected modules do not have an audio format in common.
+  The selected modules do not have an audio format in common or do not support an audio format.
 
 
 ---

@@ -12,6 +12,7 @@ Hashes the essential components of this value by feeding them into the given has
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

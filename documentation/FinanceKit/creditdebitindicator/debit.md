@@ -8,6 +8,7 @@ A value that indicates an amount which increases a liability or decreases an ass
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# Common Objects
+# Common objects
 
 **Framework**: Device Management
 
@@ -25,19 +25,11 @@ Understand the common JSON objects that framework responses contain.
 ### Handling errors
 - [object Error](error.md)
   Information about an error that occurred while processing a request.
-- [Interpreting HTTP status codes](interpreting-http-status-codes.md)
-  Interpret error codes the API might return when executing a request.
 
 ## See Also
 
 - [Generating developer tokens](generating-developer-tokens.md)
-  Create a JSON Web Token to authorize your requests to the Apps and Books for Organizations API.
-- [Handling requests and responses](handling-requests-and-responses.md)
-  Write a request for app or book metadata and handle responses from the API.
-- [Fetching resources with extended attributes](fetching-resources-with-extended-attributes.md)
-  Specify additional attributes for the API to include in a response.
-- [Fetching storefront objects](fetching-storefront-objects.md)
-  Pick a region-specific geographic location to retrieve catalog information from.
+  Create a JSON Web Token to authorize your requests to the Apps and Books Metadata for Organizations API.
 
 
 ---

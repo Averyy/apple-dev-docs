@@ -49,7 +49,8 @@ func handleGesture(gestureRecognizer: NSGestureRecognizer) { }
 
 - [var target: AnyObject?](nsgesturerecognizer/target.md)
   The object that implements the action method.
-- [Cocoa Event Handling Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html#//apple_ref/doc/uid/10000060i)
+- [class NSGestureRecognizer](nsgesturerecognizer.md)
+  An object that monitors events and calls its action method when a predefined sequence of events occur.
 - [var action: Selector?](nsgesturerecognizer/action.md)
   The action method to call when the gesture is recognized.
 

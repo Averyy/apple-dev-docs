@@ -44,6 +44,7 @@ Most apps shouldn’t use this API, and instead should use a higher-level servic
 - [var kDNSServiceAAAAPolicyFallback: DNSServiceAAAAPolicy](kdnsserviceaaaapolicyfallback.md)
 - [var kDNSServiceAAAAPolicyNone: DNSServiceAAAAPolicy](kdnsserviceaaaapolicynone.md)
 - [var kDNSServiceClass_IN: Int](kdnsserviceclass_in.md)
+- [var kDNSServiceErr_AWDLTimeout: Int](kdnsserviceerr_awdltimeout.md)
 - [var kDNSServiceErr_AlreadyRegistered: Int](kdnsserviceerr_alreadyregistered.md)
 - [var kDNSServiceErr_BadFlags: Int](kdnsserviceerr_badflags.md)
 - [var kDNSServiceErr_BadInterfaceIndex: Int](kdnsserviceerr_badinterfaceindex.md)

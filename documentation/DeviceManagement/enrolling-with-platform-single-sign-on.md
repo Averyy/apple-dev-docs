@@ -2,7 +2,7 @@
 
 **Framework**: Device Management
 
-Authenticate users during device enrollment using Platform Single Sign-on.
+Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
 
 #### Overview
 
@@ -26,8 +26,8 @@ Only macOS 26 devices that are registered with the Automated Device Enrollment p
 
 ## See Also
 
-- [Onboarding users with account sign-in](onboarding-users-with-account-sign-in.md)
-  Implement user-initiated, identity-focused authentication flows.
+- [Authenticating through web views](authenticating-through-web-views.md)
+  Use your own custom web interfaces to authenticate users.
 
 
 ---

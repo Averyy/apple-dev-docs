@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Creates a tensor by allocating new memory.
+Creates a tensor with the specified descriptor.
 
 **Availability**:
 - iOS 26.0+
@@ -22,11 +22,15 @@ func makeTensor(descriptor: MTLTensorDescriptor) throws -> any MTLTensor
 
 #### Return Value
 
-A new tensor instance that Metal configures using `descriptor` or `nil` if an error occurred.
+A tensor, or `nil` if validation fails.
+
+#### Discussion
+
+This method validates the constraints documented on [`MTLTensorDescriptor`](mtltensordescriptor.md).
 
 ## Parameters
 
-- `descriptor`: A description of the properties for the new tensor.
+- `descriptor`: The tensor descriptor configuring the data plane and auxiliary planes.
 
 
 ---

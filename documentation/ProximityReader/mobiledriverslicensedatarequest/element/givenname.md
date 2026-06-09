@@ -9,7 +9,6 @@ The mobile driver’s license holder’s given name or first name.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 

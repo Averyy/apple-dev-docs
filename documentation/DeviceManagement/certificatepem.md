@@ -13,8 +13,6 @@ The payload that configures a PEM-formatted certificate.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -37,8 +35,8 @@ Specify `com.apple.security.pem` as the payload type.
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 

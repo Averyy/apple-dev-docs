@@ -12,6 +12,7 @@ The collection of barcode symbologies that the request can recognize.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

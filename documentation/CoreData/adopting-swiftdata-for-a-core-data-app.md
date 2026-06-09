@@ -5,11 +5,11 @@
 Persist data in your app intuitively with the Swift native persistence framework.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- macOS 26.0+
-- Xcode 26.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 #### Overview
 
@@ -112,7 +112,7 @@ descriptor.predicate = #Predicate { item in
 let filteredList = try? modelContext.fetch(descriptor)
 ```
 
-##### Inheritance
+##### Extend the App with Inheritance
 
 The SwiftData-Inheritance version of the app extends the `Trip` class into two distinct kinds of Trips, `PersonalTrip` and `BusinessTrip`, building on the basic `Trip` model to include more specialized properties for different kinds of Trips.
 
@@ -129,11 +129,11 @@ init(name: String, destination: String, startDate: Date = .now, endDate: Date = 
 }
 ```
 
-##### Coexistence Between Core Data and Swiftdata
+##### Share a Store Between Core Data and Swiftdata
 
 The coexistence version of the app has two persistence stacks: a Core Data persistence stack for the host app, and a SwiftData persistence stack for the widget extension. Both stacks write to the same store file.
 
-##### Namespace Models
+##### Avoid Conflicts with Namespaces
 
 The namespaces in the coexistence sample use the pre-existing [`NSManagedObject`](NSManagedObject.md)-based entity subclasses so that they don’t conflict with the SwiftData classes. Note that this refers to the class name, not the entity name.
 

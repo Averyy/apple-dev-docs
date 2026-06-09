@@ -16,6 +16,7 @@ object App.Relationships.AppCustomProductPages
 
 ### Objects
 - [object App.Relationships.AppCustomProductPages.Data](app/relationships-data.dictionary/appcustomproductpages-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related app custom product page resource.
 
 ## Properties
 

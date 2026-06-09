@@ -11,6 +11,7 @@ Creates a new set of device import commands.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

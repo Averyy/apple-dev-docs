@@ -16,6 +16,7 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent
 
 ### Objects
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppEvent.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appevent-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a review submission item.
 
 ## Properties
 

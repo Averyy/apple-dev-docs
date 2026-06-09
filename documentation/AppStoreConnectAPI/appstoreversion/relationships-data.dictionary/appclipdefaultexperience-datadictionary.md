@@ -28,7 +28,7 @@ object AppStoreVersion.Relationships.AppClipDefaultExperience
 ## See Also
 
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
-  The data structure that represents an Age Rating Declarations resource.
+  A set of content descriptors for your app that App Store Connect uses to assign an age rating.
 - [object AppStoreVersion.Relationships.App](appstoreversion/relationships-data.dictionary/app-data.dictionary.md)
   The data and links that describe the relationship between the resources.
 - [object AppStoreVersion.Relationships.AppStoreReviewDetail](appstoreversion/relationships-data.dictionary/appstorereviewdetail-data.dictionary.md)

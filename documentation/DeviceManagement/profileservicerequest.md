@@ -6,8 +6,7 @@
 The request for assigning a profile to a set of devices.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Declaration
 

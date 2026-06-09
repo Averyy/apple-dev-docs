@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A specific device family and OS version combination available as a value for a beta recruitment criterion.
+
 **Availability**:
 - App Store Connect API 3.6+
 
@@ -16,6 +18,7 @@ object BetaRecruitmentCriterionOption
 
 ### Dictionaries
 - [object BetaRecruitmentCriterionOption.Attributes](betarecruitmentcriterionoption/attributes-data.dictionary.md)
+  Attributes that describe a beta recruitment criterion option resource.
 
 ## Properties
 
@@ -27,23 +30,25 @@ object BetaRecruitmentCriterionOption
 ## See Also
 
 - [object BetaRecruitmentCriterionCompatibleBuildCheck](betarecruitmentcriterioncompatiblebuildcheck.md)
-  The data structure that represents a beta recruitment criteria-compatible, build-check resource.
+  The result of checking whether a specific build meets the device family and OS version requirements of a beta recruitment criterion.
 - [object BetaRecruitmentCriterionCompatibleBuildCheckResponse](betarecruitmentcriterioncompatiblebuildcheckresponse.md)
-  A response that contains a single beta recruitment criteria-compatible, build-check resource.
+  A response containing a single result of checking whether a build meets the requirements of a beta recruitment criterion.
 - [object BetaRecruitmentCriterion](betarecruitmentcriterion.md)
-  The data structure that represents a beta recruitment criterion resource.
+  A rule that controls which testers are automatically invited to a beta group based on device family and OS version.
 - [object BetaRecruitmentCriterionCreateRequest](betarecruitmentcriterioncreaterequest.md)
   The request body you use to create a beta recruitment criterion.
 - [object BetaRecruitmentCriterionResponse](betarecruitmentcriterionresponse.md)
-  A response that contains a single beta recruitment criterion resource.
+  A response containing a single beta recruitment criterion and its configured device/OS requirements.
 - [object BetaRecruitmentCriterionUpdateRequest](betarecruitmentcriterionupdaterequest.md)
-  The request body you use to update a beta recruitment criterion resource.
+  The request body for updating the device family and OS version requirements of a beta recruitment criterion.
 - [object BetaPublicLinkUsagesV1MetricResponse](betapubliclinkusagesv1metricresponse.md)
+  A metrics response containing usage data for a TestFlight public invite link, showing tester enrollment trends.
 - [type DeviceFamily](devicefamily.md)
   String that represents a device family.
 - [object DeviceFamilyOsVersionFilter](devicefamilyosversionfilter.md)
   The object that you use to specify a device family and operating system to use for your beta recruitment criteria.
 - [object BetaRecruitmentCriterionOptionsResponse](betarecruitmentcriterionoptionsresponse.md)
+  A response containing a list of device family and OS version options for configuring a beta recruitment criterion.
 
 
 ---

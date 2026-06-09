@@ -31,7 +31,7 @@ You can use the equal-to operator (`==`) to compare any two arrays that store th
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](array/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](array/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func elementsEqual<OtherSequence>(OtherSequence) -> Bool](array/elementsequal(_:).md)
   Returns a Boolean value indicating whether this sequence and another sequence contain the same elements in the same order.

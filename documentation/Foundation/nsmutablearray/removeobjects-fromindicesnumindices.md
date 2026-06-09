@@ -6,6 +6,9 @@
 Removes the specified number of objects from the array, beginning at the specified index.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

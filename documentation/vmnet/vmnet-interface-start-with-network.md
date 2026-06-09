@@ -3,6 +3,8 @@
 **Framework**: vmnet  
 **Kind**: func
 
+Starts a new virtual interface instance on a network.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 26.0+
@@ -15,18 +17,18 @@ func vmnet_interface_start_with_network(_ network: vmnet_network_ref, _ interfac
 
 #### Return Value
 
-Returns a non-NULL interface handle on success, NULL otherwise.
+Returns a non-`NULL` interface handle on success, `NULL` otherwise.
 
 #### Discussion
 
-Starts a new virtual interface instance on a network.
+Attributes of the virtual interface are specified using the `interface_desc` dictionary. Namely,
 
-Attributes of the virtual interface are specified using the `interface_desc dictionary`. Namely,
+- [`vmnet_allocate_mac_address_key`](vmnet_allocate_mac_address_key.md)
+- [`vmnet_enable_tso_key`](vmnet_enable_tso_key.md)
+- [`vmnet_enable_isolation_key`](vmnet_enable_isolation_key.md)
+- [`vmnet_enable_checksum_offload_key`](vmnet_enable_checksum_offload_key.md)
 
-- `vmnet_allocate_mac_address_key`,
-- `vmnet_enable_tso_key`,
-- `vmnet_enable_isolation_key`,
-- `vmnet_enable_checksum_offload_key`. On success, this call retains the network object.
+On success, this call retains the network object.
 
 ## Parameters
 
@@ -34,6 +36,15 @@ Attributes of the virtual interface are specified using the `interface_desc dict
 - `interface_desc`: A dictionary describing parameters to use when creating the interface.
 - `queue`: The queue on which to schedule the completion handler.
 - `start_block`: The block to invoke when the start interface request completes.
+
+## See Also
+
+- [func vmnet_start_interface(xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_start_interface(_:_:_:).md)
+  Starts a new virtual interface instance.
+- [func vmnet_interface_set_event_callback(interface_ref, interface_event_t, dispatch_queue_t?, vmnet_interface_event_callback_t?) -> vmnet_return_t](vmnet_interface_set_event_callback(_:_:_:_:).md)
+  Schedules a callback to be executed when events for the specified interface are received.
+- [func vmnet_stop_interface(interface_ref, dispatch_queue_t, vmnet_interface_completion_handler_t) -> vmnet_return_t](vmnet_stop_interface(_:_:_:).md)
+  Stops I/O on the virtual interface.
 
 
 ---

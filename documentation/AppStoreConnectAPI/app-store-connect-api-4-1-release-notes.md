@@ -25,12 +25,12 @@ App Store Connect API version 4.1 provides resources that enable you to automate
 - The attribute `APPLE_VISION_PRO` is now documented for [`Device.Attributes`](device/attributes-data.dictionary.md).
 - The attributes `baDownloadAllowance` and `baMaxInstallSize` are now documented for [`BuildBundle.Attributes`](buildbundle/attributes-data.dictionary.md).
 - The attributes `usesNonExemptEncryption` and `computedMinVisionOsVersion` are now documented for [`Build.Attributes`](build/attributes-data.dictionary.md).
-- The filter `buildAudienceType` is now available for [`List Prerelease Versions`](get-v1-prereleaseversions.md).
+- The filter `buildAudienceType` is now available for [`List prerelease versions`](get-v1-prereleaseversions.md).
 - The attribute `masked` is now available for [`BuildIcon.Attributes`](buildicon/attributes-data.dictionary.md). This boolean value that returns true if an icon has Liquid Glass treatment applied.
 
 ##### Deprecations
 
-- The attributes for [`AgeRatingDeclaration.Attributes`](ageratingdeclaration/attributes-data.dictionary.md), `INFREQUENT_OR_MILD` and `FREQUENT_OR_INTENSE` are deprecated. When you [`Modify an Age Rating Declaration`](patch-v1-ageratingdeclarations-_id_.md), use the values use `INFREQUENT` or `FREQUENT` to update the age rating declarations for your app.
+- The attributes for [`AgeRatingDeclaration.Attributes`](ageratingdeclaration/attributes-data.dictionary.md), `INFREQUENT_OR_MILD` and `FREQUENT_OR_INTENSE` are deprecated. When you [`Modify an age rating declaration`](patch-v1-ageratingdeclarations-_id_.md), use the values use `INFREQUENT` or `FREQUENT` to update the age rating declarations for your app.
 - The `sourceFileChecksum` attribute is deprecated for [`Commit an Uploaded Asset Pack to a Background Asset Version`](patch-v1-backgroundassetuploadfiles-_id_.md). Use `sourceFileChecksums` with the new [`Checksums`](checksums.md) type instead.
 
 ##### Removals
@@ -39,6 +39,8 @@ App Store Connect API version 4.1 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -66,8 +68,6 @@ App Store Connect API version 4.1 provides resources that enable you to automate
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

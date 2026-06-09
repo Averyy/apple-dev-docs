@@ -28,17 +28,18 @@ Get details about a specific background asset version.
 - `sort` ([string])
 - `fields[backgroundAssetUploadFiles]` ([string])
 - `fields[backgroundAssets]` ([string])
+- `filter[locale]` ([string])
 - `filter[platforms]` ([string])
 
 ## See Also
 
-- [List All Assets Packs for an App](get-v1-apps-_id_-backgroundassets.md)
+- [List all background assets for an app](get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the assets packs ids for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
 - [Read Background Assets Information](get-v1-backgroundassets-_id_.md)
   Get details about a specific background asset.
-- [Read Version IDs for a Background Asset](get-v1-backgroundassets-_id_-relationships-versions.md)
+- [Read version ids for a background asset](get-v1-backgroundassets-_id_-relationships-versions.md)
   Get version IDs about a specific background asset version.
 
 

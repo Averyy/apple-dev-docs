@@ -26,10 +26,10 @@ interface Size
 
 - [interface AnnotationCalloutDelegate](annotationcalloutdelegate.md)
   Methods for customizing the behavior and appearance of an annotation callout.
-- [const CollisionMode](collisionmode.md)
-  Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view.
-- [const DisplayPriority](displaypriority.md)
-  Constant values that provide a hint the map uses to prioritize displaying annotations.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
 
 
 ---

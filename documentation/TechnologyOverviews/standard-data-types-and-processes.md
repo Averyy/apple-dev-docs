@@ -4,7 +4,7 @@
 
 Store fundamental types of data, and discover the key behaviors that make using those types easier.
 
-All apps use basic data structures to manage information. To manage simple types of data, use the types in [`Swift Standard Library`](https://developer.apple.com/documentation/Swift/swift-standard-library) and the [`Foundation`](https://developer.apple.com/documentation/Foundation) framework. The types in these framework are offer are more capable than most primitive types like `int` and are also portable between Apple platforms. Use the types in these frameworks to manage:
+All apps use basic data structures to manage information. To manage simple types of data, use the types in [`Swift Standard Library`](https://developer.apple.com/documentation/Swift/swift-standard-library) and the [`Foundation`](https://developer.apple.com/documentation/Foundation) framework. The types in these frameworks are often more capable than most primitive types like `int` and are also portable between Apple platforms. Use the framework types to manage:
 
 - [`Int`](https://developer.apple.com/documentation/Swift/Int), [`Float`](https://developer.apple.com/documentation/Swift/Float) [`Double`](https://developer.apple.com/documentation/Swift/Double), and [`Bool`](https://developer.apple.com/documentation/Swift/Bool) values
 - [`String`](https://developer.apple.com/documentation/Swift/String), [`Character`](https://developer.apple.com/documentation/Swift/Character), and [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString)

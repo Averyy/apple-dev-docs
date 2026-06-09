@@ -23,6 +23,11 @@ A Boolean value that controls whether the horizontal scroll indicator is visible
 
 Default is `true`.
 
+## See Also
+
+- [var showsVerticalScrollIndicator: Bool](papermarkupviewcontroller/showsverticalscrollindicator.md)
+  A Boolean value that controls whether the vertical scroll indicator is visible.
+
 
 ---
 

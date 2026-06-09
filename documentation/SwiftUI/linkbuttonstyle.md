@@ -11,6 +11,7 @@ A button style for buttons that emulate links.
 ## Declaration
 
 ```swift
+nonisolated
 struct LinkButtonStyle
 ```
 

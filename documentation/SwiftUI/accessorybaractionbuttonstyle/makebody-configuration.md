@@ -11,8 +11,8 @@ Creates a view that represents the body of a button.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func makeBody(configuration: AccessoryBarActionButtonStyle.Configuration) -> some View
+nonisolated
+func makeBody(configuration: AccessoryBarActionButtonStyle.Configuration) -> some View
 ```
 
 #### Discussion

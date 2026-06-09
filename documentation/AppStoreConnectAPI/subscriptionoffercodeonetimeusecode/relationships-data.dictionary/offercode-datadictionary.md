@@ -16,6 +16,7 @@ object SubscriptionOfferCodeOneTimeUseCode.Relationships.OfferCode
 
 ### Objects
 - [object SubscriptionOfferCodeOneTimeUseCode.Relationships.OfferCode.Data](subscriptionoffercodeonetimeusecode/relationships-data.dictionary/offercode-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription offer code one time use code.
 
 ## Properties
 

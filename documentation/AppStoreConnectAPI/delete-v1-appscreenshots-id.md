@@ -1,4 +1,4 @@
-# Delete an App Screenshot
+# Delete an app screenshot
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Delete an app screenshot that is associated with a screenshot set.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app screenshot resource ID from the [`List all app screenshots for an app screenshot set`](get-v1-appscreenshotsets-_id_-appscreenshots.md) response.
 
 ## See Also
 
-- [Create an App Screenshot](post-v1-appscreenshots.md)
+- [Create an app screenshot](post-v1-appscreenshots.md)
   Add a new screenshot to a screenshot set.
-- [Modify an App Screenshot](patch-v1-appscreenshots-_id_.md)
+- [Modify an app screenshot](patch-v1-appscreenshots-_id_.md)
   Commit an app screenshot after uploading it.
 
 

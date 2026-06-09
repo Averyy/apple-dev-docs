@@ -25,7 +25,7 @@ This method is intended for use with controls whose tracking mode is set to [`NS
 ## See Also
 
 - [NSSegmentedControl.SwitchTracking.momentaryAccelerator](nssegmentedcontrol/switchtracking/momentaryaccelerator.md)
-  On pressure-sensitive systems, when the user force clicks a segment, a momentary accelerator segmented control sends repeating actions as pressure changes occur. The control stops sending actions when the user releases pressure. A document-based app, for example, might implement a momentary accelerator segmented control in order to allow a user to adjust the speed of paging by using variable pressure. In this example, actions are sent to the app to indicate when pressure on the control has changed. The app then determines the amount of pressure currently applied, and adjusts navigation speed accordingly.
+  A tracking mode that sends repeating actions as pressure changes on Force Touch systems, stopping when someone releases the segment.
 - [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
   The type of tracking behavior the control exhibits.
 - [var selectedSegment: Int](nssegmentedcontrol/selectedsegment.md)

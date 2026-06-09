@@ -11,6 +11,7 @@ Arguments to pass to the invoked tool.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,8 @@ var arguments: GeneratedContent { get set }
 
 - [var toolName: String](transcript/toolcall/toolname.md)
   The name of the tool being invoked.
+- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/toolcall/metadata.md)
+  Metadata produced by the model while generating this tool call.
 
 
 ---

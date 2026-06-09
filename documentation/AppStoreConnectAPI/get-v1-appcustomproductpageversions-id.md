@@ -53,10 +53,10 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/c7eadc0b-4
 
 ## Parameters
 
-- `fields[appCustomProductPageLocalizations]` ([string])
-- `fields[appCustomProductPageVersions]` ([string])
-- `include` ([string])
-- `limit[appCustomProductPageLocalizations]` (integer)
+- `fields[appCustomProductPageLocalizations]` ([string]): Additional fields to include for each app custom product page localization resource returned by the response.
+- `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appCustomProductPageLocalizations]` (integer): The maximum number of related app custom product page localizations resources to return.
 - `fields[appCustomProductPages]` ([string])
 
 ## See Also
@@ -65,7 +65,8 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/c7eadc0b-4
   List the versions for a custom product page version.
 - [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+- [List localization IDs for a custom product page version](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+  Get a list of localization IDs for a specific custom product page version.
 - [Create a Custom Product Page Version](post-v1-appcustomproductpageversions.md)
   Add a version for your app custom product page.
 - [Modify a Custom Product Page Version](patch-v1-appcustomproductpageversions-_id_.md)

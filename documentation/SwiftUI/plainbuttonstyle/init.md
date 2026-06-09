@@ -17,6 +17,7 @@ Creates a plain button style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

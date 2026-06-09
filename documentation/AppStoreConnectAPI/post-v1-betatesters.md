@@ -1,4 +1,4 @@
-# Create a Beta Tester
+# Create a beta tester
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Create a beta tester assigned to a group, a build, or an app.
 
 ## See Also
 
-- [Delete a Beta Tester](delete-v1-betatesters-_id_.md)
+- [Delete a beta tester](delete-v1-betatesters-_id_.md)
   Remove a beta tester’s ability to test all apps.
 
 

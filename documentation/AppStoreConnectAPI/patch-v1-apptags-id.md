@@ -14,7 +14,7 @@ Opt out of app tags for a specific app.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app tag resource ID from the [`List App Tags`](get-v1-apps-_id_-apptags.md) response.
 
 
 ---

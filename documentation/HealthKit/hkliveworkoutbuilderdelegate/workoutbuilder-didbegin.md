@@ -25,10 +25,6 @@ optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didBegin wo
 
 ## See Also
 
-- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md)
-  Tells the delegate that new data has been added to the builder.
-- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
-  Tells the delegate that a new event has been added to the builder.
 - [func workoutBuilder(HKLiveWorkoutBuilder, didEnd: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didend:).md)
   Tells the delegate that the current workout activity has ended.
 

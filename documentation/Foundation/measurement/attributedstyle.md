@@ -29,6 +29,12 @@ The [`formatted()`](measurement/formatted().md) method generates a string using 
 
 ## Topics
 
+### Formatting a Measurement
+- [func format(Measurement<UnitType>) -> AttributedString](measurement/attributedstyle/format(_:).md)
+  Creates a string representation of a measurement.
+### Modififying a Measurement Attributed Style
+- [func locale(Locale) -> Measurement<UnitType>.AttributedStyle](measurement/attributedstyle/locale(_:).md)
+  Modifies the measurement format style to use the specified locale.
 ### Comparing Measurement Attributed Styles
 - [static func == <LeftHandSideType, RightHandSideType>(Measurement<LeftHandSideType>, Measurement<RightHandSideType>) -> Bool](measurement/==(_:_:).md)
   Compare two measurements of the same `Dimension`.

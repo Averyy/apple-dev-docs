@@ -44,6 +44,8 @@ You don’t instantiate a `VZMacGraphicsDevice` directly. Graphics devices are
   An object that represents the graphics display on a Mac.
 - [class VZVirtioGraphicsDevice](vzvirtiographicsdevice.md)
   A Virtio graphics device.
+- [struct VZVirtualMachineViewAdaptor](vzvirtualmachineviewadaptor.md)
+  A sendable wrapper that connects a virtual machine view to a virtual machine.
 
 
 ---

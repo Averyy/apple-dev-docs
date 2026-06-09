@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: struct
 
-This type holds the ILPD lens configuration parameters to generate camera calibration type instance.
+This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 
 **Availability**:
 - iOS 26.4+
@@ -20,7 +20,7 @@ struct ImmersiveCameraLensDefinition
 
 #### Overview
 
-This initializer method creates these types from ILPD data (JSON contents) reads from ILPD files. These lens definition metadata types are also used for STMap generation to transform AIV video frames of one lens projection type to another during content previews.
+Initializer method creates these types from ILPD data blobs (JSON contents) read from ILPD files. These lens definition metadata types are also used for STMap generation to transform AIV video frames of one lens projection type to another during content previews.
 
 ## Topics
 
@@ -46,6 +46,21 @@ This initializer method creates these types from ILPD data (JSON contents) reads
 - [Encodable](../Swift/Encodable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [actor VenueDescriptor](venuedescriptor.md)
+  The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
+- [struct ImmersiveCamera](immersivecamera.md)
+  A structure that holds the required information for an immersive media camera to process and render video frames.
+- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+  A structure that represents immersive media camera calibration data.
+- [enum ImmersiveCameraMask](immersivecameramask.md)
+  A structure that holds the camera mask type information and its relevant mask name.
+- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+  A type that holds the information required to dynamically generate an immersive media mask at load time.
+- [class ImmersiveImageMask](immersiveimagemask.md)
+  An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 
 ---

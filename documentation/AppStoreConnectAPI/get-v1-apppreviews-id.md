@@ -1,4 +1,4 @@
-# Read App Preview Information
+# Read app preview information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get information about an app preview and its upload and processing status.
 
 ## Parameters
 
-- `fields[appPreviews]` ([string])
-- `include` ([string])
+- `fields[appPreviews]` ([string]): Additional fields to include for each app preview resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appPreviewSets]` ([string])
 
 ## See Also
 
-- [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)
+- [List all app previews for an app preview set](get-v1-apppreviewsets-_id_-apppreviews.md)
   List all ordered app previews in a preview set.
 
 

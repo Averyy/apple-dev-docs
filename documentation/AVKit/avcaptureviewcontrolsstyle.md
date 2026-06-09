@@ -16,6 +16,8 @@ enum AVCaptureViewControlsStyle
 
 ## Topics
 
+### Creating a controls style
+- [init?(rawValue: Int)](avcaptureviewcontrolsstyle/init(rawvalue:).md)
 ### Controls Styles
 - [AVCaptureViewControlsStyle.inline](avcaptureviewcontrolsstyle/inline.md)
   The view’s inline controls style.
@@ -25,8 +27,6 @@ enum AVCaptureViewControlsStyle
   The view’s inline device selection style.
 - [static var `default`: AVCaptureViewControlsStyle](avcaptureviewcontrolsstyle/default.md)
   The view’s default controls style.
-### Initializers
-- [init?(rawValue: Int)](avcaptureviewcontrolsstyle/init(rawvalue:).md)
 
 ## Relationships
 

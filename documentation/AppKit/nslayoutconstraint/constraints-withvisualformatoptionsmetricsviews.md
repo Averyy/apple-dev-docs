@@ -20,18 +20,19 @@ An array of constraints that, combined, express the constraints between the prov
 
 #### Discussion
 
-The language used for the visual format string is described in [`Auto Layout Cookbook`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH3) in [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
+For more information, see [`NSLayoutConstraint`](nslayoutconstraint.md).
 
 ## Parameters
 
-- `format`: The format specification for the constraints. For more information, see [`Auto Layout Cookbook`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/LayoutUsingStackViews.html#//apple_ref/doc/uid/TP40010853-CH3) in [`Auto Layout Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853).
+- `format`: The format specification for the constraints.
 - `opts`: Options describing the attribute and the direction of layout for all objects in the visual format string.
 - `metrics`: A dictionary of constants that appear in the visual format string. The dictionary’s keys must be the string values used in the visual format string. Their values must be [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) objects.
 - `views`: A dictionary of views that appear in the visual format string. The keys must be the string values used in the visual format string, and the values must be the view objects.
 
 ## See Also
 
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853)
+- [class NSLayoutConstraint](nslayoutconstraint.md)
+  The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
 - [convenience init(item: Any, attribute: NSLayoutConstraint.Attribute, relatedBy: NSLayoutConstraint.Relation, toItem: Any?, attribute: NSLayoutConstraint.Attribute, multiplier: CGFloat, constant: CGFloat)](nslayoutconstraint/init(item:attribute:relatedby:toitem:attribute:multiplier:constant:).md)
   Creates a constraint that defines the relationship between the specified attributes of the given views.
 

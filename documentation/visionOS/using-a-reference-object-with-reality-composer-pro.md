@@ -8,9 +8,9 @@ Import a reference object file to track a real-world object in your visionOS app
 
 You can use reference objects in your visionOS app to track real-world objects in a person’s surroundings. With this capability, you can attach virtual content to those real-world objects to create engaging experiences. For example, with a reference object, you can track a household item and add virtual content to it, like highlighting a part and showing how to fix it.
 
-To create a reference object, first, you obtain a 3D model asset, train a machine learning model with that 3D model asset in Create ML, and then import the resulting reference object file into your app. With Reality Composer Pro, you can set up object tracking by using the reference object file as an anchor entity to track your real-world object in your app. For more information about creating a reference object file, see [`Implementing object tracking in your visionOS app`](implementing-object-tracking-in-your-visionos-app.md).
+To create a reference object, obtain a 3D model asset, train a machine learning model with that 3D model asset in Create ML, then import the resulting reference object file into your app. To track real-world objects in your app, set up object tracking in Reality Composer Pro by using the reference object file as an anchor entity. For more information about creating a reference object file, see [`Implementing object tracking in your app`](implementing-object-tracking-in-your-app.md).
 
-##### Set Up a Scene in Reality Composer Pro
+#### Set Up a Scene in Reality Composer Pro
 
 You can use Reality Composer Pro to import your reference object file and set up it up for tracking. However, before importing your reference object file, you need to set up a scene in Reality Composer Pro by following these steps:
 
@@ -54,8 +54,10 @@ To get the anchor’s position in the real world (an anchor transform) during tr
 
 - [Using a reference object with RealityKit](using-a-reference-object-with-realitykit.md)
   Import a reference object file to track a real-world object in your visionOS app.
-- [Using a reference object with ARKit](using-a-reference-object-with-arkit.md)
-  Import a reference object file and track a real-world object in your visionOS app.
+- [Using a reference object with ARKit in visionOS](using-a-reference-object-with-arkit-in-visionos.md)
+  Import a reference object file and track a real-world object in your app.
+- [Using a reference object with ARKit in iOS](using-a-reference-object-with-arkit-in-ios.md)
+  Track a real-world object in your iOS app by using a reference-object file.
 
 
 ---

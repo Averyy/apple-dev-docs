@@ -25,6 +25,8 @@ struct Currency
 ### Creating a currency instance
 - [init(String)](locale/currency-swift.struct/init(_:).md)
   Creates a currency instance from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/currency-swift.struct/init(stringliteral:).md)
+  Creates a currency instance from a BCP 47 identifier as a string literal.
 ### Examining currency properties
 - [var identifier: String](locale/currency-swift.struct/identifier.md)
   The currency’s identifier.

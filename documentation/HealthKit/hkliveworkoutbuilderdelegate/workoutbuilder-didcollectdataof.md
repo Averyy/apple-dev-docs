@@ -23,15 +23,6 @@ func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf col
 
 - [Running workout sessions](running-workout-sessions.md)
 
-## See Also
-
-- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
-  Tells the delegate that a new event has been added to the builder.
-- [func workoutBuilder(HKLiveWorkoutBuilder, didBegin: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didbegin:).md)
-  Tells the delegate that a new workout activity has started.
-- [func workoutBuilder(HKLiveWorkoutBuilder, didEnd: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didend:).md)
-  Tells the delegate that the current workout activity has ended.
-
 
 ---
 

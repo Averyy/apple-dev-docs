@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/alternativeDistributionKey
+# Get the alternative distribution key ID for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 

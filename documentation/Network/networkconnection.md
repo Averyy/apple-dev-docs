@@ -28,12 +28,10 @@ A connection handles establishment of any transport, security, and application-l
 
 ### Initializers
 - [convenience init(to: NWEndpoint, using: () -> ApplicationProtocol)](networkconnection/init(to:using:)-182om.md)
-  Create a new connection to an endpoint, with protocol stack.
 - [convenience init(to: any Connectable, using: () -> ApplicationProtocol)](networkconnection/init(to:using:)-51aq2.md)
   Create a new connection to an endpoint, with protocol stack.
 - [convenience init(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>)](networkconnection/init(to:using:)-5e864.md)
 - [convenience init(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>)](networkconnection/init(to:using:)-69glf.md)
-  Create a new outbound connection to an endpoint, with parameters. The parameters determine the protocols to be used for the connection, and their options.
 - [convenience init(to: any Connectable, using: NWParametersBuilder<ApplicationProtocol>)](networkconnection/init(to:using:)-6yzx9.md)
   Create a new outbound connection to an endpoint, with parameters. The parameters determine the protocols to be used for the connection, and their options.
 - [convenience init(to: any Connectable, using: () -> ApplicationProtocol)](networkconnection/init(to:using:)-7gprx.md)
@@ -49,11 +47,9 @@ A connection handles establishment of any transport, security, and application-l
 - [var keepalive: NWProtocolQUIC.Metadata.KeepAliveBehavior](networkconnection/keepalive.md)
   Set the QUIC connection keepalive interval.
 - [var localEndpoint: NWEndpoint?](networkconnection/localendpoint.md)
-  The local endpoint of the connection
 - [var negotiatedALPN: String?](networkconnection/negotiatedalpn.md)
   Return the negotiated application protocol used when establishing the connection
 - [var remoteEndpoint: NWEndpoint?](networkconnection/remoteendpoint.md)
-  The remote endpoint of the connection
 - [var remoteIdleTimeout: Int](networkconnection/remoteidletimeout.md)
   Access the idle_timeout value in milliseconds received from the peer in the transport parameters.
 - [var remoteMaxStreamsBidirectional: Int](networkconnection/remotemaxstreamsbidirectional.md)
@@ -71,13 +67,19 @@ A connection handles establishment of any transport, security, and application-l
   Handle inbound streams and provide a closure on which callback handlers will be executed. When the `NetworkConnection<QUIC>` state moves to `ready`, the internal listener is registered with the system and can receive incoming streams on the multiplexing instance. `inboundStreams` should only be called once on a `NetworkConnection<QUIC>`, and multiple calls to run will throw an exception.
 - [func inboundStreams<NewApplicationProtocol>(prepending: (QUICStream) -> NewApplicationProtocol, (QUIC.Stream<NewApplicationProtocol>) async throws -> Void) async throws](networkconnection/inboundstreams(prepending:_:).md)
   Handle inbound streams and provide a closure on which callback handlers will be executed. When the `NetworkConnection<QUIC>` state moves to `ready`, the internal listener is registered with the system and can receive incoming streams on the multiplexing instance. `inboundStreams` should only be called once on a `NetworkConnection<QUIC>`, and multiple calls to run will throw an exception.
-- [func onBetterPathUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onbetterpathupdate(_:).md)
+- [func onBetterPathUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onbetterpathupdate(_:)-2h2wu.md)
   A better path being available indicates that the system thinks there is a preferred path or interface to use, compared to the one this connection is actively using. As an example, the connection is established over an expensive cellular interface and an unmetered Wi-Fi interface is now available.
-- [func onPathUpdate((NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self](networkconnection/onpathupdate(_:).md)
+- [func onBetterPathUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onbetterpathupdate(_:)-7b4ue.md)
+  A better path being available indicates that the system thinks there is a preferred path or interface to use, compared to the one this connection is actively using. As an example, the connection is established over an expensive cellular interface and an unmetered Wi-Fi interface is now available.
+- [func onPathUpdate((NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self](networkconnection/onpathupdate(_:)-2uoc8.md)
+  Set a closure to be called when the connection’s path has changed, which may be called multiple times until the connection is cancelled.
+- [func onPathUpdate((NetworkConnection<ApplicationProtocol>, NWPath) -> Void) -> Self](networkconnection/onpathupdate(_:)-6sn1s.md)
   Set a closure to be called when the connection’s path has changed, which may be called multiple times until the connection is cancelled.
 - [func onStateUpdate((NetworkConnection<ApplicationProtocol>, NetworkChannel<ApplicationProtocol>.State) -> Void) -> Self](networkconnection/onstateupdate(_:).md)
   Set a closure to be called when the connection’s state changes, which may be called multiple times until the connection is cancelled.
-- [func onViabilityUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onviabilityupdate(_:).md)
+- [func onViabilityUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onviabilityupdate(_:)-13jwf.md)
+  Set a closure to be called when the connection’s viability changes, which may be called multiple times until the connection is cancelled.
+- [func onViabilityUpdate((NetworkConnection<ApplicationProtocol>, Bool) -> Void) -> Self](networkconnection/onviabilityupdate(_:)-70awf.md)
   Set a closure to be called when the connection’s viability changes, which may be called multiple times until the connection is cancelled.
 - [func openStream(directionality: QUICStream.Directionality) async throws -> QUIC.Stream<QUICStream>](networkconnection/openstream(directionality:).md)
   Initiate a new data stream over QUIC. When invoked with no parameters, the default stream type will be bidirectional. Unidirectional streams can be initiated by setting the optional `bidirectional` parameter to false.

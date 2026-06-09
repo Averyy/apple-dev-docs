@@ -121,21 +121,24 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
   Returns the position immediately before the given index.
 - [func swapAt(InlineArray<count, Element>.Index, InlineArray<count, Element>.Index)](inlinearray/swapat(_:_:).md)
   Exchanges the values at the specified indices of the array.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](inlinearray/withbytes(_:).md)
 ### Subscripts
 - [subscript(InlineArray<count, Element>.Index) -> Element](inlinearray/subscript(_:).md)
   Accesses the element at the specified position.
 - [subscript(unchecked _: InlineArray<count, Element>.Index) -> Element](inlinearray/subscript(unchecked:).md)
   Accesses the element at the specified position.
 ### Type Aliases
-- [InlineArray.Element](inlinearray/element.md)
-  The type of the array’s elements.
 - [InlineArray.Index](inlinearray/index.md)
   A type that represents a position in the array.
+### Default Implementations
+- [BorrowingSequence Implementations](inlinearray/borrowingsequence-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
+- [BorrowingSequence](borrowingsequence.md)
+- [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

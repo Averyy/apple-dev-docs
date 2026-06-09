@@ -1,4 +1,4 @@
-# Create an App Store Review Detail
+# Create an app store review detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,10 +14,10 @@ Add App Store review details to an App Store version, including contact and demo
 
 ## See Also
 
-- [Read App Store Review Detail Information](get-v1-appstorereviewdetails-_id_.md)
+- [Read app store review detail information](get-v1-appstorereviewdetails-_id_.md)
   Get App Review details you provided, including contact information, demo account, and notes.
-- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
-- [Modify an App Store Review Detail](patch-v1-appstorereviewdetails-_id_.md)
+- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [Modify an app store review detail](patch-v1-appstorereviewdetails-_id_.md)
   Update the App Store review details, including the contact information, demo account, and notes.
 
 

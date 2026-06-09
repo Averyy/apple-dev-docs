@@ -16,6 +16,7 @@ object AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTempl
 
 ### Objects
 - [object AppCustomProductPageCreateRequest.Data.Relationships.AppStoreVersionTemplate.Data](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversiontemplate-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app custom product page.
 
 ## Properties
 

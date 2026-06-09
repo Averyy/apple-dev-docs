@@ -29,6 +29,7 @@ struct AdvancedCommerceInfo
   Information about the offer that was redeemed as part of the purchase.
 - [Transaction.AdvancedCommerceInfo.Refund](transaction/advancedcommerceinfo-swift.struct/refund.md)
   Information about refunds that were issued as part of this transaction.
+- [Transaction.AdvancedCommerceInfo.Partner](transaction/advancedcommerceinfo-swift.struct/partner.md)
 ### Instance Properties
 - [let description: String?](transaction/advancedcommerceinfo-swift.struct/description.md)
 - [let displayName: String?](transaction/advancedcommerceinfo-swift.struct/displayname.md)

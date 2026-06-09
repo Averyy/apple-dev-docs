@@ -1,4 +1,4 @@
-# List All Pull Requests for a Repository
+# List all pull requests for a repository
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -21,14 +21,14 @@ List all pull requests for a specific repository that Xcode Cloud can access.
 
 ## See Also
 
-- [List All Git Repositories](get-v1-scmrepositories.md)
+- [List all git repositories](get-v1-scmrepositories.md)
   List all Git repositories Xcode Cloud can access.
-- [Read Git Repository Information](get-v1-scmrepositories-_id_.md)
+- [Read git repository information](get-v1-scmrepositories-_id_.md)
   Get information about a Git repository that Xcode Cloud can access.
-- [List All Git References for a Repository](get-v1-scmrepositories-_id_-gitreferences.md)
+- [List all git references for a repository](get-v1-scmrepositories-_id_-gitreferences.md)
   List all Git references for a specific repository that Xcode Cloud can access.
-- [GET /v1/scmRepositories/{id}/relationships/gitReferences](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
-- [GET /v1/scmRepositories/{id}/relationships/pullRequests](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
+- [List Git reference IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
+- [List pull request IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
 
 
 ---

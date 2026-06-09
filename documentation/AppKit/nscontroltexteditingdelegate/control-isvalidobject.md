@@ -30,7 +30,8 @@ This method gives the delegate the opportunity to validate the contents of the c
 
 ## See Also
 
-- [Control and Cell Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/ControlCell.html#//apple_ref/doc/uid/10000015i)
+- [protocol NSControlTextEditingDelegate](nscontroltexteditingdelegate.md)
+  A set of optional methods implemented by delegates of [`NSControl`](nscontrol.md) subclasses to respond to editing actions.
 - [func control(NSControl, didFailToValidatePartialString: String, errorDescription: String?)](nscontroltexteditingdelegate/control(_:didfailtovalidatepartialstring:errordescription:).md)
   Invoked when the formatter for the cell belonging to `control` (or selected cell) rejects a partial string a user is typing into the cell.
 

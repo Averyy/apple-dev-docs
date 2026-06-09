@@ -15,6 +15,7 @@ A view that can display and edit long-form text.
 ## Declaration
 
 ```swift
+nonisolated
 struct TextEditor
 ```
 

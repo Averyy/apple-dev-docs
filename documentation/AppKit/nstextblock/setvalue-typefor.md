@@ -6,17 +6,16 @@
 Sets a dimension of the text block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-func setValue(_ val: CGFloat, type: NSTextBlock.ValueType, for dimension: NSTextBlock.Dimension)
+func setValue(_ value: CGFloat, type: NSTextBlock.ValueType, for dimension: NSTextBlock.Dimension)
 ```
 
 ## Parameters
 
-- `val`: The new value for the dimension.
 - `type`: The type of value being provided. This controls how `val` is interpreted.
 - `dimension`: The dimension to set.
 

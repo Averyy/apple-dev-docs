@@ -57,7 +57,7 @@ if let past = Calendar.current.date(byAdding: .day, value: 7, to: Date()) {
 }
 ```
 
-The [`format(_:)`](formatstyle/format(_:).md) instance method generates a string from the provided relative date. Once you create a style, you can use it to format relative dates multiple times.
+The [`format(_:)`](date/formatstyle/format(_:).md) instance method generates a string from the provided relative date. Once you create a style, you can use it to format relative dates multiple times.
 
 The following example applies a format style repeatedly to produce string representations of relative dates:
 
@@ -93,6 +93,11 @@ if let pastWeek = Calendar.current.date(byAdding: .day, value: -7, to: Date()),
   The capitalization context to use when formatting the relative dates.
 - [var locale: Locale](date/relativeformatstyle/locale.md)
   The locale to use when formatting the relative date.
+- [func locale(Locale) -> Date.RelativeFormatStyle](date/relativeformatstyle/locale(_:).md)
+  Modifies the relative date format style to use the specified locale.
+### Formatting a Relative Date
+- [func format(Date) -> String](date/relativeformatstyle/format(_:).md)
+  Creates a locale-aware string representation from a relative date value.
 ### Comparing Relative Date Format Styles
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.

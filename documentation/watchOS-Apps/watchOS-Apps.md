@@ -51,6 +51,8 @@ Use SiriKit and App intents to expand the ways people can interact with your app
   Set up your app’s life cycle and create its user interface with SwiftUI.
 - [watchOS updates](../Updates/watchos.md)
   Learn about important changes to watchOS.
+- [Migrating to a single-target watchOS app](migrating-to-a-single-target-watchos-app.md)
+  Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
 ### App experience
 - [Setting up a watchOS project](setting-up-a-watchos-project.md)
   Create a new watchOS project or add a watch target to an existing iOS project.
@@ -93,8 +95,6 @@ Use SiriKit and App intents to expand the ways people can interact with your app
 - [Notifications](notifications.md)
   Communicate with users even when your app isn’t running.
 ### Siri
-- [Making actions and content discoverable and widely available](../AppIntents/Making-actions-and-content-discoverable-and-widely-available.md)
-  Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
 - [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md)
   Add and configure an Intents app extension in your Xcode project.
 ### Health and fitness

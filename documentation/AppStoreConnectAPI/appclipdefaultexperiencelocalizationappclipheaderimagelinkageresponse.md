@@ -25,9 +25,9 @@ object AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse
 ## See Also
 
 - [object AppClipDefaultExperience](appclipdefaultexperience.md)
-  The data structure that represents a Default App Clip Experiences resource.
+  The default App Clip experience that launches when no advanced experience matches, linking to an App Store review detail and localized metadata.
 - [object AppClipDefaultExperienceResponse](appclipdefaultexperienceresponse.md)
-  A response that contains a single Default App Clip Experiences resource.
+  The response body for endpoints that create, read, or modify the default App Clip experience.
 - [object AppClipDefaultExperienceCreateRequest](appclipdefaultexperiencecreaterequest.md)
   The request body you use to create a default App Clip experience.
 - [object AppClipDefaultExperienceUpdateRequest](appclipdefaultexperienceupdaterequest.md)
@@ -41,7 +41,7 @@ object AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse
 - [object AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse](appclipdefaultexperienceappclipappstorereviewdetaillinkageresponse.md)
   A response body that contains the ID of a single related resource.
 - [type AppClipAction](appclipaction.md)
-  A string that represents the call- termto- termaction verb on the App Clip card.
+  A string that represents the call-to-action verb on the App Clip card.
 
 
 ---

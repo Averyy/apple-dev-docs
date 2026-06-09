@@ -64,6 +64,9 @@ Determine which adjustments you need for different kinds of hardware, and then c
   Target specific CPU metrics with adjustments to your app and its content.
 - [Reducing GPU Utilization in Your RealityKit App](reducing-gpu-utilization-in-your-realitykit-app.md)
   Prevent the GPU from limiting your app’s frame rate by reducing the complexity of your render.
+### Level of detail
+- [struct LevelOfDetailComponent](levelofdetailcomponent.md)
+  A component that enables Level of Detail (LOD) optimization for entities with multiple detail levels.
 
 ## See Also
 
@@ -75,6 +78,8 @@ Determine which adjustments you need for different kinds of hardware, and then c
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
+- [Low-level rendering](low-level-rendering.md)
+  Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
 
 
 ---

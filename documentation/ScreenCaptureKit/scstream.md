@@ -6,8 +6,12 @@
 An instance that represents a stream of shareable content.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -46,6 +50,13 @@ Use a stream to capture video of screen content like apps and windows. Create a 
 ### Stream synchronization
 - [var synchronizationClock: CMClock?](scstream/synchronizationclock.md)
   A clock to use for output synchronization.
+### Instance Properties
+- [var isCapturing: Bool](scstream/iscapturing.md)
+### Instance Methods
+- [func addClipBufferingOutput(SCClipBufferingOutput) throws](scstream/addclipbufferingoutput(_:).md)
+- [func addVideoEffectOutput(SCVideoEffectOutput) throws](scstream/addvideoeffectoutput(_:).md)
+- [func removeClipBufferingOutput(SCClipBufferingOutput) throws](scstream/removeclipbufferingoutput(_:).md)
+- [func removeVideoEffectOutput(SCVideoEffectOutput) throws](scstream/removevideoeffectoutput(_:).md)
 
 ## Relationships
 

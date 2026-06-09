@@ -11,26 +11,27 @@ A `betaLicenseAgreements` resource contains the license agreement text for users
 ## Topics
 
 ### Getting Beta License Agreement Information
-- [List Beta License Agreements](get-v1-betalicenseagreements.md)
+- [List beta license agreements](get-v1-betalicenseagreements.md)
   Find and list beta license agreements for all apps.
-- [Read Beta License Agreement Information](get-v1-betalicenseagreements-_id_.md)
+- [Read beta license agreement information](get-v1-betalicenseagreements-_id_.md)
   Get a specific beta license agreement.
-- [Read the App Information of a Beta License Agreement](get-v1-betalicenseagreements-_id_-app.md)
+- [Read the app information of a beta license agreement](get-v1-betalicenseagreements-_id_-app.md)
   Get the app information for a specific beta license agreement.
-- [GET /v1/betaLicenseAgreements/{id}/relationships/app](get-v1-betalicenseagreements-_id_-relationships-app.md)
+- [Get the app ID for a beta license agreement](get-v1-betalicenseagreements-_id_-relationships-app.md)
 ### Modifying Beta License Agreements
-- [Modify a Beta License Agreement](patch-v1-betalicenseagreements-_id_.md)
+- [Modify a beta license agreement](patch-v1-betalicenseagreements-_id_.md)
   Update the text for your beta license agreement.
 ### Objects
 - [object BetaLicenseAgreement](betalicenseagreement.md)
-  The data structure that represents a Beta License Agreements resource.
+  The custom terms and conditions presented to TestFlight testers before they begin testing an app.
 - [object BetaLicenseAgreementUpdateRequest](betalicenseagreementupdaterequest.md)
   The request body you use to update a Beta License Agreement.
 - [object BetaLicenseAgreementWithoutIncludesResponse](betalicenseagreementwithoutincludesresponse.md)
+  A response containing a single TestFlight license agreement, without related resources.
 - [object BetaLicenseAgreementsResponse](betalicenseagreementsresponse.md)
-  A response that contains a list of Beta License Agreement resources.
+  The response body for endpoints that list TestFlight license agreements.
 - [object BetaLicenseAgreementResponse](betalicenseagreementresponse.md)
-  A response that contains a single Beta License Agreements resource.
+  The response body for endpoints that read or modify the TestFlight license agreement for an app.
 - [object BetaLicenseAgreementAppLinkageResponse](betalicenseagreementapplinkageresponse.md)
 
 ## See Also

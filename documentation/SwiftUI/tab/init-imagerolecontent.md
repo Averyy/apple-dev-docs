@@ -17,7 +17,7 @@ Creates a new tab that you can use in a tab view, with a localized string key la
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, image: String, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel
+init(_ titleKey: LocalizedStringKey, image: String, role: TabRole?, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
 ## Parameters

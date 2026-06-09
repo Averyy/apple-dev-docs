@@ -15,7 +15,8 @@ A value describing the addition of the given views to the beginning of the indic
 ## Declaration
 
 ```swift
-init(before group: CommandGroupPlacement, @ViewBuilder addition: () -> Content)
+nonisolated
+init(before group: CommandGroupPlacement, @ContentBuilder addition: () -> Content)
 ```
 
 ## See Also

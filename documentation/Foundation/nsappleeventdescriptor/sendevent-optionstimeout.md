@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Sends an Apple event.
+
 **Availability**:
 - macOS 10.11+
 

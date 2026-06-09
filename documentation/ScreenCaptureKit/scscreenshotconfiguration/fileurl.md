@@ -6,8 +6,8 @@
 Specifies the URL where the screenshot process saves the output.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

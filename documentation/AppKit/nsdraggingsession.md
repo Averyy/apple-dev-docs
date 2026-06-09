@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: class
 
-The encapsulation of a drag-and-drop action that supports modification of the drag while in progress.
+An object that encapsulates a drag-and-drop action.
 
 **Availability**:
 - macOS 10.7+
@@ -16,7 +16,7 @@ class NSDraggingSession
 
 #### Overview
 
-You start a new dragging session by calling the `NSView` method [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md) method. This method immediately returns and you can further modify the properties of the dragging session. The actual drag begins at the next turn of the run loop.
+You start a new dragging session by calling [`beginDraggingSession(with:event:source:)`](nsview/begindraggingsession(with:event:source:).md) or [`beginDraggingSession(items:gesture:source:)`](nsview/begindraggingsession(items:gesture:source:).md) on an `NSView`. The method immediately returns, and the actual drag begins at the next turn of the run loop.
 
 ## Topics
 
@@ -40,6 +40,8 @@ You start a new dragging session by calling the `NSView` method [`beginDraggingS
 ### Dragging Item Location
 - [var draggingLeaderIndex: Int](nsdraggingsession/draggingleaderindex.md)
   The index of the dragging item under the cursor.
+### Instance Methods
+- [func updateDrag(from: NSGestureRecognizer)](nsdraggingsession/updatedrag(from:).md)
 
 ## Relationships
 

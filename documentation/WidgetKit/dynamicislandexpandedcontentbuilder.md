@@ -8,6 +8,7 @@ A result builder that constructs the content of an expanded Live Activity in the
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

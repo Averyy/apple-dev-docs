@@ -26,10 +26,10 @@ This value is `nil` when the environment represents a context that doesn’t sup
 
 ## See Also
 
-- [protocol ReferenceFileDocument](referencefiledocument.md)
-  A type that you use to serialize reference type documents to and from file.
-- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
-  The properties of an open reference file document.
+- [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+- [struct DocumentConfiguration](documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
 
 
 ---

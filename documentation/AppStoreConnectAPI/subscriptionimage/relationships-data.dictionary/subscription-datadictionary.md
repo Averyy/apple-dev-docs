@@ -17,7 +17,7 @@ object SubscriptionImage.Relationships.Subscription
 ## Topics
 
 - [object SubscriptionImage.Relationships.Subscription.Data](subscriptionimage/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
-  The data structure that represents the subscription for a subscription image resource.
+  The resource linkage data identifying the subscription associated with a subscription image.
 
 ## Properties
 

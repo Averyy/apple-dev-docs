@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Identifier for the nanosecond unit.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -31,6 +33,7 @@ static var dayOfYear: NSCalendar.Unit { get }
 - [static var day: NSCalendar.Unit](nscalendar/unit/day.md)
   Identifier for the day unit.
 - [static var isRepeatedDay: NSCalendar.Unit](nscalendar/unit/isrepeatedday.md)
+  Identifier for the time zone of a date components object.
 
 
 ---

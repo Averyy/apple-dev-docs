@@ -8,6 +8,7 @@ Indicates the system found no matching scan request pending for the accessory.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

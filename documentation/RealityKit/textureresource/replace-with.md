@@ -24,6 +24,8 @@ Replaces a texture resource with a low-level texture.
 
 > ⚠️ **Warning**: It’s more efficient to use [`replace(using:)`](lowleveltexture/replace(using:).md) to update a [`LowLevelTexture`](lowleveltexture.md) on the GPU than it is to update the `TextureResource`. Prefer to update the `LowLevelTexture` directly instead.
 
+> **Note**: This method marks the asset as mutated, preventing newly loaded entities from sharing the texture.
+
 ## Parameters
 
 - `texture`: The texture data that defines the resource.

@@ -46,6 +46,7 @@ Use a [`WKNavigationAction`](wknavigationaction.md) object to make policy decisi
   The modifier keys that were pressed at the time of the navigation request.
 ### Instance Properties
 - [var isContentRuleListRedirect: Bool](wknavigationaction/iscontentrulelistredirect.md)
+- [var mainFrameNavigation: WKNavigation?](wknavigationaction/mainframenavigation.md)
 
 ## Relationships
 

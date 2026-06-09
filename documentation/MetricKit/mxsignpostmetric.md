@@ -64,6 +64,12 @@ Custom metrics are a type of signpost saved to custom OS logs created using [`ma
 
 - [Logging](../os/logging.md)
   Capture telemetry from your app for debugging and performance analysis using the unified logging system.
+- [class MXSignpostIntervalData](mxsignpostintervaldata.md)
+  A data object representing the captured data for a custom metric.
+- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
+  Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
+- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
+  Posts the start time of an animation interval to the log system.
 
 
 ---

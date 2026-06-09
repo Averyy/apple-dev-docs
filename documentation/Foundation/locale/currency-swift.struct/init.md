@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: The currency’s BCP 47 identifier, like `usd` for US dollars, or `jpy` for Japanese yen.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/currency-swift.struct/init(stringliteral:).md)
+  Creates a currency instance from a BCP 47 identifier as a string literal.
+
 
 ---
 

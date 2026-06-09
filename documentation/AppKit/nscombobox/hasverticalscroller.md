@@ -26,7 +26,6 @@ If the value of this property is [`false`](https://developer.apple.com/documenta
   The total number of items in the pop-up list.
 - [func scrollItemAtIndexToTop(Int)](nscombobox/scrollitematindextotop(_:).md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is as close to the top as possible.
-- [Combo Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ComboBox/ComboBox.html#//apple_ref/doc/uid/10000020i)
 - [func scrollItemAtIndexToVisible(Int)](nscombobox/scrollitematindextovisible(_:).md)
   Scrolls the receiver’s pop-up list vertically so that the item at the specified index is visible.
 - [var intercellSpacing: NSSize](nscombobox/intercellspacing.md)

@@ -60,7 +60,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
 - [func extracting(some RangeExpression<Int>) -> UnsafeMutableBufferPointer<Element>](unsafemutablebufferpointer/extracting(_:)-51ps5.md)
   Constructs a standalone buffer pointer over the items within the supplied range of positions in the memory region addressed by this buffer pointer.
-- [func extracting((UnboundedRange_) -> ()) -> UnsafeMutableBufferPointer<Element>](unsafemutablebufferpointer/extracting(_:)-6xfww.md)
+- [func extracting(UnboundedRange) -> UnsafeMutableBufferPointer<Element>](unsafemutablebufferpointer/extracting(_:)-6xfww.md)
   Extracts and returns a copy of the entire buffer.
 - [func initialize<S>(from: S) -> (unwritten: S.Iterator, index: UnsafeMutableBufferPointer<Element>.Index)](unsafemutablebufferpointer/initialize(from:).md)
   Initializes the buffer’s memory with the given elements.
@@ -70,6 +70,8 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   Initializes every element in this buffer’s memory to a copy of the given value.
 - [func initializeElement(at: UnsafeMutableBufferPointer<Element>.Index, to: consuming Element)](unsafemutablebufferpointer/initializeelement(at:to:).md)
   Initializes the element at `index` to the given value.
+- [func isTriviallyIdentical(to: UnsafeMutableBufferPointer<Element>) -> Bool](unsafemutablebufferpointer/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func moveElement(from: UnsafeMutableBufferPointer<Element>.Index) -> Element](unsafemutablebufferpointer/moveelement(from:).md)
   Retrieves and returns the element at `index`, leaving that element’s underlying memory uninitialized.
 - [func moveInitialize(fromContentsOf: Slice<UnsafeMutableBufferPointer<Element>>) -> UnsafeMutableBufferPointer<Element>.Index](unsafemutablebufferpointer/moveinitialize(fromcontentsof:)-1ag7a.md)
@@ -86,6 +88,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   Updates the buffer’s initialized memory with every element of the source.
 - [func update(repeating: Element)](unsafemutablebufferpointer/update(repeating:).md)
   Updates every element of this buffer’s initialized memory.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsafemutablebufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablebufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the memory referenced by this buffer to the given type.
 ### Subscripts

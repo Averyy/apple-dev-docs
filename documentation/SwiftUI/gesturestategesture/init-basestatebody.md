@@ -17,6 +17,7 @@ Creates a new gesture that’s the result of an ongoing gesture.
 ## Declaration
 
 ```swift
+nonisolated
 init(base: Base, state: GestureState<State>, body: @escaping (GestureStateGesture<Base, State>.Value, inout State, inout Transaction) -> Void)
 ```
 

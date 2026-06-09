@@ -120,6 +120,8 @@ Localize the strings you display in a notification alert for the current user. A
   The text the system adds to the notification summary to provide additional context.
 - [var summaryArgumentCount: Int](unmutablenotificationcontent/summaryargumentcount.md)
   The number the system adds to the notification summary when the notification represents multiple items.
+### Instance Properties
+- [var appEntityIdentifiers: [EntityIdentifier]](unmutablenotificationcontent/appentityidentifiers.md)
 
 ## Relationships
 

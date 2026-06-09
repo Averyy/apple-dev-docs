@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: enum
 
-An enumeration that describes the authentication policy to use when running an app intent.
+The authentication policies you can apply to an app intent when it runs.
 
 **Availability**:
 - iOS 16.0+
@@ -24,16 +24,15 @@ enum IntentAuthenticationPolicy
 
 ### Authentication policies
 - [IntentAuthenticationPolicy.alwaysAllowed](intentauthenticationpolicy/alwaysallowed.md)
-  A policy that allows the app intent to always run, even on a locked device.
+  A policy that allows the app intent to run at any time, including when the device is locked.
 - [IntentAuthenticationPolicy.requiresAuthentication](intentauthenticationpolicy/requiresauthentication.md)
-  A policy that requires the user to authenticate.
+  A policy that requires authentication before running the app intent.
 - [IntentAuthenticationPolicy.requiresLocalDeviceAuthentication](intentauthenticationpolicy/requireslocaldeviceauthentication.md)
-  A policy that requires the user to authenticate on the local device.
+  A policy that requires the person to unlock the device running the intent.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -43,7 +42,7 @@ enum IntentAuthenticationPolicy
 ## See Also
 
 - [static var authenticationPolicy: IntentAuthenticationPolicy](appintent/authenticationpolicy.md)
-  A property that defines the authentication policy that indicates whether this app intent requires the device to be unlocked or otherwise authenticated.
+  The authentication policy to enforce when running the app intent.
 
 
 ---

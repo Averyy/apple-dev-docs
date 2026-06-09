@@ -21,6 +21,7 @@ protocol UIApplicationDelegate : NSObjectProtocol
 
 ## Mentions
 
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [About app development with UIKit](about-app-development-with-uikit.md)
 
 #### Overview
@@ -206,6 +207,8 @@ In iOS 12 and earlier, you use your app delegate to manage major life cycle even
   The centralized point of control and coordination for apps running in iOS.
 - [Scenes](scenes.md)
   Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+  Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 
 ---

@@ -6,8 +6,7 @@
 Enable activation lock on a remote device.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Mentions
 
@@ -26,7 +25,7 @@ There are two ways to manage Activation Lock: the Activation Lock request is ava
   Request enabling activation lock for a device.
 - [object ActivationLockStatusResponse](activationlockstatusresponse.md)
 ### Bypass Codes
-- [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
+- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
   Maintain the bypass code parameters for disabling Activation Lock.
 
 ## Endpoint

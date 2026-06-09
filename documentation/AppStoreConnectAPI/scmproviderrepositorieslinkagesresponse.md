@@ -26,11 +26,11 @@ object ScmProviderRepositoriesLinkagesResponse
 ## See Also
 
 - [object ScmProvider](scmprovider.md)
-  The data structure that represents a Providers resource.
+  A source code management provider, such as GitHub or Bitbucket, connected to Xcode Cloud for accessing repositories.
 - [object ScmProviderResponse](scmproviderresponse.md)
-  A response that contains a single Providers resource.
+  The response body for endpoints that read a single SCM provider connected to Xcode Cloud.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
-  A response that contains a list of Providers resources.
+  The response body for endpoints that list SCM providers connected to Xcode Cloud.
 
 
 ---

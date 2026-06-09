@@ -20,7 +20,7 @@ To learn how to use drag and drop for an image view, see [`Supporting Drag and D
 - [class NSDraggingItem](nsdraggingitem.md)
   A single dragged item within a dragging session.
 - [class NSDraggingSession](nsdraggingsession.md)
-  The encapsulation of a drag-and-drop action that supports modification of the drag while in progress.
+  An object that encapsulates a drag-and-drop action.
 - [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
   A single object in a dragging item.
 ### Drop Targets

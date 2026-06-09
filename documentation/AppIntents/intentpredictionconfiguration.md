@@ -33,8 +33,8 @@ protocol IntentPredictionConfiguration
 
 ## See Also
 
-- [static var predictionConfiguration: Self.Prediction](predictableintent/predictionconfiguration.md)
-  A collection of predictions the system can use when it suggests the app intent.
+- [struct IntentPrediction](intentprediction.md)
+  A prediction for an app intent that the system might display to someone when it’s relevant.
 - [associatedtype Prediction : IntentPredictionConfiguration](predictableintent/prediction.md)
 - [enum IntentPredictionsBuilder](intentpredictionsbuilder.md)
   A result builder that allows you to declaratively describe the predictions for an app intent.

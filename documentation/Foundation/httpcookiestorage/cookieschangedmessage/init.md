@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message that the cookies in a cookie storage instance changed.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

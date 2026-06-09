@@ -1,4 +1,4 @@
-# Read App Info Information
+# Read app info information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -15,7 +15,7 @@ Read App Store information including your App Store state, age ratings, Brazil a
 
 #### Discussion
 
-For request and response examples for reading an age rating declaration, see [`Read Age Rating Declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md).
+For request and response examples for reading an age rating declaration, see [`Read the age-rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md).
 
 ## Endpoint
 
@@ -33,9 +33,9 @@ For request and response examples for reading an age rating declaration, see [`R
 
 ## See Also
 
-- [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)
+- [List all app infos for an app](get-v1-apps-_id_-appinfos.md)
   Get information about an app that is currently live on App Store, or that goes live with the next version.
-- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List all app info localizations for an app info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 
 

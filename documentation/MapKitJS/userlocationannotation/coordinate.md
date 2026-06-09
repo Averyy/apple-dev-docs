@@ -11,8 +11,8 @@ The coordinate of the annotation, that represents a person’s location on the m
 ## Declaration
 
 ```swift
-set coordinate(coordinate: Coordinate);
 get coordinate(): Coordinate;
+set coordinate(coordinate: Coordinate);
 ```
 
 #### Discussion

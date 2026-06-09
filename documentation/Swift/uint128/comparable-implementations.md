@@ -21,16 +21,16 @@
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 - [static func > (UInt128, UInt128) -> Bool](uint128/_(_:_:)-3k5y4.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func > (Self, Self) -> Bool](uint128/_(_:_:)-9hksg.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](uint128/_(_:_:)-7rvsp.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func >= (UInt128, UInt128) -> Bool](uint128/_=(_:_:)-3tudj.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](uint128/_=(_:_:)-5f9hh.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](uint128/_=(_:_:)-6mqww.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func <= (UInt128, UInt128) -> Bool](uint128/_=(_:_:)-7f9nm.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](uint128/_=(_:_:)-mfup.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](uint128/_=(_:_:)-yinu.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

@@ -17,7 +17,7 @@ Configures the search scopes for this view with the specified activation strateg
 
 ```swift
 nonisolated
-func searchScopes<V, S>(_ scope: Binding<V>, activation: SearchScopeActivation, @ViewBuilder _ scopes: () -> S) -> some View where V : Hashable, S : View
+func searchScopes<V, S>(_ scope: Binding<V>, activation: SearchScopeActivation, @ContentBuilder _ scopes: () -> S) -> some View where V : Hashable, S : View
 ```
 
 ## Mentions
@@ -76,7 +76,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 
 - `scope`: The active scope of the search field.
 - `activation`: The activation style of the search field’s scopes.
-- `scopes`: A view builder that represents the scoping options SwiftUI uses to populate a [`Picker`](picker.md).
+- `scopes`: A content builder that represents the scoping options SwiftUI uses to populate a [`Picker`](picker.md).
 
 ## See Also
 

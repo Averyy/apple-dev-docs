@@ -1,4 +1,4 @@
-# Read App Info Localization Information
+# Read app info localization information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Read localized app-level information.
 
 ## Parameters
 
-- `fields[appInfoLocalizations]` ([string])
-- `include` ([string])
+- `fields[appInfoLocalizations]` ([string]): Additional fields to include for each app info localization resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appInfos]` ([string])
 
 ## See Also
 
-- [List All Localizations for an App Info](get-v1-appinfos-_id_-appinfolocalizations.md)
+- [List all app info localizations for an app info](get-v1-appinfos-_id_-appinfolocalizations.md)
   Get a list of localized, app-level information for an app.
 
 

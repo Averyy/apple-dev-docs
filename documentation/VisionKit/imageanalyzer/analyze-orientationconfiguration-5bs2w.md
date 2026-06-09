@@ -6,9 +6,6 @@
 Returns the data for providing a Live Text interaction with an image in the specified orientation.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 17.0+
 - macOS 13.0+
 
 ## Declaration

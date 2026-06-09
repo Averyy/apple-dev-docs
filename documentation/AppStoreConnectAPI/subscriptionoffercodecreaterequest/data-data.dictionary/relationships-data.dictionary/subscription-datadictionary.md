@@ -16,6 +16,7 @@ object SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionOfferCodeCreateRequest.Data.Relationships.Subscription.Data](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription offer code.
 
 ## Properties
 

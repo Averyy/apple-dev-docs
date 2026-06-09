@@ -5,11 +5,6 @@
 
 Initializes a new object scanning configuration.
 
-**Availability**:
-- iOS 12.0+
-- iPadOS 12.0+
-- Mac Catalyst 13.1+
-
 ## Declaration
 
 ```swift

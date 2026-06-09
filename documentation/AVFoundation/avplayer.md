@@ -87,6 +87,10 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
   The current playback rate.
 - [class let rateDidChangeNotification: NSNotification.Name](avplayer/ratedidchangenotification.md)
   A notification that a player posts when its rate changes.
+- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
+  Indicates that the player automatically switched the playback rate from > 1.0 back to 1.0 when the playhead reached the live edge during live streaming.
+- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
+  Indicates that the player automatically switched rate to 1.0 when the reverse playback reached start of seekable range. only for live.
 ### Observing playback time
 - [func currentTime() -> CMTime](avplayer/currenttime.md)
   Returns the current time of the current player item.
@@ -224,6 +228,11 @@ Alongside the visual content presented with AVKit or [`AVPlayerLayer`](avplayerl
 ### Instance Properties
 - [var allowsCaptureOfClearKeyVideo: Bool](avplayer/allowscaptureofclearkeyvideo.md)
   Indicates whether the video output of ClearKey Encrypted Video can be captured
+- [var disconnectedFromSystemAudio: Bool](avplayer/disconnectedfromsystemaudio.md)
+  Indicates whether the player is disconnected from system audio.
+### Instance Methods
+- [func setDisconnectedFromSystemAudio(Bool, completionHandler: (() -> Void)?)](avplayer/setdisconnectedfromsystemaudio(_:completionhandler:).md)
+  Changes whether the player is disconnected from system audio. This method allows you to dynamically change the player’s system audio connection. The operation is asynchronous. Each call to this method will invoke its own completion handler when the operation completes. When changing from `false` to `true`, you should typically call this method first, then deactivate the `AVAudioSession` to allow other audio to resume.
 
 ## Relationships
 

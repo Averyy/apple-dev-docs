@@ -12,6 +12,7 @@ The maximum radius of the bounding circle of the object to track.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

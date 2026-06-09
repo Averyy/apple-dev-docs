@@ -10,7 +10,7 @@ Notifies the system that someone engaged with a specific text completion in your
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- visionOS 1.0+
+- visionOS 2.0+
 
 ## Declaration
 

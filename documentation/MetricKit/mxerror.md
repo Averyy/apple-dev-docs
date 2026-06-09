@@ -25,6 +25,7 @@ struct MXError
 - [let MXErrorDomain: String](mxerrordomain.md)
   Error domain for error values from app metrics.
 ### Getting the launch error properties
+- [static var errorDomain: String](mxerror/errordomain.md)
 - [static var launchTaskDuplicated: MXError.Code](mxerror/launchtaskduplicated.md)
   A task with the same ID has already been started.
 - [static var launchTaskInternalFailure: MXError.Code](mxerror/launchtaskinternalfailure.md)
@@ -41,8 +42,6 @@ struct MXError
   Error codes for error values from app metrics.
 - [let MXErrorDomain: String](mxerrordomain.md)
   Error domain for error values from app metrics.
-### Type Properties
-- [static var errorDomain: String](mxerror/errordomain.md)
 
 ## Relationships
 
@@ -64,6 +63,8 @@ struct MXError
   A unit of measure for an average.
 - [class MXHistogram](mxhistogram.md)
   An object representing a histogram of data values of the same type of unit.
+- [class MXHistogramBucket](mxhistogrambucket.md)
+  An object representing a bucket of data in a histogram.
 - [class MXDiagnostic](mxdiagnostic.md)
   An abstract data class for a diagnostic.
 - [class MXMetric](mxmetric.md)
@@ -76,6 +77,10 @@ struct MXError
   An object that represents the exception reason for an uncaught ObjC exception.
 - [class MXSignpostRecord](mxsignpostrecord.md)
   An object representing the record for a signpost interval or event.
+- [class MXUnitAveragePixelLuminance](mxunitaveragepixelluminance.md)
+  A unit of measure of pixel luminosity on an OLED display.
+- [class MXUnitSignalBars](mxunitsignalbars.md)
+  A unit of measure for the number of bars of cellular network connectivity.
 
 
 ---

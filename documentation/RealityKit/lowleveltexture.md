@@ -94,7 +94,7 @@ You can use this compute kernel to populate the `LowLevelTexture`:
 
 ```swift
 func populate(texture: LowLevelTexture, device: MTLDevice) {
-    // Set up the Metal command queue and compute command encoder, 
+    // Set up the Metal command queue and compute command encoder,
     // or abort if that fails.
     guard let commandQueue = device.makeCommandQueue(),
           let commandBuffer = commandQueue.makeCommandBuffer(),
@@ -102,7 +102,7 @@ func populate(texture: LowLevelTexture, device: MTLDevice) {
         return
     }
 
-    // Load a Metal compute kernel written in Metal Shading Language, 
+    // Load a Metal compute kernel written in Metal Shading Language,
     // or abort if that fails.
     guard let library = device.makeDefaultLibrary(),
           let function = library.makeFunction(name: "lowLevelTextureKernel"),
@@ -160,6 +160,12 @@ The [`TextureResource`](textureresource.md) retains a reference to the `LowLevel
 
 ## Topics
 
+### Creating a texture
+- [convenience init(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?) throws](lowleveltexture/init(deviceresource:using:).md)
+  Creates a low-level texture from an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
+### Replacing texture contents
+- [func replace(deviceResource: LowLevelDeviceResource, using: (any MTLCommandBuffer)?)](lowleveltexture/replace(deviceresource:using:).md)
+  Replaces this object’s underlying texture with an existing [`LowLevelDeviceResource`](lowleveldeviceresource.md) created and managed by the application.
 ### Structures
 - [LowLevelTexture.Descriptor](lowleveltexture/descriptor-swift.struct.md)
   An object that you use to configure new `LowLevelTexture` objects.

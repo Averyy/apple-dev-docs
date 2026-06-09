@@ -36,6 +36,12 @@ func appending(_ other: IndexPath.Element) -> IndexPath
   Compares this index path to another in depth-first traversal order.
 - [func dropLast() -> IndexPath](indexpath/droplast.md)
   Return a new index path containing all but the last element.
+- [func index(after: IndexPath.Index) -> IndexPath.Index](indexpath/index(after:).md)
+  Returns the index that follows the given index.
+- [func index(before: IndexPath.Index) -> IndexPath.Index](indexpath/index(before:).md)
+  Returns the index that precedes the given index.
+- [func makeIterator() -> IndexingIterator<IndexPath>](indexpath/makeiterator.md)
+  Returns an iterator over the nodes of the index path.
 
 
 ---

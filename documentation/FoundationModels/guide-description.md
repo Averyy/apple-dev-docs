@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: macro
 
-Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
+Allows for influencing the allowed values of properties of a generable type.
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +11,7 @@ Allows for influencing the allowed values of properties of a [`Generable`](gener
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -19,14 +20,10 @@ Allows for influencing the allowed values of properties of a [`Generable`](gener
 (peer) macro Guide<RegexOutput>(description: String? = nil, _ guides: Regex<RegexOutput>)
 ```
 
-#### Overview
-
-> **Note**: `@Generable` macro [`Generable(description:)`](generable(description:).md)
-
 ## See Also
 
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
+  Allows for influencing the allowed values of properties of a generable type.
 - [struct GenerationGuide](generationguide.md)
   Guides that control how values are generated.
 

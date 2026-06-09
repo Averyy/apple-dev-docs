@@ -13,8 +13,6 @@ A specific pairing of language code and consent text.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

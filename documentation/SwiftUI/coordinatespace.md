@@ -40,7 +40,6 @@ You don’t typically use `CoordinateSpace` directly. Instead, use the static pr
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

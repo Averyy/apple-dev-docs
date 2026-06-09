@@ -16,13 +16,14 @@ class Route
 
 #### Overview
 
-A [`Route`](route.md) object encapsulates the complete information for a route that the server returns, including geometry that you can use to draw a path and step-by-step text instructions. You don’t instantiate [`Route`](route.md) objects directly; MapKit JS returns them as part of the [`DirectionsResponse`](directionsresponse.md).
+A [`Route`](route.md) object encapsulates the information for a route that the server returns, including geometry that you can use to draw a path and step-by-step text instructions. You don’t instantiate [`Route`](route.md) objects directly; MapKit JS returns them as part of the [`DirectionsResponse`](directionsresponse.md).
 
 ## Topics
 
 ### Route geometry
 - [polyline](route/polyline.md)
   An instance of a polyline overlay that represents the path of a route.
+### Deprecated
 - [path](route/path.md)
   An array of coordinate objects representing the path of the route.
 ### Route details
@@ -38,17 +39,15 @@ A [`Route`](route.md) object encapsulates the complete information for a route t
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 ## See Also
 
-- [route(request, callback)](directions/route.md)
+- [route(request)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
 - [interface DirectionsRequest](directionsrequest.md)
   The requested start and end points for a route, as well as the planned mode of transportation.
 - [interface DirectionsResponse](directionsresponse.md)
-  The directions and estimated travel time that return for a route.
+  The directions and estimated travel time for a route.
 - [class RouteStep](routestep.md)
   A single step of the route between the requested start and end points.
 

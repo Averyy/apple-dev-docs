@@ -22,6 +22,8 @@ Changes include enabling/disabling, changes in state, and changes to title. The 
 | --- | --- |
 | `@"NSMenuItemIndex"` | An `NSNumber` object containing the integer index of the menu item that changed. |
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidChangeItemMessage`](nsmenu/didchangeitemmessage.md).
+
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

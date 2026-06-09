@@ -28,9 +28,11 @@ The system posts this notification on your app’s main thread.
 ## See Also
 
 - [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+  A message the system sends when a user-defaults setting changes.
 - [class let didChangeNotification: NSNotification.Name](userdefaults/didchangenotification.md)
   Posted when the current process changes the value of a setting.
 - [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+  A message the system sends when the size of the data in the defaults database exceeds the maximum.
 
 
 ---

@@ -6,7 +6,6 @@
 Centers the preview in a fixed-size, 3D container.
 
 **Availability**:
-- Mac Catalyst 13.0+
 - visionOS 1.0+
 
 ## Declaration

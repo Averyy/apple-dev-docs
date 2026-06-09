@@ -40,7 +40,7 @@ A single audio converter instance may perform more than one of the above transfo
 - [init?(from: AVAudioFormat, to: AVAudioFormat)](avaudioconverter/init(from:to:).md)
   Creates an audio converter object from the specified input and output formats.
 ### Converting Audio Formats
-- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: AVAudioConverterInputBlock) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
+- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
   Performs a conversion between audio formats, if the system supports it.
 - [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
   A block to get input data for conversion, as necessary.

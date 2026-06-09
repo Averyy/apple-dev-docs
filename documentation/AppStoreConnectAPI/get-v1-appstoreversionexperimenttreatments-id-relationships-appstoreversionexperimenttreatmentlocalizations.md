@@ -1,10 +1,10 @@
-# GET /v1/appStoreVersionExperimentTreatments/{id}/relationships/appStoreVersionExperimentTreatmentLocalizations
+# List localization IDs for an App Store version experiment treatment
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,15 +16,19 @@
 
 ## See Also
 
-- [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
+- [List all treatments for an app store experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
   Get a list of all treatments for a specific App Store version experiment.
-- [GET /v2/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
-- [GET /v1/appStoreVersionExperimentTreatments/{id}](get-v1-appstoreversionexperimenttreatments-_id_.md)
-- [GET /v1/appStoreVersionExperimentTreatments/{id}/appStoreVersionExperimentTreatmentLocalizations](get-v1-appstoreversionexperimenttreatments-_id_-appstoreversionexperimenttreatmentlocalizations.md)
-- [Modify an App Store Version Experiement Treatment](patch-v1-appstoreversionexperimenttreatments-_id_.md)
+- [List treatment IDs for an app store version experiment](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
+  Get a list of experiment treatment IDs for a specific App Store version experiment.
+- [Read app store version experiment treatment information](get-v1-appstoreversionexperimenttreatments-_id_.md)
+  Get information about a specific App Store version experiment treatment.
+- [List all localizations for an app store version experiment treatment](get-v1-appstoreversionexperimenttreatments-_id_-appstoreversionexperimenttreatmentlocalizations.md)
+  Get a list of all localizations for a specific App Store version experiment treatment.
+- [Modify an app store version experiment treatment](patch-v1-appstoreversionexperimenttreatments-_id_.md)
   Update the name and app icon name for a specific App Store version experiment.
-- [POST /v1/appStoreVersionExperimentTreatments](post-v1-appstoreversionexperimenttreatments.md)
-- [Delete a Treatment for an App Store Version Experiment](delete-v1-appstoreversionexperimenttreatments-_id_.md)
+- [Create an app store version experiment treatment](post-v1-appstoreversionexperimenttreatments.md)
+  Add a new treatment to an App Store version experiment.
+- [Delete a treatment for an app store version experiment](delete-v1-appstoreversionexperimenttreatments-_id_.md)
   Delete metadata that you configured for an App Store Version experiment.
 
 

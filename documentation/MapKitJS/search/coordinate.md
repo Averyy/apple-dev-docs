@@ -12,7 +12,7 @@ A map coordinate that provides a hint for the geographic area to search.
 
 ```swift
 get coordinate(): Coordinate | null;
-set coordinate(value: Coordinate | null);
+set coordinate(value: CoordinateData | null);
 ```
 
 #### Discussion

@@ -18,6 +18,8 @@ class let didChangeScreenNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that has changed screens. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidChangeScreenMessage`](nswindow/didchangescreenmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

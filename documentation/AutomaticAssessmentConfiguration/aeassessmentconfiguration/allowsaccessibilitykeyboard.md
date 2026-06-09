@@ -3,7 +3,7 @@
 **Framework**: Automatic Assessment Configuration  
 **Kind**: property
 
-A Boolean value that indicates whether to allow alternative input methods in the Accessibility Keyboard during an assessment.
+A Boolean value that indicates whether to allow the Accessibility Keyboard during an assessment.
 
 **Availability**:
 - Mac Catalyst 26.1+
@@ -17,7 +17,9 @@ var allowsAccessibilityKeyboard: Bool { get set }
 
 #### Discussion
 
-Users can enable the Accessibility Keyboard in the Settings app (Accessibility > Keyboard > Accessibility Keyboard) to access an on-screen keyboard with alternative input methods. An assessment session disables alternative input methods in the Accessibility Keyboard by default, but you can allow them by setting [`allowsAccessibilityKeyboard`](aeassessmentconfiguration/allowsaccessibilitykeyboard.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable the Accessibility Keyboard in the Settings app (Accessibility > Keyboard > Accessibility Keyboard) to access an on-screen keyboard. An assessment session **does not** disable the Accessibility Keyboard by default, but you can disable it by setting [`allowsAccessibilityKeyboard`](aeassessmentconfiguration/allowsaccessibilitykeyboard.md) to `NO` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+
+> **Note**: To allow the full Accessibility Keyboard with alternative input methods (such as Dwell Control), you must also set [`allowsAccessibilityAlternativeInputMethods`](aeassessmentconfiguration/allowsaccessibilityalternativeinputmethods.md) to `YES`.
 
 
 ---

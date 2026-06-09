@@ -31,6 +31,8 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
 - [class AVAudioIONode](avaudioionode.md)
   An object that performs audio input or output in the engine.
 ### Playback
+- [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
+  Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 - [Using voice processing](using-voice-processing.md)
@@ -42,6 +44,7 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
   An object that plays audio from a collection of MIDI events the system organizes into music tracks.
 - [class AVAudioUnitSampler](avaudiounitsampler.md)
   An object that you configure with one or more instrument samples, based on Apple’s Sampler audio unit.
+- [typealias AVMIDIEventListBlock](avmidieventlistblock.md)
 ### Mixing
 - [class AVAudioMixerNode](avaudiomixernode.md)
   An object that takes any number of inputs and converts them into a single output.
@@ -92,6 +95,10 @@ Audio Engine helps you achieve simple, as well as complex, audio processing task
 ### Supporting data types
 - [class AVAudioBuffer](avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
 - [class AVAudioFile](avaudiofile.md)
   An object that represents an audio file that the system can open for reading or writing.
 - [class AVAudioTime](avaudiotime.md)

@@ -6,8 +6,7 @@
 A to-one or to-many relationship from one resource object to others.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

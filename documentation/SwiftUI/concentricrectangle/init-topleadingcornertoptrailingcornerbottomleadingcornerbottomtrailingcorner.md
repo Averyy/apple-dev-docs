@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a rectangle with individual styles of four corners.
+Creates a rectangle with individual corner styles on all four corners.
 
 **Availability**:
 - iOS 26.0+
@@ -26,6 +26,11 @@ init(topLeadingCorner: Edge.Corner.Style = .concentric, topTrailingCorner: Edge.
 - `topTrailingCorner`: The top trailing corner style.
 - `bottomLeadingCorner`: The bottom leading corner style.
 - `bottomTrailingCorner`: The bottom trailing corner style.
+
+## See Also
+
+- [static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(topleadingcorner:toptrailingcorner:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with individual styles for each corner.
 
 
 ---

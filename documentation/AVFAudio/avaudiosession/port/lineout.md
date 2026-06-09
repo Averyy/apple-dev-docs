@@ -35,6 +35,8 @@ static let lineOut: AVAudioSession.Port
   An output to a High-Definition Multimedia Interface (HDMI) device.
 - [static let headphones: AVAudioSession.Port](avaudiosession/port/headphones.md)
   An output to wired headphones.
+- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+  Output to a media device vended through a system-wide extension that the user has installed
 
 
 ---

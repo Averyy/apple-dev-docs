@@ -31,6 +31,8 @@ case insertedIdentifiers
   A set of values identifying the context’s updated models.
 - [ModelContext.NotificationKey.queryGeneration](modelcontext/notificationkey/querygeneration.md)
   A token that indicates which generation of the model store SwiftData is using.
+- [ModelContext.NotificationKey.historyTokens](modelcontext/notificationkey/historytokens.md)
+  A history token representing the persistent store state after the save.
 
 
 ---

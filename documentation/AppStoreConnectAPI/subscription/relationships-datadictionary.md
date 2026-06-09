@@ -20,6 +20,7 @@ object Subscription.Relationships
 - [object Subscription.Relationships.Images](subscription/relationships-data.dictionary/images-data.dictionary.md)
 - [object Subscription.Relationships.IntroductoryOffers](subscription/relationships-data.dictionary/introductoryoffers-data.dictionary.md)
 - [object Subscription.Relationships.OfferCodes](subscription/relationships-data.dictionary/offercodes-data.dictionary.md)
+- [object Subscription.Relationships.PlanAvailabilities](subscription/relationships-data.dictionary/planavailabilities-data.dictionary.md)
 - [object Subscription.Relationships.PricePoints](subscription/relationships-data.dictionary/pricepoints-data.dictionary.md)
 - [object Subscription.Relationships.Prices](subscription/relationships-data.dictionary/prices-data.dictionary.md)
 - [object Subscription.Relationships.PromotedPurchase](subscription/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
@@ -35,6 +36,7 @@ object Subscription.Relationships
 - `images` (Subscription.Relationships.Images)
 - `introductoryOffers` (Subscription.Relationships.IntroductoryOffers)
 - `offerCodes` (Subscription.Relationships.OfferCodes)
+- `planAvailabilities` (Subscription.Relationships.PlanAvailabilities)
 - `pricePoints` (Subscription.Relationships.PricePoints)
 - `prices` (Subscription.Relationships.Prices)
 - `promotedPurchase` (Subscription.Relationships.PromotedPurchase)
@@ -46,6 +48,7 @@ object Subscription.Relationships
 ## See Also
 
 - [object Subscription.Attributes](subscription/attributes-data.dictionary.md)
+  Attributes that describe a subscription resource.
 
 
 ---

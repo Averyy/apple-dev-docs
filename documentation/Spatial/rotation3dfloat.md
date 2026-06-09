@@ -80,6 +80,7 @@ struct Rotation3DFloat
 - [Encodable Implementations](rotation3dfloat/encodable-implementations.md)
 - [Equatable Implementations](rotation3dfloat/equatable-implementations.md)
 - [Hashable Implementations](rotation3dfloat/hashable-implementations.md)
+- [ProjectiveTransformable3DFloat Implementations](rotation3dfloat/projectivetransformable3dfloat-implementations.md)
 
 ## Relationships
 
@@ -92,6 +93,8 @@ struct Rotation3DFloat
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [ProjectiveTransformable3D](projectivetransformable3d.md)
+- [ProjectiveTransformable3DFloat](projectivetransformable3dfloat.md)
 - [Rotatable3DProtocol](rotatable3dprotocol.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

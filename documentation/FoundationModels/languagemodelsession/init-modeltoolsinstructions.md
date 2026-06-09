@@ -18,6 +18,10 @@ Start a new session in blank slate state with instructions builder.
 convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], @InstructionsBuilder instructions: () throws -> Instructions) rethrows
 ```
 
+## Mentions
+
+- [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+
 #### Discussion
 
 - Parameters - model: The language model to use for this session.
@@ -26,12 +30,8 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 
 ## See Also
 
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
-- [protocol Tool](tool.md)
-  A tool that a model can call to gather information at runtime or perform side effects.
-- [struct Instructions](instructions.md)
-  Details you provide that define the model’s intended behavior on prompts.
+- [convenience(model:tools:transcript:)](languagemodelsession/init(model:tools:transcript:).md)
+  Start a session by rehydrating from a transcript.
 
 
 ---

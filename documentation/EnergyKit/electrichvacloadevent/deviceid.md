@@ -9,7 +9,6 @@ The device’s unique stable identifier.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -19,16 +18,16 @@ let deviceID: String
 
 #### Discussion
 
-The max length is `64 UTF-8` characters. UUID strings are permitted. Ensure the identifier:
+The max length is `64 UTF-8` bytes. UUID strings are permitted. The following are enforced as preconditions:
 
-- Isn’t empty, and less than or equal to 64 characters.
+- Isn’t empty, and less than or equal to 64 UTF-8 bytes.
 - Uses only alphanumeric, space, hyphen, and apostrophe characters.
 - Starts and ends with an alphanumeric character.
 
 ## See Also
 
-- [let measurement: ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/measurement.md)
-  The electricity consumption of a device.
+- [var deviceName: String](electrichvacloadevent/devicename.md)
+  A human-readable name for the device.
 
 
 ---

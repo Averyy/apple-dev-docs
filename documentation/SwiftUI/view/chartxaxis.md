@@ -33,6 +33,10 @@ func chartXAxis(_ visibility: Visibility) -> some View
   Configures the y-axis for charts in the view.
 - [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartyaxisstyle(content:).md)
   Configures the y axis content of charts.
+- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+  Sets the visibility of the z axis.
+- [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
+  Configures the z-axis for 3D charts in the view.
 
 
 ---

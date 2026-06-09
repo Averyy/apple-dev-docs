@@ -30,8 +30,10 @@ protocol ProjectiveTransformable3DFloat : ProjectiveTransformable3D
 - [ProjectiveTransformable3D](projectivetransformable3d.md)
 ### Conforming Types
 - [Point3DFloat](point3dfloat.md)
+- [Pose3DFloat](pose3dfloat.md)
 - [Ray3DFloat](ray3dfloat.md)
 - [Rect3DFloat](rect3dfloat.md)
+- [Rotation3DFloat](rotation3dfloat.md)
 - [Vector3DFloat](vector3dfloat.md)
 
 ## See Also

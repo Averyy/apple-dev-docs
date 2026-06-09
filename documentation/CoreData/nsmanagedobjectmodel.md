@@ -131,8 +131,6 @@ for (NSEntityDescription *entity in aModel) {
 - [init?(byMergingModels: [NSManagedObjectModel], forStoreMetadata: [String : Any])](nsmanagedobjectmodel/init(bymergingmodels:forstoremetadata:).md)
 - [init?(coder: NSCoder)](nsmanagedobjectmodel/init(coder:).md)
 - [convenience init?(contentsOfURL: URL)](nsmanagedobjectmodel/init(contentsofurl:).md)
-### Instance Methods
-- [func makeManagedObjectModel(for: Schema, mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-swift.method.md)
 ### Type Methods
 - [static func makeManagedObjectModel(for: any PersistentModel.Type..., mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-2tc31.md)
 - [static func makeManagedObjectModel(for: [any PersistentModel.Type], mergedWith: NSManagedObjectModel?) -> NSManagedObjectModel?](nsmanagedobjectmodel/makemanagedobjectmodel(for:mergedwith:)-37opo.md)

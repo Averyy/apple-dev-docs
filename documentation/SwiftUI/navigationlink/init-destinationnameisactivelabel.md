@@ -12,14 +12,14 @@ Creates a navigation link that presents a view from a WatchKit storyboard when a
 
 ```swift
 nonisolated
-init(destinationName: String, isActive: Binding<Bool>, @ViewBuilder label: () -> Label)
+init(destinationName: String, isActive: Binding<Bool>, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
 
 - `destinationName`: The storyboard name of a view for the navigation link to present.
 - `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

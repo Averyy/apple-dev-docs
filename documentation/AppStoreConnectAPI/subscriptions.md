@@ -7,77 +7,99 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 ## Topics
 
 ### Endpoints
-- [Create an Auto-Renewable Subscription](post-v1-subscriptions.md)
+- [Create an auto-renewable subscription](post-v1-subscriptions.md)
   Create an auto-renewable subscription for your app.
-- [Read Subscription Information](get-v1-subscriptions-_id_.md)
+- [Read subscription information](get-v1-subscriptions-_id_.md)
   Get information about a specific auto-renewable subscription.
-- [Modify an Auto-Renewable Subscription](patch-v1-subscriptions-_id_.md)
+- [Modify an auto-renewable subscription](patch-v1-subscriptions-_id_.md)
   Update a specific auto-renewable subscription.
-- [Delete a Subscription](delete-v1-subscriptions-_id_.md)
+- [Delete a subscription](delete-v1-subscriptions-_id_.md)
   Delete a specific auto-renewable subscription that you configured for an app.
-- [List All Localizations for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
+- [List all localizations for an auto-renewable subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
   Get a list of the subscription localizations for a specific auto-renewable subscription.
-- [GET /v1/subscriptions/{id}/relationships/subscriptionLocalizations](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
-- [List All Introductory Offers for a Subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
+- [List localization IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
+- [List all introductory offers for a subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
-- [List All Introductory Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [List all introductory offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
-- [Delete an Introductory Offer From a Subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
+- [Delete an introductory offer from a subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
-- [Read Promoted Purchase Information for a Subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
+- [Read promoted purchase information for a subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
   Get details about the promoted purchase of an auto-renewable subscription.
-- [GET /v1/subscriptions/{id}/relationships/promotedPurchase](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
-- [List All Offer Codes for a Subscription](get-v1-subscriptions-_id_-offercodes.md)
+- [Get the promoted purchase ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
+- [List all offer codes for a subscription](get-v1-subscriptions-_id_-offercodes.md)
   Get a list of subscription offer codes for a specific auto-renewable subscription.
-- [GET /v1/subscriptions/{id}/relationships/offerCodes](get-v1-subscriptions-_id_-relationships-offercodes.md)
-- [List All Promotional Offer Resource IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-promotionaloffers.md)
+- [List offer code IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-offercodes.md)
+- [List all promotional offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-promotionaloffers.md)
   Get a list of promotional offers for a specific auto-renewable subscription.
-- [GET /v1/subscriptions/{id}/relationships/promotionalOffers](get-v1-subscriptions-_id_-relationships-promotionaloffers.md)
-- [List All Price Points for a Subscription](get-v1-subscriptions-_id_-pricepoints.md)
+- [List promotional offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-promotionaloffers.md)
+- [List all price points for a subscription](get-v1-subscriptions-_id_-pricepoints.md)
   Get a list of price points for an auto-renewable subscription by territory.
-- [GET /v1/subscriptions/{id}/relationships/pricePoints](get-v1-subscriptions-_id_-relationships-pricepoints.md)
-- [List All Prices for a Subscription](get-v1-subscriptions-_id_-prices.md)
+- [List price point IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-pricepoints.md)
+- [List all prices for a subscription](get-v1-subscriptions-_id_-prices.md)
   Get a list of prices for an auto-renewable subscription, by territory.
-- [List All Subscription Prices IDs for an Auto-Renewable Subscription](get-v1-subscriptions-_id_-relationships-prices.md)
+- [List all subscription price ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-prices.md)
   Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
-- [Delete Prices From a Subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
+- [Delete prices from a subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
   Delete a scheduled subscription price change for an auto-renewable subscription.
-- [Read Review Screenshot Information for a Subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
+- [Read review screenshot information for a subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
   Get information about review screenshot for a specific auto-renewable subscription.
-- [GET /v1/subscriptions/{id}/relationships/appStoreReviewScreenshot](get-v1-subscriptions-_id_-relationships-appstorereviewscreenshot.md)
-- [Read Information About the Availability of a Subscription](get-v1-subscriptions-_id_-subscriptionavailability.md)
+- [Get the App Store review screenshot ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-appstorereviewscreenshot.md)
+- [Read information about the availability of a subscription](get-v1-subscriptions-_id_-subscriptionavailability.md)
   Get information about the territory availability for a subscription.
-- [GET /v1/subscriptions/{id}/relationships/subscriptionAvailability](get-v1-subscriptions-_id_-relationships-subscriptionavailability.md)
+- [Get the subscription availability ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-subscriptionavailability.md)
 - [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
-  List all win-back offers for a specific subscription.
-- [GET /v1/subscriptions/{id}/relationships/winBackOffers](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+  The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
+- [List win-back offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+- [List plan availabilities for a subscription](get-v1-subscriptions-_id_-planavailabilities.md)
+  List the subscription plan availabilities related to a subscription.
+- [List plan availability IDs for a subscription](get-v1-subscriptions-_id_-relationships-planavailabilities.md)
+  List the resource IDs of related subscription plan availabilities for a subscription.
 ### Objects
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)
+  The request body you use to create a subscription.
 - [object SubscriptionUpdateRequest](subscriptionupdaterequest.md)
+  The request body you use to update a subscription update request.
 - [object SubscriptionResponse](subscriptionresponse.md)
+  The response body for endpoints that create, read, or modify a single auto-renewable subscription.
 - [object SubscriptionsResponse](subscriptionsresponse.md)
+  The response body for endpoints that list auto-renewable subscriptions in a subscription group.
 - [object Subscription](subscription.md)
+  An auto-renewable subscription product offered within an app, with configurable pricing, duration, and promotional offers.
 - [object SubscriptionIntroductoryOffersResponse](subscriptionintroductoryoffersresponse.md)
+  The response body for endpoints that list introductory offers for a subscription.
 - [object SubscriptionIntroductoryOffer](subscriptionintroductoryoffer.md)
+  A discounted price or free trial period offered to new subscribers of an auto-renewable subscription.
 - [object SubscriptionIntroductoryOffersLinkagesRequest](subscriptionintroductoryofferslinkagesrequest.md)
-  The data structure that represents a subscription introductory offers linkages request resource.
+  The request body for updating the list of introductory offers linked to a subscription.
 - [object SubscriptionIntroductoryOffersLinkagesResponse](subscriptionintroductoryofferslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of introductory offers linked to a subscription.
 - [object SubscriptionOfferCodeResponse](subscriptionoffercoderesponse.md)
+  The response body for endpoints that create, read, or modify a single subscription offer code.
 - [object SubscriptionOfferCodesResponse](subscriptionoffercodesresponse.md)
+  The response body for endpoints that list offer codes for a subscription.
 - [object SubscriptionOfferCode](subscriptionoffercode.md)
+  A promotional code that gives customers a discounted or free subscription for a specified duration and eligibility group.
 - [object PromotedPurchaseResponse](promotedpurchaseresponse.md)
+  The response body for endpoints that read or modify a promoted in-app purchase or subscription.
 - [object PromotedPurchase](promotedpurchase.md)
+  An in-app purchase or subscription configured to appear on the app’s App Store product page.
 - [object SubscriptionPricePointsResponse](subscriptionpricepointsresponse.md)
+  The response body for endpoints that list available price points for a subscription.
 - [object SubscriptionPricesResponse](subscriptionpricesresponse.md)
+  The response body for endpoints that list scheduled prices for a subscription.
 - [object SubscriptionPrice](subscriptionprice.md)
+  A configured price for an auto-renewable subscription in a specific App Store territory.
 - [object SubscriptionPricesLinkagesRequest](subscriptionpriceslinkagesrequest.md)
-  The data structure that represents a subscription prices linkages request resource.
+  The request body for updating the list of prices linked to a subscription.
 - [object SubscriptionPricesLinkagesResponse](subscriptionpriceslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of prices linked to a subscription.
 - [object SubscriptionLocalizationResponse](subscriptionlocalizationresponse.md)
+  The response body for endpoints that create, read, or modify a single subscription localization.
 - [object SubscriptionLocalizationsResponse](subscriptionlocalizationsresponse.md)
+  The response body for endpoints that list localizations for a subscription.
 - [object SubscriptionLocalization](subscriptionlocalization.md)
+  The localized display name and description for an auto-renewable subscription shown to customers on the App Store.
 - [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 - [object SubscriptionAppStoreReviewScreenshotLinkageResponse](subscriptionappstorereviewscreenshotlinkageresponse.md)
 - [object SubscriptionPricePointEqualizationsLinkagesResponse](subscriptionpricepointequalizationslinkagesresponse.md)
@@ -101,6 +123,8 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Create, modify, and delete promotion images for your auto-renewalable subscription.
 - [Subscription availability](subscription-availability.md)
   Read and modify territory availability for an auto-renewable subscription.
+- [Subscription plan availability](subscription-plan-availability.md)
+  Create and manage subscription plan availability for auto-renewable subscriptions.
 - [Billing Grace Periods](billing-grace-periods.md)
   Get information about the grace period and modify the opt-in value.
 

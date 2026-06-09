@@ -101,12 +101,12 @@ When using this protocol, you don’t need to provide an implementation for [`pe
 
 ## See Also
 
-- [protocol ControlConfigurationIntent](controlconfigurationintent.md)
-  An interface for configuring a Control Center module.
-- [protocol LiveActivityStartingIntent](liveactivitystartingintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity.
-- [protocol LiveActivityIntent](liveactivityintent.md)
-  An intent that starts, pauses, or otherwise modifies a Live Activity when it runs.
+- [Increasing the visibility of widgets in Smart Stacks](../WidgetKit/Widget-Suggestions-In-Smart-Stacks.md)
+  Provide contextual information and donate intents to the system to make sure your widget appears prominently in Smart Stacks.
+- [Migrating widgets from SiriKit Intents to App Intents](../WidgetKit/Migrating-from-SiriKit-Intents-to-App-Intents.md)
+  Configure your widgets for backward compatibility.
+- [WidgetKit](../WidgetKit/WidgetKit.md)
+  Extend the reach of your app by creating widgets, watch complications, Live Activities, and controls.
 
 
 ---

@@ -12,11 +12,12 @@ The quality of the face capture.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
-var captureQuality: FaceObservation.CaptureQuality? { get }
+var captureQuality: FaceObservation.CaptureQuality?
 ```
 
 #### Discussion

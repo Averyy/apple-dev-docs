@@ -128,6 +128,8 @@ if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
 ### Specifying Date Interval Format Styles
 - [func timeZone(Date.IntervalFormatStyle.Symbol.TimeZone) -> Date.IntervalFormatStyle](date/intervalformatstyle/timezone(_:).md)
   Modifies the date interval format style to use the specified time zone format.
+- [func locale(Locale) -> Date.IntervalFormatStyle](date/intervalformatstyle/locale(_:).md)
+  Modifies the date interval format style to use the specified locale.
 - [var calendar: Calendar](date/intervalformatstyle/calendar.md)
   The calendar for formatting the date interval.
 - [var locale: Locale](date/intervalformatstyle/locale.md)
@@ -149,6 +151,9 @@ if let today = Calendar.current.date(byAdding: .day, value: -140, to: Date()),
   Modifies the date interval format style to include the specified weekday style.
 - [func year() -> Date.IntervalFormatStyle](date/intervalformatstyle/year.md)
   Modifies the date interval format style to include the year.
+### Formatting a Date Interval Format Style
+- [func format(Range<Date>) -> String](date/intervalformatstyle/format(_:).md)
+  Creates a locale-aware string representation from a relative date value.
 ### Comparing Date Interval Format Styles
 - [static func == (Date, Date) -> Bool](date/==(_:_:).md)
   Returns true if the two `Date` values represent the same point in time.

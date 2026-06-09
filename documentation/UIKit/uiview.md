@@ -132,6 +132,21 @@ Many view behaviors can be configured without the need for subclassing. Before y
 
 Animations are another way to make visible changes to a view without requiring you to subclass and implement complex drawing code. Many properties of the [`UIView`](uiview.md) class are animatable, which means changes to those properties can trigger system-generated animations. Starting animations requires as little as one line of code to indicate that any changes that follow should be animated. For more information about animation support for views, see [`Animate views`](uiview#Animate-views.md).
 
+##### Sensor Coordinate Orientation
+
+`UIView` conforms to [`CLBodyIdentifiable`](https://developer.apple.com/documentation/CoreLocation/CLBodyIdentifiable) and [`CMBodyIdentifiable`](https://developer.apple.com/documentation/CoreMotion/CMBodyIdentifiable), informing Core Location and Core Motion how the app’s UI and this view are situated with respect to reference physical orientations. They use this information to transform the sensor values they provide, such as compass headings and device motion data, so those values align with your UI’s actual orientation. Without this association, Core Location and Core Motion report sensor values relative to the device’s physical orientation, which can produce unexpected results, such as a navigation map that appears rotated.
+
+To use this approach, set any view as the body on a `CLLocationManager` or `CMMotionManager` instance. The system tracks orientation changes through the view and applies the correct transformation automatically.
+
+```swift
+let motionManager = CMMotionManager()
+
+override func viewDidLoad() {
+    super.viewDidLoad()
+    motionManager.deviceMotionBody = view
+}
+```
+
 ## Topics
 
 ### Creating a view object
@@ -375,7 +390,7 @@ Animations are another way to make visible changes to a view without requiring y
 - [class var requiresConstraintBasedLayout: Bool](uiview/requiresconstraintbasedlayout.md)
   A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
 - [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
-  A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
+  A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 ### Accessing insets and layout guides
 - [UIView.LayoutRegion](uiview/layoutregion.md)
 - [func directionalEdgeInsets(for: UIView.LayoutRegion) -> NSDirectionalEdgeInsets](uiview/directionaledgeinsets(for:).md)
@@ -543,6 +558,9 @@ Animations are another way to make visible changes to a view without requiring y
   Disables a view transition animation.
 - [class func modifyAnimations(withRepeatCount: CGFloat, autoreverses: Bool, animations: () -> Void)](uiview/modifyanimations(withrepeatcount:autoreverses:animations:).md)
   Repeats the specified animations a specific number of times, optionally running the animation forward and backward.
+### Sensor coordinate orientation
+- [protocol CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [protocol CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 ### Constants
 - [UIView.AnimationCurve](uiview/animationcurve.md)
   Specifies the supported animation curves.
@@ -573,6 +591,9 @@ Animations are another way to make visible changes to a view without requiring y
   Symbols that views no longer support.
 ### Initializers
 - [convenience init()](uiview/init.md)
+### Instance Properties
+- [var appEntityUIElementProvider: ((UIView, AppEntityUIElementsContext) -> [AppEntityUIElement])?](uiview/appentityuielementprovider.md)
+  return AppEntityUIElement( identifier: EntityIdentifier( for: PhotoModel.self, identifier: photo.id ), bounds: photo.frame, state: State(isSelected: photo.isSelected) ) } } } }
 ### Instance Methods
 - [func setNeedsUpdateProperties()](uiview/setneedsupdateproperties.md)
   Call to manually request a properties update for the view. Multiple requests may be coalesced into a single update alongside the next layout pass.
@@ -583,6 +604,8 @@ Animations are another way to make visible changes to a view without requiring y
 ### Enumerations
 - [UIView.Invalidations](uiview/invalidations.md)
   Changes that cause an aspect of a view to be invalid and require an update.
+### Default Implementations
+- [AppEntityAnnotatable Implementations](uiview/appentityannotatable-implementations.md)
 
 ## Relationships
 
@@ -618,7 +641,10 @@ Animations are another way to make visible changes to a view without requiring y
 - [UIWebView](uiwebview.md)
 - [UIWindow](uiwindow.md)
 ### Conforms To
+- [AppEntityAnnotatable](../AppIntents/AppEntityAnnotatable.md)
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

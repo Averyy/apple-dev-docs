@@ -21,6 +21,12 @@ A type for a date interval argument used to format the run with this attribute.
 enum LocalizedDateIntervalArgumentAttribute
 ```
 
+## Topics
+
+### Inspecting attributed string key properties
+- [static let name: String](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateintervalargumentattribute/name.md)
+  The name of the attribute.
+
 ## Relationships
 
 ### Conforms To

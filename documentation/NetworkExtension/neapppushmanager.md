@@ -63,6 +63,9 @@ Your app can create as many [`NEAppPushManager`](neapppushmanager.md) instances 
 ### Operating over Ethernet
 - [var matchEthernet: Bool](neapppushmanager/matchethernet.md)
   A property that indicates Ethernet support for Local Push Connectivity.
+### Supporting 3GPP Mission Critical Services
+- [var matchMissionCriticalService: Bool](neapppushmanager/matchmissioncriticalservice.md)
+  A property that indicates support for Mission Critical Services.
 ### Handling errors
 - [struct NEAppPushManagerError](neapppushmanagererror-swift.struct.md)
   An error that the push manager encounters.

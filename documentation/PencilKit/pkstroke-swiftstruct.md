@@ -49,18 +49,38 @@ struct PKStroke
 - [var transform: CGAffineTransform](pkstroke-swift.struct/transform.md)
   The affine transform of the stroke after rendering.
 - [var randomSeed: UInt32](pkstroke-swift.struct/randomseed.md)
+### Identifying the stroke
+- [var id: UUID](pkstroke-swift.struct/id.md)
+  The unique identity of the stroke.
+### Manipulating strokes
+- [func substroke(range: ClosedRange<CGFloat>) -> PKStroke](pkstroke-swift.struct/substroke(range:).md)
+  Returns a copy of this stroke containing the control points in the given range.
+### Configuring rendering
+- [var renderGroupID: UUID?](pkstroke-swift.struct/rendergroupid.md)
+  Strokes with certain inks (such as marker) can composite to look as if they were drawn while the previous stroke with the same ink was still wet. This UUID may be set to a single value for a run of strokes which should be rendered together in this manner.
+- [var renderState: PKStroke.RenderState?](pkstroke-swift.struct/renderstate-swift.property.md)
+  Contains information about the render details (such as particle positioning) of this stroke, which can be useful when manipulating the model in certain ways. For example, this may be set on substrokes returned by `substroke(range:)`. nil uses default rendering.
+- [PKStroke.RenderState](pkstroke-swift.struct/renderstate-swift.struct.md)
+  A value that captures the render-time state of a stroke, such as grain texture position.
 ### Supporting backward compatibility
 - [var requiredContentVersion: PKContentVersion](pkstroke-swift.struct/requiredcontentversion.md)
   The version of PencilKit necessary to use the stroke.
 ### Using reference types
 - [class PKStrokeReference](pkstrokereference.md)
   A class that represents the paths, boundaries and other properties of a stroke drawn on a canvas.
+### Initializers
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-1qvj7.md)
+- [init(ink: PKInk, path: PKStrokePath, transform: CGAffineTransform, mask: UIBezierPath?, randomSeed: UInt32, id: UUID, renderGroupID: UUID?, renderState: PKStroke.RenderState?)](pkstroke-swift.struct/init(ink:path:transform:mask:randomseed:id:rendergroupid:renderstate:)-idqu.md)
+### Default Implementations
+- [Identifiable Implementations](pkstroke-swift.struct/identifiable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
+- [Identifiable](../Swift/Identifiable.md)
+- [Markup](../PaperKit/Markup.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
@@ -72,6 +92,8 @@ struct PKStroke
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)

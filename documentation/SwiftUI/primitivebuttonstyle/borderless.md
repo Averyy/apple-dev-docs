@@ -17,8 +17,8 @@ A button style that doesn’t apply a border.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var borderless: BorderlessButtonStyle { get }
+nonisolated
+static var borderless: BorderlessButtonStyle { get }
 ```
 
 #### Discussion

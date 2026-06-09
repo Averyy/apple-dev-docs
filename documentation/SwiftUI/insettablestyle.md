@@ -15,6 +15,7 @@ The table style that describes the behavior and appearance of a table with its c
 ## Declaration
 
 ```swift
+nonisolated
 struct InsetTableStyle
 ```
 

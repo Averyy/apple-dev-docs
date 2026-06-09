@@ -90,8 +90,6 @@ final class PDFDocument: ReferenceFileDocument {
 
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
   The properties of an open reference file document.
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
-  The undo manager used to register a view’s undo operations.
 
 
 ---

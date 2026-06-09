@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+`true` if the volume supports setting POSIX access permissions with the `NSURLFileSecurityKey` property. (Read-only, value type boolean `NSNumber`).
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+

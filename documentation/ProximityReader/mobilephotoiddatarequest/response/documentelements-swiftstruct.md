@@ -9,7 +9,6 @@ A type that contains the document elements from a successful photo ID data reque
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 
@@ -39,7 +38,9 @@ struct DocumentElements
   The document’s number, as defined by the document’s issuing authority.
 - [let issuingAuthority: MobilePhotoIDDataRequest.Response.DocumentElements.IssuingAuthority?](mobilephotoiddatarequest/response/documentelements-swift.struct/issuingauthority-swift.property.md)
   The state or government that issued the identity document.
-- [let nameComponents: PersonNameComponents?](mobilephotoiddatarequest/response/documentelements-swift.struct/namecomponents.md)
+- [let name: MobileDocumentHolderName?](mobilephotoiddatarequest/response/documentelements-swift.struct/name.md)
+  The photo ID holder’s name.
+- [var nameComponents: PersonNameComponents?](mobilephotoiddatarequest/response/documentelements-swift.struct/namecomponents.md)
   The photo ID holder’s name components.
 - [let portraitData: Data?](mobilephotoiddatarequest/response/documentelements-swift.struct/portraitdata.md)
   The portrait data of the photo ID holder on record with the issuer.

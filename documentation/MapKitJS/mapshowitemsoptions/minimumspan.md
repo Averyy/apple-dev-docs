@@ -11,7 +11,7 @@ The minimum longitudinal and latitudinal span the map displays.
 ## Declaration
 
 ```swift
-minimumSpan?: CoordinateSpan;
+minimumSpan?: CoordinateSpanData;
 ```
 
 #### Discussion

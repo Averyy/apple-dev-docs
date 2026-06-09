@@ -17,6 +17,7 @@ A Boolean that indicates whether the canvas can present its contents to its pare
 ## Declaration
 
 ```swift
+nonisolated
 var rendersAsynchronously: Bool { get set }
 ```
 

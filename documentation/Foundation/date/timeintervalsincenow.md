@@ -36,6 +36,8 @@ If the date is earlier than the current date and time, this property’s value i
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
 - [static let timeIntervalBetween1970AndReferenceDate: Double](date/timeintervalbetween1970andreferencedate.md)
   The number of seconds from 1 January 1970 to the reference date, 1 January 2001.
+- [typealias Stride](date/stride.md)
+  A type alias to define the stride of a date.
 
 
 ---

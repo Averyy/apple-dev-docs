@@ -12,7 +12,7 @@ Places an accessory View next to the Digital Crown on Apple Watch.
 
 ```swift
 nonisolated
-func digitalCrownAccessory<Content>(@ViewBuilder content: @escaping () -> Content) -> some View where Content : View
+func digitalCrownAccessory<Content>(@ContentBuilder content: @escaping () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

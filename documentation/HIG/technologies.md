@@ -12,7 +12,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [AirPlay](/design/human-interface-guidelines/airplay) - AirPlay lets people stream media content wirelessly from iOS, iPadOS, macOS, and tvOS devices to Apple TV, HomePod, and TVs and speakers that support AirPlay.
 - [Always On](/design/human-interface-guidelines/always-on) - On devices that include the Always On display, the system can continue to display an app’s interface when people suspend their interactions with the device.
 - [App Clips](/design/human-interface-guidelines/app-clips) - An App Clip is a lightweight version of your app or game that provides an on-the-go or demo experience that’s instantly available.
-- [Apple Pay](/design/human-interface-guidelines/apple-pay) - Apple Pay is a secure, easy way to make payments for physical goods and services — as well as donations and subscriptions — in apps running on iPhone, iPad, Mac, Apple Vision Pro, Apple Watch, on websites, and on any browser.
+- [Apple Pay](/design/human-interface-guidelines/apple-pay) - Apple Pay is a secure, easy way to make payments for physical goods and services, donations, and subscriptions in apps and in any browser.
 - [Augmented reality](/design/human-interface-guidelines/augmented-reality) - Augmented reality (or AR) lets you deliver immersive, engaging experiences that seamlessly blend virtual objects with the real world.
 - [CareKit](/design/human-interface-guidelines/carekit) - People can use CareKit apps to manage care plans related to a chronic illness like diabetes, recover from an injury or surgery, or achieve health and wellness goals.
 - [CarPlay](/design/human-interface-guidelines/carplay) - CarPlay lets people get directions, make calls, send and receive messages, listen to music, and more from their car’s built-in display, all while staying focused on the road.
@@ -34,7 +34,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [SharePlay](/design/human-interface-guidelines/shareplay) - SharePlay helps multiple people share activities — like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard — while they’re in a FaceTime call or Messages conversation.
 - [ShazamKit](/design/human-interface-guidelines/shazamkit) - ShazamKit supports audio recognition by matching an audio sample against the ShazamKit catalog or a custom audio catalog.
 - [Sign in with Apple](/design/human-interface-guidelines/sign-in-with-apple) - Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
-- [Siri](/design/human-interface-guidelines/siri) - Siri makes it easy for people to accomplish everyday tasks quickly, using voice, touch, or automation.
+- [Siri](/design/human-interface-guidelines/siri) - People use Siri to help them with the things they need to find, know, or do every day.
 - [Tap to Pay on iPhone](/design/human-interface-guidelines/tap-to-pay-on-iphone) - Tap to Pay on iPhone lets merchants accept contactless payments using an app on their iPhone, without having to connect external hardware.
 - [VoiceOver](/design/human-interface-guidelines/voiceover) - VoiceOver is a screen reader that lets people experience your app’s interface without needing to see the screen.
 - [Wallet](/design/human-interface-guidelines/wallet) - Wallet helps people securely store their credit and debit cards, driver’s license or state ID, transit cards, event tickets, keys, and more on iPhone and Apple Watch.
@@ -45,7 +45,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [AirPlay](airplay.md) - AirPlay lets people stream media content wirelessly from iOS, iPadOS, macOS, and tvOS devices to Apple TV, HomePod, and TVs and speakers that support AirPlay.
 - [Always On](always-on.md) - On devices that include the Always On display, the system can continue to display an app’s interface when people suspend their interactions with the device.
 - [App Clips](app-clips.md) - An App Clip is a lightweight version of your app or game that provides an on-the-go or demo experience that’s instantly available.
-- [Apple Pay](apple-pay.md) - Apple Pay is a secure, easy way to make payments for physical goods and services — as well as donations and subscriptions — in apps running on iPhone, iPad, Mac, Apple Vision Pro, Apple Watch, on websites, and on any browser.
+- [Apple Pay](apple-pay.md) - Apple Pay is a secure, easy way to make payments for physical goods and services, donations, and subscriptions in apps and in any browser.
 - [Augmented reality](augmented-reality.md) - Augmented reality (or AR) lets you deliver immersive, engaging experiences that seamlessly blend virtual objects with the real world.
 - [CareKit](carekit.md) - People can use CareKit apps to manage care plans related to a chronic illness like diabetes, recover from an injury or surgery, or achieve health and wellness goals.
 - [CarPlay](carplay.md) - CarPlay lets people get directions, make calls, send and receive messages, listen to music, and more from their car’s built-in display, all while staying focused on the road.
@@ -67,7 +67,7 @@ Discover the Apple technologies, features, and services you can integrate into y
 - [SharePlay](shareplay.md) - SharePlay helps multiple people share activities — like viewing a movie, listening to music, playing a game, or sketching ideas on a whiteboard — while they’re in a FaceTime call or Messages conversation.
 - [ShazamKit](shazamkit.md) - ShazamKit supports audio recognition by matching an audio sample against the ShazamKit catalog or a custom audio catalog.
 - [Sign in with Apple](sign-in-with-apple.md) - Sign in with Apple provides a fast, private way to sign into apps and websites, giving people a consistent experience they can trust and the convenience of not having to remember multiple accounts and passwords.
-- [Siri](siri.md) - Siri makes it easy for people to accomplish everyday tasks quickly, using voice, touch, or automation.
+- [Siri](siri.md) - People use Siri to help them with the things they need to find, know, or do every day.
 - [Tap to Pay on iPhone](tap-to-pay-on-iphone.md) - Tap to Pay on iPhone lets merchants accept contactless payments using an app on their iPhone, without having to connect external hardware.
 - [VoiceOver](voiceover.md) - VoiceOver is a screen reader that lets people experience your app’s interface without needing to see the screen.
 - [Wallet](wallet.md) - Wallet helps people securely store their credit and debit cards, driver’s license or state ID, transit cards, event tickets, keys, and more on iPhone and Apple Watch.

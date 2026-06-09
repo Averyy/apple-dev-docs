@@ -49,8 +49,6 @@ To learn about 3D Touch, read [`Adopting 3D Touch on iPhone`](https://developer.
 
 ## See Also
 
-- [protocol UIAccelerometerDelegate](uiaccelerometerdelegate.md)
-  The interface for receiving acceleration-related data from the system.
 - [protocol UIActionSheetDelegate](uiactionsheetdelegate.md)
   The interface for the delegate of an action sheet object.
 - [protocol UIAlertViewDelegate](uialertviewdelegate.md)

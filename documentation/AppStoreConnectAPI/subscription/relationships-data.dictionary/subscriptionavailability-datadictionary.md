@@ -16,6 +16,7 @@ object Subscription.Relationships.SubscriptionAvailability
 
 ### Objects
 - [object Subscription.Relationships.SubscriptionAvailability.Data](subscription/relationships-data.dictionary/subscriptionavailability-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription.
 
 ## Properties
 

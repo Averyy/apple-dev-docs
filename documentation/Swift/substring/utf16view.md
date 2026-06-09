@@ -21,6 +21,9 @@ struct UTF16View
 
 ## Topics
 
+### Instance Methods
+- [func isTriviallyIdentical(to: Substring.UTF16View) -> Bool](substring/utf16view/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this UTF16 view is trivially identical to `other`.
 ### Default Implementations
 - [BidirectionalCollection Implementations](substring/utf16view/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/utf16view/collection-implementations.md)

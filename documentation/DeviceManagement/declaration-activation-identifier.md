@@ -5,13 +5,9 @@
 
 The endpoint for fetching an activation declaration.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#declaration-activation-identifier`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Parameters
 

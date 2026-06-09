@@ -62,6 +62,8 @@ Here are some general rules that describe the name component parsing behavior:
 
 - [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
+- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+  The strategy used to parse a string into person name components.
 
 
 ---

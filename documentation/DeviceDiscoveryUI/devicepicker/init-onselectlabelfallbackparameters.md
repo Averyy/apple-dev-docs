@@ -6,9 +6,6 @@
 Creates a view that displays available devices.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
 - tvOS 16.0+
 
 ## Declaration

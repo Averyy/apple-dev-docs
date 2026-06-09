@@ -21,13 +21,13 @@ set displayPriority(value: number);
 
 #### Discussion
 
-Maps use the display priority as a hint to determine whether to display annotations at any given time. By default, the display priority is [`Required`](displaypriority/required.md), which indicates the annotation always displays on the map.
+Maps use the display priority as a hint to determine whether to display annotations at any given time. By default, the display priority is [`Required`](annotationdisplaypriority/required.md), which indicates the annotation always displays on the map.
 
 Display priority can be any number from `0` to `1000`. There are three preset values:
 
-- [`Low`](displaypriority/low.md) (`250`)
-- [`High`](displaypriority/high.md) (`750`)
-- [`Required`](displaypriority/required.md) (`1000`)
+- [`Low`](annotationdisplaypriority/low.md) (`250`)
+- [`High`](annotationdisplaypriority/high.md) (`750`)
+- [`Required`](annotationdisplaypriority/required.md) (`1000`)
 
 Maps ignores this value when [`collisionMode`](annotation/collisionmode-data.property.md) is `None`.
 

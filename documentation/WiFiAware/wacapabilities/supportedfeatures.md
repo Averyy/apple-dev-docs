@@ -8,6 +8,7 @@ A property that returns a set of supported features, or an empty set if the curr
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

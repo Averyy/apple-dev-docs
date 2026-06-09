@@ -444,6 +444,13 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [var candidateListTouchBarItem: NSCandidateListTouchBarItem<AnyObject>?](nstextview/candidatelisttouchbaritem.md)
 - [func updateTextTouchBarItems()](nstextview/updatetexttouchbaritems.md)
 - [func updateTouchBarItemIdentifiers()](nstextview/updatetouchbaritemidentifiers.md)
+### Structures
+- [NSTextView.DidBeginEditingMessage](nstextview/didbegineditingmessage.md)
+- [NSTextView.DidChangeMessage](nstextview/didchangemessage.md)
+- [NSTextView.DidChangeSelectionMessage](nstextview/didchangeselectionmessage.md)
+- [NSTextView.DidChangeTypingAttributesMessage](nstextview/didchangetypingattributesmessage.md)
+- [NSTextView.DidEndEditingMessage](nstextview/didendeditingmessage.md)
+- [NSTextView.WillChangeNotifyingTextViewMessage](nstextview/willchangenotifyingtextviewmessage.md)
 ### Instance Properties
 - [var allowedWritingToolsResultOptions: NSWritingToolsResultOptions](nstextview/allowedwritingtoolsresultoptions.md)
 - [var inlinePredictionType: NSTextInputTraitType](nstextview/inlinepredictiontype.md)
@@ -455,6 +462,8 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [func drawTextHighlightBackground(for: NSTextRange, origin: NSPoint)](nstextview/drawtexthighlightbackground(for:origin:).md)
 - [func highlight(Any?)](nstextview/highlight(_:).md)
   An action for toggling `NSTextHighlightStyleAttributeName` in the receiver’s selected range. The sender should be a menu item with a `representedObject` of type (`NSTextHighlightColorScheme`).
+- [func register(NSTextAttachmentViewProviderReusePolicy, forTextAttachmentViewProviderType: AnyClass)](nstextview/register(_:fortextattachmentviewprovidertype:).md)
+  Register the NSTextAttachmentViewProviderReusePolicy for all instances of a particular subclass of NSTextAttachmentViewProvider.
 
 ## Relationships
 
@@ -488,6 +497,7 @@ When the system invokes [`resignFirstResponder()`](nsresponder/resignfirstrespon
 - [NSTextInput](nstextinput.md)
 - [NSTextInputClient](nstextinputclient.md)
 - [NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
+- [NSTextViewportLayoutControllerDelegate](nstextviewportlayoutcontrollerdelegate.md)
 - [NSTouchBarDelegate](nstouchbardelegate.md)
 - [NSTouchBarProvider](nstouchbarprovider.md)
 - [NSUserActivityRestoring](nsuseractivityrestoring.md)

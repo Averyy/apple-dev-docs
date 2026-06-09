@@ -8,6 +8,7 @@ An item that the data scanner recognizes in the camera’s live video.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -11,6 +11,7 @@ Creates an accessory toolbar style
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

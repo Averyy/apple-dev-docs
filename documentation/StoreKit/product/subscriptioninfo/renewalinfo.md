@@ -117,8 +117,15 @@ struct RenewalInfo
 ### Structures
 - [Product.SubscriptionInfo.RenewalInfo.CommitmentInfo](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.struct.md)
 ### Instance Properties
+- [var bundleOriginalTransactionID: String?](product/subscriptioninfo/renewalinfo/bundleoriginaltransactionid.md)
+- [var bundleProductID: String?](product/subscriptioninfo/renewalinfo/bundleproductid.md)
+  Identifies the bundle product the next renewal is for. If the next renewal is created as part of a subscription bundle, this field will be populated with the product ID of the bundle.
+- [var bundleSubscriptionGroupID: String?](product/subscriptioninfo/renewalinfo/bundlesubscriptiongroupid.md)
+  Identifies the subscription bundle group the next renewal is for.
 - [let commitmentInfo: Product.SubscriptionInfo.RenewalInfo.CommitmentInfo?](product/subscriptioninfo/renewalinfo/commitmentinfo-swift.property.md)
 - [let renewalBillingPlanType: SubscriptionInfo.BillingPlanType?](product/subscriptioninfo/renewalinfo/renewalbillingplantype.md)
+- [var willUnbundle: Bool](product/subscriptioninfo/renewalinfo/willunbundle.md)
+  Whether the subscription will leave the bundle at the next renewal and renew as a standalone product.
 
 ## Relationships
 

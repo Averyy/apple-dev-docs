@@ -16,6 +16,7 @@ object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionAppStoreReviewScreenshot.Relationships.Subscription.Data](subscriptionappstorereviewscreenshot/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription app store review screenshot.
 
 ## Properties
 

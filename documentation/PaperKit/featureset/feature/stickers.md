@@ -20,7 +20,16 @@ case stickers
 
 #### Discussion
 
-Once inserted stickers are images, a data model can not contain stickers. If images are not supported, then stickers can not be inserted.
+Once inserted stickers are images, a data model can’t contain stickers. If you disable images, you can’t insert stickers.
+
+## See Also
+
+- [FeatureSet.Feature.images](featureset/feature/images.md)
+  Supports image elements.
+- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+  Supports loupe elements.
+- [FeatureSet.Feature.links](featureset/feature/links.md)
+  Supports link elements.
 
 
 ---

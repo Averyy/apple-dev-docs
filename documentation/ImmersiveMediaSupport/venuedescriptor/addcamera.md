@@ -29,7 +29,7 @@ final func addCamera(_ camera: ImmersiveCamera) throws
 ## See Also
 
 - [var cameras: [ImmersiveCamera]](venuedescriptor/cameras.md)
-  An array of all the immersive cameras contained in the venue descriptor.
+  An array of all the immersive cameras contained in the venue descriptor (both original and dynamic).
 - [func removeCamera(id: String) throws](venuedescriptor/removecamera(id:).md)
   Removes an immersive camera definition from the venue descriptor.
 - [func cameraViewModel(for: String) -> ImmersiveCameraViewModel?](venuedescriptor/cameraviewmodel(for:).md)

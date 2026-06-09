@@ -19,7 +19,7 @@ To manage Game Center activity localizations, be sure you have one of the follow
   Get information for a specific Game Center activity localization.
 - [Read Image Information for an Activity Localization](get-v1-gamecenteractivitylocalizations-_id_-image.md)
   Get details about the image for a specific Game Center activity localization.
-- [GET /v1/gameCenterActivityLocalizations/{id}/relationships/image](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
+- [Get the image ID for a Game Center activity localization](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
 - [Add an Activity Localization](post-v1-gamecenteractivitylocalizations.md)
   Add a localization for a specific Game Center activity.
 - [Modify an Activity Localization](patch-v1-gamecenteractivitylocalizations-_id_.md)
@@ -28,15 +28,15 @@ To manage Game Center activity localizations, be sure you have one of the follow
   Remove a specific localization from a Game Center activity.
 ### Objects
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)
-  The data structure that represents an activity localization resource.
+  The localized name, description, and image for a Game Center activity in a specific language.
 - [object GameCenterActivityLocalizationCreateRequest](gamecenteractivitylocalizationcreaterequest.md)
-  The request body you use to create an activity localization resource.
+  The request body for creating a localization for a Game Center activity.
 - [object GameCenterActivityLocalizationResponse](gamecenteractivitylocalizationresponse.md)
-  A response that contains a single activity localization resource.
+  A response containing a single localization for a Game Center activity.
 - [object GameCenterActivityLocalizationUpdateRequest](gamecenteractivitylocalizationupdaterequest.md)
   The request body you use to update an activity localization.
 - [object GameCenterActivityLocalizationsResponse](gamecenteractivitylocalizationsresponse.md)
-  A response that contains a list of activity localization resources.
+  A response containing a list of localizations for a Game Center activity.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
 
 ## See Also

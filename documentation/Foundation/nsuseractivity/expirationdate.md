@@ -27,11 +27,13 @@ If you don’t set the value of this property, the system automatically expires 
 ## See Also
 
 - [var isEligibleForHandoff: Bool](nsuseractivity/iseligibleforhandoff.md)
-  A Boolean value that indicates whether the activity can be continued on another device using Handoff.
+  A Boolean value that indicates whether the activity can continue on another device using Handoff.
 - [var isEligibleForSearch: Bool](nsuseractivity/iseligibleforsearch.md)
-  A Boolean value that indicates whether the activity should be added to the on-device index.
+  A Boolean value that indicates whether to add the activity to the on-device index.
 - [var isEligibleForPublicIndexing: Bool](nsuseractivity/iseligibleforpublicindexing.md)
-  A Boolean value that indicates whether the activity can be publicly accessed by all iOS users.
+  A Boolean value that indicates whether the activity is publicly accessible by all iOS users.
+- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
+  A Boolean value that determines whether Siri can suggest the activity as a shortcut.
 
 
 ---

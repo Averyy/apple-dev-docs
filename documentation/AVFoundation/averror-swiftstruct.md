@@ -243,6 +243,10 @@ struct AVError
   The user information key to retrieve a Boolean value that indicates whether recording finished successfully.
 - [let AVErrorTimeKey: String](averrortimekey.md)
   The user information key to retrieve the error time.
+### Type Properties
+- [static var externalSyncDeviceFrequencyHigherThanSpecified: AVError.Code](averror-swift.struct/externalsyncdevicefrequencyhigherthanspecified.md)
+- [static var externalSyncDeviceFrequencyLowerThanSpecified: AVError.Code](averror-swift.struct/externalsyncdevicefrequencylowerthanspecified.md)
+- [static var followExternalSyncFailed: AVError.Code](averror-swift.struct/followexternalsyncfailed.md)
 
 ## Relationships
 

@@ -7,8 +7,6 @@ The declaration to configure screen-sharing host settings and restrictions.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,13 +23,16 @@ Specify `com.apple.configuration.screensharing.host.settings` as the declaration
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
 | Allowed in local enrollment | macOS |
 | Allowed in system scope | macOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Only a single configuration is applied |
 
 ##### Configuration Example
+
+This configuration manages screen-sharing host settings and restrictions.
 
 ```json
 {
@@ -74,20 +75,20 @@ Specify `com.apple.configuration.screensharing.host.settings` as the declaration
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

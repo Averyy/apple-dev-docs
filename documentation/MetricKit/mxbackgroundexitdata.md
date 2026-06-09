@@ -64,8 +64,14 @@ class MXBackgroundExitData
 
 ## See Also
 
-- [var backgroundExitData: MXBackgroundExitData](mxappexitmetric/backgroundexitdata.md)
-  The metrics for the background app exits.
+- [class MXAppRunTimeMetric](mxappruntimemetric.md)
+  An object representing metrics about the amount of time the app is active.
+- [class MXAppExitMetric](mxappexitmetric.md)
+  An object representing metrics about the types of foreground and background app exits.
+- [class MXForegroundExitData](mxforegroundexitdata.md)
+  An object representing counts for the different types of foreground app exits.
+- [class MXMemoryMetric](mxmemorymetric.md)
+  An object representing metrics about the app’s memory use.
 
 
 ---

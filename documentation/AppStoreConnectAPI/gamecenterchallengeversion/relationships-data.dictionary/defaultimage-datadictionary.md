@@ -16,6 +16,7 @@ object GameCenterChallengeVersion.Relationships.DefaultImage
 
 ### Dictionaries
 - [object GameCenterChallengeVersion.Relationships.DefaultImage.Data](gamecenterchallengeversion/relationships-data.dictionary/defaultimage-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 

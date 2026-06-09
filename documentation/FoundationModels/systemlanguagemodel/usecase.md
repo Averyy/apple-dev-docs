@@ -21,13 +21,9 @@ struct UseCase
 ## Topics
 
 ### Getting the general use case
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-  Enhance the experience in your app by prompting an on-device large language model.
 - [static let general: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/general.md)
   A use case for general prompting.
 ### Getting the content tagging use case
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
-  Identify topics, actions, objects, and emotions in input text with a content tagging model.
 - [static let contentTagging: SystemLanguageModel.UseCase](systemlanguagemodel/usecase/contenttagging.md)
   A use case for content tagging.
 
@@ -40,8 +36,10 @@ struct UseCase
 
 ## See Also
 
-- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
-  Identify topics, actions, objects, and emotions in input text with a content tagging model.
+- [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
+  Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
+- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
+  Guardrails flag sensitive content from model input and output.
 
 
 ---

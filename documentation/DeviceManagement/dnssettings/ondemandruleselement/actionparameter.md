@@ -11,8 +11,6 @@ A dictionary that provides per-connection rules.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

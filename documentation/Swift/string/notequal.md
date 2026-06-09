@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: op
 
+Returns a Boolean value indicating whether two values are not equal.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -15,19 +17,21 @@
 ## Declaration
 
 ```swift
-static func != <RHS>(lhs: Self, rhs: RHS) -> Bool where RHS : StringProtocol
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
-## See Also
+#### Discussion
 
-- [static func == (String, String) -> Bool](string/==(_:_:).md)
-  Returns a Boolean value indicating whether two values are equal.
-- [static func == <RHS>(Self, RHS) -> Bool](string/==(_:_:)-8kzxf.md)
-- [static func != (Self, Self) -> Bool](string/!=(_:_:)-1bb05.md)
-  Returns a Boolean value indicating whether two values are not equal.
-- [static func ~= (String, Substring) -> Bool](string/~=(_:_:).md)
+Inequality is the inverse of equality. For any values `a` and `b`, `a != b` implies that `a == b` is `false`.
+
+This is the default implementation of the not-equal-to operator (`!=`) for any type that conforms to `Equatable`.
+
+## Parameters
+
+- `lhs`: A value to compare.
+- `rhs`: Another value to compare.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/string/!=(_:_:)-frzf)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/string/!=(_:_:)-9vqnx)*

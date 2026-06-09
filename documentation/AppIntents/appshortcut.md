@@ -22,7 +22,7 @@ struct AppShortcut
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 
 #### Overview
 
@@ -42,7 +42,6 @@ struct AppShortcut
 
 ## See Also
 
-- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
 - [enum AppShortcutPhraseToken](appshortcutphrasetoken.md)
@@ -59,6 +58,7 @@ struct AppShortcut
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 - [enum ShortcutTileColor](shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 
 
 ---

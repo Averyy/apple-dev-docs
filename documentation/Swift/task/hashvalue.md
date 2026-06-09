@@ -30,7 +30,7 @@ Hash values are not guaranteed to be equal across different executions of your p
 
 - [static func == (Task<Success, Failure>, Task<Success, Failure>) -> Bool](task/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](task/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](task/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func hash(into: inout Hasher)](task/hash(into:).md)
   Hashes the essential components of this value by feeding them into the given hasher.

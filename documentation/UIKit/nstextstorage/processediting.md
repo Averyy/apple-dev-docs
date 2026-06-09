@@ -9,7 +9,7 @@ Cleans up changes to the text storage object and notifies its delegate and layou
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

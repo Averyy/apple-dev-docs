@@ -99,7 +99,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
   Encodes a command to copy image data from a buffer into a texture with options for special texture formats.
 ### Encoding texture copy commands
 - [func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtl4computecommandencoder/copy(sourcetensor:sourceorigin:sourcedimensions:destinationtensor:destinationorigin:destinationdimensions:).md)
-  Encodes a command to copy data from a tensor instance into another.
+  Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
 - [func copy(sourceTexture: any MTLTexture, destinationTexture: any MTLTexture)](mtl4computecommandencoder/copy(sourcetexture:destinationtexture:).md)
   Encodes a command that copies data from a texture to another.
 - [func copy(sourceTexture: any MTLTexture, sourceSlice: Int, sourceLevel: Int, destinationTexture: any MTLTexture, destinationSlice: Int, destinationLevel: Int, sliceCount: Int, levelCount: Int)](mtl4computecommandencoder/copy(sourcetexture:sourceslice:sourcelevel:destinationtexture:destinationslice:destinationlevel:slicecount:levelcount:).md)
@@ -153,6 +153,9 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 ### Encoding performance measurement commands
 - [func writeTimestamp(granularity: MTL4TimestampGranularity, counterHeap: any MTL4CounterHeap, index: Int)](mtl4computecommandencoder/writetimestamp(granularity:counterheap:index:).md)
   Writes a GPU timestamp into a heap.
+### Instance Methods
+- [func copy(sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, sourcePlane: MTLTensorPlaneType, destinationTensor: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents, destinationPlane: MTLTensorPlaneType)](mtl4computecommandencoder/copy(sourcetensor:sourceorigin:sourcedimensions:sourceplane:destinationtensor:destinationorigin:destinationdimensions:destinationplane:).md)
+  Encodes a command to copy data from a slice of a plane of a tensor into a slice of a plane of another tensor.
 
 ## Relationships
 

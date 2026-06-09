@@ -15,8 +15,6 @@ var kCGFloatingWindowLevel: CGWindowLevel { get }
 
 ## See Also
 
-- [class let colorSpace: CFString](cgdisplaystream/colorspace.md)
-  This key specifies the color space of the output buffer. If this key is not included in the dictionary, the output buffer uses the same color space as the display. The value associated with this key must be a [`CGColorSpace`](cgcolorspace.md) for the desired color space.
 - [class let conversionBlackPointCompensation: CFString](cgcolor/conversionblackpointcompensation.md)
   An option for whether to apply black point compensation when converting between color profiles.
 - [var kCGDisplayBitsPerPixel: String](kcgdisplaybitsperpixel.md)
@@ -44,6 +42,8 @@ var kCGFloatingWindowLevel: CGWindowLevel { get }
   Specifies a CFBoolean value indicating that the I/O Kit stretched mode flag is set.
 - [var kCGDisplayModeIsTelevisionOutput: String](kcgdisplaymodeistelevisionoutput.md)
   Specifies a CFBoolean value indicating that the I/O Kit television output mode flag is set.
+- [var kCGDisplayModeUsableForDesktopGUI: String](kcgdisplaymodeusablefordesktopgui.md)
+  Specifies a CFBoolean value that indicates whether the display is suitable for use with the macOS graphical user interface. The criteria include factors such as sufficient width and height and adequate pixel depth.
 
 
 ---

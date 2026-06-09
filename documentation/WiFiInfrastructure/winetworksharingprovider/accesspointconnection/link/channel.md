@@ -8,6 +8,7 @@ A channel on which the Access Point is operating.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

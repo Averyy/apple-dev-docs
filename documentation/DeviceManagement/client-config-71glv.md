@@ -6,8 +6,7 @@
 Read client-specific information from the server.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 #### Discussion
 

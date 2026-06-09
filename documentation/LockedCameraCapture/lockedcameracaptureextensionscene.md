@@ -8,6 +8,7 @@ A protocol that provides the UI for the locked camera capture extension.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

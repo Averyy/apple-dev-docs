@@ -11,8 +11,6 @@ Remove the passcode from a device.
 - Mac Catalyst 4.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,9 +23,9 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, visionOS, watchOS |
-| User channel | NA |
-| Requires supervision | NA |
-| Allowed in user enrollment | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
 ##### Example Request and Response
@@ -106,7 +104,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ClearPasscodeCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

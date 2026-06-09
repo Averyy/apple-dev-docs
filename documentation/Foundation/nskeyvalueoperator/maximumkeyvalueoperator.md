@@ -34,6 +34,7 @@ static let maximumKeyValueOperator: NSKeyValueOperator
   The @distinctUnionOfSets array operator.
 - [static let completeWhenUserInactive: FileProtectionType](fileprotectiontype/completewhenuserinactive.md)
 - [static let inflectionConceptsKey: NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey/inflectionconceptskey.md)
+  A key for the inflection concepts in the formatting context dictionary.
 - [static let minimumKeyValueOperator: NSKeyValueOperator](nskeyvalueoperator/minimumkeyvalueoperator.md)
   The @min array operator.
 - [let NSOperationNotSupportedForKeyException: String](nsoperationnotsupportedforkeyexception.md)

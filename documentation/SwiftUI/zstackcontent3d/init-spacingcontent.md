@@ -9,6 +9,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init(spacing: CGFloat?, content: Content)
 ```
 

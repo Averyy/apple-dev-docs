@@ -14,6 +14,10 @@ Data that relates to power and performance measurements for an app, including it
 object xcodeMetrics.ProductData.MetricCategories.Metrics
 ```
 
+## Mentions
+
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+
 ## Topics
 
 ### Objects
@@ -27,7 +31,7 @@ object xcodeMetrics.ProductData.MetricCategories.Metrics
 ## Properties
 
 - `datasets` ([xcodeMetrics.ProductData.MetricCategories.Metrics.Datasets]): An array of datasets containing metric values by app version filtered by percentile and device type.
-- `goalKeys` ([xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys]): An array of terms used to classify a metric value, and the range of values for each classification.
+- `goalKeys` ([xcodeMetrics.ProductData.MetricCategories.Metrics.GoalKeys]): This property is deprecated. An array of terms used to classify a metric value, and the range of values for each classification.
 - `identifier` (string): The identifier of the specific metric within the contained metric category.
 - `unit` (xcodeMetrics.ProductData.MetricCategories.Metrics.Unit): The metric’s unit of measurement.
 

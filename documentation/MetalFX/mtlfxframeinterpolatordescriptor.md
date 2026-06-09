@@ -35,6 +35,8 @@ When you configure this descriptor, set the properties that determine the pixel 
   The height, in pixels, of the input motion and depth texture for the frame interpolator.
 - [var inputWidth: Int](mtlfxframeinterpolatordescriptor/inputwidth.md)
   The width, in pixels, of the input motion and depth texture for the frame interpolator.
+- [var isDistortionTextureEnabled: Bool](mtlfxframeinterpolatordescriptor/isdistortiontextureenabled.md)
+  A Boolean value that indicates whether the frame interpolator supports barrel distortion correction.
 - [var motionTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/motiontextureformat.md)
   The pixel format of the input motion texture for the frame interpolator you create with this descriptor.
 - [var outputHeight: Int](mtlfxframeinterpolatordescriptor/outputheight.md)
@@ -43,6 +45,8 @@ When you configure this descriptor, set the properties that determine the pixel 
   The pixel format of the output color texture for the frame interpolator you create with this descriptor.
 - [var outputWidth: Int](mtlfxframeinterpolatordescriptor/outputwidth.md)
   The width, in pixels, of the output color texture for the frame interpolator.
+- [var requiresPrevColorTexture: Bool](mtlfxframeinterpolatordescriptor/requiresprevcolortexture.md)
+  A Boolean value that indicates whether the frame interpolator requires the client to provide a previous color texture.
 - [var scaler: (any MTLFXFrameInterpolatableScaler)?](mtlfxframeinterpolatordescriptor/scaler.md)
 - [var uiTextureFormat: MTLPixelFormat](mtlfxframeinterpolatordescriptor/uitextureformat.md)
   The pixel format for the frame interpolator of an input texture containing your game’s custom UI.

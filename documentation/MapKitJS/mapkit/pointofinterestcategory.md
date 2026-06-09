@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: property
 
-The getter to use to access the point-of-interest category enumeration.
+An accessor for the point-of-interest category enumeration.
 
 **Availability**:
 - MapKit JS 5.33.1+
@@ -21,17 +21,23 @@ You must load the appropriate library first before accessing the getter, otherwi
 ## See Also
 
 - [AddressCategory](mapkit/addresscategory.md)
-  The getter to use to access the address category enumeration.
+  An accessor for the address category enumeration.
 - [AddressFilter](mapkit/addressfilter.md)
   The getter to use to access the address filter class.
 - [Annotation](mapkit/annotation.md)
   The getter to use to for access the annotation class.
+- [AnnotationCollisionMode](mapkit/annotationcollisionmode.md)
+  An accessor for the annotation collision mode enumeration.
+- [AnnotationDisplayPriority](mapkit/annotationdisplaypriority.md)
+  An accessor for the annotation display priority enumeration.
 - [BoundingRegion](mapkit/boundingregion.md)
   The getter to use to access the the bounding region class.
 - [CameraZoomRange](mapkit/camerazoomrange.md)
   The getter to use to access the camera zoom range class.
 - [CircleOverlay](mapkit/circleoverlay.md)
   The getter to use to access the circle overlay class.
+- [ColorScheme](mapkit/colorscheme.md)
+  An accessor for the color scheme enumeration.
 - [Coordinate](mapkit/coordinate.md)
   The getter to use to access the coordinate class.
 - [CoordinateRegion](mapkit/coordinateregion.md)
@@ -40,16 +46,10 @@ You must load the appropriate library first before accessing the getter, otherwi
   The getter to use to access the coordinate span class.
 - [Directions](mapkit/directions.md)
   The getter to use to access the directions class.
+- [DistanceUnitSystem](mapkit/distanceunitsystem.md)
+  An accessor for the distance unit system enumeration.
 - [FeatureVisibility](mapkit/featurevisibility.md)
-  The getter to use to access the feature-visibility enumeration.
-- [Geocoder](mapkit/geocoder.md)
-  The getter to use to access the geocoder class.
-- [ImageAnnotation](mapkit/imageannotation.md)
-  The getter to use to access the image annotation class.
-- [LineGradient](mapkit/linegradient.md)
-  The getter to use to access the line gradient class.
-- [LookAround](mapkit/lookaround.md)
-  The getter to use to access the look around class.
+  An accessor for the feature visibility enumeration.
 
 
 ---

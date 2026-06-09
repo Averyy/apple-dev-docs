@@ -40,6 +40,12 @@ struct Descriptor
   The number of indices to allocate space for.
 - [static let maxVertexBufferCount: Int](lowlevelmesh/descriptor-swift.struct/maxvertexbuffercount.md)
   The maximum number of separate buffers the system supports.
+### Creating a descriptor
+- [init(vertexCapacity: Int, vertexAttributes: [LowLevelMesh.Attribute], vertexLayouts: [LowLevelMesh.Layout], indexCapacity: Int, indexType: MTLIndexType, instanceCapacity: Int)](lowlevelmesh/descriptor-swift.struct/init(vertexcapacity:vertexattributes:vertexlayouts:indexcapacity:indextype:instancecapacity:).md)
+  Creates a descriptor for a low-level mesh.
+### Configuring instancing
+- [var instanceCapacity: Int](lowlevelmesh/descriptor-swift.struct/instancecapacity.md)
+  The maximum number of instances the mesh supports.
 
 ## Relationships
 

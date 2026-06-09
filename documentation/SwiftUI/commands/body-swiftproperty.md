@@ -16,7 +16,7 @@ The contents of the command hierarchy.
 ## Declaration
 
 ```swift
-@CommandsBuilder
+@ContentBuilder
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 

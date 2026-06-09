@@ -22,7 +22,7 @@ static func preferred(_ tint: Color) -> ListItemTint
 
 #### Discussion
 
-The system can override this tint effect, like when the system has a custom user accent color on macOS.
+On macOS, the system can override this tint with the person’s chosen accent color when one is set. Use [`fixed(_:)`](listitemtint/fixed(_:).md) to prevent the system from overriding the tint.
 
 ## Parameters
 

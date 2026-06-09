@@ -22,6 +22,8 @@ struct Descriptor
 ## Topics
 
 ### Initializers
+- [init(MTLTextureDescriptor)](lowleveltexture/descriptor-swift.struct/init(_:).md)
+  Create from a Metal texture descriptor.
 - [init(textureType: MTLTextureType, pixelFormat: MTLPixelFormat, width: Int, height: Int, depth: Int, mipmapLevelCount: Int, arrayLength: Int, textureUsage: MTLTextureUsage, swizzle: MTLTextureSwizzleChannels)](lowleveltexture/descriptor-swift.struct/init(texturetype:pixelformat:width:height:depth:mipmaplevelcount:arraylength:textureusage:swizzle:).md)
   Creates a descriptor for a low-level texture.
 ### Instance Properties
@@ -43,6 +45,12 @@ struct Descriptor
   An enumeration for the various options that determine how you can use a texture.
 - [var width: Int](lowleveltexture/descriptor-swift.struct/width.md)
   The width of the texture image for the base level mipmap, in pixels.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

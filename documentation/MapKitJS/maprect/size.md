@@ -11,7 +11,8 @@ The width and height of a rectangle, starting from the origin point.
 ## Declaration
 
 ```swift
-size: MapSize;
+get size(): MapSize;
+set size(value: MapSizeData);
 ```
 
 ## See Also

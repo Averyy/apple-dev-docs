@@ -39,9 +39,19 @@ The power-use categories are:
 - NFC
 - Other: A combination of the power in the above categories thatʼs too small to show in the list, plus any system power usage outside these categories.
 
+##### Review Energy Exception Reports
+
+When your app uses a significant amount of energy over a 24-hour period, the system generates an energy exception report. View aggregated exception reports in the Energy pane of the Xcode Organizer.
+
+Each report in the Report List shows the function that caused the exception and the percentage of total energy use it accounts for. Clicking a report shows a sample stack trace, as well as additional details in the Inspector, including operating system version, device model, the number of logs received, and a 14-day reporting trend.
+
+##### Get Coding Assistant Recommendations for Energy Issues
+
+After selecting an energy report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and energy-use context into the coding assistant to help you identify and fix the root cause of the excessive energy use.
+
 ##### Measure Your Running Apps Power Use in Xcode
 
-In Xcode, set the run destination to a device and choose Product > Run. For more information, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md).
+In Xcode, set the run destination to a device and choose Product > Run. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
 
 In the Debug navigator, show the debug gauges and click Energy Impact to see your app’s energy usage. The gauge shows the app’s average energy impact, and the pie chart shows how much each power use category contributes to energy use on the device. The timeline reports the instantaneous energy use associated with each category, along with the app’s life-cycle state and the device’s thermal condition.
 
@@ -53,11 +63,11 @@ Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to receiv
 
 | Power-use category | Metric |
 | --- | --- |
-| CPU | [`MXCPUMetric`](https://developer.apple.com/documentation/MetricKit/MXCPUMetric) |
-| Display | [`MXDisplayMetric`](https://developer.apple.com/documentation/MetricKit/MXDisplayMetric) |
-| GPU | [`MXGPUMetric`](https://developer.apple.com/documentation/MetricKit/MXGPUMetric) |
-| Location activity | [`MXLocationActivityMetric`](https://developer.apple.com/documentation/MetricKit/MXLocationActivityMetric) |
-| Network activity | [`MXNetworkTransferMetric`](https://developer.apple.com/documentation/MetricKit/MXNetworkTransferMetric) |
+| CPU | [`CPUTimeMetric`](https://developer.apple.com/documentation/MetricKit/CPUTimeMetric), [`CPUInstructionsCountMetric`](https://developer.apple.com/documentation/MetricKit/CPUInstructionsCountMetric) |
+| Display | [`PixelLuminanceMetric`](https://developer.apple.com/documentation/MetricKit/PixelLuminanceMetric) |
+| GPU | [`GPUTimeMetric`](https://developer.apple.com/documentation/MetricKit/GPUTimeMetric) |
+| Location activity | [`LocationActivityTimeMetric`](https://developer.apple.com/documentation/MetricKit/LocationActivityTimeMetric) |
+| Network activity | [`TotalWiFiUploadMetric`](https://developer.apple.com/documentation/MetricKit/TotalWiFiUploadMetric), [`TotalWiFiDownloadMetric`](https://developer.apple.com/documentation/MetricKit/TotalWiFiDownloadMetric), [`TotalCellularUploadMetric`](https://developer.apple.com/documentation/MetricKit/TotalCellularUploadMetric), [`TotalCellularDownloadMetric`](https://developer.apple.com/documentation/MetricKit/TotalCellularDownloadMetric) |
 
 ##### Profile Your Apps Power Use in Instruments
 

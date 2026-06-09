@@ -8,6 +8,7 @@ A unique value that is specific to your App and the use case a given connection 
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

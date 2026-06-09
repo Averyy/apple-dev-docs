@@ -16,6 +16,10 @@
 init()
 ```
 
+## See Also
+
+- [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](avlegiblemediaoptionsmenustate/init(enabled:reason:).md)
+
 
 ---
 

@@ -13,8 +13,6 @@ The command to get a list of the installed apps on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object InstalledApplicationListCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

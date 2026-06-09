@@ -85,8 +85,14 @@ See the Overview section above for header-level documentation.
   Type of the callback function used by DADiskUnmount().
 ### Constants
 - [Global Variables](global-variables.md)
+- [typealias DADiskClaimOptions](dadiskclaimoptions.md)
+  Options for DADiskClaim().
+- [typealias DADiskEjectOptions](dadiskejectoptions.md)
+  Options for DADiskEject().
 - [typealias DADiskMountOptions](dadiskmountoptions.md)
   Options for DADiskMount().
+- [typealias DADiskOptions](dadiskoptions.md)
+  Options for DADiskGetOptions() and DADiskSetOptions().
 - [typealias DADiskRenameOptions](dadiskrenameoptions.md)
   Options for DADiskRename().
 - [typealias DADiskUnmountOptions](dadiskunmountoptions.md)

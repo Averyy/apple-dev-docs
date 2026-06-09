@@ -36,6 +36,8 @@ CloudKit computes distance by drawing a direct line between the two locations th
 ### Accessing the Location Value
 - [var relativeLocation: CLLocation](cklocationsortdescriptor/relativelocation.md)
   The reference location for sorting records.
+### Initializers
+- [convenience init(key: String?, ascending: Bool, comparator: Comparator)](cklocationsortdescriptor/init(key:ascending:comparator:).md)
 
 ## Relationships
 

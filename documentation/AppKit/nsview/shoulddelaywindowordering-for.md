@@ -40,6 +40,8 @@ If, after delaying window ordering, the view actually initiates a dragging sessi
   The array of pasteboard drag types that the view can accept.
 - [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nsview/begindraggingsession(with:event:source:).md)
   Initiates a dragging session with a group of dragging items.
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+  Initiates a drag operation using a gesture recognizer.
 
 
 ---

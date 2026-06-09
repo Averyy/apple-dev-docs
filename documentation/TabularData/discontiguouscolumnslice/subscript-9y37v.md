@@ -30,7 +30,7 @@ subscript(position: Int) -> DiscontiguousColumnSlice<WrappedElement>.Element { g
   Accesses a contiguous range of elements.
 - [subscript<R>(R) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-4k2lh.md)
   Accesses a contiguous range of elements with a range expression.
-- [subscript((UnboundedRange_) -> ()) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-5xvit.md)
+- [subscript(UnboundedRange) -> DiscontiguousColumnSlice<WrappedElement>](discontiguouscolumnslice/subscript(_:)-5xvit.md)
   Accesses a contiguous range of elements with an unbounded range.
 
 

@@ -25,17 +25,14 @@ Refusal errors indicate that the model chose not to respond to a prompt. To make
 ```swift
 do {
     let session = LanguageModelSession()
-    let response = try await session.respond(to: "...", 
-                                             generating: MyGenerableStruct.self)
-} catch LanguageModelSession.GenerationError.refusal(let refusal, _) {
+    let response = try session.respond(to: "...")
+} catch error as LanguageModelSession.GenerationError.refusal(let refusal, _) {
     let message = try await refusal.explanation
     print(message)
 } catch {
     print("Something went wrong: \(error)")
 }
 ```
-
-> **Note**: Refusal errors can only be caught when you use guided generation.
 
 ## Topics
 
@@ -66,7 +63,7 @@ do {
 - [case rateLimited(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/ratelimited(_:).md)
   An error that indicates your session has been rate limited.
 - [case refusal(LanguageModelSession.GenerationError.Refusal, LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/refusal(_:_:).md)
-  An error that happens when the session refuses the request.
+  An error indicating that the model refused to answer.
 - [case concurrentRequests(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/concurrentrequests(_:).md)
   An error that happens if you attempt to make a session respond to a second prompt while it’s still responding to the first one.
 - [case unsupportedGuide(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedguide(_:).md)

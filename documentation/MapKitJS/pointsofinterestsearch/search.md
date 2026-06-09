@@ -1,4 +1,4 @@
-# search(callback, options)
+# search(options)
 
 **Framework**: MapKit JS  
 **Kind**: method
@@ -12,26 +12,23 @@ Fetches points of interest.
 
 ```swift
 search(
-        callback: PointsOfInterestSearchDelegate,
-        options?: PointsOfInterestSearchOptions,
-    ): number | undefined;
+    options?: PointsOfInterestSearchOptions,
+): Promise<PointsOfInterestSearchResponse>;
 ```
 
 #### Return Value
 
-This method returns a request ID (integer) that you can use with [`cancel(id)`](service/cancel.md) to cancel a pending request.
+A promise that resolves with a [`PointsOfInterestSearchResponse`](pointsofinterestsearchresponse.md) on success, or rejects with an `Error` on failure.
 
 #### Discussion
 
-The [`search(callback, options)`](pointsofinterestsearch/search.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
+The [`search(options)`](pointsofinterestsearch/search.md) method returns a set of points of interest within the region defined and matching the [`PointOfInterestFilter`](pointofinterestfilter.md).
 
-MapKit JS invokes the `callback` function on failure and success with two arguments, `error` and `data` that represent failure and success information, respectively. You may optionally provide a delegate object instead of a callback. If you call [`cancel(id)`](service/cancel.md) before MapKit JS responds, the system doesn’t call the callback or delegate.
+Pass an `AbortSignal` from an `AbortController` to the [`signal`](pointsofinterestsearchoptions/signal.md) option to allow the controller to cancel a pending request. When the controller aborts, the promise it returns rejects with a `DOMException` whose `name` is `"AbortError"`.
 
 ## Parameters
 
-- `callback`: A callback function or delegate object with the following parameters: - **`error` (Error)**: An error code and descriptive message.
-- **`data` ([`PointsOfInterestSearchResponse`](pointsofinterestsearchresponse.md))**: An object parsed from server-returned JSON.
-- `options`: A [`PointsOfInterestSearchOptions`](pointsofinterestsearchoptions.md) object.
+- `options`: A [`PointsOfInterestSearchOptions`](pointsofinterestsearchoptions.md) object that can overwrite the same options set on the property or that you supplied to the [`PointsOfInterestSearch`](pointsofinterestsearch.md) constructor.
 
 ## See Also
 

@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](unicode/utf32/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](unicode/utf32/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

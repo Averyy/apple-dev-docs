@@ -48,16 +48,7 @@ struct PresentationSlideEntity: AppEntity {
 }
 ```
 
-For more information about the `.presentation` app intent domain, see [`Making presentation actions available to Siri and Apple Intelligence`](making-presentation-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/presentationentity/document.md)
-  The app entity describes a presentation.
-- [var template: some AssistantSchemas.Entity](assistantschemas/presentationentity/template.md)
-  The app entity describes a template for a presentation.
-- [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
-  Assistant schema conformance for app entities that describe presentation data.
+For more information about the `.presentation` app intent domain, see doc:Making-presentation-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

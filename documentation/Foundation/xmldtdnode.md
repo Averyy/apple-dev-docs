@@ -35,6 +35,7 @@ Setting the object value or string value of an [`XMLDTDNode`](xmldtdnode.md) obj
   Returns the receiver’s DTD kind.
 ### Managing DTD Identifiers
 - [var isExternal: Bool](xmldtdnode/isexternal.md)
+  True if the system id is set. Valid for entities and notations.
 - [var notationName: String?](xmldtdnode/notationname.md)
   Returns the name of the notation associated with the receiver.
 - [var publicID: String?](xmldtdnode/publicid.md)

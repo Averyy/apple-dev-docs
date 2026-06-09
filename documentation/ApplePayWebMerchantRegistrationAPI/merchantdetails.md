@@ -33,7 +33,7 @@ The following example shows the structure of a JSON object that contains the mer
 
 To compare a payment platform integrator ID or merchant ID with the value that this request returns in the `encryptTo` string, create a SHA-256 hash of the payment platform integrator ID or merchant ID first. In the Terminal app, enter the following command, replacing `com.your.id` with the payment platform integrator ID or merchant ID:
 
-```other
+```zsh
 echo -n com.your.id | openssl dgst -sha256
 ```
 

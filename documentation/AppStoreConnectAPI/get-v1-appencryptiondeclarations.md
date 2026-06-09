@@ -1,4 +1,4 @@
-# List App Encryption Declarations
+# List app encryption declarations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -75,32 +75,32 @@ https://api.appstoreconnect.apple.com/v1/appEncryptionDeclarations
 
 ## Parameters
 
-- `fields[appEncryptionDeclarations]` ([string]): Fields to return for included related types.
-- `fields[apps]` ([string]): Fields to return for included related types.
-- `filter[app]` ([string]): Attributes, relationships, and IDs by which to filter.
-- `filter[builds]` ([string]): Attributes, relationships, and IDs by which to filter.
-- `filter[platform]` ([string]): Attributes, relationships, and IDs by which to filter.
-- `include` ([string]): Relationship data to include in the response.
-- `limit` (integer): Number of resources to return.
-- `fields[appEncryptionDeclarationDocuments]` ([string])
-- `limit[builds]` (integer)
+- `fields[appEncryptionDeclarations]` ([string]): Additional fields to include for each app encryption declaration resource returned by the response.
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+- `filter[app]` ([string]): Filter the returned app encryption declarations by app.
+- `filter[builds]` ([string]): Filter the returned app encryption declarations by builds.
+- `filter[platform]` ([string]): Filter the returned app encryption declarations by platform.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app encryption declaration resources to return.
+- `fields[appEncryptionDeclarationDocuments]` ([string]): Additional fields to include for each app encryption declaration document resource returned by the response.
+- `limit[builds]` (integer): The maximum number of related builds resources to return.
 - `fields[builds]` ([string])
 
 ## See Also
 
-- [Read App Encryption Declaration Information](get-v1-appencryptiondeclarations-_id_.md)
+- [Read app encryption declaration information](get-v1-appencryptiondeclarations-_id_.md)
   Get information about a specific app encryption declaration.
-- [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an App’s Encryption Declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
-- [Read the App Information of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-app.md)
+- [Read the app information of an app encryption declaration](get-v1-appencryptiondeclarations-_id_-app.md)
   Get the app information from a specific app encryption declaration.
 - [Read the App ID of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
   Get the app id from a specific app encryption declaration.
-- [Read a Specific App Encryption Declaration Document](get-v1-appencryptiondeclarationdocuments-_id_.md)
+- [Read a specific app encryption declaration document](get-v1-appencryptiondeclarationdocuments-_id_.md)
   Get detailed information about a specified App Encryption Declaration document.
-- [Read the Declaration Document for an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
+- [Read the declaration document for an app encryption declaration](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md)
   Read the associated document for a specific App Encryption Declaration.
 - [Read the App ID of an App Encryption Declaration](get-v1-appencryptiondeclarations-_id_-relationships-app.md)
   Get the app id from a specific app encryption declaration.

@@ -9,7 +9,6 @@ Creates an electric HVAC load event.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -23,17 +22,10 @@ init(timestamp: Date, measurement: ElectricHVACLoadEvent.ElectricalMeasurement, 
 
 ## Parameters
 
-- `timestamp`: The timestamp for when the event occurred.
+- `timestamp`: The timestamp for when the event occurs.
 - `measurement`: The electricity consumption or generation of a device.
 - `session`: The session information.
 - `deviceID`: The device’s unique stable identifier.
-
-## See Also
-
-- [ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.struct.md)
-  A session that tracks the event.
-- [ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/electricalmeasurement.md)
-  A description of the electricity consumed by a device.
 
 
 ---

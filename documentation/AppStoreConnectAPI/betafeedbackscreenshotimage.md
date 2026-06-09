@@ -22,9 +22,9 @@ object BetaFeedbackScreenshotImage
 ## See Also
 
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)
-  The data structure that represents a `BetaFeedbackScreenshotSubmission` resource.
+  A screenshot and feedback note submitted by a TestFlight beta tester while testing a specific build.
 - [object BetaFeedbackScreenshotSubmissionResponse](betafeedbackscreenshotsubmissionresponse.md)
-  A response that contains a single `BetaFeedbackScreenshotSubmission` resource.
+  A response containing a single screenshot and feedback note submitted by a TestFlight beta tester.
 - [object BetaFeedbackScreenshotSubmissionsResponse](betafeedbackscreenshotsubmissionsresponse.md)
 
 

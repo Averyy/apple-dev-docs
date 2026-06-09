@@ -188,9 +188,13 @@ if (!success) {
 - [init(fileURLWithPath: String, isDirectory: Bool)](nsurl/init(fileurlwithpath:isdirectory:).md)
   Initializes a newly created NSURL referencing the local file or directory at `path`.
 - [class func fileURL(withPath: String, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [init(fileURLWithPath: String, relativeTo: URL?)](nsurl/init(fileurlwithpath:relativeto:).md)
+  Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String, isDirectory: Bool, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:isdirectory:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativeto:).md)
+  Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String) -> URL](nsurl/fileurl(withpath:).md)
   Initializes and returns a newly created NSURL object as a file URL with a specified path.
 - [init(fileURLWithPath: String)](nsurl/init(fileurlwithpath:).md)
@@ -208,9 +212,13 @@ if (!success) {
 - [init(fileURLWithFileSystemRepresentation: UnsafePointer<CChar>, isDirectory: Bool, relativeTo: URL?)](nsurl/init(fileurlwithfilesystemrepresentation:isdirectory:relativeto:).md)
   Initializes a URL object with a C string representing a local file system path.
 - [class func absoluteURL(withDataRepresentation: Data, relativeTo: URL?) -> URL](nsurl/absoluteurl(withdatarepresentation:relativeto:).md)
+  Initializes and returns a newly created absolute NSURL using the contents of the given data, relative to a base URL.
 - [init(absoluteURLWithDataRepresentation: Data, relativeTo: URL?)](nsurl/init(absoluteurlwithdatarepresentation:relativeto:).md)
+  Initializes a newly created absolute NSURL using the contents of the given data, relative to a base URL.
 - [init(dataRepresentation: Data, relativeTo: URL?)](nsurl/init(datarepresentation:relativeto:).md)
+  Initializes a newly created NSURL using the contents of the given data, relative to a base URL.
 - [var dataRepresentation: Data](nsurl/datarepresentation.md)
+  The data representation of the URL’s relativeString.
 ### Querying an NSURL
 - [func checkResourceIsReachableAndReturnError(NSErrorPointer) -> Bool](nsurl/checkresourceisreachableandreturnerror(_:).md)
   Returns whether the resource pointed to by a file URL can be reached.

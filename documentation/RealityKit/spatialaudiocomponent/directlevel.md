@@ -16,7 +16,7 @@ The level of the direct unreverberated signal that an entity emits.
 ## Declaration
 
 ```swift
-var directLevel: Audio.Decibel
+var directLevel: Audio.Decibel { get set }
 ```
 
 #### Discussion

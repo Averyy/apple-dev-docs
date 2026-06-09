@@ -18,7 +18,7 @@ Presents a confirmation dialog with a message when a given condition is true, us
 
 ```swift
 nonisolated
-func confirmationDialog<A, M>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ViewBuilder actions: () -> A, @ViewBuilder message: () -> M) -> some View where A : View, M : View
+func confirmationDialog<A, M>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
 ```
 
 #### Discussion
@@ -59,8 +59,8 @@ Dialogs include a standard dismiss action by default. If you provide a button wi
 - `title`: The title of the dialog.
 - `isPresented`: A binding to a Boolean value that determines whether to present the dialog. When the user presses or taps the dialog’s default action button, the system sets this value to `false`, dismissing the dialog.
 - `titleVisibility`: The visibility of the dialog’s title. The default value is [`Visibility.automatic`](visibility/automatic.md).
-- `actions`: A view builder returning the dialog’s actions.
-- `message`: A view builder returning the message for the dialog.
+- `actions`: A [`ContentBuilder`](contentbuilder.md) returning the dialog’s actions.
+- `message`: A [`ContentBuilder`](contentbuilder.md) returning the message for the dialog.
 
 ## See Also
 

@@ -25,7 +25,7 @@ protocol NSKeyedUnarchiverDelegate : NSObjectProtocol
 ### Decoding Objects
 - [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](nskeyedunarchiverdelegate/unarchiver(_:cannotdecodeobjectofclassname:originalclasses:).md)
   Informs the delegate that the class with a given name is not available during decoding.
-- [func unarchiver(NSKeyedUnarchiver, didDecode: Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
+- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
   Informs the delegate that a given object has been decoded.
 - [func unarchiver(NSKeyedUnarchiver, willReplace: Any, with: Any)](nskeyedunarchiverdelegate/unarchiver(_:willreplace:with:).md)
   Informs the delegate that one object is being substituted for another.

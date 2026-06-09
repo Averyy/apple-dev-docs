@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Whether the version has a thumbnail image available. Thumbnails for versions from +getNonlocalVersionsOfItemAtURL:completionHandler: may not immediately be available. As soon as it becomes available, this property will change from NO to YES. You can use KVO to be notified of this change. If a thumbnail is available, you can access it using NSURLThumbnailKey or NSURLThumbnailDictionaryKey.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

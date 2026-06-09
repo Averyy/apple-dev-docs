@@ -30,6 +30,8 @@ struct Percent
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(FloatingPointFormatStyle<Value>.Percent.Configuration.Grouping) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(FloatingPointFormatStyle<Value>.Percent.Configuration.Notation) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(FloatingPointFormatStyle<Value>.Percent.Configuration.Precision) -> FloatingPointFormatStyle<Value>.Percent](floatingpointformatstyle/percent/precision(_:).md)
@@ -44,6 +46,9 @@ struct Percent
   The type the format style uses for configuration settings.
 - [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
+### Formatting floating-point percent values
+- [func format(Value) -> String](floatingpointformatstyle/percent/format(_:).md)
+  Formats an floating-point value, using this style.
 ### Creating attributed strings
 - [var attributed: FloatingPointFormatStyle<Value>.Attributed](floatingpointformatstyle/percent/attributed.md)
   An attributed format style based on the floating-point percent format style.
@@ -52,6 +57,16 @@ struct Percent
 ### Accessing style properties
 - [var locale: Locale](floatingpointformatstyle/percent/locale.md)
   The locale of the format style.
+### Parsing floating-point percent values
+- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>.Percent>](floatingpointformatstyle/percent/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating percent values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](floatingpointformatstyle/percent/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](floatingpointformatstyle/percent/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](floatingpointformatstyle/percent/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](floatingpointformatstyle/percent/parseableformatstyle-implementations.md)
 
 ## Relationships
 

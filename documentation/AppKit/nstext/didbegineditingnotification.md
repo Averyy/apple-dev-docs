@@ -18,6 +18,8 @@ class let didBeginEditingNotification: NSNotification.Name
 
 The notification object is the notifying `NSText` object. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSTextView.DidBeginEditingMessage`](nstextview/didbegineditingmessage.md).
+
 ## See Also
 
 - [class let didChangeNotification: NSNotification.Name](nstext/didchangenotification.md)

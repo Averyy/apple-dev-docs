@@ -31,7 +31,7 @@ object BetaAppClipInvocationCreateRequest.Data
 ## See Also
 
 - [object BetaAppClipInvocationLocalizationInlineCreate](betaappclipinvocationlocalizationinlinecreate.md)
-  The data structure that represents a Beta App Clip Invocation Localization Inline Creates resource.
+  An inline object for specifying a localized title for a beta App Clip invocation within a parent create or update request.
 
 
 ---

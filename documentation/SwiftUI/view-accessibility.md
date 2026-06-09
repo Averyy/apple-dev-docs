@@ -42,6 +42,8 @@ To learn more about adding accessibility features to your app, see [`Accessibili
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityActions<Content>(() -> Content) -> some View](view/accessibilityactions(_:).md)
   Adds multiple accessibility actions to the view.
+- [func accessibilityActions<Content>(category: AccessibilityActionCategory, () -> Content) -> some View](view/accessibilityactions(category:_:).md)
+  Adds multiple accessibility actions to the view with a specific category. Actions allow assistive technologies, such as VoiceOver, to interact with the view by invoking the action and are grouped by their category. When multiple action modifiers with an equal category are applied to the view, the actions are combined together.
 - [func accessibilityAction(named:_:)](view/accessibilityaction(named:_:).md)
   Adds an accessibility action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityAction<Label>(action: () -> Void, label: () -> Label) -> some View](view/accessibilityaction(action:label:).md)
@@ -56,6 +58,8 @@ To learn more about adding accessibility features to your app, see [`Accessibili
   Adds an accessibility adjustable action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
 - [func accessibilityScrollAction((Edge) -> Void) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityscrollaction(_:).md)
   Adds an accessibility scroll action to the view. Actions allow assistive technologies, such as the VoiceOver, to interact with the view by invoking the action.
+- [func accessibilityScrollStatus(_:isEnabled:)](view/accessibilityscrollstatus(_:isenabled:).md)
+  Changes the announcement provided by accessibility technologies when a user scrolls a scroll view within this view.
 ### Gestures
 - [func accessibilityActivationPoint(_:)](view/accessibilityactivationpoint(_:).md)
   The activation point for an element is the location assistive technologies use to initiate gestures.
@@ -113,6 +117,8 @@ To learn more about adding accessibility features to your app, see [`Accessibili
   Modifies this view by binding its accessibility element’s focus state to the given boolean state value.
 - [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](view/accessibilityfocused(_:equals:).md)
   Modifies this view by binding its accessibility element’s focus state to the given state value.
+- [func accessibilityDefaultFocus<Value>(AccessibilityFocusState<Value>.Binding, Value) -> some View](view/accessibilitydefaultfocus(_:_:).md)
+  Defines a region in which default accessibility focus is evaluated by assigning a value to a given accessibility focus state binding.
 ### Traits
 - [func accessibilityAddTraits(AccessibilityTraits) -> ModifiedContent<Self, AccessibilityAttachmentModifier>](view/accessibilityaddtraits(_:).md)
   Adds the given traits to the view.
@@ -153,6 +159,11 @@ To learn more about adding accessibility features to your app, see [`Accessibili
   Adds a quick action to be shown by the system when active.
 - [func accessibilityQuickAction<Style, Content>(style: Style, isActive: Binding<Bool>, content: () -> Content) -> some View](view/accessibilityquickaction(style:isactive:content:).md)
   Adds a quick action to be shown by the system when active.
+### Using assistive access
+- [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
 
 ## See Also
 

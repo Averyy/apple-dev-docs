@@ -16,7 +16,7 @@ class RouteStep
 
 #### Overview
 
-A [`RouteStep`](routestep.md) encapsulates information for a discrete segment of a route. A [`Route`](route.md) object’s [`steps`](route/steps.md) property is an array of [`RouteStep`](routestep.md) objects. You don’t instantiate [`RouteStep`](routestep.md) objects directly; MapKit JS returns them as part of the [`DirectionsResponse`](directionsresponse.md).
+A [`RouteStep`](routestep.md) encapsulates information for an individual segment of a route. A [`Route`](route.md) object’s [`steps`](route/steps.md) property is an array of [`RouteStep`](routestep.md) objects. You don’t instantiate [`RouteStep`](routestep.md) objects directly; MapKit JS returns them as part of the [`DirectionsResponse`](directionsresponse.md).
 
 ## Topics
 
@@ -30,17 +30,15 @@ A [`RouteStep`](routestep.md) encapsulates information for a discrete segment of
   The step distance, in meters.
 - [transportType](routestep/transporttype.md)
   The transport type of the step.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 ## See Also
 
-- [route(request, callback)](directions/route.md)
+- [route(request)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
 - [interface DirectionsRequest](directionsrequest.md)
   The requested start and end points for a route, as well as the planned mode of transportation.
 - [interface DirectionsResponse](directionsresponse.md)
-  The directions and estimated travel time that return for a route.
+  The directions and estimated travel time for a route.
 - [class Route](route.md)
   Information about a route, including step-by-step instructions, distance, and estimated travel time.
 

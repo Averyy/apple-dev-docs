@@ -9,7 +9,6 @@ A type that represents the mobile driver’s license’ DHS (U.S. Department of 
 - iOS 17.2+
 - iPadOS 17.2+
 - Mac Catalyst 17.2+
-- visionOS 1.2+
 
 ## Declaration
 

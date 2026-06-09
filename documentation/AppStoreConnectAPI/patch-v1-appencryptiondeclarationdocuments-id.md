@@ -1,4 +1,4 @@
-# Modify an App Encryption Declaration Document
+# Modify an app encryption declaration document
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,11 +14,11 @@ Commit an App Encryption Declaration Document after uploading it.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List App Encryption Declarations`](get-v1-appencryptiondeclarations.md) response, you will need to use the include `appEncryptionDeclarationDocument.`
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app encryption declaration document resource ID from the [`Read the declaration document for an app encryption declaration`](get-v1-appencryptiondeclarations-_id_-appencryptiondeclarationdocument.md) response.
 
 ## See Also
 
-- [Upload an App Encryption Declaration Document](post-v1-appencryptiondeclarationdocuments.md)
+- [Upload an app encryption declaration document](post-v1-appencryptiondeclarationdocuments.md)
   Add an App Encryption Declaration Document to an existing App Encryption Declaration.
 
 

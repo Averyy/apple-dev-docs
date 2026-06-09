@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe documents.
 protocol ReaderEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making document reader actions available to Siri and Apple Intelligence](making-document-reader-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -39,13 +35,6 @@ protocol ReaderEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/readerentity/document.md)
-  The app entity describes a document.
-- [var page: some AssistantSchemas.Entity](assistantschemas/readerentity/page.md)
-  The app entity describes a page.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+A 4-bit signed integer format data type.
+
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+

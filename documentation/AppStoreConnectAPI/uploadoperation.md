@@ -18,6 +18,7 @@ object UploadOperation
 
 ### Objects
 - [object HttpHeader](httpheader.md)
+  A name-value pair representing an HTTP header included in an upload operation request.
 
 ## Properties
 
@@ -36,9 +37,9 @@ object UploadOperation
 - [object AppPreviewUpdateRequest](apppreviewupdaterequest.md)
   The request body you use to update an App Preview.
 - [object AppPreviewResponse](apppreviewresponse.md)
-  A response that contains a single App Previews resource.
+  The response body for endpoints that create, read, or modify an app preview video.
 - [object AppPreviewsResponse](apppreviewsresponse.md)
-  A response that contains a list of App Preview resources.
+  The response body for endpoints that list app preview videos in a preview set.
 - [type PreviewType](previewtype.md)
   String that represents the display type of an app preview.
 - [object PreviewFrameImage](previewframeimage.md)

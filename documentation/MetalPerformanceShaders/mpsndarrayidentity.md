@@ -26,6 +26,9 @@ class MPSNDArrayIdentity
 - [func reshape(with: (any MTLComputeCommandEncoder)?, commandBuffer: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:commandbuffer:sourcearray:shape:destinationarray:).md)
 - [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:sourcearray:dimensioncount:dimensionsizes:destinationarray:).md)
 - [func reshape(with: (any MTLCommandBuffer)?, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray?) -> MPSNDArray?](mpsndarrayidentity/reshape(with:sourcearray:shape:destinationarray:).md)
+- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, dimensionCount: Int, dimensionSizes: UnsafeMutablePointer<Int>, destinationArray: MPSNDArray)](mpsndarrayidentity/reshape(withmtl4commandencoder:sourcearray:dimensioncount:dimensionsizes:destinationarray:).md)
+- [func reshape(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, shape: [NSNumber], destinationArray: MPSNDArray)](mpsndarrayidentity/reshape(withmtl4commandencoder:sourcearray:shape:destinationarray:).md)
+- [func reshape(withSourceArray: MPSNDArray, shape: [NSNumber]) -> MPSNDArray?](mpsndarrayidentity/reshape(withsourcearray:shape:).md)
 
 ## Relationships
 

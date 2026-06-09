@@ -8,6 +8,30 @@ Learn about important changes to UIKit.
 
 Browse notable changes in [`UIKit`](https://developer.apple.com/documentation/UIKit).
 
+#### June 2026
+
+##### General
+
+- Align sensor data from Core Location and Core Motion with your app’s UI orientation by setting a [`UIView`](https://developer.apple.com/documentation/UIKit/UIView) as the body of a [`CLLocationManager`](https://developer.apple.com/documentation/CoreLocation/CLLocationManager) or [`CMMotionManager`](https://developer.apple.com/documentation/CoreMotion/CMMotionManager) instance.
+- Use [`UICollectionViewCompositionalLayoutSectionProvider`](https://developer.apple.com/documentation/UIKit/UICollectionViewCompositionalLayoutSectionProvider) closures as part of automatic observation tracking to automatically invalidate and update compositional layouts when observable objects change.
+- Use [`UIRefreshControl`](https://developer.apple.com/documentation/UIKit/UIRefreshControl) and [`UIStepper`](https://developer.apple.com/documentation/UIKit/UIStepper) in Mac apps built with Mac Catalyst. These controls are now fully supported in the Mac idiom.
+
+##### App Life Cycle
+
+- Adopt the UIKit scene-based life cycle using the guidance in [`Transitioning to the UIKit scene-based life cycle`](https://developer.apple.com/documentation/UIKit/transitioning-to-the-uikit-scene-based-life-cycle). Starting in iOS 27, apps built with the latest SDK must use the scene-based life cycle or they fail to launch.
+
+##### Drag and Drop
+
+- Control drag initiation timing in gesture-rich views by configuring [`UIDragInteraction`](https://developer.apple.com/documentation/UIKit/UIDragInteraction). Use [`allowsPointerDragBeforeLiftDelay`](https://developer.apple.com/documentation/UIKit/UIDragInteraction/allowsPointerDragBeforeLiftDelay) to independently control when pointer-initiated drags begin.
+
+##### Text Views
+
+- Override viewport layout methods directly in a [`UITextView`](https://developer.apple.com/documentation/UIKit/UITextView) subclass by conforming to [`NSTextViewportLayoutControllerDelegate`](https://developer.apple.com/documentation/UIKit/NSTextViewportLayoutControllerDelegate).
+- Register a [`UITextAttachmentViewProviderReusePolicy`](https://developer.apple.com/documentation/UIKit/UITextAttachmentViewProviderReusePolicy) on `UITextView` to retain attachment views during scrolling and editing, preventing flicker and preserving view state.
+- Use [`NSTextTable`](https://developer.apple.com/documentation/UIKit/NSTextTable), [`NSTextBlock`](https://developer.apple.com/documentation/UIKit/NSTextBlock), and [`NSTextTableBlock`](https://developer.apple.com/documentation/UIKit/NSTextTableBlock) to represent table structures in attributed strings.
+- Access paragraph text blocks using [`textBlocks`](https://developer.apple.com/documentation/UIKit/NSParagraphStyle/textBlocks).
+- Use [`NSTextViewportRenderingSurface`](https://developer.apple.com/documentation/UIKit/NSTextViewportRenderingSurface) to render text in custom views and layers, and [`NSTextViewportRenderingSurfaceKey`](https://developer.apple.com/documentation/UIKit/NSTextViewportRenderingSurfaceKey) to identify them for caching.
+
 #### June 2025
 
 ##### General

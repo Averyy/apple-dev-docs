@@ -25,7 +25,7 @@ struct RealityViewLayoutOption
 
 #### Overview
 
-Pass in a `RealityViewLayoutOption` when using the `RealityView/realityViewLayoutBehavior(_:)->View` modifier:
+Pass in a `RealityViewLayoutOption` when using the [`realityViewLayoutBehavior(_:)`](https://developer.apple.com/documentation/SwiftUI/View/realityViewLayoutBehavior(_:)) modifier:
 
 ```swift
 struct ModelWrapperView: View {

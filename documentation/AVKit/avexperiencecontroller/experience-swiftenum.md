@@ -11,6 +11,7 @@ The types of experiences the system supports.
 ## Declaration
 
 ```swift
+@preconcurrency
 enum Experience
 ```
 
@@ -23,17 +24,17 @@ enum Experience
   An experience where the system places the video outside of its original container.
 - [AVExperienceController.Experience.multiview](avexperiencecontroller/experience-swift.enum/multiview.md)
   An experience where multiple videos play together.
-### Enumeration Cases
 - [AVExperienceController.Experience.immersive](avexperiencecontroller/experience-swift.enum/immersive.md)
   Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

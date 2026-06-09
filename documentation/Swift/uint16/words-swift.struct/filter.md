@@ -17,7 +17,7 @@ Returns an array containing, in order, the elements of the sequence that satisfy
 ## Declaration
 
 ```swift
-func filter(_ isIncluded: (Self.Element) throws -> Bool) rethrows -> [Self.Element]
+func filter<E>(_ isIncluded: (Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element] where E : Error
 ```
 
 #### Return Value

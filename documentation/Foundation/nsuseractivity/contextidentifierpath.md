@@ -24,8 +24,17 @@ If you receive an [`NSUserActivity`](nsuseractivity.md) instance that has its [`
 
 ## See Also
 
+- [var appClipActivationPayload: APActivationPayload?](nsuseractivity/appclipactivationpayload.md)
+  An object containing the payload information that launches an App Clip.
+- [var detectedBarcodeDescriptor: CIBarcodeDescriptor?](nsuseractivity/detectedbarcodedescriptor.md)
+  The barcode that the system scanner passes in.
+- [var mapItem: MKMapItem!](nsuseractivity/mapitem.md)
+  Attaches the specified map item to a user activity object.
+- [var ndefMessagePayload: NFCNDEFMessage](nsuseractivity/ndefmessagepayload.md)
+  The NDEF message read by the system in the background.
 - [var isClassKitDeepLink: Bool](nsuseractivity/isclasskitdeeplink.md)
   A Boolean value that indicates whether a user activity represents a ClassKit context.
+- [func widgetConfigurationIntent<Intent>(of: Intent.Type) -> Intent?](nsuseractivity/widgetconfigurationintent(of:).md)
 
 
 ---

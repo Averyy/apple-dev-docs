@@ -12,8 +12,8 @@ The method MapKit JS calls when the framework creates a map feature annotation.
 
 ```swift
 annotationForMapFeature?: (
-        mapFeatureAnnotation: MapFeatureAnnotation,
-    ) => Annotation | undefined;
+    mapFeatureAnnotation: MapFeatureAnnotation,
+) => Annotation | undefined;
 ```
 
 #### Discussion

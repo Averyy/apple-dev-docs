@@ -11,7 +11,7 @@ An object that describes map feature annotation images.
 ## Declaration
 
 ```swift
-class MapFeatureAnnotationGlyphImage
+class MapFeatureAnnotationGlyphImage implements ImageDelegate
 ```
 
 #### Overview
@@ -23,6 +23,11 @@ class MapFeatureAnnotationGlyphImage
 ### Getting image URLs
 - [getImageUrl(scale, callback)](mapfeatureannotationglyphimage/getimageurl.md)
   Returns the image URL of the map feature.
+
+## Relationships
+
+### Conforms To
+- [ImageDelegate](imagedelegate.md)
 
 ## See Also
 
@@ -36,10 +41,6 @@ class MapFeatureAnnotationGlyphImage
   An object that fetches points of interest within a specified region.
 - [class MapFeatureAnnotation](mapfeatureannotation.md)
   An object that represents a map feature that the user selects.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
-  Point-of-interest categories.
-- [const MapFeatureType](mapfeaturetype.md)
-  Values that describe the feature type of a point of interest.
 
 
 ---

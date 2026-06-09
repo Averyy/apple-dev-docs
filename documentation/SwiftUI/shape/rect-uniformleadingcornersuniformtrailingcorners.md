@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-A rectangle shape that is aligned inside the frame of the view containing it. A corner style will be uniformly applied to the leading two corners, while another corner style will be uniformly applied to the trailing two.
+Creates a rectangle with a corner style uniformly set on the two leading corners, and another style uniformly set on the two trailing corners.
 
 **Availability**:
 - iOS 26.0+
@@ -20,10 +20,19 @@ A rectangle shape that is aligned inside the frame of the view containing it. A 
 static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self
 ```
 
+#### Discussion
+
+For the two leading corners and two trailing corners, the system calculates the radius for each corner first. Then, it selects the largest leading radius and applies it to each leading corner, and it selects the largest trailing radius and applies it to each trailing corner to achieve the symmetric look.
+
 ## Parameters
 
-- `uniformLeadingCorners`: The corner style to be applied on the leading two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
-- `uniformTrailingCorners`: The corner style to be applied on the trailing two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
+- `uniformLeadingCorners`: The corner style to apply uniformly to the two leading corners.
+- `uniformTrailingCorners`: The corner style to apply uniformly to the two trailing corners.
+
+## See Also
+
+- [init(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style)](concentricrectangle/init(uniformleadingcorners:uniformtrailingcorners:).md)
+  Creates a rectangle with a corner style set on the leading two corners uniformly, and another style set on the trailing two corners uniformly.
 
 
 ---

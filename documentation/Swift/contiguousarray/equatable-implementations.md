@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](contiguousarray/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](contiguousarray/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ContiguousArray<Element>, ContiguousArray<Element>) -> Bool](contiguousarray/==(_:_:).md)
   Returns a Boolean value indicating whether two arrays contain the same elements in the same order.

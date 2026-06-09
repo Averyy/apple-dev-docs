@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion
@@ -34,4 +34,4 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/taskpriority/!=(_:_:)-60fd)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/taskpriority/!=(_:_:)-6t582)*

@@ -1,4 +1,4 @@
-# List and Download Profiles
+# List and download profiles
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -30,7 +30,7 @@ Find and list provisioning profiles and download their data.
 
 ## See Also
 
-- [Read and Download Profile Information](get-v1-profiles-_id_.md)
+- [Read and download profile information](get-v1-profiles-_id_.md)
   Get information for a specific provisioning profile and download its data.
 
 

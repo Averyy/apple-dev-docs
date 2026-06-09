@@ -8,6 +8,7 @@ Describes the cadence at which an alarm will repeat, if any.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

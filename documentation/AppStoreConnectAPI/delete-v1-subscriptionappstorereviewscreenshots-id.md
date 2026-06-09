@@ -1,4 +1,4 @@
-# Delete a Review Screenshot for an Auto-Renewable Subscription
+# Delete a review screenshot for an auto-renewable subscription
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,11 +18,11 @@ Delete an image that you uploaded for review of an auto-renewable subscription.
 
 ## See Also
 
-- [Read Subscription Review Screenshot Information](get-v1-subscriptionappstorereviewscreenshots-_id_.md)
+- [Read subscription review screenshot information](get-v1-subscriptionappstorereviewscreenshots-_id_.md)
   Get the information about a review screenshot for an auto-renewable subscription.
-- [Create a Review Screenshot for an Auto-Renewable Subscription](post-v1-subscriptionappstorereviewscreenshots.md)
+- [Create a review screenshot for an auto-renewable subscription](post-v1-subscriptionappstorereviewscreenshots.md)
   Reserve a review screenshot for an auto-renewable subscription.
-- [Commit a Review Screenshot for an Auto-Renewable Subscription](patch-v1-subscriptionappstorereviewscreenshots-_id_.md)
+- [Commit a review screenshot for an auto-renewable subscription](patch-v1-subscriptionappstorereviewscreenshots-_id_.md)
   Commit an uploaded image asset as a review screenshot for an auto-renewable subscription.
 
 

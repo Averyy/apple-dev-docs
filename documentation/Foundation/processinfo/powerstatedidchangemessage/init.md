@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message about a power state change.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

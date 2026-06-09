@@ -76,8 +76,6 @@ Use the [`totalCacheFolderSize`](mxdiskspaceusagemetric/totalcachefoldersize.md)
 
 - [class MXDiskIOMetric](mxdiskiometric.md)
   An object representing metrics about disk usage.
-- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
-  An object representing a diagnostic report for a disk write exception.
 
 
 ---

@@ -8,6 +8,7 @@ Provides a certificate by its identifier.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration
@@ -32,7 +33,7 @@ The MDM server can change the available certificates at any time. When that happ
 
 ## Parameters
 
-- `identifier`: The identifier of the requested certficate. This function throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if the value you supply isn’t currently in [`identifiers`](managedappidentitiesprovider/identifiers.md).
+- `identifier`: The identifier of the requested certificate. This function throws [`ManagedAppError.invalidIdentifier`](managedapperror/invalididentifier.md) if the value you supply isn’t currently in [`identifiers`](managedappidentitiesprovider/identifiers.md).
 
 
 ---

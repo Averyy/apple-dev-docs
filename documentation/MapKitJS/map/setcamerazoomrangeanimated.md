@@ -12,9 +12,9 @@ Changes the map’s camera zoom range with an animated transition.
 
 ```swift
 setCameraZoomRangeAnimated(
-        cameraZoomRange: CameraZoomRange,
-        animated?: boolean,
-    ): Map;
+    cameraZoomRange: CameraZoomRangeData | null,
+    animated?: boolean,
+): Map;
 ```
 
 ## Mentions
@@ -54,7 +54,7 @@ By default, the change of zoom range animates.
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.

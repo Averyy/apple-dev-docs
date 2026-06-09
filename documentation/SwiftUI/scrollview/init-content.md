@@ -18,13 +18,13 @@ Creates a new instance that’s scrollable in the direction of the given axis an
 
 ```swift
 nonisolated
-init(_ axes: Axis.Set = .vertical, @ViewBuilder content: () -> Content)
+init(_ axes: Axis.Set = .vertical, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
 
 - `axes`: The scroll view’s scrollable axis. The default axis is the vertical axis.
-- `content`: The view builder that creates the scrollable view.
+- `content`: The content builder that creates the scrollable view.
 
 ## See Also
 

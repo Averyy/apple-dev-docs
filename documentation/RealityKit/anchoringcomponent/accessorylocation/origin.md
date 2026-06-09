@@ -11,7 +11,7 @@ A location situated at the accessory origin.
 ## Declaration
 
 ```swift
-static let origin: AnchoringComponent.AccessoryLocation
+static var origin: AnchoringComponent.AccessoryLocation { get }
 ```
 
 

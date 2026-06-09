@@ -83,6 +83,11 @@ stride(from: 89.0, through: 95.0, by: 2.0).formatted(percentStyle)
   A type that describes whether the returned list contains cumulative or alternative elements.
 - [var locale: Locale](listformatstyle/locale.md)
   The locale to use when formatting items in the list.
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+  Modifies the list format style to use the specified locale.
+### Applying list styles
+- [func format(Base) -> String](listformatstyle/format(_:).md)
+  Creates a locale-aware string representation of the value.
 ### Applying currency styles
 - [IntegerFormatStyle.Currency](integerformatstyle/currency.md)
   A format style that converts between integer currency values and their textual representations.

@@ -25,6 +25,12 @@ A high-level representation of a collection of vertices and edges that define a 
 - [Creating a plane with low-level mesh](creating-a-plane-with-low-level-mesh.md)
 - [Reducing CPU Utilization in Your RealityKit App](reducing-cpu-utilization-in-your-realitykit-app.md)
 
+#### Overview
+
+Use [`MeshResource`](meshresource.md) to create procedural geometry from built-in primitives like boxes, spheres, planes, and cylinders, or from custom mesh data. Assign a mesh resource to an entity’s [`ModelComponent`](modelcomponent.md) alongside an array of [`Material`](material.md) instances to render the shape in a scene.
+
+Check [`expectedMaterialCount`](meshresource/expectedmaterialcount.md) to determine how many materials the mesh requires.
+
 ## Topics
 
 ### Creating a mesh resource
@@ -65,14 +71,14 @@ A high-level representation of a collection of vertices and edges that define a 
   Get the contents of the mesh asset.
 ### Getting a bounding box
 - [var bounds: BoundingBox](meshresource/bounds.md)
-  A box that bounds the mesh.
+  A box that bounds the mesh in local coordinate space.
 ### Creating a box
 - [static func generateBox(size: Float, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-8em0v.md)
   Creates a box mesh from a length for the box’s width, height, and depth, and a radius for the corners.
 - [static func generateBox(size: SIMD3<Float>, cornerRadius: Float) -> MeshResource](meshresource/generatebox(size:cornerradius:)-2ovma.md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and a radius for the corners.
 - [static func generateBox(width: Float, height: Float, depth: Float, cornerRadius: Float, splitFaces: Bool) -> MeshResource](meshresource/generatebox(width:height:depth:cornerradius:splitfaces:).md)
-  Creates a box mesh from a width, height, depth, a radius for the corners, and a Boolean option that splits faces.
+  Creates a box mesh from a width, height, depth and a corner radius, with the ability to assign different materials to each face.
 - [static func generateBox(size: SIMD3<Float>, majorCornerRadius: Float, minorCornerRadius: Float) -> MeshResource](meshresource/generatebox(size:majorcornerradius:minorcornerradius:).md)
   Creates a box mesh from a vector of three scalar values that represent width, height, and depth, respectively, and radii for the corners.
 ### Creating a plane
@@ -171,6 +177,8 @@ A high-level representation of a collection of vertices and edges that define a 
   Add a layer of mesh to objects in the real world, using scene reconstruction in ARKit.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
   Increase the realism of an immersive experience by adding entities with invisible materials  real-world objects.
+- [Manipulating models with RealityKit](manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 - [struct ModelComponent](modelcomponent.md)
   A component that contains a mesh and materials for the visual appearance of an entity.
 - [class ModelEntity](modelentity.md)

@@ -33,6 +33,7 @@ class MPSNDArrayUnaryKernel
 - [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, destinationArray: MPSNDArray)](mpsndarrayunarykernel/encode(to:sourcearray:destinationarray:).md)
 - [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, resultState: MPSState?, destinationArray: MPSNDArray)](mpsndarrayunarykernel/encode(to:sourcearray:resultstate:destinationarray:).md)
 - [func encode(to: any MTLCommandBuffer, sourceArray: MPSNDArray, resultState: AutoreleasingUnsafeMutablePointer<MPSState?>?, outputStateIsTemporary: Bool) -> MPSNDArray](mpsndarrayunarykernel/encode(to:sourcearray:resultstate:outputstateistemporary:).md)
+- [func encode(withMTL4CommandEncoder: any MTL4ComputeCommandEncoder, sourceArray: MPSNDArray, destinationArray: MPSNDArray)](mpsndarrayunarykernel/encode(withmtl4commandencoder:sourcearray:destinationarray:).md)
 
 ## Relationships
 

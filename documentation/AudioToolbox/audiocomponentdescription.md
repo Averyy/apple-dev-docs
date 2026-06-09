@@ -19,6 +19,10 @@ Identifying information for an audio component.
 struct AudioComponentDescription
 ```
 
+## Mentions
+
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
+
 ## Topics
 
 ### Properties

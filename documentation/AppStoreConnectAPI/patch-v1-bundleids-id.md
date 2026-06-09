@@ -1,4 +1,4 @@
-# Modify a Bundle ID
+# Modify a bundle id
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Update a specific bundle ID’s name.
 
 ## See Also
 
-- [Delete a Bundle ID](delete-v1-bundleids-_id_.md)
+- [Delete a bundle id](delete-v1-bundleids-_id_.md)
 
 
 ---

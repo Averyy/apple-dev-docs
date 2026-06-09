@@ -20,7 +20,7 @@ func sendMessageToDataProvider(_ message: TransportMessage) throws(AccessoryTran
 
 Use this method to relay data from the accessory to your app’s [`AccessoryDataProvider`](accessorydataprovider.md) extension. The system decrypts the message, if necessary, before delivering it to the data provider. Data providers receive the message through [`messageHandler(_:)`](https://developer.apple.com/documentation/AccessoryNotifications/NotificationsForwarding/AccessoryNotificationsHandler/messageHandler(_:)).
 
-> **Note**: This method receives data from the accessory for the Bluetooth transport type; internet transport accessory-to-host communication relies on a different delivery mechanism.
+> **Note**: This method relays data from the accessory for the Bluetooth transport type. For internet transport, the accessory routes its response to the device using [`pushToken`](accessorytransportsession/pushtoken.md); the system delivers the decrypted response to your data provider extension through the same message handler.
 
 ## Parameters
 

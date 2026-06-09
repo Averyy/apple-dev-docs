@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an app store version experiment v2create request.
+The request body you use to create an App Store version experiment.
 
 **Availability**:
 - App Store Connect API 2.4+

@@ -6,7 +6,7 @@
 The request body you use to update an app custom product page localization app preview sets linkages response.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API ?+ - Deprecated
 
 ## Declaration
 

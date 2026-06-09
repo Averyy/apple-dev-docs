@@ -11,10 +11,8 @@ Reference symbols from the legacy iAd framework.
 ## Topics
 
 ### Enumeration Cases
-- [static var limitAdTracking: ADClientError.Code](adclienterror-swift.struct/code/limitadtracking.md)
-- [static var unknown: ADClientError.Code](adclienterror-swift.struct/unknown.md)
-- [ADClientError.Code.unknown](adclienterror-swift.struct/code/unknown.md)
-  The response from the attribution server has an unknown error.
+- [ADClientErrorLimitAdTracking](adclienterror/adclienterrorlimitadtracking.md)
+  Limited ad tracking is in an enabled state for the device.
 
 
 ---

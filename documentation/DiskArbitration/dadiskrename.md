@@ -18,6 +18,7 @@ func DADiskRename(_ disk: DADisk, _ name: CFString, _ options: DADiskRenameOptio
 ## Parameters
 
 - `disk`: The disk object.
+- `name`: The new volume name.
 - `options`: The rename options.
 - `callback`: The callback function to call once the rename completes.
 - `context`: The user-defined context parameter to pass to the callback function.

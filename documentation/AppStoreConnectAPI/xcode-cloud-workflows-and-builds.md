@@ -32,10 +32,10 @@ The App Store Connect API provides resources to access the following Xcode Cloud
 
 When you’ve identified the data you need to access, the next step is to identify the Xcode Cloud API endpoints you need to call. This is a customized task that depends on your use case. For example, you could follow these steps to read Xcode Cloud workflow information and display it in a custom dashboard:
 
-1. Access Xcode Cloud product information by reading a list of objects that represent your Xcode Cloud products using the [`List All Xcode Cloud Products`](get-v1-ciproducts.md) endpoint.
+1. Access Xcode Cloud product information by reading a list of objects that represent your Xcode Cloud products using the [`List all xcode cloud products`](get-v1-ciproducts.md) endpoint.
 2. Choose the Xcode Cloud product for which you want to display information in the custom dashboard.
-3. Pass the `id` of the Xcode Cloud product you chose to the [`List All Workflows for an Xcode Cloud Product`](get-v1-ciproducts-_id_-workflows.md) endpoint and call it to read a list of workflow objects.
-4. Call the [`Read Xcode Cloud Workflow Information`](get-v1-ciworkflows-_id_.md) endpoint for each workflow using the workflow’s `id` to access detailed workflow information.
+3. Pass the `id` of the Xcode Cloud product you chose to the [`List all workflows for an xcode cloud product`](get-v1-ciproducts-_id_-workflows.md) endpoint and call it to read a list of workflow objects.
+4. Call the [`Read xcode cloud workflow information`](get-v1-ciworkflows-_id_.md) endpoint for each workflow using the workflow’s `id` to access detailed workflow information.
 5. Populate your dashboard with the detailed workflow information.
 
 ##### Start a New Build
@@ -45,7 +45,7 @@ Xcode Cloud workflows allow you to configure a custom start condition that queue
 To start a new build:
 
 1. Read data necessary to create a [`CiBuildRunCreateRequest`](cibuildruncreaterequest.md); for example, access workflow information using endpoints provided by the [`Products`](products.md) and [`Workflows`](workflows.md) resources.
-2. Create the [`CiBuildRunCreateRequest`](cibuildruncreaterequest.md) and perform the [`Start a Build`](post-v1-cibuildruns.md) operation that starts a new build.
+2. Create the [`CiBuildRunCreateRequest`](cibuildruncreaterequest.md) and perform the [`Start a build`](post-v1-cibuildruns.md) operation that starts a new build.
 
 ##### Manage Workflows
 
@@ -63,7 +63,7 @@ Depending on what you want to do, you likely need to first read Xcode Cloud data
 - [`Repositories`](repositories.md)
 - [`Xcode Versions`](xcode-versions.md)
 
-After you’ve retrieved all necessary information, use it to create the [`CiWorkflowCreateRequest`](ciworkflowcreaterequest.md) and perform the [`Create a Workflow`](post-v1-ciworkflows.md) operation to create a new workflow.
+After you’ve retrieved all necessary information, use it to create the [`CiWorkflowCreateRequest`](ciworkflowcreaterequest.md) and perform the [`Create a workflow`](post-v1-ciworkflows.md) operation to create a new workflow.
 
 ## Topics
 

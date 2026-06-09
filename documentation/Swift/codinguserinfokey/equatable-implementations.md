@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](codinguserinfokey/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](codinguserinfokey/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

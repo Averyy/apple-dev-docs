@@ -18,7 +18,7 @@ Animates effects that you apply to a view over a sequence of phases that change 
 
 ```swift
 nonisolated
-func phaseAnimator<Phase>(_ phases: some Sequence, @ViewBuilder content: @escaping (PlaceholderContentView<Self>, Phase) -> some View, animation: @escaping (Phase) -> Animation? = { _ in .default }) -> some View where Phase : Equatable
+func phaseAnimator<Phase>(_ phases: some Sequence, @ContentBuilder content: @escaping (PlaceholderContentView<Self>, Phase) -> some View, animation: @escaping (Phase) -> Animation? = { _ in .default }) -> some View where Phase : Equatable
 ```
 
 #### Discussion
@@ -30,7 +30,7 @@ Right away, the modifier provides its `content` closure with the value of the se
 ## Parameters
 
 - `phases`: The sequence of phases to cycle through. Ensure that the sequence isn’t empty. If it is, SwiftUI logs a runtime warning and also returns a visual warning as the output view.
-- `content`: A view builder closure that takes two parameters: a proxy value representing the modified view and the current phase. You can apply effects to the proxy based on the current phase.
+- `content`: A content builder closure that takes two parameters: a proxy value representing the modified view and the current phase. You can apply effects to the proxy based on the current phase.
 - `animation`: A closure that takes the current phase as input. Return the animation to use when transitioning to the next phase. If you return `nil`, the transition doesn’t animate. If you don’t set this parameter, SwiftUI uses a default animation.
 
 ## See Also

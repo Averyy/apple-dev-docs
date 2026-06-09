@@ -18,6 +18,12 @@
 let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString
 ```
 
+#### Discussion
+
+Specifies the image dimensions to which the camera’s intrinsic matrix values are relative.
+
+Values are width and height in a CFDictionary. Dictionary keys are compatible with CGSize dictionary, namely “Width” and “Height”.
+
 ## See Also
 
 - [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
@@ -26,7 +32,6 @@ let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CF
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrix: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrix.md)
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
 - [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
-  The following keys are required in each kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection dictionary.
 - [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](kcmformatdescriptioncameracalibration_lensdistortions.md)
 - [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](kcmformatdescriptioncameracalibration_lensdomain.md)
 - [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)

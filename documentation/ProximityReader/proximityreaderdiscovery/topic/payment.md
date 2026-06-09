@@ -9,7 +9,6 @@ The subtopics that show merchants how to accept different types of payments with
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 
@@ -30,7 +29,6 @@ Each topic has a dedicated learning purpose for merchants.
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

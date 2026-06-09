@@ -1,4 +1,4 @@
-# Read Pull Request Information
+# Read pull request information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

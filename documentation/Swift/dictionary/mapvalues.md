@@ -17,7 +17,7 @@ Returns a new dictionary containing the keys of this dictionary with the values 
 ## Declaration
 
 ```swift
-func mapValues<T>(_ transform: (Value) throws -> T) rethrows -> Dictionary<Key, T>
+func mapValues<T, E>(_ transform: (Value) throws(E) -> T) throws(E) -> Dictionary<Key, T> where E : Error
 ```
 
 #### Return Value

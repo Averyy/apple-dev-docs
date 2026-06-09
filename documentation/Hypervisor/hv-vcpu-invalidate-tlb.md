@@ -1,47 +1,34 @@
-# hv_vcpu_invalidate_tlb(_:)
+# hv_vcpu_invalidate_tlb(_:_:_:)
 
 **Framework**: Hypervisor  
 **Kind**: func
 
-Invalidates the translation look-aside buffer (TLB) of a vCPU.
-
 **Availability**:
-- macOS 10.10+
+- macOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
-func hv_vcpu_invalidate_tlb(_ vcpu: hv_vcpuid_t) -> hv_return_t
+func hv_vcpu_invalidate_tlb(_ vcpu: hv_vcpu_t, _ op: hv_tlbi_op_t, _ param: UInt64) -> hv_return_t
 ```
 
 #### Return Value
 
-[`HV_SUCCESS`](hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](hv_return_t.md).
+HV_SUCCESS on success, an error code otherwise.
 
 #### Discussion
 
-This function must be called by the owning thread.
+Invalidates TLB entries for the specified vCPU.
+
+Must be called by the owning thread. When EL2 is enabled for this VM, this function invalidates TLB entries for the guest hypervisor, not the nested guests.
 
 ## Parameters
 
-- `vcpu`: The instance of the vCPU.
-
-## See Also
-
-- [func hv_vcpu_run_until(hv_vcpuid_t, UInt64) -> hv_return_t](hv_vcpu_run_until(_:_:).md)
-  Executes a vCPU until it reaches the deadline defined in absolute time units you provide.
-- [func hv_vcpu_interrupt(UnsafeMutablePointer<hv_vcpuid_t>, UInt32) -> hv_return_t](hv_vcpu_interrupt(_:_:).md)
-  Forces the vCPU instances you provide to immediately exit the VM.
-- [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
-  Flushes the cached state of a vCPU.
-- [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)
-  Returns, by reference, the cumulative execution time of a vCPU, in nanoseconds.
-- [func hv_vcpu_run(hv_vcpu_t) -> hv_return_t](hv_vcpu_run(_:).md)
-  Starts the execution of a vCPU.
-- [Execution Deadlines](3553338-execution-deadlines.md)
-  An enumeration that describes available execution deadlines available to vCPUs.
+- `vcpu`: ID of the vCPU instance.
+- `op`: TLB invalidation operation to perform.
+- `param`: Parameter for the TLB operation (e.g., virtual address for VAAE1IS).
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor/hv_vcpu_invalidate_tlb(_:_:_:))*

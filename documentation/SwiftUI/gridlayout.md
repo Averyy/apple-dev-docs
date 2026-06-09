@@ -18,7 +18,7 @@ A grid that you can use in conditional layouts.
 
 ```swift
 @frozen
-struct GridLayout
+nonisolated struct GridLayout
 ```
 
 #### Overview

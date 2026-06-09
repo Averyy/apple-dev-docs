@@ -18,17 +18,6 @@ Use the Assets Library framework to access the pictures and videos managed by th
 
 ## Topics
 
-### Classes
-- [class ALAsset](alasset.md)
-  An `ALAsset` object represents a photo or a video managed by the Photo application.
-- [class ALAssetRepresentation](alassetrepresentation.md)
-  An `ALAssetRepresentation` object encapsulates one of the representations of a given [`ALAsset`](alasset.md) object.
-- [class ALAssetsFilter](alassetsfilter.md)
-  `ALAssetsFilter` encapsulates filtering criteria to be used when retrieving assets from a group.
-- [class ALAssetsGroup](alassetsgroup.md)
-  An `ALAssetsGroup` object represents an ordered set of the assets managed by the Photos application. The order of the elements is the same as the user sees in the Photos application. An asset can belong to multiple assets groups.
-- [class ALAssetsLibrary](alassetslibrary.md)
-  An instance of `ALAssetsLibrary` provides access to the videos and photos that are under the control of the Photos application.
 ### Reference
 - [AssetsLibrary Enumerations](assetslibrary-enumerations.md)
 - [AssetsLibrary Constants](assetslibrary-constants.md)

@@ -18,7 +18,7 @@ Creates a navigation link that presents a destination view when active, with a t
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, isActive: Binding<Bool>, @ViewBuilder destination: () -> Destination)
+init(_ titleKey: LocalizedStringKey, isActive: Binding<Bool>, @ContentBuilder destination: () -> Destination)
 ```
 
 ## Parameters

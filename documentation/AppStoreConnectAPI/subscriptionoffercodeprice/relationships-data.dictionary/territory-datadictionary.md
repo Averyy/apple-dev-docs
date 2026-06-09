@@ -16,6 +16,7 @@ object SubscriptionOfferCodePrice.Relationships.Territory
 
 ### Objects
 - [object SubscriptionOfferCodePrice.Relationships.Territory.Data](subscriptionoffercodeprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription offer code price.
 
 ## Properties
 

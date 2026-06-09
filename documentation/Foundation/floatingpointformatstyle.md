@@ -71,7 +71,7 @@ let customFormatting = exampleNumber.formatted(
 
 ##### Creating a Floating Point Format Style Instance
 
-The previous examples use static factory methods like [`number`](formatstyle/number-8c8rj.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-4ksqj) method. You can also create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) instance and use it to repeatedly format different values, with the `format(_:)` method:
+The previous examples use static factory methods like [`number`](formatstyle/number-8c8rj.md) to create format styles within the call to the [`formatted(_:)`](https://developer.apple.com/documentation/Swift/BinaryFloatingPoint/formatted(_:)-4ksqj) method. You can also create a [`FloatingPointFormatStyle`](floatingpointformatstyle.md) instance and use it to repeatedly format different values, with the [`format(_:)`](floatingpointformatstyle/format(_:).md) method:
 
 ```swift
 let percentFormatStyle = FloatingPointFormatStyle<Double>.Percent()
@@ -119,11 +119,16 @@ print("\(localizedPercentage!)") // 0.551
 ### Creating a floating-point format style
 - [init(locale: Locale)](floatingpointformatstyle/init(locale:).md)
   Creates a floating-point format style that uses the given locale.
+### Formatting floating-point values
+- [func format(Value) -> String](floatingpointformatstyle/format(_:).md)
+  Formats a floating-point value, using this style.
 ### Customizing style behavior
 - [func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/decimalseparator(strategy:).md)
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(FloatingPointFormatStyle<Value>.Configuration.Grouping) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(FloatingPointFormatStyle<Value>.Configuration.Notation) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(FloatingPointFormatStyle<Value>.Configuration.Precision) -> FloatingPointFormatStyle<Value>](floatingpointformatstyle/precision(_:).md)
@@ -156,13 +161,22 @@ print("\(localizedPercentage!)") // 0.551
 - [FloatingPointFormatStyle.Attributed](floatingpointformatstyle/attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Parsing floating-point numbers
+- [var parseStrategy: FloatingPointParseStrategy<FloatingPointFormatStyle<Value>>](floatingpointformatstyle/parsestrategy.md)
+  The parse strategy that this format style uses.
 - [struct FloatingPointParseStrategy](floatingpointparsestrategy.md)
   A parse strategy for creating floating-point values from formatted strings.
+### Locating floating-point numbers with regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](floatingpointformatstyle/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Supporting types
 - [FloatingPointFormatStyle.Currency](floatingpointformatstyle/currency.md)
   A format style that converts between floating-point currency values and their textual representations.
 - [FloatingPointFormatStyle.Percent](floatingpointformatstyle/percent.md)
   A format style that converts between floating-point percentage values and their textual representations.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](floatingpointformatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](floatingpointformatstyle/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](floatingpointformatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 

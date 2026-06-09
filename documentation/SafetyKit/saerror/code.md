@@ -31,9 +31,6 @@ enum Code
   The requested operation failed; retrying may succeed.
 ### Initializers
 - [init?(rawValue: Int)](saerror/code/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](saerror/code/equatable-implementations.md)
-- [RawRepresentable Implementations](saerror/code/rawrepresentable-implementations.md)
 
 ## Relationships
 

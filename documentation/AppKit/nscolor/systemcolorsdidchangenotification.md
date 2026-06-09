@@ -18,6 +18,8 @@ class let systemColorsDidChangeNotification: NSNotification.Name
 
 This notification contains no notification object and no `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSColor.SystemColorsDidChangeMessage`](nscolor/systemcolorsdidchangemessage.md).
+
 
 ---
 

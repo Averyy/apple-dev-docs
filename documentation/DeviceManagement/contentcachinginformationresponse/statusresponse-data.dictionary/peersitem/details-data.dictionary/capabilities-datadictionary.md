@@ -7,8 +7,6 @@ The capabilities of the peer content cache.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

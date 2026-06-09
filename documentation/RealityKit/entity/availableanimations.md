@@ -45,7 +45,7 @@ To play a particular animation resource from the list, call the [`playAnimation(
 - [func playAnimation(named: String, transitionDuration: TimeInterval, startsPaused: Bool, recursive: Bool) -> AnimationPlaybackController](entity/playanimation(named:transitionduration:startspaused:recursive:).md)
   Plays all the animations with the given name on the entity.
 - [var bindableValues: BindableValuesReference](entity/bindablevalues.md)
-- [subscript(BindTarget.EntityPath) -> Entity?](entity/subscript(_:).md)
+- [subscript(_:)](entity/subscript(_:).md)
   Resolves the entity from the given entity path.
 
 

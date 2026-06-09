@@ -8,6 +8,7 @@ A structure that offers functionality to observe whether your app can start a Li
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

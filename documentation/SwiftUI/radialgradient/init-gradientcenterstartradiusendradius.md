@@ -17,6 +17,7 @@ Creates a radial gradient from a base gradient.
 ## Declaration
 
 ```swift
+nonisolated
 init(gradient: Gradient, center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)
 ```
 

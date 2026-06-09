@@ -3,7 +3,7 @@
 **Framework**: EnergyKit  
 **Kind**: module
 
-Provide a grid forecast for your app to help people choose when to use electricity.
+Provide grid forecasts and energy insights to help people optimize their electricity usage.
 
 **Availability**:
 - iOS 26.0+
@@ -11,54 +11,83 @@ Provide a grid forecast for your app to help people choose when to use electrici
 
 #### Overview
 
-EnergyKit provides a grid forecast for your app to help people choose when to use electricity. This forecast is personalized for each person’s Home location and based on various environmental and grid inputs, and identifies the times when there’s relatively cleaner electricity on the grid. A person’s rate plan information is also incorporated when they have connected to their utility account in the Home App.
+EnergyKit provides grid forecasts and energy insights to help people view their energy consumption patterns and choose when to use electricity at home. The framework delivers personalized forecasts for a home based on grid cleanliness and electricity rates, when available, enabling apps to optimize device operation for environmental impact and cost.
 
-EnergyKit helps you build apps that people can use to manage their home devices’ electricity usage to help support the transition to a cleaner electricity grid. It’s meant for residential, behind-the-meter applications, such as electricity usage of household devices, appliances, and EV charging. It’s not meant for commercial or industrial applications. The system is designed for initial use cases involving smart thermostats (HVAC) and EV charging.
+Use EnergyKit to build apps that manage home device electricity usage and support the transition to a cleaner electricity grid. You can use the framework for residential, metered locations such as smart thermostats (HVAC), and for electric vehicle charging.
 
 ![An electric vehicle charging app interface with the Clean Energy Guidance feature enabled, set to charge until 7AM, and a 'Begin Charging' button displayed below the settings.](https://docs-assets.developer.apple.com/published/76c60c9dc4015f4f6a977bc4310a17c9/energykit-art%402x.png)
 
 Using EnergyKit, your app can:
 
-- Shift a person’s electricity usage to times when there’s relatively cleaner electricity on the grid.
-- Provide insights into device electricity consumption or runtime and give guidance on cleaner energy periods of time, as well as peak or off-peak utility cost periods when a person has connected to their electric utility provider and is on a time-varying rate.
+- Receive grid forecasts that identify when cleaner electricity is available and when electricity rates are lower, when rate plan information is available.
+- Submit electrical load events that track device energy consumption during operation and provide data for the Home app.
+- Request insights about a customer’s historical electricity usage correlated with grid cleanliness and electricity rate periods.
+- Display rich activity logs and analytics in the Home app without building custom statistics or graphing UI.
 
-> ❗ **Important**: Energy guidance is only available in the contiguous United States.
+#### Receive Energy Guidance and Submit Energy Use
 
-#### Add the Entitlement to Your App
+The framework provides two complementary workflows:
 
-To use EnergyKit, the system requires your app to have the [`com.apple.developer.energykit`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement with a value of `true`. Add this entitlement by enabling the EnergyKit capability on your app’s target in Xcode. For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+- The [`ElectricityGuidance`](electricityguidance.md) structure identifies optimal times for electricity usage based on grid cleanliness and utility rates. Use this guidance to optimize when your managed devices consume electricity.
+- Submit [`ElectricVehicleLoadEvent`](electricvehicleloadevent.md) and [`ElectricHVACLoadEvent`](electrichvacloadevent.md) instances that track energy consumption during device operation. Optionally submit [`ElectricVehicleStatusEvent`](electricvehiclestatusevent.md) instances that explain charging behavior and support informative activity logs in the Home app.
+
+> ❗ **Important**: Energy guidance is only available in the contiguous United States. To use EnergyKit, the system requires your app to have the [`EnergyKit Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit) entitlement with a value of `true`.
+
+#### Display Energy Data in the Home App
+
+When you adopt the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience), the Home app displays your electrical load events in a unified energy experience. The Home app shows:
+
+- Historical charts with up to five years of energy data
+- Activity logs that explain device behavior with timestamps and reasons
+- Monthly trend notifications about energy usage patterns
+- Whole-home energy overlays when people connect their utility account
+
+This integration eliminates the need to build custom analytics UI, while providing a consistent experience across all energy devices in a person’s home.
 
 ## Topics
 
 ### Essentials
 - [Optimizing home electricity usage](optimizing-home-electricity-usage.md)
   Shift electric vehicle charging schedules to times when the grid is cleaner and potentially less expensive.
-- [com.apple.developer.energykit](../BundleResources/Entitlements/com.apple.developer.energykit.md)
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
+  Track energy consumption and provide people detailed insights into the charging of their electric vehicle.
+- [EnergyKit Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.md)
   The entitlement the system requires for an app to use the EnergyKit framework.
-### Load events
-- [struct ElectricHVACLoadEvent](electrichvacloadevent.md)
-  A measurement of the electricity consumed by an HVAC system.
-- [struct ElectricVehicleLoadEvent](electricvehicleloadevent.md)
-  A measurement of the electricity consumed or generated by an electric vehicle while connected to a charger.
-- [struct EnergyVenue](energyvenue.md)
-  A physical site that uses or produces electricity at that location.
-- [enum ElectricityFlowDirection](electricityflowdirection.md)
-  Information about which direction the electricity moves.
-- [protocol ElectricalLoadEventProtocol](electricalloadeventprotocol.md)
-  A type that can represent an electrical load event.
-### Guidance
+- [EnergyKit LoadEvents Entitlement](../BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience.md)
+  An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
+### Electricity guidance
 - [struct ElectricityGuidance](electricityguidance.md)
   A data model that provides guidance on when electricity is cleaner and less expensive.
-### Insights
-- [struct ElectricityInsightRecord](electricityinsightrecord.md)
-  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
+### Electric vehicle events
+- [struct ElectricVehicleLoadEvent](electricvehicleloadevent.md)
+  A measurement of the electricity consumed or generated by an electric vehicle while connected to a charger.
+- [struct ElectricVehicleStatusEvent](electricvehiclestatusevent.md)
+  An event that represents the status of an electric vehicle while connected to a charger.
+- [enum ElectricVehicleChargingReason](electricvehiclechargingreason.md)
+  Information about a charging-state transition in an electric vehicle status event.
+### HVAC events
+- [struct ElectricHVACLoadEvent](electrichvacloadevent.md)
+  A measurement of the electricity consumed by an HVAC system.
+### Device identification
+- [struct ElectricalLoadDevice](electricalloaddevice.md)
+  A type that identifies an electrical load device for event submission.
+- [protocol ElectricalLoadEventProtocol](electricalloadeventprotocol.md)
+  A type that can represent an electrical load event.
+### Energy venues
+- [struct EnergyVenue](energyvenue.md)
+  A physical site that uses or produces electricity at that location.
+### Electricity insights
 - [actor ElectricityInsightService](electricityinsightservice.md)
   A service for retrieving insights about electricity consumption.
 - [struct ElectricityInsightQuery](electricityinsightquery.md)
   A structure describing a query that you use to obtain environmental impact information in the form of electricity insight records.
+- [struct ElectricityInsightRecord](electricityinsightrecord.md)
+  A structure that provides environmental impact and cost insights for electricity usage over a specific time period.
 - [protocol ElectricityInsightMeasure](electricityinsightmeasure.md)
   A protocol for types that can measure electricity usage data.
-### Error response
+### Supporting types
+- [enum ElectricityFlowDirection](electricityflowdirection.md)
+  Information about which direction the electricity moves.
 - [enum EnergyKitError](energykiterror.md)
   A specialized error that provides localized messages describing the error and why it occurred.
 

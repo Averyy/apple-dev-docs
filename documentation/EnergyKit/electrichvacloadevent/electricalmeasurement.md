@@ -9,7 +9,6 @@ A description of the electricity consumed by a device.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -35,10 +34,8 @@ struct ElectricalMeasurement
 
 ## See Also
 
-- [init(timestamp: Date, measurement: ElectricHVACLoadEvent.ElectricalMeasurement, session: ElectricHVACLoadEvent.Session, deviceID: String)](electrichvacloadevent/init(timestamp:measurement:session:deviceid:).md)
-  Creates an electric HVAC load event.
-- [ElectricHVACLoadEvent.Session](electrichvacloadevent/session-swift.struct.md)
-  A session that tracks the event.
+- [let measurement: ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/measurement.md)
+  The electricity consumption of a device.
 
 
 ---

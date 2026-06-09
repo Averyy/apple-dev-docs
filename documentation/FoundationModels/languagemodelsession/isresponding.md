@@ -11,6 +11,7 @@ A Boolean value that indicates a response is being generated.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -48,8 +49,20 @@ struct ShopView: View {
 
 ## See Also
 
-- [var transcript: Transcript](languagemodelsession/transcript.md)
-  A full history of interactions, including user inputs and model responses.
+- [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
+  Produces a response to a prompt.
+- [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
+  Produces a generable object as a response to a prompt.
+- [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:includeschemainprompt:options:prompt:).md)
+  Produces a generated content type as a response to a prompt and schema.
+- [func respond(to:options:)](languagemodelsession/respond(to:options:).md)
+  Produces a response to a prompt.
+- [func respond(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:generating:includeschemainprompt:options:).md)
+  Produces a generable object as a response to a prompt.
+- [func respond(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:schema:includeschemainprompt:options:).md)
+  Produces a generated content type as a response to a prompt and schema.
+- [LanguageModelSession.Response](languagemodelsession/response.md)
+  A structure that stores the output of a response call.
 
 
 ---

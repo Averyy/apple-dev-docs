@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a customer review summarization territory resource.
+The resource linkage data identifying the territory associated with a review summarization.
 
 **Availability**:
 - App Store Connect API 3.6+

@@ -23,6 +23,7 @@ protocol SystemIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
+- [var open: some AssistantSchemas.Intent](assistantschemas/systemintent/open.md)
 - [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
 
 ## Relationships
@@ -32,10 +33,6 @@ protocol SystemIntent : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.IntentSchema](assistantschema/intentschema.md)
 - [AssistantSchemas.IntentSchema](assistantschemas/intentschema.md)
-
-## See Also
-
-- [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
 
 
 ---

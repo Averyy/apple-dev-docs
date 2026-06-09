@@ -12,7 +12,7 @@ The annotation’s coordinate.
 
 ```swift
 get coordinate(): Coordinate;
-set coordinate(value: Coordinate);
+set coordinate(value: CoordinateData);
 ```
 
 ## See Also

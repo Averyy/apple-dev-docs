@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update an app custom product page update request.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -16,6 +18,7 @@ object AppCustomProductPageUpdateRequest.Data
 
 ### Objects
 - [object AppCustomProductPageUpdateRequest.Data.Attributes](appcustomproductpageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an app custom product page update request resource.
 
 ## Properties
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The resource linkage data identifying the App Clip App Store review detail associated with a default App Clip experience.
+
 **Availability**:
 - App Store Connect API 3.6+
 

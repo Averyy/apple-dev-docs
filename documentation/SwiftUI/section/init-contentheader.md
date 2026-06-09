@@ -17,7 +17,7 @@ Creates a section with a header and the provided section content.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content, @ViewBuilder header: () -> Parent)
+init(@ContentBuilder content: () -> Content, @ContentBuilder header: () -> Parent)
 ```
 
 ## Parameters

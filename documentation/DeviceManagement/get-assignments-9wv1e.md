@@ -6,15 +6,14 @@
 Get the set of current assignments for users or devices.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-- [Managing Assets](managing-assets.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Using paginated endpoints](using-paginated-endpoints.md)
+- [Managing assets](managing-assets.md)
 
 #### Discussion
 
@@ -67,7 +66,10 @@ Get the set of current assignments for users or devices.
 
 - `adamId` (string): The filter for the assignment product’s unique identifier.
 - `clientUserId` (string): The filter for the unique identifier of assigned users in your organization.
+- `excludeInactiveUsers` (boolean)
+- `includeUserState` (boolean)
 - `pageIndex` (int32): The requested page index.
+- `pricingParam` (string)
 - `serialNumber` (string): The filter for the unique identifier of assigned devices in your organization.
 - `sinceVersionId` (string): The filter for modified assignments since the specified version identifier.
 

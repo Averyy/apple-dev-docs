@@ -6,8 +6,8 @@
 An output property that specifies the high dynamic range version of the screenshot.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

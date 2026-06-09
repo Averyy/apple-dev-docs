@@ -1,4 +1,4 @@
-# Delete an App Event Screenshot
+# Delete an app event screenshot
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Delete a specific screenshot from an in-app event.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app event screenshot resource ID from the [`List all screenshots for an app event localization`](get-v1-appeventlocalizations-_id_-appeventscreenshots.md) response.
 
 ## See Also
 
 - [List the Images for an In-App Event](get-v1-appeventscreenshots-_id_.md)
-- [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)
-- [POST /v1/appEventScreenshots](post-v1-appeventscreenshots.md)
+- [Update an app event screenshot](patch-v1-appeventscreenshots-_id_.md)
+- [Create an app event screenshot](post-v1-appeventscreenshots.md)
 
 
 ---

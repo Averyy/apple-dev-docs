@@ -104,10 +104,13 @@ In particular, note that `j`, the index of the second day with absences, was fou
 ### Instance Methods
 - [func insert(Element, at: Int)](arrayslice/insert(_:at:).md)
   Inserts a new element at the specified position.
+- [func isTriviallyIdentical(to: ArraySlice<Element>) -> Bool](arrayslice/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this array is identical to `other`.
 - [func remove(at: Int) -> Element](arrayslice/remove(at:).md)
   Removes and returns the element at the specified position.
 - [func reserveCapacity(Int)](arrayslice/reservecapacity(_:).md)
   Reserves enough space to store the specified number of elements.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](arrayslice/withbytes(_:).md)
 - [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](arrayslice/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the array’s contiguous storage.
 - [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafebytes(_:).md)

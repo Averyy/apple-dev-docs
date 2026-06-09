@@ -22,6 +22,8 @@ weak var workoutSession: HKWorkoutSession? { get }
 
 - [var dataSource: HKLiveWorkoutDataSource?](hkliveworkoutbuilder/datasource.md)
   A data source that provides live data from a workout session automatically.
+- [var delegate: (any HKLiveWorkoutBuilderDelegate)?](hkliveworkoutbuilder/delegate.md)
+  The live builder’s delegate.
 
 
 ---

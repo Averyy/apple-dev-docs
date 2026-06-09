@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: init
 
-Creates an image annotation with a URL to its image and a coordinate.
+Creates an image annotation with an image and a coordinate.
 
 **Availability**:
 - MapKit JS 5.0+
@@ -12,9 +12,9 @@ Creates an image annotation with a URL to its image and a coordinate.
 
 ```swift
 constructor(
-        location: Coordinate | Place | SearchAutocompleteResult,
-        options: ImageAnnotationConstructorOptions,
-    );
+    location: CoordinateData | Place | SearchAutocompleteResult,
+    options: ImageAnnotationConstructorOptions,
+);
 ```
 
 #### Discussion
@@ -25,13 +25,13 @@ This example shows two image annotations: one with a minimally defined image, an
 const coordinate = new mapkit.Coordinate(38.897957, -77.036560);
 
 // The house logo is a white square.
-// The image size is 32 x 32. Becuase the default anchor point is the bottom center
+// The image size is 32 x 32. Because the default anchor point is the bottom center
 // of the image, offset the anchor by (0, -16) to make the center of the
 // image the anchor point.
 const houseOptions = {
     title: "The White House",
     subtitle: "1600 Pennsylvania Ave NW",
-    url: { 1: "/images/house.png", 2: "/images/house_2x.png"},
+    image: { 1: "/images/house.png", 2: "/images/house_2x.png"},
     anchorOffset: new DOMPoint(0, -16)
 };
 const houseAnnotation = new mapkit.ImageAnnotation(coordinate, houseOptions);
@@ -39,7 +39,7 @@ map.addAnnotation(houseAnnotation);
 
 // This is how to implement a red pin.
 const pinOptions = {
-    url: {
+    image: {
         1: "/images/pin-red.png",
         2: "/images/pin-red_2x.png"
     }
@@ -51,7 +51,7 @@ map.addAnnotation(pinAnnotation);
 ## Parameters
 
 - `location`: The coordinate where this annotation appears.
-- `options`: A hash of properties that initialize the annotation. The `options` hash needs to include [`url`](imageannotationconstructoroptions/url.md). MapKit JS displays an optional `title` and `subtitle` in a callout if they’re present.
+- `options`: A hash of properties that initialize the annotation. The `options` hash needs to include [`image`](imageannotationconstructoroptions/image.md). MapKit JS displays an optional `title` and `subtitle` in a callout if they’re present.
 
 ## See Also
 

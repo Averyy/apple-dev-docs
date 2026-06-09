@@ -34,7 +34,7 @@ The search callback function provides the search response in its data parameter.
 
 ## See Also
 
-- [search(query, callback, options)](search/search.md)
+- [search(query, options)](search/search.md)
   Retrieves the results of a search query.
 - [type SearchDelegate](searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.

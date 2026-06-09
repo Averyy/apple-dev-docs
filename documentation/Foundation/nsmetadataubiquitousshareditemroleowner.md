@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+The current user is the owner of the shared item.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
@@ -19,6 +21,7 @@ let NSMetadataUbiquitousSharedItemRoleOwner: String
 ## See Also
 
 - [let NSMetadataUbiquitousSharedItemRoleParticipant: String](nsmetadataubiquitousshareditemroleparticipant.md)
+  The current user is a participant of the shared item.
 
 
 ---

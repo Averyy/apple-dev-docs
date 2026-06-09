@@ -31,6 +31,9 @@ The attributed strings that this fomat style creates contain attributes from the
 ### Creating an attributed byte count format style
 - [init(style: Measurement<UnitType>.AttributedStyle.ByteCount.Style, allowedUnits: Measurement<UnitType>.AttributedStyle.ByteCount.Units, spellsOutZero: Bool, includesActualByteCount: Bool, locale: Locale)](measurement/attributedstyle/bytecount/init(style:allowedunits:spellsoutzero:includesactualbytecount:locale:).md)
   Initializes an attributed byte count format style.
+### Formatting a byte count
+- [func format(Measurement<UnitInformationStorage>) -> AttributedString](measurement/attributedstyle/bytecount/format(_:).md)
+  Formats a byte count measurment, using this style.
 ### Accessing style properties
 - [var allowedUnits: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount.Units](measurement/attributedstyle/bytecount/allowedunits.md)
   The units the format style can use to express the byte count.
@@ -46,6 +49,9 @@ The attributed strings that this fomat style creates contain attributes from the
   The type used to represent the style of the formatted byte count.
 - [var locale: Locale](measurement/attributedstyle/bytecount/locale.md)
   The locale to use to format the numeric part of the byte count.
+### Modifying style locale
+- [func locale(Locale) -> Measurement<UnitType>.AttributedStyle.ByteCount](measurement/attributedstyle/bytecount/locale(_:).md)
+  Modifies the format style to use the specified locale.
 
 ## Relationships
 

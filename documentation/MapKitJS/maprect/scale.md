@@ -11,7 +11,7 @@ Returns a scaled map rectangle for a map location.
 ## Declaration
 
 ```swift
-scale(scaleFactor: number, scaleCenter?: MapPoint): MapRect;
+scale(scaleFactor: number, scaleCenter?: MapPointData): MapRect;
 ```
 
 #### Discussion

@@ -18,6 +18,8 @@ class let willStartLiveScrollNotification: NSNotification.Name
 
 The notification object is the scroll view performing the scroll.
 
+To observe this notification using Swift concurrency, use [`NSScrollView.WillStartLiveScrollMessage`](nsscrollview/willstartlivescrollmessage.md).
+
 ## See Also
 
 - [class let willStartLiveMagnifyNotification: NSNotification.Name](nsscrollview/willstartlivemagnifynotification.md)

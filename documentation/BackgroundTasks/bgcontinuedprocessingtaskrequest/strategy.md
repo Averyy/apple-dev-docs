@@ -9,6 +9,7 @@ The submission strategy for the scheduler to abide by.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

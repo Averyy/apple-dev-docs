@@ -17,7 +17,7 @@ The preferred sizing behavior of buttons in the view hierarchy.
 ## Declaration
 
 ```swift
-var buttonSizing: ButtonSizing { get }
+var buttonSizing: ButtonSizing { get set }
 ```
 
 #### Discussion

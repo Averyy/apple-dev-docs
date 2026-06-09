@@ -30,6 +30,7 @@ func flush(removingDisplayedImage removeDisplayedImage: Bool) async
   A Boolean value that Indicates whether the renderer requires flushing to continue decoding frames.
 - [class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Name](avsamplebuffervideorenderer/requiresflushtoresumedecodingdidchangenotification.md)
   A notification that indicates that the video renderer requires flushing to continue rendering sample buffers.
+- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
 
 
 ---

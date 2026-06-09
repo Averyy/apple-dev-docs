@@ -17,6 +17,7 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 ## Declaration
 
 ```swift
+nonisolated
 struct SlideTransition
 ```
 

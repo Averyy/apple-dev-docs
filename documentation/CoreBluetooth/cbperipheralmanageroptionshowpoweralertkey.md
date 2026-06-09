@@ -27,7 +27,7 @@ The value for this key is an [`NSNumber`](https://developer.apple.com/documentat
 ## See Also
 
 - [let CBPeripheralManagerOptionRestoreIdentifierKey: String](cbperipheralmanageroptionrestoreidentifierkey.md)
-  A unique identifier (UID) with which to instantiate the peripheral manager.
+  A string containing a unique identifier (UID) for the peripheral manager to instantiate.
 
 
 ---

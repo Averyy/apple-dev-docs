@@ -1,4 +1,4 @@
-# Read the Routing App Coverage Information of an App Store Version
+# Read the routing app coverage information of an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get the routing app coverage file that is associated with a specific App Store v
 
 ## Parameters
 
-- `fields[routingAppCoverages]` ([string])
+- `fields[routingAppCoverages]` ([string]): Additional fields to include for each routing app coverage resource returned by the response.
 - `fields[appStoreVersions]` ([string])
 - `include` ([string])
 
 ## See Also
 
-- [GET /v1/appStoreVersions/{id}/relationships/routingAppCoverage](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
+- [Get the routing app coverage ID for an App Store version](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
 
 
 ---

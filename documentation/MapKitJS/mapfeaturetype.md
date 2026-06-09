@@ -16,6 +16,8 @@ const MapFeatureType: Readonly<{
     readonly Territory: "Territory";
     readonly PhysicalFeature: "PhysicalFeature";
 }>
+type MapFeatureType =
+    (typeof MapFeatureType)[keyof typeof MapFeatureType];
 ```
 
 ## Topics
@@ -27,26 +29,31 @@ const MapFeatureType: Readonly<{
   A feature that describes a point of interest, such as a museum, park, or cafe.
 - [Territory](mapfeaturetype/territory.md)
   A feature that describes a territory, such as a region or neighborhood.
-### Type Aliases
-- [type MapFeatureType](mapfeaturetype/mapfeaturetype.md)
-  A type alias that represents the values of the map feature type enumeration.
 
 ## See Also
 
-- [filterExcludingAllCategories](mapkit/filterexcludingallcategories.md)
-  A value that excludes all point-of-interest categories.
-- [filterIncludingAllCategories](mapkit/filterincludingallcategories.md)
-  A value that includes all point-of-interest categories.
-- [class PointOfInterestFilter](pointofinterestfilter.md)
-  A filter for determining the points of interest to include or exclude on a map or in a local search.
-- [class PointsOfInterestSearch](pointsofinterestsearch.md)
-  An object that fetches points of interest within a specified region.
-- [class MapFeatureAnnotation](mapfeatureannotation.md)
-  An object that represents a map feature that the user selects.
-- [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
-  An object that describes map feature annotation images.
+- [const AddressCategory](addresscategory.md)
+  The categories of address components that users can search for with an address filter.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
+- [const ColorScheme](colorscheme.md)
+  Constants that indicate the color scheme of the map or a place detail.
+- [const DistanceUnitSystem](distanceunitsystem.md)
+  Constants that indicate the system of measurement that displays on the map.
+- [const FeatureVisibility](featurevisibility.md)
+  Constants indicating the visibility of different adaptive map features.
+- [const MapLoadPriority](maploadpriority.md)
+  Constants that prioritize the visibility of specific map features during map loading.
+- [const MapType](maptype.md)
+  Constants representing the type of map to display.
 - [const PointOfInterestCategory](pointofinterestcategory.md)
   Point-of-interest categories.
+- [const RegionPriority](regionpriority.md)
+  A value that indicates the importance of the configured region.
+- [const TransportType](transporttype.md)
+  The modes of transportation.
 
 
 ---

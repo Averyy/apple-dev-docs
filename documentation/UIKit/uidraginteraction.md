@@ -27,6 +27,13 @@ class UIDragInteraction
 ### Initializing the drag interaction
 - [init(delegate: any UIDragInteractionDelegate)](uidraginteraction/init(delegate:).md)
   Initializes a drag interaction object with a custom delegate object.
+### Configuring lift behavior
+- [var liftBehavior: UIDragInteraction.LiftBehavior](uidraginteraction/liftbehavior-swift.property.md)
+  A value that controls the timing behavior for initiating a drag gesture from a touch.
+- [UIDragInteraction.LiftBehavior](uidraginteraction/liftbehavior-swift.enum.md)
+  Constants that determine the lift behavior for a drag interaction.
+- [var allowsPointerDragBeforeLiftDelay: Bool](uidraginteraction/allowspointerdragbeforeliftdelay.md)
+  A Boolean value that controls whether pointer-initiated drags begin before the lift delay elapses.
 ### Managing drag interactions
 - [var allowsSimultaneousRecognitionDuringLift: Bool](uidraginteraction/allowssimultaneousrecognitionduringlift.md)
   A Boolean value that determines whether the interaction allows recognition of other gestures during the lift activity.

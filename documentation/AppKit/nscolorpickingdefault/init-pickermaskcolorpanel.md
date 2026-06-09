@@ -35,7 +35,8 @@ This method is provided to initialize your color picker; however, much of a colo
 
 ## See Also
 
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [protocol NSColorPickingCustom](nscolorpickingcustom.md)
+  A set of methods that provides a way to add color pickers—custom user interfaces for color selection—to an app’s color panel.
 - [class func setPickerMask(NSColorPanel.Options)](nscolorpanel/setpickermask(_:).md)
   Determines which color selection modes are available in an application’s `NSColorPanel`.
 

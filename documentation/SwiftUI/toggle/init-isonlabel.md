@@ -17,7 +17,8 @@ Creates a toggle that displays a custom label.
 ## Declaration
 
 ```swift
-init(isOn: Binding<Bool>, @ViewBuilder label: () -> Label)
+nonisolated
+init(isOn: Binding<Bool>, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

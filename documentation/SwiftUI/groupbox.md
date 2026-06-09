@@ -15,6 +15,7 @@ A stylized view, with an optional label, that visually collects a logical groupi
 ## Declaration
 
 ```swift
+nonisolated
 struct GroupBox<Label, Content> where Label : View, Content : View
 ```
 

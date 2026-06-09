@@ -6,8 +6,8 @@
 A rectangle that specifies that the screenshot only samples a subset of the frame input.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

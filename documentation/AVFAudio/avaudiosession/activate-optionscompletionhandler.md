@@ -6,6 +6,11 @@
 Activates an audio session asynchronously on watchOS.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 - watchOS 5.0+
 
 ## Declaration
@@ -33,8 +38,12 @@ Playback of long-form audio on watchOS requires a Bluetooth audio route. If nece
 
 - [func setActive(Bool, options: AVAudioSession.SetActiveOptions) throws](avaudiosession/setactive(_:options:).md)
   Activates or deactivates your app’s audio session using the specified options.
+- [func deactivate(options: AVAudioSessionDeactivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/deactivate(options:completionhandler:).md)
+  Deactivates the audio session asynchronously.
 - [struct AVAudioSessionActivationOptions](avaudiosessionactivationoptions.md)
   Constants that describe the options to pass when activating the audio session.
+- [struct AVAudioSessionDeactivationOptions](avaudiosessiondeactivationoptions.md)
+  Options for deactivating an AVAudioSession
 
 
 ---

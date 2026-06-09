@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s incoming Mail account details.
+An incoming Mail account.
 
 **Availability**:
 - iOS 16.0+
@@ -11,8 +11,6 @@ A status report of the client’s incoming Mail account details.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

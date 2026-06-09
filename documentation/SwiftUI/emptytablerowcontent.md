@@ -15,6 +15,7 @@ A table row content that doesn’t produce any rows.
 ## Declaration
 
 ```swift
+nonisolated
 struct EmptyTableRowContent<Value> where Value : Identifiable
 ```
 

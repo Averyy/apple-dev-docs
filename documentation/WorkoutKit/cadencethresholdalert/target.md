@@ -20,8 +20,6 @@ var target: Measurement<UnitFrequency>
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](cadencethresholdalert/metric.md)
-  The metric for the alert.
 - [var targetQuantity: HKQuantity](cadencethresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target cadence threshold.
 

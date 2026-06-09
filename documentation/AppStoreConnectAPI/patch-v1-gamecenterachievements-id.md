@@ -94,7 +94,7 @@ PATCH https://api.appstoreconnect.apple.com/v1/gameCenterAchievements/304e0f56-6
   Add an achievement to a Game Center detail.
 - [Modify the Group for an Achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   Modify the achievement group for a specific achievement.
-- [PATCH /v1/gameCenterAchievements/{id}/relationships/activity](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
+- [Modify the activity for a Game Center achievement](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
 - [Delete an Achievement](delete-v1-gamecenterachievements-_id_.md)
   Delete a specific achievement.
 

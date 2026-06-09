@@ -8,6 +8,7 @@ The process that tried to start the Live Activity is missing a process identifie
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

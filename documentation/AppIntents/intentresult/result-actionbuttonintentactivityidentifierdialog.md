@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Indicates the Intent finished performing with an `AppIntent` to continue with
+Creates a result container with a follow-on intent, an identifier, and a dialog.
 
 **Availability**:
 - iOS 17.2+
@@ -22,8 +22,9 @@ static func result<Intent>(actionButtonIntent: Intent, activityIdentifier: Strin
 
 ## Parameters
 
-- `actionButtonIntent`: The `AppIntent` used perform next
-- `dialog`: A custom success dialog
+- `actionButtonIntent`: A follow-on intent that can run next.
+- `activityIdentifier`: An identifier for the follow-on intent.
+- `dialog`: A custom success dialog.
 
 
 ---

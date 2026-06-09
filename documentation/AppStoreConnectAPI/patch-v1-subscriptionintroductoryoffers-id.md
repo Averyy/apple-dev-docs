@@ -1,4 +1,4 @@
-# Modify an Introductory Offer
+# Modify an introductory offer
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,9 +22,9 @@ Update a specific introductory offer for an auto-renewable subscription.
 
 ## See Also
 
-- [Create an Introductory Offer](post-v1-subscriptionintroductoryoffers.md)
+- [Create an introductory offer](post-v1-subscriptionintroductoryoffers.md)
   Create an introductory offer for an auto-renewable subscription.
-- [Delete an Introductory Offer for a Subscription](delete-v1-subscriptionintroductoryoffers-_id_.md)
+- [Delete an introductory offer for a subscription](delete-v1-subscriptionintroductoryoffers-_id_.md)
   Delete a specific introductory offer for an auto-renewable subscription.
 
 

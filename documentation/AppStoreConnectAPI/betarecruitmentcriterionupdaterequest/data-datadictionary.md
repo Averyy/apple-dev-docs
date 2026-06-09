@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a beta recruitment criterion update request.
+
 **Availability**:
 - App Store Connect API 3.8+
 
@@ -16,6 +18,7 @@ object BetaRecruitmentCriterionUpdateRequest.Data
 
 ### Dictionaries
 - [object BetaRecruitmentCriterionUpdateRequest.Data.Attributes](betarecruitmentcriterionupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a beta recruitment criterion update request resource.
 
 ## Properties
 

@@ -16,6 +16,7 @@ object GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup
 
 ### Objects
 - [object GameCenterDetailUpdateRequest.Data.Relationships.GameCenterGroup.Data](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a detail.
 
 ## Properties
 

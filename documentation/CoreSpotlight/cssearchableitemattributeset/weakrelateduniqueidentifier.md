@@ -9,7 +9,7 @@ The unique identifier for the item to which the activity is related, but not lin
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

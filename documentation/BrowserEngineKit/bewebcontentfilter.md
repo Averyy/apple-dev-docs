@@ -25,6 +25,11 @@ class BEWebContentFilter
   Determines whether to block a URL.
 - [class var shouldEvaluateURLs: Bool](bewebcontentfilter/shouldevaluateurls.md)
   Determines whether the built-in web content filter is active.
+### Instance Methods
+- [func evaluateURL(URL, mainDocumentURL: URL?, completionHandler: (Bool, Data?) -> Void)](bewebcontentfilter/evaluateurl(_:maindocumenturl:completionhandler:).md)
+- [func evaluateURL(URL, mainFrameURL: URL, isMainFrame: Bool, completionHandler: (Bool, Data?) -> Void)](bewebcontentfilter/evaluateurl(_:mainframeurl:ismainframe:completionhandler:).md)
+- [func requestPermission(for: URL, referrerURL: URL?, completionHandler: (BEWebContentFilterPermissionDecision, (any Error)?) -> Void)](bewebcontentfilter/requestpermission(for:referrerurl:completionhandler:).md)
+- [func requestPermission(for: URL, referrerURL: URL?, presenting: UIView?, completionHandler: (BEWebContentFilterPermissionDecision, (any Error)?) -> Void)](bewebcontentfilter/requestpermission(for:referrerurl:presenting:completionhandler:).md)
 
 ## Relationships
 

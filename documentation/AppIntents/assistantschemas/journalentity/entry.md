@@ -20,10 +20,6 @@ The app entity describes a journal entry.
 var entry: some AssistantSchemas.Entity { get }
 ```
 
-## Mentions
-
-- [Making journaling actions available to Siri and Apple Intelligence](making-journaling-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.journal.entry` schema:
@@ -58,12 +54,7 @@ struct JournalEntity: AppEntity {
 }
 ```
 
-For more information about the `.journal` app intent domain, see [`Making journaling actions available to Siri and Apple Intelligence`](making-journaling-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [AssistantSchemas.JournalEntity](assistantschemas/journalentity.md)
-  Assistant schema conformance for app entities that describe journaling data.
+For more information about the `.journal` app intent domain, see doc:Making-journaling-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

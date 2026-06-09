@@ -17,8 +17,8 @@ Creates a view that represents the body of a toggle.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func makeBody(configuration: DefaultToggleStyle.Configuration) -> some View
+nonisolated
+func makeBody(configuration: DefaultToggleStyle.Configuration) -> some View
 ```
 
 #### Return Value

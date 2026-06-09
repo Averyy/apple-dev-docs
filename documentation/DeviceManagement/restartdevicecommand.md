@@ -11,8 +11,6 @@ The command to remotely and immediately restart a device.
 - Mac Catalyst 10.3+
 - macOS 10.13+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,7 +20,7 @@ object RestartDeviceCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

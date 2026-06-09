@@ -43,7 +43,7 @@ Effective prompts use simple language that tells the model what output you want 
 
 An on-device model may get confused with a long and indirect instruction because it contains unnecessary language that doesn’t add value. Instead of indirectly implying what the model needs to do, write a direct command to improve the clarity of the prompt for better results. This clarity also reduces the complexity and context window size for the on-device model.
 
-For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
 #### Give the Model a Role Persona and Tone
 
@@ -74,7 +74,7 @@ Change the model’s tone by writing your prompt in a voice you want the model t
 | Strategy | Approach |
 | --- | --- |
 | Improve clarity | Improve the wording of your input to make it more direct, concise, and easier to read. |
-| Use emphasis | Emphasize the importance of a command by adding words like “must, “should”, “do not” or avoid”. |
+| Use emphasis | Emphasize the importance of a command by adding words like “must”, “should”, “do not”, or avoid”. |
 | Repeat yourself | Try repeating key instructions at the end of your input to emphasize the importance. |
 
 Instead of trying to enforce accuracy, use a succinct prompt like “Answer this question” and evaluate the results you get.
@@ -219,12 +219,10 @@ When you encounter something with the on-device model that you expect to work bu
 
 ## See Also
 
+- [Managing the context window](managing-the-context-window.md)
+  Optimize your app’s token usage when prompting a model with the Foundation Models framework.
 - [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
-  Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
-  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [class LanguageModelSession](languagemodelsession.md)
   An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)
@@ -233,8 +231,12 @@ When you encounter something with the on-device model that you expect to work bu
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
   A linear history of entries that reflect an interaction with a session.
+- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
+  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
+- [struct ContextOptions](contextoptions.md)
+  Options that configure details that should appear in the prompt.
 
 
 ---

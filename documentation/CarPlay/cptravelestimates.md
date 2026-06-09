@@ -57,6 +57,11 @@ class CPTravelEstimates
   The remaining time for the travel estimate.
 ### Initializers
 - [init?(coder: NSCoder)](cptravelestimates/init(coder:).md)
+- [init(distanceRemaining: Measurement<UnitLength>, distanceRemainingToDisplay: Measurement<UnitLength>, timeRemaining: TimeInterval, routeDetails: [CPRouteDetail])](cptravelestimates/init(distanceremaining:distanceremainingtodisplay:timeremaining:routedetails:).md)
+  Initialize a @c CPTravelEstimates with distance, distance to display, time remaining, and additional trip information.
+### Instance Properties
+- [var routeDetails: [CPRouteDetail]](cptravelestimates/routedetails.md)
+  Additional trip information such as battery, fuel, or toll information to display with travel estimates.
 
 ## Relationships
 

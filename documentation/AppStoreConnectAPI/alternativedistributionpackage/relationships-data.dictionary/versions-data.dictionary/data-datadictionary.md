@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a version for the relationships of an alternative distribution package resource.
+The resource linkage identifying an alternative distribution package version associated with a package.
 
 **Availability**:
 - App Store Connect API 3.3+

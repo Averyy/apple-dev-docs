@@ -21,7 +21,7 @@ struct IntervalStep
 ## Topics
 
 ### Creating interval steps
-- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
+- [init(IntervalStep.Purpose, goal: WorkoutGoal, alert: (any WorkoutAlert)?)](intervalstep/init(_:goal:alert:).md)
 - [init(IntervalStep.Purpose, step: WorkoutStep)](intervalstep/init(_:step:).md)
   Creates a new interval step.
 ### Accessing step data
@@ -29,20 +29,9 @@ struct IntervalStep
   The purpose of the interval step.
 - [var step: WorkoutStep](intervalstep/step.md)
   The workout step to perform.
-### Comparing interval steps
-- [var hashValue: Int](intervalstep/hashvalue.md)
-  The hashed value of the interval step.
-- [func hash(into: inout Hasher)](intervalstep/hash(into:).md)
-  Hashes the essential components of the interval step by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](intervalstep/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two interval steps aren’t equal.
-- [static func == (IntervalStep, IntervalStep) -> Bool](intervalstep/==(_:_:).md)
-  Returns a Boolean value that indicates whether two interval steps are equal.
 ### Enumerations
 - [IntervalStep.Purpose](intervalstep/purpose-swift.enum.md)
   An interval step’s purpose.
-### Default Implementations
-- [Equatable Implementations](intervalstep/equatable-implementations.md)
 
 ## Relationships
 

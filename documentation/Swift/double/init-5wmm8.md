@@ -59,6 +59,7 @@ let p = Double("nan(0x10)")
 // p?.isNaN == true
 // String(p!) == "nan(0x10)"
 ```
+- An input string of `"snan"` (case insensitive) is converted into a *signaling NaN* value.  This form permits an optional payload in the same format as for a non-signaling NaN.
 
 A string in any other format than those described above or containing additional characters results in a `nil` value. For example, the following conversions result in `nil`:
 
@@ -68,7 +69,7 @@ A string in any other format than those described above or containing additional
   Double("0x1.25e4")  // Incorrect exponent format
 ```
 
-A decimal or hexadecimal string is converted to a `Double` instance using the IEEE 754 roundTiesToEven (default) rounding attribute. Values with absolute value smaller than `Double.leastNonzeroMagnitude` are rounded to plus or minus zero. Values with absolute value larger than `Double.greatestFiniteMagnitude` are rounded to plus or minus infinity.
+A decimal or hexadecimal string is converted to a `Double` instance using the IEEE 754 roundTiesToEven (default) rounding attribute. Values with absolute value smaller than one-half of `Double.leastNonzeroMagnitude` are rounded to plus or minus zero. Values with absolute value larger than `Double.greatestFiniteMagnitude` are rounded to plus or minus infinity.
 
 ```swift
   let y = Double("1.23e-9999")

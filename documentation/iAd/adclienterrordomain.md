@@ -8,7 +8,7 @@ The error domain that passes to the completion handler.
 ## Declaration
 
 ```swift
-let ADClientErrorDomain: String
+extern NSString * const ADClientErrorDomain;
 ```
 
 #### Discussion
@@ -17,10 +17,7 @@ After [`ADClient`](adclient.md), `NSErrors` from the `ADClientErrorDomain` are p
 
 ## See Also
 
-- [struct ADClientError](adclienterror-swift.struct.md)
-  The group of error codes that pass from the attribution response to the completion handler block.
-- [ADClientError.Code](adclienterror-swift.struct/code.md)
-  The error codes that pass from the attribution response to the completion handler.
+- [ADClientError](adclienterror.md)
 
 
 ---

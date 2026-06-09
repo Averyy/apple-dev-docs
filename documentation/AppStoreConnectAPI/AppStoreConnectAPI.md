@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: module
 
-Automate the tasks you perform on the Apple Developer website and in App Store Connect.
+The data structure that represents an app store connect api resource.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -13,6 +13,8 @@ Automate the tasks you perform on the Apple Developer website and in App Store C
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
 
 #### Overview
+
+Automate the tasks you perform on the Apple Developer website and in App Store Connect.
 
 The App Store Connect API is a REST API that enables the automation of actions you take in App Store Connect. Click [`OpenAPI specification`](https://developer.apple.comhttps://developer.apple.com/sample-code/app-store-connect/app-store-connect-openapi-specification.zip) to download the specification file.
 

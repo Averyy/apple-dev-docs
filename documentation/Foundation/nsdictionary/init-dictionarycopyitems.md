@@ -39,6 +39,8 @@ The [`copy(with:)`](nscopying/copy(with:).md) method performs a shallow copy. If
 
 - [convenience init(dictionary: [AnyHashable : Any])](nsdictionary/init(dictionary:)-9fw1u.md)
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
+- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+  Initializes a newly allocated dictionary from the given key-value pairs.
 
 
 ---

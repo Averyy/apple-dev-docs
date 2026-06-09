@@ -1,4 +1,4 @@
-# List Build Beta Details
+# List build beta details
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -23,11 +23,11 @@ Find and list build beta details for all builds.
 
 ## See Also
 
-- [Read Build Beta Detail Information](get-v1-buildbetadetails-_id_.md)
+- [Read build beta detail information](get-v1-buildbetadetails-_id_.md)
   Get a specific build beta details resource.
-- [Read the Build Information of a Build Beta Detail](get-v1-buildbetadetails-_id_-build.md)
+- [Read the build information of a build beta detail](get-v1-buildbetadetails-_id_-build.md)
   Get the build information for a specific build beta details resource.
-- [GET /v1/buildBetaDetails/{id}/relationships/build](get-v1-buildbetadetails-_id_-relationships-build.md)
+- [Get the build ID for a build beta detail](get-v1-buildbetadetails-_id_-relationships-build.md)
 
 
 ---

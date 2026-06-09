@@ -10,8 +10,6 @@ The return-to-service request details.
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

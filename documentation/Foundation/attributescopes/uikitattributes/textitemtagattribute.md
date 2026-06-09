@@ -8,7 +8,6 @@
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.0+
-- watchOS 8.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-The per-corner style of a rectangular shape. A corner can be of fixed corner radius, or be concentric to the container shape. To create such a shape with configurable corner styles, call one of the initializers of [`ConcentricRectangle`](concentricrectangle.md) and pass in the style.
+A style that describes the corner of a rectangular shape.
 
 **Availability**:
 - iOS 26.0+
@@ -22,18 +22,20 @@ struct Style
 
 #### Overview
 
+A corner can be square, rounded with a fixed-radius curve, or rounded with a curve that’s concentric to the container shape. For more information on how to create a shape with configurable corner styles, see [`ConcentricRectangle`](concentricrectangle.md).
+
 > **Note**: [`ConcentricRectangle`](concentricrectangle.md), [`RoundedRectangularShape`](roundedrectangularshape.md)
 
 ## Topics
 
 ### Type Properties
 - [static var concentric: Edge.Corner.Style](edge/corner/style/concentric.md)
-  The concentric corner style. When a corner is concentric to its container, it will adjust the current corner radius to ensure that the container corner radius equals to current corner radius plus the distance between corners.
+  A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius.
 ### Type Methods
 - [static func concentric(minimum: Edge.Corner.Style?) -> Edge.Corner.Style](edge/corner/style/concentric(minimum:).md)
-  The concentric corner style with an optional minimum corner style. When a corner is concentric to its container, it will adjust the current corner radius to ensure that the container corner radius equals to current corner radius plus the distance between corners. If the current corner is too far away from the container corner, the radius will be resolved as zero unless a minimum corner style is provided.
+  A rounded corner style where the corner’s radius shares a center point with the container shape’s corner radius, with an optional minimum radius.
 - [static func fixed(CGFloat) -> Edge.Corner.Style](edge/corner/style/fixed(_:).md)
-  The fixed radius corner style.
+  A rounded corner style where the corner’s radius is the value you provide.
 ### Default Implementations
 - [ExpressibleByFloatLiteral Implementations](edge/corner/style/expressiblebyfloatliteral-implementations.md)
 - [ExpressibleByIntegerLiteral Implementations](edge/corner/style/expressiblebyintegerliteral-implementations.md)

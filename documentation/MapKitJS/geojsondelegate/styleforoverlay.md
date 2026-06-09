@@ -12,9 +12,9 @@ Overrides the style of overlays.
 
 ```swift
 styleForOverlay?(
-        overlay: PolylineOverlay | PolygonOverlay,
-        geoJSON: GeoJSONTypes.LineString | GeoJSONTypes.Polygon,
-    ): Style;
+    overlay: PolylineOverlay | PolygonOverlay,
+    geoJSON: GeoJSONTypes.LineString | GeoJSONTypes.Polygon,
+): Style;
 ```
 
 #### Return Value

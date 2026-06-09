@@ -1,4 +1,4 @@
-# Submit an App for Beta Review
+# Submit an app for beta review
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -10,7 +10,7 @@ Submit an app for beta app review to allow external testing.
 
 #### Overview
 
-> ❗ **Important**:  Before submitting to beta app review, you need to add a description for all `betaAppLocalizations`. To add a description, use [`Modify a Beta App Localization`](patch-v1-betaapplocalizations-_id_.md).
+> ❗ **Important**:  Before submitting to beta app review, you need to add a description for all `betaAppLocalizations`. To add a description, use [`Modify a beta app localization`](patch-v1-betaapplocalizations-_id_.md).
 
 ## Endpoint
 

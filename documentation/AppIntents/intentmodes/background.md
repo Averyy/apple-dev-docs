@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The app intent can perform its action in the background.
+A value that indicates the action can run in the background.
 
 **Availability**:
 - iOS 26.0+

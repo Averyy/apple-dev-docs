@@ -16,7 +16,7 @@ Create an alternative distribution package for an App Store version.
 
 #### Discussion
 
-> 💡 **Tip**:  This endpoint requires the `appStoreVersion` in the payload. Obtain the `appStoreVersion` resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
+> 💡 **Tip**:  This endpoint requires the `appStoreVersion` in the payload. Obtain the `appStoreVersion` resource ID from the [`List all app store versions for an app`](get-v1-apps-_id_-appstoreversions.md) response.
 
 ##### Example Request and Response
 
@@ -74,7 +74,7 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackages
   Create distribution packages for your apps that you distribute on alternative marketplaces or on the web.
 - [Read Alternative Distribution Package Information](get-v1-alternativedistributionpackages-_id_.md)
   Get information about a specific alternative distribution package.
-- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an app store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
 - [Read Version Information for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-versions.md)
   Get version detail information about a specific alternative distribution package.

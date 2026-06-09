@@ -6,7 +6,7 @@
 A text block that appears as a cell in a text table.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -31,6 +31,8 @@ class NSTextTableBlock
   Returns the table column at which this text table block starts.
 - [var columnSpan: Int](nstexttableblock/columnspan.md)
   Returns the number of table columns spanned by this text table block.
+### Initializers
+- [init?(coder: NSCoder)](nstexttableblock/init(coder:).md)
 
 ## Relationships
 

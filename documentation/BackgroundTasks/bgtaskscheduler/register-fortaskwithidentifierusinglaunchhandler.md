@@ -11,6 +11,7 @@ Register a launch handler for the task with the associated identifier that’s e
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 

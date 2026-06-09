@@ -53,6 +53,8 @@ Create various types of force effects, such as vortex, drag, and turbulence. Add
   Simulate physical interactions between entities or systems.
 - [Physics joints and pins](physics-joints-and-pins.md)
   Simulate joint physics that connect virtual objects.
+- [Cloth simulation](physics-cloth-simulation.md)
+  Add fabric, soft surfaces, and draping materials that bend, fold, and respond to forces and contact in your 3D scenes.
 
 
 ---

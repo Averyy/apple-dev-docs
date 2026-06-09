@@ -8,7 +8,7 @@ Applies a managed content style to the view.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.4+
+- Mac Catalyst 17.2+
 - macOS 26.4+
 - visionOS 26.4+
 

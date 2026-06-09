@@ -12,7 +12,7 @@ The error code for an ARKit session error.
 ## Declaration
 
 ```swift
-var code: ARKitSession.Error.Code { get }
+let code: ARKitSession.Error.Code
 ```
 
 ## See Also
@@ -21,7 +21,7 @@ var code: ARKitSession.Error.Code { get }
   The data provider that causes an error in a session, if any.
 - [ARKitSession.Error.Code](arkitsession/error/code-swift.enum.md)
   The error codes for ARKit sessions.
-- [var errorDescription: String?](arkitsession/error/errordescription.md)
+- [let errorDescription: String?](arkitsession/error/errordescription.md)
   A localized message that describes the error that occurred.
 
 

@@ -8,6 +8,7 @@ Indicates the person hasn’t granted your app permission to use the shared netw
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

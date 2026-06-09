@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](enumeratedsequence/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (EnumeratedSequence<Base>.Index, EnumeratedSequence<Base>.Index) -> Bool](enumeratedsequence/index/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

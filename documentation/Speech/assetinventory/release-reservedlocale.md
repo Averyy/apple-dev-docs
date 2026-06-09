@@ -28,6 +28,15 @@ static func release(reservedLocale: Locale) async -> Bool
 
 Unsubscribes from any assets that depended on the locale.
 
+## See Also
+
+- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+  Add an asset locale to the app’s current reservations.
+- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+  The app’s current asset locale reservations.
+- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+  The number of locale reservations permitted to an app.
+
 
 ---
 

@@ -57,12 +57,6 @@ See [`init(_:entityProvider:comparators:)`](entityqueryproperty/init(_:entitypro
   A type that provides the properties to include in a property-matched query.
 - [Property comparators](property-comparators.md)
   Specify the type of comparison to perform during a property-matched query.
-- [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
-  The potential properties you can use to sort the results of a query.
-- [struct EntityQuerySortableByProperty](entityquerysortablebyproperty.md)
-  Details about a specific property you use to sort the query results.
-- [struct EntityQuerySort](entityquerysort.md)
-  The properties to use to sort the results when the query runs.
 
 
 ---

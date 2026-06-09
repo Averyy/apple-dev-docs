@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single group resource.
+A response containing a single Game Center group that shares leaderboards and achievements across apps.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -23,7 +23,7 @@ object GameCenterGroupResponse
 ## See Also
 
 - [object GameCenterGroup](gamecentergroup.md)
-  The data structure that represents a group resource.
+  A named group that shares leaderboards and achievements across multiple apps in Game Center.
 - [object GameCenterGroupCreateRequest](gamecentergroupcreaterequest.md)
   The request body you use to create a group.
 - [object GameCenterGroupGameCenterAchievementsV2LinkagesRequest](gamecentergroupgamecenterachievementsv2linkagesrequest.md)

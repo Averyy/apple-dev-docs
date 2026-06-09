@@ -12,8 +12,6 @@ A dictionary that contains a managed app’s feedback item.
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

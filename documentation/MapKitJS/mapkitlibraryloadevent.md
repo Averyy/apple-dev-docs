@@ -11,7 +11,7 @@ An event that occurs when the MapKit JS library is loaded or fails loading.
 ## Declaration
 
 ```swift
-class MapKitLibraryLoadEvent extends MapKitEvent
+class MapKitLibraryLoadEvent extends Event
 ```
 
 ## Topics
@@ -23,7 +23,7 @@ class MapKitLibraryLoadEvent extends MapKitEvent
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

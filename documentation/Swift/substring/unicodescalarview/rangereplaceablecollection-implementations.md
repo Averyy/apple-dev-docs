@@ -27,7 +27,7 @@
   Adds the elements of a sequence or collection to the end of this collection.
 - [func applying(CollectionDifference<Self.Element>) -> Self?](substring/unicodescalarview/applying(_:).md)
   Applies the given difference to this collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](substring/unicodescalarview/filter(_:).md)
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> Self](substring/unicodescalarview/filter(_:)-6e5i2.md)
   Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func insert(Self.Element, at: Self.Index)](substring/unicodescalarview/insert(_:at:).md)
   Inserts a new element into the collection at the specified position.

@@ -11,7 +11,7 @@ Returns the topmost overlay at a given point on the webpage.
 ## Declaration
 
 ```swift
-topOverlayAtPoint(point: DOMPoint): Overlay | undefined;
+topOverlayAtPoint(point: DOMPoint): Overlay | null;
 ```
 
 #### Return Value

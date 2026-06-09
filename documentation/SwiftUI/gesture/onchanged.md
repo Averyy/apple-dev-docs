@@ -17,8 +17,8 @@ Adds an action to perform when the gesture’s value changes.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func onChanged(_ action: @escaping (Self.Value) -> Void) -> _ChangedGesture<Self>
+nonisolated
+func onChanged(_ action: @escaping (Self.Value) -> Void) -> _ChangedGesture<Self>
 ```
 
 ## Mentions

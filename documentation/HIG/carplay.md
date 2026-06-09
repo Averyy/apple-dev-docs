@@ -81,6 +81,7 @@ A CarPlay app needs to handle errors gracefully and report them to people only w
 [CarPlay App Programming Guide](https://developer.apple.com/carplay/documentation/CarPlay-App-Programming-Guide.pdf)
 
 #### Videos
+- [Rev up your CarPlay app](https://developer.apple.com/videos/play/wwdc2026/212) - Explore new features for your CarPlay audio, navigation, voice-based conversational apps, and more. Discover how to create CarPlay video apps so people can browse and watch their favorite videos in supported vehicles when parked. Learn how to integrate thumbnails, media information, and voice controls in your CarPlay app.
 - [Turbocharge your app for CarPlay](https://developer.apple.com/videos/play/wwdc2025/216) - Learn how to bring your Live Activities and widgets to CarPlay and CarPlay Ultra so people can view progress of their activities and see relevant information at a glance. Explore new template options available to all CarPlay apps, and learn how navigation apps can provide turn-by-turn metadata for display in the car’s instrument cluster or HUD.
 
 ## Change log

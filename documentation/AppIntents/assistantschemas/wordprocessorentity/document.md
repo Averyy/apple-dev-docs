@@ -20,10 +20,6 @@ The app entity describes a text document.
 var document: some AssistantSchemas.Entity { get }
 ```
 
-## Mentions
-
-- [Making word processor actions available to Siri and Apple Intelligence](making-word-processor-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation.The following example shows an app entity that conforms to the `.wordProcessor.document` schema:
@@ -51,15 +47,6 @@ struct WordProcessorDocumentEntity: AppEntity {
     var modificationDate: Date?
 }
 ```
-
-## See Also
-
-- [var page: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/page.md)
-  The app entity describes a page in a text document.
-- [var template: some AssistantSchemas.Entity](assistantschemas/wordprocessorentity/template.md)
-  The app entity describes a text document template.
-- [AssistantSchemas.WordProcessorEntity](assistantschemas/wordprocessorentity.md)
-  Assistant schema conformance for app entities that describe text documents.
 
 
 ---

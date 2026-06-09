@@ -13,8 +13,6 @@ The payload that configures mobile device management (MDM) settings.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,10 +22,11 @@ object MDM
 
 ## Mentions
 
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
-- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
-- [Managing MDM Devices and Users in macOS](managing-mdm-devices-and-users-in-macos.md)
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)
+- [Managing devices and users in macOS](managing-devices-and-users-in-macos.md)
 - [Migrating managed devices](migrating-managed-devices.md)
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
@@ -37,10 +36,10 @@ Specify `com.apple.mdm` as the payload type.
 
 Also define the following four standard payload values in your MDM payload:
 
-- **`PayloadIdentifier`**: The reverse-DNS style identifier that identifies the profile; for example, `com.example.myprofile`. The system uses this value to determine whether to replace an existing profile or add a new one.
-- **`PayloadUUID`**: A globally unique identifier for the profile. In macOS, you can use `uuidgen` to generate this value.
-- **`PayloadType`**: The payload type. Set to `com.apple.mdm` to designate that this payload is an MDM payload.
-- **`PayloadVersion`**: The version number of the profile format, which describes the version of the configuration profile as a whole, not of the individual profiles within it. Set this value to `1`.
+- `PayloadIdentifier`: The reverse-DNS style identifier that identifies the profile; for example, `com.example.myprofile`. The system uses this value to determine whether to replace an existing profile or add a new one.
+- `PayloadUUID`: A globally unique identifier for the profile. In macOS, you can use `uuidgen` to generate this value.
+- `PayloadType`: The payload type. Set to `com.apple.mdm` to designate that this payload is an MDM payload.
+- `PayloadVersion`: The version number of the profile format, which describes the version of the configuration profile as a whole, not of the individual profiles within it. Set this value to `1`.
 
 > **Note**:  MDM reserves profile payload dictionary keys with the *Payload* prefix. Don’t treat them as managed preferences.
 
@@ -49,12 +48,12 @@ Also define the following four standard payload values in your MDM payload:
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, macOS, tvOS, visionOS |
 | Requires supervision | watchOS |
-| Requires user-approved MDM | NA |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -226,22 +225,22 @@ Also define the following four standard payload values in your MDM payload:
 - `1024`: Allow security-related queries.
 - `2048`: Allow manipulation of settings.
 - `4096`: Allow app management. Don’t set to `0`. Specify `1` if you specify `2`. Specify `64` if you specify `128`. Ignored if you set a value for `ManagedAppleID`. > **Note**:  When updating the payload, the addition of any access right is an error, and the update is rejected.
-- `AssignedManagedAppleID` (string): The Managed Apple Account pre-assigned to the authenticated user. Required for account-driven enrollments. Available in iOS 15 and later, and macOS 14 and later. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
-- `CheckInURL` (string): The URL that the device should use to check in during installation. The URL must begin with the `https://` URL scheme and may contain a port number (`:1234`, for example). If not set, the system uses `ServerURL`. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
-- `CheckInURLPinningCertificateUUIDs` ([string]): An array of strings, each containing the payload UUID of a certificate to use when evaluating trust to the ‘…/checkin/’ URLs of MDM servers.
+- `AssignedManagedAppleID` (string): The Managed Apple Account pre-assigned to the authenticated user. Required for account-driven enrollments. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update. Available: iOS 15+ | iPadOS 15+ | macOS 14+ | visionOS 1.1+
+- `CheckInURL` (string): The URL that the device should use to check in during installation. The URL must begin with the `https://` URL scheme and may contain a port number (`:1234`, for example). If not set, the system uses `ServerURL`. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update.
+- `CheckInURLPinningCertificateUUIDs` ([string]): An array of strings, each containing the payload UUID of a certificate to use when evaluating trust to the ‘…/checkin/’ URLs of MDM servers. Available: iOS 13.4+ | iPadOS 13.4+ | macOS 10.13+ | tvOS 13.4+ | visionOS 1.1+ | watchOS 10+
 - `CheckOutWhenRemoved` (boolean): If ‘true’, the device attempts to send a [`Check Out`](check-out.md) message to the ‘CheckInURL’ when the profile is removed.
-- `EnrollmentMode` (string): The enrollment mode the server indicates to use when enrolling. Required for account-driven enrollment. Available in iOS 15 and macOS 14, and later. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
+- `EnrollmentMode` (string): The enrollment mode the server indicates to use when enrolling. Required for account-driven enrollment. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update. Available: iOS 15+ | iPadOS 15+ | macOS 14+ | visionOS 1.1+
 - `IdentityCertificateUUID` (string) *(required)*: The UUID of the certificate payload for the device’s identity. It may also point to a SCEP payload.
-- `PinningRevocationCheckRequired` (boolean): If ‘true’, the system fails the connection attempt unless it obtains a verified positive response during certificate revocation checks. If ‘false’, the system performs revocation checks on a best-attempt basis, where failure to reach the server isn’t considered fatal.
-- `PromptUserToAllowBootstrapTokenForAuthentication` (boolean): If ‘true’, the system warns the user that they need to reboot into RecoveryOS and allow the MDM to use the bootstrap token for authentication for certain sensitive operations such as enabling kernel extensions or installing some types of software updates. If the MDM doesn’t need to perform these operations, it can leave this key set to ‘false’, and the user isn’t notified. The SettingsCommand.Command.Settings.MDMOptions.MDMOptions command overrides this default value. This setting only applies to devices that have ‘BootstrapTokenRequiredForSoftwareUpdate’ or ‘BootstrapTokenRequiredForKernelExtensionApproval’ set to ‘true’ in their SecurityInfoResponse.SecurityInfo. DEP-enrolled devices are automatically allowed to use the bootstrap token for authentication. Available in macOS 11 and later.
-- `RequiredAppIDForMDM` (integer): This property specifies an iTunes Store ID for an app the system can install with the InstallApplicationCommand, without any approval from the user. The MDM vendor or managing organization generally provides this app, which enhances the management experience for the user. The device shows the user details about this app in the account-driven enrollment process prior to installing the MDM profile. Use this property with account-driven MDM enrollments that normally require user approval for app installs through MDM. Only account-driven enrollments support this property and other enrollment types ignore it. Available in iOS 15.1 and later. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
+- `PinningRevocationCheckRequired` (boolean): If ‘true’, the system fails the connection attempt unless it obtains a verified positive response during certificate revocation checks. If ‘false’, the system performs revocation checks on a best-attempt basis, where failure to reach the server isn’t considered fatal. Available: iOS 13.4+ | iPadOS 13.4+ | macOS 10.13+ | tvOS 13.4+ | visionOS 1.1+ | watchOS 10+
+- `PromptUserToAllowBootstrapTokenForAuthentication` (boolean): If ‘true’, the system warns the user that they need to reboot into RecoveryOS and allow the MDM to use the bootstrap token for authentication for certain sensitive operations such as enabling kernel extensions or installing some types of software updates. If the MDM doesn’t need to perform these operations, it can leave this key set to ‘false’, and the user isn’t notified. The SettingsCommand.Command.Settings.MDMOptions.MDMOptions command overrides this default value. This setting only applies to devices that have ‘BootstrapTokenRequiredForSoftwareUpdate’ or ‘BootstrapTokenRequiredForKernelExtensionApproval’ set to ‘true’ in their SecurityInfoResponse.SecurityInfo. ADE-enrolled devices are automatically allowed to use the bootstrap token for authentication. Available: macOS 11+
+- `RequiredAppIDForMDM` (integer): This property specifies an iTunes Store ID for an app the system can install with the InstallApplicationCommand, without any approval from the user. The MDM vendor or managing organization generally provides this app, which enhances the management experience for the user. The device shows the user details about this app in the account-driven enrollment process prior to installing the MDM profile. Use this property with account-driven MDM enrollments that normally require user approval for app installs through MDM. Only account-driven enrollments support this property and other enrollment types ignore it. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update. Available: iOS 15.1+ | iPadOS 15.1+ | visionOS 1.1+
 - `ServerCapabilities` ([string]): A unique array of strings indicating server capabilities: - `com.apple.mdm.per-user-connections`: Indicates that the server supports both device and user connections. This must be present when managing Shared iPad or macOS devices.
 - `com.apple.mdm.bootstraptoken`: Indicates that the server supports escrowing the bootstrap token. This must be present for the device to create a bootstrap token and send it to the server. Available in iOS 26 and later, macOS 11 and later, and visionOS 26 and later.
 - `com.apple.mdm.token`: Indicates that the server supports the [`Get Token`](get-token.md) CheckIn message type. This must be present for the device to use [`Get Token`](get-token.md) CheckIn message when appropriate. > **Note**:  When updating the payload, the `com.apple.mdm.per-user-connections` capability must not be added or removed. Any such change is an error, and the update is rejected.
-- `ServerURL` (string) *(required)*: The URL that the device contacts to retrieve device management instructions. The URL must begin with the `https://` URL scheme, and may contain a port number (`:1234`, for example). > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
-- `ServerURLPinningCertificateUUIDs` ([string]): An array of strings, each containing the UUID of a certificate to use when evaluating trust to the ‘…/connect/’ URLs of MDM servers.
+- `ServerURL` (string) *(required)*: The URL that the device contacts to retrieve device management instructions. The URL must begin with the `https://` URL scheme, and may contain a port number (`:1234`, for example). > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update.
+- `ServerURLPinningCertificateUUIDs` ([string]): An array of strings, each containing the UUID of a certificate to use when evaluating trust to the ‘…/connect/’ URLs of MDM servers. Available: iOS 13.4+ | iPadOS 13.4+ | macOS 10.13+ | tvOS 13.4+ | visionOS 1.1+ | watchOS 10+
 - `SignMessage` (boolean): If ‘true’, each message coming from the device carries the additional ‘Mdm-Signature’ HTTP header.
-- `Topic` (string) *(required)*: The topic that MDM listens to for push notifications. The certificate that the server uses to send push notifications must have the same topic in its subject. The topic must begin with the ‘com.apple.mgmt.’ prefix. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the update is rejected.
+- `Topic` (string) *(required)*: The topic that MDM listens to for push notifications. The certificate that the server uses to send push notifications must have the same topic in its subject. The topic must begin with the ‘com.apple.mgmt.’ prefix. > **Note**:  When updating the payload, the value of this key must not change. Any change is an error, and the system rejects the update.
 - `UseDevelopmentAPNS` (boolean): If ‘true’, the device uses the development APNS servers. Otherwise, the device uses the production servers. Set to ‘false’ if your Apple Push Notification Service certificate was issued by the Apple Push Certificate Portal (‘https://identity.apple.com/pushcert’). That portal only issues certificates for the production push environment.
 
 ## See Also

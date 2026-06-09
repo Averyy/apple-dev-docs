@@ -57,6 +57,7 @@ struct Keys
 - [CustomDebugStringConvertible Implementations](dictionary/keys-swift.struct/customdebugstringconvertible-implementations.md)
 - [CustomStringConvertible Implementations](dictionary/keys-swift.struct/customstringconvertible-implementations.md)
 - [Equatable Implementations](dictionary/keys-swift.struct/equatable-implementations.md)
+- [Hashable Implementations](dictionary/keys-swift.struct/hashable-implementations.md)
 - [Sequence Implementations](dictionary/keys-swift.struct/sequence-implementations.md)
 
 ## Relationships
@@ -68,6 +69,7 @@ struct Keys
 - [CustomStringConvertible](customstringconvertible.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
+- [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Sequence](sequence.md)

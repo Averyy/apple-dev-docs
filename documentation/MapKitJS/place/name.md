@@ -11,7 +11,7 @@ The name of the place.
 ## Declaration
 
 ```swift
-name?: string;
+name: string | null;
 ```
 
 #### Discussion

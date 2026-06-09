@@ -17,7 +17,7 @@ Grows the array to have enough capacity for the specified number of elements, th
 ## Declaration
 
 ```swift
-mutating func append<E>(addingCapacity uninitializedCount: Int, initializingWith initializer: (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
+mutating func append<E>(addingCapacity uninitializedCount: Int, initializingWith initializer: @_lifetime(span: copy span) (inout OutputSpan<Element>) throws(E) -> Void) throws(E) where E : Error
 ```
 
 #### Discussion

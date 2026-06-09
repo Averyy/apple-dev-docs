@@ -242,6 +242,7 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [BindableData](../RealityKit/BindableData.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [CodingKeyRepresentable](codingkeyrepresentable.md)
 - [Comparable](comparable.md)
@@ -261,11 +262,14 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
 - [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLIdentifier](../CreateML/MLIdentifier.md)
 - [MLTensorRangeExpression](../CoreML/MLTensorRangeExpression.md)
 - [MirrorPath](mirrorpath.md)
+- [NDArray.RangeExpression](../CoreAI/NDArray/RangeExpression.md)
 - [Numeric](numeric.md)
 - [Plottable](../Charts/Plottable.md)
 - [PrimitivePlottableProtocol](../Charts/PrimitivePlottableProtocol.md)
@@ -277,6 +281,9 @@ On 32-bit platforms, `Int` is the same size as `Int32`, and on 64-bit platforms,
 - [SignedInteger](signedinteger.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also
 

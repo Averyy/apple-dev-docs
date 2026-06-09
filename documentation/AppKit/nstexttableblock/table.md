@@ -6,7 +6,7 @@
 Returns the table containing this text table block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

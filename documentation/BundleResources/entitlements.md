@@ -37,6 +37,9 @@ You typically let Xcode manage the entitlements file for you. For information on
   Wrap a daemon in an app-like structure to use an entitlement thatʼs authorized by a provisioning profile.
 ### Accessibility
 - [com.apple.developer.accessibility.merchant-api-control](entitlements/com.apple.developer.accessibility.merchant-api-control.md)
+### Accessory Access
+- [Accessory Access](entitlements/com.apple.developer.accessory-access.usb.md)
+  An entitlement that enables an app to use the Accessory Access framework to manage access to USB devices in macOS.
 ### AccessorySetupKit
 - [com.apple.developer.accessory-setup-discovery-extension](entitlements/com.apple.developer.accessory-setup-discovery-extension.md)
   An entitlement that lets an app extension discover and set up accessories.
@@ -130,8 +133,10 @@ You typically let Xcode manage the entitlements file for you. For information on
 - [com.apple.developer.mail-client](entitlements/com.apple.developer.mail-client.md)
   A Boolean that indicates whether the app can act as a user’s default email client.
 ### EnergyKit
-- [com.apple.developer.energykit](entitlements/com.apple.developer.energykit.md)
+- [EnergyKit Entitlement](entitlements/com.apple.developer.energykit.md)
   The entitlement the system requires for an app to use the EnergyKit framework.
+- [EnergyKit LoadEvents Entitlement](entitlements/com.apple.developer.energykit.loadevents-experience.md)
+  An entitlement that works with the EnergyKit framework to share energy data and usage insights in the Home app.
 ### Enterprise
 - [Increased performance headroom](entitlements/com.apple.developer.app-compute-category.md)
   An entitlement that allows an app to adjust thresholds that balance thermal dissipation and performance against fan noise and other factors.
@@ -170,8 +175,8 @@ You typically let Xcode manage the entitlements file for you. For information on
 - [FinanceKit](entitlements/com.apple.developer.financekit.md)
   An entitlement that allows an app to access financial data in FinanceKit.
 ### Foundation Models
-- [com.apple.developer.foundation-model-adapter](entitlements/com.apple.developer.foundation-model-adapter.md)
-  A Boolean value that indicates whether the app can enable custom adapters for the Foundation Models framework.
+- [com.apple.developer.private-cloud-compute](entitlements/com.apple.developer.private-cloud-compute.md)
+  A Boolean value that indicates whether the app can use Private Cloud Compute.
 ### FSKit
 - [com.apple.developer.fskit.fsmodule](entitlements/com.apple.developer.fskit.fsmodule.md)
   An entitlement that indicates an extension provides an FSKit filesystem.
@@ -237,14 +242,16 @@ You typically let Xcode manage the entitlements file for you. For information on
 - [Managed App Installation UI](entitlements/com.apple.developer.managed-app-distribution.install-ui.md)
   An entitlement you enable so your app can use Managed App Distribution.
 ### Media
-- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
-  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
+- [com.apple.developer.media-device-extension](entitlements/com.apple.developer.media-device-extension.md)
+  An array of media sharing protocol identifiers that an extension supports.
 - [com.apple.developer.coremotion.head-pose](entitlements/com.apple.developer.coremotion.head-pose.md)
   An entitlement that enables someone’s head movement to determine the orientation of spatialized sound output.
 - [com.apple.developer.spatial-audio.profile-access](entitlements/com.apple.developer.spatial-audio.profile-access.md)
   An entitlement that enables your app to use the personalized spatial audio profile.
 - [com.apple.developer.avfoundation.multitasking-camera-access](entitlements/com.apple.developer.avfoundation.multitasking-camera-access.md)
   A Boolean value that indicates whether an app may continue using the camera at the same time as another foreground app.
+- [Media Device Discovery Extension](entitlements/com.apple.developer.media-device-discovery-extension.md)
+  An entitlement for an app extension that adds a specific third-party media receiver to a system device-picker UI.
 ### Memory
 - [com.apple.developer.kernel.increased-memory-limit](entitlements/com.apple.developer.kernel.increased-memory-limit.md)
   A Boolean value that indicates whether core features of your app may perform better with a higher memory limit on supported devices.
@@ -264,9 +271,6 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Navigation
 - [Default Navigation](entitlements/com.apple.developer.navigation-app.md)
   A Boolean value that indicates whether an app can be the default navigation app on someone’s device.
-### NearbyInteraction
-- [Nearby Interaction NI DL-TDOA API (development)](entitlements/com.apple.developer.nearbyinteraction.dltdoa.md)
-  A Boolean value that indicates whether your app can enable Downlink Time-Difference-of-Arrival (DL-DTOA) ranging.
 ### Networking
 - [Network Extensions Entitlement](entitlements/com.apple.developer.networking.networkextension.md)
   The APIs an app can use to customize networking features.
@@ -334,6 +338,9 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Siri
 - [Siri Entitlement](entitlements/com.apple.developer.siri.md)
   A Boolean value that indicates whether the app handles Siri requests.
+### Suggested Actions
+- [Suggested Actions](entitlements/com.apple.developer.suggested-actions.md)
+  A Boolean value that indicates whether a messaging app displays suggested actions for a message.
 ### StoreKit
 - [com.apple.developer.storekit.custom-purchase-link.allowed-regions](entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions.md)
   An entitlement that enables a qualifying app to offer external purchases within app or at a website, in specific regions.
@@ -356,6 +363,9 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Translation
 - [Translation](entitlements/com.apple.developer.translation-app.md)
   A Boolean value that indicates whether an app can be the default translation app on someone’s device.
+### TrustInsights
+- [Trust Insights](entitlements/com.apple.developer.trustinsights.base.md)
+  A string that describes the insight suite an app should use with the TrustInsights framework.
 ### TV
 - [User Management Entitlement](entitlements/com.apple.developer.user-management.md)
   The entitlement for distinguishing between multiple user accounts on Apple TV.

@@ -21,7 +21,8 @@ optional func comboBoxSelectionDidChange(_ notification: Notification)
 
 ## See Also
 
-- [Combo Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ComboBox/ComboBox.html#//apple_ref/doc/uid/10000020i)
+- [func comboBoxSelectionIsChanging(Notification)](nscomboboxdelegate/comboboxselectionischanging(_:).md)
+  Informs the delegate that the pop-up list selection is changing.
 - [func comboBoxSelectionIsChanging(Notification)](nscomboboxdelegate/comboboxselectionischanging(_:).md)
   Informs the delegate that the pop-up list selection is changing.
 - [func comboBoxWillDismiss(Notification)](nscomboboxdelegate/comboboxwilldismiss(_:).md)

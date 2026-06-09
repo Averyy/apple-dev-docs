@@ -16,7 +16,7 @@ static var fromEOF: FSVolume.PreallocateFlags { get }
 
 #### Discussion
 
-When implementing this behavior, ignore any offset in the preallocate call. This flag is currently set for all [`preallocateSpace(for:at:length:flags:replyHandler:)`](fsvolume/preallocateoperations/preallocatespace(for:at:length:flags:replyhandler:).md) calls.
+When implementing this behavior, ignore any offset in the preallocate call. This flag is currently set for all [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](fsvolume/preallocatehandler/preallocatespace(for:at:length:flags:context:replyhandler:).md) calls.
 
 ## See Also
 

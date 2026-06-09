@@ -17,6 +17,7 @@ The container values associated with the given subview.
 ## Declaration
 
 ```swift
+nonisolated
 var containerValues: ContainerValues { get }
 ```
 

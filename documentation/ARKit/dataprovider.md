@@ -50,6 +50,7 @@ Most providers supply an asynchronous sequence of updated anchors for the provid
 - [SceneReconstructionProvider](scenereconstructionprovider.md)
 - [SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
 - [StereoPropertiesProvider](stereopropertiesprovider.md)
+- [VisualFidelityProvider](visualfidelityprovider.md)
 - [WorldTrackingProvider](worldtrackingprovider.md)
 
 ## See Also

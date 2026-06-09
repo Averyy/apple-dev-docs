@@ -70,15 +70,15 @@ As relevant events occur within your WatchKit app, the extension object notifies
 - [func scheduleSnapshotRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkextension/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh your app’s snapshot.
 ### Observing messages from the notification center
-- [class let applicationDidFinishLaunchingNotification: NSNotification.Name](wkextension/applicationdidfinishlaunchingnotification.md)
+- [static var applicationDidFinishLaunchingNotification: NSNotification.Name](wkextension/applicationdidfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [class let applicationDidBecomeActiveNotification: NSNotification.Name](wkextension/applicationdidbecomeactivenotification.md)
+- [static var applicationDidBecomeActiveNotification: NSNotification.Name](wkextension/applicationdidbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [class let applicationWillResignActiveNotification: NSNotification.Name](wkextension/applicationwillresignactivenotification.md)
+- [static var applicationWillResignActiveNotification: NSNotification.Name](wkextension/applicationwillresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [class let applicationWillEnterForegroundNotification: NSNotification.Name](wkextension/applicationwillenterforegroundnotification.md)
+- [static var applicationWillEnterForegroundNotification: NSNotification.Name](wkextension/applicationwillenterforegroundnotification.md)
   A message indicating that the watchOS app is about to transition from the background to the foreground.
-- [class let applicationDidEnterBackgroundNotification: NSNotification.Name](wkextension/applicationdidenterbackgroundnotification.md)
+- [static var applicationDidEnterBackgroundNotification: NSNotification.Name](wkextension/applicationdidenterbackgroundnotification.md)
   A message indicating that the watchOS app transitioned from the foreground to the background.
 ### Registering for remote notifications
 - [func registerForRemoteNotifications()](wkextension/registerforremotenotifications.md)

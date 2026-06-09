@@ -170,7 +170,7 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
 - [func calculateHDRStats(for: IOSurfaceRef)](cicontext/calculatehdrstats(for:)-6lwmz.md)
   Given an IOSurface, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the surface’s attachments to store the values.
 - [func calculateHDRStats(for: CVPixelBuffer)](cicontext/calculatehdrstats(for:)-7bcki.md)
-  Given a CVPixelBuffer, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the buffers’s attachments to store the values.
+  Given a CVPixelBuffer, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then update the buffer’s attachments to store the values.
 - [func calculateHDRStats(for: CIImage) -> CIImage?](cicontext/calculatehdrstats(for:)-l1rj.md)
   Given a Core Image image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Image image that has the calculated values.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool, calculateHDRStats: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:calculatehdrstats:).md)

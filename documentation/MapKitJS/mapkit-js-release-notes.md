@@ -13,8 +13,15 @@ You can read more about MapKit JS version numbers and how to automatically link 
 ## Topics
 
 ### Versions
+- [MapKit JS 6](mapkit-js-6.md)
+  Use the most up-to-date version of MapKit JS on your website.
 - [MapKit JS 5](mapkit-js-5.md)
   Use the most up-to-date version of MapKit JS on your website.
+
+## See Also
+
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+  Adopt modern web platform conventions introduced in MapKit JS version 6.
 
 
 ---

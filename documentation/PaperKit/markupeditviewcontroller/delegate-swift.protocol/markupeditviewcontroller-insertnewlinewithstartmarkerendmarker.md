@@ -24,6 +24,15 @@ func markupEditViewController(_ markupEditViewController: MarkupEditViewControll
 - `lineStartMarker`: True if the start of the line has a marker / arrow.
 - `lineEndMarker`: True if the end of the line has a marker / arrow.
 
+## See Also
+
+- [func markupEditViewController(MarkupEditViewController, insertNewShape: ShapeConfiguration.Shape)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewshape:).md)
+  Add a new shape on top of the paper.
+- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).md)
+  Add a new textbox on top of the paper.
+- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).md)
+  Add new content on top of the paper.
+
 
 ---
 

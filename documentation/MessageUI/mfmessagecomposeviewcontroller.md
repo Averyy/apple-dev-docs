@@ -112,7 +112,7 @@ For more information on how to present and dismiss view controllers, see [`View 
 
 ##### Detecting Changes to the Availability of Messaging
 
-Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange) notification to get notified of changes to the messaging capabilities of the current device. The system delivers that notification to your observer when the status of messaging changes.
+Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification to get notified of changes to the messaging capabilities of the current device. The system delivers that notification to your observer when the status of messaging changes.
 
 ## Topics
 
@@ -154,13 +154,14 @@ Add an observer to the [`MFMessageComposeViewControllerTextMessageAvailabilityDi
   The key for the alternate filename for the file-based item attached to the message.
 - [func insertCollaborationItemProvider(NSItemProvider) -> Bool](mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).md)
 ### Handling notifications
-- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange.md)
-  Posted when the current device’s ability to send text messages changes.
 - [let MFMessageComposeViewControllerTextMessageAvailabilityKey: String](mfmessagecomposeviewcontrollertextmessageavailabilitykey.md)
   The value of this key is a number object that contains a Boolean value.
 ### Configuring device validation
 - [func setUPIVerificationCodeSendCompletion((Bool) -> Void)](mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).md)
   Configures the instance of a view for Unified Payments Interface (UPI) device validation.
+### Structures
+- [MFMessageComposeViewController.TextMessageAvailabilityDidChangeMessage](mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage.md)
+  Message type for text message availability change notifications.
 
 ## Relationships
 

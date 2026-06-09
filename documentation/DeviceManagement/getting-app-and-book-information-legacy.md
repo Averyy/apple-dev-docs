@@ -1,4 +1,4 @@
-# Getting App and Book Information (Legacy)
+# Getting app and book information (Legacy)
 
 **Framework**: Device Management
 
@@ -6,11 +6,11 @@ Use a web service to find details about apps and books to show to your users.
 
 #### Overview
 
-To provide users with metadata for the apps and books that they’re managing, such as artwork, the `contentMetadataLookup` url in the [`Service Config`](service-config.md) response allows an MDM server to query the store for app and book metadata.
+To provide users with metadata for the apps and books that they’re managing, such as artwork, the `contentMetadataLookup` URL in the [`Service Config`](service-config.md) response allows a device management service to query the store for app and book metadata.
 
-##### Perform a Lookup
+#### Perform a Lookup
 
-The URL query string tells the content metadata lookup service which app or book to look up. You must use a `GET` HTTP method for this request.
+The URL query string tells the content metadata lookup service which app or book to look up. You need to use an HTTP `GET` method for this request.
 
 The platform filters the content, and the useful values for the `platform` query parameter are:
 
@@ -175,9 +175,9 @@ A typical response looks like the following:
 }
 ```
 
-##### Authenticate for Custom Apps
+#### Authenticate for Custom Apps
 
-If the MDM client includes the organization’s `sToken` in the request as a cookie, an MDM server can get authenticated app metadata for B2B apps that the organization owns, as well as apps that users can still redownload, but no longer purchase.
+If you include the organization’s `sToken` in the request as a cookie, a device management service can get authenticated app metadata for B2B apps that the organization owns, as well as apps that users can still redownload but no longer purchase.
 
 You must include the organization’s `sToken` as a cookie named `itvt` to access the authenticated metadata.
 
@@ -339,15 +339,15 @@ When the `results` set is empty, a typical response looks like the following:
 }
 ```
 
-##### Identify Universal Apps
+#### Identify Universal Apps
 
-When an MDM client queries the store for an app, it may need to determine whether the app is universal so it can assess what devices it can assign the app to.
+When you query the store for an app, you may need to determine whether the app is universal so it can assess what devices it can assign the app to.
 
-To make this determination, an MDM client looks for the following two fields:
+To make this determination, evaluate the following two fields:
 
 ```None
-- term `deviceFamilies`: Supported device families
-- term `kind`: Type of content
+- term `deviceFamilies`: Supported device families.
+- term `kind`: Type of content.
 ```
 
 A universal app lists `mac` in `deviceFamilies` and has `kind` equal to `iosSoftware`.
@@ -388,6 +388,13 @@ The following is an example of a typical response from an app designed for iPad 
     }
 }
 ```
+
+## See Also
+
+- [Managing apps and books through web services (Legacy)](managing-apps-and-books-through-web-services-legacy.md)
+  Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
+- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+  Manage devices and content across an organization’s user base with a single destination.
 
 
 ---

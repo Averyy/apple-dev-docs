@@ -17,7 +17,8 @@ Creates a destination-based navigation view.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

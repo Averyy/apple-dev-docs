@@ -46,7 +46,7 @@ The `CameraBoundaryDescription`, returned from the [`cameraBoundary`](map/camera
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [cameraDistance](map/cameradistance.md)
   The altitude of the camera relative to the elevation of the center of the map.

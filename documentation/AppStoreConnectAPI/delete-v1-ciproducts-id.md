@@ -1,4 +1,4 @@
-# Delete a Product
+# Delete a product
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

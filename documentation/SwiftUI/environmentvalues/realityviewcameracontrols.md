@@ -21,6 +21,8 @@ var realityViewCameraControls: CameraControls { get set }
 
 - [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
   Adds gestures that control the position and direction of a virtual camera.
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
 
 ---

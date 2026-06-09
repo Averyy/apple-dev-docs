@@ -50,8 +50,8 @@ var body: some View {
 
 A new accessibility element is created when:
 
-- The view contains multiple or zero accessibility elements
-- The view contains a single accessibility element with no children
+- The view contains multiple or zero accessibility elements.
+- The view contains a single accessibility element with no children.
 
 > **Note**: If an accessibility element is not created, the [`AccessibilityChildBehavior`](accessibilitychildbehavior.md) of the existing accessibility element is modified.
 

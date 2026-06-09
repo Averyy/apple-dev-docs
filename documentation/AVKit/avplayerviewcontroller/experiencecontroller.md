@@ -37,6 +37,8 @@ The use of the experience controller is mutually exclusive with a view controlle
   A Boolean value that indicates whether to permit playback of 2D video content only.
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
+- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [class AVViewport](avviewport.md)
 
 
 ---

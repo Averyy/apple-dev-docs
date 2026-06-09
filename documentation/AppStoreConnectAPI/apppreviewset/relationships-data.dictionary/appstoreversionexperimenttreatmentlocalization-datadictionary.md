@@ -16,6 +16,7 @@ object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalizatio
 
 ### Objects
 - [object AppPreviewSet.Relationships.AppStoreVersionExperimentTreatmentLocalization.Data](apppreviewset/relationships-data.dictionary/appstoreversionexperimenttreatmentlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app preview set.
 
 ## Properties
 

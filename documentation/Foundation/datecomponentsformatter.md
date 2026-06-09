@@ -95,9 +95,12 @@ The methods of this class may be called safely from any thread of your app. It i
   Formatting constants for when values contain zeroes.
 ### Instance Properties
 - [var formattingContext: Formatter.Context](datecomponentsformatter/formattingcontext.md)
+  Not yet supported.
 - [var referenceDate: Date?](datecomponentsformatter/referencedate.md)
+  Where units have variable length (number of days in a month, number of hours in a day, etc.), `NSDateComponentsFormatter` will calculate as though counting from the date specified by the `referenceDate` in the appropriate calendar. Defaults to `[NSDate dateWithTimeIntervalSinceReferenceDate:0]` at the time of the `-stringForObjectValue:` call if not set. Set to `nil` to get the default behavior.
 ### Instance Methods
 - [func getObjectValue(AutoreleasingUnsafeMutablePointer<AnyObject?>?, for: String, errorDescription: AutoreleasingUnsafeMutablePointer<NSString?>?) -> Bool](datecomponentsformatter/getobjectvalue(_:for:errordescription:).md)
+  `NSDateComponentsFormatter` currently only implements formatting, not parsing. Until it implements parsing, this will always return `NO`.
 
 ## Relationships
 

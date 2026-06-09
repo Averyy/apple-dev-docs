@@ -8,6 +8,7 @@ Initializes a new alert configuration for a Live Activity update.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

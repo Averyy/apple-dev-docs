@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: case
 
+A conditional expression that evaluates a predicate to determine which expression to return.
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+

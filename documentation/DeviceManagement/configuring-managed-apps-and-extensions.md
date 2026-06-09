@@ -21,11 +21,11 @@ The [`AppManaged`](appmanaged.md) configuration contains a `AppConfig` key that 
 
 The device verifies the code signature of an app that requests declarative app configuration from the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework and ensures it matches the code signature of the installed managed app. The device provides declarative app configuration only to apps with verified code signatures.
 
-##### Define the Asset to Provide Configuration Data
+#### Define the Asset to Provide Configuration Data
 
-The `DataAssetReference` key in the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object references an asset declaration that provides property list data. The asset declaration needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with its `ContentType` key set to the appropriate type. The asset data should be no larger than 1MB. The managed app’s developer specifies the data format within the property list.
+The `DataAssetReference` key in the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object references an asset declaration that provides property list data. The asset declaration needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with its `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
 
-##### Define the Assets to Provide Data for Secrets
+#### Define the Assets to Provide Data for Secrets
 
 The `Passwords`, `Identities`, and `Certificates` keys in the [`AppManagedAppConfigDictionaryObject`](appmanagedappconfigdictionaryobject.md) object are arrays of [`AppManagedCredentialConfigObject`](appmanagedcredentialconfigobject.md) objects, each containing the following keys:
 
@@ -56,9 +56,9 @@ The device verifies the code signature of extensions that request declarative ap
 
 For backward compatibility, the device supports configuring managed apps with legacy app configuration data to allow the apps to use the MDMv1 `UserDefaults`-based mechanism for reading configuration. This option allows device management services to configure a declarative managed app that uses legacy app configuration data, while waiting for the app developer to add support for the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework.
 
-The [`AppManaged`](appmanaged.md) configuration’s `LegacyAppConfigAssetReference` key references an asset declaration for the legacy app configuration property list data. The corresponding asset needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with the asset’s `ContentType` key set to the appropriate type. The asset data should be no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
+The [`AppManaged`](appmanaged.md) configuration’s `LegacyAppConfigAssetReference` key references an asset declaration for the legacy app configuration property list data. The corresponding asset needs to be of type [`com.apple.asset.data`](https://developer.apple.com``/DeviceManagement/AssetData``) with the asset’s `ContentType` key set to the appropriate type. Ensure the asset data is no larger than 1 MB. The managed app’s developer specifies the data format within the property list.
 
-Declarative management supports a many-to-many relationship between configurations and assets, so you can use the same asset for the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework-based app config data. This option allows a single set of configurations and assets to be compatible with older and newer versions of a managed app, where the older version supports only the legacy app configuration data capability, and the newer version uses the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework. The newer version of the managed app should support both the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework — the framework configuration takes precedence. This allows the developer to update the app without breaking MDM servers that haven’t transitioned to declarative app configuration yet.
+Declarative management supports a many-to-many relationship between configurations and assets, so you can use the same asset for the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework-based app config data. This option allows a single set of configurations and assets to be compatible with older and newer versions of a managed app, where the older version supports only the legacy app configuration data capability, and the newer version uses the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework. The newer version of the managed app should support both the legacy app configuration data and the [`ManagedApp`](https://developer.apple.com/documentation/ManagedApp) framework — the framework configuration takes precedence. This allows the developer to update the app without breaking device management services that haven’t transitioned to declarative app configuration yet.
 
 ## See Also
 
@@ -67,7 +67,7 @@ Declarative management supports a many-to-many relationship between configuratio
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
   Use a management app to display managed apps and packages to the user.
 - [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Seamlessly transition apps to declarative management without needing to reinstall.
+  Transition apps to declarative management.
 - [Processing status for managed apps](processing-status-for-managed-apps.md)
   Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)

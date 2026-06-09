@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func apply<V>(content: V, phase: TransitionPhase) -> some View where V : View
+nonisolated
+func apply<V>(content: V, phase: TransitionPhase) -> some View where V : View
 ```
 
 ## See Also

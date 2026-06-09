@@ -12,6 +12,7 @@ A request that detects a smudge on a lens from an image or video frame capture.
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -90,6 +91,8 @@ func isGoodCapture(imageURL:URL) async throws -> Bool {
 
 ## See Also
 
+- [Implementing saliency-based image cropping in iOS and watchOS](implementing-saliency-based-image-cropping-in-ios-and-watchos.md)
+  Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
 - [Generating high-quality thumbnails from videos](generating-thumbnails-from-videos.md)
   Identify the most visually pleasing frames in a video by using the image-aesthetics scores request.
 - [struct CalculateImageAestheticsScoresRequest](calculateimageaestheticsscoresrequest.md)

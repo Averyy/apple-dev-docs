@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: init
 
 Initializes a stream direction with the given raw value.

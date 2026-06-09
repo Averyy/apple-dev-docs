@@ -30,7 +30,7 @@ case mirrorClampToEdge
 - [MTLSamplerAddressMode.clampToZero](mtlsampleraddressmode/clamptozero.md)
   Out-of-range texture coordinates return transparent zero `(0,0,0,0)` for images with an alpha channel and return opaque zero `(0,0,0,1)` for images without an alpha channel.
 - [MTLSamplerAddressMode.clampToBorderColor](mtlsampleraddressmode/clamptobordercolor.md)
-  Out-of-range texture coordinates return the value specified by the [`borderColor`](mtlsamplerdescriptor/bordercolor.md) property.
+  An address mode that returns the sampler’s border color.
 
 
 ---

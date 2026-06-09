@@ -55,7 +55,6 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

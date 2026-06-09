@@ -14,6 +14,10 @@ Creates an entity identifier with the given UUID and qualifier data.
 init(uuid: UUID, data qualifierData: Data)
 ```
 
+#### Discussion
+
+> ⚠️ **Warning**: This initializer is annotated as returning a non-optional value but silently returns `nil` when `qualifierData` is not exactly eight bytes, which can surface as a null value in a non-optional Swift variable. Use [`init(uuid:qualifierData:)`](fsentityidentifier/init(uuid:qualifierdata:)-8xlg1.md) instead, which is explicitly failable.
+
 ## Parameters
 
 - `uuid`: The UUID to use for this identifier.

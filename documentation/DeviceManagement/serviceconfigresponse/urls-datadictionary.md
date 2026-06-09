@@ -3,9 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+Service URLs for the managed location. Each entry maps a URL name to its corresponding endpoint.
 
 ## Declaration
 
@@ -15,7 +13,7 @@ object ServiceConfigResponse.Urls
 
 ## Mentions
 
-- [Managing Users](managing-users.md)
+- [Managing users](managing-users.md)
 
 ## Properties
 

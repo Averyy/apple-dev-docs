@@ -27,8 +27,6 @@ class DispatchWorkloop
 
 ## Relationships
 
-### Inherits From
-- [DispatchQueue](dispatchqueue.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [Equatable](../Swift/Equatable.md)

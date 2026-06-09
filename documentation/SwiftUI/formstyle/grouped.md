@@ -17,8 +17,8 @@ A form style with grouped rows.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var grouped: GroupedFormStyle { get }
+nonisolated
+static var grouped: GroupedFormStyle { get }
 ```
 
 #### Discussion

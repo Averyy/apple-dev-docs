@@ -28,16 +28,17 @@ object CapabilitySetting
 ## See Also
 
 - [object BundleIdCapability](bundleidcapability.md)
-  The data structure that represents a Bundle ID Capabilities resource.
+  An entitlement or service (such as Push Notifications or In-App Purchases) enabled for a registered bundle ID.
 - [object BundleIdCapabilityCreateRequest](bundleidcapabilitycreaterequest.md)
   The request body you use to create a Bundle ID Capability.
 - [object BundleIdCapabilityUpdateRequest](bundleidcapabilityupdaterequest.md)
   The request body you use to update a Bundle ID Capability.
 - [object BundleIdCapabilityResponse](bundleidcapabilityresponse.md)
-  A response that contains a single Bundle ID Capabilities resource.
+  The response body for endpoints that enable or modify a capability for a bundle ID.
 - [object BundleIdCapabilitiesResponse](bundleidcapabilitiesresponse.md)
-  A response that contains a list of Bundle ID Capability resources.
+  The response body for endpoints that list capabilities enabled for a bundle ID.
 - [object BundleIdCapabilitiesWithoutIncludesResponse](bundleidcapabilitieswithoutincludesresponse.md)
+  A response containing a list of bundle ID capabilities, without related resources.
 - [object CapabilityOption](capabilityoption.md)
   An option within a capability setting.
 - [type CapabilityType](capabilitytype.md)

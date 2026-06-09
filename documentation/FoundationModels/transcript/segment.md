@@ -11,6 +11,7 @@ The types of segments that may be included in a transcript entry.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,11 +21,15 @@ enum Segment
 
 ## Topics
 
-### Creating a segment
-- [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
-  A segment containing structured content.
+### Segment cases
 - [case text(Transcript.TextSegment)](transcript/segment/text(_:).md)
   A segment containing text.
+- [case attachment(Transcript.AttachmentSegment)](transcript/segment/attachment(_:).md)
+  A segment containing an attachment.
+- [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
+  A segment containing structured content.
+- [case custom(any Transcript.CustomSegment)](transcript/segment/custom(_:).md)
+  A segment containing custom content.
 
 ## Relationships
 
@@ -43,6 +48,8 @@ enum Segment
   Creates a transcript.
 - [Transcript.Entry](transcript/entry.md)
   An entry in a transcript.
+- [Transcript.Attachment](transcript/attachment.md)
+  The types of attached content.
 
 
 ---

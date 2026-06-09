@@ -14,6 +14,7 @@ Instantiates a document group for viewing documents that store a specific model 
 ## Declaration
 
 ```swift
+nonisolated
 init(viewing modelType: any PersistentModel.Type, contentType: UTType, viewer: @escaping () -> Content)
 ```
 

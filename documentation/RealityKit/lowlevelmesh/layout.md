@@ -38,6 +38,13 @@ If you store your attributes separately, use one `Layout` per attribute.
   The byte offset into the buffer for the first byte of this layout.
 - [var bufferStride: Int](lowlevelmesh/layout/bufferstride.md)
   The distance, in bytes, between consecutive vertices for attributes using this layout.
+### Creating a layout
+- [init(bufferIndex: Int, bufferOffset: Int, bufferStride: Int, stepFunction: MTLVertexStepFunction, stepRate: Int)](lowlevelmesh/layout/init(bufferindex:bufferoffset:bufferstride:stepfunction:steprate:).md)
+### Configuring vertex stepping
+- [var stepFunction: MTLVertexStepFunction](lowlevelmesh/layout/stepfunction.md)
+  Determines how the vertex shader steps through the data in this layout.
+- [var stepRate: Int](lowlevelmesh/layout/steprate.md)
+  The number of instances that share the same per-instance vertex data.
 
 ## Relationships
 

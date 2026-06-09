@@ -34,8 +34,10 @@ This style attributes the formatted date with the `AttributeScopes.FoundationAtt
   Change the representation of the day of the year in the format.
 - [func era(Date.FormatStyle.Symbol.Era) -> Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct/era(_:).md)
   Change the representation of the era in the format.
+- [func format(Date) -> AttributedString](date/formatstyle/attributed-swift.struct/format(_:).md)
 - [func hour(Date.FormatStyle.Symbol.Hour) -> Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct/hour(_:).md)
   Change the representation of the hour in the format.
+- [func locale(Locale) -> Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct/locale(_:).md)
 - [func minute(Date.FormatStyle.Symbol.Minute) -> Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct/minute(_:).md)
   Change the representation of the minute in the format.
 - [func month(Date.FormatStyle.Symbol.Month) -> Date.FormatStyle.Attributed](date/formatstyle/attributed-swift.struct/month(_:).md)

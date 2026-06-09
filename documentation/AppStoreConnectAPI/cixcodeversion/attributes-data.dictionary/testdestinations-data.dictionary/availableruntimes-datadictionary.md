@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the available runtimes for test destinations of an Xcode Versions resource.
+An available simulator runtime for this Xcode Cloud version, specifying the platform and OS version it can simulate.
 
 **Availability**:
 - App Store Connect API 1.5+

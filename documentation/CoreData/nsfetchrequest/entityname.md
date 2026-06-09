@@ -22,14 +22,14 @@ var entityName: String? { get }
 
 #### Discussion
 
-The entity name property is populated whenever the NSFetchRequest is created with [`init(entityName:)`](nsfetchrequest/init(entityname:).md) or [`fetchRequestWithEntityName:`](nsfetchrequest/fetchrequestwithentityname:.md).
+The entity name property is populated whenever the NSFetchRequest is created with `NSFetchRequest/init(entityName:)` or [`init(entityName:)`](nsfetchrequest/init(entityname:)-5anoo.md).
 
 ## See Also
 
+- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+  Returns a fetch request configured with a given entity name.
 - [init()](nsfetchrequest/init.md)
   Creates a new fetch request.
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:).md)
-  Initializes a fetch request configured with a given entity name.
 - [var entity: NSEntityDescription?](nsfetchrequest/entity.md)
   The entity specified for the fetch request.
 - [var includesSubentities: Bool](nsfetchrequest/includessubentities.md)

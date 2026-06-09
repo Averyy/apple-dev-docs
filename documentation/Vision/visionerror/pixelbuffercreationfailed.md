@@ -12,6 +12,7 @@ An error that indicates a problem occurs when creating a pixel buffer.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -12,7 +12,6 @@ An object that reports the result of the flashing lights processor.
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
-- watchOS 10.0+
 
 ## Declaration
 

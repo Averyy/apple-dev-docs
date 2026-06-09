@@ -10,7 +10,6 @@ Notifies the delegate when the session changes the dimensions and the transform 
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

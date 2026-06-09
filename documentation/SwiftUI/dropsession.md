@@ -18,29 +18,33 @@ struct DropSession
 
 ## Topics
 
-### Structures
-- [DropSession.ID](dropsession/id-swift.struct.md)
-  The identifier of a drag session.
-- [DropSession.LocalSession](dropsession/localsession-swift.struct.md)
-  Describes the session originated within the app.
-### Instance Properties
+### Getting drop session details
 - [var id: DropSession.ID](dropsession/id-swift.property.md)
   The unique identifier of the drop session.
-- [var itemsCount: Int](dropsession/itemscount.md)
-  Number of items for the drop.
+- [DropSession.ID](dropsession/id-swift.struct.md)
+  The identifier of a drag session.
 - [var localSession: DropSession.LocalSession?](dropsession/localsession-swift.property.md)
   Provides additional information about a session if it originated within the app.
-- [var location: CGPoint](dropsession/location.md)
-  Location of drop in the local coordinate space
+- [DropSession.LocalSession](dropsession/localsession-swift.struct.md)
+  Describes the session originated within the app.
 - [var phase: DropSession.Phase](dropsession/phase-swift.property.md)
   The phase of the current drop session.
-- [var size: CGSize](dropsession/size.md)
-  Size of the drop destination view.
-- [var suggestedOperations: DropOperation.Set](dropsession/suggestedoperations.md)
-  Operations suggested by the drag source.
-### Enumerations
 - [DropSession.Phase](dropsession/phase-swift.enum.md)
   The phase of the current drop session.
+- [var suggestedOperations: DropOperation.Set](dropsession/suggestedoperations.md)
+  Operations suggested by the drag source.
+### Getting drop details
+- [var itemsCount: Int](dropsession/itemscount.md)
+  Number of items for the drop.
+- [var location: CGPoint](dropsession/location.md)
+  Location of drop in the local coordinate space
+- [var size: CGSize](dropsession/size.md)
+  Size of the drop destination view.
+### Supporting reordering
+- [func reorderDestination<Item, CollectionID>(for: Item.Type, in: CollectionID.Type) -> ReorderDifference<Item.ID, CollectionID>.Destination?](dropsession/reorderdestination(for:in:).md)
+  Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
+- [func reorderDestination<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type) -> ReorderDifference<ItemID, CollectionID>.Destination?](dropsession/reorderdestination(for:itemid:in:).md)
+  Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
 
 ## Relationships
 

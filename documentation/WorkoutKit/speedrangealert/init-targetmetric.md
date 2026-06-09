@@ -23,11 +23,6 @@ init(target: ClosedRange<Measurement<UnitSpeed>>, metric: WorkoutAlertMetric)
 - `target`: A range of speed measurements.
 - `metric`: The metric used to measure the speed.
 
-## See Also
-
-- [static func speed(ClosedRange<Double>, unit: UnitSpeed, metric: WorkoutAlertMetric) -> Self](speedrangealert/speed(_:unit:metric:).md)
-  Returns a new speed alert for the provided range of values.
-
 
 ---
 

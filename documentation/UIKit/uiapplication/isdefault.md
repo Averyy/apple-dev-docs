@@ -8,6 +8,7 @@ Reports whether this app is the person’s default app in the given category.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

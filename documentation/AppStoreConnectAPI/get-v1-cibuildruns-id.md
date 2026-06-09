@@ -1,4 +1,4 @@
-# Read Xcode Cloud Build Information
+# Read xcode cloud build information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -106,12 +106,12 @@ GET https://api.appstoreconnect.apple.com/v1/ciBuildRuns/56c512e6-111e-4067-8e88
 
 ## See Also
 
-- [List All Actions for an Xcode Cloud Build](get-v1-cibuildruns-_id_-actions.md)
+- [List all actions for an xcode cloud build](get-v1-cibuildruns-_id_-actions.md)
   List all actions Xcode Cloud performed during a specific build.
-- [List All Builds Xcode Cloud Created in App Store Connect](get-v1-cibuildruns-_id_-builds.md)
+- [List all builds xcode cloud created in app store connect](get-v1-cibuildruns-_id_-builds.md)
   List All App Store Connect and TestFlight Builds when it performed a build.
-- [GET /v1/ciBuildRuns/{id}/relationships/actions](get-v1-cibuildruns-_id_-relationships-actions.md)
-- [GET /v1/ciBuildRuns/{id}/relationships/builds](get-v1-cibuildruns-_id_-relationships-builds.md)
+- [List action IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-actions.md)
+- [List build IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-builds.md)
 
 
 ---

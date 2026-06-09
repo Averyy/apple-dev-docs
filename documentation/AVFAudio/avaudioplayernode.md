@@ -102,6 +102,8 @@ When you use a player node with the engine operating in manual rendering mode, y
 ### Controlling Playback
 - [func prepare(withFrameCount: AVAudioFrameCount)](avaudioplayernode/prepare(withframecount:).md)
   Prepares the file regions or buffers you schedule for playback.
+- [func playAudio() throws](avaudioplayernode/playaudio.md)
+- [func playAudio(at: AVAudioTime?) throws](avaudioplayernode/playaudio(at:).md)
 - [func play()](avaudioplayernode/play.md)
   Starts or resumes playback immediately.
 - [func play(at: AVAudioTime?)](avaudioplayernode/play(at:).md)
@@ -112,6 +114,11 @@ When you use a player node with the engine operating in manual rendering mode, y
   Pauses the node’s playback.
 - [func stop()](avaudioplayernode/stop.md)
   Clears all of the node’s events you schedule and stops playback.
+### Instance Methods
+- [func scheduleBuffer(AVAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-3ewd3.md)
+  Schedules playing samples from an audio buffer.
+- [func scheduleBuffer(AVReadOnlyAudioPCMBuffer, atTime: AVAudioTime?, options: AVAudioPlayerNodeBufferOptions, completionCallbackType: AVAudioPlayerNodeCompletionCallbackType, completionHandler: (() -> Void)?)](avaudioplayernode/schedulebuffer(_:attime:options:completioncallbacktype:completionhandler:)-81qje.md)
+  Schedules playing samples from a read-only audio buffer.
 
 ## Relationships
 
@@ -127,9 +134,13 @@ When you use a player node with the engine operating in manual rendering mode, y
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
+- [Building an audio sequencer to arrange and play clips](building-an-audio-sequencer-to-arrange-and-play-clips.md)
+  Synchronize audio loops with a main tempo by creating a real-time clip launcher.
 - [Playing custom audio with your own player](playing-custom-audio-with-your-own-player.md)
   Construct an audio player to play your custom audio data, and optionally take advantage of the advanced features of AirPlay 2.
 - [Using voice processing](using-voice-processing.md)

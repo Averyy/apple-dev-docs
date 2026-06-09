@@ -188,10 +188,14 @@ To verify this behavior, select a point of interest in Apple Maps, then return t
 
 ## See Also
 
-- [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
-  Define and manage which of your app’s activities can be continued between devices.
+- [Creating a user activity object](creating-a-user-activity-object.md)
+  Identify key user interactions and include the information to restore them later.
 - [Implementing Handoff in Your App](implementing-handoff-in-your-app.md)
   Create, send, and receive user activities directly.
+- [Continuing User Activities with Handoff](continuing-user-activities-with-handoff.md)
+  Define and manage which of your app’s activities can be continued between devices.
+- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
+  Support the creation of notes that include your app’s content.
 - [class NSUserActivity](nsuseractivity.md)
   A representation of the state of your app at a moment in time.
 - [protocol NSUserActivityDelegate](nsuseractivitydelegate.md)

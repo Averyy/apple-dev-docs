@@ -22,7 +22,7 @@ Commit an uploaded image asset as a Game Center activity image.
 
 ## See Also
 
-- [Read Activity Image Information](get-v1-gamecenteractivityimages-_id_.md)
+- [Read activity image information](get-v1-gamecenteractivityimages-_id_.md)
   Get information for a specific Game Center activity image.
 - [Create an Activity Image](post-v1-gamecenteractivityimages.md)
   Reserve an image for a Game Center activity.

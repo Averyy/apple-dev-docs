@@ -9,7 +9,6 @@ A Boolean value that indicates whether the user’s device supports the framewor
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

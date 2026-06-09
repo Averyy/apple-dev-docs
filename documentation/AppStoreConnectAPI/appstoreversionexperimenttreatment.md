@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+One variant in an App Store product page A/B experiment, containing a set of alternative screenshots, previews, and promotional text.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -31,13 +33,13 @@ object AppStoreVersionExperimentTreatment
 ## See Also
 
 - [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)
-  The request body you use to create an store resource.
+  The request body you use to create an App Store version experiment treatment.
 - [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
-  A response that contains a single app store version experiment treatment response resource.
+  The response body for endpoints that create, read, or modify an App Store version experiment treatment.
 - [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
   The request body you use to update an app store version experiment treatment update request.
 - [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
-  A response that contains a list of app store version experiment treatments response resources.
+  The response body for endpoints that list treatments for an App Store version experiment.
 - [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)

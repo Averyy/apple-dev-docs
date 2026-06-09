@@ -21,7 +21,7 @@ static func status(forModules modules: [any SpeechModule]) async -> AssetInvento
 
 #### Discussion
 
-If the status differs between modules, it returns the lowest status in order from `unsupported`, `supported`, `downloading`, `installed`.
+If the status differs between modules, it returns an applicable status in order from `unsupported`, `downloading`, `supported`, `installed`.
 
 ## See Also
 

@@ -18,7 +18,7 @@ Reads the specified preference value from the view, using it to produce a second
 
 ```swift
 nonisolated
-func backgroundPreferenceValue<K, V>(_ key: K.Type, alignment: Alignment = .center, @ViewBuilder _ transform: @escaping (K.Value) -> V) -> some View where K : PreferenceKey, V : View
+func backgroundPreferenceValue<K, V>(_ key: K.Type, alignment: Alignment = .center, @ContentBuilder _ transform: @escaping (K.Value) -> V) -> some View where K : PreferenceKey, V : View
 ```
 
 #### Return Value

@@ -26,7 +26,7 @@ An [`NSSegmentedControl.SwitchTracking`](nssegmentedcontrol/switchtracking.md) v
 - [var doubleValueForSelectedSegment: Double](nssegmentedcontrol/doublevalueforselectedsegment.md)
   When the tracking mode for the control is set to use a momentary accelerator, returns a value for the selected segment.
 - [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
-  The following constants specify the type of tracking behavior a segmented control exhibits. They are used by [`trackingMode`](nssegmentedcontrol/trackingmode.md).
+  Constants that specify the type of tracking behavior a segmented control exhibits.
 - [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
   The visual style used to display the control.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)

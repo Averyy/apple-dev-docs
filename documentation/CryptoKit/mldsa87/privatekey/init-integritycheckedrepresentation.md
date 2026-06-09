@@ -27,7 +27,7 @@ init<D>(integrityCheckedRepresentation: D) throws where D : DataProtocol
 ## See Also
 
 - [init() throws](mldsa87/privatekey/init.md)
-  Initializes a new random private key.
+  Creates a random MLDSA87 private key.
 - [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](mldsa87/privatekey/init(seedrepresentation:publickey:).md)
   Initializes a private key from the seed representation.
 

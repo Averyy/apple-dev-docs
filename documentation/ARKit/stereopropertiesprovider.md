@@ -23,7 +23,7 @@ final class StereoPropertiesProvider
 - [var description: String](stereopropertiesprovider/description.md)
   A textual representation of this stereo properties provider.
 - [var latestViewpointProperties: ViewpointProperties?](stereopropertiesprovider/latestviewpointproperties.md)
-  Returns the latest viewpoint properties, if available.
+  The latest viewpoint properties, if available.
 - [var state: DataProviderState](stereopropertiesprovider/state.md)
   The state of this stereo properties provider.
 ### Type Properties

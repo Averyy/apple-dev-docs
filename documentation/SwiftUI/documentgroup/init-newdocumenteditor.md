@@ -16,7 +16,7 @@ Creates a document group for creating and editing file documents.
 
 ```swift
 @preconcurrency
-nonisolated init(newDocument: @autoclosure @escaping @Sendable () -> Document, @ViewBuilder editor: @escaping (FileDocumentConfiguration<Document>) -> Content)
+nonisolated init(newDocument: @autoclosure @escaping @Sendable () -> Document, @ContentBuilder editor: @escaping (FileDocumentConfiguration<Document>) -> Content)
 ```
 
 #### Discussion
@@ -35,6 +35,10 @@ struct MyApp: App {
 ```
 
 The document types you supply to [`DocumentGroup`](documentgroup.md) must conform to [`FileDocument`](filedocument.md) or [`ReferenceFileDocument`](referencefiledocument.md). Your app can support multiple document types by adding additional [`DocumentGroup`](documentgroup.md) scenes.
+
+With the `newDocument:` initializer, SwiftUI considers your app as an editor of documents of given content types (`FileDocument.writableContentTypes`). On macOS, this adds a File > New menu item and enables the standard document commands.
+
+On iOS, it shows a New Document button in the document browser. The [`isEditable`](filedocumentconfiguration/iseditable.md) property is `true`. Use the `DocumentGroup/init(viewing:editor:)` initializer instead if your app should only display documents without modifying them.
 
 ## Parameters
 

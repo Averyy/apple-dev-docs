@@ -132,7 +132,7 @@ For details of how to create a subclass of `NSCoder`, see [`Subclassing NSCoder`
   Decode an object as one of several expected types, failing if the archived type doesn’t match any of the types.
 - [func decodeTopLevelObject() throws -> Any?](nscoder/decodetoplevelobject.md)
   Decodes a previously-encoded object.
-- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:)-7cram.md)
+- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:).md)
   Decodes the previously-encoded object associated by a key.
 - [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](nscoder/decodetoplevelobject(of:forkey:)-3w6pd.md)
   Decode an object as one of several expected types, failing if the archived type does not match.
@@ -272,7 +272,6 @@ For details of how to create a subclass of `NSCoder`, see [`Subclassing NSCoder`
   Decode bytes from the decoder. The length of the bytes must be greater than or equal to the `length` parameter. If the result exists, but is of insufficient length, then the decoder uses `failWithError` to fail the entire decode operation. The result of that is configurable on a per-NSCoder basis using `NSDecodingFailurePolicy`.
 - [func decodeDictionary<DecodedKey, DecodedObject>(withKeyClass: DecodedKey.Type, objectClass: DecodedObject.Type, forKey: String) -> [DecodedKey : DecodedObject]?](nscoder/decodedictionary(withkeyclass:objectclass:forkey:).md)
 - [func decodeDictionary(withKeysOfClasses: [AnyClass], objectsOfClasses: [AnyClass], forKey: String) -> [AnyHashable : Any]?](nscoder/decodedictionary(withkeysofclasses:objectsofclasses:forkey:).md)
-- [func decodeTopLevelObject(forKey: String) throws -> AnyObject?](nscoder/decodetoplevelobject(forkey:)-22smg.md)
 
 ## Relationships
 

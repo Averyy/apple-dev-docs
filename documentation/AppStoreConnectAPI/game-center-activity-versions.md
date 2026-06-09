@@ -17,15 +17,15 @@ To manage Game Center activity versions, be sure you have one of the following u
 ### Read, create, and update Game Center activity versions
 - [Read the Versions for an Activity](get-v1-gamecenteractivities-_id_-versions.md)
   Get a list of versions for a specific Game Center activity.
-- [GET /v1/gameCenterActivities/{id}/relationships/versions](get-v1-gamecenteractivities-_id_-relationships-versions.md)
+- [List version IDs for a Game Center activity](get-v1-gamecenteractivities-_id_-relationships-versions.md)
 - [Read Activity Version Information](get-v1-gamecenteractivityversions-_id_.md)
   Get information for a specific Game Center activity version.
 - [Read Default Image Information for an Activity Version](get-v1-gamecenteractivityversions-_id_-defaultimage.md)
   Get details about the default image for a specific Game Center activity version.
-- [GET /v1/gameCenterActivityVersions/{id}/relationships/defaultImage](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
+- [Get the default image ID for a Game Center activity version](get-v1-gamecenteractivityversions-_id_-relationships-defaultimage.md)
 - [List All Localizations for an Activity Version](get-v1-gamecenteractivityversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center activity version.
-- [GET /v1/gameCenterActivityVersions/{id}/relationships/localizations](get-v1-gamecenteractivityversions-_id_-relationships-localizations.md)
+- [List localization IDs for a Game Center activity version](get-v1-gamecenteractivityversions-_id_-relationships-localizations.md)
 - [Add an Activity Version Release](post-v1-gamecenteractivityversionreleases.md)
   Add a version release for a specific Game Center activity.
 - [Create an Activity Version](post-v1-gamecenteractivityversions.md)
@@ -34,23 +34,23 @@ To manage Game Center activity versions, be sure you have one of the following u
   Update a specific activity version.
 ### Objects
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)
-  The data structure that represents an activity version resource.
+  A versioned configuration of a Game Center activity, containing its localizations and release status.
 - [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
-  The request body you use to create an activity version resource.
+  The request body for creating a version of a Game Center activity.
 - [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
-  A response that contains a single activity version resource.
+  A response containing a single version of a Game Center activity.
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
   The request body you use to update an activity version version.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
-  A response that contains a list of activity version resources.
+  A response containing a list of versions for a Game Center activity.
 - [object GameCenterActivityVersionDefaultImageLinkageResponse](gamecenteractivityversiondefaultimagelinkageresponse.md)
 - [object GameCenterActivityVersionLocalizationsLinkagesResponse](gamecenteractivityversionlocalizationslinkagesresponse.md)
 - [object GameCenterActivityVersionUpdateRequest](gamecenteractivityversionupdaterequest.md)
   The request body you use to update an activity version version.
 - [object GameCenterActivityVersionsLinkagesResponse](gamecenteractivityversionslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of versions for a Game Center activity.
 - [object GameCenterActivityVersionsResponse](gamecenteractivityversionsresponse.md)
-  A response that contains a list of activity version resources.
+  A response containing a list of versions for a Game Center activity.
 
 ## See Also
 

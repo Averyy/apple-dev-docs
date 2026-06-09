@@ -1,4 +1,4 @@
-# Read the Billing Grace Period Value for an App
+# Read the billing grace period value for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -46,14 +46,14 @@ https://api.appstoreconnect.apple.com/v1/apps/6446671329/subscriptionGracePeriod
 
 ## Parameters
 
-- `fields[subscriptionGracePeriods]` ([string])
+- `fields[subscriptionGracePeriods]` ([string]): Additional fields to include for each subscription grace period resource returned by the response.
 
 ## See Also
 
-- [List All Subscription Groups for an App](get-v1-apps-_id_-subscriptiongroups.md)
+- [List all subscription groups for an app](get-v1-apps-_id_-subscriptiongroups.md)
   Get a list of subscription groups for a specific app.
-- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
-- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
+- [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
 
 
 ---

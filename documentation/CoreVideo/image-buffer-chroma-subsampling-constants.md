@@ -42,6 +42,12 @@ Use the [`kCVImageBufferChromaSubsamplingKey`](kcvimagebufferchromasubsamplingke
   Constants that indicate locations for chroma samples in the image buffer.
 - [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 
 ---

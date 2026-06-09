@@ -31,7 +31,9 @@ static var weekOfMonth: NSCalendar.Unit { get }
 - [static var day: NSCalendar.Unit](nscalendar/unit/day.md)
   Identifier for the day unit.
 - [static var dayOfYear: NSCalendar.Unit](nscalendar/unit/dayofyear.md)
+  Identifier for the nanosecond unit.
 - [static var isRepeatedDay: NSCalendar.Unit](nscalendar/unit/isrepeatedday.md)
+  Identifier for the time zone of a date components object.
 
 
 ---

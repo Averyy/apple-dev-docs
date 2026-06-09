@@ -18,25 +18,26 @@ Tap on your app to see a breakdown of how the app’s bundle, documents, and dat
 
 ##### Gather Metrics on Disk Usage
 
-Use [`MXDiskSpaceUsageMetric`](https://developer.apple.com/documentation/MetricKit/MXDiskSpaceUsageMetric) to gather metrics on the number of files in your app’s container, and the disk space they occupy including space in the [`cachesDirectory`](https://developer.apple.com/documentation/Foundation/URL/cachesDirectory):
+Use [`MetricKit`](https://developer.apple.com/documentation/MetricKit) to gather metrics on the number of files in your app’s container and the disk space they occupy. Observe the `metricReports` asynchronous sequence and read the file count and size values from the daily report:
 
 ```swift
 import MetricKit
 
-class MetricService: NSObject, MXMetricManagerSubscriber {
-    let metricManager: MXMetricManager = MXMetricManager.shared
-    
-    override init() {
-        super.init()
-        metricManager.add(self)
-    }
-    
-    func didReceive(_ payloads: [MXMetricPayload]) {
-        payloads.forEach({ payload in
-            if let diskUsage = payload.diskSpaceUsageMetrics {
-                // Analyze your app's disk usage.
-            }
-        })
+let manager = MetricManager()
+
+for await report in manager.metricReports {
+    let entry = report.intervalEntries.fullDayEntry
+    for value in entry.values {
+        switch value {
+        case let .totalFileSize(metric):
+            // Analyze your app's disk usage.
+            break
+        case let .totalFileCount(metric):
+            // Track the number of files in your app's container.
+            break
+        @unknown default:
+            break
+        }
     }
 }
 ```
@@ -88,7 +89,7 @@ func fetchRemoteDocument(for localURL: URL) throws {
 
 ##### Copy Files By Creating Clones
 
-When you use [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)) to copy a file on an APFS volume, the system creates a *clone* of the file. The clone refers to the original file’s content, so it uses less space on disk than if you duplicate the file through other methods. [`MXDiskSpaceUsageMetric`](https://developer.apple.com/documentation/MetricKit/MXDiskSpaceUsageMetric) accounts for clones in its calculations of the disk space used by your app.
+When you use [`copyItem(at:to:)`](https://developer.apple.com/documentation/Foundation/FileManager/copyItem(at:to:)) to copy a file on an APFS volume, the system creates a *clone* of the file. The clone refers to the original file’s content, so it uses less space on disk than if you duplicate the file through other methods. MetricKit’s [`TotalFileSizeMetric`](https://developer.apple.com/documentation/MetricKit/TotalFileSizeMetric) accounts for clones in its calculations of the disk space used by your app.
 
 For more information, see [`About Apple File System`](https://developer.apple.com/documentation/Foundation/about-apple-file-system#Clones-Reduce-the-Cost-of-Copying).
 
@@ -96,6 +97,8 @@ For more information, see [`About Apple File System`](https://developer.apple.co
 
 - [Reducing disk writes](reducing-disk-writes.md)
   Improve your app’s responsiveness by optimizing how it writes data to permanent storage.
+- [Monitoring your app’s storage metrics](monitoring-your-app-s-storage-metrics.md)
+  Track your app’s storage footprint over time using Xcode Organizer to catch regressions in Documents & Data and App Size.
 
 
 ---

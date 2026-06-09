@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe an in-app purchase v2update request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 

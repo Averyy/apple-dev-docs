@@ -85,7 +85,7 @@
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/utf16view/subscript(_:)-3ijoy.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](substring/utf16view/subscript(_:)-5j3ao.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](substring/utf16view/subscript(_:)-5j3ao.md)
 - [subscript(Substring.UTF16View.Index) -> Substring.UTF16View.Element](substring/utf16view/subscript(_:)-ketw.md)
   Accesses the element at the specified position.
 ### Type Aliases

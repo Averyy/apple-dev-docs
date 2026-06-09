@@ -17,6 +17,7 @@ A view that controls a navigation presentation.
 ## Declaration
 
 ```swift
+nonisolated
 struct NavigationLink<Label, Destination> where Label : View, Destination : View
 ```
 

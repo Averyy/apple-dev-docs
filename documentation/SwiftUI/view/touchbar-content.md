@@ -12,7 +12,7 @@ Sets the content that the Touch Bar displays.
 
 ```swift
 nonisolated
-func touchBar<Content>(@ViewBuilder content: () -> Content) -> some View where Content : View
+func touchBar<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
 #### Return Value

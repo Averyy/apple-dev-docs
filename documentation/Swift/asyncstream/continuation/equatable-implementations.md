@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](asyncstream/continuation/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](asyncstream/continuation/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (AsyncStream<Element>.Continuation, AsyncStream<Element>.Continuation) -> Bool](asyncstream/continuation/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

@@ -18,7 +18,7 @@ Associates a destination view with a binding that can be used to push the view o
 
 ```swift
 nonisolated
-func navigationDestination<V>(isPresented: Binding<Bool>, @ViewBuilder destination: () -> V) -> some View where V : View
+func navigationDestination<V>(isPresented: Binding<Bool>, @ContentBuilder destination: () -> V) -> some View where V : View
 ```
 
 ## Mentions

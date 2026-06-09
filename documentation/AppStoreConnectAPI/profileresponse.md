@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Profiles resource.
+The response body for endpoints that create or read a single provisioning profile.
 
 **Availability**:
 - App Store Connect API 1.1+
@@ -22,15 +22,16 @@ object ProfileResponse
 
 ## See Also
 
-- [Create a Profile](post-v1-profiles.md)
+- [Create a profile](post-v1-profiles.md)
   Create a new provisioning profile.
 - [object Profile](profile.md)
-  The data structure that represents a Profiles resource.
+  A provisioning profile that authorizes specific devices to run an app during development or distribution.
 - [object ProfileCreateRequest](profilecreaterequest.md)
   The request body you use to create a Profile.
 - [object ProfilesResponse](profilesresponse.md)
-  A response that contains a list of Profiles resources.
+  The response body for endpoints that list provisioning profiles.
 - [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+  A response containing a list of provisioning profiles, without related resources.
 - [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
 - [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
 - [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)

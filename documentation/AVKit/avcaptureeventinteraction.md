@@ -103,6 +103,8 @@ The event handler queries the capture event to determine its phase, and when the
   A sound object for a capture event.
 - [class AVInputPickerInteraction](avinputpickerinteraction.md)
   Use `AVInputPickerInteraction` to present an input picker.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

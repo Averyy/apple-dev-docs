@@ -34,7 +34,7 @@ This method raises an [`invalidArgumentException`](nsexceptionname/invalidargume
 
 ## See Also
 
-- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:)-40hyk.md)
+- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:).md)
   Decodes a previously-archived object graph, and returns the root object.
 - [static func unarchivedObject<DecodedObjectType>(ofClass: DecodedObjectType.Type, from: Data) throws -> DecodedObjectType?](nskeyedunarchiver/unarchivedobject(ofclass:from:).md)
   Decodes a previously-archived object graph, and returns the root object as the specified type.

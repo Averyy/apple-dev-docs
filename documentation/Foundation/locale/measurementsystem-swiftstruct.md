@@ -25,6 +25,8 @@ struct MeasurementSystem
 ### Creating a measurement system instance
 - [init(String)](locale/measurementsystem-swift.struct/init(_:).md)
   Creates a measurement system instance from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/measurementsystem-swift.struct/init(stringliteral:).md)
+  Creates a measurement system instance from a BCP 47 identifier as a string literal.
 ### Inspecting measurement system properties
 - [var identifier: String](locale/measurementsystem-swift.struct/identifier.md)
   The measurement system’s BCP 47 identifier.

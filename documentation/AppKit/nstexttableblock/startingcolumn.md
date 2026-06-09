@@ -6,7 +6,7 @@
 Returns the table column at which this text table block starts.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

@@ -59,22 +59,34 @@ struct PersonNameComponents
 - [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
 - [init(namePrefix: String?, givenName: String?, middleName: String?, familyName: String?, nameSuffix: String?, nickname: String?, phoneticRepresentation: PersonNameComponents?)](personnamecomponents/init(nameprefix:givenname:middlename:familyname:namesuffix:nickname:phoneticrepresentation:).md)
+### Type Aliases
+- [PersonNameComponents.Specification](personnamecomponents/specification.md)
+- [PersonNameComponents.UnwrappedType](personnamecomponents/unwrappedtype.md)
+- [PersonNameComponents.ValueType](personnamecomponents/valuetype.md)
+### Type Properties
+- [static var defaultResolverSpecification: some ResolverSpecification](personnamecomponents/defaultresolverspecification.md)
 
 ## Relationships
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
+- [CustomLocalizedStringResourceConvertible](customlocalizedstringresourceconvertible.md)
 - [CustomReflectable](../Swift/CustomReflectable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
+- [DisplayRepresentable](../AppIntents/DisplayRepresentable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [ReferenceConvertible](referenceconvertible.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [TypeDisplayRepresentable](../AppIntents/TypeDisplayRepresentable.md)
 
 ## See Also
 

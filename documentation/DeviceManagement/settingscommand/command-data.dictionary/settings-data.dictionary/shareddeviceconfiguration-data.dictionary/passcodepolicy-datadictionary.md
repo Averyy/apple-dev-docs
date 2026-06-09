@@ -9,8 +9,6 @@ A dictionary that contains passcode policies.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -3,13 +3,12 @@
 **Framework**: EnergyKit  
 **Kind**: case
 
-The end of the session when a load device goes to idle, that is, power/stage returns to zero indicating the load device is no longer consuming or generating electricity A state that represents the end of the session.
+A state that represents the end of the session.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -19,7 +18,7 @@ case end
 
 #### Discussion
 
-The electricity measurement stage must be 0
+The electricity measurement stage must be 0.
 
 ## See Also
 

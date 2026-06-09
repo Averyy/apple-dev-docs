@@ -35,6 +35,13 @@ Your companion app pairs the accessory using [`AccessorySetupKit`](https://devel
 ### Errors
 - [AccessoryControlDevice.Error](accessorycontroldevice/error.md)
   An error that occurs during audio accessory configuration operations.
+### Classes
+- [class AudioAccessoryHeadTracking](audioaccessoryheadtracking.md)
+### Structures
+- [struct AccessorySensorUpdates](accessorysensorupdates.md)
+  Subscribes to a stream of raw sensor data packets from a connected accessory.
+### Enumerations
+- [enum AudioAccessoryError](audioaccessoryerror.md)
 
 
 ---

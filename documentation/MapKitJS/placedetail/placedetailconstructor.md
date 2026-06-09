@@ -12,10 +12,10 @@ A representation of a place detail.
 
 ```swift
 constructor(
-        parent: HTMLElement,
-        place?: Place | null,
-        options?: PlaceDetailOptions,
-    );
+    parent: HTMLElement,
+    place?: Place | null,
+    options?: PlaceDetailOptions,
+);
 ```
 
 ## See Also

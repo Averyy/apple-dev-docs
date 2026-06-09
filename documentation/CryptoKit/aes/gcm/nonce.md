@@ -34,6 +34,14 @@ Don’t reuse the same nonce for multiple calls to encryption APIs. It’s criti
 ### Iterating over a nonce’s bytes
 - [func makeIterator() -> Array<UInt8>.Iterator](aes/gcm/nonce/makeiterator.md)
   Returns an iterator over the elements of the nonce.
+### Initializers
+- [init(copying: RawSpan) throws](aes/gcm/nonce/init(copying:).md)
+  Creates a nonce from the given data.
+### Instance Properties
+- [var bytes: RawSpan](aes/gcm/nonce/bytes.md)
+  The bytes stored in the nonce.
+- [var count: Int](aes/gcm/nonce/count.md)
+  The number of bytes stored in the nonce.
 
 ## Relationships
 

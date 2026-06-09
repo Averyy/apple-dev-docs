@@ -17,7 +17,7 @@ Returns the appearance and interaction content for a `DatePicker`.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 

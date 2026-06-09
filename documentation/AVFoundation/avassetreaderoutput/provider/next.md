@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
-Retruns the next piece of media data.
+Returns the next piece of media data.
 
 **Availability**:
 - iOS 26.0+

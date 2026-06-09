@@ -19,6 +19,19 @@ class VZMacOSVirtualMachineStartOptions
 ### Setting recovery mode
 - [var startUpFromMacOSRecovery: Bool](vzmacosvirtualmachinestartoptions/startupfrommacosrecovery.md)
   A Boolean value that indicates whether the macOS guest should start in recovery mode.
+### Provisioning options
+- [class VZMacGuestProvisioningOptions](vzmacguestprovisioningoptions.md)
+  The configuration for guest setup during macOS virtual machine startup.
+- [class VZGuestProvisioningOptions](vzguestprovisioningoptions.md)
+  The base class for guest provisioning options.
+- [class VZGuestMemoryMapping](vzguestmemorymapping.md)
+  An object that represents a chunk of the guest operating system’s dynamic random access memory (DRAM).
+### Instance Properties
+- [var guestProvisioningOptions: VZMacGuestProvisioningOptions?](vzmacosvirtualmachinestartoptions/guestprovisioningoptions.md)
+  A value that controls provisioning a macOS guest.
+### Instance Methods
+- [func setGuestProvisioning(VZMacGuestProvisioningOptions?) throws](vzmacosvirtualmachinestartoptions/setguestprovisioning(_:).md)
+  Sets guest provisioning options with validation.
 
 ## Relationships
 

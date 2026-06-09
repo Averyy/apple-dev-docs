@@ -35,6 +35,7 @@ var kAudioUnitType_SpeechSynthesizer: UInt32 { get }
 - [var kAudioUnitType_Generator: UInt32](kaudiounittype_generator.md)
   A generator unit provides audio output but has no audio input. This audio unit type is appropriate for a tone generator. Unlike an instrument unit, a generator unit does not have a control input.
 - [var kAudioUnitType_MIDIProcessor: UInt32](kaudiounittype_midiprocessor.md)
+- [var kAudioUnitType_HeadTrackingBinauralRenderer: UInt32](kaudiounittype_headtrackingbinauralrenderer.md)
 
 
 ---

@@ -26,6 +26,11 @@ The [`AccessoryControlDevice`](accessorycontroldevice.md) class’s initializer 
   A capability indicating the device supports automatic audio switching.
 - [static let placement: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/placement.md)
   A capability indicating the device supports placement detection.
+### Type Properties
+- [static let audioSpatialization: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/audiospatialization.md)
+  Device supports audio spatialization
+- [static let headTracking: AccessoryControlDevice.Capabilities](accessorycontroldevice/capabilities/headtracking.md)
+  Device supports head tracking for audio spatialization
 
 ## Relationships
 

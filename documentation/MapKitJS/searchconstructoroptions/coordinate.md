@@ -11,7 +11,7 @@ A map coordinate that provides a hint for the geographic area to search.
 ## Declaration
 
 ```swift
-coordinate?: Coordinate;
+coordinate?: CoordinateData;
 ```
 
 #### Discussion

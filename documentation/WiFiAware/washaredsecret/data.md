@@ -8,6 +8,7 @@ The secret data that is derived by both this device and the remote device for th
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

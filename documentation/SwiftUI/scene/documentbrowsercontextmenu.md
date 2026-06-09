@@ -15,7 +15,7 @@ Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected file
 
 ```swift
 @MainActor
-@preconcurrency func documentBrowserContextMenu(@ViewBuilder _ menu: @escaping ([URL]?) -> some View) -> some Scene
+@preconcurrency func documentBrowserContextMenu(@ContentBuilder _ menu: @escaping ([URL]?) -> some View) -> some Scene
 ```
 
 #### Discussion

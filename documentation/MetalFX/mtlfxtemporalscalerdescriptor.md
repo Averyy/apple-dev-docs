@@ -62,6 +62,11 @@ class MTLFXTemporalScalerDescriptor
 ### Creating temporal scaling effect instances
 - [func makeTemporalScaler(device: any MTLDevice) -> (any MTLFXTemporalScaler)?](mtlfxtemporalscalerdescriptor/maketemporalscaler(device:).md)
   Creates a temporal scaler instance from this descriptor’s current property values.
+### Instance Properties
+- [var isJitteredMotionVectorsEnabled: Bool](mtlfxtemporalscalerdescriptor/isjitteredmotionvectorsenabled.md)
+  A Boolean value that indicates whether the motion vectors include the jittering pattern.
+- [var isOutputResolutionMotionVectorsEnabled: Bool](mtlfxtemporalscalerdescriptor/isoutputresolutionmotionvectorsenabled.md)
+  A Boolean value that indicates whether the scaler expects motion vectors at output resolution.
 ### Instance Methods
 - [func makeTemporalScaler(device: any MTLDevice, compiler: any MTL4Compiler) -> (any MTL4FXTemporalScaler)?](mtlfxtemporalscalerdescriptor/maketemporalscaler(device:compiler:).md)
   Creates a temporal scaler instance for a Metal device.

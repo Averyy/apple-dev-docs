@@ -18,7 +18,7 @@ Returns a new collection of the same type containing, in order, the elements of 
 ## Declaration
 
 ```swift
-func filter(_ isIncluded: (Self.Element) throws -> Bool) rethrows -> Self
+consuming func filter<E>(_ isIncluded: (Self.Element) throws(E) -> Bool) throws(E) -> Self where E : Error
 ```
 
 #### Return Value

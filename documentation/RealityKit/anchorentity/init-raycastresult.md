@@ -9,7 +9,6 @@ Creates an anchor entity using the information about a real-world surface discov
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.15+
 
 ## Declaration
 

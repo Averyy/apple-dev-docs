@@ -11,6 +11,7 @@ A button style that doesn’t pad the content, and applies a motion effect when 
 ## Declaration
 
 ```swift
+nonisolated
 struct CardButtonStyle
 ```
 

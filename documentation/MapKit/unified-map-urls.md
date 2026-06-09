@@ -59,6 +59,7 @@ Using the `/place` path component enables you to specify a place card that shows
 | `coordinate` | The latitude and longitude of the location, as a comma-separated pair of floating point values that represent latitude and longitude. |
 | `address` | The address of the location, such as “1000 Fifth Ave, New York, NY”. |
 | `place-id` | A Place ID is a unique identifier for a POI, such as `I521E602783BA9605`, The Metropolitan Museum of Art at 1000 Fifth Avenue, New York, NY 10028, United States; for more information on Place IDs, see [`Identifying unique locations with Place IDs`](identifying-unique-locations-with-place-ids.md). |
+| `name` | A custom name to use for the place card, if the place card is available. |
 | `map` | The type of map to display. Maps supports `explore`, `driving`, `transit`, `satellite`, or `hybrid` as the map type. |
 
 The following examples demonstrate different place card details along with details, where necessary, on how specific parameters affect what the maps displays.

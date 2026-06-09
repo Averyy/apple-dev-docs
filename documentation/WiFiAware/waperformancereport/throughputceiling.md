@@ -8,6 +8,7 @@ The highest throughput the connection is capable of under ideal conditions, give
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The system brings the app into the foreground immediately after it resolves the intent’s parameters.
+An option to bring the app to the foreground immediately after the system resolves the intent’s parameters.
 
 **Availability**:
 - iOS 26.0+

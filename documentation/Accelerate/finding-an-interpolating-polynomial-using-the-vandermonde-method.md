@@ -96,7 +96,7 @@ On return, `coefficients` contains the polynomial coefficients.
 
 ##### Use Lapack to Solve a Linear System
 
-> ❗ **Important**:  This sample uses the LAPACK library under the Accelerate framework that’s in line with LAPACK version 3.9.1. Specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings.
+> ❗ **Important**:  This sample uses the LAPACK library under the Accelerate framework that’s in line with LAPACK version 3.9.1. Specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 
 Use the LAPACK `dgels` routine to perform the solve. The `dgels` name derives from **d**ouble-precision, **ge**neral-matrix, **l**east-**s**quares.
 

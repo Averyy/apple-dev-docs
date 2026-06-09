@@ -6,7 +6,7 @@
 The following constants specify values used by the property [`verticalAlignment`](nstextblock/verticalalignment-swift.property.md) to specify vertical alignment.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -17,16 +17,21 @@ enum VerticalAlignment
 ## Topics
 
 ### Constants
-- [NSTextBlock.VerticalAlignment.topAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
+- [static var topAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/topalignment.md)
   Aligns adjacent blocks at their top.
-- [NSTextBlock.VerticalAlignment.middleAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
+- [static var middleAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/middlealignment.md)
   Aligns adjacent blocks at their middle.
-- [NSTextBlock.VerticalAlignment.bottomAlignment](nstextblock/verticalalignment-swift.enum/bottomalignment.md)
+- [static var bottomAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/bottomalignment.md)
   Aligns adjacent blocks at their bottom.
-- [NSTextBlock.VerticalAlignment.baselineAlignment](nstextblock/verticalalignment-swift.enum/baselinealignment.md)
+- [static var baselineAlignment: NSTextBlock.VerticalAlignment](nstextblock/verticalalignment-swift.enum/baselinealignment.md)
   Aligns adjacent blocks at the baseline of the first line of text in the block.
+### Enumeration Cases
+- [NSTextBlock.VerticalAlignment.baseline](nstextblock/verticalalignment-swift.enum/baseline.md)
+- [NSTextBlock.VerticalAlignment.bottom](nstextblock/verticalalignment-swift.enum/bottom.md)
+- [NSTextBlock.VerticalAlignment.middle](nstextblock/verticalalignment-swift.enum/middle.md)
+- [NSTextBlock.VerticalAlignment.top](nstextblock/verticalalignment-swift.enum/top.md)
 ### Initializers
-- [init?(rawValue: UInt)](nstextblock/verticalalignment-swift.enum/init(rawvalue:).md)
+- [init?(rawValue: Int)](nstextblock/verticalalignment-swift.enum/init(rawvalue:).md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a certificate pass type id linkage response resource.
+The resource linkage data identifying the pass type ID associated with a certificate.
 
 **Availability**:
 - App Store Connect API 4.0+

@@ -17,6 +17,7 @@ A toolbar item that represents a system component.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultToolbarItem
 ```
 
@@ -45,6 +46,10 @@ Place this item in your toolbar to control where the system-provided item, like 
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
 - [struct ToolbarItemPlacement](toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+  Configures the overflow menu of a toolbar.
+- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+  The overflow menu of a toolbar.
 - [protocol ToolbarContent](toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)

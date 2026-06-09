@@ -42,7 +42,7 @@ In the case of using a USB input-only accessory, audio input comes from the acce
 - [static var duckOthers: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/duckothers.md)
   An option that reduces the volume of other audio sessions while audio from this session plays.
 - [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) and [`record`](avaudiosession/category-swift.struct/record.md).
+  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 - [static var interruptSpokenAudioAndMixWithOthers: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/interruptspokenaudioandmixwithothers.md)
   An option that determines whether to pause spoken audio content from other sessions when your app plays its audio.
 - [static var mixWithOthers: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/mixwithothers.md)

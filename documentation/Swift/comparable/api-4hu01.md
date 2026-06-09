@@ -18,7 +18,7 @@ Returns a Boolean value indicating whether the value of the first argument is gr
 ## Declaration
 
 ```swift
-static func >= (lhs: Self, rhs: Self) -> Bool
+static func >= (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 ## Parameters

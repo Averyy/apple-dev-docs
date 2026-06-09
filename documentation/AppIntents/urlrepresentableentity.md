@@ -22,7 +22,7 @@ protocol URLRepresentableEntity : AppEntity, CustomURLRepresentationParameterCon
 
 #### Overview
 
-Add support for `URLRepresentableEntity` to your app entities to add a URL representation. This allows Siri and Shortcuts to treat the entity like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+Add support for `URLRepresentableEntity` to your app entities to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the entity like a universal link to specific content, allowing actions to open the URL or to make it sharable.
 
 Note that you need to use a universal link for your URL representation, you canâ€™t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
 
@@ -50,17 +50,9 @@ Note that you need to use a universal link for your URL representation, you canâ
 
 ## See Also
 
-- [protocol AppEntity](appentity.md)
-  An interface for exposing a custom type or app-specific concept to system experiences like Siri and the Shortcuts app.
-- [protocol FileEntity](fileentity.md)
-  An entity that refers to a document or other file.
-- [protocol IndexedEntity](indexedentity.md)
-  `IndexedEntity` represents an App Entity decorated with an attribute set. A set of attributes that enable the system to perform structured indexing  and queries of entities.
-- [protocol TransientAppEntity](transientappentity.md)
-  A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
-- [protocol UniqueAppEntity](uniqueappentity.md)
-  An entity that will only ever have one value, such as global settings.
-- [macro UnionValue()](unionvalue().md)
+- [struct EntityURLRepresentation](entityurlrepresentation.md)
+  The URL representation of an app entity.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
 
 
 ---

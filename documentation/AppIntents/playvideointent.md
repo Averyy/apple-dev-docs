@@ -43,10 +43,9 @@ protocol PlayVideoIntent : SystemIntent
   An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
 - [protocol AudioRecordingIntent](audiorecordingintent.md)
   An app intent that starts, stops or otherwise modifies audio recording state.
-- [protocol AudioStartingIntent](audiostartingintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
 - [protocol CameraCaptureIntent](cameracaptureintent.md)
   Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
+- [enum VideoCategory](videocategory.md)
 
 
 ---

@@ -8,7 +8,7 @@ An object that setups up new accessories.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,6 +27,8 @@ Use this class to provides steps for the user to add one or more accessories to 
   Performs the process of setting up accessories with Apple Home.
 ### Initializers
 - [init()](hmaccessorysetupmanager/init.md)
+### Type Properties
+- [class var isSupported: Bool](hmaccessorysetupmanager/issupported.md)
 
 ## Relationships
 

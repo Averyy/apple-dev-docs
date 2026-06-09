@@ -169,14 +169,16 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
 - [static let inflectionAlternative: NSAttributedString.Key](nsattributedstring/key/inflectionalternative.md)
   The alternative translation for a string when no suitable inflection exists.
 - [static let agreeWithArgument: NSAttributedString.Key](nsattributedstring/key/agreewithargument.md)
+  An attribute key whose value indicates inflection agreement with a specific argument.
 - [static let agreeWithConcept: NSAttributedString.Key](nsattributedstring/key/agreewithconcept.md)
+  An attribute key whose value indicates inflection agreement with a specific concept.
 - [static let referentConcept: NSAttributedString.Key](nsattributedstring/key/referentconcept.md)
+  An attribute key whose value indicates the referent concept for inflection.
 - [static let localizedNumberFormat: NSAttributedString.Key](nsattributedstring/key/localizednumberformat.md)
+  An attribute key whose value specifies a localized number format.
 ### Getting formatting attribute keys
 - [static let listItemDelimiter: NSAttributedString.Key](nsattributedstring/key/listitemdelimiter.md)
   The delimiter used when declaring the current list item.
-### Getting writing tools attribute keys
-- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusionattributename.md)
 ### Deprecated Keys
 - [static let expansion: NSAttributedString.Key](nsattributedstring/key/expansion.md)
   The expansion factor of the text.
@@ -193,6 +195,8 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
   Creates an attributed string key.
 - [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
   Creates an attributed string key with the specified raw value.
+### Type Properties
+- [static let writingToolsExclusionAttributeName: NSAttributedString.Key](nsattributedstring/key/writingtoolsexclusion.md)
 
 ## Relationships
 

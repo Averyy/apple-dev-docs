@@ -18,16 +18,16 @@ To upload screenshots, begin by creating an [`App Screenshot Sets`](app-screensh
 ## Topics
 
 ### Getting Screenshots and Reading Information
-- [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
+- [List all app screenshots for an app screenshot set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
   List all ordered screenshots in a screenshot set.
-- [Read App Screenshot Information](get-v1-appscreenshots-_id_.md)
+- [Read app screenshot information](get-v1-appscreenshots-_id_.md)
   Get information about an app screenshot and its upload and processing status.
 ### Creating, Modifying, and Deleting Screenshots
-- [Create an App Screenshot](post-v1-appscreenshots.md)
+- [Create an app screenshot](post-v1-appscreenshots.md)
   Add a new screenshot to a screenshot set.
-- [Modify an App Screenshot](patch-v1-appscreenshots-_id_.md)
+- [Modify an app screenshot](patch-v1-appscreenshots-_id_.md)
   Commit an app screenshot after uploading it.
-- [Delete an App Screenshot](delete-v1-appscreenshots-_id_.md)
+- [Delete an app screenshot](delete-v1-appscreenshots-_id_.md)
   Delete an app screenshot that is associated with a screenshot set.
 ### Objects
 - [object AppScreenshot](appscreenshot.md)
@@ -37,9 +37,9 @@ To upload screenshots, begin by creating an [`App Screenshot Sets`](app-screensh
 - [object AppScreenshotUpdateRequest](appscreenshotupdaterequest.md)
   The request body you use to update an App Screenshot.
 - [object AppScreenshotResponse](appscreenshotresponse.md)
-  A response that contains a single App Screenshots resource.
+  The response body for endpoints that create, read, or modify an app screenshot.
 - [object AppScreenshotsResponse](appscreenshotsresponse.md)
-  A response that contains a list of App Screenshots resources.
+  The response body for endpoints that list screenshots in an app screenshot set.
 - [object UploadOperation](uploadoperation.md)
   Upload instructions for assets such as app previews and app screenshots.
 

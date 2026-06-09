@@ -26,7 +26,7 @@ struct CredentialImportManagerExample: View {
 
     var body: some View {
         content // defined elsewhere
-            .onContinueUserActivity(ASCredentialExchangeActivityType) { activity in
+            .onContinueUserActivity(ASCredentialExchangeActivity) { activity in
                 Task {
                     do {
                         guard let token = activity.userInfo?[ASCredentialImportToken] as? UUID else { return }

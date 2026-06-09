@@ -1,4 +1,4 @@
-# Read App Screenshot Information
+# Read app screenshot information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get information about an app screenshot and its upload and processing status.
 
 ## Parameters
 
-- `fields[appScreenshots]` ([string])
-- `include` ([string])
+- `fields[appScreenshots]` ([string]): Additional fields to include for each app screenshot resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appScreenshotSets]` ([string])
 
 ## See Also
 
-- [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
+- [List all app screenshots for an app screenshot set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
   List all ordered screenshots in a screenshot set.
 
 

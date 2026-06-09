@@ -17,7 +17,7 @@ Fetches all record zones from the current database.
 ## Declaration
 
 ```swift
-func allRecordZones() async throws -> [CKRecordZone]
+func fetchAllRecordZones(completionHandler: @escaping @Sendable ([CKRecordZone]?, (any Error)?) -> Void)
 ```
 
 #### Discussion

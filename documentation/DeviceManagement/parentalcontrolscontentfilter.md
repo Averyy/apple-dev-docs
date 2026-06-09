@@ -7,8 +7,6 @@ The payload that configures the parental control web content filters.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -101,16 +99,16 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 
 ## Properties
 
-- `allowListEnabled` (boolean): If `true`, enables web content filters.
-- `filterAllowList` ([string]): The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user.
-- `filterBlacklist` ([string]): Use `filterDenyList` instead.
-- `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user.
-- `filterWhitelist` ([string]): Use `filterAllowList` instead.
+- `allowListEnabled` (boolean): If `true`, enables web content filters. Available: macOS 15.2+
+- `filterAllowList` ([string]): The array of URLs that defines an allow list. When `restrictWeb` and `useContentFilter` are enabled, only URLs in the allow list are available to the user. Available: macOS 15.2+
+- `filterBlacklist` ([string]): Use `filterDenyList` instead. Deprecated: macOS 15.2+
+- `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user. Available: macOS 15.2+
+- `filterWhitelist` ([string]): Use `filterAllowList` instead. Deprecated: macOS 15.2+
 - `restrictWeb` (boolean) *(required)*: If `true`, enables web content filters.
-- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. This key is required if `allowListEnabled` is `true`.
-- `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]): Use `siteAllowList` instead.
+- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. This key is required if `allowListEnabled` is `true`. Available: macOS 15.2+
+- `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]): Use `siteAllowList` instead. Deprecated: macOS 15.2+
 - `useContentFilter` (boolean): If `true`, filters content automatically.
-- `whitelistEnabled` (boolean): Use `allowListEnabled` instead.
+- `whitelistEnabled` (boolean): Use `allowListEnabled` instead. Deprecated: macOS 15.2+
 
 ## See Also
 

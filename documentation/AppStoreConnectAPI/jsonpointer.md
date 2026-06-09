@@ -25,6 +25,7 @@ In some cases, the JSON pointer may indicate an element that isn’t in the requ
 ## See Also
 
 - [object ErrorLinks](errorlinks.md)
+  Navigation links within an error response, providing references to related resources or documentation.
 - [object ErrorResponse](errorresponse.md)
   The error details that an API returns in the response body whenever the API request isn’t successful.
 - [object Parameter](parameter.md)

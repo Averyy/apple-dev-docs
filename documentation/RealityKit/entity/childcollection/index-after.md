@@ -25,7 +25,7 @@ Returns the position immediately after the given index. (See `Collection.index`.
 - [var startIndex: Int](entity/childcollection/startindex.md)
   The position of the first element in a nonempty collection. (See `Collection.startIndex`.)
 - [var endIndex: Int](entity/childcollection/endindex.md)
-  TThe collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
+  The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
 
 
 ---

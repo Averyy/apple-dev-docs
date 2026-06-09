@@ -24,7 +24,7 @@ static func buildIf<C>(_ content: C?) -> C? where C : Commands
   Produces content for a conditional statement in a multi-statement closure when the condition is true.
 - [static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F>](commandsbuilder/buildeither(second:).md)
   Produces content for a conditional statement in a multi-statement closure when the condition is false.
-- [static buildLimitedAvailability(_:)](commandsbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(any Commands) -> some Commands](commandsbuilder/buildlimitedavailability(_:).md)
   Processes commands for a conditional compiler-control statement that performs an availability check.
 - [static func buildExpression<Content>(Content) -> Content](commandsbuilder/buildexpression(_:).md)
   Builds an expression within the builder.

@@ -17,6 +17,7 @@ The default tab view style.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultTabViewStyle
 ```
 

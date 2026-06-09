@@ -17,6 +17,7 @@ The scrollable axes of the scroll view.
 ## Declaration
 
 ```swift
+nonisolated
 var axes: Axis.Set { get set }
 ```
 

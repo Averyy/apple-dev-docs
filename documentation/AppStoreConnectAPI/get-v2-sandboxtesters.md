@@ -1,4 +1,4 @@
-# List Sandbox Testers
+# List sandbox testers
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -62,9 +62,9 @@ https://api.appstoreconnect.apple.com/v2/sandboxTesters
 
 ## See Also
 
-- [Modify a Sandbox Tester](patch-v2-sandboxtesters-_id_.md)
+- [Modify a sandbox tester](patch-v2-sandboxtesters-_id_.md)
   Change the subscription renewal time rate, set interrupted purchases or change territory of Sandbox Apple Account.
-- [Clear Purchase History for a Sandbox Tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
+- [Clear purchase history for a sandbox tester](post-v2-sandboxtestersclearpurchasehistoryrequest.md)
   Remove purchase history from a Sandbox Apple Account.
 
 

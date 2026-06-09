@@ -25,10 +25,10 @@ enum Code
 - [static var audioDisordered: SFSpeechError.Code](sfspeecherror/code/audiodisordered.md)
   The audio input time-code overlaps or precedes prior audio input.
 - [SFSpeechError.Code.audioReadFailed](sfspeecherror/code/audioreadfailed.md)
-  The audio file could not be read.
+  The audio source could not be read.
 ### Audio format errors
 - [static var incompatibleAudioFormats: SFSpeechError.Code](sfspeecherror/code/incompatibleaudioformats.md)
-  The selected modules do not have an audio format in common.
+  The selected modules do not have an audio format in common or do not support an audio format.
 - [static var unexpectedAudioFormat: SFSpeechError.Code](sfspeecherror/code/unexpectedaudioformat.md)
   The audio input is in unexpected format.
 ### Asset errors
@@ -58,6 +58,9 @@ enum Code
   The module’s result task failed.
 ### Initializers
 - [init?(rawValue: Int)](sfspeecherror/code/init(rawvalue:).md)
+### Type Properties
+- [static var cannotConfigureAudioSystem: SFSpeechError.Code](sfspeecherror/code/cannotconfigureaudiosystem.md)
+  The audio source could not be configured.
 
 ## Relationships
 

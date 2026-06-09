@@ -15,10 +15,6 @@ This includes the onscreen windows seen on the user’s desktop and any offscree
   Generates and returns information about the selected windows in the current user session.
 - [func CGWindowListCreateDescriptionFromArray(CFArray?) -> CFArray?](cgwindowlistcreatedescriptionfromarray(_:).md)
   Generates and returns information about windows with the specified window IDs.
-- [func CGWindowListCreateImage(CGRect, CGWindowListOption, CGWindowID, CGWindowImageOption) -> CGImage?](cgwindowlistcreateimage(_:_:_:_:).md)
-  Returns a composite image based on a dynamically generated list of windows.
-- [init?(windowListFromArrayScreenBounds: CGRect, windowArray: CFArray, imageOption: CGWindowImageOption)](cgimage/init(windowlistfromarrayscreenbounds:windowarray:imageoption:).md)
-  Returns a composite image of the specified windows.
 ### Data Types
 - [typealias CGWindowID](cgwindowid.md)
   The data type used to store window identifiers.

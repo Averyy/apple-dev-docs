@@ -17,15 +17,15 @@ The `scmPullRequests` resource represents pull requests (PRs) for repositories X
 ## Topics
 
 ### Getting Pull Request Information
-- [Read Pull Request Information](get-v1-scmpullrequests-_id_.md)
+- [Read pull request information](get-v1-scmpullrequests-_id_.md)
   Get information about a specific pull request.
 ### Objects
 - [object ScmPullRequest](scmpullrequest.md)
-  The data structure that represents a Pull Requests resource.
+  A pull request in a source code repository connected to Xcode Cloud, which can automatically trigger workflow builds.
 - [object ScmPullRequestResponse](scmpullrequestresponse.md)
-  A response that contains a single Pull Requests resource.
+  The response body for endpoints that read a single SCM pull request linked to Xcode Cloud.
 - [object ScmPullRequestsResponse](scmpullrequestsresponse.md)
-  A response that contains a list of Pull Requests resources.
+  The response body for endpoints that list SCM pull requests linked to Xcode Cloud.
 
 ## See Also
 

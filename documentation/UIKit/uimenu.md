@@ -85,6 +85,8 @@ For examples of how you use [`UIMenu`](uimenu.md), see [`Adding menus and shortc
   An object that configures how UIKit displays the menu.
 - [class UIMenuDisplayPreferences](uimenudisplaypreferences.md)
   An object that contains information for configuring a menu’s display.
+### Initializers
+- [convenience init(title: String, subtitle: String?, image: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, identifier: UIMenu.Identifier?, options: UIMenu.Options, preferredElementSize: UIMenu.ElementSize, children: [UIMenuElement])](uimenu/init(title:subtitle:image:preferredimagevisibility:identifier:options:preferredelementsize:children:).md)
 
 ## Relationships
 

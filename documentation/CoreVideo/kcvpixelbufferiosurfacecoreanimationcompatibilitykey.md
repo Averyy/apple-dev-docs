@@ -12,7 +12,6 @@ A key to a Boolean value that indicates whether Core Animation can display the p
 - macOS 10.6+
 - tvOS 9.0+
 - visionOS 1.0+
-- watchOS 2.0+
 
 ## Declaration
 

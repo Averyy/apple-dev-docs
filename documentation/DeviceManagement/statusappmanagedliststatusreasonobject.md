@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains details about a declarative managed app’s state.
+Information about a status error.
 
 **Availability**:
 - iOS 17.2+
@@ -11,8 +11,6 @@ A dictionary that contains details about a declarative managed app’s state.
 - Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object StatusAppManagedListStatusReasonObject
 
 ### Objects
 - [object StatusAppManagedListStatusReason_DetailsObject](statusappmanagedliststatusreason_detailsobject.md)
-  A dictionary that contains additional details about a declarative managed app’s error state.
+  A dictionary that contains additional details about the state.
 
 ## Properties
 
@@ -35,7 +33,7 @@ object StatusAppManagedListStatusReasonObject
 ## See Also
 
 - [object StatusAppManagedListManagedConfigurationObject](statusappmanagedlistmanagedconfigurationobject.md)
-  A dictionary that contains details about a declarative managed app’s managed configuration.
+  The status of app or extension managed configurations. This key is only present when managed configurations are available for the managed app or any of its extensions.
 
 
 ---

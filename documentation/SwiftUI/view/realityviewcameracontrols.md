@@ -26,6 +26,8 @@ You can use a drag gesture from a mouse, trackpad, or screen touches with iOS an
 
 - [var realityViewCameraControls: CameraControls](environmentvalues/realityviewcameracontrols.md)
   The camera controls for the reality view.
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 
 
 ---

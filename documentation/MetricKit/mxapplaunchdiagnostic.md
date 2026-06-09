@@ -41,14 +41,14 @@ class MXAppLaunchDiagnostic
 
 ## See Also
 
-- [class MXAppExitMetric](mxappexitmetric.md)
-  An object representing metrics about the types of foreground and background app exits.
-- [class MXAppRunTimeMetric](mxappruntimemetric.md)
-  An object representing metrics about the amount of time the app is active.
-- [class MXMemoryMetric](mxmemorymetric.md)
-  An object representing metrics about the app’s memory use.
+- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
+  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
 - [class MXCrashDiagnostic](mxcrashdiagnostic.md)
   An object representing a diagnostic report for an app crash.
+- [class MXHangDiagnostic](mxhangdiagnostic.md)
+  An object representing a diagnostic report for an app that is too busy to handle user input responsively.
+- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
+  An object representing a diagnostic report for a disk write exception.
 
 
 ---

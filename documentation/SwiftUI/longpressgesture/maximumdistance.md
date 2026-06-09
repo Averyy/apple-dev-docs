@@ -16,6 +16,7 @@ The maximum distance that the long press can move before the gesture fails.
 ## Declaration
 
 ```swift
+nonisolated
 var maximumDistance: CGFloat { get set }
 ```
 
@@ -29,6 +30,8 @@ var maximumDistance: CGFloat { get set }
   Creates a long-press gesture with a minimum duration
 - [init(minimumDuration: Double, maximumDistance: CGFloat)](longpressgesture/init(minimumduration:maximumdistance:).md)
   Creates a long-press gesture with a minimum duration and a maximum distance that the interaction can move before the gesture fails.
+- [init(minimumDuration: Double, maximumDistance: CGFloat, inputKinds: GestureInputKinds)](longpressgesture/init(minimumduration:maximumdistance:inputkinds:).md)
+  Creates a long-press gesture with a minimum duration, a maximum distance, and the input kinds the gesture recognizes.
 - [var minimumDuration: Double](longpressgesture/minimumduration.md)
   The minimum duration of the long press that must elapse before the gesture succeeds.
 

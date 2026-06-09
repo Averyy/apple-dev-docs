@@ -31,7 +31,7 @@ A publisher that republishes all elements that satisfy the closure.
 
 #### Discussion
 
-Combine’s [`filter(_:)`](publisher/filter(_:).md) operator performs an operation similar to that of [`filter(_:)`](https://developer.apple.com/documentation/Swift/Sequence/filter(_:)-5y9d2) in the Swift Standard Library: it uses a closure to test each element to determine whether to republish the element to the downstream subscriber.
+Combine’s [`filter(_:)`](publisher/filter(_:).md) operator performs an operation similar to that of doc://com.apple.documentation/documentation/Swift/Sequence/filter(_:)-5y9d2 in the Swift Standard Library: it uses a closure to test each element to determine whether to republish the element to the downstream subscriber.
 
 The following example, uses a filter operation that receives an `Int` and only republishes a value if it’s even.
 

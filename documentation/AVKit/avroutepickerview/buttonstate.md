@@ -16,6 +16,8 @@ enum ButtonState
 
 ## Topics
 
+### Creating a button state
+- [init?(rawValue: Int)](avroutepickerview/buttonstate/init(rawvalue:).md)
 ### Button States
 - [AVRoutePickerView.ButtonState.normal](avroutepickerview/buttonstate/normal.md)
   The normal, or default, button state.
@@ -25,8 +27,6 @@ enum ButtonState
   The button state when AirPlay is active.
 - [AVRoutePickerView.ButtonState.activeHighlighted](avroutepickerview/buttonstate/activehighlighted.md)
   The highlighted button state when AirPlay is active.
-### Initializers
-- [init?(rawValue: Int)](avroutepickerview/buttonstate/init(rawvalue:).md)
 
 ## Relationships
 

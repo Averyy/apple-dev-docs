@@ -9,13 +9,16 @@ The electrical energy consumed or generated, or the runtime duration split out b
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 var dataByTariffPeak: ElectricityInsightRecord<Measure>.TariffPeak?
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 #### Discussion
 

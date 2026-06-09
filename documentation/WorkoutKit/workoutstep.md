@@ -21,28 +21,17 @@ struct WorkoutStep
 ## Topics
 
 ### Creating new workout steps
-- [init(goal: WorkoutGoal, alert: (WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
+- [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?)](workoutstep/init(goal:alert:).md)
   Creates a new workout step with the provided goal and alerts.
 ### Accessing step data
-- [var alert: (WorkoutAlert)?](workoutstep/alert.md)
+- [var alert: (any WorkoutAlert)?](workoutstep/alert.md)
   Alerts used during the step.
 - [var goal: WorkoutGoal](workoutstep/goal.md)
   A goal that determines when the step ends.
-### Comparing workout steps
-- [var hashValue: Int](workoutstep/hashvalue.md)
-  The hashed value of the workout step.
-- [func hash(into: inout Hasher)](workoutstep/hash(into:).md)
-  Hashes the essential components of the workout step by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](workoutstep/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two workout steps aren’t equal.
-- [static func == (WorkoutStep, WorkoutStep) -> Bool](workoutstep/==(_:_:).md)
-  Returns a Boolean value that indicates whether two workout steps are equal.
 ### Initializers
 - [init(goal: WorkoutGoal, alert: (any WorkoutAlert)?, displayName: String?)](workoutstep/init(goal:alert:displayname:).md)
 ### Instance Properties
 - [var displayName: String?](workoutstep/displayname.md)
-### Default Implementations
-- [Equatable Implementations](workoutstep/equatable-implementations.md)
 
 ## Relationships
 

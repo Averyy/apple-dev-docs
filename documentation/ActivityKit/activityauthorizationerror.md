@@ -8,6 +8,7 @@ An error that indicates why the request to start a Live Activity failed.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 
@@ -56,7 +57,6 @@ enum ActivityAuthorizationError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomNSError](../Foundation/CustomNSError.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)

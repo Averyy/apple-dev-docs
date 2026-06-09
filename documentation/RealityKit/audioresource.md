@@ -38,9 +38,7 @@ A playable audio resource
 - [AudioFileGroupResource](audiofilegroupresource.md)
 - [AudioFileResource](audiofileresource.md)
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

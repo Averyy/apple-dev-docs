@@ -31,9 +31,9 @@ rectangle.style.strokeOpacity = 0
 
 ##### Add an Event Listener to Respond to Map Events
 
-When the user taps or clicks the overlay, MapKit JS changes the overlay’s [`selected`](overlay/selected.md) property and propagates an event from the [`Map`](map.md) object. Use [`addEventListener(eventType, listener, thisObject)`](mapkiteventtarget/addeventlistener.md) to receive events from the [`Map`](map.md) object when the user selects an overlay. To stop receiving events, use [`removeEventListener(eventType, listener, thisObject)`](mapkiteventtarget/removeeventlistener.md).
+When someone taps or clicks the overlay, MapKit JS changes the overlay’s [`selected`](overlay/selected.md) property and propagates an event from the [`Map`](map.md) object. Use `addEventListener` to receive events from the [`Map`](map.md) object when the user selects an overlay. To stop receiving events, use `removeEventListener`.
 
-> 💡 **Tip**:  Because MapKit JS places annotations on top of overlays, the user can inadvertently select the annotation when an annotation and an overlay are both visible. To keep an annotation visible and allow the selection of the overlay, set the annotation’s [`enabled`](annotation/enabled.md) property to `false`.
+> 💡 **Tip**:  Because MapKit JS places annotations on top of overlays, people can inadvertently select the annotation when an annotation and an overlay are both visible. To keep an annotation visible and allow the selection of the overlay, set the annotation’s [`enabled`](annotation/enabled.md) property to `false`.
 
 MapKit JS emits a `select` or `deselect` event when the overlay’s [`selected`](overlay/selected.md) property changes. Each event that originates from an overlay has an `overlay` property, which is the [`Overlay`](overlay.md) object that changes state.
 

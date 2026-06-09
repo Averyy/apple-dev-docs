@@ -8,6 +8,7 @@ The list of trusted server certificates.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: property
 
+A resource that helps provide a description of this instance.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,6 +23,7 @@ var localizedStringResource: LocalizedStringResource { get }
 ## See Also
 
 - [var localizedStringResource: LocalizedStringResource](casedisplayrepresentable/localizedstringresource-7gj71.md)
+  A resource that helps provide a description of this instance.
 
 
 ---

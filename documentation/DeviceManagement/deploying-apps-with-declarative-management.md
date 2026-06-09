@@ -10,7 +10,7 @@ Device management services can install, manage, update, configure, and remove ap
 
 If a device management service already manages an app using the [`Install Application`](install-application-command.md) or [`Install Enterprise Application`](install-enterprise-application-command.md) commands, it can convert the app to declarative app management.
 
-In macOS, device management services can install, update, and remove packages using the [`Package`](package.md) configuration. They can then manage apps that a package installs using an [`AppManaged`](appmanaged.md) configuration targeting the app. Devices can report package status using the [`StatusPackageList`](statuspackagelist.md) status item.
+In macOS, device management services can install, update, and remove packages using the [`Package`](package.md) configuration. A device management service can then manage apps that a package installs using an [`AppManaged`](appmanaged.md) configuration targeting the app. Devices can report package status using the [`StatusPackageList`](statuspackagelist.md) status item.
 
 ## Topics
 
@@ -22,7 +22,7 @@ In macOS, device management services can install, update, and remove packages us
 - [Configuring managed apps and extensions](configuring-managed-apps-and-extensions.md)
   Provide managed apps and extensions with app configuration and secrets.
 - [Transferring management of apps to declarative management](transferring-management-of-apps-to-declarative-management.md)
-  Seamlessly transition apps to declarative management without needing to reinstall.
+  Transition apps to declarative management.
 - [Processing status for managed apps](processing-status-for-managed-apps.md)
   Process the status that declarative management reports for managed apps.
 - [Installing packages](installing-packages.md)
@@ -30,14 +30,8 @@ In macOS, device management services can install, update, and remove packages us
 
 ## See Also
 
-- [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
-  Use declarative management to make devices more autonomous and proactive.
-- [Integrating Declarative Management](integrating-declarative-management.md)
-  Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
-- [Declarations](devicemanagement-declarations.md)
-  The available declarations for device management.
-- [Status Reports](status-reports.md)
-  Reports from the device about its current state.
+- [Installing provisioning profiles on devices](installing-provisioning-profiles-on-devices.md)
+  Deploy provisioning profiles required to run enterprise apps on devices.
 
 
 ---

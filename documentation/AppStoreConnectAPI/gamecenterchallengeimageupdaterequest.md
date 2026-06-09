@@ -18,6 +18,7 @@ object GameCenterChallengeImageUpdateRequest
 
 ### Dictionaries
 - [object GameCenterChallengeImageUpdateRequest.Data](gamecenterchallengeimageupdaterequest/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 
@@ -26,11 +27,11 @@ object GameCenterChallengeImageUpdateRequest
 ## See Also
 
 - [object GameCenterChallengeImage](gamecenterchallengeimage.md)
-  The data structure that represents a challenge image.
+  An image asset used to represent a Game Center challenge in the player interface.
 - [object GameCenterChallengeImageCreateRequest](gamecenterchallengeimagecreaterequest.md)
-  The request body you use to create a challenge resource.
+  The request body for uploading an image asset for a Game Center challenge.
 - [object GameCenterChallengeImageResponse](gamecenterchallengeimageresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single image asset for a Game Center challenge.
 - [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)
 - [object GameCenterChallengeVersionDefaultImageLinkageResponse](gamecenterchallengeversiondefaultimagelinkageresponse.md)
 

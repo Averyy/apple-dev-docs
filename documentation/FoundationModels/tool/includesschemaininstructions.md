@@ -12,6 +12,7 @@ If true, the model’s name, description, and parameters schema will be injected
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,12 +28,13 @@ The default implementation is `true`
 
 ## See Also
 
-- [var description: String](tool/description.md)
-  A natural language description of when and how to use the tool.
 - [var name: String](tool/name.md)
   A unique name for the tool, such as “get_weather”, “toggleDarkMode”, or “search contacts”.
+- [var description: String](tool/description.md)
+  A natural language description of when and how to use the tool.
 - [var parameters: GenerationSchema](tool/parameters.md)
   A schema for the parameters this tool accepts.
+- [typealias SessionProperty](tool/sessionproperty.md)
 
 
 ---

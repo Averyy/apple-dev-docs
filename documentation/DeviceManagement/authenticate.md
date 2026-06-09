@@ -13,12 +13,11 @@ Authenticates a user during MDM payload installation.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
-- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-user-enrollment-flow.md)
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)
 
 #### Discussion
 
@@ -29,8 +28,8 @@ On success, the server needs to respond with a `200 OK` status. Don’t assume t
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 
 ## Topics
@@ -41,7 +40,7 @@ On success, the server needs to respond with a `200 OK` status. Don’t assume t
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#AuthenticateRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

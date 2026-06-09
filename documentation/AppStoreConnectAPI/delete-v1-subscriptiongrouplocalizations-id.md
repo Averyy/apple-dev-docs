@@ -1,4 +1,4 @@
-# Delete a Subscription Group Localization
+# Delete a subscription group localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,11 +22,11 @@ Delete localized metadata that you configured for a subscription group.
 
 ## See Also
 
-- [Create a Subscription Group Localization](post-v1-subscriptiongrouplocalizations.md)
+- [Create a subscription group localization](post-v1-subscriptiongrouplocalizations.md)
   Create a localized display name and optional custom app name for a subscription group.
-- [Read Subscription Group Localization Information](get-v1-subscriptiongrouplocalizations-_id_.md)
+- [Read subscription group localization information](get-v1-subscriptiongrouplocalizations-_id_.md)
   Get the specific localized subscription group display name and optional custom app name for a subscription group.
-- [Modify a Subscription Group Localization](patch-v1-subscriptiongrouplocalizations-_id_.md)
+- [Modify a subscription group localization](patch-v1-subscriptiongrouplocalizations-_id_.md)
   Update a specific localized display name and optional custom app name for a subscription group.
 
 

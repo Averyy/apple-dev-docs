@@ -239,6 +239,8 @@ You can also monitor the events your app receives and modify or cancel some even
 ### Initializers
 - [init?(CGEvent: CGEvent)](nsevent/init(cgevent:)-8acvx.md)
 - [init?(coder: NSCoder)](nsevent/init(coder:).md)
+### Type Properties
+- [class var isTouchSwipeNavigationEnabled: Bool](nsevent/istouchswipenavigationenabled.md)
 
 ## Relationships
 

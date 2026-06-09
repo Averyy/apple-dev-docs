@@ -1,10 +1,10 @@
-# GET /v1/gameCenterGroups/{id}/relationships/gameCenterChallenges
+# List Game Center challenge IDs for a Game Center group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -28,15 +28,15 @@
   Update the leaderboard relationship for a specific Game Center challenge.
 - [Modify the Leaderboard for a Challenge](patch-v1-gamecenterchallenges-_id_-relationships-leaderboard.md)
   Update the relationship between a leaderbaord and a specific Game Center challenge.
-- [Modify the Challenges Minimum Platform Version for a Game Center Detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
+- [Modify the challenges minimum platform version for a game center detail](patch-v1-gamecenterdetails-_id_-relationships-challengesminimumplatformversions.md)
   Update the relationship between a challenges minimum platform version and a specific Game Center detail.
 - [Delete a Challenge](delete-v1-gamecenterchallenges-_id_.md)
   Remove a specific Game Center challenge.
-- [Read the Challenges for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center detail.
-- [Read the Challenges for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center group.
-- [Read the Challenges for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center group.
 
 

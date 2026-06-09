@@ -9,7 +9,6 @@ Charges the customer the amount shown for each payment cycle. Only allowed for [
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 

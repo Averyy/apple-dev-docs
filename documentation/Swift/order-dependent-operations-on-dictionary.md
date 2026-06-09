@@ -39,7 +39,7 @@ Perform order-dependent operations common to all collections, as implemented for
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](dictionary/subscript(_:)-4h7sk.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](dictionary/subscript(_:)-4al9z.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](dictionary/subscript(_:)-4al9z.md)
 - [func prefix(Int) -> Self.SubSequence](dictionary/prefix(_:).md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
 - [func prefix(through: Self.Index) -> Self.SubSequence](dictionary/prefix(through:).md)

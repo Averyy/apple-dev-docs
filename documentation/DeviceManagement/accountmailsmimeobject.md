@@ -10,8 +10,6 @@ Settings for S/MIME.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,9 +33,9 @@ object AccountMailSMIMEObject
 ## See Also
 
 - [object AccountMailIncomingServerObject](accountmailincomingserverobject.md)
-  The settings for configuring an incoming mail server.
+  The settings for the incoming mail server for this account.
 - [object AccountMailOutgoingServerObject](accountmailoutgoingserverobject.md)
-  The settings for configuring an outgoing mail server.
+  The settings for the outgoing mail server for this account.
 
 
 ---

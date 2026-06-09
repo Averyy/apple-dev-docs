@@ -48,6 +48,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Bring RealityKit content into your app with views and renderers.
 - [Presentation UI](presentation-user-interface.md)
   Control your app’s content and how people can interact with it.
+- [Postprocessing effects](postprocessing-effects.md)
+  Create special rendering effects for your RealityKit scenes.
 ### Scene management and logic
 - [Scenes](ecs-scenes.md)
   The context that holds all RealityKit entities.
@@ -59,7 +61,7 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Create simple, reusable actions that can change your app state, RealityKit scene, or animate an entity.
 ### Asset creation
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
-  Build, create, and design 3D content for your RealityKit apps.
+  Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Swift Splash](../visionOS/swift-splash.md)
   Use RealityKit to create an interactive ride in visionOS.
 - [Diorama](../visionOS/diorama.md)
@@ -103,6 +105,10 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Present videos in your RealityKit experiences.
 - [Images](scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
+- [Global illumination and baked lighting](scene-content-global-illumination.md)
+  Light scenes realistically by precomputing illumination so surfaces pick up bounced color and ambient detail without recalculating it every frame.
 ### Game development
 - [Gaming sample code projects](game-development-sample-code.md)
   Explore a collection of projects relating to game development.
@@ -110,6 +116,14 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Dynamically move, rotate, and scale entities at runtime.
 - [Character control, skeletons, and inverse kinematics](game-development-character-skeletons.md)
   Direct the movements and animation of models.
+- [struct NavigationComponent](navigationcomponent.md)
+  A component that defines which areas of a navigation mesh an entity can move through.
+- [struct NavigationMeshComponent](navigationmeshcomponent.md)
+  A component that provides the navigation meshes an entity uses to find paths through a scene.
+- [struct NavigationController](navigationcontroller.md)
+  An interface for finding paths for an entity moving across a scene’s navigation mesh.
+- [class NavigationMeshResource](navigationmeshresource.md)
+  A representation of a scene’s navigable surfaces that the system uses to compute paths.
 ### Physics simulation
 - [Collision detection](physics-collision-detection.md)
   Determine when entities collide with each other or the environment.
@@ -119,6 +133,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Control the movement of virtual objects with forces.
 - [Physics joints and pins](physics-joints-and-pins.md)
   Simulate joint physics that connect virtual objects.
+- [Cloth simulation](physics-cloth-simulation.md)
+  Add fabric, soft surfaces, and draping materials that bend, fold, and respond to forces and contact in your 3D scenes.
 ### Performance improvements
 - [Improving the Performance of a RealityKit App](improving-the-performance-of-a-realitykit-app.md)
   Measure CPU and GPU utilization to find ways to improve your app’s performance.
@@ -130,9 +146,13 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   Build efficient custom worlds for your app.
 - [Passing Metal command objects around your application](passing-metal-command-objects-around-your-application.md)
   Build a system that creates and passes Metal command objects to entities dispatching Metal compute shaders.
-### Articles
-- [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
-  Render stereoscopic video in visionOS with RealityKit.
+- [Low-level rendering](low-level-rendering.md)
+  Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
+### Classes
+- [class GaussianSplatResource](gaussiansplatresource.md)
+  A component that renders 3D Gaussian splat data.
+### Structures
+- [struct GaussianSplatComponent](gaussiansplatcomponent.md)
 
 
 ---

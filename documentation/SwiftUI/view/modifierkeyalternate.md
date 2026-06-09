@@ -12,7 +12,7 @@ Builds a view to use in place of the modified view when the user presses the mod
 
 ```swift
 nonisolated
-func modifierKeyAlternate<V>(_ modifiers: EventModifiers, @ViewBuilder _ alternate: () -> V) -> some View where V : View
+func modifierKeyAlternate<V>(_ modifiers: EventModifiers, @ContentBuilder _ alternate: () -> V) -> some View where V : View
 ```
 
 #### Return Value
@@ -39,7 +39,7 @@ Button("Save", ...) // ⌘ S
     }
 ```
 
-To use a different keyboard shortcut for the alternate view, add one explicitly in the view builder. SwiftUI will use your explicit shortcut instead of its own inferred one.
+To use a different keyboard shortcut for the alternate view, add one explicitly in the content builder. SwiftUI will use your explicit shortcut instead of its own inferred one.
 
 ```swift
 Button("Go Forward", ...) // ⌘ →
@@ -66,7 +66,7 @@ Button("Save", ...) // ⌘ S
 ## Parameters
 
 - `modifiers`: The modifier keys to associate with the alternate view. While all these keys are held, SwiftUI will replace the modified view with this alternate one.
-- `alternate`: A view builder for constructing the modified view’s alternate when matching modifier keys are pressed.
+- `alternate`: A content builder for constructing the modified view’s alternate when matching modifier keys are pressed.
 
 ## See Also
 

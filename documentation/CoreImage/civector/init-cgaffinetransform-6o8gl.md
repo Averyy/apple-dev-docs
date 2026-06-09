@@ -11,7 +11,6 @@ Initialize a Core Image vector object with six values provided by a `CGAffineTra
 - Mac Catalyst 13.1+
 - macOS 10.9+
 - tvOS ?+
-- visionOS 1.0+
 
 ## Declaration
 

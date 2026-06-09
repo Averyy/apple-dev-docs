@@ -17,6 +17,7 @@ Creates an instance from another gesture.
 ## Declaration
 
 ```swift
+nonisolated
 init<T>(_ gesture: T) where Value == T.Value, T : Gesture
 ```
 

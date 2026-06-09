@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a Game Center player achievement submission.
+
 **Availability**:
 - App Store Connect API 3.2+
 
@@ -16,6 +18,7 @@ object GameCenterPlayerAchievementSubmissionCreateRequest.Data
 
 ### Objects
 - [object GameCenterPlayerAchievementSubmissionCreateRequest.Data.Attributes](gamecenterplayerachievementsubmissioncreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a player resource.
 
 ## Properties
 

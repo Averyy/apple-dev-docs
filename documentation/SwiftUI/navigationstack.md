@@ -17,8 +17,8 @@ A view that displays a root view and enables you to present additional views ove
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct NavigationStack<Data, Root> where Root : View
+nonisolated
+struct NavigationStack<Data, Root> where Root : View
 ```
 
 ## Mentions

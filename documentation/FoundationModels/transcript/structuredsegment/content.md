@@ -11,6 +11,7 @@ The content of the segment.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,7 +22,9 @@ var content: GeneratedContent { get set }
 ## See Also
 
 - [var source: String](transcript/structuredsegment/source.md)
-  A source that be used to understand which type content represents.
+  A source that can be used to understand which type the content represents.
+- [var schemaName: String](transcript/structuredsegment/schemaname.md)
+  A name that can be used to understand which type the content represents.
 
 
 ---

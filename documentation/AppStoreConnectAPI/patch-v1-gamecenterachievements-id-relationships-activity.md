@@ -1,10 +1,10 @@
-# PATCH /v1/gameCenterAchievements/{id}/relationships/activity
+# Modify the activity for a Game Center achievement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 4.0+
 
 ## Endpoint
 

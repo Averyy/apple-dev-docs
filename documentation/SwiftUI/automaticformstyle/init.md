@@ -17,6 +17,7 @@ Creates a default form style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

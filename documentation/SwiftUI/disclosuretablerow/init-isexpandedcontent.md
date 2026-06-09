@@ -15,6 +15,7 @@ Creates a disclosure group with the given value and table rows, and a binding to
 ## Declaration
 
 ```swift
+nonisolated
 init<Value>(_ value: Value, isExpanded: Binding<Bool>? = nil, @TableRowBuilder<Value> content: @escaping () -> Content) where Label == TableRow<Value>, Value == Content.TableRowValue
 ```
 

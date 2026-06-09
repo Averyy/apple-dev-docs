@@ -1,10 +1,10 @@
-# PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge
+# Modify the challenge for a Game Center leaderboard
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -32,7 +32,7 @@
   Modify the details of a leaderboard.
 - [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the activity for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
 - [Delete a Leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 

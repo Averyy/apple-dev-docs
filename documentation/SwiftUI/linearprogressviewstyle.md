@@ -17,6 +17,7 @@ A progress view that visually indicates its progress using a horizontal bar.
 ## Declaration
 
 ```swift
+nonisolated
 struct LinearProgressViewStyle
 ```
 

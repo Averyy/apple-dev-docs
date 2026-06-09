@@ -46,7 +46,7 @@ enum AVAudioConverterOutputStatus
 
 ## See Also
 
-- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: AVAudioConverterInputBlock) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
+- [func convert(to: AVAudioBuffer, error: NSErrorPointer, withInputFrom: (AVAudioPacketCount, UnsafeMutablePointer<AVAudioConverterInputStatus>) -> AVAudioBuffer?) -> AVAudioConverterOutputStatus](avaudioconverter/convert(to:error:withinputfrom:).md)
   Performs a conversion between audio formats, if the system supports it.
 - [typealias AVAudioConverterInputBlock](avaudioconverterinputblock.md)
   A block to get input data for conversion, as necessary.

@@ -17,7 +17,8 @@ Loads and displays a modifiable image from the specified URL in phases.
 ## Declaration
 
 ```swift
-init(url: URL?, scale: CGFloat = 1, transaction: Transaction = Transaction(), @ViewBuilder content: @escaping (AsyncImagePhase) -> Content)
+nonisolated
+init(url: URL?, scale: CGFloat = 1, transaction: Transaction = Transaction(), @ContentBuilder content: @escaping (AsyncImagePhase) -> Content)
 ```
 
 #### Discussion

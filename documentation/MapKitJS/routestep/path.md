@@ -11,7 +11,7 @@ An array of coordinate objects representing the path of the route segment.
 ## Declaration
 
 ```swift
-path?: Coordinate[];
+path: Coordinate[];
 ```
 
 #### Discussion

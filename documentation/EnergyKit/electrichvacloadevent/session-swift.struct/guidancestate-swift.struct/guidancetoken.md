@@ -9,7 +9,6 @@ The guidance token for the guidance that you requested.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

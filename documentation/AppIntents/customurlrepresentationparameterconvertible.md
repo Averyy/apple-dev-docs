@@ -31,10 +31,10 @@ protocol CustomURLRepresentationParameterConvertible
 
 ## See Also
 
-- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
-  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
-- [struct IntentModes](intentmodes.md)
-  A set of options that describe an app intent’s behavior.
+- [protocol URLRepresentableEntity](urlrepresentableentity.md)
+  An app entity with a URL representation.
+- [struct EntityURLRepresentation](entityurlrepresentation.md)
+  The URL representation of an app entity.
 
 
 ---

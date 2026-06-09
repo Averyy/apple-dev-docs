@@ -45,6 +45,8 @@ protocol Delegate : NSObjectProtocol
   Called whenever the sidebar item’s `configurationState` changes or the item is reconfigured. The passed in item will accrue all modifications until the delegate requests for a new sidebar item from the delegate method `tabBarController:sidebar:itemForRequest:`
 - [func tabBarController(UITabBarController, sidebar: UITabBarController.Sidebar, willBeginDisplaying: UITab)](uitabbarcontroller/sidebar-swift.class/delegate-swift.protocol/tabbarcontroller(_:sidebar:willbegindisplaying:).md)
   Notifies the delegate when the sidebar is about to display the row representing the specified `tab`
+- [func tabBarController(UITabBarController, sidebarAvailabilityDidChange: UITabBarController.Sidebar)](uitabbarcontroller/sidebar-swift.class/delegate-swift.protocol/tabbarcontroller(_:sidebaravailabilitydidchange:).md)
+  Notifies the delegate when `UITabBarController.Sidebar.isAvailable` changes.
 - [func tabBarController(UITabBarController, sidebarVisibilityWillChange: UITabBarController.Sidebar, animator: any UITabBarController.Sidebar.Animating)](uitabbarcontroller/sidebar-swift.class/delegate-swift.protocol/tabbarcontroller(_:sidebarvisibilitywillchange:animator:).md)
   Notifies the delegate when the visibility of the sidebar is about to change when `sidebar.isHidden` changes. Add animations to the animator to run alongside the visibility update. Alongside animations and completions will run immediately if the sidebar visibility is changed without animation.
 

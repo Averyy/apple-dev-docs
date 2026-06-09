@@ -55,8 +55,8 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [static var systemTraitsAffectingColorAppearance: [UITrait]](uitraitcollection/systemtraitsaffectingcolorappearance-64z7q.md)
 - [static var systemTraitsAffectingImageLookup: [UITrait]](uitraitcollection/systemtraitsaffectingimagelookup-4jv5.md)
 ### Modifying traits
-- [convenience init(mutations: (inout any UIMutableTraits) -> Void)](uitraitcollection/init(mutations:).md)
-- [func modifyingTraits((inout any UIMutableTraits) -> Void) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
+- [convenience init(mutations: UITraitCollection.TraitMutations)](uitraitcollection/init(mutations:).md)
+- [func modifyingTraits(UITraitCollection.TraitMutations) -> UITraitCollection](uitraitcollection/modifyingtraits(_:).md)
 - [UITraitCollection.TraitMutations](uitraitcollection/traitmutations.md)
 ### Getting trait changes
 - [func changedTraits(from: UITraitCollection?) -> [UITrait]](uitraitcollection/changedtraits(from:).md)

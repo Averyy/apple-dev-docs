@@ -6,9 +6,9 @@
 Fetches the samples that a fetch request specifies.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.1+
 
 ## Declaration
 

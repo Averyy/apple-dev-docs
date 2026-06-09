@@ -8,7 +8,9 @@ The pixel buffer that visual intelligence captures.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 
@@ -23,7 +25,7 @@ var pixelBuffer: CVReadOnlyPixelBuffer? { get }
 ## See Also
 
 - [let labels: [String]](semanticcontentdescriptor/labels.md)
-  A list of labels that visual intelligence uses to classify items onscreen or visual intelligence camera.
+  A list of labels that visual intelligence uses to classify items onscreen or in visual intelligence camera.
 
 
 ---

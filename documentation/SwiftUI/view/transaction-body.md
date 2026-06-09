@@ -18,7 +18,7 @@ Applies the given transaction mutation function to all animations used within th
 
 ```swift
 nonisolated
-func transaction<V>(_ transform: @escaping (inout Transaction) -> Void, @ViewBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
+func transaction<V>(_ transform: @escaping (inout Transaction) -> Void, @ContentBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
 ```
 
 #### Discussion

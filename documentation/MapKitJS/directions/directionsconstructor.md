@@ -16,7 +16,7 @@ constructor(options?: DirectionsConstructorOptions);
 
 #### Discussion
 
-To request directions, create an instance of the [`Directions`](directions.md) object, then call the [`route(request, callback)`](directions/route.md) function with a [`DirectionsRequest`](directionsrequest.md) object as the first parameter. The second parameter for [`route(request, callback)`](directions/route.md) is a callback function, through which MapKit JS returns the directions response asynchronously.
+To request directions, create an instance of the [`Directions`](directions.md) object, then call the [`route(request)`](directions/route.md) function with a [`DirectionsRequest`](directionsrequest.md) object as the first parameter. The second parameter for [`route(request)`](directions/route.md) is a callback function, through which MapKit JS returns the directions response asynchronously.
 
 To return directions in a specific language, set [`language`](directionsconstructoroptions/language.md) in [`DirectionsConstructorOptions`](directionsconstructoroptions.md) when you create an instance of the [`Directions`](directions.md) object.
 

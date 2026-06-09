@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+See \c kCFNumberFormatterMinGroupingDigits in \c CFNumberFormatter for an explanation on how minimum grouping digits is used.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

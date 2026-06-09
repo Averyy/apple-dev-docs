@@ -11,7 +11,8 @@ Creates a scene that presents an interface for viewing and modifying an app’s 
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
@@ -28,7 +29,7 @@ struct MacSwiftUISnippets: App {
             ContentView()
         }
         #if os(macOS)
-        Settings(content: {
+        Settings {
             SettingsView()
         }
         #endif

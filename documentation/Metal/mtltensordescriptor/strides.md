@@ -26,7 +26,7 @@ You are responsible for ensuring `strides` meets the following requirements:
 
 - The first element of `strides` is one.
 - If [`usage`](mtltensordescriptor/usage.md) contains [`machineLearning`](mtltensorusage/machinelearning.md), the second element of `strides` is aligned to 64 bytes, and for any `i` larger than one, `strides[i]` is equal to `strides[i-1] * dimensions[i-1]`.
-- If [`dataType`](mtltensordescriptor/datatype.md) is a sub-byte [`MTLTensorDataType`](mtltensordatatype.md), for any `i` greater than or equal to 1, `strides[i]` is aligned to 128 bytes. This is not a requirement for non-sub-byte data types, but following this convention improves performance.
+- If [`dataType`](mtltensordescriptor/datatype.md) is a format [`MTLTensorDataType`](mtltensordatatype.md), for any `i` greater than or equal to 1, `strides[i]` is aligned to 128 bytes. This is not a requirement for non-format data types, but following this convention improves performance.
 
 Only set this property when creating tensors from a buffer.
 

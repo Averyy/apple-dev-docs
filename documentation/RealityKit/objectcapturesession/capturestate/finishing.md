@@ -8,6 +8,7 @@ The session is saving outstanding data and finishing up.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

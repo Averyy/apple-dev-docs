@@ -40,7 +40,7 @@ Follow these steps to apply the Rosetta patch:
 
 To allow Linux apps to take advantage of the TSO memory model, the app needs to call the `prctl` API on each thread that needs TSO support by calling `prctl(PR_SET_MEM_MODEL, PR_SET_MEM_MODEL_TSO)`in order to set the `tso` bit on that thread.
 
-For basic information on Rosetta and running x86_64 binaries on Apple silicon under Linux, see [`Running Intel Binaries in Linux VMs with Rosetta`](running-intel-binaries-in-linux-vms-with-rosetta.md).
+For basic information on Rosetta and running x86_64 binaries on Apple silicon under Linux, see doc:running-intel-binaries-in-linux-vms-with-rosetta.
 
 ##### Provide Enhanced Linux Kernels or Distributions
 
@@ -62,7 +62,7 @@ The Rosetta patches are open source software; you can add them to kernels or dis
   Configure and run macOS guests on Apple silicon.
 - [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs with Rosetta](running-intel-binaries-in-linux-vms-with-rosetta.md)
+- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 
 

@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: struct
 
-A structure that stores a set of options influencing image creation.
+A type that stores the options that affect the image-generation process.
 
 **Availability**:
 - iOS 26.4+
@@ -20,23 +20,32 @@ struct ImagePlaygroundOptions
 
 #### Overview
 
-You can create a set of options and pass it to `ImageCreator`, `ImagePlaygroundViewController`, or `SwiftUI.View.imagePlaygroundSheet`, in order to create images that satisfy those options.
+Create an instance of this structure and use it to specify the options you want to use when generating images. Apply these options to your SwiftUI sheet using the [`imagePlaygroundOptions(_:)`](https://developer.apple.com/documentation/SwiftUI/View/imagePlaygroundOptions(_:)) modifier, or assign them to properties of the [`ImagePlaygroundViewController`](imageplaygroundviewcontroller.md) or [`ImageCreator`](imagecreator.md) type before generating any images.
 
 ## Topics
 
+### Structures
+- [ImagePlaygroundOptions.SizeSpecification](imageplaygroundoptions/sizespecification-swift.struct.md)
+  A type that specifies image size and aspect ratio information.
 ### Initializers
 - [init()](imageplaygroundoptions/init.md)
-  Creates a set of options with default behaviors.
+  Initializes a new instance of this structure with a default set of options.
 ### Instance Properties
+- [var creationStrategy: ImagePlaygroundOptions.CreationStrategy](imageplaygroundoptions/creationstrategy-swift.property.md)
+  The options that specify how to interpret the content in the provided input image.
 - [var creationVariety: ImagePlaygroundOptions.CreationVariety](imageplaygroundoptions/creationvariety-swift.property.md)
-  An option for enabling or disabling variety when creating multiple images from the same set of concepts.
+  The amount to vary the creation parameters when generating multiple images from the same inputs.
 - [var personalization: ImagePlaygroundOptions.Personalization](imageplaygroundoptions/personalization-swift.property.md)
-  An option for enabling or disabling personalization.
+  The option to enable or disable personalization features.
+- [var sizeSpecification: ImagePlaygroundOptions.SizeSpecification](imageplaygroundoptions/sizespecification-swift.property.md)
+  The requested size for any generated images.
 ### Enumerations
+- [ImagePlaygroundOptions.CreationStrategy](imageplaygroundoptions/creationstrategy-swift.enum.md)
+  Options that specify the system strategy for preserving the original image content.
 - [ImagePlaygroundOptions.CreationVariety](imageplaygroundoptions/creationvariety-swift.enum.md)
-  An option for determining when the system should provide better variety when creating multiple images from the same set of concepts.
+  Options that specify how much variety to use when creating multiple images from the same concepts.
 - [ImagePlaygroundOptions.Personalization](imageplaygroundoptions/personalization-swift.enum.md)
-  An option for enabling or disabling people support in the system interface.
+  Options for enabling and disabling personalization features when generating images.
 
 ## Relationships
 

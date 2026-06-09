@@ -16,6 +16,7 @@ object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerrito
 
 ### Objects
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription availability.
 
 ## Properties
 

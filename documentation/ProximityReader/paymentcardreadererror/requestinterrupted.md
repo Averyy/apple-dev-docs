@@ -9,7 +9,6 @@ An error that indicates the application went to background before a reader reque
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

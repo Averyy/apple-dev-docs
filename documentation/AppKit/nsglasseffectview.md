@@ -21,6 +21,8 @@ class NSGlassEffectView
   The view to embed in glass.
 - [var cornerRadius: CGFloat](nsglasseffectview/cornerradius.md)
   The amount of curvature for all corners of the glass.
+- [var effectIsInteractive: Bool](nsglasseffectview/effectisinteractive.md)
+  Enables interactive glass behavior, which adds a visual response to user interactions.
 - [var style: NSGlassEffectView.Style](nsglasseffectview/style-swift.property.md)
   The style of glass this view uses.
 - [var tintColor: NSColor?](nsglasseffectview/tintcolor.md)

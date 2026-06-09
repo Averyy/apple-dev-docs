@@ -15,6 +15,7 @@ A gesture that recognizes a rotation motion and tracks the angle of the rotation
 ## Declaration
 
 ```swift
+nonisolated
 struct RotateGesture
 ```
 
@@ -49,6 +50,8 @@ struct RotateGestureView: View {
 ### Creating the gesture
 - [init(minimumAngleDelta: Angle)](rotategesture/init(minimumangledelta:).md)
   Creates a rotation gesture with a minimum delta for the gesture to start.
+- [init(minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture/init(minimumangledelta:inputkinds:).md)
+  Creates a rotation gesture with a minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 - [var minimumAngleDelta: Angle](rotategesture/minimumangledelta.md)
   The minimum delta required before the gesture succeeds.
 

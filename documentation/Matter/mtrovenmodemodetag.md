@@ -38,6 +38,7 @@ enum MTROvenModeModeTag
 - [MTROvenModeModeTag.quick](mtrovenmodemodetag/quick.md)
 - [MTROvenModeModeTag.quiet](mtrovenmodemodetag/quiet.md)
 - [MTROvenModeModeTag.roast](mtrovenmodemodetag/roast.md)
+- [MTROvenModeModeTag.steam](mtrovenmodemodetag/steam.md)
 - [MTROvenModeModeTag.vacation](mtrovenmodemodetag/vacation.md)
 - [MTROvenModeModeTag.warming](mtrovenmodemodetag/warming.md)
 ### Initializers

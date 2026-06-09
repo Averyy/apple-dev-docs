@@ -9,7 +9,6 @@ A series of weighted values for intervals of time, describing when to shift or r
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

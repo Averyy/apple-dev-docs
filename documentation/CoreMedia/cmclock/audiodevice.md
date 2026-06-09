@@ -6,7 +6,6 @@
 Returns the audio device the clock tracks.
 
 **Availability**:
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 ## Declaration

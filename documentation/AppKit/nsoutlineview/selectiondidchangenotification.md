@@ -18,6 +18,8 @@ class let selectionDidChangeNotification: NSNotification.Name
 
 The notification object is the outline view whose selection changed. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSOutlineView.SelectionDidChangeMessage`](nsoutlineview/selectiondidchangemessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nsoutlineview/columndidmovenotification.md)

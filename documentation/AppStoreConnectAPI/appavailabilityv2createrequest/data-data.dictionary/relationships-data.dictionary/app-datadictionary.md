@@ -16,6 +16,7 @@ object AppAvailabilityV2CreateRequest.Data.Relationships.App
 
 ### Objects
 - [object AppAvailabilityV2CreateRequest.Data.Relationships.App.Data](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app availability.
 
 ## Properties
 

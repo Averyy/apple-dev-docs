@@ -3,7 +3,7 @@
 **Framework**: Nearby Interaction  
 **Kind**: property
 
-A timestamp, in seconds, for the elapsed message transmission time.
+A transmission timestamp, in seconds, for the received message.
 
 **Availability**:
 - iOS 26.0+

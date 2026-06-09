@@ -8,6 +8,7 @@ The Service Set Identifier (SSID) of the network, also known as the network name
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

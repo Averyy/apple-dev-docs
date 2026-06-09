@@ -10,8 +10,6 @@ The payload that configures Setup Assistant settings.
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,9 +29,9 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 | User channel | macOS |
 | Allow manual install | iOS, macOS |
 | Requires supervision | iOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -89,18 +87,29 @@ Specify `com.apple.SetupAssistant.managed` as the payload type.
 
 ## Properties
 
-- `SkipAccessibility` (boolean): If `true`, the system skips the Accessibility pane.
-- `SkipAppearance` (boolean): If `true`, the system skips the Choose Your Look pane.
-- `SkipCloudSetup` (boolean): If `true`, the system skips the Apple Account setup pane.
-- `SkipiCloudStorageSetup` (boolean): If `true`, the system skips the iCloud Storage pane.
-- `SkipPrivacySetup` (boolean): If `true`, the system skips the Privacy consent pane.
-- `SkipScreenTime` (boolean): If `true`, the system skips the Screen Time pane.
-- `SkipSetupItems` ([string]): An array of strings that describe the setup items to skip. [`SkipKeys`](skipkeys.md) provides a list of valid strings and their meanings. Available in iOS 14 and later, and macOS 15 and later.
-- `SkipSiriSetup` (boolean): If `true`, the system skips the Siri setup pane.
-- `SkipTouchIDSetup` (boolean): If `true`, the system skips the Touch ID setup pane.
-- `SkipTrueTone` (boolean): If `true`, the system skips the True Tone Display pane.
-- `SkipUnlockWithWatch` (boolean): If `true`, the system skips the Unlock With Apple Watch pane.
-- `SkipWallpaper` (boolean): If ‘true’, the system skips the Wallpaper selection window.
+- `SkipAccessibility` (boolean): If `true`, the system skips the Accessibility pane. Available: macOS 11+
+Deprecated: macOS 15+
+- `SkipAppearance` (boolean): If `true`, the system skips the Choose Your Look pane. Available: macOS 10.14+
+Deprecated: macOS 15+
+- `SkipCloudSetup` (boolean): If `true`, the system skips the Apple Account setup pane. Available: macOS 10.12+
+Deprecated: macOS 15+
+- `SkipiCloudStorageSetup` (boolean): If `true`, the system skips the iCloud Storage pane. Available: macOS 10.13.4+
+Deprecated: macOS 15+
+- `SkipPrivacySetup` (boolean): If `true`, the system skips the Privacy consent pane. Available: macOS 10.13.4+
+Deprecated: macOS 15+
+- `SkipScreenTime` (boolean): If `true`, the system skips the Screen Time pane. Available: macOS 10.15+
+Deprecated: macOS 15+
+- `SkipSetupItems` ([string]): An array of strings that describe the setup items to skip. [`SkipKeys`](skipkeys.md) provides a list of valid strings and their meanings. Available: iOS 14+ | iPadOS 14+ | macOS 15+
+- `SkipSiriSetup` (boolean): If `true`, the system skips the Siri setup pane. Available: macOS 10.12+
+Deprecated: macOS 15+
+- `SkipTouchIDSetup` (boolean): If `true`, the system skips the Touch ID setup pane. Available: macOS 10.15+
+Deprecated: macOS 15+
+- `SkipTrueTone` (boolean): If `true`, the system skips the True Tone Display pane. Available: macOS 10.13.6+
+Deprecated: macOS 15+
+- `SkipUnlockWithWatch` (boolean): If `true`, the system skips the Unlock With Apple Watch pane. Available: macOS 12+
+Deprecated: macOS 15+
+- `SkipWallpaper` (boolean): If ‘true’, the system skips the Wallpaper selection window. Available: macOS 14.1+
+Deprecated: macOS 15+
 
 ## See Also
 

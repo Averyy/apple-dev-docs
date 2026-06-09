@@ -19,6 +19,10 @@ object CertificateCreateRequest.Data.Attributes
 - `certificateType` (CertificateType) *(required)*
 - `csrContent` (string) *(required)*
 
+## See Also
+
+- [object CertificateCreateRequest.Data.Relationships](certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+
 
 ---
 

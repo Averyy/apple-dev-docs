@@ -21,6 +21,12 @@ A type for a URL argument used to format the run with this attribute.
 enum LocalizedURLArgumentAttribute
 ```
 
+## Topics
+
+### Inspecting attributed string key properties
+- [static let name: String](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizedurlargumentattribute/name.md)
+  The name of the attribute.
+
 ## Relationships
 
 ### Conforms To

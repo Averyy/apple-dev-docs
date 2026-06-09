@@ -15,7 +15,8 @@ Creates a sortable column for Boolean values with a text label.
 ## Declaration
 
 ```swift
-init(_ text: Text, value: KeyPath<RowValue, Bool>, @ViewBuilder content: @escaping (RowValue) -> Content)
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, Bool>, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion

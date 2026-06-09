@@ -1,4 +1,4 @@
-# List All Xcode Cloud Builds for a Workflow
+# List all xcode cloud builds for a workflow
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -28,12 +28,12 @@ List all builds Xcode Cloud performed for a specific workflow.
 
 ## See Also
 
-- [Read Xcode Cloud Workflow Information](get-v1-ciworkflows-_id_.md)
+- [Read xcode cloud workflow information](get-v1-ciworkflows-_id_.md)
   Get information about a specific Xcode Cloud workflow.
-- [Read the Repository Information for an Xcode Cloud Workflow](get-v1-ciworkflows-_id_-repository.md)
+- [Read the repository information for an xcode cloud workflow](get-v1-ciworkflows-_id_-repository.md)
   Get information about the Git repository of a specific Xcode Cloud workflow.
-- [GET /v1/ciWorkflows/{id}/relationships/buildRuns](get-v1-ciworkflows-_id_-relationships-buildruns.md)
-- [GET /v1/ciWorkflows/{id}/relationships/repository](get-v1-ciworkflows-_id_-relationships-repository.md)
+- [List build run IDs for a CI workflow](get-v1-ciworkflows-_id_-relationships-buildruns.md)
+- [Get the repository ID for a CI workflow](get-v1-ciworkflows-_id_-relationships-repository.md)
 
 
 ---

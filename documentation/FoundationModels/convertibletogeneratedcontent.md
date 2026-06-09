@@ -11,6 +11,7 @@ A type that can be converted to generated content.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -33,23 +34,18 @@ protocol ConvertibleToGeneratedContent : InstructionsRepresentable, PromptRepres
 - [Generable](generable.md)
 ### Conforming Types
 - [GeneratedContent](generatedcontent.md)
+- [ImageReference](imagereference.md)
 
 ## See Also
 
-- [func streamResponse(to:options:)](languagemodelsession/streamresponse(to:options:).md)
-  Produces a response stream to a prompt.
-- [func streamResponse(to:generating:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:generating:includeschemainprompt:options:).md)
-  Produces a response stream to a prompt and schema.
-- [func streamResponse(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/streamresponse(to:schema:includeschemainprompt:options:).md)
-  Produces a response stream to a prompt and schema.
-- [func streamResponse(options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<String>](languagemodelsession/streamresponse(options:prompt:).md)
-  Produces a response stream to a prompt.
-- [func streamResponse<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<Content>](languagemodelsession/streamresponse(generating:includeschemainprompt:options:prompt:).md)
-  Produces a response stream for a type.
-- [func streamResponse(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) rethrows -> sending LanguageModelSession.ResponseStream<GeneratedContent>](languagemodelsession/streamresponse(schema:includeschemainprompt:options:prompt:).md)
-  Produces a response stream to a prompt and schema.
-- [LanguageModelSession.ResponseStream](languagemodelsession/responsestream.md)
-  An async sequence of snapshots of partially generated content.
+- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+  Create robust apps by describing output you want programmatically.
+- [protocol Generable](generable.md)
+  A type that the model uses when responding to prompts.
+- [struct GenerationSchema](generationschema.md)
+  A type that describes the properties of an object and any guides on their values.
+- [struct DynamicGenerationSchema](dynamicgenerationschema.md)
+  The dynamic counterpart to the generation schema type that you use to construct schemas at runtime.
 - [struct GeneratedContent](generatedcontent.md)
   A type that represents structured, generated content.
 - [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)

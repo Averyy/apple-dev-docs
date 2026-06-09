@@ -58,6 +58,8 @@ struct FoveatedStreamingApp: App {
   A streaming endpoint that a foveated streaming session can connect to.
 - [FoveatedStreamingSession.ImmersivePresentationBehaviors](foveatedstreamingsession/immersivepresentationbehaviors-swift.struct.md)
   The presentation behaviors describing when the immersive space that hosts the streamed content is presented and dismissed.
+- [FoveatedStreamingSession.StreamingProvider](foveatedstreamingsession/streamingprovider.md)
+  Represents a streaming provider extension.
 ### Initializers
 - [init()](foveatedstreamingsession/init.md)
   Initializes the FoveatedStreamingSession.
@@ -68,11 +70,15 @@ struct FoveatedStreamingApp: App {
   An optional set of behaviors which assist in automatically presenting the session’s immersive space.
 - [var immersiveSpaceFromRemoteSceneTransform: simd_float4x4](foveatedstreamingsession/immersivespacefromremotescenetransform.md)
   A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
+- [var isMicrophoneEnabled: Bool](foveatedstreamingsession/ismicrophoneenabled.md)
+  Whether the microphone is currently enabled for this session.
 - [var status: FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.property.md)
   The connection status of the session.
 ### Instance Methods
 - [func connect(endpoint: FoveatedStreamingSession.Endpoint) async throws](foveatedstreamingsession/connect(endpoint:).md)
   Establishes a streaming connection at the provided endpoint.
+- [func connect(endpoint: FoveatedStreamingSession.Endpoint, streamingProvider: FoveatedStreamingSession.StreamingProvider) async throws](foveatedstreamingsession/connect(endpoint:streamingprovider:).md)
+  Establishes a streaming connection at the provided endpoint using the specified streaming provider.
 - [func disconnect() async](foveatedstreamingsession/disconnect.md)
   Disconnects from the remote streaming endpoint, ending the streaming session.
 - [func messageChannel(for: FoveatedStreamingSession.MessageChannel.ID) -> FoveatedStreamingSession.MessageChannel?](foveatedstreamingsession/messagechannel(for:).md)
@@ -81,6 +87,9 @@ struct FoveatedStreamingApp: App {
   Pauses a session without ending it.
 - [func resume() async throws](foveatedstreamingsession/resume.md)
   Resumes a previously paused session.
+### Type Methods
+- [static func queryStreamingProviders() async -> Set<FoveatedStreamingSession.StreamingProvider>](foveatedstreamingsession/querystreamingproviders.md)
+  Returns a list of currently-available streaming providers.
 ### Enumerations
 - [FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.enum.md)
   The connection state of a foveated streaming session.

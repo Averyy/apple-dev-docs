@@ -11,7 +11,8 @@ The origin point of a rectangle.
 ## Declaration
 
 ```swift
-origin: MapPoint;
+get origin(): MapPoint;
+set origin(value: MapPointData);
 ```
 
 ## See Also

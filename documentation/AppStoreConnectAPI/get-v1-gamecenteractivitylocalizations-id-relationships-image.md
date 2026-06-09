@@ -1,10 +1,10 @@
-# GET /v1/gameCenterActivityLocalizations/{id}/relationships/image
+# Get the image ID for a Game Center activity localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 

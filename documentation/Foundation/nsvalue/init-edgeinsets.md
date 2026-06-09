@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a new value object containing the specified edge insets structure.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

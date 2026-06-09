@@ -30,7 +30,7 @@ subscript<R>(r: R) -> Self.SubSequence where R : RangeExpression, Self.Index == 
   Accesses a contiguous subrange of the array’s elements.
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-4h7rl.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
 - [func randomElement() -> Self.Element?](array/randomelement.md)
   Returns a random element of the collection.
 - [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)

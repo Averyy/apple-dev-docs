@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The background execution mode.
+A value that indicates the app intent is running in the background.
 
 **Availability**:
 - iOS 26.0+

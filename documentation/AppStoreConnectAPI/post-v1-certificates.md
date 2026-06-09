@@ -1,4 +1,4 @@
-# Create a Certificate
+# Create a certificate
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

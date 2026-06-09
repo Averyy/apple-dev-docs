@@ -109,6 +109,9 @@ if let range = Range(nsrange, in: snowy) {
 ### Instance Properties
 - [var customPlaygroundQuickLook: _PlaygroundQuickLook](string/utf16view/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
+### Instance Methods
+- [func isTriviallyIdentical(to: String.UTF16View) -> Bool](string/utf16view/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this UTF16 view is trivially identical to `other`.
 ### Default Implementations
 - [BidirectionalCollection Implementations](string/utf16view/bidirectionalcollection-implementations.md)
 - [Collection Implementations](string/utf16view/collection-implementations.md)

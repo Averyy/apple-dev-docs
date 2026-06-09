@@ -16,7 +16,7 @@ Creates a context menu.
 ## Declaration
 
 ```swift
-init(@ViewBuilder menuItems: () -> MenuItems)
+init(@ContentBuilder menuItems: () -> MenuItems)
 ```
 
 

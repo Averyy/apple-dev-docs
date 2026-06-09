@@ -7,8 +7,6 @@ The payload that configures lights-out management (LOM) settings.
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,12 +25,12 @@ You can configure a compatible macOS device to be both a controller and a device
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

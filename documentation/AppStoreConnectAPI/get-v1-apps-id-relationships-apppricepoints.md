@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/appPricePoints
+# List app price point IDs for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -22,7 +22,8 @@
   Get details about a specific app price point.
 - [List App Price Point Equalizations](get-v3-apppricepoints-_id_-equalizations.md)
   List all equivalent app prices points to a base price point.
-- [GET /v3/appPricePoints/{id}/relationships/equalizations](get-v3-apppricepoints-_id_-relationships-equalizations.md)
+- [List equalization price point IDs for an app price point](get-v3-apppricepoints-_id_-relationships-equalizations.md)
+  Get a list of equalization price point IDs for a specific app price point.
 
 
 ---

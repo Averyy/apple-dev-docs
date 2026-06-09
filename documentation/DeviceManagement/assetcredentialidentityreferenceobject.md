@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that describes the external reference.
+The external reference. Ensure that the asset data:
 
 **Availability**:
 - iOS 17.0+
@@ -13,14 +13,17 @@ A dictionary that describes the external reference.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object AssetCredentialIdentityReferenceObject
 ```
+
+#### Discussion
+
+- Is a JSON document that represents the `com.apple.credential.identity` credential type
+- Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 
 ## Properties
 
@@ -32,7 +35,7 @@ object AssetCredentialIdentityReferenceObject
 ## See Also
 
 - [object AssetCredentialIdentityAuthenticationObject](assetcredentialidentityauthenticationobject.md)
-  The server authentication details for an asset-credential identity.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 
 
 ---

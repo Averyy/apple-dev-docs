@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: subscript
 
+Accesses the value associated with a given key.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -18,6 +20,14 @@
 @objc
 override dynamic subscript(key: Any) -> Any? { get set }
 ```
+
+#### Return Value
+
+The value associated with the key, or `nil` if no value is associated with the key.
+
+## Parameters
+
+- `key`: The key whose value you want to retrieve.
 
 
 ---

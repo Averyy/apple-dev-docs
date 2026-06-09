@@ -9,7 +9,6 @@ Initializes an electrical measurement for the electrical load event.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -19,7 +18,7 @@ init(stage: Int)
 
 ## Parameters
 
-- `stage`: `0` indicates that the electrical device is idle. `100` indicates that it’s consuming or generating the most power it’s capable of.
+- `stage`: `0` indicates that the electrical device is idle. `100` indicates that it’s consuming or generating the most power possible.
 
 ## See Also
 

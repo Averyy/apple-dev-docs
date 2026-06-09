@@ -6,7 +6,7 @@
 A Boolean value that indicates if the stream ignores the capturing of window shadows when streaming in display style.
 
 **Availability**:
-- Mac Catalyst 17.0+
+- Mac Catalyst 18.2+
 - macOS 14.0+
 
 ## Declaration

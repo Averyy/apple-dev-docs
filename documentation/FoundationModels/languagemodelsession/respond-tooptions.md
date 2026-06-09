@@ -11,6 +11,7 @@ Produces a response to a prompt.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,6 +22,8 @@ nonisolated(nonsending) final func respond(to prompt: Prompt, options: Generatio
 
 ## Mentions
 
+- [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
 
 #### Return Value
@@ -30,10 +33,12 @@ A string composed of the tokens produced by sampling model output.
 ## Parameters
 
 - `prompt`: A prompt for the model to respond to.
-- `options`: GenerationOptions that control how tokens are sampled from the distribution the model produces.
+- `options`: Options that control how tokens are sampled from the distribution the model produces.
 
 ## See Also
 
+- [var isResponding: Bool](languagemodelsession/isresponding.md)
+  A Boolean value that indicates a response is being generated.
 - [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
   Produces a response to a prompt.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
@@ -44,12 +49,8 @@ A string composed of the tokens produced by sampling model output.
   Produces a generable object as a response to a prompt.
 - [func respond(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:schema:includeschemainprompt:options:).md)
   Produces a generated content type as a response to a prompt and schema.
-- [struct Prompt](prompt.md)
-  A prompt from a person to the model.
 - [LanguageModelSession.Response](languagemodelsession/response.md)
   A structure that stores the output of a response call.
-- [struct GenerationOptions](generationoptions.md)
-  Options that control how the model generates its response to a prompt.
 
 
 ---

@@ -25,6 +25,10 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
 - [struct ToolbarItemPlacement](toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+  Configures the overflow menu of a toolbar.
+- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+  The overflow menu of a toolbar.
 - [protocol ToolbarContent](toolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
@@ -36,6 +40,8 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
 ### Populating a customizable toolbar
 - [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
   Populates the toolbar or navigation bar with the specified items, allowing for user customization.
+- [func toolbarItemHidden(Bool) -> some View](view/toolbaritemhidden(_:).md)
+  Hides an individual view within a control group toolbar item.
 - [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
   Conforming types represent items that can be placed in various locations in a customizable toolbar.
 - [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
@@ -92,10 +98,24 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
 - [struct ToolbarTitleMenu](toolbartitlemenu.md)
   The title menu of a toolbar.
 ### Creating an ornament
-- [func ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
   Presents an ornament.
 - [struct OrnamentAttachmentAnchor](ornamentattachmentanchor.md)
   An attachment anchor for an ornament.
+### Controlling item visibility
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
+- [struct ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority.md)
+  A value that defines the visibility priority of a toolbar item.
+### Minimizing a toolbar
+- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [struct ToolbarMinimizeBehavior](toolbarminimizebehavior.md)
+  The minimize behavior of a toolbar.
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+  Sets the safe area adjustment for the specified bars during minimization.
+- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+  The safe area adjustment during toolbar minimization.
 
 ## See Also
 

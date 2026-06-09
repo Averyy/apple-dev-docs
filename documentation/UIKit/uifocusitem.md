@@ -30,8 +30,6 @@ Even when an object that conforms to [`UIFocusItem`](uifocusitem.md) isn’t cur
 ### Determining focusability
 - [var canBecomeFocused: Bool](uifocusitem/canbecomefocused.md)
   A Boolean value that indicates whether the item can become focused.
-- [var isFocused: Bool](uifocusitem/isfocused.md)
-  A Boolean value that indicates whether the item is currently focused.
 ### Retrieving the item frame
 - [var frame: CGRect](uifocusitem/frame.md)
   The geometric frame of the item.
@@ -54,6 +52,8 @@ Even when an object that conforms to [`UIFocusItem`](uifocusitem.md) isn’t cur
 ### Instance Properties
 - [var focusItemDeferralMode: UIFocusItemDeferralMode](uifocusitem/focusitemdeferralmode.md)
   If this property is present and returns `UIFocusItemDeferralModeNever`, the focus deferral will not be enabled again after the user engagement timeout has expired if this item is currently focused and programmatic focus updates pointing to this item will be executed immediatly. If it returns `UIFocusItemDeferralModeAlways` focus will always be deferred when this item is supposed to be focused. Does nothing when focus deferral is not supported on the platform.
+- [var isFocused: Bool](uifocusitem/isfocused-7tl52.md)
+- [var isFocused: Bool](uifocusitem/isfocused-hli8.md)
 
 ## Relationships
 

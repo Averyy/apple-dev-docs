@@ -6,6 +6,9 @@
 Indicates a HFS style path name. Components are colon delimited. A leading colon indicates a relative path, otherwise the first path component denotes the volume.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

@@ -17,6 +17,7 @@ A control for selecting from a set of mutually exclusive values.
 ## Declaration
 
 ```swift
+nonisolated
 struct Picker<Label, SelectionValue, Content> where Label : View, SelectionValue : Hashable, Content : View
 ```
 

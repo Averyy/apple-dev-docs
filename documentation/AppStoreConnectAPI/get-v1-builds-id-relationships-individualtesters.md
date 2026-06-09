@@ -1,4 +1,4 @@
-# Get All Resource IDs of Individual Testers for a Build
+# Get all resource ids of individual testers for a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Get a list of resource IDs of individual testers associated with a build.
 
 ## See Also
 
-- [List All Individual Testers for a Build](get-v1-builds-_id_-individualtesters.md)
+- [List all individual testers for a build](get-v1-builds-_id_-individualtesters.md)
   Get a list of beta testers individually assigned to a build.
 
 

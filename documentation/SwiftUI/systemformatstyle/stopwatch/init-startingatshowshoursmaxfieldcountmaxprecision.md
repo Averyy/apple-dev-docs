@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a stopwatch format style.
+Creates a stopwatch format style that starts counting up from zero from the date you provide.
 
 **Availability**:
 - iOS 18.0+
@@ -20,14 +20,12 @@ Create a stopwatch format style.
 init(startingAt startDate: Date, showsHours: Bool = true, maxFieldCount: Int = 4, maxPrecision: Duration = .milliseconds(10))
 ```
 
-#### Discussion
+## Parameters
 
-A stopwatch styled display that starts counting up from zero at the given `startDate`.
-
-- startDate: The date at which the stopwatch starts counting.
-- showsHours: If true, the stopwatch shows the hours as a separate   element on the formatted string, once the duration is at least one hour.   If false, the stopwatch displays minute values greather than sixty.
-- maxFieldCount: The number of fields that can be shown at once. For example, 1 hour, 34 minutes is shown as `1:34:00` by default, but as `1:34` if the `maxFieldCount` is set to two. The style automatically excludes more significant fields if their value is zero and they are not necessary for the format pattern, making room for less significant fields.
-- maxPrecision: The precision at which the input is formatted. E.g. by default, two fractional digits are shown, making the maximum precision ten milliseconds. Setting the maximum precision to `.seconds(60)` would   only allow hours and minutes to be shown.
+- `startDate`: The date at which the stopwatch starts counting. Any input date before this shows `00:00.00`.
+- `showsHours`: If `true`, the stopwatch shows hours as a separate element once the elapsed time reaches one hour. If `false`, minutes accumulate beyond 60 (for example, `75:30.00`).
+- `maxFieldCount`: The maximum number of fields shown at once. With the default of 4, output includes hours, minutes, seconds, and hundredths. Reducing this value removes fields starting from the least significant.
+- `maxPrecision`: The smallest time interval between display updates. Defaults to 10 milliseconds (two fractional digits).
 
 
 ---

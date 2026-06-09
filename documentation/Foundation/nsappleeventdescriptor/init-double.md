@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a descriptor initialized with Apple event type `typeIEEE64BitFloatingPoint` that stores the specified double value.
+
 **Availability**:
 - macOS 10.11+
 

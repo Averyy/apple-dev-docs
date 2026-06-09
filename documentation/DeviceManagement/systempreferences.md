@@ -7,8 +7,6 @@ The payload that configures the preference panes.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.systempreferences` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -76,26 +74,19 @@ Specify `com.apple.systempreferences` as the payload type.
 
 ## Properties
 
-- `DisabledPreferencePanes` ([string]): The list of disabled System Preferences panes.
-- `DisabledSystemSettings` ([string]): The list of disabled System Settings extensions. All other items will be enabled. When `DisabledSystemSettings` is specified, the device ignores `DisabledPreferencePanes` and `EnabledPreferencePanes`. > **Note**:  A given System Settings extension can supply more than one section in System Settings; disabling such an extension disables all sections it supplies.
-- `EnabledPreferencePanes` ([string]): The list of enabled System Preferences panes.
+- `DisabledPreferencePanes` ([string]): The list of disabled System Preferences panes. Deprecated: macOS 13+
+- `DisabledSystemSettings` ([string]): The list of disabled System Settings extensions. All other items will be enabled. When you specify `DisabledSystemSettings`, the device ignores `DisabledPreferencePanes` and `EnabledPreferencePanes`. > **Note**:  A given System Settings extension can supply more than one section in System Settings; disabling such an extension disables all sections it supplies. Available: macOS 13+
+Deprecated: macOS 13+
+- `EnabledPreferencePanes` ([string]): The list of enabled System Preferences panes. Deprecated: macOS 13+
 
 ## See Also
 
-- [object AIMAccount](aimaccount.md)
-  The payload that configures an AIM account on the device.
 - [object APN](apn.md)
   The payload that configures access point names.
 - [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object JabberAccount](jabberaccount.md)
-  The payload that configures a Jabber account.
-- [object MacOSServerAccount](macosserveraccount.md)
-  The payload that configures a macOS Server account.
 - [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)

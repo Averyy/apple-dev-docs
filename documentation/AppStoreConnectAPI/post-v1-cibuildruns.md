@@ -1,4 +1,4 @@
-# Start a Build
+# Start a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

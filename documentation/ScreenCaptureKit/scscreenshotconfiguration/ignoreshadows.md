@@ -6,8 +6,8 @@
 A Boolean value that specifies whether to ignore framing on windows.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

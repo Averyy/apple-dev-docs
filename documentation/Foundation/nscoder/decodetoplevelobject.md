@@ -31,7 +31,7 @@ The decoded object, or `nil` if decoding fails.
   Decode an object as an expected type, failing if the archived type doesn’t match.
 - [func decodeObject(of: [AnyClass]?, forKey: String) -> Any?](nscoder/decodeobject(of:forkey:)-roif.md)
   Decode an object as one of several expected types, failing if the archived type doesn’t match any of the types.
-- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:)-7cram.md)
+- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:).md)
   Decodes the previously-encoded object associated by a key.
 - [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](nscoder/decodetoplevelobject(of:forkey:)-3w6pd.md)
   Decode an object as one of several expected types, failing if the archived type does not match.

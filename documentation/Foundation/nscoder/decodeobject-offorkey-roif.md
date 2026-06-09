@@ -40,7 +40,7 @@ This method is equivalent to [`decodeObject(of:forKey:)`](nscoder/decodeobject(o
   Decode an object as an expected type, failing if the archived type doesn’t match.
 - [func decodeTopLevelObject() throws -> Any?](nscoder/decodetoplevelobject.md)
   Decodes a previously-encoded object.
-- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:)-7cram.md)
+- [func decodeTopLevelObject(forKey: String) throws -> Any?](nscoder/decodetoplevelobject(forkey:).md)
   Decodes the previously-encoded object associated by a key.
 - [func decodeTopLevelObject<DecodedObjectType>(of: DecodedObjectType.Type, forKey: String) throws -> DecodedObjectType?](nscoder/decodetoplevelobject(of:forkey:)-3w6pd.md)
   Decode an object as one of several expected types, failing if the archived type does not match.

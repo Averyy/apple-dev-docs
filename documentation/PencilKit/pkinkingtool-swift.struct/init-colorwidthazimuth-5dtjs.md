@@ -4,9 +4,6 @@
 **Kind**: init
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 26.0+
 
 ## Declaration

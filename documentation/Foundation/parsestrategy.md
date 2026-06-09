@@ -29,7 +29,7 @@ A [`ParseStrategy`](parsestrategy.md) allows you to convert a formatted represen
 
 [`ParseStrategy`](parsestrategy.md) is closely related to [`FormatStyle`](formatstyle.md), which provides the opposite conversion: from data type to formatted representation. To use a parse strategy, you create a [`FormatStyle`](formatstyle.md) to define the representation you expect, then access the style’s `parseStrategy` property to get a strategy instance.
 
-The following example creates a [`Decimal.FormatStyle.Currency`](decimal/formatstyle/currency.md) format style that uses US dollars and US English number-formatting conventions. It then creates a [`Decimal`](decimal.md) instance by providing a formatted string to parse and the format style’s `Decimal/FormatStyle/Currency/parseStrategy`.
+The following example creates a [`Decimal.FormatStyle.Currency`](decimal/formatstyle/currency.md) format style that uses US dollars and US English number-formatting conventions. It then creates a [`Decimal`](decimal.md) instance by providing a formatted string to parse and the format style’s [`parseStrategy`](decimal/formatstyle/currency/parsestrategy.md).
 
 ```swift
 let style = Decimal.FormatStyle.Currency(code: "USD",
@@ -63,6 +63,7 @@ let parsed = try? Decimal("$12,345.67",
 - [static var http: DateComponents.HTTPFormatStyle](parsestrategy/http-6hyig.md)
 - [static var iso8601: DateComponents.ISO8601FormatStyle](parsestrategy/iso8601-69scf.md)
 - [static var iso8601: Date.ISO8601FormatStyle](parsestrategy/iso8601-8z0au.md)
+  A style for formatting a date in accordance with the ISO-8601 standard.
 
 ## Relationships
 

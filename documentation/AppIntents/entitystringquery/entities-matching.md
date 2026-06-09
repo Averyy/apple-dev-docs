@@ -21,10 +21,6 @@ Retrieves instances by string.
 func entities(matching string: String) async throws -> Self.Result
 ```
 
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-
 ## Parameters
 
 - `string`: “Name” used to refer to an entity instance (or a set thereof).

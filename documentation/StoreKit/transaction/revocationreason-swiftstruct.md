@@ -30,6 +30,9 @@ struct RevocationReason
 ### Getting a localized description
 - [var localizedDescription: String](transaction/revocationreason-swift.struct/localizeddescription.md)
   The localized text that describes the revocation reason.
+### Type Properties
+- [static var upgradedToBundle: Transaction.RevocationReason](transaction/revocationreason-swift.struct/upgradedtobundle.md)
+  The transaction was revoked because the customer switched to a subscription bundle.
 
 ## Relationships
 

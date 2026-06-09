@@ -18,6 +18,8 @@ class let didChangeNotification: NSNotification.Name
 
 The notification’s object is the font collection that was affected. The notification’s `userInfo` dictionary contains information about the the collection change containing the keys defined in [`NSFontCollection.UserInfoKey`](nsfontcollection/userinfokey.md) and the corresponding values.
 
+To observe this notification using Swift concurrency, use [`NSFontCollection.DidChangeMessage`](nsfontcollection/didchangemessage.md).
+
 ## See Also
 
 - [NSFontCollection.UserInfoKey](nsfontcollection/userinfokey.md)

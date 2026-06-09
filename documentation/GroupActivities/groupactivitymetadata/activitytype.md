@@ -35,6 +35,8 @@ struct ActivityType
   A shared exploration activity, such as planning a trip together or browsing a web feed together.
 - [static let learnTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/learntogether.md)
   A shared learning activity, such as studying a topic together.
+- [static let playTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/playtogether.md)
+  A shared gaming activity, such as playing a Game Center game together.
 - [static let readTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/readtogether.md)
   A shared reading activity, such as reading a book together.
 - [static let shopTogether: GroupActivityMetadata.ActivityType](groupactivitymetadata/activitytype/shoptogether.md)

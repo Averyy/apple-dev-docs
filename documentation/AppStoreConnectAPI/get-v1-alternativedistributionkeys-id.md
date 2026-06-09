@@ -47,7 +47,7 @@ uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
 
 ## Parameters
 
-- `fields[alternativeDistributionKeys]` ([string])
+- `fields[alternativeDistributionKeys]` ([string]): Additional fields to include for each alternative distribution keys resource returned by the response.
 
 ## See Also
 
@@ -59,7 +59,7 @@ uQqDgFZuYG/NcYLwT3Zdw77s6//8XSI2NYv7WNgUONxMj+j65Qijq4/fhw==
   Add an alternative distribution key for your alternative marketplace app or web distribution.
 - [List Alternative Distribution Keys](get-v1-alternativedistributionkeys.md)
   List the alternative distribution key for your account.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)

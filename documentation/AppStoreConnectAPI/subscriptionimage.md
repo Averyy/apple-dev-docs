@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a subscription image resource.
+An image used to represent a subscription product on the App Store product page.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -20,7 +20,7 @@ object SubscriptionImage
 - [object SubscriptionImage.Attributes](subscriptionimage/attributes-data.dictionary.md)
   Attributes that describe a subscription image resource.
 - [object SubscriptionImage.Relationships](subscriptionimage/relationships-data.dictionary.md)
-  The data structure that represents the relationships of a subscription image resource.
+  The relationships for a subscription image, linking it to its associated subscription.
 
 ## Properties
 
@@ -35,11 +35,11 @@ object SubscriptionImage
 - [object SubscriptionImageCreateRequest](subscriptionimagecreaterequest.md)
   The request body you use to create a subscription purchase image reservation.
 - [object SubscriptionImageResponse](subscriptionimageresponse.md)
-  A response that contains a single subscription images resource.
+  A response containing a single subscription product image.
 - [object SubscriptionImagesResponse](subscriptionimagesresponse.md)
-  A response that contains a list of subscription image resources.
+  A response containing a list of images for a subscription product.
 - [object SubscriptionImageUpdateRequest](subscriptionimageupdaterequest.md)
-  The data structure that represents a subscription image update request resource.
+  The request body for updating the upload status or content of a subscription product image.
 - [object SubscriptionImagesLinkagesResponse](subscriptionimageslinkagesresponse.md)
 
 

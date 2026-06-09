@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](flattensequence/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](flattensequence/index/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (FlattenCollection<Base>.Index, FlattenCollection<Base>.Index) -> Bool](flattensequence/index/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

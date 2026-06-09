@@ -1,9 +1,9 @@
 # isSensitive
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
-A Boolean value that indicates if checked content contains nudity.
+A Boolean value that indicates whether the checked content contains sensitive material.
 
 **Availability**:
 - iOS 17.0+
@@ -21,10 +21,11 @@ var isSensitive: Bool { get }
 ## Mentions
 
 - [Testing your app’s response to sensitive media](testing-your-app-s-response-to-sensitive-media.md)
+- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
-The framework indicates that content is sensitive only when the active [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md).
+The framework indicates that content is sensitive only when the active [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is a value other than [`SCSensitivityAnalysisPolicy.disabled`](scsensitivityanalysispolicy/disabled.md). When this property is `true`, check [`detectedTypes`](scsensitivityanalysis/detectedtypes.md) to determine the specific categories of sensitive content that the framework detects in the media.
 
 
 ---

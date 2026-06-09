@@ -35,6 +35,8 @@ A decimal format style modified to use the specified rounding rule and increment
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Percent.Configuration.Grouping) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(Decimal.FormatStyle.Percent.Configuration.Notation) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(Decimal.FormatStyle.Percent.Configuration.Precision) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/precision(_:).md)

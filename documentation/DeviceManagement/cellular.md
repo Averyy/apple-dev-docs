@@ -10,8 +10,6 @@ The payload that configures cellular settings.
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,12 +26,12 @@ Specify `com.apple.cellular` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad, watchOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, watchOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -91,7 +89,7 @@ Specify `com.apple.cellular` as the payload type.
 
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.

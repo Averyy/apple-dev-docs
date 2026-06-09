@@ -30,8 +30,6 @@ Display [`name`](route/name.md) to the user so they can distinguish one route fr
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

@@ -18,7 +18,7 @@ Gets the current body of the caller.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency func body(content: Self.Content, phase: TransitionPhase) -> Self.Body
 ```
 

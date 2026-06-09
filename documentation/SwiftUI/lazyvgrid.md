@@ -17,6 +17,7 @@ A container view that arranges its child views in a grid that grows vertically, 
 ## Declaration
 
 ```swift
+nonisolated
 struct LazyVGrid<Content> where Content : View
 ```
 

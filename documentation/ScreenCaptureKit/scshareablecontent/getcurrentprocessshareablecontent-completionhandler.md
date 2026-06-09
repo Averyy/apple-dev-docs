@@ -4,7 +4,7 @@
 **Kind**: method
 
 **Availability**:
-- Mac Catalyst 17.4+
+- Mac Catalyst 18.2+
 - macOS 14.4+
 
 ## Declaration

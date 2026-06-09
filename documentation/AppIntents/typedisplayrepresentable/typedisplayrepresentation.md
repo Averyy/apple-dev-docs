@@ -23,7 +23,7 @@ static var typeDisplayRepresentation: TypeDisplayRepresentation { get }
 
 ## Mentions
 
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 
 
 ---

@@ -8,6 +8,7 @@ Returns a list of accounts a person added to their Wallet that meet the criteria
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

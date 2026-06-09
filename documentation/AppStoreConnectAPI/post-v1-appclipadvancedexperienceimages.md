@@ -1,4 +1,4 @@
-# Create an App Clip Card Image for an Advanced App Clip Experience
+# Create an app clip card image for an advanced app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ The request body you use to reserve an image asset for an advanced App Clip expe
 
 ## See Also
 
-- [Read Image Information for an Advanced App Clip Experience](get-v1-appclipadvancedexperienceimages-_id_.md)
+- [Read image information for an advanced app clip experience](get-v1-appclipadvancedexperienceimages-_id_.md)
   Get information about the image that appears on the App Clip card of an advanced App Clip experience.
-- [Modify the Image for an Advanced App Clip Experience](patch-v1-appclipadvancedexperienceimages-_id_.md)
+- [Modify the image for an advanced app clip experience](patch-v1-appclipadvancedexperienceimages-_id_.md)
   Update image information or commit the image asset of an advanced App Clip experience.
 
 

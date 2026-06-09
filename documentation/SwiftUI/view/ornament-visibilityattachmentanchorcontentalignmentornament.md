@@ -12,7 +12,7 @@ Presents an ornament.
 
 ```swift
 nonisolated
-func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ViewBuilder ornament: () -> Content) -> some View where Content : View
+func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ContentBuilder ornament: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

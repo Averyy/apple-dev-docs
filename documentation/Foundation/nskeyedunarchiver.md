@@ -40,7 +40,7 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
 - [init(forReadingWith: Data)](nskeyedunarchiver/init(forreadingwith:).md)
   Initializes an archiver to decode data from the specified location.
 ### Unarchiving Data
-- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:)-40hyk.md)
+- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:).md)
   Decodes a previously-archived object graph, and returns the root object.
 - [static func unarchivedObject<DecodedObjectType>(ofClass: DecodedObjectType.Type, from: Data) throws -> DecodedObjectType?](nskeyedunarchiver/unarchivedobject(ofclass:from:).md)
   Decodes a previously-archived object graph, and returns the root object as the specified type.
@@ -98,7 +98,6 @@ If you invoke one of the `decode`-prefixed methods of this class using a key tha
 - [init(forReadingFromData: Data) throws](nskeyedunarchiver/init(forreadingfromdata:).md)
 - [init(forReadingWithData: Data)](nskeyedunarchiver/init(forreadingwithdata:).md)
 ### Type Methods
-- [class func unarchiveTopLevelObjectWithData(NSData) throws -> AnyObject?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:)-9oaeu.md)
 - [static func unarchivedArrayOfObjects<DecodedObject>(ofClass: DecodedObject.Type, from: Data) throws -> [DecodedObject]?](nskeyedunarchiver/unarchivedarrayofobjects(ofclass:from:).md)
 - [static func unarchivedArrayOfObjects(ofClasses: [AnyClass], from: Data) throws -> [Any]?](nskeyedunarchiver/unarchivedarrayofobjects(ofclasses:from:).md)
 - [static func unarchivedDictionary(keysOfClasses: [AnyClass], objectsOfClasses: [AnyClass], from: Data) throws -> [AnyHashable : Any]?](nskeyedunarchiver/unarchiveddictionary(keysofclasses:objectsofclasses:from:).md)

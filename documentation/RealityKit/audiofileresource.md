@@ -57,6 +57,9 @@ Load an audio file resource, like an audio file stored in .aiff or other format,
   The resource’s memory model.
 - [var shouldLoop: Bool](audiofileresource/shouldloop.md)
   Whether or not this file loops during playback. This should be set for assets that are prepared as seamless loops. A looping resource will play forever until it is explicitly told to stop.
+### Creating an audio resource
+- [convenience init(from: Data, configuration: AudioFileResource.Configuration) async throws](audiofileresource/init(from:configuration:).md)
+  Initializes an AudioFileResource from in-memory data asynchronously.
 ### Operators
 - [static func == (AudioFileResource, AudioFileResource) -> Bool](audiofileresource/==(_:_:).md)
 ### Type Methods
@@ -72,7 +75,6 @@ Load an audio file resource, like an audio file stored in .aiff or other format,
 ### Inherits From
 - [AudioResource](audioresource.md)
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

@@ -10,8 +10,6 @@ The payload that configures a device to run a single app.
 - iPadOS 6.0+
 - Mac Catalyst 6.0+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,12 +30,12 @@ Only use an app lock payload after installing the target app.
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad, tvOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, tvOS |
 | Requires supervision | iOS, tvOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

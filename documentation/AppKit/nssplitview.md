@@ -78,6 +78,9 @@ Divider indices are zero-based. If the [`isVertical`](nssplitview/isvertical.md)
   A notification that posts before a change to the size of some or all subviews of a split view.
 - [class let didResizeSubviewsNotification: NSNotification.Name](nssplitview/didresizesubviewsnotification.md)
   A notification that posts after a change to the size of some or all subviews of a split view.
+### Structures
+- [NSSplitView.DidResizeSubviewsMessage](nssplitview/didresizesubviewsmessage.md)
+- [NSSplitView.WillResizeSubviewsMessage](nssplitview/willresizesubviewsmessage.md)
 
 ## Relationships
 

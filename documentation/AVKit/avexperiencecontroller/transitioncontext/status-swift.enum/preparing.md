@@ -14,6 +14,13 @@ The transition is preparing for `toExperience`.
 case preparing
 ```
 
+## See Also
+
+- [AVExperienceController.TransitionContext.Status.transitioning](avexperiencecontroller/transitioncontext/status-swift.enum/transitioning.md)
+  The transition is in progress.
+- [case finished(result: AVExperienceController.TransitionContext.TransitionResult)](avexperiencecontroller/transitioncontext/status-swift.enum/finished(result:).md)
+  Transition finished. Perform cleanup based on result.
+
 
 ---
 

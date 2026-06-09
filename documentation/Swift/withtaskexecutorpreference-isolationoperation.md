@@ -32,7 +32,7 @@ For an in depth discussion of this topic, see [`TaskExecutor`](taskexecutor.md).
 
 ##### Disabling Task Executor Preference
 
-Passing `nil` as executor means disabling any preference preference (if it was set) and the task hierarchy will execute without any executor preference until a different preference is set.
+Passing `nil` as executor means disabling any preference (if it was set) and the task hierarchy will execute without any executor preference until a different preference is set.
 
 ##### Asynchronous Function Execution Semantics in Presence of Task Executor Preferences
 

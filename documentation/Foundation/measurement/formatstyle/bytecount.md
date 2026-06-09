@@ -48,6 +48,9 @@ let customFormatted = style.format(count) // "1 kB (1,024 bytes)"
 ### Creating a byte count style
 - [init(style: Measurement<UnitType>.FormatStyle.ByteCount.Style, allowedUnits: Measurement<UnitType>.FormatStyle.ByteCount.Units, spellsOutZero: Bool, includesActualByteCount: Bool, locale: Locale)](measurement/formatstyle/bytecount/init(style:allowedunits:spellsoutzero:includesactualbytecount:locale:).md)
   Initializes a byte count format style.
+### Formatting byte count measurements
+- [func format(Measurement<UnitInformationStorage>) -> String](measurement/formatstyle/bytecount/format(_:).md)
+  Formats a byte count measurment, using this style.
 ### Accessing style properties
 - [var allowedUnits: Measurement<UnitInformationStorage>.FormatStyle.ByteCount.Units](measurement/formatstyle/bytecount/allowedunits.md)
   The units the format style can use to express the byte count.
@@ -63,6 +66,9 @@ let customFormatted = style.format(count) // "1 kB (1,024 bytes)"
   The type used to represent the style of the formatted byte count.
 - [var locale: Locale](measurement/formatstyle/bytecount/locale.md)
   The locale to use to format the numeric part of the byte count.
+### Modifying style locale
+- [func locale(Locale) -> Measurement<UnitType>.FormatStyle.ByteCount](measurement/formatstyle/bytecount/locale(_:).md)
+  Modifies the format style to use the specified locale.
 ### Creating attributed strings
 - [var attributed: Measurement<UnitInformationStorage>.AttributedStyle.ByteCount](measurement/formatstyle/bytecount/attributed.md)
   An attributed format style based on the byte count format style.

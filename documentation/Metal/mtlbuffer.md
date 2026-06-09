@@ -73,7 +73,7 @@ If you create a buffer with a managed resource storage mode ([`MTLStorageMode.ma
 - [var sparseBufferTier: MTLBufferSparseTier](mtlbuffer/sparsebuffertier.md)
 ### Instance Methods
 - [func makeTensor(descriptor: MTLTensorDescriptor, offset: Int) throws -> any MTLTensor](mtlbuffer/maketensor(descriptor:offset:).md)
-  Creates a tensor that shares storage with this buffer.
+  Creates a single-plane tensor with the specified descriptor that shares storage with this buffer.
 
 ## Relationships
 

@@ -72,9 +72,9 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 
 ## Parameters
 
-- `exists[app]` (boolean)
-- `fields[alternativeDistributionKeys]` ([string])
-- `limit` (integer)
+- `exists[app]` (boolean): Filter the returned alternative distribution keys to include only those that are associated with (true) or not associated with (false) an app.
+- `fields[alternativeDistributionKeys]` ([string]): Additional fields to include for each alternative distribution keys resource returned by the response.
+- `limit` (integer): The maximum number of alternative distribution keys resources to return.
 
 ## See Also
 
@@ -86,7 +86,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
   Add an alternative distribution key for your alternative marketplace app or web distribution.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)

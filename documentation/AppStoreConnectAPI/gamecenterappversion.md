@@ -16,7 +16,9 @@ object GameCenterAppVersion
 
 ### Dictionaries
 - [object GameCenterAppVersion.Attributes](gamecenterappversion/attributes-data.dictionary.md)
+  Attributes that describe a Game Center app version resource.
 - [object GameCenterAppVersion.Relationships](gamecenterappversion/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -35,11 +37,11 @@ object GameCenterAppVersion
 - [object GameCenterAppVersionCreateRequest](gamecenterappversioncreaterequest.md)
   The request body you use to create an app version.
 - [object GameCenterAppVersionResponse](gamecenterappversionresponse.md)
-  A response that contains a single app version resource.
+  A response containing a single app version with its Game Center configuration.
 - [object GameCenterAppVersionUpdateRequest](gamecenterappversionupdaterequest.md)
   The request body you use to update an app version.
 - [object GameCenterAppVersionsResponse](gamecenterappversionsresponse.md)
-  A response that contains a list of app version resources.
+  A response containing a list of app versions with Game Center enabled.
 - [object GameCenterAppVersionAppStoreVersionLinkageResponse](gamecenterappversionappstoreversionlinkageresponse.md)
 - [type GameCenterVersionState](gamecenterversionstate.md)
   A string representing the state of a Game Center version.

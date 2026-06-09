@@ -6,7 +6,7 @@
 A block of text laid out in a subregion of the text container.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -63,18 +63,23 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
   Sets the border color of the specified edge of the text block.
 - [func setBorderColor(NSColor?)](nstextblock/setbordercolor(_:).md)
   Sets the color of all borders of the text block.
-- [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:).md)
-  Returns the border color of the specified text block edge.
 ### Determining size and position of a text block
 - [func rectForLayout(at: NSPoint, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstextblock/rectforlayout(at:in:textcontainer:characterrange:).md)
   Returns the rectangle within which glyphs should be laid out for the specified arguments.
 - [func boundsRect(forContentRect: NSRect, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstextblock/boundsrect(forcontentrect:in:textcontainer:characterrange:).md)
   Returns the rectangle the text in the block actually occupies, including padding, borders, and margins.
 ### Drawing colors and decorations
-- [func drawBackground(withFrame: NSRect, in: NSView, characterRange: NSRange, layoutManager: NSLayoutManager)](nstextblock/drawbackground(withframe:in:characterrange:layoutmanager:).md)
+- [func drawBackground(withFrame: NSRect, in: NSView?, characterRange: NSRange, layoutManager: NSLayoutManager)](nstextblock/drawbackground(withframe:in:characterrange:layoutmanager:).md)
   Called by the layout manager to draw any colors and other decorations before the text is drawn.
 ### Initializers
 - [init?(coder: NSCoder)](nstextblock/init(coder:).md)
+### Instance Methods
+- [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-273pl.md)
+- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](nstextblock/setwidth(_:type:for:rectedge:).md)
+- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](nstextblock/width(for:rectedge:).md)
+- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
 
 ## Relationships
 

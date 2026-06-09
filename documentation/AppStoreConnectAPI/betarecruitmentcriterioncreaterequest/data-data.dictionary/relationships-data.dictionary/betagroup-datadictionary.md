@@ -16,6 +16,7 @@ object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup
 
 ### Dictionaries
 - [object BetaRecruitmentCriterionCreateRequest.Data.Relationships.BetaGroup.Data](betarecruitmentcriterioncreaterequest/data-data.dictionary/relationships-data.dictionary/betagroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a beta recruitment criterion.
 
 ## Properties
 

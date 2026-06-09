@@ -21,6 +21,13 @@ The type used to drive selection for the containing tab view.
 associatedtype TabValue : Hashable where Self.TabValue == Self.Body.TabValue
 ```
 
+## See Also
+
+- [var body: Self.Body](tabcontent/body-swift.property.md)
+  The value of this type’s nested content.
+- [associatedtype Body : TabContent](tabcontent/body-swift.associatedtype.md)
+  The type of content representing the body of this content type.
+
 
 ---
 

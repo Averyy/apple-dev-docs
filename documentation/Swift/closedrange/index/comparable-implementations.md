@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (ClosedRange<Bound>.Index, ClosedRange<Bound>.Index) -> Bool](closedrange/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](closedrange/index/_(_:_:)-1fc79.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](closedrange/index/_(_:_:)-5l76x.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](closedrange/index/_=(_:_:)-52920.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](closedrange/index/_=(_:_:)-5g4su.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](closedrange/index/_=(_:_:)-divd.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](closedrange/index/_=(_:_:)-7dezg.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

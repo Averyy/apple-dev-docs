@@ -21,7 +21,7 @@ func realToHermiteanFFT(_ tensor: MPSGraphTensor, axes: [NSNumber], descriptor: 
 
 #### Return Value
 
-A valid MPSGraphTensor of type `MPSDataTypeComplexFloat32` or `MPSDataTypeComplexFloat16` with reduced size (see Discussion).
+A valid MPSGraphTensor of type `MPSDataTypeComplexFloat32`, `MPSDataTypeComplexFloat16` or `MPSDataTypeComplexBFloat16` with reduced size (see Discussion).
 
 #### Discussion
 
@@ -37,7 +37,7 @@ This operation computes the fast Fourier transform of a real-valued input tensor
 
 ## Parameters
 
-- `tensor`: A Real-valued input tensor. Must have datatype `MPSDataTypeFloat32` or `MPSDatatypeFloat16`.
+- `tensor`: A Real-valued input tensor. Must have datatype `MPSDataTypeFloat32`, `MPSDatatypeFloat16` or `MPSDatatypeBFloat16`.
 - `axes`: An array of numbers that specifies over which axes MPSGraph performs the Fourier transform - all axes must be contained within last four dimensions of the input tensor.
 - `descriptor`: A descriptor that defines the parameters of the Fourier transform operation - see [`MPSGraphFFTDescriptor`](mpsgraphfftdescriptor.md).
 - `name`: The name for the operation.

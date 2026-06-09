@@ -32,6 +32,14 @@ Creates a new Buffer Cache.
 - `metalDevice`: The Metal device for which the buffer objects will be created.
 - `cacheOut`: The newly created buffer cache will be placed here
 
+## See Also
+
+- [func CVMetalBufferCacheCreateBufferFromImage(CFAllocator?, CVMetalBufferCache, CVImageBuffer, UnsafeMutablePointer<CVMetalBuffer?>) -> CVReturn](cvmetalbuffercachecreatebufferfromimage(_:_:_:_:).md)
+- [func CVMetalBufferCacheFlush(CVMetalBufferCache, CVOptionFlags)](cvmetalbuffercacheflush(_:_:).md)
+- [func CVMetalBufferCacheGetTypeID() -> CFTypeID](cvmetalbuffercachegettypeid().md)
+- [func CVMetalBufferGetBuffer(CVMetalBuffer) -> (any MTLBuffer)?](cvmetalbuffergetbuffer(_:).md)
+- [func CVMetalBufferGetTypeID() -> CFTypeID](cvmetalbuffergettypeid().md)
+
 
 ---
 

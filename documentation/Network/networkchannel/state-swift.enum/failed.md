@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: case
 
-Failed connections are disconnected and can no longer send or receive data
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

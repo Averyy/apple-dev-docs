@@ -6,8 +6,12 @@
 An instance that filters the content a stream captures.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -51,6 +55,8 @@ Use a content filter to limit an [`SCStream`](scstream.md) object’s output to 
 - [var includedApplications: [SCRunningApplication]](sccontentfilter/includedapplications.md)
 - [var includedDisplays: [SCDisplay]](sccontentfilter/includeddisplays.md)
 - [var includedWindows: [SCWindow]](sccontentfilter/includedwindows.md)
+- [var isCameraEnabled: Bool](sccontentfilter/iscameraenabled.md)
+- [var isMicrophoneEnabled: Bool](sccontentfilter/ismicrophoneenabled.md)
 
 ## Relationships
 

@@ -31,7 +31,7 @@ struct OrnamentAttachmentAnchor
 
 ## See Also
 
-- [func ornament(visibility:attachmentAnchor:contentAlignment:ornament:)](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
+- [func ornament<Content>(visibility: Visibility, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D, ornament: () -> Content) -> some View](view/ornament(visibility:attachmentanchor:contentalignment:ornament:).md)
   Presents an ornament.
 
 

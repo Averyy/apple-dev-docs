@@ -30,6 +30,9 @@ struct OwnershipType
 ### Getting a localized description
 - [var localizedDescription: String](transaction/ownershiptype-swift.struct/localizeddescription.md)
   The localized text that describes the ownership type.
+### Type Properties
+- [static var assigned: Transaction.OwnershipType](transaction/ownershiptype-swift.struct/assigned.md)
+  The user has access to this transaction through an organization.
 
 ## Relationships
 

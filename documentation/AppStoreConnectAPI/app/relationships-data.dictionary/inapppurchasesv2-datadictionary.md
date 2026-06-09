@@ -16,6 +16,7 @@ object App.Relationships.InAppPurchasesV2
 
 ### Objects
 - [object App.Relationships.InAppPurchasesV2.Data](app/relationships-data.dictionary/inapppurchasesv2-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related in-app purchase resource.
 
 ## Properties
 

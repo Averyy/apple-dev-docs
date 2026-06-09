@@ -1,0 +1,4 @@
+Completed scraping TrustInsights!
+Total pages scraped: 85
+Pages skipped (unchanged): 1
+Pages failed: 0

@@ -26,6 +26,7 @@ The public ID is applicable to entities and notations.
 ## See Also
 
 - [var isExternal: Bool](xmldtdnode/isexternal.md)
+  True if the system id is set. Valid for entities and notations.
 - [var notationName: String?](xmldtdnode/notationname.md)
   Returns the name of the notation associated with the receiver.
 - [var systemID: String?](xmldtdnode/systemid.md)

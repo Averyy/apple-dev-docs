@@ -16,7 +16,7 @@ optional var requestedMountOptions: FSVolume.MountOptions { get set }
 
 #### Discussion
 
-FSKit reads this value after the volume replies to the [`mount(options:replyHandler:)`](fsvolume/operations/mount(options:replyhandler:).md) call. Changing the returned value during the runtime of the volume has no effect.
+FSKit reads this value after the volume replies to the `FSVolume/Operations/mount(options:)` call. Changing the returned value during the runtime of the volume has no effect.
 
 ## See Also
 

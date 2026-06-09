@@ -18,7 +18,7 @@ Replaces one or more accessibility elements for this view with new accessibility
 
 ```swift
 nonisolated
-func accessibilityRepresentation<V>(@ViewBuilder representation: () -> V) -> some View where V : View
+func accessibilityRepresentation<V>(@ContentBuilder representation: () -> V) -> some View where V : View
 ```
 
 #### Discussion

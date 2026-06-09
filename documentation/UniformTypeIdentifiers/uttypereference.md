@@ -100,6 +100,7 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
 - [init?(coder: NSCoder)](uttypereference/init(coder:).md)
 - [convenience init?(filenameExtension: String, conformingToType: UTType)](uttypereference/init(filenameextension:conformingtotype:).md)
 - [convenience init?(identifier: String)](uttypereference/init(identifier:).md)
+- [convenience init?(identifier: String, allowUndeclared: Bool)](uttypereference/init(identifier:allowundeclared:).md)
 - [convenience init?(tag: String, tagClass: String, conformingTo: UTType?)](uttypereference/init(tag:tagclass:conformingto:).md)
 ### Default Implementations
 - [UTTypeReference Implementations](uttypereference/uttypereference-implementations.md)

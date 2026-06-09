@@ -213,6 +213,8 @@ Note that with [`ARView`](arview.md), a [`ModelEntity`](modelentity.md) casts a 
 ### Conforms To
 - [ARSessionProviding](../ARKit/ARSessionProviding.md)
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

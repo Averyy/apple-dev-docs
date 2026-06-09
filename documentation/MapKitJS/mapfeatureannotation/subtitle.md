@@ -11,7 +11,7 @@ The subtitle of the feature.
 ## Declaration
 
 ```swift
-get subtitle(): string | undefined;
+get subtitle(): string | null;
 ```
 
 #### Discussion

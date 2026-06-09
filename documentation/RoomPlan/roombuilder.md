@@ -9,7 +9,6 @@ An object that generates a 3D asset from room-capture data.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

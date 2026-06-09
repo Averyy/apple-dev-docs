@@ -43,9 +43,7 @@ A single `CMSampleTimingInfo` struct can describe every individual sample in a `
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

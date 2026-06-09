@@ -63,6 +63,9 @@ If you create a SwiftUI [`Text`](https://developer.apple.com/documentation/Swift
 
 ## Topics
 
+### Modifying a Date Attributed Style
+- [func locale(Locale) -> Date.AttributedStyle](date/attributedstyle/locale(_:).md)
+  Modifies the date attributed style to use the specified locale.
 ### Applying Date Attributed Styles
 - [func format(Date) -> AttributedString](date/attributedstyle/format(_:).md)
   Creates a locale-aware attributed string representation from a date value.

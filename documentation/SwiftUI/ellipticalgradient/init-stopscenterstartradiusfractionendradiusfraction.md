@@ -17,6 +17,7 @@ Creates an elliptical gradient from a collection of color stops.
 ## Declaration
 
 ```swift
+nonisolated
 init(stops: [Gradient.Stop], center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5)
 ```
 

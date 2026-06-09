@@ -16,7 +16,7 @@ Create a labeled slider tick at a specific value.
 ## Declaration
 
 ```swift
-init(_ value: V, @ViewBuilder label: () -> some View)
+init(_ value: V, @ContentBuilder label: () -> some View)
 ```
 
 

@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: init
 
-Create a new outbound connection to an endpoint, with parameters. The parameters determine the protocols to be used for the connection, and their options.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

@@ -18,6 +18,7 @@ object GameCenterActivityLocalizationUpdateRequest
 
 ### Dictionaries
 - [object GameCenterActivityLocalizationUpdateRequest.Data](gamecenteractivitylocalizationupdaterequest/data-data.dictionary.md)
+  The request body you use to update a activity.
 
 ## Properties
 
@@ -26,13 +27,13 @@ object GameCenterActivityLocalizationUpdateRequest
 ## See Also
 
 - [object GameCenterActivityLocalization](gamecenteractivitylocalization.md)
-  The data structure that represents an activity localization resource.
+  The localized name, description, and image for a Game Center activity in a specific language.
 - [object GameCenterActivityLocalizationCreateRequest](gamecenteractivitylocalizationcreaterequest.md)
-  The request body you use to create an activity localization resource.
+  The request body for creating a localization for a Game Center activity.
 - [object GameCenterActivityLocalizationResponse](gamecenteractivitylocalizationresponse.md)
-  A response that contains a single activity localization resource.
+  A response containing a single localization for a Game Center activity.
 - [object GameCenterActivityLocalizationsResponse](gamecenteractivitylocalizationsresponse.md)
-  A response that contains a list of activity localization resources.
+  A response containing a list of localizations for a Game Center activity.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
 
 

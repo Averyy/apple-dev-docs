@@ -52,7 +52,7 @@ object Pass
   A compilation of data object types for semantic tags.
 ### Adding barcodes
 - [object Pass.Barcodes](pass/barcodes-data.dictionary.md)
-  An object that represents a barcode on a pass.
+  An array of barcode objects on a Pass.
 - [object Pass.Barcode](pass/barcode-data.dictionary.md)
   An object that represents a barcode shown on a pass.
 ### Adding relevance
@@ -151,10 +151,14 @@ object Pass
   Build a distributable pass.
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
+- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+  Construct and customize a variety of pass styles with this easy-to-use tool.
 - [Creating the Source for a Pass](creating-the-source-for-a-pass.md)
   Create the directory structure and add source files and images to define a pass.
 - [Building a Pass](building-a-pass.md)
   Build a distributable pass.
+- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+  Provide customizable information for your Wallet Pass.
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
 - [object PassFields](passfields.md)

@@ -27,6 +27,11 @@ For more information about the Journaling Suggestions picker, see: doc:presentin
 - `journalingSuggestionToken`: A `JournalingSuggestionPresentationToken` struct to determine the content shown in the picker.
 - `onCompletion`: Code that you supply, which processes any suggestions that a person may choose in the picker.
 
+## See Also
+
+- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:oncompletion:).md)
+  Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
+
 
 ---
 

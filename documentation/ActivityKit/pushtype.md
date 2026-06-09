@@ -8,6 +8,7 @@ The structure that offers constants you use to configure a Live Activity to rece
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -17,8 +17,7 @@ A type-erased icon view of a label.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Icon
+struct Icon
 ```
 
 ## Relationships

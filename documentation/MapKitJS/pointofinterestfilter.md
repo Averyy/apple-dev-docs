@@ -47,10 +47,6 @@ You can apply a point-of-interest filter when you create a map ([`MapConstructor
   An object that represents a map feature that the user selects.
 - [class MapFeatureAnnotationGlyphImage](mapfeatureannotationglyphimage.md)
   An object that describes map feature annotation images.
-- [const PointOfInterestCategory](pointofinterestcategory.md)
-  Point-of-interest categories.
-- [const MapFeatureType](mapfeaturetype.md)
-  Values that describe the feature type of a point of interest.
 
 
 ---

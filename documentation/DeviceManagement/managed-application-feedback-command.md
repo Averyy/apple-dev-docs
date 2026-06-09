@@ -12,8 +12,6 @@ Get app feedback from a managed app on the device.
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -29,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, Shared iPad, tvOS, visionOS |
 | User channel | macOS |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
@@ -98,7 +96,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ManagedApplicationFeedbackCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

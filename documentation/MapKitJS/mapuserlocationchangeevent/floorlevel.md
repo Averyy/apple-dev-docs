@@ -11,12 +11,12 @@ The current floor the user is on.
 ## Declaration
 
 ```swift
-readonly floorLevel?: number | undefined;
+readonly floorLevel: number | null;
 ```
 
 #### Discussion
 
-This property returns either a floor number or `undefined`, which represents the current floor the user is on. `Undefined` may indicate that the browser doesn’t expose this property.
+This property returns either a floor number or `null`, which represents the current floor the user is on. `null` may indicate that the browser doesn’t expose this property.
 
 
 ---

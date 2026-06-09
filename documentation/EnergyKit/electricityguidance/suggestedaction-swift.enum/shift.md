@@ -9,7 +9,6 @@ An indication of when to shift energy usage for devices that can’t reduce elec
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

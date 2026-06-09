@@ -11,8 +11,6 @@ If present, configures Safari intelligence features.
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,6 +24,8 @@ object IntelligenceSettingsApps_SafariObject
 
 ## See Also
 
+- [object IntelligenceSettingsApps_CalendarObject](intelligencesettingsapps_calendarobject.md)
+  If present, configures Calendar and Reminders Intelligence features.
 - [object IntelligenceSettingsApps_MailObject](intelligencesettingsapps_mailobject.md)
   If present, configures Mail Intelligence features.
 - [object IntelligenceSettingsApps_NotesObject](intelligencesettingsapps_notesobject.md)

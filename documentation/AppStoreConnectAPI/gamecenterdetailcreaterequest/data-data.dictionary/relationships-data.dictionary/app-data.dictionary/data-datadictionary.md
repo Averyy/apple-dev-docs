@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a Game Center detail.
+
 **Availability**:
 - App Store Connect API 3.0+
 

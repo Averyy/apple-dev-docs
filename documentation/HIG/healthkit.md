@@ -73,9 +73,9 @@ The Apple Health icon shows that an app works with HealthKit and the Health app.
 [Protecting user privacy](../HealthKit/protecting-user-privacy.md) — HealthKit
 
 #### Videos
+- [Deliver workout insights with HealthKit workout zones](https://developer.apple.com/videos/play/wwdc2026/207) - HealthKit makes it easier to provide workout insights — like heart rate and cycling power zones — in your app. Learn to leverage the built-in, personalized zones or create custom ones. Discover how to use the current zone and time spent in each zone to provide meaningful guidance during and after workouts.
 - [Meet the HealthKit Medications API](https://developer.apple.com/videos/play/wwdc2025/321) - Discover the new Medications API in HealthKit. Explore an example app that uses the new API, learn how to access medications and doses, and find out how your app will manage authorization for this new kind of data.
 - [Track workouts with HealthKit on iOS and iPadOS](https://developer.apple.com/videos/play/wwdc2025/322) - Learn best practices for building a great workout experience for iOS. Review the life cycle of a workout session, explore the differences between workouts on Apple Watch and iPhone, and find out how to use Live Activities and Siri to pump up your app’s Lock Screen experience.
-- [Explore wellbeing APIs in HealthKit](https://developer.apple.com/videos/play/wwdc2024/10109) - Learn how to incorporate mental health and wellbeing into your app using HealthKit. There are new APIs for State of Mind, as well as for Depression Risk and Anxiety Risk. We’ll dive into principles of emotion science to cover how reflecting on feelings can be beneficial, and how State of Mind can be used to represent different types of mood and emotion.
 
 
 

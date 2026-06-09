@@ -26,10 +26,6 @@ OSSerialization provides no concurrency protection; it’s up to the usage conte
 ## Topics
 
 ### Creating a Serialization Object
-- [createFromBytes](osserialization/createfrombytes.md)
-  Allocates an OSSerialization object from the serialized data of a previous serialization.
-- [createFromObject](osserialization/createfromobject.md)
-  Allocates an OSSerialization object with the serialized data of an object.
 - [OSCreateSerializationFromBytes](oscreateserializationfrombytes.md)
 - [OSCreateSerializationFromObject](oscreateserializationfromobject.md)
 - [free](osserialization/free.md)
@@ -44,6 +40,10 @@ OSSerialization provides no concurrency protection; it’s up to the usage conte
   Obtain the result of the serialization performed by createFromObject().
 ### Type Methods
 - [freeBuffer](osserialization/freebuffer.md)
+- [createFromBytes](osserialization/createfrombytes-8jjh8.md)
+- [createFromBytes](osserialization/createfrombytes-9lb79.md)
+- [createFromObject](osserialization/createfromobject-2st9w.md)
+- [createFromObject](osserialization/createfromobject-4rdec.md)
 
 ## Relationships
 

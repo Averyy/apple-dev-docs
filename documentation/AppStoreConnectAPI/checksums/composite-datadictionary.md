@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the properties of a composite checksum.
+A composite checksum covering the entirety of a background asset upload file.
 
 **Availability**:
 - App Store Connect API 4.1+
@@ -22,7 +22,7 @@ object Checksums.Composite
 ## See Also
 
 - [object Checksums.File](checksums/file-data.dictionary.md)
-  The data structure that represents the properties of a file checksum.
+  A per-file checksum used to verify the integrity of an individual background asset upload file.
 
 
 ---

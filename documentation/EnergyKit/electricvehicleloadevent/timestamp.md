@@ -9,7 +9,6 @@ The timestamp for when the event occurred.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -23,6 +22,8 @@ let timestamp: Date
   The unique identifier of the electrical load event.
 - [let session: ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.property.md)
   The session information.
+- [ElectricVehicleLoadEvent.Session](electricvehicleloadevent/session-swift.struct.md)
+  A session that tracks the event.
 
 
 ---

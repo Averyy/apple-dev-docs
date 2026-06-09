@@ -62,6 +62,8 @@ struct TextInputFormattingControlPlacement
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 
 
 ---

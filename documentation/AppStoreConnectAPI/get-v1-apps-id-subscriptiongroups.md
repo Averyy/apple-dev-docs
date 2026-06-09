@@ -1,4 +1,4 @@
-# List All Subscription Groups for an App
+# List all subscription groups for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,23 +14,23 @@ Get a list of subscription groups for a specific app.
 
 ## Parameters
 
-- `fields[subscriptionGroupLocalizations]` ([string])
-- `fields[subscriptionGroups]` ([string])
-- `fields[subscriptions]` ([string])
-- `filter[referenceName]` ([string])
-- `filter[subscriptions.state]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[subscriptionGroupLocalizations]` (integer)
-- `limit[subscriptions]` (integer)
-- `sort` ([string])
+- `fields[subscriptionGroupLocalizations]` ([string]): Additional fields to include for each subscription group localization resource returned by the response.
+- `fields[subscriptionGroups]` ([string]): Additional fields to include for each subscription group resource returned by the response.
+- `fields[subscriptions]` ([string]): Additional fields to include for each subscription resource returned by the response.
+- `filter[referenceName]` ([string]): Filter the returned subscription groups by reference name.
+- `filter[subscriptions.state]` ([string]): Filter the returned subscription groups by subscriptions state.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of subscription group resources to return.
+- `limit[subscriptionGroupLocalizations]` (integer): The maximum number of related subscription group localizations resources to return.
+- `limit[subscriptions]` (integer): The maximum number of related subscriptions resources to return.
+- `sort` ([string]): Attributes by which to sort.
 
 ## See Also
 
-- [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)
+- [Read the billing grace period value for an app](get-v1-apps-_id_-subscriptiongraceperiod.md)
   Get the Boolean value that represents the grace period opt-in state for your app.
-- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
-- [GET /v1/apps/{id}/relationships/subscriptionGroups](get-v1-apps-_id_-relationships-subscriptiongroups.md)
+- [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [List subscription group IDs for an app](get-v1-apps-_id_-relationships-subscriptiongroups.md)
 
 
 ---

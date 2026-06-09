@@ -155,6 +155,8 @@ To interpret accelerometer, gyroscope, or attitude information, you need to know
   The error domain for Core Motion.
 - [struct CMError](cmerror.md)
   Defines motion errors.
+### Instance Properties
+- [var deviceMotionBody: (any CMBodyIdentifiable)?](cmmotionmanager/devicemotionbody.md)
 
 ## Relationships
 

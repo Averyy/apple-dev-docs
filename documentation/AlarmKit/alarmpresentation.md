@@ -8,6 +8,7 @@ An object that describes the content required for the alarm UI.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

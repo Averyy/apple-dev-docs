@@ -22,6 +22,11 @@ case selection
 
 `.indirectPointer` touches can marquee select multiple elements when dragging on the canvas.
 
+## See Also
+
+- [PaperMarkupViewController.TouchMode.drawing](papermarkupviewcontroller/touchmode/drawing.md)
+  Draw with the PencilKit tool.
+
 
 ---
 

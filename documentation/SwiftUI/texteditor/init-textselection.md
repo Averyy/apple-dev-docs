@@ -15,6 +15,7 @@ Creates a styled text editor.
 ## Declaration
 
 ```swift
+nonisolated
 init(text: Binding<AttributedString>, selection: Binding<AttributedTextSelection>? = nil)
 ```
 

@@ -29,10 +29,14 @@ Use this enum to describe the desired automatic transition behavior into the imm
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.property.md)
+  The expanded experience automatic transition behavior for the immersive experience.
 
 
 ---

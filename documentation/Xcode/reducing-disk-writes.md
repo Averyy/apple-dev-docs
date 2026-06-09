@@ -20,7 +20,7 @@ Optimize your app’s performance by reducing the number of write operations to 
 
 The system throws an exception and generates a report when the disk writes from your app exceed a certain threshold in a 24-hour period. View the aggregated exception logs for a version of your app in the Disk Writes pane in Xcode Organizer or capture them with [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
 
-![Labeled screenshot of the Disk Write reports pane in the Xcode Organizer. From left to](https://docs-assets.developer.apple.com/published/eea210b4300d4494095db4fbcac971ce/reducing-disk-writes-1%402x.png)
+![A screenshot of the Disk Write reports pane in the Xcode Organizer. From left to](https://docs-assets.developer.apple.com/published/9e091d4ab0bd51a2107f98b9c2dd6394/reducing-disk-writes-4%402x.png)
 
 Each report in the Report List shows the function call that generated the exception and the percentage of total disk writes it accounted for. Clicking on a report shows a sample stack trace, as well as additional details in the Inspector, including:
 
@@ -32,15 +32,19 @@ Each report in the Report List shows the function call that generated the except
 
 Prioritize fixing exceptions by using the total percentage of disk writes, as well as information on the operating system and the impacted device types. Identify the code that’s causing the increase in writes by using the function signature for a specific report in the Report List and the corresponding stack trace. After updating the code and verifying the fix, mark the report as resolved.
 
+##### Get Coding Assistant Recommendations for Disk Write Issues
+
+After selecting a disk write report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and impacted code paths into the coding assistant to help you identify and fix the root cause of the excessive writes.
+
 ##### Gather Metrics About Your Apps Disk Usage
 
 View the daily amount of data your app writes to the disk in the Disk Writes metrics pane of the Xcode Organizer window or by using [`MetricKit`](https://developer.apple.com/documentation/MetricKit).
 
 The pane displays the logical disk writes in megabytes per day for the shipping versions of your app. Compare versions to find unexpected increases. Filter to find differences between devices and to view the typical amount of data written (50th percentile) or the largest amount (90th percentile). MetricKit reports the same data.
 
-The screenshot below shows that the largest amount of data written by the latest version of the MealPlanner app is 24.4 MB more per day than an earlier version.
+The screenshot below shows that the largest amount of data written by the latest version of the Fruta app is 26.7 MB less per day than an earlier version.
 
-![Screenshot of the Disk Writes metric pane in the Xcode Organizer. From left to right is](https://docs-assets.developer.apple.com/published/64118eb84a67b2c2f5daa1b5c4b5dcfa/reducing-disk-writes-2%402x.png)
+![A screenshot of the Disk Writes metric pane in the Xcode Organizer. From left to right is](https://docs-assets.developer.apple.com/published/3d3231c5df6b559e36dd29963ee06ca7/reducing-disk-writes-2%402x.png)
 
 Assess whether the amount of data recorded seems reasonable for your app. If the numbers are greater than what you expect, you may be writing data too frequently. For example, if your app’s files total 100 KB and your app writes 500 MB of data to disk every day, you might want to investigate how many times you’re writing the same data to disk each day.
 
@@ -164,6 +168,8 @@ The Disk Writes Report pane suggests using incremental vacuuming when a stack tr
 
 - [Reducing your app’s disk usage](reducing-your-app-s-disk-usage.md)
   Measure and minimize the space your app uses to store its files.
+- [Monitoring your app’s storage metrics](monitoring-your-app-s-storage-metrics.md)
+  Track your app’s storage footprint over time using Xcode Organizer to catch regressions in Documents & Data and App Size.
 
 
 ---

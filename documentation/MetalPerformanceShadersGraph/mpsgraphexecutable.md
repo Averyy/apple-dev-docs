@@ -44,8 +44,12 @@ An `MPSGraphExecutable` is a compiled graph for specific feeds for specific targ
   Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed. This call is asynchronous and will return immediately after finishing encoding.
 - [func getOutputTypes(with: MPSGraphDevice?, inputTypes: [MPSGraphType], compilationDescriptor: MPSGraphCompilationDescriptor?) -> [MPSGraphShapedType]?](mpsgraphexecutable/getoutputtypes(with:inputtypes:compilationdescriptor:).md)
   Get output shapes for a specialized executable.
+- [func run(on: any MTL4CommandQueue, inputs: [MPSGraphTensorData], results: [MPSGraphTensorData]?, executionDescriptor: MPSGraphExecutableExecutionDescriptor?) -> [MPSGraphTensorData]](mpsgraphexecutable/run(on:inputs:results:executiondescriptor:).md)
+  Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed.
 - [func run(with: any MTLCommandQueue, inputs: [MPSGraphTensorData], results: [MPSGraphTensorData]?, executionDescriptor: MPSGraphExecutableExecutionDescriptor?) -> [MPSGraphTensorData]](mpsgraphexecutable/run(with:inputs:results:executiondescriptor:).md)
   Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed.
+- [func runAsync(on: any MTL4CommandQueue, inputs: [MPSGraphTensorData], results: [MPSGraphTensorData]?, executionDescriptor: MPSGraphExecutableExecutionDescriptor?) -> [MPSGraphTensorData]](mpsgraphexecutable/runasync(on:inputs:results:executiondescriptor:).md)
+  Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed. This call is asynchronous and will return immediately.
 - [func runAsync(with: any MTLCommandQueue, inputs: [MPSGraphTensorData], results: [MPSGraphTensorData]?, executionDescriptor: MPSGraphExecutableExecutionDescriptor?) -> [MPSGraphTensorData]](mpsgraphexecutable/runasync(with:inputs:results:executiondescriptor:).md)
   Runs the graph for the given feeds and returns the target tensor values, ensuring all target operations also executed. This call is asynchronous and will return immediately.
 - [func serialize(package: URL, descriptor: MPSGraphExecutableSerializationDescriptor?)](mpsgraphexecutable/serialize(package:descriptor:).md)

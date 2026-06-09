@@ -7,8 +7,6 @@ A dictionary that contains additional data about the error code.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

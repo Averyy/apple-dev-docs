@@ -9,7 +9,6 @@ Returns an energy venue for the given HomeKit identifier.
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

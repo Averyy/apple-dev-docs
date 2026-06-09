@@ -34,7 +34,7 @@ This method finalizes like [`finalize(through:)`](speechanalyzer/finalize(throug
 - [func cancelAndFinishNow() async](speechanalyzer/cancelandfinishnow.md)
   Finishes analysis immediately.
 - [func finalizeAndFinishThroughEndOfInput() async throws](speechanalyzer/finalizeandfinishthroughendofinput.md)
-  Finishes analysis after an audio input sequence has been fully consumed and its results are finalized.
+  Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
 - [func finish(after: CMTime) async throws](speechanalyzer/finish(after:).md)
   Finishes analysis once input for a given time is consumed.
 

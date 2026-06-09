@@ -14,7 +14,7 @@ Remove a specific Android to iOS mapping detail.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the android to iOS app mapping detail resource ID from the [`Create an Android to iOS App Mapping Detail`](post-v1-androidtoiosappmappingdetails.md) response.
 
 ## See Also
 

@@ -25,21 +25,22 @@ To manage activities, be sure you have one of the following user roles:
   Add an achievement to a Game Center activity.
 - [Add a Leaderboard to a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
   Add a leaderboard to a Game Center activity.
-- [Modify the Achievements for a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
+- [Modify the achievements for a game center activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
   Update the relationship between achievements and a specific Game Center activity.
-- [Modify the Leaderboards for a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
+- [Modify the leaderboards for a game center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
   Update the relationship between a leaderboard and a specific Game Center activity.
 - [Read Activity Information](get-v1-gamecenteractivities-_id_.md)
   Get information for a specific Game Center activity.
 - [Read the Versions for an Activity](get-v1-gamecenteractivities-_id_-versions.md)
   Get a list of versions for a specific Game Center activity.
-- [GET /v1/gameCenterActivities/{id}/relationships/versions](get-v1-gamecenteractivities-_id_-relationships-versions.md)
-- [List All Activities for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenteractivities.md)
+- [List version IDs for a Game Center activity](get-v1-gamecenteractivities-_id_-relationships-versions.md)
+- [List all activities for a game center detail](get-v1-gamecenterdetails-_id_-gamecenteractivities.md)
   Get activity release information for a specific Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/gameCenterActivities](get-v1-gamecenterdetails-_id_-relationships-gamecenteractivities.md)
-- [List All Activities for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
+- [List Game Center activity IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenteractivities.md)
+- [List all activities for a game center group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
   Get a list of all activities for a Game Center group.
-- [GET /v1/gameCenterGroups/{id}/relationships/gameCenterActivities](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
+- [List activity IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
+  Get a list of activity IDs for a specific Game Center group.
 - [Modify an Activity](patch-v1-gamecenteractivities-_id_.md)
   Update details for a specific Game Center activity.
 - [Delete an Activity](delete-v1-gamecenteractivities-_id_.md)
@@ -54,31 +55,32 @@ To manage activities, be sure you have one of the following user roles:
   Remove the relationship between a leaderboard and a Game Center activity.
 ### Objects
 - [object GameCenterActivitiesResponse](gamecenteractivitiesresponse.md)
-  A response that contains a list of activities resources.
+  A response containing a list of Game Center activities configured for an app.
 - [object GameCenterActivity](gamecenteractivity.md)
-  The data structure that represents a Game Center activity resource.
+  A social or competitive event in Game Center that players can participate in, such as a leaderboard challenge.
 - [object GameCenterActivityAchievementsV2LinkagesRequest](gamecenteractivityachievementsv2linkagesrequest.md)
   The data structure that represents a Game Center activity achievement linkage request resource.
 - [object GameCenterActivityLeaderboardsV2LinkagesRequest](gamecenteractivityleaderboardsv2linkagesrequest.md)
   The data structure that represents a Game Center activity leaderboard linkage request resource.
 - [object GameCenterActivityAchievementsLinkagesRequest](gamecenteractivityachievementslinkagesrequest.md)
-  The request body you use to create a link betweeen an achievement and an activity resource.
+  The request body for updating the list of achievements linked to a Game Center activity.
 - [object GameCenterActivityLeaderboardsLinkagesRequest](gamecenteractivityleaderboardslinkagesrequest.md)
-  The request body you use to create a link betweeen a leaderboard and an activity resource.
+  The request body for updating the list of leaderboards linked to a Game Center activity.
 - [object GameCenterActivityCreateRequest](gamecenteractivitycreaterequest.md)
-  The request body you use to create an activity resource.
+  The request body for creating a new Game Center activity.
 - [object GameCenterActivityVersionInlineCreate](gamecenteractivityversioninlinecreate.md)
   The data structure you use to configure an activity version while creating an activity.
 - [object GameCenterActivityResponse](gamecenteractivityresponse.md)
-  A response that contains a single activity resource.
+  A response containing a single Game Center activity with its configuration.
 - [object GameCenterActivityUpdateRequest](gamecenteractivityupdaterequest.md)
   The request body you use to update an activity.
 - [object GameCenterActivityVersion](gamecenteractivityversion.md)
-  The data structure that represents an activity version resource.
+  A versioned configuration of a Game Center activity, containing its localizations and release status.
 - [object GameCenterActivityVersionCreateRequest](gamecenteractivityversioncreaterequest.md)
-  The request body you use to create an activity version resource.
+  The request body for creating a version of a Game Center activity.
 - [object GameCenterActivityLocalizationImageLinkageResponse](gamecenteractivitylocalizationimagelinkageresponse.md)
 - [object StringToStringMap](stringtostringmap.md)
+  A dictionary object mapping arbitrary string keys to string values, used for flexible key-value metadata.
 
 ## See Also
 

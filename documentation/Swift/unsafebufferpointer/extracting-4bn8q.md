@@ -17,7 +17,7 @@ Extracts and returns a copy of the entire buffer.
 ## Declaration
 
 ```swift
-func extracting(_ bounds: (UnboundedRange_) -> ()) -> UnsafeBufferPointer<Element>
+func extracting(_ bounds: UnboundedRange) -> UnsafeBufferPointer<Element>
 ```
 
 #### Return Value

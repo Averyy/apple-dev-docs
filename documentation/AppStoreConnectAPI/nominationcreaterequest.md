@@ -26,13 +26,13 @@ object NominationCreateRequest
 ## See Also
 
 - [object Nomination](nomination.md)
-  The data structure that represents a nomination resource.
+  A developer recommendation submitted to Apple proposing an app or in-app event for App Store editorial featuring.
 - [object NominationUpdateRequest](nominationupdaterequest.md)
   The request body you use to update a featuring nomination.
 - [object NominationResponse](nominationresponse.md)
-  A response that contains a single featuring nomination resource.
+  A response containing a single App Store nomination submission.
 - [object NominationsResponse](nominationsresponse.md)
-  A response that contains a list of featuring nominations.
+  A response containing a list of app nominations submitted for App Store editorial featuring consideration.
 
 
 ---

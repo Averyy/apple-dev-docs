@@ -14,6 +14,7 @@ Instantiates a document group for creating and editing documents that store a sp
 ## Declaration
 
 ```swift
+nonisolated
 init(editing modelType: any PersistentModel.Type, contentType: UTType, editor: @escaping () -> Content, prepareDocument: @escaping (ModelContext) -> Void = { _ in })
 ```
 

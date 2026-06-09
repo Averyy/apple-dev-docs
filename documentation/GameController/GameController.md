@@ -116,6 +116,12 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
   An alias for a symbol name for backward compatibility with a previous SDK version.
 ### Deprecated symbols
 - [Deprecated symbols](deprecated-symbols.md)
+### Classes
+- [class GCControllerHomeButtonSettingsManager](gccontrollerhomebuttonsettingsmanager.md)
+  Access the game controller system Home button settings.
+- [class GCDeviceType](gcdevicetype.md)
+  A class representing a type of spatial accessory.
+- [class GCSpatialAccessory](gcspatialaccessory.md)
 ### Protocols
 - [protocol GCPhysicalInputExtents](gcphysicalinputextents.md)
   Physical extents scale the normalized value reported by `GCLinearInput` into physical units.

@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](bool/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](bool/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Bool, Bool) -> Bool](bool/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a sandbox tester v2update request.
+
 **Availability**:
 - App Store Connect API 2.2+
 
@@ -16,6 +18,7 @@ object SandboxTesterV2UpdateRequest.Data
 
 ### Objects
 - [object SandboxTesterV2UpdateRequest.Data.Attributes](sandboxtesterv2updaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a sandbox tester v2update request resource.
 
 ## Properties
 

@@ -17,7 +17,7 @@ Saves a specific record.
 ## Declaration
 
 ```swift
-func save(_ record: CKRecord) async throws -> CKRecord
+func save(_ record: CKRecord, completionHandler: @escaping @Sendable (CKRecord?, (any Error)?) -> Void)
 ```
 
 #### Discussion

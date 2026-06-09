@@ -16,7 +16,7 @@
 
 ```swift
 nonisolated
-init(@ChartContentBuilder content: () -> Content)
+init(@ContentBuilder content: () -> Content)
 ```
 
 

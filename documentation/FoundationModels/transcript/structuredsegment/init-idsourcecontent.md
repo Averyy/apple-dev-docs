@@ -9,12 +9,17 @@
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 init(id: String = UUID().uuidString, source: String, content: GeneratedContent)
 ```
+
+## See Also
+
+- [init(id: String, schemaName: String, content: GeneratedContent)](transcript/structuredsegment/init(id:schemaname:content:).md)
 
 
 ---

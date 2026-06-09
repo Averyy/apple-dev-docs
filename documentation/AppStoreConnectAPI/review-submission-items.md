@@ -7,17 +7,21 @@ Manage the contents of your review submission, which can include your App Store 
 ## Topics
 
 ### Endpoints
-- [Modify a Review Submission Item](patch-v1-reviewsubmissionitems-_id_.md)
+- [Update a review submission item](patch-v1-reviewsubmissionitems-_id_.md)
   Update a specific review submission item.
 - [Create a Review Submission Item](post-v1-reviewsubmissionitems.md)
   Create a new review submission item.
-- [Remove a Review Submission Item](delete-v1-reviewsubmissionitems-_id_.md)
+- [Remove a review submission item](delete-v1-reviewsubmissionitems-_id_.md)
   Remove a specific item from a review submission.
 ### Objects
 - [object ReviewSubmissionItemCreateRequest](reviewsubmissionitemcreaterequest.md)
+  The request body you use to create a review submission item.
 - [object ReviewSubmissionItemUpdateRequest](reviewsubmissionitemupdaterequest.md)
+  The request body you use to update a review submission item update request.
 - [object ReviewSubmissionItemsResponse](reviewsubmissionitemsresponse.md)
+  The response body for endpoints that list items in a review submission.
 - [object ReviewSubmissionItemResponse](reviewsubmissionitemresponse.md)
+  The response body for endpoints that create, read, or modify a single review submission item.
 
 ## See Also
 

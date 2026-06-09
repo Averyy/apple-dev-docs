@@ -49,12 +49,12 @@ Get a list of versions for a specific Game Center leaderboard.
   Read the group leadboard to which a leaderboard belongs.
 - [List All Localizations for a Leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
-- [List All Groups to Which a Leaderboard Belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [List localization IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
+- [List all groups to which a leaderboard belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
 - [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 
 
 ---

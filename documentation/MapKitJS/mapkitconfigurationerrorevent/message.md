@@ -11,7 +11,7 @@ The message associated with the configuration error.
 ## Declaration
 
 ```swift
-readonly message?: string | undefined;
+readonly message: string;
 ```
 
 #### Discussion

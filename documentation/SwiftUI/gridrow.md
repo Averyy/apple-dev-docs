@@ -18,7 +18,7 @@ A horizontal row in a two dimensional grid container.
 
 ```swift
 @frozen
-struct GridRow<Content> where Content : View
+nonisolated struct GridRow<Content> where Content : View
 ```
 
 #### Overview

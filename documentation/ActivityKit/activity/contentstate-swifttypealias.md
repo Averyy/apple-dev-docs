@@ -8,6 +8,7 @@ The type alias for the structure that describes the dynamic content of a Live Ac
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

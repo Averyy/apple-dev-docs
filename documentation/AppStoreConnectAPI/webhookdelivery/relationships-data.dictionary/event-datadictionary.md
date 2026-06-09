@@ -16,6 +16,7 @@ object WebhookDelivery.Relationships.Event
 
 ### Dictionaries
 - [object WebhookDelivery.Relationships.Event.Data](webhookdelivery/relationships-data.dictionary/event-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a webhook delivery.
 
 ## Properties
 

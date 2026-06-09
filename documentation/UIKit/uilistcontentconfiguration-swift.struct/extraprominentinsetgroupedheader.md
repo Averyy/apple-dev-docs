@@ -9,7 +9,6 @@ Creates the default configuration you use to style an extra prominent header in 
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

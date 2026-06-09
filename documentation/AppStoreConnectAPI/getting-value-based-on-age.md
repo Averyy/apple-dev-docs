@@ -46,11 +46,7 @@ number agedAsSteppedValue(number $ageSeconds, number $initialValue, number $fina
 
 ##### Parameters
 
-- **`ageSeconds`**: The average, maximum, or minimum age of match requests in the queue.
-- **`initialValue`**: The initial or starting value that ranges from `0` to `ageIntervalSeconds-1`.
-- **`finalLimit`**: The maximum or minimum value that this function returns depending on whether `intervalChange` is positive or negative.
-- **`ageIntervalSeconds`**: The amount between age intervals in seconds.
-- **`intervalChange`**: The amount to increment or decrement the value per age interval.
+-`ageSeconds`: The average, maximum, or minimum age of match requests in the queue. -`initialValue`: The initial or starting value that ranges from `0` to `ageIntervalSeconds-1`. -`finalLimit`: The maximum or minimum value that this function returns depending on whether `intervalChange` is positive or negative. -`ageIntervalSeconds`: The amount between age intervals in seconds. -`intervalChange`: The amount to increment or decrement the value per age interval.
 
 ##### Return Value
 

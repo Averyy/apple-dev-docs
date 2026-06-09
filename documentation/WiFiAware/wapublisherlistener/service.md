@@ -8,6 +8,7 @@ The service data for the Wi-Fi Aware publish operation.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

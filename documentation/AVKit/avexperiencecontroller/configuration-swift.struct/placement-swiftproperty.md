@@ -18,6 +18,11 @@ var placement: AVExperienceController.Configuration.Placement
 
 Indicates the placement of where the media playback will be experienced. Setting this property will apply to all experiences, unless its overwritten by the targeted experience configuration object.
 
+## See Also
+
+- [AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct.md)
+  A struct used to set the placement for the media playback to be experienced.
+
 
 ---
 

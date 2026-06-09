@@ -24,14 +24,18 @@ This data includes calibration type, calibration name, calibration file name, le
 
 ## Topics
 
-### Structures
+### Calibration geometry
 - [ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/cameraorigin.md)
   A type that holds the position information representing the origin from which to render the calibration in 3D space relative to the person’s eye.
 - [ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping.md)
   A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
-### Enumerations
+- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+  Calibration mesh geometry based on USDZ data.
+### Calibration configuration
 - [ImmersiveCameraCalibration.CalibrationType](immersivecameracalibration/calibrationtype.md)
   A value that represents the calibration type used to generate camera calibration geometry.
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 ### Initializers
 - [init(name: String, type: ImmersiveCameraCalibration.CalibrationType, mask: ImmersiveCameraMask?, positionable: Bool, origin: ImmersiveCameraCalibration.CameraOrigin, textureMapping: ImmersiveCameraCalibration.CameraTextureMapping, environmentFilename: String?)](immersivecameracalibration/init(name:type:mask:positionable:origin:texturemapping:environmentfilename:).md)
   Creates a mesh based calibration from USDZ data and a image-based mask.
@@ -65,10 +69,14 @@ This data includes calibration type, calibration name, calibration file name, le
   The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
 - [struct ImmersiveCamera](immersivecamera.md)
   A structure that holds the required information for an immersive media camera to process and render video frames.
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
 - [enum ImmersiveCameraMask](immersivecameramask.md)
   A structure that holds the camera mask type information and its relevant mask name.
 - [struct ImmersiveDynamicMask](immersivedynamicmask.md)
   A type that holds the information required to dynamically generate an immersive media mask at load time.
+- [class ImmersiveImageMask](immersiveimagemask.md)
+  An object that holds all the information needed to load immersive media masks from image data or from a file.
 
 
 ---

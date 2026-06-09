@@ -20,10 +20,6 @@ Assistant schema conformance for types you use to describe documents.
 protocol ReaderEnum : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making document reader actions available to Siri and Apple Intelligence](making-document-reader-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,11 +33,6 @@ protocol ReaderEnum : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
 - [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-
-## See Also
-
-- [var documentKind: some AssistantSchemas.Enum](assistantschemas/readerenum/documentkind.md)
-  The file type for a document.
 
 
 ---

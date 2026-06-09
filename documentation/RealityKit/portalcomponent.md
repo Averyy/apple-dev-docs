@@ -108,6 +108,12 @@ Different lighting environments light the portal crossing entities based on whic
 
 ## Topics
 
+### Defining the portal volume
+- [PortalComponent.Volume](portalcomponent/volume.md)
+  Defines the geometry of a volumetric (box) portal boundary.
+### Configuring lighting blend
+- [var lightingBlendDistance: Float](portalcomponent/lightingblenddistance.md)
+  The lighting blend distance from the clipping/crossing plane.
 ### Structures
 - [PortalComponent.ClippingPlane](portalcomponent/clippingplane-swift.struct.md)
   A representation of a portal as an infinite plane.

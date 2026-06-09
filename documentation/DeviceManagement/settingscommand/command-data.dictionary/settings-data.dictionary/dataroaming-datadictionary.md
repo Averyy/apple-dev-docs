@@ -9,8 +9,6 @@ A dictionary that contains data roaming settings.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,7 +18,7 @@ object SettingsCommand.Command.Settings.DataRoaming
 
 ## Properties
 
-- `Enabled` (boolean) *(required)*: If `true`, enable data roaming, which also enables voice roaming. If `false`, disable data roaming.
+- `Enabled` (boolean) *(required)*: If `true`, enable data roaming, which also enables voice roaming. If `false`, disable data roaming. The device only applies this setting to the primary SIM.
 - `Item` (string) *(required)*: A string that identifies this setting.
 
 ## See Also

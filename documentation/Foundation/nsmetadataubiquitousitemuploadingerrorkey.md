@@ -26,9 +26,13 @@ The value is an [`NSError`](nserror.md) object that describes the problem that o
 
 - [let NSMetadataItemIsUbiquitousKey: String](nsmetadataitemisubiquitouskey.md)
 - [let NSMetadataUbiquitousItemContainerDisplayNameKey: String](nsmetadataubiquitousitemcontainerdisplaynamekey.md)
+  The display name of the container that stores the ubiquitous item.
 - [let NSMetadataUbiquitousItemDownloadRequestedKey: String](nsmetadataubiquitousitemdownloadrequestedkey.md)
+  A Boolean value indicating whether a download has been requested for the ubiquitous item.
 - [let NSMetadataUbiquitousItemIsExternalDocumentKey: String](nsmetadataubiquitousitemisexternaldocumentkey.md)
+  A Boolean value indicating whether the ubiquitous item is from an external document.
 - [let NSMetadataUbiquitousItemURLInLocalContainerKey: String](nsmetadataubiquitousitemurlinlocalcontainerkey.md)
+  The URL for the ubiquitous item in the local container.
 - [let NSMetadataUbiquitousItemHasUnresolvedConflictsKey: String](nsmetadataubiquitousitemhasunresolvedconflictskey.md)
 - [let NSMetadataUbiquitousItemIsDownloadedKey: String](nsmetadataubiquitousitemisdownloadedkey.md)
 - [let NSMetadataUbiquitousItemIsDownloadingKey: String](nsmetadataubiquitousitemisdownloadingkey.md)
@@ -39,6 +43,7 @@ The value is an [`NSError`](nserror.md) object that describes the problem that o
 - [let NSMetadataUbiquitousItemDownloadingStatusKey: String](nsmetadataubiquitousitemdownloadingstatuskey.md)
 - [let NSMetadataUbiquitousItemDownloadingErrorKey: String](nsmetadataubiquitousitemdownloadingerrorkey.md)
 - [let NSMetadataUbiquitousItemIsSharedKey: String](nsmetadataubiquitousitemissharedkey.md)
+  A Boolean value indicating whether the ubiquitous item is shared.
 
 
 ---

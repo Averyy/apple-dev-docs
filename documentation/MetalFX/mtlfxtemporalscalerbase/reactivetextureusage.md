@@ -7,12 +7,12 @@
 The minimal texture usage options that your app’s reactive texture needs in order to support this scaler.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 9.0+
-- macOS 10.11+
-- tvOS 9.0+
-- visionOS 1.0+
+- iOS 17.4+
+- iPadOS 17.4+
+- Mac Catalyst 17.4+
+- macOS 14.4+
+- tvOS 17.4+
+- visionOS 1.1+
 
 ## Declaration
 

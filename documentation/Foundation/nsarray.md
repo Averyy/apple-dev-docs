@@ -251,6 +251,7 @@ If the behavior you want to add supplements that of the existing class, you coul
 - [convenience init(array: NSArray)](nsarray/init(array:)-9rh7.md)
   Initializes a newly allocated array by placing in it the objects contained in a given array.
 - [convenience init?(contentsOf: URL)](nsarray/init(contentsof:).md)
+  Initializes a newly allocated array with the contents of the location specified by a given URL.
 - [convenience init(contentsOf: URL, error: ()) throws](nsarray/init(contentsof:error:).md)
 - [convenience init(objects: Any...)](nsarray/init(objects:).md)
 ### Instance Methods

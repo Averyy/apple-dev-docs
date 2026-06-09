@@ -30,6 +30,8 @@ struct Percent
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Percent.Configuration.Grouping) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(Decimal.FormatStyle.Percent.Configuration.Notation) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(Decimal.FormatStyle.Percent.Configuration.Precision) -> Decimal.FormatStyle.Percent](decimal/formatstyle/percent/precision(_:).md)
@@ -44,6 +46,9 @@ struct Percent
   The type the format style uses for configuration settings.
 - [enum NumberFormatStyleConfiguration](numberformatstyleconfiguration.md)
   Configuration settings for formatting numbers of different types.
+### Formatting decimal percent values
+- [func format(Decimal) -> String](decimal/formatstyle/percent/format(_:).md)
+  Formats an decimal, using this style.
 ### Creating attributed strings
 - [var attributed: Decimal.FormatStyle.Attributed](decimal/formatstyle/percent/attributed.md)
   An attributed format style based on the decimal percent format style.
@@ -52,6 +57,15 @@ struct Percent
 ### Accessing style properties
 - [var locale: Locale](decimal/formatstyle/percent/locale.md)
   The locale of the format style.
+### Parsing decimal percent values
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle.Percent>](decimal/formatstyle/percent/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating decimal values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](decimal/formatstyle/percent/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](decimal/formatstyle/percent/customconsumingregexcomponent-implementations.md)
+- [ParseableFormatStyle Implementations](decimal/formatstyle/percent/parseableformatstyle-implementations.md)
 
 ## Relationships
 

@@ -33,6 +33,10 @@ enum Algorithm
   The LZFSE compression algorithm, which is recommended for use on Apple platforms.
 - [Algorithm.lzma](algorithm/lzma.md)
   The LZMA compression algorithm, which is recommended for high-compression ratio.
+- [Algorithm.lzmesh](algorithm/lzmesh.md)
+  LZMESH
+- [Algorithm.lzraven](algorithm/lzraven.md)
+  LZRAVEN
 - [Algorithm.zlib](algorithm/zlib.md)
   The zlib compression algorithm, which is recommended for cross-platform compression.
 
@@ -40,7 +44,6 @@ enum Algorithm
 
 ### Conforms To
 - [CaseIterable](../Swift/CaseIterable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

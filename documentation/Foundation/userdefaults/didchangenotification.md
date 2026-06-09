@@ -33,7 +33,9 @@ If a different process changes your app’s settings, the system doesn’t gener
 ## See Also
 
 - [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+  A message the system sends when a user-defaults setting changes.
 - [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+  A message the system sends when the size of the data in the defaults database exceeds the maximum.
 - [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
   Posted when the amount of data in the defaults database exceeds the allowed maximum.
 

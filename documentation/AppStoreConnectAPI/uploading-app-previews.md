@@ -48,7 +48,7 @@ The command-line parameters are:
 - `{bundle id}`—Your app’s bundle ID.
 - `{platform}` — Your app’s platform. See [`Platform`](platform.md) for valid values.
 - `{version}` — The version of your app to which the preview applies.
-- `{locale}` — The locale to which the preview applies. See [`Create an App Info Localization`](post-v1-appinfolocalizations.md) for valid values.
+- `{locale}` — The locale to which the preview applies. See [`Create an app info localization`](post-v1-appinfolocalizations.md) for valid values.
 - `{preview type}` — The type of preview. See [`PreviewType`](previewtype.md) for valid values.
 - `{path to video file}` — The path to the video file on your computer.
 

@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains details about a pending software update.
+A dictionary that contains the build and OS versions of the software update that’s pending on the device.
 
 **Availability**:
 - iOS 17.0+
@@ -12,8 +12,6 @@ A dictionary that contains details about a pending software update.
 - macOS 14.0+
 - tvOS 18.4+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

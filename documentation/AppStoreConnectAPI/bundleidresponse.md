@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Bundle IDs resource.
+The response body for endpoints that create, read, or modify a single bundle ID.
 
 **Availability**:
 - App Store Connect API 1.1+
@@ -23,7 +23,7 @@ object BundleIdResponse
 ## See Also
 
 - [object BundleId](bundleid.md)
-  The data structure that represents a Bundle IDs resource.
+  An App ID registered with Apple, associating a specific bundle identifier with capabilities and provisioning profiles.
 - [type BundleIdPlatform](bundleidplatform.md)
   Strings that represent the operating system intended for the bundle.
 - [object BundleIdCreateRequest](bundleidcreaterequest.md)
@@ -31,8 +31,9 @@ object BundleIdResponse
 - [object BundleIdUpdateRequest](bundleidupdaterequest.md)
   The request body you use to update a Bundle ID.
 - [object BundleIdWithoutIncludesResponse](bundleidwithoutincludesresponse.md)
+  A response containing a single bundle ID, without including capability and profile details.
 - [object BundleIdsResponse](bundleidsresponse.md)
-  A response that contains a list of Bundle ID resources.
+  The response body for endpoints that list bundle IDs.
 - [object BundleIdAppLinkageResponse](bundleidapplinkageresponse.md)
 - [object BundleIdBundleIdCapabilitiesLinkagesResponse](bundleidbundleidcapabilitieslinkagesresponse.md)
 - [object BundleIdProfilesLinkagesResponse](bundleidprofileslinkagesresponse.md)

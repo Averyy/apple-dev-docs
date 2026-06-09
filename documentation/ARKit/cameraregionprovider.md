@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: class
 
-A camera region provider. An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the following entitlement: `com.apple.developer.arkit.camera-region.allow`
+A camera region provider.
 
 **Availability**:
 - visionOS 26.0+
@@ -13,6 +13,10 @@ A camera region provider. An enterprise license is required to use the CameraReg
 ```swift
 final class CameraRegionProvider
 ```
+
+#### Overview
+
+An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the [`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow) entitlement.
 
 ## Topics
 
@@ -53,7 +57,7 @@ final class CameraRegionProvider
 ## See Also
 
 - [struct CameraRegionAnchor](cameraregionanchor.md)
-  Represents a region in space to capture a camera stream of.
+  Represents a region in space for capturing a camera stream.
 
 
 ---

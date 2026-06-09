@@ -28,7 +28,7 @@ Get a list of deliveries for a specific webhook configuration.
 
 ## See Also
 
-- [GET /v1/webhooks/{id}/relationships/deliveries](get-v1-webhooks-_id_-relationships-deliveries.md)
+- [List delivery IDs for a webhook](get-v1-webhooks-_id_-relationships-deliveries.md)
 - [Redeliver a Previous Notification](post-v1-webhookdeliveries.md)
   Resend a webhook notification from a specified template.
 

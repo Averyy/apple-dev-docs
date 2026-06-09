@@ -18,6 +18,7 @@ object GameCenterLeaderboardSetImageUpdateRequest
 
 ### Objects
 - [object GameCenterLeaderboardSetImageUpdateRequest.Data](gamecenterleaderboardsetimageupdaterequest/data-data.dictionary.md)
+  The request body you use to update a leaderboard.
 
 ## Properties
 
@@ -38,7 +39,7 @@ object GameCenterLeaderboardSetImageUpdateRequest
 - [object GameCenterLeaderboardSetImageCreateRequest](gamecenterleaderboardsetimagecreaterequest.md)
   The request body you use to create a leaderboard set image.
 - [object GameCenterLeaderboardSetImageResponse](gamecenterleaderboardsetimageresponse.md)
-  A response that contains a single leaderboard set image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard set image.
 
 
 ---

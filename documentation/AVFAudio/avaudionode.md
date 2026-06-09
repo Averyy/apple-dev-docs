@@ -47,6 +47,8 @@ A bus contains a format the framework expresses in terms of sample rate and chan
 - [var numberOfOutputs: Int](avaudionode/numberofoutputs.md)
   The number of output busses for the node.
 ### Installing and Removing an Audio Tap
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+  Install a tap on a bus using a sendable block
 - [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
 - [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)
@@ -60,7 +62,9 @@ A bus contains a format the framework expresses in terms of sample rate and chan
 - [var lastRenderTime: AVAudioTime?](avaudionode/lastrendertime.md)
   The most recent render time.
 ### Getting Audio Node Properties
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit.md)
+- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
+  Provides scoped access to the node’s AUAudioUnit
+- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
 - [var latency: TimeInterval](avaudionode/latency.md)
   The processing latency of the node, in seconds.
@@ -92,6 +96,8 @@ A bus contains a format the framework expresses in terms of sample rate and chan
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

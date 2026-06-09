@@ -18,7 +18,7 @@ Creates a progress view for showing continuous progress as time passes, with a d
 
 ```swift
 nonisolated
-init(timerInterval: ClosedRange<Date>, countsDown: Bool = true, @ViewBuilder label: () -> Label)
+init(timerInterval: ClosedRange<Date>, countsDown: Bool = true, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion
@@ -31,7 +31,7 @@ struct ContentView: View {
     let end = Date().addingTimeInterval(90)
 
     var body: some View {
-        ProgressView(interval: start...end,
+        ProgressView(timerInterval: start...end,
                      countsDown: false) {
             Text("Progress")
          }

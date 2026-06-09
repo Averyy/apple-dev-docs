@@ -13,26 +13,28 @@ To update your app’s categories, use the [`App Infos`](app-infos.md) resource.
 ## Topics
 
 ### Listing Categories and Subcategories
-- [List App Categories](get-v1-appcategories.md)
+- [List app categories](get-v1-appcategories.md)
   List all categories on the App Store, including the category and subcategory hierarchy.
-- [List All Subcategories for an App Category](get-v1-appcategories-_id_-subcategories.md)
+- [List all subcategories for an app category](get-v1-appcategories-_id_-subcategories.md)
   List all App Store subcategories that belong to a specific category.
-- [GET /v1/appCategories/{id}/relationships/subcategories](get-v1-appcategories-_id_-relationships-subcategories.md)
+- [List subcategory IDs for an app category](get-v1-appcategories-_id_-relationships-subcategories.md)
 ### Reading App Category Information
-- [Read App Category Information](get-v1-appcategories-_id_.md)
+- [Read app category information](get-v1-appcategories-_id_.md)
   Get a specific app category.
-- [Read the Parent Information of an App Category](get-v1-appcategories-_id_-parent.md)
+- [Read the parent information of an app category](get-v1-appcategories-_id_-parent.md)
   Get the App Store category to which a specific subcategory belongs.
-- [GET /v1/appCategories/{id}/relationships/parent](get-v1-appcategories-_id_-relationships-parent.md)
+- [Get the parent category ID for an app category](get-v1-appcategories-_id_-relationships-parent.md)
 ### Objects
 - [object AppCategoriesResponse](appcategoriesresponse.md)
-  A response that contains a list of App Category resources.
+  The response body for endpoints that list App Store categories.
 - [object AppCategory](appcategory.md)
   The data structure that represent an App Categories resource.
 - [object AppCategoryResponse](appcategoryresponse.md)
-  A response that contains a single App Categories resource.
+  The response body for endpoints that read a single App Store category.
 - [object AppCategoriesWithoutIncludesResponse](appcategorieswithoutincludesresponse.md)
+  A response containing a list of App Store categories, without including subcategory resources.
 - [object AppCategoryWithoutIncludesResponse](appcategorywithoutincludesresponse.md)
+  A response containing a single App Store category, without including subcategory resources.
 - [object AppInfoPrimaryCategoryLinkageResponse](appinfoprimarycategorylinkageresponse.md)
 - [object AppInfoPrimarySubcategoryOneLinkageResponse](appinfoprimarysubcategoryonelinkageresponse.md)
 - [object AppInfoPrimarySubcategoryTwoLinkageResponse](appinfoprimarysubcategorytwolinkageresponse.md)

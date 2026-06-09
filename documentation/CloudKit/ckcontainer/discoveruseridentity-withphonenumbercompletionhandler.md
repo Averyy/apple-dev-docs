@@ -17,7 +17,7 @@ Fetches the user identity for the specified phone number.
 ## Declaration
 
 ```swift
-func userIdentity(forPhoneNumber phoneNumber: String) async throws -> CKUserIdentity?
+func discoverUserIdentity(withPhoneNumber phoneNumber: String, completionHandler: @escaping @Sendable (CKUserIdentity?, (any Error)?) -> Void)
 ```
 
 #### Discussion

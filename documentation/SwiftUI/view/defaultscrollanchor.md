@@ -25,7 +25,7 @@ func defaultScrollAnchor(_ anchor: UnitPoint?) -> some View
 
 Use this modifier to specify an anchor to control both which part of the scroll view’s content should be visible initially and how the scroll view handles content size changes.
 
-Provide a value of `UnitPoint/center`` to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
+Provide a value of [`center`](unitpoint/center.md) to have the scroll view start in the center of its content when a scroll view is scrollable in both axes.
 
 ```swift
 ScrollView([.horizontal, .vertical]) {
@@ -34,7 +34,7 @@ ScrollView([.horizontal, .vertical]) {
 .defaultScrollAnchor(.center)
 ```
 
-Provide a value of `UnitPoint/bottom` to have the scroll view start at the bottom of its content when scrollable in the vertical axis.
+Provide a value of [`bottom`](unitpoint/bottom.md) to have the scroll view start at the bottom of its content when scrollable in the vertical axis.
 
 ```swift
 @Binding var items: [Item]

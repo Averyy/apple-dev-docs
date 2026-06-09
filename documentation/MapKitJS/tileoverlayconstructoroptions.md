@@ -28,10 +28,12 @@ interface TileOverlayConstructorOptions
 
 ## See Also
 
-- [new TileOverlay(urlTemplate, options)](tileoverlay/tileoverlayconstructor.md)
-  Creates a tile overlay with a URL template and style options.
+- [new TileOverlay(imageForTile, options)](tileoverlay/tileoverlayconstructor.md)
+  Creates a tile overlay with a URL template or image callback and style options.
 - [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
+- [type TileOverlayImageCallback](tileoverlayimagecallback.md)
+  A callback function that provides tile images for a tile overlay.
 
 
 ---

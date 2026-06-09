@@ -30,10 +30,6 @@ You must set this property before calling the workout builder’s [`beginCollect
 
 ## See Also
 
-- [var delegate: (any HKLiveWorkoutBuilderDelegate)?](hkliveworkoutbuilder/delegate.md)
-  The live builder’s delegate.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
-  A protocol for monitoring live workout builders.
 - [var currentWorkoutActivity: HKWorkoutActivity?](hkliveworkoutbuilder/currentworkoutactivity.md)
   The current workout activity.
 

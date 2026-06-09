@@ -12,7 +12,7 @@ Creates a preview of a SwiftUI view in a window.
 
 ```swift
 @freestanding
-(declaration) macro Preview<Style>(_ name: String? = nil, windowStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ViewBuilder body: @escaping @MainActor () -> any View) where Style : WindowStyle
+(declaration) macro Preview<Style>(_ name: String? = nil, windowStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View) where Style : WindowStyle
 ```
 
 #### Overview
@@ -34,7 +34,7 @@ Other preview macros provide different customization options. For example, if yo
 - `name`: An optional display name for the preview. If you don’t specify a name, the canvas labels the preview using the line number where the preview appears in source.
 - `windowStyle`: The [`WindowStyle`](windowstyle.md) to use for the preview. Use this input to display the view as if it appears in a window that has the specified style.
 - `traits`: An optional list of [`PreviewTrait`](https://developer.apple.com/documentation/DeveloperToolsSupport/PreviewTrait) instances that customize the appearance of the preview.
-- `body`: A [`ViewBuilder`](viewbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
+- `body`: A [`ContentBuilder`](contentbuilder.md) that produces a SwiftUI view to preview. You typically specify one of your app’s custom views and optionally any inputs, model data, modifiers, and enclosing views that the custom view needs for normal operation.
 
 ## See Also
 

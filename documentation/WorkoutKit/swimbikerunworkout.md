@@ -32,17 +32,6 @@ struct SwimBikeRunWorkout
   An ordered list of activities for the multisport workout.
 - [var displayName: String?](swimbikerunworkout/displayname.md)
   The name that the system uses when displaying the workout.
-### Comparing workouts
-- [var hashValue: Int](swimbikerunworkout/hashvalue.md)
-  The hashed value of the workout.
-- [func hash(into: inout Hasher)](swimbikerunworkout/hash(into:).md)
-  Hashes the essential components of the workout by feeding them into the given hash function.
-- [static func == (SwimBikeRunWorkout, SwimBikeRunWorkout) -> Bool](swimbikerunworkout/==(_:_:).md)
-  Returns a Boolean value that indicates whether two workouts aren’t equal.
-- [static func != (Self, Self) -> Bool](swimbikerunworkout/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two workouts are equal.
-### Default Implementations
-- [Equatable Implementations](swimbikerunworkout/equatable-implementations.md)
 
 ## Relationships
 

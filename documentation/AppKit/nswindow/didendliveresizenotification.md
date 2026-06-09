@@ -20,6 +20,8 @@ The system sends this only once for a series of window resize operations.
 
 The notification object is the `NSWindow` object that changed size. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidEndLiveResizeMessage`](nswindow/didendliveresizemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

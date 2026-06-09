@@ -8,6 +8,7 @@ The amount by which the account is overdue for the current period.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

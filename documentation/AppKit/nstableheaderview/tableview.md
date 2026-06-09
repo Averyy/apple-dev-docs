@@ -20,7 +20,8 @@ You should never need to set this property; it’s assigned automatically when y
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
+- [class NSTableView](nstableview.md)
+  A set of related records, displayed in rows that represent individual records and columns that represent the attributes of those records.
 - [var headerView: NSTableHeaderView?](nstableview/headerview.md)
   The view object used to draw headers over columns.
 

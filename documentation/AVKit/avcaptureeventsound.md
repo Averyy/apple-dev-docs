@@ -61,6 +61,8 @@ class AVCaptureEventSound
   An object that describes a user interaction with a system hardware button.
 - [class AVInputPickerInteraction](avinputpickerinteraction.md)
   Use `AVInputPickerInteraction` to present an input picker.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

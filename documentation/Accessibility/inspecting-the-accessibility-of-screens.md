@@ -12,7 +12,7 @@ To open Accessibility Inspector, open Xcode and choose Xcode > Open Developer To
 
 ##### Target Your App
 
-In Accessibility Inspector, the target menu displays a list of connected devices and apps you can inspect. By default, it displays apps running on your Mac. If you’re developing a macOS app, pick your app from the list of running apps. If you’re developing for iOS, iPadOS, watchOS, or tvOS, select the name of the device on which the app is running, then pick the app from the processes menu. For information about targeting the correct device, see [`Running your app in Simulator or on a device`](https://developer.apple.com/documentation/Xcode/running-your-app-in-simulator-or-on-a-device).
+In Accessibility Inspector, the target menu displays a list of connected devices and apps you can inspect. By default, it displays apps running on your Mac. If you’re developing a macOS app, pick your app from the list of running apps. If you’re developing for iOS, iPadOS, watchOS, or tvOS, select the name of the device on which the app is running, then pick the app from the processes menu. For information about targeting the correct device, see [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices).
 
 > **Note**: Accessibility Inspector targets the current foreground app by default.
 

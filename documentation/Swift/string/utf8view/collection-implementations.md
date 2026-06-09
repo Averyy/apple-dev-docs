@@ -73,7 +73,7 @@
 - [func suffix(from: Self.Index) -> Self.SubSequence](string/utf8view/suffix(from:).md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/utf8view/subscript(_:)-227fo.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/utf8view/subscript(_:)-227fo.md)
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](string/utf8view/subscript(_:)-25vyw.md)
   Accesses a view of this collection with the elements at the given indices.
 - [subscript<R>(R) -> Self.SubSequence](string/utf8view/subscript(_:)-3gfsv.md)

@@ -27,11 +27,11 @@ object CiBuildRunCreateRequest
 ## See Also
 
 - [object CiBuildRun](cibuildrun.md)
-  The data structure that represents a Build Runs resource.
+  A single execution of an Xcode Cloud workflow, capturing the trigger, commit, status, and artifacts produced.
 - [object CiBuildRunResponse](cibuildrunresponse.md)
-  A response that contains a single Build Runs resource.
+  The response body for endpoints that start or read a single Xcode Cloud build run.
 - [object CiBuildActionsResponse](cibuildactionsresponse.md)
-  A response that contains a list of Build Actions resources.
+  The response body for endpoints that list actions for an Xcode Cloud build run.
 - [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
 - [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
 

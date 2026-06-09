@@ -20,6 +20,8 @@ var carrierFrequencyOffset: Double { get }
 
 - [var measurementType: NIDLTDOAMeasurementType](nidltdoameasurement/measurementtype.md)
   The type of anchor message that the measurement derives from.
+- [var responderClockFrequencyOffset: Double?](nidltdoameasurement/responderclockfrequencyoffset-8wu5r.md)
+  The clock frequency offset of the responder anchor relative to the initiator anchor.
 
 
 ---

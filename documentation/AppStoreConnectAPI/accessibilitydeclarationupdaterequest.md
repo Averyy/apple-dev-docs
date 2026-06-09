@@ -27,13 +27,13 @@ object AccessibilityDeclarationUpdateRequest
 ## See Also
 
 - [object AccessibilityDeclaration](accessibilitydeclaration.md)
-  The data structure that represents an accessibility declarations resource.
+  An app’s self-reported accessibility features and conformance information submitted for App Store review.
 - [object AccessibilityDeclarationsResponse](accessibilitydeclarationsresponse.md)
-  A response that contains a list of accessibility declaration resources.
+  A response containing a list of accessibility declarations.
 - [object AccessibilityDeclarationCreateRequest](accessibilitydeclarationcreaterequest.md)
   The request body you use to create an accessibility declaration for an app.
 - [object AccessibilityDeclarationResponse](accessibilitydeclarationresponse.md)
-  A response that contains a single accessibility declaration resource.
+  A response containing a single accessibility declaration for an app.
 - [object AppAccessibilityDeclarationsLinkagesResponse](appaccessibilitydeclarationslinkagesresponse.md)
 - [type DeviceFamily](devicefamily.md)
   String that represents a device family.

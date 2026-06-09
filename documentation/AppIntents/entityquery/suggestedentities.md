@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Returns the initial results shown when a list of options backed by this query is presented.
+Returns the initial results to display when the system presents options backed by this query.
 
 **Availability**:
 - iOS 16.0+
@@ -20,10 +20,6 @@ Returns the initial results shown when a list of options backed by this query is
 ```swift
 func suggestedEntities() async throws -> Self.Result
 ```
-
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
 
 
 ---

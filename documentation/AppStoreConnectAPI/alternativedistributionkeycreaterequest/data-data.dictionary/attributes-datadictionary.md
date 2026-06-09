@@ -21,6 +21,7 @@ object AlternativeDistributionKeyCreateRequest.Data.Attributes
 ## See Also
 
 - [object AlternativeDistributionKeyCreateRequest.Data.Relationships](alternativedistributionkeycreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

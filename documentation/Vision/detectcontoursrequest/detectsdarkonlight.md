@@ -12,6 +12,7 @@ A Boolean value that indicates whether the request detects a dark object on a li
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

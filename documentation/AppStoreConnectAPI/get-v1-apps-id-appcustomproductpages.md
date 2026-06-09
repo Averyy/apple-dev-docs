@@ -82,29 +82,30 @@ https://api.appstoreconnect.apple.com/v1/apps/01234/appCustomProductPages
 
 ## Parameters
 
-- `fields[appCustomProductPageVersions]` ([string]): Fields to return for included related types.
-- `fields[appCustomProductPages]` ([string]): Fields to return for included related types.
-- `filter[visible]` ([string]): Fields to return for included related types.
+- `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
+- `fields[appCustomProductPages]` ([string]): Additional fields to include for each app custom product page resource returned by the response.
+- `filter[visible]` ([string]): Filter the returned app custom product pages by visible.
 - `include` ([string]): The relationship data to include in the response.
-- `limit` (integer): Number of resources to return.
-- `limit[appCustomProductPageVersions]` (integer): Number of resources to return.
-- `fields[apps]` ([string]): Fields to return for included related types.
+- `limit` (integer): The maximum number of app custom product page resources to return.
+- `limit[appCustomProductPageVersions]` (integer): The maximum number of related app custom product page versions resources to return.
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
 
 ## See Also
 
-- [List All App Infos for an App](get-v1-apps-_id_-appinfos.md)
+- [List all app infos for an app](get-v1-apps-_id_-appinfos.md)
   Get information about an app that is currently live on App Store, or that goes live with the next version.
-- [GET /v1/apps/{id}/relationships/appInfos](get-v1-apps-_id_-relationships-appinfos.md)
-- [List All App Store Versions for an App](get-v1-apps-_id_-appstoreversions.md)
+- [List app info IDs for an app](get-v1-apps-_id_-relationships-appinfos.md)
+- [List all app store versions for an app](get-v1-apps-_id_-appstoreversions.md)
   Get a list of all App Store versions of an app across all platforms.
-- [GET /v1/apps/{id}/relationships/appStoreVersions](get-v1-apps-_id_-relationships-appstoreversions.md)
-- [Read the End User License Agreement Information of an App](get-v1-apps-_id_-enduserlicenseagreement.md)
+- [List App Store version IDs for an app](get-v1-apps-_id_-relationships-appstoreversions.md)
+- [Read the end user license agreement information of an app](get-v1-apps-_id_-enduserlicenseagreement.md)
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
-- [GET /v1/apps/{id}/relationships/endUserLicenseAgreement](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
-- [Get All Custom Product Page Resource IDs for an App](get-v1-apps-_id_-relationships-appcustomproductpages.md)
+- [Get the end user license agreement ID for an app](get-v1-apps-_id_-relationships-enduserlicenseagreement.md)
+- [Get all custom product page resource ids for an app](get-v1-apps-_id_-relationships-appcustomproductpages.md)
   Get a list of custom product page resource IDs associated with an app.
-- [GET /v1/apps/{id}/appStoreVersionExperimentsV2](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
-- [GET /v1/apps/{id}/relationships/appStoreVersionExperimentsV2](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List all app store experiments for an app](get-v1-apps-_id_-appstoreversionexperimentsv2.md)
+  Get a list of all App Store version experiments for a specific app.
+- [List App Store version experiment IDs for an app](get-v1-apps-_id_-relationships-appstoreversionexperimentsv2.md)
 
 
 ---

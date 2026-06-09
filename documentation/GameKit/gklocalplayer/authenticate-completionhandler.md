@@ -6,6 +6,9 @@
 Initializes the local player on the device.
 
 **Availability**:
+- iOS 4.1+
+- iPadOS 4.1+
+- Mac Catalyst 4.1+
 - visionOS 1.0+
 - watchOS 2.0+
 

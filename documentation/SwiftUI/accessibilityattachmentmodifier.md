@@ -17,6 +17,7 @@ A view modifier that adds accessibility properties to the view
 ## Declaration
 
 ```swift
+nonisolated
 struct AccessibilityAttachmentModifier
 ```
 

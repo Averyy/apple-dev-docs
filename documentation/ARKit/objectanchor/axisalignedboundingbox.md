@@ -25,6 +25,9 @@ struct AxisAlignedBoundingBox
   The maximum coordinates for the bounding box.
 - [var min: SIMD3<Float>](objectanchor/axisalignedboundingbox/min.md)
   Minimum coordinates for the bounding box.
+### Operators
+- [static func == (ObjectAnchor.AxisAlignedBoundingBox, ObjectAnchor.AxisAlignedBoundingBox) -> Bool](objectanchor/axisalignedboundingbox/==(_:_:).md)
+  Returns a Boolean value indicating whether two axis-aligned bounding boxes are equal.
 
 ## Relationships
 

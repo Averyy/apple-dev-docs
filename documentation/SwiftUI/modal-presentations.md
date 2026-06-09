@@ -82,12 +82,20 @@ For design guidance, see [`Modality`](https://developer.apple.com/design/Human-I
   Presents an alert when a given condition is true, using a text view for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
+  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+  Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
   Presents an alert with a message when a given condition is true using a text view as a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+  Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.
 ### Getting confirmation for an action
@@ -120,33 +128,37 @@ For design guidance, see [`Modality`](https://developer.apple.com/design/Human-I
   Enables user suppression of dialogs and alerts presented within `self`, with a custom suppression message on macOS. Unused on other platforms.
 - [func dialogSuppressionToggle(_:isSuppressed:)](scene/dialogsuppressiontoggle(_:issuppressed:).md)
   Enables user suppression of an alert with a custom suppression message.
+- [func dialogPreventsAppTermination(Bool?) -> some View](view/dialogpreventsapptermination(_:).md)
+  Whether the alert or confirmation dialog prevents the app from being quit/terminated by the system or app termination menu item.
 ### Exporting to file
 - [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
-  Presents a system interface for exporting a document that’s stored in a value type, like a structure, to a file on disk.
+  Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
 - [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
-  Presents a system interface for exporting a collection of value type documents to files on disk.
+  Presents a system dialog for exporting a collection of value type documents to files on disk.
+- [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType?, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: (() -> Void)?) -> some View](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:oncancellation:).md)
+  Presents a system dialog for allowing the user to export a `WritableDocument` to a file on disk.
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface for allowing the user to export a `FileDocument` to a file on disk.
+  Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a `Transferable` item to file on disk.
+  Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a collection of items to files on disk.
+  Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 ### Importing from file
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
-  Presents a system interface for allowing the user to import multiple files.
+  Presents a system dialog for allowing the user to import multiple files.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:oncompletion:).md)
-  Presents a system interface for allowing the user to import an existing file.
+  Presents a system dialog for allowing the user to import an existing file.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to import multiple files.
 ### Moving a file
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/filemover(ispresented:file:oncompletion:).md)
-  Presents a system interface for allowing the user to move an existing file to a new location.
+  Presents a system dialog for allowing the user to move an existing file to a new location.
 - [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/filemover(ispresented:files:oncompletion:).md)
-  Presents a system interface for allowing the user to move a collection of existing files to a new location.
+  Presents a system dialog for allowing the user to move a collection of existing files to a new location.
 - [func fileMover(isPresented: Binding<Bool>, file: URL?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:file:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to move an existing file to a new location.
 - [func fileMover<C>(isPresented: Binding<Bool>, files: C, onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/filemover(ispresented:files:oncompletion:oncancellation:).md)

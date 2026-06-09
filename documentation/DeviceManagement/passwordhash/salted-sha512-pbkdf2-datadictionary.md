@@ -7,8 +7,6 @@ A dictionary that contains the elements to create the password hash.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

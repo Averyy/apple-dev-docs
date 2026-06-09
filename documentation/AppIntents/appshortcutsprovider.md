@@ -22,7 +22,7 @@ protocol AppShortcutsProvider : Sendable
 
 ## Mentions
 
-- [Creating your first app intent](creating-your-first-app-intent.md)
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 
 #### Overview
 

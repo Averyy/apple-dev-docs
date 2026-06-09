@@ -1,8 +1,8 @@
-# Subscribing to Notifications
+# Subscribing to notifications
 
 **Framework**: Device Management
 
-Listen to notifications to keep track of the latest events for an organization.
+Monitor events for assets, assignments, and users in your organization.
 
 #### Overview
 
@@ -35,9 +35,13 @@ Notifications resemble the following:
 }
 ```
 
-The server delivers notifications on a best-effort basis. The server attempts to deliver them 3 times within 1-5 minute(s) and without intervals. An HTTP 2xx response status from an MDM server indicates a successful notification delivery.
+The server delivers notifications on a best-effort basis. The server attempts delivery up to three times over 1–5 minutes. An HTTP 2xx response status from an MDM server indicates a successful notification delivery.
 
-Notifications require a URL and an authentication token. The URL must use the HTTPS protocol, and the authentication token is in a [`bearer token format`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6750). See the [`ClientConfigRequest`](clientconfigrequest.md) for more details about these parameters.
+There is a limit of 100 elements in the notification. Any request for more than 100 discrete tasks results in multiple notifications. For example, an assignment request for one `adamId` to 150 users results in at least two notifications.
+
+If your MDM server doesn’t receive a notification for an event within 5 minutes, check the event status using the [`Event Status`](events-status.md) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server.
+
+Notifications require an HTTPS URL and an authentication token. The authentication token is in a [`bearer token format`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6750). See the [`ClientConfigRequest`](clientconfigrequest.md) for more details about these parameters.
 
 > ❗ **Important**:  The server sends a test notification of type TEST_NOTIFICATION when configuring notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
 
@@ -75,7 +79,39 @@ The notifications have the following format:
 }
 ```
 
-The `adamId` and `pricingParam` pair represent the [`Asset`](asset.md) with the count that is changing, and the `countDelta` represents the amount that the count is changing by. The amount can be a positive or a negative number depending on whether the count is increasing or decreasing.
+The `adamId` and `pricingParam` pair represents the [`Asset`](asset.md) with the count that’s changing, and the `countDelta` represents the change amount. A positive `countDelta` indicates an increase; a negative value indicates a decrease.
+
+##### Update Subscription Counts
+
+Update subscription seat counts upon receiving a `SUBSCRIPTION_COUNT` notification type that the server sends when subscription inventory changes — for example, when a content manager purchases additional seats, when seats expire at the end of a billing period, or when renewing seats auto-renew.
+
+> **Note**:  Subscription notifications represent `adamId` and `parentAdamId` as integers, and asset notifications represent `adamId` as a string. Match the type your notification endpoint expects for each family.
+
+The notifications have the following format:
+
+```javascript
+{
+    "notification": {
+        "parentAdamId": 54321,
+        "adamId": 12345,
+        "counts": {
+            "available": {
+                "renewing": 15,
+                "expiring": 5
+            },
+            "total": {
+                "renewing": 100,
+                "expiring": 20
+            }
+        }
+    },
+    "notificationId": "4a7801be-53f0-42e1-9505-81c0d1dc9da3",
+    "notificationType": "SUBSCRIPTION_COUNT",
+    "uId": "2049025000431439"
+}
+```
+
+The notification uses a subset of the [`SubscriptionCounts`](subscriptioncounts.md) schema: the `counts` object contains only `available` and `total`. It omits `assigned`, which is only present in the synchronous `GET /v2/subscriptions` response. Use `total` to track actual seat ownership and `available` to track unassigned capacity.
 
 ##### Track Assignments
 
@@ -138,7 +174,7 @@ The assignment notifications for disassociations have the following format:
 
 The assignment notifications for revoke calls have the following format:
 
-```swift
+```javascript
 {
     "notification": {
         "assignments": [
@@ -164,6 +200,56 @@ The assignment notifications for revoke calls have the following format:
 }
 
 ```
+
+##### Track Subscription Assignments
+
+Track subscription assignments upon receiving a `SUBSCRIPTION_MANAGEMENT` notification type that the server sends when it associates or disassociates a subscription. The body of the notification contains a list of [`ResponseSubscriptionAssignment`](responsesubscriptionassignment.md) objects, each with a `renewing` Boolean value that reflects the renewal state of the seat assigned to that user.
+
+The subscription assignment notifications for associations have the following format:
+
+```javascript
+{
+    "notification": {
+        "assignments": [
+            {
+                "adamId": 12345,
+                "clientUserId": "vpp-user",
+                "renewing": true
+            }
+        ],
+        "eventId": "c3f990d3-d8c5-41c6-8394-edb1f759a9d2",
+        "result": "SUCCESS",
+        "type": "ASSOCIATE"
+    },
+    "notificationId": "7b3c92a1-4e5f-4d8a-b6c7-9e1f2a3b4c5d",
+    "notificationType": "SUBSCRIPTION_MANAGEMENT",
+    "uId": "2049025000431439"
+}
+```
+
+The subscription assignment notifications for disassociations have the following format:
+
+```javascript
+{
+    "notification": {
+        "assignments": [
+            {
+                "adamId": 12345,
+                "clientUserId": "vpp-user",
+                "renewing": true
+            }
+        ],
+        "eventId": "d4ea01e4-e9d6-52d7-9405-f5c2fa6ab0e3",
+        "result": "SUCCESS",
+        "type": "DISASSOCIATE"
+    },
+    "notificationId": "8c4d03b2-5f6e-4e9b-a7d8-0f2e3b4c5d6e",
+    "notificationType": "SUBSCRIPTION_MANAGEMENT",
+    "uId": "2049025000431439"
+}
+```
+
+When you set the `deferred` flag to `true` in a disassociation request, the notification arrives at the end of the current billing period rather than immediately. For more information about renewal state and deferred disassociation, see [`Managing subscriptions`](managing-subscriptions.md).
 
 ##### Track User Events
 
@@ -198,7 +284,7 @@ The notifications for creating a user have the following format:
 
 The notifications for updating a user have the following format:
 
-```swift
+```javascript
 {
     "notification": {
         "eventId": "e0def1f8-9158-4343-9c52-8dd32da50b9b",
@@ -213,7 +299,7 @@ The notifications for updating a user have the following format:
             }
         ]
     },
-    "notificationId": "4c0bbb9b-d5a6-4860-83ef-5cf362783c1e",
+    "notificationId": "5d1ccc7c-e6b7-5971-94fa-6df473894c2f",
     "notificationType": "USER_MANAGEMENT",
     "uId": "2049025000431439"
 }
@@ -222,7 +308,7 @@ The notifications for updating a user have the following format:
 
 The notifications for retiring a user have the following format:
 
-```swift
+```javascript
 {
     "notification": {
         "eventId": "e0def1f8-9158-4343-9c52-8dd32da50b9b",
@@ -237,7 +323,7 @@ The notifications for retiring a user have the following format:
             }
         ]
     },
-    "notificationId": "4c0bbb9b-d5a6-4860-83ef-5cf362783c1e",
+    "notificationId": "6e2ddd8d-f7c8-6a82-a50b-7ef584a05d40",
     "notificationType": "USER_MANAGEMENT",
     "uId": "2049025000431439"
 }
@@ -246,7 +332,7 @@ The notifications for retiring a user have the following format:
 
 ##### Track User Associations
 
-Track users upon receiving a USER_ASSOCIATED notification type that the server sends when a user accepts an invite.
+Track users upon receiving a USER_ASSOCIATED notification type that the server sends when a user accepts an invitation.
 
 The notifications have the following format:
 
@@ -269,22 +355,14 @@ The notifications have the following format:
 }
 ```
 
+> ❗ **Important**: Notifications are best-effort and shouldn’t be the sole mechanism for confirming request completion. Always pair notification handling with Events Status polling using the `eventId` from the original request.
+
 ## See Also
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-  Associate app and book purchases with users or devices.
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-  Manage devices and content across your organization using the new API version.
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
-- [Managing Assets](managing-assets.md)
-  Retrieve key information to effectively manage assets across an organization’s users and devices.
-- [Managing Users](managing-users.md)
-  Retrieve key information to effectively manage users across an organization.
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-  Manage paginated endpoints to efficiently work with large record sets.
-- [Handling Error Responses](handling-error-responses.md)
-  Investigate service request errors and troubleshoot solutions.
+- [Using paginated endpoints](using-paginated-endpoints.md)
+  Traverse large result sets with page-index and cursor-based pagination.
+- [Handling error responses](handling-error-responses.md)
+  Investigate and resolve service request errors.
 
 
 ---

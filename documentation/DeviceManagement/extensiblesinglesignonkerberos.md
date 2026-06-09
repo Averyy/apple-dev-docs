@@ -11,8 +11,6 @@ The payload that configures an app extension that performs single sign-on with t
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,8 +32,8 @@ The system supports user channel installation in macOS 11 and later.
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
 | User channel | macOS, Shared iPad |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |

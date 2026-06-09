@@ -17,6 +17,7 @@ The style that strokes the border of this view’s shape.
 ## Declaration
 
 ```swift
+nonisolated
 var style: Style { get set }
 ```
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-subscript(bounds: (UnboundedRange_) -> ()) -> CMBlockBuffer.Slice { get }
+subscript(bounds: UnboundedRange) -> CMBlockBuffer.Slice { get }
 ```
 
 ## See Also

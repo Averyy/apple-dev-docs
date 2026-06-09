@@ -63,6 +63,15 @@ The task is created by `Task.immediate`. Its action begins execution synchronous
 - `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default. This value is a no-op prior to iOS 26.4, macOS 26.4, watchOS 26.4, tvOS 26.4, and visionOS 26.4.
 - `action`: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI will automatically cancel the task at some point after the view disappears before the action completes.
 
+## See Also
+
+- [func task<T>(id: T, name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:executorpreference:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+  Adds an asynchronous task to perform before this view appears.
+
 
 ---
 

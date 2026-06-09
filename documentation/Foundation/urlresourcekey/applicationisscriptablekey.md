@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+`true` if the resource is scriptable. Only applies to applications (Read-only, value type boolean `NSNumber`).
+
 **Availability**:
 - macOS 10.11+
 
@@ -15,6 +17,7 @@ static let applicationIsScriptableKey: URLResourceKey
 ## See Also
 
 - [static let isApplicationKey: URLResourceKey](urlresourcekey/isapplicationkey.md)
+  `true` if resource is an application (Read-only, value type boolean `NSNumber`).
 
 
 ---

@@ -8,7 +8,9 @@ A type that represents the unwrapped value of a semantic content descriptor.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 
@@ -18,7 +20,7 @@ typealias UnwrappedType = SemanticContentDescriptor
 
 #### Discussion
 
-This type defines the underlying type that the system uses when unwrapping a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance. It’s part of App Intents’ internal type system for handling visual intelligence data.
+This type defines the underlying type that the system uses when unwrapping a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance. It’s part of the internal type system in App Intents for handling visual intelligence data.
 
 ## See Also
 

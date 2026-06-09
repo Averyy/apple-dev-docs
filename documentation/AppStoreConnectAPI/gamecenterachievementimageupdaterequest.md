@@ -18,6 +18,7 @@ object GameCenterAchievementImageUpdateRequest
 
 ### Objects
 - [object GameCenterAchievementImageUpdateRequest.Data](gamecenterachievementimageupdaterequest/data-data.dictionary.md)
+  The request body you use to update a achievement.
 
 ## Properties
 
@@ -38,7 +39,7 @@ object GameCenterAchievementImageUpdateRequest
 - [object GameCenterAchievementImageCreateRequest](gamecenterachievementimagecreaterequest.md)
   The request body you use to create an achievement image.
 - [object GameCenterAchievementImageResponse](gamecenterachievementimageresponse.md)
-  A response that contains a single achievement image resource.
+  The response body for endpoints that create, read, or modify a single Game Center achievement image.
 
 
 ---

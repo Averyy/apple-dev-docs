@@ -16,6 +16,7 @@ A control for selecting an absolute date.
 ## Declaration
 
 ```swift
+nonisolated
 struct DatePicker<Label> where Label : View
 ```
 

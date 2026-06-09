@@ -28,6 +28,8 @@ var supportsDirectionMeasurement: Bool { get }
   A Boolean value that indicates whether this device supports extended distance measurement.
 - [var supportsDLTDOAMeasurement: Bool](nidevicecapability/supportsdltdoameasurement.md)
   A property that indicates if the device supports Downlink Time-Difference-of-Arrival ranging.
+- [var supportsBluetoothChannelSounding: Bool](nidevicecapability/supportsbluetoothchannelsounding.md)
+  A Boolean value that indicates whether the device supports distance measurements over a Bluetooth connection.
 
 
 ---

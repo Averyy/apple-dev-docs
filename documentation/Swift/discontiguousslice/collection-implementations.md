@@ -94,7 +94,7 @@
 ### Subscripts
 - [subscript(Range<DiscontiguousSlice<Base>.Index>) -> DiscontiguousSlice<Base>](discontiguousslice/subscript(_:)-1ra8t.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](discontiguousslice/subscript(_:)-1ytel.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](discontiguousslice/subscript(_:)-1ytel.md)
 - [subscript(DiscontiguousSlice<Base>.Index) -> Base.Element](discontiguousslice/subscript(_:)-8h9i0.md)
   Accesses the element at the specified position.
 ### Type Aliases

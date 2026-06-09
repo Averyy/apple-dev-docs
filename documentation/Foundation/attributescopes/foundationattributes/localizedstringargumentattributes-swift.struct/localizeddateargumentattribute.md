@@ -21,6 +21,12 @@ A type for a date argument used to format the run with this attribute.
 enum LocalizedDateArgumentAttribute
 ```
 
+## Topics
+
+### Inspecting attributed string key properties
+- [static let name: String](attributescopes/foundationattributes/localizedstringargumentattributes-swift.struct/localizeddateargumentattribute/name.md)
+  The name of the attribute.
+
 ## Relationships
 
 ### Conforms To

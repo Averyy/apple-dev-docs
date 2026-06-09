@@ -17,6 +17,7 @@ A button style that applies standard border prominent artwork based on the butto
 ## Declaration
 
 ```swift
+nonisolated
 struct BorderedProminentButtonStyle
 ```
 

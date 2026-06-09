@@ -65,6 +65,11 @@ A movie file output provides a complete file recording interface for writing med
   The camera switching behavior to use for recording.
 - [var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: AVCaptureDevice.PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions](avcapturemoviefileoutput/primaryconstituentdevicerestrictedswitchingbehaviorconditionsforrecording.md)
   The conditions during which camera switching may occur while recording.
+### Instance Properties
+- [var isProVideoStorageSupported: Bool](avcapturemoviefileoutput/isprovideostoragesupported.md)
+  Whether this movie file output supports writing to Pro Video Storage in its current configuration.
+- [var usesProVideoStorage: Bool](avcapturemoviefileoutput/usesprovideostorage.md)
+  Whether this movie file output is configured to write to Pro Video Storage.
 
 ## Relationships
 

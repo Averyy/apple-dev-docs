@@ -27,9 +27,9 @@ Delete the image asset that appears on the App Store listing that represents an 
 - [Read In-App Purchase Image Information](get-v1-inapppurchaseimages-_id_.md)
   Read details about a specific in-app purchase image.
 - [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
-  List all images for a specific in-app purchase.
-- [Read In-App Purchase Image Information](patch-v1-inapppurchaseimages-_id_.md)
-  Read details about a specific in-app purchase image.
+  The data structure that represents a get-v2-in-app purchases-{id}-images resource.
+- [Commit an image for an in-app purchase](patch-v1-inapppurchaseimages-_id_.md)
+  Commit an uploaded image asset for an in-app purchase.
 
 
 ---

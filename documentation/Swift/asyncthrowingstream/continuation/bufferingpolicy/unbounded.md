@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: case
 
-Continue to add to the buffer, treating its capacity as infinite.
+Continue to add to the buffer, without imposing a limit on the number of buffered elements.
 
 **Availability**:
 - iOS 13.0+

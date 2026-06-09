@@ -23,7 +23,7 @@ An `NSSegmentStyle` value that specifies the visual display used by the control.
 - [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
   The type of tracking behavior the control exhibits.
 - [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
-  The following constants specify the type of tracking behavior a segmented control exhibits. They are used by [`trackingMode`](nssegmentedcontrol/trackingmode.md).
+  Constants that specify the type of tracking behavior a segmented control exhibits.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
   The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
 

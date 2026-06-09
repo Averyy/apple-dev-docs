@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a background asset create request resource.
+The data object within a background asset create request, containing the resource type and attributes.
 
 **Availability**:
 - App Store Connect API 4.0+

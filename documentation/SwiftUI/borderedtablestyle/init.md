@@ -11,6 +11,7 @@ Creates a default bordered table style, with alternating row backgrounds.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

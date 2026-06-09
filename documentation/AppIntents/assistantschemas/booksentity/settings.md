@@ -56,16 +56,7 @@ struct BookSettingsEntity: AppEntity {
     var isAllowMultipleColumns: Bool}
 ```
 
-For more information about the `.books` app intent domain, see [`Making ebook actions available to Siri and Apple Intelligence`](making-ebook-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var book: some AssistantSchemas.Entity](assistantschemas/booksentity/book.md)
-  The app entity describes an ebook.
-- [var audiobook: some AssistantSchemas.Entity](assistantschemas/booksentity/audiobook.md)
-  The app entity describes an audiobook.
-- [AssistantSchemas.BooksEntity](assistantschemas/booksentity.md)
-  Assistant schema conformance for app entities that describe ebooks or audiobooks.
+For more information about the `.books` app intent domain, see doc:Making-ebook-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

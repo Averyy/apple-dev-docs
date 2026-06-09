@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Default App Clip Experiences resources.
+The response body for endpoints that list default App Clip experiences.
 
 **Availability**:
 - App Store Connect API 1.6+
@@ -24,11 +24,11 @@ object AppClipDefaultExperiencesResponse
 ## See Also
 
 - [object AppClip](appclip.md)
-  The data structure that represents an App Clips resource.
+  A lightweight version of an app that users can launch instantly without installation, associated with a registered parent app.
 - [object AppClipResponse](appclipresponse.md)
-  A response that contains a single App Clips resource.
+  The response body for endpoints that read an App Clip associated with an app.
 - [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
-  A response that contains a list of Advanced App Clip Experiences resources.
+  A response containing a list of configured App Clip advanced experiences.
 - [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
 - [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
 

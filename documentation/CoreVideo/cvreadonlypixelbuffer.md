@@ -29,6 +29,12 @@ final class CVReadOnlyPixelBuffer
   Initialize a read-only pixel buffer by transferring existing CVPixelBuffer value.
 ### Instance Methods
 - [func withUnsafeBuffer<R>((CVPixelBuffer) throws -> sending R) rethrows -> sending R](cvreadonlypixelbuffer/withunsafebuffer(_:).md)
+### Type Aliases
+- [CVReadOnlyPixelBuffer.Specification](cvreadonlypixelbuffer/specification.md)
+- [CVReadOnlyPixelBuffer.UnwrappedType](cvreadonlypixelbuffer/unwrappedtype.md)
+- [CVReadOnlyPixelBuffer.ValueType](cvreadonlypixelbuffer/valuetype.md)
+### Type Properties
+- [static var defaultResolverSpecification: EmptyResolverSpecification<CVReadOnlyPixelBuffer>](cvreadonlypixelbuffer/defaultresolverspecification.md)
 
 ## Relationships
 
@@ -40,8 +46,26 @@ final class CVReadOnlyPixelBuffer
 - [CVPixelBufferRepresentable](cvpixelbufferrepresentable.md)
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
+- [InferenceValue.ViewRepresentable](../CoreAI/InferenceValue/ViewRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+  CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
+- [struct CVPixelBufferAttributes](cvpixelbufferattributes.md)
+  A partial set of pixel buffer creation attributes. This struct is useful for conveying partial requirements for pixel buffers to clients. This struct makes all properties of `CVPixelBuffer/CreationAttributes` optional.
+- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+  Attributes needed for creating a pixel buffer.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+  Metadata associated with ProRes RAW images.
 
 
 ---

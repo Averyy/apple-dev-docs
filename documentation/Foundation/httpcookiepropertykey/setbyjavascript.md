@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An NSString object indicating that the cookie is set via JavaScript.
+
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
@@ -17,10 +19,6 @@
 ```swift
 static let setByJavaScript: HTTPCookiePropertyKey
 ```
-
-#### Discussion
-
-An NSString object indicating that the cookie is set via JavaScript.
 
 
 ---

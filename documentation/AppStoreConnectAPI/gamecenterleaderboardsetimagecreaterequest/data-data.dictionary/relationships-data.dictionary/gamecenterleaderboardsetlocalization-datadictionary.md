@@ -16,6 +16,7 @@ object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterL
 
 ### Objects
 - [object GameCenterLeaderboardSetImageCreateRequest.Data.Relationships.GameCenterLeaderboardSetLocalization.Data](gamecenterleaderboardsetimagecreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center leaderboard set image.
 
 ## Properties
 

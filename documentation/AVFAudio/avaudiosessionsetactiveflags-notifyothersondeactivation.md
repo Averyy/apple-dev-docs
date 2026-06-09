@@ -6,6 +6,9 @@
 A flag that indicates that when your audio session deactivates, any audio sessions that your audio session interrupted can reactivate themselves.
 
 **Availability**:
+- iOS 4.0+
+- iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.0+
 
 ## Declaration

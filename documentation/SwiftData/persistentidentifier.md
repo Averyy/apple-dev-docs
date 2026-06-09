@@ -35,6 +35,9 @@ struct PersistentIdentifier
   The identifier of the store that contains the associated model.
 - [var entityName: String](persistentidentifier/entityname.md)
   The entity name for the associated model.
+### Instance Properties
+- [var isTemporary: Bool](persistentidentifier/istemporary.md)
+  A Boolean value that indicates whether the identifier is temporary.
 ### Type Methods
 - [static func identifier<T>(for: String, entityName: String, primaryKey: T) throws -> PersistentIdentifier](persistentidentifier/identifier(for:entityname:primarykey:).md)
 

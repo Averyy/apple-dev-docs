@@ -27,9 +27,11 @@ To store a document as a value type — like a structure — create a type that 
 - Loads documents from file in the [`init(configuration:)`](filedocument/init(configuration:).md) initializer.
 - Stores documents to file by serializing their content in the [`fileWrapper(configuration:)`](filedocument/filewrapper(configuration:).md) method.
 
-> ❗ **Important**: If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead.
+> **Note**: The `fileWrapper(configuration:)` method can either serialize the whole document into a single file, or use a document package — a directory `FileWrapper` — to store the document as a collection of files. With a package, you can improve performance by rewriting only the specific files that changed since the last save. For examples, see [`fileWrapper(configuration:)`](filedocument/filewrapper(configuration:).md).
 
 Ensure that types that conform to this protocol are `Sendable`. In particular, SwiftUI calls the protocol’s methods from different isolation domains. Don’t perform serialization and deserialization on `MainActor`.
+
+> ❗ **Important**: If you store your document as a reference type — like a class — use [`ReferenceFileDocument`](referencefiledocument.md) instead.
 
 ## Topics
 

@@ -20,13 +20,6 @@ Produces empty chart content.
 static func buildBlock() -> some ChartContent
 ```
 
-## See Also
-
-- [static func buildPartialBlock<T>(first: T) -> T](chartcontentbuilder/buildpartialblock(first:).md)
-  Builds a partial result from a single, first component.
-- [static func buildPartialBlock(accumulated: some ChartContent, next: some ChartContent) -> some ChartContent](chartcontentbuilder/buildpartialblock(accumulated:next:).md)
-  Builds a partial result by combining an accumulated component and a new component.
-
 
 ---
 

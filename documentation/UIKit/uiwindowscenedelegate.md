@@ -21,6 +21,7 @@ protocol UIWindowSceneDelegate : UISceneDelegate
 
 ## Mentions
 
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
 
 #### Overview
@@ -44,6 +45,9 @@ For an example on using `UIWindowSceneDelegate` in your app, see [`Supporting mu
   Asks the delegate to perform the user-selected action.
 - [func windowScene(UIWindowScene, userDidAcceptCloudKitShareWith: CKShareMetadata)](uiwindowscenedelegate/windowscene(_:userdidacceptcloudkitsharewith:).md)
   Tells the delegate that the window scene now has access to shared information in CloudKit.
+### Configuring supported interface orientations
+- [func supportedInterfaceOrientations(for: UIWindowScene) -> UIInterfaceOrientationMask](uiwindowscenedelegate/supportedinterfaceorientations(for:).md)
+  Returns the interface orientations supported by the window scene. The returned value replaces the app’s UISupportedInterfaceOrientations Info.plist value for this scene. If not implemented, the Info.plist value is used.
 ### Deprecated methods
 - [func windowScene(UIWindowScene, didUpdate: any UICoordinateSpace, interfaceOrientation: UIInterfaceOrientation, traitCollection: UITraitCollection)](uiwindowscenedelegate/windowscene(_:didupdate:interfaceorientation:traitcollection:).md)
   Notifies you when the size, orientation, or traits of a scene change.

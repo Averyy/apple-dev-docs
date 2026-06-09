@@ -15,6 +15,7 @@ A row that represents a data value in a table.
 ## Declaration
 
 ```swift
+nonisolated
 struct TableRow<Value> where Value : Identifiable
 ```
 

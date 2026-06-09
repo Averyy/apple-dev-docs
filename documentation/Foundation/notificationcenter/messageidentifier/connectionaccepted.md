@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An identifier for a message about a file handle accepting a connection.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -18,11 +20,18 @@
 static var connectionAccepted: NotificationCenter.BaseMessageIdentifier<FileHandle.ConnectionAcceptedMessage> { get }
 ```
 
+#### Discussion
+
+Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.ConnectionAcceptedMessage`](filehandle/connectionacceptedmessage.md).
+
 ## See Also
 
 - [static var dataAvailable: NotificationCenter.BaseMessageIdentifier<FileHandle.DataAvailableMessage>](notificationcenter/messageidentifier/dataavailable.md)
+  An identifier for a message about a file handle having data available for reading.
 - [static var readToEndOfFileCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.ReadToEndOfFileCompletionMessage>](notificationcenter/messageidentifier/readtoendoffilecompletion.md)
+  An identifier for a message about a file handle having reached the end of a file or communication channel.
 - [static var readCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.ReadCompletionMessage>](notificationcenter/messageidentifier/readcompletion.md)
+  An identifier for a message about a file handle having read the currently available data from a file or communication channel.
 
 
 ---

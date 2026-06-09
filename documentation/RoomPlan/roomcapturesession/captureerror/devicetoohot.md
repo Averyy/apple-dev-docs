@@ -9,7 +9,6 @@ An error that indicates when the device thermal metrics surpass the framework’
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

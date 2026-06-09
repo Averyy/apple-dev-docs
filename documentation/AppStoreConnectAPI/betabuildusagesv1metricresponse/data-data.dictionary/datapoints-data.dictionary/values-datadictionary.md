@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The install and crash count values within a single data point of the beta build usage metric.
+
 **Availability**:
 - App Store Connect API 3.1+
 

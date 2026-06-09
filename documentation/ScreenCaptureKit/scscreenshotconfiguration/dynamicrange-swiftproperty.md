@@ -6,8 +6,8 @@
 Specifies the type of image returned to the client; standard dynamic range, high dynamic range, or both.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

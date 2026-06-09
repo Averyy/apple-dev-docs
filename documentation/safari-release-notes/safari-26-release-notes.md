@@ -2,11 +2,11 @@
 
 **Framework**: Safari Release Notes
 
-Released September 15, 2025 — 26.0 (20622.1.22)
+Released September 15, 2025 — 26 (20622.1.22)
 
 #### Overview
 
-Safari 26.0 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequoia, and macOS Sonoma.
+Safari 26 is available for iOS 26, iPadOS 26, visionOS 26, macOS 26, macOS Sequoia, and macOS Sonoma.
 
 ##### Accessibility
 

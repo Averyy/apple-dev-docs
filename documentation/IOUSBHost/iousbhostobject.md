@@ -54,6 +54,7 @@ class IOUSBHostObject
 ### Instance Methods
 - [func configurationDescriptor(with: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostobject/configurationdescriptor(with:).md)
 - [func configurationDescriptor(withConfigurationValue: Int) throws -> UnsafePointer<IOUSBConfigurationDescriptor>](iousbhostobject/configurationdescriptor(withconfigurationvalue:).md)
+- [func data(withCapacity: Int, options: IOUSBHostObjectDataOptions) throws -> NSMutableData](iousbhostobject/data(withcapacity:options:).md)
 - [func destroy(options: IOUSBHostObjectDestroyOptions)](iousbhostobject/destroy(options:).md)
 ### Related Documentation
 - [class IOUSBHostDevice](iousbhostdevice.md)

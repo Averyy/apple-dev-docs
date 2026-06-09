@@ -22,6 +22,13 @@ var strokeColor: CGColor?
 
 Defaults to `nil`.
 
+## See Also
+
+- [var fillColor: CGColor?](shapeconfiguration/fillcolor.md)
+  The fill color of the shape.
+- [var lineWidth: CGFloat](shapeconfiguration/linewidth.md)
+  The line width of the shape.
+
 
 ---
 

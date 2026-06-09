@@ -40,6 +40,9 @@ Always check [`availableSliceAppCategories`](ctslicingmanager/availablesliceappc
 ### Category information
 - [var description: String](ctslicingmanager/appcategory/description.md)
   A string representation of the application category.
+### Enumeration Cases
+- [CTSlicingManager.AppCategory.browsers](ctslicingmanager/appcategory/browsers.md)
+- [CTSlicingManager.AppCategory.missionCritical](ctslicingmanager/appcategory/missioncritical.md)
 
 ## Relationships
 

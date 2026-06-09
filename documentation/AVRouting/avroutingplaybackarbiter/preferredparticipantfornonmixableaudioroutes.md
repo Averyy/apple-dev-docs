@@ -6,6 +6,9 @@
 The participant that has priority to play audio when it’s not possible to play multiple audio sources concurrently.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - tvOS 26.0+
 
 ## Declaration

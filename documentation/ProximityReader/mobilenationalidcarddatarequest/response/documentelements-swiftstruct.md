@@ -9,7 +9,6 @@ A type that contains the document elements from a successful mobile national ID 
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 
@@ -28,7 +27,9 @@ struct DocumentElements
   The date of birth of the mobile national ID card holder.
 - [let documentNumber: String?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/documentnumber.md)
   The document’s number, as defined by the document’s issuing authority.
-- [let nameComponents: PersonNameComponents?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/namecomponents.md)
+- [let name: MobileDocumentHolderName?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/name.md)
+  The mobile national ID card holder’s name.
+- [var nameComponents: PersonNameComponents?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/namecomponents.md)
   The mobile national ID card holder’s name components.
 - [let portraitData: Data?](mobilenationalidcarddatarequest/response/documentelements-swift.struct/portraitdata.md)
   The portrait data of the mobile national ID card holder on record with the issuer.

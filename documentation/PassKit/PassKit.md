@@ -38,6 +38,16 @@ The Wallet app allows users to organize their boarding passes, tickets, gift car
 ### Wallet support
 - [Wallet](wallet.md)
   Manage tickets, boarding passes, payment cards and other passes in the Wallet app.
+### Structures
+- [struct ApplePayMerchandisingAction](applepaymerchandisingaction.md)
+  Type of action taken when the button is tapped on the ApplePayMerchandisingView
+- [struct ApplePayMerchandisingPartnerConfiguration](applepaymerchandisingpartnerconfiguration.md)
+  Defines the partner configuration for the ApplePayMerchandisingView
+- [struct ApplePayMerchandisingStyle](applepaymerchandisingstyle.md)
+  Styling layout of the ApplePayMerchandisingView
+- [struct ApplePayMerchandisingView](applepaymerchandisingview.md)
+### Variables
+- [let PKTTRComponentIDCarKeys: String](pkttrcomponentidcarkeys.md)
 
 ## See Also
 

@@ -11,26 +11,28 @@ A `preReleaseVersions` resource represents a version of your app intended for Te
 ## Topics
 
 ### Getting Prerelease Version Information
-- [List Prerelease Versions](get-v1-prereleaseversions.md)
+- [List prerelease versions](get-v1-prereleaseversions.md)
   Get a list of prerelease versions for all apps.
-- [Read Prerelease Version Information](get-v1-prereleaseversions-_id_.md)
+- [Read prerelease version information](get-v1-prereleaseversions-_id_.md)
   Get information about a specific prerelease version.
-- [Read the App Information of a Prerelease Version](get-v1-prereleaseversions-_id_-app.md)
+- [Read the app information of a prerelease version](get-v1-prereleaseversions-_id_-app.md)
   Get the app information for a specific prerelease version.
-- [GET /v1/preReleaseVersions/{id}/relationships/app](get-v1-prereleaseversions-_id_-relationships-app.md)
+- [Get the app ID for a prerelease version](get-v1-prereleaseversions-_id_-relationships-app.md)
 ### Getting Build Information
-- [List All Builds of a Prerelease Version](get-v1-prereleaseversions-_id_-builds.md)
+- [List all builds of a prerelease version](get-v1-prereleaseversions-_id_-builds.md)
   Get a list of builds of a specific prerelease version.
-- [GET /v1/preReleaseVersions/{id}/relationships/builds](get-v1-prereleaseversions-_id_-relationships-builds.md)
+- [List build IDs for a prerelease version](get-v1-prereleaseversions-_id_-relationships-builds.md)
 ### Objects
 - [object PrereleaseVersion](prereleaseversion.md)
-  The data structure that represents a Prerelease Versions  resource.
+  A pre-release version associated with a build, representing a development or beta software version before App Store submission.
 - [object PrereleaseVersionResponse](prereleaseversionresponse.md)
-  A response that contains a single Prerelease Versions resource.
+  The response body for endpoints that read a single prerelease version of an app.
 - [object PreReleaseVersionsResponse](prereleaseversionsresponse.md)
-  A response that contains a list of Pre-Release Version resources.
+  A response containing a list of pre-release versions for an app.
 - [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
+  A response containing a single pre-release version, without related resources.
 - [object PreReleaseVersionsWithoutIncludesResponse](prereleaseversionswithoutincludesresponse.md)
+  A response containing a list of pre-release versions, without related resources.
 - [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
 - [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
 - [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)

@@ -18,7 +18,7 @@ func mouseExited(with event: NSEvent)
 
 Like [`mouseEntered(with:)`](nscursor/mouseentered(with:).md), this message is part of the class interface only so you can override it.
 
-For a more complete explanation, see [`Mouse-Tracking and Cursor-Update Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/MouseTrackingEvents/MouseTrackingEvents.html#//apple_ref/doc/uid/10000060i-CH11) and the NSView method [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md).
+For more information, see [`addTrackingRect(_:owner:userData:assumeInside:)`](nsview/addtrackingrect(_:owner:userdata:assumeinside:).md).
 
 ## Parameters
 

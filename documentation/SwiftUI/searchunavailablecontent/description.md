@@ -17,13 +17,13 @@ A view that represents the description of a static `ContentUnavailableView.searc
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Description
+nonisolated
+struct Description
 ```
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a search``ContentUnavailableView`.
+You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](contentunavailableview.md).
 
 ## Relationships
 

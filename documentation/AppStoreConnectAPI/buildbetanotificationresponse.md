@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Build Beta Notifications resource.
+The response body for the endpoint that sends a beta test notification for a build.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -21,10 +21,10 @@ object BuildBetaNotificationResponse
 
 ## See Also
 
-- [Send Notification of an Available Build](post-v1-buildbetanotifications.md)
+- [Send notification of an available build](post-v1-buildbetanotifications.md)
   Send a notification to all assigned beta testers that a build is available for testing.
 - [object BuildBetaNotification](buildbetanotification.md)
-  The data structure that represents a Build Beta Notifications resource.
+  A push notification sent to eligible TestFlight testers when a new build is available to install.
 - [object BuildBetaNotificationCreateRequest](buildbetanotificationcreaterequest.md)
   The request body you use to create a Build Beta Notification.
 

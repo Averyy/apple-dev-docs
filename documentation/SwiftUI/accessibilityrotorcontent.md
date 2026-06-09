@@ -55,6 +55,7 @@ extension MyCustomType: Transition {
 - [AccessibilityRotorEntry](accessibilityrotorentry.md)
 - [ForEach](foreach.md)
 - [Group](group.md)
+- [TupleContent](tuplecontent.md)
 
 ## See Also
 

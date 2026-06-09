@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
+
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
@@ -22,6 +24,10 @@ init(fileURLWithPath path: String, relativeTo baseURL: URL?)
 
 - [Improving performance and stability when accessing the file system](improving-performance-and-stability-when-accessing-the-file-system.md)
 
+#### Discussion
+
+Better to use `initFileURLWithPath:isDirectory:relativeToURL:` if you know if the path is a directory vs non-directory, as it saves an I/O.
+
 ## See Also
 
 - [convenience init?(string: String)](nsurl/init(string:).md)
@@ -35,8 +41,11 @@ init(fileURLWithPath path: String, relativeTo baseURL: URL?)
 - [init(fileURLWithPath: String, isDirectory: Bool)](nsurl/init(fileurlwithpath:isdirectory:).md)
   Initializes a newly created NSURL referencing the local file or directory at `path`.
 - [class func fileURL(withPath: String, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String, isDirectory: Bool, relativeTo: URL?) -> URL](nsurl/fileurl(withpath:isdirectory:relativeto:).md)
+  Initializes and returns a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [init(fileURLWithPath: String, isDirectory: Bool, relativeTo: URL?)](nsurl/init(fileurlwithpath:isdirectory:relativeto:).md)
+  Initializes a newly created file NSURL referencing the local file or directory at path, relative to a base URL.
 - [class func fileURL(withPath: String) -> URL](nsurl/fileurl(withpath:).md)
   Initializes and returns a newly created NSURL object as a file URL with a specified path.
 - [init(fileURLWithPath: String)](nsurl/init(fileurlwithpath:).md)

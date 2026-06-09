@@ -11,7 +11,7 @@ The map’s inset margins.
 ## Declaration
 
 ```swift
-padding?: Padding;
+padding?: PaddingData;
 ```
 
 #### Discussion

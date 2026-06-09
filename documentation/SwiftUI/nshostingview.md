@@ -98,7 +98,7 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
   The options for how the hosting view creates and updates constraints based on the size of its SwiftUI content.
 - [var firstTextLineCenter: CGFloat?](nshostingview/firsttextlinecenter.md)
 ### Testing for hits
-- [func hitTest(NSPoint) -> NSView?](nshostingview/hittest(_:).md)
+- [func hitTest(CGPoint) -> NSView?](nshostingview/hittest(_:).md)
 ### Managing accessibility behaviors
 - [var accessibilityFocusedUIElement: Any?](nshostingview/accessibilityfocuseduielement.md)
 - [func accessibilityChildren() -> [Any]?](nshostingview/accessibilitychildren.md)
@@ -122,7 +122,6 @@ A hosting view acts as a bridge between your SwiftUI views and your AppKit inter
 - [func endDocument()](nshostingview/enddocument.md)
 - [func observeValue(forKeyPath: String?, of: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?)](nshostingview/observevalue(forkeypath:of:change:context:).md)
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nshostingview/shoulddelaywindowordering(for:).md)
-- [func showContextMenuForSelection(Any?)](nshostingview/showcontextmenuforselection(_:).md)
 - [func viewDidEndLiveResize()](nshostingview/viewdidendliveresize.md)
 - [func viewWillStartLiveResize()](nshostingview/viewwillstartliveresize.md)
 - [func willRemoveSubview(NSView)](nshostingview/willremovesubview(_:).md)

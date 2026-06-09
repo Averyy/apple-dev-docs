@@ -11,6 +11,7 @@ Creates a link button style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

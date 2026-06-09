@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The external entity resolving policy for the parser.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -17,6 +19,10 @@
 ```swift
 var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy { get set }
 ```
+
+#### Discussion
+
+Defaults to `NSXMLParserResolveExternalEntitiesNever`.
 
 
 ---

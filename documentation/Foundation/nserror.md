@@ -59,6 +59,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 - [class func userInfoValueProvider(forDomain: String) -> ((any Error, String) -> Any?)?](nserror/userinfovalueprovider(fordomain:).md)
   Returns any user info provider specified for a given error domain.
 - [struct ErrorUserInfoKey](erroruserinfokey.md)
+  These keys may exist in the user info dictionary.
 - [typealias UserInfoKey](nserror/userinfokey.md)
   These keys may exist in the user info dictionary.
 ### Getting the Error Recovery Attempter
@@ -98,6 +99,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
 - [NSError Codes](1448136-nserror-codes.md)
   Error codes in the Cocoa error domain.
 ### Initializers
+- [convenience init()](nserror/init.md)
 - [init?(coder: NSCoder)](nserror/init(coder:).md)
 ### Instance Properties
 - [var underlyingErrors: [any Error]](nserror/underlyingerrors.md)
@@ -106,6 +108,7 @@ Applications may choose to create subclasses of `NSError`, for example, to provi
   Returns a properly formatted error object with a `NSFileProviderItemCollisionError` error code.
 - [class func fileProviderErrorForNonExistentItem(withIdentifier: NSFileProviderItemIdentifier) -> Self](nserror/fileprovidererrorfornonexistentitem(withidentifier:).md)
 - [class func fileProviderErrorForRejectedDeletion(of: NSFileProviderItem) -> Self](nserror/fileprovidererrorforrejecteddeletion(of:).md)
+- [class func new() -> Self](nserror/new.md)
 
 ## Relationships
 

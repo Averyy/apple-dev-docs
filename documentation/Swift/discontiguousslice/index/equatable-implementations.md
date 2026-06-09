@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](discontiguousslice/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](discontiguousslice/index/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (DiscontiguousSlice<Base>.Index, DiscontiguousSlice<Base>.Index) -> Bool](discontiguousslice/index/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

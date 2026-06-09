@@ -49,7 +49,7 @@ To prevent Xcode from automatically inserting delimiters:
 
 As you enter code in the source editor, Xcode checks the syntax and offers fixes when you pause typing.
 
-Xcode highlights issues with a red underline and presents an issue summary and icon. Clicking the icon displays more information about the issue and, in many cases, provides a fix that you can apply.
+Xcode highlights issues with a red or yellow underline and presents an issue summary and icon. Clicking the icon displays more information about the issue and, in many cases, provides a fix that you can apply.
 
 ![An Xcode screenshot showing the Issues navigator on the left and the source editor on the right with more information about three issues.](https://docs-assets.developer.apple.com/published/08b7176c0b276a59f08d4836e5f83173/fix-it-correction%402x.png)
 

@@ -17,6 +17,7 @@ A scene that presents an interface appropriate for Assistive Access on iOS and i
 ## Declaration
 
 ```swift
+nonisolated
 struct AssistiveAccess<Content> where Content : View
 ```
 
@@ -35,6 +36,10 @@ struct AssistiveAccess<Content> where Content : View
 
 - [var accessibilityAssistiveAccessEnabled: Bool](environmentvalues/accessibilityassistiveaccessenabled.md)
   A Boolean value that indicates whether Assistive Access is in use.
+- [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
 
 
 ---

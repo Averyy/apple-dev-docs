@@ -6,8 +6,7 @@
 An error code.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 

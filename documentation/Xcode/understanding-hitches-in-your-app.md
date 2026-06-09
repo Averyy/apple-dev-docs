@@ -6,7 +6,9 @@ Determine the cause of interruptions in motion by examining the render loop.
 
 #### Overview
 
-Human perception is very sensitive to interruptions in motion. When a fluid motion onscreen gets *stuck* for a short time, even a couple of milliseconds can be noticeable. This type of interruption is known as a *hitch*. Hitches happen during continuous interactions, like scrolling or dragging, or during animations. Each hitch impacts the user experience, so you want as few hitches as possible in your app.
+Human perception is very sensitive to interruptions in motion. When a fluid motion onscreen gets *stuck* for a short time, even a couple of milliseconds can be noticeable. This type of interruption is known as a *hitch*. Hitches happen during continuous interactions, like scrolling or dragging, or during animations. Each hitch impacts the user experience, so you want as few hitches as possible in your app. Minimize the hitch rate as much as possible to provide the best experience for your users.
+
+The Hitches metric in Xcode Organizer tracks animation interruptions across all animated interactions in your app — not just scrolling. The Hitches metric measures hitch rate in milliseconds of pause per second (ms/s) for each type of animation in your app. A hitch rate at or below 10 ms/s is good; at or below 25 ms/s is a warning; at or below 50 ms/s is critical; and above 50 ms/s warrants immediate attention. Use the Hitches metric to identify and prioritize hitch-related regressions across every part of your UI.
 
 > **Note**:  This article assumes a basic understanding of the event-handling and rendering loop, as well as a basic understanding of hangs and hitches, and how they differ. If you’re not familiar with hangs and hitches, see [`Understanding user interface responsiveness`](understanding-user-interface-responsiveness.md) for more information about them, as well as the event-handling and rendering loop.
 

@@ -22,7 +22,7 @@ let CBCentralManagerRestoredStateScanServicesKey: String
 
 #### Discussion
 
-The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of service UUIDs (represented by [`CBUUID`](cbuuid.md) objects) containing all the services the central manager was scanning for at the time the system terminated the app.
+The value associated with this key is an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) of service UUIDs (represented by [`CBUUID`](cbuuid.md) objects) containing all the services the central manager was scanning for at the time the system stopped the app.
 
 ## See Also
 

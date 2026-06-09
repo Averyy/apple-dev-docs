@@ -53,11 +53,9 @@ Only file provider extensions based on the [`NSFileProviderReplicatedExtension`]
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
 - [Comparable](../Swift/Comparable.md)
-- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)

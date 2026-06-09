@@ -1,4 +1,4 @@
-# List All Customer Reviews for an App
+# List all customer reviews for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -76,10 +76,12 @@ https://api.appstoreconnect.apple.com/v1/apps/682658836/customerReviews?limit=1
 - `sort` ([string]): Attributes by which to sort. Supports one sort parameter at a time.
 - `filter[territory]` ([string]): A filter of territories to include in the response.
 - `exists[publishedResponse]` (boolean): A Boolean value that filters the reviews based on whether the review has a published response in the App Store. Use `true` to return the customer reviews that already have a published response in the App Store. Use `false` to return the customer reviews that don’t have a published response. Note that it’s possible that a review has a response that isn’t yet published.
+- `fields[territories]` ([string])
+- `filter[reviewTerritory]` ([string])
 
 ## See Also
 
-- [GET /v1/apps/{id}/relationships/customerReviews](get-v1-apps-_id_-relationships-customerreviews.md)
+- [List customer review IDs for an app](get-v1-apps-_id_-relationships-customerreviews.md)
 - [Read Customer Review Summarizations](get-v1-apps-_id_-customerreviewsummarizations.md)
   Get the customer review summarization for a specific app.
 

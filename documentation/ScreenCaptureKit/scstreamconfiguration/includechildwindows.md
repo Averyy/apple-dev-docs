@@ -4,7 +4,7 @@
 **Kind**: property
 
 **Availability**:
-- Mac Catalyst 17.2+
+- Mac Catalyst 18.2+
 - macOS 14.2+
 
 ## Declaration

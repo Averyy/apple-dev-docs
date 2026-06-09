@@ -11,7 +11,7 @@ The place ID that references a place or a map feature.
 ## Declaration
 
 ```swift
-get id(): string | undefined;
+get id(): string | null;
 ```
 
 #### Discussion

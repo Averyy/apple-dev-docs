@@ -14,8 +14,8 @@ Get details about the Android to iOS app mapping for a specific app.
 
 ## Parameters
 
-- `fields[androidToIosAppMappingDetails]` ([string])
-- `limit` (integer)
+- `fields[androidToIosAppMappingDetails]` ([string]): Additional fields to include for each Android to iOS app mapping detail resource returned by the response.
+- `limit` (integer): The maximum number of Android to iOS app mapping detail resources to return.
 
 ## See Also
 

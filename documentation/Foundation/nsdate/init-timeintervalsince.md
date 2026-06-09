@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Returns a date object initialized relative to another given date by a given number of seconds.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
@@ -17,6 +19,15 @@
 ```swift
 convenience init(timeInterval secsToBeAdded: TimeInterval, since date: Date)
 ```
+
+#### Return Value
+
+An `NSDate` object initialized relative to `date` by `secsToBeAdded` seconds.
+
+## Parameters
+
+- `secsToBeAdded`: The number of seconds to add to `date`. A negative value means the receiver will be earlier than `date`.
+- `date`: The reference date.
 
 
 ---

@@ -8,6 +8,7 @@ A value that represents the system’s default alert sound.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

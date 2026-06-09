@@ -28,6 +28,8 @@ It’s valid to transition to this experience even when the original container i
   An experience where the video embeds within its original container.
 - [AVExperienceController.Experience.multiview](avexperiencecontroller/experience-swift.enum/multiview.md)
   An experience where multiple videos play together.
+- [AVExperienceController.Experience.immersive](avexperiencecontroller/experience-swift.enum/immersive.md)
+  Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 
 ---

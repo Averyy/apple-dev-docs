@@ -12,8 +12,6 @@ Get a list of restrictions on the device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,8 +23,8 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | Shared iPad |
-| Requires supervision | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowQueryRestrictions |
 
 ##### Example Request and Response
@@ -89,7 +87,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#RestrictionsCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

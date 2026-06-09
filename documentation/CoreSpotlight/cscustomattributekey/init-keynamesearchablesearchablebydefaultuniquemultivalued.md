@@ -38,6 +38,7 @@ To create custom attribute key names, it’s recommended that you use a reverse 
 
 - [convenience init?(keyName: String)](cscustomattributekey/init(keyname:).md)
   Returns a new custom attribute key with the specified name.
+- [init?(coder: NSCoder)](cscustomattributekey/init(coder:).md)
 
 
 ---

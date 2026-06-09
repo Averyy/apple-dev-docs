@@ -21,31 +21,15 @@ struct HeartRateRangeAlert
 ## Topics
 
 ### Creating new heart rate alerts
-- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](heartraterangealert/heartrate(_:unit:).md)
-  Returns a new heart rate alert for the target range.
 - [init(target: ClosedRange<Measurement<UnitFrequency>>)](heartraterangealert/init(target:).md)
   Creates a new heart rate alert for a closed range of measurements.
 ### Accessing the alert data
-- [var metric: WorkoutAlertMetric](heartraterangealert/metric.md)
-  The metric for the alert.
 - [var target: ClosedRange<Measurement<UnitFrequency>>](heartraterangealert/target.md)
   The target range.
 - [var targetQuantityLowerBound: HKQuantity](heartraterangealert/targetquantitylowerbound.md)
   The target’s lower bound.
 - [var targetQuantityUpperBound: HKQuantity](heartraterangealert/targetquantityupperbound.md)
   The target’s upper bound.
-### Comparing heart rate range alerts
-- [var hashValue: Int](heartraterangealert/hashvalue.md)
-  The hashed value of the heart rate range alert.
-- [func hash(into: inout Hasher)](heartraterangealert/hash(into:).md)
-  Hashes the essential components of the heart rate range alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](heartraterangealert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two heart rate range alerts aren’t equal.
-- [static func == (HeartRateRangeAlert, HeartRateRangeAlert) -> Bool](heartraterangealert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two heart rate range alerts are equal.
-### Default Implementations
-- [Equatable Implementations](heartraterangealert/equatable-implementations.md)
-- [WorkoutAlert Implementations](heartraterangealert/workoutalert-implementations.md)
 
 ## Relationships
 

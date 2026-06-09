@@ -18,6 +18,8 @@ class let rowsDidChangeNotification: NSNotification.Name
 
 The object is the rule editor; there is no `userInfo` object.
 
+To observe this notification using Swift concurrency, use [`NSRuleEditor.RowsDidChangeMessage`](nsruleeditor/rowsdidchangemessage.md).
+
 
 ---
 

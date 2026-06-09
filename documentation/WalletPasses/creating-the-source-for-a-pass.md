@@ -111,8 +111,12 @@ Use UTF-16 encoding for non-ASCII characters.
 
 ## See Also
 
+- [Creating a pass with Pass Designer](creating-a-pass-with-pass-designer.md)
+  Construct and customize a variety of pass styles with this easy-to-use tool.
 - [Building a Pass](building-a-pass.md)
   Build a distributable pass.
+- [Defining the metadata of your Wallet Pass](defining-the-metadata-of-your-wallet-pass.md)
+  Provide customizable information for your Wallet Pass.
 - [Distributing and updating a pass](distributing-and-updating-a-pass.md)
   Distribute a pass to your users or update an existing pass.
 - [object Pass](pass.md)

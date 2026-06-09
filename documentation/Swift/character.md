@@ -64,7 +64,7 @@ For more information about the Unicode terms used in this discussion, see the [`
 ### Comparing Characters
 - [static func == (Character, Character) -> Bool](character/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](character/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](character/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Working with a Character’s Unicode Values
 - [init(Unicode.Scalar)](character/init(_:)-8hq6x.md)

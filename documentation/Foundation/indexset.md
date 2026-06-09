@@ -36,6 +36,9 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
 ### Counting Items in a Set
 - [func count(in: Range<IndexSet.Element>) -> Int](indexset/count(in:)-v622.md)
   Returns the count of integers in `self` that intersect `range`.
+### Accessing Elements
+- [subscript(IndexSet.Index) -> IndexSet.Element](indexset/subscript(_:).md)
+  Accesses one element in the index set.
 ### Combining Index Sets
 - [func formIntersection(IndexSet)](indexset/formintersection(_:).md)
   Intersects the `IndexSet` with `other`.
@@ -75,6 +78,18 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
 - [func intersects(integersIn: Range<IndexSet.Element>) -> Bool](indexset/intersects(integersin:)-3sdmv.md)
   Returns `true` if `self` intersects any of the integers in `range`.
 ### Manipulating Indexes
+- [var startIndex: IndexSet.Index](indexset/startindex.md)
+  The beginning index in the set.
+- [var endIndex: IndexSet.Index](indexset/endindex.md)
+  The ending index in the set.
+- [func index(after: IndexSet.Index) -> IndexSet.Index](indexset/index(after:).md)
+  Returns the index that follows the given index in the set.
+- [func index(before: IndexSet.Index) -> IndexSet.Index](indexset/index(before:).md)
+  Returns the index that precedes the given index in the set.
+- [func formIndex(after: inout IndexSet.Index)](indexset/formindex(after:).md)
+  Modifies the given index to refer to the item after the one it currently refers to.
+- [func formIndex(before: inout IndexSet.Index)](indexset/formindex(before:).md)
+  Modifies the given index to refer to the item before the one it currently refers to.
 - [func indexRange(in: Range<IndexSet.Element>) -> Range<IndexSet.Index>](indexset/indexrange(in:)-539lz.md)
   Return a `Range<IndexSet.Index>` which can be used to subscript the index set.
 ### Finding Elements
@@ -93,6 +108,9 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
   Returns an IndexSet filtered according to the result of `includeInteger`.
 - [func filteredIndexSet(includeInteger: (IndexSet.Element) throws -> Bool) rethrows -> IndexSet](indexset/filteredindexset(includeinteger:).md)
   Returns an IndexSet filtered according to the result of `includeInteger`.
+### Iterating Over Elements
+- [func makeIterator() -> IndexingIterator<IndexSet>](indexset/makeiterator.md)
+  Returns an iterator over the elements of this sequence.
 ### Shifting Index Groups
 - [func shift(startingAt: IndexSet.Element, by: Int)](indexset/shift(startingat:by:).md)
   For a positive delta, shifts the indexes in [index, INT_MAX] to the right, thereby inserting an “empty space” [index, delta], for a negative delta, shifts the indexes in [index, INT_MAX] to the left, thereby deleting the indexes in the range [index - delta, delta].
@@ -137,6 +155,9 @@ The range of valid integer values is `0...Int.max-1`. Anything outside this rang
   Returns `true` if `self` intersects any of the integers in `range`.
 - [func rangeView<R>(of: R) -> IndexSet.RangeView](indexset/rangeview(of:)-4jdy1.md)
   Returns a `Range`-based view of `self`.
+### Type Aliases
+- [typealias Element](indexset/element.md)
+  An alias for the type that an index set holds.
 
 ## Relationships
 

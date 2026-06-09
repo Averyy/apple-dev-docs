@@ -15,11 +15,11 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](substring/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](substring/_(_:_:)-24u51.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](substring/_(_:_:)-3izq7.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](substring/_=(_:_:)-1ii2.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](substring/_=(_:_:)-5i1ru.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](substring/_=(_:_:)-8lyhq.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](substring/_=(_:_:)-5nvz6.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

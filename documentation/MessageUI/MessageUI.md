@@ -27,6 +27,12 @@ To display a composition interface, present the corresponding view controller mo
 ### Message composition interface
 - [class MFMessageComposeViewController](mfmessagecomposeviewcontroller.md)
   A standard view controller whose interface lets the user compose and send SMS or MMS messages.
+### Classes
+- [class MFComposeAssistantViewController](mfcomposeassistantviewcontroller.md)
+- [class MFMailDraft](mfmaildraft.md)
+- [class WritingAssistant](writingassistant.md)
+### Protocols
+- [protocol MFComposeAssistantViewControllerDelegate](mfcomposeassistantviewcontrollerdelegate.md)
 ### Enumerations
 - [enum MFMailComposeControllerDeferredAction](mfmailcomposecontrollerdeferredaction.md)
 

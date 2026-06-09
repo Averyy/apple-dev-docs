@@ -27,14 +27,14 @@ This property is key-value observable.
 
 ## See Also
 
-- [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
-  The length of time over which exposure takes place.
-- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
-  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
-- [var lensAperture: Float](avcapturedevice/lensaperture.md)
-  The size of the lens diaphragm.
 - [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
   Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
+- [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
+  The length of time over which exposure takes place.
+- [var lensAperture: Float](avcapturedevice/lensaperture.md)
+  The size of the lens diaphragm.
+- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
+  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 
 
 ---

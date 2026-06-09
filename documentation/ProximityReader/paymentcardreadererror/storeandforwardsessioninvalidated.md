@@ -9,7 +9,6 @@ An error that indicates the framework invalidated the current Store and Forward 
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

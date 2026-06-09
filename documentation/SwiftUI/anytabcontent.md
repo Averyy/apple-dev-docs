@@ -17,6 +17,7 @@ Type erased tab content.
 ## Declaration
 
 ```swift
+nonisolated
 struct AnyTabContent<SelectionValue> where SelectionValue : Hashable
 ```
 

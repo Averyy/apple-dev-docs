@@ -16,6 +16,7 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase
 
 ### Objects
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.InAppPurchase.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchase-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an in-app purchase availability.
 
 ## Properties
 

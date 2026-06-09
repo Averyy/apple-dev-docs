@@ -23,7 +23,7 @@ In Intelligence settings, allow external agents to connect with Xcode using its 
 1. Choose Xcode > Settings and select Intelligence in the sidebar.
 2. Under Model Context Protocol, turn on “Allow external agents to use Xcode tools.”
 
-![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](https://docs-assets.developer.apple.com/published/c929c7d8597d928bc77b7ebe389c7910/intelligence-settings%402x.png)
+![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](https://docs-assets.developer.apple.com/published/034ce543aae8389cd0788990db7b0064/intelligence-settings%402x.png)
 
 ##### Configure External Agents to Use the Mcp Server
 
@@ -41,16 +41,14 @@ codex mcp add xcode -- xcrun mcpbridge
 
 To verify the configuration, enter `claude mcp list` or `codex mcp list` in Terminal.
 
-Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see [`Customize the Claude Agent and Codex environments`](setting-up-coding-intelligence#Customize-the-Claude-Agent-and-Codex-environments.md).
+Optionally, add hints about Xcode and your project to configuration files, such as the `AGENTS.md` or `CLAUDE.md` files, in the location that the external agent uses. For more information on configuring agents that run inside Xcode, see [`Customize agent environments`](extending-and-customizing-agents#Customize-agent-environments.md).
 
 Before prompting an external agent (outside of Xcode), be sure to open your project in Xcode.
 
 ## See Also
 
-- [Setting up coding intelligence](setting-up-coding-intelligence.md)
-  Enable third-party coding tools that you want to use in the coding assistant.
-- [Writing code with intelligence in Xcode](writing-code-with-intelligence-in-xcode.md)
-  Generate code, fix bugs fast, and learn as you go with intelligence built directly into Xcode.
+- [Extending and customizing agents](extending-and-customizing-agents.md)
+  Expand agent capabilities for your specific needs and application domain.
 
 
 ---

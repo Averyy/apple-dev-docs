@@ -22,6 +22,7 @@ func allocateRenderResources() throws
 ## Mentions
 
 - [Migrating Your Audio Unit Host to the AUv3 API](migrating-your-audio-unit-host-to-the-auv3-api.md)
+- [Rendering Spatial Audio from Bluetooth headphones](rendering-spatial-audio-from-bluetooth-headphones.md)
 
 #### Discussion
 

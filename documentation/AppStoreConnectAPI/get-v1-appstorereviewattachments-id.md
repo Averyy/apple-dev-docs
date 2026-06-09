@@ -1,4 +1,4 @@
-# Read App Store Review Attachment Information
+# Read app store review attachment information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Get information about an App Store review attachment and its upload and processi
 
 ## Parameters
 
-- `fields[appStoreReviewAttachments]` ([string])
-- `include` ([string])
+- `fields[appStoreReviewAttachments]` ([string]): Additional fields to include for each App Store review attachment resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appStoreReviewDetails]` ([string])
 
 ## See Also
 
-- [List All Review Attachments for an App Store Review Detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
+- [List all review attachments for an app store review detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
   List all the App Store review attachments you include with a version when you submit it for App Review.
-- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 
 
 ---

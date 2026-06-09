@@ -7,8 +7,6 @@ The declaration to configure Migration Assistant settings.
 
 **Availability**:
 - macOS 26.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,11 +29,12 @@ The device reports Migration Assistant progress using the [`StatusMigrationAssis
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | macOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Example
 
@@ -88,20 +87,20 @@ This configuration provides settings for a Mac to Mac migration.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

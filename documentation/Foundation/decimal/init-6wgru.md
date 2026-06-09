@@ -20,6 +20,11 @@ Creates and initializes a decimal with the provided floating point value.
 init(_ value: Double)
 ```
 
+## See Also
+
+- [init(floatLiteral: Double)](decimal/init(floatliteral:).md)
+  Creates and initializes a decimal with the provided floating point value.
+
 
 ---
 

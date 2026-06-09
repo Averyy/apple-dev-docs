@@ -9,7 +9,6 @@ Creates an ink tool object with the specified color and line width values.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 11.0+
 - visionOS 1.0+
 
 ## Declaration

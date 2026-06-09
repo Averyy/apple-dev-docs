@@ -11,6 +11,7 @@ Creates a circular gauge that draws with a specified color.
 ## Declaration
 
 ```swift
+nonisolated
 init(tint: Color)
 ```
 

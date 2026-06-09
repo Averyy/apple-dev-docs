@@ -24,6 +24,8 @@ var count: Int
 
 - [init(count: Int)](tapgesture/init(count:).md)
   Creates a tap gesture with the number of required taps.
+- [init(count: Int, inputKinds: GestureInputKinds)](tapgesture/init(count:inputkinds:).md)
+  Creates a tap gesture with the number of required taps and the input kinds the gesture recognizes.
 
 
 ---

@@ -16,6 +16,7 @@ object SubscriptionLocalizationCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionLocalizationCreateRequest.Data.Relationships.Subscription.Data](subscriptionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription localization.
 
 ## Properties
 

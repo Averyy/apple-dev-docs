@@ -18,6 +18,11 @@ static var unspecified: AVExperienceController.Configuration.Placement { get }
 
 Experiences will be placed over the UIScene of the original container. If contained within a UIScene, the system will use that scene as a placement, if possible.
 
+## See Also
+
+- [static func over(scene: UIScene) -> AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct/over(scene:).md)
+  Place the video over the provided scene.
+
 
 ---
 

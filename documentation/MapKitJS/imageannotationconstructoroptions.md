@@ -17,9 +17,11 @@ interface ImageAnnotationConstructorOptions
 
 ## Topics
 
-### Initializing the image url
+### Initializing the image
+- [image](imageannotationconstructoroptions/image.md)
+  The image for the annotation.
 - [url](imageannotationconstructoroptions/url.md)
-  An object containing URLs for the image assets in multiple resolutions.
+  An object that contains URLs for the image assets in multiple resolutions.
 
 ## Relationships
 
@@ -29,7 +31,7 @@ interface ImageAnnotationConstructorOptions
 ## See Also
 
 - [new ImageAnnotation(location, options)](imageannotation/imageannotationconstructor.md)
-  Creates an image annotation with a URL to its image and a coordinate.
+  Creates an image annotation with an image and a coordinate.
 
 
 ---

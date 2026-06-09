@@ -3,8 +3,6 @@
 **Framework**: Core Video  
 **Kind**: class
 
-A reference to a Core Video buffer.
-
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
@@ -22,7 +20,7 @@ class CVBuffer
 
 #### Overview
 
-This is an abstract type from which all Core Video buffers derive.
+Base type for all CoreVideo buffers
 
 ## Topics
 

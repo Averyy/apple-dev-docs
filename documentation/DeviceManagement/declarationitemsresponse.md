@@ -5,10 +5,6 @@
 
 The set of available declarations on the server.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift

@@ -17,7 +17,7 @@ A type that can be compared for value equality.
 ## Declaration
 
 ```swift
-protocol Equatable
+protocol Equatable : ~Copyable, ~Escapable
 ```
 
 ## Mentions
@@ -144,9 +144,9 @@ print(c === a, c === b, separator: ", ")
 ## Topics
 
 ### Equatable Requirements
-- [static func == (Self, Self) -> Bool](equatable/==(_:_:).md)
+- [static func == (borrowing Self, borrowing Self) -> Bool](equatable/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](equatable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](equatable/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Tuple Comparison
 - [func == ((), ()) -> Bool](==(_:_:)-958in.md)
@@ -224,6 +224,7 @@ print(c === a, c === b, separator: ", ")
 - [CollectionDifference](collectiondifference.md)
 - [CollectionDifference.Change](collectiondifference/change.md)
 - [CollectionDifference.Index](collectiondifference/index.md)
+- [CollectionOfOne](collectionofone.md)
 - [ContiguousArray](contiguousarray.md)
 - [ContinuousClock.Instant](continuousclock/instant.md)
 - [Dictionary](dictionary.md)
@@ -267,6 +268,8 @@ print(c === a, c === b, separator: ", ")
 - [Never](never.md)
 - [ObjectIdentifier](objectidentifier.md)
 - [ObservationRegistrar](../observation/observationregistrar.md)
+- [ObservationTracking.Event.Kind](../observation/observationtracking/event/kind-swift.struct.md)
+- [ObservationTracking.Options](../observation/observationtracking/options.md)
 - [OpaquePointer](opaquepointer.md)
 - [Optional](optional.md)
 - [Optional.Publisher](optional/publisher-swift.struct.md)

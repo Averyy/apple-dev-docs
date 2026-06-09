@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-A Boolean value that indicates whether the activity can be continued on another device using Handoff.
+A Boolean value that indicates whether the activity can continue on another device using Handoff.
 
 **Availability**:
 - iOS 9.0+
@@ -26,14 +26,18 @@ var isEligibleForHandoff: Bool { get set }
 
 #### Discussion
 
-The default value of this property is [`true`](https://developer.apple.com/documentation/Swift/true).
+Set the value of this property to `true` for activities you can continue on a person’s other devices; otherwise, set it to `false`. The default value of this property is `true`.
+
+For information about how to support Handoff in your app, see [`Implementing Handoff in Your App`](implementing-handoff-in-your-app.md).
 
 ## See Also
 
 - [var isEligibleForSearch: Bool](nsuseractivity/iseligibleforsearch.md)
-  A Boolean value that indicates whether the activity should be added to the on-device index.
+  A Boolean value that indicates whether to add the activity to the on-device index.
 - [var isEligibleForPublicIndexing: Bool](nsuseractivity/iseligibleforpublicindexing.md)
-  A Boolean value that indicates whether the activity can be publicly accessed by all iOS users.
+  A Boolean value that indicates whether the activity is publicly accessible by all iOS users.
+- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
+  A Boolean value that determines whether Siri can suggest the activity as a shortcut.
 - [var expirationDate: Date?](nsuseractivity/expirationdate.md)
   The date after which the activity is no longer eligible for Handoff or indexing.
 

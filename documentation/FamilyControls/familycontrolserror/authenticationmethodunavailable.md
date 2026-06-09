@@ -8,6 +8,7 @@ The device must have a passcode set in order for an individual to enroll with pa
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 
 ## Declaration

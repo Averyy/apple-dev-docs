@@ -26,7 +26,7 @@ object Pass.Barcode
 ## See Also
 
 - [object Pass.Barcodes](pass/barcodes-data.dictionary.md)
-  An object that represents a barcode on a pass.
+  An array of barcode objects on a Pass.
 
 
 ---

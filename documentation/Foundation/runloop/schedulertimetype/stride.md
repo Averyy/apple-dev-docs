@@ -25,11 +25,43 @@ struct Stride
 ### Creating Scheduler Time Strides
 - [init(TimeInterval)](runloop/schedulertimetype/stride/init(_:).md)
   Creates a run loop scheduler time interval from the given time interval.
+- [init?<T>(exactly: T)](runloop/schedulertimetype/stride/init(exactly:).md)
+  Creates a run loop scheduler time interval from a binary integer type.
+- [init(floatLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(floatliteral:).md)
+  Creates a run loop scheduler time interval from a floating-point seconds value.
+- [init(integerLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(integerliteral:).md)
+  Creates a run loop scheduler time interval from an integer seconds value.
+### Converting to Seconds
+- [static func microseconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/microseconds(_:).md)
+  Converts the specified number of microseconds into an instance of this scheduler time type.
+- [static func milliseconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/milliseconds(_:).md)
+  Converts the specified number of milliseconds into an instance of this scheduler time type.
+- [static func nanoseconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/nanoseconds(_:).md)
+  Converts the specified number of nanoseconds into an instance of this scheduler time type.
+- [static func seconds(Double) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/seconds(_:)-4kk8j.md)
+  Converts the specified number of seconds, as a floating-point value, into an instance of this scheduler time type.
+- [static func seconds(Int) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/seconds(_:)-48wwk.md)
+  Converts the specified number of seconds into an instance of this scheduler time type.
 ### Inspecting Stride Properties
 - [var magnitude: TimeInterval](runloop/schedulertimetype/stride/magnitude.md)
   The value of this time interval in seconds.
 - [var timeInterval: TimeInterval](runloop/schedulertimetype/stride/timeinterval.md)
   The value of this time interval in seconds.
+### Operators
+- [static func * (RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/*(_:_:).md)
+  Returns the result of multiplying the values of the two arguments.
+- [static func *= (inout RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride)](runloop/schedulertimetype/stride/*=(_:_:).md)
+  Multiplies the values of the two arguments, and assigns the result to the first argument.
+- [static func + (RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/+(_:_:).md)
+  Returns the result of adding the values of the two arguments.
+- [static func += (inout RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride)](runloop/schedulertimetype/stride/+=(_:_:).md)
+  Adds the values of the two arguments, and assigns the result to the first argument.
+- [static func - (RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> RunLoop.SchedulerTimeType.Stride](runloop/schedulertimetype/stride/-(_:_:).md)
+  Returns the result of subtracting the second stride from the first.
+- [static func -= (inout RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride)](runloop/schedulertimetype/stride/-=(_:_:).md)
+  Subtracts the second stride from the first and assigns the result to the first.
+- [static func < (RunLoop.SchedulerTimeType.Stride, RunLoop.SchedulerTimeType.Stride) -> Bool](runloop/schedulertimetype/stride/_(_:_:).md)
+  Returns a Boolean value indicating whether the first stride is less than the second.
 
 ## Relationships
 

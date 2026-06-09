@@ -36,20 +36,7 @@ struct DeleteFilesIntent: DeleteIntent {
 }
 ```
 
-For more information about the `.files` app intent domain, see [`Making file management actions available to Siri and Apple Intelligence`](making-file-management-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var createFolder: some AssistantSchemas.Intent](assistantschemas/filesintent/createfolder.md)
-  The app intent conforms to the schema for creating a folder.
-- [var moveFiles: some AssistantSchemas.Intent](assistantschemas/filesintent/movefiles.md)
-  The app intent conforms to the schema for moving a file.
-- [var openFile: some AssistantSchemas.Intent](assistantschemas/filesintent/openfile.md)
-  The app intent conforms to the schema for opening a file.
-- [var renameFile: some AssistantSchemas.Intent](assistantschemas/filesintent/renamefile.md)
-  The app intent conforms to the schema for renaming a file.
-- [AssistantSchemas.FilesIntent](assistantschemas/filesintent.md)
-  Assistant schema conformance for app intents that offer file management functionality.
+For more information about the `.files` app intent domain, see doc:Making-file-management-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

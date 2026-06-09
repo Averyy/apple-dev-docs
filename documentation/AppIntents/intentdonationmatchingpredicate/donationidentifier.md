@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Match the transcript record with the given donation identifier
+Creates a predicate that matches a single, previous donation.
 
 **Availability**:
 - iOS 16.0+
@@ -20,12 +20,24 @@ Match the transcript record with the given donation identifier
 static func donationIdentifier(_ identifier: IntentDonationIdentifier) -> IntentDonationMatchingPredicate
 ```
 
+#### Return Value
+
+A predicate that matches the specified donation.
+
+#### Discussion
+
+When you donate an app intent using the methods of [`IntentDonationManager`](intentdonationmanager.md), the method returns a unique identifier for that donation. Use this method to create a predicate that matches only the donation you specified.
+
+## Parameters
+
+- `identifier`: A donation identifier you received after donating an app intent.
+
 ## See Also
 
 - [static func entityIdentifier(EntityIdentifier) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/entityidentifier(_:).md)
-  Match all transcript records referencing the given AppEntity instance
+  Creates a predicate to match any donation that contains the specified entity in a parameter.
 - [static func intentType(any AppIntent.Type, entityIdentifier: EntityIdentifier?) -> IntentDonationMatchingPredicate](intentdonationmatchingpredicate/intenttype(_:entityidentifier:).md)
-  Match all transcript records for the given AppIntent type, optionally only those referencing a given AppEntity instance identifier
+  Creates a predicate to match app intents of the specified type that optionally refers to a specific entity.
 
 
 ---

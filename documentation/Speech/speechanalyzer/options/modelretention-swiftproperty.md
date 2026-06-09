@@ -21,6 +21,8 @@ let modelRetention: SpeechAnalyzer.Options.ModelRetention
 
 ## See Also
 
+- [let ignoresResourceLimits: Bool](speechanalyzer/options/ignoresresourcelimits.md)
+  A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
 - [let priority: TaskPriority](speechanalyzer/options/priority.md)
   The priority of analysis processing work.
 

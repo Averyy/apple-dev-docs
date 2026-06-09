@@ -9,7 +9,6 @@ Values that describes errors related to the payments store.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

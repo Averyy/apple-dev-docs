@@ -83,6 +83,8 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
   An object for changing the values of the subattributes in a paragraph style attribute.
 - [class NSTextTab](nstexttab.md)
   A tab in a paragraph.
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
 
 
 ---

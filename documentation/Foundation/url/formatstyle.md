@@ -33,7 +33,7 @@ let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
 let formatted = url.formatted() // "https://www.example.com/path/to/endpoint"
 ```
 
-You can specify a format style by providing an argument to the `format(_:)` method. The following example uses the previous URL, but preserves only the host and path.
+You can specify a format style by providing an argument to the [`format(_:)`](url/formatstyle/format(_:).md) method. The following example uses the previous URL, but preserves only the host and path.
 
 ```swift
 let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
@@ -48,7 +48,7 @@ let style = URL.FormatStyle(scheme: .never,
 let formatted = style.format(url) // "www.example.com/path/to/endpoint"
 ```
 
-Instantiate a style when you want to format multiple URL instances with the same style. For one-time access to a default style, you can use the static accessor [`url`](formatstyle/url.md) at call points that expect the [`URL.FormatStyle`](url/formatstyle.md) type, such as the `format(_:)` method. This means you can write the example above as follows:
+Instantiate a style when you want to format multiple URL instances with the same style. For one-time access to a default style, you can use the static accessor [`url`](formatstyle/url.md) at call points that expect the [`URL.FormatStyle`](url/formatstyle.md) type, such as the [`format(_:)`](url/formatstyle/format(_:).md) method. This means you can write the example above as follows:
 
 ```swift
 let url = URL(string:"https://www.example.com:8080/path/to/endpoint?key=value")!
@@ -64,7 +64,7 @@ This example works by taking the default style provided by [`url`](formatstyle/u
 
 ##### Parsing Urls
 
-You can use [`URL.FormatStyle`](url/formatstyle.md) to parse strings into URL values. To do this, create a [`URL.ParseStrategy`](url/parsestrategy.md) from a format style, then call the strategy’s [`parse(_:)`](parsestrategy/parse(_:).md) method.
+You can use [`URL.FormatStyle`](url/formatstyle.md) to parse strings into URL values. To do this, create a [`URL.ParseStrategy`](url/parsestrategy.md) from a format style, then call the strategy’s [`parse(_:)`](url/parsestrategy/parse(_:).md) method.
 
 ```swift
 let style = URL.FormatStyle(scheme: .always,
@@ -116,6 +116,9 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
   A type that indicates whether a formatted URL should include a component.
 - [URL.FormatStyle.HostDisplayOption](url/formatstyle/hostdisplayoption.md)
   A type that indicates whether a formatted URL should include the host component.
+### Formatting URL values
+- [func format(URL) -> String](url/formatstyle/format(_:).md)
+  Formats a URL, using this style.
 ### Customizing style behavior
 - [func scheme(URL.FormatStyle.ComponentDisplayOption) -> URL.FormatStyle](url/formatstyle/scheme(_:).md)
   Modifies a format style to display a URL’s scheme component in accordance with the provided option.
@@ -138,11 +141,16 @@ let url = match.1 // url = https://www.example.com:8088/productList?query=slushi
 - [URL.FormatStyle.ComponentDisplayOption](url/formatstyle/componentdisplayoption.md)
   A type that indicates whether a formatted URL should include a component.
 ### Parsing URLs
+- [var parseStrategy: URL.ParseStrategy](url/formatstyle/parsestrategy.md)
+  The parse strategy used by this format style.
 - [struct ParseStrategy](url/parsestrategy.md)
   A parse strategy for creating URLs from formatted strings.
 ### Enumerations
 - [URL.FormatStyle.Component](url/formatstyle/component.md)
   An enumeration of the components of a URL, for use in creating format style options that depend on a component’s value.
+### Default Implementations
+- [FormatStyle Implementations](url/formatstyle/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](url/formatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 

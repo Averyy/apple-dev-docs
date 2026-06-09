@@ -26,13 +26,13 @@ object AppClipAppClipDefaultExperiencesLinkagesResponse
 ## See Also
 
 - [object AppClip](appclip.md)
-  The data structure that represents an App Clips resource.
+  A lightweight version of an app that users can launch instantly without installation, associated with a registered parent app.
 - [object AppClipResponse](appclipresponse.md)
-  A response that contains a single App Clips resource.
+  The response body for endpoints that read an App Clip associated with an app.
 - [object AppClipDefaultExperiencesResponse](appclipdefaultexperiencesresponse.md)
-  A response that contains a list of Default App Clip Experiences resources.
+  The response body for endpoints that list default App Clip experiences.
 - [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
-  A response that contains a list of Advanced App Clip Experiences resources.
+  A response containing a list of configured App Clip advanced experiences.
 - [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
 
 

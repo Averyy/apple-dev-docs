@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -23,7 +25,9 @@ object GameCenterGroup.Relationships
 - [object GameCenterGroup.Relationships.GameCenterAchievementsV2](gamecentergroup/relationships-data.dictionary/gamecenterachievementsv2-data.dictionary.md)
   The data and links that describe the Game Center achievements of the Game Center group.
 - [object GameCenterGroup.Relationships.GameCenterActivities](gamecentergroup/relationships-data.dictionary/gamecenteractivities-data.dictionary.md)
+  The data and links that describe the Game Center Activities related to a group.
 - [object GameCenterGroup.Relationships.GameCenterChallenges](gamecentergroup/relationships-data.dictionary/gamecenterchallenges-data.dictionary.md)
+  The data and links that describe the Game Center Challenges related to a group.
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardSetsV2](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsetsv2-data.dictionary.md)
   The data and links that describe the Game Center leaderboard sets of the Game Center group.
 - [object GameCenterGroup.Relationships.GameCenterLeaderboardsV2](gamecentergroup/relationships-data.dictionary/gamecenterleaderboardsv2-data.dictionary.md)
@@ -44,6 +48,7 @@ object GameCenterGroup.Relationships
 ## See Also
 
 - [object GameCenterGroup.Attributes](gamecentergroup/attributes-data.dictionary.md)
+  Attributes that describe a group resource.
 
 
 ---

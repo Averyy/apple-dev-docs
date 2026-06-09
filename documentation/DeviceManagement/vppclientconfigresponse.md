@@ -6,8 +6,7 @@
 The response that contains the client configuration.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 
@@ -18,11 +17,11 @@ object VppClientConfigResponse
 ## Properties
 
 - `apnToken` (string): The Apple Push Notification token to use for notifications.
-- `appleId` (string): The AppleID associated with the provided sToken.
-- `clientContext` (string): The value currently associated with the provided sToken. This field is only included in the response when a value has been set via the [`Client Configuration`](client-configuration.md) endpoint. See [`Protecting Your VPP Account`](protecting-your-vpp-account.md) for more information.
+- `appleId` (string): The AppleID associated with the provided `sToken`.
+- `clientContext` (string): The value currently associated with the provided `sToken`. This field is only included in the response when a value is set with the [`Client Configuration`](client-configuration.md) endpoint.
 - `countryCode` (string): The two-letter ISO 3166-1 code that designates the country where the VPP account is located. For example, `US` stands for United States, `CA` for Canada, `JP` for Japan, and so on.
-- `defaultPlatform` (string): The value to be passed for the platform parameter in the `contentMetadataLookupUrl` request. Possible values are: - `volumestore`: For apps in the educational store.
-- `enterprisestore`: For apps in the enterprise store. See [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md) for more information.
+- `defaultPlatform` (string): The value to pass for the platform parameter in the `contentMetadataLookupUrl` request. Possible values are: - `volumestore`: For apps in the educational store.
+- `enterprisestore`: For apps in the enterprise store. See [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md) for more information.
 - `email` (string): The email address associated with the provided sToken.
 - `errorMessage` (string): The human-readable explanation of the error.
 - `errorNumber` (int32): The numeric code of the error.

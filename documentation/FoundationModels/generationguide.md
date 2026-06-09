@@ -11,6 +11,7 @@ Guides that control how values are generated.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -55,9 +56,9 @@ struct GenerationGuide<Value>
 ## See Also
 
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
+  Allows for influencing the allowed values of properties of a generable type.
 - [macro Guide(description:_:)](guide(description:_:).md)
-  Allows for influencing the allowed values of properties of a [`Generable`](generable.md) type.
+  Allows for influencing the allowed values of properties of a generable type.
 
 
 ---

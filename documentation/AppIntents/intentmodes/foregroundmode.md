@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: struct
 
-A type defining specific foreground behaviors for an app intent.
+A type that defines the available foreground behaviors for an app intent.
 
 **Availability**:
 - iOS 26.0+
@@ -22,17 +22,17 @@ struct ForegroundMode
 
 #### Overview
 
-The set of options you use to specify when and how the system should bring your app to the foreground when it performs its action.
+Use this type to specify the foreground behaviors you want to apply to your app intent. Each option specifies when and how the system brings your app to the foreground to perform the app intent’s action.
 
 ## Topics
 
 ### Type Properties
 - [static var deferred: IntentModes.ForegroundMode](intentmodes/foregroundmode/deferred.md)
-  The system brings the app to the foreground while it performs the intent’s action or just before returning from its perform function.
+  An option to bring the app to the foreground while running the intent’s action or shortly before the action completes.
 - [static var dynamic: IntentModes.ForegroundMode](intentmodes/foregroundmode/dynamic.md)
-  The system can bring the app to the foreground dynamically while it performs the intent’s action, depending on runtime conditions.
+  An option to bring the app to the foreground if conditions permit it.
 - [static var immediate: IntentModes.ForegroundMode](intentmodes/foregroundmode/immediate.md)
-  The system brings the app into the foreground immediately after it resolves the intent’s parameters.
+  An option to bring the app to the foreground immediately after the system resolves the intent’s parameters.
 
 ## Relationships
 

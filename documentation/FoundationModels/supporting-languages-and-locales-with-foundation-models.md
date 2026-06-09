@@ -59,7 +59,7 @@ For advanced use cases where you need full language support details, use [`suppo
 
 #### Handle an Unsupported Language or Locale Errors
 
-When you call [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) on a [`LanguageModelSession`](languagemodelsession.md), the Foundation Models framework checks the language or languages of the input prompt text, and whether your prompt asks the model to respond in any specific language or languages. If the model detects a language it doesn’t support, the session throws [`LanguageModelSession.GenerationError.unsupportedLanguageOrLocale(_:)`](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md). Handle the error by communicating to the person using your app that a language in their request is unsupported.
+When you call [`respond(to:options:)`](languagemodelsession/respond(to:options:).md) on a [`LanguageModelSession`](languagemodelsession.md), the Foundation Models framework checks the language or languages of the input prompt text, and whether your prompt asks the model to respond in any specific language or languages. If the model detects a language it doesn’t support, the session throws [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](languagemodelerror/unsupportedlanguageorlocale(_:).md). Handle the error by communicating to the person using your app that a language in their request is unsupported.
 
 If your app supports languages or locales that Apple Intelligence doesn’t, help people that use your app by:
 
@@ -67,7 +67,7 @@ If your app supports languages or locales that Apple Intelligence doesn’t, hel
 - Disabling your Foundation Models framework feature.
 - Providing an alternative app experience, if possible.
 
-> ❗ **Important**: Guardrails for model input and output safety are only for supported languages and locales. If a prompt contains sensitive content in an unsupported language, which typically is a short phrase mixed-in with text in a supported language, it might not throw a [`LanguageModelSession.GenerationError.unsupportedLanguageOrLocale(_:)`](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md) error. If unsupported-language detection fails, the guardrails may also fail to flag that short, unsupported content. For more on guardrails, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
+> ❗ **Important**: Guardrails for model input and output safety are only for supported languages and locales. If a prompt contains sensitive content in an unsupported language, which typically is a short phrase mixed-in with text in a supported language, it might not throw a [`LanguageModelError.unsupportedLanguageOrLocale(_:)`](languagemodelerror/unsupportedlanguageorlocale(_:).md) error. If unsupported-language detection fails, the guardrails may also fail to flag that short, unsupported content. For more on guardrails, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
 
 #### Use Instructions to Set the Locale and Language
 
@@ -101,10 +101,12 @@ Finally, thoroughly test your instructions to ensure the model is responding in 
 
 ## See Also
 
-- [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
-  Returns a Boolean indicating whether the given locale is supported by the model.
-- [case unsupportedLanguageOrLocale(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md)
-  An error that indicates an error that occurs if the model is prompted to respond in a language that it does not support.
+- [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+  Identify topics, actions, objects, and emotions in input text with a content tagging model.
+- [class SystemLanguageModel](systemlanguagemodel.md)
+  An on-device Apple Foundation Model capable of text generation tasks.
+- [enum LanguageModelError](languagemodelerror.md)
+  A failure that may occur while generating a response when using any language model.
 
 
 ---

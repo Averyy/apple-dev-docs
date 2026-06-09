@@ -17,6 +17,8 @@ const LookAroundReadyState: Readonly<{
     readonly Error: "error";
     readonly Destroyed: "destroyed";
 }>
+type LookAroundReadyState =
+    (typeof LookAroundReadyState)[keyof typeof LookAroundReadyState];
 ```
 
 ## Topics
@@ -30,9 +32,6 @@ const LookAroundReadyState: Readonly<{
   A value that indicates the Look Around view encountered an error while loading.
 - [Loading](lookaroundreadystate/loading.md)
   A value that indicates the Look Around view is loading.
-### Type Aliases
-- [type LookAroundReadyState](lookaroundreadystate/lookaroundreadystate.md)
-  A type alias that represents the values of the look around ready state enumeration.
 
 ## See Also
 

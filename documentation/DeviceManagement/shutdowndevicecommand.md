@@ -10,8 +10,6 @@ The command to remotely and immediately shut down a device.
 - iPadOS 10.3+
 - Mac Catalyst 10.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,7 +19,7 @@ object ShutDownDeviceCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

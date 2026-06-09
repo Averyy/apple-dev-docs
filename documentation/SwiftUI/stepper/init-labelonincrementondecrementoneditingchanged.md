@@ -16,7 +16,8 @@ Creates a stepper instance that performs the closures you provide when the user 
 ## Declaration
 
 ```swift
-init(@ViewBuilder label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
+nonisolated
+init(@ContentBuilder label: () -> Label, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
 ```
 
 #### Discussion

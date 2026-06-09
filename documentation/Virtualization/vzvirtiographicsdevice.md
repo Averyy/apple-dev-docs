@@ -40,6 +40,8 @@ class VZVirtioGraphicsDevice
   A Virtio graphics scanout that corresponds to a Virtio graphics scanout configuration.
 - [class VZMacGraphicsDisplay](vzmacgraphicsdisplay.md)
   An object that represents the graphics display on a Mac.
+- [struct VZVirtualMachineViewAdaptor](vzvirtualmachineviewadaptor.md)
+  A sendable wrapper that connects a virtual machine view to a virtual machine.
 
 
 ---

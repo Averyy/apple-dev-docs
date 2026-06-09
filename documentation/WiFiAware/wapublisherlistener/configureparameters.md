@@ -8,6 +8,7 @@ Configures the provided parameters for a Wi-Fi Aware publish operation and conne
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

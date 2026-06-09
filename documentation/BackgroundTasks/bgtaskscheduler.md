@@ -11,6 +11,7 @@ A class for scheduling tasks that add background support to your app’s most cr
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 
@@ -57,6 +58,9 @@ Background tasks give your app a way to run code even when the app is suspended:
   An enumeration of the task scheduling errors.
 - [class let errorDomain: String](bgtaskscheduler/errordomain.md)
   The background tasks error domain as a string.
+### Instance Methods
+- [func submitTaskRequest(BGTaskRequest, completionHandler: ((any Error)?) -> Void)](bgtaskscheduler/submittaskrequest(_:completionhandler:).md)
+  Submits a background task request to be scheduled with a completion handler.
 
 ## Relationships
 

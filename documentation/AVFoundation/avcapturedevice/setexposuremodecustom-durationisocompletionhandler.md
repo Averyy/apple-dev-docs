@@ -43,12 +43,12 @@ When using [`AVCapturePhotoOutput`](avcapturephotooutput.md) to capture photos, 
 
 - [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
   The length of time over which exposure takes place.
-- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
-  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 - [var iso: Float](avcapturedevice/iso.md)
   The current exposure ISO value.
 - [var lensAperture: Float](avcapturedevice/lensaperture.md)
   The size of the lens diaphragm.
+- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
+  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 
 
 ---

@@ -16,6 +16,7 @@ A control that performs increment and decrement actions.
 ## Declaration
 
 ```swift
+nonisolated
 struct Stepper<Label> where Label : View
 ```
 

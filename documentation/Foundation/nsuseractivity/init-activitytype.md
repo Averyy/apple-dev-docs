@@ -31,10 +31,6 @@ An [`NSUserActivity`](nsuseractivity.md) object.
 ## See Also
 
 - [Handoff Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/Handoff/HandoffFundamentals/HandoffFundamentals.html#//apple_ref/doc/uid/TP40014338)
-- [Creating a user activity object](creating-a-user-activity-object.md)
-  Identify key user interactions and include the information to restore them later.
-- [convenience init()](nsuseractivity/init.md)
-  Creates a user activity object using the first activity type declared in the app’s information property list file.
 
 
 ---

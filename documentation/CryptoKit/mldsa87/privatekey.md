@@ -24,7 +24,7 @@ struct PrivateKey
 
 ### Creating a private key
 - [init() throws](mldsa87/privatekey/init.md)
-  Initializes a new random private key.
+  Creates a random MLDSA87 private key.
 - [init<D>(integrityCheckedRepresentation: D) throws](mldsa87/privatekey/init(integritycheckedrepresentation:).md)
   Initializes a private key from an integrity-checked data representation.
 - [init<D>(seedRepresentation: D, publicKey: MLDSA87.PublicKey?) throws](mldsa87/privatekey/init(seedrepresentation:publickey:).md)

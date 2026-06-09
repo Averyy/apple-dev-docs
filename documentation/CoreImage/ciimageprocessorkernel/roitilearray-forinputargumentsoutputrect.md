@@ -21,7 +21,7 @@ class func roiTileArray(forInput inputIndex: Int32, arguments: [String : Any]?, 
 
 #### Return Value
 
- An array of [`CIVector`](civector.md) that specify tile regions of the `inputIndex`’th input that is required for the above `outputRect` Each region tile in the array is a created by calling `/CIVector/vectorWithCGRect:/` The tiles may overlap but should fully cover the area of ‘input’ that is needed. If a processor has multiple inputs, then each input should return the same number of region tiles.
+ An array of [`CIVector`](civector.md) that specify tile regions of the `inputIndex`’th input that is required for the above `outputRect` Each region tile in the array is a created by calling `/CIVector/vectorWithCGRect:` The tiles may overlap but should fully cover the area of ‘input’ that is needed. If a processor has multiple inputs, then each input should return the same number of region tiles.
 
 #### Discussion
 

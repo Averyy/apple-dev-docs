@@ -36,7 +36,7 @@ The delegate may use this method if it is keeping track of the encoded or decode
 
 - [func unarchiver(NSKeyedUnarchiver, cannotDecodeObjectOfClassName: String, originalClasses: [String]) -> AnyClass?](nskeyedunarchiverdelegate/unarchiver(_:cannotdecodeobjectofclassname:originalclasses:).md)
   Informs the delegate that the class with a given name is not available during decoding.
-- [func unarchiver(NSKeyedUnarchiver, didDecode: Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
+- [func unarchiver(NSKeyedUnarchiver, didDecode: consuming Any?) -> Any?](nskeyedunarchiverdelegate/unarchiver(_:diddecode:).md)
   Informs the delegate that a given object has been decoded.
 
 

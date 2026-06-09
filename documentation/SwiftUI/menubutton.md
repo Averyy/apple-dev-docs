@@ -11,6 +11,7 @@ A button that displays a menu containing a list of choices when pressed.
 ## Declaration
 
 ```swift
+nonisolated
 struct MenuButton<Label, Content> where Label : View, Content : View
 ```
 

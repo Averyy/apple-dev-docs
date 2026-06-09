@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single App Info Localizations resource.
+The response body for endpoints that create, read, or modify a localized app info entry.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -29,7 +29,7 @@ object AppInfoLocalizationResponse
 - [object AppInfoLocalizationUpdateRequest](appinfolocalizationupdaterequest.md)
   The request body you use to update an App Info Localization.
 - [object AppInfoLocalizationsResponse](appinfolocalizationsresponse.md)
-  A response that contains a list of AppInfoLocalizations resources.
+  The response body for endpoints that list localized app info entries for an app.
 
 
 ---

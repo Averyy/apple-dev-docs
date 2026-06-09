@@ -40,6 +40,7 @@ Each [`URLSessionTaskMetrics`](urlsessiontaskmetrics.md) object contains the [`t
   The number of redirects that occurred during the execution of the task.
 ### Type Methods
 - [class func new() -> Self](urlsessiontaskmetrics/new.md)
+  Creates a task metrics instance.
 
 ## Relationships
 

@@ -17,7 +17,7 @@ Creates an instance that uniquely identifies and creates views across updates ba
 ## Declaration
 
 ```swift
-init<C, R>(_ data: Binding<C>, editActions: EditActions<C>, @ViewBuilder content: @escaping (Binding<C.Element>) -> R) where Data == IndexedIdentifierCollection<C, ID>, ID == C.Element.ID, Content == EditableCollectionContent<R, C>, C : MutableCollection, C : RandomAccessCollection, R : View, C.Element : Identifiable, C.Index : Hashable
+init<C, R>(_ data: Binding<C>, editActions: EditActions<C>, @ContentBuilder content: @escaping (Binding<C.Element>) -> R) where Data == IndexedIdentifierCollection<C, ID>, ID == C.Element.ID, Content == EditableCollectionContent<R, C>, C : MutableCollection, C : RandomAccessCollection, R : View, C.Element : Identifiable, C.Index : Hashable
 ```
 
 #### Discussion
@@ -55,7 +55,7 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 
 - `data`: The identified data that the [`ForEach`](foreach.md) instance uses to create views dynamically and can be edited by the user.
 - `editActions`: The edit actions that are synthesized on `data`.
-- `content`: The view builder that creates views dynamically.
+- `content`: The content builder that creates views dynamically.
 
 ## See Also
 

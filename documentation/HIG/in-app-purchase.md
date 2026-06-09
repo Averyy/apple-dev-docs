@@ -133,7 +133,7 @@ The sign-up screen in your watchOS app needs to display the same set of informat
 [In-App Purchase](../StoreKit/in-app-purchase.md) — StoreKit
 
 #### Videos
-- [What’s new in StoreKit and In-App Purchase](https://developer.apple.com/videos/play/wwdc2024/10061) - Learn how to build and deliver even better purchase experiences using the App Store In-App Purchase system. We’ll demo new StoreKit views control styles and new APIs to improve your subscription customization, discuss new fields for transaction-level information, and explore new testability in Xcode. We’ll also review an important StoreKit deprecation.
+- [What’s new in Apple In-App Purchase](https://developer.apple.com/videos/play/wwdc2026/210) - Discover how monthly subscriptions with a 12-month commitment give people a more affordable option to pay for your subscription and secure a longer-term commitment. Explore how to configure and test this new payment option using App Store Connect, StoreKit APIs, Xcode testing, and more. Plus, learn about improvements to offer code redemption APIs, and enhancements to the App Review submission experience.
 
 ## Change log
 | Date | Changes |

@@ -17,6 +17,7 @@ Creates a new gradient mesh specified as a 2D grid of colored points, specifying
 ## Declaration
 
 ```swift
+nonisolated
 init(width: Int, height: Int, bezierPoints: [MeshGradient.BezierPoint], colors: [Color], background: Color = .clear, smoothsColors: Bool = true, colorSpace: Gradient.ColorSpace = .device)
 ```
 

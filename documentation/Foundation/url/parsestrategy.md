@@ -79,6 +79,19 @@ let url = try? URL(urlString, strategy: .url
   Modifies a parse strategy to parse a URL’s fragment component in accordance with the provided behavior.
 - [URL.ParseStrategy.ComponentParseStrategy](url/parsestrategy/componentparsestrategy.md)
   The strategy used to parse one component of a URL.
+### Parsing strings
+- [func parse(String) throws -> URL](url/parsestrategy/parse(_:).md)
+  Parses a URL string in accordance with this strategy and returns the parsed value.
+### Locating URLs with regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: URL)?](url/parsestrategy/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
+### Supporting Types
+- [URL.ParseStrategy.RegexOutput](url/parsestrategy/regexoutput.md)
+  The type returned when capturing matching substrings with this strategy.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](url/parsestrategy/customconsumingregexcomponent-implementations.md)
+- [ParseStrategy Implementations](url/parsestrategy/parsestrategy-implementations.md)
+- [RegexComponent Implementations](url/parsestrategy/regexcomponent-implementations.md)
 
 ## Relationships
 
@@ -94,6 +107,11 @@ let url = try? URL(urlString, strategy: .url
 - [RegexComponent](../Swift/RegexComponent.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var parseStrategy: URL.ParseStrategy](url/formatstyle/parsestrategy.md)
+  The parse strategy used by this format style.
 
 
 ---

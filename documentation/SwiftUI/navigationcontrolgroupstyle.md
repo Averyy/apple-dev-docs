@@ -15,6 +15,7 @@ The navigation control group style.
 ## Declaration
 
 ```swift
+nonisolated
 struct NavigationControlGroupStyle
 ```
 

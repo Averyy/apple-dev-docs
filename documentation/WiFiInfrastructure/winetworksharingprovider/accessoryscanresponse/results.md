@@ -8,6 +8,7 @@ An array of scan results containing access points the accessory has discovered.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

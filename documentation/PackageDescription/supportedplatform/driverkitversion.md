@@ -28,6 +28,8 @@ struct DriverKitVersion
   The value that represents DriverKit 24.0.
 - [static let v25: SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion/v25.md)
   The value that represents DriverKit 25.0.
+- [static let v27: SupportedPlatform.DriverKitVersion](supportedplatform/driverkitversion/v27.md)
+  The value that represents DriverKit 27.0.
 
 ## Relationships
 

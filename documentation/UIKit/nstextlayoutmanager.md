@@ -100,7 +100,7 @@ class NSTextLayoutManager
   Values that describe where and how the framework extends segments of a selection.
 ### Instance Properties
 - [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextlayoutmanager/resolvesnaturalalignmentwithbasewritingdirection.md)
-  Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
+  Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
 
 ## Relationships
 
@@ -123,6 +123,8 @@ class NSTextLayoutManager
   Interact with text by managing text selection and inserting custom text elements.
 - [Display text with a custom layout](display-text-with-a-custom-layout.md)
   Lay out text in a custom-shaped container and apply glyph substitutions.
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+  Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextContainer](nstextcontainer.md)
   A region where text layout occurs.
 - [class NSTextLayoutFragment](nstextlayoutfragment.md)
@@ -131,6 +133,10 @@ class NSTextLayoutManager
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
 - [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
+- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+  A protocol that identifies a view or layer as a drawable element for a text layout fragment.
+- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+  A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 - [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 

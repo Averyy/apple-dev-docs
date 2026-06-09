@@ -11,12 +11,12 @@ A Boolean value that indicates whether a route has tolls.
 ## Declaration
 
 ```swift
-hasTolls?: boolean;
+hasTolls: boolean | null;
 ```
 
 #### Discussion
 
-When `true`, this route has tolls. If `false`, this route doesn’t have any tolls. If undefined, the route may or may not have tolls.
+When `true`, this route has tolls. If `false`, this route doesn’t have any tolls. If `null`, the route may or may not have tolls.
 
 ## See Also
 
@@ -30,8 +30,6 @@ When `true`, this route has tolls. If `false`, this route doesn’t have any tol
   The expected travel time, in seconds.
 - [transportType](route/transporttype.md)
   The overall route transport type.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

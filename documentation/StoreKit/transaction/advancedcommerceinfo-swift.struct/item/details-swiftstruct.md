@@ -33,6 +33,8 @@ struct Details
   The price of the item.
 - [let sku: String](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/sku.md)
   Unique identifier for the item.
+- [let partners: [Transaction.AdvancedCommerceInfo.Partner]](transaction/advancedcommerceinfo-swift.struct/item/details-swift.struct/partners.md)
+  The partners associated with this item.
 
 ## Relationships
 

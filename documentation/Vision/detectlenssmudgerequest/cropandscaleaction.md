@@ -12,6 +12,7 @@ An optional setting that tells the algorithm how to scale an input image before 
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

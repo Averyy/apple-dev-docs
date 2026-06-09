@@ -8,6 +8,7 @@ The Service Set Identifier (SSID) for a Wi-Fi network, from which applications d
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

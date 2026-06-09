@@ -10,8 +10,6 @@ The dictionary used to configure VPN tunnels.
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

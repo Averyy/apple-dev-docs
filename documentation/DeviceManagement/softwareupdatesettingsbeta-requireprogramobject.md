@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The object that configures beta program requirement settings.
+The device automatically enrolls in this beta program. This key must only be present if the `ProgramEnrollment` key is set to `AlwaysOn`. The `OfferPrograms` key must not be present if this key is present.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,7 +25,7 @@ object SoftwareUpdateSettingsBeta_RequireProgramObject
 ## See Also
 
 - [object SoftwareUpdateSettingsBeta_ProgramObject](softwareupdatesettingsbeta_programobject.md)
-  The object that configures a specific beta program.
+  The name and token associated with a specific beta program to be allowed.
 
 
 ---

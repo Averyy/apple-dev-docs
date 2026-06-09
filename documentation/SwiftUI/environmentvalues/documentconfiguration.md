@@ -42,6 +42,9 @@ struct ContentView: View {
 ## See Also
 
 - [struct DocumentConfiguration](documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+  The undo manager used to register a view’s undo operations.
 
 
 ---

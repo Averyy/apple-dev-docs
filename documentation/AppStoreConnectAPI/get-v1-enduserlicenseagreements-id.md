@@ -1,4 +1,4 @@
-# Read End User License Agreement Information
+# Read end user license agreement information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,11 +22,11 @@ Get the custom end user license agreement associated with an app, and the territ
 
 ## See Also
 
-- [Read the End User License Agreement Information of an App](get-v1-apps-_id_-enduserlicenseagreement.md)
+- [Read the end user license agreement information of an app](get-v1-apps-_id_-enduserlicenseagreement.md)
   Get the custom end user license agreement (EULA) for a specific app and the territories where the agreement applies.
-- [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
+- [List all territories for an end user license agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
-- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
+- [List territory IDs for an end user license agreement](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 
 
 ---

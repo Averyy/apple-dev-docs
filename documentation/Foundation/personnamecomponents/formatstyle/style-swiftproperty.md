@@ -164,6 +164,8 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
   The locale to use when formatting the person name components.
 - [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+  Modifies the person name components format style to use the specified locale.
 
 
 ---

@@ -67,6 +67,7 @@ Given that this is an immutable variant of the object, you should not allocate a
 
 - [class AVAudioMix](avaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
+- [enum AVAudioMixInputParametersTrackID](avaudiomixinputparameterstrackid.md)
 - [class AVMutableAudioMix](avmutableaudiomix.md)
   An object that manages the input parameters for mixing audio tracks.
 - [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)

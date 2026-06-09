@@ -17,13 +17,14 @@ Creates an instance with the given alignment.
 ## Declaration
 
 ```swift
-init(alignment: Alignment = .center, @ViewBuilder content: () -> Content)
+nonisolated
+init(alignment: Alignment = .center, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
 
 - `alignment`: The guide for aligning the subviews in this stack on both the x- and y-axes.
-- `content`: A view builder that creates the content of this stack.
+- `content`: A content builder that creates the content of this stack.
 
 
 ---

@@ -32,6 +32,8 @@ protocol ItemDeactivation : NSObjectProtocol
 
 ## See Also
 
+- [FSVolume.Operations](fsvolume/operations.md)
+  Methods that all volumes implement to provide required capabilities.
 - [FSVolume.OpenCloseOperations](fsvolume/opencloseoperations.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
 - [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
@@ -40,12 +42,12 @@ protocol ItemDeactivation : NSObjectProtocol
   Methods and properties implemented by volumes that want to enforce access check operations.
 - [FSVolume.RenameOperations](fsvolume/renameoperations.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
-  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 - [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
 - [FSVolume.XattrOperations](fsvolume/xattroperations.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
+- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 
 ---

@@ -14,6 +14,11 @@ Place the video over the provided scene.
 static func over(scene: UIScene) -> AVExperienceController.Configuration.Placement
 ```
 
+## See Also
+
+- [static var unspecified: AVExperienceController.Configuration.Placement](avexperiencecontroller/configuration-swift.struct/placement-swift.struct/unspecified.md)
+  Used as default when no UIScene is specified as a placement.
+
 
 ---
 

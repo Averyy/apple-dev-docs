@@ -24,9 +24,38 @@ Core Video image buffers provides a convenient interface for managing different 
 ### Creating color spaces
 - [func CVImageBufferCreateColorSpaceFromAttachments(CFDictionary) -> Unmanaged<CGColorSpace>?](cvimagebuffercreatecolorspacefromattachments(_:).md)
   Attempts to create a Core Graphics color space from the image buffer’s attachments that you specify.
+### Protocols
+- [protocol CVImageBufferRepresentable](cvimagebufferrepresentable.md)
+  CVImageBufferRepresentable protocol is a sealed protocol intended to be implemented by the types in CoreVideo framework. This protocol facilitates Swift types that wrap a value of CVImageBuffer type.
+- [protocol CVImageBufferAttachmentKeyDefinitions](cvimagebufferattachmentkeydefinitions.md)
+  A namespace for image buffer attachment keys.
 ### Data types
 - [typealias CVImageBuffer](cvimagebuffer.md)
   A reference to a Core Video image buffer.
+- [struct CVImageSize](cvimagesize.md)
+  Size of image buffer expressed as pixel count.
+- [enum CVImageBufferOriginPosition](cvimagebufferoriginposition.md)
+- [struct CVImageCleanAperture](cvimagecleanaperture.md)
+  An image’s clean aperture is a region of video to display.
+- [struct CVImagePixelAspectRatio](cvimagepixelaspectratio.md)
+  Aspect ratio of each pixel in the image buffer.
+- [struct CVImageDisplayMaskRectangle](cvimagedisplaymaskrectangle.md)
+  Specifies the rectangular display area within the image.
+- [struct CVImageStereoDisplayMaskRectangle](cvimagestereodisplaymaskrectangle.md)
+  Specifies the rectangular display area within a view of stereo image.
+- [struct CVImageChromaField](cvimagechromafield.md)
+  Information about chroma field in the 2VUY format image data.
+### Color and signal characteristics
+- [enum CVImageColorPrimaries](cvimagecolorprimaries.md)
+  Color primaries describe the gamut used for the rendering intent of an image.
+- [enum CVImageTransferFunction](cvimagetransferfunction.md)
+  The transfer function describes the tonality of an image for use in color matching operations. This value is used along with a color primaries gamut [`CVImageColorPrimaries`](cvimagecolorprimaries.md). Most apps should use the [`CVImageTransferFunction.itu_R_709_2`](cvimagetransferfunction/itu_r_709_2.md) transfer function.
+- [enum CVImageLogTransferFunction](cvimagelogtransferfunction.md)
+  Identifies the specific log curve transfer function or gamma of the content.
+- [enum CVImageYCbCrMatrix](cvimageycbcrmatrix.md)
+  Indicates color matrix used for converting image buffer from YCbCr to RGB.
+- [enum CVImageAlphaChannelMode](cvimagealphachannelmode.md)
+- [enum CVImageFieldDetail](cvimagefielddetail.md)
 ### Converting between strings and integer code points
 - [func CVColorPrimariesGetIntegerCodePointForString(CFString?) -> Int32](cvcolorprimariesgetintegercodepointforstring(_:).md)
   Returns the standard integer code point corresponding to the Core Video color primaries constant string that you specify.
@@ -63,6 +92,12 @@ Core Video image buffers provides a convenient interface for managing different 
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
 - [Image Buffer Display Mask Rectangle Keys](image-buffer-display-mask-rectangle-keys.md)
   Keys that describe the display dimensions of an image buffer mask.
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 ## See Also
 

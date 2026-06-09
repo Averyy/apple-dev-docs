@@ -20,6 +20,23 @@ userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestC
 let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String
 ```
 
+## See Also
+
+- [Providing an integrated view of your timeline when playing HLS interstitials](providing-an-integrated-view-of-your-timeline-when-playing-hls-interstitials.md)
+  Go beyond simple ad insertion with point and fill occupancy HLS interstitials.
+- [class AVPlayerInterstitialEvent](avplayerinterstitialevent.md)
+  An object that provides instructions for how a player presents interstitial content.
+- [class AVPlayerInterstitialEventController](avplayerinterstitialeventcontroller.md)
+  An object that schedules interstitial events for items played by the primary player.
+- [class AVPlayerInterstitialEventMonitor](avplayerinterstitialeventmonitor.md)
+  An object that monitors the scheduling and progress of interstitial events.
+- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
+- [class AVPlayerItemIntegratedTimeline](avplayeritemintegratedtimeline.md)
+  An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
+
 
 ---
 

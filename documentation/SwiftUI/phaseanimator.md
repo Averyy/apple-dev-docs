@@ -17,6 +17,7 @@ A container that animates its content by automatically cycling through a collect
 ## Declaration
 
 ```swift
+nonisolated
 struct PhaseAnimator<Phase, Content> where Phase : Equatable, Content : View
 ```
 

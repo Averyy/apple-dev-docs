@@ -27,8 +27,6 @@ func hv_vcpu_interrupt(_ vcpus: UnsafeMutablePointer<hv_vcpuid_t>, _ vcpu_count:
 
 - [func hv_vcpu_run_until(hv_vcpuid_t, UInt64) -> hv_return_t](hv_vcpu_run_until(_:_:).md)
   Executes a vCPU until it reaches the deadline defined in absolute time units you provide.
-- [func hv_vcpu_invalidate_tlb(hv_vcpuid_t) -> hv_return_t](hv_vcpu_invalidate_tlb(_:).md)
-  Invalidates the translation look-aside buffer (TLB) of a vCPU.
 - [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
   Flushes the cached state of a vCPU.
 - [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)

@@ -33,20 +33,29 @@ Specify the type of comparison to perform during a property-matched query.
 
 ## See Also
 
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-- [Common data types](common-data-types.md)
-  Specify common types that your app supports, including currencies, files, and contacts.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Static parameter types](app-enums.md)
-  Types that represent an enumerable list of static parameter values.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
+- [macro ComputedProperty()](computedproperty().md)
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
+- [macro ComputedProperty(title: LocalizedStringResource)](computedproperty(title:).md)
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
+- [macro ComputedProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(indexingkey:).md)
+  A macro that adds a computed app entity property with get and set accessors.
+- [macro ComputedProperty(customIndexingKey: CSCustomAttributeKey)](computedproperty(customindexingkey:).md)
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
+- [macro ComputedProperty(title: LocalizedStringResource, customIndexingKey: CSCustomAttributeKey)](computedproperty(title:customindexingkey:).md)
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
+- [macro ComputedProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](computedproperty(title:indexingkey:).md)
+  A macro that adds a computed app entity property with a get accessor and an optional set accessor.
+- [macro DeferredProperty()](deferredproperty().md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [macro DeferredProperty(title: LocalizedStringResource)](deferredproperty(title:).md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [macro DeferredProperty(indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](deferredproperty(indexingkey:).md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [macro DeferredProperty(title: LocalizedStringResource, indexingKey: PartialKeyPath<CSSearchableItemAttributeSet>)](deferredproperty(title:indexingkey:).md)
+  A macro that adds an asynchronous app entity property with an asynchronous get accessor.
+- [class EntityProperty](entityproperty.md)
+  A property wrapper that exposes the associated property to the system.
+- [struct EntityPropertyModifiers](entitypropertymodifiers.md)
 
 
 ---

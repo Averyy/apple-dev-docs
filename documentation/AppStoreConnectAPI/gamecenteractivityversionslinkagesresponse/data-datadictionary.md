@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an activity resource.
+The resource linkage data identifying a version of a Game Center activity.
 
 **Availability**:
 - App Store Connect API 3.6+

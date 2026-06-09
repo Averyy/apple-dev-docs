@@ -27,7 +27,7 @@ A view that handles the specified app intent’s perform
 
 Use this view modifier to receive instances in a particular scene within your app. The scene that SwiftUI routes the incoming user activity to depends on the structure of your app, what scenes are active, and other configuration. For more information, see [`handlesExternalEvents(matching:)`](scene/handlesexternalevents(matching:).md).
 
-If the app intent implements a perform() method, it will be called after the action closure.  This can be useful if your app intent supports running in the background via the AppIntent.IntentModes API
+The action closure is called before the app is foregrounded. If the app intent implements a perform() method, it will be called after the action closure. This can be useful if your app intent supports running in the background via the AppIntent.IntentModes API.
 
 > **Note**: Usage of the app intent instance provided to the action closure is limited to inspecting parameter values, interactive requests like [`requestValue(_:)`](https://developer.apple.com/documentation/AppIntents/IntentParameter/requestValue(_:)-592nd) or <doc://com.apple.documentation/documentation/appintents/intentparameter/needsvalueerror(_:) will not work.
 
@@ -35,6 +35,19 @@ If the app intent implements a perform() method, it will be called after the act
 
 - `intent`: The type of App Intent that the `action` closure handles.
 - `action`: A closure that SwiftUI calls when the specified app intent is being performed. The closure takes the app intent instance as an input parameter.
+
+## See Also
+
+- [func appEntityIdentifier(EntityIdentifier?) -> some View](view/appentityidentifier(_:).md)
+  Associates a SwiftUI view with an app entity to make its content discoverable by Apple Intelligence and Siri.
+- [func appEntityIdentifier<I>(forSelectionType: I.Type, identifier: (I) -> EntityIdentifier?) -> some View](view/appentityidentifier(forselectiontype:identifier:).md)
+  Associates the items in a SwiftUI list view with app entities to make them discoverable by Apple Intelligence and Siri.
+- [func appEntityUIElements((AppEntityUIElementsContext) -> [AppEntityUIElement]) -> some View](view/appentityuielements(_:).md)
+  Provides the system with additional context to make a custom view’s content discoverable by Apple Intelligence and Siri.
+- [func shortcutsLinkStyle(ShortcutsLinkStyle) -> some View](view/shortcutslinkstyle(_:).md)
+  Sets the given style for ShortcutsLinks within the view hierarchy
+- [func siriTipViewStyle(SiriTipViewStyle) -> some View](view/siritipviewstyle(_:).md)
+  Sets the given style for SiriTipView within the view hierarchy
 
 
 ---

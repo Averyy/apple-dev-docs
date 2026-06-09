@@ -3,7 +3,7 @@
 **Framework**: MetricKit  
 **Kind**: module
 
-Aggregate and analyze per-device reports on exception and crash diagnostics and on power and performance metrics.
+Measure your app’s performance using daily metric and diagnostic reports from real users.
 
 **Availability**:
 - iOS 13.0+
@@ -14,99 +14,153 @@ Aggregate and analyze per-device reports on exception and crash diagnostics and 
 
 #### Overview
 
-With MetricKit, you can receive on-device app diagnostics and power and performance metrics the system captures. The system delivers metric reports about the previous 24 hours to a registered app at most once per day, and delivers diagnostic reports immediately in iOS 15 and later and macOS 12 and later. This framework supports diagnostics for crashes, hangs, energy, and disk writes for apps running in visionOS but doesn’t report metrics for apps running in visionOS. This includes apps built for visionOS or compatible iPhone and iPad apps running in visionOS.
+MetricKit provides on-device app diagnostics and power and performance metrics the system captures. The system delivers metric reports about the previous 24 hours to your app at most once per day. Diagnostic reports arrive immediately in iOS 15 and later, and macOS 12 and later. For apps running in visionOS, the framework supports diagnostics for crashes, hangs, high energy use, and disk writes, but doesn’t report performance metrics. This applies to apps built for visionOS and compatible iPhone and iPad apps running in visionOS.
 
-Use the data in the reports to help improve the performance of your iOS app, macOS app, or Mac app built with Mac Catalyst. The framework includes the following:
+Use this data to improve the performance of your iOS app, macOS app, or Mac Catalyst app.
 
-- A manager class and a subscriber protocol
-- Payload classes for reported data
-- Classes for each category of metrics and diagnostics
-- Classes for measurement units, such as bars of cellular connectivity
-- Classes for representing accumulated data, such as histograms
-- A class for capturing stack traces in diagnostics
+In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) delivers [`MetricReport`](metricreport.md) and [`DiagnosticReport`](diagnosticreport.md) values through asynchronous sequences. On visionOS 27 and later, [`MetricManager`](metricmanager.md) delivers diagnostic reports only. MetricKit also supports tracking state-based metrics using the [`StateReporting`](https://developer.apple.com/documentation/StateReporting) framework.
 
 ## Topics
 
 ### Essentials
-- [class MXMetricManager](mxmetricmanager.md)
-  The shared object that registers you to receive metrics, creates logs for custom metrics, and gives access to past reports.
-- [class MXMetricPayload](mxmetricpayload.md)
-  An object that encapsulates a daily metrics report.
-- [class MXDiagnosticPayload](mxdiagnosticpayload.md)
-  An object that encapsulates a diagnostic report.
-- [protocol MXMetricManagerSubscriber](mxmetricmanagersubscriber.md)
-  A protocol defining a method for receiving a daily metrics report.
+- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+  Receive daily performance and diagnostic reports from real device usage.
+- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+  Work with the metric values, diagnostic data, and environments in MetricKit reports.
+- [Track performance by app state using MetricKit](track-performance-by-app-state-using-metrickit.md)
+  Collect performance metrics, diagnostic reports, and experiment data related to your app’s current state using the MetricKit framework.
 ### Performance improvements
 - [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md)
   Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
-### Battery metrics
-- [class MXCellularConditionMetric](mxcellularconditionmetric.md)
-  An object representing metrics about the condition of the cellular network.
-- [class MXCPUMetric](mxcpumetric.md)
-  An object representing metrics about the use of the CPU.
-- [class MXDisplayMetric](mxdisplaymetric.md)
-  An object representing metrics about the power used to display the app on the screen.
-- [class MXGPUMetric](mxgpumetric.md)
-  An object representing metrics about the use of the GPU.
-- [class MXLocationActivityMetric](mxlocationactivitymetric.md)
-  An object representing metrics about the use of location-tracking features of a device.
-- [class MXNetworkTransferMetric](mxnetworktransfermetric.md)
-  An object representing metrics about network transfers.
-- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
-  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
-### Performance metrics
-- [class MXAppLaunchDiagnostic](mxapplaunchdiagnostic.md)
-  A diagnostic subclass that encapsulates app launch diagnostic reports.
-- [class MXAppExitMetric](mxappexitmetric.md)
-  An object representing metrics about the types of foreground and background app exits.
-- [class MXAppRunTimeMetric](mxappruntimemetric.md)
-  An object representing metrics about the amount of time the app is active.
-- [class MXMemoryMetric](mxmemorymetric.md)
-  An object representing metrics about the app’s memory use.
-- [class MXCrashDiagnostic](mxcrashdiagnostic.md)
-  An object representing a diagnostic report for an app crash.
-### Responsiveness metrics
-- [class MXAnimationMetric](mxanimationmetric.md)
-  An object representing metrics about the responsiveness of animation in the app.
-- [class MXAppLaunchMetric](mxapplaunchmetric.md)
-  An object representing metrics about app launch time.
-- [class MXAppResponsivenessMetric](mxappresponsivenessmetric.md)
-  An object representing metrics about the responsiveness of the app to user interaction.
-- [class MXHangDiagnostic](mxhangdiagnostic.md)
-  An object representing a diagnostic report for an app that is too busy to handle user input responsively.
-### Disk usage metrics
-- [class MXDiskIOMetric](mxdiskiometric.md)
-  An object representing metrics about disk usage.
-- [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
-  An object representing metrics about your app’s disk space usage.
-- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
-  An object representing a diagnostic report for a disk write exception.
-### Custom metrics
-- [class MXSignpostMetric](mxsignpostmetric.md)
-  An object representing a custom metric.
-### Data types
-- [class MXCallStackTree](mxcallstacktree.md)
-  An object representing the call stack for an exception.
-- [class MXMetaData](mxmetadata.md)
-  An object containing system-level information about the device.
-- [class MXAverage](mxaverage.md)
-  A unit of measure for an average.
-- [class MXHistogram](mxhistogram.md)
-  An object representing a histogram of data values of the same type of unit.
-- [class MXDiagnostic](mxdiagnostic.md)
-  An abstract data class for a diagnostic.
-- [class MXMetric](mxmetric.md)
-  An abstract data class for a metric.
-- [MXError.Code](mxerror/code.md)
-  Error codes for error values from app metrics.
-- [let MXErrorDomain: String](mxerrordomain.md)
-  Error domain for error values from app metrics.
-- [struct MXError](mxerror.md)
-  Error domain for error handling of app metrics.
-- [class MXCrashDiagnosticObjectiveCExceptionReason](mxcrashdiagnosticobjectivecexceptionreason.md)
-  An object that represents the exception reason for an uncaught ObjC exception.
-- [class MXSignpostRecord](mxsignpostrecord.md)
-  An object representing the record for a signpost interval or event.
+### Metric and diagnostic reports
+- [class MetricManager](metricmanager.md)
+  An object that delivers metric and diagnostic reports to your app.
+- [struct MetricReport](metricreport.md)
+  A daily performance report that contains metric values for your app.
+- [struct DiagnosticReport](diagnosticreport.md)
+  A report describing a single diagnostic event.
+### Result types
+- [enum MetricResult](metricresult.md)
+  An enumeration that represents a single metric value from a metric report entry.
+- [struct MetricGroup](metricgroup.md)
+  A value that identifies the category a metric belongs to.
+- [enum DiagnosticResult](diagnosticresult.md)
+  An enumeration that represents a single diagnostic event from a diagnostic report.
+### Time-in-use metrics
+- [struct TotalForegroundTimeMetric](totalforegroundtimemetric.md)
+  A metric that measures the total time the app spent in the foreground.
+- [struct TotalBackgroundTimeMetric](totalbackgroundtimemetric.md)
+  A metric that measures the total time the app spent active in the background.
+- [struct TotalBackgroundAudioTimeMetric](totalbackgroundaudiotimemetric.md)
+  A metric that measures the total time the app spent in the background playing audio.
+- [struct TotalBackgroundLocationTimeMetric](totalbackgroundlocationtimemetric.md)
+  A metric that measures the total time the app spent in the background using location services.
+- [struct LocationActivityTimeMetric](locationactivitytimemetric.md)
+  A metric that measures time spent using location services at each accuracy level.
+- [struct CellularConditionTimeMetric](cellularconditiontimemetric.md)
+  A metric that measures time spent at each cellular signal strength.
+### Launch and responsiveness metrics
+- [struct TimeToFirstDrawMetric](timetofirstdrawmetric.md)
+  A metric that measures time to first draw durations for app launches.
+- [struct OptimizedTimeToFirstDrawMetric](optimizedtimetofirstdrawmetric.md)
+  A metric that measures optimized time to first draw durations for app launches.
+- [struct ApplicationResumeTimeMetric](applicationresumetimemetric.md)
+  A metric that measures app resume time durations.
+- [struct ExtendedLaunchMetric](extendedlaunchmetric.md)
+  A metric that measures extended launch task durations.
+- [struct HangTimeMetric](hangtimemetric.md)
+  A metric that measures app hang time.
+- [struct HitchTimeMetric](hitchtimemetric.md)
+  A metric that measures animation hitch time.
+- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
+  A metric that measures scroll hitch time.
+### CPU and memory metrics
+- [struct CPUTimeMetric](cputimemetric.md)
+  A metric that measures the total CPU time used by the app.
+- [struct CPUInstructionsCountMetric](cpuinstructionscountmetric.md)
+  A metric that measures the total number of CPU instructions the app executed.
+- [struct CPUExceptionDiagnostic](cpuexceptiondiagnostic.md)
+  A diagnostic for a fatal or nonfatal CPU exception.
+- [struct PeakMemoryMetric](peakmemorymetric.md)
+  A metric that measures peak memory footprint.
+- [struct SuspendedMemoryMetric](suspendedmemorymetric.md)
+  A metric that measures average suspended memory footprint with statistical data.
+- [struct MemoryExceptionDiagnostic](memoryexceptiondiagnostic.md)
+  A diagnostic for a fatal memory exception.
+### GPU and display metrics
+- [struct GPUTimeMetric](gputimemetric.md)
+  A metric that measures the total GPU time used by the app.
+- [struct MetalFrameRateMetric](metalframeratemetric.md)
+  A metric that measures Metal frame rate statistics for a specific `CAMetalLayer`.
+- [struct PixelLuminanceMetric](pixelluminancemetric.md)
+  A metric that measures the average luminosity of pixels on an OLED display.
+- [class AveragePixelLuminance](averagepixelluminance.md)
+  A unit for average pixel luminance measurements.
+### Network metrics
+- [struct TotalWiFiUploadMetric](totalwifiuploadmetric.md)
+  A metric that measures the total data uploaded over WiFi.
+- [struct TotalWiFiDownloadMetric](totalwifidownloadmetric.md)
+  A metric that measures the total data downloaded over WiFi.
+- [struct TotalCellularUploadMetric](totalcellularuploadmetric.md)
+  A metric that measures the total data uploaded over a cellular connection.
+- [struct TotalCellularDownloadMetric](totalcellulardownloadmetric.md)
+  A metric that measures the total data downloaded over a cellular connection.
+### Disk metrics
+- [struct LogicalDiskWritesMetric](logicaldiskwritesmetric.md)
+  A metric that measures the total data written to disk.
+- [struct DiskWriteExceptionDiagnostic](diskwriteexceptiondiagnostic.md)
+  A diagnostic for a disk write exception.
+- [struct TotalDiskSpaceCapacityMetric](totaldiskspacecapacitymetric.md)
+  A metric that measures disk capacity and usage on the device.
+- [struct TotalFileCountMetric](totalfilecountmetric.md)
+  A metric that measures the number of files attributed to the app.
+- [struct TotalFileSizeMetric](totalfilesizemetric.md)
+  A metric that measures the sizes of files attributed to the app.
+### Termination metrics
+- [struct ForegroundTerminationMetric](foregroundterminationmetric.md)
+  A metric that counts app terminations from the foreground by category.
+- [struct BackgroundTerminationMetric](backgroundterminationmetric.md)
+  A metric that counts app terminations from the background by category.
+### Signpost and custom metrics
+- [struct SignpostIntervalMetric](signpostintervalmetric.md)
+  A metric that measures the duration and count of custom signpost intervals.
+- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
+  Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
+- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
+  Posts the start time of an animation interval to the log system.
+### Crash and hang diagnostics
+- [struct CrashDiagnostic](crashdiagnostic.md)
+  A diagnostic report that describes a crash that occurred.
+- [struct HangDiagnostic](hangdiagnostic.md)
+  A diagnostic for an app that was too busy to handle user input responsively.
+- [struct AppLaunchDiagnostic](applaunchdiagnostic.md)
+  A diagnostic report for an app launch.
+### App state reporting
+- [struct StateReportingDomain](statereportingdomain.md)
+  A value that identifies a reporting scope for segmenting metric data.
+- [struct LaunchTaskID](launchtaskid.md)
+  An identifier for a task measured as part of an extended app launch.
+### Call stack data
+- [struct CallStackTree](callstacktree.md)
+  A tree structure representing a collection of call stacks captured during a diagnostic event.
+- [struct CallStackThread](callstackthread.md)
+  A single stack thread within a call stack tree.
+- [struct CallStackFrame](callstackframe.md)
+  A single frame within a call stack thread.
+- [struct SignpostRecord](signpostrecord.md)
+  A record of a signpost event associated with a diagnostic report.
+### Supporting types
+- [struct Histogram](histogram.md)
+  A distribution of values organized into buckets.
+- [struct AverageStatistics](averagestatistics.md)
+  A value that encapsulates an average measurement with supporting statistical data.
+- [class SignalBars](signalbars.md)
+  A unit for cellular signal strength measurements in bars.
+- [struct OSVersion](osversion.md)
+  The version of the operating system on the device.
+### MXMetricManager API
+- [MXMetricManager API](mxmetricmanager-api.md)
+  Measure app performance and diagnostics using MXMetricManager and related types.
 
 
 ---

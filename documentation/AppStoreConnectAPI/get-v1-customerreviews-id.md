@@ -1,4 +1,4 @@
-# Read Customer Review Information
+# Read customer review information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -17,6 +17,7 @@ Get information about a specific customer review, including the review content.
 - `fields[customerReviewResponses]` ([string]): Fields to return for included related `customerReviewResponses` resources.
 - `fields[customerReviews]` ([string]): Fields to return for included related `customerReviews` resources.
 - `include` ([string]): Relationship data to include in the response.
+- `fields[territories]` ([string])
 
 
 ---

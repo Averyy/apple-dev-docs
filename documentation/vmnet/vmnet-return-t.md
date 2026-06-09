@@ -52,6 +52,10 @@ enum vmnet_return_t
   Interface event types.
 - [enum operating_modes_t](operating_modes_t.md)
   The operating modes for an interface.
+- [typealias vmnet_mode_t](vmnet_mode_t.md)
+  A type that defines the operating modes of the vmnet interface.
+- [typealias vmnet_network_ref](vmnet_network_ref.md)
+  A pointer to a network structure.
 
 
 ---

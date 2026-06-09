@@ -6,8 +6,7 @@
 A resource object that represents a region that the content is available in, and supported languages for that region.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

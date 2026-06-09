@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: property
 
-An object containing URLs for the image assets in multiple resolutions.
+An object that contains URLs for the image assets in multiple resolutions.
 
 **Availability**:
 - MapKit JS 5.0+
@@ -11,7 +11,7 @@ An object containing URLs for the image assets in multiple resolutions.
 ## Declaration
 
 ```swift
-url: ImageDelegate | ImageHashObject;
+url?: ImageDelegate | ImageHashObject | ImageSource | Promise<ImageSource>;
 ```
 
 #### Discussion
@@ -32,6 +32,11 @@ If you choose not to provide standard and Retina resolution assets, you have two
 
 - Set “1” to a URL to a standard resolution image. This results in blurry images on Retina displays.
 - Set “1” to a URL to a Retina image. Set the size to the desired size. This results in crisp images on Retina displays and good images on standard displays, but it’s less optimal than custom, pixel-fitted images.
+
+## See Also
+
+- [image](imageannotationconstructoroptions/image.md)
+  The image for the annotation.
 
 
 ---

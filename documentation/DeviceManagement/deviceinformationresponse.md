@@ -13,14 +13,16 @@ A response from the device after it processes the command to get detailed inform
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object DeviceInformationResponse
 ```
+
+## Mentions
+
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 
 ## Topics
 
@@ -33,8 +35,8 @@ object DeviceInformationResponse
 ## Properties
 
 - `CommandUUID` (string): The unique identifier of the command for this response.
-- `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available in iOS 13 and later, macOS 10.15 and later, and visionOS 2 and later.
-- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel. Available in macOS 10.15 and later.
+- `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | visionOS 1.1+
+- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel. Available: macOS 10.15+
 - `ErrorChain` ([DeviceInformationResponse.ErrorChainItem]): An array of dictionaries that describes any errors that occur.
 - `NotOnConsole` (boolean) *(required)*: If `true`, the device isn’t on-console.
 - `QueryResponses` (DeviceInformationResponse.QueryResponses) *(required)*: A dictionary that contains information about the device.
@@ -44,9 +46,9 @@ object DeviceInformationResponse
 - `Idle`: The device is idle; there’s no status.
 - `NotNow`: The device received the command, but can’t run it.
 - `UDID` (string) *(required)*: The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
-- `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
-- `UserLongName` (string) *(required)*: The full name of the user.
-- `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+- `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur. Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.7+
+- `UserLongName` (string) *(required)*: The full name of the user. Available: macOS 10.7+
+- `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel. Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.7+
 
 ## See Also
 

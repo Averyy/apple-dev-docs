@@ -108,8 +108,12 @@ For some queries, lists may produce the same tag. For example, some topic and em
 
 ## See Also
 
-- [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
-  A type that represents the use case for prompting.
+- [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
+  Generate content in the language people prefer when they interact with your app.
+- [class SystemLanguageModel](systemlanguagemodel.md)
+  An on-device Apple Foundation Model capable of text generation tasks.
+- [enum LanguageModelError](languagemodelerror.md)
+  A failure that may occur while generating a response when using any language model.
 
 
 ---

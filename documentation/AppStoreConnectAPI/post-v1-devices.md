@@ -1,4 +1,4 @@
-# Register a New Device
+# Register a new device
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

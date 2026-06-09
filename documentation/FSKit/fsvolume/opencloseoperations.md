@@ -20,18 +20,21 @@ When a file system volume conforms to this protocol, the kernel layer issues an 
 
 If a file system volume doesn’t conform to this protocol, the kernel layer can skip making such calls to the volume.
 
+> **Note**:  Use [`FSVolume.OpenCloseHandler`](fsvolume/openclosehandler.md) instead.
+
 ## Topics
 
 ### Opening and closing
-- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
-  Opens a file for access.
-- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
-  Closes a file from further access.
 - [FSVolume.OpenModes](fsvolume/openmodes.md)
   Defined modes for opening a file.
 ### Inspecting volume properties
 - [var isOpenCloseInhibited: Bool](fsvolume/opencloseoperations/isopencloseinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
+### Instance Methods
+- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
+  Closes a file from further access.
+- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
+  Opens a file for access.
 
 ## Relationships
 
@@ -40,20 +43,22 @@ If a file system volume doesn’t conform to this protocol, the kernel layer can
 
 ## See Also
 
+- [FSVolume.Operations](fsvolume/operations.md)
+  Methods that all volumes implement to provide required capabilities.
 - [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
   Methods implemented for read and write operations that deliver data to and from the extension.
 - [FSVolume.AccessCheckOperations](fsvolume/accesscheckoperations.md)
   Methods and properties implemented by volumes that want to enforce access check operations.
 - [FSVolume.RenameOperations](fsvolume/renameoperations.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
-  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 - [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
 - [FSVolume.XattrOperations](fsvolume/xattroperations.md)
   Methods and properties implemented by volumes that natively or partially support extended attributes.
 - [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
+- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 
 ---

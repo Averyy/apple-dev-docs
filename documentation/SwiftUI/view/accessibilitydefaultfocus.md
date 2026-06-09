@@ -45,6 +45,13 @@ var body: some View {
 - `binding`: An accessibility focus state binding to update when evaluating default accessibility focus.
 - `value`: The value to set the binding to during evaluation.
 
+## See Also
+
+- [func accessibilityFocused(AccessibilityFocusState<Bool>.Binding) -> some View](view/accessibilityfocused(_:).md)
+  Modifies this view by binding its accessibility element’s focus state to the given boolean state value.
+- [func accessibilityFocused<Value>(AccessibilityFocusState<Value>.Binding, equals: Value) -> some View](view/accessibilityfocused(_:equals:).md)
+  Modifies this view by binding its accessibility element’s focus state to the given state value.
+
 
 ---
 

@@ -147,6 +147,8 @@ protocol NSApplicationDelegate : NSObjectProtocol
   An object that can manipulate and provide information for a single instance of an app.
 - [func NSApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> Int32](nsapplicationmain(_:_:).md)
   Called by the main function to create and run the application.
+- [Managing ongoing background processes in your Mac](managing-ongoing-background-processes-in-your-mac.md)
+  Configure your app to help people understand when background processes may continue after they close your app.
 
 
 ---

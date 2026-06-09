@@ -13,8 +13,6 @@ Updates the token for a device on the server.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -36,7 +34,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS, Shared iPad |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 
 ## Topics
@@ -47,7 +45,7 @@ Although a device can send the `TokenUpdate` message multiple times, it might se
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#TokenUpdateRequest`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Request Body
 

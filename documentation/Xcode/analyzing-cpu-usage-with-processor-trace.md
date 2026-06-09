@@ -108,6 +108,8 @@ Long-running operations on the main thread can cause freezes and hitches in your
 
 - [Addressing CPU bottlenecks](addressing-cpu-bottlenecks.md)
   Locate and fix pipeline stalls, cache misses, and other performance issues.
+- [Analyzing CPU profiles with call tree views](analyzing-cpu-profiles-with-call-tree-views.md)
+  Use call tree visualizations to find performance bottlenecks in Instruments.
 
 
 ---

@@ -21,7 +21,7 @@ final func finalize(through: CMTime?) async throws
 
 #### Discussion
 
-At the return of this method, input up to and including the given time will have been analyzed. Modules will have published the finalized results to their stream, but the application may not have consumed them from the stream yet. [`volatileRange`](speechanalyzer/volatilerange.md) will post-date the given time.
+At the return of this method, input up to and including the given time will have been analyzed. Modules will have published the finalized results to their stream, but the application may not have consumed them from the results stream yet. [`volatileRange`](speechanalyzer/volatilerange.md) will post-date the given time.
 
 If the given time has already been finalized (it pre-dates the volatile range), then this method does nothing.
 
@@ -29,7 +29,7 @@ If the given time has already been finalized (it pre-dates the volatile range), 
 
 ## Parameters
 
-- `through`:  Finalizes up to and including the given time-code. If the analyzer hasn’t already taken that audio from the input sequence, the method waits until analysis proceeds to that audio before finalizing. If `nil`, finalizes up to and including the last audio the analyzer *has* taken from the input sequence, and if the analyzer has not taken any audio from the input sequence, this method does nothing.
+- `through`:  Finalizes up to and including the given time-code. If the analyzer hasn’t already consumed that audio from the input sequence, the method waits until the analyzer consumes that audio before finalizing. If `nil`, finalizes up to and including the last audio the analyzer *has* consumed from the input sequence, and if the analyzer has not consumed any audio from the input sequence, this method does nothing.
 
 ## See Also
 

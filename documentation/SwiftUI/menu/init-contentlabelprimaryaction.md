@@ -17,7 +17,7 @@ Creates a menu with a custom primary action and custom label.
 
 ```swift
 nonisolated
-init(@ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label, primaryAction: @escaping () -> Void)
+init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label, primaryAction: @escaping () -> Void)
 ```
 
 ## Parameters

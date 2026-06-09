@@ -30,6 +30,8 @@ struct Currency
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(IntegerFormatStyle<Value>.Currency.Configuration.Grouping) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(IntegerFormatStyle<Value>.Currency.Configuration.Precision) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(IntegerFormatStyle<Value>.Currency.Configuration.Presentation) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/presentation(_:).md)
@@ -60,11 +62,19 @@ struct Currency
 ### Applying measurement styles
 - [Measurement.FormatStyle](measurement/formatstyle.md)
   A type that provides localized representations of measurements.
+### Parsing integer currency values
+- [var parseStrategy: IntegerParseStrategy<IntegerFormatStyle<Value>.Currency>](integerformatstyle/currency/parsestrategy.md)
+  The parse strategy that this format style uses.
+### Locating currency values in regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Value)?](integerformatstyle/currency/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Instance Methods
 - [func notation(IntegerFormatStyle<Value>.Currency.Configuration.Notation) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/notation(_:).md)
   Modifies the format style to use the specified notation.
 ### Default Implementations
+- [CustomConsumingRegexComponent Implementations](integerformatstyle/currency/customconsumingregexcomponent-implementations.md)
 - [FormatStyle Implementations](integerformatstyle/currency/formatstyle-implementations.md)
+- [ParseableFormatStyle Implementations](integerformatstyle/currency/parseableformatstyle-implementations.md)
 
 ## Relationships
 

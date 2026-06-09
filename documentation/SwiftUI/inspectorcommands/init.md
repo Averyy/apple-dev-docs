@@ -15,6 +15,7 @@ A new value describing the built-in inspector-related commands.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

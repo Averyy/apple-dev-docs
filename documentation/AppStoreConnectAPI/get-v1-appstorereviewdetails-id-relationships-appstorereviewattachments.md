@@ -1,10 +1,10 @@
-# GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments
+# List App Store review attachment IDs for an App Store review detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,9 +16,9 @@
 
 ## See Also
 
-- [Read App Store Review Attachment Information](get-v1-appstorereviewattachments-_id_.md)
+- [Read app store review attachment information](get-v1-appstorereviewattachments-_id_.md)
   Get information about an App Store review attachment and its upload and processing status.
-- [List All Review Attachments for an App Store Review Detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
+- [List all review attachments for an app store review detail](get-v1-appstorereviewdetails-_id_-appstorereviewattachments.md)
   List all the App Store review attachments you include with a version when you submit it for App Review.
 
 

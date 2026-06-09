@@ -26,18 +26,13 @@ The derived symmetric key.
 
 #### Discussion
 
-Generate cryptographically strong key material to use with this function by calling [`extract(inputKeyMaterial:salt:)`](hkdf/extract(inputkeymaterial:salt:).md).
+Generate cryptographically strong key material to use with this function by calling `extract(inputKeyMaterial:salt:)`.
 
 ## Parameters
 
-- `prk`: A pseudorandom, cryptographically strong key generated from the [`extract(inputKeyMaterial:salt:)`](hkdf/extract(inputkeymaterial:salt:).md) function.
+- `prk`: A pseudorandom, cryptographically strong key generated from the `extract(inputKeyMaterial:salt:)` function.
 - `info`: The shared information to use for key derivation.
 - `outputByteCount`: The length in bytes of the resulting symmetric key.
-
-## See Also
-
-- [static func extract<Salt>(inputKeyMaterial: SymmetricKey, salt: Salt?) -> HashedAuthenticationCode<H>](hkdf/extract(inputkeymaterial:salt:).md)
-  Creates cryptographically strong key material from a main key or passcode that you specify.
 
 
 ---

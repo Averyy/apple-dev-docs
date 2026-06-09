@@ -35,7 +35,7 @@ This method loads a preconfigured [`AudioFileGroupResource`](audiofilegroupresou
 ## See Also
 
 - [init([AudioFileResource]) throws](audiofilegroupresource/init(_:).md)
-  Creates a group resource from an array of audio file resources.
+  Creates a group resource from an array of audio file resources (backward compatibility).
 - [convenience init(named: String, from: String, in: Bundle) async throws](audiofilegroupresource/init(named:from:in:).md)
   Initializes an audio resource from a Reality Composer Pro project.
 

@@ -1,10 +1,10 @@
-# GET /v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets
+# List preview set IDs for an App Store version localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [List All App Preview Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
+- [List all app preview sets for an app store version localization](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md)
   List all app preview sets for a specific localization.
-- [List All App Screenshot Sets for an App Store Version Localization](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
+- [List all app screenshot sets for an app store version localization](get-v1-appstoreversionlocalizations-_id_-appscreenshotsets.md)
   List all screenshot sets for a specific localization.
-- [GET /v1/appStoreVersionLocalizations/{id}/relationships/appScreenshotSets](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
+- [List screenshot set IDs for an App Store version localization](get-v1-appstoreversionlocalizations-_id_-relationships-appscreenshotsets.md)
 
 
 ---

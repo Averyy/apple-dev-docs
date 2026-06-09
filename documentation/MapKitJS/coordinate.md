@@ -11,7 +11,7 @@ An object representing the latitude and longitude for a point on the Earth’s s
 ## Declaration
 
 ```swift
-class Coordinate
+class Coordinate implements CoordinateData
 ```
 
 #### Overview
@@ -23,6 +23,8 @@ A [`Coordinate`](coordinate.md) is a point on a spherical representation of the 
 ### Creating a coordinate
 - [new Coordinate(latitude, longitude)](coordinate/coordinateconstructor.md)
   Creates a coordinate object with the specified latitude and longitude.
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
 ### Defining the coordinates
 - [latitude](coordinate/latitude.md)
   The latitude, in degrees.
@@ -41,12 +43,23 @@ A [`Coordinate`](coordinate.md) is a point on a spherical representation of the 
 - [toString()](coordinate/tostring.md)
   Returns a string representation of the coordinate object.
 
+## Relationships
+
+### Conforms To
+- [CoordinateData](coordinatedata.md)
+
 ## See Also
 
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
 - [class CoordinateRegion](coordinateregion.md)
   A rectangular area on a map that a center coordinate and a span define, in degrees of latitude and longitude.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
 - [class CoordinateSpan](coordinatespan.md)
   The width and height of a map region.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 - [class BoundingRegion](boundingregion.md)
   A rectangular area on a map, which coordinates of the rectangle’s northeast and southwest corners define.
 

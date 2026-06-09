@@ -46,8 +46,6 @@ map.padding = new mapkit.Padding(
   Creates a padding object and initializes it with the provided top and right side values.
 - [new Padding(top, right, bottom)](padding/paddingconstructor4.md)
   Creates a padding object and initializes it with the provided top, right, and bottom values.
-- [interface PaddingConstructorOptions](paddingconstructoroptions.md)
-  Initial values of the edge insets for padding.
 
 
 ---

@@ -29,6 +29,8 @@ struct SwiftDataError
 - [static let unsupportedKeyPath: SwiftDataError](swiftdataerror/unsupportedkeypath.md)
 - [static let unsupportedPredicate: SwiftDataError](swiftdataerror/unsupportedpredicate.md)
 - [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
+- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
 ### Configuration errors
 - [static let configurationFileNameContainsInvalidCharacters: SwiftDataError](swiftdataerror/configurationfilenamecontainsinvalidcharacters.md)
 - [static let configurationFileNameTooLong: SwiftDataError](swiftdataerror/configurationfilenametoolong.md)
@@ -42,11 +44,11 @@ struct SwiftDataError
 ### Migration errors
 - [static let backwardMigration: SwiftDataError](swiftdataerror/backwardmigration.md)
 - [static let unknownSchema: SwiftDataError](swiftdataerror/unknownschema.md)
+### Schema errors
+- [static let unknownDataStoreSchema: SwiftDataError](swiftdataerror/unknowndatastoreschema.md)
+  An error that indicates the data store’s schema is not recognized.
 ### Operators
 - [static func ~= (SwiftDataError, any Error) -> Bool](swiftdataerror/~=(_:_:).md)
-### Type Properties
-- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
-- [static let invalidTransactionFetchRequest: SwiftDataError](swiftdataerror/invalidtransactionfetchrequest.md)
 
 ## Relationships
 

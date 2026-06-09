@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: struct
 
-Represents a region in space to capture a camera stream of.
+Represents a region in space for capturing a camera stream.
 
 **Availability**:
 - visionOS 26.0+
@@ -14,8 +14,15 @@ Represents a region in space to capture a camera stream of.
 struct CameraRegionAnchor
 ```
 
+#### Overview
+
+`CameraRegionAnchor` requires the [`Camera Region access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.camera-region.allow) entitlement.
+
 ## Topics
 
+### Operators
+- [static func == (CameraRegionAnchor, CameraRegionAnchor) -> Bool](cameraregionanchor/==(_:_:).md)
+  Returns a Boolean value indicating whether two camera region anchors are equal.
 ### Initializers
 - [init(originFromAnchorTransform: simd_float4x4, width: Float, height: Float, cameraEnhancement: CameraRegionAnchor.CameraEnhancement)](cameraregionanchor/init(originfromanchortransform:width:height:cameraenhancement:).md)
   Initialize a camera region anchor.
@@ -37,13 +44,18 @@ struct CameraRegionAnchor
 ### Enumerations
 - [CameraRegionAnchor.CameraEnhancement](cameraregionanchor/cameraenhancement-swift.enum.md)
   Enhancements to be used with each anchor.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](cameraregionanchor/arkitcoordinatespaceproviding-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -51,7 +63,7 @@ struct CameraRegionAnchor
 ## See Also
 
 - [class CameraRegionProvider](cameraregionprovider.md)
-  A camera region provider. An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the following entitlement: `com.apple.developer.arkit.camera-region.allow`
+  A camera region provider.
 
 
 ---

@@ -15,7 +15,8 @@ A value describing the complete replacement of the contents of the indicated gro
 ## Declaration
 
 ```swift
-init(replacing group: CommandGroupPlacement, @ViewBuilder addition: () -> Content)
+nonisolated
+init(replacing group: CommandGroupPlacement, @ContentBuilder addition: () -> Content)
 ```
 
 ## See Also

@@ -20,6 +20,15 @@ func markupToolbarViewControllerInsertNewTextbox(_ markupToolbarViewController: 
 
 - `markupToolbarViewController`: The source of the action.
 
+## See Also
+
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewshape:).md)
+  Add a new shape on top of the paper.
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+  Add a new line on top of the paper.
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewContents: PaperMarkup)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewcontents:).md)
+  Add new content on top of the paper.
+
 
 ---
 

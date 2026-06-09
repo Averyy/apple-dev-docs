@@ -63,6 +63,9 @@ Look for one of the events in [`AudioEvents`](audioevents.md) if you want to be 
 ### Finding the associated entity
 - [var entity: Entity?](audioplaybackcontroller/entity.md)
   The entity from which the audio stream emanates.
+### Scheduling audio playback
+- [func play(at: AVAudioTime) throws](audioplaybackcontroller/play(at:).md)
+  Plays the audio resource asynchronously at a specified time.
 ### Instance Methods
 - [func seek(to: Duration)](audioplaybackcontroller/seek(to:).md)
   Sets the playback position to the specified time.

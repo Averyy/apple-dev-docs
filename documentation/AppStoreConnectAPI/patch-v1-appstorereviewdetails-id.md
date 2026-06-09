@@ -1,4 +1,4 @@
-# Modify an App Store Review Detail
+# Modify an app store review detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Update the App Store review details, including the contact information, demo acc
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Store review detail resource ID from the [`Read the app store review details resource information of an app store version`](get-v1-appstoreversions-_id_-appstorereviewdetail.md) response.
 
 ## See Also
 
-- [Create an App Store Review Detail](post-v1-appstorereviewdetails.md)
+- [Create an app store review detail](post-v1-appstorereviewdetails.md)
   Add App Store review details to an App Store version, including contact and demo account information.
-- [Read App Store Review Detail Information](get-v1-appstorereviewdetails-_id_.md)
+- [Read app store review detail information](get-v1-appstorereviewdetails-_id_.md)
   Get App Review details you provided, including contact information, demo account, and notes.
-- [GET /v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
+- [List App Store review attachment IDs for an App Store review detail](get-v1-appstorereviewdetails-_id_-relationships-appstorereviewattachments.md)
 
 
 ---

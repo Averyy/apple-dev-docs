@@ -6,15 +6,15 @@ Enable people to find app content that matches their surroundings or objects ons
 
 #### Overview
 
-With visual intelligence, people can visually search for information and content that matches their surroundings, or an onscreen object. Integrating your app with visual intelligence allows people to view your matching content quickly and launch your app for more detailed information or additional search results, giving it additional visibility.
+With visual intelligence, people can visually search for information and content that matches their surroundings, or an onscreen object. Integrating your app with visual intelligence lets people view your matching content quickly and launch your app for more detailed information or additional search results, giving it additional visibility.
 
-##### Explore the Role of the App Intents Framework
+##### Understand How Visual Intelligence Search Communicates with Your App
 
 To integrate your app with visual intelligence, the Visual Intelligence framework provides information about objects it detects in the visual intelligence camera or a screenshot. To exchange information with your app, the system uses the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework and its concepts of app intents and app entities.
 
 When a person performs visual search on the visual intelligence camera or a screenshot, the system forwards the information captured to an App Intents query you implement. In your query code, search your app’s content for matching items, and return them to visual intelligence as app entities. Visual intelligence then uses the app entities to display your content in the search results view, right where a person needs it.
 
-To learn more about a displayed item, someone can tap it to open the item in your app and view information and functionality. For example, an app that allows people to view information about landmarks might show detailed information like hours, a map, or community reviews for the item a person taps in visual search.
+To learn more about a displayed item, someone can tap it to open the item in your app and view information and functionality. For example, an app that lets people view information about landmarks might show detailed information such as hours, a map, or community reviews for the item a person taps in visual search.
 
 ##### Provide a Display Representation
 
@@ -23,7 +23,7 @@ Visual Intelligence uses the [`DisplayRepresentation`](https://developer.apple.c
 ```swift
 struct LandmarkEntity: IndexedEntity {
     static var typeDisplayRepresentation: TypeDisplayRepresentation {
-        return TypeDisplayRepresentation(
+        TypeDisplayRepresentation(
             name: LocalizedStringResource("Landmark", table: "AppIntents", comment: "The type name for the landmark entity"),
             numericFormat: "\(placeholder: .int) landmarks"
         )
@@ -41,7 +41,7 @@ struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-For additional information about display representations, refer to [`Integrating custom data types into your intents`](https://developer.apple.com/documentation/AppIntents/Integrating-custom-types-into-your-intents#Provide-a-visual-representation-for-your-entity).
+For additional information about display representations, refer to doc://com.apple.documentation/documentation/appintents/integrating-custom-types-into-your-intents#Provide-a-visual-representation-for-your-entity.
 
 ##### Provide Search Results
 
@@ -55,7 +55,7 @@ To integrate your app with visual search, provide visual intelligence with conte
 
 ![A flow chart that shows how visual intelligence retrieves an array of app entities from your app by calling your app’s intent value query.](https://docs-assets.developer.apple.com/published/ee78242f9ed023447e83b0bff7e67cbf/visual-intelligence-app-intents-flowchart-step-1%402x.png)
 
-> **Note**: Labels are general, high-level terms in the `en_US` locale and might change over time. Visual Intelligence doesn’t translate them or include synonyms. For example, `SemanticContentDescriptor` might provide the labels `tower` or `building` for a well-known building. It won’t provide the building’s actual name as a label.
+> **Note**: Labels are general, high-level terms in the `en_US` locale and might change over time. The Visual Intelligence framework doesn’t translate them or include synonyms. For example, [`SemanticContentDescriptor`](semanticcontentdescriptor.md) might provide the labels `tower` or `building` for a well-known building. It won’t provide the building’s actual name as a label.
 
 The following example code from the [`Adopting App Intents to support system experiences`](https://developer.apple.com/documentation/AppIntents/adopting-app-intents-to-support-system-experiences) sample code project demonstrates how an app that enables people to view information about points of interest and landmarks might access the `pixelBuffer` for its search:
 
@@ -66,7 +66,7 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 
     func values(for input: SemanticContentDescriptor) async throws -> [VisualSearchResult] {
 
-        guard let pixelBuffer: CVReadOnlyPixelBuffer = input.pixelBuffer else {
+        guard let pixelBuffer = input.pixelBuffer else {
             return []
         }
 
@@ -77,7 +77,7 @@ struct LandmarkIntentValueQuery: IntentValueQuery {
 }
 ```
 
-The `search(matching:)` function asynchronously returns a list of app entities that represent landmarks. Returning results quickly makes for a good search experience, so make sure to limit the list of returned items, if needed. If your app finds a large number of matches — for example, several hundred items — you might return the first hundred results, and give people the opportunity to view the full list in your app as described in [`Link to additional results in your app`](integrating-your-app-with-visual-intelligence#Link-to-additional-results-in-your-app.md).
+The `search(matching:)` function asynchronously returns a list of app entities that represent landmarks. Returning results quickly makes for a good search experience, so make sure to limit the list of returned items, if needed. If your app finds a large number of matches — for example, several hundred items — return the first hundred results, and give people the opportunity to view the full list in your app as described in [`Link to additional results in your app`](integrating-your-app-with-visual-intelligence#Link-to-additional-results-in-your-app.md).
 
 The process for matching the provided pixel buffer to app entities depends on your app. A common case is to convert the pixel buffer into an image, then use the image in an image search. The following code snippet shows how you might implement this conversion:
 
@@ -91,9 +91,9 @@ private func createImage(_ pixelBuffer: CVReadOnlyPixelBuffer) -> CGImage? {
 
 ##### Open an Item in Your App
 
-To allow someone to open your app and view additional information or access additional actions for a visual search, create an [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent). In the intent’s `perform()` method, open your app to match the app entity that visual intelligence passes to the method, as illustrated in the image below.
+To let someone open your app and view additional information or access additional actions for a visual search, create an [`OpenIntent`](https://developer.apple.com/documentation/AppIntents/OpenIntent). In the intent’s `perform()` method, open your app to match the app entity that visual intelligence passes to the method, as illustrated in the image below.
 
-![A flow chart that shows hows how visual intelligence forwards the app entity that represents a person’s selection to the app so the app can display additional information.](https://docs-assets.developer.apple.com/published/027ea24e11f5cd25a397e0e30ea09981/visual-intelligence-app-intents-flowchart-step-2%402x.png)
+![A flow chart that shows how visual intelligence forwards the app entity that represents a person’s selection to the app so the app can display additional information.](https://docs-assets.developer.apple.com/published/027ea24e11f5cd25a397e0e30ea09981/visual-intelligence-app-intents-flowchart-step-2%402x.png)
 
 Continuing the example that shows information about points of interest or landmarks, the `OpenIntent` might look like this:
 
@@ -110,7 +110,7 @@ struct OpenLandmarkIntent: OpenIntent {
 
 Adopting the `OpenIntent` protocol isn’t specific to integrating your app with visual intelligence. Adopting App Intents, including one or more `OpenIntent` implementations, is a best practice for modern apps that offer additional integration with system experiences. If you’ve already adopted App Intents, you might be able to reuse existing code to open an item in your app with an `OpenIntent`.
 
-For more information about adopting App Intents in your app, refer to [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`Making actions and content discoverable and widely available`](https://developer.apple.com/documentation/AppIntents/Making-actions-and-content-discoverable-and-widely-available).
+For more information about adopting App Intents in your app, refer to [`App Intents`](https://developer.apple.com/documentation/AppIntents) and doc://com.apple.documentation/documentation/appintents/making-actions-and-content-discoverable-and-widely-available.
 
 ##### Return Different Values in One Query
 
@@ -151,9 +151,9 @@ In the semantic content search intent’s `perform()` method, navigate to your a
 ## See Also
 
 - [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
 - [struct SemanticContentDescriptor](semanticcontentdescriptor.md)
-  A type that represents a scene that visual intelligence captures, like a screenshot, photo, or photo and video stream.
+  A type that represents a scene that visual intelligence captures, for example, a screenshot, photo, or photo and video stream.
 
 
 ---

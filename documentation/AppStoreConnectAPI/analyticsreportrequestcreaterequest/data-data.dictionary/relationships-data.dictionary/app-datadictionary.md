@@ -16,7 +16,7 @@ object AnalyticsReportRequestCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object AnalyticsReportRequestCreateRequest.Data.Relationships.App.Data](analyticsreportrequestcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
-  The data structure that represents the app Apple ID for analytics report create request resource.
+  The resource linkage identifying the app to associate with an analytics report request create operation.
 
 ## Properties
 

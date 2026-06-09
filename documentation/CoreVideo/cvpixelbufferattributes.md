@@ -32,6 +32,8 @@ struct CVPixelBufferAttributes
 - [init(rawAttributes: [String : any Sendable])](cvpixelbufferattributes/init(rawattributes:).md)
   Create an instance using a freeform attribute dictionary
 ### Instance Properties
+- [var attachments: CVAttachmentContainer<CVPixelBufferAttachmentKeyDefinitions>?](cvpixelbufferattributes/attachments.md)
+  Attachments to set on the pixel buffer.
 - [var pixelFormatTypes: [CVPixelFormatType]?](cvpixelbufferattributes/pixelformattypes.md)
   Allow multiple pixel formats to be specified in attributes
 - [var rawAttributes: [String : any Sendable]](cvpixelbufferattributes/rawattributes.md)
@@ -50,6 +52,21 @@ struct CVPixelBufferAttributes
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+  CVReadOnlyPixelBuffer provides an immutable view of the pixel data held by the pixel buffer.
+- [struct CVMutablePixelBuffer](cvmutablepixelbuffer.md)
+  CVMutablePixelBuffer provides read-write access to the pixel data and attachments.
+- [struct CVPixelBufferCreationAttributes](cvpixelbuffercreationattributes.md)
+  Attributes needed for creating a pixel buffer.
+- [struct CVPixelBufferPadding](cvpixelbufferpadding.md)
+  Padding pixels around the CVPixelBuffer
+- [struct CVPixelBufferPlaneProperties](cvpixelbufferplaneproperties.md)
+  Properties of a plane of pixels in pixel buffer
+- [struct CVProResRawMetadata](cvproresrawmetadata.md)
+  Metadata associated with ProRes RAW images.
 
 
 ---

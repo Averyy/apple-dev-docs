@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: enum
 
-A direction on the horizontal axis.
+A direction on the vertical axis.
 
 **Availability**:
 - iOS 18.0+

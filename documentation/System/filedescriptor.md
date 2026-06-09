@@ -65,11 +65,20 @@ You are responsible for managing the lifetime and validity of `FileDescriptor` v
   Deletes a file descriptor.
 - [func closeAfter<R>(() throws -> R) throws -> R](filedescriptor/closeafter(_:).md)
   Runs a closure and then closes the file descriptor, even if an error occurs.
+### Structures
+- [FileDescriptor.DuplicateOptions](filedescriptor/duplicateoptions.md)
+  Options that specify behavior for a duplicated file descriptor.
+- [FileDescriptor.PipeOptions](filedescriptor/pipeoptions.md)
+  Options that specify behavior for a newly-created pipe.
 ### Instance Methods
+- [func duplicate(as: FileDescriptor, options: FileDescriptor.DuplicateOptions, retryOnInterrupt: Bool) throws(Errno) -> FileDescriptor](filedescriptor/duplicate(as:options:retryoninterrupt:).md)
+  Duplicates this file descriptor and returns the newly created copy.
 - [func duplicate(as: FileDescriptor?, retryOnInterrupt: Bool) throws -> FileDescriptor](filedescriptor/duplicate(as:retryoninterrupt:).md)
-  Duplicates this file descriptor and return the newly created copy.
+  Duplicates this file descriptor and returns the newly created copy.
 - [func resize(to: Int64, retryOnInterrupt: Bool) throws](filedescriptor/resize(to:retryoninterrupt:).md)
   Truncates or extends the file referenced by this file descriptor.
+- [func stat(retryOnInterrupt: Bool) throws(Errno) -> Stat](filedescriptor/stat(retryoninterrupt:).md)
+  Creates a `Stat` struct for the file referenced by this `FileDescriptor`.
 ### Type Properties
 - [static var standardError: FileDescriptor](filedescriptor/standarderror.md)
   The standard error file descriptor, with a numeric value of 2.
@@ -79,6 +88,8 @@ You are responsible for managing the lifetime and validity of `FileDescriptor` v
   The standard output file descriptor, with a numeric value of 1.
 ### Type Methods
 - [static func pipe() throws -> (readEnd: FileDescriptor, writeEnd: FileDescriptor)](filedescriptor/pipe.md)
+  Creates a unidirectional data channel, which can be used for interprocess communication.
+- [static func pipe(options: FileDescriptor.PipeOptions) throws(Errno) -> (readEnd: FileDescriptor, writeEnd: FileDescriptor)](filedescriptor/pipe(options:).md)
   Creates a unidirectional data channel, which can be used for interprocess communication.
 
 ## Relationships

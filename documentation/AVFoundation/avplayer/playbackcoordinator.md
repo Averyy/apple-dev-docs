@@ -16,6 +16,7 @@ The playback coordinator for the player.
 ## Declaration
 
 ```swift
+nonisolated
 var playbackCoordinator: AVPlayerPlaybackCoordinator { get }
 ```
 

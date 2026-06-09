@@ -8,6 +8,7 @@ An alarm that can repeat and fire at a time relative to the device’s current t
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

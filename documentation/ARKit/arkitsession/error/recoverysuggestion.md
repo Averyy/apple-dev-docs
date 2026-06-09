@@ -12,12 +12,12 @@ A localized message that describes how someone might recover from the error.
 ## Declaration
 
 ```swift
-var recoverySuggestion: String? { get }
+let recoverySuggestion: String?
 ```
 
 ## See Also
 
-- [var failureReason: String?](arkitsession/error/failurereason.md)
+- [let failureReason: String?](arkitsession/error/failurereason.md)
   A localized message that describes why the error occurred.
 
 

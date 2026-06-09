@@ -19,7 +19,7 @@ The name of this instance.
 ## Declaration
 
 ```swift
-var name: String
+var name: String { get set }
 ```
 
 #### Discussion

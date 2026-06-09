@@ -20,10 +20,6 @@ Assistant schema conformance for types you use to describe photos and videos.
 protocol PhotosEnum : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -43,17 +39,6 @@ protocol PhotosEnum : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
 - [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-
-## See Also
-
-- [var albumType: some AssistantSchemas.Enum](assistantschemas/photosenum/albumtype.md)
-  The type of photo album.
-- [var assetType: some AssistantSchemas.Enum](assistantschemas/photosenum/assettype.md)
-  The type of asset.
-- [var filterType: some AssistantSchemas.Enum](assistantschemas/photosenum/filtertype.md)
-  The filter effect for a photo or video.
-- [var rotationDirection: some AssistantSchemas.Enum](assistantschemas/photosenum/rotationdirection.md)
-  The direction for rotating a photo or video.
 
 
 ---

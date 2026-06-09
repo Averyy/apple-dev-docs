@@ -1,6 +1,6 @@
 # SCVideoStreamAnalyzer
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: class
 
 An object that monitors a stream of video by analyzing frames for sensitive content.
@@ -18,11 +18,11 @@ class SCVideoStreamAnalyzer
 
 ## Mentions
 
-- [Detecting nudity in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Overview
 
-Use this class to detect senstive content in a video stream, such as on a conference call that your app implements. The class detects senstive content in the video stream from either the device’s camera or the remote devices signed into the call, depending on how you configure the analyzer.
+Use this class to detect sensitive content in a video stream, such as on a conference call that your app implements. The class detects sensitive content in the video stream from either the device’s camera or the remote devices signed into the call, depending on how you configure the analyzer.
 
 Create an instance of this class for each video stream in the call.
 
@@ -34,7 +34,7 @@ To begin analyzing the stream, pass it to either [`beginAnalysis(of:)`](scvideos
 
 When the framework detects sensitive content in the stream, it calls [`analysisChangedHandler`](scvideostreamanalyzer/analysischangedhandler.md) immediately with an [`SCSensitivityAnalysis`](scsensitivityanalysis.md) object that includes information about the detection.
 
-You implement the [`analysisChangedHandler`](scvideostreamanalyzer/analysischangedhandler.md) callback to inspect the detection results, which includes confirmation that content is sensitve as well as guidance on next steps your app can take. The framework offers your app suggestions in the handler, which include:
+You implement the [`analysisChangedHandler`](scvideostreamanalyzer/analysischangedhandler.md) callback to inspect the detection results, which includes confirmation that content is sensitive as well as guidance on next steps your app can take. The framework offers your app suggestions in the handler, which include:
 
 - Alerting the person to the presence of sensitive content ([`shouldIndicateSensitivity`](scsensitivityanalysis/shouldindicatesensitivity.md))
 - Interrupting video playback ([`shouldInterruptVideo`](scsensitivityanalysis/shouldinterruptvideo.md))
@@ -46,9 +46,9 @@ In the event of an error during analysis, the handler receives an error object t
 
 ##### Add the App Entitlement
 
-To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+To use this class, the system requires the [`com.apple.developer.sensitivecontentanalysis.client`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.sensitivecontentanalysis.client) entitlement in your app’s code signature. Calls to the framework fail to return positive results without it. You can add this entitlement to your app by enabling the Sensitive Content Analysis capability in Xcode; see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
-For more information, see [`Detecting nudity in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
+For more information, see [`Detecting sensitive content in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
 
 ## Topics
 

@@ -22,7 +22,7 @@ func start(with params: MTROvenCavityOperationalStateClusterStartParams?) async 
 
 #### Discussion
 
-Upon receipt, the device SHALL start its operation if it is safe to do so and the device is in an operational state from which it can be started.
+This command SHALL be supported if the device supports remotely starting the operation.
 
 
 ---

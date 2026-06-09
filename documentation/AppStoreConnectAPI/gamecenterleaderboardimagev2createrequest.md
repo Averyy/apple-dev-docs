@@ -41,7 +41,7 @@ object GameCenterLeaderboardImageV2CreateRequest
 - [object GameCenterLeaderboardImageCreateRequest](gamecenterleaderboardimagecreaterequest.md)
   The request body you use to create a leaderboard image.
 - [object GameCenterLeaderboardImageResponse](gamecenterleaderboardimageresponse.md)
-  A response that contains a single leaderboard image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard image.
 - [object GameCenterLeaderboardImageUpdateRequest](gamecenterleaderboardimageupdaterequest.md)
   The request body you use to update a leaderboard image.
 

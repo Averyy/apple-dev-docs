@@ -16,6 +16,7 @@ A view that represents the body of a control group with a specified label.
 ## Declaration
 
 ```swift
+nonisolated
 struct LabeledControlGroupContent<Content, Label> where Content : View, Label : View
 ```
 

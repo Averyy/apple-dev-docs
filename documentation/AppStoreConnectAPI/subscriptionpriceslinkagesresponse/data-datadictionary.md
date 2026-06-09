@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a subscription prices linkages response resource.
+The resource linkage data identifying a price within a subscription linkage response.
 
 **Availability**:
 - App Store Connect API 2.0+

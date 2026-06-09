@@ -11,6 +11,7 @@ A layout container that arranges its children in a horizontal line and allows th
 ## Declaration
 
 ```swift
+nonisolated
 struct HSplitView<Content> where Content : View
 ```
 

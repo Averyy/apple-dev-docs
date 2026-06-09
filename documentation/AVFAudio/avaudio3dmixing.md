@@ -17,7 +17,7 @@ A collection of properties that define 3D mixing properties.
 ## Declaration
 
 ```swift
-protocol AVAudio3DMixing : NSObjectProtocol
+protocol AVAudio3DMixing : NSObjectProtocol, Sendable
 ```
 
 #### Overview
@@ -53,6 +53,8 @@ Only the [`AVAudioEnvironmentNode`](avaudioenvironmentnode.md) class implements 
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 ### Inherited By
 - [AVAudioMixing](avaudiomixing.md)
 ### Conforming Types

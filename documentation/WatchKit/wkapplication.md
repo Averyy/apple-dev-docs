@@ -66,15 +66,15 @@ As relevant events occur within your WatchKit app, the app object notifies its d
 - [func scheduleSnapshotRefresh(withPreferredDate: Date, userInfo: (any NSSecureCoding & NSObjectProtocol)?, scheduledCompletion: ((any Error)?) -> Void)](wkapplication/schedulesnapshotrefresh(withpreferreddate:userinfo:scheduledcompletion:).md)
   Schedules a background task to refresh your app’s snapshot.
 ### Observing messages from the notification center
-- [static let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
+- [class let didFinishLaunchingNotification: NSNotification.Name](wkapplication/didfinishlaunchingnotification.md)
   A message indicating that the launch process finished and the extension is ready to run.
-- [static let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
+- [class let didBecomeActiveNotification: NSNotification.Name](wkapplication/didbecomeactivenotification.md)
   A message indicating that the watchOS app is visible and processing events.
-- [static let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
+- [class let willResignActiveNotification: NSNotification.Name](wkapplication/willresignactivenotification.md)
   A message indicating that the system is about to deactivate the watchOS app.
-- [static let willEnterForegroundNotification: NSNotification.Name](wkapplication/willenterforegroundnotification.md)
+- [class let willEnterForegroundNotification: NSNotification.Name](wkapplication/willenterforegroundnotification.md)
   A message indicating that the watchOS app is about to transition from the background to the foreground.
-- [static let didEnterBackgroundNotification: NSNotification.Name](wkapplication/didenterbackgroundnotification.md)
+- [class let didEnterBackgroundNotification: NSNotification.Name](wkapplication/didenterbackgroundnotification.md)
   A message indicating that the watchOS app transitioned from the foreground to the background.
 ### Registering for remote notifications
 - [func registerForRemoteNotifications()](wkapplication/registerforremotenotifications.md)

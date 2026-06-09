@@ -23,6 +23,15 @@ func paperMarkupViewControllerDidChangeSelection(_ paperMarkupViewController: Pa
 
 - `paperMarkupViewController`: The `PaperMarkupViewController` containing the markup.
 
+## See Also
+
+- [func paperMarkupViewControllerDidChangeMarkup(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:).md)
+  Tells the delegate when the markup changes.
+- [func paperMarkupViewControllerDidBeginDrawing(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:).md)
+  Tells the delegate when a person begins drawing.
+- [func paperMarkupViewControllerDidChangeContentVisibleFrame(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:).md)
+  Tells the delegate when a person scrolls or zooms the content.
+
 
 ---
 

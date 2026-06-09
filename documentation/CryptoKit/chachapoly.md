@@ -38,6 +38,12 @@ enum ChaChaPoly
   Decrypts the message and verifies its authenticity.
 - [static func open<AuthenticatedData>(ChaChaPoly.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](chachapoly/open(_:using:authenticating:).md)
   Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
+### Type Methods
+- [static func open(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: ChaChaPoly.Nonce, authenticating: RawSpan?, tag: RawSpan) throws](chachapoly/open(inplace:using:nonce:authenticating:tag:).md)
+  Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
+- [static func open(inplace: inout MutableRawSpan, using: SymmetricKey, nonce: RawSpan, tag: RawSpan, authenticating: RawSpan?) throws](chachapoly/open(inplace:using:nonce:tag:authenticating:).md)
+- [static func seal(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: ChaChaPoly.Nonce, authenticating: RawSpan?, tag: inout OutputRawSpan) throws](chachapoly/seal(inplace:using:nonce:authenticating:tag:).md)
+  Secures the given plaintext message in place with encryption and an authentication tag.
 
 ## Relationships
 

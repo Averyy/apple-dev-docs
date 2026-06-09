@@ -7,11 +7,13 @@
 ### Storage Devices
 - [class VZUSBMassStorageDevice](vzusbmassstoragedevice.md)
   A class that represents a hot-pluggable USB mass storage device.
+- [class VZUSBPassthroughDevice](vzusbpassthroughdevice.md)
 ### Configurations
 - [class VZUSBControllerConfiguration](vzusbcontrollerconfiguration.md)
   The base class for a USB controller configuration.
 - [class VZXHCIControllerConfiguration](vzxhcicontrollerconfiguration.md)
   The configuration object for the USB Extensible Host Controller Interface (XHCI) controller.
+- [class VZUSBPassthroughDeviceConfiguration](vzusbpassthroughdeviceconfiguration.md)
 ### Controllers
 - [class VZUSBController](vzusbcontroller.md)
   A class that represents a USB controller in a VM.
@@ -49,6 +51,8 @@
   Configure a device that manages multiport console communication with the guest system.
 - [Clipboard sharing](clipboard-sharing.md)
   Share the pasteboard between the host and guest system.
+- [Custom Virtio drivers](custom-drivers.md)
+  Create custom Virtio drivers for Linux virtual machines.
 
 
 ---

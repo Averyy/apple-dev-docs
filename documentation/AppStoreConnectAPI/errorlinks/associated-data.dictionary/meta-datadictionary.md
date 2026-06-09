@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Metadata for an associated link within an error response.
+
 **Availability**:
 - App Store Connect API 3.5+
 

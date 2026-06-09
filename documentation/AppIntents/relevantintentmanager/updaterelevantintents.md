@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Give the system the list of relevant intents for your app. To replace the list, call this method again, passing in a new list of relevant intents.  To remove all relevant intents associated with your app, call this method with an empty array.
+Sets the relevant app intents for the system to suggest.
 
 **Availability**:
 - iOS 17.0+
@@ -19,6 +19,12 @@ Give the system the list of relevant intents for your app. To replace the list, 
 ```swift
 final func updateRelevantIntents(_ relevantIntents: [RelevantIntent]) async throws
 ```
+
+#### Discussion
+
+- Parameter - relevantIntents: The array of relevant intents that currently apply to your app. Specify an empty array if your app doesn’t have any intents to suggest.
+
+Use this method to specify the complete set of relevant app intents for the system to consider. The system uses the relevance information in the [`RelevantIntent`](relevantintent.md) structure to determine when to suggest the action. This method runs asynchronously and throws an error if it’s unable to update the current set of intents.
 
 
 ---

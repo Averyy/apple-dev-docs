@@ -20,6 +20,10 @@ weak var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)? { get set
 
 The delegate for receiving caption preview and state change notifications.
 
+## See Also
+
+- [AVLegibleMediaOptionsMenuController.Delegate](avlegiblemediaoptionsmenucontroller/delegate-swift.protocol.md)
+
 
 ---
 

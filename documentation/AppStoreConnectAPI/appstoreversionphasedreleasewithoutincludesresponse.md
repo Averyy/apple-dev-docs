@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response containing a single phased release configuration, without related resources.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -24,7 +26,7 @@ object AppStoreVersionPhasedReleaseWithoutIncludesResponse
 - [object AppStoreVersionPhasedReleaseCreateRequest](appstoreversionphasedreleasecreaterequest.md)
   The request body you use to create an App Store Version Phased Release.
 - [object AppStoreVersionPhasedReleaseResponse](appstoreversionphasedreleaseresponse.md)
-  A response that contains a single App Store Version Phased Releases resource.
+  The response body for endpoints that create, read, or modify the phased release schedule for an App Store version.
 - [object AppStoreVersionPhasedReleaseUpdateRequest](appstoreversionphasedreleaseupdaterequest.md)
   The request body you use to update an App Store Version Phased Release.
 - [type PhasedReleaseState](phasedreleasestate.md)

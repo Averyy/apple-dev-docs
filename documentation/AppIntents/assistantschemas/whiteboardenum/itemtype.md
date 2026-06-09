@@ -37,14 +37,7 @@ enum CanvasItemType: AppEnum {
 }
 ```
 
-For more information about the `.whiteboard` app intent domain, see [`Making whiteboard actions available to Siri and Apple Intelligence`](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var color: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/color.md)
-  The color of a whiteboard canvas.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-  Assistant schema conformance for whiteboard types.
+For more information about the `.whiteboard` app intent domain, see doc:Making-whiteboard-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

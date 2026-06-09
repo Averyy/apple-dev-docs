@@ -47,6 +47,8 @@ struct Port
   An output to wired headphones.
 - [static let lineOut: AVAudioSession.Port](avaudiosession/port/lineout.md)
   A line-level output to the dock connector.
+- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+  Output to a media device vended through a system-wide extension that the user has installed
 ### Getting I/O Ports
 - [static let AVB: AVAudioSession.Port](avaudiosession/port/avb.md)
   An I/O connection to an Audio Video Bridging (AVB) device.
@@ -60,6 +62,8 @@ struct Port
   An I/O connection to a DisplayPort device.
 - [static let fireWire: AVAudioSession.Port](avaudiosession/port/firewire.md)
   An I/O connection to a FireWire device.
+- [static let mediaDeviceExtension: AVAudioSession.Port](avaudiosession/port/mediadeviceextension.md)
+  Output to a media device vended through a system-wide extension that the user has installed
 - [static let thunderbolt: AVAudioSession.Port](avaudiosession/port/thunderbolt.md)
   An I/O connection to a Thunderbolt device.
 - [static let usbAudio: AVAudioSession.Port](avaudiosession/port/usbaudio.md)

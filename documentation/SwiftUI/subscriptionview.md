@@ -18,7 +18,7 @@ A view that subscribes to a publisher with an action.
 
 ```swift
 @frozen
-struct SubscriptionView<PublisherType, Content> where PublisherType : Publisher, Content : View, PublisherType.Failure == Never
+nonisolated struct SubscriptionView<PublisherType, Content> where PublisherType : Publisher, Content : View, PublisherType.Failure == Never
 ```
 
 ## Topics

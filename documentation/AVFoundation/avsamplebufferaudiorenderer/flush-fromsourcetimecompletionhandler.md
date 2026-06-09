@@ -6,13 +6,13 @@
 Flushes queued sample buffers with presentation time stamps later than or equal to the specified time.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 11.0+
+- iPadOS 11.0+
+- Mac Catalyst 13.1+
+- macOS 10.13+
+- tvOS 11.0+
+- visionOS 1.0+
+- watchOS 4.0+
 
 ## Declaration
 

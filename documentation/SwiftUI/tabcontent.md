@@ -41,26 +41,14 @@ extension MyCustomType: Transition {
 
 ## Topics
 
-### Associated Types
+### Setting tab content
+- [var body: Self.Body](tabcontent/body-swift.property.md)
+  The value of this type’s nested content.
 - [associatedtype Body : TabContent](tabcontent/body-swift.associatedtype.md)
   The type of content representing the body of this content type.
 - [associatedtype TabValue : Hashable](tabcontent/tabvalue.md)
   The type used to drive selection for the containing tab view.
-### Instance Properties
-- [var body: Self.Body](tabcontent/body-swift.property.md)
-  The value of this type’s nested content.
-### Instance Methods
-- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
-  Communicates to the user what happens after selecting the tab.
-- [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
-](tabcontent/accessibilityidentifier(_:isenabled:).md)
-  Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
-- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
-  Sets alternate input labels with which users identify a tab.
-- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
-  Adds a label to the tab that describes its contents.
-- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
-  Adds a textual description of the value that the tab contains.
+### Configuring tab content
 - [func badge(_:)](tabcontent/badge(_:).md)
   Generates a badge for a tab from an integer value.
 - [func contextMenu<M>(menuItems: () -> M) -> some TabContent<Self.TabValue>
@@ -72,6 +60,11 @@ extension MyCustomType: Transition {
 - [func customizationID(String) -> some TabContent<Self.TabValue>
 ](tabcontent/customizationid(_:).md)
   Sets the identifier for a tab to persist its state.
+- [func defaultSectionExpansion(TabSectionExpansion) -> some TabContent<Self.TabValue>
+](tabcontent/defaultsectionexpansion(_:).md)
+  Sets the default expansion state for the section containing this tab when displayed in the sidebar.
+- [struct TabSectionExpansion](tabsectionexpansion.md)
+  The default expansion state for a tab section in the sidebar.
 - [func defaultVisibility(Visibility, for: AdaptableTabBarPlacement...) -> some TabContent<Self.TabValue>
 ](tabcontent/defaultvisibility(_:for:).md)
   Configures the default visibility of a tab in customizable contexts.
@@ -84,6 +77,8 @@ extension MyCustomType: Transition {
 - [func dropDestination<T>(for: T.Type, action: ([T]) -> Void) -> some TabContent<Self.TabValue>
 ](tabcontent/dropdestination(for:action:).md)
   Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
+- [func help(_:)](tabcontent/help(_:).md)
+  Adds help text to a tab using a text view that you provide.
 - [func hidden(Bool) -> some TabContent<Self.TabValue>
 ](tabcontent/hidden(_:).md)
   Hides the tab from the user.
@@ -105,6 +100,20 @@ extension MyCustomType: Transition {
 - [func tabPlacement(TabPlacement) -> some TabContent<Self.TabValue>
 ](tabcontent/tabplacement(_:).md)
   Specifies the placement of a tab.
+- [struct TabPlacement](tabplacement.md)
+  A place that a tab can appear.
+### Configuring tab accessibility
+- [func accessibilityHint(_:isEnabled:)](tabcontent/accessibilityhint(_:isenabled:).md)
+  Communicates to the user what happens after selecting the tab.
+- [func accessibilityIdentifier(String, isEnabled: Bool) -> some TabContent<Self.TabValue>
+](tabcontent/accessibilityidentifier(_:isenabled:).md)
+  Uses the string you specify to identify the view. Use this value for testing. It isn’t visible to the user.
+- [func accessibilityInputLabels(_:isEnabled:)](tabcontent/accessibilityinputlabels(_:isenabled:).md)
+  Sets alternate input labels with which users identify a tab.
+- [func accessibilityLabel(_:isEnabled:)](tabcontent/accessibilitylabel(_:isenabled:).md)
+  Adds a label to the tab that describes its contents.
+- [func accessibilityValue(_:isEnabled:)](tabcontent/accessibilityvalue(_:isenabled:).md)
+  Adds a textual description of the value that the tab contains.
 
 ## Relationships
 

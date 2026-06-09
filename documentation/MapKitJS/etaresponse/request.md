@@ -14,13 +14,6 @@ The request object associated with the estimated time of arrival response.
 request: object;
 ```
 
-## See Also
-
-- [origin](etaresponse/origin.md)
-  The coordinates that represent the starting point for estimated arrival time requests.
-- [etas](etaresponse/etas.md)
-  An array of estimated arrival times.
-
 
 ---
 

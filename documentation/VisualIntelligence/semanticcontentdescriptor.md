@@ -3,12 +3,14 @@
 **Framework**: Visual Intelligence  
 **Kind**: struct
 
-A type that represents a scene that visual intelligence captures, like a screenshot, photo, or photo and video stream.
+A type that represents a scene that visual intelligence captures, for example, a screenshot, photo, or photo and video stream.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 
@@ -24,7 +26,7 @@ struct SemanticContentDescriptor
 
 ### Accessing semantic content
 - [let labels: [String]](semanticcontentdescriptor/labels.md)
-  A list of labels that visual intelligence uses to classify items onscreen or visual intelligence camera.
+  A list of labels that visual intelligence uses to classify items onscreen or in visual intelligence camera.
 - [var pixelBuffer: CVReadOnlyPixelBuffer?](semanticcontentdescriptor/pixelbuffer.md)
   The pixel buffer that visual intelligence captures.
 ### Protocol conformance
@@ -48,6 +50,8 @@ struct SemanticContentDescriptor
 - [Encodable](../Swift/Encodable.md)
 - [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](../AppIntents/InstanceDisplayRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [PersistentlyIdentifiable](../AppIntents/PersistentlyIdentifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -58,7 +62,7 @@ struct SemanticContentDescriptor
 - [Integrating your app with visual intelligence](integrating-your-app-with-visual-intelligence.md)
   Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
 - [Adopting App Intents to support system experiences](../AppIntents/adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
 
 
 ---

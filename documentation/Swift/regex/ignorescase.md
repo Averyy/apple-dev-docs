@@ -17,7 +17,7 @@ Returns a regular expression that ignores case when matching.
 ## Declaration
 
 ```swift
-func ignoresCase(_ ignoresCase: Bool = true) -> Regex<Regex<Output>.RegexOutput>
+func ignoresCase(_ ignoresCase: Bool = true) -> Regex<Output>
 ```
 
 #### Return Value

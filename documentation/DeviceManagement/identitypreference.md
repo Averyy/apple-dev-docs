@@ -7,8 +7,6 @@ The payload that configures the user’s identity on the device.
 
 **Availability**:
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,11 +32,11 @@ See also [`CertificatePreference`](certificatepreference.md) for setting up cert
 
 |  |  |
 | --- | --- |
-| Device channel | NA |
+| Device channel | N/A |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | macOS |
 

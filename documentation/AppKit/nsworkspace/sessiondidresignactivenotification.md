@@ -24,6 +24,8 @@ If an app launches in an inactive session, the workspace sends [`sessionDidResig
 
 > ❗ **Important**:  To receive this notification, use [`notificationCenter`](nsworkspace/notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
 
+To observe this notification using Swift concurrency, use [`NSWorkspace.SessionDidResignActiveMessage`](nsworkspace/sessiondidresignactivemessage.md).
+
 ## See Also
 
 - [class let willLaunchApplicationNotification: NSNotification.Name](nsworkspace/willlaunchapplicationnotification.md)

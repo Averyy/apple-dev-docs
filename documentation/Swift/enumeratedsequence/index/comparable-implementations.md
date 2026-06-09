@@ -17,12 +17,12 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (EnumeratedSequence<Base>.Index, EnumeratedSequence<Base>.Index) -> Bool](enumeratedsequence/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](enumeratedsequence/index/_(_:_:)-59bjf.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_(_:_:)-75ls0.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](enumeratedsequence/index/_=(_:_:)-2idsp.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](enumeratedsequence/index/_=(_:_:)-5fwix.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_=(_:_:)-642fd.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](enumeratedsequence/index/_=(_:_:)-8ylf3.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 
 ---

@@ -53,6 +53,8 @@ Use a [`HKCategoryValue.notApplicable`](hkcategoryvalue/notapplicable.md) value 
   A category type that records pregnancy.
 - [static let pregnancyTestResult: HKCategoryTypeIdentifier](hkcategorytypeidentifier/pregnancytestresult.md)
   A category type that represents the results from a home pregnancy test.
+- [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+  A value that indicates the intensity of vaginal bleeding.
 
 
 ---

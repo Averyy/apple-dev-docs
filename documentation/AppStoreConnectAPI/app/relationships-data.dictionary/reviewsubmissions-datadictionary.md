@@ -16,6 +16,7 @@ object App.Relationships.ReviewSubmissions
 
 ### Objects
 - [object App.Relationships.ReviewSubmissions.Data](app/relationships-data.dictionary/reviewsubmissions-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related review submission resource.
 
 ## Properties
 

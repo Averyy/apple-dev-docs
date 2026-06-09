@@ -63,6 +63,7 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
   The system identifier of the external entity referenced in the XML document.
 ### Constants
 - [XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.enum.md)
+  Defines the external entity resolving policy used by an `NSXMLParser` instance.
 - [class let errorDomain: String](xmlparser/errordomain.md)
   Indicates an error in XML parsing.
 - [XMLParser.ErrorCode](xmlparser/errorcode.md)
@@ -71,7 +72,9 @@ An [`XMLParser`](xmlparser.md) notifies its delegate about the items (elements, 
 - [convenience init?(contentsOfURL: URL)](xmlparser/init(contentsofurl:).md)
 ### Instance Properties
 - [var allowedExternalEntityURLs: Set<URL>?](xmlparser/allowedexternalentityurls.md)
+  The set of external entity URLs that the parser is allowed to load.
 - [var externalEntityResolvingPolicy: XMLParser.ExternalEntityResolvingPolicy](xmlparser/externalentityresolvingpolicy-swift.property.md)
+  The external entity resolving policy for the parser.
 
 ## Relationships
 

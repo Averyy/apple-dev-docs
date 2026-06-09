@@ -18,7 +18,7 @@ Applies the given animation to all animatable values within the `body` closure.
 
 ```swift
 nonisolated
-func animation<V>(_ animation: Animation?, @ViewBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
+func animation<V>(_ animation: Animation?, @ContentBuilder body: (PlaceholderContentView<Self>) -> V) -> some View where V : View
 ```
 
 #### Discussion

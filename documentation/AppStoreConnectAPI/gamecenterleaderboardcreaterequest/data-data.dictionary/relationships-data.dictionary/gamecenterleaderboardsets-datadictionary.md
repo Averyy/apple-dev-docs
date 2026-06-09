@@ -16,6 +16,7 @@ object GameCenterLeaderboardCreateRequest.Data.Relationships.GameCenterLeaderboa
 
 ### Objects
 - [object GameCenterLeaderboardCreateRequest.Data.Relationships.GameCenterLeaderboardSets.Data](gamecenterleaderboardcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center leaderboard.
 
 ## Properties
 

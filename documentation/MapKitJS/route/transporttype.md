@@ -11,7 +11,7 @@ The overall route transport type.
 ## Declaration
 
 ```swift
-transportType?: string;
+transportType: TransportType | null;
 ```
 
 #### Discussion
@@ -30,8 +30,6 @@ This property reflects the primary transport type used for the route. Individual
   The expected travel time, in seconds.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

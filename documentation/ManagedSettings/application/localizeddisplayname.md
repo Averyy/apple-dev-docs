@@ -9,7 +9,6 @@ A localized display name for the application.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst ?+
-- visionOS 1.0+
 
 ## Declaration
 

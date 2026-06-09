@@ -16,6 +16,11 @@
 static var legible: AVLegibleMediaOptionsMenuController.MenuContents { get }
 ```
 
+## See Also
+
+- [static var all: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/all.md)
+- [static var captionAppearance: AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents/captionappearance.md)
+
 
 ---
 

@@ -12,7 +12,7 @@ The center point of the request represented as latitude and longitude.
 
 ```swift
 get center(): Coordinate | null;
-set center(value: Coordinate | null);
+set center(value: CoordinateData | null);
 ```
 
 ## See Also

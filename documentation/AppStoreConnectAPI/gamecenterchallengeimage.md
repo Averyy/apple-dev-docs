@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a challenge image.
+An image asset used to represent a Game Center challenge in the player interface.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -30,9 +30,9 @@ object GameCenterChallengeImage
 ## See Also
 
 - [object GameCenterChallengeImageCreateRequest](gamecenterchallengeimagecreaterequest.md)
-  The request body you use to create a challenge resource.
+  The request body for uploading an image asset for a Game Center challenge.
 - [object GameCenterChallengeImageResponse](gamecenterchallengeimageresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single image asset for a Game Center challenge.
 - [object GameCenterChallengeImageUpdateRequest](gamecenterchallengeimageupdaterequest.md)
   The request body you use to update a challenge.
 - [object GameCenterChallengeLocalizationImageLinkageResponse](gamecenterchallengelocalizationimagelinkageresponse.md)

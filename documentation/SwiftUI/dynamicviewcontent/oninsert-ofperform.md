@@ -30,6 +30,15 @@ A view that calls `action` when elements are inserted into the original view.
 - `supportedContentTypes`: An array of UTI types that the dynamic view supports.
 - `action`: A closure that SwiftUI invokes when elements are added to the view. The closure takes two arguments: The first argument is the offset relative to the dynamic view’s underlying collection of data. The second argument is an array of [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) items that represents the data that you want to insert.
 
+## See Also
+
+- [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](dynamicviewcontent/ondelete(perform:).md)
+  Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](list.md).
+- [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](dynamicviewcontent/onmove(perform:).md)
+  Sets the move action for the dynamic view.
+- [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](dynamicviewcontent/dropdestination(for:action:).md)
+  Sets the insert action for the dynamic view.
+
 
 ---
 

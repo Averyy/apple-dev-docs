@@ -31,10 +31,6 @@ If you plan to invoke `completionHandler` after this method returns, you must co
 - `completionHandler`: A Block object to execute with the results of creating the window. You must execute this block at some point but may do so after the method returns if needed. This block takes the following parameters: - The window that was created or `nil` if the window could not be created.
 - An error object if the window was not recognized or could not be created for whatever reason; otherwise, specify `nil`.
 
-## See Also
-
-- [Mac App Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/MOSXAppProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010543)
-
 
 ---
 

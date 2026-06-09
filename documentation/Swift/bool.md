@@ -70,7 +70,7 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 ### Comparing Boolean Values
 - [static func == (Bool, Bool) -> Bool](bool/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](bool/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](bool/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Transforming a Boolean
 - [func toggle()](bool/toggle.md)
@@ -149,6 +149,7 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [BindableData](../RealityKit/BindableData.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
 - [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
@@ -163,6 +164,8 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [Generable](../FoundationModels/Generable.md)
 - [Hashable](hashable.md)
 - [InstructionsRepresentable](../FoundationModels/InstructionsRepresentable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [MLTensorScalar](../CoreML/MLTensorScalar.md)
@@ -170,6 +173,9 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 
 ---

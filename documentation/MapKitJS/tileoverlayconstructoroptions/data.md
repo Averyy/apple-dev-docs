@@ -11,9 +11,7 @@ Custom data for populating the URL template.
 ## Declaration
 
 ```swift
-data: {
-        [key: string]: any;
-    };
+data: Record<string, any>;
 ```
 
 #### Discussion

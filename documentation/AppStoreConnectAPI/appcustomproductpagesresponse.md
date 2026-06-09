@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of app custom product page resources.
+The response body for endpoints that list custom App Store product pages for an app.
 
 **Availability**:
 - App Store Connect API 1.7+
@@ -24,15 +24,15 @@ object AppCustomProductPagesResponse
 ## See Also
 
 - [object AppCustomProductPage](appcustomproductpage.md)
-  The data structure that represents an app custom product page resource.
+  A custom variant of an app’s App Store product page, used for targeted marketing campaigns.
 - [object AppCustomProductPageCreateRequest](appcustomproductpagecreaterequest.md)
   The request body you use to create an app custom product page.
 - [object AppCustomProductPageResponse](appcustomproductpageresponse.md)
-  A response that contains a single app custom product page resource.
+  The response body for endpoints that create, read, or modify a single custom App Store product page.
 - [object AppCustomProductPageUpdateRequest](appcustomproductpageupdaterequest.md)
   The request body you use to update an app custom product page.
 - [object AppCustomProductPageAppCustomProductPageVersionsLinkagesResponse](appcustomproductpageappcustomproductpageversionslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of versions for a custom App Store product page.
 
 
 ---

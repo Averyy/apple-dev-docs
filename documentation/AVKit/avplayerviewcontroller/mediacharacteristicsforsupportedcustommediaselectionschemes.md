@@ -19,6 +19,13 @@ class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaC
 
 Returns available AVKit supported media group types.
 
+## See Also
+
+- [var allowedSubtitleOptionLanguages: [String]?](avplayerviewcontroller/allowedsubtitleoptionlanguages.md)
+  An array of language codes that restrict the set of subtitle languages available to the user.
+- [var requiresFullSubtitles: Bool](avplayerviewcontroller/requiresfullsubtitles.md)
+  A Boolean value that indicates whether the user can disable the display of subtitles.
+
 
 ---
 

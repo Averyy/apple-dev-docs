@@ -698,12 +698,42 @@ A single [`NSWindow`](nswindow.md) object corresponds to, at most, one on-screen
 ### Classes
 - [NSWindow.HostingSheetRepresentation](nswindow/hostingsheetrepresentation.md)
   A class representing a SwiftUI view hosted in an AppKit sheet.
+### Structures
+- [NSWindow.DidBecomeKeyMessage](nswindow/didbecomekeymessage.md)
+- [NSWindow.DidBecomeMainMessage](nswindow/didbecomemainmessage.md)
+- [NSWindow.DidChangeBackingPropertiesMessage](nswindow/didchangebackingpropertiesmessage.md)
+- [NSWindow.DidChangeOcclusionStateMessage](nswindow/didchangeocclusionstatemessage.md)
+- [NSWindow.DidChangeScreenMessage](nswindow/didchangescreenmessage.md)
+- [NSWindow.DidChangeScreenProfileMessage](nswindow/didchangescreenprofilemessage.md)
+- [NSWindow.DidDeminiaturizeMessage](nswindow/diddeminiaturizemessage.md)
+- [NSWindow.DidEndLiveResizeMessage](nswindow/didendliveresizemessage.md)
+- [NSWindow.DidEndSheetMessage](nswindow/didendsheetmessage.md)
+- [NSWindow.DidEnterFullScreenMessage](nswindow/didenterfullscreenmessage.md)
+- [NSWindow.DidEnterVersionBrowserMessage](nswindow/didenterversionbrowsermessage.md)
+- [NSWindow.DidExitFullScreenMessage](nswindow/didexitfullscreenmessage.md)
+- [NSWindow.DidExitVersionBrowserMessage](nswindow/didexitversionbrowsermessage.md)
+- [NSWindow.DidExposeMessage](nswindow/didexposemessage.md)
+- [NSWindow.DidMiniaturizeMessage](nswindow/didminiaturizemessage.md)
+- [NSWindow.DidMoveMessage](nswindow/didmovemessage.md)
+- [NSWindow.DidResignKeyMessage](nswindow/didresignkeymessage.md)
+- [NSWindow.DidResignMainMessage](nswindow/didresignmainmessage.md)
+- [NSWindow.DidResizeMessage](nswindow/didresizemessage.md)
+- [NSWindow.DidUpdateMessage](nswindow/didupdatemessage.md)
+- [NSWindow.WillBeginSheetMessage](nswindow/willbeginsheetmessage.md)
+- [NSWindow.WillCloseMessage](nswindow/willclosemessage.md)
+- [NSWindow.WillEnterFullScreenMessage](nswindow/willenterfullscreenmessage.md)
+- [NSWindow.WillEnterVersionBrowserMessage](nswindow/willenterversionbrowsermessage.md)
+- [NSWindow.WillExitFullScreenMessage](nswindow/willexitfullscreenmessage.md)
+- [NSWindow.WillExitVersionBrowserMessage](nswindow/willexitversionbrowsermessage.md)
+- [NSWindow.WillMiniaturizeMessage](nswindow/willminiaturizemessage.md)
+- [NSWindow.WillMoveMessage](nswindow/willmovemessage.md)
+- [NSWindow.WillStartLiveResizeMessage](nswindow/willstartliveresizemessage.md)
 ### Instance Properties
 - [var cascadingReferenceFrame: NSRect](nswindow/cascadingreferenceframe.md)
 ### Instance Methods
 - [func beginDraggingSession(items: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nswindow/begindraggingsession(items:event:source:).md)
 - [func beginSheet<V>(content: () -> V, completionHandler: (() -> Void)?) -> NSWindow.HostingSheetRepresentation<V>](nswindow/beginsheet(content:completionhandler:).md)
-  Presents a SwiftUI View as a sheet on the receiving NSWindow.
+  Presents a SwiftUI view as a sheet on the receiving NSWindow.
 - [func endSheet<V>(NSWindow.HostingSheetRepresentation<V>)](nswindow/endsheet(_:)-6af2u.md)
   Ends a SwiftUI hosted sheet presentation.
 - [func requestSharingOfWindow(NSWindow, completionHandler: ((any Error)?) -> Void)](nswindow/requestsharingofwindow(_:completionhandler:).md)

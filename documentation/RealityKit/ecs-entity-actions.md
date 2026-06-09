@@ -51,6 +51,14 @@ For example, you can vary the size of an impulse you apply to an entity with [`I
   An action that enables or disables the targeted entity and its descendants when played as an animation.
 - [struct SpinAction](spinaction.md)
   An action which animates the transform of an entity to rotate around a specified local axis.
+### Behavior trees
+- [struct BehaviorTreeComponent](behaviortreecomponent.md)
+- [class BehaviorTreeResource](behaviortreeresource.md)
+  An immutable representation of a behavior tree.
+- [protocol BehaviorTreeAction](behaviortreeaction.md)
+- [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+- [enum ActionResult](actionresult.md)
+  Status values that an action can report back to the animation system.
 
 ## See Also
 

@@ -15,6 +15,7 @@ Creates a rotation gesture with a minimum delta for the gesture to start.
 ## Declaration
 
 ```swift
+nonisolated
 init(minimumAngleDelta: Angle = .degrees(1))
 ```
 
@@ -24,6 +25,8 @@ init(minimumAngleDelta: Angle = .degrees(1))
 
 ## See Also
 
+- [init(minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture/init(minimumangledelta:inputkinds:).md)
+  Creates a rotation gesture with a minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 - [var minimumAngleDelta: Angle](rotategesture/minimumangledelta.md)
   The minimum delta required before the gesture succeeds.
 

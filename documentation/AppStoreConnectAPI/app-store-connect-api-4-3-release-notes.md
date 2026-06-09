@@ -21,10 +21,12 @@ App Store Connect API version 4.3 provides resources that enable you to automate
 
 ##### Removals
 
-- Removed the endpoints `GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration` and `GET /v1/appStoreVersions/{id}/ageRatingDeclaration`. Use [`Read Age Rating Declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
+- Removed the endpoints `GET /v1/appStoreVersions/{id}/relationships/ageRatingDeclaration` and `GET /v1/appStoreVersions/{id}/ageRatingDeclaration`. Use [`Read the age-rating declaration`](get-v1-appinfos-_id_-ageratingdeclaration.md) instead.
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
@@ -52,8 +54,6 @@ App Store Connect API version 4.3 provides resources that enable you to automate
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

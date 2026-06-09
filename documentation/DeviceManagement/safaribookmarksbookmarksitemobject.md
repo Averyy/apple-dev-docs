@@ -11,8 +11,6 @@ A bookmark that specifies a title, and either a URL for the bookmark, or a neste
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

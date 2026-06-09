@@ -31,7 +31,7 @@ Use this method to force the view to update its layout immediately. When using A
 - [class var requiresConstraintBasedLayout: Bool](uiview/requiresconstraintbasedlayout.md)
   A Boolean value that indicates whether the receiver depends on the constraint-based layout system.
 - [var translatesAutoresizingMaskIntoConstraints: Bool](uiview/translatesautoresizingmaskintoconstraints.md)
-  A Boolean value that determines whether the view’s autoresizing mask is translated into Auto Layout constraints.
+  A Boolean value that determines whether the view’s autoresizing mask converts to Auto Layout constraints.
 
 
 ---

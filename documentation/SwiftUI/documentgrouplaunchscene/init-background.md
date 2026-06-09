@@ -15,7 +15,7 @@ Creates a launch scene for document-based applications with a title, a set of ac
 
 ```swift
 nonisolated
-init(_ title: LocalizedStringKey, @ViewBuilder _ actions: () -> Actions, @ViewBuilder background: () -> some View)
+init(_ title: LocalizedStringKey, @ContentBuilder _ actions: () -> Actions, @ContentBuilder background: () -> some View)
 ```
 
 #### Discussion
@@ -25,7 +25,7 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 ## Parameters
 
 - `title`: A key to use for the view title.
-- `actions`: A view builder for returning the view’s actions.
+- `actions`: A content builder for returning the view’s actions.
 - `background`: The background of the scene.
 
 

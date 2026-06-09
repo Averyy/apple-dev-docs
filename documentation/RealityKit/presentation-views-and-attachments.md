@@ -137,6 +137,8 @@ Views are the building blocks for apps that include RealityKit content. Each vie
 
 - [Presentation UI](presentation-user-interface.md)
   Control your app’s content and how people can interact with it.
+- [Postprocessing effects](postprocessing-effects.md)
+  Create special rendering effects for your RealityKit scenes.
 
 
 ---

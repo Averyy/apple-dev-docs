@@ -3,6 +3,8 @@
 **Framework**: vmnet  
 **Kind**: var
 
+Enable virtio headers in all packets.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 15.4+
@@ -15,9 +17,9 @@ let vmnet_enable_virtio_header_key: UnsafePointer<CChar>
 
 #### Discussion
 
-Enable virtio headers in all packets.
+For more information, see [`5.1.6 Device Operation`](https://developer.apple.comhttps://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html) in the Virtio specification
 
-- see “5.1.6 Device Operation” at https://docs.oasis-open.org/virtio/virtio/v1.1/virtio-v1.1.html This property must not be specified if `vmnet_enable_checksum_offload_key` is specified.
+You must not specify this property if [`vmnet_enable_checksum_offload_key`](vmnet_enable_checksum_offload_key.md) is specified.
 
 
 ---

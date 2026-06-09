@@ -57,7 +57,7 @@ if let i = numbers.firstIndex(of: 40) {
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](string/subscript(_:)-4h7s3.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](string/subscript(_:)-4al9c.md)
 - [func prefix(Int) -> Self.SubSequence](string/prefix(_:).md)
   Returns a subsequence, up to the specified maximum length, containing the initial elements of the collection.
 - [func prefix(upTo: Self.Index) -> Self.SubSequence](string/prefix(upto:).md)

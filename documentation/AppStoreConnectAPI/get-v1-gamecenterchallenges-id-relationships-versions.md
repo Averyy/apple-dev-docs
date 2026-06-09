@@ -1,9 +1,9 @@
-# Read the Challenges for a Game Center Group
+# Read the versions for a Game Center challenge
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get challenge information for a specific Game Center group.
+Get version information for a specific Game Center challenge.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -28,9 +28,9 @@ Get challenge information for a specific Game Center group.
   Get details about the default image for a specific Game Center challenge version.
 - [List All Localizations for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-localizations.md)
   Get details about the default localization for a specific Game Center challenge version.
-- [Get the Default Image ID for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
+- [Get the default image id for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-defaultimage.md)
   Get the default image ID for a specific Game Center challenge version.
-- [Get the Localization IDs for a Challenge Version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
+- [Get the localization ids for a challenge version](get-v1-gamecenterchallengeversions-_id_-relationships-localizations.md)
   List all the localization IDs for a specific Game Center challenge version.
 
 

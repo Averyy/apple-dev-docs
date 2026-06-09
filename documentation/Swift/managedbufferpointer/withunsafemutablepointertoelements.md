@@ -22,7 +22,7 @@ func withUnsafeMutablePointerToElements<E, R>(_ body: (UnsafeMutablePointer<Elem
 
 #### Discussion
 
-> **Note**: This pointer is valid only for the duration of the call to `body`.
+> **Note**: This pointer is valid only for the duration of the call to `body`. The caller is responsible for ensuring that the buffer is not being accessed anyone else while performing this call.
 
 ## See Also
 

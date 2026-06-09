@@ -6,8 +6,12 @@
 Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -66,6 +70,10 @@ enum Code
   An error message that indicates an operation failed because of an invalid parameter value.
 ### Creating an error
 - [init?(rawValue: Int)](scstreamerror/code/init(rawvalue:).md)
+### Enumeration Cases
+- [SCStreamError.Code.insufficientStorage](scstreamerror/code/insufficientstorage.md)
+- [SCStreamError.Code.missingBackgroundMode](scstreamerror/code/missingbackgroundmode.md)
+- [SCStreamError.Code.notSupported](scstreamerror/code/notsupported.md)
 
 ## Relationships
 

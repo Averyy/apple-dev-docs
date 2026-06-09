@@ -16,6 +16,8 @@ class let fontSetChangedNotification: NSNotification.Name
 
 #### Discussion
 
+To observe this notification using Swift concurrency, use [`NSFont.FontSetChangedMessage`](nsfont/fontsetchangedmessage.md).
+
 ## See Also
 
 - [class let antialiasThresholdChangedNotification: NSNotification.Name](nsfont/antialiasthresholdchangednotification.md)

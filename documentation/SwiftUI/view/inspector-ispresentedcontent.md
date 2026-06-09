@@ -15,7 +15,7 @@ Inserts an inspector at the applied position in the view hierarchy.
 
 ```swift
 nonisolated
-func inspector<V>(isPresented: Binding<Bool>, @ViewBuilder content: () -> V) -> some View where V : View
+func inspector<V>(isPresented: Binding<Bool>, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Discussion

@@ -44,6 +44,7 @@ struct UUID
 ## Relationships
 
 ### Conforms To
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

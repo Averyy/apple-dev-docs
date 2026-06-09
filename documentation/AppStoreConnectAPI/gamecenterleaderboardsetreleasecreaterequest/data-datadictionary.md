@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a Game Center leaderboard set release.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -16,6 +18,7 @@ object GameCenterLeaderboardSetReleaseCreateRequest.Data
 
 ### Objects
 - [object GameCenterLeaderboardSetReleaseCreateRequest.Data.Relationships](gamecenterleaderboardsetreleasecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of achievement release resources.
+The response body for endpoints that list Game Center achievement releases.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -28,7 +28,7 @@ object GameCenterAchievementReleasesResponse
 - [object GameCenterAchievementReleaseCreateRequest](gamecenterachievementreleasecreaterequest.md)
   The request body you use to create an achievement release.
 - [object GameCenterAchievementReleaseResponse](gamecenterachievementreleaseresponse.md)
-  A response that contains a single achievement release resource.
+  The response body for endpoints that create, read, or modify a single Game Center achievement release.
 - [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 
 

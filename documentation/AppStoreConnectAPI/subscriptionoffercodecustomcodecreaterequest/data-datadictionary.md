@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a subscription offer code custom code.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,7 +18,9 @@ object SubscriptionOfferCodeCustomCodeCreateRequest.Data
 
 ### Objects
 - [object SubscriptionOfferCodeCustomCodeCreateRequest.Data.Attributes](subscriptionoffercodecustomcodecreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a subscription offer code custom code create request resource.
 - [object SubscriptionOfferCodeCustomCodeCreateRequest.Data.Relationships](subscriptionoffercodecustomcodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 

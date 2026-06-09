@@ -98,6 +98,8 @@ Clients of your value then access the value in the usual way, reading it with th
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
 - [var accessibilityPrefersHeadAnchorAlternative: Bool](environmentvalues/accessibilityprefersheadanchoralternative.md)
   Whether the system setting to prefer alternatives to head-anchored content is on.
+- [var accessibilityPrefersCrossFadeTransitions: Bool](environmentvalues/accessibilitypreferscrossfadetransitions.md)
+  A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
 - [var accessibilityQuickActionsEnabled: Bool](environmentvalues/accessibilityquickactionsenabled.md)
   A Boolean that indicates whether the quick actions feature is enabled.
 - [var accessibilityReduceMotion: Bool](environmentvalues/accessibilityreducemotion.md)
@@ -342,7 +344,7 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var accessibilityReduceHighlightingEffects: Bool](environmentvalues/accessibilityreducehighlightingeffects.md)
   Whether the system preference for Reduce Bright Effects is enabled.
 - [var accessibilityShowBorders: Bool](environmentvalues/accessibilityshowborders.md)
-  Whether the system preference for Show Borders is enabled. On macOS this is true when Increased Contrast is enabled.
+  Whether the system preference for Show Borders is enabled.
 - [var activityFamily: ActivityFamily](environmentvalues/activityfamily.md)
   The size family of the current Live Activity.
 - [var askPermission: AskPermissionAction](environmentvalues/askpermission.md)
@@ -355,6 +357,8 @@ Clients of your value then access the value in the usual way, reading it with th
   This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
 - [var credentialImportManager: ASCredentialImportManager](environmentvalues/credentialimportmanager.md)
   This environment variable is for SwiftUI clients of the credential exchange API. An example usage might look like:
+- [var deliveredVerificationCodesManager: DeliveredVerificationCodesManager](environmentvalues/deliveredverificationcodesmanager.md)
+  This environment variable is for SwiftUI clients of the ASDeliveredVerificationCodesManager API. An example usage might look like:
 - [var devicePickerSupports: DevicePickerSupportedAction](environmentvalues/devicepickersupports.md)
   Checks for support to present a DevicePicker.
 - [var findContext: FindContext?](environmentvalues/findcontext.md)
@@ -366,6 +370,10 @@ Clients of your value then access the value in the usual way, reading it with th
 - [var imagePlaygroundSelectedGenerationStyle: ImagePlaygroundStyle](environmentvalues/imageplaygroundselectedgenerationstyle.md)
 - [var isActivityUpdateReduced: Bool](environmentvalues/isactivityupdatereduced.md)
   A Boolean value that indicates whether the Live Activity update synchronization rate is reduced.
+- [var isDynamicIslandLimitedInWidth: Bool](environmentvalues/isdynamicislandlimitedinwidth.md)
+  A Boolean value that indicates whether the Dynamic Island view displays with a limited width.
+- [var isTabViewSidebarAvailable: Bool](environmentvalues/istabviewsidebaravailable.md)
+  A Boolean value that indicates whether a tab sidebar is available within the content of a surrounding [`TabView`](tabview.md).
 - [var isUserAuthenticationEnabled: Bool](environmentvalues/isuserauthenticationenabled.md)
   The current system user authentication enablement status.
 - [var labelIconToTitleSpacing: CGFloat?](environmentvalues/labelicontotitlespacing.md)

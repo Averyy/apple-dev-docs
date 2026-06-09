@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale to use to format the numeric part of the byte count.
+Modifies the format style to use the specified locale.
 
 **Availability**:
 - iOS 15.0+
@@ -17,19 +17,18 @@ The locale to use to format the numeric part of the byte count.
 ## Declaration
 
 ```swift
-var locale: Locale
+func locale(_ locale: Locale) -> ByteCountFormatStyle.Attributed
 ```
 
-## See Also
+#### Return Value
 
-- [var allowedUnits: ByteCountFormatStyle.Units](bytecountformatstyle/attributed-swift.struct/allowedunits.md)
-  The units the format style can use to express the byte count.
-- [var spellsOutZero: Bool](bytecountformatstyle/attributed-swift.struct/spellsoutzero.md)
-  A Boolean value that indicates whether the format style should spell out zero-byte values as text.
-- [var includesActualByteCount: Bool](bytecountformatstyle/attributed-swift.struct/includesactualbytecount.md)
-  A Boolean value that indicates whether the format style should include the exact byte count, in addition to expressing it in terms of units.
+A format style that uses the specified locale.
+
+## Parameters
+
+- `locale`: The locale to apply to the format style.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/bytecountformatstyle/attributed-swift.struct/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/bytecountformatstyle/attributed-swift.struct/locale(_:))*

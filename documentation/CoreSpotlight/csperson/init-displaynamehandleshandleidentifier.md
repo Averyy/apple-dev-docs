@@ -28,6 +28,10 @@ An initialized person object that represents a user’s contact.
 - `handles`: An array of contact handles, such as phone number or email address.
 - `handleIdentifier`: A property key that specifies a handle type, such as [`CNContactEmailAddressesKey`](https://developer.apple.com/documentation/Contacts/CNContactEmailAddressesKey).
 
+## See Also
+
+- [init?(coder: NSCoder)](csperson/init(coder:).md)
+
 
 ---
 

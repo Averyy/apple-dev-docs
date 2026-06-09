@@ -18,8 +18,6 @@ Use these classes to perform speech recognition in Objective-C code.
 - [enum SFSpeechRecognizerAuthorizationStatus](sfspeechrecognizerauthorizationstatus.md)
   The app’s authorization to perform speech recognition.
 ### Audio sources
-- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
-  Perform speech recognition on audio coming from the microphone of an iOS device.
 - [class SFSpeechURLRecognitionRequest](sfspeechurlrecognitionrequest.md)
   A request to recognize speech in a recorded audio file.
 - [class SFSpeechAudioBufferRecognitionRequest](sfspeechaudiobufferrecognitionrequest.md)

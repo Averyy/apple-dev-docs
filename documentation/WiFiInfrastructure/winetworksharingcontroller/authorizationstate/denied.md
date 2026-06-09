@@ -8,6 +8,7 @@ The person has chosen not to share Wi-Fi networks with the accessory.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

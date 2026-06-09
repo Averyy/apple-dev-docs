@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+DNS protocol used for domain resolution.
+
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+

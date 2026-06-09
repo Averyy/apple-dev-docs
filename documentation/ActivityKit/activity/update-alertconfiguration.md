@@ -8,6 +8,7 @@ Updates the dynamic content of a Live Activity and alerts a person about the Liv
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

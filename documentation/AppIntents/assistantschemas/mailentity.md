@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe email.
 protocol MailEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making email actions available to Siri and Apple Intelligence](making-email-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -35,6 +31,7 @@ protocol MailEntity : AssistantSchemas.Model
   The app entity describes an email mailbox.
 - [var message: some AssistantSchemas.Entity](assistantschemas/mailentity/message.md)
   The app entity describes an email message.
+- [var thread: some AssistantSchemas.Entity](assistantschemas/mailentity/thread.md)
 
 ## Relationships
 
@@ -43,17 +40,6 @@ protocol MailEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var account: some AssistantSchemas.Entity](assistantschemas/mailentity/account.md)
-  The app entity describes an email account.
-- [var draft: some AssistantSchemas.Entity](assistantschemas/mailentity/draft.md)
-  The app entity describes an email draft.
-- [var mailbox: some AssistantSchemas.Entity](assistantschemas/mailentity/mailbox.md)
-  The app entity describes an email mailbox.
-- [var message: some AssistantSchemas.Entity](assistantschemas/mailentity/message.md)
-  The app entity describes an email message.
 
 
 ---

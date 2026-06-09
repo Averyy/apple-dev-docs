@@ -13,8 +13,6 @@ The command to get security-related information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,8 @@ object SecurityInfoCommand
 
 ## Mentions
 
-- [Managing Passcodes](managing-passcodes.md)
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Managing passcodes](managing-passcodes.md)
 
 ## Topics
 

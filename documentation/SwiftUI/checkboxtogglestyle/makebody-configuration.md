@@ -11,8 +11,8 @@ Creates a view that represents the body of a toggle checkbox.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func makeBody(configuration: CheckboxToggleStyle.Configuration) -> some View
+nonisolated
+func makeBody(configuration: CheckboxToggleStyle.Configuration) -> some View
 ```
 
 #### Return Value

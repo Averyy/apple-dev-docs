@@ -7,7 +7,7 @@ Current version number of the Core Foundation framework.
 ## Topics
 
 ### Constants
-- [var kCFCoreFoundationVersionNumber: Double](kcfcorefoundationversionnumber.md)
+- [let kCFCoreFoundationVersionNumber: Double](kcfcorefoundationversionnumber.md)
 
 ## See Also
 

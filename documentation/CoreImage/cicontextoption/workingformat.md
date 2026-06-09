@@ -27,9 +27,9 @@ The supported values for the working pixel format are:
 
 | [`CIFormat`](ciformat.md) | Notes |
 | --- | --- |
-| [`RGBA8`](ciformat/rgba8.md) | Uses less memory but has less precision an range |
-| [`RGBAh`](ciformat/rgbah.md) | Uses 8 bytes per pixel, supports HDR |
-| [`RGBAf`](ciformat/rgbaf.md) | Only on macOS |
+| [`RGBA8`](ciformat/rgba8.md) | Uses 4 bytes per pixel. Only supporrts SDR and has less precision. |
+| [`RGBAh`](ciformat/rgbah.md) | Uses 8 bytes per pixel. Supports HDR. |
+| [`RGBAf`](ciformat/rgbaf.md) | Uses 16 bytes per pixel. Only available on macOS |
 
 If this option is not specified, then the default is [`RGBAh`](ciformat/rgbah.md).
 

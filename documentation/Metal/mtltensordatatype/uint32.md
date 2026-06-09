@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+A 32-bit unsigned integer data type.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

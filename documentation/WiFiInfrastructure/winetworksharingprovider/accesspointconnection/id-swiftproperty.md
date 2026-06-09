@@ -8,6 +8,7 @@ A stable per-access point ID that can be used to uniquely identify this access p
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

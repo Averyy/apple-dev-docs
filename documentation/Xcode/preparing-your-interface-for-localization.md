@@ -28,11 +28,12 @@ You can test your interface with samples of text that exhibit the characteristic
 | Accented Pseudolanguage | Adds accents to localizable strings to test whether views adjust to languages that have high and low ascenders. |
 | Bounded String Pseudolanguage | Wraps strings to identify places where localized strings may appear truncated. |
 | Right-to-Left Pseudolanguage With Right-to-Left Strings | Simulates a right-to-left writing direction, using right-to-left strings. |
+| Tall Pseudolanguage | Simulates languages that require significantly more vertical space. |
 
 ## See Also
 
 - [Preparing your app’s text for translation](preparing-your-apps-text-for-translation.md)
-  Make your app’s text translatable by leveraging the localization APIs in the Foundation framework.
+  Use localizable APIs to populate string catalogs automatically with your app’s user-facing text.
 - [Preparing dates, currencies, and numbers for translation](preparing-dates-numbers-with-formatters.md)
   Ensure that dates, currencies, and numbers display correctly across multiple languages and locales by using formatters.
 

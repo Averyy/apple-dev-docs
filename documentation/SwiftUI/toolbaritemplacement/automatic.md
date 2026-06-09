@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The system places the item automatically, depending on many factors including the platform, size class, or presence of other items.
+A placement the system positions automatically.
 
 **Availability**:
 - iOS 14.0+
@@ -33,9 +33,9 @@ In iOS, iPadOS, and macOS, the system uses the space available to the toolbar wh
 ## See Also
 
 - [static let principal: ToolbarItemPlacement](toolbaritemplacement/principal.md)
-  The system places the item in the principal item section.
+  A placement for the principal item section.
 - [static let status: ToolbarItemPlacement](toolbaritemplacement/status.md)
-  The item represents a change in status for the current context.
+  A placement for items that represents a change in status.
 
 
 ---

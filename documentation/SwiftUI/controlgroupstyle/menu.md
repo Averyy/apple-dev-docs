@@ -16,8 +16,8 @@ A control group style that presents its content as a menu when the user presses 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var menu: MenuControlGroupStyle { get }
+nonisolated
+static var menu: MenuControlGroupStyle { get }
 ```
 
 #### Discussion

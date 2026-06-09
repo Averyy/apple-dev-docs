@@ -22,6 +22,8 @@ This sample code project must be run on a physical device with Apple Pencil.
   Add expressive, low-latency drawing to your app using PencilKit.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)

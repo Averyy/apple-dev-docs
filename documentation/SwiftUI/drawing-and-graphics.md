@@ -16,6 +16,9 @@ For design guidance, see [`Materials`](https://developer.apple.com/design/Human-
 
 ## Topics
 
+### Composing graphics effects
+- [Composing advanced graphics effects with SwiftUI](composing-advanced-graphics-effects-with-swiftui.md)
+  Create compelling visuals in your app by combining graphical effects.
 ### Immediate mode drawing
 - [Add rich graphics to your SwiftUI app](add-rich-graphics-to-your-swiftui-app.md)
   Make your apps stand out by adding background materials, vibrancy, custom graphics, and animations.

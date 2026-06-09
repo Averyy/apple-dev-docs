@@ -9,7 +9,6 @@ The available regions that your eSIM supports.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- watchOS 26.0+
 
 ## Declaration
 

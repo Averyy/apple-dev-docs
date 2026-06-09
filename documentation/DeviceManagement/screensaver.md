@@ -7,8 +7,6 @@ The payload that configures the screen saver.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,12 +23,12 @@ Specify `com.apple.screensaver` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -65,7 +63,7 @@ Specify `com.apple.screensaver` as the payload type.
         </dict>
     </array>
     <key>PayloadDisplayName</key>
-    <string>Screem Saver Device</string>
+    <string>Screen Saver Device</string>
     <key>PayloadIdentifier</key>
     <string>com.example.myprofile</string>
     <key>PayloadType</key>
@@ -80,8 +78,8 @@ Specify `com.apple.screensaver` as the payload type.
 
 ## Properties
 
-- `askForPassword` (boolean): If `true`, the user is prompted for a password when the screen saver is unlocked or stopped. When you use this prompt, you must also provide `askForPasswordDelay`. Available in macOS 10.13 and later.
-- `askForPasswordDelay` (integer): The number of seconds to delay before the password will be required to unlock or stop the screen saver (the grace period). A value of `2147483647` (for example, `0x7FFFFFFF`) disables this requirement. To use this option, you must set `askForPassword` to `true`. Available in macOS 10.13 and later.
+- `askForPassword` (boolean): If `true`, the user is prompted for a password when the screen saver is unlocked or stopped. When you use this prompt, you must also provide `askForPasswordDelay`. Available: macOS 10.13+
+- `askForPasswordDelay` (integer): The number of seconds to delay before the password will be required to unlock or stop the screen saver (the grace period). A value of `2147483647` (hexadecimal equivalent of `0x7FFFFFFF`) disables this requirement, and a value of 0 can be used to immediately require the password. To use this option, you must set `askForPassword` to `true`. Available: macOS 10.13+
 - `idleTime` (integer): The number of seconds of inactivity before the screen saver activates (0 = Never activate).
 - `loginWindowModulePath` (string): The full path to the screen-saver module to use.
 - `moduleName` (string) *(required)*: The name of the screen saver module.
@@ -100,8 +98,6 @@ Specify `com.apple.screensaver` as the payload type.
   The payload that configures a Lock Screen message.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

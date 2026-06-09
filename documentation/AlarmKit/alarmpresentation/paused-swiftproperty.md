@@ -8,6 +8,7 @@ The content for the pause mode of the alarm.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

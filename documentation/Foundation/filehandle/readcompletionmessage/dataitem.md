@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A result instance containing either the data read from the file or connection, or else an error.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

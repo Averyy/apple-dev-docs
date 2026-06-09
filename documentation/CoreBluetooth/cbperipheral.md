@@ -84,6 +84,9 @@ You use this class to discover, explore, and interact with the services availabl
 ### Working with Apple Notification Center Service (ANCS)
 - [var ancsAuthorized: Bool](cbperipheral/ancsauthorized.md)
   A Boolean value that indicates if the remote device has authorization to receive data over ANCS protocol.
+### Instance Methods
+- [func cancelChannelSoundingSession()](cbperipheral/cancelchannelsoundingsession.md)
+- [func startChannelSoundingSession(CBChannelSoundingSessionConfiguration)](cbperipheral/startchannelsoundingsession(_:).md)
 
 ## Relationships
 

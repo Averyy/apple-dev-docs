@@ -15,7 +15,8 @@ Creates a sortable column with a text label.
 ## Declaration
 
 ```swift
-init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard, @ViewBuilder content: @escaping (RowValue) -> Content)
+nonisolated
+init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion

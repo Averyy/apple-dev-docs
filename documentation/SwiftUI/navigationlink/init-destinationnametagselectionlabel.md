@@ -12,7 +12,7 @@ Creates a navigation link that presents a view from a WatchKit storyboard when a
 
 ```swift
 nonisolated
-init<V>(destinationName: String, tag: V, selection: Binding<V?>, @ViewBuilder label: () -> Label) where V : Hashable
+init<V>(destinationName: String, tag: V, selection: Binding<V?>, @ContentBuilder label: () -> Label) where V : Hashable
 ```
 
 ## Parameters
@@ -20,7 +20,7 @@ init<V>(destinationName: String, tag: V, selection: Binding<V?>, @ViewBuilder la
 - `destinationName`: The storyboard name of a view for the navigation link to present.
 - `tag`: The value of `selection` that causes the link to present `destination`.
 - `selection`: A bound variable that causes the link to present `destination` when `selection` becomes equal to `tag`.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

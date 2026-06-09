@@ -11,8 +11,6 @@ The declaration to configure Safari Extensions.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -73,11 +71,12 @@ Give an extension access to “public.example.com”, but deny access to “exam
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Examples
 
@@ -167,7 +166,7 @@ This configuration allows all Safari extensions, but one isn’t allowed for use
 
 ### Objects
 - [object SafariExtensionSettingsManagedExtensionsObject](safariextensionsettingsmanagedextensionsobject.md)
-  The dictionary that defines the managed extension.
+  The dictionary of managed extensions settings. Each key in the dictionary represents a composed identifier for a specific managed extension, or you can specify a single “*” character to match any extension. The dictionary values represent the settings that Safari applies to each extension that matches the key. In order for the extension to be managed, its host app needs to be present on the device.
 
 ## Properties
 
@@ -191,20 +190,20 @@ This configuration allows all Safari extensions, but one isn’t allowed for use
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

@@ -16,7 +16,7 @@ Creates a sortable column with text label.
 
 ```swift
 nonisolated
-init(_ text: Text, sortUsing comparator: Sort, @ViewBuilder content: @escaping (RowValue) -> Content)
+init(_ text: Text, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion

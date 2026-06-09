@@ -11,6 +11,7 @@ A request to launch your app in the background to execute a short refresh task.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 

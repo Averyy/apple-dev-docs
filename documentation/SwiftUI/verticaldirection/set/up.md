@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-A set containing only the leading horizontal direction.
+A set containing only the upward vertical direction.
 
 **Availability**:
 - iOS 18.0+

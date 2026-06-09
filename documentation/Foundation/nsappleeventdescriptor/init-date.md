@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a descriptor that stores the specified date value.
+
 **Availability**:
 - macOS 10.11+
 

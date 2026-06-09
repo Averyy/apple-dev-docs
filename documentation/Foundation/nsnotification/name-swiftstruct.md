@@ -256,9 +256,13 @@ struct Name
 - [class let willStartLiveScrollNotification: NSNotification.Name](../AppKit/NSScrollView/willStartLiveScrollNotification.md)
   Posted on the main thread at the beginning of user-initiated live scroll tracking (gesture scroll or scroller tracking, for example, thumb dragging).
 - [class let didChangeAutomaticCapitalizationNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticCapitalizationNotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticCapitalizationMessage`](doc://com.apple.appkit/documentation/AppKit/NSSpellChecker/DidChangeAutomaticCapitalizationMessage).
 - [class let didChangeAutomaticDashSubstitutionNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticDashSubstitutionNotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage`](doc://com.apple.appkit/documentation/AppKit/NSSpellChecker/DidChangeAutomaticDashSubstitutionMessage).
 - [class let didChangeAutomaticPeriodSubstitutionNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticPeriodSubstitutionNotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticPeriodSubstitutionMessage`](doc://com.apple.appkit/documentation/AppKit/NSSpellChecker/DidChangeAutomaticPeriodSubstitutionMessage).
 - [class let didChangeAutomaticQuoteSubstitutionNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticQuoteSubstitutionNotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticQuoteSubstitutionMessage`](doc://com.apple.appkit/documentation/AppKit/NSSpellChecker/DidChangeAutomaticQuoteSubstitutionMessage).
 - [class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticSpellingCorrectionNotification.md)
   This notification is posted when the spell checker did change text using automatic spell checking correction. The are posted to the application’s default notification center.
 - [class let didChangeAutomaticTextReplacementNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticTextReplacementNotification.md)
@@ -288,6 +292,7 @@ struct Name
 - [class let keyboardSelectionDidChangeNotification: NSNotification.Name](../AppKit/NSTextInputContext/keyboardSelectionDidChangeNotification.md)
   Posted after the selected text input source changes.
 - [class let didChangeAutomaticTextCompletionNotification: NSNotification.Name](../AppKit/NSSpellChecker/didChangeAutomaticTextCompletionNotification.md)
+  To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticTextCompletionMessage`](doc://com.apple.appkit/documentation/AppKit/NSSpellChecker/DidChangeAutomaticTextCompletionMessage).
 - [class let didBecomeActiveNotification: NSNotification.Name](../AppKit/NSApplication/didBecomeActiveNotification.md)
   Posted immediately after the app becomes active.
 - [class let didChangeOcclusionStateNotification: NSNotification.Name](../AppKit/NSApplication/didChangeOcclusionStateNotification.md)
@@ -1010,9 +1015,6 @@ struct Name
 ### Accounts
 - [static let ACAccountStoreDidChange: NSNotification.Name](nsnotification/name-swift.struct/acaccountstoredidchange.md)
   Posted when the accounts managed by this account store changed in the database.
-### AssetsLibrary
-- [static let ALAssetsLibraryChanged: NSNotification.Name](nsnotification/name-swift.struct/alassetslibrarychanged.md)
-  Sent when the contents of the assets library have changed from under the app that is using the data.
 ### Initializers
 - [init(String)](nsnotification/name-swift.struct/init(_:).md)
 - [init(rawValue: String)](nsnotification/name-swift.struct/init(rawvalue:).md)
@@ -1047,6 +1049,8 @@ struct Name
 - [static let DREraseProgressPanelWillBegin: NSNotification.Name](nsnotification/name-swift.struct/dreraseprogresspanelwillbegin.md)
 - [static let DREraseStatusChanged: NSNotification.Name](nsnotification/name-swift.struct/drerasestatuschanged.md)
 - [static let DRSetupPanelDeviceSelectionChanged: NSNotification.Name](nsnotification/name-swift.struct/drsetuppaneldeviceselectionchanged.md)
+- [static let GCSpatialAccessoryDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcspatialaccessorydidconnect.md)
+- [static let GCSpatialAccessoryDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcspatialaccessorydiddisconnect.md)
 - [static let GCStylusDidConnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdidconnect.md)
 - [static let GCStylusDidDisconnect: NSNotification.Name](nsnotification/name-swift.struct/gcstylusdiddisconnect.md)
 - [static let HMCharacteristicPropertySupportsEvent: NSNotification.Name](nsnotification/name-swift.struct/hmcharacteristicpropertysupportsevent.md)
@@ -1060,6 +1064,7 @@ struct Name
 - [static let NSApplicationShouldEndSuppressingHighDynamicRangeContent: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationshouldendsuppressinghighdynamicrangecontent.md)
 - [static let NSProcessInfoPerformanceProfileDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfoperformanceprofiledidchange.md)
 - [static let NSSpellCheckerDidChangeAutomaticInlinePrediction: NSNotification.Name](nsnotification/name-swift.struct/nsspellcheckerdidchangeautomaticinlineprediction.md)
+- [static let USDStageKitRenderComplete: Notification.Name](nsnotification/name-swift.struct/usdstagekitrendercomplete.md)
 
 ## Relationships
 

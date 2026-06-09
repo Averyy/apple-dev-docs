@@ -29,6 +29,7 @@ class func `class`() -> AnyClass
 - [var description: String](nsproxy/description.md)
   A string containing the real class name and the id of the receiver as a hexadecimal number.
 - [var debugDescription: String](nsproxy/debugdescription.md)
+  A string containing a human-readable description of the receiver suitable for debugging.
 
 
 ---

@@ -16,7 +16,8 @@ A dragging motion that invokes an action as the drag-event sequence changes.
 ## Declaration
 
 ```swift
-struct DragGesture
+@MainActor
+@preconcurrency struct DragGesture
 ```
 
 ## Mentions
@@ -53,20 +54,21 @@ struct DragGestureView: View {
 ### Creating a drag gesture
 - [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol)](draggesture/init(minimumdistance:coordinatespace:)-8ffe5.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
+- [init(minimumDistance:coordinateSpace:)](draggesture/init(minimumdistance:coordinatespace:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
+- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](draggesture/init(minimumdistance:coordinatespace3d:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
+- [init(minimumDistance: CGFloat, coordinateSpace: some CoordinateSpaceProtocol, inputKinds: GestureInputKinds)](draggesture/init(minimumdistance:coordinatespace:inputkinds:).md)
+  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds, the coordinate space of the gesture’s location, and the input kinds the gesture recognizes.
 - [var minimumDistance: CGFloat](draggesture/minimumdistance.md)
   The minimum dragging distance before the gesture succeeds.
 - [var coordinateSpace: CoordinateSpace](draggesture/coordinatespace.md)
   The coordinate space in which to receive location values.
-### Deprecated initializers
-- [init(minimumDistance: CGFloat, coordinateSpace: CoordinateSpace)](draggesture/init(minimumdistance:coordinatespace:)-3804h.md)
-  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
-### Structures
+### Getting the gesture’s value
 - [DragGesture.Value](draggesture/value.md)
   The attributes of a drag gesture.
-### Initializers
-- [init(minimumDistance: CGFloat, coordinateSpace3D: some CoordinateSpace3D)](draggesture/init(minimumdistance:coordinatespace3d:).md)
-  Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
-- [init(minimumDistance:coordinateSpace:)](draggesture/init(minimumdistance:coordinatespace:).md)
+### Deprecated initializers
+- [init(minimumDistance: CGFloat, coordinateSpace: CoordinateSpace)](draggesture/init(minimumdistance:coordinatespace:)-3804h.md)
   Creates a dragging gesture with the minimum dragging distance before the gesture succeeds and the coordinate space of the gesture’s location.
 
 ## Relationships

@@ -18,7 +18,7 @@ A container view that arranges other views in a two dimensional layout.
 
 ```swift
 @frozen
-struct Grid<Content> where Content : View
+nonisolated struct Grid<Content> where Content : View
 ```
 
 #### Overview

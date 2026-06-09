@@ -1,18 +1,18 @@
-# Profile-Specific Payload Keys
+# Profile-specific payload keys
 
 **Framework**: Device Management
 
-Use the appropriate payload for your configuration needs.
+Apply settings to devices using configuration profiles.
 
 #### Overview
 
-In addition to the standard payload keys (described in [`Define a Profile`](configuring-multiple-devices-using-profiles#Define-a-Profile.md)) each payload can contain keys specific to a payload type. These payload specific keys are described in detail, below.
+In addition to the standard payload keys (described in [`Define a profile`](configuring-multiple-devices-using-profiles#Define-a-profile.md)) each payload can contain keys specific to a payload type. These payload specific keys are described in detail, below.
 
 For profiles that use paths, consider them to be case sensitive.
 
 ## Topics
 
-### Top Level
+### General
 - [object TopLevel](toplevel.md)
   The top-level payload properties for all profiles.
 - [object CommonPayloadKeys](commonpayloadkeys.md)
@@ -37,7 +37,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures AirPlay settings.
 - [object AirPlaySecurity](airplaysecurity.md)
   The payload that configures Apple TV for a particular style of AirPlay security.
-### App Management
+### App management
 - [object AppLock](applock.md)
   The payload that configures a device to run a single app.
 - [object AssociatedDomains](associateddomains.md)
@@ -103,7 +103,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures the third wired, active Ethernet interface.
 - [type 8021XThirdEthernet](8021xthirdethernet.md)
   The payload that configures the third wired Ethernet interface.
-### Full Disk Encryption
+### FileVault
 - [object FDEFileVault](fdefilevault.md)
   The payload that configures FileVault.
 - [object FDEFileVaultOptions](fdefilevaultoptions.md)
@@ -128,7 +128,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures an Exchange Web Services accounts.
 - [object Mail](mail.md)
   The payload that configures a Mail account.
-### Managed Devices
+### Managed devices
 - [object EducationConfiguration](educationconfiguration.md)
   The payload that configures the users, groups, and departments within an educational organization.
 - [object LightsOutManagementLOM](lightsoutmanagementlom.md)
@@ -139,7 +139,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures mobile device management (MDM) settings.
 - [object ProfileRemovalPassword](profileremovalpassword.md)
   The payload that configures profile removal.
-### Media Management
+### Media management
 - [object MediaManagementDiscBurning](mediamanagementdiscburning.md)
   The payload that configures disc-burning settings.
 ### Networking
@@ -147,7 +147,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.
@@ -163,7 +163,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures Wi-Fi settings.
 - [object WiFiManagedSettings](wifimanagedsettings.md)
   The payload that configures managed Wi-Fi settings.
-### Parental Controls
+### Parental controls
 - [object ParentalControlsApplicationRestrictions](parentalcontrolsapplicationrestrictions.md)
   The payload that configures parental controls for apps.
 - [object ParentalControlsContentFilter](parentalcontrolscontentfilter.md)
@@ -204,7 +204,7 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures security preferences.
 - [object SmartCard](smartcard.md)
   The payload that configures a smart card.
-### System Configuration
+### System configuration
 - [object Declarations](declarations.md)
   The payload that applies a set of declarations to the device through the Settings app.
 - [object EnergySaver](energysaver.md)
@@ -219,11 +219,9 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
-### System Policy
+### System policy
 - [object SystemPolicyControl](systempolicycontrol.md)
   The payload that configures the system policy for assessments.
 - [object SystemPolicyKernelExtensions](systempolicykernelextensions.md)
@@ -232,12 +230,10 @@ For profiles that use paths, consider them to be case sensitive.
   The payload that configures the Finder’s contextual menu to bypass the system policy.
 - [object SystemPolicyRule](systempolicyrule.md)
   The payload that configures the system policy.
-### System Updates
-- [object SoftwareUpdate](softwareupdate.md)
-  The payload that configures the software update policy.
+### System migration
 - [object SystemMigration](systemmigration.md)
   The payload that configures system migration.
-### User Experience
+### User experience
 - [object Accessibility](accessibility.md)
   The payload that configures the accessibility features of the device.
 - [object Desktop](desktop.md)
@@ -276,31 +272,18 @@ For profiles that use paths, consider them to be case sensitive.
 - [object XsanPreferences](xsanpreferences.md)
   The payload that configures the Xsan preferences that define the volumes that automatically mount at startup.
 ### Deprecated
-- [object AIMAccount](aimaccount.md)
-  The payload that configures an AIM account on the device.
 - [object APN](apn.md)
   The payload that configures access point names.
 - [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object JabberAccount](jabberaccount.md)
-  The payload that configures a Jabber account.
-- [object MacOSServerAccount](macosserveraccount.md)
-  The payload that configures a macOS Server account.
 - [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)
   The payload that configures ShareKit.
 - [object SystemPreferences](systempreferences.md)
   The payload that configures the preference panes.
-
-## See Also
-
-- [Configuring Multiple Devices Using Profiles](configuring-multiple-devices-using-profiles.md)
-  Create and deploy configuration profiles to users within your organization.
 
 
 ---

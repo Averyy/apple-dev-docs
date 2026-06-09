@@ -28,6 +28,9 @@ For more information on subscribing to scene events, see `RealityKit/Scene/Event
 ### Recognizing playback completion
 - [AudioEvents.PlaybackCompleted](audioevents/playbackcompleted.md)
   Audio playback completed.
+### Handling playback group events
+- [AudioEvents.PlaybackGroupCompleted](audioevents/playbackgroupcompleted.md)
+  Group audio playback completed.
 
 ## See Also
 

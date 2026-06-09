@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the End User License Agreement resource.
+A custom end-user license agreement (EULA) for an app, targeting specific territories where it applies.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -37,8 +37,9 @@ object EndUserLicenseAgreement
 - [object EndUserLicenseAgreementUpdateRequest](enduserlicenseagreementupdaterequest.md)
   The request body you use to update an End User License Agreement.
 - [object EndUserLicenseAgreementResponse](enduserlicenseagreementresponse.md)
-  A response that contains a single End User License Agreements resource.
+  The response body for endpoints that read or modify a custom end user license agreement for an app.
 - [object EndUserLicenseAgreementWithoutIncludesResponse](enduserlicenseagreementwithoutincludesresponse.md)
+  A response containing a single EULA, without including territory details.
 - [object AppEndUserLicenseAgreementLinkageResponse](appenduserlicenseagreementlinkageresponse.md)
 - [object EndUserLicenseAgreementTerritoriesLinkagesResponse](enduserlicenseagreementterritorieslinkagesresponse.md)
 

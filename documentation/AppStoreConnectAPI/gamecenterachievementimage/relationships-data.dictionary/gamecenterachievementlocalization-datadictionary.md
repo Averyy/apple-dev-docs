@@ -16,6 +16,7 @@ object GameCenterAchievementImage.Relationships.GameCenterAchievementLocalizatio
 
 ### Objects
 - [object GameCenterAchievementImage.Relationships.GameCenterAchievementLocalization.Data](gamecenterachievementimage/relationships-data.dictionary/gamecenterachievementlocalization-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a achievement.
 
 ## Properties
 

@@ -6,8 +6,7 @@
 The request for an asset.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 
@@ -20,7 +19,7 @@ object GetVppAssetRequest
 - `includeLicenseCounts` (boolean): If `true`, returns the total number of licenses, the number of assigned licenses, and the number of unassigned licenses in the response for each asset.
 - `pricingParam` (string): The quality of a product in the iTunes Store. If a pricing parameter is specified, only records with that parameter are included in the results. Possible values are: - `STDQ`: Standard quality
 - `PLUS`: High quality
-- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authentication`](managing-apps-and-books-through-web-services-legacy#Authentication.md).
+- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authenticate with the web service`](managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service.md).
 
 ## See Also
 

@@ -157,11 +157,18 @@ Core Graphics supports several kinds of color spaces:
   Handling options for colors that are not located within the destination color space of a graphics context.
 ### Instance Methods
 - [func isHDR() -> Bool](cgcolorspace/ishdr.md)
+### Enumerations
+- [CGColorSpace.CodingKeys](cgcolorspace/codingkeys.md)
 
 ## Relationships
 
 ### Conforms To
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
+- [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

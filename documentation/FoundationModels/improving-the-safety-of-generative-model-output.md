@@ -10,7 +10,7 @@ Generative AI models have powerful creativity, but with this creativity comes th
 
 The Foundation Models framework has two base layers of safety, where the framework uses:
 
-- An on-device language model that has training to handle sensitive topics with care.
+- Apple Foundation Models, running on-device and on Private Cloud Compute, trained to handle sensitive topics with care.
 - *Guardrails* that aim to block harmful or sensitive content, such as self-harm, violence, and adult materials, from both model input and output.
 
 Because safety risks are often contextual, some harms might bypass both built-in framework safety layers. It’s vital to design additional safety layers specific to your app. When developing your feature, decide what’s acceptable or might be harmful in your generative AI feature, based on your app’s use case, cultural context, and audience.
@@ -19,7 +19,7 @@ For more information on designing generative AI experiences responsibly, see Hum
 
 #### Handle Guardrail Errors
 
-When you send a prompt to the model, [`SystemLanguageModel.Guardrails`](systemlanguagemodel/guardrails.md) check the input prompt and the model’s output. If either fails the guardrail’s safety check, the model session throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error:
+When you send a prompt to the model, [`SystemLanguageModel.Guardrails`](systemlanguagemodel/guardrails.md) check the input prompt and the model’s output. If either fails the guardrail’s safety check, the model session throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error:
 
 ```swift
 do {
@@ -27,7 +27,7 @@ do {
     let topic = // A potentially harmful topic.
     let prompt = "Write a respectful and funny story about \(topic)."
     let response = try await session.respond(to: prompt)
-} catch LanguageModelSession.GenerationError.guardrailViolation {
+} catch LanguageModelError.guardrailViolation(let violation) {
     // Handle the safety error.
 }
 ```
@@ -108,14 +108,14 @@ Consider adding detailed session [`Instructions`](instructions.md) that tell the
 ```swift
 do {
     let instructions = """
-        ALWAYS respond in a respectful way. \
+        Always respond in a respectful way. \
         If someone asks you to generate content that might be sensitive, \
-        you MUST decline with 'Sorry, I can't do that.'
+        you must decline with 'Sorry, I can't do that.'
         """
     let session = LanguageModelSession(instructions: instructions)
     let prompt = // Open input from a person using the app.
     let response = try await session.respond(to: prompt)
-} catch LanguageModelSession.GenerationError.guardrailViolation {
+} catch LanguageModelError.guardrailViolation(let violation) {
     // Handle the safety error.
 }
 ```
@@ -161,7 +161,7 @@ A deny list can be a simple list of strings in your code that you distribute wit
 
 #### Use Permissive Guardrail Mode for Sensitive Content
 
-The default [`SystemLanguageModel`](systemlanguagemodel.md) guardrails may throw a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error for sensitive source material. For example, it may be appropriate for your app to work with certain inputs from people and unverified sources that might contain sensitive content:
+The default [`SystemLanguageModel`](systemlanguagemodel.md) guardrails may throw a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error for sensitive source material. For example, it may be appropriate for your app to work with certain inputs from people and unverified sources that might contain sensitive content:
 
 - When you want the model to tag the topic of conversations in a chat app when some messages contain profanity.
 - When you want to use the model to explain notes in your study app that discuss sensitive topics.
@@ -172,9 +172,9 @@ To allow the model to reason about sensitive source material, use [`permissiveCo
 let model = SystemLanguageModel(guardrails: .permissiveContentTransformations)
 ```
 
-This mode only works for generating a string value. When you use guided generation, the framework runs the default guardrails against model input and output as usual, and generates [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) and [`LanguageModelSession.GenerationError.refusal(_:_:)`](languagemodelsession/generationerror/refusal(_:_:).md)errors as usual.
+This mode only works for generating a string value. When you use guided generation, the framework runs the default guardrails against model input and output as usual, and generates [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) and [`LanguageModelError.refusal(_:)`](languagemodelerror/refusal(_:).md)errors as usual.
 
-Before you use permissive content mode, consider what’s appropriate for your audience. The session skips the guardrail checks in this mode, so it never throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error when generating string responses.
+Before you use permissive content mode, consider what’s appropriate for your audience. The session skips the guardrail checks in this mode, so it never throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error when generating string responses.
 
 However, even with the [`SystemLanguageModel`](systemlanguagemodel.md) guardrails off, the on-device system language model still has a layer of safety. For some content, the model may still produce a refusal message that’s similar to, “Sorry, I can’t help with.”
 
@@ -226,11 +226,6 @@ The Foundation Models framework offers utilities for feedback. Use [`LanguageMod
 Apple releases updates to the system model as part of regular OS updates. If you participate in the developer beta program you can test your app with new model version ahead of people using your app. When the model updates, it’s important to re-run your full prompt tests in addition to your adversarial safety tests because the model’s response may change. Your risk assessment can help you track any change to safety risks in your app.
 
 Apple may update the built-in guardrails at any time outside of the regular OS update cycle. This is done to rapidly respond, for example, to reported safety concerns that require a fast response. Include all of the prompts you use in your app in your test suite, and run tests regularly to identify when prompts start activating the guardrails.
-
-## See Also
-
-- [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
-  Guardrails flag sensitive content from model input and output.
 
 
 ---

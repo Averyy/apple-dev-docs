@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A Boolean value that indicates whether a request requires DNSSEC validation during DNS lookup.
+
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
@@ -20,9 +22,7 @@ var requiresDNSSECValidation: Bool { get set }
 
 #### Discussion
 
-Sets whether a request is required to do DNSSEC validation during DNS lookup.
-
-YES, if the DNS lookup for this request should require DNSSEC validation, No otherwise. Defaults to NO.
+`YES` if the DNS lookup for this request should require DNSSEC validation. Defaults to `NO`.
 
 
 ---

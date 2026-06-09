@@ -11,6 +11,7 @@ A specialized window scene that provides secondary utility to the content of the
 ## Declaration
 
 ```swift
+nonisolated
 struct UtilityWindow<Content> where Content : View
 ```
 

@@ -11,7 +11,8 @@ A button with a standard appearance that opens app-specific help documentation.
 ## Declaration
 
 ```swift
-struct HelpLink
+@MainActor
+@preconcurrency struct HelpLink
 ```
 
 #### Overview

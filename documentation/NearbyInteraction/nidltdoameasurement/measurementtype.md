@@ -20,6 +20,8 @@ var measurementType: NIDLTDOAMeasurementType { get }
 
 - [var carrierFrequencyOffset: Double](nidltdoameasurement/carrierfrequencyoffset.md)
   The drift, as a ratio, across the frequencies of the receiver and the anchor.
+- [var responderClockFrequencyOffset: Double?](nidltdoameasurement/responderclockfrequencyoffset-8wu5r.md)
+  The clock frequency offset of the responder anchor relative to the initiator anchor.
 
 
 ---

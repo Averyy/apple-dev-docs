@@ -12,7 +12,7 @@ Adds a quick action to be shown by the system when active.
 
 ```swift
 nonisolated
-func accessibilityQuickAction<Style, Content>(style: Style, @ViewBuilder content: () -> Content) -> some View where Style : AccessibilityQuickActionStyle, Content : View
+func accessibilityQuickAction<Style, Content>(style: Style, @ContentBuilder content: () -> Content) -> some View where Style : AccessibilityQuickActionStyle, Content : View
 ```
 
 #### Discussion

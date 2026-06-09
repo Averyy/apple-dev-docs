@@ -11,7 +11,7 @@ The name of the area within the locality.
 ## Declaration
 
 ```swift
-subLocality?: string;
+subLocality: string | null;
 ```
 
 #### Discussion

@@ -20,6 +20,8 @@ Some user-initiated scrolls (for example, scrolling using legacy mice) are not b
 
 The notification object is the scroll view performing the scroll.
 
+To observe this notification using Swift concurrency, use [`NSScrollView.DidLiveScrollMessage`](nsscrollview/didlivescrollmessage.md).
+
 ## See Also
 
 - [class let willStartLiveMagnifyNotification: NSNotification.Name](nsscrollview/willstartlivemagnifynotification.md)

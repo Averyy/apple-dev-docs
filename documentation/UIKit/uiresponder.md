@@ -23,6 +23,7 @@ class UIResponder
 
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 - [Handling key presses made on a physical keyboard](handling-key-presses-made-on-a-physical-keyboard.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Overview
 

@@ -16,7 +16,8 @@ Creates a gauge showing a value within a range and that describes the gauge’s 
 ## Declaration
 
 ```swift
-init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ViewBuilder label: () -> Label, @ViewBuilder currentValueLabel: () -> CurrentValueLabel) where BoundsLabel == EmptyView, MarkedValueLabels == EmptyView, V : BinaryFloatingPoint
+nonisolated
+init<V>(value: V, in bounds: ClosedRange<V> = 0...1, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> CurrentValueLabel) where BoundsLabel == EmptyView, MarkedValueLabels == EmptyView, V : BinaryFloatingPoint
 ```
 
 #### Discussion
@@ -28,7 +29,7 @@ struct SimpleGauge: View {
     @State private var current = 67.0
 
     var body: some View {
-        Gauge(value: currrent, in: 0...170) {
+        Gauge(value: current, in: 0...170) {
             Text("BPM")
         } currentValueLabel: {
             Text("\(current)")

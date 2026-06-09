@@ -22,8 +22,12 @@ static let showInkAttributes: PencilPreferredAction
 
 - [static let ignore: PencilPreferredAction](pencilpreferredaction/ignore.md)
   An action that does nothing.
+- [static let runSystemShortcut: PencilPreferredAction](pencilpreferredaction/runsystemshortcut.md)
+  An action that runs a system shortcut.
 - [static let showColorPalette: PencilPreferredAction](pencilpreferredaction/showcolorpalette.md)
   An action that toggles the display of the color palette.
+- [static let showContextualPalette: PencilPreferredAction](pencilpreferredaction/showcontextualpalette.md)
+  An action that toggles the display of the contextual palette, or the undo/redo panel if contextual palette is not available.
 - [static let switchEraser: PencilPreferredAction](pencilpreferredaction/switcheraser.md)
   An action that switches between the current tool and the eraser.
 - [static let switchPrevious: PencilPreferredAction](pencilpreferredaction/switchprevious.md)

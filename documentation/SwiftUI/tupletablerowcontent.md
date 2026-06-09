@@ -16,7 +16,7 @@ A type of table column content that creates table rows created from a Swift tupl
 
 ```swift
 @frozen
-struct TupleTableRowContent<Value, T> where Value : Identifiable
+nonisolated struct TupleTableRowContent<Value, T> where Value : Identifiable
 ```
 
 #### Overview

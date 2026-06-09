@@ -26,8 +26,8 @@ You can’t initialize an abstract class. Use specific service classes to create
 - [language](service/language.md)
   A language ID that determines the language to use for displaying addresses.
 ### Instance Methods
-- [cancel(id)](service/cancel.md)
-  Cancels a request using the provided request ID.
+- [cancel(promise)](service/cancel.md)
+  Cancels a request using the provided request promise.
 
 ## Relationships
 
@@ -37,6 +37,11 @@ You can’t initialize an abstract class. Use specific service classes to create
 - [PlaceLookup](placelookup.md)
 - [PointsOfInterestSearch](pointsofinterestsearch.md)
 - [Search](search.md)
+
+## See Also
+
+- [class RequestError](requesterror.md)
+  The error that a service method’s returned promise rejects with when a request fails.
 
 
 ---

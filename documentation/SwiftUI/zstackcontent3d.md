@@ -12,7 +12,7 @@ A type that adds spacing to a [`ZStack`](zstack.md).
 
 ```swift
 @frozen
-struct ZStackContent3D<Content> where Content : View
+nonisolated struct ZStackContent3D<Content> where Content : View
 ```
 
 #### Overview

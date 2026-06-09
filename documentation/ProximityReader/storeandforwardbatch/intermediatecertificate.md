@@ -9,7 +9,6 @@ An array that contains the intermediate certificates that the system uses to sig
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

@@ -33,7 +33,7 @@ When an [`HKObject`](hkobject.md) instance is created, its [`sourceRevision`](hk
 
 ##### Subclassing Source Revisions
 
-Like many HealthKit classes, the [`HKSourceRevision`](hksourcerevision.md) class is not extensible and should not be subclassed.
+As with many HealthKit classes, don’t subclass the [`HKSourceRevision`](hksourcerevision.md) class.
 
 ## Topics
 

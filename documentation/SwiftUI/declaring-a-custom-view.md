@@ -133,8 +133,12 @@ Alternatively, you could add your view as the root view of a new scene in your a
 
 ## See Also
 
+- [Wishlist: Planning travel in a SwiftUI app](wishlist-planning-travel-in-a-swiftui-app.md)
+  Build a travel planning app that organizes trips into collections and tracks activity completion.
 - [protocol View](view.md)
   A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
+- [typealias ContentBuilder](contentbuilder.md)
+  A custom parameter attribute that constructs views and other content types from closures.
 - [struct ViewBuilder](viewbuilder.md)
   A custom parameter attribute that constructs views from closures.
 

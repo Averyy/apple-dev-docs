@@ -15,6 +15,7 @@ An empty group of commands.
 ## Declaration
 
 ```swift
+nonisolated
 struct EmptyCommands
 ```
 

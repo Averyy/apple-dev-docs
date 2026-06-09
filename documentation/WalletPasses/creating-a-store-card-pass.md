@@ -8,7 +8,7 @@ Construct a digital pass for store loyalty and gift cards.
 
 Use store card passes for discount, gift, and store loyalty cards. Setting the store card pass style provides data that Wallet displays automatically, such as store points, rewards balance, terms and conditions, and other helpful information.
 
-![An illustration showing an example store card pass for a mock coffee shop with a points and rewards earned balance.](https://docs-assets.developer.apple.com/published/f81fefc86a3b46a8052c2164131d2583/store-card%402x.png)
+![An image of a mock coffee shop store card with a strip image background.](https://docs-assets.developer.apple.com/published/b9ccc124ee517cb4ae3bbe7dab00ef3e/store-card%402x.png)
 
 #### Create Your Pass Type Identifier
 
@@ -40,7 +40,7 @@ The following example shows a partial store card pass with top-level keys.
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following image shows options for the layout and placement of fields for the store card pass style. Typically, your store identifies an account someone has with your company, which can be used to make payments or receive discounts. When the account carries a balance, show the current balance on the pass.
 
-![An illustration showing a store card pass layout option with combined secondary and auxiliary sections and a rectangular barcode.](https://docs-assets.developer.apple.com/published/7b648e914e0e99562fcf512efb115175/store-card-layout%402x.png)
+![An illustration showing a store card pass layout option with combined secondary and auxiliary sections and a rectangular barcode.](https://docs-assets.developer.apple.com/published/d961d8a2137f4feb9fcfff957450a623/pass-fields-layout-store-card%402x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A store card pass can display logo and strip images and a barcode, and it can have up to four secondary and auxiliary fields, all displayed on one row. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -117,7 +117,7 @@ The following example shows a `pass.json` file with the `storeCard` pass style a
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
-Alternatively, passes can use scannable barcodes to convey information. Wallet supports 2D barcodes using QR, Aztec, and PDF417 formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
+Alternatively, passes can use scannable barcodes to convey information. Wallet supports 2D barcodes using QR, PDF417, Aztec, Code128, Code 39, Codabar, EAN-13, and Interleaved 2 of 5 (ITF) formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
 
 For more information on barcodes, see [`Pass.Barcodes`](pass/barcodes-data.dictionary.md) and the [`Add to Apple Wallet Guidelines`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
 

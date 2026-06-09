@@ -12,9 +12,9 @@ Overrides a point.
 
 ```swift
 itemForPoint?(
-        coordinate: Coordinate,
-        geoJSON: GeoJSONTypes.Point,
-    ): Item | null;
+    coordinate: Coordinate,
+    geoJSON: GeoJSONTypes.Point,
+): Item | null;
 ```
 
 #### Return Value

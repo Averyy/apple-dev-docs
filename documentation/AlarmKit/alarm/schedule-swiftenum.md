@@ -8,6 +8,7 @@ A list of all types of schedules that the framework supports.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

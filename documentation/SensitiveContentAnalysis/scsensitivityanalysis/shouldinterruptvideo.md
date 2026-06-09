@@ -1,6 +1,6 @@
 # shouldInterruptVideo
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 Intervention guidance that suggests the app interrupt the video stream.

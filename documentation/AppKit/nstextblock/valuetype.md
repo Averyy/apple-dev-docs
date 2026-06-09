@@ -6,7 +6,7 @@
 The following constants specify values used by the methods [`setValue(_:type:for:)`](nstextblock/setvalue(_:type:for:).md) and [`valueType(for:)`](nstextblock/valuetype(for:).md) to specify text block value types.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -17,12 +17,15 @@ enum ValueType
 ## Topics
 
 ### Constants
-- [NSTextBlock.ValueType.absoluteValueType](nstextblock/valuetype/absolutevaluetype.md)
+- [static var absoluteValueType: NSTextBlock.ValueType](nstextblock/valuetype/absolutevaluetype.md)
   Absolute value in points.
-- [NSTextBlock.ValueType.percentageValueType](nstextblock/valuetype/percentagevaluetype.md)
+- [static var percentageValueType: NSTextBlock.ValueType](nstextblock/valuetype/percentagevaluetype.md)
   Percentage value (out of 100).
+### Enumeration Cases
+- [NSTextBlock.ValueType.absolute](nstextblock/valuetype/absolute.md)
+- [NSTextBlock.ValueType.percentage](nstextblock/valuetype/percentage.md)
 ### Initializers
-- [init?(rawValue: UInt)](nstextblock/valuetype/init(rawvalue:).md)
+- [init?(rawValue: Int)](nstextblock/valuetype/init(rawvalue:).md)
 
 ## Relationships
 

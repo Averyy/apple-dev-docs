@@ -29,7 +29,7 @@ func performTransaction(using credential: CredentialSession.Credential, over sce
 
 The credential session state must be [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md) prior to calling this method. The state transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 
-If this call succeeds the credential session state transitions to the [`CredentialSession.State.cardEmulation(credential:)`](credentialsession/state-swift.enum/cardemulation(credential:).md) state. The session also publishes a [`CredentialSession.Event.fieldStateChanged(info:)`](credentialsession/event/fieldstatechanged(info:).md) event.
+If this call succeeds the credential session state transitions to the [`CredentialSession.State.cardEmulation(credential:)`](credentialsession/state-swift.enum/cardemulation(credential:).md) state.
 
 If not ended sooner, card emulation expires after 60 seconds and the credential session publishes a [`CredentialSession.Event.cardEmulationTimeout`](credentialsession/event/cardemulationtimeout.md) event.
 

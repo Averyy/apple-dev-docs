@@ -18,6 +18,10 @@ The scene containing the window.
 weak var windowScene: UIWindowScene? { get set }
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 Changing the value of this property moves the window to the newly specified scene. Setting the property to `nil` removes the window from its current scene.

@@ -11,17 +11,17 @@ The `appClipAppStoreReviewDetails` resource represents information about your Ap
 ## Topics
 
 ### Managing App Review Details for Your App Clip
-- [Read the App Store Review Details of an App Clip](get-v1-appclipappstorereviewdetails-_id_.md)
+- [Read the app store review details of an app clip](get-v1-appclipappstorereviewdetails-_id_.md)
   Get App Store Review details for an App Clip.
-- [Create App Store Review Details for an App Clip](post-v1-appclipappstorereviewdetails.md)
+- [Create app store review details for an app clip](post-v1-appclipappstorereviewdetails.md)
   Provide App Clip metadata required by App Store Review.
-- [Modify App Store Review Details for an App Clip](patch-v1-appclipappstorereviewdetails-_id_.md)
+- [Modify app store review details for an app clip](patch-v1-appclipappstorereviewdetails-_id_.md)
   Update App Clip metadata you provide to App Store Review.
 ### Objects
 - [object AppClipAppStoreReviewDetail](appclipappstorereviewdetail.md)
-  The data structure that represents an App Clip App Store Review Details resource.
+  The review submission details for an App Clip, including the invocation URLs required for App Store review.
 - [object AppClipAppStoreReviewDetailResponse](appclipappstorereviewdetailresponse.md)
-  A response that contains a single App Clip App Store Review Details resource.
+  A response containing the App Store review details for a single App Clip.
 - [object AppClipAppStoreReviewDetailCreateRequest](appclipappstorereviewdetailcreaterequest.md)
   The request body you use to create an App Clip App Store Review Detail.
 - [object AppClipAppStoreReviewDetailUpdateRequest](appclipappstorereviewdetailupdaterequest.md)

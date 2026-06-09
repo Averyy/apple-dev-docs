@@ -8,6 +8,7 @@ Creates an alert for an alarm, with a system-provided stop control and optionall
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 
 ## Declaration
 

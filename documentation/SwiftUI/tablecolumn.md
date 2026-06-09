@@ -15,12 +15,13 @@ A column that displays a view for each row in a table.
 ## Declaration
 
 ```swift
+nonisolated
 struct TableColumn<RowValue, Sort, Content, Label> where RowValue : Identifiable, Sort : SortComparator, Content : View, Label : View
 ```
 
 #### Overview
 
-You create a column with a label, content view, and optional key path. The table calls the content view builder with the value for each row in the table. The column uses a key path to map to a property of each row value, which sortable tables use to reflect the current sort order.
+You create a column with a label, content view, and optional key path. The table calls the content content builder with the value for each row in the table. The column uses a key path to map to a property of each row value, which sortable tables use to reflect the current sort order.
 
 The following example creates a sortable column for a table with `Person` rows, displaying each person’s given name:
 

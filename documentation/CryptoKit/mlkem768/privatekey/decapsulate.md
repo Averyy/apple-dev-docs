@@ -3,7 +3,7 @@
 **Framework**: Apple CryptoKit  
 **Kind**: method
 
-Decapsulated a shared secret.
+Decapsulate a shared secret.
 
 **Availability**:
 - iOS 26.0+

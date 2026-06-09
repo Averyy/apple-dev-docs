@@ -24,6 +24,8 @@ If `YES`, the system runs the app using a compatibility mode for UI elements. Th
 
 If `NO`, the system uses the UI design of the running OS, with no compatibility mode. Absence of the key, or `NO`, is the default value for apps linking against the latest SDKs.
 
+The system ignores this key when you build for iOS 27 or later, iPadOS 27 or later, Mac Catalyst 27 or later, macOS 27 or later, or tvOS 27 or later.
+
 ## See Also
 
 - [UIUserInterfaceStyle](information-property-list/uiuserinterfacestyle.md)

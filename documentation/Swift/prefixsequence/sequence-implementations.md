@@ -35,7 +35,7 @@
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.
 - [func enumerated() -> EnumeratedSequence<Self>](prefixsequence/enumerated.md)
   Returns a sequence of pairs (*n*, *x*), where *n* represents a consecutive integer starting at zero and *x* represents an element of the sequence.
-- [func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]](prefixsequence/filter(_:).md)
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> [Self.Element]](prefixsequence/filter(_:).md)
   Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 - [func first(where: (Self.Element) throws -> Bool) rethrows -> Self.Element?](prefixsequence/first(where:).md)
   Returns the first element of the sequence that satisfies the given predicate.

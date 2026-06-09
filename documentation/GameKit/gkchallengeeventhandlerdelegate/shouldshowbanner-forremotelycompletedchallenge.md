@@ -6,6 +6,9 @@
 Called to determine whether a banner should be shown when a remote player completes a challenge.
 
 **Availability**:
+- iOS 6.0+
+- iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.8+
 - visionOS 1.0+
 

@@ -7,8 +7,6 @@ The payload that configures the desktop wallpaper.
 
 **Availability**:
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.desktop` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -72,7 +70,7 @@ Specify `com.apple.desktop` as the payload type.
 
 ## Properties
 
-- `locked` (boolean): If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13.
+- `locked` (boolean): If `true`, locks the desktop picture. Replaced with allowWallpaperModification in macOS 10.13. Deprecated: macOS 10.13+
 - `override-picture-path` (string): The path to the desktop picture. If set, this picture is always locked.
 
 ## See Also

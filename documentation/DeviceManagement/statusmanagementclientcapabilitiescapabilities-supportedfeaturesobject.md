@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A set of optional protocol features that the client supports.
+A set of optional protocol features that the client supports. Each object’s key represents a feature, and the property value represents the feature’s associated parameters.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ A set of optional protocol features that the client supports.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,7 +23,7 @@ object StatusManagementClientCapabilitiesCapabilities_SupportedFeaturesObject
 ## See Also
 
 - [object StatusManagementClientCapabilitiesCapabilities_SupportedPayloadsObject](statusmanagementclientcapabilitiescapabilities_supportedpayloadsobject.md)
-  The set of declaration and status items that the client supports.
+  A set of declaration and status items that the client supports.
 
 
 ---

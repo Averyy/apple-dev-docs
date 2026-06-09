@@ -17,6 +17,7 @@ A view that arranges its children in a line that grows vertically, creating item
 ## Declaration
 
 ```swift
+nonisolated
 struct LazyVStack<Content> where Content : View
 ```
 

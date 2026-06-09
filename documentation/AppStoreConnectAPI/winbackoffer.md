@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a win-back offer resource.
+A promotional offer targeting lapsed subscribers, providing a discount or free trial to encourage them to resubscribe.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -35,17 +35,17 @@ object WinBackOffer
 - [object WinBackOfferCreateRequest](winbackoffercreaterequest.md)
   The request body you use to create a winback offer.
 - [object WinBackOfferPrice](winbackofferprice.md)
-  The data structure that represents a winback offer price resource.
+  The territory-specific customer price and duration for a win-back subscription offer.
 - [object WinBackOfferPriceInlineCreate](winbackofferpriceinlinecreate.md)
-  The data structure that represents a win-back offer price inline create resource.
+  An inline object for specifying territory-specific pricing when creating or updating a win-back offer.
 - [object WinBackOfferPricesResponse](winbackofferpricesresponse.md)
-  A response that contains a list of win-back offer price resources.
+  The response body for endpoints that list prices for a win-back offer.
 - [object WinBackOfferResponse](winbackofferresponse.md)
-  A response that contains a single win-back offer resource.
+  The response body for endpoints that create, read, or modify a single win-back offer for a subscription.
 - [object WinBackOfferUpdateRequest](winbackofferupdaterequest.md)
   The request body you use to update a win-back offer.
 - [object WinBackOffersResponse](winbackoffersresponse.md)
-  A response that contains a list of win-back offer resources.
+  The response body for endpoints that list win-back offers for a subscription.
 - [object IntegerRange](integerrange.md)
   Describe the upper and lower integer bound of the attribute.
 - [object WinBackOfferPricesLinkagesResponse](winbackofferpriceslinkagesresponse.md)

@@ -71,7 +71,7 @@ let customFormatting = exampleNumber.formatted(
 
 ##### Creating a Decimal Format Style Instance
 
-The previous examples use static instances like [`number`](formatstyle/number-3luf2.md) to create format styles within the call to the [`formatted(_:)`](decimal/formatted(_:).md) method. You can also create a [`Decimal.FormatStyle`](decimal/formatstyle.md) instance and use it to repeatedly format different values by using the [`format(_:)`](formatstyle/format(_:).md) method, as shown here:
+The previous examples use static instances like [`number`](formatstyle/number-3luf2.md) to create format styles within the call to the [`formatted(_:)`](decimal/formatted(_:).md) method. You can also create a [`Decimal.FormatStyle`](decimal/formatstyle.md) instance and use it to repeatedly format different values by using the [`format(_:)`](decimal/formatstyle/format(_:).md) method, as shown here:
 
 ```swift
 let percentFormatStyle = Decimal.FormatStyle.Percent()
@@ -118,11 +118,16 @@ let localizedDecimal = match?.1 // 49525.99
 ### Creating a decimal format style
 - [init(locale: Locale)](decimal/formatstyle/init(locale:).md)
   Creates a decimal format style that uses the given locale.
+### Formatting decimal values
+- [func format(Decimal) -> String](decimal/formatstyle/format(_:).md)
+  Formats a decimal value using this style.
 ### Customizing style behavior
 - [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/decimalseparator(strategy:).md)
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(Decimal.FormatStyle.Configuration.Grouping) -> Decimal.FormatStyle](decimal/formatstyle/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> Decimal.FormatStyle](decimal/formatstyle/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](decimal/formatstyle/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](decimal/formatstyle/precision(_:).md)
@@ -152,13 +157,21 @@ let localizedDecimal = match?.1 // 49525.99
 - [Decimal.FormatStyle.Attributed](decimal/formatstyle/attributed-swift.struct.md)
   A format style that converts integers into attributed strings.
 ### Parsing decimals
+- [var parseStrategy: Decimal.ParseStrategy<Decimal.FormatStyle>](decimal/formatstyle/parsestrategy.md)
+  The parse strategy that this format style uses.
 - [Decimal.ParseStrategy](decimal/parsestrategy.md)
   A parse strategy for creating decimal values from formatted strings.
+### Locating decimals with regular expressions
+- [func consuming(String, startingAt: String.Index, in: Range<String.Index>) throws -> (upperBound: String.Index, output: Decimal)?](decimal/formatstyle/consuming(_:startingat:in:).md)
+  Process the input string within the specified bounds, beginning at the given index, and return the end position (upper bound) of the match and the produced output.
 ### Supporting types
 - [Decimal.FormatStyle.Currency](decimal/formatstyle/currency.md)
   A format style that converts between decimal currency values and their textual representations.
 - [Decimal.FormatStyle.Percent](decimal/formatstyle/percent.md)
   A format style that converts between decimal percentage values and their textual representations.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](decimal/formatstyle/customconsumingregexcomponent-implementations.md)
+- [ParseableFormatStyle Implementations](decimal/formatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 

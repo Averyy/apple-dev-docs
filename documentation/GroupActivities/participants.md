@@ -29,6 +29,12 @@ enum Participants
 - [static func only(Participant) -> Participants](participants/only(_:)-swift.type.method.md)
   Returns a set containing the specified participant.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [func send(Data, to: Participants) async throws](groupsessionmessenger/send(_:to:)-4o52m.md)

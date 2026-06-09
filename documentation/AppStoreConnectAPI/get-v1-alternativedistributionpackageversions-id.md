@@ -62,12 +62,12 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageDeltas]` ([string])
-- `fields[alternativeDistributionPackageVariants]` ([string])
-- `fields[alternativeDistributionPackageVersions]` ([string])
-- `include` ([string])
-- `limit[deltas]` (integer)
-- `limit[variants]` (integer)
+- `fields[alternativeDistributionPackageDeltas]` ([string]): Additional fields to include for each alternative distribution package deltas resource returned by the response.
+- `fields[alternativeDistributionPackageVariants]` ([string]): Additional fields to include for each alternative distribution package variants resource returned by the response.
+- `fields[alternativeDistributionPackageVersions]` ([string]): Additional fields to include for each alternative distribution package versions resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[deltas]` (integer): The maximum number of related deltas resources to return.
+- `limit[variants]` (integer): The maximum number of related variants resources to return.
 - `fields[alternativeDistributionPackages]` ([string])
 
 ## See Also
@@ -78,11 +78,11 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVersions/
   List deltas for a specific alternative distribution package version.
 - [List Variants Information](get-v1-alternativedistributionpackageversions-_id_-variants.md)
   List variants for specific alternative distribution package version.
-- [List Delta IDs](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
+- [List delta ids](get-v1-alternativedistributionpackageversions-_id_-relationships-deltas.md)
   List all delta Ids for a specific alternative distribution package version.
-- [List Variant IDs Information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
+- [List variant ids information](get-v1-alternativedistributionpackageversions-_id_-relationships-variants.md)
   List variant Ids for specific alternative distribution package version.
-- [Read Version IDs for an Alternative Distribution Package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
+- [Read version ids for an alternative distribution package](get-v1-alternativedistributionpackages-_id_-relationships-versions.md)
   Get version IDs about a specific alternative distribution package.
 
 

@@ -4,11 +4,11 @@
 **Kind**: method
 
 **Availability**:
-- iOS 2.0+
-- iPadOS 2.0+
-- Mac Catalyst 13.0+
+- iOS 10.0+
+- iPadOS 10.0+
+- Mac Catalyst 13.1+
 - macOS 11.0+
-- tvOS 9.0+
+- tvOS 10.0+
 - visionOS 1.0+
 
 ## Declaration

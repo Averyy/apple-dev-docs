@@ -6,13 +6,13 @@ Enable people to open and manage documents.
 
 #### Overview
 
-Create a user interface for opening and editing documents using the [`DocumentGroup`](documentgroup.md) scene type.
+Create a user interface for opening and editing documents.
 
 ![None](https://docs-assets.developer.apple.com/published/9f0133f6a85bd81cbf87453f28384847/documents-hero%402x.png)
 
-You initialize the scene with a model that describes the organization of the document’s data, and a view hierarchy that SwiftUI uses to display the document’s contents to the user. You can use either a value type model, which you typically store as a structure, that conforms to the [`FileDocument`](filedocument.md) protocol, or a reference type model you store in a class instance that conforms to the [`ReferenceFileDocument`](referencefiledocument.md) protocol. You can also use SwiftData-backed documents using an initializer like [`init(editing:contentType:editor:prepareDocument:)`](documentgroup/init(editing:contenttype:editor:preparedocument:).md).
+Use the [`ReadableDocument`](readabledocument.md) and [`WritableDocument`](writabledocument.md) protocols to define your document model. They give you direct access to file URLs, integrate with Swift concurrency, and support progress reporting. For simpler documents, you can use the [`FileDocument`](filedocument.md) protocol, which handles serialization through a `FileWrapper`. You can also use SwiftData-backed documents using an initializer like [`init(editing:contentType:editor:prepareDocument:)`](documentgroup/init(editing:contenttype:editor:preparedocument:).md).
 
-SwiftUI supports standard behaviors that users expect from a document-based app, appropriate for each platform, like multiwindow support, open and save panels, drag and drop, and so on. For related design guidance, see [`Patterns`](https://developer.apple.com/design/Human-Interface-Guidelines/patterns) in the Human Interface Guidelines.
+SwiftUI supports standard behaviors people expect from a document-based app, appropriate for each platform, like multiwindow support, open and save panels. For related design guidance, see [`Patterns`](https://developer.apple.com/design/Human-Interface-Guidelines/patterns) in the Human Interface Guidelines.
 
 ## Topics
 
@@ -23,27 +23,46 @@ SwiftUI supports standard behaviors that users expect from a document-based app,
   Code along with the WWDC presenter to transform an app with SwiftData.
 - [struct DocumentGroup](documentgroup.md)
   A scene that enables support for opening, creating, and saving documents.
-### Storing document data in a structure instance
+### Storing document data in a value type
 - [protocol FileDocument](filedocument.md)
   A type that you use to serialize documents to and from file.
 - [struct FileDocumentConfiguration](filedocumentconfiguration.md)
   The properties of an open file document.
-### Storing document data in a class instance
-- [protocol ReferenceFileDocument](referencefiledocument.md)
-  A type that you use to serialize reference type documents to and from file.
-- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
-  The properties of an open reference file document.
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
-  The undo manager used to register a view’s undo operations.
+### Storing document data in a reference type instance
+- [protocol ReadableDocument](readabledocument.md)
+  A type that you use to read documents from file.
+- [protocol WritableDocument](writabledocument.md)
+  A type that you use to write documents to file.
+- [class URLDocumentConfiguration](urldocumentconfiguration.md)
+  A set of settings and properties of an open document.
+- [struct DocumentCreationContext](documentcreationcontext.md)
+  Provides context about how a document was created or opened.
+- [protocol DocumentBaseBox](documentbasebox.md)
+  A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 ### Accessing document configuration
 - [var documentConfiguration: DocumentConfiguration?](environmentvalues/documentconfiguration.md)
   The configuration of a document in a [`DocumentGroup`](documentgroup.md).
 - [struct DocumentConfiguration](documentconfiguration.md)
+  The configuration of a document in a [`DocumentGroup`](documentgroup.md).
+- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
+  The undo manager used to register a view’s undo operations.
 ### Reading and writing documents
+- [struct DocumentReadConfiguration](documentreadconfiguration.md)
+  Provides the information required to read a document from disk.
+- [struct DocumentWriteConfiguration](documentwriteconfiguration.md)
+  Provides the information required to write a document to disk.
 - [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
   The configuration for reading file contents.
 - [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
   The configuration for serializing file contents.
+- [protocol DocumentReader](documentreader.md)
+  Implements logic of reading documents from disk.
+- [protocol DocumentWriter](documentwriter.md)
+  Implements logic of writing documents to disk.
+- [struct FileWrapperDocumentReader](filewrapperdocumentreader.md)
+  A document reader that uses `FileWrapper` for reading.
+- [struct FileWrapperDocumentWriter](filewrapperdocumentwriter.md)
+  A document writer that uses `FileWrapper` for writing.
 ### Opening a document programmatically
 - [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
   An action in the environment that presents a new document.
@@ -58,14 +77,20 @@ SwiftUI supports standard behaviors that users expect from a document-based app,
   A launch scene for document-based applications.
 - [struct DocumentLaunchView](documentlaunchview.md)
   A view to present when launching document-related user experience.
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+  Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
 - [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [protocol DocumentBaseBox](documentbasebox.md)
-  A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
+- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
+  Describes the source of data used to create a new document.
+- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+  The default label used for a new document button.
+- [struct DocumentCreationSource](documentcreationsource.md)
+  Describes the source used to create a new document.
 ### Renaming a document
 - [struct RenameButton](renamebutton.md)
   A button that triggers a standard rename action.
@@ -75,6 +100,11 @@ SwiftUI supports standard behaviors that users expect from a document-based app,
   An action that activates the standard rename interaction.
 - [struct RenameAction](renameaction.md)
   An action that activates a standard rename interaction.
+### Deprecated
+- [protocol ReferenceFileDocument](referencefiledocument.md)
+  A type that you use to serialize reference type documents to and from file.
+- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
+  The properties of an open reference file document.
 
 ## See Also
 

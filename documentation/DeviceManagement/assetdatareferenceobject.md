@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The external reference for an asset data.
+The external reference.
 
 **Availability**:
 - iOS 17.0+
@@ -13,8 +13,6 @@ The external reference for an asset data.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,7 +30,7 @@ object AssetDataReferenceObject
 ## See Also
 
 - [object AssetDataAuthenticationObject](assetdataauthenticationobject.md)
-  The server authentication details for an asset data.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 
 
 ---

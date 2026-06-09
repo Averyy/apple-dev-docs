@@ -22,7 +22,7 @@ var locale: Locale
 
 #### Discussion
 
-Use the [`locale(_:)`](formatstyle/locale(_:).md) modifier to create a copy of this format style with a different locale.
+Use the [`locale(_:)`](decimal/formatstyle/locale(_:).md) modifier to create a copy of this format style with a different locale.
 
 
 ---

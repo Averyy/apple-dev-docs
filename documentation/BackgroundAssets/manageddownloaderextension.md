@@ -43,6 +43,8 @@ The protocol provides default implementations for all of the inherited `BADownlo
   An archive of assets that the system downloads together.
 - [actor AssetPackManager](assetpackmanager.md)
   An actor that manages asset packs.
+- [struct AssetPackManifest](assetpackmanifest.md)
+  A manifest of asset packs that are available to download.
 - [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
   The app group identifier that you share between your app and the extension that uses asset packs.
 - [BAHasManagedAssetPacks](../BundleResources/Information-Property-List/BAHasManagedAssetPacks.md)

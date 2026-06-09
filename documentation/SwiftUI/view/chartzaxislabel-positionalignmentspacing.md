@@ -26,6 +26,17 @@ func chartZAxisLabel(_ label: some StringProtocol, position: AnnotationPosition 
 - `alignment`: The alignment of the label.
 - `spacing`: The spacing of the label from the axis markers.
 
+## See Also
+
+- [func chartXAxisLabel(_:position:alignment:spacing:)](view/chartxaxislabel(_:position:alignment:spacing:).md)
+  Adds x axis label for charts in the view.
+- [func chartXAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartxaxislabel(position:alignment:spacing:content:).md)
+  Adds x axis label for charts in the view.
+- [func chartYAxisLabel(_:position:alignment:spacing:)](view/chartyaxislabel(_:position:alignment:spacing:).md)
+  Adds y axis label for charts in the view.
+- [func chartYAxisLabel<C>(position: AnnotationPosition, alignment: Alignment?, spacing: CGFloat?, content: () -> C) -> some View](view/chartyaxislabel(position:alignment:spacing:content:).md)
+  Adds y axis label for charts in the view.
+
 
 ---
 

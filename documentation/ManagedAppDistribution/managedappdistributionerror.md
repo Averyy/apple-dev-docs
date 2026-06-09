@@ -59,7 +59,6 @@ enum ManagedAppDistributionError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)

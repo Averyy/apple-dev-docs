@@ -23,7 +23,8 @@ static func result<Value, Intent>(value: Value, actionButtonIntent: Intent, acti
 ## Parameters
 
 - `value`: The value produced by the `AppIntent`
-- `actionButtonIntent`: The `AppIntent` used perform next
+- `actionButtonIntent`: An intent that runs when a person presses the Action Button.
+- `activityIdentifier`: An identifier for the activity.
 - `dialog`: A custom success dialog
 
 

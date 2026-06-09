@@ -16,6 +16,7 @@ object AppCustomProductPageVersion.Relationships.AppCustomProductPage
 
 ### Objects
 - [object AppCustomProductPageVersion.Relationships.AppCustomProductPage.Data](appcustomproductpageversion/relationships-data.dictionary/appcustomproductpage-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app custom product page version.
 
 ## Properties
 

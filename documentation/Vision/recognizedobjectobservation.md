@@ -12,6 +12,7 @@ An observation with an array of classification labels that classify the recogniz
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

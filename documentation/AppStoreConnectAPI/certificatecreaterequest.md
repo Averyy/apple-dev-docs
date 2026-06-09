@@ -27,12 +27,13 @@ object CertificateCreateRequest
 ## See Also
 
 - [object Certificate](certificate.md)
-  The data structure that represents a Certificates resource.
+  A code signing certificate registered in your Apple developer account, used for development, distribution, or provisioning.
 - [object CertificatesWithoutIncludesResponse](certificateswithoutincludesresponse.md)
+  A response containing a list of certificates, without related resources.
 - [object CertificateResponse](certificateresponse.md)
-  A response that contains a single Certificates resource.
+  The response body for endpoints that create or read a single signing certificate.
 - [object CertificatesResponse](certificatesresponse.md)
-  A response that contains a list of Certificates resources.
+  The response body for endpoints that list signing certificates.
 - [object CertificateUpdateRequest](certificateupdaterequest.md)
   The request body you use to update a certificate activation status.
 - [type CertificateType](certificatetype.md)

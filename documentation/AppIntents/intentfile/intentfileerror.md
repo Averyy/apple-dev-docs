@@ -27,7 +27,6 @@ enum IntentFileError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomNSError](../Foundation/CustomNSError.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)

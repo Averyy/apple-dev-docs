@@ -42,8 +42,6 @@ struct Expectation
 
 - [struct ExpectationFailedError](expectationfailederror.md)
   A type describing an error thrown when an expectation fails during evaluation.
-- [protocol CustomTestStringConvertible](customteststringconvertible.md)
-  A protocol describing types with a custom string representation when presented as part of a test’s output.
 
 
 ---

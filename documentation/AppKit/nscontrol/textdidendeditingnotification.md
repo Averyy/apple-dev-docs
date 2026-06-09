@@ -24,6 +24,8 @@ The field editor of the edited cell originally sends an [`textDidEndEditingNotif
 
 See the [`controlTextDidEndEditing:`](https://developer.apple.com/documentation/ObjectiveC/NSObject-swift.class/controlTextDidEndEditing:) method for details. The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSControl.TextDidEndEditingMessage`](nscontrol/textdidendeditingmessage.md).
+
 ## See Also
 
 - [class let textDidBeginEditingNotification: NSNotification.Name](nscontrol/textdidbegineditingnotification.md)

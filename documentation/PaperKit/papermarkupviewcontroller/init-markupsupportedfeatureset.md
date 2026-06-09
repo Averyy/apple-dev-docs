@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: init
 
-Create a new `PaperMarkupViewController` with the provided data model.
+Creates a new markup view controller with the provided data model.
 
 **Availability**:
 - iOS 26.0+
@@ -26,7 +26,7 @@ The canvas limits the edits that a person can make so they’re compatible with 
 ## Parameters
 
 - `markup`: The data model to show on this canvas. The default value is `nil`.
-- `supportedFeatureSet`: The supported features of this toolbar.
+- `supportedFeatureSet`: The features this view controller supports.
 
 
 ---

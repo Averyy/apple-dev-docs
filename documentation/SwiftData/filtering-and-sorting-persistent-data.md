@@ -157,7 +157,7 @@ These two initializers have different sorting constraints to match the needs of 
 - [macro Query()](query().md)
   Fetches all instances of the attached model type.
 - [Additional query macros](additionalquerymacros.md)
-  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort and order those results.
+  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort, order, and section those results.
 - [struct Query](query.md)
   A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
 - [struct FetchDescriptor](fetchdescriptor.md)

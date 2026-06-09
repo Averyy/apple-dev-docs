@@ -17,8 +17,8 @@ Creates a list that computes its rows on demand from an underlying collection of
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, @ViewBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, ID>, ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
+nonisolated
+init<Data, ID, RowContent>(_ data: Binding<Data>, id: KeyPath<Data.Element, ID>, editActions: EditActions<Data>, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<IndexedIdentifierCollection<Data, ID>, ID, EditableCollectionContent<RowContent, Data>>, Data : MutableCollection, Data : RandomAccessCollection, ID : Hashable, RowContent : View, Data.Index : Hashable
 ```
 
 #### Discussion
@@ -43,7 +43,7 @@ Explicit `DynamicViewContent.onDelete(perform:)`, `DynamicViewContent.onMove(per
 - `data`: A collection of identifiable data for computing the list.
 - `id`: The key path to the data model’s identifier.
 - `editActions`: The edit actions that are synthesized on `data`.
-- `rowContent`: A view builder that creates the view for a single row of the list.
+- `rowContent`: A content builder that creates the view for a single row of the list.
 
 ## See Also
 

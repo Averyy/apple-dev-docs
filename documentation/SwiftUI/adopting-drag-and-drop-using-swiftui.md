@@ -114,6 +114,8 @@ For design guidance on adopting drag and drop, see Human Interface Guidelines > 
 
 - [Making a view into a drag source](making-a-view-into-a-drag-source.md)
   Adopt draggable API to provide items for drag-and-drop operations.
+- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+  Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
 
 ---

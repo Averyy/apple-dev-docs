@@ -11,14 +11,15 @@ Creates an alert scene with a title and a set of actions.
 ## Declaration
 
 ```swift
-init(_ title: Text, isPresented: Binding<Bool>, @ViewBuilder actions: () -> Actions) where Message == EmptyView
+nonisolated
+init(_ title: Text, isPresented: Binding<Bool>, @ContentBuilder actions: () -> Actions) where Message == EmptyView
 ```
 
 ## Parameters
 
 - `title`: The title of the alert.
-- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
-- `actions`: A view builder returning the actions for the dialog.
+- `isPresented`: A binding to a Boolean value that determines whether to present the alert. When someone presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
+- `actions`: A [`ContentBuilder`](contentbuilder.md) returning the actions for the dialog.
 
 
 ---

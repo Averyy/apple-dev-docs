@@ -8,6 +8,7 @@ A protocol that defines a service that a device can publish or subscribe to.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

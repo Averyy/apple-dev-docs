@@ -1,4 +1,4 @@
-# GET /v1/buildUploads/{id}/buildUploadFiles
+# Read build upload file information for a build upload
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -21,7 +21,7 @@ Get build upload file information for a specific build upload.
 
 - [Read Build Upload File Information](get-v1-builduploadfiles-_id_.md)
   Get details about a specific build upload file for a build upload.
-- [Read the Build Upload File ID for a Build Upload](get-v1-builduploads-_id_-relationships-builduploadfiles.md)
+- [Read the build upload file id for a build upload](get-v1-builduploads-_id_-relationships-builduploadfiles.md)
   Get the build upload file ID for a specific build upload.
 - [Create a Reservation for a Build Upload File](post-v1-builduploadfiles.md)
   Reserve a build upload file for a specific build upload.

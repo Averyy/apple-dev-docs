@@ -18,6 +18,15 @@ Supports image elements.
 case images
 ```
 
+## See Also
+
+- [FeatureSet.Feature.stickers](featureset/feature/stickers.md)
+  Supports inserting stickers.
+- [FeatureSet.Feature.loupes](featureset/feature/loupes.md)
+  Supports loupe elements.
+- [FeatureSet.Feature.links](featureset/feature/links.md)
+  Supports link elements.
+
 
 ---
 

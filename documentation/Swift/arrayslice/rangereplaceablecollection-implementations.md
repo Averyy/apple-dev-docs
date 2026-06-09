@@ -33,6 +33,8 @@
   Adds the elements of a sequence or collection to the end of this collection.
 - [func applying(CollectionDifference<Self.Element>) -> Self?](arrayslice/applying(_:).md)
   Applies the given difference to this collection.
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> Self](arrayslice/filter(_:)-95o1l.md)
+  Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func insert(Self.Element, at: Self.Index)](arrayslice/insert(_:at:)-2orxu.md)
   Inserts a new element into the collection at the specified position.
 - [func insert<C>(contentsOf: C, at: Self.Index)](arrayslice/insert(contentsof:at:).md)

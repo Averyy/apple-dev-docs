@@ -22,11 +22,6 @@ init(target: ClosedRange<Measurement<UnitFrequency>>)
 
 - `target`: A range of values that use frequency units.
 
-## See Also
-
-- [static func heartRate(ClosedRange<Double>, unit: UnitFrequency) -> Self](heartraterangealert/heartrate(_:unit:).md)
-  Returns a new heart rate alert for the target range.
-
 
 ---
 

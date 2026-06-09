@@ -22,6 +22,8 @@ The system doesn’t post this notification for background apps or for apps that
 
 > ❗ **Important**:  To receive this notification, use [`notificationCenter`](nsworkspace/notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
 
+To observe this notification using Swift concurrency, use [`NSWorkspace.DidTerminateApplicationMessage`](nsworkspace/didterminateapplicationmessage.md).
+
 ## See Also
 
 - [class let willLaunchApplicationNotification: NSNotification.Name](nsworkspace/willlaunchapplicationnotification.md)

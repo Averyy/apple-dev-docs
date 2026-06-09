@@ -36,6 +36,8 @@ To apply this style to a picker, or to a view that contains pickers, use the [`p
   A picker style that presents the options as a row of compact elements.
 - [static var segmented: SegmentedPickerStyle](pickerstyle/segmented.md)
   A picker style that presents the options in a segmented control.
+- [static var tabs: TabsPickerStyle](pickerstyle/tabs.md)
+  A picker style that presents options as segmented tabs.
 - [static var wheel: WheelPickerStyle](pickerstyle/wheel.md)
   A picker style that presents the options in a scrollable wheel that shows the selected option and a few neighboring options.
 

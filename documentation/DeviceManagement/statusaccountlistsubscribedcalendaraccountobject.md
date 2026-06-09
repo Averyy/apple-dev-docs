@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s subscribed calendar details.
+A subscribed calendar.
 
 **Availability**:
 - iOS 16.0+
@@ -11,8 +11,6 @@ A status report of the client’s subscribed calendar details.
 - Mac Catalyst 16.0+
 - macOS 14.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

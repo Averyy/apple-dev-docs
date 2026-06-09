@@ -9,7 +9,6 @@ A type that represents an element you can request from a mobile national ID card
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 
@@ -26,6 +25,8 @@ struct Element
   The mobile national ID card holder’s family name or last name.
 - [static let givenName: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/givenname.md)
   The mobile national ID card holder’s given name or first name.
+- [static let name: MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/name.md)
+  The mobile national ID card holder’s name.
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileNationalIDCardDisplayRequest.Element](mobilenationalidcarddisplayrequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile national ID card holder’s age is at least the given age.

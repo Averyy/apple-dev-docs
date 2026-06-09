@@ -26,7 +26,7 @@ static var noChildProcess: Errno { get }
 
 #### Discussion
 
-A `wait(2)` or `waitpid(2)` function was executed by a process that dosn’t have any existing child processes or whose child processes are all already being waited for.
+A `wait(2)` or `waitpid(2)` function was executed by a process that doesn’t have any existing child processes or whose child processes are all already being waited for.
 
 The corresponding C error is `ECHILD`.
 

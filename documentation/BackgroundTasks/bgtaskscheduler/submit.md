@@ -11,6 +11,7 @@ Submit a previously registered background task for execution.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 

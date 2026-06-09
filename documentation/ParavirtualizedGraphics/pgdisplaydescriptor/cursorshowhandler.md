@@ -17,10 +17,6 @@ var cursorShowHandler: PGDisplayCursorShowHandler? { get set }
 
 ## See Also
 
-- [var cursorGlyphHandler: PGDisplayCursorGlyphHandler?](pgdisplaydescriptor/cursorglyphhandler.md)
-  A handler that the framework calls to change the cursor’s appearance.
-- [typealias PGDisplayCursorGlyphHandler](pgdisplaycursorglyphhandler.md)
-  The block signature for a routine that handles changes to the cursor’s appearance.
 - [typealias PGDisplayCursorShowHandler](pgdisplaycursorshowhandler.md)
   The block signature for a routine that handles changes to the cursor’s visibility.
 

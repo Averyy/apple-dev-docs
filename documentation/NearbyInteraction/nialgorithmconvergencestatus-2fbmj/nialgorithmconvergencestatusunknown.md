@@ -6,11 +6,11 @@
 An indication that the framework is unsure of the Camera Assistance status.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- watchOS 8.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
+- macOS ?+
+- watchOS ?+
 
 ## Declaration
 

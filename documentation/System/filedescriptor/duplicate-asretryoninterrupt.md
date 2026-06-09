@@ -3,7 +3,7 @@
 **Framework**: System  
 **Kind**: method
 
-Duplicates this file descriptor and return the newly created copy.
+Duplicates this file descriptor and returns the newly created copy.
 
 **Availability**:
 - iOS 15.0+
@@ -36,7 +36,7 @@ The corresponding C functions are `dup` and `dup2`.
 
 ## Parameters
 
-- `retryOnInterrupt`: Whether to retry the write operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
+- `retryOnInterrupt`: Whether to retry the duplicate operation if it throws [`interrupted`](errno/interrupted.md). The default is `true`. Pass `false` to try only once and throw an error upon interruption.
 
 
 ---

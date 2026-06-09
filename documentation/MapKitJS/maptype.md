@@ -17,7 +17,12 @@ const MapType: Readonly<{
     readonly MutedStandard: "mutedStandard";
     readonly Standard: "standard";
 }>
+type MapType = (typeof MapType)[keyof typeof MapType];
 ```
+
+## Mentions
+
+- [MapKit JS 6](mapkit-js-6.md)
 
 ## Topics
 
@@ -30,34 +35,31 @@ const MapType: Readonly<{
   A satellite image of the area.
 - [Standard](maptype/standard.md)
   A street map that shows the position of all roads and some road names.
-### Type Aliases
-- [type MapType](maptype/maptype.md)
-  A type alias that represents the values of map type enumeration.
 
 ## See Also
 
-- [colorScheme](map/colorscheme.md)
-  The map’s color scheme when displaying standard or muted standard map types.
+- [const AddressCategory](addresscategory.md)
+  The categories of address components that users can search for with an address filter.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
 - [const ColorScheme](colorscheme.md)
   Constants that indicate the color scheme of the map or a place detail.
-- [distances](map/distances-data.property.md)
-  The system of measurement that displays on the map.
-- [const Distance](distance.md)
-  Constants indicating the system of measurement that displays on the map.
-- [mapType](map/maptype.md)
-  The type of data that the map displays.
-- [padding](map/padding.md)
-  The map’s inset margins.
-- [pointOfInterestFilter](map/pointofinterestfilter.md)
-  The filter that determines the points of interest that display on the map.
-- [showsPointsOfInterest](map/showspointsofinterest.md)
-  A Boolean value that determines whether the map displays points of interest.
-- [showItems(items, options)](map/showitems.md)
-  Adjusts the map’s visible region to bring the specified overlays and annotations into view.
-- [interface MapShowItemsOptions](mapshowitemsoptions.md)
-  Options that determine the map parameters to use when showing items.
-- [tintColor](map/tintcolor.md)
-  The CSS color that MapKit JS uses for user interface controls on the map.
+- [const DistanceUnitSystem](distanceunitsystem.md)
+  Constants that indicate the system of measurement that displays on the map.
+- [const FeatureVisibility](featurevisibility.md)
+  Constants indicating the visibility of different adaptive map features.
+- [const MapFeatureType](mapfeaturetype.md)
+  Values that describe the feature type of a point of interest.
+- [const MapLoadPriority](maploadpriority.md)
+  Constants that prioritize the visibility of specific map features during map loading.
+- [const PointOfInterestCategory](pointofinterestcategory.md)
+  Point-of-interest categories.
+- [const RegionPriority](regionpriority.md)
+  A value that indicates the importance of the configured region.
+- [const TransportType](transporttype.md)
+  The modes of transportation.
 
 
 ---

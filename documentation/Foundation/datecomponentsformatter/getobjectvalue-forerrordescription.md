@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+`NSDateComponentsFormatter` currently only implements formatting, not parsing. Until it implements parsing, this will always return `NO`.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

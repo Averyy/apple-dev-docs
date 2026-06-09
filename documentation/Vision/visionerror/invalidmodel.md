@@ -12,6 +12,7 @@ An error that indicates the Core ML model isn’t compatible with the request.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

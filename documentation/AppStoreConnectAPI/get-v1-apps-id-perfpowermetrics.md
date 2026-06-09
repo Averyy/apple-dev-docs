@@ -1,4 +1,4 @@
-# Get Power and Performance Metrics for an App
+# Get power and performance metrics for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -15,7 +15,7 @@ Get the performance and power metrics data for the most recent version of an app
 
 #### Discussion
 
-The example below requests iOS app launch metrics on all iPhones for the most-recent app versions. To get metrics for a specific app version instead, use the [`Get Power and Performance Metrics for a Build`](get-v1-builds-_id_-perfpowermetrics.md) endpoint.
+The example below requests iOS app launch metrics on all iPhones for the most-recent app versions. To get metrics for a specific app version instead, use the [`Get power and performance metrics for a build`](get-v1-builds-_id_-perfpowermetrics.md) endpoint.
 
 ##### Example Request and Response
 
@@ -157,11 +157,11 @@ https://api.appstoreconnect.apple.com/v1/apps/161309721/perfPowerMetrics?filter[
 
 - [Retrieve Power and Performance Metrics and Log Insights](retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
-- [Get Power and Performance Metrics for a Build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [List All Diagnostic Signatures for a Build](get-v1-builds-_id_-diagnosticsignatures.md)
+- [List all diagnostic signatures for a build](get-v1-builds-_id_-diagnosticsignatures.md)
   List the aggregate backtrace signatures captured for a specific build.
-- [Download Logs for a Diagnostic Signature](get-v1-diagnosticsignatures-_id_-logs.md)
+- [Download logs for a diagnostic signature](get-v1-diagnosticsignatures-_id_-logs.md)
   Get the anonymized backtrace logs associated with a specific diagnostic signature.
 
 

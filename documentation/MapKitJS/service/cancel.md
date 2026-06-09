@@ -1,9 +1,9 @@
-# cancel(id)
+# cancel(promise)
 
 **Framework**: MapKit JS  
 **Kind**: method
 
-Cancels a request using the provided request ID.
+Cancels a request using the provided request promise.
 
 **Availability**:
 - MapKit JS 5.0+
@@ -11,8 +11,12 @@ Cancels a request using the provided request ID.
 ## Declaration
 
 ```swift
-cancel(id: number): boolean;
+cancel(promise: Promise<unknown>): boolean;
 ```
+
+## Mentions
+
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Return Value
 
@@ -20,11 +24,23 @@ cancel(id: number): boolean;
 
 #### Discussion
 
-Sometimes you need to cancel a request, either because a person initiates the cancellation or moves on to another activity. Cancel a search request by providing its request ID, which MapKit JS returns from a call to [`search(query, callback, options)`](search/search.md).
+Sometimes you need to cancel a request, either because a person initiates the cancellation or moves on to another activity.
+
+The preferred way to cancel a request is to use an `AbortSignal`. Pass the `signal` property of an `AbortController` to the service method’s options, and call `abort()` on the controller when you need to cancel the request.
+
+Alternatively, you can cancel a request by passing its returned promise to the [`cancel(promise)`](service/cancel.md) method:
+
+```javascript
+const search = new mapkit.Search();
+const promise = search.search("coffee");
+
+// Cancel the request:
+search.cancel(promise);
+```
 
 ## Parameters
 
-- `id`: Pass the integer ID that returns from a call. Passing an invalid ID or the ID of a completed request has no effect.
+- `promise`: Pass the promise returned from the service method. Passing an invalid promise or the promise of a completed request has no effect.
 
 
 ---

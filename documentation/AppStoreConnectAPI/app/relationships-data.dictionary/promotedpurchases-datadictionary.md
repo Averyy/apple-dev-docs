@@ -16,6 +16,7 @@ object App.Relationships.PromotedPurchases
 
 ### Objects
 - [object App.Relationships.PromotedPurchases.Data](app/relationships-data.dictionary/promotedpurchases-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related promoted purchase resource.
 
 ## Properties
 

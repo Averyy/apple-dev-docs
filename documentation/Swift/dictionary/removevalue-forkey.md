@@ -56,7 +56,7 @@ if let value = hues.removeValue(forKey: "Cerise") {
 
 ## See Also
 
-- [func filter((Dictionary<Key, Value>.Element) throws -> Bool) rethrows -> [Key : Value]](dictionary/filter(_:).md)
+- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](dictionary/filter(_:).md)
   Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
 - [func remove(at: Dictionary<Key, Value>.Index) -> Dictionary<Key, Value>.Element](dictionary/remove(at:).md)
   Removes and returns the key-value pair at the specified index.

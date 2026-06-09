@@ -47,6 +47,8 @@ You can save a token to disk and fetch history when your app loads based on that
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

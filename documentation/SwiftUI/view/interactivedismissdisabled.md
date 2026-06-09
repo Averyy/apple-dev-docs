@@ -58,7 +58,7 @@ struct ContentView: View {
             isSheetPresented = true
         }
         .sheet(isPresented: $isSheetPresented) {
-            TermsOfService()
+            TermsOfService(areTermsAccepted: $areTermsAccepted)
                 .interactiveDismissDisabled(!areTermsAccepted)
         }
     }

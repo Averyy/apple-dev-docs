@@ -86,7 +86,7 @@ Consider the following guiding principles to use Simulator effectively in your M
 
 **Decide whether to provide long-term support for Simulator.** Maintaining a separate Metal path for Simulator takes time and effort. A large game development team can have many game designers and engine developers. Supporting Simulator lets designers work in Simulator to perfect gameplay while engineers work with devices to design the game engine and tune its performance. On a smaller team, you might find that your time is better spent focusing on device support rather than devoting resources to keep your game running in Simulator.
 
-For more information about Simulator, see [`Devices and Simulator`](https://developer.apple.com/documentation/Xcode/devices-and-simulator). For more information about the differences between testing on device and testing in Simulator, see [`Testing in Simulator versus testing on hardware devices`](https://developer.apple.com/documentation/Xcode/testing-in-simulator-versus-testing-on-hardware-devices).
+For more information about Simulator, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub). For more information about the differences between testing on device and testing in Simulator, see doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices.
 
 ## See Also
 

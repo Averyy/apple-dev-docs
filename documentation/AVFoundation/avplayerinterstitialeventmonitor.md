@@ -110,6 +110,12 @@ When it’s time to present an interstitial event, the system suspends playback 
   An object that provides instructions for how a player presents interstitial content.
 - [class AVPlayerInterstitialEventController](avplayerinterstitialeventcontroller.md)
   An object that schedules interstitial events for items played by the primary player.
+- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
+- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
 

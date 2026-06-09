@@ -9,7 +9,6 @@ The reader is temporarily unavailable, try again in a few seconds.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

@@ -12,6 +12,7 @@ A language model will call this method when it wants to leverage this tool.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -23,6 +24,7 @@ func call(arguments: Self.Arguments) async throws -> Self.Output
 ## Mentions
 
 - [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
+- [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
 
 #### Discussion
 

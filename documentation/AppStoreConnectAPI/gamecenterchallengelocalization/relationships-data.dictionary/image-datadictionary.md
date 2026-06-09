@@ -16,6 +16,7 @@ object GameCenterChallengeLocalization.Relationships.Image
 
 ### Dictionaries
 - [object GameCenterChallengeLocalization.Relationships.Image.Data](gamecenterchallengelocalization/relationships-data.dictionary/image-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a challenge.
 
 ## Properties
 

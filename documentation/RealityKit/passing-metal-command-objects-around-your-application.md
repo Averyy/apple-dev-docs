@@ -147,6 +147,8 @@ myComputeEntity.components.set(ComputeSystemComponent(computeSystem: myComputeSy
   Target specific CPU metrics with adjustments to your app and its content.
 - [Construct an immersive environment for visionOS](construct-an-immersive-environment-for-visionos.md)
   Build efficient custom worlds for your app.
+- [Low-level rendering](low-level-rendering.md)
+  Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
 
 
 ---

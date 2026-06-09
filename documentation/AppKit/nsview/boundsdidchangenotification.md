@@ -32,6 +32,8 @@ The following methods can result in notification posting:
 
 Note that the bounds rectangle resizes automatically to track the frame rectangle. However, changes to the frame rectangle do not result in this bounds-changed notification.
 
+To observe this notification using Swift concurrency, use [`NSView.BoundsDidChangeMessage`](nsview/boundsdidchangemessage.md).
+
 ## See Also
 
 - [var bounds: NSRect](nsview/bounds.md)

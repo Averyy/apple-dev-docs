@@ -229,7 +229,7 @@ In the project editor, select the target and the General tab. Under App Icons an
 
 In Xcode, choose a simulated or real device from the run destination menu and click the Run button. Verify that your app icon appears correctly on different platforms and appearances. Use the Appearance system settings in Simulator or on a real device to test appearances.
 
-For more information on running your app in Xcode, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md).
+For more information on running your app in Xcode, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md).
 
 ## See Also
 

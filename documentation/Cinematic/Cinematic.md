@@ -57,6 +57,10 @@ The Cinematic framework enables you to add professional-level editing and playba
 - [Cinematic Data Types](cinematic-data-types.md)
 ### Classes
 - [class CNAssetSpatialAudioInfo](cnassetspatialaudioinfo-7hdev.md)
+- [class CNImageRenderingSession](cnimagerenderingsession.md)
+  A session for rendering a shallow depth-of-field (SDoF) effect onto still images using Metal.
+- [class CNImageRenderingSessionConfiguration](cnimagerenderingsessionconfiguration.md)
+  Configuration for a CNImageRenderingSession, specifying the rendering quality and algorithm version.
 ### Enumerations
 - [enum CNSpatialAudioContentType](cnspatialaudiocontenttype.md)
 - [enum CNSpatialAudioRenderingStyle](cnspatialaudiorenderingstyle.md)

@@ -8,6 +8,7 @@ A stable per-link ID that can be used to uniquely identify this link. ID will be
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

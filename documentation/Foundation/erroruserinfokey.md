@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+These keys may exist in the user info dictionary.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

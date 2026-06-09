@@ -9,8 +9,6 @@ Complete the installation of an app using a redemption code.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,9 +23,9 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS |
-| User channel | NA |
-| Requires supervision | NA |
-| Allowed in user enrollment | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
@@ -81,7 +79,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ApplyRedemptionCodeCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

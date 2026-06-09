@@ -7,8 +7,6 @@ The payload that configures the firewall.
 
 **Availability**:
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,11 +27,11 @@ If more than one profile contains this payload, the system uses the most restric
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example
@@ -89,8 +87,8 @@ If more than one profile contains this payload, the system uses the most restric
 
 ## Properties
 
-- `AllowSigned` (boolean): If `true`, the system allows built-in software to receive incoming connections. Available in macOS 12.3 and later. > **Note**:  The system ensures that `AllowSigned` always has a value. If missing from the payload, the system sets it to `true`.
-- `AllowSignedApp` (boolean): If `true`, the system allows downloaded signed software to receive incoming connections. Available in macOS 12.3 and later. > **Note**:  The system ensures that `AllowSignedApp` always has a value. If missing from the payload, the system sets it to `true`.
+- `AllowSigned` (boolean): If `true`, the system allows built-in software to receive incoming connections. > **Note**:  The system ensures that `AllowSigned` always has a value. If missing from the payload, the system sets it to `true`. Available: macOS 12.3+
+- `AllowSignedApp` (boolean): If `true`, the system allows downloaded signed software to receive incoming connections. > **Note**:  The system ensures that `AllowSignedApp` always has a value. If missing from the payload, the system sets it to `true`. Available: macOS 12.3+
 - `Applications` ([Firewall.ApplicationsItem]): The list of apps with connections that the firewall controls.
 - `BlockAllIncoming` (boolean): If `true`, the system enables blocking all incoming connections.
 - `EnableFirewall` (boolean) *(required)*: If `true`, the system enables the firewall.
@@ -102,7 +100,7 @@ If more than one profile contains this payload, the system uses the most restric
   The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.

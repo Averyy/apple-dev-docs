@@ -6,7 +6,6 @@
 Compresses the imported image with ASTC.
 
 **Availability**:
-- Mac Catalyst 18.0+
 - macOS 15.0+
 
 ## Declaration

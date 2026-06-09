@@ -31,6 +31,11 @@ const y = mapPoint.y; // 0.5
 - `x`: The point along the east-west axis of the map projection.
 - `y`: The point along the north-south axis of the map projection.
 
+## See Also
+
+- [interface MapPointData](mappointdata.md)
+  A plain object representation of a map point in map units.
+
 
 ---
 

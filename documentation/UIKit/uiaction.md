@@ -67,6 +67,7 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
   The object responsible for the action handler.
 ### Initializers
 - [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State, handler: UIActionHandler)](uiaction/init(title:subtitle:image:selectedimage:identifier:discoverabilitytitle:attributes:state:handler:).md)
+- [convenience init(title: String, subtitle: String?, image: UIImage?, selectedImage: UIImage?, preferredImageVisibility: UIMenuElement.ImageVisibility, identifier: UIAction.Identifier?, discoverabilityTitle: String?, attributes: UIMenuElement.Attributes, state: UIMenuElement.State, handler: UIActionHandler)](uiaction/init(title:subtitle:image:selectedimage:preferredimagevisibility:identifier:discoverabilitytitle:attributes:state:handler:).md)
 
 ## Relationships
 

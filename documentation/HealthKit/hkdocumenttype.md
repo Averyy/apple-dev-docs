@@ -25,7 +25,7 @@ To create a document type instance, use the [`HKObjectType`](hkobjecttype.md) cl
 
 ##### Subclassing Notes
 
-Like many HealthKit classes, document types are not extensible and should not be subclassed.
+As with many HealthKit classes, don’t subclass document types.
 
 Additionally, this class reuses the same instance whenever possible. Letting multiple queries share the same document type helps reduce the overall memory usage.
 

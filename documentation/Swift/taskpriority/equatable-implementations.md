@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](taskpriority/!=(_:_:)-60fd.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](taskpriority/!=(_:_:)-6t582.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (TaskPriority, TaskPriority) -> Bool](taskpriority/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

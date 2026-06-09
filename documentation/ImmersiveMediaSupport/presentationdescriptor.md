@@ -49,6 +49,8 @@ struct PresentationDescriptor
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
+- [struct ShotFlipCommand](shotflipcommand.md)
+  A command type to flip the video frames vertically during playback for the duration of the command.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)
   An object that provides the functionality required to understand and process immersive presentation commands.
 

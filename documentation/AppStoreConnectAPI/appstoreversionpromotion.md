@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A promoted feature badge for an App Store version, highlighting it as new or updated in the App Store.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -21,6 +23,7 @@ object AppStoreVersionPromotion
 ## See Also
 
 - [object AppStoreVersionPromotionCreateRequest](appstoreversionpromotioncreaterequest.md)
+  The request body you use to create an App Store version promotion.
 
 
 ---

@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: property
 
-The local endpoint of the connection
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

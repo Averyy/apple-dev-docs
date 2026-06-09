@@ -62,8 +62,6 @@ Don’t create [`SFSpeechRecognitionRequest`](sfspeechrecognitionrequest.md) obj
 
 ## See Also
 
-- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
-  Perform speech recognition on audio coming from the microphone of an iOS device.
 - [class SFSpeechURLRecognitionRequest](sfspeechurlrecognitionrequest.md)
   A request to recognize speech in a recorded audio file.
 - [class SFSpeechAudioBufferRecognitionRequest](sfspeechaudiobufferrecognitionrequest.md)

@@ -27,7 +27,7 @@ object SubscriptionImage.Attributes
 ## See Also
 
 - [object SubscriptionImage.Relationships](subscriptionimage/relationships-data.dictionary.md)
-  The data structure that represents the relationships of a subscription image resource.
+  The relationships for a subscription image, linking it to its associated subscription.
 
 
 ---

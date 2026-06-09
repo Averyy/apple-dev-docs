@@ -11,6 +11,7 @@ A text editor style with a system-defined rounded border.
 ## Declaration
 
 ```swift
+nonisolated
 struct RoundedBorderTextEditorStyle
 ```
 

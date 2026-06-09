@@ -29,7 +29,7 @@
   Executes a closure on the collection’s contiguous storage.
 ### Subscripts
 - [subscript(Range<Self.Index>) -> Self.SubSequence](slice/subscript(_:)-2elba.md)
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](slice/subscript(_:)-3p9dc.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](slice/subscript(_:)-3p9dc.md)
 - [subscript<R>(R) -> Self.SubSequence](slice/subscript(_:)-4f8ky.md)
 - [subscript(Range<Slice<Base>.Index>) -> Slice<Base>](slice/subscript(_:)-87kqd.md)
   Accesses a contiguous subrange of the collection’s elements.

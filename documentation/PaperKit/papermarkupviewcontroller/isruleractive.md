@@ -18,6 +18,13 @@ A Boolean value that indicates whether a ruler view is visible on the canvas.
 @preconcurrency var isRulerActive: Bool { get set }
 ```
 
+## See Also
+
+- [var isEditable: Bool](papermarkupviewcontroller/iseditable.md)
+  A Boolean value that indicates whether a person can edit the canvas contents.
+- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
+  The tool for drawing on the canvas.
+
 
 ---
 

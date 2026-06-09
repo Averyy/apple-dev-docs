@@ -12,6 +12,7 @@ Creates a request to detect whether the camera lens has a smudge.
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

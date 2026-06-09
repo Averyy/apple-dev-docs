@@ -11,8 +11,8 @@ Creates a list with the given content that supports selecting a single row that 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content)
+nonisolated
+init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

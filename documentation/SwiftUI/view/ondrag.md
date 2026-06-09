@@ -31,6 +31,8 @@ To customize the default preview, apply a [`contentShape(_:_:eoFill:)`](view/con
 
 If you want to show a different preview, you can use [`onDrag(_:preview:)`](view/ondrag(_:preview:).md).
 
+To use `Transferable` types directly and access a richer feature set — including multi-item drag via [`dragContainer(for:in:_:)`](view/dragcontainer(for:in:_:).md) — use [`draggable(_:)`](view/draggable(_:).md) instead.
+
 ## Parameters
 
 - `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that represents the draggable data from this view.

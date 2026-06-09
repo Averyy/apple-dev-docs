@@ -17,6 +17,7 @@ Creates a radial gradient from a collection of colors.
 ## Declaration
 
 ```swift
+nonisolated
 init(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)
 ```
 

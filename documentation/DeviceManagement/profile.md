@@ -6,8 +6,7 @@
 A profile’s properties and their values.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Declaration
 
@@ -19,7 +18,8 @@ object Profile
 
 - [Migrating managed devices](migrating-managed-devices.md)
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
-- [Authenticating Through Web Views](authenticating-through-web-views.md)
+- [Providing information about your device management service](providing-information-about-your-device-management-service.md)
+- [Authenticating through web views](authenticating-through-web-views.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 
@@ -40,10 +40,10 @@ object Profile
 - `devices` ([string]): Array of strings that contains device serial numbers (may be empty).
 - `do_not_use_profile_from_backup` (boolean): If `true`, the device does not use the profile when it restores a backup, reading the current profile from the server instead. In addition with iOS 26.4 and visionOS 26.4 and later, the device removes all configuration profiles when it restores a backup. This behavior will become nonelective in a future OS update. The default value is `false`. Available in iOS 26 and later, and visionOS 26 and later; otherwise ignored by devices.
 - `is_return_to_service` (boolean): If `true`, the device is configured for Rapid Return to Service. Default is `false`. Available in iOS 26 and later, and visionOS 26 and later; otherwise ignored by devices.
-- `is_mandatory` (boolean): If `true`, the user may not skip applying the profile returned by the MDM server. Default is `false`. In iOS 13 and later, all DEP enrollments are mandatory.
+- `is_mandatory` (boolean): If `true`, the user may not skip applying the profile returned by the MDM server. Default is `false`. In iOS 13 and later, all ADE enrollments are mandatory.
 - `is_mdm_removable` (boolean): If `false`, the MDM payload delivered by the configuration URL cannot be removed by the user via the user interface on the device; that is, the MDM payload is locked onto the device. This key can be set to `false` only if `is_supervised` is set to `true`. Defaults to `true`.
 - `is_multi_user` (boolean): If `true`, tells the device to configure for Shared iPad. Default is false. This key is valid only for Apple School Manager or Apple Business organizations using X-Server-Protocol-Version 2 and later. Devices that do not meet the Shared iPad minimum requirements do not honor this command. With iOS devices, `com.apple.mdm.per-user-connections` must be added to the MDM enrollment profile’s Server Capabilities.
-- `is_supervised` (boolean): If `true`, the device must be supervised. Defaults to `false`. In iOS 11, DEP devices that are not supervised have been deprecated. In iOS 13, all DEP devices will be supervised and the OS will ignore the `is_supervised` flag completely.
+- `is_supervised` (boolean): If `true`, the device must be supervised. Defaults to `false`. In iOS 11, ADE devices that are not supervised have been deprecated. In iOS 13, all ADE devices will be supervised and the OS will ignore the `is_supervised` flag completely.
 - `language` (string): A language designator is a code that represents a language. Use the two-letter ISO 639-1 standard (preferred) or the three-letter ISO 639-2 standard. If an ISO 639-1 code is not available for a particular language, use the ISO 639-2 code instead. See [`Language and Locale IDs`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/LanguageandLocaleIDs/LanguageandLocaleIDs.html) for more information. Example two-letter: `en`, `fr`, `ja` Example three-letter: `eng`, `fre`, `jpn`, `haw` Available on tvOS and macOS 11 and later.``
 - `org_magic` (string): A string that uniquely identifies various services that are managed by a single organization.
 - `profile_name` (string): A human-readable name for the profile.

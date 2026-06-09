@@ -54,7 +54,7 @@ In macOS 10.7 and later `NSDraggingSource` is now a formal protocol and has an u
 - [class NSDraggingItem](nsdraggingitem.md)
   A single dragged item within a dragging session.
 - [class NSDraggingSession](nsdraggingsession.md)
-  The encapsulation of a drag-and-drop action that supports modification of the drag while in progress.
+  An object that encapsulates a drag-and-drop action.
 - [class NSDraggingImageComponent](nsdraggingimagecomponent.md)
   A single object in a dragging item.
 

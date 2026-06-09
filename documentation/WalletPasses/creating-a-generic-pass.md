@@ -8,8 +8,6 @@ Construct a digital pass with information that enables people to take action.
 
 The generic pass style is for passes that don’t fit into the boarding, coupon, event, or store card pass categories. You might use the generic pass style for a gym membership card, library card, valet claim ticket, or other kind of pass. Setting the generic pass style provides data that Wallet displays automatically, such as business information, a barcode, terms and conditions, store locations, and other helpful information.
 
-![An illustration showing an example generic pass for a mock gym membership.](https://docs-assets.developer.apple.com/published/2f8c9366433d611399132b3075659cba/generic-pass-design%402x.png)
-
 #### Create Your Pass Type Identifier
 
 Signing a pass requires a signing certificate for the *pass type identifier*, which is similar to a bundle identifier, or a class name. The value for the `passTypeIdentifier` key specifies the pass type identifier. You choose a string to define a class or category of passes; the string always begins with `pass`, and uses reverse DNS style—for example, `pass.com.example.membership-card`. Create your pass type identifier in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) area of your Apple Developer account. The pass type identifier must match the certificate used to sign the pass. For more information on creating Wallet certificates, see [`Create Wallet identifiers and certificates`](https://developer.apple.comhttps://developer.apple.com/help/account/capabilities/create-wallet-identifiers-and-certificates/).
@@ -40,11 +38,11 @@ The following example shows a partial generic pass with top-level keys.
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following images shows options for the layout and placement of fields for the generic pass style.
 
-The following images show the different layout options for a generic pass. Layout one has a separate *secondary* and *auxiliary* section with a rectangular barcode. Layout two shows a combined *secondary* and *auxiliary* section with a square barcode.
+The following images show the different layout options for a generic pass and a poster  generic pass. The generic pass layout has a separate *secondary* and *auxiliary* section with a rectangular barcode. The poster generic pass layout has a background image, primary fields, and a footer field with a square QR code.
 
-| Generic pass layout 1 | Generic pass layout 2 |
+| Generic pass layout | Poster generic pass layout |
 | --- | --- |
-| ![An illustration showing the generic pass layout option with separate secondary and auxiliary sections and a rectangular barcode](https://docs-assets.developer.apple.com/published/0ea8eaf5a48417f07aed39a2e317710e/generic-passfield-layout-1%402x.png) | ![An illustration showing a generic pass layout option with a combined secondary and auxiliary section and a square barcode.](https://docs-assets.developer.apple.com/published/17f44895905b4c1e99b22bdab5c2842f/generic-passfield-layout-2%402x.png) |
+| ![An illustration showing the generic pass layout option with separate secondary and auxiliary sections and a rectangular barcode](https://docs-assets.developer.apple.com/published/04a42ba466f637bc1bdf9a67deb3e15a/pass-fields-layout-generic-pass%402x.png) | ![An illustration showing a generic pass layout option with a combined secondary and auxiliary section and a square barcode.](https://docs-assets.developer.apple.com/published/67f2ccba4d6fc356394ba6b995efff67/pass-fields-layout-poster-generic%402x.png) |
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A generic pass can have up to three header fields, a single primary field, a thumbnail field, and up to four secondary and auxiliary fields combined. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -127,9 +125,9 @@ The following example shows a `pass.json` file with the `generic` pass style and
 
 #### Provide Scannable Codes
 
-Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
+Passes can work with Near Field Communication (NFC) readers and barcodes type. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
-Alternatively, passes can use scannable barcodes to convey information. Wallet supports 2D barcodes using QR, Aztec, and PDF417 formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
+Alternatively, passes can use scannable barcodes to convey information. Wallet supports QR, PDF417, Aztec, Code128, Code 39, Codabar, EAN-13, and Interleaved 2 of 5 (ITF) barcode formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
 
 For more information on barcodes, see [`Pass.Barcodes`](pass/barcodes-data.dictionary.md) and the [`Add to Apple Wallet Guidelines`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
 

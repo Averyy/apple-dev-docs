@@ -6,7 +6,7 @@
 Padding of the text block: space surrounding the content area extending to the border.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

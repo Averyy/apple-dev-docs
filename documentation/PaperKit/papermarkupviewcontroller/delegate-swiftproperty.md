@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The delegate for responding to user actions.
+The delegate for responding to a person’s actions.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,12 @@ The delegate for responding to user actions.
 @MainActor
 @preconcurrency weak var delegate: (any PaperMarkupViewController.Delegate)? { get set }
 ```
+
+## See Also
+
+- [PaperMarkupViewController.Delegate](papermarkupviewcontroller/delegate-swift.protocol.md)
+  The interface for responding to interactions in a markup view controller.
+- [var undoManager: UndoManager?](papermarkupviewcontroller/undomanager.md)
 
 
 ---

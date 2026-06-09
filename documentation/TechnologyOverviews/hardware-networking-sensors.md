@@ -8,15 +8,9 @@ Sensors and hardware help you create software that connects people to the real w
 
 Access the hardware for a device using system frameworks, which insulate you from device- or hardware-specific details. The system frameworks give you access to the features you want while minimizing your code’s impact on battery life, system performance, and other apps. The frameworks also help the device owner protect their personal data, keeping them informed of which apps use that data and giving them controls to manage that access.
 
-#### Device Sensors
-
 Sensor hardware provides information about the physical state of a device or its surrounding environment. Use sensor-related data as direct input to your app, or as additional context for your app to use when generating content. For example:
 
-#### Networking and Communication
-
 Devices access local networks and the Internet using hardware such as Wi-Fi, cellular, Bluetooth, or Ethernet. The system frameworks you use to connect to the Internet let you focus on the tasks you want to perform more than the network connection itself. Use these frameworks to browse the web or fetch resources, communicate with your company’s RESTful endpoints, or implement voice or video conversation tools. For example:
-
-#### Hardware Level Interactions
 
 Developers occasionally need to work more closely with Apple silicon or the underlying hardware. Discover connected hardware accessories and communicate with them using the built-in device drivers. Create custom drivers to support the features unique to your company’s accessories, and optimize your code for Apple silicon to take maximum advantage of the available hardware. For example:
 

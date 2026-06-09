@@ -8,6 +8,7 @@ Requests that the session should start detecting the object in the center of the
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

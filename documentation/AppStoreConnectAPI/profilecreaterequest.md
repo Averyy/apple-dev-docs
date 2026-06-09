@@ -27,12 +27,13 @@ object ProfileCreateRequest
 ## See Also
 
 - [object Profile](profile.md)
-  The data structure that represents a Profiles resource.
+  A provisioning profile that authorizes specific devices to run an app during development or distribution.
 - [object ProfileResponse](profileresponse.md)
-  A response that contains a single Profiles resource.
+  The response body for endpoints that create or read a single provisioning profile.
 - [object ProfilesResponse](profilesresponse.md)
-  A response that contains a list of Profiles resources.
+  The response body for endpoints that list provisioning profiles.
 - [object ProfilesWithoutIncludesResponse](profileswithoutincludesresponse.md)
+  A response containing a list of provisioning profiles, without related resources.
 - [object ProfileBundleIdLinkageResponse](profilebundleidlinkageresponse.md)
 - [object ProfileCertificatesLinkagesResponse](profilecertificateslinkagesresponse.md)
 - [object ProfileDevicesLinkagesResponse](profiledeviceslinkagesresponse.md)

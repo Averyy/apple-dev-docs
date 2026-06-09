@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when the user starts drawing.
+Tells the delegate when a person begins drawing.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,16 @@ func paperMarkupViewControllerDidBeginDrawing(_ paperMarkupViewController: Paper
 
 ## Parameters
 
-- `paperMarkupViewController`: The `PaperMarkupViewController` the user is interacting with.
+- `paperMarkupViewController`: The `PaperMarkupViewController` the person is interacting with.
+
+## See Also
+
+- [func paperMarkupViewControllerDidChangeMarkup(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:).md)
+  Tells the delegate when the markup changes.
+- [func paperMarkupViewControllerDidChangeSelection(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:).md)
+  Tells the delegate when the selection changes.
+- [func paperMarkupViewControllerDidChangeContentVisibleFrame(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangecontentvisibleframe(_:).md)
+  Tells the delegate when a person scrolls or zooms the content.
 
 
 ---

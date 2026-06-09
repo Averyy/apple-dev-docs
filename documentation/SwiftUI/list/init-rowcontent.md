@@ -17,14 +17,14 @@ Creates a list that computes its rows on demand from an underlying collection of
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init<Data, RowContent>(_ data: Binding<Data>, @ViewBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<LazyMapSequence<Data.Indices, (Data.Index, Data.Element.ID)>, Data.Element.ID, RowContent>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable, Data.Index : Hashable
+nonisolated
+init<Data, RowContent>(_ data: Binding<Data>, @ContentBuilder rowContent: @escaping (Binding<Data.Element>) -> RowContent) where Content == ForEach<LazyMapSequence<Data.Indices, (Data.Index, Data.Element.ID)>, Data.Element.ID, RowContent>, Data : MutableCollection, Data : RandomAccessCollection, RowContent : View, Data.Element : Identifiable, Data.Index : Hashable
 ```
 
 ## Parameters
 
 - `data`: A collection of identifiable data for computing the list.
-- `rowContent`: A view builder that creates the view for a single row of the list.
+- `rowContent`: A content builder that creates the view for a single row of the list.
 
 ## See Also
 

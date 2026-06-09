@@ -6,7 +6,7 @@
 Sets the color of all borders of the text block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -30,8 +30,6 @@ This setting has no visible effect unless the border width is larger than the de
   The background color of the text block.
 - [func setBorderColor(NSColor?, for: NSRectEdge)](nstextblock/setbordercolor(_:for:).md)
   Sets the border color of the specified edge of the text block.
-- [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:).md)
-  Returns the border color of the specified text block edge.
 
 
 ---

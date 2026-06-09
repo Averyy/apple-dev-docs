@@ -37,6 +37,9 @@ Create a [`WKWebpagePreferences`](wkwebpagepreferences.md) object when you want 
 - [var isLockdownModeEnabled: Bool](wkwebpagepreferences/islockdownmodeenabled.md)
   A Boolean value that indicates whether to use Lockdown Mode in the web view.
 ### Instance Properties
+- [var allowsJSHandleCreationInPageWorld: Bool](wkwebpagepreferences/allowsjshandlecreationinpageworld.md)
+- [var alternateRequest: URLRequest?](wkwebpagepreferences/alternaterequest.md)
+- [var overrideReferrer: String?](wkwebpagepreferences/overridereferrer.md)
 - [var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/preferredhttpsnavigationpolicy.md)
 - [var securityRestrictionMode: WKSecurityRestrictionMode](wkwebpagepreferences/securityrestrictionmode.md)
 ### Enumerations

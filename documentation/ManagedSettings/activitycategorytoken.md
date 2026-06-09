@@ -9,7 +9,6 @@ A token that represents a category of app or website activity.
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst ?+
-- visionOS 1.0+
 
 ## Declaration
 

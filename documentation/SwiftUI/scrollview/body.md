@@ -17,8 +17,8 @@ The content and behavior of the scroll view.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var body: some View { get }
+nonisolated
+var body: some View { get }
 ```
 
 

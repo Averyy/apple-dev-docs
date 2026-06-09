@@ -11,7 +11,7 @@ The official abbreviation for the state or area.
 ## Declaration
 
 ```swift
-administrativeAreaCode?: string;
+administrativeAreaCode: string | null;
 ```
 
 #### Discussion

@@ -136,9 +136,9 @@ When you make a request to the model, you can provide custom tools to help the m
 
 The *context window size* is a limit on how much data the model can process for a session instance. A token is a chunk of text the model processes, and the system model supports up to 4,096 tokens. A single token corresponds to three or four characters in languages like English, Spanish, or German, and one token per character in languages like Japanese, Chinese, or Korean. In a single session, the sum of all tokens in the instructions, all prompts, and all outputs count toward the context window size.
 
-If your session processes a large amount of tokens that exceed the context window, the framework throws the error [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md). When you encounter the error, start a new session and try shortening your prompts. If you need to process a large amount of data that won’t fit in a single context window limit, break your data into smaller chunks, process each chunk in a separate session, and then combine the results.
+If your session processes a large amount of tokens that exceed the context window, the framework throws the error [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md). When you encounter the error, remove entries from the transcript and try again. If you need to process a large amount of data that won’t fit in a single context window limit, break your data into smaller chunks, process each chunk in a separate session, and then combine the results.
 
-For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
 #### Tune Generation Options and Optimize Performance
 
@@ -146,7 +146,7 @@ To get the best results for your prompt, experiment with different generation op
 
 ```swift
 // Customize the temperature to increase creativity.
-let options = GenerationOptions(temperature: 2.0)
+let options = GenerationOptions(temperature: 1.0)
 
 let session = LanguageModelSession()
 
@@ -165,8 +165,6 @@ When you test apps that use the framework, use Xcode Instruments to understand m
   Learn about important changes to Foundation Models.
 - [Adding intelligent app features with generative models](adding-intelligent-app-features-with-generative-models.md)
   Build robust apps with guided generation and tool calling by adopting the Foundation Models framework.
-- [class SystemLanguageModel](systemlanguagemodel.md)
-  An on-device large language model capable of text generation tasks.
 
 
 ---

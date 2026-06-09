@@ -11,7 +11,7 @@ Indicates that the local peer began receiving a resource from a nearby peer.
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
 - macOS 10.10+
-- tvOS 9.0+
+- tvOS 10.0+
 - visionOS 1.0+
 
 ## Declaration

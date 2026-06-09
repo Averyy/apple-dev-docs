@@ -12,9 +12,9 @@ Returns the image URL of the map feature.
 
 ```swift
 getImageUrl(
-        scale: number | undefined,
-        callback: (url?: string) => void,
-    ): void;
+    scale: number | undefined,
+    callback: (url: string | null) => void,
+): void;
 ```
 
 #### Discussion

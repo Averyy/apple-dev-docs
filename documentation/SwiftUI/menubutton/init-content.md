@@ -12,7 +12,7 @@ Creates a menu button with the specified localized title and content.
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 ```
 
 ## See Also

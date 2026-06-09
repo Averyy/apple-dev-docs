@@ -12,7 +12,7 @@ A map region that provides a hint about the geographic area to search.
 
 ```swift
 get region(): CoordinateRegion | null;
-set region(value: CoordinateRegion | null);
+set region(value: CoordinateRegionData | null);
 ```
 
 #### Discussion

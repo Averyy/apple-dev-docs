@@ -15,6 +15,13 @@ Returns a new view that arranges to call `action(value)` whenever the value comp
 @preconcurrency func onGeometryChange3D<T>(for type: T.Type, of transform: @escaping (GeometryProxy3D) -> T, action: @escaping (T) -> Void) -> some View where T : Equatable
 ```
 
+## See Also
+
+- [func onGeometryChange(for:of:action:)](view/ongeometrychange(for:of:action:).md)
+  Adds an action to be performed when a value, created from a geometry proxy, changes.
+- [func onInteractiveResizeChange((Bool) -> Void) -> some View](view/oninteractiveresizechange(_:).md)
+  Adds an action to perform when the enclosing window is being interactively resized.
+
 
 ---
 

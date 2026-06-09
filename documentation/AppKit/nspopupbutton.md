@@ -106,6 +106,8 @@ Note that while a menu is tracking user input, programmatic changes to the menu,
   Posted when an `NSPopUpButton` object receives a mouse-down event—that is, when the user is about to select an item from the menu.
 ### Instance Methods
 - [func selectedTag() -> Int](nspopupbutton/selectedtag.md)
+### Structures
+- [NSPopUpButton.WillPopUpMessage](nspopupbutton/willpopupmessage.md)
 ### Initializers
 - [convenience init(image: NSImage, pullDownMenu: NSMenu)](nspopupbutton/init(image:pulldownmenu:).md)
   Creates a standard pull-down button with a title, optional image, and menu.

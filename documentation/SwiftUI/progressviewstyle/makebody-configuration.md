@@ -18,7 +18,7 @@ Creates a view representing the body of a progress view.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 

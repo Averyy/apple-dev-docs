@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a app resource.
+The type and ID of a related Game Center app version resource.
 
 **Availability**:
 - App Store Connect API 3.0+

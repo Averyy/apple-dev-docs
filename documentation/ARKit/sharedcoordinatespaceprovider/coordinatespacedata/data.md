@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: property
 
-Extract a `Data` object to be transported over network.
+Extract a `Data` object.
 
 **Availability**:
 - visionOS 26.0+

@@ -10,8 +10,6 @@ Prompt the user to share their screen using AirPlay Mirroring.
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -24,10 +22,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS |
-| Required access right | NA |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -84,7 +82,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#RequestMirroringCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

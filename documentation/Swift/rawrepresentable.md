@@ -170,6 +170,7 @@ print(allowedMoves.rawValue & Directions.right.rawValue)
 - [var codingKey: any CodingKey](rawrepresentable/codingkey-2f0gm.md)
 - [var codingKey: any CodingKey](rawrepresentable/codingkey-xnw1.md)
 - [var hashValue: Int](rawrepresentable/hashvalue.md)
+- [var rawAttachmentValueRepresentation: CVAttachmentRawValue](rawrepresentable/rawattachmentvaluerepresentation.md)
 ### Instance Methods
 - [func encode(to: any Encoder) throws](rawrepresentable/encode(to:)-172ut.md)
   Encodes this value into the given encoder, when the type’s `RawValue` is `Int128`.
@@ -190,6 +191,7 @@ print(allowedMoves.rawValue & Directions.right.rawValue)
   Destroys a value of `Self` and prepares an `AtomicOptionalRepresentation` storage type to be used for atomic operations on `Optional`.
 - [static func encodeAtomicRepresentation(consuming Self) -> Self.RawValue.AtomicRepresentation](rawrepresentable/encodeatomicrepresentation(_:).md)
   Destroys a value of `Self` and prepares an `AtomicRepresentation` storage type to be used for atomic operations.
+- [static func makeFromRawAttachmentValue(CVAttachmentRawValue) -> Self?](rawrepresentable/makefromrawattachmentvalue(_:).md)
 
 ## Relationships
 

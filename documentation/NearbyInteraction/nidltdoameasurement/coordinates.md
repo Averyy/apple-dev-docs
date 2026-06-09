@@ -25,7 +25,11 @@ The measurement’s [`coordinatesType`](nidltdoameasurement/coordinatestype.md) 
 - [var coordinatesType: NIDLTDOACoordinatesType](nidltdoameasurement/coordinatestype.md)
   The type of coordinate system that the measurement conforms to.
 - [var signalStrength: Double](nidltdoameasurement/signalstrength.md)
-  A value that represents the signal strength, in dBm, to the anchor that provides the measurement.
+  A value that represents the received signal strength, in dBm, from the anchor that provides the measurement.
+- [var floorElevation: NIDLTDOAMeasurement.FloorElevation?](nidltdoameasurement/floorelevation-swift.property.md)
+  The floor elevation information for the anchor, if available.
+- [NIDLTDOAMeasurement.FloorElevation](nidltdoameasurement/floorelevation-swift.class.md)
+  An object that describes how high off the ground DL-TDOA anchors reside in the environment.
 
 
 ---

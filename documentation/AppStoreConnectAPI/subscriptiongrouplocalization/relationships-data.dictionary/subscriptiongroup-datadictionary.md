@@ -16,6 +16,7 @@ object SubscriptionGroupLocalization.Relationships.SubscriptionGroup
 
 ### Objects
 - [object SubscriptionGroupLocalization.Relationships.SubscriptionGroup.Data](subscriptiongrouplocalization/relationships-data.dictionary/subscriptiongroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription group localization.
 
 ## Properties
 

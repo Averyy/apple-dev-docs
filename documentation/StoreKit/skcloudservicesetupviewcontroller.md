@@ -60,6 +60,8 @@ For information about other capabilities that you can enable by using this view 
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)

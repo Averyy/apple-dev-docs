@@ -36,7 +36,7 @@ The axes are defined as: • X axes determines the horizontal direction of pixel
 
 It computes corresponding binocular view relative to views, for defined transforms and projection matrix.
 
-To avoid false positives during culling, transform should have broader tangents and depth range compared to one will be used for rendering. As the the time performing culling becomes more distant from `presentation time`, renderer should request for wider tangents/depth.
+To avoid false positives during culling, transform should have broader tangents and depth range compared to one will be used for rendering. As the time performing culling becomes more distant from `presentation time`, renderer should request for wider tangents/depth.
 
 `drawableTargetViewCount` for given target should be more than 1 view.
 

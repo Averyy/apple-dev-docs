@@ -11,7 +11,7 @@ Creates a style that renders a gradient along the length of a line.
 ## Declaration
 
 ```swift
-constructor(colorStops?: { [key: number]: string });
+constructor(colorStops?: Record<number, string>);
 ```
 
 #### Discussion

@@ -22,7 +22,7 @@ struct ScrollPosition
 
 #### Overview
 
-Use this type along with the `View/scrollPosition(_:)` modifier to control where a scroll view is positioned. You can use this type to scroll in a variety of ways:
+Use this type along with the [`scrollPosition(_:anchor:)`](view/scrollposition(_:anchor:).md) modifier to control where a scroll view is positioned. You can use this type to scroll in a variety of ways:
 
 - scroll to a view with a provided identity
 - scroll to a concrete offset
@@ -34,7 +34,7 @@ You can create a scroll position with a specified view identity type
 @State private var position = ScrollPosition(idType: MyItem.ID.self)
 ```
 
-SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the `View/scrollTargetLayout()` modifier to configure which layout contains your scroll targets.
+SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which layout contains your scroll targets.
 
 When scrolling to a view with an identifier, SwiftUI will update the position with the value of the top-most view scrolled within the visible region of the scroll view.
 
@@ -53,7 +53,7 @@ ScrollView {
     }
     .scrollTargetLayout()
 }
-.scrollPosition($scrolledID)
+.scrollPosition($position)
 ```
 
 You can then query the currently scrolled id by using the [`viewID(type:)`](scrollposition/viewid(type:).md).
@@ -94,7 +94,7 @@ ScrollView {
     }
     .scrollTargetLayout()
 }
-.scrollPosition($scrolledID, anchor: .bottom)
+.scrollPosition($position, anchor: .bottom)
 ```
 
 For example, providing a value of [`bottom`](unitpoint/bottom.md) will prefer to have the bottom-most view chosen and prefer to scroll to views aligned to the bottom.
@@ -150,9 +150,7 @@ If no anchor has been provided, SwiftUI will scroll the minimal amount when usin
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

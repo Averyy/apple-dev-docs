@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a leaderboard.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -16,6 +18,7 @@ object GameCenterLeaderboardImageUpdateRequest.Data
 
 ### Objects
 - [object GameCenterLeaderboardImageUpdateRequest.Data.Attributes](gamecenterleaderboardimageupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a leaderboard resource.
 
 ## Properties
 

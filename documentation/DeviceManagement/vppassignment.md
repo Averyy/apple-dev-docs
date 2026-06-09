@@ -6,8 +6,7 @@
 An assignment’s properties and their values.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.1+
 
 ## Declaration
 

@@ -9,12 +9,13 @@
 ## Declaration
 
 ```swift
+@preconcurrency
 enum ReversedReason
 ```
 
 ## Topics
 
-### Enumeration Cases
+### Reasons
 - [AVExperienceController.TransitionContext.ReversedReason.invalidConfiguration](avexperiencecontroller/transitioncontext/reversedreason/invalidconfiguration.md)
   A transition could not be completed because some required configuration was unavailable.
 - [AVExperienceController.TransitionContext.ReversedReason.invalidExperience](avexperiencecontroller/transitioncontext/reversedreason/invalidexperience.md)
@@ -29,10 +30,18 @@ enum ReversedReason
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [AVExperienceController.TransitionContext.Status](avexperiencecontroller/transitioncontext/status-swift.enum.md)
+  Describes the status of a transition.
+- [AVExperienceController.TransitionContext.TransitionResult](avexperiencecontroller/transitioncontext/transitionresult.md)
+  Describes the result of a transition.
 
 
 ---

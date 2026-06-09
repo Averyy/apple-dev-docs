@@ -9,7 +9,7 @@ Asks the delegate for the estimated height of a row in a specified location.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

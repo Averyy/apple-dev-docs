@@ -1,4 +1,4 @@
-# Delete a Beta App Localization
+# Delete a beta app localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ Delete a beta app localization associated with an app.
 
 ## See Also
 
-- [Create a Beta App Localization](post-v1-betaapplocalizations.md)
+- [Create a beta app localization](post-v1-betaapplocalizations.md)
   Create localized descriptive information for an app.
-- [Modify a Beta App Localization](patch-v1-betaapplocalizations-_id_.md)
+- [Modify a beta app localization](patch-v1-betaapplocalizations-_id_.md)
   Update the localized information for a specific beta app and locale.
 
 

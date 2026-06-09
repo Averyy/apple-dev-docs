@@ -9,7 +9,6 @@ Returns an electricity venue for the given venue identifier.
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

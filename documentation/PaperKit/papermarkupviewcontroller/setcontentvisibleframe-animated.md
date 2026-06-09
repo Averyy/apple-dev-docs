@@ -26,6 +26,17 @@ Zooms to a specific area of the content so that it’s visible in the scroll vie
 
 This method scrolls the content so that the area defined by rect is just visible. If the area is already visible, the method does nothing.
 
+## See Also
+
+- [var scrollConfiguration: PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.property.md)
+  The configuration object that provides access to scroll view functionality.
+- [PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.class.md)
+  A cross-platform type that provides access to scroll view functionality.
+- [var contentVisibleFrame: CGRect](papermarkupviewcontroller/contentvisibleframe.md)
+  The visible area of content in the scroll view.
+- [var zoomRange: ClosedRange<CGFloat>](papermarkupviewcontroller/zoomrange.md)
+  A floating-point range that specifies the minimum and maximum scale factor that can apply to the canvas’ content.
+
 
 ---
 

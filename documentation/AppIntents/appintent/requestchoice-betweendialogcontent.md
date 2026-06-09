@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: method
 
-Pauses the app intent to request a person to choose from several options.
+Pauses the app intent, asks the person to choose from the specified options, and provides additional content related to those options.
 
 **Availability**:
 - iOS 26.0+
@@ -22,21 +22,26 @@ func requestChoice<Content>(between options: [IntentChoiceOption], dialog: Inten
 
 #### Return Value
 
-The value that represents the person’s selection.
+The option the person chose.
 
 #### Discussion
 
-Call this method in your app intent’s [`perform()`](appintent/perform().md) method when you need a person to confirm an action, disambiguate between possibilities, or select a specific variation of the intent’s behavior before proceeding.
+> **Note**: An error if the person chooses a cancel option from the interface.
 
-The system presents a standard interface — for example, a modal sheet or alert — using the provided `dialog`, the `content` view for context, and buttons for each [`IntentChoiceOption`](intentchoiceoption.md). The app intent’s execution resumes only after the person selects an option.
-
-> **Note**: An error if the person explicitly cancels the app intent; for example, if they use a system-provided cancel button or gesture, or by selecting an option you create using [`cancel`](intentchoiceoption/cancel.md).
+Call this method from the [`perform()`](appintent/perform().md) method of your app intent when you need someone to confirm an action, disambiguate from a set of possibilities, or select an intent-specific behavior before proceeding. The system displays a standard interface with the provided set of options and asks the person to choose one. When someone makes a selection, the method returns the option and your app intent continues to run. This method throws an error if someone cancels the request using a cancel button, a [`cancel`](intentchoiceoption/cancel.md) option, or a system-provided gesture.
 
 ## Parameters
 
-- `options`: An array of options to choose from. The order of options in this array determines the order of options in the UI, excluding the option to cancel the choice. The system automatically handles the placement of the cancel option according to platform conventions.
-- `dialog`: Instructional text or a question to help the person to choose an option.
-- `content`: A closure that provides a view that appears next to options, offering visual context that’s relevant to the decision; for example, the closure could show a preview of data.
+- `options`: The options to choose from. The prompt displays the options in the same order they appear in the array, with one exception. If the list includes the [`cancel`](intentchoiceoption/cancel.md) option, the system places that option according to the platform’s conventions.
+- `dialog`: The localized text you want the system to display or speak. Provide instructional text or a question to help the person choose an option.
+- `content`: A closure that returns the view to display with the prompt. Use this closure to return a view with information to help someone make a decision.
+
+## See Also
+
+- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:).md)
+  Pauses the app intent and asks the person to choose an option from the specified list.
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:view:).md)
+  Pauses the app intent, asks the person to choose from the specified options, and provides a view with additional data.
 
 
 ---

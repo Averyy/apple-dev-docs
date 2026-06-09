@@ -76,14 +76,14 @@ https://api.appstoreconnect.apple.com/v1/gameCenterAchievementLocalizations/ca32
   Get a list of image resource IDs for a specific Game Center achievement localization.
 - [List All Localizations for an Achievement](get-v1-gamecenterachievements-_id_-localizations.md)
   Read information about the release for specific achievement.
-- [GET /v1/gameCenterAchievements/{id}/relationships/localizations](get-v1-gamecenterachievements-_id_-relationships-localizations.md)
+- [List localization IDs for a Game Center achievement](get-v1-gamecenterachievements-_id_-relationships-localizations.md)
 - [Read the Achievement Localization Information](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievement.md)
   Read the achievement associated with specific localized information.
-- [Read the Achievement ID for a Localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
+- [Read the achievement id for a  localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievement.md)
   Read the achievement ID associated with specific localized information.
 - [Read the Image for a Specific Achievement Localization](get-v1-gamecenterachievementlocalizations-_id_-gamecenterachievementimage.md)
   Read the achievement image associated with specific localized information.
-- [GET /v1/gameCenterAchievementLocalizations/{id}/relationships/gameCenterAchievementImage](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
+- [Get the achievement image ID for a Game Center achievement localization](get-v1-gamecenterachievementlocalizations-_id_-relationships-gamecenterachievementimage.md)
 
 
 ---

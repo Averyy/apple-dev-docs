@@ -11,7 +11,7 @@ An event object that the map object dispatches when someone selects or deselects
 ## Declaration
 
 ```swift
-class MapAnnotationSelectionEvent extends MapKitEvent
+class MapAnnotationSelectionEvent extends Event
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ The [`Map`](map.md) dispatches a [`MapAnnotationSelectionEvent`](mapannotationse
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

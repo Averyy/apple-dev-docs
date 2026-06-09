@@ -13,8 +13,6 @@ A test status item for a string.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -34,6 +32,16 @@ object StatusTestStringValue
 | Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+
+##### Status Item Example
+
+```json
+{
+    "test": {
+        "string-value": "example-string-value"
+    }
+}
+```
 
 ## Properties
 

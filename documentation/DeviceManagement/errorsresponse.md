@@ -6,8 +6,7 @@
 The collection of errors that occurred while processing the request.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 
@@ -21,7 +20,14 @@ object ErrorsResponse
 
 ## See Also
 
-- [object GenresResponse](genresresponse.md)
+- [object ResourceCollectionResponse](resourcecollectionresponse.md)
+  A response that contains the resource objects for the request.
+- [object ResultsResponse](resultsresponse.md)
+  A response that contains the resource objects for the request.
+- [object AppsResponse](appsresponse.md)
+  A response that contains the resource objects for the request.
+- [object BooksResponse](booksresponse.md)
+  A response that contains the resource objects for the request.
 - [object UnauthorizedResponse](unauthorizedresponse.md)
   A response that indicates an incorrect authorization header.
 

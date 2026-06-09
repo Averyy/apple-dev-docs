@@ -16,6 +16,7 @@ object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion
 
 ### Objects
 - [object ReviewSubmissionItem.Relationships.AppCustomProductPageVersion.Data](reviewsubmissionitem/relationships-data.dictionary/appcustomproductpageversion-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a review submission item.
 
 ## Properties
 

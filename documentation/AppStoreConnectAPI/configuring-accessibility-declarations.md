@@ -32,7 +32,7 @@ This table shows the compatibility for each accessibility feature and platform:
 | --- | --- | --- | --- | --- | --- | --- |
 | VoiceOver | `supportsVoiceover` | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Voice Control | `supportsVoiceControl` | ✔ |  | ✔ | ✔ |  |
-| Larger Text | `supportsLargerText` | ✔ |  |  | ✔ | ✔ |
+| Larger Text | `supportsLargerText` | ✔ | ✔ |  | ✔ | ✔ |
 | Sufficient Contrast | `supportsSufficientContrast` | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Dark Interface | `supportsDarkInterface` | ✔ | ✔ | ✔ | ✔ | ✔ |
 | Differentiate Without Color Alone | `supportsDifferentiateWithoutColorAlone` | ✔ | ✔ | ✔ | ✔ | ✔ |

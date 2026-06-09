@@ -11,6 +11,7 @@ Creates an inset table style with optional alternating row backgrounds.
 ## Declaration
 
 ```swift
+nonisolated
 init(alternatesRowBackgrounds: Bool)
 ```
 

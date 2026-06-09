@@ -5,13 +5,9 @@
 
 The endpoint for fetching a management declaration.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#declaration-management-identifier`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Parameters
 

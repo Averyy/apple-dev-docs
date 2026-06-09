@@ -28,15 +28,6 @@ FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](fsvo
 - `options`: Options to apply to the deactivation.
 - `reply`: A block or closure to indicate success or failure. If activation fails, pass an error as the one parameter to the reply handler. If activation succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
-## See Also
-
-- [func activate(options: FSTaskOptions, replyHandler: (FSItem?, (any Error)?) -> Void)](fsvolume/operations/activate(options:replyhandler:).md)
-  Activates the volume using the specified options.
-- [class FSItem](fsitem.md)
-  A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
-- [struct FSDeactivateOptions](fsdeactivateoptions.md)
-  Options that affect the behavior of deactivate methods.
-
 
 ---
 

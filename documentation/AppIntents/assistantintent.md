@@ -22,7 +22,7 @@ protocol AssistantIntent : AppIntent
 
 #### Overview
 
-Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro to meet requirements for making your [`AppIntent`](appintent.md) available to Siri.
+Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)`](assistantintent(schema:).md) macro to meet requirements for making your [`AppIntent`](appintent.md) discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 
@@ -36,13 +36,15 @@ Don’t adopt this protocol directly, instead use the [`AssistantIntent(schema:)
 
 ## See Also
 
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [protocol AssistantEntity](assistantentity.md)
-  An app entity that Siri can access to fulfill a person’s request.
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
 - [protocol AssistantEnum](assistantenum.md)
-  A value that Siri uses to fulfill a person’s request.
+  A value that Apple Intelligence and Siri use to fulfill a person’s request.
+- [protocol AssistantEntity](assistantentity.md)
+  An app entity that Apple Intelligence can discover to fulfill a person’s request.
 - [protocol AssistantSchemaEnum](assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](assistantschemaintent.md)
+- [struct AssistantSchema](assistantschema.md)
+- [enum AssistantSchemas](assistantschemas.md)
 
 
 ---

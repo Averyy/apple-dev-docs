@@ -1,4 +1,4 @@
-# List All Icons for a Build
+# List all icons for a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

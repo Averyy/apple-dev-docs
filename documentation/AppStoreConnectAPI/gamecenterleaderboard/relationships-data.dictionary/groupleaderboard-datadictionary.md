@@ -16,6 +16,7 @@ object GameCenterLeaderboard.Relationships.GroupLeaderboard
 
 ### Objects
 - [object GameCenterLeaderboard.Relationships.GroupLeaderboard.Data](gamecenterleaderboard/relationships-data.dictionary/groupleaderboard-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a leaderboard.
 
 ## Properties
 

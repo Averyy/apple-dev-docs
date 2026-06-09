@@ -25,12 +25,12 @@ For more information about how to use leaderboards in your app, see [`Configure 
   Read the group leadboard to which a leaderboard belongs.
 - [List All Localizations for a Leaderboard](get-v1-gamecenterleaderboards-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
-- [List All Groups to Which a Leaderboard Belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [List localization IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
+- [List all groups to which a leaderboard belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
 - [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 ### Creating, modifying, and deleting leaderboards
 - [Create a Game Center Leaderboard](post-v2-gamecenterleaderboards.md)
   Create a Game Center leaderboard.
@@ -48,8 +48,8 @@ For more information about how to use leaderboards in your app, see [`Configure 
   Modify the details of a leaderboard.
 - [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Modify the activity for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the challenge for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
 - [Delete a Leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 ### Objects and types
@@ -72,13 +72,13 @@ For more information about how to use leaderboards in your app, see [`Configure 
 - [object GameCenterLeaderboardUpdateRequest](gamecenterleaderboardupdaterequest.md)
   The request body you use to update a leaderboard.
 - [object GameCenterLeaderboardsResponse](gamecenterleaderboardsresponse.md)
-  A response that contains multiple leaderboard resources.
+  The response body for endpoints that list Game Center leaderboards.
 - [object GameCenterLeaderboard](gamecenterleaderboard.md)
   The data structure that represent a leaderboard resource.
 - [object GameCenterLeaderboardCreateRequest](gamecenterleaderboardcreaterequest.md)
   The request body you use to create a leaderboard.
 - [object GameCenterLeaderboardResponse](gamecenterleaderboardresponse.md)
-  A response that contains a single leaderboard image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](gamecenterleaderboardgroupleaderboardlinkageresponse.md)
@@ -88,6 +88,7 @@ For more information about how to use leaderboards in your app, see [`Configure 
 - [type GameCenterLeaderboardFormatter](gamecenterleaderboardformatter.md)
   The values you can select to describe the format of a leaderboard.
 - [object StringToStringMap](stringtostringmap.md)
+  A dictionary object mapping arbitrary string keys to string values, used for flexible key-value metadata.
 
 ## See Also
 

@@ -12,8 +12,7 @@ boolean hasInvitedPlayersOnSameTeam(array[object] $teams, array[object] $players
 
 ##### Parameters
 
-- **`teams`**: The teams in the rule set. Pass the `teams` array that’s available in team rule expressions.
-- **`players`**: The players that the rule applies to. Pass the `players` array that’s available in team rule expressions.
+-`teams`: The teams in the rule set. Pass the `teams` array that’s available in team rule expressions. -`players`: The players that the rule applies to. Pass the `players` array that’s available in team rule expressions.
 
 ##### Return Value
 

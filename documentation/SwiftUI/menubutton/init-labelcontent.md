@@ -11,7 +11,8 @@ Creates a menu button with the specified label and content.
 ## Declaration
 
 ```swift
-init(label: Label, @ViewBuilder content: () -> Content)
+nonisolated
+init(label: Label, @ContentBuilder content: () -> Content)
 ```
 
 ## See Also

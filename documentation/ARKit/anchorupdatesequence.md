@@ -18,6 +18,9 @@ struct AnchorUpdateSequence<AnchorType> where AnchorType : Anchor
 
 ### Performing sequence operations
 - [AnchorUpdateSequence.Iterator](anchorupdatesequence/iterator.md)
+### Instance Methods
+- [func makeAsyncIterator() -> AnchorUpdateSequence<AnchorType>.Iterator<AnchorType>](anchorupdatesequence/makeasynciterator.md)
+  Creates an asynchronous iterator that produces `AnchorUpdate` elements on this asynchronous sequence.
 
 ## Relationships
 

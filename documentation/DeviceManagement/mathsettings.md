@@ -10,8 +10,6 @@ The declaration to configure the math and calculator apps.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,11 +26,12 @@ Specify `com.apple.configuration.math.settings` as the declaration type.
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Example
 
@@ -60,9 +59,9 @@ This configuration prevents the use of scientific and programmer modes in calcul
 
 ### Objects
 - [object MathSettingsCalculatorObject](mathsettingscalculatorobject.md)
-  The declaration to configure the calculator app.
+  If present, configures the built-in Calculator app.
 - [object MathSettingsSystemBehaviorObject](mathsettingssystembehaviorobject.md)
-  The declaration to configure math behavior at the system level.
+  If present, configures math behavior in the system.
 
 ## Properties
 
@@ -87,20 +86,20 @@ This configuration prevents the use of scientific and programmer modes in calcul
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

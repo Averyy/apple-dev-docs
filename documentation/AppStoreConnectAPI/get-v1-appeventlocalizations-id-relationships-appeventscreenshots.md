@@ -1,10 +1,10 @@
-# GET /v1/appEventLocalizations/{id}/relationships/appEventScreenshots
+# List app event screenshot IDs for an app event localization
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,13 +16,18 @@
 
 ## See Also
 
-- [GET /v1/appEventLocalizations/{id}](get-v1-appeventlocalizations-_id_.md)
-- [GET /v1/appEventLocalizations/{id}/appEventVideoClips](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
-- [GET /v1/appEventLocalizations/{id}/relationships/appEventVideoClips](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
-- [GET /v1/appEventLocalizations/{id}/appEventScreenshots](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
-- [PATCH /v1/appEventLocalizations/{id}](patch-v1-appeventlocalizations-_id_.md)
-- [POST /v1/appEventLocalizations](post-v1-appeventlocalizations.md)
-- [Delete an App Event Localization](delete-v1-appeventlocalizations-_id_.md)
+- [Read app event localization information](get-v1-appeventlocalizations-_id_.md)
+  Get information about a specific app event localization.
+- [List all video clips for an app event localization](get-v1-appeventlocalizations-_id_-appeventvideoclips.md)
+  Get a list of video clips for a specific app event localization.
+- [List app event video clip IDs for an app event localization](get-v1-appeventlocalizations-_id_-relationships-appeventvideoclips.md)
+- [List all screenshots for an app event localization](get-v1-appeventlocalizations-_id_-appeventscreenshots.md)
+  Get a list of screenshots for a specific app event localization.
+- [Modify an app event localization](patch-v1-appeventlocalizations-_id_.md)
+  Update the localized metadata for a specific in-app event.
+- [Create an app event localization](post-v1-appeventlocalizations.md)
+  Add a new localization for an in-app event.
+- [Delete an app event localization](delete-v1-appeventlocalizations-_id_.md)
   Delete localized metadata that you configured for an in-app event.
 
 

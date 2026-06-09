@@ -15,7 +15,7 @@ Creates an outline group from a binding to a collection of root data elements an
 ## Declaration
 
 ```swift
-init<C, E>(_ data: Binding<C>, children: WritableKeyPath<E, C?>, @ViewBuilder content: @escaping (Binding<E>) -> Leaf) where Data == Binding<C>, ID == E.ID, C : MutableCollection, C : RandomAccessCollection, E : Identifiable, E == C.Element
+init<C, E>(_ data: Binding<C>, children: WritableKeyPath<E, C?>, @ContentBuilder content: @escaping (Binding<E>) -> Leaf) where Data == Binding<C>, ID == E.ID, C : MutableCollection, C : RandomAccessCollection, E : Identifiable, E == C.Element
 ```
 
 #### Discussion
@@ -30,7 +30,7 @@ Make sure that the identifier of a data element only changes if you mean to repl
 
 - `data`: A collection of tree-structured, identified data.
 - `children`: A key path to a property whose non-`nil` value gives the children of `data`. A non-`nil` but empty value denotes an element capable of having children that’s currently childless, such as an empty directory in a file system. On the other hand, if the property at the key path is `nil`, then the outline group treats `data` as a leaf in the tree, like a regular file in a file system.
-- `content`: A view builder that produces a content view based on an element in `data`.
+- `content`: A content builder that produces a content view based on an element in `data`.
 
 ## See Also
 

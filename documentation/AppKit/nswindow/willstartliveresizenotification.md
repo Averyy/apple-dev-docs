@@ -20,6 +20,8 @@ The system sends this notification only once for a series of window resize opera
 
 The notification object is the `NSWindow` object that the user is about to live resize. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.WillStartLiveResizeMessage`](nswindow/willstartliveresizemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

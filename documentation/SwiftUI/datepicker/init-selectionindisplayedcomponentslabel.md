@@ -17,7 +17,7 @@ Creates an instance that selects a `Date` in a closed range.
 
 ```swift
 nonisolated
-init(selection: Binding<Date>, in range: ClosedRange<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ViewBuilder label: () -> Label)
+init(selection: Binding<Date>, in range: ClosedRange<Date>, displayedComponents: DatePicker<Label>.Components = [.hourAndMinute, .date], @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

@@ -8,6 +8,7 @@ The layout and configuration for a Live Activity that appears in the Dynamic Isl
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An identifier for a message about the available disk space getting low.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,10 @@
 ```swift
 static var lowDiskSpace: NotificationCenter.BaseMessageIdentifier<NSBundleResourceRequest.LowDiskSpaceMessage> { get }
 ```
+
+#### Discussion
+
+Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSBundleResourceRequest.LowDiskSpaceMessage`](nsbundleresourcerequest/lowdiskspacemessage.md).
 
 
 ---

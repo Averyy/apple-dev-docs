@@ -34,6 +34,8 @@ Use this property to coordinate a group experience among participating view cont
   A Boolean value that indicates whether to permit playback of 2D video content only.
 - [var experienceController: AVExperienceController](avplayerviewcontroller/experiencecontroller.md)
   The experience controller for this view controller.
+- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [class AVViewport](avviewport.md)
 
 
 ---

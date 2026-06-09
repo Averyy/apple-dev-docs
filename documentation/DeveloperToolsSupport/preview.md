@@ -56,6 +56,14 @@ Frameworks like SwiftUI and WidgetKit define initializers for this type, along w
 - [Preview.ViewTraits](preview/viewtraits.md)
   Traits that apply to previews of views and view controllers.
 ### Initializers
+- [init<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](preview/init(_:traits:arguments:body:)-1xqo1.md)
+  Creates a group of previews of a SwiftUI view.
+- [init<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview/init(_:traits:arguments:body:)-287km.md)
+- [init<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview/init(_:traits:arguments:body:)-3q0i9.md)
+- [init<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSViewController)](preview/init(_:traits:arguments:body:)-4ieth.md)
+  Creates a group of previews of an NSViewController.
+- [init<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSView)](preview/init(_:traits:arguments:body:)-5cb4o.md)
+  Creates a group of previews of an NSView.
 - [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIView)](preview/init(_:traits:body:)-3i54d.md)
 - [init(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> UIViewController)](preview/init(_:traits:body:)-941vb.md)
 - [init<Entry>(String?, widget: () -> some Widget, relevanceEntries: () async -> [Entry])](preview/init(_:widget:relevanceentries:).md)

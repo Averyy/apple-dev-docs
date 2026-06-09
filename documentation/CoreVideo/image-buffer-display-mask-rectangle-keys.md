@@ -50,6 +50,12 @@ Use [`kCVImageBufferDisplayMaskRectangleKey`](kcvimagebufferdisplaymaskrectangle
   Constants that indicate locations for chroma samples in the image buffer.
 - [Image Buffer Chroma Subsampling Constants](image-buffer-chroma-subsampling-constants.md)
   Constants that indicate the original format of subsampled data in the image buffer before conversion to 422/2vuy format.
+- [let kCVImageBufferDisplayMaskRectangleKey: CFString](kcvimagebufferdisplaymaskrectanglekey.md)
+  Specifies the rectangular display area within the image.
+- [let kCVImageBufferDisplayMaskRectangleStereoLeftKey: CFString](kcvimagebufferdisplaymaskrectanglestereoleftkey.md)
+  Specifies the rectangular display area within the left-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
+- [let kCVImageBufferDisplayMaskRectangleStereoRightKey: CFString](kcvimagebufferdisplaymaskrectanglestereorightkey.md)
+  Specifies the rectangular display area within the right-eye view of stereo images, using the same keys as `kCVImageBufferDisplayMaskRectangleKey`.
 
 
 ---

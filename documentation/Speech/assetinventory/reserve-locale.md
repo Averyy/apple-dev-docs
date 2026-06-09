@@ -30,6 +30,15 @@ If an asset that supports the input locale exists, adds that asset’s locale to
 
 > **Note**: An error if the number of locales would exceed [`maximumReservedLocales`](assetinventory/maximumreservedlocales.md) or if there is no asset that can support the locale.
 
+## See Also
+
+- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+  Removes an asset locale reservation.
+- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+  The app’s current asset locale reservations.
+- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+  The number of locale reservations permitted to an app.
+
 
 ---
 

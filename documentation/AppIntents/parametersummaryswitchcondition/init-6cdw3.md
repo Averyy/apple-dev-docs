@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Creates a `Switch` statement that branches based on union value parameter cases.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -17,6 +19,11 @@
 ```swift
 init(_ keyPath: KeyPath<Intent, IntentParameter<Value>>, @ParameterSummaryCaseBuilder<Intent, Value> _ builder: () -> CaseCondition)
 ```
+
+## Parameters
+
+- `keyPath`: Key path to the union value parameter
+- `builder`: A result builder that constructs the case conditions
 
 ## See Also
 

@@ -11,7 +11,7 @@ Returns a Boolean value indicating whether two coordinates are equal.
 ## Declaration
 
 ```swift
-equals(anotherCoordinate: Coordinate): boolean;
+equals(anotherCoordinate: CoordinateData): boolean;
 ```
 
 #### Return Value

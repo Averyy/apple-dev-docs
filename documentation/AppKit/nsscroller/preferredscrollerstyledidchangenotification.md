@@ -18,6 +18,8 @@ class let preferredScrollerStyleDidChangeNotification: NSNotification.Name
 
 For a full discussion, see [`preferredScrollerStyle`](nsscroller/preferredscrollerstyle.md).
 
+To observe this notification using Swift concurrency, use [`NSScroller.PreferredScrollerStyleDidChangeMessage`](nsscroller/preferredscrollerstyledidchangemessage.md).
+
 
 ---
 

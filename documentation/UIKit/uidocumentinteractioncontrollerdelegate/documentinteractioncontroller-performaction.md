@@ -6,6 +6,9 @@
 Called when a document interaction controller wants its delegate to perform a specified action with the associated document.
 
 **Availability**:
+- iOS 3.2+
+- iPadOS 3.2+
+- Mac Catalyst 3.2+
 - visionOS 1.0+
 
 ## Declaration

@@ -25,7 +25,7 @@ To use these features:
 
 1. Group your assets into asset packs containing manifest files that specify a download policy and other details. You can specify that the system downloads essential asset packs before launch, prefetches others without blocking launch, and downloads some only on demand when you need them. For more information, see [`Creating managed asset packs`](creating-managed-asset-packs.md).
 2. Add a managed Background Download extension to your project and configure your project accordingly. Optionally, customize your downloader extension and add code to your app that downloads on-demand assets when needed. For more information, see [`Downloading Apple-hosted asset packs`](downloading-apple-hosted-asset-packs.md).
-3. For either Apple-hosted or self-hosted asset packs, before you distribute your app, test your code using a local mock serve included in your Xcode install. For more information, see [`Testing asset packs locally`](testing-asset-packs-locally.md).
+3. For either Apple-hosted or self-hosted asset packs, before you distribute your app, test your code using a local mock server included in your Xcode install. For more information, see [`Testing asset packs locally`](testing-asset-packs-locally.md).
 4. For Apple-hosted assets, upload your asset packs to App Store Connect before you distribute your app through TestFlight or the App Store. For more information, see the [`Overview of Apple-hosted asset packs`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs) in App Store Connect Help.
 
 Alternatively, you can manage and host asset downloads yourself using the low-level Background Assets APIs. For more information, see [`Configuring an unmanaged Background Assets project`](configuring-an-unmanaged-background-assets-project.md) and [`Downloading essential assets in the background`](downloading-essential-assets-in-the-background.md).
@@ -41,11 +41,15 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   Configure your project and write the code to download asset packs hosted by Apple.
 - [Testing asset packs locally](testing-asset-packs-locally.md)
   Test your system-managed asset packs using a mock server on your Mac.
+- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
+  Improve peoples’ experience of your app by downloading only immediately needed language assets.
 ### Managed asset packs
 - [struct AssetPack](assetpack.md)
   An archive of assets that the system downloads together.
 - [actor AssetPackManager](assetpackmanager.md)
   An actor that manages asset packs.
+- [struct AssetPackManifest](assetpackmanifest.md)
+  A manifest of asset packs that are available to download.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
 - [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)
@@ -57,7 +61,7 @@ Alternatively, you can manage and host asset downloads yourself using the low-le
   A Boolean value that indicates whether you use Apple’s service to host your asset packs.
 ### Self-hosted unmanaged asset packs
 - [struct AssetPackManifest](assetpackmanifest.md)
-  A representation of a manifest that lists asset packs that are available to download.
+  A manifest of asset packs that are available to download.
 ### Unmanaged asset downloads
 - [Configuring an unmanaged Background Assets project](configuring-an-unmanaged-background-assets-project.md)
   Manage and download individual assets yourself by configuring your app and extension targets.

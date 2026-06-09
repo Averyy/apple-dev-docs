@@ -18,7 +18,7 @@ A view that doesn’t contain any content.
 
 ```swift
 @frozen
-struct EmptyView
+nonisolated struct EmptyView
 ```
 
 #### Overview
@@ -45,9 +45,15 @@ print("\(type(of:progressView))")
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [ChartContent](../Charts/ChartContent.md)
+- [Commands](commands.md)
 - [Copyable](../Swift/Copyable.md)
+- [CustomizableToolbarContent](customizabletoolbarcontent.md)
+- [Escapable](../Swift/Escapable.md)
+- [SceneAccessoryContent](sceneaccessorycontent.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [ToolbarContent](toolbarcontent.md)
 - [View](view.md)
 
 ## See Also

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The territory availability configuration for a subscription, specifying which App Store regions it’s offered in.
+
 **Availability**:
 - App Store Connect API 2.3+
 
@@ -16,7 +18,9 @@ object SubscriptionAvailability
 
 ### Objects
 - [object SubscriptionAvailability.Attributes](subscriptionavailability/attributes-data.dictionary.md)
+  Attributes that describe a subscription availability resource.
 - [object SubscriptionAvailability.Relationships](subscriptionavailability/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -29,7 +33,9 @@ object SubscriptionAvailability
 ## See Also
 
 - [object SubscriptionAvailabilityCreateRequest](subscriptionavailabilitycreaterequest.md)
+  The request body you use to create a subscription availability.
 - [object SubscriptionAvailabilityResponse](subscriptionavailabilityresponse.md)
+  A response containing a single territory availability configuration for a subscription.
 - [object SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse](subscriptionavailabilityavailableterritorieslinkagesresponse.md)
 
 

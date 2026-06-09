@@ -21,31 +21,15 @@ struct PowerThresholdAlert
 ## Topics
 
 ### Creating power threshold alerts
-- [static func power(Double, unit: UnitPower) -> Self](powerthresholdalert/power(_:unit:).md)
-  Returns a new power threshold alert for the target value.
 - [init(target: Measurement<UnitPower>)](powerthresholdalert/init(target:).md)
   Returns a new power threshold alert for the target measurement.
 ### Accessing alert data
-- [var metric: WorkoutAlertMetric](powerthresholdalert/metric.md)
-  The metric for the alert.
 - [var target: Measurement<UnitPower>](powerthresholdalert/target.md)
   The target measurement using power units.
 - [var targetQuantity: HKQuantity](powerthresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target power threshold.
-### Comparing alerts
-- [var hashValue: Int](powerthresholdalert/hashvalue.md)
-  The hashed value of the power threshold alert.
-- [func hash(into: inout Hasher)](powerthresholdalert/hash(into:).md)
-  Hashes the essential components of the power threshold alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](powerthresholdalert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two power threshold alerts aren’t equal.
-- [static func == (PowerThresholdAlert, PowerThresholdAlert) -> Bool](powerthresholdalert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two power threshold alerts are equal.
 ### Initializers
 - [init(target: Measurement<UnitPower>, metric: WorkoutAlertMetric)](powerthresholdalert/init(target:metric:).md)
-### Default Implementations
-- [Equatable Implementations](powerthresholdalert/equatable-implementations.md)
-- [WorkoutAlert Implementations](powerthresholdalert/workoutalert-implementations.md)
 
 ## Relationships
 

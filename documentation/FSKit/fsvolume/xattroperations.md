@@ -14,15 +14,13 @@ Methods and properties implemented by volumes that natively or partially support
 protocol XattrOperations : NSObjectProtocol
 ```
 
+#### Overview
+
+> **Note**:  Use [`FSVolume.XattrHandler`](fsvolume/xattrhandler.md)
+
 ## Topics
 
 ### Reading and writing
-- [func getXattr(named: FSFileName, of: FSItem, replyHandler: (Data?, (any Error)?) -> Void)](fsvolume/xattroperations/getxattr(named:of:replyhandler:).md)
-  Gets the specified extended attribute of the given item.
-- [func listXattrs(of: FSItem, replyHandler: ([FSFileName]?, (any Error)?) -> Void)](fsvolume/xattroperations/listxattrs(of:replyhandler:).md)
-  Gets the list of extended attributes currently set on the given item.
-- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, replyHandler: ((any Error)?) -> Void)](fsvolume/xattroperations/setxattr(named:to:on:policy:replyhandler:).md)
-  Sets the specified extended attribute data on the given item.
 - [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
   Flags to specify the policy when setting extended file attributes.
 - [func supportedXattrNames(for: FSItem) -> [FSFileName]](fsvolume/xattroperations/supportedxattrnames(for:).md)
@@ -30,6 +28,13 @@ protocol XattrOperations : NSObjectProtocol
 ### Inspecting volume properties
 - [var xattrOperationsInhibited: Bool](fsvolume/xattroperations/xattroperationsinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
+### Instance Methods
+- [func getXattr(named: FSFileName, of: FSItem, replyHandler: (Data?, (any Error)?) -> Void)](fsvolume/xattroperations/getxattr(named:of:replyhandler:).md)
+  Gets the specified extended attribute of the given item.
+- [func listXattrs(of: FSItem, replyHandler: ([FSFileName]?, (any Error)?) -> Void)](fsvolume/xattroperations/listxattrs(of:replyhandler:).md)
+  Gets the list of extended attributes currently set on the given item.
+- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, replyHandler: ((any Error)?) -> Void)](fsvolume/xattroperations/setxattr(named:to:on:policy:replyhandler:).md)
+  Sets the specified extended attribute data on the given item.
 
 ## Relationships
 
@@ -38,6 +43,8 @@ protocol XattrOperations : NSObjectProtocol
 
 ## See Also
 
+- [FSVolume.Operations](fsvolume/operations.md)
+  Methods that all volumes implement to provide required capabilities.
 - [FSVolume.OpenCloseOperations](fsvolume/opencloseoperations.md)
   Methods and properties implemented by volumes that want to receive open and close calls for each item.
 - [FSVolume.ReadWriteOperations](fsvolume/readwriteoperations.md)
@@ -46,12 +53,12 @@ protocol XattrOperations : NSObjectProtocol
   Methods and properties implemented by volumes that want to enforce access check operations.
 - [FSVolume.RenameOperations](fsvolume/renameoperations.md)
   Methods and properties implemented by volumes that support renaming the volume.
-- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
-  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 - [FSVolume.PreallocateOperations](fsvolume/preallocateoperations.md)
   Methods and properties implemented by volumes that want to offer preallocation functions.
 - [FSVolume.ItemDeactivation](fsvolume/itemdeactivation.md)
   Methods and properties implemented by volumes that support deactivating items.
+- [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
+  Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
 
 
 ---

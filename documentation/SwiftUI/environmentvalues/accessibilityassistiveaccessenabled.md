@@ -24,6 +24,10 @@ var accessibilityAssistiveAccessEnabled: Bool { get }
 
 - [struct AssistiveAccess](assistiveaccess.md)
   A scene that presents an interface appropriate for Assistive Access on iOS and iPadOS. On other platforms, this scene is unused.
+- [func assistiveAccessNavigationIcon(Image) -> some View](view/assistiveaccessnavigationicon(_:).md)
+  Configures the view’s icon for purposes of navigation.
+- [func assistiveAccessNavigationIcon(systemImage: String) -> some View](view/assistiveaccessnavigationicon(systemimage:).md)
+  Configures the view’s icon for purposes of navigation.
 
 
 ---

@@ -18,6 +18,7 @@ object GameCenterChallengeVersionCreateRequest
 
 ### Dictionaries
 - [object GameCenterChallengeVersionCreateRequest.Data](gamecenterchallengeversioncreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center challenge version.
 
 ## Properties
 
@@ -28,7 +29,7 @@ object GameCenterChallengeVersionCreateRequest
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)
   The data structure that represent a challenge version.
 - [object GameCenterChallengeVersionResponse](gamecenterchallengeversionresponse.md)
-  A response that contains a single challenge version resource.
+  A response containing a single version of a Game Center challenge.
 - [object GameCenterChallengeVersionsResponse](gamecenterchallengeversionsresponse.md)
   A response that contains multiple challenge version  resources.
 

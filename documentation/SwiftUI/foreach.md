@@ -25,6 +25,7 @@ struct ForEach<Data, ID, Content> where Data : RandomAccessCollection, ID : Hash
 - [Creating performant scrollable stacks](creating-performant-scrollable-stacks.md)
 - [Displaying data in lists](displaying-data-in-lists.md)
 - [Grouping data with lazy stack views](grouping-data-with-lazy-stack-views.md)
+- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
 - [Picking container views for your content](picking-container-views-for-your-content.md)
 
 #### Overview
@@ -97,6 +98,10 @@ When enabling the following launch argument, SwiftUI will log when it encounters
   Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
 - [init(_:id:content:)](foreach/init(_:id:content:).md)
   Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
+- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](foreach/init(sections:content:).md)
+  Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
+- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
+  Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 ### Creating an editable collection
 - [init<C, R>(Binding<C>, editActions: EditActions<C>, content: (Binding<C.Element>) -> R)](foreach/init(_:editactions:content:).md)
   Creates an instance that uniquely identifies and creates views across updates based on the identity of the underlying data.
@@ -107,11 +112,6 @@ When enabling the following launch argument, SwiftUI will log when it encounters
   A function to create content on demand using the underlying data.
 - [var data: Data](foreach/data.md)
   The collection of underlying identified data that SwiftUI uses to create views dynamically.
-### Initializers
-- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](foreach/init(sections:content:).md)
-  Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
-- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
-  Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
 ## Relationships
 
@@ -121,6 +121,7 @@ When enabling the following launch argument, SwiftUI will log when it encounters
 - [Chart3DContent](../Charts/Chart3DContent.md)
 - [ChartContent](../Charts/ChartContent.md)
 - [Copyable](../Swift/Copyable.md)
+- [CustomizableToolbarContent](customizabletoolbarcontent.md)
 - [DynamicMapContent](../MapKit/DynamicMapContent.md)
 - [DynamicTableRowContent](dynamictablerowcontent.md)
 - [DynamicViewContent](dynamicviewcontent.md)
@@ -128,6 +129,7 @@ When enabling the following launch argument, SwiftUI will log when it encounters
 - [MapContent](../MapKit/MapContent.md)
 - [TabContent](tabcontent.md)
 - [TableRowContent](tablerowcontent.md)
+- [ToolbarContent](toolbarcontent.md)
 - [View](view.md)
 
 ## See Also

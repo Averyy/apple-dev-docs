@@ -20,6 +20,7 @@ optional func application(_ application: UIApplication, configurationForConnecti
 
 ## Mentions
 
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
 
 #### Return Value

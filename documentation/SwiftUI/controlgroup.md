@@ -16,6 +16,7 @@ A container view that displays semantically-related controls in a visually-appro
 ## Declaration
 
 ```swift
+nonisolated
 struct ControlGroup<Content> where Content : View
 ```
 

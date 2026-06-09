@@ -8,6 +8,7 @@ Minimum amount of the next non-overdue payment.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

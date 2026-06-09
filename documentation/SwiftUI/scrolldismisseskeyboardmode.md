@@ -38,7 +38,6 @@ Use this type in a call to the [`scrollDismissesKeyboard(_:)`](view/scrolldismis
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

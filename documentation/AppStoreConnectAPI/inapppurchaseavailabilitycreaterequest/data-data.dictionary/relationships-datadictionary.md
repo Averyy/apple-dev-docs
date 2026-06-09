@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 2.3+
 
@@ -26,6 +28,7 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships
 ## See Also
 
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Attributes](inapppurchaseavailabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe an in-app purchase availability create request resource.
 
 
 ---

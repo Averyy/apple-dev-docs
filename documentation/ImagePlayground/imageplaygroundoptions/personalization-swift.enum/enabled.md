@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: case
 
-An option to enable personalization features in the view controller.
+An option to enable personalization features during image generation.
 
 **Availability**:
 - iOS 26.4+

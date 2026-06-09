@@ -6,8 +6,8 @@
 A rectangle that specifies whether to output screenshots in a subset of the output image.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

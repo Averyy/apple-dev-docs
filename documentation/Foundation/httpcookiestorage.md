@@ -82,10 +82,10 @@ When overriding methods of this class, be aware that methods that take a `task` 
 ### Tracking cookie storage changes
 - [static let NSHTTPCookieManagerCookiesChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanagercookieschanged.md)
   A notification posted when the cookies stored in the cookie storage have changed.
+- [HTTPCookieStorage.CookiesChangedMessage](httpcookiestorage/cookieschangedmessage.md)
+  A message a cookie storage instance sends when its cookies change.
 - [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
   A notification posted when the acceptance policy of the cookie storage has changed.
-### Structures
-- [HTTPCookieStorage.CookiesChangedMessage](httpcookiestorage/cookieschangedmessage.md)
 
 ## Relationships
 

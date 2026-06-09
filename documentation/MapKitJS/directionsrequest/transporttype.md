@@ -34,8 +34,8 @@ The default value of this property is [`Automobile`](transporttype/automobile.md
   A Boolean value that indicates whether the server returns multiple routes when they’re available.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
+- [signal](directionsrequest/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

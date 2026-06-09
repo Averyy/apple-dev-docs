@@ -30,8 +30,6 @@ This expected travel time reflects the time it takes to traverse the route under
   The overall route transport type.
 - [hasTolls](route/hastolls.md)
   A Boolean value that indicates whether a route has tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
 
 
 ---

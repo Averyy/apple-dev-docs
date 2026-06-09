@@ -26,6 +26,8 @@ var significand: Decimal { get }
   The sign of the decimal.
 - [var exponent: Int](decimal/exponent.md)
   The exponent of the decimal.
+- [var magnitude: Decimal](decimal/magnitude.md)
+  The magnitude of this decimal.
 - [var floatingPointClass: FloatingPointClassification](decimal/floatingpointclass.md)
   The IEEE 754 class of this type.
 - [var isCanonical: Bool](decimal/iscanonical.md)
@@ -50,8 +52,6 @@ var significand: Decimal { get }
   A Boolean value indicating whether this value is zero.
 - [var nextDown: Decimal](decimal/nextdown.md)
   The greatest representable value that is less than this decimal.
-- [var nextUp: Decimal](decimal/nextup.md)
-  The least representable value that is greater than this decimal.
 
 
 ---

@@ -48,15 +48,7 @@ struct PhotoAlbumEntity: AppEntity {
 }
 ```
 
-For more information about the `.photos` app intent domain, see [`Making photo and video actions available to Siri and Apple Intelligence`](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var asset: some AssistantSchemas.Entity](assistantschemas/photosentity/asset.md)
-- [var recognizedPerson: some AssistantSchemas.Entity](assistantschemas/photosentity/recognizedperson.md)
-  The app entity describes a person who appears in an asset.
-- [AssistantSchemas.PhotosEntity](assistantschemas/photosentity.md)
-  Assistant schema conformance for app entities that describe media assets.
+For more information about the `.photos` app intent domain, see doc:Making-photo-and-video-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

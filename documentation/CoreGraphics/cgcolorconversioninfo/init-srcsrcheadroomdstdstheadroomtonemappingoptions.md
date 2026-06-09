@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-init?(src from: CGColorSpace, srcHeadroom source_headroom: Float, dst to: CGColorSpace, dstHeadroom target_headroom: Float, toneMapping method: CGToneMapping, options: CFDictionary?, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?)
+init?(src source: CGColorSpace, srcHeadroom source_headroom: Float, dst target: CGColorSpace, dstHeadroom target_headroom: Float, toneMapping method: CGToneMapping, options: CFDictionary?, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>?)
 ```
 
 

@@ -244,6 +244,7 @@ class NSObject
 - [var accessibilityNavigationStyle: UIAccessibilityNavigationStyle](nsobject-swift.class/accessibilitynavigationstyle.md)
 - [var accessibilityNavigationStyleBlock: AXNavigationStyleReturnBlock?](nsobject-swift.class/accessibilitynavigationstyleblock.md)
 - [var accessibilityNextTextNavigationElement: Any?](nsobject-swift.class/accessibilitynexttextnavigationelement.md)
+  An accessibility element that contains text that semantically follows this element’s text.
 - [var accessibilityNextTextNavigationElementBlock: AXObjectReturnBlock?](nsobject-swift.class/accessibilitynexttextnavigationelementblock.md)
 - [var accessibilityNotifiesWhenDestroyed: Bool](nsobject-swift.class/accessibilitynotifieswhendestroyed.md)
   A Boolean value that indicates whether a custom accessibility object sends a notification when its corresponding UI element is destroyed.
@@ -251,12 +252,15 @@ class NSObject
 - [var accessibilityPathBlock: AXPathReturnBlock?](nsobject-swift.class/accessibilitypathblock.md)
 - [var accessibilityPerformEscapeBlock: AXBoolReturnBlock?](nsobject-swift.class/accessibilityperformescapeblock.md)
 - [var accessibilityPreviousTextNavigationElement: Any?](nsobject-swift.class/accessibilityprevioustextnavigationelement.md)
+  An accessibility element that contains text that is semantically previous to this element’s text.
 - [var accessibilityPreviousTextNavigationElementBlock: AXObjectReturnBlock?](nsobject-swift.class/accessibilityprevioustextnavigationelementblock.md)
 - [var accessibilityRespondsToUserInteraction: Bool](nsobject-swift.class/accessibilityrespondstouserinteraction.md)
 - [var accessibilityRespondsToUserInteractionBlock: AXBoolReturnBlock?](nsobject-swift.class/accessibilityrespondstouserinteractionblock.md)
 - [var accessibilityShouldGroupAccessibilityChildrenBlock: AXBoolReturnBlock?](nsobject-swift.class/accessibilityshouldgroupaccessibilitychildrenblock.md)
 - [var accessibilityTextInputResponder: (any UITextInput)?](nsobject-swift.class/accessibilitytextinputresponder.md)
+  The object that handles text input calls for this accessibility element.
 - [var accessibilityTextInputResponderBlock: AXUITextInputReturnBlock?](nsobject-swift.class/accessibilitytextinputresponderblock.md)
+  The block to use to handle text input calls to a backing view.
 - [var accessibilityTextualContext: UIAccessibilityTextualContext?](nsobject-swift.class/accessibilitytextualcontext.md)
 - [var accessibilityTextualContextBlock: AXTextualContextReturnBlock?](nsobject-swift.class/accessibilitytextualcontextblock.md)
 - [var accessibilityTraits: UIAccessibilityTraits](nsobject-swift.class/accessibilitytraits.md)
@@ -269,6 +273,11 @@ class NSObject
 - [var accessibilityViewIsModalBlock: AXBoolReturnBlock?](nsobject-swift.class/accessibilityviewismodalblock.md)
 - [var automationElements: [Any]?](nsobject-swift.class/automationelements.md)
 - [var automationElementsBlock: AXArrayReturnBlock?](nsobject-swift.class/automationelementsblock.md)
+- [var browserAccessibilityDetailsElements: [NSObject]](nsobject-swift.class/browseraccessibilitydetailselements.md)
+- [var browserAccessibilityImageDataSize: CGSize](nsobject-swift.class/browseraccessibilityimagedatasize-swift.property.md)
+  Returns the native pixel dimensions of the image represented by this element, or `CGSize.zero` if this element does not represent an image.
+- [var browserAccessibilityKeyboardShortcuts: String?](nsobject-swift.class/browseraccessibilitykeyboardshortcuts.md)
+- [var browserAccessibilityOrientation: BEAccessibilityOrientation](nsobject-swift.class/browseraccessibilityorientation.md)
 - [var isAccessibilityElement: Bool](nsobject-swift.class/isaccessibilityelement.md)
 - [var isAccessibilityElementBlock: AXBoolReturnBlock?](nsobject-swift.class/isaccessibilityelementblock.md)
 - [var isSelectable: Bool](nsobject-swift.class/isselectable.md)
@@ -309,6 +318,7 @@ class NSObject
 - [func awakeFromNib()](nsobject-swift.class/awakefromnib.md)
   Prepares the receiver for service after it has been loaded from an Interface Builder archive, or nib file.
 - [func beginPreviewPanelControl(QLPreviewPanel!)](nsobject-swift.class/beginpreviewpanelcontrol(_:).md)
+- [func browserAccessibilityImageData([AnyHashable : Any]) -> CVPixelBuffer?](nsobject-swift.class/browseraccessibilityimagedata(_:).md)
 - [func burnProgressPanel(DRBurnProgressPanel!, burnDidFinish: DRBurn!) -> Bool](nsobject-swift.class/burnprogresspanel(_:burndidfinish:).md)
   Allows the delegate to handle the end-of-burn feedback.
 - [func burnProgressPanelDidFinish(Notification!)](nsobject-swift.class/burnprogresspaneldidfinish(_:).md)
@@ -428,7 +438,7 @@ class NSObject
 - [func prepareForInterfaceBuilder()](nsobject-swift.class/prepareforinterfacebuilder.md)
   Called when a designable object is created in Interface Builder.
 - [func provideImage(to: any MTLTexture, commandBuffer: any MTLCommandBuffer, originx: Int, originy: Int, width: Int, height: Int, userInfo: Any?)](nsobject-swift.class/provideimage(to:commandbuffer:originx:originy:width:height:userinfo:).md)
-  An optional method that an image provider object way implement.
+  An optional method that an image provider object may implement.
 With this method, the provider object can use the Metal API to provide pixel
 data into a MTLTexture when the image object is rendered.
 - [func provideImageData(UnsafeMutableRawPointer, bytesPerRow: Int, origin: Int, Int, size: Int, Int, userInfo: Any?)](nsobject-swift.class/provideimagedata(_:bytesperrow:origin:_:size:_:userinfo:).md)

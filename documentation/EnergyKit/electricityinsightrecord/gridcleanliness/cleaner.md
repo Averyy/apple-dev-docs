@@ -9,7 +9,6 @@ A category for electricity usage during the cleanest grid periods.
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

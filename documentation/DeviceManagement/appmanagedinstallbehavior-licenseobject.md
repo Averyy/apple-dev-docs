@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that specifies the type of license the app uses.
+A dictionary that describes the app’s license.
 
 **Availability**:
 - iOS 17.2+
@@ -11,8 +11,6 @@ A dictionary that specifies the type of license the app uses.
 - Mac Catalyst 17.2+
 - macOS 26.0+
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

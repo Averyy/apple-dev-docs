@@ -44,6 +44,7 @@ A new `AVAudioFormat` instance, or `nil` if `formatDescription` isn’t valid.
   Creates an audio format instance from a stream description.
 - [init?(streamDescription: UnsafePointer<AudioStreamBasicDescription>, channelLayout: AVAudioChannelLayout?)](avaudioformat/init(streamdescription:channellayout:).md)
   Creates an audio format instance from a stream description and channel layout.
+- [init?(formatDescription: CMAudioFormatDescription)](avaudioformat/init(formatdescription:).md)
 
 
 ---

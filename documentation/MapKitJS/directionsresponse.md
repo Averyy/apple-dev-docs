@@ -3,7 +3,7 @@
 **Framework**: MapKit JS  
 **Kind**: struct
 
-The directions and estimated travel time that return for a route.
+The directions and estimated travel time for a route.
 
 **Availability**:
 - MapKit JS 5.0+
@@ -20,25 +20,26 @@ interface DirectionsResponse
 
 #### Overview
 
-To get directions, create an instance of [`Directions`](directions.md) and call the [`route(request, callback)`](directions/route.md) method.
+To get directions, create an instance of [`Directions`](directions.md) and call the [`route(request)`](directions/route.md) method.
 
-When your code calls the [`route(request, callback)`](directions/route.md) function, MapKit JS returns a `DirectionsResponse` asynchronously via a callback function. MapKit JS invokes the callback function with two arguments, `error` and `data` on failure and success. The `data` parameter is a `DirectionsResponse` object,  and the `error` parameter contains an error code and text description of the error.
+The [`route(request)`](directions/route.md) method returns a promise that resolves with a `DirectionsResponse` on success.
 
 ## Topics
 
 ### Directions response
-- [request](directionsresponse/request.md)
-  The request object associated with the direction’s response.
 - [routes](directionsresponse/routes.md)
   An array of route objects.
 - [origin](directionsresponse/origin.md)
   An optional starting point for routing directions.
 - [destination](directionsresponse/destination.md)
   An optional end point for routing directions.
+### Deprecated
+- [request](directionsresponse/request.md)
+  The request object associated with the direction’s response.
 
 ## See Also
 
-- [route(request, callback)](directions/route.md)
+- [route(request)](directions/route.md)
   Retrieves directions and estimated travel time based on the specified start and end points.
 - [interface DirectionsRequest](directionsrequest.md)
   The requested start and end points for a route, as well as the planned mode of transportation.

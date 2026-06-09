@@ -50,7 +50,7 @@ interface SearchAutocompleteOptions extends SearchOptions
 
 ## See Also
 
-- [autocomplete(query, callback, options)](search/autocomplete.md)
+- [autocomplete(query, options)](search/autocomplete.md)
   Retrieves a list of autocomplete results for the specified search query.
 - [interface SearchAutocompleteResponse](searchautocompleteresponse.md)
   An object containing the response from an autocomplete request.

@@ -52,6 +52,9 @@ This class defines the [`AVAsyncProperty`](avasyncproperty.md) constants for var
   A description of the object.
 - [static var sidecarURL: AVAsyncProperty<Root, URL?>](avpartialasyncproperty/sidecarurl.md)
   The sidecar URL used by the MediaExtension. The sidecar URL is returned only if the MediaExtension format reader supports sidecar files, and implements this property [MEFileInfo setSidecarFilename:]. Will return nil otherwise.
+### Type Properties
+- [static var constituentFileURLs: AVAsyncProperty<Root, [URL]>](avpartialasyncproperty/constituentfileurls.md)
+  The list of file URLs used by the MediaExtension that constitute the asset. The list of file URLs that constitute the asset are returned only for QuickTime reference movies, or if the MediaExtension format reader implements this property [MEFileInfo setConstituentFileNames:].
 
 ## Relationships
 

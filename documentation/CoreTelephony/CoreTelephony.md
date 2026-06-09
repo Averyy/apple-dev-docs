@@ -24,6 +24,8 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
 ### Service information
 - [class CTTelephonyNetworkInfo](cttelephonynetworkinfo.md)
   An object that provides notifications of changes to the user’s cellular service provider.
+- [iPhone quick switch](iphone-quick-switch.md)
+  Enable seamless app transition between multiple iPhones.
 ### eSIM
 - [class CTCellularPlanProvisioning](ctcellularplanprovisioning.md)
   An object you use to download and install a carrier eSIM.

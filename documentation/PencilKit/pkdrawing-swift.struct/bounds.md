@@ -18,6 +18,10 @@ The smallest rectangle used to represent the content’s bounds, taking into acc
 var bounds: CGRect { get }
 ```
 
+## Mentions
+
+- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
+
 
 ---
 

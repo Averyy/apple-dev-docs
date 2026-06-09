@@ -18,6 +18,23 @@ A rectangle shape.
 case rectangle
 ```
 
+## See Also
+
+- [ShapeConfiguration.Shape.ellipse](shapeconfiguration/shape/ellipse.md)
+  An ellipse shape.
+- [ShapeConfiguration.Shape.line](shapeconfiguration/shape/line.md)
+  A line shape.
+- [ShapeConfiguration.Shape.chatBubble](shapeconfiguration/shape/chatbubble.md)
+  A chat bubble shape.
+- [ShapeConfiguration.Shape.roundedRectangle](shapeconfiguration/shape/roundedrectangle.md)
+  A rounded rectangle.
+- [ShapeConfiguration.Shape.regularPolygon](shapeconfiguration/shape/regularpolygon.md)
+  A n-sided polygon shape.
+- [ShapeConfiguration.Shape.star](shapeconfiguration/shape/star.md)
+  A n-pointed star shape.
+- [ShapeConfiguration.Shape.arrowShape](shapeconfiguration/shape/arrowshape.md)
+  A filled arrow shape.
+
 
 ---
 

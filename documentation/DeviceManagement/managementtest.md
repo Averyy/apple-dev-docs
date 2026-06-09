@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration to test declarative device management.
+The declaration to configure a declarative device management test.
 
 **Availability**:
 - iOS 15.0+
@@ -13,8 +13,6 @@ The declaration to test declarative device management.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -36,8 +34,11 @@ Specify `com.apple.configuration.management.test` as the declaration type.
 | Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
+
+This configuration tests the management framework with a custom status result.
 
 ```json
 {
@@ -53,7 +54,7 @@ Specify `com.apple.configuration.management.test` as the declaration type.
 ## Properties
 
 - `Echo` (string) *(required)*: The string to echo back in a status response reason.
-- `EchoDataAssetReference` (string): The string to read from a data asset to echo back in status response reason description.
+- `EchoDataAssetReference` (string): The string to read from a data asset to echo back in status response reason description. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 - `ReturnStatus` (string): The status the system reports back when the device implements the configuration. Use this to override the normal `success` result.
 
 ## See Also
@@ -74,20 +75,20 @@ Specify `com.apple.configuration.management.test` as the declaration type.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

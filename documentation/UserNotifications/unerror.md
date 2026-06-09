@@ -44,6 +44,7 @@ struct UNError
 - [static var contentProvidingInvalid: UNError.Code](unerror/contentprovidinginvalid.md)
 - [static var contentProvidingObjectNotAllowed: UNError.Code](unerror/contentprovidingobjectnotallowed.md)
 - [static var badgeInputInvalid: UNError.Code](unerror/badgeinputinvalid.md)
+- [static var attachmentUnsupportedType: UNError.Code](unerror/attachmentunsupportedtype.md)
 ### Error Information
 - [static var errorDomain: String](unerror/errordomain.md)
 - [let UNErrorDomain: String](unerrordomain.md)

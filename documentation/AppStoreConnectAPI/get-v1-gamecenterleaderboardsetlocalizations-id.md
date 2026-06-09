@@ -35,7 +35,7 @@ Get information about a leaderboard set localization.
   Delete a specific Game Center leaderboard set localization.
 - [Read the Image Associated With a Leaderboard Set Localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
   Get information about a leaderboard set image associated with a leaderboard set localization.
-- [GET /v1/gameCenterLeaderboardSetLocalizations/{id}/relationships/gameCenterLeaderboardSetImage](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
+- [Get the leaderboard set image ID for a Game Center leaderboard set localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
 - [Create a Leaderboard Set Localization](post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a Leaderboard Set Localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)

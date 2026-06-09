@@ -49,6 +49,7 @@ You don’t adopt this protocol in your own types. If you want to add buttons to
 - [CPListTemplate](cplisttemplate.md)
 - [CPMapTemplate](cpmaptemplate.md)
 - [CPPointOfInterestTemplate](cppointofinteresttemplate.md)
+- [CPVoiceControlTemplate](cpvoicecontroltemplate.md)
 
 ## See Also
 

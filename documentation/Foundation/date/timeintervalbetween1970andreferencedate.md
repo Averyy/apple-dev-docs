@@ -32,6 +32,8 @@ static let timeIntervalBetween1970AndReferenceDate: Double
   The interval between the date value and 00:00:00 UTC on 1 January 1970.
 - [static var timeIntervalSinceReferenceDate: TimeInterval](date/timeintervalsincereferencedate-swift.type.property.md)
   The interval between 00:00:00 UTC on 1 January 2001 and the current date and time.
+- [typealias Stride](date/stride.md)
+  A type alias to define the stride of a date.
 
 
 ---

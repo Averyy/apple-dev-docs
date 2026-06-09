@@ -12,9 +12,9 @@ Overrides a feature.
 
 ```swift
 itemForFeature?(
-        item: Item | null,
-        geoJSON: GeoJSONTypes.Feature,
-    ): Item | null;
+    item: Item | null,
+    geoJSON: GeoJSONTypes.Feature,
+): Item | null;
 ```
 
 #### Return Value

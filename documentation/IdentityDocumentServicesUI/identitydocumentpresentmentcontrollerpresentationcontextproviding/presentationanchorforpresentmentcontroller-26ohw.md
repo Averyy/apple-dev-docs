@@ -10,7 +10,6 @@ Indicates the presentation anchor within which the system presents the controlle
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

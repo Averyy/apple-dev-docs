@@ -16,7 +16,7 @@ Creates a view representing the body of a group box.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 

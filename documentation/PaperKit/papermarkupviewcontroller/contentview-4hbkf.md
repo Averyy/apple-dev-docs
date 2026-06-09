@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The content that markup happens on top of.
+The content that markup appears on top of.
 
 **Availability**:
 - macOS 26.0+
@@ -17,9 +17,18 @@ The content that markup happens on top of.
 
 #### Discussion
 
-The content view is sized to the frame of the `markup`, and added below all the markup and drawing. If this is `nil` then the markup happens on top of a blank white canvas.
+The system sizes the content view to the frame of the `markup` and adds it below all the markup and drawing. When `nil`, markup appears on top of a blank white canvas.
 
 Default is `nil`.
+
+## See Also
+
+- [var markup: PaperMarkup?](papermarkupviewcontroller/markup.md)
+  The paper data that this view controller displays.
+- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+  The content that markup appears on top of.
+- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
+  The supported PaperKit features on this canvas.
 
 
 ---

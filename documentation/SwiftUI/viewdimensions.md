@@ -99,9 +99,7 @@ With no change in your guide, this produces the desired effect — it indents th
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

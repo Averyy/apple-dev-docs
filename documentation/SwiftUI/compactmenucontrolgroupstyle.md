@@ -15,6 +15,7 @@ A control group style that presents its content as a compact menu when the user 
 ## Declaration
 
 ```swift
+nonisolated
 struct CompactMenuControlGroupStyle
 ```
 

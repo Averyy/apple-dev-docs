@@ -17,7 +17,8 @@ A view that provides a shape that you can use for drawing operations.
 ## Declaration
 
 ```swift
-protocol ShapeView<Content> : View, _RemoveGlobalActorIsolation
+nonisolated
+protocol ShapeView<Content> : View
 ```
 
 #### Overview

@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: enum
 
-An option for determining when the system should provide better variety when creating multiple images from the same set of concepts.
+Options that specify how much variety to use when creating multiple images from the same concepts.
 
 **Availability**:
 - iOS 26.4+
@@ -20,17 +20,17 @@ enum CreationVariety
 
 #### Overview
 
-Use this type to configure the variety behavior of an `ImageCreator` instance.
+When you generate multiple images, use this type to specify how much to adjust the creation parameters for each image. The amount of variability determines how similar each image is to the others. These options apply only when creating multiple images at the same time.
 
 ## Topics
 
 ### Enumeration Cases
 - [ImagePlaygroundOptions.CreationVariety.automatic](imageplaygroundoptions/creationvariety-swift.enum/automatic.md)
-  An option to choose the most appropriate creation variety behavior.
+  An option to programmatically determine how much variety to use when creating images.
 - [ImagePlaygroundOptions.CreationVariety.high](imageplaygroundoptions/creationvariety-swift.enum/high.md)
-  An option to use high creation variety for all provided concepts.
+  An option to use a lot of variety when creating images.
 - [ImagePlaygroundOptions.CreationVariety.low](imageplaygroundoptions/creationvariety-swift.enum/low.md)
-  An option to use low creation variety for all provided concepts.
+  An option to use a low amount of variety when creating images.
 
 ## Relationships
 

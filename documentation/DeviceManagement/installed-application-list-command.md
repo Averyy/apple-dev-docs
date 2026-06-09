@@ -13,8 +13,6 @@ Get a list of the installed apps on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -236,7 +234,7 @@ This command lists all apps. The example response shows a subset of the full res
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InstalledApplicationListCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

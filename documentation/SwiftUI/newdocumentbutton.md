@@ -15,6 +15,7 @@ A button that creates and opens new documents.
 ## Declaration
 
 ```swift
+nonisolated
 struct NewDocumentButton<Label> where Label : View
 ```
 
@@ -90,8 +91,20 @@ If you don’t provide a custom label, the system provides a button with the def
   Creates and opens new documents.
 - [init(_:contentType:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:preparedocumenturl:).md)
   Creates and opens new documents.
+- [init(_:contentType:source:)](newdocumentbutton/init(_:contenttype:source:).md)
+  Creates and opens new documents, tagging them with a creation source.
+- [init(Text?, contentType: UTType, source: DocumentCreationSource, () async throws -> URL?)](newdocumentbutton/init(_:contenttype:source:_:).md)
+  Creates and opens new URL-based documents from a template picker.
+- [init(_:contentType:source:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:source:preparedocumenturl:).md)
+  Creates and opens new URL-based documents from a template picker.
 - [init(_:for:contentType:prepareDocument:)](newdocumentbutton/init(_:for:contenttype:preparedocument:).md)
   Creates and opens new documents.
+- [init(_:for:contentType:source:_:)](newdocumentbutton/init(_:for:contenttype:source:_:).md)
+  Creates and opens new documents from a template picker.
+- [init(for:source:)](newdocumentbutton/init(for:source:).md)
+  Creates a button that creates new documents using data from pasteboard.
+- [init(source: NewDocumentButtonDataSource)](newdocumentbutton/init(source:).md)
+  Creates and opens new documents from a specified source.
 
 ## Relationships
 
@@ -104,12 +117,18 @@ If you don’t provide a custom label, the system provides a button with the def
   A launch scene for document-based applications.
 - [struct DocumentLaunchView](documentlaunchview.md)
   A view to present when launching document-related user experience.
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
+  Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
 - [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
-- [protocol DocumentBaseBox](documentbasebox.md)
-  A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
+- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
+  Describes the source of data used to create a new document.
+- [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
+  The default label used for a new document button.
+- [struct DocumentCreationSource](documentcreationsource.md)
+  Describes the source used to create a new document.
 
 
 ---

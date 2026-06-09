@@ -98,6 +98,9 @@ In iOS 26 and later, your app can continue certain activities in the background 
   Values that represent the current state of the peripheral manager.
 - [Deprecated Constants](deprecated-constants.md)
   This document describes the constants found in the Core Bluetooth framework.
+### Classes
+- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
+- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
 ### Variables
 - [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
 

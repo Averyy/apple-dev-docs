@@ -54,6 +54,10 @@ Table(of: Person.self) {
   Creates an instance that uniquely identifies and creates map content across updates based on the identity of the underlying data.
 - [init(_:id:content:)](foreach/init(_:id:content:).md)
   Creates an instance that uniquely identifies and creates map content across updates based on the provided key path to the underlying data’s identifier.
+- [init<V>(sections: V, content: (SectionConfiguration) -> Content)](foreach/init(sections:content:).md)
+  Creates an instance that uniquely identifies and creates views across updates based on the sections of a given view.
+- [init<V>(subviews: V, content: (Subview) -> Content)](foreach/init(subviews:content:).md)
+  Creates an instance that uniquely identifies and creates views across updates based on the subviews of a given view.
 
 
 ---

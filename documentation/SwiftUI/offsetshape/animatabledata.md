@@ -17,6 +17,7 @@ The data to animate.
 ## Declaration
 
 ```swift
+nonisolated
 var animatableData: OffsetShape<Content>.AnimatableData { get set }
 ```
 

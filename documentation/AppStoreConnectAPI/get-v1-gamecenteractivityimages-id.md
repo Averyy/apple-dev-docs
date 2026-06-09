@@ -1,4 +1,4 @@
-# Read Activity Image Information
+# Read activity image information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

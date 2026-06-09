@@ -12,6 +12,7 @@ Determines whether the observation has a minimum precision value for a specific 
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

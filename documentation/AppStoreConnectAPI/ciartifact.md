@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the output of an Xcode Cloud build action resource.
+A file output produced by an Xcode Cloud build action, such as an app archive, test result bundle, or build log.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -30,7 +30,7 @@ object CiArtifact
 ## See Also
 
 - [object CiArtifactResponse](ciartifactresponse.md)
-  A response that contains a single Artifacts resource.
+  The response body for endpoints that read a single artifact produced by an Xcode Cloud build action.
 
 
 ---

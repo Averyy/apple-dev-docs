@@ -7,8 +7,6 @@ The dictionary that represents a set of kernel extensions.
 
 **Availability**:
 - macOS 10.13.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

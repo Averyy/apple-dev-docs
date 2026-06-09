@@ -25,6 +25,11 @@ func labelReservedIconWidth(_ value: CGFloat) -> some View
 
 Use this modifier to set the value that should be used for the reserved icon width in labels. This applies to label styles and in contexts where the label displays its icon and title stacked horizontally.
 
+## See Also
+
+- [func labelIconToTitleSpacing(CGFloat) -> some View](view/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+
 
 ---
 

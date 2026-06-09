@@ -46,6 +46,8 @@ To respond to the various outcome events from the picker, your app needs to impl
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSExtensionRequestHandling](../Foundation/NSExtensionRequestHandling.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearanceContainer](../UIKit/UIAppearanceContainer.md)
 - [UIContentContainer](../UIKit/UIContentContainer.md)
@@ -84,6 +86,8 @@ To respond to the various outcome events from the picker, your app needs to impl
   A tvOS management object that controls whether a TV switches modes to match the video’s native mode.
 - [protocol AVContinuityDevicePickerViewControllerDelegate](avcontinuitydevicepickerviewcontrollerdelegate.md)
   An interface that responds to events from a continuity device picker view controller.
+- [Third-party casting support](third-party-casting-support.md)
+  Provide custom playback controls for third-party casting services and other media sources.
 
 
 ---

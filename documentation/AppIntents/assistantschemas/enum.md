@@ -29,6 +29,8 @@ protocol Enum : AssistantSchemas.Model
   Assistant schema conformance for types you use for camera functionality.
 - [static var photos: some AssistantSchemas.PhotosEnum](assistantschemas/enum/photos.md)
   Assistant schema conformance for types you use to describe photos and videos.
+- [static var presentation: some AssistantSchemas.PresentationEnum](assistantschemas/enum/presentation.md)
+  Assistant schema conformance for app enums that describe presentation data.
 - [static var reader: some AssistantSchemas.ReaderEnum](assistantschemas/enum/reader.md)
   Assistant schema conformance for types you use to describe documents.
 - [static var whiteboard: some AssistantSchemas.WhiteboardEnum](assistantschemas/enum/whiteboard.md)

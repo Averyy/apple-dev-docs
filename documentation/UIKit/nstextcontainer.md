@@ -75,11 +75,9 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)
-- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
@@ -92,6 +90,8 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
   Interact with text by managing text selection and inserting custom text elements.
 - [Display text with a custom layout](display-text-with-a-custom-layout.md)
   Lay out text in a custom-shaped container and apply glyph substitutions.
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+  Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextLayoutManager](nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
 - [class NSTextLayoutFragment](nstextlayoutfragment.md)
@@ -100,6 +100,10 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
 - [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
+- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+  A protocol that identifies a view or layer as a drawable element for a text layout fragment.
+- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+  A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 - [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 

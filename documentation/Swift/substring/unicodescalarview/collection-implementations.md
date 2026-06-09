@@ -83,7 +83,7 @@
   Accesses the element at the specified position.
 - [subscript<R>(R) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-7ylky.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-9p7x7.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](substring/unicodescalarview/subscript(_:)-9p7x7.md)
 - [subscript(Range<Substring.UnicodeScalarView.Index>) -> Substring.UnicodeScalarView](substring/unicodescalarview/subscript(_:)-ua5x.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](substring/unicodescalarview/subscript(_:)-zsz3.md)

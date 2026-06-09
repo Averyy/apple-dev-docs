@@ -12,6 +12,7 @@ Type erased compositor content.
 ## Declaration
 
 ```swift
+nonisolated
 struct AnyCompositorContent
 ```
 

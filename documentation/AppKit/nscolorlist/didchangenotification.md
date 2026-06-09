@@ -18,6 +18,8 @@ class let didChangeNotification: NSNotification.Name
 
 The notification object is the [`NSColorList`](nscolorlist.md) object that changed. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSColorList.DidChangeMessage`](nscolorlist/didchangemessage.md).
+
 
 ---
 

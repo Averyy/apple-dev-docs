@@ -22,6 +22,8 @@ func onLongPressGesture(minimumDuration: Double = 0.5, maximumDistance: CGFloat 
 
 ## See Also
 
+- [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](view/dropdestination(for:action:istargeted:).md)
+  Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 - [func onChange<V>(of: V, perform: (V) -> Void) -> some View](view/onchange(of:perform:).md)
   Adds an action to perform when the given value changes.
 - [func onTapGesture(count: Int, coordinateSpace: CoordinateSpace, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:perform:)-36x9h.md)

@@ -17,7 +17,7 @@ Adds a context menu with a custom preview to a view.
 
 ```swift
 nonisolated
-func contextMenu<M, P>(@ViewBuilder menuItems: () -> M, @ViewBuilder preview: () -> P) -> some View where M : View, P : View
+func contextMenu<M, P>(@ContentBuilder menuItems: () -> M, @ContentBuilder preview: () -> P) -> some View where M : View, P : View
 ```
 
 #### Return Value

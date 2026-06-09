@@ -7,8 +7,6 @@ Create and configure a local administrator account on a device.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
@@ -23,10 +21,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -117,7 +115,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#AccountConfigurationCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

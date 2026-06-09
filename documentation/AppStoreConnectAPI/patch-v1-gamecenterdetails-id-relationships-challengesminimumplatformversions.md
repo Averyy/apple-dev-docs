@@ -1,4 +1,4 @@
-# Modify the Challenges Minimum Platform Version for a Game Center Detail
+# Modify the challenges minimum platform version for a game center detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Update the relationship between a challenges minimum platform version and a spec
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the Game Center detail resource ID from the [`Read the state of game center for an app`](get-v1-apps-_id_-gamecenterdetail.md) response.
 
 ## See Also
 
@@ -32,14 +32,14 @@ Update the relationship between a challenges minimum platform version and a spec
   Update the relationship between a leaderbaord and a specific Game Center challenge.
 - [Delete a Challenge](delete-v1-gamecenterchallenges-_id_.md)
   Remove a specific Game Center challenge.
-- [Read the Challenges for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center detail.
-- [Read the Challenges for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
+- [Read the challenges for a game center group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center group.
-- [GET /v1/gameCenterGroups/{id}/relationships/gameCenterChallenges](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
-- [Read the Challenges for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
+- [List Game Center challenge IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
+- [Read the challenges for a game center group](get-v1-gamecentergroups-_id_-gamecenterchallenges.md)
   Get challenge information for a specific Game Center group.
-- [GET /v1/gameCenterGroups/{id}/relationships/gameCenterChallenges](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
+- [List Game Center challenge IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenterchallenges.md)
 
 
 ---

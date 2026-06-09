@@ -30,10 +30,14 @@ struct MeshAnchor
   The unique identifier of this anchor.
 - [var description: String](meshanchor/description.md)
   A textual representation of this anchor.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](meshanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](meshanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

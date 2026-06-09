@@ -51,7 +51,7 @@
 - [func suffix(from: Self.Index) -> Self.SubSequence](anybidirectionalcollection/suffix(from:).md)
   Returns a subsequence from the specified position to the end of the collection.
 ### Subscripts
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](anybidirectionalcollection/subscript(_:)-34ify.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](anybidirectionalcollection/subscript(_:)-34ify.md)
 - [subscript<R>(R) -> Self.SubSequence](anybidirectionalcollection/subscript(_:)-8f134.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](anybidirectionalcollection/subscript(_:)-93ijp.md)

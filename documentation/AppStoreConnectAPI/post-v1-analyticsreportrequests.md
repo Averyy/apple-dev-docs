@@ -81,7 +81,7 @@ POST https://api.appstoreconnect.apple.com/v1/analyticsReportRequests
   Get details for and the state of a specific analytics report request.
 - [Read Reports for a Specific Request](get-v1-analyticsreportrequests-_id_-reports.md)
   Get a list of reports generated from a specific analytics report request.
-- [Read Reports IDs for a Specific Request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
+- [Read reports ids for a specific request](get-v1-analyticsreportrequests-_id_-relationships-reports.md)
   Get a list of reports Ids from a specific analytics report request.
 - [Delete a Report Request](delete-v1-analyticsreportrequests-_id_.md)
   Remove a specific analytics report request.

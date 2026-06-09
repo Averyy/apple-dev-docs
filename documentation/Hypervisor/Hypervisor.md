@@ -30,7 +30,7 @@ A guest is an operating system that runs on top of the virtual hardware. The ope
 
 Each virtual machine corresponds to a process on the host. There can only be one virtual machine at a time per process; the virtual machine creates it with [`hv_vm_create(_:)`](hv_vm_create(_:).md).
 
-Virtual CPUs (vCPUs) in a virtual machine map to POSIX threads. Create a new vCPU for the current thread with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:).md). The vCPU runs when the thread calls [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
+Virtual CPUs (vCPUs) in a virtual machine map to POSIX threads. Create a new vCPU for the current thread with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:_:).md). The vCPU runs when the thread calls [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
 
 Hypervisor maps the physical memory in the guest to virtual memory of the host process. Create a new memory mapping with [`hv_vm_map(_:_:_:_:)`](hv_vm_map(_:_:_:_:).md). Access to memory outside the mapped range causes [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) to exit. Emulate memory-mapped hardware by emulating the memory access on exit and re-enter the guest with [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md).
 
@@ -48,7 +48,7 @@ At the start of a task:
 
 In each thread:
 
-- Create a virtual CPU with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:).md).
+- Create a virtual CPU with [`hv_vcpu_create(_:_:_:)`](hv_vcpu_create(_:_:_:).md).
 - Call [`hv_vcpu_run(_:)`](hv_vcpu_run(_:).md) to run the vCPU.
 
 When a thread receives an exit event:
@@ -84,10 +84,33 @@ After all threads finish:
 - [Hypervisor Data Types](hypervisor-data-types.md)
 ### Structures
 - [struct hv_ipa_granule_t](hv_ipa_granule_t.md)
+- [struct hv_tlbi_op_t](hv_tlbi_op_t.md)
 ### Variables
+- [var HV_FEATURE_REG_ID_AA64ISAR2_EL1: hv_feature_reg_t](hv_feature_reg_id_aa64isar2_el1.md)
+- [var HV_FEATURE_REG_ID_AA64MMFR3_EL1: hv_feature_reg_t](hv_feature_reg_id_aa64mmfr3_el1.md)
+- [var HV_FEATURE_REG_ID_AA64MMFR4_EL1: hv_feature_reg_t](hv_feature_reg_id_aa64mmfr4_el1.md)
+- [var HV_FEATURE_REG_ID_AA64PFR2_EL1: hv_feature_reg_t](hv_feature_reg_id_aa64pfr2_el1.md)
 - [var HV_IPA_GRANULE_16KB: hv_ipa_granule_t](hv_ipa_granule_16kb.md)
 - [var HV_IPA_GRANULE_4KB: hv_ipa_granule_t](hv_ipa_granule_4kb.md)
+- [var HV_SYS_REG_ID_AA64ISAR2_EL1: hv_sys_reg_t](hv_sys_reg_id_aa64isar2_el1.md)
+- [var HV_SYS_REG_ID_AA64MMFR3_EL1: hv_sys_reg_t](hv_sys_reg_id_aa64mmfr3_el1.md)
+- [var HV_SYS_REG_ID_AA64MMFR4_EL1: hv_sys_reg_t](hv_sys_reg_id_aa64mmfr4_el1.md)
+- [var HV_SYS_REG_ID_AA64PFR2_EL1: hv_sys_reg_t](hv_sys_reg_id_aa64pfr2_el1.md)
+- [var HV_TLBI_OP_ASIDE1IS: hv_tlbi_op_t](hv_tlbi_op_aside1is.md)
+- [var HV_TLBI_OP_RVAAE1IS: hv_tlbi_op_t](hv_tlbi_op_rvaae1is.md)
+- [var HV_TLBI_OP_RVAALE1IS: hv_tlbi_op_t](hv_tlbi_op_rvaale1is.md)
+- [var HV_TLBI_OP_RVAE1IS: hv_tlbi_op_t](hv_tlbi_op_rvae1is.md)
+- [var HV_TLBI_OP_RVALE1IS: hv_tlbi_op_t](hv_tlbi_op_rvale1is.md)
+- [var HV_TLBI_OP_VAAE1IS: hv_tlbi_op_t](hv_tlbi_op_vaae1is.md)
+- [var HV_TLBI_OP_VAALE1IS: hv_tlbi_op_t](hv_tlbi_op_vaale1is.md)
+- [var HV_TLBI_OP_VAE1IS: hv_tlbi_op_t](hv_tlbi_op_vae1is.md)
+- [var HV_TLBI_OP_VALE1IS: hv_tlbi_op_t](hv_tlbi_op_vale1is.md)
+- [var HV_TLBI_OP_VMALLE1IS: hv_tlbi_op_t](hv_tlbi_op_vmalle1is.md)
 ### Functions
+- [func hv_vcpu_get_serror(hv_vcpu_t, UnsafeMutablePointer<Bool>) -> hv_return_t](hv_vcpu_get_serror(_:_:).md)
+- [func hv_vcpu_get_wait_for_interrupt_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_wait_for_interrupt_time(_:_:).md)
+- [func hv_vcpu_invalidate_tlb(hv_vcpu_t, hv_tlbi_op_t, UInt64) -> hv_return_t](hv_vcpu_invalidate_tlb(_:_:_:).md)
+- [func hv_vcpu_set_serror(hv_vcpu_t, Bool) -> hv_return_t](hv_vcpu_set_serror(_:_:).md)
 - [func hv_vm_config_get_default_ipa_granule(UnsafeMutablePointer<hv_ipa_granule_t>) -> hv_return_t](hv_vm_config_get_default_ipa_granule(_:).md)
 - [func hv_vm_config_get_ipa_granule(hv_vm_config_t, UnsafeMutablePointer<hv_ipa_granule_t>) -> hv_return_t](hv_vm_config_get_ipa_granule(_:_:).md)
 - [func hv_vm_config_set_ipa_granule(hv_vm_config_t, hv_ipa_granule_t) -> hv_return_t](hv_vm_config_set_ipa_granule(_:_:).md)

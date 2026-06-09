@@ -22,6 +22,15 @@ mutating func insert(_ newFeature: FeatureSet.Feature)
 
 - `newFeature`: A feature to insert into the set.
 
+## See Also
+
+- [func contains(FeatureSet.Feature) -> Bool](featureset/contains(_:).md)
+  Returns a Boolean value that indicates whether the given feature exists in the set.
+- [func isSubset(of: FeatureSet) -> Bool](featureset/issubset(of:).md)
+  Returns a Boolean value that indicates whether this feature set is a subset of the given feature set.
+- [func remove(FeatureSet.Feature)](featureset/remove(_:).md)
+  Removes the given feature.
+
 
 ---
 

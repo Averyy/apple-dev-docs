@@ -8,6 +8,7 @@ A person denied the use of FinanceKit services for the app.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

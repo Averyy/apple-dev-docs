@@ -32,14 +32,14 @@ struct ReferenceImage
   A string value the represents the name of the resource group the framework loads an image from.
 - [var description: String](referenceimage/description.md)
   A textual representation of this reference image.
+### Default Implementations
+- [Equatable Implementations](referenceimage/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

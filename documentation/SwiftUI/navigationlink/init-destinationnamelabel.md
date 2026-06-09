@@ -12,13 +12,13 @@ Creates a navigation link that presents a view from a WatchKit storyboard.
 
 ```swift
 nonisolated
-init(destinationName: String, @ViewBuilder label: () -> Label)
+init(destinationName: String, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
 
 - `destinationName`: The storyboard name of a view for the navigation link to present.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

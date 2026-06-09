@@ -8,6 +8,7 @@ A list of all modes the alarm can be in: either alert, countdown, or paused.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

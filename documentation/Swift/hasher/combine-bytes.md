@@ -26,7 +26,7 @@ mutating func combine(bytes: UnsafeRawBufferPointer)
 
 ## See Also
 
-- [func combine<H>(H)](hasher/combine(_:).md)
+- [func combine<H>(borrowing H)](hasher/combine(_:).md)
   Adds the given value to this hasher, mixing its essential parts into the hasher state.
 
 

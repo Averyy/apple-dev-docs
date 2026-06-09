@@ -42,7 +42,7 @@ Create an `ImageCreator` object and use its [`images(for:style:limit:)`](imagecr
 ### Instance Methods
 - [func images(for: [ImagePlaygroundConcept], style: ImagePlaygroundStyle, options: ImagePlaygroundOptions, limit: Int) -> some AsyncSequence<ImageCreator.CreatedImage, any Error>
 ](imagecreator/images(for:style:options:limit:).md)
-  Starts the creation of images based on the description and style information you provide.
+  Creates one or more images from the provided description and style information and returns the results asynchronously.
 
 ## Relationships
 

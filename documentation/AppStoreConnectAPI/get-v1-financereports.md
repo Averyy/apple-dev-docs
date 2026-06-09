@@ -1,4 +1,4 @@
-# Download Finance Reports
+# Download finance reports
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -29,7 +29,7 @@ For more information see [`Download financial reports`](https://developer.apple.
 
 ## See Also
 
-- [Download Sales and Trends Reports](get-v1-salesreports.md)
+- [Download sales and trends reports](get-v1-salesreports.md)
   Download sales and trends reports filtered by your specified criteria.
 
 

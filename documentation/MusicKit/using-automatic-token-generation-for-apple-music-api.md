@@ -22,7 +22,7 @@ Be sure to set the bundle identifier of your app target to the same value you us
 
 ## See Also
 
-- [Using MusicKit to Integrate with Apple Music](using_musickit_to_integrate_with_apple_music.md)
+- [Using MusicKit to integrate with Apple Music](using-musickit-to-integrate-with-apple-music.md)
   Find an album in Apple Music that corresponds to a CD in a user’s collection, and present the information for the album.
 - [NSAppleMusicUsageDescription](../BundleResources/Information-Property-List/NSAppleMusicUsageDescription.md)
   A message that tells people why the app is requesting access to their media library.

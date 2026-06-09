@@ -18,6 +18,10 @@ final func anchorUpdates(forID id: UUID) -> AnchorUpdateSequence<CameraRegionAnc
 
 An async sequence of updates for the given anchor.
 
+## Parameters
+
+- `id`: ID of the camera region anchor to get updates for.
+
 
 ---
 

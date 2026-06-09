@@ -105,6 +105,15 @@ To play one of the animations in your app, create an entity from the `.reality` 
 ### Managing references to animations
 - [func removeAll(resource: AnimationResource)](animationlibrarycomponent/removeall(resource:).md)
   Removes all the component’s references to an animation resource.
+### Configuring default playback
+- [var automaticallyPlaysDefaultAnimation: Bool](animationlibrarycomponent/automaticallyplaysdefaultanimation.md)
+  Whether to automatically play the default animation when the entity is added to a scene and enabled. Default value is false, meaning the default animation will not be automatically played by default. This value can only be set when initializing `AnimationLibraryComponent`
+- [init(automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(automaticallyplaysdefaultanimation:).md)
+  Creates an empty animation library.
+- [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
+  Creates an animation library from a dictionary that associates an animation’s data with its name.
+- [init(dictionaryLiteral: (String, AnimationResource)..., automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(dictionaryliteral:automaticallyplaysdefaultanimation:).md)
+  Creates an animation library from a variadic list of key-value pairs
 ### Structures
 - [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)
   A collection of animations an entity can play.

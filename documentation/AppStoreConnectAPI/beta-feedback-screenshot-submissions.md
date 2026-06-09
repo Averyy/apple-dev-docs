@@ -26,7 +26,7 @@ Both Team and Individual keys can use these endpoints with the correct role.
 ### Reading and deleting beta feedback screenshot submissions
 - [List All Beta Feedback Screenshot Submissions for an App](get-v1-apps-_id_-betafeedbackscreenshotsubmissions.md)
   Get beta feedback screenshot submissions for a specific app.
-- [List All Beta Feedback Screenshot Submission IDs for an App](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
+- [List all beta feedback screenshot submission ids for an app](get-v1-apps-_id_-relationships-betafeedbackscreenshotsubmissions.md)
   Get a list of beta feedback screenshot submissions for a specific app.
 - [Read a Beta Feedback Screenshot Submission](get-v1-betafeedbackscreenshotsubmissions-_id_.md)
   Get information for a specific beta feedback screenshot submission.
@@ -34,9 +34,9 @@ Both Team and Individual keys can use these endpoints with the correct role.
   Delete a beta feedback screenshot submission from your app.
 ### Objects
 - [object BetaFeedbackScreenshotSubmission](betafeedbackscreenshotsubmission.md)
-  The data structure that represents a `BetaFeedbackScreenshotSubmission` resource.
+  A screenshot and feedback note submitted by a TestFlight beta tester while testing a specific build.
 - [object BetaFeedbackScreenshotSubmissionResponse](betafeedbackscreenshotsubmissionresponse.md)
-  A response that contains a single `BetaFeedbackScreenshotSubmission` resource.
+  A response containing a single screenshot and feedback note submitted by a TestFlight beta tester.
 - [object BetaFeedbackScreenshotSubmissionsResponse](betafeedbackscreenshotsubmissionsresponse.md)
 - [object BetaFeedbackScreenshotImage](betafeedbackscreenshotimage.md)
 

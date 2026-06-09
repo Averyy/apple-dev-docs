@@ -11,8 +11,6 @@ The payload that configures the default fallback global Ethernet interface.
 - Mac Catalyst 17.0+
 - macOS 10.13+
 - tvOS 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,9 +24,9 @@ Specify `com.apple.globalethernet.managed` as the payload type.
 
 This payload’s contents contain these profile-specific keys:
 
-- **Interface (String)**: This payload uses the value `GlobalEthernet`.
-- **EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md))**: The dictionary that defines the enterprise profile for the network.
-- **SetupModes (String)**: The type of connection mode, which is either `System` or `Loginwindow`. `System` is the default.
+- Interface (String): This payload uses the value `GlobalEthernet`.
+- EAPClientConfiguration ([`WiFi.EAPClientConfiguration`](wifi/eapclientconfiguration-data.dictionary.md)): The dictionary that defines the enterprise profile for the network.
+- SetupModes (String): The type of connection mode, which is either `System` or `Loginwindow`. `System` is the default.
 
 ##### Profile Availability
 
@@ -37,10 +35,10 @@ This payload’s contents contain these profile-specific keys:
 | Device channel | iOS, macOS, Shared iPad, tvOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS |
-| Allow multiple payloads | NA |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

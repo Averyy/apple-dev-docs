@@ -34,7 +34,6 @@ If the delegate doesn’t define this method, the menu is populated to find out 
 
 - [func performActionForItem(at: Int)](nsmenu/performactionforitem(at:).md)
   Causes the application to send the action message of a specified menu item to its target.
-- [Application Menu and Pop-up List Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MenuList/MenuList.html#//apple_ref/doc/uid/10000032i)
 - [func performKeyEquivalent(with: NSEvent) -> Bool](nsmenu/performkeyequivalent(with:).md)
   Performs the action for the menu item that corresponds to the given key equivalent.
 

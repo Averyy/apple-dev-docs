@@ -145,7 +145,7 @@ The following code listing shows an example of a JWT payload with a scope.
 }
 ```
 
-With this payload, App Store Connect only allows you to fetch a list of iOS apps using the [`List Apps`](get-v1-apps.md) endpoint if you use the `filter[platform]=IOS` query parameter.
+With this payload, App Store Connect only allows you to fetch a list of iOS apps using the [`List apps`](get-v1-apps.md) endpoint if you use the `filter[platform]=IOS` query parameter.
 
 You can use a JWT without a `scope` for any request as long as the role of the API key allows it.
 

@@ -18,7 +18,7 @@ var vm_pkt_iov: UnsafeMutablePointer<iovec>
 ## See Also
 
 - [var vm_flags: UInt32](vmpktdesc/vm_flags.md)
-  Option flags. Should be set to `0` on read.
+  Option flags associated with the packet.
 - [var vm_pkt_iovcnt: UInt32](vmpktdesc/vm_pkt_iovcnt.md)
   The number of packet buffers in `vm_pkt_iov`.
 - [var vm_pkt_size: Int](vmpktdesc/vm_pkt_size.md)

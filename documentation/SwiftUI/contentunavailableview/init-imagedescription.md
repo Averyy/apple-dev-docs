@@ -24,6 +24,7 @@ init(_ title: LocalizedStringKey, image name: String, description: Text? = nil)
 ## Parameters
 
 - `title`: A title generated from a localized string.
+- `name`: The name of the image resource to lookup.
 - `description`: The view that describes the interface.
 
 ## See Also

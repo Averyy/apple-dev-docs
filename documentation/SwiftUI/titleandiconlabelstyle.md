@@ -17,6 +17,7 @@ A label style that shows both the title and icon of the label using a system-sta
 ## Declaration
 
 ```swift
+nonisolated
 struct TitleAndIconLabelStyle
 ```
 

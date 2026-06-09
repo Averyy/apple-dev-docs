@@ -13,8 +13,6 @@ The payload that configures certificate transparency enforcement.
 - tvOS 12.1.1+
 - visionOS 1.0+
 - watchOS 5.1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,10 +33,10 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 

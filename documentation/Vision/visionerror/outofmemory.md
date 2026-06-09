@@ -12,6 +12,7 @@ An error that indicates there’s not enough memory to perform the operation.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -22,8 +22,14 @@ var startIndex: Data.Index { get }
 
 ## See Also
 
+- [typealias Index](data/index.md)
+  A type used to indicate a position in a data’s buffer.
 - [var endIndex: Data.Index](data/endindex.md)
   The end index into the data.
+- [func index(after: Data.Index) -> Data.Index](data/index(after:).md)
+  Returns the index that immediately follows the specified index.
+- [func index(before: Data.Index) -> Data.Index](data/index(before:).md)
+  Returns the index that immediately precedes the specified index.
 
 
 ---

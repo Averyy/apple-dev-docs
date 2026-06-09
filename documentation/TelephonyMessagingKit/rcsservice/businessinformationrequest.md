@@ -32,6 +32,10 @@ To create an instance of this type, use the [`CellularServiceID`](cellularservic
   Cache policy to use for request.
 - [RCSService.BusinessInformationRequest.CachePolicy](rcsservice/businessinformationrequest/cachepolicy-swift.enum.md)
   `
+### Structures
+- [RCSService.BusinessInformationRequest.WelcomeMessageInformation](rcsservice/businessinformationrequest/welcomemessageinformation-swift.struct.md)
+### Instance Properties
+- [var welcomeMessageInformation: RCSService.BusinessInformationRequest.WelcomeMessageInformation?](rcsservice/businessinformationrequest/welcomemessageinformation-swift.property.md)
 
 ## Relationships
 

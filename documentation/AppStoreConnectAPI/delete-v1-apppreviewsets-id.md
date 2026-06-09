@@ -1,4 +1,4 @@
-# Delete an App Preview Set
+# Delete an app preview set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,11 +14,11 @@ Delete an app preview set and all of its previews.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app preview set resource ID from the [`List all app preview sets for an app store version localization`](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md) response.
 
 ## See Also
 
-- [Create an App Preview Set](post-v1-apppreviewsets.md)
+- [Create an app preview set](post-v1-apppreviewsets.md)
   Add a new app preview set to an App Store version localization for a specific app preview type and display size.
 
 

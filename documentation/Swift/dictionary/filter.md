@@ -18,7 +18,7 @@ Returns a new dictionary containing the key-value pairs of the dictionary that s
 ## Declaration
 
 ```swift
-func filter(_ isIncluded: (Dictionary<Key, Value>.Element) throws -> Bool) rethrows -> [Key : Value]
+consuming func filter<E>(_ isIncluded: (Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value] where E : Error
 ```
 
 #### Return Value

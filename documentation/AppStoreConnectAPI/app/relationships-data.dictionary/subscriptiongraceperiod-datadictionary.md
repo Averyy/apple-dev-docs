@@ -16,6 +16,7 @@ object App.Relationships.SubscriptionGracePeriod
 
 ### Objects
 - [object App.Relationships.SubscriptionGracePeriod.Data](app/relationships-data.dictionary/subscriptiongraceperiod-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related subscription grace period resource.
 
 ## Properties
 

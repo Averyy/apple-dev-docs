@@ -11,7 +11,7 @@ The estimated travel time in seconds, excluding delays for traffic.
 ## Declaration
 
 ```swift
-staticTravelTime: number;
+staticTravelTime: number | null;
 ```
 
 #### Discussion

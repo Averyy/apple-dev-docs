@@ -16,6 +16,7 @@ object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup
 
 ### Objects
 - [object GameCenterAchievementCreateRequest.Data.Relationships.GameCenterGroup.Data](gamecenterachievementcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecentergroup-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center achievement.
 
 ## Properties
 

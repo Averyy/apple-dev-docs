@@ -26,7 +26,11 @@ For more information about using these effects in your app, see [`Drawing and gr
 ### Scale
 - [func scaledToFill() -> some View](view/scaledtofill.md)
   Scales this view to fill its parent.
+- [func scaledToFill3D() -> some View](view/scaledtofill3d.md)
+  Scales this view to fill its parent.
 - [func scaledToFit() -> some View](view/scaledtofit.md)
+  Scales this view to fit its parent.
+- [func scaledToFit3D() -> some View](view/scaledtofit3d.md)
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
   Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
@@ -38,6 +42,8 @@ For more information about using these effects in your app, see [`Drawing and gr
   Scales images within the view according to one of the relative sizes available including small, medium, and large images sizes.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
   Constrains this view’s dimensions to the specified aspect ratio.
+- [func aspectRatio3D(Size3D?, contentMode: ContentMode) -> some View](view/aspectratio3d(_:contentmode:).md)
+  Constrains this view’s dimensions to the specified 3D aspect ratio.
 ### Rotation and transformation
 - [func rotationEffect(Angle, anchor: UnitPoint) -> some View](view/rotationeffect(_:anchor:).md)
   Rotates a view’s rendered output in two dimensions around the specified point.
@@ -47,6 +53,10 @@ For more information about using these effects in your app, see [`Drawing and gr
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func rotation3DEffect(_:axis:anchor:)](view/rotation3deffect(_:axis:anchor:).md)
   Rotates the view’s content by an angle about an axis that you specify as a tuple of elements.
+- [func rotation3DLayout(Rotation3D) -> some View](view/rotation3dlayout(_:).md)
+  Rotates a view with impacts to its frame in a containing layout
+- [func rotation3DLayout(_:axis:)](view/rotation3dlayout(_:axis:).md)
+  Rotates a view with impacts to its frame in a containing layout
 - [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint, anchorZ: CGFloat, perspective: CGFloat) -> some View](view/perspectiverotationeffect(_:axis:anchor:anchorz:perspective:).md)
   Renders a view’s content as if it’s rotated in three dimensions around the specified axis.
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
@@ -82,6 +92,8 @@ For more information about using these effects in your app, see [`Drawing and gr
   Applies effects to this view, while providing access to layout information through a geometry proxy.
 - [func visualEffect3D((EmptyVisualEffect, GeometryProxy3D) -> some VisualEffect) -> some View](view/visualeffect3d(_:).md)
   Applies effects to this view, while providing access to layout information through a 3D geometry proxy.
+- [func materialActiveAppearance(MaterialActiveAppearance) -> some View](view/materialactiveappearance(_:).md)
+  Sets an explicit active appearance for materials in this view.
 ### Shaders
 - [func colorEffect(Shader, isEnabled: Bool) -> some View](view/coloreffect(_:isenabled:).md)
   Returns a new view that applies `shader` to `self` as a filter effect on the color of each pixel.
@@ -103,16 +115,24 @@ For more information about using these effects in your app, see [`Drawing and gr
   Applies the given animation to this view when the specified value changes.
 - [func animation<V>(Animation?, body: (PlaceholderContentView<Self>) -> V) -> some View](view/animation(_:body:).md)
   Applies the given animation to all animatable values within the `body` closure.
+- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
+  Modifies the view to use a given transition as its method of animating changes to the contents of its views.
+- [func geometryGroup() -> some View](view/geometrygroup.md)
+  Isolates the geometry (e.g. position and size) of the view from its parent view.
 - [func keyframeAnimator<Value>(initialValue: Value, repeating: Bool, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](view/keyframeanimator(initialvalue:repeating:content:keyframes:).md)
   Loops the given keyframes continuously, updating the view using the modifiers you apply in `body`.
 - [func keyframeAnimator<Value>(initialValue: Value, trigger: some Equatable, content: (PlaceholderContentView<Self>, Value) -> some View, keyframes: (Value) -> some Keyframes) -> some View](view/keyframeanimator(initialvalue:trigger:content:keyframes:).md)
   Plays the given keyframes when the given trigger value changes, updating the view using the modifiers you apply in `body`.
+- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](view/matchedgeometryeffect(id:in:properties:anchor:issource:).md)
+  Defines a group of views with synchronized geometry using an identifier and namespace that you provide.
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some View](view/matchedtransitionsource(id:in:).md)
+  Identifies this view as the source of a navigation transition, such as a zoom transition.
+- [func matchedTransitionSource(id: some Hashable, in: Namespace.ID, configuration: (EmptyMatchedTransitionSourceConfiguration) -> some MatchedTransitionSourceConfiguration) -> some View](view/matchedtransitionsource(id:in:configuration:).md)
+  Identifies this view as the source of a navigation transition, such as a zoom transition.
 - [func phaseAnimator<Phase>(some Sequence, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:content:animation:).md)
   Animates effects that you apply to a view over a sequence of phases that change continuously.
 - [func phaseAnimator<Phase>(some Sequence, trigger: some Equatable, content: (PlaceholderContentView<Self>, Phase) -> some View, animation: (Phase) -> Animation?) -> some View](view/phaseanimator(_:trigger:content:animation:).md)
   Animates effects that you apply to a view over a sequence of phases that change based on a trigger.
-- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
-  Modifies the view to use a given transition as its method of animating changes to the contents of its views.
 - [func transition(_:)](view/transition(_:).md)
   Associates a transition with the view.
 - [func transaction((inout Transaction) -> Void) -> some View](view/transaction(_:).md)
@@ -121,12 +141,6 @@ For more information about using these effects in your app, see [`Drawing and gr
   Applies the given transaction mutation function to all animations used within the view.
 - [func transaction<V>((inout Transaction) -> Void, body: (PlaceholderContentView<Self>) -> V) -> some View](view/transaction(_:body:).md)
   Applies the given transaction mutation function to all animations used within the `body` closure.
-- [func contentTransition(ContentTransition) -> some View](view/contenttransition(_:).md)
-  Modifies the view to use a given transition as its method of animating changes to the contents of its views.
-- [func matchedGeometryEffect<ID>(id: ID, in: Namespace.ID, properties: MatchedGeometryProperties, anchor: UnitPoint, isSource: Bool) -> some View](view/matchedgeometryeffect(id:in:properties:anchor:issource:).md)
-  Defines a group of views with synchronized geometry using an identifier and namespace that you provide.
-- [func geometryGroup() -> some View](view/geometrygroup.md)
-  Isolates the geometry (e.g. position and size) of the view from its parent view.
 
 ## See Also
 

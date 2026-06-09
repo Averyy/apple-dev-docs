@@ -29,10 +29,14 @@ enum Eye
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [ImmersiveCameraLensDefinition.STMapType](immersivecameralensdefinition/stmaptype.md)
+  A value that represents a camera lens projection type.
 
 
 ---

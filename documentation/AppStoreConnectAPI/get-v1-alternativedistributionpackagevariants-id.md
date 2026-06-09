@@ -1,4 +1,4 @@
-# Read Information for an Alternative Distribution Package Variants
+# Read variant information for an alternative distribution package
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -46,7 +46,7 @@ https://api.appstoreconnect.apple.com/v1/alternativeDistributionPackageVariants/
 
 ## Parameters
 
-- `fields[alternativeDistributionPackageVariants]` ([string])
+- `fields[alternativeDistributionPackageVariants]` ([string]): Additional fields to include for each alternative distribution package variants resource returned by the response.
 
 ## See Also
 

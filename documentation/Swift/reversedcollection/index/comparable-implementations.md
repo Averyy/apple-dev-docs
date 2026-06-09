@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (ReversedCollection<Base>.Index, ReversedCollection<Base>.Index) -> Bool](reversedcollection/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](reversedcollection/index/_(_:_:)-1oel1.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_(_:_:)-40y9l.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func <= (Self, Self) -> Bool](reversedcollection/index/_=(_:_:)-1gott.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_=(_:_:)-3lx1x.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](reversedcollection/index/_=(_:_:)-5ovrh.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](reversedcollection/index/_=(_:_:)-9ksg6.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

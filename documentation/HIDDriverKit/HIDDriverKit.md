@@ -73,6 +73,8 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
 ### Macros
 - [kIOHIDDeviceApprovedCarPlayDeviceKey](kiohiddeviceapprovedcarplaydevicekey.md)
 - [kIOHIDDeviceCarPlayDeviceKey](kiohiddevicecarplaydevicekey.md)
+- [kIOHIDDeviceHIDRMHashKey](kiohiddevicehidrmhashkey.md)
+- [kIOHIDEventServicePropertiesRequiredForMatching](kiohideventservicepropertiesrequiredformatching.md)
 - [kIOHIDEventServiceSensorControlOptionsKey](kiohideventservicesensorcontroloptionskey.md)
 - [kIOHIDSupportedEventMaskKey](kiohidsupportedeventmaskkey.md)
 - [kIOHIDSupportedKeyboardUsagePairsKey](kiohidsupportedkeyboardusagepairskey.md)
@@ -91,8 +93,11 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
 - [kHIDUsage_LED_WarningStatus](khidusage_led_warningstatus.md)
 - [kHIDUsage_Snsr_Biometric_HeartRate](khidusage_snsr_biometric_heartrate.md)
 - [kHIDUsage_Snsr_Data_Biometric_HeartRate](khidusage_snsr_data_biometric_heartrate.md)
+- [kHIDUsage_Snsr_Data_Hinge](khidusage_snsr_data_hinge.md)
+- [kHIDUsage_Snsr_Data_Hinge_Angle](khidusage_snsr_data_hinge_angle.md)
 - [kHIDUsage_Snsr_Motion_GravityVector](khidusage_snsr_motion_gravityvector.md)
 - [kHIDUsage_Snsr_Motion_LinearAccelerometer](khidusage_snsr_motion_linearaccelerometer.md)
+- [kHIDUsage_Snsr_Other_HingeAngle](khidusage_snsr_other_hingeangle.md)
 ### Enumerations
 - [IOHIDServiceSensorControlOptions](iohidservicesensorcontroloptions.md)
 

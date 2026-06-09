@@ -1,4 +1,4 @@
-# Replace All App Previews for an App Preview Set
+# Replace all app previews for an app preview set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Change the order of the app previews in a preview set.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app preview set resource ID from the [`List all app preview sets for an app store version localization`](get-v1-appstoreversionlocalizations-_id_-apppreviewsets.md) response.
 
 ## See Also
 
-- [List All App Previews for an App Preview Set](get-v1-apppreviewsets-_id_-apppreviews.md)
+- [List all app previews for an app preview set](get-v1-apppreviewsets-_id_-apppreviews.md)
   List all ordered app previews in a preview set.
-- [Get All App Preview IDs for an App Preview Set](get-v1-apppreviewsets-_id_-relationships-apppreviews.md)
+- [Get all app preview ids for an app preview set](get-v1-apppreviewsets-_id_-relationships-apppreviews.md)
   Get the ordered app preview IDs in a preview set.
 
 

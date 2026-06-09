@@ -6,8 +6,7 @@
 Revoke assets from client user IDs and serial numbers.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 #### Discussion
 

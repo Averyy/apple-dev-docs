@@ -37,6 +37,8 @@ Use this to enhance a contextual action with more context. For example, if the a
   The experience controller for this view controller.
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
+- [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+- [class AVViewport](avviewport.md)
 
 
 ---

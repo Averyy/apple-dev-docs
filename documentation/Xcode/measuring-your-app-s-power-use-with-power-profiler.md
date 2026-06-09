@@ -14,7 +14,7 @@ Create a plan to adopt power-efficient designs and API best practice to reduce y
 
 ##### Record and Analyze a Power Trace Using Instruments
 
-Make sure your device is available in Xcode, either wirelessly or using a cable, and set the run destination in Xcode to the device you want to use. For more information, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md). Record a power trace by following these steps:
+Make sure your device is available in Xcode, either wirelessly or using a cable, and set the run destination in Xcode to the device you want to use. For more information, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md). Record a power trace by following these steps:
 
 1. In Xcode, choose Product > Profile.
 2. In Instruments the Choose a Template… window opens, choose the Blank template.

@@ -17,7 +17,7 @@ The environment associated with the graphics context.
 ## Declaration
 
 ```swift
-var environment: EnvironmentValues { get }
+var environment: EnvironmentValues { get set }
 ```
 
 #### Discussion

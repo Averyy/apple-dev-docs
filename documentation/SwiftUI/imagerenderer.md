@@ -63,7 +63,7 @@ private func createAwardView(forUser: String, date: Date) -> some View {
 
 Because `ImageRenderer` conforms to [`ObservableObject`](https://developer.apple.com/documentation/Combine/ObservableObject), you can use it to produce a stream of images as its properties change. Subscribe to the renderer’s [`objectWillChange`](imagerenderer/objectwillchange.md) publisher, then use the renderer to rasterize a new image each time the subscriber receives an update.
 
-> ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI renders, such as text, images, shapes, and composite views of these types. It does not render views provided by native platform frameworks (AppKit and UIKit) such as web views, media players, and some controls. For these views, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md).
+> ❗ **Important**: `ImageRenderer` output only includes views that SwiftUI rasterizes directly using its own drawing primitives, such as text, images, shapes, and composite views of these types. It does not include views whose contents are composited by Core Animation layers, such as more complex controls and containers, web views, media players, and most types of UIKit and AppKit views. In those cases, `ImageRenderer` displays a placeholder image, similar to the behavior of [`drawingGroup(opaque:colorMode:)`](view/drawinggroup(opaque:colormode:).md). Whether a particular view is rendered using SwiftUI’s own drawing primitives or composited by Core Animation may change in future releases. However, any view that is currently supported is guaranteed to remain supported.
 
 ##### Rendering to a Pdf Context
 

@@ -6,8 +6,8 @@
 An integer value that specifies the output height, measured in pixels.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

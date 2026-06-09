@@ -18,7 +18,7 @@ Presents a sheet using the given item as a data source for the sheet’s content
 
 ```swift
 nonisolated
-func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping (Item) -> Content) -> some View where Item : Identifiable, Content : View
+func sheet<Item, Content>(item: Binding<Item?>, onDismiss: (() -> Void)? = nil, @ContentBuilder content: @escaping (Item) -> Content) -> some View where Item : Identifiable, Content : View
 ```
 
 #### Discussion

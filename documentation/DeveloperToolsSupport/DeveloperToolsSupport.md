@@ -47,6 +47,7 @@ To add items to the library, create a structure that conforms to the [`LibraryCo
 - [struct ImageResource](imageresource.md)
   An image resource.
 ### Structures
+- [struct PreviewArguments](previewarguments.md)
 - [struct PreviewBodyBuilder](previewbodybuilder.md)
   Builder for preview body content within a `#Preview` macro.
 - [struct PreviewMacroBodyBuilder](previewmacrobodybuilder.md)

@@ -56,16 +56,16 @@ Resuming from a continuation more than once is undefined behavior. Never resumin
 ## See Also
 
 - [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(isolation:function:_:).md)
-  Invokes the passed in closure with a checked continuation for the current task.
+  Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](withcheckedcontinuation(function:_:).md).
 - [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
-  Invokes the passed in closure with a checked continuation for the current task.
+  Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
 - [struct UnsafeContinuation](unsafecontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, without correctness checking.
 - [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
-  Invokes the passed in closure with a unsafe continuation for the current task.
+  Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
 - [typealias UnsafeThrowingContinuation](unsafethrowingcontinuation.md)
 - [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
-  Invokes the passed in closure with a unsafe continuation for the current task.
+  Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
 
 
 ---

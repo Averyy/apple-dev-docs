@@ -30,6 +30,8 @@ Registering an `NSView` object for dragged types automatically makes it a candid
   The array of pasteboard drag types that the view can accept.
 - [func beginDraggingSession(with: [NSDraggingItem], event: NSEvent, source: any NSDraggingSource) -> NSDraggingSession](nsview/begindraggingsession(with:event:source:).md)
   Initiates a dragging session with a group of dragging items.
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+  Initiates a drag operation using a gesture recognizer.
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nsview/shoulddelaywindowordering(for:).md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 

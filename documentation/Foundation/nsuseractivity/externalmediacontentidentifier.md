@@ -18,6 +18,13 @@ A unique identifier from the app’s media content catalog for the currently dis
 var externalMediaContentIdentifier: String? { get set }
 ```
 
+## See Also
+
+- [var appEntityIdentifier: EntityIdentifier?](nsuseractivity/appentityidentifier.md)
+  The identifier of an app entity that you associate with the user activity.
+- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
+  A string that identifies the user activity’s content.
+
 
 ---
 

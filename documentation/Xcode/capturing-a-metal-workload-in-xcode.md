@@ -12,10 +12,10 @@ You can use Xcode to capture your app’s Metal workload. First, ensure that the
 
 Xcode automatically enables the GPU Frame Capture option if your target links to the [`Metal`](https://developer.apple.com/documentation/Metal) framework, or any other framework that uses the Metal API. If you’re collaborating on a project, it’s possible that someone else may have disabled GPU Frame Capture. To ensure it’s enabled, follow these steps:
 
-1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. ![An Xcode screenshot showing the Scheme menu with the Edit Scheme menu item highlighted.](https://docs-assets.developer.apple.com/published/52f80993d6dca820d9e146ee65e533d2/gputools-metal-debugger-essentials-capture-edit-scheme%402x.png)
+1. In the Xcode toolbar, choose Edit Scheme from the Scheme menu. ![An Xcode screenshot showing the Scheme menu with the Edit Scheme menu item highlighted.](https://docs-assets.developer.apple.com/published/b182d432917c885b06799aa8f70ba238/gputools-metal-debugger-essentials-capture-edit-scheme%402x.png)
 2. Select the Run scheme action.
 3. Select the Options tab.
-4. Choose a GPU Frame Capture option and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/04a267f398a9b9ecd2a91c97369a6a77/gputools-metal-debugger-essentials-capture-options%402x.png)
+4. Choose a GPU Frame Capture option and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/a04d28f8122a91a62b4c8b170ad8c4ce/gputools-metal-debugger-essentials-capture-options%402x.png)
 
 The GPU Frame Capture options include the following:
 
@@ -27,15 +27,12 @@ The GPU Frame Capture options include the following:
 
 While debugging your app, you can capture a GPU trace by following these steps:
 
-1. Click the Metal Capture button in the debug bar. ![A screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/0d9ef2422d5cb72d633bac5301693550/gputools-metal-debugger-essentials-capture-popup%402x.png)
+1. Click the Metal Capture button in the debug bar. ![A screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/8b0dd785b8d53eef279e66da90847a49/gputools-metal-debugger-essentials-capture-popup%402x.png)
 2. Select the scope that you want to capture. This can be a frame, Metal layer, command queue, device, or any custom scopes that you set up previously. For more information, see [`Creating and using custom capture scopes`](creating-and-using-custom-capture-scopes.md).
 3. Select the count. Depending on the scope, this might include the number of frames or command buffers.
-4. Optionally, select Profile after Replay so that Xcode automatically profiles after capturing. Profiling has an initial performance impact on the Metal debugger, so only enable this option when debugging your app’s performance. You can always profile later as needed. For more information, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
-5. Click Capture.
+4. Click Capture.
 
-Xcode automatically starts capturing a GPU trace when the scope triggers, and then finishes the capture based on the scope and count you select. To manually stop the capture, you can click the Finish button at any time.
-
-> 💡 **Tip**: In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
+Xcode automatically starts capturing a GPU trace when the scope starts, then finishes the capture based on the scope and count you select. To manually stop the capture, you can click the Finish button at any time.
 
 ##### Capture Your Metal Workload After Deployment
 
@@ -43,15 +40,28 @@ Capture a GPU trace after deploying your app by following these steps:
 
 1. In Xcode, choose Debug > Debug Executable.
 2. Select your app in Finder and click Choose. Xcode automatically brings up the scheme editor.
-3. Click the Options tab, choose a GPU Frame Capture option, and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/7ef16897d680c1e5d44bf10306a0ee33/gputools-metal-debugger-essentials-capture-choose-options%402x.png)
+3. Click the Options tab, choose a GPU Frame Capture option, and click Close. ![A screenshot of the Xcode scheme editor highlighting the GPU Frame Capture option.](https://docs-assets.developer.apple.com/published/c76f2031cabc4029aca800e1eec8ca39/gputools-metal-debugger-essentials-capture-choose-options%402x.png)
 4. Run your app by choosing Product > Run.
-5. Click the Metal Capture button in the debug bar. ![An Xcode screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/2c7fc71b578a089d734d249b4e245d8d/gputools-metal-debugger-essentials-capture-choose-capture%402x.png)
-6. Select the scope and count that you want to capture. You can optionally select Profile after Replay. For more information, see [`Replaying a GPU trace file`](replaying-a-gpu-trace-file.md).
+5. Click the Metal Capture button in the debug bar. ![An Xcode screenshot of the Metal Capture popover, accessible from the Metal Capture button in the debug bar.](https://docs-assets.developer.apple.com/published/7ae15267152d5476f83c11aae06722d7/gputools-metal-debugger-essentials-capture-choose-capture%402x.png)
+6. Select the scope and count that you want to capture.
 7. Click Capture.
 
-Xcode automatically starts capturing a GPU trace when the scope triggers, and then finishes the capture based on the count you select. To manually stop the capture, you can click the Finish button at any time.
+Xcode automatically starts capturing a GPU trace when the scope starts, then finishes the capture based on the count you select. To manually stop the capture, you can click the Finish button at any time.
 
-> 💡 **Tip**: In macOS, you can start a capture by selecting an option from the “Capture shortcut” menu, and then pressing that keyboard shortcut while the app is active.
+##### Configure Advanced Capture Options
+
+The Metal Capture popover includes an Advanced section with additional options for controlling capture behavior. To reveal these options, click Show next to Advanced in the popover.
+
+![A screenshot of the Metal Capture popover with the Advanced section expanded, showing additional capture options.](https://docs-assets.developer.apple.com/published/bcc5205b29dbc60e87ae994cdcbf3328/gputools-metal-debugger-essentials-capture-popup-expanded%402x.png)
+
+The advanced capture options include the following:
+
+- **Keyboard shortcut**: Choose a keyboard shortcut to start a capture while your app is in the foreground. This option is only available on macOS.
+- **Profile after replay**: Automatically profile your captured workload with default settings after Xcode finishes replaying it. Profiling has an initial performance impact on the Metal debugger, so only enable this option when debugging your app’s performance. You can always profile later as needed.
+- **Include MetalFX temporal scaler history**: Record historical data for MetalFX temporal scalers to improve captured texture quality during replay. Enabling this option can make captures slower. This option is available when your app uses MetalFX temporal scaling.
+- **Optimize shared memory capture**: Control how Xcode optimizes capturing CPU writes to resources using shared memory storage, which can improve capture performance and reduce the GPU trace’s size on disk. - **Automatic**: Xcode enables the optimization when Xcode can determine that the environment supports it safely, and disables it when system call interposition is unavailable.
+- **Always**: Force the optimization on regardless of environment. Use this when you have large or slow GPU frame captures and know your app doesn’t write to shared-memory buffers via system calls.
+- **Never**: Disable the optimization entirely. Use this if you suspect the optimization is producing incorrect results.
 
 ##### Save the Capture to Your Computer
 
@@ -67,6 +77,10 @@ To save your captured Metal workload as a GPU trace, choose File > Export. For m
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
 - [Optimizing GPU performance](optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
+- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+  Investigate rendering issues in GPU traces without leaving the Terminal.
+- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+  Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
 
 ---

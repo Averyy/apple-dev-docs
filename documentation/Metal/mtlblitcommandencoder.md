@@ -98,7 +98,7 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
 - [func copy(from: any MTLTexture, sourceSlice: Int, sourceLevel: Int, sourceOrigin: MTLOrigin, sourceSize: MTLSize, to: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin)](mtlblitcommandencoder/copy(from:sourceslice:sourcelevel:sourceorigin:sourcesize:to:destinationslice:destinationlevel:destinationorigin:).md)
   Encodes a command that copies image data from a texture’s slice into another slice.
 - [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:to:destinationorigin:destinationdimensions:).md)
-  Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
+  Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
 ### Copying buffer data to a texture
 - [func copy(from: any MTLBuffer, sourceOffset: Int, sourceBytesPerRow: Int, sourceBytesPerImage: Int, sourceSize: MTLSize, to: any MTLTexture, destinationSlice: Int, destinationLevel: Int, destinationOrigin: MTLOrigin)](mtlblitcommandencoder/copy(from:sourceoffset:sourcebytesperrow:sourcebytesperimage:sourcesize:to:destinationslice:destinationlevel:destinationorigin:).md)
   Encodes a command to copy image data from a source buffer into a destination texture.
@@ -146,6 +146,9 @@ For more information about stages and synchronization, see [`MTLStages`](mtlstag
   Encodes a command that retrieves a sparse texture’s access data for a specific region, mipmap level, and slice.
 - [func resetTextureAccessCounters(any MTLTexture, region: MTLRegion, mipLevel: Int, slice: Int)](mtlblitcommandencoder/resettextureaccesscounters(_:region:miplevel:slice:).md)
   Encodes a command that resets a sparse texture’s access data for a specific region, mipmap level, and slice.
+### Instance Methods
+- [func copy(from: any MTLTensor, sourceOrigin: MTLTensorExtents, sourceDimensions: MTLTensorExtents, sourcePlane: MTLTensorPlaneType, to: any MTLTensor, destinationOrigin: MTLTensorExtents, destinationDimensions: MTLTensorExtents, destinationPlane: MTLTensorPlaneType)](mtlblitcommandencoder/copy(from:sourceorigin:sourcedimensions:sourceplane:to:destinationorigin:destinationdimensions:destinationplane:).md)
+  Encodes a command to copy data from a slice of a plane of a tensor into a slice of a plane of another tensor.
 
 ## Relationships
 

@@ -30,6 +30,8 @@ See [`NSError`](https://developer.apple.com/documentation/Foundation/NSError) fo
   An error encountered when performing an FSKit operation.
 - [FSError.Code](fserror/code.md)
   A code that indicates a specific FSKit error.
+- [struct FSDataCacheError](fsdatacacheerror.md)
+  An error encountered when performing an FSKit data caching operation.
 
 
 ---

@@ -9,7 +9,6 @@ The system automatically determines the style depending on whether the cell’s 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

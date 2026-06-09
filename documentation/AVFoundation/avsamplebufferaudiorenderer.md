@@ -59,6 +59,8 @@ You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`
 ### Responding to errors
 - [var error: (any Error)?](avsamplebufferaudiorenderer/error.md)
   The error that caused the renderer to no longer render sample buffers.
+### Classes
+- [AVSampleBufferAudioRenderer.Receiver](avsamplebufferaudiorenderer/receiver.md)
 
 ## Relationships
 

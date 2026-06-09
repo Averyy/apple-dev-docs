@@ -16,6 +16,11 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+- [init(displayName: String?, handles: [String], handleIdentifier: String)](csperson/init(displayname:handles:handleidentifier:).md)
+  Returns a new `CSPerson` object initialized with the specified display name and contact attributes.
+
 
 ---
 

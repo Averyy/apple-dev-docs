@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-A flag that indicates whether the app intent can continue its action while the app is in the foreground.
+A Boolean value that indicates whether running the app intent in the foreground is possible.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ var canContinueInForeground: Bool { get }
 
 #### Discussion
 
-Check for the value of `canContinueInForeground` if your app intent supports running both in the background and foreground to determine if foregrounding is appropriate in the current context. For example, an app intent might require …. to perform its action.
+Check the value of this property to determine if running the app intent in the foreground is supported in the current context. Typically, you check this value if your app intent supports both foreground and background runtime modes, and need to switch from background to foreground.
 
 
 ---

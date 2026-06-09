@@ -11,7 +11,7 @@ The center point of the request represented as latitude and longitude.
 ## Declaration
 
 ```swift
-center?: Coordinate;
+center?: CoordinateData;
 ```
 
 ## See Also
@@ -24,6 +24,8 @@ center?: Coordinate;
   A filter that lists points of interest categories to include or exclude.
 - [language](serviceconstructoroptions/language.md)
   A language identifier that determines the language for the service results text.
+- [signal](pointsofinterestsearchoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

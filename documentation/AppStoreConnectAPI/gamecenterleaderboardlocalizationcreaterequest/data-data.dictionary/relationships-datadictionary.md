@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -24,6 +26,7 @@ object GameCenterLeaderboardLocalizationCreateRequest.Data.Relationships
 ## See Also
 
 - [object GameCenterLeaderboardLocalizationCreateRequest.Data.Attributes](gamecenterleaderboardlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a leaderboard resource.
 
 
 ---

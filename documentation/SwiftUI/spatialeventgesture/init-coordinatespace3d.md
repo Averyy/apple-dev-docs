@@ -11,8 +11,14 @@ Creates the gesture with a desired coordinate space 3D.
 ## Declaration
 
 ```swift
+nonisolated
 init(coordinateSpace3D: some CoordinateSpace3D)
 ```
+
+## See Also
+
+- [init(coordinateSpace: any CoordinateSpaceProtocol)](spatialeventgesture/init(coordinatespace:).md)
+  Creates the gesture with a desired coordinate space.
 
 
 ---

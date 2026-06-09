@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: The measurement system’s BCP 47 identifier, like `metric` or `ussystem`.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/measurementsystem-swift.struct/init(stringliteral:).md)
+  Creates a measurement system instance from a BCP 47 identifier as a string literal.
+
 
 ---
 

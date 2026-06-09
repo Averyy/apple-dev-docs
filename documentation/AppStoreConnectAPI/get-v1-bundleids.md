@@ -1,4 +1,4 @@
-# List Bundle IDs
+# List bundle ids
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -31,7 +31,7 @@ Find and list bundle IDs that are registered to your team.
 
 ## See Also
 
-- [Read Bundle ID Information](get-v1-bundleids-_id_.md)
+- [Read bundle id information](get-v1-bundleids-_id_.md)
   Get information about a specific bundle ID.
 
 

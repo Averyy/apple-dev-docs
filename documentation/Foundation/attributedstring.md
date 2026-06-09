@@ -60,7 +60,7 @@ guard let range = attributedString.range(of: "free") else {return}
 attributedString[range].foregroundColor = .green
 ```
 
-You can access portions of the string with unique combinations of attributes by iterating over the string’s `runs` property.
+You can access portions of the string with unique combinations of attributes by iterating over the string’s [`runs`](attributedstring/runs-swift.property.md) property.
 
 You can define your own custom attributes by creating types that conform to [`AttributedStringKey`](attributedstringkey.md), and collecting them in an [`AttributeScope`](attributescope.md). Custom keys should also extend [`AttributeDynamicLookup`](attributedynamiclookup.md), so callers can use dot-syntax to access the attribute.
 
@@ -104,6 +104,9 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   Creates an attributed string from a character sequence and an attribute container.
 - [struct AttributeContainer](attributecontainer.md)
   A container for attribute keys and values.
+### Creating an Attributed String from Literal Values
+- [init(stringLiteral: String)](attributedstring/init(stringliteral:).md)
+  Creates an attributed string from the specified string literal, with no attributes.
 ### Creating a Localized Attributed String
 - [init(localized: String.LocalizationValue, options: AttributedString.FormattingOptions, table: String?, bundle: Bundle?, locale: Locale?, comment: StaticString?)](attributedstring/init(localized:options:table:bundle:locale:comment:)-8dlnl.md)
   Creates an attributed string by looking up a localized string from the app’s bundle.
@@ -146,8 +149,14 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [init<S, T>(T, including: KeyPath<AttributeScopes, S.Type>)](attributedstring/init(_:including:)-9ejyj.md)
   Creates an attributed string from another attributed string, including an attribute scope that a key path identifies.
 ### Applying and Modifying Attributes
+- [func setAttributes(AttributeContainer)](attributedstring/setattributes(_:).md)
+  Sets the attributed string’s attributes to those in a specified attribute container.
+- [func mergeAttributes(AttributeContainer, mergePolicy: AttributedString.AttributeMergePolicy)](attributedstring/mergeattributes(_:mergepolicy:).md)
+  Merges the attributed string’s attributes with those in a specified attribute container.
 - [AttributedString.AttributeMergePolicy](attributedstring/attributemergepolicy.md)
   An enumeration of behaviors to apply when merging attributes.
+- [func replaceAttributes(AttributeContainer, with: AttributeContainer)](attributedstring/replaceattributes(_:with:).md)
+  Replaces occurrences of attributes in one attribute container with those in another attribute container.
 - [protocol AttributedStringAttributeMutation](attributedstringattributemutation.md)
   A protocol that defines in-place mutations for attributes in an attributed string.
 ### Using Defined Attributes
@@ -157,15 +166,24 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
   A type to support dynamic member lookup of attributes and containers.
 - [struct ScopedAttributeContainer](scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
+### Accessing a Range
+- [subscript(some RangeExpression<AttributedString.Index>) -> AttributedSubstring](attributedstring/subscript(_:)-2vqsz.md)
+  Returns a substring of the attributed string using a range to indicate the substring bounds.
 ### Accessing Indices
 - [Accessing Indicies Within an Attributed String](accessing-indicies-within-an-attributed-string.md)
   Access a position within an attributed string, offset from the beginning, or before or after another known position.
 ### Accessing Views into the Attributed String
+- [var characters: AttributedString.CharacterView](attributedstring/characters.md)
+  The characters of the attributed string, as a view into the underlying string.
 - [AttributedString.CharacterView](attributedstring/characterview.md)
   A view into the underlying storage of the attributed string, as Unicode characters.
+- [var unicodeScalars: AttributedString.UnicodeScalarView](attributedstring/unicodescalars.md)
+  The Unicode scalars of the attributed string, as a view into the underlying string.
 - [AttributedString.UnicodeScalarView](attributedstring/unicodescalarview.md)
   A view into the underlying storage of the attributed string, as Unicode scalars.
-- [AttributedString.Runs](attributedstring/runs.md)
+- [var runs: AttributedString.Runs](attributedstring/runs-swift.property.md)
+  The attributed runs of the attributed string, as a view into the underlying string.
+- [AttributedString.Runs](attributedstring/runs-swift.struct.md)
   An iterable view into segments of the attributed string, each of which indicates where a run of identical attributes begins or ends.
 ### Modifying an Attributed String
 - [func insert(some AttributedStringProtocol, at: AttributedString.Index)](attributedstring/insert(_:at:).md)
@@ -200,8 +218,12 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [AttributedString.SingleAttributeTransformer](attributedstring/singleattributetransformer.md)
   A type that transforms an attribute by altering its range or value, or by replacing it entirely.
 ### Accessing Whole-String Attributes
+- [subscript<K>(dynamicMember _: KeyPath<AttributeDynamicLookup, K>) -> K.Value?](attributedstring/subscript(dynamicmember:)-34zdf.md)
+  Returns an attribute value that a key path indicates.
 - [enum AttributeDynamicLookup](attributedynamiclookup.md)
   A type to support dynamic member lookup of attributes and containers.
+- [subscript<S>(dynamicMember _: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S>](attributedstring/subscript(dynamicmember:)-9modq.md)
+  Returns a scoped attribute container that a key path indicates.
 - [struct ScopedAttributeContainer](scopedattributecontainer.md)
   An attribute container that allows dynamic member lookup of its contents within the specified attribute scope.
 ### Combining Attributed Strings
@@ -297,7 +319,10 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [AttributedString.WritingDirection](attributedstring/writingdirection.md)
   The writing direction of a piece of text.
 ### Default Implementations
+- [AttributedStringAttributeMutation Implementations](attributedstring/attributedstringattributemutation-implementations.md)
 - [AttributedStringProtocol Implementations](attributedstring/attributedstringprotocol-implementations.md)
+- [ExpressibleByStringLiteral Implementations](attributedstring/expressiblebystringliteral-implementations.md)
+- [IntentValueConvertible Implementations](attributedstring/intentvalueconvertible-implementations.md)
 
 ## Relationships
 
@@ -316,6 +341,8 @@ You can define your own attributes by implementing [`AttributedStringKey`](attri
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 - [Hashable](../Swift/Hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Transferable](../CoreTransferable/Transferable.md)

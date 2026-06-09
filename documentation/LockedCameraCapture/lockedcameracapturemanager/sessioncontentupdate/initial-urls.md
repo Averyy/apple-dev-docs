@@ -8,6 +8,7 @@ URLs to directories of the current session content available when beginning obse
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -29,6 +29,7 @@ This property is not key-value observable. Instead, track changes to this proper
 
 - [class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Name](avsamplebuffervideorenderer/requiresflushtoresumedecodingdidchangenotification.md)
   A notification that indicates that the video renderer requires flushing to continue rendering sample buffers.
+- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
 - [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](avsamplebuffervideorenderer/flush(removingdisplayedimage:completionhandler:).md)
   Tells the video renderer to discard pending enqueued sample buffers.
 

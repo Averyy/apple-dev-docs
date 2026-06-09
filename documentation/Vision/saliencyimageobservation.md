@@ -12,6 +12,7 @@ An observation that contains a grayscale heat map of important areas across an i
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

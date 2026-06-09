@@ -22,9 +22,15 @@ var COMPRESSION_LZBITMAP: compression_algorithm { get }
 
 #### Discussion
 
-The LZBITMAP compression algorithm provides compression ratios as close as possible to [`COMPRESSION_ZLIB`](compression_zlib.md) and [`COMPRESSION_LZFSE`](compression_lzfse.md), with a lower compression cost. This compression algorithm is available only for the Compression buffer API functions, [`compression_encode_buffer(_:_:_:_:_:_:)`](compression_encode_buffer(_:_:_:_:_:_:).md) and [`compression_decode_buffer(_:_:_:_:_:_:)`](compression_decode_buffer(_:_:_:_:_:_:).md).
+LZBITMAP is the Apple compression algorithm designed around the SIMD vector instruction set found on modern CPUs. Its encoding scheme arranges literal and match data so that both encoder and decoder hot loops can advance multiple symbols per vector operation, which delivers substantially higher throughput than scalar LZ-family codecs at comparable compression ratios.
 
-[`COMPRESSION_LZBITMAP`](compression_lzbitmap.md) is available only on Apple devices.
+LZBITMAP sits between [`COMPRESSION_LZ4`](compression_lz4.md) and [`COMPRESSION_LZMESH`](compression_lzmesh.md) in the speed-ratio tradeoff. It achieves compression ratios close to [`COMPRESSION_ZLIB`](compression_zlib.md) at a lower compression cost. When compression ratio and performance are equally important, prefer [`COMPRESSION_LZMESH`](compression_lzmesh.md) to favor ratio and LZBITMAP to favor decoder performance. If raw encoder speed matters more than ratio, use [`COMPRESSION_LZ4`](compression_lz4.md) instead.
+
+LZBITMAP is available only on Apple devices, so don’t use it for payloads that need to be decoded on non-Apple platforms. For cross-platform interoperability, use [`COMPRESSION_ZLIB`](compression_zlib.md) or [`COMPRESSION_LZ4`](compression_lz4.md) instead.
+
+LZBITMAP is available through the buffer API only — [`compression_encode_buffer(_:_:_:_:_:_:)`](compression_encode_buffer(_:_:_:_:_:_:).md) and [`compression_decode_buffer(_:_:_:_:_:_:)`](compression_decode_buffer(_:_:_:_:_:_:).md).
+
+> ❗ **Important**:  The Compression stream API doesn’t support the LZBITMAP compression algorithm. Use [`COMPRESSION_LZFSE`](compression_lzfse.md) or [`COMPRESSION_ZLIB`](compression_zlib.md) if you need streaming behavior, such as compressing data as it arrives over the network or processing files larger than available memory.
 
 ## See Also
 
@@ -40,6 +46,10 @@ The LZBITMAP compression algorithm provides compression ratios as close as possi
   The zlib compression algorithm, which is recommended for cross-platform compression.
 - [var COMPRESSION_BROTLI: compression_algorithm](compression_brotli.md)
   The Brotli compression algorithm, which is recommended for text compression.
+- [var COMPRESSION_LZMESH: compression_algorithm](compression_lzmesh.md)
+  The LZMESH compression algorithm, which is recommended for fast, general-purpose compression on Apple platforms.
+- [var COMPRESSION_LZRAVEN: compression_algorithm](compression_lzraven.md)
+  The LZRAVEN compression algorithm, which is recommended for high-compression ratio with fast decoding on Apple platforms.
 
 
 ---

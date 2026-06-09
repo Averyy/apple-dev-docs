@@ -37,6 +37,12 @@ Note that you need to use a universal link for your URL representation, you canâ
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 
+## See Also
+
+- [protocol URLRepresentableIntent](urlrepresentableintent.md)
+  An app intent with a URL representation.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+
 
 ---
 

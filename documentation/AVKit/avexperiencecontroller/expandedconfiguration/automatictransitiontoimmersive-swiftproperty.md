@@ -14,6 +14,11 @@ The expanded experience automatic transition behavior for the immersive experien
 var automaticTransitionToImmersive: AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive
 ```
 
+## See Also
+
+- [AVExperienceController.ExpandedConfiguration.AutomaticTransitionToImmersive](avexperiencecontroller/expandedconfiguration/automatictransitiontoimmersive-swift.enum.md)
+  The expanded experience automatic transition behavior into the immersive experience.
+
 
 ---
 

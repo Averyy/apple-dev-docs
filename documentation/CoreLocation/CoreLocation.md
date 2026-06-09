@@ -148,6 +148,8 @@ On iOS devices, users can change location service settings at any time in the Se
   This document describes the constants found in the Core Location framework.
 - [Core Location Functions](core-location-functions.md)
   The Core Location framework provides functions to help you work with coordinate values.
+### Protocols
+- [protocol CLBodyIdentifiable](clbodyidentifiable.md)
 
 
 ---

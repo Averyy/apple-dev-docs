@@ -59,6 +59,8 @@ The system passes the new value into the closure. If you need the old value, cap
 
 ## See Also
 
+- [func dropDestination<T>(for: T.Type, action: ([T], CGPoint) -> Bool, isTargeted: (Bool) -> Void) -> some View](view/dropdestination(for:action:istargeted:).md)
+  Defines the destination of a drag and drop operation that handles the dropped content with a closure that you specify.
 - [func onTapGesture(count: Int, coordinateSpace: CoordinateSpace, perform: (CGPoint) -> Void) -> some View](view/ontapgesture(count:coordinatespace:perform:)-36x9h.md)
   Adds an action to perform when this view recognizes a tap gesture, and provides the action with the location of the interaction.
 - [func onLongPressGesture(minimumDuration: Double, maximumDistance: CGFloat, pressing: ((Bool) -> Void)?, perform: () -> Void) -> some View](view/onlongpressgesture(minimumduration:maximumdistance:pressing:perform:).md)

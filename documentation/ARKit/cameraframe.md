@@ -25,6 +25,9 @@ struct CameraFrame
   Returns the camera frame sample for a given camera position.
 - [var description: String](cameraframe/description.md)
   A textual representation of this camera frame.
+### Operators
+- [static func == (CameraFrame, CameraFrame) -> Bool](cameraframe/==(_:_:).md)
+  Returns a Boolean value indicating whether two camera frames are equal.
 ### Instance Properties
 - [var samples: [CameraFrame.Sample]](cameraframe/samples.md)
   All the camera frame samples on this frame.

@@ -9,8 +9,6 @@ The policy for individual SIM cards.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

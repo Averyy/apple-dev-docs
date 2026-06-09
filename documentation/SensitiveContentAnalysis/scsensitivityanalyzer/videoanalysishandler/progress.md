@@ -1,6 +1,6 @@
 # progress
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 An object that provides the app with status updates while a sensitive content check occurs for a video.
@@ -8,7 +8,7 @@ An object that provides the app with status updates while a sensitive content ch
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - visionOS 2.0+
 

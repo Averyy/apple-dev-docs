@@ -283,9 +283,9 @@ As you design your widgets, use the following values for guidance.
 [Developing a WidgetKit strategy](../WidgetKit/Developing-a-WidgetKit-strategy.md) — WidgetKit
 
 #### Videos
+- [WidgetKit foundations](https://developer.apple.com/videos/play/wwdc2026/277) - Widgets highlight your app’s most important content across the system, providing people with another opportunity to engage. Discover the different types of widgets and explore the qualities that make them memorable. Learn how to create widgets, keep them up to date, and offer ways for people to customize them through App Intents and dynamic styling.
 - [What’s new in widgets](https://developer.apple.com/videos/play/wwdc2025/278) - WidgetKit elevates your app with updates to widgets, Live Activities, and controls. Learn how to bring your widgets to visionOS, take them on the road with CarPlay, and make them look their best with accented rendering modes. Plus, find out how relevant widgets can be surfaced in the Smart Stack on watchOS, and discover how push notifications can be used to keep your widgets up to date.
 - [Design widgets for visionOS](https://developer.apple.com/videos/play/wwdc2025/255) - Learn how you can design beautiful widgets for visionOS 26 that blend effortlessly into someone’s surroundings. Discover how you can add depth to your widget design and customize materials, sizes, and styles for spatial computing. We’ll share how to adapt your existing widgets for visionOS, or design new widgets that feel like real objects.
-- [Bring widgets to life](https://developer.apple.com/videos/play/wwdc2023/10028) - Learn how to make animated and interactive widgets for your apps and games. We’ll show you how to tweak animations for entry transitions and add interactivity using SwiftUI Button and Toggle so that you can create powerful moments right from the Home Screen and Lock Screen.
 
 ## Change log
 | Date | Changes |

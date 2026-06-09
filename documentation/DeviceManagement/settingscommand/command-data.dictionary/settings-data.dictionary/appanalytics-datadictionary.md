@@ -9,8 +9,6 @@ A dictionary that contains settings for sharing app analytics.
 - iOS 9.3.2+
 - iPadOS 9.3.2+
 - Mac Catalyst 9.3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

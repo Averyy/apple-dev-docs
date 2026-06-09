@@ -6,8 +6,7 @@
 An association between a license and a user or device.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 

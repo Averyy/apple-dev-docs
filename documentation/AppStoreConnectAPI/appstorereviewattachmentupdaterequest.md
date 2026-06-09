@@ -27,13 +27,13 @@ object AppStoreReviewAttachmentUpdateRequest
 ## See Also
 
 - [object AppStoreReviewAttachment](appstorereviewattachment.md)
-  The data structure that represent an App Store Review Attachments resource.
+  A file attached to an App Store review submission to provide reviewers with additional context, such as demo credentials or notes.
 - [object AppStoreReviewAttachmentCreateRequest](appstorereviewattachmentcreaterequest.md)
   The request body you use to create an App Store Review Attachment.
 - [object AppStoreReviewAttachmentResponse](appstorereviewattachmentresponse.md)
-  A response that contains a single App Store Review Attachments resource.
+  The response body for endpoints that create, read, or modify a file attached to an App Store review submission.
 - [object AppStoreReviewAttachmentsResponse](appstorereviewattachmentsresponse.md)
-  A response that contains a list of App Store Review Attachment resources.
+  The response body for endpoints that list files attached to an App Store review submission.
 
 
 ---

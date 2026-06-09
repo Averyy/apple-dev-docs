@@ -8,6 +8,7 @@ Makes a descriptor that can create a network browser for a Wi-Fi Aware subscribe
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

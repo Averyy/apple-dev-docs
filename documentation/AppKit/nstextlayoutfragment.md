@@ -81,6 +81,7 @@ class NSTextLayoutFragment
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
 
 ## See Also
 

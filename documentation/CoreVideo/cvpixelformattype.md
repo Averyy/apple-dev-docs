@@ -35,6 +35,17 @@ struct CVPixelFormatType
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct CVPixelFormatDescription](cvpixelformatdescription.md)
+  Defines a pixel format which can be used to create custom pixel buffer types.
+- [struct CVFillExtendedPixelsCallBackData](cvfillextendedpixelscallbackdata.md)
+  A structure for holding information that describes a custom extended pixel fill algorithm.
+- [struct CVSenselSitingOffsets](cvsenselsitingoffsets.md)
+  Siting offsets, relative to pixel center, of individual sensels/components constituting each pixel.
+- [enum CVSenselArrayPattern](cvsenselarraypattern.md)
+  Pattern indicating sensel arrangement.
+
 
 ---
 

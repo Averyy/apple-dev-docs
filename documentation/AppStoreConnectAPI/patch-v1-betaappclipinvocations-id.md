@@ -1,4 +1,4 @@
-# Modify an App Clip Invocation You Provide to Testers
+# Modify an app clip invocation you provide to testers
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,11 +22,11 @@ The request body you use to update a beta App Clip invocation.
 
 ## See Also
 
-- [Read Beta App Clip Invocation Information](get-v1-betaappclipinvocations-_id_.md)
+- [Read beta app clip invocation information](get-v1-betaappclipinvocations-_id_.md)
   Get a specific App Clip invocation you configure for testing.
-- [Create an App Clip Invocation for Testers in Testflight](post-v1-betaappclipinvocations.md)
+- [Create an app clip invocation for testers in testflight](post-v1-betaappclipinvocations.md)
   Configure a new App Clip experience that testers launch using the TestFlight app.
-- [Delete an App Clip Invocation for Testers in Testflight](delete-v1-betaappclipinvocations-_id_.md)
+- [Delete an app clip invocation for testers in testflight](delete-v1-betaappclipinvocations-_id_.md)
   Delete an App Clip invocation you make available to testers in TestFlight.
 
 

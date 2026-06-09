@@ -34,8 +34,6 @@ The framework sets the other padding values to `0`.
   Creates a padding object and initializes it with the provided top, right, and bottom values.
 - [new Padding(top, right, bottom, left)](padding/paddingconstructor5.md)
   Creates a padding object and initializes it with the provided values.
-- [interface PaddingConstructorOptions](paddingconstructoroptions.md)
-  Initial values of the edge insets for padding.
 
 
 ---

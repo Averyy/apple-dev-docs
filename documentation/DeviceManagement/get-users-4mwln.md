@@ -6,15 +6,14 @@
 Get information about a set of users.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
-- [Using Paginated Endpoints](using-paginated-endpoints.md)
-- [Managing Users](managing-users.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
+- [Using paginated endpoints](using-paginated-endpoints.md)
+- [Managing users](managing-users.md)
 
 #### Discussion
 
@@ -81,7 +80,7 @@ Get information about a set of users.
 ## See Also
 
 - [Create Users](create-users.md)
-  Create users to assign apps and books to.
+  Create users to assign apps, books, and subscriptions to.
 - [Update Users](update-users.md)
   Update details for existing users.
 - [Retire Users](retire-users.md)

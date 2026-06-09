@@ -34,7 +34,7 @@ If a public key is provided, a consistency check is performed between it and the
 ## See Also
 
 - [init() throws](mldsa65/privatekey/init.md)
-  Initializes a new random private key.
+  Creates a random MLDSA65 private key.
 - [init<D>(integrityCheckedRepresentation: D) throws](mldsa65/privatekey/init(integritycheckedrepresentation:).md)
   Initializes a private key from an integrity-checked data representation.
 

@@ -31,6 +31,8 @@ Regardless of how Picture in Picture stops, the controller calls the delegate’
   A Boolean value that indicates whether Picture in Picture starts automatically when the controller embeds its content inline and the app transitions to the background.
 - [func startPictureInPicture()](avpictureinpicturecontroller/startpictureinpicture.md)
   Starts Picture in Picture, if possible.
+- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 
 ---

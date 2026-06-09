@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](uint64/!=(_:_:)-4cmxf.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](uint64/!=(_:_:)-85acb.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func != (Self, Self) -> Bool](uint64/!=(_:_:)-sksj.md)
   Returns a Boolean value indicating whether two values are not equal.

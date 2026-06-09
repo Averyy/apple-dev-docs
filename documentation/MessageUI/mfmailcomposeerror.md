@@ -31,12 +31,6 @@ struct MFMailComposeError
 ### Error Configuration
 - [static var errorDomain: String](mfmailcomposeerror/errordomain.md)
   The domain for errors related to mail composition.
-- [var localizedDescription: String](mfmailcomposeerror/localizeddescription.md)
-  Retrieve the localized description for this error.
-### Default Implementations
-- [CustomNSError Implementations](mfmailcomposeerror/customnserror-implementations.md)
-- [Equatable Implementations](mfmailcomposeerror/equatable-implementations.md)
-- [Error Implementations](mfmailcomposeerror/error-implementations.md)
 
 ## Relationships
 

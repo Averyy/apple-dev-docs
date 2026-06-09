@@ -50,12 +50,20 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
 ## Topics
 
 ### Instance Properties
+- [var colorContentOffsetX: Int](mtlfxtemporalscalerbase/colorcontentoffsetx.md)
+  The horizontal offset, in pixels, of the region within the color texture to use as input.
+- [var colorContentOffsetY: Int](mtlfxtemporalscalerbase/colorcontentoffsety.md)
+  The vertical offset, in pixels, of the region within the color texture to use as input.
 - [var colorTexture: (any MTLTexture)?](mtlfxtemporalscalerbase/colortexture.md)
   An input color texture you set for the scaler that supports the correct color texture usage options.
 - [var colorTextureFormat: MTLPixelFormat](mtlfxtemporalscalerbase/colortextureformat.md)
   The pixel format of the input color texture for this this scaler.
 - [var colorTextureUsage: MTLTextureUsage](mtlfxtemporalscalerbase/colortextureusage.md)
   The minimal texture usage options that your app’s input color texture needs in order to support this scaler.
+- [var depthContentOffsetX: Int](mtlfxtemporalscalerbase/depthcontentoffsetx.md)
+  The horizontal offset, in pixels, of the region within the depth texture to use as input.
+- [var depthContentOffsetY: Int](mtlfxtemporalscalerbase/depthcontentoffsety.md)
+  The vertical offset, in pixels, of the region within the depth texture to use as input.
 - [var depthTexture: (any MTLTexture)?](mtlfxtemporalscalerbase/depthtexture.md)
   An input depth texture you set for the scaler that supports the correct color texture usage options.
 - [var depthTextureFormat: MTLPixelFormat](mtlfxtemporalscalerbase/depthtextureformat.md)
@@ -84,6 +92,10 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
   The horizontal component of the subpixel sampling coordinate you use to generate the color texture input.
 - [var jitterOffsetY: Float](mtlfxtemporalscalerbase/jitteroffsety.md)
   The vertical component of the subpixel sampling coordinate you use to generate the color texture input.
+- [var motionContentOffsetX: Int](mtlfxtemporalscalerbase/motioncontentoffsetx.md)
+  The horizontal offset, in pixels, of the region within the motion texture to use as input.
+- [var motionContentOffsetY: Int](mtlfxtemporalscalerbase/motioncontentoffsety.md)
+  The vertical offset, in pixels, of the region within the motion texture to use as input.
 - [var motionTexture: (any MTLTexture)?](mtlfxtemporalscalerbase/motiontexture.md)
   An input motion texture you set for the scaler that supports the correct color texture usage options.
 - [var motionTextureFormat: MTLPixelFormat](mtlfxtemporalscalerbase/motiontextureformat.md)
@@ -96,6 +108,10 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
   The vertical scale factor the scaler applies to the input motion texture.
 - [var outputHeight: Int](mtlfxtemporalscalerbase/outputheight.md)
   The height, in pixels, of the output color texture for this scaler.
+- [var outputOffsetX: Int](mtlfxtemporalscalerbase/outputoffsetx.md)
+  The horizontal offset, in pixels, of the region within the output texture to write results.
+- [var outputOffsetY: Int](mtlfxtemporalscalerbase/outputoffsety.md)
+  The vertical offset, in pixels, of the region within the output texture to write results.
 - [var outputTexture: (any MTLTexture)?](mtlfxtemporalscalerbase/outputtexture.md)
   The output texture into which this scaler writes its output.
 - [var outputTextureFormat: MTLPixelFormat](mtlfxtemporalscalerbase/outputtextureformat.md)
@@ -106,10 +122,16 @@ MetalFX doesn’t track that you assign the same texture instances to each prope
   The width, in pixels, of the output color texture for this scaler.
 - [var preExposure: Float](mtlfxtemporalscalerbase/preexposure.md)
   A pre-exposure value this scaler evaluates.
+- [var reactiveMaskContentOffsetX: Int](mtlfxtemporalscalerbase/reactivemaskcontentoffsetx.md)
+  The horizontal offset, in pixels, of the region within the reactive mask texture to use as input.
+- [var reactiveMaskContentOffsetY: Int](mtlfxtemporalscalerbase/reactivemaskcontentoffsety.md)
+  The vertical offset, in pixels, of the region within the reactive mask texture to use as input.
 - [var reactiveMaskTexture: (any MTLTexture)?](mtlfxtemporalscalerbase/reactivemasktexture.md)
   The reactive-mask texture input this scaler uses.
 - [var reactiveMaskTextureFormat: MTLPixelFormat](mtlfxtemporalscalerbase/reactivemasktextureformat.md)
   The pixel format of the input reactive mask texture for this this scaler.
+- [var reactiveMaskTextureUsage: MTLTextureUsage](mtlfxtemporalscalerbase/reactivemasktextureusage.md)
+  The minimal texture usage options that your app’s reactive mask texture needs in order to support this scaler.
 - [var reactiveTextureUsage: MTLTextureUsage](mtlfxtemporalscalerbase/reactivetextureusage.md)
   The minimal texture usage options that your app’s reactive texture needs in order to support this scaler.
 - [var reset: Bool](mtlfxtemporalscalerbase/reset.md)

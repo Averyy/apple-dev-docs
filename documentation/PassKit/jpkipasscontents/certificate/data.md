@@ -8,6 +8,7 @@ The result of the signed data from the requested digital identity in X.509 DER f
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

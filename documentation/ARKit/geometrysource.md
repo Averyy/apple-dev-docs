@@ -37,14 +37,14 @@ If [`componentsPerVector`](geometrysource/componentspervector.md) is greater tha
   The number of bytes between one vector and another in a geometry source’s buffer.
 - [var description: String](geometrysource/description.md)
   A textual representation of this geometry source.
+### Default Implementations
+- [Equatable Implementations](geometrysource/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

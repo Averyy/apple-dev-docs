@@ -28,8 +28,11 @@ protocol BADownloaderExtension : AppExtension
 ### Checking for asset updates
 - [func downloads(for: BAContentRequest, manifestURL: URL, extensionInfo: BAAppExtensionInfo) -> Set<BADownload>](badownloaderextension-qwaw/downloads(for:manifesturl:extensioninfo:).md)
 - [enum BAContentRequest](bacontentrequest.md)
+  The content request type used in the downloader extension.
 - [class BAAppExtensionInfo](baappextensioninfo.md)
 ### Reacting to extension events
+- [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate.md)
+  This method may be called shortly before the extension is terminated.
 - [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate-236ac.md)
 ### Instance Methods
 - [func extensionWillTerminate()](badownloaderextension-qwaw/extensionwillterminate.md)

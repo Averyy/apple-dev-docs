@@ -36,12 +36,12 @@ List all the group leaderboard sets in a leaderboard set.
   List information about leaderboards and leaderboard sets in a group leaderboard set.
 - [List All Localizations for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard set.
-- [GET /v1/gameCenterLeaderboardSets/{id}/relationships/localizations](get-v1-gamecenterleaderboardsets-_id_-relationships-localizations.md)
+- [List localization IDs for a Game Center leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-localizations.md)
 - [Read the Leaderboards in a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   List all leaderboards in a leaderboard set.
 - [List Releases for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
   Read the state of releases for a leaderboard set and related information.
-- [GET /v1/gameCenterLeaderboardSets/{id}/relationships/releases](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
 
 
 ---

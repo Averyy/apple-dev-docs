@@ -16,6 +16,7 @@ const TransportType: Readonly<{
     readonly Walking: "WALKING";
     readonly Cycling: "CYCLING";
 }>
+type TransportType = (typeof TransportType)[keyof typeof TransportType];
 ```
 
 ## Mentions
@@ -35,26 +36,31 @@ Constants that describe the mode of transportation in [`DirectionsRequest`](dire
   A constant identifying the mode of transportation as driving.
 - [Cycling](transporttype/cycling.md)
   A constant identifying the mode of transportation as cycling.
-### Type Aliases
-- [type TransportType](transporttype/transporttype.md)
-  A type alias that represents the values of transport type enumeration.
 
 ## See Also
 
-- [origin](directionsrequest/origin.md)
-  The starting point for routing directions.
-- [destination](directionsrequest/destination.md)
-  The end point for routing directions.
-- [arrivalDate](directionsrequest/arrivaldate.md)
-  The arrival date for the trip.
-- [departureDate](directionsrequest/departuredate.md)
-  The departure date for the trip.
-- [requestsAlternateRoutes](directionsrequest/requestsalternateroutes.md)
-  A Boolean value that indicates whether the server returns multiple routes when they’re available.
-- [transportType](directionsrequest/transporttype.md)
-  The mode of transportation the directions apply to.
-- [avoidTolls](directionsrequest/avoidtolls.md)
-  A Boolean value that prioritizes routes to avoid tolls.
+- [const AddressCategory](addresscategory.md)
+  The categories of address components that users can search for with an address filter.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
+- [const ColorScheme](colorscheme.md)
+  Constants that indicate the color scheme of the map or a place detail.
+- [const DistanceUnitSystem](distanceunitsystem.md)
+  Constants that indicate the system of measurement that displays on the map.
+- [const FeatureVisibility](featurevisibility.md)
+  Constants indicating the visibility of different adaptive map features.
+- [const MapFeatureType](mapfeaturetype.md)
+  Values that describe the feature type of a point of interest.
+- [const MapLoadPriority](maploadpriority.md)
+  Constants that prioritize the visibility of specific map features during map loading.
+- [const MapType](maptype.md)
+  Constants representing the type of map to display.
+- [const PointOfInterestCategory](pointofinterestcategory.md)
+  Point-of-interest categories.
+- [const RegionPriority](regionpriority.md)
+  A value that indicates the importance of the configured region.
 
 
 ---

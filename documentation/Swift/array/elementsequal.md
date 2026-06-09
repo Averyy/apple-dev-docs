@@ -50,7 +50,7 @@ print(a.elementsEqual([1, 2, 3]))
 
 - [static func == (Array<Element>, Array<Element>) -> Bool](array/==(_:_:).md)
   Returns a Boolean value indicating whether two arrays contain the same elements in the same order.
-- [static func != (Self, Self) -> Bool](array/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](array/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func elementsEqual<OtherSequence>(OtherSequence, by: (Self.Element, OtherSequence.Element) throws -> Bool) rethrows -> Bool](array/elementsequal(_:by:).md)
   Returns a Boolean value indicating whether this sequence and another sequence contain equivalent elements in the same order, using the given predicate as the equivalence test.

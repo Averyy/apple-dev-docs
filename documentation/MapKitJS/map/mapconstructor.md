@@ -12,9 +12,9 @@ Creates a map you embed on a webpage and initializes it with the constructor opt
 
 ```swift
 constructor(
-        parent?: string | HTMLElement | null,
-        options?: MapConstructorOptions,
-    );
+    parent?: string | HTMLElement | null,
+    options?: MapConstructorOptions,
+);
 ```
 
 #### Return Value

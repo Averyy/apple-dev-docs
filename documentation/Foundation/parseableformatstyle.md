@@ -27,17 +27,14 @@ protocol ParseableFormatStyle : FormatStyle
   A `ParseStrategy` that can be used to parse this `FormatStyle`’s output
 - [associatedtype Strategy : ParseStrategy](parseableformatstyle/strategy.md)
 ### Type Properties
-- [static var dateTime: Date.FormatStyle](parseableformatstyle/datetime.md)
 - [static var http: Date.HTTPFormatStyle](parseableformatstyle/http-6qda5.md)
 - [static var http: DateComponents.HTTPFormatStyle](parseableformatstyle/http-yfpc.md)
 - [static var iso8601: Date.ISO8601FormatStyle](parseableformatstyle/iso8601-41vzo.md)
 - [static var iso8601: DateComponents.ISO8601FormatStyle](parseableformatstyle/iso8601-55wjm.md)
-- [static var number: Decimal.FormatStyle](parseableformatstyle/number.md)
-- [static var percent: Decimal.FormatStyle.Percent](parseableformatstyle/percent.md)
-- [static var url: URL.FormatStyle](parseableformatstyle/url.md)
 ### Type Methods
 - [static func currency(code: String) -> Self](parseableformatstyle/currency(code:).md)
-- [static func name(style: PersonNameComponents.FormatStyle.Style) -> Self](parseableformatstyle/name(style:).md)
+### Default Implementations
+- [FormatStyle Implementations](parseableformatstyle/formatstyle-implementations.md)
 
 ## Relationships
 

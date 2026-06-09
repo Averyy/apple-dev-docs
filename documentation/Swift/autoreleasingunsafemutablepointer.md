@@ -54,8 +54,6 @@ This type does not carry an owner pointer unlike the other C*Pointer types becau
 ### Comparing Pointers
 - [static func == (Self, Self) -> Bool](autoreleasingunsafemutablepointer/==(_:_:)-4wfti.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](autoreleasingunsafemutablepointer/!=(_:_:)-1bazr.md)
-  Returns a Boolean value indicating whether two values are not equal.
 ### Instance Properties
 - [var hashValue: Int](autoreleasingunsafemutablepointer/hashvalue.md)
   The hash value.

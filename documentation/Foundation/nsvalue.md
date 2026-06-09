@@ -182,13 +182,16 @@ typedef struct {
 - [init?(coder: NSCoder)](nsvalue/init(coder:).md)
 - [init(directionalEdgeInsets: NSDirectionalEdgeInsets)](nsvalue/init(directionaledgeinsets:).md)
 - [init(edgeInsets: NSEdgeInsets)](nsvalue/init(edgeinsets:).md)
+  Creates a new value object containing the specified edge insets structure.
 ### Instance Properties
 - [var directionalEdgeInsetsValue: NSDirectionalEdgeInsets](nsvalue/directionaledgeinsetsvalue.md)
 - [var edgeInsetsValue: NSEdgeInsets](nsvalue/edgeinsetsvalue.md)
+  The edge insets structure representation of the value.
 - [var gcPoint2Value: GCPoint2](nsvalue/gcpoint2value.md)
 - [var videoDimensionsValue: CMVideoDimensions](nsvalue/videodimensionsvalue.md)
 ### Instance Methods
 - [func getValue(UnsafeMutableRawPointer, size: Int)](nsvalue/getvalue(_:size:).md)
+  Copies the value into the specified buffer.
 - [func value<StoredType>(of: StoredType.Type) -> StoredType?](nsvalue/value(of:).md)
 
 ## Relationships

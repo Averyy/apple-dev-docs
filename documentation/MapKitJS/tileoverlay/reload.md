@@ -16,8 +16,8 @@ reload(): void;
 
 ## See Also
 
-- [urlTemplate](tileoverlay/urltemplate.md)
-  A string, or callback function that returns a string, with a URL that provides the requested tile.
+- [imageForTile](tileoverlay/imagefortile.md)
+  A string, or callback function, that provides the requested tile.
 - [data](tileoverlay/data.md)
   A dictionary of custom properties to use with the URL template.
 

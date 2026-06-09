@@ -22,7 +22,8 @@ As first responder, the receiver is the first object in the responder chain to b
 
 - [var needsPanelToBecomeKey: Bool](nsview/needspaneltobecomekey.md)
   A Boolean value indicating whether the view needs its panel to become the key window before it can handle keyboard input and navigation.
-- [Cocoa Event Handling Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html#//apple_ref/doc/uid/10000060i)
+- [class NSResponder](nsresponder.md)
+  An abstract class that forms the basis of event and command processing in AppKit.
 - [func becomeFirstResponder() -> Bool](nsresponder/becomefirstresponder.md)
   Notifies the receiver that it’s about to become first responder in its [`NSWindow`](nswindow.md).
 - [func resignFirstResponder() -> Bool](nsresponder/resignfirstresponder.md)

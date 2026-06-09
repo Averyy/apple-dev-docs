@@ -26,7 +26,7 @@ To download analytics reports, be sure your API key has one of the following rol
 | Sales and Reports |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
 | Finance |  | [`Read Reports for a Specific Request`](get-v1-analyticsreportrequests-_id_-reports.md) |
 
-> **Note**:  If you share an API key for your developer account with a third party for analyzing or processing your reports, select the `Sales and Reports` role when generating a new key. This role can access to the [`Download Sales and Trends Reports`](get-v1-salesreports.md) but can’t access [`Download Finance Reports`](get-v1-financereports.md) endpoint.
+> **Note**:  If you share an API key for your developer account with a third party for analyzing or processing your reports, select the `Sales and Reports` role when generating a new key. This role can access to the [`Download sales and trends reports`](get-v1-salesreports.md) but can’t access [`Download finance reports`](get-v1-financereports.md) endpoint.
 
 ##### Request Analytics Reports
 

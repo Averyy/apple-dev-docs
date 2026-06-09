@@ -29,11 +29,6 @@ When the value of this property is [`false`](https://developer.apple.com/documen
 
 Returning [`true`](https://developer.apple.com/documentation/Swift/true) in this property means that the item is capable of being focused; it does not guarantee that the item is always focusable. Focusability is ultimately determined by the system. For example, if an item is visually obscured or offscreen, it may not be focusable. In addition, objects that conform to this protocol may have their own unique limitations. For example, a [`UIView`](uiview.md) object is not focusable when user interaction is disabled, or when the view’s alpha value is equal to `0`.
 
-## See Also
-
-- [var isFocused: Bool](uifocusitem/isfocused.md)
-  A Boolean value that indicates whether the item is currently focused.
-
 
 ---
 

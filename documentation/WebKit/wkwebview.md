@@ -99,8 +99,6 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [protocol WKNavigationDelegate](wknavigationdelegate.md)
   Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
 ### Loading web content
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:).md)
-  Loads the web content that the specified URL request object references and navigates to that content.
 - [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
   Loads the content of the specified data object and navigates to it.
 - [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)
@@ -262,11 +260,17 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [Deprecated symbols](wkwebview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Properties
+- [var conversationContext: UIConversationContext](wkwebview/conversationcontext.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
 - [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
 - [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
 - [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
+- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
 ### Instance Methods
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
 - [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
+- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
+- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
 - [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
 
 ## Relationships
@@ -276,6 +280,8 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [UIView](../UIKit/UIView.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
@@ -296,6 +302,8 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

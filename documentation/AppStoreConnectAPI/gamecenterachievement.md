@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Game Center achievement resource.
+A reward in Game Center that players earn by completing specific challenges or milestones in a game.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -18,7 +18,9 @@ object GameCenterAchievement
 
 ### Objects
 - [object GameCenterAchievement.Attributes](gamecenterachievement/attributes-data.dictionary.md)
+  Attributes that describe a achievement resource.
 - [object GameCenterAchievement.Relationships](gamecenterachievement/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -51,11 +53,11 @@ object GameCenterAchievement
 - [object GameCenterAchievementGroupAchievementLinkageResponse](gamecenterachievementgroupachievementlinkageresponse.md)
   A response body that contains the ID of a single related resource.
 - [object GameCenterAchievementResponse](gamecenterachievementresponse.md)
-  A response that contains a single Game Center achievement resource.
+  The response body for endpoints that create, read, or modify a single Game Center achievement.
 - [object GameCenterAchievementUpdateRequest](gamecenterachievementupdaterequest.md)
   The request body you use to update a Game Center achievement.
 - [object GameCenterAchievementsResponse](gamecenterachievementsresponse.md)
-  A response that contains a list of Game Center achievement resources.
+  The response body for endpoints that list Game Center achievements.
 - [object GameCenterAchievementActivityLinkageRequest](gamecenterachievementactivitylinkagerequest.md)
 - [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
 

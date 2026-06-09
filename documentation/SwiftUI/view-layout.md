@@ -33,6 +33,8 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
   Fixes this view at its ideal size in the specified dimensions.
 - [func layoutPriority(Double) -> some View](view/layoutpriority(_:).md)
   Sets the priority by which a parent layout should apportion space to this child.
+- [func containerCornerOffset(Edge.Set, sizeToFit: Bool) -> some View](view/containercorneroffset(_:sizetofit:).md)
+  Adjusts the view’s layout to avoid the container view’s corner insets for the specified edges.
 ### Position
 - [func position(CGPoint) -> some View](view/position(_:).md)
   Positions the center of this view at the specified point in its parent’s coordinate space.
@@ -60,6 +62,8 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
   Pads this view using the edge insets you specify.
 - [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](view/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [func scenePadding(Edge.Set) -> some View](view/scenepadding(_:).md)
   Adds padding to the specified edges of this view using an amount that’s appropriate for the current scene.
 - [func scenePadding(ScenePadding, edges: Edge.Set) -> some View](view/scenepadding(_:edges:).md)
@@ -68,6 +72,8 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
   Sets the vertical spacing between two adjacent rows in a List.
 - [func listSectionSpacing(_:)](view/listsectionspacing(_:).md)
   Sets the spacing between adjacent sections in a [`List`](list.md) to a custom value.
+- [func listSectionMargins(Edge.Set, CGFloat?) -> some View](view/listsectionmargins(_:_:).md)
+  Set the section margins for the specific edges.
 ### Grid configuration
 - [func gridCellColumns(Int) -> some View](view/gridcellcolumns(_:).md)
   Tells a view that acts as a cell in a grid to span the specified number of columns.
@@ -80,8 +86,12 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
 ### Safe area and margins
 - [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
   Expands the safe area of a view.
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+  Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 - [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
   Shows the specified content beside the modified view.
+- [func safeAreaBar(edge:alignment:spacing:content:)](view/safeareabar(edge:alignment:spacing:content:).md)
+  Shows the specified content as a custom bar beside the modified view.
 - [func safeAreaPadding(_:)](view/safeareapadding(_:).md)
   Adds the provided insets into the safe area of this view.
 - [func safeAreaPadding(Edge.Set, CGFloat?) -> some View](view/safeareapadding(_:_:).md)
@@ -99,6 +109,8 @@ To get started arranging views, see [`Layout fundamentals`](layout-fundamentals.
 ### Custom layout characteristics
 - [func layoutValue<K>(key: K.Type, value: K.Value) -> some View](view/layoutvalue(key:value:).md)
   Associates a value with a custom layout property.
+- [func containerValue<V>(WritableKeyPath<ContainerValues, V>, V) -> some View](view/containervalue(_:_:).md)
+  Sets a particular container value of a view.
 
 ## See Also
 

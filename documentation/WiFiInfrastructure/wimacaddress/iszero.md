@@ -8,6 +8,7 @@ A Boolean value that indicates whether this MAC address is the all-zero MAC Addr
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

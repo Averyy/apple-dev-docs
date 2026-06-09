@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](autoreleasingunsafemutablepointer/!=(_:_:)-1bazr.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](autoreleasingunsafemutablepointer/!=(_:_:)-9vqnj.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Self, Self) -> Bool](autoreleasingunsafemutablepointer/==(_:_:)-4wfti.md)
   Returns a Boolean value indicating whether two values are equal.

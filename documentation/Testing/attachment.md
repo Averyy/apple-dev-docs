@@ -32,6 +32,8 @@ To create an attachment, you need a value of some type that conforms to [`Attach
   Initialize an instance of this type that encloses the given attachable value.
 - [init(contentsOf: URL, named: String?, sourceLocation: SourceLocation) async throws](attachment/init(contentsof:named:sourcelocation:).md)
   Initialize an instance of this type with the contents of the given URL.
+- [init<T>(exporting: T, as: UTType?, named: String?, sourceLocation: SourceLocation) async throws](attachment/init(exporting:as:named:sourcelocation:).md)
+  Initialize an instance of this type that encloses the given transferable value.
 ### Instance Properties
 - [var attachableValue: AttachableValue](attachment/attachablevalue-2tnj5.md)
   The value of this attachment.

@@ -12,6 +12,7 @@ An object that represents an image that an image-analysis request produces.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -39,6 +40,8 @@ struct PixelBufferObservation
 ### Accessing the memory
 - [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](pixelbufferobservation/withunsafepointer(_:).md)
   Invokes the given closure with a pointer to the given argument.
+### Instance Properties
+- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
 
 ## Relationships
 

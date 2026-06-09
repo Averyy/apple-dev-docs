@@ -10,8 +10,6 @@ Stop mirroring the display to another device.
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -22,10 +20,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -74,7 +72,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#StopMirroringCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

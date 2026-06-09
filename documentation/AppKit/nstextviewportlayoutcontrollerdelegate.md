@@ -25,11 +25,17 @@ protocol NSTextViewportLayoutControllerDelegate : NSObjectProtocol
   The method the framework calls before the text viewport layout controller starts its layout process.
 - [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](nstextviewportlayoutcontrollerdelegate/viewportbounds(for:).md)
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
+### Instance Methods
+- [func textViewportLayoutController(NSTextViewportLayoutController, cacheRenderingSurface: any NSTextViewportRenderingSurface, for: any NSTextViewportRenderingSurfaceKey)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:cacherenderingsurface:for:).md)
+- [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:retrievecachedrenderingsurfacefor:).md)
+- [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+### Conforming Types
+- [NSTextView](nstextview.md)
 
 ## See Also
 

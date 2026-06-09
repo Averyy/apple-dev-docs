@@ -22,6 +22,8 @@ var dataSource: HKLiveWorkoutDataSource? { get set }
 
 - [var workoutSession: HKWorkoutSession?](hkliveworkoutbuilder/workoutsession.md)
   The workout session created by the data source and associated with this builder.
+- [var delegate: (any HKLiveWorkoutBuilderDelegate)?](hkliveworkoutbuilder/delegate.md)
+  The live builder’s delegate.
 
 
 ---

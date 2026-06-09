@@ -9,8 +9,6 @@ A dictionary providing configuration for temporary pairing. Required if `Disable
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -7,8 +7,6 @@ A dictionary that contains the password hash for the account.
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,6 +23,11 @@ object PasswordHash
 ## Properties
 
 - `SALTED-SHA512-PBKDF2` (PasswordHash.SALTED-SHA512-PBKDF2) *(required)*: A dictionary that contains the `entropy`, `iterations`, and `salt` elements to create the password hash using the CommonCrypto libraries, or equivalent. Convert this dictionary to binary data before setting it as the value for the password hash.
+
+## See Also
+
+- [object ManifestURL](manifesturl.md)
+  The URL to the app manifest.
 
 
 ---

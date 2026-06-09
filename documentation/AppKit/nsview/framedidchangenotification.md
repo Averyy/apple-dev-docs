@@ -27,6 +27,8 @@ The following methods can result in notification posting:
 - [`frameRotation`](nsview/framerotation.md)
 - [`setFrameSize(_:)`](nsview/setframesize(_:).md)
 
+To observe this notification using Swift concurrency, use [`NSView.FrameDidChangeMessage`](nsview/framedidchangemessage.md).
+
 ## See Also
 
 - [var frame: NSRect](nsview/frame.md)

@@ -11,6 +11,7 @@ Creates a bordered button style with a tint color.
 ## Declaration
 
 ```swift
+nonisolated
 init(tint: Color)
 ```
 

@@ -12,7 +12,7 @@ The region that bounds the area in which to fetch points of interest.
 
 ```swift
 get region(): CoordinateRegion | null;
-set region(value: CoordinateRegion | null);
+set region(value: CoordinateRegionData | null);
 ```
 
 #### Discussion

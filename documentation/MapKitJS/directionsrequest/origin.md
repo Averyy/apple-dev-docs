@@ -11,7 +11,7 @@ The starting point for routing directions.
 ## Declaration
 
 ```swift
-origin: string | Coordinate | Place;
+origin: string | CoordinateData | Place;
 ```
 
 #### Discussion
@@ -32,8 +32,8 @@ The `orgin` can be a string that’s an address, a coordinate, or a [`Place`](pl
   The mode of transportation the directions apply to.
 - [avoidTolls](directionsrequest/avoidtolls.md)
   A Boolean value that prioritizes routes to avoid tolls.
-- [const TransportType](transporttype.md)
-  The modes of transportation.
+- [signal](directionsrequest/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

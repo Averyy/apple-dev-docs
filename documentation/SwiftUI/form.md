@@ -17,6 +17,7 @@ A container for grouping controls used for data entry, such as in settings or in
 ## Declaration
 
 ```swift
+nonisolated
 struct Form<Content> where Content : View
 ```
 

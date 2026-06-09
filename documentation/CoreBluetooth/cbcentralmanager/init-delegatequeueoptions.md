@@ -43,7 +43,7 @@ This method is the designated initializer for the [`CBCentralManager`](cbcentral
 - [Central Manager Initialization Options](central-manager-initialization-options.md)
   Keys used to pass options when initializing a central manager.
 - [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
-  Keys used to pass state restoration options to the central manager initializer.
+  Restore central manager state in scene-based apps.
 
 
 ---

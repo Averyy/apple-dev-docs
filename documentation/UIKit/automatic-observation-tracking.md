@@ -57,6 +57,13 @@ These methods support automatic observation tracking in views, view controllers,
   Updates the view’s configuration using the current state.
 - [var configurationUpdateHandler: UITableViewHeaderFooterView.ConfigurationUpdateHandler?](uitableviewheaderfooterview/configurationupdatehandler-49slo.md)
   A block for handling updates to the view’s configuration using the current state.
+### Observing data in collection view layouts
+- [typealias UICollectionViewCompositionalLayoutSectionProvider](uicollectionviewcompositionallayoutsectionprovider.md)
+  A closure that creates and returns each of the layout’s sections.
+- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider)](uicollectionviewcompositionallayout/init(sectionprovider:).md)
+  Creates a compositional layout object with a section provider to supply the layout’s sections.
+- [init(sectionProvider: UICollectionViewCompositionalLayoutSectionProvider, configuration: UICollectionViewCompositionalLayoutConfiguration)](uicollectionviewcompositionallayout/init(sectionprovider:configuration:).md)
+  Creates a compositional layout object with a section provider and an additional configuration.
 
 ## See Also
 

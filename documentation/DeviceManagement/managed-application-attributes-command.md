@@ -12,8 +12,6 @@ Query attributes in managed apps on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -28,8 +26,8 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, visionOS |
 | Required access right | AllowAppInstallation |
 
@@ -96,7 +94,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ManagedApplicationAttributesCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -66,6 +66,8 @@ For example, a button that allows the user to choose multiple PDF files for the 
 
 > **Note**: Changing `allowedContentTypes` or `allowsMultipleSelection` while the file importer is presented will have no immediate effect, however will apply the next time it is presented.
 
+To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileDialogURLEnabled(_:)`](view/filedialogurlenabled(_:).md), [`fileDialogImportsUnresolvedAliases(_:)`](view/filedialogimportsunresolvedaliases(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
+
 ## Parameters
 
 - `isPresented`: A binding to whether the dialog should be shown.
@@ -77,9 +79,9 @@ For example, a button that allows the user to choose multiple PDF files for the 
 ## See Also
 
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], allowsMultipleSelection: Bool, onCompletion: (Result<[URL], any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:allowsmultipleselection:oncompletion:).md)
-  Presents a system interface for allowing the user to import multiple files.
+  Presents a system dialog for allowing the user to import multiple files.
 - [func fileImporter(isPresented: Binding<Bool>, allowedContentTypes: [UTType], onCompletion: (Result<URL, any Error>) -> Void) -> some View](view/fileimporter(ispresented:allowedcontenttypes:oncompletion:).md)
-  Presents a system interface for allowing the user to import an existing file.
+  Presents a system dialog for allowing the user to import an existing file.
 
 
 ---

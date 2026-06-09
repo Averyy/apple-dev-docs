@@ -40,10 +40,14 @@ struct PlaneAnchor
 ### Instance Properties
 - [var surfaceClassification: SurfaceClassification](planeanchor/surfaceclassification.md)
   Get the surface classification of this plane.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](planeanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](planeanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

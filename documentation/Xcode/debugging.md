@@ -39,8 +39,8 @@ Identify and address issues in your app using the Xcode debugger, Xcode Organize
 
 ## See Also
 
-- [Devices and Simulator](devices-and-simulator.md)
-  Configure and manage devices connected to your Mac or devices in Simulator and use them to run your app.
+- [Device Hub](device-hub.md)
+  Manage the simulated and physical devices that you use to test your app.
 - [Performance and metrics](performance-and-metrics.md)
   Measure, investigate, and address the use of system resources and issues impacting performance using Instruments and Xcode Organizer.
 - [Testing](testing.md)

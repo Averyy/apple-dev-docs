@@ -8,7 +8,7 @@ Construct a digital pass for discounts and special offers.
 
 Use coupon passes for coupons, special offers, and other discounts. Setting the coupon pass style provides data that Wallet displays automatically, such as business information, offer expiration date, terms and conditions, store locations, and other helpful information.
 
-![An illustration showing an example coupon pass from a mock company offering a discount.](https://docs-assets.developer.apple.com/published/69bfb27a52f67ad10eb88d66276d0fa8/coupon-example%402x.png)
+![An illustration showing a mock coupon pass for a food truck with a strip image.](https://docs-assets.developer.apple.com/published/09d4b8e7097062a4b614a0da94c5d000/coupon%402x.png)
 
 #### Create Your Pass Type Identifier
 
@@ -40,7 +40,7 @@ The following example shows a partial pass with top-level keys for a coupon pass
 
 The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following image shows a layout and placement of fields for the coupon pass style.
 
-![An illustration showing a coupon pass layout with the pass fields for each section of the pass.](https://docs-assets.developer.apple.com/published/0d9db9730f68d26876ba7a0cdadc5565/coupon_2x.png)
+![An illustration showing a coupon pass layout with the pass fields for each section of the pass.](https://docs-assets.developer.apple.com/published/52ddae96bb78f680b7f634d2e269d1c4/pass-fields-layout-coupon%402x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A coupon can have up to three header fields, a single primary field, and up to four secondary and auxiliary fields combined. The text length in each pass field determines how many fields appear on the front of the pass. If text is too long, Wallet won’t display all of it. Space on the front of the pass is limited as well. You can use the primary pass field for a strip image that creates a banner across the pass, or for important business information. Use the secondary and auxiliary fields for information like expiration dates, store locations, and contact information.
 
@@ -117,7 +117,7 @@ The following example shows a `pass.json` file with the `coupon` pass style and 
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
-Alternatively, passes can use scannable barcodes to convey information. Wallet supports 2D barcodes using QR, Aztec, and PDF417 formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
+Alternatively, passes can use scannable barcodes to convey information. Wallet supports QR, PDF417, Aztec, Code128, Code 39, Codabar, EAN-13, and Interleaved 2 of 5 (ITF) barcode formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
 
 For more information on barcodes, see [`Pass.Barcodes`](pass/barcodes-data.dictionary.md) and the [`Add to Apple Wallet Guidelines`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
 

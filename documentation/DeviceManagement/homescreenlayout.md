@@ -10,8 +10,6 @@ The payload that configures the Home Screen layout.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - tvOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -37,9 +35,9 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 | User channel | Shared iPad |
 | Allow manual install | iOS, tvOS |
 | Requires supervision | iOS, tvOS |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 

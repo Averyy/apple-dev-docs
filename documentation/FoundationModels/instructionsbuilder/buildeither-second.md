@@ -11,6 +11,7 @@ Creates a builder with the second component.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -23,7 +24,7 @@ static func buildEither(second component: some InstructionsRepresentable) -> Ins
 - [static func buildArray([some InstructionsRepresentable]) -> Instructions](instructionsbuilder/buildarray(_:).md)
   Creates a builder with the an array of prompts.
 - [static func buildBlock<each I>(repeat each I) -> Instructions](instructionsbuilder/buildblock(_:).md)
-  Creates a builder with the a block.
+  Creates a builder with a block.
 - [static func buildEither(first: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(first:).md)
   Creates a builder with the first component.
 - [static buildExpression(_:)](instructionsbuilder/buildexpression(_:).md)

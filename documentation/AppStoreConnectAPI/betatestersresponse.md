@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Beta Tester resources.
+The response body for endpoints that list TestFlight beta testers.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -23,11 +23,12 @@ object BetaTestersResponse
 
 ## See Also
 
-- [List All Beta Testers in a Beta Group](get-v1-betagroups-_id_-betatesters.md)
+- [List all beta testers in a beta group](get-v1-betagroups-_id_-betatesters.md)
   Get a list of beta testers contained in a specific beta group.
 - [object BetaTester](betatester.md)
-  The data structure that represents a Beta Testers resource.
+  An individual enrolled as a beta tester in TestFlight, identified by their email address and associated with one or more apps or groups.
 - [object BetaTestersWithoutIncludesResponse](betatesterswithoutincludesresponse.md)
+  A response containing a list of TestFlight beta testers, without related resources.
 - [object BetaTesterAppsLinkagesRequest](betatesterappslinkagesrequest.md)
   A request body you use to remove an app from a beta tester.
 - [object BetaTesterAppsLinkagesResponse](betatesterappslinkagesresponse.md)
@@ -43,7 +44,7 @@ object BetaTestersResponse
 - [object BetaTesterCreateRequest](betatestercreaterequest.md)
   The request body you use to create a BetaTester.
 - [object BetaTesterResponse](betatesterresponse.md)
-  A response that contains a single Beta Testers resource.
+  The response body for endpoints that create, read, or modify a TestFlight beta tester.
 - [object AppsBetaTesterUsagesV1MetricResponse](appsbetatesterusagesv1metricresponse.md)
   A response that contains one or more beta app tester metric resources.
 - [object BetaTesterUsagesV1MetricResponse](betatesterusagesv1metricresponse.md)

@@ -17,6 +17,7 @@ The unique identifier of the view.
 ## Declaration
 
 ```swift
+nonisolated
 var id: Subview.ID { get }
 ```
 

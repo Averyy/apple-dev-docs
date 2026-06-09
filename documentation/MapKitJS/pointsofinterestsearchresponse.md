@@ -22,7 +22,7 @@ interface PointsOfInterestSearchResponse
 
 ## See Also
 
-- [search(callback, options)](pointsofinterestsearch/search.md)
+- [search(options)](pointsofinterestsearch/search.md)
   Fetches points of interest.
 - [type PointsOfInterestSearchDelegate](pointsofinterestsearchdelegate.md)
   An object or callback function that MapKit JS calls when fetching points of interest.

@@ -29,8 +29,8 @@ The system displays the suggested invocation phrase to the user when they create
 
 ## See Also
 
-- [var isEligibleForPrediction: Bool](nsuseractivity/iseligibleforprediction.md)
-  A Boolean value that determines whether Siri can suggest the user activity as a shortcut to the user.
+- [var interaction: INInteraction?](nsuseractivity/interaction.md)
+  The SiriKit interaction object to use when configuring your app.
 - [var shortcutAvailability: INShortcutAvailabilityOptions](nsuseractivity/shortcutavailability.md)
   A set of defined contexts in which an intent or activity might be relevant to a user.
 

@@ -111,6 +111,8 @@ After you make a code change, re-run your performance tests, and use the CPU Cou
 
 - [Analyzing CPU usage with the Processor Trace instrument](analyzing-cpu-usage-with-processor-trace.md)
   Identify code where your app uses the CPU inefficiently.
+- [Analyzing CPU profiles with call tree views](analyzing-cpu-profiles-with-call-tree-views.md)
+  Use call tree visualizations to find performance bottlenecks in Instruments.
 
 
 ---

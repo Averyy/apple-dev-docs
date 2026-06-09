@@ -15,6 +15,7 @@ A view that shows or hides another content view, based on the state of a disclos
 ## Declaration
 
 ```swift
+nonisolated
 struct DisclosureGroup<Label, Content> where Label : View, Content : View
 ```
 

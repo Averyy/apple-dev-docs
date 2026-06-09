@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: init
 
 Creates a sensitivity analyzer.

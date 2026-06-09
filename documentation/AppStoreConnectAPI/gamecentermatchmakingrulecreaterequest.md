@@ -31,7 +31,7 @@ object GameCenterMatchmakingRuleCreateRequest
 - [object GameCenterMatchmakingRuleResponse](gamecentermatchmakingruleresponse.md)
   The response body for endpoints that create or modify a rule.
 - [object GameCenterMatchmakingRule](gamecentermatchmakingrule.md)
-  The data structure that represents a matchmaking rule.
+  A JavaScript expression evaluated during Game Center matchmaking to determine player compatibility.
 
 
 ---

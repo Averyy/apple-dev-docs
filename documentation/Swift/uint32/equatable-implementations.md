@@ -7,7 +7,7 @@
 ### Operators
 - [static func != (Self, Self) -> Bool](uint32/!=(_:_:)-13a6k.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func != (Self, Self) -> Bool](uint32/!=(_:_:)-4tjkk.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](uint32/!=(_:_:)-8m33c.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Self, Self) -> Bool](uint32/==(_:_:)-46ijp.md)
   Returns a Boolean value indicating whether two values are equal.

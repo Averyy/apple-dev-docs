@@ -1,4 +1,4 @@
-# List All Localizations for an In-App Purchase
+# List all localizations for an in-app purchase
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -25,13 +25,13 @@ Get a list of localized display names and descriptions for a specific in-app pur
 
 ## See Also
 
-- [Create an In-App Purchase Localization](post-v1-inapppurchaselocalizations.md)
+- [Create an in-app purchase localization](post-v1-inapppurchaselocalizations.md)
   Create a localized display name and description for an in-app purchase.
-- [Read In-App Purchase Localization Information](get-v1-inapppurchaselocalizations-_id_.md)
+- [Read in-app purchase localization information](get-v1-inapppurchaselocalizations-_id_.md)
   Get the display name and description for a specific locale for an in-app purchase.
-- [Modify an In-App Purchase Localization](patch-v1-inapppurchaselocalizations-_id_.md)
+- [Modify an in-app purchase localization](patch-v1-inapppurchaselocalizations-_id_.md)
   Update the display name and description for a specific locale of an in-app purchase.
-- [Delete an In-App Purchase Localization](delete-v1-inapppurchaselocalizations-_id_.md)
+- [Delete an in-app purchase localization](delete-v1-inapppurchaselocalizations-_id_.md)
   Delete the metadata for a single in-app purchase localization.
 
 

@@ -57,7 +57,7 @@ object GameCenterLeaderboardSetV2UpdateRequest
 - [object GameCenterLeaderboardSetGroupLeaderboardSetLinkageResponse](gamecenterleaderboardsetgroupleaderboardsetlinkageresponse.md)
   A response that confirms a relationship between a leaderboard set and a group leaderboard set.
 - [object GameCenterLeaderboardSetResponse](gamecenterleaderboardsetresponse.md)
-  A response that contains a single leaderboard set resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard set.
 - [object GameCenterLeaderboardSetUpdateRequest](gamecenterleaderboardsetupdaterequest.md)
   The request body you use to update a leaderboard set.
 

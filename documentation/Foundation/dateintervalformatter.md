@@ -87,6 +87,7 @@ The [`string(from:to:)`](dateintervalformatter/string(from:to:).md) method may b
   Formatting styles for individual date and time values.
 ### Instance Methods
 - [func string(from: DateInterval) -> String?](dateintervalformatter/string(from:).md)
+  Returns a formatted string for the given date interval.
 
 ## Relationships
 

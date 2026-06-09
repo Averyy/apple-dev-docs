@@ -1,4 +1,4 @@
-# Get the Default App Clip Experience for an App Store Version
+# Get the default app clip experience for an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,19 +14,19 @@ Get the default App Clip experience for an App Store version of your app.
 
 ## Parameters
 
-- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
-- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each Default App Clip Experiences resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each App Clip default experience localization resource returned by the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each App Clip default experience resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
-- `limit[appClipDefaultExperienceLocalizations]` (integer): The number of included Default App Clip Experiences resources to return if the default App Clip experience localizations relationship is included.
-- `fields[appClips]` ([string])
-- `fields[appClipAppStoreReviewDetails]` ([string])
-- `fields[appStoreVersions]` ([string])
+- `limit[appClipDefaultExperienceLocalizations]` (integer): The maximum number of related App Clip default experience localization resources to return.
+- `fields[appClips]` ([string]): Additional fields to include for each App Clip resource returned by the response.
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each App Clip App Store review detail resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
 
 ## See Also
 
-- [Get the Default App Clip Experiences Resource ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
+- [Get the default app clip experiences resource id for an app store version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
   Get the ID of an app’s related default App Clip experience.
-- [Modify the Default App Clip Experience of an App Store Version](patch-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
+- [Modify the default app clip experience of an app store version](patch-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
   Update the relationship between an App Store version and a default App Clip experience.
 
 

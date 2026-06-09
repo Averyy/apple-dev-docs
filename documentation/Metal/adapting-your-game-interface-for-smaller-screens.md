@@ -85,10 +85,10 @@ Take advantage of built-in accessibility features like Multi-Touch, VoiceOver, S
 
 Use a physical device to test the behavior and user experience for your game’s menus on every supported device. Otherwise, use Simulator or an approximated environment on Mac, with proper display resolution, scale, and interaction methods. For more guidance on testing your game in Simulator, see the resources below:
 
-- [`Running your app in Simulator or on a device`](https://developer.apple.com/documentation/Xcode/running-your-app-in-simulator-or-on-a-device)
-- [`Testing in Simulator versus testing on hardware devices`](https://developer.apple.com/documentation/Xcode/testing-in-simulator-versus-testing-on-hardware-devices)
-- [`Testing complex hardware device scenarios in Simulator`](https://developer.apple.com/documentation/Xcode/testing-complex-hardware-device-scenarios-in-simulator)
-- [`Identifying graphics and animations issues in Simulator`](https://developer.apple.com/documentation/Xcode/identifying-graphics-and-animations-issues-in-simulator)
+- [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices)
+- doc://com.apple.documentation/documentation/xcode/testing-in-simulator-versus-testing-on-hardware-devices
+- doc://com.apple.documentation/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator
+- [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub)
 
 If you use middleware in your games, follow their guidelines on testing multiple form factors.
 

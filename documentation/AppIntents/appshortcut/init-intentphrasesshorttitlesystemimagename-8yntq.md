@@ -20,10 +20,6 @@ Initializes an App Shortcut with phrases that run the app intent, a title, and a
 init<Intent>(intent: Intent, phrases: [AppShortcutPhrase<Intent>], shortTitle: LocalizedStringResource, systemImageName: String) where Intent : AppIntent
 ```
 
-## Mentions
-
-- [Creating your first app intent](creating-your-first-app-intent.md)
-
 #### Discussion
 
 Use this initializer to create an App Shortcut for your app intent that people discover in the Shortcuts app and that they can run using the Action button on supported iPhone models.

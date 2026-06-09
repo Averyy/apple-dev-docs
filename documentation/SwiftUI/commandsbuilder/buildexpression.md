@@ -26,7 +26,7 @@ static func buildExpression<Content>(_ content: Content) -> Content where Conten
   Produces content for a conditional statement in a multi-statement closure when the condition is false.
 - [static func buildIf<C>(C?) -> C?](commandsbuilder/buildif(_:).md)
   Produces an optional widget for conditional statements in multi-statement closures that’s only visible when the condition evaluates to true.
-- [static buildLimitedAvailability(_:)](commandsbuilder/buildlimitedavailability(_:).md)
+- [static func buildLimitedAvailability(any Commands) -> some Commands](commandsbuilder/buildlimitedavailability(_:).md)
   Processes commands for a conditional compiler-control statement that performs an availability check.
 
 

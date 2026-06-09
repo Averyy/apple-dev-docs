@@ -30,7 +30,7 @@ A group *always* waits for all of its child tasks to complete before it returns.
 It is not possible to explicitly await completion of child-tasks, however the group will automatically await *all* child task completions before returning from this function:
 
 ```swift
-try await withThrowingDiscardingTaskGroup(of: Void.self) { group in
+try await withThrowingDiscardingTaskGroup { group in
   group.addTask { /* slow-task */ }
   // slow-task executes...
 }

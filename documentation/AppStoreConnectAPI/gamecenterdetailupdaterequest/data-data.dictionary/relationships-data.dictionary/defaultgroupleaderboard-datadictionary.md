@@ -16,6 +16,7 @@ object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard
 
 ### Objects
 - [object GameCenterDetailUpdateRequest.Data.Relationships.DefaultGroupLeaderboard.Data](gamecenterdetailupdaterequest/data-data.dictionary/relationships-data.dictionary/defaultgroupleaderboard-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a detail.
 
 ## Properties
 

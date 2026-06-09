@@ -5,13 +5,9 @@
 
 The endpoint for fetching a configuration declaration.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#declaration-configuration-identifier`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## Parameters
 

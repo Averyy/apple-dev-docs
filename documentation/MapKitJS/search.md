@@ -20,9 +20,9 @@ class Search extends Service
 
 #### Overview
 
-The search service allows developers to populate a map with results from a user-entered query, including information about businesses and other points of interest. MapKit JS provides this functionality through a search object that makes network requests to the search service.
+The search service lets you populate a map with results from a user-entered query, including information about businesses and other points of interest. MapKit JS handles this through a search object that makes network requests to the search service.
 
-Supplying *search context* creates the most relevant results for a query. Context may include the user’s location, or a coordinate or region that the developer provides.
+Supplying *search context* creates the most relevant results for a query. Context can include the user’s location, or a coordinate or region that you provide.
 
 To use the search service, create an instance of a search object with the desired options. Use the search object to make search requests.
 
@@ -34,7 +34,7 @@ To use the search service, create an instance of a search object with the desire
 - [interface SearchConstructorOptions](searchconstructoroptions.md)
   Options you provide when you create a search object.
 ### Performing a search
-- [search(query, callback, options)](search/search.md)
+- [search(query, options)](search/search.md)
   Retrieves the results of a search query.
 - [type SearchDelegate](searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.
@@ -43,7 +43,7 @@ To use the search service, create an instance of a search object with the desire
 - [interface SearchResponse](searchresponse.md)
   The result of a search, including the original search query, the bounding region, and a list of places that match the query.
 ### Performing a search autocomplete
-- [autocomplete(query, callback, options)](search/autocomplete.md)
+- [autocomplete(query, options)](search/autocomplete.md)
   Retrieves a list of autocomplete results for the specified search query.
 - [interface SearchAutocompleteOptions](searchautocompleteoptions.md)
   Options you provide to constrain an autocomplete request.
@@ -52,16 +52,17 @@ To use the search service, create an instance of a search object with the desire
 - [class SearchAutocompleteResult](searchautocompleteresult.md)
   The result of an autocomplete query, including display lines and a coordinate.
 ### Filtering a search
-- [const AddressCategory](addresscategory.md)
-  The categories of address components that users can search for with an address filter.
 - [class AddressFilter](addressfilter.md)
   An object that filters which address options to include or exclude in search results.
-### Canceling a search
-- [cancel(id)](service/cancel.md)
-  Cancels a request using the provided request ID.
-### Static properties
+### Deprecated
+- [autocomplete(query, callback, options)](search/autocomplete1.md)
+  Retrieves a list of autocomplete results for the specified search query.
+- [cancel(promise)](service/cancel.md)
+  Cancels a request using the provided request promise.
 - [RegionPriority](search/regionpriority-data.var.md)
   A static property that allows you to access region priority enumeration.
+- [search(query, callback, options)](search/search1.md)
+  Retrieves the results of a search query.
 ### Instance Properties
 - [addressFilter](search/addressfilter.md)
   An filter that lists which address components to include or exclude in search results.
@@ -91,8 +92,6 @@ To use the search service, create an instance of a search object with the desire
 
 ## See Also
 
-- [const AddressCategory](addresscategory.md)
-  The categories of address components that users can search for with an address filter.
 - [class AddressFilter](addressfilter.md)
   An object that filters which address options to include or exclude in search results.
 

@@ -27,7 +27,6 @@ var COREVIDEO_SUPPORTS_OPENGLES: Bool { get }
 - [var COREVIDEO_SUPPORTS_DISPLAYLINK: Bool](corevideo_supports_displaylink.md)
 - [var COREVIDEO_SUPPORTS_GLES_TEX_IMAGE_IOSURFACE: Bool](corevideo_supports_gles_tex_image_iosurface.md)
 - [var COREVIDEO_SUPPORTS_IOSURFACE: Bool](corevideo_supports_iosurface.md)
-- [var COREVIDEO_INCLUDED_IOSURFACE_HEADER_FILE: Int32](corevideo_included_iosurface_header_file.md)
 - [var COREVIDEO_SUPPORTS_IOSURFACE_PREFETCH: Bool](corevideo_supports_iosurface_prefetch.md)
 - [var COREVIDEO_SUPPORTS_METAL: Bool](corevideo_supports_metal.md)
 - [var COREVIDEO_SUPPORTS_OPENGL: Bool](corevideo_supports_opengl.md)
@@ -35,6 +34,7 @@ var COREVIDEO_SUPPORTS_OPENGLES: Bool { get }
 - [var COREVIDEO_SUPPORTS_PREFETCH: Bool](corevideo_supports_prefetch.md)
 - [var COREVIDEO_TRUE: Bool](corevideo_true.md)
 - [var COREVIDEO_USE_DERIVED_ENUMS_FOR_CONSTANTS: Bool](corevideo_use_derived_enums_for_constants.md)
+- [var COREVIDEO_USE_EAGLCONTEXT_CLASS_IN_API: Int32](corevideo_use_eaglcontext_class_in_api.md)
 
 
 ---

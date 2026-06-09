@@ -16,6 +16,7 @@ object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerrit
 
 ### Objects
 - [object InAppPurchaseAvailabilityCreateRequest.Data.Relationships.AvailableTerritories.Data](inapppurchaseavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/availableterritories-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an in-app purchase availability.
 
 ## Properties
 

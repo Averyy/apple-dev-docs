@@ -8,6 +8,13 @@ Learn about important changes to SwiftData.
 
 Browse notable changes in [`SwiftData`](https://developer.apple.com/documentation/SwiftData).
 
+#### June 2026
+
+- Section your query results by creating your query with a macro that takes a `sectionBy` parameter, as listed on the [`Additional query macros`](https://developer.apple.com/documentation/SwiftData/AdditionalQueryMacros) page.
+- Use types that conform to [`Codable`](https://developer.apple.com/documentation/Swift/Codable) in a model, including types you don’t control directly, by using the  [`codable`](https://developer.apple.com/documentation/SwiftData/Schema/Attribute/Option/codable) option for [`Schema.Attribute`](https://developer.apple.com/documentation/SwiftData/Schema/Attribute).
+- Receive real-time updates to models that match specified fetch criteria by using the [`ResultsObserver`](https://developer.apple.com/documentation/SwiftData/ResultsObserver) type.
+- Observe remote model changes with the [`HistoryObserver`](https://developer.apple.com/documentation/SwiftData/HistoryObserver) type.
+
 #### June 2025
 
 - Increase the flexibility of your models by adopting inheritance through the [`Model()`](https://developer.apple.com/documentation/SwiftData/Model()) macro.

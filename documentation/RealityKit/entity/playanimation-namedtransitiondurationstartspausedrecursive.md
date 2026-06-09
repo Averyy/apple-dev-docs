@@ -53,7 +53,7 @@ The method plays all the animations in the [`availableAnimations`](entity/availa
 - [Entity.ParameterSet](entity/parameterset.md)
   Represents a reference to the parameters for a particular entity.
 - [var bindableValues: BindableValuesReference](entity/bindablevalues.md)
-- [subscript(BindTarget.EntityPath) -> Entity?](entity/subscript(_:).md)
+- [subscript(_:)](entity/subscript(_:).md)
   Resolves the entity from the given entity path.
 
 

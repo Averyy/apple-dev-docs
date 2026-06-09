@@ -22,6 +22,13 @@ var lineWidth: CGFloat
 
 Defaults to `0`.
 
+## See Also
+
+- [var fillColor: CGColor?](shapeconfiguration/fillcolor.md)
+  The fill color of the shape.
+- [var strokeColor: CGColor?](shapeconfiguration/strokecolor.md)
+  The stroke color of the shape.
+
 
 ---
 

@@ -1,0 +1,26 @@
+# publicKey
+
+**Framework**: Apple CryptoKit  
+**Kind**: property
+
+The corresponding public key.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+var publicKey: MLKEM768.PublicKey { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/cryptokit/mlkem768/onetimeprivatekey/publickey)*

@@ -17,17 +17,17 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func > (Int16, Int16) -> Bool](int16/_(_:_:)-2bfow.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func > (Self, Self) -> Bool](int16/_(_:_:)-37egm.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](int16/_(_:_:)-45mu2.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+- [static func > (borrowing Self, borrowing Self) -> Bool](int16/_(_:_:)-4vlwn.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](int16/_=(_:_:)-10pbm.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 - [static func >= (Int16, Int16) -> Bool](int16/_=(_:_:)-4rhds.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](int16/_=(_:_:)-4tbcs.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](int16/_=(_:_:)-6bkn5.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 - [static func <= (Int16, Int16) -> Bool](int16/_=(_:_:)-7wokl.md)
+  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func <= (borrowing Self, borrowing Self) -> Bool](int16/_=(_:_:)-evt0.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

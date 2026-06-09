@@ -199,6 +199,7 @@ After the local device catches up with group playback, the sample ends the suspe
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 
 
 ---

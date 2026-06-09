@@ -14,7 +14,7 @@ A type alias that represents a function or an object that receives a MapKit even
 type MapKitEventListener<T extends MapKitEvent = MapKitEvent> =
     | ((event: T) => void)
     | {
-          handleEvent<T>(event: T): void;
+          handleEvent(event: T): void;
       };
 ```
 

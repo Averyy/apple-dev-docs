@@ -22,7 +22,7 @@ struct ScrollViewProxy
 
 #### Overview
 
-You don’t create instances of `ScrollViewProxy` directly. Instead, your [`ScrollViewReader`](scrollviewreader.md) receives an instance of `ScrollViewProxy` in its `content` view builder. You use actions within this view builder, such as button and gesture handlers or the [`onChange(of:perform:)`](view/onchange(of:perform:).md) method, to call the proxy’s [`scrollTo(_:anchor:)`](scrollviewproxy/scrollto(_:anchor:).md) method.
+You don’t create instances of `ScrollViewProxy` directly. Instead, your [`ScrollViewReader`](scrollviewreader.md) receives an instance of `ScrollViewProxy` in its `content` content builder. You use actions within this content builder, such as button and gesture handlers or the [`onChange(of:perform:)`](view/onchange(of:perform:).md) method, to call the proxy’s [`scrollTo(_:anchor:)`](scrollviewproxy/scrollto(_:anchor:).md) method.
 
 ## Topics
 

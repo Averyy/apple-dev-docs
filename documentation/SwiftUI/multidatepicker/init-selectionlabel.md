@@ -15,7 +15,7 @@ Creates an instance that selects multiple dates with an unbounded range.
 
 ```swift
 nonisolated
-init(selection: Binding<Set<DateComponents>>, @ViewBuilder label: () -> Label)
+init(selection: Binding<Set<DateComponents>>, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

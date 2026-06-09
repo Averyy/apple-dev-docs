@@ -31,6 +31,11 @@ Capture audio and video directly to media files, or capture streams of media for
 ### Mac screen capture
 - [class AVCaptureScreenInput](avcapturescreeninput.md)
   A capture input for recording from a screen in macOS.
+### Broadcast video output
+- [class AVCaptureBroadcastVideoOutput](avcapturebroadcastvideooutput.md)
+  [`AVCaptureBroadcastVideoOutput`](avcapturebroadcastvideooutput.md) is a subclass of [`AVCaptureOutput`](avcaptureoutput.md) that delivers broadcast-quality video and ancillary data through the device’s DisplayPort hardware interface (USB-C DP Alt Mode)
+- [protocol AVCaptureBroadcastVideoOutputDelegate](avcapturebroadcastvideooutputdelegate.md)
+  Protocol for receiving broadcast video output events and data.
 
 ## See Also
 

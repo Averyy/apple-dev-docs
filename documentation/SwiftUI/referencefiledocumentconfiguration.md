@@ -39,8 +39,6 @@ You receive an instance of this structure when you create a [`DocumentGroup`](do
 
 - [protocol ReferenceFileDocument](referencefiledocument.md)
   A type that you use to serialize reference type documents to and from file.
-- [var undoManager: UndoManager?](environmentvalues/undomanager.md)
-  The undo manager used to register a view’s undo operations.
 
 
 ---

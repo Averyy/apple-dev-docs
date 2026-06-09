@@ -50,6 +50,9 @@ When your app launches, the document view controller displays a view that contai
 ### Creating documents
 - [class func createDocumentAction(withIntent: UIDocument.CreationIntent) -> UIAction](uidocumentviewcontroller/launchoptions-swift.class/createdocumentaction(withintent:).md)
   Creates an action that uses the specified intent.
+### Instance Properties
+- [var subtitle: String?](uidocumentviewcontroller/launchoptions-swift.class/subtitle.md)
+  The subtitle of the view. Default is `nil`. If `nil`, no subtitle will be displayed.
 
 ## Relationships
 

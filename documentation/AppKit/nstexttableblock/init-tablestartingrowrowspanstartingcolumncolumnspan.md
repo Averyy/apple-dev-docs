@@ -6,12 +6,12 @@
 Returns an initialized text table block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-init(table: NSTextTable, startingRow row: Int, rowSpan: Int, startingColumn col: Int, columnSpan colSpan: Int)
+init(table: NSTextTable, startingRow row: Int, rowSpan: Int, startingColumn column: Int, columnSpan: Int)
 ```
 
 #### Discussion
@@ -23,12 +23,11 @@ This is the designated initializer.
 - `table`: The text table containing this text table block.
 - `row`: The table row at which the text table block starts.
 - `rowSpan`: How many rows the text table block covers.
-- `col`: The table column at which the text table block starts.
-- `colSpan`: How many columns the text table block covers.
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSTextTable](nstexttable.md)
+  An object that represents a text table as a whole.
 
 
 ---

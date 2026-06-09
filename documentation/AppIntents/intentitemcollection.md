@@ -75,6 +75,7 @@ struct CreateBookIntent: AppIntent {
 - [struct IntentItemSection](intentitemsection.md)
   An object you use to divide dynamic options into sections.
 - [struct IntentCollectionSize](intentcollectionsize.md)
+- [struct IntentResponseStream](intentresponsestream.md)
 
 
 ---

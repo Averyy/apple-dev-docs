@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field that applies a formatter to a bound optional value, with a label generated from a view builder.
+Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 
 **Availability**:
 - iOS 15.0+
@@ -18,7 +18,7 @@ Creates a text field that applies a formatter to a bound optional value, with a 
 
 ```swift
 nonisolated
-init<V>(value: Binding<V>, formatter: Formatter, prompt: Text? = nil, @ViewBuilder label: () -> Label)
+init<V>(value: Binding<V>, formatter: Formatter, prompt: Text? = nil, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion
@@ -64,7 +64,7 @@ var body: some View {
 - [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
   Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
 - [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
-  Creates a text field that applies a format style to a bound value, with a label generated from a view builder.
+  Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)

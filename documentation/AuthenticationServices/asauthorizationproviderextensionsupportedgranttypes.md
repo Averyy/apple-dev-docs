@@ -21,6 +21,7 @@ struct ASAuthorizationProviderExtensionSupportedGrantTypes
 - [static var password: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/password.md)
 - [static var saml1_1: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/saml1_1.md)
 - [static var saml2_0: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/saml2_0.md)
+- [static var tokenExchange: ASAuthorizationProviderExtensionSupportedGrantTypes](asauthorizationproviderextensionsupportedgranttypes/tokenexchange.md)
 
 ## Relationships
 

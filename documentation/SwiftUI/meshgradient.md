@@ -17,6 +17,7 @@ A two-dimensional gradient defined by a 2D grid of positioned colors.
 ## Declaration
 
 ```swift
+nonisolated
 struct MeshGradient
 ```
 

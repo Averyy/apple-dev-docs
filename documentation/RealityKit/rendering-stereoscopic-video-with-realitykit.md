@@ -369,6 +369,13 @@ let buffer = CMReadySampleBuffer(
 )
 ```
 
+## See Also
+
+- [Destination Video](../visionOS/destination-video.md)
+  Leverage SwiftUI to build an immersive media experience in a multiplatform app.
+- [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
+  Secure a video player in an immersive scene with a docking region you can specify.
+
 
 ---
 

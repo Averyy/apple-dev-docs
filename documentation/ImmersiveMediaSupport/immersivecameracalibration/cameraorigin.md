@@ -38,6 +38,8 @@ struct CameraOrigin
 
 - [ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/cameratexturemapping.md)
   A type that holds the matrices used for video frame texture mapping on the camera lens geometry.
+- [class ImmersiveCameraMeshCalibration](immersivecamerameshcalibration.md)
+  Calibration mesh geometry based on USDZ data.
 
 
 ---

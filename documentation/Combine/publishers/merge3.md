@@ -52,9 +52,7 @@ struct Merge3<A, B, C> where A : Publisher, B : Publisher, C : Publisher, A.Fail
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Publisher](publisher.md)
 
 ## See Also

@@ -3,11 +3,10 @@
 **Framework**: Device Management  
 **Kind**: httpRequest
 
-Fetch metadata for apps and books from the catalog by using a search term.
+Fetch metadata for apps, books, and subscriptions from the catalog by using a search term.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.2+
 
 #### Discussion
 

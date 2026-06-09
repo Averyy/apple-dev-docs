@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update a build upload resource.
+The data wrapper for updating a build upload file’s processing state.
 
 **Availability**:
 - App Store Connect API 4.1+

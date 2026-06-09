@@ -20,6 +20,10 @@ The number of material entries required to render the mesh resource.
 @preconcurrency var expectedMaterialCount: Int { get }
 ```
 
+#### Discussion
+
+Use this value to determine the number of [`Material`](material.md) instances to provide in the [`materials`](modelcomponent/materials.md) array. When a mesh has multiple submeshes, each submesh references a material by index.
+
 ## See Also
 
 - [func replace(with: MeshResource.Contents) throws](meshresource/replace(with:)-g0kn.md)

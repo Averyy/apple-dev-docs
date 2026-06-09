@@ -17,7 +17,7 @@ Creates an instance that presents the share interface.
 
 ```swift
 nonisolated
-init<I>(item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>, @ViewBuilder label: () -> Label) where Data == CollectionOfOne<I>, I : Transferable
+init<I>(item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>, @ContentBuilder label: () -> Label) where Data == CollectionOfOne<I>, I : Transferable
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ init<I>(item: I, subject: Text? = nil, message: Text? = nil, preview: SharePrevi
 - `subject`: A title for the item to show when sharing to activities that support a subject field.
 - `message`: A description of the item to show when sharing to activities that support a message field. Activities may support attributed text or HTML strings.
 - `preview`: A representation of the item to render in a preview.
-- `label`: A view builder that produces a label that describes the share action.
+- `label`: A content builder that produces a label that describes the share action.
 
 ## See Also
 

@@ -9,6 +9,7 @@ Provides an updated Live Activity and requests confirmation that the accessory d
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

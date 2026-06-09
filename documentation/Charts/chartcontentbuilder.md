@@ -30,10 +30,6 @@ You don’t call the methods of the result builder directly. Instead, Swift uses
 ## Topics
 
 ### Building chart content
-- [static func buildPartialBlock<T>(first: T) -> T](chartcontentbuilder/buildpartialblock(first:).md)
-  Builds a partial result from a single, first component.
-- [static func buildPartialBlock(accumulated: some ChartContent, next: some ChartContent) -> some ChartContent](chartcontentbuilder/buildpartialblock(accumulated:next:).md)
-  Builds a partial result by combining an accumulated component and a new component.
 - [static func buildBlock() -> some ChartContent](chartcontentbuilder/buildblock.md)
   Produces empty chart content.
 ### Building conditionally

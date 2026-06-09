@@ -21,31 +21,15 @@ struct CadenceRangeAlert
 ## Topics
 
 ### Creating new cadence range alerts
-- [static func cadence(ClosedRange<Double>, unit: UnitFrequency) -> Self](cadencerangealert/cadence(_:unit:).md)
-  Creates a new cadence alert for the target range.
 - [init(target: ClosedRange<Measurement<UnitFrequency>>)](cadencerangealert/init(target:).md)
   Creates a cadence alert for a closed range of measurements.
 ### Accessing the alert data
-- [var metric: WorkoutAlertMetric](cadencerangealert/metric.md)
-  The metric for the alert.
 - [var target: ClosedRange<Measurement<UnitFrequency>>](cadencerangealert/target.md)
   The target range.
 - [var targetQuantityLowerBound: HKQuantity](cadencerangealert/targetquantitylowerbound.md)
   The target’s lower bound.
 - [var targetQuantityUpperBound: HKQuantity](cadencerangealert/targetquantityupperbound.md)
   The target’s upper bound.
-### Comparing alerts
-- [var hashValue: Int](cadencerangealert/hashvalue.md)
-  The hashed value of the cadence range alert.
-- [func hash(into: inout Hasher)](cadencerangealert/hash(into:).md)
-  Hashes the essential components of the cadence range alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](cadencerangealert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two cadence range alerts aren’t equal.
-- [static func == (CadenceRangeAlert, CadenceRangeAlert) -> Bool](cadencerangealert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two cadence range alerts are equal.
-### Default Implementations
-- [Equatable Implementations](cadencerangealert/equatable-implementations.md)
-- [WorkoutAlert Implementations](cadencerangealert/workoutalert-implementations.md)
 
 ## Relationships
 

@@ -63,6 +63,10 @@ To learn more, see [`Debugging the shaders within a draw command or compute disp
   Debug and profile your app’s performance using a GPU trace file in the Metal debugger.
 - [Optimizing GPU performance](optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
+- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+  Investigate rendering issues in GPU traces without leaving the Terminal.
+- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+  Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
 
 ---

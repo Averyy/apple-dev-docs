@@ -7,8 +7,6 @@ The pairing of Authorization Rights to group names.
 
 **Availability**:
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -18,7 +18,7 @@ A view type that compares itself against its previous value and prevents its chi
 
 ```swift
 @frozen
-struct EquatableView<Content> where Content : Equatable, Content : View
+nonisolated struct EquatableView<Content> where Content : Equatable, Content : View
 ```
 
 ## Topics

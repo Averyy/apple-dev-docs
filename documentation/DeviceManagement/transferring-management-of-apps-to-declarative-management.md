@@ -2,7 +2,7 @@
 
 **Framework**: Device Management
 
-Seamlessly transition apps to declarative management without needing to reinstall.
+Transition apps to declarative management.
 
 #### Overview
 

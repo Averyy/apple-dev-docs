@@ -17,6 +17,7 @@ Creates a gesture from two gestures where only one of them succeeds.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ first: First, _ second: Second)
 ```
 

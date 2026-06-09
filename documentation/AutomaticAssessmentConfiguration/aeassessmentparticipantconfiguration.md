@@ -32,8 +32,15 @@ Use an instance of this class to configure the properties of an app that you all
 - [var allowsNetworkAccess: Bool](aeassessmentparticipantconfiguration/allowsnetworkaccess.md)
   A Boolean that indicates whether an app can access network resources during an assessment.
 ### Instance Properties
+- [var allowedMenuItemLanguages: Set<Locale.Language>](aeassessmentparticipantconfiguration/allowedmenuitemlanguages.md)
+  The set of languages for which allowed menu items have been configured.
 - [var configurationInfo: [String : Any]](aeassessmentparticipantconfiguration/configurationinfo.md)
 - [var isRequired: Bool](aeassessmentparticipantconfiguration/isrequired.md)
+### Instance Methods
+- [func allowedMenuItems(for: Locale.Language) -> Set<String>?](aeassessmentparticipantconfiguration/allowedmenuitems(for:).md)
+  Returns the set of allowed menu item titles for the given language, or `nil` if no items have been configured for that language.
+- [func setAllowedMenuItems(Set<String>?, for: Locale.Language)](aeassessmentparticipantconfiguration/setallowedmenuitems(_:for:).md)
+  Sets the allowed menu item titles for the given language.
 
 ## Relationships
 

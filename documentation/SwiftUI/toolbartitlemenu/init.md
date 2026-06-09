@@ -17,6 +17,7 @@ Creates a toolbar title menu where actions are inferred from your apps commands.
 ## Declaration
 
 ```swift
+nonisolated
 init() where Content == EmptyView
 ```
 

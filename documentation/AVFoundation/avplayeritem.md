@@ -293,6 +293,13 @@ A player item stores a reference to an [`AVAsset`](avasset.md) object, which rep
 ### Instance Properties
 - [var interstitialEventIdentifier: String?](avplayeritem/interstitialeventidentifier.md)
   The identifier of the AVPlayerInterstitialEvent that created this item, or nil if the item was not created from an interstitial event.
+### Instance Methods
+- [func fetchAccessLog(completionHandler: (sending AVPlayerItemAccessLog?) -> Void)](avplayeritem/fetchaccesslog(completionhandler:).md)
+  Asynchronously retrieves the access log without blocking the calling thread.
+- [func fetchErrorLog(completionHandler: (sending AVPlayerItemErrorLog?) -> Void)](avplayeritem/fetcherrorlog(completionhandler:).md)
+  Asynchronously retrieves the error log without blocking the calling thread.
+- [func selectableMediaSelectionOptions(in: AVMediaSelectionGroup) -> [AVMediaSelectionOption]](avplayeritem/selectablemediaselectionoptions(in:).md)
+  Returns the media selection options in the specified media selection group that can produce content.
 
 ## Relationships
 

@@ -21,7 +21,7 @@ The default shadow color is black with an alpha of 1/3. If you set this property
 
 ## See Also
 
-- [var shadowOffset: NSSize](nsshadow/shadowoffset.md)
+- [var shadowOffset: CGSize](nsshadow/shadowoffset.md)
   The shadow’s relative position, which you specify with horizontal and vertical offset values.
 - [var shadowBlurRadius: CGFloat](nsshadow/shadowblurradius.md)
   The blur radius of the shadow.

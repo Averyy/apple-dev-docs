@@ -25,7 +25,7 @@ Each iOS, iPadOS, macOS, tvOS, visionOS, and watchOS device has a persistent, un
 
 When you use automatic signing, Xcode registers the connected device or Mac for you. For iOS, iPadOS, or tvOS attach your device to your computer, and select Trust if the device asks to trust your computer. For watchOS, attach the paired phone for your watchOS device to your computer.
 
-In Xcode, select your attached device as the run destination, and build and run your app. For more information on simulated apps, see [`Running your app in Simulator or on a device`](running-your-app-in-simulator-or-on-a-device.md). If your device needs to be registered, click the Register button in the dialog that Xcode displays, and Xcode registers and adds the device to your provisioning profile.
+In Xcode, select your attached device as the run destination, and build and run your app. For more information on simulated apps, see [`Running your app on simulated or physical devices`](running-your-app-on-simulated-or-physical-devices.md). If your device needs to be registered, click the Register button in the dialog that Xcode displays, and Xcode registers and adds the device to your provisioning profile.
 
 ##### Collect Device Identifiers Ios Ipados Tvos Visionos Watchos
 

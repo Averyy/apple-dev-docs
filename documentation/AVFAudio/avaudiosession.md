@@ -89,8 +89,38 @@ The audio session uses this configuration when you activate the session using th
   Activates or deactivates your app’s audio session using the specified options.
 - [func activate(options: AVAudioSessionActivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/activate(options:completionhandler:).md)
   Activates an audio session asynchronously on watchOS.
+- [func deactivate(options: AVAudioSessionDeactivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/deactivate(options:completionhandler:).md)
+  Deactivates the audio session asynchronously.
 - [struct AVAudioSessionActivationOptions](avaudiosessionactivationoptions.md)
   Constants that describe the options to pass when activating the audio session.
+- [struct AVAudioSessionDeactivationOptions](avaudiosessiondeactivationoptions.md)
+  Options for deactivating an AVAudioSession
+### Observing activation lifecycle
+- [class let didBecomeActiveNotification: NSNotification.Name](avaudiosession/didbecomeactivenotification.md)
+  Notification sent when the audio session becomes active.
+- [class let didBecomeInactiveNotification: NSNotification.Name](avaudiosession/didbecomeinactivenotification.md)
+  Notification sent when the audio session becomes inactive.
+- [class let resumptionRecommendationNotification: NSNotification.Name](avaudiosession/resumptionrecommendationnotification.md)
+  Notification sent when the system provides a resumption recommendation.
+- [class let deactivationContextKey: String](avaudiosession/deactivationcontextkey.md)
+  Keys for [`didBecomeInactiveNotification`](avaudiosession/didbecomeinactivenotification.md) Value is an [`AVAudioSession.DeactivationContext`](avaudiosession/deactivationcontext.md) object describing the deactivation.
+- [class let resumptionContextKey: String](avaudiosession/resumptioncontextkey.md)
+  Keys for [`resumptionRecommendationNotification`](avaudiosession/resumptionrecommendationnotification.md) Value is an [`AVAudioSession.ResumptionContext`](avaudiosession/resumptioncontext.md) describing the resumption recommendation.
+- [AVAudioSession.DidBecomeActiveMessage](avaudiosession/didbecomeactivemessage.md)
+- [AVAudioSession.DidBecomeInactiveMessage](avaudiosession/didbecomeinactivemessage.md)
+- [AVAudioSession.ResumptionRecommendationMessage](avaudiosession/resumptionrecommendationmessage.md)
+- [AVAudioSession.DeactivationResult](avaudiosession/deactivationresult.md)
+  Type-safe representation of audio session deactivation results.
+- [AVAudioSession.DeactivationContext](avaudiosession/deactivationcontext.md)
+  An object that describes why and how the audio session deactivated.
+- [AVAudioSession.DeactivationSource](avaudiosession/deactivationsource.md)
+  The source of the audio session deactivation.
+- [AVAudioSession.InterruptionContext](avaudiosession/interruptioncontext.md)
+  An object that provides context about an audio session interruption.
+- [AVAudioSession.ResumptionContext](avaudiosession/resumptioncontext.md)
+  An object that provides context when resumption becomes available.
+- [AVAudioSession.ResumptionRecommendation](avaudiosession/resumptionrecommendation.md)
+  The system’s recommendation on whether to resume playback.
 ### Inspecting the category configuration
 - [var category: AVAudioSession.Category](avaudiosession/category-swift.property.md)
   The current audio session category.
@@ -103,7 +133,7 @@ The audio session uses this configuration when you activate the session using th
 - [AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct.md)
   Constants that specify optional audio behaviors.
 - [static var farFieldInput: AVAudioSession.CategoryOptions](avaudiosession/categoryoptions-swift.struct/farfieldinput.md)
-  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md) and [`record`](avaudiosession/category-swift.struct/record.md).
+  This option should be used if a session prefers to use FarFieldInput when available. This option is only valid with categories that support input - [`playAndRecord`](avaudiosession/category-swift.struct/playandrecord.md), [`record`](avaudiosession/category-swift.struct/record.md), and `AVAudioSessionMultiRoute` with [`dualRoute`](avaudiosession/mode-swift.struct/dualroute.md).
 ### Inspecting mode configuration
 - [var mode: AVAudioSession.Mode](avaudiosession/mode-swift.property.md)
   The current audio session’s mode.

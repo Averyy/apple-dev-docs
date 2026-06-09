@@ -47,8 +47,8 @@ class MXAnimationMetric
   An object representing metrics about app launch time.
 - [class MXAppResponsivenessMetric](mxappresponsivenessmetric.md)
   An object representing metrics about the responsiveness of the app to user interaction.
-- [class MXHangDiagnostic](mxhangdiagnostic.md)
-  An object representing a diagnostic report for an app that is too busy to handle user input responsively.
+- [struct MXLaunchTaskID](mxlaunchtaskid.md)
+  The task identifier to track launch measurements.
 
 
 ---

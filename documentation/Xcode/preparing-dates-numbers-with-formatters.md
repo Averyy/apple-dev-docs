@@ -364,7 +364,7 @@ struct ContentView: View {
 - [Preparing your interface for localization](preparing-your-interface-for-localization.md)
   Find text in your app that needs translation and verify that your interface adapts to translated text.
 - [Preparing your app’s text for translation](preparing-your-apps-text-for-translation.md)
-  Make your app’s text translatable by leveraging the localization APIs in the Foundation framework.
+  Use localizable APIs to populate string catalogs automatically with your app’s user-facing text.
 
 
 ---

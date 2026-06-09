@@ -50,6 +50,8 @@ You can’t initialize an abstract class; use [`LookAround`](lookaround.md) or [
 
 ## Relationships
 
+### Inherits From
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 ### Inherited By
 - [LookAround](lookaround.md)
 - [LookAroundPreview](lookaroundpreview.md)

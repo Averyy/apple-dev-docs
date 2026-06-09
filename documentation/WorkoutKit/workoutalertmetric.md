@@ -28,17 +28,6 @@ enum WorkoutAlertMetric
 ### Accessing the metric’s value
 - [static var countPerMinute: UnitFrequency](workoutalertmetric/countperminute.md)
   The metric’s counts per minute.
-### Comparing metrics
-- [static func == (WorkoutAlertMetric, WorkoutAlertMetric) -> Bool](workoutalertmetric/==(_:_:).md)
-  Returns a Boolean value that indicates whether two workout metrics are equal.
-- [static func != (Self, Self) -> Bool](workoutalertmetric/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two workout metrics aren’t equal.
-- [var hashValue: Int](workoutalertmetric/hashvalue.md)
-  The hashed value of the workout metric.
-- [func hash(into: inout Hasher)](workoutalertmetric/hash(into:).md)
-  Hashes the essential components of the workout metric by feeding them into the given hash function.
-### Default Implementations
-- [Equatable Implementations](workoutalertmetric/equatable-implementations.md)
 
 ## Relationships
 

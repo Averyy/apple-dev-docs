@@ -9,7 +9,7 @@ An array of type identifiers that correspond to file types your delegate object 
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

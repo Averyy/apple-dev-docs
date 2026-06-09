@@ -11,7 +11,7 @@ An event object that notifies the developer of an error that occurred while load
 ## Declaration
 
 ```swift
-class TileOverlayErrorEvent extends MapKitEvent
+class TileOverlayErrorEvent extends Event
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ class TileOverlayErrorEvent extends MapKitEvent
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 
 ---

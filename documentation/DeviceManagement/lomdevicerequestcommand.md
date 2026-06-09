@@ -7,8 +7,6 @@ The command to send requests to a device using lights-out management (LOM).
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

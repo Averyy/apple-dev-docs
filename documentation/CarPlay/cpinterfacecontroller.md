@@ -65,6 +65,11 @@ You also use the interface controller to display a single template modally. Call
 ### Deprecated
 - [Deprecated Symbols](cpinterfacecontroller-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Instance Methods
+- [func hideOverlayTemplate(animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/hideoverlaytemplate(animated:completion:).md)
+  Dismiss the current overlay template, optionally animating the dismissal.
+- [func showOverlayTemplate(CPTemplate, animated: Bool, completion: ((Bool, (any Error)?) -> Void)?)](cpinterfacecontroller/showoverlaytemplate(_:animated:completion:).md)
+  Show a template as an overlay over the current template hierarchy. Only one overlay template may be shown at a time.
 
 ## Relationships
 

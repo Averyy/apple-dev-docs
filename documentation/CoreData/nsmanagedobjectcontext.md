@@ -324,6 +324,21 @@ You are strongly discouraged from subclassing `NSManagedObjectContext`. The chan
 ### Deprecated
 - [Deprecated symbols](nsmanagedobjectcontext-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [NSManagedObjectContext.DidMergeChangesAsyncMessage](nsmanagedobjectcontext/didmergechangesasyncmessage.md)
+  Posted after a private queue context merges changes from another context, containing object IDs.
+- [NSManagedObjectContext.DidMergeChangesMessage](nsmanagedobjectcontext/didmergechangesmessage.md)
+  Posted after a main queue context merges changes from another context, containing object IDs.
+- [NSManagedObjectContext.DidSaveMessage](nsmanagedobjectcontext/didsavemessage.md)
+  Posted after a main queue context saves.
+- [NSManagedObjectContext.DidSaveObjectIDsAsyncMessage](nsmanagedobjectcontext/didsaveobjectidsasyncmessage.md)
+  Posted after a private queue context saves, containing object IDs rather than full objects.
+- [NSManagedObjectContext.DidSaveObjectIDsMessage](nsmanagedobjectcontext/didsaveobjectidsmessage.md)
+  Posted after a main queue context saves, containing object IDs rather than full objects.
+- [NSManagedObjectContext.ObjectsDidChangeMessage](nsmanagedobjectcontext/objectsdidchangemessage.md)
+  Posted when objects in a main queue context change (inserted, updated, deleted, refreshed, or invalidated).
+- [NSManagedObjectContext.WillSaveMessage](nsmanagedobjectcontext/willsavemessage.md)
+  Posted before a main queue context saves.
 ### Initializers
 - [init?(coder: NSCoder)](nsmanagedobjectcontext/init(coder:).md)
 

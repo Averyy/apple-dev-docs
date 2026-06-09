@@ -8,6 +8,8 @@ Ask the user’s permission to perform speech recognition using Apple’s server
 
 The speech recognition process involves capturing audio of the user’s voice and sending that data to Apple’s servers for processing. The audio you capture constitutes sensitive user data, and you must make every effort to protect it. You must also obtain the user’s permission before sending that data across the network to Apple’s servers. You request authorization using the APIs of the Speech framework.
 
+> **Note**: This process only applies to speech recognition using [`SFSpeechRecognizer`](sfspeechrecognizer.md). [`SpeechAnalyzer`](speechanalyzer.md) transcriber modules don’t send audio data of the user’s voice to Apple’s servers.
+
 ![When an app requests authorization to use speech recognition, the system prompts the user to grant or deny access to the feature.](https://docs-assets.developer.apple.com/published/b77d3cc65c0bfa28175cd54cc7a38b4b/media-3038127%402x.png)
 
 ##### Add the Privacy Key to Your Infoplist File

@@ -15,6 +15,7 @@ A new value describing the built-in sidebar-related commands.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

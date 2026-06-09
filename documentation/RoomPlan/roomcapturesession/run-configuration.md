@@ -9,7 +9,6 @@ Starts a room-capture session with the specified configuration.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

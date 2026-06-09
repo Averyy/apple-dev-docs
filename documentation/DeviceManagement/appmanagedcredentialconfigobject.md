@@ -9,9 +9,8 @@ A dictionary of values associated with a credential config.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

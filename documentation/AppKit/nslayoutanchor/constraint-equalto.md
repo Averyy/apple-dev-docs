@@ -67,7 +67,8 @@ NSLayoutGuide *margin = self.view.layoutMarginsGuide;
 
 - [class NSLayoutConstraint](nslayoutconstraint.md)
   The relationship between two user interface objects that must be satisfied by the constraint-based layout system.
-- [Auto Layout Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853)
+- [class NSLayoutAnchor](nslayoutanchor.md)
+  A factory class for creating layout constraint objects using a fluent API.
 - [func constraint(equalTo: NSLayoutAnchor<AnchorType>, constant: CGFloat) -> NSLayoutConstraint](nslayoutanchor/constraint(equalto:constant:).md)
   Returns a constraint that defines one item’s attribute as equal to another item’s attribute plus a constant offset.
 - [func constraint(greaterThanOrEqualTo: NSLayoutAnchor<AnchorType>) -> NSLayoutConstraint](nslayoutanchor/constraint(greaterthanorequalto:).md)

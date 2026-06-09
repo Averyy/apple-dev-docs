@@ -26,6 +26,8 @@ Create and manage auto-renewable subscriptions, including managing subscription 
   Create, modify, and delete promotion images for your auto-renewalable subscription.
 - [Subscription availability](subscription-availability.md)
   Read and modify territory availability for an auto-renewable subscription.
+- [Subscription plan availability](subscription-plan-availability.md)
+  Create and manage subscription plan availability for auto-renewable subscriptions.
 - [Billing Grace Periods](billing-grace-periods.md)
   Get information about the grace period and modify the opt-in value.
 ### Managing Subscription Offers

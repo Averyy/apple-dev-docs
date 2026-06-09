@@ -18,6 +18,8 @@ class let willPopUpNotification: NSNotification.Name
 
 The notification object is the `NSComboBox` whose pop-up window will be displayed. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSComboBox.WillPopUpMessage`](nscombobox/willpopupmessage.md).
+
 ## See Also
 
 - [class let selectionDidChangeNotification: NSNotification.Name](nscombobox/selectiondidchangenotification.md)

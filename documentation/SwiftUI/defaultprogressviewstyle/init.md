@@ -17,6 +17,7 @@ Creates a default progress view style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

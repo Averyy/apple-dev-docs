@@ -22,6 +22,8 @@ object AutomaticReloadPaymentDetails
   Details about a deferred payment, such as a hotel booking or a preorder.
 - [object PastPayment](pastpayment.md)
   A past payment.
+- [object PaymentIssueDetails](paymentissuedetails.md)
+  Details about a payment issue, such as a declined payment.
 - [object RecurringPaymentDetails](recurringpaymentdetails.md)
   Details about a recurring payment, typically a subscription.
 - [object UpcomingPayment](upcomingpayment.md)

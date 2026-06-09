@@ -3,6 +3,8 @@
 **Framework**: Objective-C Runtime  
 **Kind**: property
 
+An accessibility element that contains text that is semantically previous to this element’s text.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -15,6 +17,10 @@
 @MainActor
 var accessibilityPreviousTextNavigationElement: Any? { get set }
 ```
+
+#### Discussion
+
+Assistive technologies transition to these elements when navigating through text granularities, such as when using the VoiceOver Lines rotor.
 
 
 ---

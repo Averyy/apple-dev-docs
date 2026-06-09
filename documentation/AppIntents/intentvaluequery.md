@@ -40,10 +40,10 @@ protocol IntentValueQuery : PersistentlyIdentifiable, _SupportsAppDependencies, 
 
 ## See Also
 
-- [Integrating your app with visual intelligence](../VisualIntelligence/integrating-your-app-with-visual-intelligence.md)
-  Enable people to find app content that matches their surroundings or objects onscreen with visual intelligence.
-- [Visual Intelligence](../VisualIntelligence/VisualIntelligence.md)
-  Include your app’s content in search results that visual intelligence provides.
+- [struct IntentValueContainer](intentvaluecontainer.md)
+  A container that stores a value that supports intent value conversion.
+- [struct IntentValueExpression](intentvalueexpression.md)
+  A type that represents a lazily evaluated intent value.
 
 
 ---

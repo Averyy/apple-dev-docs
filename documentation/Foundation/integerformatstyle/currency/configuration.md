@@ -30,6 +30,8 @@ typealias Configuration = CurrencyFormatStyleConfiguration
   Modifies the format style to use the specified decimal separator display strategy.
 - [func grouping(IntegerFormatStyle<Value>.Currency.Configuration.Grouping) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func precision(IntegerFormatStyle<Value>.Currency.Configuration.Precision) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/precision(_:).md)
   Modifies the format style to use the specified precision.
 - [func presentation(IntegerFormatStyle<Value>.Currency.Configuration.Presentation) -> IntegerFormatStyle<Value>.Currency](integerformatstyle/currency/presentation(_:).md)

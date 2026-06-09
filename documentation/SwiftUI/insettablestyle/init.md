@@ -15,6 +15,7 @@ Creates a default inset table style, with alternating row backgrounds.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

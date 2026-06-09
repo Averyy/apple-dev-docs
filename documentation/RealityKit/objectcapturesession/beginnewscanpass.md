@@ -8,6 +8,7 @@ Resets the state of the capture dial such that the user will need to perform ano
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

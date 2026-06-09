@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+A result that contains either the data read or an error.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

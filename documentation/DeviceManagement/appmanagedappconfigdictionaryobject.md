@@ -9,9 +9,8 @@ A dictionary of app config data and credentials.
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -39,13 +38,13 @@ object AppManagedAppConfigDictionaryObject
 ## See Also
 
 - [object AppManagedAttributesObject](appmanagedattributesobject.md)
-  A dictionary of values associated with an app.
+  A dictionary of values to associate with the app.
 - [object AppManagedExtensionConfigsObject](appmanagedextensionconfigsobject.md)
-  A dictionary of values associated with an extension config.
+  A dictionary of extension config data and credentials.
 - [object AppManagedInstallBehaviorObject](appmanagedinstallbehaviorobject.md)
-  A dictionary that describes how and when to install an app.
+  A dictionary that describes how and when to install the app.
 - [object AppManagedUpdateBehaviorObject](appmanagedupdatebehaviorobject.md)
-  Specifies the update behavior of the apps installed from the App Store. Apps in packages are not automatically updated.
+  A dictionary that specifies how the device updates apps.
 
 
 ---

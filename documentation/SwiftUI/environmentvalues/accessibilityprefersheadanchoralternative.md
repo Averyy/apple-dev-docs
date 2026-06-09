@@ -34,6 +34,8 @@ If this property’s value is true, alternate anchors should be used for most he
   Whether the Large Content Viewer is enabled.
 - [var accessibilityPlayAnimatedImages: Bool](environmentvalues/accessibilityplayanimatedimages.md)
   Whether the setting for playing animations in an animated image is on. When this value is false, any presented image that contains animation should not play automatically.
+- [var accessibilityPrefersCrossFadeTransitions: Bool](environmentvalues/accessibilitypreferscrossfadetransitions.md)
+  A Boolean value that indicates whether the Reduce Motion and the Prefer Cross-Fade Transitions settings are in an enabled state.
 - [var accessibilityQuickActionsEnabled: Bool](environmentvalues/accessibilityquickactionsenabled.md)
   A Boolean that indicates whether the quick actions feature is enabled.
 - [var accessibilityReduceMotion: Bool](environmentvalues/accessibilityreducemotion.md)

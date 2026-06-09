@@ -18,6 +18,10 @@ The type of shape.
 var type: ShapeConfiguration.Shape
 ```
 
+## See Also
+
+- [ShapeConfiguration.Shape](shapeconfiguration/shape.md)
+
 
 ---
 

@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration to configure math behavior at the system level.
+If present, configures math behavior in the system.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,7 +25,7 @@ object MathSettingsSystemBehaviorObject
 ## See Also
 
 - [object MathSettingsCalculatorObject](mathsettingscalculatorobject.md)
-  The declaration to configure the calculator app.
+  If present, configures the built-in Calculator app.
 
 
 ---

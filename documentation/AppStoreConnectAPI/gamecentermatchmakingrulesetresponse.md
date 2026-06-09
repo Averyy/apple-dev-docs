@@ -31,7 +31,7 @@ object GameCenterMatchmakingRuleSetResponse
 - [object GameCenterMatchmakingRulesResponse](gamecentermatchmakingrulesresponse.md)
   The response body for endpoints that get multiple rules.
 - [object GameCenterMatchmakingRuleSet](gamecentermatchmakingruleset.md)
-  The data structure that represents a rule set.
+  A named collection of matchmaking rules and queues that defines the logic for matching players in a Game Center game.
 - [object GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponse](gamecentermatchmakingrulesetmatchmakingqueueslinkagesresponse.md)
 - [object GameCenterMatchmakingRuleSetRulesLinkagesResponse](gamecentermatchmakingrulesetruleslinkagesresponse.md)
 - [object GameCenterMatchmakingRuleSetTeamsLinkagesResponse](gamecentermatchmakingrulesetteamslinkagesresponse.md)

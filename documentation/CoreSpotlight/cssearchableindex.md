@@ -80,6 +80,8 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
 ### Handling drag and drop content
 - [func fetchData(forBundleIdentifier: String, itemIdentifier: String, contentType: UTType, completionHandler: (Data?, (any Error)?) -> Void)](cssearchableindex/fetchdata(forbundleidentifier:itemidentifier:contenttype:completionhandler:).md)
   Fetches data from an external provider.
+### Getting the protection class
+- [var protectionClass: FileProtectionType](cssearchableindex/protectionclass.md)
 
 ## Relationships
 
@@ -99,6 +101,7 @@ Modify custom `CSSearchableIndex` objects only on one thread or task at a time. 
   Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 - [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)
   A protocol that defines methods a delegate object or app extension uses to handle communication from the on-device index.
+- [class CSSearchableIndexDescription](cssearchableindexdescription.md)
 
 
 ---

@@ -34,6 +34,8 @@ final class AccessoryTrackingProvider
 ### Instance Methods
 - [func predictAnchor(for: AccessoryAnchor, at: TimeInterval) -> AccessoryAnchor?](accessorytrackingprovider/predictanchor(for:at:).md)
   Predict an accessory anchor to a target timestamp.
+- [func updateAccessories([Accessory]) async throws](accessorytrackingprovider/updateaccessories(_:).md)
+  Updates the accessories being tracked by a provider.
 ### Type Properties
 - [static var isSupported: Bool](accessorytrackingprovider/issupported.md)
   Determines whether this device supports the accessory tracking provider.
@@ -50,6 +52,10 @@ final class AccessoryTrackingProvider
 
 ## See Also
 
+- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 - [struct Accessory](accessory.md)
   Represents an accessory to be tracked.
 - [struct AccessoryAnchor](accessoryanchor.md)

@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Creates an instance of this type using the specified app intent and relevance information.
+
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
@@ -16,6 +18,12 @@
 ```swift
 init<IntentType>(_ intent: IntentType, widgetKind: String, relevance: RelevantContext) where IntentType : WidgetConfigurationIntent
 ```
+
+## Parameters
+
+- `intent`: The app intent you want to suggest. Currently, the intent must be a [`WidgetConfigurationIntent`](widgetconfigurationintent.md) type.
+- `widgetKind`: A string you use to describe the intent.
+- `relevance`: Contextual clues to help the system decide where to use the widget. For more information, see the documentation for this type in the [`RelevanceKit`](https://developer.apple.com/documentation/RelevanceKit) framework.
 
 
 ---

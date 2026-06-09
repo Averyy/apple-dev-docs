@@ -42,7 +42,7 @@ These values are based on flags defined in `mount.h`. Since there are system-def
 
 ## See Also
 
-- [func synchronize(flags: FSSyncFlags, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/synchronize(flags:replyhandler:).md)
+- [func synchronize(flags: FSSyncFlags, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/synchronize(flags:replyhandler:).md)
   Synchronizes the volume with its underlying resource.
 
 

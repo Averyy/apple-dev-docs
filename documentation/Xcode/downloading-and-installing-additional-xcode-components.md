@@ -2,19 +2,17 @@
 
 **Framework**: Xcode
 
-Add more Simulator runtimes, optional features, and support for additional platforms.
+Add more simulated devices, optional features, and support for additional platforms.
 
 #### Overview
 
-Xcode lets you manage optional components yourself so that you can install only the components you use and remove the ones you don’t. For example, install the Simulator runtimes for the devices and operating systems your app runs on, or add support for platforms that you target. You download and install Xcode components in Xcode settings or using the command line.
+Xcode lets you manage optional components yourself so that you can install only the components you use and remove the ones you don’t. For example, install simulator runtimes for the devices and operating systems your app runs on, or add support for platforms that you target. You download and install Xcode components in Xcode settings or using the command line.
 
 > **Note**: Developing for visionOS requires a Mac with Apple silicon.
 
 ##### Manage Xcode Components in Settings
 
 To manage your components, choose Xcode > Settings and click Components in the sidebar. Xcode shows the installed and enabled components along with the amount of storage you can recover if you remove them.
-
-![A screenshot of Xcode settings with Components selected, showing the Platform Support, Other Components, and Other Installed Platforms sections. The rows contain the downloads for each section. The icons for the downloads that aren’t installed appear in gray with a Get button on the far right.](https://docs-assets.developer.apple.com/published/f1afce13cc18134a90d6ec0056c44219/downloading-and-installing-components%402x.png)
 
 There are three types of components:
 
@@ -32,19 +30,19 @@ You can also install platform support when you create a project by selecting a t
 
 ##### Install Previously Released Simulator Runtimes in Settings
 
-You can get previously released Simulator runtimes in the Components settings. Under Other Installed Platforms, click the Add Platforms button. To filter the list in the dialog that appears, choose a platform and enter a term in the filter field in the toolbar. Then, select one or more versions in the list below, and click Download & Install.
+You can get previously released simulator runtimes in the Components settings. Under Other Installed Platforms, click the Add Platforms button. To filter the list in the dialog that appears, choose a platform and enter a term in the filter field in the toolbar. Then, select one or more versions in the list below, and click Download & Install.
 
 ##### Install Simulator Runtimes From the Xcode Run Destination
 
-When you open an Xcode project for a platform that doesn’t have any installed Simulator runtimes, Xcode displays a Get button next to the run destination and in the canvas. Click the Get button to download and install the most recent Simulator runtime for that platform.
+When you open an Xcode project for a platform that doesn’t have any installed simulator runtimes, Xcode displays a Get button next to the run destination and in the canvas. Click the Get button to download and install the most recent simulator runtime for that platform.
 
-The run destination in your Xcode project indicates when Xcode is downloading a Simulator runtime. You can select a run destination when Xcode completes the download and installation.
+The run destination in your Xcode project indicates when Xcode is downloading a simulator runtime. You can select a run destination when Xcode completes the download and installation.
 
 ##### Download Xcode Components From the Command Line
 
 You can also download components in Terminal using the `xcodebuild` command. For example, use the command line to download Xcode components once and then install them across multiple Mac computers.
 
-To download Simulator runtimes for a specific platform, use this syntax:
+To download simulator runtimes for a specific platform, use this syntax:
 
 ```None
 xcodebuild -downloadPlatform <iOS|watchOS|tvOS|visionOS>  [-exportPath <destinationpath> -buildVersion <osversion> -architectureVariant <universal|arm64>]
@@ -129,8 +127,10 @@ xcodebuild -importComponent metalToolchain ~/Downloads/metalToolchain.dmg
 
 ## See Also
 
-- [Installing your app in many Simulator platforms and versions](installing-your-app-in-many-simulator-platforms-and-versions.md)
-  Set up your app in multiple Simulator platforms and versions without the build-and-run cycle.
+- [Managing files and folders in your Xcode project](managing-files-and-folders-in-your-xcode-project.md)
+  Add new or existing files to your project, and use groups to organize the files and folders in the Project navigator.
+- [Managing multiple projects and their dependencies](managing-multiple-projects-and-their-dependencies.md)
+  Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
 
 
 ---

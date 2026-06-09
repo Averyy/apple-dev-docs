@@ -6,12 +6,7 @@
 Transfer ownership of an existing, unmanaged, but already guarded, Mach port right into a Mach.Port by name.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
-- Mac Catalyst 17.4+
 - macOS 14.4+
-- tvOS 17.4+
-- watchOS 10.4+
 
 ## Declaration
 

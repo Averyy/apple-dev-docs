@@ -1,4 +1,4 @@
-# List Invited Users
+# List invited users
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -26,7 +26,7 @@ Get a list of pending invitations to join your team.
 
 ## See Also
 
-- [Read User Invitation Information](get-v1-userinvitations-_id_.md)
+- [Read user invitation information](get-v1-userinvitations-_id_.md)
   Get information about a pending invitation to join your team.
 
 

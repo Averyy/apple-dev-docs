@@ -40,7 +40,7 @@ Most of the time, you can use TextKit to fine tune the formatting and layout of 
   A block of text laid out in a subregion of the text container.
 ### Content elements
 - [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
-  Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
+  Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [class NSTextParagraph](nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
 - [class NSTextListElement](nstextlistelement.md)

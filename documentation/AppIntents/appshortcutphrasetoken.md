@@ -28,7 +28,6 @@ enum AppShortcutPhraseToken
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
@@ -37,7 +36,6 @@ enum AppShortcutPhraseToken
 
 - [struct AppShortcut](appshortcut.md)
   A type that defines a preconfigured shortcut for a specific app intent.
-- [protocol AppShortcutsContent](appshortcutscontent.md)
 - [struct AppShortcutPhrase](appshortcutphrase.md)
   A spoken phrase that causes the system to run the corresponding App Shortcut.
 - [struct NegativeAppShortcutPhrase](negativeappshortcutphrase.md)
@@ -52,6 +50,7 @@ enum AppShortcutPhraseToken
   A result builder that allows you to declaratively describe the App Shortcuts that your app provides.
 - [enum ShortcutTileColor](shortcuttilecolor.md)
   Describes the colors a shortcut tile in the Shortcuts app.
+- [protocol AppShortcutsContent](appshortcutscontent.md)
 
 
 ---

@@ -155,6 +155,7 @@ When performing media insertions, a movie interleaves media data from tracks in 
 ### Initializers
 - [convenience init(URL: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-1scrb.md)
 - [init(URL: URL, options: [String : Any]?, error: ()) throws](avmutablemovie/init(url:options:error:)-9is91.md)
+- [convenience init(data: Data, options: [String : Any]?)](avmutablemovie/init(data:options:).md)
 - [convenience init(settingsFromMovie: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrommovie:options:)-1soot.md)
 - [init(settingsFromMovie: AVMovie?, options: [String : Any]?) throws](avmutablemovie/init(settingsfrommovie:options:)-6p8zv.md)
 

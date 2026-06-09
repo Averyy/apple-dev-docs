@@ -24,10 +24,14 @@ var isEmpty: Bool { get }
 
 - [var count: Int](indexset/count.md)
   Returns the number of integers in `self`.
+- [let endIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/endindex.md)
+  The ending index in the range.
 - [var first: IndexSet.Element?](indexset/first.md)
   The first integer in `self`, or nil if `self` is empty.
 - [var last: IndexSet.Element?](indexset/last.md)
   The last integer in `self`, or nil if `self` is empty.
+- [let startIndex: IndexSet.RangeView.Index](indexset/rangeview-swift.struct/startindex.md)
+  The beginning index in the range.
 
 
 ---

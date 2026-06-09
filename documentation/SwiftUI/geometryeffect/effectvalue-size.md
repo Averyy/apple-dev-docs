@@ -18,6 +18,7 @@ Returns the current value of the effect.
 ## Declaration
 
 ```swift
+nonisolated
 func effectValue(size: CGSize) -> ProjectionTransform
 ```
 

@@ -1,4 +1,4 @@
-# List Beta License Agreements
+# List beta license agreements
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -22,11 +22,11 @@ Find and list beta license agreements for all apps.
 
 ## See Also
 
-- [Read Beta License Agreement Information](get-v1-betalicenseagreements-_id_.md)
+- [Read beta license agreement information](get-v1-betalicenseagreements-_id_.md)
   Get a specific beta license agreement.
-- [Read the App Information of a Beta License Agreement](get-v1-betalicenseagreements-_id_-app.md)
+- [Read the app information of a beta license agreement](get-v1-betalicenseagreements-_id_-app.md)
   Get the app information for a specific beta license agreement.
-- [GET /v1/betaLicenseAgreements/{id}/relationships/app](get-v1-betalicenseagreements-_id_-relationships-app.md)
+- [Get the app ID for a beta license agreement](get-v1-betalicenseagreements-_id_-relationships-app.md)
 
 
 ---

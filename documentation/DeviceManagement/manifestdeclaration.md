@@ -5,10 +5,6 @@
 
 A dictionary that describes a declaration.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift

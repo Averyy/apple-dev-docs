@@ -3,8 +3,9 @@
 **Framework**: RealityKit  
 **Kind**: case
 
+An anchor point attached to a specific point on a tracked accessory.
+
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 26.0+
 
 ## Declaration

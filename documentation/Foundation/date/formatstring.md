@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+A type that represents a fixed date format string using string interpolation.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,19 @@
 ```swift
 struct FormatString
 ```
+
+#### Overview
+
+Use `Date.FormatString` with [`Date.VerbatimFormatStyle`](date/verbatimformatstyle.md) or [`Date.ParseStrategy`](date/parsestrategy.md) to create fixed-pattern format strings for dates. You build format strings using string interpolation with date field symbols:
+
+```swift
+let format: Date.FormatString = "\(year: .defaultDigits)-\(month: .twoDigits)-\(day: .twoDigits)"
+```
+
+## Topics
+
+### Default Implementations
+- [ExpressibleByStringInterpolation Implementations](date/formatstring/expressiblebystringinterpolation-implementations.md)
 
 ## Relationships
 

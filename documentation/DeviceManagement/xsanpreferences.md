@@ -7,8 +7,6 @@ The payload that configures the Xsan preferences that define the volumes that au
 
 **Availability**:
 - macOS 10.11+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,11 +25,11 @@ For more information, see [`https://support.apple.com/en-us/HT205333`](https://d
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Example Profile

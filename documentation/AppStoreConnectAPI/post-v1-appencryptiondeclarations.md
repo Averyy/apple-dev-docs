@@ -1,4 +1,4 @@
-# Create an App Encryption Declarations
+# Create an app encryption declaration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Add an app encryption delcaration for a specific app.
 
 ## See Also
 
-- [Assign Builds to an App Encryption Declaration](post-v1-appencryptiondeclarations-_id_-relationships-builds.md)
+- [Assign builds to an app encryption declaration](post-v1-appencryptiondeclarations-_id_-relationships-builds.md)
   Assign one or more builds to an app encryption declaration.
 
 

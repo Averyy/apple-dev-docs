@@ -17,7 +17,7 @@ Informs the delegate that a given object has been decoded.
 ## Declaration
 
 ```swift
-optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, didDecode object: Any?) -> Any?
+optional func unarchiver(_ unarchiver: NSKeyedUnarchiver, didDecode object: consuming Any?) -> Any?
 ```
 
 #### Return Value

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encode this spatial scaler work into a command buffer.
+Adds a scaling pass to a command buffer.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,7 @@ func encode(commandBuffer: any MTL4CommandBuffer)
 
 ## Parameters
 
-- `commandBuffer`: A command buffer into which this spatial scaler encodes work.
+- `commandBuffer`: A command buffer into which this scaler encodes work.
 
 
 ---

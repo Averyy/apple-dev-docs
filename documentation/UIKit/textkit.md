@@ -6,11 +6,13 @@ Manage text storage and perform custom layout of text-based content in your app�
 
 #### Overview
 
-TextKit provides several classes to control the layout of text, such as [`NSTextContentStorage`](nstextcontentstorage.md), [`NSTextLayoutManager`](nstextlayoutmanager.md), and [`NSTextContainer`](nstextcontainer.md).
+TextKit is a powerful and versatile text layout and rendering engine available in UIKit and AppKit. It provides several classes to control the layout of text, including [`NSTextLayoutManager`](nstextlayoutmanager.md), [`NSTextContentStorage`](nstextcontentstorage.md), [`NSTextViewportLayoutController`](nstextviewportlayoutcontroller.md), and [`NSTextContainer`](nstextcontainer.md).
 
-Additionally, TextKit uses [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) objects extensively. The [`NSTextStorage`](nstextstorage.md) class is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString), and many of the TextKit classes focus on creating complex [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString) instances. Use these classes to specify your text’s format.
+In UIKit, you can use [`UITextView`](uitextview.md), which packages TextKit capabilities to provide a convenient text rendering and editing experience. [`UITextView`](uitextview.md) uses [`NSTextContentStorage`](nstextcontentstorage.md) as the text backing store manager. [`NSTextContentStorage`](nstextcontentstorage.md) uses an instance of [`NSTextStorage`](nstextstorage.md) as the backing store, which is a subclass of [`NSMutableAttributedString`](https://developer.apple.com/documentation/Foundation/NSMutableAttributedString). For an example, see [`Enriching your text in text views`](enriching-your-text-in-text-views.md).
 
-Most of the time, you can use TextKit to fine tune the formatting and layout of a [`UITextView`](uitextview.md) by modifying the view’s [`textContainer`](uitextview/textcontainer.md), [`layoutManager`](uitextview/layoutmanager.md), or [`textStorage`](uitextview/textstorage.md) properties. If you need more control, you can also use TextKit to build custom text controls.
+Alternatively, you can build custom text views using your own `UIView` or `CALayer` by rendering text provided by the TextKit text engine. Use [`NSTextContentStorage`](nstextcontentstorage.md) if you want an [`NSAttributedString`](https://developer.apple.com/documentation/Foundation/NSAttributedString)-related storage type, or subclass [`NSTextContentManager`](nstextcontentmanager.md) to use your own. For an example, see [`Using TextKit 2 to interact with text`](using-textkit-2-to-interact-with-text.md).
+
+When using [`UITextView`](uitextview.md), access the TextKit engine through the view’s [`textLayoutManager`](uitextview/textlayoutmanager.md), [`textContainer`](uitextview/textcontainer.md), and [`textStorage`](uitextview/textstorage.md) properties. [`UITextView`](uitextview.md) provides access to two layout engines: the modern [`textLayoutManager`](uitextview/textlayoutmanager.md), which uses [`NSTextLayoutManager`](nstextlayoutmanager.md), and the legacy [`layoutManager`](uitextview/layoutmanager.md), which uses [`NSLayoutManager`](nslayoutmanager.md). Use [`textLayoutManager`](uitextview/textlayoutmanager.md) for better performance, and support for international languages. Because TextKit classes are available in both UIKit and AppKit, the same techniques apply across iOS, iPadOS, macOS, tvOS, and visionOS.
 
 ## Topics
 
@@ -32,9 +34,20 @@ Most of the time, you can use TextKit to fine tune the formatting and layout of 
   A tab in a paragraph.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
+### Tables
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
+- [class NSTextTable](nstexttable.md)
+  An object that represents a table of rows and columns in an attributed string.
+- [class NSTextTableBlock](nstexttableblock.md)
+  A text block that represents a single cell in a text table.
+- [class NSTextBlock](nstextblock.md)
+  An object that defines the size, spacing, and appearance of a block of text in an attributed string.
 ### Content elements
 - [Enriching your text in text views](enriching-your-text-in-text-views.md)
-  Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
+  Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [class NSTextParagraph](nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
 - [class NSTextListElement](nstextlistelement.md)
@@ -57,6 +70,8 @@ Most of the time, you can use TextKit to fine tune the formatting and layout of 
   Interact with text by managing text selection and inserting custom text elements.
 - [Display text with a custom layout](display-text-with-a-custom-layout.md)
   Lay out text in a custom-shaped container and apply glyph substitutions.
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+  Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextLayoutManager](nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
 - [class NSTextContainer](nstextcontainer.md)
@@ -67,6 +82,10 @@ Most of the time, you can use TextKit to fine tune the formatting and layout of 
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
 - [class NSTextViewportLayoutController](nstextviewportlayoutcontroller.md)
   Manages the layout process inside the viewport interacting with its delegate.
+- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+  A protocol that identifies a view or layer as a drawable element for a text layout fragment.
+- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+  A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 - [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 ### Attachments

@@ -13,8 +13,6 @@ An optional dictionary that provides values required by the CA for issuing a cer
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

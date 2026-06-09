@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: module
 
-Make your app’s content and actions discoverable with system experiences like Spotlight, widgets, and the Shortcuts app.
+Make content and actions discoverable by Apple Intelligence and support system experiences like Siri, Spotlight, Shortcuts, and widgets.
 
 **Availability**:
 - iOS 16.0+
@@ -14,137 +14,80 @@ Make your app’s content and actions discoverable with system experiences like 
 - visionOS 1.0+
 - watchOS 9.0+
 
-## Mentions
-
-- [Creating your first app intent](creating-your-first-app-intent.md)
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-
 #### Overview
 
-The App Intents framework provides functionality to deeply integrate your app’s actions and content with system experiences across platforms, including Siri, Spotlight, widgets, controls and more. With Apple Intelligence and enhancements to App Intents, Siri will suggest your app’s actions to help people discover your app’s features and gains the ability to take actions in and across apps.
+Make your app’s actions and data available outside your app using the App Intents framework. Every app has code to perform specific actions, such as playing music or displaying photos. Apps also have data, such as songs or photos, that people might want to use outside your app.
 
 ![A hero image of an App Intents framework icon.](https://docs-assets.developer.apple.com/published/4c11e7619eec4482c4c0d9fdb7676e38/app-intents-hero%402x.png)
 
-By adopting the App Intents framework, you allow people to personalize their devices by instantly using your app’s functionality with:
+With App Intents, you express your app’s actions and data in a structured way that makes them discoverable by Apple Intelligence and provides deeper integration with system features people use frequently. For example:
 
-- Interactions with Siri, including those that use the personal context awareness and action capabilities of Apple Intelligence.
-- Spotlight suggestions and search.
-- Actions and automations in the Shortcuts app.
-- Hardware interactions that initiate app actions, like the Action button and squeeze gestures on Apple Pencil.
-- Focus to allow people to reduce distractions.
+- People can interact with your app’s content through Siri.
+- Spotlight helps people navigate to your data directly from search results.
+- The Shortcuts app helps people configure workflows that include your app’s actions.
+- People can configure Apple Pencil or the Action button on iPhone to perform your app’s actions when pressed.
+- [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit), [`Controls`](https://developer.apple.com/documentation/WidgetKit/Controls-Collection), and [`ActivityKit`](https://developer.apple.com/documentation/ActivityKit) can use your app’s actions to perform relevant tasks.
+- You can define custom Focus modes, and respond to Focus changes.
 
-> **Note**: Siri’s personal context understanding, onscreen awareness, and in-app actions are in development and will be available with a future software update.
+Use this framework to declare the actions your app performs as one or more *app intents*. You can also create *app entities* and *app enums* to make your app’s key data types available to the system. For example, a music app might define entities for the songs and albums it manages, and define an app intent to play them. During compilation, the compiler generates information that Apple Intelligence, Siri, and other system features need to discover and use your intents, entities, and app enum types.
 
-For example, App Intents enables you to express your app’s actions, by offering an App Shortcut. People can then ask Siri to take those actions on their behalf, whether they’re in your app or elsewhere in the system. Use App Entities to expose content in your app to Spotlight and semantic indexing with Apple Intelligence. People can then ask Siri to retrieve information from your app, like asking Siri to pull up flight information from a travel app to share with a loved one.
-
-You reuse these components with other technologies to offer additional features and experiences that make your app and its functionality even more discoverable and widely available. For example, you reuse modular App Intents code together with [`WidgetKit`](https://developer.apple.com/documentation/WidgetKit) to offer:
-
-- Interactive widgets
-- Controls
-- Live Activities
-
-To learn more about features that the App Intents framework enables and how you can best adopt the framework, see [`Making actions and content discoverable and widely available`](making-actions-and-content-discoverable-and-widely-available.md).
-
-For design guidance, see [`Human Interface Guidelines > App Shortcuts`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/app-shortcuts), [`Human Interface Guidelines > Siri`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/siri), and [`Human Interface Guidelines > Action Button`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/action-button).
+For design guidance on how to implement features that involve [`Widgets`](https://developer.apple.com/design/Human-Interface-Guidelines/widgets), [`Controls`](https://developer.apple.com/design/Human-Interface-Guidelines/controls), [`App Shortcuts`](https://developer.apple.com/design/Human-Interface-Guidelines/app-shortcuts), [`Siri`](https://developer.apple.com/design/Human-Interface-Guidelines/siri), or the [`Action button`](https://developer.apple.com/design/Human-Interface-Guidelines/action-button), see [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines).
 
 ## Topics
 
 ### Essentials
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
+  Make your app’s actions and content available to the rest of the system using the App Intents framework.
 - [App Intents updates](../Updates/AppIntents.md)
   Learn about important changes in App Intents.
-- [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
-  Adopt App Intents to make your app discoverable with Spotlight, controls, widgets, and the Action button.
-### System experiences
+### App-specific content
+- [App intents](app-intents.md)
+  Make your app’s custom actions available to the system by using app intent types.
+- [App entities](app-entities.md)
+  Make your app’s core types and data concepts available to the system using app entity types.
+- [App enums](app-enums.md)
+  Make your app’s enumerations and predefined values available to the system by using app enum types.
+- [Common data types](common-data-types.md)
+  Use framework-defined types for common parameter and result data types such as contacts, files, currencies, and more.
+- [App extension](app-extension.md)
+  Deliver app intents in an app extension or other package that lives outside your app’s code.
+### System integration
+- [App schema domains](app-schema-domains.md)
+  Declare support for well-known actions and content by applying system-defined schemas to your app intents, app entities, and app enumerations.
+- [Visual presentation](visual-presentation.md)
+  Display app intents and app entities visually using snippets, and associate intents and entities with your app’s scenes and views.
+- [Donations and discovery](donations-and-discovery.md)
+  Donate your app’s intents and entities to the system to help it identify trends and predict future behaviors.
+### Feature integration
 - [Adopting App Intents to support system experiences](adopting-app-intents-to-support-system-experiences.md)
-  Create app intents and entities to incorporate system experiences such as Spotlight, visual intelligence, and Shortcuts.
-- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
-  Annotate your app entity types to support Spotlight indexing, and donate entities to make them findable in searches.
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-  Let people in Japan configure the side button of iPhone to launch your voice-based conversational app.
-- [Siri](siri.md)
-  Let people complete tasks with voice commands, search, and other system experiences by integrating your app with Siri and Apple Intelligence.
-- [Visual intelligence](visual-intelligence.md)
-  Integrate your app with visual intelligence and include your content in its search results.
+  Create app intents and entities so people can use your app’s content and actions across system experiences.
+- [Apple Intelligence and Siri AI](apple-intelligence-and-siri-ai.md)
+  Integrate your app with Apple Intelligence and bring it to Siri AI.
+- [Spotlight integration](spotlight.md)
+  Add your entities to your app’s Spotlight index, and automate the indexing of your content.
 - [App Shortcuts](app-shortcuts.md)
-  Integrate your app’s intents and entities with the Shortcuts app, Siri, Spotlight, and the Action button on supported iPhone and Apple Watch models.
-- [Widgets, Live Activities, and controls](widgets-and-live-activities.md)
-  Use app intents make your widgets and Live Activities interactive, offer controls, and suggest widgets in Smart Stacks.
-- [Action button on iPhone and Apple Watch](actionbutton.md)
-  Enable people to run your App Shortcuts with the Action button on iPhone or to start your app’s workout or dive sessions using the Action button on Apple Watch.
+  Improve the experience of using your app intents and entities in system experiences like Siri, Spotlight, and the Shortcuts app.
+- [Widgets, Live Activities, and Controls](widgets-live-activities-and-controls.md)
+  Implement interactive widgets, controls, watch complications, and Live Activities using app intents.
+- [Hardware interactions](hardware-interactions.md)
+  Run your App Shortcuts from the Action button on iPhone or Apple Watch, or launch your own conversational app from the side button on iPhone.
 - [Focus](focus.md)
   Adjust your app’s behavior and filter incoming notifications when the current Focus changes.
-### Actions
-- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
-  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
-- [Creating your first app intent](creating-your-first-app-intent.md)
-  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [App intents](app-intents.md)
-  Define the custom actions your app exposes to the system using specialized intents.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Intent infrastructure](intent-infrastructure.md)
-  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
-### Parameters and data types
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-- [Common data types](common-data-types.md)
-  Specify common types that your app supports, including currencies, files, and contacts.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Static parameter types](app-enums.md)
-  Types that represent an enumerable list of static parameter values.
-- [Entity queries](entity-queries.md)
-  Help the system find the entities your app defines and use them to resolve parameters.
-- [Property comparators](property-comparators.md)
-  Specify the type of comparison to perform during a property-matched query.
-### Outcomes
-- [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
-  Enable people to view the outcome of an app intent and immediately perform follow-up actions.
-- [struct IntentDialog](intentdialog.md)
-  The text you want the system to display, or speak, when requesting a value, asking for disambiguation, or confirming an action.
-- [protocol IntentResult](intentresult.md)
-  A type that contains the result of performing an action, and includes optional information to deliver back to the initiator.
-- [struct IntentResultContainer](intentresultcontainer.md)
-  An object that represents the output of a completed intent.
-- [protocol OpensIntent](opensintent.md)
-  The result of performing an action that delivers an app intent back to the initiator of the action.
-- [protocol ProvidesDialog](providesdialog.md)
-  The result of performing an action that delivers a dialog back to the initiator of the action.
-- [protocol ReturnsValue](returnsvalue.md)
-  The result of performing an action that delivers a value back to the initiator.
-- [protocol ShowsSnippetIntent](showssnippetintent.md)
-  The result of performing an action that present a snippet generated by a `SnippetIntent`-conforming type.
-- [protocol ShowsSnippetView](showssnippetview.md)
-  The result of performing an action that delivers a view back to the initiator of the action.
-- [protocol ResultsCollection](resultscollection.md)
-  A protocol representing a collection of returned items with support for sectioning.
-### Choices and confirmation
-- [struct IntentChoiceOption](intentchoiceoption.md)
-  A structure representing an entry in a list of options for a person to choose from before an app intent resumes its action.
-- [struct ConfirmationConditions](confirmationconditions.md)
-  Conditions for a confirmation request.
-### Navigation and app launch
-- [protocol AppIntentSceneDelegate](appintentscenedelegate.md)
-  Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
-- [struct IntentModes](intentmodes.md)
-  A set of options that describe an app intent’s behavior.
-- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
-### SiriKit migration
-- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
-  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
-- [protocol CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
-  An interface for replacing a custom SiriKit intent that allows existing shortcuts and donations to continue working.
+- [Visual intelligence](visual-intelligence.md)
+  Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
+### Testing
+- [Testing your App Intents code](../AppIntentsTesting/testing-your-app-intents-code.md)
+  Evaluate intents, entities, and queries, and verify your integration with system features like Spotlight and Siri.
+- [App Intents Testing](../AppIntentsTesting/AppIntentsTesting.md)
+  Test your app intents, entities, queries, and integration with system features like Siri or Spotlight.
 ### Errors
 - [struct AppIntentError](appintenterror.md)
-  Errors that your intent-handling code can return to indicate problems while interpreting or executing an app intent.
-### Protocols
-- [protocol UndoableIntent](undoableintent.md)
-### Enumerations
-- [enum VideoCategory](videocategory.md)
+  An error that indicates a problem occurred while performing an app intent.
+- [protocol CustomAppIntentErrorConvertible](customappintenterrorconvertible.md)
+  A type that the system automatically converts to an app intent error.
+### Deprecated
+- [Deprecated symbols](deprecated-symbols.md)
+  Review unsupported symbols and their replacements.
 
 
 ---

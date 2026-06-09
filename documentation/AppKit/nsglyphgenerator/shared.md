@@ -16,7 +16,8 @@ class var shared: NSGlyphGenerator { get }
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [protocol NSGlyphStorage](nsglyphstorage.md)
+  A set of methods that a glyph storage object must implement to interact properly with [`NSGlyphGenerator`](nsglyphgenerator.md).
 
 
 ---

@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe presentation data.
 protocol PresentationEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making presentation actions available to Siri and Apple Intelligence](making-presentation-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -41,15 +37,6 @@ protocol PresentationEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/presentationentity/document.md)
-  The app entity describes a presentation.
-- [var slide: some AssistantSchemas.Entity](assistantschemas/presentationentity/slide.md)
-  The app entity describes a slide.
-- [var template: some AssistantSchemas.Entity](assistantschemas/presentationentity/template.md)
-  The app entity describes a template for a presentation.
 
 
 ---

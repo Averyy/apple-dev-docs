@@ -18,7 +18,7 @@ Sets the presentation background of the enclosing sheet to a custom view.
 
 ```swift
 nonisolated
-func presentationBackground<V>(alignment: Alignment = .center, @ViewBuilder content: () -> V) -> some View where V : View
+func presentationBackground<V>(alignment: Alignment = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Discussion

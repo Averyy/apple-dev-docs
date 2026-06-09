@@ -1,4 +1,4 @@
-# Read Localization Information for a Default App Clip Experience
+# Read localization information for a default app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,24 +14,24 @@ Get localized metadata that appears on the App Clip card for a specific default 
 
 ## Parameters
 
-- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each Default App Clip Experience Localizations resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each default App Clip experience localization resource returned by the response.
 - `filter[locale]` ([string]): Filter the returned default App Clip experience localizations using the experience’s locale.
-- `limit` (integer): The number of Default App Clip Experience Localizations resources to return.
-- `include` ([string])
-- `fields[appClipDefaultExperiences]` ([string])
-- `fields[appClipHeaderImages]` ([string])
+- `limit` (integer): The maximum number of default App Clip experience localization resources to return.
+- `include` ([string]): The relationship data to include in the response.
+- `fields[appClipDefaultExperiences]` ([string]): Additional fields to include for each default App Clip experience resource returned by the response.
+- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each app clip header image resource returned by the response.
 
 ## See Also
 
-- [Read Default App Clip Experience Information](get-v1-appclipdefaultexperiences-_id_.md)
+- [Read default app clip experience information](get-v1-appclipdefaultexperiences-_id_.md)
   Get a specific default App Clip experience.
-- [Read the App Store Review Detail for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
+- [Read the app store review detail for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-appclipappstorereviewdetail.md)
   Get App Store Review details for a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipAppStoreReviewDetail](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
-- [GET /v1/appClipDefaultExperiences/{id}/relationships/appClipDefaultExperienceLocalizations](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
-- [Read App Store Version Information for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-releasewithappstoreversion.md)
+- [Get the App Store review detail ID for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipappstorereviewdetail.md)
+- [List localization IDs for an App Clip default experience](get-v1-appclipdefaultexperiences-_id_-relationships-appclipdefaultexperiencelocalizations.md)
+- [Read app store version information for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-releasewithappstoreversion.md)
   Get App Store Version information for a default App Clip experience.
-- [Get the App Store Versions Resource ID for a Default App Clip Experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
+- [Get the app store versions resource id for a default app clip experience](get-v1-appclipdefaultexperiences-_id_-relationships-releasewithappstoreversion.md)
   Get IDs for App Store Versions related to a default App Clip experience.
 
 

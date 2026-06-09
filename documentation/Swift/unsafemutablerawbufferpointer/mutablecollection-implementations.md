@@ -31,7 +31,7 @@
 - [subscript(Range<Self.Index>) -> Slice<Self>](unsafemutablerawbufferpointer/subscript(_:)-3i1y.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript<R>(R) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-3kwnc.md)
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-3pmfu.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-3pmfu.md)
 - [subscript(Range<Self.Index>) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-9v9lo.md)
 - [subscript(Int) -> UnsafeMutableRawBufferPointer.Element](unsafemutablerawbufferpointer/subscript(_:)-u791.md)
   Accesses the byte at the given offset in the memory region as a `UInt8` value.

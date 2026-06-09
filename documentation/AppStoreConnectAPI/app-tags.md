@@ -13,9 +13,9 @@ Use the app tag resource to read the tags that Apple applied to your app and rem
 ### Reading app tag information
 - [List App Tags](get-v1-apps-_id_-apptags.md)
   List all app tags for a specific app.
-- [List App Tags IDs](get-v1-apps-_id_-relationships-apptags.md)
+- [List app tags IDs](get-v1-apps-_id_-relationships-apptags.md)
   List all app tag IDs for a specific app.
-- [List Territory IDs for an App Tag](get-v1-apptags-_id_-relationships-territories.md)
+- [List territory IDs for an app tag](get-v1-apptags-_id_-relationships-territories.md)
   List territory IDs for an app tag.
 - [List Territories for an App Tag](get-v1-apptags-_id_-territories.md)
   List territory availability for a specific app tag.
@@ -24,15 +24,15 @@ Use the app tag resource to read the tags that Apple applied to your app and rem
   Opt out of app tags for a specific app.
 ### Objects
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of tags associated with an app.
 - [object AppTag](apptag.md)
-  The data structure that represents an app tag resource.
+  A label used to categorize an app for internal organization or to control which App Store territories feature it.
 - [object AppTagResponse](apptagresponse.md)
-  A response that contains a single app tag response resource.
+  A response containing a single app tag.
 - [object AppTagsResponse](apptagsresponse.md)
-  A response that contains a list of app tags response resources.
+  A response containing a list of tags associated with apps.
 - [object AppTagTerritoriesLinkagesResponse](apptagterritorieslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of territories associated with an app tag.
 - [object AppTagUpdateRequest](apptagupdaterequest.md)
   The request body you use to update an app tag update request.
 

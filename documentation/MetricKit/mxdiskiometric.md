@@ -42,8 +42,6 @@ class MXDiskIOMetric
 
 - [class MXDiskSpaceUsageMetric](mxdiskspaceusagemetric.md)
   An object representing metrics about your app’s disk space usage.
-- [class MXDiskWriteExceptionDiagnostic](mxdiskwriteexceptiondiagnostic.md)
-  An object representing a diagnostic report for a disk write exception.
 
 
 ---

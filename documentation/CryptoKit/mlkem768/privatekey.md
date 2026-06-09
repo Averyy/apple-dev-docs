@@ -40,7 +40,7 @@ struct PrivateKey
   The private key’s seed representation.
 ### Decapsulating shared secrets
 - [func decapsulate<D>(D) throws -> SymmetricKey](mlkem768/privatekey/decapsulate(_:).md)
-  Decapsulated a shared secret.
+  Decapsulate a shared secret.
 
 ## Relationships
 

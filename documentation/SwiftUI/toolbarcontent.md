@@ -46,7 +46,12 @@ extension MyCustomType: Transition {
   The composition of content that comprise the toolbar content.
 - [associatedtype Body : ToolbarContent](toolbarcontent/body-swift.associatedtype.md)
   The type of content representing the body of this toolbar content.
+### Setting visibility
+- [func visibilityPriority(ToolbarItemVisibilityPriority) -> some ToolbarContent](toolbarcontent/visibilitypriority(_:).md)
+  Defines the visibility priority for a toolbar item.
 ### Instance Methods
+- [func contentMarginsRemoved(Bool) -> some ToolbarContent](toolbarcontent/contentmarginsremoved(_:).md)
+  Configures whether the content margins are removed.
 - [func hidden(Bool) -> some ToolbarContent](toolbarcontent/hidden(_:).md)
   Hides a toolbar item within its toolbar.
 - [func matchedTransitionSource(id: some Hashable, in: Namespace.ID) -> some ToolbarContent](toolbarcontent/matchedtransitionsource(id:in:).md)
@@ -60,11 +65,15 @@ extension MyCustomType: Transition {
 - [CustomizableToolbarContent](customizabletoolbarcontent.md)
 ### Conforming Types
 - [DefaultToolbarItem](defaulttoolbaritem.md)
+- [EmptyView](emptyview.md)
+- [ForEach](foreach.md)
 - [Group](group.md)
 - [ToolbarItem](toolbaritem.md)
 - [ToolbarItemGroup](toolbaritemgroup.md)
+- [ToolbarOverflowMenu](toolbaroverflowmenu.md)
 - [ToolbarSpacer](toolbarspacer.md)
 - [ToolbarTitleMenu](toolbartitlemenu.md)
+- [TupleContent](tuplecontent.md)
 
 ## See Also
 
@@ -76,6 +85,10 @@ extension MyCustomType: Transition {
   A model that represents a group of `ToolbarItem`s which can be placed in the toolbar or navigation bar.
 - [struct ToolbarItemPlacement](toolbaritemplacement.md)
   A structure that defines the placement of a toolbar item.
+- [func toolbarOverflowMenu<C>(content: () -> C) -> some View](view/toolbaroverflowmenu(content:).md)
+  Configures the overflow menu of a toolbar.
+- [struct ToolbarOverflowMenu](toolbaroverflowmenu.md)
+  The overflow menu of a toolbar.
 - [struct ToolbarContentBuilder](toolbarcontentbuilder.md)
   Constructs a toolbar item set from multi-expression closures.
 - [struct ToolbarSpacer](toolbarspacer.md)

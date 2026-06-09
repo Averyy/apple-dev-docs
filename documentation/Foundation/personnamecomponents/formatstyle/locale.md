@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale to use when formatting the person name components.
+Modifies the person name components format style to use the specified locale.
 
 **Availability**:
 - iOS 15.0+
@@ -17,8 +17,16 @@ The locale to use when formatting the person name components.
 ## Declaration
 
 ```swift
-var locale: Locale
+func locale(_ locale: Locale) -> PersonNameComponents.FormatStyle
 ```
+
+#### Return Value
+
+A person name components format style with the provided locale.
+
+## Parameters
+
+- `locale`: The locale to use when formatting person name components.
 
 ## See Also
 
@@ -26,10 +34,12 @@ var locale: Locale
   Specifies the style of the formatted result.
 - [PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.enum.md)
   The type that represents the style of the formatted result.
+- [var locale: Locale](personnamecomponents/formatstyle/locale.md)
+  The locale to use when formatting the person name components.
 - [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/personnamecomponents/formatstyle/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/personnamecomponents/formatstyle/locale(_:))*

@@ -8,8 +8,6 @@ Use semantic tags to provide up-to-date information for event passes.
 
 In iOS 26 and later and watchOS 26 and later you can provide an engaging event ticket experience by creating a poster event tickets using semantic tags in Wallet. This experience builds on the existing [`PKPass`](https://developer.apple.com/documentation/PassKit/PKPass) bundle in Wallet and maintains backward compatibility. For more information on semantic tags, see [`Supporting semantic tags in Wallet passes`](supporting-semantic-tags-in-wallet-passes.md).
 
-![An illustration of a poster event pass for a live performance. The pass displays information about seating, venue, and date over art depicting dancing robots.](https://docs-assets.developer.apple.com/published/5545e8e95a5b5e9a8c29a25a05e49001/poster-event-ticket%402x.png)
-
 Adding semantic tags to your event pass provides structured data that Wallet uses to automatically display information like event dates.
 
 To create a poster event ticket using semantic tags, you need to meet the following minimum requirements:
@@ -50,9 +48,15 @@ The following example shows a partial event pass with top-level keys.
 }
 ```
 
-The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following image shows the layout and placement of fields for the event ticket style.
+The pass style controls how Wallet lays out the pass fields and which images it shows on someone’s device. The following images shows the layout and placement of fields for the event ticket style.
 
-![An illustration of pass fields for a poster event ticket, including logo image, time and date, venue name and region, and seating information.](https://docs-assets.developer.apple.com/published/69231d5f9da8e4f0821934f631aaad1f/poster-event-ticket-layout%402x.png)
+**Sport event**:
+
+![An image of pass fields for a poster event.](https://docs-assets.developer.apple.com/published/63e2cbbb73058b6e0af7d3d8587613c2/pass-fields-layout-poster-event-ticket-sports%402x.png)
+
+**Live performance event**:
+
+![An image showing possible semantic tags for a live performance event.](https://docs-assets.developer.apple.com/published/c4280738f511a6dc239a9798206ae0f0/pass-fields-layout-poster-event-ticket-live-music%402x.png)
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. An event pass can display logo, strip, background, or thumbnail images. You can also include an extra row of up to four auxiliary fields. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 
@@ -351,6 +355,10 @@ Use [`Pass.RelevantDates`](pass/relevantdates-data.dictionary.md) to provide a l
 
 To ensure your pass is backward compatible, continue to provide the [`PassFields.PrimaryFields`](passfields/primaryfields-data.dictionary.md), [`PassFields.SecondaryFields`](passfields/secondaryfields-data.dictionary.md), and [`PassFields.AuxiliaryFields`](passfields/auxiliaryfields-data.dictionary.md) so the system presents the legacy event pass style, if necessary. Poster event tickets add keys and assets to the existing `PKPass` bundle that legacy event passes use. By building on the legacy pass bundle, Wallet automatically generates the appropriate device experience for iOS and watchOS.
 
+| ![An image showing a non-poster event pass.](https://docs-assets.developer.apple.com/published/44db4b65a5f736938ca777e3530e6fba/pass-fields-layout-event-ticket%402x.png) | ![An image of pass fields for a poster event.](https://docs-assets.developer.apple.com/published/63e2cbbb73058b6e0af7d3d8587613c2/pass-fields-layout-poster-event-ticket-sports%402x.png) |
+| --- | --- |
+| Pass fields for a legacy event pass. | Pass fields for a poster event pass. |
+
 When someone adds a pass to a device, that pass automatically syncs to all devices linked to the same Apple Account. When a supported device with iOS 26 or later or watchOS 26 or later syncs to a device that doesn’t support semantic tags, Wallet recognizes the pass as a legacy event ticket pass. Possible scenarios include:
 
 - The legacy fields aren’t present: there is no content on the pass.
@@ -363,7 +371,7 @@ If someone adds a multiday event pass to an unsupported device and syncs it to a
 
 Passes can work with Near Field Communication (NFC) readers and barcodes. Someone can hold a device near an NFC reader with the contactless symbol to use their pass. When employing NFC, the pass doesn’t need a barcode.
 
-Alternatively, passes can use scannable barcodes to convey information. Wallet supports 2D barcodes using QR, Aztec, and PDF417 formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
+Alternatively, passes can use scannable barcodes to convey information. Wallet supports QR, PDF417, Aztec, Code128, Code 39, Codabar, EAN-13, and Interleaved 2 of 5 (ITF) barcode formats. Wallet optimizes the presentation of passes in order to facilitate a successful scan.
 
 For more information on barcodes, see [`Pass.Barcodes`](pass/barcodes-data.dictionary.md) and the [`Add to Apple Wallet Guidelines`](https://developer.apple.comhttps://developer.apple.com/wallet/add-to-apple-wallet-guidelines/).
 

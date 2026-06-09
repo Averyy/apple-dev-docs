@@ -11,8 +11,8 @@ The minimum and maximum distances of the camera from the map center.
 ## Declaration
 
 ```swift
-get cameraZoomRange(): CameraZoomRange;
-set cameraZoomRange(value: CameraZoomRange);
+get cameraZoomRange(): CameraZoomRange | undefined;
+set cameraZoomRange(value: CameraZoomRangeData | undefined | null);
 ```
 
 ## Mentions
@@ -49,7 +49,7 @@ Get or set this property with a [`CameraZoomRange`](camerazoomrange.md) instance
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.

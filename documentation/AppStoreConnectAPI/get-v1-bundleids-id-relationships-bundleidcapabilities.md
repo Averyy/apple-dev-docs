@@ -1,10 +1,12 @@
-# GET /v1/bundleIds/{id}/relationships/bundleIdCapabilities
+# Read bundle Id capabilities ids for a bundle Id
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+List all bundleIdCapabilities IDs for a specific bundle Id.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,13 +18,13 @@
 
 ## See Also
 
-- [Read the App Information of a Bundle ID](get-v1-bundleids-_id_-app.md)
-- [List All Profiles for a Bundle ID](get-v1-bundleids-_id_-profiles.md)
+- [Read the app information of a bundle id](get-v1-bundleids-_id_-app.md)
+- [List all profiles for a bundle id](get-v1-bundleids-_id_-profiles.md)
   Get a list of all profiles for a specific bundle ID.
-- [List All Capabilities for a Bundle ID](get-v1-bundleids-_id_-bundleidcapabilities.md)
+- [List all capabilities for a bundle id](get-v1-bundleids-_id_-bundleidcapabilities.md)
   Get a list of all capabilities for a specific bundle ID.
-- [GET /v1/bundleIds/{id}/relationships/app](get-v1-bundleids-_id_-relationships-app.md)
-- [GET /v1/bundleIds/{id}/relationships/profiles](get-v1-bundleids-_id_-relationships-profiles.md)
+- [Get the app ID for a bundle ID](get-v1-bundleids-_id_-relationships-app.md)
+- [List profile IDs for a bundle ID](get-v1-bundleids-_id_-relationships-profiles.md)
 
 
 ---

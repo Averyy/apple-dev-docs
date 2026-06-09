@@ -78,10 +78,10 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
 ## Topics
 
 ### Managing the Fetch Request’s Entity
+- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-5anoo.md)
+  Returns a fetch request configured with a given entity name.
 - [init()](nsfetchrequest/init.md)
   Creates a new fetch request.
-- [convenience init(entityName: String)](nsfetchrequest/init(entityname:).md)
-  Initializes a fetch request configured with a given entity name.
 - [var entityName: String?](nsfetchrequest/entityname.md)
   The name of the entity the request is configured to fetch.
 - [var entity: NSEntityDescription?](nsfetchrequest/entity.md)
@@ -142,6 +142,7 @@ You often predefine fetch requests in an [`NSManagedObjectModel`](nsmanagedobjec
   Executes the fetch request against the managed object context that is associated with the current queue.
 ### Initializers
 - [init?(coder: NSCoder)](nsfetchrequest/init(coder:).md)
+- [convenience init(entityName: String)](nsfetchrequest/init(entityname:)-yd3.md)
 
 ## Relationships
 

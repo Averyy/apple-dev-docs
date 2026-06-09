@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-A rectangle shape that is aligned inside the frame of the view containing it. A corner style will be uniformly applied to the top two corners, while the bottom two corners will each has an indivdual corner style.
+Creates a rectangle with a corner style uniformly set on the two top corners, and two other styles for the bottom two corners respectively.
 
 **Availability**:
 - iOS 26.0+
@@ -20,11 +20,20 @@ A rectangle shape that is aligned inside the frame of the view containing it. A 
 static func rect(uniformTopCorners: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self
 ```
 
+#### Discussion
+
+For the two top corners, the system calculates the radius for each corner first. Then, it selects the largest radius and applies it to each top corner to achieve the symmetric look.
+
 ## Parameters
 
-- `uniformTopCorners`: The corner style to be applied on the top two corners uniformly. This shape will first resolve the two corners individually, then pick the largest resolved radius out of the two and apply it uniformly to achieve the symmetric look.
+- `uniformTopCorners`: The corner style to apply uniformly to the two top corners.
 - `bottomLeadingCorner`: The bottom leading corner style.
 - `bottomTrailingCorner`: The bottom trailing corner style.
+
+## See Also
+
+- [init(uniformTopCorners: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style)](concentricrectangle/init(uniformtopcorners:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with a corner style set on the top two corners uniformly, and two other styles for the bottom two corners respectively.
 
 
 ---

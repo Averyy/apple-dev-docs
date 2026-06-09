@@ -8,6 +8,7 @@ The Live Activity presentation that appears in the Dynamic Island.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

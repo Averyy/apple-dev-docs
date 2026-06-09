@@ -35,7 +35,9 @@ The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitDay`.
 - [static var weekdayOrdinal: NSCalendar.Unit](nscalendar/unit/weekdayordinal.md)
   Identifier for the ordinal weekday unit.
 - [static var dayOfYear: NSCalendar.Unit](nscalendar/unit/dayofyear.md)
+  Identifier for the nanosecond unit.
 - [static var isRepeatedDay: NSCalendar.Unit](nscalendar/unit/isrepeatedday.md)
+  Identifier for the time zone of a date components object.
 
 
 ---

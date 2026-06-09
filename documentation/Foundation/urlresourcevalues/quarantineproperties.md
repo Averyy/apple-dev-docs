@@ -6,12 +6,7 @@
 The quarantine properties as defined in LSQuarantine.h. To remove quarantine information from a file, pass `nil` as the value when setting this property.
 
 **Availability**:
-- iOS 8.0+
-- iPadOS 8.0+
-- Mac Catalyst 8.0+
 - macOS 10.10+
-- tvOS 9.0+
-- watchOS 2.0+
 
 ## Declaration
 

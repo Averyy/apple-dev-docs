@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: property
 
-The file system allows file executuion.
+The file system allows file execution.
 
 **Availability**:
 - macOS 15.4+

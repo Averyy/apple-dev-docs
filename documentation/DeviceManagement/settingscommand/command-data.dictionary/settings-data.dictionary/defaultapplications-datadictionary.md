@@ -10,8 +10,6 @@ A dictionary that contains default application bundle identifiers for each defau
 - iPadOS 18.2+
 - Mac Catalyst 18.2+
 - visionOS 2.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,8 +19,8 @@ object SettingsCommand.Command.Settings.DefaultApplications
 
 ## Properties
 
-- `Calling` (string): The bundle identifier of the app that the system sets as the default calling app. This app must be an eligible calling app.
-- `Messaging` (string): The bundle identifier of the app that the system sets as the default messaging app. This app must be an eligible messaging app.
+- `Calling` (string): The bundle identifier of the app that the system sets as the default calling app. This app must be an eligible calling app. Available: iOS 26+ | iPadOS 26+
+- `Messaging` (string): The bundle identifier of the app that the system sets as the default messaging app. This app must be an eligible messaging app. Available: iOS 26+ | iPadOS 26+
 - `WebBrowser` (string): The bundle identifier of the app the system sets as the default web browser. This app must be an eligible web browser for the region of the device.
 
 ## See Also

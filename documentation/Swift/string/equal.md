@@ -22,8 +22,6 @@ static func == <RHS>(lhs: Self, rhs: RHS) -> Bool where RHS : StringProtocol
 
 - [static func == (String, String) -> Bool](string/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](string/!=(_:_:)-1bb05.md)
-  Returns a Boolean value indicating whether two values are not equal.
 - [static func != <RHS>(Self, RHS) -> Bool](string/!=(_:_:)-frzf.md)
 - [static func ~= (String, Substring) -> Bool](string/~=(_:_:).md)
 

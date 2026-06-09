@@ -63,7 +63,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript(Range<Self.Index>) -> Slice<Self>](lazydropwhilesequence/subscript(_:)-7qiik.md)
   Accesses a contiguous subrange of the collection’s elements.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](lazydropwhilesequence/subscript(_:)-8ifgj.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](lazydropwhilesequence/subscript(_:)-8ifgj.md)
 - [subscript<R>(R) -> Self.SubSequence](lazydropwhilesequence/subscript(_:)-jkb6.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 ### Type Aliases

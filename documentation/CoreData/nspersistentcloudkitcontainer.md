@@ -64,6 +64,9 @@ For more information about setting up multiple stores, see [`Setting Up Core Dat
   A notification that contains details about an event in a persistent CloudKit container.
 - [class let eventNotificationUserInfoKey: String](nspersistentcloudkitcontainer/eventnotificationuserinfokey.md)
   The user info dictionary key for the persistent CloudKit container event.
+### Structures
+- [NSPersistentCloudKitContainer.EventChangedMessage](nspersistentcloudkitcontainer/eventchangedmessage.md)
+  Posted when a CloudKit event occurs on the CloudKit private serial queue.
 
 ## Relationships
 

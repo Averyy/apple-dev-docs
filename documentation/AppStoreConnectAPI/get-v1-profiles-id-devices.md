@@ -1,4 +1,4 @@
-# List All Devices in a Profile
+# List all devices in a profile
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,13 +19,13 @@ Get a list of all devices for a specific provisioning profile.
 
 ## See Also
 
-- [Read the Bundle ID in a Profile](get-v1-profiles-_id_-bundleid.md)
+- [Read the bundle id in a profile](get-v1-profiles-_id_-bundleid.md)
   Get the bundle ID information for a specific provisioning profile.
-- [GET /v1/profiles/{id}/relationships/bundleId](get-v1-profiles-_id_-relationships-bundleid.md)
-- [List All Certificates in a Profile](get-v1-profiles-_id_-certificates.md)
+- [Get the bundle ID for a profile](get-v1-profiles-_id_-relationships-bundleid.md)
+- [List all certificates in a profile](get-v1-profiles-_id_-certificates.md)
   Get a list of all certificates and their data for a specific provisioning profile.
-- [GET /v1/profiles/{id}/relationships/certificates](get-v1-profiles-_id_-relationships-certificates.md)
-- [GET /v1/profiles/{id}/relationships/devices](get-v1-profiles-_id_-relationships-devices.md)
+- [List certificate IDs for a profile](get-v1-profiles-_id_-relationships-certificates.md)
+- [List device IDs for a profile](get-v1-profiles-_id_-relationships-devices.md)
 
 
 ---

@@ -1,4 +1,4 @@
-# Safari 18.0 Release Notes
+# Safari 18 Release Notes
 
 **Framework**: Safari Release Notes
 
@@ -6,7 +6,7 @@ Released September 16, 2024 — 18.0 (20619.1.26)
 
 #### Overview
 
-Safari 18.0 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma, and macOS Ventura.
+Safari 18 is available for iOS 18, iPadOS 18, visionOS 2, macOS 15, macOS Sonoma, and macOS Ventura.
 
 ##### Accessibility
 

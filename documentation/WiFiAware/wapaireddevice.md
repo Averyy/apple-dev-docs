@@ -8,6 +8,7 @@ A known Wi-Fi Aware device that your app can connect to.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

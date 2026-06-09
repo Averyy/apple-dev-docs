@@ -2,15 +2,15 @@
 
 **Framework**: Device Management
 
-Authenticate devices and maintain push tokens with these commands.
+Authenticate devices and maintain push tokens.
 
 #### Overview
 
-The MDM check-in protocol validates a deviceʼs eligibility for MDM enrollment and informs the server that a deviceʼs push token has been updated.
+The Mobile Device Management (MDM) check-in protocol validates a deviceʼs eligibility for enrollment and informs the device management service that a deviceʼs push token has been updated.
 
-When the MDM payload is installed, the device initiates communication with the check-in server. The device validates the TLS certificate of the server, then uses the identity specified in its MDM payload as the client authentication certificate for the connection.
+After installing the MDM payload, the device initiates communication with the check-in service. The device validates the TLS certificate of the service, then uses the identity specified in its MDM payload as the client authentication certificate for the connection.
 
-If a check-in server URL is provided in the MDM payload, the check-in protocol communicates with that check-in server. If no check-in server URL is provided, the main MDM server URL is used instead.
+If the MDM payload includes a check-in URL, the check-in protocol communicates with that check-in service. If it doesn’t provide a check-in URL, the device uses the main device management service URL instead.
 
 ## Topics
 
@@ -31,7 +31,7 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
   Sends the bootstrap token to the server.
 - [Return To Service](return-to-service.md)
   Gets the return-to-service configuration from the server.
-### Declarative Management
+### Declarative management
 - [Declarative Management](declarative-management.md)
   Sends declarative management requests to the server.
 - [Get Server Supported Declarations](declaration-items.md)
@@ -43,14 +43,8 @@ If a check-in server URL is provided in the MDM payload, the check-in protocol c
 
 ## See Also
 
-- [Implementing Device Management](implementing-device-management.md)
-  Set up an MDM server and send commands to managed devices.
-- [Commands and Queries](commands-and-queries.md)
-  Manage the configuration and behavior of your devices.
-- [Account-driven enrollment](account-driven-enrollment.md)
-  Authenticate devices using a user identity-focused workflow.
-- [Migrating managed devices](migrating-managed-devices.md)
-  Migrate managed devices from one device management service to another.
+- [Commands and queries](commands-and-queries.md)
+  Remotely execute management commands and queries on managed devices.
 
 
 ---

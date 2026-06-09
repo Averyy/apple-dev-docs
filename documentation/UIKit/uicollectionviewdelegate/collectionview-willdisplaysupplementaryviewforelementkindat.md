@@ -9,7 +9,7 @@ Tells the delegate that the specified supplementary view is about to be displaye
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

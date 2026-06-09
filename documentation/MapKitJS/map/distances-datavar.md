@@ -11,17 +11,17 @@ A static property that allows you to access the distance enumeration.
 ## Declaration
 
 ```swift
-static Distances: typeof Distance;
+static get Distances(): typeof DistanceUnitSystem;
 ```
 
-#### Discussion
+## Mentions
 
-Use this object to access the [`Distance`](distance.md) enumeration with `mapkit.Map.Distances`.
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 ## See Also
 
 - [ColorSchemes](map/colorschemes.md)
-  A static property that allows you to access to access the look color scheme enumeration.
+  A static property that lets you access the color scheme enumeration.
 - [LoadPriorities](map/loadpriorities.md)
   A static property that allows you to access the load priority enumeration.
 - [MapTypes](map/maptypes.md)

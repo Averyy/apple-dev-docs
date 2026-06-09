@@ -16,6 +16,7 @@ Creates a default menu style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

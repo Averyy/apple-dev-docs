@@ -10,8 +10,6 @@ Delete a user’s account from a device.
 - iPadOS 9.3+
 - Mac Catalyst 9.3+
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -31,10 +29,10 @@ An error response uses one of the following error codes:
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -87,7 +85,7 @@ An error response uses one of the following error codes:
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#DeleteUserCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

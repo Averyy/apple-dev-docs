@@ -1,9 +1,9 @@
-# new TileOverlay(urlTemplate, options)
+# new TileOverlay(imageForTile, options)
 
 **Framework**: MapKit JS  
 **Kind**: init
 
-Creates a tile overlay with a URL template and style options.
+Creates a tile overlay with a URL template or image callback and style options.
 
 **Availability**:
 - MapKit JS 5.0+
@@ -12,14 +12,14 @@ Creates a tile overlay with a URL template and style options.
 
 ```swift
 constructor(
-        urlTemplate: TileOverlayUrlTemplate,
-        options?: TileOverlayConstructorOptions,
-    );
+    imageForTile: TileOverlayUrlTemplate | TileOverlayImageCallback,
+    options?: TileOverlayConstructorOptions,
+);
 ```
 
 ## Parameters
 
-- `urlTemplate`: The [`TileOverlayUrlTemplate`](tileoverlayurltemplate.md) value can be in the format of a template URL string or a function that returns a URL string from a set of tile parameters. MapKit JS requests new tiles when the map zooms or pans, the display changes, or the custom [`data`](tileoverlay/data.md) properties change.
+- `imageForTile`: A [`TileOverlayUrlTemplate`](tileoverlayurltemplate.md) string or URL callback, or a [`TileOverlayImageCallback`](tileoverlayimagecallback.md) that returns image sources directly. MapKit JS requests new tiles when the map zooms or pans, the display changes, or the custom [`data`](tileoverlay/data.md) properties change.
 - `options`: An optional [`TileOverlayConstructorOptions`](tileoverlayconstructoroptions.md) object literal of properties for initializing the tile overlay.
 
 ## See Also
@@ -28,6 +28,8 @@ constructor(
   Attributes for initializing a tile overlay, including minimum and maximum zoom, opacity, and custom data.
 - [type TileOverlayUrlTemplate](tileoverlayurltemplate.md)
   A type that specifies the URL template for a tile overlay.
+- [type TileOverlayImageCallback](tileoverlayimagecallback.md)
+  A callback function that provides tile images for a tile overlay.
 
 
 ---

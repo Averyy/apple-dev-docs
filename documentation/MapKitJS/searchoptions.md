@@ -37,6 +37,8 @@ interface SearchOptions
   A map region that provides a hint for the geographic area to search.
 - [regionPriority](searchoptions/regionpriority.md)
   A region priority value that controls whether results occur outside, or strictly within, the region.
+- [signal](searchoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 ## Relationships
 
@@ -45,7 +47,7 @@ interface SearchOptions
 
 ## See Also
 
-- [search(query, callback, options)](search/search.md)
+- [search(query, options)](search/search.md)
   Retrieves the results of a search query.
 - [type SearchDelegate](searchdelegate.md)
   An object or callback function the framework calls when performing a search or an autocomplete request.

@@ -11,6 +11,7 @@ Creates a settings link with the default system label.
 ## Declaration
 
 ```swift
+nonisolated
 init() where Label == DefaultSettingsLinkLabel
 ```
 

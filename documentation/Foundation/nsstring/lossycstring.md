@@ -6,6 +6,9 @@
 Returns a representation of the receiver as a C string in the default C-string encoding, possibly losing information in converting to that encoding.
 
 **Availability**:
+- iOS 2.0+
+- iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

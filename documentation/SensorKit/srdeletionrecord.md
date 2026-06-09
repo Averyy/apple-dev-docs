@@ -53,6 +53,8 @@ deletionRecordsReader.delegate = myAmbientLightDeletionRecordsDelegate
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

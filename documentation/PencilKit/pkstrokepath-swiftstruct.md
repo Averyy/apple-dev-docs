@@ -25,6 +25,18 @@ struct PKStrokePath
   Creates an empty stroke path.
 - [init<T>(controlPoints: T, creationDate: Date)](pkstrokepath-swift.struct/init(controlpoints:creationdate:).md)
   Creates a stroke path with the cubic B-spline control points and a date that you specify.
+- [init<T>(controlPoints: T, creationDate: Date, id: UUID)](pkstrokepath-swift.struct/init(controlpoints:creationdate:id:).md)
+  Creates a stroke path with the specified cubic B-spline control points and a unique identifier.
+- [init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.ConvertedBezierPoint) -> PKStrokePoint)](pkstrokepath-swift.struct/init(bezierpath:creationdate:pointprovider:).md)
+  Creates a stroke path recreating the specified Bézier path as a cubic uniform B-Spline.
+- [PKStrokePath.ConvertedBezierPoint](pkstrokepath-swift.struct/convertedbezierpoint.md)
+  Information about a B-spline control point converted from a Bézier path.
+### Identifying the path
+- [var id: UUID](pkstrokepath-swift.struct/id.md)
+  The unique identity of the stroke path.
+### Converting to and from Bézier paths
+- [var bezierRepresentation: CGPath](pkstrokepath-swift.struct/bezierrepresentation.md)
+  A Bézier path representation of the path’s curve, computed in linear time.
 ### Getting the stroke path properties
 - [var creationDate: Date](pkstrokepath-swift.struct/creationdate.md)
   The creation date and time of this stroke path.
@@ -45,6 +57,11 @@ struct PKStrokePath
 ### Using reference types
 - [class PKStrokePathReference](pkstrokepathreference.md)
   A class that captures the components of a stroke and provides methods to find and interpolate points along the stroke’s path.
+### Subscripts
+- [subscript(ClosedRange<CGFloat>) -> PKStrokePath](pkstrokepath-swift.struct/subscript(_:).md)
+  Access the stroke point at the provided index.
+### Default Implementations
+- [Identifiable Implementations](pkstrokepath-swift.struct/identifiable-implementations.md)
 
 ## Relationships
 
@@ -53,6 +70,7 @@ struct PKStrokePath
 - [Collection](../Swift/Collection.md)
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
+- [Identifiable](../Swift/Identifiable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -66,6 +84,8 @@ struct PKStrokePath
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)

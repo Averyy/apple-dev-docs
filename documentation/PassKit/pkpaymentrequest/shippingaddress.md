@@ -22,6 +22,8 @@ If you already have a shipping address on file, set this property to that addres
 
 ## See Also
 
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 - [static var enabled: PKShippingContactEditingMode](pkshippingcontacteditingmode/enabled.md)
   All fields of the shipping contact on the payment sheet are editable by the user.
 - [var requiredBillingAddressFields: PKAddressField](pkpaymentrequest/requiredbillingaddressfields.md)

@@ -12,11 +12,11 @@ Creates a rectangular bounding region, which the latitude and longitude coordina
 
 ```swift
 constructor(
-        northLatitude?: number,
-        eastLongitude?: number,
-        southLatitude?: number,
-        westLongitude?: number,
-    );
+    northLatitude?: number,
+    eastLongitude?: number,
+    southLatitude?: number,
+    westLongitude?: number,
+);
 ```
 
 #### Discussion

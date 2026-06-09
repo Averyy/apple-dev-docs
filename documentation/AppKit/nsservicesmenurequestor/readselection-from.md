@@ -33,7 +33,6 @@ You implement this method to replace your application’s current selection (tha
 
 ## See Also
 
-- [Services Implementation Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/SysServices/introduction.html#//apple_ref/doc/uid/10000101i)
 - [func writeSelection(to: NSPasteboard, types: [NSPasteboard.PasteboardType]) -> Bool](nsservicesmenurequestor/writeselection(to:types:).md)
   Writes the current selection to the pasteboard.
 

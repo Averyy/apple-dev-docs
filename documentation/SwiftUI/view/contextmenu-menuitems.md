@@ -18,7 +18,7 @@ Adds a context menu to a view.
 
 ```swift
 nonisolated
-func contextMenu<MenuItems>(@ViewBuilder menuItems: () -> MenuItems) -> some View where MenuItems : View
+func contextMenu<MenuItems>(@ContentBuilder menuItems: () -> MenuItems) -> some View where MenuItems : View
 ```
 
 #### Return Value

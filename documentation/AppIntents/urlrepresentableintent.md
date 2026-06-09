@@ -22,7 +22,7 @@ protocol URLRepresentableIntent : AppIntent
 
 #### Overview
 
-Add support for `URLRepresentableIntent` to your app intents to add a URL representation. This allows Siri and Shortcuts to treat the intent like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+Add support for `URLRepresentableIntent` to your app intents to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the intent like a universal link to specific content, allowing actions to open the URL or to make it sharable.
 
 Note that you need to use a universal link for your URL representation, you canâ€™t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
 
@@ -45,28 +45,9 @@ Note that you need to use a universal link for your URL representation, you canâ
 
 ## See Also
 
-- [protocol DeleteIntent](deleteintent.md)
-  Delete the associated entity(s).
-- [protocol DeprecatedAppIntent](deprecatedappintent.md)
-  An app intent that marks an action as deprecated and informs people which action to use instead.
-- [protocol ForegroundContinuableIntent](foregroundcontinuableintent.md)
-  A protocol you use for app intents which begin their work with the app in the background but may request to continue in the foreground.
-- [protocol OpenIntent](openintent.md)
-  Open the associated item.
-- [struct OpenURLIntent](openurlintent.md)
-  An intent that opens a universal link.
-- [protocol ProgressReportingIntent](progressreportingintent.md)
-  An intent that reports progress to the system during its execution
-- [protocol SetValueIntent](setvalueintent.md)
-  An intent that contains a value which can be set.
-- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
-- [protocol SnippetIntent](snippetintent.md)
-  An app intent that presents an interactive snippet onscreen.
-- [protocol SystemIntent](systemintent.md)
-  Designates intent types provided by App Intents.
-- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
-- [protocol UISceneAppIntent](uisceneappintent.md)
+- [struct IntentURLRepresentation](intenturlrepresentation.md)
+  The URL representation of an app intent.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
 
 
 ---

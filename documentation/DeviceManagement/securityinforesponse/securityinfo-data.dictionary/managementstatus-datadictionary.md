@@ -13,8 +13,6 @@ A dictionary that contains the status of the device’s MDM enrollment.
 - tvOS 13.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,10 +22,10 @@ object SecurityInfoResponse.SecurityInfo.ManagementStatus
 
 ## Properties
 
-- `EnrolledViaDEP` (boolean): If `true`, the device enrolled in MDM through the Device Enrollment Program (DEP). This value is available in macOS 10.13.2 and later.
-- `IsActivationLockManageable` (boolean): If `true`, the type of enrollment allows the MDM to manage Activation Lock for this device. This value is available in macOS 10.15 and later.
-- `IsUserEnrollment` (boolean): If `true`, the device is user-enrolled. This value is available in iOS 13 and later, and macOS 10.15 and later.
-- `UserApprovedEnrollment` (boolean): If `true`, the enrollment was user-approved. If `false`, the device may reject certain security-sensitive payloads or commands. This value is available in macOS 10.13.2 and later.
+- `EnrolledViaDEP` (boolean): If `true`, the device enrolled in MDM through Automated Device Enrollment (ADE). Available: macOS 10.13.2+
+- `IsActivationLockManageable` (boolean): If `true`, the type of enrollment allows the MDM to manage Activation Lock for this device. Available: macOS 10.15+
+- `IsUserEnrollment` (boolean): If `true`, the device is user-enrolled. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
+- `UserApprovedEnrollment` (boolean): If `true`, the enrollment was user-approved. If `false`, the device may reject certain security-sensitive payloads or commands. Available: macOS 10.13.2+
 
 ## See Also
 

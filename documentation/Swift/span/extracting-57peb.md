@@ -17,7 +17,7 @@ Constructs a new span over all the items of this span.
 ## Declaration
 
 ```swift
-func extracting(_: (UnboundedRange_) -> ()) -> Span<Element>
+func extracting(_: UnboundedRange) -> Span<Element>
 ```
 
 #### Return Value

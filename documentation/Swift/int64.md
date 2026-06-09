@@ -142,6 +142,7 @@ struct Int64
 - [BinaryInteger](binaryinteger.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
@@ -154,6 +155,8 @@ struct Int64
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FixedWidthInteger](fixedwidthinteger.md)
 - [Hashable](hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLDataValueConvertible](../CreateML/MLDataValueConvertible.md)
 - [NetworkFixedWidthInteger](../Network/NetworkFixedWidthInteger.md)
@@ -166,6 +169,9 @@ struct Int64
 - [SignedInteger](signedinteger.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also
 

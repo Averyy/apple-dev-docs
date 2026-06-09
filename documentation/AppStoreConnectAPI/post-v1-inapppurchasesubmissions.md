@@ -1,4 +1,4 @@
-# Create a Review Submission for an In-App Purchase
+# Create a review submission for an in-app purchase
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

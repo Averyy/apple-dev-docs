@@ -18,6 +18,7 @@ object AppCustomProductPageVersionCreateRequest
 
 ### Objects
 - [object AppCustomProductPageVersionCreateRequest.Data](appcustomproductpageversioncreaterequest/data-data.dictionary.md)
+  The request body you use to create an app custom product page version.
 
 ## Properties
 
@@ -26,15 +27,15 @@ object AppCustomProductPageVersionCreateRequest
 ## See Also
 
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)
-  The data structure that represents an app custom product page version resource.
+  A version of a custom App Store product page, containing its localizations and review status.
 - [object AppCustomProductPageVersionInlineCreate](appcustomproductpageversioninlinecreate.md)
-  The data structure that represents an app custom product page version inline create resource.
+  An inline object for specifying a custom product page version when creating or updating a related resource.
 - [object AppCustomProductPageVersionUpdateRequest](appcustomproductpageversionupdaterequest.md)
   The request body you use to update an app custom product page version.
 - [object AppCustomProductPageVersionResponse](appcustomproductpageversionresponse.md)
-  A response that contains a single app custom product page resource.
+  The response body for endpoints that create, read, or modify a single custom product page version.
 - [object AppCustomProductPageVersionsResponse](appcustomproductpageversionsresponse.md)
-  A response that contains a list of app customer product page version resources.
+  The response body for endpoints that list versions of a custom App Store product page.
 - [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 

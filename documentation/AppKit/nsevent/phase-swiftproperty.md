@@ -22,7 +22,7 @@ Technically, a gesture scroll event starts with a [`began`](nsevent/phase-swift.
 
 A pressure event (type [`NSEvent.EventType.pressure`](nsevent/eventtype/pressure.md)) is a fluid gesture. Like the other fluid gesture events, it has a phase that describes the sequence of the pressure gesture stream.
 
-Legacy scroll wheel events (say from a Mighty Mouse) and momentum scroll wheel events both have a phase of [`NSEventPhaseNone`](nseventphase/nseventphasenone.md). (Legacy scroll wheel events also have a [`momentumPhase`](nsevent/momentumphase.md) of [`NSEventPhaseNone`](nseventphase/nseventphasenone.md).) To learn more about scroll wheel events, see [`Handling Trackpad Events`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/EventOverview/HandlingTouchEvents/HandlingTouchEvents.html#//apple_ref/doc/uid/10000060i-CH13).
+Legacy scroll wheel events (say from a Mighty Mouse) and momentum scroll wheel events both have a phase of [`NSEventPhaseNone`](nseventphase/nseventphasenone.md). (Legacy scroll wheel events also have a [`momentumPhase`](nsevent/momentumphase.md) of [`NSEventPhaseNone`](nseventphase/nseventphasenone.md).) For more information, see [`momentumPhase`](nsevent/momentumphase.md).
 
 See [`NSEvent.Phase`](nsevent/phase-swift.struct.md) for possible values.
 

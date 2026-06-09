@@ -8,6 +8,7 @@ A dictionary key, with a value that’s a date when a result is next available.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

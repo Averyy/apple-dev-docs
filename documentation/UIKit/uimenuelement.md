@@ -42,6 +42,14 @@ class UIMenuElement
   Constants that indicate the state of an action- or command-based menu element.
 - [UIMenuElement.RepeatBehavior](uimenuelement/repeatbehavior.md)
   Possible repeat behaviors for a menu element.
+### Instance Properties
+- [var highlightStateUpdateHandler: ((UIMenuElement, Bool) -> Void)?](uimenuelement/highlightstateupdatehandler.md)
+  A closure the system calls when the element’s highlight state changes in a menu.
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](uimenuelement/preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
+### Enumerations
+- [UIMenuElement.ImageVisibility](uimenuelement/imagevisibility.md)
+  Visibility options for a menu element’s image.
 
 ## Relationships
 

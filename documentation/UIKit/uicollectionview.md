@@ -303,6 +303,9 @@ For general information about making your interface accessible, see [`Accessibil
   The mode that the collection view uses for invalidating the size of self-sizing cells.
 - [UICollectionView.SelfSizingInvalidation](uicollectionview/selfsizinginvalidation-swift.enum.md)
   Constants that describe modes for invalidating the size of self-sizing collection view cells.
+### Instance Properties
+- [var appIntentsDataSource: (any UICollectionViewAppIntentsDataSource)?](uicollectionview/appintentsdatasource.md)
+  The object acting as the collection view’s data source for app entity identifiers that make a cell’s content avdiscoverable by Apple Intelligence and Siri.
 ### Instance Methods
 - [func indexPath(forSupplementaryView: UICollectionReusableView) -> IndexPath?](uicollectionview/indexpath(forsupplementaryview:).md)
   Gets the index path of the specified supplementary view.
@@ -313,6 +316,8 @@ For general information about making your interface accessible, see [`Accessibil
 - [UIScrollView](uiscrollview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

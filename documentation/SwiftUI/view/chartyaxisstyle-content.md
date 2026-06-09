@@ -52,6 +52,10 @@ Chart(data: data) {
   Sets the visibility of the y axis.
 - [func chartYAxis<Content>(content: () -> Content) -> some View](view/chartyaxis(content:).md)
   Configures the y-axis for charts in the view.
+- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+  Sets the visibility of the z axis.
+- [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
+  Configures the z-axis for 3D charts in the view.
 
 
 ---

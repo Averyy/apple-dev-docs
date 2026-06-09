@@ -6,7 +6,7 @@
 The optional methods that delegates of text storage objects implement to handle text-edit processing.
 
 **Availability**:
-- macOS ?+
+- macOS 10.11+
 
 ## Declaration
 

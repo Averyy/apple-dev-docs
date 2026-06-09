@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a rectangle with the same corner style set on four corners.
+Creates a rectangle with the same corner style set on four corners.
 
 **Availability**:
 - iOS 26.0+
@@ -22,12 +22,17 @@ init(corners: Edge.Corner.Style, isUniform: Bool = false)
 
 #### Discussion
 
-A [`ConcentricRectangle`](concentricrectangle.md) with all four corners set to concentric individually can vary in resolved radius. This can happen when the rectangle is not centered within the container shape, or the container shape itself has different radius per corner. If set to be uniform, [`ConcentricRectangle`](concentricrectangle.md) will resolve each corner on its own first, then pick the largest resolved radius out of the corners and apply it uniformly to achieve the symmetric look.
+When you provide `false` for `isUniform`, the system may calculate a different radius for each corner. This can happen when the rectangle is not centered within the container shape, or the container shape’s corners have different radii. When you provide `true` for `isUniform`, the system calculates the radius for each corner first. Then, it selects the largest radius and applies it to each corner to achieve the symmetric look.
 
 ## Parameters
 
 - `corners`: The corner style for all four corners.
-- `isUniform`: Should the corner style on each corner be applied individually or uniformly.
+- `isUniform`: A Boolean value that indicates whether to apply the corner style on each corner individually or uniformly.
+
+## See Also
+
+- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](shape/rect(corners:isuniform:).md)
+  Creates a rectangle with the same corner style set on four corners.
 
 
 ---

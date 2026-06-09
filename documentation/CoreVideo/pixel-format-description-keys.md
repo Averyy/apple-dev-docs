@@ -64,6 +64,7 @@ In most cases you do not need to specify your own pixel format.
   If true, this format is compatible with OpenGLES (type `CFBoolean`).
 - [let kCVPixelFormatFillExtendedPixelsCallback: CFString](kcvpixelformatfillextendedpixelscallback.md)
   A custom extended pixel fill algorithm (type `CFData`). See [`CVFillExtendedPixelsCallBack`](cvfillextendedpixelscallback.md) and [`CVFillExtendedPixelsCallBackData`](cvfillextendedpixelscallbackdata.md) for more information.
+- [let kCVPixelFormatBitsPerComponent: CFString](kcvpixelformatbitspercomponent.md)
 
 ## See Also
 

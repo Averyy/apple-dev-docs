@@ -7,8 +7,6 @@ A dictionary that contains a requested action to perform on a device using light
 
 **Availability**:
 - macOS 11.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

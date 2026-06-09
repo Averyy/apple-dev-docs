@@ -6,7 +6,6 @@
 A viewing mode that presents video in stereoscopic mode, if it’s available.
 
 **Availability**:
-- Mac Catalyst 18.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -30,10 +30,11 @@ Using this method, you can control where someone can scroll in a scrollable view
 
 ```swift
 struct BasicScrollTargetBehavior: ScrollTargetBehavior {
-    func updateTarget(_ target: inout Target, context: TargetContext) {
+    func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
         // Align to every 1/10 the size of the scroll view.
-        target.rect.x.round(
-            toMultipleOf: round(context.containerSize.width / 10.0))
+        let multiple = context.containerSize.width / 10.0
+        let newX = (target.rect.origin.x / multiple).rounded() * multiple
+        target.rect.origin.x = newX
     }
 }
 ```

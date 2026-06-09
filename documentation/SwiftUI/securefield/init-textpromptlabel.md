@@ -18,7 +18,7 @@ Creates a secure field with a prompt generated from a `Text`.
 
 ```swift
 nonisolated
-init(text: Binding<String>, prompt: Text? = nil, @ViewBuilder label: () -> Label)
+init(text: Binding<String>, prompt: Text? = nil, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion

@@ -11,6 +11,7 @@ Creates a rotation gesture with a minimum delta for the gesture to start and axi
 ## Declaration
 
 ```swift
+nonisolated
 init(constrainedToAxis: RotationAxis3D? = nil, minimumAngleDelta: Angle = .degrees(1))
 ```
 
@@ -25,6 +26,8 @@ If the constrained axis is `nil`, the gesture measures unconstrained 3D rotation
 
 ## See Also
 
+- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture3d/init(constrainedtoaxis:minimumangledelta:inputkinds:).md)
+  Creates a rotation gesture with a minimum delta for the gesture to start, an axis to constrain measurement of rotation, and the input kinds the gesture should recognize.
 - [var minimumAngleDelta: Angle](rotategesture3d/minimumangledelta.md)
   The minimum angle delta before the gesture becomes active.
 - [var constrainedAxis: RotationAxis3D?](rotategesture3d/constrainedaxis.md)

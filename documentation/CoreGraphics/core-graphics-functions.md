@@ -55,10 +55,6 @@
   Returns the color space for a display.
 - [func CGDisplayCopyDisplayMode(CGDirectDisplayID) -> CGDisplayMode?](cgdisplaycopydisplaymode(_:).md)
   Returns information about a display’s current configuration.
-- [func CGDisplayCreateImage(CGDirectDisplayID) -> CGImage?](cgdisplaycreateimage(_:).md)
-  Returns an image containing the contents of the specified display.
-- [func CGDisplayCreateImage(CGDirectDisplayID, rect: CGRect) -> CGImage?](cgdisplaycreateimage(_:rect:).md)
-  Returns an image containing the contents of a portion of the specified display.
 - [func CGDisplayCurrentMode(CGDirectDisplayID) -> CFDictionary?](cgdisplaycurrentmode(_:).md)
   Returns information about the current display mode.
 - [func CGDisplayFade(CGDisplayFadeReservationToken, CGDisplayFadeInterval, CGDisplayBlendFraction, CGDisplayBlendFraction, Float, Float, Float, boolean_t) -> CGError](cgdisplayfade(_:_:_:_:_:_:_:_:).md)
@@ -144,26 +140,6 @@
   Immediately enables or disables stereo operation for a display.
 - [func CGDisplayShowCursor(CGDirectDisplayID) -> CGError](cgdisplayshowcursor(_:).md)
   Decrements the hide cursor count, and shows the mouse cursor if the count is `0`.
-- [init?(display: CGDirectDisplayID, outputWidth: Int, outputHeight: Int, pixelFormat: Int32, properties: CFDictionary?, handler: CGDisplayStreamFrameAvailableHandler?)](cgdisplaystream/init(display:outputwidth:outputheight:pixelformat:properties:handler:).md)
-  Creates a new display stream to be used with a `CFRunloop`.
-- [init?(dispatchQueueDisplay: CGDirectDisplayID, outputWidth: Int, outputHeight: Int, pixelFormat: Int32, properties: CFDictionary?, queue: dispatch_queue_t, handler: CGDisplayStreamFrameAvailableHandler?)](cgdisplaystream/init(dispatchqueuedisplay:outputwidth:outputheight:pixelformat:properties:queue:handler:).md)
-  Creates a new display stream whose updates are delivered to a dispatch queue.
-- [var runLoopSource: CFRunLoopSource?](cgdisplaystream/runloopsource.md)
-  Gets the run loop source for a display stream.
-- [func start() -> CGError](cgdisplaystream/start.md)
-  Tells a stream to start sending updates.
-- [func stop() -> CGError](cgdisplaystream/stop.md)
-  Tells a stream to stop sending updates.
-- [init?(mergedUpdateFirstUpdate: CGDisplayStreamUpdate?, secondUpdate: CGDisplayStreamUpdate?)](cgdisplaystreamupdate/init(mergedupdatefirstupdate:secondupdate:).md)
-  Combines two updates into a new update that includes the metadata for both source updates.
-- [var dropCount: Int](cgdisplaystreamupdate/dropcount.md)
-  Returns the number of frames that have been dropped since the last call to your update handler.
-- [func getMovedRectsDelta(dx: UnsafeMutablePointer<CGFloat>, dy: UnsafeMutablePointer<CGFloat>)](cgdisplaystreamupdate/getmovedrectsdelta(dx:dy:).md)
-  Return the movement delta values for a single update.
-- [func getRects(CGDisplayStreamUpdateRectType, rectCount: UnsafeMutablePointer<Int>) -> UnsafePointer<CGRect>?](cgdisplaystreamupdate/getrects(_:rectcount:).md)
-  Returns an array of rectangles that describe where the frame has changed since the previous frame.
-- [class var typeID: CFTypeID](cgdisplaystreamupdate/typeid.md)
-  Returns the type identifier of a Quartz display stream update.
 - [func CGDisplaySwitchToMode(CGDirectDisplayID, CFDictionary?) -> CGError](cgdisplayswitchtomode(_:_:).md)
   Switches a display to a different mode.
 - [func CGDisplayUnitNumber(CGDirectDisplayID) -> UInt32](cgdisplayunitnumber(_:).md)
@@ -330,10 +306,6 @@
   Generates and returns information about the selected windows in the current user session.
 - [func CGWindowListCreateDescriptionFromArray(CFArray?) -> CFArray?](cgwindowlistcreatedescriptionfromarray(_:).md)
   Generates and returns information about windows with the specified window IDs.
-- [func CGWindowListCreateImage(CGRect, CGWindowListOption, CGWindowID, CGWindowImageOption) -> CGImage?](cgwindowlistcreateimage(_:_:_:_:).md)
-  Returns a composite image based on a dynamically generated list of windows.
-- [init?(windowListFromArrayScreenBounds: CGRect, windowArray: CFArray, imageOption: CGWindowImageOption)](cgimage/init(windowlistfromarrayscreenbounds:windowarray:imageoption:).md)
-  Returns a composite image of the specified windows.
 - [func CGWindowServerCFMachPort() -> CFMachPort?](cgwindowservercfmachport().md)
   Returns a Core Foundation Mach port (CFMachPort) that corresponds to the macOS window server.
 - [func CGWindowServerCreateServerPort() -> CFMachPort?](cgwindowservercreateserverport().md)
@@ -385,8 +357,6 @@
 - [var localEventsSuppressionInterval: CFTimeInterval](cgeventsource/localeventssuppressioninterval.md)
   Returns the interval that local hardware events may be suppressed following the posting of a Quartz event.
 - [var pixelHeight: Int](cgdisplaymode/pixelheight.md)
-- [class var typeID: CFTypeID](cgdisplaystream/typeid.md)
-  Returns the type identifier of a Quartz display stream.
 - [class var typeID: CFTypeID](cgcolorconversioninfo/typeid.md)
   Returns the Core Foundation type identifier for a color conversion info data type.
 - [func y0(CGFloat) -> CGFloat](y0(_:).md)

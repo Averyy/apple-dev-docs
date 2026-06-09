@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The read-only value of the `NSFileManagerSupportedSyncControls` options (value type `NSNumber`).
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

@@ -23,6 +23,8 @@ protocol CVPixelBufferRepresentable : CVImageBufferRepresentable, ~Copyable
 ## Topics
 
 ### Instance Properties
+- [var attachments: Self.Attachments](cvpixelbufferrepresentable/attachments-swift.property.md)
+  Access attachments of this pixel buffer.
 - [var creationAttributes: CVPixelBufferCreationAttributes](cvpixelbufferrepresentable/creationattributes.md)
   Attributes used for creating this pixel buffer
 - [var extendedPixels: CVPixelBufferPadding](cvpixelbufferrepresentable/extendedpixels.md)
@@ -46,6 +48,8 @@ protocol CVPixelBufferRepresentable : CVImageBufferRepresentable, ~Copyable
   Returns `true` if the pixel buffer is compatible with the specified creation attributes.
 - [func withUnsafeBackingIOSurfaceIfPresent<R>((IOSurface) throws -> sending R) rethrows -> sending R?](cvpixelbufferrepresentable/withunsafebackingiosurfaceifpresent(_:).md)
   Access the IOSurface backing the pixel buffer if present.
+### Type Aliases
+- [CVPixelBufferRepresentable.Attachments](cvpixelbufferrepresentable/attachments-swift.typealias.md)
 
 ## Relationships
 
@@ -55,6 +59,11 @@ protocol CVPixelBufferRepresentable : CVImageBufferRepresentable, ~Copyable
 ### Conforming Types
 - [CVMutablePixelBuffer](cvmutablepixelbuffer.md)
 - [CVReadOnlyPixelBuffer](cvreadonlypixelbuffer.md)
+
+## See Also
+
+- [enum CVPixelBufferAttachmentKeyDefinitions](cvpixelbufferattachmentkeydefinitions.md)
+  A namespace for pixel buffer attachment keys.
 
 
 ---

@@ -11,6 +11,7 @@ A segment containing text.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,8 +21,12 @@ case text(Transcript.TextSegment)
 
 ## See Also
 
+- [case attachment(Transcript.AttachmentSegment)](transcript/segment/attachment(_:).md)
+  A segment containing an attachment.
 - [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
   A segment containing structured content.
+- [case custom(any Transcript.CustomSegment)](transcript/segment/custom(_:).md)
+  A segment containing custom content.
 
 
 ---

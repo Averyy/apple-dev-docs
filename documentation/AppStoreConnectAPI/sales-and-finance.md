@@ -13,12 +13,13 @@ These endpoints require a Team key and aren’t usable with an Individual key. T
 ## Topics
 
 ### Downloading Reports
-- [Download Finance Reports](get-v1-financereports.md)
+- [Download finance reports](get-v1-financereports.md)
   Download finance reports filtered by your specified criteria.
-- [Download Sales and Trends Reports](get-v1-salesreports.md)
+- [Download sales and trends reports](get-v1-salesreports.md)
   Download sales and trends reports filtered by your specified criteria.
 ### Objects
 - [type gzip](gzip.md)
+  A binary value that represents a gzip-compressed file.
 
 ## See Also
 

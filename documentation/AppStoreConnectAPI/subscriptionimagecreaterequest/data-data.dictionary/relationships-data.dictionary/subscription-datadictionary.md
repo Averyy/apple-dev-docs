@@ -18,7 +18,7 @@ object SubscriptionImageCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionImageCreateRequest.Data.Relationships.Subscription.Data](subscriptionimagecreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
-  The data structure that represents the subscription for a subscription image create request resource.
+  The resource linkage data identifying the subscription for which a new image is being created.
 
 ## Properties
 

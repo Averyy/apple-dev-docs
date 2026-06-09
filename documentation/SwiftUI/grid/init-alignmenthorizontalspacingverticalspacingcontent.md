@@ -17,7 +17,8 @@ Creates a grid with the specified spacing, alignment, and child views.
 ## Declaration
 
 ```swift
-init(alignment: Alignment = .center, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil, @ViewBuilder content: () -> Content)
+nonisolated
+init(alignment: Alignment = .center, horizontalSpacing: CGFloat? = nil, verticalSpacing: CGFloat? = nil, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

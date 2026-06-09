@@ -61,7 +61,7 @@ struct BreadDatabaseTool: Tool {
 }
 ```
 
-When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency. For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+When you provide descriptions to generable properties, you help the model understand the semantics of the arguments. Keep descriptions as short as possible because long descriptions take up context size and can introduce latency. For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
 Tools use guided generation for the [`Arguments`](tool/arguments.md) property. For more information about guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
 
@@ -121,13 +121,69 @@ let response = try await session.respond(
 )
 ```
 
+#### Configure the Tool Calling Mode
+
+By default, the model decides whether to call a tool based on the prompt. However, there are cases where you have additional context that the model doesn’t, such as the state of the UI or a rule that the model must always call a tool before responding to the person. Use [`GenerationOptions.ToolCallingMode`](generationoptions/toolcallingmode-swift.struct.md) to control how the model interacts with tools for a given request. Tool calling mode supports three modes:
+
+- **[`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md)**: The model may call tools. This is the default behavior.
+- **[`required`](generationoptions/toolcallingmode-swift.struct/required.md)**: The model must call one or more tools before it can respond.
+- **[`disallowed`](generationoptions/toolcallingmode-swift.struct/disallowed.md)**: The model can’t call any tools and responds using only its own knowledge.
+
+The following example uses the `.required` mode to ensure the model always queries a database before answering:
+
+```swift
+let session = LanguageModelSession(
+    tools: [BreadDatabaseTool()]
+)
+
+let response = try await session.respond(
+    to: "What's a good sourdough recipe?",
+    options: GenerationOptions(toolCallingMode: .required)
+)
+```
+
+Use `.disallowed` when you know the model already has enough context in the session to respond without calling any tools:
+
+```swift
+let response = try await session.respond(
+    to: "Summarize the recipes you found",
+    options: GenerationOptions(toolCallingMode: .disallowed)
+)
+```
+
+> ❗ **Important**: When you set the mode to [`required`](generationoptions/toolcallingmode-swift.struct/required.md), you must define an exit condition by either throwing an error from a tool’s [`call(arguments:)`](tool/call(arguments:).md) method or by changing the mode dynamically using a [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md); otherwise, the model continues to call the tool.
+
+The following changes the mode from [`required`](generationoptions/toolcallingmode-swift.struct/required.md) to [`allowed`](generationoptions/toolcallingmode-swift.struct/allowed.md) after the first tool call, which lets the model produce a final response:
+
+```swift
+extension SessionPropertyValues {
+    @SessionPropertyEntry
+    var toolCallCount: Int = 0
+}
+    
+struct RecipeDynamicProfile: LanguageModelSession.DynamicProfile {
+    @SessionProperty(\.toolCallCount) 
+    var toolCallCount
+
+    var body: some LanguageModelSession.DynamicProfile {
+        Profile {
+            BreadDatabaseTool()
+        }
+        .toolCallingMode(toolCallCount < 1 ? .required : .allowed)
+        .onToolCall {
+            toolCallCount += 1
+        }
+    }
+}
+```
+
 #### Handle Errors Thrown By a Tool
 
 When an error happens during tool calling, the session throws a [`LanguageModelSession.ToolCallError`](languagemodelsession/toolcallerror.md) with the underlying error and includes the tool that throws the error. This helps you understand the error that happened during the tool call, and any custom error types that your tool produces. You can throw errors from your tools to escape calls when you detect something is wrong, like when the person using your app doesn’t allow access to the required data or a network call is taking longer than expected. Alternatively, your tool can return a string that briefly tells the model what didn’t work, like “Cannot access the database.”
 
 ```swift
 do {
-    let answer = try await session.respond("Find a recipe for tomato soup.")
+    let answer = try await session.respond(to: "Find a recipe for tomato soup.")
 } catch let error as LanguageModelSession.ToolCallError {
         
     // Access the name of the tool, like BreadDatabaseTool.
@@ -142,6 +198,17 @@ do {
 } catch {
     print("Some other error: \(error)")
 }
+```
+
+When errors are thrown from a tool, the framework rolls back the transcript to a previously known valid state. Use [`transcriptErrorHandlingPolicy`](languagemodelsession/transcripterrorhandlingpolicy.md) to define whether the session preserves the transcript an error occurs or if it reverts back to before the last request. When preserving the transcript, the last entry may be partially generated. If you use [`LanguageModelSession.DynamicProfile`](languagemodelsession/dynamicprofile.md), attach the [`transcriptErrorHandlingPolicy(_:)`](languagemodelsession/dynamicprofile/transcripterrorhandlingpolicy(_:).md) modifier to specify the error handling policy:
+
+```swift
+// Configure a profile to preserve the transcript when an error occurs.
+Profile {
+    // Your dynamic instructions and tools.
+}
+.temperature(0.9)
+.transcriptErrorHandlingPolicy(.preserveTranscript)
 ```
 
 #### Inspect the Call Graph
@@ -163,16 +230,18 @@ struct MyHistoryView: View {
                 // Display the instructions the model uses.
             case .prompt(let prompt):
                 // Display the prompt made to the model.
-            case .toolCall(let call):
+            case .toolCalls(let calls):
                 // Display the call details for a tool, like the tool name and arguments.        
             case .toolOutput(let output):
                 // Display the output that a tool provides back to the model.        
             case .response(let response):
                 // Display the response from the model.
+            case .reasoning(let reasoning):
+                // Display the reasoning from the model.
             }
         }.task {
             do {
-                try await session.respond(to: "Find a milk bread recipe.")
+                let response = try await session.respond(to: "Find a milk bread recipe.")
             } catch let error {
                 // Handle the error.
             }

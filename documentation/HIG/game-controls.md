@@ -88,10 +88,8 @@ Keyboard players appreciate using keyboard bindings to speed up their interactio
 [Game Controller](../GameController.md)
 
 #### Videos
+- [Make your game great with touch](https://developer.apple.com/videos/play/wwdc2026/358) - Dive deeper into the techniques you can use to create compelling touch experiences for your games. We’ll share expert insights from indie to AAA game development, explore best practices for intuitive touch controls, and show you how to take advantage of Apple technologies like Touch Controller framework and Metal for great performance. 
 - [Design advanced games for Apple platforms](https://developer.apple.com/videos/play/wwdc2024/10085) - Learn how to adapt your high-end game so it feels at home on Mac, iPad, and iPhone. We’ll go over how to make your game look stunning on different displays, tailor your input and controls to be intuitive on each device, and take advantage of Apple technologies that deliver great player experiences.
-- [Tap into virtual and physical game controllers](https://developer.apple.com/videos/play/wwdc2021/10081) - It’s time to up your input game: Learn about the latest improvements to virtual and physical game controllers for iPhone, iPad, Mac, and Apple TV. Meet the virtual on-screen controller, which turns touch input into game controller input, and find out how to add controller sharing features to your app. We’ll also show you how to support adaptive trigger technology found in DualSense controllers, provide best practices for controller support, and take you through some common pre-flight checks around accessible and customizable input before submitting to the App Store.
-
-For more information on saving highlight clips from a game controller, check out “Discover rolling clips in ReplayKit” from WWDC21.
 - [Explore game input in visionOS](https://developer.apple.com/videos/play/wwdc2024/10094) - Discover how to design and implement great input for your game in visionOS. Learn how system gestures let you provide frictionless ways for players to interact with your games. And explore best practices for supporting custom gestures and game controllers.
 
 

@@ -24,6 +24,10 @@ struct Shadow
 ### Creating a shadow
 - [init()](spotlightcomponent/shadow/init.md)
   Creates a new spot light shadow object.
+- [init(layers: RenderLayer.Set?)](spotlightcomponent/shadow/init(layers:).md)
+  Creates a spot light shadow with the specified layers.
+- [var layers: RenderLayer.Set?](spotlightcomponent/shadow/layers.md)
+  The layers from which this light casts shadows. If nil, uses layers for shadow casting. Only entities whose RenderLayerComponent.layers intersect with these layers will cast shadows in this light’s shadow map. If `nil`, the light uses its `layers` for shadow casting. Set to an empty set to disable shadow casting entirely.
 ### Configuring the shadow
 - [var depthBias: Float](spotlightcomponent/shadow/depthbias.md)
   A constant value that RealityKit applies as a bias to its shadow calculations.
@@ -33,6 +37,12 @@ struct Shadow
   The orthogonal plane of the shadow frustum that’s furthest from the spotlight.
 - [var cullModeOverride: SpotLightComponent.Shadow.ShadowMapCullMode?](spotlightcomponent/shadow/cullmodeoverride.md)
   The light’s culling mode for shadow map rendering.
+### Configuring shadow quality
+- [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
+- [SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode.md)
+  The quality for the shadows. Low uses shadows that don’t change with light size and the distance between light-blocker-receiver Medium and high allow soft shadows with varying sample counts
+- [var lightSize: Float](spotlightcomponent/shadow/lightsize.md)
+  The light size that determines the softness of the shadows Larger size would mean a larger penumbra and a larger transition range from fully shadowed to lit. It is the radius of the light in world space units. It is also modulated by the attenaution radius, i.e., lights with larger attenuation radius need larger light size.
 ### Type Aliases
 - [SpotLightComponent.Shadow.ShadowMapCullMode](spotlightcomponent/shadow/shadowmapcullmode.md)
 ### Enumerations

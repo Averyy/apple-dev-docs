@@ -29,6 +29,8 @@ Results are in the form of samples, which are of varying types depending on the 
   A recording that the sensor reader fetches.
 - [var timestamp: SRAbsoluteTime](srfetchresult/timestamp.md)
   The time when the framework records the sample.
+### Instance Properties
+- [var sourceDevice: SRSourceDevice?](srfetchresult/sourcedevice.md)
 
 ## Relationships
 

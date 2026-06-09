@@ -11,8 +11,6 @@ The payload that configures an app extension that performs single sign-on (SSO).
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -37,8 +35,8 @@ The system supports user channel installation in macOS 11 and later.
 | --- | --- |
 | Device channel | iOS, macOS, visionOS |
 | User channel | macOS, Shared iPad |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
@@ -103,17 +101,18 @@ The system supports user channel installation in macOS 11 and later.
 
 ## Properties
 
-- `AuthenticationMethod` (string): The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Available in macOS 13 and later, and deprecated in macOS 14.
-- `DeniedBundleIdentifiers` ([string]): An array of bundle identifiers of apps that don’t use SSO provided by this extension. Available in iOS 15 and later, and macOS 12 and later.
+- `AuthenticationMethod` (string): The Platform SSO authentication method the extension uses. Requires that the SSO Extension also supports the method. Available: macOS 13+
+Deprecated: macOS 14+
+- `DeniedBundleIdentifiers` ([string]): An array of bundle identifiers of apps that don’t use SSO provided by this extension. Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
 - `ExtensionData` (ExtensibleSingleSignOn.ExtensionData): A dictionary of arbitrary data passed through to the app extension.
 - `ExtensionIdentifier` (string) *(required)*: The bundle identifier of the app extension that performs SSO for the specified URLs.
 - `Hosts` ([string]): An array of host or domain names that apps can authenticate through the app extension. Required for `Credential` payloads. Ignored for `Redirect` payloads. The system: - Matches host or domain names case-insensitively
 - Requires that all the host and domain names of all installed Extensible SSO payloads are unique > **Note**:  Host names that begin with a “.” are wildcard suffixes that match all subdomains; otherwise the host name needs be an exact match.
-- `PlatformSSO` (ExtensibleSingleSignOn.PlatformSSO): The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
+- `PlatformSSO` (ExtensibleSingleSignOn.PlatformSSO): The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`. Available: macOS 14+
 - `Realm` (string): The realm name for `Credential` payloads. Use proper capitalization for this value. Ignored for `Redirect` payloads.
-- `RegistrationToken` (string): The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty. Available in macOS 13 and later.
-- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) requests. Available in iOS 15 and later, and macOS 12 and later.
-- `TeamIdentifier` (string): The team identifier of the app extension. This key is required on macOS and ignored elsewhere.
+- `RegistrationToken` (string): The token this device uses for registration with Platform SSO. Use it for silent registration with the Identity Provider. Requires that `AuthenticationMethod` in `PlatformSSO` isn’t empty. Available: macOS 13+
+- `ScreenLockedBehavior` (string): If set to `Cancel`, the system cancels authentication requests when the screen is locked. If set to `DoNotHandle`, the request continues without SSO instead. This doesn’t apply to requests where `userInterfaceEnabled` is `false`, or for background [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession) requests. Available: iOS 15+ | iPadOS 15+ | macOS 12+ | visionOS 1.1+
+- `TeamIdentifier` (string): The team identifier of the app extension. This key is required on macOS and ignored elsewhere. Available: macOS 10.15+
 - `Type` (string) *(required)*: The type of SSO.
 - `URLs` ([string]): An array of URL prefixes of identity providers where the app extension performs SSO. Required for `Redirect` payloads. Ignored for `Credential` payloads. The URLs need to begin with `http://` or `https://`. The system: - Matches scheme and host name case-insensitively
 - Doesn’t allow query parameters and URL fragments

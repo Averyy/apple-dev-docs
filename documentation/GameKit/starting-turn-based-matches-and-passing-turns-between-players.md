@@ -34,6 +34,8 @@ request.minPlayers = 2
 request.maxPlayers = 12
 ```
 
+Turn-based games don’t support matchmaking rules. Turn-based game matchmaking use only the [`minPlayers`](gkmatchrequest/minplayers.md), [`maxPlayers`](gkmatchrequest/maxplayers.md), [`playerGroup`](gkmatchrequest/playergroup.md), and [`playerAttributes`](gkmatchrequest/playerattributes.md) properties of a [`GKMatchRequest`](gkmatchrequest.md). You can also invite players using the [`recipients`](gkmatchrequest/recipients.md) property.
+
 To get the maximum number of players Game Center supports for turn-based games, pass [`GKMatchType.turnBased`](gkmatchtype/turnbased.md) to the [`maxPlayersAllowedForMatch(of:)`](gkmatchrequest/maxplayersallowedformatch(of:).md) method.
 
 ##### Start a Turn Based Match

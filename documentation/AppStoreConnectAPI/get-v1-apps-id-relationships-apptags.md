@@ -1,4 +1,4 @@
-# List App Tags IDs
+# List app tags IDs
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ List all app tag IDs for a specific app.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app tag resource identifiers to return.
 
 ## See Also
 
 - [List App Tags](get-v1-apps-_id_-apptags.md)
   List all app tags for a specific app.
-- [List Territory IDs for an App Tag](get-v1-apptags-_id_-relationships-territories.md)
+- [List territory IDs for an app tag](get-v1-apptags-_id_-relationships-territories.md)
   List territory IDs for an app tag.
 - [List Territories for an App Tag](get-v1-apptags-_id_-territories.md)
   List territory availability for a specific app tag.

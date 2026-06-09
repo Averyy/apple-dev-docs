@@ -18,7 +18,7 @@ object AccessibilityDeclarationCreateRequest.Data.Relationships
 
 ### Dictionaries
 - [object AccessibilityDeclarationCreateRequest.Data.Relationships.App](accessibilitydeclarationcreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary.md)
-  The data structure that represents the relationship to an app for the accessibility declaration create request resource.
+  The resource linkage identifying the app associated with an accessibility declaration create request.
 
 ## Properties
 

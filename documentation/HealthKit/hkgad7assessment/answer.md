@@ -42,6 +42,7 @@ enum Answer
 - [enum HKAudiogramConductionType](hkaudiogramconductiontype.md)
 - [enum HKAudiogramSensitivityTestSide](hkaudiogramsensitivitytestside.md)
 - [enum HKCategoryValueVaginalBleeding](hkcategoryvaluevaginalbleeding.md)
+  A value that indicates the intensity of vaginal bleeding.
 - [HKGAD7Assessment.Risk](hkgad7assessment/risk-swift.enum.md)
 - [HKPHQ9Assessment.Answer](hkphq9assessment/answer.md)
 - [HKPHQ9Assessment.Risk](hkphq9assessment/risk-swift.enum.md)

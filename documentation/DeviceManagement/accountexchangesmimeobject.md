@@ -10,8 +10,6 @@ Settings for S/MIME.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -35,7 +33,7 @@ object AccountExchangeSMIMEObject
 ## See Also
 
 - [object AccountExchangeOAuthObject](accountexchangeoauthobject.md)
-  The declaration for configuring OAuth authentication of an Exchange account.
+  The configuration settings for OAuth for this account.
 
 
 ---

@@ -21,8 +21,6 @@ struct SpeedThresholdAlert
 ## Topics
 
 ### Creating speed threshold alerts
-- [static func speed(Double, unit: UnitSpeed, metric: WorkoutAlertMetric) -> Self](speedthresholdalert/speed(_:unit:metric:).md)
-  Returns a new speed threshold alert.
 - [init(target: Measurement<UnitSpeed>, metric: WorkoutAlertMetric)](speedthresholdalert/init(target:metric:).md)
   Creates a new speed threshold alert.
 ### Accessing alert data
@@ -30,20 +28,6 @@ struct SpeedThresholdAlert
   A speed measurement that represents the target threshold.
 - [var targetQuantity: HKQuantity](speedthresholdalert/targetquantity.md)
   A HealthKit quantity that represents the target speed threshold.
-- [var metric: WorkoutAlertMetric](speedthresholdalert/metric.md)
-  The metric used to measure the speed.
-### Comparing alerts
-- [var hashValue: Int](speedthresholdalert/hashvalue.md)
-  The hashed value of the speed threshold alert.
-- [func hash(into: inout Hasher)](speedthresholdalert/hash(into:).md)
-  Hashes the essential components of the speed threshold alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](speedthresholdalert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two speed threshold alerts aren’t equal.
-- [static func == (SpeedThresholdAlert, SpeedThresholdAlert) -> Bool](speedthresholdalert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two speed threshold alerts are equal.
-### Default Implementations
-- [Equatable Implementations](speedthresholdalert/equatable-implementations.md)
-- [WorkoutAlert Implementations](speedthresholdalert/workoutalert-implementations.md)
 
 ## Relationships
 

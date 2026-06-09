@@ -21,28 +21,16 @@ set colorScheme(colorScheme: ColorScheme);
 
 #### Discussion
 
-This property accepts a property from [`ColorScheme`](colorscheme.md) to determine whether the map displays with a dark or light theme when [`Standard`](maptype/standard.md) or [`MutedStandard`](maptype/mutedstandard.md) are the configured [`mapType`](map/maptype.md). The default is [`Light`](colorscheme/light.md).
+This property accepts a value from [`ColorScheme`](colorscheme.md) to determine whether the map displays with a dark or light theme when [`Standard`](maptype/standard.md) or [`MutedStandard`](maptype/mutedstandard.md) are the configured [`mapType`](map/maptype.md). The default is [`Light`](colorscheme/light.md).
 
-The grid, user location accuracy ring, labels for marker annotations, and controls of the map change appearance to complement the Dark Mode style.
-
-## Topics
-
-### Color Schemes
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
+The map updates the grid, user location accuracy ring, marker annotation labels, and controls to complement the Dark Mode style.
 
 ## See Also
 
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
 - [distances](map/distances-data.property.md)
   The system of measurement that displays on the map.
-- [const Distance](distance.md)
-  Constants indicating the system of measurement that displays on the map.
 - [mapType](map/maptype.md)
   The type of data that the map displays.
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
 - [padding](map/padding.md)
   The map’s inset margins.
 - [pointOfInterestFilter](map/pointofinterestfilter.md)

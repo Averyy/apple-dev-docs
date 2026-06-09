@@ -1,6 +1,6 @@
 # SCVideoStreamAnalyzer.StreamDirection.outgoing
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: case
 
 An option that refers to a video stream sent to another device.

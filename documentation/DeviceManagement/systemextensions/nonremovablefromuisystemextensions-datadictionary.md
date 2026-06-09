@@ -7,8 +7,6 @@ A dictionary that maps team identifiers to bundle identifiers of extensions that
 
 **Availability**:
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -33,6 +33,8 @@ Only set this value to `true` for content that you intend to be the user’s pri
   Starts Picture in Picture, if possible.
 - [func stopPictureInPicture()](avpictureinpicturecontroller/stoppictureinpicture.md)
   Stops Picture in Picture, if active.
+- [func invalidatePlaybackState()](avpictureinpicturecontroller/invalidateplaybackstate.md)
+  Invalidates the controller’s current playback state and fetches the updated state from the sample buffer playback delegate object.
 
 
 ---

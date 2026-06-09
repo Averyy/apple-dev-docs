@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An interface for providing an app-specific capability that people invoke from system experiences like Siri and the Shortcuts app.
+An interface you use to express app-specific actions and make them available to the rest of the system.
 
 **Availability**:
 - iOS 16.0+
@@ -22,121 +22,122 @@ protocol AppIntent : PersistentlyIdentifiable, _SupportsAppDependencies, Sendabl
 
 ## Mentions
 
-- [Making actions and content discoverable and widely available](making-actions-and-content-discoverable-and-widely-available.md)
-- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
+- [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 - [Displaying static and interactive snippets](displaying-static-and-interactive-snippets.md)
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
 
 #### Overview
 
-To expose your app’s functionality to system experiences like Siri or the Shortcuts app, and to support interactivity in widgets, you need to implement the `AppIntent` protocol. Use it to provide phrases that can launch the functionality, describe the needed data for the functionality you make available, and implement the method that performs the functionality.
+The [`AppIntent`](appintent.md) protocol defines the interface you use to make your app’s actions discoverable by Apple Intelligence and Siri, the Shortcuts app, and other system experiences. This protocol defines the common features that help the system identify your app’s actions and access basic information about them. Implement this protocol in all your app intents, and supplement it with other protocols as needed to support specific types of actions.
 
-The system instantiates an app intent you create parameter-less using the [`init()`](appintent/init().md) initializer whenever a person invokes it through a system service like Siri, Shortcuts, and so on. If available, the system sets parameters based on user input or other available sources. With set parameters, the system attempts to resolve them in the order of their declaration in the `AppIntent` body. After it resolves all parameters, the system calls [`perform()`](appintent/perform().md) to perform the app intent with its configured parameters. Note that the system retains the app intent and its output only for the duration of the invocation.
+Implement this protocol in a new type or existing type in your app, app extension, framework, or Swift package. In your type, use the [`perform()`](appintent/perform().md) method to perform the action and return a result back to the system. If you require input from the person performing the action, add one or more variables to your type and apply the `@Parameter` property wrapper to each. For example, an app intent to start a workout might require the person to specify which workout they want. Before calling your [`perform()`](appintent/perform().md) method, the system resolves any parameters with this wrapper by inferring values from the current conversation or by asking someone explicitly to provide the value. If your app intent requires app-specific data to perform its action, apply the `@Dependency` property wrapper to any variables with that data.
 
-> **Note**:  Session 10032: [`Dive into App Intents`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2022/10032).
+In addition to performing an action, an app intent provides information about the action itself. Implement the [`title`](appintent/title.md) and [`description`](appintent/description.md) properties and set them to localized strings describing your action. If your app intent has parameters, fill in the [`parameterSummary`](appintent/parametersummary.md) property with a description of the action and parameters together. The system uses this information during conversations or when displaying information about your intent.
 
-##### Implement the Appintent Protocol
-
-Declare a custom intent type by defining a structure that conforms to the `AppIntent` protocol:
+The following example shows an app intent for ordering an album of music. The intent requires the person to specify the album name at order time. The intent also uses an internal album manager type to locate albums by name and initiate the purchase.
 
 ```swift
-struct OrderSoupIntent: AppIntent {
-   static var title = LocalizedStringResource("Order Soup")
-   static var description = IntentDescription("Orders a soup from your favorite restaurant.")
-}
-```
+struct OrderAlbum: AppIntent {
+    static var title: LocalizedStringResource { "Order Album" }
+    static var description = IntentDescription("Order a vinyl record album.")
 
-Then, declare the AppIntent’s parameters. When you implement an `AppIntent` type, parameters must be declared with the `@Parameter` property wrapper. For more information about declaring parameters, see [`Adding parameters to an app intent`](adding-parameters-to-an-app-intent.md).
+    @Parameter(title: "Album", description: "The name of the album to order.")
+    var albumName: String
 
-```swift
-struct OrderSoupIntent: AppIntent {
-   @Parameter(title: "Soup")
-   var soup: Soup
-
-   @Parameter(title: "Quantity")
-   var quantity: Int?
-}
-```
-
-Next, implement the required [`perform()`](appintent/perform().md)function: Validate your intent’s parameters, execute the intent, and return an [`IntentResult`](intentresult.md) that represents the output of a completed intent; for example, a [`PerformResult`](appintent/performresult.md).
-
-```swift
-struct OrderSoupIntent: AppIntent {
-    @Parameter(title: "Soup")
-    var soup: Soup
-
-    @Parameter(title: "Quantity")
-    var quantity: Int?
-
-    static var parameterSummary: some ParameterSummary {
-        Summary("Order \(\.$soup)") {
-            \.$quantity
-        }
-    }
+   @Dependency
+    private var albumManager: AlbumDataManager
 
     func perform() async throws -> some IntentResult {
-        guard let quantity = quantity, quantity < 10 else {
-            throw $quantity.needsValue
-        }
-        soup.order(quantity: quantity)
+        // Perform the action...
         return .result()
+    }
+
+    static var parameterSummary: some ParameterSummary {
+        Summary("Order \(\.$albumName)")
     }
 }
 ```
+
+In addition to this protocol, you can define intents that support common actions. System-defined schemas define the requirements needed to support common actions, including the app intent protocol your type needs to adopt and any parameters it needs to define. For example, the `AssistantSchemas.PhotosIntent.openAlbum` intent requires conformance to the [`OpenIntent`](openintent.md) protocol and a property with an [`AppEntity`](appentity.md) type for the photo album. For information about the available schemas, see doc:app-intent-domains.
+
+For additional app intent protocols you can adopt in your app, see [`App intent types`](app-intent-types.md). For information on how to create an app intent, see [`Creating your first app intent`](creating-your-first-app-intent.md).
 
 ## Topics
 
 ### Creating an app intent
 - [init()](appintent/init.md)
-  Creates an app intent.
+  Creates and returns the app intent.
 ### Specifying the authentication policy
 - [static var authenticationPolicy: IntentAuthenticationPolicy](appintent/authenticationpolicy.md)
-  A property that defines the authentication policy that indicates whether this app intent requires the device to be unlocked or otherwise authenticated.
+  The authentication policy to enforce when running the app intent.
 - [enum IntentAuthenticationPolicy](intentauthenticationpolicy.md)
-  An enumeration that describes the authentication policy to use when running an app intent.
+  The authentication policies you can apply to an app intent when it runs.
+### Specifying the intent’s allowed target
+- [static var allowedExecutionTargets: IntentExecutionTargets](appintent/allowedexecutiontargets.md)
+  The list of targets this intent can be executed against.
+- [struct IntentExecutionTargets](intentexecutiontargets.md)
+  A set of options that describes which process performs an intent or entity query.
+- [AppIntent.ExecutionTargets](appintent/executiontargets.md)
 ### Configuring the metadata
 - [static var title: LocalizedStringResource](appintent/title.md)
-  A short, localized, human-readable string that describes the app intent using a verb and a noun in title case.
+  A short, localized, human-readable string that conveys the app intent’s action.
 - [static var description: IntentDescription?](appintent/description.md)
-  A description of the app intent that the system shows to people.
-- [static var openAppWhenRun: Bool](appintent/openappwhenrun.md)
-  A boolean property that tells the system to consider the app intent even if its app is not in the foreground.
+  A localized string that describes what the app intent does.
 - [static var isDiscoverable: Bool](appintent/isdiscoverable.md)
-  A boolean value that determines whether system features such as Shortcuts and Spotlight can discover this app intent.
+  A Boolean value that indicates whether system features can discover this app intent.
 ### Performing the action
 - [func perform() async throws -> Self.PerformResult](appintent/perform.md)
-  Performs the intent after resolving the provided parameters.
+  Performs the intent’s action and returns a result, after resolving any parameters.
 - [var systemContext: IntentSystemContext](appintent/systemcontext.md)
-  Context information that’s available while the system performs the app intent’s action.
+  Contextual information that the system provides while it performs the app intent.
 - [associatedtype PerformResult : IntentResult](appintent/performresult.md)
+### Running in the foreground or background
+- [static var supportedModes: IntentModes](appintent/supportedmodes.md)
+  The foreground and background modes the app intent supports.
+- [struct IntentModes](intentmodes.md)
+  A set of options you use to configure the runtime behavior of an app intent.
+- [func continueInForeground(IntentDialog?, alwaysConfirm: Bool) async throws](appintent/continueinforeground(_:alwaysconfirm:).md)
+  Attempts to transition the app to the foreground after optionally requesting permission to do so.
+- [func needsToContinueInForegroundError(IntentDialog?, alwaysConfirm: Bool) -> AppIntentError](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md)
+  Asks the person to continue the intent’s action in the foreground.
+### Requesting more information
+- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:).md)
+  Pauses the app intent and asks the person to choose an option from the specified list.
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, content: () -> Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:content:).md)
+  Pauses the app intent, asks the person to choose from the specified options, and provides additional content related to those options.
+- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:view:).md)
+  Pauses the app intent, asks the person to choose from the specified options, and provides a view with additional data.
 ### Requesting confirmation
 - [func requestConfirmation() async throws](appintent/requestconfirmation.md)
-  Requests user confirmation before performing the app intent.
+  Displays a prompt that asks the person for confirmation before performing the app intent.
 - [func requestConfirmation(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog) async throws](appintent/requestconfirmation(conditions:actionname:dialog:).md)
-  Requests user confirmation before performing the app intent.
+  Displays a confirmation prompt that includes the specified text and action details.
 - [func requestConfirmation<Content>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, content: () -> Content) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:content:).md)
-  Request user confirmation before performing the app intent.
-- [func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(result:confirmationactionname:showprompt:).md)
-  Requests user confirmation before performing the app intent.
-- [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(output:confirmationactionname:showprompt:).md)
+  Displays a confirmation prompt with an interactive snippet.
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md)
+  Displays a confirmation prompt that includes an interactive snippet.
+- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8.md)
+  Displays a confirmation prompt with an interactive snippet.
 ### Donating the intent to the system
 - [func donate() async throws -> IntentDonationIdentifier](appintent/donate-1e60c.md)
-  Donates the intent to the transcript.
+  Donates the app intent to the system asynchronously.
 - [func donate() -> IntentDonationIdentifier](appintent/donate-jp6k.md)
-  Donates the intent to the transcript.
+  Donates the app intent to the system.
 - [func donate(result: some IntentResult) async throws -> IntentDonationIdentifier](appintent/donate(result:)-36cia.md)
-  Donates the intent and optional result to the transcript.
+  Donates the app intent and a result to the system asynchronously.
 - [func donate(result: some IntentResult) -> IntentDonationIdentifier](appintent/donate(result:)-9b25i.md)
-  Donates the intent and optional result to the transcript.
+  Donates the app intent and a result to the system asynchronously.
 - [func callAsFunction(donate: Bool) async throws -> Self.PerformResult.Value](appintent/callasfunction(donate:)-3qvbt.md)
+  Runs the intent’s action after resolving any parameters, returns the resulting value, and optionally donates the intent to the system.
 - [func callAsFunction(donate: Bool) async throws](appintent/callasfunction(donate:)-7v1om.md)
+  Runs the intent’s action after resolving any parameters, and optionally donates the intent to the system.
 ### Summarizing the parameters
 - [associatedtype SummaryContent : ParameterSummary](appintent/summarycontent.md)
   The type of parameter summary representing this intent.
 - [static var parameterSummary: Self.SummaryContent](appintent/parametersummary.md)
-  Defines the summary of this intent in relation to how its parameters are populated.
+  The parameter summary the Shortcuts app uses to generate shortcuts for this intent.
 - [static var parameterSummary: some ParameterSummary](appintent/parametersummary-4vgic.md)
 - [enum ParameterSummaryBuilder](parametersummarybuilder.md)
   A result builder that allows you to declaratively describe a parameter summary.
@@ -146,29 +147,14 @@ struct OrderSoupIntent: AppIntent {
 - [AppIntent.Summary](appintent/summary.md)
 - [AppIntent.Switch](appintent/switch.md)
 - [AppIntent.When](appintent/when.md)
-### URL representation
-- [struct IntentURLRepresentation](intenturlrepresentation.md)
-  The URL representation of an app intent.
-### Instance Methods
-- [func continueInForeground(IntentDialog?, alwaysConfirm: Bool) async throws](appintent/continueinforeground(_:alwaysconfirm:).md)
-  A method you call to ask a person to continue an action in the foreground.
-- [func needsToContinueInForegroundError(IntentDialog?, alwaysConfirm: Bool) -> AppIntentError](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md)
-  A method you call to ask a person to continue an intent’s action in the foreground after it encounters an error.
-- [func requestChoice(between: [IntentChoiceOption], dialog: IntentDialog?) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:).md)
-  Pauses the app intent to request a person to choose from several options.
-- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, content: () -> Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:content:).md)
-  Pauses the app intent to request a person to choose from several options.
-- [func requestChoice<Content>(between: [IntentChoiceOption], dialog: IntentDialog?, view: Content) async throws -> IntentChoiceOption](appintent/requestchoice(between:dialog:view:).md)
-  Pauses the app intent to request a person to choose from several options.
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-3vewj.md)
-- [func requestConfirmation<Snippet>(conditions: ConfirmationConditions, actionName: ConfirmationActionName, dialog: IntentDialog?, showDialogAsPrompt: Bool, snippetIntent: Snippet) async throws -> Snippet.PerformResult.Value](appintent/requestconfirmation(conditions:actionname:dialog:showdialogasprompt:snippetintent:)-jxb8.md)
-  Requests user confirmation before performing the app intent.
-### Type Aliases
 - [AppIntent.Option](appintent/option.md)
   A convenience type alias that represents a choice option within the scope of an app intent.
-### Type Properties
-- [static var supportedModes: IntentModes](appintent/supportedmodes.md)
-  Defines the supported modes that describe the behavior of your app intent.
+### Deprecated
+- [static var openAppWhenRun: Bool](appintent/openappwhenrun.md)
+  A Boolean property that tells the system to consider the app intent even if its app is not in the foreground.
+- [func requestConfirmation<Result>(result: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(result:confirmationactionname:showprompt:).md)
+  Requests user confirmation before performing the app intent.
+- [func requestConfirmation<Result>(output: Result, confirmationActionName: ConfirmationActionName, showPrompt: Bool) async throws](appintent/requestconfirmation(output:confirmationactionname:showprompt:).md)
 
 ## Relationships
 
@@ -183,6 +169,7 @@ struct OrderSoupIntent: AppIntent {
 - [AudioRecordingIntent](audiorecordingintent.md)
 - [AudioStartingIntent](audiostartingintent.md)
 - [CameraCaptureIntent](cameracaptureintent.md)
+- [CancellableIntent](cancellableintent.md)
 - [ControlConfigurationIntent](controlconfigurationintent.md)
 - [CustomIntentMigratedAppIntent](customintentmigratedappintent.md)
 - [DeleteIntent](deleteintent.md)
@@ -190,6 +177,7 @@ struct OrderSoupIntent: AppIntent {
 - [ForegroundContinuableIntent](foregroundcontinuableintent.md)
 - [LiveActivityIntent](liveactivityintent.md)
 - [LiveActivityStartingIntent](liveactivitystartingintent.md)
+- [LongRunningIntent](longrunningintent.md)
 - [OpenIntent](openintent.md)
 - [PauseWorkoutIntent](pauseworkoutintent.md)
 - [PlayVideoIntent](playvideointent.md)
@@ -212,11 +200,18 @@ struct OrderSoupIntent: AppIntent {
 ### Conforming Types
 - [EmptySnippetIntent](emptysnippetintent.md)
 - [OpenURLIntent](openurlintent.md)
+- [RunSystemShortcutIntent](runsystemshortcutintent.md)
 
 ## See Also
 
-- [struct IntentDescription](intentdescription.md)
-  The human-readable description and metadata for an app intent.
+- [Creating your first app intent](creating-your-first-app-intent.md)
+  Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
+- [Accelerating app interactions with App Intents](acceleratingappinteractionswithappintents.md)
+  Enable people to use your app’s features quickly through Siri, Spotlight, and Shortcuts.
+- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
+- [App intent types](app-intent-types.md)
+  Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.
 
 
 ---

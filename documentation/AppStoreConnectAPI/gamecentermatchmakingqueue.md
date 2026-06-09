@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a queue.
+A queue in Game Center matchmaking that holds players waiting to be matched, governed by a rule set.
 
 **Availability**:
 - App Store Connect API 3.1+

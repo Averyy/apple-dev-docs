@@ -9,7 +9,6 @@ A structure that stores the data to send to the payment service provider to proc
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

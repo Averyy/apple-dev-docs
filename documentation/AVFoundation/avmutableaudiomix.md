@@ -46,6 +46,7 @@ class AVMutableAudioMix
   An object that manages the input parameters for mixing audio tracks.
 - [class AVAudioMixInputParameters](avaudiomixinputparameters.md)
   An object that represents the parameters that you apply when adding an audio track to a mix.
+- [enum AVAudioMixInputParametersTrackID](avaudiomixinputparameterstrackid.md)
 - [class AVMutableAudioMixInputParameters](avmutableaudiomixinputparameters.md)
   The parameters you use when adding an audio track to a mix.
 

@@ -18,6 +18,8 @@ class let contextHelpModeDidActivateNotification: NSNotification.Name
 
 The notification object is the help manager. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSHelpManager.ContextHelpModeDidActivateMessage`](nshelpmanager/contexthelpmodedidactivatemessage.md).
+
 ## See Also
 
 - [class let contextHelpModeDidDeactivateNotification: NSNotification.Name](nshelpmanager/contexthelpmodediddeactivatenotification.md)

@@ -139,8 +139,6 @@ Another way that apps consume too many threads is by creating too many private c
 - [DispatchObject](dispatchobject.md)
 ### Inherited By
 - [DispatchConcurrentQueue](dispatchconcurrentqueue.md)
-- [DispatchSerialQueue](dispatchserialqueue.md)
-- [DispatchWorkloop](dispatchworkloop.md)
 - [OS_dispatch_queue_global](os_dispatch_queue_global-swift.class.md)
 ### Conforms To
 - [CVarArg](../Swift/CVarArg.md)

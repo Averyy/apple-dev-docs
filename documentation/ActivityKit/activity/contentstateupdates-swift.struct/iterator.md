@@ -8,6 +8,7 @@ An iterator for accessing individual data entries from the series.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

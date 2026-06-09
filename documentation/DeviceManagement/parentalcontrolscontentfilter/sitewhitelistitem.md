@@ -7,8 +7,6 @@ A dictionary defining a site for the allow list.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,8 +16,8 @@ object ParentalControlsContentFilter.SiteWhitelistItem
 
 ## Properties
 
-- `address` (string) *(required)*: The site prefix, including http(s) scheme.
-- `pageTitle` (string): The site page title.
+- `address` (string) *(required)*: The site prefix, including http(s) scheme. Deprecated: macOS 15.2+
+- `pageTitle` (string): The site page title. Deprecated: macOS 15.2+
 
 ## See Also
 

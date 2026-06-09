@@ -11,8 +11,7 @@ Options you provide when you create a search object.
 ## Declaration
 
 ```swift
-interface SearchConstructorOptions
-    extends ServiceConstructorOptions
+interface SearchConstructorOptions extends ServiceConstructorOptions
 ```
 
 ## Topics

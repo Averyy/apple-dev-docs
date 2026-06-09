@@ -4,7 +4,6 @@
 **Kind**: typealias
 
 **Availability**:
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 ## Declaration

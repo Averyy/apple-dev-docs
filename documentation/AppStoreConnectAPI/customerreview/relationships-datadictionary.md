@@ -19,10 +19,13 @@ object CustomerReview.Relationships
 ### Objects
 - [object CustomerReview.Relationships.Response](customerreview/relationships-data.dictionary/response-data.dictionary.md)
   The data and links that describe the relationship between the resources.
+### Dictionaries
+- [object CustomerReview.Relationships.ReviewTerritory](customerreview/relationships-data.dictionary/reviewterritory-data.dictionary.md)
 
 ## Properties
 
 - `response` (CustomerReview.Relationships.Response): The data and links that describe the relationship between the `CustomerReviews` and `CustomerReviewResponses` resources.
+- `reviewTerritory` (CustomerReview.Relationships.ReviewTerritory)
 
 ## See Also
 

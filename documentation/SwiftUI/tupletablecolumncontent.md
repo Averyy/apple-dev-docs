@@ -16,7 +16,7 @@ A type of table column content that creates table columns created from a Swift t
 
 ```swift
 @frozen
-struct TupleTableColumnContent<RowValue, Sort, T> where RowValue : Identifiable, Sort : SortComparator
+nonisolated struct TupleTableColumnContent<RowValue, Sort, T> where RowValue : Identifiable, Sort : SortComparator
 ```
 
 #### Overview

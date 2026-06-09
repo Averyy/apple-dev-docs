@@ -21,6 +21,9 @@ struct UnicodeScalarView
 
 ## Topics
 
+### Instance Methods
+- [func isTriviallyIdentical(to: Substring.UnicodeScalarView) -> Bool](substring/unicodescalarview/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this unicode scalar view is trivially identical to `other`.
 ### Default Implementations
 - [BidirectionalCollection Implementations](substring/unicodescalarview/bidirectionalcollection-implementations.md)
 - [Collection Implementations](substring/unicodescalarview/collection-implementations.md)

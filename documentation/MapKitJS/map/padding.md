@@ -12,7 +12,7 @@ The map’s inset margins.
 
 ```swift
 get padding(): Padding;
-set padding(padding: Padding);
+set padding(padding: PaddingData);
 ```
 
 ## Mentions
@@ -29,16 +29,10 @@ MapKit JS computes the [`visibleMapRect`](map/visiblemaprect.md) to fit within t
 
 - [colorScheme](map/colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
 - [distances](map/distances-data.property.md)
   The system of measurement that displays on the map.
-- [const Distance](distance.md)
-  Constants indicating the system of measurement that displays on the map.
 - [mapType](map/maptype.md)
   The type of data that the map displays.
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
 - [pointOfInterestFilter](map/pointofinterestfilter.md)
   The filter that determines the points of interest that display on the map.
 - [showsPointsOfInterest](map/showspointsofinterest.md)

@@ -6,8 +6,8 @@
 A Boolean that specifies whether the screenshot captures subwindows of the included apps and windows.
 
 **Availability**:
-- Mac Catalyst ?+
-- macOS ?+
+- Mac Catalyst 26.0+
+- macOS 26.0+
 
 ## Declaration
 

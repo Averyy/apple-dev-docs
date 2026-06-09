@@ -64,7 +64,7 @@ class NSTextListElement
 ## See Also
 
 - [Enriching your text in text views](enriching-your-text-in-text-views.md)
-  Add exclusion paths, text attachments, and text lists to your text, and render it with text views.
+  Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
 - [class NSTextParagraph](nstextparagraph.md)
   A class that represents a single paragraph backed by an attributed string as the contents.
 - [class NSTextElement](nstextelement.md)

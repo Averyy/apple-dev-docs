@@ -17,23 +17,23 @@ The `scmRepositories` resource represents Git repositories Xcode Cloud can acces
 ## Topics
 
 ### Getting Repository Information
-- [List All Git Repositories](get-v1-scmrepositories.md)
+- [List all git repositories](get-v1-scmrepositories.md)
   List all Git repositories Xcode Cloud can access.
-- [Read Git Repository Information](get-v1-scmrepositories-_id_.md)
+- [Read git repository information](get-v1-scmrepositories-_id_.md)
   Get information about a Git repository that Xcode Cloud can access.
-- [List All Git References for a Repository](get-v1-scmrepositories-_id_-gitreferences.md)
+- [List all git references for a repository](get-v1-scmrepositories-_id_-gitreferences.md)
   List all Git references for a specific repository that Xcode Cloud can access.
-- [GET /v1/scmRepositories/{id}/relationships/gitReferences](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
-- [List All Pull Requests for a Repository](get-v1-scmrepositories-_id_-pullrequests.md)
+- [List Git reference IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-gitreferences.md)
+- [List all pull requests for a repository](get-v1-scmrepositories-_id_-pullrequests.md)
   List all pull requests for a specific repository that Xcode Cloud can access.
-- [GET /v1/scmRepositories/{id}/relationships/pullRequests](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
+- [List pull request IDs for an SCM repository](get-v1-scmrepositories-_id_-relationships-pullrequests.md)
 ### Objects
 - [object ScmRepository](scmrepository.md)
-  The data structure that represents a Repositories resource.
+  A source code repository connected to Xcode Cloud, used as the source for workflow builds.
 - [object ScmRepositoryResponse](scmrepositoryresponse.md)
-  A response that contains a single Repositories resource.
+  The response body for endpoints that read a single SCM repository connected to Xcode Cloud.
 - [object ScmRepositoriesResponse](scmrepositoriesresponse.md)
-  A response that contains a list of Repositories resources.
+  The response body for endpoints that list SCM repositories connected to Xcode Cloud.
 - [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
 - [object ScmRepositoryPullRequestsLinkagesResponse](scmrepositorypullrequestslinkagesresponse.md)
 

@@ -11,7 +11,7 @@ The style to use when drawing joins between line segments.
 ## Declaration
 
 ```swift
-lineJoin?: CanvasLineJoin;
+lineJoin?: "bevel" | "miter" | "round";
 ```
 
 #### Discussion

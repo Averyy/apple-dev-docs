@@ -22,7 +22,7 @@ func stop(with params: MTROvenCavityOperationalStateClusterStopParams?) async th
 
 #### Discussion
 
-Upon receipt, the device SHALL stop its operation if it is at a position where it is safe to do so and/or permitted.
+This command SHALL be supported if the device supports remotely stopping the operation.
 
 
 ---

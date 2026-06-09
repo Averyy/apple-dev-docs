@@ -1,4 +1,4 @@
-# Create an App Clip Card Image for a Default App Clip Experience
+# Create an app clip card image for a default app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,11 +18,11 @@ The request body you use to create an App Clip header image.
 
 ## See Also
 
-- [Read the App Clip Card Image](get-v1-appclipheaderimages-_id_.md)
+- [Read the app clip card image](get-v1-appclipheaderimages-_id_.md)
   Get the image that appears on the App Clip card of a default App Clip experience.
-- [Modify an App Clip Card Image](patch-v1-appclipheaderimages-_id_.md)
+- [Modify an app clip card image](patch-v1-appclipheaderimages-_id_.md)
   Change the image that appears on the App Clip card of a default App Clip experience.
-- [Delete a Default App Clip Experience Image](delete-v1-appclipheaderimages-_id_.md)
+- [Delete a default app clip experience image](delete-v1-appclipheaderimages-_id_.md)
   Delete the image asset that appears on the App Clip card for a default App Clip experience.
 
 

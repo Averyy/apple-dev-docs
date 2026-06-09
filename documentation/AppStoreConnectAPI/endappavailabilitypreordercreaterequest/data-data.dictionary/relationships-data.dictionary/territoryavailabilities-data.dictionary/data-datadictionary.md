@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an end app availability pre-order.
+
 **Availability**:
 - App Store Connect API 3.0+
 

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A buffer instance this tensor shares its storage with or nil if this tensor does not wrap an underlying buffer.
+A buffer instance this tensor shares its storage with or `nil` if this tensor does not wrap an underlying buffer.
 
 **Availability**:
 - iOS 26.0+

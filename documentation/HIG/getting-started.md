@@ -9,6 +9,7 @@ framework: HIG
 
 Create an app or game that feels at home on every platform you support.
 
+- [Design principles](/design/human-interface-guidelines/design-principles) - Explore fundamental principles that guide design across Apple platforms.
 - [Designing for iOS](/design/human-interface-guidelines/designing-for-ios) - People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
 - [Designing for iPadOS](/design/human-interface-guidelines/designing-for-ipados) - People value the power, mobility, and flexibility of iPad as they enjoy media, play games, perform detailed productivity tasks, and bring their creations to life.
 - [Designing for macOS](/design/human-interface-guidelines/designing-for-macos) - People rely on the power, spaciousness, and flexibility of a Mac as they perform in-depth productivity tasks, view media or content, and play games, often using several apps at once.
@@ -20,6 +21,7 @@ Create an app or game that feels at home on every platform you support.
 
 ## Topics
 
+- [Design principles](design-principles.md) - Explore fundamental principles that guide design across Apple platforms.
 - [Designing for iOS](designing-for-ios.md) - People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
 - [Designing for iPadOS](designing-for-ipados.md) - People value the power, mobility, and flexibility of iPad as they enjoy media, play games, perform detailed productivity tasks, and bring their creations to life.
 - [Designing for macOS](designing-for-macos.md) - People rely on the power, spaciousness, and flexibility of a Mac as they perform in-depth productivity tasks, view media or content, and play games, often using several apps at once.

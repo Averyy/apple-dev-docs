@@ -11,24 +11,24 @@ The `appClips` resource represents an App Clip and its associated App Clip exper
 ## Topics
 
 ### Reading App Clip Information
-- [Read App Clip Information](get-v1-appclips-_id_.md)
+- [Read app clip information](get-v1-appclips-_id_.md)
   Get a specific App Clip.
 ### Getting App Clip Experiences
-- [List All Default App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
+- [List all default app clip experiences for an app clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
   Get all default App Clip experiences for an App Clip.
-- [List All Advanced App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
+- [List all advanced app clip experiences for an app clip](get-v1-appclips-_id_-appclipadvancedexperiences.md)
   Get all advanced App Clip experiences for an App Clip.
-- [GET /v1/appClips/{id}/relationships/appClipAdvancedExperiences](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
-- [GET /v1/appClips/{id}/relationships/appClipDefaultExperiences](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
+- [List App Clip advanced experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
+- [List default experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
 ### Objects
 - [object AppClip](appclip.md)
-  The data structure that represents an App Clips resource.
+  A lightweight version of an app that users can launch instantly without installation, associated with a registered parent app.
 - [object AppClipResponse](appclipresponse.md)
-  A response that contains a single App Clips resource.
+  The response body for endpoints that read an App Clip associated with an app.
 - [object AppClipDefaultExperiencesResponse](appclipdefaultexperiencesresponse.md)
-  A response that contains a list of Default App Clip Experiences resources.
+  The response body for endpoints that list default App Clip experiences.
 - [object AppClipAdvancedExperiencesResponse](appclipadvancedexperiencesresponse.md)
-  A response that contains a list of Advanced App Clip Experiences resources.
+  A response containing a list of configured App Clip advanced experiences.
 - [object AppClipAppClipAdvancedExperiencesLinkagesResponse](appclipappclipadvancedexperienceslinkagesresponse.md)
 - [object AppClipAppClipDefaultExperiencesLinkagesResponse](appclipappclipdefaultexperienceslinkagesresponse.md)
 

@@ -44,7 +44,15 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
   The active presentation commands for the PTS specified in the last call to the update method.
 - [var presentationDescriptor: PresentationDescriptor](presentationdescriptorreader/presentationdescriptor.md)
   The presentation descriptor that contains the presentation commands to process.
+- [var cameraOverrides: SetCameraCommand.Overrides?](presentationdescriptorreader/cameraoverrides.md)
+  The current camera params which would override static metadata to use when rendering playback for the PTS specified in the last call to the update method.
+- [var isShotFlipped: Bool](presentationdescriptorreader/isshotflipped.md)
+  A Boolean value that indicates whether to vertically flip the video frame for the PTS specified in the last call to the update method.
 ### Instance Methods
+- [func metadataItem(for: CMTime, segmentDuration: CMTime?) throws -> AVMetadataItem?](presentationdescriptorreader/metadataitem(for:segmentduration:).md)
+  Retrieves the metadata item that starts at the specified presentation timestamp. Should run on the same thread with PresentationDescriptorReader.
+- [func metadataTrack(segmentDuration: CMTime?, end: CMTime?) throws -> [AVMetadataItem]](presentationdescriptorreader/metadatatrack(segmentduration:end:).md)
+  Retrieves all metadata items, optionally segmented and filtered by end time. Should run on the same thread with PresentationDescriptorReader.
 - [func outputPresentationCommands(for: CMTime) -> [PresentationCommand]?](presentationdescriptorreader/outputpresentationcommands(for:).md)
   This function returns all presentation commands to be muxed into an MOV during an `AVAssetWriter` session. Don’t use this function for playback rendering.
 - [func processPresentationCommands(for: CMTime)](presentationdescriptorreader/processpresentationcommands(for:).md)
@@ -71,6 +79,8 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
   A command type for immersive camera switching during playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
+- [struct ShotFlipCommand](shotflipcommand.md)
+  A command type to flip the video frames vertically during playback for the duration of the command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 

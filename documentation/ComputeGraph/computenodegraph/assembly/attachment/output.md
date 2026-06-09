@@ -1,0 +1,26 @@
+# ComputeNodeGraph.Assembly.Attachment.output(_:)
+
+**Framework**: ComputeGraph  
+**Kind**: case
+
+The resource is produced by an output port at the given address.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- Reality Composer Pro 27.0+ (Beta)
+
+## Declaration
+
+```swift
+case output(ComputeNodeGraph.Port.Address)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/computegraph/computenodegraph/assembly/attachment/output(_:))*

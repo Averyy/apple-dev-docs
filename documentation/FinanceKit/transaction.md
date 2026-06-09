@@ -8,6 +8,7 @@ A structure that represents a transaction relating to a specific financial accou
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

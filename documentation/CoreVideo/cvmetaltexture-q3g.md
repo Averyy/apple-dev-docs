@@ -27,6 +27,8 @@ A Core Video Metal Texture is a texture-based image buffer that supplies source 
 
 - [CVMetalTextureCache](cvmetaltexturecache-q3j.md)
   A cache used to create and manage Metal texture objects.
+- [class CVMetalBufferCache](cvmetalbuffercache.md)
+  A cache used to create and manage Metal buffer objects.
 
 
 ---

@@ -139,6 +139,7 @@ Deallocate any memory that you allocate for your custom variables in the [`free`
 - [StringFromReturn](ioservice/stringfromreturn.md)
 - [Terminate](ioservice/terminate.md)
 - [UpdateReport](ioservice/updatereport.md)
+- [CallPlatformFunction](ioservice/callplatformfunction.md)
 - [CreatePMAssertion](ioservice/createpmassertion.md)
 - [ReleasePMAssertion](ioservice/releasepmassertion.md)
 ### Type Methods

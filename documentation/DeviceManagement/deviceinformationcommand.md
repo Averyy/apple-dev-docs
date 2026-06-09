@@ -13,8 +13,6 @@ The command to get detailed information about a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,8 +22,8 @@ object DeviceInformationCommand
 
 ## Mentions
 
-- [Creating and Using Bypass Codes](creating-and-using-bypass-codes.md)
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Creating and using bypass codes](creating-and-using-bypass-codes.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

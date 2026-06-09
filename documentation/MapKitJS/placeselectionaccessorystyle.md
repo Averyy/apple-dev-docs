@@ -18,6 +18,8 @@ const PlaceSelectionAccessoryStyle: Readonly<{
     readonly CompactCallout: "compactCallout";
     readonly OpenInMaps: "openInMaps";
 }>
+type PlaceSelectionAccessoryStyle =
+    (typeof PlaceSelectionAccessoryStyle)[keyof typeof PlaceSelectionAccessoryStyle];
 ```
 
 ## Topics
@@ -33,9 +35,6 @@ const PlaceSelectionAccessoryStyle: Readonly<{
   A style that displays a rich, detailed presentation.
 - [OpenInMaps](placeselectionaccessorystyle/openinmaps.md)
   A style that displays a caption to open in Maps.
-### Type Aliases
-- [type PlaceSelectionAccessoryStyle](placeselectionaccessorystyle/placeselectionaccessorystyle.md)
-  A type alias that represents the values of place selection accessory style enumeration.
 
 ## See Also
 

@@ -12,6 +12,7 @@ An object that represents an optical flow that an image-analysis request produce
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -39,6 +40,8 @@ The optical flow is a 2D image, with each pixel representing the directional cha
 ### Accessing the memory
 - [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](opticalflowobservation/withunsafepointer(_:).md)
   Invokes the given closure with a pointer to the given argument.
+### Instance Properties
+- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
 
 ## Relationships
 

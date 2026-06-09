@@ -13,24 +13,25 @@ Create and update a version of your custom product page.
   List the versions for a custom product page version.
 - [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+- [List localization IDs for a custom product page version](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+  Get a list of localization IDs for a specific custom product page version.
 - [Create a Custom Product Page Version](post-v1-appcustomproductpageversions.md)
   Add a version for your app custom product page.
 - [Modify a Custom Product Page Version](patch-v1-appcustomproductpageversions-_id_.md)
   Update the name and visibility status of an app custom product page.
 ### Objects
 - [object AppCustomProductPageVersion](appcustomproductpageversion.md)
-  The data structure that represents an app custom product page version resource.
+  A version of a custom App Store product page, containing its localizations and review status.
 - [object AppCustomProductPageVersionCreateRequest](appcustomproductpageversioncreaterequest.md)
   The request body you use to create an app custom product page version.
 - [object AppCustomProductPageVersionInlineCreate](appcustomproductpageversioninlinecreate.md)
-  The data structure that represents an app custom product page version inline create resource.
+  An inline object for specifying a custom product page version when creating or updating a related resource.
 - [object AppCustomProductPageVersionUpdateRequest](appcustomproductpageversionupdaterequest.md)
   The request body you use to update an app custom product page version.
 - [object AppCustomProductPageVersionResponse](appcustomproductpageversionresponse.md)
-  A response that contains a single app custom product page resource.
+  The response body for endpoints that create, read, or modify a single custom product page version.
 - [object AppCustomProductPageVersionsResponse](appcustomproductpageversionsresponse.md)
-  A response that contains a list of app customer product page version resources.
+  The response body for endpoints that list versions of a custom App Store product page.
 - [object AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse](appcustomproductpageversionappcustomproductpagelocalizationslinkagesresponse.md)
 
 ## See Also

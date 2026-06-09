@@ -17,6 +17,7 @@ Creates a conic gradient that completes a full turn.
 ## Declaration
 
 ```swift
+nonisolated
 init(gradient: Gradient, center: UnitPoint, angle: Angle = .zero)
 ```
 

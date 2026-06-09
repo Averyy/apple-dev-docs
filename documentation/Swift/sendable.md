@@ -297,6 +297,9 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [Never](never.md)
 - [ObjectIdentifier](objectidentifier.md)
 - [ObservationRegistrar](../observation/observationregistrar.md)
+- [ObservationTracking](../observation/observationtracking.md)
+- [ObservationTracking.Event.Kind](../observation/observationtracking/event/kind-swift.struct.md)
+- [ObservationTracking.Options](../observation/observationtracking/options.md)
 - [Observations](../observation/observations.md)
 - [Observations.Iteration](../observation/observations/iteration.md)
 - [Optional](optional.md)
@@ -445,7 +448,7 @@ Metatypes such as `Int.Type` implicitly conform to the `Sendable` protocol.
 - [protocol GlobalActor](globalactor.md)
   A type that represents a globally-unique actor that can be used to isolate various declarations anywhere in the program.
 - [protocol SendableMetatype](sendablemetatype.md)
-  A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
+  A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
 - [typealias ConcurrentValue](concurrentvalue.md)
 - [protocol UnsafeSendable](unsafesendable.md)
   A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.

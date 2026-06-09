@@ -28,6 +28,8 @@ The default value is [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md). I
 
 - [func timeZone(Date.IntervalFormatStyle.Symbol.TimeZone) -> Date.IntervalFormatStyle](date/intervalformatstyle/timezone(_:).md)
   Modifies the date interval format style to use the specified time zone format.
+- [func locale(Locale) -> Date.IntervalFormatStyle](date/intervalformatstyle/locale(_:).md)
+  Modifies the date interval format style to use the specified locale.
 - [var calendar: Calendar](date/intervalformatstyle/calendar.md)
   The calendar for formatting the date interval.
 - [var timeZone: TimeZone](date/intervalformatstyle/timezone.md)

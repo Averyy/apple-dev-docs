@@ -16,6 +16,7 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion
 
 ### Objects
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion.Data](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversion-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a review submission item.
 
 ## Properties
 

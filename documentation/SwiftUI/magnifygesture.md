@@ -15,6 +15,7 @@ A gesture that recognizes a magnification motion and tracks the amount of magnif
 ## Declaration
 
 ```swift
+nonisolated
 struct MagnifyGesture
 ```
 
@@ -49,6 +50,8 @@ struct MagnifyGestureView: View {
 ### Creating the gesture
 - [init(minimumScaleDelta: CGFloat)](magnifygesture/init(minimumscaledelta:).md)
   Creates a magnify gesture with a given minimum delta for the gesture to start.
+- [init(minimumScaleDelta: CGFloat, inputKinds: GestureInputKinds)](magnifygesture/init(minimumscaledelta:inputkinds:).md)
+  Creates a magnify gesture with a given minimum delta for the gesture to start, and the input kinds the gesture recognizes.
 - [var minimumScaleDelta: CGFloat](magnifygesture/minimumscaledelta.md)
   The minimum required delta before the gesture starts.
 

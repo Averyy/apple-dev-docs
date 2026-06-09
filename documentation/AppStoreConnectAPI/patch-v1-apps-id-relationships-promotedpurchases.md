@@ -1,4 +1,4 @@
-# Modify the Order of a Promoted Purchase for an App
+# Modify the order of a promoted purchase for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,21 +14,21 @@ Update the order of promoted purchases.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](get-v1-apps.md) response.
 
 ## See Also
 
-- [Promote a Purchase](post-v1-promotedpurchases.md)
+- [Promote a purchase](post-v1-promotedpurchases.md)
   Add an existing in-app purchase or auto-renewable subscription to the promoted in-app purchases on an app listing in the App Store.
-- [List All Promoted Purchases for an App](get-v1-apps-_id_-promotedpurchases.md)
+- [List all promoted purchases for an app](get-v1-apps-_id_-promotedpurchases.md)
   Get a list of promoted in-app purchases, including promoted auto-renewable subscriptions, for an app.
-- [List Promoted Purchase IDs for an App](get-v1-apps-_id_-relationships-promotedpurchases.md)
+- [List promoted purchase ids for an app](get-v1-apps-_id_-relationships-promotedpurchases.md)
   Get a list of resource IDs representing promoted purchases for an auto-renewable subscription.
-- [Read Promoted Purchase Information](get-v1-promotedpurchases-_id_.md)
+- [Read promoted purchase information](get-v1-promotedpurchases-_id_.md)
   Get details about a specific promoted in-app purchase.
-- [Modify a Promoted In-App Purchase](patch-v1-promotedpurchases-_id_.md)
+- [Modify a promoted in-app purchase](patch-v1-promotedpurchases-_id_.md)
   Update the visibility of a promoted in-app purchase.
-- [Remove a Promoted Purchase](delete-v1-promotedpurchases-_id_.md)
+- [Remove a promoted purchase](delete-v1-promotedpurchases-_id_.md)
   Remove a promotion for an in-app purchase or auto-renewable subscription from the App Store listing.
 
 

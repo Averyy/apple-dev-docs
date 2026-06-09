@@ -21,6 +21,9 @@ struct ObjectAnchoringSource
 
 ## Topics
 
+### Creating an object anchoring source
+- [init(referenceObject: Data)](anchoringcomponent/objectanchoringsource/init(referenceobject:).md)
+  Creates the object anchoring source by reference object file data.
 ### Initializers
 - [init(URL)](anchoringcomponent/objectanchoringsource/init(_:).md)
   Creates the object anchoring source by reference object file URL.

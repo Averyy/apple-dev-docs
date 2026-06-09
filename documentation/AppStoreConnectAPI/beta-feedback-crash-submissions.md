@@ -26,13 +26,13 @@ Both Team and Individual keys can use these endpoints with the correct role.
 ### Reading and deleting beta feedback crash submissions
 - [List All Beta Feedback Crash Submissions for an App](get-v1-apps-_id_-betafeedbackcrashsubmissions.md)
   Get the beta feedback crash submissions for a specific app.
-- [List All Beta Feedback Crash Submission IDs for an App](get-v1-apps-_id_-relationships-betafeedbackcrashsubmissions.md)
+- [List all beta feedback crash submission ids for an app](get-v1-apps-_id_-relationships-betafeedbackcrashsubmissions.md)
   Get a list of beta feedback crash submissions for a specific app.
 - [Read Beta Feedback Crash Submission Information](get-v1-betafeedbackcrashsubmissions-_id_.md)
   Get information for a specific beta feedback crash submission.
 - [Read the Crash Log for a Beta Feedback Crash Submission](get-v1-betafeedbackcrashsubmissions-_id_-crashlog.md)
   Get crash log information for a specific beta feedback crash submission.
-- [GET /v1/betaFeedbackCrashSubmissions/{id}/relationships/crashLog](get-v1-betafeedbackcrashsubmissions-_id_-relationships-crashlog.md)
+- [Get the crash log ID for a beta feedback crash submission](get-v1-betafeedbackcrashsubmissions-_id_-relationships-crashlog.md)
 - [Delete a Beta Feedback Crash Submission](delete-v1-betafeedbackcrashsubmissions-_id_.md)
   Delete a beta feedback crash submission from your app.
 ### Read beta crash logs
@@ -40,16 +40,17 @@ Both Team and Individual keys can use these endpoints with the correct role.
   Get crash log details for a specific beta feedback crash submission.
 ### Objects
 - [object BetaCrashLog](betacrashlog.md)
+  The crash log details from a TestFlight tester’s device, including the stack trace and metadata captured at the time of the crash.
 - [object BetaCrashLogResponse](betacrashlogresponse.md)
-  A response that contains a single beta crash log response resource.
+  A response containing a single crash log from a TestFlight tester’s device.
 - [object BetaFeedbackCrashSubmission](betafeedbackcrashsubmission.md)
-  The data structure that represents a `BetaFeedbackCrashSubmission` resource.
+  A crash report submitted by a TestFlight beta tester, linked to the build, bundle, and tester that produced it.
 - [object BetaFeedbackCrashSubmissionResponse](betafeedbackcrashsubmissionresponse.md)
-  A response that contains a single `BetaFeedbackCrashSubmissionResponse` resource.
+  A response containing a single crash report submitted by a TestFlight beta tester.
 - [object BetaFeedbackCrashSubmissionsResponse](betafeedbackcrashsubmissionsresponse.md)
-  A response that contains a list of `BetaFeedbackCrashSubmissionsResponse` resources.
+  A response containing a list of crash reports submitted by TestFlight beta testers.
 - [object BetaFeedbackCrashSubmissionCrashLogLinkageResponse](betafeedbackcrashsubmissioncrashloglinkageresponse.md)
-  A response that contains a single beta feedback crash submission crash log linkage response resource.
+  A response containing the resource identifier of the crash log linked to a crash feedback submission.
 - [type DeviceConnectionType](deviceconnectiontype.md)
   A string that represents the ways a device was connected for a specific crash.
 

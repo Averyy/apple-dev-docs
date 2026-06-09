@@ -37,11 +37,6 @@ const route = directions.route({
 });
 ```
 
-## See Also
-
-- [path](route/path.md)
-  An array of coordinate objects representing the path of the route.
-
 
 ---
 

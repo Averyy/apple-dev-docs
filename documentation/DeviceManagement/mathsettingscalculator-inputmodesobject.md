@@ -3,15 +3,13 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The declaration to configure the input modes in the calculator app.
+If present, controls global input options of the calculator. If not present, all input modes are enabled.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -21,19 +19,19 @@ object MathSettingsCalculator_InputModesObject
 
 ## Properties
 
-- `RPN` (boolean) *(required)*: Configures whether RPN input is enabled.
+- `RPN` (boolean) *(required)*: Configures whether RPN input is enabled. Available: macOS 15+
 - `UnitConversion` (boolean) *(required)*: Configures whether unit conversions are enabled.
 
 ## See Also
 
 - [object MathSettingsCalculator_BasicModeObject](mathsettingscalculator_basicmodeobject.md)
-  The declaration to configure basic mode in the calculator app.
+  If present, configures the basic mode of the calculator. Basic mode is always enabled.
 - [object MathSettingsCalculator_MathNotesModeObject](mathsettingscalculator_mathnotesmodeobject.md)
-  The declaration to configure Math Notes in the calculator app.
+  If present, configures the Math Notes mode of the calculator. If not present, Math Notes mode is enabled.
 - [object MathSettingsCalculator_ProgrammerModeObject](mathsettingscalculator_programmermodeobject.md)
-  The declaration to configure programmer mode in the calculator app.
+  If present, configures the programmer mode of the calculator. If not present, programmer mode is enabled.
 - [object MathSettingsCalculator_ScientificModeObject](mathsettingscalculator_scientificmodeobject.md)
-  The declaration to configure scientific mode in the calculator app.
+  If present, configures the scientific mode of the calculator. If not present, scientific mode is enabled.
 
 
 ---

@@ -25,6 +25,8 @@ This property determines the priority of most, but not all, processing work. You
 
 ## See Also
 
+- [let ignoresResourceLimits: Bool](speechanalyzer/options/ignoresresourcelimits.md)
+  A Boolean value that indicates whether this analyzer ignores predefined system resource limits.
 - [let modelRetention: SpeechAnalyzer.Options.ModelRetention](speechanalyzer/options/modelretention-swift.property.md)
   The analyzer’s model caching strategy.
 

@@ -8,6 +8,7 @@ An environment key for the size of a rendered Live Activity.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

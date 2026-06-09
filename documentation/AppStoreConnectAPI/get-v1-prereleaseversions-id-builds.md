@@ -1,4 +1,4 @@
-# List All Builds of a Prerelease Version
+# List all builds of a prerelease version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,7 +19,7 @@ Get a list of builds of a specific prerelease version.
 
 ## See Also
 
-- [GET /v1/preReleaseVersions/{id}/relationships/builds](get-v1-prereleaseversions-_id_-relationships-builds.md)
+- [List build IDs for a prerelease version](get-v1-prereleaseversions-_id_-relationships-builds.md)
 
 
 ---

@@ -17,7 +17,8 @@ Creates a two-column navigation split view.
 ## Declaration
 
 ```swift
-init(@ViewBuilder sidebar: () -> Sidebar, @ViewBuilder detail: () -> Detail) where Content == EmptyView
+nonisolated
+init(@ContentBuilder sidebar: () -> Sidebar, @ContentBuilder detail: () -> Detail) where Content == EmptyView
 ```
 
 ## Mentions

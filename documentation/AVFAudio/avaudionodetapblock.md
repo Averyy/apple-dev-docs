@@ -31,6 +31,8 @@ typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
 
 ## See Also
 
+- [func installAudioTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, tapProvider: (AVReadOnlyAudioPCMBuffer, AVAudioTime) -> Void) throws](avaudionode/installaudiotap(onbus:buffersize:format:tapprovider:).md)
+  Install a tap on a bus using a sendable block
 - [func installTap(onBus: AVAudioNodeBus, bufferSize: AVAudioFrameCount, format: AVAudioFormat?, block: AVAudioNodeTapBlock)](avaudionode/installtap(onbus:buffersize:format:block:).md)
   Installs an audio tap on a bus you specify to record, monitor, and observe the output of the node.
 - [func removeTap(onBus: AVAudioNodeBus)](avaudionode/removetap(onbus:).md)

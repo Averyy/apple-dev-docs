@@ -56,7 +56,7 @@ For more information on running macOS as a guest, see `Creating and Running a ma
   Design and run custom Linux guests on Apple silicon or Intel-based Mac Computers.
 - [Virtualize Linux on a Mac](virtualize-linux-on-a-mac.md)
   Configure and run Linux guests on Apple silicon and Intel-based Mac computers.
-- [Running Intel Binaries in Linux VMs with Rosetta](running-intel-binaries-in-linux-vms-with-rosetta.md)
+- [Running Intel Binaries in Linux VMs](running-intel-binaries-in-linux-vms.md)
   Run x86_64 Linux binaries under ARM Linux on Apple silicon.
 - [Accelerating the performance of Rosetta](accelerating-the-performance-of-rosetta.md)
   Improve Rosetta performance by adding support for the total store ordering (TSO) memory model to your Linux kernel.

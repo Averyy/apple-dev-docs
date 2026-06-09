@@ -36,10 +36,20 @@ Fetches a subset of the attached model type, in a specific order, by sorting on 
   Fetches a subset of the attached model type, in a specific order, by sorting on a nonoptional attribute.
 - [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, animation: Animation)](query(filter:sort:order:animation:)-pb15.md)
   Fetches a subset of the attached model type, in a specific order, by sorting on an optional attribute.
+- [macro Query<Element>(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], animation: Animation, sectionBy: KeyPath<Element, String?>)](query(filter:sort:animation:sectionby:)-1s3xp.md)
+- [macro Query<Element>(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], animation: Animation, sectionBy: KeyPath<Element, String>)](query(filter:sort:animation:sectionby:)-82mot.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, animation: Animation, sectionBy: KeyPath<Element, String>)](query(filter:sort:order:animation:sectionby:)-132tv.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, animation: Animation, sectionBy: KeyPath<Element, String?>)](query(filter:sort:order:animation:sectionby:)-66vd3.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, animation: Animation, sectionBy: KeyPath<Element, String?>)](query(filter:sort:order:animation:sectionby:)-75r20.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, animation: Animation, sectionBy: KeyPath<Element, String>)](query(filter:sort:order:animation:sectionby:)-7o0vo.md)
 - [macro Query<Element>(filter: Predicate<Element>?, sort: [SortDescriptor<Element>], transaction: Transaction?)](query(filter:sort:transaction:).md)
   Fetches and sorts the subset of the attached model type that satisfy the specified predicate.
 - [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, transaction: Transaction?)](query(filter:sort:order:transaction:)-6kkiu.md)
   Fetches a subset of the attached model type, in a specific order, by sorting on a nonoptional attribute.
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, transaction: Transaction?, sectionBy: KeyPath<Element, String>)](query(filter:sort:order:transaction:sectionby:)-3cn7t.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, transaction: Transaction?, sectionBy: KeyPath<Element, String>)](query(filter:sort:order:transaction:sectionby:)-6c6ho.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value?>, order: SortOrder, transaction: Transaction?, sectionBy: KeyPath<Element, String?>)](query(filter:sort:order:transaction:sectionby:)-9mbr6.md)
+- [macro Query<Value, Element>(filter: Predicate<Element>?, sort: KeyPath<Element, Value>, order: SortOrder, transaction: Transaction?, sectionBy: KeyPath<Element, String?>)](query(filter:sort:order:transaction:sectionby:)-i779.md)
 
 
 ---

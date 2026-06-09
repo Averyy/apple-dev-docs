@@ -23,6 +23,8 @@ NSWindow sends this notification only if the value of [`displaysWhenScreenProfil
 
 The notification object is the `NSWindow` object whose profile changed. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidChangeScreenProfileMessage`](nswindow/didchangescreenprofilemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

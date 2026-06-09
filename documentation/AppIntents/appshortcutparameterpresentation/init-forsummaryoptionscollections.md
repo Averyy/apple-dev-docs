@@ -22,7 +22,9 @@ init(for keyPath: ParameterKeyPath, summary: AppShortcutParameterPresentationSum
 
 ## Parameters
 
+- `keyPath`: A `KeyPath` representing the parameter being used in the presentation.
 - `summary`: Represents the summary of the parameter used in the presentation.
+- `optionsCollections`: A closure returning an `AppShortcutOptionsCollectionSpecification` that defines the options available for the parameter used in the presentation.
 
 
 ---

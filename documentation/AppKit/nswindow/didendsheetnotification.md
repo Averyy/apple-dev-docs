@@ -18,6 +18,8 @@ class let didEndSheetNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that contained the sheet. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidEndSheetMessage`](nswindow/didendsheetmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

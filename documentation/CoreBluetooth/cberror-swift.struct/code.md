@@ -54,6 +54,8 @@ enum Code
 - [CBError.Code.unkownDevice](cberror-swift.struct/code/unkowndevice.md)
   A misspelled version of the unknown device error code.
 ### Enumeration Cases
+- [CBError.Code.channelSoundingConfigurationFailed](cberror-swift.struct/code/channelsoundingconfigurationfailed.md)
+- [CBError.Code.channelSoundingProcedureFailed](cberror-swift.struct/code/channelsoundingprocedurefailed.md)
 - [CBError.Code.encryptionTimedOut](cberror-swift.struct/code/encryptiontimedout.md)
 - [CBError.Code.leGattExceededBackgroundNotificationLimit](cberror-swift.struct/code/legattexceededbackgroundnotificationlimit.md)
 - [CBError.Code.leGattNearBackgroundNotificationLimit](cberror-swift.struct/code/legattnearbackgroundnotificationlimit.md)

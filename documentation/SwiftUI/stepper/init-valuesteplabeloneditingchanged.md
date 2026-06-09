@@ -17,7 +17,7 @@ Creates a stepper configured to increment or decrement a binding to a value usin
 
 ```swift
 nonisolated
-init<V>(value: Binding<V>, step: V.Stride = 1, @ViewBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : Strideable
+init<V>(value: Binding<V>, step: V.Stride = 1, @ContentBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : Strideable
 ```
 
 #### Discussion

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of analytics report instance resources.
+The response body for endpoints that list instances of an analytics report.
 
 **Availability**:
 - App Store Connect API 3.4+
@@ -27,29 +27,29 @@ Use this object with [`Read a List of Instances of a Report`](get-v1-analyticsre
 ## See Also
 
 - [object AnalyticsReportRequest](analyticsreportrequest.md)
-  The data structure that represents an analytics report request.
+  A request to generate ongoing analytics reports for an app, specifying the report type and access frequency.
 - [object AnalyticsReportRequestCreateRequest](analyticsreportrequestcreaterequest.md)
   The request body you use to create an analytics report request.
 - [object AnalyticsReportRequestResponse](analyticsreportrequestresponse.md)
-  A response that contains a single analytics report request resource.
+  The response body for endpoints that create or read an analytics report request.
 - [object AnalyticsReportRequestsResponse](analyticsreportrequestsresponse.md)
-  A response that contains a list of analytics report request resources.
+  The response body for endpoints that list analytics report requests for an app.
 - [object AnalyticsReport](analyticsreport.md)
-  The data structure that represents an analytics report.
+  A generated analytics report containing App Store performance data produced from a report request.
 - [object AnalyticsReportResponse](analyticsreportresponse.md)
-  A response that contains a single analytics report resource.
+  The response body for endpoints that read a single analytics report.
 - [object AnalyticsReportsResponse](analyticsreportsresponse.md)
-  A response that contains a list of analytics report resources.
+  The response body for endpoints that list analytics reports for a report request.
 - [object AnalyticsReportInstance](analyticsreportinstance.md)
-  The data structure that represents an analytics report instance.
+  A time-bounded instance of an analytics report, representing data for a specific reporting period.
 - [object AnalyticsReportInstanceResponse](analyticsreportinstanceresponse.md)
-  A response that contains a single analytics report instance resource.
+  The response body for endpoints that read a single analytics report instance.
 - [object AnalyticsReportSegment](analyticsreportsegment.md)
-  The data structure that represents an analytics report segment.
+  A downloadable segment within an analytics report instance, containing a portion of the report’s CSV data.
 - [object AnalyticsReportSegmentResponse](analyticsreportsegmentresponse.md)
-  A response that contains a single analytics report segment resource.
+  The response body for endpoints that read a single downloadable segment of an analytics report.
 - [object AnalyticsReportSegmentsResponse](analyticsreportsegmentsresponse.md)
-  A response that contains a list of analytics report segment resources.
+  The response body for endpoints that list the downloadable segments of an analytics report instance.
 - [object AnalyticsReportInstanceSegmentsLinkagesResponse](analyticsreportinstancesegmentslinkagesresponse.md)
 - [object AnalyticsReportInstancesLinkagesResponse](analyticsreportinstanceslinkagesresponse.md)
 - [object AnalyticsReportRequestReportsLinkagesResponse](analyticsreportrequestreportslinkagesresponse.md)

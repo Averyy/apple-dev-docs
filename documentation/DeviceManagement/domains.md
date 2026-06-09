@@ -11,8 +11,6 @@ The payload that configures the domains under an organization’s management.
 - Mac Catalyst 8.0+
 - macOS 10.10+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -47,10 +45,10 @@ If a domain string contains a port number, the system considers only addresses t
 | Device channel | iOS, macOS, Shared iPad, visionOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -100,11 +98,11 @@ If a domain string contains a port number, the system considers only addresses t
 
 ## Properties
 
-- `CrossSiteTrackingPreventionRelaxedApps` ([string]): An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`. Available in iOS 18 and later and macOS 15 and later.
-- `CrossSiteTrackingPreventionRelaxedDomains` ([string]): An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention. Available in iOS 16.2 and later and macOS 13.1 and later.
-- `EmailDomains` ([string]): An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings. Available in iOS 8 and later and macOS 10.10 and later.
-- `SafariPasswordAutoFillDomains` ([string]): An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself. Supervised devices or Shared iPads need this property to enable saving passwords in Safari. Available in iOS 9.3 and later.
-- `WebDomains` ([string]): An array of domains. The system considers URLs matching the patterns listed in this property managed. Available in iOS 9.3 and later.
+- `CrossSiteTrackingPreventionRelaxedApps` ([string]): An array of up to 10 strings representing app bundle-ids. Apps matching the bundle-ids listed here have relaxed enforcement of cross-site tracking prevention for the domains listed in `CrossSiteTrackingPreventionRelaxedDomains`. Available: iOS 18+ | iPadOS 18+ | macOS 15+ | visionOS 2+
+- `CrossSiteTrackingPreventionRelaxedDomains` ([string]): An array of up to 10 strings. URLs matching the patterns listed here have relaxed enforcement of cross-site tracking prevention. Available: iOS 16.2+ | iPadOS 16.2+ | macOS 13.1+ | visionOS 2+
+- `EmailDomains` ([string]): An array of domains. Mail marks in red all email addresses that lack a suffix matching any of these strings. Available: iOS 8+ | iPadOS 8+ | macOS 10.10+
+- `SafariPasswordAutoFillDomains` ([string]): An array of domains. Users can only save passwords in Safari from URLs matching the patterns listed here. This property doesn’t disable the autofill feature itself. Supervised devices or Shared iPad need this property to enable saving passwords in Safari. Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 2+
+- `WebDomains` ([string]): An array of domains. The system considers URLs matching the patterns listed in this property managed. Available: iOS 8+ | iPadOS 8+ | visionOS 2+
 
 ## See Also
 
@@ -112,7 +110,7 @@ If a domain string contains a port number, the system considers only addresses t
   The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.

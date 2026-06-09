@@ -22,7 +22,7 @@ static var never: ScrollIndicatorVisibility { get }
 
 #### Discussion
 
-This value behaves like [`hidden`](scrollindicatorvisibility/hidden.md), but overrides scrollable views that choose to keep their indidicators visible. When using this value, provide an alternative method of scrolling. The typical horizontal swipe gesture might not be available, depending on the current input device.
+This value behaves like [`hidden`](scrollindicatorvisibility/hidden.md), but overrides scrollable views that choose to keep their indicators visible. When using this value, provide an alternative method of scrolling. The typical horizontal swipe gesture might not be available, depending on the current input device.
 
 ## See Also
 

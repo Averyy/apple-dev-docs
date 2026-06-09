@@ -8,6 +8,7 @@ Creates an object you use to manage Live Activity forwarding for your accessory.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

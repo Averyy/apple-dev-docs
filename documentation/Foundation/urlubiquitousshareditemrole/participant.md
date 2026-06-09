@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+The current user is a participant of this shared item.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
@@ -19,6 +21,7 @@ static let participant: URLUbiquitousSharedItemRole
 ## See Also
 
 - [static let owner: URLUbiquitousSharedItemRole](urlubiquitousshareditemrole/owner.md)
+  The values returned for the `NSURLUbiquitousSharedItemCurrentUserRoleKey`. The current user is the owner of this shared item.
 
 
 ---

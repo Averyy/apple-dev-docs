@@ -8,6 +8,7 @@ Returns the parameters to use to configure the Wi-Fi Aware subscriber and the su
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

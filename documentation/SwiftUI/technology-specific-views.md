@@ -38,6 +38,8 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   A view that displays some web content.
 - [class WebPage](../WebKit/WebPage.md)
   An object that controls and manages the behavior of interactive web content.
+- [func onWebViewImmersiveEnvironmentRequest(shouldAllow: (WebPage.FrameInfo) async -> Bool, present: (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: (WebPage.ImmersiveEnvironment) async -> Void) -> some View](view/onwebviewimmersiveenvironmentrequest(shouldallow:present:dismiss:).md)
+  Manages the lifecycle of immersive environments requested by websites.
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)
   Determines whether horizontal swipe gestures trigger backward and forward page navigation.
 - [func webViewContentBackground(Visibility) -> some View](view/webviewcontentbackground(_:).md)
@@ -81,6 +83,8 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Sets the action on the PayLaterView. See `PKPayLaterAction`.
 - [func payLaterViewDisplayStyle(PayLaterViewDisplayStyle) -> some View](view/paylaterviewdisplaystyle(_:).md)
   Sets the display style on the PayLaterView. See `PKPayLaterDisplayStyle`.
+- [func payWithApplePayButtonDisableCardArt() -> some View](view/paywithapplepaybuttondisablecardart.md)
+  Sets the features that should be allowed to show on the payment buttons.
 - [func payWithApplePayButtonStyle(PayWithApplePayButtonStyle) -> some View](view/paywithapplepaybuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)
@@ -106,6 +110,8 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Presents an activity picker view as a sheet.
 - [func familyActivityPicker(headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(headertext:footertext:ispresented:selection:).md)
   Presents an activity picker view as a sheet.
+- [func familyActivityPicker(title: String?, headerText: String?, footerText: String?, isPresented: Binding<Bool>, selection: Binding<FamilyActivitySelection>) -> some View](view/familyactivitypicker(title:headertext:footertext:ispresented:selection:).md)
+  Present an activity picker sheet for selecting apps and websites to manage.
 ### Reporting on device activity
 - [struct DeviceActivityReport](../DeviceActivity/DeviceActivityReport.md)
   A view that reports the user’s application, category, and web domain activity in a privacy-preserving way.
@@ -169,6 +175,11 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   A `continuityDevicePicker` should be used to discover and connect nearby continuity device through a button interface or other form of activation. On tvOS, this presents a fullscreen continuity device picker experience when selected. The modal view covers as much the screen of `self` as possible when a given condition is true.
 - [func cameraAnchor(isActive: Bool) -> some View](view/cameraanchor(isactive:).md)
   Specifies the view that should act as the virtual camera for Apple Vision Pro 2D Persona stream.
+- [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
+  Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
+### Supporting Group Activities
+- [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View](view/groupactivityassociation(_:).md)
+  Specifies how a view should be associated with the current SharePlay group activity.
 ### Selecting photos
 - [struct PhotosPicker](../PhotosUI/PhotosPicker.md)
   A view that displays a Photos picker for choosing assets from the photo library.
@@ -184,8 +195,39 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Sets the accessory visibility of the Photos picker. Accessories include anything between the content and the edge, like the navigation bar or the sidebar.
 - [func photosPickerDisabledCapabilities(PHPickerCapabilities) -> some View](view/photospickerdisabledcapabilities(_:).md)
   Disables capabilities of the Photos picker.
+- [func photosPickerSearchText(_:)](view/photospickersearchtext(_:).md)
+  Sets search text of the Photos picker.
 - [func photosPickerStyle(PhotosPickerStyle) -> some View](view/photospickerstyle(_:).md)
   Sets the mode of the Photos picker.
+- [func photosPickerMetadataOptions(PHPickerMetadataOptions) -> some View](view/photospickermetadataoptions(_:).md)
+  Sets metadata options for the Photos picker.
+- [func photosSharedAlbumCreationSheet(isPresented: Binding<Bool>, defaultTitle: String?, defaultSharingPolicy: PHSharedAlbumCreationSharingPolicy?, photoLibrary: PHPhotoLibrary, onCompletion: ((PHSharedAlbumCreationResult?) -> Void)?) -> some View](view/photossharedalbumcreationsheet(ispresented:defaulttitle:defaultsharingpolicy:photolibrary:oncompletion:).md)
+  Presents a view for allowing the user to create a new shared album.
+- [func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (() -> Void)?) -> some View](view/photossharedalbumcustomizationsheet(ispresented:albumidentifier:photolibrary:oncompletion:).md)
+  Presents a view for allowing the user to customize a specified shared album.
+- [func photosSharedAlbumPostingSheet(isPresented:items:defaultAlbumIdentifier:photoLibrary:completion:)](view/photossharedalbumpostingsheet(ispresented:items:defaultalbumidentifier:photolibrary:completion:).md)
+  Presents an “Add to Shared Album” sheet that allows the user to post the given items to a shared album.
+### Generating images
+- [func imagePlaygroundGenerationStyle(ImagePlaygroundStyle, in: [ImagePlaygroundStyle]) -> some View](view/imageplaygroundgenerationstyle(_:in:).md)
+  Sets the selected and allowed styles to use when displaying the image generation sheet.
+- [func imagePlaygroundOptions(ImagePlaygroundOptions) -> some View](view/imageplaygroundoptions(_:).md)
+  Sets the options to use when generating an image.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:oncancellation:).md)
+  Presents the system sheet to create an image using the specified string and optional starting image.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimage:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+  Presents the system sheet to create images from the specified input.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:oncancellation:).md)
+  Presents the system sheet to create an image using the specified string and image URL.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concept:sourceimageurl:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+  Presents the system sheet to create an image or Genmoji using the specified string and image URL.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:oncancellation:).md)
+  Presents the system sheet to create an image using one or more concepts and an optional starting image.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimage:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+  Presents the system sheet to create an image or Genmoji using one or more concepts and an optional starting image.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:oncancellation:).md)
+  Presents the system sheet to create an image using one or more concepts and an image URL.
+- [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onAdaptiveImageGlyphCreation: (NSAdaptiveImageGlyph) -> Void, onCancellation: (() -> Void)?) -> some View](view/imageplaygroundsheet(ispresented:concepts:sourceimageurl:oncompletion:onadaptiveimageglyphcreation:oncancellation:).md)
+  Presents the system sheet to create an image or Genmoji using one or more concepts and an image URL.
 ### Previewing content
 - [func quickLookPreview(Binding<URL?>) -> some View](view/quicklookpreview(_:).md)
   Presents a Quick Look preview of the contents of a single URL.
@@ -211,8 +253,10 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 - [func manageSubscriptionsSheet(isPresented: Binding<Bool>) -> some View](view/managesubscriptionssheet(ispresented:).md)
 - [func refundRequestSheet(for: Transaction.ID, isPresented: Binding<Bool>, onDismiss: ((Result<Transaction.RefundRequestStatus, Transaction.RefundRequestError>) -> ())?) -> some View](view/refundrequestsheet(for:ispresented:ondismiss:).md)
   Display the refund request sheet for the given transaction.
-- [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
+- [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View](view/offercoderedemption(options:ispresented:oncompletion:).md)
   Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
+- [func musicPicker(isPresented:title:selection:)](view/musicpicker(ispresented:title:selection:).md)
+  Presents a music picker to select items from the Apple Music catalog and the user’s music library.
 - [func musicSubscriptionOffer(isPresented: Binding<Bool>, options: MusicSubscriptionOffer.Options, onLoadCompletion: ((any Error)?) -> Void) -> some View](view/musicsubscriptionoffer(ispresented:options:onloadcompletion:).md)
   Initiates the process of presenting a sheet with subscription offers for Apple Music when the `isPresented` binding is `true`.
 - [func currentEntitlementTask(for: String, priority: TaskPriority, action: (EntitlementTaskState<VerificationResult<Transaction>?>) async -> ()) -> some View](view/currententitlementtask(for:priority:action:).md)
@@ -264,10 +308,16 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   Adds an action to perform when a person uses the sign-in button on a subscription store view within a view.
 - [func subscriptionStoreControlBackground(_:)](view/subscriptionstorecontrolbackground(_:).md)
   Set a standard effect to use for the background of subscription store view controls within the view.
-- [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View](view/subscriptionpromotionaloffer(offer:signature:).md)
+- [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, compactJWS: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> String) -> some View](view/subscriptionpromotionaloffer(offer:compactjws:).md)
   Selects a promotional offer to apply to a purchase a customer makes from a subscription store view.
+- [func subscriptionIntroductoryOffer(applyOffer: (Product, Product.SubscriptionInfo) -> Bool, compactJWS: (Product, Product.SubscriptionInfo) async throws -> String) -> some View](view/subscriptionintroductoryoffer(applyoffer:compactjws:).md)
+  Selects the introductory offer eligibility preference to apply to a purchase a customer makes from a subscription store view.
+- [func subscriptionOfferViewButtonVisibility(Visibility, for: SubscriptionOfferViewButtonKind...) -> some View](view/subscriptionofferviewbuttonvisibility(_:for:).md)
+- [func subscriptionOfferViewDetailAction((() -> ())?) -> some View](view/subscriptionofferviewdetailaction(_:).md)
+- [func subscriptionOfferViewStyle(some SubscriptionOfferViewStyle) -> some View](view/subscriptionofferviewstyle(_:).md)
 - [func preferredSubscriptionOffer((Product, Product.SubscriptionInfo, [Product.SubscriptionOffer]) -> Product.SubscriptionOffer?) -> some View](view/preferredsubscriptionoffer(_:).md)
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
+- [func preferredSubscriptionPricingTerms((Product, SubscriptionInfo) -> SubscriptionInfo.PricingTerms?) -> some View](view/preferredsubscriptionpricingterms(_:).md)
 ### Accessing health data
 - [func healthDataAccessRequest(store: HKHealthStore, objectType: HKObjectType, predicate: NSPredicate?, trigger: some Equatable, completion: (Result<Bool, any Error>) -> Void) -> some View](view/healthdataaccessrequest(store:objecttype:predicate:trigger:completion:).md)
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
@@ -280,8 +330,16 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 ### Providing tips
 - [func popoverTip((any Tip)?, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:arrowedge:action:).md)
   Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdge: Edge?, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedge:action:).md)
+  Presents a popover tip on the modified view.
+- [func popoverTip((any Tip)?, isPresented: Binding<Bool>?, attachmentAnchor: PopoverAttachmentAnchor, arrowEdges: Edge.Set, action: (Tips.Action) -> Void) -> some View](view/popovertip(_:ispresented:attachmentanchor:arrowedges:action:).md)
+  Presents a popover tip on the modified view.
+- [func tipAnchor<AnchorID>(AnchorID) -> some View](view/tipanchor(_:).md)
+  Sets a value for the specified tip anchor to be used to anchor a tip view to the `.bounds` of the view.
 - [func tipBackground<S>(S) -> some View](view/tipbackground(_:).md)
-  Sets the tip’s view background to a style. Currently this only applies to inline tips, not popover tips.
+  Sets the tip’s view background to a style.
+- [func tipBackgroundInteraction(PresentationBackgroundInteraction) -> some View](view/tipbackgroundinteraction(_:).md)
+  Controls whether people can interact with the view behind a presented tip.
 - [func tipCornerRadius(CGFloat, antialiased: Bool) -> some View](view/tipcornerradius(_:antialiased:).md)
   Sets the corner radius for an inline tip view.
 - [func tipImageSize(CGSize) -> some View](view/tipimagesize(_:).md)
@@ -306,11 +364,16 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
 ### Presenting journaling suggestions
 - [func journalingSuggestionsPicker(isPresented: Binding<Bool>, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:oncompletion:).md)
   Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
+- [func journalingSuggestionsPicker(isPresented: Binding<Bool>, journalingSuggestionToken: JournalingSuggestionPresentationToken?, onCompletion: (JournalingSuggestion) async -> Void) -> some View](view/journalingsuggestionspicker(ispresented:journalingsuggestiontoken:oncompletion:).md)
+  Presents a visual picker interface that contains events and images that a person can select to retrieve more information.
 ### Managing contact access
 - [func contactAccessButtonCaption(ContactAccessButton.Caption) -> some View](view/contactaccessbuttoncaption(_:).md)
 - [func contactAccessButtonStyle(ContactAccessButton.Style) -> some View](view/contactaccessbuttonstyle(_:).md)
 - [func contactAccessPicker(isPresented: Binding<Bool>, completionHandler: ([String]) -> Void) -> some View](view/contactaccesspicker(ispresented:completionhandler:).md)
   Modally present UI which allows the user to select which contacts your app has access to.
+### Syncing game saves
+- [func gameSaveSyncingAlert(directory: Binding<GameSaveSyncedDirectory?>, finishedLoading: () -> Void) -> some View](view/gamesavesyncingalert(directory:finishedloading:).md)
+  Presents a modal view while the game synced directory loads.
 ### Handling game controller events
 - [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](view/handlesgamecontrollerevents(matching:).md)
   Specifies the game controllers events which should be delivered through the GameController framework when the view, or one of its descendants has focus.
@@ -324,6 +387,8 @@ For design guidance, see [`Technologies`](https://developer.apple.com/design/Hum
   The camera controls for the reality view.
 - [func realityViewCameraControls(CameraControls) -> some View](view/realityviewcameracontrols(_:).md)
   Adds gestures that control the position and direction of a virtual camera.
+- [func realityViewLayoutBehavior(RealityViewLayoutOption) -> some View](view/realityviewlayoutbehavior(_:).md)
+  A view modifier that controls the frame sizing and content alignment behavior for `RealityView`
 ### Interacting with transactions
 - [func transactionPicker(isPresented: Binding<Bool>, selection: Binding<[Transaction]>) -> some View](view/transactionpicker(ispresented:selection:).md)
   Presents a picker that selects a collection of transactions.

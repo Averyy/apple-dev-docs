@@ -11,25 +11,26 @@ The `bundleIdCapabilities` resource represents capabilities that you can enable 
 ## Topics
 
 ### Enabling and Disabling Capabilities
-- [Enable a Capability](post-v1-bundleidcapabilities.md)
+- [Enable a capability](post-v1-bundleidcapabilities.md)
   Enable a capability for a bundle ID.
-- [Disable a Capability](delete-v1-bundleidcapabilities-_id_.md)
+- [Disable a capability](delete-v1-bundleidcapabilities-_id_.md)
   Disable a capability for a bundle ID.
 ### Updating Capabiities
-- [Modify a Capability Configuration](patch-v1-bundleidcapabilities-_id_.md)
+- [Modify a capability configuration](patch-v1-bundleidcapabilities-_id_.md)
   Update the configuration of a specific capability.
 ### Object and Data Types
 - [object BundleIdCapability](bundleidcapability.md)
-  The data structure that represents a Bundle ID Capabilities resource.
+  An entitlement or service (such as Push Notifications or In-App Purchases) enabled for a registered bundle ID.
 - [object BundleIdCapabilityCreateRequest](bundleidcapabilitycreaterequest.md)
   The request body you use to create a Bundle ID Capability.
 - [object BundleIdCapabilityUpdateRequest](bundleidcapabilityupdaterequest.md)
   The request body you use to update a Bundle ID Capability.
 - [object BundleIdCapabilityResponse](bundleidcapabilityresponse.md)
-  A response that contains a single Bundle ID Capabilities resource.
+  The response body for endpoints that enable or modify a capability for a bundle ID.
 - [object BundleIdCapabilitiesResponse](bundleidcapabilitiesresponse.md)
-  A response that contains a list of Bundle ID Capability resources.
+  The response body for endpoints that list capabilities enabled for a bundle ID.
 - [object BundleIdCapabilitiesWithoutIncludesResponse](bundleidcapabilitieswithoutincludesresponse.md)
+  A response containing a list of bundle ID capabilities, without related resources.
 - [object CapabilityOption](capabilityoption.md)
   An option within a capability setting.
 - [object CapabilitySetting](capabilitysetting.md)

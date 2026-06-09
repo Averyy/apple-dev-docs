@@ -46,6 +46,10 @@ For information about configuring views, see [`View configuration`](view-configu
   Layers the specified style in front of this view.
 - [func overlay<S, T>(S, in: T, fillStyle: FillStyle) -> some View](view/overlay(_:in:fillstyle:).md)
   Layers a shape that you specify in front of this view.
+- [func spatialOverlay<V>(alignment: Alignment3D, content: () -> V) -> some View](view/spatialoverlay(alignment:content:).md)
+  Adds secondary views within the 3D bounds of this view.
+- [func spatialOverlayPreferenceValue<K, V>(K.Type, alignment: Alignment3D, (K.Value) -> V) -> some View](view/spatialoverlaypreferencevalue(_:alignment:_:).md)
+  Uses the specified preference value from the view to produce another view occupying the same 3D space of the first view.
 ### Background elements
 - [func background<V>(alignment: Alignment, content: () -> V) -> some View](view/background(alignment:content:).md)
   Layers the views that you specify behind this view.
@@ -69,8 +73,19 @@ For information about configuring views, see [`View configuration`](view-configu
   Sets the container background of the enclosing container using a view.
 - [func glassBackgroundEffect(displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(displaymode:).md)
   Fills the view’s background with an automatic glass background effect and container-relative rounded rectangle shape.
+- [func glassBackgroundEffect<S>(S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:displaymode:).md)
+  Fills the view’s background with a custom glass background effect and container-relative rounded rectangle shape.
 - [func glassBackgroundEffect<S>(in: S, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(in:displaymode:).md)
   Fills the view’s background with an automatic glass background effect and a shape that you specify.
+- [func glassBackgroundEffect<T, S>(S, in: T, displayMode: GlassBackgroundDisplayMode) -> some View](view/glassbackgroundeffect(_:in:displaymode:).md)
+  Fills the view’s background with a custom glass background effect and a shape that you specify.
+- [func backgroundExtensionEffect() -> some View](view/backgroundextensioneffect.md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
+- [func backgroundExtensionEffect(isEnabled: Bool) -> some View](view/backgroundextensioneffect(isenabled:).md)
+  Adds the background extension effect to the view. The view will be duplicated into mirrored copies which will be placed around the view on any edge with available safe area. Additionally, a blur effect will be applied on top to blur out the copies.
+### Passthrough
+- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+  Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 ### Control configuration
 - [func defaultWheelPickerItemHeight(CGFloat) -> some View](view/defaultwheelpickeritemheight(_:).md)
   Sets the default wheel-style picker item height.
@@ -116,23 +131,30 @@ For information about configuring views, see [`View configuration`](view-configu
   Removes any reason to apply a redaction to this view hierarchy.
 - [func invalidatableContent(Bool) -> some View](view/invalidatablecontent(_:).md)
   Mark the receiver as their content might be invalidated.
+- [func contentCaptureProtected(Bool) -> some View](view/contentcaptureprotected(_:).md)
 ### Visibility
 - [func hidden() -> some View](view/hidden.md)
   Hides this view unconditionally.
 - [func labelsHidden() -> some View](view/labelshidden.md)
   Hides the labels of any controls contained within this view.
+- [func labelsVisibility(Visibility) -> some View](view/labelsvisibility(_:).md)
+  Controls the visibility of labels of any controls contained within this view.
 - [func menuIndicator(Visibility) -> some View](view/menuindicator(_:).md)
   Sets the menu indicator visibility for controls within this view.
 - [func listRowSeparator(Visibility, edges: VerticalEdge.Set) -> some View](view/listrowseparator(_:edges:).md)
   Sets the display mode for the separator associated with this specific row.
 - [func listSectionSeparator(Visibility, edges: VerticalEdge.Set) -> some View](view/listsectionseparator(_:edges:).md)
   Sets whether to hide the separator associated with a list section.
+- [func listSectionIndexVisibility(Visibility) -> some View](view/listsectionindexvisibility(_:).md)
+  Changes the visibility of the list section index.
 - [func persistentSystemOverlays(Visibility) -> some View](view/persistentsystemoverlays(_:).md)
   Sets the preferred visibility of the non-transient system views overlaying the app.
 - [func scrollIndicators(ScrollIndicatorVisibility, axes: Axis.Set) -> some View](view/scrollindicators(_:axes:).md)
   Sets the visibility of scroll indicators within this view.
 - [func scrollClipDisabled(Bool) -> some View](view/scrollclipdisabled(_:).md)
   Sets whether a scroll view clips its content to its bounds.
+- [func sliderThumbVisibility(Visibility) -> some View](view/sliderthumbvisibility(_:).md)
+  Sets the thumb visibility for `Slider`s within this view.
 - [func tableColumnHeaders(Visibility) -> some View](view/tablecolumnheaders(_:).md)
   Controls the visibility of a `Table`’s column header views.
 - [func upperLimbVisibility(Visibility) -> some View](view/upperlimbvisibility(_:).md)
@@ -159,15 +181,25 @@ For information about configuring views, see [`View configuration`](view-configu
   Specifies the vertical placement for a view of an expanded Live Activity that appears in the Dynamic Island.
 - [func accessoryWidgetGroupStyle(AccessoryWidgetGroupStyle) -> some View](view/accessorywidgetgroupstyle(_:).md)
   The view modifier that can be applied to `AccessoryWidgetGroup` to specify the shape the three content views will be masked with. The value of `style` is set to `.automatic`, which is `.circular` by default.
+- [func controlWidgetActionHint(_:)](view/controlwidgetactionhint(_:).md)
+  The action hint of the control described by the modified label.
+- [func controlWidgetStatus(_:)](view/controlwidgetstatus(_:).md)
+  The status of the control described by the modified label.
 ### Window behaviors
 - [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
   Configures the dismiss functionality for the window enclosing `self`.
 - [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
   Configures the full screen functionality for the window enclosing `self`.
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+  Configures the visibility of the window toolbar when the window enters full screen mode.
 - [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
   Configures the minimize functionality for the window enclosing `self`.
+- [func windowResizeAnchor(UnitPoint?) -> some View](view/windowresizeanchor(_:).md)
+  Sets the window anchor point used when the size of the view changes such that the window must resize.
 - [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
   Configures the resize functionality for the window enclosing `self`.
+- [func preferredWindowClippingMargins(_:_:)](view/preferredwindowclippingmargins(_:_:).md)
+  Requests additional margins for drawing beyond the bounds of the window.
 
 ## See Also
 

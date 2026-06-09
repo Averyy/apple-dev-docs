@@ -22,6 +22,7 @@ optional func applicationDidEnterBackground(_ application: UIApplication)
 
 - [About the background execution sequence](about-the-background-execution-sequence.md)
 - [Extending your app’s background execution time](extending-your-app-s-background-execution-time.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Discussion
 

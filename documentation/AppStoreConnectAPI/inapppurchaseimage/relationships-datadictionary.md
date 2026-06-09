@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the relationships of a subscription image resource.
+The relationships for an in-app purchase image, linking it to its associated in-app purchase.
 
 **Availability**:
 - App Store Connect API 3.6+

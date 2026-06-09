@@ -33,8 +33,12 @@ Use the `for`-`await`-`in` syntax to iterate over the bytes in this sequence. Fo
   An asychronous sequence of Unicode scalar values.
 - [struct AsyncLineSequence](asynclinesequence.md)
   An asynchronous sequence of lines of text.
+### Creating an Iterator
+- [func makeAsyncIterator() -> FileHandle.AsyncBytes.Iterator](filehandle/asyncbytes/makeasynciterator.md)
+  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 ### Structures
 - [FileHandle.AsyncBytes.Iterator](filehandle/asyncbytes/iterator.md)
+  An iterator that produces the bytes of a file handle.
 
 ## Relationships
 

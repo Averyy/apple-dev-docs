@@ -20,10 +20,6 @@ The app intent conforms to the schema for sending an email draft.
 var sendDraft: some AssistantSchemas.Intent { get }
 ```
 
-## Mentions
-
-- [Making email actions available to Siri and Apple Intelligence](making-email-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.mail.sendDraft` schema:
@@ -43,7 +39,7 @@ struct SendDraftIntent: AppIntent {
 }
 ```
 
-For more information about the `.mail` app intent domain, see [`Making email actions available to Siri and Apple Intelligence`](making-email-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
+For more information about the `.mail` app intent domain, see doc:Making-email-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

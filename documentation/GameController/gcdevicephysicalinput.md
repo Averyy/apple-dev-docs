@@ -46,6 +46,9 @@ You can safely call this protocol’s methods and access its properties from any
 ### Changing the callback dispatch queue
 - [var queue: dispatch_queue_t?](gcdevicephysicalinput/queue.md)
   The dispatch queue that the system uses for callbacks.
+### Instance Methods
+- [func inputState(forSpatialAccessoryAnchorTimestamp: TimeInterval) -> (any GCDevicePhysicalInputState)?](gcdevicephysicalinput/inputstate(forspatialaccessoryanchortimestamp:).md)
+  Returns the buffered input state that best aligns with the provided spatial accessory anchor timestamp.
 
 ## Relationships
 

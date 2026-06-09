@@ -8,6 +8,7 @@ An error code for the start of the range of reserved error codes.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- macOS 27.0+ (Beta)
 - visionOS 2.4+
 
 ## Declaration

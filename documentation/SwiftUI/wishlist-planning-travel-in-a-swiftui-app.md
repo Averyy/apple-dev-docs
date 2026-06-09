@@ -5,10 +5,10 @@
 Build a travel planning app that organizes trips into collections and tracks activity completion.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
-- Xcode 26.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- Xcode 27.0+ (Beta)
 
 #### Overview
 
@@ -248,6 +248,17 @@ The `@Namespace` property wrapper creates a unique identifier space that SwiftUI
 Each `TripCard` in the trip collection receives `matchedTransitionSource(id:in:)` with the trip’s ID as the identifier. When someone taps a card, SwiftUI captures its position, size, and corner radius as the transition’s starting point. The trip detail view applies `navigationTransition(.zoom(sourceID:in:))` with the matching identifier, declaring itself as the zoom target. SwiftUI interpolates between the two geometries, seamlessly morphing one into the other.
 
 Check out WWDC24 session [`10145: Enhance your UI animations and transitions`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10145/) to explore how to adopt the zoom transition in navigation and presentations in your app.
+
+## See Also
+
+- [Declaring a custom view](declaring-a-custom-view.md)
+  Define views and assemble them into a view hierarchy.
+- [protocol View](view.md)
+  A type that represents part of your app’s user interface and provides modifiers that you use to configure views.
+- [typealias ContentBuilder](contentbuilder.md)
+  A custom parameter attribute that constructs views and other content types from closures.
+- [struct ViewBuilder](viewbuilder.md)
+  A custom parameter attribute that constructs views from closures.
 
 
 ---

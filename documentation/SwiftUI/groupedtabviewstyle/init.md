@@ -9,6 +9,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

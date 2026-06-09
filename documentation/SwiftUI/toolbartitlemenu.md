@@ -17,6 +17,7 @@ The title menu of a toolbar.
 ## Declaration
 
 ```swift
+nonisolated
 struct ToolbarTitleMenu<Content> where Content : View
 ```
 

@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-subscript(x: (UnboundedRange_) -> ()) -> Self.SubSequence { get set }
+subscript(x: UnboundedRange) -> Self.SubSequence { get set }
 ```
 
 ## See Also

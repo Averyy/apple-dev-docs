@@ -1,4 +1,4 @@
-# Read the App Store Review Details of an App Clip
+# Read the app store review details of an app clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Get App Store Review details for an App Clip.
 
 ## Parameters
 
-- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each App Clip App Store Review Details resource returned by the response.
+- `fields[appClipAppStoreReviewDetails]` ([string]): Additional fields to include for each app clip App Store review detail resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `fields[appClipDefaultExperiences]` ([string])
 
 ## See Also
 
-- [Create App Store Review Details for an App Clip](post-v1-appclipappstorereviewdetails.md)
+- [Create app store review details for an app clip](post-v1-appclipappstorereviewdetails.md)
   Provide App Clip metadata required by App Store Review.
-- [Modify App Store Review Details for an App Clip](patch-v1-appclipappstorereviewdetails-_id_.md)
+- [Modify app store review details for an app clip](patch-v1-appclipappstorereviewdetails-_id_.md)
   Update App Clip metadata you provide to App Store Review.
 
 

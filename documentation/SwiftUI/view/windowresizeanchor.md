@@ -65,6 +65,21 @@ The default anchor varies by scene type and is used when `anchor` is nil. Genera
 
 - `anchor`: The window point fixed under programmatic size changes caused by the content size of the window changing. Defaults to a system defined value when `nil`.
 
+## See Also
+
+- [func windowDismissBehavior(WindowInteractionBehavior) -> some View](view/windowdismissbehavior(_:).md)
+  Configures the dismiss functionality for the window enclosing `self`.
+- [func windowFullScreenBehavior(WindowInteractionBehavior) -> some View](view/windowfullscreenbehavior(_:).md)
+  Configures the full screen functionality for the window enclosing `self`.
+- [func windowToolbarFullScreenVisibility(WindowToolbarFullScreenVisibility) -> some View](view/windowtoolbarfullscreenvisibility(_:).md)
+  Configures the visibility of the window toolbar when the window enters full screen mode.
+- [func windowMinimizeBehavior(WindowInteractionBehavior) -> some View](view/windowminimizebehavior(_:).md)
+  Configures the minimize functionality for the window enclosing `self`.
+- [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
+  Configures the resize functionality for the window enclosing `self`.
+- [func preferredWindowClippingMargins(_:_:)](view/preferredwindowclippingmargins(_:_:).md)
+  Requests additional margins for drawing beyond the bounds of the window.
+
 
 ---
 

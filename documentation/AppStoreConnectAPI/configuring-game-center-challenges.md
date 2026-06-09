@@ -18,12 +18,7 @@ Before you begin creating your challenges, you need these items:
 
 ##### Create the Challenge
 
-Begin creating the challenge by using the [`Create a Challenge`](post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload:
-
-- **`referenceName`**: A 40 character or less alphanumeric string.
-- **`vendorIdentifier`**: A reverse url scheme label for this challenge.
-- **`challengeType`**: This value is always the string `leaderboard`.
-- **`allowedDurations`**: Use all 3 values for this attribute. If the related leaderboard is reoccurring, omit this attribute.
+Begin creating the challenge by using the [`Create a Challenge`](post-v1-gamecenterchallenges.md) endpoint. Provide these attributes in your payload: -`referenceName`: A 40 character or less alphanumeric string. -`vendorIdentifier`: A reverse url scheme label for this challenge. -`challengeType`: This value is always the string `leaderboard`. -`allowedDurations`: Use all 3 values for this attribute. If the related leaderboard is reoccurring, omit this attribute.
 
 Additionally provide:
 
@@ -64,7 +59,7 @@ When you create a challenge you use a payload like this:
 }
 ```
 
-In the response you get an `id` in the top-level data object. This `id` represents the Game Center challenge. You can find this `id` at anytime using [`Read the Challenges for a Game Center Detail`](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md).
+In the response you get an `id` in the top-level data object. This `id` represents the Game Center challenge. You can find this `id` at anytime using [`Read the challenges for a game center detail`](get-v1-gamecenterdetails-_id_-gamecenterchallenges.md).
 
 ##### Create the Challenge Version
 
@@ -163,7 +158,7 @@ To learn more uploading images, see [`Uploading Assets to App Store Connect`](up
 
 > **Note**: One localization and a default image are required for submission.
 
-Now, you’re ready to submit your challenge version for review. Use [`Add a Challenge Version Release`](post-v1-gamecenterchallengeversionreleases.md) to attach your challenge version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the State of Game Center for an App`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated challenge version to app review.
+Now, you’re ready to submit your challenge version for review. Use [`Add a Challenge Version Release`](post-v1-gamecenterchallengeversionreleases.md) to attach your challenge version to a `gameCenterDetail`. To find the `gameCenterDetail` id, use [`Read the state of game center for an app`](get-v1-apps-_id_-gamecenterdetail.md). Then, use [`Create a Review Submission`](post-v1-reviewsubmissions.md) to send the `appStoreVersion`, and your associated challenge version to app review.
 
 Use a payload like this:
 
@@ -189,7 +184,7 @@ Use a payload like this:
 }
 ```
 
-> 💡 **Tip**: You can read a list of the past challenge version releases and their states using [`Get Challenge Releases for a Game Center Detail`](get-v1-gamecenterdetails-_id_-challengereleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center challenge version that is currently `LIVE`.
+> 💡 **Tip**: You can read a list of the past challenge version releases and their states using [`Get challenge releases for a game center detail`](get-v1-gamecenterdetails-_id_-challengereleases.md). Use the optional include `version` to get more details and to read the `id` of the Game Center challenge version that is currently `LIVE`.
 
 ## See Also
 

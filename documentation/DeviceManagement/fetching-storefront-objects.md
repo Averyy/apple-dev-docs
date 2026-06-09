@@ -29,14 +29,8 @@ GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=200135
 
 ## See Also
 
-- [Generating developer tokens](generating-developer-tokens.md)
-  Create a JSON Web Token to authorize your requests to the Apps and Books for Organizations API.
-- [Handling requests and responses](handling-requests-and-responses.md)
-  Write a request for app or book metadata and handle responses from the API.
 - [Fetching resources with extended attributes](fetching-resources-with-extended-attributes.md)
   Specify additional attributes for the API to include in a response.
-- [Common Objects](common-objects.md)
-  Understand the common JSON objects that framework responses contain.
 
 
 ---

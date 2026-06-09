@@ -237,6 +237,8 @@ func formatIntroDates() {
 - [Date.FormatStyle.TimeStyle](date/formatstyle/timestyle.md)
   Type that defines time styles varied in length or components included.
 ### Modifying a Date Format Style
+- [func locale(Locale) -> Date.FormatStyle](date/formatstyle/locale(_:).md)
+  Modifies the date format style to use the specified locale.
 - [var timeZone: TimeZone](date/formatstyle/timezone.md)
   The time zone to use when formatting the date and time components.
 - [var calendar: Calendar](date/formatstyle/calendar.md)
@@ -250,7 +252,14 @@ func formatIntroDates() {
   An attributed format style created from the date format style.
 - [struct AttributedStyle](date/attributedstyle.md)
   A structure that creates a locale-appropriate attributed string representation of a date instance.
+### Applying a Format Style
+- [func format(Date) -> String](date/formatstyle/format(_:).md)
+  Creates a locale-aware string representation from a date value.
 ### Parsing Dates
+- [func parse(String) throws -> Date](date/formatstyle/parse(_:).md)
+  Parses a string into a date.
+- [var parseStrategy: Date.FormatStyle](date/formatstyle/parsestrategy.md)
+  The strategy used to parse a string into a date.
 - [struct ParseStrategy](date/parsestrategy.md)
   Options for parsing string representations of dates to create a `Date` instance.
 ### Comparing Date Format Styles
@@ -265,6 +274,12 @@ func formatIntroDates() {
 ### Instance Properties
 - [var attributedStyle: Date.FormatStyle.Attributed](date/formatstyle/attributedstyle.md)
   Return the type preserving attributed variant of this style.
+### Default Implementations
+- [CustomConsumingRegexComponent Implementations](date/formatstyle/customconsumingregexcomponent-implementations.md)
+- [FormatStyle Implementations](date/formatstyle/formatstyle-implementations.md)
+- [ParseStrategy Implementations](date/formatstyle/parsestrategy-implementations.md)
+- [ParseableFormatStyle Implementations](date/formatstyle/parseableformatstyle-implementations.md)
+- [RegexComponent Implementations](date/formatstyle/regexcomponent-implementations.md)
 
 ## Relationships
 

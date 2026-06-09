@@ -46,6 +46,7 @@ case largeHall2
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
 - [AVAudioUnitReverbPreset.mediumHall3](avaudiounitreverbpreset/mediumhall3.md)
   A preset that represents a reverb with the acoustic characteristics of an alternative medium-sized hall environment.
+- [AVAudioUnitReverbPreset.outdoorGeneral](avaudiounitreverbpreset/outdoorgeneral.md)
 
 
 ---

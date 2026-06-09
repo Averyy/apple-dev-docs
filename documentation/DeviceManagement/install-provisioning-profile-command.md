@@ -13,12 +13,10 @@ Install a provisioning profile on a device.
 - tvOS 10.2+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
-- [Installing Profiles on Devices](installing-profiles-on-devices.md)
+- [Installing provisioning profiles on devices](installing-provisioning-profiles-on-devices.md)
 
 #### Discussion
 
@@ -31,8 +29,8 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
-| User channel | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowProvisioningInstallationRemoval |
 
@@ -136,7 +134,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InstallProvisioningProfileCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

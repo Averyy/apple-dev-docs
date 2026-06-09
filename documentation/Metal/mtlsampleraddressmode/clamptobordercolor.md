@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-Out-of-range texture coordinates return the value specified by the [`borderColor`](mtlsamplerdescriptor/bordercolor.md) property.
+An address mode that returns the sampler’s border color.
 
 **Availability**:
 - iOS 14.0+
@@ -18,6 +18,10 @@ Out-of-range texture coordinates return the value specified by the [`borderColor
 ```swift
 case clampToBorderColor
 ```
+
+#### Discussion
+
+You can configure the sampler’s border color by setting the [`borderColor`](mtlsamplerdescriptor/bordercolor.md) property in the [`MTLSamplerDescriptor`](mtlsamplerdescriptor.md) instance that creates the sampler.
 
 ## See Also
 

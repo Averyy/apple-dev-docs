@@ -8,6 +8,7 @@ Types of text that a data scanner recognizes.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration
@@ -56,7 +57,6 @@ let dataScanner = DataScannerViewController(recognizedDataTypes: recognizedDataT
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

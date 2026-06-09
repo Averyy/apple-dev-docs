@@ -101,8 +101,9 @@ As you create or adapt a game for Apple platforms, learn how to integrate the fu
 [Create games for Apple platforms](https://developer.apple.com/games/)
 
 #### Videos
+- [Bringing Cyberpunk 2077 to Mac](https://developer.apple.com/videos/play/wwdc2026/356) - Go behind the scenes and learn from CD PROJEKT RED how Cyberpunk 2077 came to Mac, setting a new standard for AAA gaming on macOS. Explore how the team leveraged Apple’s robust hardware, software, and development tools to bring this high-fidelity experience to life. Learn how you can apply similar techniques to your games. Find out how the innovative ‘For this Mac’ preset automatically optimizes graphical settings to balance visual fidelity and frame rate across the Mac lineup.
+- [Design no-code games with Reality Composer Pro 3](https://developer.apple.com/videos/play/wwdc2026/252) - Discover how you can use ScriptGraph in Reality Composer Pro 3 to create no-code 3D content for your apps and games. Learn how to take advantage of visual nodes to build animations, create interactive moments, and incorporate SwiftUI elements to add speech bubbles and other UI to your experience.
 - [Level up your games](https://developer.apple.com/videos/play/wwdc2025/209) - Learn how to make your games shine on the unified gaming platform. We’ll give you a map of the technologies you can use to level up your game and further improve your player experience. Get an overview of the fundamental tools essential to build, debug, and profile your game. 
-- [Design advanced games for Apple platforms](https://developer.apple.com/videos/play/wwdc2024/10085) - Learn how to adapt your high-end game so it feels at home on Mac, iPad, and iPhone. We’ll go over how to make your game look stunning on different displays, tailor your input and controls to be intuitive on each device, and take advantage of Apple technologies that deliver great player experiences.
 
 ## Change log
 | Date | Changes |

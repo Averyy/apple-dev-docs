@@ -7,8 +7,6 @@ Information about a status error.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,7 +18,7 @@ object StatusPackageListStatusReasonObject
 
 ### Objects
 - [object StatusPackageListStatusReason_DetailsObject](statuspackageliststatusreason_detailsobject.md)
-  A dictionary that contains further details about this error.
+  A dictionary that contains additional details about the state.
 
 ## Properties
 

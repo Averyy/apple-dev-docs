@@ -11,10 +11,8 @@ A dictionary of custom properties to use with the URL template.
 ## Declaration
 
 ```swift
-get data(): {
-        [key: string]: any;
-    };
-set data(data: { [key: string]: any });
+get data(): Record<string, any>;
+set data(data: Record<string, any>);
 ```
 
 #### Discussion
@@ -41,8 +39,8 @@ map.addTileOverlay(customOverlay);
 
 ## See Also
 
-- [urlTemplate](tileoverlay/urltemplate.md)
-  A string, or callback function that returns a string, with a URL that provides the requested tile.
+- [imageForTile](tileoverlay/imagefortile.md)
+  A string, or callback function, that provides the requested tile.
 - [reload()](tileoverlay/reload.md)
   Reloads the tile overlay for the displayed map region with the latest data values.
 

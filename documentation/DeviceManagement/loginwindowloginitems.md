@@ -7,8 +7,6 @@ The payload that configures login behavior.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,12 +23,12 @@ Specify `loginwindow` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -70,7 +68,7 @@ Specify `loginwindow` as the payload type.
 
 ## Properties
 
-- `DisableLoginItemsSuppression` (boolean): If `true`, the system prevents the user from disabling login item launches by using the Shift key.
+- `DisableLoginItemsSuppression` (boolean): If `true`, the system prevents the user from disabling login item launches by using the Shift key. Available: macOS all+
 
 ## See Also
 

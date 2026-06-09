@@ -13,8 +13,6 @@ A collection of the client’s processed declarations.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,7 +24,7 @@ object StatusManagementDeclarationsDeclarationsObject
 
 ### Objects
 - [object StatusManagementDeclarationsDeclarationObject](statusmanagementdeclarationsdeclarationobject.md)
-  A processed declaration for the client.
+  Status for a declaration processed by the client.
 
 ## Properties
 

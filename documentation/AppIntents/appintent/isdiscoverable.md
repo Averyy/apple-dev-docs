@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A boolean value that determines whether system features such as Shortcuts and Spotlight can discover this app intent.
+A Boolean value that indicates whether system features can discover this app intent.
 
 **Availability**:
 - iOS 17.0+
@@ -21,20 +21,22 @@ A boolean value that determines whether system features such as Shortcuts and Sp
 static var isDiscoverable: Bool { get }
 ```
 
+## Mentions
+
+- [Creating your first app intent](creating-your-first-app-intent.md)
+
 #### Discussion
 
-App Intents must be discoverable to support App Shortcuts. If your app intent isn’t discoverable, people can use it only when it’s directly connected by a button in a SwiftUI app or a widget.
+When the value of this property is `true`, system features like Siri, Spotlight, and the Shortcuts app can discover and use the app intent. When the value of the property is `false`, you can run the intent from your app’s interface or from a widget, but system features can’t access it. The default value of this property is `true`.
 
-This property is `true` by default.
+> **Note**: App Shortcuts require this property to be `true` for the app intents they use.
 
 ## See Also
 
 - [static var title: LocalizedStringResource](appintent/title.md)
-  A short, localized, human-readable string that describes the app intent using a verb and a noun in title case.
+  A short, localized, human-readable string that conveys the app intent’s action.
 - [static var description: IntentDescription?](appintent/description.md)
-  A description of the app intent that the system shows to people.
-- [static var openAppWhenRun: Bool](appintent/openappwhenrun.md)
-  A boolean property that tells the system to consider the app intent even if its app is not in the foreground.
+  A localized string that describes what the app intent does.
 
 
 ---

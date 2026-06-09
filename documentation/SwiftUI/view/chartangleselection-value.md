@@ -25,6 +25,8 @@ func chartAngleSelection<P>(value: Binding<P?>) -> some View where P : Plottable
 - [func chartXSelection<P>(value: Binding<P?>) -> some View](view/chartxselection(value:).md)
 - [func chartYSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartyselection(range:).md)
 - [func chartYSelection<P>(value: Binding<P?>) -> some View](view/chartyselection(value:).md)
+- [func chartZSelection<P>(range: Binding<ClosedRange<P>?>) -> some View](view/chartzselection(range:).md)
+- [func chartZSelection<P>(value: Binding<P?>) -> some View](view/chartzselection(value:).md)
 
 
 ---

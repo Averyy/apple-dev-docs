@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Beta App Review Detail resources.
+A response containing a list of beta app review detail records.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -23,15 +23,16 @@ object BetaAppReviewDetailsResponse
 
 ## See Also
 
-- [List Beta App Review Details](get-v1-betaappreviewdetails.md)
+- [List beta app review details](get-v1-betaappreviewdetails.md)
   Find and list beta app review details for all apps.
 - [object BetaAppReviewDetail](betaappreviewdetail.md)
-  The data structure that represents a Beta App Review Details resource.
+  Contact information and demo credentials provided to App Store reviewers for beta app review.
 - [object BetaAppReviewDetailUpdateRequest](betaappreviewdetailupdaterequest.md)
   The request body you use to update a Beta App Review Detail.
 - [object BetaAppReviewDetailResponse](betaappreviewdetailresponse.md)
-  A response that contains a single Beta App Review Details resource.
+  The response body for endpoints that read or modify the beta review contact and demo details for an app.
 - [object BetaAppReviewDetailWithoutIncludesResponse](betaappreviewdetailwithoutincludesresponse.md)
+  A response containing a single beta app review detail, without related resources.
 - [object AppBetaTestersLinkagesRequest](appbetatesterslinkagesrequest.md)
   A request body you use to remove beta testers from an app.
 - [object BetaAppReviewDetailAppLinkageResponse](betaappreviewdetailapplinkageresponse.md)

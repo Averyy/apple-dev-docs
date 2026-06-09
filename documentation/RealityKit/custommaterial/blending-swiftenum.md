@@ -29,6 +29,12 @@ enum Blending
 - [case transparent(opacity: CustomMaterial.Opacity)](custommaterial/blending-swift.enum/transparent(opacity:).md)
   A transparent or translucent surface.
 
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Hashable](../Swift/Hashable.md)
+
 ## See Also
 
 - [CustomMaterial.Custom](custommaterial/custom-swift.struct.md)

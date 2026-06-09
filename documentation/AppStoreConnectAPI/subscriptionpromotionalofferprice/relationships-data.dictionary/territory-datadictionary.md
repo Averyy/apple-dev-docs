@@ -16,6 +16,7 @@ object SubscriptionPromotionalOfferPrice.Relationships.Territory
 
 ### Objects
 - [object SubscriptionPromotionalOfferPrice.Relationships.Territory.Data](subscriptionpromotionalofferprice/relationships-data.dictionary/territory-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription promotional offer price.
 
 ## Properties
 

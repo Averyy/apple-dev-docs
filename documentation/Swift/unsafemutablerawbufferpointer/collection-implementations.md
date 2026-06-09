@@ -67,7 +67,7 @@
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](unsafemutablerawbufferpointer/subscript(_:)-392pf.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-4al8k.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-4al8k.md)
 - [subscript<R>(R) -> Self.SubSequence](unsafemutablerawbufferpointer/subscript(_:)-4h7rb.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 ### Type Aliases

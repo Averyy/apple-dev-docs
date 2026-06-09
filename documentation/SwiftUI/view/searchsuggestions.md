@@ -18,7 +18,7 @@ Configures the search suggestions for this view.
 
 ```swift
 nonisolated
-func searchSuggestions<S>(@ViewBuilder _ suggestions: () -> S) -> some View where S : View
+func searchSuggestions<S>(@ContentBuilder _ suggestions: () -> S) -> some View where S : View
 ```
 
 ## Mentions
@@ -65,7 +65,7 @@ For more information about using search modifiers, see [`Adding a search interfa
 
 ## Parameters
 
-- `suggestions`: A view builder that produces content that populates a list of suggestions.
+- `suggestions`: A content builder that produces content that populates a list of suggestions.
 
 ## See Also
 

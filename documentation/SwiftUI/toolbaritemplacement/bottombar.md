@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Places the item in the bottom toolbar.
+A placement for items in the bottom toolbar.
 
 **Availability**:
 - iOS 14.0+
@@ -26,13 +26,15 @@ On tvOS, this applies only within the sidebar of a [`NavigationSplitView`](navig
 ## See Also
 
 - [static var topBarLeading: ToolbarItemPlacement](toolbaritemplacement/topbarleading.md)
-  Places the item in the leading edge of the top bar.
+  A placement for items in the leading edge of the top bar.
 - [static var topBarTrailing: ToolbarItemPlacement](toolbaritemplacement/topbartrailing.md)
-  Places the item in the trailing edge of the top bar.
+  A placement for items in the trailing edge of the top bar.
+- [static let topBarPinnedTrailing: ToolbarItemPlacement](toolbaritemplacement/topbarpinnedtrailing.md)
+  A placement that pins the item to the trailing edge of the toolbar.
 - [static let bottomOrnament: ToolbarItemPlacement](toolbaritemplacement/bottomornament.md)
-  Places the item in an ornament under the window.
+  A placement for items in an ornament under the window.
 - [static let keyboard: ToolbarItemPlacement](toolbaritemplacement/keyboard.md)
-  The item is placed in the keyboard section.
+  A placement for items in the keyboard section.
 - [static func accessoryBar<ID>(id: ID) -> ToolbarItemPlacement](toolbaritemplacement/accessorybar(id:).md)
   Creates a unique accessory bar placement.
 

@@ -40,6 +40,8 @@ To apply this style to a picker, or to a view that contains pickers, use the [`p
   A picker style that presents the options as a group of radio buttons.
 - [static var segmented: SegmentedPickerStyle](pickerstyle/segmented.md)
   A picker style that presents the options in a segmented control.
+- [static var tabs: TabsPickerStyle](pickerstyle/tabs.md)
+  A picker style that presents options as segmented tabs.
 
 
 ---

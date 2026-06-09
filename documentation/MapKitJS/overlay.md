@@ -11,7 +11,7 @@ An abstract base object that defines the methods and properties for map overlays
 ## Declaration
 
 ```swift
-abstract class Overlay extends MapKitEventTarget
+abstract class Overlay extends EventTarget
 ```
 
 ## Mentions
@@ -41,7 +41,7 @@ Overlays inherit from an abstract base object, [`Overlay`](overlay.md), and shar
 ## Relationships
 
 ### Inherits From
-- [MapKitEventTarget](mapkiteventtarget.md)
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 ### Inherited By
 - [CircleOverlay](circleoverlay.md)
 - [PolygonOverlay](polygonoverlay.md)

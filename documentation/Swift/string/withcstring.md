@@ -17,7 +17,7 @@ Calls the given closure with a pointer to the contents of the string, represente
 ## Declaration
 
 ```swift
-func withCString<Result>(_ body: (UnsafePointer<Int8>) throws -> Result) rethrows -> Result
+func withCString<Result, E>(_ body: (UnsafePointer<Int8>) throws(E) -> Result) throws(E) -> Result where E : Error
 ```
 
 #### Return Value
@@ -36,7 +36,7 @@ The pointer passed as an argument to `body` is valid only during the execution o
 
 - [var utf8CString: ContiguousArray<CChar>](string/utf8cstring.md)
   A contiguously stored null-terminated UTF-8 representation of the string.
-- [func withCString<Result, TargetEncoding>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws -> Result) rethrows -> Result](string/withcstring(encodedas:_:).md)
+- [func withCString<Result, TargetEncoding, E>(encodedAs: TargetEncoding.Type, (UnsafePointer<TargetEncoding.CodeUnit>) throws(E) -> Result) throws(E) -> Result](string/withcstring(encodedas:_:).md)
   Calls the given closure with a pointer to the contents of the string, represented as a null-terminated sequence of code units.
 
 

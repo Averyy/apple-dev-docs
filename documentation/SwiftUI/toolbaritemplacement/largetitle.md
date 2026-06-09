@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Places the item in the title area of the navigation bar.
+A placement for items in the navigation bar’s title area.
 
 **Availability**:
 - iOS 26.0+
@@ -18,7 +18,7 @@ static let largeTitle: ToolbarItemPlacement
 
 #### Discussion
 
-The view will be shown when the navigation bar renders its title out-of-line, and takes precedence over the value provided to the `View.navigationTitle(_:)` modifier.
+The view appears when the navigation bar renders its title out-of-line, and takes precedence over the value provided to the `View.navigationTitle(_:)` modifier.
 
 ```swift
 struct ContentView: View {

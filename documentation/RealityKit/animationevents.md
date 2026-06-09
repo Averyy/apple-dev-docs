@@ -59,6 +59,9 @@ entitySubscription = view.scene.publisher(for:
 ### Recognizing skeletal events
 - [AnimationEvents.SkeletalPoseUpdateComplete](animationevents/skeletalposeupdatecomplete.md)
   Raised immediately after the SkeletalPoseSystem has been updated.
+### Recognizing root motion events
+- [AnimationEvents.RootMotionDidUpdate](animationevents/rootmotiondidupdate.md)
+  Fired each frame when the animation graph produces a root motion delta for an entity.
 
 ## See Also
 

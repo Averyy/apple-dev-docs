@@ -56,6 +56,10 @@ To customize the mirror representation of a custom type, add conformance to the 
   Creates a mirror representing the given subject with unlabeled children.
 - [init(reflecting: Any)](mirror/init(reflecting:).md)
   Creates a mirror that reflects on the given instance.
+- [init(reflectingForTest: some Any)](mirror/init(reflectingfortest:)-5t8yc.md)
+  Initialize this instance so that it can be presented in a test’s output.
+- [init(reflectingForTest: some CustomTestReflectable)](mirror/init(reflectingfortest:)-6nh7d.md)
+  Initialize this instance so that it can be presented in a test’s output.
 ### Instance Properties
 - [let children: Mirror.Children](mirror/children-swift.property.md)
   A collection of `Child` elements describing the structure of the reflected subject.

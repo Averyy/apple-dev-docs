@@ -33,7 +33,6 @@ The initialized toolbar object.
 
 - [var identifier: NSToolbar.Identifier](nstoolbar/identifier-swift.property.md)
   The value you use to identify the toolbar in your app.
-- [Toolbar Programming Topics for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Toolbars/Toolbars.html#//apple_ref/doc/uid/10000109i)
 - [convenience init()](nstoolbar/init.md)
   Creates a new toolbar with an empty identifier string.
 

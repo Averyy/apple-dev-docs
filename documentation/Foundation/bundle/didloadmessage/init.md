@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message that indicates a bundle dynamically loaded a class.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An identifier for a message about a bundle dynamically loading a class.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -17,6 +19,10 @@
 ```swift
 static var didLoad: NotificationCenter.BaseMessageIdentifier<Bundle.DidLoadMessage> { get }
 ```
+
+#### Discussion
+
+Use this identifier with [`NotificationCenter`](notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`Bundle.DidLoadMessage`](bundle/didloadmessage.md).
 
 
 ---

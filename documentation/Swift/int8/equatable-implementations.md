@@ -7,7 +7,7 @@
 ### Operators
 - [static func != (Self, Self) -> Bool](int8/!=(_:_:)-2hjuz.md)
   Returns a Boolean value indicating whether two values are not equal.
-- [static func != (Self, Self) -> Bool](int8/!=(_:_:)-7isjt.md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](int8/!=(_:_:)-pxzn.md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Self, Self) -> Bool](int8/==(_:_:)-1h8wx.md)
   Returns a Boolean value indicating whether two values are equal.

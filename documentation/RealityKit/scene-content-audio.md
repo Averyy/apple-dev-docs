@@ -57,6 +57,8 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
 - [struct ReverbComponent](reverbcomponent.md)
   A component that defines the reverberation of spatial audio sources.
 ### Audio mixing
+- [Mixing spatial music](mixing-spatial-music.md)
+  Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
 - [struct AudioMixGroup](audiomixgroup.md)
   A group that manages the playback properties of multiple playing sounds.
 - [struct AudioMixGroupsComponent](audiomixgroupscomponent.md)
@@ -70,6 +72,10 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
   The radiation pattern of sound emitted from an entity.
 - [Audio.DistanceAttenuation](audio/distanceattenuation.md)
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
+### Acoustics and group playback
+- [class ReverbMeshResource](reverbmeshresource.md)
+- [class AudioPlaybackGroupController](audioplaybackgroupcontroller.md)
+  A controller that manages synchronized playback for a group of audio resources.
 
 ## See Also
 
@@ -101,6 +107,8 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
   Present videos in your RealityKit experiences.
 - [Images](scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 
 ---

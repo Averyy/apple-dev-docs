@@ -9,7 +9,6 @@ Errors that can occur during a room-capture session.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 
@@ -43,7 +42,6 @@ The `error` argument of a room-capture session delgate’s  [`captureSession(_:d
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

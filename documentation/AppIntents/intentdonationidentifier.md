@@ -20,6 +20,10 @@ An opaque type that identifies a specific donation to the system.
 struct IntentDonationIdentifier
 ```
 
+#### Overview
+
+When you donate an app intent, the system returns a unique `IntentDonationIdentifier` instance so you can refer to that donation later. Use that instance to identify the donation later, and to delete it using an [`IntentDonationManager`](intentdonationmanager.md) if the action no longer applies.
+
 ## Relationships
 
 ### Conforms To
@@ -33,9 +37,9 @@ struct IntentDonationIdentifier
 ## See Also
 
 - [struct IntentDonationManager](intentdonationmanager.md)
-  A type you use to donate intents to the system, or delete intents when they become irrelevant.
+  A type you use to teach the system about the actions people take using your app.
 - [struct IntentDonationMatchingPredicate](intentdonationmatchingpredicate.md)
-  The match conditions that identify a set of previously donated app intents.
+  A type you use to specify previously donated app intents.
 
 
 ---

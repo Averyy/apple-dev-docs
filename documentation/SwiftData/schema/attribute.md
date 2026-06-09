@@ -35,6 +35,8 @@ class Attribute
 - [var hashModifier: String?](schema/attribute/hashmodifier.md)
 ### Structures
 - [Schema.Attribute.Option](schema/attribute/option.md)
+### Instance Properties
+- [var isCodable: Bool](schema/attribute/iscodable.md)
 
 ## Relationships
 

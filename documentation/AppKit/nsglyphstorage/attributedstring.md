@@ -21,7 +21,8 @@ The receiver’s text storage object.
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSGlyphGenerator](nsglyphgenerator.md)
+  An object that performs the initial, nominal glyph generation phase in the layout process.
 
 
 ---

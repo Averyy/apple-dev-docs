@@ -10,8 +10,6 @@ The profile that configures web clips on the device.
 - iPadOS 4.0+
 - Mac Catalyst 4.0+
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -38,8 +36,8 @@ For Shared iPad devices, the system supports this payload on the user channel on
 | Device channel | iOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad |
 
@@ -91,13 +89,13 @@ For Shared iPad devices, the system supports this payload on the user channel on
 
 ## Properties
 
-- `FullScreen` (boolean): If `true`, the system launches the web clip as a full-screen web app.
+- `FullScreen` (boolean): If `true`, the system launches the web clip as a full-screen web app. Available: iOS 4+ | iPadOS 4+
 - `Icon` (data): The PNG icon to show on the Home Screen. If not set, the system displays a white square. For best results, provide a square image that’s no larger than 400 x 400 pixels and less than 1 MB when uncompressed. The graphics file is automatically scaled and cropped to fit, if necessary, and converted to PNG format. Web clip icons are 144 x 144 pixels for iPad devices with a Retina display, and 114 x 114 pixels for iPhone devices. To prevent the device from adding a shine to the image, set `Precomposed` to `true`.
-- `IgnoreManifestScope` (boolean): If `true`, a full screen web clip can navigate to an external web site without showing Safari UI. Otherwise, Safari UI appears when navigating away from the web clip’s URL. This key has no effect when `FullScreen` is `false`. Available in iOS 14 and later.
-- `IsRemovable` (boolean): If `true`, the system enables removing the web clip.
+- `IgnoreManifestScope` (boolean): If `true`, a full screen web clip can navigate to an external web site without showing Safari UI. Otherwise, Safari UI appears when navigating away from the web clip’s URL. This key has no effect when `FullScreen` is `false`. Available: iOS 14+ | iPadOS 14+
+- `IsRemovable` (boolean): If `true`, the system enables removing the web clip. Available: iOS 4+ | iPadOS 4+
 - `Label` (string) *(required)*: The name of the web clip that the system displays on the Home Screen.
-- `Precomposed` (boolean): If `true`, the system prevents SpringBoard from adding shine to the icon.
-- `TargetApplicationBundleIdentifier` (string): The application bundle identifier of the application that opens the URL. To use this property, install the profile through MDM. Available in iOS 14 and later.
+- `Precomposed` (boolean): If `true`, the system prevents SpringBoard from adding shine to the icon. Available: iOS 4+ | iPadOS 4+
+- `TargetApplicationBundleIdentifier` (string): The application bundle identifier of the application that opens the URL. To use this property, install the profile through MDM. Available: iOS 14+ | iPadOS 14+
 - `URL` (string) *(required)*: The URL of the web clip.
 
 ## See Also

@@ -51,6 +51,8 @@ Each joint consists of two pins, each of which belongs to a different entity. Ea
   Simulate physical interactions between entities or systems.
 - [Force effects](physics-force-effects.md)
   Control the movement of virtual objects with forces.
+- [Cloth simulation](physics-cloth-simulation.md)
+  Add fabric, soft surfaces, and draping materials that bend, fold, and respond to forces and contact in your 3D scenes.
 
 
 ---

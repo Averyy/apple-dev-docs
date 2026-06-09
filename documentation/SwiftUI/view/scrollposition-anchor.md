@@ -36,7 +36,7 @@ You can create a scroll position with a specified view identity type
     = ScrollPosition(idType: MyItem.ID.self)
 ```
 
-SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the `View/scrollTargetLayout()` modifier to configure which the layout that contains your scroll targets.
+SwiftUI will use that along with the views in the scroll view’s scroll target layout to programmatically scroll to those views and to update the [`viewID`](scrollposition/viewid.md) property as the user scrolls. Use the [`scrollTargetLayout(isEnabled:)`](view/scrolltargetlayout(isenabled:).md) modifier to configure which the layout that contains your scroll targets.
 
 When scrolling to a view with an identifier, SwiftUI will update the position with the value of the top-most view scrolled within the visible region of the scroll view.
 

@@ -23,6 +23,15 @@ static var reservedLocales: [Locale] { get async }
 
 Before you can subscribe to assets supporting a module, you must reserve those assets’ locales. Please note, the locales returned by this method may be variants of the locales provided to [`reserve(locale:)`](assetinventory/reserve(locale:).md).
 
+## See Also
+
+- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+  Add an asset locale to the app’s current reservations.
+- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+  Removes an asset locale reservation.
+- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+  The number of locale reservations permitted to an app.
+
 
 ---
 

@@ -5,10 +5,6 @@
 
 Get a list of the declarations available on the server.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Topics
 
 ### Response
@@ -17,7 +13,7 @@ Get a list of the declarations available on the server.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/checkin#declaration-items`
+`PUT https://yourmdmhost.example.com/checkin`
 
 ## See Also
 

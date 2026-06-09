@@ -25,10 +25,6 @@ Produces the given warning message during compilation.
 
 Compilation proceeds after emitting the message as a nonfatal warning.
 
-## Parameters
-
-- `warning`: The diagnostic message.
-
 ## See Also
 
 - [macro error(String)](error(_:).md)

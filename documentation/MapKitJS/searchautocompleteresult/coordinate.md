@@ -11,12 +11,12 @@ The coordinate of the result when it corresponds to a single place.
 ## Declaration
 
 ```swift
-coordinate?: Coordinate;
+coordinate: Coordinate | null;
 ```
 
 #### Discussion
 
-The coordinate may not be available for all results, and can return `undefined`. The coordinate is an approximate location.
+The coordinate may not be available for all results, and can return `null`. The coordinate is an approximate location.
 
 ## See Also
 

@@ -37,14 +37,14 @@ For more information about how to use Leaderboard sets in your app, see [`Config
   List information about leaderboards and leaderboard sets in a group leaderboard set.
 - [List All Localizations for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-localizations.md)
   Get a list of localized metadata for a leaderboard set.
-- [GET /v1/gameCenterLeaderboardSets/{id}/relationships/localizations](get-v1-gamecenterleaderboardsets-_id_-relationships-localizations.md)
+- [List localization IDs for a Game Center leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-localizations.md)
 - [Read the Leaderboards in a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   List all leaderboards in a leaderboard set.
 - [Read the Group Leaderboard Set in a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
   List all the group leaderboard sets in a leaderboard set.
 - [List Releases for a Leaderboard Set](get-v1-gamecenterleaderboardsets-_id_-releases.md)
   Read the state of releases for a leaderboard set and related information.
-- [GET /v1/gameCenterLeaderboardSets/{id}/relationships/releases](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard set](get-v1-gamecenterleaderboardsets-_id_-relationships-releases.md)
 ### Creating, editing, and deleting leaderboard sets
 - [Create a Game Center Leaderboard Set](post-v2-gamecenterleaderboardsets.md)
   Create a Game Center leaderboard set.
@@ -64,12 +64,12 @@ For more information about how to use Leaderboard sets in your app, see [`Config
   Add a leaderboard to a leaderboard set.
 - [Edit a Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_.md)
   Modify the metadata for a leaderboard set.
-- [Modify the Leaderboards in Leaderboard Set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
+- [Modify the leaderboards in a leaderboard set](patch-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Edit the positions of leaderboards in an existing leaderboard set.
-- [Edit the Releationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
+- [Edit the relationship between a leaderboard and a group leaderboard](patch-v1-gamecenterleaderboardsets-_id_-relationships-groupleaderboardset.md)
   Modify the group leaderboards in a leaderboard set.
 - [Delete a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_.md)
-  Delete a specifc leaderboard set.
+  Delete a specific leaderboard set.
 - [Delete the Relationship Between a Leaderboard and a Leaderboard Set](delete-v1-gamecenterleaderboardsets-_id_-relationships-gamecenterleaderboards.md)
   Remove a leaderboard from a leaderboard set.
 ### Objects
@@ -102,11 +102,11 @@ For more information about how to use Leaderboard sets in your app, see [`Config
 - [object GameCenterLeaderboardSetGroupLeaderboardSetLinkageResponse](gamecenterleaderboardsetgroupleaderboardsetlinkageresponse.md)
   A response that confirms a relationship between a leaderboard set and a group leaderboard set.
 - [object GameCenterLeaderboardSetResponse](gamecenterleaderboardsetresponse.md)
-  A response that contains a single leaderboard set resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard set.
 - [object GameCenterLeaderboardSetUpdateRequest](gamecenterleaderboardsetupdaterequest.md)
   The request body you use to update a leaderboard set.
 - [object GameCenterLeaderboardSetsResponse](gamecenterleaderboardsetsresponse.md)
-  A response that contains multiple leaderboard set resources.
+  The response body for endpoints that list Game Center leaderboard sets.
 - [object GameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponse](gamecenterleaderboardsetlocalizationgamecenterleaderboardsetimagelinkageresponse.md)
 - [object GameCenterLeaderboardSetLocalizationsLinkagesResponse](gamecenterleaderboardsetlocalizationslinkagesresponse.md)
 

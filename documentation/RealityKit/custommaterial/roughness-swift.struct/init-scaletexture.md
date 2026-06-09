@@ -26,7 +26,7 @@ The `roughness` property represents how much the surface of the entity scatters 
 
 ![An illustration showing three spheres with different amounts of](https://docs-assets.developer.apple.com/published/6bca90ebd0a4a4a329474aaf179c551a/CustomMaterial-Roughness-swift-struct-init%28scale%3Atexture%3A%29-1%402x.png)
 
-The following code demonstrates creating a roughness object using this initalizer:
+The following code demonstrates creating a roughness object using this initializer:
 
 ```swift
 if let roughnessResource = try? TextureResource.load(named:

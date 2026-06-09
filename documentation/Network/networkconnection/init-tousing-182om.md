@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: init
 
-Create a new connection to an endpoint, with protocol stack.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

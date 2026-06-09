@@ -30,7 +30,7 @@ Read information for a specific alternative distribution domain.
 
 ## Parameters
 
-- `fields[alternativeDistributionDomains]` ([string])
+- `fields[alternativeDistributionDomains]` ([string]): Additional fields to include for each alternative distribution domains resource returned by the response.
 
 ## See Also
 

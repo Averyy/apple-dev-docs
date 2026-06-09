@@ -1,4 +1,4 @@
-# Modify a Build Beta Detail
+# Modify a build beta detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

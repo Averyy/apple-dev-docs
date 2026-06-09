@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response confirming the submission of an in-app purchase for App Store review.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -21,7 +23,9 @@ object InAppPurchaseSubmissionResponse
 ## See Also
 
 - [object InAppPurchaseSubmissionCreateRequest](inapppurchasesubmissioncreaterequest.md)
+  The request body you use to create an in-app purchase submission.
 - [object InAppPurchaseSubmission](inapppurchasesubmission.md)
+  A submission of an in-app purchase to App Store review, triggering the review process for that item.
 
 
 ---

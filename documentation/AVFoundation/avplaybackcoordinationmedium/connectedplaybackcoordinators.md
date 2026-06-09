@@ -6,13 +6,12 @@
 All playback coordinators that are connected to the coordination medium.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The version of PaperKit supported.
+The PaperKit version the feature set supports.
 
 **Availability**:
 - iOS 26.0+
@@ -17,6 +17,19 @@ The version of PaperKit supported.
 ```swift
 var contentVersion: FeatureSet.ContentVersion
 ```
+
+## See Also
+
+- [var features: Set<FeatureSet.Feature>](featureset/features.md)
+  The supported features.
+- [var shapes: Set<ShapeConfiguration.Shape>](featureset/shapes.md)
+  The supported shape types.
+- [var inks: Set<PKInkingTool.InkType>](featureset/inks.md)
+  The supported ink types.
+- [var lineMarkerPositions: FeatureSet.LineMarkerPositions](featureset/linemarkerpositions-swift.property.md)
+  The allowed ends of line for arrows.
+- [var colorMaximumLinearExposure: CGFloat](featureset/colormaximumlinearexposure.md)
+  The maximum exposure to allow for choosing colors.
 
 
 ---

@@ -8,6 +8,7 @@ The measured transmit latency per access category that is in use with the remote
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

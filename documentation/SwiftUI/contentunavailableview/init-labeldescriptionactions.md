@@ -17,7 +17,8 @@ Creates an interface, consisting of a label and additional content, that you dis
 ## Declaration
 
 ```swift
-init(@ViewBuilder label: () -> Label, @ViewBuilder description: () -> Description = { EmptyView() }, @ViewBuilder actions: () -> Actions = { EmptyView() })
+nonisolated
+init(@ContentBuilder label: () -> Label, @ContentBuilder description: () -> Description = { EmptyView() }, @ContentBuilder actions: () -> Actions = { EmptyView() })
 ```
 
 ## Parameters

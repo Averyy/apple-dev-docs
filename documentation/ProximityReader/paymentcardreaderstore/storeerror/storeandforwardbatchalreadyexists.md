@@ -9,7 +9,6 @@ An error that indicates that a previous batch exists in the store and needs to b
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

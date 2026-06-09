@@ -6,6 +6,9 @@
 Called when the local player selects a challenge banner displayed by GameKit.
 
 **Availability**:
+- iOS 6.0+
+- iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.8+
 - visionOS 1.0+
 

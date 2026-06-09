@@ -17,7 +17,7 @@ Fetches the user identity for the specified email address.
 ## Declaration
 
 ```swift
-func userIdentity(forEmailAddress email: String) async throws -> CKUserIdentity?
+func discoverUserIdentity(withEmailAddress email: String, completionHandler: @escaping @Sendable (CKUserIdentity?, (any Error)?) -> Void)
 ```
 
 #### Discussion

@@ -56,6 +56,8 @@ This framework refers to the USB Implementers Forum (USB-IF) *Universal Serial B
 - [IOUSBHost Constants](iousbhost-constants.md)
 - [IOUSBHost Functions](iousbhost-functions.md)
 - [IOUSBHost Data Types](iousbhost-data-types.md)
+### Structures
+- [struct IOUSBHostObjectDataOptions](iousbhostobjectdataoptions.md)
 ### Variables
 - [var IOUSBHostCIDeviceSpeedOther: IOUSBHostCIDeviceSpeed](iousbhostcidevicespeedother.md)
 

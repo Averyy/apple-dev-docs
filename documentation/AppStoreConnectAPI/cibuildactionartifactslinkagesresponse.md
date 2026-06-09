@@ -26,15 +26,15 @@ object CiBuildActionArtifactsLinkagesResponse
 ## See Also
 
 - [object CiBuildAction](cibuildaction.md)
-  The data structure that represents a Build Actions resource.
+  The execution result of a specific action step within an Xcode Cloud build run, including its status and issues.
 - [object CiArtifactsResponse](ciartifactsresponse.md)
-  A response that contains a list of Artifacts resources.
+  The response body for endpoints that list artifacts produced by an Xcode Cloud build action.
 - [object CiBuildActionResponse](cibuildactionresponse.md)
-  A response that contains a single Build Actions resource.
+  The response body for endpoints that read a single Xcode Cloud build action.
 - [object CiIssuesResponse](ciissuesresponse.md)
-  A response that contains a list of Issues resources.
+  The response body for endpoints that list issues from an Xcode Cloud build action.
 - [object CiTestResultsResponse](citestresultsresponse.md)
-  A response that contains a list of Test Results resources.
+  The response body for endpoints that list test results from an Xcode Cloud build action.
 - [object CiBuildActionBuildRunLinkageResponse](cibuildactionbuildrunlinkageresponse.md)
 - [object CiBuildActionIssuesLinkagesResponse](cibuildactionissueslinkagesresponse.md)
 - [object CiBuildActionTestResultsLinkagesResponse](cibuildactiontestresultslinkagesresponse.md)

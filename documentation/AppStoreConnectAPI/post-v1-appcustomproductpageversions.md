@@ -20,7 +20,8 @@ Add a version for your app custom product page.
   List the versions for a custom product page version.
 - [List Custom Product Pages Localizations](get-v1-appcustomproductpageversions-_id_-appcustomproductpagelocalizations.md)
   List all localizations for an app custom product page.
-- [GET /v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+- [List localization IDs for a custom product page version](get-v1-appcustomproductpageversions-_id_-relationships-appcustomproductpagelocalizations.md)
+  Get a list of localization IDs for a specific custom product page version.
 - [Modify a Custom Product Page Version](patch-v1-appcustomproductpageversions-_id_.md)
   Update the name and visibility status of an app custom product page.
 

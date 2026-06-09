@@ -1,4 +1,4 @@
-# Add a Marketplace Search Detail Url
+# Add a marketplace search detail url
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -69,12 +69,12 @@ POST https://api.appstoreconnect.apple.com/v1/marketplaceSearchDetails
 
 - [Building a searchable catalog for your marketplace app for inclusion in Spotlight](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md)
   Set up and build your alternative marketplace’s searchable index.
-- [Read the Marketplace Search Detail Url](get-v1-apps-_id_-marketplacesearchdetail.md)
+- [Read the marketplace search detail url](get-v1-apps-_id_-marketplacesearchdetail.md)
   Get search detail URL for the alternative marketplace.
-- [GET /v1/apps/{id}/relationships/marketplaceSearchDetail](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
-- [Modify a Marketplace Search Detail Url](patch-v1-marketplacesearchdetails-_id_.md)
+- [Get the marketplace search detail ID for an app](get-v1-apps-_id_-relationships-marketplacesearchdetail.md)
+- [Modify a marketplace search detail url](patch-v1-marketplacesearchdetails-_id_.md)
   Update the search detail URL for the alternative marketplace.
-- [Delete a Marketplace Search Detail Url](delete-v1-marketplacesearchdetails-_id_.md)
+- [Delete a marketplace search detail url](delete-v1-marketplacesearchdetails-_id_.md)
   Delete search detail URL for the alternative marketplace.
 
 

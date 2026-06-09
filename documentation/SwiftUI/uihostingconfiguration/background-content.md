@@ -15,7 +15,7 @@ Sets the background contents for the hosting configuration’s enclosing cell.
 ## Declaration
 
 ```swift
-func background<B>(@ViewBuilder content: () -> B) -> UIHostingConfiguration<Content, B> where B : View
+func background<B>(@ContentBuilder content: () -> B) -> UIHostingConfiguration<Content, B> where B : View
 ```
 
 #### Discussion

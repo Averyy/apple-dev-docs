@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: property
 
-Options influencing image generation.
+Options that influence the image-generation process.
 
 **Availability**:
 - iOS 26.4+
@@ -18,6 +18,10 @@ Options influencing image generation.
 @MainActor
 @preconcurrency var options: ImagePlaygroundOptions { get set }
 ```
+
+#### Discussion
+
+To specify custom options, modify the value in this property before you present the view controller. If you don’t modify this property, the view controller uses the default set of options.
 
 
 ---

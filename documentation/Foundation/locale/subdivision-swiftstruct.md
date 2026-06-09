@@ -27,6 +27,8 @@ struct Subdivision
   Creates a sudivision from a Unicode identifier.
 - [static func subdivision(for: Locale.Region) -> Locale.Subdivision](locale/subdivision-swift.struct/subdivision(for:).md)
   Returns the subdivision representing the given region as a whole.
+- [init(stringLiteral: String)](locale/subdivision-swift.struct/init(stringliteral:).md)
+  Creates a sudivision from a Unicode identifier as a string literal.
 ### Examining subdivision properties
 - [var identifier: String](locale/subdivision-swift.struct/identifier.md)
   The subdivision’s Unicode identifier.

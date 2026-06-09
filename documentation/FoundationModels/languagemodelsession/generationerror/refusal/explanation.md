@@ -15,7 +15,8 @@ An explanation for why the model refused to respond.
 ## Declaration
 
 ```swift
-var explanation: LanguageModelSession.Response<String> { get async throws }
+nonisolated
+(nonsending) var explanation: LanguageModelSession.Response<String> { get async throws }
 ```
 
 ## See Also

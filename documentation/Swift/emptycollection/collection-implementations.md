@@ -67,7 +67,7 @@
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](emptycollection/subscript(_:)-4a2g8.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](emptycollection/subscript(_:)-th66.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](emptycollection/subscript(_:)-th66.md)
 ### Type Aliases
 - [EmptyCollection.Indices](emptycollection/indices.md)
   A type that represents the indices that are valid for subscripting the collection, in ascending order.

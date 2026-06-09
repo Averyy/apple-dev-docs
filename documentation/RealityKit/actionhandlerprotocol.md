@@ -89,6 +89,11 @@ MyActionHandler.register { event in
 - [static func register((Self.EventType) -> (any ActionHandlerProtocol)?)](actionhandlerprotocol/register(_:).md)
   Registers a handler that responds to raised action events for a particular action type.
 
+## Relationships
+
+### Inherited By
+- [BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+
 ## See Also
 
 - [protocol EntityAction](entityaction.md)

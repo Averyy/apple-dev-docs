@@ -17,7 +17,8 @@ Creates a three-column navigation split view.
 ## Declaration
 
 ```swift
-init(@ViewBuilder sidebar: () -> Sidebar, @ViewBuilder content: () -> Content, @ViewBuilder detail: () -> Detail)
+nonisolated
+init(@ContentBuilder sidebar: () -> Sidebar, @ContentBuilder content: () -> Content, @ContentBuilder detail: () -> Detail)
 ```
 
 ## Mentions

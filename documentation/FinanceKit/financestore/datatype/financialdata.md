@@ -8,6 +8,7 @@ The value that describes financial data, such as account information.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

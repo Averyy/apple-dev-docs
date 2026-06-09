@@ -17,6 +17,7 @@ Creates a title-only label style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

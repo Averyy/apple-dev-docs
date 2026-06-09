@@ -11,8 +11,6 @@ The payload that configures fonts.
 - Mac Catalyst 7.0+
 - macOS 10.9+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,7 +22,7 @@ object Font
 
 Specify `com.apple.font` as the payload type.
 
-In iPadOS 18 and later, the font profile is available on the user channel for Shared iPads.
+In iPadOS 18 and later, the font profile is available on the user channel for Shared iPad.
 
 ##### Profile Availability
 
@@ -33,8 +31,8 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
 | Device channel | iOS, macOS, visionOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
@@ -95,8 +93,6 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
   The payload that configures the screen saver.
 - [object SystemExtensions](systemextensions.md)
   The payload that configures system extensions.
-- [object SystemLogging](systemlogging.md)
-  The payload that configures system logging.
 - [object TimeServer](timeserver.md)
   The payload that configures the time server.
 

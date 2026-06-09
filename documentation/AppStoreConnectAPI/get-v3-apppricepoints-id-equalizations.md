@@ -101,21 +101,22 @@ https://api.appstoreconnect.apple.com/v3/appPricePoints/eyJzIjoiNjQ0NzQwMjE5MiIs
 
 ## Parameters
 
-- `fields[appPricePoints]` ([string])
-- `fields[apps]` ([string])
-- `fields[territories]` ([string])
-- `filter[territory]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `fields[appPricePoints]` ([string]): Additional fields to include for each app price point resource returned by the response.
+- `fields[apps]` ([string]): Additional fields to include for each app resource returned by the response.
+- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
+- `filter[territory]` ([string]): Filter the returned app price points by territory.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app price point resources to return.
 
 ## See Also
 
 - [List All Price Points for an App](get-v1-apps-_id_-apppricepoints.md)
   Get all the available price points for a specific app.
-- [GET /v1/apps/{id}/relationships/appPricePoints](get-v1-apps-_id_-relationships-apppricepoints.md)
+- [List app price point IDs for an app](get-v1-apps-_id_-relationships-apppricepoints.md)
 - [Read App Price Point Information](get-v3-apppricepoints-_id_.md)
   Get details about a specific app price point.
-- [GET /v3/appPricePoints/{id}/relationships/equalizations](get-v3-apppricepoints-_id_-relationships-equalizations.md)
+- [List equalization price point IDs for an app price point](get-v3-apppricepoints-_id_-relationships-equalizations.md)
+  Get a list of equalization price point IDs for a specific app price point.
 
 
 ---

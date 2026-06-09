@@ -48,6 +48,7 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
 - [class AVDelegatingPlaybackCoordinator](avdelegatingplaybackcoordinator.md)
   A playback coordinator subclass that coordinates the playback of custom player objects in a connected group.
 - [class AVPlaybackCoordinationMedium](avplaybackcoordinationmedium.md)
+  The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
 ### Presentation
 - [Monitoring playback progress in your app](monitoring-playback-progress-in-your-app.md)
   Observe the playback of a media asset to update your app’s user-interface state.
@@ -85,6 +86,12 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
   An object that schedules interstitial events for items played by the primary player.
 - [class AVPlayerInterstitialEventMonitor](avplayerinterstitialeventmonitor.md)
   An object that monitors the scheduling and progress of interstitial events.
+- [let AVPlayerInterstitialEventMonitorScheduleRequestErrorKey: String](avplayerinterstitialeventmonitorschedulerequesterrorkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSError. Absent if the request succeeded
+- [let AVPlayerInterstitialEventMonitorScheduleRequestIdentifierKey: String](avplayerinterstitialeventmonitorschedulerequestidentifierkey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSString.
+- [let AVPlayerInterstitialEventMonitorScheduleRequestResponseKey: String](avplayerinterstitialeventmonitorschedulerequestresponsekey.md)
+  userInfo dictionary key for the AVPlayerInterstitialEventMonitorScheduleRequestCompletedNotification. Value is NSData. Absent if the request failed.
 - [class AVPlayerItemIntegratedTimeline](avplayeritemintegratedtimeline.md)
   An object that models the timeline and playback sequence of a primary player item and scheduled interstitial events.
 ### Metrics
@@ -140,6 +147,12 @@ You create an instance of [`AVPlayerItem`](avplayeritem.md) to play a media asse
   An object that vends collections of metadata items that a player item’s tracks carry.
 - [protocol AVPlayerItemOutputPushDelegate](avplayeritemoutputpushdelegate.md)
   A protocol that defines the methods to implement to respond to changes in the media data sequence.
+- [class AVPlayerItemSampleBufferOutput](avplayeritemsamplebufferoutput.md)
+  [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md) delivers `CMSampleBuffers` for [`AVPlayerItem`](avplayeritem.md) playback.
+- [class AVPlayerItemSampleBufferOutputConfiguration](avplayeritemsamplebufferoutputconfiguration.md)
+  Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
+- [class AVPlayerItemSampleBufferOutputAudioConfiguration](avplayeritemsamplebufferoutputaudioconfiguration.md)
+  Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
 ### Utilities
 - [class AVAssetPlaybackAssistant](avassetplaybackassistant.md)
   An object that provides playback information for an asset.

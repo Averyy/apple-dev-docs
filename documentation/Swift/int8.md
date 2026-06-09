@@ -142,6 +142,7 @@ struct Int8
 - [BinaryInteger](binaryinteger.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
@@ -154,6 +155,8 @@ struct Int8
 - [ExpressibleByIntegerLiteral](expressiblebyintegerliteral.md)
 - [FixedWidthInteger](fixedwidthinteger.md)
 - [Hashable](hashable.md)
+- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
+- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [LosslessStringConvertible](losslessstringconvertible.md)
 - [MLShapedArrayScalar](../CoreML/MLShapedArrayScalar.md)
 - [MLTensorScalar](../CoreML/MLTensorScalar.md)
@@ -167,6 +170,7 @@ struct Int8
 - [SignedInteger](signedinteger.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 - [vDSP_IntegerConvertable](../Accelerate/vDSP_IntegerConvertable.md)
 
 ## See Also

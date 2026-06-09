@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a Game Center app version resource.
+
 **Availability**:
 - App Store Connect API 3.0+
 

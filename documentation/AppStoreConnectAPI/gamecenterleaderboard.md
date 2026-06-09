@@ -18,7 +18,9 @@ object GameCenterLeaderboard
 
 ### Objects
 - [object GameCenterLeaderboard.Attributes](gamecenterleaderboard/attributes-data.dictionary.md)
+  Attributes that describe a leaderboard resource.
 - [object GameCenterLeaderboard.Relationships](gamecenterleaderboard/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -49,11 +51,11 @@ object GameCenterLeaderboard
 - [object GameCenterLeaderboardUpdateRequest](gamecenterleaderboardupdaterequest.md)
   The request body you use to update a leaderboard.
 - [object GameCenterLeaderboardsResponse](gamecenterleaderboardsresponse.md)
-  A response that contains multiple leaderboard resources.
+  The response body for endpoints that list Game Center leaderboards.
 - [object GameCenterLeaderboardCreateRequest](gamecenterleaderboardcreaterequest.md)
   The request body you use to create a leaderboard.
 - [object GameCenterLeaderboardResponse](gamecenterleaderboardresponse.md)
-  A response that contains a single leaderboard image resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageRequest](gamecenterleaderboardgroupleaderboardlinkagerequest.md)
   The request body you use to attach an individual leaderbaord to a group leaderboard.
 - [object GameCenterLeaderboardGroupLeaderboardLinkageResponse](gamecenterleaderboardgroupleaderboardlinkageresponse.md)

@@ -27,7 +27,7 @@ Get a list of all build uploads for a specific app.
 
 ## See Also
 
-- [List All Build Uploads IDs for an App](get-v1-apps-_id_-relationships-builduploads.md)
+- [List all build uploads ids for an app](get-v1-apps-_id_-relationships-builduploads.md)
   Get a list of all build upload Ids for a specific app.
 - [Read Build Upload Information](get-v1-builduploads-_id_.md)
   Get details about a specific build upload file for an app.

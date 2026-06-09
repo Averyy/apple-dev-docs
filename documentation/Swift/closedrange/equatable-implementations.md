@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](closedrange/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](closedrange/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ClosedRange<Bound>, ClosedRange<Bound>) -> Bool](closedrange/==(_:_:).md)
   Returns a Boolean value indicating whether two ranges are equal.

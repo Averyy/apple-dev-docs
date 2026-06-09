@@ -15,6 +15,7 @@ Creates a rotation gesture with a minimum delta for the gesture to start.
 ## Declaration
 
 ```swift
+nonisolated
 init(minimumAngleDelta: Angle = .degrees(1))
 ```
 

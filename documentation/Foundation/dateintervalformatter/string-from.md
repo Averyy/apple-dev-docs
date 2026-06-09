@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Returns a formatted string for the given date interval.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+

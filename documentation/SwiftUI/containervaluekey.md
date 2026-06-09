@@ -67,7 +67,7 @@ MyView()
 To read the container value, use `Group(subviews:)` on a containing view, and then access the container value on members of that collection.
 
 ```swift
-@ViewBuilder var content: some View {
+@ContentBuilder var content: some View {
     Text("A").myCustomValue("Hello")
     Text("B").myCustomValue("World")
 }
@@ -85,7 +85,7 @@ In practice, this will mostly be used by views that contain multiple other views
 struct MyContainer<Content: View>: View {
     var content: Content
 
-    init(@ViewBuilder content: () -> Content) {
+    init(@ContentBuilder content: () -> Content) {
         self.content = content()
     }
 

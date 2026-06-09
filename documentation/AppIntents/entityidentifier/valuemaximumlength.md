@@ -23,7 +23,7 @@ static let valueMaximumLength: Int
 ## See Also
 
 - [let identifier: String](entityidentifier/identifier.md)
-  Value uniquely identifying the entity instance within its type
+  Value uniquely identifying the entity instance within its type.
 - [let entityType: any AppEntity.Type](entityidentifier/entitytype.md)
   The type of `AppEntity` represented by this identifier
 

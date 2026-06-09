@@ -18,10 +18,6 @@ A standard control that can initiate the refreshing of a scroll view’s content
 class UIRefreshControl
 ```
 
-## Mentions
-
-- [Choosing a user interface idiom for your Mac app](choosing-a-user-interface-idiom-for-your-mac-app.md)
-
 #### Overview
 
 A [`UIRefreshControl`](uirefreshcontrol.md) object is a standard control that you attach to any [`UIScrollView`](uiscrollview.md) object, including table views and collection views. Add this control to scrollable views to give your users a standard way to refresh their contents. When the user drags the top of the scrollable content area downward, the scroll view reveals the refresh control, begins animating its progress indicator, and notifies your app. You use that notification to update your content and dismiss the refresh control.
@@ -52,8 +48,6 @@ func configureRefreshControl () {
 
 If you’re using a [`UITableViewController`](uitableviewcontroller.md), assign its [`refreshControl`](uitableviewcontroller/refreshcontrol.md) property to an instance of [`UIRefreshControl`](uirefreshcontrol.md). Then associate a target and action method for the [`valueChanged`](uicontrol/event/valuechanged.md) event to manage the refresh behavior of the associated table view.
 
-> ❗ **Important**:  [`UIRefreshControl`](uirefreshcontrol.md) isn’t available when the user interface idiom is [`UIUserInterfaceIdiom.mac`](uiuserinterfaceidiom/mac.md). However, you can update your app to provide similar functionality in the Mac idiom. For example, replace the control with a Refresh menu item by creating a [`UIKeyCommand`](uikeycommand.md) object with the title “Refresh” and the keyboard shortcut Command-R. Then add the command to your app’s menu system. For more information, see [`Adding menus and shortcuts to the menu bar and user interface`](adding-menus-and-shortcuts-to-the-menu-bar-and-user-interface.md).
-
 ## Topics
 
 ### Initializing a refresh control
@@ -78,6 +72,8 @@ If you’re using a [`UITableViewController`](uitableviewcontroller.md), assign 
 - [UIControl](uicontrol.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

@@ -1,7 +1,9 @@
-# POST /v1/appStoreVersionPromotions
+# Create an app store version promotion
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Promote a specific App Store version.
 
 **Availability**:
 - App Store Connect API 1.7+

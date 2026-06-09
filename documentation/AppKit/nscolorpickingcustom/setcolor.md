@@ -26,7 +26,8 @@ This method is invoked on the current color picker each time `NSColorPanel`‘s 
 
 ## See Also
 
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [var color: NSColor](nscolorpanel/color.md)
+  The color of the receiver.
 
 
 ---

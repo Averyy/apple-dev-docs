@@ -17,7 +17,7 @@ Searches for records matching a predicate in the specified record zone.
 ## Declaration
 
 ```swift
-func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZone.ID?) async throws -> [CKRecord]
+func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZone.ID?, completionHandler: @escaping @Sendable ([CKRecord]?, (any Error)?) -> Void)
 ```
 
 #### Discussion

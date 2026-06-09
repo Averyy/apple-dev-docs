@@ -18,7 +18,7 @@ Presents a sheet when a binding to a Boolean value that you provide is true.
 
 ```swift
 nonisolated
-func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View where Content : View
+func sheet<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ContentBuilder content: @escaping () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

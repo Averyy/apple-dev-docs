@@ -41,7 +41,7 @@ print(y == 15..<15)
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](range/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](range/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func overlaps(Range<Bound>) -> Bool](range/overlaps(_:)-7osha.md)
   Returns a Boolean value indicating whether this range and the given range contain an element in common.

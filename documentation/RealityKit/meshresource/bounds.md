@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-A box that bounds the mesh.
+A box that bounds the mesh in local coordinate space.
 
 **Availability**:
 - iOS 13.0+

@@ -9,7 +9,6 @@ A type that represents an element you can request from a mobile driver’s licen
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 
@@ -26,6 +25,8 @@ struct Element
   The mobile driver’s license holder’s family name or last name.
 - [static let givenName: MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element/givenname.md)
   The mobile driver’s license holder’s given name or first name.
+- [static let name: MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element/name.md)
+  The mobile driver’s license holder’s name.
 ### Type Methods
 - [static func ageAtLeast(Int) -> MobileDriversLicenseDisplayRequest.Element](mobiledriverslicensedisplayrequest/element/ageatleast(_:).md)
   A Boolean value that indicates whether the mobile driver’s license holder’s age is at least the given age.

@@ -7,8 +7,6 @@ The payload that configures the Dock.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.dock` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -122,12 +120,12 @@ Specify `com.apple.dock` as the payload type.
 
 ## Properties
 
-- `AllowDockFixupOverride` (boolean): If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Available in macOS 10.12 and later. Only available on the device channel.
+- `AllowDockFixupOverride` (boolean): If `true`, use the file in `/Library/Preferences/com.apple.dockfixup.plist` when a new user or migrated user logs in. This option has no effect for existing users. Only available on the device channel. Available: macOS 10.12+
 - `autohide` (boolean): If `true`, enables “Automatically hide and show the Dock.”
 - `autohide-immutable` (boolean): If `true`, locks “Automatically hide.”
 - `contents-immutable` (boolean): If `true`, disables changes to the Dock.
-- `dblclickbehavior` (string): The behavior when the window’s title bar is double-clicked.
-- `dblclickbehavior-immutable` (boolean): If `true`, locks “Double-click a window’s title bar.”
+- `dblclickbehavior` (string): The behavior when the window’s title bar is double-clicked. Available: macOS 10.15+
+- `dblclickbehavior-immutable` (boolean): If `true`, locks “Double-click a window’s title bar.” Available: macOS 10.14+
 - `largesize` (integer): The size of the largest magnification.
 - `launchanim` (boolean): If `true`, enables “Animate opening applications.”
 - `launchanim-immutable` (boolean): If `true`, locks “Animate opening applications.”
@@ -138,22 +136,22 @@ Specify `com.apple.dock` as the payload type.
 - `mineffect` (string): The minimize effect.
 - `mineffect-immutable` (boolean): If `true`, locks “Minimize windows using.”
 - `minimize-to-application` (boolean): If `true`, enables “Minimize windows into application icon.”
-- `minintoapp-immutable` (boolean): If `true`, disables the “Minimize windows into application icon” checkbox.
+- `minintoapp-immutable` (boolean): If `true`, disables the “Minimize windows into application icon” checkbox. Available: macOS 10.14+
 - `orientation` (string): The orientation of the Dock.
 - `persistent-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that can be removed from the Dock.
 - `persistent-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that can be removed from the Dock.
 - `position-immutable` (boolean): If `true`, locks the position.
 - `show-process-indicators` (boolean): If true, shows the process indicator.
-- `show-recents` (boolean): If `true`, enables “Show recent items.”
+- `show-recents` (boolean): If `true`, enables “Show recent items.” Available: macOS 10.14+
 - `showindicators-immutable` (boolean): If `true`, locks “Show indicators.”
-- `showrecents-immutable` (boolean): If `true`, disables “Show recent applications” checkbox.
+- `showrecents-immutable` (boolean): If `true`, disables “Show recent applications” checkbox. Available: macOS 10.15+
 - `size-immutable` (boolean): If `true`, locks the size slider.
 - `static-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock and cannot be removed from that location.
 - `static-only` (boolean): If `true`, uses the `static-apps` and `static-others` dictionaries for the Dock and ignores any items in the `persistent-apps` and `persistent-others` dictionaries. If `false`, the contents are merged with the static items listed first.
 - `static-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock and cannot be removed from that location.
 - `tilesize` (integer): The tile size. Values must be in the range from 16 to 128.
-- `windowtabbing` (string): Set the “Prefer tabs when opening documents” to the provided value.
-- `windowtabbing-immutable` (boolean): If `true`, disables “Prefer tabs when opening documents” checkbox.
+- `windowtabbing` (string): Set the “Prefer tabs when opening documents” to the provided value. Available: macOS 10.15+
+- `windowtabbing-immutable` (boolean): If `true`, disables “Prefer tabs when opening documents” checkbox. Available: macOS 10.12+
 
 ## See Also
 

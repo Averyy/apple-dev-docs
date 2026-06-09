@@ -1,0 +1,32 @@
+# LanguageModelSession.DynamicProfile.Profile
+
+**Framework**: Foundation Models  
+**Kind**: typealias
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+typealias Profile = LanguageModelSession.Profile
+```
+
+## See Also
+
+- [var body: Self.Body](languagemodelsession/dynamicprofile/body-swift.property.md)
+  The content of the dynamic profile.
+- [associatedtype Body : LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/body-swift.associatedtype.md)
+  The type of dynamic profile that represent this profile.
+- [LanguageModelSession.DynamicProfile.DynamicProfile](languagemodelsession/dynamicprofile/dynamicprofile.md)
+- [LanguageModelSession.DynamicProfile.SessionProperty](languagemodelsession/dynamicprofile/sessionproperty.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/foundationmodels/languagemodelsession/dynamicprofile/profile)*

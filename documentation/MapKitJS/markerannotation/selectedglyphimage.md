@@ -11,8 +11,20 @@ The image to display in the marker balloon when the user selects the marker.
 ## Declaration
 
 ```swift
-get selectedGlyphImage(): ImageDelegate | ImageHashObject | null;
-set selectedGlyphImage(value: ImageDelegate | ImageHashObject | null);
+get selectedGlyphImage():
+    | ImageSource
+    | ImageHashObject
+    | ImageDelegate
+    | Promise<ImageSource>
+    | null;
+set selectedGlyphImage(
+    value:
+        | ImageSource
+        | ImageHashObject
+        | ImageDelegate
+        | Promise<ImageSource>
+        | null,
+);
 ```
 
 ## Mentions
@@ -21,7 +33,7 @@ set selectedGlyphImage(value: ImageDelegate | ImageHashObject | null);
 
 #### Discussion
 
-Glyph image values are object literals that contain absolute or relative URLs to standard, `@2x`, and `@3x` assets. Alternatively, you can set an [`ImageDelegate`](imagedelegate.md), which is an object you use to specify image URLs.
+Glyph image values can be object literals that contain absolute or relative URLs to standard, `@2x`, and `@3x` assets, an [`ImageDelegate`](imagedelegate.md), an [`ImageSource`](imagesource.md) such as an `HTMLCanvasElement` or `ImageBitmap`, or a `Promise` that resolves to an [`ImageSource`](imagesource.md). See [`ImageSource`](imagesource.md) for cross-origin requirements.
 
 The framework requires at least one image and displays the selected glyph image in the balloon when the marker is in the selected state. If you specify an image for this property, also specify an image in the [`glyphImage`](markerannotation/glyphimage.md) property.
 

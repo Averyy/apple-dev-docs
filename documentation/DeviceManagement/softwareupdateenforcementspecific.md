@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A software update enforcement policy for a specific OS release.
+The declaration to configure a software update enforcement policy for a specific OS release.
 
 **Availability**:
 - iOS 17.0+
@@ -12,14 +12,17 @@ A software update enforcement policy for a specific OS release.
 - macOS 14.0+
 - tvOS 18.4+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object SoftwareUpdateEnforcementSpecific
 ```
+
+## Mentions
+
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Phases of software update enforcement](phases-of-software-update-enforcement.md)
 
 #### Discussion
 
@@ -29,7 +32,7 @@ If the `TargetOSVersion` and optional `TargetBuildVersion` values don’t match 
 
 To determine available software updates to show to an admin, a device management service uses the Apple GDMF service via `https://gdmf.apple.com/v2/pmv`. Configurations only enforce a software update if GDMF has the corresponding OS version or build available. So device management services need to regularly check available versions, and adjust the list shown to admins, and also remove any deployed configurations that use OS versions or builds that are no longer available. Device management services should check GDMF no more than once a day.
 
-If the `TargetOSVersion` is an OS version that includes both a minor and patch version, the system installs that specific version, for example, `16.1.1`. If the minor version doesn’t include a patch version, the system installs the latest available patch version. For example, if the `TargetOSVersion` is `16.1` and a `.1` patch is available, the system installs `16.1.1`.
+The system installs the specific version set in the `TargetOSVersion`, and it won’t install a patch version if only a minor version is set.
 
 The system can only install a supplemental software update on a device that already has the base OS version installed. For example, the system can only install a `16.1`(a) update on a device that currently has `16.1` installed, but it can’t install that update on a device that has only `16.0` installed. To update to a supplemental version from an older base version, use two configurations. Use the first configuration to update to the new base version, and the second configuration to update the new base version to its supplemental version.
 
@@ -41,10 +44,11 @@ If the device isn’t running at the target date-time, the system enforces the s
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
 
@@ -67,7 +71,7 @@ This configuration enforces a software update to a specific OS version and build
 
 - `DetailsURL` (string): The URL of a web page that shows details that the organization provides about the enforced software update.
 - `TargetBuildVersion` (string): The target build version to update the device to by the appropriate time, for example, `20A242`. Use the build version for testing during seeding periods. The build version can include a supplemental version identifier, for example, `20A242a`.
-- `TargetLocalDateTime` (string) *(required)*: The local date time value that specifies when to force install the software update. Use the format `yyyy-mm-ddThh:mm:ss`, which is derived from RFC3339 but doesn’t include a time zone offset. If the user doesn’t trigger the software update before this time, the device force installs it.
+- `TargetLocalDateTime` (string) *(required)*: The local date time value that specifies when to force install the software update. Use the format `yyyy-mm-ddThh:mm:ss`, which is derived from RFC 3339 but doesn’t include a time zone offset or fractional seconds. If the user doesn’t trigger the software update before this time, the device force installs it.
 - `TargetOSVersion` (string) *(required)*: The target OS version to update the device to by the appropriate time. This is the OS version number, for example, `16.1`.
 
 ## See Also
@@ -88,20 +92,20 @@ This configuration enforces a software update to a specific OS version and build
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

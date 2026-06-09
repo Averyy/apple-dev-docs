@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](continuousclock/instant/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](continuousclock/instant/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ContinuousClock.Instant, ContinuousClock.Instant) -> Bool](continuousclock/instant/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

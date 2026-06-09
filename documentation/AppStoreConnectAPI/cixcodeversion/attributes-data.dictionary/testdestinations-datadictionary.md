@@ -18,7 +18,7 @@ object CiXcodeVersion.Attributes.TestDestinations
 
 ### Objects
 - [object CiXcodeVersion.Attributes.TestDestinations.AvailableRuntimes](cixcodeversion/attributes-data.dictionary/testdestinations-data.dictionary/availableruntimes-data.dictionary.md)
-  The data structure that represents the available runtimes for test destinations of an Xcode Versions resource.
+  An available simulator runtime for this Xcode Cloud version, specifying the platform and OS version it can simulate.
 
 ## Properties
 

@@ -224,7 +224,7 @@ var searchableAttributes: CSSearchableItemAttributeSet {
 }
 ```
 
-The app also declares a `TrailEntity` structure to make the trail data available to the rest of the system as part of its App Intents integration. To integrate `TrailEntity` with Spotlight, `TrailEntity` conforms to [`IndexedEntity`](IndexedEntity.md). The app associates the searchable attributes from the `Trail` structure with the `TrailEntity` by calling [`associateAppEntity(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem/associateAppEntity(_:priority:)) before contributing the data to the Spotlight index.
+The app also declares a `TrailEntity` structure to make the trail data available to the rest of the system as part of its App Intents integration. To integrate `TrailEntity` with Spotlight, `TrailEntity` conforms to [`IndexedEntity`](IndexedEntity.md). The app associates the searchable attributes from the `Trail` structure with the `TrailEntity` by calling [`associateAppEntity(_:priority:)`](https://developer.apple.com/documentation/CoreSpotlight/CSSearchableItem/associateAppEntity(_:priority:)-736lx) before contributing the data to the Spotlight index.
 
 ```swift
 // Create an array of the searchable information for each `Trail`.
@@ -277,12 +277,12 @@ To leverage the app’s existing code for handling a universal link, the app con
 
 - [Creating your first app intent](creating-your-first-app-intent.md)
   Create your first app intent that makes your app available in system experiences like Spotlight or the Shortcuts app.
-- [App intents](app-intents.md)
-  Define the custom actions your app exposes to the system using specialized intents.
-- [App intent domains](app-intent-domains.md)
-  Make your app’s actions and content available to Siri and Apple Intelligence with assistant schemas.
-- [Intent infrastructure](intent-infrastructure.md)
-  Provide supplemental context for your intents, and create infrastructure to make app intents reusable across your apps.
+- [Soup Chef with App Intents: Migrating custom intents](../SiriKit/soup-chef-with-app-intents-migrating-custom-intents.md)
+  Integrating App Intents to provide your appʼs actions to Siri and Shortcuts.
+- [protocol AppIntent](appintent.md)
+  An interface you use to express app-specific actions and make them available to the rest of the system.
+- [App intent types](app-intent-types.md)
+  Build your intents from types that define common behaviors such as opening or deleting items, playing or recording media, and more.
 
 
 ---

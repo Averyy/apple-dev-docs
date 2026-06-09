@@ -16,6 +16,7 @@ An object that displays compressed or uncompressed video frames.
 ## Declaration
 
 ```swift
+@MainActor
 class AVSampleBufferDisplayLayer
 ```
 

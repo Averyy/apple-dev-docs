@@ -31,6 +31,7 @@ protocol StaticDisplayRepresentable : CaseDisplayRepresentable, TypeDisplayRepre
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 ### Inherited By
 - [AppEnum](appenum.md)
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AssistantEnum](assistantenum.md)
 - [AssistantSchemaEnum](assistantschemaenum.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)

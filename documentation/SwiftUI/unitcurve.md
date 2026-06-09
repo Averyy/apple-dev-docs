@@ -62,7 +62,6 @@ The vertical (y) axis maps to the output progress: when a curve is evaluated, th
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

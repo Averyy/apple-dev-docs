@@ -25,6 +25,8 @@ struct LanguageCode
 ### Creating a language code
 - [init(String)](locale/languagecode-swift.struct/init(_:).md)
   Creates a language code from an identifier.
+- [init(stringLiteral: String)](locale/languagecode-swift.struct/init(stringliteral:).md)
+  Creates a language code from an identifier as a string literal.
 ### Examining language code properties
 - [var identifier: String](locale/languagecode-swift.struct/identifier.md)
   The identifier used to create the language code.

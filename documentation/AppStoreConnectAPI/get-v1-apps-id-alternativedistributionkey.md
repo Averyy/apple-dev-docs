@@ -50,7 +50,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistribution
 
 ## Parameters
 
-- `fields[alternativeDistributionKeys]` ([string])
+- `fields[alternativeDistributionKeys]` ([string]): Additional fields to include for each alternative distribution key resource returned by the response.
 
 ## See Also
 
@@ -64,7 +64,7 @@ https://api.appstoreconnect.apple.com/v1/apps/6473805491/alternativeDistribution
   List the alternative distribution key for your account.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 

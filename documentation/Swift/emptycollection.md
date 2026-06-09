@@ -26,10 +26,13 @@ struct EmptyCollection<Element>
 ### Initializers
 - [init()](emptycollection/init.md)
   Creates an instance.
+### Instance Methods
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](emptycollection/withbytes(_:).md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](emptycollection/bidirectionalcollection-implementations.md)
 - [Collection Implementations](emptycollection/collection-implementations.md)
 - [Equatable Implementations](emptycollection/equatable-implementations.md)
+- [Hashable Implementations](emptycollection/hashable-implementations.md)
 - [MutableCollection Implementations](emptycollection/mutablecollection-implementations.md)
 - [RandomAccessCollection Implementations](emptycollection/randomaccesscollection-implementations.md)
 - [Sequence Implementations](emptycollection/sequence-implementations.md)
@@ -45,6 +48,7 @@ struct EmptyCollection<Element>
 - [DataProtocol](../Foundation/DataProtocol.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
+- [Hashable](hashable.md)
 - [MutableCollection](mutablecollection.md)
 - [RandomAccessCollection](randomaccesscollection.md)
 - [Sendable](sendable.md)

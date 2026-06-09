@@ -28,7 +28,8 @@ This method is the designated initializer for this class. Non-object values shou
 
 ## See Also
 
-- [Printing Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Printing/osxp_aboutprinting/osxp_aboutprt.html#//apple_ref/doc/uid/10000083i)
+- [class NSPrintInfo](nsprintinfo.md)
+  An object that stores information that’s used to generate printed output.
 - [func dictionary() -> NSMutableDictionary](nsprintinfo/dictionary.md)
   Returns the print info’s dictionary that contains the printing attributes.
 - [class var shared: NSPrintInfo](nsprintinfo/shared.md)

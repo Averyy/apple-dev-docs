@@ -1,6 +1,6 @@
 # hasSensitiveContent()
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: method
 
 Provides a result that indicates if the video file contains sensitive content.
@@ -8,7 +8,7 @@ Provides a result that indicates if the video file contains sensitive content.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - visionOS 2.0+
 

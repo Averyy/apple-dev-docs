@@ -9,13 +9,16 @@ A specialized error that provides localized messages describing the error and wh
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
 ```swift
 enum EnergyKitError
 ```
+
+## Mentions
+
+- [Providing charging history for electric vehicles](providing-informative-charging-history-for-electric-vehicles.md)
 
 ## Topics
 
@@ -51,7 +54,6 @@ enum EnergyKitError
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)
@@ -59,6 +61,11 @@ enum EnergyKitError
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [enum ElectricityFlowDirection](electricityflowdirection.md)
+  Information about which direction the electricity moves.
 
 
 ---

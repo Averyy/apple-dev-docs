@@ -12,6 +12,7 @@ Returns the accessibility content for a text range.
 - macOS ?+
 - tvOS 18.2+
 - visionOS 2.2+
+- watchOS 11.2+
 
 ## Declaration
 

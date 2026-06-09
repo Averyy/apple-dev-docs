@@ -1,4 +1,4 @@
-# Modify an App Store Version
+# Modify an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,13 +19,13 @@ Update the App Store version for a specific app.
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the App Store version resource ID from the [`List all app store versions for an app`](get-v1-apps-_id_-appstoreversions.md) response.
 
 ## See Also
 
-- [Create an App Store Version](post-v1-appstoreversions.md)
+- [Create an app store version](post-v1-appstoreversions.md)
   Add a new App Store version or platform to an app.
-- [Delete an App Store Version](delete-v1-appstoreversions-_id_.md)
+- [Delete an app store version](delete-v1-appstoreversions-_id_.md)
   Delete an app store version that is associated with an app.
 
 

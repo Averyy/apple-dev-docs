@@ -8,6 +8,7 @@ A one-shot alarm that fires at a specific time, not a time relative to the curre
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The view builder that creates the reader’s content.
+The content builder that creates the reader’s content.
 
 **Availability**:
 - iOS 14.0+

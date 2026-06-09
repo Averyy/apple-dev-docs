@@ -20,8 +20,8 @@ optional func application(_ application: UIApplication, didFinishLaunchingWithOp
 
 ## Mentions
 
-- [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
 - [About the app launch sequence](about-the-app-launch-sequence.md)
+- [Performing one-time setup for your app](performing-one-time-setup-for-your-app.md)
 - [About the UI restoration process](about-the-ui-restoration-process.md)
 
 #### Return Value

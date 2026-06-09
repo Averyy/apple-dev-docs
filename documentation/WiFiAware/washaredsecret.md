@@ -8,6 +8,7 @@ A high-entropy shared secret unique to this network connection.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

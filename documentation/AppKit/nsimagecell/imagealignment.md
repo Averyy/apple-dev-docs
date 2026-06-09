@@ -20,9 +20,8 @@ For a list of possible values, see [`NSImageAlignment`](nsimagealignment.md). Th
 
 ## See Also
 
-- [Table View Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/Introduction/Introduction.html#//apple_ref/doc/uid/10000026i)
-- [Control and Cell Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ControlCell/ControlCell.html#//apple_ref/doc/uid/10000015i)
-- [Matrix Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Matrix/Matrix.html#//apple_ref/doc/uid/10000022i)
+- [class NSImageCell](nsimagecell.md)
+  An `NSImageCell` object displays a single image (encapsulated in an [`NSImage`](nsimage.md) object) in a frame. This class provides methods for choosing the frame and for aligning and scaling the image to fit the frame.
 - [var imageScaling: NSImageScaling](nsimagecell/imagescaling.md)
   The scaling mode used to fit the receiver’s image into the frame.
 

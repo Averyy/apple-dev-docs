@@ -15,20 +15,20 @@ To change a workflow’s build environment, use the [`Workflows`](workflows.md) 
 ## Topics
 
 ### Getting macOS Version Information
-- [List All Macos Versions Available in Xcode Cloud](get-v1-cimacosversions.md)
+- [List all macos versions available in xcode cloud](get-v1-cimacosversions.md)
   List all macOS versions available to Xcode Cloud workflows.
-- [Read Macos Version Information](get-v1-cimacosversions-_id_.md)
+- [Read macos version information](get-v1-cimacosversions-_id_.md)
   Get information about a specific macOS version that’s available to Xcode Cloud workflows.
-- [List Available Xcode Versions for a Macos Version](get-v1-cimacosversions-_id_-xcodeversions.md)
+- [List available xcode versions for a macos version](get-v1-cimacosversions-_id_-xcodeversions.md)
   List all Xcode versions available for a specific macOS version in Xcode Cloud.
-- [GET /v1/ciMacOsVersions/{id}/relationships/xcodeVersions](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
+- [List Xcode version IDs for a CI macOS version](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
 ### Objects
 - [object CiMacOsVersion](cimacosversion.md)
-  The data structure that represents a macOS Versions resource.
+  A macOS version available in Xcode Cloud infrastructure for running workflow builds.
 - [object CiMacOsVersionResponse](cimacosversionresponse.md)
-  A response that contains a single macOS Versions resource.
+  A response containing a single macOS version available in Xcode Cloud.
 - [object CiMacOsVersionsResponse](cimacosversionsresponse.md)
-  A response that contains a list of macOS Versions resources.
+  A response containing a list of macOS versions supported by Xcode Cloud.
 - [object CiMacOsVersionXcodeVersionsLinkagesResponse](cimacosversionxcodeversionslinkagesresponse.md)
 
 ## See Also

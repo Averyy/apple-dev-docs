@@ -17,7 +17,8 @@ Creates a lazy vertical stack view with the given spacing, vertical alignment, p
 ## Declaration
 
 ```swift
-init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ViewBuilder content: () -> Content)
+nonisolated
+init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedViews: PinnedScrollableViews = .init(), @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
@@ -25,7 +26,7 @@ init(alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, pinnedVi
 - `alignment`: The guide for aligning the subviews in this stack. All child views have the same horizontal screen coordinate.
 - `spacing`: The distance between adjacent subviews, or `nil` if you want the stack to choose a default distance for each pair of subviews.
 - `pinnedViews`: The kinds of child views that will be pinned.
-- `content`: A view builder that creates the content of this stack.
+- `content`: A content builder that creates the content of this stack.
 
 
 ---

@@ -31,6 +31,9 @@ struct Parameters
 - [var intrinsics: simd_float3x3](cameraframe/sample/parameters-swift.struct/intrinsics.md)
 - [var midExposureTimestamp: TimeInterval](cameraframe/sample/parameters-swift.struct/midexposuretimestamp.md)
   The mid exposure timestamp.
+### Operators
+- [static func == (CameraFrame.Sample.Parameters, CameraFrame.Sample.Parameters) -> Bool](cameraframe/sample/parameters-swift.struct/==(_:_:).md)
+  Returns a Boolean value indicating whether two camera frame parameters are equal.
 ### Instance Properties
 - [var description: String](cameraframe/sample/parameters-swift.struct/description.md)
   A textual representation of these camera frame parameters.

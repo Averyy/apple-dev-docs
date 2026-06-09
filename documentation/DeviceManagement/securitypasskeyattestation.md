@@ -10,8 +10,6 @@ The declaration to configure the device to allow WebAuthn enterprise attestation
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,14 +25,17 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
 
 |  |  |
 | --- | --- |
-| Allowed in supervised enrollment | iOS, macOS, Shared iPad |
-| Allowed in device enrollment | iOS, Shared iPad |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in supervised enrollment | iOS, macOS |
+| Allowed in device enrollment | iOS |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS |
 | Allowed in user scope | macOS |
+| Apply | Multiple configurations are applied separately |
 
 ##### Configuration Example
+
+This configuration enables enterprise passkey attestation for a relying party.
 
 ```json
 {
@@ -53,7 +54,7 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
 ## Properties
 
 - `AttestationIdentityAssetReference` (string) *(required)*: The identifier of an asset declaration that contains the identity to install and use for passkey attestation.
-- `AttestationIdentityKeyIsExtractable` (boolean): If `true`, the private key for the attestation identity is extractable in the keychain.
+- `AttestationIdentityKeyIsExtractable` (boolean): If `true`, the private key for the attestation identity is extractable in the keychain. Available: macOS 14+
 - `RelyingParties` ([string]) *(required)*: An array of the relying parties to allow enterprise attestation.
 
 ## See Also
@@ -74,20 +75,20 @@ Specify `com.apple.configuration.security.passkey.attestation` as the declaratio
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

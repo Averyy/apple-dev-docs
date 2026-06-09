@@ -12,7 +12,7 @@ Sets node authentication credentials for a record using a specified authenticati
 ## Declaration
 
 ```swift
-func ODRecordSetNodeCredentialsExtended(_ record: ODRecordRef!, _ recordType: String!, _ authType: String!, _ authItems: CFArray!, _ outAuthItems: UnsafeMutablePointer<Unmanaged<CFArray>?>!, _ outContext: UnsafeMutablePointer<Unmanaged<ODContext>?>!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
+func ODRecordSetNodeCredentialsExtended(_ record: ODRecordRef!, _ recordType: String!, _ authType: String!, _ authItems: CFArray!, _ outAuthItems: UnsafeMutablePointer<Unmanaged<CFArray>?>!, _ outContext: UnsafeMutablePointer<Unmanaged<ODContextRef>?>!, _ error: UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool
 ```
 
 #### Return Value

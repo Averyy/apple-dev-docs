@@ -18,6 +18,12 @@
 let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString
 ```
 
+#### Discussion
+
+Identifies how the origin of the camera system’s extrinsics are determined.
+
+The ‘blin’ value indicates the center of transform is determined by the point mid way along the dimensions indicated by the StereoCameraSystemBaselineBox held in the StereoCameraSystemBox. Each left and right lens within a stereoscopic camera system is equidistant from this point, so the ‘blin’ value is halved when associated with the respective left and right lenses.
+
 ## See Also
 
 - [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
@@ -26,7 +32,6 @@ let kCMFormatDescriptionCameraCalibration_ExtrinsicOriginSource: CFString
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixreferencedimensions.md)
 - [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
-  The following keys are required in each kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection dictionary.
 - [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](kcmformatdescriptioncameracalibration_lensdistortions.md)
 - [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](kcmformatdescriptioncameracalibration_lensdomain.md)
 - [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)

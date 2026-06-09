@@ -34,6 +34,8 @@ struct IOSVersion
   The value that represents iOS 18.0.
 - [static let v26: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v26.md)
   The value that represents iOS 26.0.
+- [static let v27: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v27.md)
+  The value that represents iOS 27.0.
 - [static let v8: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v8.md)
   The value that represents iOS 8.0.
 - [static let v9: SupportedPlatform.IOSVersion](supportedplatform/iosversion/v9.md)

@@ -392,6 +392,7 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [struct MTRWaterHeaterManagementFeature](mtrwaterheatermanagementfeature.md)
 - [struct MTRWaterHeaterManagementWaterHeaterHeatSourceBitmap](mtrwaterheatermanagementwaterheaterheatsourcebitmap.md)
 ### Variables
+- [let MTRCommissioningSessionTransportType: String](mtrcommissioningsessiontransporttype.md)
 - [let MTRDeviceControllerRegistrationControllerCompressedFabricIDKey: String](mtrdevicecontrollerregistrationcontrollercompressedfabricidkey.md)
 - [let MTRDeviceControllerRegistrationControllerContextKey: String](mtrdevicecontrollerregistrationcontrollercontextkey.md)
 - [let MTRDeviceControllerRegistrationControllerIsRunningKey: String](mtrdevicecontrollerregistrationcontrollerisrunningkey.md)
@@ -399,6 +400,8 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [let MTRDeviceControllerRegistrationDeviceInternalStateKey: String](mtrdevicecontrollerregistrationdeviceinternalstatekey.md)
 - [let MTRDeviceControllerRegistrationNodeIDKey: String](mtrdevicecontrollerregistrationnodeidkey.md)
 - [let MTRDeviceControllerRegistrationNodeIDsKey: String](mtrdevicecontrollerregistrationnodeidskey.md)
+- [let MTRUnpoweredInitialPhase: String](mtrunpoweredinitialphase.md)
+- [let MTRUnpoweredPhaseOverNFCKey: String](mtrunpoweredphaseovernfckey.md)
 ### Functions
 - [func MTREventNameForID(MTRClusterIDType, MTREventIDType) -> String!](mtreventnameforid(_:_:).md)
   Resolve Matter event IDs into a descriptive string.

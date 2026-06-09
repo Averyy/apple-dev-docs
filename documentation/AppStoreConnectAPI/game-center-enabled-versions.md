@@ -11,23 +11,24 @@ Use a `gameCenterEnabledVersions` resource to indicate which versions of your ap
 ## Topics
 
 ### Listing Versions
-- [List All Game Center Enabled Versions for an App](get-v1-apps-_id_-gamecenterenabledversions.md)
-- [List All Compatible Versions for a Game Center Enabled Version](get-v1-gamecenterenabledversions-_id_-compatibleversions.md)
+- [List all game center enabled versions for an app](get-v1-apps-_id_-gamecenterenabledversions.md)
+  Get a list of Game Center enabled versions for a specific app.
+- [List all compatible versions for a game center enabled version](get-v1-gamecenterenabledversions-_id_-compatibleversions.md)
 ### Getting and Adding Compatible Versions
-- [Get All Compatible Version IDs for a Game Center Enabled Version](get-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
-- [Add Compatible Versions to a Game Center Enabled Version](post-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Get all compatible version ids for a game center enabled version](get-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Add compatible versions to a game center enabled version](post-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 ### Removing and Replacing Compatible Versions
-- [Replace All Compatible Versions for a Game Center Enabled Version](patch-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
-- [Remove Compatible Versions From a Game Center Enabled Version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Replace all compatible versions for a game center enabled version](patch-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
+- [Remove compatible versions from a game center enabled version](delete-v1-gamecenterenabledversions-_id_-relationships-compatibleversions.md)
 ### Objects
 - [object GameCenterEnabledVersion](gamecenterenabledversion.md)
-  The data structure that represents the Game Center Enabled Versions resource.
+  An app version with Game Center enabled. Deprecated in API version 3.0; use [`GameCenterAppVersion`](gamecenterappversion.md) instead.
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesRequest](gamecenterenabledversioncompatibleversionslinkagesrequest.md)
   A request body you use to add or remove compatible versions from a Game Center-enabled version.
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse](gamecenterenabledversioncompatibleversionslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [object GameCenterEnabledVersionsResponse](gamecenterenabledversionsresponse.md)
-  A response that contains a list of Game Center Enabled Version resources.
+  A response containing a list of app versions with Game Center enabled (deprecated; use GameCenterAppVersion).
 - [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
 
 

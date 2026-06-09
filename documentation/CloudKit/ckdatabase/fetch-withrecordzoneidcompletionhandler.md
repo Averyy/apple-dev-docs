@@ -17,7 +17,7 @@ Fetches a specific record zone.
 ## Declaration
 
 ```swift
-func recordZone(for zoneID: CKRecordZone.ID) async throws -> CKRecordZone
+func fetch(withRecordZoneID zoneID: CKRecordZone.ID) async throws -> CKRecordZone
 ```
 
 #### Discussion

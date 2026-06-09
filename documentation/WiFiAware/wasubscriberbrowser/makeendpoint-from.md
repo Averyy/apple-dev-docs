@@ -8,6 +8,7 @@ Creates a connectable Wi-Fi Aware endpoint from a browse result.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

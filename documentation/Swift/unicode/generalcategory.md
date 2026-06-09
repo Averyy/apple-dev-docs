@@ -102,7 +102,6 @@ The general category of a scalar is its “first-order, most usual categorizatio
 ## Relationships
 
 ### Conforms To
-- [Copyable](copyable.md)
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)

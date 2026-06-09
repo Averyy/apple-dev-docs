@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an activity image resource.
+An image asset representing a Game Center activity in the player interface.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -30,9 +30,9 @@ object GameCenterActivityImage
 ## See Also
 
 - [object GameCenterActivityImageCreateRequest](gamecenteractivityimagecreaterequest.md)
-  The request body you use to create an activity resource.
+  The request body for creating an image asset for a Game Center activity.
 - [object GameCenterActivityImageResponse](gamecenteractivityimageresponse.md)
-  A response that contains a single activity resource.
+  A response containing a single image asset for a Game Center activity.
 - [object GameCenterActivityImageUpdateRequest](gamecenteractivityimageupdaterequest.md)
   The request body you use to update an activity.
 

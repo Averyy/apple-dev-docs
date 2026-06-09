@@ -17,6 +17,7 @@ The current media selections for each of the receiver’s media selection groups
 ## Declaration
 
 ```swift
+nonisolated
 var currentMediaSelection: AVMediaSelection { get }
 ```
 

@@ -29,6 +29,14 @@ Deletes all user activities stored by Core Spotlight or donated as Siri shortcut
 
 ## See Also
 
+- [func becomeCurrent()](nsuseractivity/becomecurrent.md)
+  Marks the activity as currently in use by the user.
+- [func resignCurrent()](nsuseractivity/resigncurrent.md)
+  Marks this activity object as inactive without invalidating it.
+- [func invalidate()](nsuseractivity/invalidate.md)
+  Invalidates an activity and marks it as no longer eligible for continuation.
+- [var needsSave: Bool](nsuseractivity/needssave.md)
+  A Boolean value that indicates whether the state of the activity needs to be updated.
 - [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
   Deletes user activities created by your app that have the specified persistent identifiers.
 

@@ -13,8 +13,6 @@ Enable your server to support declarative management or trigger a declarative ma
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -26,9 +24,9 @@ The server uses this command to turn on the declarative management engine on the
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS, Shared iPad |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
-| Required access right |  |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -87,7 +85,7 @@ The server uses this command to turn on the declarative management engine on the
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#DeclarativeManagementCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

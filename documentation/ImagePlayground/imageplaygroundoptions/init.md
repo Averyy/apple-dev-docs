@@ -3,7 +3,7 @@
 **Framework**: Image Playground  
 **Kind**: init
 
-Creates a set of options with default behaviors.
+Initializes a new instance of this structure with a default set of options.
 
 **Availability**:
 - iOS 26.4+

@@ -19,6 +19,9 @@ struct Accessory
 ### Structures
 - [Accessory.LocationName](accessory/locationname.md)
   Location names to fetch transforms defined on accessories. Some pre-defined location names that are common to accessories conforming to the OpenXR spec are provided as a convenience. These are not required to exist on all accessories.
+### Operators
+- [static func == (Accessory, Accessory) -> Bool](accessory/==(_:_:).md)
+  Returns a Boolean value indicating whether two accessories are equal.
 ### Initializers
 - [init(device: any GCDevice) async throws](accessory/init(device:).md)
   Initializes an accessory from a GCDevice.
@@ -54,6 +57,10 @@ struct Accessory
 
 ## See Also
 
+- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
 - [struct AccessoryAnchor](accessoryanchor.md)

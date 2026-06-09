@@ -11,6 +11,7 @@ A view that opens the Settings scene defined by an app.
 ## Declaration
 
 ```swift
+nonisolated
 struct SettingsLink<Label> where Label : View
 ```
 

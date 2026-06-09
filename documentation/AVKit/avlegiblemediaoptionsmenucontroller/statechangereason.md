@@ -32,11 +32,11 @@ enum StateChangeReason
 
 ## Topics
 
-### Enumeration Cases
-- [AVLegibleMediaOptionsMenuController.StateChangeReason.languageMismatch](avlegiblemediaoptionsmenucontroller/statechangereason/languagemismatch.md)
-- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](avlegiblemediaoptionsmenucontroller/statechangereason/none.md)
-### Initializers
+### Creating a reason
 - [init?(rawValue: Int)](avlegiblemediaoptionsmenucontroller/statechangereason/init(rawvalue:).md)
+### Reasons
+- [AVLegibleMediaOptionsMenuController.StateChangeReason.none](avlegiblemediaoptionsmenucontroller/statechangereason/none.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason.languageMismatch](avlegiblemediaoptionsmenucontroller/statechangereason/languagemismatch.md)
 
 ## Relationships
 
@@ -47,6 +47,13 @@ enum StateChangeReason
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func menu(contents: AVLegibleMediaOptionsMenuController.MenuContents) -> UIMenu?](avlegiblemediaoptionsmenucontroller/menu(contents:).md)
+- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
 
 
 ---

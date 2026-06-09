@@ -3,6 +3,8 @@
 **Framework**: Image I/O  
 **Kind**: func
 
+Restricts which image formats can be decoded in the current process.
+
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
@@ -17,6 +19,18 @@
 ```swift
 func CGImageSourceSetAllowableTypes(_ allowableTypes: CFArray) -> OSStatus
 ```
+
+#### Discussion
+
+When this method has been called, ImageIO will only decode images whose format matches one of the entries in the allow list for the remaining lifetime of the process.
+
+If per-asset format restrictions are set via [`kCGImageSourceAllowableTypes`](kcgimagesourceallowabletypes.md), only formats allowed by both mechanisms are permitted. If `allowableTypes` is empty, all image parsing is disabled. Unknown format identifiers are ignored. Can only be called once per process; subsequent calls are ignored.
+
+See also [`System-declared uniform type identifiers`](https://developer.apple.com/documentation/UniformTypeIdentifiers/system-declared-uniform-type-identifiers).
+
+## Parameters
+
+- `allowableTypes`: A [`CFArray`](https://developer.apple.com/documentation/CoreFoundation/CFArray) containing [`CFString`](https://developer.apple.com/documentation/CoreFoundation/CFString) Uniform Type Identifiers (UTIs) of allowed image formats.
 
 ## See Also
 

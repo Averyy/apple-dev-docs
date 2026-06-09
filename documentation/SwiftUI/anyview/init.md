@@ -17,6 +17,7 @@ Create an instance that type-erases `view`.
 ## Declaration
 
 ```swift
+nonisolated
 init<V>(_ view: V) where V : View
 ```
 

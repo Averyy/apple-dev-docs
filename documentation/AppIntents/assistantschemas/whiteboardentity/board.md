@@ -20,10 +20,6 @@ The app entity describes a whiteboard canvas.
 var board: some AssistantSchemas.Entity { get }
 ```
 
-## Mentions
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app entity implementation. The following example shows an app entity that conforms to the `.whiteboard.board` schema:
@@ -52,14 +48,7 @@ struct CanvasEntity: AppEntity {
 }
 ```
 
-For more information about the `.whiteboard` app intent domain, see [`Making whiteboard actions available to Siri and Apple Intelligence`](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var item: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/item.md)
-  The app entity describes an item on a whiteboard canvas.
-- [AssistantSchemas.WhiteboardEntity](assistantschemas/whiteboardentity.md)
-  Assistant schema conformance for app entities that describe data for whiteboard functionality.
+For more information about the `.whiteboard` app intent domain, see doc:Making-whiteboard-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

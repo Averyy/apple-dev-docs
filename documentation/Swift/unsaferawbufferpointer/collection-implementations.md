@@ -67,7 +67,7 @@
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](unsaferawbufferpointer/subscript(_:)-392oj.md)
   Accesses a view of this collection with the elements at the given indices.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](unsaferawbufferpointer/subscript(_:)-4al9g.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](unsaferawbufferpointer/subscript(_:)-4al9g.md)
 - [subscript(Int) -> UnsafeRawBufferPointer.Element](unsaferawbufferpointer/subscript(_:)-4dk2n.md)
   Accesses the byte at the given offset in the memory region as a `UInt8` value.
 - [subscript<R>(R) -> Self.SubSequence](unsaferawbufferpointer/subscript(_:)-4h7s7.md)

@@ -7,8 +7,6 @@ A dictionary of volumes to control volume mounting.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -18,18 +16,18 @@ object MediaManagementAllowedMedia.Mount-controls
 
 ## Properties
 
-- `all-media` (string): Unused; set to an empty string.
-- `bd` ([string]): A media action string or an array of media action strings.
-- `blankbd` ([string]): A media action string or an array of media action strings.
-- `blankcd` ([string]): A media action string or an array of media action strings.
-- `blankdvd` ([string]): A media action string or an array of media action strings.
-- `cd` ([string]): A media action string or an array of media action strings.
-- `disk-image` ([string]): A media action string or an array of media action strings.
-- `dvd` ([string]): A media action string or an array of media action strings.
-- `dvdram` ([string]): A media action string or an array of media action strings.
-- `harddisk-external` ([string]): A string or an array of media action strings. Internally installed SD cards and USB flash drives are included in the hard disk-external category. This key is the default for media types that don’t fall into other categories.
-- `harddisk-internal` ([string]): A media action string or an array of media action strings.
-- `networkdisk` ([string]): A media action string or an array of media action strings.
+- `all-media` (string): Unused; set to an empty string. Deprecated: macOS 11+
+- `bd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `blankbd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `blankcd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `blankdvd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `cd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `disk-image` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `dvd` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `dvdram` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `harddisk-external` ([string]): A string or an array of media action strings. The hard disk-external category includes internally installed SD cards and USB flash drives. This key is the default for media types that don’t fall into other categories. Deprecated: macOS 11+
+- `harddisk-internal` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
+- `networkdisk` ([string]): A media action string or an array of media action strings. Deprecated: macOS 11+
 
 ## See Also
 

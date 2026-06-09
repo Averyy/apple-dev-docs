@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-A Boolean value that indicates whether the contents of the canvas is editable.
+A Boolean value that indicates whether a person can edit the canvas contents.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,14 @@ A Boolean value that indicates whether the contents of the canvas is editable.
 
 #### Discussion
 
-This property controls the ability of the user to edit content. The default value is `true`. Requires coordination with your `MarkupEditViewController` / `MarkupToolbarViewController` to prevent the user from adding new CanvasElements.
+This property controls whether a person can edit content. The default value is `true`. Coordinate this property with your `MarkupEditViewController` or `MarkupToolbarViewController` to prevent people from adding new canvas elements.
+
+## See Also
+
+- [var drawingTool: any PKTool](papermarkupviewcontroller/drawingtool.md)
+  The tool for drawing on the canvas.
+- [var isRulerActive: Bool](papermarkupviewcontroller/isruleractive.md)
+  A Boolean value that indicates whether a ruler view is visible on the canvas.
 
 
 ---

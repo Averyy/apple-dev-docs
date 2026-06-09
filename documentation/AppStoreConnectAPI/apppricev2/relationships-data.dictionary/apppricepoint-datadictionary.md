@@ -16,6 +16,7 @@ object AppPriceV2.Relationships.AppPricePoint
 
 ### Objects
 - [object AppPriceV2.Relationships.AppPricePoint.Data](apppricev2/relationships-data.dictionary/apppricepoint-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app price v2.
 
 ## Properties
 

@@ -43,7 +43,7 @@ print(attendees.isSubset(of: employees))
 
 - [static func == (Set<Element>, Set<Element>) -> Bool](set/==(_:_:).md)
   Returns a Boolean value indicating whether two sets have equal elements.
-- [static func != (Self, Self) -> Bool](set/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](set/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [func isSubset<S>(of: S) -> Bool](set/issubset(of:)-6qyo5.md)
   Returns a Boolean value that indicates whether the set is a subset of the given sequence.

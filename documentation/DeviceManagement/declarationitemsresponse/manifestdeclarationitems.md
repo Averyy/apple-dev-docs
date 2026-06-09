@@ -5,10 +5,6 @@
 
 The dictionary that contains the lists of declarations available on the server.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift

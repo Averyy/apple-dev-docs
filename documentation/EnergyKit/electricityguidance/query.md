@@ -9,7 +9,6 @@ A structure that encapsulates a electricity guidance query request.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

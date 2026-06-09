@@ -17,6 +17,7 @@ A container that animates its content with keyframes.
 ## Declaration
 
 ```swift
+nonisolated
 struct KeyframeAnimator<Value, KeyframePath, Content> where Value == KeyframePath.Value, KeyframePath : Keyframes, Content : View
 ```
 

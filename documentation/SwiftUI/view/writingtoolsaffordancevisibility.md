@@ -17,8 +17,8 @@ Specifies whether the system should show the Writing Tools affordance for text i
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func writingToolsAffordanceVisibility(_ visibility: Visibility) -> some View
+nonisolated
+func writingToolsAffordanceVisibility(_ visibility: Visibility) -> some View
 ```
 
 #### Return Value
@@ -32,6 +32,13 @@ Use this view modifier to disable the Writing Tools affordance for [`TextField`]
 ## Parameters
 
 - `visibility`: Whether the affordance may be shown for text input views.
+
+## See Also
+
+- [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
+  Specifies the Writing Tools behavior for text and text input in the environment.
+- [struct WritingToolsBehavior](writingtoolsbehavior.md)
+  The Writing Tools editing experience for text and text input.
 
 
 ---

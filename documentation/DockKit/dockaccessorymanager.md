@@ -10,7 +10,6 @@ Observe the state of dock accessories and enable or disable system tracking.
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
 - macOS 14.0+
-- visionOS 1.0+
 
 ## Declaration
 

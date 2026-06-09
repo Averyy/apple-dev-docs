@@ -22,7 +22,7 @@ protocol URLRepresentableEnum : AppEnum, CustomURLRepresentationParameterConvert
 
 #### Overview
 
-Add support for `URLRepresentableEnum` to your app enums to add a URL representation. This allows Siri and Shortcuts to treat the enum like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+Add support for `URLRepresentableEnum` to your app enums to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the enum like a universal link to specific content, allowing actions to open the URL or to make it sharable.
 
 Note that you need to use a universal link for your URL representation, you canâ€™t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
 
@@ -53,8 +53,9 @@ Note that you need to use a universal link for your URL representation, you canâ
 
 ## See Also
 
-- [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
+- [struct EnumURLRepresentation](enumurlrepresentation.md)
+  The URL representation of an app enum.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
 
 
 ---

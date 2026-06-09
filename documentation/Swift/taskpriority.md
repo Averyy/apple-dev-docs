@@ -29,7 +29,7 @@ Child tasks automatically inherit their parent task’s priority. Detached tasks
 In some situations the priority of a task is elevated — that is, the task is treated as it if had a higher priority, without actually changing the priority of the task:
 
 - If a task runs on behalf of an actor, and a new higher-priority task is enqueued to the actor, then the actor’s current task is temporarily elevated to the priority of the enqueued task. This priority elevation allows the new task to be processed at the priority it was enqueued with.
-- If a higher-priority task calls the `get()` method, then the priority of this task increases until the task completes.
+- If a higher-priority task accesses the `value` property, then the priority of this task increases until the task completes.
 
 In both cases, priority elevation helps you prevent a low-priority task from blocking the execution of a high priority task, which is also known as *priority inversion*.
 

@@ -8,6 +8,7 @@ Indicates the app failed to communicate with the shared network system.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

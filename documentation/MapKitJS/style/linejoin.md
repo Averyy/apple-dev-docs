@@ -11,8 +11,8 @@ The corner style to apply when joining line segments.
 ## Declaration
 
 ```swift
-get lineJoin(): CanvasLineJoin;
-set lineJoin(lineJoin: CanvasLineJoin);
+get lineJoin(): "round" | "bevel" | "miter";
+set lineJoin(lineJoin: "round" | "bevel" | "miter");
 ```
 
 #### Discussion

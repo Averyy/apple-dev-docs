@@ -26,7 +26,8 @@ An initialized `NSPrinter` object, or `nil` if the specified printer was not ava
 
 - [var name: String](nsprinter/name.md)
   The printer’s name.
-- [Printing Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Printing/osxp_aboutprinting/osxp_aboutprt.html#//apple_ref/doc/uid/10000083i)
+- [class NSPrinter](nsprinter.md)
+  An object that describes a printer’s capabilities.
 - [class var printerNames: [String]](nsprinter/printernames.md)
   Returns the names of all available printers.
 - [init?(type: NSPrinter.TypeName)](nsprinter/init(type:).md)

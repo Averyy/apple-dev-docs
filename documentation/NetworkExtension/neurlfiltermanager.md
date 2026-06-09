@@ -8,7 +8,7 @@ A class you use to configure and control a URL filter.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst ?+
 - macOS 26.0+
 
 ## Declaration
@@ -24,39 +24,84 @@ The system performs URL filtering on your behalf according to your configuration
 During URL filtering, the system performs sub-URL generation to enumurate all possible sub-URLs for the URL in question. For example, the URL
 
 ```None
-https://www.example.com/a/b/c?id=123#fragment
+https://www.sub1.example.com/a/b/c?id=123#fragment
 ```
 
 parses into the following sub-URLs:
 
-- example.com
-- example.com/
-- www.example.com
-- www.example.com/
-- example.com/a
-- example.com/a/
-- www.example.com/a
-- www.example.com/a/
-- example.com/a/b
-- example.com/a/b/
-- www.example.com/a/b
-- www.example.com/a/b/
-- example.com/a/b/c
-- example.com/a/b/c/
-- www.example.com/a/b/c
-- www.example.com/a/b/c/
-- example.com/a/b/c?id=123
-- example.com/a/b/c?id=123/
-- www.example.com/a/b/c?id=123
-- example.com/a/b/c?id=123#fragment
-- www.example.com/a/b/c?id=123/
-- www.example.com/a/b/c?id=123#fragment
-- example.com/a/b/c?id=123#fragment/
-- www.example.com/a/b/c?id=123#fragment/
+- `example.com`
+- `example.com/`
+- `example.com/a`
+- `example.com/a/`
+- `example.com/a/b`
+- `example.com/a/b/`
+- `example.com/a/b/c`
+- `example.com/a/b/c/`
+- `example.com/a/b/c/?id=123`
+- `example.com/a/b/c/?id=123#fragment`
+- `example.com/a/b/c?id=123`
+- `example.com/a/b/c?id=123#fragment`
+- `example.com:443`
+- `example.com:443/`
+- `example.com:443/a`
+- `example.com:443/a/`
+- `example.com:443/a/b`
+- `example.com:443/a/b/`
+- `example.com:443/a/b/c`
+- `example.com:443/a/b/c/`
+- `example.com:443/a/b/c/?id=123`
+- `example.com:443/a/b/c/?id=123#fragment`
+- `example.com:443/a/b/c?id=123`
+- `example.com:443/a/b/c?id=123#fragment`
+- `sub1.example.com`
+- `sub1.example.com/`
+- `sub1.example.com/a`
+- `sub1.example.com/a/`
+- `sub1.example.com/a/b`
+- `sub1.example.com/a/b/`
+- `sub1.example.com/a/b/c`
+- `sub1.example.com/a/b/c/`
+- `sub1.example.com/a/b/c/?id=123`
+- `sub1.example.com/a/b/c/?id=123#fragment`
+- `sub1.example.com/a/b/c?id=123`
+- `sub1.example.com/a/b/c?id=123#fragment`
+- `sub1.example.com:443`
+- `sub1.example.com:443/`
+- `sub1.example.com:443/a`
+- `sub1.example.com:443/a/`
+- `sub1.example.com:443/a/b`
+- `sub1.example.com:443/a/b/`
+- `sub1.example.com:443/a/b/c`
+- `sub1.example.com:443/a/b/c/`
+- `sub1.example.com:443/a/b/c/?id=123`
+- `sub1.example.com:443/a/b/c/?id=123#fragment`
+- `sub1.example.com:443/a/b/c?id=123`
+- `sub1.example.com:443/a/b/c?id=123#fragment`
 
-The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager Punycodes the requested URL before parsing. Because of this, be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database. Neither the Bloom filter nor PIR supports wildcards or regular expressions.
+The manager matches each of these sub-URLs against your Bloom filter and then against the PIR URL database if there’s a Bloom filter match. The verdict indicates if the app should block the requested URL. Note that the manager Punycodes the requested URL before parsing. Because of this, be sure to Punycode your own URL dataset before constructing your Bloom filter and PIR database.
+
+Neither the Bloom filter nor PIR supports wildcards or regular expressions. For a more flexible URL matching solution, use the [`urlParsingConfiguration`](neurlfiltermanager/urlparsingconfiguration.md) property to select the URL components – the scheme, domain, path, query, fragment) – to include in the parsing results. You can also use the [`urlParsingRegularExpression`](neurlfiltermanager/urlparsingregularexpression.md) property to implement custom parsing.
 
 Instances of this class are thread-safe.
+
+##### Configuring the Pir Server
+
+URL filtering requires that your app’s information property list contain a top-level `PIRConfiguration` dictionary. The dictionary contains two keys, as follows:
+
+- **`serviceURL`**: (Required) The URL of the PIR server. This is equivalent to the [`pirServerURL`](neurlfiltermanager/pirserverurl.md) property.
+- **`issuerURL`**: (Optional) The URL of the Privacy Pass Issuer. This is equivalent to the [`pirPrivacyPassIssuerURL`](neurlfiltermanager/pirprivacypassissuerurl.md) property. If absent, the `issuerURL` defaults to the value of `serviceURL`.
+
+An example `PIRConfiguration` dictionary follows:
+
+```xml
+<key>PIRConfiguration</key>
+<dict>
+    <key>serviceURL</key>
+    <string>https://pir.example.com</string>
+    <key>issuerURL</key>
+    <string>https://issuer.example.com</string>
+</dict>
+```
 
 ## Topics
 
@@ -85,7 +130,16 @@ Instances of this class are thread-safe.
   Removes the URL filter configuration from the caller’s URL filter preferences.
 - [func handleConfigChange() -> any AsyncSequence<Bool, Never>](neurlfiltermanager/handleconfigchange.md)
   Sets up an observer for the filter configuration change notification and models it as an asynchronous sequence.
-### Working with filter status
+### Customizing filter parsing behavior
+- [var urlParsingConfiguration: NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/urlparsingconfiguration.md)
+  A property to configure the filter’s parser behavior.
+- [NEURLFilterManager.ParsingConfiguration](neurlfiltermanager/parsingconfiguration.md)
+  A type to configure the filter’s parser behavior.
+- [var urlParsingRegularExpression: String?](neurlfiltermanager/urlparsingregularexpression.md)
+  A regular expression used for advanced URL parsing.
+- [func setURLParsingRegularExpression(String?) throws](neurlfiltermanager/seturlparsingregularexpression(_:).md)
+  Sets a regular expression for use in URL parsing.
+### Working with filter statuses
 - [var status: NEURLFilterManager.Status](neurlfiltermanager/status-swift.property.md)
   The current status of the URL filter.
 - [func handleStatusChange() -> any AsyncSequence<NEURLFilterManager.Status, Never>](neurlfiltermanager/handlestatuschange.md)
@@ -99,6 +153,15 @@ Instances of this class are thread-safe.
   A Boolean value that determines how the filter behaves if it fails to make a filtering decision.
 - [var prefilterFetchInterval: TimeInterval](neurlfiltermanager/prefilterfetchinterval.md)
   The time interval at which the the filter control provider app extension runs.
+### Producing filtering reports
+- [var reportEndpoint: String?](neurlfiltermanager/reportendpoint.md)
+  The endpoint that the filter manager sends blocked URL reports to.
+- [var reportFormat: NEURLFilterManager.ReportFormat](neurlfiltermanager/reportformat-swift.property.md)
+  The format the manager uses to send blocked URL reports.
+- [NEURLFilterManager.ReportFormat](neurlfiltermanager/reportformat-swift.enum.md)
+  An enumertion of report format types used when reporting blocked URLs.
+- [var reportInterval: TimeInterval](neurlfiltermanager/reportinterval.md)
+  The time interval (in seconds) at which the system sends reports of blocked URLs.
 ### Identifying app and extension bundles
 - [var appBundleIdentifier: String?](neurlfiltermanager/appbundleidentifier.md)
   The bundle identifier of the URL filter app.

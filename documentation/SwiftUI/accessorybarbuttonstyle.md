@@ -11,6 +11,7 @@ A button style that you use for actions in an accessory toolbar that narrow the 
 ## Declaration
 
 ```swift
+nonisolated
 struct AccessoryBarButtonStyle
 ```
 

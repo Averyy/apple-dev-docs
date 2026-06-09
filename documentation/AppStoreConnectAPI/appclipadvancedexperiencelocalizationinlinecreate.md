@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an Advanced App Clip Experience Localization Inline Creates resource.
+An inline object for specifying localized text and action button when creating an App Clip advanced experience.
 
 **Availability**:
 - App Store Connect API 1.6+

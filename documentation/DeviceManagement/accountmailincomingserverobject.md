@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The settings for configuring an incoming mail server.
+The settings for the incoming mail server for this account.
 
 **Availability**:
 - iOS 15.0+
@@ -11,8 +11,6 @@ The settings for configuring an incoming mail server.
 - Mac Catalyst 15.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,7 +30,7 @@ object AccountMailIncomingServerObject
 ## See Also
 
 - [object AccountMailOutgoingServerObject](accountmailoutgoingserverobject.md)
-  The settings for configuring an outgoing mail server.
+  The settings for the outgoing mail server for this account.
 - [object AccountMailSMIMEObject](accountmailsmimeobject.md)
   Settings for S/MIME.
 

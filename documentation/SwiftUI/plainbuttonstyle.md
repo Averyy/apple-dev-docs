@@ -17,6 +17,7 @@ A button style that doesn’t style or decorate its content while idle, but may 
 ## Declaration
 
 ```swift
+nonisolated
 struct PlainButtonStyle
 ```
 

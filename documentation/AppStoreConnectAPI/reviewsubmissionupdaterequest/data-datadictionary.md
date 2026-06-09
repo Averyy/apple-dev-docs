@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a review submission update request resource.
+The data wrapper for a review submission update request, specifying the review action to take.
 
 **Availability**:
 - App Store Connect API 1.7+

@@ -13,8 +13,6 @@ A reference to data that describes a credential that represents a user name and 
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -46,13 +44,13 @@ Specify `com.apple.asset.credential.userpassword` as the declaration type.
 
 ### Objects
 - [object AssetCredentialUserNameAndPasswordAuthenticationObject](assetcredentialusernameandpasswordauthenticationobject.md)
-  The server authentication details for an asset-credential user name and password.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 - [object AssetCredentialUserNameAndPasswordReferenceObject](assetcredentialusernameandpasswordreferenceobject.md)
-  The external reference for an asset-credential user name and password.
+  The external reference. Ensure that the asset data:
 
 ## Properties
 
-- `Authentication` (AssetCredentialUserNameAndPasswordAuthenticationObject): The server authentication details.
+- `Authentication` (AssetCredentialUserNameAndPasswordAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM. Available: iOS 17+ | iPadOS 17+ | macOS 14+ | tvOS 17+ | visionOS 1.1+ | watchOS 10+
 - `Reference` (AssetCredentialUserNameAndPasswordReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.usernameandpassword` credential type
 - Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 

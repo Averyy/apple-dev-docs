@@ -58,6 +58,7 @@ struct HTTPCookiePropertyKey
   Creates an HTTP cookie property key using the given string.
 ### Type Properties
 - [static let setByJavaScript: HTTPCookiePropertyKey](httpcookiepropertykey/setbyjavascript.md)
+  An NSString object indicating that the cookie is set via JavaScript.
 
 ## Relationships
 

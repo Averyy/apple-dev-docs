@@ -18,7 +18,7 @@ A linear gradient.
 
 ```swift
 @frozen
-struct LinearGradient
+nonisolated struct LinearGradient
 ```
 
 ## Mentions

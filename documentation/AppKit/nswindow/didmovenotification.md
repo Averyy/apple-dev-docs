@@ -20,6 +20,8 @@ The notification object is the `NSWindow` object that has moved. This notificati
 
 > **Note**:  The system sends this notification when the window that moved didn’t also change size. See [`didResizeNotification`](nswindow/didresizenotification.md) for more information.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidMoveMessage`](nswindow/didmovemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

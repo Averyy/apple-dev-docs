@@ -55,7 +55,7 @@
   Accesses a view of this collection with the elements at the given indices.
 - [subscript<R>(R) -> Self.SubSequence](anyrandomaccesscollection/subscript(_:)-9umyp.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](anyrandomaccesscollection/subscript(_:)-ui2k.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](anyrandomaccesscollection/subscript(_:)-ui2k.md)
 ### Type Aliases
 - [AnyRandomAccessCollection.Index](anyrandomaccesscollection/index.md)
   A type that represents a position in the collection.

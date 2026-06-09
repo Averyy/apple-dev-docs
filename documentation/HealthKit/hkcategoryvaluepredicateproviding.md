@@ -43,6 +43,7 @@ protocol HKCategoryValuePredicateProviding : Hashable, RawRepresentable
 - [HKCategoryValueEnvironmentalAudioExposureEvent](hkcategoryvalueenvironmentalaudioexposureevent.md)
 - [HKCategoryValueHeadphoneAudioExposureEvent](hkcategoryvalueheadphoneaudioexposureevent.md)
 - [HKCategoryValueLowCardioFitnessEvent](hkcategoryvaluelowcardiofitnessevent.md)
+- [HKCategoryValueMenopausalState](hkcategoryvaluemenopausalstate.md)
 - [HKCategoryValueMenstrualFlow](hkcategoryvaluemenstrualflow.md)
 - [HKCategoryValueOvulationTestResult](hkcategoryvalueovulationtestresult.md)
 - [HKCategoryValuePregnancyTestResult](hkcategoryvaluepregnancytestresult.md)

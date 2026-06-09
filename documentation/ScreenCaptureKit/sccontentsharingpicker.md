@@ -6,8 +6,12 @@
 An instance of a picker presented by the operating system for managing frame-capture streams.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 14.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -50,6 +54,10 @@ class SCContentSharingPicker
   Displays the picker for a single type of capture selection.
 - [func present(for: SCStream, using: SCShareableContentStyle)](sccontentsharingpicker/present(for:using:).md)
   Displays the picker with an existing capture stream, allowing for a single type of capture selection.
+### Instance Properties
+- [var isAvailable: Bool](sccontentsharingpicker/isavailable.md)
+### Instance Methods
+- [func presentForCurrentApplication()](sccontentsharingpicker/presentforcurrentapplication.md)
 
 ## Relationships
 

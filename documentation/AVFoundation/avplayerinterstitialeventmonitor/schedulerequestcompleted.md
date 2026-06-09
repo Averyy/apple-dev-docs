@@ -27,9 +27,9 @@ struct ScheduleRequestCompleted
 
 ## Topics
 
-### Instance Properties
-- [let result: Result<Data, any Error>](avplayerinterstitialeventmonitor/schedulerequestcompleted/result.md)
+### Inspecting the completion
 - [let scheduleIdentifier: String](avplayerinterstitialeventmonitor/schedulerequestcompleted/scheduleidentifier.md)
+- [let result: Result<Data, any Error>](avplayerinterstitialeventmonitor/schedulerequestcompleted/result.md)
 
 ## Relationships
 

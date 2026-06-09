@@ -35,6 +35,13 @@ When the user recenters their view, the app will fade out and then be reposition
 
 - `action`: A closure to run when the view is recentered. This will run when the app has been recentered and is about to fade back in, equivalent to `WorldRecenterPhase.ended`.
 
+## See Also
+
+- [func onImmersionChange(initial: Bool, (ImmersionChangeContext, ImmersionChangeContext) -> Void) -> some View](view/onimmersionchange(initial:_:).md)
+  Performs an action when the immersion state of your app changes.
+- [func immersiveEnvironmentPicker<Content>(content: () -> Content) -> some View](view/immersiveenvironmentpicker(content:).md)
+  Add menu items to open immersive spaces from a media player’s environment picker.
+
 
 ---
 

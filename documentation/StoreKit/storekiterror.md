@@ -37,6 +37,9 @@ enum StoreKitError
   An unknown error occurred.
 - [StoreKitError.unsupported](storekiterror/unsupported.md)
   The operation doesn’t support this product.
+### Enumeration Cases
+- [StoreKitError.invalidPresentationContext](storekiterror/invalidpresentationcontext.md)
+  StoreKit UI cannot be presented from the current context.
 
 ## Relationships
 

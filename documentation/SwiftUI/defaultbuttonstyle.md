@@ -17,6 +17,7 @@ The default button style, based on the button’s context.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultButtonStyle
 ```
 

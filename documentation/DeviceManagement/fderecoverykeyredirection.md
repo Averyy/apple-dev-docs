@@ -7,8 +7,6 @@ The payload that configures FileVault recovery key redirection.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,32 +30,24 @@ Note these cautions:
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ## Properties
 
-- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`.
-- `RedirectURL` (string) *(required)*: The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://.
+- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`. Deprecated: macOS 10.13+
+- `RedirectURL` (string) *(required)*: The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://. Deprecated: macOS 10.13+
 
 ## See Also
 
-- [object AIMAccount](aimaccount.md)
-  The payload that configures an AIM account on the device.
 - [object APN](apn.md)
   The payload that configures access point names.
-- [object JabberAccount](jabberaccount.md)
-  The payload that configures a Jabber account.
-- [object MacOSServerAccount](macosserveraccount.md)
-  The payload that configures a macOS Server account.
 - [object MediaManagementAllowedMedia](mediamanagementallowedmedia.md)
   The payload that configures media management.
-- [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)

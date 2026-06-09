@@ -1,0 +1,20 @@
+# description
+
+**Framework**: ARKit  
+**Kind**: property
+
+A textual representation of this tracking state.
+
+**Availability**:
+- visionOS 26.0+
+
+## Declaration
+
+```swift
+var description: String { get }
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/arkit/accessoryanchor/trackingstate-swift.enum/description)*

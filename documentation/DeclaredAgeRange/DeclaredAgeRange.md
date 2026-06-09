@@ -32,6 +32,9 @@ Use the Declared Age Range API to request that people share their age range with
 ### Significant change acknowledgment
 - [struct SignificantUpdateAction](significantupdateaction.md)
   An action that presents a system sheet for significant app update acknowledgments.
+### Articles
+- [Implementing age assurance and permissions](implementing-age-assurance-and-permissions.md)
+  Create a significant change flow to inform people about important updates in your app and request age-related permissions.
 
 
 ---

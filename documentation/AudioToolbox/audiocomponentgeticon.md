@@ -31,4 +31,4 @@ func AudioComponentGetIcon(_ comp: AudioComponent) -> NSImage?
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox/audiocomponentgeticon(_:))*

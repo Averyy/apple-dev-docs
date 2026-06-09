@@ -22,7 +22,7 @@ func contentAppMessage(with params: MTRContentAppObserverClusterContentAppMessag
 
 #### Discussion
 
-Upon receipt, the data field MAY be parsed and interpreted. Message encoding is specific to the Content App. A Content App MAY when possible read attributes from the Basic Information Cluster on the Observer and use this to determine the Message encoding.
+Upon receipt, the data field MAY be parsed and interpreted.
 
 
 ---

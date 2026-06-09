@@ -7,8 +7,6 @@ A dictionary that contains the status of content caching on a device.
 
 **Availability**:
 - macOS 10.15.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

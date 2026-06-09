@@ -24,12 +24,7 @@ static let general: SystemLanguageModel.UseCase
 
 #### Discussion
 
-This is the default use case for the base version of the model, so if you use `SystemLanguageModel/default`, you don’t need to specify a use case.
-
-## See Also
-
-- [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-  Enhance the experience in your app by prompting an on-device large language model.
+This is the default use case for the base version of the model.
 
 
 ---

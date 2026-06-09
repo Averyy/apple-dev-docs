@@ -32,7 +32,7 @@ You implement this required method to ensure that the central device supports Bl
 ## See Also
 
 - [func centralManager(CBCentralManager, willRestoreState: [String : Any])](cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).md)
-  Tells the delegate the system is about to restore the central manager, as part of relaunching the app into the background.
+  Tells the delegate the system is about to restore the central manager.
 
 
 ---

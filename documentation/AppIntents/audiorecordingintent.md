@@ -39,12 +39,11 @@ Adopt this protocol to create an app intent for audio recording functionality an
 
 - [protocol AudioPlaybackIntent](audioplaybackintent.md)
   An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol AudioStartingIntent](audiostartingintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
 - [protocol CameraCaptureIntent](cameracaptureintent.md)
   Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
 - [protocol PlayVideoIntent](playvideointent.md)
   An intent that looks for videos based on a search term, then plays the content.
+- [enum VideoCategory](videocategory.md)
 
 
 ---

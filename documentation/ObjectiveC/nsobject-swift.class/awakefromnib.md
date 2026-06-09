@@ -40,6 +40,7 @@ Typically, you implement `awakeFromNib` for objects that require additional set 
 - [class func initialize()](nsobject-swift.class/initialize.md)
   Initializes the class before it receives its first message.
 - [init?(coder: NSCoder)](../Foundation/NSCoding/init(coder:).md)
+  Initializes the receiver from data in a given unarchiver.
 
 
 ---

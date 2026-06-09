@@ -49,6 +49,7 @@ You don’t create a [`WKHTTPCookieStore`](wkhttpcookiestore.md) object directly
 - [protocol WKHTTPCookieStoreObserver](wkhttpcookiestoreobserver.md)
   The methods to adopt in an object that monitors changes to a webpage’s cookies.
 ### Instance Methods
+- [func getCookies(for: URL, completionHandler: ([HTTPCookie]) -> Void)](wkhttpcookiestore/getcookies(for:completionhandler:).md)
 - [func setCookies([HTTPCookie], completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookies(_:completionhandler:).md)
 
 ## Relationships

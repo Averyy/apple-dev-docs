@@ -6,11 +6,11 @@
 Security restriction modes for WebView content.
 
 **Availability**:
-- iOS 26.5+
-- iPadOS 26.5+
+- iOS 26.4+
+- iPadOS 26.4+
 - Mac Catalyst ?+
-- macOS 26.5+
-- visionOS 26.5+
+- macOS 26.4+
+- visionOS 26.4+
 
 ## Declaration
 
@@ -31,7 +31,6 @@ enum SecurityRestrictionMode
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

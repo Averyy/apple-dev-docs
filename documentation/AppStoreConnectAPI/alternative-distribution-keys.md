@@ -27,18 +27,18 @@ When using web distribution, you need to create an alternative distribution key,
   List the alternative distribution key for your account.
 - [Read Alternative Distribution Key Information](get-v1-alternativedistributionkeys-_id_.md)
   Read the public key information for a specific alternative distribution key.
-- [GET /v1/apps/{id}/relationships/alternativeDistributionKey](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
+- [Get the alternative distribution key ID for an app](get-v1-apps-_id_-relationships-alternativedistributionkey.md)
 - [Read an App’s Alternative Distribution Key](get-v1-apps-_id_-alternativedistributionkey.md)
   Get the alternative distribution keys for a specific app.
 - [Remove an Alternative Distribution Key](delete-v1-alternativedistributionkeys-_id_.md)
   Remove an alternative distribution key from your account.
 ### Objects
 - [object AlternativeDistributionKey](alternativedistributionkey.md)
-  The data structure that represents an alternative distribution key resource.
+  A public key used to authorize an alternative marketplace or web distribution to offer your app outside the App Store.
 - [object AlternativeDistributionKeyResponse](alternativedistributionkeyresponse.md)
-  A response that contains a single alternative distribution key resource.
+  The response body for endpoints that create or read a single alternative distribution key.
 - [object AlternativeDistributionKeysResponse](alternativedistributionkeysresponse.md)
-  A response that contains a list of alternative distribution keys.
+  The response body for endpoints that list alternative distribution keys.
 - [object AlternativeDistributionKeyCreateRequest](alternativedistributionkeycreaterequest.md)
   The request body you use to create an alternative distribution key.
 - [object AppAlternativeDistributionKeyLinkageResponse](appalternativedistributionkeylinkageresponse.md)

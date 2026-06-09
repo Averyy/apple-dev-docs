@@ -6,8 +6,7 @@
 The response that contains the people in the organization.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 ## Declaration
 

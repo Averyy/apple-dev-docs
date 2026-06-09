@@ -9,7 +9,6 @@ A Base64-encoded string that contains the encrypted payment information to send 
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

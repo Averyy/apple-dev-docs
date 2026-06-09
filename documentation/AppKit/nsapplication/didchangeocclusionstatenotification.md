@@ -18,6 +18,8 @@ class let didChangeOcclusionStateNotification: NSNotification.Name
 
 The system posts this notification on the main actor.  Upon receiving this notification, you can query the app for its occlusion state. Note that this only notifies about changes in the state of the occlusion, not when the occlusion region changes. You can use this notification to increase responsiveness and save power by halting any expensive calculations that the user can’t see.
 
+To observe this notification using Swift concurrency, use [`NSApplication.DidChangeOcclusionStateMessage`](nsapplication/didchangeocclusionstatemessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

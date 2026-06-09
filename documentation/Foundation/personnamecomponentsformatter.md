@@ -172,7 +172,9 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
   Returns by reference a person name components object after creating it from a given string.
 ### Constants
 - [PersonNameComponentsFormatter.Style](personnamecomponentsformatter/style-swift.enum.md)
+  The formatting styles for person name components.
 - [PersonNameComponentsFormatter.Options](personnamecomponentsformatter/options.md)
+  Options for formatting person name components.
 - [Attributed String Key](attributed-string-key.md)
   This constant is used as a key for person name component attributes in attributed strings returned by the [`annotatedString(from:)`](personnamecomponentsformatter/annotatedstring(from:).md) method
 - [Attributed String Components](attributed-string-components.md)
@@ -181,6 +183,7 @@ If the Abbreviated style is unavailable, the Short style is used instead—unles
   This constant defines the delimiter used to separate name components.
 ### Instance Properties
 - [var locale: Locale!](personnamecomponentsformatter/locale.md)
+  Specifies the locale to format names.
 
 ## Relationships
 

@@ -92,6 +92,7 @@ If your app enters the background with an active file presenter, any other proce
   Tells your object that the file or file package’s ubiquity attributes have changed.
 ### Instance Methods
 - [func accommodatePresentedItemEviction(completionHandler: ((any Error)?) -> Void)](nsfilepresenter/accommodatepresenteditemeviction(completionhandler:).md)
+  Given that something in the system is waiting to evict the presented file or directory, do whatever it takes to ensure that the eviction will succeed and that the receiver’s application will behave properly when the eviction has happened, and then invoke the completion handler. This must include calling +[NSFileCoordinator removeFilePresenter:]. You may instead prevent eviction by passing the completion handler a meaningful error.
 
 ## Relationships
 

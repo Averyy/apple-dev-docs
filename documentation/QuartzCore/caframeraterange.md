@@ -37,9 +37,7 @@ struct CAFrameRateRange
 
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 
 

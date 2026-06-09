@@ -20,6 +20,7 @@ class HKLiveWorkoutBuilder
 
 ## Mentions
 
+- [Accessing workout zone data](accessing-workout-zone-data.md)
 - [Running workout sessions](running-workout-sessions.md)
 
 #### Overview
@@ -33,11 +34,9 @@ Use a live workout builder to create an [`HKWorkout`](hkworkout.md) sample durin
   A data source that provides live data from a workout session automatically.
 - [var workoutSession: HKWorkoutSession?](hkliveworkoutbuilder/workoutsession.md)
   The workout session created by the data source and associated with this builder.
-### Monitoring and controlling the workout
 - [var delegate: (any HKLiveWorkoutBuilderDelegate)?](hkliveworkoutbuilder/delegate.md)
   The live builder’s delegate.
-- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
-  A protocol for monitoring live workout builders.
+### Monitoring and controlling the workout
 - [var currentWorkoutActivity: HKWorkoutActivity?](hkliveworkoutbuilder/currentworkoutactivity.md)
   The current workout activity.
 - [var shouldCollectWorkoutEvents: Bool](hkliveworkoutbuilder/shouldcollectworkoutevents.md)
@@ -76,6 +75,8 @@ Use a live workout builder to create an [`HKWorkout`](hkworkout.md) sample durin
   An object that contains configuration information about a workout session.
 - [enum HKWorkoutSessionState](hkworkoutsessionstate.md)
   A workout session’s state.
+- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+  A protocol that defines methods for receiving updates from a live workout builder.
 - [class HKLiveWorkoutDataSource](hkliveworkoutdatasource.md)
   A data source that automatically provides live data from an active workout session.
 

@@ -6,8 +6,12 @@
 A Boolean value that indicates whether to capture audio.
 
 **Availability**:
-- Mac Catalyst 16.1+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 18.2+
 - macOS 13.0+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

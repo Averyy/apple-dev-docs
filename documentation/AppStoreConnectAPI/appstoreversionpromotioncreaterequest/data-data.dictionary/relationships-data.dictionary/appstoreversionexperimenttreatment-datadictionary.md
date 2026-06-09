@@ -16,6 +16,7 @@ object AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersionE
 
 ### Objects
 - [object AppStoreVersionPromotionCreateRequest.Data.Relationships.AppStoreVersionExperimentTreatment.Data](appstoreversionpromotioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionexperimenttreatment-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an App Store version promotion.
 
 ## Properties
 

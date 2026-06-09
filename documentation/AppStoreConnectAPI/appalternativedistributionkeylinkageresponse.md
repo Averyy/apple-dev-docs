@@ -25,11 +25,11 @@ object AppAlternativeDistributionKeyLinkageResponse
 ## See Also
 
 - [object AlternativeDistributionKey](alternativedistributionkey.md)
-  The data structure that represents an alternative distribution key resource.
+  A public key used to authorize an alternative marketplace or web distribution to offer your app outside the App Store.
 - [object AlternativeDistributionKeyResponse](alternativedistributionkeyresponse.md)
-  A response that contains a single alternative distribution key resource.
+  The response body for endpoints that create or read a single alternative distribution key.
 - [object AlternativeDistributionKeysResponse](alternativedistributionkeysresponse.md)
-  A response that contains a list of alternative distribution keys.
+  The response body for endpoints that list alternative distribution keys.
 - [object AlternativeDistributionKeyCreateRequest](alternativedistributionkeycreaterequest.md)
   The request body you use to create an alternative distribution key.
 

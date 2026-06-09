@@ -9,6 +9,7 @@ The paper margin of the document.
 - iOS 6.0+
 - iPadOS 6.0+
 - Mac Catalyst 13.1+
+- macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
@@ -16,7 +17,7 @@ The paper margin of the document.
 ## Declaration
 
 ```swift
-static let paperMargin: NSAttributedString.DocumentAttributeKey
+static let paperMarginDocumentAttribute: NSAttributedString.DocumentAttributeKey
 ```
 
 #### Discussion

@@ -22,6 +22,11 @@ init(dataRepresentation: Data) throws
 
 - `dataRepresentation`: The data containing the serialized paper model.
 
+## See Also
+
+- [init(bounds: CGRect)](papermarkup/init(bounds:).md)
+  Initializes and returns a new paper model with the specified bounds.
+
 
 ---
 

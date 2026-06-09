@@ -60,6 +60,7 @@ enum Target
   Indicates whether two targets are equal.
 ### Enumeration Cases
 - [case accessory(from: AnchoringComponent.AccessoryAnchoringSource, location: AnchoringComponent.AccessoryLocation)](anchoringcomponent/target-swift.enum/accessory(from:location:).md)
+  An anchor point attached to a specific point on a tracked accessory.
 ### Instance Methods
 - [func hash(into: inout Hasher)](anchoringcomponent/target-swift.enum/hash(into:).md)
   Hashes the essential components of the target by feeding them into the given hash function.

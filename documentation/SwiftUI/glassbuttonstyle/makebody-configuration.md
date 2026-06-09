@@ -16,8 +16,8 @@ Creates a view that represents the body of a button.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func makeBody(configuration: GlassButtonStyle.Configuration) -> some View
+nonisolated
+func makeBody(configuration: GlassButtonStyle.Configuration) -> some View
 ```
 
 #### Discussion

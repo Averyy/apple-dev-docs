@@ -30,7 +30,7 @@
 - [func withContiguousMutableStorageIfAvailable<R>((inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?](contiguousarray/withcontiguousmutablestorageifavailable(_:)-5k8vo.md)
   Executes a closure on the collection’s contiguous storage.
 ### Subscripts
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](contiguousarray/subscript(_:)-17v9t.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](contiguousarray/subscript(_:)-17v9t.md)
 - [subscript(Range<Self.Index>) -> Self.SubSequence](contiguousarray/subscript(_:)-27a3j.md)
 - [subscript(Range<Self.Index>) -> Slice<Self>](contiguousarray/subscript(_:)-6knxt.md)
   Accesses a contiguous subrange of the collection’s elements.

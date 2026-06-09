@@ -19,6 +19,8 @@ enum Code
 ### Enumeration Cases
 - [AccessoryTrackingProvider.Error.Code.accessoryLoadingFailed](accessorytrackingprovider/error/code-swift.enum/accessoryloadingfailed.md)
   Loading an accessory failed.
+- [AccessoryTrackingProvider.Error.Code.updateAccessoriesFailed](accessorytrackingprovider/error/code-swift.enum/updateaccessoriesfailed.md)
+  Updating accessories failed.
 ### Instance Properties
 - [var description: String](accessorytrackingprovider/error/code-swift.enum/description.md)
   A textual representation of the code.
@@ -26,7 +28,6 @@ enum Code
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)

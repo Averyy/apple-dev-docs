@@ -31,7 +31,7 @@ struct ContentView: View {
     let end = Date().addingTimeInterval(90)
 
     var body: some View {
-        ProgressView(interval: start...end
+        ProgressView(timerInterval: start...end
                      countsDown: false)
     }
 }

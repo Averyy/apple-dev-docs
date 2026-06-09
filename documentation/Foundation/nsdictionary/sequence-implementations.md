@@ -4,6 +4,9 @@
 
 ## Topics
 
+### Classes
+- [NSDictionary.Iterator](nsdictionary/iterator.md)
+  A class that you use to provide members of a dictionary, one-by-one.
 ### Instance Properties
 - [var underestimatedCount: Int](nsdictionary/underestimatedcount.md)
   A value less than or equal to the number of elements in the collection.

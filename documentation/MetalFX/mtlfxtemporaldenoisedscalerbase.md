@@ -93,6 +93,8 @@ protocol MTLFXTemporalDenoisedScalerBase : MTLFXFrameInterpolatableScaler
   A reactive-mask texture input for this scaler to evaluate.
 - [var reactiveMaskTextureFormat: MTLPixelFormat](mtlfxtemporaldenoisedscalerbase/reactivemasktextureformat.md)
   The pixel format of the input reactive mask texture for this denoiser scaler.
+- [var reactiveMaskTextureUsage: MTLTextureUsage](mtlfxtemporaldenoisedscalerbase/reactivemasktextureusage.md)
+  The minimal texture usage options that your app’s input reactive mask texture needs in order to support this denoiser scaler.
 - [var reactiveTextureUsage: MTLTextureUsage](mtlfxtemporaldenoisedscalerbase/reactivetextureusage.md)
   The minimal texture usage options that your app’s input reactive texture needs in order to support this denoiser scaler.
 - [var roughnessTexture: (any MTLTexture)?](mtlfxtemporaldenoisedscalerbase/roughnesstexture.md)

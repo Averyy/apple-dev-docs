@@ -1,4 +1,4 @@
-# Get a Customer Review Response
+# Get a customer review response
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -20,9 +20,9 @@ Get the response to a specific customer review.
 
 ## See Also
 
-- [Read Customer Review Response Information](get-v1-customerreviewresponses-_id_.md)
+- [Read customer review response information](get-v1-customerreviewresponses-_id_.md)
   Get information about a specific response you wrote to a customer review, including the response content and its state.
-- [GET /v1/customerReviews/{id}/relationships/response](get-v1-customerreviews-_id_-relationships-response.md)
+- [Get the response ID for a customer review](get-v1-customerreviews-_id_-relationships-response.md)
 
 
 ---

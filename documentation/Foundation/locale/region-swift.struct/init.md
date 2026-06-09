@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: A BCP 47 identifier, such as `US` for the United States. This parameter is case-insensitive.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/region-swift.struct/init(stringliteral:).md)
+  Creates a region from a BCP 47 identifier as a string literal.
+
 
 ---
 

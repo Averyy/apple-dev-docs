@@ -9,7 +9,6 @@ The remaining capacity available in a battery An integer ranging from `0` to `10
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -26,10 +25,10 @@ let stateOfCharge: Int
 
 - [let direction: ElectricityFlowDirection](electricvehicleloadevent/electricalmeasurement/direction.md)
   The electricity being imported or exported to the grid.
-- [let energy: Measurement<UnitEnergy>](electricvehicleloadevent/electricalmeasurement/energy.md)
-  The reported cumulative energy in milli-watt-hours [mWh] Accumulator is reset on `Session.State.end` The cummulative energy in milli-watt-hours [mWh] of the reporting device rounded to the nearest integer.
 - [let power: Measurement<UnitPower>](electricvehicleloadevent/electricalmeasurement/power.md)
   The instantaneous power in milli-watts [mW] of the reporting device.
+- [let energy: Measurement<UnitEnergy>](electricvehicleloadevent/electricalmeasurement/energy.md)
+  The cumulative energy in milli-watt-hours [mWh] of the reporting device rounded to the nearest integer.
 
 
 ---

@@ -11,7 +11,7 @@ The values that define content padding within the Look Around view frame.
 ## Declaration
 
 ```swift
-padding?: Padding;
+padding?: PaddingData;
 ```
 
 ## See Also

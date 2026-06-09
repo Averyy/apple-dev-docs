@@ -11,8 +11,8 @@ A toggle style that displays a checkbox followed by its label.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var checkbox: CheckboxToggleStyle { get }
+nonisolated
+static var checkbox: CheckboxToggleStyle { get }
 ```
 
 #### Discussion

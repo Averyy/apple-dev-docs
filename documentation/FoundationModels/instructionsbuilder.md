@@ -11,6 +11,7 @@ A type that represents an instructions builder.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +26,7 @@ struct InstructionsBuilder
 - [static func buildArray([some InstructionsRepresentable]) -> Instructions](instructionsbuilder/buildarray(_:).md)
   Creates a builder with the an array of prompts.
 - [static func buildBlock<each I>(repeat each I) -> Instructions](instructionsbuilder/buildblock(_:).md)
-  Creates a builder with the a block.
+  Creates a builder with a block.
 - [static func buildEither(first: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(first:).md)
   Creates a builder with the first component.
 - [static func buildEither(second: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(second:).md)

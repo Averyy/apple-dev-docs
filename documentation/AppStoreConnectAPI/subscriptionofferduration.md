@@ -21,11 +21,15 @@ string SubscriptionOfferDuration
 ## See Also
 
 - [object SubscriptionOfferCode.Attributes](subscriptionoffercode/attributes-data.dictionary.md)
+  Attributes that describe a subscription offer code resource.
 - [type SubscriptionOfferEligibility](subscriptionoffereligibility.md)
+  A string that represents the eligibility of a subscription offer.
 - [type SubscriptionCustomerEligibility](subscriptioncustomereligibility.md)
+  A string that represents a customer’s eligibility for a subscription offer.
 - [type SubscriptionOfferMode](subscriptionoffermode.md)
   A string that indicates the payment mode of a subscription offer.
 - [object SubscriptionOfferCode.Relationships](subscriptionoffercode/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

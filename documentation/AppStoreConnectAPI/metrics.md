@@ -16,7 +16,7 @@ Use the Metrics APIs to diagnose performance and other issues with matchmaking r
 - [Get Classic Match Requests](get-v1-gamecenterdetails-_id_-metrics-classicmatchmakingrequests.md)
   Get match requests that don’t use matchmaking rules.
 ### Getting rule results and errors
-- [Get Boolean Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
+- [Get boolean rule results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingbooleanruleresults.md)
   Get the results of a specific matchmaking rule that returns Boolean values.
 - [Get Numeric Rule Results](get-v1-gamecentermatchmakingrules-_id_-metrics-matchmakingnumberruleresults.md)
   Get the results of a specific matchmaking rule that returns numeric values.

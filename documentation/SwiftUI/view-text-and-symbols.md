@@ -39,8 +39,17 @@ To learn more about the kinds of views that you use to display text and the ways
   Sets a transform for the case of the text contained in this view when displayed.
 - [func textScale(Text.Scale, isEnabled: Bool) -> some View](view/textscale(_:isenabled:).md)
   Applies a text scale to text in the view.
+- [func textRenderer<T>(T) -> some View](view/textrenderer(_:).md)
+  Returns a new view such that any text views within it will use `renderer` to draw themselves.
 - [func underline(Bool, pattern: Text.LineStyle.Pattern, color: Color?) -> some View](view/underline(_:pattern:color:).md)
   Applies an underline to the text in this view.
+- [func attributedTextFormattingDefinition(_:)](view/attributedtextformattingdefinition(_:).md)
+  Apply a text formatting definition to nested views.
+### Label configuration
+- [func labelIconToTitleSpacing(CGFloat) -> some View](view/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](view/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 ### Text layout
 - [func allowsTightening(Bool) -> some View](view/allowstightening(_:).md)
   Sets whether text in this view can compress the space between characters when necessary to fit text in a line.
@@ -50,6 +59,8 @@ To learn more about the kinds of views that you use to display text and the ways
   Sets whether this view mirrors its contents horizontally when the layout direction is right-to-left.
 - [func kerning(CGFloat) -> some View](view/kerning(_:).md)
   Sets the spacing, or kerning, between characters for the text in this view.
+- [func lineHeight(AttributedString.LineHeight?) -> some View](view/lineheight(_:).md)
+  A modifier for the default line height in the view hierarchy.
 - [func minimumScaleFactor(CGFloat) -> some View](view/minimumscalefactor(_:).md)
   Sets the minimum amount that text in this view scales down to fit in the available space.
 - [func tracking(CGFloat) -> some View](view/tracking(_:).md)
@@ -58,6 +69,8 @@ To learn more about the kinds of views that you use to display text and the ways
   Sets the truncation mode for lines of text that are too long to fit in the available space.
 - [func typesettingLanguage(_:isEnabled:)](view/typesettinglanguage(_:isenabled:).md)
   Specifies the language for typesetting.
+- [func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View](view/writingdirection(strategy:).md)
+  A modifier for the default text writing direction strategy in the view hierarchy.
 ### Multiline text
 - [func lineLimit(_:)](view/linelimit(_:).md)
   Sets to a closed range the number of lines that text can occupy in this view.
@@ -72,6 +85,8 @@ To learn more about the kinds of views that you use to display text and the ways
 ### Text selection
 - [func textSelection<S>(S) -> some View](view/textselection(_:).md)
   Controls whether people can select text within this view.
+- [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
+  Sets the direction of a selection or cursor relative to a text character.
 ### Text entry
 - [func autocorrectionDisabled(Bool) -> some View](view/autocorrectiondisabled(_:).md)
   Sets whether to disable autocorrection for this view.
@@ -89,12 +104,16 @@ To learn more about the kinds of views that you use to display text and the ways
   Configures the text input suggestions for this view.
 - [func textInputSuggestions<Data, ID, Content>(Data, id: KeyPath<Data.Element, ID>, content: (Data.Element) -> Content) -> some View](view/textinputsuggestions(_:id:content:).md)
   Configures the text input suggestions for this view.
+- [func textContentType(_:)](view/textcontenttype(_:).md)
+  Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(WKTextContentType?) -> some View](view/textcontenttype(_:)-4dqqb.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on a watchOS device.
 - [func textContentType(NSTextContentType?) -> some View](view/textcontenttype(_:)-6fic1.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
+- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
+  Define which system text formatting controls are available.
 ### Find and replace
 - [func findNavigator(isPresented: Binding<Bool>) -> some View](view/findnavigator(ispresented:).md)
   Programmatically presents the find and replace interface for text editor views.
@@ -105,8 +124,19 @@ To learn more about the kinds of views that you use to display text and the ways
 ### Symbol appearance
 - [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
   Sets the rendering mode for symbol images within this view.
+- [func symbolColorRenderingMode(SymbolColorRenderingMode?) -> some View](view/symbolcolorrenderingmode(_:).md)
+  Sets the color rendering mode for symbol images.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](view/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
 - [func symbolVariant(SymbolVariants) -> some View](view/symbolvariant(_:).md)
   Makes symbols within the view show a particular variant.
+### Writing Tools
+- [func writingToolsAffordanceVisibility(Visibility) -> some View](view/writingtoolsaffordancevisibility(_:).md)
+  Specifies whether the system should show the Writing Tools affordance for text input views affected by the environment.
+- [func writingToolsBehavior(WritingToolsBehavior) -> some View](view/writingtoolsbehavior(_:).md)
+  Specifies the Writing Tools behavior for text and text input in the environment.
+- [struct WritingToolsBehavior](writingtoolsbehavior.md)
+  The Writing Tools editing experience for text and text input.
 
 ## See Also
 

@@ -6,8 +6,7 @@
 Get a list of assignments currently assigned to a user or device.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.1+
 
 #### Discussion
 

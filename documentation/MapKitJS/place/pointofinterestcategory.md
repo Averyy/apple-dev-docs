@@ -11,7 +11,7 @@ The category of the place.
 ## Declaration
 
 ```swift
-pointOfInterestCategory?: string;
+pointOfInterestCategory: PointOfInterestCategory | null;
 ```
 
 ## See Also

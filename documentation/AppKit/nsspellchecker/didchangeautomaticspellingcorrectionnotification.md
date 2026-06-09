@@ -14,6 +14,10 @@ This notification is posted when the spell checker did change text using automat
 class let didChangeAutomaticSpellingCorrectionNotification: NSNotification.Name
 ```
 
+#### Discussion
+
+To observe this notification using Swift concurrency, use [`NSSpellChecker.DidChangeAutomaticSpellingCorrectionMessage`](nsspellchecker/didchangeautomaticspellingcorrectionmessage.md).
+
 ## See Also
 
 - [class let didChangeAutomaticTextReplacementNotification: NSNotification.Name](nsspellchecker/didchangeautomatictextreplacementnotification.md)

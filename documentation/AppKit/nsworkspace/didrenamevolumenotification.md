@@ -27,6 +27,8 @@ The notification object is the shared [`NSWorkspace`](nsworkspace.md) instance. 
 
 > ❗ **Important**:  To receive this notification, use [`notificationCenter`](nsworkspace/notificationcenter.md) to register for it. If you use a different notification center to register, you won’t receive the notification.
 
+To observe this notification using Swift concurrency, use [`NSWorkspace.DidRenameVolumeMessage`](nsworkspace/didrenamevolumemessage.md).
+
 ## See Also
 
 - [class let willLaunchApplicationNotification: NSNotification.Name](nsworkspace/willlaunchapplicationnotification.md)

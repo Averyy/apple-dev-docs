@@ -14,6 +14,11 @@ A background task used to update your app’s user interface in preparation for 
 static var snapshot: BackgroundTask<SnapshotData, SnapshotResponse> { get }
 ```
 
+## See Also
+
+- [static var appRefresh: BackgroundTask<String?, Void>](backgroundtask/apprefresh.md)
+  A task that updates your app’s state in the background.
+
 
 ---
 

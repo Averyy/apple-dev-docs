@@ -17,7 +17,7 @@ Creates a section with a header and the provided section content.
 ## Declaration
 
 ```swift
-init(@TabContentBuilder<SelectionValue> content: () -> Content, @ViewBuilder header: () -> Header) where Header : View, Footer == EmptyView
+init(@TabContentBuilder<SelectionValue> content: () -> Content, @ContentBuilder header: () -> Header) where Header : View, Footer == EmptyView
 ```
 
 ## Parameters

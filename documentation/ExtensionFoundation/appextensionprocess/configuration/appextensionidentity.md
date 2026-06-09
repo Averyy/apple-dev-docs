@@ -17,7 +17,7 @@ The identifying information for the app extension you want to launch.
 ## Declaration
 
 ```swift
-var appExtensionIdentity: AppExtensionIdentity
+var appExtensionIdentity: AppExtensionIdentity { get set }
 ```
 
 #### Discussion

@@ -57,6 +57,9 @@ An [`EAAccessoryManager`](eaaccessorymanager.md) object coordinates the attached
 ### Getting the Available Accessories
 - [var connectedAccessories: [EAAccessory]](eaaccessorymanager/connectedaccessories.md)
   The accessory objects corresponding to the list of currently connected accessories.
+### Structures
+- [EAAccessoryManager.AccessoryDidConnectMessage](eaaccessorymanager/accessorydidconnectmessage.md)
+- [EAAccessoryManager.AccessoryDidDisconnectMessage](eaaccessorymanager/accessorydiddisconnectmessage.md)
 
 ## Relationships
 

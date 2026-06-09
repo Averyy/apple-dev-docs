@@ -16,6 +16,7 @@ object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCen
 
 ### Objects
 - [object GameCenterAchievementLocalizationCreateRequest.Data.Relationships.GameCenterAchievement.Data](gamecenterachievementlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterachievement-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a Game Center achievement localization.
 
 ## Properties
 

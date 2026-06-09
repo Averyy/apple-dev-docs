@@ -12,6 +12,7 @@ An action that scales the image to fill the input dimensions and resizing it, if
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

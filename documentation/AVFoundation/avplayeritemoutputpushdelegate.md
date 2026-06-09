@@ -55,6 +55,12 @@ protocol AVPlayerItemOutputPushDelegate : NSObjectProtocol, Sendable
   An object that provides a rendered pixel buffer and its position in pixels.
 - [class AVPlayerItemMetadataOutput](avplayeritemmetadataoutput.md)
   An object that vends collections of metadata items that a player item’s tracks carry.
+- [class AVPlayerItemSampleBufferOutput](avplayeritemsamplebufferoutput.md)
+  [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md) delivers `CMSampleBuffers` for [`AVPlayerItem`](avplayeritem.md) playback.
+- [class AVPlayerItemSampleBufferOutputConfiguration](avplayeritemsamplebufferoutputconfiguration.md)
+  Configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
+- [class AVPlayerItemSampleBufferOutputAudioConfiguration](avplayeritemsamplebufferoutputaudioconfiguration.md)
+  Audio-specific configuration options specified when creating an [`AVPlayerItemSampleBufferOutput`](avplayeritemsamplebufferoutput.md).
 
 
 ---

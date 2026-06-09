@@ -16,6 +16,7 @@ object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations
 
 ### Objects
 - [object InAppPurchaseV2.Relationships.InAppPurchaseLocalizations.Data](inapppurchasev2/relationships-data.dictionary/inapppurchaselocalizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an in-app purchase v2.
 
 ## Properties
 

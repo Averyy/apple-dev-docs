@@ -1,4 +1,4 @@
-# Modify the Billing Grace Period Opt-In Status and Duration
+# Modify the billing grace period opt-in status and duration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -71,10 +71,10 @@ There are now new duration options that can be set by using [`SubscriptionGraceP
 
 ## See Also
 
-- [Read the Billing Grace Period Value for an App](get-v1-apps-_id_-subscriptiongraceperiod.md)
+- [Read the billing grace period value for an app](get-v1-apps-_id_-subscriptiongraceperiod.md)
   Get the Boolean value that represents the grace period opt-in state for your app.
-- [GET /v1/apps/{id}/relationships/subscriptionGracePeriod](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
-- [Read the Billing Grace Period Value](get-v1-subscriptiongraceperiods-_id_.md)
+- [Get the subscription grace period ID for an app](get-v1-apps-_id_-relationships-subscriptiongraceperiod.md)
+- [Read the billing grace period value](get-v1-subscriptiongraceperiods-_id_.md)
   Get the Boolean value that represents the billing grace period opt-in state and the duration of the billing grace period.
 
 

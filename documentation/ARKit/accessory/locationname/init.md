@@ -14,6 +14,10 @@ Init without label provided as a convenience.
 init(_ rawValue: String)
 ```
 
+## Parameters
+
+- `rawValue`: The location name string.
+
 
 ---
 

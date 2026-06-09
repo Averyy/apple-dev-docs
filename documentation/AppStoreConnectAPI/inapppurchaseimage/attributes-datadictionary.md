@@ -27,7 +27,7 @@ object InAppPurchaseImage.Attributes
 ## See Also
 
 - [object InAppPurchaseImage.Relationships](inapppurchaseimage/relationships-data.dictionary.md)
-  The data structure that represents the relationships of a subscription image resource.
+  The relationships for an in-app purchase image, linking it to its associated in-app purchase.
 
 
 ---

@@ -6,6 +6,12 @@
 
 Deprecated. Use DADiskMountWithArguments() with “nobrowse” instead.
 
+## See Also
+
+- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
+
 
 ---
 

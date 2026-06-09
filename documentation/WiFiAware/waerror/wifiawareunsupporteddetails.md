@@ -8,6 +8,7 @@ The optional details describing the unavailability of Wi-Fi Aware on the device.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

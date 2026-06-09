@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 1.7+
 
@@ -28,6 +30,7 @@ object AppEventLocalization.Relationships
 ## See Also
 
 - [object AppEventLocalization.Attributes](appeventlocalization/attributes-data.dictionary.md)
+  Attributes that describe an app event localization resource.
 
 
 ---

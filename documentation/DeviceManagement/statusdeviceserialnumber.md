@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the device’s serial number.
+The status item that reports the device’s serial number.
 
 **Availability**:
 - iOS 16.0+
@@ -13,8 +13,6 @@ A status report of the device’s serial number.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,10 +28,22 @@ object StatusDeviceSerialNumber
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Allowed in local enrollment | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | Allowed in user scope | macOS, Shared iPad |
+
+##### Status Item Example
+
+```json
+{
+    "device": {
+        "identifier": {
+            "serial-number": "12345678"
+        }
+    }
+}
+```
 
 ## Properties
 
@@ -41,35 +51,32 @@ object StatusDeviceSerialNumber
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
-- [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
+  The status item that reports the device’s battery health.
 - [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
+  The status item that reports the device’s hardware model family.
 - [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
+  The status item that reports the device’s hardware model identifier.
 - [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
+  The status item that reports the device’s model marketing name.
 - [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
+  The status item that reports the device’s hardware number.
 - [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
+  The status item that reports the device’s operating system build version.
 - [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
+  The status item that reports the device’s operating system family.
 - [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
+  The status item that reports the device’s operating system marketing name.
 - [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
+  The status item that reports the device’s operating system supplemental build version and Background Security Improvement version.
 - [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
+  The status item that reports the device’s operating system Background Security Improvement version.
 - [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
+  The status item that reports the device’s operating system version.
+- [object StatusDeviceSystemHealth](statusdevicesystemhealth.md)
+  The status item that reports the device’s system health.
 - [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
-- [object StatusDiskManagementFileVaultEnabled](statusdiskmanagementfilevaultenabled.md)
-  The enabled status of the File Vault.
+  The status item that reports the device’s UDID.
 
 
 ---

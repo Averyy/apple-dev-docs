@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene Example:
+Implement this protocol on your UIScene delegate to handle AppIntent invocations targeting a specific scene
 
 **Availability**:
 - iOS 26.0+
@@ -20,8 +20,10 @@ protocol AppIntentSceneDelegate : UISceneDelegate
 
 #### Overview
 
+Use the scene delegate to respond to an app intent, as shown in the following example:
+
 ```swift
-func windowScene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent) {
+func scene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent) {
     switch appIntent {
       case let myIntent as MyIntent:
          windowScene.activationConditions.prefersToActivateForTargetContentIdentifierPredicate = NSPredicate("self == %@", myIntent.targetContentIdentifier)
@@ -43,9 +45,8 @@ func windowScene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent
 
 ## See Also
 
-- [struct IntentModes](intentmodes.md)
-  A set of options that describe an app intent’s behavior.
-- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+- [protocol UISceneAppIntent](uisceneappintent.md)
+- [protocol TargetContentProvidingIntent](targetcontentprovidingintent.md)
 
 
 ---

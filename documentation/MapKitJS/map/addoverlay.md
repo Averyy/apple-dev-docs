@@ -11,7 +11,7 @@ Adds an overlay to the map.
 ## Declaration
 
 ```swift
-addOverlay(overlay: Overlay): Overlay | undefined;
+addOverlay(overlay: Overlay): Overlay | null;
 ```
 
 #### Return Value

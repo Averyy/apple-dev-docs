@@ -16,7 +16,7 @@ Fetches all user identities that match entries in the user’s Contacts.
 ## Declaration
 
 ```swift
-func allUserIdentitiesFromContacts() async throws -> [CKUserIdentity]
+func discoverAllIdentities(completionHandler: @escaping @Sendable ([CKUserIdentity]?, (any Error)?) -> Void)
 ```
 
 #### Discussion

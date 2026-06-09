@@ -1,4 +1,4 @@
-# List Beta Build Localizations
+# List beta build localizations
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -23,11 +23,11 @@ Find and list beta build localizations currently associated with apps.
 
 ## See Also
 
-- [Read Beta Build Localization Information](get-v1-betabuildlocalizations-_id_.md)
+- [Read beta build localization information](get-v1-betabuildlocalizations-_id_.md)
   Get a specific beta build localization resource.
-- [Read the Build Information of a Beta Build Localization](get-v1-betabuildlocalizations-_id_-build.md)
+- [Read the build information of a beta build localization](get-v1-betabuildlocalizations-_id_-build.md)
   Get the build information for a specific beta build localization.
-- [GET /v1/betaBuildLocalizations/{id}/relationships/build](get-v1-betabuildlocalizations-_id_-relationships-build.md)
+- [Get the build ID for a beta build localization](get-v1-betabuildlocalizations-_id_-relationships-build.md)
 
 
 ---

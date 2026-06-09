@@ -9,7 +9,6 @@ An error that indicates the current Store and Forward mode has payments from a d
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

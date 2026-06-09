@@ -70,6 +70,8 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 - [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
   A request that finds faces within an image.
 ### Image segmentation and subject lifting
+- [Segmenting objects using taps, scribbles or rectangles](segmenting-objects-using-taps-scribbles-or-rectangles.md)
+  Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
 - [struct GenerateForegroundInstanceMaskRequest](generateforegroundinstancemaskrequest.md)
   A request that generates an instance mask of noticeable objects to separate from the background.
 - [struct GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
@@ -104,6 +106,8 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 - [struct DetectRectanglesRequest](detectrectanglesrequest.md)
   An image-analysis request that finds projected rectangular regions in an image.
 ### Image quality and saliency analysis
+- [Implementing saliency-based image cropping in iOS and watchOS](implementing-saliency-based-image-cropping-in-ios-and-watchos.md)
+  Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
 - [Generating high-quality thumbnails from videos](generating-thumbnails-from-videos.md)
   Identify the most visually pleasing frames in a video by using the image-aesthetics scores request.
 - [struct CalculateImageAestheticsScoresRequest](calculateimageaestheticsscoresrequest.md)
@@ -146,6 +150,7 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
   A type for objects produced by image-analysis requests.
 - [protocol VisionRequest](visionrequest.md)
   A type for image-analysis requests.
+- [protocol DownloadableAssetsRequest](downloadableassetsrequest.md)
 ### Request handlers
 - [class ImageRequestHandler](imagerequesthandler.md)
   An object that processes one or more image-analysis requests pertaining to a single image.
@@ -175,6 +180,19 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
   The errors that the framework produces.
 ### Legacy API
 - [Original Objective-C and Swift API](original-objective-c-and-swift-api.md)
+### Classes
+- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+  Generates a segmentation mask based on the provided points, rectangle, or scribble The request supports a maximum of 13 points or 11 points and a box
+### Structures
+- [struct BarcodeReaderTool](barcodereadertool.md)
+  A tool that scans machine-readable codes in an image.
+- [struct DownloadableAssetsProgress](downloadableassetsprogress.md)
+- [struct GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
+  Generates a segmentation mask based on the provided points, rectangle, mask or scribble The request supports a maximum of 14 points or 12 points and a box
+- [struct OCRTool](ocrtool.md)
+  A tool that recognizes text in an image.
+### Enumerations
+- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
 
 
 ---

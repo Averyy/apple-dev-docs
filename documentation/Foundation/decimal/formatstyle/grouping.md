@@ -44,6 +44,8 @@ let neverNums = nums.map { neverStyle.format($0) } // ["100.1", "1000.2", "10000
 
 - [func decimalSeparator(strategy: Decimal.FormatStyle.Configuration.DecimalSeparatorDisplayStrategy) -> Decimal.FormatStyle](decimal/formatstyle/decimalseparator(strategy:).md)
   Modifies the format style to use the specified decimal separator display strategy.
+- [func locale(Locale) -> Decimal.FormatStyle](decimal/formatstyle/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle](decimal/formatstyle/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(Decimal.FormatStyle.Configuration.Precision) -> Decimal.FormatStyle](decimal/formatstyle/precision(_:).md)

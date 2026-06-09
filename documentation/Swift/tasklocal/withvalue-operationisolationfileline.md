@@ -29,6 +29,8 @@ If the same task-local is bound multiple times, be it in the same task, or in sp
 
 If the value is a reference type, it will be retained for the duration of the operation closure.
 
+If this method is called form a context where no current Swift concurrency task is available, a fallback thread-local is used to manage the task locals and all existing semantics of task-locals are upheld as-if a task was actually available.
+
 
 ---
 

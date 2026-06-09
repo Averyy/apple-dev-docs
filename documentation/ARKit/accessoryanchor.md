@@ -16,6 +16,9 @@ struct AccessoryAnchor
 
 ## Topics
 
+### Operators
+- [static func == (AccessoryAnchor, AccessoryAnchor) -> Bool](accessoryanchor/==(_:_:).md)
+  Returns a Boolean value indicating whether two accessory anchors are equal.
 ### Instance Properties
 - [var accessory: Accessory](accessoryanchor/accessory.md)
   Accessory tracked by this anchor.
@@ -37,7 +40,7 @@ struct AccessoryAnchor
   Velocity of the accessory in the local coordinate system [m/s].
 ### Instance Methods
 - [func coordinateSpace(correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](accessoryanchor/coordinatespace(correction:).md)
-  The anchor coordinate space.
+  The anchor’s coordinate space.
 - [func coordinateSpace(for: Accessory.LocationName, correction: ARKitCoordinateSpace.Correction) -> ARKitCoordinateSpace](accessoryanchor/coordinatespace(for:correction:).md)
   The coordinate space of a location on this accessory.
 ### Enumerations
@@ -47,9 +50,12 @@ struct AccessoryAnchor
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -57,6 +63,10 @@ struct AccessoryAnchor
 
 ## See Also
 
+- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
 - [struct Accessory](accessory.md)

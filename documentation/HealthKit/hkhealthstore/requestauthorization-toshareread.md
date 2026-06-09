@@ -21,6 +21,7 @@ func requestAuthorization(toShare typesToShare: Set<HKSampleType>, read typesToR
 
 ## Mentions
 
+- [Accessing workout zone data](accessing-workout-zone-data.md)
 - [Authorizing access to health data](authorizing-access-to-health-data.md)
 
 #### Discussion

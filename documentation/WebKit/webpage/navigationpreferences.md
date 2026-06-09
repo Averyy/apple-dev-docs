@@ -30,8 +30,12 @@ Create a `NavigationPreferences` value when you want to change the default rende
 ### Instance Properties
 - [var allowsContentJavaScript: Bool](webpage/navigationpreferences/allowscontentjavascript.md)
   Indicates whether JavaScript from web content is allowed to run.
+- [var alternateRequest: URLRequest?](webpage/navigationpreferences/alternaterequest.md)
+  Used to make changes to the network request that will be used for this navigation’s main resource load.
 - [var isLockdownModeEnabled: Bool](webpage/navigationpreferences/islockdownmodeenabled.md)
   A Boolean value that indicates whether to use Lockdown Mode in the web page.
+- [var overrideReferrer: String?](webpage/navigationpreferences/overridereferrer.md)
+  Used to apply a custom `referer` header to all resource loads in the frame of this navigation.
 - [var preferredContentMode: WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/preferredcontentmode.md)
   The content mode for the web view to use when it loads and renders a webpage.
 - [var preferredHTTPSNavigationPolicy: WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/preferredhttpsnavigationpolicy.md)

@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](managedbufferpointer/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](managedbufferpointer/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (ManagedBufferPointer<Header, Element>, ManagedBufferPointer<Header, Element>) -> Bool](managedbufferpointer/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

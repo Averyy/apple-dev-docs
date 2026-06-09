@@ -102,6 +102,11 @@ Also see the [`NSComboBoxDataSource`](nscomboboxdatasource.md) protocol, which d
   Posted whenever the pop-up list of the `NSComboBox` is about to be dismissed.
 - [class let willPopUpNotification: NSNotification.Name](nscombobox/willpopupnotification.md)
   Posted whenever the pop-up list of the `NSComboBox` is going to be displayed.
+### Structures
+- [NSComboBox.SelectionDidChangeMessage](nscombobox/selectiondidchangemessage.md)
+- [NSComboBox.SelectionIsChangingMessage](nscombobox/selectionischangingmessage.md)
+- [NSComboBox.WillDismissMessage](nscombobox/willdismissmessage.md)
+- [NSComboBox.WillPopUpMessage](nscombobox/willpopupmessage.md)
 
 ## Relationships
 

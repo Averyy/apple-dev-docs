@@ -182,6 +182,18 @@ struct MKPointOfInterestCategory
   The point of interest category for surfing areas.
 - [static let swimming: MKPointOfInterestCategory](mkpointofinterestcategory/swimming.md)
   The point of interest category for swimming areas.
+### Type Properties
+- [static let airportTerminal: MKPointOfInterestCategory](mkpointofinterestcategory/airportterminal.md)
+- [static let automotiveDealership: MKPointOfInterestCategory](mkpointofinterestcategory/automotivedealership.md)
+- [static let commercialVehicleDealership: MKPointOfInterestCategory](mkpointofinterestcategory/commercialvehicledealership.md)
+- [static let informationBooth: MKPointOfInterestCategory](mkpointofinterestcategory/informationbooth.md)
+- [static let motorbikeDealership: MKPointOfInterestCategory](mkpointofinterestcategory/motorbikedealership.md)
+- [static let picnicArea: MKPointOfInterestCategory](mkpointofinterestcategory/picnicarea.md)
+- [static let rangerStation: MKPointOfInterestCategory](mkpointofinterestcategory/rangerstation.md)
+- [static let restArea: MKPointOfInterestCategory](mkpointofinterestcategory/restarea.md)
+- [static let scenicView: MKPointOfInterestCategory](mkpointofinterestcategory/scenicview.md)
+- [static let ticketOffice: MKPointOfInterestCategory](mkpointofinterestcategory/ticketoffice.md)
+- [static let visitorCenter: MKPointOfInterestCategory](mkpointofinterestcategory/visitorcenter.md)
 
 ## Relationships
 

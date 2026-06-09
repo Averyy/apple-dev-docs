@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to create a challenge resource.
+The request body for releasing a Game Center challenge version to players.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,6 +18,7 @@ object GameCenterChallengeVersionReleaseCreateRequest
 
 ### Dictionaries
 - [object GameCenterChallengeVersionReleaseCreateRequest.Data](gamecenterchallengeversionreleasecreaterequest/data-data.dictionary.md)
+  The request body you use to create a Game Center challenge version release.
 
 ## Properties
 
@@ -28,9 +29,9 @@ object GameCenterChallengeVersionReleaseCreateRequest
 - [object GameCenterChallengeVersionRelease](gamecenterchallengeversionrelease.md)
   The data structure that represent a challenge version release.
 - [object GameCenterChallengeVersionReleaseResponse](gamecenterchallengeversionreleaseresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single release record for a Game Center challenge version.
 - [object GameCenterChallengeVersionReleasesResponse](gamecenterchallengeversionreleasesresponse.md)
-  A response that contains a list of challenge resources.
+  A response containing a list of release records for a Game Center challenge version.
 
 
 ---

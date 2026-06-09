@@ -22,7 +22,7 @@ case inactive
 
 #### Discussion
 
-A scene in this phase doesn’t receive events and should pause timers and free any unnecessary resources. The scene might be completely hidden in the user interface or otherwise unavailable to the user. In macOS, scenes only pass through this phase temporarily on their way to the [`ScenePhase.background`](scenephase/background.md) phase.
+A scene in this phase doesn’t receive events and should pause timers and free any unnecessary resources. The scene might be completely hidden in the user interface, minimized, visible in the app switcher, or otherwise unavailable. In some cases, scenes only pass through this phase temporarily on their way to the [`ScenePhase.background`](scenephase/background.md) phase.
 
 An app or custom scene in this phase contains no scene instances in the [`ScenePhase.active`](scenephase/active.md) phase.
 

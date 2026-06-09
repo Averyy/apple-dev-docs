@@ -13,8 +13,6 @@ A reference to a PKCS #12 password-protected identity.
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -46,15 +44,15 @@ Specify `com.apple.asset.credential.identity` as the declaration type.
 
 ### Objects
 - [object AssetCredentialIdentityAuthenticationObject](assetcredentialidentityauthenticationobject.md)
-  The server authentication details for an asset-credential identity.
+  The server authentication details. If this key is absent, the default authentication type is MDM.
 - [object AssetCredentialIdentityReferenceObject](assetcredentialidentityreferenceobject.md)
-  A dictionary that describes the external reference.
+  The external reference. Ensure that the asset data:
 
 ## Properties
 
 - `Accessible` (string): The keychain accessibility that determines when the keychain item is available for use, which has these allowed values: - `Default`: The most restrictive accessibility that still satisfies all uses of the asset by configurations that reference it.
 - `AfterFirstUnlock`: The keychain item is only available after the first unlock of the device.
-- `Authentication` (AssetCredentialIdentityAuthenticationObject): The server authentication details.
+- `Authentication` (AssetCredentialIdentityAuthenticationObject): The server authentication details. If this key is absent, the default authentication type is MDM.
 - `Reference` (AssetCredentialIdentityReferenceObject) *(required)*: The external reference. Ensure that the asset data: - Is a JSON document that represents the `com.apple.credential.identity` credential type
 - Uses a media type of `application/json`, and if it includes a `ContentType` sub-key, that sub-key media type is also `application/json`
 

@@ -8,6 +8,7 @@ A structure that describes the starting point to use for financial data queries.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -28,6 +28,8 @@ Transition to embedded to remove an item from the multiview experience.
   An experience where the video embeds within its original container.
 - [AVExperienceController.Experience.expanded](avexperiencecontroller/experience-swift.enum/expanded.md)
   An experience where the system places the video outside of its original container.
+- [AVExperienceController.Experience.immersive](avexperiencecontroller/experience-swift.enum/immersive.md)
+  Indicates an experience in which the video extends beyond the app window boundaries/container.
 
 
 ---

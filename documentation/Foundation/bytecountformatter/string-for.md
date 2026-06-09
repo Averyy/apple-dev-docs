@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Formats `obj` as a byte count (if `obj` is an `NSNumber`) or specific byte measurement (if `obj` is an `NSMeasurement`) using the receiver’s settings.
+
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
@@ -17,6 +19,10 @@
 ```swift
 func string(for obj: Any?) -> String?
 ```
+
+#### Discussion
+
+Returns `nil` if `obj` is not of the correct class (`NSNumber` or `NSMeasurement`). Throws an exception if `obj` is an `NSMeasurement` whose unit does not belong to the `NSUnitInformationStorage` dimension.
 
 
 ---

@@ -9,7 +9,6 @@ Creates the default configuration you use to style a cell in a sidebar list.
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst ?+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

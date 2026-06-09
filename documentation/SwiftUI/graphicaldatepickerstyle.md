@@ -15,6 +15,7 @@ A date picker style that displays an interactive calendar or clock.
 ## Declaration
 
 ```swift
+nonisolated
 struct GraphicalDatePickerStyle
 ```
 

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single app screenshot set resource.
+The response body for endpoints that create or read a set of app screenshots for a display size.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -27,7 +27,7 @@ object AppScreenshotSetResponse
 - [object AppScreenshotSetCreateRequest](appscreenshotsetcreaterequest.md)
   The request body you use to create an app screenshot set.
 - [object AppScreenshotSetsResponse](appscreenshotsetsresponse.md)
-  A response that contains a list of app screenshot set resources.
+  The response body for endpoints that list app screenshot sets for an App Store version localization.
 - [object AppScreenshotSetAppScreenshotsLinkagesRequest](appscreenshotsetappscreenshotslinkagesrequest.md)
   A request body you use to reorder the screenshots in a screenshot set.
 - [object AppScreenshotSetAppScreenshotsLinkagesResponse](appscreenshotsetappscreenshotslinkagesresponse.md)

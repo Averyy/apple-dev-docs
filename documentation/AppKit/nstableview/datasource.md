@@ -16,7 +16,7 @@ weak var dataSource: (any NSTableViewDataSource)? { get set }
 
 #### Discussion
 
-The data source for the table view must implement the appropriate methods of the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol. See [`Populating a Table View Programmatically`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TableView/PopulatingView-TablesProgrammatically/PopulatingView-TablesProgrammatically.html#//apple_ref/doc/uid/10000026i-CH14) and the [`NSTableViewDataSource`](nstableviewdatasource.md) `protocol` specification for more information. Note that in versions of macOS prior to v10.12, the table view did not retain the data source in a managed memory environment.
+The data source for the table view must implement the appropriate methods of the [`NSTableViewDataSource`](nstableviewdatasource.md) protocol. For more information, see the [`NSTableViewDataSource`](nstableviewdatasource.md) `protocol` specification. Note that in versions of macOS prior to v10.12, the table view did not retain the data source in a managed memory environment.
 
 Setting the data source invokes [`tile()`](nstableview/tile().md).
 

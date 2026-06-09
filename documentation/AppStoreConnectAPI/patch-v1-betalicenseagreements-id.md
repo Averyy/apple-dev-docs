@@ -1,4 +1,4 @@
-# Modify a Beta License Agreement
+# Modify a beta license agreement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

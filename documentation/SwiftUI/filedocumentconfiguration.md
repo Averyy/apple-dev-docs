@@ -33,6 +33,9 @@ You receive an instance of this structure when you create a [`DocumentGroup`](do
   The URL of the open file document.
 - [var isEditable: Bool](filedocumentconfiguration/iseditable.md)
   A Boolean that indicates whether you can edit the document.
+### Instance Properties
+- [var creationSource: DocumentCreationSource?](filedocumentconfiguration/creationsource.md)
+  The source associated with the button that created this document.
 
 ## See Also
 

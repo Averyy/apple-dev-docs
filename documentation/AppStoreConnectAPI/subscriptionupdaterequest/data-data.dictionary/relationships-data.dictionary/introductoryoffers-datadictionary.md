@@ -16,6 +16,7 @@ object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers
 
 ### Objects
 - [object SubscriptionUpdateRequest.Data.Relationships.IntroductoryOffers.Data](subscriptionupdaterequest/data-data.dictionary/relationships-data.dictionary/introductoryoffers-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription update request.
 
 ## Properties
 

@@ -18,7 +18,7 @@ A shape provider that strokes its shape.
 
 ```swift
 @frozen
-struct StrokeShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
+nonisolated struct StrokeShapeView<Content, Style, Background> where Content : Shape, Style : ShapeStyle, Background : View
 ```
 
 #### Overview

@@ -43,6 +43,8 @@ Sets the button’s style.
   Sets the action on the PayLaterView. See `PKPayLaterAction`.
 - [func payLaterViewDisplayStyle(PayLaterViewDisplayStyle) -> some View](view/paylaterviewdisplaystyle(_:).md)
   Sets the display style on the PayLaterView. See `PKPayLaterDisplayStyle`.
+- [func payWithApplePayButtonDisableCardArt() -> some View](view/paywithapplepaybuttondisablecardart.md)
+  Sets the features that should be allowed to show on the payment buttons.
 - [func payWithApplePayButtonStyle(PayWithApplePayButtonStyle) -> some View](view/paywithapplepaybuttonstyle(_:).md)
   Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 - [func verifyIdentityWithWalletButtonStyle(VerifyIdentityWithWalletButtonStyle) -> some View](view/verifyidentitywithwalletbuttonstyle(_:).md)

@@ -6,7 +6,7 @@
 Returns the rectangle the text table block actually occupies, including padding, borders, and margins.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

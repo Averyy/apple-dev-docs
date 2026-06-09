@@ -20,7 +20,7 @@ static let `default`: SystemLanguageModel.Guardrails
 
 #### Discussion
 
-When the framework blocks unsafe content it throws a [`LanguageModelSession.GenerationError.guardrailViolation(_:)`](languagemodelsession/generationerror/guardrailviolation(_:).md) error.
+The `default` guardrail level means that all guardrails are turned on. When the guardrails block unsafe content from either the prompt input or model response, the framework throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error.
 
 ## See Also
 

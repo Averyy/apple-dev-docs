@@ -9,7 +9,7 @@ Returns the amount of space to add at the beginning of a paragraph.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Encodes a command to copy data from a slice of one tensor into a slice of another tensor.
+Encodes a command to copy data from a slice of the data plane of a tensor into a slice of the data plane of another tensor.
 
 **Availability**:
 - iOS 26.0+
@@ -22,16 +22,18 @@ func copy(from sourceTensor: any MTLTensor, sourceOrigin: MTLTensorExtents, sour
 
 #### Discussion
 
-This command applies reshapes if `sourceTensor` and `destinationTensor` are not aliasable.
+If `sourceTensor` and `destinationTensor` are not aliasable, this command applies a reshape operation.
+
+Ensure the first dimension of `sourceOrigin`, `sourceDimensions`, `destinationOrigin`, and `destinationDimensions` is byte aligned.
 
 ## Parameters
 
-- `sourceTensor`: A tensor instance that this command copies data from.
-- `sourceOrigin`: An array of offsets, in elements, to the first element of the slice of `sourceTensor` that this command copies data from.
-- `sourceDimensions`: An array of sizes, in elements, of the slice `sourceTensor` that this command copies data from.
-- `destinationTensor`: A tensor instance that this command copies data to.
-- `destinationOrigin`: An array of offsets, in elements, to the first element of the slice of `destinationTensor` that this command copies data to.
-- `destinationDimensions`: An array of sizes, in elements, of the slice of `destinationTensor` that this command copies data to.
+- `sourceTensor`: A tensor instance the method copies data from.
+- `sourceOrigin`: An array of per-dimension offsets that together locate the first element to copy in `sourceTensor`. Each element in this array corresponds to the dimension at the same index in `sourceDimensions`. Each offset value represents the number of elements from the start of that dimension.
+- `sourceDimensions`: An array of per-dimension sizes that together define the extent of the slice to copy from `sourceTensor`. Each element in this array corresponds to the dimension at the same index in `sourceOrigin`. Each size value represents the number of elements to include along that dimension, starting from the corresponding offset in `sourceOrigin`.
+- `destinationTensor`: A tensor instance the method copies data to.
+- `destinationOrigin`: An array of per-dimension offsets that together locate the first element to write in `destinationTensor`. Each element in this array corresponds to the dimension at the same index in `destinationDimensions`. Each offset value represents the number of elements from the start of that dimension.
+- `destinationDimensions`: An array of per-dimension sizes that together define the extent of the slice to write in `destinationTensor`. Each element in this array corresponds to the dimension at the same index in `destinationOrigin`. Each size value represents the number of elements to include along that dimension, starting from the corresponding offset in `destinationOrigin`.
 
 ## See Also
 

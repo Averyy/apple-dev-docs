@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-A structure that defines the style of pocket a scroll view will have.
+A structure that specifies blur transitions between scrolling content and an area with controls, such as toolbars.
 
 **Availability**:
 - iOS 26.0+
@@ -20,15 +20,33 @@ A structure that defines the style of pocket a scroll view will have.
 struct ScrollEdgeEffectStyle
 ```
 
+#### Overview
+
+By default, the system sets an automatic scroll edge effect style to provide a visual transition between scrolling content and stationary controls at both edges of the scroll view in the scrolling direction. The system determines which style to apply based on the platform and context. The [`hard`](scrolledgeeffectstyle/hard.md) style provides a more opaque, clearly defined linear boundary, and the [`soft`](scrolledgeeffectstyle/soft.md) style provides a subtle blurred transition:
+
+**Hard**:
+
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list content is nearly opaque, with a defined, straight horizontal line at the top.](https://docs-assets.developer.apple.com/published/233eca852dd9072e380bf0a300a19803/ScrollEdgeEffectStyle-2%402x.png)
+
+**Soft**:
+
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is translucent and blurry and gets progressively more opaque from the top to the bottom.](https://docs-assets.developer.apple.com/published/ce6a289e80029e13b1747a9b04087530/ScrollEdgeEffectStyle-1%402x.png)
+
+**None**:
+
+![A partial image of a list scrolling behind a bottom toolbar on iPhone. The area where the toolbar overlaps the list is transparent.](https://docs-assets.developer.apple.com/published/ebbd1937d2768b8c0ee06b7c59ff2797/ScrollEdgeEffectStyle-3%402x.png)
+
+Specify a `ScrollEdgeEffectStyle` for a scroll view using [`scrollEdgeEffectStyle(_:for:)`](view/scrolledgeeffectstyle(_:for:).md) when the automatic style the system applies isn’t appropriate for your content and controls. Apply [`scrollEdgeEffectHidden(_:for:)`](view/scrolledgeeffecthidden(_:for:).md) to a scroll view to remove the scroll edge effect entirely for an edge you specify.
+
 ## Topics
 
-### Type Properties
+### Creating a scroll edge effect style
 - [static var automatic: ScrollEdgeEffectStyle](scrolledgeeffectstyle/automatic.md)
-  The automatic scroll pocket style.
+  A scroll edge effect the system applies automatically when pinned content overlaps scrolling content.
 - [static var hard: ScrollEdgeEffectStyle](scrolledgeeffectstyle/hard.md)
-  A scroll edge effect with a hard cutoff and dividing line.
+  A scroll edge effect that provides a linear, nearly opaque boundary between pinned controls and scrolling content.
 - [static var soft: ScrollEdgeEffectStyle](scrolledgeeffectstyle/soft.md)
-  A scroll edge effect with a soft edge.
+  A scroll edge effect that provides a subtle, blurred boundary between pinned controls and scrolling content.
 
 ## Relationships
 

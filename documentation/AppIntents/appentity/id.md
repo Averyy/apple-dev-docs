@@ -20,10 +20,6 @@ The stable identity of the entity associated with this instance.
 var id: Self.ID { get }
 ```
 
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-
 
 ---
 

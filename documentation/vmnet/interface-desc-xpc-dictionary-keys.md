@@ -8,6 +8,7 @@ XPC dictionary keys supported by the `interface_desc` parameter passed to the `v
 
 ### Constants
 - [let vmnet_operation_mode_key: UnsafePointer<CChar>](vmnet_operation_mode_key.md)
+  The mode to use to configure the guest operating system network interface.
 - [let vmnet_interface_id_key: UnsafePointer<CChar>](vmnet_interface_id_key.md)
 
 ## See Also

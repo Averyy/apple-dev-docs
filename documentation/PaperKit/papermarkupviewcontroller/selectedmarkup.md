@@ -19,6 +19,13 @@ The selected contents in the UI.
 @preconcurrency var selectedMarkup: PaperMarkup { get set }
 ```
 
+## See Also
+
+- [var selection: Set<MarkupOrderedSet.ElementID>](papermarkupviewcontroller/selection.md)
+  The current selected elements on the canvas.
+- [func suggestedFrameForInserting(contentInFrame: CGRect) -> CGRect](papermarkupviewcontroller/suggestedframeforinserting(contentinframe:).md)
+  Returns the suggested frame for inserting shapes and other content.
+
 
 ---
 

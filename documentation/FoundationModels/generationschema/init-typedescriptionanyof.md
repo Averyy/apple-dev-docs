@@ -11,6 +11,7 @@ Creates a schema for a string enumeration.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -33,7 +34,7 @@ init(type: any Generable.Type, description: String? = nil, anyOf choices: [Strin
 - [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  A property that belongs to a generation schema.
+  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
 
 
 ---

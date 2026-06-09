@@ -9,8 +9,6 @@ Query a carrier URL for active eSIM cellular-plan profiles on a device.
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -27,10 +25,10 @@ An error response uses one of the following error codes:
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
-| Requires supervision | NA |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| User channel | N/A |
+| Requires supervision | N/A |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -81,7 +79,7 @@ An error response uses one of the following error codes:
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#RefreshCellularPlansCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

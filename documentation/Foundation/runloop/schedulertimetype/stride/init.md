@@ -20,6 +20,15 @@ Creates a run loop scheduler time interval from the given time interval.
 init(_ timeInterval: TimeInterval)
 ```
 
+## See Also
+
+- [init?<T>(exactly: T)](runloop/schedulertimetype/stride/init(exactly:).md)
+  Creates a run loop scheduler time interval from a binary integer type.
+- [init(floatLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(floatliteral:).md)
+  Creates a run loop scheduler time interval from a floating-point seconds value.
+- [init(integerLiteral: TimeInterval)](runloop/schedulertimetype/stride/init(integerliteral:).md)
+  Creates a run loop scheduler time interval from an integer seconds value.
+
 
 ---
 

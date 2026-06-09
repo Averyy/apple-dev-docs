@@ -50,7 +50,7 @@ enum HorizontalDirection
 ## See Also
 
 - [enum VerticalDirection](verticaldirection.md)
-  A direction on the horizontal axis.
+  A direction on the vertical axis.
 - [enum FrameResizePosition](frameresizeposition.md)
   The position along the perimeter of a rectangular frame (its edges and corners) from which it’s resized.
 - [enum FrameResizeDirection](frameresizedirection.md)

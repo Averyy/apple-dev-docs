@@ -24,6 +24,8 @@ radius?: number;
   A filter that lists points of interest categories to include or exclude.
 - [language](serviceconstructoroptions/language.md)
   A language identifier that determines the language for the service results text.
+- [signal](pointsofinterestsearchoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

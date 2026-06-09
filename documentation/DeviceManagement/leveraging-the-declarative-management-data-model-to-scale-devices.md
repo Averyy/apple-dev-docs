@@ -6,15 +6,19 @@ Use declarative management to make devices more autonomous and proactive.
 
 #### Overview
 
-Declarative Device Management, introduced in iOS 15, uses a declarative data model paradigm. This paradigm allows servers to avoid the common performance and scalability issues typically associated with serializing commands and polling devices over MDM.
+Declarative device management, introduced in iOS 15, uses a declarative data model paradigm. This paradigm allows a device management service to avoid the common performance and scalability issues typically associated with serializing commands and polling devices for device management.
 
 While declarative management is a new paradigm, it’s not a new protocol: the protocol has been added to the existing MDM protocol to make adoption simpler.
 
-The declarative management data model has three key components: declarations, that support device functionality, status, used to track changes in device state, and extensibility, allowing devices and servers to advertise the changes in their capabilities over time.
+The declarative management data model has three key components:
 
-##### Use Declarations to Define Policies Specify Assets and Store Organizational Information
+- **Declarations**: Support device functionality.
+- **Status**: Track changes in device state.
+- **Extensibility**: Allows devices and device management services to advertise the changes in their capabilities over time.
 
-Declarations are payloads the server defines and synchronizes to the device with the declarative management protocol. They represent policies the organization wants to enforce on the device, and other items such as management metadata.
+#### Use Declarations to Define Policies Specify Assets and Store Organizational Information
+
+Declarations are payloads the device management service defines and synchronizes to the device with the declarative management protocol. They represent policies the organization wants to enforce on the device, and other items such as management metadata.
 
 Declarations are a schema-driven data model, serialized as JSON objects. Each declaration has a common set of keys, each one of them required.
 
@@ -27,17 +31,17 @@ Declarations are a schema-driven data model, serialized as JSON objects. Each de
 
 The `Type` defines the type of the declaration. Standard types have a `com.apple.` prefix. The next component of the type is either `activation`, `asset`, `configuration`, or `management`. Each declaration type has its own additional components that group together similar items. For example, configurations representing different types of accounts have a `com.apple.configuration.account.` prefix.
 
-The `Identifier` uniquely identifies a single declaration within the set of all declarations sent to a device. This is typically a UUID value. When synchronizing declarations between server and device, this value is the primary key used to match the set of declarations sent by the server with the set the device previously received.
+The `Identifier` uniquely identifies a single declaration within the set of all declarations sent to a device. This is typically a UUID value. When synchronizing declarations between the device management service and a device, this value is the primary key used to match the set of declarations sent by the service with the set the device previously received.
 
-The `ServerToken` key represents a revision of a specific declaration. For example, a declaration with `Identifier` set to `A` and `ServerToken` set to `2`, is an update to a declaration with `Identifier` set to `A` and `ServerToken` set to `1`. The value of this key could be a UUID or a simple counter. When any part of the declaration Payload changes, update this value for correct synchronization to occur.
+The `ServerToken` key represents a revision of a specific declaration. For example, a declaration with `Identifier` set to `A` and `ServerToken` set to `2`, is an update to a declaration with `Identifier` set to `A` and `ServerToken` set to `1`. The value of this key could be a UUID or a simple counter. When any part of the declaration `Payload` changes, update this value for correct synchronization to occur.
 
 The combination of `Identifier` and `ServerToken` allows the device to determine which declarations are new, changed, or removed, during a synchronization operation.
 
 The `Payload` key is an object representing the data pertinent to the declaration type. A formal schema defines the necessary and optional data for each declaration type. Values can be strings, numbers, booleans, arrays, or dictionaries, and may be constrained in range, such as numbers 1 through 10, or to a specific set of values like a string enumeration.
 
-Every declaration has an associated `active` and `valid` state that the device shares with the server through the status channel. There are four types of declarations, Configurations, Assets, Activations, and Management.
+Every declaration has an associated `active` and `valid` state that the device shares with the device management service through the status channel. There are four types of declarations: Configurations, Assets, Activations, and Management.
 
-###### Use Configuration Declarations to Define the Policies
+#### Use Configuration Declarations to Define the Policies
 
 Configurations represent the policy applied to a device. For example, accounts, settings and restrictions, network setup, fonts, and so on. Configurations are similar to MDM’s profile payloads.
 
@@ -51,17 +55,17 @@ A configuration has a `valid` state which can have 3 values:
 
 A configuration is valid if it meets the following conditions:
 
-- The configuration was successfully synchronized from the server.
+- The configuration was successfully synchronized from the device management service.
 - The configuration is a valid JSON object conforming to the schema defined by the configuration type.
 - All referenced assets are valid.
 - The device can apply the policy when the configuration is active.
 
-###### Use Asset Declarations to Specify Additional Data
+#### Use Asset Declarations to Specify Additional Data
 
 Assets represent ancillary data needed by configurations. There are two main use cases for assets:
 
-- Large data: a large item of data, such as an image, a font, or entire font suite. In this case, the asset’s Payload contains a key with a URL value pointing to the actual data. This allows shifting the distribution of large data items from the management server to a server more suited to handling such traffic (for example, a content delivery network). The data for the asset is only downloaded when needed.
-- Personal data: user specific data such as a name, email address, passwords for accounts, or certificates. This takes the per-user customized data out of configurations, and moves it into smaller, dedicated objects.
+- **Large data**: A large item of data, such as an image, a font, or entire font suite. In this case, the asset’s `Payload` contains a key with a URL value pointing to the actual data. This allows shifting the distribution of large data items from the device management service to a service more suited to handling such traffic (for example, a content delivery network). The data for the asset is only downloaded when needed.
+- **Personal data**: User-specific data such as a name, email address, passwords for accounts, or certificates. This takes the per-user customized data out of configurations, and moves it into smaller, dedicated objects.
 
 Assets have a one-to-many relationship with configurations: one asset may be referenced by many configurations. The reference takes the form of a specific key in a configuration payload whose value is the `Identifier` key value of the asset.
 
@@ -77,15 +81,15 @@ An asset has a `valid` state which can have 3 values:
 
 An asset is valid if it meets the following conditions:
 
-- The asset was successfully synchronized from the server.
+- The asset was successfully synchronized from the device management service.
 - The asset is a valid JSON object conforming to the schema defined by the asset type.
 - All referenced asset data is successfully downloaded when the asset is active.
 
-###### Use Activation Declarations to Apply Logic to Your Configurations
+#### Use Activation Declarations to Apply Logic to Your Configurations
 
 Activations specify the logic that determines how and when, the system applies the policies defined by configurations to the device. Activations contain a set of configurations that the system applies atomically to the device, such that the system applies all referenced configurations together, or none. Therefore all of the configurations, and assets referenced by those configurations, must be valid in order for the system to apply the activation.
 
-An activation has an `active` state which is `true` if the activation will attempt to apply the policies defined by its configurations, and `false` otherwise.
+An activation has an `active` state which is `true` if the activation attempts to apply the policies defined by its configurations, and `false` otherwise.
 
 An activation has a `valid` state which can have 3 values:
 
@@ -95,7 +99,7 @@ An activation has a `valid` state which can have 3 values:
 
 An activation is valid if it meets the following conditions:
 
-- The activation was successfully synchronized from the server.
+- The activation was successfully synchronized from the device management service.
 - The activation is a valid JSON object conforming to the schema defined by the activation type.
 
 Activations have a many-to-many relationship with configurations: one activation can reference many configurations, and many activations can reference the same configuration.
@@ -118,9 +122,9 @@ This is an example of a predicate that checks whether the device is an iPad:
 (@status(device.model.family) == 'iPad')
 ```
 
-###### Use Management Declarations to Define Organizational Data
+#### Use Management Declarations to Define Organizational Data
 
-Management declarations convey management metadata such as information about the organization managing the device, as well as details about the server’s supported features.
+Management declarations convey management metadata such as information about the organization managing the device, as well as details about the features supported by the device management service.
 
 A management declaration has an `active` state which is always `false` and not part of the activation process.
 
@@ -132,18 +136,18 @@ A management declaration has a `valid` state which can have 3 values:
 
 A management declaration is valid if it meets the following conditions:
 
-- The management declaration was successfully synchronized from the server.
+- The management declaration was successfully synchronized from the device management service.
 - The management declaration is a valid JSON object conforming to the schema defined by the management declaration type.
 
-##### Use Status to Report Device State
+#### Use Status to Report Device State
 
-Devices report changes in device state back to the server as JSON status items, using a status report. There are several categories of device states:
+Devices report changes in device state back to the device management service as JSON status items, using a status report. There are several categories of device states:
 
-- Management states - the valid and active states for all declarations on the device, and any error details describing why a declaration is invalid or inactive.
-- Device properties - properties of the device (for example, device model, OS version, etc).
-- Other properties (accounts, passcode, and MDM installed apps).
+- **Management states** — The valid and active states for all declarations on the device, and any error details describing why a declaration is invalid or inactive.
+- **Device properties** — Properties of the device (for example, device model, OS version, and so on).
+- **Other properties** — Including accounts, passcode, and apps installed using device management.
 
-A status item contains a status name (similar to a “key path”) and an associated value. A status name is a string containing a dot-separated sequence of tokens (for example, device.identifier.serial-number). Each segment of the name defines a key in the overall hierarchical status dictionary.
+A status item contains a status name (similar to a “key path”) and an associated value. A status name is a string containing a dot-separated sequence of tokens (for example, `device.identifier.serial-number). Each segment of the name defines a key in the overall hierarchical status dictionary.
 
 Consider the following three status items: `device.identifier.serial-number`, `device.identifier.udid`, and `management.push-token`. The status reported by the device would be:
 
@@ -165,28 +169,22 @@ A status item’s value can be a string, number, boolean, null, or array.
 
 Status item arrays have values containing JSON objects with a well-defined schema, with the same schema used for all items in an array. The schemas are specific to the type of item the status represents. Devices report changes to array status items incrementally (see [`StatusReport`](statusreport.md) for additional details).
 
-To receive updates for status items as they change, the server must subscribe to each status item by sending a [`ManagementStatusSubscriptions`](managementstatussubscriptions.md) declaration to the device. All management status items (those that begin with the `management.` name prefix) are automatically reported to the server, and don’t need to be referenced in a status subscription.
+To receive updates for status items as they change, the device management service must subscribe to each status item by sending a [`ManagementStatusSubscriptions`](managementstatussubscriptions.md) declaration to the device. All management status items (those that begin with the `management.` name prefix) are automatically reported to the service, and don’t need to be referenced in a status subscription.
 
-When the status of a device changes or a status subscription declaration becomes active, the device sends a [`StatusReport`](statusreport.md) to the server.
+When the status of a device changes or a status subscription declaration becomes active, the device sends a [`StatusReport`](statusreport.md) to the device management service.
 
-##### Use Client and Server Capabilities to Match Feature Sets
+#### Use Capabilities to Match Feature Sets Between Your Service and Devices
 
-The set of capabilities and features supported by declarative management can vary over time as the system adds, modifies and deprecates items. Devices and servers advertise their capabilities and features to each other, so they can adopt new behaviors even as the server and device are independently upgraded, without the need to keep them in lock-step.
+The set of capabilities and features supported by declarative management can vary over time as the system adds, modifies and deprecates items. Devices and device management services advertise their capabilities and features to each other, so they can adopt new behaviors even as the service and device are independently upgraded, without the need to keep them in lock-step.
 
-The device advertises the set of declaration types and status items it supports with the [`StatusManagementClientCapabilities`](statusmanagementclientcapabilities.md) status item. When the device enables declarative management, the device sends this status item to the server. Servers need to persist this on a per-enrollment basis as the set of capabilities might vary by more than just device type or operating system version. The server shouldn’t send declarations to the device that it hasn’t advertised as supported.
+The device advertises the set of declaration types and status items it supports with the [`StatusManagementClientCapabilities`](statusmanagementclientcapabilities.md) status item. When the device enables declarative management, the device sends this status item to the device management service. Device management services need to persist this on a per-enrollment basis as the set of capabilities might vary by more than just device type or operating system version. The service shouldn’t send declarations to the device that it hasn’t advertised as supported.
 
-The server advertises the set of protocol features it supports through the [`ManagementServerCapabilities`](managementservercapabilities.md) declaration that it sends to the device when it enables declarative management. If the server capabilities change any time after enablement, then the server should use the normal declaration synchronization process to update the device with the new values.
+The device management service advertises the set of protocol features it supports through the [`ManagementServerCapabilities`](managementservercapabilities.md) declaration that it sends to the device when it enables declarative management. If the service capabilities change any time after enablement, then the service should use the normal declaration synchronization process to update the device with the new values.
 
 ## See Also
 
-- [Integrating Declarative Management](integrating-declarative-management.md)
-  Use the declarative management protocol to manage MDM features such as device enrollment and un-enrollment and device and user authentication.
-- [Deploying apps with declarative management](deploying-apps-with-declarative-management.md)
-  Use declarative app configurations to deploy managed apps to devices.
-- [Declarations](devicemanagement-declarations.md)
-  The available declarations for device management.
-- [Status Reports](status-reports.md)
-  Reports from the device about its current state.
+- [Integrating declarative management](integrating-declarative-management.md)
+  Use declarative management to deploy configurations and retrieve status updates more efficiently.
 
 
 ---

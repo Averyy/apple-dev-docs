@@ -11,7 +11,7 @@ An event object that the map view dispatches when someone selects or deselects a
 ## Declaration
 
 ```swift
-class MapOverlaySelectionEvent extends MapKitEvent
+class MapOverlaySelectionEvent extends Event
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ class MapOverlaySelectionEvent extends MapKitEvent
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

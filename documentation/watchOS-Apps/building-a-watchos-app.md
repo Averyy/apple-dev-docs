@@ -157,6 +157,8 @@ When your app launches, the system instantiates your delegate class and calls [`
   Integrate SwiftUI elements and watch-specific features, and build widgets for the Smart Stack.
 - [watchOS updates](../Updates/watchos.md)
   Learn about important changes to watchOS.
+- [Migrating to a single-target watchOS app](migrating-to-a-single-target-watchos-app.md)
+  Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
 
 
 ---

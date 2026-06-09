@@ -8,9 +8,49 @@ Learn about important changes to Xcode.
 
 Browse notable changes in [`Xcode`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode).
 
-#### February 2026
+#### June 2026
 
 The latest version of Xcode includes the following new features.
+
+##### Projects and Workspaces
+
+- Create common projects more quickly, such as a SwiftUI app and a Swift playground, customize the toolbar, and apply themes to your workspace or specific projects using the new Appearance settings. Edit Markdown files with the new visual editor. For more information, see [`What’s new in Xcode`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/258/).
+
+##### Coding Intelligence
+
+- Xcode fully integrates coding intelligence in your workspace, letting you start multiple conversations from anywhere and lay out the new transcript and artifacts panes alongside other editor panes. For more information, see [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/Xcode/writing-code-with-intelligence-in-xcode).
+- Use agents that iterate and refine your app more independently, and use Xcode’s built-in guidance, skills, and expertise, such as Apple Documentation Search. For more information, see [`Setting up coding intelligence`](https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence).
+- Enter plan mode to go from a drawing of your interface to in-depth design documents before you modify any code. For more information, see [`Xcode, agents, and you`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/259/).
+- In a conversation with an agent, tell it to localize your app, and Xcode adds languages, string catalogs, and translations for you. For more information, see [`Localizing your app using agents`](https://developer.apple.com/documentation/Xcode/localizing-your-app-using-agents).
+- Give agents more context, manage the commands, tools, and skills they use, and install external plug-ins to expand their abilities. For more information, see [`Extending and customizing agents`](https://developer.apple.com/documentation/Xcode/extending-and-customizing-agents).
+
+##### Asset Management
+
+- Use Icon Composer to adjust the strength of refraction in your icon layers, choose how highlights align with each layer, and preview your icon in previous operating system releases.
+
+##### Devices and Simulators
+
+- Use the new Device Hub to run your app on simulated and physical devices and to view screens and interact with physical devices on your Mac. Using the device inspector, configure their environments and access their contents, including downloading diagnostics. For more information, see [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub).
+
+##### Instruments
+
+- Explore CPU profiles in Instruments using three complementary view modes: Call Tree, Flame Graph, and Top Functions. Additionally, use Run Comparison to measure the impact of code changes by comparing two profiles. For more information, see [`Analyzing CPU profiles with call tree views`](https://developer.apple.com/documentation/Xcode/analyzing-cpu-profiles-with-call-tree-views).
+
+##### Organizer
+
+- Prioritize performance work using the new Insights overview in Xcode Organizer, which surfaces high-impact regressions across metrics and diagnostic reports for your app in one place. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app#View-key-insights-into-your-app).
+- Get coding intelligence triage recommendations directly from Organizer reports. After selecting a hang, crash, battery, launch time, or disk write report, click Generate Recommendations in the Inspector to have Xcode start a new conversation in the coding assistant with the report’s context as the prompt.
+- Compare your app’s performance metrics against goals derived from similar apps and your app’s own historical performance. Xcode Organizer displays a recommended goal value as a dashed line on metric charts when your app’s current values exceed the target. For more information, see [`Analyzing the performance of your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-the-performance-of-your-shipping-app#Compare-your-apps-metrics-with-goal-values).
+- Monitor your app’s storage footprint across releases using the Storage pane in Xcode Organizer. Compare your app’s usage against similar apps. For more information, see [`Monitoring your app’s storage metrics`](https://developer.apple.com/documentation/Xcode/monitoring-your-app-s-storage-metrics#Monitor-your-apps-size).
+- Track animation hitches across all animated interactions — including scrolling, transitions, and other continuous motion — using the Hitches metric in Xcode Organizer. For more information, see [`Analyzing responsiveness issues in your shipping app`](https://developer.apple.com/documentation/Xcode/analyzing-responsiveness-issues-in-your-shipping-app#View-your-apps-hitch-rate).
+
+##### Xcode Cloud
+
+- Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. Later, add workflows to distribute your app through TestFlight or the App Store. In addition, Xcode Cloud supports webhooks and additional repositories. For more information, see [`Build, deliver, and automate with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/261/).
+
+#### February 2026
+
+Xcode 26.3 includes the following new features.
 
 ##### Intelligence
 

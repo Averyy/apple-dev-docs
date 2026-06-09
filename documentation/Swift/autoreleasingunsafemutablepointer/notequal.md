@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion
@@ -31,12 +31,7 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 - `lhs`: A value to compare.
 - `rhs`: Another value to compare.
 
-## See Also
-
-- [static func == (Self, Self) -> Bool](autoreleasingunsafemutablepointer/==(_:_:)-4wfti.md)
-  Returns a Boolean value indicating whether two values are equal.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/autoreleasingunsafemutablepointer/!=(_:_:)-1bazr)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/autoreleasingunsafemutablepointer/!=(_:_:)-9vqnj)*

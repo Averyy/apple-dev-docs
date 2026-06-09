@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the relationship to an app for the accessibility declaration create request resource.
+The resource linkage identifying the app associated with an accessibility declaration create request.
 
 **Availability**:
 - App Store Connect API 4.0+

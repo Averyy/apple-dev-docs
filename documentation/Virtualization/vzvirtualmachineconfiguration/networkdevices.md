@@ -20,20 +20,16 @@ The default value of this property is an empty array. If your VM supports one or
 
 ## See Also
 
-- [var consoleDevices: [VZConsoleDeviceConfiguration]](vzvirtualmachineconfiguration/consoledevices.md)
-  The array of console devices that you expose to the guest operating system.
-- [var socketDevices: [VZSocketDeviceConfiguration]](vzvirtualmachineconfiguration/socketdevices.md)
-  The socket device that you use to implement port-based communication with the guest operating system.
-- [var serialPorts: [VZSerialPortConfiguration]](vzvirtualmachineconfiguration/serialports.md)
-  The array of serial ports that you expose to the guest operating system.
-- [var storageDevices: [VZStorageDeviceConfiguration]](vzvirtualmachineconfiguration/storagedevices.md)
-  The array of storage devices that you expose to the guest operating system.
-- [var entropyDevices: [VZEntropyDeviceConfiguration]](vzvirtualmachineconfiguration/entropydevices.md)
-  The array of randomization devices that you expose to the guest operating system.
 - [var audioDevices: [VZAudioDeviceConfiguration]](vzvirtualmachineconfiguration/audiodevices.md)
   The list of audio devices.
+- [var consoleDevices: [VZConsoleDeviceConfiguration]](vzvirtualmachineconfiguration/consoledevices.md)
+  The array of console devices that you expose to the guest operating system.
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+  The array of custom virtio devices that you expose to the guest operating system.
 - [var directorySharingDevices: [VZDirectorySharingDeviceConfiguration]](vzvirtualmachineconfiguration/directorysharingdevices.md)
   The list of directory sharing devices.
+- [var entropyDevices: [VZEntropyDeviceConfiguration]](vzvirtualmachineconfiguration/entropydevices.md)
+  The array of randomization devices that you expose to the guest operating system.
 - [var graphicsDevices: [VZGraphicsDeviceConfiguration]](vzvirtualmachineconfiguration/graphicsdevices.md)
   The list of graphics devices.
 - [var keyboards: [VZKeyboardConfiguration]](vzvirtualmachineconfiguration/keyboards.md)
@@ -42,8 +38,16 @@ The default value of this property is an empty array. If your VM supports one or
   The hardware platform to use.
 - [var pointingDevices: [VZPointingDeviceConfiguration]](vzvirtualmachineconfiguration/pointingdevices.md)
   The list of pointing devices.
+- [var serialPorts: [VZSerialPortConfiguration]](vzvirtualmachineconfiguration/serialports.md)
+  The array of serial ports that you expose to the guest operating system.
+- [var socketDevices: [VZSocketDeviceConfiguration]](vzvirtualmachineconfiguration/socketdevices.md)
+  The socket device that you use to implement port-based communication with the guest operating system.
+- [var storageDevices: [VZStorageDeviceConfiguration]](vzvirtualmachineconfiguration/storagedevices.md)
+  The array of storage devices that you expose to the guest operating system.
 - [var usbControllers: [VZUSBControllerConfiguration]](vzvirtualmachineconfiguration/usbcontrollers.md)
   The list of configured USB controllers for the VM.
+- [var customVirtioDevices: [VZCustomVirtioDeviceConfiguration]](vzvirtualmachineconfiguration/customvirtiodevices.md)
+  The array of custom virtio devices that you expose to the guest operating system.
 
 
 ---

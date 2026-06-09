@@ -5,10 +5,6 @@
 
 The response object that contains the device token.
 
-**Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
-
 ## Declaration
 
 ```swift

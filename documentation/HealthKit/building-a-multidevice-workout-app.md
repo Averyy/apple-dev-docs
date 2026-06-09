@@ -38,6 +38,8 @@ This sample code project needs to run on physical devices. Before you run it wit
   A workout session’s state.
 - [class HKLiveWorkoutBuilder](hkliveworkoutbuilder.md)
   A builder object that constructs a workout incrementally based on live data from an active workout session.
+- [protocol HKLiveWorkoutBuilderDelegate](hkliveworkoutbuilderdelegate.md)
+  A protocol that defines methods for receiving updates from a live workout builder.
 - [class HKLiveWorkoutDataSource](hkliveworkoutdatasource.md)
   A data source that automatically provides live data from an active workout session.
 

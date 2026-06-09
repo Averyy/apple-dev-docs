@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a Beta Build Localizations resource.
+The localized ‘What’s New’ text shown to TestFlight testers in a specific language for a build.
 
 **Availability**:
 - App Store Connect API 1.0+
@@ -33,14 +33,15 @@ object BetaBuildLocalization
 ## See Also
 
 - [object BetaBuildLocalizationResponse](betabuildlocalizationresponse.md)
-  A response that contains a single Beta Build Localizations resource.
+  The response body for endpoints that create, read, or modify localized TestFlight build metadata.
 - [object BetaBuildLocalizationsWithoutIncludesResponse](betabuildlocalizationswithoutincludesresponse.md)
+  A response containing a list of TestFlight build localizations, without related resources.
 - [object BetaBuildLocalizationCreateRequest](betabuildlocalizationcreaterequest.md)
   The request body you use to create a Beta Build Localization.
 - [object BetaBuildLocalizationUpdateRequest](betabuildlocalizationupdaterequest.md)
   The request body you use to update a Beta Build Localization.
 - [object BetaBuildLocalizationsResponse](betabuildlocalizationsresponse.md)
-  A response that contains a list of Beta Build Localization resources.
+  The response body for endpoints that list localized TestFlight build metadata entries.
 - [object BetaBuildLocalizationBuildLinkageResponse](betabuildlocalizationbuildlinkageresponse.md)
 
 

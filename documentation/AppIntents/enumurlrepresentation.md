@@ -40,6 +40,12 @@ Note that you need to use a universal link for your URL representation, you canâ
 - [ExpressibleByStringLiteral](../Swift/ExpressibleByStringLiteral.md)
 - [ExpressibleByUnicodeScalarLiteral](../Swift/ExpressibleByUnicodeScalarLiteral.md)
 
+## See Also
+
+- [protocol URLRepresentableEnum](urlrepresentableenum.md)
+  An app enum with a URL representation.
+- [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+
 
 ---
 

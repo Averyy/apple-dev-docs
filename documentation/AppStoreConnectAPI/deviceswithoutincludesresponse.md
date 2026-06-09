@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response containing a list of registered devices, without related resources.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -21,15 +23,15 @@ object DevicesWithoutIncludesResponse
 ## See Also
 
 - [object Device](device.md)
-  The data structure that represents a Devices resource.
+  A physical Apple device registered in your developer account for testing, identified by its UDID and device type.
 - [object DeviceCreateRequest](devicecreaterequest.md)
   The request body you use to create a Device.
 - [object DeviceUpdateRequest](deviceupdaterequest.md)
   The request body you use to update a Device.
 - [object DeviceResponse](deviceresponse.md)
-  A response that contains a single Devices resource.
+  The response body for endpoints that create, read, or modify a single registered device.
 - [object DevicesResponse](devicesresponse.md)
-  A response that contains a list of Devices resources.
+  The response body for endpoints that list registered devices.
 
 
 ---

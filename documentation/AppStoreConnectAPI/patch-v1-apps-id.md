@@ -1,4 +1,4 @@
-# Modify an App
+# Modify an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -249,17 +249,17 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023 -d
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List Apps`](get-v1-apps.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the app resource ID from the [`List apps`](get-v1-apps.md) response.
 
 ## See Also
 
-- [List Apps](get-v1-apps.md)
+- [List apps](get-v1-apps.md)
   Find and list apps in App Store Connect.
-- [Read App Information](get-v1-apps-_id_.md)
+- [Read app information](get-v1-apps-_id_.md)
   Get information about a specific app.
-- [Read an App’s Encryption Declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
+- [Read an app’s encryption declarations](get-v1-apps-_id_-appencryptiondeclarations.md)
   Find and list all available app encryption declarations.
-- [Read an App’s Encryption Declaration IDs](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
+- [Read an app’s encryption declaration ids](get-v1-apps-_id_-relationships-appencryptiondeclarations.md)
   Find and list all available app encryption declaration IDs for a specific app.
 
 

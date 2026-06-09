@@ -7,8 +7,6 @@ The payload that configures media management.
 
 **Availability**:
 - macOS 10.7+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,10 +27,10 @@ This payload is deprecated as of macOS 11.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ## Topics
 
@@ -46,24 +44,16 @@ This payload is deprecated as of macOS 11.
 
 ## Properties
 
-- `logout-eject` (MediaManagementAllowedMedia.Logout-eject): The media type dictionary that defines volumes to eject when the user logs out.
-- `mount-controls` (MediaManagementAllowedMedia.Mount-controls): The media type dictionary that controls volume mounting.
-- `unmount-controls` (MediaManagementAllowedMedia.Unmount-controls): The media type dictionary that controls volume unmounting.
+- `logout-eject` (MediaManagementAllowedMedia.Logout-eject): The media type dictionary that defines volumes to eject when the user logs out. Deprecated: macOS 11+
+- `mount-controls` (MediaManagementAllowedMedia.Mount-controls): The media type dictionary that controls volume mounting. Deprecated: macOS 11+
+- `unmount-controls` (MediaManagementAllowedMedia.Unmount-controls): The media type dictionary that controls volume unmounting. Deprecated: macOS 11+
 
 ## See Also
 
-- [object AIMAccount](aimaccount.md)
-  The payload that configures an AIM account on the device.
 - [object APN](apn.md)
   The payload that configures access point names.
 - [object FDERecoveryKeyRedirection](fderecoverykeyredirection.md)
   The payload that configures FileVault recovery key redirection.
-- [object JabberAccount](jabberaccount.md)
-  The payload that configures a Jabber account.
-- [object MacOSServerAccount](macosserveraccount.md)
-  The payload that configures a macOS Server account.
-- [object ParentalControlsDashboardWidgetRestrictions](parentalcontrolsdashboardwidgetrestrictions.md)
-  The payload that configures allowed dashboard widgets.
 - [object ParentalControlDictationAndProfanity](parentalcontroldictationandprofanity.md)
   The payload that configures parental control for dictation and profanity.
 - [object ShareKit](sharekit.md)

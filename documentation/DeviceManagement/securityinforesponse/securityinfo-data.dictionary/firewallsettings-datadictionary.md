@@ -7,8 +7,6 @@ A dictionary that contains the firewall settings.
 
 **Availability**:
 - macOS 10.12+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,8 +25,8 @@ object SecurityInfoResponse.SecurityInfo.FirewallSettings
 - `Applications` ([SecurityInfoResponse.SecurityInfo.FirewallSettings.ApplicationsItem]): An array of dictionaries that describes the allowed applications.
 - `BlockAllIncoming` (boolean): If `true`, the firewall blocks all incoming connections.
 - `FirewallEnabled` (boolean): If `true`, the firewall is on.
-- `LoggingEnabled` (boolean): If `true`, logging is enabled.
-- `LoggingOption` (string): The type of logging emitted by the firewall.
+- `LoggingEnabled` (boolean): If `true`, logging is enabled. Available: macOS 12+
+- `LoggingOption` (string): The type of logging emitted by the firewall. Available: macOS 12+
 - `StealthMode` (boolean): If true, stealth mode is active for the firewall.
 
 ## See Also

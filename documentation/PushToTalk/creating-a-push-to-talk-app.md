@@ -184,6 +184,50 @@ When an app is in the foreground, it can receive and queue messages for playback
 
 When a remote participant finishes speaking, set [`setActiveRemoteParticipant(_:channelUUID:completionHandler:)`](ptchannelmanager/setactiveremoteparticipant(_:channeluuid:completionhandler:).md) to `nil` to indicate that the app is no longer receiving audio on the channel and the system can deactivate the audio session. This action updates the system UI and allows the user to transmit again.
 
+##### Receive Audio on a Restricted Network
+
+Some environments — such as enterprise campuses or secure facilities — use restricted networks that don’t have access to the internet or Apple Push Notification service (APNs). In these scenarios, use the [`Local push connectivity`](https://developer.apple.com/documentation/NetworkExtension/local-push-connectivity) API from the Network Extension framework to receive incoming PTT messages without relying on APNs.
+
+Local Push Connectivity allows your app to maintain a persistent network connection to your server through an App Push Provider extension. The extension acts as a local replacement for APNs and delivers incoming PTT messages directly over the local network.
+
+To get started, create an [`NEAppPushManager`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager) instance and configure it with the restricted network information that your app connects to. When the device joins the matching network, the system starts your App Push Provider extension in the background.
+
+When your extension receives an incoming PTT message from your server, report it by calling [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushProvider/reportPushToTalkMessage(userInfo:)). The system delivers the message to your app the same way it delivers an APNs notification — by calling [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](PTChannelManagerDelegate/incomingPushResult(channelManager:channelUUID:pushPayload:).md) on your channel manager delegate.
+
+> ❗ **Important**: The push payload your extension reports through [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushProvider/reportPushToTalkMessage(userInfo:)) must only use data types that [`PropertyListSerialization`](https://developer.apple.com/documentation/Foundation/PropertyListSerialization) supports. Return a [`PTPushResult`](ptpushresult.md) from [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](ptchannelmanagerdelegate/incomingpushresult(channelmanager:channeluuid:pushpayload:).md) as soon as possible so you don’t block the thread.
+
+For detailed information about setting up the App Push Provider extension, see [`Local push connectivity`](https://developer.apple.com/documentation/NetworkExtension/local-push-connectivity).
+
+##### Receive Audio Using a Mission Critical Service
+
+Push to Talk apps used by first responders and emergency services may need to meet 3GPP Mission Critical Services (MCX) performance standards. Mission Critical 5G network slices provide prioritized network traffic that helps your app meet these requirements.
+
+To take advantage of MCX network prioritization, use the [`Local push connectivity`](https://developer.apple.com/documentation/NetworkExtension/local-push-connectivity) API to maintain a direct connection to your server over the MCX 5G network slice. Configure your [`NEAppPushManager`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager) instance and set [`matchMissionCriticalService`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager/matchMissionCriticalService) to `true` to tell the system to start your App Push Provider extension when a Mission Critical Service slice is available.
+
+```swift
+let pushManager = NEAppPushManager()
+pushManager.localizedDescription = "My PTT Push Manager"
+pushManager.providerBundleIdentifier = "com.example.myapp.PushProvider"
+pushManager.isEnabled = true
+pushManager.matchMissionCriticalService = true
+
+try await pushManager.saveToPreferences()
+```
+
+The system starts the App Push Provider extension when both of the following conditions are met:
+
+- The containing app has both the Local Push Connectivity entitlement and Mission Critical Service application category entitlement for 5G Network Slicing.
+- The device has a cellular plan that supports Mission Critical Services.
+
+Once your extension is running, it establishes a network connection to your server using the MCX network slice. When your extension receives an incoming PTT message, report it by calling [`reportPushToTalkMessage(userInfo:)`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushProvider/reportPushToTalkMessage(userInfo:)). The system delivers the message to your channel manager delegate’s [`incomingPushResult(channelManager:channelUUID:pushPayload:)`](PTChannelManagerDelegate/incomingPushResult(channelManager:channelUUID:pushPayload:).md) method, just as it does for APNs notifications.
+
+There are several APIs that can provide additional useful information relating to supporting mission critical services:
+
+- The [`matchMissionCriticalService`](https://developer.apple.com/documentation/NetworkExtension/NEAppPushManager/matchMissionCriticalService) property is available in iOS 27 and later.
+- For detailed information about configuring the App Push Provider extension, see [`Local push connectivity`](https://developer.apple.com/documentation/NetworkExtension/local-push-connectivity).
+- To obtain the list of available network slices for the device to use, see the [`CTSlicingManager`](https://developer.apple.com/documentation/CoreTelephony/CTSlicingManager) API.
+- For additional information entitlements relating to specific traffic categories, see [`5G Network Slicing Traffic Category`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.networking.slicing.trafficcategory).
+
 ##### Reduce Network Latency and Handle Audio Interruptions
 
 To reduce the steps necessary to establish a secure TLS connection, and improve the initial connection speed, use the [`Network`](https://developer.apple.com/documentation/Network) framework and implement `QUIC`. For more information about `QUIC`, see [`QUIC Options`](https://developer.apple.com/documentation/Network/quic-options).

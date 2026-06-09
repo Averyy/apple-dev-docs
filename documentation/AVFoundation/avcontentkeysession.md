@@ -76,6 +76,9 @@ class AVContentKeySession
   Removes expired session reports from storage.
 ### Initializers
 - [convenience init(keySystem: AVContentKeySystem, storageDirectoryAtURL: URL)](avcontentkeysession/init(keysystem:storagedirectoryaturl:).md)
+### Instance Properties
+- [var supportsAdvisoryKeys: Bool](avcontentkeysession/supportsadvisorykeys.md)
+  Boolean indicating whether advisory keys are enabled on the client.
 
 ## Relationships
 

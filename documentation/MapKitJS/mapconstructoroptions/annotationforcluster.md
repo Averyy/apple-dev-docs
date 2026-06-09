@@ -12,8 +12,8 @@ Modifies cluster annotations.
 
 ```swift
 annotationForCluster?: (
-        clusterAnnotation: ClusterAnnotation,
-    ) => Annotation | undefined;
+    clusterAnnotation: ClusterAnnotation,
+) => Annotation | undefined;
 ```
 
 #### Discussion

@@ -135,9 +135,11 @@ If you use the [`addSuite(named:)`](userdefaults/addsuite(named:).md) method to 
   Sets the value of the specified key to a property list object.
 ### Monitoring settings changes and issues
 - [UserDefaults.DidChangeMessage](userdefaults/didchangemessage.md)
+  A message the system sends when a user-defaults setting changes.
 - [class let didChangeNotification: NSNotification.Name](userdefaults/didchangenotification.md)
   Posted when the current process changes the value of a setting.
 - [UserDefaults.SizeLimitExceededMessage](userdefaults/sizelimitexceededmessage.md)
+  A message the system sends when the size of the data in the defaults database exceeds the maximum.
 - [class let sizeLimitExceededNotification: NSNotification.Name](userdefaults/sizelimitexceedednotification.md)
   Posted when the amount of data in the defaults database exceeds the allowed maximum.
 ### Removing settings values

@@ -27,9 +27,9 @@ object BetaAppClipInvocationUpdateRequest
 ## See Also
 
 - [object BetaAppClipInvocation](betaappclipinvocation.md)
-  The data structure that represents a Beta App Clip Invocations resource.
+  A TestFlight URL scheme invocation that allows beta testers to launch an App Clip during testing.
 - [object BetaAppClipInvocationResponse](betaappclipinvocationresponse.md)
-  A response that contains a single Beta App Clip Invocations resource.
+  A response containing a single TestFlight App Clip invocation URL.
 - [object BetaAppClipInvocationCreateRequest](betaappclipinvocationcreaterequest.md)
   The request body you use to create an App Clip invocation for testers.
 

@@ -18,7 +18,7 @@ A type-erased gesture.
 
 ```swift
 @frozen
-struct AnyGesture<Value>
+nonisolated struct AnyGesture<Value>
 ```
 
 ## Topics

@@ -1,4 +1,4 @@
-# Read Segment IDs for a Report
+# Read segment ids for a report
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -28,7 +28,7 @@ Get Ids for a specific analytics report segment.
   Get details for a specific analytics report segment.
 - [Read the Details for a Report Segment](get-v1-analyticsreportsegments-_id_.md)
   Get details and download information for a specific analytics report segment.
-- [Read a List of a Report Instant IDs](get-v1-analyticsreports-_id_-relationships-instances.md)
+- [Read a list of a report instance ids](get-v1-analyticsreports-_id_-relationships-instances.md)
   Read list of all the instance IDs for a specific type of analytics report.
 
 

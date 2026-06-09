@@ -202,10 +202,16 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [func nw_parameters_set_allow_ultra_constrained(nw_parameters_t, Bool)](nw_parameters_set_allow_ultra_constrained(_:_:).md)
 - [func nw_path_get_link_quality(nw_path_t) -> nw_link_quality_t](nw_path_get_link_quality(_:).md)
 - [func nw_path_is_ultra_constrained(nw_path_t) -> Bool](nw_path_is_ultra_constrained(_:).md)
+- [func nw_tcp_set_max_pacing_rate(nw_protocol_metadata_t, UInt64) -> Int32](nw_tcp_set_max_pacing_rate(_:_:).md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-1sik8.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-4wpc9.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-7skhi.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-887ho.md)
+### Type Aliases
+- [typealias NetworkActorInterruptionHandler](networkactorinterruptionhandler.md)
+  A handler that is invoked when the underlying connection is interrupted. An attempt at creating a new connection will occur if another remote call is invoked on the same remote instance of an actor.
+- [typealias NetworkActorInvalidationHandler](networkactorinvalidationhandler.md)
+  TODO: Do we need this stuff anymore…?
 
 
 ---

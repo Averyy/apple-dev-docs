@@ -15,13 +15,13 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](autoreleasingunsafemutablepointer/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](autoreleasingunsafemutablepointer/_(_:_:)-24u5j.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](autoreleasingunsafemutablepointer/_(_:_:)-3izql.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](autoreleasingunsafemutablepointer/_(_:_:)-fe5k.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (Self, Self) -> Bool](autoreleasingunsafemutablepointer/_=(_:_:)-1ihk.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](autoreleasingunsafemutablepointer/_=(_:_:)-5i1qg.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](autoreleasingunsafemutablepointer/_=(_:_:)-8lyi4.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](autoreleasingunsafemutablepointer/_=(_:_:)-5nvyo.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 

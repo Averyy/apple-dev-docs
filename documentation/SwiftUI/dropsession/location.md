@@ -18,6 +18,13 @@ Location of drop in the local coordinate space
 var location: CGPoint
 ```
 
+## See Also
+
+- [var itemsCount: Int](dropsession/itemscount.md)
+  Number of items for the drop.
+- [var size: CGSize](dropsession/size.md)
+  Size of the drop destination view.
+
 
 ---
 

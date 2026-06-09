@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues.
+Specifies the subject’s alternative name that the device requests for the certificate that the ACME server issues. The ACME server may override or ignore this field in the certificate it issues.
 
 **Availability**:
 - iOS 17.0+
@@ -13,8 +13,6 @@ Specifies the subject’s alternative name that the device requests for the cert
 - tvOS 17.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

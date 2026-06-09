@@ -17,12 +17,12 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (AnyIndex, AnyIndex) -> Bool](anyindex/_(_:_:).md)
   Returns a Boolean value indicating whether the first argument represents a position before the second argument.
-- [static func > (Self, Self) -> Bool](anyindex/_(_:_:)-2ln36.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](anyindex/_(_:_:)-66weo.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](anyindex/_=(_:_:)-76rr2.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](anyindex/_=(_:_:)-8jql0.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](anyindex/_=(_:_:)-3miw7.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](anyindex/_=(_:_:)-9ax9g.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

@@ -11,8 +11,6 @@ The declaration to configure Apple Intelligence settings.
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -28,12 +26,13 @@ Specify `com.apple.configuration.intelligence.settings` as the declaration type.
 
 |  |  |
 | --- | --- |
-| Allowed in supervised enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in supervised enrollment | iOS, macOS, visionOS |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, visionOS |
 | Allowed in user scope | macOS |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Examples
 
@@ -82,13 +81,13 @@ This configuration restricts several Apple Intelligence features.
 - `AllowAppleIntelligenceReport` (boolean): If `false`, disables Apple Intelligence Report.
 - `AllowGenmoji` (boolean): If `false`, disables Genmoji.
 - `AllowImagePlayground` (boolean): If `false`, disables Image Playground.
-- `AllowImageWand` (boolean): If `false`, disables Image Wand.
-- `AllowPersonalizedHandwritingResults` (boolean): If `false`, disables Personalized Handwriting Results.
-- `AllowVisualIntelligenceSummary` (boolean): If `false`, disables Visual Intelligence Summary.
+- `AllowImageWand` (boolean): If `false`, disables Image Wand. Available: iOS 26.4+ | iPadOS 26.4+ | visionOS 26.4+
+- `AllowPersonalizedHandwritingResults` (boolean): If `false`, disables Personalized Handwriting Results. Available: iOS 26.4+ | iPadOS 26.4+
+- `AllowVisualIntelligenceSummary` (boolean): If `false`, disables Visual Intelligence Summary. Available: iOS 26.4+ | iPadOS 26.4+
 - `AllowWritingTools` (boolean): If `false`, disables Writing Tools.
 - `Apps` (IntelligenceSettingsAppsObject): If present, configures app-specific Intelligence features.
 - `ForceOnDeviceOnlyDictation` (boolean): If `true`, forces On-Device Only Dictation.
-- `ForceOnDeviceOnlyTranslation` (boolean): If `true`, forces On-Device Only Translation.
+- `ForceOnDeviceOnlyTranslation` (boolean): If `true`, forces On-Device Only Translation. Available: iOS 26.4+ | iPadOS 26.4+
 
 ## See Also
 
@@ -108,20 +107,20 @@ This configuration restricts several Apple Intelligence features.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object KeyboardSettings](keyboardsettings.md)
   The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
-- [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
-  The declaration to configure status subscriptions.
 
 
 ---

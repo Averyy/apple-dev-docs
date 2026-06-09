@@ -20,7 +20,7 @@ Get details about the image for a specific Game Center activity localization.
 
 - [Read Activity Localization Information](get-v1-gamecenteractivitylocalizations-_id_.md)
   Get information for a specific Game Center activity localization.
-- [GET /v1/gameCenterActivityLocalizations/{id}/relationships/image](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
+- [Get the image ID for a Game Center activity localization](get-v1-gamecenteractivitylocalizations-_id_-relationships-image.md)
 - [Add an Activity Localization](post-v1-gamecenteractivitylocalizations.md)
   Add a localization for a specific Game Center activity.
 - [Modify an Activity Localization](patch-v1-gamecenteractivitylocalizations-_id_.md)

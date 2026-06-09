@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription offer code create request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -21,10 +23,12 @@ object SubscriptionOfferCodeCreateRequest.Data.Attributes
 - `numberOfPeriods` (integer) *(required)*
 - `offerEligibility` (SubscriptionOfferEligibility) *(required)*
 - `offerMode` (SubscriptionOfferMode) *(required)*
+- `targetSubscriptionPlanType` (SubscriptionPlanType)
 
 ## See Also
 
 - [object SubscriptionOfferCodeCreateRequest.Data.Relationships](subscriptionoffercodecreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

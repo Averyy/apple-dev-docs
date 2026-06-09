@@ -18,9 +18,28 @@ An error that indicates the system’s safety guardrails are triggered by conten
 case guardrailViolation(LanguageModelSession.GenerationError.Context)
 ```
 
-## Mentions
+## See Also
 
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
+- [case assetsUnavailable(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/assetsunavailable(_:).md)
+  An error that indicates the assets required for the session are unavailable.
+- [case decodingFailure(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/decodingfailure(_:).md)
+  An error that indicates the session failed to deserialize a valid generable type from model output.
+- [case exceededContextWindowSize(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md)
+  An error that signals the session reached its context window size limit.
+- [case rateLimited(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/ratelimited(_:).md)
+  An error that indicates your session has been rate limited.
+- [case refusal(LanguageModelSession.GenerationError.Refusal, LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/refusal(_:_:).md)
+  An error indicating that the model refused to answer.
+- [case concurrentRequests(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/concurrentrequests(_:).md)
+  An error that happens if you attempt to make a session respond to a second prompt while it’s still responding to the first one.
+- [case unsupportedGuide(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedguide(_:).md)
+  An error that indicates a generation guide with an unsupported pattern was used.
+- [case unsupportedLanguageOrLocale(LanguageModelSession.GenerationError.Context)](languagemodelsession/generationerror/unsupportedlanguageorlocale(_:).md)
+  An error that indicates an error that occurs if the model is prompted to respond in a language that it does not support.
+- [LanguageModelSession.GenerationError.Context](languagemodelsession/generationerror/context.md)
+  The context in which the error occurred.
+- [LanguageModelSession.GenerationError.Refusal](languagemodelsession/generationerror/refusal.md)
+  A refusal produced by a language model.
 
 
 ---

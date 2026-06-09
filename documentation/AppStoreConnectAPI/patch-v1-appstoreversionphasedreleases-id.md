@@ -1,4 +1,4 @@
-# Modify an App Store Version Phased Release
+# Modify an app store version phased release
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Pause or resume a phased release, or immediately release an app.
 
 ## See Also
 
-- [Create an App Store Version Phased Release](post-v1-appstoreversionphasedreleases.md)
+- [Create an app store version phased release](post-v1-appstoreversionphasedreleases.md)
   Enable phased release for an App Store version.
 
 

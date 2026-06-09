@@ -16,7 +16,7 @@ class HostingSheetRepresentation<Content> where Content : View
 
 #### Overview
 
-This is created and returned `NSWindow.beginSheet(content:completionHandler:)` as a representation of the presented sheet. It can be used to change the root view of the sheet while presented or be used to programamtically dismiss the sheet from an AppKit context using `NSWindow.endSheet(_:)`.
+This is created and returned by [`beginSheet(content:completionHandler:)`](nswindow/beginsheet(content:completionhandler:).md) as a representation of the presented sheet. It can be used to change the root view of the sheet while presented or be used to programamtically dismiss the sheet from an AppKit context using [`endSheet(_:)`](nswindow/endsheet(_:)-6af2u.md).
 
 ## Topics
 

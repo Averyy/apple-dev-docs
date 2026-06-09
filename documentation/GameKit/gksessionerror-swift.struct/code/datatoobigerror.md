@@ -6,6 +6,9 @@
 The data your application attempted to send was too large for the session to transmit in a single call.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

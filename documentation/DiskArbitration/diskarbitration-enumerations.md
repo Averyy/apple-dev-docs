@@ -5,9 +5,9 @@
 ## Topics
 
 ### Enumerations
-- [Anonymous](anonymous-kdadiskunmountoptions.md)
-- [Anonymous](anonymous-kdadiskmountoptions.md)
-- [Anonymous](anonymous-kdadiskoptions.md)
+- [Disk unmount options](anonymous-kdadiskunmountoptions.md)
+- [Disk mount options](anonymous-kdadiskmountoptions.md)
+- [Disk options](anonymous-kdadiskoptions.md)
 
 ## See Also
 

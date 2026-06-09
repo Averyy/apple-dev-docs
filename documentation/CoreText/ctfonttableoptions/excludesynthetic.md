@@ -6,6 +6,9 @@
 The font table excludes synthetic font data.
 
 **Availability**:
+- iOS 3.2+
+- iPadOS 3.2+
+- Mac Catalyst 3.2+
 - visionOS 1.0+
 
 ## Declaration

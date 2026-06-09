@@ -47,8 +47,12 @@ protocol UIMenuLeaf : NSObjectProtocol
 - [func performWithSender(Any?, target: Any?)](uimenuleaf/performwithsender(_:target:).md)
   Performs the element’s primary action.
 ### Instance Properties
+- [var preferredImageVisibility: UIMenuElement.ImageVisibility](uimenuleaf/preferredimagevisibility.md)
+  The preferred visibility of the element’s image.
 - [var repeatBehavior: UIMenuElement.RepeatBehavior](uimenuleaf/repeatbehavior.md)
   The leaf’s preferred repeat behavior. Menu leaves can repeatedly perform their primary actions on prolonged interactions, such as by holding down their keyboard shortcut.
+- [var subtitle: String?](uimenuleaf/subtitle.md)
+  The element’s subtitle.
 
 ## Relationships
 

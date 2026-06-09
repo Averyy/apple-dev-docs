@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Establishes  an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
+Establishes an area for tracking mouse-entered and mouse-exited events within the view and returns a tag that identifies the tracking rectangle.
 
 **Availability**:
 - macOS ?+

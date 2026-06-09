@@ -56,6 +56,11 @@ To access values in an information property list programmatically, you use an in
 ### AVFoundation
 - [NSAlwaysAllowMicrophoneModeControl](information-property-list/nsalwaysallowmicrophonemodecontrol.md)
   A Boolean value that indicates if a person can configure a microphone mode regardless of whether the microphone is in an active state.
+### AVSystemRouting
+- [MDESupportedProtocols](information-property-list/mdesupportedprotocols.md)
+  A dictionary that declares which media sharing extension protocols an app supports.
+- [MDESupportsUniversalURLPlayback](information-property-list/mdesupportsuniversalurlplayback.md)
+  A Boolean value that indicates whether an app supports URL-based playback via a media device extension.
 ### Vision
 - [ApprovedStreamingEndpoints](information-property-list/approvedstreamingendpoints.md)
   A dictionary of streaming endpoints in visionOS to which Foveated Streaming clients may connect.
@@ -92,12 +97,18 @@ To access values in an information property list programmatically, you use an in
   A Boolean value indicating whether to override the perfect forward secrecy requirement.
 - [NSExceptionRequiresNIAPTLSPackageVersion](information-property-list/nsexceptionrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS, applied to an exception domain.
+- [NSGestureRecognizerSuppressesMainMenuActions](information-property-list/nsgesturerecognizersuppressesmainmenuactions.md)
+  A Boolean value that indicates whether keyboard shortcuts for menu items are ignored while any gesture recognizer is active.
 - [NSIncludesSubdomains](information-property-list/nsincludessubdomains.md)
   A Boolean value that indicates whether to extend the configuration to subdomains of the given domain.
+- [NSIsTouchNative](information-property-list/nsistouchnative.md)
+  A Boolean value that indicates whether your app handles touch input natively, without relying on AppKit’s extra mouse emulation.
 - [NSRequiresCertificateTransparency](information-property-list/nsrequirescertificatetransparency.md)
   An obsolete Boolean value indicating whether to require Certificate Transparency.
 - [NSRequiresNIAPTLSPackageVersion](information-property-list/nsrequiresniaptlspackageversion.md)
   A string that indicates the version to use for the NIAP Functional Package for TLS.
+- [NSViewGestureRecognizerIsExclusive](information-property-list/nsviewgesturerecognizerisexclusive.md)
+  A Boolean value that controls whether only one view’s gesture recognizers can be active at a time.
 - [OSAScriptingDefinition](information-property-list/osascriptingdefinition.md)
 - [ProvidesOneTimeCodes](information-property-list/providesonetimecodes.md)
   Allows this credential provider to show up in one-time-code text fields, to allowing filling time-based verification codes.

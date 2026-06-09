@@ -24,6 +24,11 @@ To run the app in Xcode, choose Product > Scheme > Edit Scheme, and update the c
 - **`--mask`**: An optional dynamic mask JSON data file to use for camera calibration instead of an AIME file. This argument also requires the `--usdz` option.
 - **`--output`**: The `AIVU` file to write that contains Immersive Media Support metadata.
 
+## See Also
+
+- [Processing Apple Immersive Video with foveation](processing-apple-immersive-video-with-foveation.md)
+  Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
+
 
 ---
 

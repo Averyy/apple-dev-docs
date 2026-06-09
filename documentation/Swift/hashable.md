@@ -17,7 +17,7 @@ A type that can be hashed into a `Hasher` to produce an integer hash value.
 ## Declaration
 
 ```swift
-protocol Hashable : Equatable
+protocol Hashable : Equatable, ~Copyable
 ```
 
 ## Mentions
@@ -130,10 +130,12 @@ if tappedPoints.contains(nextTap) {
 - [CollectionDifference](collectiondifference.md)
 - [CollectionDifference.Change](collectiondifference/change.md)
 - [CollectionDifference.Index](collectiondifference/index.md)
+- [CollectionOfOne](collectionofone.md)
 - [ContiguousArray](contiguousarray.md)
 - [ContinuousClock.Instant](continuousclock/instant.md)
 - [Dictionary](dictionary.md)
 - [Dictionary.Index](dictionary/index.md)
+- [Dictionary.Keys](dictionary/keys-swift.struct.md)
 - [DiscontiguousSlice](discontiguousslice.md)
 - [DiscontiguousSlice.Index](discontiguousslice/index.md)
 - [Double](double.md)
@@ -147,6 +149,7 @@ if tappedPoints.contains(nextTap) {
 - [Duration.UnitsFormatStyle.Unit](duration/unitsformatstyle/unit.md)
 - [Duration.UnitsFormatStyle.UnitWidth](duration/unitsformatstyle/unitwidth-swift.struct.md)
 - [Duration.UnitsFormatStyle.ZeroValueUnitsDisplayStrategy](duration/unitsformatstyle/zerovalueunitsdisplaystrategy.md)
+- [EmptyCollection](emptycollection.md)
 - [ExecuteDistributedTargetError.ErrorCode](../distributed/executedistributedtargeterror/errorcode-swift.enum.md)
 - [FlattenSequence.Index](flattensequence/index.md)
 - [Float](float.md)
@@ -215,6 +218,7 @@ if tappedPoints.contains(nextTap) {
 - [Unicode.UTF32](unicode/utf32.md)
 - [Unicode.UTF8.ValidationError](unicode/utf8/validationerror.md)
 - [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
+- [UnownedTaskExecutor](unownedtaskexecutor.md)
 - [UnsafeCurrentTask](unsafecurrenttask.md)
 - [UnsafeMutablePointer](unsafemutablepointer.md)
 - [UnsafeMutableRawPointer](unsafemutablerawpointer.md)

@@ -55,6 +55,7 @@ A constrained interface is one the user marks as constrained by selecting “Low
 - [URLSessionTaskMetrics.ResourceFetchType](urlsessiontaskmetrics/resourcefetchtype.md)
   The manner in which a resource is fetched.
 - [var domainResolutionProtocol: URLSessionTaskMetrics.DomainResolutionProtocol](urlsessiontasktransactionmetrics/domainresolutionprotocol.md)
+  DNS protocol used for domain resolution.
 
 
 ---

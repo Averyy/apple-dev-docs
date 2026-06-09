@@ -16,6 +16,7 @@ object AppEventLocalizationCreateRequest.Data.Relationships.AppEvent
 
 ### Objects
 - [object AppEventLocalizationCreateRequest.Data.Relationships.AppEvent.Data](appeventlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary/appevent-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app event localization.
 
 ## Properties
 

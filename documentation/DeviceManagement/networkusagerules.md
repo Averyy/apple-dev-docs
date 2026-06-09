@@ -9,8 +9,6 @@ The payload that configures network-usage rules.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 9.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -94,7 +92,7 @@ Network usage rules allow enterprises to specify how devices use networks, such 
 ## Properties
 
 - `ApplicationRules` ([NetworkUsageRules.ApplicationRulesItem]): An array of application rules, that apply to only managed apps.
-- `SIMRules` ([NetworkUsageRules.SIMRulesItem]): An array of SIM rules, that apply to all apps.
+- `SIMRules` ([NetworkUsageRules.SIMRulesItem]): An array of SIM rules, that apply to all apps. Available: iOS 13+ | iPadOS 13+
 
 ## See Also
 
@@ -102,7 +100,7 @@ Network usage rules allow enterprises to specify how devices use networks, such 
   The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.

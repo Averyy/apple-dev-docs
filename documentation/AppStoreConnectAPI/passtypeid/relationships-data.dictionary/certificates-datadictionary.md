@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a pass type id resource.
+The certificates relationship for a pass type identifier, linking to the signing certificates that can sign passes.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,7 +18,7 @@ object PassTypeId.Relationships.Certificates
 
 ### Dictionaries
 - [object PassTypeId.Relationships.Certificates.Data](passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.md)
-  The data structure that represents a pass type id resource.
+  The resource linkage data identifying a certificate associated with a pass type identifier.
 
 ## Properties
 

@@ -9,7 +9,7 @@ The lyricist or text writer for the song or audio composition that the file cont
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

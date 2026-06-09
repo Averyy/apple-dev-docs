@@ -20,10 +20,6 @@ Assistant schema conformance for types you use for camera functionality.
 protocol CameraEnum : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making camera actions available to Siri and Apple Intelligence](making-camera-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -41,15 +37,6 @@ protocol CameraEnum : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
 - [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-
-## See Also
-
-- [var captureDevice: some AssistantSchemas.Enum](assistantschemas/cameraenum/capturedevice.md)
-  The device or camera for capturing a photo or video.
-- [var captureDuration: some AssistantSchemas.Enum](assistantschemas/cameraenum/captureduration.md)
-  The capture duration for a photo or video.
-- [var captureMode: some AssistantSchemas.Enum](assistantschemas/cameraenum/capturemode.md)
-  The capture mode for taking a photo or video.
 
 
 ---

@@ -20,10 +20,6 @@ Assistant schema conformance for types you use for web browsing functionality.
 protocol BrowserEnum : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making browser actions available to Siri and Apple Intelligence](making-browser-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,11 +33,6 @@ protocol BrowserEnum : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EnumSchema](assistantschema/enumschema.md)
 - [AssistantSchemas.EnumSchema](assistantschemas/enumschema.md)
-
-## See Also
-
-- [var clearHistoryTimeFrame: some AssistantSchemas.Enum](assistantschemas/browserenum/clearhistorytimeframe.md)
-  The time frame for clearing the browser history
 
 
 ---

@@ -25,6 +25,15 @@ This is used for inserting any custom content, and non-shape elements like signa
 - `markupToolbarViewController`: The source of the action.
 - `toInsert`: The markup whose contents is added on top of this paper.
 
+## See Also
+
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewShape: ShapeConfiguration.Shape)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewshape:).md)
+  Add a new shape on top of the paper.
+- [func markupToolbarViewControllerInsertNewTextbox(MarkupToolbarViewController)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontrollerinsertnewtextbox(_:).md)
+  Add a new textbox on top of the paper.
+- [func markupToolbarViewController(MarkupToolbarViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markuptoolbarviewcontroller/delegate-swift.protocol/markuptoolbarviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+  Add a new line on top of the paper.
+
 
 ---
 

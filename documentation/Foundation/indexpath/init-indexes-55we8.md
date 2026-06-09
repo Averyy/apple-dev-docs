@@ -30,6 +30,8 @@ init<ElementSequence>(indexes: ElementSequence) where ElementSequence : Sequence
   Creates an index path from an array literal.
 - [init(indexes: Array<IndexPath.Element>)](indexpath/init(indexes:)-7auqk.md)
   Creates an index path from an array of elements.
+- [IndexPath.Element](indexpath/element.md)
+  A type that represents one node of an index path.
 
 
 ---

@@ -98,6 +98,7 @@ You create a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object in you
 ### Initializers
 - [init?(coder: NSCoder)](wkwebviewconfiguration/init(coder:).md)
 ### Instance Properties
+- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
 - [var allowsInlinePredictions: Bool](wkwebviewconfiguration/allowsinlinepredictions.md)
 - [var showsSystemScreenTimeBlockingView: Bool](wkwebviewconfiguration/showssystemscreentimeblockingview.md)
 - [var supportsAdaptiveImageGlyph: Bool](wkwebviewconfiguration/supportsadaptiveimageglyph.md)

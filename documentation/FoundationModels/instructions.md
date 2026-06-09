@@ -11,6 +11,7 @@ Details you provide that define the model’s intended behavior on prompts.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,6 +21,7 @@ struct Instructions
 
 ## Mentions
 
+- [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
 - [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
@@ -43,7 +45,7 @@ let response = try await session.respond(to: prompt)
 
 Apple trains the model to obey instructions over any commands it receives in prompts, so don’t include untrusted content in instructions. For more on how instructions impact generation quality and safety, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
 
-All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws [`LanguageModelSession.GenerationError.exceededContextWindowSize(_:)`](languagemodelsession/generationerror/exceededcontextwindowsize(_:).md).
+All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws  [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md).
 
 Instructions can consume a lot of tokens that contribute to the context window size. To reduce your instruction size:
 
@@ -52,7 +54,7 @@ Instructions can consume a lot of tokens that contribute to the context window s
 - Use concise and imperative language instead of indirect or jargon that the model might misinterpret.
 - Aim for one to three paragraphs instead of including a significant amount of background information, policy, or extra content.
 
-For more information on managing the context window size, see [`TN3193: Managing the on-device foundation model’s context window`](https://developer.apple.com/documentation/Technotes/tn3193-managing-the-on-device-foundation-model-s-context-window).
+For more information on managing the context window size, see [`Managing the context window`](managing-the-context-window.md).
 
 ## Topics
 
@@ -67,6 +69,7 @@ For more information on managing the context window size, see [`TN3193: Managing
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [DynamicInstructions](dynamicinstructions.md)
 - [Escapable](../Swift/Escapable.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
 - [Sendable](../Swift/Sendable.md)
@@ -76,20 +79,22 @@ For more information on managing the context window size, see [`TN3193: Managing
 
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
   Tailor your prompts to get effective results from an on-device model.
+- [Managing the context window](managing-the-context-window.md)
+  Optimize your app’s token usage when prompting a model with the Foundation Models framework.
 - [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
   Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [Evaluating prompts to measure performance and improve model responses](evaluating-prompts-to-measure-performance-and-improve-model-responses.md)
-  Systematically measure and improve the quality of your prompts by using structured evaluation.
-- [Analyzing the runtime performance of your Foundation Models app](analyzing-the-runtime-performance-of-your-foundation-models-app.md)
-  Optimize token consumption and improve response times by profiling your app’s model usage with Instruments.
 - [class LanguageModelSession](languagemodelsession.md)
   An object that represents a session that interacts with a language model.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
 - [struct Transcript](transcript.md)
   A linear history of entries that reflect an interaction with a session.
+- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
+  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
+- [struct ContextOptions](contextoptions.md)
+  Options that configure details that should appear in the prompt.
 
 
 ---

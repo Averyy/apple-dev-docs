@@ -1,0 +1,35 @@
+# random::half4_01_using
+
+**Framework**: ComputeGraph  
+**Kind**: func
+
+Generates a pseudo-random 4D vector with half-precision components between 0 and 1 using a specific seed.
+
+**Availability**:
+- macOS 27.0+ (Beta)
+- Reality Composer Pro 27.0+ (Beta)
+
+## Declaration
+
+```swift
+half4 random::half4_01_using(uint seed)
+```
+
+#### Return Value
+
+A pseudo-random 4D half-precision vector with components in the range [0.0, 1.0].
+
+#### Discussion
+
+This function generates a random 4D vector where each component is independently generated in the range [0.0, 1.0] using half-precision floating-point format and sequential seed values (seed, seed+1, seed+2, seed+3). The seed is not modified, allowing for reproducible random number generation.
+
+> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/198367c4927f02dd87b1e0959020dcc6/random__half4_01_using.svg)
+
+## Parameters
+
+- `seed`: The base seed value to use for random number generation.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/computegraph/random/half4_01_using)*

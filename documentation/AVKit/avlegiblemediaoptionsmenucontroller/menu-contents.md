@@ -30,6 +30,13 @@ Returns nil if the requested menu type cannot be built due to missing content (e
 
 - `contents`: A set of values from the AVLegibleMediaOptionsMenuContents
 
+## See Also
+
+- [var menuState: AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenucontroller/menustate.md)
+- [AVLegibleMediaOptionsMenuController.MenuContents](avlegiblemediaoptionsmenucontroller/menucontents.md)
+- [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
+- [AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenucontroller/statechangereason.md)
+
 
 ---
 

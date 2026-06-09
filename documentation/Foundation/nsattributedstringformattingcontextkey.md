@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: struct
 
+A type that represents a key in the formatting context dictionary.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+

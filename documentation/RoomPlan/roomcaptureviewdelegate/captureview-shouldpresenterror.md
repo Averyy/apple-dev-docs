@@ -10,7 +10,6 @@ Indicates whether the app processes raw scan results immediately after a scan se
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 

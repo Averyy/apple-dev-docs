@@ -33,7 +33,6 @@ enum DataProviderState
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
@@ -53,6 +52,8 @@ enum DataProviderState
   The identity, location, and orientation of an object in world space.
 - [protocol TrackableAnchor](trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
+- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+  A type that provides an ARKit coordinate space with an optional correction applied.
 - [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 

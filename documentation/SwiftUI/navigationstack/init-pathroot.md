@@ -17,8 +17,8 @@ Creates a navigation stack with homogeneous navigation state that you can contro
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(path: Binding<Data>, @ViewBuilder root: () -> Root) where Data : MutableCollection, Data : RandomAccessCollection, Data : RangeReplaceableCollection, Data.Element : Hashable
+nonisolated
+init(path: Binding<Data>, @ContentBuilder root: () -> Root) where Data : MutableCollection, Data : RandomAccessCollection, Data : RangeReplaceableCollection, Data.Element : Hashable
 ```
 
 ## Mentions

@@ -14,7 +14,7 @@
 
 ```swift
 nonisolated
-init(label: Label, @ViewBuilder content: () -> Content)
+init(label: Label, @ContentBuilder content: () -> Content)
 ```
 
 

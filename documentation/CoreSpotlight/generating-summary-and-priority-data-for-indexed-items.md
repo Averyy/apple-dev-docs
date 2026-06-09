@@ -68,6 +68,7 @@ For information about how to implement a Spotlight delegate app extension, see [
   An on-device index for your app’s searchable content.
 - [protocol CSSearchableIndexDelegate](cssearchableindexdelegate.md)
   A protocol that defines methods a delegate object or app extension uses to handle communication from the on-device index.
+- [class CSSearchableIndexDescription](cssearchableindexdescription.md)
 
 
 ---

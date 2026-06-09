@@ -18,7 +18,7 @@ Creates a picker that displays a custom label.
 
 ```swift
 nonisolated
-init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label) where C : RandomAccessCollection
+init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label) where C : RandomAccessCollection
 ```
 
 #### Discussion

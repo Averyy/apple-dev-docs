@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-A value that Siri uses to fulfill a person’s request.
+A value that Apple Intelligence and Siri use to fulfill a person’s request.
 
 **Availability**:
 - iOS 18.0+
@@ -22,7 +22,7 @@ protocol AssistantEnum : AppEnum
 
 #### Overview
 
-Don’t adopt this protocol directly, instead use the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro to meet requirements for making your [`AppEnum`](appenum.md) available to Siri.
+Don’t adopt this protocol directly, instead use the [`AssistantEnum(schema:)`](assistantenum(schema:).md) macro to meet requirements for making your [`AppEnum`](appenum.md) discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 
@@ -45,13 +45,15 @@ Don’t adopt this protocol directly, instead use the [`AssistantEnum(schema:)`]
 
 ## See Also
 
+- [protocol AssistantEntity](assistantentity.md)
+  An app entity that Apple Intelligence can discover to fulfill a person’s request.
 - [protocol AssistantIntent](assistantintent.md)
   An app intent that Siri performs to fulfill a person’s request.
-- [protocol AssistantSchemaIntent](assistantschemaintent.md)
-- [protocol AssistantEntity](assistantentity.md)
-  An app entity that Siri can access to fulfill a person’s request.
-- [protocol AssistantSchemaEntity](assistantschemaentity.md)
 - [protocol AssistantSchemaEnum](assistantschemaenum.md)
+- [protocol AssistantSchemaEntity](assistantschemaentity.md)
+- [protocol AssistantSchemaIntent](assistantschemaintent.md)
+- [struct AssistantSchema](assistantschema.md)
+- [enum AssistantSchemas](assistantschemas.md)
 
 
 ---

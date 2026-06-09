@@ -51,15 +51,15 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 - [convenience init(color: UIColor)](cicolor/init(color:).md)
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cicolor/init(red:green:blue:alpha:).md)
   Initialize a Core Image color object in the sRGB color space with the specified red, green, blue, and alpha component values.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:).md)
-  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
-- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:alpha:colorspace:).md)
-  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 ### Creating Color Objects
 - [convenience init(red: CGFloat, green: CGFloat, blue: CGFloat)](cicolor/init(red:green:blue:).md)
   Create a Core Image color object in the sRGB color space with the specified red, green, and blue component values.
 - [convenience init(string: String)](cicolor/init(string:).md)
   Create a Core Image color object in the sRGB color space using a string containing the RGBA color component values.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:)-2og6y.md)
+  Create a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:alpha:colorspace:)-5mvff.md)
+  Create a Core Image color object with the specified red, green, blue, and alpha component values as measured in the specified color space.
 ### Getting Color Components
 - [var colorSpace: CGColorSpace](cicolor/colorspace.md)
   Returns the `CGColorSpace` associated with the color
@@ -102,6 +102,10 @@ Standard dynamic range (SDR) color color component values range from `0.0` to `1
 - [convenience init(CGColor: CGColor)](cicolor/init(cgcolor:)-2n26w.md)
 - [init(CGColor: CGColor)](cicolor/init(cgcolor:)-2nx98.md)
 - [init?(coder: NSCoder)](cicolor/init(coder:).md)
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:alpha:colorspace:)-8yg0z.md)
+  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
+- [convenience init?(red: CGFloat, green: CGFloat, blue: CGFloat, colorSpace: CGColorSpace)](cicolor/init(red:green:blue:colorspace:)-6d8o.md)
+  Initialize a Core Image color object with the specified red, green, and blue component values as measured in the specified color space.
 
 ## Relationships
 

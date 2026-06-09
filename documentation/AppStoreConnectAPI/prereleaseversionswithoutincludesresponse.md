@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response containing a list of pre-release versions, without related resources.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -21,12 +23,13 @@ object PreReleaseVersionsWithoutIncludesResponse
 ## See Also
 
 - [object PrereleaseVersion](prereleaseversion.md)
-  The data structure that represents a Prerelease Versions  resource.
+  A pre-release version associated with a build, representing a development or beta software version before App Store submission.
 - [object PrereleaseVersionResponse](prereleaseversionresponse.md)
-  A response that contains a single Prerelease Versions resource.
+  The response body for endpoints that read a single prerelease version of an app.
 - [object PreReleaseVersionsResponse](prereleaseversionsresponse.md)
-  A response that contains a list of Pre-Release Version resources.
+  A response containing a list of pre-release versions for an app.
 - [object PrereleaseVersionWithoutIncludesResponse](prereleaseversionwithoutincludesresponse.md)
+  A response containing a single pre-release version, without related resources.
 - [object AppPreReleaseVersionsLinkagesResponse](appprereleaseversionslinkagesresponse.md)
 - [object PrereleaseVersionAppLinkageResponse](prereleaseversionapplinkageresponse.md)
 - [object PrereleaseVersionBuildsLinkagesResponse](prereleaseversionbuildslinkagesresponse.md)

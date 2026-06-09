@@ -21,13 +21,13 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
 ### SwiftUI presentation
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concept: String, sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
 ](../SwiftUI/View/imagePlaygroundSheet(isPresented:concept:sourceImage:onCompletion:onCancellation:).md)
-  Presents the system sheet to create images from the specified input.
+  Presents the system sheet to create an image using the specified string and optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImage: Image?, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
 ](../SwiftUI/View/imagePlaygroundSheet(isPresented:concepts:sourceImage:onCompletion:onCancellation:).md)
-  Presents the system sheet to create images from the specified input.
+  Presents the system sheet to create an image using one or more concepts and an optional starting image.
 - [func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept], sourceImageURL: URL, onCompletion: (URL) -> Void, onCancellation: (() -> Void)?) -> some View
 ](../SwiftUI/View/imagePlaygroundSheet(isPresented:concepts:sourceImageURL:onCompletion:onCancellation:).md)
-  Presents the system sheet to create images from the specified input.
+  Presents the system sheet to create an image using one or more concepts and an image URL.
 ### UIKit and AppKit presentation
 - [class ImagePlaygroundViewController](imageplaygroundviewcontroller.md)
   Displays a standard system interface to generate images from the provided input.
@@ -41,7 +41,7 @@ Use the `ImagePlayground` framework to generate custom images using system-suppo
   Style options that determine the appearance of generated images.
 ### Structures
 - [struct ImagePlaygroundOptions](imageplaygroundoptions.md)
-  A structure that stores a set of options influencing image creation.
+  A type that stores the options that affect the image-generation process.
 
 
 ---

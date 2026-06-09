@@ -15,6 +15,7 @@ A type-erased view representing the children in an outline subgroup.
 ## Declaration
 
 ```swift
+nonisolated
 struct OutlineSubgroupChildren
 ```
 

@@ -36,6 +36,9 @@ struct ExpirationReason
 ### Getting a localized description
 - [var localizedDescription: String](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/localizeddescription.md)
   The localized text that describes the expiration reason.
+### Type Properties
+- [static var unbundled: Product.SubscriptionInfo.RenewalInfo.ExpirationReason](product/subscriptioninfo/renewalinfo/expirationreason-swift.struct/unbundled.md)
+  The subscription expired because the customer left the Subscription Bundle.
 
 ## Relationships
 

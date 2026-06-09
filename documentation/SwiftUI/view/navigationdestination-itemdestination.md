@@ -18,7 +18,7 @@ Associates a destination view with a bound value for use within a navigation sta
 
 ```swift
 nonisolated
-func navigationDestination<D, C>(item: Binding<Optional<D>>, @ViewBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
+func navigationDestination<D, C>(item: Binding<Optional<D>>, @ContentBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
 ```
 
 ## Mentions
@@ -55,7 +55,7 @@ Do not put a navigation destination modifier inside a “lazy” container, like
 ## Parameters
 
 - `item`: A binding to the data presented, or `nil` if nothing is currently presented.
-- `destination`: A view builder that defines a view to display when `item` is not `nil`.
+- `destination`: A content builder that defines a view to display when `item` is not `nil`.
 
 ## See Also
 

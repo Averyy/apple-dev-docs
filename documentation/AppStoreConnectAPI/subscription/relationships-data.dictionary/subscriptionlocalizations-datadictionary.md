@@ -16,6 +16,7 @@ object Subscription.Relationships.SubscriptionLocalizations
 
 ### Objects
 - [object Subscription.Relationships.SubscriptionLocalizations.Data](subscription/relationships-data.dictionary/subscriptionlocalizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription.
 
 ## Properties
 

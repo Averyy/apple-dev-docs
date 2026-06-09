@@ -16,10 +16,6 @@
 static var movementDidFail: NotificationCenter.BaseMessageIdentifier<UIFocusSystem.MovementDidFailMessage> { get }
 ```
 
-## See Also
-
-- [static var didUpdate: NotificationCenter.BaseMessageIdentifier<UIFocusSystem.DidUpdateMessage>](notificationcenter/messageidentifier/didupdate.md)
-
 
 ---
 

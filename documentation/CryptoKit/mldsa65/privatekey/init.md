@@ -3,7 +3,7 @@
 **Framework**: Apple CryptoKit  
 **Kind**: init
 
-Initializes a new random private key.
+Creates a random MLDSA65 private key.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,16 @@ Initializes a new random private key.
 
 ```swift
 init() throws
+```
+
+#### Discussion
+
+This initializer is marked `throws` to support use in generic contexts, but key generation itself doesn’t produce errors.
+
+When you call this initializer directly on a concrete type, rather than through a generic type parameter, you can safely call `try!` to create the key:
+
+```swift
+let privateKey = try! MLDSA65.PrivateKey()
 ```
 
 ## See Also

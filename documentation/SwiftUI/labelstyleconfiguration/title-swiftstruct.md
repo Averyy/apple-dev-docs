@@ -17,8 +17,7 @@ A type-erased title view of a label.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Title
+struct Title
 ```
 
 ## Relationships

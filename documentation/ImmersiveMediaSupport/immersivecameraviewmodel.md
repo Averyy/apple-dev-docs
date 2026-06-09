@@ -44,6 +44,8 @@ App needs to query this type instance from [`VenueDescriptor`](venuedescriptor.m
 
 ## See Also
 
+- [struct ImmersiveVideoFrame](immersivevideoframe.md)
+  A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
 - [struct ImmersiveVideoMask](immersivevideomask.md)
   A video mask to use during video rendering to smooth the edges of the mesh.
 

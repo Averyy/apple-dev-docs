@@ -108,6 +108,8 @@ To convert the files Xcode displays in Show Details, make the file and directory
 
 - [Managing multiple projects and their dependencies](managing-multiple-projects-and-their-dependencies.md)
   Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
+- [Downloading and installing additional Xcode components](downloading-and-installing-additional-xcode-components.md)
+  Add more simulated devices, optional features, and support for additional platforms.
 
 
 ---

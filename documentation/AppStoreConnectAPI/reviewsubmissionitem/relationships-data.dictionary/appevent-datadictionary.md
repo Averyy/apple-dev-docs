@@ -16,6 +16,7 @@ object ReviewSubmissionItem.Relationships.AppEvent
 
 ### Objects
 - [object ReviewSubmissionItem.Relationships.AppEvent.Data](reviewsubmissionitem/relationships-data.dictionary/appevent-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a review submission item.
 
 ## Properties
 

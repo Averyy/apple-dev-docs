@@ -12,9 +12,9 @@ Overrides a multipolygon.
 
 ```swift
 itemForMultiPolygon?<D extends GeoJSONTypes.MultiPolygon>(
-        itemCollection: ItemCollection<D>,
-        geoJSON: D,
-    ): ItemCollection<D> | Item[] | null;
+    itemCollection: ItemCollection<D>,
+    geoJSON: D,
+): ItemCollection<D> | Item[] | null;
 ```
 
 #### Return Value

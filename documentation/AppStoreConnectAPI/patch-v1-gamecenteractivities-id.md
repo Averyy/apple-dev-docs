@@ -24,21 +24,22 @@ Update details for a specific Game Center activity.
   Add an achievement to a Game Center activity.
 - [Add a Leaderboard to a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-leaderboardsv2.md)
   Add a leaderboard to a Game Center activity.
-- [Modify the Achievements for a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
+- [Modify the achievements for a game center activity](post-v1-gamecenteractivities-_id_-relationships-achievements.md)
   Update the relationship between achievements and a specific Game Center activity.
-- [Modify the Leaderboards for a Game Center Activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
+- [Modify the leaderboards for a game center activity](post-v1-gamecenteractivities-_id_-relationships-leaderboards.md)
   Update the relationship between a leaderboard and a specific Game Center activity.
 - [Read Activity Information](get-v1-gamecenteractivities-_id_.md)
   Get information for a specific Game Center activity.
 - [Read the Versions for an Activity](get-v1-gamecenteractivities-_id_-versions.md)
   Get a list of versions for a specific Game Center activity.
-- [GET /v1/gameCenterActivities/{id}/relationships/versions](get-v1-gamecenteractivities-_id_-relationships-versions.md)
-- [List All Activities for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenteractivities.md)
+- [List version IDs for a Game Center activity](get-v1-gamecenteractivities-_id_-relationships-versions.md)
+- [List all activities for a game center detail](get-v1-gamecenterdetails-_id_-gamecenteractivities.md)
   Get activity release information for a specific Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/gameCenterActivities](get-v1-gamecenterdetails-_id_-relationships-gamecenteractivities.md)
-- [List All Activities for a Game Center Group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
+- [List Game Center activity IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenteractivities.md)
+- [List all activities for a game center group](get-v1-gamecentergroups-_id_-gamecenteractivities.md)
   Get a list of all activities for a Game Center group.
-- [GET /v1/gameCenterGroups/{id}/relationships/gameCenterActivities](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
+- [List activity IDs for a Game Center group](get-v1-gamecentergroups-_id_-relationships-gamecenteractivities.md)
+  Get a list of activity IDs for a specific Game Center group.
 - [Delete an Activity](delete-v1-gamecenteractivities-_id_.md)
   Remove a specific Game Center activity.
 - [Remove an Achievement](delete-v1-gamecenteractivities-_id_-relationships-achievementsv2.md)

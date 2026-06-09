@@ -20,6 +20,8 @@ The notification object is [`shared`](nsapplication/shared.md). This notificatio
 
 The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSApplication.DidBecomeActiveMessage`](nsapplication/didbecomeactivemessage.md).
+
 ## See Also
 
 - [class let didChangeScreenParametersNotification: NSNotification.Name](nsapplication/didchangescreenparametersnotification.md)

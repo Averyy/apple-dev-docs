@@ -45,6 +45,9 @@ When your extension no longer needs the capability, call [`invalidate()`](proces
   The helper extension process may access media hardware required for media capture and playback.
 - [ProcessCapability.Grant](processcapability/grant.md)
   An object that represents the provision of a capability.
+### Enumeration Cases
+- [case screenCapture(environment: MediaEnvironment)](processcapability/screencapture(environment:).md)
+  The helper extension process may access AV hardware required for media capture and playback.
 
 ## See Also
 

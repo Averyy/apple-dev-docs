@@ -48,10 +48,13 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
 - [func insert(Element, at: Int)](contiguousarray/insert(_:at:).md)
   Inserts a new element at the specified position.
+- [func isTriviallyIdentical(to: ContiguousArray<Element>) -> Bool](contiguousarray/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this array is identical to `other`.
 - [func remove(at: Int) -> Element](contiguousarray/remove(at:).md)
   Removes and returns the element at the specified position.
 - [func reserveCapacity(Int)](contiguousarray/reservecapacity(_:).md)
   Reserves enough space to store the specified number of elements.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](contiguousarray/withbytes(_:).md)
 - [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](contiguousarray/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the array’s contiguous storage.
 - [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](contiguousarray/withunsafebytes(_:).md)

@@ -12,7 +12,7 @@ Creates a preview of a SwiftUI view in an immersive space with custom viewpoints
 
 ```swift
 @MainActor
-init(_ name: String? = nil, immersionStyle: some ImmersionStyle, traits: PreviewTrait<Preview.ViewTraits>..., @ViewBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera] = { return [] })
+init(_ name: String? = nil, immersionStyle: some ImmersionStyle, traits: PreviewTrait<Preview.ViewTraits>..., @ContentBuilder body: @escaping @MainActor () -> any View, @PreviewCameraBuilder cameras: () -> [PreviewCamera] = { return [] })
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ Preview macros expand into a declaration that calls this initializer. Don’t us
 - `name`: An optional display name for the preview.
 - `immersionStyle`: The immersion style to use for the preview.
 - `traits`: An optional list of [`PreviewTrait`](PreviewTrait.md) instances that customize the appearance of the preview.
-- `body`: A view builder that produces a SwiftUI view to preview.
+- `body`: A content builder that produces a SwiftUI view to preview.
 - `cameras`: One or more preview cameras that indicate the custom, fixed viewpoints that you want to be able to view the preview from.
 
 ## See Also

@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: method
 
-Finishes analysis after an audio input sequence has been fully consumed and its results are finalized.
+Finishes analysis after an audio input sequence has been terminated and fully consumed and the modules’ results are finalized.
 
 **Availability**:
 - iOS 26.0+
@@ -21,9 +21,11 @@ final func finalizeAndFinishThroughEndOfInput() async throws
 
 #### Discussion
 
-This method waits until the input sequence has terminated, then finalizes like [`finalize(through:)`](speechanalyzer/finalize(through:).md) and finishes analysis like [`finish(after:)`](speechanalyzer/finish(after:).md).
+This method waits until the input sequence has been terminated and fully consumed, then finalizes like [`finalize(through:)`](speechanalyzer/finalize(through:).md) and finishes analysis like [`finish(after:)`](speechanalyzer/finish(after:).md).
 
 If there is no input sequence, this method waits until there is an input sequence and the sequence terminates. If the input sequence is replaced using one of the `start` methods, this method continues waiting for the replacement input sequence to terminate.
+
+This method is primarily useful for autonomous analysis started via one of the `start` methods or a similar initializer.
 
 > **Note**: `CancellationError` if analysis is finished early before the end of input
 

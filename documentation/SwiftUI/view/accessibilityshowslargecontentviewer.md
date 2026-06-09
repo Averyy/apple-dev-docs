@@ -18,7 +18,7 @@ Adds a custom large content view to be shown by the large content viewer.
 
 ```swift
 nonisolated
-func accessibilityShowsLargeContentViewer<V>(@ViewBuilder _ largeContentView: () -> V) -> some View where V : View
+func accessibilityShowsLargeContentViewer<V>(@ContentBuilder _ largeContentView: () -> V) -> some View where V : View
 ```
 
 #### Discussion

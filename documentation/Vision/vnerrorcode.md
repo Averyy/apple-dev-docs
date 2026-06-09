@@ -64,6 +64,9 @@ enum VNErrorCode
   The requested operation timed out.
 ### Creating an Error Code
 - [init?(rawValue: Int)](vnerrorcode/init(rawvalue:).md)
+### Enumeration Cases
+- [VNErrorCode.resourceCorrupted](vnerrorcode/resourcecorrupted.md)
+- [VNErrorCode.resourceUnavailable](vnerrorcode/resourceunavailable.md)
 
 ## Relationships
 

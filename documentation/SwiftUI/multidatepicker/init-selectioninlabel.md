@@ -15,7 +15,7 @@ Creates an instance that selects multiple dates on or after some start date.
 
 ```swift
 nonisolated
-init(selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>, @ViewBuilder label: () -> Label)
+init(selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

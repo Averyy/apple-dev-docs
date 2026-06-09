@@ -11,7 +11,7 @@ Values that set the minimum and maximum distances of the camera from the map cen
 ## Declaration
 
 ```swift
-cameraZoomRange?: CameraZoomRange;
+cameraZoomRange?: CameraZoomRangeData;
 ```
 
 #### Discussion

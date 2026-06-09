@@ -33,6 +33,7 @@ The user info provider of the error domain, or `nil` if none is specified.
 - [class func setUserInfoValueProvider(forDomain: String, provider: ((any Error, String) -> Any?)?)](nserror/setuserinfovalueprovider(fordomain:provider:).md)
   Specifies a block to call when the corresponding property is not present in the user info dictionary.
 - [struct ErrorUserInfoKey](erroruserinfokey.md)
+  These keys may exist in the user info dictionary.
 - [typealias UserInfoKey](nserror/userinfokey.md)
   These keys may exist in the user info dictionary.
 

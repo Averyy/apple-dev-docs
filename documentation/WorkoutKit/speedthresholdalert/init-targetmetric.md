@@ -23,11 +23,6 @@ init(target: Measurement<UnitSpeed>, metric: WorkoutAlertMetric)
 - `target`: A speed measurement that represents the target threshold.
 - `metric`: The metric used to measure the speed.
 
-## See Also
-
-- [static func speed(Double, unit: UnitSpeed, metric: WorkoutAlertMetric) -> Self](speedthresholdalert/speed(_:unit:metric:).md)
-  Returns a new speed threshold alert.
-
 
 ---
 

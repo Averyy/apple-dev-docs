@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An interface for exposing a custom type or app-specific concept to system experiences like Siri and the Shortcuts app.
+An interface for making a custom type or app-specific concept discoverable by Apple Intelligence and experiences like Siri or the Shortcuts app.
 
 **Availability**:
 - iOS 16.0+
@@ -22,11 +22,12 @@ protocol AppEntity : AppValue, DisplayRepresentable, Identifiable where Self == 
 
 ## Mentions
 
-- [Integrating actions with Siri and Apple Intelligence](integrating-actions-with-siri-and-apple-intelligence.md)
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
 - [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
+- [Getting started with the App Intents framework](getting-started-with-the-app-intents-framework.md)
+- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
 #### Overview
 
@@ -97,6 +98,12 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 ### URL representation
 - [struct EntityURLRepresentation](entityurlrepresentation.md)
   The URL representation of an app entity.
+### Ownership and sharing
+- [struct EntityOwnership](entityownership.md)
+  A type that represents the ownership and sharing characteristics of an app entity.
+### Type Aliases
+- [AppEntity.ValueRepresentation](appentity/valuerepresentation.md)
+  A type alias for `IntentValueRepresentation`, providing a convenient way to define transfer representations that convert between app entities and system intent values.
 ### Default Implementations
 - [Identifiable Implementations](appentity/identifiable-implementations.md)
 
@@ -117,6 +124,8 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [AssistantSchemaEntity](assistantschemaentity.md)
 - [FileEntity](fileentity.md)
 - [IndexedEntity](indexedentity.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [SyncableEntity](syncableentity.md)
 - [TransientAppEntity](transientappentity.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [UniqueAppEntity](uniqueappentity.md)
@@ -126,14 +135,20 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [protocol FileEntity](fileentity.md)
   An entity that refers to a document or other file.
 - [protocol IndexedEntity](indexedentity.md)
-  `IndexedEntity` represents an App Entity decorated with an attribute set. A set of attributes that enable the system to perform structured indexing  and queries of entities.
+  An interface that allows you to include an entity in your app’s Spotlight index.
+- [protocol SyncableEntity](syncableentity.md)
+  An interface that indicates your entity has an identifier that’s consistent across devices.
 - [protocol TransientAppEntity](transientappentity.md)
   A type that represents a transient model object which exposes its interface to App Intents via properties. Note that `TransientAppEntity` types are not meant to be queried.
 - [protocol UniqueAppEntity](uniqueappentity.md)
   An entity that will only ever have one value, such as global settings.
-- [protocol URLRepresentableEntity](urlrepresentableentity.md)
-  An app entity with a URL representation.
+- [protocol OwnershipProvidingEntity](ownershipprovidingentity.md)
+  A type that provides the system with ownership and sharing context for an app entity.
 - [macro UnionValue()](unionvalue().md)
+- [protocol AppUnionValue](appunionvalue.md)
+  A protocol that provides nominal type identity and metadata for union values.
+- [protocol AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
+  A protocol for the cases enumeration of an `AppUnionValue`.
 
 
 ---

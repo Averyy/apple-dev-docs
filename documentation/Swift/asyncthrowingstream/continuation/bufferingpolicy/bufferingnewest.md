@@ -22,12 +22,14 @@ case bufferingNewest(Int)
 
 #### Discussion
 
-This strategy enforces keeping the specified amount of newest values.
+This strategy enforces keeping at most the specified number of newest values.
+
+> **Note**: If the specified number is zero or negative, no elements are buffered. In that case, an iterator receives an element only if it is already awaiting a value when the continuation yields.
 
 ## See Also
 
 - [AsyncThrowingStream.Continuation.BufferingPolicy.unbounded](asyncthrowingstream/continuation/bufferingpolicy/unbounded.md)
-  Continue to add to the buffer, treating its capacity as infinite.
+  Continue to add to the buffer, without imposing a limit on the number of buffered elements.
 - [AsyncThrowingStream.Continuation.BufferingPolicy.bufferingOldest(_:)](asyncthrowingstream/continuation/bufferingpolicy/bufferingoldest(_:).md)
   When the buffer is full, discard the newly received element.
 

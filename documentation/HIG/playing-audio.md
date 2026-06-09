@@ -79,10 +79,11 @@ In watchOS, the system manages audio playback. An app can play short audio clips
 #### Developer documentation
 [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md) — AVFoundation
 [AVAudioSession](../AVFAudio/AVAudioSession.md) — AVFAudio
+[MusicKit](../MusicKit.md) — MusicKit
 
 #### Videos
+- [Integrate MusicKit into your app](https://developer.apple.com/videos/play/wwdc2026/254) - Bring the power of Apple Music into your app using MusicKit. We’ll cover authorization, subscription-status checks, music selection, playback control, and cross-storefront song sharing. Learn how to use the new Music Picker to let people browse the Apple Music catalog and their personal libraries. We’ll also break down the differences between SystemMusicPlayer and ApplicationMusicPlayer, and show you how to observe playback state. 
 - [Explore immersive sound design](https://developer.apple.com/videos/play/wwdc2023/10271) - Discover how you can use sound to enhance the experience of your visionOS apps and games. Learn how Apple designers select sounds and build soundscapes to create textural, immersive experiences. We’ll share how you can enrich basic interactions in your app with sound when you place audio cues spatially, vary repetitive sounds, and build moments of sonic delight into your app.
-- [Principles of spatial design](https://developer.apple.com/videos/play/wwdc2023/10072) - Discover the fundamentals of spatial design. Learn how to design with depth, scale, windows, and immersion, and apply best practices for creating comfortable, human-centered experiences that transform reality. Find out how you can use these spatial design principles to extend your existing app or bring a new idea to life.
 - [Immerse your app in Spatial Audio](https://developer.apple.com/videos/play/wwdc2021/10265) - Discover how spatial audio can help you provide a theater-like experience for media in your apps and on the web. We’ll show you how you can easily bring immersive audio to those listening with compatible hardware, and how to automatically deliver different listening experiences depending on someone’s bandwidth or connection — all with little to no change to your code. And gain recommendations on how you can tailor the experience in your app and use spatial audio to tell stories in new, exciting ways.
 
 ## Change log

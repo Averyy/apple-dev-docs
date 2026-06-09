@@ -25,8 +25,6 @@ For adaptive visibility, the subtitle is always hidden in the normal state, by d
 
 - [titleVisibility](markerannotation/titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
-- [const FeatureVisibility](featurevisibility.md)
-  Constants indicating the visibility of different adaptive map features.
 
 
 ---

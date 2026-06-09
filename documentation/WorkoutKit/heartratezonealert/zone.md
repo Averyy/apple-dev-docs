@@ -18,11 +18,6 @@ The target heart rate zone.
 var zone: Int
 ```
 
-## See Also
-
-- [var metric: WorkoutAlertMetric](heartratezonealert/metric.md)
-  The metric for the alert.
-
 
 ---
 

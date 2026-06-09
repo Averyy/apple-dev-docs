@@ -29,9 +29,9 @@ object AppInfoUpdateRequest
 - [object AppInfo](appinfo.md)
   The data structure that represent an App Infos resource.
 - [object AppInfoResponse](appinforesponse.md)
-  A response that contains a single App Infos resource.
+  The response body for endpoints that read or modify an app’s App Store information.
 - [object AppInfosResponse](appinfosresponse.md)
-  A response that contains a list of App Info resources.
+  The response body for endpoints that list an app’s App Store information entries.
 - [object AppInfoAppInfoLocalizationsLinkagesResponse](appinfoappinfolocalizationslinkagesresponse.md)
 - [object AppInfoPrimaryCategoryLinkageResponse](appinfoprimarycategorylinkageresponse.md)
 - [object AppInfoPrimarySubcategoryOneLinkageResponse](appinfoprimarysubcategoryonelinkageresponse.md)

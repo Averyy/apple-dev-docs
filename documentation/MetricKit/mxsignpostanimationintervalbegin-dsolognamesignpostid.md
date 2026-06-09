@@ -33,6 +33,8 @@ Call this function to mark the beginning of an animation interval in the metric 
 
 ## See Also
 
+- [struct SignpostIntervalMetric](signpostintervalmetric.md)
+  A metric that measures the duration and count of custom signpost intervals.
 - [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
   Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
 

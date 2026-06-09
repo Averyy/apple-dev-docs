@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+`true` if the volume supports making files immutable with the `NSURLIsUserImmutableKey` or `NSURLIsSystemImmutableKey` properties. (Read-only, value type boolean `NSNumber`).
+
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
@@ -39,6 +41,7 @@ static let volumeSupportsImmutableFilesKey: URLResourceKey
 - [static let volumeResourceCountKey: URLResourceKey](urlresourcekey/volumeresourcecountkey.md)
   Key for the total number of resources on the volume, returned as an `NSNumber` object (read-only).
 - [static let volumeSupportsAccessPermissionsKey: URLResourceKey](urlresourcekey/volumesupportsaccesspermissionskey.md)
+  `true` if the volume supports setting POSIX access permissions with the `NSURLFileSecurityKey` property. (Read-only, value type boolean `NSNumber`).
 - [static let volumeSupportsAdvisoryFileLockingKey: URLResourceKey](urlresourcekey/volumesupportsadvisoryfilelockingkey.md)
   Key for determining whether the volume implements whole-file advisory locks in the style of flock, along with the `O_EXLOCK` and `O_SHLOCK` flags of the open function, returned as a Boolean `NSNumber` object (read-only).
 - [static let volumeSupportsCasePreservedNamesKey: URLResourceKey](urlresourcekey/volumesupportscasepreservednameskey.md)

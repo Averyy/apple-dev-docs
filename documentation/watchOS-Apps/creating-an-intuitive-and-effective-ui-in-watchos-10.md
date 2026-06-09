@@ -416,6 +416,8 @@ For additional design guidance, see Human Interface Guidelines > [`Materials`](h
   Set up your app’s life cycle and create its user interface with SwiftUI.
 - [watchOS updates](../Updates/watchos.md)
   Learn about important changes to watchOS.
+- [Migrating to a single-target watchOS app](migrating-to-a-single-target-watchos-app.md)
+  Adopt the single-target configuration to simplify your project and avoid ambiguity about where to store resources and apply entitlements.
 
 
 ---

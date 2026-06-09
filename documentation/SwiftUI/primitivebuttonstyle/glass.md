@@ -16,8 +16,8 @@ A button style that applies a configurable Liquid Glass effect based on the butt
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static func glass(_ glass: Glass) -> Self
+nonisolated
+static func glass(_ glass: Glass) -> Self
 ```
 
 #### Discussion

@@ -15,6 +15,7 @@ Creates an instance that uniquely identifies and creates table columns across up
 ## Declaration
 
 ```swift
+nonisolated
 init(_ data: Data, id: KeyPath<Data.Element, ID>, @TableColumnBuilder<TableColumnForEach<Data, ID, RowValue, Sort, Content>.TableRowValue, TableColumnForEach<Data, ID, RowValue, Sort, Content>.TableColumnSortComparator> content: @escaping (Data.Element) -> Content)
 ```
 

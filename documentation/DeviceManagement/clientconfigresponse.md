@@ -6,8 +6,7 @@
 The response that contains the client configuration.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -22,13 +21,13 @@ Client config should be checked regularly in order to verify expected values for
 ## Topics
 
 ### Content Metadata
-- [Apps and Books for Organizations](apps-and-books-for-organizations.md)
-  Get details about apps and books to show to your users.
+- [Apps and books metadata for organizations](apps-and-books-metadata-for-organizations.md)
+  Get metadata for apps and books your organization owns.
 
 ## Properties
 
 - `countryISO2ACode` (string): The ISO alpha-2 country code that designates the organization’s location.
-- `defaultPlatform` (string): The value that the MDM client passes for the platform parameter in the `contentMetadataLookup` request. For more information about how the MDM client queries metadata by using `contentMetadataLookup`, see [`Getting App and Book Information (Legacy)`](getting-app-and-book-information-legacy.md).
+- `defaultPlatform` (string): The value that the MDM client passes for the platform parameter in the `contentMetadataLookup` request. For more information about how the MDM client queries metadata by using `contentMetadataLookup`, see [`Getting app and book information (Legacy)`](getting-app-and-book-information-legacy.md).
 - `notificationUrl` (string): The current URL to post notifications to.
 - `subscribedNotificationTypes` ([string]): The set of currently subscribed notification types.
 - `websiteURL` (string): The current website URL for the specified platform.

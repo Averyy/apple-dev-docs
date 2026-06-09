@@ -14,6 +14,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init(_ glass: Glass)
 ```
 

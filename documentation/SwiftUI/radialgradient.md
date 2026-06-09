@@ -18,7 +18,7 @@ A radial gradient.
 
 ```swift
 @frozen
-struct RadialGradient
+nonisolated struct RadialGradient
 ```
 
 #### Overview

@@ -44,6 +44,8 @@ Use a value of `nil` to indicate that you have no preference. You typically do t
 
 - [struct SurroundingsEffect](surroundingseffect.md)
   Effects that the system can apply to passthrough video.
+- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+  Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [struct BreakthroughEffect](breakthrougheffect.md)
 
 

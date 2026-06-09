@@ -24,6 +24,17 @@ mutating func insertNewShape(configuration: ShapeConfiguration, frame: CGRect, r
 - `frame`: The frame to add the element at.
 - `rotation`: The rotation in radians to add the element with.
 
+## See Also
+
+- [func insertNewImage(CGImage, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewimage(_:frame:rotation:).md)
+  Add a new image on top of the paper.
+- [func insertNewLine(configuration: ShapeConfiguration, from: CGPoint, to: CGPoint, startMarker: Bool, endMarker: Bool)](papermarkup/insertnewline(configuration:from:to:startmarker:endmarker:).md)
+  Add a line element on top of the paper.
+- [func insertNewTextbox(attributedText: AttributedString, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-53rs.md)
+  Add a new text box on top of the paper.
+- [func insertNewTextbox(attributedText: NSAttributedString, frame: CGRect, rotation: CGFloat)](papermarkup/insertnewtextbox(attributedtext:frame:rotation:)-67igk.md)
+  Add a new text box on top of the paper.
+
 
 ---
 

@@ -6,6 +6,12 @@
 
 Deprecated. Use DADiskMountApprovalCallback() instead.
 
+## See Also
+
+- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
+- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+
 
 ---
 

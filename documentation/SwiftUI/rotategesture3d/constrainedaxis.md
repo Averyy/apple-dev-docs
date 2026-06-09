@@ -22,6 +22,8 @@ If the axis is `nil`, the rotation is unconstrained.
 
 - [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle)](rotategesture3d/init(constrainedtoaxis:minimumangledelta:).md)
   Creates a rotation gesture with a minimum delta for the gesture to start and axis to constrain measurement of rotation.
+- [init(constrainedToAxis: RotationAxis3D?, minimumAngleDelta: Angle, inputKinds: GestureInputKinds)](rotategesture3d/init(constrainedtoaxis:minimumangledelta:inputkinds:).md)
+  Creates a rotation gesture with a minimum delta for the gesture to start, an axis to constrain measurement of rotation, and the input kinds the gesture should recognize.
 - [var minimumAngleDelta: Angle](rotategesture3d/minimumangledelta.md)
   The minimum angle delta before the gesture becomes active.
 

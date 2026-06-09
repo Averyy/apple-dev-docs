@@ -11,8 +11,6 @@ The payload that configures encrypted DNS settings.
 - Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS 1.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -33,11 +31,11 @@ When installed manually, this setting also applies to cellular networks.
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, visionOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
 ## Topics
@@ -60,7 +58,7 @@ When installed manually, this setting also applies to cellular networks.
   The payload that configures cellular settings.
 - [object CellularPrivateNetwork](cellularprivatenetwork.md)
   The payload that provides device info on private network deployments, including geographical location, preference over Wi-Fi, and network deployment type.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object Domains](domains.md)
   The payload that configures the domains under an organization’s management.

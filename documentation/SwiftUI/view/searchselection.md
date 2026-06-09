@@ -56,6 +56,17 @@ struct ContentView: View {
 
 - `selection`: The selection value to bind.
 
+## See Also
+
+- [func searchable(text:placement:prompt:)](view/searchable(text:placement:prompt:).md)
+  Marks this view as searchable, which configures the display of a search field.
+- [func searchable(text:isPresented:placement:prompt:)](view/searchable(text:ispresented:placement:prompt:).md)
+  Marks this view as searchable with programmatic presentation of the search field.
+- [func searchPresentationToolbarBehavior(SearchPresentationToolbarBehavior) -> some View](view/searchpresentationtoolbarbehavior(_:).md)
+  Configures the search toolbar presentation behavior for any searchable modifiers within this view.
+- [func searchToolbarBehavior(SearchToolbarBehavior) -> some View](view/searchtoolbarbehavior(_:).md)
+  Configures the behavior for search in the toolbar.
+
 
 ---
 

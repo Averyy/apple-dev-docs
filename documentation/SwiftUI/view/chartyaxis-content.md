@@ -102,6 +102,10 @@ The above code customizes the y-axis to appear on the leading edge of the chart,
   Sets the visibility of the y axis.
 - [func chartYAxisStyle<Content>(content: (ChartAxisContent) -> Content) -> some View](view/chartyaxisstyle(content:).md)
   Configures the y axis content of charts.
+- [func chartZAxis(Visibility) -> some View](view/chartzaxis(_:).md)
+  Sets the visibility of the z axis.
+- [func chartZAxis<Content>(content: () -> Content) -> some View](view/chartzaxis(content:).md)
+  Configures the z-axis for 3D charts in the view.
 
 
 ---

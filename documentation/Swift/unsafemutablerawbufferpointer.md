@@ -97,6 +97,8 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
   Initializes the buffer’s memory with every element of the source, binding the initialized memory to the elements’ type.
 - [func initializeMemory<T>(as: T.Type, repeating: T) -> UnsafeMutableBufferPointer<T>](unsafemutablerawbufferpointer/initializememory(as:repeating:).md)
   Initializes the memory referenced by this buffer with the given value, binds the memory to the value’s type, and returns a typed buffer of the initialized memory.
+- [func isTriviallyIdentical(to: UnsafeMutableRawBufferPointer) -> Bool](unsafemutablerawbufferpointer/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/loadunaligned(frombyteoffset:as:)-7883k.md)
@@ -108,6 +110,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
   Moves every element of an initialized source buffer slice into the uninitialized memory referenced by this buffer, leaving the source memory uninitialized and this buffer’s memory initialized.
 - [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawbufferpointer/storebytes(of:tobyteoffset:as:).md)
   Stores a value’s bytes into the buffer pointer’s raw memory at the specified byte offset.
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsafemutablerawbufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablerawbufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the buffer to instances of type `T`.
 ### Type Methods

@@ -6,17 +6,17 @@
 A static property that allows you to access the annotation’s collision mode enumeration values.
 
 **Availability**:
-- MapKit JS 5.0+
+- MapKit JS 5.0+ - Deprecated in 6.0
 
 ## Declaration
 
 ```swift
-static CollisionMode: typeof CollisionMode;
+static get CollisionMode(): typeof AnnotationCollisionMode;
 ```
 
-#### Discussion
+## Mentions
 
-Use this object to access the [`CollisionMode`](annotation/collisionmode-data.var.md) enumeration with `mapkit.Annotation.CollisionMode`.
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 ## See Also
 

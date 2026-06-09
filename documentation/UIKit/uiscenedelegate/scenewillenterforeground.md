@@ -18,6 +18,11 @@ Tells the delegate that the scene is about to begin running in the foreground an
 optional func sceneWillEnterForeground(_ scene: UIScene)
 ```
 
+## Mentions
+
+- [About the app launch sequence](about-the-app-launch-sequence.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 To use this method, you must implement the [`UISceneDelegate`](uiscenedelegate.md) protocol and configure scenes for your app (see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md)).

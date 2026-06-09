@@ -27,6 +27,8 @@ In Swift the methods returns an attachment object; in Objective-C the methods re
 
 - [init(url: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizationMode: VZDiskImageSynchronizationMode) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:cachingmode:synchronizationmode:)-36gc5.md)
   Initialize the attachment from a local file URL.
+- [init(url: URL, readOnly: Bool, cachingMode: VZDiskImageCachingMode, synchronizationMode: VZDiskImageSynchronizationMode) throws](vzdiskimagestoragedeviceattachment/init(url:readonly:cachingmode:synchronizationmode:)-36gc5.md)
+  Initialize the attachment from a local file URL.
 
 
 ---

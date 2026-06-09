@@ -283,6 +283,9 @@ For more information about how to configure a collection view using the legacy a
   Constants indicating the scrolling direction for the layout.
 - [NSCollectionView.UpdateAction](nscollectionview/updateaction.md)
   Constants indicating the type of action being performed on an item.
+### Instance Properties
+- [var appIntentsDataSource: (any NSCollectionViewAppIntentsDataSource)?](nscollectionview/appintentsdatasource.md)
+  The object acting as the collection view’s data source for app entity identifiers that make a cell’s content discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 

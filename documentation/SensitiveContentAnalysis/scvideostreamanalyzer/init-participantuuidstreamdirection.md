@@ -1,6 +1,6 @@
 # init(participantUUID:streamDirection:)
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: init
 
 Creates a video stream analyzer for the given call participant and stream option.

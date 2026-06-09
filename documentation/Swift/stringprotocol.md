@@ -63,7 +63,7 @@ Do not declare new conformances to `StringProtocol`. Only the `String` and `Subs
 - [var precomposedStringWithCompatibilityMapping: String](stringprotocol/precomposedstringwithcompatibilitymapping.md)
   A string created by normalizing the string’s contents using Form KC.
 - [var removingPercentEncoding: String?](stringprotocol/removingpercentencoding.md)
-  A new string made from the string by replacing all percent encoded sequences with the matching UTF-8 characters.
+  Returns a new string created by replacing all percent-encoded sequences with the matching UTF-8 characters.
 - [var smallestEncoding: String.Encoding](stringprotocol/smallestencoding.md)
   The smallest encoding to which the string can be converted without loss of information.
 - [var unicodeScalars: Self.UnicodeScalarView](stringprotocol/unicodescalars.md)
@@ -71,9 +71,7 @@ Do not declare new conformances to `StringProtocol`. Only the `String` and `Subs
 - [var utf8: Self.UTF8View](stringprotocol/utf8.md)
 ### Instance Methods
 - [func addingPercentEncoding(withAllowedCharacters: CharacterSet) -> String?](stringprotocol/addingpercentencoding(withallowedcharacters:).md)
-  Returns a new string created by replacing all characters in the string not in the specified set with percent encoded characters.
-- [func addingPercentEscapes(using: String.Encoding) -> String?](stringprotocol/addingpercentescapes(using:).md)
-  Returns a representation of the `String` using a given encoding to determine the percent escapes necessary to convert the `String` into a legal URL string.
+  Returns a new string created by replacing all characters not in the specified set with percent-encoded characters.
 - [func appending(some StringProtocol) -> String](stringprotocol/appending(_:).md)
   Returns a new string created by appending the given string.
 - [func appendingFormat<T>(T, any CVarArg...) -> String](stringprotocol/appendingformat(_:_:).md)
@@ -168,8 +166,6 @@ Do not declare new conformances to `StringProtocol`. Only the `String` and `Subs
   Returns a new string in which the characters in a specified range of the `String` are replaced by a given string.
 - [func replacingOccurrences<Target, Replacement>(of: Target, with: Replacement, options: String.CompareOptions, range: Range<Self.Index>?) -> String](stringprotocol/replacingoccurrences(of:with:options:range:).md)
   Returns a new string in which all occurrences of a target string in a specified range of the string are replaced by another given string.
-- [func replacingPercentEscapes(using: String.Encoding) -> String?](stringprotocol/replacingpercentescapes(using:).md)
-  Returns a new string made by replacing in the `String` all percent escapes with the matching characters as determined by a given encoding.
 - [func split(separator: String, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Substring]](stringprotocol/split(separator:maxsplits:omittingemptysubsequences:)-7mfus.md)
 - [func split(separator: Substring, maxSplits: Int, omittingEmptySubsequences: Bool) -> [Substring]](stringprotocol/split(separator:maxsplits:omittingemptysubsequences:)-8wzc1.md)
 - [func substring(from: Self.Index) -> String](stringprotocol/substring(from:).md)

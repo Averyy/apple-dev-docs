@@ -31,7 +31,8 @@ This method is the designated initializer of the class.
 
 ## See Also
 
-- [Application Menu and Pop-up List Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/MenuList/MenuList.html#//apple_ref/doc/uid/10000032i)
+- [init(frame: NSRect, pullsDown: Bool)](nspopupbutton/init(frame:pullsdown:).md)
+  Returns an `NSPopUpButton` object initialized to the specified dimensions.
 
 
 ---

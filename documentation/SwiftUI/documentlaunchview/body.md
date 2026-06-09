@@ -8,12 +8,13 @@ The body of the view.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var body: some View { get }
+nonisolated
+var body: some View { get }
 ```
 
 

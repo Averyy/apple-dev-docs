@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Create a timer format style that counts down from the given interval.
+Creates a timer format style that counts down within the interval you provide.
 
 **Availability**:
 - iOS 18.0+
@@ -22,12 +22,14 @@ init(countingDownIn interval: Range<Date>, showsHours: Bool = true, maxFieldCoun
 
 #### Discussion
 
-A timer styled display that counts from the given `timerInterval` down to zero.
+The timer displays the remaining time, starting from the total interval duration and decreasing to zero.
 
-- interval: The interval during which the timer counts down.
-- showsHours: If true, the timer shows the hours as a separate   element on the formatted string, as long as the duration is at least   one hour. If false, the timer displays minute values greather than sixty.
-- maxFieldCount: The number of fields that can be shown at once. For example, 1 hour, 34 minutes is shown as `1:34:00` by default, but as `1:34` if the `maxFieldCount` is set to two. The style automatically excludes more significant fields if their value is zero and they are not necessary for the format pattern, making room for less significant fields.
-- maxPrecision: The precision at which the input is formatted. E.g. by default, seconds are shown, making the maximum precision   one second. Setting the maximum precision to `.seconds(60)` would   only allow hours and minutes to be shown.
+## Parameters
+
+- `interval`: The time interval during which the timer counts down.
+- `showsHours`: If `true`, hours appear as a separate element when the remaining time is at least one hour. If `false`, minutes accumulate beyond 60.
+- `maxFieldCount`: The maximum number of fields shown at once. With the default of 3, output includes hours, minutes, and seconds. With 2, it shows hours and minutes once the time reaches hours.
+- `maxPrecision`: The smallest time interval between display updates. Defaults to 1 second.
 
 
 ---

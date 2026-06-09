@@ -14,6 +14,10 @@ A place object that returns from a geocoder lookup, a reverse lookup, or a fetch
 class Place
 ```
 
+## Mentions
+
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
+
 #### Overview
 
 [`GeocoderResponse`](geocoderresponse.md), [`SearchResponse`](searchresponse.md), and [`PointsOfInterestSearchResponse`](pointsofinterestsearchresponse.md) return places.

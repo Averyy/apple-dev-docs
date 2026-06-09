@@ -17,6 +17,7 @@ Erases view opaque result types in debug builds.
 ## Declaration
 
 ```swift
+nonisolated
 struct DebugReplaceableView
 ```
 

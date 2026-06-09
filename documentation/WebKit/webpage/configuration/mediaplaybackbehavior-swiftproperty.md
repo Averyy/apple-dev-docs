@@ -9,7 +9,6 @@ Indicates whether HTML5 videos play inline or use the native full-screen control
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

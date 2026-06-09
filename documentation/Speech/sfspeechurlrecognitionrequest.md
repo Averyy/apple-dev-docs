@@ -81,8 +81,6 @@ func recognizeFile(url: URL) {
 
 ## See Also
 
-- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
-  Perform speech recognition on audio coming from the microphone of an iOS device.
 - [class SFSpeechAudioBufferRecognitionRequest](sfspeechaudiobufferrecognitionrequest.md)
   A request to recognize speech from captured audio content, such as audio from the device’s microphone.
 - [class SFSpeechRecognitionRequest](sfspeechrecognitionrequest.md)

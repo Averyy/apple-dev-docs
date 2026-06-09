@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/appEvents
+# List app event IDs for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,7 +16,8 @@
 
 ## See Also
 
-- [GET /v1/apps/{id}/appEvents](get-v1-apps-_id_-appevents.md)
+- [List all in-app events for an app](get-v1-apps-_id_-appevents.md)
+  Get a list of in-app events for a specific app.
 
 
 ---

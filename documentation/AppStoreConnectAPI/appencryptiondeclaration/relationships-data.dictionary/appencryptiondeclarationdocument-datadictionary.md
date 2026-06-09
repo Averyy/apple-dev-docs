@@ -16,6 +16,7 @@ object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument
 
 ### Objects
 - [object AppEncryptionDeclaration.Relationships.AppEncryptionDeclarationDocument.Data](appencryptiondeclaration/relationships-data.dictionary/appencryptiondeclarationdocument-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app encryption declaration.
 
 ## Properties
 

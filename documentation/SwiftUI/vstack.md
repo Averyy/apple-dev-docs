@@ -18,7 +18,7 @@ A view that arranges its subviews in a vertical line.
 
 ```swift
 @frozen
-struct VStack<Content> where Content : View
+nonisolated struct VStack<Content> where Content : View
 ```
 
 ## Mentions

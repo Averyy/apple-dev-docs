@@ -35,14 +35,10 @@ Adopt this protocol to indicate to the system that your App Intent plays audio. 
 
 ## See Also
 
-- [protocol AudioPlaybackIntent](audioplaybackintent.md)
-  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
-- [protocol AudioRecordingIntent](audiorecordingintent.md)
-  An app intent that starts, stops or otherwise modifies audio recording state.
-- [protocol CameraCaptureIntent](cameracaptureintent.md)
-  Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
-- [protocol PlayVideoIntent](playvideointent.md)
-  An intent that looks for videos based on a search term, then plays the content.
+- [protocol ForegroundContinuableIntent](foregroundcontinuableintent.md)
+  A protocol you use for app intents which begin their work with the app in the background but may request to continue in the foreground.
+- [protocol LiveActivityStartingIntent](liveactivitystartingintent.md)
+  An intent that starts, pauses, or otherwise modifies a Live Activity.
 
 
 ---

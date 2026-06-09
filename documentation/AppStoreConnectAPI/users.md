@@ -11,41 +11,41 @@ The `users` resource represents an App Store Connect user. You can change or del
 ## Topics
 
 ### Getting User Information
-- [List Users](get-v1-users.md)
+- [List users](get-v1-users.md)
   Get a list of the users on your team.
-- [Read User Information](get-v1-users-_id_.md)
+- [Read user information](get-v1-users-_id_.md)
   Get information about a user on your team, such as name, roles, and app visibility.
 ### Modifying and Removing User Accounts
-- [Modify a User Account](patch-v1-users-_id_.md)
+- [Modify a user account](patch-v1-users-_id_.md)
   Change a user’s role, app visibility information, or other account details.
-- [Remove a User Account](delete-v1-users-_id_.md)
+- [Remove a user account](delete-v1-users-_id_.md)
   Remove a user from your team.
 ### Listing, Adding, and Removing App Access
-- [List All Apps Visible to a User](get-v1-users-_id_-visibleapps.md)
+- [List all apps visible to a user](get-v1-users-_id_-visibleapps.md)
   Get a list of apps that a user on your team can view.
-- [Get All Visible App Resource IDs for a User](get-v1-users-_id_-relationships-visibleapps.md)
+- [Get all visible app resource ids for a user](get-v1-users-_id_-relationships-visibleapps.md)
   Get a list of app resource IDs to which a user on your team has access.
-- [Add Visible Apps to a User](post-v1-users-_id_-relationships-visibleapps.md)
+- [Add visible apps to a user](post-v1-users-_id_-relationships-visibleapps.md)
   Give a user on your team access to one or more apps.
-- [Replace the List of Visible Apps for a User](patch-v1-users-_id_-relationships-visibleapps.md)
+- [Replace the list of visible apps for a user](patch-v1-users-_id_-relationships-visibleapps.md)
   Replace the list of apps a user on your team can see.
-- [Remove Visible Apps From a User](delete-v1-users-_id_-relationships-visibleapps.md)
+- [Remove visible apps from a user](delete-v1-users-_id_-relationships-visibleapps.md)
   Remove a user on your team’s access to one or more apps.
 ### Objects and Data Types
 - [object User](user.md)
-  The data structure that represents a Users resource.
+  A member of your App Store Connect team, with assigned roles and access to specific apps.
 - [object UserUpdateRequest](userupdaterequest.md)
   The request body you use to update a User.
 - [object UserResponse](userresponse.md)
-  A response that contains a single Users resource.
+  The response body for endpoints that read or modify a single App Store Connect team member.
 - [object UsersResponse](usersresponse.md)
-  A response that contains a list of Users resources.
+  A response containing a list of team members who have access to your App Store Connect account.
 - [object UserVisibleAppsLinkagesRequest](uservisibleappslinkagesrequest.md)
   A request body you use to add or remove visible apps from a user.
 - [object UserVisibleAppsLinkagesResponse](uservisibleappslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [type UserRole](userrole.md)
-  Strings that represent user roles and permissions in App Store Connect.
+  A string that represents user roles and permissions in App Store Connect.
 
 ## See Also
 

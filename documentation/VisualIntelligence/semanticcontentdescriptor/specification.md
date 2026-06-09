@@ -8,7 +8,9 @@ A type that specifies how the system resolves a semantic content descriptor.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS ?+
 
 ## Declaration
 
@@ -18,7 +20,7 @@ typealias Specification = some ResolverSpecification
 
 #### Discussion
 
-This type is part of the internal mechanism that App Intents uses to process visual intelligence data. It defines the specification type that determines how the system resolves a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance.
+This type is part of the internal mechanism that App Intents uses to process visual intelligence data and to determine how the system resolves a [`SemanticContentDescriptor`](semanticcontentdescriptor.md) instance.
 
 ## See Also
 

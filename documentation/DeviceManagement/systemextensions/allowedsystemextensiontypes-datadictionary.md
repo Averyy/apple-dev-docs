@@ -7,8 +7,6 @@ A dictionary that maps team identifiers to system extensions.
 
 **Availability**:
 - macOS 10.15+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

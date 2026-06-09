@@ -31,6 +31,8 @@ cinema.components.set(ReverbComponent(reverb: reverb))
 
 ## Topics
 
+### Creating a reverb
+- [static func simulated(mesh: ReverbMeshResource, materials: [Audio.Material]) -> Reverb](reverb/simulated(mesh:materials:).md)
 ### Structures
 - [Reverb.Preset](reverb/preset.md)
   Reverbs defined by a preset environment.

@@ -11,6 +11,7 @@ Conforms a type to [`Generable`](generable.md) protocol.
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -61,6 +62,8 @@ Controlling this behavior can be important when interfacing with external system
 
 - [macro Generable(description: String?)](generable(description:).md)
   Conforms a type to [`Generable`](generable.md) protocol.
+- [macro Generable(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(name:description:representnilexplicitlyingeneratedcontent:).md)
+  Conforms a type to [`Generable`](generable.md) protocol, using a custom name for the schema instead of the Swift type name.
 
 
 ---

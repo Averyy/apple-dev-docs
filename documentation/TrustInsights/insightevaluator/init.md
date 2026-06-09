@@ -1,0 +1,23 @@
+# init()
+
+**Framework**: TrustInsights  
+**Kind**: init
+
+Creates a new insight evaluator object you use to request insights.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- visionOS ?+
+
+## Declaration
+
+```swift
+init()
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/trustinsights/insightevaluator/init())*

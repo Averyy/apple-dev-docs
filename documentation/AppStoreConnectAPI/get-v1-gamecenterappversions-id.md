@@ -1,4 +1,4 @@
-# GET /v1/gameCenterAppVersions/{id}
+# Read app version information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -6,7 +6,7 @@
 Read the Game Center enablement state and related app version information.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 3.0+
 
 #### Discussion
 
@@ -65,15 +65,15 @@ https://api.appstoreconnect.apple.com/v1/gameCenterAppVersions/1d9b87fb-80c4-44e
 
 ## See Also
 
-- [Read App Versions for a Game Center Detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
+- [Read app versions for a game center detail](get-v1-gamecenterdetails-_id_-gamecenterappversions.md)
   Get a list of app versions for a Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/gameCenterAppVersions](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
-- [GET /v1/gameCenterAppVersions/{id}/appStoreVersion](get-v1-gamecenterappversions-_id_-appstoreversion.md)
+- [List Game Center app version IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-gamecenterappversions.md)
+- [Read the App Store version for an app version](get-v1-gamecenterappversions-_id_-appstoreversion.md)
   Read the App Store version and related information for an app version.
-- [GET /v1/gameCenterAppVersions/{id}/relationships/appStoreVersion](get-v1-gamecenterappversions-_id_-relationships-appstoreversion.md)
-- [GET /v1/gameCenterAppVersions/{id}/compatibilityVersions](get-v1-gamecenterappversions-_id_-compatibilityversions.md)
+- [Get the App Store version ID for a Game Center app version](get-v1-gamecenterappversions-_id_-relationships-appstoreversion.md)
+- [Read compatibility version information](get-v1-gamecenterappversions-_id_-compatibilityversions.md)
   Get compatibility version information for a specific app version.
-- [GET /v1/gameCenterAppVersions/{id}/relationships/compatibilityVersions](get-v1-gamecenterappversions-_id_-relationships-compatibilityversions.md)
+- [List all compatible app version IDs](get-v1-gamecenterappversions-_id_-relationships-compatibilityversions.md)
   List all compatible verisons for an app version.
 
 

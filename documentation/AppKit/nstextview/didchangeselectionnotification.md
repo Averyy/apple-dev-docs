@@ -24,6 +24,8 @@ The notification object is the notifying text view. The `userInfo` dictionary co
 | --- | --- |
 | `@"NSOldSelectedCharacterRange"` | An `NSValue` object containing an `NSRange` structure with the originally selected range. |
 
+To observe this notification using Swift concurrency, use [`NSTextView.DidChangeSelectionMessage`](nstextview/didchangeselectionmessage.md).
+
 ## See Also
 
 - [class let willChangeNotifyingTextViewNotification: NSNotification.Name](nstextview/willchangenotifyingtextviewnotification.md)

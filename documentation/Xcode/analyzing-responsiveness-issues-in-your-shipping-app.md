@@ -10,11 +10,9 @@ Hitches and hangs are two types of responsiveness issues that negatively impact 
 
 ##### View Your Apps Hitch Rate
 
-The Scrolling pane of the Xcode Organizer window displays information about the hitch rate of your app over time.
+The Hitches pane of the Xcode Organizer window displays information about the hitch rate of your app over time. The hitch rate tracks animation interruptions across all animated interactions in your app, including scrolling, transitions, and other continuous motion. For more information about hitches, see [`Understanding hitches in your app`](understanding-hitches-in-your-app.md).
 
-![A screenshot of the Scrolling metric pane in the Xcode Organizer window. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the scroll hitch rate for the past 12 app versions, the selected version, the comparison data for the selected and latest versions, and the goal keys.](https://docs-assets.developer.apple.com/published/c3c3c4a0f84ff4296c49fa46853d90c4/improving-app-responsiveness-1%402x.png)
-
-Based on the scroll hitch rate for a version of your app, the bar appears in red, yellow, or green. Red bars indicate a poor scroll with a hitch rate of more than 10 milliseconds per second (ms/s), yellow bars indicate a fair scroll with a hitch rate of 5–10 ms/s, and green bars indicate a good scroll with a hitch rate of less than 5 ms/s. Aim for green bars to provide the best scroll experience for your users.
+![A screenshot of the Hitches metric pane in the Xcode Organizer window. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hitch rate for the past 15 app versions, the selected version, the comparison data for the selected and latest versions, and the goal keys.](https://docs-assets.developer.apple.com/published/690ac9c563e65a969a6ba51ecde9c80b/improving-app-responsiveness-1%402x.png)
 
 Hitch-rate data is only available for iOS and iPadOS devices.
 
@@ -22,7 +20,7 @@ Hitch-rate data is only available for iOS and iPadOS devices.
 
 Xcode Organizer reports the hang rate as the number of seconds per hour that the app is unresponsive, while only counting periods of unresponsiveness of more than 250 ms. The Organizer window shows both the median hang rate of a typical user experience, and the extreme 90th percentile hang rate. [`MetricKit`](https://developer.apple.com/documentation/MetricKit) provides the same hang rate metric as a histogram.
 
-![A screenshot of the Hang Rate metric pane in the Xcode Organizer window. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hang rate for the past 12 app versions, the selected version, and the comparison data for the selected and latest versions.](https://docs-assets.developer.apple.com/published/402d2ecc35e6998f4dc9fb27dd7ca9c7/improving-app-responsiveness-2%402x.png)
+![A screenshot of the Hang Rate metric pane in the Xcode Organizer window. From left to right are the list of metrics and reports, the metric UI with a bar graph showing the hang rate for the past 16 app versions, the selected version, and the comparison data for the selected and latest versions.](https://docs-assets.developer.apple.com/published/8a26616be99767325bb65fa3491e03ac/improving-app-responsiveness-2%402x.png)
 
 Apple operating systems support a broad variety of devices with different hardware capabilities and performance characteristics. Code that performs flawlessly on one hardware model can hang on another. Use the device filter at the top of the Organizer window to filter the hang rate for specific device types and uncover hangs that only manifest in certain circumstances.
 
@@ -32,7 +30,7 @@ Hang rate data is available for iOS and macOS devices.
 
 The hang rate provides general information about how responsive a specific app version is on average, while hang reports highlight individual causes of hangs. When the main thread is unresponsive for 1 s or longer, the system also samples the app to capture a backtrace profile, highlighting where the app is spending its time during the hang. The system sends anonymous diagnostic reports with hang stack traces to Apple for users who consent to share data with app developers. Xcode Organizer aggregates these individual hang reports and groups them by similar backtraces to identify common causes of hangs. Alternatively, you can create your own reports from logs that [`MetricKit`](https://developer.apple.com/documentation/MetricKit) collects.
 
-![A screenshot of the Hang reports pane in the Xcode Organizer window. From left to](https://docs-assets.developer.apple.com/published/4e74644803213a17e7b261aa4f2ebeb1/analyzing-responsiveness-issues-in-your-shipping-app-1%402x.png)
+![A screenshot of the Hang reports pane in the Xcode Organizer window. From left to](https://docs-assets.developer.apple.com/published/34804f84cc01e9d5756358e5d2c8869e/analyzing-responsiveness-issues-in-your-shipping-app-1%402x.png)
 
 Each report in the Report List shows the function call that generates the hang, and the percentage of total hang time it accounts for in the release. The Report List sorts function calls in descending order of hang-time contribution to the app release. Clicking a report shows a sample main thread stack trace, as well as additional details in the Inspector, including:
 
@@ -47,6 +45,10 @@ Details such as iOS version, device model, number of logs received, and 14-day r
 Identify the code that’s causing the hang by using the function calls for a specific report in the Report List and the corresponding stack trace.
 
 Hang reports are only available for iOS and iPadOS devices.
+
+##### Get Coding Assistant Recommendations for Hang Issues
+
+After selecting a hang report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the call path and stack trace into the coding assistant to help you identify and address the root cause of the hang.
 
 ##### Reproduce Problems to Analyze and Fix Them
 

@@ -34,6 +34,7 @@ A typical payment request is for a one-time payment. To support different types 
 | Deferred payments | [`deferredPaymentRequest`](pkpaymentrequest/deferredpaymentrequest.md) |
 | Indicating eligibility for Apple Pay Later | [`applePayLaterAvailability`](pkpaymentrequest/applepaylateravailability-3dxrt.md) |
 | Multiple payment tokens to support for multimerchant payments | [`multiTokenContexts`](pkpaymentrequest/multitokencontexts.md) |
+| Exclude an Apple Pay card from the payment sheet | [`unsupportedPrimaryAccountIdentifiers`](pkpaymentrequest/unsupportedprimaryaccountidentifiers.md) |
 
 > **Note**:  You can set only one optional payment request type on a payment request object.
 
@@ -56,6 +57,10 @@ Use the [`applePayLaterAvailability`](pkpaymentrequest/applepaylateravailabilit
 ##### Request Multitoken or Multimerchant Payments
 
 Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) property to request payment data for multimerchant payments with the [`PKPaymentTokenContext`](pkpaymenttokencontext.md) class. You can set up multitoken transactions to process and display payment requests with multiple merchants on one payment sheet, for example, a booking site where someone pays for a hotel, flight, and car rental from different merchants.
+
+##### Exclude an Apple Pay From the Payment Sheet
+
+Use the [`unsupportedPrimaryAccountIdentifiers`](pkpaymentrequest/unsupportedprimaryaccountidentifiers.md) property to exclude specific Apple Pay cards that you’ve issued from appearing in the payment sheet as a pay option. For example, if a person is topping up a stored value card, you can exclude the card being topped up from the payment options.
 
 ## Topics
 
@@ -104,6 +109,9 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
   A request to set up a deferred payment, such as a hotel booking or a pre-order.
 - [class PKDeferredPaymentRequest](pkdeferredpaymentrequest.md)
   An object that represents a request to set up a deferred payment, such as a hotel booking or a pre-order.
+### Excluding cards from the payment sheet
+- [var unsupportedPrimaryAccountIdentifiers: [String]](pkpaymentrequest/unsupportedprimaryaccountidentifiers.md)
+  An array of Apple Pay cards to exclude from payment.
 ### Requesting multitoken or multimerchant payments
 - [var multiTokenContexts: [PKPaymentTokenContext]](pkpaymentrequest/multitokencontexts.md)
   An array of payment token contexts to request multiple payment tokens with one payment token per context.
@@ -160,6 +168,8 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 - [static func paymentCouponCodeExpiredError(localizedDescription: String?) -> any Error](pkpaymentrequest/paymentcouponcodeexpirederror(localizeddescription:).md)
   Returns an error object that indicates an expired coupon.
 ### Deprecated
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 - [static var enabled: PKShippingContactEditingMode](pkshippingcontacteditingmode/enabled.md)
   All fields of the shipping contact on the payment sheet are editable by the user.
 - [var requiredBillingAddressFields: PKAddressField](pkpaymentrequest/requiredbillingaddressfields.md)
@@ -176,8 +186,6 @@ Use the [`multiTokenContexts`](pkpaymentrequestupdate/multitokencontexts.md) pro
 - [PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-swift.enum.md)
   Values you use to enable or disable Apple Pay Later for a specific transaction.
 ### Instance Properties
-- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
-  A value that indicates whether Apple Pay Later is available for a transaction.
 - [var attributionIdentifier: String?](pkpaymentrequest/attributionidentifier.md)
 - [var isDelegatedRequest: Bool](pkpaymentrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this payment request is being made by a delegated entity on behalf of a merchant.

@@ -13,6 +13,7 @@ The minimum number of frames that the request has to process before reporting an
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

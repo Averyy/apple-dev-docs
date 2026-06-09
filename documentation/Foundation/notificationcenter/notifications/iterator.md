@@ -20,10 +20,24 @@ The asynchronous iterator created by this asynchronous sequence.
 struct Iterator
 ```
 
+## Topics
+
+### Iterating over Elements
+- [func next() async -> Notification?](notificationcenter/notifications/iterator/next.md)
+  Asynchronously advances to the next element and returns it, or ends the sequence if there is no next element.
+### Supporting Types
+- [NotificationCenter.Notifications.Element](notificationcenter/notifications/element.md)
+  The type of element produced by this asynchronous sequence.
+
 ## Relationships
 
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
+
+## See Also
+
+- [func makeAsyncIterator() -> NotificationCenter.Notifications.Iterator](notificationcenter/notifications/makeasynciterator.md)
+  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
 
 
 ---

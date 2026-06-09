@@ -3,7 +3,7 @@
 **Framework**: ARKit  
 **Kind**: struct
 
-A coordinate space data.
+A coordinate space data object.
 
 **Availability**:
 - visionOS 26.0+
@@ -16,16 +16,16 @@ struct CoordinateSpaceData
 
 #### Overview
 
-The underlying data needs to be sent to each participant in the shared coordinate space.
+> **Note**: The underlying data needs to be sent to each participant in the shared coordinate space.
 
 ## Topics
 
 ### Initializers
 - [init?(data: Data)](sharedcoordinatespaceprovider/coordinatespacedata/init(data:).md)
-  Initialize a `CoordinateSpaceData` from a Data blob received over network.
+  Initialize a `CoordinateSpaceData` from a data blob.
 ### Instance Properties
 - [var data: Data](sharedcoordinatespaceprovider/coordinatespacedata/data.md)
-  Extract a `Data` object to be transported over network.
+  Extract a `Data` object.
 - [var recipientIdentifiers: [UUID]](sharedcoordinatespaceprovider/coordinatespacedata/recipientidentifiers.md)
   Participant identifiers of the intended recipient for this data. Data should be broadcast if the list is empty.
 

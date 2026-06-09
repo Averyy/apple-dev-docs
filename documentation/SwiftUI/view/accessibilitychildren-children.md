@@ -18,7 +18,7 @@ Replaces the existing accessibility element’s children with one or more new sy
 
 ```swift
 nonisolated
-func accessibilityChildren<V>(@ViewBuilder children: () -> V) -> some View where V : View
+func accessibilityChildren<V>(@ContentBuilder children: () -> V) -> some View where V : View
 ```
 
 #### Discussion
@@ -64,7 +64,7 @@ SwiftUI hides any views that you provide with the `children` parameter, then the
 
 ## Parameters
 
-- `children`: A [`ViewBuilder`](viewbuilder.md) that represents the replacement child views the framework uses to generate accessibility elements.
+- `children`: A [`ContentBuilder`](contentbuilder.md) that represents the replacement child views the framework uses to generate accessibility elements.
 
 ## See Also
 

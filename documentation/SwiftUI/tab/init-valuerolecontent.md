@@ -18,7 +18,7 @@ Creates a new tab with a label inferred from the role.
 
 ```swift
 nonisolated
-init(value: Value, role: TabRole?, @ViewBuilder content: () -> Content) where Label == DefaultTabLabel
+init(value: Value, role: TabRole?, @ContentBuilder content: () -> Content) where Label == DefaultTabLabel
 ```
 
 ## Parameters

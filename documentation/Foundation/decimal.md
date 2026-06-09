@@ -31,7 +31,11 @@ struct Decimal
 ### Creating a decimal from a floating point number
 - [init(Double)](decimal/init(_:)-6wgru.md)
   Creates and initializes a decimal with the provided floating point value.
+- [init(floatLiteral: Double)](decimal/init(floatliteral:).md)
+  Creates and initializes a decimal with the provided floating point value.
 ### Creating a decimal from an integer
+- [init?<T>(exactly: T)](decimal/init(exactly:).md)
+  Creates a new decimal value exactly representing the provided integer.
 - [init(Int)](decimal/init(_:)-2tcho.md)
   Creates and initializes a decimal with the provided integer value.
 - [init(Int8)](decimal/init(_:)-4gk29.md)
@@ -41,6 +45,8 @@ struct Decimal
 - [init(Int32)](decimal/init(_:)-7dmlc.md)
   Creates and initializes a decimal with the provided integer value.
 - [init(Int64)](decimal/init(_:)-7a033.md)
+  Creates and initializes a decimal with the provided integer value.
+- [init(integerLiteral: Int)](decimal/init(integerliteral:).md)
   Creates and initializes a decimal with the provided integer value.
 ### Creating a decimal from an unsigned integer
 - [init(UInt)](decimal/init(_:)-2lxxy.md)
@@ -108,6 +114,8 @@ struct Decimal
   The exponent of the decimal.
 - [var significand: Decimal](decimal/significand.md)
   The significand of the decimal.
+- [var magnitude: Decimal](decimal/magnitude.md)
+  The magnitude of this decimal.
 - [var floatingPointClass: FloatingPointClassification](decimal/floatingpointclass.md)
   The IEEE 754 class of this type.
 - [var isCanonical: Bool](decimal/iscanonical.md)
@@ -176,6 +184,10 @@ struct Decimal
   Indicates whether this decimal is less than or equal to the specified one.
 - [func isTotallyOrdered(belowOrEqualTo: Decimal) -> Bool](decimal/istotallyordered(beloworequalto:).md)
   Returns a Boolean value indicating whether this instance should precede the given value in an ascending sort.
+- [func distance(to: Decimal) -> Decimal](decimal/distance(to:).md)
+  Returns the distance from this value to the specified value.
+- [func advanced(by: Decimal) -> Decimal](decimal/advanced(by:).md)
+  Returns a new value advanced by the given distance.
 - [func NSDecimalCompare(UnsafePointer<Decimal>, UnsafePointer<Decimal>) -> ComparisonResult](nsdecimalcompare(_:_:).md)
   Compares two decimal values.
 ### Using reference types
@@ -186,12 +198,16 @@ struct Decimal
   A structure that converts between decimal values and their textual representations.
 ### Operators
 - [static func / (Decimal, Decimal) -> Decimal](decimal/_(_:_:).md)
+  Divides one decimal number by another.
 - [static func /= (inout Decimal, Decimal)](decimal/_=(_:_:).md)
-### Instance Methods
-- [func add(Decimal)](decimal/add(_:).md)
-- [func divide(by: Decimal)](decimal/divide(by:).md)
-- [func multiply(by: Decimal)](decimal/multiply(by:).md)
-- [func subtract(Decimal)](decimal/subtract(_:).md)
+  Divides one decimal number by another, storing the result in the first number.
+### Default Implementations
+- [AdditiveArithmetic Implementations](decimal/additivearithmetic-implementations.md)
+- [ExpressibleByFloatLiteral Implementations](decimal/expressiblebyfloatliteral-implementations.md)
+- [ExpressibleByIntegerLiteral Implementations](decimal/expressiblebyintegerliteral-implementations.md)
+- [Numeric Implementations](decimal/numeric-implementations.md)
+- [SignedNumeric Implementations](decimal/signednumeric-implementations.md)
+- [Strideable Implementations](decimal/strideable-implementations.md)
 
 ## Relationships
 

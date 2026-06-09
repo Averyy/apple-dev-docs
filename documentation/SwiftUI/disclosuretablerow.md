@@ -15,6 +15,7 @@ A kind of table row that shows or hides additional rows based on the state of a 
 ## Declaration
 
 ```swift
+nonisolated
 struct DisclosureTableRow<Label, Content> where Label : TableRowContent, Content : TableRowContent, Label.TableRowValue == Content.TableRowValue
 ```
 

@@ -11,7 +11,7 @@ An event that indicates that MapKit JS is unable to acquire a person’s locatio
 ## Declaration
 
 ```swift
-class MapUserLocationErrorEvent extends MapKitEvent
+class MapUserLocationErrorEvent extends Event
 ```
 
 ## Topics
@@ -25,7 +25,7 @@ class MapUserLocationErrorEvent extends MapKitEvent
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

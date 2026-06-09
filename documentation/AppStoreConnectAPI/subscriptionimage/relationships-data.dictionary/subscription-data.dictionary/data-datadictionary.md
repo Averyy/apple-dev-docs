@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the subscription for a subscription image resource.
+The resource linkage data identifying the subscription associated with a subscription image.
 
 **Availability**:
 - App Store Connect API 3.6+

@@ -15,7 +15,7 @@ To manage Game Center activity images, be sure you have one of the following use
 ## Topics
 
 ### Managing Game Center activities
-- [Read Activity Image Information](get-v1-gamecenteractivityimages-_id_.md)
+- [Read activity image information](get-v1-gamecenteractivityimages-_id_.md)
   Get information for a specific Game Center activity image.
 - [Create an Activity Image](post-v1-gamecenteractivityimages.md)
   Reserve an image for a Game Center activity.
@@ -25,11 +25,11 @@ To manage Game Center activity images, be sure you have one of the following use
   Remove a specific image from a Game Center activity.
 ### Objects
 - [object GameCenterActivityImage](gamecenteractivityimage.md)
-  The data structure that represents an activity image resource.
+  An image asset representing a Game Center activity in the player interface.
 - [object GameCenterActivityImageCreateRequest](gamecenteractivityimagecreaterequest.md)
-  The request body you use to create an activity resource.
+  The request body for creating an image asset for a Game Center activity.
 - [object GameCenterActivityImageResponse](gamecenteractivityimageresponse.md)
-  A response that contains a single activity resource.
+  A response containing a single image asset for a Game Center activity.
 - [object GameCenterActivityImageUpdateRequest](gamecenteractivityimageupdaterequest.md)
   The request body you use to update an activity.
 

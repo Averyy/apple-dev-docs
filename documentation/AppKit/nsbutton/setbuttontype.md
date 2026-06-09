@@ -32,7 +32,6 @@ Note that there is no `-buttonType` method. The set method sets various button p
   The image that appears on the button when it’s in an off state, or `nil` if there is no such image.
 - [func setButtonType(NSButton.ButtonType)](nsbuttoncell/setbuttontype(_:).md)
   Sets how the button highlights while pressed and how it shows its state.
-- [Button Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Button/Button.html#//apple_ref/doc/uid/10000019i)
 - [var alternateImage: NSImage?](nsbutton/alternateimage.md)
   An alternate image that appears on the button when the button is in an on state.
 - [func getPeriodicDelay(UnsafeMutablePointer<Float>, interval: UnsafeMutablePointer<Float>)](nsbutton/getperiodicdelay(_:interval:).md)

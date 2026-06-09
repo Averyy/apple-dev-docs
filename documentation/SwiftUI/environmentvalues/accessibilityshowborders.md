@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Whether the system preference for Show Borders is enabled. On macOS this is true when Increased Contrast is enabled.
+Whether the system preference for Show Borders is enabled.
 
 **Availability**:
 - iOS 14.0+
@@ -23,7 +23,26 @@ var accessibilityShowBorders: Bool { get }
 
 #### Discussion
 
-If this property’s value is true, interactive custom controls such as buttons should be drawn in such a way that their edges and borders are clearly visible.
+On macOS 27 and later, the system provides a dedicated Show Borders setting in System Settings. On earlier versions of macOS, this value is true when Increased Contrast is enabled.
+
+When this value is true, draw interactive custom controls such as buttons with clearly visible edges so they remain distinguishable at any window size:
+
+```swift
+struct BorderedButton: View {
+    @Environment(\.accessibilityShowBorders) var showBorders
+
+    var body: some View {
+        Label("Archive", systemImage: "archivebox")
+            .padding(8)
+            .overlay {
+                if showBorders {
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(.secondary)
+                }
+            }
+    }
+}
+```
 
 
 ---

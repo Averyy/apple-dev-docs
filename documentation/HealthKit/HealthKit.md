@@ -85,6 +85,8 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
 - [HealthKit Functions](healthkit-functions.md)
 - [Macros](healthkit-macros.md)
 - [HealthKit Variables](healthkit-variables.md)
+### Classes
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
 
 
 ---

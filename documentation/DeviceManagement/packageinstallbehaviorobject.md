@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Specifies the install behavior of the package.
+A dictionary that describes how and when to install the package.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -24,6 +22,11 @@ object PackageInstallBehaviorObject
 
 - `Install` (string): A string that specifies when the system installs the package: - `Optional`: The user can install the package after the system activates the configuration.
 - `Required`: The system installs the package after it activates the configuration.
+
+## See Also
+
+- [object PackageUninstallBehaviorObject](packageuninstallbehaviorobject.md)
+  A dictionary that describes how to uninstall the package.
 
 
 ---

@@ -30,7 +30,7 @@ This function returns the number of bytes to provide in an optional scratch buff
 
 ## Parameters
 
-- `algorithm`: Set to the desired algorithm: [`COMPRESSION_LZ4`](compression_lz4.md), [`COMPRESSION_ZLIB`](compression_zlib.md), [`COMPRESSION_LZMA`](compression_lzma.md), or [`COMPRESSION_LZFSE`](compression_lzfse.md).
+- `algorithm`: A constant of type [`compression_algorithm`](compression_algorithm.md) that specifies the compression algorithm.
 
 ## See Also
 

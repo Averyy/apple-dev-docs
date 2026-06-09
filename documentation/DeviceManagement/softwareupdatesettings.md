@@ -12,14 +12,16 @@ The declaration to configure software updates.
 - macOS 15.0+
 - tvOS 18.4+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
 ```swift
 object SoftwareUpdateSettings
 ```
+
+## Mentions
+
+- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 
 #### Discussion
 
@@ -31,12 +33,15 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 | --- | --- |
 | Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
 | Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, Shared iPad, tvOS, visionOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Multiple configurations are combined and applied as a single effective configuration |
 
 ##### Configuration Example
+
+This configuration manages software update behavior and deferral settings.
 
 ```json
 {
@@ -69,25 +74,26 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
 
 ### Objects
 - [object SoftwareUpdateSettingsAutomaticActionsObject](softwareupdatesettingsautomaticactionsobject.md)
-  The object that configures various automatic Software Update functionality.
+  This object configures various automatic Software Update functionality.
 - [object SoftwareUpdateSettingsBetaObject](softwareupdatesettingsbetaobject.md)
-  The object that configures overall beta program settings.
+  This object configures the beta program settings for a device.
 - [object SoftwareUpdateSettingsDeferralsObject](softwareupdatesettingsdeferralsobject.md)
-  The object that configures update deferrals.
+  This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
 - [object SoftwareUpdateSettingsRapidSecurityResponseObject](softwareupdatesettingsrapidsecurityresponseobject.md)
-  The object that configures Background Security Improvement settings.
+  These configurations set user access to interacting with Background Security Improvement.
 
 ## Properties
 
-- `AllowStandardUserOSUpdates` (boolean): If set to `true`, a standard user can perform Major and Minor Software Updates. If set to `false`, only administrators can perform Major and Minor Software Updates.
-- `AutomaticActions` (SoftwareUpdateSettingsAutomaticActionsObject): This object configures various automatic Software Update functionality.
-- `Beta` (SoftwareUpdateSettingsBetaObject): This object configures the beta program settings for a device.
-- `Deferrals` (SoftwareUpdateSettingsDeferralsObject): This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism.
+- `AllowStandardUserOSUpdates` (boolean): If set to `true`, a standard user can perform Major and Minor Software Updates. If set to `false`, only administrators can perform Major and Minor Software Updates. Available: macOS 15+
+- `AutomaticActions` (SoftwareUpdateSettingsAutomaticActionsObject): This object configures various automatic Software Update functionality. Allowed enrollments: supervised
+- `Beta` (SoftwareUpdateSettingsBetaObject): This object configures the beta program settings for a device. Available: iOS 18+ | iPadOS 18+ | macOS 15.4+
+- `Deferrals` (SoftwareUpdateSettingsDeferralsObject): This object configures the deferral of software updates. Background Security Improvements aren’t considered in `Major`, `Minor`, or `System` deferral mechanism. Allowed enrollments: supervised
 - `Notifications` (boolean): If set to `true`, the device shows all software update enforcement notifications. If set to `false`, the device only shows notifications triggered one hour before the enforcement deadline, and the restart countdown notification.
-- `RapidSecurityResponse` (SoftwareUpdateSettingsRapidSecurityResponseObject): These configurations set user access to interacting with Background Security Improvement.
+- `RapidSecurityResponse` (SoftwareUpdateSettingsRapidSecurityResponseObject): These configurations set user access to interacting with Background Security Improvement. Available: iOS 18+ | iPadOS 18+ | macOS 15+
+Allowed enrollments: supervised
 - `RecommendedCadence` (string): This string specifies how the device shows software updates to the user. When more than one update is available update, the device behaves as follows: - `All` - Shows all software update versions.
 - `Oldest` - Shows only the oldest (lower numbered) software update version.
-- `Newest` - Shows only the newest (highest numbered) software update version.
+- `Newest` - Shows only the newest (highest numbered) software update version. Available: iOS 18+ | iPadOS 18+ | visionOS 26+
 
 ## See Also
 
@@ -107,20 +113,20 @@ Specify `com.apple.configuration.softwareupdate.settings` as the declaration typ
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

@@ -165,6 +165,8 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
   Creates a new color object for the same color, but in the specified color space and specific to the provided device.
 - [class let currentControlTintDidChangeNotification: NSNotification.Name](nscolor/currentcontroltintdidchangenotification.md)
   Sent after the user changes control tint preference.
+### Structures
+- [NSColor.SystemColorsDidChangeMessage](nscolor/systemcolorsdidchangemessage.md)
 ### Initializers
 - [init?(CGColor: CGColor)](nscolor/init(cgcolor:)-3pxs.md)
 - [init(SRGBRed: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](nscolor/init(srgbred:green:blue:alpha:)-3vuej.md)

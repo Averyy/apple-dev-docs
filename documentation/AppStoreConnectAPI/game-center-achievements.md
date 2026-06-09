@@ -27,14 +27,14 @@ For more information about how to use achievements in your app, see [`Manage ach
   Read information about the release for specific achievement.
 - [Read Release Information for an Achievement](get-v1-gamecenterachievements-_id_-releases.md)
   Read the state of an achievement release and related information.
-- [GET /v1/gameCenterAchievements/{id}/relationships/releases](get-v1-gamecenterachievements-_id_-relationships-releases.md)
+- [List release IDs for a Game Center achievement](get-v1-gamecenterachievements-_id_-relationships-releases.md)
 - [List Associated Group Achievement Information for an Achievement](get-v1-gamecenterachievements-_id_-groupachievement.md)
   Read information about the group for specific achievement.
 - [List Group Achievements for an Achievement](get-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   List associated group achievements for a specific achievement.
-- [List Achievement Releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
+- [List achievement releases](get-v1-gamecenterdetails-_id_-achievementreleases.md)
   Read information about the achievement releases for specific Game Center detail.
-- [GET /v1/gameCenterDetails/{id}/relationships/achievementReleases](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
+- [List achievement release IDs for a Game Center detail](get-v1-gamecenterdetails-_id_-relationships-achievementreleases.md)
 ### Creating, modifying, and deleting achievements
 - [Create a Game Center Achievement](post-v2-gamecenterachievements.md)
   Create a Game Center achievement.
@@ -50,7 +50,7 @@ For more information about how to use achievements in your app, see [`Manage ach
   Modify properties for a specific achievement.
 - [Modify the Group for an Achievement](patch-v1-gamecenterachievements-_id_-relationships-groupachievement.md)
   Modify the achievement group for a specific achievement.
-- [PATCH /v1/gameCenterAchievements/{id}/relationships/activity](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
+- [Modify the activity for a Game Center achievement](patch-v1-gamecenterachievements-_id_-relationships-activity.md)
 - [Delete an Achievement](delete-v1-gamecenterachievements-_id_.md)
   Delete a specific achievement.
 ### Objects
@@ -69,7 +69,7 @@ For more information about how to use achievements in your app, see [`Manage ach
 - [object GameCenterAchievementV2VersionsLinkagesResponse](gamecenterachievementv2versionslinkagesresponse.md)
   A response that contains a list of Game Center achievement v2 version linkage resources.
 - [object GameCenterAchievement](gamecenterachievement.md)
-  The data structure that represents a Game Center achievement resource.
+  A reward in Game Center that players earn by completing specific challenges or milestones in a game.
 - [object GameCenterAchievementCreateRequest](gamecenterachievementcreaterequest.md)
   A request body you use to create a Game Center achievement.
 - [object GameCenterAchievementGroupAchievementLinkageRequest](gamecenterachievementgroupachievementlinkagerequest.md)
@@ -77,15 +77,16 @@ For more information about how to use achievements in your app, see [`Manage ach
 - [object GameCenterAchievementGroupAchievementLinkageResponse](gamecenterachievementgroupachievementlinkageresponse.md)
   A response body that contains the ID of a single related resource.
 - [object GameCenterAchievementResponse](gamecenterachievementresponse.md)
-  A response that contains a single Game Center achievement resource.
+  The response body for endpoints that create, read, or modify a single Game Center achievement.
 - [object GameCenterAchievementUpdateRequest](gamecenterachievementupdaterequest.md)
   The request body you use to update a Game Center achievement.
 - [object GameCenterAchievementsResponse](gamecenterachievementsresponse.md)
-  A response that contains a list of Game Center achievement resources.
+  The response body for endpoints that list Game Center achievements.
 - [object GameCenterAchievementActivityLinkageRequest](gamecenterachievementactivitylinkagerequest.md)
 - [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)
 - [object GameCenterAchievementReleasesLinkagesResponse](gamecenterachievementreleaseslinkagesresponse.md)
 - [object StringToStringMap](stringtostringmap.md)
+  A dictionary object mapping arbitrary string keys to string values, used for flexible key-value metadata.
 
 ## See Also
 

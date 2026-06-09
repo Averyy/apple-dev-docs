@@ -23,6 +23,8 @@ struct TabRole
 ## Topics
 
 ### Type Properties
+- [static var prominent: TabRole](tabrole/prominent.md)
+  The prominent role.
 - [static var search: TabRole](tabrole/search.md)
   The search role.
 

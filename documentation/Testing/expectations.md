@@ -18,7 +18,7 @@ To validate that your code produces an expected value, use [`expect(_:_:sourceLo
 @Test func calculatingOrderTotal() {
   let calculator = OrderCalculator()
   #expect(calculator.total(of: [3, 3]) == 7)
-  // Prints "Expectation failed: (calculator.total(of: [3, 3]) → 6) == 7"
+  // Prints "Expectation failed: calculator.total(of: [3, 3]) == 7"
 }
 ```
 
@@ -82,8 +82,6 @@ Your test keeps running after [`expect(_:_:sourceLocation:)`](expect(_:_:sourcel
   A type describing an expectation that has been evaluated.
 - [struct ExpectationFailedError](expectationfailederror.md)
   A type describing an error thrown when an expectation fails during evaluation.
-- [protocol CustomTestStringConvertible](customteststringconvertible.md)
-  A protocol describing types with a custom string representation when presented as part of a test’s output.
 ### Representing source locations
 - [struct SourceLocation](sourcelocation.md)
   A type representing a location in source code.

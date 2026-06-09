@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents the Game Center Enabled Versions resource.
+An app version with Game Center enabled. Deprecated in API version 3.0; use [`GameCenterAppVersion`](gamecenterappversion.md) instead.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -37,7 +37,7 @@ object GameCenterEnabledVersion
 - [object GameCenterEnabledVersionCompatibleVersionsLinkagesResponse](gamecenterenabledversioncompatibleversionslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [object GameCenterEnabledVersionsResponse](gamecenterenabledversionsresponse.md)
-  A response that contains a list of Game Center Enabled Version resources.
+  A response containing a list of app versions with Game Center enabled (deprecated; use GameCenterAppVersion).
 - [object AppGameCenterEnabledVersionsLinkagesResponse](appgamecenterenabledversionslinkagesresponse.md)
 
 

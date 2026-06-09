@@ -17,6 +17,7 @@ A scene that presents a group of identically structured windows.
 ## Declaration
 
 ```swift
+nonisolated
 struct WindowGroup<Content> where Content : View
 ```
 

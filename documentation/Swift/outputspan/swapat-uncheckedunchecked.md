@@ -22,7 +22,7 @@ mutating func swapAt(unchecked i: OutputSpan<Element>.Index, unchecked j: Output
 
 #### Discussion
 
-This subscript does not validate `i` or `j`; this is an unsafe operation.
+This function does not validate `i` or `j`; this is an unsafe operation.
 
 ## Parameters
 

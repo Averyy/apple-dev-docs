@@ -22,6 +22,7 @@ final class AppDependencyManager
 
 ## Mentions
 
+- [Creating your first app intent](creating-your-first-app-intent.md)
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 
 ## Topics
@@ -34,7 +35,7 @@ final class AppDependencyManager
 - [func add<Dependency>(key: AnyHashable?, dependency: @autoclosure () -> Dependency)](appdependencymanager/add(key:dependency:)-2le3x.md)
 - [func add<Dependency>(key: AnyHashable?, dependency: () async throws -> Dependency)](appdependencymanager/add(key:dependency:)-gth5.md)
 ### Type Properties
-- [static var shared: AppDependencyManager](appdependencymanager/shared.md)
+- [static let shared: AppDependencyManager](appdependencymanager/shared.md)
 ### Enumerations
 - [AppDependencyManager.Error](appdependencymanager/error.md)
 
@@ -42,10 +43,6 @@ final class AppDependencyManager
 
 - [class AppDependency](appdependency.md)
   A property wrapper that resolves a registered dependency at runtime.
-- [protocol AppIntentsExtension](appintentsextension.md)
-  An interface for managing an extension’s configuration.
-- [protocol AppIntentsPackage](appintentspackage.md)
-  A type that describes app intent definitions that aren’t part of an app bundle and their dependencies.
 
 
 ---

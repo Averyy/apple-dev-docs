@@ -16,6 +16,7 @@ object AppEvent.Relationships.Localizations
 
 ### Objects
 - [object AppEvent.Relationships.Localizations.Data](appevent/relationships-data.dictionary/localizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app event.
 
 ## Properties
 

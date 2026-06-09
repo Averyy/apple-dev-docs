@@ -37,6 +37,8 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   The identity, location, and orientation of an object in world space.
 - [protocol TrackableAnchor](trackableanchor.md)
   An anchor that can gain and lose its tracking state over the course of a session.
+- [protocol ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
+  A type that provides an ARKit coordinate space with an optional correction applied.
 - [struct ARKitCoordinateSpace](arkitcoordinatespace.md)
   An object which represents an ARKit coordinate space.
 ### Barcode detection
@@ -58,9 +60,9 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
   The ViewpointProperties is a record of render camera transforms at some particular time.
 ### Camera region
 - [class CameraRegionProvider](cameraregionprovider.md)
-  A camera region provider. An enterprise license is required to use the CameraRegionProvider. The provider will not deliver any data without it. The app must include the following entitlement: `com.apple.developer.arkit.camera-region.allow`
+  A camera region provider.
 - [struct CameraRegionAnchor](cameraregionanchor.md)
-  Represents a region in space to capture a camera stream of.
+  Represents a region in space for capturing a camera stream.
 ### Plane detection
 - [Placing content on detected planes](../visionOS/placing-content-on-detected-planes.md)
   Detect horizontal surfaces like tables and floors, as well as vertical planes like walls and doors.
@@ -132,10 +134,14 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 - [struct ObjectAnchor](objectanchor.md)
   A reference object ARKit is tracking.
 - [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
-  Find and track real-world objects in visionOS using reference objects trained with Create ML.
-- [Implementing object tracking in your visionOS app](../visionOS/implementing-object-tracking-in-your-visionOS-app.md)
-  Create engaging interactions by training models to recognize and track real-world objects in your app.
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
+- [Implementing object tracking in your app](../visionOS/implementing-object-tracking-in-your-app.md)
+  Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 ### Accessory tracking
+- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
 - [struct Accessory](accessory.md)
@@ -158,6 +164,15 @@ ARKit in visionOS offers a new set of sensing capabilities that you adopt indivi
 ### Shared coordinate spaces
 - [class SharedCoordinateSpaceProvider](sharedcoordinatespaceprovider.md)
   Provides ability to establish a shared coordinate space among multiple participants.
+### Visual Fidelity
+- [class VisualFidelityProvider](visualfidelityprovider.md)
+  A data provider that delivers visual fidelity monitoring data.
+- [struct VisualFidelityData](visualfidelitydata.md)
+  Visual fidelity data containing device fit and field of view verification.
+- [struct FieldOfViewAnchor](fieldofviewanchor.md)
+  An anchor representing a set of field of view (FoV) boundary polygon points in immersive space.
+- [enum DeviceFitStatus](devicefitstatus.md)
+  Device fit validation status indicating the user’s eye position relative to the optimal device fit range.
 
 ## See Also
 

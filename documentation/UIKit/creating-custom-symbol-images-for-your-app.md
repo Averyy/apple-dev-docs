@@ -6,7 +6,7 @@ Create, organize, and annotate symbol images using SF Symbols.
 
 #### Overview
 
-SF Symbols 4 offers a set of over 4,000 consistent, highly configurable symbol images that you can use in your app. You can apply stylistic traits typically associated with text, such as applying colors, text style, weight, and scale. Symbols contain additional traits that allow them to integrate seamlessly with surrounding text, and adapt to platform features like Dynamic Text and Dark Mode.
+SF Symbols offers a comprehensive set of consistent, highly configurable symbol images that you can use in your app. You can apply stylistic traits typically associated with text, such as applying colors, text style, weight, and scale. Symbols contain additional traits that allow them to integrate seamlessly with surrounding text, and adapt to platform features like Dynamic Text and Dark Mode.
 
 You can create your own custom symbol images with the same capabilities that SF Symbols provides. To create your custom symbol:
 

@@ -14,7 +14,7 @@ Get the IDs of Android to iOS app mapping details for a specific app.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of Android to iOS app mapping detail resource identifiers to return.
 
 ## See Also
 

@@ -20,6 +20,11 @@ Information about a form of payment supported by your app.
 struct IntentPaymentMethod
 ```
 
+## Mentions
+
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+
 #### Overview
 
 An `IntentPaymentMethod` type describes a way someone pays for goods and services. This type contains information you can display in your interface to convey the payment type to people. Specifically, it stores the name of the payment service and an icon for any related brand information. Typical payment methods include credit cards and bank accounts.
@@ -54,6 +59,8 @@ An `IntentPaymentMethod` type describes a way someone pays for goods and service
 - [DisplayRepresentable](displayrepresentable.md)
 - [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [IntentValueConvertible](intentvalueconvertible.md)
+- [IntentValueExpressing](intentvalueexpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)

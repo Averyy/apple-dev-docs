@@ -27,6 +27,13 @@ You use `CIVector` objects in conjunction with other Core Image classes, such as
 
 ## Topics
 
+### Creating a Vector
+- [convenience init(cgAffineTransform: CGAffineTransform)](civector/init(cgaffinetransform:)-59e4k.md)
+  Create a Core Image vector object that is initialized with six values provided by a `CGAffineTransform` structure.
+- [convenience init(cgPoint: CGPoint)](civector/init(cgpoint:)-3mobm.md)
+  Create a Core Image vector object that is initialized with two values provided by a `CGPoint` structure.
+- [convenience init(cgRect: CGRect)](civector/init(cgrect:)-3undj.md)
+  Create a Core Image vector object that is initialized with four values provided by a `CGRect` structure.
 ### Initializing a Vector
 - [init(values: UnsafePointer<CGFloat>, count: Int)](civector/init(values:count:).md)
   Initialize a Core Image vector object with the specified the values.

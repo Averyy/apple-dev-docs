@@ -53,11 +53,11 @@ Select one of the following options to distribute using recommended settings:
 - **TestFlight & App Store**: Default settings to distribute through TestFlight and submit to the App Store. Use this option to update the build number of the content in your archive, perform automatic code signing, and upload your app with symbols.
 - **TestFlight Internal Only**: Default settings to distribute through TestFlight and restrict access to your team. Use this option to prevent a development build of your app from being submitted to the App Store.
 - **Release Testing**: Default settings to distribute a version to test before release. Use this option to perform automatic code signing similar to the App Store distribution option and export to install on devices your team registers with App Store Connect. This distribution method isn’t available for apps built for Mac.
-- **Enterprise**: Default settings to distribe to members of your organization. Use this option if you’re a part of the [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise). This distribution method isn’t available for apps built for Mac.
+- **Enterprise**: Default settings to distribute to members of your organization. Use this option if you’re a part of the [`Apple Developer Enterprise Program`](https://developer.apple.comhttps://developer.apple.com/programs/enterprise). This distribution method isn’t available for apps built for Mac.
 - **Direct Distribution**: Default settings to distribute a macOS app directly. Use this option to notarize a Developer ID app for direct distribution. This distribution method is only available for apps built for Mac.
 - **Debugging**: Default settings to distribute a version for debugging. Use this option to export a version to install and debug on devices your team registers with App Store Connect. This enables sandbox testing environments for some [`Capabilities`](capabilities.md) that support them.
 
-After selecting a distribution option, click the Distribute button. Xcode begins processing, packaging, and uploading. Click the link at the at the end to access the builds page for the app on App Store Connect or click the Export button to access the assets locally.
+After selecting a distribution option, click the Distribute button. Xcode begins processing, packaging, and uploading. Click the link at the end to access the builds page for the app on App Store Connect or click the Export button to access the assets locally.
 
 > **Note**: Before you upload your app to the App Store for the first time, create an app record to register your app with App Store Connect. If you haven’t done this already, Xcode asks you for the information it needs to create this record for you. For more information, see [`Create an app record`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
@@ -101,7 +101,7 @@ When packaging for self distribution using the Ad Hoc or Development option, cho
 
 ##### Distribute a Beta Version
 
-To distribute a beta version of your app to offer a preview of an upcoming release, chose a distribution method that aligns with your testing resources:
+To distribute a beta version of your app to offer a preview of an upcoming release, choose a distribution method that aligns with your testing resources:
 
 - Distribute a beta version of your app to internal and external testers using TestFlight. The TestFlight app allows invited users to install, beta test, provide feedback, and get updates of your app. Apple distributes the beta version for you, you manage the builds and users in App Store Connect. To learn more, see [`TestFlight overview`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-a-beta-version/overview-of-testflight).
 - Distribute a beta version to registered devices in your developer account. Choose this option only if you can reserve a portion of your limited development devices for beta testing. To learn more, see [`Distributing your app to registered devices`](distributing-your-app-to-registered-devices.md).
@@ -119,7 +119,7 @@ You may need to enter additional information in App Store Connect before you can
 
 If you used TestFlight to distribute a beta version, and entered the additional information required by App Store for a release, just submit the last build that appears in App Store Connect to App Review.
 
-![Screenshot of App Store Connect showing the version information and Submit for Review buttion.](https://docs-assets.developer.apple.com/published/f389379a6a5d46bc29c152f5d19920d5/distributing-your-app-for-beta-testing-and-releases-9%402x.png)
+![Screenshot of App Store Connect showing the version information and Submit for Review button.](https://docs-assets.developer.apple.com/published/f389379a6a5d46bc29c152f5d19920d5/distributing-your-app-for-beta-testing-and-releases-9%402x.png)
 
 If you didn’t distribute the final build using TestFlight, prepare your app for distribution and create an archive of your app. Validate the archive and fix any validation errors before continuing. Then, upload it to App Store Connect and wait for it to pass the App Store Connect validation tests.
 

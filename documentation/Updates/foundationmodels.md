@@ -8,6 +8,33 @@ Learn about important changes to Foundation Models.
 
 Browse notable changes in [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels).
 
+#### June 2026
+
+##### General
+
+- Build multimodal agentic app experiences by using the [`LanguageModelSession.DynamicProfile`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/DynamicProfile) API.
+- Use the improved error types, like [`LanguageModelError`](https://developer.apple.com/documentation/FoundationModels/LanguageModelError) for model-specific errors, [`SystemLanguageModel.Error`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel/Error) for on-device Apple Foundation model errors, and [`LanguageModelSession.Error`](https://developer.apple.com/documentation/FoundationModels/LanguageModelSession/Error) for errors related to the session but not the model.
+
+##### Models
+
+- Use the latest on-device [`SystemLanguageModel`](https://developer.apple.com/documentation/FoundationModels/SystemLanguageModel) that follows instructions more accurately and produces better results, including in complex scenarios. Because the model changes when a person updates to iOS 27, iPadOS 27, macOS 27, and visionOS 27, test your prompts with the new model to verify your app’s behavior.
+- Adopt the [`LanguageModel`](https://developer.apple.com/documentation/FoundationModels/LanguageModel) protocol to use any large language model — server or on-device — with the Foundation Models framework.
+- Use [`PrivateCloudComputeLanguageModel`](https://developer.apple.com/documentation/FoundationModels/PrivateCloudComputeLanguageModel) to access more reasoning capabilities and a larger context size.
+- Perform image analysis tasks by including an image in your prompt and using tools the [`Vision`](https://developer.apple.com/documentation/Vision) framework provides, like [`OCRTool`](https://developer.apple.com/documentation/Vision/OCRTool) and [`BarcodeReaderTool`](https://developer.apple.com/documentation/Vision/BarcodeReaderTool).
+
+##### Tool Calling
+
+- Control how the model interacts with tools for your request by using [`GenerationOptions.ToolCallingMode`](https://developer.apple.com/documentation/FoundationModels/GenerationOptions/ToolCallingMode-swift.struct).
+
+##### Instruments
+
+- Use the updated [`Analyzing the runtime performance of your Foundation Models app`](https://developer.apple.com/documentation/FoundationModels/analyzing-the-runtime-performance-of-your-foundation-models-app) to get detailed insight into the complex workflows you build. The instrument provides insight into latency, prompts sent to the model, model output, tools and token usage, and so on.
+
+##### Open Source
+
+- Get the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) to access a collection of building blocks to help you explore emerging practices in working with large language models.
+- Use [`CoreAILanguageModel`](https://developer.apple.comhttps://github.com/apple/coreai-models) and [`MLXLanguageModel`](https://developer.apple.comhttps://github.com/ml-explore/mlx-swift-lm) to integrate on-device models with the Foundation Models framework.
+
 #### March 2026
 
 - Use the [`Foundation Models SDK for Python`](https://developer.apple.comhttps://github.com/apple/python-apple-fm-sdk) to access the on-device foundation model at the core of Apple Intelligence.

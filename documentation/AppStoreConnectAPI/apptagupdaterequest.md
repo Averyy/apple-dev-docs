@@ -18,7 +18,7 @@ object AppTagUpdateRequest
 
 ### Dictionaries
 - [object AppTagUpdateRequest.Data](apptagupdaterequest/data-data.dictionary.md)
-  The data structure that represents an app tag update request resource.
+  The data wrapper for an app tag update request, containing the resource type and attributes.
 
 ## Properties
 
@@ -27,15 +27,15 @@ object AppTagUpdateRequest
 ## See Also
 
 - [object AppAppTagsLinkagesResponse](appapptagslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of tags associated with an app.
 - [object AppTag](apptag.md)
-  The data structure that represents an app tag resource.
+  A label used to categorize an app for internal organization or to control which App Store territories feature it.
 - [object AppTagResponse](apptagresponse.md)
-  A response that contains a single app tag response resource.
+  A response containing a single app tag.
 - [object AppTagsResponse](apptagsresponse.md)
-  A response that contains a list of app tags response resources.
+  A response containing a list of tags associated with apps.
 - [object AppTagTerritoriesLinkagesResponse](apptagterritorieslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of territories associated with an app tag.
 
 
 ---

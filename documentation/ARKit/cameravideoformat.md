@@ -33,9 +33,15 @@ struct CameraVideoFormat
   Returns the video formats the provided camera type and camera position supports.
 - [var description: String](cameravideoformat/description.md)
   A textual representation of this camera video format.
+### Operators
+- [static func == (CameraVideoFormat, CameraVideoFormat) -> Bool](cameravideoformat/==(_:_:).md)
+  Returns a Boolean value indicating whether two camera video formats are equal.
 ### Instance Properties
 - [var cameraRectification: CameraFrameProvider.CameraRectification](cameravideoformat/camerarectification.md)
   The camera rectification for this video format.
+### Instance Methods
+- [func hash(into: inout Hasher)](cameravideoformat/hash(into:).md)
+  Hashes the essential components of this camera video format.
 
 ## Relationships
 

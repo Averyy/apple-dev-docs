@@ -1,4 +1,4 @@
-# Enable a Capability
+# Enable a capability
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Enable a capability for a bundle ID.
 
 ## See Also
 
-- [Disable a Capability](delete-v1-bundleidcapabilities-_id_.md)
+- [Disable a capability](delete-v1-bundleidcapabilities-_id_.md)
   Disable a capability for a bundle ID.
 
 

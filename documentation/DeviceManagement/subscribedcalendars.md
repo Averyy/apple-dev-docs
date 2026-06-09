@@ -10,8 +10,6 @@ The payload that configures subscribed calendars.
 - iPadOS 4.0+
 - Mac Catalyst 4.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,8 +28,8 @@ Specify `com.apple.subscribedcalendar.account` as the payload type.
 | Device channel | iOS, visionOS |
 | User channel | Shared iPad |
 | Allow manual install | iOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, Shared iPad, visionOS |
 
@@ -82,7 +80,7 @@ Specify `com.apple.subscribedcalendar.account` as the payload type.
 - `SubCalAccountPassword` (string): The user’s password.
 - `SubCalAccountUsername` (string): The user’s user name.
 - `SubCalAccountUseSSL` (boolean): If `true`, the system enables SSL.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 

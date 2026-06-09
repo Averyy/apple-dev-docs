@@ -16,6 +16,7 @@ object BetaGroup.Relationships.BetaRecruitmentCriteria
 
 ### Dictionaries
 - [object BetaGroup.Relationships.BetaRecruitmentCriteria.Data](betagroup/relationships-data.dictionary/betarecruitmentcriteria-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a beta group.
 
 ## Properties
 

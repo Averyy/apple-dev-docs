@@ -8,6 +8,7 @@ The Live Activity is visible, but a person, the app, or the system ended it, and
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

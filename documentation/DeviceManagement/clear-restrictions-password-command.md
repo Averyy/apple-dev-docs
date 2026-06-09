@@ -9,8 +9,6 @@ Clear the Screen Time password and the restrictions on a device.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,10 +23,10 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS |
-| Allowed in user enrollment | NA |
-| Required access right | NA |
+| Allowed in user enrollment | N/A |
+| Required access right | N/A |
 
 ##### Example Request and Response
 
@@ -77,7 +75,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#ClearRestrictionsPasswordCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

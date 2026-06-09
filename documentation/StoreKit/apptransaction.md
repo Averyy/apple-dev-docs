@@ -80,6 +80,19 @@ struct AppTransaction
 ### Deprecated
 - [var originalPlatformStringRepresentation: String](apptransaction/originalplatformstringrepresentation.md)
   The string representation of the platform on which the customer originally purchased the app.
+### Structures
+- [AppTransaction.AppTransactions](apptransaction/apptransactions.md)
+- [AppTransaction.StoreType](apptransaction/storetype-swift.struct.md)
+### Instance Properties
+- [var revocationDate: Date?](apptransaction/revocationdate.md)
+  The revocation date of the app purchase.
+- [let storeType: AppTransaction.StoreType](apptransaction/storetype-swift.property.md)
+  The store where the original purchase of the app was made.
+- [var storeTypeStringRepresentation: String](apptransaction/storetypestringrepresentation.md)
+  The string representation of the store where the original purchase of the app was made.
+### Type Properties
+- [static var all: AppTransaction.AppTransactions](apptransaction/all.md)
+  Returns all the `AppTransaction`s for this version of the app.
 
 ## Relationships
 

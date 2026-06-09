@@ -18,6 +18,8 @@ class let didBecomeMainNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that has become the main window. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidBecomeMainMessage`](nswindow/didbecomemainmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

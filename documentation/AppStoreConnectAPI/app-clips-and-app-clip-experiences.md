@@ -41,7 +41,7 @@ Creating or managing App Clip experiences typically requires a sequence of calls
 
 Before you can create or update an App Clip experience using the App Store Connect API, you likely need to gather additional information. To find out what information you need:
 
-1. Identify the endpoint you need to call. For example, you use the [`Create a Default App Clip Experience`](post-v1-appclipdefaultexperiences.md) endpoint to create a default App Clip experience.
+1. Identify the endpoint you need to call. For example, you use the [`Create a default app clip experience`](post-v1-appclipdefaultexperiences.md) endpoint to create a default App Clip experience.
 2. Review attributes and relationships of the request you send to the endpoint and other involved objects. For example, successfully creating a default App Clip experience requires [`App Clips`](app-clips.md), [`App Store Versions`](app-store-versions.md), [`App Clip App Store review details`](app-clip-app-store-review-details.md), [`App Clip Header Images`](app-clip-header-images.md), and [`Default App Clip Experience Localizations`](default-app-clip-experience-localizations.md) information.
 
 ##### Upload the Image Asset That Appears on the App Clip Card
@@ -50,10 +50,10 @@ App Clip experience functionality provided by the App Store Connect API often in
 
 Uploading an image asset for an App Clip experience works similarly to uploading other assets to App Store Connect:
 
-1. Reserve the image asset using the [`Create an App Clip Card Image for a Default App Clip Experience`](post-v1-appclipheaderimages.md) endpoint for a default App Clip experience or the [`Create an App Clip Card Image for an Advanced App Clip Experience`](post-v1-appclipadvancedexperienceimages.md) endpoint for an advanced App Clip experience.
+1. Reserve the image asset using the [`Create an app clip card image for a default app clip experience`](post-v1-appclipheaderimages.md) endpoint for a default App Clip experience or the [`Create an app clip card image for an advanced app clip experience`](post-v1-appclipadvancedexperienceimages.md) endpoint for an advanced App Clip experience.
 2. Upload the image asset using the upload operations provided in the response to your reservation request.
-3. Commit the image asset using the [`Modify an App Clip Card Image`](patch-v1-appclipheaderimages-_id_.md) endpoint for a default App Clip experience and the [`Modify the Image for an Advanced App Clip Experience`](patch-v1-appclipadvancedexperienceimages-_id_.md) endpoint for an advanced App Clip experience.
-4. Fetch information about the image asset to verify that the upload succeeded using the [`Read the App Clip Card Image`](get-v1-appclipheaderimages-_id_.md) and [`Read Image Information for an Advanced App Clip Experience`](get-v1-appclipadvancedexperienceimages-_id_.md) endpoints.
+3. Commit the image asset using the [`Modify an app clip card image`](patch-v1-appclipheaderimages-_id_.md) endpoint for a default App Clip experience and the [`Modify the image for an advanced app clip experience`](patch-v1-appclipadvancedexperienceimages-_id_.md) endpoint for an advanced App Clip experience.
+4. Fetch information about the image asset to verify that the upload succeeded using the [`Read the app clip card image`](get-v1-appclipheaderimages-_id_.md) and [`Read image information for an advanced app clip experience`](get-v1-appclipadvancedexperienceimages-_id_.md) endpoints.
 
 For additional information on uploading assets to App Store Connect, see [`Uploading Assets to App Store Connect`](uploading-assets-to-app-store-connect.md).
 
@@ -63,15 +63,15 @@ Creating default and advanced App Clip experiences is a key functionality that A
 
 To create a default App Clip experience:
 
-- Call the [`Create a Default App Clip Experience`](post-v1-appclipdefaultexperiences.md) endpoint. Be sure to attach the default App Clip experience to an App Store version by including the related [`App Store Versions`](app-store-versions.md) resource in the [`AppClipDefaultExperienceCreateRequest`](appclipdefaultexperiencecreaterequest.md). Alternatively, update an [`App Store Versions`](app-store-versions.md) resource to include the new default App Clip experience.
-- Call the [`Create App Store Review Details for an App Clip`](post-v1-appclipappstorereviewdetails.md) endpoint to provide the default App Clip experience’s invocation URL to App Review.
-- Call the [`Create the Localized Metadata for a Default App Clip Experience`](post-v1-appclipdefaultexperiencelocalizations.md) endpoint to provide a localized subtitle and an image that appears on the App Clip card.
+- Call the [`Create a default app clip experience`](post-v1-appclipdefaultexperiences.md) endpoint. Be sure to attach the default App Clip experience to an App Store version by including the related [`App Store Versions`](app-store-versions.md) resource in the [`AppClipDefaultExperienceCreateRequest`](appclipdefaultexperiencecreaterequest.md). Alternatively, update an [`App Store Versions`](app-store-versions.md) resource to include the new default App Clip experience.
+- Call the [`Create app store review details for an app clip`](post-v1-appclipappstorereviewdetails.md) endpoint to provide the default App Clip experience’s invocation URL to App Review.
+- Call the [`Create the localized metadata for a default app clip experience`](post-v1-appclipdefaultexperiencelocalizations.md) endpoint to provide a localized subtitle and an image that appears on the App Clip card.
 
 > 💡 **Tip**:  To create a new App Clip experience that uses metadata of an existing default App Clip experience, create the new experience and include the `appClipDefaultExperienceTemplate` relationship in the [`AppClipDefaultExperienceCreateRequest`](appclipdefaultexperiencecreaterequest.md).
 
 To create an advanced App Clip experience:
 
-- Call the [`Create an Advanced App Clip Experience`](post-v1-appclipadvancedexperiences.md) endpoint.
+- Call the [`Create an advanced app clip experience`](post-v1-appclipadvancedexperiences.md) endpoint.
 - Include the related [`App Clips`](app-clips.md), [`AppClipAdvancedExperienceLocalization`](appclipadvancedexperiencelocalization.md), and [`Advanced App Clip Experience Images`](advanced-app-clip-experience-images.md) resources.
 
 > ❗ **Important**:  For both default or advanced App Clip experiences, provide at least one localization and make sure that it matches your app’s primary locale. If your app supports additional localizations, provide the same localizations for each App Clip experience.
@@ -84,14 +84,14 @@ Similar to how App Store Connect provides functionality to create App Clip exper
 
 Similarly, you can’t delete App Clip experiences for an already released app version unless you release a new version of your app without an App Clip. That said, you can use functionality provided by the [`Default App Clip Experiences`](default-app-clip-experiences.md) and [`Advanced App Clip Experiences`](advanced-app-clip-experiences.md) resources to update or delete App Clip experiences that aren’t attached to a released App Clip:
 
-- To update a default App Clip experience, use the [`Modify a Default App Clip Experience`](patch-v1-appclipdefaultexperiences-_id_.md) endpoint.
-- To delete a default App Clip experience, use the [`Delete a Default App Clip Experience`](delete-v1-appclipdefaultexperiences-_id_.md) endpoint.
-- To update an advanced App Clip experience, use the [`Modify and Delete an Advanced App Clip Experience`](patch-v1-appclipadvancedexperiences-_id_.md) endpoint.
-- To delete an advanced App Clip experience, use the [`Modify and Delete an Advanced App Clip Experience`](patch-v1-appclipadvancedexperiences-_id_.md) endpoint and set the `isPoweredBy` attribute of the [`AppClipAdvancedExperienceUpdateRequest`](appclipadvancedexperienceupdaterequest.md) to `true`.
+- To update a default App Clip experience, use the [`Modify a default app clip experience`](patch-v1-appclipdefaultexperiences-_id_.md) endpoint.
+- To delete a default App Clip experience, use the [`Delete a default app clip experience`](delete-v1-appclipdefaultexperiences-_id_.md) endpoint.
+- To update an advanced App Clip experience, use the [`Modify and delete an advanced app clip experience`](patch-v1-appclipadvancedexperiences-_id_.md) endpoint.
+- To delete an advanced App Clip experience, use the [`Modify and delete an advanced app clip experience`](patch-v1-appclipadvancedexperiences-_id_.md) endpoint and set the `isPoweredBy` attribute of the [`AppClipAdvancedExperienceUpdateRequest`](appclipadvancedexperienceupdaterequest.md) to `true`.
 
 ##### Manage Beta App Clip Experiences
 
-Verifying that the launch experience of the App Clip is free of errors is a key task when developing an App Clip. When you distribute your full app with TestFlight, you can configure beta App Clip experiences that testers use to launch your App Clip with the TestFlight app. To help automate creating and updating beta App Clip experiences, use the [`Beta App Clip Invocations`](beta-app-clip-invocations.md) resource. It provides functionality to create, read, update, and delete a beta App Clip experience. For example, use the [`Create an App Clip Invocation for Testers in Testflight`](post-v1-betaappclipinvocations.md) endpoint to create a beta App Clip experience.
+Verifying that the launch experience of the App Clip is free of errors is a key task when developing an App Clip. When you distribute your full app with TestFlight, you can configure beta App Clip experiences that testers use to launch your App Clip with the TestFlight app. To help automate creating and updating beta App Clip experiences, use the [`Beta App Clip Invocations`](beta-app-clip-invocations.md) resource. It provides functionality to create, read, update, and delete a beta App Clip experience. For example, use the [`Create an app clip invocation for testers in testflight`](post-v1-betaappclipinvocations.md) endpoint to create a beta App Clip experience.
 
 ## Topics
 

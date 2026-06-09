@@ -1,4 +1,4 @@
-# Delete an App Store Version Phased Release
+# Delete an app store version phased release
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

@@ -22,7 +22,7 @@ var currentMode: IntentModes.Current { get }
 
 #### Discussion
 
-This value indicates whether the intent is running in the background or foreground, and, if it requires the app to be in the foreground, the specific `ForegroundModes`. Use this property when handling app intents that support multiple modes — for example, `IntentModes.background` and `IntentModes.foreground` — to enable conditional behavior based on the current run mode. The following example shows how you can check the intent mode before performing its action:
+This value indicates whether the intent is running in the background or foreground, and the current [`IntentModes.ForegroundMode`](intentmodes/foregroundmode.md) option if it requires the app to be in the foreground. When handling an app intent that supports both foreground and background modes, use this property to check the current run mode before making any adjustments, as shown in the following example from an app intent type:
 
 ```swift
 func perform() async throws -> some IntentResult {

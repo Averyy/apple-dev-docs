@@ -6,6 +6,9 @@
 Returns a secure message created by calculating and attaching a MIC to the input message, and then optionally encrypting it.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Controls whether this entity will be displayed in search results in the Spotlight UI.
+A Boolean value that indicates whether Spotlight prevents the inclusion of the entity in the index.
 
 **Availability**:
 - iOS 18.4+
@@ -18,6 +18,10 @@ Controls whether this entity will be displayed in search results in the Spotligh
 ```swift
 var hideInSpotlight: Bool { get }
 ```
+
+#### Discussion
+
+When the value of this property is `true`, Spotlight doesn’t include the entity in search results. The default value of this property is `false`.
 
 
 ---

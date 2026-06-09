@@ -1,4 +1,4 @@
-# List All App Store Version Localizations for an App Store Version
+# List all app store version localizations for an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,21 +14,21 @@ Get a list of localized, version-level information about an app, for all locales
 
 ## Parameters
 
-- `filter[locale]` ([string])
-- `fields[appScreenshotSets]` ([string])
-- `fields[appStoreVersions]` ([string])
-- `fields[appPreviewSets]` ([string])
-- `fields[appStoreVersionLocalizations]` ([string])
-- `limit` (integer)
-- `limit[appScreenshotSets]` (integer)
-- `limit[appPreviewSets]` (integer)
-- `include` ([string])
+- `filter[locale]` ([string]): Filter the returned App Store version localizations by locale.
+- `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
+- `fields[appPreviewSets]` ([string]): Additional fields to include for each app preview set resource returned by the response.
+- `fields[appStoreVersionLocalizations]` ([string]): Additional fields to include for each App Store version localization resource returned by the response.
+- `limit` (integer): The maximum number of App Store version localization resources to return.
+- `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot set resources to return.
+- `limit[appPreviewSets]` (integer): The maximum number of related app preview set resources to return.
+- `include` ([string]): The relationship data to include in the response.
 - `fields[appKeywords]` ([string])
 - `limit[searchKeywords]` (integer)
 
 ## See Also
 
-- [Read App Store Version Localization Information](get-v1-appstoreversionlocalizations-_id_.md)
+- [Read app store version localization information](get-v1-appstoreversionlocalizations-_id_.md)
   Read localized version-level information.
 
 

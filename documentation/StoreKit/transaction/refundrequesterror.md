@@ -31,6 +31,8 @@ The following methods throw refund request errors: [`beginRefundRequest(in:)`](t
   The App Store has already received a refund request for this in-app purchase.
 - [Transaction.RefundRequestError.failed](transaction/refundrequesterror/failed.md)
   The refund request submission failed.
+### Enumeration Cases
+- [Transaction.RefundRequestError.ineligible](transaction/refundrequesterror/ineligible.md)
 
 ## Relationships
 

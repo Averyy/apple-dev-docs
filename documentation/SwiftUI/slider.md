@@ -16,6 +16,7 @@ A control for selecting a value from a bounded linear range of values.
 ## Declaration
 
 ```swift
+nonisolated
 struct Slider<Label, ValueLabel> where Label : View, ValueLabel : View
 ```
 

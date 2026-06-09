@@ -74,6 +74,21 @@ Note, that any drag supports copy operation by default. In the snippet above, th
 
 - `configuration`: A value that describes the configuration of a drag session.
 
+## See Also
+
+- [struct DragConfiguration](dragconfiguration.md)
+  The behavior of the drag, proposed by the dragging source. A value that describes the drag operations a drag source supports.
+- [func dropConfiguration((DropSession) -> DropConfiguration) -> some View](view/dropconfiguration(_:).md)
+  Configures a drop session.
+- [struct DropConfiguration](dropconfiguration.md)
+  Describes the behavior of the drop.
+- [func dragContainer(for:in:_:)](view/dragcontainer(for:in:_:).md)
+  A container with draggable views where the drag payload is based on multiple identifiers of dragged items.
+- [func dragContainer(for:itemID:in:_:)](view/dragcontainer(for:itemid:in:_:).md)
+  A container with draggable views.
+- [func dragContainerSelection<ItemID>(@autoclosure () -> Array<ItemID>, containerNamespace: Namespace.ID?) -> some View](view/dragcontainerselection(_:containernamespace:).md)
+  Provides multiple item selection support for drag containers.
+
 
 ---
 

@@ -20,6 +20,11 @@ Provides the media characteristic that corresponds to the selectable setting.
 var mediaCharacteristic: AVMediaCharacteristic { get }
 ```
 
+## See Also
+
+- [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationsetting/displayname(forlocaleidentifier:).md)
+  Returns the display name for the selectable setting that best matches the specified locale identifier.
+
 
 ---
 

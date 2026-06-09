@@ -1,4 +1,4 @@
-# List All Prerelease Versions for an App
+# List all prerelease versions for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -124,10 +124,10 @@ https://api.appstoreconnect.apple.com/v1/apps/6446998023/preReleaseVersions
 
 ## See Also
 
-- [List All Builds of an App](get-v1-apps-_id_-builds.md)
+- [List all builds of an app](get-v1-apps-_id_-builds.md)
   Get a list of builds associated with a specific app.
-- [GET /v1/apps/{id}/relationships/builds](get-v1-apps-_id_-relationships-builds.md)
-- [GET /v1/apps/{id}/relationships/preReleaseVersions](get-v1-apps-_id_-relationships-prereleaseversions.md)
+- [List build IDs for an app](get-v1-apps-_id_-relationships-builds.md)
+- [List prerelease version IDs for an app](get-v1-apps-_id_-relationships-prereleaseversions.md)
 
 
 ---

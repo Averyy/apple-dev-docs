@@ -12,6 +12,7 @@ A request that analyzes an image for aesthetically pleasing attributes.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -70,6 +71,8 @@ The request returns the resulting aesthetics score in an instance of [`ImageAest
 
 ## See Also
 
+- [Implementing saliency-based image cropping in iOS and watchOS](implementing-saliency-based-image-cropping-in-ios-and-watchos.md)
+  Crop regions most likely drawing people’s attention from an image in your iOS or watchOS app.
 - [Generating high-quality thumbnails from videos](generating-thumbnails-from-videos.md)
   Identify the most visually pleasing frames in a video by using the image-aesthetics scores request.
 - [struct DetectLensSmudgeRequest](detectlenssmudgerequest.md)

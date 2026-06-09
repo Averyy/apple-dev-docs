@@ -52,8 +52,6 @@ func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> Self.SubSe
   Removes the elements in the specified subrange from the collection.
 - [func removeSubrange<R>(R)](string/removesubrange(_:)-9twng.md)
   Removes the elements in the specified subrange from the collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](string/filter(_:).md)
-  Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func dropFirst(Int) -> Self.SubSequence](string/dropfirst(_:).md)
   Returns a subsequence containing all but the given number of initial elements.
 - [func dropLast(Int) -> Self.SubSequence](string/droplast(_:).md)

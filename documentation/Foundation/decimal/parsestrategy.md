@@ -52,11 +52,16 @@ Decimal also has an [`init(_:strategy:)`](decimal/init(_:strategy:).md) initiali
   Creates a parse strategy instance using the specified decimal currency format style.
 - [init(format: Format, lenient: Bool)](decimal/parsestrategy/init(format:lenient:)-36ja3.md)
   Creates a parse strategy instance using the specified decimal percentage format style.
+### Parsing strings
+- [func parse(String) throws -> Format.FormatInput](decimal/parsestrategy/parse(_:).md)
+  Parses a decimal string in accordance with this strategy and returns the parsed value.
 ### Accessing strategy properties
 - [var formatStyle: Format](decimal/parsestrategy/formatstyle.md)
   The format style this strategy uses when parsing strings.
 - [var lenient: Bool](decimal/parsestrategy/lenient.md)
   A Boolean value that indicates whether parsing allows any discrepencies in the expected format.
+### Default Implementations
+- [ParseStrategy Implementations](decimal/parsestrategy/parsestrategy-implementations.md)
 
 ## Relationships
 

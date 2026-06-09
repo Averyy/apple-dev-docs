@@ -22,11 +22,11 @@ static func foreground(_ foregroundMode: IntentModes.ForegroundMode) -> IntentMo
 
 #### Return Value
 
-A set of options that describes the specified foreground behavior.
+A set of options that describes the foreground behavior.
 
 ## Parameters
 
-- `foregroundMode`: The specific foreground behavior; for example, `ForegroundMode.immediate` to immediately bring the app into the foreground and then perform the app intent’s action.
+- `foregroundMode`: The foreground behavior to apply to the app intent. For example, specify [`immediate`](intentmodes/foregroundmode/immediate.md) to bring the app to the foreground before running the app intent.
 
 
 ---

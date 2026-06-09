@@ -106,6 +106,8 @@ The [`NSImageRep`](nsimagerep.md) class is called “semiabstract” because it 
 ### Notifications
 - [class let registryDidChangeNotification: NSNotification.Name](nsimagerep/registrydidchangenotification.md)
   Posted whenever the image representation class registry changes.
+### Structures
+- [NSImageRep.RegistryDidChangeMessage](nsimagerep/registrydidchangemessage.md)
 ### Initializers
 - [init?(contentsOfURL: URL)](nsimagerep/init(contentsofurl:).md)
 

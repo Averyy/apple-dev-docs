@@ -15,7 +15,7 @@ Creates a hosting configuration with the given contents.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+init(@ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

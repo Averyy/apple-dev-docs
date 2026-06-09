@@ -92,6 +92,39 @@ On your server, [`App Store Server Notifications`](https://developer.apple.com/d
 
 For more information on sandbox testing, see [`Testing In-App Purchases with sandbox`](testing-in-app-purchases-with-sandbox.md).
 
+##### Test Offer Codes in Xcode
+
+You can test your app’s handling of offer code redemptions in Xcode for all In-App Purchase product types: consumable, non-consumable, non-renewing subscription, and auto-renewable subscription.
+
+Before you can begin testing in Xcode, complete the steps in [`Setting up StoreKit Testing in Xcode`](https://developer.apple.com/documentation/Xcode/setting-up-storekit-testing-in-xcode), including creating a StoreKit configuration file and enabling StoreKit testing in Xcode.
+
+Start by opening the StoreKit configuration editor in Xcode and including at least one In-App Purchase product. Then follow these steps to configure an offer code:
+
+1. In the left pane, select the product under the appropriate product type heading.
+2. Under the Offer Codes heading in the editor, configure an offer code for the product.
+3. In your app, implement a Redeem Offer Code button that invokes the StoreKit method, as described above in [`Redeem offer codes in your app`](supporting-offer-codes-in-your-app#Redeem-offer-codes-in-your-app.md)
+
+To test in-app offer code redemption, run your app in the Xcode environment and follow these steps:
+
+1. In the app, tap the Redeem Offer Code button. When you do this, the system displays the Offer Code sheet.
+2. Select the offer code that you configured and redeem it. After you redeem it, the system displays the payment sheet with the applied offer.
+3. In the app, tap Confirm on the payment sheet.
+4. Verify that your app receives the resulting transaction and updates your UI to grant the purchased content without delay.
+5. Finish the transaction with [`finish()`](transaction/finish().md).
+
+You can simulate offer code redemptions that occur outside your app, such as from a URL or the App Store, using the Xcode Transaction Manager. To test external redemption, run your app in the Xcode environment and follow these steps:
+
+1. Open the Transaction Manager (Debug > StoreKit > Manage Transactions).
+2. Select the product that has offer codes configured.
+3. In the secondary configuration view, use the dropdown menu to select an offer code.
+4. Complete the redemption. On successful redemption, a new transaction posts to [`updates`](transaction/updates.md) for your app to observe and process.
+
+> **Note**:  The Transaction Manager displays the option to trigger an external offer code redemption only when the StoreKit configuration file contains offer codes for the selected product.
+
+To retry the same test scenario, you may need to delete the previous transaction, depending on the product type. Consumable offer codes are redeemable repeatedly, but non-consumables, non-renewing subscriptions, and auto-renewable subscriptions may block redemption if you’re already entitled. To delete a transaction, in Xcode, choose Debug > StoreKit > Manage Transactions, select the transaction, and click Delete.
+
+For more information on configuring StoreKit Testing in Xcode, see [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest).
+
 ##### Supporting Systems Earlier Than Ios 16 and Ipados 16
 
 If your app runs on iOS 16 or earlier, and iPadOS 16 or earlier, you can support offer codes for auto-renewable subscriptions only. Use [`presentCodeRedemptionSheet()`](skpaymentqueue/presentcoderedemptionsheet().md) to display the offer code redemption UI. Otherwise, use the APIs referred to in this article. For more information about supporting earlier systems, see [`Implementing offer codes in your app`](implementing-offer-codes-in-your-app.md).

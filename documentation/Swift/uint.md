@@ -148,6 +148,7 @@ On 32-bit platforms, `UInt` is the same size as `UInt32`, and on 64-bit platform
 - [BinaryInteger](binaryinteger.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
@@ -168,6 +169,9 @@ On 32-bit platforms, `UInt` is the same size as `UInt32`, and on 64-bit platform
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 - [UnsignedInteger](unsignedinteger.md)
 
 ## See Also

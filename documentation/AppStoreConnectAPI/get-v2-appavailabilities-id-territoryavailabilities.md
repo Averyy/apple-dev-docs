@@ -1,4 +1,4 @@
-# Read App Availability Territories
+# Read app availablity territories
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -19,21 +19,22 @@ Read the territory availablity for a specific app.
 
 ## Parameters
 
-- `fields[territories]` ([string])
-- `fields[territoryAvailabilities]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `fields[territories]` ([string]): Additional fields to include for each territories resource returned by the response.
+- `fields[territoryAvailabilities]` ([string]): Additional fields to include for each territory availabilities resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of territory availabilities resources to return.
 
 ## See Also
 
-- [Read App Availabilty](get-v2-appavailabilities-_id_.md)
+- [Read app availability](get-v2-appavailabilities-_id_.md)
   Get information about your app’s availalbility.
-- [GET /v2/appAvailabilities/{id}/relationships/territoryAvailabilities](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
-- [Create an App Pre-Order](post-v2-appavailabilities.md)
+- [List territory availability IDs for an app availability](get-v2-appavailabilities-_id_-relationships-territoryavailabilities.md)
+  Get a list of territory availability IDs for a specific app availability.
+- [Create an app pre-order](post-v2-appavailabilities.md)
   Create an app pre-order and set the expected app release date.
-- [Modify the Territory Availabilty for an App Pre-Order](patch-v1-territoryavailabilities-_id_.md)
+- [Modify the territory availability for an app pre-order](patch-v1-territoryavailabilities-_id_.md)
   Update the release territories for your app pre-order.
-- [End an App Pre-Order](post-v1-endappavailabilitypreorders.md)
+- [End an app pre-order](post-v1-endappavailabilitypreorders.md)
   End the pre-order for your app and release to store immediately.
 
 

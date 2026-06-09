@@ -8,6 +8,7 @@ An object that contains all the properties necessary to schedule an alarm.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -42,6 +43,14 @@ let configuration = AlarmManager.AlarmConfiguration(
 - [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:).md)
   Creates a configuration that behaves like a countdown.
 - [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:).md)
+  Creates a configuration that behaves like a traditional timer.
+### Initializers
+- [init(countdownDuration: Alarm.CountdownDuration?, schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound)](alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
+  Creates a configuration that behaves like a countdown.
+### Type Methods
+- [static func alarm(schedule: Alarm.Schedule?, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/alarm(schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
+  Creates a configuration that behaves like a traditional alarm.
+- [static func timer(duration: TimeInterval, attributes: AlarmAttributes<Metadata>, appEntityIdentifier: EntityIdentifier?, stopIntent: (any LiveActivityIntent)?, secondaryIntent: (any LiveActivityIntent)?, sound: AlertConfiguration.AlertSound) -> AlarmManager.AlarmConfiguration<Metadata>](alarmmanager/alarmconfiguration/timer(duration:attributes:appentityidentifier:stopintent:secondaryintent:sound:).md)
   Creates a configuration that behaves like a traditional timer.
 
 ## See Also

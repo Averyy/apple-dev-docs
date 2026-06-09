@@ -8,6 +8,7 @@ An object that uniquely identifies a particular network protocol and the pairing
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

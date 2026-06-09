@@ -102,12 +102,12 @@ https://api.appstoreconnect.apple.com/v1/gameCenterLeaderboards/9b999364-308b-4c
   Read information about a specific leaderboard.
 - [Read Group Information for a Leaderboard](get-v1-gamecenterleaderboards-_id_-groupleaderboard.md)
   Read the group leadboard to which a leaderboard belongs.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/localizations](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
-- [List All Groups to Which a Leaderboard Belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
+- [List localization IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-localizations.md)
+- [List all groups to which a leaderboard belongs](get-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   List associated group leaderboards for a specific leaderboard.
 - [List Releases for a Leaderboard](get-v1-gamecenterleaderboards-_id_-releases.md)
   Read the state of releases for a leaderboard and related information.
-- [GET /v1/gameCenterLeaderboards/{id}/relationships/releases](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
+- [List release IDs for a Game Center leaderboard](get-v1-gamecenterleaderboards-_id_-relationships-releases.md)
 
 
 ---

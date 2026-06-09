@@ -19,7 +19,7 @@ optional func application(_ application: NSApplication, didRegisterForRemoteNoti
 
 The delegate receives this message after the [`registerForRemoteNotifications(matching:)`](nsapplication/registerforremotenotifications(matching:).md)method of [`NSApplication`](nsapplication.md) is invoked and there is no error in the registration process. After receiving the device token, the application should connect with its provider and give the token to it. APNS only pushes notifications to the application’s computer that are accompanied with this token.
 
-For more information about how to implement push notifications in your application, see [`Local and Remote Notification Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/index.html#//apple_ref/doc/uid/TP40008194).
+For more information about how to register with APNs, see [`Registering your app with APNs`](https://developer.apple.com/documentation/UserNotifications/registering-your-app-with-apns).
 
 ## Parameters
 

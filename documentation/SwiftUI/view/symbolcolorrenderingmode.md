@@ -29,6 +29,15 @@ A view that specifies the color rendering mode for symbol images.
 
 - `mode`: The color rendering mode, or nil to use the default mode.
 
+## See Also
+
+- [func symbolRenderingMode(SymbolRenderingMode?) -> some View](view/symbolrenderingmode(_:).md)
+  Sets the rendering mode for symbol images within this view.
+- [func symbolVariableValueMode(SymbolVariableValueMode?) -> some View](view/symbolvariablevaluemode(_:).md)
+  Sets the variable value mode mode for symbol images within this view.
+- [func symbolVariant(SymbolVariants) -> some View](view/symbolvariant(_:).md)
+  Makes symbols within the view show a particular variant.
+
 
 ---
 

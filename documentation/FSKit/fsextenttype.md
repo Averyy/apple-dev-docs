@@ -21,6 +21,8 @@ enum FSExtentType
   An extent type to indicate valid data.
 - [FSExtentType.zeroFill](fsextenttype/zerofill.md)
   An extent type to indicate uninitialized data.
+- [FSExtentType.readOnly](fsextenttype/readonly.md)
+  An extent type to indicate read-only data.
 ### Working with raw values
 - [init?(rawValue: Int)](fsextenttype/init(rawvalue:).md)
 

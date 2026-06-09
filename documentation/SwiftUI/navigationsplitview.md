@@ -17,6 +17,7 @@ A view that presents views in two or three columns, where selections in leading 
 ## Declaration
 
 ```swift
+nonisolated
 struct NavigationSplitView<Sidebar, Content, Detail> where Sidebar : View, Content : View, Detail : View
 ```
 

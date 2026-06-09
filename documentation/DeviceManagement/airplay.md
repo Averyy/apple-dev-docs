@@ -10,8 +10,6 @@ The payload that configures AirPlay settings.
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - macOS 10.10+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,8 +28,8 @@ Specify `com.apple.airplay` as the payload type.
 | Device channel | iOS, macOS, Shared iPad |
 | User channel | macOS |
 | Allow manual install | iOS, macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad |
 
@@ -95,9 +93,9 @@ Specify `com.apple.airplay` as the payload type.
 
 ## Properties
 
-- `AllowList` ([AirPlay.AllowListItem]): If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices.
+- `AllowList` ([AirPlay.AllowListItem]): If present, only AirPlay destinations in this list are available to the device. This allow list applies to supervised devices. Available: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 - `Passwords` ([AirPlay.PasswordsItem]): If present, sets passwords for known AirPlay destinations. Using multiple entries for the same destination, whether within the same payload or across multiple installed payloads, is an error and results in undefined behavior.
-- `Whitelist` ([AirPlay.AllowListItem]): Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3.
+- `Whitelist` ([AirPlay.AllowListItem]): Use `AllowList` instead. This key is deprecated in iOS 14.5 and macOS 11.3. Deprecated: iOS 14.5+ | iPadOS 14.5+ | macOS 11.3+
 
 ## See Also
 

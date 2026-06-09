@@ -9,7 +9,6 @@ An error that indicates the framework encountered a problem which the system can
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 

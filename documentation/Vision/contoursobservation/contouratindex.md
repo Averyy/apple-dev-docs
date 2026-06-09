@@ -12,6 +12,7 @@ Retrieves the contour object at the specified index, irrespective of hierarchy.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: struct
 
-When a recurring event stops recurring
+When a recurring event stops recurring.
 
 **Availability**:
 - iOS 18.0+

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an alternative distribution package.
+
 **Availability**:
 - App Store Connect API 3.3+
 
@@ -15,7 +17,7 @@ object AlternativeDistributionPackageCreateRequest.Data.Relationships.AppStoreVe
 ## Properties
 
 - `id` (string) *(required)*
-- `type` (string) *(required)*: Obtain the `appStoreVersion` resource ID from the [`List All App Store Versions for an App`](get-v1-apps-_id_-appstoreversions.md) response.
+- `type` (string) *(required)*: Obtain the `appStoreVersion` resource ID from the [`List all app store versions for an app`](get-v1-apps-_id_-appstoreversions.md) response.
 
 
 ---

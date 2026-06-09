@@ -24,8 +24,14 @@ Use the [`anchor`](pencilhoverpose/anchor.md) property if you require a normaliz
 
 ## See Also
 
+- [let altitude: Angle](pencilhoverpose/altitude.md)
+  A value that represents the altitude angle of the hovering Apple Pencil.
 - [let anchor: UnitPoint](pencilhoverpose/anchor.md)
   The location of an Apple Pencil hovering in the area above the view’s bounds, expressed as a normalized anchor point relative to that view.
+- [let azimuth: Angle](pencilhoverpose/azimuth.md)
+  A value that represents the azimuth angle of a hovering Apple Pencil.
+- [let roll: Angle](pencilhoverpose/roll.md)
+  A value that represents the barrel roll angle of the hovering Apple Pencil.
 - [let zDistance: CGFloat](pencilhoverpose/zdistance.md)
   The normalized distance between the screen and a hovering Apple Pencil.
 

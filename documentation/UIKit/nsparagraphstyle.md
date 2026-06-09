@@ -61,8 +61,7 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 - [var defaultTabInterval: CGFloat](nsparagraphstyle/defaulttabinterval.md)
   The documentwide default tab interval.
 ### Getting text block and list information
-- [var textBlocks: [NSTextBlock]](../AppKit/NSParagraphStyle/textBlocks.md)
-  The text blocks that contain the paragraph.
+- [var textBlocks: [NSTextBlock]](nsparagraphstyle/textblocks.md)
 - [var textLists: [NSTextList]](nsparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
 ### Getting line-break information
@@ -121,6 +120,8 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   A tab in a paragraph.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
+- [Adding tables to attributed strings in UIKit](adding-tables-to-attributed-strings.md)
+  Create and configure tables in attributed strings and display them in a text view.
 
 
 ---

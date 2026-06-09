@@ -6,12 +6,7 @@
 Computes the environment textures with high sampling rates, reducing texture noise in high-frequency areas.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
-- tvOS 26.0+
-- visionOS 2.0+
 
 ## Declaration
 

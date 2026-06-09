@@ -52,7 +52,7 @@ When you enable memory tagging in Xcode, it also adds the [`com.apple.security.h
 
 You can also enable the [`com.apple.security.hardened-process.checked-allocations.enable-pure-data`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.enable-pure-data) and [`com.apple.security.hardened-process.checked-allocations.no-tagged-receive`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.checked-allocations.no-tagged-receive) entitlements.
 
-> **Note**:  This setting is available on iOS 26 and later on iPhone 17, iPhone 17 Pro, iPhone 17 Pro Max, or iPhone Air.
+> **Note**: On devices without hardware memory tagging support, this setting has no effect. Supported devices include iPhone and iPad with an A19 chip or later, and Mac and Apple Vision Pro with an M5 chip or later.
 
 ##### Initialize Stack Variables to Zero
 
@@ -102,7 +102,7 @@ If you define the macro in code, you need to place the definition at the beginni
 
 Additionally, setting `ENABLE_CPLUSPLUS_BOUNDS_SAFE_BUFFERS` to `Yes` adds compiler warnings on unsafe buffer usage in C++, configuring the compiler to treat these warnings as errors. The C++ compiler encounters an error if it detects that your code:
 
-- Indexes an array, performs pointer arithmetic, or uses an unsafe C standard library function on a raw pointers
+- Indexes an array, performs pointer arithmetic, or uses an unsafe C standard library function on raw pointers
 - Calls `operator[]()` on a smart pointer that refers to a list of objects
 - Constructs a `std::span` object using the two-argument (pointer and size) constructor
 
@@ -127,6 +127,14 @@ When you enable the Enhanced Security capability for your target, Xcode adds the
 In most situations, this additional protection doesn’t require you to make any changes. If your app modifies data in the protected regions — for example, it modifies the value of `const` data sections — the system crashes your app when you adopt this entitlement. To fix the crash, remove the code that modifies the read-only memory regions.
 
 If you need to turn off read-only memory for the dynamic loader, uncheck the Enable Read-Only Platform Memory checkbox in the Signing and Capabilities editor.
+
+##### Adopt Guard Objects
+
+Guard objects defend against use-after-free vulnerabilities by replacing freed memory regions with inaccessible guard regions. When your app accesses one of these regions, it crashes to prevent freed memory from being exploited. This protection is active automatically when you set [`com.apple.security.hardened-process.enhanced-security-version-string`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.enhanced-security-version-string) to `2` or greater. If you don’t set this entitlement, the system automatically applies the latest Enhanced Security version. When your app frees virtual memory mappings and heap allocations — collectively called *objects* — the kernel and the userspace memory allocator can replace them with inaccessible guard regions. Guard placement is dynamic: the system groups objects of similar size and manages their lifetime, shifting guard positions as your app allocates and frees memory.
+
+> ❗ **Important**:  Guard objects can cause an increase in memory usage or a decrease in execution speed, depending on your app’s workload. Profile your app after adopting Enhanced Security version `2` to measure the impact.
+
+If the memory or performance impact of guard objects is too much, you can turn off guard objects for your target. To turn off guard objects, manually add the [`com.apple.security.hardened-process.no-guard-objects`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.security.hardened-process.no-guard-objects) entitlement to your target. Then update your provisioning profile. For more information, see [`Edit, download, or delete provisioning profiles`](https://developer.apple.comhttps://developer.apple.com/help/account/provisioning-profiles/edit-download-or-delete-profiles).
 
 ##### Adopt Bounds Checking in C
 

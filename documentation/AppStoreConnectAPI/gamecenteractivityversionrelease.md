@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an activity version release resource.
+A record indicating that a version of a Game Center activity has been released to players.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -18,6 +18,7 @@ object GameCenterActivityVersionRelease
 
 ### Dictionaries
 - [object GameCenterActivityVersionRelease.Relationships](gamecenteractivityversionrelease/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -29,13 +30,13 @@ object GameCenterActivityVersionRelease
 ## See Also
 
 - [object GameCenterActivityVersionReleaseCreateRequest](gamecenteractivityversionreleasecreaterequest.md)
-  The request body you use to create an activity version release resource.
+  The request body for releasing a Game Center activity version to players.
 - [object GameCenterActivityVersionReleaseResponse](gamecenteractivityversionreleaseresponse.md)
-  A response that contains a single activity version release resource.
+  A response containing a single release record for a Game Center activity version.
 - [object GameCenterActivityVersionReleasesResponse](gamecenteractivityversionreleasesresponse.md)
-  A response that contains a list of activity version release resources.
+  A response containing a list of release records for a Game Center activity version.
 - [object GameCenterActivityVersionResponse](gamecenteractivityversionresponse.md)
-  A response that contains a single activity version resource.
+  A response containing a single version of a Game Center activity.
 
 
 ---

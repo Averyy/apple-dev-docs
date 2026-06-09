@@ -59,6 +59,7 @@ struct PresentationIntent
   An asychronous sequence of Unicode scalar values.
 - [struct Expression](expression.md)
 - [struct NSAttributedStringFormattingContextKey](nsattributedstringformattingcontextkey.md)
+  A type that represents a key in the formatting context dictionary.
 - [struct NSKeyValueChangeKey](nskeyvaluechangekey.md)
   The keys that can appear in the change dictionary.
 - [struct NSKeyValueObservedChange](nskeyvalueobservedchange.md)

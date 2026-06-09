@@ -36,12 +36,14 @@ ScrollView(.horizontal) {
 .safeAreaPadding(.horizontal, 20.0)
 ```
 
-See the `View/safeAreaInset(edge:alignment:spacing:content)` modifier for adding to the safe area based on the size of a view.
+See the horizontal [`safeAreaInset(edge:alignment:spacing:content:)`](view/safeareainset(edge:alignment:spacing:content:)-6gwby.md) or vertical [`safeAreaInset(edge:alignment:spacing:content:)`](view/safeareainset(edge:alignment:spacing:content:)-4s51l.md) modifier for adding to the safe area based on the size of a view.
 
 ## See Also
 
 - [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set) -> some View](view/ignoressafearea(_:edges:).md)
   Expands the safe area of a view.
+- [func ignoresSafeArea(SafeAreaRegions, edges: Edge.Set, alignment: Alignment?) -> some View](view/ignoressafearea(_:edges:alignment:).md)
+  Expands the safe area of a view aligning content within the new bounds using the provided alignment.
 - [func safeAreaInset(edge:alignment:spacing:content:)](view/safeareainset(edge:alignment:spacing:content:).md)
   Shows the specified content beside the modified view.
 - [func safeAreaPadding(_:)](view/safeareapadding(_:).md)

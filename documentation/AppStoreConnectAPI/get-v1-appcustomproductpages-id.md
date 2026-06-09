@@ -54,10 +54,10 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aa
 
 ## Parameters
 
-- `fields[appCustomProductPageVersions]` ([string])
-- `fields[appCustomProductPages]` ([string])
-- `include` ([string])
-- `limit[appCustomProductPageVersions]` (integer)
+- `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
+- `fields[appCustomProductPages]` ([string]): Additional fields to include for each app custom product page resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appCustomProductPageVersions]` (integer): The maximum number of related app custom product page versions resources to return.
 - `fields[apps]` ([string])
 
 ## See Also
@@ -70,7 +70,7 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2fef-4aa
   Get a list of all custom product pages for a specific app.
 - [List Custom Product Page Versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [Get All Version IDs for an App Custom Product Page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+- [Get all version ids for an app custom product page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
   Get a list of custom product page version IDs associated with a custom product page.
 - [Delete an App Custom Product Page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.

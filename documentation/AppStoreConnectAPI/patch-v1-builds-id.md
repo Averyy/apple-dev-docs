@@ -1,4 +1,4 @@
-# Modify a Build
+# Modify a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -170,11 +170,11 @@ PATCH https://api.appstoreconnect.apple.com/v1/builds/932eff64-a144-4350-8d10-9e
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the build resource ID from the [`List Builds`](get-v1-builds.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the build resource ID from the [`List builds`](get-v1-builds.md) response.
 
 ## See Also
 
-- [Assign the App Encryption Declaration for a Build](patch-v1-builds-_id_-relationships-appencryptiondeclaration.md)
+- [Assign the app encryption declaration for a build](patch-v1-builds-_id_-relationships-appencryptiondeclaration.md)
   Assign an app encryption declaration to a build.
 
 

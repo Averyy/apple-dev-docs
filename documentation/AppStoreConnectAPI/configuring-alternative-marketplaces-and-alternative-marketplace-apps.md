@@ -22,7 +22,7 @@ Next, you create a signed JSON web token (JWT) for the app devleoper to upload t
 
 While uploading the JWT, the app developer selects the apps they want to associate with your marketplace. At this point, the app developer can also enable notifications which are delivered by webhooks. For more information about notifications and webhooks, see [`Notifications`](notifications.md).
 
-> **Note**:  Apps can be distributed on App Store, an alternative marketplace or both. To learn more, see [`AppStoreVersionUpdateRequest.Data.Attributes`](appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md), specifically `reviewType` and [`Modify an App Store Version`](patch-v1-appstoreversions-_id_.md).
+> **Note**:  Apps can be distributed on App Store, an alternative marketplace or both. To learn more, see [`AppStoreVersionUpdateRequest.Data.Attributes`](appstoreversionupdaterequest/data-data.dictionary/attributes-data.dictionary.md), specifically `reviewType` and [`Modify an app store version`](patch-v1-appstoreversions-_id_.md).
 
 ##### Set Up the Marketplace
 
@@ -30,7 +30,7 @@ You need to configure several parts of your alternative marketplace so it can fu
 
 - Configure [`Add a Marketplace Webhook Configuration`](post-v1-marketplacewebhooks.md) with the server `endpointUrl,` so it listens for new notifications. For more information, see [`Notifications`](notifications.md).
 - [`Add an Alternative Distribution Domain`](post-v1-alternativedistributiondomains.md) to represent your marketplace app’s base web domain, from which all traffic must flow. This domain serves your marketplace app and all other apps on individual pages on your marketplace.
-- Set up your marketplace search detail so Apple can crawl your sitemap and include your apps in Spotlight search, using [`Add a Marketplace Search Detail Url`](post-v1-marketplacesearchdetails.md). To learn more, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md).
+- Set up your marketplace search detail so Apple can crawl your sitemap and include your apps in Spotlight search, using [`Add a marketplace search detail url`](post-v1-marketplacesearchdetails.md). To learn more, see [`Building a searchable catalog for your marketplace app for inclusion in Spotlight`](building-a-searchable-catalog-for-your-marketplace-app-for-inclusion-in-spotlight.md).
 
 Next, you need to process alternative distribution packages. For more information, see [`Processing alternative app marketplace notifications`](https://developer.apple.com/documentation/appdistribution/processing-alternative-marketplace-notifications).
 

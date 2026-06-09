@@ -60,6 +60,10 @@ Applying the [`enabled`](windowinteractionbehavior/enabled.md) behavior is equiv
   Configures the minimize functionality for the window enclosing `self`.
 - [func windowResizeBehavior(WindowInteractionBehavior) -> some View](view/windowresizebehavior(_:).md)
   Configures the resize functionality for the window enclosing `self`.
+- [func allowsWindowActivationEvents() -> some View](view/allowswindowactivationevents.md)
+  Configures gestures in this view hierarchy to handle events that activate the containing window.
+- [func allowsWindowActivationEvents(Bool?) -> some View](view/allowswindowactivationevents(_:).md)
+  Configures whether gestures in this view hierarchy can handle events that activate the containing window.
 
 
 ---

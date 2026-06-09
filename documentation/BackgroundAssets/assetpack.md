@@ -39,6 +39,11 @@ An instance of this structure can be invalidated when the asset pack that it rep
   The status of an asset pack.
 - [let userInfo: Data?](assetpack/userinfo.md)
   JSON-encoded custom information that’s associated with the asset pack.
+### Accessing asset language
+- [let language: Locale.Language?](assetpack/language.md)
+  The language for which this asset pack is localized.
+- [Locale.Language](../Foundation/Locale/Language-swift.struct.md)
+  A type that represents a language, as used in a locale.
 ### Downloading assets
 - [func download(for: BAContentRequest?) -> BADownload](assetpack/download(for:).md)
   Creates a download object for the asset pack that you schedule using a download manager.
@@ -61,6 +66,8 @@ An instance of this structure can be invalidated when the asset pack that it rep
 
 - [actor AssetPackManager](assetpackmanager.md)
   An actor that manages asset packs.
+- [struct AssetPackManifest](assetpackmanifest.md)
+  A manifest of asset packs that are available to download.
 - [protocol ManagedDownloaderExtension](manageddownloaderextension.md)
   An app extension that uses the system implementation to schedule asset-pack downloads automatically.
 - [BAAppGroupID](../BundleResources/Information-Property-List/BAAppGroupID.md)

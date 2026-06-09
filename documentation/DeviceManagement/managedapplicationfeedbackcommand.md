@@ -12,8 +12,6 @@ The command to get app feedback from a managed app on the device.
 - macOS 11.0+
 - tvOS 10.2+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

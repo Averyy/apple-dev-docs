@@ -6,6 +6,9 @@
 A Boolean value that indicates whether the microphone’s sound level is being monitored.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

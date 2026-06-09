@@ -9,6 +9,7 @@ Completes the translation after which the framework closes the sheet.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

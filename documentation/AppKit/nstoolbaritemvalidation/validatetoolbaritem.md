@@ -50,7 +50,6 @@ If the receiver is the `target` for the actions of multiple toolbar items, it’
   The action method to call when someone clicks on the toolbar item.
 - [var target: AnyObject?](nstoolbaritem/target.md)
   The object that defines the action method the toolbar item calls when clicked.
-- [Toolbar Programming Topics for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Toolbars/Toolbars.html#//apple_ref/doc/uid/10000109i)
 - [func validate()](nstoolbaritem/validate.md)
   Validates the toolbar item’s menu and its ability to perfrom its action.
 

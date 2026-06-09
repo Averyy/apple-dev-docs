@@ -20,6 +20,10 @@ An interface for providing a dynamic visual representation of a specific type an
 protocol DisplayRepresentable : InstanceDisplayRepresentable, TypeDisplayRepresentable
 ```
 
+## Mentions
+
+- [Making app entities available in Spotlight](making-app-entities-available-in-spotlight.md)
+
 ## Relationships
 
 ### Inherits From
@@ -32,6 +36,8 @@ protocol DisplayRepresentable : InstanceDisplayRepresentable, TypeDisplayReprese
 - [AssistantSchemaEntity](assistantschemaentity.md)
 - [FileEntity](fileentity.md)
 - [IndexedEntity](indexedentity.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
+- [SyncableEntity](syncableentity.md)
 - [TransientAppEntity](transientappentity.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [UniqueAppEntity](uniqueappentity.md)
@@ -40,6 +46,7 @@ protocol DisplayRepresentable : InstanceDisplayRepresentable, TypeDisplayReprese
 - [IntentFile](intentfile.md)
 - [IntentPaymentMethod](intentpaymentmethod.md)
 - [IntentPerson](intentperson.md)
+- [SystemShortcut](systemshortcut.md)
 
 ## See Also
 

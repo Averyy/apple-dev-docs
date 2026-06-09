@@ -9,7 +9,7 @@ The title of the container to which the item belongs.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

@@ -88,16 +88,10 @@ print(airplane)
 ### Comparing Scalars
 - [static func == (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](unicode/scalar/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](unicode/scalar/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func < (Unicode.Scalar, Unicode.Scalar) -> Bool](unicode/scalar/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func <= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-13yar.md)
-  Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func > (Self, Self) -> Bool](unicode/scalar/_(_:_:)-1xeim.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](unicode/scalar/_=(_:_:)-7oywq.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 ### Creating Ranges of Scalars
 - [static func ... (Self) -> PartialRangeFrom<Self>](unicode/scalar/'...(_:)-9u9rz.md)
   Returns a partial range extending upward from a lower bound.

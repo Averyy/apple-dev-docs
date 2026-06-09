@@ -18,6 +18,10 @@ Tells the delegate that the scene is about to resign the active state and stop r
 optional func sceneWillResignActive(_ scene: UIScene)
 ```
 
+## Mentions
+
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+
 #### Discussion
 
 To use this method, you must implement the [`UISceneDelegate`](uiscenedelegate.md) protocol and configure scenes for your app (see [`Specifying the scenes your app supports`](specifying-the-scenes-your-app-supports.md)).

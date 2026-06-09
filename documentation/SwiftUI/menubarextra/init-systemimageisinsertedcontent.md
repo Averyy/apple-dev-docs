@@ -12,7 +12,7 @@ Creates a menu bar extra with a system image to use as the items label. The prov
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, isInserted: Binding<Bool>, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

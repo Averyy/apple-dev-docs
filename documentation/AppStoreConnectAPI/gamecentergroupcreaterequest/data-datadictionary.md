@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create a Game Center group.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -16,6 +18,7 @@ object GameCenterGroupCreateRequest.Data
 
 ### Objects
 - [object GameCenterGroupCreateRequest.Data.Attributes](gamecentergroupcreaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a group resource.
 
 ## Properties
 

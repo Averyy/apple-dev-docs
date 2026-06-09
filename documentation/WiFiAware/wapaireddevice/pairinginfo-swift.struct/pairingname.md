@@ -8,6 +8,7 @@ The human-readable name of the physical device as a person sees it during initia
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

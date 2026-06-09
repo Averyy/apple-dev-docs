@@ -26,10 +26,9 @@ Each selectable setting is associated with a media characteristic that one or mo
 
 ## Topics
 
-### Instance Properties
+### Identifying the setting
 - [var mediaCharacteristic: AVMediaCharacteristic](avmediapresentationsetting/mediacharacteristic.md)
   Provides the media characteristic that corresponds to the selectable setting.
-### Instance Methods
 - [func displayName(forLocaleIdentifier: String) -> String](avmediapresentationsetting/displayname(forlocaleidentifier:).md)
   Returns the display name for the selectable setting that best matches the specified locale identifier.
 

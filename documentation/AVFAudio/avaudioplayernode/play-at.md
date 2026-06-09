@@ -47,6 +47,8 @@ if (!nsErr) {
 
 - [func prepare(withFrameCount: AVAudioFrameCount)](avaudioplayernode/prepare(withframecount:).md)
   Prepares the file regions or buffers you schedule for playback.
+- [func playAudio() throws](avaudioplayernode/playaudio.md)
+- [func playAudio(at: AVAudioTime?) throws](avaudioplayernode/playaudio(at:).md)
 - [func play()](avaudioplayernode/play.md)
   Starts or resumes playback immediately.
 - [var isPlaying: Bool](avaudioplayernode/isplaying.md)

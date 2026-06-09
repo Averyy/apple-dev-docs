@@ -49,6 +49,8 @@ Support a Shared with You shelf in your app to visually represent shared items w
 - [Version string](version-string.md)
 ### Macros
 - [Macros](macros.md)
+### Variables
+- [let SWCopyRepresentationTypeIdentifier: String](swcopyrepresentationtypeidentifier.md)
 
 
 ---

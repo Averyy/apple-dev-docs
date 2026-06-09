@@ -78,11 +78,14 @@ byteArray += someBytes[n..<someBytes.count]
   Binds this buffer’s memory to the specified type and returns a typed buffer of the bound memory.
 - [func deallocate()](unsaferawbufferpointer/deallocate.md)
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
+- [func isTriviallyIdentical(to: UnsafeRawBufferPointer) -> Bool](unsaferawbufferpointer/istriviallyidentical(to:).md)
+  Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-2r9sy.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-95fln.md)
+- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsaferawbufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsaferawbufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the buffer to instances of type `T`.
 ### Default Implementations

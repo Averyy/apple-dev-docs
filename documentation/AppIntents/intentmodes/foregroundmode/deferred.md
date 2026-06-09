@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The system brings the app to the foreground while it performs the intent’s action or just before returning from its perform function.
+An option to bring the app to the foreground while running the intent’s action or shortly before the action completes.
 
 **Availability**:
 - iOS 26.0+
@@ -22,7 +22,7 @@ static var deferred: IntentModes.ForegroundMode { get }
 
 #### Discussion
 
-When you choose the `.deferred` foreground mode, explicitly bring your app to the foreground as part of your [`perform()`](appintent/perform().md) implementation or let the system bring it to the foreground before it returns the result of your `perform()` implementation.
+This option ensures the transition of the app to the foreground. Call the `AppIntent/continueInForeground(_:alwaysConfirm:) ` or [`needsToContinueInForegroundError(_:alwaysConfirm:)`](appintent/needstocontinueinforegrounderror(_:alwaysconfirm:).md) method from your intent’s [`perform()`](appintent/perform().md) method to transition to the foreground at the time you choose. If you don’t call one of these methods, the system transitions the app to the foreground at the end of your [`perform()`](appintent/perform().md) method.
 
 
 ---

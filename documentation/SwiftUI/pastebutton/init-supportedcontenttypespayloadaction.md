@@ -15,8 +15,8 @@ Creates a Paste button that accepts specific types of data from the pasteboard.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(supportedContentTypes: [UTType], payloadAction: @escaping ([NSItemProvider]) -> Void)
+nonisolated
+init(supportedContentTypes: [UTType], payloadAction: @escaping ([NSItemProvider]) -> Void)
 ```
 
 #### Discussion

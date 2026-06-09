@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a background asset upload file create request resource.
+The data wrapper for a background asset upload file create request.
 
 **Availability**:
 - App Store Connect API 4.0+

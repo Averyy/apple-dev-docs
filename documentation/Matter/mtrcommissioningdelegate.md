@@ -33,6 +33,8 @@ protocol MTRCommissioningDelegate : NSObjectProtocol
   Callback that gets called after various information (product identity, optionally endpoint structure information, optionally other attributes that were requested) has been read from the commissionee.
 - [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics)](mtrcommissioningdelegate/commissioning(_:succeededfornodeid:metrics:).md)
   Notification that commissioning has succeeded.
+- [func commissioning(MTRCommissioningOperation, succeededForNodeID: NSNumber, metrics: MTRMetrics, context: [String : Any])](mtrcommissioningdelegate/commissioning(_:succeededfornodeid:metrics:context:).md)
+  Notification that commissioning has succeeded.
 - [func commissioningProvisionedNetworkCredentials(MTRCommissioningOperation)](mtrcommissioningdelegate/commissioningprovisionednetworkcredentials(_:).md)
   Notification that network credentials have been successfully communicated to the commissionee and it’s going to try to join that network.  Note that for commissionees that are already on-network this notification will not happen.
 - [func commissioningStartingNetworkScan(MTRCommissioningOperation)](mtrcommissioningdelegate/commissioningstartingnetworkscan(_:).md)

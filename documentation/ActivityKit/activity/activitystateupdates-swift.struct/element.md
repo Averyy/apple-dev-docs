@@ -8,6 +8,7 @@ The type of element this asynchronous sequence produces.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

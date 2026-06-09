@@ -12,8 +12,6 @@ The command to remotely and immediately lock a device.
 - macOS 10.7+
 - visionOS 2.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object DeviceLockCommand
 
 ## Mentions
 
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

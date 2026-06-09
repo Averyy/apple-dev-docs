@@ -25,7 +25,7 @@ The convention is defined in normalized device coordinates, which impact the ren
 
 The axes are defined as: • X axes determines the horizontal direction of pixels – right convention means the left-most pixel is the left of the view • Y axes determines the vertical direction of pixels – up convention means the top-most pixel is the top of the view • Z axes determines the handedness/winding order The default convention is `rightUpBack` for CompositorServices and Metal renderers which has a counter-clockwise winding order.
 
-To avoid false positives during culling, transform should have broader tangents and depth range compared to one will be used for rendering. As the the time performing culling becomes more distant from `presentation time`, renderer should request for wider tangents/depth.
+To avoid false positives during culling, transform should have broader tangents and depth range compared to one will be used for rendering. As the time performing culling becomes more distant from `presentation time`, renderer should request for wider tangents/depth.
 
 ## Parameters
 

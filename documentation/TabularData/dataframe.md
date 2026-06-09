@@ -127,6 +127,11 @@ struct DataFrame
   Loads training examples from a data frame containing annotations.
 - [func selecting(ColumnSelection) -> DataFrame](dataframe/selecting(_:).md)
   Generates a data frame that includes only the column selection.
+### Subscripts
+- [subscript<T>(ResultColumn<T>) -> Column<T>](dataframe/subscript(_:)-4jbhp.md)
+  Accesses a result column by its typed descriptor.
+- [subscript(metric _: Metric) -> Column<Metric>](dataframe/subscript(metric:).md)
+  Accesses a metric column using the metric’s name
 ### Default Implementations
 - [CustomDebugStringConvertible Implementations](dataframe/customdebugstringconvertible-implementations.md)
 - [CustomReflectable Implementations](dataframe/customreflectable-implementations.md)

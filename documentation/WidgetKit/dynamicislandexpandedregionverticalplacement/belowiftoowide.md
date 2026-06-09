@@ -8,6 +8,7 @@ Vertical placement below the default vertical position for content that’s too 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
 - App Store Connect API 4.1+
 
@@ -16,6 +18,7 @@ object TerritoryAgeRating.Relationships
 
 ### Dictionaries
 - [object TerritoryAgeRating.Relationships.Territory](territoryagerating/relationships-data.dictionary/territory-data.dictionary.md)
+  The data that describes the Territory related to a age.
 
 ## Properties
 
@@ -24,6 +27,7 @@ object TerritoryAgeRating.Relationships
 ## See Also
 
 - [object TerritoryAgeRating.Attributes](territoryagerating/attributes-data.dictionary.md)
+  Attributes that describe a territory age rating resource.
 
 
 ---

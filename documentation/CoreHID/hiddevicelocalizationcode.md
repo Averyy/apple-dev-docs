@@ -99,7 +99,6 @@ For more details, see [`Human Interface Devices (HID) Specifications and Tools`]
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

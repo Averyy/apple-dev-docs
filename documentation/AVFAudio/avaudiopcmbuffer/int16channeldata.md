@@ -26,6 +26,12 @@ The `int16ChannelData` property returns the buffer’s audio samples if the buff
 
 ## See Also
 
+- [func channelData(Int) -> AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata(_:).md)
+  Returns read-only access to a specific channel’s data.
+- [func mutableChannelData(Int) -> AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata(_:).md)
+  Returns mutable access to a specific channel’s data.
+- [func withUnsafeAudioBufferList<R>((UnsafePointer<AudioBufferList>) throws -> R) rethrows -> R](avaudiopcmbuffer/withunsafeaudiobufferlist(_:).md)
+  Provides scoped read-only access to the audio buffer list.
 - [var floatChannelData: UnsafePointer<UnsafeMutablePointer<Float>>?](avaudiopcmbuffer/floatchanneldata.md)
   The buffer’s audio samples as floating point values.
 - [var frameCapacity: AVAudioFrameCount](avaudiopcmbuffer/framecapacity.md)
@@ -34,6 +40,10 @@ The `int16ChannelData` property returns the buffer’s audio samples if the buff
   The buffer’s 32-bit integer audio samples.
 - [var stride: Int](avaudiopcmbuffer/stride.md)
   The buffer’s number of interleaved channels.
+- [AVAudioPCMBuffer.ChannelData](avaudiopcmbuffer/channeldata.md)
+  Represents read-only channel data.
+- [AVAudioPCMBuffer.MutableChannelData](avaudiopcmbuffer/mutablechanneldata.md)
+  Represents mutable channel data.
 
 
 ---

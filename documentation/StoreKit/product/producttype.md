@@ -33,6 +33,9 @@ struct ProductType
   An auto-renewable subscription.
 ### Getting a Localized Description
 - [var localizedDescription: String](product/producttype/localizeddescription.md)
+### Type Properties
+- [static let subscriptionBundle: Product.ProductType](product/producttype/subscriptionbundle.md)
+- [static let subscriptionSuite: Product.ProductType](product/producttype/subscriptionsuite.md)
 
 ## Relationships
 

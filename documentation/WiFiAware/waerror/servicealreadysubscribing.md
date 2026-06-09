@@ -8,6 +8,7 @@ An error that occurs if a new subscriber or `Network/NetworkBrowser` can’t be 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

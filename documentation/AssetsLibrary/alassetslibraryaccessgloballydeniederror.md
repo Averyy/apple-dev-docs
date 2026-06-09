@@ -18,7 +18,7 @@ var ALAssetsLibraryAccessGloballyDeniedError: Int { get }
 
 #### Discussion
 
-This error may be returned in the [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md) block for [`enumerateGroups(withTypes:using:failureBlock:)`](alassetslibrary/enumerategroups(withtypes:using:failureblock:).md) and [`asset(for:resultBlock:failureBlock:)`](alassetslibrary/asset(for:resultblock:failureblock:).md).
+This error may be returned in the [`ALAssetsLibraryAccessFailureBlock`](alassetslibraryaccessfailureblock.md) block for `ALAssetsLibrary/enumerateGroups(withTypes:using:failureBlock:)` and `ALAssetsLibrary/asset(for:resultBlock:failureBlock:)`.
 
 ## See Also
 

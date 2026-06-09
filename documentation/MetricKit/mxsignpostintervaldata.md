@@ -51,8 +51,12 @@ class MXSignpostIntervalData
 
 ## See Also
 
-- [var signpostIntervalData: MXSignpostIntervalData?](mxsignpostmetric/signpostintervaldata.md)
-  The data captured for a custom metric.
+- [class MXSignpostMetric](mxsignpostmetric.md)
+  An object representing a custom metric.
+- [func mxSignpost(OSSignpostType, dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpost(_:dso:log:name:signpostid:_:_:).md)
+  Posts a single custom metric, the start time of a custom metric, or the end time of a custom metric to the log system.
+- [func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer, log: OSLog, name: StaticString, signpostID: OSSignpostID, StaticString, [any CVarArg])](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md)
+  Posts the start time of an animation interval to the log system.
 
 
 ---

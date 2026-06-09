@@ -22,6 +22,8 @@ The notification object is the instance of `NSMenu` containing the chosen menu i
 | --- | --- |
 | `@"MenuItem"` | The menu item that was chosen. |
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidSendActionMessage`](nsmenu/didsendactionmessage.md).
+
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

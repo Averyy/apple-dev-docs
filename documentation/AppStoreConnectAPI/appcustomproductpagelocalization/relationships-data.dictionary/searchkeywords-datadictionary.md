@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data and links that describe the Search Keywords related to an custom.
+The data and links that describe the search keywords related to a custom product page localization.
 
 **Availability**:
 - App Store Connect API 4.1+

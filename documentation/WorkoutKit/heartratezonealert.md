@@ -21,27 +21,11 @@ struct HeartRateZoneAlert
 ## Topics
 
 ### Creating new heart rate zone alerts
-- [static func heartRate(zone: Int) -> Self](heartratezonealert/heartrate(zone:).md)
-  Returns an alert for the specified heart rate zone.
 - [init(zone: Int)](heartratezonealert/init(zone:).md)
   Creates a new alert for the target heart rate zone.
 ### Accessing the alert data
-- [var metric: WorkoutAlertMetric](heartratezonealert/metric.md)
-  The metric for the alert.
 - [var zone: Int](heartratezonealert/zone.md)
   The target heart rate zone.
-### Comparing heart rate zone alerts
-- [var hashValue: Int](heartratezonealert/hashvalue.md)
-  The hashed value of the heart rate zone alert.
-- [func hash(into: inout Hasher)](heartratezonealert/hash(into:).md)
-  Hashes the essential components of the heart rate zone alert by feeding them into the given hash function.
-- [static func != (Self, Self) -> Bool](heartratezonealert/!=(_:_:).md)
-  Returns a Boolean value that indicates whether two heart rate zone alerts aren’t equal.
-- [static func == (HeartRateZoneAlert, HeartRateZoneAlert) -> Bool](heartratezonealert/==(_:_:).md)
-  Returns a Boolean value that indicates whether two heart rate zone alerts are equal.
-### Default Implementations
-- [Equatable Implementations](heartratezonealert/equatable-implementations.md)
-- [WorkoutAlert Implementations](heartratezonealert/workoutalert-implementations.md)
 
 ## Relationships
 

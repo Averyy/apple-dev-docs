@@ -34,6 +34,8 @@ The value is `-1` when the system can’t retrieve information from external sto
   The amount of free storage space, in bytes, that’s available on the external storage device.
 - [var isNotRecommendedForCaptureUse: Bool](avexternalstoragedevice/isnotrecommendedforcaptureuse.md)
   A Boolean value that indicates whether the external storage device is suitable for camera capture.
+- [var reasonsNotRecommendedForCaptureUse: Set<AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse>](avexternalstoragedevice/reasonsnotrecommendedforcaptureuse.md)
+- [AVExternalStorageDevice.ReasonNotRecommendedForCaptureUse](avexternalstoragedevice/reasonnotrecommendedforcaptureuse.md)
 
 
 ---

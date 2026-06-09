@@ -128,8 +128,12 @@ You can also query this object to find out about the supported camera models, de
 ### Initializers
 - [convenience init?(CVPixelBuffer: CVPixelBuffer, properties: [AnyHashable : Any])](cirawfilter/init(cvpixelbuffer:properties:)-6321o.md)
 ### Instance Properties
+- [var despeckleAmount: Float](cirawfilter/despeckleamount.md)
+- [var isDespeckleSupported: Bool](cirawfilter/isdespecklesupported.md)
 - [var isHighlightRecoveryEnabled: Bool](cirawfilter/ishighlightrecoveryenabled.md)
 - [var isHighlightRecoverySupported: Bool](cirawfilter/ishighlightrecoverysupported.md)
+### Type Methods
+- [class func supportedCameraModels(with: CIRAWDecoderVersion) -> [String]](cirawfilter/supportedcameramodels(with:).md)
 
 ## Relationships
 

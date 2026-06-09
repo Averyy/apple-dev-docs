@@ -31,6 +31,8 @@ For example, you might use these methods to restrict navigation from specific li
   Determines permission to navigate to new content after the response to the navigation request is known.
 - [func decidePolicy(for: WebPage.NavigationAction, preferences: inout WebPage.NavigationPreferences) async -> WKNavigationActionPolicy](webpage/navigationdeciding/decidepolicy(for:preferences:).md)
   Determines permission to navigate to new content based on the specified preferences and action information.
+- [func willSubmit(formInfo: WebPage.FormInfo) async](webpage/navigationdeciding/willsubmit(forminfo:).md)
+  Allow the application to process form autofill information before a form submission actually takes place.
 
 ## See Also
 

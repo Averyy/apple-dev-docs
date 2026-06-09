@@ -13,8 +13,6 @@ A dictionary that contains information about the organization operating the MDM 
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,7 +27,7 @@ object SettingsCommand.Command.Settings.OrganizationInfo.OrganizationInfo
 - `OrganizationMagic` (string): A unique identifier for the various services a single organization manages.
 - `OrganizationName` (string) *(required)*: A string that describes the organization operating the MDM server for display to the user during certain operations, such as purchasing or installing apps.
 - `OrganizationPhone` (string): The organization’s phone number.
-- `OrganizationShortName` (string): A shorter version of `OrganizationName`, preferably a single word or abbreviation, suitable for display to the user in places where a very short name is necessary.
+- `OrganizationShortName` (string): A shorter version of `OrganizationName`, preferably a single word or abbreviation, suitable for display to the user in places where a very short name is necessary. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | tvOS 13+ | visionOS 1.1+ | watchOS 10+
 
 
 ---

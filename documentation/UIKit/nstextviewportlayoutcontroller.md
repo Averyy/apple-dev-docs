@@ -18,6 +18,10 @@ Manages the layout process inside the viewport interacting with its delegate.
 class NSTextViewportLayoutController
 ```
 
+## Mentions
+
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+
 #### Overview
 
 A viewport is a rectangular area within a flipped coordinate system expanding along the y-axis. With text contents, lines advance expanding the view in the current writing direction. The viewport defines the active area where the framework lays out text fragments. In most cases, the area corresponds to the user visible area with an additional over-scroll region.
@@ -65,6 +69,8 @@ A viewport is a rectangular area within a flipped coordinate system expanding al
   Interact with text by managing text selection and inserting custom text elements.
 - [Display text with a custom layout](display-text-with-a-custom-layout.md)
   Lay out text in a custom-shaped container and apply glyph substitutions.
+- [Managing viewport layout and attachment reuse in text views](managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+  Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextLayoutManager](nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
 - [class NSTextContainer](nstextcontainer.md)
@@ -73,6 +79,10 @@ A viewport is a rectangular area within a flipped coordinate system expanding al
   A class that represents the layout fragment typically corresponding to a rendering surface, such as a layer or view subclass.
 - [class NSTextLineFragment](nstextlinefragment.md)
   A class that represents a line fragment as a single textual layout and rendering unit inside a text layout fragment.
+- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+  A protocol that identifies a view or layer as a drawable element for a text layout fragment.
+- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+  A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 - [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
 

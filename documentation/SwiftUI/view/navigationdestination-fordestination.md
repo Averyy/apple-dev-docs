@@ -18,7 +18,7 @@ Associates a destination view with a presented data type for use within a naviga
 
 ```swift
 nonisolated
-func navigationDestination<D, C>(for data: D.Type, @ViewBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
+func navigationDestination<D, C>(for data: D.Type, @ContentBuilder destination: @escaping (D) -> C) -> some View where D : Hashable, C : View
 ```
 
 ## Mentions
@@ -51,7 +51,7 @@ Do not put a navigation destination modifier inside a “lazy” container, like
 ## Parameters
 
 - `data`: The type of data that this destination matches.
-- `destination`: A view builder that defines a view to display when the stack’s navigation state contains a value of type `data`. The closure takes one argument, which is the value of the data to present.
+- `destination`: A content builder that defines a view to display when the stack’s navigation state contains a value of type `data`. The closure takes one argument, which is the value of the data to present.
 
 ## See Also
 

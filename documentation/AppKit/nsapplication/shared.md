@@ -28,7 +28,6 @@ This method also makes a connection to the window server and completes other ini
 
 ## See Also
 
-- [Mac App Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/General/Conceptual/MOSXAppProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010543)
 - [func run()](nsapplication/run.md)
   Starts the main event loop.
 - [func terminate(Any?)](nsapplication/terminate(_:).md)

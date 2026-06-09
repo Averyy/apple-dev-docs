@@ -9,7 +9,6 @@ Combines the argument captured rooms into a single unit.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS ?+
 
 ## Declaration
 

@@ -6,6 +6,10 @@
 An extra-large widget that uses a portrait orientation.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 27.0+ (Beta)
 - visionOS 26.0+
 
 ## Declaration
@@ -22,7 +26,7 @@ case systemExtraLargePortrait
 
 #### Discussion
 
-The `systemExtraLargePortrait` widget family is only available to visionOS apps. To add an extra-large visionOS widget to a compatible iOS and iPadOS app, use the `systemExtraLarge` widget family. The extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) widget of a visionOS app.
+The `systemExtraLargePortrait` widget family can appear on the Home Screen on iOS, on the Today View on iOS and iPadOS, on the Desktop on macOS, and on visionOS.  This extra-large widget appears in a portrait orientation, similar to the [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) widget of a visionOS app.
 
 ## See Also
 

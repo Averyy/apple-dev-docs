@@ -26,6 +26,8 @@ The notification’s [`object`](notification/object.md) is the [`HTTPCookieStora
 
 ## See Also
 
+- [HTTPCookieStorage.CookiesChangedMessage](httpcookiestorage/cookieschangedmessage.md)
+  A message a cookie storage instance sends when its cookies change.
 - [static let NSHTTPCookieManagerAcceptPolicyChanged: NSNotification.Name](nsnotification/name-swift.struct/nshttpcookiemanageracceptpolicychanged.md)
   A notification posted when the acceptance policy of the cookie storage has changed.
 

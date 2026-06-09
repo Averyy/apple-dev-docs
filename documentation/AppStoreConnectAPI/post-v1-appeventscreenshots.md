@@ -1,4 +1,4 @@
-# POST /v1/appEventScreenshots
+# Create an app event screenshot
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -13,8 +13,8 @@
 ## See Also
 
 - [List the Images for an In-App Event](get-v1-appeventscreenshots-_id_.md)
-- [PATCH /v1/appEventScreenshots/{id}](patch-v1-appeventscreenshots-_id_.md)
-- [Delete an App Event Screenshot](delete-v1-appeventscreenshots-_id_.md)
+- [Update an app event screenshot](patch-v1-appeventscreenshots-_id_.md)
+- [Delete an app event screenshot](delete-v1-appeventscreenshots-_id_.md)
   Delete a specific screenshot from an in-app event.
 
 

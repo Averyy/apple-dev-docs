@@ -16,6 +16,7 @@ object App.Relationships.AppStoreVersionExperimentsV2
 
 ### Objects
 - [object App.Relationships.AppStoreVersionExperimentsV2.Data](app/relationships-data.dictionary/appstoreversionexperimentsv2-data.dictionary/data-data.dictionary.md)
+  The type and ID of a related App Store version experiment resource.
 
 ## Properties
 

@@ -44,7 +44,7 @@ The [`CBCentralManagerDelegate`](cbcentralmanagerdelegate.md) protocol defines t
 - [func centralManagerDidUpdateState(CBCentralManager)](cbcentralmanagerdelegate/centralmanagerdidupdatestate(_:).md)
   Tells the delegate the central manager’s state updated.
 - [func centralManager(CBCentralManager, willRestoreState: [String : Any])](cbcentralmanagerdelegate/centralmanager(_:willrestorestate:).md)
-  Tells the delegate the system is about to restore the central manager, as part of relaunching the app into the background.
+  Tells the delegate the system is about to restore the central manager.
 ### Monitoring the Central Manager’s Authorization
 - [func centralManager(CBCentralManager, didUpdateANCSAuthorizationFor: CBPeripheral)](cbcentralmanagerdelegate/centralmanager(_:didupdateancsauthorizationfor:).md)
   Tells the delegate the authorization status changed for a ANCS-requiring connected peripheral.

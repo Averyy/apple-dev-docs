@@ -15,6 +15,7 @@ Creates an instance of the graphical date picker style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

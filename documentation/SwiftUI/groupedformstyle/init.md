@@ -17,6 +17,7 @@ Creates a form style with scrolling, grouped rows.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

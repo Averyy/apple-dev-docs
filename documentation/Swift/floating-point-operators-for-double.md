@@ -27,7 +27,7 @@ Perform arithmetic and bitwise operations or compare values.
 ### Comparison
 - [static func == (Self, Self) -> Bool](double/==(_:_:)-12hdv.md)
   Returns a Boolean value indicating whether two values are equal.
-- [static func != (Self, Self) -> Bool](double/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](double/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 ### Negation
 - [static func - (Double) -> Double](double/-(_:).md)

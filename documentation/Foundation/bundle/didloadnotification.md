@@ -36,6 +36,8 @@ In a typical use of this notification, an object might want to enumerate the `us
   The bundle’s principal class.
 - [let NSLoadedClasses: String](nsloadedclasses.md)
   A constant used as a key for the `userInfo` dictionary of a [`didLoadNotification`](bundle/didloadnotification.md) notification that corresponds to an array of names of each class that was loaded.
+- [Bundle.DidLoadMessage](bundle/didloadmessage.md)
+  A message a bundle sends when it dynamically loads a class.
 
 
 ---

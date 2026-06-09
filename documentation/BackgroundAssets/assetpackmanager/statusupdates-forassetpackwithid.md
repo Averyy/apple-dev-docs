@@ -23,6 +23,7 @@ func statusUpdates(forAssetPackWithID assetPackID: String) -> some Sendable & As
 ## Mentions
 
 - [Downloading Apple-hosted asset packs](downloading-apple-hosted-asset-packs.md)
+- [Reducing download and storage demands with localized asset packs](reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
 #### Return Value
 
@@ -42,8 +43,6 @@ The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.fin
   An asynchronous sequence of download-status updates for all asset packs.
 - [AssetPackManager.DownloadStatusUpdate](assetpackmanager/downloadstatusupdate.md)
   Statuses of an asset-pack download.
-- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
-  Checks an asset pack’s status.
 
 
 ---

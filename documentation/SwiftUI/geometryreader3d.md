@@ -12,7 +12,7 @@ A container view that defines its content as a function of its own size and coor
 
 ```swift
 @frozen
-struct GeometryReader3D<Content> where Content : View
+nonisolated struct GeometryReader3D<Content> where Content : View
 ```
 
 #### Overview

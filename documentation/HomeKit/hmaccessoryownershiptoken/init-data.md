@@ -8,7 +8,7 @@ Creates an ownership token from data.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
+- Mac Catalyst 27.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

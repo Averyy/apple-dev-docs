@@ -24,7 +24,7 @@ A Boolean value that indicates whether the packer can pack more extents.
 - `type`: The type of extent, indicating whether it contains valid data.
 - `logicalOffset`: The extent offset within the file, in bytes.
 - `physicalOffset`: The extent offset on disk, in bytes.
-- `length`: The extent length, in bytes.
+- `length`: The extent length, in bytes. The maximal valid length is `UINT32_MAX`.
 
 ## See Also
 

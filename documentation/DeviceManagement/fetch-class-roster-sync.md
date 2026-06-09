@@ -6,8 +6,7 @@
 Get updates about the list of classes the server manages.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.0+
 
 #### Discussion
 

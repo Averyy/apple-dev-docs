@@ -6,11 +6,7 @@
 Waits for the directory sync to complete, showing the sync’s progress in a modal alert.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
 - macOS 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

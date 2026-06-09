@@ -22,7 +22,7 @@ The named encoded glyph.
 
 Returns –1 if the glyph named `glyphName` isn’t encoded.
 
-Glyph names in fonts do not always accurately identify the glyph. The layout manager, an instance of [`NSLayoutManager`](nslayoutmanager.md), finds the correspondence between characters and glyphs. See [`Text Layout Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i) and [`NSLayoutManager`](nslayoutmanager.md) for more information.
+Glyph names in fonts do not always accurately identify the glyph. The layout manager, an instance of [`NSLayoutManager`](nslayoutmanager.md), finds the correspondence between characters and glyphs. See [`NSLayoutManager`](nslayoutmanager.md) for more information.
 
 ## Parameters
 

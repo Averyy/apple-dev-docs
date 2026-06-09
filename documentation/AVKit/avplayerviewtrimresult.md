@@ -16,13 +16,13 @@ enum AVPlayerViewTrimResult
 
 ## Topics
 
+### Creating a trim result
+- [init?(rawValue: Int)](avplayerviewtrimresult/init(rawvalue:).md)
 ### Trim Results
 - [AVPlayerViewTrimResult.okButton](avplayerviewtrimresult/okbutton.md)
   The user clicked the Trim button.
 - [AVPlayerViewTrimResult.cancelButton](avplayerviewtrimresult/cancelbutton.md)
   The user clicked the Cancel button.
-### Initializers
-- [init?(rawValue: Int)](avplayerviewtrimresult/init(rawvalue:).md)
 
 ## Relationships
 

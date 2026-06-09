@@ -16,7 +16,7 @@ func beginDraggingSession(with items: [NSDraggingItem], event: NSEvent, source: 
 
 #### Return Value
 
-The dragging session for the drag.
+The dragging session for the drag, , or `nil` if the method can’t start the session.
 
 #### Discussion
 
@@ -40,6 +40,8 @@ Once the drag is ended or cancelled, the source receives a [`draggingSession(_:e
   Unregisters the view as a possible destination in a dragging session.
 - [var registeredDraggedTypes: [NSPasteboard.PasteboardType]](nsview/registereddraggedtypes.md)
   The array of pasteboard drag types that the view can accept.
+- [func beginDraggingSession(items: [NSDraggingItem], gesture: NSGestureRecognizer, source: any NSDraggingSource) -> NSDraggingSession?](nsview/begindraggingsession(items:gesture:source:).md)
+  Initiates a drag operation using a gesture recognizer.
 - [func shouldDelayWindowOrdering(for: NSEvent) -> Bool](nsview/shoulddelaywindowordering(for:).md)
   Allows the user to drag objects from the view without activating the app or moving the window of the view forward, possibly obscuring the destination.
 

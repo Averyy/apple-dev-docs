@@ -23,6 +23,37 @@ func fileExporter<C>(isPresented: Binding<Bool>, documents: C, contentTypes: [UT
 
 In order for the dialog to appear, `isPresented` must be `true`. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCancellation` will be called.
 
+To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileExporterFilenameLabel(_:)`](view/fileexporterfilenamelabel(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
+
+For example, a button that exports a collection of documents and handles cancellation might look like this:
+
+```swift
+struct ExportAllButton: View {
+    @State private var isExporterPresented = false
+    var documents: [TextFile]
+
+    var body: some View {
+        Button("Export All") {
+            isExporterPresented = true
+        }
+        .fileExporter(
+            isPresented: $isExporterPresented,
+            documents: documents,
+            contentTypes: [.utf8PlainText]
+        ) { result in
+            switch result {
+            case .success(let urls):
+                urls.forEach { print("Saved to \($0)") }
+            case .failure(let error):
+                print(error)
+            }
+        } onCancellation: {
+            print("Export cancelled")
+        }
+    }
+}
+```
+
 ## Parameters
 
 - `isPresented`: A binding to whether the dialog should be shown.
@@ -34,15 +65,17 @@ In order for the dialog to appear, `isPresented` must be `true`. When the operat
 ## See Also
 
 - [func fileExporter(isPresented:document:contentType:defaultFilename:onCompletion:)](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:).md)
-  Presents a system interface for exporting a document that’s stored in a value type, like a structure, to a file on disk.
+  Presents a system dialog for exporting a document that’s stored in a value type, like a structure, to a file on disk.
 - [func fileExporter(isPresented:documents:contentType:onCompletion:)](view/fileexporter(ispresented:documents:contenttype:oncompletion:).md)
-  Presents a system interface for exporting a collection of value type documents to files on disk.
+  Presents a system dialog for exporting a collection of value type documents to files on disk.
+- [func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTType?, defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: (() -> Void)?) -> some View](view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:oncancellation:).md)
+  Presents a system dialog for allowing the user to export a `WritableDocument` to a file on disk.
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface for allowing the user to export a `FileDocument` to a file on disk.
+  Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a `Transferable` item to file on disk.
+  Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system interface allowing the user to export a collection of items to files on disk.
+  Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)
   On macOS, configures the `fileExporter` with a label for the file name field.
 

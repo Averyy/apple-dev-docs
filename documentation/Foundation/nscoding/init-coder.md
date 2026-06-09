@@ -4,6 +4,8 @@
 **Kind**: init  
 **Required**: Yes
 
+Initializes the receiver from data in a given unarchiver.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+

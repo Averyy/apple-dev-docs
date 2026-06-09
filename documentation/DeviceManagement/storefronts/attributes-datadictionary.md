@@ -6,8 +6,7 @@
 The attributes for the storefronts resource.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 

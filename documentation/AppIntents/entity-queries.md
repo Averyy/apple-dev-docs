@@ -2,7 +2,7 @@
 
 **Framework**: App Intents
 
-Help the system find the entities your app defines and use them to resolve parameters.
+Implement one or more query types to help the system find your app’s entities.
 
 #### Overview
 
@@ -14,7 +14,9 @@ The system can sometimes determine which entities it needs and provide you with 
 
 ### Identifier-based queries
 - [protocol EntityQuery](entityquery.md)
-  An interface for locating entities using their identifiers.
+  An interface for locating app entity instances by identifier.
+- [protocol IndexedEntityQuery](indexedentityquery.md)
+  An interface that adds Spotlight reindexing support to your entity query.
 - [protocol EnumerableEntityQuery](enumerableentityquery.md)
   An interface you use to provide a short list of entities that are relatively small in size.
 ### String-based queries
@@ -29,6 +31,7 @@ The system can sometimes determine which entities it needs and provide you with 
   An object that provides the supported comparators you use to describe the different ways users can query against a property of an app entity.
 - [Property comparators](property-comparators.md)
   Specify the type of comparison to perform during a property-matched query.
+### Sort options
 - [struct EntityQuerySortingOptions](entityquerysortingoptions.md)
   The potential properties you can use to sort the results of a query.
 - [struct EntityQuerySortableByProperty](entityquerysortablebyproperty.md)
@@ -40,23 +43,6 @@ The system can sometimes determine which entities it needs and provide you with 
   A query designed for only returning a single possible value, provided by `uniqueEntity`. Protocol extensions will provide the other required query methods based on that.
 - [struct UniqueAppEntityProvider](uniqueappentityprovider.md)
   A simplified query type conforming to `UniqueAppEntityQuery`.  Use this as the value of the `defaultQuery` of an entity conforming to `UniqueAppEntity`.
-
-## See Also
-
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-  Enable people to configure app intents with their custom input values.
-- [Parameter resolution](parameter-resolution.md)
-  Define the required parameters for your app intents and specify how to resolve those parameters at runtime.
-- [Resolvers](resolvers.md)
-  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
-- [Common data types](common-data-types.md)
-  Specify common types that your app supports, including currencies, files, and contacts.
-- [App entities](app-entities.md)
-  Make core types or concepts discoverable to the system by declaring them as app entities.
-- [Static parameter types](app-enums.md)
-  Types that represent an enumerable list of static parameter values.
-- [Property comparators](property-comparators.md)
-  Specify the type of comparison to perform during a property-matched query.
 
 
 ---

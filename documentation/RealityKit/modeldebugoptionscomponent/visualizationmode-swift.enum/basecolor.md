@@ -64,10 +64,10 @@ if let television = try? await ModelEntity(named: "tv_retro") {
   A mode that displays the emissive channel of a material as the surface color.
 - [ModelDebugOptionsComponent.VisualizationMode.clearcoat](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoat.md)
   A mode that displays the clearcoat channel of a material as the surface color.
+- [ModelDebugOptionsComponent.VisualizationMode.clearcoatNormal](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatnormal.md)
+  A mode that displays the clearcoat normal of a material as the surface color.
 - [ModelDebugOptionsComponent.VisualizationMode.clearcoatRoughness](modeldebugoptionscomponent/visualizationmode-swift.enum/clearcoatroughness.md)
   A mode that displays the clearcoat roughness channel of a material as the surface color.
-- [ModelDebugOptionsComponent.VisualizationMode.lightingDiffuse](modeldebugoptionscomponent/visualizationmode-swift.enum/lightingdiffuse.md)
-  A mode that displays the intensity of indirect light hitting the entity as its surface color.
 
 
 ---

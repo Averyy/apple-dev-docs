@@ -15,6 +15,7 @@ Creates and opens new documents.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ label: Text? = nil, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
 ```
 

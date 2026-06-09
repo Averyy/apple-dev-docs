@@ -18,7 +18,7 @@ Marks this view as searchable, which configures the display of a search field.
 
 ```swift
 nonisolated
-func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey, @ViewBuilder suggestions: () -> S) -> some View where S : View
+func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey, @ContentBuilder suggestions: () -> S) -> some View where S : View
 ```
 
 #### Discussion
@@ -30,7 +30,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 - `text`: The text to display and edit in the search field.
 - `placement`: Where the search field should attempt to be placed based on the containing view hierarchy.
 - `prompt`: A key for the localized prompt of the search field which provides users with guidance on what to search for.
-- `suggestions`: A view builder that produces content that populates a list of suggestions.
+- `suggestions`: A content builder that produces content that populates a list of suggestions.
 
 
 ---

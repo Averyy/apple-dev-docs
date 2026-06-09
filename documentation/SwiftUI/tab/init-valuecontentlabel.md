@@ -18,7 +18,7 @@ Creates a new tab with a label that you can use in a tab view.
 
 ```swift
 nonisolated
-init(value: Value, @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label)
+init(value: Value, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

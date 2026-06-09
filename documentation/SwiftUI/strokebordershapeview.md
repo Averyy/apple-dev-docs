@@ -18,7 +18,7 @@ A shape provider that strokes the border of its shape.
 
 ```swift
 @frozen
-struct StrokeBorderShapeView<Content, Style, Background> where Content : InsettableShape, Style : ShapeStyle, Background : View
+nonisolated struct StrokeBorderShapeView<Content, Style, Background> where Content : InsettableShape, Style : ShapeStyle, Background : View
 ```
 
 #### Overview

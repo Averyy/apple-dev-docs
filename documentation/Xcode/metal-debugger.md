@@ -12,6 +12,8 @@ Unlike pausing at breakpoints during runtime, you can capture your Metal workloa
 
 In addition, the Metal debugger displays your Metal workload on a profiling timeline and offers detailed statistics like performance counters and per-line shader profiling data. These tools can help you identify and eliminate performance bottlenecks in your app (see [`Optimizing GPU performance`](optimizing-gpu-performance.md)).
 
+To investigate GPU traces from the command line, use `gpudebug`, an interactive terminal-based debugger. Because its interface is text-based and self-discoverable, AI agents can run it autonomously to navigate traces, inspect state, and fetch resources to diagnose rendering issues without human intervention. For more information, see [`Investigating GPU issues with AI agents`](investigating-gpu-issues-with-ai-agents.md).
+
 ![A screenshot of the Metal debugger showing the bound resources and attachments for a draw command.](https://docs-assets.developer.apple.com/published/a7cba2f6c40a790c84564b5ed827fa13/gputools-metal-debugger-hero%402x.png)
 
 For additional information about the Metal debugger, see the following video sessions:
@@ -35,6 +37,10 @@ For additional information about the Metal debugger, see the following video ses
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
 - [Optimizing GPU performance](optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
+- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+  Investigate rendering issues in GPU traces without leaving the Terminal.
+- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+  Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 ### Metal workload analysis
 - [Analyzing your Metal workload](analyzing-your-metal-workload.md)
   Investigate your app’s workload, dependencies, performance, and memory impact using the Metal debugger.

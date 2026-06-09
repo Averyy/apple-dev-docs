@@ -139,6 +139,8 @@ To conditionally disable item reordering on a specific row, set [`moveDisabled(_
 
 - [Adopting drag and drop using SwiftUI](adopting-drag-and-drop-using-swiftui.md)
   Enable drag-and-drop interactions in lists, tables and custom views.
+- [Reordering items in lists, stacks, grids, and custom layouts](reordering-items-in-lists-stacks-grids-and-custom-layouts.md)
+  Add drag-to-reorder interactions to SwiftUI layouts using reordering modifiers.
 
 
 ---

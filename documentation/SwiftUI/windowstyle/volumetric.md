@@ -31,8 +31,6 @@ A volume enables someone to view content from all angles, unlike other windows w
 
 You can specify a size for the volume using one of the default size scene modifiers, like [`defaultSize(width:height:depth:in:)`](scene/defaultsize(width:height:depth:in:).md). Because volumes use fixed scale, it’s typically convenient to specify a size in physical units — like meters, as the above code demonstrates. People can’t change the size of the volume after it appears.
 
-> **Note**: Use this style only with [`WindowGroup`](windowgroup.md). Windows that you create using [`Window`](window.md) don’t support the volumetric window style.
-
 For design guidance, see [`Windows`](https://developer.apple.com/design/Human-Interface-Guidelines/windows#Volumes) in the Human Interface Guidelines. If you want to place 3D objects arbitrarily throughout the Shared Space or in a Full Space, use an [`ImmersiveSpace`](immersivespace.md) instead.
 
 ## See Also

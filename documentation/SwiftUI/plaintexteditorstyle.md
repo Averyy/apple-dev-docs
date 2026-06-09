@@ -15,6 +15,7 @@ A text editor style with no decoration.
 ## Declaration
 
 ```swift
+nonisolated
 struct PlainTextEditorStyle
 ```
 

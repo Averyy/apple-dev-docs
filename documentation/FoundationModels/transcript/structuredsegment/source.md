@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A source that be used to understand which type content represents.
+A source that can be used to understand which type the content represents.
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +11,7 @@ A source that be used to understand which type content represents.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,8 @@ var source: String
 
 - [var content: GeneratedContent](transcript/structuredsegment/content.md)
   The content of the segment.
+- [var schemaName: String](transcript/structuredsegment/schemaname.md)
+  A name that can be used to understand which type the content represents.
 
 
 ---

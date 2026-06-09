@@ -6,8 +6,7 @@
 Provides a list of beta enrollment tokens available for the given organization.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- Device Assignment Services 5.1+
 
 ## Declaration
 

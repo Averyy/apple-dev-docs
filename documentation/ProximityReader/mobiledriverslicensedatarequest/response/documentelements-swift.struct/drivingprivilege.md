@@ -9,7 +9,6 @@ A type that represents a driving privilege which the mobile driver’s license h
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- visionOS 1.0+
 
 ## Declaration
 

@@ -93,9 +93,13 @@ Create the application object before you use the methods in this class, so that 
 ### Synchronizing with the display’s refresh rate
 - [func displayLink(target: Any, selector: Selector) -> CADisplayLink](nsscreen/displaylink(target:selector:).md)
   Returns a new display link whose callback will be invoked in-sync with the display the screen is on.
+### Structures
+- [NSScreen.ColorSpaceDidChangeMessage](nsscreen/colorspacedidchangemessage.md)
+- [NSScreen.TouchCapabilities](nsscreen/touchcapabilities-swift.struct.md)
 ### Instance Properties
 - [var cgDirectDisplayID: CGDirectDisplayID?](nsscreen/cgdirectdisplayid-8ph5i.md)
   The CGDirectDisplayID for this screen. This will return nil if there isn’t one and will never return kCGNullDirectDisplay.
+- [var touchCapabilities: NSScreen.TouchCapabilities](nsscreen/touchcapabilities-swift.property.md)
 
 ## Relationships
 

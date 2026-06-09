@@ -30,6 +30,8 @@ static func -= (lhs: inout Date, rhs: TimeInterval)
   Adds a time interval to this date.
 - [func addingTimeInterval(TimeInterval) -> Date](date/addingtimeinterval(_:).md)
   Creates a new date value by adding a time interval to this date.
+- [func advanced(by: TimeInterval) -> Date](date/advanced(by:).md)
+  Returns a date offset the specified time interval from this date.
 - [static func + (Date, TimeInterval) -> Date](date/+(_:_:).md)
   Returns a date with a specified amount of time added to it.
 - [static func += (inout Date, TimeInterval)](date/+=(_:_:).md)

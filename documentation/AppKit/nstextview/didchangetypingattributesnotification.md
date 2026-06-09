@@ -18,6 +18,8 @@ class let didChangeTypingAttributesNotification: NSNotification.Name
 
 This notification is posted, via the [`textViewDidChangeTypingAttributes(_:)`](nstextviewdelegate/textviewdidchangetypingattributes(_:).md) delegate method, whether or not text has changed as a result of the attribute change.
 
+To observe this notification using Swift concurrency, use [`NSTextView.DidChangeTypingAttributesMessage`](nstextview/didchangetypingattributesmessage.md).
+
 ## See Also
 
 - [class let didChangeSelectionNotification: NSNotification.Name](nstextview/didchangeselectionnotification.md)

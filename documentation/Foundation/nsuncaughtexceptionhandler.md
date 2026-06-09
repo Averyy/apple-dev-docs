@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: typealias
 
+The type for uncaught exception handler functions.
+
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+

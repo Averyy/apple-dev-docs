@@ -24,11 +24,6 @@ static func == (x: Self, y: Self) -> Bool
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 
-## See Also
-
-- [static func != (Self, Self) -> Bool](autoreleasingunsafemutablepointer/!=(_:_:)-1bazr.md)
-  Returns a Boolean value indicating whether two values are not equal.
-
 
 ---
 

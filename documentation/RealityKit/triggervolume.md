@@ -37,8 +37,12 @@ The trigger volume itself is very simple. It lacks any physical appearance, and 
   Creates a trigger volume with the given shape and collision filter.
 - [init(shapes: [ShapeResource], filter: CollisionFilter)](triggervolume/init(shapes:filter:).md)
   Creates a trigger volume with the given composite shape and collision filter.
+### Accessing the collision component
+- [var collision: CollisionComponent?](hascollision/collision.md)
+  The collision component that gives the entity the ability to participate in collision simulations.
 ### Detecting collisions
-- [Detecting collisions](triggervolume#Detecting-collisions.md)
+- [Configuring Collision in RealityKit](configuring-collision-in-realitykit.md)
+  Use collision groups and collision filters to control which objects collide.
 
 ## Relationships
 

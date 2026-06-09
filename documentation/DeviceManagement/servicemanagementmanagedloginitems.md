@@ -7,8 +7,6 @@ This payload that configures managed login items, which auto-enables and auto-al
 
 **Availability**:
 - macOS 13.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,11 +23,11 @@ Specify `com.apple.servicemanagement` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
-| Allow manual install | NA |
-| Requires supervision | NA |
+| User channel | N/A |
+| Allow manual install | N/A |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
 ##### Profile Example

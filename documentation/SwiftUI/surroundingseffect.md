@@ -46,6 +46,8 @@ Use one of these values with the [`preferredSurroundingsEffect(_:)`](view/prefer
 
 - [func preferredSurroundingsEffect(SurroundingsEffect?) -> some View](view/preferredsurroundingseffect(_:).md)
   Applies an effect to passthrough video.
+- [func breakthroughEffect(BreakthroughEffect) -> some View](view/breakthrougheffect(_:).md)
+  Ensures that the view is always visible to the user, even when other content is occluding it, like 3D models.
 - [struct BreakthroughEffect](breakthrougheffect.md)
 
 

@@ -11,7 +11,7 @@ Spacing to add around the annotation when showing items.
 ## Declaration
 
 ```swift
-padding?: Padding;
+padding?: PaddingData;
 ```
 
 #### Discussion

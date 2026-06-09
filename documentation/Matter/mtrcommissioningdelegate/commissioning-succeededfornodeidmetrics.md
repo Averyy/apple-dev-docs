@@ -20,6 +20,10 @@ Notification that commissioning has succeeded.
 optional func commissioning(_ commissioning: MTRCommissioningOperation, succeededForNodeID nodeID: NSNumber, metrics: MTRMetrics)
 ```
 
+#### Discussion
+
+This selector will not be used if commissioning:succeededForNodeID:metrics:context: is supported.
+
 
 ---
 

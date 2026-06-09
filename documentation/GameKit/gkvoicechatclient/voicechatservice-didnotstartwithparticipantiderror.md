@@ -6,6 +6,9 @@
 Received by the client when an attempt to establish a voice chat with another participant failed.
 
 **Availability**:
+- iOS 3.0+
+- iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

@@ -23,6 +23,15 @@ func markupEditViewController(_ markupEditViewController: MarkupEditViewControll
 - `markupEditViewController`: The source of the action.
 - `type`: The type of shape.
 
+## See Also
+
+- [func markupEditViewControllerInsertNewTextbox(MarkupEditViewController)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontrollerinsertnewtextbox(_:).md)
+  Add a new textbox on top of the paper.
+- [func markupEditViewController(MarkupEditViewController, insertNewLineWithStartMarker: Bool, endMarker: Bool)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewlinewithstartmarker:endmarker:).md)
+  Add a new line on top of the paper.
+- [func markupEditViewController(MarkupEditViewController, insertNewContents: PaperMarkup)](markupeditviewcontroller/delegate-swift.protocol/markupeditviewcontroller(_:insertnewcontents:).md)
+  Add new content on top of the paper.
+
 
 ---
 

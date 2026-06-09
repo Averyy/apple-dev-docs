@@ -25,6 +25,8 @@ struct NumberingSystem
 ### Creating a numbering system instance
 - [init(String)](locale/numberingsystem-swift.struct/init(_:).md)
   Creates a numbering system instance from a BCP 47 identifier.
+- [init(stringLiteral: String)](locale/numberingsystem-swift.struct/init(stringliteral:).md)
+  Creates a numbering system instance from a BCP 47 identifier as a string literal.
 ### Examining numbering system properties
 - [var identifier: String](locale/numberingsystem-swift.struct/identifier.md)
   The numbering system’s BCP 47 identifier.

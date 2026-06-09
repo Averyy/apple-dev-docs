@@ -13,8 +13,6 @@ The payload that configures a PKCS #12-formatted certificate.
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -45,8 +43,8 @@ It’s recommended to omit the password in the profile, or do one of the followi
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS |
 | Allow manual install | iOS, macOS, tvOS, visionOS, watchOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
@@ -158,8 +156,8 @@ It’s recommended to omit the password in the profile, or do one of the followi
 
 ## Properties
 
-- `AllowAllAppsAccess` (boolean): If `true`, the system allows apps access to the private key. Available in macOS 10.10 and later.
-- `KeyIsExtractable` (boolean): If `false`, the system doesn’t tag the private key data as extractable in the keychain.
+- `AllowAllAppsAccess` (boolean): If `true`, the system allows apps access to the private key. Available: macOS 10.10+
+- `KeyIsExtractable` (boolean): If `false`, the system doesn’t tag the private key data as extractable in the keychain. Available: macOS 10.15+
 - `Password` (string): The password to the identity.
 - `PayloadCertificateFileName` (string): The file name of the enclosed certificate.
 - `PayloadContent` (data) *(required)*: The binary representation of the payload, encoded in Base64.

@@ -18,7 +18,7 @@ An empty, or identity, modifier, used during development to switch modifiers at 
 
 ```swift
 @frozen
-struct EmptyModifier
+nonisolated struct EmptyModifier
 ```
 
 #### Overview

@@ -16,6 +16,7 @@ object SubscriptionPromotionalOfferInlineCreate.Relationships.Prices
 
 ### Objects
 - [object SubscriptionPromotionalOfferInlineCreate.Relationships.Prices.Data](subscriptionpromotionalofferinlinecreate/relationships-data.dictionary/prices-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a subscription promotional offer inline create.
 
 ## Properties
 

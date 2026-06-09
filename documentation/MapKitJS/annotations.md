@@ -22,11 +22,11 @@ A callout is a standard or custom element that can give more information about a
 
 | Event | Interface | Summary |
 | --- | --- | --- |
-| `select` | [`MapKitEvent`](mapkitevent.md) | MapKit JS sets the annotation’s selected property to `true`. |
-| `deselect` | [`MapKitEvent`](mapkitevent.md) | MapKit JS sets the annotation’s selected property to `false`. |
-| `drag-start` | [`MapKitEvent`](mapkitevent.md) | The user initiates a drag for an annotation. A long press or click without movement isn’t a drag. |
+| `select` | `Event` | MapKit JS sets the annotation’s selected property to `true`. |
+| `deselect` | `Event` | MapKit JS sets the annotation’s selected property to `false`. |
+| `drag-start` | `Event` | The user initiates a drag for an annotation. A long press or click without movement isn’t a drag. |
 | `dragging` | [`AnnotationDragEvent`](annotationdragevent.md) | The user is dragging an annotation. This event has an extra coordinate property for the coordinate of the annotation at the time the event occurs. Note: This is different from the annotation’s own coordinate property because that property doesn’t update until the user drops the annotation. |
-| `drag-end` | [`MapKitEvent`](mapkitevent.md) | The user ends a drag for an annotation. |
+| `drag-end` | `Event` | The user ends a drag for an annotation. |
 
 ## Topics
 
@@ -48,15 +48,13 @@ A callout is a standard or custom element that can give more information about a
 ### Customize annotations
 - [interface AnnotationCalloutDelegate](annotationcalloutdelegate.md)
   Methods for customizing the behavior and appearance of an annotation callout.
-- [const CollisionMode](collisionmode.md)
-  Constants that indicate whether an annotation collides and how to interpret the collision-frame rectangle of an annotation view.
-- [const DisplayPriority](displaypriority.md)
-  Constant values that provide a hint the map uses to prioritize displaying annotations.
+- [const AnnotationCollisionMode](annotationcollisionmode.md)
+  Constants that indicate the collision mode for an annotation.
+- [const AnnotationDisplayPriority](annotationdisplaypriority.md)
+  Constants that indicate the priority for displaying annotations on the map.
 - [interface Size](size.md)
   A structure that represents a size.
 ### Events
-- [class MapKitEvent](mapkitevent.md)
-  A generic MapKit JS event object.
 - [class AnnotationDragEvent](annotationdragevent.md)
   An event that occurs when someone drags an annotation.
 

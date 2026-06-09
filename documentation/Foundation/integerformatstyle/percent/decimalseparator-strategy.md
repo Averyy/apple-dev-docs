@@ -32,6 +32,8 @@ An integer percent format style modified to use the specified decimal separator 
 
 - [func grouping(IntegerFormatStyle<Value>.Percent.Configuration.Grouping) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/grouping(_:).md)
   Modifies the format style to use the specified grouping.
+- [func locale(Locale) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/locale(_:).md)
+  Modifies the format style to use the specified locale.
 - [func notation(IntegerFormatStyle<Value>.Percent.Configuration.Notation) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/notation(_:).md)
   Modifies the format style to use the specified notation.
 - [func precision(IntegerFormatStyle<Value>.Percent.Configuration.Precision) -> IntegerFormatStyle<Value>.Percent](integerformatstyle/percent/precision(_:).md)

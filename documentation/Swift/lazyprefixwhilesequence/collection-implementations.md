@@ -62,7 +62,7 @@
 ### Subscripts
 - [subscript(LazyPrefixWhileSequence<Base>.Index) -> LazyPrefixWhileSequence<Base>.Element](lazyprefixwhilesequence/subscript(_:).md)
   Accesses the element at the specified position.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](lazyprefixwhilesequence/subscript(_:)-1oo1v.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](lazyprefixwhilesequence/subscript(_:)-1oo1v.md)
 - [subscript(Range<Self.Index>) -> Slice<Self>](lazyprefixwhilesequence/subscript(_:)-59k49.md)
   Accesses a contiguous subrange of the collection’s elements.
 - [subscript(RangeSet<Self.Index>) -> DiscontiguousSlice<Self>](lazyprefixwhilesequence/subscript(_:)-75yeo.md)

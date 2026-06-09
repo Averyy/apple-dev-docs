@@ -16,7 +16,7 @@ array intersection(array[array[any]] $sets)
 
 ##### Parameters
 
-- **`sets`**: An array of arrays that the function converts to sets and then intersects with each other.
+-`sets`: An array of arrays that the function converts to sets and then intersects with each other.
 
 ##### Return Value
 

@@ -11,7 +11,7 @@ An event that represents a change in a person’s location.
 ## Declaration
 
 ```swift
-class MapUserLocationChangeEvent extends MapKitEvent
+class MapUserLocationChangeEvent extends Event
 ```
 
 #### Discussion
@@ -31,7 +31,7 @@ MapKit JS sends this event when [`showsUserLocation`](map/showsuserlocation.md) 
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

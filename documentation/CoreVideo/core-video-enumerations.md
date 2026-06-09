@@ -5,9 +5,9 @@
 ## Topics
 
 ### Enumerations
-- [Anonymous](anonymous-jbs3.md)
-- [Anonymous](anonymous-3k9gq.md)
-- [Anonymous](anonymous-1csf0.md)
+- [Versatile bayer patterns](versatile-bayer-patterns.md)
+- [Lossless Pixel Formats](lossless-pixel-formats.md)
+- [Lossy Pixel Formats](lossy-pixel-formats.md)
 
 ## See Also
 

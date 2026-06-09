@@ -9,7 +9,6 @@ A yearly aggregated insight record for at least one calendar year.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

@@ -9,7 +9,6 @@ A structure that describes the environmental impact of grid electricity during s
 - iOS 26.1+
 - iPadOS 26.1+
 - Mac Catalyst ?+
-- macOS 26.1+
 
 ## Declaration
 

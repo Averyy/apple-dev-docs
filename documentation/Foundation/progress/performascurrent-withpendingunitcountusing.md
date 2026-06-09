@@ -39,8 +39,6 @@ Use this function as a convenience method to wrap an existing method or block to
   Returns the progress instance, if any.
 - [func becomeCurrent(withPendingUnitCount: Int64)](progress/becomecurrent(withpendingunitcount:).md)
   Sets the progress object as the current object of the current thread, and assigns the amount of work for the next suboperation progress object to perform.
-- [func addChild(Progress, withPendingUnitCount: Int64)](progress/addchild(_:withpendingunitcount:).md)
-  Adds a process object as a suboperation of a progress tree.
 - [func resignCurrent()](progress/resigncurrent.md)
   Restores the previous progress object to become the current progress object on the thread.
 

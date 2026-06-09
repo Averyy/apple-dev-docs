@@ -16,6 +16,7 @@ object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreensho
 
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization.Relationships.AppScreenshotSets.Data](appstoreversionexperimenttreatmentlocalization/relationships-data.dictionary/appscreenshotsets-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app store version experiment treatment localization.
 
 ## Properties
 

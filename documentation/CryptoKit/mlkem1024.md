@@ -27,6 +27,8 @@ enum MLKEM1024
   A private key you use to decapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
 - [MLKEM1024.PublicKey](mlkem1024/publickey.md)
   A public key you use to encapsulate shared secrets with the Module-Lattice key encapsulation mechanism.
+### Structures
+- [MLKEM1024.OneTimePrivateKey](mlkem1024/onetimeprivatekey.md)
 
 ## Relationships
 

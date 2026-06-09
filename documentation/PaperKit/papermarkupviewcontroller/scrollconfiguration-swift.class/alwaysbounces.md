@@ -1,0 +1,35 @@
+# alwaysBounces
+
+**Framework**: PaperKit  
+**Kind**: property
+
+The axes for which bouncing always occurs when scrolling reaches the end of the content.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+final var alwaysBounces: PaperMarkupViewController.ScrollConfiguration.Axis { get set }
+```
+
+#### Discussion
+
+If an axis is included and `bounces` includes that axis, bouncing occurs even if content is smaller than bounds for that axis. Default is `[]`.
+
+## See Also
+
+- [var bounces: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/bounces.md)
+  The axes for which the scroll view bounces past the edge of content and back again.
+- [var bouncesZoom: Bool](papermarkupviewcontroller/scrollconfiguration-swift.class/bounceszoom.md)
+  A Boolean value that controls whether the scroll view animates the content scaling when the scaling exceeds the maximum or minimum limits.
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/paperkit/papermarkupviewcontroller/scrollconfiguration-swift.class/alwaysbounces)*

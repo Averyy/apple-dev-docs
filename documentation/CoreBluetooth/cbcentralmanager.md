@@ -38,7 +38,7 @@ Before calling the [`CBCentralManager`](cbcentralmanager.md) methods, set the st
 - [Central Manager Initialization Options](central-manager-initialization-options.md)
   Keys used to pass options when initializing a central manager.
 - [Central Manager State Restoration Options](central-manager-state-restoration-options.md)
-  Keys used to pass state restoration options to the central manager initializer.
+  Restore central manager state in scene-based apps.
 ### Establishing or Canceling Connections with Peripherals
 - [func connect(CBPeripheral, options: [String : Any]?)](cbcentralmanager/connect(_:options:).md)
   Establishes a local connection to a peripheral.

@@ -1,0 +1,1369 @@
+{
+  "metadata": {
+    "last_updated": "2026-06-09T07:30:43.078449",
+    "total_pages": 170,
+    "session_id": "2026-06-09T07:30:34.015940"
+  },
+  "hashes": {
+    "https://developer.apple.com/tutorials/data/documentation/TrustInsights.json": {
+      "hash": "443cb7fac9f7904de1f720449043f74e5c46e8b78f30b0222cd72c36761b6a52",
+      "last_checked": "2026-06-09T07:30:34.253105",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e3e80516bd2aa195dd70a0d4a7431f04\"",
+      "file_path": "documentation/TrustInsights/TrustInsights.md"
+    },
+    "https://developer.apple.com/documentation/TrustInsights": {
+      "hash": "443cb7fac9f7904de1f720449043f74e5c46e8b78f30b0222cd72c36761b6a52",
+      "last_checked": "2026-06-09T07:30:34.155120",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e3e80516bd2aa195dd70a0d4a7431f04\"",
+      "file_path": "documentation/TrustInsights/TrustInsights.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/requestauthorization(for:).json": {
+      "hash": "9434523872c99adf416287a051a3e3a16c8d633612fe861e8d54fbe548a194ef",
+      "last_checked": "2026-06-09T07:30:34.552451",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"efe30b68cb856ddc9026800df2e41c80\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization-for.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/requestauthorization(for:)": {
+      "hash": "9434523872c99adf416287a051a3e3a16c8d633612fe861e8d54fbe548a194ef",
+      "last_checked": "2026-06-09T07:30:34.552537",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"efe30b68cb856ddc9026800df2e41c80\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestauthorization-for.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus(for:).json": {
+      "hash": "458d56fa0412a2292496b5e9261333424744492fec91ee30239a2ee6ac5d41b6",
+      "last_checked": "2026-06-09T07:30:34.662478",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e4db6bdbd80f9aedfb77a2afb6919ad3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus-for.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus(for:)": {
+      "hash": "458d56fa0412a2292496b5e9261333424744492fec91ee30239a2ee6ac5d41b6",
+      "last_checked": "2026-06-09T07:30:34.662581",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e4db6bdbd80f9aedfb77a2afb6919ad3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus-for.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus.json": {
+      "hash": "9c5249e828af49ccbd552db27e17e36afb4f0c02905cb7d368df67e896a2417b",
+      "last_checked": "2026-06-09T07:30:34.769664",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"df620591361f8cf7ac7c2b10e130a4cf\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus": {
+      "hash": "9c5249e828af49ccbd552db27e17e36afb4f0c02905cb7d368df67e896a2417b",
+      "last_checked": "2026-06-09T07:30:34.769760",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"df620591361f8cf7ac7c2b10e130a4cf\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/init().json": {
+      "hash": "716874781e98faeb527adab97677b49801496f6b41c94cd7830560b163655255",
+      "last_checked": "2026-06-09T07:30:34.861792",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"075410291227aa3e892ca9e42f2fa957\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/init.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/init()": {
+      "hash": "716874781e98faeb527adab97677b49801496f6b41c94cd7830560b163655255",
+      "last_checked": "2026-06-09T07:30:34.861856",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"075410291227aa3e892ca9e42f2fa957\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/init.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator.json": {
+      "hash": "d60f49e3a453e12978a4cf6067305d2b3ec13af00eedf7ede5a46b6f6c7f60f6",
+      "last_checked": "2026-06-09T07:30:34.962878",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b3e9ebd1d39420351912bc705c29400b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator": {
+      "hash": "d60f49e3a453e12978a4cf6067305d2b3ec13af00eedf7ede5a46b6f6c7f60f6",
+      "last_checked": "2026-06-09T07:30:34.962990",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b3e9ebd1d39420351912bc705c29400b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/requestevaluation(context:).json": {
+      "hash": "1f0ed2df6fa870a115295cb42ac49995019c2ae3d4eb5dacda49c202da94fcc3",
+      "last_checked": "2026-06-09T07:30:35.069169",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2ae933aba77cd494fcd21cf3c839afa7\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation-context.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/requestevaluation(context:)": {
+      "hash": "1f0ed2df6fa870a115295cb42ac49995019c2ae3d4eb5dacda49c202da94fcc3",
+      "last_checked": "2026-06-09T07:30:35.069249",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2ae933aba77cd494fcd21cf3c839afa7\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/requestevaluation-context.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation.json": {
+      "hash": "3e7975da4925db5e3668528415873f774973a7a792288ef34a2597d8b78165af",
+      "last_checked": "2026-06-09T07:30:35.185184",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f67f4e3a00c7657b3c35c26441847637\"",
+      "file_path": "documentation/TrustInsights/insightevaluation.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation": {
+      "hash": "3e7975da4925db5e3668528415873f774973a7a792288ef34a2597d8b78165af",
+      "last_checked": "2026-06-09T07:30:35.185270",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f67f4e3a00c7657b3c35c26441847637\"",
+      "file_path": "documentation/TrustInsights/insightevaluation.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight.json": {
+      "hash": "ac3c8ed14a708c6217afc5836b7f703d96c7d2bb8f0c3d4653e6e93b8e75a5dc",
+      "last_checked": "2026-06-09T07:30:35.289382",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f6fc53406e31594c1cc7b25da0f6c170\"",
+      "file_path": "documentation/TrustInsights/trustinsight.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight": {
+      "hash": "ac3c8ed14a708c6217afc5836b7f703d96c7d2bb8f0c3d4653e6e93b8e75a5dc",
+      "last_checked": "2026-06-09T07:30:35.289481",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f6fc53406e31594c1cc7b25da0f6c170\"",
+      "file_path": "documentation/TrustInsights/trustinsight.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight.json": {
+      "hash": "36f852907cb937a86835c85d562ccc45162133b1451daf05b54b3d857e897663",
+      "last_checked": "2026-06-09T07:30:35.391254",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"356564c26d20f4189ee61aaee3aee607\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight": {
+      "hash": "36f852907cb937a86835c85d562ccc45162133b1451daf05b54b3d857e897663",
+      "last_checked": "2026-06-09T07:30:35.391335",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"356564c26d20f4189ee61aaee3aee607\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus.json": {
+      "hash": "f07338d655f4478748a0165fe0ebed2aa3805e3cf5945386271b29c6ccab2691",
+      "last_checked": "2026-06-09T07:30:35.511525",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"cd3a7e8f8910c7bdfc607ad27144a145\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus": {
+      "hash": "f07338d655f4478748a0165fe0ebed2aa3805e3cf5945386271b29c6ccab2691",
+      "last_checked": "2026-06-09T07:30:35.511615",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"cd3a7e8f8910c7bdfc607ad27144a145\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror.json": {
+      "hash": "b8067924e59e5fed32597604d7a21d80760fea08df119fa17bb69a90b3248aa9",
+      "last_checked": "2026-06-09T07:30:35.607876",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"76d2650f4f14897c3e689e945ce13581\"",
+      "file_path": "documentation/TrustInsights/insighterror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror": {
+      "hash": "b8067924e59e5fed32597604d7a21d80760fea08df119fa17bb69a90b3248aa9",
+      "last_checked": "2026-06-09T07:30:35.607969",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"76d2650f4f14897c3e689e945ce13581\"",
+      "file_path": "documentation/TrustInsights/insighterror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/reportconsumption(_:insightidsused:).json": {
+      "hash": "802cf330b1612b582f53c6ecf3a3a8b68d869b057c524ebb8fd223c365ba3ddc",
+      "last_checked": "2026-06-09T07:30:35.711757",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"dac77b36bf3ce52ccedd4701da2c6ace\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightidsused.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/reportconsumption(_:insightidsused:)": {
+      "hash": "802cf330b1612b582f53c6ecf3a3a8b68d869b057c524ebb8fd223c365ba3ddc",
+      "last_checked": "2026-06-09T07:30:35.711841",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"dac77b36bf3ce52ccedd4701da2c6ace\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightidsused.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/reportconsumption(_:insightsused:).json": {
+      "hash": "902eaa34ce3e0dfc3a92be50e4e3dc89d9837b2a9f42580686a9a4b82578afde",
+      "last_checked": "2026-06-09T07:30:35.811014",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"30c52b80370df185761f32fc0aa7406d\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightsused.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/reportconsumption(_:insightsused:)": {
+      "hash": "902eaa34ce3e0dfc3a92be50e4e3dc89d9837b2a9f42580686a9a4b82578afde",
+      "last_checked": "2026-06-09T07:30:35.811105",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"30c52b80370df185761f32fc0aa7406d\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/reportconsumption-insightsused.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus/authorized.json": {
+      "hash": "0b6f3332dd4ae0a5e01deb3f190e79d6eb65b64bd40986559022f1b5345a0f27",
+      "last_checked": "2026-06-09T07:30:35.918790",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"94a850db21f35534802c5478ad66554c\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/authorized.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/authorized": {
+      "hash": "0b6f3332dd4ae0a5e01deb3f190e79d6eb65b64bd40986559022f1b5345a0f27",
+      "last_checked": "2026-06-09T07:30:35.918870",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"94a850db21f35534802c5478ad66554c\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/authorized.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus/denied.json": {
+      "hash": "4e244692275da7bad85f6fea7369baf0fb297d05651476dbf594d2104e80c1f8",
+      "last_checked": "2026-06-09T07:30:36.016967",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b8458301ed3db56004c53f480f49fbcf\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/denied.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/denied": {
+      "hash": "4e244692275da7bad85f6fea7369baf0fb297d05651476dbf594d2104e80c1f8",
+      "last_checked": "2026-06-09T07:30:36.017042",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b8458301ed3db56004c53f480f49fbcf\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/denied.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus/deniedrequestable.json": {
+      "hash": "1f25aeac0ad72e8ea7db215b48a73e514a3c58bd1e6269cb3426a348d54206ad",
+      "last_checked": "2026-06-09T07:30:36.118058",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5d3c21789dba16bba124fe5374acd6e4\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/deniedrequestable.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/deniedrequestable": {
+      "hash": "1f25aeac0ad72e8ea7db215b48a73e514a3c58bd1e6269cb3426a348d54206ad",
+      "last_checked": "2026-06-09T07:30:36.118136",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5d3c21789dba16bba124fe5374acd6e4\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/deniedrequestable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus/notdetermined.json": {
+      "hash": "f2064cc494c9c347f3eb63ea4bb2226a5f7f22220affd97f8fe3c3145ed946c4",
+      "last_checked": "2026-06-09T07:30:36.218623",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"a852a17ed34e5cd9a3b5deb87e2be9b0\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/notdetermined.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/notdetermined": {
+      "hash": "f2064cc494c9c347f3eb63ea4bb2226a5f7f22220affd97f8fe3c3145ed946c4",
+      "last_checked": "2026-06-09T07:30:36.218714",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"a852a17ed34e5cd9a3b5deb87e2be9b0\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/notdetermined.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/authorizationstatus/unavailable.json": {
+      "hash": "3762eff8246af3e886ba01dfef26e2712402aef549eb879df582c2d244d2f53d",
+      "last_checked": "2026-06-09T07:30:36.360158",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3fb46770ca7841f4ec8bc3bad312959b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/unavailable.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/authorizationstatus/unavailable": {
+      "hash": "3762eff8246af3e886ba01dfef26e2712402aef549eb879df582c2d244d2f53d",
+      "last_checked": "2026-06-09T07:30:36.360236",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3fb46770ca7841f4ec8bc3bad312959b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/authorizationstatus/unavailable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext.json": {
+      "hash": "3d3143b4f065483b56846e66529564c8fa51f66677a99eb07fa5e5549c7c894f",
+      "last_checked": "2026-06-09T07:30:36.469115",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"41d8e01748fd45862ec57faf1878e888\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext": {
+      "hash": "3d3143b4f065483b56846e66529564c8fa51f66677a99eb07fa5e5549c7c894f",
+      "last_checked": "2026-06-09T07:30:36.469220",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"41d8e01748fd45862ec57faf1878e888\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest.json": {
+      "hash": "b9b92195a3245fe54a6297e6700438a880a55c9fd3bca4f3dda13dd2bcc516ca",
+      "last_checked": "2026-06-09T07:30:36.574451",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"fb9f7fc4488685381c44fe967a6c1db3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest": {
+      "hash": "b9b92195a3245fe54a6297e6700438a880a55c9fd3bca4f3dda13dd2bcc516ca",
+      "last_checked": "2026-06-09T07:30:36.574531",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"fb9f7fc4488685381c44fe967a6c1db3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequestprotocol.json": {
+      "hash": "6b9287996eac89a314adac6edc6b56615934bb068782f24c58bb60a6c5af6b19",
+      "last_checked": "2026-06-09T07:30:36.684376",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"246c9ff08c5393bbb4a85d308c986a28\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequestprotocol.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequestprotocol": {
+      "hash": "6b9287996eac89a314adac6edc6b56615934bb068782f24c58bb60a6c5af6b19",
+      "last_checked": "2026-06-09T07:30:36.684457",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"246c9ff08c5393bbb4a85d308c986a28\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequestprotocol.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror.json": {
+      "hash": "8db7698963230dac86d7769f611049f0f22aae1b97e404c9bba4e5bb3fcbd630",
+      "last_checked": "2026-06-09T07:30:36.795367",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"17b6b302776cf131515377cc5decd6c0\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror": {
+      "hash": "8db7698963230dac86d7769f611049f0f22aae1b97e404c9bba4e5bb3fcbd630",
+      "last_checked": "2026-06-09T07:30:36.795462",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"17b6b302776cf131515377cc5decd6c0\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/modelversion.json": {
+      "hash": "92e5400089dd922a3a5ccb0a6bf8e03dec94d17f480ffc79179bfa9bb602e787",
+      "last_checked": "2026-06-09T07:30:36.903104",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"442bc1c63d87da1c37638b3c2b7477e6\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/modelversion": {
+      "hash": "92e5400089dd922a3a5ccb0a6bf8e03dec94d17f480ffc79179bfa9bb602e787",
+      "last_checked": "2026-06-09T07:30:36.903190",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"442bc1c63d87da1c37638b3c2b7477e6\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory.json": {
+      "hash": "e7c1b1d71e30f942088aa19588e821d5449c420c77a311f1629e9e24673a90a8",
+      "last_checked": "2026-06-09T07:30:37.072388",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3d4d0a620b39c0836af4029a3c21465f\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory": {
+      "hash": "e7c1b1d71e30f942088aa19588e821d5449c420c77a311f1629e9e24673a90a8",
+      "last_checked": "2026-06-09T07:30:37.072482",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3d4d0a620b39c0836af4029a3c21465f\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/additionalinfo.json": {
+      "hash": "a08ad8dacc5c5701aadb14fd783cffc87d869a8c7a9f194b6311c2e872ec2e2a",
+      "last_checked": "2026-06-09T07:30:37.172026",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e7fcb8056aaca5e39fde795e775f1f12\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/additionalinfo.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/additionalinfo": {
+      "hash": "a08ad8dacc5c5701aadb14fd783cffc87d869a8c7a9f194b6311c2e872ec2e2a",
+      "last_checked": "2026-06-09T07:30:37.172107",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e7fcb8056aaca5e39fde795e775f1f12\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/additionalinfo.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/generationtimestamp.json": {
+      "hash": "5d2e6ded846fb065cf9c49db00e2f6b950e9a7994c41ba2f251c7a5e26d8b93d",
+      "last_checked": "2026-06-09T07:30:37.273117",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d9a606cf2562ea166fbf0654cd22708f\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/generationtimestamp.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/generationtimestamp": {
+      "hash": "5d2e6ded846fb065cf9c49db00e2f6b950e9a7994c41ba2f251c7a5e26d8b93d",
+      "last_checked": "2026-06-09T07:30:37.273193",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d9a606cf2562ea166fbf0654cd22708f\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/generationtimestamp.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/insight.json": {
+      "hash": "55b270ac86c7d90e6bbd388164710ce7355675c9df9c3243851df0aebcf381ee",
+      "last_checked": "2026-06-09T07:30:37.370846",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"0442417557cb1aa861c53aa86e20a00e\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/insight.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/insight": {
+      "hash": "55b270ac86c7d90e6bbd388164710ce7355675c9df9c3243851df0aebcf381ee",
+      "last_checked": "2026-06-09T07:30:37.370949",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"0442417557cb1aa861c53aa86e20a00e\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/insight.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/requestid.json": {
+      "hash": "ea19c8ae6b3031b853ec2b695f3043aba968260d0541729ed8d1b1c71315e4fd",
+      "last_checked": "2026-06-09T07:30:37.491108",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"6aa6784330e8d310a7edb8df9f068552\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/requestid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/requestid": {
+      "hash": "ea19c8ae6b3031b853ec2b695f3043aba968260d0541729ed8d1b1c71315e4fd",
+      "last_checked": "2026-06-09T07:30:37.491191",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"6aa6784330e8d310a7edb8df9f068552\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/requestid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/servertimestamp.json": {
+      "hash": "6fc629c063206e94f7d58123bd53aa744feca836eef9c2e4717dfd7ac9e2c993",
+      "last_checked": "2026-06-09T07:30:37.601084",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ee523f761def48d8584286dd2470b229\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/servertimestamp.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/servertimestamp": {
+      "hash": "6fc629c063206e94f7d58123bd53aa744feca836eef9c2e4717dfd7ac9e2c993",
+      "last_checked": "2026-06-09T07:30:37.601161",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ee523f761def48d8584286dd2470b229\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/servertimestamp.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluation/signedpayload.json": {
+      "hash": "cd6decd4cae1e30f191b729323fb2be5213eb47a743589d3f31a90183c09d48c",
+      "last_checked": "2026-06-09T07:30:37.695924",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5df509456f83c735edaaa9f070d1a83a\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/signedpayload.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluation/signedpayload": {
+      "hash": "cd6decd4cae1e30f191b729323fb2be5213eb47a743589d3f31a90183c09d48c",
+      "last_checked": "2026-06-09T07:30:37.696006",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5df509456f83c735edaaa9f070d1a83a\"",
+      "file_path": "documentation/TrustInsights/insightevaluation/signedpayload.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/schemaversion.json": {
+      "hash": "80fc8ea9cc86332008ca84e9d7686416b23da31edb5b760737d63d93469072fd",
+      "last_checked": "2026-06-09T07:30:37.789649",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ca2844c464c4748d59d92d5bbd1130bf\"",
+      "file_path": "documentation/TrustInsights/trustinsight/schemaversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/schemaversion": {
+      "hash": "80fc8ea9cc86332008ca84e9d7686416b23da31edb5b760737d63d93469072fd",
+      "last_checked": "2026-06-09T07:30:37.789718",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ca2844c464c4748d59d92d5bbd1130bf\"",
+      "file_path": "documentation/TrustInsights/trustinsight/schemaversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/value.json": {
+      "hash": "551676f0e6f021636c26c2b46b36b199b150b841e2db097530acb4598d46576b",
+      "last_checked": "2026-06-09T07:30:37.896300",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"255311ed59606870e6fb8903d6390c50\"",
+      "file_path": "documentation/TrustInsights/trustinsight/value.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/value": {
+      "hash": "551676f0e6f021636c26c2b46b36b199b150b841e2db097530acb4598d46576b",
+      "last_checked": "2026-06-09T07:30:37.896368",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"255311ed59606870e6fb8903d6390c50\"",
+      "file_path": "documentation/TrustInsights/trustinsight/value.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/insightid.json": {
+      "hash": "d41d6323d932fad0e7e2fabc79aef5526acccf5e393dc98d2a4097fa2360cfef",
+      "last_checked": "2026-06-09T07:30:37.990846",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"4ea0874c19d84831a7fcbdea48a32532\"",
+      "file_path": "documentation/TrustInsights/trustinsight/insightid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/insightid": {
+      "hash": "d41d6323d932fad0e7e2fabc79aef5526acccf5e393dc98d2a4097fa2360cfef",
+      "last_checked": "2026-06-09T07:30:37.990936",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"4ea0874c19d84831a7fcbdea48a32532\"",
+      "file_path": "documentation/TrustInsights/trustinsight/insightid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/isusingcurrentmodel.json": {
+      "hash": "c3ba9a239893ff5c2f0186f9dcc4a1d538e40756f3594b88f576fbeff15c4b9d",
+      "last_checked": "2026-06-09T07:30:38.100227",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d1fd56bca8a620a994a5a8462a671813\"",
+      "file_path": "documentation/TrustInsights/trustinsight/isusingcurrentmodel.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/isusingcurrentmodel": {
+      "hash": "c3ba9a239893ff5c2f0186f9dcc4a1d538e40756f3594b88f576fbeff15c4b9d",
+      "last_checked": "2026-06-09T07:30:38.100304",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d1fd56bca8a620a994a5a8462a671813\"",
+      "file_path": "documentation/TrustInsights/trustinsight/isusingcurrentmodel.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/modelversion.json": {
+      "hash": "a66d44bf37da15fee081f6a3c1199d29eec62519f1c838115cff420dfb34e77f",
+      "last_checked": "2026-06-09T07:30:38.205280",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"154f4fddf81be369940dac8588d8068b\"",
+      "file_path": "documentation/TrustInsights/trustinsight/modelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/modelversion": {
+      "hash": "a66d44bf37da15fee081f6a3c1199d29eec62519f1c838115cff420dfb34e77f",
+      "last_checked": "2026-06-09T07:30:38.205356",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"154f4fddf81be369940dac8588d8068b\"",
+      "file_path": "documentation/TrustInsights/trustinsight/modelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/newestmodelversion.json": {
+      "hash": "fc074d0a96d9b1fc68d8b18229ba16911e0fdf5a0f65a318543797a78274c20a",
+      "last_checked": "2026-06-09T07:30:38.319772",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e1bb8ca363267b143f4537820bb8bc29\"",
+      "file_path": "documentation/TrustInsights/trustinsight/newestmodelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/newestmodelversion": {
+      "hash": "fc074d0a96d9b1fc68d8b18229ba16911e0fdf5a0f65a318543797a78274c20a",
+      "last_checked": "2026-06-09T07:30:38.319848",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"e1bb8ca363267b143f4537820bb8bc29\"",
+      "file_path": "documentation/TrustInsights/trustinsight/newestmodelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/outcome.json": {
+      "hash": "8382f9eb742d9f8fe107ec6fd363998c85b914b43e052a565d039cc3a08c42a4",
+      "last_checked": "2026-06-09T07:30:38.430065",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"0e4103572b5726ee0768703a5b1cd860\"",
+      "file_path": "documentation/TrustInsights/trustinsight/outcome.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/outcome": {
+      "hash": "8382f9eb742d9f8fe107ec6fd363998c85b914b43e052a565d039cc3a08c42a4",
+      "last_checked": "2026-06-09T07:30:38.430145",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"0e4103572b5726ee0768703a5b1cd860\"",
+      "file_path": "documentation/TrustInsights/trustinsight/outcome.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/typeidentifier.json": {
+      "hash": "0c61067d6acb202cc2bec29f0b16cb4a76a7663c1061f2cedee73fd7833952ce",
+      "last_checked": "2026-06-09T07:30:38.524362",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7a1a391e2511c586c46ff1c5e01f7d19\"",
+      "file_path": "documentation/TrustInsights/trustinsight/typeidentifier.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/typeidentifier": {
+      "hash": "0c61067d6acb202cc2bec29f0b16cb4a76a7663c1061f2cedee73fd7833952ce",
+      "last_checked": "2026-06-09T07:30:38.524429",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7a1a391e2511c586c46ff1c5e01f7d19\"",
+      "file_path": "documentation/TrustInsights/trustinsight/typeidentifier.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/trustinsight/request(schema:modelversion:).json": {
+      "hash": "9f76541314f62901217cda0226a54f5e22840e93d3896a67308e8bb354f7f64c",
+      "last_checked": "2026-06-09T07:30:38.622866",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7a05ae59aa3b30d83b5cd2a7d237d855\"",
+      "file_path": "documentation/TrustInsights/trustinsight/request-schemamodelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/trustinsight/request(schema:modelversion:)": {
+      "hash": "9f76541314f62901217cda0226a54f5e22840e93d3896a67308e8bb354f7f64c",
+      "last_checked": "2026-06-09T07:30:38.622966",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7a05ae59aa3b30d83b5cd2a7d237d855\"",
+      "file_path": "documentation/TrustInsights/trustinsight/request-schemamodelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/insightid.json": {
+      "hash": "6c43ee4bebfef31b7b7e52b64f4e6829528050a432743a3756bb12f9e03f35d7",
+      "last_checked": "2026-06-09T07:30:38.725508",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ea16c01f537dd3565e9d24649bb0d736\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/insightid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/insightid": {
+      "hash": "6c43ee4bebfef31b7b7e52b64f4e6829528050a432743a3756bb12f9e03f35d7",
+      "last_checked": "2026-06-09T07:30:38.725581",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ea16c01f537dd3565e9d24649bb0d736\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/insightid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/modelversion.json": {
+      "hash": "195a22c9196c54be871ef261571c2f7f23f3d64d7aecafd790fc1d4250973cfb",
+      "last_checked": "2026-06-09T07:30:38.825499",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"426c3a4a7bad44bdd7966d2b092dd163\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/modelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/modelversion": {
+      "hash": "195a22c9196c54be871ef261571c2f7f23f3d64d7aecafd790fc1d4250973cfb",
+      "last_checked": "2026-06-09T07:30:38.825574",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"426c3a4a7bad44bdd7966d2b092dd163\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/modelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/newestmodelversion.json": {
+      "hash": "00f3525b916cb9391da5326c2a8d3c65a71c1679d1def9f9348a6bdd8ee70a5e",
+      "last_checked": "2026-06-09T07:30:38.918822",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3ac31f680d013146517789cf8c1cc250\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/newestmodelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/newestmodelversion": {
+      "hash": "00f3525b916cb9391da5326c2a8d3c65a71c1679d1def9f9348a6bdd8ee70a5e",
+      "last_checked": "2026-06-09T07:30:38.918933",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3ac31f680d013146517789cf8c1cc250\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/newestmodelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/outcome.json": {
+      "hash": "d63bcecd49e77b5e9d4cd9e5596ed39b2fa68a6c7d62d7a08ee15e5b42d00a91",
+      "last_checked": "2026-06-09T07:30:39.020308",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b3c40e0cb0e3e0388eb55e1de39d2e75\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/outcome.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/outcome": {
+      "hash": "d63bcecd49e77b5e9d4cd9e5596ed39b2fa68a6c7d62d7a08ee15e5b42d00a91",
+      "last_checked": "2026-06-09T07:30:39.020385",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"b3c40e0cb0e3e0388eb55e1de39d2e75\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/outcome.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/schemaversion.json": {
+      "hash": "8a88fc91601df6e59f3f6fbf38f728cc43329d86f6ecf63fb123bd01766a505c",
+      "last_checked": "2026-06-09T07:30:39.129878",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"552b70abfd18c3ab4d2e06f3556502dd\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/schemaversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/schemaversion": {
+      "hash": "8a88fc91601df6e59f3f6fbf38f728cc43329d86f6ecf63fb123bd01766a505c",
+      "last_checked": "2026-06-09T07:30:39.129978",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"552b70abfd18c3ab4d2e06f3556502dd\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/schemaversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/value.json": {
+      "hash": "9f28d3b124ffcd9497420daccd73613519250fda9b7ac8c46d9678038041f2d9",
+      "last_checked": "2026-06-09T07:30:39.233932",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"21ba92b01d85e9ba3f23c94bf03276f8\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/value": {
+      "hash": "9f28d3b124ffcd9497420daccd73613519250fda9b7ac8c46d9678038041f2d9",
+      "last_checked": "2026-06-09T07:30:39.234020",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"21ba92b01d85e9ba3f23c94bf03276f8\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/notusederror.json": {
+      "hash": "6fa74d621a289c205876725fe5839ebcdcdf83e6ffe740422ef9e0e82cb632e2",
+      "last_checked": "2026-06-09T07:30:39.335434",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"eb649b55b22c62bd64d6464ea055e6fb\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/notusederror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/notusederror": {
+      "hash": "6fa74d621a289c205876725fe5839ebcdcdf83e6ffe740422ef9e0e82cb632e2",
+      "last_checked": "2026-06-09T07:30:39.335503",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"eb649b55b22c62bd64d6464ea055e6fb\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/notusederror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/notusednotneeded.json": {
+      "hash": "c6d7a9f660da91c59a85d15efe1f2ffde2a8ff06b5d6f19d423e2517b7ce5b7f",
+      "last_checked": "2026-06-09T07:30:39.431557",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ef1efd9255c2e1c5565696e5ef23f66e\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/notusednotneeded.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/notusednotneeded": {
+      "hash": "c6d7a9f660da91c59a85d15efe1f2ffde2a8ff06b5d6f19d423e2517b7ce5b7f",
+      "last_checked": "2026-06-09T07:30:39.431632",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"ef1efd9255c2e1c5565696e5ef23f66e\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/notusednotneeded.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/usedevaluationonly.json": {
+      "hash": "8234c756418970cc62e2210c55e2d59f9c216f70f3e29eb0a823bc5b50db51b2",
+      "last_checked": "2026-06-09T07:30:39.531470",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"244678865bf17ebb48445d8c7968841c\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedevaluationonly.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/usedevaluationonly": {
+      "hash": "8234c756418970cc62e2210c55e2d59f9c216f70f3e29eb0a823bc5b50db51b2",
+      "last_checked": "2026-06-09T07:30:39.531547",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"244678865bf17ebb48445d8c7968841c\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedevaluationonly.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/usedincreasedfriction.json": {
+      "hash": "2d6c5df8fdfef684407d2309d9258af4d6fa3ecf0bd5067c9f4e610bb95637a3",
+      "last_checked": "2026-06-09T07:30:39.636851",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f0d283be6f6df02831642707406ec292\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedincreasedfriction.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/usedincreasedfriction": {
+      "hash": "2d6c5df8fdfef684407d2309d9258af4d6fa3ecf0bd5067c9f4e610bb95637a3",
+      "last_checked": "2026-06-09T07:30:39.636949",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"f0d283be6f6df02831642707406ec292\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedincreasedfriction.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/usedreducedfriction.json": {
+      "hash": "e0fca7e5c26bae8bd585932e45db4a72442ae42c53cb499fcffa41a1761832ce",
+      "last_checked": "2026-06-09T07:30:39.750992",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"677eb8e04b004753463d1108ae2890cb\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedreducedfriction.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/usedreducedfriction": {
+      "hash": "e0fca7e5c26bae8bd585932e45db4a72442ae42c53cb499fcffa41a1761832ce",
+      "last_checked": "2026-06-09T07:30:39.751077",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"677eb8e04b004753463d1108ae2890cb\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedreducedfriction.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluationconsumptionstatus/usedunchangedfriction.json": {
+      "hash": "0bb5416c81d4c2b0b18bd05231c5842ed16604a2b21ef081bcba573acc4dd881",
+      "last_checked": "2026-06-09T07:30:39.846656",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"728b4eb728c385905cec4665d3089a0d\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedunchangedfriction.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluationconsumptionstatus/usedunchangedfriction": {
+      "hash": "0bb5416c81d4c2b0b18bd05231c5842ed16604a2b21ef081bcba573acc4dd881",
+      "last_checked": "2026-06-09T07:30:39.846727",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"728b4eb728c385905cec4665d3089a0d\"",
+      "file_path": "documentation/TrustInsights/insightevaluationconsumptionstatus/usedunchangedfriction.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror/insightevaluationfailed.json": {
+      "hash": "636f481be7bef1bf05ffacfabde5c4f50d0e4bb0afc566941ecb32bcb4a6edbf",
+      "last_checked": "2026-06-09T07:30:39.945774",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c5d5e14d95584e221de6370b432b1604\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightevaluationfailed.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror/insightevaluationfailed": {
+      "hash": "636f481be7bef1bf05ffacfabde5c4f50d0e4bb0afc566941ecb32bcb4a6edbf",
+      "last_checked": "2026-06-09T07:30:39.945851",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c5d5e14d95584e221de6370b432b1604\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightevaluationfailed.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror/insightunavailable.json": {
+      "hash": "4aa2093bebbb73f250606b3009e194706e29df7b501f1a5690a805bba537401f",
+      "last_checked": "2026-06-09T07:30:40.042712",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"53978d0267028c51258f68a732edafa8\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightunavailable.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror/insightunavailable": {
+      "hash": "4aa2093bebbb73f250606b3009e194706e29df7b501f1a5690a805bba537401f",
+      "last_checked": "2026-06-09T07:30:40.042782",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"53978d0267028c51258f68a732edafa8\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightunavailable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror/insightversionincompatible.json": {
+      "hash": "7587ba7e1143e8c05d6107376a641240c2d05a520a073739d5b094d196a42993",
+      "last_checked": "2026-06-09T07:30:40.136343",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"956433e98bf03a0ac7cac9beca629fb5\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightversionincompatible.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror/insightversionincompatible": {
+      "hash": "7587ba7e1143e8c05d6107376a641240c2d05a520a073739d5b094d196a42993",
+      "last_checked": "2026-06-09T07:30:40.136420",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"956433e98bf03a0ac7cac9beca629fb5\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightversionincompatible.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror/insightversionunavailable.json": {
+      "hash": "88c32e1307155f2d1cdb2cd76f7f1d95eb9b7d28948bee37b193d42db2e48b78",
+      "last_checked": "2026-06-09T07:30:40.230245",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d6e90902f7c6c2b8ec4f6b95db0c7aec\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightversionunavailable.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror/insightversionunavailable": {
+      "hash": "88c32e1307155f2d1cdb2cd76f7f1d95eb9b7d28948bee37b193d42db2e48b78",
+      "last_checked": "2026-06-09T07:30:40.230337",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d6e90902f7c6c2b8ec4f6b95db0c7aec\"",
+      "file_path": "documentation/TrustInsights/insighterror/insightversionunavailable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insighterror/ratelimiterror.json": {
+      "hash": "3b2b8271c964660b5af779fbaf781dede21aa261f9b4ee3950da920c55fac714",
+      "last_checked": "2026-06-09T07:30:40.330463",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"957df0d81e96fc9d0653933d3095593a\"",
+      "file_path": "documentation/TrustInsights/insighterror/ratelimiterror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insighterror/ratelimiterror": {
+      "hash": "3b2b8271c964660b5af779fbaf781dede21aa261f9b4ee3950da920c55fac714",
+      "last_checked": "2026-06-09T07:30:40.330533",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"957df0d81e96fc9d0653933d3095593a\"",
+      "file_path": "documentation/TrustInsights/insighterror/ratelimiterror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/init(operationcategory:requestedevaluations:).json": {
+      "hash": "4b5018d21d76f5ed6108bd680a190e1957f96c8e8984aaf49cc4fc5982d0c41e",
+      "last_checked": "2026-06-09T07:30:40.427058",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c6fc16a4ff15602368822d10e130b24f\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init-operationcategoryrequestedevaluations.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/init(operationcategory:requestedevaluations:)": {
+      "hash": "4b5018d21d76f5ed6108bd680a190e1957f96c8e8984aaf49cc4fc5982d0c41e",
+      "last_checked": "2026-06-09T07:30:40.427134",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c6fc16a4ff15602368822d10e130b24f\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/init-operationcategoryrequestedevaluations.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/operationcategory.json": {
+      "hash": "c2444afb7183de076d3756c41d0f14f8d8cffe4fc09f0fcc180ebc5f84395835",
+      "last_checked": "2026-06-09T07:30:40.534968",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"df0a6a93b4a73c235e70f6807bd02984\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/operationcategory.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/operationcategory": {
+      "hash": "c2444afb7183de076d3756c41d0f14f8d8cffe4fc09f0fcc180ebc5f84395835",
+      "last_checked": "2026-06-09T07:30:40.535046",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"df0a6a93b4a73c235e70f6807bd02984\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/operationcategory.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/requestid.json": {
+      "hash": "cbb6e5423ebb2877bce2b36b1db46c712c3836b7ae3e5391c49dcd668f02c0a2",
+      "last_checked": "2026-06-09T07:30:40.693091",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"542a50d89fe847cecfa5ef18424994e3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/requestid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/requestid": {
+      "hash": "cbb6e5423ebb2877bce2b36b1db46c712c3836b7ae3e5391c49dcd668f02c0a2",
+      "last_checked": "2026-06-09T07:30:40.693179",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"542a50d89fe847cecfa5ef18424994e3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/requestid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightcontext/requestedinsight.json": {
+      "hash": "904e56ca11512434a98706acf799c26881bd45367006eaff49a42c97fd9a3f80",
+      "last_checked": "2026-06-09T07:30:40.788492",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"22427d7cd1ada89af65309e682876306\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/requestedinsight.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightcontext/requestedinsight": {
+      "hash": "904e56ca11512434a98706acf799c26881bd45367006eaff49a42c97fd9a3f80",
+      "last_checked": "2026-06-09T07:30:40.788565",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"22427d7cd1ada89af65309e682876306\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightcontext/requestedinsight.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/init(insighttype:schema:model:).json": {
+      "hash": "6728e4ac235c415aeea9dacd9baca477eeb0f5c834221d3d2c83c3445f7568d4",
+      "last_checked": "2026-06-09T07:30:40.892445",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"616026b3e95dcb39ccf215237926b389\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init-insighttypeschemamodel.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/init(insighttype:schema:model:)": {
+      "hash": "6728e4ac235c415aeea9dacd9baca477eeb0f5c834221d3d2c83c3445f7568d4",
+      "last_checked": "2026-06-09T07:30:40.892523",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"616026b3e95dcb39ccf215237926b389\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/init-insighttypeschemamodel.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/insighttypeidentifier.json": {
+      "hash": "6884f5d53134447a4d71796f689078f92c1830926280593de864cc66ac0cd7e4",
+      "last_checked": "2026-06-09T07:30:40.998148",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d1339ec6514327959eda743027dd1523\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/insighttypeidentifier.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/insighttypeidentifier": {
+      "hash": "6884f5d53134447a4d71796f689078f92c1830926280593de864cc66ac0cd7e4",
+      "last_checked": "2026-06-09T07:30:40.998233",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d1339ec6514327959eda743027dd1523\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/insighttypeidentifier.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/modelversion.json": {
+      "hash": "64d4462840cccc78ec285d22943da25a28049326c14dc9b752d3efced85fa1d0",
+      "last_checked": "2026-06-09T07:30:41.098111",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d6442e67d3f0f4c3c3df7ec9c0b25f4a\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/modelversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/modelversion": {
+      "hash": "64d4462840cccc78ec285d22943da25a28049326c14dc9b752d3efced85fa1d0",
+      "last_checked": "2026-06-09T07:30:41.098189",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d6442e67d3f0f4c3c3df7ec9c0b25f4a\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/modelversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/schemaversion.json": {
+      "hash": "44d2ce527e8e1f811924ac6bf1198bc82676a899b0509a5199f7da9990a751c7",
+      "last_checked": "2026-06-09T07:30:41.219102",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2e6a4cadf0f4aec999199040ab3963c3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/schemaversion.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/schemaversion": {
+      "hash": "44d2ce527e8e1f811924ac6bf1198bc82676a899b0509a5199f7da9990a751c7",
+      "last_checked": "2026-06-09T07:30:41.219192",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2e6a4cadf0f4aec999199040ab3963c3\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/schemaversion.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequest/schemaversionnumber.json": {
+      "hash": "1ffbd112adb910c9dcc1ed97c2135fd37852b5354615a97cad573073c67cf69d",
+      "last_checked": "2026-06-09T07:30:41.317286",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5a493d724534cb62c951f723c589af7d\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/schemaversionnumber.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/schemaversionnumber": {
+      "hash": "1ffbd112adb910c9dcc1ed97c2135fd37852b5354615a97cad573073c67cf69d",
+      "last_checked": "2026-06-09T07:30:41.317362",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"5a493d724534cb62c951f723c589af7d\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequest/schemaversionnumber.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/insightrequestprotocol/insighttype.json": {
+      "hash": "8bf60074a844196d12d23644b65c31ceaebc5fcfd3faa70aaf034ddd4ad6445e",
+      "last_checked": "2026-06-09T07:30:41.412819",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"77e6d1cc2abc2e7973258bfef92c0639\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequestprotocol/insighttype.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequestprotocol/insighttype": {
+      "hash": "8bf60074a844196d12d23644b65c31ceaebc5fcfd3faa70aaf034ddd4ad6445e",
+      "last_checked": "2026-06-09T07:30:41.412920",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"77e6d1cc2abc2e7973258bfef92c0639\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/insightrequestprotocol/insighttype.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/contextinvalid(_:).json": {
+      "hash": "d50db7f90f7e288062ac2ec2544c3533d6297113782f0b901e6a536ef809902b",
+      "last_checked": "2026-06-09T07:30:41.486406",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"8025ea4a2d19594841037ed5b216040c\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/contextinvalid(_:)": {
+      "hash": "d50db7f90f7e288062ac2ec2544c3533d6297113782f0b901e6a536ef809902b",
+      "last_checked": "2026-06-09T07:30:41.486485",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"8025ea4a2d19594841037ed5b216040c\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/contextinvalid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/denied.json": {
+      "hash": "e19900e2f9f49807743ab2d159591171835b4e0969aaf7bf5e66cb859de755bc",
+      "last_checked": "2026-06-09T07:30:41.588457",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"334153fd66b3321c932f7a2867a477a2\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/denied.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/denied": {
+      "hash": "e19900e2f9f49807743ab2d159591171835b4e0969aaf7bf5e66cb859de755bc",
+      "last_checked": "2026-06-09T07:30:41.588535",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"334153fd66b3321c932f7a2867a477a2\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/denied.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/evaluationresultsignatureinvalid.json": {
+      "hash": "677e423801618c9299e3d86abbec0820cf2fa2db56d5bdd9841c2a183722258a",
+      "last_checked": "2026-06-09T07:30:41.686674",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3397f442de04359fc1d0501ab96dcc06\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/evaluationresultsignatureinvalid.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/evaluationresultsignatureinvalid": {
+      "hash": "677e423801618c9299e3d86abbec0820cf2fa2db56d5bdd9841c2a183722258a",
+      "last_checked": "2026-06-09T07:30:41.686745",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"3397f442de04359fc1d0501ab96dcc06\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/evaluationresultsignatureinvalid.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/localerror.json": {
+      "hash": "a92d86696812906f2019e237740cc6d587f993d8bd8226070b4c830005eb4301",
+      "last_checked": "2026-06-09T07:30:41.784412",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"286772f2a0a7eff3680fe9b14f5ebf47\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/localerror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/localerror": {
+      "hash": "a92d86696812906f2019e237740cc6d587f993d8bd8226070b4c830005eb4301",
+      "last_checked": "2026-06-09T07:30:41.784502",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"286772f2a0a7eff3680fe9b14f5ebf47\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/localerror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/notavailable.json": {
+      "hash": "6734d03238ae43df71ebc0e6ea964db931bfeb9a79c0236cc078c772cedaa5c4",
+      "last_checked": "2026-06-09T07:30:41.884477",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"8c3e7ed18b973f6be2f3e3671e84e465\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/notavailable.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/notavailable": {
+      "hash": "6734d03238ae43df71ebc0e6ea964db931bfeb9a79c0236cc078c772cedaa5c4",
+      "last_checked": "2026-06-09T07:30:41.884572",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"8c3e7ed18b973f6be2f3e3671e84e465\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/notavailable.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/ratelimitexceeded.json": {
+      "hash": "09a37fcdab05006bd4ada5f65c3a3a573ef9b9e7f2b6a7a66bd58cb8a2deb3ea",
+      "last_checked": "2026-06-09T07:30:41.979652",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d086c6d12c97697b5bd2ecc85909c10b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/ratelimitexceeded.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/ratelimitexceeded": {
+      "hash": "09a37fcdab05006bd4ada5f65c3a3a573ef9b9e7f2b6a7a66bd58cb8a2deb3ea",
+      "last_checked": "2026-06-09T07:30:41.979735",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d086c6d12c97697b5bd2ecc85909c10b\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/ratelimitexceeded.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/evaluationerror/servererror.json": {
+      "hash": "1de76a08c85ee09a11086e67140a5c7b15c0cfc1447f9520eec728ad9be6f1d3",
+      "last_checked": "2026-06-09T07:30:42.073370",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d47237bb47dea512267b129682ccf9fb\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/servererror.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/evaluationerror/servererror": {
+      "hash": "1de76a08c85ee09a11086e67140a5c7b15c0cfc1447f9520eec728ad9be6f1d3",
+      "last_checked": "2026-06-09T07:30:42.073450",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d47237bb47dea512267b129682ccf9fb\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/evaluationerror/servererror.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/modelversion/current.json": {
+      "hash": "36ff0346acc257ae4563bc6be83a223965153bcbcbf4ec30d5ba6ca10d305c4f",
+      "last_checked": "2026-06-09T07:30:42.185735",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"9096f3633b4ee34b2afb5b6efd97aca1\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/current.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/modelversion/current": {
+      "hash": "36ff0346acc257ae4563bc6be83a223965153bcbcbf4ec30d5ba6ca10d305c4f",
+      "last_checked": "2026-06-09T07:30:42.185803",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"9096f3633b4ee34b2afb5b6efd97aca1\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/current.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/modelversion/specific(versionnumber:).json": {
+      "hash": "708d855d4b6566fe76b6cd2941899dbac12954e04747f7feeb477dfb0760d2aa",
+      "last_checked": "2026-06-09T07:30:42.282381",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d5685da38971141ee89f03b4cc0e6ba2\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific-versionnumber.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/modelversion/specific(versionnumber:)": {
+      "hash": "708d855d4b6566fe76b6cd2941899dbac12954e04747f7feeb477dfb0760d2aa",
+      "last_checked": "2026-06-09T07:30:42.282449",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"d5685da38971141ee89f03b4cc0e6ba2\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/modelversion/specific-versionnumber.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory/account.json": {
+      "hash": "90b2de25f97f7f1b99c5475207faffcfd7ecfc9cb7ff822fe32d475ce0d7d95e",
+      "last_checked": "2026-06-09T07:30:42.358923",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"033f2454ab77faa7e7e7f952c5c885cc\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/account.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory/account": {
+      "hash": "90b2de25f97f7f1b99c5475207faffcfd7ecfc9cb7ff822fe32d475ce0d7d95e",
+      "last_checked": "2026-06-09T07:30:42.358988",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"033f2454ab77faa7e7e7f952c5c885cc\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/account.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory/communication.json": {
+      "hash": "e71513ffce74dc760662fe4d9e519062095396b9452f6858e89f8f4a2820b301",
+      "last_checked": "2026-06-09T07:30:42.413079",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"82164d21f85f037cbe1606f04b248359\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/communication.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory/communication": {
+      "hash": "e71513ffce74dc760662fe4d9e519062095396b9452f6858e89f8f4a2820b301",
+      "last_checked": "2026-06-09T07:30:42.413162",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"82164d21f85f037cbe1606f04b248359\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/communication.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory/other.json": {
+      "hash": "d9de2418f0bbb5702c438a1ef9ef2f19912387e40c00189882bb8c91dcae5104",
+      "last_checked": "2026-06-09T07:30:42.463311",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"1b79e791b6e48ab62a62cf82690bb7ac\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/other.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory/other": {
+      "hash": "d9de2418f0bbb5702c438a1ef9ef2f19912387e40c00189882bb8c91dcae5104",
+      "last_checked": "2026-06-09T07:30:42.463381",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"1b79e791b6e48ab62a62cf82690bb7ac\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/other.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory/payment.json": {
+      "hash": "75cfaa4667835de1a5cbe37d597f53fd2e673aee595f7734ba50ece2b2693350",
+      "last_checked": "2026-06-09T07:30:42.586965",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c3885fd0f2feb670f11a6c88558776a6\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/payment.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory/payment": {
+      "hash": "75cfaa4667835de1a5cbe37d597f53fd2e673aee595f7734ba50ece2b2693350",
+      "last_checked": "2026-06-09T07:30:42.587046",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"c3885fd0f2feb670f11a6c88558776a6\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/payment.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/insightevaluator/operationcategory/resourceuse.json": {
+      "hash": "4a0f414262ae00282ac64dea3ac113c9b79eeca568629471f96b9431efe9616c",
+      "last_checked": "2026-06-09T07:30:42.655345",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"934bb8343974bfdf3659385570e6d95e\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/resourceuse.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/insightevaluator/operationcategory/resourceuse": {
+      "hash": "4a0f414262ae00282ac64dea3ac113c9b79eeca568629471f96b9431efe9616c",
+      "last_checked": "2026-06-09T07:30:42.655407",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"934bb8343974bfdf3659385570e6d95e\"",
+      "file_path": "documentation/TrustInsights/insightevaluator/operationcategory/resourceuse.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/schemaversion/version1.json": {
+      "hash": "a9a2433f0d45f615f54db3d08e7eafe70acfb60b94f3c16c03e95f4ea3345b82",
+      "last_checked": "2026-06-09T07:30:42.737963",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"fbe19f2a49e3ac8e8f2baf9b327cc43a\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/schemaversion/version1.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/schemaversion/version1": {
+      "hash": "a9a2433f0d45f615f54db3d08e7eafe70acfb60b94f3c16c03e95f4ea3345b82",
+      "last_checked": "2026-06-09T07:30:42.738043",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"fbe19f2a49e3ac8e8f2baf9b327cc43a\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/schemaversion/version1.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/value/high.json": {
+      "hash": "a5225e79a19bbe5470b4e687c3d12863980dee76fbcfadf8679322b42e355737",
+      "last_checked": "2026-06-09T07:30:42.841371",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7d5d1ac826bddfdff620adb4500f9870\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/high.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/value/high": {
+      "hash": "a5225e79a19bbe5470b4e687c3d12863980dee76fbcfadf8679322b42e355737",
+      "last_checked": "2026-06-09T07:30:42.841453",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"7d5d1ac826bddfdff620adb4500f9870\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/high.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/value/medium.json": {
+      "hash": "b10e8d4617827f5e09c65568d20e853d4a880910ad5e03fca13bfc0d203f85b1",
+      "last_checked": "2026-06-09T07:30:42.980085",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"517b1a2d3a0617f345daf21972bd7ca3\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/medium.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/value/medium": {
+      "hash": "b10e8d4617827f5e09c65568d20e853d4a880910ad5e03fca13bfc0d203f85b1",
+      "last_checked": "2026-06-09T07:30:42.980164",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"517b1a2d3a0617f345daf21972bd7ca3\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/medium.md"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/trustinsights/islikelybeingcoachedinsight/value/unknown.json": {
+      "hash": "541364ede549abc37f68935ae3b3abbd56a69e78c340659faf8b41f62beb8c0c",
+      "last_checked": "2026-06-09T07:30:43.077363",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2da098ef4697519501e5b2671eeba173\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/unknown.md"
+    },
+    "https://developer.apple.com/documentation/trustinsights/islikelybeingcoachedinsight/value/unknown": {
+      "hash": "541364ede549abc37f68935ae3b3abbd56a69e78c340659faf8b41f62beb8c0c",
+      "last_checked": "2026-06-09T07:30:43.077445",
+      "status": "new",
+      "session_id": "2026-06-09T07:30:34.015940",
+      "etag": "W/\"2da098ef4697519501e5b2671eeba173\"",
+      "file_path": "documentation/TrustInsights/islikelybeingcoachedinsight/value/unknown.md"
+    }
+  }
+}

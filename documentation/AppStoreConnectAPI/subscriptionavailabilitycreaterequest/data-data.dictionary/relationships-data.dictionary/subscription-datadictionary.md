@@ -16,6 +16,7 @@ object SubscriptionAvailabilityCreateRequest.Data.Relationships.Subscription
 
 ### Objects
 - [object SubscriptionAvailabilityCreateRequest.Data.Relationships.Subscription.Data](subscriptionavailabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/subscription-data.dictionary/data-data.dictionary.md)
+  The request body you use to create a subscription availability.
 
 ## Properties
 

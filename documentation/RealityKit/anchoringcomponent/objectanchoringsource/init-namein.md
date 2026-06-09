@@ -6,7 +6,6 @@
 Creates the object anchoring source by reference object file asset with provided name and bundle.
 
 **Availability**:
-- Mac Catalyst 18.0+
 - visionOS 2.0+
 
 ## Declaration

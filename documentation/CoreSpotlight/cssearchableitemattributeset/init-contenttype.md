@@ -26,6 +26,10 @@ An attribute set that represents an item of the specified content type.
 
 - `contentType`: The type of the content. For example, [`png`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/png) or [`movie`](https://developer.apple.com/documentation/UniformTypeIdentifiers/UTType-swift.struct/movie).
 
+## See Also
+
+- [init?(coder: NSCoder)](cssearchableitemattributeset/init(coder:).md)
+
 
 ---
 

@@ -1,4 +1,4 @@
-# List All Advanced App Clip Experiences for an App Clip
+# List all advanced app clip experiences for an app clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,23 +14,23 @@ Get all advanced App Clip experiences for an App Clip.
 
 ## Parameters
 
-- `fields[appClipAdvancedExperienceLocalizations]` ([string]): Additional fields to include for each Advanced App Clip Experiences resource returned by the response.
-- `fields[appClipAdvancedExperiences]` ([string]): Additional fields to include for each Advanced App Clip Experiences resource returned by the response.
+- `fields[appClipAdvancedExperienceLocalizations]` ([string]): Additional fields to include for each advanced App Clip experience localization resource returned by the response.
+- `fields[appClipAdvancedExperiences]` ([string]): Additional fields to include for each advanced App Clip experience resource returned by the response.
 - `filter[action]` ([string]): Filter the returned advanced App Clip experiences using the verb that appears on the App Clip card.
 - `filter[placeStatus]` ([string]): Filter the returned advanced App Clip experiences using the status of the associated place in Apple Maps.
 - `filter[status]` ([string]): Filter the returned advanced App Clip experiences using their status.
 - `include` ([string]): The relationship data to include in the response.
-- `limit` (integer): The number of Advanced App Clip Experiences resources to return.
-- `limit[localizations]` (integer): The number of included Advanced App Clip Experiences resources to return if the advanced App Clip experience localizations relationship is included.
-- `fields[appClips]` ([string])
-- `fields[appClipAdvancedExperienceImages]` ([string])
+- `limit` (integer): The maximum number of advanced App Clip experience resources to return.
+- `limit[localizations]` (integer): The maximum number of related localizations resources to return.
+- `fields[appClips]` ([string]): Additional fields to include for each app clip resource returned by the response.
+- `fields[appClipAdvancedExperienceImages]` ([string]): Additional fields to include for each advanced App Clip experience image resource returned by the response.
 
 ## See Also
 
-- [List All Default App Clip Experiences for an App Clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
+- [List all default app clip experiences for an app clip](get-v1-appclips-_id_-appclipdefaultexperiences.md)
   Get all default App Clip experiences for an App Clip.
-- [GET /v1/appClips/{id}/relationships/appClipAdvancedExperiences](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
-- [GET /v1/appClips/{id}/relationships/appClipDefaultExperiences](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
+- [List App Clip advanced experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipadvancedexperiences.md)
+- [List default experience IDs for an App Clip](get-v1-appclips-_id_-relationships-appclipdefaultexperiences.md)
 
 
 ---

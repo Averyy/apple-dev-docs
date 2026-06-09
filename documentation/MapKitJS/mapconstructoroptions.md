@@ -78,8 +78,8 @@ Use [`MapConstructorOptions`](mapconstructoroptions.md) to set the initial chara
 ### Setting the loading priority
 - [loadPriority](mapconstructoroptions/loadpriority.md)
   A value MapKit JS uses for prioritizing the visibility of specific map features before the underlaying map tiles.
-- [const LoadPriority](loadpriority.md)
-  Values for prioritizing the visibility of specific map features while the map is loading.
+- [const MapLoadPriority](maploadpriority.md)
+  Constants that prioritize the visibility of specific map features during map loading.
 ### Instance Properties
 - [annotationForMapFeature](mapconstructoroptions/annotationformapfeature.md)
   The method MapKit JS calls when the framework creates a map feature annotation.
@@ -91,6 +91,8 @@ Use [`MapConstructorOptions`](mapconstructoroptions.md) to set the initial chara
   Values that set the minimum and maximum distances of the camera from the map center.
 - [distances](mapconstructoroptions/distances.md)
   The system of measurement that displays on the map.
+- [selectableMapFeatureSelectionAccessory](mapconstructoroptions/selectablemapfeatureselectionaccessory.md)
+  An accessory that displays place information when someone selects a map feature.
 - [selectableMapFeatures](mapconstructoroptions/selectablemapfeatures.md)
   An array of map features that someone can select from the map.
 - [tileOverlays](mapconstructoroptions/tileoverlays.md)

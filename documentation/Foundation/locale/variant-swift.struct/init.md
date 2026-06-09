@@ -24,6 +24,11 @@ init(_ identifier: String)
 
 - `identifier`: The variant’s BCP 47 identifier.
 
+## See Also
+
+- [init(stringLiteral: String)](locale/variant-swift.struct/init(stringliteral:).md)
+  Creates a variant from a BCP 47 identifier as a string literal.
+
 
 ---
 

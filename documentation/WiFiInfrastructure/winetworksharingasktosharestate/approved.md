@@ -8,6 +8,7 @@ The person allowed the accessory to use the network.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

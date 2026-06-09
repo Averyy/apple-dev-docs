@@ -1,4 +1,4 @@
-# Read the Beta App Review Submission of a Build
+# Read the beta app review submission of a build
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Get the beta app review submission status for a specific build.
 
 ## See Also
 
-- [GET /v1/builds/{id}/relationships/betaAppReviewSubmission](get-v1-builds-_id_-relationships-betaappreviewsubmission.md)
+- [Get the beta app review submission ID for a build](get-v1-builds-_id_-relationships-betaappreviewsubmission.md)
 
 
 ---

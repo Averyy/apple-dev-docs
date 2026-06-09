@@ -38,6 +38,12 @@ The options provide control for balancing memory usage, quality, and processing 
   The skybox sampling quality for lighting textures.
 - [var specularCubeDimension: Int?](environmentresource/createoptions/specularcubedimension.md)
   The dimension of the computed specular cubemap for material reflections.
+### Creating create options
+- [init(skyboxMode: EnvironmentResource.SkyboxMode, samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality, specularCubeDimension: Int?, compression: EnvironmentResource.Compression)](environmentresource/createoptions/init(skyboxmode:samplingquality:specularcubedimension:compression:).md)
+  Creates an environment creation options structure.
+### Configuring the skybox
+- [var skyboxMode: EnvironmentResource.SkyboxMode](environmentresource/createoptions/skyboxmode.md)
+  Skybox’s preservation in the environment resource.
 
 ## Relationships
 

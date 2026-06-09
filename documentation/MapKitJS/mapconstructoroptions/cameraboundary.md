@@ -11,7 +11,7 @@ The boundary of the area within which the map view’s center needs to remain.
 ## Declaration
 
 ```swift
-cameraBoundary?: CoordinateRegion | MapRect | null;
+cameraBoundary?: CoordinateRegionData | MapRectData | null;
 ```
 
 #### Discussion

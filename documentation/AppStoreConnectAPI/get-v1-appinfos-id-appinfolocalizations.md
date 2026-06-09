@@ -1,4 +1,4 @@
-# List All Localizations for an App Info
+# List all app info localizations for an app info
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -6,7 +6,7 @@
 Get a list of localized, app-level information for an app.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 1.2+
 
 ## Endpoint
 
@@ -22,7 +22,7 @@ Get a list of localized, app-level information for an app.
 
 ## See Also
 
-- [Read App Info Localization Information](get-v1-appinfolocalizations-_id_.md)
+- [Read app info localization information](get-v1-appinfolocalizations-_id_.md)
   Read localized app-level information.
 
 

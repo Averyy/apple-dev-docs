@@ -18,80 +18,81 @@ For more information about versions, see [`Create a new version`](https://develo
 ## Topics
 
 ### Getting App Store Versions
-- [List All App Store Versions for an App](get-v1-apps-_id_-appstoreversions.md)
+- [List all app store versions for an app](get-v1-apps-_id_-appstoreversions.md)
   Get a list of all App Store versions of an app across all platforms.
-- [Read App Store Version Information](get-v1-appstoreversions-_id_.md)
+- [Read app store version information](get-v1-appstoreversions-_id_.md)
   Get information for a specific App Store version.
 ### Getting App Store Version Experiments
-- [List All Experiments for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
+- [List all experiments for an app store version](get-v1-appstoreversions-_id_-appstoreversionexperimentsv2.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List All Experiment IDs for an App Store Version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
+- [List all experiment ids for an app store version](get-v1-appstoreversions-_id_-relationships-appstoreversionexperimentsv2.md)
   Get a list of all experiments IDs for an App Store version across all platforms.
-- [List All Experiments for an App Store Version V1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
+- [List all experiments for an app store version v1](get-v1-appstoreversions-_id_-appstoreversionexperiments.md)
   Get a list of all experiments for an App Store version of an app across all platforms.
-- [List All Experiments IDs for an App Store Version V1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
+- [List all experiments ids for an app store version v1](get-v1-appstoreversions-_id_-relationships-appstoreversionexperiments.md)
   Get a list of all experiments IDs for an App Store version of an app across all platforms.
 ### Creating and Modifying App Store Versions
-- [Create an App Store Version](post-v1-appstoreversions.md)
+- [Create an app store version](post-v1-appstoreversions.md)
   Add a new App Store version or platform to an app.
-- [Modify an App Store Version](patch-v1-appstoreversions-_id_.md)
+- [Modify an app store version](patch-v1-appstoreversions-_id_.md)
   Update the App Store version for a specific app.
-- [Delete an App Store Version](delete-v1-appstoreversions-_id_.md)
+- [Delete an app store version](delete-v1-appstoreversions-_id_.md)
   Delete an app store version that is associated with an app.
 ### Attaching a Build to a Version
-- [Read the Build Information of an App Store Version](get-v1-appstoreversions-_id_-build.md)
+- [Read the build information of an app store version](get-v1-appstoreversions-_id_-build.md)
   Get the build that is attached to a specific App Store version.
-- [Get the Build ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-build.md)
+- [Get the build id for an app store version](get-v1-appstoreversions-_id_-relationships-build.md)
   Get the ID of the build that is attached to a specific App Store version.
-- [Modify the Build for an App Store Version](patch-v1-appstoreversions-_id_-relationships-build.md)
+- [Modify the build for an app store version](patch-v1-appstoreversions-_id_-relationships-build.md)
   Change the build that is attached to a specific App Store version.
 ### Attaching a Default App Clip Experience to a Version
-- [Get the Default App Clip Experience for an App Store Version](get-v1-appstoreversions-_id_-appclipdefaultexperience.md)
+- [Get the default app clip experience for an app store version](get-v1-appstoreversions-_id_-appclipdefaultexperience.md)
   Get the default App Clip experience for an App Store version of your app.
-- [Get the Default App Clip Experiences Resource ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
+- [Get the default app clip experiences resource id for an app store version](get-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
   Get the ID of an app’s related default App Clip experience.
-- [Modify the Default App Clip Experience of an App Store Version](patch-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
+- [Modify the default app clip experience of an app store version](patch-v1-appstoreversions-_id_-relationships-appclipdefaultexperience.md)
   Update the relationship between an App Store version and a default App Clip experience.
 ### Reading Localization Information
-- [List All App Store Version Localizations for an App Store Version](get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)
+- [List all app store version localizations for an app store version](get-v1-appstoreversions-_id_-appstoreversionlocalizations.md)
   Get a list of localized, version-level information about an app, for all locales.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionLocalizations](get-v1-appstoreversions-_id_-relationships-appstoreversionlocalizations.md)
+- [List App Store version localization IDs for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionlocalizations.md)
 ### Reading Release and Review Information
-- [Read the App Store Version Submission Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionSubmission](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)
-- [Read the App Store Review Details Resource Information of an App Store Version](get-v1-appstoreversions-_id_-appstorereviewdetail.md)
+- [Read the app store version submission information of an app store version](get-v1-appstoreversions-_id_-appstoreversionsubmission.md)
+  Get the App Review submission for a specific App Store version.
+- [Get the App Store version submission ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)
+- [Read the app store review details resource information of an app store version](get-v1-appstoreversions-_id_-appstorereviewdetail.md)
   Get the details you provide to App Review so they can test your app.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreReviewDetail](get-v1-appstoreversions-_id_-relationships-appstorereviewdetail.md)
-- [Read the App Store Version Phased Release Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionphasedrelease.md)
+- [Get the App Store review detail ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstorereviewdetail.md)
+- [Read the app store version phased release information of an app store version](get-v1-appstoreversions-_id_-appstoreversionphasedrelease.md)
   Read the phased release status and configuration for a version with phased release enabled.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionPhasedRelease](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
+- [Get the phased release ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
 ### Reading Declarations
-- [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
+- [Read the routing app coverage information of an app store version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
-- [GET /v1/appStoreVersions/{id}/relationships/routingAppCoverage](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
+- [Get the routing app coverage ID for an App Store version](get-v1-appstoreversions-_id_-relationships-routingappcoverage.md)
 ### Getting Customer Reviews
-- [List All Customer Reviews for an App Store Version](get-v1-appstoreversions-_id_-customerreviews.md)
+- [List all customer reviews for an app store version](get-v1-appstoreversions-_id_-customerreviews.md)
   Get a list of customer reviews for a specific version of your app.
-- [GET /v1/appStoreVersions/{id}/relationships/customerReviews](get-v1-appstoreversions-_id_-relationships-customerreviews.md)
+- [List customer review IDs for an App Store version](get-v1-appstoreversions-_id_-relationships-customerreviews.md)
 ### Getting Game Center app versions
-- [Read Game Center App Version Information of an App Store Version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
+- [Read game center app version information of an app store version](get-v1-appstoreversions-_id_-gamecenterappversion.md)
   Get the status of Game Center enablement for an App Store version.
-- [GET /v1/appStoreVersions/{id}/relationships/gameCenterAppVersion](get-v1-appstoreversions-_id_-relationships-gamecenterappversion.md)
+- [Get the Game Center app version ID for an App Store version](get-v1-appstoreversions-_id_-relationships-gamecenterappversion.md)
 ### Reading Distribution Package Information
-- [Read an App Store Version’s Alternative Distribution Package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
+- [Read an app store version’s alternative distribution package](get-v1-appstoreversions-_id_-alternativedistributionpackage.md)
   Read the alternative distribution package for a specific App Store version.
-- [GET /v1/appStoreVersions/{id}/relationships/alternativeDistributionPackage](get-v1-appstoreversions-_id_-relationships-alternativedistributionpackage.md)
+- [Get the alternative distribution package ID for an App Store version](get-v1-appstoreversions-_id_-relationships-alternativedistributionpackage.md)
 ### Objects and Data Types
 - [object AppStoreVersionUpdateRequest](appstoreversionupdaterequest.md)
   The request body you use to update an App Store Version.
 - [object AgeRatingDeclaration](ageratingdeclaration.md)
-  The data structure that represents an Age Rating Declarations resource.
+  A set of content descriptors for your app that App Store Connect uses to assign an age rating.
 - [object AppStoreVersion](appstoreversion.md)
   The data structure that represent an App Store Versions resource.
 - [object AppStoreVersionResponse](appstoreversionresponse.md)
-  A response that contains a single App Store Versions resource.
+  The response body for endpoints that create, read, or modify an App Store version.
 - [object AppStoreVersionsResponse](appstoreversionsresponse.md)
-  A response that contains a list of App Store Version resources.
+  The response body for endpoints that list App Store versions for an app.
 - [object AppStoreVersionCreateRequest](appstoreversioncreaterequest.md)
   The request body you use to create an App Store Version.
 - [object AppStoreVersionBuildLinkageRequest](appstoreversionbuildlinkagerequest.md)

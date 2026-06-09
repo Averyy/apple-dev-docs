@@ -73,6 +73,9 @@ if let i = favemoji.unicodeScalars.firstIndex(where: { $0.value >= 128 }) {
 ### Instance Properties
 - [var customPlaygroundQuickLook: _PlaygroundQuickLook](string/unicodescalarview/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
+### Instance Methods
+- [func isTriviallyIdentical(to: String.UnicodeScalarView) -> Bool](string/unicodescalarview/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this unicode scalar view is trivially identical to `other`.
 ### Default Implementations
 - [BidirectionalCollection Implementations](string/unicodescalarview/bidirectionalcollection-implementations.md)
 - [Collection Implementations](string/unicodescalarview/collection-implementations.md)

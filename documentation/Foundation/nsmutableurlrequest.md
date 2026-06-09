@@ -86,10 +86,14 @@ Classes that create a network operation based on a request make a deep copy of t
   The entities that can make a network request.
 ### Instance Properties
 - [var allowsPersistentDNS: Bool](nsmutableurlrequest/allowspersistentdns.md)
+  A Boolean value that indicates whether storing and usage of DNS answers in a persistent per-process cache is allowed.
 - [var allowsUltraConstrainedNetworkAccess: Bool](nsmutableurlrequest/allowsultraconstrainednetworkaccess.md)
+  A Boolean value that indicates whether a connection created with this request is allowed to use network interfaces which have been marked as ultra constrained.
 - [var assumesHTTP3Capable: Bool](nsmutableurlrequest/assumeshttp3capable.md)
+  A Boolean value that indicates whether the server is assumed to support HTTP/3.
 - [var cookiePartitionIdentifier: String?](nsmutableurlrequest/cookiepartitionidentifier.md)
 - [var requiresDNSSECValidation: Bool](nsmutableurlrequest/requiresdnssecvalidation.md)
+  A Boolean value that indicates whether a request requires DNSSEC validation during DNS lookup.
 
 ## Relationships
 

@@ -126,6 +126,9 @@ func loadSmallRedEntity(from url: URL) async throws -> Entity {
 ### Saving a configuration catalog to a file
 - [func write(to: URL) async throws](entity/configurationcatalog/write(to:).md)
   Writes the configurations of the configuration catalog to a reality file.
+### Writing to a file
+- [func write(to: URL, options: Entity.WriteOptions) async throws](entity/configurationcatalog/write(to:options:).md)
+  Writes the configurations of the configuration catalog to a reality file.
 ### Initializers
 - [init(configurationSets:combinations:)](entity/configurationcatalog/init(configurationsets:combinations:).md)
   Creates a configuration catalog from in-memory entities and an array of configuration sets.
@@ -133,9 +136,7 @@ func loadSmallRedEntity(from url: URL) async throws -> Entity {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

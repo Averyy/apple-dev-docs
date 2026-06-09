@@ -69,6 +69,8 @@ You can build an XPC service using C, Swift, or Objective-C. There are both high
 ### Structures
 - [struct XPCEndpoint](xpcendpoint.md)
   A connection in serialized form.
+- [struct XPCLiteralValue](xpcliteralvalue.md)
+  A type that bridges Swift literal values to XPC objects for use in dictionary literals.
 - [struct XPCPeerRequirement](xpcpeerrequirement.md)
 ### Type Aliases
 - [typealias xpc_peer_requirement_t](xpc_peer_requirement_t.md)

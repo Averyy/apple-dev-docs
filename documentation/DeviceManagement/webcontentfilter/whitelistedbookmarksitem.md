@@ -9,8 +9,6 @@ The bookmark in the allow list of the web content filter.
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,8 @@ object WebContentFilter.WhitelistedBookmarksItem
 
 ## Properties
 
-- `Title` (string) *(required)*: The title of the bookmark.
-- `URL` (string) *(required)*: The URL of the bookmark in the allow list.
+- `Title` (string) *(required)*: The title of the bookmark. Deprecated: iOS 14.5+ | iPadOS 14.5+
+- `URL` (string) *(required)*: The URL of the bookmark in the allow list. Deprecated: iOS 14.5+ | iPadOS 14.5+
 
 ## See Also
 

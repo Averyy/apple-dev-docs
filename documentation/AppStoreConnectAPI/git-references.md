@@ -19,15 +19,15 @@ For example, if Xcode Cloud uses the `bug-fix` branch for a build, the canonical
 ## Topics
 
 ### Getting Information About Git References
-- [Read Git Reference Information](get-v1-scmgitreferences-_id_.md)
+- [Read git reference information](get-v1-scmgitreferences-_id_.md)
   Get information about a specific Git reference.
 ### Objects
 - [object ScmGitReference](scmgitreference.md)
-  The data structure that represents a Git References resource.
+  A Git branch, tag, or commit reference in a source code repository connected to Xcode Cloud.
 - [object ScmGitReferenceResponse](scmgitreferenceresponse.md)
-  A response that contains a single Git References resource.
+  The response body for endpoints that read a single SCM Git reference in Xcode Cloud.
 - [object ScmGitReferencesResponse](scmgitreferencesresponse.md)
-  A response that contains a list of Git References resources.
+  The response body for endpoints that list Git references in an Xcode Cloud repository.
 
 ## See Also
 

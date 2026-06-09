@@ -178,6 +178,8 @@ For more information about using the delegate to control the behavior of your ge
 - [init?(coder: NSCoder)](nsgesturerecognizer/init(coder:).md)
 ### Instance Properties
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
+- [var isCancellableByScrollGesture: Bool](nsgesturerecognizer/iscancellablebyscrollgesture.md)
+  Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 - [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
 - [var name: String?](nsgesturerecognizer/name.md)
 ### Instance Methods

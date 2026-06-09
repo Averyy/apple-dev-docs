@@ -57,9 +57,12 @@ class ByteCountFormatter
   Specifies display of file or storage byte counts. The display style is platform specific.
 ### Instance Methods
 - [func string(for: Any?) -> String?](bytecountformatter/string(for:).md)
+  Formats `obj` as a byte count (if `obj` is an `NSNumber`) or specific byte measurement (if `obj` is an `NSMeasurement`) using the receiver’s settings.
 - [func string(from: Measurement<UnitInformationStorage>) -> String](bytecountformatter/string(from:).md)
+  Formats the value of the given measurement using the receiver’s `countStyle`.
 ### Type Methods
 - [class func string(from: Measurement<UnitInformationStorage>, countStyle: ByteCountFormatter.CountStyle) -> String](bytecountformatter/string(from:countstyle:).md)
+  Formats the value of the given measurement using the given `countStyle`.
 
 ## Relationships
 

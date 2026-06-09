@@ -1,6 +1,6 @@
 # analysis
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: property
 
 The results of the first detected sensitive video frame.

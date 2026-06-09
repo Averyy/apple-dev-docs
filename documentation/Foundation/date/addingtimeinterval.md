@@ -36,6 +36,8 @@ A new date value calculated by adding a time interval to this date.
 
 - [func addTimeInterval(TimeInterval)](date/addtimeinterval(_:).md)
   Adds a time interval to this date.
+- [func advanced(by: TimeInterval) -> Date](date/advanced(by:).md)
+  Returns a date offset the specified time interval from this date.
 - [static func + (Date, TimeInterval) -> Date](date/+(_:_:).md)
   Returns a date with a specified amount of time added to it.
 - [static func += (inout Date, TimeInterval)](date/+=(_:_:).md)

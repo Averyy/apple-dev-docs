@@ -11,8 +11,6 @@ A dictionary that contains time zone settings.
 - Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

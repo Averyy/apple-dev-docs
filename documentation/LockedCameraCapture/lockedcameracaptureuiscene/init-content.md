@@ -8,6 +8,7 @@ Creates a locked camera capture extension scene.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

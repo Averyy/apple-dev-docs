@@ -18,6 +18,8 @@ class let willUpdateNotification: NSNotification.Name
 
 The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 
+To observe this notification using Swift concurrency, use [`NSApplication.WillUpdateWindowsMessage`](nsapplication/willupdatewindowsmessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

@@ -10,8 +10,6 @@ A dictionary that contains details about an attach access point name (APN) confi
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - watchOS 3.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object Cellular.AttachAPN
 
 - `AllowedProtocolMask` (integer): The Internet Protocol versions that the system supports. Allowed values: - `1`: IPv4
 - `2`: IPv6
-- `3`: Both
+- `3`: Both Available: iOS 10.3+ | iPadOS 10.3+ | watchOS 3.2+
 - `AuthenticationType` (string): The authentication type.
 - `Name` (string) *(required)*: The name for this configuration.
 - `Password` (string): The password for the user.

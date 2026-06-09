@@ -11,7 +11,7 @@ Creates a polyline overlay with coordinate points and style options.
 ## Declaration
 
 ```swift
-constructor(points: Coordinate[], options?: OverlayOptions);
+constructor(points: CoordinateData[], options?: OverlayOptions);
 ```
 
 #### Discussion

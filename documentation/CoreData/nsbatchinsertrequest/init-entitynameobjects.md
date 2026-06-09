@@ -35,9 +35,9 @@ A batch-insertion request.
   Creates a batch-insertion request for a managed entity, and specifies a closure that provides data dictionaries for insertion.
 - [convenience init(entity: NSEntityDescription, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entity:managedobjecthandler:).md)
   Creates a batch-insertion request for a managed entity, and specifies a closure that inserts data into the entity.
-- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:).md)
+- [convenience init(entityName: String, dictionaryHandler: (NSMutableDictionary) -> Bool)](nsbatchinsertrequest/init(entityname:dictionaryhandler:)-5l4ps.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that provides data dictionaries for insertion.
-- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:).md)
+- [convenience init(entityName: String, managedObjectHandler: (NSManagedObject) -> Bool)](nsbatchinsertrequest/init(entityname:managedobjecthandler:)-7dr6p.md)
   Creates a batch-insertion request for a named managed entity, and specifies a closure that inserts data into the entity.
 - [init(entity: NSEntityDescription, objects: [[String : Any]])](nsbatchinsertrequest/init(entity:objects:).md)
   Creates a batch-insertion request for a managed entity, and provides an array of data dictionaries for insertion.

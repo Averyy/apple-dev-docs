@@ -11,8 +11,6 @@ The command to clear the Activation Lock bypass code on a device.
 - Mac Catalyst 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

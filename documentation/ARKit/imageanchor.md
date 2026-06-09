@@ -29,10 +29,14 @@ struct ImageAnchor
   A textual representation of this anchor.
 - [var id: UUID](imageanchor/id.md)
   The unique identifier of this anchor.
+### Default Implementations
+- [ARKitCoordinateSpaceProviding Implementations](imageanchor/arkitcoordinatespaceproviding-implementations.md)
+- [Equatable Implementations](imageanchor/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [ARKitCoordinateSpaceProviding](arkitcoordinatespaceproviding.md)
 - [Anchor](anchor.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)

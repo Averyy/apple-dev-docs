@@ -1,4 +1,4 @@
-# Delete a Routing App Coverage
+# Delete a routing app coverage
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,7 +18,7 @@ Delete the routing app coverage file that is associated with a version.
 
 ## See Also
 
-- [Modify a Routing App Coverage](patch-v1-routingappcoverages-_id_.md)
+- [Modify a routing app coverage](patch-v1-routingappcoverages-_id_.md)
   Commit a routing app coverage file after uploading it.
 
 

@@ -17,6 +17,7 @@ The background shown beneath this view.
 ## Declaration
 
 ```swift
+nonisolated
 var background: Background { get set }
 ```
 

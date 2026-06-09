@@ -7,8 +7,6 @@ A dictionary that contains the status of the EFI firmware password.
 
 **Availability**:
 - macOS 10.13+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

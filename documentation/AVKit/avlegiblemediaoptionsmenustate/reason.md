@@ -18,6 +18,11 @@ The reason for changing the menu state
 var reason: AVLegibleMediaOptionsMenuController.StateChangeReason
 ```
 
+## See Also
+
+- [var enabled: ObjCBool](avlegiblemediaoptionsmenustate/enabled.md)
+  Whether or not the legible options menu is
+
 
 ---
 

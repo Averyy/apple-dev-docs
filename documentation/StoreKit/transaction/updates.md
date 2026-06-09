@@ -22,8 +22,8 @@ static var updates: Transaction.Transactions { get }
 
 ## Mentions
 
-- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+- [Supporting win-back offers in your app](supporting-win-back-offers-in-your-app.md)
 - [Supporting subscription offer codes in your app](supporting-subscription-offer-codes-in-your-app.md)
 - [Testing win-back offers in the sandbox environment](testing-win-back-offers-in-the-sandbox-environment.md)
 - [Testing purchases made outside your app](testing-purchases-made-outside-your-app.md)

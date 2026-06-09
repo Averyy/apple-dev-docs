@@ -18,6 +18,8 @@ class let willDismissNotification: NSNotification.Name
 
 The notification object is the `NSComboBox` whose pop-up list will be dismissed. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSComboBox.WillDismissMessage`](nscombobox/willdismissmessage.md).
+
 ## See Also
 
 - [class let selectionDidChangeNotification: NSNotification.Name](nscombobox/selectiondidchangenotification.md)

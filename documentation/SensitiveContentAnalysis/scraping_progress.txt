@@ -1,4 +1,4 @@
-Completed scraping SensitiveContentAnalysis!
-Total pages scraped: 35
+Completed scraping Sensitive Content Analysis!
+Total pages scraped: 40
 Pages skipped (unchanged): 1
 Pages failed: 0

@@ -95,6 +95,36 @@ struct LandmarkDetailTip: Tip {
 }
 ```
 
+##### Filtering an Events Donations
+
+TipKit provides methods on `Sequence` for filtering an event’s donations within rule predicates.
+
+Use `Swift/Sequence/donatedWithin(_:)` to filter donations by recency:
+
+```swift
+#Rule(AppEvents.didLogin) {
+    $0.donations.donatedWithin(.week).count >= 3
+}
+```
+
+Use `Swift/Sequence/largestSubset(groupedBy:)` and `Swift/Sequence/smallestSubset(groupedBy:)` to find the most or least frequent donation values:
+
+```swift
+#Rule(LandmarkDetail.didViewLandmarkDetail) {
+    // Show tip when the most-viewed landmark has been viewed 5+ times.
+    $0.donations.largestSubset(groupedBy: \.landmarkID).count >= 5
+}
+```
+
+These methods can be combined to build complex eligibility conditions:
+
+```swift
+#Rule(LandmarkDetail.didViewLandmarkDetail) {
+    // Show tip when the least-viewed landmark in the past month has been viewed at least twice.
+    $0.donations.donatedWithin(.month).smallestSubset(groupedBy: \.landmarkID).count >= 2
+}
+```
+
 ## Topics
 
 ### Initializers

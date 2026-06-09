@@ -57,11 +57,14 @@ Create dynamic materials without Metal.
 
 ### Shader Graph fundamentals
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
-  Build, create, and design 3D content for your RealityKit apps.
+  Build, design, and orchestrate 3D content for your RealityKit apps.
 - [protocol Material](material.md)
   A type that describes the material aspects of a mesh, like color and texture.
 - [struct MaterialParameterTypes](materialparametertypes.md)
   A set of types that material parameters can use.
+### Accessing the program
+- [var program: ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.property.md)
+- [ShaderGraphMaterial.Program](shadergraphmaterial/program-swift.struct.md)
 ### Initializers
 - [init(materialXLabel: String, data: Data) async throws](shadergraphmaterial/init(materialxlabel:data:).md)
   Loads a ShaderGraphMaterial from MaterialX data.
@@ -69,6 +72,8 @@ Create dynamic materials without Metal.
   Loads a ShaderGraphMaterial from a named material within a USD file.
 - [init(named: String, from: String, in: Bundle?) async throws](shadergraphmaterial/init(named:from:in:).md)
   Loads a ShaderGraphMaterial from a bundle.
+- [init(program: ShaderGraphMaterial.Program)](shadergraphmaterial/init(program:).md)
+  Create a ShaderGraphMaterial with an already initialized Program. Use this method when you want to preload a library of shaders and create instances of them quickly and synchronously via ShaderGraphMaterials at runtime.
 ### Instance Properties
 - [var faceCulling: ShaderGraphMaterial.FaceCulling](shadergraphmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.

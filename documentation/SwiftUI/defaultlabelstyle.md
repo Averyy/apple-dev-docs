@@ -17,6 +17,7 @@ The default label style in the current context.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultLabelStyle
 ```
 

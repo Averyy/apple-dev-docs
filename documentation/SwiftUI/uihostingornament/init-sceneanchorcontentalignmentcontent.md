@@ -11,7 +11,7 @@ Creates an ornament with the specified alignment and content.
 ## Declaration
 
 ```swift
-init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ViewBuilder content: () -> Content)
+init(sceneAnchor: UnitPoint, contentAlignment: Alignment = .center, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

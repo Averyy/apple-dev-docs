@@ -17,7 +17,7 @@ Presents a modal view that covers as much of the screen as possible when binding
 
 ```swift
 nonisolated
-func fullScreenCover<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ViewBuilder content: @escaping () -> Content) -> some View where Content : View
+func fullScreenCover<Content>(isPresented: Binding<Bool>, onDismiss: (() -> Void)? = nil, @ContentBuilder content: @escaping () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

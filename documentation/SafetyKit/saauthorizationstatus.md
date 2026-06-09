@@ -33,9 +33,6 @@ To verify that your app receives Crash Detection events, call [`requestAuthoriza
   There isn’t a designated app for receiving Crash Detection events.
 ### Initializers
 - [init?(rawValue: Int)](saauthorizationstatus/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](saauthorizationstatus/equatable-implementations.md)
-- [RawRepresentable Implementations](saauthorizationstatus/rawrepresentable-implementations.md)
 
 ## Relationships
 

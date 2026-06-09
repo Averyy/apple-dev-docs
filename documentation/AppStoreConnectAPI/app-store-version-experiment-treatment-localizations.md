@@ -7,23 +7,27 @@ Manage the localized assets, including screenshots and previews, for an App Stor
 ## Topics
 
 ### Endpoints
-- [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
-- [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/appScreenshotSets](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-appscreenshotsets.md)
-- [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/appPreviewSets](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-apppreviewsets.md)
-- [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/relationships/appPreviewSets](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-apppreviewsets.md)
-- [GET /v1/appStoreVersionExperimentTreatmentLocalizations/{id}/relationships/appScreenshotSets](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-appscreenshotsets.md)
-- [POST /v1/appStoreVersionExperimentTreatmentLocalizations](post-v1-appstoreversionexperimenttreatmentlocalizations.md)
-- [Delete a Treatment Localization for an App Store Version Experiment](delete-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
+- [Read app store version experiment treatment localization information](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
+  Get information about a specific App Store version experiment treatment localization.
+- [List all screenshot sets for an experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-appscreenshotsets.md)
+  Get a list of screenshot sets for a specific App Store version experiment treatment localization.
+- [List all preview sets for an experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-apppreviewsets.md)
+  Get a list of preview sets for a specific App Store version experiment treatment localization.
+- [List preview set IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-apppreviewsets.md)
+- [List screenshot set IDs for an App Store version experiment treatment localization](get-v1-appstoreversionexperimenttreatmentlocalizations-_id_-relationships-appscreenshotsets.md)
+- [Create an app store version experiment treatment localization](post-v1-appstoreversionexperimenttreatmentlocalizations.md)
+  Add a new localization for an App Store version experiment treatment.
+- [Delete a treatment localization for an app store version experiment](delete-v1-appstoreversionexperimenttreatmentlocalizations-_id_.md)
   Delete localized metatdata that you configured for an App Store Version experiment treatment.
 ### Objects
 - [object AppStoreVersionExperimentTreatmentLocalization](appstoreversionexperimenttreatmentlocalization.md)
-  The data structure that represents an app store version experiment treatment localization resource.
+  The localized screenshots, previews, and text for one treatment variant in an App Store product page A/B experiment.
 - [object AppStoreVersionExperimentTreatmentLocalizationCreateRequest](appstoreversionexperimenttreatmentlocalizationcreaterequest.md)
-  The request body you use to create an store resource.
+  The request body you use to create an App Store version experiment treatment localization.
 - [object AppStoreVersionExperimentTreatmentLocalizationResponse](appstoreversionexperimenttreatmentlocalizationresponse.md)
-  A response that contains a single app store version experiment treatment localization response resource.
+  The response body for endpoints that create, read, or modify a localized treatment for an App Store experiment.
 - [object AppStoreVersionExperimentTreatmentLocalizationsResponse](appstoreversionexperimenttreatmentlocalizationsresponse.md)
-  A response that contains a list of app store version experiment treatment localizations response resources.
+  The response body for endpoints that list localized treatments for an App Store version experiment.
 
 ## See Also
 

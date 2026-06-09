@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-An underlying data format of this tensor.
+The underlying data format of the data plane.
 
 **Availability**:
 - iOS 26.0+

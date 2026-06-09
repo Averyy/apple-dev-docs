@@ -47,15 +47,6 @@ The app intents package `MyFrameworkPackage` in the example above doesn’t depe
 ### Type Properties
 - [static var includedPackages: [any AppIntentsPackage.Type]](appintentspackage/includedpackages.md)
 
-## See Also
-
-- [class AppDependencyManager](appdependencymanager.md)
-  An object that manages the registration and initialization of an app intent’s dependencies.
-- [class AppDependency](appdependency.md)
-  A property wrapper that resolves a registered dependency at runtime.
-- [protocol AppIntentsExtension](appintentsextension.md)
-  An interface for managing an extension’s configuration.
-
 
 ---
 

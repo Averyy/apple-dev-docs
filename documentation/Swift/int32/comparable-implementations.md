@@ -15,20 +15,20 @@
   Returns a partial range up to, but not including, its upper bound.
 - [static func ..< (Self, Self) -> Range<Self>](int32/'.._(_:_:).md)
   Returns a half-open range that contains its lower bound but not its upper bound.
-- [static func > (Self, Self) -> Bool](int32/_(_:_:)-30znw.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func < (Self, Self) -> Bool](int32/_(_:_:)-4d2t4.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
+- [static func > (borrowing Self, borrowing Self) -> Bool](int32/_(_:_:)-4oaul.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func > (Int32, Int32) -> Bool](int32/_(_:_:)-5p8ms.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
 - [static func >= (Int32, Int32) -> Bool](int32/_=(_:_:)-1ukxu.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func >= (Self, Self) -> Bool](int32/_=(_:_:)-4n6ly.md)
-  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 - [static func <= (Int32, Int32) -> Bool](int32/_=(_:_:)-5corj.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](int32/_=(_:_:)-658lf.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](int32/_=(_:_:)-7d66.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
+- [static func >= (borrowing Self, borrowing Self) -> Bool](int32/_=(_:_:)-t4e8.md)
+  Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
 
 
 ---

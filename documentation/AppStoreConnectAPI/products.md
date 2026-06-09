@@ -17,37 +17,37 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
 ## Topics
 
 ### Getting Xcode Cloud Products
-- [List All Xcode Cloud Products](get-v1-ciproducts.md)
+- [List all xcode cloud products](get-v1-ciproducts.md)
   Get a list of all products you created in Xcode Cloud.
-- [Read Xcode Cloud Product Information](get-v1-ciproducts-_id_.md)
+- [Read xcode cloud product information](get-v1-ciproducts-_id_.md)
   Get information about a specific Xcode Cloud product.
-- [List All Additional Repositories for an Xcode Cloud Product](get-v1-ciproducts-_id_-additionalrepositories.md)
+- [List all additional repositories for an xcode cloud product](get-v1-ciproducts-_id_-additionalrepositories.md)
   List all additional Git repositories you associated with an Xcode Cloud product.
-- [GET /v1/ciProducts/{id}/relationships/additionalRepositories](get-v1-ciproducts-_id_-relationships-additionalrepositories.md)
-- [Read App Information for an Xcode Cloud Product](get-v1-ciproducts-_id_-app.md)
+- [List additional repository IDs for a CI product](get-v1-ciproducts-_id_-relationships-additionalrepositories.md)
+- [Read app information for an xcode cloud product](get-v1-ciproducts-_id_-app.md)
   Get the app in App Store Connect that’s related to an Xcode Cloud product.
-- [GET /v1/ciProducts/{id}/relationships/app](get-v1-ciproducts-_id_-relationships-app.md)
-- [List All Xcode Cloud Builds for an Xcode Cloud Product](get-v1-ciproducts-_id_-buildruns.md)
+- [Get the app ID for a CI product](get-v1-ciproducts-_id_-relationships-app.md)
+- [List all xcode cloud builds for an xcode cloud product](get-v1-ciproducts-_id_-buildruns.md)
   List all builds Xcode Cloud performed for a specific product.
-- [GET /v1/ciProducts/{id}/relationships/buildRuns](get-v1-ciproducts-_id_-relationships-buildruns.md)
-- [List All Primary Git Repositories for an Xcode Cloud Product](get-v1-ciproducts-_id_-primaryrepositories.md)
+- [List build run IDs for a CI product](get-v1-ciproducts-_id_-relationships-buildruns.md)
+- [List all primary git repositories for an xcode cloud product](get-v1-ciproducts-_id_-primaryrepositories.md)
   List all primary Git repositories for a specific Xcode Cloud product.
-- [GET /v1/ciProducts/{id}/relationships/primaryRepositories](get-v1-ciproducts-_id_-relationships-primaryrepositories.md)
-- [List All Workflows for an Xcode Cloud Product](get-v1-ciproducts-_id_-workflows.md)
+- [List primary repository IDs for a CI product](get-v1-ciproducts-_id_-relationships-primaryrepositories.md)
+- [List all workflows for an xcode cloud product](get-v1-ciproducts-_id_-workflows.md)
   List all workflows for a specific Xcode Cloud product.
-- [GET /v1/ciProducts/{id}/relationships/workflows](get-v1-ciproducts-_id_-relationships-workflows.md)
-- [Read the Xcode Cloud Product for an App](get-v1-apps-_id_-ciproduct.md)
+- [List workflow IDs for a CI product](get-v1-ciproducts-_id_-relationships-workflows.md)
+- [Read the xcode cloud product for an app](get-v1-apps-_id_-ciproduct.md)
   Get the Xcode Cloud product information for an app you build with Xcode Cloud.
 ### Deleting Xcode Cloud Products
-- [Delete a Product](delete-v1-ciproducts-_id_.md)
+- [Delete a product](delete-v1-ciproducts-_id_.md)
   Delete an Xcode Cloud product and all of its associated workflows, builds, and artifacts.
 ### Objects
 - [object CiProduct](ciproduct.md)
-  The data structure that represents a Products resource.
+  An app or framework registered in Xcode Cloud that has one or more workflows and build history.
 - [object CiProductResponse](ciproductresponse.md)
-  A response that contains a single Products resource.
+  The response body for endpoints that read a single Xcode Cloud product.
 - [object CiProductsResponse](ciproductsresponse.md)
-  A response that contains a list of Products resources.
+  The response body for endpoints that list Xcode Cloud products.
 - [object CiProductAdditionalRepositoriesLinkagesResponse](ciproductadditionalrepositorieslinkagesresponse.md)
 - [object CiProductAppLinkageResponse](ciproductapplinkageresponse.md)
 - [object CiProductBuildRunsLinkagesResponse](ciproductbuildrunslinkagesresponse.md)
@@ -58,9 +58,9 @@ This resource supports JSON web tokens with a lifetime of up to six months. For 
 - [object CiFilesAndFoldersRule](cifilesandfoldersrule.md)
   Settings Xcode Cloud uses to determine whether a change should start a new build or not.
 - [object CiGitUser](cigituser.md)
-  The data structure that represents a Git Users resource.
+  The Git identity (name and email) of the person who authored or committed the code change that triggered an Xcode Cloud build.
 - [object CiIssueCounts](ciissuecounts.md)
-  The data structure that represents an Issue Counts resource.
+  A summary of the warnings, errors, analyzer warnings, and test failures in an Xcode Cloud build run.
 - [object CiPullRequestStartCondition](cipullrequeststartcondition.md)
   Settings for a start condition that starts a build if a pull request changes.
 - [object CiScheduledStartCondition](cischeduledstartcondition.md)

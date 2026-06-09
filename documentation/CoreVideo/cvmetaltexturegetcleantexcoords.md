@@ -26,6 +26,10 @@ This function automatically takes into account whether or not the texture is fli
 ## Parameters
 
 - `image`: A CoreVideo Metal texture-based image buffer.
+- `lowerLeft`: An array that holds two `float` values. Upon return, the array contains the `s` and `t` texture coordinates for the lower left corner of the image.
+- `lowerRight`: An array that holds two `float` values. Upon return, the array contains the `s` and `t` texture coordinates for the lower right corner of the image.
+- `upperRight`: An array that holds two `float` values. Upon return, the array contains the `s` and `t` texture coordinates for the upper right corner of the image.
+- `upperLeft`: An array that holds two `float` values. Upon return, the array contains the `s` and `t` texture coordinates for the upper left corner of the image.
 
 ## See Also
 

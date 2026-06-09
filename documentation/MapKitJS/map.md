@@ -11,13 +11,14 @@ An embeddable interactive map that you add to a webpage.
 ## Declaration
 
 ```swift
-class Map extends MapKitEventTarget
+class Map extends EventTarget
 ```
 
 ## Mentions
 
 - [Loading the latest version of MapKit JS](loading-the-latest-version-of-mapkit-js.md)
 - [Adding interactivity to overlays](adding-interactivity-to-overlays.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Overview
 
@@ -61,7 +62,7 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
   Changes the map’s visible map rectangle to the specified map rectangle.
 - [cameraBoundary](map/cameraboundary.md)
   A constraint of the location of the center of the map.
-- [setCameraBoundaryAnimated(mapRect, animated)](map/setcameraboundaryanimated.md)
+- [setCameraBoundaryAnimated(cameraBoundary, animated)](map/setcameraboundaryanimated.md)
   Changes the map’s camera boundary with an animated transition.
 - [interface CameraBoundaryDescription](cameraboundarydescription.md)
   An object literal that contains information defining an area on the map.
@@ -87,16 +88,10 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
 ### Configuring the map’s appearance
 - [colorScheme](map/colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
 - [distances](map/distances-data.property.md)
   The system of measurement that displays on the map.
-- [const Distance](distance.md)
-  Constants indicating the system of measurement that displays on the map.
 - [mapType](map/maptype.md)
   The type of data that the map displays.
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
 - [padding](map/padding.md)
   The map’s inset margins.
 - [pointOfInterestFilter](map/pointofinterestfilter.md)
@@ -200,11 +195,9 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
 ### Prioritizing feature loading
 - [loadPriority](map/loadpriority.md)
   A value MapKit JS uses for prioritizing the visibility of specific map features before the underlaying map tiles.
-- [const LoadPriority](loadpriority.md)
-  Values for prioritizing the visibility of specific map features while the map is loading.
-### Static properties
+### Deprecated
 - [ColorSchemes](map/colorschemes.md)
-  A static property that allows you to access to access the look color scheme enumeration.
+  A static property that lets you access the color scheme enumeration.
 - [Distances](map/distances-data.var.md)
   A static property that allows you to access the distance enumeration.
 - [LoadPriorities](map/loadpriorities.md)
@@ -215,7 +208,7 @@ A map is a self-contained view object that you embed on a webpage. It’s possib
 ## Relationships
 
 ### Inherits From
-- [MapKitEventTarget](mapkiteventtarget.md)
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 
 ## See Also
 

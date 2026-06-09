@@ -30,7 +30,7 @@ object GameCenterMatchmakingQueuesResponse
 - [object GameCenterMatchmakingQueueResponse](gamecentermatchmakingqueueresponse.md)
   The response body for endpoints that create, modify, or get a single queue.
 - [object GameCenterMatchmakingQueue](gamecentermatchmakingqueue.md)
-  The data structure that represents a queue.
+  A queue in Game Center matchmaking that holds players waiting to be matched, governed by a rule set.
 
 
 ---

@@ -1,4 +1,4 @@
-# Read the Build Information of an App Store Version
+# Read the build information of an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get the build that is attached to a specific App Store version.
 
 ## Parameters
 
-- `fields[builds]` ([string])
+- `fields[builds]` ([string]): Additional fields to include for each build resource returned by the response.
 
 ## See Also
 
-- [Get the Build ID for an App Store Version](get-v1-appstoreversions-_id_-relationships-build.md)
+- [Get the build id for an app store version](get-v1-appstoreversions-_id_-relationships-build.md)
   Get the ID of the build that is attached to a specific App Store version.
-- [Modify the Build for an App Store Version](patch-v1-appstoreversions-_id_-relationships-build.md)
+- [Modify the build for an app store version](patch-v1-appstoreversions-_id_-relationships-build.md)
   Change the build that is attached to a specific App Store version.
 
 

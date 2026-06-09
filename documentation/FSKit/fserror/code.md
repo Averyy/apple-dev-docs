@@ -56,6 +56,8 @@ enum Code
   An error encountered when performing an FSKit operation.
 - [let FSKitErrorDomain: String](fskiterrordomain.md)
   An error domain for FSKit errors.
+- [struct FSDataCacheError](fsdatacacheerror.md)
+  An error encountered when performing an FSKit data caching operation.
 
 
 ---

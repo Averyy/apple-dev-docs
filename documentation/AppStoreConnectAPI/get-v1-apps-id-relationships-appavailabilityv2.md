@@ -1,10 +1,10 @@
-# GET /v1/apps/{id}/relationships/appAvailabilityV2
+# Get the app availability ID for an app
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -17,7 +17,7 @@
 ## See Also
 
 - [List Availability for an App](get-v1-apps-_id_-appavailabilityv2.md)
-  Get a list of availabilities for a specific app.
+  The data structure that represents a get-v1-apps-{id}-app availability v2 resource.
 
 
 ---

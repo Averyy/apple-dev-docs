@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an app tag territories linkages response resource.
+The resource linkage data identifying a territory associated with an app tag.
 
 **Availability**:
 - App Store Connect API 4.1+

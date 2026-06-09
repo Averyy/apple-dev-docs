@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The per-territory schedule attributes within an app event update request, specifying the start, end, publish dates, and targeted territories.
+
 **Availability**:
 - App Store Connect API 1.7+
 

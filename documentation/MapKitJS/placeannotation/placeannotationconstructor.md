@@ -12,9 +12,9 @@ Creates a new place annotation.
 
 ```swift
 constructor(
-        coordinate: Coordinate | Place | SearchAutocompleteResult,
-        options?: MarkerAnnotationConstructorOptions,
-    );
+    coordinate: CoordinateData | Place | SearchAutocompleteResult,
+    options?: MarkerAnnotationConstructorOptions,
+);
 ```
 
 #### Discussion

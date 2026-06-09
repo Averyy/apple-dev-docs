@@ -9,7 +9,6 @@ The card is not supported by the current reader’s configuration.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- visionOS 26.0+
 
 ## Declaration
 

@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe data for whiteboard 
 protocol WhiteboardEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -39,13 +35,6 @@ protocol WhiteboardEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var board: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/board.md)
-  The app entity describes a whiteboard canvas.
-- [var item: some AssistantSchemas.Entity](assistantschemas/whiteboardentity/item.md)
-  The app entity describes an item on a whiteboard canvas.
 
 
 ---

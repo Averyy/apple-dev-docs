@@ -6,8 +6,8 @@
 The app’s license agreement URL.
 
 **Availability**:
-- iOS 17.2+
-- iPadOS 17.2+
+- iOS 17.4+
+- iPadOS 17.4+
 - Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 2.4+

@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Customer Review Responses resource.
+The response body for endpoints that create, read, or modify a developer’s response to a customer review.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -23,11 +23,11 @@ object CustomerReviewResponseV1Response
 ## See Also
 
 - [object CustomerReviewResponseV1](customerreviewresponsev1.md)
-  The data structure that represents the Customer Review Responses resource.
+  A developer’s public reply to a customer review on the App Store.
 - [object CustomerReviewResponseV1CreateRequest](customerreviewresponsev1createrequest.md)
   The request body to use to create a response to a customer review.
 - [object CustomerReview](customerreview.md)
-  The data structure that represents a Customer Reviews resource.
+  A customer’s rating and written review of your app on the App Store.
 - [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
 - [object CustomerReviewResponseLinkageResponse](customerreviewresponselinkageresponse.md)
 

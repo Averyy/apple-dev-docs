@@ -36,7 +36,7 @@ When using a file handle object to communicate asynchronously with a socket, you
 
 ## Topics
 
-### Creating a File Handle
+### Creating a file handle
 - [convenience init(fileDescriptor: Int32)](filehandle/init(filedescriptor:).md)
   Creates and returns a file handle object associated with the specified file descriptor.
 - [init(fileDescriptor: Int32, closeOnDealloc: Bool)](filehandle/init(filedescriptor:closeondealloc:).md)
@@ -55,7 +55,7 @@ When using a file handle object to communicate asynchronously with a socket, you
   Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
 - [init?(coder: NSCoder)](filehandle/init(coder:).md)
   Returns a file handle initialized from data in an unarchiver.
-### Getting a File Handle
+### Getting a file handle
 - [class var standardError: FileHandle](filehandle/standarderror.md)
   The file handle associated with the standard error file.
 - [class var standardInput: FileHandle](filehandle/standardinput.md)
@@ -64,22 +64,22 @@ When using a file handle object to communicate asynchronously with a socket, you
   The file handle associated with the standard output file.
 - [class var nullDevice: FileHandle](filehandle/nulldevice.md)
   The file handle associated with a null device.
-### Getting a File Descriptor
+### Getting a file descriptor
 - [var fileDescriptor: Int32](filehandle/filedescriptor.md)
   The POSIX file descriptor associated with the receiver.
-### Reading from a File Handle Asynchronously
+### Reading from a file handle asynchronously
 - [var bytes: FileHandle.AsyncBytes](filehandle/bytes.md)
   The file’s contents, as an asynchronous sequence of bytes.
 - [FileHandle.AsyncBytes](filehandle/asyncbytes.md)
   An asynchronous sequence of bytes.
-### Reading from a File Handle Synchronously
+### Reading from a file handle synchronously
 - [var availableData: Data](filehandle/availabledata.md)
   The data currently available in the receiver.
 - [func readToEnd() throws -> Data?](filehandle/readtoend.md)
   Reads the available data synchronously up to the end of file or maximum number of bytes.
 - [func read(upToCount: Int) throws -> Data?](filehandle/read(uptocount:).md)
   Reads data synchronously up to the specified number of bytes.
-### Reading Asynchronously with Notifications
+### Reading asynchronously with notifications
 - [func acceptConnectionInBackgroundAndNotify()](filehandle/acceptconnectioninbackgroundandnotify.md)
   Accepts a socket connection (for stream-type sockets only) in the background and creates a file handle for the “near” (client) end of the communications channel.
 - [func acceptConnectionInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/acceptconnectioninbackgroundandnotify(formodes:).md)
@@ -96,34 +96,34 @@ When using a file handle object to communicate asynchronously with a socket, you
   Asynchronously checks to see if data is available.
 - [func waitForDataInBackgroundAndNotify(forModes: [RunLoop.Mode]?)](filehandle/waitfordatainbackgroundandnotify(formodes:).md)
   Asynchronously checks to see if data is available.
-### Writing to a File Handle
+### Writing to a file handle
 - [func write<T>(contentsOf: T) throws](filehandle/write(contentsof:).md)
   Writes the specified data synchronously to the file handle.
-### Seeking Within a File
+### Seeking within a file
 - [func offset() throws -> UInt64](filehandle/offset.md)
   Gets the position of the file pointer within the file.
 - [func seekToEnd() throws -> UInt64](filehandle/seektoend.md)
   Places the file pointer at the end of the file referenced by the file handle and returns the new file offset.
 - [func seek(toOffset: UInt64) throws](filehandle/seek(tooffset:).md)
   Moves the file pointer to the specified offset within the file.
-### Operating on a File
+### Operating on a file
 - [func close() throws](filehandle/close.md)
   Disallows further access to the represented file or communications channel and signals end of file on communications channels that permit writing.
 - [func synchronize() throws](filehandle/synchronize.md)
   Causes all in-memory data and attributes of the file represented by the file handle to write to permanent storage.
 - [func truncate(atOffset: UInt64) throws](filehandle/truncate(atoffset:).md)
   Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position.
-### Monitoring for Readability and Writability
+### Monitoring for readability and writability
 - [var readabilityHandler: ((FileHandle) -> Void)?](filehandle/readabilityhandler.md)
   The block to use for reading the contents of the file handle asynchronously.
 - [var writeabilityHandler: ((FileHandle) -> Void)?](filehandle/writeabilityhandler.md)
   The block to use for writing the contents of the file handle asynchronously.
-### Constants
+### Working with constants
 - [Keys for Notification UserInfo Dictionary](keys-for-notification-userinfo-dictionary.md)
   Strings that the system uses as keys in a userinfo dictionary during a file handle notification.
 - [Exception Names](exception-names.md)
   Constant that defines the name of a file operation exception.
-### Notifications
+### Working with notifications
 - [static let NSFileHandleConnectionAccepted: NSNotification.Name](nsnotification/name-swift.struct/nsfilehandleconnectionaccepted.md)
   Posted when a file handle object establishes a socket connection between two processes, creates a file handle object for one end of the connection, and makes this object available to observers.
 - [static let NSFileHandleDataAvailable: NSNotification.Name](nsnotification/name-swift.struct/nsfilehandledataavailable.md)
@@ -132,6 +132,15 @@ When using a file handle object to communicate asynchronously with a socket, you
   Posted when the file handle reads the data currently available in a file or at a communications channel.
 - [static let NSFileHandleReadToEndOfFileCompletion: NSNotification.Name](nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md)
   Posted when the file handle reads all data in the file or, in a communications channel, until the other process signals the end of data.
+### Working with notification messages
+- [FileHandle.ConnectionAcceptedMessage](filehandle/connectionacceptedmessage.md)
+  A message a file handle sends when it creates a socket connection between two processes and creates a file handle for one end of the connection.
+- [FileHandle.DataAvailableMessage](filehandle/dataavailablemessage.md)
+  A message a file handle sends when it determines data is available for reading from a file or communications channel.
+- [FileHandle.ReadCompletionMessage](filehandle/readcompletionmessage.md)
+  A message a file handle sends when it reads the data currently available in a file or a communication channel.
+- [FileHandle.ReadToEndOfFileCompletionMessage](filehandle/readtoendoffilecompletionmessage.md)
+  A message a file handle sends when it reads all data in a file, or another process in a communication channel signals the end of the data.
 ### Deprecated
 - [func readDataToEndOfFile() -> Data](filehandle/readdatatoendoffile.md)
   Reads the available data synchronously up to the end of file or maximum number of bytes.
@@ -153,15 +162,13 @@ When using a file handle object to communicate asynchronously with a socket, you
   Truncates or extends the file represented by the file handle to a specified offset within the file and puts the file pointer at that position.
 - [let NSFileHandleNotificationMonitorModes: String](nsfilehandlenotificationmonitormodes.md)
   Currently unused.
-### Structures
-- [FileHandle.ConnectionAcceptedMessage](filehandle/connectionacceptedmessage.md)
-- [FileHandle.DataAvailableMessage](filehandle/dataavailablemessage.md)
-- [FileHandle.ReadCompletionMessage](filehandle/readcompletionmessage.md)
-- [FileHandle.ReadToEndOfFileCompletionMessage](filehandle/readtoendoffilecompletionmessage.md)
 ### Initializers
 - [convenience init(forReadingFrom: URL) throws](filehandle/init(forreadingfrom:).md)
+  Returns a file handle initialized for reading the file, device, or named socket at the specified URL.
 - [convenience init(forUpdating: URL) throws](filehandle/init(forupdating:).md)
+  Returns a file handle initialized for reading and writing to the file, device, or named socket at the specified URL.
 - [convenience init(forWritingTo: URL) throws](filehandle/init(forwritingto:).md)
+  Returns a file handle initialized for writing to the file, device, or named socket at the specified URL.
 ### Default Implementations
 - [FileHandle Implementations](filehandle/filehandle-implementations.md)
 

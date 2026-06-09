@@ -11,7 +11,7 @@ The coordinate of the annotation while someone is dragging it.
 ## Declaration
 
 ```swift
-readonly coordinate?: Coordinate | undefined;
+readonly coordinate: Coordinate | null;
 ```
 
 #### Discussion

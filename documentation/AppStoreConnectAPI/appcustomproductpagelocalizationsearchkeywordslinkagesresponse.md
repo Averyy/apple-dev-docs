@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of IDs of related resources.
+A response containing the resource identifiers of search keywords associated with a custom product page localization.
 
 **Availability**:
 - App Store Connect API 3.6+
@@ -29,25 +29,25 @@ object AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse
 ## See Also
 
 - [object AppKeyword](appkeyword.md)
-  The data structure that represents an app keyword resource.
+  A search keyword associated with an App Store listing or custom product page for discoverability.
 - [object AppKeywordsResponse](appkeywordsresponse.md)
-  A response that contains a list of app keywords response resources.
+  A response containing a list of search keywords for an App Store listing.
 - [object AppCustomProductPageLocalization](appcustomproductpagelocalization.md)
-  The data structure that represents an app custom product page localization resource.
+  The localized promotional text, keywords, and screenshots for a custom App Store product page in a specific language.
 - [object AppCustomProductPageLocalizationCreateRequest](appcustomproductpagelocalizationcreaterequest.md)
   The request body you use to create an app custom product page localization.
 - [object AppCustomProductPageLocalizationInlineCreate](appcustomproductpagelocalizationinlinecreate.md)
-  The data structure that represents an app custom product page localization inline creates resource.
+  An inline object for specifying a language-specific localization when creating a custom product page version.
 - [object AppCustomProductPageLocalizationResponse](appcustomproductpagelocalizationresponse.md)
-  A response that contains a single app custom product page resource.
+  A response containing a single localization for a custom App Store product page.
 - [object AppCustomProductPageLocalizationUpdateRequest](appcustomproductpagelocalizationupdaterequest.md)
   The request body you use to update an app custom product page localization.
 - [object AppCustomProductPageLocalizationsResponse](appcustomproductpagelocalizationsresponse.md)
-  A response that contains a list of alternative distribution package variant resources.
+  A response containing a list of localizations for a custom App Store product page.
 - [object AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponse](appcustomproductpagelocalizationapppreviewsetslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of app preview sets associated with a custom product page localization.
 - [object AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse](appcustomproductpagelocalizationappscreenshotsetslinkagesresponse.md)
-  A response that contains a list of IDs of related resources.
+  A response containing the resource identifiers of screenshot sets associated with a custom product page localization.
 - [object AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest](appcustomproductpagelocalizationsearchkeywordslinkagesrequest.md)
   The request body you use to create a relationship between a custom product page localization and a search keyword.
 

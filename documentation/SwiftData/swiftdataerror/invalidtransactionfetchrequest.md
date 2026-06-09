@@ -19,6 +19,15 @@
 static let invalidTransactionFetchRequest: SwiftDataError
 ```
 
+## See Also
+
+- [static let includePendingChangesWithBatchSize: SwiftDataError](swiftdataerror/includependingchangeswithbatchsize.md)
+- [static let sortingPendingChangesWithIdentifiers: SwiftDataError](swiftdataerror/sortingpendingchangeswithidentifiers.md)
+- [static let unsupportedKeyPath: SwiftDataError](swiftdataerror/unsupportedkeypath.md)
+- [static let unsupportedPredicate: SwiftDataError](swiftdataerror/unsupportedpredicate.md)
+- [static let unsupportedSortDescriptor: SwiftDataError](swiftdataerror/unsupportedsortdescriptor.md)
+- [static let historyTokenExpired: SwiftDataError](swiftdataerror/historytokenexpired.md)
+
 
 ---
 

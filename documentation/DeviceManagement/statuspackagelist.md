@@ -3,12 +3,10 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-The client’s declarative packages.
+The status item that lists the device’s declarative packages.
 
 **Availability**:
 - macOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,16 +25,55 @@ object StatusPackageList
 |  |  |
 | --- | --- |
 | Allowed in supervised enrollment | macOS |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | macOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
 
 ##### Reason Codes
 
 - `Error.DownloadFailed`: The package download failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last download failure.
 - `Error.InstallFailed`: The package install failed. - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
+
+##### Status Item Example
+
+**New or updated package**:
+
+Reports a new or updated package.
+
+```json
+{
+    "package": {
+        "list": [
+            {
+                "identifier": "com.example.package.enterprise-tools",
+                "declaration-identifier": "com.example.package-management",
+                "name": "Enterprise Tools",
+                "version": "2.1.0",
+                "state": "installed"
+            }
+        ]
+    }
+}
+```
+
+**Removed package**:
+
+Reports a removed package.
+
+```json
+{
+    "package": {
+        "list": [
+            {
+                "identifier": "com.example.package.enterprise-tools",
+                "_removed": true
+            }
+        ]
+    }
+}
+```
 
 ## Topics
 
@@ -50,35 +87,10 @@ object StatusPackageList
 
 ## See Also
 
-- [object StatusReport](statusreport.md)
 - [object StatusAppManagedList](statusappmanagedlist.md)
-  The device’s declarative managed apps.
-- [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
-  The device’s battery health.
-- [object StatusDeviceModelFamily](statusdevicemodelfamily.md)
-  A status report of the device’s hardware family.
-- [object StatusDeviceModelIdentifier](statusdevicemodelidentifier.md)
-  A status report of the device’s hardware identifier.
-- [object StatusDeviceModelMarketingName](statusdevicemodelmarketingname.md)
-  A status report of the device’s marketing name.
-- [object StatusDeviceModelNumber](statusdevicemodelnumber.md)
-  A status report of the device’s hardware number.
-- [object StatusDeviceOperatingSystemBuildVersion](statusdeviceoperatingsystembuildversion.md)
-  A status report of the device’s software build identifier.
-- [object StatusDeviceOperatingSystemFamily](statusdeviceoperatingsystemfamily.md)
-  A status report of the device’s operating system family.
-- [object StatusDeviceOperatingSystemMarketingName](statusdeviceoperatingsystemmarketingname.md)
-  A status report of the device’s operating system marketing name.
-- [object StatusDeviceOperatingSystemSupplementalBuildVersion](statusdeviceoperatingsystemsupplementalbuildversion.md)
-  A status report of the device’s operating system supplemental build identifier.
-- [object StatusDeviceOperatingSystemSupplementalExtraVersion](statusdeviceoperatingsystemsupplementalextraversion.md)
-  A status report of the device’s operating system’s Background Security Improvement identifier.
-- [object StatusDeviceOperatingSystemVersion](statusdeviceoperatingsystemversion.md)
-  A status report of the device’s operating system version.
-- [object StatusDeviceSerialNumber](statusdeviceserialnumber.md)
-  A status report of the device’s serial number.
-- [object StatusDeviceUDID](statusdeviceudid.md)
-  A status report of the device’s UDID.
+  The status item that lists the device’s declarative managed apps.
+- [object StatusMDMApp](statusmdmapp.md)
+  The status item that lists the devices’s MDM-installed apps.
 
 
 ---

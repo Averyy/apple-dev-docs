@@ -23,6 +23,12 @@ Any of the style protocols that define a `makeBody(configuration:)` method, like
   Enhance your app experience with system-provided and custom Liquid Glass.
 - [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
   Applies the Liquid Glass effect to a view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+  Associates an identity value to Liquid Glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+  Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
 - [func interactive(Bool) -> Glass](glass/interactive(_:).md)
   Returns a copy of the structure configured to be interactive.
 - [struct GlassEffectContainer](glasseffectcontainer.md)
@@ -48,6 +54,10 @@ Any of the style protocols that define a `makeBody(configuration:)` method, like
   The properties of a button.
 - [func signInWithAppleButtonStyle(SignInWithAppleButton.Style) -> some View](view/signinwithapplebuttonstyle(_:).md)
   Sets the style used for displaying the control (see `SignInWithAppleButton.Style`).
+- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
+- [struct ButtonSizing](buttonsizing.md)
+  The sizing behavior of `Button`s and other button-like controls.
 ### Styling pickers
 - [func pickerStyle<S>(S) -> some View](view/pickerstyle(_:).md)
   Sets the style for pickers within this view.

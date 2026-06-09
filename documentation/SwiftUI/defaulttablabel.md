@@ -17,6 +17,7 @@ The default label to use for a tab or tab section.
 ## Declaration
 
 ```swift
+nonisolated
 struct DefaultTabLabel
 ```
 

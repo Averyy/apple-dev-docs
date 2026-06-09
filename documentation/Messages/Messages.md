@@ -106,6 +106,8 @@ In iOS and iPadOS 18.2 and later, a person may select an app other than the Mess
   The error codes that the Messages framework generates.
 - [enum MSCriticalMessagingError](mscriticalmessagingerror.md)
   Values that describe errors the Critical Messaging API returns.
+### Classes
+- [class MSUPIRequest](msupirequest.md)
 
 
 ---

@@ -1,0 +1,23 @@
+# init(insightType:schema:model:)
+
+**Framework**: TrustInsights  
+**Kind**: init
+
+Initializes a new insight request with the provided insight type, schema, and model versions.
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- visionOS ?+
+
+## Declaration
+
+```swift
+init(insightType: InsightType.Type, schema: InsightType.SchemaVersion, model: InsightEvaluator.ModelVersion = .current)
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/trustinsights/insightevaluator/insightrequest/init(insighttype:schema:model:))*

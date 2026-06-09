@@ -18,10 +18,10 @@ func coordinateSpace(for location: Accessory.LocationName, correction: ARKitCoor
 
 The coordinate space of the location.
 
-#### Discussion
+## Parameters
 
-- Parameters - location: The location name.
-- correction: Correction type to apply.
+- `location`: The location name.
+- `correction`: Correction type to apply.
 
 
 ---

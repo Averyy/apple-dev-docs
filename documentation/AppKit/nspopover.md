@@ -82,6 +82,11 @@ Popovers can be detached to become a separate window when they are dragged by im
 ### Instance Methods
 - [func show(relativeTo: NSToolbarItem)](nspopover/show(relativeto:).md)
   Shows the popover anchored to the specified toolbar item.
+### Structures
+- [NSPopover.DidCloseMessage](nspopover/didclosemessage.md)
+- [NSPopover.DidShowMessage](nspopover/didshowmessage.md)
+- [NSPopover.WillCloseMessage](nspopover/willclosemessage.md)
+- [NSPopover.WillShowMessage](nspopover/willshowmessage.md)
 
 ## Relationships
 

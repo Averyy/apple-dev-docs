@@ -20,10 +20,6 @@ The color of a whiteboard canvas.
 var color: some AssistantSchemas.Enum { get }
 ```
 
-## Mentions
-
-- [Making whiteboard actions available to Siri and Apple Intelligence](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app enum implementation. The following example shows an app enum that conforms to the `.whiteboard.color` schema:
@@ -41,14 +37,7 @@ enum CanvasColor: AppEnum {
 }
 ```
 
-For more information about the `.whiteboard` app intent domain, see [`Making whiteboard actions available to Siri and Apple Intelligence`](making-whiteboard-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var itemType: some AssistantSchemas.Enum](assistantschemas/whiteboardenum/itemtype.md)
-  The type of an item on a whiteboard canvas.
-- [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
-  Assistant schema conformance for whiteboard types.
+For more information about the `.whiteboard` app intent domain, see doc:Making-whiteboard-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

@@ -11,6 +11,7 @@ The content of the response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,6 +23,8 @@ var content: Content.PartiallyGenerated
 
 - [var rawContent: GeneratedContent](languagemodelsession/responsestream/snapshot/rawcontent.md)
   The raw content of the response.
+- [var transcriptEntries: ArraySlice<Transcript.Entry>](languagemodelsession/responsestream/snapshot/transcriptentries.md)
+  The list of transcript entries.
 
 
 ---

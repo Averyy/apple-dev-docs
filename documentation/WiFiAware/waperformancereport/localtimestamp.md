@@ -8,6 +8,7 @@ The time the report was generated, using a local monotonically increasing clock.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

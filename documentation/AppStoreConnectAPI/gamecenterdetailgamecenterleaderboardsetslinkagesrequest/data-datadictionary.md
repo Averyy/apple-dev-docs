@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a detail resource.
+The resource linkage data for updating the leaderboard sets associated with a Game Center detail.
 
 **Availability**:
 - App Store Connect API 3.0+

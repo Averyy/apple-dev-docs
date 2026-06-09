@@ -1,22 +1,22 @@
-# NSTextTable.LayoutAlgorithm.fixedLayoutAlgorithm
+# fixedLayoutAlgorithm
 
 **Framework**: AppKit  
-**Kind**: case
+**Kind**: property
 
 Specifies fixed layout algorithm
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-case fixedLayoutAlgorithm
+static var fixedLayoutAlgorithm: NSTextTable.LayoutAlgorithm { get }
 ```
 
 ## See Also
 
-- [NSTextTable.LayoutAlgorithm.automaticLayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
+- [static var automaticLayoutAlgorithm: NSTextTable.LayoutAlgorithm](nstexttable/layoutalgorithm-swift.enum/automaticlayoutalgorithm.md)
   Specifies automatic layout algorithm
 
 

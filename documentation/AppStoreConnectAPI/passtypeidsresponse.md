@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of pass type ids response resources.
+A response containing a list of Wallet pass type identifiers registered in your account.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -26,13 +26,13 @@ object PassTypeIdsResponse
 - [object CertificatePassTypeIdLinkageResponse](certificatepasstypeidlinkageresponse.md)
   A response body that contains the ID of a single related resource.
 - [object PassTypeId](passtypeid.md)
-  The data structure that represents a pass type id resource.
+  A pass type identifier used to create and manage Wallet passes such as boarding passes, coupons, or loyalty cards.
 - [object PassTypeIdCertificatesLinkagesResponse](passtypeidcertificateslinkagesresponse.md)
-  A response that contains a list of pass type id certificates linkages response resources.
+  A response containing the resource identifiers of signing certificates associated with a pass type identifier.
 - [object PassTypeIdCreateRequest](passtypeidcreaterequest.md)
-  The request body you use to create a pass type id create request resource.
+  The request body for registering a new pass type identifier for Wallet pass signing.
 - [object PassTypeIdResponse](passtypeidresponse.md)
-  A response that contains a single pass type id response resource.
+  A response containing a single Wallet pass type identifier.
 - [object PassTypeIdUpdateRequest](passtypeidupdaterequest.md)
   The request body you use to update a pass type id update request.
 

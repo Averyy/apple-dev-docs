@@ -8,6 +8,7 @@ Performs an AutoFill-assisted authorization request.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - visionOS 1.0+
 
 ## Declaration

@@ -22,9 +22,17 @@ struct AsyncBytes
 
 ## Topics
 
+### Creating an iterator
+- [func makeAsyncIterator() -> URL.AsyncBytes.AsyncIterator](url/asyncbytes/makeasynciterator.md)
+  Creates the asynchronous iterator that produces elements of this asynchronous sequence.
+- [URL.AsyncBytes.AsyncIterator](url/asyncbytes/asynciterator.md)
+  The iterator type that produces elements of this asynchronous sequence.
 ### Adapting Textual Sequences
 - [var lines: AsyncLineSequence<URL.AsyncBytes>](url/lines.md)
   The URL’s resource data, as an asynchronous sequence of lines of text.
+### Supporting Types
+- [URL.AsyncBytes.Element](url/asyncbytes/element.md)
+  The type of element produced by this asynchronous sequence.
 
 ## Relationships
 

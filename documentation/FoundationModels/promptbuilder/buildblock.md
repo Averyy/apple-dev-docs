@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Creates a builder with the a block.
+Creates a builder with a block.
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +11,7 @@ Creates a builder with the a block.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

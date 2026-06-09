@@ -26,28 +26,16 @@ If [`true`](https://developer.apple.com/documentation/Swift/true), the delegate 
 
 ## See Also
 
-- [var activityType: String](nsuseractivity/activitytype.md)
-  The user activity object’s activity type.
-- [var title: String?](nsuseractivity/title.md)
-  An optional, user-visible title for this activity, such as a document name or web page title.
-- [var requiredUserInfoKeys: Set<String>?](nsuseractivity/requireduserinfokeys.md)
-  A set of keys that represent the minimal information about the activity that should be stored for later restoration.
-- [var userInfo: [AnyHashable : Any]?](nsuseractivity/userinfo.md)
-  A dictionary containing app-specific state information needed to continue an activity on another device.
-- [func addUserInfoEntries(from: [AnyHashable : Any])](nsuseractivity/adduserinfoentries(from:).md)
-  Adds the contents of the specified dictionary to the user info dictionary.
-- [var targetContentIdentifier: String?](nsuseractivity/targetcontentidentifier.md)
-  A string that identifies the user activity’s content.
-- [var contentAttributeSet: CSSearchableItemAttributeSet?](nsuseractivity/contentattributeset.md)
-  A set of properties that describe the activity.
-- [var keywords: Set<String>](nsuseractivity/keywords.md)
-  A set of localized keywords that can help users find the activity in search results.
-- [var persistentIdentifier: NSUserActivityPersistentIdentifier?](nsuseractivity/persistentidentifier.md)
-  A value used to identify the user activity.
-- [typealias NSUserActivityPersistentIdentifier](nsuseractivitypersistentidentifier.md)
-  The type that defines a persistent identifier value for a user activity.
-- [var appClipActivationPayload: APActivationPayload?](nsuseractivity/appclipactivationpayload.md)
-  An object containing the payload information that launches an App Clip.
+- [func becomeCurrent()](nsuseractivity/becomecurrent.md)
+  Marks the activity as currently in use by the user.
+- [func resignCurrent()](nsuseractivity/resigncurrent.md)
+  Marks this activity object as inactive without invalidating it.
+- [func invalidate()](nsuseractivity/invalidate.md)
+  Invalidates an activity and marks it as no longer eligible for continuation.
+- [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](nsuseractivity/deleteallsaveduseractivities(completionhandler:).md)
+  Deletes all user activities created by your app.
+- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
+  Deletes user activities created by your app that have the specified persistent identifiers.
 
 
 ---

@@ -4,11 +4,11 @@
 **Kind**: enum
 
 **Availability**:
-- iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
-- macOS 26.5+
-- visionOS 26.5+
+- iOS 26.4+
+- iPadOS 26.4+
+- Mac Catalyst 26.4+
+- macOS 26.4+
+- visionOS 26.4+
 
 ## Declaration
 

@@ -136,6 +136,11 @@ You use an asset writer to write media to file formats such as the QuickTime mov
 ### Initializers
 - [convenience init(URL: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-24qcl.md)
 - [init(URL: URL, fileType: AVFileType) throws](avassetwriter/init(url:filetype:)-9j3k4.md)
+### Instance Properties
+- [var isProVideoStorageSupported: Bool](avassetwriter/isprovideostoragesupported.md)
+  Indicates whether the receiver supports writing to pre-allocated storage on this device for high data rate video capture formats such as ProRes.
+- [var usesProVideoStorage: Bool](avassetwriter/usesprovideostorage.md)
+  Indicates whether to use pre-allocated storage.
 
 ## Relationships
 

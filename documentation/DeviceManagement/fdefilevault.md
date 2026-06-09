@@ -7,8 +7,6 @@ The payload that configures FileVault.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -29,12 +27,12 @@ As of macOS 10.15, FileVault settings require supervision or user approval when 
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Requires user-approved MDM | macOS |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -86,10 +84,10 @@ As of macOS 10.15, FileVault settings require supervision or user approval when 
 
 - `Certificate` (data): The DER-encoded certificate data if the system creates an institutional recovery key. This key isn’t supported on a Mac with Apple silicon.
 - `Defer` (boolean): If `true`, the system defers enabling FileVault until the designated user logs out. For details, see `fdesetup(8)`. Only a local user or a mobile account user can enable FileVault.
-- `DeferDontAskAtUserLogout` (boolean): If `true`, the system prevents requests to enable FileVault at user logout time.
+- `DeferDontAskAtUserLogout` (boolean): If `true`, the system prevents requests to enable FileVault at user logout time. Available: macOS 10.10+
 - `DeferForceAtUserLoginMaxBypassAttempts` (integer): The maximum number of times users can bypass enabling FileVault before the system requires the user to enable it to log in. If the value is `0`, the system requires the user to enable FileVault the next time they attempt to log in. Set this key to `-1` to disable this feature.
 - `Enable` (string) *(required)*: Set to `On` to enable FileVault and set to `Off` to disable FileVault. Payloads set to `On` sent through MDM need to either include full authentication information in the payload or have the `Defer` option set to `true`. When `Defer` is `true`, the system prompts for the authentication information when the user enables FileVault.
-- `ForceEnableInSetupAssistant` (boolean): If `true`, and installation of this payload occurs after enrolling with MDM in Setup Assistant, the system requests Setup Assistant to enable FileVault at setup time. To use this, enable the Await Device Configured DEP configuration option and send this profile with this key set, before sending the [`DeviceConfiguredCommand`](deviceconfiguredcommand.md). An admin SecureToken user is required, otherwise the FileVault pane does not appear.
+- `ForceEnableInSetupAssistant` (boolean): If `true`, and installation of this payload occurs after enrolling with MDM in Setup Assistant, the system requests Setup Assistant to enable FileVault at setup time. To use this, enable the Await Device Configured ADE configuration option and send this profile with this key set, before sending the [`DeviceConfiguredCommand`](deviceconfiguredcommand.md). An admin SecureToken user is required, otherwise the FileVault pane does not appear. Available: macOS 14+
 - `OutputPath` (string): The path to the location of the recovery key and computer information property list.
 - `Password` (string): The password of the Open Directory user to add to FileVault. Use the `UserEntersMissingInfo` key to prompt for this information.
 - `PayloadCertificateUUID` (string): The UUID of the payload within the same profile containing the asymmetric recovery key certificate payload.

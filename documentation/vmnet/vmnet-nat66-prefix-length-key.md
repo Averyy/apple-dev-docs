@@ -3,6 +3,8 @@
 **Framework**: vmnet  
 **Kind**: var
 
+The IPv6 prefix (uint64) to use with vmnet shared mode.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 10.15+
@@ -13,21 +15,42 @@
 let vmnet_nat66_prefix_length_key: UnsafePointer<CChar>
 ```
 
+#### Discussion
+
+The prefix_length must be 64; the use of this key, `VMNET_SHARED_MODE`, is deprecated.
+
 ## See Also
 
-- [let vmnet_allocate_mac_address_key: UnsafePointer<CChar>](vmnet_allocate_mac_address_key.md)
-- [let vmnet_enable_checksum_offload_key: UnsafePointer<CChar>](vmnet_enable_checksum_offload_key.md)
-- [let vmnet_enable_isolation_key: UnsafePointer<CChar>](vmnet_enable_isolation_key.md)
-- [let vmnet_enable_tso_key: UnsafePointer<CChar>](vmnet_enable_tso_key.md)
-- [let vmnet_end_address_key: UnsafePointer<CChar>](vmnet_end_address_key.md)
-- [let vmnet_host_ip_address_key: UnsafePointer<CChar>](vmnet_host_ip_address_key.md)
-- [let vmnet_host_ipv6_address_key: UnsafePointer<CChar>](vmnet_host_ipv6_address_key.md)
-- [let vmnet_host_subnet_mask_key: UnsafePointer<CChar>](vmnet_host_subnet_mask_key.md)
+- [typealias vmnet_network_configuration_ref](vmnet_network_configuration_ref.md)
+  A reference to a network vmnet network configuration.
+- [func vmnet_network_configuration_add_dhcp_reservation(vmnet_network_configuration_ref, UnsafePointer<ether_addr_t>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_add_dhcp_reservation(_:_:_:).md)
+  Configures a new dhcp reservation for a vmnet network.
+- [func vmnet_network_configuration_add_port_forwarding_rule(vmnet_network_configuration_ref, UInt8, sa_family_t, UInt16, UInt16, UnsafeRawPointer) -> vmnet_return_t](vmnet_network_configuration_add_port_forwarding_rule(_:_:_:_:_:_:).md)
+  Configures a new port forwarding rule for a vmnet network.
+- [func vmnet_network_configuration_disable_router_advertisement(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_router_advertisement(_:).md)
+  Disables router advertisement on a network.
+- [func vmnet_network_configuration_disable_nat66(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat66(_:).md)
+  Disables NAT66 on a network.
+- [func vmnet_network_configuration_disable_nat44(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_nat44(_:).md)
+  Disables NAT44 on a network.
+- [func vmnet_network_configuration_disable_dns_proxy(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dns_proxy(_:).md)
+  Disables the DNS proxy on a network.
+- [func vmnet_network_configuration_disable_dhcp(vmnet_network_configuration_ref)](vmnet_network_configuration_disable_dhcp(_:).md)
+  Disables DHCP server on a network.
 - [let vmnet_nat66_prefix_key: UnsafePointer<CChar>](vmnet_nat66_prefix_key.md)
-- [let vmnet_network_identifier_key: UnsafePointer<CChar>](vmnet_network_identifier_key.md)
-- [let vmnet_shared_interface_name_key: UnsafePointer<CChar>](vmnet_shared_interface_name_key.md)
-- [let vmnet_start_address_key: UnsafePointer<CChar>](vmnet_start_address_key.md)
-- [let vmnet_subnet_mask_key: UnsafePointer<CChar>](vmnet_subnet_mask_key.md)
+  The IPv6 prefix string to use with vmnet shared mode.
+- [func vmnet_port_forwarding_rule_get_details(xpc_object_t, UnsafeMutablePointer<UInt8>, UnsafeMutablePointer<UInt16>, UnsafeMutablePointer<in_addr>, UnsafeMutablePointer<UInt16>) -> vmnet_return_t](vmnet_port_forwarding_rule_get_details(_:_:_:_:_:).md)
+  Extracts port forwarding rule details from the rule XPC dictionary object.
+- [func vmnet_network_configuration_set_external_interface(vmnet_network_configuration_ref, UnsafePointer<CChar>) -> vmnet_return_t](vmnet_network_configuration_set_external_interface(_:_:).md)
+  Configures the external interface of a vmnet network.
+- [func vmnet_network_configuration_set_ipv4_subnet(vmnet_network_configuration_ref, UnsafePointer<in_addr>, UnsafePointer<in_addr>) -> vmnet_return_t](vmnet_network_configuration_set_ipv4_subnet(_:_:_:).md)
+  Configures the IPv4 addresses of a vmnet network.
+- [func vmnet_network_configuration_set_ipv6_prefix(vmnet_network_configuration_ref, UnsafePointer<in6_addr>, UInt8) -> vmnet_return_t](vmnet_network_configuration_set_ipv6_prefix(_:_:_:).md)
+  Configures the IPv6 prefix for a vmnet network object.
+- [func vmnet_network_configuration_set_mtu(vmnet_network_configuration_ref, UInt32) -> vmnet_return_t](vmnet_network_configuration_set_mtu(_:_:).md)
+  Configures the maximum transmission unit (MTU) for a vmnet network.
+- [func vmnet_network_get_ipv6_prefix(vmnet_network_ref, UnsafeMutablePointer<in6_addr>, UnsafeMutablePointer<UInt8>)](vmnet_network_get_ipv6_prefix(_:_:_:).md)
+  Returns the IPv6 prefix of a network.
 
 
 ---

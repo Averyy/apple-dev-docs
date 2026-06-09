@@ -21,9 +21,6 @@ class AVAudioUnit
 
 ## Topics
 
-### Getting the Core Audio audio unit
-- [var audioUnit: AudioUnit](avaudiounit/audiounit.md)
-  The underlying Core Audio audio unit.
 ### Loading an audio preset file
 - [func loadPreset(at: URL) throws](avaudiounit/loadpreset(at:).md)
   Loads an audio unit using a specified preset.
@@ -39,8 +36,14 @@ class AVAudioUnit
   The name of the audio unit.
 - [var version: Int](avaudiounit/version.md)
   The version number of the audio unit.
-- [var auAudioUnit: AUAudioUnit](avaudiounit/auaudiounit.md)
-  The audio unit class wrapping or underlying the implementation’s audio unit.
+### Instance Properties
+- [var audioUnit: AudioUnit](avaudiounit/audiounit-5vuo0.md)
+- [var audioUnit: AudioUnit](avaudiounit/audiounit-7dsac.md)
+### Instance Methods
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-66uo7.md)
+  Provides scoped access to the audio unit’s AudioUnit
+- [func withAudioUnit<R, E>((borrowing AudioUnit) throws(E) -> R) throws(E) -> R](avaudiounit/withaudiounit(_:)-6c2ze.md)
+  Provides scoped access to the audio unit’s AudioUnit
 
 ## Relationships
 
@@ -58,6 +61,8 @@ class AVAudioUnit
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

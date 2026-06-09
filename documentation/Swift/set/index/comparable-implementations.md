@@ -17,11 +17,11 @@
   Returns a half-open range that contains its lower bound but not its upper bound.
 - [static func < (Set<Element>.Index, Set<Element>.Index) -> Bool](set/index/_(_:_:).md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](set/index/_(_:_:)-8taor.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](set/index/_(_:_:)-46ohg.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](set/index/_=(_:_:)-8cq0s.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](set/index/_=(_:_:)-85ahe.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](set/index/_=(_:_:)-9wsxs.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](set/index/_=(_:_:)-9skvc.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

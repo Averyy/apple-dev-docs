@@ -1,10 +1,10 @@
-# GET /v1/appEvents/{id}/relationships/localizations
+# List localization IDs for an app event
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -17,11 +17,16 @@
 ## See Also
 
 - [Read In-App Event Information](get-v1-appevents-_id_.md)
-- [GET /v1/appEvents/{id}/localizations](get-v1-appevents-_id_-localizations.md)
-- [GET /v1/apps/{id}/appEvents](get-v1-apps-_id_-appevents.md)
-- [PATCH /v1/appEvents/{id}](patch-v1-appevents-_id_.md)
-- [POST /v1/appEvents](post-v1-appevents.md)
-- [Delete an App Event](delete-v1-appevents-_id_.md)
+  Get information about a specific in-app event.
+- [List all localizations for an in-app event](get-v1-appevents-_id_-localizations.md)
+  Get a list of all localizations for a specific in-app event.
+- [List all in-app events for an app](get-v1-apps-_id_-appevents.md)
+  Get a list of in-app events for a specific app.
+- [Modify an in-app event](patch-v1-appevents-_id_.md)
+  Update the metadata for a specific in-app event.
+- [Create an in-app event](post-v1-appevents.md)
+  Create a new in-app event for your app.
+- [Delete an app event](delete-v1-appevents-_id_.md)
   Delete an in-app event and its related metadata.
 
 

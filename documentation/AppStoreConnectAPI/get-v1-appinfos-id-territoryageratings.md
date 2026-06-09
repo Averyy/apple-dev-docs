@@ -18,14 +18,14 @@ List all territory age ratings for a specific app info.
 
 ## Parameters
 
-- `fields[territories]` ([string])
-- `fields[territoryAgeRatings]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
+- `fields[territoryAgeRatings]` ([string]): Additional fields to include for each territory age rating resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of territory age rating resources to return.
 
 ## See Also
 
-- [List Territory Age Rating IDs for an App Info](get-v1-appinfos-_id_-relationships-territoryageratings.md)
+- [List territory age rating IDs for an app info](get-v1-appinfos-_id_-relationships-territoryageratings.md)
   List all territory age rating IDs for a specific app info.
 
 

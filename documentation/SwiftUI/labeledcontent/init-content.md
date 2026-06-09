@@ -17,7 +17,7 @@ Creates a labeled view that generates its label from a localized string key.
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

@@ -8,6 +8,7 @@ The endpoint of a Wi-Fi Aware connection.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -33,6 +34,9 @@ struct WAEndpoint
   Two endpoints are logically equivalent if they have the same service type (publish vs subscribe) with the same name, and refer to the same device.
 - [func hash(into: inout Hasher)](waendpoint/hash(into:).md)
   Compute unique hash of this object.
+### Instance Properties
+- [let performanceForecast: [WAPerformanceMode : WAPerformanceForecast]](waendpoint/performanceforecast.md)
+  The forecasted performance for connections setup to the remote device, per WAPerformanceMode.
 
 ## Relationships
 

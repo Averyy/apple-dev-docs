@@ -11,6 +11,7 @@ A structure that stores the output of a response call.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,12 +26,17 @@ struct Response<Content> where Content : Generable
   The response content.
 - [let rawContent: GeneratedContent](languagemodelsession/response/rawcontent.md)
   The raw response content.
+### Inspecting the usage tokens
+- [let usage: LanguageModelSession.Usage](languagemodelsession/response/usage.md)
+  Information about how many tokens were used by this response.
 ### Getting the transcript entries
 - [let transcriptEntries: ArraySlice<Transcript.Entry>](languagemodelsession/response/transcriptentries.md)
   The list of transcript entries.
 
 ## See Also
 
+- [var isResponding: Bool](languagemodelsession/isresponding.md)
+  A Boolean value that indicates a response is being generated.
 - [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
   Produces a response to a prompt.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
@@ -43,10 +49,6 @@ struct Response<Content> where Content : Generable
   Produces a generable object as a response to a prompt.
 - [func respond(to:schema:includeSchemaInPrompt:options:)](languagemodelsession/respond(to:schema:includeschemainprompt:options:).md)
   Produces a generated content type as a response to a prompt and schema.
-- [struct Prompt](prompt.md)
-  A prompt from a person to the model.
-- [struct GenerationOptions](generationoptions.md)
-  Options that control how the model generates its response to a prompt.
 
 
 ---

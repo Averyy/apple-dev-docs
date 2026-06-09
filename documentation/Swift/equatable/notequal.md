@@ -17,7 +17,7 @@ Returns a Boolean value indicating whether two values are not equal.
 ## Declaration
 
 ```swift
-static func != (lhs: Self, rhs: Self) -> Bool
+static func != (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion
@@ -33,7 +33,7 @@ This is the default implementation of the not-equal-to operator (`!=`) for any t
 
 ## See Also
 
-- [static func == (Self, Self) -> Bool](equatable/==(_:_:).md)
+- [static func == (borrowing Self, borrowing Self) -> Bool](equatable/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.
 
 

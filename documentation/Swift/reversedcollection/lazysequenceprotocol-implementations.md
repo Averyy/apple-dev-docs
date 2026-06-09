@@ -10,6 +10,8 @@
 ### Instance Methods
 - [func compactMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](reversedcollection/compactmap(_:)-45kvo.md)
   Returns the non-`nil` results of mapping the given transformation over this sequence.
+- [func filter((Self.Elements.Element) -> Bool) -> LazyFilterSequence<Self.Elements>](reversedcollection/filter(_:)-4t9rn.md)
+  Returns the elements of `self` that satisfy `isIncluded`.
 - [func flatMap<SegmentOfResult>((Self.Elements.Element) -> SegmentOfResult) -> LazySequence<FlattenSequence<LazyMapSequence<Self.Elements, SegmentOfResult>>>](reversedcollection/flatmap(_:)-4wxgx.md)
   Returns the concatenated results of mapping the given transformation over this sequence.
 - [func flatMap<ElementOfResult>((Self.Elements.Element) -> ElementOfResult?) -> LazyMapSequence<LazyFilterSequence<LazyMapSequence<Self.Elements, ElementOfResult?>>, ElementOfResult>](reversedcollection/flatmap(_:)-81zng.md)

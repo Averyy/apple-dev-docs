@@ -38,7 +38,7 @@ This method produces an error if `data` does not contain valid keyed data.
 
 ## See Also
 
-- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:)-40hyk.md)
+- [class func unarchiveTopLevelObjectWithData(Data) throws -> Any?](nskeyedunarchiver/unarchivetoplevelobjectwithdata(_:).md)
   Decodes a previously-archived object graph, and returns the root object.
 - [class func unarchivedObject(ofClasses: Set<AnyHashable>, from: Data) throws -> Any](nskeyedunarchiver/unarchivedobject(ofclasses:from:)-b9t5.md)
   Decodes a previously-archived object graph, returning the root object as one of the specified classes.

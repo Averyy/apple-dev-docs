@@ -8,7 +8,7 @@ A payload for authenticating a HomeKit accessory.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 11.3+
+- Mac Catalyst 27.0+ (Beta)
 - visionOS 1.0+
 
 ## Declaration

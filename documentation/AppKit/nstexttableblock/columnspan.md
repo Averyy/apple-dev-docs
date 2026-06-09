@@ -6,7 +6,7 @@
 Returns the number of table columns spanned by this text table block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

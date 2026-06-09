@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The tool used to draw on the canvas.
+The tool for drawing on the canvas.
 
 **Availability**:
 - iOS 26.0+
@@ -21,9 +21,16 @@ The tool used to draw on the canvas.
 
 #### Discussion
 
-When the touch is a drawing interaction this is the tool that is used to draw.
+When a touch is a drawing interaction, the canvas uses this tool to draw.
 
 Default is `PKInkingTool(.pen)`.
+
+## See Also
+
+- [var isEditable: Bool](papermarkupviewcontroller/iseditable.md)
+  A Boolean value that indicates whether a person can edit the canvas contents.
+- [var isRulerActive: Bool](papermarkupviewcontroller/isruleractive.md)
+  A Boolean value that indicates whether a ruler view is visible on the canvas.
 
 
 ---

@@ -33,8 +33,6 @@ To implement accelerated graphics inside your virtualization solution, you need 
 - [func PGCopyOptionROMURL() -> URL](pgcopyoptionromurl().md)
   Copies the URL of the ROM image to use on the guest graphics device.
 ### Devices
-- [func PGNewDeviceWithDescriptor(PGDeviceDescriptor) -> (any PGDevice)?](pgnewdevicewithdescriptor(_:).md)
-  Creates a new paravirtualized graphics device.
 - [class PGDeviceDescriptor](pgdevicedescriptor.md)
   A description of the paravirtualized graphics device to create.
 - [protocol PGDevice](pgdevice.md)

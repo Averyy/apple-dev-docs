@@ -49,6 +49,8 @@ To learn more about the API you use in your package manifest, see [`Package`](ht
 
 - [Source editor](source-editor.md)
   Edit your source files, locate issues, and make necessary changes using the source editor.
+- [Coding intelligence](coding-intelligence.md)
+  Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 - [Bundles and frameworks](bundles-and-frameworks.md)
   Organize code and resources in bundles and frameworks.
 

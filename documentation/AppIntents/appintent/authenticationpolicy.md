@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A property that defines the authentication policy that indicates whether this app intent requires the device to be unlocked or otherwise authenticated.
+The authentication policy to enforce when running the app intent.
 
 **Availability**:
 - iOS 16.0+
@@ -21,10 +21,14 @@ A property that defines the authentication policy that indicates whether this ap
 static var authenticationPolicy: IntentAuthenticationPolicy { get }
 ```
 
+#### Discussion
+
+Set the value of this property if you want someone to provide authentication before running the app intent. The default value of this property is [`IntentAuthenticationPolicy.alwaysAllowed`](intentauthenticationpolicy/alwaysallowed.md), which allows the intent to run without authentication, including when the device is locked.
+
 ## See Also
 
 - [enum IntentAuthenticationPolicy](intentauthenticationpolicy.md)
-  An enumeration that describes the authentication policy to use when running an app intent.
+  The authentication policies you can apply to an app intent when it runs.
 
 
 ---

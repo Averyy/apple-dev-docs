@@ -49,6 +49,8 @@ The default value is [`ListFormatStyle.Width.standard`](listformatstyle/width-sw
   A type that describes whether the returned list contains cumulative or alternative elements.
 - [var locale: Locale](listformatstyle/locale.md)
   The locale to use when formatting items in the list.
+- [func locale(Locale) -> ListFormatStyle<Style, Base>](listformatstyle/locale(_:).md)
+  Modifies the list format style to use the specified locale.
 
 
 ---

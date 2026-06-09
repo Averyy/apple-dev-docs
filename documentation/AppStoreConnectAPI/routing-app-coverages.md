@@ -13,24 +13,24 @@ For information about creating a geographic coverage file, see “Specifying the
 ## Topics
 
 ### Reading and Creating Routing App Coverages
-- [Read the Routing App Coverage Information of an App Store Version](get-v1-appstoreversions-_id_-routingappcoverage.md)
+- [Read the routing app coverage information of an app store version](get-v1-appstoreversions-_id_-routingappcoverage.md)
   Get the routing app coverage file that is associated with a specific App Store version
-- [Read Routing App Coverage Information](get-v1-routingappcoverages-_id_.md)
+- [Read routing app coverage information](get-v1-routingappcoverages-_id_.md)
   Get information about the routing app coverage file and its upload and processing status.
-- [Create a Routing App Coverage](post-v1-routingappcoverages.md)
+- [Create a routing app coverage](post-v1-routingappcoverages.md)
   Attach a routing app coverage file to an App Store version.
 ### Modifying and Deleting Routing App Coverages
-- [Modify a Routing App Coverage](patch-v1-routingappcoverages-_id_.md)
+- [Modify a routing app coverage](patch-v1-routingappcoverages-_id_.md)
   Commit a routing app coverage file after uploading it.
-- [Delete a Routing App Coverage](delete-v1-routingappcoverages-_id_.md)
+- [Delete a routing app coverage](delete-v1-routingappcoverages-_id_.md)
   Delete the routing app coverage file that is associated with a version.
 ### Objects
 - [object RoutingAppCoverage](routingappcoverage.md)
-  The data structure that represents the Routing App Coverages resource.
+  A GeoJSON file defining the geographic coverage area of a turn-by-turn navigation app, required for App Store submission.
 - [object RoutingAppCoverageCreateRequest](routingappcoveragecreaterequest.md)
   The request body you use to create a Routing App Coverage.
 - [object RoutingAppCoverageResponse](routingappcoverageresponse.md)
-  A response that contains a single Routing App Coverages resource.
+  The response body for endpoints that read or modify the routing app coverage file for an app version.
 - [object RoutingAppCoverageUpdateRequest](routingappcoverageupdaterequest.md)
   The request body you use to update a Routing App Coverage.
 - [object AppMediaStateError](appmediastateerror.md)

@@ -29,14 +29,8 @@ Available extended attributes include:
 
 ## See Also
 
-- [Generating developer tokens](generating-developer-tokens.md)
-  Create a JSON Web Token to authorize your requests to the Apps and Books for Organizations API.
-- [Handling requests and responses](handling-requests-and-responses.md)
-  Write a request for app or book metadata and handle responses from the API.
 - [Fetching storefront objects](fetching-storefront-objects.md)
   Pick a region-specific geographic location to retrieve catalog information from.
-- [Common Objects](common-objects.md)
-  Understand the common JSON objects that framework responses contain.
 
 
 ---

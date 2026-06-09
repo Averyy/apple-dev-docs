@@ -30,6 +30,14 @@ FSClient is the primary management interface for FSKit. Use this class to discov
   Asynchronously retrieves an list of installed file system modules.
 - [class FSModuleIdentity](fsmoduleidentity.md)
   An installed file system module.
+### Performing single-volume mounting
+- [func mountSingleVolume(resource: FSResource, bundleID: String, options: [String], completionHandler: (URL?, (any Error)?) -> Void)](fsclient/mountsinglevolume(resource:bundleid:options:completionhandler:).md)
+  Asynchronously mounts a single volume file system with a given resource.
+- [class FSResource](fsresource.md)
+  An abstract resource a file system uses to provide data for a volume.
+### Accessing file system extension settings
+- [func openFileSystemExtensionsSettings() -> Bool](fsclient/openfilesystemextensionssettings.md)
+  Opens the File System Extensions settings in System Settings.
 
 ## Relationships
 

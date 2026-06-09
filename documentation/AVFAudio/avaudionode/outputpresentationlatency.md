@@ -26,7 +26,9 @@ This latency describes the maximum time it takes to present the audio at the out
 
 ## See Also
 
-- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit.md)
+- [func withAUAudioUnit<R, E>((borrowing AUAudioUnit) throws(E) -> R) throws(E) -> R](avaudionode/withauaudiounit(_:).md)
+  Provides scoped access to the node’s AUAudioUnit
+- [var auAudioUnit: AUAudioUnit](avaudionode/auaudiounit-1gu8g.md)
   An audio unit object that wraps or underlies the implementation’s audio unit.
 - [var latency: TimeInterval](avaudionode/latency.md)
   The processing latency of the node, in seconds.

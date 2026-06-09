@@ -21,6 +21,8 @@ static var enabled: PKShippingContactEditingMode { get }
 
 ## See Also
 
+- [var applePayLaterAvailability: PKPaymentRequest.ApplePayLaterAvailability](pkpaymentrequest/applepaylateravailability-3dxrt.md)
+  A value that indicates whether Apple Pay Later is available for a transaction.
 - [var requiredBillingAddressFields: PKAddressField](pkpaymentrequest/requiredbillingaddressfields.md)
   A bit field of billing address fields that you need in order to process the transaction.
 - [var requiredShippingAddressFields: PKAddressField](pkpaymentrequest/requiredshippingaddressfields.md)

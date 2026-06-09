@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: class
 
-An observable object that helps an app send the required data to all connected receiver apps to help facilitate the complete preview of the immersive media playback.
+An observable object that helps an app send the required data to all connected receiver applications to help facilitate the complete preview of the immersive media playback.
 
 **Availability**:
 - macOS 26.0+
@@ -16,7 +16,7 @@ class ImmersiveMediaRemotePreviewSender
 
 #### Overview
 
-The apps have to implement the protocol [`ImmersiveMediaPreviewMessagingProtocol`](immersivemediapreviewmessagingprotocol.md) so that messages exchanged between sender and receivers are in the correct format for processing. The apps need to provide this as custom protocol when establishing the network connection between the sender and the receivers.
+Applications have to implement the protocol [`ImmersiveMediaPreviewMessagingProtocol`](immersivemediapreviewmessagingprotocol.md) so that messages exchanged between sender and receivers are in the correct format for processing. Applications need to provide this as custom protocol when establishing the network connection between the sender and the receivers.
 
 It’s also important to configure the NWParameters to be secure by adding TLS security options as the example below.
 
@@ -90,6 +90,15 @@ let listener = try NWListener(using: parameters)
 - [Observable](../Observation/Observable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [class ImmersiveMediaPreviewMessagingProtocol](immersivemediapreviewmessagingprotocol.md)
+  An object that represents the messaging protocol a remote preview sender and receiver use to communicate.
+- [class ImmersiveMediaRemotePreviewReceiver](immersivemediaremotepreviewreceiver.md)
+  An observable object that helps applications handle receiving commands and data sent from an immersive media remote preview sender object.
+- [class ImmersivePreviewRenderer](immersivepreviewrenderer.md)
+  An object that renders an immersive video frame into a texture and exposes the command buffer for presentation.
 
 
 ---

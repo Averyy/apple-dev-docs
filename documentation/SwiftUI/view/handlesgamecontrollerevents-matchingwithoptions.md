@@ -26,6 +26,11 @@ SpriteView(scene: MyGameScene())
 .focused(true)
 ```
 
+## See Also
+
+- [func handlesGameControllerEvents(matching: GCUIEventTypes) -> some View](view/handlesgamecontrollerevents(matching:).md)
+  Specifies the game controllers events which should be delivered through the GameController framework when the view, or one of its descendants has focus.
+
 
 ---
 

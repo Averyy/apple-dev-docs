@@ -17,8 +17,8 @@ A label style that only displays the title of the label.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency static var titleOnly: TitleOnlyLabelStyle { get }
+nonisolated
+static var titleOnly: TitleOnlyLabelStyle { get }
 ```
 
 ## See Also

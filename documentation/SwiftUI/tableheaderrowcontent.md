@@ -15,6 +15,7 @@ A table row that displays a single view instead of columned content.
 ## Declaration
 
 ```swift
+nonisolated
 struct TableHeaderRowContent<Value, Content> where Value : Identifiable, Content : View
 ```
 

@@ -24,6 +24,7 @@ func CGImageDestinationCopyImageSource(_ idst: CGImageDestination, _ isrc: CGIma
 - [func CGImageSourceCopyMetadataAtIndex(CGImageSource, Int, CFDictionary?) -> CGImageMetadata?](cgimagesourcecopymetadataatindex(_:_:_:).md)
 - [func CGImageSourceRemoveCacheAtIndex(CGImageSource, Int)](cgimagesourceremovecacheatindex(_:_:).md)
 - [func CGImageSourceSetAllowableTypes(CFArray) -> OSStatus](cgimagesourcesetallowabletypes(_:).md)
+  Restricts which image formats can be decoded in the current process.
 
 
 ---

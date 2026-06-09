@@ -1,4 +1,4 @@
-# Upload an App Encryption Declaration Document
+# Upload an app encryption declaration document
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,7 +14,7 @@ Add an App Encryption Declaration Document to an existing App Encryption Declara
 
 ## See Also
 
-- [Modify an App Encryption Declaration Document](patch-v1-appencryptiondeclarationdocuments-_id_.md)
+- [Modify an app encryption declaration document](patch-v1-appencryptiondeclarationdocuments-_id_.md)
   Commit an App Encryption Declaration Document after uploading it.
 
 

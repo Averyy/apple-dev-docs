@@ -25,6 +25,7 @@ var description: String { get }
 - [class func `class`() -> AnyClass](nsproxy/class.md)
   Returns `self` (the class object).
 - [var debugDescription: String](nsproxy/debugdescription.md)
+  A string containing a human-readable description of the receiver suitable for debugging.
 
 
 ---

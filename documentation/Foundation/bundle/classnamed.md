@@ -42,6 +42,8 @@ If the bundle’s executable code is not yet loaded, this method dynamically loa
   A notification that lets observers know when classes are dynamically loaded.
 - [let NSLoadedClasses: String](nsloadedclasses.md)
   A constant used as a key for the `userInfo` dictionary of a [`didLoadNotification`](bundle/didloadnotification.md) notification that corresponds to an array of names of each class that was loaded.
+- [Bundle.DidLoadMessage](bundle/didloadmessage.md)
+  A message a bundle sends when it dynamically loads a class.
 
 
 ---

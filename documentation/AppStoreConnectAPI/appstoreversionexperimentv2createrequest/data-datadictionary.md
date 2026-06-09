@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The request body you use to update an app store version experiment v2create request.
+The request body you use to create an App Store version experiment.
 
 **Availability**:
 - App Store Connect API 2.4+
@@ -18,7 +18,7 @@ object AppStoreVersionExperimentV2CreateRequest.Data
 
 ### Objects
 - [object AppStoreVersionExperimentV2CreateRequest.Data.Attributes](appstoreversionexperimentv2createrequest/data-data.dictionary/attributes-data.dictionary.md)
-  Attributes that describe an app store version experiment v2create request resource.
+  Attributes that describe an App Store version experiment create request resource.
 - [object AppStoreVersionExperimentV2CreateRequest.Data.Relationships](appstoreversionexperimentv2createrequest/data-data.dictionary/relationships-data.dictionary.md)
   The relationships you include in the request and those on which you can operate.
 

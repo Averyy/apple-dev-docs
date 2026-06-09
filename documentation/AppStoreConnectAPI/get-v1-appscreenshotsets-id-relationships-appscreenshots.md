@@ -1,4 +1,4 @@
-# Get All App Screenshot IDs for an App Screenshot Set
+# Get all app screenshot ids for an app screenshot set
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,13 +14,13 @@ Get the ordered screenshot IDs in a screenshot set.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of app screenshot resource identifiers to return.
 
 ## See Also
 
-- [List All App Screenshots for an App Screenshot Set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
+- [List all app screenshots for an app screenshot set](get-v1-appscreenshotsets-_id_-appscreenshots.md)
   List all ordered screenshots in a screenshot set.
-- [Replace All App Screenshots for an App Screenshot Set](patch-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
+- [Replace all app screenshots for an app screenshot set](patch-v1-appscreenshotsets-_id_-relationships-appscreenshots.md)
   Change the order of the screenshots in a screenshot set.
 
 

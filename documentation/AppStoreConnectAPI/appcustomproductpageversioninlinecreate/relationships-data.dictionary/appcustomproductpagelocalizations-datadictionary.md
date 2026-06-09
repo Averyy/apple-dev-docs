@@ -16,6 +16,7 @@ object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPag
 
 ### Objects
 - [object AppCustomProductPageVersionInlineCreate.Relationships.AppCustomProductPageLocalizations.Data](appcustomproductpageversioninlinecreate/relationships-data.dictionary/appcustomproductpagelocalizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an app custom product page version inline create.
 
 ## Properties
 

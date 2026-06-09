@@ -23,7 +23,7 @@ Manage localizations for your Game Center leaderboard sets.
   Get information about a leaderboard set localization.
 - [Read the Image Associated With a Leaderboard Set Localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-gamecenterleaderboardsetimage.md)
   Get information about a leaderboard set image associated with a leaderboard set localization.
-- [GET /v1/gameCenterLeaderboardSetLocalizations/{id}/relationships/gameCenterLeaderboardSetImage](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
+- [Get the leaderboard set image ID for a Game Center leaderboard set localization](get-v1-gamecenterleaderboardsetlocalizations-_id_-relationships-gamecenterleaderboardsetimage.md)
 - [Create a Leaderboard Set Localization](post-v1-gamecenterleaderboardsetlocalizations.md)
   Add a new leaderboard set localization.
 - [Modify a Leaderboard Set Localization](patch-v1-gamecenterleaderboardsetlocalizations-_id_.md)
@@ -48,11 +48,11 @@ Manage localizations for your Game Center leaderboard sets.
 - [object GameCenterLeaderboardSetLocalizationCreateRequest](gamecenterleaderboardsetlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
 - [object GameCenterLeaderboardSetLocalizationResponse](gamecenterleaderboardsetlocalizationresponse.md)
-  A response that contains a single leaderboard set localization resource.
+  The response body for endpoints that create, read, or modify a single Game Center leaderboard set localization.
 - [object GameCenterLeaderboardSetLocalizationUpdateRequest](gamecenterleaderboardsetlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
 - [object GameCenterLeaderboardSetLocalizationsResponse](gamecenterleaderboardsetlocalizationsresponse.md)
-  A response that contains multiple leaderboard localizations resources.
+  The response body for endpoints that list Game Center leaderboard set localizations.
 
 ## See Also
 

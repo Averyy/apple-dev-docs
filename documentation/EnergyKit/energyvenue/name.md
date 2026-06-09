@@ -9,7 +9,6 @@ The name of the Home to which the venue corresponds.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

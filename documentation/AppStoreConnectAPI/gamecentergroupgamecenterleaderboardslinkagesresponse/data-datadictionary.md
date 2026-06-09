@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a group resource.
+The resource linkage data identifying the leaderboards associated with a Game Center group.
 
 **Availability**:
 - App Store Connect API 3.0+

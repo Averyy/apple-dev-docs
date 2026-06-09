@@ -7,8 +7,6 @@ A dictionary that contains additional data about the token-missing error code.
 
 **Availability**:
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

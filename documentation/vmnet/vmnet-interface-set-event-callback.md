@@ -31,9 +31,11 @@ Once the block is set, the callback can be unset by calling the function again, 
 ## See Also
 
 - [func vmnet_start_interface(xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_start_interface(_:_:_:).md)
-  Starts host or shared mode on an interface with a specified configuration.
+  Starts a new virtual interface instance.
+- [func vmnet_interface_start_with_network(vmnet_network_ref, xpc_object_t, dispatch_queue_t, vmnet_start_interface_completion_handler_t) -> interface_ref?](vmnet_interface_start_with_network(_:_:_:_:).md)
+  Starts a new virtual interface instance on a network.
 - [func vmnet_stop_interface(interface_ref, dispatch_queue_t, vmnet_interface_completion_handler_t) -> vmnet_return_t](vmnet_stop_interface(_:_:_:).md)
-  Stops the interface.
+  Stops I/O on the virtual interface.
 
 
 ---

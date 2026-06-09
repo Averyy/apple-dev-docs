@@ -12,6 +12,7 @@ A textual representation of this instance.
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

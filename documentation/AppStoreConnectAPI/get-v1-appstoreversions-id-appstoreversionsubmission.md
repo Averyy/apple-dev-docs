@@ -1,7 +1,9 @@
-# Read the App Store Version Submission Information of an App Store Version
+# Read the app store version submission information of an app store version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
+
+Get the App Review submission for a specific App Store version.
 
 **Availability**:
 - App Store Connect API 1.2+
@@ -12,19 +14,19 @@
 
 ## Parameters
 
-- `fields[appStoreVersionSubmissions]` ([string])
-- `fields[appStoreVersions]` ([string])
-- `include` ([string])
+- `fields[appStoreVersionSubmissions]` ([string]): Additional fields to include for each App Store version submission resource returned by the response.
+- `fields[appStoreVersions]` ([string]): Additional fields to include for each App Store version resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 
 ## See Also
 
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionSubmission](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)
-- [Read the App Store Review Details Resource Information of an App Store Version](get-v1-appstoreversions-_id_-appstorereviewdetail.md)
+- [Get the App Store version submission ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionsubmission.md)
+- [Read the app store review details resource information of an app store version](get-v1-appstoreversions-_id_-appstorereviewdetail.md)
   Get the details you provide to App Review so they can test your app.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreReviewDetail](get-v1-appstoreversions-_id_-relationships-appstorereviewdetail.md)
-- [Read the App Store Version Phased Release Information of an App Store Version](get-v1-appstoreversions-_id_-appstoreversionphasedrelease.md)
+- [Get the App Store review detail ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstorereviewdetail.md)
+- [Read the app store version phased release information of an app store version](get-v1-appstoreversions-_id_-appstoreversionphasedrelease.md)
   Read the phased release status and configuration for a version with phased release enabled.
-- [GET /v1/appStoreVersions/{id}/relationships/appStoreVersionPhasedRelease](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
+- [Get the phased release ID for an App Store version](get-v1-appstoreversions-_id_-relationships-appstoreversionphasedrelease.md)
 
 
 ---

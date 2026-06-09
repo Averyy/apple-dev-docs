@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-A protocol that framework types adopt to enable you to provide content to system experiences.
+An interface that system types adopt and use to manage their relationship to app entities.
 
 **Availability**:
 - iOS 18.2+
@@ -20,15 +20,43 @@ A protocol that framework types adopt to enable you to provide content to system
 protocol AppEntityAnnotatable
 ```
 
+## Mentions
+
+- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
+
 #### Overview
 
-Do not declare new conformances to `AppEntityAnnotatable`. Framework types like [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) conform to the protocol to enable you to make your app’s content available to system experiences, including Siri and Apple Intelligence.
+System types adopt the `AppEntityAnnotatable` protocol and use it to store a reference to an app entity. Don’t add support for this protocol to your own custom types. Instead, the system incorporates it into types like [`NSUserActivity`](https://developer.apple.com/documentation/Foundation/NSUserActivity) to support your custom entities. The system types use the presence of an entity to improve system experiences like Apple Intelligence, Siri, and Shortcuts.
 
 ## Topics
 
 ### Instance Properties
 - [var appEntityIdentifier: EntityIdentifier?](appentityannotatable/appentityidentifier.md)
-  The identifier of an app entity you set on framework types to make app content available to system experiences.
+  The identifier of an app entity you want to associate with a system type.
+
+## Relationships
+
+### Conforming Types
+- [ShortcutsUIButton](shortcutsuibutton.md)
+- [SiriTipUIView](siritipuiview.md)
+
+## See Also
+
+- [struct EntityIdentifier](entityidentifier.md)
+  A type that uniquely identifies a specific instance of an app entity.
+- [protocol EntityIdentifierConvertible](entityidentifierconvertible.md)
+  An interface for converting between an entity’s identifier and its string representation.
+- [struct FileEntityIdentifier](fileentityidentifier.md)
+  An identifier for an app entity that refers to a document or other file.
+- [protocol PersistentlyIdentifiable](persistentlyidentifiable.md)
+  Defines a string that uniquely identifies a type. This is useful for maintaining the identity of a type, even when its type name is changed.
+- [struct SyncableEntityIdentifier](syncableentityidentifier.md)
+  A type-safe wrapper you use to specify different local and stable identifiers for an entity.
+- [struct AttributedEntityIdentifier](attributedentityidentifier.md)
+  A unique identifier for an app entity instance within an application.
+- [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
+  A unique identifier for an app entity or transient app entity type within an application bundle.
+- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

@@ -12,6 +12,7 @@ The result the framework produces by performing a request.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -105,6 +106,9 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 ### Getting the error result
 - [case error(any VisionRequest, any Error)](visionresult/error(_:_:).md)
   A result from encountering a framework error.
+### Enumeration Cases
+- [case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBufferObservation)](visionresult/generateiterativesegmentation(_:_:).md)
+- [case generateSelectedObjectSegmentation(GenerateSelectedObjectSegmentationRequest, PixelBufferObservation)](visionresult/generateselectedobjectsegmentation(_:_:).md)
 
 ## Relationships
 

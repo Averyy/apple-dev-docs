@@ -12,6 +12,7 @@ An object that processes one or more image-analysis requests pertaining to a sin
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -46,6 +47,9 @@ Instantiate this handler to perform Vision requests on a single image. You speci
 - [func performAll(some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
 ](imagerequesthandler/performall(_:).md)
   Schedules a collection of framework requests to perform on the handler’s image.
+### Initializers
+- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
+- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
 
 ## Relationships
 

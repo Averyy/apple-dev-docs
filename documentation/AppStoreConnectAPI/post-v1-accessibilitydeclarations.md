@@ -20,7 +20,7 @@ Add an accessibility declaration for a specific app.
 
 - [List All Accessibility Declarations for an App](get-v1-apps-_id_-accessibilitydeclarations.md)
   Get a list of the accessibility declarations for a specific app.
-- [GET /v1/apps/{id}/relationships/accessibilityDeclarations](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
+- [List accessibility declaration IDs for an app](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
 - [Read Accessibility Declaration Information](get-v1-accessibilitydeclarations-_id_.md)
   Get information about a specific accessibility declaration.
 - [Modify an Accessibility Declaration](patch-v1-accessibilitydeclarations-_id_.md)

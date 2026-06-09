@@ -21,12 +21,6 @@ case groupInvalid
 
 ## See Also
 
-- [NEVPNIKEv2DiffieHellmanGroup.group1](nevpnikev2diffiehellmangroup/group1.md)
-  Diffie Hellman group 1 (768-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group2](nevpnikev2diffiehellmangroup/group2.md)
-  Diffie Hellman group 2 (1024-bit modular exponential [MODP]).
-- [NEVPNIKEv2DiffieHellmanGroup.group5](nevpnikev2diffiehellmangroup/group5.md)
-  Diffie Hellman group 5 (1536-bit modular exponential [MODP]).
 - [NEVPNIKEv2DiffieHellmanGroup.group14](nevpnikev2diffiehellmangroup/group14.md)
   Diffie Hellman group 14 (2048-bit modular exponential [MODP]).
 - [NEVPNIKEv2DiffieHellmanGroup.group15](nevpnikev2diffiehellmangroup/group15.md)

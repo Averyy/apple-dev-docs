@@ -115,7 +115,7 @@ Alternatively, you can use the Copy HUD Configuration option in the Metal HUD me
 - [Validating your app’s Metal API usage](validating-your-apps-metal-api-usage.md)
   Catch runtime issues in your Metal app using API Validation.
 - [Validating your app’s Metal shader usage](validating-your-apps-metal-shader-usage.md)
-  Catch common shader runtime issues using Shader Validation while your app is running.
+  Catch common shader runtime issues using Shader Validation.
 - [Monitoring your Metal app’s graphics performance](monitoring-your-metal-apps-graphics-performance.md)
   Catch performance issues using the Metal Performance HUD while your app runs.
 - [Understanding the Metal Performance HUD metrics](understanding-metal-performance-hud-metrics.md)

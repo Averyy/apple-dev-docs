@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message when the user defaults database of a tvOS app exceeds its maximum size.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

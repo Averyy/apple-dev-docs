@@ -32,6 +32,14 @@ Explore a collection of projects relating to game development.
   Dynamically move, rotate, and scale entities at runtime.
 - [Character control, skeletons, and inverse kinematics](game-development-character-skeletons.md)
   Direct the movements and animation of models.
+- [struct NavigationComponent](navigationcomponent.md)
+  A component that defines which areas of a navigation mesh an entity can move through.
+- [struct NavigationMeshComponent](navigationmeshcomponent.md)
+  A component that provides the navigation meshes an entity uses to find paths through a scene.
+- [struct NavigationController](navigationcontroller.md)
+  An interface for finding paths for an entity moving across a scene’s navigation mesh.
+- [class NavigationMeshResource](navigationmeshresource.md)
+  A representation of a scene’s navigable surfaces that the system uses to compute paths.
 
 
 ---

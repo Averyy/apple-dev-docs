@@ -6,8 +6,7 @@
 A response that contains the resource objects for the request.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.2+
 
 ## Declaration
 
@@ -21,6 +20,12 @@ object AppsResponse
 
 ## See Also
 
+- [object ResourceCollectionResponse](resourcecollectionresponse.md)
+  A response that contains the resource objects for the request.
+- [object ResultsResponse](resultsresponse.md)
+  A response that contains the resource objects for the request.
+- [object BooksResponse](booksresponse.md)
+  A response that contains the resource objects for the request.
 - [object UnauthorizedResponse](unauthorizedresponse.md)
   A response that indicates an incorrect authorization header.
 - [object ErrorsResponse](errorsresponse.md)

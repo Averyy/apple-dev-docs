@@ -12,7 +12,7 @@ Creates a private key generator.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
-- visionOS 1.0+
+- visionOS 26.0+
 - watchOS 26.0+
 
 ## Declaration

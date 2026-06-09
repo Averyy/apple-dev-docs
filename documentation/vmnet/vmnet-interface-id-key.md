@@ -28,6 +28,7 @@ The value specified for this key should be of type [`XPC_TYPE_UUID`](https://dev
 ## See Also
 
 - [let vmnet_operation_mode_key: UnsafePointer<CChar>](vmnet_operation_mode_key.md)
+  The mode to use to configure the guest operating system network interface.
 
 
 ---

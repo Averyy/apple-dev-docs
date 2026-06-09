@@ -1,10 +1,10 @@
-# GET /v1/gameCenterLeaderboards/{id}/relationships/releases
+# List release IDs for a Game Center leaderboard
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 4.0+
 
 ## Endpoint
 

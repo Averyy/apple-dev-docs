@@ -30,6 +30,11 @@ Present videos in your RealityKit experiences.
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Docking a video player in an immersive scene](docking-a-video-player-in-an-immersive-scene.md)
   Secure a video player in an immersive scene with a docking region you can specify.
+- [Rendering stereoscopic video with RealityKit](rendering-stereoscopic-video-with-realitykit.md)
+  Render stereoscopic video in visionOS with RealityKit.
+### Connected camera video
+- [Displaying low-latency connected video](displaying-low-latency-connected-video.md)
+  Render connected camera feeds in visionOS with minimal latency.
 
 ## See Also
 
@@ -61,6 +66,8 @@ Present videos in your RealityKit experiences.
   Create personalized and realistic spatial audio experiences.
 - [Images](scene-content-images.md)
   Present images and spatial scenes in your RealityKit experiences.
+- [Mesh deformation](scene-content-mesh-deformation.md)
+  Reshape and animate the geometry of 3D models at runtime, applying skinning, blend shapes, and subdivision so surfaces bend, flex, and deform as a scene plays.
 
 
 ---

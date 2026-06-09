@@ -86,6 +86,7 @@ Create a `UIHostingController` object when you want to integrate SwiftUI views i
 - [var preferredContainerBackgroundStyle: UIContainerBackgroundStyle](uihostingcontroller/preferredcontainerbackgroundstyle.md)
 ### Instance Methods
 - [func addChild(UIViewController)](uihostingcontroller/addchild(_:).md)
+- [func canPerformAction(Selector, withSender: Any?) -> Bool](uihostingcontroller/canperformaction(_:withsender:).md)
 
 ## Relationships
 

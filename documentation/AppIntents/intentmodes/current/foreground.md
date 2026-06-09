@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The foreground execution mode.
+A value that indicates the app intent is running in the foreground.
 
 **Availability**:
 - iOS 26.0+

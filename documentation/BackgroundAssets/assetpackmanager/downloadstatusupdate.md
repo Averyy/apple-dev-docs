@@ -51,8 +51,6 @@ An asset pack is available locally only after a [`AssetPackManager.DownloadStatu
 - [func statusUpdates(forAssetPackWithID: String) -> some Sendable & AsyncSequence<AssetPackManager.DownloadStatusUpdate, Never>
 ](assetpackmanager/statusupdates(forassetpackwithid:).md)
   Returns an asynchronous sequence of download-status updates for the asset pack with the specified ID.
-- [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
-  Checks an asset pack’s status.
 
 
 ---

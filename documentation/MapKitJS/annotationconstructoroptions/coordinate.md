@@ -11,7 +11,7 @@ Sets the coordinate of the annotation.
 ## Declaration
 
 ```swift
-coordinate?: Coordinate;
+coordinate?: CoordinateData;
 ```
 
 #### Discussion

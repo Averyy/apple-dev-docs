@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a single Issues resource.
+The response body for endpoints that read a single issue from an Xcode Cloud build action.
 
 **Availability**:
 - App Store Connect API 1.5+
@@ -22,9 +22,9 @@ object CiIssueResponse
 ## See Also
 
 - [object CiIssue](ciissue.md)
-  The data structure that represents an Issues resource.
+  A warning or error produced during an Xcode Cloud build action, associated with a source file location.
 - [object FileLocation](filelocation.md)
-  The data structure that represents a File Locations resource.
+  A source code location reference indicating the file path, line number, and column of an issue in an Xcode Cloud build.
 
 
 ---

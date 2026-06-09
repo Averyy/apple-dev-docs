@@ -13,8 +13,6 @@ The declarative management request details.
 - tvOS 16.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -43,13 +41,13 @@ object DeclarativeManagementRequest
 - `declaration-items`: For fetching the declaration manifest from the server
 - `status`: For sending a status report to the server
 - `declaration/…/…`: For fetching a specific declaration from the server. Include the declaration type and identifier separated by slash characters (`/`).
-- `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment.
-- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel.
+- `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available: iOS 15+ | iPadOS 15+ | macOS 13+ | visionOS 1.1+
+- `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel. Available: macOS 13+
 - `MessageType` (string) *(required)*: The message type, which requires a value of `DeclarativeManagement`.
 - `UDID` (string) *(required)*: The device’s UDID (unique device identifier). The system requires this value if the enrollment type is a device enrollment.
-- `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur.
-- `UserLongName` (string) *(required)*: The full name of the user.
-- `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel.
+- `UserID` (string): For macOS, this value is the ID of the user. For Shared iPad, this value is `FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF` to indicate that authentication doesn’t occur. Available: iOS 15+ | iPadOS 15+ | macOS 13+
+- `UserLongName` (string) *(required)*: The full name of the user. Available: macOS 13+
+- `UserShortName` (string): For macOS, this value is the short name of the user. For Shared iPad, this value is the Managed Apple Account identifier of the user on Shared iPad. It indicates that the token is for the user channel. Available: iOS 15+ | iPadOS 15+ | macOS 13+
 
 
 ---

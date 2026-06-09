@@ -9,7 +9,6 @@ Indicates whether the energy venue where the guidance was generated has rate pla
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

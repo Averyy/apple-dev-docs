@@ -30,6 +30,14 @@ Deletes user activities with a persistent identifier matching any identifier in 
 
 ## See Also
 
+- [func becomeCurrent()](nsuseractivity/becomecurrent.md)
+  Marks the activity as currently in use by the user.
+- [func resignCurrent()](nsuseractivity/resigncurrent.md)
+  Marks this activity object as inactive without invalidating it.
+- [func invalidate()](nsuseractivity/invalidate.md)
+  Invalidates an activity and marks it as no longer eligible for continuation.
+- [var needsSave: Bool](nsuseractivity/needssave.md)
+  A Boolean value that indicates whether the state of the activity needs to be updated.
 - [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](nsuseractivity/deleteallsaveduseractivities(completionhandler:).md)
   Deletes all user activities created by your app.
 

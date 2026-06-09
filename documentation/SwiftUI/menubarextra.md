@@ -11,6 +11,7 @@ A scene that renders itself as a persistent control in the system menu bar.
 ## Declaration
 
 ```swift
+nonisolated
 struct MenuBarExtra<Label, Content> where Label : View, Content : View
 ```
 

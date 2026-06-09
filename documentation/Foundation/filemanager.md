@@ -115,7 +115,7 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
 - [func trashItem(at: URL, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/trashitem(at:resultingitemurl:).md)
   Moves an item to the trash.
 ### Replacing items
-- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-4210g.md)
+- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> URL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
 - [func replaceItem(at: URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions, resultingItemURL: AutoreleasingUnsafeMutablePointer<NSURL?>?) throws](filemanager/replaceitem(at:withitemat:backupitemname:options:resultingitemurl:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
@@ -246,6 +246,12 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
 ### Determining resource fork support
 - [var NSFoundationVersionWithFileManagerResourceForkSupport: Int32](nsfoundationversionwithfilemanagerresourceforksupport.md)
   The version of the Foundation framework in which `NSFileManager` first supported resource forks.
+### Working with notifications
+- [static let NSUbiquityIdentityDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsubiquityidentitydidchange.md)
+  Sent after the iCloud (“ubiquity”) identity has changed.
+### Working with notification messages
+- [FileManager.UbiquityIdentityDidChangeMessage](filemanager/ubiquityidentitydidchangemessage.md)
+  A message a file manager sends after the iCloud (“ubiquity”) identity changes.
 ### Supporting Types
 - [FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions.md)
   Options for enumerating the contents of directories.
@@ -261,9 +267,6 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   Protection level values that can be associated with a file attribute key.
 - [struct URLFileProtection](urlfileprotection.md)
   Protection-level values for a URL resource key.
-### Notifications
-- [static let NSUbiquityIdentityDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsubiquityidentitydidchange.md)
-  Sent after the iCloud (“ubiquity”) identity has changed.
 ### Deprecated Methods
 - [func changeFileAttributes([AnyHashable : Any], atPath: String) -> Bool](filemanager/changefileattributes(_:atpath:).md)
   Changes the attributes of a given file or directory.
@@ -285,10 +288,6 @@ The methods of the shared [`FileManager`](filemanager.md) object can be called f
   An `NSFileManager` object sends this message to a handler immediately before attempting to move, copy, rename, or delete, or before attempting to link to a given path.
 - [func replaceItemAtURL(originalItemURL: NSURL, withItemAtURL: NSURL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitematurl(originalitemurl:withitematurl:backupitemname:options:).md)
   Replaces the contents of the item at the specified URL in a manner that ensures no data loss occurs.
-### Structures
-- [FileManager.UbiquityIdentityDidChangeMessage](filemanager/ubiquityidentitydidchangemessage.md)
-### Instance Methods
-- [func replaceItemAt(URL, withItemAt: URL, backupItemName: String?, options: FileManager.ItemReplacementOptions) throws -> NSURL?](filemanager/replaceitemat(_:withitemat:backupitemname:options:)-9qjo1.md)
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+Identifier for the time zone of a date components object.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -18,6 +20,10 @@
 static var isRepeatedDay: NSCalendar.Unit { get }
 ```
 
+#### Discussion
+
+The corresponding value is an `NSTimeZone`.
+
 ## See Also
 
 - [static var weekOfYear: NSCalendar.Unit](nscalendar/unit/weekofyear.md)
@@ -31,6 +37,7 @@ static var isRepeatedDay: NSCalendar.Unit { get }
 - [static var day: NSCalendar.Unit](nscalendar/unit/day.md)
   Identifier for the day unit.
 - [static var dayOfYear: NSCalendar.Unit](nscalendar/unit/dayofyear.md)
+  Identifier for the nanosecond unit.
 
 
 ---

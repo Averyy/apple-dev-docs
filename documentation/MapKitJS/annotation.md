@@ -11,12 +11,16 @@ The base annotation object for creating custom annotations.
 ## Declaration
 
 ```swift
-class Annotation extends MapKitEventTarget
+class Annotation extends EventTarget
 ```
+
+## Mentions
+
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Overview
 
-An annotation represents data that you want to display on the map’s surface. Associate each annotation with a [`coordinate`](annotation/coordinate.md) on the map. Use the extended objects [`MarkerAnnotation`](markerannotation.md) and [`ImageAnnotation`](imageannotation.md) to create annotations on the map, or `/Annotation` to customize a view beyond the presentation that [`ImageAnnotation`](imageannotation.md) or [`MarkerAnnotation`](markerannotation.md) provide.
+An annotation represents data that you want to display on the map’s surface. Associate each annotation with a [`coordinate`](annotation/coordinate.md) on the map. Use the extended objects [`MarkerAnnotation`](markerannotation.md) and [`ImageAnnotation`](imageannotation.md) to create annotations on the map, or [`Annotation`](annotation.md) to customize a view beyond the presentation that [`ImageAnnotation`](imageannotation.md) or [`MarkerAnnotation`](markerannotation.md) provide.
 
 The examples below create a custom annotation using a person’s initials to show them on the map. The following CSS style encloses the initials in a gray circle:
 
@@ -132,16 +136,16 @@ people.forEach(function(person) {
   An accessory that displays place information when a person selects a place.
 - [selectionAccessoryOffset](annotation/selectionaccessoryoffset.md)
   An offset that changes the selection accessory’s default anchor point.
-### Static properties
-- [DisplayPriority](annotation/displaypriority-data.var.md)
-  A static property that allows you to access the available display priority enumeration values.
+### Deprecated
 - [CollisionMode](annotation/collisionmode-data.var.md)
   A static property that allows you to access the annotation’s collision mode enumeration values.
+- [DisplayPriority](annotation/displaypriority-data.var.md)
+  A static property that allows you to access the available display priority enumeration values.
 
 ## Relationships
 
 ### Inherits From
-- [MapKitEventTarget](mapkiteventtarget.md)
+- [EventTarget](doc://com.apple.mapkitjs/__unknown__/EventTarget)
 ### Inherited By
 - [ImageAnnotation](imageannotation.md)
 - [MarkerAnnotation](markerannotation.md)

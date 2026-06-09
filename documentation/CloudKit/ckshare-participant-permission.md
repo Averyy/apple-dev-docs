@@ -26,7 +26,6 @@ typealias CKShare_Participant_Permission = CKShare.ParticipantPermission
 - [typealias CKContainer_Application_Permissions](ckcontainer_application_permissions.md)
 - [typealias CKRecord_Reference_Action](ckrecord_reference_action.md)
 - [typealias CKShare_Participant_AcceptanceStatus](ckshare_participant_acceptancestatus.md)
-- [typealias CKShare_Participant_ParticipantType](ckshare_participant_participanttype.md)
 - [typealias CKShare_Participant_Role](ckshare_participant_role.md)
 
 

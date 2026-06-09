@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The cube color texture that contains environment surrounding details.
+The cube color texture that contains environment surrounding details, or a low-resolution proxy of the original skybox if the `EnvironmentResource` was created with `CreateOptions(skyboxMode: .discard)`.
 
 **Availability**:
 - iOS 18.0+

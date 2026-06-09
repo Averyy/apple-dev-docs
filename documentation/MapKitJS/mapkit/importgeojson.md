@@ -12,16 +12,16 @@ Converts imported GeoJSON data to MapKit JS compatible items.
 
 ```swift
 importGeoJSON(
-        data: string | GeoJSONTypes.GeoJSON,
-        callback?: GeoJSONDelegate | GeoJSONImporterCallback,
-    ):
-        | ItemCollection<
-              GeoJSONTypes.GeoJSON<
-                  GeoJSONTypes.Geometry,
-                  GeoJSONTypes.GeoJsonProperties
-              >
+    data: string | GeoJSONTypes.GeoJSON,
+    callback?: GeoJSONDelegate | GeoJSONImporterCallback,
+):
+    | ItemCollection<
+          GeoJSONTypes.GeoJSON<
+              GeoJSONTypes.Geometry,
+              GeoJSONTypes.GeoJsonProperties
           >
-        | undefined;
+      >
+    | undefined;
 ```
 
 ## Mentions

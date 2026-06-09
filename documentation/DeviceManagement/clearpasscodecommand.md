@@ -11,8 +11,6 @@ The command to remove the passcode from a device.
 - Mac Catalyst 4.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -22,8 +20,8 @@ object ClearPasscodeCommand
 
 ## Mentions
 
-- [Managing Passcodes](managing-passcodes.md)
-- [Handling NotNow Status Responses](handling-notnow-status-responses.md)
+- [Managing passcodes](managing-passcodes.md)
+- [Handling NotNow status responses](handling-notnow-status-responses.md)
 
 ## Topics
 

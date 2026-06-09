@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: struct
 
-Uniquely identifies a month in any calendar system
+Uniquely identifies a month in any calendar system.
 
 **Availability**:
 - iOS 18.0+

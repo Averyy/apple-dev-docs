@@ -7,7 +7,7 @@ Create and run virtual CPUs, and manage CPU-specific registers and features.
 ## Topics
 
 ### Creation and destruction
-- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:).md)
+- [func hv_vcpu_create(UnsafeMutablePointer<hv_vcpu_t>, UnsafeMutablePointer<UnsafeMutablePointer<hv_vcpu_exit_t>?>, hv_vcpu_config_t?) -> hv_return_t](hv_vcpu_create(_:_:_:).md)
   Creates a vCPU instance for the current thread.
 - [func hv_vcpu_destroy(hv_vcpu_t) -> hv_return_t](hv_vcpu_destroy(_:).md)
   Destroys the vCPU instance associated with the current thread.
@@ -22,8 +22,6 @@ Create and run virtual CPUs, and manage CPU-specific registers and features.
   Executes a vCPU until it reaches the deadline defined in absolute time units you provide.
 - [func hv_vcpu_interrupt(UnsafeMutablePointer<hv_vcpuid_t>, UInt32) -> hv_return_t](hv_vcpu_interrupt(_:_:).md)
   Forces the vCPU instances you provide to immediately exit the VM.
-- [func hv_vcpu_invalidate_tlb(hv_vcpuid_t) -> hv_return_t](hv_vcpu_invalidate_tlb(_:).md)
-  Invalidates the translation look-aside buffer (TLB) of a vCPU.
 - [func hv_vcpu_flush(hv_vcpuid_t) -> hv_return_t](hv_vcpu_flush(_:).md)
   Flushes the cached state of a vCPU.
 - [func hv_vcpu_get_exec_time(hv_vcpu_t, UnsafeMutablePointer<UInt64>) -> hv_return_t](hv_vcpu_get_exec_time(_:_:).md)

@@ -14,6 +14,7 @@ A button that toggles the edit mode environment value.
 ## Declaration
 
 ```swift
+nonisolated
 struct EditButton
 ```
 

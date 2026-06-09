@@ -89,18 +89,66 @@ While you provide a configuration instance when creating a session on iOS, iPadO
 - [var allowsActivityContinuation: Bool](aeassessmentconfiguration/allowsactivitycontinuation.md)
   A Boolean value that indicates whether to allow Handoff during an assessment.
 ### Instance Properties
+- [var allowLockdownMode: Bool](aeassessmentconfiguration/allowlockdownmode.md)
+  A Boolean value that indicates whether the assessment allows Lockdown Mode to be active.
+- [var allowOnlyParticipantsToRun: Bool](aeassessmentconfiguration/allowonlyparticipantstorun.md)
+  A Boolean value that indicates whether only participant applications are allowed to run during an assessment.
+- [var allowPrivateRelay: Bool](aeassessmentconfiguration/allowprivaterelay.md)
+  A Boolean value that indicates whether the assessment allows iCloud Private Relay to be active.
+- [var allowedAppleMenuItems: Set<AEAppleMenuItem>?](aeassessmentconfiguration/allowedapplemenuitems.md)
+  The set of allowed Apple menu items during an assessment.
+- [var allowedDirectoriesAndFiles: Set<URL>?](aeassessmentconfiguration/alloweddirectoriesandfiles.md)
+  The set of allowed directories and files that participants can access during an assessment.
+- [var allowedMenuBarItems: Set<AEMenuBarItem>?](aeassessmentconfiguration/allowedmenubaritems.md)
+  The set of menu bar items that should remain visible during an assessment.
+- [var allowsAccessibilityAlternativeInputMethods: Bool](aeassessmentconfiguration/allowsaccessibilityalternativeinputmethods.md)
+  A Boolean value that indicates whether to allow alternative input methods for accessibility features during an assessment.
+- [var allowsAccessibilityBackgroundSounds: Bool](aeassessmentconfiguration/allowsaccessibilitybackgroundsounds.md)
+  A Boolean value that indicates whether to allow Background Sounds during an assessment.
+- [var allowsAccessibilityHoverText: Bool](aeassessmentconfiguration/allowsaccessibilityhovertext.md)
+  A Boolean value that indicates whether to allow Hover Text during an assessment.
 - [var allowsAccessibilityKeyboard: Bool](aeassessmentconfiguration/allowsaccessibilitykeyboard.md)
-  A Boolean value that indicates whether to allow alternative input methods in the Accessibility Keyboard during an assessment.
+  A Boolean value that indicates whether to allow the Accessibility Keyboard during an assessment.
 - [var allowsAccessibilityLiveCaptions: Bool](aeassessmentconfiguration/allowsaccessibilitylivecaptions.md)
   A Boolean value that indicates whether to allow Live Captions during an assessment.
+- [var allowsAccessibilityLiveSpeech: Bool](aeassessmentconfiguration/allowsaccessibilitylivespeech.md)
+  A Boolean value that indicates whether to allow Live Speech during an assessment.
 - [var allowsAccessibilityReader: Bool](aeassessmentconfiguration/allowsaccessibilityreader.md)
   A Boolean value that indicates whether to allow the Accessibility Reader during an assessment.
+- [var allowsAccessibilitySpokenContent: Bool](aeassessmentconfiguration/allowsaccessibilityspokencontent.md)
+  A Boolean value that indicates whether to allow Spoken Content during an assessment.
+- [var allowsAccessibilitySwitchControl: Bool](aeassessmentconfiguration/allowsaccessibilityswitchcontrol.md)
+  A Boolean value that indicates whether to allow Switch Control during an assessment.
 - [var allowsAccessibilityTypingFeedback: Bool](aeassessmentconfiguration/allowsaccessibilitytypingfeedback.md)
   A Boolean value that indicates whether to allow accessibility typing feedback during an assessment.
+- [var allowsAccessibilityVoiceControl: Bool](aeassessmentconfiguration/allowsaccessibilityvoicecontrol.md)
+  A Boolean value that indicates whether to allow Voice Control during an assessment.
+- [var allowsAccessibilityVoiceOver: Bool](aeassessmentconfiguration/allowsaccessibilityvoiceover.md)
+  A Boolean value that indicates whether to allow VoiceOver during an assessment.
+- [var allowsAccessibilityZoom: Bool](aeassessmentconfiguration/allowsaccessibilityzoom.md)
+  A Boolean value that indicates whether to allow Zoom during an assessment.
+- [var allowsAutoFill: Bool](aeassessmentconfiguration/allowsautofill.md)
+  A Boolean value that indicates whether to allow autofill during an assessment.
+- [var allowsDock: Bool](aeassessmentconfiguration/allowsdock.md)
+  A Boolean value that indicates whether to allow the Dock during an assessment.
 - [var allowsEmojiKeyboard: Bool](aeassessmentconfiguration/allowsemojikeyboard.md)
   A Boolean value that indicates whether to allow the emoji keyboard during an assessment.
+- [var allowsMenuBar: Bool](aeassessmentconfiguration/allowsmenubar.md)
+  A Boolean value that indicates whether to allow the menu bar during an assessment.
 - [var allowsScreenshots: Bool](aeassessmentconfiguration/allowsscreenshots.md)
   A Boolean value that indicates whether to allow screenshots copied to the clipboard during an assessment.
+- [var allowsStructuralInput: Bool](aeassessmentconfiguration/allowsstructuralinput.md)
+  A Boolean value that indicates whether to allow Chinese and Japanese structural input during an assessment.
+- [var allowsUserScriptExecution: Bool](aeassessmentconfiguration/allowsuserscriptexecution.md)
+  A Boolean value that indicates whether to allow user script execution during an assessment.
+- [var requiresManagedDevice: Bool](aeassessmentconfiguration/requiresmanageddevice.md)
+  A Boolean value that indicates whether the device must be managed to start an assessment.
+- [var requiresSIP: Bool](aeassessmentconfiguration/requiressip.md)
+  A Boolean value that indicates whether System Integrity Protection (SIP) must be enabled to start an assessment.
+- [var requiresSingleUser: Bool](aeassessmentconfiguration/requiressingleuser.md)
+  A Boolean value that indicates whether only a single user account must be logged in to start an assessment.
+- [var requiresUserAccountType: AEUserAccountType](aeassessmentconfiguration/requiresuseraccounttype.md)
+  Specifies the type of user account required to start an assessment.
 
 ## Relationships
 

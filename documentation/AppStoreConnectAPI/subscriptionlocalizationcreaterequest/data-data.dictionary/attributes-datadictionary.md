@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription localization create request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -21,6 +23,7 @@ object SubscriptionLocalizationCreateRequest.Data.Attributes
 ## See Also
 
 - [object SubscriptionLocalizationCreateRequest.Data.Relationships](subscriptionlocalizationcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

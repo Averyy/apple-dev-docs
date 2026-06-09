@@ -28,14 +28,14 @@ struct Geometry
 ### Instance Properties
 - [var description: String](meshanchor/geometry-swift.struct/description.md)
   A textual representation of this geometry.
+### Default Implementations
+- [Equatable Implementations](meshanchor/geometry-swift.struct/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

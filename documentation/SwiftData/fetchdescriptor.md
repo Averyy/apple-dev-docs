@@ -95,9 +95,7 @@ struct FavoriteRecipesList: View {
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
@@ -108,7 +106,7 @@ struct FavoriteRecipesList: View {
 - [macro Query()](query().md)
   Fetches all instances of the attached model type.
 - [Additional query macros](additionalquerymacros.md)
-  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort and order those results.
+  Supplementary macros that enable you to narrow query results and tell SwiftData how to sort, order, and section those results.
 - [struct Query](query.md)
   A type that fetches models using the specified criteria, and manages those models so they remain in sync with the underlying data.
 

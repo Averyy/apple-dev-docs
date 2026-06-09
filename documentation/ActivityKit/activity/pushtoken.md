@@ -8,6 +8,7 @@ The token you use to send ActivityKit push notifications to a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

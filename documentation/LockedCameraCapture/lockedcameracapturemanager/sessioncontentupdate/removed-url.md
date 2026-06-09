@@ -8,6 +8,7 @@ A URL to a directory of removed session content.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

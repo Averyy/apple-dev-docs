@@ -9,6 +9,7 @@ A Boolean value that indicates whether the control can replace the source text.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -11,6 +11,7 @@ A type that describes the properties of an object and any guides on their values
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -38,11 +39,8 @@ Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguage
 - [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  A property that belongs to a generation schema.
-### Getting the debug description
-- [var debugDescription: String](generationschema/debugdescription.md)
-  A string representation of the debug description.
-### Getting the generation schema error types
+  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+### Errors
 - [GenerationSchema.SchemaError](generationschema/schemaerror.md)
   A error that occurs when there is a problem creating a generation schema.
 
@@ -57,8 +55,18 @@ Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguage
 
 ## See Also
 
-- [static var generationSchema: GenerationSchema](generable/generationschema.md)
-  An instance of the generation schema.
+- [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
+  Create robust apps by describing output you want programmatically.
+- [protocol Generable](generable.md)
+  A type that the model uses when responding to prompts.
+- [struct DynamicGenerationSchema](dynamicgenerationschema.md)
+  The dynamic counterpart to the generation schema type that you use to construct schemas at runtime.
+- [struct GeneratedContent](generatedcontent.md)
+  A type that represents structured, generated content.
+- [protocol ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+  A type that can be converted to generated content.
+- [protocol ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
+  A type that can be initialized from generated content.
 
 
 ---

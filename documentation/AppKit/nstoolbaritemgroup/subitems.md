@@ -23,7 +23,8 @@ By default, an [`NSToolbarItemGroup`](nstoolbaritemgroup.md) instance has an emp
 
 ## See Also
 
-- [Toolbar Programming Topics for Cocoa](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Toolbars/Toolbars.html#//apple_ref/doc/uid/10000109i)
+- [class NSToolbarItemGroup](nstoolbaritemgroup.md)
+  A group of subitems in a toolbar item.
 - [var selectedIndex: Int](nstoolbaritemgroup/selectedindex.md)
   The index value for the most recently selected subitem of a grouped toolbar item.
 - [func isSelected(at: Int) -> Bool](nstoolbaritemgroup/isselected(at:).md)

@@ -16,6 +16,7 @@ object GameCenterLeaderboard.Relationships.GameCenterLeaderboardSets
 
 ### Objects
 - [object GameCenterLeaderboard.Relationships.GameCenterLeaderboardSets.Data](gamecenterleaderboard/relationships-data.dictionary/gamecenterleaderboardsets-data.dictionary/data-data.dictionary.md)
+  The request body you use to update a leaderboard.
 
 ## Properties
 

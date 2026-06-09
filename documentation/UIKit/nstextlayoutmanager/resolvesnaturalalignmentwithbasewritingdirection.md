@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-Specifies the behavior for resolving `NSTextAlignment.natural` to the visual alignment.
+Specifies the behavior for resolving [`NSTextAlignment.natural`](nstextalignment/natural.md) to the visual alignment.
 
 **Availability**:
 - iOS 26.0+

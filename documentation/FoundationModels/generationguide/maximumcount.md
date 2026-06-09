@@ -11,6 +11,7 @@ Enforces a maximum number of elements in the array.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,6 +22,7 @@ static func maximumCount<Element>(_ count: Int) -> GenerationGuide<[Element]> wh
 ## Mentions
 
 - [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
+- [Managing the context window](managing-the-context-window.md)
 
 #### Discussion
 

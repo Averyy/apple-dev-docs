@@ -6,6 +6,12 @@
 
 Deprecated. Use DADiskMount() instead.
 
+## See Also
+
+- [kDADiskOptionEjectUponLogout](kdadiskoptionejectuponlogout.md)
+- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
+- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+
 
 ---
 

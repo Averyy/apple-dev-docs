@@ -135,6 +135,8 @@ The kernel saves each thread’s results from the cooperative tensor by calling 
 
 - [Running a machine learning model on the GPU timeline](running-a-machine-learning-model-on-the-gpu-timeline.md)
   Dispatch model inference commands with a machine learning pass in a Metal 4 command buffer.
+- [Training a neural network to render irradiance in real time](training-a-neural-network-to-render-irradiance-in-real-time.md)
+  Train a small neural network on the GPU to approximate diffuse irradiance, and compare the result against Monte Carlo integration and a pre-trained ML model.
 
 
 ---

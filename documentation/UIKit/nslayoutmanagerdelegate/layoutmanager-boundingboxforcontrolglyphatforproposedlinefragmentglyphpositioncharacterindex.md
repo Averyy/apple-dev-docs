@@ -9,7 +9,7 @@ Returns the bounding rectangle for the specified control glyph with the specifie
 - iOS 7.0+
 - iPadOS 7.0+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 
 ## Declaration

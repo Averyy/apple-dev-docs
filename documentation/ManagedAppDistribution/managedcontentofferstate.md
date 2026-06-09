@@ -8,7 +8,6 @@ The state for a managed content view offer.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
 

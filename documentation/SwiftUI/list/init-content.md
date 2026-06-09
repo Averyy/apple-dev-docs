@@ -17,8 +17,8 @@ Creates a list with the given content.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency init(@ViewBuilder content: () -> Content)
+nonisolated
+init(@ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

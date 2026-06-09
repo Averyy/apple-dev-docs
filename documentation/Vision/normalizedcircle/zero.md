@@ -12,6 +12,7 @@ A circle object centered at the origin, with a radius of zero.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

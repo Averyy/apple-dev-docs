@@ -89,6 +89,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Accessing the preferred units
 - [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
   Returns the user’s preferred units for the given quantity types.
+- [func preferredWorkoutZoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkhealthstore/preferredworkoutzoneconfiguration(for:).md)
+  Returns someone’s preferred zone configuration for the specified quantity type.
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
   Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery

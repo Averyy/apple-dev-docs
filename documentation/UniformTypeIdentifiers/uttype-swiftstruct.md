@@ -375,6 +375,9 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A base type representing media formats that may contain both video and audio.
 - [static var video: UTType](uttype-swift.struct/video.md)
   A type that represents video that doesn’t contain audio.
+### Initializers
+- [init?(identifier: String, allowUndeclared: Bool)](uttype-swift.struct/init(identifier:allowundeclared:).md)
+  Create a type given a type identifier, optionally allowing identifiers that do not have an active declaration on the current system.
 ### Type Properties
 - [static var ahap: UTType](uttype-swift.struct/ahap.md)
 - [static var css: UTType](uttype-swift.struct/css.md)
@@ -391,6 +394,8 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A JPEG-XL encoded image.
 - [static var linkPresentationMetadata: UTType](uttype-swift.struct/linkpresentationmetadata.md)
   Serialized LinkPresentation metadata.
+- [static var markdown: UTType](uttype-swift.struct/markdown.md)
+  Markdown data
 - [static let paperkit: UTType](uttype-swift.struct/paperkit.md)
   The UTType for storing paper data.
 - [static var tarArchive: UTType](uttype-swift.struct/tararchive.md)

@@ -25,7 +25,7 @@ class func canSendText() -> Bool
 
 Always call this method before attempting to present the message compose view controller. A device may be unable to send messages if it does not support messaging or if it is not currently configured to send messages. This method applies only to the ability to send text messages via iMessage, SMS, and MMS.
 
-To be notified of changes in the availability of sending text messages, register as an observer of the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChange`](https://developer.apple.com/documentation/Foundation/NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange) notification.
+To be notified of changes in the availability of sending text messages, register as an observer of the [`MFMessageComposeViewControllerTextMessageAvailabilityDidChangeNotification`](mfmessagecomposeviewcontrollertextmessageavailabilitydidchangenotification.md) notification.
 
 ## See Also
 

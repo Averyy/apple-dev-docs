@@ -129,6 +129,7 @@ Your subclass may use a different reference date than the absolute reference dat
 - [convenience init(SRAbsoluteTime: SRAbsoluteTime)](nsdate/init(srabsolutetime:)-886t8.md)
 - [convenience init(SRAbsoluteTime: SRAbsoluteTime)](nsdate/init(srabsolutetime:)-9wpl1.md)
 - [convenience init(timeInterval: TimeInterval, since: Date)](nsdate/init(timeinterval:since:).md)
+  Returns a date object initialized relative to another given date by a given number of seconds.
 ### Instance Properties
 - [var srAbsoluteTime: SRAbsoluteTime](nsdate/srabsolutetime.md)
 ### Default Implementations

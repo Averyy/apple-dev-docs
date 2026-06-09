@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Customer Reviews resources.
+The response body for endpoints that list customer reviews for an app.
 
 **Availability**:
 - App Store Connect API 2.0+
@@ -19,19 +19,19 @@ object CustomerReviewsResponse
 - `data` ([CustomerReview]) *(required)*: A list of customer review resource data.
 - `links` (PagedDocumentLinks) *(required)*: Navigational links that include the self-link.
 - `meta` (PagingInformation): Paging information.
-- `included` ([CustomerReviewResponseV1]): The requested relationship data.
+- `included` ([*]): The requested relationship data.
 
 ## See Also
 
 - [object CustomerReviewResponse](customerreviewresponse.md)
-  A response that contains a single Customer Review resource.
+  The response body for endpoints that read a single customer review for an app.
 - [object CustomerReview](customerreview.md)
-  The data structure that represents a Customer Reviews resource.
+  A customer’s rating and written review of your app on the App Store.
 - [object AppCustomerReviewsLinkagesResponse](appcustomerreviewslinkagesresponse.md)
 - [object CustomerReviewSummarization](customerreviewsummarization.md)
-  The data structure that represents a customer review summarization resource.
+  An AI-generated summary of customer reviews for an app in a specific App Store territory.
 - [object CustomerReviewSummarizationsResponse](customerreviewsummarizationsresponse.md)
-  The data structure that represents a customer review summarizations response resource.
+  A response containing a list of AI-generated review summaries for an app across territories.
 
 
 ---

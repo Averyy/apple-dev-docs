@@ -69,8 +69,7 @@ Retrieving the base address for a pixel buffer requires that the buffer base add
   Returns the IOSurface backing the pixel buffer, or `NULL` if it is not backed by an IOSurface.
 - [func CVPixelBufferCreateResolvedAttributesDictionary(CFAllocator?, CFArray?, UnsafeMutablePointer<CFDictionary?>) -> CVReturn](cvpixelbuffercreateresolvedattributesdictionary(_:_:_:).md)
   Resolves an array of `CFDictionary` objects describing various pixel buffer attributes into a single dictionary.
-- [func CVPixelBufferGetTypeID() -> CFTypeID](cvpixelbuffergettypeid().md)
-  Returns the Core Foundation type identifier of the pixel buffer type.
+- [func CVPixelBufferIsCompatibleWithAttributes(CVPixelBuffer, CFDictionary?) -> Bool](cvpixelbufferiscompatiblewithattributes(_:_:).md)
 
 
 ---

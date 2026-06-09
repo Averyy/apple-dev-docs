@@ -11,6 +11,7 @@ Creates an accessory toolbar action button style
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

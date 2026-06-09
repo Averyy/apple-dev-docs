@@ -12,8 +12,6 @@ A dictionary that contains device name settings.
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

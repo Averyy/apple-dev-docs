@@ -41,7 +41,7 @@ Create and manage offers for in-app purchases, including one-time use offer code
   Get information about a specific in-app purchase offer code custom code.
 - [Modify an In-App Purchase Offer Code Custom Code](patch-v1-inapppurchaseoffercodecustomcodes-_id_.md)
   Update a specific in-app purchase offer code custom code.
-### Objects and Types
+### Objects and types
 - [object InAppPurchaseOfferCodeResponse](inapppurchaseoffercoderesponse.md)
   A response that contains a single in-app purchase offer code resource.
 - [object InAppPurchaseOfferCode](inapppurchaseoffercode.md)

@@ -9,7 +9,6 @@ Waits on a group of expectations for up to the specified timeout, optionally enf
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- macOS 10.15+
 - tvOS 13.0+
 - watchOS 6.0+
 

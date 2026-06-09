@@ -41,8 +41,11 @@ object InAppPurchaseV2.Relationships
 ## See Also
 
 - [object InAppPurchaseV2.Attributes](inapppurchasev2/attributes-data.dictionary.md)
+  Attributes that describe an in-app purchase v2 resource.
 - [type InAppPurchaseType](inapppurchasetype.md)
+  A string that represents the type of an In-App Purchase.
 - [type InAppPurchaseState](inapppurchasestate.md)
+  A string that represents the review state of an In-App Purchase.
 
 
 ---

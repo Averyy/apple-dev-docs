@@ -6,11 +6,7 @@
 A store that reads from and writes to a persistent XML file.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
 - macOS 12.0+
-- tvOS 15.0+
-- watchOS 8.0+
 
 ## Declaration
 

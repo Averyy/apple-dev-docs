@@ -34,6 +34,7 @@ To learn more about `ICP_NUMBER_INVALID` and `ICP_NUMBER_MISSING`, see the “Av
 ## See Also
 
 - [object TerritoryAvailability.Relationships](territoryavailability/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

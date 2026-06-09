@@ -71,16 +71,25 @@ struct CreateBook: AppIntent {
 - [EntityQuery](entityquery.md)
 - [EntityStringQuery](entitystringquery.md)
 - [EnumerableEntityQuery](enumerableentityquery.md)
+- [IndexedEntityQuery](indexedentityquery.md)
 - [UniqueAppEntityQuery](uniqueappentityquery.md)
 ### Conforming Types
 - [UniqueAppEntityProvider](uniqueappentityprovider.md)
 
 ## See Also
 
-- [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
-- [class IntentProjection](intentprojection.md)
-  Projections for an app intent that returns non-optional values for parameters.
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+  Enable people to configure app intents with their custom input values.
+- [class IntentParameter](intentparameter.md)
+  A property wrapper that indicates the associated property is an input argument of the app intent.
+- [class IntentParameterDependency](intentparameterdependency.md)
+  A property wrapper that represents an app intent dependency you use to provide dynamic options.
+- [struct IntentParameterContext](intentparametercontext.md)
+  A type that provides information about an associated parameter during value resolution.
+- [enum InputConnectionBehavior](inputconnectionbehavior.md)
+  Describes the input behaviors for connecting a parameter to the output of the previous App Intent.
+- [Resolvers](resolvers.md)
+  Resolve the parameters of your app intents, and extend the standard resolution types to include your app’s custom types.
 
 
 ---

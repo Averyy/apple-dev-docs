@@ -17,7 +17,7 @@ Creates a new control group with the specified content and a label.
 
 ```swift
 nonisolated
-init<C, L>(@ViewBuilder content: () -> C, @ViewBuilder label: () -> L) where Content == LabeledControlGroupContent<C, L>, C : View, L : View
+init<C, L>(@ContentBuilder content: () -> C, @ContentBuilder label: () -> L) where Content == LabeledControlGroupContent<C, L>, C : View, L : View
 ```
 
 ## Parameters

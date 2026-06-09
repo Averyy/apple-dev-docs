@@ -31,7 +31,7 @@ The sample query returns sample objects that match the provided type and predica
 
 Sample queries are immutable: The query’s properties are set when the query is first created, and they can’t change.
 
-> **Note**:  Like many HealthKit classes, the [`HKSampleQuery`](hksamplequery.md) class should not be subclassed.
+> **Note**:  As with many HealthKit classes, don’t subclass the [`HKSampleQuery`](hksamplequery.md) class.
 
 ## Topics
 

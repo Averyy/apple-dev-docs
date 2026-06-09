@@ -18,9 +18,9 @@ Create a new review submission item.
 
 ## See Also
 
-- [Modify a Review Submission Item](patch-v1-reviewsubmissionitems-_id_.md)
+- [Update a review submission item](patch-v1-reviewsubmissionitems-_id_.md)
   Update a specific review submission item.
-- [Remove a Review Submission Item](delete-v1-reviewsubmissionitems-_id_.md)
+- [Remove a review submission item](delete-v1-reviewsubmissionitems-_id_.md)
   Remove a specific item from a review submission.
 
 

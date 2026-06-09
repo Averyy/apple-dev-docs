@@ -21,6 +21,7 @@ struct PKDrawing
 ## Mentions
 
 - [Supporting backward compatibility for ink types](supporting-backward-compatibility-for-ink-types.md)
+- [Recognizing handwriting and converting it to text](recognizing-handwriting-and-converting-to-text.md)
 
 #### Overview
 
@@ -68,6 +69,10 @@ A [`PKDrawing`](pkdrawing-swift.struct.md) object stores the user-drawn content 
 ### Instance Methods
 - [func draw(in: CGContext, frame: CGRect, from: CGRect, darkUserInterfaceStyle: Bool) async](pkdrawing-swift.struct/draw(in:frame:from:darkuserinterfacestyle:).md)
   Draws the drawing in the specified rectangle.
+- [func erasePath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform)](pkdrawing-swift.struct/erasepath(_:mask:transform:)-2b2u3.md)
+- [func erasePath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform)](pkdrawing-swift.struct/erasepath(_:mask:transform:)-shn.md)
+- [func erasingPath(PKStrokePath, mask: NSBezierPath?, transform: CGAffineTransform) -> PKDrawing](pkdrawing-swift.struct/erasingpath(_:mask:transform:)-2txi7.md)
+- [func erasingPath(PKStrokePath, mask: UIBezierPath?, transform: CGAffineTransform) -> PKDrawing](pkdrawing-swift.struct/erasingpath(_:mask:transform:)-9dpi9.md)
 
 ## Relationships
 
@@ -88,6 +93,8 @@ A [`PKDrawing`](pkdrawing-swift.struct.md) object stores the user-drawn content 
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
+  Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKStroke](pkstroke-swift.struct.md)

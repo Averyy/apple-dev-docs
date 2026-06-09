@@ -53,15 +53,33 @@ for component in entity.components {
 ### Checking for membership
 - [func has(any Component.Type) -> Bool](entity/componentset/has(_:).md)
   Returns a Boolean value that indicates whether the set contains a component of the given type.
+### Accessing components
+- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-8y2jv.md)
+  Gets or sets the component of the specified type.
+- [subscript<T>(T.Type, Void) -> T?](entity/componentset/subscript(_:_:)-404se.md)
+  Gets or sets the component of the specified type.
+### Accessing animatable components
+- [subscript<T>(componentType _: T.Type) -> T?](entity/componentset/subscript(componenttype:)-3miek.md)
+- [subscript<T>(T.Type, Void) -> T?](entity/componentset/subscript(_:_:)-b2gl.md)
+- [subscript<T>(withoutAnimation _: T.Type) -> T?](entity/componentset/subscript(withoutanimation:).md)
+  Gets or sets the component of the specified type, without considering implicit animations.
+### Setting components by name
+- [func set(qualifiedComponentName: String, representation: some Encodable) throws](entity/componentset/set(qualifiedcomponentname:representation:).md)
+  Adds component data to an entity which will be written to a Reality file, but have no other effect.
 ### Instance Properties
 - [var count: Int](entity/componentset/count.md)
   The number of components in the collection.
+- [var entity: Entity](entity/componentset/entity.md)
 ### Instance Methods
 - [func set(_:)](entity/componentset/set(_:).md)
   Adds multiple components to the set, overriding any existing components of the same type.
 ### Subscripts
 - [subscript(_:)](entity/componentset/subscript(_:).md)
   Gets or sets the component with a specific dynamically supplied type.
+- [subscript(_:_:)](entity/componentset/subscript(_:_:).md)
+  Gets or sets the component of the specified type.
+- [subscript(componentType:)](entity/componentset/subscript(componenttype:).md)
+  Gets or sets the component of the specified type.
 
 ## Relationships
 

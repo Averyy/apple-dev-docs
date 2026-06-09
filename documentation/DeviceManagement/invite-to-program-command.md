@@ -10,8 +10,6 @@ Invite a user to join the Volume Purchase Program (VPP).
 - iPadOS 7.0+
 - Mac Catalyst 7.0+
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -28,7 +26,7 @@ Refer to the following sections to determine supported channels and requirements
 | Device channel | iOS |
 | User channel | macOS, Shared iPad |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
 ##### Example Request and Response
@@ -84,7 +82,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InviteToProgramCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

@@ -59,6 +59,12 @@ struct CIImageOption
   A Boolean value to control whether an image created with a CVPixelBuffer or an IOSurface should be cropped and offset according clean aperture attachments.
 - [static let contentAverageLightLevel: CIImageOption](ciimageoption/contentaveragelightlevel.md)
   A value for overriding the automatic behavior of the Content Average Light Level property when creating an image.
+- [static let subsampleFactor: CIImageOption](ciimageoption/subsamplefactor.md)
+  The factor by which to scale down a returned images.
+- [static let typeIdentifierHint: CIImageOption](ciimageoption/typeidentifierhint.md)
+  The uniform type identifier string to use in cases where a file’s format cannot be conclusively determined based solely on its contents.
+- [static let useHardwareAcceleration: CIImageOption](ciimageoption/usehardwareacceleration.md)
+  A Boolean value specifying that using hardware is preferred when decoding.
 
 ## Relationships
 

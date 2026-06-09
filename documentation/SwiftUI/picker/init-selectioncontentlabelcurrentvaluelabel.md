@@ -18,7 +18,7 @@ Creates a picker that displays a custom label and a custom value label where app
 
 ```swift
 nonisolated
-init(selection: Binding<SelectionValue>, @ViewBuilder content: () -> Content, @ViewBuilder label: () -> Label, @ViewBuilder currentValueLabel: () -> some View)
+init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label, @ContentBuilder currentValueLabel: () -> some View)
 ```
 
 #### Discussion

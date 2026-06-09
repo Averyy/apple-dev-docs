@@ -11,8 +11,6 @@ A dictionary that describes an error chain item.
 - Mac Catalyst 7.1+
 - macOS 10.15+
 - visionOS 2.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # SCVideoStreamAnalyzer.StreamDirection
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: enum
 
 Options for the different types of analyzed video streams.

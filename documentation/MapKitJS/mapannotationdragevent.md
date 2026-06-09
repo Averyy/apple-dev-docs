@@ -11,7 +11,7 @@ An event object that the map object dispatches when someone drags an annotation.
 ## Declaration
 
 ```swift
-class MapAnnotationDragEvent extends MapKitEvent
+class MapAnnotationDragEvent extends Event
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ The [`Map`](map.md) dispatches a [`MapAnnotationDragEvent`](mapannotationdrageve
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

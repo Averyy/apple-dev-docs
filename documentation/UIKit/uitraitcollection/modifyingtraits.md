@@ -13,12 +13,12 @@
 ## Declaration
 
 ```swift
-func modifyingTraits(_ mutations: (inout any UIMutableTraits) -> Void) -> UITraitCollection
+func modifyingTraits(_ mutations: UITraitCollection.TraitMutations) -> UITraitCollection
 ```
 
 ## See Also
 
-- [convenience init(mutations: (inout any UIMutableTraits) -> Void)](uitraitcollection/init(mutations:).md)
+- [convenience init(mutations: UITraitCollection.TraitMutations)](uitraitcollection/init(mutations:).md)
 - [UITraitCollection.TraitMutations](uitraitcollection/traitmutations.md)
 
 

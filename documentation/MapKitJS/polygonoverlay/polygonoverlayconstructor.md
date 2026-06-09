@@ -12,9 +12,9 @@ Creates a polygon overlay with an array of points and style options.
 
 ```swift
 constructor(
-        points: Coordinate[][] | Coordinate[],
-        options?: OverlayOptions,
-    );
+    points: CoordinateData[][] | CoordinateData[],
+    options?: OverlayOptions,
+);
 ```
 
 #### Discussion

@@ -30,6 +30,8 @@ init(index: IndexPath.Element)
   Creates an index path from an array of elements.
 - [init<ElementSequence>(indexes: ElementSequence)](indexpath/init(indexes:)-55we8.md)
   Creates an index path from a sequence of integers.
+- [IndexPath.Element](indexpath/element.md)
+  A type that represents one node of an index path.
 
 
 ---

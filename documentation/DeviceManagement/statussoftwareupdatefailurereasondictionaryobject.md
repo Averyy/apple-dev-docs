@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A dictionary that contains details about a software update failure.
+Details about a software update failure.
 
 **Availability**:
 - iOS 17.0+
@@ -12,8 +12,6 @@ A dictionary that contains details about a software update failure.
 - macOS 14.0+
 - tvOS 18.4+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

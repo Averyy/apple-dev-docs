@@ -24,7 +24,14 @@ For more information on places, see [`Identifying unique locations with Place ID
 - [new PlaceLookup(options)](placelookup/placelookupconstructor.md)
   Creates a place lookup with a set of options.
 ### Getting a place
-- [getPlace(id, callback, options)](placelookup/getplace.md)
+- [getPlace(id, options)](placelookup/getplace.md)
+  Obtains a place using its identifier.
+- [getPlace(annotation, options)](placelookup/getplace1.md)
+  Obtains the place associated with a map feature annotation.
+- [interface PlaceLookupOptions](placelookupoptions.md)
+  Options for place lookup requests.
+### Deprecated
+- [getPlace(id, callback, options)](placelookup/getplace2.md)
   Obtains a place using its identifier.
 
 ## Relationships

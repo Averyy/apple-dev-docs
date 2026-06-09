@@ -3,7 +3,7 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-A status report of the client’s Exchange accounts.
+The status item that lists the devices’s Exchange accounts.
 
 **Availability**:
 - iOS 16.0+
@@ -11,8 +11,6 @@ A status report of the client’s Exchange accounts.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -33,11 +31,60 @@ object StatusAccountListExchange
 | Allowed in system scope | iOS, visionOS |
 | Allowed in user scope | macOS, Shared iPad |
 
+##### Status Item Example
+
+**New or updated account**:
+
+Reports a new or updated account.
+
+```json
+{
+    "account": {
+        "list": {
+            "exchange": [
+                {
+                    "identifier": "E0CF0187-HE00-6D66-CG39-345678901234",
+                    "declaration-identifier": "com.example.exchange-account",
+                    "visible-name": "Work Exchange",
+                    "hostname": "mail.example.com",
+                    "port": 443,
+                    "username": "user@example.com",
+                    "is-mail-enabled": true,
+                    "are-calendars-enabled": true,
+                    "are-contacts-enabled": true,
+                    "are-notes-enabled": true,
+                    "are-reminders-enabled": true
+                }
+            ]
+        }
+    }
+}
+```
+
+**Removed account**:
+
+Reports a removed account.
+
+```json
+{
+    "account": {
+        "list": {
+            "exchange": [
+                {
+                    "identifier": "E0CF0187-HE00-6D66-CG39-345678901234",
+                    "_removed": true
+                }
+            ]
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Objects
 - [object StatusAccountListExchangeAccountObject](statusaccountlistexchangeaccountobject.md)
-  A status report of the client’s Exchange account details.
+  An Exchange account.
 
 ## Properties
 
@@ -46,19 +93,19 @@ object StatusAccountListExchange
 ## See Also
 
 - [object StatusAccountListCalDAV](statusaccountlistcaldav.md)
-  A status report of the client’s Calendar accounts.
+  The status item that lists the devices’s Calendar accounts.
 - [object StatusAccountListCardDAV](statusaccountlistcarddav.md)
-  A status report of the client’s Contacts accounts.
+  The status item that lists the devices’s Contacts accounts.
 - [object StatusAccountListGoogle](statusaccountlistgoogle.md)
-  A status report of the client’s Google accounts.
+  The status item that lists the client’s Google accounts.
 - [object StatusAccountListLDAP](statusaccountlistldap.md)
-  A status report of the client’s Lightweight Directory Access Protocol (LDAP) accounts.
+  The status item that lists the devices’s Lightweight Directory Access Protocol (LDAP) accounts.
 - [object StatusAccountListMailIncoming](statusaccountlistmailincoming.md)
-  A status report of the client’s incoming Mail accounts.
+  The status item that lists the devices’s incoming Mail accounts.
 - [object StatusAccountListMailOutgoing](statusaccountlistmailoutgoing.md)
-  A status report of the client’s outgoing Mail accounts.
+  The status item that lists the devices’s outgoing Mail accounts.
 - [object StatusAccountListSubscribedCalendar](statusaccountlistsubscribedcalendar.md)
-  A status report of the client’s subscribed calendars.
+  The status item that lists the devices’s subscribed calendars.
 
 
 ---

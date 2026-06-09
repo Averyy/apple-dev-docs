@@ -3,8 +3,6 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The app intent conforms to the schema for launching your voice-based conversational app from the side button on iPhone in Japan.
-
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
@@ -16,18 +14,22 @@ The app intent conforms to the schema for launching your voice-based conversatio
 var activate: some AssistantSchemas.Intent { get }
 ```
 
-## Mentions
-
-- [Launching your voice-based conversational app from the side button of iPhone](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md)
-
 #### Overview
 
-Functionality provided by the `activate` schema API is only available on iPhone in Japan and requires the [`Side Button Access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.side-button-access.allow) entitlement. During development, install your provisioning profile on your iPhone test device to test the functionality. For a production device, the country or region of your Apple Account must be set to Japan, and you must physically be located in Japan. For additional information, refer to [`Launching your voice-based conversational app from the side button of iPhone`](launching-your-voice-based-conversational-app-from-the-side-button-of-iphone.md).
+To integrate your app’s functionality with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 
-## See Also
+For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
-- [AssistantSchemas.AssistantIntent](assistantschemas/assistantintent.md)
-  Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
+The following example shows an app intent that conforms to the `assistant.activate` schema:
+
+```swift
+@AppIntent(schema: .assistant.activate)
+struct ActivateAssistantIntent {
+    func perform() async throws -> some IntentResult {
+        <#code#>
+    }
+}
+```
 
 
 ---

@@ -11,6 +11,7 @@ A task scheduling error that indicates there are too many pending tasks of the t
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
+- watchOS 26.0+
 
 ## Declaration
 

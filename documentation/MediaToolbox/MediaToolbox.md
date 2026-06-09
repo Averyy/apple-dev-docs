@@ -44,6 +44,8 @@ Use an [`MTAudioProcessingTap`](mtaudioprocessingtap.md) to tap audio from an [`
   Returns a localized name for the specified media type and subtype.
 ### Enumerations
 - [Anonymous Enumerations](anonymous-enums.md)
+### Functions
+- [func MTAudioProcessingTapCreateWithPreferredFormat(CFAllocator?, UnsafePointer<MTAudioProcessingTapCallbacks>, MTAudioProcessingTapCreationFlags, CMAudioFormatDescription?, UnsafeMutablePointer<MTAudioProcessingTap?>) -> OSStatus](mtaudioprocessingtapcreatewithpreferredformat(_:_:_:_:_:).md)
 
 
 ---

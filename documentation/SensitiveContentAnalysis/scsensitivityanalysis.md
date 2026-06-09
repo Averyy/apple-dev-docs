@@ -1,6 +1,6 @@
 # SCSensitivityAnalysis
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: class
 
 An object that indicates whether sensitive content is present and includes intervention guidance.
@@ -33,7 +33,12 @@ The framework provides an instance of this class to convey the results of conten
 
 ### Confirming the presence of sensitive content
 - [var isSensitive: Bool](scsensitivityanalysis/issensitive.md)
-  A Boolean value that indicates if checked content contains nudity.
+  A Boolean value that indicates whether the checked content contains sensitive material.
+### Identifying content categories
+- [var detectedTypes: Set<SCSensitivityAnalysis.ContentType>](scsensitivityanalysis/detectedtypes.md)
+  A property that contains the categories of sensitive content that analysis detects.
+- [SCSensitivityAnalysis.ContentType](scsensitivityanalysis/contenttype.md)
+  A type that identifies a category of sensitive content.
 ### Receiving intervention guidance
 - [var shouldIndicateSensitivity: Bool](scsensitivityanalysis/shouldindicatesensitivity.md)
   Intervention guidance that suggests the app indicate the presence of sensitive content.

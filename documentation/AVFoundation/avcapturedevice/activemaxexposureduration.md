@@ -29,14 +29,14 @@ On some devices, the auto exposure algorithm picks a different maximum exposure 
 
 ## See Also
 
+- [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
+  Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
 - [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
   The length of time over which exposure takes place.
 - [var iso: Float](avcapturedevice/iso.md)
   The current exposure ISO value.
 - [var lensAperture: Float](avcapturedevice/lensaperture.md)
   The size of the lens diaphragm.
-- [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
-  Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
 
 
 ---

@@ -7,7 +7,6 @@ The icon only label style. The toolbar contents will only display the control
 
 **Availability**:
 - macOS 15.0+
-- visionOS 2.0+
 
 ## Declaration
 

@@ -11,7 +11,7 @@ Sets the center point of the request represented as latitude and longitude.
 ## Declaration
 
 ```swift
-center?: Coordinate;
+center?: CoordinateData;
 ```
 
 ## See Also

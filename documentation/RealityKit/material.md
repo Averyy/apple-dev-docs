@@ -46,6 +46,7 @@ If you import a model from a USDZ file, RealityKit automatically creates one or 
 
 ### Conforming Types
 - [CustomMaterial](custommaterial.md)
+- [LightmapComponent.FinalShadedColorBakeMaterial](lightmapcomponent/finalshadedcolorbakematerial.md)
 - [OcclusionMaterial](occlusionmaterial.md)
 - [PhysicallyBasedMaterial](physicallybasedmaterial.md)
 - [PortalMaterial](portalmaterial.md)

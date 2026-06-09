@@ -147,15 +147,15 @@ https://api.appstoreconnect.apple.com/v1/appCustomProductPageVersions/6c0df710-d
 
 ## Parameters
 
-- `fields[appCustomProductPageLocalizations]` ([string])
-- `fields[appPreviewSets]` ([string])
-- `fields[appScreenshotSets]` ([string])
-- `filter[locale]` ([string])
-- `include` ([string])
-- `limit` (integer)
-- `limit[appPreviewSets]` (integer)
-- `limit[appScreenshotSets]` (integer)
-- `fields[appCustomProductPageVersions]` ([string])
+- `fields[appCustomProductPageLocalizations]` ([string]): Additional fields to include for each app custom product page localization resource returned by the response.
+- `fields[appPreviewSets]` ([string]): Additional fields to include for each app preview set resource returned by the response.
+- `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+- `filter[locale]` ([string]): Filter the returned app custom product page localizations by locale.
+- `include` ([string]): The relationship data to include in the response.
+- `limit` (integer): The maximum number of app custom product page localization resources to return.
+- `limit[appPreviewSets]` (integer): The maximum number of related app preview sets resources to return.
+- `limit[appScreenshotSets]` (integer): The maximum number of related app screenshot sets resources to return.
+- `fields[appCustomProductPageVersions]` ([string]): Additional fields to include for each app custom product page version resource returned by the response.
 - `fields[appKeywords]` ([string])
 - `limit[searchKeywords]` (integer)
 

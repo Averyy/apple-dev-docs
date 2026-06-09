@@ -21,26 +21,26 @@ Additionally, use the `ciBuildRuns` resource to tell Xcode Cloud to start a new 
 ## Topics
 
 ### Getting Build Information
-- [Read Xcode Cloud Build Information](get-v1-cibuildruns-_id_.md)
+- [Read xcode cloud build information](get-v1-cibuildruns-_id_.md)
   Get information about a specific Xcode Cloud build.
-- [List All Actions for an Xcode Cloud Build](get-v1-cibuildruns-_id_-actions.md)
+- [List all actions for an xcode cloud build](get-v1-cibuildruns-_id_-actions.md)
   List all actions Xcode Cloud performed during a specific build.
-- [List All Builds Xcode Cloud Created in App Store Connect](get-v1-cibuildruns-_id_-builds.md)
+- [List all builds xcode cloud created in app store connect](get-v1-cibuildruns-_id_-builds.md)
   List All App Store Connect and TestFlight Builds when it performed a build.
-- [GET /v1/ciBuildRuns/{id}/relationships/actions](get-v1-cibuildruns-_id_-relationships-actions.md)
-- [GET /v1/ciBuildRuns/{id}/relationships/builds](get-v1-cibuildruns-_id_-relationships-builds.md)
+- [List action IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-actions.md)
+- [List build IDs for a CI build run](get-v1-cibuildruns-_id_-relationships-builds.md)
 ### Starting a New Build
-- [Start a Build](post-v1-cibuildruns.md)
+- [Start a build](post-v1-cibuildruns.md)
   Start a new Xcode Cloud build for a workflow.
 ### Objects
 - [object CiBuildRun](cibuildrun.md)
-  The data structure that represents a Build Runs resource.
+  A single execution of an Xcode Cloud workflow, capturing the trigger, commit, status, and artifacts produced.
 - [object CiBuildRunCreateRequest](cibuildruncreaterequest.md)
   The request body you use to start a new Xcode Cloud build.
 - [object CiBuildRunResponse](cibuildrunresponse.md)
-  A response that contains a single Build Runs resource.
+  The response body for endpoints that start or read a single Xcode Cloud build run.
 - [object CiBuildActionsResponse](cibuildactionsresponse.md)
-  A response that contains a list of Build Actions resources.
+  The response body for endpoints that list actions for an Xcode Cloud build run.
 - [object CiBuildRunActionsLinkagesResponse](cibuildrunactionslinkagesresponse.md)
 - [object CiBuildRunBuildsLinkagesResponse](cibuildrunbuildslinkagesresponse.md)
 

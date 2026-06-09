@@ -20,6 +20,8 @@ The notification is posted on the main actor when the app is finished restoring 
 
 The notification object is [`shared`](nsapplication/shared.md). This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSApplication.DidFinishRestoringWindowsMessage`](nsapplication/didfinishrestoringwindowsmessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

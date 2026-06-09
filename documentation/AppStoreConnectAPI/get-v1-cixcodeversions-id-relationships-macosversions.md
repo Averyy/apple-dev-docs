@@ -1,10 +1,10 @@
-# GET /v1/ciXcodeVersions/{id}/relationships/macOsVersions
+# List macOS version IDs for a CI Xcode version
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,11 +16,11 @@
 
 ## See Also
 
-- [List All Xcode Versions Available in Xcode Cloud](get-v1-cixcodeversions.md)
+- [List all xcode versions available in xcode cloud](get-v1-cixcodeversions.md)
   List all Xcode versions that are available to Xcode Cloud workflows.
-- [Read Xcode Version Information](get-v1-cixcodeversions-_id_.md)
+- [Read xcode version information](get-v1-cixcodeversions-_id_.md)
   Get information about a specific Xcode version that’s available to Xcode Cloud workflows.
-- [List Available Macos Versions for an Xcode Version](get-v1-cixcodeversions-_id_-macosversions.md)
+- [List available macos versions for an xcode version](get-v1-cixcodeversions-_id_-macosversions.md)
   List all macOS versions available in Xcode Cloud that support a specific Xcode version.
 
 

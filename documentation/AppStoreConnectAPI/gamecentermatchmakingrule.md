@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a matchmaking rule.
+A JavaScript expression evaluated during Game Center matchmaking to determine player compatibility.
 
 **Availability**:
 - App Store Connect API 3.1+

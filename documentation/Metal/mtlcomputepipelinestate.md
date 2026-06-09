@@ -68,6 +68,7 @@ To create a pipeline state, call the appropriate [`MTLDevice`](mtldevice.md) met
   Creates a new intersection function table.
 ### Instance Properties
 - [var reflection: MTLComputePipelineReflection?](mtlcomputepipelinestate/reflection.md)
+  The compute pipeline’s reflection information, if available.
 - [var requiredThreadsPerThreadgroup: MTLSize](mtlcomputepipelinestate/requiredthreadsperthreadgroup.md)
 ### Instance Methods
 - [func functionHandle(function: any MTL4BinaryFunction) -> (any MTLFunctionHandle)?](mtlcomputepipelinestate/functionhandle(function:)-8spaa.md)

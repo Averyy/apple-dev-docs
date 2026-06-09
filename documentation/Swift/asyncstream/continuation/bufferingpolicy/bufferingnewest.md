@@ -24,6 +24,8 @@ case bufferingNewest(Int)
 
 This strategy enforces keeping at most the specified number of newest values.
 
+> **Note**: If the specified number is zero or negative, no elements are buffered. In that case, an iterator receives an element only if it is already awaiting a value when the continuation yields.
+
 ## See Also
 
 - [AsyncStream.Continuation.BufferingPolicy.unbounded](asyncstream/continuation/bufferingpolicy/unbounded.md)

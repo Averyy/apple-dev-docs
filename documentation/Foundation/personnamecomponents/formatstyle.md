@@ -105,6 +105,8 @@ mlr.formatted(customPersonFormatStyle)
   Creates a person name components object from a given string.
 - [init<S>(S.ParseInput, strategy: S) throws](personnamecomponents/init(_:strategy:).md)
   Creates a person name components object from a given string by applying the provided parsing strategy.
+- [var parseStrategy: PersonNameComponents.ParseStrategy](personnamecomponents/formatstyle/parsestrategy.md)
+  The strategy used to parse a string into person name components.
 ### Modifying a Format Style
 - [var style: PersonNameComponents.FormatStyle.Style](personnamecomponents/formatstyle/style-swift.property.md)
   Specifies the style of the formatted result.
@@ -114,6 +116,13 @@ mlr.formatted(customPersonFormatStyle)
   The locale to use when formatting the person name components.
 - [var attributed: PersonNameComponents.AttributedStyle](personnamecomponents/formatstyle/attributed.md)
   The style used to create a locale-aware attributed string representation of an instance of person name components.
+- [func locale(Locale) -> PersonNameComponents.FormatStyle](personnamecomponents/formatstyle/locale(_:).md)
+  Modifies the person name components format style to use the specified locale.
+### Applying a Format Style
+- [func format(PersonNameComponents) -> String](personnamecomponents/formatstyle/format(_:).md)
+  Creates a string representation from a person name components value.
+### Default Implementations
+- [ParseableFormatStyle Implementations](personnamecomponents/formatstyle/parseableformatstyle-implementations.md)
 
 ## Relationships
 

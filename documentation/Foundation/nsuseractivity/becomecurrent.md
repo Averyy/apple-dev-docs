@@ -23,6 +23,7 @@ func becomeCurrent()
 ## Mentions
 
 - [Creating a user activity object](creating-a-user-activity-object.md)
+- [Supporting the creation of Quick Notes](supporting-the-creation-of-quick-notes.md)
 
 #### Discussion
 
@@ -38,6 +39,12 @@ If you previously called the [`invalidate()`](nsuseractivity/invalidate().md) me
   Marks this activity object as inactive without invalidating it.
 - [func invalidate()](nsuseractivity/invalidate.md)
   Invalidates an activity and marks it as no longer eligible for continuation.
+- [var needsSave: Bool](nsuseractivity/needssave.md)
+  A Boolean value that indicates whether the state of the activity needs to be updated.
+- [class func deleteAllSavedUserActivities(completionHandler: () -> Void)](nsuseractivity/deleteallsaveduseractivities(completionhandler:).md)
+  Deletes all user activities created by your app.
+- [class func deleteSavedUserActivities(withPersistentIdentifiers: [NSUserActivityPersistentIdentifier], completionHandler: () -> Void)](nsuseractivity/deletesaveduseractivities(withpersistentidentifiers:completionhandler:).md)
+  Deletes user activities created by your app that have the specified persistent identifiers.
 
 
 ---

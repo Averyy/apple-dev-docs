@@ -8,6 +8,7 @@ A dictionary key, with a value that’s the date your app last received a succes
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
+- Mac Catalyst 18.2+
 
 ## Declaration
 

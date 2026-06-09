@@ -3,7 +3,7 @@
 **Framework**: Speech  
 **Kind**: property
 
-The audio buffer containing this input.
+A new copy of the audio data for this input.
 
 **Availability**:
 - iOS 26.0+
@@ -16,13 +16,17 @@ The audio buffer containing this input.
 ## Declaration
 
 ```swift
-let buffer: AVAudioPCMBuffer
+var buffer: AVAudioPCMBuffer { get }
 ```
 
 ## See Also
 
 - [let bufferStartTime: CMTime?](analyzerinput/bufferstarttime.md)
   The time-code of this input.
+- [let bufferDuration: CMTime](analyzerinput/bufferduration.md)
+  The length of this input.
+- [let bufferFormat: AVAudioFormat](analyzerinput/bufferformat.md)
+  The audio format of this input.
 
 
 ---

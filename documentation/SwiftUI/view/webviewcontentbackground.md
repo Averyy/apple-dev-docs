@@ -37,6 +37,8 @@ By default, WebViews are opaque, and use the page’s natural background color a
   A view that displays some web content.
 - [class WebPage](../WebKit/WebPage.md)
   An object that controls and manages the behavior of interactive web content.
+- [func onWebViewImmersiveEnvironmentRequest(shouldAllow: (WebPage.FrameInfo) async -> Bool, present: (WebPage.ImmersiveEnvironment) async throws -> Void, dismiss: (WebPage.ImmersiveEnvironment) async -> Void) -> some View](view/onwebviewimmersiveenvironmentrequest(shouldallow:present:dismiss:).md)
+  Manages the lifecycle of immersive environments requested by websites.
 - [func webViewBackForwardNavigationGestures(WebView.BackForwardNavigationGesturesBehavior) -> some View](view/webviewbackforwardnavigationgestures(_:).md)
   Determines whether horizontal swipe gestures trigger backward and forward page navigation.
 - [func webViewContextMenu(menu: (WebView.ActivatedElementInfo) -> some View) -> some View](view/webviewcontextmenu(menu:).md)

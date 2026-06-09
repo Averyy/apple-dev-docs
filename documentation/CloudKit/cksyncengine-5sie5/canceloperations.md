@@ -22,7 +22,7 @@ final func cancelOperations() async
 
 #### Discussion
 
-The sync engine processes cancelation requests asynchronously, meaning it’s possible for in-progress operations to complete even after this method returns.
+The sync engine processes cancellation requests asynchronously, meaning it’s possible for in-progress operations to complete even after this method returns.
 
 
 ---

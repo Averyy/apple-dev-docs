@@ -10,6 +10,7 @@ A category for accessibility features in the framework.
 - iPadOS 17.4+
 - tvOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 

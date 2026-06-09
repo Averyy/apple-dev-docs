@@ -20,10 +20,6 @@ The app intent conforms to the schema for opening an asset.
 var openAsset: some AssistantSchemas.Intent { get }
 ```
 
-## Mentions
-
-- [Making photo and video actions available to Siri and Apple Intelligence](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md)
-
 #### Overview
 
 Use Swift macros that generate additional properties and add protocol conformance for your app intent implementation. The following example shows an app intent that conforms to the `.photos.openAsset` schema:
@@ -40,7 +36,7 @@ struct OpenMediaAssetIntent: OpenIntent {
 }
 ```
 
-For more information about the `.photos` app intent domain, see [`Making photo and video actions available to Siri and Apple Intelligence`](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
+For more information about the `.photos` app intent domain, see doc:Making-photo-and-video-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

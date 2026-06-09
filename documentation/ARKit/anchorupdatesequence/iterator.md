@@ -12,6 +12,12 @@
 struct Iterator<TypeOfAnchor> where TypeOfAnchor : Anchor
 ```
 
+## Topics
+
+### Instance Methods
+- [func next() async -> AnchorUpdateSequence<AnchorType>.Iterator<TypeOfAnchor>.Element?](anchorupdatesequence/iterator/next.md)
+  Asynchronously retrieve the next anchor update.
+
 ## Relationships
 
 ### Conforms To

@@ -30,6 +30,7 @@ struct CGPoint
 - [var customPlaygroundQuickLook: PlaygroundQuickLook](cgpoint/customplaygroundquicklook.md)
   A custom playground Quick Look for this instance.
 - [var dictionaryRepresentation: CFDictionary](cgpoint/dictionaryrepresentation.md)
+- [var formattedDescription: String](cgpoint/formatteddescription.md)
 - [var x: Double](cgpoint/x.md)
 - [var y: Double](cgpoint/y.md)
 ### Instance Methods

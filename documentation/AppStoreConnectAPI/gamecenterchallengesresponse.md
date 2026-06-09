@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Game Center challenge resources.
+A response containing a list of Game Center challenges configured for an app.
 
 **Availability**:
 - App Store Connect API 4.0+
@@ -28,7 +28,7 @@ object GameCenterChallengesResponse
 - [object GameCenterChallengeCreateRequest](gamecenterchallengecreaterequest.md)
   The request body you use to create a challenge.
 - [object GameCenterChallengeResponse](gamecenterchallengeresponse.md)
-  A response that contains a single challenge resource.
+  A response containing a single Game Center challenge configuration.
 - [object GameCenterChallengeUpdateRequest](gamecenterchallengeupdaterequest.md)
   The request body you use to update a challenge.
 - [object GameCenterChallengeVersion](gamecenterchallengeversion.md)

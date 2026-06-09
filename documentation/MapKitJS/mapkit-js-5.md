@@ -156,7 +156,7 @@ This document includes release notes for updates to MapKit JS 5. You can learn m
 - Introduced new styles for built-in controls (zoom buttons, map type picker, etc).
 - Introduced a new map type popover.
 - Introduced a new user location annotation style.
-- Introduced a new [`None`](collisionmode/none.md) collision mode for annotations.
+- Introduced a new [`None`](annotationcollisionmode/none.md) collision mode for annotations.
 
 ##### 5490
 
@@ -378,7 +378,7 @@ MapKit JS 5.23.1 includes new APIs for region and zoom limits, an updated Apple 
 
 - Added the [`cameraDistance`](map/cameradistance.md) property, which sets the altitude of the camera above the center of the map. A change to the map’s camera distance can be animated with [`setCameraDistanceAnimated(distance, animated)`](map/setcameradistanceanimated.md).
 - Added the [`cameraZoomRange`](map/camerazoomrange.md) property, which restricts zooming to a specified minimum and maximum camera distance. A change to the map’s camera zoom range can be animated with [`setCameraZoomRangeAnimated(cameraZoomRange, animated)`](map/setcamerazoomrangeanimated.md).
-- Added the [`cameraBoundary`](map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated(mapRect, animated)`](map/setcameraboundaryanimated.md).
+- Added the [`cameraBoundary`](map/cameraboundary.md) property, which restricts panning to a specified coordinate region. A change to the map’s camera boundary can be animated with [`setCameraBoundaryAnimated(cameraBoundary, animated)`](map/setcameraboundaryanimated.md).
 - Enabled Directions support for users in China.
 - Updated the logo in the lower left corner from the Apple icon to the icon beside the word “Maps”.
 
@@ -473,7 +473,7 @@ MapKit JS 5.13.0 includes new APIs that allow you to present maps in various sty
 
 - Added support for displaying the map in a muted style, which can be enabled by setting the [`mapType`](map/maptype.md) property to [`MutedStandard`](maptype/mutedstandard.md).
 - Added support for displaying the map in dark mode, which can be enabled by setting the new [`colorScheme`](map/colorscheme.md) property on the Map object to [`Dark`](colorscheme/dark.md). The default value for [`colorScheme`](map/colorscheme.md) is [`Light`](colorscheme/light.md).
-- Added support for customizing the display of distances, as in the scale control. The new [`distances`](map/distances-data.property.md) property on the Map object can be set to [`Metric`](distance/metric.md) or [`Imperial`](distance/imperial.md) to always display metric or imperial units, respectively.
+- Added support for customizing the display of distances, as in the scale control. The new [`distances`](map/distances-data.property.md) property on the Map object can be set to [`Metric`](distanceunitsystem/metric.md) or [`Imperial`](distanceunitsystem/imperial.md) to always display metric or imperial units, respectively.
 
 ###### Updates
 
@@ -526,6 +526,11 @@ This update also introduces a [`MapKit JS Usage Dashboard`](https://developer.ap
 ###### Deprecated Features
 
 - The path property of the DirectionsResponse is now deprecated in favor of the new polyline property.
+
+## See Also
+
+- [MapKit JS 6](mapkit-js-6.md)
+  Use the most up-to-date version of MapKit JS on your website.
 
 
 ---

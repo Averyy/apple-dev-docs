@@ -93,6 +93,15 @@ You can display additional map buttons by providing an array of [`CPMapButton`](
   Dismisses the panning interface.
 - [var isPanningInterfaceVisible: Bool](cpmaptemplate/ispanninginterfacevisible.md)
   A Boolean value that indicates whether the map template is displaying the panning interface.
+### Instance Methods
+- [func hidePanel(completion: ((Bool, (any Error)?) -> Void)?)](cpmaptemplate/hidepanel(completion:).md)
+  Hides the overlay.
+- [func popPanel(completion: ((Bool, (any Error)?) -> Void)?)](cpmaptemplate/poppanel(completion:).md)
+  Pops the top panel from the overlay’s panel stack.
+- [func pushPanel(CPMapPanel, completion: ((Bool, (any Error)?) -> Void)?)](cpmaptemplate/pushpanel(_:completion:).md)
+  Pushes a new panel.
+- [func showPanel(CPMapPanel, completion: ((Bool, (any Error)?) -> Void)?)](cpmaptemplate/showpanel(_:completion:).md)
+  Shows an overlay with the specified panel.
 
 ## Relationships
 

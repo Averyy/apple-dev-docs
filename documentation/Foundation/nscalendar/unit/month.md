@@ -35,6 +35,7 @@ The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitMonth`.
 - [static var quarter: NSCalendar.Unit](nscalendar/unit/quarter.md)
   Identifier for the quarter of the calendar.
 - [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
+  Identifier for the time zone of a date components object.
 
 
 ---

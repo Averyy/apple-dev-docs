@@ -60,6 +60,7 @@ The size and precision of this type depend on the CPU architecture. When you bui
 - [Animatable](../SwiftUI/Animatable.md)
 - [BinaryFloatingPoint](../Swift/BinaryFloatingPoint.md)
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Comparable](../Swift/Comparable.md)
 - [Copyable](../Swift/Copyable.md)

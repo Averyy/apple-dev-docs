@@ -11,7 +11,8 @@ The center point of the region.
 ## Declaration
 
 ```swift
-center: Coordinate;
+get center(): Coordinate;
+set center(coordinate: CoordinateData);
 ```
 
 #### Discussion

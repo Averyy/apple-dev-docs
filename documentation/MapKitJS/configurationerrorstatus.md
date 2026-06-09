@@ -20,6 +20,8 @@ const ConfigurationErrorStatus: Readonly<{
     readonly NetworkError: "Network Error";
     readonly Unknown: "Unknown";
 }>
+type ConfigurationErrorStatus =
+    (typeof ConfigurationErrorStatus)[keyof typeof ConfigurationErrorStatus];
 ```
 
 ## Topics
@@ -39,9 +41,6 @@ const ConfigurationErrorStatus: Readonly<{
   An error status that indicates the provided authorization token is invalid.
 - [Unknown](configurationerrorstatus/unknown.md)
   An error status that indicates MapKit JS encountered an unknown error during initialization.
-### Type Aliases
-- [type ConfigurationErrorStatus](configurationerrorstatus/configurationerrorstatus.md)
-  A type alias that represents the values of the configuration error status enumeration.
 
 ## See Also
 

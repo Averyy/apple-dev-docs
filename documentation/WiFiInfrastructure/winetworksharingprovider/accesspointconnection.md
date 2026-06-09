@@ -8,6 +8,7 @@ A Wi-Fi access point the host is currently connected to, which may be shared wit
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

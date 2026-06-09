@@ -11,7 +11,7 @@ The shadow’s relative position, which you specify with horizontal and vertical
 ## Declaration
 
 ```swift
-var shadowOffset: NSSize { get set }
+var shadowOffset: CGSize { get set }
 ```
 
 #### Discussion

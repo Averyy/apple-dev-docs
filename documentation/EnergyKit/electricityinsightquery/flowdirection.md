@@ -9,7 +9,6 @@ A property that specifies whether the response contains imported or exported ene
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

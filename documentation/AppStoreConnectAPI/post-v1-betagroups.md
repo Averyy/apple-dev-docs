@@ -1,4 +1,4 @@
-# Create a Beta Group
+# Create a beta group
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,9 +14,9 @@ Create a beta group associated with an app, optionally enabling TestFlight publi
 
 ## See Also
 
-- [Modify a Beta Group](patch-v1-betagroups-_id_.md)
+- [Modify a beta group](patch-v1-betagroups-_id_.md)
   Modify a beta group’s metadata, including changing its TestFlight public link status.
-- [Delete a Beta Group](delete-v1-betagroups-_id_.md)
+- [Delete a beta group](delete-v1-betagroups-_id_.md)
   Delete a beta group and remove beta tester access to associated builds.
 
 

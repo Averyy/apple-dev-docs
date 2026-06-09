@@ -56,7 +56,7 @@ An `NSMapEnumerator` structure that will cause successive key-value pairs of `ta
   Creates a new map table in the specified zone.
 - [func NSEndMapTableEnumeration(UnsafeMutablePointer<NSMapEnumerator>)](nsendmaptableenumeration(_:).md)
   Used when finished with an enumerator.
-- [func NSFreeMapTable(NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
+- [func NSFreeMapTable(consuming NSMapTable<AnyObject, AnyObject>)](nsfreemaptable(_:).md)
   Deletes the specified map table.
 - [func NSMapGet(NSMapTable<AnyObject, AnyObject>, UnsafeRawPointer?) -> UnsafeMutableRawPointer?](nsmapget(_:_:).md)
   Returns a map table value for the specified key.

@@ -33,7 +33,7 @@ var rssi: Int8
 - [var panID: UInt16](matteradddeviceextensionrequesthandler/threadscanresult/panid.md)
   The Thread network PAN identifier.
 - [var version: UInt8](matteradddeviceextensionrequesthandler/threadscanresult/version.md)
-  The version field, as specified by the Matter specificaiton.
+  The version field, as specified by the Matter specification.
 
 
 ---

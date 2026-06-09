@@ -49,16 +49,16 @@ Configure the automatic exposure behavior of a camera, or manually control its e
 - [func setExposureTargetBias(Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuretargetbias(_:completionhandler:).md)
   Sets the bias to apply to the target exposure value.
 ### Configuring exposure manually
+- [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
+  Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
 - [var exposureDuration: CMTime](avcapturedevice/exposureduration.md)
   The length of time over which exposure takes place.
-- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
-  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 - [var iso: Float](avcapturedevice/iso.md)
   The current exposure ISO value.
 - [var lensAperture: Float](avcapturedevice/lensaperture.md)
   The size of the lens diaphragm.
-- [func setExposureModeCustom(duration: CMTime, iso: Float, completionHandler: ((CMTime) -> Void)?)](avcapturedevice/setexposuremodecustom(duration:iso:completionhandler:).md)
-  Sets the exposure mode to a custom state, and locks exposure duration and ISO at explicit values.
+- [var activeMaxExposureDuration: CMTime](avcapturedevice/activemaxexposureduration.md)
+  The maximum exposure duration, in seconds, defined in the autoexposure algorithm.
 
 ## See Also
 

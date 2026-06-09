@@ -1,4 +1,4 @@
-# List Builds
+# List builds
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -52,18 +52,18 @@ Find and list builds for all apps in App Store Connect.
 
 ## See Also
 
-- [Read Build Information](get-v1-builds-_id_.md)
+- [Read build information](get-v1-builds-_id_.md)
   Get information about a specific build.
-- [Read the App Information of a Build](get-v1-builds-_id_-app.md)
+- [Read the app information of a build](get-v1-builds-_id_-app.md)
   Get the app information for a specific build.
-- [Read the App ID of a Build](get-v1-builds-_id_-relationships-app.md)
+- [Read the app id of a build](get-v1-builds-_id_-relationships-app.md)
   Get the app ID for a specific build.
-- [Read the App Store Version Information of a Build](get-v1-builds-_id_-appstoreversion.md)
+- [Read the app store version information of a build](get-v1-builds-_id_-appstoreversion.md)
   Get the App Store version of a specific build.
-- [GET /v1/builds/{id}/relationships/appStoreVersion](get-v1-builds-_id_-relationships-appstoreversion.md)
-- [Read the Prerelease Version of a Build](get-v1-builds-_id_-prereleaseversion.md)
+- [Get the App Store version ID for a build](get-v1-builds-_id_-relationships-appstoreversion.md)
+- [Read the prerelease version of a build](get-v1-builds-_id_-prereleaseversion.md)
   Get the prerelease version for a specific build.
-- [GET /v1/builds/{id}/relationships/preReleaseVersion](get-v1-builds-_id_-relationships-prereleaseversion.md)
+- [Get the prerelease version ID for a build](get-v1-builds-_id_-relationships-prereleaseversion.md)
 - [Read Usage Metrics for a Beta Build](get-v1-builds-_id_-metrics-betabuildusages.md)
   Get usage metrics for a specific build.
 

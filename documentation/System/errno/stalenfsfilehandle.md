@@ -26,7 +26,7 @@ static var staleNFSFileHandle: Errno { get }
 
 #### Discussion
 
-You attempted access an open file on an NFS filesystem, which is now unavailable as referenced by the given file descriptor. This may indicate that the file was deleted on the NFS server or that some other catastrophic event occurred.
+You attempted access an open file on an NFS file system, which is now unavailable as referenced by the given file descriptor. This may indicate that the file was deleted on the NFS server or that some other catastrophic event occurred.
 
 The corresponding C error is `ESTALE`.
 

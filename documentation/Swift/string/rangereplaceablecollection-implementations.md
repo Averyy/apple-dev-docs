@@ -33,7 +33,7 @@
   Adds the elements of a sequence or collection to the end of this collection.
 - [func applying(CollectionDifference<Self.Element>) -> Self?](string/applying(_:).md)
   Applies the given difference to this collection.
-- [func filter((Self.Element) throws -> Bool) rethrows -> Self](string/filter(_:).md)
+- [func filter<E>((Self.Element) throws(E) -> Bool) throws(E) -> Self](string/filter(_:)-66nw7.md)
   Returns a new collection of the same type containing, in order, the elements of the original collection that satisfy the given predicate.
 - [func insert(Character, at: String.Index)](string/insert(_:at:).md)
   Inserts a new character at the specified position.

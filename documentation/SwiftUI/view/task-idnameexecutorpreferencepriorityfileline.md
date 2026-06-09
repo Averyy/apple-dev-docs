@@ -79,6 +79,15 @@ The task attached to the [`Text`](text.md) view gets and displays the status val
 - `line`: Line number used in default task name. SwiftUI uses the callsite of .task by default.
 - `action`: A closure that SwiftUI calls as an asynchronous task before the view appears. SwiftUI can automatically cancel the task after the view disappears before the action completes. If the `id` value changes, SwiftUI cancels and restarts the task.
 
+## See Also
+
+- [func task<T>(id: T, name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(id:name:priority:file:line:_:).md)
+  Adds a task to perform before this view appears or when a specified value changes.
+- [func task(name: String?, executorPreference: any TaskExecutor, priority: TaskPriority, file: String, line: Int, action: sending () async -> Void) -> some View](view/task(name:executorpreference:priority:file:line:action:).md)
+  Adds an asynchronous task to perform before this view appears.
+- [func task(name: String?, priority: TaskPriority, file: String, line: Int, sending () async -> Void) -> some View](view/task(name:priority:file:line:_:).md)
+  Adds an asynchronous task to perform before this view appears.
+
 
 ---
 

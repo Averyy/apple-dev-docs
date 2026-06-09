@@ -20,6 +20,8 @@ The system posts this notification on the main actor in response to the [`termin
 
 > **Note**:  This notification isn’t sent during sudden termination of an app. For more information about sudden termination, see the section  [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo#Support-Sudden-Termination) of [`ProcessInfo`](https://developer.apple.com/documentation/Foundation/ProcessInfo).
 
+To observe this notification using Swift concurrency, use [`NSApplication.WillTerminateMessage`](nsapplication/willterminatemessage.md).
+
 ## See Also
 
 - [class let didBecomeActiveNotification: NSNotification.Name](nsapplication/didbecomeactivenotification.md)

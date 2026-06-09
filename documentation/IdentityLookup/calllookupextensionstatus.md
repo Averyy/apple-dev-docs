@@ -11,7 +11,6 @@ Returns a value with the current state of the app extension.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 
@@ -30,7 +29,6 @@ enum CallLookupExtensionStatus
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)

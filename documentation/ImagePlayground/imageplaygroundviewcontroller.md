@@ -56,18 +56,23 @@ Present this view controller from your interface and wait for it to deliver resu
   A Boolean value that indicates whether image generation is available on the current device.
 ### Managing the view
 - [func viewDidLoad()](imageplaygroundviewcontroller/viewdidload.md)
+  Called after the controller’s view is loaded into memory.
 - [func viewDidDisappear()](imageplaygroundviewcontroller/viewdiddisappear.md)
+  Notifies the view controller that its view is about to be removed from a view hierarchy.
 - [func viewWillAppear()](imageplaygroundviewcontroller/viewwillappear.md)
+  Notifies the view controller that its view is about to be added to a view hierarchy.
 ### Instance Properties
 - [var isModalInPresentation: Bool](imageplaygroundviewcontroller/ismodalinpresentation.md)
+  A Boolean value indicating whether the view controller enforces a modal behavior.
 - [var modalPresentationStyle: UIModalPresentationStyle](imageplaygroundviewcontroller/modalpresentationstyle.md)
   The presentation style for modal view controllers.
 - [var options: ImagePlaygroundOptions](imageplaygroundviewcontroller/options.md)
-  Options influencing image generation.
+  Options that influence the image-generation process.
 - [var preferredContentSize: CGSize](imageplaygroundviewcontroller/preferredcontentsize.md)
-- [var supportedInterfaceOrientations: UIInterfaceOrientationMask](imageplaygroundviewcontroller/supportedinterfaceorientations.md)
+  The preferred size for the view controller’s view.
 ### Instance Methods
 - [func viewDidDisappear(Bool)](imageplaygroundviewcontroller/viewdiddisappear(_:).md)
+  Notifies the view controller that its view is about to be removed from a view hierarchy.
 
 ## Relationships
 

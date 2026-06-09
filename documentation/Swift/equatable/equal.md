@@ -18,7 +18,7 @@ Returns a Boolean value indicating whether two values are equal.
 ## Declaration
 
 ```swift
-static func == (lhs: Self, rhs: Self) -> Bool
+static func == (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
 
 #### Discussion
@@ -32,7 +32,7 @@ Equality is the inverse of inequality. For any values `a` and `b`, `a == b` impl
 
 ## See Also
 
-- [static func != (Self, Self) -> Bool](equatable/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](equatable/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 
 

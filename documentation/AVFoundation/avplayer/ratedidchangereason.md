@@ -34,9 +34,6 @@ struct RateDidChangeReason
   An app makes a call to set the player’s rate.
 - [static let setRateFailed: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/setratefailed.md)
   An attempt to change the player’s rate fails.
-### Type Properties
-- [static let playheadReachedLiveEdge: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/playheadreachedliveedge.md)
-- [static let reversePlaybackReachedStartOfSeekableRange: AVPlayer.RateDidChangeReason](avplayer/ratedidchangereason/reverseplaybackreachedstartofseekablerange.md)
 
 ## Relationships
 

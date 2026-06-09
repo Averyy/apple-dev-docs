@@ -1,0 +1,31 @@
+# element::index
+
+**Framework**: ComputeGraph  
+**Kind**: func
+
+Returns the index of the current element.
+
+**Availability**:
+- macOS 27.0+ (Beta)
+- Reality Composer Pro 27.0+ (Beta)
+
+## Declaration
+
+```swift
+uint element::index()
+```
+
+#### Return Value
+
+The zero-based index of the element
+
+#### Discussion
+
+Use this function to get the element’s position in the element buffer, which can be useful for creating unique variations or patterns.
+
+> **Note**: ![Graph](https://docs-assets.developer.apple.com/published/d2a9c0f5ff28d89f6028679e26a5be47/element__index.svg)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/computegraph/element/index)*

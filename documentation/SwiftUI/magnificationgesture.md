@@ -15,6 +15,7 @@ A gesture that recognizes a magnification motion and tracks the amount of magnif
 ## Declaration
 
 ```swift
+nonisolated
 struct MagnificationGesture
 ```
 

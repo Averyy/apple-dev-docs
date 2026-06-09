@@ -16,6 +16,7 @@ object AppAvailabilityV2CreateRequest.Data.Relationships.TerritoryAvailabilities
 
 ### Objects
 - [object AppAvailabilityV2CreateRequest.Data.Relationships.TerritoryAvailabilities.Data](appavailabilityv2createrequest/data-data.dictionary/relationships-data.dictionary/territoryavailabilities-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app availability.
 
 ## Properties
 

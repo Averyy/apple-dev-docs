@@ -24,7 +24,7 @@ A preset to provide a balanced compression quality and encoding speed.
 An encoder configured using this preset is expected to achieve a higher quality than an encoder configured with the preset kVTCompressionPreset_HighSpeed. The preset kVTCompressionPreset_HighSpeed may be preferred for a faster encoding. The preset kVTCompressionPreset_HighQuality may be preferred for a higher compression quality.
 
 ```None
-See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing.
+See also kVTCompressionPreset_HighQuality, kVTCompressionPreset_HighSpeed, kVTCompressionPreset_VideoConferencing, kVTCompressionPreset_ConsistentQuality.
 ```
 
 ## See Also

@@ -60,8 +60,6 @@ class MXLocationActivityMetric
   An object representing metrics about the use of the GPU.
 - [class MXNetworkTransferMetric](mxnetworktransfermetric.md)
   An object representing metrics about network transfers.
-- [class MXCPUExceptionDiagnostic](mxcpuexceptiondiagnostic.md)
-  An object representing a diagnostic report for a fatal or nonfatal CPU exception.
 
 
 ---

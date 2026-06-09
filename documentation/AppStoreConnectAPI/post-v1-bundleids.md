@@ -1,4 +1,4 @@
-# Register a New Bundle ID
+# Register a new bundle id
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

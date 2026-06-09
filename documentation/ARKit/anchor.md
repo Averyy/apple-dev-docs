@@ -44,6 +44,7 @@ protocol Anchor : CustomStringConvertible, Identifiable, Sendable
 - [CameraRegionAnchor](cameraregionanchor.md)
 - [DeviceAnchor](deviceanchor.md)
 - [EnvironmentProbeAnchor](environmentprobeanchor.md)
+- [FieldOfViewAnchor](fieldofviewanchor.md)
 - [HandAnchor](handanchor.md)
 - [ImageAnchor](imageanchor.md)
 - [MeshAnchor](meshanchor.md)

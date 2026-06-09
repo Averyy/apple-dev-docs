@@ -16,6 +16,7 @@ object AppCustomProductPageCreateRequest.Data.Relationships.App
 
 ### Objects
 - [object AppCustomProductPageCreateRequest.Data.Relationships.App.Data](appcustomproductpagecreaterequest/data-data.dictionary/relationships-data.dictionary/app-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an app custom product page.
 
 ## Properties
 

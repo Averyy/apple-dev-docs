@@ -7,8 +7,6 @@ The payload that configures Game Center parental controls.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.gamed` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -71,9 +69,9 @@ Specify `com.apple.gamed` as the payload type.
 ## Properties
 
 - `GKFeatureAccountModificationAllowed` (boolean): If `true`, allows account modifications.
-- `GKFeatureAddingGameCenterFriendsAllowed` (boolean): If `true`, allows adding Game Center friends.
-- `GKFeatureGameCenterAllowed` (boolean): If `true`, enables Game Center.
-- `GKFeatureMultiplayerGamingAllowed` (boolean): If `true`, allows multiplayer gaming.
+- `GKFeatureAddingGameCenterFriendsAllowed` (boolean): If `true`, allows adding Game Center friends. Deprecated: macOS 10.13+
+- `GKFeatureGameCenterAllowed` (boolean): If `true`, enables Game Center. Deprecated: macOS 10.13+
+- `GKFeatureMultiplayerGamingAllowed` (boolean): If `true`, allows multiplayer gaming. Deprecated: macOS 10.13+
 
 ## See Also
 

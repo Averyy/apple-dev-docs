@@ -26,6 +26,7 @@ class AVSampleBufferVideoRenderer
   A Boolean value that Indicates whether the renderer requires flushing to continue decoding frames.
 - [class let requiresFlushToResumeDecodingDidChangeNotification: NSNotification.Name](avsamplebuffervideorenderer/requiresflushtoresumedecodingdidchangenotification.md)
   A notification that indicates that the video renderer requires flushing to continue rendering sample buffers.
+- [let AVSampleBufferVideoRendererRequiresFlushToResumeDecodingDidChangeNotificationRequiresFlushKey: String](avsamplebuffervideorendererrequiresflushtoresumedecodingdidchangenotificationrequiresflushkey.md)
 - [func flush(removingDisplayedImage: Bool, completionHandler: (() -> Void)?)](avsamplebuffervideorenderer/flush(removingdisplayedimage:completionhandler:).md)
   Tells the video renderer to discard pending enqueued sample buffers.
 ### Setting presentation time expectations
@@ -48,6 +49,8 @@ class AVSampleBufferVideoRenderer
   A key to retrieve an error object that provides the details of the failure.
 ### Capturing performance metrics
 - [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](avsamplebuffervideorenderer/loadvideoperformancemetrics(completionhandler:).md)
+### Classes
+- [AVSampleBufferVideoRenderer.Receiver](avsamplebuffervideorenderer/receiver.md)
 
 ## Relationships
 

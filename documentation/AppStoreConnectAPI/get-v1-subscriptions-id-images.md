@@ -25,11 +25,12 @@ List all images for a specific subscription.
   Reserve an image asset to appear in the App Store, representing a subscription.
 - [Read Subscription Image Information](get-v1-subscriptionimages-_id_.md)
   Read details about a specific subscription image.
-- [GET /v1/subscriptions/{id}/relationships/images](get-v1-subscriptions-_id_-relationships-images.md)
-- [Read Subscription Image Information](patch-v1-subscriptionimages-_id_.md)
-  Read details about a specific subscription image.
-- [Delete an Subscription Image](delete-v1-subscriptionimages-_id_.md)
-  Delete the image asset that appears on the App Store listing that represents an subscription.
+- [List subscription image ids](get-v1-subscriptions-_id_-relationships-images.md)
+  List all images IDs for a specific subscription.
+- [Commit a subscription image](patch-v1-subscriptionimages-_id_.md)
+  Commit an uploaded subscription image.
+- [Delete a subscription image](delete-v1-subscriptionimages-_id_.md)
+  Delete the image asset that appears on the App Store listing that represents a subscription.
 
 
 ---

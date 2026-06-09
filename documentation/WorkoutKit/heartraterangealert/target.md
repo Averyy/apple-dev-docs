@@ -20,8 +20,6 @@ var target: ClosedRange<Measurement<UnitFrequency>>
 
 ## See Also
 
-- [var metric: WorkoutAlertMetric](heartraterangealert/metric.md)
-  The metric for the alert.
 - [var targetQuantityLowerBound: HKQuantity](heartraterangealert/targetquantitylowerbound.md)
   The target’s lower bound.
 - [var targetQuantityUpperBound: HKQuantity](heartraterangealert/targetquantityupperbound.md)

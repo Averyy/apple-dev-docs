@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Tells the delegate when the user scrolls or zooms the content.
+Tells the delegate when a person scrolls or zooms the content.
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,16 @@ func paperMarkupViewControllerDidChangeContentVisibleFrame(_ paperMarkupViewCont
 
 ## Parameters
 
-- `paperMarkupViewController`: The `PaperMarkupViewController` the user is interacting with.
+- `paperMarkupViewController`: The `PaperMarkupViewController` the person is interacting with.
+
+## See Also
+
+- [func paperMarkupViewControllerDidChangeMarkup(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangemarkup(_:).md)
+  Tells the delegate when the markup changes.
+- [func paperMarkupViewControllerDidChangeSelection(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidchangeselection(_:).md)
+  Tells the delegate when the selection changes.
+- [func paperMarkupViewControllerDidBeginDrawing(PaperMarkupViewController)](papermarkupviewcontroller/delegate-swift.protocol/papermarkupviewcontrollerdidbegindrawing(_:).md)
+  Tells the delegate when a person begins drawing.
 
 
 ---

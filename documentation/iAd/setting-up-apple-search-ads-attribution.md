@@ -6,7 +6,7 @@ Retrieve the attribution dictionary.
 
 #### Overview
 
-> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md). Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
+> ⚠️ **Warning**:  After February 7, 2023, all requests made to the Apple Search Ads iAd Attribution API will return with a value of `"iad-attribution"` `=` `false`, or errors. See `ADClient/requestAttributionDetails(_:)`. Use the [`AdServices`](https://developer.apple.com/documentation/AdServices) framework for current attribution integration with the [`Apple Ads`](https://developer.apple.com/documentation/apple_ads) Campaign Management API for devices using iOS 14.3 and later. Attribution isn’t available for downloads and redownloads from devices using iOS 14.2 or earlier.
 
 The attribution dictionary contains attribution data that the system retrieves from user interaction with ads originating from [`Apple Search Ads`](https://developer.apple.comhttps://searchads.apple.com/advanced/) campaigns.
 
@@ -16,7 +16,7 @@ To retrieve the attribution dictionary, use the following process in sequence.
 
 ##### Retrieve the Attribution Dictionary
 
-See the [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md) method for the conditions to retrieve the dictionary that contains the attribution object. Next, check for Apple Search Ads attribution, such as at app first open or when registration is complete. Store the data locally, so you don’t need to repeat the method call.
+See the `ADClient/requestAttributionDetails(_:)` method for the conditions to retrieve the dictionary that contains the attribution object. Next, check for Apple Search Ads attribution, such as at app first open or when registration is complete. Store the data locally, so you don’t need to repeat the method call.
 
 ```objc
 // Check for iOS 10 attribution implementation
@@ -29,7 +29,7 @@ NSLog(@"Attribution Dictionary: %@", attributionDetails);
 }
 ```
 
-The following example shows the dictionary structure you receive when you call [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md):
+The following example shows the dictionary structure you receive when you call `ADClient/requestAttributionDetails(_:)`:
 
 ```other
 { 
@@ -95,7 +95,7 @@ If you integrate your data-reporting strategy with a Mobile Measurement Provider
 
 - [iAd Changelog](iad-changelog.md)
   Learn what’s new in the Apple Search Ads iAd Attribution API.
-- [class ADClient](adclient.md)
+- [ADClient](adclient.md)
   The parent class you use to request an attribution response.
 
 

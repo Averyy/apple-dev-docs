@@ -11,7 +11,7 @@ The title of the feature.
 ## Declaration
 
 ```swift
-get title(): string | undefined;
+get title(): string | null;
 ```
 
 #### Discussion

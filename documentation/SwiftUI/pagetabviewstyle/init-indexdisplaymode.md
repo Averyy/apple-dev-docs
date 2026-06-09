@@ -16,6 +16,7 @@ Creates a new `PageTabViewStyle` with an index display mode
 ## Declaration
 
 ```swift
+nonisolated
 init(indexDisplayMode: PageTabViewStyle.IndexDisplayMode = .automatic)
 ```
 

@@ -8,33 +8,24 @@ The parent class you use to request an attribution response.
 ## Declaration
 
 ```swift
-class ADClient
+@interface ADClient : NSObject
 ```
 
 #### Overview
 
-To use this class, fetch the shared client object, [`shared()`](adclient/shared().md). Then call its [`requestAttributionDetails(_:)`](adclient/requestattributiondetails(_:).md) method, passing in a block to be called with the result.
+To use this class, fetch the shared client object, `shared()`. Then call its `requestAttributionDetails(_:)` method, passing in a block to be called with the result.
 
 ## Topics
 
-### Fetching a Shared Client Object
-- [class func shared() -> ADClient](adclient/shared.md)
-  Gets an instance of ADClient.
-### Requesting Ad Attribution
-- [func requestAttributionDetails(([String : NSObject]?, (any Error)?) -> Void)](adclient/requestattributiondetails(_:).md)
-  Gets an attribution response.
+### Instance Methods
+- [- requestAttributionDetailsWithBlock:](adclient/requestattributiondetailswithblock:.md)
+### Type Methods
+- [+ sharedClient](adclient/sharedclient.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
-### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 

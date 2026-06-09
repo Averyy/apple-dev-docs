@@ -1,4 +1,4 @@
-# Create App Store Review Details for an App Clip
+# Create app store review details for an app clip
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -18,9 +18,9 @@ The request body you use to create App Store detail information.
 
 ## See Also
 
-- [Read the App Store Review Details of an App Clip](get-v1-appclipappstorereviewdetails-_id_.md)
+- [Read the app store review details of an app clip](get-v1-appclipappstorereviewdetails-_id_.md)
   Get App Store Review details for an App Clip.
-- [Modify App Store Review Details for an App Clip](patch-v1-appclipappstorereviewdetails-_id_.md)
+- [Modify app store review details for an app clip](patch-v1-appclipappstorereviewdetails-_id_.md)
   Update App Clip metadata you provide to App Store Review.
 
 

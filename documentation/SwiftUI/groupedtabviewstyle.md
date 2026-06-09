@@ -11,6 +11,7 @@ A tab view style that displays a tab bar that groups its tabs together.
 ## Declaration
 
 ```swift
+nonisolated
 struct GroupedTabViewStyle
 ```
 

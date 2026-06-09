@@ -20,7 +20,7 @@ Before App Store Connect API version 3.0, formatters were based on localizations
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Read Leaderboard Information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Get leaderboards information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
 
 ## See Also
 
@@ -38,8 +38,8 @@ Before App Store Connect API version 3.0, formatters were based on localizations
   Add a new leaderboard to your app.
 - [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Modify the activity for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the challenge for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
 - [Delete a Leaderboard](delete-v1-gamecenterleaderboards-_id_.md)
   Delete a leaderboard from your app.
 

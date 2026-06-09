@@ -12,6 +12,10 @@
 case completed
 ```
 
+## See Also
+
+- [case reversed(reason: AVExperienceController.TransitionContext.ReversedReason)](avexperiencecontroller/transitioncontext/transitionresult/reversed(reason:).md)
+
 
 ---
 

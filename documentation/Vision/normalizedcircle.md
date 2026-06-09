@@ -12,6 +12,7 @@ The center point and radius of a 2D circle.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

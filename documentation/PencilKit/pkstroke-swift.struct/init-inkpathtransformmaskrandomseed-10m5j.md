@@ -9,7 +9,6 @@ Creates a stroke with the line properties, path, transform, mask, and random see
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- macOS 13.0+
 - visionOS 1.0+
 
 ## Declaration

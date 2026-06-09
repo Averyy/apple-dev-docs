@@ -11,12 +11,13 @@ A scene that renders itself as a standalone alert dialog.
 ## Declaration
 
 ```swift
+nonisolated
 struct AlertScene<Actions, Message> where Actions : View, Message : View
 ```
 
 #### Overview
 
-Alert scenes are not attached to any particular window, and present themselves in the center of the current display. The dialog must be dismissed before any further interaction with the app is permitted.
+Alert scenes present themselves in the center of the current display, and don’t attach to any particular window. The system prevents interaction with the app until someone dismisses the alert scene.
 
 ```swift
 @main
@@ -39,7 +40,7 @@ struct MyApp: App {
 }
 ```
 
-All actions present in the ViewBuilder will dismiss the alert. Like the alert modifier, you can determine the role of the buttons with `.cancel` or `.destructive`. If no actions are present, we will automatically include an OK button for dismissal.
+All the actions you provide in the [`ContentBuilder`](contentbuilder.md) dismiss the alert when someone invokes them. Like the alert modifier, specify the role of the buttons with [`cancel`](buttonrole/cancel.md) or [`destructive`](buttonrole/destructive.md). If you don’t provide any actions, the system automatically includes a button with the title “OK” that dismisses the alert scene.
 
 ## Topics
 
@@ -51,6 +52,10 @@ All actions present in the ViewBuilder will dismiss the alert. Like the alert mo
 - [init(_:isPresented:presenting:actions:)](alertscene/init(_:ispresented:presenting:actions:).md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, and a set of actions. Note that this creates a text view on your behalf.
 - [init(_:isPresented:presenting:actions:message:)](alertscene/init(_:ispresented:presenting:actions:message:).md)
+  Creates an alert scene, using the given data to produce the alert’s content with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
+- [init(_:item:actions:)](alertscene/init(_:item:actions:).md)
+  Creates an alert scene, using the given data to produce the alert’s content with a title, and a set of actions. Note that this creates a text view on your behalf.
+- [init(_:item:actions:message:)](alertscene/init(_:item:actions:message:).md)
   Creates an alert scene, using the given data to produce the alert’s content with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
 
 ## Relationships
@@ -64,12 +69,20 @@ All actions present in the ViewBuilder will dismiss the alert. Like the alert mo
   Presents an alert when a given condition is true, using a text view for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
+  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+  Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
   Presents an alert with a message when a given condition is true using a text view as a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+- [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
+- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+  Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.
 

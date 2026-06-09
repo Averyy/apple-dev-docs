@@ -6,7 +6,7 @@
 The number of columns in the text table.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
@@ -16,7 +16,8 @@ var numberOfColumns: Int { get set }
 
 ## See Also
 
-- [Text Layout Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TextLayout/TextLayout.html#//apple_ref/doc/uid/10000158i)
+- [class NSTextTableBlock](nstexttableblock.md)
+  A text block that appears as a cell in a text table.
 
 
 ---

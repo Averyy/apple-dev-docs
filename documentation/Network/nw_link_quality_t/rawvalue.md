@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var rawValue: UInt32
+var rawValue: UInt8
 ```
 
 

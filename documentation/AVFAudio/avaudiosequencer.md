@@ -145,6 +145,7 @@ class AVAudioSequencer
 
 - [class AVAudioUnitSampler](avaudiounitsampler.md)
   An object that you configure with one or more instrument samples, based on Apple’s Sampler audio unit.
+- [typealias AVMIDIEventListBlock](avmidieventlistblock.md)
 
 
 ---

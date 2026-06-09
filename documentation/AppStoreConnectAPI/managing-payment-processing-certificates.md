@@ -16,7 +16,7 @@ Managing your merchant Identifier (ID) and Payment Processing certificates keeps
 
 A merchant ID uniquely identifies you to Apple Pay as a merchant who is able to accept payments. A merchant ID never expires, and you can use the same one for multiple apps.
 
-To create a merchant ID, use [`Create a Merchant ID`](post-v1-merchantids.md).
+To create a merchant ID, use [`Create a merchant id`](post-v1-merchantids.md).
 
 Here’s an example payload:
 
@@ -35,7 +35,7 @@ Here’s an example payload:
 
 ##### Create Payment Processing Certificate
 
-To create a certificate to use with Apple Pay, use [`Create a Certificate`](post-v1-certificates.md).
+To create a certificate to use with Apple Pay, use [`Create a certificate`](post-v1-certificates.md).
 
 Here’s an example payload:
 
@@ -65,26 +65,26 @@ Here’s an example payload:
 
 Use one of three options to replace a payment-processing certificate nearing its 25-month expiration date. Each option takes into account that you can have more than one payment processing certificate, but only one can be `activated` for use at any time:
 
-- **Expire and create**: Let the existing Payment Process certificate expire. Then create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). The created certificate automatically has the `activated` key set to `TRUE`.
-- ** Create then revoke**: Create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). Revoke the existing certificate nearing expiration by using [`Revoke a Certificate`](delete-v1-certificates-_id_.md). The new Payment Processing certificate automatically has the `activated` key set to `TRUE`.
-- ** Create and activate**: Create a new Payment Processing certificate using [`Create a Certificate`](post-v1-certificates.md). Then explicitly “activate” the new certificate using [`Modify a Certificate`](patch-v1-certificates-_id_.md).
+- **Expire and create**: Let the existing Payment Process certificate expire. Then create a new Payment Processing certificate using [`Create a certificate`](post-v1-certificates.md). The created certificate automatically has the `activated` key set to `TRUE`.
+- ** Create then revoke**: Create a new Payment Processing certificate using [`Create a certificate`](post-v1-certificates.md). Revoke the existing certificate nearing expiration by using [`Revoke a certificate`](delete-v1-certificates-_id_.md). The new Payment Processing certificate automatically has the `activated` key set to `TRUE`.
+- ** Create and activate**: Create a new Payment Processing certificate using [`Create a certificate`](post-v1-certificates.md). Then explicitly “activate” the new certificate using [`Modify a Certificate`](patch-v1-certificates-_id_.md).
 
 > **Note**: The “Create and activate” option also deactivates the expiring certificate by automatically setting the `activated` key to `FALSE`.
 
 ## See Also
 
-- [List Merchant IDs](get-v1-merchantids.md)
+- [List merchant ids](get-v1-merchantids.md)
   List all merchant Ids for your team.
-- [Read Details for a Merchant ID](get-v1-merchantids-_id_.md)
+- [Read details for a merchant id](get-v1-merchantids-_id_.md)
   Get information for a merchant ID.
-- [List Certificates for a Merchant ID](get-v1-merchantids-_id_-certificates.md)
+- [List certificates for a merchant id](get-v1-merchantids-_id_-certificates.md)
   Get a list of all certificates for a specific merchant ID.
-- [GET /v1/merchantIds/{id}/relationships/certificates](get-v1-merchantids-_id_-relationships-certificates.md)
-- [Modify Merchant IDs](patch-v1-merchantids-_id_.md)
+- [List certificate IDs for a merchant ID](get-v1-merchantids-_id_-relationships-certificates.md)
+- [Modify merchant ids](patch-v1-merchantids-_id_.md)
   Update a specific merchant ID.
-- [Create a Merchant ID](post-v1-merchantids.md)
+- [Create a merchant id](post-v1-merchantids.md)
   Add a new merchant ID to your team.
-- [Delete a Merchant ID](delete-v1-merchantids-_id_.md)
+- [Delete a merchant id](delete-v1-merchantids-_id_.md)
   Delete a specific merchant ID.
 
 

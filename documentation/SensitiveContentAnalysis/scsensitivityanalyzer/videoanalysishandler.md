@@ -1,6 +1,6 @@
 # SCSensitivityAnalyzer.VideoAnalysisHandler
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: class
 
 An object that checks if a video contains sensitive content and provides status updates.
@@ -8,7 +8,7 @@ An object that checks if a video contains sensitive content and provides status 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
+- Mac Catalyst ?+
 - macOS 14.0+
 - visionOS 2.0+
 

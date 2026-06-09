@@ -30,7 +30,7 @@ DELETE https://api.appstoreconnect.apple.com/v1/alternativeDistributionDomains/{
 
 ## Parameters
 
-- `id` (string) *(required)*
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the alternative distribution domain resource ID from the [`List Alternative Distribution Domains`](get-v1-alternativedistributiondomains.md) response.
 
 ## See Also
 

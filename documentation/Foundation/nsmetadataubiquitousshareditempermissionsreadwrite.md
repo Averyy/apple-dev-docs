@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: var
 
+The current user is allowed to both read and write this item.
+
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
@@ -19,6 +21,7 @@ let NSMetadataUbiquitousSharedItemPermissionsReadWrite: String
 ## See Also
 
 - [let NSMetadataUbiquitousSharedItemPermissionsReadOnly: String](nsmetadataubiquitousshareditempermissionsreadonly.md)
+  The current user is only allowed to read this item.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Creates download objects for every applicable asset pack, which can be scheduled with the download manager.
+Creates download objects for every applicable asset pack in this manifest, which can be scheduled with the download manager.
 
 **Availability**:
 - iOS 26.0+
@@ -25,7 +25,7 @@ A collection of download objects.
 
 ## Parameters
 
-- `contentRequest`: The content request for the current extension invocation. Pass `nil` if you’re calling this method in your main app.
+- `contentRequest`: The content request for the current extension invocation. Pass `nil` if when calling this method in your main app.
 
 
 ---

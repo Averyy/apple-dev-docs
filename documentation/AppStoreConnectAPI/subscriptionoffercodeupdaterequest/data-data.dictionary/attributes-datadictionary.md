@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription offer code update request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 

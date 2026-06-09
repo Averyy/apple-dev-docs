@@ -95,6 +95,8 @@ When you choose a design flow, write an app extension that conforms to either `F
   A code that indicates a specific FSKit error.
 - [let FSKitErrorDomain: String](fskiterrordomain.md)
   An error domain for FSKit errors.
+- [struct FSDataCacheError](fsdatacacheerror.md)
+  An error encountered when performing an FSKit data caching operation.
 ### FSKit interactions
 - [class FSClient](fsclient.md)
   An interface for apps and daemons to interact with FSKit.
@@ -115,6 +117,9 @@ When you choose a design flow, write an app extension that conforms to either `F
   A range that describes contiguous metadata segments on disk.
 - [class FSProbeResult](fsproberesult.md)
   An object that represents the results of a specific probe.
+### Entitlements
+- [com.apple.developer.fskit.fsmodule](../BundleResources/Entitlements/com.apple.developer.fskit.fsmodule.md)
+  An entitlement that indicates an extension provides an FSKit filesystem.
 
 
 ---

@@ -27,23 +27,6 @@ If no item matching `name` exists in the directory indicated by `directory`, com
 - `directory`: The directory in which to look up the item.
 - `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass the found [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) (as saved within the file system), along with a `nil` error. If lookup fails, pass the relevant error as the third parameter; any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) are ignored in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem`](fsitem.md) and [`FSFileName`](fsfilename.md) as a tuple or throw an error.
 
-## See Also
-
-- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md)
-  Creates a new file or directory item.
-- [class FSFileName](fsfilename.md)
-  The name of a file, expressed as a data buffer.
-- [FSItem.ItemType](fsitem/itemtype.md)
-  An enumeration of item types, such as file, directory, or symbolic link.
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
-  A request to set attributes on an item.
-- [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/removeitem(_:named:fromdirectory:replyhandler:).md)
-  Removes an existing item from a given directory.
-- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
-  Renames an item from one path in the file system to another.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
-
 
 ---
 

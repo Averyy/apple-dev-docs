@@ -1,10 +1,10 @@
-# GET /v1/endUserLicenseAgreements/{id}/relationships/territories
+# List territory IDs for an end user license agreement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.0+
 
 ## Endpoint
 
@@ -16,9 +16,9 @@
 
 ## See Also
 
-- [List Territories](get-v1-territories.md)
+- [List territories](get-v1-territories.md)
   List all territories where the App Store operates.
-- [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
+- [List all territories for an end user license agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
 
 

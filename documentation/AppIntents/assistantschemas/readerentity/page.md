@@ -40,14 +40,7 @@ struct ReaderPageEntity: AppEntity {
 }
 ```
 
-For more information about the `.reader` app intent domain, see [`Making document reader actions available to Siri and Apple Intelligence`](making-document-reader-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var document: some AssistantSchemas.Entity](assistantschemas/readerentity/document.md)
-  The app entity describes a document.
-- [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
-  Assistant schema conformance for app entities that describe documents.
+For more information about the `.reader` app intent domain, see doc:Making-document-reader-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

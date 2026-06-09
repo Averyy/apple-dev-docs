@@ -19,7 +19,7 @@ var receiveTime: Double { get }
 ## See Also
 
 - [var transmitTime: Double](nidltdoameasurement/transmittime.md)
-  A timestamp, in seconds, for the elapsed message transmission time.
+  A transmission timestamp, in seconds, for the received message.
 
 
 ---

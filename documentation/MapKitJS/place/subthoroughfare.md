@@ -11,7 +11,7 @@ The number on the street at the place.
 ## Declaration
 
 ```swift
-subThoroughfare?: string;
+subThoroughfare: string | null;
 ```
 
 #### Discussion

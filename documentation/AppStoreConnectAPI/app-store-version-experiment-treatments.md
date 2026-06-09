@@ -7,27 +7,32 @@ Create and update the metadata and the optional icon that represent the treatmen
 ## Topics
 
 ### Endpoints
-- [List All Treatments for an App Store Experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
+- [List all treatments for an app store experiment](get-v2-appstoreversionexperiments-_id_-appstoreversionexperimenttreatments.md)
   Get a list of all treatments for a specific App Store version experiment.
-- [GET /v2/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
-- [GET /v1/appStoreVersionExperimentTreatments/{id}](get-v1-appstoreversionexperimenttreatments-_id_.md)
-- [GET /v1/appStoreVersionExperimentTreatments/{id}/appStoreVersionExperimentTreatmentLocalizations](get-v1-appstoreversionexperimenttreatments-_id_-appstoreversionexperimenttreatmentlocalizations.md)
-- [GET /v1/appStoreVersionExperimentTreatments/{id}/relationships/appStoreVersionExperimentTreatmentLocalizations](get-v1-appstoreversionexperimenttreatments-_id_-relationships-appstoreversionexperimenttreatmentlocalizations.md)
-- [Modify an App Store Version Experiement Treatment](patch-v1-appstoreversionexperimenttreatments-_id_.md)
+- [List treatment IDs for an app store version experiment](get-v2-appstoreversionexperiments-_id_-relationships-appstoreversionexperimenttreatments.md)
+  Get a list of experiment treatment IDs for a specific App Store version experiment.
+- [Read app store version experiment treatment information](get-v1-appstoreversionexperimenttreatments-_id_.md)
+  Get information about a specific App Store version experiment treatment.
+- [List all localizations for an app store version experiment treatment](get-v1-appstoreversionexperimenttreatments-_id_-appstoreversionexperimenttreatmentlocalizations.md)
+  Get a list of all localizations for a specific App Store version experiment treatment.
+- [List localization IDs for an App Store version experiment treatment](get-v1-appstoreversionexperimenttreatments-_id_-relationships-appstoreversionexperimenttreatmentlocalizations.md)
+- [Modify an app store version experiment treatment](patch-v1-appstoreversionexperimenttreatments-_id_.md)
   Update the name and app icon name for a specific App Store version experiment.
-- [POST /v1/appStoreVersionExperimentTreatments](post-v1-appstoreversionexperimenttreatments.md)
-- [Delete a Treatment for an App Store Version Experiment](delete-v1-appstoreversionexperimenttreatments-_id_.md)
+- [Create an app store version experiment treatment](post-v1-appstoreversionexperimenttreatments.md)
+  Add a new treatment to an App Store version experiment.
+- [Delete a treatment for an app store version experiment](delete-v1-appstoreversionexperimenttreatments-_id_.md)
   Delete metadata that you configured for an App Store Version experiment.
 ### Objects
 - [object AppStoreVersionExperimentTreatment](appstoreversionexperimenttreatment.md)
+  One variant in an App Store product page A/B experiment, containing a set of alternative screenshots, previews, and promotional text.
 - [object AppStoreVersionExperimentTreatmentCreateRequest](appstoreversionexperimenttreatmentcreaterequest.md)
-  The request body you use to create an store resource.
+  The request body you use to create an App Store version experiment treatment.
 - [object AppStoreVersionExperimentTreatmentResponse](appstoreversionexperimenttreatmentresponse.md)
-  A response that contains a single app store version experiment treatment response resource.
+  The response body for endpoints that create, read, or modify an App Store version experiment treatment.
 - [object AppStoreVersionExperimentTreatmentUpdateRequest](appstoreversionexperimenttreatmentupdaterequest.md)
   The request body you use to update an app store version experiment treatment update request.
 - [object AppStoreVersionExperimentTreatmentsResponse](appstoreversionexperimenttreatmentsresponse.md)
-  A response that contains a list of app store version experiment treatments response resources.
+  The response body for endpoints that list treatments for an App Store version experiment.
 - [object AppStoreVersionExperimentAppStoreVersionExperimentTreatmentsLinkagesResponse](appstoreversionexperimentappstoreversionexperimenttreatmentslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponse](appstoreversionexperimenttreatmentappstoreversionexperimenttreatmentlocalizationslinkagesresponse.md)
 - [object AppStoreVersionExperimentTreatmentLocalizationAppPreviewSetsLinkagesResponse](appstoreversionexperimenttreatmentlocalizationapppreviewsetslinkagesresponse.md)

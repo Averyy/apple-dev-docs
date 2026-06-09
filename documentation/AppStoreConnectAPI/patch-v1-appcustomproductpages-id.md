@@ -76,7 +76,7 @@ PATCH https://api.appstoreconnect.apple.com/v1/appCustomProductPages/eb2b3606-2f
   Get information about a specific app custom product page.
 - [List Custom Product Page Versions](get-v1-appcustomproductpages-_id_-appcustomproductpageversions.md)
   List the versions for a custom product page version.
-- [Get All Version IDs for an App Custom Product Page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
+- [Get all version ids for an app custom product page](get-v1-appcustomproductpages-_id_-relationships-appcustomproductpageversions.md)
   Get a list of custom product page version IDs associated with a custom product page.
 - [Delete an App Custom Product Page](delete-v1-appcustomproductpages-_id_.md)
   Delete metadata that you configured for a custom product page.

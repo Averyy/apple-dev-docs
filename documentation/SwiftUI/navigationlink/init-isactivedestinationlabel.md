@@ -17,14 +17,15 @@ Creates a navigation link that presents the destination view when active.
 ## Declaration
 
 ```swift
-init(isActive: Binding<Bool>, @ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Label)
+nonisolated
+init(isActive: Binding<Bool>, @ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
 
 - `isActive`: A binding to a Boolean value that indicates whether `destination` is currently presented.
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

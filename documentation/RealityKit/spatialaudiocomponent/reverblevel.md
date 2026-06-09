@@ -16,7 +16,7 @@ The level of reverberated signal that an entity emits.
 ## Declaration
 
 ```swift
-var reverbLevel: Audio.Decibel
+var reverbLevel: Audio.Decibel { get set }
 ```
 
 #### Discussion

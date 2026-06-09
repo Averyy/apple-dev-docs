@@ -8,6 +8,7 @@ An object that describes the sound to play for a Live Activity update alert.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

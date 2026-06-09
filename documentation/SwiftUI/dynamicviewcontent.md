@@ -30,17 +30,21 @@ protocol DynamicViewContent<Data> : View
 ### Responding to updates
 - [func onDelete(perform: Optional<(IndexSet) -> Void>) -> some DynamicViewContent](dynamicviewcontent/ondelete(perform:).md)
   Sets the deletion action for the dynamic view. You must delete the corresponding item within `action`, as it will be called after the row has already been removed from the [`List`](list.md).
-- [func onInsert(of: [UTType], perform: (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent](dynamicviewcontent/oninsert(of:perform:)-418bq.md)
+- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
   Sets the insert action for the dynamic view.
 - [func onMove(perform: Optional<(IndexSet, Int) -> Void>) -> some DynamicViewContent](dynamicviewcontent/onmove(perform:).md)
   Sets the move action for the dynamic view.
 - [func dropDestination<T>(for: T.Type, action: ([T], Int) -> Void) -> some DynamicViewContent](dynamicviewcontent/dropdestination(for:action:).md)
   Sets the insert action for the dynamic view.
+### Reordering
+- [func reorderable() -> some DynamicViewContent<Self.Data>
+](dynamicviewcontent/reorderable.md)
+  Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
+- [func reorderable(collectionID: some Hashable & Sendable) -> some DynamicViewContent<Self.Data>
+](dynamicviewcontent/reorderable(collectionid:).md)
+  Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
 ### Deprecated symbols
 - [func onInsert(of: [String], perform: (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent](dynamicviewcontent/oninsert(of:perform:)-40hwa.md)
-  Sets the insert action for the dynamic view.
-### Instance Methods
-- [func onInsert(of:perform:)](dynamicviewcontent/oninsert(of:perform:).md)
   Sets the insert action for the dynamic view.
 
 ## Relationships

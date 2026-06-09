@@ -9,7 +9,6 @@ A mobile national ID card request which retrieves elements from the holder and r
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 
@@ -37,6 +36,12 @@ struct MobileNationalIDCardRawDataRequest
 ### Handling the response
 - [MobileNationalIDCardRawDataRequest.Response](mobilenationalidcardrawdatarequest/response.md)
   A type that contains the response information from a successful mobile national ID card raw data request.
+### Initializers
+- [init(region: Locale.Region, retainedElements: [MobileNationalIDCardRawDataRequest.Element], nonRetainedElements: [MobileNationalIDCardRawDataRequest.Element], issuerIdentifiers: [Data])](mobilenationalidcardrawdatarequest/init(region:retainedelements:nonretainedelements:issueridentifiers:).md)
+  Creates a mobile national ID card raw data request with issuer identifiers.
+### Instance Properties
+- [var issuerIdentifiers: [Data]](mobilenationalidcardrawdatarequest/issueridentifiers.md)
+  The subject key identifiers of the issuers trusted by the reader.
 ### Default Implementations
 - [MobileDocumentRequest Implementations](mobilenationalidcardrawdatarequest/mobiledocumentrequest-implementations.md)
 

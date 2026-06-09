@@ -23,17 +23,6 @@ func setXattr(named name: FSFileName, to value: Data?, on item: FSItem, policy: 
 - `policy`: The policy to apply when setting the attribute. See [`FSVolume.SetXattrPolicy`](fsvolume/setxattrpolicy.md) for possible values.
 - `reply`: A block or closure to indicate success or failure. If setting the attribute fails, pass an error as the one parameter to the reply handler. If setting the attribute succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
-## See Also
-
-- [func getXattr(named: FSFileName, of: FSItem, replyHandler: (Data?, (any Error)?) -> Void)](fsvolume/xattroperations/getxattr(named:of:replyhandler:).md)
-  Gets the specified extended attribute of the given item.
-- [func listXattrs(of: FSItem, replyHandler: ([FSFileName]?, (any Error)?) -> Void)](fsvolume/xattroperations/listxattrs(of:replyhandler:).md)
-  Gets the list of extended attributes currently set on the given item.
-- [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
-  Flags to specify the policy when setting extended file attributes.
-- [func supportedXattrNames(for: FSItem) -> [FSFileName]](fsvolume/xattroperations/supportedxattrnames(for:).md)
-  Returns an array that specifies the extended attribute names the given item supports.
-
 
 ---
 

@@ -8,7 +8,7 @@ A person may be blind or color blind, or have a vision challenge that makes focu
 
 People who are blind, have low vision, or prefer larger text can use Apple’s vision accessibility features to customize their displays, control their devices, and navigate their surroundings. Design and develop your app to support vision accessibility features and provide a great experience for people who rely on these features.
 
-![An illustration that shows a person with low vision sitting beside a guide dog while using an iPhone and AirPods.](https://docs-assets.developer.apple.com/published/68999b8ef76cfc2ab4e89fd3fc7a04ca/accessibility-scene-vision%402x.png)
+![An illustration that shows a person with low vision sitting beside a guide dog while using an iPhone and AirPods.](https://docs-assets.developer.apple.com/published/dbb876637db2c2007ccc6111d1e80765/accessibility-scene-vision%402x.png)
 
 ##### Related Videos
 

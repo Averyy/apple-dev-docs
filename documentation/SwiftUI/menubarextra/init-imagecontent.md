@@ -12,7 +12,7 @@ Creates a menu bar extra with an image to use as the items label. The provided t
 
 ```swift
 nonisolated
-init(_ titleKey: LocalizedStringKey, image: ImageResource, @ViewBuilder content: () -> Content)
+init(_ titleKey: LocalizedStringKey, image: ImageResource, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion

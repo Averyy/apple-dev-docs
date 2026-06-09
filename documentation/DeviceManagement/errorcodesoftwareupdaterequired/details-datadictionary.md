@@ -11,8 +11,6 @@ A dictionary that contains additional data about the software update required er
 - Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 26.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,7 +28,7 @@ object ErrorCodeSoftwareUpdateRequired.Details
 
 - `BuildVersion` (string): The build version that the device needs to update to, for example, “20A242. The systems uses the build version for testing during seeding periods. This identifier can include a supplemental version identifier, for example, “20A242a”. If the `BuildVersion` isn’t consistent with the `OSVersion`, `OSVersion` take precedence.
 - `OSVersion` (string) *(required)*: The OS version that the device needs to update to, for example, “16.1”. This identifier can include a supplemental version identifier, for example, “16.1 (a)”.
-- `RequireBetaProgram` (ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram): The device enrolls in the beta program, allowing enforced software updates to beta program OS versions. The device remains in the beta program after the system completes the enforced software update.
+- `RequireBetaProgram` (ErrorCodeSoftwareUpdateRequired.Details.RequireBetaProgram): The device enrolls in the beta program, allowing enforced software updates to beta program OS versions. The device remains in the beta program after the system completes the enforced software update. Available: iOS 17.5+ | iPadOS 17.5+ | macOS 14.5+ | visionOS 26+
 
 
 ---

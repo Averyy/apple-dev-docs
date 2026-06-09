@@ -18,7 +18,7 @@ var ALAssetsLibraryWriteIncompatibleDataError: Int { get }
 
 #### Discussion
 
-This error may be returned in the completion block for [`writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)`](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md) and [`writeImage(toSavedPhotosAlbum:orientation:completionBlock:)`](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md) as well as the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIImageWriteToSavedPhotosAlbum(_:_:_:_:)) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)).
+This error may be returned in the completion block for `ALAssetsLibrary/writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)` and `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` as well as the completion selector for [`UIImageWriteToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UIImageWriteToSavedPhotosAlbum(_:_:_:_:)) and [`UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)`](https://developer.apple.com/documentation/UIKit/UISaveVideoAtPathToSavedPhotosAlbum(_:_:_:_:)).
 
 ## See Also
 

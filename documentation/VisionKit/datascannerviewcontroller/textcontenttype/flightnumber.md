@@ -8,6 +8,7 @@ The content type for a vendor-specific flight number that appears in text.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

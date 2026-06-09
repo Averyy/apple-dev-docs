@@ -1,4 +1,4 @@
-# Download Logs for a Diagnostic Signature
+# Download logs for a diagnostic signature
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -286,11 +286,11 @@ GET https://api.appstoreconnect.apple.com/v1/diagnosticSignatures/012a219872fe2a
 
 - [Retrieve Power and Performance Metrics and Log Insights](retrieve-power-and-performance-metrics-and-log-insights.md)
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
-- [Get Power and Performance Metrics for an App](get-v1-apps-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for an app](get-v1-apps-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for the most recent version of an app.
-- [Get Power and Performance Metrics for a Build](get-v1-builds-_id_-perfpowermetrics.md)
+- [Get power and performance metrics for a build](get-v1-builds-_id_-perfpowermetrics.md)
   Get the performance and power metrics data for a specific build.
-- [List All Diagnostic Signatures for a Build](get-v1-builds-_id_-diagnosticsignatures.md)
+- [List all diagnostic signatures for a build](get-v1-builds-_id_-diagnosticsignatures.md)
   List the aggregate backtrace signatures captured for a specific build.
 
 

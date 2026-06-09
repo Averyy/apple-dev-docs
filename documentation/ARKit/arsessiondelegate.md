@@ -9,6 +9,7 @@ Methods you can implement to receive captured video frame images and tracking st
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
+- visionOS 1.0+
 
 ## Declaration
 

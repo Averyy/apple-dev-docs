@@ -15,6 +15,7 @@ A built-in set of commands for manipulating inspectors.
 ## Declaration
 
 ```swift
+nonisolated
 struct InspectorCommands
 ```
 

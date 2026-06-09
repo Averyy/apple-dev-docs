@@ -23,9 +23,15 @@ When the app asks for a challenge, provide a randomized data value, and remember
 The App Attest service creates an attestation object that consists of authenticator data and an attestation statement according to the [`Web Authentication`](https://developer.apple.comhttps://www.w3.org/TR/webauthn/#sec-authenticator-data) specification. The following authenticator fields are of particular interest for App Attest:
 
 - `RP ID` (32 bytes) — A hash of your app’s App ID, which is the concatenation of your app’s App ID prefix, a period, and your app’s [`CFBundleIdentifier`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleIdentifier) value. The App ID prefix is usually automatically set to be your 10-digit team identifier, and can be found by inspecting the Identifier entry for your app in the [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list) section of your Apple Developer Account.
+
+> **Note**: On macOS, the `RP ID` utilizes the [`signing identifier`](https://developer.apple.comhttps://developer.apple.com/documentation/technotes/tn3127-inside-code-signing-requirements) in place of the bundle identifier.
+
 - `counter` (4 bytes) — A value that reports the number of times your app has used the attested key to sign an assertion.
 - `aaguid` (16 bytes) — An App Attest–specific constant that indicates whether the attested key belongs to the development or production environment. Apps generate keys using the former during development, and the latter after distribution, as [`App Attest Environment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.devicecheck.appattest-environment) describes.
+- `credentialId length` (2 bytes) — The length of the hash of the public key part of the attested cryptographic key pair, following this field.
 - `credentialId` (32 bytes) — A hash of the public key part of the attested cryptographic key pair.
+- `Encoded key` (77 bytes) — The [`CBOR object signing and encryption (COSE)`](https://developer.apple.comhttps://datatracker.ietf.org/doc/html/rfc8152) formatted public key part of the attested cryptographic key pair.
+- `extensions` (variable bytes) — [`CBOR dictionary object`](https://developer.apple.comhttps://www.w3.org/TR/webauthn/#sctn-extensions) that includes optional client properties.
 
 > **Note**: An attestation `RP ID` that an App Clip generates uses the full app’s identifier, not the App Clip’s identifier. For information about the difference between the two, see [`Creating an App Clip with Xcode`](https://developer.apple.com/documentation/AppClip/creating-an-app-clip-with-xcode).
 
@@ -65,11 +71,33 @@ Use the decoded object, along with the key identifier that your app sends, to pe
 2. Create `clientDataHash` as the SHA256 hash of the one-time challenge your server sends to your app before performing the attestation, and append that hash to the end of the authenticator data (`authData` from the decoded object).
 3. Generate a new SHA256 hash of the composite item to create `nonce`.
 4. Obtain the value of the `credCert` extension with OID `1.2.840.113635.100.8.2`, which is a DER-encoded ASN.1 sequence. Decode the sequence and extract the single octet string that it contains. Verify that the string equals `nonce`.
-5. Create the SHA256 hash of the public key in `credCert` with X9.62 uncompressed point format, and verify that it matches the key identifier from your app.
-6. Compute the SHA256 hash of your app’s App ID, and verify that it’s the same as the authenticator data’s `RP ID` hash.
-7. Verify that the authenticator data’s `counter` field equals `0`.
-8. Verify that the authenticator data’s `aaguid` field is either `appattestdevelop` if operating in the development environment, or `appattest` followed by seven `0x00` bytes if operating in the production environment.
-9. Verify that the authenticator data’s `credentialId` field is the same as the key identifier.
+
+> ❗ **Important**:  On macOS, obtain the value of the `aclBlob` for the key associated with the attestation with OID `1.2.840.113635.100.8.6`, which is a DER-encoded ASN.1 sequence. Decode the sequence and extract the single octet string that it contains. Verify that the string equals `MEAMAjExMDowCQwCb2uhAwEB/zAJDAJvYaEDAQH/MAsMBG9kZWyhAwEB/zAVDARvc2duoAYMBHJzZWMwBaYDAgEB`. This String value represents the encoded hash of the access policy for the attested key on macOS corresponding with both SIP and full security mode enabled. Attested keys on macOS should only be trusted for this exact hash value. This value should never change across macOS versions.
+
+1. Create the SHA256 hash of the public key in `credCert` with X9.62 uncompressed point format, and verify that it matches the key identifier from your app.
+2. Compute the SHA256 hash of your app’s App ID, and verify that it’s the same as the authenticator data’s `RP ID` hash.
+3. Verify that the authenticator data’s `counter` field equals `0`.
+4. Verify that the authenticator data’s `aaguid` field is either `appattestdevelop` if operating in the development environment, or `appattest` followed by seven `0x00` bytes if operating in the production environment.
+5. Verify that the authenticator data’s `credentialId` field is the same as the key identifier.
+6. Verify the `apple_validation_category_01` value within the `extensions` CBOR dictionary in the authenticator data.
+
+> **Note**: This `UInt32` value represents the launch [`ValidationCategory`](https://developer.apple.com/documentation/LightweightCodeRequirements/ValidationCategory) of your app.
+
+| Validation Category | Description |
+| --- | --- |
+| `0` | Invalid. |
+| `1` | An operating system executable. |
+| `2` | An executable distributed through TestFlight. |
+| `3` | An executable signed by a development code signing identity. |
+| `4` | An executable distributed through the App Store. |
+| `5` | An executable distributed using an Enterprise Universal Provisioning Profile, or ad-hoc distribution. |
+| `6` | An executable signed using Developer ID. |
+| `7, 8, or 9` | These values aren’t appropriate as they represent categories of binaries that the system generates in certain restricted situations. |
+| `10` | An executable signed with a code signing identity that doesn’t match any other category. |
+
+1. Verify the `apple_bundle_version_01` value within the `extensions` CBOR dictionary in the authenticator data.
+
+> **Note**: This `String` value representing the version of the distributed App.
 
 After successfully completing these steps, you can trust the attestation object.
 
@@ -108,6 +136,8 @@ To verify the assertion, use the decoded assertion, the client data, and the pre
 4. Compute the SHA256 hash of the client’s App ID, and verify that it matches the `RP ID` in the authenticator data.
 5. Verify that the authenticator data’s `counter` value is greater than the value from the previous assertion, or greater than `0` on the first assertion.
 6. Verify that the embedded challenge in the client data matches the earlier challenge to the client.
+7. Verify the `validationCategory` within the `extensions` CBOR dictionary in the authenticator data.
+8. Verify the `bundleVersion` within the `extensions` CBOR dictionary in the authenticator data.
 
 When the assertion meets all of these conditions, you can trust it. Store `counter` to use in step 5 when verifying the next assertion.
 

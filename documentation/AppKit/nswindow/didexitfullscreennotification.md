@@ -20,6 +20,8 @@ The system posts this notification when a window moves in front of other windows
 
 The notification object is the [`NSWindow`](nswindow.md) object that exposes its content. In the notification’s `userInfo` dictionary, the key `NSExposedRect` specifies an [`NSValue`](https://developer.apple.com/documentation/Foundation/NSValue) object that contains the rectangle the window exposed.
 
+To observe this notification using Swift concurrency, use [`NSWindow.DidExitFullScreenMessage`](nswindow/didexitfullscreenmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

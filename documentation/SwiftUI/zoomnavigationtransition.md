@@ -26,8 +26,16 @@ struct ZoomNavigationTransition
 
 ## See Also
 
+- [static var automatic: AutomaticNavigationTransition](navigationtransition/automatic.md)
+  A style that automatically chooses the appropriate presentation transition for the current context.
 - [struct AutomaticNavigationTransition](automaticnavigationtransition.md)
   A style that automatically chooses the appropriate presentation transition for the current context.
+- [static var crossFade: CrossFadeNavigationTransition](navigationtransition/crossfade.md)
+  A navigation transition that cross-fades between the appearing view and the disappearing view.
+- [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
+  A navigation transition that cross-fades between the appearing view and the disappearing view.
+- [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](navigationtransition/zoom(sourceid:in:).md)
+  A navigation transition that zooms the appearing view from a given source view.
 
 
 ---

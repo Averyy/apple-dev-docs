@@ -22,6 +22,11 @@ init(bounds: CGRect)
 
 - `bounds`: The bounds of the markup container.
 
+## See Also
+
+- [init(dataRepresentation: Data) throws](papermarkup/init(datarepresentation:).md)
+  Initializes and returns a new paper model from the specified data.
+
 
 ---
 

@@ -22,10 +22,10 @@ A struct describing the state of the legible options menu.
 
 ## Topics
 
-### Initializers
+### Creating a menu state
 - [init()](avlegiblemediaoptionsmenustate/init.md)
 - [init(enabled: ObjCBool, reason: AVLegibleMediaOptionsMenuController.StateChangeReason)](avlegiblemediaoptionsmenustate/init(enabled:reason:).md)
-### Instance Properties
+### Inspecting the state
 - [var enabled: ObjCBool](avlegiblemediaoptionsmenustate/enabled.md)
   Whether or not the legible options menu is
 - [var reason: AVLegibleMediaOptionsMenuController.StateChangeReason](avlegiblemediaoptionsmenustate/reason.md)
@@ -36,6 +36,11 @@ A struct describing the state of the legible options menu.
 ### Conforms To
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
+- [enum AVLegibleMediaOptionsMenuType](avlegiblemediaoptionsmenutype.md)
 
 
 ---

@@ -31,17 +31,6 @@ An implementation that doesn’t supply the extents can ignore the packer and ca
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
 - `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly created [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md), along with a `nil` error. If creation fails, pass the relevant error as the third parameter; FSKit ignores any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; instead, return a tuple of the [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) or throw an error.
 
-## See Also
-
-- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
-  A request to set attributes on an item.
-- [func lookupItem(name: FSFileName, in: FSItem, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/lookupitem(name:in:packer:replyhandler:).md)
-  Looks up an item within a directory and maps its disk space.
-- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, replyHandler: (Int, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/preallocatespace(for:at:length:flags:packer:replyhandler:).md)
-  Preallocates and maps disk space for the given file.
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
-  Behavior flags for preallocation operations.
-
 
 ---
 

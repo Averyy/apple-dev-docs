@@ -9,7 +9,6 @@ A struct that represents the HDR headroom usage limit trait.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- tvOS 26.0+
 - visionOS 26.0+
 
 ## Declaration

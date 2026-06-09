@@ -29,7 +29,7 @@ A structure that contains three 32-bit floating-point values with no additional 
 - [MTLPackedFloat3.__Unnamed_struct___Anonymous_field0](mtlpackedfloat3-swift.typealias/__unnamed_struct___anonymous_field0.md)
 - [MTLPackedFloat3.__Unnamed_union___Anonymous_field0](mtlpackedfloat3-swift.typealias/__unnamed_union___anonymous_field0.md)
 ### Instance Properties
-- [var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0.__Unnamed_struct___Anonymous_field0](mtlpackedfloat3-swift.typealias/__anonymous_field0.md)
+- [var __Anonymous_field0: _MTLPackedFloat3.__Unnamed_union___Anonymous_field0](mtlpackedfloat3-swift.typealias/__anonymous_field0.md)
 - [var elements: (Float, Float, Float)](mtlpackedfloat3-swift.typealias/elements-8fddh.md)
 - [var elements: (Float, Float, Float)](mtlpackedfloat3-swift.typealias/elements-9o66u.md)
 - [var x: Float](mtlpackedfloat3-swift.typealias/x-5cc6v.md)

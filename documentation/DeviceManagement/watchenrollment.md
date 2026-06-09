@@ -9,8 +9,6 @@ The declaration to configure an MDMv1 profile for Apple Watch enrollment.
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -26,14 +24,17 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
 
 |  |  |
 | --- | --- |
-| Allowed in supervised enrollment | iOS, Shared iPad |
-| Allowed in device enrollment | NA |
-| Allowed in user enrollment | NA |
-| Allowed in local enrollment | NA |
+| Allowed in supervised enrollment | iOS |
+| Allowed in device enrollment | N/A |
+| Allowed in user enrollment | N/A |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS |
-| Allowed in user scope | NA |
+| Allowed in user scope | N/A |
+| Apply | Only a single configuration is applied |
 
 ##### Configuration Example
+
+This configuration enrolls an Apple Watch using a profile URL.
 
 ```json
 {
@@ -72,20 +73,20 @@ Specify `com.apple.configuration.watch.enrollment` as the declaration type.
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyInteractiveProfile](legacyinteractiveprofile.md)
-  The declaration to configure an interactive legacy profile.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
 
 
 ---

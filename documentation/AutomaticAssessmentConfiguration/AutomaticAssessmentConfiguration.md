@@ -60,6 +60,13 @@ The framework reports an error if you try to start an assessment from an app run
   Error codes that the framework returns if a session fails.
 - [let AEAssessmentErrorDomain: String](aeassessmenterrordomain.md)
   A constant representing the error domain that the framework uses when issuing errors.
+### Structures
+- [struct AEAppleMenuItem](aeapplemenuitem.md)
+  Identifies an item in the Apple menu.
+- [struct AEMenuBarItem](aemenubaritem.md)
+### Enumerations
+- [enum AEUserAccountType](aeuseraccounttype.md)
+  Specifies the type of account required for an assessment session.
 
 
 ---

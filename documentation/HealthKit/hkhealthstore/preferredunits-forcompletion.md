@@ -39,6 +39,8 @@ Your app should present HealthKit data using the current preferred units (see th
 
 ## See Also
 
+- [func preferredWorkoutZoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkhealthstore/preferredworkoutzoneconfiguration(for:).md)
+  Returns someone’s preferred zone configuration for the specified quantity type.
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
   Notifies observers whenever the user changes his or her preferred units.
 

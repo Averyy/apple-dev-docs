@@ -6,11 +6,11 @@
 Indicates that the preview view controller is ready to be dismissed with associated activity types.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
 - macOS 11.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 

@@ -22,6 +22,8 @@ struct IntentPerson
 
 ## Mentions
 
+- [Defining app entities for your custom data types](defining-app-entities-for-your-custom-data-types.md)
+- [Providing contextual cues to Apple Intelligence and Siri](providing-contextual-cues-to-apple-intelligence-and-siri.md)
 - [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
 
 ## Topics
@@ -59,6 +61,8 @@ struct IntentPerson
 - [IntentPerson.ValueType](intentperson/valuetype.md)
 ### Type Properties
 - [static var defaultResolverSpecification: EmptyResolverSpecification<IntentPerson>](intentperson/defaultresolverspecification.md)
+### Default Implementations
+- [Transferable Implementations](intentperson/transferable-implementations.md)
 
 ## Relationships
 
@@ -71,8 +75,11 @@ struct IntentPerson
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [InstanceDisplayRepresentable](instancedisplayrepresentable.md)
+- [IntentValueConvertible](intentvalueconvertible.md)
+- [IntentValueExpressing](intentvalueexpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+- [Transferable](../CoreTransferable/Transferable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
 

@@ -81,8 +81,14 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
   Called when a navigation request is received. Show a trip preview corresponding to this destination and start navigation if the destination is accepted by the user.
 - [func mapTemplate(CPMapTemplate, didReceiveUpdatedRouteSource: CPRouteSource)](cpmaptemplatedelegate/maptemplate(_:didreceiveupdatedroutesource:).md)
   Called when the route source status has been updated by the built-in system.
+- [func mapTemplate(CPMapTemplate, didRequestMultiStopCardConfigurationWithCompletion: (CPMultiStopCardConfiguration) -> Void)](cpmaptemplatedelegate/maptemplate(_:didrequestmultistopcardconfigurationwithcompletion:).md)
+  Called when the user requests multi-stop card to be displayed via tapping ETA tray.
 - [func mapTemplate(CPMapTemplate, didRequestToInsert: CPNavigationWaypoint, into: CPRouteSegment, completion: (CPTravelEstimates) -> Void)](cpmaptemplatedelegate/maptemplate(_:didrequesttoinsert:into:completion:).md)
   Called when the built-in navigation system sends a waypoint to the device for a specific segment.
+- [func mapTemplate(CPMapTemplate, didRequestToRemove: CPNavigationWaypoint)](cpmaptemplatedelegate/maptemplate(_:didrequesttoremove:).md)
+  Called when the user removes a waypoint. Perform a reroute to update the route accordingly.
+- [func mapTemplate(CPMapTemplate, didRequestToRemoveDestination: CPNavigationWaypoint)](cpmaptemplatedelegate/maptemplate(_:didrequesttoremovedestination:).md)
+  Called when the user removes the waypoint corresponding to the trip’s destination. Perform a reroute to update both the trip and route accordingly.
 - [func mapTemplate(CPMapTemplate, didRotateWithCenter: CGPoint, rotation: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didrotatewithcenter:rotation:velocity:).md)
   Tells the delegate that a person is rotating the map.
 - [func mapTemplate(CPMapTemplate, didShareDestinationFor: CPTrip)](cpmaptemplatedelegate/maptemplate(_:didsharedestinationfor:).md)
@@ -105,6 +111,8 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
   Tells the delegate that the rotation gesture started.
 - [func mapTemplateDidBeginZoomGesture(CPMapTemplate)](cpmaptemplatedelegate/maptemplatedidbeginzoomgesture(_:).md)
   Tells the delegate that the zoom gesture started.
+- [func mapTemplateShouldProvideMultiStopRouting(CPMapTemplate) -> Bool](cpmaptemplatedelegate/maptemplateshouldprovidemultistoprouting(_:).md)
+  Determines if the template should provide UI for multi-stop routing while actively navigating, including the ability to add and remove stops.
 - [func mapTemplateShouldProvideRouteSharing(CPMapTemplate) -> Bool](cpmaptemplatedelegate/maptemplateshouldprovideroutesharing(_:).md)
   Determines if the template should provide route sharing information to the vehicle. Apps that participate in route sharing will donate navigation information to the vehicle including the current route, a list of waypoints, and other metadata that allows the vehicle to track the user’s preferred route to their destination.
 

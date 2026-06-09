@@ -9,8 +9,6 @@ The payload that provides device info on private network deployments, including 
 - iOS 17.0+
 - iPadOS 17.0+
 - Mac Catalyst 17.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,11 +25,11 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | iOS, Shared iPad |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | iOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
 | Allow multiple payloads | iOS, Shared iPad |
 
 ##### Profile Example
@@ -100,18 +98,18 @@ Specify `com.apple.cellularprivatenetwork.managed` as the payload type.
 ## Properties
 
 - `CellularDataPreferred` (boolean): Set to `true` to prefer this private network over Wi-Fi.
-- `CsgNetworkIdentifier` (string): A string using the 3GPP “CSG_ID” format (defined in 3GPP 23.003, Section 4.7). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+- `CsgNetworkIdentifier` (string): A string using the 3GPP “CSG_ID” format (defined in 3GPP 23.003, Section 4.7). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device. Available: iOS 18+ | iPadOS 18+
 - `DataSetName` (string) *(required)*: The name of the private network configuration data set.
 - `EnableNRStandalone` (boolean): Set to `true` if this private network is NR Standalone.
 - `Geofences` ([CellularPrivateNetwork.GeofenceItem]): A list of up to 1000 geofences for private networks. Geofencing is only used on iPhone.
-- `NetworkIdentifier` (string): A string using the 3GPP “Coordinated NID” (option 1 or option 2) format (defined in 3GPP 31.102, Section 12.7.1). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device.
+- `NetworkIdentifier` (string): A string using the 3GPP “Coordinated NID” (option 1 or option 2) format (defined in 3GPP 31.102, Section 12.7.1). The device uses this value to match a SIM present on the device. All combinations of `NetworkIdentifier` and `CsgNetworkIdentifier` must be unique across all profiles installed on the device. Available: iOS 18+ | iPadOS 18+
 - `VersionNumber` (string) *(required)*: The version number of this dataset that the system uses to track updates.
 
 ## See Also
 
 - [object Cellular](cellular.md)
   The payload that configures cellular settings.
-- [object ContentCaching](contentcaching.md)
+- [object ContentCachingService](contentcachingservice.md)
   The payload that configures the Content Caching service.
 - [object DNSSettings](dnssettings.md)
   The payload that configures encrypted DNS settings.

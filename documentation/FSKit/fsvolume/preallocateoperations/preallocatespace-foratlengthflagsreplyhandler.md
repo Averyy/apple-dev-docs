@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Prealocates disk space for the given item.
+Preallocates disk space for the given item.
 
 **Availability**:
 - macOS 15.4+
@@ -22,11 +22,6 @@ func preallocateSpace(for item: FSItem, at offset: off_t, length: Int, flags: FS
 - `length`: The length of the space in bytes.
 - `flags`: Flags that affect the preallocation behavior.
 - `reply`: A block or closure to indicate success or failure. If preallocation succeeds, pass the amount of bytes allocated and a `nil` error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores any byte count in this case. For an `async` Swift implementation, there’s no reply handler; simply return the allocated byte count or throw an error.
-
-## See Also
-
-- [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
-  Behavior flags for preallocation operations.
 
 
 ---

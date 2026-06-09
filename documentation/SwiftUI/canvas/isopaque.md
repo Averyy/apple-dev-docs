@@ -17,6 +17,7 @@ A Boolean that indicates whether the canvas is fully opaque.
 ## Declaration
 
 ```swift
+nonisolated
 var isOpaque: Bool { get set }
 ```
 

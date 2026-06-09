@@ -24,6 +24,8 @@ Use this type for all extents on a file system that doesn’t support sparse fil
 
 - [FSExtentType.zeroFill](fsextenttype/zerofill.md)
   An extent type to indicate uninitialized data.
+- [FSExtentType.readOnly](fsextenttype/readonly.md)
+  An extent type to indicate read-only data.
 
 
 ---

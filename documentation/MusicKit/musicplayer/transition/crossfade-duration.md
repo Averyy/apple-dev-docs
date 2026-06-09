@@ -8,6 +8,7 @@ A smooth overlap between the currently playing item and the next item with a spe
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

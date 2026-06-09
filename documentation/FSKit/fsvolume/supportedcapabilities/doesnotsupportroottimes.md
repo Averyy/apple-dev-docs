@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: property
 
-A Boolan property that indicates the volume doesn’t store reliable times for the root directory.
+A Boolean property that indicates the volume doesn’t store reliable times for the root directory.
 
 **Availability**:
 - macOS 15.4+

@@ -1,4 +1,4 @@
-# Read Macos Version Information
+# Read macos version information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -62,11 +62,11 @@ GET https://api.appstoreconnect.apple.com/v1/ciMacOsVersions/20G95
 
 ## See Also
 
-- [List All Macos Versions Available in Xcode Cloud](get-v1-cimacosversions.md)
+- [List all macos versions available in xcode cloud](get-v1-cimacosversions.md)
   List all macOS versions available to Xcode Cloud workflows.
-- [List Available Xcode Versions for a Macos Version](get-v1-cimacosversions-_id_-xcodeversions.md)
+- [List available xcode versions for a macos version](get-v1-cimacosversions-_id_-xcodeversions.md)
   List all Xcode versions available for a specific macOS version in Xcode Cloud.
-- [GET /v1/ciMacOsVersions/{id}/relationships/xcodeVersions](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
+- [List Xcode version IDs for a CI macOS version](get-v1-cimacosversions-_id_-relationships-xcodeversions.md)
 
 
 ---

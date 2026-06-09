@@ -8,6 +8,7 @@ A structure that defines and positions the content of an expanded Live Activity 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
+- Mac Catalyst 16.1+
 
 ## Declaration
 

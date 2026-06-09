@@ -12,7 +12,7 @@ Spacing to add around the annotation when showing items.
 
 ```swift
 get padding(): Padding;
-set padding(value: Padding);
+set padding(value: PaddingData);
 ```
 
 #### Discussion

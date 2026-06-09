@@ -18,7 +18,7 @@ The content and behavior of the view.
 ## Declaration
 
 ```swift
-@ViewBuilder
+@ContentBuilder
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 

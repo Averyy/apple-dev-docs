@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The type and ID of a related App Store version resource.
+
 **Availability**:
 - App Store Connect API 3.0+
 

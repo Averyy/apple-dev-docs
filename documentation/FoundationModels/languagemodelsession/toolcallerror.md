@@ -47,6 +47,8 @@ struct ToolCallError
 
 ## See Also
 
+- [LanguageModelSession.Error](languagemodelsession/error.md)
+  A failure caused by incorrect use of a language model session.
 - [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
   An error that may occur while generating a response.
 

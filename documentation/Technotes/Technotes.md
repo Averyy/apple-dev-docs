@@ -11,6 +11,14 @@ Technotes are focused, timely documents from Apple Developer Technical Support. 
 ## Topics
 
 ### Latest
+- [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
+  Test your app and improve compatibility with iPhone Mirroring.
+- [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
+  Update existing code for two foundational changes in SwiftUI built with Xcode 27.
+- [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
+  Use gesture recognizers to handle Sidecar touch input and update your event-handling code for macOS 27.
+- [TN3208: Preparing your app’s launch screen to meet App Store requirements](tn3208-preparing-your-apps-launch-screen-to-meet-app-store-requirements.md)
+  Understand the launch screen requirement for App Store submission starting in iOS 27 and iPadOS 27.
 - [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
   Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
 - [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)

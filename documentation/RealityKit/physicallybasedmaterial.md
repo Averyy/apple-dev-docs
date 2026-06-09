@@ -89,6 +89,24 @@ For more information on using [`PhysicallyBasedMaterial`](physicallybasedmateria
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
 ### Setting shader properties
 - [var program: PhysicallyBasedMaterial.Program](physicallybasedmaterial/program-swift.property.md)
+### Configuring subsurface scattering
+- [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.struct.md)
+- [var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceWeight](physicallybasedmaterial/subsurfaceweight-swift.struct.md)
+- [var subsurfaceRadius: PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadius](physicallybasedmaterial/subsurfaceradius-swift.struct.md)
+- [var subsurfaceRadiusScale: PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceRadiusScale](physicallybasedmaterial/subsurfaceradiusscale-swift.struct.md)
+- [var subsurfaceScatterAnisotropy: PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](physicallybasedmaterial/subsurfacescatteranisotropy-swift.property.md)
+- [PhysicallyBasedMaterial.SubsurfaceScatterAnisotropy](physicallybasedmaterial/subsurfacescatteranisotropy-swift.struct.md)
+### Configuring occlusion shading
+- [var bentNormal: PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.property.md)
+  The bent normal map for the entity.
+- [PhysicallyBasedMaterial.BentNormal](physicallybasedmaterial/bentnormal-swift.struct.md)
+  The bent normal map for the entity.
+- [var enableSpecularOcclusion: Bool](physicallybasedmaterial/enablespecularocclusion.md)
+  Enables specular occlusion computations.
 ### Classes
 - [PhysicallyBasedMaterial.Program](physicallybasedmaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for physically based materials.

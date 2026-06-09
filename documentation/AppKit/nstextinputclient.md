@@ -11,7 +11,7 @@ A set of methods that text views need to implement to interact properly with the
 ## Declaration
 
 ```swift
-protocol NSTextInputClient
+protocol NSTextInputClient : NSObjectProtocol
 ```
 
 ## Mentions
@@ -74,6 +74,8 @@ To create another text view class, you can either subclass [`NSTextView`](nstext
 
 ## Relationships
 
+### Inherits From
+- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 ### Inherited By
 - [NSTextCheckingClient](nstextcheckingclient.md)
 ### Conforming Types

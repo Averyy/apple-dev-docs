@@ -6,7 +6,6 @@
 An anchor point attached to the user’s head.
 
 **Availability**:
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

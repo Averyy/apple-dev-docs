@@ -14,7 +14,7 @@ Delete a leaderboard from your app.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Read Leaderboard Information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the leaderboard resource ID from the [`Get leaderboards information`](get-v1-gamecenterdetails-_id_-gamecenterleaderboards.md) response.
 
 ## See Also
 
@@ -34,8 +34,8 @@ Delete a leaderboard from your app.
   Modify the details of a leaderboard.
 - [Edit the Relationship Between a Leaderboard and a Group Leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-groupleaderboard.md)
   Modify the group leadboard to which a leaderboard belongs.
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/activity](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
-- [PATCH /v1/gameCenterLeaderboards/{id}/relationships/challenge](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
+- [Modify the activity for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-activity.md)
+- [Modify the challenge for a Game Center leaderboard](patch-v1-gamecenterleaderboards-_id_-relationships-challenge.md)
 
 
 ---

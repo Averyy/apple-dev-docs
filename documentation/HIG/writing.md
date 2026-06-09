@@ -55,6 +55,7 @@ If you need to direct someone to a setting, provide a direct link or button, rat
 [Color](color.md)
 
 #### Videos
+- [Craft clear names for features and labels in your app](https://developer.apple.com/videos/play/wwdc2026/290) - The names of your products, features, and labels can determine how people understand and navigate your app. Explore the principles behind thoughtful naming in app design, examine the patterns used across Apple apps, and learn how to make naming decisions with intention.
 - [Make a big impact with small writing changes](https://developer.apple.com/videos/play/wwdc2025/404) - With the new design system across platforms, now’s a perfect time to revisit the writing in your UI too. Learn how a few small changes, like removing repetition and leading with benefits, can quickly enhance the usability and clarity of your app.
 - [Writing for interfaces](https://developer.apple.com/videos/play/wwdc2022/10037) - The words and phrases you choose for your app matter. Whether you’re writing an alert, building an onboarding experience, or describing an image for accessibility, learn how you can design through the lens of language and help people get the most from your app. We'll show you how to create clear, conversational, and helpful writing and provide tips for applying these techniques to your work.
 

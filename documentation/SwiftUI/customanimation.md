@@ -96,7 +96,7 @@ struct ElasticEaseInEaseOutView: View {
   Calculates the velocity of the animation at a specified time.
 ### Determining whether to merge
 - [func shouldMerge<V>(previous: Animation, value: V, time: TimeInterval, context: inout AnimationContext<V>) -> Bool](customanimation/shouldmerge(previous:value:time:context:).md)
-  Determines whether an instance of the animation can merge with other instance of the same type.
+  Determines whether an instance of the animation can merge with other running animations.
 
 ## Relationships
 

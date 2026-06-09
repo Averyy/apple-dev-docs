@@ -7,8 +7,6 @@ The payload that configures the accessibility features of the device.
 
 **Availability**:
 - macOS 10.9+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -27,10 +25,10 @@ Specify `com.apple.universalaccess` as the payload type.
 | Device channel | macOS |
 | User channel | macOS |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -74,11 +72,11 @@ Specify `com.apple.universalaccess` as the payload type.
 - `closeViewHotkeysEnabled` (boolean): If `true`, enables “Use keyboard shortcuts” in the Zoom options.
 - `closeViewNearPoint` (integer): The maximum zoom level in the Zoom options.
 - `closeViewScrollWheelToggle` (boolean): If `true`, enables “Use scroll gesture” in the Zoom options.
-- `closeViewShowPreview` (boolean): If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier.
+- `closeViewShowPreview` (boolean): If `true`, enables “Show preview rectangle” in the Zoom options. Only available in macOS 10.15 and earlier. Deprecated: macOS 10.15+
 - `closeViewSmoothImages` (boolean): If `true`, enables “Smooth images” in the Zoom options.
 - `contrast` (number): The contrast value in the Display options.
 - `flashScreen` (boolean): If `true`, enables “Flash the screen” in the Audio options.
-- `grayscale` (boolean): If `true`, enables “Use grayscale” in the Display options. This option is deprecated in macOS 11.
+- `grayscale` (boolean): If `true`, enables “Use grayscale” in the Display options. This option is deprecated in macOS 11. Deprecated: macOS 11+
 - `mouseDriver` (boolean): If `true`, enables Mouse Keys in the Mouse & Trackpad options.
 - `mouseDriverCursorSize` (integer): The size of the cursor.
 - `mouseDriverIgnoreTrackpad` (boolean): If `true`, ignores the built-in trackpad.

@@ -9,7 +9,6 @@ A topic that shows merchants how to use Tap to Pay on iPhone to pay for goods an
 - iOS 18.0+
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
-- visionOS 2.0+
 
 ## Declaration
 

@@ -20,13 +20,13 @@ Use the provided information to create statistics for the artifacts Xcode Cloud 
 ## Topics
 
 ### Getting Build Artifact Information
-- [Read Xcode Cloud Artifact Information](get-v1-ciartifacts-_id_.md)
+- [Read xcode cloud artifact information](get-v1-ciartifacts-_id_.md)
   Get information about the artifact Xcode Cloud created for a specific action when it performed a build.
 ### Objects
 - [object CiArtifact](ciartifact.md)
-  The data structure that represents the output of an Xcode Cloud build action resource.
+  A file output produced by an Xcode Cloud build action, such as an app archive, test result bundle, or build log.
 - [object CiArtifactResponse](ciartifactresponse.md)
-  A response that contains a single Artifacts resource.
+  The response body for endpoints that read a single artifact produced by an Xcode Cloud build action.
 
 ## See Also
 

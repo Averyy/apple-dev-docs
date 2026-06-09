@@ -289,6 +289,9 @@ For information about how to save and restore your app’s state information, se
   Constants that determine which types of items in a table view tightly hug their content.
 ### Structures
 - [UITableView.SelectionDidChangeMessage](uitableview/selectiondidchangemessage.md)
+### Instance Properties
+- [var appIntentsDataSource: (any UITableViewAppIntentsDataSource)?](uitableview/appintentsdatasource.md)
+  The object acting as the table view’s data source for app entity identifiers that make a cell’s content discoverable by Apple Intelligence and Siri.
 
 ## Relationships
 
@@ -296,6 +299,8 @@ For information about how to save and restore your app’s state information, se
 - [UIScrollView](uiscrollview.md)
 ### Conforms To
 - [CALayerDelegate](../QuartzCore/CALayerDelegate.md)
+- [CLBodyIdentifiable](../CoreLocation/CLBodyIdentifiable.md)
+- [CMBodyIdentifiable](../CoreMotion/CMBodyIdentifiable.md)
 - [CVarArg](../Swift/CVarArg.md)
 - [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)

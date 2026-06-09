@@ -9,7 +9,7 @@ A number that indicates the relative importance of the item among other items fr
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

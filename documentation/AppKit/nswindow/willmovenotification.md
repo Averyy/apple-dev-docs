@@ -18,6 +18,8 @@ class let willMoveNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that’s about to move. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.WillMoveMessage`](nswindow/willmovemessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

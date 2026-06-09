@@ -1,4 +1,4 @@
-# Read Reports IDs for a Specific Request
+# Read reports ids for a specific request
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

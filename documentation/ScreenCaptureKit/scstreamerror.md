@@ -6,8 +6,12 @@
 An instance representing a ScreenCaptureKit framework error.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,6 +31,10 @@ struct SCStreamError
 - [SCStreamError.Code](scstreamerror/code.md)
   Codes for user cancellation events and errors that can occur in ScreenCaptureKit.
 - [static var errorDomain: String](scstreamerror/errordomain.md)
+### Type Properties
+- [static var insufficientStorage: SCStreamError.Code](scstreamerror/insufficientstorage.md)
+- [static var missingBackgroundMode: SCStreamError.Code](scstreamerror/missingbackgroundmode.md)
+- [static var notSupported: SCStreamError.Code](scstreamerror/notsupported.md)
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: subscript
 
+Accesses the bytes at the specified range of indexes.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+

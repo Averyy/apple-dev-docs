@@ -1,4 +1,4 @@
-# Modify a Registered Device
+# Modify a registered device
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

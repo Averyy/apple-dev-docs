@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a subscription offer code price.
+
 **Availability**:
 - App Store Connect API 2.0+
 

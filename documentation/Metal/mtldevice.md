@@ -102,7 +102,9 @@ If your app uses more than one GPU (see [`Multi-GPU systems`](multi-gpu-systems.
 - [func makePipelineDataSetSerializer(descriptor: MTL4PipelineDataSetSerializerDescriptor) -> any MTL4PipelineDataSetSerializer](mtldevice/makepipelinedatasetserializer(descriptor:).md)
   Creates a new pipeline data set serializer instance from a descriptor.
 - [func makeTensor(descriptor: MTLTensorDescriptor) throws -> any MTLTensor](mtldevice/maketensor(descriptor:).md)
-  Creates a tensor by allocating new memory.
+  Creates a tensor with the specified descriptor.
+- [func makeTensor(descriptor: MTLTensorDescriptor, attachments: MTLTensorBufferAttachments) throws -> any MTLTensor](mtldevice/maketensor(descriptor:attachments:).md)
+  Creates a tensor with the specified descriptor and per-plane buffer backing storage.
 - [func makeTextureViewPool(descriptor: MTLResourceViewPoolDescriptor) throws -> any MTLTextureViewPool](mtldevice/maketextureviewpool(descriptor:).md)
   Creates a new texture view pool from a resource view pool descriptor.
 - [func queryTimestampFrequency() -> UInt64](mtldevice/querytimestampfrequency.md)

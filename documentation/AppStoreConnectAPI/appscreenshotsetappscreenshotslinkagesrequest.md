@@ -31,9 +31,9 @@ object AppScreenshotSetAppScreenshotsLinkagesRequest
 - [object AppScreenshotSetCreateRequest](appscreenshotsetcreaterequest.md)
   The request body you use to create an app screenshot set.
 - [object AppScreenshotSetResponse](appscreenshotsetresponse.md)
-  A response that contains a single app screenshot set resource.
+  The response body for endpoints that create or read a set of app screenshots for a display size.
 - [object AppScreenshotSetsResponse](appscreenshotsetsresponse.md)
-  A response that contains a list of app screenshot set resources.
+  The response body for endpoints that list app screenshot sets for an App Store version localization.
 - [object AppScreenshotSetAppScreenshotsLinkagesResponse](appscreenshotsetappscreenshotslinkagesresponse.md)
   A response body that contains a list of related resource IDs.
 - [type ScreenshotDisplayType](screenshotdisplaytype.md)

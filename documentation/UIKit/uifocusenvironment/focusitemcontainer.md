@@ -25,8 +25,6 @@ The value of this property is `nil` when no container exists.
 
 ## See Also
 
-- [func contains(any UIFocusEnvironment) -> Bool](uifocusenvironment/contains(_:).md)
-  Returns a Boolean value that indicates whether the focus environment contains the specified environment.
 - [var parentFocusEnvironment: (any UIFocusEnvironment)?](uifocusenvironment/parentfocusenvironment.md)
   The parent focus environment for this environment.
 

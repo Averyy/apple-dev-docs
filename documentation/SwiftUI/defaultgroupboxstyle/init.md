@@ -13,6 +13,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

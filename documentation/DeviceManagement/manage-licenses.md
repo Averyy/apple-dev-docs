@@ -6,8 +6,7 @@
 Associate and disassociate licenses with users and devices.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 #### Discussion
 

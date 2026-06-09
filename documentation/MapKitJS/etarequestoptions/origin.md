@@ -11,7 +11,7 @@ The starting point for estimated arrival time requests.
 ## Declaration
 
 ```swift
-origin: Coordinate;
+origin: CoordinateData;
 ```
 
 #### Discussion
@@ -26,6 +26,8 @@ The [`origin`](etarequestoptions/origin.md) can be a [`Coordinate`](coordinate.m
   An array of coordinates that represent end points for estimated arrival time requests.
 - [transportType](etarequestoptions/transporttype.md)
   The mode of transportation the server uses when estimating arrival times.
+- [signal](etarequestoptions/signal.md)
+  A signal object allowing you to cancel the request.
 
 
 ---

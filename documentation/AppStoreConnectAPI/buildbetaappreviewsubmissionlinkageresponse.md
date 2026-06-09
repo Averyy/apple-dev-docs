@@ -25,13 +25,15 @@ object BuildBetaAppReviewSubmissionLinkageResponse
 ## See Also
 
 - [object Build](build.md)
-  The data structure that represents a Builds resource.
+  A processed binary uploaded to App Store Connect, ready for TestFlight distribution or App Store submission.
 - [object BuildResponse](buildresponse.md)
-  A response that contains a single Builds resource.
+  The response body for endpoints that read or modify a single build.
 - [object BuildWithoutIncludesResponse](buildwithoutincludesresponse.md)
+  A response containing a single build, without related resources.
 - [object BuildsResponse](buildsresponse.md)
-  A response that contains a list of Builds resources.
+  The response body for endpoints that list builds.
 - [object BuildsWithoutIncludesResponse](buildswithoutincludesresponse.md)
+  A response containing a list of builds, without related resources.
 - [object BuildUpdateRequest](buildupdaterequest.md)
   The request body you use to update a Build.
 - [object BuildAppEncryptionDeclarationLinkageRequest](buildappencryptiondeclarationlinkagerequest.md)

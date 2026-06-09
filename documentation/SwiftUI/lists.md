@@ -35,6 +35,8 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
 ### Configuring a list’s layout
 - [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](view/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [var defaultMinListRowHeight: CGFloat](environmentvalues/defaultminlistrowheight.md)
   The default minimum height of rows in a list.
 - [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)

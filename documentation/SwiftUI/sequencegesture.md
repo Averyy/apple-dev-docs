@@ -18,7 +18,7 @@ A gesture that’s a sequence of two gestures.
 
 ```swift
 @frozen
-struct SequenceGesture<First, Second> where First : Gesture, Second : Gesture
+nonisolated struct SequenceGesture<First, Second> where First : Gesture, Second : Gesture
 ```
 
 #### Overview

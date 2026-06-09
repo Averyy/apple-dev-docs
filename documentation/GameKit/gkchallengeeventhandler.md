@@ -6,6 +6,9 @@
 The `GKChallengeEventHandler` class is used to respond to events related to challenges sent or received by the local player.
 
 **Availability**:
+- iOS 6.0+
+- iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.8+
 - visionOS 1.0+
 

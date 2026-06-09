@@ -14,7 +14,7 @@ case sharingDisabled
 
 #### Discussion
 
-Provider has been disabled to producing data and the user is not allowed to push data to the provider.
+> **Note**: Sharing has been disabled on this provider. No data will be vended and the user is not allowed to push data to the provider either.
 
 
 ---

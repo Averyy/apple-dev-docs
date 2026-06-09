@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Passes a single view written as a child view through unmodified.
+Passes a single piece of content written as a child view through unmodified.
 
 **Availability**:
 - iOS 13.0+
@@ -17,19 +17,17 @@ Passes a single view written as a child view through unmodified.
 ## Declaration
 
 ```swift
-static func buildBlock<Content>(_ content: Content) -> Content where Content : View
+static func buildBlock<Content>(_ content: Content) -> Content
 ```
 
 #### Discussion
 
-An example of a single view written as a child view is `{ Text("Hello") }`.
+An example of a single item written as child content is `{ Text("Hello") }`.
 
 ## See Also
 
-- [static func buildBlock() -> EmptyView](viewbuilder/buildblock.md)
-  Builds an empty view from a block containing no statements.
-- [static func buildExpression<Content>(Content) -> Content](viewbuilder/buildexpression(_:).md)
-  Builds an expression within the builder.
+- [static buildBlock()](viewbuilder/buildblock.md)
+  Builds an empty content from a block containing no statements.
 
 
 ---

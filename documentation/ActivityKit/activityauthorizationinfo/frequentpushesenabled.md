@@ -8,6 +8,7 @@ A Boolean value that indicates whether a person permitted you to update Live Act
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
+- Mac Catalyst 16.2+
 
 ## Declaration
 

@@ -6,17 +6,16 @@
 Sets the width of all edges of a specified layer of the text block.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 
 ```swift
-func setWidth(_ val: CGFloat, type: NSTextBlock.ValueType, for layer: NSTextBlock.Layer)
+func setWidth(_ width: CGFloat, type: NSTextBlock.ValueType, for layer: NSTextBlock.Layer)
 ```
 
 ## Parameters
 
-- `val`: The new value for the specified edge width.
 - `type`: The type of value being provided. This controls how `val` is interpreted.
 - `layer`: The layer of the text block to modify.
 

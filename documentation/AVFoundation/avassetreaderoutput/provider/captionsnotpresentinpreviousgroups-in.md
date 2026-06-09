@@ -28,7 +28,7 @@ An array of AVCaption objects.
 ## See Also
 
 - [func next() async throws -> Payload?](avassetreaderoutput/provider/next.md)
-  Retruns the next piece of media data.
+  Returns the next piece of media data.
 
 
 ---

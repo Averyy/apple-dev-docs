@@ -18,6 +18,8 @@ class let colorDidChangeNotification: NSNotification.Name
 
 The notification object is the notifying `NSColorPanel`. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSColorPanel.ColorDidChangeMessage`](nscolorpanel/colordidchangemessage.md).
+
 ## See Also
 
 - [protocol NSColorChanging](nscolorchanging.md)

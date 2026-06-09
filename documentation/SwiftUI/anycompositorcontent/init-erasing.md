@@ -10,6 +10,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init<T>(erasing: T) where T : CompositorContent
 ```
 

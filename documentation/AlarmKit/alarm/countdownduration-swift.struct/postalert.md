@@ -8,6 +8,7 @@ The duration applied after the alarm has alerted at least once and moves back to
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

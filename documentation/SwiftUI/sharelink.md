@@ -16,6 +16,7 @@ A view that controls a sharing presentation.
 ## Declaration
 
 ```swift
+nonisolated
 struct ShareLink<Data, PreviewImage, PreviewIcon, Label> where Data : RandomAccessCollection, PreviewImage : Transferable, PreviewIcon : Transferable, Label : View, Data.Element : Transferable
 ```
 
@@ -89,7 +90,7 @@ Some share activities support subject and message fields. You can pre-populate t
 ShareLink(
     item: photo,
     subject: Text("Cool Photo"),
-    message: Text("Check it out!")
+    message: Text("Check it out!"),
     preview: SharePreview(
         photo.caption,
         image: photo.image))

@@ -18,10 +18,6 @@
 var title: LocalizedStringResource
 ```
 
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-
 ## See Also
 
 - [var subtitle: LocalizedStringResource?](displayrepresentation/subtitle.md)

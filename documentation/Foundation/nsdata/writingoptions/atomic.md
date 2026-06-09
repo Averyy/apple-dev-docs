@@ -39,6 +39,7 @@ This option is equivalent to using a write method that takes the parameter `atom
 - [static var fileProtectionMask: NSData.WritingOptions](nsdata/writingoptions/fileprotectionmask.md)
   An option the system uses when determining the file protection options that the system assigns to the data.
 - [static var completeFileProtectionWhenUserInactive: NSData.WritingOptions](nsdata/writingoptions/completefileprotectionwhenuserinactive.md)
+  An option to allow the file to be accessible after a user first unlocks the device.
 
 
 ---

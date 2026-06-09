@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a sandbox tester v2 resource.
+
 **Availability**:
 - App Store Connect API 2.2+
 

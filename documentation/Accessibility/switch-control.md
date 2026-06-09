@@ -6,7 +6,7 @@ An interface for navigating a device with a variety of adaptive switch hardware,
 
 #### Overview
 
-Switch Control is an assistive technology that lets people control their iOS devices using a single switch or multiple switches. With Switch Control, people can use switches to perform actions like selecting, tapping, dragging and dropping, typing, and freehand drawing. A person uses a switch to select an item or location on the screen, then uses the switch to choose an action. Learn more about testing your app with Switch Control to make sure it works well for people who use this assistive technology.
+Switch Control is an assistive technology that helps people control their iOS devices using a single switch or multiple switches. With Switch Control, people can use switches to perform actions like selecting, tapping, dragging and dropping, typing, and freehand drawing. A person uses a switch to select an item or location on the screen, then uses the switch to choose an action. Learn more about testing your app with Switch Control to make sure it works well for people who use this assistive technology.
 
 ![](https://docs-assets.developer.apple.com/published/f4e00d2a4a4652b7e7bbc893d09c9c69/switch-control%402x.png)
 

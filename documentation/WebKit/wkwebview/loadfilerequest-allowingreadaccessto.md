@@ -33,8 +33,6 @@ Provide the source of this load request for app activity data by setting the [`a
 
 ## See Also
 
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:).md)
-  Loads the web content that the specified URL request object references and navigates to that content.
 - [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
   Loads the content of the specified data object and navigates to it.
 - [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)

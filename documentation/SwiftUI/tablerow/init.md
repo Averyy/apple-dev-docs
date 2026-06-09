@@ -15,6 +15,7 @@ Creates a table row for the given value.
 ## Declaration
 
 ```swift
+nonisolated
 init(_ value: Value)
 ```
 

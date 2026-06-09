@@ -38,8 +38,6 @@ struct AxisMarkBuilder
   Provides support for “if” statements in multi-statement closures, producing an optional axis content that is visible only when the condition evaluates to `true`.
 - [static func buildLimitedAvailability<Content>(Content) -> AnyAxisMark](axismarkbuilder/buildlimitedavailability(_:).md)
   Provides support for “if” statements with `#available()` clauses in multi-statement closures, producing conditional content for the “then” branch, i.e. the conditionally-available branch.
-- [static func buildPartialBlock(accumulated: some AxisMark, next: some AxisMark) -> some AxisMark](axismarkbuilder/buildpartialblock(accumulated:next:).md)
-- [static func buildPartialBlock<T>(first: T) -> T](axismarkbuilder/buildpartialblock(first:).md)
 
 ## See Also
 

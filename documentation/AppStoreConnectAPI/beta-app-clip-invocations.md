@@ -11,19 +11,19 @@ The `betaAppClipInvocations` resource represents an App Clip experience you make
 ## Topics
 
 ### Managing Beta App Clip Invocation
-- [Read Beta App Clip Invocation Information](get-v1-betaappclipinvocations-_id_.md)
+- [Read beta app clip invocation information](get-v1-betaappclipinvocations-_id_.md)
   Get a specific App Clip invocation you configure for testing.
-- [Create an App Clip Invocation for Testers in Testflight](post-v1-betaappclipinvocations.md)
+- [Create an app clip invocation for testers in testflight](post-v1-betaappclipinvocations.md)
   Configure a new App Clip experience that testers launch using the TestFlight app.
-- [Modify an App Clip Invocation You Provide to Testers](patch-v1-betaappclipinvocations-_id_.md)
+- [Modify an app clip invocation you provide to testers](patch-v1-betaappclipinvocations-_id_.md)
   Change an App Clip invocation you make available to testers in the TestFlight app.
-- [Delete an App Clip Invocation for Testers in Testflight](delete-v1-betaappclipinvocations-_id_.md)
+- [Delete an app clip invocation for testers in testflight](delete-v1-betaappclipinvocations-_id_.md)
   Delete an App Clip invocation you make available to testers in TestFlight.
 ### Objects
 - [object BetaAppClipInvocation](betaappclipinvocation.md)
-  The data structure that represents a Beta App Clip Invocations resource.
+  A TestFlight URL scheme invocation that allows beta testers to launch an App Clip during testing.
 - [object BetaAppClipInvocationResponse](betaappclipinvocationresponse.md)
-  A response that contains a single Beta App Clip Invocations resource.
+  A response containing a single TestFlight App Clip invocation URL.
 - [object BetaAppClipInvocationCreateRequest](betaappclipinvocationcreaterequest.md)
   The request body you use to create an App Clip invocation for testers.
 - [object BetaAppClipInvocationUpdateRequest](betaappclipinvocationupdaterequest.md)

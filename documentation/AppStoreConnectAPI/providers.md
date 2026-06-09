@@ -17,20 +17,20 @@ The `scmProviders` resource represents the source code management (SCM) provider
 ## Topics
 
 ### Getting Provider Information
-- [List All Source Code Management Providers](get-v1-scmproviders.md)
+- [List all source code management providers](get-v1-scmproviders.md)
   List all source code management providers you connected to Xcode Cloud.
-- [Get a Source Code Management Provider](get-v1-scmproviders-_id_.md)
+- [Get a source code management provider](get-v1-scmproviders-_id_.md)
   Get information about a specific source code management provider you connected to Xcode Cloud.
-- [List All Repositories for a Source Code Management Provider](get-v1-scmproviders-_id_-repositories.md)
+- [List all repositories for a source code management provider](get-v1-scmproviders-_id_-repositories.md)
   List all Git repositories for a specific source code management provider you connected to Xcode Cloud.
-- [GET /v1/scmProviders/{id}/relationships/repositories](get-v1-scmproviders-_id_-relationships-repositories.md)
+- [List repository IDs for an SCM provider](get-v1-scmproviders-_id_-relationships-repositories.md)
 ### Objects
 - [object ScmProvider](scmprovider.md)
-  The data structure that represents a Providers resource.
+  A source code management provider, such as GitHub or Bitbucket, connected to Xcode Cloud for accessing repositories.
 - [object ScmProviderResponse](scmproviderresponse.md)
-  A response that contains a single Providers resource.
+  The response body for endpoints that read a single SCM provider connected to Xcode Cloud.
 - [object ScmProvidersResponse](scmprovidersresponse.md)
-  A response that contains a list of Providers resources.
+  The response body for endpoints that list SCM providers connected to Xcode Cloud.
 - [object ScmProviderRepositoriesLinkagesResponse](scmproviderrepositorieslinkagesresponse.md)
 
 ## See Also

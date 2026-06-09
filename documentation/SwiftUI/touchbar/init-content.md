@@ -11,7 +11,7 @@ Creates a non-customizable Touch Bar view container.
 ## Declaration
 
 ```swift
-init(@ViewBuilder content: () -> Content)
+init(@ContentBuilder content: () -> Content)
 ```
 
 ## See Also

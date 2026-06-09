@@ -18,7 +18,7 @@ object BackgroundAssetVersionCreateRequest
 
 ### Dictionaries
 - [object BackgroundAssetVersionCreateRequest.Data](backgroundassetversioncreaterequest/data-data.dictionary.md)
-  The data structure that represents a background asset version create request resource.
+  The data wrapper for a background asset version create request, containing the resource type and relationships.
 
 ## Properties
 
@@ -27,35 +27,35 @@ object BackgroundAssetVersionCreateRequest
 ## See Also
 
 - [object AppBackgroundAssetsLinkagesResponse](appbackgroundassetslinkagesresponse.md)
-  A response that contains a list of IDs of related background assets.
+  A response containing the resource identifiers of background asset versions linked to an app.
 - [object BackgroundAsset](backgroundasset.md)
-  The data structure that represents a background asset resource.
+  A downloadable content package that your app fetches in the background before or after installation, managed through Apple-hosted background assets.
 - [object BackgroundAssetCreateRequest](backgroundassetcreaterequest.md)
   The request body you use to create a background asset record.
 - [object BackgroundAssetResponse](backgroundassetresponse.md)
-  A response that contains a single background asset version resource.
+  A response containing a single background asset downloadable content package.
 - [object BackgroundAssetsResponse](backgroundassetsresponse.md)
-  A response that contains a list of background asset version resources.
+  A response containing a list of background assets for an app.
 - [object BackgroundAssetUploadFile](backgroundassetuploadfile.md)
-  The data structure that represents a background asset upload file resource.
+  A file included in a background asset upload operation, with its upload URL and verification checksum.
 - [object BackgroundAssetUploadFileCreateRequest](backgroundassetuploadfilecreaterequest.md)
   The request body you use to create a background asset upload file.
 - [object BackgroundAssetUploadFileResponse](backgroundassetuploadfileresponse.md)
-  A response that contains a single background asset upload file resource.
+  A response containing a single background asset upload file record.
 - [object BackgroundAssetUploadFilesResponse](backgroundassetuploadfilesresponse.md)
-  A response that contains a list of background asset upload file resources.
+  A response containing a list of upload files for a background asset.
 - [object BackgroundAssetUploadFileUpdateRequest](backgroundassetuploadfileupdaterequest.md)
   The request body you use to update a background asset upload file.
 - [object BackgroundAssetVersion](backgroundassetversion.md)
-  The data structure that represents a background asset version resource.
+  A specific version of a background asset, containing the upload files your app downloads after installation.
 - [object BackgroundAssetVersionAppStoreRelease](backgroundassetversionappstorerelease.md)
-  The data structure that represents a background asset version app store release resource.
+  A release of a background asset version to App Store customers, making the background content available on their devices.
 - [object BackgroundAssetVersionAppStoreReleaseResponse](backgroundassetversionappstorereleaseresponse.md)
-  A response that contains a single background asset version App Store release response resource.
+  A response containing a single App Store release record for a background asset version.
 - [type BackgroundAssetVersionAppStoreReleaseState](backgroundassetversionappstorereleasestate.md)
-  A string that represents the release of a asset.
+  A string that represents the release state of a background asset.
 - [object BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponse](backgroundassetversionbackgroundassetuploadfileslinkagesresponse.md)
-  A response that contains a list of background asset upload files related to a background asset version.
+  A response containing the resource identifiers of upload files associated with a background asset version.
 
 
 ---

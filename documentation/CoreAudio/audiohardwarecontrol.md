@@ -3,7 +3,7 @@
 **Framework**: Core Audio  
 **Kind**: class
 
-Instances of the AudioHardwareControl class encapsulate a single audio control, which provides properties that describe/manipulate a particular aspect of the owning object such as gain, mute, data source selection, etc.
+Instances of the AudioHardwareControl class encapsulate a single audio control, which provides properties that describe/manipulate a particular aspect of the owning device such as gain, mute, data source selection, etc.
 
 **Availability**:
 - Mac Catalyst ?+
@@ -24,6 +24,10 @@ class AudioHardwareControl
   An array of UInt32s that represent the IDs of all the items available.
 - [var booleanValue: Bool](audiohardwarecontrol/booleanvalue.md)
   A Bool that represents the value of the boolean control.
+- [var element: AudioObjectPropertyElement](audiohardwarecontrol/element.md)
+  An AudioObjectPropertyElement that indicates which element of the owning device the control applies to.
+- [var scope: AudioObjectPropertyScope](audiohardwarecontrol/scope.md)
+  An AudioObjectPropertyScope that indicates which part of the owning device the control applies to.
 - [var selectedItems: [UInt32]](audiohardwarecontrol/selecteditems.md)
   An array of UInt32s that are the IDs of the items currently selected.
 - [var sliderRange: [UInt32]](audiohardwarecontrol/sliderrange.md)

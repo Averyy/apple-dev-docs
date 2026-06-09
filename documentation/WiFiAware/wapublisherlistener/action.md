@@ -8,6 +8,7 @@ The structure that configures the Wi-Fi Aware publisher operation that the netwo
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

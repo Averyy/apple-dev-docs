@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+nonisolated
 init(content: Content, publisher: PublisherType, action: @escaping (PublisherType.Output) -> Void)
 ```
 

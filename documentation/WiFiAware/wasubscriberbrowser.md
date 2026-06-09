@@ -8,6 +8,7 @@ The structure that configures a network browser to subscribe to a Wi-Fi Aware se
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

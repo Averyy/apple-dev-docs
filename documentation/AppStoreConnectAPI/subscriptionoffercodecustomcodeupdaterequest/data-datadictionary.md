@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to update a subscription offer code custom code update request.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -16,6 +18,7 @@ object SubscriptionOfferCodeCustomCodeUpdateRequest.Data
 
 ### Objects
 - [object SubscriptionOfferCodeCustomCodeUpdateRequest.Data.Attributes](subscriptionoffercodecustomcodeupdaterequest/data-data.dictionary/attributes-data.dictionary.md)
+  Attributes that describe a subscription offer code custom code update request resource.
 
 ## Properties
 

@@ -24,6 +24,7 @@ init(_ title: LocalizedStringKey, systemImage name: String, description: Text? =
 ## Parameters
 
 - `title`: A title generated from a localized string.
+- `name`: The name of the system symbol image resource to lookup. Use the SF Symbols app to look up the names of system symbol images.
 - `description`: The view that describes the interface.
 
 ## See Also

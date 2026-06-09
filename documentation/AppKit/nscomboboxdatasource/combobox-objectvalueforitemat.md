@@ -32,7 +32,7 @@ An `NSComboBox` object uses this method to populate the items displayed in its p
 
 ## See Also
 
-- [Combo Box Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ComboBox/ComboBox.html#//apple_ref/doc/uid/10000020i)
+- [protocol NSComboBoxDataSource](nscomboboxdatasource.md)
 - [func comboBox(NSComboBox, completedString: String) -> String?](nscomboboxdatasource/combobox(_:completedstring:).md)
   Returns the first item from the pop-up list that starts with the text the user has typed.
 - [func comboBox(NSComboBox, indexOfItemWithStringValue: String) -> Int](nscomboboxdatasource/combobox(_:indexofitemwithstringvalue:).md)

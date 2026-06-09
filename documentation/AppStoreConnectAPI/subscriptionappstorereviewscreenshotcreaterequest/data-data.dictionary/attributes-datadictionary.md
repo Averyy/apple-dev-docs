@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+Attributes that describe a subscription app store review screenshot create request resource.
+
 **Availability**:
 - App Store Connect API 2.0+
 
@@ -20,6 +22,7 @@ object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Attributes
 ## See Also
 
 - [object SubscriptionAppStoreReviewScreenshotCreateRequest.Data.Relationships](subscriptionappstorereviewscreenshotcreaterequest/data-data.dictionary/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

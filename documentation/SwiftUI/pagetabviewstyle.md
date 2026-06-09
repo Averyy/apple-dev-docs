@@ -16,6 +16,7 @@ A `TabViewStyle` that displays a paged scrolling `TabView`.
 ## Declaration
 
 ```swift
+nonisolated
 struct PageTabViewStyle
 ```
 

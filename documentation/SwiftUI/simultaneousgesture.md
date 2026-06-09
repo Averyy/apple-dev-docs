@@ -18,7 +18,7 @@ A gesture containing two gestures that can happen at the same time with neither 
 
 ```swift
 @frozen
-struct SimultaneousGesture<First, Second> where First : Gesture, Second : Gesture
+nonisolated struct SimultaneousGesture<First, Second> where First : Gesture, Second : Gesture
 ```
 
 #### Overview

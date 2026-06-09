@@ -11,6 +11,7 @@ The identifier of the prompt.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,6 +27,10 @@ var id: String
   Ordered prompt segments.
 - [var options: GenerationOptions](transcript/prompt/options.md)
   Generation options associated with the prompt.
+- [var contextOptions: ContextOptions](transcript/prompt/contextoptions.md)
+  Configuration of the prompt.
+- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/prompt/metadata.md)
+  Metadata provided as part of this prompt.
 
 
 ---

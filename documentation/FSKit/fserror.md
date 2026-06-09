@@ -49,6 +49,8 @@ struct FSError
   A code that indicates a specific FSKit error.
 - [let FSKitErrorDomain: String](fskiterrordomain.md)
   An error domain for FSKit errors.
+- [struct FSDataCacheError](fsdatacacheerror.md)
+  An error encountered when performing an FSKit data caching operation.
 
 
 ---

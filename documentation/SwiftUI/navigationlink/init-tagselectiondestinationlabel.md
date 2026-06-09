@@ -17,7 +17,8 @@ Creates a navigation link that presents the destination view when a bound select
 ## Declaration
 
 ```swift
-init<V>(tag: V, selection: Binding<V?>, @ViewBuilder destination: () -> Destination, @ViewBuilder label: () -> Label) where V : Hashable
+nonisolated
+init<V>(tag: V, selection: Binding<V?>, @ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label) where V : Hashable
 ```
 
 ## Parameters
@@ -25,7 +26,7 @@ init<V>(tag: V, selection: Binding<V?>, @ViewBuilder destination: () -> Destinat
 - `tag`: The value of `selection` that causes the link to present `destination`.
 - `selection`: A bound variable that causes the link to present `destination` when `selection` becomes equal to `tag`.
 - `destination`: A view for the navigation link to present.
-- `label`: A view builder to produce a label describing the `destination` to present.
+- `label`: A content builder to produce a label describing the `destination` to present.
 
 ## See Also
 

@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: method
 
+Creates and returns by reference an `NSInputStream` object and `NSOutputStream` object for a socket connection with a given host on a given port.
+
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
@@ -16,6 +18,13 @@
 ```swift
 class func getStreamsToHost(withName hostname: String, port: Int, inputStream: AutoreleasingUnsafeMutablePointer<InputStream?>?, outputStream: AutoreleasingUnsafeMutablePointer<OutputStream?>?)
 ```
+
+## Parameters
+
+- `hostname`: The host to which to connect.
+- `port`: The port to connect to on `host`.
+- `inputStream`: Upon return, contains the input stream. If `nil` is passed, the stream object is not created.
+- `outputStream`: Upon return, contains the output stream. If `nil` is passed, the stream object is not created.
 
 
 ---

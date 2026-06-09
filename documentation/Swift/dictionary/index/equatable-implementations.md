@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](dictionary/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](dictionary/index/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (Dictionary<Key, Value>.Index, Dictionary<Key, Value>.Index) -> Bool](dictionary/index/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

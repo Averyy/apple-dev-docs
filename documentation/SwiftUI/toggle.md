@@ -17,6 +17,7 @@ A control that toggles between on and off states.
 ## Declaration
 
 ```swift
+nonisolated
 struct Toggle<Label> where Label : View
 ```
 

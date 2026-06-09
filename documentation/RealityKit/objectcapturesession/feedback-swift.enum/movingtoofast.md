@@ -8,6 +8,7 @@ The user is moving too quickly for clear images and the capturing may be paused 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

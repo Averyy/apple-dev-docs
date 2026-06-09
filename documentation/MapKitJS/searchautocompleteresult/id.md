@@ -11,7 +11,7 @@ The Place ID that identifies a feature.
 ## Declaration
 
 ```swift
-id?: string;
+id: string | null;
 ```
 
 #### Discussion

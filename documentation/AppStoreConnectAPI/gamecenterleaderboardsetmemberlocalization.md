@@ -18,7 +18,9 @@ object GameCenterLeaderboardSetMemberLocalization
 
 ### Objects
 - [object GameCenterLeaderboardSetMemberLocalization.Attributes](gamecenterleaderboardsetmemberlocalization/attributes-data.dictionary.md)
+  Attributes that describe a leaderboard resource.
 - [object GameCenterLeaderboardSetMemberLocalization.Relationships](gamecenterleaderboardsetmemberlocalization/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 ## Properties
 
@@ -33,7 +35,7 @@ object GameCenterLeaderboardSetMemberLocalization
 - [object GameCenterLeaderboardSetMemberLocalizationCreateRequest](gamecenterleaderboardsetmemberlocalizationcreaterequest.md)
   The request body you use to create a leaderboard set localization.
 - [object GameCenterLeaderboardSetMemberLocalizationResponse](gamecenterleaderboardsetmemberlocalizationresponse.md)
-  A response that contains a single leaderboard set localization resource.
+  A response containing a single localization for a leaderboard’s membership within a leaderboard set.
 - [object GameCenterLeaderboardSetMemberLocalizationUpdateRequest](gamecenterleaderboardsetmemberlocalizationupdaterequest.md)
   The request body you use to update a leaderboard localization.
 - [object GameCenterLeaderboardSetMemberLocalizationsResponse](gamecenterleaderboardsetmemberlocalizationsresponse.md)

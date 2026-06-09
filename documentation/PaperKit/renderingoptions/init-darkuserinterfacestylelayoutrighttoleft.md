@@ -23,6 +23,11 @@ init(darkUserInterfaceStyle: Bool = false, layoutRightToLeft: Bool = false)
 - `darkUserInterfaceStyle`: Use a dark user interface style for rendering.
 - `layoutRightToLeft`: Use a right to left layout direction for rendering.
 
+## See Also
+
+- [init(traitCollection: UITraitCollection)](renderingoptions/init(traitcollection:).md)
+  Creates the most suitable options for rendering on a device with the specified traits.
+
 
 ---
 

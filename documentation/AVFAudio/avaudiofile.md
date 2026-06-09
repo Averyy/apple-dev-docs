@@ -42,8 +42,7 @@ Reads and writes are always sequential. Random access is possible by setting the
   Reads an entire audio buffer.
 - [func read(into: AVAudioPCMBuffer, frameCount: AVAudioFrameCount) throws](avaudiofile/read(into:framecount:).md)
   Reads a portion of an audio buffer using the number of frames you specify.
-- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:).md)
-  Writes an audio buffer sequentially.
+- [func read(frameCount: AVAudioFrameCount) throws -> AVReadOnlyAudioPCMBuffer](avaudiofile/read(framecount:).md)
 - [func close()](avaudiofile/close.md)
   Closes the audio file.
 ### Getting Audio File Properties
@@ -67,6 +66,9 @@ Reads and writes are always sequential. Random access is possible by setting the
   A Boolean value that indicates whether the file is open.
 ### Initializers
 - [init()](avaudiofile/init.md)
+### Instance Methods
+- [func write(from: AVReadOnlyAudioPCMBuffer) throws](avaudiofile/write(from:)-4zfhf.md)
+- [func write(from: AVAudioPCMBuffer) throws](avaudiofile/write(from:)-6qgec.md)
 
 ## Relationships
 
@@ -86,6 +88,10 @@ Reads and writes are always sequential. Random access is possible by setting the
 
 - [class AVAudioBuffer](avaudiobuffer.md)
   An object that represents a buffer of audio data with a format.
+- [class AVAudioPCMBuffer](avaudiopcmbuffer.md)
+  An object that represents an audio buffer you use with PCM audio formats.
+- [struct AVReadOnlyAudioPCMBuffer](avreadonlyaudiopcmbuffer.md)
+  A read-only, Sendable audio buffer for safe concurrent access.
 - [class AVAudioTime](avaudiotime.md)
   An object you use to represent a moment in time.
 - [Audio settings](audio-settings.md)

@@ -29,6 +29,7 @@ object AppStoreVersionCreateRequest.Data.Relationships.App
 - [object AppStoreVersionCreateRequest.Data.Relationships.Build](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/build-data.dictionary.md)
   The relationships to other resources that you can set with this request.
 - [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations.Data](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary/data-data.dictionary.md)
+  The request body you use to create an App Store version.
 - [object AppStoreVersionCreateRequest.Data.Relationships.AppStoreVersionLocalizations](appstoreversioncreaterequest/data-data.dictionary/relationships-data.dictionary/appstoreversionlocalizations-data.dictionary.md)
 
 

@@ -28,6 +28,8 @@ The property `cameraID` has been added to this type to hold camera identifier st
 - [init(from: any Decoder) throws](setcameracommand/init(from:).md)
 - [init(id: Int, time: CMTime, cameraID: String)](setcameracommand/init(id:time:cameraid:).md)
   Creates a command with a specific ID, cameraID and start time.
+- [init(id: Int, time: CMTime, cameraID: String, overrides: SetCameraCommand.Overrides?)](setcameracommand/init(id:time:cameraid:overrides:).md)
+  Creates a command with a specific ID, cameraID, start time and override parameters.
 ### Instance Properties
 - [var cameraID: String](setcameracommand/cameraid.md)
   The camera ID to use for the duration of this command.
@@ -39,8 +41,13 @@ The property `cameraID` has been added to this type to hold camera identifier st
   Reserved for later use.
 - [var time: CMTime](setcameracommand/time.md)
   The time this command starts during playback.
+- [var overrides: SetCameraCommand.Overrides?](setcameracommand/overrides-swift.property.md)
+  The override parameters for the camera.
 ### Instance Methods
 - [func encode(to: any Encoder) throws](setcameracommand/encode(to:).md)
+### Structures
+- [SetCameraCommand.Overrides](setcameracommand/overrides-swift.struct.md)
+  Override camera/venue params
 
 ## Relationships
 
@@ -58,6 +65,8 @@ The property `cameraID` has been added to this type to hold camera identifier st
   A command type for opacity fading environment backdrops during immersive media playback.
 - [struct ShotFlopCommand](shotflopcommand.md)
   A command type to flip the video frames horizontally (mirrored horizontally) during playback for the duration of the command.
+- [struct ShotFlipCommand](shotflipcommand.md)
+  A command type to flip the video frames vertically during playback for the duration of the command.
 - [struct PresentationDescriptor](presentationdescriptor.md)
   A structure that represents dynamic metadata used during playback or when outputting the metadata track for an immersive video file.
 - [class PresentationDescriptorReader](presentationdescriptorreader.md)

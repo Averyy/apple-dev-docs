@@ -17,6 +17,8 @@ const LookAroundErrorType: Readonly<{
     readonly ServiceError: "service-error";
     readonly UnknownError: "unknown-error";
 }>
+type LookAroundErrorType =
+    (typeof LookAroundErrorType)[keyof typeof LookAroundErrorType];
 ```
 
 ## Topics
@@ -30,9 +32,6 @@ const LookAroundErrorType: Readonly<{
   An error type that indicates the service supporting the Look Around view isn’t available.
 - [UnknownError](lookarounderrortype/unknownerror.md)
   An error type that indicates the Look Around view encountered an unknown error.
-### Type Aliases
-- [type LookAroundErrorType](lookarounderrortype/lookarounderrortype.md)
-  A type alias that represents the values of the Look Around error type.
 
 ## See Also
 

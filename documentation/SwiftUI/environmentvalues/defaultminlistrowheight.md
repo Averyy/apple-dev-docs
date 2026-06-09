@@ -28,6 +28,8 @@ The height of list rows is bounded below by this default value, and is otherwise
 
 - [func listRowInsets(EdgeInsets?) -> some View](view/listrowinsets(_:).md)
   Applies an inset to the rows in a list.
+- [func listRowInsets(Edge.Set, CGFloat?) -> some View](view/listrowinsets(_:_:).md)
+  Sets the insets of rows in a list on the specified edges.
 - [var defaultMinListHeaderHeight: CGFloat?](environmentvalues/defaultminlistheaderheight.md)
   The default minimum height of a header in a list.
 - [func listRowSpacing(CGFloat?) -> some View](view/listrowspacing(_:).md)

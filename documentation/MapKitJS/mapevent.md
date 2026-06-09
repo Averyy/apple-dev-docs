@@ -11,7 +11,7 @@ An object that represents a gesture the framework recognized on the map.
 ## Declaration
 
 ```swift
-class MapEvent extends MapKitEvent
+class MapEvent extends Event
 ```
 
 ## Topics
@@ -25,7 +25,7 @@ class MapEvent extends MapKitEvent
 ## Relationships
 
 ### Inherits From
-- [MapKitEvent](mapkitevent.md)
+- [Event](doc://com.apple.mapkitjs/__unknown__/Event)
 
 ## See Also
 

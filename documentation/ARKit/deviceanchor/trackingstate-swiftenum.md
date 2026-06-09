@@ -24,11 +24,13 @@ enum TrackingState
   The framework is currently tracking both the anchor’s position and its orientation.
 - [DeviceAnchor.TrackingState.untracked](deviceanchor/trackingstate-swift.enum/untracked.md)
   The framework isn’t tracking this anchor.
+### Instance Properties
+- [var description: String](deviceanchor/trackingstate-swift.enum/description.md)
+  A textual representation of this tracking state.
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)

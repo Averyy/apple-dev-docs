@@ -26,11 +26,11 @@ object ScmRepositoryPullRequestsLinkagesResponse
 ## See Also
 
 - [object ScmRepository](scmrepository.md)
-  The data structure that represents a Repositories resource.
+  A source code repository connected to Xcode Cloud, used as the source for workflow builds.
 - [object ScmRepositoryResponse](scmrepositoryresponse.md)
-  A response that contains a single Repositories resource.
+  The response body for endpoints that read a single SCM repository connected to Xcode Cloud.
 - [object ScmRepositoriesResponse](scmrepositoriesresponse.md)
-  A response that contains a list of Repositories resources.
+  The response body for endpoints that list SCM repositories connected to Xcode Cloud.
 - [object ScmRepositoryGitReferencesLinkagesResponse](scmrepositorygitreferenceslinkagesresponse.md)
 
 

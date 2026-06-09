@@ -10,8 +10,6 @@ The default service handlers.
 - iPadOS 10.0+
 - Mac Catalyst 10.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 

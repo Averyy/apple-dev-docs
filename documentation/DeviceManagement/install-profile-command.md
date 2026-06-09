@@ -13,12 +13,10 @@ Install a configuration profile on a device.
 - tvOS 9.0+
 - visionOS 1.1+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Mentions
 
-- [Deploying MDM Enrollment Profiles](deploying-mdm-enrollment-profiles.md)
+- [Deploying device management enrollment profiles](deploying-device-management-enrollment-profiles.md)
 
 #### Discussion
 
@@ -30,7 +28,7 @@ Refer to the following sections to determine supported channels and requirements
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 | User channel | macOS, Shared iPad |
-| Requires supervision | NA |
+| Requires supervision | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowInstallationRemoval |
 
@@ -109,7 +107,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#InstallProfileCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

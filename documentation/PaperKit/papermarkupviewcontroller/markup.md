@@ -3,7 +3,7 @@
 **Framework**: PaperKit  
 **Kind**: property
 
-The paper data shown in this view controller.
+The paper data that this view controller displays.
 
 **Availability**:
 - iOS 26.0+
@@ -22,6 +22,15 @@ The paper data shown in this view controller.
 #### Discussion
 
 Observe `markup` to watch for markup changes.
+
+## See Also
+
+- [var contentView: UIView?](papermarkupviewcontroller/contentview-4aeda.md)
+  The content that markup appears on top of.
+- [var contentView: NSView?](papermarkupviewcontroller/contentview-4hbkf.md)
+  The content that markup appears on top of.
+- [var supportedFeatureSet: FeatureSet](papermarkupviewcontroller/supportedfeatureset.md)
+  The supported PaperKit features on this canvas.
 
 
 ---

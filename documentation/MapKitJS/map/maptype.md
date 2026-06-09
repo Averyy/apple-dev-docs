@@ -23,24 +23,12 @@ set mapType(mapType: MapType);
 
 The map type determines whether the map shows a standard view, a satellite view, or a hybrid view. The map type is a value of [`MapType`](maptype.md).
 
-## Topics
-
-### Map types
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
-
 ## See Also
 
 - [colorScheme](map/colorscheme.md)
   The map’s color scheme when displaying standard or muted standard map types.
-- [const ColorScheme](colorscheme.md)
-  Constants that indicate the color scheme of the map or a place detail.
 - [distances](map/distances-data.property.md)
   The system of measurement that displays on the map.
-- [const Distance](distance.md)
-  Constants indicating the system of measurement that displays on the map.
-- [const MapType](maptype.md)
-  Constants representing the type of map to display.
 - [padding](map/padding.md)
   The map’s inset margins.
 - [pointOfInterestFilter](map/pointofinterestfilter.md)

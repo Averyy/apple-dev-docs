@@ -18,9 +18,9 @@ Update a specific background asset.
 
 ## See Also
 
-- [List All Assets Packs for an App](get-v1-apps-_id_-backgroundassets.md)
+- [List all background assets for an app](get-v1-apps-_id_-backgroundassets.md)
   Get information about the Apple-hosted background assets for a specific app.
-- [List the Assets Packs IDs for an App](get-v1-apps-_id_-relationships-backgroundassets.md)
+- [List the assets packs ids for an app](get-v1-apps-_id_-relationships-backgroundassets.md)
   Get a list of the Apple hosted background asset IDs for a specific app.
 
 

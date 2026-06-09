@@ -12,8 +12,6 @@ The declaration to configure an interactive legacy profile.
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -32,18 +30,25 @@ The profile may contain any payload type other than the following:
 - `com.apple.mdm`
 - `com.apple.declarations`
 
+If a user enrollment triggers this configuration: in macOS the system silently ignores any MDMv1 payloads in macOS where the User Enrollment Mode setting is `forbidden`; in iOS, tvOS, watchOS and visionOS, the system rejects the entire profile if any MDMv1 payload has its User Enrollment Mode setting set to `forbidden`.
+
 ##### Configuration Availability
 
 |  |  |
 | --- | --- |
-| Allowed in supervised enrollment | iOS, macOS, Shared iPad, tvOS, visionOS |
-| Allowed in device enrollment | iOS, Shared iPad, tvOS, visionOS |
-| Allowed in user enrollment | iOS, macOS, Shared iPad, visionOS |
-| Allowed in local enrollment | NA |
+| Allowed in supervised enrollment | iOS, macOS, tvOS, visionOS |
+| Allowed in device enrollment | iOS, tvOS, visionOS |
+| Allowed in user enrollment | iOS, macOS, visionOS |
+| Allowed in local enrollment | N/A |
 | Allowed in system scope | iOS, macOS, tvOS, visionOS |
 | Allowed in user scope | macOS |
+| Apply | Multiple configurations are applied separately |
 
-##### Configuration Example
+##### Configuration Examples
+
+**URL**:
+
+Downloads the profile from a URL on the MDM server.
 
 ```json
 {
@@ -57,9 +62,26 @@ The profile may contain any payload type other than the following:
 }
 ```
 
+**Asset**:
+
+Downloads the profile using an asset.
+
+```json
+{
+    "Type": "com.apple.configuration.legacy.interactive",
+    "Identifier": "EB13EE2B-5D63-4EBA-810F-5B81D07F5017",
+    "ServerToken": "E180CA9A-F089-4FA3-BBDF-94CC159C4AE8",
+    "Payload": {
+        "ProfileAssetReference": "F8D5BF80-F38A-476A-BEE0-0B10BDED2161",
+        "VisibleName": "Passcode Policy"
+    }
+}
+```
+
 ## Properties
 
-- `ProfileURL` (string) *(required)*: The URL of the profile to download and install, which needs to start with `https://`, and must be hosted by the MDM server. If a user enrollment triggers this configuration, the system silently ignores any MDMv1 payloads in macOS that are forbidden with user enrollment. In iOS, the system rejects the entire profile.
+- `ProfileAssetReference` (string): The identifier of an asset declaration containing a reference to the profile data. The corresponding asset needs to be of type `com.apple.asset.data`. The referenced data needs to be a property list file, and the asset’s “ContentType” value set to match the data type. One of `ProfileURL` or `ProfileAssetReference` needs to be present. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | tvOS 27+ | visionOS 27+
+- `ProfileURL` (string): The URL of the profile to download and install, which needs to start with `https://`. The request uses MDM semantics, which includes the device-identity certificate, and any user authentication. This is equivalent to an MDM request made to the `CheckInURL` or `ServerURL`. One of `ProfileURL` or `ProfileAssetReference` needs to be present.
 - `VisibleName` (string) *(required)*: The visible name of the configuration. This name needs to indicate the nature of the profile.
 
 ## See Also
@@ -80,20 +102,20 @@ The profile may contain any payload type other than the following:
   The declaration to configure a subscribed calendar.
 - [object AppManaged](appmanaged.md)
   The declaration to configure a managed app.
+- [object AppSettings](appsettings.md)
+  The declaration to configure app settings.
 - [object AudioAccessorySettings](audioaccessorysettings.md)
   The declaration to configure audio accessory settings.
+- [object ContentCaching](contentcaching.md)
+  The declaration to configure the Content Caching service.
 - [object DiskManagementSettings](diskmanagementsettings.md)
   The declaration to configure disk management settings on the device.
+- [object ExtensibleSSO](extensiblesso.md)
+  The declaration to configure Extensible Single Sign-On.
 - [object ExternalIntelligenceSettings](externalintelligencesettings.md)
   The declaration to configure External Intelligence Integrations settings.
 - [object IntelligenceSettings](intelligencesettings.md)
   The declaration to configure Apple Intelligence settings.
-- [object KeyboardSettings](keyboardsettings.md)
-  The declaration to configure keyboard settings.
-- [object LegacyProfile](legacyprofile.md)
-  The declaration to configure a legacy profile.
-- [object ManagementStatusSubscriptions](managementstatussubscriptions.md)
-  The declaration to configure status subscriptions.
 
 
 ---

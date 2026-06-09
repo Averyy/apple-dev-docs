@@ -52,6 +52,12 @@ struct FormattingOptions
 - [var includesRowIndices: Bool](formattingoptions/includesrowindices.md)
   A Boolean value that indicates whether the description includes the row indices.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [enum Order](order.md)

@@ -31,6 +31,8 @@ protocol TypeDisplayRepresentable
 ### Inherited By
 - [AppEntity](appentity.md)
 - [AppEnum](appenum.md)
+- [AppUnionValue](appunionvalue.md)
+- [AppUnionValueCasesProviding](appunionvaluecasesproviding.md)
 - [AppValue](appvalue.md)
 - [AssistantEntity](assistantentity.md)
 - [AssistantEnum](assistantenum.md)
@@ -39,7 +41,9 @@ protocol TypeDisplayRepresentable
 - [DisplayRepresentable](displayrepresentable.md)
 - [FileEntity](fileentity.md)
 - [IndexedEntity](indexedentity.md)
+- [OwnershipProvidingEntity](ownershipprovidingentity.md)
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
+- [SyncableEntity](syncableentity.md)
 - [TransientAppEntity](transientappentity.md)
 - [URLRepresentableEntity](urlrepresentableentity.md)
 - [URLRepresentableEnum](urlrepresentableenum.md)
@@ -50,6 +54,7 @@ protocol TypeDisplayRepresentable
 - [IntentPaymentMethod](intentpaymentmethod.md)
 - [IntentPerson](intentperson.md)
 - [StringSearchScope](stringsearchscope.md)
+- [SystemShortcut](systemshortcut.md)
 - [VideoCategory](videocategory.md)
 
 ## See Also

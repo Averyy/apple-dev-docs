@@ -7,8 +7,6 @@ Verify the device’s Recovery Lock password.
 
 **Availability**:
 - macOS 11.5+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -19,9 +17,9 @@ This command is only available on a Mac with Apple silicon.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | macOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
 ##### Example Request and Response
@@ -73,7 +71,7 @@ This command is only available on a Mac with Apple silicon.
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#VerifyRecoveryLockCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

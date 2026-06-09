@@ -44,8 +44,6 @@ print(numbers.dropLast(10))
   Returns a sequence containing all but the given number of initial elements.
 - [func drop(while: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>](sequence/drop(while:).md)
   Returns a sequence by skipping the initial, consecutive elements that satisfy the given predicate.
-- [func filter((Self.Element) throws -> Bool) rethrows -> [Self.Element]](sequence/filter(_:)-5y9d2.md)
-  Returns an array containing, in order, the elements of the sequence that satisfy the given predicate.
 
 
 ---

@@ -12,10 +12,10 @@ Creates a Look Around preview you embed on a webpage and initializes it with the
 
 ```swift
 constructor(
-        parent?: HTMLElement,
-        location?: Coordinate | Place | LookAroundScene,
-        options?: LookAroundPreviewOptions,
-    );
+    parent?: HTMLElement,
+    location?: CoordinateData | Place | LookAroundScene,
+    options?: LookAroundPreviewOptions,
+);
 ```
 
 #### Return Value

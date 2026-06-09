@@ -1,6 +1,6 @@
 # SCSensitivityAnalysisPolicy
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: enum
 
 Configurations that represent the way the framework checks for sensitive content and how the app responds.
@@ -33,7 +33,7 @@ else if policy == .simpleInterventions {
 }
 ```
 
-For guidance about observing the active analysis policy, see [`Detecting nudity in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
+For guidance about observing the active analysis policy, see [`Detecting sensitive content in media and providing intervention options`](detecting-nudity-in-media-and-providing-intervention-options.md).
 
 ## Topics
 
@@ -43,7 +43,7 @@ For guidance about observing the active analysis policy, see [`Detecting nudity 
 - [SCSensitivityAnalysisPolicy.simpleInterventions](scsensitivityanalysispolicy/simpleinterventions.md)
   An indicator that user preference requests discrete detection of sensitive content.
 - [SCSensitivityAnalysisPolicy.descriptiveInterventions](scsensitivityanalysispolicy/descriptiveinterventions.md)
-  An indicator that user preference requests overt detection of sensitive content.
+  An indicator that the person requests overt detection of sensitive content.
 ### Creating an analysis policy value
 - [init?(rawValue: Int)](scsensitivityanalysispolicy/init(rawvalue:).md)
   Creates an analysis policy value from the enumeration’s underlying type.

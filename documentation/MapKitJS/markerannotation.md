@@ -17,6 +17,8 @@ class MarkerAnnotation extends Annotation
 ## Mentions
 
 - [MapKit JS 5](mapkit-js-5.md)
+- [MapKit JS 6](mapkit-js-6.md)
+- [Migrating from Version 5 to Version 6](migrating-from-version-5-to-version-6.md)
 
 #### Overview
 
@@ -70,8 +72,6 @@ const annotation = new mapkit.MarkerAnnotation(new mapkit.Coordinate(40.6892, -7
   A value that determines the behavior of the subtitle’s visibility.
 - [titleVisibility](markerannotation/titlevisibility.md)
   A value that determines the behavior of the title’s visibility.
-- [const FeatureVisibility](featurevisibility.md)
-  Constants indicating the visibility of different adaptive map features.
 ### Setting appearance
 - [color](markerannotation/color.md)
   The background color of the balloon.

@@ -10,13 +10,14 @@ Adds a custom footer to the sidebar of a tab view.
 - iPadOS 18.0+
 - Mac Catalyst 18.0+
 - macOS 15.0+
+- tvOS 27.0+ (Beta)
 - visionOS 2.0+
 
 ## Declaration
 
 ```swift
 nonisolated
-func tabViewSidebarFooter<Content>(@ViewBuilder content: () -> Content) -> some View where Content : View
+func tabViewSidebarFooter<Content>(@ContentBuilder content: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion
@@ -49,6 +50,8 @@ TabView {
 
 - [func defaultAdaptableTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaultadaptabletabbarplacement(_:).md)
   Specifies the default placement for the tabs in a tab view using the adaptable sidebar style.
+- [func defaultTabBarPlacement(AdaptableTabBarPlacement) -> some View](view/defaulttabbarplacement(_:).md)
+  Specifies the preferred placement for the tabs of a [`TabView`](tabview.md) in the [`sidebarAdaptable`](tabviewstyle/sidebaradaptable.md) style on platforms where the tab bar cannot adapt between different representations, and only one representation can be shown.
 - [func tabViewSidebarHeader<Content>(content: () -> Content) -> some View](view/tabviewsidebarheader(content:).md)
   Adds a custom header to the sidebar of a tab view.
 - [func tabViewSidebarBottomBar<Content>(content: () -> Content) -> some View](view/tabviewsidebarbottombar(content:).md)
@@ -61,6 +64,8 @@ TabView {
   A placement for tabs in a tab view.
 - [var isTabBarShowingSections: Bool](environmentvalues/istabbarshowingsections.md)
   A Boolean value that determines whether a tab view shows the expanded contents of a tab section.
+- [func tabBarMinimizeBehavior(TabBarMinimizeBehavior) -> some View](view/tabbarminimizebehavior(_:).md)
+  Sets the behavior for tab bar minimization.
 - [struct TabBarMinimizeBehavior](tabbarminimizebehavior.md)
 - [enum TabViewBottomAccessoryPlacement](tabviewbottomaccessoryplacement.md)
   A placement of the bottom accessory in a tab view. You can use this to adjust the content of the accessory view based on the placement.

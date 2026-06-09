@@ -74,6 +74,9 @@ The [`NSStatusBar`](nsstatusbar.md) method [`statusItem(withLength:)`](nsstatusb
   The custom view that is displayed at the status item’s position in the status bar.
 - [func drawStatusBarBackground(in: NSRect, withHighlight: Bool)](nsstatusitem/drawstatusbarbackground(in:withhighlight:).md)
   Draws the menu background pattern for a custom status-bar item in regular or highlight pattern.
+### Instance Properties
+- [var expandedInterfaceDelegate: (any NSStatusItemExpandedInterfaceDelegate)?](nsstatusitem/expandedinterfacedelegate.md)
+- [var expandedInterfaceSession: NSStatusItemExpandedInterfaceSession?](nsstatusitem/expandedinterfacesession.md)
 
 ## Relationships
 

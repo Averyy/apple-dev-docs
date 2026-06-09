@@ -8,6 +8,7 @@ Indicates the person didn’t grant the accessory authorization to access networ
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

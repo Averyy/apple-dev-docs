@@ -17,6 +17,7 @@ The working color space and storage format of the canvas.
 ## Declaration
 
 ```swift
+nonisolated
 var colorMode: ColorRenderingMode { get set }
 ```
 

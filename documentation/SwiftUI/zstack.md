@@ -18,7 +18,7 @@ A view that overlays its subviews, aligning them in both axes.
 
 ```swift
 @frozen
-struct ZStack<Content> where Content : View
+nonisolated struct ZStack<Content> where Content : View
 ```
 
 ## Mentions

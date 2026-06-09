@@ -10,8 +10,6 @@ A dictionary that contains settings for accessibility.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - watchOS 10.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -23,7 +21,7 @@ object SettingsCommand.Command.Settings.AccessibilitySettings
 
 - `BoldTextEnabled` (boolean): If `true`, the system enables bold text.
 - `GrayscaleEnabled` (boolean): If `true`, the system enables grayscale display.
-- `IncreaseContrastEnabled` (boolean): If `true`, the system enables increase contrast.
+- `IncreaseContrastEnabled` (boolean): If `true`, the system enables increase contrast. Available: iOS 16+ | iPadOS 16+
 - `Item` (string) *(required)*: Sets various accessibility settings. The system allows only keys with explicitly provided values.
 - `ReduceMotionEnabled` (boolean): If `true`, the system enables reduced motion.
 - `ReduceTransparencyEnabled` (boolean): If `true`, the system enables reduced transparency.

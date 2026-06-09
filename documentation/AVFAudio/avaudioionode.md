@@ -28,9 +28,6 @@ In the manual rendering mode, [`AVAudioInputNode`](avaudioinputnode.md) and [`AV
 
 ## Topics
 
-### Getting the Audio Unit
-- [var audioUnit: AudioUnit?](avaudioionode/audiounit.md)
-  The node’s underlying audio unit, if any.
 ### Getting the I/O Latency
 - [var presentationLatency: TimeInterval](avaudioionode/presentationlatency.md)
   The presentation or hardware latency, applicable when rendering to or from an audio device.
@@ -39,6 +36,14 @@ In the manual rendering mode, [`AVAudioInputNode`](avaudioinputnode.md) and [`AV
   Enables or disables voice processing on the I/O node.
 - [var isVoiceProcessingEnabled: Bool](avaudioionode/isvoiceprocessingenabled.md)
   A Boolean value that indicates whether voice processing is in an enabled state.
+### Instance Properties
+- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1bqu3.md)
+- [var audioUnit: AudioUnit?](avaudioionode/audiounit-1caha.md)
+### Instance Methods
+- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](avaudioionode/withaudiounit(_:)-57kv.md)
+  Provides scoped access to the I/O node’s AudioUnit
+- [func withAudioUnit<R, E>((borrowing AudioUnit?) throws(E) -> R) throws(E) -> R](avaudioionode/withaudiounit(_:)-6i8ld.md)
+  Provides scoped access to the I/O node’s AudioUnit
 
 ## Relationships
 
@@ -54,6 +59,8 @@ In the manual rendering mode, [`AVAudioInputNode`](avaudioinputnode.md) and [`AV
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

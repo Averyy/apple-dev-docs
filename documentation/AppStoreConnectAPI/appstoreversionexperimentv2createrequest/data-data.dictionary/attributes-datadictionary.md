@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-Attributes that describe an app store version experiment v2create request resource.
+Attributes that describe an App Store version experiment create request resource.
 
 **Availability**:
 - App Store Connect API 2.4+

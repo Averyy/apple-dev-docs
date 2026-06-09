@@ -14,6 +14,10 @@ Init with label (required by RawRepresentable).
 init(rawValue: String)
 ```
 
+## Parameters
+
+- `rawValue`: The location name string.
+
 
 ---
 

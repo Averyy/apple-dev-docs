@@ -51,7 +51,7 @@ This method is equivalent to calling `randomElement(using:)`, passing in the sys
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-3kwny.md)
 - [subscript<R>(R) -> Self.SubSequence](array/subscript(_:)-4h7rl.md)
   Accesses the contiguous subrange of the collection’s elements specified by a range expression.
-- [subscript((UnboundedRange_) -> ()) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
+- [subscript(UnboundedRange) -> Self.SubSequence](array/subscript(_:)-3pmfg.md)
 - [func randomElement<T>(using: inout T) -> Self.Element?](array/randomelement(using:).md)
   Returns a random element of the collection, using the given generator as a source for randomness.
 

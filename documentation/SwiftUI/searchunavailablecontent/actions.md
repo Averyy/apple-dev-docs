@@ -17,13 +17,13 @@ A view that represents the actions of a static `ContentUnavailableView.search` v
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency struct Actions
+nonisolated
+struct Actions
 ```
 
 #### Overview
 
-You don’t create this type directly. SwiftUI creates it when you build a search[`ContentUnavailableView`](contentunavailableview.md).
+You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](contentunavailableview.md).
 
 ## Relationships
 

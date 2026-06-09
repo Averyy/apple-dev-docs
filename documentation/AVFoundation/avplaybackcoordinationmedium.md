@@ -3,20 +3,25 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
+The AVPlaybackCoordinationMedium passes states and messages between its connected playback coordinators.
+
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
 ```swift
 class AVPlaybackCoordinationMedium
 ```
+
+#### Overview
+
+The coordination medium passes states and messages from one playback coordinator to all other connected playback coordinators to enable coordination of rate changes and seeks. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 
 ## Topics
 
@@ -38,6 +43,8 @@ class AVPlaybackCoordinationMedium
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

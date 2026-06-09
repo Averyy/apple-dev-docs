@@ -12,11 +12,12 @@ The facial features of the detected face.
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
-var landmarks: FaceObservation.Landmarks2D? { get }
+var landmarks: FaceObservation.Landmarks2D?
 ```
 
 #### Discussion

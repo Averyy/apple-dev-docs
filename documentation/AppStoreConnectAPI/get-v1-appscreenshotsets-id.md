@@ -1,4 +1,4 @@
-# Read App Screenshot Set Information
+# Read app screenshot set information
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,10 +14,10 @@ Get an app screenshot set including its display target, language, and the screen
 
 ## Parameters
 
-- `fields[appScreenshotSets]` ([string])
-- `fields[appScreenshots]` ([string])
-- `include` ([string])
-- `limit[appScreenshots]` (integer)
+- `fields[appScreenshotSets]` ([string]): Additional fields to include for each app screenshot set resource returned by the response.
+- `fields[appScreenshots]` ([string]): Additional fields to include for each app screenshot resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
+- `limit[appScreenshots]` (integer): The maximum number of related app screenshots resources to return.
 - `fields[appCustomProductPageLocalizations]` ([string])
 - `fields[appStoreVersionExperimentTreatmentLocalizations]` ([string])
 - `fields[appStoreVersionLocalizations]` ([string])

@@ -10,7 +10,6 @@ Reports a new incoming conversation after your notification service extension de
 - iPadOS 17.4+
 - Mac Catalyst 17.4+
 - visionOS 1.1+
-- watchOS 10.4+
 
 ## Declaration
 

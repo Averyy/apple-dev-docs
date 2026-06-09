@@ -28,7 +28,7 @@ object GameCenterChallengeVersionsResponse
 - [object GameCenterChallengeVersionCreateRequest](gamecenterchallengeversioncreaterequest.md)
   The request body you use to create a challenge version.
 - [object GameCenterChallengeVersionResponse](gamecenterchallengeversionresponse.md)
-  A response that contains a single challenge version resource.
+  A response containing a single version of a Game Center challenge.
 
 
 ---

@@ -15,6 +15,7 @@ A built-in group of commands for searching, editing, and transforming selections
 ## Declaration
 
 ```swift
+nonisolated
 struct TextEditingCommands
 ```
 

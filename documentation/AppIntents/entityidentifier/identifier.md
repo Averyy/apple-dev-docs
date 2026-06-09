@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-Value uniquely identifying the entity instance within its type
+Value uniquely identifying the entity instance within its type.
 
 **Availability**:
 - iOS 16.0+

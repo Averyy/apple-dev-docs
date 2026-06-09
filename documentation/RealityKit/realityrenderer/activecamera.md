@@ -16,7 +16,7 @@ The camera to be used for rendering.
 ## Declaration
 
 ```swift
-var activeCamera: Entity?
+var activeCamera: Entity? { get set }
 ```
 
 

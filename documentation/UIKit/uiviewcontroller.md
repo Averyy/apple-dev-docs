@@ -469,6 +469,11 @@ For more information about how the system determines which view controllers to p
 ### Deprecated
 - [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
   Symbols that view controllers no longer support.
+### Instance Methods
+- [func registerSceneAccessory(UISceneAccessory) -> UISceneAccessoryRegistration](uiviewcontroller/registersceneaccessory(_:).md)
+  Registers a new scene accessory configuration associated with this view controller.
+- [func unregisterSceneAccessory(UISceneAccessoryRegistration)](uiviewcontroller/unregistersceneaccessory(_:).md)
+  Unregisters a scene accessory with the specified registration.
 
 ## Relationships
 

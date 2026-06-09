@@ -28,9 +28,6 @@ enum MessageComposeResult
   The user’s attempt to save or send the message was unsuccessful.
 ### Initializers
 - [init?(rawValue: Int)](messagecomposeresult/init(rawvalue:).md)
-### Default Implementations
-- [Equatable Implementations](messagecomposeresult/equatable-implementations.md)
-- [RawRepresentable Implementations](messagecomposeresult/rawrepresentable-implementations.md)
 
 ## Relationships
 

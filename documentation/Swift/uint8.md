@@ -141,6 +141,7 @@ struct UInt8
 - [BinaryInteger](binaryinteger.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CKRecordValueProtocol](../CloudKit/CKRecordValueProtocol.md)
+- [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
 - [Copyable](copyable.md)
@@ -163,6 +164,9 @@ struct UInt8
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 - [UnsignedInteger](unsignedinteger.md)
 - [vDSP_IntegerConvertable](../Accelerate/vDSP_IntegerConvertable.md)
 

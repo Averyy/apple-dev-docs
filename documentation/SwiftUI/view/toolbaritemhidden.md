@@ -44,6 +44,19 @@ struct ContentView {
 
 - `hidden`: Whether the view in a control group toolbar item is hidden.
 
+## See Also
+
+- [func toolbar<Content>(id: String, content: () -> Content) -> some View](view/toolbar(id:content:).md)
+  Populates the toolbar or navigation bar with the specified items, allowing for user customization.
+- [protocol CustomizableToolbarContent](customizabletoolbarcontent.md)
+  Conforming types represent items that can be placed in various locations in a customizable toolbar.
+- [struct ToolbarCustomizationBehavior](toolbarcustomizationbehavior.md)
+  The customization behavior of customizable toolbar content.
+- [struct ToolbarCustomizationOptions](toolbarcustomizationoptions.md)
+  Options that influence the default customization behavior of customizable toolbar content.
+- [struct SearchToolbarBehavior](searchtoolbarbehavior.md)
+  The behavior of a search field in a toolbar.
+
 
 ---
 

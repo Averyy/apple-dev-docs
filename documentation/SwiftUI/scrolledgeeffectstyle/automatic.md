@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The automatic scroll pocket style.
+A scroll edge effect the system applies automatically when pinned content overlaps scrolling content.
 
 **Availability**:
 - iOS 26.0+
@@ -19,6 +19,13 @@ The automatic scroll pocket style.
 ```swift
 static var automatic: ScrollEdgeEffectStyle { get }
 ```
+
+## See Also
+
+- [static var hard: ScrollEdgeEffectStyle](scrolledgeeffectstyle/hard.md)
+  A scroll edge effect that provides a linear, nearly opaque boundary between pinned controls and scrolling content.
+- [static var soft: ScrollEdgeEffectStyle](scrolledgeeffectstyle/soft.md)
+  A scroll edge effect that provides a subtle, blurred boundary between pinned controls and scrolling content.
 
 
 ---

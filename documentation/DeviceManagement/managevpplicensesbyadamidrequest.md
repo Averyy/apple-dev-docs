@@ -6,8 +6,7 @@
 The request to manage licenses.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.0+
 
 ## Declaration
 
@@ -32,7 +31,7 @@ Requests that exceed the current limits are rejected with the error code 9602 â€
 - `notifyDisassociation` (boolean): If `true`, sends notifications when licenses are disassociated. The default is `true`.
 - `pricingParam` (string): The quality of a product in the iTunes Store. The default is `STDQ`.  Possible values are: - `STDQ`: Standard quality
 - `PLUS`: High quality When assigning licenses for books, it is especially important to pass the correct `pricingParam` to the request, so the correct version of the product is assigned. The [`Get Assets`](get-assets-44p83.md) endpoint will return the correct `pricingParam` for the purchased version of the book. If an organization purchases both the standard-quality and high-quality versions of a book, [`Get Assets`](get-assets-44p83.md) will return two records with the same `adamId` but different pricingParams.
-- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authentication`](managing-apps-and-books-through-web-services-legacy#Authentication.md).
+- `sToken` (string) *(required)*: The authentication token. For more information, see [`Authenticate with the web service`](managing-apps-and-books-through-web-services-legacy#Authenticate-with-the-web-service.md).
 
 ## See Also
 

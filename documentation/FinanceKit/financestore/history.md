@@ -8,6 +8,7 @@ A structure the framework uses to collect and iterate over finance store model o
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

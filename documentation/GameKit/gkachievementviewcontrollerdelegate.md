@@ -6,6 +6,9 @@
 An object implementing the [`GKAchievementViewControllerDelegate`](gkachievementviewcontrollerdelegate.md) protocol is called when the user dismisses the achievements view controller. Typically, this protocol is implemented by the object in your game that originally displayed the achievements user interface.
 
 **Availability**:
+- iOS 4.1+
+- iPadOS 4.1+
+- Mac Catalyst 4.1+
 - macOS 10.8+
 - visionOS 1.0+
 

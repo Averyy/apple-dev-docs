@@ -134,6 +134,10 @@ Not all services are available on all devices, and some services might be unavai
 ### Common data
 - [class CMLogItem](cmlogitem.md)
   The base class for all motion-related data objects.
+### Classes
+- [class CMRecordedDeviceMotion](cmrecordeddevicemotion.md)
+### Protocols
+- [protocol CMBodyIdentifiable](cmbodyidentifiable.md)
 
 
 ---

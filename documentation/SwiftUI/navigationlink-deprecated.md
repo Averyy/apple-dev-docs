@@ -10,7 +10,7 @@ For information about updating your use of navigation symbols, see [`Migrating t
 
 ## Topics
 
-### Creating links with view builders
+### Creating links with content builders
 - [init(_:isActive:destination:)](navigationlink/init(_:isactive:destination:).md)
   Creates a navigation link that presents a destination view when active, with a text label that the link generates from a localized string key.
 - [init(isActive: Binding<Bool>, destination: () -> Destination, label: () -> Label)](navigationlink/init(isactive:destination:label:).md)

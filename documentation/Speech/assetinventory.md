@@ -45,23 +45,24 @@ When your app no longer needs assets for a particular locale, call [`release(res
 ### Downloading and installing assets
 - [static func assetInstallationRequest(supporting: [any SpeechModule]) async throws -> AssetInstallationRequest?](assetinventory/assetinstallationrequest(supporting:).md)
   Returns an installation request object, which is used to initiate the asset download and monitor its progress.
+### Managing allocations
+- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
+  Add an asset locale to the app’s current reservations.
+- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
+  Removes an asset locale reservation.
+- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
+  The app’s current asset locale reservations.
+- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
+  The number of locale reservations permitted to an app.
 ### Checking asset status
 - [static func status(forModules: [any SpeechModule]) async -> AssetInventory.Status](assetinventory/status(formodules:).md)
   Returns the status for the list of modules.
 - [AssetInventory.Status](assetinventory/status.md)
-### Type Properties
-- [static var maximumReservedLocales: Int](assetinventory/maximumreservedlocales.md)
-  The number of locale reservations permitted to an app.
-- [static var reservedLocales: [Locale]](assetinventory/reservedlocales.md)
-  The app’s current asset locale reservations.
-### Type Methods
-- [static func release(reservedLocale: Locale) async -> Bool](assetinventory/release(reservedlocale:).md)
-  Removes an asset locale reservation.
-- [static func reserve(locale: Locale) async throws -> Bool](assetinventory/reserve(locale:).md)
-  Add an asset locale to the app’s current reservations.
 
 ## See Also
 
+- [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
+  Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)
   Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 - [actor SpeechAnalyzer](speechanalyzer.md)

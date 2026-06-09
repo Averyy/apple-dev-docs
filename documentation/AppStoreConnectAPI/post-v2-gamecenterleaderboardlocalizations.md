@@ -38,7 +38,7 @@ Create a Game Center leaderboard localization.
   Get information about a leaderboard localization.
 - [Read the Image for a Leaderboard Localization](get-v1-gamecenterleaderboardlocalizations-_id_-gamecenterleaderboardimage.md)
   Get information about the image associated with a leaderboard localization.
-- [GET /v1/gameCenterLeaderboardLocalizations/{id}/relationships/gameCenterLeaderboardImage](get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)
+- [Get the leaderboard image ID for a Game Center leaderboard localization](get-v1-gamecenterleaderboardlocalizations-_id_-relationships-gamecenterleaderboardimage.md)
 - [Create a Leaderboard Localization](post-v1-gamecenterleaderboardlocalizations.md)
   Add a new leaderboard localization.
 - [Modify a Leaderboard Localization](patch-v1-gamecenterleaderboardlocalizations-_id_.md)

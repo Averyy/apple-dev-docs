@@ -18,13 +18,13 @@ Get information about a specific accessibility declaration.
 
 ## Parameters
 
-- `fields[accessibilityDeclarations]` ([string])
+- `fields[accessibilityDeclarations]` ([string]): Additional fields to include for each accessibility declarations resource returned by the response.
 
 ## See Also
 
 - [List All Accessibility Declarations for an App](get-v1-apps-_id_-accessibilitydeclarations.md)
   Get a list of the accessibility declarations for a specific app.
-- [GET /v1/apps/{id}/relationships/accessibilityDeclarations](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
+- [List accessibility declaration IDs for an app](get-v1-apps-_id_-relationships-accessibilitydeclarations.md)
 - [Create an Accessibility Declaration](post-v1-accessibilitydeclarations.md)
   Add an accessibility declaration for a specific app.
 - [Modify an Accessibility Declaration](patch-v1-accessibilitydeclarations-_id_.md)

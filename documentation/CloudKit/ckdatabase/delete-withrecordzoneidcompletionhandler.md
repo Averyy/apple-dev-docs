@@ -17,7 +17,7 @@ Deletes a specific record zone.
 ## Declaration
 
 ```swift
-func deleteRecordZone(withID zoneID: CKRecordZone.ID) async throws -> CKRecordZone.ID
+func delete(withRecordZoneID zoneID: CKRecordZone.ID) async throws -> CKRecordZone.ID
 ```
 
 #### Discussion

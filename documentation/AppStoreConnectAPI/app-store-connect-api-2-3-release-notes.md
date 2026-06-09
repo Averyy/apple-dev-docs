@@ -6,10 +6,10 @@ Update your server-side code to use new features, and test your code against API
 
 ##### New Features
 
-- Getting an app’s price points and [`List All Price Points for an In-App Purchase`](get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
+- Getting an app’s price points and [`List all price points for an in-app purchase`](get-v2-inapppurchases-_id_-pricepoints.md) now support 900 price points.
 - [`List App Price Point Equalizations`](get-v3-apppricepoints-_id_-equalizations.md) allows for setting equalized prices.
 - Getting and managing an app’s price schedules   and [`In-App purchase price schedules`](in-app-purchase-price-schedules.md) support automatic prices, manual prices, and base territory configuration.
-- Getting and managing an app’s availability, [`In-app purchase availability`](in-app-purchase-availability.md) and [`Subscription availability`](subscription-availability.md) supports configuring availabilty for apps, in-app purchases, and subscriptions.
+- Getting and managing an app’s availability, [`In-app purchase availability`](in-app-purchase-availability.md) and [`Subscription availability`](subscription-availability.md) supports configuring availability for apps, in-app purchases, and subscriptions.
 
 ##### Deprecations
 
@@ -28,6 +28,8 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -55,8 +57,6 @@ On May 9, 2023, pricing for your existing apps and in-app purchases (excluding a
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

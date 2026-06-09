@@ -9,7 +9,6 @@ The electricity consumption of a device.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 
@@ -19,8 +18,8 @@ let measurement: ElectricHVACLoadEvent.ElectricalMeasurement
 
 ## See Also
 
-- [let deviceID: String](electrichvacloadevent/deviceid.md)
-  The device’s unique stable identifier.
+- [ElectricHVACLoadEvent.ElectricalMeasurement](electrichvacloadevent/electricalmeasurement.md)
+  A description of the electricity consumed by a device.
 
 
 ---

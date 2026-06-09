@@ -17,6 +17,7 @@ Creates an icon-only label style.
 ## Declaration
 
 ```swift
+nonisolated
 init()
 ```
 

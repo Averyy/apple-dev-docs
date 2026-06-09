@@ -6,12 +6,11 @@
 Associate assets with client user IDs and serial numbers.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Mentions
 
-- [Upgrading to the new App and Book Management API](upgrading-to-the-new-app-and-book-management-api.md)
+- [Upgrading to the new management API](upgrading-to-the-new-management-api.md)
 
 #### Discussion
 

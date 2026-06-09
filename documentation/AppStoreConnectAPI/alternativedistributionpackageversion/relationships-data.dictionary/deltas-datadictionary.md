@@ -16,6 +16,7 @@ object AlternativeDistributionPackageVersion.Relationships.Deltas
 
 ### Objects
 - [object AlternativeDistributionPackageVersion.Relationships.Deltas.Data](alternativedistributionpackageversion/relationships-data.dictionary/deltas-data.dictionary/data-data.dictionary.md)
+  The request body you use to update an alternative distribution package version.
 
 ## Properties
 

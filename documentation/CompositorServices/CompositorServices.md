@@ -50,6 +50,8 @@ For more information about how to draw your app’s content using Metal, see [`M
 ### Structures
 - [struct TextureTopology](texturetopology.md)
   A type that specifies the organization of one of the drawable’s textures.
+### Variables
+- [var CP_ARKIT_AVAILABLE: Bool](cp_arkit_available.md)
 ### Type Aliases
 - [typealias cp_drawable_array_t](cp_drawable_array_t.md)
   An opaque type that contains the drawable types and other information you need to set up your render pipeline.

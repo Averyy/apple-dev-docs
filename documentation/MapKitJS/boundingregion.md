@@ -45,10 +45,16 @@ Similar to a [`CoordinateRegion`](coordinateregion.md), [`BoundingRegion`](bound
 
 - [class Coordinate](coordinate.md)
   An object representing the latitude and longitude for a point on the Earth’s surface.
+- [interface CoordinateData](coordinatedata.md)
+  A plain object representation of a coordinate.
 - [class CoordinateRegion](coordinateregion.md)
   A rectangular area on a map that a center coordinate and a span define, in degrees of latitude and longitude.
+- [interface CoordinateRegionData](coordinateregiondata.md)
+  A plain object representation of a coordinate region.
 - [class CoordinateSpan](coordinatespan.md)
   The width and height of a map region.
+- [interface CoordinateSpanData](coordinatespandata.md)
+  A plain object representation of a coordinate span.
 
 
 ---

@@ -1,4 +1,4 @@
-# Read the App Clip Card Image
+# Read the app clip card image
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,17 +14,17 @@ Get the image that appears on the App Clip card of a default App Clip experience
 
 ## Parameters
 
-- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each App Clip Header Images resource returned by the response.
+- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each app clip header image resource returned by the response.
 - `include` ([string]): The relationship data to include in the response.
 - `fields[appClipDefaultExperienceLocalizations]` ([string])
 
 ## See Also
 
-- [Create an App Clip Card Image for a Default App Clip Experience](post-v1-appclipheaderimages.md)
+- [Create an app clip card image for a default app clip experience](post-v1-appclipheaderimages.md)
   Reserve an image asset that appears on the App Clip card of a default App Clip experience.
-- [Modify an App Clip Card Image](patch-v1-appclipheaderimages-_id_.md)
+- [Modify an app clip card image](patch-v1-appclipheaderimages-_id_.md)
   Change the image that appears on the App Clip card of a default App Clip experience.
-- [Delete a Default App Clip Experience Image](delete-v1-appclipheaderimages-_id_.md)
+- [Delete a default app clip experience image](delete-v1-appclipheaderimages-_id_.md)
   Delete the image asset that appears on the App Clip card for a default App Clip experience.
 
 

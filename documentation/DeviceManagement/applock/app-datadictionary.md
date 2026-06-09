@@ -10,8 +10,6 @@ The only app available for use on the iOS device.
 - iPadOS 6.0+
 - Mac Catalyst 6.0+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -30,8 +28,8 @@ object AppLock.App
 ## Properties
 
 - `Identifier` (string) *(required)*: The app’s bundle identifier.
-- `Options` (AppLock.App.Options): A dictionary of options that the user can’t change.
-- `UserEnabledOptions` (AppLock.App.UserEnabledOptions): A dictionary of user-editable options.
+- `Options` (AppLock.App.Options): A dictionary of options that the user can’t change. Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+
+- `UserEnabledOptions` (AppLock.App.UserEnabledOptions): A dictionary of user-editable options. Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+
 
 
 ---

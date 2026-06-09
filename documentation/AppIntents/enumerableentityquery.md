@@ -20,10 +20,6 @@ An interface you use to provide a short list of entities that are relatively sma
 protocol EnumerableEntityQuery : EntityQuery
 ```
 
-## Mentions
-
-- [Integrating custom data types into your intents](integrating-custom-types-into-your-intents.md)
-
 #### Overview
 
 By implementing an `EnumerableEntityQuery`, you enable the Shortcuts app to generate a Find action and do filtering automatically. Use it in cases where the count of entities is relatively small, and their size in memory is limited. For situations where there may be many thousands of entities, or where individual entities may become large in memory usage, use [`EntityPropertyQuery`](entitypropertyquery.md) to allow better performance by fetching only the entities matching the criteria from your model.
@@ -53,7 +49,9 @@ By implementing an `EnumerableEntityQuery`, you enable the Shortcuts app to gene
 ## See Also
 
 - [protocol EntityQuery](entityquery.md)
-  An interface for locating entities using their identifiers.
+  An interface for locating app entity instances by identifier.
+- [protocol IndexedEntityQuery](indexedentityquery.md)
+  An interface that adds Spotlight reindexing support to your entity query.
 
 
 ---

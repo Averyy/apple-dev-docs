@@ -18,6 +18,10 @@ Because this sample app has hardware requirements, it won’t run in Simulator. 
 
 ## See Also
 
+- [Preparing spatial accessories for tracking in your visionOS app](preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
+  Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Use generic spatial accessories to track purpose-built devices in your visionOS app.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
 - [struct Accessory](accessory.md)

@@ -96,6 +96,9 @@ print(String(s1.utf8.prefix(15))!)
   A custom playground Quick Look for this instance.
 - [var span: Span<UTF8.CodeUnit>](string/utf8view/span.md)
   A span over the UTF8 code units that make up this string.
+### Instance Methods
+- [func isTriviallyIdentical(to: String.UTF8View) -> Bool](string/utf8view/istriviallyidentical(to:).md)
+  Returns a boolean value indicating whether this UTF8 view is trivially identical to `other`.
 ### Default Implementations
 - [BidirectionalCollection Implementations](string/utf8view/bidirectionalcollection-implementations.md)
 - [Collection Implementations](string/utf8view/collection-implementations.md)

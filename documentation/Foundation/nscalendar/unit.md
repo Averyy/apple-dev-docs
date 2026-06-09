@@ -41,6 +41,7 @@ Calendar units may be used as a bit mask to specify a combination of units. Valu
 - [static var month: NSCalendar.Unit](nscalendar/unit/month.md)
   Identifier for the month unit.
 - [static var isLeapMonth: NSCalendar.Unit](nscalendar/unit/isleapmonth.md)
+  Identifier for the time zone of a date components object.
 ### Specifying Weeks and Days
 - [static var weekOfYear: NSCalendar.Unit](nscalendar/unit/weekofyear.md)
   Identifier for the week of the year calendar unit.
@@ -53,7 +54,9 @@ Calendar units may be used as a bit mask to specify a combination of units. Valu
 - [static var day: NSCalendar.Unit](nscalendar/unit/day.md)
   Identifier for the day unit.
 - [static var dayOfYear: NSCalendar.Unit](nscalendar/unit/dayofyear.md)
+  Identifier for the nanosecond unit.
 - [static var isRepeatedDay: NSCalendar.Unit](nscalendar/unit/isrepeatedday.md)
+  Identifier for the time zone of a date components object.
 ### Specifying Hours, Minutes, and Seconds
 - [static var hour: NSCalendar.Unit](nscalendar/unit/hour.md)
   Identifier for the hour unit.

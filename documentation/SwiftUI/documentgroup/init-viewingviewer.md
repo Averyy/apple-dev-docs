@@ -16,7 +16,7 @@ Creates a document group capable of viewing file documents.
 
 ```swift
 nonisolated
-init(viewing documentType: Document.Type, @ViewBuilder viewer: @escaping (FileDocumentConfiguration<Document>) -> Content)
+init(viewing documentType: Document.Type, @ContentBuilder viewer: @escaping (FileDocumentConfiguration<Document>) -> Content)
 ```
 
 #### Discussion
@@ -33,6 +33,8 @@ struct MyApp: App {
     }
 }
 ```
+
+With the `viewing:` initializer, SwiftUI considers your app as a viewer for given content types (readable content types declared on the document type). No File > New menu item is added on macOS, no New Document button appears in the iOS document browser, and the [`isEditable`](filedocumentconfiguration/iseditable.md) property is `false`, preventing accidental writes. Use the [`init(newDocument:editor:)`](documentgroup/init(newdocument:editor:).md) initializer instead if your app needs to create or edit documents.
 
 You tell the system about the app’s role with respect to the document type by setting the [`CFBundleTypeRole`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/CFBundleDocumentTypes/CFBundleTypeRole) `Info.plist` key with a value of `Viewer`.
 

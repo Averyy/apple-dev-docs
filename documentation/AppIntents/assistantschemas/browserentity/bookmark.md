@@ -45,16 +45,7 @@ struct BookmarkEntity: AppEntity {
 }
 ```
 
-For more information about the `.browser` app intent domain, see [`Making browser actions available to Siri and Apple Intelligence`](making-browser-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
-  The app entity describes a browser tab.
-- [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
-  The app entity describes a browser window.
-- [AssistantSchemas.BrowserEntity](assistantschemas/browserentity.md)
-  Assistant schema conformance for app entities that describe data for web browsing functionality.
+For more information about the `.browser` app intent domain, see doc:Making-browser-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

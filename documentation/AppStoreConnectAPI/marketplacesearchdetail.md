@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents an alternative marketplace search detail resource.
+The search configuration for an alternative marketplace, specifying how apps are indexed and surfaced in search.
 
 **Availability**:
 - App Store Connect API 3.3+
@@ -18,6 +18,7 @@ object MarketplaceSearchDetail
 
 ### Objects
 - [object MarketplaceSearchDetail.Attributes](marketplacesearchdetail/attributes-data.dictionary.md)
+  Attributes that describe a marketplace search detail resource.
 
 ## Properties
 
@@ -31,7 +32,7 @@ object MarketplaceSearchDetail
 - [object MarketplaceSearchDetailCreateRequest](marketplacesearchdetailcreaterequest.md)
   The request body you use to create an alternative marketplace search detail.
 - [object MarketplaceSearchDetailResponse](marketplacesearchdetailresponse.md)
-  A response that contains a single alternative marketplace search detail resource.
+  A response containing the search configuration for a single alternative marketplace.
 - [object MarketplaceSearchDetailUpdateRequest](marketplacesearchdetailupdaterequest.md)
   The request body you use to update an alternative marketplace search detail.
 - [object AppMarketplaceSearchDetailLinkageResponse](appmarketplacesearchdetaillinkageresponse.md)

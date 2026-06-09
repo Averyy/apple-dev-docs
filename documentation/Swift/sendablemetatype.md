@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: protocol
 
-A type whose metatype can be shared across arbitrary concurrent contexts without introducing a risk of data races.
+A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
 
 **Availability**:
 - iOS 8.0+
@@ -272,6 +272,9 @@ The `Sendable` protocol inherits from `SendableMetatype`, so any generic type `T
 - [Never](never.md)
 - [ObjectIdentifier](objectidentifier.md)
 - [ObservationRegistrar](../observation/observationregistrar.md)
+- [ObservationTracking](../observation/observationtracking.md)
+- [ObservationTracking.Event.Kind](../observation/observationtracking/event/kind-swift.struct.md)
+- [ObservationTracking.Options](../observation/observationtracking/options.md)
 - [Observations](../observation/observations.md)
 - [Observations.Iteration](../observation/observations/iteration.md)
 - [Optional](optional.md)

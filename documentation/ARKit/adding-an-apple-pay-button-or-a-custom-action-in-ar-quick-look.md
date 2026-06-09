@@ -131,6 +131,7 @@ If your banner displays an Apple Messages for Business button, send the user to 
   Display a model or scene that the user can move, scale, and share with others.
 - [Adding Visual Effects in AR Quick Look and RealityKit](adding-visual-effects-in-ar-quick-look-and-realitykit.md)
   Balance the appearance and performance of your AR experiences with modeling strategies.
+- [class ARQuickLookPreviewItem](../QuickLook/ARQuickLookPreviewItem.md)
 - [OpenUSD schemas for AR](../USD/usd-schemas-for-ar.md)
   Add augmented reality functionality to your 3D content using USD schemas.
 - [Specifying a lighting environment in AR Quick Look](specifying-a-lighting-environment-in-ar-quick-look.md)

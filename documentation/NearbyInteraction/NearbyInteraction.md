@@ -73,6 +73,8 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
   Establish a connection with a nearby accessory to receive periodic measurements of its distance from the user.
 - [class NINearbyAccessoryConfiguration](ninearbyaccessoryconfiguration.md)
   A configuration that enables interaction between iPhone and third-party accessories.
+- [enum NIMotionActivityState](nimotionactivitystate.md)
+  Motion states for a nearby accessory.
 ### Periodic updates
 - [class NINearbyObject](ninearbyobject.md)
   Location information for a peer device in an interaction session.
@@ -87,7 +89,7 @@ In iOS 18.4 and later, your app can continue ranging in the background with any 
   The possible states of Camera Assistance.
 - [Algorithm Convergence Status](algorithm-convergence-status.md)
   The possible Objective-C states of Camera Assistance.
-### DL-TDoA ranging
+### DL-TDOA ranging
 - [Downlink time difference of arrival ranging](dl-tdoa-ranging.md)
   Use anchor devices to improve the accuracy of indoor positioning.
 ### Errors

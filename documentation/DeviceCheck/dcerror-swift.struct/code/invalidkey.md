@@ -26,6 +26,7 @@ You receive this error if something goes wrong with generating, retrieving, or u
 
 - You call [`attestKey(_:clientDataHash:completionHandler:)`](dcappattestservice/attestkey(_:clientdatahash:completionhandler:).md) for a key that’s already been attested.
 - You call [`generateAssertion(_:clientDataHash:completionHandler:)`](dcappattestservice/generateassertion(_:clientdatahash:completionhandler:).md) with an unattested key.
+- The App Attest service cannot enforce the key access control policy on macOS.
 - The App Attest service rejects the key.
 
 ## See Also

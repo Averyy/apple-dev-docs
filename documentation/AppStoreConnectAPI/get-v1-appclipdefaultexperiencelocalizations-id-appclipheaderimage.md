@@ -1,4 +1,4 @@
-# Read App Clip Card Image Information for a Localized Default App Clip Experience
+# Read app clip card image information for a localized default app clip experience
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -14,15 +14,15 @@ Get the image that appears on the App Clip card, specific to a locale, for a def
 
 ## Parameters
 
-- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each App Clip Header Images resource returned by the response.
-- `fields[appClipDefaultExperienceLocalizations]` ([string])
-- `include` ([string])
+- `fields[appClipHeaderImages]` ([string]): Additional fields to include for each app clip header image resource returned by the response.
+- `fields[appClipDefaultExperienceLocalizations]` ([string]): Additional fields to include for each default App Clip experience localization resource returned by the response.
+- `include` ([string]): The relationship data to include in the response.
 
 ## See Also
 
-- [Read Localization Information of a Default App Clip Experience](get-v1-appclipdefaultexperiencelocalizations-_id_.md)
+- [Read localization information of a default app clip experience](get-v1-appclipdefaultexperiencelocalizations-_id_.md)
   Get localized metadata that appears on the App Clip card of a specific default App Clip experience.
-- [GET /v1/appClipDefaultExperienceLocalizations/{id}/relationships/appClipHeaderImage](get-v1-appclipdefaultexperiencelocalizations-_id_-relationships-appclipheaderimage.md)
+- [Get the header image ID for an App Clip default experience localization](get-v1-appclipdefaultexperiencelocalizations-_id_-relationships-appclipheaderimage.md)
 
 
 ---

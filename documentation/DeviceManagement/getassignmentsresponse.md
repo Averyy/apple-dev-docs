@@ -6,8 +6,7 @@
 The paginated response that contains requested assignments.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,8 +16,8 @@ object GetAssignmentsResponse
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
-- [Managing Assets](managing-assets.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
+- [Managing assets](managing-assets.md)
 
 ## Topics
 

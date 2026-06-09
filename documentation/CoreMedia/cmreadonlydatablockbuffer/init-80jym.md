@@ -3,8 +3,6 @@
 **Framework**: Core Media  
 **Kind**: init
 
-Create a new block buffer referencing bytes from DispatchData. DispatchData objects consisting of multiple regions will produce a non-contiguous block buffer with each dispatch data region corresponding to a region in the block buffer.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

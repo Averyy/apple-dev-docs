@@ -159,7 +159,15 @@ All In-App Purchases that customers make are equally available to your app in th
 - [Transaction.RevocationType](transaction/revocationtype-swift.struct.md)
 ### Instance Properties
 - [let billingPlanType: SubscriptionInfo.BillingPlanType?](transaction/billingplantype.md)
+- [var bundleOriginalTransactionID: String?](transaction/bundleoriginaltransactionid.md)
+- [var bundleProductID: String?](transaction/bundleproductid.md)
+  Identifies the bundle product the transaction is for. If this transaction is created as a result of a subscription bundle purchase or renewal, this field will be populated with the product ID of the bundle.
+- [var bundleSubscriptionGroupID: String?](transaction/bundlesubscriptiongroupid.md)
+  Identifies the subscription bundle group the transaction is for.
+- [var bundleTransactionID: String?](transaction/bundletransactionid.md)
 - [let commitmentInfo: Transaction.CommitmentInfo?](transaction/commitmentinfo-swift.property.md)
+- [var previousOriginalTransactionID: UInt64?](transaction/previousoriginaltransactionid.md)
+  The original transaction ID of the subscription this one replaced when a customer switched between a standalone auto-renewable subscription and a subscription bundle (in either direction).
 - [var revocationPercentage: Decimal?](transaction/revocationpercentage.md)
   The percentage of the transaction amount that the App Store has refunded or revoked, expressed as a decimal.
 - [let revocationType: Transaction.RevocationType?](transaction/revocationtype-swift.property.md)

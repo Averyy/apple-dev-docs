@@ -3,7 +3,7 @@
 **Framework**: Foundation  
 **Kind**: property
 
-A Boolean value that determines whether Siri can suggest the user activity as a shortcut to the user.
+A Boolean value that determines whether Siri can suggest the activity as a shortcut.
 
 **Availability**:
 - iOS 12.0+
@@ -20,14 +20,20 @@ var isEligibleForPrediction: Bool { get set }
 
 #### Discussion
 
-To donate a user activity to Siri Shortcuts, set [`isEligibleForPrediction`](nsuseractivity/iseligibleforprediction.md) to [`true`](https://developer.apple.com/documentation/Swift/true) and make the user activity current. To make the user activity current, call the activity’s [`becomeCurrent()`](nsuseractivity/becomecurrent().md) method, or assign it to the [`userActivity`](https://developer.apple.com/documentation/UIKit/UIResponder/userActivity) property on a [`UIViewController`](https://developer.apple.com/documentation/UIKit/UIViewController) or [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) object. For more information, see [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts).
+If you aren’t yet using App Intents, set the value of this property to `true` if you want the system to suggest the activity as a shortcut. When the activity object is current, or associated with a view or responder in your app’s interface, the system includes the shortcut in places like Spotlight search and the Lock Screen. Set this property to `false` if you’re already donating App Intents to the system or want to prevent the generation of shortcuts for the activity. The default value of this property is `false`.
+
+For information on how to generate shortcuts using SiriKit and activity objects, see [`Donating Shortcuts`](https://developer.apple.com/documentation/SiriKit/donating-shortcuts).
 
 ## See Also
 
-- [var suggestedInvocationPhrase: String?](nsuseractivity/suggestedinvocationphrase.md)
-  A phrase suggested to the user when they create a shortcut.
-- [var shortcutAvailability: INShortcutAvailabilityOptions](nsuseractivity/shortcutavailability.md)
-  A set of defined contexts in which an intent or activity might be relevant to a user.
+- [var isEligibleForHandoff: Bool](nsuseractivity/iseligibleforhandoff.md)
+  A Boolean value that indicates whether the activity can continue on another device using Handoff.
+- [var isEligibleForSearch: Bool](nsuseractivity/iseligibleforsearch.md)
+  A Boolean value that indicates whether to add the activity to the on-device index.
+- [var isEligibleForPublicIndexing: Bool](nsuseractivity/iseligibleforpublicindexing.md)
+  A Boolean value that indicates whether the activity is publicly accessible by all iOS users.
+- [var expirationDate: Date?](nsuseractivity/expirationdate.md)
+  The date after which the activity is no longer eligible for Handoff or indexing.
 
 
 ---

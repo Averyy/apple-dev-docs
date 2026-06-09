@@ -37,7 +37,7 @@ Calling this method invalidates any existing indices for use with this dictionar
 
 ## See Also
 
-- [func filter((Dictionary<Key, Value>.Element) throws -> Bool) rethrows -> [Key : Value]](dictionary/filter(_:).md)
+- [func filter<E>((Dictionary<Key, Value>.Element) throws(E) -> Bool) throws(E) -> [Key : Value]](dictionary/filter(_:).md)
   Returns a new dictionary containing the key-value pairs of the dictionary that satisfy the given predicate.
 - [func removeValue(forKey: Key) -> Value?](dictionary/removevalue(forkey:).md)
   Removes the given key and its associated value from the dictionary.

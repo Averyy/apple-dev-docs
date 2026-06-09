@@ -18,7 +18,7 @@ Adds multiple accessibility actions to the view.
 
 ```swift
 nonisolated
-func accessibilityActions<Content>(@ViewBuilder _ content: () -> Content) -> some View where Content : View
+func accessibilityActions<Content>(@ContentBuilder _ content: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

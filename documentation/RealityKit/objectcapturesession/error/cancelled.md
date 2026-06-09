@@ -8,6 +8,7 @@ The user requested that the session be canceled and the session is now canceled.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

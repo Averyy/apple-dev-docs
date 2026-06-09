@@ -9,8 +9,6 @@ A dictionary that contains voice roaming settings.
 - iOS 5.0+
 - iPadOS 5.0+
 - Mac Catalyst 5.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -20,8 +18,8 @@ object SettingsCommand.Command.Settings.VoiceRoaming
 
 ## Properties
 
-- `Enabled` (boolean) *(required)*: If `true`, enable voice roaming. If `false`, disable voice roaming, which also disables data roaming. The setting is only available for certain carriers.
-- `Item` (string) *(required)*: A string that identifies this setting.
+- `Enabled` (boolean) *(required)*: If `true`, enable voice roaming. If `false`, disable voice roaming, which also disables data roaming. The setting is only available for certain carriers. Deprecated: iOS 16+ | iPadOS 16+
+- `Item` (string) *(required)*: A string that identifies this setting. Deprecated: iOS 16+ | iPadOS 16+
 
 ## See Also
 

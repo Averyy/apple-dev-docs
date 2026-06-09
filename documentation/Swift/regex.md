@@ -96,7 +96,7 @@ When you import the `RegexBuilder` module, you can also create `Regex` instances
   Returns the first match for this regex found in the given substring.
 - [func firstMatch(in: String) throws -> Regex<Output>.Match?](regex/firstmatch(in:)-6s8x0.md)
   Returns the first match for this regex found in the given string.
-- [func ignoresCase(Bool) -> Regex<Regex<Output>.RegexOutput>](regex/ignorescase(_:).md)
+- [func ignoresCase(Bool) -> Regex<Output>](regex/ignorescase(_:).md)
   Returns a regular expression that ignores case when matching.
 - [func matchingSemantics(RegexSemanticLevel) -> Regex<Regex<Output>.RegexOutput>](regex/matchingsemantics(_:).md)
   Returns a regular expression that matches with the specified semantic level.

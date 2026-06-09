@@ -30,14 +30,14 @@ struct HandSkeleton
   A hand pose that you can use as a reference.
 - [var description: String](handskeleton/description.md)
   A textual representation of this Skeleton.
+### Default Implementations
+- [Equatable Implementations](handskeleton/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

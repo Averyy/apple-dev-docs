@@ -22,13 +22,10 @@ static var didEnterBackground: NotificationCenter.BaseMessageIdentifier<UIApplic
 - [static var didBecomeActive: NotificationCenter.BaseMessageIdentifier<UIApplication.DidBecomeActiveMessage>](notificationcenter/messageidentifier/didbecomeactive-2hcfs.md)
 - [static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<UIApplication.WillEnterForegroundMessage>](notificationcenter/messageidentifier/willenterforeground-95zi8.md)
 - [static var willResignActive: NotificationCenter.BaseMessageIdentifier<UIApplication.WillResignActiveMessage>](notificationcenter/messageidentifier/willresignactive-4rf2p.md)
-- [static var willTerminate: NotificationCenter.BaseMessageIdentifier<UIApplication.WillTerminateMessage>](notificationcenter/messageidentifier/willterminate.md)
 - [static var didReceiveMemoryWarning: NotificationCenter.BaseMessageIdentifier<UIApplication.DidReceiveMemoryWarningMessage>](notificationcenter/messageidentifier/didreceivememorywarning.md)
 - [static var significantTimeChange: NotificationCenter.BaseMessageIdentifier<UIApplication.SignificantTimeChangeMessage>](notificationcenter/messageidentifier/significanttimechange.md)
 - [static var backgroundRefreshStatusDidChange: NotificationCenter.BaseMessageIdentifier<UIApplication.BackgroundRefreshStatusDidChangeMessage>](notificationcenter/messageidentifier/backgroundrefreshstatusdidchange.md)
 - [static var userDidTakeScreenshot: NotificationCenter.BaseMessageIdentifier<UIApplication.UserDidTakeScreenshotMessage>](notificationcenter/messageidentifier/userdidtakescreenshot.md)
-- [static var protectedDataDidBecomeAvailable: NotificationCenter.BaseMessageIdentifier<UIApplication.ProtectedDataDidBecomeAvailableMessage>](notificationcenter/messageidentifier/protecteddatadidbecomeavailable.md)
-- [static var protectedDataWillBecomeUnavailable: NotificationCenter.BaseMessageIdentifier<UIApplication.ProtectedDataWillBecomeUnavailableMessage>](notificationcenter/messageidentifier/protecteddatawillbecomeunavailable.md)
 
 
 ---

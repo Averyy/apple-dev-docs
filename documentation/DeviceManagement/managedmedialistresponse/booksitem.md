@@ -9,8 +9,6 @@ A dictionary that describes a managed book.
 - iOS 8.0+
 - iPadOS 8.0+
 - Mac Catalyst 8.0+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,7 +23,7 @@ object ManagedMediaListResponse.BooksItem
 - `Kind` (string): The kind of the media, which is one of the following values: - `pdf`: A PDF file
 - `epub`: An EPUB file in `gzip` format
 - `ibooks`: An iBooks Author file in `gzip` format
-- The file extension in the URL This value is available in iOS 8 and later.
+- The file extension in the URL
 - `PersistentID` (string): The book’s persistent identifier in reverse-DNS form; for example, `com.acme.manuals.training`.
 - `State` (string): The installation state of this book, which is one of the following values: - `Queued`
 - `PromptingForLogin`

@@ -8,6 +8,7 @@ A maximum number of alarms is already scheduled.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

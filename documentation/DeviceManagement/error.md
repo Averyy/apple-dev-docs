@@ -6,8 +6,7 @@
 Information about an error that occurred while processing a request.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.1+
 
 ## Declaration
 
@@ -29,11 +28,6 @@ object Error
 - `source` (Error.Source): An object containing a reference to the source of the error.
 - `status` (string) *(required)*: The HTTP status code the error maps to.
 - `title` (string) *(required)*: A developer-friendly title for the error.
-
-## See Also
-
-- [Interpreting HTTP status codes](interpreting-http-status-codes.md)
-  Interpret error codes the API might return when executing a request.
 
 
 ---

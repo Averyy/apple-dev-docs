@@ -18,6 +18,8 @@ class let willBeginSheetNotification: NSNotification.Name
 
 The notification object is the `NSWindow` object that’s about to open the sheet. This notification doesn’t contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSWindow.WillBeginSheetMessage`](nswindow/willbeginsheetmessage.md).
+
 ## See Also
 
 - [class let didBecomeKeyNotification: NSNotification.Name](nswindow/didbecomekeynotification.md)

@@ -23,6 +23,10 @@ A description of this instance to use when presenting it in a test’s output.
 var testDescription: String { get }
 ```
 
+## Mentions
+
+- [Describing and reflecting values](describing-values.md)
+
 #### Discussion
 
 Do not use this property directly. To get the test description of a value, use `Swift/String/init(describingForTest:)`.

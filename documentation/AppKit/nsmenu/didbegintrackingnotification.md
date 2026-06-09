@@ -22,6 +22,8 @@ The notification object is the main menu bar (`[NSApp mainMenu]`) or the root me
 extern NSString *NSMenuDidBeginTrackingNotification;
 ```
 
+To observe this notification using Swift concurrency, use [`NSMenu.DidBeginTrackingMessage`](nsmenu/didbegintrackingmessage.md).
+
 ## See Also
 
 - [class let didAddItemNotification: NSNotification.Name](nsmenu/didadditemnotification.md)

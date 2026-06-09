@@ -3,6 +3,8 @@
 **Framework**: vmnet  
 **Kind**: var
 
+The mode to use to configure the guest operating system network interface.
+
 **Availability**:
 - Mac Catalyst 13.0+
 - macOS 10.10+
@@ -14,10 +16,6 @@ let vmnet_operation_mode_key: UnsafePointer<CChar>
 ```
 
 #### Discussion
-
-The mode in which the guest operating system network interface is configured.
-
-The supported modes are defined at `vmnet`.
 
 The value specified for this key should be of type [`XPC_TYPE_UINT64`](https://developer.apple.com/documentation/XPC/XPC_TYPE_UINT64-swift.var).
 

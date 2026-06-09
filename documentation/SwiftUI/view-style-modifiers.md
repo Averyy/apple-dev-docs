@@ -14,9 +14,20 @@ For more information about styling views, see [`View styles`](view-styles.md).
 
 ## Topics
 
+### Liquid Glass
+- [func glassEffect(Glass, in: some Shape) -> some View](view/glasseffect(_:in:).md)
+  Applies the Liquid Glass effect to a view.
+- [func glassEffectID((some Hashable & Sendable)?, in: Namespace.ID) -> some View](view/glasseffectid(_:in:).md)
+  Associates an identity value to Liquid Glass effects defined within this view.
+- [func glassEffectTransition(GlassEffectTransition) -> some View](view/glasseffecttransition(_:).md)
+  Associates a glass effect transition with any glass effects defined within this view.
+- [func glassEffectUnion(id: (some Hashable & Sendable)?, namespace: Namespace.ID) -> some View](view/glasseffectunion(id:namespace:).md)
+  Associates any Liquid Glass effects defined within this view to a union with the provided identifier.
 ### Controls
 - [func buttonStyle(_:)](view/buttonstyle(_:).md)
   Sets the style for buttons within this view to a button style with a custom appearance and standard interaction behavior.
+- [func buttonSizing(ButtonSizing) -> some View](view/buttonsizing(_:).md)
+  The preferred sizing behavior of buttons in the view hierarchy.
 - [func datePickerStyle<S>(S) -> some View](view/datepickerstyle(_:).md)
   Sets the style for date pickers within this view.
 - [func menuStyle<S>(S) -> some View](view/menustyle(_:).md)
@@ -33,6 +44,8 @@ For more information about styling views, see [`View styles`](view-styles.md).
 ### Text
 - [func labelStyle<S>(S) -> some View](view/labelstyle(_:).md)
   Sets the style for labels within this view.
+- [func labeledContentStyle<S>(S) -> some View](view/labeledcontentstyle(_:).md)
+  Sets a style for labeled content.
 - [func textFieldStyle<S>(S) -> some View](view/textfieldstyle(_:).md)
   Sets the style for text fields within this view.
 - [func textEditorStyle(some TextEditorStyle) -> some View](view/texteditorstyle(_:).md)
@@ -56,6 +69,8 @@ For more information about styling views, see [`View styles`](view-styles.md).
 ### Groups
 - [func controlGroupStyle<S>(S) -> some View](view/controlgroupstyle(_:).md)
   Sets the style for control groups within this view.
+- [func formStyle<S>(S) -> some View](view/formstyle(_:).md)
+  Sets the style for forms in a view hierarchy.
 - [func groupBoxStyle<S>(S) -> some View](view/groupboxstyle(_:).md)
   Sets the style for group boxes within this view.
 - [func indexViewStyle<S>(S) -> some View](view/indexviewstyle(_:).md)

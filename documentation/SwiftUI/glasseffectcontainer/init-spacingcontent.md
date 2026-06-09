@@ -17,7 +17,7 @@ Creates a glass effect container with the provided spacing, extracting glass sha
 
 ```swift
 @MainActor
-@preconcurrency init(spacing: CGFloat? = nil, @ViewBuilder content: () -> Content)
+@preconcurrency init(spacing: CGFloat? = nil, @ContentBuilder content: () -> Content)
 ```
 
 

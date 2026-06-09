@@ -20,10 +20,6 @@ Assistant schema conformance for app entities that describe journaling data.
 protocol JournalEntity : AssistantSchemas.Model
 ```
 
-## Mentions
-
-- [Making journaling actions available to Siri and Apple Intelligence](making-journaling-actions-available-to-siri-and-apple-intelligence.md)
-
 ## Topics
 
 ### Instance Properties
@@ -37,11 +33,6 @@ protocol JournalEntity : AssistantSchemas.Model
 ### Conforming Types
 - [AssistantSchema.EntitySchema](assistantschema/entityschema.md)
 - [AssistantSchemas.EntitySchema](assistantschemas/entityschema.md)
-
-## See Also
-
-- [var entry: some AssistantSchemas.Entity](assistantschemas/journalentity/entry.md)
-  The app entity describes a journal entry.
 
 
 ---

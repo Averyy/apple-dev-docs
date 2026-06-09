@@ -20,6 +20,11 @@ The currently selected drawing tool.
 
 Default is `PKInkingTool(.monoline)`
 
+## See Also
+
+- [var selectedDrawingToolItem: PKToolPickerItem](markuptoolbarviewcontroller/selecteddrawingtoolitem.md)
+  The currently selected drawing tool.
+
 
 ---
 

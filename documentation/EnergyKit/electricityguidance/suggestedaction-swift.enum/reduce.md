@@ -9,7 +9,6 @@ An indication of when to reduce electricity usage for devices that can reduce el
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

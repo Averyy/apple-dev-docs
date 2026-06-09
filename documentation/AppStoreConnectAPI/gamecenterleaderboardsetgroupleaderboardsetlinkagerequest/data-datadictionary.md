@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-The data structure that represents a leaderboard resource.
+The resource linkage data for setting the group leaderboard set associated with a leaderboard set.
 
 **Availability**:
 - App Store Connect API 3.0+

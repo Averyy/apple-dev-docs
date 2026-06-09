@@ -17,7 +17,8 @@ An effect that changes the visual appearance of a view, largely without changing
 ## Declaration
 
 ```swift
-protocol GeometryEffect : Animatable, ViewModifier, _RemoveGlobalActorIsolation where Self.Body == Never
+nonisolated
+protocol GeometryEffect : Animatable, ViewModifier where Self.Body == Never
 ```
 
 #### Overview

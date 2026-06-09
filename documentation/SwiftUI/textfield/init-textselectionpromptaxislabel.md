@@ -16,7 +16,7 @@ Creates a text field with a binding to the current selection and a prompt genera
 
 ```swift
 nonisolated
-init(text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil, @ViewBuilder label: () -> Label)
+init(text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil, @ContentBuilder label: () -> Label)
 ```
 
 #### Discussion

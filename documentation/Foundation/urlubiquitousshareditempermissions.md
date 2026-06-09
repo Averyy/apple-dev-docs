@@ -27,7 +27,9 @@ struct URLUbiquitousSharedItemPermissions
   Creates a shared item permissions instance from the provided constant string.
 ### Constants
 - [static let readOnly: URLUbiquitousSharedItemPermissions](urlubiquitousshareditempermissions/readonly.md)
+  The values returned for the `NSURLUbiquitousSharedItemCurrentUserPermissionsKey`. The current user is only allowed to read this item.
 - [static let readWrite: URLUbiquitousSharedItemPermissions](urlubiquitousshareditempermissions/readwrite.md)
+  The current user is allowed to both read and write this item.
 
 ## Relationships
 

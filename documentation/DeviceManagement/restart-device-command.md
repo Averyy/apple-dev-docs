@@ -11,8 +11,6 @@ Remotely and immediately restart a device.
 - Mac Catalyst 10.3+
 - macOS 10.13+
 - tvOS 10.2+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 #### Discussion
 
@@ -25,9 +23,9 @@ Refer to the following sections to determine supported channels and requirements
 |  |  |
 | --- | --- |
 | Device channel | iOS, macOS, Shared iPad, tvOS |
-| User channel | NA |
+| User channel | N/A |
 | Requires supervision | iOS, macOS, tvOS |
-| Allowed in user enrollment | NA |
+| Allowed in user enrollment | N/A |
 | Required access right | AllowPasscodeRemovalAndLock |
 
 ##### Example Request and Response
@@ -77,7 +75,7 @@ Refer to the following sections to determine supported channels and requirements
 
 ## Endpoint
 
-`PUT https://yourmdmhost.example.com/mdm#RestartDeviceCommand`
+`PUT https://yourmdmhost.example.com/mdm`
 
 ## Request Body
 

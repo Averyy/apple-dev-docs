@@ -26,8 +26,6 @@ Both `minCameraDistance` and `maxCameraDistance` must be greater than or equal t
   Constructs an instance of a camera zoom range object with no minimum or maximum camera distance.
 - [new CameraZoomRange(rangeParams)](camerazoomrange/camerazoomrangeconstructor1.md)
   Creates an instance of a camera zoom range object with an object literal.
-- [interface CameraZoomRangeConstructorOptions](camerazoomrangeconstructoroptions.md)
-  Initialization options for the camera zoom range.
 
 
 ---

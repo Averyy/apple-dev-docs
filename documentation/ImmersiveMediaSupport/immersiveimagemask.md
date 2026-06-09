@@ -39,6 +39,21 @@ An image file containing the alpha values is used to generate the image mask.
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [actor VenueDescriptor](venuedescriptor.md)
+  The Apple Immersive Media Venue Descriptor is a collection of static metadata necessary for every Apple Immersive Video.
+- [struct ImmersiveCamera](immersivecamera.md)
+  A structure that holds the required information for an immersive media camera to process and render video frames.
+- [struct ImmersiveCameraLensDefinition](immersivecameralensdefinition.md)
+  This type holds the ILPD lens configuration parameters to generate a camera calibration type instance.
+- [struct ImmersiveCameraCalibration](immersivecameracalibration.md)
+  A structure that represents immersive media camera calibration data.
+- [enum ImmersiveCameraMask](immersivecameramask.md)
+  A structure that holds the camera mask type information and its relevant mask name.
+- [struct ImmersiveDynamicMask](immersivedynamicmask.md)
+  A type that holds the information required to dynamically generate an immersive media mask at load time.
+
 
 ---
 

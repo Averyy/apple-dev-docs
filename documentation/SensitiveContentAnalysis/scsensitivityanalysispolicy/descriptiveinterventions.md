@@ -1,9 +1,9 @@
 # SCSensitivityAnalysisPolicy.descriptiveInterventions
 
-**Framework**: SensitiveContentAnalysis  
+**Framework**: Sensitive Content Analysis  
 **Kind**: case
 
-An indicator that user preference requests overt detection of sensitive content.
+An indicator that the person requests overt detection of sensitive content.
 
 **Availability**:
 - iOS 17.0+
@@ -20,20 +20,20 @@ case descriptiveInterventions
 
 ## Mentions
 
-- [Detecting nudity in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
+- [Detecting sensitive content in media and providing intervention options](detecting-nudity-in-media-and-providing-intervention-options.md)
 
 #### Discussion
 
-If [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md) is this value, it indicates that the user enables both of the following:
+If this value is [`analysisPolicy`](scsensitivityanalyzer/analysispolicy.md), it indicates that the person turned on both of the following:
 
 - Communication Safety parental control in Screen Time
 - Sensitive Content Warnings in your app’s settings
 
-When your app detects nudity under this policy, your app needs to:
+When your app detects sensitive content under this policy, your app needs to:
 
 - Use child-appropriate language, such as broadly understood vocabulary
 - Present an alert that fills the full screen.
-- Intervene on the receipt of sensitve content over a network and before transmitting sensitive content over a network.
+- Intervene on the receipt of sensitive content over a network and before transmitting sensitive content over a network.
 
 ## See Also
 

@@ -18,7 +18,7 @@ An angular gradient.
 
 ```swift
 @frozen
-struct AngularGradient
+nonisolated struct AngularGradient
 ```
 
 #### Overview

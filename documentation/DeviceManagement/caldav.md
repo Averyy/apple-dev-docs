@@ -11,8 +11,6 @@ The payload that configures a Calendar account.
 - Mac Catalyst 4.0+
 - macOS 10.7+
 - visionOS 1.1+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -31,8 +29,8 @@ Specify `com.apple.caldav.account` as the payload type.
 | Device channel | iOS, visionOS |
 | User channel | macOS, Shared iPad |
 | Allow manual install | iOS, macOS, visionOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
@@ -91,7 +89,7 @@ Specify `com.apple.caldav.account` as the payload type.
 - `CalDAVPrincipalURL` (string): The base URL to the user’s calendar.
 - `CalDAVUsername` (string): The user name for logins. If this profile is part of a non-interactive install, the system requires this field.
 - `CalDAVUseSSL` (boolean): If `true`, the system enables SSL.
-- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available in iOS 14 and later.
+- `VPNUUID` (string): The VPNUUID of the per-app VPN the account uses for network communication. Available: iOS 14+ | iPadOS 14+ | visionOS 1.1+
 
 ## See Also
 

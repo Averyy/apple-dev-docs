@@ -41,6 +41,7 @@ The provider block is executed synchronously at the time when a corresponding pr
 - [class func userInfoValueProvider(forDomain: String) -> ((any Error, String) -> Any?)?](nserror/userinfovalueprovider(fordomain:).md)
   Returns any user info provider specified for a given error domain.
 - [struct ErrorUserInfoKey](erroruserinfokey.md)
+  These keys may exist in the user info dictionary.
 - [typealias UserInfoKey](nserror/userinfokey.md)
   These keys may exist in the user info dictionary.
 

@@ -17,6 +17,7 @@ Creates a rename button.
 ## Declaration
 
 ```swift
+nonisolated
 init() where Label == Label<Text, Image>
 ```
 

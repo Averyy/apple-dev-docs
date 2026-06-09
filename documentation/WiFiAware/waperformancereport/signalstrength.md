@@ -8,6 +8,7 @@ The current signal strength of the remote device.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

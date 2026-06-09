@@ -10,10 +10,7 @@ Use a `Team` object in the expression of a matchmaking rule to access the player
 
 ##### Properties
 
-- **`maxPlayers**: The maximum number of players on the team.
-- **`minPlayers**: The minimum number of players on the team.
-- **`name**: The name for the team that’s unique within the scope of its rule set.
-- **`players**: An array of [`Player`](player.md) objects representing the players that Game Center assigns to the team.
+-`maxPlayers: The maximum number of players on the team. -`minPlayers: The minimum number of players on the team. -`name: The name for the team that's unique within the scope of its rule set.  -`players: An array of [`Player`](player.md) objects representing the players that Game Center assigns to the team.
 
 ## See Also
 

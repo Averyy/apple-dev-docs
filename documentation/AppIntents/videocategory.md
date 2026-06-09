@@ -48,6 +48,17 @@ enum VideoCategory
 - [StaticDisplayRepresentable](staticdisplayrepresentable.md)
 - [TypeDisplayRepresentable](typedisplayrepresentable.md)
 
+## See Also
+
+- [protocol AudioPlaybackIntent](audioplaybackintent.md)
+  An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
+- [protocol AudioRecordingIntent](audiorecordingintent.md)
+  An app intent that starts, stops or otherwise modifies audio recording state.
+- [protocol CameraCaptureIntent](cameracaptureintent.md)
+  Designates intent that will launch an activity that uses device’s camera to capture photos or videos. Marking your intent with this protocol makes it available as a possible action for Camera quick action.
+- [protocol PlayVideoIntent](playvideointent.md)
+  An intent that looks for videos based on a search term, then plays the content.
+
 
 ---
 

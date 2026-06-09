@@ -36,7 +36,16 @@ These options are used with the [`enumerateSubstrings(in:options:using:)`](nsstr
 - [static var substringNotRequired: NSString.EnumerationOptions](nsstring/enumerationoptions/substringnotrequired.md)
 - [static var localized: NSString.EnumerationOptions](nsstring/enumerationoptions/localized.md)
 ### Initializers
+- [init(some Sequence<NSString.EnumerationOptions>)](nsstring/enumerationoptions/init(_:).md)
 - [init(rawValue: UInt)](nsstring/enumerationoptions/init(rawvalue:).md)
+### Instance Methods
+- [func contains(String.EnumerationOptions) -> Bool](nsstring/enumerationoptions/contains(_:).md)
+- [func formIntersection(String.EnumerationOptions)](nsstring/enumerationoptions/formintersection(_:).md)
+- [func formSymmetricDifference(String.EnumerationOptions)](nsstring/enumerationoptions/formsymmetricdifference(_:).md)
+- [func formUnion(String.EnumerationOptions)](nsstring/enumerationoptions/formunion(_:).md)
+- [func insert(String.EnumerationOptions) -> (inserted: Bool, memberAfterInsert: String.EnumerationOptions)](nsstring/enumerationoptions/insert(_:).md)
+- [func isSubset(of: String.EnumerationOptions) -> Bool](nsstring/enumerationoptions/issubset(of:).md)
+- [func remove(String.EnumerationOptions) -> String.EnumerationOptions?](nsstring/enumerationoptions/remove(_:).md)
 ### Type Properties
 - [static var byCaretPositions: NSString.EnumerationOptions](nsstring/enumerationoptions/bycaretpositions.md)
 - [static var byDeletionClusters: NSString.EnumerationOptions](nsstring/enumerationoptions/bydeletionclusters.md)

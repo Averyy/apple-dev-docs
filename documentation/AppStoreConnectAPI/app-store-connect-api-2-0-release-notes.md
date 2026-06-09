@@ -12,11 +12,11 @@ App Store Connect API version 2.0 provides resources that enable you to automate
 
 - Added support for creating, managing, and submitting for review your in-app purchases and auto-renewable subscriptions, using the resources now available in the [`In-App Purchase`](in-app-purchase.md) and [`Auto-Renewable Subscriptions`](auto-renewable-subscriptions.md) collections. The [`Promoted Purchases`](promoted-purchases.md) resources can now manage promoted in-app purchases and auto-renewable subscriptions, including their visibility and images. The resources in the [`In-App Purchase and Subscription App Store Review Submissions`](in-app-purchase-and-subscription-app-store-review-submissions.md) collection manage submissions for review.
 - The [`Customer Reviews`](customer-reviews.md) and [`Customer Review Responses`](customer-review-responses.md) resources support retrieving customer reviews for your app that appear on the App Store, and managing your responses to the customer reviews.
-- [`Power and Performance Metrics and Logs`](power-and-performance-metrics-and-logs.md) adds a new `HANGS` diagnostic type filter for [`List All Diagnostic Signatures for a Build`](get-v1-builds-_id_-diagnosticsignatures.md), updates the schema for responses in [`xcodeMetrics`](xcodemetrics.md), and adds support for long-lived tokens as described in [`Generating Tokens for API Requests`](generating-tokens-for-api-requests.md).
+- [`Power and Performance Metrics and Logs`](power-and-performance-metrics-and-logs.md) adds a new `HANGS` diagnostic type filter for [`List all diagnostic signatures for a build`](get-v1-builds-_id_-diagnosticsignatures.md), updates the schema for responses in [`xcodeMetrics`](xcodemetrics.md), and adds support for long-lived tokens as described in [`Generating Tokens for API Requests`](generating-tokens-for-api-requests.md).
 
 ##### Deprecations
 
-- The [`List All In-App Purchases for an App V1`](get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List All In-App Purchases for an App`](get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
+- The [`List all in-app purchases for an app v1`](get-v1-apps-_id_-inapppurchases.md) endpoint is now deprecated and replaced with the [`List all in-app purchases for an app`](get-v1-apps-_id_-inapppurchasesv2.md) endpoint.
 
 ##### Removals
 
@@ -24,6 +24,8 @@ App Store Connect API version 2.0 provides resources that enable you to automate
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3.1 release notes](app-store-connect-api-4-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
@@ -51,8 +53,6 @@ App Store Connect API version 2.0 provides resources that enable you to automate
 - [App Store Connect API 3.1 release notes](app-store-connect-api-3-1-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

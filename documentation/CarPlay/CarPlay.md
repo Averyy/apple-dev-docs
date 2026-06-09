@@ -122,6 +122,7 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [CarPlay Enumerations](carplay-enumerations.md)
 - [CarPlay Constants](carplay-constants.md)
 ### Classes
+- [class CPChargingStationConnection](cpchargingstationconnection.md)
 - [class CPImageOverlay](cpimageoverlay.md)
   An overlay that displays information over an image.
 - [class CPListImageRowItemCardElement](cplistimagerowitemcardelement.md)
@@ -133,9 +134,14 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
 - [class CPListImageRowItemRowElement](cplistimagerowitemrowelement.md)
 - [class CPListTemplateDetailsHeader](cplisttemplatedetailsheader.md)
   A header for list templates that displays rich media content with action buttons.
+- [class CPMapPanel](cpmappanel.md)
+- [class CPMapPanelButtonConfiguration](cpmappanelbuttonconfiguration.md)
+- [class CPMapPanelItem](cpmappanelitem.md)
+- [class CPMapPanelSection](cpmappanelsection.md)
 - [class CPMapTemplateWaypoint](cpmaptemplatewaypoint.md)
   CPMapTemplateWaypoint represents a waypoint with associated travel estimates
 - [class CPMessageGridItemConfiguration](cpmessagegriditemconfiguration.md)
+- [class CPMultiStopCardConfiguration](cpmultistopcardconfiguration.md)
 - [class CPNavigationWaypoint](cpnavigationwaypoint.md)
   CPNavigationWaypoint represents a point of interest along a route that provides location-based information and guidance.
 - [class CPNowPlayingMode](cpnowplayingmode.md)
@@ -149,7 +155,11 @@ You can use other technologies to drive portions of your app’s CarPlay interfa
   A representation of a sports team for the now playing screen, in sports that have exactly two teams.
 - [class CPNowPlayingSportsTeamLogo](cpnowplayingsportsteamlogo.md)
   A logo image or, if no image is available, an abbreviation or initialism for this team.
+- [class CPPanel](cppanel.md)
+- [class CPPanelButtonConfiguration](cppanelbuttonconfiguration.md)
+- [class CPPanelItem](cppanelitem.md)
 - [class CPPlaybackConfiguration](cpplaybackconfiguration.md)
+- [class CPRouteDetail](cproutedetail.md)
 - [class CPRouteSegment](cproutesegment.md)
   CPRouteSegment describes information pertaining to a segment of a route.
 - [class CPSportsOverlay](cpsportsoverlay.md)

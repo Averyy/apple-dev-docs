@@ -28,6 +28,8 @@ The notification object is the notifying `NSText` object. The `userInfo` diction
 
 > **Note**:  It is common for [`didEndEditingNotification`](nstext/didendeditingnotification.md) to be sent without a matching [`didBeginEditingNotification`](nstext/didbegineditingnotification.md). The begin notification is only sent if the user actually makes changes (that is, types something or changes formatting attributes). However, the end notification is sent when focus leaves the text view, regardless of whether there was a change. This distinction enables an application to know whether the user actually made a change to the text or just clicked in the text view and then clicked outside it. In both cases, [`didEndEditingNotification`](nstext/didendeditingnotification.md) is sent, but to tell the difference, the application can listen for [`didBeginEditingNotification`](nstext/didbegineditingnotification.md).
 
+To observe this notification using Swift concurrency, use [`NSTextView.DidEndEditingMessage`](nstextview/didendeditingmessage.md).
+
 ## See Also
 
 - [class let didBeginEditingNotification: NSNotification.Name](nstext/didbegineditingnotification.md)

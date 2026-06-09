@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A short, localized, human-readable string that describes the app intent using a verb and a noun in title case.
+A short, localized, human-readable string that conveys the app intent’s action.
 
 **Availability**:
 - iOS 16.0+
@@ -26,14 +26,16 @@ static var title: LocalizedStringResource { get }
 - [Responding to the Action button on Apple Watch Ultra](actionbuttonarticle.md)
 - [Creating your first app intent](creating-your-first-app-intent.md)
 
+#### Discussion
+
+Specify title strings using a verb followed by a noun in title case. For example, an action to open an album might have the title “Open Album”. If the app intent conforms to a schema, the schema provides this value.
+
 ## See Also
 
 - [static var description: IntentDescription?](appintent/description.md)
-  A description of the app intent that the system shows to people.
-- [static var openAppWhenRun: Bool](appintent/openappwhenrun.md)
-  A boolean property that tells the system to consider the app intent even if its app is not in the foreground.
+  A localized string that describes what the app intent does.
 - [static var isDiscoverable: Bool](appintent/isdiscoverable.md)
-  A boolean value that determines whether system features such as Shortcuts and Spotlight can discover this app intent.
+  A Boolean value that indicates whether system features can discover this app intent.
 
 
 ---

@@ -1,4 +1,4 @@
-# Modify an App Info
+# Modify an app info
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -128,7 +128,7 @@ PATCH https://api.appstoreconnect.apple.com/v1/appInfos/61d77dc2-9313-4330-b169-
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `appInfo` resource ID from the [`List All App Infos for an App`](get-v1-apps-_id_-appinfos.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `appInfo` resource ID from the [`List all app infos for an app`](get-v1-apps-_id_-appinfos.md) response.
 
 ## Request Body
 

@@ -6,6 +6,9 @@
 Specifies an action that moves items to the Clipboard in response to the system’s Cut command.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 13.0+
 
 ## Declaration

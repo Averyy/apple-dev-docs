@@ -35,6 +35,13 @@ It’s equivalent to calling `.onOpenURL(_:)`
 
 - `prefersInApp`: A boolean value that specifies whether to prefer to open the URL with an in-app browser or not.
 
+## See Also
+
+- [func onOpenURL(perform: (URL) -> ()) -> some View](view/onopenurl(perform:).md)
+  Registers a handler to invoke in response to a URL that your app receives.
+- [func widgetURL(URL?) -> some View](view/widgeturl(_:).md)
+  Sets the URL to open in the containing app when the user clicks the widget.
+
 
 ---
 

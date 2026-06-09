@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a section with a header, the provided section content, and a binding representing the section’s expansion state.
+Creates a section with the provided section content.
 
 **Availability**:
 - iOS 17.0+
@@ -17,14 +17,13 @@ Creates a section with a header, the provided section content, and a binding rep
 ## Declaration
 
 ```swift
-init(isExpanded: Binding<Bool>, @ViewBuilder content: () -> Content, @ViewBuilder header: () -> Parent)
+init(isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content, @ContentBuilder header: () -> Parent)
 ```
 
 ## Parameters
 
 - `isExpanded`: A binding to a Boolean value that determines the section’s expansion state (expanded or collapsed).
 - `content`: The section’s content.
-- `header`: A view to use as the section’s header.
 
 ## See Also
 

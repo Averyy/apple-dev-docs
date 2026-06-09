@@ -38,7 +38,9 @@ These options are used with the [`contentsOfDirectory(at:includingPropertiesForK
   An option to skip hidden files.
 ### Type Properties
 - [static var includesDirectoriesPostOrder: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/includesdirectoriespostorder.md)
+  An option to skip hidden files.
 - [static var producesRelativePathURLs: FileManager.DirectoryEnumerationOptions](filemanager/directoryenumerationoptions/producesrelativepathurls.md)
+  An option to skip hidden files.
 
 ## Relationships
 

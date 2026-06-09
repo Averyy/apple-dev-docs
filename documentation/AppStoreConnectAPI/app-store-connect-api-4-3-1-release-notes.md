@@ -11,10 +11,12 @@ App Store Connect API version 4.3.1 provides resources that enable you to automa
 ##### Improvements
 
 - You can now create and update localized metadata in 11 additional languages. To learn more, see [`Managing metadata in your app by using locale shortcodes`](managing-metadata-in-your-app-by-using-locale-shortcodes.md).
-- `BRAZIL_GAMBLING_NOT_VERIFIED` content status is available when calling [`Read App Availability Territories`](get-v2-appavailabilities-_id_-territoryavailabilities.md). This status indicates that your app is missing Real Money Gambling (RMG) verification, so it’s not available for sale in Brazil.
+- `BRAZIL_GAMBLING_NOT_VERIFIED` content status is available when calling [`Read app availablity territories`](get-v2-appavailabilities-_id_-territoryavailabilities.md). This status indicates that your app is missing Real Money Gambling (RMG) verification, so it’s not available for sale in Brazil.
 
 ## See Also
 
+- [App Store Connect API 4.4 release notes](app-store-connect-api-4-4-release-notes.md)
+  Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.3 release notes](app-store-connect-api-4-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 4.2 release notes](app-store-connect-api-4-2-release-notes.md)
@@ -42,8 +44,6 @@ App Store Connect API version 4.3.1 provides resources that enable you to automa
 - [App Store Connect API 3.0 release notes](app-store-connect-api-3-0-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
-  Update your server-side code to use new features, and test your code against API changes.
-- [App Store Connect API 2.3 release notes](app-store-connect-api-2-3-release-notes.md)
   Update your server-side code to use new features, and test your code against API changes.
 
 

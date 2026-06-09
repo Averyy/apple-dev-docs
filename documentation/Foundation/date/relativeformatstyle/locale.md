@@ -1,9 +1,9 @@
-# locale
+# locale(_:)
 
 **Framework**: Foundation  
-**Kind**: property
+**Kind**: method
 
-The locale to use when formatting the relative date.
+Modifies the relative date format style to use the specified locale.
 
 **Availability**:
 - iOS 15.0+
@@ -17,12 +17,16 @@ The locale to use when formatting the relative date.
 ## Declaration
 
 ```swift
-var locale: Locale
+func locale(_ locale: Locale) -> Date.RelativeFormatStyle
 ```
 
-#### Discussion
+#### Return Value
 
-The default value is [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md). If you set this property to `nil`, the format style resets to using [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md).
+A relative date format style with the provided locale.
+
+## Parameters
+
+- `locale`: The locale to use when formatting relative dates.
 
 ## See Also
 
@@ -34,8 +38,10 @@ The default value is [`autoupdatingCurrent`](nslocale/autoupdatingcurrent.md). I
   The calendar to use when formatting relative dates.
 - [var capitalizationContext: FormatStyleCapitalizationContext](date/relativeformatstyle/capitalizationcontext.md)
   The capitalization context to use when formatting the relative dates.
+- [var locale: Locale](date/relativeformatstyle/locale.md)
+  The locale to use when formatting the relative date.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/foundation/date/relativeformatstyle/locale)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation/date/relativeformatstyle/locale(_:))*

@@ -9,7 +9,6 @@ Errors that can occur during captured room-data processing.
 - iOS 16.0+
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
-- visionOS ?+
 
 ## Declaration
 
@@ -41,7 +40,6 @@ The room builder ([`RoomBuilder`](roombuilder.md)) function [`capturedRoom(from:
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
 - [Escapable](../Swift/Escapable.md)

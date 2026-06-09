@@ -11,13 +11,13 @@ The text to display in the marker balloon.
 ## Declaration
 
 ```swift
-get glyphText(): string;
-set glyphText(value: string);
+get glyphText(): string | null;
+set glyphText(value: string | null);
 ```
 
 #### Discussion
 
-This property is the text to display in the balloon instead of displaying a glyph image. The default value is `""` (empty string). There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
+This property is the text to display in the balloon instead of displaying a glyph image. The default value is `null`. There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
 
 If you specify both a [`glyphImage`](markerannotation/glyphimage.md) and [`glyphText`](markerannotation/glyphtext.md), MapKit JS ignores the glyph image, and displays the glyph text.
 

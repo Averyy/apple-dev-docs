@@ -30,6 +30,11 @@ A `CIRenderTask` object appears in Xcode Quick Look as a graph.
 ### Instance Methods
 - [func waitUntilCompleted() throws -> CIRenderInfo](cirendertask/waituntilcompleted.md)
   Waits until the [`CIRenderTask`](cirendertask.md) finishes and returns.
+### Instance Properties
+- [var plannedPassCount: Int](cirendertask/plannedpasscount.md)
+- [var plannedPeakMemory: Int](cirendertask/plannedpeakmemory.md)
+- [var plannedPixelsOverdrawn: Int](cirendertask/plannedpixelsoverdrawn.md)
+- [var plannedPixelsProcessed: Int](cirendertask/plannedpixelsprocessed.md)
 
 ## Relationships
 

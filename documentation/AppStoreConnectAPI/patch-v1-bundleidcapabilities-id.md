@@ -1,4 +1,4 @@
-# Modify a Capability Configuration
+# Modify a capability configuration
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

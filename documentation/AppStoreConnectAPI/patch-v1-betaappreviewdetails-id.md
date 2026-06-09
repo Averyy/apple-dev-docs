@@ -1,4 +1,4 @@
-# Modify a Beta App Review Detail
+# Modify a beta app review detail
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest

@@ -19,11 +19,11 @@
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
 - [static func < (Self, Self) -> Bool](float16/_(_:_:)-4g8ih.md)
   Returns a Boolean value indicating whether the value of the first argument is less than that of the second argument.
-- [static func > (Self, Self) -> Bool](float16/_(_:_:)-7cnm4.md)
+- [static func > (borrowing Self, borrowing Self) -> Bool](float16/_(_:_:)-4yx57.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than that of the second argument.
-- [static func >= (Self, Self) -> Bool](float16/_=(_:_:)-3ah1i.md)
+- [static func >= (borrowing Self, borrowing Self) -> Bool](float16/_=(_:_:)-2oy50.md)
   Returns a Boolean value indicating whether the value of the first argument is greater than or equal to that of the second argument.
-- [static func <= (Self, Self) -> Bool](float16/_=(_:_:)-3uvqe.md)
+- [static func <= (borrowing Self, borrowing Self) -> Bool](float16/_=(_:_:)-8ohch.md)
   Returns a Boolean value indicating whether the value of the first argument is less than or equal to that of the second argument.
 
 

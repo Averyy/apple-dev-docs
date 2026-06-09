@@ -39,6 +39,9 @@ To access the animated properties of one of the entity’s children, call [`enti
 ### Accessing child-entity paths
 - [func entity(String) -> BindTarget.EntityPath](bindtarget/entitypath/entity(_:).md)
   Provides a child entity’s path.
+### Accessing root motion
+- [var rootMotion: BindTarget](bindtarget/entitypath/rootmotion.md)
+  A bind target for the entity’s blend shape weights.
 ### Instance Properties
 - [var billboardBlendFactor: BindTarget](bindtarget/entitypath/billboardblendfactor.md)
 - [var opacity: BindTarget](bindtarget/entitypath/opacity.md)

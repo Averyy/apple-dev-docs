@@ -38,6 +38,11 @@ enum GCM
   Decrypts the message and verifies its authenticity.
 - [static func open<AuthenticatedData>(AES.GCM.SealedBox, using: SymmetricKey, authenticating: AuthenticatedData) throws -> Data](aes/gcm/open(_:using:authenticating:).md)
   Decrypts the message and verifies the authenticity of both the encrypted message and additional data.
+### Type Methods
+- [static func open(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: RawSpan) throws](aes/gcm/open(inplace:using:nonce:authenticating:tag:).md)
+  Decrypts the message and verifies its authenticity.
+- [static func seal(inPlace: inout MutableRawSpan, using: SymmetricKey, nonce: AES.GCM.Nonce, authenticating: RawSpan?, tag: inout OutputRawSpan) throws](aes/gcm/seal(inplace:using:nonce:authenticating:tag:).md)
+  Secures the given plaintext message with encryption and an optional authentication tag.
 
 ## Relationships
 

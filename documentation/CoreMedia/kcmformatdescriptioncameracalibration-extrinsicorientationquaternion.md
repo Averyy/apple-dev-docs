@@ -18,6 +18,12 @@
 let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFString
 ```
 
+#### Discussion
+
+Specifies a camera’s orientation to a world or scene coordinate system. The orientation value is a unit quaternion(ix, iy, and iz) instead of the classical 3x3 matrix.
+
+The values are in a CFArray of three CFNumbers in ix, iy, and iz order.
+
 ## See Also
 
 - [let kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection: CFString](kcmformatdescriptionextension_cameracalibrationdatalenscollection.md)
@@ -26,7 +32,6 @@ let kCMFormatDescriptionCameraCalibration_ExtrinsicOrientationQuaternion: CFStri
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixProjectionOffset: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixprojectionoffset.md)
 - [let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CFString](kcmformatdescriptioncameracalibration_intrinsicmatrixreferencedimensions.md)
 - [let kCMFormatDescriptionCameraCalibration_LensAlgorithmKind: CFString](kcmformatdescriptioncameracalibration_lensalgorithmkind.md)
-  The following keys are required in each kCMFormatDescriptionExtension_CameraCalibrationDataLensCollection dictionary.
 - [let kCMFormatDescriptionCameraCalibration_LensDistortions: CFString](kcmformatdescriptioncameracalibration_lensdistortions.md)
 - [let kCMFormatDescriptionCameraCalibration_LensDomain: CFString](kcmformatdescriptioncameracalibration_lensdomain.md)
 - [let kCMFormatDescriptionCameraCalibration_LensFrameAdjustmentsPolynomialX: CFString](kcmformatdescriptioncameracalibration_lensframeadjustmentspolynomialx.md)

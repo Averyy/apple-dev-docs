@@ -20,6 +20,11 @@ Returns the display name for the selectable setting that best matches the specif
 func displayName(forLocaleIdentifier localeIdentifier: String) -> String
 ```
 
+## See Also
+
+- [var mediaCharacteristic: AVMediaCharacteristic](avmediapresentationsetting/mediacharacteristic.md)
+  Provides the media characteristic that corresponds to the selectable setting.
+
 
 ---
 

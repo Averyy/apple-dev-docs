@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The request body you use to create an app price schedule.
+
 **Availability**:
 - App Store Connect API 2.3+
 

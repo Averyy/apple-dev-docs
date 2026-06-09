@@ -30,6 +30,10 @@ You can optionally enable the Profile GPU Trace option to have Xcode automatical
   Discover, diagnose, and fix visual artifacts in your app with the Metal debugger.
 - [Optimizing GPU performance](optimizing-gpu-performance.md)
   Find and address performance bottlenecks using the Metal debugger.
+- [Debugging with interactive command-line tools](debugging-with-interactive-command-line-tools.md)
+  Investigate rendering issues in GPU traces without leaving the Terminal.
+- [Investigating GPU issues with AI agents](investigating-gpu-issues-with-ai-agents.md)
+  Find the root cause of an issue in a large GPU trace by handing the trace to an AI agent for autonomous investigation.
 
 
 ---

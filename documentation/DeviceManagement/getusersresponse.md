@@ -6,8 +6,7 @@
 The paginated response that contains the requested users.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 2.0+
 
 ## Declaration
 
@@ -17,7 +16,7 @@ object GetUsersResponse
 
 ## Mentions
 
-- [Managing Apps and Books Through Web Services](managing-apps-and-books-through-web-services.md)
+- [Getting started with the management API](getting-started-with-the-management-api.md)
 
 ## Topics
 

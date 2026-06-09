@@ -1,4 +1,4 @@
-# Roster Management
+# Roster management
 
 **Framework**: Device Management
 
@@ -12,24 +12,24 @@ Administrators of Apple School Manager can use this API to access information ab
 
 ## Topics
 
-### Account Management
+### Account management
 - [Get Account Detail](account-detail.md)
   Obtain the details for your account.
-### Class Management
+### Class management
 - [object RosterClass](rosterclass.md)
   A class’s properties and their values.
 - [Get the List of Classes](fetch-class-roster.md)
   Obtain a list of classes the server manages.
 - [Sync the List of Classes](fetch-class-roster-sync.md)
   Get updates about the list of classes the server manages.
-### People Management
+### People management
 - [object RosterPerson](rosterperson.md)
   A person’s properties and their values.
 - [Get the List of People](fetch-person-roster.md)
   Obtain a list of people the server manages, across the organization.
 - [Sync the List of People](fetch-person-roster-sync.md)
   Get updates about the list of people the server manages.
-### Course Management
+### Course management
 - [object BaseRosterCourse](baserostercourse.md)
   A base course’s properties and their values.
 - [object RosterCourse](rostercourse.md)
@@ -38,7 +38,7 @@ Administrators of Apple School Manager can use this API to access information ab
   Obtain a list of the courses the server manages.
 - [Sync the List of Courses](fetch-course-roster-sync.md)
   Get updates about the list of courses the server manages.
-### Location Mangement
+### Location management
 - [object BaseRosterLocation](baserosterlocation.md)
   A base location’s properties and their values.
 - [object RosterLocation](rosterlocation.md)
@@ -50,10 +50,12 @@ Administrators of Apple School Manager can use this API to access information ab
 
 ## See Also
 
-- [Device Assignment](device-assignment.md)
+- [Device assignment](device-assignment.md)
   Manage devices for your students and employees.
-- [App and Book Management](app-and-book-management.md)
-  Manage apps and books for your students and employees.
+- [App, Book, and Subscription Management](app-book-and-subscription-management.md)
+  Manage apps, books, and subscriptions for your students and employees.
+- [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md)
+  Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
 
 
 ---

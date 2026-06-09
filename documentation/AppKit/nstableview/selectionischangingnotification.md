@@ -18,6 +18,8 @@ class let selectionIsChangingNotification: NSNotification.Name
 
 Note that the notification is sent only for mouse events that change the table’s selection, not keyboard events. The notification object is the table view whose selection is changing. This notification does not contain a `userInfo` dictionary.
 
+To observe this notification using Swift concurrency, use [`NSTableView.SelectionIsChangingMessage`](nstableview/selectionischangingmessage.md).
+
 ## See Also
 
 - [class let columnDidMoveNotification: NSNotification.Name](nstableview/columndidmovenotification.md)

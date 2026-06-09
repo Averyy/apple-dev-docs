@@ -7,8 +7,6 @@ The payload that configures system migration.
 
 **Availability**:
 - macOS 10.12.4+
-- Device Assignment Services ?+
-- VPP License Management ?+
 
 ## Declaration
 
@@ -25,12 +23,12 @@ Specify `com.apple.systemmigration` as the payload type.
 |  |  |
 | --- | --- |
 | Device channel | macOS |
-| User channel | NA |
+| User channel | N/A |
 | Allow manual install | macOS |
-| Requires supervision | NA |
-| Requires user-approved MDM | NA |
-| Allowed in user enrollment | NA |
-| Allow multiple payloads | NA |
+| Requires supervision | N/A |
+| Requires user-approved MDM | N/A |
+| Allowed in user enrollment | N/A |
+| Allow multiple payloads | N/A |
 
 ##### Profile Example
 
@@ -95,11 +93,6 @@ Specify `com.apple.systemmigration` as the payload type.
 ## Properties
 
 - `CustomBehavior` ([SystemMigration.CustomBehaviorItem]): The list of custom behavior dictionaries.
-
-## See Also
-
-- [object SoftwareUpdate](softwareupdate.md)
-  The payload that configures the software update policy.
 
 
 ---

@@ -9,36 +9,30 @@ framework: HIG
 
 The HIG contains guidance and best practices that can help you design a great experience for any Apple platform.
 
-As you design interfaces for Apple platforms, keep these principles in mind:
-![A conceptual graphic of two circular buttons arranged vertically on the leading side of a capsule-shape vertical item grouping. Those three elements are set atop a larger rounded square.](https://docs-assets.developer.apple.com/published/214efefd347927407f3273dedbd8df7f/homepage-establish-hierarchy%402x.png)
-
-#### Hierarchy
-Establish a clear visual hierarchy where controls and interface elements elevate and distinguish the content beneath them.
-![A conceptual graphic of a circular button on the leading side of a capsule-shape item grouping.](https://docs-assets.developer.apple.com/published/eda7850fbadba354dbdf4be2f926d337/homepage-create-harmony%402x.png)
-
-#### Harmony
-Align with the concentric design of the hardware and software to create harmony between interface elements, system experiences, and devices.
-![A conceptual graphic of a circular button.](https://docs-assets.developer.apple.com/published/0f54ed63439a729e27d8d605d2b6a5b4/homepage-maintain-consistency%402x.png)
-
-#### Consistency
-Adopt platform conventions to maintain a consistent design that continuously adapts across window sizes and displays.
-For developer guidance, see [Adopting Liquid Glass](../TechnologyOverviews/adopting-liquid-glass.md).
 
 ## Design fundamentals
+Explore the principles that guide design across Apple platforms. For more, see [Getting started](getting-started.md).
+- [Design principles](/design/human-interface-guidelines/design-principles) - Explore fundamental principles that guide design across Apple platforms.
+- [Designing for iOS](/design/human-interface-guidelines/designing-for-ios) - People depend on their iPhone to help them stay connected, play games, view media, accomplish tasks, and track personal data in any location and while on the go.
+- [Designing for macOS](/design/human-interface-guidelines/designing-for-macos) - People rely on the power, spaciousness, and flexibility of a Mac as they perform in-depth productivity tasks, view media or content, and play games, often using several apps at once.
+
+## Foundations of design
+Discover key concepts that shape every great experience. For more, see [Foundations](foundations.md).
+- [Accessibility](/design/human-interface-guidelines/accessibility) - Accessible user interfaces empower everyone to have a great experience with your app or game.
 - [App icons](/design/human-interface-guidelines/app-icons) - A unique, memorable icon expresses your app’s or game’s purpose and personality and helps people recognize it at a glance.
 - [Color](/design/human-interface-guidelines/color) - Judicious use of color can enhance communication, evoke your brand, provide visual continuity, communicate status and feedback, and help people understand information.
-- [Materials](/design/human-interface-guidelines/materials) - A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
 - [Layout](/design/human-interface-guidelines/layout) - A consistent layout that adapts to various contexts makes your experience more approachable and helps people enjoy their favorite apps and games on all their devices.
-- [Icons](/design/human-interface-guidelines/icons) - An effective icon is a graphic asset that expresses a single concept in ways people instantly understand.
-- [Accessibility](/design/human-interface-guidelines/accessibility) - Accessible user interfaces empower everyone to have a great experience with your app or game.
+- [Materials](/design/human-interface-guidelines/materials) - A material is a visual effect that creates a sense of depth, layering, and hierarchy between foreground and background elements.
+- [Typography](/design/human-interface-guidelines/typography) - Your typographic choices can help you display legible text, convey an information hierarchy, communicate important content, and express your brand or style.
 
 ## New and updated
-- [Multitasking](/design/human-interface-guidelines/multitasking) - Multitasking lets people switch quickly from one app to another, performing tasks in each.
-- [The menu bar](/design/human-interface-guidelines/the-menu-bar) - On a Mac or an iPad, the menu bar at the top of the screen displays the top-level menus in your app or game.
-- [Toolbars](/design/human-interface-guidelines/toolbars) - A toolbar provides convenient access to frequently used commands, controls, navigation, and search.
+Review recent additions and updates to design guidance. For more, see [What’s new](https://developer.apple.com/design/whats-new/).
+- [Menus](/design/human-interface-guidelines/menus) - A menu reveals its options when people interact with it, making it a space-efficient way to present commands in your app or game.
+- [Scroll views](/design/human-interface-guidelines/scroll-views) - A scroll view lets people view content that’s larger than the view’s boundaries by moving the content vertically or horizontally.
 - [Search fields](/design/human-interface-guidelines/search-fields) - A search field lets people search a collection of content for specific terms they enter.
-- [Game Center](/design/human-interface-guidelines/game-center) - Game Center is Apple’s social gaming network, which lets players track their progress and connect with friends across Apple platforms, and boosts the discovery of your game across players’ devices.
-- [Generative AI](/design/human-interface-guidelines/generative-ai) - Generative AI empowers you to enhance your app or game with dynamic content and offer intelligent features that unlock new levels of creativity, connection, and productivity.
+- [Sidebars](/design/human-interface-guidelines/sidebars) - A sidebar appears on the leading side of a view and lets people navigate between areas of your app or top-level collections of content, like folders and playlists.
+- [Siri](/design/human-interface-guidelines/siri) - People use Siri to help them with the things they need to find, know, or do every day.
+- [Snippets](/design/human-interface-guidelines/snippets) - When someone performs a task with Siri or an App Shortcut, a snippet shows the result or asks for confirmation.
 
 
 ## Topics

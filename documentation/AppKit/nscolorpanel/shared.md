@@ -20,7 +20,8 @@ The shared `NSColorPanel` instance.
 
 ## See Also
 
-- [Color Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/DrawColor.html#//apple_ref/doc/uid/10000082i)
+- [class NSColorPanel](nscolorpanel.md)
+  A standard user interface for selecting color in an app.
 - [class var sharedColorPanelExists: Bool](nscolorpanel/sharedcolorpanelexists.md)
   Returns  a Boolean value indicating whether the `NSColorPanel` has been created already.
 

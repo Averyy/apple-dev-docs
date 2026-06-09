@@ -6,6 +6,12 @@
 
 Deprecated. Use DADiskEject() at logout instead.
 
+## See Also
+
+- [kDADiskOptionMountAutomatic](kdadiskoptionmountautomatic.md)
+- [kDADiskOptionMountAutomaticNoDefer](kdadiskoptionmountautomaticnodefer.md)
+- [kDADiskOptionPrivate](kdadiskoptionprivate.md)
+
 
 ---
 

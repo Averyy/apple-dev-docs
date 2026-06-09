@@ -35,18 +35,7 @@ enum PhotoAlbumType: AppEnum {
 }
 ```
 
-For more information about the `.photos` app intent domain, see [`Making photo and video actions available to Siri and Apple Intelligence`](making-photo-and-video-actions-available-to-siri-and-apple-intelligence.md). For general information about app intent domains, see [`Integrating actions with Siri and Apple Intelligence`](integrating-actions-with-siri-and-apple-intelligence.md).
-
-## See Also
-
-- [var assetType: some AssistantSchemas.Enum](assistantschemas/photosenum/assettype.md)
-  The type of asset.
-- [var filterType: some AssistantSchemas.Enum](assistantschemas/photosenum/filtertype.md)
-  The filter effect for a photo or video.
-- [var rotationDirection: some AssistantSchemas.Enum](assistantschemas/photosenum/rotationdirection.md)
-  The direction for rotating a photo or video.
-- [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-  Assistant schema conformance for types you use to describe photos and videos.
+For more information about the `.photos` app intent domain, see doc:Making-photo-and-video-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
 
 
 ---

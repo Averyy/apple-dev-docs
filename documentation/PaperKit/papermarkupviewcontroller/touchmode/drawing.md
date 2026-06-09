@@ -18,6 +18,11 @@ Draw with the PencilKit tool.
 case drawing
 ```
 
+## See Also
+
+- [PaperMarkupViewController.TouchMode.selection](papermarkupviewcontroller/touchmode/selection.md)
+  Select strokes/elements on a canvas.
+
 
 ---
 

@@ -9,7 +9,6 @@ Returns the number of reads the framework performed using a Store and Forward se
 - iOS 18.4+
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
-- visionOS 2.4+
 
 ## Declaration
 

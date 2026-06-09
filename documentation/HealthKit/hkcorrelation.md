@@ -37,7 +37,7 @@ The [`HKCorrelation`](hkcorrelation.md) class is a concrete subclass of the [`HK
 
 ##### Extend Correlation Samples
 
-Like many HealthKit classes, the `HKCorrelation` class should not be subclassed. You can extend the correlation class by adding metadata with custom keys as appropriate for your app.
+As with many HealthKit classes, don’t subclass the [`HKCorrelation`](hkcorrelation.md) class. You can extend the correlation class by adding metadata with custom keys as appropriate for your app.
 
 For more information, see the [`init(type:start:end:objects:metadata:)`](hkcorrelation/init(type:start:end:objects:metadata:).md) method.
 

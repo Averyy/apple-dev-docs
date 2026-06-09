@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The response body for endpoints that list Game Center achievement localizations.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -34,9 +36,13 @@ object GameCenterAchievementLocalizationsResponse
 - [object GameCenterAchievementLocalizationV2ImageLinkageResponse](gamecenterachievementlocalizationv2imagelinkageresponse.md)
   A response that contains a single Game Center achievement localization v2 image linkage resource.
 - [object GameCenterAchievementLocalization](gamecenterachievementlocalization.md)
+  The localized name, description, and badge image for a Game Center achievement in a specific language.
 - [object GameCenterAchievementLocalizationCreateRequest](gamecenterachievementlocalizationcreaterequest.md)
+  The request body you use to create a Game Center achievement localization.
 - [object GameCenterAchievementLocalizationResponse](gamecenterachievementlocalizationresponse.md)
+  The response body for endpoints that create, read, or modify a single Game Center achievement localization.
 - [object GameCenterAchievementLocalizationUpdateRequest](gamecenterachievementlocalizationupdaterequest.md)
+  The request body you use to update a achievement.
 - [object GameCenterAchievementLocalizationGameCenterAchievementImageLinkageResponse](gamecenterachievementlocalizationgamecenterachievementimagelinkageresponse.md)
 - [object GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse](gamecenterachievementlocalizationgamecenterachievementlinkageresponse.md)
 - [object GameCenterAchievementLocalizationsLinkagesResponse](gamecenterachievementlocalizationslinkagesresponse.md)

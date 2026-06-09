@@ -9,7 +9,6 @@ A data model that provides guidance on when electricity is cleaner and less expe
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst ?+
-- macOS 26.0+
 
 ## Declaration
 

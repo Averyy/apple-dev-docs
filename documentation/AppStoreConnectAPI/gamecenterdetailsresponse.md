@@ -3,7 +3,7 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
-A response that contains a list of Game Center detail resources.
+The response body for endpoints that list Game Center details resources.
 
 **Availability**:
 - App Store Connect API 3.0+
@@ -24,7 +24,7 @@ object GameCenterDetailsResponse
 ## See Also
 
 - [object GameCenterDetail](gamecenterdetail.md)
-  The data structure that represents a Game Center detail resource.
+  The Game Center configuration for an app, linking it to leaderboards, achievement sets, and groups.
 - [object GameCenterDetailCreateRequest](gamecenterdetailcreaterequest.md)
   The request body you use to create a Game Center detail.
 - [object GameCenterDetailGameCenterAchievementsV2LinkagesRequest](gamecenterdetailgamecenterachievementsv2linkagesrequest.md)
@@ -52,7 +52,7 @@ object GameCenterDetailsResponse
 - [object GameCenterDetailGameCenterLeaderboardsLinkagesResponse](gamecenterdetailgamecenterleaderboardslinkagesresponse.md)
   A response that confirms a relationship between a Game Center detail and a leaderboard.
 - [object GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest](gamecenterdetailchallengesminimumplatformversionslinkagesrequest.md)
-  The data structure that represents a detail resource.
+  The request body for updating the minimum platform versions required for challenges in a Game Center detail.
 
 
 ---

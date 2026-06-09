@@ -8,6 +8,7 @@ The list of trusted server names the framework uses to verify a server’s certi
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

@@ -36,6 +36,7 @@ To add this trait to a test, use [`serialized`](trait/serialized.md).
 
 ### Conforms To
 - [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

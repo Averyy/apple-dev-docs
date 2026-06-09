@@ -26,6 +26,8 @@ Use this property to determine which transport the current instance handles, and
 
 - [var transportStateRestoreIdentifier: String?](accessorytransportsession/transportstaterestoreidentifier.md)
   An optional identifier for restoring transport state across sessions.
+- [var pushToken: Data?](accessorytransportsession/pushtoken.md)
+  A token that identifies the iOS device to the Apple Push Notification service for routing accessory responses over the internet.
 
 
 ---

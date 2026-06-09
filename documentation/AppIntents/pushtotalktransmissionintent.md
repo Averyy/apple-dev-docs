@@ -8,6 +8,7 @@ An intent that begins or ends an audio transmission with the Push to Talk framew
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 - visionOS ?+
 
 ## Declaration
@@ -28,6 +29,13 @@ Create an app intent that confirms to this protocol to manually start or end an 
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SystemIntent](systemintent.md)
+
+## See Also
+
+- [protocol ProgressReportingIntent](progressreportingintent.md)
+  An intent that reports progress to the system during its execution
+- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+  An app intent that takes a person to search results for a specified search term.
 
 
 ---

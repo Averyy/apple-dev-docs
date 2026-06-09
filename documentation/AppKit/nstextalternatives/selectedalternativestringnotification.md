@@ -22,6 +22,8 @@ Arbitrary objects can listen for for this notification to get user selections of
 | --- | --- |
 | `@"NSAlternativeString"` | The selected alternative string. |
 
+To observe this notification using Swift concurrency, use [`NSTextAlternatives.SelectedAlternativeStringMessage`](nstextalternatives/selectedalternativestringmessage.md).
+
 
 ---
 

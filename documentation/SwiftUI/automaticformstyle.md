@@ -17,6 +17,7 @@ The default form style.
 ## Declaration
 
 ```swift
+nonisolated
 struct AutomaticFormStyle
 ```
 

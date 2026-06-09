@@ -10,7 +10,7 @@ Terminations are part of the app lifecycle, when the system stops your process. 
 
 When the system terminates your app, your app must re-launch the next time a user activates it. A re-launch is much slower than re-activating your app.
 
-View Termination data using the [`Xcode Organizer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10076/) or collect data in your app using MetricKit’s [`MXAppExitMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/mxappexitmetric).
+View Termination data using the [`Xcode Organizer`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10076/) or collect data in your app using MetricKit’s [`ForegroundTerminationMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/foregroundterminationmetric) and [`BackgroundTerminationMetric`](https://developer.apple.comhttps://developer.apple.com/documentation/metrickit/backgroundterminationmetric).
 
 ![Screenshot of the Terminations pane in the Xcode Organizer. From left to right is the list of metrics and reports, Report List, the foreground and background terminations charts, and the Inspector with additional details for the selected and latest app versions.  ](https://docs-assets.developer.apple.com/published/976cb841e717d92b5eea7b4f7ecdd798/reduce-terminations-in-your-app-1%402x.png)
 

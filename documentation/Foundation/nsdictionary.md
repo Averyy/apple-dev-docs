@@ -156,6 +156,8 @@ If the behavior you want to add supplements that of the existing class, you coul
   Initializes a newly allocated dictionary by placing in it the keys and values contained in another given dictionary.
 - [convenience init(dictionary: [AnyHashable : Any], copyItems: Bool)](nsdictionary/init(dictionary:copyitems:).md)
   Initializes a newly allocated dictionary using the objects contained in another given dictionary.
+- [convenience init(dictionaryLiteral: (Any, Any)...)](nsdictionary/init(dictionaryliteral:).md)
+  Initializes a newly allocated dictionary from the given key-value pairs.
 ### Creating a Dictionary from an External Source
 - [convenience init(contentsOfURL: URL, error: ()) throws](nsdictionary/init(contentsofurl:error:).md)
   Initializes a newly allocated dictionary using the keys and values found at a given URL.
@@ -262,12 +264,18 @@ If the behavior you want to add supplements that of the existing class, you coul
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
 - [func description(withLocale: Any?, indent: Int) -> String](nsdictionary/description(withlocale:indent:).md)
   Returns a string object that represents the contents of the dictionary, formatted as a property list.
+### Supporting Types
+- [NSDictionary.Iterator](nsdictionary/iterator.md)
+  A class that you use to provide members of a dictionary, one-by-one.
 ### Initializers
 - [convenience init?(contentsOf: URL)](nsdictionary/init(contentsof:).md)
+  Initializes a newly allocated dictionary using the keys and values found at a given URL.
 - [convenience init(contentsOf: URL, error: ()) throws](nsdictionary/init(contentsof:error:).md)
+  Initializes a newly allocated dictionary using the keys and values found at a given URL.
 - [convenience init(dictionary: NSDictionary)](nsdictionary/init(dictionary:)-4gc13.md)
   Initializes a newly allocated dictionary and adds to it objects from another given dictionary.
 ### Default Implementations
+- [ExpressibleByDictionaryLiteral Implementations](nsdictionary/expressiblebydictionaryliteral-implementations.md)
 - [NSDictionary Implementations](nsdictionary/nsdictionary-implementations.md)
 - [Sequence Implementations](nsdictionary/sequence-implementations.md)
 

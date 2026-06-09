@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: property
 
+An option to skip hidden files.
+
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+

@@ -11,7 +11,6 @@ Information the system uses to query the app extension for context.
 - Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+A response containing a single TestFlight license agreement, without related resources.
+
 **Availability**:
 - App Store Connect API 3.0+
 
@@ -20,13 +22,13 @@ object BetaLicenseAgreementWithoutIncludesResponse
 ## See Also
 
 - [object BetaLicenseAgreement](betalicenseagreement.md)
-  The data structure that represents a Beta License Agreements resource.
+  The custom terms and conditions presented to TestFlight testers before they begin testing an app.
 - [object BetaLicenseAgreementUpdateRequest](betalicenseagreementupdaterequest.md)
   The request body you use to update a Beta License Agreement.
 - [object BetaLicenseAgreementsResponse](betalicenseagreementsresponse.md)
-  A response that contains a list of Beta License Agreement resources.
+  The response body for endpoints that list TestFlight license agreements.
 - [object BetaLicenseAgreementResponse](betalicenseagreementresponse.md)
-  A response that contains a single Beta License Agreements resource.
+  The response body for endpoints that read or modify the TestFlight license agreement for an app.
 - [object BetaLicenseAgreementAppLinkageResponse](betalicenseagreementapplinkageresponse.md)
 
 

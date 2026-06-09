@@ -6,6 +6,9 @@
 Sets the default leaderboard for the local player.
 
 **Availability**:
+- iOS 5.0+
+- iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

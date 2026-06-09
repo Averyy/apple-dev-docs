@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: struct
 
-A tool to detect whether the directory contents changed since the last call to enumerate a directory.
+Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
 
 **Availability**:
 - macOS 15.4+
@@ -14,22 +14,14 @@ A tool to detect whether the directory contents changed since the last call to e
 struct FSDirectoryVerifier
 ```
 
-#### Overview
-
-Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
-
-A tool to detect whether the directory contents changed since the last call to enumerate a directory.
-
-Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
-
 ## Topics
 
-### Initializing a verifier
-- [init(UInt64)](fsdirectoryverifier/init(_:).md)
-- [init(rawValue: UInt64)](fsdirectoryverifier/init(rawvalue:).md)
 ### Using defined verifier values
 - [static let initial: FSDirectoryVerifier](fsdirectoryverifier/initial.md)
   The constant initial value for the directory-enumeration verifier.
+### Initializers
+- [init(UInt64)](fsdirectoryverifier/init(_:).md)
+- [init(rawValue: UInt64)](fsdirectoryverifier/init(rawvalue:).md)
 
 ## Relationships
 
@@ -43,7 +35,7 @@ Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:pac
 
 ## See Also
 
-- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, replyHandler: (FSDirectoryVerifier, (any Error)?) -> Void)](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md)
+- [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md)
   Enumerates the contents of the given directory.
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
@@ -51,6 +43,8 @@ Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:pac
   A value that indicates a location in a directory from which to enumerate.
 - [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
   An object used to provide items during a directory enumeration.
+- [class FSEnumerateDirectoryResult](fsenumeratedirectoryresult.md)
+  The result of an enumerate-directory call.
 
 
 ---

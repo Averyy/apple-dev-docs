@@ -22,7 +22,7 @@ func timeSnapshot(with params: MTRGeneralDiagnosticsClusterTimeSnapshotParams?) 
 
 #### Discussion
 
-Take a snapshot of system time and epoch time.
+This command MAY be used by a client to obtain a correlated view of both System Time, and, if currently synchronized and supported, “wall clock time” of the server.
 
 
 ---

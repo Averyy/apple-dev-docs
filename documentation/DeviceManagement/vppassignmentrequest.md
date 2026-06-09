@@ -6,8 +6,7 @@
 The request for a list of assignments.
 
 **Availability**:
-- Device Assignment Services ?+
-- VPP License Management ?+
+- VPP License Management 1.1+
 
 ## Declaration
 

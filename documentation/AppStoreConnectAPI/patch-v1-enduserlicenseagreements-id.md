@@ -1,4 +1,4 @@
-# Modify an End User License Agreement
+# Modify an end user license agreement
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -139,9 +139,9 @@ PATCH https://api.appstoreconnect.apple.com/v1/endUserLicenseAgreements/b25d1669
 
 ## See Also
 
-- [Create an End User License Agreement](post-v1-enduserlicenseagreements.md)
+- [Create an end user license agreement](post-v1-enduserlicenseagreements.md)
   Add a custom end user license agreement (EULA) to an app and configure the territories to which it applies.
-- [Delete an End User License Agreement](delete-v1-enduserlicenseagreements-_id_.md)
+- [Delete an end user license agreement](delete-v1-enduserlicenseagreements-_id_.md)
   Delete the custom end user license agreement that is associated with an app.
 
 

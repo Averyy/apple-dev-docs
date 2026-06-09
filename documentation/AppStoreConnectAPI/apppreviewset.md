@@ -35,9 +35,9 @@ object AppPreviewSet
 - [object AppPreviewSetCreateRequest](apppreviewsetcreaterequest.md)
   The request body you use to create an App Preview Set.
 - [object AppPreviewSetResponse](apppreviewsetresponse.md)
-  A response that contains a single App Preview Sets resource.
+  The response body for endpoints that create or read a set of app preview videos for a display size.
 - [object AppPreviewSetsResponse](apppreviewsetsresponse.md)
-  A response that contains a list of App Preview Set resources.
+  The response body for endpoints that list app preview sets for an App Store version localization.
 - [object AppPreviewSetAppPreviewsLinkagesRequest](apppreviewsetapppreviewslinkagesrequest.md)
   A request body you use to reorder the app previews in a preview set.
 - [object AppPreviewSetAppPreviewsLinkagesResponse](apppreviewsetapppreviewslinkagesresponse.md)

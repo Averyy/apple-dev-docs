@@ -16,7 +16,7 @@ Adds a context menu to a table row.
 
 ```swift
 @MainActor
-@preconcurrency func contextMenu<M>(@ViewBuilder menuItems: () -> M) -> ModifiedContent<Self, _ContextMenuTableRowModifier<M>> where M : View
+@preconcurrency func contextMenu<M>(@ContentBuilder menuItems: () -> M) -> ModifiedContent<Self, _ContextMenuTableRowModifier<M>> where M : View
 ```
 
 #### Return Value

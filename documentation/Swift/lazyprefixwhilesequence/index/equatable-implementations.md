@@ -5,7 +5,7 @@
 ## Topics
 
 ### Operators
-- [static func != (Self, Self) -> Bool](lazyprefixwhilesequence/index/!=(_:_:).md)
+- [static func != (borrowing Self, borrowing Self) -> Bool](lazyprefixwhilesequence/index/!=(_:_:).md)
   Returns a Boolean value indicating whether two values are not equal.
 - [static func == (LazyPrefixWhileCollection<Base>.Index, LazyPrefixWhileCollection<Base>.Index) -> Bool](lazyprefixwhilesequence/index/==(_:_:).md)
   Returns a Boolean value indicating whether two values are equal.

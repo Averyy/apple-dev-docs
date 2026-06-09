@@ -9,7 +9,7 @@ Tells the delegate when the system interrupts the audio player’s playback.
 - iOS 2.2+
 - iPadOS 2.2+
 - Mac Catalyst 13.1+
-- tvOS ?+
+- tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+
 

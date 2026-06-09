@@ -15,6 +15,7 @@ A built-in set of commands for manipulating window toolbars.
 ## Declaration
 
 ```swift
+nonisolated
 struct ToolbarCommands
 ```
 

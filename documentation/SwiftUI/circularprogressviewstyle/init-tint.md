@@ -17,6 +17,7 @@ Creates a circular progress view style with a tint color.
 ## Declaration
 
 ```swift
+nonisolated
 init(tint: Color)
 ```
 

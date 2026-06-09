@@ -12,11 +12,12 @@ A protocol that defines the methods to respond to audio playback events and deco
 - macOS ?+
 - tvOS ?+
 - visionOS ?+
-- watchOS 3.0+
+- watchOS ?+
 
 ## Declaration
 
 ```swift
+@MainActor
 protocol AVAudioPlayerDelegate : NSObjectProtocol
 ```
 

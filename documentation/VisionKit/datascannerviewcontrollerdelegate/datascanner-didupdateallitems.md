@@ -9,6 +9,7 @@ Responds when the data scanner updates the geometry of an item it recognizes.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

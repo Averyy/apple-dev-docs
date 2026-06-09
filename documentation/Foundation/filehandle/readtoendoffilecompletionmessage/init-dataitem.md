@@ -3,6 +3,8 @@
 **Framework**: Foundation  
 **Kind**: init
 
+Creates a message that indicates a file handle reached the end of a file or the data.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -17,6 +19,10 @@
 ```swift
 init(dataItem: Result<Data, POSIXError>)
 ```
+
+## Parameters
+
+- `dataItem`: A result instance that contains either the data read in or an error.
 
 
 ---

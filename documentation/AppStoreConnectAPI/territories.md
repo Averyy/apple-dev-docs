@@ -13,19 +13,20 @@ For more information see [`Set availability for your app`](https://developer.app
 ## Topics
 
 ### Getting Territories
-- [List Territories](get-v1-territories.md)
+- [List territories](get-v1-territories.md)
   List all territories where the App Store operates.
-- [List All Territories for an End User License Agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
+- [List all territories for an end user license agreement](get-v1-enduserlicenseagreements-_id_-territories.md)
   List all the App Store territories to which a specific custom app license agreement applies.
-- [GET /v1/endUserLicenseAgreements/{id}/relationships/territories](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
+- [List territory IDs for an end user license agreement](get-v1-enduserlicenseagreements-_id_-relationships-territories.md)
 ### Objects
 - [object Territory](territory.md)
-  The data structure that represents a Territories resource.
+  An App Store region (country or territory) where apps, subscriptions, and in-app purchases are offered.
 - [object TerritoryResponse](territoryresponse.md)
-  A response that contains a single Territories resource.
+  The response body for endpoints that read a single App Store territory.
 - [object TerritoriesWithoutIncludesResponse](territorieswithoutincludesresponse.md)
+  A response containing a list of App Store territories, without related resources.
 - [object TerritoriesResponse](territoriesresponse.md)
-  A response that contains a list of Territory resources.
+  The response body for endpoints that list available App Store territories.
 
 
 ---

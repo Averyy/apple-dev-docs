@@ -17,8 +17,8 @@ The content of the list.
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency var body: some View { get }
+nonisolated
+var body: some View { get }
 ```
 
 

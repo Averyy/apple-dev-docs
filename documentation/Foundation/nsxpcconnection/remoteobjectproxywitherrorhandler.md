@@ -27,6 +27,7 @@ See descriptions in [`NSXPCProxyCreating`](nsxpcproxycreating.md) for more detai
 ## See Also
 
 - [func synchronousRemoteObjectProxyWithErrorHandler((any Error) -> Void) -> Any](nsxpcconnection/synchronousremoteobjectproxywitherrorhandler(_:).md)
+  Returns a proxy that makes a synchronous IPC call instead of the default async behavior.
 
 
 ---
