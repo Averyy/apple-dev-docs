@@ -17,6 +17,7 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 ###### Known Issues
 
 - When streaming `stdout` and `stderr` from multiple processes at the same time (for example: in parallel testing scenarios), the results may be significantly delayed.  (165098287)
+- Due to a timing issue with the installation package, Simulator devices may not appear in Device Hub.  (179040327) (FB22978070) **Workaround:** Reboot or `killall –9 CoreDeviceService`.
 
 ##### Address Sanitizer
 
@@ -144,6 +145,8 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 
 - If the plan-mode confirmation bar (“Implement the plan?” with Yes/No buttons) appears while the agent is still streaming a response, clicking either button may trigger a new agent turn on top of the in-flight one, leaving the conversation in an inconsistent state. As a workaround, wait for the agent to finish responding before confirming or dismissing the plan.  (178673449)
 - ACP agents added as part of agent plug-ins may not leave Xcode’s UI until relaunching Xcode.  (178771195)
+- If a deep link targeting the new beta is invoked on a system where an older version is set as the active developer tool, the link will be claimed by the older installation rather than the beta.  (179126594) **Workaround:** Ensure the beta is set as the active selection via `xcode-select` before using the deep link.
+- Apple-authored agent skills may not be available to Codex.  (179171480) **Workaround:** After using `xcode-select` to set Xcode 27 as your default Xcode, open a terminal and run `xcrun agent skills export --replace-existing ~/Library/Developer/Xcode/CodingAssistant/codex/skills/__xcode`.
 
 ##### Console
 
@@ -164,8 +167,7 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 ###### New Features
 
 - In projects using bridging headers, LLDB can now directly import explicitly built Swift modules and PCH from DerivedData. This can dramatically speed up the first expression or `po` in a debug session involving a bridging header. (168272248)
-- LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks.  (176282041)
-- LLDB now ships with an MCP server (lldb-mcp). See https://lldb.llvm.org/use/mcp.html for examples.  (176901842)
+- LLDB now provides a `language swift task tree` command, which prints a tree of all the Swift Tasks the debugger knows about. For more information, see the output of `help language swift task tree`.  (169471480)
 
 ##### Deprecations
 
@@ -277,6 +279,10 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 ###### New Features
 
 - Introducing a new Interface Builder compilation mode, `toolchain`, for UIKit (Cocoa Touch) based documents. Enabled by default, `toolchain` allows compiling IB documents without the need to download a simulator, which is especially useful for build servers. Should you experience issues during this transition period, you can opt out via the `IBC_COCOATOUCH_COMPILER_MODE = simulator` build setting or using `--cocoatouch-compiler-mode simulator` when manually invoking `ibtool`. If you opt out, please file Feedback and include any errors you may have received from `ibtool` so we can investigate.  (114401122)
+
+###### Known Issues
+
+- Xcode Settings > Components will show no “Get” button if a simulator was previously downloaded and used with Rosetta.   (179042726) (FB22978644) **Workaround:** Download the most recent simulator runtime from xcodebuild specifying `-architectureVariant arm64`. Example: `xcodebuild -downloadPlatform iOS -architectureVariant arm64`.
 
 ##### Linking
 
@@ -441,6 +447,17 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 ``` The function `takesSmartPtr` is imported to Swift as: ```None
  func takesSmartPtr(_ p: SharedObj?)
 ``` (156521316)
+- Previously, safe wrappers could not be generated for functions where the signature contained template instantiations. Any template instantiation would have to be referred to using a typedef instead. Safe wrappers can now be generated for functions without wrapping `std::span` parameter types in typedefs, if they are annotated with `__noescape`. Any other template instantiation in the signature still prevents generating a safe wrapper, unless hidden behind a typedef. Example: ```c++
+ // Already supported:
+ using IntSpan = std::span<int>;
+ void foo(IntSpan x __noescape);
+ 
+ // Now this also works:
+ void bar(std::span<int> y __noescape);
+ 
+ // The return type template instantiation here still prevents generating a safe wrapper:
+ std::span<int> baz(std::span<int> z __noescape);
+``` (167712240)
 
 ##### System
 

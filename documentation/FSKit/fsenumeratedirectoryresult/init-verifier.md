@@ -25,9 +25,9 @@ A populated result instance, or `nil` if validation fails.
 ## See Also
 
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 
 
 ---

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-09T07:27:59.328449",
+    "last_updated": "2026-06-12T07:41:47.163847",
     "total_pages": 708,
-    "session_id": "2026-06-09T07:27:45.768805"
+    "session_id": "2026-06-12T07:41:21.647803"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ActivityKit.json": {
       "hash": "6840fd7642b8998e60068ead0283bc27cb48a945d2fde843b27a80f2f5eb4d85",
-      "last_checked": "2026-06-09T07:27:46.011872",
+      "last_checked": "2026-06-12T07:41:22.108145",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"382c816e68a5b7af30ba4dde83b76993\"",
       "file_path": "documentation/ActivityKit/ActivityKit.md"
     },
     "https://developer.apple.com/documentation/ActivityKit": {
       "hash": "6840fd7642b8998e60068ead0283bc27cb48a945d2fde843b27a80f2f5eb4d85",
-      "last_checked": "2026-06-09T07:27:45.911471",
+      "last_checked": "2026-06-12T07:41:21.984136",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"382c816e68a5b7af30ba4dde83b76993\"",
       "file_path": "documentation/ActivityKit/ActivityKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/displaying-live-data-with-live-activities.json": {
       "hash": "f49dc9c9e7b14ec3b66b9f25714f74c12d60332ffc7374f4020d964a2218960e",
-      "last_checked": "2026-06-09T07:27:46.233982",
+      "last_checked": "2026-06-12T07:41:22.609412",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"48cc19db27d03f7468993289b1925bc3\"",
       "file_path": "documentation/ActivityKit/displaying-live-data-with-live-activities.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/starting-and-updating-live-activities-with-activitykit-push-notifications.json": {
       "hash": "2b55b918d4fe6d032a503662eb295917f0c9ceea8a2319148dfbc2fc6ce0569c",
-      "last_checked": "2026-06-09T07:27:46.390137",
+      "last_checked": "2026-06-12T07:41:23.029829",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"10a6b364e8f4c6ad45b9c849537776e1\"",
       "file_path": "documentation/ActivityKit/starting-and-updating-live-activities-with-activitykit-push-notifications.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity.json": {
       "hash": "ae14b098a61ed921c549a5b1faa158b1572235038fda13dcc0b555d1dad0a26a",
-      "last_checked": "2026-06-09T07:27:46.509856",
+      "last_checked": "2026-06-12T07:41:23.369006",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"5ad7b35495e64bc86329aeef606b99f3\"",
       "file_path": "documentation/ActivityKit/activity.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/creating-custom-views-for-live-activities.json": {
       "hash": "879b6bec0ee44a34ff1b3b04bd942900097ec8e19dd50ba551a35efcfdf859fa",
-      "last_checked": "2026-06-09T07:27:46.566172",
+      "last_checked": "2026-06-12T07:41:23.716103",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"023e07a68a0863758e25e6983fa30490\"",
       "file_path": "documentation/ActivityKit/creating-custom-views-for-live-activities.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/adding-accessible-descriptions-to-widgets-and-live-activities.json": {
       "hash": "8b5f70ab098509cdc9c98ad9106554ec91d1ad0e7fce10cda8f0158db1e302b8",
-      "last_checked": "2026-06-09T07:27:46.624022",
+      "last_checked": "2026-06-12T07:41:23.882260",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"35055211576555f542c9931423c38c37\"",
       "file_path": "documentation/ActivityKit/adding-accessible-descriptions-to-widgets-and-live-activities.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/launching-your-app-from-a-live-activity.json": {
       "hash": "2ccd6b03425ec2928878c00d7bce5503a3832382ea4adbcd35487e01c0535f96",
-      "last_checked": "2026-06-09T07:27:46.703088",
+      "last_checked": "2026-06-12T07:41:24.224864",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"76f9c6e3b6f43bea8d4172ff851de3be\"",
       "file_path": "documentation/ActivityKit/launching-your-app-from-a-live-activity.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:content:pushtype:).json": {
       "hash": "5d0b8284ea8be72af5747edf9d499f21ed9927fc768ad628f6e8e42b7a23c05d",
-      "last_checked": "2026-06-09T07:27:46.781354",
+      "last_checked": "2026-06-12T07:41:24.388723",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"e30928e975a5c8e002c2804c18ae98b9\"",
       "file_path": "documentation/ActivityKit/activity/request-attributescontentpushtype.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:content:pushtype:style:).json": {
       "hash": "7cdd987a34019633c1b8c94a634036ad7802cfde06b3581ef69df9ddc3d75a63",
-      "last_checked": "2026-06-09T07:27:46.855932",
+      "last_checked": "2026-06-12T07:41:24.567978",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"bde9c0dc2927ab795dd51f8659cae5d3\"",
       "file_path": "documentation/ActivityKit/activity/request-attributescontentpushtypestyle.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:content:pushtype:style:alertconfiguration:start:).json": {
       "hash": "f7ce277a14175fa93df69cb7f933011bd373a8e0a4c266dc1dc1149c12a73721",
-      "last_checked": "2026-06-09T07:27:46.916697",
+      "last_checked": "2026-06-12T07:41:25.058638",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"95533890f92990f32cacb39b0d244206\"",
       "file_path": "documentation/ActivityKit/activity/request-attributescontentpushtypestylealertconfigurationstart.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:content:pushtype:style:alertconfiguration:startdate:).json": {
       "hash": "b20110c6c513b4f87f643508de6dda1416a5106c5ae1fc78791f559a37bb1ea6",
-      "last_checked": "2026-06-09T07:27:47.010921",
+      "last_checked": "2026-06-12T07:41:25.395021",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"3bf4c202660cabd7725edf1ec5922176\"",
       "file_path": "documentation/ActivityKit/activity/request-attributescontentpushtypestylealertconfigurationstartdate.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/attributes.json": {
       "hash": "68fde6bef4318912665eb3865870e9489174b42e49a7df2ab20fb7ec0e1c13b8",
-      "last_checked": "2026-06-09T07:27:47.082408",
+      "last_checked": "2026-06-12T07:41:25.588928",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0fbeaa7dc029fe5a4d12b302c46698be\"",
       "file_path": "documentation/ActivityKit/activity/attributes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityattributes.json": {
       "hash": "2e88745c7450beb9799138499d30855b50a226088feec9ad73cd263e7889c2f9",
-      "last_checked": "2026-06-09T07:27:47.172012",
+      "last_checked": "2026-06-12T07:41:25.926171",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"7feb853a96d5bae1236a7baafe4613cc\"",
       "file_path": "documentation/ActivityKit/activityattributes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystyle.json": {
       "hash": "f8900f944032ebdeb214d66d53cc2cc7b7512e49112c52acbb14c265a34c81cd",
-      "last_checked": "2026-06-09T07:27:47.222277",
+      "last_checked": "2026-06-12T07:41:26.133924",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"e94e91bf99b9a156926f1a3ba57db384\"",
       "file_path": "documentation/ActivityKit/activitystyle.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/content.json": {
       "hash": "c99f7eab41034aa1f484959ba8f75ae48f75e26fe2724cbe6f22e4ede63d777d",
-      "last_checked": "2026-06-09T07:27:47.291104",
+      "last_checked": "2026-06-12T07:41:26.310636",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"5f94cf98db20efa44d0dd964307b3b71\"",
       "file_path": "documentation/ActivityKit/activity/content.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitycontent.json": {
       "hash": "2a71a1fd4fc1086f097c93dd98497a493f5a3e8d80defc19fb939369f9c62e84",
-      "last_checked": "2026-06-09T07:27:47.349265",
+      "last_checked": "2026-06-12T07:41:26.471056",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"4ae87b5a8f738808326837479afebc2c\"",
       "file_path": "documentation/ActivityKit/activitycontent.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstate-swift.typealias.json": {
       "hash": "5b96615dd6d2f154089e8809a6c059db509b49da7714f10acaf6e5224c007008",
-      "last_checked": "2026-06-09T07:27:47.444513",
+      "last_checked": "2026-06-12T07:41:26.819112",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"7578464e5a698763fcfbe50c3210eea7\"",
       "file_path": "documentation/ActivityKit/activity/contentstate-swifttypealias.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/pushtype.json": {
       "hash": "4a96a4628345a97339596426d4a1de96429e3bcb6d0347c3cad5ae1129fcdd6e",
-      "last_checked": "2026-06-09T07:27:47.506039",
+      "last_checked": "2026-06-12T07:41:27.163356",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"3bbaa386a16be925f451d677de59a398\"",
       "file_path": "documentation/ActivityKit/pushtype.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror.json": {
       "hash": "51127f3e422739be654f740a66acd1f0b8c1dff997657e324c16dceaf7c90493",
-      "last_checked": "2026-06-09T07:27:47.579451",
+      "last_checked": "2026-06-12T07:41:27.364728",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"187aaf3b4e421e64e9935776724ea5f3\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(_:).json": {
       "hash": "76db6d108f90b2c48ed8c6a15579ed5032ff2dd0e403003bce335d3b8537b4ee",
-      "last_checked": "2026-06-09T07:27:47.794512",
+      "last_checked": "2026-06-12T07:41:27.532273",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"83d7a5fb142ab9b6f6941576822c426b\"",
       "file_path": "documentation/ActivityKit/activity/update.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(_:alertconfiguration:).json": {
       "hash": "4b6ccf96ead568c5381701b95662aff54673d22c4a73ac76cfc855551e6b25ed",
-      "last_checked": "2026-06-09T07:27:47.871868",
+      "last_checked": "2026-06-12T07:41:27.886659",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"d565415922aa8c549a089d527a7feb02\"",
       "file_path": "documentation/ActivityKit/activity/update-alertconfiguration.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration.json": {
       "hash": "e3add53f60a623d85151b86151944b13994ab3fa6ae2c3df34babd39abf5e838",
-      "last_checked": "2026-06-09T07:27:47.915092",
+      "last_checked": "2026-06-12T07:41:28.280405",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"1b868a6b27d0bcd6d13da118f9519774\"",
       "file_path": "documentation/ActivityKit/alertconfiguration.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(_:alertconfiguration:timestamp:).json": {
       "hash": "300b2650732379b07d983a58f184f2fb31898b23818d54a9a14d5d48bdb7203a",
-      "last_checked": "2026-06-09T07:27:47.970314",
+      "last_checked": "2026-06-12T07:41:28.468655",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"8f325184ce373667f4337add0e2a1a04\"",
       "file_path": "documentation/ActivityKit/activity/update-alertconfigurationtimestamp.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/end(_:dismissalpolicy:).json": {
       "hash": "c76277d79717f78a2a7f159207737adea121e05c927abd5a01d2de2836a48d1e",
-      "last_checked": "2026-06-09T07:27:48.223532",
+      "last_checked": "2026-06-12T07:41:28.629567",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"8e6453e47c4e380d5467e4f436e06a2f\"",
       "file_path": "documentation/ActivityKit/activity/end-dismissalpolicy.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityuidismissalpolicy.json": {
       "hash": "de027cdfebdb16ffbe582472e75dce5573b1b83a8b22477b7611e6a4b86d016a",
-      "last_checked": "2026-06-09T07:27:48.470378",
+      "last_checked": "2026-06-12T07:41:28.813110",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b13647a356d423885b0a4a2be2583412\"",
       "file_path": "documentation/ActivityKit/activityuidismissalpolicy.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/end(_:dismissalpolicy:timestamp:).json": {
       "hash": "92edb6c6db38a9ffdf2744c0ff281f0a9041c649b3f2884ec924b01644276264",
-      "last_checked": "2026-06-09T07:27:48.523032",
+      "last_checked": "2026-06-12T07:41:28.984516",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"dc1c0373fae5522f26a80e1713a68b80\"",
       "file_path": "documentation/ActivityKit/activity/end-dismissalpolicytimestamp.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentupdates-swift.property.json": {
       "hash": "c4b9172d8c1dd27b1864c1cbbf6573e73eca78aee2007824a873ad75774de83d",
-      "last_checked": "2026-06-09T07:27:48.641128",
+      "last_checked": "2026-06-12T07:41:29.151853",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"820097769285e16010782d815fddfcdb\"",
       "file_path": "documentation/ActivityKit/activity/contentupdates-swiftproperty.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentupdates-swift.struct.json": {
       "hash": "e70adeef1a77f25eeefde79f7bda42908befb79e7c8168291ffbab3caf2bf861",
-      "last_checked": "2026-06-09T07:27:48.738362",
+      "last_checked": "2026-06-12T07:41:29.489910",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"66563b1ea7646606739ad8729fa816d1\"",
       "file_path": "documentation/ActivityKit/activity/contentupdates-swiftstruct.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystate.json": {
       "hash": "1aa14d768cf6af565c3fd80a58dced06bfe7544e2cd5228f5924ce56e46015bd",
-      "last_checked": "2026-06-09T07:27:48.847783",
+      "last_checked": "2026-06-12T07:41:29.807205",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"c194a2afebe463bb88daa10df11cc693\"",
       "file_path": "documentation/ActivityKit/activity/activitystate.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate.json": {
       "hash": "86e1f822f4a22ec1f5d71976f13d11eb7063291b2c2a141cd4bb481b1ed8cb76",
-      "last_checked": "2026-06-09T07:27:49.069280",
+      "last_checked": "2026-06-12T07:41:29.991820",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"560303cb8d01c1726cdc12d0bb4f5dff\"",
       "file_path": "documentation/ActivityKit/activitystate.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystateupdates-swift.property.json": {
       "hash": "24514bb91a2005e9e91716716d0f8c56330a027ba035376749e481837f8464da",
-      "last_checked": "2026-06-09T07:27:49.112526",
+      "last_checked": "2026-06-12T07:41:30.193622",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0e4d848ff1ca19f168017db61b780934\"",
       "file_path": "documentation/ActivityKit/activity/activitystateupdates-swiftproperty.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystateupdates-swift.struct.json": {
       "hash": "35cb5257c81c2f04b136eb6fdb06925a524bf46bb8661325aebd12a47bebdddd",
-      "last_checked": "2026-06-09T07:27:49.384145",
+      "last_checked": "2026-06-12T07:41:30.588461",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b892e1fc6d48767407790df1c7892342\"",
       "file_path": "documentation/ActivityKit/activity/activitystateupdates-swiftstruct.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtoken.json": {
       "hash": "e50f08bde65155cebb8ef8b01a41d27e9ab1a075726d4b7222f9130b8ea9e136",
-      "last_checked": "2026-06-09T07:27:49.424291",
+      "last_checked": "2026-06-12T07:41:30.765632",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"948028195fd7293ac769df27bcdc61ac\"",
       "file_path": "documentation/ActivityKit/activity/pushtoken.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtokenupdates-swift.property.json": {
       "hash": "49675b9d8f3fc0d5d53588c0fa1d2ee66cfc8cdbb44fafdf349445e6caabcbdd",
-      "last_checked": "2026-06-09T07:27:49.677134",
+      "last_checked": "2026-06-12T07:41:30.954003",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b5c000dc2a91383ca430dae1d503a056\"",
       "file_path": "documentation/ActivityKit/activity/pushtokenupdates-swiftproperty.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtokenupdates-swift.struct.json": {
       "hash": "0a82b476fb0792569e4b67fd4b83bb0a3c1fce5da8e02d387a82fe1aa1a14842",
-      "last_checked": "2026-06-09T07:27:49.774290",
+      "last_checked": "2026-06-12T07:41:31.304908",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"12fcf39dc8f94da33c4b04dc41b350a9\"",
       "file_path": "documentation/ActivityKit/activity/pushtokenupdates-swiftstruct.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtostarttoken.json": {
       "hash": "5c629a14c55bcbd5c6c26475e8ad0c2588bad1bf0f29bd0302b61eb2ef6cef6e",
-      "last_checked": "2026-06-09T07:27:49.992692",
+      "last_checked": "2026-06-12T07:41:31.696263",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"44e6837aae61791aed19736b75a286a3\"",
       "file_path": "documentation/ActivityKit/activity/pushtostarttoken.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtostarttokenupdates.json": {
       "hash": "c6729ae098142de442b87e790986e71c78ab942a40c389096798dc925c12fa9a",
-      "last_checked": "2026-06-09T07:27:50.206724",
+      "last_checked": "2026-06-12T07:41:31.890224",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"704ed3e5f99120be99725a9792b7536e\"",
       "file_path": "documentation/ActivityKit/activity/pushtostarttokenupdates.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo.json": {
       "hash": "6d5906f551eea044036f17e4883fe9077a8d92ed7ad099e829bb8f9c7f32fafd",
-      "last_checked": "2026-06-09T07:27:50.299695",
+      "last_checked": "2026-06-12T07:41:32.068985",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"6460073c6cc3b77886fa3e8f494cb733\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activities.json": {
       "hash": "14387f23d41673f126351a1d82b595769a63ef89f37e99ba482d819c2d1f96f8",
-      "last_checked": "2026-06-09T07:27:50.421228",
+      "last_checked": "2026-06-12T07:41:32.235071",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"dc4dd8738d0ecc96133bf948c87a3030\"",
       "file_path": "documentation/ActivityKit/activity/activities.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activityupdates-swift.type.property.json": {
       "hash": "a3ae10c5f3fe50b4f1e66a717537e745d615c970aef58556a994e9ee3607967c",
-      "last_checked": "2026-06-09T07:27:50.475066",
+      "last_checked": "2026-06-12T07:41:32.576939",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b45c44b27d1db0bed1cc5f7398f6058c\"",
       "file_path": "documentation/ActivityKit/activity/activityupdates-swifttypeproperty.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activityupdates-swift.struct.json": {
       "hash": "6931e958e28a8218ccdb06811bae788a9f025b7807c3314cc89d825a34aec336",
-      "last_checked": "2026-06-09T07:27:50.574540",
+      "last_checked": "2026-06-12T07:41:32.752770",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"1361c8f0b57705b82b439dea51778477\"",
       "file_path": "documentation/ActivityKit/activity/activityupdates-swiftstruct.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/deprecated-symbols.json": {
       "hash": "91fc28dd30ca0e880db9e8fb3d6f6a9361375cecbccfb7145a55f2fac5dc048d",
-      "last_checked": "2026-06-09T07:27:50.858933",
+      "last_checked": "2026-06-12T07:41:33.114171",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"237d117b4d26f026d68f18c62f4877db\"",
       "file_path": "documentation/ActivityKit/deprecated-symbols.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityattributes/contentstate.json": {
       "hash": "5eed795057f8d8a6b457e7c3a0a44d5d4ca1e51a1b33b23eb578675c73cf09b5",
-      "last_checked": "2026-06-09T07:27:50.923983",
+      "last_checked": "2026-06-12T07:41:33.310284",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"93d5b42dfbb3444d6f06ad2225cf927a\"",
       "file_path": "documentation/ActivityKit/activityattributes/contentstate.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityattributes/previewcontext(_:isstale:viewkind:).json": {
       "hash": "33f825f140463f01f165a44ee5749ae86e4b173534c31ad870bb6106556135be",
-      "last_checked": "2026-06-09T07:27:51.157565",
+      "last_checked": "2026-06-12T07:41:33.668362",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"957c57ca855649ec69030f9358659269\"",
       "file_path": "documentation/ActivityKit/activityattributes/previewcontext-isstaleviewkind.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystyle/standard.json": {
       "hash": "5a4b666c86b8112c87a2d5b33c35fec25eb1696fb628cdf8da3de31b672bb547",
-      "last_checked": "2026-06-09T07:27:51.257502",
+      "last_checked": "2026-06-12T07:41:33.866307",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"ae4fa4bd7bd6e41d368b2067b31f0f4a\"",
       "file_path": "documentation/ActivityKit/activitystyle/standard.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystyle/transient.json": {
       "hash": "4483ea72cd6a32a73ab680282a82fe40802d46328c47e681ed1bfb589ae6a074",
-      "last_checked": "2026-06-09T07:27:51.312600",
+      "last_checked": "2026-06-12T07:41:34.039528",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"82e1a85bc447f64356e364387ca6eb00\"",
       "file_path": "documentation/ActivityKit/activitystyle/transient.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitycontent/init(state:staledate:relevancescore:).json": {
       "hash": "8cc93f5fa711f1e9dac66a8b5ea5abff176253e4817a148e53675d54ca7106c7",
-      "last_checked": "2026-06-09T07:27:51.424057",
+      "last_checked": "2026-06-12T07:41:34.226633",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"79de908bae10e95cfe626d6453f648bd\"",
       "file_path": "documentation/ActivityKit/activitycontent/init-statestaledaterelevancescore.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitycontent/state.json": {
       "hash": "6f2061b1c994227c90d6ca9a12d396229b618e1030ec802c759ae41614348e8d",
-      "last_checked": "2026-06-09T07:27:51.520002",
+      "last_checked": "2026-06-12T07:41:34.418430",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"cabfc3588e48785f3e1dc0e2996f20b7\"",
       "file_path": "documentation/ActivityKit/activitycontent/state.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitycontent/staledate.json": {
       "hash": "d10ea42a6f28fc92d5f1c69009b6d883473c338d45cd468edeb6e221a87db0a2",
-      "last_checked": "2026-06-09T07:27:51.745028",
+      "last_checked": "2026-06-12T07:41:34.590617",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"94a0497eda3ef26fa6cc0928442e8768\"",
       "file_path": "documentation/ActivityKit/activitycontent/staledate.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitycontent/relevancescore.json": {
       "hash": "e2b9d092711f8b9c194f0c287a5a1cf4dabdb574c57a21ac05f91276a3c61583",
-      "last_checked": "2026-06-09T07:27:51.852029",
+      "last_checked": "2026-06-12T07:41:34.760573",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"148fa89d21e03232f30caa098f04bbef\"",
       "file_path": "documentation/ActivityKit/activitycontent/relevancescore.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/pushtype/token.json": {
       "hash": "711038c84c4b9090295fd135a3167d3d34cdc9c52090016bcc2102cb6b086712",
-      "last_checked": "2026-06-09T07:27:52.078300",
+      "last_checked": "2026-06-12T07:41:34.951086",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"860314ef15ac0846f55c02486e7e6f1f\"",
       "file_path": "documentation/ActivityKit/pushtype/token.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/pushtype/channel(_:).json": {
       "hash": "621e23fbb6980284c6e7e94ce8c03782a15ae78ce601d34a2c10363b35963b38",
-      "last_checked": "2026-06-09T07:27:52.179762",
+      "last_checked": "2026-06-12T07:41:35.126307",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"fdac4333a54fc90e552da9ca4f459271\"",
       "file_path": "documentation/ActivityKit/pushtype/channel.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/attributestoolarge.json": {
       "hash": "b29f25173ae8d20397da1a6537e1f51a1cd061bf4ed45ba5ac170a8fecebab1e",
-      "last_checked": "2026-06-09T07:27:52.288872",
+      "last_checked": "2026-06-12T07:41:35.291487",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"036c44cd53ebb4e0c0a2a16c7d77ff2a\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/attributestoolarge.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/denied.json": {
       "hash": "ba35835229a973882d63a060db7795194c2f4384604602aa931b8b42efbaaf62",
-      "last_checked": "2026-06-09T07:27:52.387103",
+      "last_checked": "2026-06-12T07:41:35.471659",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"c7ccd9dc5f68441650591c7a3d5f641a\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/denied.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/globalmaximumexceeded.json": {
       "hash": "ca382bb35dc24472bbf9bde47d5c82922de719f77636d0431cd6f08fcb57ecbc",
-      "last_checked": "2026-06-09T07:27:52.494448",
+      "last_checked": "2026-06-12T07:41:35.660065",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"af5ffa7ee6c65f0bfd1291bfdedfd5c6\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/globalmaximumexceeded.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/malformedactivityidentifier.json": {
       "hash": "b329ab2d39200a6ecbedaa1d6577862896d701ae2bfd5cdf23150008df3f7fa6",
-      "last_checked": "2026-06-09T07:27:52.544399",
+      "last_checked": "2026-06-12T07:41:35.849907",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"c4404432faa964fa46fca7d5dcb89b94\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/malformedactivityidentifier.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/missingprocessidentifier.json": {
       "hash": "dbd0a0bedf4f034190275975db9ac73b9c70c1c502d2d78f61c09f5d1dd660cf",
-      "last_checked": "2026-06-09T07:27:52.665928",
+      "last_checked": "2026-06-12T07:41:36.033120",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"a8217e079ec2449a70679472c880fb82\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/missingprocessidentifier.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/persistencefailure.json": {
       "hash": "bd44e4ce3a040101ba430d37f52a57d8855673fcfcc0163b00c3ab329fb737aa",
-      "last_checked": "2026-06-09T07:27:52.716269",
+      "last_checked": "2026-06-12T07:41:36.232971",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b8251d601a48ddcf863b47abba7c4b39\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/persistencefailure.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/reconnectnotpermitted.json": {
       "hash": "b036e0bb8694201bc2d5c0015ef351bccfbb682bbe963043c4704f38afab3409",
-      "last_checked": "2026-06-09T07:27:52.965872",
+      "last_checked": "2026-06-12T07:41:36.598057",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"8ff8e48262cc11e792047c4974528703\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/reconnectnotpermitted.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/targetmaximumexceeded.json": {
       "hash": "27c8cbed73650a7b4a12f3bb8a4c03fbd23bdc8818521ef90050bfe336025817",
-      "last_checked": "2026-06-09T07:27:53.014673",
+      "last_checked": "2026-06-12T07:41:36.771540",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"96923f0f23cedb7768a313e163fbed96\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/targetmaximumexceeded.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/unentitled.json": {
       "hash": "783cb4f1a9d542a041785d882e9c933603e6a6e89863f6ee45b911e2ffc70708",
-      "last_checked": "2026-06-09T07:27:53.086947",
+      "last_checked": "2026-06-12T07:41:36.975004",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"f4d9330276c79e82056b44046cb0d397\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/unentitled.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/unsupported.json": {
       "hash": "f34f59514ea75a8b09632f9cb4c2bed2b1b2e21d41d36f2d64bb8cd690bfa3b1",
-      "last_checked": "2026-06-09T07:27:53.197431",
+      "last_checked": "2026-06-12T07:41:37.170464",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"f7628455ee509f3532cf001dde55606e\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/unsupported.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/unsupportedtarget.json": {
       "hash": "0b70e4bf41d9bc525e30b5a27a035af70b64028b30387c927d288a758410185f",
-      "last_checked": "2026-06-09T07:27:53.254284",
+      "last_checked": "2026-06-12T07:41:37.344964",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"6359f9d7a16b333224afd88cf744229c\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/unsupportedtarget.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/visibility.json": {
       "hash": "df636bfb8fc79f66b80111b360265767e3ff3e27053ba44d685282729c7e9cd9",
-      "last_checked": "2026-06-09T07:27:53.480552",
+      "last_checked": "2026-06-12T07:41:37.659827",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"9ccb2d2f2d6b88aeecc483227d8bca66\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/visibility.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/failurereason.json": {
       "hash": "23b1312cf9c7f2ec1560ee764f5a70275b09fde3e702f810d706cb9c6821b6dd",
-      "last_checked": "2026-06-09T07:27:53.590807",
+      "last_checked": "2026-06-12T07:41:37.836857",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"13501b44379ef9b1799b3d8a3339242e\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/failurereason.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/recoverysuggestion.json": {
       "hash": "ddbfafda8c8b87a88b328c6240da0c8628a7372b453511019cce3847123e4c18",
-      "last_checked": "2026-06-09T07:27:53.636198",
+      "last_checked": "2026-06-12T07:41:38.018719",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"9a6ab168e7da507aaac21b04e75bac4f\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/recoverysuggestion.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/errorcode.json": {
       "hash": "d8e944251ee9feb6e01b4998ea926b1dd14929525ffd1ddc945443a3d2983688",
-      "last_checked": "2026-06-09T07:27:53.694011",
+      "last_checked": "2026-06-12T07:41:38.195419",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"62a97366c93218089d9f40d8cea7da57\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/errorcode.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationerror/errordomain.json": {
       "hash": "c6bc24ae7d2b7fe45d893a703bb1056987ee73813f2e5eb3ff3f14db25114ff2",
-      "last_checked": "2026-06-09T07:27:53.801749",
+      "last_checked": "2026-06-12T07:41:38.392839",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"42daa311d102f252d5379e045983ba18\"",
       "file_path": "documentation/ActivityKit/activityauthorizationerror/errordomain.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/init(title:body:sound:).json": {
       "hash": "01355dc727121141e31721a52fe21e554db4ee5e1f89930a17d1a77a549efdc2",
-      "last_checked": "2026-06-09T07:27:54.097481",
+      "last_checked": "2026-06-12T07:41:38.620867",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"b5e2a32592dad04aa54757268847700e\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/init-titlebodysound.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/title.json": {
       "hash": "e40a45a24f53b903aeddafcd1daa3ee2085d4b0db3acc6348ded3f60c938ed86",
-      "last_checked": "2026-06-09T07:27:54.244311",
+      "last_checked": "2026-06-12T07:41:38.807193",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"af37e7bad303ac48244337815ae58d5d\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/title.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/body.json": {
       "hash": "6b5f20cb64aaae12c6e68a84a0ee1e0724cfa72edc8f7b8f7cfd5e15a406798e",
-      "last_checked": "2026-06-09T07:27:54.349927",
+      "last_checked": "2026-06-12T07:41:39.166933",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"ad0e84c094cdd07822323d15dda5414b\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/body.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/sound.json": {
       "hash": "1a9e7c67e28dcafbd04535b024d76d750ed1c9dcd9f957518c3d76107694c755",
-      "last_checked": "2026-06-09T07:27:54.465465",
+      "last_checked": "2026-06-12T07:41:39.349156",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0ebb7b189d6c212e31c780267b07eb23\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/sound.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/alertsound.json": {
       "hash": "63c4eec230bcba28950cfdf8f364714d0af209df00ec26175d71bbbc9b89b24e",
-      "last_checked": "2026-06-09T07:27:54.569627",
+      "last_checked": "2026-06-12T07:41:39.536971",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"1033fba0d3d99cd3cc9cbb2b12b8ab19\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/alertsound.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityuidismissalpolicy/default.json": {
       "hash": "3cbb6c4520c0ca31787a667f24e229ed17c1beb42f3c7cb4884f6726809ba6d6",
-      "last_checked": "2026-06-09T07:27:54.691306",
+      "last_checked": "2026-06-12T07:41:39.777275",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"00318e237b9e4724602aca4303f3d81d\"",
       "file_path": "documentation/ActivityKit/activityuidismissalpolicy/default.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityuidismissalpolicy/immediate.json": {
       "hash": "651de2843d745e7c47b8e114345407642393cb9cf4c00b3cb502d5b7159ec367",
-      "last_checked": "2026-06-09T07:27:54.790263",
+      "last_checked": "2026-06-12T07:41:39.972118",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"cf5e745c553eebb313e29a6c73a5858c\"",
       "file_path": "documentation/ActivityKit/activityuidismissalpolicy/immediate.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityuidismissalpolicy/after(_:).json": {
       "hash": "f880f55feba0a6eaaa7e6b69d07e11addb8400ce50a0c3f78138827cb66f609c",
-      "last_checked": "2026-06-09T07:27:54.888750",
+      "last_checked": "2026-06-12T07:41:40.139013",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0925059f787c635899ae48cc6c55833e\"",
       "file_path": "documentation/ActivityKit/activityuidismissalpolicy/after.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentupdates-swift.struct/iterator.json": {
       "hash": "bdc654975dbb118dfcf1b8a7a6b88b2cea13b93ac5a170770350004805f01b94",
-      "last_checked": "2026-06-09T07:27:55.080024",
+      "last_checked": "2026-06-12T07:41:40.197721",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"5d0256a2967f9916b51b60590c9e60e1\"",
       "file_path": "documentation/ActivityKit/activity/contentupdates-swift.struct/iterator.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentupdates-swift.struct/makeasynciterator().json": {
       "hash": "6e63effa0cc78a958cd88b9b2c550f22adc14451b88413d7c4cad15904903abc",
-      "last_checked": "2026-06-09T07:27:55.212416",
+      "last_checked": "2026-06-12T07:41:40.448417",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"1b9ed9a940553186c7e1e53d3e13ea4a\"",
       "file_path": "documentation/ActivityKit/activity/contentupdates-swift.struct/makeasynciterator.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentupdates-swift.struct/element.json": {
       "hash": "e67e8e120102e0a5743cdf9355c09a0143a7eb0c08719e9298858fea6c6a026d",
-      "last_checked": "2026-06-09T07:27:55.307876",
+      "last_checked": "2026-06-12T07:41:40.653197",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"e74467b4b4d1394b121f9a85e5d04b25\"",
       "file_path": "documentation/ActivityKit/activity/contentupdates-swift.struct/element.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate/active.json": {
       "hash": "38e326b31e44371a4d92b994cd70c994c6902ef344feff3f202fe5790c2ef3b4",
-      "last_checked": "2026-06-09T07:27:55.409934",
+      "last_checked": "2026-06-12T07:41:40.806824",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"ee87c42285bc4940cbfbd378a1e53479\"",
       "file_path": "documentation/ActivityKit/activitystate/active.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate/dismissed.json": {
       "hash": "2485bf54420900c90608cbb7ce70ce9f82f7b0c48f54d962471315412e17e861",
-      "last_checked": "2026-06-09T07:27:55.516157",
+      "last_checked": "2026-06-12T07:41:40.980900",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"cee8a115fa4816d094fc55c603610c49\"",
       "file_path": "documentation/ActivityKit/activitystate/dismissed.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate/pending.json": {
       "hash": "29d89ea32a19485523cd8b726c06a95adbc3544c85d7dcde5c47bd381f49ce32",
-      "last_checked": "2026-06-09T07:27:55.621570",
+      "last_checked": "2026-06-12T07:41:41.165905",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"12063768bb514e14bc21c5f1f46a433f\"",
       "file_path": "documentation/ActivityKit/activitystate/pending.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate/stale.json": {
       "hash": "94f315b365eb78a0987d4cf248f820af45de6ef416f204ae2035fd9553aa7281",
-      "last_checked": "2026-06-09T07:27:55.673827",
+      "last_checked": "2026-06-12T07:41:41.329336",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"7ab4c388aa6b13cef431e1f230d0fa0d\"",
       "file_path": "documentation/ActivityKit/activitystate/stale.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activitystate/ended.json": {
       "hash": "04c4517c40cbae2c92cbab127cc9047c4fc5139c552bc81f893686f3b7de1cd6",
-      "last_checked": "2026-06-09T07:27:55.804862",
+      "last_checked": "2026-06-12T07:41:41.515740",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"06074d47141bcab18654897e61953f7b\"",
       "file_path": "documentation/ActivityKit/activitystate/ended.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystateupdates-swift.struct/makeasynciterator().json": {
       "hash": "f8ad0796f0947cfbbcfa4830a71c4b87c4e62b369d46c6896c93284f3826c2ce",
-      "last_checked": "2026-06-09T07:27:55.920019",
+      "last_checked": "2026-06-12T07:41:41.627442",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"f7c280f7617992f324df4f2fed0dd3f8\"",
       "file_path": "documentation/ActivityKit/activity/activitystateupdates-swift.struct/makeasynciterator.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystateupdates-swift.struct/iterator.json": {
       "hash": "4eb5c76ccf5a4c264b5bcbcc5c283d0a8eef51762475848f1209c721558aeb27",
-      "last_checked": "2026-06-09T07:27:56.024529",
+      "last_checked": "2026-06-12T07:41:41.825330",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"08525d6856d9ab0157047d81888fa172\"",
       "file_path": "documentation/ActivityKit/activity/activitystateupdates-swift.struct/iterator.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activitystateupdates-swift.struct/element.json": {
       "hash": "610e94ed8192cb0ba3b7cfb75795ffdccdadac98a508b7467da834b7d8e7c247",
-      "last_checked": "2026-06-09T07:27:56.125944",
+      "last_checked": "2026-06-12T07:41:41.950296",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"d334db60eb3271f87406482b67b59fc5\"",
       "file_path": "documentation/ActivityKit/activity/activitystateupdates-swift.struct/element.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtokenupdates-swift.struct/makeasynciterator().json": {
       "hash": "841880d58a43dbbfdeaf099a8ab83e3f6c8ebf351494e57eafe400ffd1a875b0",
-      "last_checked": "2026-06-09T07:27:56.218953",
+      "last_checked": "2026-06-12T07:41:42.114199",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"c21aed27c88a8412d5209e842601780a\"",
       "file_path": "documentation/ActivityKit/activity/pushtokenupdates-swift.struct/makeasynciterator.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtokenupdates-swift.struct/iterator.json": {
       "hash": "d92e1da682126dc5c8d0872318fe970a846c0a01b2e8319b82790350d0258144",
-      "last_checked": "2026-06-09T07:27:56.319861",
+      "last_checked": "2026-06-12T07:41:42.270481",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0daa2a3bf667a5793c594c8e941fac31\"",
       "file_path": "documentation/ActivityKit/activity/pushtokenupdates-swift.struct/iterator.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/pushtokenupdates-swift.struct/element.json": {
       "hash": "2410f37111ae24993cd8240fa0b46feaa5a4487746d2bffb6273ff7258296461",
-      "last_checked": "2026-06-09T07:27:56.367613",
+      "last_checked": "2026-06-12T07:41:42.430080",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"54afd64248115642ceff4274451d4a06\"",
       "file_path": "documentation/ActivityKit/activity/pushtokenupdates-swift.struct/element.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/areactivitiesenabled.json": {
       "hash": "9ee68d8c94790333da29236a17b040cf8797efdceedb0b05708cd8e60455f0b3",
-      "last_checked": "2026-06-09T07:27:56.477040",
+      "last_checked": "2026-06-12T07:41:42.579147",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"de5f743db67a3fb1d19ddddb0ad35076\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/areactivitiesenabled.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.property.json": {
       "hash": "6708726c10b4305af38bcd03bdf3a47689edaf2839da9c3e67e7683fef97583b",
-      "last_checked": "2026-06-09T07:27:56.573804",
+      "last_checked": "2026-06-12T07:41:42.767081",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"622e6312132b62769afb7d222f74df63\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swiftproperty.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.struct.json": {
       "hash": "af83715f37f6893f92fa4e52b97e07633c023403d4c8da8466a2fb03f9335af4",
-      "last_checked": "2026-06-09T07:27:56.685671",
+      "last_checked": "2026-06-12T07:41:42.949141",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"a86b56283f7bc7970d94ffdcb6ff36cf\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swiftstruct.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/init().json": {
       "hash": "ebfcd4b37d84bc25f27d852fd630b67c1da0c1eccebc5266ff54ddc5804f062a",
-      "last_checked": "2026-06-09T07:27:56.789533",
+      "last_checked": "2026-06-12T07:41:43.132681",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"c354ac8cabcf531a2731d6a1145b3951\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/init.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushesenabled.json": {
       "hash": "d47025298069763511ddfbc8d1cd995d8d31d0a1d5083d612fcac8c340946a41",
-      "last_checked": "2026-06-09T07:27:56.834647",
+      "last_checked": "2026-06-12T07:41:43.254062",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"0043cc759115adc9830d612e403bf8e8\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushesenabled.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.property.json": {
       "hash": "203d36b997497c5685fd919e72520eece88b8d1a8bade2bb40d20e83efbb9326",
-      "last_checked": "2026-06-09T07:27:56.961027",
+      "last_checked": "2026-06-12T07:41:43.404692",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"852bc5d50d4cc88097e4063fe87fe64b\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swiftproperty.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct.json": {
       "hash": "7adfd1932bccf24d7076add1ae26861b2a710a73d28f10b0dbff8d8683ef8064",
-      "last_checked": "2026-06-09T07:27:57.058679",
+      "last_checked": "2026-06-12T07:41:43.637298",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"2cd392c44118d3fe640c69c1fa68c90a\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swiftstruct.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activityupdates-swift.struct/makeasynciterator().json": {
       "hash": "726cb5dfd2a919a81b6660a7309083193c3a769d7abbd1dd6824b842c0750ac3",
-      "last_checked": "2026-06-09T07:27:57.154190",
+      "last_checked": "2026-06-12T07:41:43.767741",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"6e64a5ce427cabcfaf5773965374d095\"",
       "file_path": "documentation/ActivityKit/activity/activityupdates-swift.struct/makeasynciterator.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activityupdates-swift.struct/iterator.json": {
       "hash": "c6e14f6e1e7ae4884bfba87878f38984b7e47ba51a2748c6a393a222fc90a89a",
-      "last_checked": "2026-06-09T07:27:57.255689",
+      "last_checked": "2026-06-12T07:41:43.953384",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"418ccb77e08634e3670b8bb672503f30\"",
       "file_path": "documentation/ActivityKit/activity/activityupdates-swift.struct/iterator.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/activityupdates-swift.struct/element.json": {
       "hash": "42d2cd645c1bfd1074c56f6b7beb746c9eea952935bb3fd36bd3905255d043ef",
-      "last_checked": "2026-06-09T07:27:57.355980",
+      "last_checked": "2026-06-12T07:41:44.134971",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"39c27c82a454e8def93118e7da1b478c\"",
       "file_path": "documentation/ActivityKit/activity/activityupdates-swift.struct/element.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/request(attributes:contentstate:pushtype:).json": {
       "hash": "cf9a2a34307740ae3b23837f087e8a54ea3911eb5c3b501dd511283e6ebdbf51",
-      "last_checked": "2026-06-09T07:27:57.455638",
+      "last_checked": "2026-06-12T07:41:44.251536",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"39ea295c77cc94848f37d0fa7673a141\"",
       "file_path": "documentation/ActivityKit/activity/request-attributescontentstatepushtype.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(using:).json": {
       "hash": "9accef869c6bee11ed895b3980e4f8f81721f393855d55e8516fdc2db1c9f124",
-      "last_checked": "2026-06-09T07:27:57.513739",
+      "last_checked": "2026-06-12T07:41:44.409298",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"716fbec1ae4a410cabcae36274d476a5\"",
       "file_path": "documentation/ActivityKit/activity/update-using.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/update(using:alertconfiguration:).json": {
       "hash": "b77e52c87faf3d12d405dfc19ca1a3573631b34c4ee183d21db3bb4675d8a693",
-      "last_checked": "2026-06-09T07:27:57.565408",
+      "last_checked": "2026-06-12T07:41:44.539508",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"23f502d6d3412d108e2ce30d5c6ebf52\"",
       "file_path": "documentation/ActivityKit/activity/update-usingalertconfiguration.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/end(using:dismissalpolicy:).json": {
       "hash": "d7770a3f5b374b2e91f1878933e679e07a0219525d9ed8bc25a0fa3e66f9304f",
-      "last_checked": "2026-06-09T07:27:57.712398",
+      "last_checked": "2026-06-12T07:41:44.716660",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"7e890f11347e9bb7f0ea241bb17927b4\"",
       "file_path": "documentation/ActivityKit/activity/end-usingdismissalpolicy.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstate-swift.property.json": {
       "hash": "9530cd6b64dd954aa27cceba8363ab374e1eaf077277ef71fe1380c509818f25",
-      "last_checked": "2026-06-09T07:27:57.823038",
+      "last_checked": "2026-06-12T07:41:44.889479",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"cbd59edfc9809aa6aca7647dcc3d15e4\"",
       "file_path": "documentation/ActivityKit/activity/contentstate-swiftproperty.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstateupdates-swift.property.json": {
       "hash": "46aa9923d2d1634b6d700580d1402dd8ac87bfad2d4bbe70132592763046b2f9",
-      "last_checked": "2026-06-09T07:27:57.931693",
+      "last_checked": "2026-06-12T07:41:45.023217",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"bfde268aea2536ee4e8c54b6ae583ae2\"",
       "file_path": "documentation/ActivityKit/activity/contentstateupdates-swiftproperty.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstateupdates-swift.struct.json": {
       "hash": "77e4a9dd2d3701b9cc674706526f946f0a0f492bd30323df4e00a66e18175a7a",
-      "last_checked": "2026-06-09T07:27:58.034096",
+      "last_checked": "2026-06-12T07:41:45.228381",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"eebe247acda6980c0051ea3cdd4abec5\"",
       "file_path": "documentation/ActivityKit/activity/contentstateupdates-swiftstruct.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/alertsound/named(_:).json": {
       "hash": "f41452094c20eb524cc86b1a9525ba63d44bebc5cad959d93e1e3bc2c807a446",
-      "last_checked": "2026-06-09T07:27:58.088634",
+      "last_checked": "2026-06-12T07:41:45.347774",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"4aa7609f5d8d473ae73968904673fd56\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/alertsound/named.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/alertconfiguration/alertsound/default.json": {
       "hash": "e6aa638ee64ec8180c847e7379c8403254235aac694355d97e2c479d51519259",
-      "last_checked": "2026-06-09T07:27:58.148495",
+      "last_checked": "2026-06-12T07:41:45.505575",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"f6c8b9dcb33cef5c9ff7df9e54ad52cf\"",
       "file_path": "documentation/ActivityKit/alertconfiguration/alertsound/default.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.struct/makeasynciterator().json": {
       "hash": "3c9ea7077d3046046c981d8b75572dcd671051d343d353d3782ec16eb66dc9d0",
-      "last_checked": "2026-06-09T07:27:58.373547",
+      "last_checked": "2026-06-12T07:41:45.666203",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"fab4c6aa43f7fa86942ace9e77e883d6\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swift.struct/makeasynciterator.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.struct/iterator.json": {
       "hash": "cd482b67006ccc0041373e0cca7a252a7e22724e302ca2608dc6f31863418c85",
-      "last_checked": "2026-06-09T07:27:58.472170",
+      "last_checked": "2026-06-12T07:41:45.796050",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"099dc506bbc38c4e52906eb4d331c0dc\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swift.struct/iterator.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.struct/element.json": {
       "hash": "771813a4350a1b640d90a2bd43b29c2437f02659dd502ec073d84401e44016cd",
-      "last_checked": "2026-06-09T07:27:58.525117",
+      "last_checked": "2026-06-12T07:41:45.921876",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"d0c2e30ddcf40671b68f5268c08f2f33\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swift.struct/element.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/makeasynciterator().json": {
       "hash": "c1ccb8106c732a3d2b1d5600090869ecc9c27db53bc676fa1a9381d0d7b3d419",
-      "last_checked": "2026-06-09T07:27:58.634373",
+      "last_checked": "2026-06-12T07:41:46.052956",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"7c2c582d5693a236c7684d6e6a0c797b\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/makeasynciterator.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator.json": {
       "hash": "dab1f7fc4b889f428c07c5e816f3080cf625a9d3d94c8f867bfefd1f65e3d768",
-      "last_checked": "2026-06-09T07:27:58.681524",
+      "last_checked": "2026-06-12T07:41:46.173086",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"88b220fabba51e91501a04294347ae92\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/element.json": {
       "hash": "490e9170581f148d994edddac39fb933e8b231f580b5aec4d32106594274641a",
-      "last_checked": "2026-06-09T07:27:58.820823",
+      "last_checked": "2026-06-12T07:41:46.328788",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"bef960ca72f914967b2c8c3a17b1cf3b\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/element.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstateupdates-swift.struct/makeasynciterator().json": {
       "hash": "5b28c417a31b3dcb0236a1961972d873692b72c6abbdfd0a56c1f5c9b376e158",
-      "last_checked": "2026-06-09T07:27:58.917760",
+      "last_checked": "2026-06-12T07:41:46.458324",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"a28c6cb3774304be1577da75cd35be38\"",
       "file_path": "documentation/ActivityKit/activity/contentstateupdates-swift.struct/makeasynciterator.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstateupdates-swift.struct/iterator.json": {
       "hash": "42e00b5a98d81152e1bd4f177e794819b884befad8e6398bbb0cb168910f97d0",
-      "last_checked": "2026-06-09T07:27:59.031662",
+      "last_checked": "2026-06-12T07:41:46.634911",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"d893e77a5d4079088d2cc4e841dd64a5\"",
       "file_path": "documentation/ActivityKit/activity/contentstateupdates-swift.struct/iterator.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/contentstateupdates-swift.struct/element.json": {
       "hash": "683af2007402fff35a6f2593ebea558b4544c3b4955f164df8da18b8190aab2d",
-      "last_checked": "2026-06-09T07:27:59.128495",
+      "last_checked": "2026-06-12T07:41:46.779465",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"4b360e521763cd08a3c95cf2654e7fc1\"",
       "file_path": "documentation/ActivityKit/activity/contentstateupdates-swift.struct/element.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/activityenablementupdates-swift.struct/iterator/next().json": {
       "hash": "78f7d0358e46c6178700302aafd2e1bfe971d807e254b99664293943bdbf0342",
-      "last_checked": "2026-06-09T07:27:59.228157",
+      "last_checked": "2026-06-12T07:41:46.988688",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"05d9f75ee8c001cf0ff8a350d768ac32\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/activityenablementupdates-swift.struct/iterator/next.md"
     },
@@ -4711,9 +4711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator/next().json": {
       "hash": "141415e4a672a115c8b2c55834ba07a798447cba4f9586025cb5282bc7c03c02",
-      "last_checked": "2026-06-09T07:27:59.327429",
+      "last_checked": "2026-06-12T07:41:47.159289",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"8406ef671e437de3ad23f0b95ce9cf8c\"",
       "file_path": "documentation/ActivityKit/activityauthorizationinfo/frequentpushenablementupdates-swift.struct/iterator/next.md"
     },
@@ -5655,9 +5655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/activitykit/activity/id.json": {
       "hash": "a6ca6e9f4483ac83b0070a2801520880f0da0e80cfdb29585884bc7481c1f7db",
-      "last_checked": "2026-06-09T07:27:50.620537",
+      "last_checked": "2026-06-12T07:41:32.922670",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:27:45.768805",
+      "session_id": "2026-06-12T07:41:21.647803",
       "etag": "W/\"4947a4282f3aff8e820358f1b929717c\"",
       "file_path": "documentation/ActivityKit/activity/id.md"
     },

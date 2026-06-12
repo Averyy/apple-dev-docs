@@ -57,9 +57,9 @@ Packing allows your implementation to provide information FSKit needs, including
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [class FSEnumerateDirectoryResult](fsenumeratedirectoryresult.md)
   The result of an enumerate-directory call.
 

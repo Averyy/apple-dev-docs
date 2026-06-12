@@ -42,9 +42,9 @@ Your implementation of `FSVolume/Handler/enumerateDirectory(_:startingAt:verifie
 - [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md)
   Enumerates the contents of the given directory.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
   An object used to provide items during a directory enumeration.
 - [class FSEnumerateDirectoryResult](fsenumeratedirectoryresult.md)

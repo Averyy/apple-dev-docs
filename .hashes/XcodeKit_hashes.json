@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-09T07:30:23.615230",
+    "last_updated": "2026-06-12T07:45:53.433951",
     "total_pages": 76,
-    "session_id": "2026-06-09T07:30:17.857267"
+    "session_id": "2026-06-12T07:45:47.674863"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/XcodeKit.json": {
       "hash": "2bb0a6e735626611c40ab227890e24541fea314a7d1cf466829907f0b7fce8b6",
-      "last_checked": "2026-06-09T07:30:18.261707",
+      "last_checked": "2026-06-12T07:45:47.921629",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"7605bfd9afab202e3d5041f8529d1641\"",
       "file_path": "documentation/XcodeKit/XcodeKit.md"
     },
     "https://developer.apple.com/documentation/XcodeKit": {
       "hash": "2bb0a6e735626611c40ab227890e24541fea314a7d1cf466829907f0b7fce8b6",
-      "last_checked": "2026-06-09T07:30:18.129284",
+      "last_checked": "2026-06-12T07:45:47.826763",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"7605bfd9afab202e3d5041f8529d1641\"",
       "file_path": "documentation/XcodeKit/XcodeKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/creating-a-source-editor-extension.json": {
       "hash": "626b8eaac8876d95f2365e957f1a8417c60fae3a8f08d911f352898da4835d72",
-      "last_checked": "2026-06-09T07:30:18.644699",
+      "last_checked": "2026-06-12T07:45:48.180962",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"2e8ff531d4ec0945a1d4dc08bd4a4db8\"",
       "file_path": "documentation/XcodeKit/creating-a-source-editor-extension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/testing-your-source-editor-extension.json": {
       "hash": "8583e73cc54d7405001cbfd236c152f5288a8bed806cac7a282a7ba0e0212f23",
-      "last_checked": "2026-06-09T07:30:18.876962",
+      "last_checked": "2026-06-12T07:45:48.349898",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"fd3ca1405498a0b8ed1e7ae525a3edc1\"",
       "file_path": "documentation/XcodeKit/testing-your-source-editor-extension.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorextension.json": {
       "hash": "3d476928070b0e13644e949c5435cf4bb921a62a078cba5396409607191dff48",
-      "last_checked": "2026-06-09T07:30:19.172633",
+      "last_checked": "2026-06-12T07:45:48.500347",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"997eb08d58f1a927709c021e0440d090\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorextension.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommand.json": {
       "hash": "e060e0c919c65bade7bcc0cb0c5afeac55c92c4e68959c344f1132d4c8150f2b",
-      "last_checked": "2026-06-09T07:30:19.269786",
+      "last_checked": "2026-06-12T07:45:48.654430",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"e8871ced7956b7fd76f4a9c60cf712cf\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommand.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommandinvocation.json": {
       "hash": "349e66fce5b1232d5b32de569a4caf4c59113c01d1c16c1a2efc34520906e838",
-      "last_checked": "2026-06-09T07:30:19.498333",
+      "last_checked": "2026-06-12T07:45:48.854370",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"5b31bacbff32804f593698bd856c8401\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommandinvocation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer.json": {
       "hash": "3546ae3d9e9098de1abfa37a4314b6e5abca4abe0fcd614a321cae0190e02006",
-      "last_checked": "2026-06-09T07:30:19.597171",
+      "last_checked": "2026-06-12T07:45:48.987299",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"42ea504d739b5c2862fa0fe77c3bd0eb\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextposition.json": {
       "hash": "ef76ab12fddec8b0fd5cdc2b9fc6e0d3f32421f707f9aac5007babadc55ac7e5",
-      "last_checked": "2026-06-09T07:30:19.810907",
+      "last_checked": "2026-06-12T07:45:49.099796",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"4e8057c5f97e784339502fab4f94308e\"",
       "file_path": "documentation/XcodeKit/xcsourcetextposition.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextrange.json": {
       "hash": "94d211ec55d77bbe2b06e0c5f315045b2395c7df18a2b72ddc3f8048e018e5e1",
-      "last_checked": "2026-06-09T07:30:19.947266",
+      "last_checked": "2026-06-12T07:45:49.224113",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"b5a0d5de53b6feed8029ad7d448b7998\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcodekit-version-constants.json": {
       "hash": "a53749f20947687f843ab688c1a3c7c11b2d666f5bf5f657fbfe32b57e653a46",
-      "last_checked": "2026-06-09T07:30:20.090761",
+      "last_checked": "2026-06-12T07:45:49.396238",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"c8947f420b79514f3492029b2a70fa9f\"",
       "file_path": "documentation/XcodeKit/xcodekit-version-constants.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorextension/commanddefinitions.json": {
       "hash": "16d208a77a716474ffe587dc8a9a7ffd607f80065c0d451989ac3d94a8b648b4",
-      "last_checked": "2026-06-09T07:30:20.188686",
+      "last_checked": "2026-06-12T07:45:49.507862",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"b613b48cf9f01cd605ff6105014f0973\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorextension/commanddefinitions.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorextension/extensiondidfinishlaunching().json": {
       "hash": "c539882771c73d8e403df7ec11c77f5dbff631d1755369ec58a2be6c9e6b040d",
-      "last_checked": "2026-06-09T07:30:20.416583",
+      "last_checked": "2026-06-12T07:45:49.641540",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"f374d29fced90eff9bfa2d4b5d565551\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorextension/extensiondidfinishlaunching.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey.json": {
       "hash": "91406850cd3ac0759886e5359b4417dde52ff07ff1e835ca9818c6f4851779a9",
-      "last_checked": "2026-06-09T07:30:20.518537",
+      "last_checked": "2026-06-12T07:45:49.837677",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"f2bc562787e844b3ab83f13a7618f4f0\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommand/perform(with:completionhandler:).json": {
       "hash": "3faceeb7c04ba4b12a93b072f3b131bca9110b124283dc0353e7ec240e879e06",
-      "last_checked": "2026-06-09T07:30:20.623143",
+      "last_checked": "2026-06-12T07:45:50.033820",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"63082c9184832720cbb3a275c4474ed7\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommand/perform-withcompletionhandler.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommandinvocation/buffer.json": {
       "hash": "ca7f6bd0e45bfdb76873f491d26ca2022d53a2387b3b0afdd3e2e6925b0af027",
-      "last_checked": "2026-06-09T07:30:20.852012",
+      "last_checked": "2026-06-12T07:45:50.199363",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"37673718ac772b70d3abb38a8a786186\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommandinvocation/buffer.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommandinvocation/commandidentifier.json": {
       "hash": "93b87c4b87dce21267bb6eafe3443787e6602731f14194e63c3305715050f67d",
-      "last_checked": "2026-06-09T07:30:20.979436",
+      "last_checked": "2026-06-12T07:45:50.327671",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"647cbe7c0d73e32a387298a757ef03e1\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommandinvocation/commandidentifier.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommandinvocation/cancellationhandler.json": {
       "hash": "7949638f677a4730b0ae7ed2f6123ff66fc87c50b70c7e35e5b5edca1c773e82",
-      "last_checked": "2026-06-09T07:30:21.199038",
+      "last_checked": "2026-06-12T07:45:50.502292",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"41bebe047502a10aea268bba29ee3dec\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommandinvocation/cancellationhandler.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/completebuffer.json": {
       "hash": "db5812780a3ea427b306bd89087a6ef7be255097f979427fb869aa87515f26a6",
-      "last_checked": "2026-06-09T07:30:21.345027",
+      "last_checked": "2026-06-12T07:45:50.662445",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"0347b6fd3bb7ee20793eb940647902e1\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/completebuffer.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/contentuti.json": {
       "hash": "f5b4c497bca9c24e612a9eb1d036ac9070fb38f1bfd9af8065fdb139dc04bbfc",
-      "last_checked": "2026-06-09T07:30:21.462517",
+      "last_checked": "2026-06-12T07:45:50.772035",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"6863a330c068cd6df743cb337c529a5e\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/contentuti.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/lines.json": {
       "hash": "b2a5e90d6cefa0b41a26080a2fcee66d87ed5a414704c7103b63ed12dc77d476",
-      "last_checked": "2026-06-09T07:30:21.563179",
+      "last_checked": "2026-06-12T07:45:50.893092",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"4bedd250bdfe522d89ee3f202012ae72\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/lines.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/selections.json": {
       "hash": "0e635fc38e199f473d532400804707da46e007320a4d2c464bfc6b7926f87e99",
-      "last_checked": "2026-06-09T07:30:21.665489",
+      "last_checked": "2026-06-12T07:45:51.006458",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"aafb1e6145d4e07c2cdb0a41f1e29265\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/selections.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/indentationwidth.json": {
       "hash": "2ef4341a13822d35ec42c55b28cfdaae8b6e0229ea92999b23939023cbfe4421",
-      "last_checked": "2026-06-09T07:30:21.767569",
+      "last_checked": "2026-06-12T07:45:51.138977",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"7b87e16ec2fd96a9bb4ddb1661769a87\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/indentationwidth.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/usestabsforindentation.json": {
       "hash": "a64925dbd60be22b47b7d48d16c1423f065ad670af172cbeef6e56a363b08e3a",
-      "last_checked": "2026-06-09T07:30:21.990485",
+      "last_checked": "2026-06-12T07:45:51.332312",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"5bc2c1b4a9baefb58134bc7ae2812ce8\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/usestabsforindentation.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextbuffer/tabwidth.json": {
       "hash": "e9b628417080ba4f40e0e0e6f9bff21914e1f58725cbb37f329c000077e6ce63",
-      "last_checked": "2026-06-09T07:30:22.147145",
+      "last_checked": "2026-06-12T07:45:51.504258",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"4833807b9c9e0042d9187411cecb608e\"",
       "file_path": "documentation/XcodeKit/xcsourcetextbuffer/tabwidth.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextposition/init().json": {
       "hash": "8332aacc9c038be00d524d1388f1e4a60850961c885e2b8d17622e29fd63f2d1",
-      "last_checked": "2026-06-09T07:30:22.263274",
+      "last_checked": "2026-06-12T07:45:51.617733",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"a5fbaa3acc04679f8c49ad542fb0de7c\"",
       "file_path": "documentation/XcodeKit/xcsourcetextposition/init.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextposition/init(line:column:).json": {
       "hash": "f87e0c80c4b3e9ed495fea481f13d2cf2eddab6683be2d8eb1c728b6abad91f4",
-      "last_checked": "2026-06-09T07:30:22.355236",
+      "last_checked": "2026-06-12T07:45:51.786837",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"9534ac9ece7ca562287abee207b0fa89\"",
       "file_path": "documentation/XcodeKit/xcsourcetextposition/init-linecolumn.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextposition/column.json": {
       "hash": "a206c4aa0789bdc33f37bdf3e50b5501275c438ce5bc4192fac4e0846c71663d",
-      "last_checked": "2026-06-09T07:30:22.458089",
+      "last_checked": "2026-06-12T07:45:51.911071",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"0396af71c2c363589c664cdaab2df5a0\"",
       "file_path": "documentation/XcodeKit/xcsourcetextposition/column.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextposition/line.json": {
       "hash": "0c63a8d3c2fc4e16a4f1d39470809f366bca46849e4cc20987e9ba5ed43c87a6",
-      "last_checked": "2026-06-09T07:30:22.562180",
+      "last_checked": "2026-06-12T07:45:52.030985",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"44c91b2018269b04347967ffd088b68e\"",
       "file_path": "documentation/XcodeKit/xcsourcetextposition/line.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextrange/init(start:end:).json": {
       "hash": "3d3c64f91521dd69807afa8f29b0570a626ad384dee0bf84ba717cd2748de32f",
-      "last_checked": "2026-06-09T07:30:22.653455",
+      "last_checked": "2026-06-12T07:45:52.164310",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"2a12b5ed6a06a5fd5022a4a0283ac0f9\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange/init-startend.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextrange/start.json": {
       "hash": "818fe81ef384330fcc24fcce9ece9b97b2654a118c84dc29464307946ad760b7",
-      "last_checked": "2026-06-09T07:30:22.791516",
+      "last_checked": "2026-06-12T07:45:52.316896",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"9274dcdd40357cf72fa2edcdb61bd234\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange/start.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourcetextrange/end.json": {
       "hash": "533bb7a2b3391af150b011158415a580a61ae5d6033f6759abed14f2df52d484",
-      "last_checked": "2026-06-09T07:30:22.906462",
+      "last_checked": "2026-06-12T07:45:52.494558",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"db8f8bd3a6754efb678661fb20787a68\"",
       "file_path": "documentation/XcodeKit/xcsourcetextrange/end.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcxcodekitversionnumber.json": {
       "hash": "d175f5e7a73acb2f61793c97d853792f478cd0f587e7446722b8d388e51696cf",
-      "last_checked": "2026-06-09T07:30:23.012500",
+      "last_checked": "2026-06-12T07:45:52.630089",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"9df7ef470e1d7f4e55dc1dbc85ac0950\"",
       "file_path": "documentation/XcodeKit/xcxcodekitversionnumber.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcxcodekitversionnumber_xcode_8_0.json": {
       "hash": "824e9603555847d283d39c3f5f27209e901765efabc136b3997da8b722835579",
-      "last_checked": "2026-06-09T07:30:23.124188",
+      "last_checked": "2026-06-12T07:45:52.753848",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"28bff30a32c900eba1cbde67929d39ba\"",
       "file_path": "documentation/XcodeKit/xcxcodekitversionnumber-xcode-8-0.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey/classnamekey.json": {
       "hash": "8d1ce2c4981dd8ff19bc2bf571d7809cc243f95c5c81a12cd5aa799c57d9e1c4",
-      "last_checked": "2026-06-09T07:30:23.226665",
+      "last_checked": "2026-06-12T07:45:52.879359",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"070404bab0481c712e6d05a0f27694e2\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey/classnamekey.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey/identifierkey.json": {
       "hash": "c9a4995bd06bd4e3277fe66c9ec80872f7d7c16ce04655b7958662d24c14ba8d",
-      "last_checked": "2026-06-09T07:30:23.322096",
+      "last_checked": "2026-06-12T07:45:53.028836",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"0a51d2c98962cd2b0b4ae584487c6955\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey/identifierkey.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey/namekey.json": {
       "hash": "b69ff08272fa53addf6e5f0d1e3720f2f6e7e4686e14fdbfdc40f72a97c8030d",
-      "last_checked": "2026-06-09T07:30:23.420098",
+      "last_checked": "2026-06-12T07:45:53.154050",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"2a49f0fd124f12bb3c51529be0efdf39\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey/namekey.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey/init(rawvalue:).json": {
       "hash": "acbf9f556d2e1e752dec373246a135e35b761355c1e4d8cf042368f95d71ef8f",
-      "last_checked": "2026-06-09T07:30:23.516401",
+      "last_checked": "2026-06-12T07:45:53.291219",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"06cc8928e7494ca7522b42d63d16e2cc\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey/init-rawvalue.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/xcodekit/xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.json": {
       "hash": "397278ace8cdb784e619b819a14bac17fc7c73066d199e995dd2a101aa2c70d7",
-      "last_checked": "2026-06-09T07:30:23.614091",
+      "last_checked": "2026-06-12T07:45:53.420087",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:17.857267",
+      "session_id": "2026-06-12T07:45:47.674863",
       "etag": "W/\"d0adc3ca43c099a97cb514c5dda006b2\"",
       "file_path": "documentation/XcodeKit/xcsourceeditorcommanddefinitionkey/systemsymbolnamekey.md"
     },

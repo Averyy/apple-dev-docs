@@ -64,9 +64,11 @@ Localization imagery is available for specific areas in over 20 countries, inclu
   The number of image anchors to monitor closely for position and orientation updates.
 - [var automaticImageScaleEstimationEnabled: Bool](argeotrackingconfiguration/automaticimagescaleestimationenabled.md)
   A flag that instructs the framework to estimate and set the scale of a detected or tracked image on your behalf.
-### Detecting real-world objects
+### Detecting and tracking real-world objects
 - [var detectionObjects: Set<ARReferenceObject>](argeotrackingconfiguration/detectionobjects.md)
   A set of 3D objects that the framework attempts to detect in the user’s environment.
+- [var trackingObjects: Set<ARReferenceObject>](argeotrackingconfiguration/trackingobjects.md)
+  Objects to track in the scene.
 ### Creating realistic reflections
 - [var environmentTexturing: ARWorldTrackingConfiguration.EnvironmentTexturing](argeotrackingconfiguration/environmenttexturing.md)
   An option that determines how the framework generates environment textures.
@@ -85,9 +87,6 @@ Localization imagery is available for specific areas in over 20 countries, inclu
   A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
 - [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
-### Instance Properties
-- [var trackingObjects: Set<ARReferenceObject>](argeotrackingconfiguration/trackingobjects.md)
-  Objects to track in the scene.
 
 ## Relationships
 

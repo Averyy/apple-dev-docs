@@ -10,7 +10,7 @@ Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an 
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 279: [`What’s New in RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc26/279/).
+> **Note**: This sample code project is associated with WWDC26 session 279: [`Explore advances in RealityKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/279/).
 
 ## See Also
 

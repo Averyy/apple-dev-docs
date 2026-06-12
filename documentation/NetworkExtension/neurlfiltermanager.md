@@ -84,25 +84,6 @@ Neither the Bloom filter nor PIR supports wildcards or regular expressions. For 
 
 Instances of this class are thread-safe.
 
-##### Configuring the Pir Server
-
-URL filtering requires that your app’s information property list contain a top-level `PIRConfiguration` dictionary. The dictionary contains two keys, as follows:
-
-- **`serviceURL`**: (Required) The URL of the PIR server. This is equivalent to the [`pirServerURL`](neurlfiltermanager/pirserverurl.md) property.
-- **`issuerURL`**: (Optional) The URL of the Privacy Pass Issuer. This is equivalent to the [`pirPrivacyPassIssuerURL`](neurlfiltermanager/pirprivacypassissuerurl.md) property. If absent, the `issuerURL` defaults to the value of `serviceURL`.
-
-An example `PIRConfiguration` dictionary follows:
-
-```xml
-<key>PIRConfiguration</key>
-<dict>
-    <key>serviceURL</key>
-    <string>https://pir.example.com</string>
-    <key>issuerURL</key>
-    <string>https://issuer.example.com</string>
-</dict>
-```
-
 ## Topics
 
 ### Obtaining the shared instance

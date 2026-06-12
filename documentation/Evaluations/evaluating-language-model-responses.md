@@ -26,15 +26,14 @@ import Evaluations
 import FoundationModels
 
 struct LetterCountEvaluation: Evaluation {
-    var dataset: ArrayLoader<ModelSample<Int>> {
-        ArrayLoader(samples: [
+    let dataset = ArrayLoader(samples: [
             ModelSample(prompt: "Count the letter 'r' in 'strawberry'.", expected: 3),
             ModelSample(prompt: "How many a's are in 'banana'?", expected: 3),
             ModelSample(prompt: "Mississippi contains how many s?", expected: 4),
             ModelSample(prompt: "What's the number of l in hello?", expected: 2),
             ModelSample(prompt: "The letter 'e' in 'bookkeeper' appears how many times?", expected: 3),
         ])
-    }
+
 ```
 
 Building a large, comprehensive sample set by hand is tedious; see [`Generating synthetic datasets`](generating-synthetic-evaluation-datasets.md) for more details on generating samples synthetically.
@@ -224,8 +223,12 @@ ModelSample(
 Then, add a [`ToolCallEvaluator`](toolcallevaluator.md) to your evaluators list:
 
 ```swift
+// Computed metrics.
 let exactMatch = Metric("ExactMatch")
 let absoluteError = Metric("AbsoluteError")
+// Tool calling metrics.
+let toolsAllPass = Metric("ToolsAllPass")
+let toolsPercentagePass = Metric("ToolsPercentagePass")
 
 var evaluators: Evaluators {
     // Score tool calls against the trajectory expectations defined on each sample.

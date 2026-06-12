@@ -51,6 +51,12 @@ In iOS 26 and later, your app can continue certain activities in the background 
 ### Data Transfer
 - [Transferring Data Between Bluetooth Low Energy Devices](transferring-data-between-bluetooth-low-energy-devices.md)
   Create a Bluetooth low energy central and peripheral device, and allow them to discover each other and exchange data.
+### Channel Sounding
+- [Measuring distance between devices using Channel Sounding](measuring-distance-between-devices-using-channel-sounding.md)
+  Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
+- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
+- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
+- [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
 ### Services
 - [class CBService](cbservice.md)
   A collection of data and associated behaviors that accomplish a function or feature of a device.
@@ -98,11 +104,6 @@ In iOS 26 and later, your app can continue certain activities in the background 
   Values that represent the current state of the peripheral manager.
 - [Deprecated Constants](deprecated-constants.md)
   This document describes the constants found in the Core Bluetooth framework.
-### Classes
-- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
-- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
-### Variables
-- [let CBUUIDCharacteristicObservationScheduleString: String](cbuuidcharacteristicobservationschedulestring.md)
 
 ## See Also
 

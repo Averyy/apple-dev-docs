@@ -25,7 +25,7 @@ class VZEFIBootLoader
 - [class VZEFISignatureList](vzefisignaturelist.md)
   A class that represents a Unified Extensible Firmware Interface (UEFI) signature list.
 - [enum VZEFISignature](vzefisignature-swift.enum.md)
-### Instance properties
+### Accessing the boot loader’s EFI variables
 - [var variableStore: VZEFIVariableStore?](vzefibootloader/variablestore.md)
   The boot loader’s EFI variable store.
 

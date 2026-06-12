@@ -211,7 +211,6 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [typealias NetworkActorInterruptionHandler](networkactorinterruptionhandler.md)
   A handler that is invoked when the underlying connection is interrupted. An attempt at creating a new connection will occur if another remote call is invoked on the same remote instance of an actor.
 - [typealias NetworkActorInvalidationHandler](networkactorinvalidationhandler.md)
-  TODO: Do we need this stuff anymore…?
 
 
 ---

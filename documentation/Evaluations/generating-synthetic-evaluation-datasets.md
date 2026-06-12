@@ -80,14 +80,14 @@ This initial dataset covers all five `TaskCategory` cases, includes both urgent 
 Create additional samples by calling `makeSamples(_:targetCount:sessionProvider:validator:)` with a prompt that describes the data you want to generate. For example:
 
 ```swift
-let syntheticGenerationPrompt: Prompt = """
+let syntheticGenerationPrompt = Prompt("""
     Generate realistic to-do list items that a busy professional might have. \
     Each input is a natural-language request, and the expected output is the structured \
     task extracted from it. Cover a mix of work tasks (meetings, deadlines, \
     reviews), personal errands (shopping, appointments), health activities \
     (exercise, checkups), and home maintenance. Vary urgency and whether a \
     due date is specified.
-    """
+    """)
 ```
 
 The method returns an [`AsyncThrowingStream`](https://developer.apple.com/documentation/Swift/AsyncThrowingStream) that yields each new sample as the model generates it:
@@ -117,7 +117,7 @@ Pass a `validator` closure to programmatically reject samples during generation;
 var expanded: [ModelSample<TaskItem>] = []
 
 for try await sample in dataset.makeSamples(
-    "Generate realistic to-do list items for a busy professional.",
+    Prompt("Generate realistic to-do list items for a busy professional."),
     targetCount: 20,
     validator: { sample in
         // Reject samples that are missing an expected value or have an empty title.
@@ -185,7 +185,7 @@ When you pass a validator to `makeSamples(_:targetCount:sessionProvider:validato
 
 ```swift
 let generator = SampleGenerator(
-    "Generate realistic to-do list items for a busy professional.",
+    Prompt("Generate realistic to-do list items for a busy professional."),
     samples: dataset,
     targetCount: 20,
     // Use sliding window sampling.

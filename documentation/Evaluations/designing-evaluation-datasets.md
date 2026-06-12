@@ -87,22 +87,22 @@ In practice, filter your seeds to the category you want to expand and pair them 
 ```swift
 // Generate urgent work tasks with tight deadlines.
 let workSeeds = dataset.filter { $0.expected?.category == .work }
-let workPrompt: Prompt = """
+let workPrompt = Prompt("""
     Generate realistic work tasks with explicit deadlines within 48 hours.
     Vary phrasing: some as direct requests, some as meeting invites, some as
     forwarded messages. Each needs a clear urgency signal.
-    """
+    """)
 for try await sample in workSeeds.makeSamples(workPrompt, targetCount: 30) {
     expanded.append(sample)
 }
 
 // Separately, generate ambiguous personal tasks with no due date.
 let personalSeeds = dataset.filter { $0.expected?.category == .personal }
-let personalPrompt: Prompt = """
+let personalPrompt = Prompt("""
     Generate personal reminders where the correct category isn't obvious and
     no due date is specified. Include requests that could plausibly be
     errands, home, or health tasks.
-    """
+    """)
 for try await sample in personalSeeds.makeSamples(personalPrompt, targetCount: 30) {
     expanded.append(sample)
 }

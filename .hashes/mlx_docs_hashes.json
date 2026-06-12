@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-06-05T08:46:44.416455",
+    "last_updated": "2026-06-12T08:55:54.112553",
     "total_files": 786,
     "source": "scrape_mlx_docs.py"
   },
@@ -750,7 +750,7 @@
     "github:ml-explore/mlx-swift-lm:README.md": "8dffcf62b2761b3c220113587afdc54c9883554496aeb1f638f5ce47a6448332",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/Documentation.md": "2d6f6164b3a0b5b9844271b616edd580d8aadc7e1bb13a6739657adca2758394",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/porting.md": "638dd5b9a3696cd9da49e1a2b61d0953d23d1dbd6c2990336394b3f391ed0659",
-    "github:ml-explore/mlx-swift-examples:README.md": "521f27e26bcf88e7b778f2e58a680a47edab9f86a9a6dd3dc282b1a9fe32ac86",
+    "github:ml-explore/mlx-swift-examples:README.md": "4da27bf9cb2b3f338851067adf5d521dd4d64c351f3cabc25ae9870ae1b7884b",
     "github:ml-explore/mlx-swift-examples:Applications/LLMBasic/README.md": "764050b0ddb93e64a13c7f4999da7fac29bd748924314829f24e69f63a91d032",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/README.md": "9d2551458e5f4781b2738712a67474cfedf7534104e012168387c85c1df48ce7",
     "github:ml-explore/mlx-swift-examples:Applications/LLMEval/Models/CarKeysStory.md": "07adfdd66b2bfd5997745f0ea9e96dd4beb07d1965bc7687e27493ba95e77a03",

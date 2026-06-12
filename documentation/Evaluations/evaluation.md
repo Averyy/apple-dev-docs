@@ -31,18 +31,16 @@ Implement this protocol to create custom evaluations. The evaluation runs your s
 struct MyEvaluation: Evaluation {
     let metric = Metric("Match")
 
-    var dataset: ArrayLoader<ModelSample<String>> {
-        ArrayLoader(samples: [
-            ModelSample(prompt: "One plus one is...", expected: "Two.")
-        ])
-    }
+    let dataset = ArrayLoader(samples: [
+        ModelSample(prompt: "One plus one is...", expected: "Two.")
+    ])
 
     func subject(from sample: ModelSample<String>) async throws -> ModelSubject<String> {
         ModelSubject(value: "Two.")
     }
 
     var evaluators: Evaluators {
-        Evaluator<ModelSample<String>> { sample, subject in
+        Evaluator { sample, subject in
             let metric = Metric("Match")
             guard let expected = sample.expected else { return metric.ignore() }
             return subject.value == expected ? metric.passing() : metric.failing()

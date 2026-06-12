@@ -45,11 +45,11 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [struct FSDirectoryCookie](fsdirectorycookie.md)
   A value that indicates a location in a directory from which to enumerate.
 - [struct FSDirectoryVerifier](fsdirectoryverifier.md)
-  Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 - [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
   An object used to provide items during a directory enumeration.
 ### Inspecting required volume properties

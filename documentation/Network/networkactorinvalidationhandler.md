@@ -3,8 +3,6 @@
 **Framework**: Network  
 **Kind**: typealias
 
-TODO: Do we need this stuff anymore…?
-
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+

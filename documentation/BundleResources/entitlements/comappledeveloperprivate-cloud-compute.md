@@ -19,6 +19,12 @@ A Boolean value that indicates whether the app can use Private Cloud Compute.
 
 **Default**: `NO`
 
+#### Discussion
+
+To develop with PCC you must meet certain eligibility requirements. To learn more and request access to the managed entitlement, see [`Accessing Private Cloud Compute`](https://developer.apple.comhttps://developer.apple.com/private-cloud-compute/).
+
+For more information about using this entitlement, see [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/FoundationModels/adding-server-side-intelligence-with-private-cloud-compute).
+
 
 ---
 

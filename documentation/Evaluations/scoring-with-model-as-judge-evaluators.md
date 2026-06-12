@@ -36,15 +36,13 @@ struct BookTags: Codable, Sendable {
 struct BookTagEvaluation: Evaluation {
 
     // Book reviews for the model to generate tags from.
-    var dataset: ArrayLoader<ModelSample<BookTags>> {
-        ArrayLoader(samples: [
-            ModelSample(prompt: "An absolutely breathtaking novel. The characters are richly drawn, the plot twists kept me guessing, and the prose is lyrical without being overwrought.", expected: nil),
-            ModelSample(prompt: "Honestly a slog. It's a dystopian novel about a totalitarian surveillance state but the characters are paper-thin and the romance subplot felt forced.", expected: nil),
-            ModelSample(prompt: "A fun, twisty murder mystery set on a private island. Classic whodunit vibes with an eccentric cast of suspects and a storm that cuts them off from the mainland.", expected: nil),
-            ModelSample(prompt: "This book completely changed how I think about habits. The idea that tiny changes compound over time really stuck with me. Very practical.", expected: nil),
-            ModelSample(prompt: "A devastating, beautiful novel about a family torn apart by war. The way the author writes about memory and loss had me in tears.", expected: nil),
+    let dataset = ArrayLoader(samples: [
+            ModelSample(prompt: "An absolutely breathtaking novel. The characters are richly drawn, the plot twists kept me guessing, and the prose is lyrical without being overwrought.", expected: BookTags(tags: [])),
+            ModelSample(prompt: "Honestly a slog. It's a dystopian novel about a totalitarian surveillance state but the characters are paper-thin and the romance subplot felt forced.", expected: BookTags(tags: [])),
+            ModelSample(prompt: "A fun, twisty murder mystery set on a private island. Classic whodunit vibes with an eccentric cast of suspects and a storm that cuts them off from the mainland.", expected: BookTags(tags: [])),
+            ModelSample(prompt: "This book completely changed how I think about habits. The idea that tiny changes compound over time really stuck with me. Very practical.", expected: BookTags(tags: [])),
+            ModelSample(prompt: "A devastating, beautiful novel about a family torn apart by war. The way the author writes about memory and loss had me in tears.", expected: BookTags(tags: [])),
         ])
-    }
 
     // Run the intelligent feature under test.
     func subject(from sample: ModelSample<BookTags>) async throws -> ModelSubject<BookTags> {
@@ -326,8 +324,7 @@ Unlike pointwise evaluation, the pairwise method uses its own built-in prompt an
 struct ExplanationPairwiseEvaluation: Evaluation {
     private let explanationComparison = Metric("ExplanationComparison")
 
-    var dataset: ArrayLoader<ModelSample<String>> {
-        ArrayLoader(samples: [
+    let dataset = ArrayLoader(samples: [
             ModelSample(
                 prompt: "Explain why the sky is blue.",
                 expected: "The sky is blue because of the way sunlight interacts with the atmosphere. Blue light gets scattered more than other colors."
@@ -341,7 +338,6 @@ struct ExplanationPairwiseEvaluation: Evaluation {
                 expected: "Ice floats because water expands when it freezes, making ice less dense than liquid water. The lighter ice sits on top of the heavier water."
             ),
         ])
-    }
 
     func subject(from sample: ModelSample<String>) async throws -> ModelSubject<String> {
         let session = LanguageModelSession(

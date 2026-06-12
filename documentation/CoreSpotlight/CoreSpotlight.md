@@ -28,6 +28,8 @@ In addition to indexing content, iOS provides additional strategies for making y
 ## Topics
 
 ### Essentials
+- [Core Spotlight updates](../Updates/CoreSpotlight.md)
+  Learn about important changes to Core Spotlight.
 - [Adding your app’s content to Spotlight indexes](adding-your-app-s-content-to-spotlight-indexes.md)
   Create a description for your app’s content and add it to a Spotlight index to make it searchable.
 ### Searchable items

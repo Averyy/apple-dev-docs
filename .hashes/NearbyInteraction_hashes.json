@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-09T07:29:47.931540",
+    "last_updated": "2026-06-12T07:44:34.745777",
     "total_pages": 314,
-    "session_id": "2026-06-09T07:29:34.499305"
+    "session_id": "2026-06-12T07:44:12.965535"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/NearbyInteraction.json": {
       "hash": "ff6b7d7632682763fc448d1b6a6c972dd470ced5214ddbc14faafb990aa668da",
-      "last_checked": "2026-06-09T07:29:34.759015",
+      "last_checked": "2026-06-12T07:44:13.233702",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"15a238906bd92019b980b76ed60daa83\"",
       "file_path": "documentation/NearbyInteraction/NearbyInteraction.md"
     },
     "https://developer.apple.com/documentation/NearbyInteraction": {
       "hash": "ff6b7d7632682763fc448d1b6a6c972dd470ced5214ddbc14faafb990aa668da",
-      "last_checked": "2026-06-09T07:29:34.647861",
+      "last_checked": "2026-06-12T07:44:13.144055",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"15a238906bd92019b980b76ed60daa83\"",
       "file_path": "documentation/NearbyInteraction/NearbyInteraction.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/initiating-and-maintaining-a-session.json": {
       "hash": "32109a994758d72ba12eca4b482e072f8dcddd2ddd78d40f1a3ed512096faa25",
-      "last_checked": "2026-06-09T07:29:35.069194",
+      "last_checked": "2026-06-12T07:44:13.502691",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ddc91df0fb502e07bb84745ce2681d37\"",
       "file_path": "documentation/NearbyInteraction/initiating-and-maintaining-a-session.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession.json": {
       "hash": "b17622606b191483c920a897e2f8c64fe2bf8a5af8e4f019eaf9a1a53f297bf2",
-      "last_checked": "2026-06-09T07:29:35.298330",
+      "last_checked": "2026-06-12T07:44:13.651352",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"79cf7709cef49d63ce9f18aa3d1d44f5\"",
       "file_path": "documentation/NearbyInteraction/nisession.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/implementing-interactions-between-users-in-close-proximity.json": {
       "hash": "7e7e5b8ddf01126d74c7bfe375ccbe9d6f9256af8b1b66731691320fcc830970",
-      "last_checked": "2026-06-09T07:29:35.348098",
+      "last_checked": "2026-06-12T07:44:13.826815",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b87f0226a64db2d4faee88010c800bf1\"",
       "file_path": "documentation/NearbyInteraction/implementing-interactions-between-users-in-close-proximity.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/discovering-peers-with-multipeer-connectivity.json": {
       "hash": "b7905581c00184f665223a81eed7c9c7e633d5ed8642215218c25799d27c5f74",
-      "last_checked": "2026-06-09T07:29:35.478097",
+      "last_checked": "2026-06-12T07:44:13.988288",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"45a55f11dd7288ba2f7de96ade2e90ac\"",
       "file_path": "documentation/NearbyInteraction/discovering-peers-with-multipeer-connectivity.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/extending-advanced-direction-finding-and-ranging.json": {
       "hash": "60260d7fb52d23ad7cb183e26941aa73fb4d3ba58271d7d12183b87ff9beba8a",
-      "last_checked": "2026-06-09T07:29:35.585266",
+      "last_checked": "2026-06-12T07:44:14.160769",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"734ef6141d82c4deb320a1273a3a34ab\"",
       "file_path": "documentation/NearbyInteraction/extending-advanced-direction-finding-and-ranging.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbypeerconfiguration.json": {
       "hash": "d8b3d004aae283e02cf6bfc06f60f292ec2e3459c2d66f925641c03be81b9848",
-      "last_checked": "2026-06-09T07:29:35.664387",
+      "last_checked": "2026-06-12T07:44:14.321577",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"e5c11d0da74fb95acc49d9ce862b687f\"",
       "file_path": "documentation/NearbyInteraction/ninearbypeerconfiguration.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/implementing-proximity-based-interactions-between-a-phone-and-watch.json": {
       "hash": "725dcf12f113e089f98a6258d08b59c4680c6c4953dcf3245995ad93b0ac5b95",
-      "last_checked": "2026-06-09T07:29:35.736598",
+      "last_checked": "2026-06-12T07:44:14.457659",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b86593ba1109728be86905ec571808ae\"",
       "file_path": "documentation/NearbyInteraction/implementing-proximity-based-interactions-between-a-phone-and-watch.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/implementing-spatial-interactions-with-third-party-accessories.json": {
       "hash": "6bbe392dd27b4e2ce5ab0e585e0747b1fdcd37b5cd7ac42443a4a16b2182d678",
-      "last_checked": "2026-06-09T07:29:35.780980",
+      "last_checked": "2026-06-12T07:44:14.599249",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"8f2764628c1e5a0a79029b071a93069f\"",
       "file_path": "documentation/NearbyInteraction/implementing-spatial-interactions-with-third-party-accessories.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration.json": {
       "hash": "de4b5a5aa794f9a7a0f73d73f6fcea8c3579e18293330a541815cc87d5b068d9",
-      "last_checked": "2026-06-09T07:29:35.851205",
+      "last_checked": "2026-06-12T07:44:14.759096",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a7ea3634263e6a75c942190d589e6843\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject.json": {
       "hash": "3e6cf48321b8d18bbd0855add5b683fbff4b0ab272a1884f6f0149b41d3ec578",
-      "last_checked": "2026-06-09T07:29:36.033169",
+      "last_checked": "2026-06-12T07:44:15.021429",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"266fa61c694bcc903500a47eed084f5b\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate.json": {
       "hash": "6955cdc5395b0be26022b438c0179b742fa53b864fa6dfa23436cd501b59e4f3",
-      "last_checked": "2026-06-09T07:29:36.087847",
+      "last_checked": "2026-06-12T07:44:15.198294",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"250cd282edbc95346e672dd85760027b\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/finding-devices-with-precision.json": {
       "hash": "e12dd7ff3c13cdd50154b28a4d1ce623b99f6902076dfa28bb7a026b56d1e135",
-      "last_checked": "2026-06-09T07:29:36.212746",
+      "last_checked": "2026-06-12T07:44:15.323297",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d71082bbdd15962ca00dae28f31aee82\"",
       "file_path": "documentation/NearbyInteraction/finding-devices-with-precision.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergence.json": {
       "hash": "c51d47be5f2e6cf271b72ea631a1c6303d1fed1b4e6fd04aaa6c89b09a1e375b",
-      "last_checked": "2026-06-09T07:29:36.321141",
+      "last_checked": "2026-06-12T07:44:15.449321",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2bf30edb4c3b5bfb4537bcbf09f2f27b\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergence.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve.json": {
       "hash": "488d5500507a112ca620fb20a07ebbaee39f8c7be7a82b8c410bb1cfc6daaf9f",
-      "last_checked": "2026-06-09T07:29:36.398050",
+      "last_checked": "2026-06-12T07:44:15.625497",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"abb206e9a8fe6c55ebec2a06c60450f5\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/algorithm-convergence-status.json": {
       "hash": "293b3d8b2f95bfbf513ac4c293cc0f942d90062aa6930c2477ef662cdf2acf77",
-      "last_checked": "2026-06-09T07:29:36.511128",
+      "last_checked": "2026-06-12T07:44:15.752146",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"835881c5c10d6fdbd0fb55352e1be83f\"",
       "file_path": "documentation/NearbyInteraction/algorithm-convergence-status.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror.json": {
       "hash": "20c726c822d962a764736f03e325fed07b1c361d3a7e82dddbceb75fb268e0b9",
-      "last_checked": "2026-06-09T07:29:36.631556",
+      "last_checked": "2026-06-12T07:44:16.040419",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"75bf2169f61c050f7119720f4789f483\"",
       "file_path": "documentation/NearbyInteraction/nierror.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code.json": {
       "hash": "a8973522df5ba054a069a62dcfc46c5e5f139bf1b5899d9434734c8bcf05be69",
-      "last_checked": "2026-06-09T07:29:36.705461",
+      "last_checked": "2026-06-12T07:44:16.173155",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"7c7fd5edbdb9465ce754a73e4fbdf897\"",
       "file_path": "documentation/NearbyInteraction/nierror/code.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierrordomain.json": {
       "hash": "adb83f3116cb1377c6a6f8667c5e9372bae50c84b511430414640699a0e6231d",
-      "last_checked": "2026-06-09T07:29:36.803620",
+      "last_checked": "2026-06-12T07:44:16.352808",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"49188ba3d145932e479ea169efb77411\"",
       "file_path": "documentation/NearbyInteraction/nierrordomain.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration.json": {
       "hash": "04b63eb1c33a2482ce262b0aa7934a8f6e67124fbd1c5485d150ee15aab3ef64",
-      "last_checked": "2026-06-09T07:29:41.529836",
+      "last_checked": "2026-06-12T07:44:24.217981",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a1de59c6d043d3e1f0fc30debdaff755\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement.json": {
       "hash": "5bc750bd7ece03fcc2b5a0157e3f51aad7b7f366457b5159efc209f97a5f8d89",
-      "last_checked": "2026-06-09T07:29:41.650953",
+      "last_checked": "2026-06-12T07:44:24.346125",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"43a5232918ad0435afecb11eebc9c966\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoacoordinatestype.json": {
       "hash": "62d58d5439e7528ae384bbab720d2676c894278ba87e14d7b863c487fcd200c1",
-      "last_checked": "2026-06-09T07:29:41.771110",
+      "last_checked": "2026-06-12T07:44:24.474237",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d2c67d61914289613ca1b656787297a4\"",
       "file_path": "documentation/NearbyInteraction/nidltdoacoordinatestype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurementtype.json": {
       "hash": "24dc10f7be378a6bb99d5934d8a9229699df84f9323e4d093d2629e3db5c439d",
-      "last_checked": "2026-06-09T07:29:41.819126",
+      "last_checked": "2026-06-12T07:44:24.607721",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"67105d4c42ff73248a87af7504d2232c\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurementtype.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/devicecapabilities.json": {
       "hash": "5ce2f93a485be6423fa696653aa8d300e7be047d54fd54d047990ae638c77f8c",
-      "last_checked": "2026-06-09T07:29:36.851998",
+      "last_checked": "2026-06-12T07:44:16.540000",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b4a7aeef15359056ea5942e16d868fda\"",
       "file_path": "documentation/NearbyInteraction/nisession/devicecapabilities.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability.json": {
       "hash": "57a7be1e8816ccd030152302a00843be9094174421e99a5149fc22a622552776",
-      "last_checked": "2026-06-09T07:29:36.950109",
+      "last_checked": "2026-06-12T07:44:16.676395",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"6b70e3925e992eb8caf0942a3b965c0f\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/discoverytoken.json": {
       "hash": "0b1066cac756e5e8e45910feb83ace17fc4d12219f1f9de2db7a0a2799b4fb22",
-      "last_checked": "2026-06-09T07:29:37.069111",
+      "last_checked": "2026-06-12T07:44:16.805025",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"bff4c549bb0f8a61719549c0c8aa39cf\"",
       "file_path": "documentation/NearbyInteraction/nisession/discoverytoken.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidiscoverytoken.json": {
       "hash": "14cbb4cbc98e99979c440c1b02f09cfd2ef03450eb08cccc295fe49645bb67ab",
-      "last_checked": "2026-06-09T07:29:37.122799",
+      "last_checked": "2026-06-12T07:44:16.924734",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2b4d19a13cd33c77f523402f713a3af9\"",
       "file_path": "documentation/NearbyInteraction/nidiscoverytoken.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/run(_:).json": {
       "hash": "68a851ce85bf9d70e707d540ea3cb47d78c639973cfecdaa4eb9a549267a2630",
-      "last_checked": "2026-06-09T07:29:37.200288",
+      "last_checked": "2026-06-12T07:44:17.075739",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"146fef89c207ac01fc779d7e93ac8cd6\"",
       "file_path": "documentation/NearbyInteraction/nisession/run.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/configuration.json": {
       "hash": "0374bfc776051c699c5d90c00b7ca68178942a611cf0b0935ee661f76ada1a83",
-      "last_checked": "2026-06-09T07:29:37.325296",
+      "last_checked": "2026-06-12T07:44:17.194180",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"7b4d13e25e5d2d11c7b5563c0427282a\"",
       "file_path": "documentation/NearbyInteraction/nisession/configuration.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/delegatequeue.json": {
       "hash": "71e7d3a2843e83fbedc872adf6800d5c196e128427952169ef50f9be4044b3a1",
-      "last_checked": "2026-06-09T07:29:37.375035",
+      "last_checked": "2026-06-12T07:44:17.367551",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"30f8d3f75397cdf678946cdb5fa508db\"",
       "file_path": "documentation/NearbyInteraction/nisession/delegatequeue.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/delegate.json": {
       "hash": "ced10d11957e3145a955a7d713210ed0eb14e3501d476c12c0519787dc557c5a",
-      "last_checked": "2026-06-09T07:29:37.442533",
+      "last_checked": "2026-06-12T07:44:17.494508",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"962d2f38525182a1497b7e6cc08e0926\"",
       "file_path": "documentation/NearbyInteraction/nisession/delegate.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/pause().json": {
       "hash": "508088740bd434c1faffe92a83facfe6c8cd1ee6f1834a82aa41a1525e940c31",
-      "last_checked": "2026-06-09T07:29:37.498046",
+      "last_checked": "2026-06-12T07:44:17.635256",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"cd2384c0cb70a2ab88e42c01e1a59717\"",
       "file_path": "documentation/NearbyInteraction/nisession/pause.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/invalidate().json": {
       "hash": "320ce5646a79d52b632c11d2329464960292d4298e34dd6d141040f03e9d6887",
-      "last_checked": "2026-06-09T07:29:37.568061",
+      "last_checked": "2026-06-12T07:44:17.776647",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"7d9e7040b47522d2727f9af381f234c4\"",
       "file_path": "documentation/NearbyInteraction/nisession/invalidate.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/setarsession(_:).json": {
       "hash": "55d8cb11b8c94230b3371d855fc667cee0cff76ad61fe250269a34ba62b38ba4",
-      "last_checked": "2026-06-09T07:29:37.787471",
+      "last_checked": "2026-06-12T07:44:17.942584",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"59f7939d863142f2fa600f3945e6b99d\"",
       "file_path": "documentation/NearbyInteraction/nisession/setarsession.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/worldtransform(for:).json": {
       "hash": "1bea3d94b64a346ab09803034575055460f5f1abbafb8377396934293e245fa3",
-      "last_checked": "2026-06-09T07:29:37.835686",
+      "last_checked": "2026-06-12T07:44:18.056390",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"834c7637503c0066346d4034d496e470\"",
       "file_path": "documentation/NearbyInteraction/nisession/worldtransform-for.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/issupported.json": {
       "hash": "8a77f5475cebf646419e9b9d2ef2ebc25d1353e418aee53aed0138fee561676b",
-      "last_checked": "2026-06-09T07:29:37.984626",
+      "last_checked": "2026-06-12T07:44:18.352318",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"43628c228bde9eac9e115509ae860fbf\"",
       "file_path": "documentation/NearbyInteraction/nisession/issupported.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbypeerconfiguration/init(peertoken:).json": {
       "hash": "bb098aee564ec63829cd97f77a17ee24007ecc1d539ce9736230b873e0e4f7b9",
-      "last_checked": "2026-06-09T07:29:38.115725",
+      "last_checked": "2026-06-12T07:44:18.484942",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"01403808bdece01905a112bf6fecf674\"",
       "file_path": "documentation/NearbyInteraction/ninearbypeerconfiguration/init-peertoken.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbypeerconfiguration/peerdiscoverytoken.json": {
       "hash": "9b86f65a3e2509b5eabea9431b717573fe22a7e1f0031375006f05e1a3add5bc",
-      "last_checked": "2026-06-09T07:29:38.161465",
+      "last_checked": "2026-06-12T07:44:18.622216",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"1d3a9a1e8e286f87fe380273199f9ccc\"",
       "file_path": "documentation/NearbyInteraction/ninearbypeerconfiguration/peerdiscoverytoken.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/niconfiguration.json": {
       "hash": "09c0bbab1f635e93d5e2b7b45c33623d3d091e5c0e1342e9a338b53881124b9f",
-      "last_checked": "2026-06-09T07:29:38.260828",
+      "last_checked": "2026-06-12T07:44:18.735305",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"f5c482d58517760b253966107247267b\"",
       "file_path": "documentation/NearbyInteraction/niconfiguration.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbypeerconfiguration/iscameraassistanceenabled.json": {
       "hash": "631fcde8e589cefd70cdcd65c1541a691790c1d8f85c56ada317cbb6c3e913bb",
-      "last_checked": "2026-06-09T07:29:38.306119",
+      "last_checked": "2026-06-12T07:44:18.851783",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ff7ef03433184e38af3762060ff18e93\"",
       "file_path": "documentation/NearbyInteraction/ninearbypeerconfiguration/iscameraassistanceenabled.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbypeerconfiguration/isextendeddistancemeasurementenabled.json": {
       "hash": "70bafc478590afb692cad54f68f6f2bc3907eff89af0119bd6f8b485a4cf5905",
-      "last_checked": "2026-06-09T07:29:38.423720",
+      "last_checked": "2026-06-12T07:44:18.979199",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"cacc2a3d182908c650b8d69325ac827a\"",
       "file_path": "documentation/NearbyInteraction/ninearbypeerconfiguration/isextendeddistancemeasurementenabled.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration/init(data:).json": {
       "hash": "42efe9e543f647c73e4fd287a1f25b5c91f7a6a1b0750217640de11bed00ab49",
-      "last_checked": "2026-06-09T07:29:38.465760",
+      "last_checked": "2026-06-12T07:44:19.119991",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"414f356b9f2e025553e0f4f167d8ec3e\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration/init-data.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration/init(accessorydata:bluetoothpeeridentifier:).json": {
       "hash": "156752e07cee9c487cb206cce605f836e1a60bd282bbc73da7350357c463eac0",
-      "last_checked": "2026-06-09T07:29:38.643716",
+      "last_checked": "2026-06-12T07:44:19.237522",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"90375709a114bfe947484ef4b9ba1f83\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration/init-accessorydatabluetoothpeeridentifier.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration/accessorydiscoverytoken.json": {
       "hash": "81cc7345ffac7df1fbcda019313f34f362b6a566dd8a12110a614862f12a5247",
-      "last_checked": "2026-06-09T07:29:38.767115",
+      "last_checked": "2026-06-12T07:44:19.533803",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"06d975b8d5d935473e0206e96da8da56\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration/accessorydiscoverytoken.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration/iscameraassistanceenabled.json": {
       "hash": "356f6e8b24d58396bddc05dcfa2d119d366b69a0544308683efcf53989bb7e34",
-      "last_checked": "2026-06-09T07:29:38.828263",
+      "last_checked": "2026-06-12T07:44:19.682385",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"596710073a2cc53194e3709af05c40ad\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration/iscameraassistanceenabled.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/discoverytoken.json": {
       "hash": "43d4e091edbbbe1ea26006e6bd64fed94619fc68eef6c6dc8b7f0d668950387f",
-      "last_checked": "2026-06-09T07:29:39.373716",
+      "last_checked": "2026-06-12T07:44:20.396922",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2267ba0fec951a3453348e214fe273c0\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/discoverytoken.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/distance-676dm.json": {
       "hash": "b47ff619d60770259143640ed0199dd7578f23b8b3893afc36530c8904dbb0d2",
-      "last_checked": "2026-06-09T07:29:39.478918",
+      "last_checked": "2026-06-12T07:44:20.553112",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"831892aab6e7f7e689d4ee0b4672d127\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/distance-676dm.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/direction-4qh5w.json": {
       "hash": "18e5cd318b30c4f6e23c67543e74d48d94378ad098dc13ffd067ee61a59e2231",
-      "last_checked": "2026-06-09T07:29:39.529562",
+      "last_checked": "2026-06-12T07:44:20.676429",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4f400e76a8dd42529d7114bcdec3c548\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/direction-4qh5w.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/horizontalangle-hsg.json": {
       "hash": "b54eb4a677d637b78b1457ba91a7f34454b822a6ea2104f75b37c1e9c2c0342a",
-      "last_checked": "2026-06-09T07:29:39.601988",
+      "last_checked": "2026-06-12T07:44:20.790106",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c235946bd2a740fc73aa0b7cf0bf557d\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/horizontalangle-hsg.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.property.json": {
       "hash": "a43275ad2b811adda1e615ca56c4ab7bea0027e31ee4c38018a1b6ce8e12ae49",
-      "last_checked": "2026-06-09T07:29:39.661360",
+      "last_checked": "2026-06-12T07:44:20.954842",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"77c437a4434e5cafb96b7afc60933a4d\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swiftproperty.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum.json": {
       "hash": "b1817023c81b85e28942969ac4a47c80e3f701ec6f17a01b6f6746f68dfd6e73",
-      "last_checked": "2026-06-09T07:29:39.720916",
+      "last_checked": "2026-06-12T07:44:21.078376",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"84c5d3dbdc131fe482e71d1ac3699544\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swiftenum.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/removalreason.json": {
       "hash": "1e2447175c1732146d8c0305a9e4952cbd6c023fa0d7d05c3e8e6bf6e8ca2273",
-      "last_checked": "2026-06-09T07:29:39.788768",
+      "last_checked": "2026-06-12T07:44:21.208630",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"749fbe13a5ede2710d7c3dc837baeff2\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/removalreason.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/sessiondidstartrunning(_:).json": {
       "hash": "0f26f7586ace82814f06a922bac6252c6acb6ff8eedb795e4fb3d91c77874b55",
-      "last_checked": "2026-06-09T07:29:39.915716",
+      "last_checked": "2026-06-12T07:44:21.466803",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4780b83299aac48d80f84295c265786a\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/sessiondidstartrunning.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didupdate:).json": {
       "hash": "a990e22a21eb4ef61612b041bc65a1ce3e6444c3d0564537db00d87fdea0aec6",
-      "last_checked": "2026-06-09T07:29:39.964068",
+      "last_checked": "2026-06-12T07:44:21.607269",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"0451d14f1666c1bbfcdfffd8da3b569f\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didupdate.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didgenerateshareableconfigurationdata:for:).json": {
       "hash": "5049c1126fe87500c63f6113a6a7d02a02af65d38749a4c8777d817d1b31f8e1",
-      "last_checked": "2026-06-09T07:29:40.103686",
+      "last_checked": "2026-06-12T07:44:21.741737",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5e16ee1cbf331baa66fa491aabc1f90d\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didgenerateshareableconfigurationdatafor.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didremove:reason:).json": {
       "hash": "ae4fd93fd9ca566766d8993985867c4fd4fc00b642dce4b74b26ba1617409c94",
-      "last_checked": "2026-06-09T07:29:40.151631",
+      "last_checked": "2026-06-12T07:44:21.866488",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"23d790cbf83a56ec8019a9c175eea1f8\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didremovereason.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/sessionwassuspended(_:).json": {
       "hash": "5537ae897d8f2aa774ec80bf8c87de9e0cf901f34e874aa316ebd028ff88f65f",
-      "last_checked": "2026-06-09T07:29:40.290099",
+      "last_checked": "2026-06-12T07:44:22.007244",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"513aedeadb8553fd7e993bd9fc1805b7\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/sessionwassuspended.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/sessionsuspensionended(_:).json": {
       "hash": "0022d8404af18ec9fdcf4e6817274e0a80290c5e4168a8e92fdff72f73665137",
-      "last_checked": "2026-06-09T07:29:40.396935",
+      "last_checked": "2026-06-12T07:44:22.137688",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"0dcb2b7b03d034c04cd3a5419c862b50\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/sessionsuspensionended.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didinvalidatewith:).json": {
       "hash": "a81ec61afd331b9e04030344ddafea93bd86495cf4ee8975c644deb7bced4d0f",
-      "last_checked": "2026-06-09T07:29:40.444772",
+      "last_checked": "2026-06-12T07:44:22.272556",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"f6dfa9c0ef747e3840f1a1816493ef0d\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didinvalidatewith.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didupdatealgorithmconvergence:for:).json": {
       "hash": "06d864f8772e9892747cf1195c0ff5a60fb02d90fa18df7c1a02f3c5f8c86d95",
-      "last_checked": "2026-06-09T07:29:40.513822",
+      "last_checked": "2026-06-12T07:44:22.412566",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d825c7f61258e194be0ab0a69c610fec\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didupdatealgorithmconvergencefor.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason.json": {
       "hash": "4c00a3e9b50392ca51ff84c7710e6064a334a7a33ac0bb2b7c6311ff8a2ad241",
-      "last_checked": "2026-06-09T07:29:40.625477",
+      "last_checked": "2026-06-12T07:44:22.586650",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"8d19491d262df4f5883632c7e7f62e17\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisessiondelegate/session(_:didupdatedltdoa:).json": {
       "hash": "4a2ab1f33dcb18b53bd33c0d11699fe3e205da2bed541d8b8797303366ea974f",
-      "last_checked": "2026-06-09T07:29:40.670086",
+      "last_checked": "2026-06-12T07:44:22.716726",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c50c43f991104a83b4bfe091967418ab\"",
       "file_path": "documentation/NearbyInteraction/nisessiondelegate/session-didupdatedltdoa.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergence/status-654t.json": {
       "hash": "eefca57c3f85afb592d084fdd233b369bacbfa41520d81d5d926c3e5e8678f90",
-      "last_checked": "2026-06-09T07:29:40.791398",
+      "last_checked": "2026-06-12T07:44:23.067169",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"baca787612810795d792318e3dfb636f\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergence/status-654t.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/converged.json": {
       "hash": "11939f9562ec717a8615dd3305177ce17ce88b416bec7bb098aa5fb26cf1578f",
-      "last_checked": "2026-06-09T07:29:40.956806",
+      "last_checked": "2026-06-12T07:44:23.320355",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"aa043f403fa18199ed5f8d64a67696f7\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/converged.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/notconverged(_:).json": {
       "hash": "812946a4ecae258a55d457e96ac03c6aae6ae619d04207e632402966b333d80b",
-      "last_checked": "2026-06-09T07:29:41.061117",
+      "last_checked": "2026-06-12T07:44:23.458216",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b36bf55fb640ec87af5a535dfd6cb43e\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/notconverged.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/unknown.json": {
       "hash": "17ec47d65064394a92b4eac03294b06ddde7d948a3c25be6a8c128663193f23e",
-      "last_checked": "2026-06-09T07:29:41.106325",
+      "last_checked": "2026-06-12T07:44:23.587275",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5f916e4e02843119a5893f816a5e4e46\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/unknown.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/==(_:_:).json": {
       "hash": "356f1812333a28d29a7fcb976ff03f1cb1c8d38170370e7f292f0400bd070eaf",
-      "last_checked": "2026-06-09T07:29:41.180461",
+      "last_checked": "2026-06-12T07:44:23.720702",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b30d5d206a5185c367c2a6372e3fbe2e\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/equal.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusconverged.json": {
       "hash": "c3f9723202f38b0efd5b17fc2aa53d83c978d3cbe13bb88d003e80f7a70a6dda",
-      "last_checked": "2026-06-09T07:29:41.295965",
+      "last_checked": "2026-06-12T07:44:23.862170",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a1c5a5fe36994727c2ec5a6116b6e7bf\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusconverged.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusnotconverged.json": {
       "hash": "790834c975d02ab5b8a93d86b767dc5d3422c91a19bbfe41a6b2ff07a6f2fa6f",
-      "last_checked": "2026-06-09T07:29:41.403329",
+      "last_checked": "2026-06-12T07:44:23.981818",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"da9654d8a09745c72b8e50bbf3c5022b\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusnotconverged.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusunknown.json": {
       "hash": "b5cefad21a2c5e5b9ea187ff39c7ba7f771c41237f12701d0abdaa71175c7bf3",
-      "last_checked": "2026-06-09T07:29:41.454783",
+      "last_checked": "2026-06-12T07:44:24.095104",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"babef9de1a72de863288bd4b341c9fb0\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusunknown.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/activesessionslimitexceeded.json": {
       "hash": "f168b0a600efd9ef26535856abda6080f84b8be98d2179992b9dc8e8c9a726ad",
-      "last_checked": "2026-06-09T07:29:41.938747",
+      "last_checked": "2026-06-12T07:44:24.734286",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a321da1bf4feccf5921cf7cf25f60f7a\"",
       "file_path": "documentation/NearbyInteraction/nierror/activesessionslimitexceeded.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/invalidconfiguration.json": {
       "hash": "26278c53e817d8be0eeec117f128364bac1946c967ffe9c3db10a0d071e1a8a1",
-      "last_checked": "2026-06-09T07:29:41.984037",
+      "last_checked": "2026-06-12T07:44:24.921119",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"f5d4461fe2e1981409233026b5205103\"",
       "file_path": "documentation/NearbyInteraction/nierror/invalidconfiguration.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/resourceusagetimeout.json": {
       "hash": "0881d809c05da1ebb0bf22f98528b46560905a5cd8f4db82ef025e7ca4a77009",
-      "last_checked": "2026-06-09T07:29:42.054162",
+      "last_checked": "2026-06-12T07:44:25.044911",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"df7d8516bd0b3bb294c8deb24dadbaf4\"",
       "file_path": "documentation/NearbyInteraction/nierror/resourceusagetimeout.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/sessionfailed.json": {
       "hash": "b75519d1c0f615e3085987917dc61462487c2e982139c2ae06400ca0e18eb0c4",
-      "last_checked": "2026-06-09T07:29:42.111484",
+      "last_checked": "2026-06-12T07:44:25.171051",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4742c8f35cfd902376aeaee90cb380a7\"",
       "file_path": "documentation/NearbyInteraction/nierror/sessionfailed.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/unsupportedplatform.json": {
       "hash": "606f65c28dae5a8bb51a561c3abca61c6806df9ff4a442d2e47d1ce1a2f30a1c",
-      "last_checked": "2026-06-09T07:29:42.183026",
+      "last_checked": "2026-06-12T07:44:25.288344",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"57ad01b65d94b0a45e79d13bd59998f8\"",
       "file_path": "documentation/NearbyInteraction/nierror/unsupportedplatform.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/userdidnotallow.json": {
       "hash": "f02b7836cecb3435e201c214bec936a07731f720b071acbcfc63343327400836",
-      "last_checked": "2026-06-09T07:29:42.321545",
+      "last_checked": "2026-06-12T07:44:25.406278",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"00a01b7935a95dd92b16346dd27a7262\"",
       "file_path": "documentation/NearbyInteraction/nierror/userdidnotallow.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/invalidarconfiguration.json": {
       "hash": "4f1b5a222de672ec528e5eec2333cafd1670eafea7cc1908a7a81aea2fb227ed",
-      "last_checked": "2026-06-09T07:29:42.557433",
+      "last_checked": "2026-06-12T07:44:25.551843",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b63ce5738f9c442cbe66599408f79f15\"",
       "file_path": "documentation/NearbyInteraction/nierror/invalidarconfiguration.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/activeextendeddistancesessionslimitexceeded.json": {
       "hash": "d7c75ba6e66bf706018290e748bc86b1569200fb629dbb6382d8f88a3b4df3ad",
-      "last_checked": "2026-06-09T07:29:42.602452",
+      "last_checked": "2026-06-12T07:44:25.664501",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c6ace0666f747d4d646dd83492b7cdfc\"",
       "file_path": "documentation/NearbyInteraction/nierror/activeextendeddistancesessionslimitexceeded.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/incompatiblepeerdevice.json": {
       "hash": "4731cfe8b66fa1255dca59c051e26b5b1ba9f8a8f956a7c671961d19ea51cd47",
-      "last_checked": "2026-06-09T07:29:42.742975",
+      "last_checked": "2026-06-12T07:44:25.808788",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"0478c2410bc02120be5b4d6e7a530403\"",
       "file_path": "documentation/NearbyInteraction/nierror/incompatiblepeerdevice.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/accessorypeerdeviceunavailable.json": {
       "hash": "68a77c7e837c3fd3e4c8ebedd3d0478ad306248a9ae7e6dbc7232c5f71f3cff6",
-      "last_checked": "2026-06-09T07:29:42.868873",
+      "last_checked": "2026-06-12T07:44:25.948107",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2a01e85c515f7b24131d3624e6553a4a\"",
       "file_path": "documentation/NearbyInteraction/nierror/accessorypeerdeviceunavailable.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/errordomain.json": {
       "hash": "f338f09d4a04e657fa7002b8f05222332c4dec4ccd0382cf8a76c4606dd3af2f",
-      "last_checked": "2026-06-09T07:29:42.986072",
+      "last_checked": "2026-06-12T07:44:26.060444",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"973b3aa4c0b2d7d155e7225900561cb6\"",
       "file_path": "documentation/NearbyInteraction/nierror/errordomain.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/activesessionslimitexceeded.json": {
       "hash": "e58f8f6c62861b334196fd203e8d7b37eb3d7c25a4316f80e3457b12338dc57d",
-      "last_checked": "2026-06-09T07:29:43.059656",
+      "last_checked": "2026-06-12T07:44:26.199639",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"fff29dcf0fc0b088ca856f7d6933175b\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/activesessionslimitexceeded.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/invalidconfiguration.json": {
       "hash": "1f8cd156111451646dff251ef67e7c8ccab1c492ca075811cac521b1922fab95",
-      "last_checked": "2026-06-09T07:29:43.138500",
+      "last_checked": "2026-06-12T07:44:26.332259",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c73e2140afa18aea83220417e46f8bcf\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/invalidconfiguration.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/resourceusagetimeout.json": {
       "hash": "dff5a5567ec5d98ee314509f4445dff75dfff8aa23a3edc94cd1444dcfca514c",
-      "last_checked": "2026-06-09T07:29:43.198799",
+      "last_checked": "2026-06-12T07:44:26.460858",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"865b7ccba787f137ae06412960e56482\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/resourceusagetimeout.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/sessionfailed.json": {
       "hash": "1e9b804eee39e1b3426858e2e26e176a7da3a02b29cf2230d9e5e61229f4fd63",
-      "last_checked": "2026-06-09T07:29:43.345052",
+      "last_checked": "2026-06-12T07:44:26.597283",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"07ca7ee5d5c8ee0056d109336a96a0f5\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/sessionfailed.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/unsupportedplatform.json": {
       "hash": "7157571eef78142e5f8bbda62480421179d413c432fa69cd9c825beeab520716",
-      "last_checked": "2026-06-09T07:29:43.396918",
+      "last_checked": "2026-06-12T07:44:26.714875",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"fea333ac4a555d60d575c7004aaf1f1c\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/unsupportedplatform.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/userdidnotallow.json": {
       "hash": "699bcbb74b8af3223e5179afbb5d51e1f50eacace63e206cfdbfbbf3f8c429b4",
-      "last_checked": "2026-06-09T07:29:43.477159",
+      "last_checked": "2026-06-12T07:44:26.850960",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d9ab0dab2920a294df1d20781b3e39c6\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/userdidnotallow.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/invalidarconfiguration.json": {
       "hash": "e29e02523b2ce0a8ed0f6f91fc1d822f75727ca06c3291757d31f5ef2c6e8cd5",
-      "last_checked": "2026-06-09T07:29:43.530648",
+      "last_checked": "2026-06-12T07:44:26.988956",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5e10235acd94a442f075f24aa3fd1798\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/invalidarconfiguration.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/accessorypeerdeviceunavailable.json": {
       "hash": "d4fef51ad61db0e68482e1f4085688b5f6bf7d42fdfb7c1d0705c681e9687d91",
-      "last_checked": "2026-06-09T07:29:43.653759",
+      "last_checked": "2026-06-12T07:44:27.179834",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"51be219ff895090d782659ad7b166ee1\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/accessorypeerdeviceunavailable.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/incompatiblepeerdevice.json": {
       "hash": "59828fb387a4db60d7e62d66798e1b5db6fa82608dff037703ac4746e135b758",
-      "last_checked": "2026-06-09T07:29:43.764799",
+      "last_checked": "2026-06-12T07:44:27.289490",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"79589ba64c227fe630c7b731627029c4\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/incompatiblepeerdevice.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/activeextendeddistancesessionslimitexceeded.json": {
       "hash": "1538509ccda57ed31b2d37322ac86aa45f03c2bc3a83cd8bfa7a071f3208cb7f",
-      "last_checked": "2026-06-09T07:29:43.827342",
+      "last_checked": "2026-06-12T07:44:27.416543",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"9c604a283321124cbdfae629c01a61a3\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/activeextendeddistancesessionslimitexceeded.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nierror/code/init(rawvalue:).json": {
       "hash": "d7a436cc24afd8fc8564fefdb814cc79a1404b6175ce94d78e4c94db59bf8873",
-      "last_checked": "2026-06-09T07:29:43.903697",
+      "last_checked": "2026-06-12T07:44:27.522256",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"1181dc8d92e44698f93c35a6f82b83f2\"",
       "file_path": "documentation/NearbyInteraction/nierror/code/init-rawvalue.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/init(networkidentifier:).json": {
       "hash": "f8c657747d0b7b31084ac39ea3a29d0f569d3f1e09416d46eaa2a3a2ca1bea9c",
-      "last_checked": "2026-06-09T07:29:45.761635",
+      "last_checked": "2026-06-12T07:44:30.769199",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5d1bbd0f0ab4ffcbffda02b76120f463\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/init-networkidentifier.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/networkidentifier.json": {
       "hash": "b40e0659583fb0e394dc0525c0ac6bb4b6e779279af3855411238a83f799127a",
-      "last_checked": "2026-06-09T07:29:45.896546",
+      "last_checked": "2026-06-12T07:44:31.031805",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2da44a4295fc378b7dc012e6a0640671\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/networkidentifier.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/address.json": {
       "hash": "55c1d27ad2e2358316b7c42bb7299a89cf09096e332c59040524a6dea6a59ac6",
-      "last_checked": "2026-06-09T07:29:46.144844",
+      "last_checked": "2026-06-12T07:44:31.419918",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"dc3d6abd6c410046834bf10cf295d5d6\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/address.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/carrierfrequencyoffset.json": {
       "hash": "0a097f207589baba449ce971a2dd4a6182cd6181e7b44c0d71fc5700347ea4e2",
-      "last_checked": "2026-06-09T07:29:46.894808",
+      "last_checked": "2026-06-12T07:44:32.748221",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2c7171e10927ab6708683634a2544275\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/carrierfrequencyoffset.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/coordinates.json": {
       "hash": "a3771b8bff3986a45c8b2c5054cbb97c4c2ce22c920875f3848931d8a8265957",
-      "last_checked": "2026-06-09T07:29:46.321357",
+      "last_checked": "2026-06-12T07:44:31.694974",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2fcf17f82c1077d8590c01353560956b\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/coordinates.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/coordinatestype.json": {
       "hash": "402324480e060d9ca197486934205be2df62bd5d3eaca222117f6df1ca786a87",
-      "last_checked": "2026-06-09T07:29:46.377057",
+      "last_checked": "2026-06-12T07:44:31.832280",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b2b6591b9335ebb8510ee01711fe65e2\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/coordinatestype.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/measurementtype.json": {
       "hash": "87e607ab9a251684e724d6b2b44ae5e3e2c5d26385eff97b9e41ecba69f8b54c",
-      "last_checked": "2026-06-09T07:29:46.846593",
+      "last_checked": "2026-06-12T07:44:32.617926",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c0e220efbe4c17e599fd72bd6c4ceecb\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/measurementtype.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/receivetime.json": {
       "hash": "9ede7d97bf63cd506f22d9af24484f231fde6e9637f4fe72c800d3df3ca922da",
-      "last_checked": "2026-06-09T07:29:46.676876",
+      "last_checked": "2026-06-12T07:44:32.326999",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"fe0a587d0017b26d7eede690f8039e3a\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/receivetime.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/signalstrength.json": {
       "hash": "af0b59230c5f01856c447a4fa0964ee0affedd925bfdd1d6567cf41d3783ba5f",
-      "last_checked": "2026-06-09T07:29:46.500161",
+      "last_checked": "2026-06-12T07:44:31.970276",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"64866785b7caa193e9035ea04c2c63cb\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/signalstrength.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/transmittime.json": {
       "hash": "32c9c02180f11408d2cf91aa14939ecdeae0c5c31aa90268e5e0098c339ce7cf",
-      "last_checked": "2026-06-09T07:29:46.721680",
+      "last_checked": "2026-06-12T07:44:32.500937",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ad1b942b101b7642435e32cb4ca85ff1\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/transmittime.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoacoordinatestype/geodetic.json": {
       "hash": "008c72db277b7105cf5b40e939bc35aee68b73a69645e99cdfa694d00c9929c8",
-      "last_checked": "2026-06-09T07:29:47.071608",
+      "last_checked": "2026-06-12T07:44:33.103371",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4d63c9fbd5ea82e3585570171abe320f\"",
       "file_path": "documentation/NearbyInteraction/nidltdoacoordinatestype/geodetic.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoacoordinatestype/relative.json": {
       "hash": "7658d605155f045210a6069105ff064a3692322084648a62a18acbd31769d156",
-      "last_checked": "2026-06-09T07:29:47.146988",
+      "last_checked": "2026-06-12T07:44:33.231365",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"8bccbe0b058d6edd06e596f8f53f99f7\"",
       "file_path": "documentation/NearbyInteraction/nidltdoacoordinatestype/relative.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoacoordinatestype/init(rawvalue:).json": {
       "hash": "0570123054ee94dc6d90045517508cc3ebbc86673bfd57e2187a8a053a01c632",
-      "last_checked": "2026-06-09T07:29:47.213947",
+      "last_checked": "2026-06-12T07:44:33.347534",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"2c51398d492b8dbc50fb904d72a58730\"",
       "file_path": "documentation/NearbyInteraction/nidltdoacoordinatestype/init-rawvalue.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurementtype/final.json": {
       "hash": "7b61b3c2454299e2b8ebcccca0bfd70d026f0597effda9c0c2565e713bcb197e",
-      "last_checked": "2026-06-09T07:29:47.387044",
+      "last_checked": "2026-06-12T07:44:33.752744",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"91bfb8edb4412a295c561505cccce293\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurementtype/final.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurementtype/poll.json": {
       "hash": "1b5eb825ca1302d3c016736b0ae951885e203a683b23a6c064013a81fc1cfb96",
-      "last_checked": "2026-06-09T07:29:47.272825",
+      "last_checked": "2026-06-12T07:44:33.488407",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"de4477d84f89153f526174d54e3533ab\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurementtype/poll.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurementtype/response.json": {
       "hash": "8abe7b68915e4f464f923c94bbd6c8da7c3a305bcffdd34a52b6c3f31afb17c5",
-      "last_checked": "2026-06-09T07:29:47.324482",
+      "last_checked": "2026-06-12T07:44:33.609960",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"71dd9e44ae1c62ce7febdb0e1040a66a\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurementtype/response.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurementtype/init(rawvalue:).json": {
       "hash": "9a44649133ae6624f6df81574bf1ddb9fd0f1b201acce9691c5edf79fb158ea0",
-      "last_checked": "2026-06-09T07:29:47.454317",
+      "last_checked": "2026-06-12T07:44:33.871851",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"39ecbc008049886a95baca8a27a4fa7d\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurementtype/init-rawvalue.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportsprecisedistancemeasurement.json": {
       "hash": "4c5885b6c0a4345a04ca7e00d8388804c5c81ecdd9a68b9385f3209a87b288ab",
-      "last_checked": "2026-06-09T07:29:43.969098",
+      "last_checked": "2026-06-12T07:44:27.695849",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"1c93202fb05c525da400243aebeb4885\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportsprecisedistancemeasurement.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportsdirectionmeasurement.json": {
       "hash": "1b623640fab2d590eba73cc58dae0d6fc8a7bf28e8056ad1816aef6038cbb06a",
-      "last_checked": "2026-06-09T07:29:44.071540",
+      "last_checked": "2026-06-12T07:44:27.827935",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4b11fd0f8ba3166fd7c5f8d6e1a7b95d\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportsdirectionmeasurement.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportscameraassistance.json": {
       "hash": "4f9d15a2798e1a10b25a7007141430424f7c445c466e464d471a44e5546012f5",
-      "last_checked": "2026-06-09T07:29:44.125083",
+      "last_checked": "2026-06-12T07:44:27.963830",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"56d360f666e433aa5c195c42758c3efc\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportscameraassistance.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportsextendeddistancemeasurement.json": {
       "hash": "9c77ae0cc1a1acd0529e7afd33d5db9130419bd1a2535f28adbd1fe4b44b6765",
-      "last_checked": "2026-06-09T07:29:44.267540",
+      "last_checked": "2026-06-12T07:44:28.088748",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b5c6656722417c5f9c13352bc56ade14\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportsextendeddistancemeasurement.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportsdltdoameasurement.json": {
       "hash": "52c21deded668d68d7d0e5c609088a038cb833a926e222cbd20f4c445ec384da",
-      "last_checked": "2026-06-09T07:29:44.317725",
+      "last_checked": "2026-06-12T07:44:28.218510",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c76d8d9f33160f3c928e53f1309a3b51\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportsdltdoameasurement.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidiscoverytoken/devicecapabilities.json": {
       "hash": "0f8f94dd96f00c2afba0a1b8696f69a07c637271d6518030743c45229687261f",
-      "last_checked": "2026-06-09T07:29:44.447771",
+      "last_checked": "2026-06-12T07:44:28.456065",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"de2fb9cc2b240a473d379fb915384cdd\"",
       "file_path": "documentation/NearbyInteraction/nidiscoverytoken/devicecapabilities.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/unknown.json": {
       "hash": "13752c294cd33d295e5127169c616393e22b55ab346d82391919c59fed291c0d",
-      "last_checked": "2026-06-09T07:29:44.750901",
+      "last_checked": "2026-06-12T07:44:28.814002",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"3dd48af349f74c8088375431d39d6d60\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/unknown.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/same.json": {
       "hash": "ba5c921fed3db49f85fe0d221bab775bb59c8c15ab02b484cb2b518c8db11d6d",
-      "last_checked": "2026-06-09T07:29:44.799640",
+      "last_checked": "2026-06-12T07:44:28.961283",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4ddce157ffe4501ded5181b9278a7769\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/same.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/above.json": {
       "hash": "94530ba0a1c600274f9daf0237480ca84449521b16b55b033633379ad43cd337",
-      "last_checked": "2026-06-09T07:29:44.855364",
+      "last_checked": "2026-06-12T07:44:29.115147",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ce3b208b44aed68c16bff7fcda5f3179\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/above.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/below.json": {
       "hash": "357aa8a4a3e5e3d590386f41d67fd50a895d1d8e0c3bbd67f7168422b25fae94",
-      "last_checked": "2026-06-09T07:29:44.977861",
+      "last_checked": "2026-06-12T07:44:29.242243",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"3fa87d3623e48d7c58b00446a0f5bb75\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/below.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/aboveorbelow.json": {
       "hash": "9479f786badd90393ee1e24b0e41ac699ddbed77de29e45abcaa316acc56b6db",
-      "last_checked": "2026-06-09T07:29:45.028744",
+      "last_checked": "2026-06-12T07:44:29.376512",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"27e586ee7316cbae0cd705058373af73\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/aboveorbelow.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/verticaldirectionestimate-swift.enum/init(rawvalue:).json": {
       "hash": "331551d81e2ea1fc57e807a41e9e5b97a6bef832e6a644d02f379acad25ba86e",
-      "last_checked": "2026-06-09T07:29:45.111178",
+      "last_checked": "2026-06-12T07:44:29.493020",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b2553f58f721493887c9ff5ec4a236e2\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/verticaldirectionestimate-swift.enum/init-rawvalue.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/removalreason/peerended.json": {
       "hash": "6b0ab6fae1dd39bb36bcc66b3baea77d2a95a9ce2efa86100e39ed9e102efb77",
-      "last_checked": "2026-06-09T07:29:45.155686",
+      "last_checked": "2026-06-12T07:44:29.610061",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"38bb5789978cb5f7a6efdeb8b9981518\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/removalreason/peerended.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/removalreason/timeout.json": {
       "hash": "e4792d75881343fab2e81a87bc59d73e40c62d136ce6b32c9eb4b17bbf52738b",
-      "last_checked": "2026-06-09T07:29:45.250083",
+      "last_checked": "2026-06-12T07:44:29.741177",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5f970025c65f09bdd5fbb2490f1d6b60\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/removalreason/timeout.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/removalreason/init(rawvalue:).json": {
       "hash": "a9b38ad88e8ac5b54776709558261ddcb4de12234da3ce28de97bc4bf552f73c",
-      "last_checked": "2026-06-09T07:29:45.306877",
+      "last_checked": "2026-06-12T07:44:29.851547",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b035eb4b6233d50afd669ed845863e6f\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/removalreason/init-rawvalue.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/localizeddescription.json": {
       "hash": "fc77a6408726fc448cd968f0d3855242fa8c56cd47b8ac6c5b2eae8ab91f8bc3",
-      "last_checked": "2026-06-09T07:29:45.356839",
+      "last_checked": "2026-06-12T07:44:29.986057",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"90e225fc4803378ded496d0cf3d496ba\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/localizeddescription.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientmovement.json": {
       "hash": "4fe9ae72e2cfe488cd8b25d578619f75cb273b8435a8cb43532d6450dd98bba5",
-      "last_checked": "2026-06-09T07:29:45.433856",
+      "last_checked": "2026-06-12T07:44:30.132496",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a27302c4f6cde386ff278417eb646625\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientmovement.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/insufficienthorizontalsweep.json": {
       "hash": "e65d0ed4c0d0d00736279080922a80207d4f88639d34e5ffd4ae284abf796561",
-      "last_checked": "2026-06-09T07:29:45.488378",
+      "last_checked": "2026-06-12T07:44:30.256405",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"74a56465127442b695f9db32432ff907\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/insufficienthorizontalsweep.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientverticalsweep.json": {
       "hash": "7f57d5acf0f8281da0f8e7211a091dc03964f81e84269de97f03a5ee53fd3585",
-      "last_checked": "2026-06-09T07:29:45.594332",
+      "last_checked": "2026-06-12T07:44:30.373017",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"e6adc662219d3f1ae71d02cace1b7578\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientverticalsweep.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientlighting.json": {
       "hash": "136a7743ecc7ab0d82e389534f2698e222bac9606c69534456f3f302a4e9b043",
-      "last_checked": "2026-06-09T07:29:45.640830",
+      "last_checked": "2026-06-12T07:44:30.511174",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d9cab097863221daeb0dba897b89c455\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientlighting.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientsignalstrength.json": {
       "hash": "4793d07a971d750d92d54f7d1601a1408297ed691ceaa94b9dc0f4350788841b",
-      "last_checked": "2026-06-09T07:29:45.697442",
+      "last_checked": "2026-06-12T07:44:30.631807",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"63147376a543c65ca2150d206bf6c1be\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergencestatus-2fnve/reason/insufficientsignalstrength.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/dl-tdoa-ranging.json": {
       "hash": "78bac415a015e6078579061f9b2a03396354dab34f273e90675db306c8642f39",
-      "last_checked": "2026-06-09T07:29:36.559303",
+      "last_checked": "2026-06-12T07:44:15.913199",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"da69c0d8a8234df30a051e1170d06aeb\"",
       "file_path": "documentation/NearbyInteraction/dl-tdoa-ranging.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyobject/init(coder:).json": {
       "hash": "68b5385c8d611e6241253580b9196c22a23f8de36676fd20f68db7120d699e4b",
-      "last_checked": "2026-06-09T07:29:39.847656",
+      "last_checked": "2026-06-12T07:44:21.339920",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4221e93bf52238346fcdacc9faca89de\"",
       "file_path": "documentation/NearbyInteraction/ninearbyobject/init-coder.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nialgorithmconvergence/init(coder:).json": {
       "hash": "30c4f496914feabb3211182c2ac945bf8cda96f9852ed3f1621a16549c2dab36",
-      "last_checked": "2026-06-09T07:29:40.902703",
+      "last_checked": "2026-06-12T07:44:23.211235",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"c7d9c987f8863ecd7516eb5b4d584e0b\"",
       "file_path": "documentation/NearbyInteraction/nialgorithmconvergence/init-coder.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidiscoverytoken/init(coder:).json": {
       "hash": "8f4d770de69e2b8a6d784b6f5bf3c5bfcf127450939132d8ccfe7f50eeb7c737",
-      "last_checked": "2026-06-09T07:29:44.524026",
+      "last_checked": "2026-06-12T07:44:28.579882",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b8c6d9e2c9b63ba84c4b6455d4038913\"",
       "file_path": "documentation/NearbyInteraction/nidiscoverytoken/init-coder.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/niconfiguration/init(coder:).json": {
       "hash": "12877355de577393747ada44a62379ae3dd831689047422066c032b2ce4bb6e0",
-      "last_checked": "2026-06-09T07:29:44.646443",
+      "last_checked": "2026-06-12T07:44:28.697918",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"3701e7328c0adc822b094fc8795f7f7e\"",
       "file_path": "documentation/NearbyInteraction/niconfiguration/init-coder.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/init(coder:).json": {
       "hash": "83c8eca4cc9cf18dc6697f43ffbdbb9980acfe3f1c2d41cd2a8123f93b1465c3",
-      "last_checked": "2026-06-09T07:29:47.006793",
+      "last_checked": "2026-06-12T07:44:32.984937",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"17ef71960277018ed078f80b845924d5\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/init-coder.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nimotionactivitystate.json": {
       "hash": "d11161acd96afe8a45c3c6d02347e8d43e7badf6930fb62d0f06b30beb3f76c0",
-      "last_checked": "2026-06-09T07:29:35.915194",
+      "last_checked": "2026-06-12T07:44:14.868076",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"b65b7bc081a909b1837bda00d1b8c164\"",
       "file_path": "documentation/NearbyInteraction/nimotionactivitystate.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nisession/updatemotionstate(_:forobjectwithtoken:).json": {
       "hash": "186e9453bbfc696ade38a0a49a122c75167c71c68b86c044eb2cd6fdc6462d95",
-      "last_checked": "2026-06-09T07:29:37.917824",
+      "last_checked": "2026-06-12T07:44:18.237298",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"28ae016b85146f2ab8be8c1de5e42105\"",
       "file_path": "documentation/NearbyInteraction/nisession/updatemotionstate-forobjectwithtoken.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/ninearbyaccessoryconfiguration/init(bluetoothchannelsoundingidentifier:previousbluetoothidentifier:).json": {
       "hash": "3e5ce4570cba3feb4a8de8f5a9bc0531a2867779f5c4b32da8544116e0884e75",
-      "last_checked": "2026-06-09T07:29:38.726549",
+      "last_checked": "2026-06-12T07:44:19.406785",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"175653d21820b99b396899a68a4a77df\"",
       "file_path": "documentation/NearbyInteraction/ninearbyaccessoryconfiguration/init-bluetoothchannelsoundingidentifierpreviousbluetoothidentifier.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nimotionactivitystate/stationary.json": {
       "hash": "f35d682b1e7f810ad77c39822be0072f80b5b8a575686d92f95fcd65befc87b9",
-      "last_checked": "2026-06-09T07:29:38.937385",
+      "last_checked": "2026-06-12T07:44:19.793882",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"47651150053dcc2e646854bf5fc8661d\"",
       "file_path": "documentation/NearbyInteraction/nimotionactivitystate/stationary.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nimotionactivitystate/moving.json": {
       "hash": "15701a623f16fa3b49774595ab4711b0cd10c574ab60c0d09735db8f2f2a97a9",
-      "last_checked": "2026-06-09T07:29:38.985156",
+      "last_checked": "2026-06-12T07:44:19.921471",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ff6cfbd4667874cc1d3aa8ef1100b54a\"",
       "file_path": "documentation/NearbyInteraction/nimotionactivitystate/moving.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nimotionactivitystate/unknown.json": {
       "hash": "617fdf6c5da1b8b9b3e37bfeda0226b89a5887726757e54f08131be5c81d0eb2",
-      "last_checked": "2026-06-09T07:29:39.054932",
+      "last_checked": "2026-06-12T07:44:20.046031",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"ad704a600a187f35b56ad6b9c75d8c86\"",
       "file_path": "documentation/NearbyInteraction/nimotionactivitystate/unknown.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nimotionactivitystate/init(rawvalue:).json": {
       "hash": "d0e322a9446ffefec24ba49a5b4eba321b76de1bf0095aefe5ffd368b1c125a5",
-      "last_checked": "2026-06-09T07:29:39.150330",
+      "last_checked": "2026-06-12T07:44:20.243147",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a408f6817517161aa49ebe88e6edfcbb\"",
       "file_path": "documentation/NearbyInteraction/nimotionactivitystate/init-rawvalue.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidevicecapability/supportsbluetoothchannelsounding.json": {
       "hash": "57c4c9e717360e75d3bace3e5884323fc10853df78cd2f6be57eb8b232d8e2b9",
-      "last_checked": "2026-06-09T07:29:44.402842",
+      "last_checked": "2026-06-12T07:44:28.340969",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"096bfd1b5cba0741f4934f321b2cfdc3\"",
       "file_path": "documentation/NearbyInteraction/nidevicecapability/supportsbluetoothchannelsounding.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/init(networkidentifier:discoverymethod:).json": {
       "hash": "42105aa24fb544f6cd87f3764b708d6fab8bf21e0fc0d138969681d8a7aad1e1",
-      "last_checked": "2026-06-09T07:29:45.844478",
+      "last_checked": "2026-06-12T07:44:30.898785",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"fd6da65f453d076c1dbb12e286f2e5ec\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/init-networkidentifierdiscoverymethod.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/discoverymethod-swift.property.json": {
       "hash": "f39561e0ddb00d2673bc095ddbf5da66d3ab8fe13028eedac54738a12302ab01",
-      "last_checked": "2026-06-09T07:29:45.977537",
+      "last_checked": "2026-06-12T07:44:31.171416",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"d9ff1c2b553a7e1c5654aede404b20c6\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/discoverymethod-swiftproperty.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/discoverymethod-swift.enum.json": {
       "hash": "61068da4fe1dfb131565310a7db9a3dc38d2af88dae81108996059e61bbccdb3",
-      "last_checked": "2026-06-09T07:29:46.055664",
+      "last_checked": "2026-06-12T07:44:31.300999",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"a71dca7cfa782bd49eb54ffd70f1174a\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/discoverymethod-swiftenum.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/clusterinitiatoraddress.json": {
       "hash": "e9e778a505d8b5f85d8921922def7f09e5de076024697caabe30a3d9c22400dc",
-      "last_checked": "2026-06-09T07:29:46.191605",
+      "last_checked": "2026-06-12T07:44:31.574663",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"7c7604ba54c9d1cfaeddc8688a718827\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/clusterinitiatoraddress.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/floorelevation-swift.property.json": {
       "hash": "f7708f40ea571429533fa1c11a7e3c04ad5c11ac960dabf66edad9a611849223",
-      "last_checked": "2026-06-09T07:29:46.548614",
+      "last_checked": "2026-06-12T07:44:32.085873",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"f8565814ac792774693e7c4b738138d3\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/floorelevation-swiftproperty.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/floorelevation-swift.class.json": {
       "hash": "7537e80c2e6b0b5d70d894f6719c73e80662755c03244fa329c24dd42d7fa9f1",
-      "last_checked": "2026-06-09T07:29:46.602629",
+      "last_checked": "2026-06-12T07:44:32.216531",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"214d53c213c9ea3cc0b76e9b9c3bb4d0\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/floorelevation-swiftclass.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/responderclockfrequencyoffset-8wu5r.json": {
       "hash": "5f9bdfda55e2286b88d8e96085f9cc7ef0f0223951e25a99373f756f78b78da0",
-      "last_checked": "2026-06-09T07:29:46.945036",
+      "last_checked": "2026-06-12T07:44:32.867431",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"4853ee2cdc60193c7ff34b344c62dee2\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/responderclockfrequencyoffset-8wu5r.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/discoverymethod-swift.enum/wifi.json": {
       "hash": "2e436b4e7f7864d90ddbd2f529b1d427d7912bb7ed0c93c5a9ad84eb4740e9f1",
-      "last_checked": "2026-06-09T07:29:47.523400",
+      "last_checked": "2026-06-12T07:44:34.009672",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"e4de78db085cb2fd2d5a295045f85ca8\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/discoverymethod-swift.enum/wifi.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.json": {
       "hash": "0026a7f0e8fa7c8c4e77ea6c5e51f443b70a5f10670e0e4a9f9466123f419b1c",
-      "last_checked": "2026-06-09T07:29:47.613877",
+      "last_checked": "2026-06-12T07:44:34.137560",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"0131ccb5600119cffb9173bbba61abd0\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoaconfiguration/discoverymethod-swift.enum/init(rawvalue:).json": {
       "hash": "94eb909f24b611912f5d05f3bece8a49ea262670b24e1fd2a6c3456004ec6813",
-      "last_checked": "2026-06-09T07:29:47.658559",
+      "last_checked": "2026-06-12T07:44:34.339737",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"42d972a48b2accb42c184f2d9a6bed67\"",
       "file_path": "documentation/NearbyInteraction/nidltdoaconfiguration/discoverymethod-swift.enum/init-rawvalue.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/floorelevation-swift.class/floornumber.json": {
       "hash": "7202e38721213c72319994e5404f3bcfe87e9dee9afbb7c71eb73edbc4e1239e",
-      "last_checked": "2026-06-09T07:29:47.753585",
+      "last_checked": "2026-06-12T07:44:34.466971",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"f83e04daf0f254199d7304e3393b304e\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/floorelevation-swift.class/floornumber.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/floorelevation-swift.class/height.json": {
       "hash": "72d167b5754e78cafbd05722a4ea601de6a893af520f0776f26fd7cff8c78644",
-      "last_checked": "2026-06-09T07:29:47.865561",
+      "last_checked": "2026-06-12T07:44:34.590092",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"df286a7b21be532875e3ac35020f3d72\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/floorelevation-swift.class/height.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/nearbyinteraction/nidltdoameasurement/floorelevation-swift.class/init(coder:).json": {
       "hash": "2123fef3a6637abed47727d70d76193c51aa6b2316305bb1eac5d7df76617ed4",
-      "last_checked": "2026-06-09T07:29:47.930649",
+      "last_checked": "2026-06-12T07:44:34.733242",
       "status": "new",
-      "session_id": "2026-06-09T07:29:34.499305",
+      "session_id": "2026-06-12T07:44:12.965535",
       "etag": "W/\"5e5d6a43fb21dc02bda7f016b59afcfe\"",
       "file_path": "documentation/NearbyInteraction/nidltdoameasurement/floorelevation-swift.class/init-coder.md"
     },

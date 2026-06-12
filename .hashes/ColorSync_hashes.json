@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-09T07:28:55.290208",
+    "last_updated": "2026-06-12T07:43:19.325619",
     "total_pages": 518,
-    "session_id": "2026-06-09T07:28:27.104194"
+    "session_id": "2026-06-12T07:42:43.732745"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ColorSync.json": {
       "hash": "0c352ceeb27610e446d98df769cc9cc18d2c54e25009c78072beed33f7e6dfe5",
-      "last_checked": "2026-06-09T07:28:27.402902",
+      "last_checked": "2026-06-12T07:42:44.002986",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"21403f0e5e29b159ccce159982ce358f\"",
       "file_path": "documentation/ColorSync/ColorSync.md"
     },
     "https://developer.apple.com/documentation/ColorSync": {
       "hash": "0c352ceeb27610e446d98df769cc9cc18d2c54e25009c78072beed33f7e6dfe5",
-      "last_checked": "2026-06-09T07:28:27.287366",
+      "last_checked": "2026-06-12T07:42:43.893404",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"21403f0e5e29b159ccce159982ce358f\"",
       "file_path": "documentation/ColorSync/ColorSync.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync-constants.json": {
       "hash": "df45461cadbbcb7e3e37e3635864a1ab2ff7e09de70054c379612675699ceb6e",
-      "last_checked": "2026-06-09T07:28:27.815269",
+      "last_checked": "2026-06-12T07:42:44.286994",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b7b9aadf96a0670a466ad7ac67d29d1f\"",
       "file_path": "documentation/ColorSync/colorsync-constants.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync-functions.json": {
       "hash": "93127484beeb3191f4b544d0df1834a6ccbeca0591b51ee3fac36da7739cc965",
-      "last_checked": "2026-06-09T07:28:28.020526",
+      "last_checked": "2026-06-12T07:42:44.457300",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"76ac4135190cdeed35acfe955053ea8c\"",
       "file_path": "documentation/ColorSync/colorsync-functions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmm.json": {
       "hash": "dc77eac1b67bd0d032a6371435647dd575ddd8d01bdb26c4e7af9d598f65a4eb",
-      "last_checked": "2026-06-09T07:28:28.116712",
+      "last_checked": "2026-06-12T07:42:44.637452",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b3f7042a93b81268c06a5b4709b33aa4\"",
       "file_path": "documentation/ColorSync/colorsynccmm.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmutableprofile.json": {
       "hash": "0fc6ad8e411ebfe25d0bdae1d3bbc9588b5b8dba6273798ff936183febd05354",
-      "last_checked": "2026-06-09T07:28:28.213080",
+      "last_checked": "2026-06-12T07:42:44.802089",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"24975c3c2550963d37ae3be7de11176b\"",
       "file_path": "documentation/ColorSync/colorsyncmutableprofile.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofile.json": {
       "hash": "12a622042e651586848e67e6afe25739715be732cabc2f79ffea3d6c1e171352",
-      "last_checked": "2026-06-09T07:28:28.325727",
+      "last_checked": "2026-06-12T07:42:44.949701",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"2cdecfe09cdf29608b6c9be22300c7c7\"",
       "file_path": "documentation/ColorSync/colorsyncprofile.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransform.json": {
       "hash": "1d737c453c9d31dc06816a8c8ab79ec96c742ada6f2271087004a783aaed7b8d",
-      "last_checked": "2026-06-09T07:28:28.473561",
+      "last_checked": "2026-06-12T07:42:45.109344",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"01655bb58534dd562a814195ca3a3e87\"",
       "file_path": "documentation/ColorSync/colorsynctransform.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo.json": {
       "hash": "992ed3a65c613e2d13edf8c9429aa8488eac7018045ebf9c9ed2d095777618a2",
-      "last_checked": "2026-06-09T07:28:28.577026",
+      "last_checked": "2026-06-12T07:42:45.267163",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"86c6cd834b7a2210c614bffc8b070933\"",
       "file_path": "documentation/ColorSync/colorsyncalphainfo.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth.json": {
       "hash": "6496e69173a5a53af74ebbc8cb1d78d25a493f0e505c827ed1f7559b06c00adc",
-      "last_checked": "2026-06-09T07:28:28.681937",
+      "last_checked": "2026-06-12T07:42:45.382740",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b332939774c41f389795c23c3c11a8d4\"",
       "file_path": "documentation/ColorSync/colorsyncdatadepth.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5.json": {
       "hash": "b1b365efb5234ca1765bb90efb6fbdbf06858a83bcec76499c9909b78c6fd9fa",
-      "last_checked": "2026-06-09T07:28:28.814551",
+      "last_checked": "2026-06-12T07:42:45.523395",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"2bc448e79d1d08fbbae061d1f0447541\"",
       "file_path": "documentation/ColorSync/colorsyncmd5.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphanone.json": {
       "hash": "cccebb92d267e28da1173fb3774fe527715e0c57cce4263c4f5fac5beb048c9c",
-      "last_checked": "2026-06-09T07:28:29.033615",
+      "last_checked": "2026-06-12T07:42:45.899769",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"6e76e1de8b6d495f4e69bd7c928644fc\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphanone.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformuseitu709oetf.json": {
       "hash": "7cc95c0591e5e732d017c51aced2c1c64e77d8dc1e4b04d17624a7807019020a",
-      "last_checked": "2026-06-09T07:28:29.261547",
+      "last_checked": "2026-06-12T07:42:46.321666",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a87db310021a4ab44676e4a513080738\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformuseitu709oetf.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cmmapplytransformproc.json": {
       "hash": "d1afa1ad695c2ab1755ea1bbbdd6ab78cf0bedea008fdd43f82c18e4173c7355",
-      "last_checked": "2026-06-09T07:28:29.459735",
+      "last_checked": "2026-06-12T07:42:46.607814",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e5754e06782f3527a6c057ee1e8ed95d\"",
       "file_path": "documentation/ColorSync/cmmapplytransformproc.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cmmcreatetransformpropertyproc.json": {
       "hash": "4567f56046d1da0286eca4050ed0493e5144a846fdbff91c99fda188a8c96979",
-      "last_checked": "2026-06-09T07:28:29.575935",
+      "last_checked": "2026-06-12T07:42:46.771527",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f2d15e3ae0eda7e2853917ff0dedb338\"",
       "file_path": "documentation/ColorSync/cmmcreatetransformpropertyproc.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cmminitializelinkprofileproc.json": {
       "hash": "a6882f7f31ea17bfa05f67d72d8b191c9ee2f2fb4cb9f24e8f43f770154b16d7",
-      "last_checked": "2026-06-09T07:28:29.795318",
+      "last_checked": "2026-06-12T07:42:46.931467",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"dbf5dddbd0a5ce275ea2b639fb0bbdaf\"",
       "file_path": "documentation/ColorSync/cmminitializelinkprofileproc.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cmminitializetransformproc.json": {
       "hash": "e60567472c85cacf33a0bb31a066d33a5b97bb8da0d4d07048ab7a2dc56509ba",
-      "last_checked": "2026-06-09T07:28:29.892321",
+      "last_checked": "2026-06-12T07:42:47.091129",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3ec92fa385934d12381cbef87eabd331\"",
       "file_path": "documentation/ColorSync/cmminitializetransformproc.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmiteratecallback.json": {
       "hash": "d96a5416212bb2f2c7858dfc71d2e5161300d663184c8452b350fb8b790bc9b9",
-      "last_checked": "2026-06-09T07:28:30.021879",
+      "last_checked": "2026-06-12T07:42:47.263405",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"af7ecb9dbd35dfb8905e9a060b2f70c8\"",
       "file_path": "documentation/ColorSync/colorsynccmmiteratecallback.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatalayout.json": {
       "hash": "8eabe3a209921e21381fd3994722b61b789877f4cf409740b9874bf4afae2f84",
-      "last_checked": "2026-06-09T07:28:30.123628",
+      "last_checked": "2026-06-12T07:42:47.385698",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"70504ba6100ed007816b13f54b29f246\"",
       "file_path": "documentation/ColorSync/colorsyncdatalayout.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdeviceprofileiteratecallback.json": {
       "hash": "3eb9850295fd3fededdce76fea1763818386fae8224e98635d9265ef58a455fe",
-      "last_checked": "2026-06-09T07:28:30.219909",
+      "last_checked": "2026-06-12T07:42:47.512671",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"34ae2aa850a7fe81b3a3b5add9e3c0fb\"",
       "file_path": "documentation/ColorSync/colorsyncdeviceprofileiteratecallback.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileiteratecallback.json": {
       "hash": "0d0763785b77e3abd20e7aebbb1c1fd2577584b65f610174c82939d9a198e42d",
-      "last_checked": "2026-06-09T07:28:30.329640",
+      "last_checked": "2026-06-12T07:42:47.757924",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"36a6c2729ac0206ee2b7854534b1a53f\"",
       "file_path": "documentation/ColorSync/colorsyncprofileiteratecallback.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_api_version.json": {
       "hash": "c12a6788d56989a34efbc9d507f995996d5c72dd7cc40a5a36295f0b4a6759e1",
-      "last_checked": "2026-06-09T07:28:30.445727",
+      "last_checked": "2026-06-12T07:42:47.884708",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3f97c6c4b14c75f256764b2aa7428732\"",
       "file_path": "documentation/ColorSync/colorsync-api-version.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/icversion4number.json": {
       "hash": "ff9a91ae24db6dd532d83ef6d3f472f316c458e23e40f3f12fb418f4870e999a",
-      "last_checked": "2026-06-09T07:28:30.562273",
+      "last_checked": "2026-06-12T07:42:48.032176",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"addc5d15d3c8a3b5c1060e8c460a1321\"",
       "file_path": "documentation/ColorSync/icversion4number.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncextendedrange.json": {
       "hash": "2856adced002d44d3df1500a5b11a37891918ef7a47d247f934ad7b7c1dce01e",
-      "last_checked": "2026-06-09T07:28:30.666553",
+      "last_checked": "2026-06-12T07:42:48.150511",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e41d0d62a5a1ad237ed0731dcd53ca17\"",
       "file_path": "documentation/ColorSync/kcolorsyncextendedrange.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynchdrderivative.json": {
       "hash": "ff94bb03aec8516378f5ecf81847c9ddef556334ae773f22bd1b1aca74618526",
-      "last_checked": "2026-06-09T07:28:30.763492",
+      "last_checked": "2026-06-12T07:42:48.285424",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"87697f56fd872d6750721f13541ff465\"",
       "file_path": "documentation/ColorSync/kcolorsynchdrderivative.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynchlgderivative.json": {
       "hash": "6bd6d0beab96cb92cd99eafc7425c066e9e20869a335ad9b47c7f11c34d9f07c",
-      "last_checked": "2026-06-09T07:28:30.872943",
+      "last_checked": "2026-06-12T07:42:48.406101",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7360e92d6bf9ed8ecd8bcee62101c77d\"",
       "file_path": "documentation/ColorSync/kcolorsynchlgderivative.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncpqderivative.json": {
       "hash": "da4e6d9e9dacdabb702c40d893a14903f7ab4192f6841e09a388cf3f7f32a263",
-      "last_checked": "2026-06-09T07:28:31.098060",
+      "last_checked": "2026-06-12T07:42:48.601530",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7318ed02248a5b16bbbf0b90a5bb15ba\"",
       "file_path": "documentation/ColorSync/kcolorsyncpqderivative.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilecacheseed.json": {
       "hash": "e2b68a20f61c0340123f961f6d516f05a0e93b05dc397b70f820a7f4bd2f49b1",
-      "last_checked": "2026-06-09T07:28:31.199362",
+      "last_checked": "2026-06-12T07:42:48.764333",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9db70dc34b33312b5f84d3e98f3ecfa6\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilecacheseed.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileisvalid.json": {
       "hash": "b47eada2787512fdb71d6d3dca0e9c9938a37d87bc091e3197352e89f7ad933b",
-      "last_checked": "2026-06-09T07:28:31.303051",
+      "last_checked": "2026-06-12T07:42:48.890363",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ee2acd470b5e11b4e4139437f1b720a9\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileisvalid.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilerepositorychangenotification.json": {
       "hash": "c034882b110b459620e8aeec60dcd2b471630debc13b9ccd6f220546285dfa90",
-      "last_checked": "2026-06-09T07:28:31.403625",
+      "last_checked": "2026-06-12T07:42:49.015409",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"cc4f136461c027108cc4013bb7350cad\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilerepositorychangenotification.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncregistrationupdatewindowserver.json": {
       "hash": "904699f080451b8c0ee13e852ab327a0e54af42bb7c950c6ca5cc2e33ae32ae1",
-      "last_checked": "2026-06-09T07:28:31.511810",
+      "last_checked": "2026-06-12T07:42:49.202145",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d31a138ff7eb22cc799e65b40ce4147a\"",
       "file_path": "documentation/ColorSync/kcolorsyncregistrationupdatewindowserver.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformcodefragmentmd5.json": {
       "hash": "9859f212d26ab0a45bb86adc930c1b0af3d1f1a6bd482e5f2df7a9b0cd979445",
-      "last_checked": "2026-06-09T07:28:31.627143",
+      "last_checked": "2026-06-12T07:42:49.334309",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f1add9ea106c6a8900522f3a2f0d4940\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformcodefragmentmd5.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransforminfo.json": {
       "hash": "ad90d75cc427d1517d72f8be93ff020d5c6de68c960fb06b8e412ba8b771b946",
-      "last_checked": "2026-06-09T07:28:31.736941",
+      "last_checked": "2026-06-12T07:42:49.447011",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"6491c303b21db8b7ddbda4438b12b0b0\"",
       "file_path": "documentation/ColorSync/kcolorsynctransforminfo.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformprofilesequnce.json": {
       "hash": "e84d18b6acd2ce4beaa2c1b947fd0ab1ed2d8584777fd0340d6379d7c79b5c56",
-      "last_checked": "2026-06-09T07:28:31.836879",
+      "last_checked": "2026-06-12T07:42:49.602205",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"572907891742f3b4b719e2fa6a8df4a4\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformprofilesequnce.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncwaitforcachereply.json": {
       "hash": "129e464b3ea21703efdf1437b23b2004037e77828988737debb23c177056f738",
-      "last_checked": "2026-06-09T07:28:32.007333",
+      "last_checked": "2026-06-12T07:42:49.731524",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"6efe78c0d1fdf979edcb43165a98a66e\"",
       "file_path": "documentation/ColorSync/kcolorsyncwaitforcachereply.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncwebsafecolorsprofile.json": {
       "hash": "73ba17942e42b72e469d3eab8f7cc8b0a77889d4c3ebfcd1f5bb10ddbdae4128",
-      "last_checked": "2026-06-09T07:28:32.110879",
+      "last_checked": "2026-06-12T07:42:49.914254",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a31ba511851820061835972f350fee6d\"",
       "file_path": "documentation/ColorSync/kcolorsyncwebsafecolorsprofile.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_md5_length.json": {
       "hash": "6e864082d36ab21f7d8af2fd4be236e35a939e453914b4286be1a5f9b5decece",
-      "last_checked": "2026-06-09T07:28:32.208861",
+      "last_checked": "2026-06-12T07:42:50.083477",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"fe160d6a2894c9ab3f2decd65b15af62\"",
       "file_path": "documentation/ColorSync/colorsync-md5-length.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsync_profile_install_entitlement.json": {
       "hash": "75abd190aaa6d337c8ecc83e8a9113756a8091ac7a026085158c7a31989ad957",
-      "last_checked": "2026-06-09T07:28:32.517243",
+      "last_checked": "2026-06-12T07:42:50.281554",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"99c07092c3fed9a3a8f2c12953f337cc\"",
       "file_path": "documentation/ColorSync/colorsync-profile-install-entitlement.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcmmapplytransformprocname.json": {
       "hash": "6eb19992393f564a6a87859554de80bd38c03de97bf22b586021cdac617215cd",
-      "last_checked": "2026-06-09T07:28:32.617787",
+      "last_checked": "2026-06-12T07:42:50.498371",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f2dbaf4c9e221715bb6af71fbc194ccf\"",
       "file_path": "documentation/ColorSync/kcmmapplytransformprocname.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcmmcreatetransformpropertyprocname.json": {
       "hash": "58686664c5e5e6980780fbb2e605a306136764988469d03a42555f29e0e4c4fa",
-      "last_checked": "2026-06-09T07:28:32.723559",
+      "last_checked": "2026-06-12T07:42:50.618841",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"47b3ab2645a2bd30900e5176f306df72\"",
       "file_path": "documentation/ColorSync/kcmmcreatetransformpropertyprocname.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcmminitializelinkprofileprocname.json": {
       "hash": "4da3559e6621a9827ff0acf74eb17aa63833ff9750a2272d3c29ce08ec2f805d",
-      "last_checked": "2026-06-09T07:28:32.822020",
+      "last_checked": "2026-06-12T07:42:50.746541",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f3b51a74b5f7574e3c747810b12f17e5\"",
       "file_path": "documentation/ColorSync/kcmminitializelinkprofileprocname.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcmminitializetransformprocname.json": {
       "hash": "7a7e7a27a010fd0338c19b4901dc621ce4e26349b6e543420410e0d629e83981",
-      "last_checked": "2026-06-09T07:28:32.952915",
+      "last_checked": "2026-06-12T07:42:50.881815",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"34a5afd4f277283a68783a0e8ff37654\"",
       "file_path": "documentation/ColorSync/kcmminitializetransformprocname.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync1bitgamut.json": {
       "hash": "3f134d1b667ef3c1cbf30108e9831b80cb2c72466e856eb214b4307553830655",
-      "last_checked": "2026-06-09T07:28:33.058746",
+      "last_checked": "2026-06-12T07:42:51.012763",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"505b29ca7179fad84583a082590238f8\"",
       "file_path": "documentation/ColorSync/kcolorsync1bitgamut.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync10bitinteger.json": {
       "hash": "3e423b799dc9e61b41e79d26659b206a2937195938d5aced28d7e6e140ddcd62",
-      "last_checked": "2026-06-09T07:28:33.157205",
+      "last_checked": "2026-06-12T07:42:51.138935",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b93883d6ec5339bbc47feed322dbaab7\"",
       "file_path": "documentation/ColorSync/kcolorsync10bitinteger.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync16bitfloat.json": {
       "hash": "e9ca3e66790451811933828f008562ee5c3c1e29791d107c5a920e2b4b7b6bac",
-      "last_checked": "2026-06-09T07:28:33.256304",
+      "last_checked": "2026-06-12T07:42:51.269251",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9c283db3c0936cce3ca34e52fddbe36d\"",
       "file_path": "documentation/ColorSync/kcolorsync16bitfloat.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync16bitinteger.json": {
       "hash": "e516d40a728e4f07b19af3bb2807c0b8c6f66739a183213bcea405ac0eb8160b",
-      "last_checked": "2026-06-09T07:28:33.358987",
+      "last_checked": "2026-06-12T07:42:51.456151",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1215d6441e1dbbca760c6bb134024348\"",
       "file_path": "documentation/ColorSync/kcolorsync16bitinteger.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync32bitfloat.json": {
       "hash": "87dcb930a84d16f3df85f6d87e7224c792ab132c539701947d2fc8fdeb27bf3a",
-      "last_checked": "2026-06-09T07:28:33.464779",
+      "last_checked": "2026-06-12T07:42:51.578920",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"76a7bab5c4913ea9b9464a67225922bc\"",
       "file_path": "documentation/ColorSync/kcolorsync32bitfloat.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync32bitinteger.json": {
       "hash": "6b464dab330efe452fb6fdde8143c74590b3d20f8eee7bda532fb351161fee6e",
-      "last_checked": "2026-06-09T07:28:33.614132",
+      "last_checked": "2026-06-12T07:42:51.752214",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3872bc30002bead21375c184b52aaf72\"",
       "file_path": "documentation/ColorSync/kcolorsync32bitinteger.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync32bitnamedcolorindex.json": {
       "hash": "c47c5c1a27e1e80137f53b7c2e6b522093ee2c280f1a6513639ee67ae95d51f7",
-      "last_checked": "2026-06-09T07:28:33.732457",
+      "last_checked": "2026-06-12T07:42:51.883313",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5c67b25ed08fb0d87a4ba2f67e9cdc38\"",
       "file_path": "documentation/ColorSync/kcolorsync32bitnamedcolorindex.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsync8bitinteger.json": {
       "hash": "a56c468e2f1df0fac17f7c433211025595f1a2cc47399b10e18071cdb4547329",
-      "last_checked": "2026-06-09T07:28:33.834487",
+      "last_checked": "2026-06-12T07:42:52.037402",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f3f722fea247f14d79089e459622ee41\"",
       "file_path": "documentation/ColorSync/kcolorsync8bitinteger.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncacescglinearprofile.json": {
       "hash": "c6da11a33b907d7020a8dc0b3e3130f974ca630f6e26db1b19dbc9668a6065c6",
-      "last_checked": "2026-06-09T07:28:33.934005",
+      "last_checked": "2026-06-12T07:42:52.164329",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"486db31c9b04a1ff86789ea5a10f7805\"",
       "file_path": "documentation/ColorSync/kcolorsyncacescglinearprofile.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncadobergb1998profile.json": {
       "hash": "c103956ab1cf9dd2e3441f0ed50036724eec733d35db80b06d7d3dfe15b26b7e",
-      "last_checked": "2026-06-09T07:28:34.042798",
+      "last_checked": "2026-06-12T07:42:52.305797",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"488237d85fb568218a75bddca498acfc\"",
       "file_path": "documentation/ColorSync/kcolorsyncadobergb1998profile.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphafirst.json": {
       "hash": "035fe267bd4c67737c3c38c393ec1d9a8d512003a7c62513be63d76dd1081a69",
-      "last_checked": "2026-06-09T07:28:34.145373",
+      "last_checked": "2026-06-12T07:42:52.458471",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"fd69ca33609f53c7f5ab14a613462a52\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphafirst.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphalast.json": {
       "hash": "963b1eca07f1fec153960ec54e25de0ef36fb9a0a53656e246974849c57cc71e",
-      "last_checked": "2026-06-09T07:28:34.248618",
+      "last_checked": "2026-06-12T07:42:52.567833",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ea5581719e7e8edec52e385f73da10e2\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphalast.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphanoneskipfirst.json": {
       "hash": "7ebdceb7e8b5bd8edbf460f5132ac46ad3c4f73dc652dfc042f1a96ac3cf7d4c",
-      "last_checked": "2026-06-09T07:28:34.361286",
+      "last_checked": "2026-06-12T07:42:52.683245",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3c3209edc146da708525b347a70f0f06\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphanoneskipfirst.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphanoneskiplast.json": {
       "hash": "94ee7c31d5fd67fb990c4b3fc89c484a6e5027307a761edf8c30506eb17eefef",
-      "last_checked": "2026-06-09T07:28:34.456159",
+      "last_checked": "2026-06-12T07:42:52.806305",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"dba02be76c0454b644909de8f3448181\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphanoneskiplast.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbestquality.json": {
       "hash": "7a696249669f2a1f4fccf08b117958587baa9e9acf9e3be2bf747b3e6f12d5bf",
-      "last_checked": "2026-06-09T07:28:34.562933",
+      "last_checked": "2026-06-12T07:42:52.986384",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"89f60de2892a7c4d3226a22da1cab49b\"",
       "file_path": "documentation/ColorSync/kcolorsyncbestquality.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncblackpointcompensation.json": {
       "hash": "f2f16ec5db5b5e37bdb1ed8c75cce1c2489bb636bf94da8ac2510af1baf4d89a",
-      "last_checked": "2026-06-09T07:28:34.662770",
+      "last_checked": "2026-06-12T07:42:53.101110",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0c034dbb61aef7f7131874c1480f689e\"",
       "file_path": "documentation/ColorSync/kcolorsyncblackpointcompensation.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteorder16big.json": {
       "hash": "b27a5411db36a0a9010527a30c7e7b57fd4fbaca55a72728e257ff4a5b5383ec",
-      "last_checked": "2026-06-09T07:28:34.762712",
+      "last_checked": "2026-06-12T07:42:53.266776",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e96e99f869dbde5e9c88197b503a3cd7\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteorder16big.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteorder16little.json": {
       "hash": "3f0c2a1d9c31081acf8a74739f86f53de088f6bbb795e5a3b7f36749beb5a36c",
-      "last_checked": "2026-06-09T07:28:34.867565",
+      "last_checked": "2026-06-12T07:42:53.398003",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"aae40d80e5840820eac81f6f9113bf01\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteorder16little.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteorder32big.json": {
       "hash": "b74abfc7da8cf368b3ac360fdfad0da2d5f52cae925dbc55d43ba1ddae645700",
-      "last_checked": "2026-06-09T07:28:34.965060",
+      "last_checked": "2026-06-12T07:42:53.510309",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0d54b99cc26ad202d1023698487c4ab9\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteorder32big.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteorder32little.json": {
       "hash": "d9be110ddcd48f17bbe8498fdcb0257c08db672759c52c11d365b554888ec3d5",
-      "last_checked": "2026-06-09T07:28:35.059310",
+      "last_checked": "2026-06-12T07:42:53.662371",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0ca09c1f5468098a83ea5dd442e54e01\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteorder32little.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteordermask.json": {
       "hash": "bddf2eb5a10b2acc4467a974282dd288135e55c5c2be75c711636d2fe27ed0a5",
-      "last_checked": "2026-06-09T07:28:35.161263",
+      "last_checked": "2026-06-12T07:42:53.780480",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f6c6b2294595963587f21015c05c3332\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteordermask.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynccameradeviceclass.json": {
       "hash": "cb1e513eeced5358aa03f717facada2c5d1cc83307817bf8706aa18def14aa92",
-      "last_checked": "2026-06-09T07:28:35.262784",
+      "last_checked": "2026-06-12T07:42:53.930560",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1cc3fef936aa71bdcc84dfcff43ef8c1\"",
       "file_path": "documentation/ColorSync/kcolorsynccameradeviceclass.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversion1dlut.json": {
       "hash": "e78d60cc3f9ef48b95e7e7a94aafe67c91e20fc3f4d74a1003a877f282864152",
-      "last_checked": "2026-06-09T07:28:35.366871",
+      "last_checked": "2026-06-12T07:42:54.057525",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9c61229aec4f22b023e0e458a40bad8c\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversion1dlut.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversion3dlut.json": {
       "hash": "77b7bbf84c7a0bf1a6b10ce4f8f1595e92944b519c4d680d3b46f9a05b3f385d",
-      "last_checked": "2026-06-09T07:28:35.461471",
+      "last_checked": "2026-06-12T07:42:54.169481",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"082b5696efcff52e2f38dfa151d29950\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversion3dlut.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionbpc.json": {
       "hash": "e86d57bf5c136fd576969da0606613aeb5797936b10339e31ce1c6bcd6ae4b7b",
-      "last_checked": "2026-06-09T07:28:35.579788",
+      "last_checked": "2026-06-12T07:42:54.308214",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"88a0b2474a9f80f0dd4ae5a7dc96690d\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionbpc.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionchannelid.json": {
       "hash": "24fcf492037071070f3a6df192017270b65058d2e9f4049da6dbb89751ce4338",
-      "last_checked": "2026-06-09T07:28:35.679759",
+      "last_checked": "2026-06-12T07:42:54.420104",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"97f0d6df20687f9ae978b7a96d535b7a\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionchannelid.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversiongridpoints.json": {
       "hash": "0d936e4f51b4f5514574311c3a95ed9c32f7a0959ce65e54ef97341a9216d21e",
-      "last_checked": "2026-06-09T07:28:35.786631",
+      "last_checked": "2026-06-12T07:42:54.546328",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"26a56fd402951ef5a07769281ee0ec2a\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversiongridpoints.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversioninpchan.json": {
       "hash": "a71ec80c6756c5ba46fb160b2a1e70dee0453c6a88189c9155c1aae98fa6c021",
-      "last_checked": "2026-06-09T07:28:35.892815",
+      "last_checked": "2026-06-12T07:42:54.686401",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b5bfc56e20df4fab111522aabdcfc1ec\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversioninpchan.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionmatrix.json": {
       "hash": "87a2207fb1e4f6d014d779ac6c0948ecab406913b7a7feed905891a2625fe450",
-      "last_checked": "2026-06-09T07:28:36.001420",
+      "last_checked": "2026-06-12T07:42:54.810620",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1130f8086b69e4b8b00e3250a0cca925\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionmatrix.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionndlut.json": {
       "hash": "d5db35af820159adb4fa179b835811fa0b7e3f2f8f61a9c07e265cb99392dc44",
-      "last_checked": "2026-06-09T07:28:36.113527",
+      "last_checked": "2026-06-12T07:42:54.931948",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e45041f8d50727ef44676c34dc733f7c\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionndlut.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionoutchan.json": {
       "hash": "03b185df245db3273a14aaec3ec14f2b4be6750bae57472fe71073a2fc928f45",
-      "last_checked": "2026-06-09T07:28:36.230200",
+      "last_checked": "2026-06-12T07:42:55.100380",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4c401a7c58f20b00a77c2c8f16d14fb1\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionoutchan.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionparamcurve0.json": {
       "hash": "e096d2ac7a005d06493acc381fd7a533e9953a5cfb8cc484a14f4a2d8b5b0ba1",
-      "last_checked": "2026-06-09T07:28:36.342839",
+      "last_checked": "2026-06-12T07:42:55.228530",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1c3c6a77b6948270d294a04f3ce99686\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionparamcurve0.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionparamcurve1.json": {
       "hash": "6fa022d6a7804ae066ebff5662a6780c6920017188bfd000ead6149fe6e62f3d",
-      "last_checked": "2026-06-09T07:28:36.457173",
+      "last_checked": "2026-06-12T07:42:55.341426",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4b60af0d9ac21e1c3b0432d461f56f4a\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionparamcurve1.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionparamcurve2.json": {
       "hash": "4e61b622309642663ca5f104953767d1aed193a74d5b296e27ef8eb1867134db",
-      "last_checked": "2026-06-09T07:28:36.558672",
+      "last_checked": "2026-06-12T07:42:55.469297",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c0bbf82e77877245f42d7a1b238369a1\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionparamcurve2.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionparamcurve3.json": {
       "hash": "1e1bf4fdae7565b145ea5a881cca69eba0b13301dc03e8903046dfc9a0938e12",
-      "last_checked": "2026-06-09T07:28:36.673119",
+      "last_checked": "2026-06-12T07:42:55.619922",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5f5681cde67b538e770958316908bf60\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionparamcurve3.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconversionparamcurve4.json": {
       "hash": "2fc7155c62b4869a331864070ac53c86875871927ed9c802f1ad2d603728f7b4",
-      "last_checked": "2026-06-09T07:28:36.803128",
+      "last_checked": "2026-06-12T07:42:55.744144",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b2f906719b7147d118800f8294993043\"",
       "file_path": "documentation/ColorSync/kcolorsyncconversionparamcurve4.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconvertquality.json": {
       "hash": "d7e1e72779ebb3468a8925f4f32dca0356cccfc9c283a7791068e6e8a5ded3bc",
-      "last_checked": "2026-06-09T07:28:36.909784",
+      "last_checked": "2026-06-12T07:42:55.890321",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9b2a2bdef4a517c0ff1fd13444bfb59d\"",
       "file_path": "documentation/ColorSync/kcolorsyncconvertquality.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncconvertuseextendedrange.json": {
       "hash": "05d6baec173448c8a5c291661257d275fb343ec79104fab45185bea62aa2d683",
-      "last_checked": "2026-06-09T07:28:37.012839",
+      "last_checked": "2026-06-12T07:42:56.020773",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4c5c773c7101e4cef5fa992c496aa94f\"",
       "file_path": "documentation/ColorSync/kcolorsyncconvertuseextendedrange.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynccustomprofiles.json": {
       "hash": "a1fa5a84b428ec7fced4ad52a522555457b5fd3df617daa42dde0f8dcfc660d2",
-      "last_checked": "2026-06-09T07:28:37.113995",
+      "last_checked": "2026-06-12T07:42:56.130189",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"bbb708654ee140e69f765f885a2a5e62\"",
       "file_path": "documentation/ColorSync/kcolorsynccustomprofiles.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdcip3profile.json": {
       "hash": "4f73c89ea963e6bb3a28b92a55cb60a9d7a77b8ada829a44de86055493e8abac",
-      "last_checked": "2026-06-09T07:28:37.227022",
+      "last_checked": "2026-06-12T07:42:56.253185",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5c24a5ef4601c2fe3a712c5909e52993\"",
       "file_path": "documentation/ColorSync/kcolorsyncdcip3profile.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceclass.json": {
       "hash": "4c56fcbda1ecfdfa6a22026b3ddaabd7d3ae58aef25894d4d5b53ebda21a4410",
-      "last_checked": "2026-06-09T07:28:37.330487",
+      "last_checked": "2026-06-12T07:42:56.381990",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"88dc1b831308f4b4dced26509f94de19\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceclass.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicedefaultprofileid.json": {
       "hash": "1d94090d0f681b0994f70163f0aa285e61ad36c0947f8aa35e1a9875ee394a7a",
-      "last_checked": "2026-06-09T07:28:37.430241",
+      "last_checked": "2026-06-12T07:42:56.511523",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a3ecde4cd1537bff09f8fe0f98f4b227\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicedefaultprofileid.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicedescription.json": {
       "hash": "f80a6a578f62908ed58fd6d44ca24ceb219ac99a091b773a74e8228ffcaf22c3",
-      "last_checked": "2026-06-09T07:28:37.537805",
+      "last_checked": "2026-06-12T07:42:56.638556",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4a6ae47e29bb002c5aeec53171395380\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicedescription.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicedescriptions.json": {
       "hash": "4f45e40a407b3016eb9d3994a9a5eadbb64174c8c6c3596e5e517638bce1e04e",
-      "last_checked": "2026-06-09T07:28:37.637472",
+      "last_checked": "2026-06-12T07:42:56.771220",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"957012ecab68fc14cba029beefa68ef8\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicedescriptions.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicehostscope.json": {
       "hash": "912f7f5e70c98d9e8121735ff1018636eecbd926968fd3ca8a7c0eb880ab436d",
-      "last_checked": "2026-06-09T07:28:37.746258",
+      "last_checked": "2026-06-12T07:42:56.884458",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d28defd11bf8f4973da63fcb8cc9c612\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicehostscope.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceid.json": {
       "hash": "be85db291c8aaa095466212c393b995d778c973cd84b55f8d904ca863289dfc7",
-      "last_checked": "2026-06-09T07:28:37.854743",
+      "last_checked": "2026-06-12T07:42:57.025565",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ce87c39cae86397d14bb92c0856c6219\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceid.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicemodedescription.json": {
       "hash": "9b90732bd9444b249b37e0c89dfca8b19ce7d9ae8124c23277886af97d0dd851",
-      "last_checked": "2026-06-09T07:28:37.964638",
+      "last_checked": "2026-06-12T07:42:57.162959",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9a825ccedeaf2d8b67b263f7a4870796\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicemodedescription.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdevicemodedescriptions.json": {
       "hash": "34fc084eb6611a5b8275b83d1c56398e3740ebe782e5b2457399a77bb4d563af",
-      "last_checked": "2026-06-09T07:28:38.063120",
+      "last_checked": "2026-06-12T07:42:57.281830",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"47e45f25b6f70115fe74be478cc88c22\"",
       "file_path": "documentation/ColorSync/kcolorsyncdevicemodedescriptions.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofileid.json": {
       "hash": "717033ade8c8cc2dc5ac0e09f7dbd801d28fd3f0ef67a197291608a764fa1222",
-      "last_checked": "2026-06-09T07:28:38.167174",
+      "last_checked": "2026-06-12T07:42:57.412999",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"02ffcecf70c62c1d09db8ab82e3dba68\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofileid.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofileiscurrent.json": {
       "hash": "7b3d52d8827621e79419d9535678101eec4e22307b0c62399c625d4005ecd918",
-      "last_checked": "2026-06-09T07:28:38.289666",
+      "last_checked": "2026-06-12T07:42:57.530848",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a29d87b4ba5be462c5ea2e6f72743ff7\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofileiscurrent.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofileisdefault.json": {
       "hash": "ff055edbc69ea2010cdc8ad89595ffab42d637c435ee796c72313417f649c29e",
-      "last_checked": "2026-06-09T07:28:38.427067",
+      "last_checked": "2026-06-12T07:42:57.696875",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5990fa9b25b52f9549e9e1e06707ed73\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofileisdefault.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofileisfactory.json": {
       "hash": "11ee228139a1af3ff8d0b50b274579bed38e0f4c2b1d4acd9aecf5392981528c",
-      "last_checked": "2026-06-09T07:28:38.527522",
+      "last_checked": "2026-06-12T07:42:57.822381",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"01c719e8953a99ea6f6536e8e015d892\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofileisfactory.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofileurl.json": {
       "hash": "0524f4dbc8cbeaaf2dae076657713b1fe4c52fb741a5efc5b23e82a14f264123",
-      "last_checked": "2026-06-09T07:28:38.626172",
+      "last_checked": "2026-06-12T07:42:57.931629",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f942986689f3e0aca9df58275a8473a6\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofileurl.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceprofilesnotification.json": {
       "hash": "ca44cf5160486946aa5d683a0f41c4c9fef092d757ff6fa994822e2dd0bd8059",
-      "last_checked": "2026-06-09T07:28:38.731186",
+      "last_checked": "2026-06-12T07:42:58.059529",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9bfaba11839e31ca8da0b39b1c78c2cc\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceprofilesnotification.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceregisterednotification.json": {
       "hash": "f6534772a2ad8ea4ba6248104f70f6d2e005a8460090145f74449272591b32ad",
-      "last_checked": "2026-06-09T07:28:38.842295",
+      "last_checked": "2026-06-12T07:42:58.187845",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b0794da0c66d4ece0083ba6405d1ddb5\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceregisterednotification.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceunregisterednotification.json": {
       "hash": "0b031869c837436aa5a6dd2b8632e4a2802ea063d9f8141e75a77e96b4af4f70",
-      "last_checked": "2026-06-09T07:28:38.935633",
+      "last_checked": "2026-06-12T07:42:58.318879",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"fead4e64940de6413bdea42e49b0137c\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceunregisterednotification.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdeviceuserscope.json": {
       "hash": "4d62394e754c2aaa9df5076fb2610683457d34677fcea33277d6040db9534fe6",
-      "last_checked": "2026-06-09T07:28:39.039652",
+      "last_checked": "2026-06-12T07:42:58.501888",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ee06354291f8c32bf208ed150cc7b556\"",
       "file_path": "documentation/ColorSync/kcolorsyncdeviceuserscope.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdisplaydeviceclass.json": {
       "hash": "4cd46bc3decee2125ca4d4699cbde8259f1db0ea51d7d3280918c540a39f3fef",
-      "last_checked": "2026-06-09T07:28:39.151407",
+      "last_checked": "2026-06-12T07:42:58.628004",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"2fd1fb03b06e1374574c81caae071c75\"",
       "file_path": "documentation/ColorSync/kcolorsyncdisplaydeviceclass.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdisplaydeviceprofilesnotification.json": {
       "hash": "0dca16c9ad423ede4fe7e7e9a7475f1bae459586b929ba32d051a0ad9449c065",
-      "last_checked": "2026-06-09T07:28:39.262479",
+      "last_checked": "2026-06-12T07:42:58.781753",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"73e10cd2176c1874b99d6f583238dec6\"",
       "file_path": "documentation/ColorSync/kcolorsyncdisplaydeviceprofilesnotification.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdisplayp3profile.json": {
       "hash": "ef6f70ecd97d9b052d4bd48eec697fdd1c950731947fcb466c5b597c3c52ef73",
-      "last_checked": "2026-06-09T07:28:39.363340",
+      "last_checked": "2026-06-12T07:42:58.901787",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"04a7504564180ab5c06c67a27e68b23f\"",
       "file_path": "documentation/ColorSync/kcolorsyncdisplayp3profile.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdraftquality.json": {
       "hash": "94d700a5e7b6b3621ba4cbc0c71b13b1d044ce06ec2f30becce8fd639bcbbdd1",
-      "last_checked": "2026-06-09T07:28:39.482337",
+      "last_checked": "2026-06-12T07:42:59.036064",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"80efd7f9d9fc7cfa5998d9db0c9776c5\"",
       "file_path": "documentation/ColorSync/kcolorsyncdraftquality.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncfactoryprofiles.json": {
       "hash": "8118cebfc2fdc9b49f07ffa219e6e6d4b432db317302dd5de0943b96f2d72c7b",
-      "last_checked": "2026-06-09T07:28:39.588204",
+      "last_checked": "2026-06-12T07:42:59.164935",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"13e11249b966d4201a5bbdb062774957\"",
       "file_path": "documentation/ColorSync/kcolorsyncfactoryprofiles.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncfixedpointrange.json": {
       "hash": "1588c5ee884341cf6f63c2ce7014156771c74a8e81cce1c829d1a49fa7b88ab2",
-      "last_checked": "2026-06-09T07:28:39.689347",
+      "last_checked": "2026-06-12T07:42:59.324946",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"de0ca9f96f0f2721a037ea77df2c4331\"",
       "file_path": "documentation/ColorSync/kcolorsyncfixedpointrange.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericcmykprofile.json": {
       "hash": "4e0f69fe4edf35704c04ffe36fb3d4d2b445349a614e8c4d3661f5de09603dd6",
-      "last_checked": "2026-06-09T07:28:39.794038",
+      "last_checked": "2026-06-12T07:42:59.447813",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1cbcbfd708348b35619be571de3dc391\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericcmykprofile.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericgraygamma22profile.json": {
       "hash": "bc15d87c682252c4ee4411ff25d74d9d2757032cc9c40a39c104d7a6bfa34518",
-      "last_checked": "2026-06-09T07:28:39.905009",
+      "last_checked": "2026-06-12T07:42:59.614270",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"005fd0c4459781090a6e045fd4af1aad\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericgraygamma22profile.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericgrayprofile.json": {
       "hash": "b64582a95fb41a5c1411e2842eabec00a0ad6dca4a02cbda54cf8ec180419ac5",
-      "last_checked": "2026-06-09T07:28:40.013231",
+      "last_checked": "2026-06-12T07:42:59.757968",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d8cd6ba708ac40bfba937f10cd874dc0\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericgrayprofile.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericlabprofile.json": {
       "hash": "901247d16c51945e0024f818a34ca58515af035f8bf1d7e20abb2aa1a8928418",
-      "last_checked": "2026-06-09T07:28:40.129059",
+      "last_checked": "2026-06-12T07:42:59.905971",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a227c970af9d4d57870cdcfe215b44c3\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericlabprofile.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericrgbprofile.json": {
       "hash": "39126d154d22872bbda492c3c4a893bc036248475eeedb9eb0950222833e5294",
-      "last_checked": "2026-06-09T07:28:40.300093",
+      "last_checked": "2026-06-12T07:43:00.036871",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e242728568696e787bb057dbb4d6b41f\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericrgbprofile.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncgenericxyzprofile.json": {
       "hash": "a0f6441e31d1446f2c8b144fc83b417d7f66bd6e70937d37b00a84dff81141c2",
-      "last_checked": "2026-06-09T07:28:40.405676",
+      "last_checked": "2026-06-12T07:43:00.160200",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4276e486b106ec66463a68b2c01050f2\"",
       "file_path": "documentation/ColorSync/kcolorsyncgenericxyzprofile.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncitur2020profile.json": {
       "hash": "38bc2dab1ba361ea1402da96ee944fe18a758300f20cc1b348e2f7d7a71a9714",
-      "last_checked": "2026-06-09T07:28:40.516954",
+      "last_checked": "2026-06-12T07:43:00.319505",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c246436f28ab0c49b05a94a00440cd02\"",
       "file_path": "documentation/ColorSync/kcolorsyncitur2020profile.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncitur709profile.json": {
       "hash": "96a2d5d7d2acf8f3f55b9a2e8f58730d4ae9699bcb33a240839ade705341dd91",
-      "last_checked": "2026-06-09T07:28:40.623376",
+      "last_checked": "2026-06-12T07:43:00.438083",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4f8a8823c976de7aec94e3b2674bb206\"",
       "file_path": "documentation/ColorSync/kcolorsyncitur709profile.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncnormalquality.json": {
       "hash": "c214012563005620e9831ca8e007ad9650eea00da4aa57586d6742d98fd256c6",
-      "last_checked": "2026-06-09T07:28:40.722925",
+      "last_checked": "2026-06-12T07:43:00.584506",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c6fb792d648580c18cccf957537cec47\"",
       "file_path": "documentation/ColorSync/kcolorsyncnormalquality.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncpreferredcmm.json": {
       "hash": "53e998b7066e517703f2abc65ac1b8040af714aa50736ba59f1bbfe2cd628335",
-      "last_checked": "2026-06-09T07:28:40.834551",
+      "last_checked": "2026-06-12T07:43:00.696882",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d58f22eda02af0f215d72e734b1f0995\"",
       "file_path": "documentation/ColorSync/kcolorsyncpreferredcmm.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprinterdeviceclass.json": {
       "hash": "b5567b52a491d8694cbbfa59358a0544d5cdac3878bae373ee744f6dc0ebea0d",
-      "last_checked": "2026-06-09T07:28:41.054706",
+      "last_checked": "2026-06-12T07:43:00.823181",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"8546fbf0a62be2b6f1752d45895a5d37\"",
       "file_path": "documentation/ColorSync/kcolorsyncprinterdeviceclass.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofile.json": {
       "hash": "a11cada038f2dafe1e2d7da927617447a98701d7653d1fddc28d21945b27af04",
-      "last_checked": "2026-06-09T07:28:41.155071",
+      "last_checked": "2026-06-12T07:43:00.949694",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a7edb31aa059f120559ad28d700e8684\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofile.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileclass.json": {
       "hash": "dc240bf0233b242a2a6159a846a918a9ee041bef24e7e71c99ae32977c4d9d13",
-      "last_checked": "2026-06-09T07:28:41.386093",
+      "last_checked": "2026-06-12T07:43:01.089155",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1ecb97a95022fb71119cf3dbfdb80196\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileclass.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilecolorspace.json": {
       "hash": "1e650f837dc7f85cadb5a9fbb3992b4871b8b124757a5f3a1bbfe4313fa4aab1",
-      "last_checked": "2026-06-09T07:28:41.497152",
+      "last_checked": "2026-06-12T07:43:01.216058",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4f345c79379431e2ef6a72e5402f8c35\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilecolorspace.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilecomputerdomain.json": {
       "hash": "61d8867d61aba55a37c064ed05e27525cccdda63bf5e14a1ad43c79be1032911",
-      "last_checked": "2026-06-09T07:28:41.599850",
+      "last_checked": "2026-06-12T07:43:01.327308",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7bff3e42d093f7a486d715c6b2a3c545\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilecomputerdomain.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofiledescription.json": {
       "hash": "36dda277daf0a8943faff16aa7ace26947a73b89dc66d832fd4dcc7b84f578c2",
-      "last_checked": "2026-06-09T07:28:41.702416",
+      "last_checked": "2026-06-12T07:43:01.448998",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d2bcd57a4fb079cc98aeca8a8556d396\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofiledescription.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileheader.json": {
       "hash": "4ffcc2d3452e9109cbddd741ed856915728517c234341597a142166f1e35c4d3",
-      "last_checked": "2026-06-09T07:28:41.815416",
+      "last_checked": "2026-06-12T07:43:01.586497",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"102f878e859c5542d2e958a4fe3ef051\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileheader.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilehostscope.json": {
       "hash": "5357b2cc60e41bc144c930587d6a6130d958d93b3e7351bdfd13ae9d7530e909",
-      "last_checked": "2026-06-09T07:28:41.916448",
+      "last_checked": "2026-06-12T07:43:01.717416",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"fa303d7708bf1110087a160c2eb705fe\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilehostscope.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilemd5digest.json": {
       "hash": "e19e5d8c4d1e6b10779828b6468a5b2b21ec7c07cbd06bd38cc81914e5d0809b",
-      "last_checked": "2026-06-09T07:28:42.019581",
+      "last_checked": "2026-06-12T07:43:01.828446",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"fc50f3a52cedfec669aa01a6b8601a50\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilemd5digest.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofilepcs.json": {
       "hash": "c46b02a1e6c15da9a8d9dec8ae3af7be451e9897671a7d9e15016a25c9c6474f",
-      "last_checked": "2026-06-09T07:28:42.117127",
+      "last_checked": "2026-06-12T07:43:01.943517",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f556b939fff3db3b69025cb1e7039db7\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofilepcs.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileurl.json": {
       "hash": "c897704c66df42af9ab6982181402d9a7b1927e6328483de9c8cfa22ad436845",
-      "last_checked": "2026-06-09T07:28:42.224047",
+      "last_checked": "2026-06-12T07:43:02.073944",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a2e503480448679a29ec93ca08b58e7a\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileurl.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileuserdomain.json": {
       "hash": "439b78b30ed71f9157f15aede58d7af34bc7905e81bd3be5a3e1e74cbf85f492",
-      "last_checked": "2026-06-09T07:28:42.316058",
+      "last_checked": "2026-06-12T07:43:02.199181",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ec6b3aef764bc0910daefeb64e67c562\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileuserdomain.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncprofileuserscope.json": {
       "hash": "1c60e8d0c46431dbc97d19e944d3731ceafbf3063ed57cb18b879d4efcf8914b",
-      "last_checked": "2026-06-09T07:28:42.444240",
+      "last_checked": "2026-06-12T07:43:02.353261",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4de3d27015c58bd7db21c85736727581\"",
       "file_path": "documentation/ColorSync/kcolorsyncprofileuserscope.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrommrgbprofile.json": {
       "hash": "61b5ae48f7e75a3d40e0c2fc85c6b80bb2463cdfdf3e4705266afc80fa692bf9",
-      "last_checked": "2026-06-09T07:28:42.546761",
+      "last_checked": "2026-06-12T07:43:02.487347",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3e62c3663ce263b7e7e835edb5bef2e2\"",
       "file_path": "documentation/ColorSync/kcolorsyncrommrgbprofile.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintent.json": {
       "hash": "1d3b718d45e73de5962735760e413bc9d3e7d96f0b7186e193b014f4be5eb220",
-      "last_checked": "2026-06-09T07:28:42.649684",
+      "last_checked": "2026-06-12T07:43:02.606723",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"32b609555d0234c4cfa4f9720424e747\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintent.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintentabsolute.json": {
       "hash": "a7a2c8e9bc9890b650166f049f9321ac0e030a1191fec40c27fe49e8d2982b7b",
-      "last_checked": "2026-06-09T07:28:42.749992",
+      "last_checked": "2026-06-12T07:43:02.761010",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"68c10ccbc93396a43bdedd389866600b\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintentabsolute.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintentperceptual.json": {
       "hash": "bb469a8457092114865332101d673c847ba8a15713927ef5c9f9086dd1863a92",
-      "last_checked": "2026-06-09T07:28:42.889150",
+      "last_checked": "2026-06-12T07:43:02.895946",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"02b7ee46ab8383760c487633cdb1036a\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintentperceptual.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintentrelative.json": {
       "hash": "26133467c58ab192215111529f76e049ba25abe3cc3ccb4b41aa1d05b0d8641a",
-      "last_checked": "2026-06-09T07:28:42.985215",
+      "last_checked": "2026-06-12T07:43:03.022989",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3197b6fdcaa1ee2be5de929739261bd8\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintentrelative.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintentsaturation.json": {
       "hash": "6299fb7a356e09ecb5c1116c8a84db75e48de20233a8c2e768fb116e40d4ae6a",
-      "last_checked": "2026-06-09T07:28:43.100683",
+      "last_checked": "2026-06-12T07:43:03.141189",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e53a943fa98b2b851e00bf9f5f57a9df\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintentsaturation.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncrenderingintentuseprofileheader.json": {
       "hash": "32310d68168b4458966cb8a8ba3329d93932f6ace733b88413e2e541888ffcf4",
-      "last_checked": "2026-06-09T07:28:43.197860",
+      "last_checked": "2026-06-12T07:43:03.262318",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5725f00bca1d1ce9c5732b6579a674b5\"",
       "file_path": "documentation/ColorSync/kcolorsyncrenderingintentuseprofileheader.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsrgbprofile.json": {
       "hash": "d411612519fc1ec367491dc1a25bf477ddcd87c6e2c917788732ef5842804c91",
-      "last_checked": "2026-06-09T07:28:43.314984",
+      "last_checked": "2026-06-12T07:43:03.381586",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1eeb62623d06e6b745f6aa369e74ef30\"",
       "file_path": "documentation/ColorSync/kcolorsyncsrgbprofile.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncscannerdeviceclass.json": {
       "hash": "043183b457f8c68fccabec8020e0e94ec8ffc0600574f32c0a227e651b7fec5b",
-      "last_checked": "2026-06-09T07:28:43.414706",
+      "last_checked": "2026-06-12T07:43:03.523266",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"989554463fbf42b44c36866cc1db7ded\"",
       "file_path": "documentation/ColorSync/kcolorsyncscannerdeviceclass.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigatob0tag.json": {
       "hash": "fb71df34d553ff0cfac4ca78a53214744eaf10d3942790ca2afc966c5a432f9b",
-      "last_checked": "2026-06-09T07:28:43.514875",
+      "last_checked": "2026-06-12T07:43:03.658568",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"eb76c7bc6b2a573c75f20428d5cc32de\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigatob0tag.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigatob1tag.json": {
       "hash": "26e6b22367d273e15d62ca2998ee6f9aa59351598a97eb76bd1521a993d7bc23",
-      "last_checked": "2026-06-09T07:28:43.620776",
+      "last_checked": "2026-06-12T07:43:03.778096",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"617f2dfc34b6c87b5417584791a78ad1\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigatob1tag.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigatob2tag.json": {
       "hash": "944ec1356dfd751fd42becb55123fbee95f75b01d43c0ae73e1a23da7d0932ba",
-      "last_checked": "2026-06-09T07:28:43.726996",
+      "last_checked": "2026-06-12T07:43:03.914683",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a2096fcf751f616ff3d8cd3603af4e9d\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigatob2tag.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigabstractclass.json": {
       "hash": "7579ecf3a4eee379ac15c0c761acaec09611ab4eef581079113c0ed28fa9d72a",
-      "last_checked": "2026-06-09T07:28:43.948430",
+      "last_checked": "2026-06-12T07:43:04.053639",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5d7fd68a02efb79b52ffaf72696182ae\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigabstractclass.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigbtoa0tag.json": {
       "hash": "1d9e32a49820b8790bf0b59bef9ecdabff00ec8d8b1a89286c68de38ab5d79f4",
-      "last_checked": "2026-06-09T07:28:44.058119",
+      "last_checked": "2026-06-12T07:43:04.168368",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"001eff0f9b47e41a1b5500c9129db401\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigbtoa0tag.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigbtoa1tag.json": {
       "hash": "b6ec9bd3c1b6d9956acb6ec3993ad9621c6e7881149db9232a421444ebcbdb3d",
-      "last_checked": "2026-06-09T07:28:44.228795",
+      "last_checked": "2026-06-12T07:43:04.281408",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"de1c8866689794be09c74de23e03cddd\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigbtoa1tag.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigbtoa2tag.json": {
       "hash": "09995ac6813644d123b1d7b0259e3e4f40335ac72f201eaaffe9feb1bc2b8825",
-      "last_checked": "2026-06-09T07:28:44.344339",
+      "last_checked": "2026-06-12T07:43:04.397209",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b2cf36dcc5c2d1958b67487151e79e18\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigbtoa2tag.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigbluecoloranttag.json": {
       "hash": "9209bd2f36a37023d786d6daee588b24191416cbae13726ff431b73dbb0ee604",
-      "last_checked": "2026-06-09T07:28:44.449171",
+      "last_checked": "2026-06-12T07:43:04.530544",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"836d1c49b2efdbe635813cf4cdd13954\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigbluecoloranttag.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigbluetrctag.json": {
       "hash": "2ff0ad5e08b6afad2a98aec04a22056b2b197237a42486c85c332067c93c1363",
-      "last_checked": "2026-06-09T07:28:44.616469",
+      "last_checked": "2026-06-12T07:43:04.679060",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"635a335af2fce9caaecb26ddbd06e1fc\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigbluetrctag.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigcmykdata.json": {
       "hash": "1d8a879db21ad233df9ffd9d6b33687725ffd66bdf00a51ca6e997df407b1505",
-      "last_checked": "2026-06-09T07:28:44.713026",
+      "last_checked": "2026-06-12T07:43:04.817752",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c39b1a33c9feb0c66c98b77881ccba88\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigcmykdata.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigcolorspaceclass.json": {
       "hash": "60ac81951c30b172d1f9aa45bf16359b96a2f71f21fe347d2077131cba0bc3b8",
-      "last_checked": "2026-06-09T07:28:44.819164",
+      "last_checked": "2026-06-12T07:43:04.942624",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e48f8bbe0d1d1513c12f59a31a6ee026\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigcolorspaceclass.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigcopyrighttag.json": {
       "hash": "3610d1533b69af69517e4471910dd7f856199bec9fa025886b51f22564dc6d81",
-      "last_checked": "2026-06-09T07:28:44.921056",
+      "last_checked": "2026-06-12T07:43:05.092789",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4dfa6a59f050b1fb23045e76b7704e4c\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigcopyrighttag.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigdevicemfgdesctag.json": {
       "hash": "b2eca57cf76bdb8e752cbcccde6b38df84514a516ec84b35cf194198a46dcb93",
-      "last_checked": "2026-06-09T07:28:45.007109",
+      "last_checked": "2026-06-12T07:43:05.215239",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"54c48ab5032b88e847126f1307dacd4d\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigdevicemfgdesctag.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigdevicemodeldesctag.json": {
       "hash": "a6fca965eb5ee79c3e00928ed073b9c49bae7b3da6fafa99a1ece95fe7328666",
-      "last_checked": "2026-06-09T07:28:45.118356",
+      "last_checked": "2026-06-12T07:43:05.331729",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"111d918ea07020e5e3dcb3b9451ba107\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigdevicemodeldesctag.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigdisplayclass.json": {
       "hash": "2c0ddb6c35ceff21770114bc2ac90400fe15783b161fa9035d3ae2d61b8b03fb",
-      "last_checked": "2026-06-09T07:28:45.218011",
+      "last_checked": "2026-06-12T07:43:05.447026",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"13e1f5b4cc79237ea3b693cb60b5bb3b\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigdisplayclass.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiggamuttag.json": {
       "hash": "73b1547e63e407bd71ef0b8494c7886bd4a935bd5891646182aa308ad0f9bff5",
-      "last_checked": "2026-06-09T07:28:45.351430",
+      "last_checked": "2026-06-12T07:43:05.582352",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c757544f5dddacf9d82bbe638f64ab0a\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiggamuttag.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiggraydata.json": {
       "hash": "4024f41096ed748fef7a17d6145d99d9a7cef6588c15e2228c030b40c47bf9fd",
-      "last_checked": "2026-06-09T07:28:45.432469",
+      "last_checked": "2026-06-12T07:43:05.709988",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"18f4dc008594e48bcc1e5bdcab2bdc51\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiggraydata.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiggraytrctag.json": {
       "hash": "e568f5a1429b4df0712ee578638c383b7bdac2b53f036e86fbb088ec1a9c5920",
-      "last_checked": "2026-06-09T07:28:45.544203",
+      "last_checked": "2026-06-12T07:43:05.839518",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c9080279c4dc74c6a763bd92303b6f67\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiggraytrctag.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiggreencoloranttag.json": {
       "hash": "c75a9821bcc86b0c1b696889c8dcfe0b7b012aab0d8061ef1f233f65f5a897b8",
-      "last_checked": "2026-06-09T07:28:45.625406",
+      "last_checked": "2026-06-12T07:43:05.955816",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5e75e2b9a56739abf9d8bfc20847231c\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiggreencoloranttag.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiggreentrctag.json": {
       "hash": "b8d9937dc2ce15a9124da6451b27a626a57ab0fa0a28a1a024df52136efa1f04",
-      "last_checked": "2026-06-09T07:28:45.732150",
+      "last_checked": "2026-06-12T07:43:06.078376",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"05acfd5064c7405706f5d5c973e104cd\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiggreentrctag.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiginputclass.json": {
       "hash": "fc2e8ba27e0c3049a5b18c079851fbc6cd0c584511182fb80ebfff2fc94a043e",
-      "last_checked": "2026-06-09T07:28:45.833362",
+      "last_checked": "2026-06-12T07:43:06.214581",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0a7dec91ff252127134df1cc6333d281\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiginputclass.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiglabdata.json": {
       "hash": "9a79de53e48a4a4c406b05bf2034734dc17090d991b7b145eeb3cf1aa15fc506",
-      "last_checked": "2026-06-09T07:28:45.892973",
+      "last_checked": "2026-06-12T07:43:06.366623",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"8ec9e8bd25b86731c81c5d5b80c7afba\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiglabdata.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsiglinkclass.json": {
       "hash": "9a08af21076fc6f3c15a0cb2af164f4cc0c417c7fbaa9c828fc3d1dc9431b4b6",
-      "last_checked": "2026-06-09T07:28:45.998533",
+      "last_checked": "2026-06-12T07:43:06.488200",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b9ba94477815b3304256185390dbc914\"",
       "file_path": "documentation/ColorSync/kcolorsyncsiglinkclass.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigmediablackpointtag.json": {
       "hash": "02b8f2b092160b23f0c510cad68f395d44fa6d3995da645ceedebec80d60472c",
-      "last_checked": "2026-06-09T07:28:46.075871",
+      "last_checked": "2026-06-12T07:43:06.625082",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c76b1e2448dad827fc24ac76187fd8db\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigmediablackpointtag.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigmediawhitepointtag.json": {
       "hash": "04718ec67d903618d79ecccf65023941ced80714baf9736846a9ec46eac74c4f",
-      "last_checked": "2026-06-09T07:28:46.187831",
+      "last_checked": "2026-06-12T07:43:06.756165",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"8094a34077b62975c536016b72d0aa75\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigmediawhitepointtag.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsignamedcolor2tag.json": {
       "hash": "8efafdc12b9e392619d8aca0d1d7532fa53d45dfd9371d957b580f3747239d48",
-      "last_checked": "2026-06-09T07:28:46.285645",
+      "last_checked": "2026-06-12T07:43:06.900693",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"81909bdf61edbed9591a005d6f04ee09\"",
       "file_path": "documentation/ColorSync/kcolorsyncsignamedcolor2tag.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsignamedcolorclass.json": {
       "hash": "7d6549d0989feed82362f149b238d13ffdc2e24b51670fddecd6731e74815693",
-      "last_checked": "2026-06-09T07:28:46.384035",
+      "last_checked": "2026-06-12T07:43:07.069867",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"723616b4b5cca0177a21018550b3e378\"",
       "file_path": "documentation/ColorSync/kcolorsyncsignamedcolorclass.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigoutputclass.json": {
       "hash": "a3ac5fe324bbbef7541f831c877c84f760facdda4cffc50cc3bc27b3ece96a5a",
-      "last_checked": "2026-06-09T07:28:46.483251",
+      "last_checked": "2026-06-12T07:43:07.189438",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7692d4b582194f5d42a791bfc0a64026\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigoutputclass.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigpreview0tag.json": {
       "hash": "5cb566926cf2869e820072dd179387c27a6a21cbd98f793a1962b018eee24858",
-      "last_checked": "2026-06-09T07:28:46.589259",
+      "last_checked": "2026-06-12T07:43:07.323690",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c35fa8c4b8f20c944898c590a72c5af4\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigpreview0tag.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigpreview1tag.json": {
       "hash": "195d3f3dae921c074a9aa8b10825df6d149a8fac2c51203fe19bcc451dc644e2",
-      "last_checked": "2026-06-09T07:28:46.696093",
+      "last_checked": "2026-06-12T07:43:07.464265",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0d002e882344426c232df5b90b4bdde2\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigpreview1tag.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigpreview2tag.json": {
       "hash": "abd2c8807e911dae2ce0e490876217c55f29a4601de26123b3de4894dc6f121f",
-      "last_checked": "2026-06-09T07:28:46.746663",
+      "last_checked": "2026-06-12T07:43:07.589085",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a2486bfd4b5f69f89ad58f0f26fa6c42\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigpreview2tag.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigprofiledescriptiontag.json": {
       "hash": "b8353dd33a70f23275c9ed031aba1b772b8093d9753778606fa4bd9e2f422ccd",
-      "last_checked": "2026-06-09T07:28:46.807231",
+      "last_checked": "2026-06-12T07:43:07.721350",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"85d15c80c5d740349715ab0eb2918a17\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigprofiledescriptiontag.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigprofilesequencedesctag.json": {
       "hash": "b655757af91d784052a716a7a4e38f96c498d108317841df490bee7e6dc6a062",
-      "last_checked": "2026-06-09T07:28:46.879828",
+      "last_checked": "2026-06-12T07:43:07.854406",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1aae34eedb6f5a58b210068e81c2cfb2\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigprofilesequencedesctag.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigredcoloranttag.json": {
       "hash": "6b311ab26caed3918631dbbfea538c788f9c349b05c0ada31069082b62a1a80e",
-      "last_checked": "2026-06-09T07:28:46.985321",
+      "last_checked": "2026-06-12T07:43:07.986775",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"aed911fc320a77d94dc432daf404b141\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigredcoloranttag.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigredtrctag.json": {
       "hash": "aa101ad126af129eb2b3e571bc79d830fcf8928d4e10b9e1b6960b9583fdbd8e",
-      "last_checked": "2026-06-09T07:28:47.082314",
+      "last_checked": "2026-06-12T07:43:08.117131",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4a8312b1b9fddd393a3be7f34f9b5b18\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigredtrctag.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigrgbdata.json": {
       "hash": "c17ee71f176ab7a065a3ec8665ae4243cf501999e6eaf500e348adbf9619d384",
-      "last_checked": "2026-06-09T07:28:47.178603",
+      "last_checked": "2026-06-12T07:43:08.228089",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0f56d982ceac761305ccdbf1e0425e3d\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigrgbdata.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigtechnologytag.json": {
       "hash": "f9fbf18305697aad34060b02665897cb32842f21a6e23dd68910c39155ad68ac",
-      "last_checked": "2026-06-09T07:28:47.273931",
+      "last_checked": "2026-06-12T07:43:08.341527",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b17f11d7dc6da23f73316f87bee519ab\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigtechnologytag.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigviewingconddesctag.json": {
       "hash": "4a8cf7fc7a5ee7d87374655f270152a3c68439e9639fd7ec367e4fda379666db",
-      "last_checked": "2026-06-09T07:28:47.379778",
+      "last_checked": "2026-06-12T07:43:08.503632",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"52e90c57632a0ce6c08a1404eae58ac3\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigviewingconddesctag.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigviewingconditionstag.json": {
       "hash": "3f79c8a89d3aab436ca5ace0abfa4e88330d906f8cb3863a9abb65abe4c18ce8",
-      "last_checked": "2026-06-09T07:28:47.429226",
+      "last_checked": "2026-06-12T07:43:08.619945",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1bdd964bcea765e4fb45c22051a9923e\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigviewingconditionstag.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncsigxyzdata.json": {
       "hash": "cbe4817b122d33b5724c93b016807c4dd67b14adee00c96112e31a9106ebc2fa",
-      "last_checked": "2026-06-09T07:28:47.530380",
+      "last_checked": "2026-06-12T07:43:08.736213",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"964365002bfeeaca368259306db45a46\"",
       "file_path": "documentation/ColorSync/kcolorsyncsigxyzdata.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformcodefragmenttype.json": {
       "hash": "cbfdfff7b8fefbc76215690509a5cf000b7b202a5b88f26ff283edbb2b5b41d2",
-      "last_checked": "2026-06-09T07:28:47.634095",
+      "last_checked": "2026-06-12T07:43:08.899995",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f7bb03813c5b13be3eddc9cf8f3004c5\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformcodefragmenttype.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformcreator.json": {
       "hash": "ec681fb0a70d82702dbec42b385fbe8e1d27d26161bb600bb73867d425ab2ce1",
-      "last_checked": "2026-06-09T07:28:47.737669",
+      "last_checked": "2026-06-12T07:43:09.017846",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"2c31554fd28665735c7af8cb39e0fc08\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformcreator.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformdevicetodevice.json": {
       "hash": "845a3fb52668985da0ab0a533521b80f98fdedd281cf5bb1585059c4b6027005",
-      "last_checked": "2026-06-09T07:28:47.788298",
+      "last_checked": "2026-06-12T07:43:09.149961",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f014a9469dac61117f742da5ad2d1456\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformdevicetodevice.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformdevicetopcs.json": {
       "hash": "a1cec31465a21a0c897f3660b2740777dfa45153dc5eb094bf81aa148e4101d4",
-      "last_checked": "2026-06-09T07:28:47.863256",
+      "last_checked": "2026-06-12T07:43:09.283045",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"842f0a06e3ce52c746c4030e125ba9a0\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformdevicetopcs.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformdstspace.json": {
       "hash": "274059affe9b0b1203890c1ec9b1687a66eba55f37c857842c726ac8d487ae19",
-      "last_checked": "2026-06-09T07:28:47.946741",
+      "last_checked": "2026-06-12T07:43:09.397869",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1548ebec18a2686d2d7ae24814c274c2\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformdstspace.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformfullconversiondata.json": {
       "hash": "aedf08f9b669ce96fff1b7b3d9eceaae4a58c5da3889f2d270ab6386f8a7fbca",
-      "last_checked": "2026-06-09T07:28:48.043415",
+      "last_checked": "2026-06-12T07:43:09.529833",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c59af16bd3bc222627d8f0588831ecf3\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformfullconversiondata.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformgamutcheck.json": {
       "hash": "89d6c888dc45aea01f19e3d1e47884ca5299288d87b9fff493de6e4aea9e9244",
-      "last_checked": "2026-06-09T07:28:48.163095",
+      "last_checked": "2026-06-12T07:43:09.675339",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"06934f4d35bdfc917aa347a5550b7807\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformgamutcheck.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformpcstodevice.json": {
       "hash": "2179607d4d8079330a5a3a9bff42936fc44d679d1ea0f4a48a120b5d685fe571",
-      "last_checked": "2026-06-09T07:28:48.214628",
+      "last_checked": "2026-06-12T07:43:09.791302",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5171c429165a18ec1029f14b5ed0b632\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformpcstodevice.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformpcstopcs.json": {
       "hash": "0acdc25301ebb52068a862f68992420996b57f0105bba4ec40ca358ad75b2179",
-      "last_checked": "2026-06-09T07:28:48.283356",
+      "last_checked": "2026-06-12T07:43:09.914272",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7d6d075a9f1866e59c4eb13206014732\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformpcstopcs.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformparametricconversiondata.json": {
       "hash": "0e3606491607b47b25d7a03e00ba9175ea935df7f60e6d39fa20c9359ef8fe2b",
-      "last_checked": "2026-06-09T07:28:48.398554",
+      "last_checked": "2026-06-12T07:43:10.047711",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"59b014b416aa5fe3d9e0e93dee8b9006\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformparametricconversiondata.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformsimplifiedconversiondata.json": {
       "hash": "21269a50b5db589d7c762c298949277f384dd505f95bad90612c6e98d9be83b2",
-      "last_checked": "2026-06-09T07:28:48.495114",
+      "last_checked": "2026-06-12T07:43:10.187364",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9ff3bcfa234a809772e822f5b9b12f0b\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformsimplifiedconversiondata.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformsrcspace.json": {
       "hash": "aabbfbc2e36bc6accdd953d7dbe7940163392980c7f6efa3cbc5c3699ba986af",
-      "last_checked": "2026-06-09T07:28:48.600694",
+      "last_checked": "2026-06-12T07:43:10.309380",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5e99ed58963f13a7058a1128296c3ae4\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformsrcspace.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsynctransformtag.json": {
       "hash": "e75cfdb980ecf4cc0855bf34ba30fcad0576056a619df0fdc37c5b07a8a11a46",
-      "last_checked": "2026-06-09T07:28:48.653663",
+      "last_checked": "2026-06-12T07:43:10.430022",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"adb9aff7ff9c0ec12c3cffb19417fb4d\"",
       "file_path": "documentation/ColorSync/kcolorsynctransformtag.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphainfomask.json": {
       "hash": "b5a5ee3f673f044a620f40bec69151c17a86d37cb00ea61bd6d48c540821a4e8",
-      "last_checked": "2026-06-09T07:28:48.727708",
+      "last_checked": "2026-06-12T07:43:10.627332",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"dbd9ff830e3cdb4fe7d3ac1243fe9748\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphainfomask.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphapremultipliedfirst.json": {
       "hash": "8943de7adc163c38ed683db42c8b7b52e86955aa7d99033106ade664baef0968",
-      "last_checked": "2026-06-09T07:28:48.841118",
+      "last_checked": "2026-06-12T07:43:10.740880",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0d6ccc6534cdfab0a80a728fca793b8f\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphapremultipliedfirst.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncalphapremultipliedlast.json": {
       "hash": "5b82fcc596c4b02e6b7b4090f8a9481301c797c6fc3e5a2acb28e4892d8e86f3",
-      "last_checked": "2026-06-09T07:28:48.937679",
+      "last_checked": "2026-06-12T07:43:10.872838",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"02e7f8fa63e2dd724c489c3a9782b134\"",
       "file_path": "documentation/ColorSync/kcolorsyncalphapremultipliedlast.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncbyteorderdefault.json": {
       "hash": "0de3ab341af23b03ef732f904ff9176e05a0cf6442ad4f47ac0ae8897b2f3232",
-      "last_checked": "2026-06-09T07:28:49.013899",
+      "last_checked": "2026-06-12T07:43:10.996953",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"63575414d2ffded6cf3da817fb2e07ad\"",
       "file_path": "documentation/ColorSync/kcolorsyncbyteorderdefault.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncapiversion().json": {
       "hash": "36483885871b5331668b1749211f76130151faaf2027e7609b3e7868942ff233",
-      "last_checked": "2026-06-09T07:28:49.111149",
+      "last_checked": "2026-06-12T07:43:11.126000",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c8b770c93586474c3bf1ea43c71e6bfc\"",
       "file_path": "documentation/ColorSync/colorsyncapiversion.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccreatecodefragment(_:_:).json": {
       "hash": "75ef0dd9bf45a354008afee7b531eb8ddfeed6a0533d62ec87437feacb9de368",
-      "last_checked": "2026-06-09T07:28:49.225481",
+      "last_checked": "2026-06-12T07:43:11.273269",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"87f458d88f80294b7c20db6bc28bd8bc\"",
       "file_path": "documentation/ColorSync/colorsynccreatecodefragment.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledprofileswithoptions(_:_:_:_:_:).json": {
       "hash": "705d6bfcf209ec5888cdf4ae25f27588ee86930913684f3a7635f2a721247952",
-      "last_checked": "2026-06-09T07:28:49.280308",
+      "last_checked": "2026-06-12T07:43:11.418427",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0687d034b03feba08e145a92a2727d83\"",
       "file_path": "documentation/ColorSync/colorsynciterateinstalledprofileswithoptions.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileishlgbased(_:).json": {
       "hash": "28876ea915ccef2c4d9232138eef9ab83ba8b99a9a0d0082c7f6f42cd286fa21",
-      "last_checked": "2026-06-09T07:28:49.383353",
+      "last_checked": "2026-06-12T07:43:11.537939",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5f78b67918b48bceb595c970247c0aba\"",
       "file_path": "documentation/ColorSync/colorsyncprofileishlgbased.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileismatrixbased(_:).json": {
       "hash": "fadb33a1b980a30facc3b1ff3b8a1933a8447a6553957686cbf541ebc37ac4aa",
-      "last_checked": "2026-06-09T07:28:49.492537",
+      "last_checked": "2026-06-12T07:43:11.672587",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d3558011a70c6c80c1a7d8409d482e6b\"",
       "file_path": "documentation/ColorSync/colorsyncprofileismatrixbased.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileispqbased(_:).json": {
       "hash": "5cdfadd14ff03aca7ad9b3b4749a44df8897b78cb2ee233a412c98cc0f9fdb51",
-      "last_checked": "2026-06-09T07:28:49.539813",
+      "last_checked": "2026-06-12T07:43:11.813440",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4075e50c9ce9807d6c362d2c689b547d\"",
       "file_path": "documentation/ColorSync/colorsyncprofileispqbased.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileiswidegamut(_:).json": {
       "hash": "4b6d66e12ac2f266c9b763fe2eeb8daac9d3785a9f213645505bee6192555788",
-      "last_checked": "2026-06-09T07:28:49.597697",
+      "last_checked": "2026-06-12T07:43:11.963948",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"81735f8ddd0e2f5d96eadf81f1e21cf5\"",
       "file_path": "documentation/ColorSync/colorsyncprofileiswidegamut.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformgetprofilesequence(_:).json": {
       "hash": "434f020b1f3df63fd6d9e3cf268fd10ed2c84f6790dd0d9be00592992ca57d95",
-      "last_checked": "2026-06-09T07:28:49.737935",
+      "last_checked": "2026-06-12T07:43:12.092146",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"cacc966b1413d2bf1f0a9ee7879179a1\"",
       "file_path": "documentation/ColorSync/colorsynctransformgetprofilesequence.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cgdisplaycreateuuidfromdisplayid(_:).json": {
       "hash": "0f50ae9c58068f687618640bf8bd3fc65d49264d4d2c6c638d149b6c6524801b",
-      "last_checked": "2026-06-09T07:28:49.816249",
+      "last_checked": "2026-06-12T07:43:12.221870",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"def30426179bb7b7d93f6f798b11446e\"",
       "file_path": "documentation/ColorSync/cgdisplaycreateuuidfromdisplayid.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/cgdisplaygetdisplayidfromuuid(_:).json": {
       "hash": "9c377c9405aef17fc56bbe07134ed5d1575c6bfda988e9952a6f504366b4d6c3",
-      "last_checked": "2026-06-09T07:28:49.904293",
+      "last_checked": "2026-06-12T07:43:12.337659",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a1f54caf3a27c8e86f40f5e07647541f\"",
       "file_path": "documentation/ColorSync/cgdisplaygetdisplayidfromuuid.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcopycmmidentifier(_:).json": {
       "hash": "6409aa4380daa9446713286d743dbfd06e16596901da98b0ff0036c514281d76",
-      "last_checked": "2026-06-09T07:28:50.003594",
+      "last_checked": "2026-06-12T07:43:12.455659",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"43319675ad05b5c40e2263bb6a7076ea\"",
       "file_path": "documentation/ColorSync/colorsynccmmcopycmmidentifier.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcopylocalizedname(_:).json": {
       "hash": "e18cdfd20cda26381bb8e3015be75d276bb7602f1558cb4a43f8e5c51afd0daa",
-      "last_checked": "2026-06-09T07:28:50.114023",
+      "last_checked": "2026-06-12T07:43:12.572719",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9cb1b67613193d7b93b166201be91aff\"",
       "file_path": "documentation/ColorSync/colorsynccmmcopylocalizedname.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmcreate(_:).json": {
       "hash": "f55f8e760a0c63daa0a30135b9b48488e682e69880e537dc03e6132a7e820b8e",
-      "last_checked": "2026-06-09T07:28:50.244140",
+      "last_checked": "2026-06-12T07:43:12.701179",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"42ec081fefb6caad68eeb9b210d9eddf\"",
       "file_path": "documentation/ColorSync/colorsynccmmcreate.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmgetbundle(_:).json": {
       "hash": "4d80bd654e9f45535c94952ca94ad6adbd1c6ada197863fa30993d78193e0f78",
-      "last_checked": "2026-06-09T07:28:50.291931",
+      "last_checked": "2026-06-12T07:43:12.823711",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f1558188c9a5dab350a0fa661a8bd009\"",
       "file_path": "documentation/ColorSync/colorsynccmmgetbundle.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynccmmgettypeid().json": {
       "hash": "d52de17a1b7e08f631008f066e10ded0f85ecd06b6267a8ec31baf09e68d1d16",
-      "last_checked": "2026-06-09T07:28:50.423001",
+      "last_checked": "2026-06-12T07:43:12.980681",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"1b48ca3510ffb2ce184861660985252a\"",
       "file_path": "documentation/ColorSync/colorsynccmmgettypeid.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdevicecopydeviceinfo(_:_:).json": {
       "hash": "b89ff0d9c80c30a110ea5b88f412c5742167a73227d1bff41fc185fe2209cf6c",
-      "last_checked": "2026-06-09T07:28:50.536921",
+      "last_checked": "2026-06-12T07:43:13.111728",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b214edfc3b54b05152e0fdf60dc737e5\"",
       "file_path": "documentation/ColorSync/colorsyncdevicecopydeviceinfo.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdevicesetcustomprofiles(_:_:_:).json": {
       "hash": "b93a775ba422f7d235bc7b110495bd11d86e859b201f7d4e04abd8820dd1e5e7",
-      "last_checked": "2026-06-09T07:28:50.636527",
+      "last_checked": "2026-06-12T07:43:13.258310",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4e1360f798ced37ce8bb1ea12c67e801\"",
       "file_path": "documentation/ColorSync/colorsyncdevicesetcustomprofiles.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciteratedeviceprofiles(_:_:).json": {
       "hash": "d394264dcafc5da8f485b3d33e73edd962aeb11a2b2d70caff13a3804f3a6378",
-      "last_checked": "2026-06-09T07:28:50.698206",
+      "last_checked": "2026-06-12T07:43:13.400557",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f4f50de051e052f7066a110206a9c86a\"",
       "file_path": "documentation/ColorSync/colorsynciteratedeviceprofiles.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledcmms(_:_:).json": {
       "hash": "2493d3e6187c3f3d60913721104d701072b7ad3bee7cb4eb9288a7ea1a413107",
-      "last_checked": "2026-06-09T07:28:50.906581",
+      "last_checked": "2026-06-12T07:43:13.533321",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"797678f8369da2bf3be15ad0c98cac1d\"",
       "file_path": "documentation/ColorSync/colorsynciterateinstalledcmms.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynciterateinstalledprofiles(_:_:_:_:).json": {
       "hash": "5212a4e222c8585e517376361978dd7ce9950e9b9089cf2e95f30270773e0b2e",
-      "last_checked": "2026-06-09T07:28:50.956173",
+      "last_checked": "2026-06-12T07:43:13.662119",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"85251b2db6f5db60ba4c467fc386d8ef\"",
       "file_path": "documentation/ColorSync/colorsynciterateinstalledprofiles.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecontainstag(_:_:).json": {
       "hash": "47938dad33413af39b8d75e2391bc441b9c2f93e11881b0d573a475125e09c66",
-      "last_checked": "2026-06-09T07:28:51.088380",
+      "last_checked": "2026-06-12T07:43:13.784374",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7c42cd5ebbf3614047c7dd81c04a6b3a\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecontainstag.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopydata(_:_:).json": {
       "hash": "c45c41d1aba34d02efd039520e8aa01622bd0c30f6c9e301b4447e7b984c317d",
-      "last_checked": "2026-06-09T07:28:51.190014",
+      "last_checked": "2026-06-12T07:43:13.912905",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"6c0df62d9bb320827158f34bea51ba6e\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopydata.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopydescriptionstring(_:).json": {
       "hash": "ac27b7cf85cef21829d196d5f912cd578106978f5af43c831f5f4489f8266681",
-      "last_checked": "2026-06-09T07:28:51.287661",
+      "last_checked": "2026-06-12T07:43:14.053314",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"195fa692dc3750c6dd02c3eaea8c3492\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopydescriptionstring.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopyheader(_:).json": {
       "hash": "40197ded4db933a2111a32a052155592ae1670369d82a3dbb1f1d5b684fd256c",
-      "last_checked": "2026-06-09T07:28:51.336632",
+      "last_checked": "2026-06-12T07:43:14.187513",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"ec77de7dcecd9ac61724286349bd42ed\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopyheader.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopytag(_:_:).json": {
       "hash": "46c9d0155a26e141e5614dacbd8779feacd0231c76155e5d7a543b225179dc46",
-      "last_checked": "2026-06-09T07:28:51.467983",
+      "last_checked": "2026-06-12T07:43:14.307522",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b3ca5978fe2121b7070de031325731e6\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopytag.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecopytagsignatures(_:).json": {
       "hash": "38188ce716aaedd767eb35b410d78562d3494a057b7ece27a55f0e3f1fb2f62c",
-      "last_checked": "2026-06-09T07:28:51.598652",
+      "last_checked": "2026-06-12T07:43:14.449931",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"cb8e72385383d5d66f6c35a86e28ab73\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecopytagsignatures.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreate(_:_:).json": {
       "hash": "9fbfa3f595d1759b1085a6e49b2336569e9c1b33ba83f1d8c2156c67bb61a9b9",
-      "last_checked": "2026-06-09T07:28:51.719816",
+      "last_checked": "2026-06-12T07:43:14.590486",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"86d39d3be949a8e737f7304c6a849e31\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreate.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatedeviceprofile(_:_:_:).json": {
       "hash": "e982e80c0100e0bc9eb125ed3b4a9bcb09b8b64e71b3fbcdc1d7ce75729f2e56",
-      "last_checked": "2026-06-09T07:28:51.828528",
+      "last_checked": "2026-06-12T07:43:14.727281",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d2d05b5115cb14d4e183ad97ccc5bf13\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatedeviceprofile.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatedisplaytransfertablesfromvcgt(_:_:).json": {
       "hash": "ed202ef23b3765c00bb20cfc2803911471be0560f9fbcd3eaf53c71f7a7896ca",
-      "last_checked": "2026-06-09T07:28:51.926611",
+      "last_checked": "2026-06-12T07:43:14.850771",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"dbf27e1ed59039427ccf367ca94bffa3\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatedisplaytransfertablesfromvcgt.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatelink(_:_:).json": {
       "hash": "48076ef0bc6551002db99e56bc9c340a3de366a125246d8c49abd2403508f7e2",
-      "last_checked": "2026-06-09T07:28:52.030997",
+      "last_checked": "2026-06-12T07:43:14.979817",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"471c7947134c796fc5406e75c42ac58a\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatelink.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatemutable().json": {
       "hash": "94b5e48d98539a5381010c7d3c9bcb4c12e2a7088a92604637e18823d49362c2",
-      "last_checked": "2026-06-09T07:28:52.133710",
+      "last_checked": "2026-06-12T07:43:15.105535",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"da248342a8a3d3d3e23114b67c28c09f\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatemutable.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatemutablecopy(_:).json": {
       "hash": "b01b874f683950134b753ffe76c4393c66cc24e66f519dac5934c4fd7a2860aa",
-      "last_checked": "2026-06-09T07:28:52.230167",
+      "last_checked": "2026-06-12T07:43:15.242092",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a1ad06610ac8dbc2e33e5cefa537b9d3\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatemutablecopy.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithdisplayid(_:).json": {
       "hash": "2f4748037ca608c721ff61f7530ce6069ea1fe83839e547b6d699f512d554dce",
-      "last_checked": "2026-06-09T07:28:52.344459",
+      "last_checked": "2026-06-12T07:43:15.381214",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9532ca0e5e397064ef2332c48cabbee5\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatewithdisplayid.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithname(_:).json": {
       "hash": "fb527339c941ce3fd2e3539da0e7a0d7d3bfd7024d5b07f88a92897253339f37",
-      "last_checked": "2026-06-09T07:28:52.407007",
+      "last_checked": "2026-06-12T07:43:15.514118",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"48ec44913090cd409e32c887b9f427d4\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatewithname.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithurl(_:_:).json": {
       "hash": "27e09f27a05b830fa476d2bc3cec39beef845b023eb106edd5cb57e35addc04a",
-      "last_checked": "2026-06-09T07:28:52.517325",
+      "last_checked": "2026-06-12T07:43:15.632005",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"d317daa98dd4921e66f2a70dd9661a40\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurl.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileestimategamma(_:_:).json": {
       "hash": "f817a22944b9fd77d75777537cffc492c192982f46ff6c3e17e1b6d06b57947f",
-      "last_checked": "2026-06-09T07:28:52.564616",
+      "last_checked": "2026-06-12T07:43:15.957694",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"096d5f625b624676ce3f34b72bc84187\"",
       "file_path": "documentation/ColorSync/colorsyncprofileestimategamma.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileestimategammawithdisplayid(_:_:).json": {
       "hash": "ac9f5e7950c5dd28ddba57685894d3a71afa2fb8348c56242d5879200af8158e",
-      "last_checked": "2026-06-09T07:28:52.720851",
+      "last_checked": "2026-06-12T07:43:16.089232",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4411b7bfb6e9506bcb3cef22fc682b6a\"",
       "file_path": "documentation/ColorSync/colorsyncprofileestimategammawithdisplayid.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegetdisplaytransferformulafromvcgt(_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "a8a014a622479cd0eeb5896106e7b9b7de612303bbcad259754590fdb170d1b1",
-      "last_checked": "2026-06-09T07:28:52.768263",
+      "last_checked": "2026-06-12T07:43:16.226902",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"e2567a4e6b8a80d78f8d8980c5c99dcd\"",
       "file_path": "documentation/ColorSync/colorsyncprofilegetdisplaytransferformulafromvcgt.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegetmd5(_:).json": {
       "hash": "76c80fe40b800dd6b61bbddc437fcdfad431066ab97482065808ee3c7f54591f",
-      "last_checked": "2026-06-09T07:28:52.932244",
+      "last_checked": "2026-06-12T07:43:16.383876",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"daae76edaf4f24e937aa68047672e336\"",
       "file_path": "documentation/ColorSync/colorsyncprofilegetmd5.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegettypeid().json": {
       "hash": "c0753d6fc38cef3f132aa631433df18c4d3e575d93b6ca01205b4d313dd7d1d4",
-      "last_checked": "2026-06-09T07:28:53.054677",
+      "last_checked": "2026-06-12T07:43:16.504418",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"efa6cca5addde7ffeaa77d4080500cff\"",
       "file_path": "documentation/ColorSync/colorsyncprofilegettypeid.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilegeturl(_:_:).json": {
       "hash": "99b221642b617eb6f6356902bb8e0c0fbf03adf1350eebc709010cf94e4d8722",
-      "last_checked": "2026-06-09T07:28:53.181734",
+      "last_checked": "2026-06-12T07:43:16.640455",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"080133ec49efd6dd51d95e47ba199b9b\"",
       "file_path": "documentation/ColorSync/colorsyncprofilegeturl.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileinstall(_:_:_:_:).json": {
       "hash": "887d9440034f46b3cd9e855c89823c96af07a59da0f1d7ef561119e27629a418",
-      "last_checked": "2026-06-09T07:28:53.284411",
+      "last_checked": "2026-06-12T07:43:16.779083",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3468130c0cd591b23702ed1f39a2cef0\"",
       "file_path": "documentation/ColorSync/colorsyncprofileinstall.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileremovetag(_:_:).json": {
       "hash": "fd6179a14106764d250fbc28faecff99a50a8746168d5a96c278329a3afdc7d0",
-      "last_checked": "2026-06-09T07:28:53.335409",
+      "last_checked": "2026-06-12T07:43:16.892421",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a61318ca5950566ed47b0bd2950d03ef\"",
       "file_path": "documentation/ColorSync/colorsyncprofileremovetag.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilesetheader(_:_:).json": {
       "hash": "57d5bfd17d3dfac062871889272bf6ffb86a48d0ff006c52e29f5c0d579c0e8f",
-      "last_checked": "2026-06-09T07:28:53.461592",
+      "last_checked": "2026-06-12T07:43:17.020645",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9ed9d63ada55a36bf60381ead754c375\"",
       "file_path": "documentation/ColorSync/colorsyncprofilesetheader.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilesettag(_:_:_:).json": {
       "hash": "711285d38c0270cf5794071b115cf9c00adbf28f45613821e72ae7019de56dd3",
-      "last_checked": "2026-06-09T07:28:53.559254",
+      "last_checked": "2026-06-12T07:43:17.137207",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9b451f5a262ec7b4639c7e16d5c959d5\"",
       "file_path": "documentation/ColorSync/colorsyncprofilesettag.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileuninstall(_:_:).json": {
       "hash": "d7881385e38d6d759b58ad0f8d8650a8ebd6e9ff79889fa3822bba58f147ef0e",
-      "last_checked": "2026-06-09T07:28:53.653562",
+      "last_checked": "2026-06-12T07:43:17.266190",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5b0e0f47acece8623d4a7e619bfcb3fe\"",
       "file_path": "documentation/ColorSync/colorsyncprofileuninstall.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofileverify(_:_:_:).json": {
       "hash": "c718f609bdfd045ac131860342ed0e8f8d23555c6a34c5158520503a8b100bdd",
-      "last_checked": "2026-06-09T07:28:53.711988",
+      "last_checked": "2026-06-12T07:43:17.390137",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"95ce7223fb4b4dd7b5d07c94e59767e9\"",
       "file_path": "documentation/ColorSync/colorsyncprofileverify.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncregisterdevice(_:_:_:).json": {
       "hash": "a4a74301a05db2b6688e9aea8d6cccbe885c6f5c128094549415ea2781d255b3",
-      "last_checked": "2026-06-09T07:28:53.819273",
+      "last_checked": "2026-06-12T07:43:17.510555",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"003a9dcfbf4df031f834de1efa254913\"",
       "file_path": "documentation/ColorSync/colorsyncregisterdevice.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformconvert(_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "557d33774ae5e4c91127c83407119bbee8f63cc0750c3a2ebfed041b7d4ef226",
-      "last_checked": "2026-06-09T07:28:53.917760",
+      "last_checked": "2026-06-12T07:43:17.631576",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"67516e625093878247f65b4ce6f01c2f\"",
       "file_path": "documentation/ColorSync/colorsynctransformconvert.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformcopyproperty(_:_:_:).json": {
       "hash": "01dbb74832324503e75facde9dccae1dd6f74c2048a6fa0b907765b01fb32000",
-      "last_checked": "2026-06-09T07:28:53.972917",
+      "last_checked": "2026-06-12T07:43:17.759657",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"f30badd7bcf8b14cc968d23cf84a2cd9\"",
       "file_path": "documentation/ColorSync/colorsynctransformcopyproperty.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformcreate(_:_:).json": {
       "hash": "49194e2a473dae5e16b08efe6c8424782dabc59b9dca4b23ef1ea8814939b8eb",
-      "last_checked": "2026-06-09T07:28:54.084621",
+      "last_checked": "2026-06-12T07:43:17.893766",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"9aba20a026b557e6d17958343b4c16ac\"",
       "file_path": "documentation/ColorSync/colorsynctransformcreate.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformgettypeid().json": {
       "hash": "bc44ebedd7c86f0d770421a56196aa7d2713964d0fe66e10a178d97fc049cc66",
-      "last_checked": "2026-06-09T07:28:54.181082",
+      "last_checked": "2026-06-12T07:43:18.008579",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a37934372d3b9d694916dd257dc586b0\"",
       "file_path": "documentation/ColorSync/colorsynctransformgettypeid.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsynctransformsetproperty(_:_:_:).json": {
       "hash": "97d16ed6073b879fe70ce9443eb5c8d9ed3ea1cc96a99c65cf3b350012523775",
-      "last_checked": "2026-06-09T07:28:54.295091",
+      "last_checked": "2026-06-12T07:43:18.132589",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"a4277f95ab4a8ba0e3b6d10e203eaf21\"",
       "file_path": "documentation/ColorSync/colorsynctransformsetproperty.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncunregisterdevice(_:_:).json": {
       "hash": "0153da00628da3acbe5f576b8d1ce2b2f6b0b08e52110892a672f9983ca3f394",
-      "last_checked": "2026-06-09T07:28:54.416504",
+      "last_checked": "2026-06-12T07:43:18.240922",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"4983cff58919319744c8144c4dcfc4fb\"",
       "file_path": "documentation/ColorSync/colorsyncunregisterdevice.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/init(_:).json": {
       "hash": "498a76e540c0f9bb297697748e82299e2128fb9954e0ec2613fbc9499a17f399",
-      "last_checked": "2026-06-09T07:28:54.471360",
+      "last_checked": "2026-06-12T07:43:18.350192",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"df7b131ce6cd1bff9fafd52343c9022f\"",
       "file_path": "documentation/ColorSync/colorsyncalphainfo/init.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/init(rawvalue:).json": {
       "hash": "67e89362dc103ba9e8335b7b5106fb806cfdb2105f1b356798864581d6dbd665",
-      "last_checked": "2026-06-09T07:28:54.597541",
+      "last_checked": "2026-06-12T07:43:18.481919",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"b88a58e3cc27d8a64b468bd4f8d131f7\"",
       "file_path": "documentation/ColorSync/colorsyncalphainfo/init-rawvalue.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncalphainfo/rawvalue.json": {
       "hash": "9ae24aa5cec93206575adca85a37cc06b6f9f763ff5587557269e880ac9f36d1",
-      "last_checked": "2026-06-09T07:28:54.705182",
+      "last_checked": "2026-06-12T07:43:18.606957",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"c3c70554a31cc043821f6d15c09729d3\"",
       "file_path": "documentation/ColorSync/colorsyncalphainfo/rawvalue.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/init(_:).json": {
       "hash": "c9e0991b9e13e87e5d7ea9b3899c4c9b6f500e201db230a74e2c041dc5f29d36",
-      "last_checked": "2026-06-09T07:28:54.752651",
+      "last_checked": "2026-06-12T07:43:18.724831",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"afb95e354441cb5339810d1d64b267b3\"",
       "file_path": "documentation/ColorSync/colorsyncdatadepth/init.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/init(rawvalue:).json": {
       "hash": "68c8315eae6ac396c518ae0c2c85c08b4fbf1cb14860d57b79b8b24245097ca5",
-      "last_checked": "2026-06-09T07:28:54.833765",
+      "last_checked": "2026-06-12T07:43:18.830050",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"acdf3cf1b3473f442b04ed9ef6104f00\"",
       "file_path": "documentation/ColorSync/colorsyncdatadepth/init-rawvalue.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncdatadepth/rawvalue.json": {
       "hash": "a4ffa8ce5510632406c212bde4480b6b88a21cfd8ba509dd7247ffa2c9b51d99",
-      "last_checked": "2026-06-09T07:28:54.879140",
+      "last_checked": "2026-06-12T07:43:18.954777",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"5502aea70d14443889aba236dc518ae8\"",
       "file_path": "documentation/ColorSync/colorsyncdatadepth/rawvalue.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5/init().json": {
       "hash": "8ea1ba98b54d8c7a584e692bf2f33f0fd8b65e068b7a143df7234a18347710dc",
-      "last_checked": "2026-06-09T07:28:54.998096",
+      "last_checked": "2026-06-12T07:43:19.072839",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"0aec9cde674a6dd76bef126ce1eacad8\"",
       "file_path": "documentation/ColorSync/colorsyncmd5/init.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5/init(digest:).json": {
       "hash": "5ddb960b367bfec58af39d3e94c92a9a5c70c30f8d9d6915e5855352b239a8b0",
-      "last_checked": "2026-06-09T07:28:55.102411",
+      "last_checked": "2026-06-12T07:43:19.208891",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"96b8679427b17b2ffc68697c05b3eed9\"",
       "file_path": "documentation/ColorSync/colorsyncmd5/init-digest.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncmd5/digest.json": {
       "hash": "c111f58b1ebc4030ac6b5f86c8dcdf96314506139c999c9e3cbd438872523ae8",
-      "last_checked": "2026-06-09T07:28:55.289122",
+      "last_checked": "2026-06-12T07:43:19.316745",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"6097cfe157595ba76cd197a3d16ab0b3\"",
       "file_path": "documentation/ColorSync/colorsyncmd5/digest.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/icversion4point4number.json": {
       "hash": "403fc763b4a4ae4a7fb19b3fc14d33c8adea47fa5b9a7d8b0cc964da88feca09",
-      "last_checked": "2026-06-09T07:28:28.922007",
+      "last_checked": "2026-06-12T07:42:45.715326",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"3cd1c1b8e7556407623302ad4abd63b4\"",
       "file_path": "documentation/ColorSync/icversion4point4number.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/kcolorsyncdonotsubstituteprofiles.json": {
       "hash": "46af24dd4c2fac22c592808319695831f8027bcb5537c07cdb0dd0be89731ab2",
-      "last_checked": "2026-06-09T07:28:29.124584",
+      "last_checked": "2026-06-12T07:42:46.112924",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"7798af07b15a21f8ca871859fdc4eb55\"",
       "file_path": "documentation/ColorSync/kcolorsyncdonotsubstituteprofiles.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/colorsync/colorsyncprofilecreatewithurlandoptions(_:_:_:).json": {
       "hash": "9b3d0fe27f2115767a4ec7c1c29982a177422e761c665a71d60b6129884cb331",
-      "last_checked": "2026-06-09T07:28:29.360546",
+      "last_checked": "2026-06-12T07:42:46.448994",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:28:27.104194",
+      "session_id": "2026-06-12T07:42:43.732745",
       "etag": "W/\"94d216ef4f1bfba974b0d6a42b8df761\"",
       "file_path": "documentation/ColorSync/colorsyncprofilecreatewithurlandoptions.md"
     },

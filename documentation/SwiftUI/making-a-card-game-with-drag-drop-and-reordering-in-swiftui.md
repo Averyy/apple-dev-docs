@@ -10,7 +10,7 @@ Move cards between positions in a card game using drag, drop, and reordering mod
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 271: [`Code-along: Build powerful drag and drop in SwiftUI`](https://developer.apple.comhttp://developer.apple.com/videos/play/wwdc26/271/).
+> **Note**: This sample code project is associated with WWDC26 session 271: [`Code-along: Build powerful drag and drop in SwiftUI`](https://developer.apple.comhttp://developer.apple.com/videos/play/wwdc2026/271/).
 
 ## See Also
 

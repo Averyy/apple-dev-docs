@@ -14,7 +14,7 @@ Create compelling visuals in your app by combining graphical effects.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 322: [`Compose advanced graphics effects with SwiftUI`](https://developer.apple.comhttp://developer.apple.com/videos/play/wwdc26/322/).
+> **Note**: This sample code project is associated with WWDC26 session 322: [`Compose advanced graphics effects with SwiftUI`](https://developer.apple.comhttp://developer.apple.com/videos/play/wwdc2026/322/).
 
 
 ---

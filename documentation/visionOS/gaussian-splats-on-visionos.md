@@ -10,7 +10,7 @@ Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 #### Overview
 
-> **Note**: This sample code project is associated with WWDC26 session 10816: [`What’s new in RealityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc26/10816/).
+> **Note**: This sample code project is associated with WWDC26 session 287: [`Build next generation experiences with visionOS 27`](https://developer.apple.comhttps://developer.apple.com/wwdc26/287), and session 279: [`Explore advances in RealityKit`](https://developer.apple.comhttps://developer.apple.com/wwdc26/279).
 
 ## See Also
 

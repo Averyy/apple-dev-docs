@@ -123,6 +123,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - Spatial Personas may appear laggy during High Quality Recording.  (178441141)
 
+##### Preview on Visionos
+
+###### Known Issues
+
+- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is not yet available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes).  (179045352)
+
 ##### Quick Look
 
 ###### Known Issues
@@ -132,13 +138,6 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Annotation text might become blank, preventing you from creating, selecting, or deleting additional annotations.   (177726175) **Workaround:** Close and reopen the file to remove the blank annotation. Alternatively, add a new annotation to replace the blank annotation.
 - In annotation mode, annotations don’t respond to direct touch input and flicker when directly touched.  (178087194) **Workaround:** Use indirect pinch gestures to interact with annotation UI elements.
 - In annotation mode, the Delete button sometimes switches the annotation to the editing UI.  (178087667) **Workaround:** Cancel the editing UI and try again, or delete the annotation in Preview.
-
-##### Reality Composer Pro
-
-###### Known Issues
-
-- When you enable `clearcoat`, specular occlusion might not be visible.  (175159311) **Workaround:** Lower the `clearcoat` value to near zero, or set it to zero, to make specular occlusion visible.
-- Light maps on cube and box primitives might not render properly.  (176278045) **Workaround:** Import explicitly modeled meshes with non-overlapping UVs instead of USD primitives or RealityKit box mesh resources if you have specific UV requirements, such as no overlaps across the entire model.
 
 ##### Realitykit
 
@@ -393,6 +392,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 ###### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
+- `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
 
 ##### Webkit
 

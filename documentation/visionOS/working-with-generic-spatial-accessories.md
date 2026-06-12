@@ -8,7 +8,7 @@ Use generic spatial accessories to track purpose-built devices in your visionOS 
 
 Specialized apps become more immersive when they respond to people using purpose-built devices, like medical instruments, steering rigs, or industrial tooling. [`ARKit`](https://developer.apple.com/documentation/ARKit) recognizes these devices as *generic spatial accessories*, but they’re distinct from spatial controllers and styli, which have their own dedicated APIs.
 
-Manufacturers create generic spatial accessories by following the [`Apple Accessories Guidelines for creating a spatial accessory`](https://developer.apple.comhttps://developer.apple.com/accessories/). ARKit provides precise, low-latency tracking of these accessories in Apple Vision Pro across varied lighting conditions, and continues tracking orientation even when an accessory moves outside the field of view or becomes visually obscured. [`Game Controller`](https://developer.apple.com/documentation/GameController) also provides input and haptic feedback for these accessories.
+Manufacturers create generic spatial accessories by following the [`Accessory Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf), paying close attention to the Spatial Accessories section. ARKit provides precise, low-latency tracking of these accessories in Apple Vision Pro across varied lighting conditions, and continues tracking orientation even when an accessory moves outside the field of view or becomes visually obscured. [`Game Controller`](https://developer.apple.com/documentation/GameController) also provides input and haptic feedback for these accessories.
 
 #### Configure Access to a Reference Accessory File
 

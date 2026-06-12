@@ -142,7 +142,7 @@ After generating the reference object file, set up object tracking in your app u
 
 > ❗ **Important**: In a visionOS app, object tracking works only in an [`ImmersiveSpace`](https://developer.apple.comhttps://developer.apple.com/documentation/swiftui/immersivespace). Attempting to use object tracking in a window or volume results in a silent failure.
 
-For more information about object tracking, watch the WWDC24 session, [`Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10101/). For an example of using ARKit for object tracking, see [`Exploring object tracking with ARKit`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/exploring_object_tracking_with_arkit).
+For more information about object tracking, watch the WWDC24 session, [`Explore object tracking for visionOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2024/10101/), and the WWDC26 session, [`Explore enhancements to visionOS object tracking`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/283/). For an example of using ARKit for object tracking, see [`Exploring object tracking with ARKit`](https://developer.apple.comhttps://developer.apple.com/documentation/visionos/exploring_object_tracking_with_arkit).
 
 ## Topics
 

@@ -1,4 +1,4 @@
-# TrustInsights
+# Trust Insights
 
 **Framework**: TrustInsights  
 **Kind**: module
@@ -8,11 +8,11 @@ Evaluate transactions for potential coercive activity while preserving people’
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 
 #### Overview
 
-The TrustInsights framework enables your app to request an evaluation, or insight, to help detect and respond to social engineering threats people may face. Social threats exploit human psychology rather than technical vulnerabilities such as software bugs to pressure or deceive people into performing legitimate actions, and your app can’t distinguish between a genuine or a coerced interaction.
+The Trust Insights framework enables your app to request an evaluation, or insight, to help detect and respond to social engineering threats people may face. Social threats exploit human psychology rather than technical vulnerabilities such as software bugs to pressure or deceive people into performing legitimate actions, and your app can’t distinguish between a genuine or a coerced interaction.
 
 #### Learn About Available Action Contexts
 
@@ -24,9 +24,9 @@ There are five principal action areas — kinds of transactions people might eng
 - **[`InsightEvaluator.OperationCategory.communication`](insightevaluator/operationcategory/communication.md)**: An action that indicates communication operation, such as sending bulk messages or making connections to other people.
 - **[`InsightEvaluator.OperationCategory.other`](insightevaluator/operationcategory/other.md)**: A default action that represents all other types of actions. If the available action types aren’t appropriate for your use case, please consider filing a Feedback report with the details relating to the category of interest.
 
-#### Enable Your Xcode Project to Adopt the Trustinsights Framework
+#### Enable Your Xcode Project to Adopt the Trust Insights Framework
 
-The TrustInsights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base).
+The Trust Insights framework requires that your app’s Xcode project enables the `com.apple.developer.trustinsights.base` entitlement. For information on how to add this entitlement to your Xcode project, see [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base).
 
 #### Understand the Components of Trust Evaluation Request
 
@@ -37,10 +37,10 @@ A trust insight is the result of two elements that combine to form a trust insig
 
 #### Create an Evaluator and Request an Evaluation
 
-In order to request evaluations, you need to first request a person’s permission to use the TrustInsights framework. The following example demonstrates how to check your app’s authorization status and request a person’s authorization, provided a person hasn’t previously declined an authorization request.
+In order to request evaluations, you need to first request a person’s permission to use the Trust Insights framework. The following example demonstrates how to check your app’s authorization status and request a person’s authorization, provided a person hasn’t previously declined an authorization request.
 
 ```swift
-    /// Returns `true` if a person has authorized use of TrustInsights,  otherwise `false`.
+    /// Returns `true` if a person has authorized use of Trust Insights,  otherwise `false`.
     func requestUserAuthorizationIfNeeded(context: InsightEvaluator.InsightContext) async -> Bool{
         do {
             let evaluator = InsightEvaluator()
@@ -66,7 +66,7 @@ In order to request evaluations, you need to first request a person’s permissi
 
 #### Act on the Result of the Evaluation
 
-The result of a TrustInsight evaluation can help you determine if you should perform further checks before finalizing a transaction. The following example shows a function that returns a Boolean value indicating whether the framework indicates there are no indications of coaching.
+The result of a Trust Insight evaluation can help you determine if you should perform further checks before finalizing a transaction. The following example shows a function that returns a Boolean value indicating whether the framework indicates there are no indications of coaching.
 
 ```swift
 func shouldBypassCheckX() async -> Bool {

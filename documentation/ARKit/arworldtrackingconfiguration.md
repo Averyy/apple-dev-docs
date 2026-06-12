@@ -58,9 +58,11 @@ World-tracking sessions also provide several ways for your app to recognize or i
   The number of image anchors to monitor closely for position and orientation updates.
 - [var automaticImageScaleEstimationEnabled: Bool](arworldtrackingconfiguration/automaticimagescaleestimationenabled.md)
   A flag that instructs the framework to estimate and set the scale of a detected or tracked image on your behalf.
-### Detecting 3D Objects
+### Detecting and tracking 3D objects
 - [var detectionObjects: Set<ARReferenceObject>](arworldtrackingconfiguration/detectionobjects.md)
   A set of 3D objects that the framework attempts to detect in the user’s environment.
+- [var trackingObjects: Set<ARReferenceObject>](arworldtrackingconfiguration/trackingobjects.md)
+  Objects to track in the scene.
 ### Tracking the User’s Face
 - [var userFaceTrackingEnabled: Bool](arworldtrackingconfiguration/userfacetrackingenabled.md)
   A flag that determines whether ARKit tracks the user’s face in a world-tracking session.
@@ -90,9 +92,6 @@ World-tracking sessions also provide several ways for your app to recognize or i
   A Boolean value that indicates if the framework searches the physical environment for App Clip Codes.
 - [class ARAppClipCodeAnchor](arappclipcodeanchor.md)
   An anchor that tracks the position and orientation of an App Clip Code in the physical environment.
-### Instance Properties
-- [var trackingObjects: Set<ARReferenceObject>](arworldtrackingconfiguration/trackingobjects.md)
-  Objects to track in the scene.
 
 ## Relationships
 

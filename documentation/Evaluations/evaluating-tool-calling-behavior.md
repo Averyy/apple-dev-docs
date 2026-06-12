@@ -51,8 +51,7 @@ Start by defining samples. Each sample pairs a prompt with the expected tool cal
 
 ```swift
 struct LightControlEvaluation: Evaluation {
-    var dataset: ArrayLoader<ModelSample<String>> {
-        ArrayLoader(samples: [
+    let dataset = ArrayLoader(samples: [
             ModelSample(
                 prompt: "Turn off the living room lights.",
                 expectations: TrajectoryExpectation(
@@ -72,7 +71,6 @@ struct LightControlEvaluation: Evaluation {
                 )
             ),
         ])
-    }
     // Continued below in the next two code snippets...
 ```
 

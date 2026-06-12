@@ -22,6 +22,11 @@ Use this property to choose known 3D objects for ARKit to find in the user’s e
 
 To create reference objects for detection, scan them in a world-tracking session and use [`ARWorldMap`](arworldmap.md) to extract [`ARReferenceObject`](arreferenceobject.md) instances. You can then save reference objects as files and package them in any ARKit app you create using an Xcode asset catalog.
 
+## See Also
+
+- [var trackingObjects: Set<ARReferenceObject>](argeotrackingconfiguration/trackingobjects.md)
+  Objects to track in the scene.
+
 
 ---
 

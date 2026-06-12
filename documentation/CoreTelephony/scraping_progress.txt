@@ -1,4 +1,4 @@
 Completed scraping Core Telephony!
-Total pages scraped: 153
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 154
 Pages failed: 0

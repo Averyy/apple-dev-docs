@@ -19,9 +19,9 @@ final let signedPayload: Data
 
 #### Discussion
 
-This data is a signed data object that represents Trust Insights Data, which is the data package of assessments relating to the legitimacy of end user activity passed through the Trust Insights APIs.
+This data is a signed data object that represents Trust Insights Data. Trust Insights Data is the data package that contains assessments of the legitimacy of end user activity that Trust Insights returns.
 
-The data is in the CBOR Object Signing and Encryption ([`CBOR`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8152)) format. It’s intended for server side validation and processing. For information on validating the payload signature and unpacking the data see: doc:decoding-the-data.
+The data is in the CBOR Object Signing and Encryption ([`CBOR`](https://developer.apple.comhttps://www.rfc-editor.org/rfc/rfc8152)) format for server side validation and processing.
 
 ## See Also
 

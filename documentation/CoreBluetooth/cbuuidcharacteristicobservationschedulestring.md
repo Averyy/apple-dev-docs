@@ -22,6 +22,13 @@ let CBUUIDCharacteristicObservationScheduleString: String
 
 Data representing the observation schedule for a characteristic.
 
+## See Also
+
+- [Measuring distance between devices using Channel Sounding](measuring-distance-between-devices-using-channel-sounding.md)
+  Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
+- [class CBChannelSoundingProcedureResults](cbchannelsoundingprocedureresults.md)
+- [class CBChannelSoundingSessionConfiguration](cbchannelsoundingsessionconfiguration.md)
+
 
 ---
 

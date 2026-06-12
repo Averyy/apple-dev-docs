@@ -25,10 +25,10 @@ struct Evaluator<Input> where Input : SampleProtocol, Input.ExpectedValue : Deco
 
 #### Overview
 
-Use `Evaluator` to create inline evaluators without defining a custom type. The closure receives the input sample and the [`ModelSubject`](modelsubject.md), providing access to both `.value` and `.transcript`.
+Use Evaluator to create inline evaluators without defining a custom type. The closure receives the input sample and the [`ModelSubject`](modelsubject.md), providing access to both .value and .transcript.
 
 ```swift
-Evaluator<ModelSample<String>> { sample, subject in
+Evaluator { sample, subject in
     let metric = Metric("TitleMatch")
     guard let expected = sample.expected else { return metric.ignore() }
     return subject.value == expected ? metric.passing() : metric.failing()

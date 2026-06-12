@@ -125,6 +125,11 @@ func indexBatch(_ items: [CSSearchableItem]) {
 
 > **Note**: The [`default()`](cssearchableindex/default().md) index doesn’t support batch operations.
 
+## See Also
+
+- [Core Spotlight updates](../Updates/CoreSpotlight.md)
+  Learn about important changes to Core Spotlight.
+
 
 ---
 

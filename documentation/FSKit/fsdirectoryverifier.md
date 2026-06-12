@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: struct
 
-Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
+A tool to detect whether the directory contents changed since the last call to enumerate a directory.
 
 **Availability**:
 - macOS 15.4+
@@ -13,6 +13,10 @@ Redeclaration to avoid circular dependency. Originally declared in `FSVolume.h`.
 ```swift
 struct FSDirectoryVerifier
 ```
+
+#### Overview
+
+Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
 
 ## Topics
 

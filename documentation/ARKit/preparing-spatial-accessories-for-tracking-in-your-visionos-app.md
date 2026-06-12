@@ -26,7 +26,7 @@ Before you start building the accessory model, verify that your spatial accessor
 
 Trackable spatial accessories need to:
 
-- Follow the [`Accessory Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf), paying close attention to the Apple Spatial Accessory and Human Interface Device (HID) protocol sections. The guide covers terminology, components, and how people interact with spatial accessories.
+- Follow the [`Accessory Design Guidelines`](https://developer.apple.comhttps://developer.apple.com/accessories/Accessory-Design-Guidelines.pdf), paying close attention to the Spatial Accessories section. The guide covers terminology, components, and how people interact with spatial accessories.
 - Send HID reports only in response to a direct action from the person using the spatial accessory.
 - Configure an LED constellation, a layout formed on the spatial accessory consisting of LEDs, suitable for visual tracking.
 

@@ -33,8 +33,18 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create compelling visuals in your app by combining graphical effects.
 - [Creating visuals with Music Understanding analysis results](../MusicUnderstanding/create-visuals-using-musicunderstanding-analysis-results.md)
   Create a multiplatform app that presents analysis results from the Music Understanding framework.
+- [Creating a multiview video playback experience in visionOS](../AVKit/creating-a-multiview-video-playback-experience-in-visionos.md)
+  Build an interface that plays multiple videos simultaneously and handles transitions to different experience types gracefully.
+- [Encoding video for offline transcoding](../VideoToolbox/encoding-video-for-offline-transcoding.md)
+  Configure a compression session to transcode video in offline workflows.
+- [Enhancing your app with machine learning-based video effects](../VideoToolbox/enhancing-your-app-with-machine-learning-based-video-effects.md)
+  Add powerful effects to your videos using the VideoToolbox VTFrameProcessor API.
 - [Enriching your text in text views](../UIKit/enriching-your-text-in-text-views.md)
   Support line numbering, section collapsing, inline attachment caching, exclusion paths, text attachments, and text lists in a text view.
+- [Exploring object tracking with ARKit](../visionOS/exploring_object_tracking_with_arkit.md)
+  Find and track real-world objects in visionOS using reference objects you train with Create ML.
+- [Gaussian splats on visionOS](../visionOS/gaussian-splats-on-visionos.md)
+  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 - [Implementing a store in your app using the StoreKit API](../StoreKit/implementing-a-store-in-your-app-using-the-storekit-api.md)
   Offer In-App Purchases and manage entitlements using signed transactions and status information.
 - [Implementing age assurance and permissions](../DeclaredAgeRange/implementing-age-assurance-and-permissions.md)
@@ -61,6 +71,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [Processing Apple Immersive Video with foveation](../ImmersiveMediaSupport/processing-apple-immersive-video-with-foveation.md)
   Reduce a video’s data rate while maintaining high acuity in the center of the imagery by applying foveation to immersive video content.
+- [Recognizing speech in live audio](../Speech/recognizing-speech-in-live-audio.md)
+  Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [Segmenting objects using taps, scribbles or rectangles](../Vision/segmenting-objects-using-taps-scribbles-or-rectangles.md)
   Select objects or regions in a photo using taps, scribbles, or rectangle selection, and generate a segmentation mask using the iterative segmentation API.
 - [Supporting Center Stage front camera in your iOS app](../AVFoundation/supporting-center-stage-front-camera-in-your-ios-app.md)
@@ -1260,6 +1272,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create an entity that tracks and follows head movement in an immersive scene.
 - [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md)
   Build a stereoscopic image by applying textures to the left and right eye in a shader graph material.
+- [Displaying low-latency connected video](../RealityKit/displaying-low-latency-connected-video.md)
+  Render connected camera feeds in visionOS with minimal latency.
 - [Displaying text in visionOS](../visionOS/displaying-text-in-visionOS.md)
   Create styled text in a window using SwiftUI.
 - [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md)

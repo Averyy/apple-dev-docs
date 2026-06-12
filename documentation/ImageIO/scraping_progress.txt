@@ -1,4 +1,4 @@
 Completed scraping Image I/O!
-Total pages scraped: 894
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 895
 Pages failed: 0

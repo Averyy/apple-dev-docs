@@ -20,6 +20,11 @@ var trackingObjects: Set<ARReferenceObject> { get set }
 
 If set, the session will attempt to track the specified objects. When an object is detected an `ARObjectAnchor` will be added to the session.
 
+## See Also
+
+- [var detectionObjects: Set<ARReferenceObject>](arworldtrackingconfiguration/detectionobjects.md)
+  A set of 3D objects that the framework attempts to detect in the user’s environment.
+
 
 ---
 
