@@ -635,7 +635,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 ###### Known Issues
 
-- Saving a virutal machine state with one or more USB devices passed through to a virtual machine may fail.  (174267926) **Workaround:** Disconnect any passed through USB devices before saving the state of a virtual machine.
+- Saving a virtual machine state with one or more USB devices passed through to a virtual machine may fail.  (174267926) **Workaround:** Disconnect any passed through USB devices before saving the state of a virtual machine.
 - If an App uses `AccessoryAccess` framework within a Virtualization framework to launch a virtual machine, and if you assign both the Apple Keyboard (A1242 or A1243) and Apple Mouse (A1152) to that app and subsequently un-assign the mouse, then the virtual machine might crash.  (174794802)
 - A virtual machine might crash during restore if a USB mass storage device was hot-plugged before the virtual machine was saved but is not attached during the restore.  (177528319)
 - `AAUSBAccessoryManager registerListener:withMatchingCriteria:completionHandler:` does not work with a non-empty matching criteria array.  (177662539) **Workaround:** Use an empty matching criteria array to listen for all USB devices and filter manually.
@@ -657,6 +657,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 ###### Known Issues
 
 - Writing Tools on macOS might stop working after you use Describe Your Change.  (174926739) **Workaround:** Restart your Mac, or force quit Writing Tools using Activity Monitor.
+
+##### Xcode
+
+###### Known Issues
+
+- If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
 
 ##### Xnu
 

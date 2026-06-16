@@ -254,7 +254,7 @@ NavigationView {
 Use shapes in a [`background(_:alignment:)`](https://developer.apple.com/documentation/SwiftUI/View/background(_:alignment:)) or [`overlay(_:alignment:)`](https://developer.apple.com/documentation/SwiftUI/View/overlay(_:alignment:)) to draw these instead. (53067530)
 
 - SwiftUI APIs deprecated in previous betas are now removed. (52587863)
-- The `identified(by:)` method on the [`Collection`](https://developer.apple.com/documentation/Swift/Collection) protocol is deprecated in favor of dedicated [`init(_:id:rowContent:)`](https://developer.apple.com/documentation/SwiftUI/List/init(_:id:rowContent:)-4s0aj) and `init(_:id:content:)` initializers. (52976883, 52029393) The retroactive conformance of [`Int`](https://developer.apple.com/documentation/Swift/Int) to the Identifiable protocol is removed. Change any code that relies on this conformance to pass .self to the id parameter of the relevant initializer. Constant ranges of Int continue to be accepted: ```swift
+- The `identified(by:)` method on the [`Collection`](https://developer.apple.com/documentation/Swift/Collection) protocol is deprecated in favor of dedicated [`init(_:id:rowContent:)`](https://developer.apple.com/documentation/SwiftUI/List/init(_:id:rowContent:)-4s0aj) and [`init(_:id:content:)`](https://developer.apple.com/documentation/SwiftUI/ForEach/init(_:id:content:)) initializers. (52976883, 52029393) The retroactive conformance of [`Int`](https://developer.apple.com/documentation/Swift/Int) to the Identifiable protocol is removed. Change any code that relies on this conformance to pass .self to the id parameter of the relevant initializer. Constant ranges of Int continue to be accepted: ```swift
 List(0..<5) {
   Text("Rooms")
 }

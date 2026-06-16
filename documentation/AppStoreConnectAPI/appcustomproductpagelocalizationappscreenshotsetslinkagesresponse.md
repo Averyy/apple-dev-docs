@@ -6,7 +6,7 @@
 A response containing the resource identifiers of screenshot sets associated with a custom product page localization.
 
 **Availability**:
-- App Store Connect API ?+ - Deprecated
+- App Store Connect API 3.6+
 
 ## Declaration
 

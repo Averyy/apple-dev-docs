@@ -26,6 +26,8 @@ If the status bar is horizontal, the value of this property is the width of the 
   A status item length that is equal to the status bar’s thickness.
 - [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
+- [var view: NSView?](nsstatusitem/view.md)
+  The custom view the status item displays at its position in the status bar.
 
 
 ---

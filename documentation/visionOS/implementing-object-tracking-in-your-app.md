@@ -134,7 +134,7 @@ The reference object file contains the machine learning model you trained, packa
 
 Use the Reference Object Compiler in Xcode to remove the USDZ data from the reference object file during the build process. Select your project in Xcode, click the Build Settings tab, and enable the Strip USDZ Files from Reference Object option. This setting contains the `REFERENCEOBJECT_STRIP_USDZ` build option. The default setting of the option is `No`, so Xcode copies any reference object files you add to the project as-is unless you change the setting.
 
-![An Xcode screenshot of the Build Settings pane showing the Remove USDZ files from Reference Object option enabled.](https://docs-assets.developer.apple.com/published/0d75053c5b7292d5a5af7e7d9e926235/stripping-usd%402x.png)
+![An Xcode screenshot of the Build Settings pane showing the Remove USDZ files from Reference Object option enabled.](https://docs-assets.developer.apple.com/published/8fdc28da6c093a234be75a3079c5119f/stripping-usd%402x.png)
 
 #### Integrate the Reference Object File Into Your App
 

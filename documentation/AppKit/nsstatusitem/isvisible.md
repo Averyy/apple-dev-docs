@@ -28,6 +28,8 @@ This property returns [`true`](https://developer.apple.com/documentation/Swift/t
   A status item length that is equal to the status bar’s thickness.
 - [class let variableLength: CGFloat](nsstatusitem/variablelength.md)
   A status item length that dynamically adjusts to the width of its contents.
+- [var view: NSView?](nsstatusitem/view.md)
+  The custom view the status item displays at its position in the status bar.
 
 
 ---

@@ -34,23 +34,25 @@ Another option is to install from the command line:
 With the Metal Toolchain installed, use `xcrun` with `coreai-build` to compile your model for iOS:
 
 ```shell
-% xcrun coreai-build compile MyModel.aimodel --platform iOS --output compiled/
+% xcrun coreai-build compile MyModel.aimodel --platform iOS --min-deployment-version 27.0 --output compiled/
 ```
 
-`coreai-build` outputs one compiled `.aimodelc` file per device architecture, using the input model’s filename as the prefix. For example, compiling `MyModel.aimodel` produces files named `MyModel.<arch>.aimodelc`, where `<arch>` is the device architecture identifier returned by [`deviceArchitectureName`](aimodel/devicearchitecturename.md) at runtime.
+`coreai-build` outputs one compiled `.aimodelc` file per device architecture, using the input model’s filename as the prefix. For example, compiling `MyModel.aimodel` produces files named `MyModel.<arch>.aimodelc`, where `<arch>` is the device architecture identifier returned by [`deviceArchitectureName`](aimodel/devicearchitecturename.md) at runtime. Each compiled `.aimodelc` works on any OS version at or above the minimum deployment version you pass to `coreai-build`.
 
 By default, Core AI selects the compute units that deliver the best performance for the model and platform. To override, pass `--preferred-compute`. For the available values, the minimum deployment version, the target architecture, and other options, run `coreai-build compile --help`. For background on compute unit configuration, see the *Choose how Core AI specializes your model* section of [`Managing model specialization and caching`](managing-model-specialization-and-caching.md).
 
 #### Load a Compiled Model on Device
 
-At runtime, your app queries the device architecture to pick the matching compiled asset. Use [`deviceArchitectureName`](aimodel/devicearchitecturename.md) to read the architecture string for the current device, then build the asset name to load:
+Ahead-of-time compilation produces one `.aimodelc` per supported device architecture, but each device only needs the variant that matches its own architecture. It’s recommended to host the compiled assets remotely and download the matching variant to the device at runtime, because each device only uses one of them. The [`Background Assets`](https://developer.apple.com/documentation/BackgroundAssets) framework can manage downloads, installs, and updates for your hosted model files.
+
+At runtime, query the device architecture to identify which `.aimodelc` to fetch. Use [`deviceArchitectureName`](aimodel/devicearchitecturename.md) to read the architecture string for the current device, then build the file name that matches the asset on your server:
 
 ```swift
 let arch = AIModel.deviceArchitectureName
 let assetName = "MyModel.\(arch).aimodelc"
 ```
 
-To load a compiled `.aimodelc` asset, use [`init(contentsOf:options:)`](aimodel/init(contentsof:options:).md). This is the same API you use to load `.aimodel` files, so you don’t need to change your loading code when you adopt ahead-of-time compilation. Use the default options, or specify options that match the compute units you used at compile time.
+To load the downloaded `.aimodelc` asset, use [`init(contentsOf:options:)`](aimodel/init(contentsof:options:).md). This is the same API you use to load `.aimodel` files, so you don’t need to change your loading code when you adopt ahead-of-time compilation. Use the default options, or specify options that match the compute units you used at compile time.
 
 Even with ahead-of-time compilation, the compiled asset still requires some specialization on the device. The amount of compilation that remains depends on the model and the compute units it uses. For more information on specialization, see [`Managing model specialization and caching`](managing-model-specialization-and-caching.md).
 

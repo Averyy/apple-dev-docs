@@ -325,7 +325,73 @@ non-copyable Swift types (`~Copyable`). If a C++ type has a valid copy
 constructor, it is still possible to make it non-copyable in Swift by annotating
 it with a `SWIFT_NONCOPYABLE` macro.
 
-Some C++ types are always passed around using a pointer or a reference in C++.
+For example, this `FileDescriptor` has an implicit copy constructor. Annotating it with `SWIFT_NONCOPYABLE`
+makes Swift import it as `~Copyable`, while leaving the type copyable in C++.
+
+```c++
+struct SWIFT_NONCOPYABLE FileDescriptor {
+  FileDescriptor(const char *path);
+  ~FileDescriptor();
+};
+```
+
+Class templates may need more control over how copyability is determined for each specialization. 
+Consider this `ResourceWrapper`, which provides a copy constructor
+that copies its underlying resource:
+
+```c++
+template <typename T>
+struct ResourceWrapper {
+  T resource;
+  ResourceWrapper(const ResourceWrapper &other) : resource(other.resource) {}
+  ResourceWrapper(ResourceWrapper &&other) = default;
+};
+```
+
+By default, Swift imports every specialization of `ResourceWrapper`
+as `Copyable`, since it has a copy constructor.
+Applying `SWIFT_NONCOPYABLE` has the opposite effect: every specialization gets
+imported as `~Copyable`.
+
+Alternatively, there are two ways to make `ResourceWrapper`'s copyability
+depend on the template arguments.
+
+**1. Constrain the copy constructor with a [`requires` clause](https://en.cppreference.com/cpp/language/requires) (since C++20).** 
+This is the idiomatic C++ approach and is preferred when concepts are available. 
+Instantiations of `ResourceWrapper` where `std::is_copy_constructible_v<T>` is true will be imported as `Copyable`, and as `~Copyable` otherwise:
+
+```c++
+template <typename T>
+struct ResourceWrapper {
+  T resource;
+  ResourceWrapper(const ResourceWrapper &other) requires std::is_copy_constructible_v<T>
+    : resource(other.resource) {}
+  ResourceWrapper(ResourceWrapper &&other) = default;
+};
+```
+
+**2. Annotate the template with `SWIFT_COPYABLE_IF`.** 
+When `requires` is not an option, you can annotate the template 
+with `SWIFT_COPYABLE_IF` and list the template parameters that 
+determine copyability. 
+The specialization is imported as `Copyable` only when every listed parameter is
+itself imported as `Copyable`:
+
+```c++
+template <typename T>
+struct SWIFT_COPYABLE_IF(T) ResourceWrapper {
+  T resource;
+  ResourceWrapper(const ResourceWrapper &other) : resource(other.resource) {}
+  ResourceWrapper(ResourceWrapper &&other) = default;
+};
+```
+
+For multiple parameters, list each one that participates. For example:
+`SWIFT_COPYABLE_IF(T1, T2)`.
+
+All of the above describes how Swift imports a C++ type as a value type. 
+Some C++ types, however, are always passed around using a pointer 
+or a reference.
 As such it might not make sense to map them to value types in Swift. These
 types can be annotated in C++ to instruct the Swift compiler to map them to
 [reference types in Swift instead](#mapping-c-types-to-swift-reference-types).
@@ -1450,6 +1516,69 @@ owned/guaranteed calling conventions. The C++ callers must guarantee that `x` is
 Note that functions returning a shared reference type such as `returnSharedObject` transfer the ownership to the caller.
 The C++ caller of this function is responsible for releasing the object.
 
+#### Bridging Smart Pointers to Shared Reference Types
+
+C++ codebases often pass and store reference-counted objects through smart pointers. The `SWIFT_REFCOUNTED_PTR` annotation makes such smart pointers ergonomic in Swift by:
+
+- importing C++ APIs that take or return the smart pointer **by value** as if they used the underlying reference type, and
+- introducing an `asReference` property that converts to the underlying Swift reference type.
+
+Its argument names an accessor that returns a raw pointer (or lvalue reference) to the wrapped object — a member function name prefixed with `.`, or a free function. The accessor's return type determines the underlying reference type, which must be a `SWIFT_SHARED_REFERENCE`, and the accessor must not change the reference count.
+
+The smart pointer must also provide a constructor taking a raw pointer or an lvalue reference to the pointee. The constructor must retain its argument (taken at `+0`). If both forms exist, Swift selects the pointer-taking constructor for implicit bridging.
+
+For example:
+
+```c++
+class SharedObject : IntrusiveReferenceCounted<SharedObject> {
+public:
+    void doSomething();
+    void retain();
+    void release();
+} SWIFT_SHARED_REFERENCE(.retain, .release);
+
+template <class T>
+struct SWIFT_REFCOUNTED_PTR(.getPtr) Ref {
+    Ref(T *_Nonnull ptr);
+    T *_Nonnull getPtr() const;
+
+    Ref(const Ref& r);
+    Ref(Ref&& r);
+    Ref& operator=(const Ref& r);
+    Ref& operator=(Ref&& r);
+    ~Ref();
+};
+
+using RefOfShared = Ref<SharedObject>;
+```
+
+Functions taking or returning the smart pointer by value are bridged:
+
+```c++
+RefOfShared makeRef();
+void useRef(RefOfShared r);
+```
+
+```swift
+let obj: SharedObject = makeRef()   // makeRef() returns SharedObject in Swift
+useRef(obj)                         // useRef takes SharedObject in Swift
+```
+
+Functions that take the smart pointer by reference (`Ref<T>&`, `const Ref<T>&`, or `Ref<T>&&`) are not bridged.
+
+By default, smart pointers are assumed nullable, so `asReference` and bridged signatures use optional reference types. If both the constructor's parameter and the accessor's return type are `_Nonnull`, Swift treats the smart pointer as non-null and bridged signatures use the underlying reference type directly.
+
+For class templates, the annotation applies to each concrete instantiation, not to the template pattern itself.
+
+Conversions are available in Swift with `asReference` and the smart pointer's initializer:
+
+```swift
+func f(_ r: RefOfShared) {
+    let obj: SharedObject = r.asReference
+    let r2 = RefOfShared(obj)
+}
+```
+
 ### Unsafe Reference Types
 
 The `SWIFT_UNSAFE_REFERENCE` annotation macro has the same effect as `SWIFT_IMMORTAL_REFERENCE`
@@ -2174,9 +2303,11 @@ that are outlined in the documentation above.
 | `SWIFT_IMMORTAL_REFERENCE` | [Immortal Reference Types](#immortal-reference-types) |
 | `SWIFT_SHARED_REFERENCE` | [Shared Reference Types](#shared-reference-types) |
 | `SWIFT_UNSAFE_REFERENCE` | [Unsafe Reference Types](#unsafe-reference-types) |
+| `SWIFT_REFCOUNTED_PTR` | [Bridging Smart Pointers to Shared Reference Types](#bridging-smart-pointers-to-shared-reference-types) |
 | `SWIFT_RETURNS_INDEPENDENT_VALUE` | [Annotating Methods Returning Independent References or Views](#annotating-methods-returning-independent-references-or-views) |
 | `SWIFT_MUTATING` | [Constant Member Functions Must Not Mutate the Object](#constant-member-functions-must-not-mutate-the-object) |
 | `SWIFT_NONCOPYABLE` | [C++ Structures and Classes are Value Types by Default](#c-structures-and-classes-are-value-types-by-default) |
+| `SWIFT_COPYABLE_IF` | [C++ Structures and Classes are Value Types by Default](#c-structures-and-classes-are-value-types-by-default) |
 | `SWIFT_SELF_CONTAINED` | [Annotating C++ Structures or Classes as Self Contained](#annotating-c-structures-or-classes-as-self-contained) |
 | `SWIFT_PRIVATE_FILEID` | [Accessing Private C++ Members in Swift](#accessing-private-c-members-in-swift) |
 

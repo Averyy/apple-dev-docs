@@ -59,6 +59,9 @@ For design guidance, see [`Human Interface Guidelines > Apple Pay`](https://deve
   Create your Apple Pay merchant ID and certificates, and verify your domain.
 - [Maintaining Your Environment](maintaining-your-environment.md)
   Prevent interruptions in your Apple Pay service by keeping certificates and domain verification current.
+### Apple Pay merchandising
+- [Integrating the Apple Pay merchandising component](integrating-the-apple-pay-merchandising-component.md)
+  Display Apple Pay installment payment options and merchandising information to customers using the Apple Pay Merchandising web component.
 ### Apple order tracking button
 - [Adding a Track with Apple Wallet button](adding-a-track-with-apple-wallet-button.md)
   Configure and style an Apple Wallet Button to match your website.

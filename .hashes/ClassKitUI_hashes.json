@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-12T07:46:03.066428",
+    "last_updated": "2026-06-16T07:44:47.446242",
     "total_pages": 24,
-    "session_id": "2026-06-12T07:46:00.343527"
+    "session_id": "2026-06-16T07:44:44.844093"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ClassKitUI.json": {
       "hash": "2fd7977fa08799a0d16403637c9e945f70f0e34f24ef6d9a1bdc6698e8805d90",
-      "last_checked": "2026-06-12T07:46:00.782660",
+      "last_checked": "2026-06-16T07:44:45.127073",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"6cb03aef06b26b712651198dfc426da1\"",
       "file_path": "documentation/ClassKitUI/ClassKitUI.md"
     },
     "https://developer.apple.com/documentation/ClassKitUI": {
       "hash": "2fd7977fa08799a0d16403637c9e945f70f0e34f24ef6d9a1bdc6698e8805d90",
-      "last_checked": "2026-06-12T07:46:00.662560",
+      "last_checked": "2026-06-16T07:44:45.035712",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"6cb03aef06b26b712651198dfc426da1\"",
       "file_path": "documentation/ClassKitUI/ClassKitUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentsubmissionbutton.json": {
       "hash": "4a2476dc5407b70459c61b465b196e7df14f925ed64a836e6622083ac2067ae3",
-      "last_checked": "2026-06-12T07:46:01.210152",
+      "last_checked": "2026-06-16T07:44:45.417514",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"716ec3116d82dd330b5d8f7e3075fa83\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentdeferredmenuelement.json": {
       "hash": "0d9adde18953aeb90f75d1c0e715438400218b16ea8ef290838197957d54582d",
-      "last_checked": "2026-06-12T07:46:01.344538",
+      "last_checked": "2026-06-16T07:44:45.595464",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"6d06a14a4b60949d28b91c228e72720d\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentmenuitem.json": {
       "hash": "f1a0d9e3028915b0f1f49b12969246ec69f81a1991b929b6939a3ecb05366c5b",
-      "last_checked": "2026-06-12T07:46:01.453534",
+      "last_checked": "2026-06-16T07:44:45.786388",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"a751cf61f00e2a6e27138a6d7b6775a5\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel.json": {
       "hash": "ee39b35606136fa0b35f0be54d30ec3420e18455ef6a3f86f3791bccae1dea18",
-      "last_checked": "2026-06-12T07:46:01.587282",
+      "last_checked": "2026-06-16T07:44:45.963355",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"ea7e2bc15df6e0fc493fdc4e94c822d1\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentlabel.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentsubmissionbutton/init(documenturl:).json": {
       "hash": "217e0f72fe4a86c4748f2bbd33d0c463f05f47ed1dd7b90a1fdb719fc35b4d38",
-      "last_checked": "2026-06-12T07:46:01.740215",
+      "last_checked": "2026-06-16T07:44:46.145941",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"c13cfed5bd8b43ad5bcad55e34f121bd\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentsubmissionbutton/init-documenturl.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentdeferredmenuelement/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).json": {
       "hash": "91374e8f94834fdfaeedf136f909c1ea850fc70b98325228c89eec28cfb92a3f",
-      "last_checked": "2026-06-12T07:46:02.106258",
+      "last_checked": "2026-06-16T07:44:46.331345",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"d822dcd8ab0c6ca9b51edda2be12b7b1\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentdeferredmenuelement/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentmenuitem/init(documenturl:willsubmit:didsubmit:willwithdraw:didwithdraw:).json": {
       "hash": "60bb2e154d3619018bd7ebcf8ad7ed98eb974601c5607482e2fb87ba6bc2d3c1",
-      "last_checked": "2026-06-12T07:46:02.471561",
+      "last_checked": "2026-06-16T07:44:46.496954",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"5958022551224d2123b740f3145a6c5d\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentmenuitem/init-documenturlwillsubmitdidsubmitwillwithdrawdidwithdraw.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/role.json": {
       "hash": "b4ffa6eac6d1d91dcf8142401872e438535084fb8e2792a9636c341d3cb9a051",
-      "last_checked": "2026-06-12T07:46:02.650462",
+      "last_checked": "2026-06-16T07:44:46.668289",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"ca3161bc648e45cc5807c1e4cec99aa5\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentlabel/role.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/init(role:documenturl:).json": {
       "hash": "448583f5bee8761476a2f4be1d7350459bc6ec711acffe023504aa2358eeddaf",
-      "last_checked": "2026-06-12T07:46:02.754894",
+      "last_checked": "2026-06-16T07:44:46.851493",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"d88e0fbf7ff7a5a848baa4022053a1be\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentlabel/init-roledocumenturl.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/role/date.json": {
       "hash": "7a43a82611767b40220e55d45a74539eb62434c2000042149b7e4995d97ce0ad",
-      "last_checked": "2026-06-12T07:46:02.931033",
+      "last_checked": "2026-06-16T07:44:47.139372",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"7a31578aec3c2d7088b4fe2afb9ed3b7\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentlabel/role/date.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/classkitui/assigneddocumentlabel/role/status.json": {
       "hash": "2908e0a8c54d4d8df835042a1c5e50d8d52be6aec0cc799205b9e1257dbdaf11",
-      "last_checked": "2026-06-12T07:46:03.063130",
+      "last_checked": "2026-06-16T07:44:47.428566",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:46:00.343527",
+      "session_id": "2026-06-16T07:44:44.844093",
       "etag": "W/\"242320325c691a538641027195006f30\"",
       "file_path": "documentation/ClassKitUI/assigneddocumentlabel/role/status.md"
     },

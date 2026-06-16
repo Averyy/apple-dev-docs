@@ -1,4 +1,4 @@
-# watchOS 26.6 Beta Release Notes
+# watchOS 26.6 Beta 2 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,11 +6,20 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26.6 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.6 beta. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
+The watchOS 26.6 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.6 beta 2. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
 
-##### General
+##### Healthkit
 
-There are no new release notes for this software update.
+###### Resolved Issues
+
+- Fixed: Authorization Screen not displaying when requesting `HKQuantityTypeIdentifierBloodPressureDiastolic` or `HKQuantityTypeIdentifierBloodPressureSystolic`.  (177652061)
+- Fixed: Temporally-weighted average statistics queries for discrete quantity types such as Resting Heart Rate may return erroneously high values when samples overlap in time.  (178157672)
+
+##### Storekit
+
+###### Resolved Issues
+
+- Fixed: `SKTestSessions` does not properly connect to the test environment when using Simulator, causing test actions to fail.  (174738526) (FB22500243)
 
 ## See Also
 

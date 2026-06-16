@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-12T07:45:22.488192",
+    "last_updated": "2026-06-16T07:43:59.716180",
     "total_pages": 158,
-    "session_id": "2026-06-12T07:45:16.727358"
+    "session_id": "2026-06-16T07:43:54.839809"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WirelessInsights.json": {
       "hash": "6a911aa1aa98db49d214dcd3c35616d0571e766a7026285eb6385940e434c613",
-      "last_checked": "2026-06-12T07:45:16.982099",
+      "last_checked": "2026-06-16T07:43:55.152726",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"9e4a16d863ae84052163dc45512da1c4\"",
       "file_path": "documentation/WirelessInsights/WirelessInsights.md"
     },
     "https://developer.apple.com/documentation/WirelessInsights": {
       "hash": "6a911aa1aa98db49d214dcd3c35616d0571e766a7026285eb6385940e434c613",
-      "last_checked": "2026-06-12T07:45:16.882273",
+      "last_checked": "2026-06-16T07:43:55.042696",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"9e4a16d863ae84052163dc45512da1c4\"",
       "file_path": "documentation/WirelessInsights/WirelessInsights.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionprovider.json": {
       "hash": "297caf2641b954aacbcf975034325e452f9a64abf1ef25cf76f6fd7419d262db",
-      "last_checked": "2026-06-12T07:45:17.245254",
+      "last_checked": "2026-06-16T07:43:55.380214",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"44310119c07a6cdff272f13cc334d272\"",
       "file_path": "documentation/WirelessInsights/servicepredictionprovider.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionprovider/init().json": {
       "hash": "1cfeba9c77207cb4c618dbaa83cdb34243c12591d339ad2884322ac42b4e1271",
-      "last_checked": "2026-06-12T07:45:17.613209",
+      "last_checked": "2026-06-16T07:43:55.548462",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"3cb350136306df8195f0a691f29a740b\"",
       "file_path": "documentation/WirelessInsights/servicepredictionprovider/init.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionprovider/servicepredictions.json": {
       "hash": "4bb52670e009c9c38639b4ae85f0980196a2fb8db17a968b3ab2d7c6fc8d29f4",
-      "last_checked": "2026-06-12T07:45:17.970412",
+      "last_checked": "2026-06-16T07:43:55.695462",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"b8565a0c54512bef2ab870520459e5f9\"",
       "file_path": "documentation/WirelessInsights/servicepredictionprovider/servicepredictions.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction.json": {
       "hash": "2097603d1c64946e4133770aac00bd2f33f02a1b445e058d7f79bcb2e447f3ae",
-      "last_checked": "2026-06-12T07:45:18.291305",
+      "last_checked": "2026-06-16T07:43:55.851107",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"5cf71c8fb5079b02beeb3830f7bb4f8f\"",
       "file_path": "documentation/WirelessInsights/serviceprediction.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionerror.json": {
       "hash": "819c08e4c80bae3fc66684817483c4265f0bb397c20d9f0f4d6902152abe0292",
-      "last_checked": "2026-06-12T07:45:18.408189",
+      "last_checked": "2026-06-16T07:43:56.154611",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"360e8a0763a21aff7608659da4c56cef\"",
       "file_path": "documentation/WirelessInsights/servicepredictionerror.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.property.json": {
       "hash": "14c1c70b7af7c73456a592e969c392c300d2b5e94981eefd0f1d72f42f8fc394",
-      "last_checked": "2026-06-12T07:45:18.594945",
+      "last_checked": "2026-06-16T07:43:56.272396",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"4d40ade1740c41bb51428705b556ee20\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swiftproperty.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum.json": {
       "hash": "4659a7ccf7ebadc0c228429e655b10ed552f091175d0588763a4bf1caed01a0e",
-      "last_checked": "2026-06-12T07:45:18.795691",
+      "last_checked": "2026-06-16T07:43:56.443349",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"c24e6ee0c3e998c2911bd94c84ca38c2\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swiftenum.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/predictedstarttime.json": {
       "hash": "dcdd6eb7c6bddaf521645290bd5154af98f0ed0e7225ffd028f606a961351e6c",
-      "last_checked": "2026-06-12T07:45:18.948688",
+      "last_checked": "2026-06-16T07:43:56.562426",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"452cc0e20db0c68e20b243bf12e4a52e\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/predictedstarttime.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/predictedinterval.json": {
       "hash": "4be52ea287a830f65229009c5b11740460d2c4c6470593c01b9744dc975ec29b",
-      "last_checked": "2026-06-12T07:45:19.144837",
+      "last_checked": "2026-06-16T07:43:56.718481",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"8d10f71f4a9a20d1280ef53acf033946\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/predictedinterval.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/quantizedinterval.json": {
       "hash": "f53fe45c4e3116df54be4225126c1960277369fbdc82fcb46a8e0a9135addb6a",
-      "last_checked": "2026-06-12T07:45:19.301227",
+      "last_checked": "2026-06-16T07:43:56.913732",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"6c803287a12718247dd6734218e28fc5\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/quantizedinterval.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidencescore-swift.property.json": {
       "hash": "c8fa027eb0a1a49034e548e57780bd4dbd8c422c1884fa5827c647127ee99470",
-      "last_checked": "2026-06-12T07:45:19.420639",
+      "last_checked": "2026-06-16T07:43:57.068788",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"fa662bc96322245ad141cab1ab9390f5\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidencescore-swiftproperty.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidencescore-swift.struct.json": {
       "hash": "f78fe70fdcc760379adb64939a968a657861ed044b6132506699689b718d317d",
-      "last_checked": "2026-06-12T07:45:19.623552",
+      "last_checked": "2026-06-16T07:43:57.180302",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"55390a0c2725b10cd794c41729df307a\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidencescore-swiftstruct.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence.json": {
       "hash": "a9d11147fa5cb8b5f9f303107a4d214b473f0deeb6602aa9d8ae30e0fdc32683",
-      "last_checked": "2026-06-12T07:45:19.746426",
+      "last_checked": "2026-06-16T07:43:57.304576",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"a88641513253c18ca6f5eeedb9652d65\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionerror/unsupporteddevice.json": {
       "hash": "df8d88e03f4adbcaae0be8401ff1977b0dae0cf35b70f029f443c40e3d4fb6ce",
-      "last_checked": "2026-06-12T07:45:19.919032",
+      "last_checked": "2026-06-16T07:43:57.451776",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"f8e4c699d1feecc8b1b597c83dcb2c44\"",
       "file_path": "documentation/WirelessInsights/servicepredictionerror/unsupporteddevice.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/servicepredictionerror/connectionerror.json": {
       "hash": "5300aacc5cbbedade77c194a924ef3c3233a97edb7c314a34f2e9ce3d02dba79",
-      "last_checked": "2026-06-12T07:45:20.033831",
+      "last_checked": "2026-06-16T07:43:57.609040",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"1813a9bd7648c3c8121909fe4cd38cdb\"",
       "file_path": "documentation/WirelessInsights/servicepredictionerror/connectionerror.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/high.json": {
       "hash": "105cc7080dd93ec2a6c04d5c79ac8706dcb6df2e9acecfaece0832275770f524",
-      "last_checked": "2026-06-12T07:45:20.227425",
+      "last_checked": "2026-06-16T07:43:57.909355",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"11f6271ffbd1947670ee7787f28ab93c\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swift.enum/high.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/medium.json": {
       "hash": "82c52baa1c0c4c02e4bd4b28d732ae0a2f40a695812744084e5a836237fe6980",
-      "last_checked": "2026-06-12T07:45:20.407583",
+      "last_checked": "2026-06-16T07:43:58.093789",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"0cbd9d2f26e0c3d297cdf621f0e44489\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swift.enum/medium.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/impact-swift.enum/low.json": {
       "hash": "c9816ce6ed192bc70ee41aaeb0c488f46113d68835fa4af97f6ff83d59373655",
-      "last_checked": "2026-06-12T07:45:20.586935",
+      "last_checked": "2026-06-16T07:43:58.215517",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"2ebdde880bc3ed2ed868d78a708e3919\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/impact-swift.enum/low.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/quantizedinterval/long.json": {
       "hash": "783ebdeea36dd2164223b9616b393ff3062624e16c877b85ded2a2289bfa9878",
-      "last_checked": "2026-06-12T07:45:20.776130",
+      "last_checked": "2026-06-16T07:43:58.343287",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"dbbade4b2d6d71818bd7f165e9536805\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/quantizedinterval/long.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/quantizedinterval/medium.json": {
       "hash": "0683b8c42b6fa0beac91c09d7547c9626b015844fd121e437698e4f5ad56fbef",
-      "last_checked": "2026-06-12T07:45:20.940237",
+      "last_checked": "2026-06-16T07:43:58.521658",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"6c9fec4cffadb6bb292002922863c18a\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/quantizedinterval/medium.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/quantizedinterval/short.json": {
       "hash": "4c7586363bfd923eb4f55011d285552b5fe71451657e9f02b4558db3a8bffb40",
-      "last_checked": "2026-06-12T07:45:21.126751",
+      "last_checked": "2026-06-16T07:43:58.651036",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"45ca3a4675c2f18859d76a4fbdeb0f1f\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/quantizedinterval/short.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/quantizedinterval/minimal.json": {
       "hash": "8cce7a1cb388ebdf4fcf5b83d5f17fcfb926b760ed62369073bc0966627dd5ac",
-      "last_checked": "2026-06-12T07:45:21.249501",
+      "last_checked": "2026-06-16T07:43:58.853045",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"de7608939cde645117becdea88876401\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/quantizedinterval/minimal.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidencescore-swift.struct/prediction.json": {
       "hash": "0a52a2f2d1ac41e9f91701048782094f009639f1331eee4d1e1fc15665bac78a",
-      "last_checked": "2026-06-12T07:45:21.377199",
+      "last_checked": "2026-06-16T07:43:58.970516",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"f46dbac838e6ec2868eb4c0b9bd2e6e7\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidencescore-swift.struct/prediction.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidencescore-swift.struct/starttime.json": {
       "hash": "4dd0aeb9930765783ce40d647d015e2e727d34f965ea35e2af6220e9c0ec7739",
-      "last_checked": "2026-06-12T07:45:21.807168",
+      "last_checked": "2026-06-16T07:43:59.107783",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"b3f6bf25b14b47a89592508d54f7330c\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidencescore-swift.struct/starttime.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidencescore-swift.struct/duration.json": {
       "hash": "a20cf5ea9a3fb31808e699443b7a0765c3a34298eb30c0d0a8e140a1c3a5073f",
-      "last_checked": "2026-06-12T07:45:21.999199",
+      "last_checked": "2026-06-16T07:43:59.232278",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"4a7e4daf541508a6c1a65ebb40b6d61f\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidencescore-swift.struct/duration.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/high.json": {
       "hash": "bfd0160f78b1dfd936753b3c166827b2b26d432a543f55b2cf803904238507b0",
-      "last_checked": "2026-06-12T07:45:22.182765",
+      "last_checked": "2026-06-16T07:43:59.362920",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"d016f11f702c0d41e892bcbaa0a55fe0\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence/high.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/medium.json": {
       "hash": "312c9d918f06712e9c53921a2624e9f2d87e64f3585896e035877af37cb2ebe2",
-      "last_checked": "2026-06-12T07:45:22.334799",
+      "last_checked": "2026-06-16T07:43:59.568045",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"3a47010738fe24e6c851a5ae1dbf492f\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence/medium.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/wirelessinsights/serviceprediction/confidence/low.json": {
       "hash": "9c19d8fb0d1288488195839362f45fb72e734c5586e82ced46f8c7357f92dc00",
-      "last_checked": "2026-06-12T07:45:22.481963",
+      "last_checked": "2026-06-16T07:43:59.695486",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:45:16.727358",
+      "session_id": "2026-06-16T07:43:54.839809",
       "etag": "W/\"005ac018a3b6b8f9877786e021a547a6\"",
       "file_path": "documentation/WirelessInsights/serviceprediction/confidence/low.md"
     },

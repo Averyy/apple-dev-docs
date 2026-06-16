@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-12T07:43:09.648350",
+    "last_updated": "2026-06-16T07:41:42.034911",
     "total_pages": 575,
-    "session_id": "2026-06-12T07:42:25.613022"
+    "session_id": "2026-06-16T07:40:53.440441"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/iTunesLibrary.json": {
       "hash": "26a8c00356b08cb9edcf0e6551b0de5bf8cc66c1991bd0bc4b23bca12fb7b5de",
-      "last_checked": "2026-06-12T07:42:26.044982",
+      "last_checked": "2026-06-16T07:40:53.729638",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3f0df5c4db1dce7a19dcd064d5fd9c1c\"",
       "file_path": "documentation/iTunesLibrary/iTunesLibrary.md"
     },
     "https://developer.apple.com/documentation/iTunesLibrary": {
       "hash": "26a8c00356b08cb9edcf0e6551b0de5bf8cc66c1991bd0bc4b23bca12fb7b5de",
-      "last_checked": "2026-06-12T07:42:25.934175",
+      "last_checked": "2026-06-16T07:40:53.609874",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3f0df5c4db1dce7a19dcd064d5fd9c1c\"",
       "file_path": "documentation/iTunesLibrary/iTunesLibrary.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary.json": {
       "hash": "336a6a12126999d55add0f42f6b5ed084f48a3ab9ecbc4f5c8d23d86ca232238",
-      "last_checked": "2026-06-12T07:42:26.492047",
+      "last_checked": "2026-06-16T07:40:54.023809",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7874d621255cee202f3877d9a559ebf2\"",
       "file_path": "documentation/iTunesLibrary/itlibrary.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum.json": {
       "hash": "de6cfded3b4d9cc92cc19439da21bef27e2c28f50453bdd9936b1d2b7cd70618",
-      "last_checked": "2026-06-12T07:42:26.661838",
+      "last_checked": "2026-06-16T07:40:54.210330",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"60745b9b91822563d984098c2ab011a6\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist.json": {
       "hash": "682bf6a0b28065f5240dff130362ac5495e3a22bccb4bccc6bcfd63d1cdc3ec5",
-      "last_checked": "2026-06-12T07:42:26.861634",
+      "last_checked": "2026-06-16T07:40:54.364735",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c39417a9ff56b56cbbeda658c5565f1c\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem.json": {
       "hash": "42c64d49943f1f5c9b8966bbe351c10cd20a5383d9d7d92ae391d45b1b746651",
-      "last_checked": "2026-06-12T07:42:27.246910",
+      "last_checked": "2026-06-16T07:40:54.727442",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"54d2ca0bf006fa15bf211ed0e7139a22\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentity.json": {
       "hash": "1a8febbe0a620be62756594eaeb9feed066e9d958292dd1a3eb8f00bba7c35e3",
-      "last_checked": "2026-06-12T07:42:27.428983",
+      "last_checked": "2026-06-16T07:40:54.902862",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b97543d0b2514e67b8f43c19a3f377f5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentity.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartist.json": {
       "hash": "215a87774eb1f5ae547856412ce226011bebc3d4aff8c17157459dde4b8a6a46",
-      "last_checked": "2026-06-12T07:42:27.607332",
+      "last_checked": "2026-06-16T07:40:55.230742",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6507549ddfffc192d3d6575ae734163d\"",
       "file_path": "documentation/iTunesLibrary/itlibartist.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartwork.json": {
       "hash": "3ce914fd4260687fdb17980af2eade60669d6e4b616ee2efc12422281a2713fa",
-      "last_checked": "2026-06-12T07:42:27.803338",
+      "last_checked": "2026-06-16T07:40:55.366476",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3a4374bd73f079351666d24a57414fcf\"",
       "file_path": "documentation/iTunesLibrary/itlibartwork.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo.json": {
       "hash": "1326c8fe3b84d39af68790507609bb1cb7160ae9413d050825687699e269ca1f",
-      "last_checked": "2026-06-12T07:42:28.146315",
+      "last_checked": "2026-06-16T07:40:55.671675",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7d14de9c28364d3a4c1d765d8e0c841e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibinitoptions.json": {
       "hash": "22708054691e1ed749add2e54d960672af30216ce24eca78fef3fe8ff26f6186",
-      "last_checked": "2026-06-12T07:42:29.285103",
+      "last_checked": "2026-06-16T07:40:56.495958",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ae1f477f01bc5f2a877cab3e3122f100\"",
       "file_path": "documentation/iTunesLibrary/itlibinitoptions.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/allmediaitems.json": {
       "hash": "bb48b184e602531be6f1ff1d159f05b08ea9e501442fe56ddf0fd8f4ee019a38",
-      "last_checked": "2026-06-12T07:42:29.623301",
+      "last_checked": "2026-06-16T07:40:56.700979",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c137c2a43cb34e82caebbaf689caf610\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/allmediaitems.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/allplaylists.json": {
       "hash": "469a75ecc132d9b0413793f4016f4ac5e40f20fae4e609164af6677378ef44bb",
-      "last_checked": "2026-06-12T07:42:29.989647",
+      "last_checked": "2026-06-16T07:40:56.993729",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"69556404e896caf4564fe20b5f728e2b\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/allplaylists.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/apimajorversion.json": {
       "hash": "f85684a670cdea21cdf5f5e9b01c6a37df614c038703ae3546de3e1d0683ab8c",
-      "last_checked": "2026-06-12T07:42:30.312826",
+      "last_checked": "2026-06-16T07:40:57.278989",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"331906eb0070ecae0ba41f72c85072f7\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/apimajorversion.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/apiminorversion.json": {
       "hash": "d88aa4c78e464005188b53a190f0527a7c228f20b4a350f83e6358334fdcda96",
-      "last_checked": "2026-06-12T07:42:30.648959",
+      "last_checked": "2026-06-16T07:40:57.624187",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c292ded8f01f7c6bc7a26e328ee2dd06\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/apiminorversion.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/applicationversion.json": {
       "hash": "a2c87e1433a17c2c02f2f80e2369274e5932d1d861e50250abd62428f6b300fc",
-      "last_checked": "2026-06-12T07:42:30.828382",
+      "last_checked": "2026-06-16T07:40:57.796672",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"67f646b1c28d8f8824df5960a780573e\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/applicationversion.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/mediafolderlocation.json": {
       "hash": "49e43c4e8a7e21ca4aba29f9447a8d06e21762e3cc493688deef5f070f056198",
-      "last_checked": "2026-06-12T07:42:31.191246",
+      "last_checked": "2026-06-16T07:40:57.940981",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8902e975a135c15c7681ca622b06cb86\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/mediafolderlocation.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/shouldshowcontentrating.json": {
       "hash": "7aae4767526a1f11f1cbd93dd186310450cbbca8e6f3fa3f16c79fd727334c7d",
-      "last_checked": "2026-06-12T07:42:31.378508",
+      "last_checked": "2026-06-16T07:40:58.097798",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"2535197a63f351bf7cd3133d8c15031c\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/shouldshowcontentrating.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/reloaddata().json": {
       "hash": "5274995625850f4ff3dce87d5d0d735463504926eb4a9d592472ebb9efdac872",
-      "last_checked": "2026-06-12T07:42:31.554921",
+      "last_checked": "2026-06-16T07:40:58.409999",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"fefc1688754f71496365980d905851c6\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/reloaddata.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/unloaddata().json": {
       "hash": "b4858dda46f731cbc798e9afa50812c7ec5c18f93e5863869788409193d925ae",
-      "last_checked": "2026-06-12T07:42:31.721502",
+      "last_checked": "2026-06-16T07:40:58.712002",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6105e224e8d959912b45dbdac0362024\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/unloaddata.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/artwork(formediafile:).json": {
       "hash": "74c5b7d97e3380132b6c752e6be8c05badaa5e8ada3dbf2ce980f1825f936e92",
-      "last_checked": "2026-06-12T07:42:32.046279",
+      "last_checked": "2026-06-16T07:40:58.836568",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ae5c0850d89f4d316e83d5f19ce5a284\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/artwork-formediafile.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/features.json": {
       "hash": "d109e5816e6127434908044eec8c071bf4ac01512bb4aeb92f1e95e3baa77367",
-      "last_checked": "2026-06-12T07:42:32.449007",
+      "last_checked": "2026-06-16T07:40:58.992999",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"38d114184899748068c1b473423ce804\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/features.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibexportfeature.json": {
       "hash": "c90e693ae4678bea1e0d02c6233ac863ac156fb9bafbf3d3f4be09c55179e7d2",
-      "last_checked": "2026-06-12T07:42:32.641202",
+      "last_checked": "2026-06-16T07:40:59.112455",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c14f26df1c202a1f27e22cb50117bdec\"",
       "file_path": "documentation/iTunesLibrary/itlibexportfeature.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/musicfolderlocation.json": {
       "hash": "b4e836c4868e6d348a3d462387acef6eec9f3abb86e146944b559c8cb960096e",
-      "last_checked": "2026-06-12T07:42:32.834902",
+      "last_checked": "2026-06-16T07:40:59.260557",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f896eec0a9fddb5fa2421f55b3bad4aa\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/musicfolderlocation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/trackcount.json": {
       "hash": "c7151317d1d4c62b86f6de97a6fd22f3b5a51c398da10996c8e3419e8f8232fa",
-      "last_checked": "2026-06-12T07:42:33.908055",
+      "last_checked": "2026-06-16T07:41:00.312604",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b0a490755d4111e3d9178f97e7d56470\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/trackcount.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/title.json": {
       "hash": "2d38b852def172a8283e865b9d34845864328112f342dce090d83d2e1cd49db6",
-      "last_checked": "2026-06-12T07:42:34.073944",
+      "last_checked": "2026-06-16T07:41:00.481858",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3e84f1c2e504dd311242b9a3272245ab\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/title.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/sorttitle.json": {
       "hash": "af1b4a7b7c3161626fd8c6e8c57162d344b165c78fd51f8a938a31ff8aee2cdf",
-      "last_checked": "2026-06-12T07:42:34.417754",
+      "last_checked": "2026-06-16T07:41:00.676032",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9d2fcc043a41962bb5b0540ffe2d0371\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/sorttitle.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/rating.json": {
       "hash": "72a2b1e6475bc504223e908d8a16b32bbd2bab527a47a0879a5b0aa3ecd407e7",
-      "last_checked": "2026-06-12T07:42:34.582836",
+      "last_checked": "2026-06-16T07:41:00.855464",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ea351a6fda2393646618a6244eee02c7\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/rating.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/isratingcomputed.json": {
       "hash": "e22f940f0289d130983fb38a9933d5364ccd6216c656409ef000acd78b64b60a",
-      "last_checked": "2026-06-12T07:42:34.757225",
+      "last_checked": "2026-06-16T07:41:01.049699",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4a85e8c28a14c5cd395b89d7a8636fc0\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/isratingcomputed.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/isgapless.json": {
       "hash": "e2cda2dbb99923baa77777bfd78b24a26eaee217d00a0afcfe04ce9bd264037c",
-      "last_checked": "2026-06-12T07:42:34.941697",
+      "last_checked": "2026-06-16T07:41:01.194423",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"77cc01dc5f71d248ca32a9488632d3a4\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/isgapless.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/discnumber.json": {
       "hash": "c57b5fade5822aa859911f65721be553ebe1d6c3ff29fe2b8141f3b86bd47a4e",
-      "last_checked": "2026-06-12T07:42:35.122520",
+      "last_checked": "2026-06-16T07:41:01.334529",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c7212a703fed751d28bf33105714d507\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/discnumber.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/disccount.json": {
       "hash": "9695eee3de39742cd859e4c79c16f9621f9d76da2956255240bb90fdc569dfca",
-      "last_checked": "2026-06-12T07:42:35.292454",
+      "last_checked": "2026-06-16T07:41:01.501255",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c440c5a5d9c4761ed16588496f8c133c\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/disccount.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/iscompilation.json": {
       "hash": "fa6853dc309c6cf54ab7a339c1d3fdad8e37254effb60362f35575342a714e55",
-      "last_checked": "2026-06-12T07:42:35.459739",
+      "last_checked": "2026-06-16T07:41:01.632435",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d334725b5ab86f333f8524657183ffa0\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/iscompilation.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/albumartist.json": {
       "hash": "03ba114358c18f7c702be8a346cf39b2ac093e3c517918e4b0c0d408d8ae4260",
-      "last_checked": "2026-06-12T07:42:35.666507",
+      "last_checked": "2026-06-16T07:41:01.822639",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"73a17b204c7a16ece41790ffbdcf3540\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/albumartist.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/sortalbumartist.json": {
       "hash": "6b3585167e890a92f353611da406b8741a38c1fcbf6060ce2d6dee2aa77dbb56",
-      "last_checked": "2026-06-12T07:42:35.852541",
+      "last_checked": "2026-06-16T07:41:01.936593",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f01258ffc410ea447d59f5be8eb3ae10\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/sortalbumartist.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/persistentid.json": {
       "hash": "7243728f583b732b53bda79c03939d245c3053999da94722cf72fea063f8feac",
-      "last_checked": "2026-06-12T07:42:36.040538",
+      "last_checked": "2026-06-16T07:41:02.063150",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"30a924e82bb09d9c2b4938882586a244\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/persistentid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibalbum/artist.json": {
       "hash": "5d1f5e5d6b8fbddda0b895f41a838805721ca45195bc0ec548549dbd8cd0fc9d",
-      "last_checked": "2026-06-12T07:42:36.242068",
+      "last_checked": "2026-06-16T07:41:02.261396",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1794f6958cbf90c4749a4a3a61674508\"",
       "file_path": "documentation/iTunesLibrary/itlibalbum/artist.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/name.json": {
       "hash": "98d0f91573749a00b64abe154c3ede93d69906c687aa07b6d4f22c02b05141fa",
-      "last_checked": "2026-06-12T07:42:36.431284",
+      "last_checked": "2026-06-16T07:41:02.393736",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8700352598272636687705569aa5f48f\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/name.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/items.json": {
       "hash": "2da55b5364aecd35e52f88e912e02337bd26c5e63883ada3979804253bc79095",
-      "last_checked": "2026-06-12T07:42:36.615172",
+      "last_checked": "2026-06-16T07:41:02.529041",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"0901d71d78d64b8a3deb951e5cb09ab6\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/items.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/parentid.json": {
       "hash": "38c45da20b05310a9a918944ae3aa87c5f314046442ca49a5da1fa7cbaaaeca2",
-      "last_checked": "2026-06-12T07:42:36.784795",
+      "last_checked": "2026-06-16T07:41:02.695460",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f9d082572633fd2d5410fde66a352162\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/parentid.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/isprimary.json": {
       "hash": "0c40e5de7208eadeeedc3159674d5cc2bb976b6a3169523a7d3792b8d4d26b4a",
-      "last_checked": "2026-06-12T07:42:36.981796",
+      "last_checked": "2026-06-16T07:41:02.870291",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6726158df690a2e7c9109fd0b347c563\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/isprimary.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/isvisible.json": {
       "hash": "ce940d3655143848fa3d4fc19cd0a2c3d158a5ece2094194fa8765743e7bebba",
-      "last_checked": "2026-06-12T07:42:37.154163",
+      "last_checked": "2026-06-16T07:41:03.049485",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d7c6edf994abb6584fd9a8e032c38339\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/isvisible.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/distinguishedkind.json": {
       "hash": "1e86b6579e6655b88c5939dc915e4836c5dfdafd749d2822273b1182dcec34b8",
-      "last_checked": "2026-06-12T07:42:37.344860",
+      "last_checked": "2026-06-16T07:41:03.237465",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8c29eaddfd7f4505a55d7e2a3f68a0d2\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/distinguishedkind.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/kind.json": {
       "hash": "4c1d1e0aae13878ea267278247eed1beef8a07fef7351e2d6154bdd3f1972baf",
-      "last_checked": "2026-06-12T07:42:37.566408",
+      "last_checked": "2026-06-16T07:41:03.361857",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8c863bb4eef10652f99cfd384d37a499\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/kind.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind.json": {
       "hash": "c613f6aae3b97f897e4ba039c5001411165b3e7996eb98a186495204f8d4f827",
-      "last_checked": "2026-06-12T07:42:37.755889",
+      "last_checked": "2026-06-16T07:41:03.546248",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c195803c3309418f5e5925ed4e4f9c97\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind.json": {
       "hash": "9511619893b289a2a946f4b22a73b60be7479b660780ac0bbe5a7afe3ec77888",
-      "last_checked": "2026-06-12T07:42:37.920531",
+      "last_checked": "2026-06-16T07:41:03.719803",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"bd02c254be86b5554fc4c41586bc2a60\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyallitemsplaylist.json": {
       "hash": "f4d83ce33b853e341a468d1379710a65f8baa9aef1eb9c30d298f47d2e52c493",
-      "last_checked": "2026-06-12T07:42:38.113706",
+      "last_checked": "2026-06-16T07:41:03.862316",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f2fcc14bbd6a82cf281c2d677d6f0d15\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyallitemsplaylist.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertydistinguisedkind.json": {
       "hash": "290f6772480e0cd83edf7a188a703d673403d7c5769bd452890d7b35fadede10",
-      "last_checked": "2026-06-12T07:42:38.278568",
+      "last_checked": "2026-06-16T07:41:03.999283",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d26b579f01a571e03c10aea9e6b9c448\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertydistinguisedkind.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyitems.json": {
       "hash": "7f73414be1ef6f6c19e266f12d196c394d8aec21336f47ddcd7269d0b881c56f",
-      "last_checked": "2026-06-12T07:42:38.458329",
+      "last_checked": "2026-06-16T07:41:04.165322",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"313b95291fa401300a258b074c6f14ff\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyitems.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertykind.json": {
       "hash": "eb826bd433c93ec1c3377d79f81efc5144821df8ce132001d9e2b12ce57c7d2b",
-      "last_checked": "2026-06-12T07:42:38.645552",
+      "last_checked": "2026-06-16T07:41:04.355649",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b358edb0f16df91fd9fed06c1d6f0bfc\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertykind.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyprimary.json": {
       "hash": "5b95896e8405ab23016cd78ed9a6192ae831f175c4bb8b120d0c95f6d88d2c86",
-      "last_checked": "2026-06-12T07:42:39.004013",
+      "last_checked": "2026-06-16T07:41:04.496220",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9199925afe9df69c3537d56a52452b72\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyprimary.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyname.json": {
       "hash": "c26ea4208a12899a694f3cba77efac18eca09473edb6371839f731e65643a7bb",
-      "last_checked": "2026-06-12T07:42:39.163865",
+      "last_checked": "2026-06-16T07:41:04.631735",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f1be4e0fe022ee8524f284a609d93bc1\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyname.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyparentpersistentid.json": {
       "hash": "1342e45ef5bd5a5766fb8573c26f11c4e121f72a3b9c64cfc2a314675421b1cb",
-      "last_checked": "2026-06-12T07:42:39.273954",
+      "last_checked": "2026-06-16T07:41:04.769026",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"53193f2e67f5f59575163b1e7826be2c\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyparentpersistentid.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertyvisible.json": {
       "hash": "6c28984c1e3be64dabd584ed722f907fdadfcfc11a2b665b81e02cf240bba8fa",
-      "last_checked": "2026-06-12T07:42:39.473765",
+      "last_checked": "2026-06-16T07:41:04.969408",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"49a4f91286583cffaf834adb7f5c2438\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertyvisible.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/isallitemsplaylist.json": {
       "hash": "16388335cfa0ae00352c0d984680f686fad313ef8f7ec082d07a10d454464a82",
-      "last_checked": "2026-06-12T07:42:39.613173",
+      "last_checked": "2026-06-16T07:41:05.132898",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4590198229724b6a38a27aceb5a3a06b\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/isallitemsplaylist.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylist/ismaster.json": {
       "hash": "37c61e994ac575fba490c269ad2277a0f4d4259ec52715390db2f25345702787",
-      "last_checked": "2026-06-12T07:42:39.795344",
+      "last_checked": "2026-06-16T07:41:05.324226",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"457e0fd8790e8236858ef80c14f75db3\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylist/ismaster.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistpropertymaster.json": {
       "hash": "e7c8fe23122388920873e1cb3de9d3af41c4c2b40d357989ab902e990d7699c2",
-      "last_checked": "2026-06-12T07:42:39.954713",
+      "last_checked": "2026-06-16T07:41:05.507403",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c1e2f53bf695bb492f08226b907debe0\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistpropertymaster.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/title.json": {
       "hash": "a235d5e30aa4b3d5c56b7a69aa6395a99775bf5e4452f14db88db7fa3a9b4088",
-      "last_checked": "2026-06-12T07:42:40.131703",
+      "last_checked": "2026-06-16T07:41:05.672272",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"16a419ebb955c67a46b3612da886285c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/title.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/sorttitle.json": {
       "hash": "7db7b64b9977839347bbe08831f11cb79f1706718ec1e7d6c16fcfa6886f08c3",
-      "last_checked": "2026-06-12T07:42:40.318826",
+      "last_checked": "2026-06-16T07:41:05.846710",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"15ab8228be31659835ad787b580e6b28\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/sorttitle.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/artist.json": {
       "hash": "63ff0cddf4679abd16d313f5ce6fd9871f0d9817bebb23b3e55a6d33a9208a67",
-      "last_checked": "2026-06-12T07:42:40.452007",
+      "last_checked": "2026-06-16T07:41:06.023333",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"11f2e86026a8329e656f2a61fa821fc5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/artist.md"
     },
@@ -999,15 +999,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/composer.json": {
       "hash": "",
-      "last_checked": "2026-06-12T07:42:40.607149",
+      "last_checked": "2026-06-16T07:41:06.249501",
       "status": "error",
       "error": "HTTP 403"
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/sortcomposer.json": {
       "hash": "120729778067c18a2f769baf4b467e0076f2001ea707cbdb1567338600e1dee2",
-      "last_checked": "2026-06-12T07:42:40.718229",
+      "last_checked": "2026-06-16T07:41:06.357808",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"57cf7db0d14f1730124ef2ae12d66be6\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/sortcomposer.md"
     },
@@ -1021,9 +1021,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/rating.json": {
       "hash": "532d4a105a38b0206d47a667c5992c5574deea1b1c9687dd4e0d5b783d89111f",
-      "last_checked": "2026-06-12T07:42:40.869702",
+      "last_checked": "2026-06-16T07:41:06.537987",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9218aa3c42374821e04b7ebd26f5c795\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/rating.md"
     },
@@ -1037,9 +1037,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/isratingcomputed.json": {
       "hash": "3469b12804cdc048a86cabdf47f1d03a6d43777a632342ca46fbee1f4f5dbcae",
-      "last_checked": "2026-06-12T07:42:41.032941",
+      "last_checked": "2026-06-16T07:41:06.666048",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"45d61c9feac3a7fef7efa8fe7811cf49\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/isratingcomputed.md"
     },
@@ -1053,9 +1053,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/starttime.json": {
       "hash": "c7a603d94dccb7faf7324c24e47c350872a75075faa2a56e5c084bce97558274",
-      "last_checked": "2026-06-12T07:42:41.198839",
+      "last_checked": "2026-06-16T07:41:06.880968",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9d188e9ffeae35c4186f4b822f8dcca4\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/starttime.md"
     },
@@ -1069,9 +1069,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/stoptime.json": {
       "hash": "664c53b8c5b5d1b183d19055982d29f343f1d9dcbfc9f2196c0f8cb3fc445fb3",
-      "last_checked": "2026-06-12T07:42:41.331967",
+      "last_checked": "2026-06-16T07:41:06.991779",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a46b5d8252af59a27356da2f7b4b7e8e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/stoptime.md"
     },
@@ -1085,9 +1085,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/album.json": {
       "hash": "d806f6e6b986585e24cac90eaa6fe6dd51a5ddec66ff5952be643507aa55aebe",
-      "last_checked": "2026-06-12T07:42:41.490976",
+      "last_checked": "2026-06-16T07:41:07.168244",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"448e0d2f9cc6b864c3938081dd2bf41a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/album.md"
     },
@@ -1101,9 +1101,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/genre.json": {
       "hash": "0adef0b1c8c76bd795eff59817f0236a88899312498d802801e8a44a2ac66270",
-      "last_checked": "2026-06-12T07:42:41.653248",
+      "last_checked": "2026-06-16T07:41:07.289400",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"814f4c1500d5e04f77dcadb851fe7f9f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/genre.md"
     },
@@ -1117,9 +1117,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/kind.json": {
       "hash": "50a724d19ac64d1117bc32812a88949595050041383246b5656ca93f7e25a189",
-      "last_checked": "2026-06-12T07:42:41.829253",
+      "last_checked": "2026-06-16T07:41:07.475491",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"866ecd1d404e1c9f56ae54581a8f6331\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/kind.md"
     },
@@ -1133,9 +1133,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/mediakind.json": {
       "hash": "ff9b1631558b1631b4c0d8fd9ced4a9920ca44e5b7feb80e64a118dab2c2698a",
-      "last_checked": "2026-06-12T07:42:41.945123",
+      "last_checked": "2026-06-16T07:41:07.641416",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9af4a24107d10b47e6b3a8c2e9c5f9b4\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/mediakind.md"
     },
@@ -1149,9 +1149,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/totaltime.json": {
       "hash": "edf5f47ed5daff8500406dba5466418caf86e885654db84e9c354146415cc39d",
-      "last_checked": "2026-06-12T07:42:42.103464",
+      "last_checked": "2026-06-16T07:41:07.815806",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ef1e01e597bac21141e307a47815e6dc\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/totaltime.md"
     },
@@ -1165,9 +1165,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/tracknumber.json": {
       "hash": "bdbbebb10774947b9b8d4452aeb0605cb0cb646cbd00d7480135584d17250290",
-      "last_checked": "2026-06-12T07:42:42.236080",
+      "last_checked": "2026-06-16T07:41:07.998361",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"93c0297bbe9d307899748ebb2d073ed1\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/tracknumber.md"
     },
@@ -1181,9 +1181,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/category.json": {
       "hash": "ed25000d8975cb0f5993ad74a3f086310a62027b9c196f6802f71516149c3eb7",
-      "last_checked": "2026-06-12T07:42:42.420390",
+      "last_checked": "2026-06-16T07:41:08.129419",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e1fc1630acdeced8f95e50a110e4fd3c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/category.md"
     },
@@ -1197,9 +1197,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/description.json": {
       "hash": "18c2c11b639f199194dae463c30a0a7d3d259ab54367212e0f93663908fdac40",
-      "last_checked": "2026-06-12T07:42:42.551233",
+      "last_checked": "2026-06-16T07:41:08.247434",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b0537ffb212f788d6279b004a6c4d4d1\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/description.md"
     },
@@ -1213,9 +1213,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/contentrating.json": {
       "hash": "83cc0a60fda40c403389116e30ce46e2b0931c9e314febf4f4ab86a98c3e0bed",
-      "last_checked": "2026-06-12T07:42:42.730721",
+      "last_checked": "2026-06-16T07:41:08.436966",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4474d6010de02ad9af734bfc7e4e8d61\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/contentrating.md"
     },
@@ -1229,9 +1229,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/lyricscontentrating.json": {
       "hash": "ca0fedf067788b34c9a23af9822588191e3e82ff7c6263e934975d00f004c691",
-      "last_checked": "2026-06-12T07:42:42.925574",
+      "last_checked": "2026-06-16T07:41:08.575993",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8b1bd39b25e702ace30990f9897c7233\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/lyricscontentrating.md"
     },
@@ -1245,9 +1245,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/addeddate.json": {
       "hash": "6fb52f5589dcd9dde39aba3e96aa0da2685f5b769ebebaf5c22ddfdff738066c",
-      "last_checked": "2026-06-12T07:42:43.082726",
+      "last_checked": "2026-06-16T07:41:08.748733",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"de4847c93881d54b5c26951c858825ee\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/addeddate.md"
     },
@@ -1261,9 +1261,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/modifieddate.json": {
       "hash": "252ef7e6895fee9e9f2144e8630a330f9f3a4dca5f7ff37abeb0e58ed2e374d8",
-      "last_checked": "2026-06-12T07:42:43.198200",
+      "last_checked": "2026-06-16T07:41:08.926959",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"baaa06ca5f2a4d65bf89398219620355\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/modifieddate.md"
     },
@@ -1277,9 +1277,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/bitrate.json": {
       "hash": "d0ce741d798ad658a189de4d258a949a8f5f26c75d167f9a324b82b79fcb282c",
-      "last_checked": "2026-06-12T07:42:43.337433",
+      "last_checked": "2026-06-16T07:41:09.052609",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ed138df88cd1503489cd19eacbc8d621\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/bitrate.md"
     },
@@ -1293,9 +1293,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/samplerate.json": {
       "hash": "f9d069202a1470befef886bb07116e951e9e5252911a4ecc17b2d4ff71f52a83",
-      "last_checked": "2026-06-12T07:42:43.466978",
+      "last_checked": "2026-06-16T07:41:09.216537",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"170052d2d05b2cea8aa25991bff473bd\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/samplerate.md"
     },
@@ -1309,9 +1309,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/beatsperminute.json": {
       "hash": "ed81ece648d8aa9df690d5a2def95cbd1f68d0c0e948052e49f9c1be7cb009c6",
-      "last_checked": "2026-06-12T07:42:43.607648",
+      "last_checked": "2026-06-16T07:41:09.391580",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"2172ed66c01c8a044e26cbc0048982a9\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/beatsperminute.md"
     },
@@ -1325,9 +1325,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/playcount.json": {
       "hash": "8819f9a189dd7c819dea9525bc5b59e7a0ef7328a0108adf09dd853c1225c269",
-      "last_checked": "2026-06-12T07:42:43.775215",
+      "last_checked": "2026-06-16T07:41:09.672418",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8f17f4023ead9e42aca027e8921ec18b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/playcount.md"
     },
@@ -1341,9 +1341,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/lastplayeddate.json": {
       "hash": "52cb61104daa8e6a8fec24901338eb711e275aaf4fe668adcec30124e28a62e1",
-      "last_checked": "2026-06-12T07:42:43.896055",
+      "last_checked": "2026-06-16T07:41:09.787658",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9d2d3441f71bffa155e60eb866dcc906\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/lastplayeddate.md"
     },
@@ -1357,9 +1357,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/location.json": {
       "hash": "78cee5ffee311bc7dc2aaf33e274e7619d35cba0c745fa051bc2520ee4141c93",
-      "last_checked": "2026-06-12T07:42:44.026465",
+      "last_checked": "2026-06-16T07:41:09.989775",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"757c19b5c899c757778d349e1f2681f0\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/location.md"
     },
@@ -1373,9 +1373,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/locationtype.json": {
       "hash": "e247379a66eb35152233c2cc7650be2f1df73d6850692052931b43c7445e8d55",
-      "last_checked": "2026-06-12T07:42:44.138671",
+      "last_checked": "2026-06-16T07:41:10.171512",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3d0b8635e166a0da85eb4c4a5bc72783\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/locationtype.md"
     },
@@ -1389,9 +1389,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/hasartworkavailable.json": {
       "hash": "4f35dab04a0c89b28defc0c7d732613eb4e72586be194f84d944b4918b3007b0",
-      "last_checked": "2026-06-12T07:42:44.271650",
+      "last_checked": "2026-06-16T07:41:10.356195",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"74a491d435bd6e982ea5478705793bda\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/hasartworkavailable.md"
     },
@@ -1405,9 +1405,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/artwork.json": {
       "hash": "764ca64284452860e60f183907568a72ad8ed32b724c1eddf626a5a2a280b68f",
-      "last_checked": "2026-06-12T07:42:44.425102",
+      "last_checked": "2026-06-16T07:41:10.536556",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"cdfc8d4cf65c1551b7af299b91111749\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/artwork.md"
     },
@@ -1421,9 +1421,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/comments.json": {
       "hash": "ba2900e9e1ab60fb787c05235c0e0041024297be35d927e3adeb6e267ee35153",
-      "last_checked": "2026-06-12T07:42:44.629820",
+      "last_checked": "2026-06-16T07:41:10.708101",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8ada74c68049c06b78e891a0bd8a8eb7\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/comments.md"
     },
@@ -1437,9 +1437,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/ispurchased.json": {
       "hash": "eb55a7acbe4c37115bd280f419c1d6cf2f75759680871bf881cbc25fed40b658",
-      "last_checked": "2026-06-12T07:42:44.786313",
+      "last_checked": "2026-06-16T07:41:10.887282",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a0316eb63bd6a7d56361c99b4c8a4625\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/ispurchased.md"
     },
@@ -1453,9 +1453,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/isdrmprotected.json": {
       "hash": "54a67131dba94adf3a87ed9f344b4bf6d720e92e45c7c181743a9d199a2d473c",
-      "last_checked": "2026-06-12T07:42:44.900775",
+      "last_checked": "2026-06-16T07:41:11.068949",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"359008a814d0db01dcdcff638c6023a9\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/isdrmprotected.md"
     },
@@ -1469,9 +1469,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/isvideo.json": {
       "hash": "7e0d41886b4f6a2f87bbb5e918474ed06fef76e90d77cc394819e9b3e1ca13f8",
-      "last_checked": "2026-06-12T07:42:45.028924",
+      "last_checked": "2026-06-16T07:41:11.256883",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ed590f9ba287feaf1366ffe128ded404\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/isvideo.md"
     },
@@ -1485,9 +1485,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/videoinfo.json": {
       "hash": "c2c9fb5ed743bdbbb2640583aef363b9743c3222d4718e8e2690189eeda92200",
-      "last_checked": "2026-06-12T07:42:45.170808",
+      "last_checked": "2026-06-16T07:41:11.381086",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7a3a228dfc55f52bf200507a42d251f1\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/videoinfo.md"
     },
@@ -1501,9 +1501,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/releasedate.json": {
       "hash": "a183e44026a7f6fd26219a0c87005eb64710c5dffbc7c3bcd513355ce0972524",
-      "last_checked": "2026-06-12T07:42:45.300431",
+      "last_checked": "2026-06-16T07:41:11.561549",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e8f06c25a7b3a253cb42bd388747c737\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/releasedate.md"
     },
@@ -1517,9 +1517,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/year.json": {
       "hash": "9a1df7b40cbd8b161421dd8a6b68420e3af30f18710dd56bcf0e93c58d817b83",
-      "last_checked": "2026-06-12T07:42:45.457233",
+      "last_checked": "2026-06-16T07:41:11.679102",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e8ab68d58021b24a6988af2d13d757a9\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/year.md"
     },
@@ -1533,9 +1533,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/skipcount.json": {
       "hash": "9543893240112f90d961faf83b7f10debb9498f8cccead0efa2d202c926368dc",
-      "last_checked": "2026-06-12T07:42:45.630572",
+      "last_checked": "2026-06-16T07:41:11.853065",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6cd958e15dcebc52d36d79d8bcd3c416\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/skipcount.md"
     },
@@ -1549,9 +1549,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/skipdate.json": {
       "hash": "3ea4bad449efedfd3c8f2f099c4e98d6f4d563dfd396b263a3ce6f2fe45aec78",
-      "last_checked": "2026-06-12T07:42:45.759714",
+      "last_checked": "2026-06-16T07:41:12.029048",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"95932ec27bbe12987e21e53459b1cb65\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/skipdate.md"
     },
@@ -1565,9 +1565,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/voiceoverlanguage.json": {
       "hash": "03709c4a80c767b7e85920152e440b6bddceab62d3136be82b654e3c38e7407d",
-      "last_checked": "2026-06-12T07:42:45.890390",
+      "last_checked": "2026-06-16T07:41:12.150457",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6c50c771b82d191e2a2a9912ed6be441\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/voiceoverlanguage.md"
     },
@@ -1581,9 +1581,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/volumeadjustment.json": {
       "hash": "b53f82a3476f4ed442869fc6c32d09378e802ca2b13bd755093a3a56bdf9de3d",
-      "last_checked": "2026-06-12T07:42:46.018348",
+      "last_checked": "2026-06-16T07:41:12.314598",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b5aa4de788527afe3a0c23222651d9bf\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/volumeadjustment.md"
     },
@@ -1597,9 +1597,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/volumenormalizationenergy.json": {
       "hash": "5248636bee6e2c3a223168f81bebd19b5724101beb2ee546fb5b572ce1b1223b",
-      "last_checked": "2026-06-12T07:42:46.136446",
+      "last_checked": "2026-06-16T07:41:12.495249",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7a8fd8c8a2ae3ddde45a27effede8962\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/volumenormalizationenergy.md"
     },
@@ -1613,9 +1613,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/isuserdisabled.json": {
       "hash": "9750aa6ed6d57e63cf1d1d208f278e2ab83328427421f21ddf867d7984dc4533",
-      "last_checked": "2026-06-12T07:42:46.265107",
+      "last_checked": "2026-06-16T07:41:12.679133",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"57ffa4ac5a50dd9934910e6643603656\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/isuserdisabled.md"
     },
@@ -1629,9 +1629,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/grouping.json": {
       "hash": "0f59f3a7b09f5f7b3e063ddd2e8d0d1d875ec7f5bb9b47a84e78408a41513cbb",
-      "last_checked": "2026-06-12T07:42:46.386794",
+      "last_checked": "2026-06-16T07:41:12.874278",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"423456ffbf4e167819289bfb987cc03b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/grouping.md"
     },
@@ -1645,9 +1645,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/filesize.json": {
       "hash": "6c68cbf117570dd513792055ce4cf1582fff84227e29e9fc73a4e296d2d6192c",
-      "last_checked": "2026-06-12T07:42:46.547068",
+      "last_checked": "2026-06-16T07:41:13.050403",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"acdef680ffcf458370cb50552da40b75\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/filesize.md"
     },
@@ -1661,9 +1661,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/iscloud.json": {
       "hash": "0035e135ac1e640609dde8783f7e4bb50fbb8b872dbc5b37eea14c3ca1f8c11c",
-      "last_checked": "2026-06-12T07:42:46.666231",
+      "last_checked": "2026-06-16T07:41:13.233040",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f23f1e414d1c4ca019fbd360cefe76c3\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/iscloud.md"
     },
@@ -1677,9 +1677,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/playstatus.json": {
       "hash": "0db558b6a39e57b47c2f5702c4139e532b063669987cceb6332010b8d9f45a36",
-      "last_checked": "2026-06-12T07:42:46.797961",
+      "last_checked": "2026-06-16T07:41:13.366771",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"816a3c55b9c95af55eb11ebe05d6fd9a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/playstatus.md"
     },
@@ -1693,9 +1693,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind.json": {
       "hash": "b217b9d3a89caab5bf6fc94d837b08d4f226284ed0eddff66f311cc71ef534d1",
-      "last_checked": "2026-06-12T07:42:46.958398",
+      "last_checked": "2026-06-16T07:41:13.508240",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3613e24bb028e7330e36f34e4aa061ff\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind.md"
     },
@@ -1709,9 +1709,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype.json": {
       "hash": "e31c15146717617af6827850385ea9a39ae02835ce28c62ea470f2eb941e8781",
-      "last_checked": "2026-06-12T07:42:47.080649",
+      "last_checked": "2026-06-16T07:41:13.653699",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5b94ba41214696cdf5dd080bf9761510\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype.md"
     },
@@ -1725,9 +1725,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlyricscontentrating.json": {
       "hash": "5b1909056732b473236a1e734ce3c5b8803fd2f95bd1adf7ceb488c5d699a44b",
-      "last_checked": "2026-06-12T07:42:47.198025",
+      "last_checked": "2026-06-16T07:41:13.785790",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"38eaebbf0e207ec24b986d72f78b6cbe\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlyricscontentrating.md"
     },
@@ -1741,9 +1741,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemplaystatus.json": {
       "hash": "6c798d37c162fa5daa5be4132263427ae4fbf8f7b3daeee0d5140564fca03840",
-      "last_checked": "2026-06-12T07:42:47.330558",
+      "last_checked": "2026-06-16T07:41:13.984371",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6bf74727b35c447e1d561500f34b6984\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemplaystatus.md"
     },
@@ -1757,9 +1757,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentitypropertypersistentid.json": {
       "hash": "5d300339fe459e6ae7a564b7c7475de852b76ef4a5626e1dfe4dabbc54c98ed2",
-      "last_checked": "2026-06-12T07:42:47.451400",
+      "last_checked": "2026-06-16T07:41:14.165981",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a372033a942d01966bb62df302793113\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentitypropertypersistentid.md"
     },
@@ -1773,9 +1773,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyaddeddate.json": {
       "hash": "9b7e8c3d00ebcac56c6ad2c5d9b6aaa31fa92f295f83bcc29d630d9b2e9d5ee9",
-      "last_checked": "2026-06-12T07:42:47.560677",
+      "last_checked": "2026-06-16T07:41:14.361353",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"cbf800b235c7358cf81cd90708ffbc33\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyaddeddate.md"
     },
@@ -1789,9 +1789,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumartist.json": {
       "hash": "e740c6ad794e4ee74ead1c629663d78249c7aa4208da431c17bdb11d23f76599",
-      "last_checked": "2026-06-12T07:42:47.688989",
+      "last_checked": "2026-06-16T07:41:14.538395",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"26665062192705783b257cb1d8acf24c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumartist.md"
     },
@@ -1805,9 +1805,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumdisccount.json": {
       "hash": "a71cba545092219ed21e75d5d10ddb9424e199d34cde3e5cdf5f254ea08ee171",
-      "last_checked": "2026-06-12T07:42:47.815764",
+      "last_checked": "2026-06-16T07:41:14.726105",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3c37cdb486060d50b246fb8d13445d9f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumdisccount.md"
     },
@@ -1821,9 +1821,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumdiscnumber.json": {
       "hash": "d566206cf46f3f07ddca02331ae77286bdfe519e4c25821a997e12bb05222cfa",
-      "last_checked": "2026-06-12T07:42:47.941175",
+      "last_checked": "2026-06-16T07:41:14.844799",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"efc8f1b8bf0acefc93afd3c26bde3069\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumdiscnumber.md"
     },
@@ -1837,9 +1837,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumiscompilation.json": {
       "hash": "f4cc5804f93af75073a7b1335ddd53db565143a9e3d696f68f4b888c22ff3305",
-      "last_checked": "2026-06-12T07:42:48.071276",
+      "last_checked": "2026-06-16T07:41:15.039226",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d4efc9f1b58bbddd8d9f96e057775c1f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumiscompilation.md"
     },
@@ -1853,9 +1853,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumisgapless.json": {
       "hash": "f53b4621dfd4e0830f149f4247aeecdef04809198fc5031d36be1e5056cf9dd4",
-      "last_checked": "2026-06-12T07:42:48.198979",
+      "last_checked": "2026-06-16T07:41:15.224089",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"189e44a33e62ae39ada994bb0b91c355\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumisgapless.md"
     },
@@ -1869,9 +1869,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumrating.json": {
       "hash": "11c1d5af0d886ee530ae1b4baebe68f604ebb99c1a45324308b645c00c40dd11",
-      "last_checked": "2026-06-12T07:42:48.350946",
+      "last_checked": "2026-06-16T07:41:15.412747",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"14a6ecd8dd2fd5903d0181dc1455c9d9\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumrating.md"
     },
@@ -1885,9 +1885,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumratingcomputed.json": {
       "hash": "6ed1dc9287913dbdd220a6dccc8d925229a25481e1f8d4520678b9b0118d1a9c",
-      "last_checked": "2026-06-12T07:42:48.530361",
+      "last_checked": "2026-06-16T07:41:15.585916",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"19071d455eef80c6f3ff8a9a837c9439\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumratingcomputed.md"
     },
@@ -1901,9 +1901,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumtitle.json": {
       "hash": "5389581cc5294f98722a0e3a8775de9dc766d82bb6c0f7945ce3c22351c3d4c8",
-      "last_checked": "2026-06-12T07:42:48.645676",
+      "last_checked": "2026-06-16T07:41:15.801750",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"73f46259b8e9d06874420a5008b9e168\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumtitle.md"
     },
@@ -1917,9 +1917,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyalbumtrackcount.json": {
       "hash": "423da52f8d85e5c20484a8db3dbeddf92d26f011e9d213d7619a402d94c8ae52",
-      "last_checked": "2026-06-12T07:42:48.774504",
+      "last_checked": "2026-06-16T07:41:15.966831",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9d74a2b044cc357e178907ef76effe06\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyalbumtrackcount.md"
     },
@@ -1933,9 +1933,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyartistname.json": {
       "hash": "e03db00375c601ba54526bd7767fd424cb0fb9ec76a7655ebf456e092a879645",
-      "last_checked": "2026-06-12T07:42:48.899486",
+      "last_checked": "2026-06-16T07:41:16.157720",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"daaa5e3d5796c2a976739bf256de3262\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyartistname.md"
     },
@@ -1949,9 +1949,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyartwork.json": {
       "hash": "69e1877f17ea49cdf2d337763f39b5d7815743310f3570cdff51cd40165f418c",
-      "last_checked": "2026-06-12T07:42:49.038404",
+      "last_checked": "2026-06-16T07:41:16.266640",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d59b32576df8594f41848e8a4bd9ce8a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyartwork.md"
     },
@@ -1965,9 +1965,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertybeatsperminute.json": {
       "hash": "a9fd98de275f6f675c500d0ab7fd3c5442e26973fb3562d8d4aa09954fbd5bd9",
-      "last_checked": "2026-06-12T07:42:49.168230",
+      "last_checked": "2026-06-16T07:41:16.471591",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5f36a0970167938ae3f2f1efbcd6f36b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertybeatsperminute.md"
     },
@@ -1981,9 +1981,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertybitrate.json": {
       "hash": "9542c1b218ffcaa643d9f04d08722cd1f301153b2261696443f9ab4a16090a27",
-      "last_checked": "2026-06-12T07:42:49.317793",
+      "last_checked": "2026-06-16T07:41:16.641275",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"40b89a557491eb48b96496d9e4316f23\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertybitrate.md"
     },
@@ -1997,9 +1997,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertycategory.json": {
       "hash": "68ba98bedb463955df238920f22851404c418075dca72b4ada3d9c546e64db3f",
-      "last_checked": "2026-06-12T07:42:49.433268",
+      "last_checked": "2026-06-16T07:41:16.807905",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"351b8aa4ed5f975fadb86ee62ee96205\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertycategory.md"
     },
@@ -2013,9 +2013,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertycomments.json": {
       "hash": "1ca11725e75c50794734f28f943cccd54c943e45a24680bcc72497d807415ef7",
-      "last_checked": "2026-06-12T07:42:49.570004",
+      "last_checked": "2026-06-16T07:41:16.940803",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"af4a69179b76d1756beb06932c87da42\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertycomments.md"
     },
@@ -2029,9 +2029,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertycomposer.json": {
       "hash": "36118ead16e071ef4e60c3d8679ceddd82ae28b3e3c6bf6b7ce978e6af1ac248",
-      "last_checked": "2026-06-12T07:42:49.689638",
+      "last_checked": "2026-06-16T07:41:17.127634",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5a78bca12e050324ffd653afc0903805\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertycomposer.md"
     },
@@ -2045,9 +2045,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertycontentrating.json": {
       "hash": "6bf58360deb55d2ed843a6dbf7de1b743acb059cc8e9074a6fee4cf7c9a69099",
-      "last_checked": "2026-06-12T07:42:49.816056",
+      "last_checked": "2026-06-16T07:41:17.313640",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1ed17add173454c9832bb75751b91b5c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertycontentrating.md"
     },
@@ -2061,9 +2061,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertydescription.json": {
       "hash": "8322051614aabf0899ae88ef34650785a6e75b6b89f75b4529787bb7f76d7a13",
-      "last_checked": "2026-06-12T07:42:49.942893",
+      "last_checked": "2026-06-16T07:41:17.469176",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"85cd66bad14bfa13e877321272860055\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertydescription.md"
     },
@@ -2077,9 +2077,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyfilesize.json": {
       "hash": "f76fcd299e176a92662227a01f668330a97ffc7c19b38d96ec969a170f6f88f2",
-      "last_checked": "2026-06-12T07:42:50.060797",
+      "last_checked": "2026-06-16T07:41:17.598925",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"393ce0a3e80ef8d3d19ffa0121e36286\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyfilesize.md"
     },
@@ -2093,9 +2093,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertygenre.json": {
       "hash": "7e3b4fb8d9b25728e9bbfaf1cdc1c81348e6ba710e4ed3876fce1ae047f0c894",
-      "last_checked": "2026-06-12T07:42:50.205862",
+      "last_checked": "2026-06-16T07:41:17.774625",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1f0768ce2631290928af0a07bea9c2f3\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertygenre.md"
     },
@@ -2109,9 +2109,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertygrouping.json": {
       "hash": "3826a7a57e627ee2ac404e57504723347f0180443c3e20533f4811fb19c0a41b",
-      "last_checked": "2026-06-12T07:42:50.326445",
+      "last_checked": "2026-06-16T07:41:17.951688",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e05858e4f5c6d289a504f566104ac097\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertygrouping.md"
     },
@@ -2125,9 +2125,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyhasartwork.json": {
       "hash": "2f9e0749d7b5376da6924a9d443927fcd2a9625230ce3cee481c0bfe23128f46",
-      "last_checked": "2026-06-12T07:42:50.452284",
+      "last_checked": "2026-06-16T07:41:18.126928",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e8f73ea203e2f4ef031fde5ca6b25c0a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyhasartwork.md"
     },
@@ -2141,9 +2141,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyisdrmprotected.json": {
       "hash": "b011713d60b0c5f2a26a2b6088380a1eae81f3d16f3dff9a48e4a5387719b1c0",
-      "last_checked": "2026-06-12T07:42:50.572380",
+      "last_checked": "2026-06-16T07:41:18.315002",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"0936dad638d9569fffbcbc38d7520462\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyisdrmprotected.md"
     },
@@ -2157,9 +2157,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyispurchased.json": {
       "hash": "77e75d01923647a2c9af228915562c924b7212f985149c5c00b306140bf69232",
-      "last_checked": "2026-06-12T07:42:50.701551",
+      "last_checked": "2026-06-16T07:41:18.497633",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"77021125454180146e28b435768a0c08\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyispurchased.md"
     },
@@ -2173,9 +2173,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyisuserdisabled.json": {
       "hash": "b839f85a5fb61d9e8d1dc3359e73faae4653dd6fcac14763a70f81d1c95f0a20",
-      "last_checked": "2026-06-12T07:42:50.819561",
+      "last_checked": "2026-06-16T07:41:18.620680",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"588cc3990f006b103d2b4207f707950a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyisuserdisabled.md"
     },
@@ -2189,9 +2189,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyisvideo.json": {
       "hash": "42ad66a865925e37b76ce2459d2898f1b73d799f00014c243d1d1bbb4ad2e74b",
-      "last_checked": "2026-06-12T07:42:50.937033",
+      "last_checked": "2026-06-16T07:41:18.743406",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1d839ac36711cbaa9ca0709684ff4c69\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyisvideo.md"
     },
@@ -2205,9 +2205,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertykind.json": {
       "hash": "d9f9d22e9b217ec5887e00eb3885c64f0af083f9456799d70ffc3409b88fa809",
-      "last_checked": "2026-06-12T07:42:51.067153",
+      "last_checked": "2026-06-16T07:41:18.863244",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8c6c67b758ad2deb8267fb3073006544\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertykind.md"
     },
@@ -2221,9 +2221,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertylastplaydate.json": {
       "hash": "98e5fa440013bf49919b4233e7ed3087eaeef937542d913d905dc659fb47923b",
-      "last_checked": "2026-06-12T07:42:51.219817",
+      "last_checked": "2026-06-16T07:41:19.033752",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8a5c3dcb7b8bff5fc8a9698277eca4f1\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertylastplaydate.md"
     },
@@ -2237,9 +2237,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertylocation.json": {
       "hash": "a84b25832d3ea1c0050b694451a5456bfd225c1ed38e4168126610d85131be2e",
-      "last_checked": "2026-06-12T07:42:51.354312",
+      "last_checked": "2026-06-16T07:41:19.222414",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ff37dd7eb597308eabb361ef605dcebd\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertylocation.md"
     },
@@ -2253,9 +2253,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertylocationtype.json": {
       "hash": "51badef19d0dc6f962ca7c5070ea4297cb4aae74993d52598d50b92ba714287f",
-      "last_checked": "2026-06-12T07:42:51.470859",
+      "last_checked": "2026-06-16T07:41:19.432067",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e0936f148d78749ece86c6a0f8a09fdf\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertylocationtype.md"
     },
@@ -2269,9 +2269,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertylyricscontentrating.json": {
       "hash": "67495b90b3260264c87eb76c88a4aa1c26a79fe9c1fb3c853d11b0485b8cd42a",
-      "last_checked": "2026-06-12T07:42:51.601619",
+      "last_checked": "2026-06-16T07:41:19.561761",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"73e23f967435b565394d64648e56739e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertylyricscontentrating.md"
     },
@@ -2285,9 +2285,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertymediakind.json": {
       "hash": "5ee848139ccd8ac0bbcaadb0b9045b635fc2e3d8319b5ee076a1c450fcf94c54",
-      "last_checked": "2026-06-12T07:42:51.746302",
+      "last_checked": "2026-06-16T07:41:19.694924",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"95720a4989826c3d752b2a9af3a91666\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertymediakind.md"
     },
@@ -2301,9 +2301,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertymodifieddate.json": {
       "hash": "f6056df571377d72665d25e2327e696c533da881cfb93f4a5f4299177feebce7",
-      "last_checked": "2026-06-12T07:42:51.915669",
+      "last_checked": "2026-06-16T07:41:19.821055",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"bafdba138976adce647374449018d2dc\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertymodifieddate.md"
     },
@@ -2317,9 +2317,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertymovementcount.json": {
       "hash": "5c8a48bf2eea0eea62fc4d8b3e39d5df89b78bee3dd7892f63dc8bec8be62fc9",
-      "last_checked": "2026-06-12T07:42:52.028710",
+      "last_checked": "2026-06-16T07:41:20.029594",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c0f538edaac57423d950c222c2540093\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertymovementcount.md"
     },
@@ -2333,9 +2333,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertymovementname.json": {
       "hash": "abf01dc4f38eb394cf76526356e8e832918abe91a19ed1ad78e15c8c7e8401a2",
-      "last_checked": "2026-06-12T07:42:52.156759",
+      "last_checked": "2026-06-16T07:41:20.210217",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"144a7ceb68e5ddb688d41d15d973fc9a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertymovementname.md"
     },
@@ -2349,9 +2349,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertymovementnumber.json": {
       "hash": "383e7087e34b8c5e017b44b7f2afb43b5582cec5c74f01081a9abb486c449a51",
-      "last_checked": "2026-06-12T07:42:52.277783",
+      "last_checked": "2026-06-16T07:41:20.382266",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"71d39ced0c122762f37e5be3a4027cde\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertymovementnumber.md"
     },
@@ -2365,9 +2365,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyplaycount.json": {
       "hash": "cca30f398c6e717be45afe9b15de3c7a29d9d365545c8b43ffcda00732175087",
-      "last_checked": "2026-06-12T07:42:52.410732",
+      "last_checked": "2026-06-16T07:41:20.507457",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5999326faa0e34a19c6a9a35098257ae\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyplaycount.md"
     },
@@ -2381,9 +2381,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyplaystatus.json": {
       "hash": "493d4154ece2830c756668eeb8d36a20536ad3037e53a24f54e6a9e0ab627dd6",
-      "last_checked": "2026-06-12T07:42:52.538689",
+      "last_checked": "2026-06-16T07:41:20.694687",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9c252dcff628c99cae714f7d18de3c77\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyplaystatus.md"
     },
@@ -2397,9 +2397,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyrating.json": {
       "hash": "2d1f10703631d203634671676f0eda255e18416b585f6f8a46dfaf9886792275",
-      "last_checked": "2026-06-12T07:42:52.659058",
+      "last_checked": "2026-06-16T07:41:20.877127",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"cf52b396d354237bdd2511e5e0cb2ffe\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyrating.md"
     },
@@ -2413,9 +2413,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyratingcomputed.json": {
       "hash": "d145d65a2d25b5d5dd8dd729cd85bf56bfea2f7f6b1b36a17fa7b01bd36f157c",
-      "last_checked": "2026-06-12T07:42:52.799618",
+      "last_checked": "2026-06-16T07:41:21.055937",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5a55eac77f3eb7cbd502244773757907\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyratingcomputed.md"
     },
@@ -2429,9 +2429,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyreleasedate.json": {
       "hash": "319668b582edb48d61ff4feb77318db15945811f46fb569d2a25a593bf65606c",
-      "last_checked": "2026-06-12T07:42:52.925639",
+      "last_checked": "2026-06-16T07:41:21.233179",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"52b2c99ade329211c93b773bf4b052e5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyreleasedate.md"
     },
@@ -2445,9 +2445,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysamplerate.json": {
       "hash": "7a74a8e2a97ea48145565e2d75fc71954b5f457c057e46d83f07cbeac659d232",
-      "last_checked": "2026-06-12T07:42:53.048636",
+      "last_checked": "2026-06-16T07:41:21.407731",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"17c3fec1e8c6b5d12af68edaf219594a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysamplerate.md"
     },
@@ -2461,9 +2461,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysize.json": {
       "hash": "65441a1461d83b62208c5d4e3907f40f27046c3a8ea908f31fcdcbf0252cfa53",
-      "last_checked": "2026-06-12T07:42:53.189979",
+      "last_checked": "2026-06-16T07:41:21.593890",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3ed05386b86c9cbe38b3352857fd7928\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysize.md"
     },
@@ -2477,9 +2477,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyskipdate.json": {
       "hash": "d6b8786966c4413ea93e271f7a1fffa9415a24135f5f91abfb8b65d1a59f671f",
-      "last_checked": "2026-06-12T07:42:53.342943",
+      "last_checked": "2026-06-16T07:41:21.760081",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5e1ee96b41422172d12bed7689b38993\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyskipdate.md"
     },
@@ -2493,9 +2493,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysortalbumartist.json": {
       "hash": "50db0442871a4a745703dfcaa8b242f43c4267f3fb33d865ee845cafec877da7",
-      "last_checked": "2026-06-12T07:42:53.454252",
+      "last_checked": "2026-06-16T07:41:21.888445",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b27bddb928eb732a505585c5ff976030\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysortalbumartist.md"
     },
@@ -2509,9 +2509,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysortalbumtitle.json": {
       "hash": "402b2408ae5dad8cda2f47231a6e86b942b660024a2e98a0ef108cb7dc1bc235",
-      "last_checked": "2026-06-12T07:42:53.598776",
+      "last_checked": "2026-06-16T07:41:22.029272",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"98f4d4d02dc2feada8cbd747e772c774\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysortalbumtitle.md"
     },
@@ -2525,9 +2525,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysortartistname.json": {
       "hash": "f3930c48f545b86a318e66d0625361fdfb3c5c6a602b496faf6e463527c423ba",
-      "last_checked": "2026-06-12T07:42:53.710244",
+      "last_checked": "2026-06-16T07:41:22.216206",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c426e92074f1fb478fd6f265b6540a39\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysortartistname.md"
     },
@@ -2541,9 +2541,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysortcomposer.json": {
       "hash": "38ab43cb2240be3c5a9dba75706d1e83812b845d1d9e238169ea04520134c8b1",
-      "last_checked": "2026-06-12T07:42:53.852817",
+      "last_checked": "2026-06-16T07:41:22.395680",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"db54450bae21b315cc5b33e965fbdf1c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysortcomposer.md"
     },
@@ -2557,9 +2557,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertysorttitle.json": {
       "hash": "29843b6e51bf494df6ce4b285d3eeb400199d4f24fa348a46a88f366e76e0730",
-      "last_checked": "2026-06-12T07:42:53.976074",
+      "last_checked": "2026-06-16T07:41:22.561614",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"0e113e637c555c9166042e4e1b840a5b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertysorttitle.md"
     },
@@ -2573,9 +2573,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertystarttime.json": {
       "hash": "b988796ea559659dbd12d5bac26bf611630c142129c8d3236f9b888a6de5cba9",
-      "last_checked": "2026-06-12T07:42:54.111897",
+      "last_checked": "2026-06-16T07:41:22.863466",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"59a9f272904a6a000ddb396809d56f44\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertystarttime.md"
     },
@@ -2589,9 +2589,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertystoptime.json": {
       "hash": "4360c02268c4ed75dffc3f88138be0142276602acda922aacc7345de1d6c007b",
-      "last_checked": "2026-06-12T07:42:54.228961",
+      "last_checked": "2026-06-16T07:41:23.061768",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"2b1dce0bf4e75bd12bcb63521462232e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertystoptime.md"
     },
@@ -2605,9 +2605,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertytitle.json": {
       "hash": "8311a33d9d7ab099c01873092817d269c5a269f15aaa5bbb81a3770f86e63067",
-      "last_checked": "2026-06-12T07:42:54.349192",
+      "last_checked": "2026-06-16T07:41:23.249759",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"84c1c2fd2103bee95a39214b2d405a98\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertytitle.md"
     },
@@ -2621,9 +2621,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertytotaltime.json": {
       "hash": "8cdb6424b31480ab751f20e63bcccb87700c1c4b773274915b3008a05ea69002",
-      "last_checked": "2026-06-12T07:42:54.539136",
+      "last_checked": "2026-06-16T07:41:23.433318",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8ea61ab06835c18718d4b6b98e821377\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertytotaltime.md"
     },
@@ -2637,9 +2637,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertytracknumber.json": {
       "hash": "4e37024c2ac961b1ffe836e62e6f749bf7b076d76112e217845047cf277392cb",
-      "last_checked": "2026-06-12T07:42:54.677166",
+      "last_checked": "2026-06-16T07:41:23.624401",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"45ecaabc27d7deb85ba9897ce4ba4851\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertytracknumber.md"
     },
@@ -2653,9 +2653,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyuserskipcount.json": {
       "hash": "d5991d5c446a682f9f86e9ce88c846be449c46b61242bdadfceef73ae61c8cbd",
-      "last_checked": "2026-06-12T07:42:54.816374",
+      "last_checked": "2026-06-16T07:41:23.756722",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1a493d3e9d021f389c28bead05fb557b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyuserskipcount.md"
     },
@@ -2669,9 +2669,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoepisode.json": {
       "hash": "95c9bf32e3bea71404e3b871cb4395af8923a372f6a75bb335ef1239027de5c6",
-      "last_checked": "2026-06-12T07:42:54.945043",
+      "last_checked": "2026-06-16T07:41:23.940460",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8edadb7c46dfe41a3779f5157ad02490\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoepisode.md"
     },
@@ -2685,9 +2685,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoepisodeorder.json": {
       "hash": "88e2b7095e5d7a727120c558942a12dee1476d46b87a0ac7f44255ff4b73d133",
-      "last_checked": "2026-06-12T07:42:55.081434",
+      "last_checked": "2026-06-16T07:41:24.105348",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"96b72e1629dfaca2ac3378518bc8df24\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoepisodeorder.md"
     },
@@ -2701,9 +2701,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoheight.json": {
       "hash": "2447a9ce0afd91408e285000766a60e8ec1bbe42e9bce13992883fd9a087eb83",
-      "last_checked": "2026-06-12T07:42:55.200382",
+      "last_checked": "2026-06-16T07:41:24.254841",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"79fd2e1c4d446198287f310871a02c22\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoheight.md"
     },
@@ -2717,9 +2717,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoishd.json": {
       "hash": "8e5a3759f77dbff43634470b8358927883d883e686356b548644b9a549ce20fd",
-      "last_checked": "2026-06-12T07:42:55.331740",
+      "last_checked": "2026-06-16T07:41:24.447220",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ede8eeba21d448501a460d6422c95ed4\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoishd.md"
     },
@@ -2733,9 +2733,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoseason.json": {
       "hash": "aa640ca767a0e0353fc3e85867736e9c8db93cc4e87b0ea0ba134ac474012ce5",
-      "last_checked": "2026-06-12T07:42:55.461133",
+      "last_checked": "2026-06-16T07:41:24.629137",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b2230de5a7e447bf4d3e1b973f7b14ec\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoseason.md"
     },
@@ -2749,9 +2749,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideoseries.json": {
       "hash": "26c16d806ad9054e5b53bf3cf75dc29ba3a72cc90fee1a33e26cdd1041ee7fba",
-      "last_checked": "2026-06-12T07:42:55.576211",
+      "last_checked": "2026-06-16T07:41:24.796580",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"fe28e50cd070101b79da39d371a8d77d\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideoseries.md"
     },
@@ -2765,9 +2765,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideosortseries.json": {
       "hash": "f5043bd9db3b0cd9a366018d6cbbfa1d80b9fcf1a349f3b682d3411d88ed84c7",
-      "last_checked": "2026-06-12T07:42:55.699457",
+      "last_checked": "2026-06-16T07:41:25.084276",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3fab1363558768b0424bf128f4841a5f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideosortseries.md"
     },
@@ -2781,9 +2781,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvideowidth.json": {
       "hash": "0216ff0d169a9f0946ffb496d3ad884cfb38ac183aa7dab1c4ab7a434a27c196",
-      "last_checked": "2026-06-12T07:42:55.828023",
+      "last_checked": "2026-06-16T07:41:25.217235",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"195e6391db43ee40d322c5f820f450a5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvideowidth.md"
     },
@@ -2797,9 +2797,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvoiceoverlanguage.json": {
       "hash": "1c2f2e4dc8fb3eaa3ce2addc97ce34c6f5d567c4c4c8239ad1dfbfbf23d48971",
-      "last_checked": "2026-06-12T07:42:55.946224",
+      "last_checked": "2026-06-16T07:41:25.370325",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"78adc87d720358f17be64ab7ac37e8c8\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvoiceoverlanguage.md"
     },
@@ -2813,9 +2813,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvolumeadjustment.json": {
       "hash": "688dd45d86a1cb1bef45af41b04fc2ff3be288d7749ee8f0a77f8bc2662bdd1c",
-      "last_checked": "2026-06-12T07:42:56.095537",
+      "last_checked": "2026-06-16T07:41:25.514982",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"be0d940751e24ade512ea156f75182ef\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvolumeadjustment.md"
     },
@@ -2829,9 +2829,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyvolumenormalizationenergy.json": {
       "hash": "f15f69faa7f2231055f6bfb12f47448f88046981b95a7b72414801030cbd8971",
-      "last_checked": "2026-06-12T07:42:56.241256",
+      "last_checked": "2026-06-16T07:41:25.686180",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"070e7b5b44824ef7fcb9526d18afe1de\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyvolumenormalizationenergy.md"
     },
@@ -2845,9 +2845,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertywork.json": {
       "hash": "07966ac58ce146d8dc2eaff6e0d0a676079c5f1ddccfd4bf7eb14fd478b94228",
-      "last_checked": "2026-06-12T07:42:56.377951",
+      "last_checked": "2026-06-16T07:41:25.851472",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a63dfe8a7a2ab878af4f12848aebcc3f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertywork.md"
     },
@@ -2861,9 +2861,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyyear.json": {
       "hash": "d0bd648bc5031f2ac1b1eb927d0b9dbba3c52397e6aaa529f61286c8a0db8df9",
-      "last_checked": "2026-06-12T07:42:56.498921",
+      "last_checked": "2026-06-16T07:41:26.020445",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"52170816b2feaa61ddf545065ebd502d\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyyear.md"
     },
@@ -2877,9 +2877,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/filetype.json": {
       "hash": "8294c9578ae4a7ca7aa0c34620e567373ebb76ee754524465de15639c7c3358c",
-      "last_checked": "2026-06-12T07:42:56.639277",
+      "last_checked": "2026-06-16T07:41:26.158450",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5d10d169814065fd56a951cf7ed6edaa\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/filetype.md"
     },
@@ -2893,9 +2893,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitem/size.json": {
       "hash": "9f5467e00eec68a9dbc764fa684328c5d48cdfccc275bb92b81b8ff74f956936",
-      "last_checked": "2026-06-12T07:42:56.754078",
+      "last_checked": "2026-06-16T07:41:26.318110",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d58eb6597f200d412127a7fe952d0adf\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitem/size.md"
     },
@@ -2909,9 +2909,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitempropertyfiletype.json": {
       "hash": "c95c14cdad93ec5e9ed779a9fb19a3907295ad7be2760c7ed85969d1030a3c53",
-      "last_checked": "2026-06-12T07:42:56.891409",
+      "last_checked": "2026-06-16T07:41:26.481784",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ff44e0b956318f15f302abd7eeaf167b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitempropertyfiletype.md"
     },
@@ -2925,9 +2925,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentity/persistentid.json": {
       "hash": "ab5e85d5c57892e3140bc3326088de06d12fc6a340cdd3ffccadc73806903770",
-      "last_checked": "2026-06-12T07:42:57.016972",
+      "last_checked": "2026-06-16T07:41:26.654657",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b48f8f5412bfbc9230206aae20bffef5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentity/persistentid.md"
     },
@@ -2941,9 +2941,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentity/enumeratevalues(forproperties:using:).json": {
       "hash": "d46221b69e5da0a7117f8c80f6135e30c671b1a28fa7f248d0de0a511eb20548",
-      "last_checked": "2026-06-12T07:42:57.140338",
+      "last_checked": "2026-06-16T07:41:26.879438",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"275ee48829d402ce82d18f480817196b\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentity/enumeratevalues-forpropertiesusing.md"
     },
@@ -2957,9 +2957,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentity/enumeratevaluesexcept(forproperties:using:).json": {
       "hash": "38d36f7c325ec98cb85bf984fef39e3d0faaefe2486f3e06c888301aab255f89",
-      "last_checked": "2026-06-12T07:42:57.268092",
+      "last_checked": "2026-06-16T07:41:27.060490",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"513e1746f417b5e68e92fc2940f32327\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentity/enumeratevaluesexcept-forpropertiesusing.md"
     },
@@ -2973,9 +2973,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaentity/value(forproperty:).json": {
       "hash": "bd0d634fa172487134b56984f3b93d7bf75e6769e9b2057838e61236406ad39d",
-      "last_checked": "2026-06-12T07:42:57.390762",
+      "last_checked": "2026-06-16T07:41:27.228276",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d594999dc03f426c6d24dcf2d9d12ee7\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaentity/value-forproperty.md"
     },
@@ -2989,9 +2989,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartist/name.json": {
       "hash": "fe81c28665d9dca993b3f137aaa9799b02235669af7419745541e4c91452d44a",
-      "last_checked": "2026-06-12T07:42:57.521538",
+      "last_checked": "2026-06-16T07:41:27.560340",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"30ac7f3762c30a06dad9620cde214f72\"",
       "file_path": "documentation/iTunesLibrary/itlibartist/name.md"
     },
@@ -3005,9 +3005,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartist/persistentid.json": {
       "hash": "76accac227d58803998694ea44a449d9b037bedbb6fe3ed6cad89148c54804f9",
-      "last_checked": "2026-06-12T07:42:57.656968",
+      "last_checked": "2026-06-16T07:41:27.722185",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"eaed66cd0610c43cb88b071716bf3f4f\"",
       "file_path": "documentation/iTunesLibrary/itlibartist/persistentid.md"
     },
@@ -3021,9 +3021,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartist/sortname.json": {
       "hash": "682250044421eebed5d23fefb8a336dd9453c5c94943b4016cfc8e9355bcd14a",
-      "last_checked": "2026-06-12T07:42:57.779962",
+      "last_checked": "2026-06-16T07:41:27.835430",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7d264e49bddb328c6c4ac2e6bc9f9082\"",
       "file_path": "documentation/iTunesLibrary/itlibartist/sortname.md"
     },
@@ -3037,9 +3037,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartwork/image.json": {
       "hash": "6cfe6eb7c3f9de70eb13c8237081cc2460113be5f6ac3067d14f1d1d2d494fbf",
-      "last_checked": "2026-06-12T07:42:57.916328",
+      "last_checked": "2026-06-16T07:41:27.971409",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5ae90e210e8f927d38bc8b59e53e9fda\"",
       "file_path": "documentation/iTunesLibrary/itlibartwork/image.md"
     },
@@ -3053,9 +3053,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartwork/imagedata.json": {
       "hash": "4307bdbbaed8ae7b367360134e85b787a7e54be52208a8122c25c613218db09b",
-      "last_checked": "2026-06-12T07:42:58.072064",
+      "last_checked": "2026-06-16T07:41:28.143990",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6aa38d29555499a0f82b260ace1d6d0e\"",
       "file_path": "documentation/iTunesLibrary/itlibartwork/imagedata.md"
     },
@@ -3069,9 +3069,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartwork/imagedataformat.json": {
       "hash": "2e7dc82ad3e060cb4f48d1d33ace8d4f2659b807fc9357d0ac6ea62ff4909de3",
-      "last_checked": "2026-06-12T07:42:58.199295",
+      "last_checked": "2026-06-16T07:41:28.310584",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"bc88f997fa90e99fa7b4207666b7cc1b\"",
       "file_path": "documentation/iTunesLibrary/itlibartwork/imagedataformat.md"
     },
@@ -3085,9 +3085,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat.json": {
       "hash": "5138b0e30a40ccff0bff29f54bd805dd6de232a34d34a33ed372a91a0a507944",
-      "last_checked": "2026-06-12T07:42:58.332638",
+      "last_checked": "2026-06-16T07:41:28.469433",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"fecde2596446c29a47246050ed1cf05d\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat.md"
     },
@@ -3101,9 +3101,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/videowidth.json": {
       "hash": "a1fd776ce1cf5867fc74dbd609238372e2f2e88c1a3a6a8d70d92a2270059fef",
-      "last_checked": "2026-06-12T07:42:58.473161",
+      "last_checked": "2026-06-16T07:41:28.642208",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9d013488882a76c490a254e453e5712a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/videowidth.md"
     },
@@ -3117,9 +3117,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/videoheight.json": {
       "hash": "dfe9f8b99107f9abe855a8108f02325ce86927e5cf09eab551c8ac1710c9d59a",
-      "last_checked": "2026-06-12T07:42:58.692343",
+      "last_checked": "2026-06-16T07:41:28.769319",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"bdea73342009a6d798901b8e60f1f9ef\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/videoheight.md"
     },
@@ -3133,9 +3133,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/series.json": {
       "hash": "e56e6e75c9ddfde6ef2769f757c9fd60b14b9c21ef23e5ec84980bb2b99ffd05",
-      "last_checked": "2026-06-12T07:42:58.798350",
+      "last_checked": "2026-06-16T07:41:28.899744",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"87f436839e2b4a54649d4f51583b1546\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/series.md"
     },
@@ -3149,9 +3149,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/sortseries.json": {
       "hash": "2a13ab3ecff56806c0566e6ab1b30ebab34cbb162814011dbe369d58333db244",
-      "last_checked": "2026-06-12T07:42:58.945636",
+      "last_checked": "2026-06-16T07:41:29.036581",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f5cf5d44268a578cb5065c332030a9af\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/sortseries.md"
     },
@@ -3165,9 +3165,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/season.json": {
       "hash": "79351d5cb1f656e2708f51b48e604d6c85e63abaa8b452a822890a725a6755dc",
-      "last_checked": "2026-06-12T07:42:59.089038",
+      "last_checked": "2026-06-16T07:41:29.199479",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a42b01f13a18f570b259cac9599f2bcf\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/season.md"
     },
@@ -3181,9 +3181,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/ishd.json": {
       "hash": "6ff63cc7dd805edb208b24a87eec7151e02e0f0c999b966824009c74a5f421dd",
-      "last_checked": "2026-06-12T07:42:59.212655",
+      "last_checked": "2026-06-16T07:41:29.345764",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"79ea9d1abcfb3f8e5bd54a7ad7f646a8\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/ishd.md"
     },
@@ -3197,9 +3197,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/episode.json": {
       "hash": "b6a7295c7d752a00467358354b2133fe3be9031d3e8932b9e615099b42d845f8",
-      "last_checked": "2026-06-12T07:42:59.392153",
+      "last_checked": "2026-06-16T07:41:29.479259",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4add21bfda6879ebbb4fe5247f615fff\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/episode.md"
     },
@@ -3213,9 +3213,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemvideoinfo/episodeorder.json": {
       "hash": "2496bbc875878ca5b48cb0a97718050b05e0f6fa256454b6dead1a40cfb709cf",
-      "last_checked": "2026-06-12T07:42:59.516028",
+      "last_checked": "2026-06-16T07:41:29.674064",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"026626197379f5b07e71ea960de1f503\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemvideoinfo/episodeorder.md"
     },
@@ -3245,9 +3245,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibinitoptions/none.json": {
       "hash": "3df0f460fd80df101435291e02fc47b4d6478b2c519992413d2ceef5c7777a5a",
-      "last_checked": "2026-06-12T07:42:59.640917",
+      "last_checked": "2026-06-16T07:41:29.963331",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4ee24b71d6691b74e8f82562a72f8d0e\"",
       "file_path": "documentation/iTunesLibrary/itlibinitoptions/none.md"
     },
@@ -3261,9 +3261,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibinitoptions/lazyloaddata.json": {
       "hash": "3a4613e1006d1bbd6225389116baaf963a607c5d8c5cd60d726d7d12002332ce",
-      "last_checked": "2026-06-12T07:42:59.765587",
+      "last_checked": "2026-06-16T07:41:30.111462",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c151bcb806606ca50bd1997a8ed109dd\"",
       "file_path": "documentation/iTunesLibrary/itlibinitoptions/lazyloaddata.md"
     },
@@ -3277,9 +3277,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibinitoptions/init(rawvalue:).json": {
       "hash": "fefc6d5ff280ecfebc688b7b0bd7daea148433870fc5489ed97415c4a9a2c79e",
-      "last_checked": "2026-06-12T07:42:59.915635",
+      "last_checked": "2026-06-16T07:41:30.287068",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e8a1ffacf6c2a8e3759097b867785782\"",
       "file_path": "documentation/iTunesLibrary/itlibinitoptions/init-rawvalue.md"
     },
@@ -3293,9 +3293,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibexportfeature/none.json": {
       "hash": "36c580fad03011e239c8647e8821adb0464ad4fe00627a0d137ea1d9ded089b5",
-      "last_checked": "2026-06-12T07:43:00.033377",
+      "last_checked": "2026-06-16T07:41:30.413033",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"eb4045b1907c1dde289cf6f6fdbb8307\"",
       "file_path": "documentation/iTunesLibrary/itlibexportfeature/none.md"
     },
@@ -3309,9 +3309,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibexportfeature/init(rawvalue:).json": {
       "hash": "4e19c7ccd536b558330c8f494415cd4ac9980ced04025a825894ecfb9b66ee48",
-      "last_checked": "2026-06-12T07:43:00.166367",
+      "last_checked": "2026-06-16T07:41:30.537546",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a80c9f9297dc22e4f682a64ea71b94d2\"",
       "file_path": "documentation/iTunesLibrary/itlibexportfeature/init-rawvalue.md"
     },
@@ -3325,9 +3325,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/regular.json": {
       "hash": "6fec100dc572280f897ec1edd76e287ffecddd55cf3d5729dd616535f928205f",
-      "last_checked": "2026-06-12T07:43:00.288804",
+      "last_checked": "2026-06-16T07:41:30.730612",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"cca1ab8418b7899e3ce14f45db465674\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/regular.md"
     },
@@ -3341,9 +3341,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/smart.json": {
       "hash": "64aff67d9735a115d878ec5e7c79cbe9c63c6a19113d788fe50002c09cfa9908",
-      "last_checked": "2026-06-12T07:43:00.414521",
+      "last_checked": "2026-06-16T07:41:30.851731",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b716ae48e6eafff53626d274d238d053\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/smart.md"
     },
@@ -3357,9 +3357,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/genius.json": {
       "hash": "335424dddf0acfa78158431cc864bc9fc59dd3d643a281bc13b1b90ed28cdaec",
-      "last_checked": "2026-06-12T07:43:00.539889",
+      "last_checked": "2026-06-16T07:41:30.980590",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"3daf43423c560b423bf1a15583c130f8\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/genius.md"
     },
@@ -3373,9 +3373,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/folder.json": {
       "hash": "716ae1db7b9ebb96c3f4aeb09d18e351b7d53bc7194de8e674b5b15cb93c3a42",
-      "last_checked": "2026-06-12T07:43:00.674357",
+      "last_checked": "2026-06-16T07:41:31.144577",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"6303527f8568d2d5da2122246b5e216b\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/folder.md"
     },
@@ -3389,9 +3389,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/geniusmix.json": {
       "hash": "06a1f8928713ca78f64e3e7bf5af3bbf21d32bb6acb95fb73201ad80861528fd",
-      "last_checked": "2026-06-12T07:43:00.793525",
+      "last_checked": "2026-06-16T07:41:31.277623",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c774f5434c241d8ab56ebd59b7157ca7\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/geniusmix.md"
     },
@@ -3405,9 +3405,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibplaylistkind/init(rawvalue:).json": {
       "hash": "2993a0ff9fc58db0519e81e61229e3877a5794893d9b1be6fa228eada6666686",
-      "last_checked": "2026-06-12T07:43:00.935631",
+      "last_checked": "2026-06-16T07:41:31.394763",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7480a3a390f26f207bc2b2938b33cbce\"",
       "file_path": "documentation/iTunesLibrary/itlibplaylistkind/init-rawvalue.md"
     },
@@ -3421,9 +3421,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindnone.json": {
       "hash": "28923b5c4c81b7ac9004f8d8caa64b201e55ee37d428ecb3302e436e552cbdba",
-      "last_checked": "2026-06-12T07:43:01.058007",
+      "last_checked": "2026-06-16T07:41:31.535061",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c7787ab534957afe547c687d4f0c765e\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindnone.md"
     },
@@ -3437,9 +3437,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindmovies.json": {
       "hash": "380aae8aa7bd3f14b641f4daa7d57a3b6cab4479b584aa7f775f1caee4d3a25d",
-      "last_checked": "2026-06-12T07:43:01.192965",
+      "last_checked": "2026-06-16T07:41:31.716267",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d640284ae7c8c31eaad0ff65a7bee5b3\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindmovies.md"
     },
@@ -3453,9 +3453,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindtvshows.json": {
       "hash": "9a280d16cfb5b601ce3fbb85d960acf5c485b4511c31c0f1d0aae4d943a42892",
-      "last_checked": "2026-06-12T07:43:01.306289",
+      "last_checked": "2026-06-16T07:41:31.935318",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d68ed6e62712063dc0c77d169864d846\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindtvshows.md"
     },
@@ -3469,9 +3469,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindmusic.json": {
       "hash": "ac9c3dd9f9ae8dad572a27bd6b2dea17b49d326b906a22c588e5653f69d05d9c",
-      "last_checked": "2026-06-12T07:43:01.441577",
+      "last_checked": "2026-06-16T07:41:32.106260",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"002b0a5e1545a0f8d7566c9de486e379\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindmusic.md"
     },
@@ -3485,9 +3485,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindaudiobooks.json": {
       "hash": "72d904afdf29dc5bb4c843bf7ac59cd3f1ffabe027fa0000bb6fcb9643c324b9",
-      "last_checked": "2026-06-12T07:43:01.602322",
+      "last_checked": "2026-06-16T07:41:32.309842",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"69aab61fb9eac407d172d69867593522\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindaudiobooks.md"
     },
@@ -3501,9 +3501,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindbooks.json": {
       "hash": "5341abc2d0c366e5a9c7da023a3d1472a464d6de78b2f915f4abef2b281c0905",
-      "last_checked": "2026-06-12T07:43:01.758766",
+      "last_checked": "2026-06-16T07:41:32.429955",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5458a39602cec854bdb4b5c12b33be41\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindbooks.md"
     },
@@ -3517,9 +3517,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindringtones.json": {
       "hash": "162b35a9ce7063c8279fcf965734a61d45c2309a871e3e7ce9b9183fc3e7900b",
-      "last_checked": "2026-06-12T07:43:01.890258",
+      "last_checked": "2026-06-16T07:41:32.555775",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d1c317a717e810410ead53dc2d47c562\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindringtones.md"
     },
@@ -3533,9 +3533,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindpodcasts.json": {
       "hash": "c563ca5cff55014a6fa572fabb16b01d0d2693542622f2b6f8de2bbfc2390af0",
-      "last_checked": "2026-06-12T07:43:02.010687",
+      "last_checked": "2026-06-16T07:41:32.674024",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"19e2c7ede1a3eaa273b696fa067eb5fc\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindpodcasts.md"
     },
@@ -3549,9 +3549,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindvoicememos.json": {
       "hash": "78b8635ff5fe6b2eaf84dd33d2e603641dd764f6facc12580a49d60e6a80a185",
-      "last_checked": "2026-06-12T07:43:02.141316",
+      "last_checked": "2026-06-16T07:41:32.862538",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ca43027d8168f5c0313cfc482d5d0531\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindvoicememos.md"
     },
@@ -3565,9 +3565,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindpurchases.json": {
       "hash": "520bca980b6777de13f7ddb679bb6bead1a612c98855572cc50722c4ba7e0549",
-      "last_checked": "2026-06-12T07:43:02.260252",
+      "last_checked": "2026-06-16T07:41:32.991636",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5198481747ee5dfad15a521d92cb2a9e\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindpurchases.md"
     },
@@ -3581,9 +3581,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kinditunesu.json": {
       "hash": "574a6dde013595e7da899393cce61527b4ec9b93d0f1d5744b041f6657ae40b4",
-      "last_checked": "2026-06-12T07:43:02.418432",
+      "last_checked": "2026-06-16T07:41:33.120238",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"5afe52086eea40e76ff2132cef0f67bf\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kinditunesu.md"
     },
@@ -3597,9 +3597,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kind90smusic.json": {
       "hash": "8aef9d33f7f398831afd87db9508c42244eff941dcbba5c90ac25b2a7da55e21",
-      "last_checked": "2026-06-12T07:43:02.544005",
+      "last_checked": "2026-06-16T07:41:33.307260",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"0dc821fe0ede69b6efa2b4219b6423eb\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kind90smusic.md"
     },
@@ -3613,9 +3613,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindmytoprated.json": {
       "hash": "bdd7389f75c741ba429a7e8466a4b6dc1f447c7be2c687370aa39cc5a23c67e9",
-      "last_checked": "2026-06-12T07:43:02.681126",
+      "last_checked": "2026-06-16T07:41:33.496553",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"377abaf5c0c0b42d41a71629d63bb74b\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindmytoprated.md"
     },
@@ -3629,9 +3629,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindtop25mostplayed.json": {
       "hash": "91b4811eb0aef4f4185a7d4594cdd8dd6d712986955b43ff70e4bc9af5a63a17",
-      "last_checked": "2026-06-12T07:43:02.807042",
+      "last_checked": "2026-06-16T07:41:33.697508",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b809b1e65b421c87197d60403d4b6a85\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindtop25mostplayed.md"
     },
@@ -3645,9 +3645,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindrecentlyplayed.json": {
       "hash": "e9cd700cee7d13727bd0038277b57ffbccfaa33729822c45b33f8632400b4c0c",
-      "last_checked": "2026-06-12T07:43:02.984325",
+      "last_checked": "2026-06-16T07:41:33.833495",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"fe9b08cea9470ba33f6c60fd584575ff\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindrecentlyplayed.md"
     },
@@ -3661,9 +3661,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindrecentlyadded.json": {
       "hash": "1d5d0a587ad6d3c8b3c9844a12d456a81d7c85a3c1cdeb8d0c41b497b0eadd4e",
-      "last_checked": "2026-06-12T07:43:03.102960",
+      "last_checked": "2026-06-16T07:41:33.967589",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7c162b50dc1a31df5093f47dd27c4320\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindrecentlyadded.md"
     },
@@ -3677,9 +3677,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindmusicvideos.json": {
       "hash": "f6ab8a60209e4cdefe6048ed0a46ec17874218c07142c18d24d80964ad5cf4f9",
-      "last_checked": "2026-06-12T07:43:03.244074",
+      "last_checked": "2026-06-16T07:41:34.101038",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"1c574632e5c2af7ab672039058da0713\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindmusicvideos.md"
     },
@@ -3693,9 +3693,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindclassicalmusic.json": {
       "hash": "c4459e86a12de58a52bd69eabb9040a1a9183d666084c825ae5eb3a3fdc9cd84",
-      "last_checked": "2026-06-12T07:43:03.361646",
+      "last_checked": "2026-06-16T07:41:34.217378",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e7e3f81d21ea302cf30c9486ecb39e3f\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindclassicalmusic.md"
     },
@@ -3709,9 +3709,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindlibrarymusicvideos.json": {
       "hash": "da6d139966a5703956e2658f8f64b434f7db611a135c955271a918fbba6c7820",
-      "last_checked": "2026-06-12T07:43:03.492475",
+      "last_checked": "2026-06-16T07:41:34.407049",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4f0b7ed92ae5be7a5f0614e7cadaac2d\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindlibrarymusicvideos.md"
     },
@@ -3725,9 +3725,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindhomevideos.json": {
       "hash": "09d34efcaaa536146fefda4797ee8aff65308b04d29d12758cc3fb7bd3f22e74",
-      "last_checked": "2026-06-12T07:43:03.611337",
+      "last_checked": "2026-06-16T07:41:34.578089",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"ac583027625bc1685d10826b25bf47c0\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindhomevideos.md"
     },
@@ -3741,9 +3741,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindapplications.json": {
       "hash": "c90fbc8e08e00ac6a0d75716b74315840b521b9e4d6f4c749c04e5b77459cf88",
-      "last_checked": "2026-06-12T07:43:03.748234",
+      "last_checked": "2026-06-16T07:41:34.761689",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"67e1c9af30e1cc56842542ddda72ad62\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindapplications.md"
     },
@@ -3757,9 +3757,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindlovedsongs.json": {
       "hash": "c9defab9b91d4e278d7ff705f2e161326194c83fc875462590e8cf1e91bd064b",
-      "last_checked": "2026-06-12T07:43:03.891343",
+      "last_checked": "2026-06-16T07:41:34.939415",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"23e5ce7b818e657285e6ceab49bf3253\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindlovedsongs.md"
     },
@@ -3773,9 +3773,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/kindmusicshowsandmovies.json": {
       "hash": "562c2a14e6c56560346815320d912380ae04772b8445b73b07e0bfeb459db4ba",
-      "last_checked": "2026-06-12T07:43:04.117671",
+      "last_checked": "2026-06-16T07:41:35.210160",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"10639fc0682ad60203d032cb102f3dba\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/kindmusicshowsandmovies.md"
     },
@@ -3789,9 +3789,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibdistinguishedplaylistkind/init(rawvalue:).json": {
       "hash": "52d5f139d40f1be7beacf150a573273040e1c44974f9ed1e0dc9e5b0636681dc",
-      "last_checked": "2026-06-12T07:43:04.244925",
+      "last_checked": "2026-06-16T07:41:35.388801",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d2f2f41d4892cb43f01b8bd6164a21c9\"",
       "file_path": "documentation/iTunesLibrary/itlibdistinguishedplaylistkind/init-rawvalue.md"
     },
@@ -3805,9 +3805,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindunknown.json": {
       "hash": "aa34737d13cc9a18ecfaded54c6a638456017a73fb8cb534e472db61fe9b4d45",
-      "last_checked": "2026-06-12T07:43:04.362720",
+      "last_checked": "2026-06-16T07:41:35.526086",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"2eb065baa1a1d5f2cca844f57979579c\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindunknown.md"
     },
@@ -3821,9 +3821,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindsong.json": {
       "hash": "299eaecc2ca124f48a0098f7bad8edfb79118cdb44940c4f7ab44f8e89e0ec9d",
-      "last_checked": "2026-06-12T07:43:04.496440",
+      "last_checked": "2026-06-16T07:41:35.719356",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a16e1d44cefb0e3517ab907191f9493e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindsong.md"
     },
@@ -3837,9 +3837,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindmovie.json": {
       "hash": "d8767505e7345f1a7ce4e93df8e250b4c4e3052f8507a5500bdd1f7f9f9f55dc",
-      "last_checked": "2026-06-12T07:43:04.602467",
+      "last_checked": "2026-06-16T07:41:35.899412",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8b8af7f2da15a6bf58aeadbf5f3be1dd\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindmovie.md"
     },
@@ -3853,9 +3853,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindpodcast.json": {
       "hash": "93f2bf04ff8f6534945be1fe8e21a5ab180d35c7f8c6bddfef6bbdc8b43c0d40",
-      "last_checked": "2026-06-12T07:43:04.760173",
+      "last_checked": "2026-06-16T07:41:36.058181",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"0950f14d151cbb20b33e3795c1353632\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindpodcast.md"
     },
@@ -3869,9 +3869,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindaudiobook.json": {
       "hash": "fefafda5bc325be7210b5bdc3631be47bf143dfe6a93cf4c69da98246d1f325b",
-      "last_checked": "2026-06-12T07:43:04.885080",
+      "last_checked": "2026-06-16T07:41:36.185847",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"2f77cbcfa12794c3d39c3c89704a8ab6\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindaudiobook.md"
     },
@@ -3885,9 +3885,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindpdfbooklet.json": {
       "hash": "f451c97580056ee18299a18868afa7cc6b8fc02925774746991b947be0ab0569",
-      "last_checked": "2026-06-12T07:43:05.004054",
+      "last_checked": "2026-06-16T07:41:36.369643",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"25a856dc007e0eb08778333a24fab438\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindpdfbooklet.md"
     },
@@ -3901,9 +3901,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindmusicvideo.json": {
       "hash": "3a04a68d12eb7269e537087580d8b32422fb4bac481e89692e109fcf44ec162e",
-      "last_checked": "2026-06-12T07:43:05.135886",
+      "last_checked": "2026-06-16T07:41:36.490211",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"df3ccb47f03537e378d3d0cc840fe30a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindmusicvideo.md"
     },
@@ -3917,9 +3917,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindtvshow.json": {
       "hash": "1e394a2772cbdc188ba4d5931a8cb5a19a26736d97f8b92c12f0e59593b4f359",
-      "last_checked": "2026-06-12T07:43:05.253447",
+      "last_checked": "2026-06-16T07:41:36.634080",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"326f1d7f9412333f89245d0b329060dd\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindtvshow.md"
     },
@@ -3933,9 +3933,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindinteractivebooklet.json": {
       "hash": "e0ccc7246ed77f437695ac9c18be84829f7e07482118f5017ec45ed8afe127d6",
-      "last_checked": "2026-06-12T07:43:05.380823",
+      "last_checked": "2026-06-16T07:41:36.799690",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"8c868b3484a34c9c230743908d99457a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindinteractivebooklet.md"
     },
@@ -3949,9 +3949,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindhomevideo.json": {
       "hash": "1608538799eb0d702017842cafced30b9778f1a0528d85864cb19e972d99f893",
-      "last_checked": "2026-06-12T07:43:05.490977",
+      "last_checked": "2026-06-16T07:41:36.983234",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"9b03ca948a90e6ba8af71696eb485f55\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindhomevideo.md"
     },
@@ -3965,9 +3965,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindringtone.json": {
       "hash": "c941ad0d88f89e9038bd851422525552bcd11473b57b963267c50fe834ecb5ba",
-      "last_checked": "2026-06-12T07:43:05.621347",
+      "last_checked": "2026-06-16T07:41:37.145054",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a00f6883d6f8006e94ab17c2f974673a\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindringtone.md"
     },
@@ -3981,9 +3981,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kinddigitalbooklet.json": {
       "hash": "2f0383932ac01b7959f33a45520dfdd36cc0bb0cb79fc4a4b5c723ac733331e5",
-      "last_checked": "2026-06-12T07:43:05.742982",
+      "last_checked": "2026-06-16T07:41:37.267988",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"51d54a2d0c98ebf5a934c947e42b58fb\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kinddigitalbooklet.md"
     },
@@ -3997,9 +3997,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindiosapplication.json": {
       "hash": "62ecacd1ad7573a14b156b7ab342a12e8db6967f131082c260b4649324fb8c32",
-      "last_checked": "2026-06-12T07:43:05.900117",
+      "last_checked": "2026-06-16T07:41:37.404496",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d609772672d402f1d2aac95f63a970dd\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindiosapplication.md"
     },
@@ -4013,9 +4013,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindvoicememo.json": {
       "hash": "c1c66a748510b051c4b93e8cf8429a828903f768303b04f5f0a6fc9347d65c8f",
-      "last_checked": "2026-06-12T07:43:06.015535",
+      "last_checked": "2026-06-16T07:41:37.598830",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"228e7ed9e87b55f1162760ed542b5e82\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindvoicememo.md"
     },
@@ -4029,9 +4029,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kinditunesu.json": {
       "hash": "906f028e8867b64a3be12b14ff5c08699a4e98ca632dc90f828600653722d143",
-      "last_checked": "2026-06-12T07:43:06.136136",
+      "last_checked": "2026-06-16T07:41:37.774937",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"7e5548be2723040070fddff9860e0407\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kinditunesu.md"
     },
@@ -4045,9 +4045,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindbook.json": {
       "hash": "72f45cde13034693cb98861e9b91e779b07d8a4f72fa98e3ccd786aa6e9dcee0",
-      "last_checked": "2026-06-12T07:43:06.266884",
+      "last_checked": "2026-06-16T07:41:37.906077",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d574a1f9ae0c035c671633b2cdb3576e\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindbook.md"
     },
@@ -4061,9 +4061,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindpdfbook.json": {
       "hash": "268a36e550bff6434abf66b72fe8f3432dfb87240cd5bdfd395b1c7fbdcb18f0",
-      "last_checked": "2026-06-12T07:43:06.402911",
+      "last_checked": "2026-06-16T07:41:38.059474",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"af89466920b133091b113434a81a1538\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindpdfbook.md"
     },
@@ -4077,9 +4077,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/kindalerttone.json": {
       "hash": "4edf4adff0c10c57ba27677eac7f7fef88f7378ca2ed21a959e258f53782384b",
-      "last_checked": "2026-06-12T07:43:06.550938",
+      "last_checked": "2026-06-16T07:41:38.286471",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f85d9501d17a5e59d89a107345fa72a5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/kindalerttone.md"
     },
@@ -4093,9 +4093,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemmediakind/init(rawvalue:).json": {
       "hash": "6fdad5084ee31b62ba3cb8e761b7e5dffd34f7d55365dc27297e544002201e1f",
-      "last_checked": "2026-06-12T07:43:06.678182",
+      "last_checked": "2026-06-16T07:41:38.409621",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"de0b6606a384a90303ecfa703921d0dc\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemmediakind/init-rawvalue.md"
     },
@@ -4109,9 +4109,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype/unknown.json": {
       "hash": "d90eea3e23325354984dd5c819e25f686b1589f8a961dc6b2a276cc0dc8840a5",
-      "last_checked": "2026-06-12T07:43:06.796909",
+      "last_checked": "2026-06-16T07:41:38.542772",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"875bc790a0384f6a7109ca2c41f171d5\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype/unknown.md"
     },
@@ -4125,9 +4125,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype/file.json": {
       "hash": "3c9214437d9b7acbc6da3010efb24a678ff2169b42cd69c838072277eef55975",
-      "last_checked": "2026-06-12T07:43:06.933287",
+      "last_checked": "2026-06-16T07:41:38.662742",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"49c66994eab51401e95df4764473efba\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype/file.md"
     },
@@ -4141,9 +4141,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype/url.json": {
       "hash": "6ec93325bb2162e7801f9dd85f0289131c4cd6d6d97d54876e9633668ef81b97",
-      "last_checked": "2026-06-12T07:43:07.063008",
+      "last_checked": "2026-06-16T07:41:38.784701",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"61f978d19d4b3de9a6eace58ec849489\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype/url.md"
     },
@@ -4157,9 +4157,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype/remote.json": {
       "hash": "71ab11f5162a5912a30dc1628139b963ae330eefbf011d6bf9454169f2a3974d",
-      "last_checked": "2026-06-12T07:43:07.179415",
+      "last_checked": "2026-06-16T07:41:38.913381",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"019568589d5532a9ff28f80d69f84e27\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype/remote.md"
     },
@@ -4173,9 +4173,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlocationtype/init(rawvalue:).json": {
       "hash": "0f94ac9fccf41156769005feb992ce1c5df8f81a7362bec915038f54edce92a6",
-      "last_checked": "2026-06-12T07:43:07.318830",
+      "last_checked": "2026-06-16T07:41:39.095248",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d153a8f7b6ac61a78061729c6578a89f\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlocationtype/init-rawvalue.md"
     },
@@ -4189,9 +4189,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlyricscontentrating/none.json": {
       "hash": "0f8e152b0a3cc08bdedf7f756b6a2cf6be5b6a742171791b10a74f9796d5aabd",
-      "last_checked": "2026-06-12T07:43:07.453355",
+      "last_checked": "2026-06-16T07:41:39.290019",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"057c5bf6f811acf523e311e92e67f6c3\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlyricscontentrating/none.md"
     },
@@ -4205,9 +4205,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlyricscontentrating/explicit.json": {
       "hash": "77ab851748a3208d37137ca442f36a97ceaec8793e8205180da3e8f6e4f09aaa",
-      "last_checked": "2026-06-12T07:43:07.569114",
+      "last_checked": "2026-06-16T07:41:39.407556",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"87fd17cae9b6dcbceebaa76eaebe76fe\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlyricscontentrating/explicit.md"
     },
@@ -4221,9 +4221,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlyricscontentrating/clean.json": {
       "hash": "3d79ff0ac6891a46036f01795fdc21e5026b6eabf8d409039bf23f79ed3aec90",
-      "last_checked": "2026-06-12T07:43:07.697198",
+      "last_checked": "2026-06-16T07:41:39.587362",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"32b8537cd3371297eedd989ec1353804\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlyricscontentrating/clean.md"
     },
@@ -4237,9 +4237,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemlyricscontentrating/init(rawvalue:).json": {
       "hash": "72644df2af929422b15ba92473d7a19931adae487ea60be373365ac199cd0a5e",
-      "last_checked": "2026-06-12T07:43:07.824543",
+      "last_checked": "2026-06-16T07:41:39.758524",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"a54c7ddad74fde7271accb7253ae1d86\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemlyricscontentrating/init-rawvalue.md"
     },
@@ -4253,9 +4253,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemplaystatus/none.json": {
       "hash": "6a670cf7330791849ae19580a98d26ebe8bf2808ab14dd10bc560e5a806abd78",
-      "last_checked": "2026-06-12T07:43:07.981886",
+      "last_checked": "2026-06-16T07:41:39.918044",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c418c5ad3d28b11311ee7b654c5cdb87\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemplaystatus/none.md"
     },
@@ -4269,9 +4269,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemplaystatus/partiallyplayed.json": {
       "hash": "3a67e933ffd033dee89d828f9b3c0fd0c15f6690f63f6aee2ff402106c410c27",
-      "last_checked": "2026-06-12T07:43:08.109883",
+      "last_checked": "2026-06-16T07:41:40.056377",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e7e7cc677adf0785959f16b588308626\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemplaystatus/partiallyplayed.md"
     },
@@ -4285,9 +4285,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemplaystatus/unplayed.json": {
       "hash": "fe86f51e6daded16663ab575ccf5e76bc66dc38ff6f64abe1a01461e15067e2a",
-      "last_checked": "2026-06-12T07:43:08.213969",
+      "last_checked": "2026-06-16T07:41:40.191912",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"54a69efbb0b6e8234ad252f42407d42d\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemplaystatus/unplayed.md"
     },
@@ -4301,9 +4301,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibmediaitemplaystatus/init(rawvalue:).json": {
       "hash": "11a87f0673a59b5642e7778a3646f182f9bf902cfef2e6bd2a4da62ab79c0e50",
-      "last_checked": "2026-06-12T07:43:08.352822",
+      "last_checked": "2026-06-16T07:41:40.369004",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"27dca2581f4ecb02ec104a0ef4300308\"",
       "file_path": "documentation/iTunesLibrary/itlibmediaitemplaystatus/init-rawvalue.md"
     },
@@ -4317,9 +4317,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/none.json": {
       "hash": "994a45464ba06f96d864a852d8ab4c483ae97c86cbcc1f597d37de797251c351",
-      "last_checked": "2026-06-12T07:43:08.472518",
+      "last_checked": "2026-06-16T07:41:40.504542",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"334e608c6288c2b1ecf8643840d6b4c0\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/none.md"
     },
@@ -4333,9 +4333,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/bitmap.json": {
       "hash": "4fd42781f5f89f2ce785d5ac0c918a20b9098aaa631c63a543ce0b304400b660",
-      "last_checked": "2026-06-12T07:43:08.579144",
+      "last_checked": "2026-06-16T07:41:40.676012",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"bc4ce8f926384317b8a67c6291c0a7b6\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/bitmap.md"
     },
@@ -4349,9 +4349,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/jpeg.json": {
       "hash": "01c692642d1ad78cbea1cbfc2c73575bf92ce3e3195cec71c59bf24c129f88d2",
-      "last_checked": "2026-06-12T07:43:08.698146",
+      "last_checked": "2026-06-16T07:41:40.846646",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"35b87bea11cbfd59f8b3caf4515a27a0\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/jpeg.md"
     },
@@ -4365,9 +4365,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/jpeg2000.json": {
       "hash": "9f3a06acd38f53b97f63e3d1a38c64a69cfffb4fcfb93047fbd09b2df6d73d1e",
-      "last_checked": "2026-06-12T07:43:08.819741",
+      "last_checked": "2026-06-16T07:41:41.014939",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f07ba79965e1d31cbd58a4ec312f3354\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/jpeg2000.md"
     },
@@ -4381,9 +4381,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/gif.json": {
       "hash": "cd24207d88d1dec6a96d32f7fc59d0b9448a040141ede39ecdd0e84260828084",
-      "last_checked": "2026-06-12T07:43:08.957767",
+      "last_checked": "2026-06-16T07:41:41.164957",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b9480286b5a0e402684165c840cb65ef\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/gif.md"
     },
@@ -4397,9 +4397,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/png.json": {
       "hash": "687e10f1cdd82f7c0f932bd564dfc306215f173d158486482a3464e35a6db1fd",
-      "last_checked": "2026-06-12T07:43:09.123344",
+      "last_checked": "2026-06-16T07:41:41.310238",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"380f0a9272f79cc7de0f140ad6d231d5\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/png.md"
     },
@@ -4413,9 +4413,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/bmp.json": {
       "hash": "d175aaa88d8bdd4182a078933ccace35f9d14db79a643879b6b4c26f1252a76c",
-      "last_checked": "2026-06-12T07:43:09.241726",
+      "last_checked": "2026-06-16T07:41:41.555558",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b3c63d15b09444e94072046cc4cf54ab\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/bmp.md"
     },
@@ -4429,9 +4429,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/tiff.json": {
       "hash": "a48331e87e5590384703a3e281c5e82e8b273adf5d4616214b5d6308b103d151",
-      "last_checked": "2026-06-12T07:43:09.378252",
+      "last_checked": "2026-06-16T07:41:41.693789",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"eb73c161608bb7c82f1be10512f6baa1\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/tiff.md"
     },
@@ -4445,9 +4445,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/pict.json": {
       "hash": "c09f7462cbefe78f4f09ae45bae9d2a34252ddb8741a1d3251c871314b68ebad",
-      "last_checked": "2026-06-12T07:43:09.498655",
+      "last_checked": "2026-06-16T07:41:41.886608",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"d9d08f16fb528e02a15e3c70cef5cdb3\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/pict.md"
     },
@@ -4461,9 +4461,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibartworkformat/init(rawvalue:).json": {
       "hash": "4fb885a49f3a42da80ccfa617cde7391931b9f785edbbfb72fc8fd91473d8404",
-      "last_checked": "2026-06-12T07:43:09.625828",
+      "last_checked": "2026-06-16T07:41:42.016850",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"b3145acc96bebb2bc8fab7f1bdca592c\"",
       "file_path": "documentation/iTunesLibrary/itlibartworkformat/init-rawvalue.md"
     },
@@ -4477,9 +4477,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/didchangelibrarymessage.json": {
       "hash": "72fa138a4384a4d41abff4d12e564ec382ab54c38aa2ceec4d1bcf0944051812",
-      "last_checked": "2026-06-12T07:42:28.325223",
+      "last_checked": "2026-06-16T07:40:55.839091",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"77510851b3c3d5b23e43416b282fa146\"",
       "file_path": "documentation/iTunesLibrary/didchangelibrarymessage.md"
     },
@@ -4509,9 +4509,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:)-71e74.json": {
       "hash": "99129b84589030c9a7cb8a847595bfcb369e76af693797a983c209638293a324",
-      "last_checked": "2026-06-12T07:42:28.712748",
+      "last_checked": "2026-06-16T07:40:56.133415",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e1dec44a2ec1f98a427bd0ea6e162f6b\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversion-71e74.md"
     },
@@ -4525,9 +4525,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:options:)-9eorg.json": {
       "hash": "b35d9af2f8cc8f15036492de34dcf50c7798a145d9e2e2e2b6fa53f718ef3cbf",
-      "last_checked": "2026-06-12T07:42:29.091630",
+      "last_checked": "2026-06-16T07:40:56.320618",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"4f0746dc9d4c15a882047b798186db7d\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversionoptions-9eorg.md"
     },
@@ -4541,9 +4541,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:)-1ryrd.json": {
       "hash": "cdc605ed4d386c4f375a7df37620c441fa25c91a039ada15da3079b9a0801cf0",
-      "last_checked": "2026-06-12T07:42:33.035586",
+      "last_checked": "2026-06-16T07:40:59.392424",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"065e12ad76c39946f5413d692b1e5e67\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversion-1ryrd.md"
     },
@@ -4557,9 +4557,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:)-2f5om.json": {
       "hash": "e98a21767e1f551cba2395e29601a893ee67a41205817b50325bd30913387ee5",
-      "last_checked": "2026-06-12T07:42:33.216985",
+      "last_checked": "2026-06-16T07:40:59.700771",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"c1528110bfdd64a9318a41b508756c68\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversion-2f5om.md"
     },
@@ -4573,9 +4573,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:options:)-3a3ng.json": {
       "hash": "d34965f0923d794cdf1df79018aa79e4c080e7fadb4df87687210c8912dead96",
-      "last_checked": "2026-06-12T07:42:33.551331",
+      "last_checked": "2026-06-16T07:40:59.999554",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"e12435a03084267d7037e6a95a0f7b3a\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversionoptions-3a3ng.md"
     },
@@ -4589,9 +4589,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/ituneslibrary/itlibrary/init(apiversion:options:)-d24u.json": {
       "hash": "b9f09fd023b6e25327201c6b516ac5410f5c88786940ca9d519f33e5d8a1570c",
-      "last_checked": "2026-06-12T07:42:33.731749",
+      "last_checked": "2026-06-16T07:41:00.122591",
       "status": "unchanged",
-      "session_id": "2026-06-12T07:42:25.613022",
+      "session_id": "2026-06-16T07:40:53.440441",
       "etag": "W/\"f9a21298330a1c53532e700111701472\"",
       "file_path": "documentation/iTunesLibrary/itlibrary/init-apiversionoptions-d24u.md"
     },

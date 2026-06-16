@@ -22,10 +22,6 @@ When the value of this property is [`true`](https://developer.apple.com/document
 
 - [var isEnabled: Bool](nsstatusitem/isenabled.md)
   A Boolean that indicates whether the status item is enabled to respond to clicks.
-- [var target: AnyObject?](nsstatusitem/target.md)
-  The target object to which the status item’s action message is sent when the status item is clicked.
-- [var action: Selector?](nsstatusitem/action.md)
-  The selector that is sent to the status item’s target when the status item is clicked.
 - [var doubleAction: Selector?](nsstatusitem/doubleaction.md)
   The selector that is sent to the status item’s target when the status item is double-clicked.
 - [func sendAction(on: NSEvent.EventTypeMask) -> Int](nsstatusitem/sendaction(on:).md)
@@ -42,8 +38,6 @@ When the value of this property is [`true`](https://developer.apple.com/document
   The alternate image to be displayed when a status bar item is highlighted.
 - [var toolTip: String?](nsstatusitem/tooltip.md)
   The tool tip string that is displayed when the cursor pauses over the status item.
-- [var view: NSView?](nsstatusitem/view.md)
-  The custom view that is displayed at the status item’s position in the status bar.
 - [func drawStatusBarBackground(in: NSRect, withHighlight: Bool)](nsstatusitem/drawstatusbarbackground(in:withhighlight:).md)
   Draws the menu background pattern for a custom status-bar item in regular or highlight pattern.
 

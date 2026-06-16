@@ -18,6 +18,7 @@ Xcode 27 beta includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, macOS 
 
 - When streaming `stdout` and `stderr` from multiple processes at the same time (for example: in parallel testing scenarios), the results may be significantly delayed.  (165098287)
 - Due to a timing issue with the installation package, Simulator devices may not appear in Device Hub.  (179040327) (FB22978070) **Workaround:** Reboot or `killall –9 CoreDeviceService`.
+- If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
 
 ##### Address Sanitizer
 

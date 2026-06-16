@@ -27,10 +27,6 @@ You can use this method to help a custom status-bar item emulate the behavior of
 
 - [var isEnabled: Bool](nsstatusitem/isenabled.md)
   A Boolean that indicates whether the status item is enabled to respond to clicks.
-- [var target: AnyObject?](nsstatusitem/target.md)
-  The target object to which the status item’s action message is sent when the status item is clicked.
-- [var action: Selector?](nsstatusitem/action.md)
-  The selector that is sent to the status item’s target when the status item is clicked.
 - [var doubleAction: Selector?](nsstatusitem/doubleaction.md)
   The selector that is sent to the status item’s target when the status item is double-clicked.
 - [func sendAction(on: NSEvent.EventTypeMask) -> Int](nsstatusitem/sendaction(on:).md)
@@ -49,8 +45,6 @@ You can use this method to help a custom status-bar item emulate the behavior of
   A Boolean that indicates whether the status item is highlighted when it is clicked.
 - [var toolTip: String?](nsstatusitem/tooltip.md)
   The tool tip string that is displayed when the cursor pauses over the status item.
-- [var view: NSView?](nsstatusitem/view.md)
-  The custom view that is displayed at the status item’s position in the status bar.
 
 
 ---

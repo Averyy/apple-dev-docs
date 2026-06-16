@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-06-12T08:55:54.112553",
+    "last_updated": "2026-06-16T08:53:37.002806",
     "total_files": 786,
     "source": "scrape_mlx_docs.py"
   },
@@ -776,8 +776,8 @@
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/wired-memory.md": "4d7b3e1fd1fe150096d2191441b3f3030aa9c22158c7ddbe69bbbd443ae66328",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.nn.fsdp_apply_gradients.html": "e6008d850c83334b3588e25425d7f0c7fc8da766fcd069101661c9eabc1aaccc",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/developing.md": "0c23f858032d9f8f8cded26a69d8b86121db62c169becd9b99d63e48d6cf0fe5",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "e0a994b7639c772c4a8ff577913663416ecc2f7cd3fb677d6d2bdb747d13611e",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/using.md": "68aae4248afcb65bc4f033e59722fddc9a5c833fe2af9c6b7dfcdd4f7a320cd5",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/upgrade.md": "2bf48d80f5f11f372bdc5f0ac90e5b7ddb05d7a5b31500b91708ddec410662fa",
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/using.md": "fbddd56336ba56ed131e03c0b4324b4726ca5a15cf62f68f2eba8e5b5ef25e69",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.PrintOptions.html": "5b1951c4405ae99c5fa5ba94e989e7d95a0572f6fce5bf63d655e0057c410ebe",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.clear_streams.html": "ffd049203d5acea9aeb17f7ccf1fde178c0cd5639695305527939322d536deda",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fft.fftfreq.html": "2701aa34881ade4914cdc6805017b46a577eb0e06a15e15dd1751b066048a3db",

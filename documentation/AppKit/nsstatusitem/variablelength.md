@@ -22,6 +22,8 @@ class let variableLength: CGFloat
   The amount of space in the status bar that should be allocated to the status item.
 - [class let squareLength: CGFloat](nsstatusitem/squarelength.md)
   A status item length that is equal to the status bar’s thickness.
+- [var view: NSView?](nsstatusitem/view.md)
+  The custom view the status item displays at its position in the status bar.
 
 
 ---
