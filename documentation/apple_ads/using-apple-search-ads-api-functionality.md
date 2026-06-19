@@ -36,10 +36,6 @@ The following is an example POST request to [`Create a Campaign`](create-a-campa
     "supplySources": ["APPSTORE_SEARCH_RESULTS"],
     "billingEvent": "TAPS",  
     "name": "campaign 1",
-    "budgetAmount": {
-        "amount": "2000",
-        "currency": "USD"
-     },
     "dailyBudgetAmount": {
         "amount": "300", 
         "currency": "USD"
@@ -57,10 +53,6 @@ A response resembles the following:
         "id": 542317095,
         "orgId": 40669820,
         "name": "example campaign",
-        "budgetAmount": {
-            "amount": "2000",
-            "currency": "USD"
-        },
         "dailyBudgetAmount": {
             "amount": "300",
             "currency": "USD"

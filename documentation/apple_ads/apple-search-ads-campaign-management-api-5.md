@@ -10,6 +10,12 @@ API 5 is the current version.
 
 The new Apple Ads Platform API will be coming in Summer 2026. To learn more about the new Platform API, see the [`preview guide`](https://developer.apple.comhttps://ads.apple.com/adsdam/app-store/us/en_us/documents/api-preview-guide.pdf). The Apple Ads Campaign Management API will be sunset on January 26, 2027.
 
+##### 56
+
+Released in June, 2026
+
+Lifetime budgets have been deprecated and the `budgetAmount` field has been removed from the API and documentation. When calling the API, use `dailyBudgetAmount`.
+
 ##### 55
 
 Released in February, 2026

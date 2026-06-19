@@ -98,7 +98,7 @@ The StoreKit framework also provides functionality for [`External Purchase`](ext
 - [App Store Server Notifications](../AppStoreServerNotifications/AppStoreServerNotifications.md)
   Monitor In-App Purchase events in real time and learn of unreported external purchase tokens, with server notifications from the App Store.
 - [App Store Connect API](../AppStoreConnectAPI/AppStoreConnectAPI.md)
-  Automate the tasks you perform on the Apple Developer website and in App Store Connect.
+  The data structure that represents an app store connect api resource.
 - [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md)
   Support In-App Purchases through the App Store for exceptionally large catalogs of custom one-time purchases, subscriptions, and subscriptions with optional add-ons.
 - [App Store Receipts](../AppStoreReceipts/AppStoreReceipts.md)

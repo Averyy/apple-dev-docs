@@ -12,15 +12,17 @@ An alternative app marketplace can reference [`catalogRegion`](applibrary/catalo
 
 An app that installs from an alternative app marketplace can reference [`eligibilityRegion`](appdistributor/eligibilityregion.md) to determine if it needs to report transactions for the Core Technology Commission.
 
-#### Develop for Alternative Distribution in Japan
+#### Develop for Alternative Distribution in Japan and Brazil
 
-In Japan, you can distribute your app on an alternative app marketplace—or create one—according to the following region-specific criteria.
+In Japan and Brazil, you can distribute your app on an alternative app marketplace—or create one—according to the following region-specific criteria.
 
-To distribute your app from an alternative app marketplace in Japan, review and sign the latest [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement). Apps that reside on alternative marketplaces need to support iPhone.
+To distribute your app from an alternative app marketplace, review and sign the latest [`Developer Program License Agreement`](https://developer.apple.comhttps://developer.apple.com/programs/apple-developer-program-license-agreement). Apps that reside on alternative marketplaces need to support iPhone.
 
-To create an alternative app marketplace, request approval to use the marketplace entitlement by [`Getting started as an alternative app marketplace in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-jp/). Alternative app marketplaces support iPhone and are available in Xcode 15.3, iOS 26.2 and later. For information on SDK versions and deployment targets, see [`Xcode support`](https://developer.apple.comhttps://developer.apple.com/support/xcode).
+To create an alternative app marketplace, request approval to use the marketplace entitlement in each region that you plan to operate in, through [`Operating an alternative app marketplace in Japan`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-jp/) or [`Operating an alternative app marketplace in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/alternative-app-marketplace-br/). Alternative app marketplaces support iPhone and are available in Xcode 15.3, iOS 26.2 and later for Japan, and iOS 26.5 and later for Brazil. For information on SDK versions and deployment targets, see [`Xcode support`](https://developer.apple.comhttps://developer.apple.com/support/xcode).
 
 Only alternative app marketplaces install from a website. When you receive approval to develop an alternative app marketplace, it also grants your ability to distribute it over the web.
+
+In iOS 26.2 and later for Japan, and iOS 26.5 and later for Brazil, development builds of browser apps with the default browser entitlement ([`com.apple.developer.web-browser`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.web-browser)) can test the installation of app marketplaces.
 
 #### Develop for Alternative Distribution in the European Union
 

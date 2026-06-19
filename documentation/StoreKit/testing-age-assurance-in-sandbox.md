@@ -30,11 +30,12 @@ When you select a scenario, the Declared Age Range API returns the corresponding
 
 | Test case | Lower bound | Upper bound | Age declaration | Significant app update notification | PermissionKit response |
 | --- | --- | --- | --- | --- | --- |
-| Under 13, approved | — | 12 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
-| Ages 13 - 15, approved | 13 | 15 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
-| Ages 16 - 17, declined | 16 | 17 | [`guardianPaymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardianpaymentchecked) | True | [`decline`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/decline) |
-| 18+, self declared | 18 | — | [`selfDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/selfdeclared) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
-| 18+, payment checked | 18 | — | [`paymentChecked`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/paymentchecked) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
+| Under 13, significant change approved | — | 12 | [`guardianDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiandeclared) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
+| 13 - 15, significant change approved | 13 | 15 | [`guardianDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiandeclared) | True | [`approve`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/approve) |
+| 16 - 17, significant change declined | 16 | 17 | [`guardianDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/guardiandeclared) | True | [`decline`](https://developer.apple.com/documentation/PermissionKit/PermissionChoice/decline) |
+| 18+, age not confirmed, significant change not applicable | 18 | — | [`selfDeclared`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/selfdeclared) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
+| 18+, age confirmed, significant change not applicable | 18 | — | [`confirmed`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/confirmed) | False | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
+| 18+, age confirmed, significant change applicable | 18 | — | [`confirmed`](https://developer.apple.comhttps://developer.apple.com/documentation/declaredagerange/agerangeservice/agerangedeclaration/confirmed) | True | [`AskError.notAvailable`](https://developer.apple.com/documentation/PermissionKit/AskError/notAvailable) |
 
 > **Note**: For 18+ test cases, PermissionKit throws `AskError.notAvailable` rather than returning a `PermissionChoice`. Calling `AskCenter.ask(_:)` for an adult user throws this error because they don’t meet the requirements for parental permission requests.
 
@@ -52,20 +53,6 @@ To test the notification when a parent or guardian revokes access to your app on
 6. Confirm that the system displays “Notification Triggered” with the message “A notification will be sent to the developer server soon.”
 
 If you have [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) enabled, your server receives a `RESCIND_CONSENT` [`notificationType`](https://developer.apple.com/documentation/AppStoreServerNotifications/notificationType). The notification payload includes an [`appData`](https://developer.apple.com/documentation/AppStoreServerNotifications/appData) object with app metadata, including the `bundleId` and `environment` fields that help you check the notification applies to the correct app and test environment.
-
-##### Create Region Specific Sandbox Test Accounts
-
-To test age assurance flows in different regions, create sandbox test accounts with specific App Store territories in App Store Connect.
-
-> ❗ **Important**: You need an active Apple Developer account and Admin or Account Holder role in App Store Connect to create sandbox testers.
-
-1. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com).
-2. Go to Users and Access.
-3. Select the Sandbox tab in the left sidebar.
-4. Click Test Accounts.
-5. Click the Add button (+) to add a new test account and fill in the required fields: First Name / Last Name, Email Address, Password, Date of Birth, and App Store Territory.
-6. In the App Store Territory pull-down menu, choose the storefront the sandbox account simulates. Choose from any available App Store regions.
-7. Click Create to finalize the sandbox tester account.
 
 
 ---

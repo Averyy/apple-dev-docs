@@ -14,7 +14,7 @@ You can review these reports if you have any of these API key roles:
 - `SALES_AND_REPORTS`
 - `FINANCE`
 
-> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download Sales and Trends Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-salesReports) but can’t access [`Download Finance Reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-financeReports) endpoint.
+> **Note**: If you share an API key for your developer account with a third party for analyzing or processing your reports, select the SALES_AND_REPORTS role when generating a new key. This role can access to [`Download sales and trends reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-salesReports) but can’t access [`Download finance reports`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-financeReports) endpoint.
 
 ##### Download and Process Reports
 

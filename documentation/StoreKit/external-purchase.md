@@ -18,6 +18,7 @@ If you develop a qualifying app, you may complete a request for optional entitle
 - [`Distributing apps in Russia that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/contact/request/storekit-external-entitlement-ru/)
 - [`Distributing apps using a third-party payment provider in South Korea`](https://developer.apple.comhttps://developer.apple.com/support/storekit-external-entitlement-kr/)
 - [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/)
+- [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil)
 - [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan)
 
 Use the API based on the entitlements your app receives and the regions where your app runs.
@@ -41,6 +42,16 @@ If your account receives the StoreKit External Purchase Link entitlement or the 
 - Call the [`showNotice(type:)`](externalpurchasecustomlink/shownotice(type:).md) function after a deliberate customer interaction, such as tapping a button, that can lead to a potential external purchase.
 - From your server, report the external purchase tokens and the transactions associated with the tokens by using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI).
 
+##### Implement External Purchase for Apps Available in Brazil
+
+If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Brazil your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.5.  To use this API, complete the following steps:
+
+- Configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
+- Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
+- Call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
+- Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
+- Report the external purchase tokens and the transactions associated with the tokens using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI). Otherwise, report transactions as indicated in [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
+
 ##### Implement External Purchase for Apps Available in Japan
 
 If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Japan your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.2.  To use this API, complete the following steps:
@@ -53,7 +64,7 @@ If your account receives the StoreKit External Custom Purchase Link Regions enti
 
 ##### Implement External Purchase for Music Streaming Apps in the European Economic Area Eea
 
-If your account receives the Music Streaming Services EEA entitlement, your music-streaming app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases. To use this API, complete the following steps:
+If your account receives the Music Streaming Services EEA entitlement, your music streaming app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases. To use this API, complete the following steps:
 
 - Configure the [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming) entitlement for your app and the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions) property list key, providing the country code for each permitted region where your app implements external purchase.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether external purchase is available at runtime. If the value is `false`, don’t continue to use this API. See [`isEligible`](externalpurchasecustomlink/iseligible.md) for more details.
@@ -92,7 +103,7 @@ An external purchase token is a unique string that your app or website receives 
 The External Purchase APIs, including [`ExternalPurchaseLink`](externalpurchaselink.md), [`ExternalPurchase`](externalpurchase.md), and [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) provide *external purchase tokens* that you use to report transactions to Apple:
 
 - [`ExternalPurchaseLink`](externalpurchaselink.md) and [`ExternalPurchase`](externalpurchase.md) are available starting in iOS 17.4, iPadOS 17.4, macOS 14.4, Mac Catalyst 17.4, tvOS 17.4, visionOS 1.1, and watchOS 10.4.
-- [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) is available starting in iOS 18.1, iPadOS 18.1, Mac Catalyst 18.1, and macOS 15.1; for use in Japan, it’s available starting in iOS 26.2, with [`token(for:)`](externalpurchasecustomlink/token(for:).md) available starting in iOS 26.4.
+- [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) is available starting in iOS 18.1, iPadOS 18.1, Mac Catalyst 18.1, and macOS 15.1; for use in Brazil, it and [`token(for:)`](externalpurchasecustomlink/token(for:).md) are available starting in iOS 26.5; for use in Japan, it’s available starting in iOS 26.2, with [`token(for:)`](externalpurchasecustomlink/token(for:).md) available starting in iOS 26.4.
 
 For apps that run on iOS 15.4 through 17.3 and iPadOS 15.4 through 17.3, the External Purchase APIs have the following behavior:
 

@@ -17,12 +17,9 @@ object CampaignUpdate
 ## Properties
 
 - `biddingStrategy` (string): The bidding strategy for the campaign.
-- `budgetAmount` (Money): The lifetime budget amount available to a campaign. - Campaigns require a `dailyBudgetAmount` or a `budgetAmount`, or both.
-- If you update a `budgetAmount`, the updated amount must be greater than the previous `budgetAmount` and must exceed the lifetime spend of the campaign. You can use the `EQUALS`, `LESS_THAN`, and `GREATER_THAN` selector [`Condition`](condition.md) operators with [`Find Campaigns`](find-campaigns.md). This field is updatable.
 - `budgetOrders` ([int64]): The budget orders that you assign to the campaign. This applies only to campaigns with monthly invoicing. Refer to the [`Apple Ads Advanced help`](https://developer.apple.comhttps://ads.apple.com/help/billing/0031-monthly-invoicing) for billing details.
 - `countriesOrRegions` ([string]): The App Store geoterritories where you’re promoting your app. The default value is `US`. This field requires an ISO country code value for the locations where you’re promoting.
-- `dailyBudgetAmount` (Money): Your daily budget. - Campaigns require a `dailyBudgetAmount` or a `budgetAmount`, or both.
-- Your `dailyBudgetAmount` must be less than your `budgetAmount`.
+- `dailyBudgetAmount` (Money): Your daily budget. - Campaigns require a `dailyBudgetAmount`.
 - Your `dailyBudgetAmount` must be greater than or equal to the `defaultBidAmount` in your [`AdGroup`](adgroup.md). You can use the `EQUALS`, `LESS_THAN`, and `GREATER_THAN` selector [`Condition`](condition.md) operators with [`Find Campaigns`](find-campaigns.md). This field is updatable.
 - `locInvoiceDetails` (LOCInvoiceDetails): The standard invoice details you can set and edit using the [`LOCInvoiceDetails`](locinvoicedetails.md) object.
 - `name` (string): The name of the campaign, which is unique within an organization.

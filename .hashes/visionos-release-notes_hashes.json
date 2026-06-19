@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:44:44.500966",
+    "last_updated": "2026-06-19T07:45:28.150444",
     "total_pages": 40,
-    "session_id": "2026-06-16T07:44:41.485851"
+    "session_id": "2026-06-19T07:45:24.239702"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes.json": {
       "hash": "6b2c4d83ac6846d00ec103b311152917bd39c5bf7fbcbe32ae4e1a38fc56983b",
-      "last_checked": "2026-06-16T07:44:41.804118",
+      "last_checked": "2026-06-19T07:45:24.499686",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"8edb884fe3173b23e8d0e7b8e1a5866d\"",
       "file_path": "documentation/visionos-release-notes/visionos-release-notes.md"
     },
     "https://developer.apple.com/documentation/visionos-release-notes": {
       "hash": "6b2c4d83ac6846d00ec103b311152917bd39c5bf7fbcbe32ae4e1a38fc56983b",
-      "last_checked": "2026-06-16T07:44:41.687835",
+      "last_checked": "2026-06-19T07:45:24.399833",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"8edb884fe3173b23e8d0e7b8e1a5866d\"",
       "file_path": "documentation/visionos-release-notes/visionos-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26-release-notes.json": {
       "hash": "3606c7640e607adbe793865546d0659ec93801ed4449da6e8216fef825f89508",
-      "last_checked": "2026-06-16T07:44:43.001481",
+      "last_checked": "2026-06-19T07:45:26.202331",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"3ae371aea3b8a04faeaeb707000a7b4c\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_5-release-notes.json": {
       "hash": "c66665d20d0bfb8d618a8547020030e715f369bd2c8c55d6931176d94020428a",
-      "last_checked": "2026-06-16T07:44:43.217473",
+      "last_checked": "2026-06-19T07:45:26.676776",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"6a0317c8e78ec2ae7d14c1b687fc5073\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_4-release-notes.json": {
       "hash": "5ae8fa1383f277b9b9b0585cbf13756c5d93f9de925579d20728d6921e115b6b",
-      "last_checked": "2026-06-16T07:44:43.331089",
+      "last_checked": "2026-06-19T07:45:26.862548",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"56d01bd3105ccad233b863cd15217ca9\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_3-release-notes.json": {
       "hash": "b73788608e16e2af5b07f07192cb7ceb205079a3f3f74a7e73bff585c3757ab2",
-      "last_checked": "2026-06-16T07:44:43.446119",
+      "last_checked": "2026-06-19T07:45:27.037780",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"ece8e3d5098f2f73fa24a5e713016729\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_2-release-notes.json": {
       "hash": "27c9f2aafa4f8edd7acbeff453e4cec52dfb5fc20dd50963119941eca7546f65",
-      "last_checked": "2026-06-16T07:44:43.575221",
+      "last_checked": "2026-06-19T07:45:27.177168",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"3a8bf51bccb6abb396d9be38bc83aa18\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_1-release-notes.json": {
       "hash": "269c304590f5da50fa3c019c00cac9f0a650da2f91772a6fb246436e48bf7025",
-      "last_checked": "2026-06-16T07:44:43.693401",
+      "last_checked": "2026-06-19T07:45:27.360603",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"29dd51695cf4317abdd578a2c90e4cc7\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2-release-notes.json": {
       "hash": "e25499ca7289a2045d3857493bd0678aabc6f2a4bb8cd19bb767733c42275224",
-      "last_checked": "2026-06-16T07:44:44.028273",
+      "last_checked": "2026-06-19T07:45:27.530177",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"9c9cf706814dc16fbbdad92ef7a69cc3\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-1_3-release-notes.json": {
       "hash": "d5c90a9bf70a1bcd66ffb8f52237dab33ff6096585ce4874f449e1dc39f0b7c2",
-      "last_checked": "2026-06-16T07:44:44.138216",
+      "last_checked": "2026-06-19T07:45:27.681562",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"b2902415688df7b0e9b1ada09902a6ea\"",
       "file_path": "documentation/visionos-release-notes/visionos-1-3-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-1_2-release-notes.json": {
       "hash": "7e3ac2285c3ff2c4162d3de82207d3c27a6c3ffc85e757d95db445f96ac0f7bb",
-      "last_checked": "2026-06-16T07:44:44.257222",
+      "last_checked": "2026-06-19T07:45:27.814284",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"03b1e2713c5e1c9eebe01ea123baf436\"",
       "file_path": "documentation/visionos-release-notes/visionos-1-2-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-1_1-release-notes.json": {
       "hash": "cf6cecb63dc57d34eee98e7c35a1082b68b012b832b6de43ca628c43b99e29ee",
-      "last_checked": "2026-06-16T07:44:44.375590",
+      "last_checked": "2026-06-19T07:45:27.944413",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"156ebfcf9700b053b8ab3400b43d2438\"",
       "file_path": "documentation/visionos-release-notes/visionos-1-1-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-release-notes.json": {
       "hash": "da25fd01e788b62041ebb7cb46883880f3e0a044e70468713b0d55948fc89ef3",
-      "last_checked": "2026-06-16T07:44:44.499314",
+      "last_checked": "2026-06-19T07:45:28.143283",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"007c0563df65c3b2b19e6cc9990d11f8\"",
       "file_path": "documentation/visionos-release-notes/visionos-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-2_6-release-notes.json": {
       "hash": "7b785bbde4c12cae65f80d813905dadb14595b4b11f5cdac72d26e8d831dd12c",
-      "last_checked": "2026-06-16T07:44:43.111606",
+      "last_checked": "2026-06-19T07:45:26.505167",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"171962733589ca7a90bd1af9a7fce730\"",
       "file_path": "documentation/visionos-release-notes/visionos-2-6-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_3-release-notes.json": {
       "hash": "362fe3e56d2f72e77c6e9fc84e75bdf56a93295ee3651cc52020f62cdb5d8437",
-      "last_checked": "2026-06-16T07:44:42.519284",
+      "last_checked": "2026-06-19T07:45:25.642982",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"02876e89418d8c57a9466b740d75cf07\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-3-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_2-release-notes.json": {
       "hash": "b758d911ba794fa9a97361a98c3a087ab0bf67bcf1c9d6781015dfb2f01862ca",
-      "last_checked": "2026-06-16T07:44:42.751776",
+      "last_checked": "2026-06-19T07:45:25.841361",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"566238b5afd313203cbbff91dda122e0\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-2-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_1-release-notes.json": {
       "hash": "9f9f300a584da30b1c642a342a7a96497b27203babe1a9ae556a11bf40cec1d1",
-      "last_checked": "2026-06-16T07:44:42.864506",
+      "last_checked": "2026-06-19T07:45:26.007839",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"02ca4aff87e2a77a69463eb70a208e17\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-1-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_4-release-notes.json": {
       "hash": "5d2571b64b4225c6c10d66b4712f1cb40163814574c51bf03fb827cf82bbd0db",
-      "last_checked": "2026-06-16T07:44:42.407850",
+      "last_checked": "2026-06-19T07:45:25.327864",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"2f76d4be1c48a43b31c427c3b86747b9\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-4-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_5-release-notes.json": {
       "hash": "67197e6f38bc2d3e06975346ebdbb579769e82820f159ab2912017b1e5abdcc0",
-      "last_checked": "2026-06-16T07:44:42.291554",
+      "last_checked": "2026-06-19T07:45:25.038309",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"88c15efee020a05c8232a8d7f664c32a\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-5-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-26_6-release-notes.json": {
       "hash": "e2e37f94d7d9f6a308b4ce683d1e89273db4ea002b71125a797df40b0a652f96",
-      "last_checked": "2026-06-16T07:44:42.176173",
+      "last_checked": "2026-06-19T07:45:24.912332",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"e278f7ccd2d71162a93ff5f8573e6780\"",
       "file_path": "documentation/visionos-release-notes/visionos-26-6-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/visionos-release-notes/visionos-27-release-notes.json": {
       "hash": "3f005bc6ce8e80056edb0db7c2a048be37b1d1066e6ad7dabd186a02196e75ae",
-      "last_checked": "2026-06-16T07:44:42.064753",
+      "last_checked": "2026-06-19T07:45:24.742872",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.485851",
+      "session_id": "2026-06-19T07:45:24.239702",
       "etag": "W/\"3126d3bf9463055ce645436011117530\"",
       "file_path": "documentation/visionos-release-notes/visionos-27-release-notes.md"
     },

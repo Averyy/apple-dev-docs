@@ -51,10 +51,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns/find
       "id": 542370642,
       "orgId": 40669820,
       "name": "TripTrek example campaign",
-      "budgetAmount": {
-        "amount": "2000",
-        "currency": "USD"
-      },
       "dailyBudgetAmount": {
         "amount": "500",
         "currency": "USD"
@@ -134,10 +130,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns/find
       "id": 542370642,
       "orgId": 40669820,
       "name": "TripTrek example campaign",
-      "budgetAmount": {
-        "amount": "2000",
-        "currency": "USD"
-      },
       "dailyBudgetAmount": {
         "amount": "500",
         "currency": "USD"

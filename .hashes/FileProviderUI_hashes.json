@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:44:45.544014",
+    "last_updated": "2026-06-19T07:45:27.824900",
     "total_pages": 39,
-    "session_id": "2026-06-16T07:44:41.508613"
+    "session_id": "2026-06-19T07:45:24.570868"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/FileProviderUI.json": {
       "hash": "39ee79fc929892363ec38e9f3cf8ba3912c18e584095c253b963be0630815079",
-      "last_checked": "2026-06-16T07:44:41.815856",
+      "last_checked": "2026-06-19T07:45:24.816613",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"eb818fde4486bbf7e7b464c193ecd858\"",
       "file_path": "documentation/FileProviderUI/FileProviderUI.md"
     },
     "https://developer.apple.com/documentation/FileProviderUI": {
       "hash": "39ee79fc929892363ec38e9f3cf8ba3912c18e584095c253b963be0630815079",
-      "last_checked": "2026-06-16T07:44:41.708213",
+      "last_checked": "2026-06-19T07:45:24.723671",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"eb818fde4486bbf7e7b464c193ecd858\"",
       "file_path": "documentation/FileProviderUI/FileProviderUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/adding-actions-to-the-context-menu.json": {
       "hash": "75b7bab164417d7f351b5dd3a5f7bb460555ea06419099efcbbc184fe838443b",
-      "last_checked": "2026-06-16T07:44:42.095319",
+      "last_checked": "2026-06-19T07:45:25.112888",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"34448445ab16901f989fd5cd0aaf93af\"",
       "file_path": "documentation/FileProviderUI/adding-actions-to-the-context-menu.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensionviewcontroller.json": {
       "hash": "4fa8f0deb6af7d33cb86673614ece711bd4e4a4c65fa50681d1d679965c20159",
-      "last_checked": "2026-06-16T07:44:42.409987",
+      "last_checked": "2026-06-19T07:45:25.243096",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"3527524f9cb4c3ee6caec80f9176a565\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensionviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiextensionerrorcode.json": {
       "hash": "b968a131acc1306b13ae1ed7416402b64ef5e7b9e812a8e724c398d7db918a13",
-      "last_checked": "2026-06-16T07:44:42.649556",
+      "last_checked": "2026-06-19T07:45:25.432890",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"5ead8a9677badb59f5c660a4b7292faa\"",
       "file_path": "documentation/FileProviderUI/fpuiextensionerrorcode.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuierrordomain.json": {
       "hash": "a5e1a2b5eff63ecae03d10c308c32304bc311e24b7e2b104074e7304fe3fc0be",
-      "last_checked": "2026-06-16T07:44:42.807940",
+      "last_checked": "2026-06-19T07:45:25.546196",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"15bbce519c81a4471be010b044d025e4\"",
       "file_path": "documentation/FileProviderUI/fpuierrordomain.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fileproviderui-data-types.json": {
       "hash": "665f8b4cc93a33f37ff54cf782421dc8cc81f6b91935521c3311de4e131a36c7",
-      "last_checked": "2026-06-16T07:44:42.978695",
+      "last_checked": "2026-06-19T07:45:25.726918",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"a4633b1cf166195e2f1021877ffd5c1f\"",
       "file_path": "documentation/FileProviderUI/fileproviderui-data-types.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensionviewcontroller/prepare(foraction:itemidentifiers:).json": {
       "hash": "62775cb2aa314629947b3a3561f687695a2414362351c3670b066c6a3249eb45",
-      "last_checked": "2026-06-16T07:44:43.145062",
+      "last_checked": "2026-06-19T07:45:25.888306",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"28695c884a0503fc7b6f8a2c2f25e26b\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensionviewcontroller/prepare-foractionitemidentifiers.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensionviewcontroller/prepare(forerror:).json": {
       "hash": "bdcc19cf194626693508c27cc9ba334c3e770bae7badeb480f943ab7efa737ce",
-      "last_checked": "2026-06-16T07:44:43.326449",
+      "last_checked": "2026-06-19T07:45:26.017259",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"65bfc31334056304cd2af08ef66d9e3a\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensionviewcontroller/prepare-forerror.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensionviewcontroller/extensioncontext.json": {
       "hash": "0fe0c96b87f1dc1cfa389a3b4544ddbbfb3d9f601c2e7288ea8d18d0cd0d51da",
-      "last_checked": "2026-06-16T07:44:43.494372",
+      "last_checked": "2026-06-19T07:45:26.188111",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"20cb69a06e30ffc1d89c231c74a0fb64\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensionviewcontroller/extensioncontext.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensioncontext.json": {
       "hash": "41194921b9f35bfd4d065e480f666dcd4dafb06f0ee7c3a8b96f1ce2e5f763d4",
-      "last_checked": "2026-06-16T07:44:43.660315",
+      "last_checked": "2026-06-19T07:45:26.380268",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"dccf221963ea6842cabdeb0e0b8b0070\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiextensionerrorcode/failed.json": {
       "hash": "a3ba757404854a15a2e7ffa3bcef33ef4bd85d1ba9bd5e1ce60f0b7532ed3402",
-      "last_checked": "2026-06-16T07:44:43.947430",
+      "last_checked": "2026-06-19T07:45:26.668513",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"07a2f46ac984ee41b7136253e2aa37ac\"",
       "file_path": "documentation/FileProviderUI/fpuiextensionerrorcode/failed.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiextensionerrorcode/usercancelled.json": {
       "hash": "ca36fae62e3cdc9c4b9ec3dbb751b2c07c7386423527b4d90fc70a111a692144",
-      "last_checked": "2026-06-16T07:44:44.127060",
+      "last_checked": "2026-06-19T07:45:26.783327",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"87c25250bd32be8f8952d921192e2c28\"",
       "file_path": "documentation/FileProviderUI/fpuiextensionerrorcode/usercancelled.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiextensionerrorcode/init(rawvalue:).json": {
       "hash": "37a3adb10d3daf33be74e0e050d676ef86ed36af1946dcab232700f6fb8c5849",
-      "last_checked": "2026-06-16T07:44:44.429063",
+      "last_checked": "2026-06-19T07:45:26.919920",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"9676648308138032a5b207c50b78597f\"",
       "file_path": "documentation/FileProviderUI/fpuiextensionerrorcode/init-rawvalue.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionidentifier.json": {
       "hash": "08dc256a8ea4361bfb3481cd669349442c1bf4c5e086717fdb5c488d526d230f",
-      "last_checked": "2026-06-16T07:44:44.606928",
+      "last_checked": "2026-06-19T07:45:27.117903",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"0de64cc41bb0fde15c73bdeb5ec3dc7a\"",
       "file_path": "documentation/FileProviderUI/fpuiactionidentifier.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensioncontext/completerequest().json": {
       "hash": "4d12f146af82bc50cc220545d5e62555c8252e259dcc57bdfb66432ca6d4b5df",
-      "last_checked": "2026-06-16T07:44:44.819248",
+      "last_checked": "2026-06-19T07:45:27.264361",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"bf3f03fbb79e0a58896680a7add305d6\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext/completerequest.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensioncontext/cancelrequest(witherror:).json": {
       "hash": "3aec708f11593c67880e481fdd2563780f6b0f72b45576d7a5a4775dc8afd7e1",
-      "last_checked": "2026-06-16T07:44:44.992419",
+      "last_checked": "2026-06-19T07:45:27.376046",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"9e5fe890e3635efead5b29cfb0f858f6\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext/cancelrequest-witherror.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionextensioncontext/domainidentifier.json": {
       "hash": "84265ae74813a282460833cf05cd7c135bfc23f9c3c3de00981b42f9f8363b4c",
-      "last_checked": "2026-06-16T07:44:45.167495",
+      "last_checked": "2026-06-19T07:45:27.537216",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"745f2795889051362bb3cc554cdcd9cc\"",
       "file_path": "documentation/FileProviderUI/fpuiactionextensioncontext/domainidentifier.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionidentifier/init(_:).json": {
       "hash": "b35e2c6d570c30b1ba484e534256d1bd2c85a44ee81b21d9a04e4e570fb13149",
-      "last_checked": "2026-06-16T07:44:45.352171",
+      "last_checked": "2026-06-19T07:45:27.663274",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"2afc7baf13f4c4afd28938fa958cae42\"",
       "file_path": "documentation/FileProviderUI/fpuiactionidentifier/init.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/fileproviderui/fpuiactionidentifier/init(rawvalue:).json": {
       "hash": "05cb41c8a0237f4ef6d8656bb3255484503f2fb24a61367bd21d6d03767c76a9",
-      "last_checked": "2026-06-16T07:44:45.522460",
+      "last_checked": "2026-06-19T07:45:27.821420",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:41.508613",
+      "session_id": "2026-06-19T07:45:24.570868",
       "etag": "W/\"6e13ec26cfa15ec30de5cf9ac5230cec\"",
       "file_path": "documentation/FileProviderUI/fpuiactionidentifier/init-rawvalue.md"
     },

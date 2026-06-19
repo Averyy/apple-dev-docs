@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:43:42.852885",
+    "last_updated": "2026-06-19T07:44:21.705818",
     "total_pages": 225,
-    "session_id": "2026-06-16T07:43:20.335142"
+    "session_id": "2026-06-19T07:44:01.383744"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/IOBluetoothUI.json": {
       "hash": "2165f0de243e4d2cf4c0d5c9d3e01a468badb873aa68904b7fe957f0287503f6",
-      "last_checked": "2026-06-16T07:43:20.631535",
+      "last_checked": "2026-06-19T07:44:01.774855",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"bb3bd1b8aaf13a07fb11341497ce2e15\"",
       "file_path": "documentation/IOBluetoothUI/IOBluetoothUI.md"
     },
     "https://developer.apple.com/documentation/IOBluetoothUI": {
       "hash": "2165f0de243e4d2cf4c0d5c9d3e01a468badb873aa68904b7fe957f0287503f6",
-      "last_checked": "2026-06-16T07:43:20.538447",
+      "last_checked": "2026-06-19T07:44:01.675711",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"bb3bd1b8aaf13a07fb11341497ce2e15\"",
       "file_path": "documentation/IOBluetoothUI/IOBluetoothUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothaccessibilityignoredimagecell.json": {
       "hash": "896a13e77462a652fc0f39e6113d384617c1c3c9e106d6ec07366903ec748566",
-      "last_checked": "2026-06-16T07:43:21.041690",
+      "last_checked": "2026-06-19T07:44:02.054553",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5203a08430198f2d94201d48a300f0e9\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothaccessibilityignoredimagecell.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothaccessibilityignoredtextfieldcell.json": {
       "hash": "0506c1a9f8dc745ce5361990a15f0f02ec82c948ed983da5896338b742989ce8",
-      "last_checked": "2026-06-16T07:43:21.340306",
+      "last_checked": "2026-06-19T07:44:02.230441",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"598125b5ba6b434ed79d6b7bb93b811c\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothaccessibilityignoredtextfieldcell.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller.json": {
       "hash": "2950b4953efadba169cfbe08fee8894c8e85a122517ba0b7980f3a6719f1cfdc",
-      "last_checked": "2026-06-16T07:43:21.649122",
+      "last_checked": "2026-06-19T07:44:02.534438",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"6f3d79721300c33d4d3e129ed1429e87\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontrollerref.json": {
       "hash": "58320371c9729c827261dd4a7dd8dccec06def5790b95d3a2fc68e39393ae221",
-      "last_checked": "2026-06-16T07:43:21.969210",
+      "last_checked": "2026-06-19T07:44:02.715991",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"68616420ee927abfbe254764f790f77d\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontrollerref.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller.json": {
       "hash": "29cf49e1c6b95bec1d52448d64809533c4925b7ae27af050dc025b68f9f9ce82",
-      "last_checked": "2026-06-16T07:43:22.266979",
+      "last_checked": "2026-06-19T07:44:02.837194",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a32a4f8b02ace077a8cab968e2eb57f7\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller.json": {
       "hash": "03b805e30a443ca4ae056fb6bcd3d725428f0e0a69e57b4ebd5576a95eebe39c",
-      "last_checked": "2026-06-16T07:43:22.580022",
+      "last_checked": "2026-06-19T07:44:03.165375",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"be4cdf2dae24aacddc9612bb20754484\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontrollerref.json": {
       "hash": "ee9f26aa3d615b6e21bde0da254dece53992e66e5d5ca911d07c7b0e1a2282a6",
-      "last_checked": "2026-06-16T07:43:22.876409",
+      "last_checked": "2026-06-19T07:44:03.330397",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"d26d4a7d90fb31150f08c7d2fe7bc77f\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontrollerref.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay.json": {
       "hash": "549460ffe2dc8957df6e7f7cf1e362549f02a6776686665631e8a44abbb3941f",
-      "last_checked": "2026-06-16T07:43:23.167478",
+      "last_checked": "2026-06-19T07:44:03.550340",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"4413f598c77dbe535fc81799f6e34e40\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller.json": {
       "hash": "2f905f5b4dbd7e7a4a965838aceb7c51b8e2326ab9d3fa52fa94c37c7d8bbb3a",
-      "last_checked": "2026-06-16T07:43:23.339736",
+      "last_checked": "2026-06-19T07:44:03.674723",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5d92edad27c946154dcc248a043da733\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontrollerref.json": {
       "hash": "2ad62e23aed33308d92f47bcc2f416b1af7ccdc4e7e9e1119a9133e8eaf753b3",
-      "last_checked": "2026-06-16T07:43:23.639975",
+      "last_checked": "2026-06-19T07:44:03.873713",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a62dc5ef2cd4c987c7c6390d83fae4b7\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontrollerref.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothuiuserlib-h.json": {
       "hash": "036ba808603ef7d80584b2353681d11b5574d30220b596fda880e5d7ac6d889e",
-      "last_checked": "2026-06-16T07:43:23.806848",
+      "last_checked": "2026-06-19T07:44:04.041126",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"6897688a09debbbd04fd8207747a39ba\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothuiuserlib-h.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothui-enumerations.json": {
       "hash": "c82302cf5d795caef9f15fb70d7fbaf4d15ac8ad04cfce74b81848b4190bd095",
-      "last_checked": "2026-06-16T07:43:24.106107",
+      "last_checked": "2026-06-19T07:44:04.162977",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"21b4ea77073d6a7ee73a8117092cef40\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothui-enumerations.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothui-constants.json": {
       "hash": "1a7b9a36bb32b99870475db8725cf8f639e7936cc2549d2df96639f5504eb508",
-      "last_checked": "2026-06-16T07:43:24.289847",
+      "last_checked": "2026-06-19T07:44:04.341035",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"faa6e1a845566868c4761ccff4f71ae1\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothui-constants.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothui-functions.json": {
       "hash": "3bc8c8017b98d675dd591ff163a5f406f822e7be9653b84728e7a0bf53dfcf50",
-      "last_checked": "2026-06-16T07:43:24.461617",
+      "last_checked": "2026-06-19T07:44:04.502272",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"144bb471ddf8b5742343c39c0bb6b20b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothui-functions.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/bluetoothkeyboardreturntype.json": {
       "hash": "b00cd98ebf9351379a0ea6ae0190afe7e11e3a1994fbf77fc8fd2f398af76c68",
-      "last_checked": "2026-06-16T07:43:24.641334",
+      "last_checked": "2026-06-19T07:44:04.655014",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"9b619e5d8d54fdd311440abb51e23ab3\"",
       "file_path": "documentation/IOBluetoothUI/bluetoothkeyboardreturntype.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/addalloweduuid(_:).json": {
       "hash": "0b775770be180a8da27a4498d2245c22cbdbc29a2d067028081159ddd208ddfa",
-      "last_checked": "2026-06-16T07:43:24.941734",
+      "last_checked": "2026-06-19T07:44:04.832837",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5a7e0c3d152763a155ae49cdf8f734d4\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/addalloweduuid.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/addalloweduuidarray(_:).json": {
       "hash": "016150364334b33b9911de7a5a7c06d5598539738200ec021a5b1da7308e51f9",
-      "last_checked": "2026-06-16T07:43:25.234227",
+      "last_checked": "2026-06-19T07:44:05.012701",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"6ae5c3d2954c99066b1a9797c9828301\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/addalloweduuidarray.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).json": {
       "hash": "240b493a2d69f886822aa43ee566f24c3b2bdfe9dc8ea3ce8854fe9ecbd60232",
-      "last_checked": "2026-06-16T07:43:25.419561",
+      "last_checked": "2026-06-19T07:44:05.200670",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"f0cc8351065cc14fc7414c3dcc48f60d\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/beginsheetmodal-formodaldelegatedidendcontextinfo.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/clearalloweduuids().json": {
       "hash": "4feb9305637fe4166cd4af471fd3c299350ef67bb5edb080b1358d89ef55b86c",
-      "last_checked": "2026-06-16T07:43:25.617250",
+      "last_checked": "2026-06-19T07:44:05.379920",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"1124a16ffb70fba1a602f030e2a2f830\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/clearalloweduuids.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getcancel().json": {
       "hash": "d7a8bacfbd32c7906d9cf073bbebb3a26b6c0db4a92cb233b30073ab6c5f41f1",
-      "last_checked": "2026-06-16T07:43:25.808747",
+      "last_checked": "2026-06-19T07:44:05.543227",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"ab19387166b244653a40a59142ea6fdd\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getcancel.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getdescriptiontext().json": {
       "hash": "0e89f3e102ee6004783bdbb72fc5f688c7dd9aaeba8e4804cc9a0f1e7a179f52",
-      "last_checked": "2026-06-16T07:43:25.999074",
+      "last_checked": "2026-06-19T07:44:05.664306",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"85dc9f1b1fbd4ab98b7238e25d866af0\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getdescriptiontext.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getheader().json": {
       "hash": "e53aede88a7c3b76730369492d1a7d77e8edf3d48b6d05c5310e69502db61394",
-      "last_checked": "2026-06-16T07:43:26.187485",
+      "last_checked": "2026-06-19T07:44:05.792279",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"b534b4243948e73e35b2a0be498e0b66\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getheader.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getoptions().json": {
       "hash": "2f531b1766ed997fb405d8de0da07ff6c04a2d007c156b2537a7c3f25c8b2cff",
-      "last_checked": "2026-06-16T07:43:26.355768",
+      "last_checked": "2026-06-19T07:44:05.991510",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"c05cd4386e361c3791eab3047b8d06e2\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getoptions.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getprompt().json": {
       "hash": "3664c111e00008b4177daacbb676c92939ab446b558b653301459811ac1e59d2",
-      "last_checked": "2026-06-16T07:43:26.538598",
+      "last_checked": "2026-06-19T07:44:06.106021",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"962f493927619ac44db9ef85d5a9ca84\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getprompt.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getresults().json": {
       "hash": "8db48c6688dafabc1bb7179f60f26ab0f7d56690a4498d55206998a76084ec5d",
-      "last_checked": "2026-06-16T07:43:26.718627",
+      "last_checked": "2026-06-19T07:44:06.238413",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"cafd5df625e629dde8a5c47c910b6bed\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getresults.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/getsearchattributes().json": {
       "hash": "2949b7bddc115860b5c62487ad141f940a97353acb4d019958e37256cc47dc51",
-      "last_checked": "2026-06-16T07:43:27.012980",
+      "last_checked": "2026-06-19T07:44:06.379840",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"642b065cb3c17bf9d0e6d1f808e62659\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/getsearchattributes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/gettitle().json": {
       "hash": "0a903a8cbb9ed0208ce7a0eca83a195947aa917feaacb63653509d53f53b0f79",
-      "last_checked": "2026-06-16T07:43:27.206728",
+      "last_checked": "2026-06-19T07:44:06.541347",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"0b87fd23d20c5402721d828e5cf433fc\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/gettitle.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/runmodal().json": {
       "hash": "493a6dc9e05c0df73b5652d41fd4f03c2d2a881dca67fd97dd8fb8a967fc2fd1",
-      "last_checked": "2026-06-16T07:43:27.386891",
+      "last_checked": "2026-06-19T07:44:06.658642",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"3e25c5a0cc63cfd68e05ddf9c2baeb5d\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/runmodal.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setcancel(_:).json": {
       "hash": "0943906d9a6050f7a5381a84443f7812da8c08e30df073a801d621e3c0b38621",
-      "last_checked": "2026-06-16T07:43:27.680122",
+      "last_checked": "2026-06-19T07:44:06.974042",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"aeb280ed1aaba54f1134540e9c02b655\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setcancel.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setdescriptiontext(_:).json": {
       "hash": "a84a0b643cd1f1556ddc6b44ed2275abdbed346a27cc812be41a889f039eb460",
-      "last_checked": "2026-06-16T07:43:28.163914",
+      "last_checked": "2026-06-19T07:44:07.127434",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"b8a69378eb72edf9af46186c2672d42a\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setdescriptiontext.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setheader(_:).json": {
       "hash": "7749c3f9293bc8c6f4c9c0b1315e9282e99f78e30b27c5a595f41055f08fffaa",
-      "last_checked": "2026-06-16T07:43:28.339588",
+      "last_checked": "2026-06-19T07:44:07.305928",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"643fd195fcd573d1af36fae564d0d79d\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setheader.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setoptions(_:).json": {
       "hash": "50eee7623c2c0150b4608e250b1ee767f2df07154c69d84be6c80af5e67fb271",
-      "last_checked": "2026-06-16T07:43:28.518217",
+      "last_checked": "2026-06-19T07:44:07.446539",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"336f4b56955e00d7c7ae0dbd45827ba0\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setoptions.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setprompt(_:).json": {
       "hash": "90b0620206a18cdd694d5229fda3c7fe00b9dc2663d5544773fb8953c54f5462",
-      "last_checked": "2026-06-16T07:43:28.734915",
+      "last_checked": "2026-06-19T07:44:07.590862",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"1a759fa2953e0eea2d2b8d5852567911\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setprompt.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/setsearchattributes(_:).json": {
       "hash": "16352ff6d3a40c1d75aa37b076c7d6255604697885a2a8ee044b367447f7cc33",
-      "last_checked": "2026-06-16T07:43:29.032250",
+      "last_checked": "2026-06-19T07:44:07.720103",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"23e0abe61fd29b57593e50d7444c9d6f\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/setsearchattributes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/settitle(_:).json": {
       "hash": "3f86285c04d3afbfc8a573433cee40b395578b4fc431554f4975a26700680c9b",
-      "last_checked": "2026-06-16T07:43:29.200696",
+      "last_checked": "2026-06-19T07:44:07.859019",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"2f653a6f24ef2bf079f6306e68496227\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/settitle.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothdeviceselectorcontroller/deviceselector().json": {
       "hash": "737a5a0e856f04bcc27744f83335be73571f4237f411c9ae163907c677280290",
-      "last_checked": "2026-06-16T07:43:29.371579",
+      "last_checked": "2026-06-19T07:44:07.984201",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"bbcdd3095854210b065c8a1f0ab593eb\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothdeviceselectorcontroller/deviceselector.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/init(objectpushwith:withfiles:delegate:).json": {
       "hash": "a9aae72e9b868c22aef4f04a07ea284c8ec82a0f290d196f8cbd8d428a46c895",
-      "last_checked": "2026-06-16T07:43:29.535204",
+      "last_checked": "2026-06-19T07:44:08.109789",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"e7f56bd7138acfea58d447e62ae62a4b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/init-objectpushwithwithfilesdelegate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).json": {
       "hash": "9be7867d0752f50727d3aecec839e7981a814d74af2b81abca388d7385ad4efe",
-      "last_checked": "2026-06-16T07:43:29.872690",
+      "last_checked": "2026-06-19T07:44:08.434676",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"d26f9bdd7a7278059b8982241f9d8e9f\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/beginsheetmodal-formodaldelegatedidendcontextinfo.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/getdevice().json": {
       "hash": "6f2a7e4e806953758879350c49a6084c1ce2c59fdc7c679ac7b4c6b620da762d",
-      "last_checked": "2026-06-16T07:43:30.042653",
+      "last_checked": "2026-06-19T07:44:08.564474",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"0f27a44d07da75ccc0bd49fcb5e2c9c8\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/getdevice.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/gettitle().json": {
       "hash": "c1ed5fd0082e72a0998e37e19e56bc54f1a6da99f08fe23248d5be49126a3780",
-      "last_checked": "2026-06-16T07:43:30.221935",
+      "last_checked": "2026-06-19T07:44:08.718784",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"2a5e051fedb60028c28ab5110c7362de\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/gettitle.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/istransferinprogress().json": {
       "hash": "cf5dcd8fda2aee172e0dc5ed0bf6f06f28b103b45d099411860e20d13cc95be3",
-      "last_checked": "2026-06-16T07:43:30.400731",
+      "last_checked": "2026-06-19T07:44:08.850101",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"e2461c749eb9b8a656310bdce8fedb13\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/istransferinprogress.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/runmodal().json": {
       "hash": "042f872fa47cf1225c1122ad7ad677d0b724b502a4683f55fc0fe94b5a8a8a48",
-      "last_checked": "2026-06-16T07:43:30.570320",
+      "last_checked": "2026-06-19T07:44:08.977243",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"8e018dfa5e63942587c8f7b96c8b69d3\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/runmodal.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/runpanel().json": {
       "hash": "24c97f8abcb01d58aa9c974453f4f311cc0fc9b915376b6140d0ec033d13a779",
-      "last_checked": "2026-06-16T07:43:30.756493",
+      "last_checked": "2026-06-19T07:44:09.143840",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"2eb2565ccc9368a6ae64205c4a33d012\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/runpanel.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/seticonimage(_:).json": {
       "hash": "b8aa209f3191f3bd9c6e9a9c7583149c2fb4bc671a6f1e46dd54d27dee904aaa",
-      "last_checked": "2026-06-16T07:43:30.926102",
+      "last_checked": "2026-06-19T07:44:09.333610",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"bd5460973112388f312f7dcb36188b6a\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/seticonimage.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/settitle(_:).json": {
       "hash": "c67b490201289d4305d9622a4483007d88461f4b7e32ac7105930c2f6c0744f8",
-      "last_checked": "2026-06-16T07:43:31.232875",
+      "last_checked": "2026-06-19T07:44:09.633519",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"586f5e38bafd6e16403302ca3d74f4f8\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/settitle.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/stop().json": {
       "hash": "a44a49b3d77d4aaea20156461a76b5baf11a32eaa8b4afcfd6e25acc723df92a",
-      "last_checked": "2026-06-16T07:43:31.405546",
+      "last_checked": "2026-06-19T07:44:09.747356",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"339cfd4034e4bd321c8d0ae3bfda5b32\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/stop.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/addalloweduuid(_:).json": {
       "hash": "769a0129d5d8ef8b9d0c1c065c01b9f233e4ce21a197918130b9f36821a0acf6",
-      "last_checked": "2026-06-16T07:43:31.583316",
+      "last_checked": "2026-06-19T07:44:09.887302",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"943127279cccdc28769f0a50af25a221\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/addalloweduuid.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/addalloweduuidarray(_:).json": {
       "hash": "ac47be697c5d3800d0776927e953272fb5663c477cde675a6e7cddf27cb2b2b1",
-      "last_checked": "2026-06-16T07:43:31.746621",
+      "last_checked": "2026-06-19T07:44:10.009468",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"10c07420dfb97633b15634a155d83da3\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/addalloweduuidarray.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/clearalloweduuids().json": {
       "hash": "6abbbd8a5ec3ac6dbcb3d41870211d74079e2049831c99c3254e2426079459ad",
-      "last_checked": "2026-06-16T07:43:31.920212",
+      "last_checked": "2026-06-19T07:44:10.154418",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"717581d7707a6d1070e7ccedc093ab3a\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/clearalloweduuids.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/getdescriptiontext().json": {
       "hash": "995d342289446028b733b9a5f34287b65696605ddf9b4619391e6fe228e019b0",
-      "last_checked": "2026-06-16T07:43:32.103694",
+      "last_checked": "2026-06-19T07:44:10.301547",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"1eecbce2064fe34a48566ded2a9b4c3b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/getdescriptiontext.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/getoptions().json": {
       "hash": "b279adf7a734ffa81ec1baec2358a2550bbbdcf6255986c265b868c3663e4c20",
-      "last_checked": "2026-06-16T07:43:32.294447",
+      "last_checked": "2026-06-19T07:44:10.420712",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"336c4667c8fd39ab80b20527b485999b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/getoptions.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/getprompt().json": {
       "hash": "c3a82337045b301dbe03f530af82db30a3f7c2a16f7886fea16383b565d646c8",
-      "last_checked": "2026-06-16T07:43:32.463613",
+      "last_checked": "2026-06-19T07:44:10.580627",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"c3bf75e2d217c182bda0281a41a9336b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/getprompt.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/getresults().json": {
       "hash": "bff8a269327c0be300f8c2a46a9791e28ddbd7ed9f42bc9fa8581c0017eba8a8",
-      "last_checked": "2026-06-16T07:43:32.655066",
+      "last_checked": "2026-06-19T07:44:10.767853",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"0057059d62649b2cc9b942562829563e\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/getresults.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/getsearchattributes().json": {
       "hash": "5f6953ea50f21df466439de483ac51ec47bccc32bd03c02d21b6189b396556a6",
-      "last_checked": "2026-06-16T07:43:32.840587",
+      "last_checked": "2026-06-19T07:44:10.898485",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"4b76fbbcdf52e0fa5c8e357ae3e8d6b1\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/getsearchattributes.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/gettitle().json": {
       "hash": "b3d754804cc4768aa41ccd2783419aff3df1b28d65c769c3eb13285cb35e2968",
-      "last_checked": "2026-06-16T07:43:33.023406",
+      "last_checked": "2026-06-19T07:44:11.206262",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"923d2614340da59b3a7845fd3f8eaf6b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/gettitle.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/runmodal().json": {
       "hash": "2790fe9ab00f8e444a8e418a720edf3c34fde77b431eb0882c37f5d5241fb5d2",
-      "last_checked": "2026-06-16T07:43:33.184258",
+      "last_checked": "2026-06-19T07:44:11.511879",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"ae186534884d752cf751389355775c84\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/runmodal.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/setdescriptiontext(_:).json": {
       "hash": "2d7eed832850630fc8d3e2fd2d2b0fee7317d3c6c99f41e318ae8b316d64c2d5",
-      "last_checked": "2026-06-16T07:43:33.369542",
+      "last_checked": "2026-06-19T07:44:11.801733",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5ec1ae780a970e36a0ecfd2d33de8b48\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/setdescriptiontext.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/setoptions(_:).json": {
       "hash": "a3b72de7c25fd8b526ff77eb3e0a50a758fc9a070fb67ee5e3737b792ba3d510",
-      "last_checked": "2026-06-16T07:43:33.554000",
+      "last_checked": "2026-06-19T07:44:12.113353",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"738244ec5a4fe4c844725c6037ac9c29\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/setoptions.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/setprompt(_:).json": {
       "hash": "7abd6fb2a2a4f21f450d55c04eedabbdfa96246ef33f6586017342d64241ba36",
-      "last_checked": "2026-06-16T07:43:33.726296",
+      "last_checked": "2026-06-19T07:44:12.285689",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"47e22d014016ac75ffce2e86633efb9f\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/setprompt.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/setsearchattributes(_:).json": {
       "hash": "6f07f00ae399e57af68b0e7d20b3a6161ea4d2f09a8c60da378fab301ddbb131",
-      "last_checked": "2026-06-16T07:43:33.916990",
+      "last_checked": "2026-06-19T07:44:12.411498",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"f17a9e320eb801a1759105b6cabc29ba\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/setsearchattributes.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpairingcontroller/settitle(_:).json": {
       "hash": "f392a4b4c15a472b33518c533b13ad1d69f08d6d4e6af45abb84c0b5fd24c6ca",
-      "last_checked": "2026-06-16T07:43:34.086143",
+      "last_checked": "2026-06-19T07:44:12.587203",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"f237eb50b361c7be21565709273b7839\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpairingcontroller/settitle.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/backgroundimageconstraint.json": {
       "hash": "88bd8dba43e662117140928730a974f46fa09653d95baae5dda0d3431eeccf9b",
-      "last_checked": "2026-06-16T07:43:34.287158",
+      "last_checked": "2026-06-19T07:44:12.877920",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"dbd7e2957f6816cfb2d2906a62bedfc9\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/backgroundimageconstraint.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/centeredview.json": {
       "hash": "f650b3b26b8f7f40d10e1399283eb5be434ec806174b33ae1e0c00ebb05373e6",
-      "last_checked": "2026-06-16T07:43:34.471326",
+      "last_checked": "2026-06-19T07:44:13.016150",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"3adab59d90e22ea79862abd58474aca3\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/centeredview.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/isincomingrequest-swift.property.json": {
       "hash": "4570823cfead4274a74638e608855b9eb27d34465f3449d1148f16f666332930",
-      "last_checked": "2026-06-16T07:43:34.638492",
+      "last_checked": "2026-06-19T07:44:13.171218",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"86b9d64d644e5d3d963fef84442c3ea0\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/isincomingrequest-swiftproperty.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/passkey-swift.property.json": {
       "hash": "6032a1673bc1d57d9386edbfef2e2a5b3502f1f2f8cd3f72440df84b842fa1ca",
-      "last_checked": "2026-06-16T07:43:34.865409",
+      "last_checked": "2026-06-19T07:44:13.471686",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"770e96080e159262a0bba7ee1344f606\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/passkey-swiftproperty.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/returnhighlightimage.json": {
       "hash": "757f76a92ab70b3341a39c1a32b7678627d1d7713e66d77eaf32b2056f403dc5",
-      "last_checked": "2026-06-16T07:43:35.045689",
+      "last_checked": "2026-06-19T07:44:13.640452",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"4c80405741f628bf1cd9dcae4dc4b280\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/returnhighlightimage.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/returnimage.json": {
       "hash": "b09fe614025e559223795afe854dbaa45f166de8ddfb9d92ebb91b65d2157c53",
-      "last_checked": "2026-06-16T07:43:35.225141",
+      "last_checked": "2026-06-19T07:44:13.940833",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"ef876c7a5ee9629fc4ae0e0443465af0\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/returnimage.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/usepasskeynotificaitons.json": {
       "hash": "9983abda5a3d148f1772a3c0a549af4bb2fb4dfb8e8ace4e16de6760b8d7764e",
-      "last_checked": "2026-06-16T07:43:35.411378",
+      "last_checked": "2026-06-19T07:44:14.078249",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"f7705285f4f598d086400a69eec6a7ae\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/usepasskeynotificaitons.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/advancepasskeyindicator().json": {
       "hash": "394120324c1f6508fff393cdc2d17369dc5476ba3574f5f7ecafd5af355349f3",
-      "last_checked": "2026-06-16T07:43:35.595796",
+      "last_checked": "2026-06-19T07:44:14.369446",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"7223791c21df44c3da15bae7f96106c4\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/advancepasskeyindicator.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/resetpasskeyindicator().json": {
       "hash": "3b4efee8a30a4dc3c804bbc08a2dbfa133bed9bc2097ad2dcd78f291aeb8e694",
-      "last_checked": "2026-06-16T07:43:35.774180",
+      "last_checked": "2026-06-19T07:44:14.529438",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a3369335d8ae4382fb3b1bfc130430b7\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/resetpasskeyindicator.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/retreatpasskeyindicator().json": {
       "hash": "c2ff6b23cfbd36c7c1af4c32ac75c98fb873f75ce1a41c39666a9abf7013448d",
-      "last_checked": "2026-06-16T07:43:35.951118",
+      "last_checked": "2026-06-19T07:44:14.707792",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"26c7ca875fe98908f246b43f71fb954f\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/retreatpasskeyindicator.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/setpasskey(_:for:usingssp:).json": {
       "hash": "8b13852e161fc140fd5f2c4713f88df98bb2aae7f26d7ecf1275a63ed54b4384",
-      "last_checked": "2026-06-16T07:43:36.115213",
+      "last_checked": "2026-06-19T07:44:14.904714",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a26628e19579799b6222517a0ec426ce\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/setpasskey-forusingssp.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothpasskeydisplay/shareddisplayview().json": {
       "hash": "d875251370fd054731d477c1d179f7e06bad7a05007d21a930eaa389fe26df1d",
-      "last_checked": "2026-06-16T07:43:36.290080",
+      "last_checked": "2026-06-19T07:44:15.065112",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"3ef3b281214bee640d8803374d4c3bdc\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothpasskeydisplay/shareddisplayview.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/init(_:).json": {
       "hash": "8ab73b81c28a7b6b90718e7c43728254f749088cd242ff369ba34e2633cefe67",
-      "last_checked": "2026-06-16T07:43:36.475083",
+      "last_checked": "2026-06-19T07:44:15.228845",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"42accfa29a1fa273e62cb0e460936e86\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/init.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/addalloweduuid(_:).json": {
       "hash": "54198857b4597411a9be41edc00e087736f1887b83fce0126a95bee36bfe002f",
-      "last_checked": "2026-06-16T07:43:36.648339",
+      "last_checked": "2026-06-19T07:44:15.418427",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"4ab3acad933df5b5a25b1dcaf5a8eea2\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/addalloweduuid.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/addalloweduuidarray(_:).json": {
       "hash": "8277f228cbc0f855353d4070f72b8c683a1bfa16a3ad7352532a3a2dacb64499",
-      "last_checked": "2026-06-16T07:43:36.823052",
+      "last_checked": "2026-06-19T07:44:15.584377",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5b12dc10bbf3fb58c92dbec50c7d357c\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/addalloweduuidarray.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/beginsheetmodal(for:modaldelegate:didend:contextinfo:).json": {
       "hash": "c51d18d57175dc9c862bf7aefa22d2a05b8a052c38d776f1938c9682ca2ce92b",
-      "last_checked": "2026-06-16T07:43:36.993745",
+      "last_checked": "2026-06-19T07:44:15.755407",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"fcf0bcdd904d0a7373e78647195787cd\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/beginsheetmodal-formodaldelegatedidendcontextinfo.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/clearalloweduuids().json": {
       "hash": "a8d832316cf603c873599fc5a7a0c5ea95af470a61eadeda703605b46c9f335b",
-      "last_checked": "2026-06-16T07:43:37.151587",
+      "last_checked": "2026-06-19T07:44:15.914793",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"b4c7c338471521d137a817c5f2addcaf\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/clearalloweduuids.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getdescriptiontext().json": {
       "hash": "cb45e4038a61d0be3d9181d7b1bc963337f1795261878e22c1ba4762492a87f2",
-      "last_checked": "2026-06-16T07:43:37.327432",
+      "last_checked": "2026-06-19T07:44:16.080848",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"32f20fd6d49aea3778e78093e235a265\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getdescriptiontext.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getoptions().json": {
       "hash": "fb65b8b59fa0488914672632198a6c1627b8fc4588cb96a133aef9f2ad91413d",
-      "last_checked": "2026-06-16T07:43:37.499121",
+      "last_checked": "2026-06-19T07:44:16.197704",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"8e7589a32036df7bfa1c8e262b524a7e\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getoptions.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getprompt().json": {
       "hash": "bfa590ab06ee5ac5992002564fb6497eaee8751291cf3f0201c7f72009071450",
-      "last_checked": "2026-06-16T07:43:37.670523",
+      "last_checked": "2026-06-19T07:44:16.388772",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"10d930ff40a12f1e83cf218c09a4958c\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getprompt.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getref().json": {
       "hash": "04713e49b6c1fe5f43164929526eb8c842479d647312d943e55d6ff873d6baeb",
-      "last_checked": "2026-06-16T07:43:37.844707",
+      "last_checked": "2026-06-19T07:44:16.563127",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"3fab0f1eb4d5c1896211ffbe8655c021\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getref.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getresults().json": {
       "hash": "9550f67262b873c590a96cc29c9b58a3a31650bf8313c69d7b5653d741f156f8",
-      "last_checked": "2026-06-16T07:43:38.054087",
+      "last_checked": "2026-06-19T07:44:16.673008",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"1c004f15a41c716c7e9cbe377703d8cc\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getresults.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/getsearchattributes().json": {
       "hash": "1b60ee6899f53c804a4848e6a08187bf69fb65f7df7436d7ce463b200b5017e5",
-      "last_checked": "2026-06-16T07:43:38.233388",
+      "last_checked": "2026-06-19T07:44:16.851948",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"e1811dfe986ca887626ebdded2ffbf86\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/getsearchattributes.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/gettitle().json": {
       "hash": "026e722d20e9c44e9a796f617f337ac60abfb39b9bf1f7b56ff43410f1a6dbf5",
-      "last_checked": "2026-06-16T07:43:38.409157",
+      "last_checked": "2026-06-19T07:44:17.012613",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"9005771411ca3afff116046c8b756e17\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/gettitle.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/runmodal().json": {
       "hash": "05a6f04a0f64f213a6fde731c39bb72004bd78aecb7081e16716dd538f5d869b",
-      "last_checked": "2026-06-16T07:43:38.595757",
+      "last_checked": "2026-06-19T07:44:17.181014",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"17a7afcef5a3e628f9ec4428b3a0836d\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/runmodal.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/setdescriptiontext(_:).json": {
       "hash": "aaa38581d29026a04fc292be6013843fce3cc9f9a73d7ee9aac06e71cf6b406a",
-      "last_checked": "2026-06-16T07:43:38.798545",
+      "last_checked": "2026-06-19T07:44:17.359358",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a1eac2b6bc88a137d910faa9af043e89\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/setdescriptiontext.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/setoptions(_:).json": {
       "hash": "e7700efb0bbf6d6a3338df0ea8db7ce93ade56f4e0b4ad894d3133e3a120d6cf",
-      "last_checked": "2026-06-16T07:43:38.976519",
+      "last_checked": "2026-06-19T07:44:17.529064",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"e0e86e8e925cfaf4bce8b2ea475b8568\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/setoptions.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/setprompt(_:).json": {
       "hash": "34377ec1a3841026def9f1fe764dcf03d4477292a05004e56eaa275ef6b33bb5",
-      "last_checked": "2026-06-16T07:43:39.141347",
+      "last_checked": "2026-06-19T07:44:17.677549",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"39c27e98b11beb853f628b8efc355214\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/setprompt.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/setsearchattributes(_:).json": {
       "hash": "837c4bfe4541310e50fdfc6016e8d824be85d6233b7f7c58fc45286ccc62dd69",
-      "last_checked": "2026-06-16T07:43:39.325216",
+      "last_checked": "2026-06-19T07:44:17.853091",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5ccac372f8d8df28bedb3831d243194b\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/setsearchattributes.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/settitle(_:).json": {
       "hash": "e75ee424f217889b4ac5741322baa0259cbe3c4166f64a15f9e362acc774ba07",
-      "last_checked": "2026-06-16T07:43:39.497527",
+      "last_checked": "2026-06-19T07:44:18.008831",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"23fac4269ab88b18a46fb1e94b592fef\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/settitle.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontroller/withservicebrowsercontrollerref(_:).json": {
       "hash": "7d0a110f0c132e956a9f90b476831df58c99cdf3f01f38ce03b5f2703ced4866",
-      "last_checked": "2026-06-16T07:43:39.658386",
+      "last_checked": "2026-06-19T07:44:18.179192",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"ab940d5219533df5b064847294ac7c87\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontroller/withservicebrowsercontrollerref.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothservicebrowsercontrolleroptions.json": {
       "hash": "66ce9f702b03ee60a0a16f36161e2dd522ce98e22cae781efccaa3f09a9e77b8",
-      "last_checked": "2026-06-16T07:43:39.832610",
+      "last_checked": "2026-06-19T07:44:18.342184",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"9a8d5f0d39bdce08cdb893cca54522d7\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothservicebrowsercontrolleroptions.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/1411883-anonymous.json": {
       "hash": "086d45f6175bec50bc873400e6de8b1d1f9f28b457231ded6ed9f7365c1ba7b4",
-      "last_checked": "2026-06-16T07:43:40.015327",
+      "last_checked": "2026-06-19T07:44:18.662813",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"5909bba8eb7874669a2d82e9e8b94724\"",
       "file_path": "documentation/IOBluetoothUI/api-1411883-anonymous.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/1411865-anonymous.json": {
       "hash": "4fc0893cb7b706323bc15e86df697ebda49324afe5389540e4acf019c11c76ca",
-      "last_checked": "2026-06-16T07:43:40.189970",
+      "last_checked": "2026-06-19T07:44:18.828104",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"e61f9b47a7bd3f36b3a6f2c81d0063b9\"",
       "file_path": "documentation/IOBluetoothUI/api-1411865-anonymous.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kbluetoothkeyboardansireturn.json": {
       "hash": "280910778f6a40bc82eed9848e1cab2f6e8bfd6d41fb3926a8d80b3e9aa467d6",
-      "last_checked": "2026-06-16T07:43:40.371044",
+      "last_checked": "2026-06-19T07:44:19.114411",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"796556dae8e3ed41ab436e1658453962\"",
       "file_path": "documentation/IOBluetoothUI/kbluetoothkeyboardansireturn.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kbluetoothkeyboardisoreturn.json": {
       "hash": "c10d449d890032ca444c665e89c72ace2d18793e4608d3ee95ac3cedef344243",
-      "last_checked": "2026-06-16T07:43:40.563895",
+      "last_checked": "2026-06-19T07:44:19.269057",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"66e3cc44eb10dabf15c1dadaf0bbfa9f\"",
       "file_path": "documentation/IOBluetoothUI/kbluetoothkeyboardisoreturn.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kbluetoothkeyboardjisreturn.json": {
       "hash": "94a0d82d67a5c5bcb67922390fcd99c90d0cd3f64eecd712ec3d48ef2d29c7f5",
-      "last_checked": "2026-06-16T07:43:40.754764",
+      "last_checked": "2026-06-19T07:44:19.443367",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a60d72c0982a1ea5d48a808f8e051a60\"",
       "file_path": "documentation/IOBluetoothUI/kbluetoothkeyboardjisreturn.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kbluetoothkeyboardnoreturn.json": {
       "hash": "55fe625e97ac9b939287294f29f28fd5466cfc31a8f55466a8fd227874a36319",
-      "last_checked": "2026-06-16T07:43:40.921544",
+      "last_checked": "2026-06-19T07:44:19.596232",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"767ab25d23b6ba8d45d56830e4100be7\"",
       "file_path": "documentation/IOBluetoothUI/kbluetoothkeyboardnoreturn.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothgetdeviceselectorcontroller().json": {
       "hash": "e0414d03166507da141df4f9e1fe19039a4edaa1d7a61255473196920e8a5d0d",
-      "last_checked": "2026-06-16T07:43:41.090015",
+      "last_checked": "2026-06-19T07:44:19.774413",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"3c63f98d1988eb2880c836d910edfce0\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothgetdeviceselectorcontroller.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothgetpairingcontroller().json": {
       "hash": "837f21f565a928f5e762a50f95a0becc7a5daea964efcc20b721b8e13582a245",
-      "last_checked": "2026-06-16T07:43:41.257195",
+      "last_checked": "2026-06-19T07:44:20.075007",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"7f0617a9bc30671dd207d97d8e6ef470\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothgetpairingcontroller.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothvalidatehardwarewithdescription(_:_:).json": {
       "hash": "2b5eabda4217c83fd3b1ed612901c27e4fac87d7f394c4e1db55c51a15f28d7d",
-      "last_checked": "2026-06-16T07:43:41.430429",
+      "last_checked": "2026-06-19T07:44:20.208564",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"d6b1dd542c0052ccd201c3c72469efba\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothvalidatehardwarewithdescription.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/bluetoothkeyboardreturntype/init(_:).json": {
       "hash": "0603537580f7efdc3e5f9114585a1613d5bed9c26f5fb1582d24f296ac25a5e7",
-      "last_checked": "2026-06-16T07:43:41.617983",
+      "last_checked": "2026-06-19T07:44:20.392236",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"40e0f0578c795aa6a96f94946df55a98\"",
       "file_path": "documentation/IOBluetoothUI/bluetoothkeyboardreturntype/init.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/bluetoothkeyboardreturntype/init(rawvalue:).json": {
       "hash": "27331469fe49439c8d99a5ce76271996a17549e5f5d945ebae84ccb6b289b06d",
-      "last_checked": "2026-06-16T07:43:41.783095",
+      "last_checked": "2026-06-19T07:44:20.567357",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"0a8e7180638d570d7e0b8527bc83739c\"",
       "file_path": "documentation/IOBluetoothUI/bluetoothkeyboardreturntype/init-rawvalue.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/bluetoothkeyboardreturntype/rawvalue.json": {
       "hash": "68c0c5efdb989e0375edea4f98e4fcab74beca5e2fa980c0e9df23d73b2e5f2b",
-      "last_checked": "2026-06-16T07:43:41.955366",
+      "last_checked": "2026-06-19T07:44:20.771175",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a043823009ab4c5030118eff9cfc1542\"",
       "file_path": "documentation/IOBluetoothUI/bluetoothkeyboardreturntype/rawvalue.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kiobluetoothservicebrowsercontrolleroptionsnone.json": {
       "hash": "ca8f4c9bdaf4a3e740d12afb2e8cf504cf20d5519b430b01a79461276d7839cb",
-      "last_checked": "2026-06-16T07:43:42.128614",
+      "last_checked": "2026-06-19T07:44:20.921024",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"7f3b113b3037332bb1383ff0f378dc3b\"",
       "file_path": "documentation/IOBluetoothUI/kiobluetoothservicebrowsercontrolleroptionsnone.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.json": {
       "hash": "f467591726d6beabf1c955652d226c9b36e0468796d6b12dd1153a833788ac7b",
-      "last_checked": "2026-06-16T07:43:42.304621",
+      "last_checked": "2026-06-19T07:44:21.082447",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"0c0e6d59b210d8ddb425141f93039794\"",
       "file_path": "documentation/IOBluetoothUI/kiobluetoothservicebrowsercontrolleroptionsautostartinquiry.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.json": {
       "hash": "dc711a4a2a8bab8852d68e5d4aa7934c66bb6dafe5f3d3699d10de78e92621cc",
-      "last_checked": "2026-06-16T07:43:42.492150",
+      "last_checked": "2026-06-19T07:44:21.237898",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"c19d8ff3e6361a5442dca4512a43e2c1\"",
       "file_path": "documentation/IOBluetoothUI/kiobluetoothservicebrowsercontrolleroptionsdisconnectwhendone.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kiobluetoothuisuccess.json": {
       "hash": "a68ea3ebfc741fd90301c82963fcf1775844480bccc6bfd571a79b23643f2bc0",
-      "last_checked": "2026-06-16T07:43:42.672604",
+      "last_checked": "2026-06-19T07:44:21.542213",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"adcd48533771b125dd15b3e9a61bd1b5\"",
       "file_path": "documentation/IOBluetoothUI/kiobluetoothuisuccess.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/kiobluetoothuiusercancelederr.json": {
       "hash": "03bead8010020dfd2b0eba739ea562a9995e6caa15cad9e8887daad88e3e06b5",
-      "last_checked": "2026-06-16T07:43:42.831774",
+      "last_checked": "2026-06-19T07:44:21.701417",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"a697335786da3fc8983c30169fcd2ee2\"",
       "file_path": "documentation/IOBluetoothUI/kiobluetoothuiusercancelederr.md"
     },
@@ -1789,9 +1789,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/iobluetoothui/iobluetoothobjectpushuicontroller/init(objectpushwithbluetoothdevice:withfiles:delegate:).json": {
       "hash": "9f5e981a44d682525c4fb4075d1295b0fd1959174b466aae6012b38547a32555",
-      "last_checked": "2026-06-16T07:43:29.705519",
+      "last_checked": "2026-06-19T07:44:08.240516",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:20.335142",
+      "session_id": "2026-06-19T07:44:01.383744",
       "etag": "W/\"1a278f0a9845a4e5bf01c5fe513bb3ee\"",
       "file_path": "documentation/IOBluetoothUI/iobluetoothobjectpushuicontroller/init-objectpushwithbluetoothdevicewithfilesdelegate.md"
     },

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:43:04.576087",
+    "last_updated": "2026-06-19T07:43:54.623313",
     "total_pages": 315,
-    "session_id": "2026-06-16T07:42:43.139850"
+    "session_id": "2026-06-19T07:43:31.599077"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ReplayKit.json": {
       "hash": "ad42105d97cba5086be5841c508f80783161ae4eea72d3f560e8182bdbe9020c",
-      "last_checked": "2026-06-16T07:42:43.472857",
+      "last_checked": "2026-06-19T07:43:31.879556",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"04e8250c4b8ed31edf79003e919282b7\"",
       "file_path": "documentation/ReplayKit/ReplayKit.md"
     },
     "https://developer.apple.com/documentation/ReplayKit": {
       "hash": "ad42105d97cba5086be5841c508f80783161ae4eea72d3f560e8182bdbe9020c",
-      "last_checked": "2026-06-16T07:42:43.361097",
+      "last_checked": "2026-06-19T07:43:31.765434",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"04e8250c4b8ed31edf79003e919282b7\"",
       "file_path": "documentation/ReplayKit/ReplayKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/recording-and-streaming-your-macos-app.json": {
       "hash": "a59e147aaa4d32ae30af2a7cec382eebc5ce081b251a6d39d7d5464c840a1a89",
-      "last_checked": "2026-06-16T07:42:43.713625",
+      "last_checked": "2026-06-19T07:43:32.170317",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c20dde6216288466c9bfd535b95a1d0a\"",
       "file_path": "documentation/ReplayKit/recording-and-streaming-your-macos-app.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder.json": {
       "hash": "c52b9c8af60d9d5261139f99343591f1d717fcb9845a91eb39176f1ec0051414",
-      "last_checked": "2026-06-16T07:42:43.855272",
+      "last_checked": "2026-06-19T07:43:32.352581",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"76f10da713725efb449054cd2b43ad80\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller.json": {
       "hash": "2ff594531033702511aae50fa4d69200bef1746105fe75986dc23900997ca52f",
-      "last_checked": "2026-06-16T07:42:44.013610",
+      "last_checked": "2026-06-19T07:43:32.538571",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"3f540cc9700461ef53cd154cd300645a\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller.json": {
       "hash": "9ad4f5f32441624a7c7f8644cb2b665c63d773e9c2a3f2ee7df44ee9545f4b8f",
-      "last_checked": "2026-06-16T07:42:44.206877",
+      "last_checked": "2026-06-19T07:43:32.686151",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"ab85c777358623697db8e592352b2112\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler.json": {
       "hash": "ed39cbb4edea0622f5aff16efdd1480c16e3f6c0485ec1e2ac088faf01d541cb",
-      "last_checked": "2026-06-16T07:42:44.401009",
+      "last_checked": "2026-06-19T07:43:32.847901",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"aab650f4aa6916434c700b6e1a0a98a1\"",
       "file_path": "documentation/ReplayKit/rpbroadcasthandler.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler.json": {
       "hash": "371ad3a65be1a954697aef319c21f444794da27fac1ce1b73a64be0086cfdd88",
-      "last_checked": "2026-06-16T07:42:44.576272",
+      "last_checked": "2026-06-19T07:43:33.004235",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"4f41a48a4b387d384686d1fb867afb8d\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler.json": {
       "hash": "56317f117d4a9471d231bc55fc9bbeabc3c3ba49bf8d7bab322520c97ad181d5",
-      "last_checked": "2026-06-16T07:42:44.759010",
+      "last_checked": "2026-06-19T07:43:33.311822",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c7fa264d110ac09fb0278f2f499c819f\"",
       "file_path": "documentation/ReplayKit/rpbroadcastmp4cliphandler.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller.json": {
       "hash": "f619c9b7b66565b64092bd7a8ba3095bc5bae2d7fbb51875c1f38ffa126d75ad",
-      "last_checked": "2026-06-16T07:42:44.962141",
+      "last_checked": "2026-06-19T07:43:33.628982",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"86990ac746b7a86ef390f5b5a5a7a736\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontroller.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview.json": {
       "hash": "aabd2b2ceee6b47a81056ec0085d35ea81858c22dbba8cfca6fce8368252c9a2",
-      "last_checked": "2026-06-16T07:42:45.149665",
+      "last_checked": "2026-06-19T07:43:33.778707",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"103756c0ca4f3042b9466c2e8c2a80fb\"",
       "file_path": "documentation/ReplayKit/rpsystembroadcastpickerview.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller.json": {
       "hash": "cbdc0514c0b143291b1b8b96e88bceba12fd8d72d84d097d52e576cc271b0ee4",
-      "last_checked": "2026-06-16T07:42:45.324626",
+      "last_checked": "2026-06-19T07:43:33.906482",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"9e6ed68b2af223cbda6e71bf96daf851\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivitycontroller.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontrollerdelegate.json": {
       "hash": "4f9ca09e5f4cbb0fb874feec1cc659927afa770c6f4f6270b56ffc6f3765d0f4",
-      "last_checked": "2026-06-16T07:42:45.503395",
+      "last_checked": "2026-06-19T07:43:34.176793",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"56d7554a3d7d5afb399266f4c484a0b3\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivitycontrollerdelegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration.json": {
       "hash": "85431d59e83a94585bfe7f36646a531b1165481e571ed704b8a7fd99bf5d720e",
-      "last_checked": "2026-06-16T07:42:45.714476",
+      "last_checked": "2026-06-19T07:43:34.340357",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"2d91a66c0401822405275e195db57240\"",
       "file_path": "documentation/ReplayKit/rpbroadcastconfiguration.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode.json": {
       "hash": "459a1637f8af7907ff7369db661d45a5d72bf380e3e1f49fd95e14d618104c22",
-      "last_checked": "2026-06-16T07:42:45.891025",
+      "last_checked": "2026-06-19T07:43:34.473209",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"40ec21399be1b7e3bdc29147e3746b99\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/shared().json": {
       "hash": "cff6f5708ee95c055b1fbb45339d88e64f5883b843d3ba09f06c7ba2ccc76288",
-      "last_checked": "2026-06-16T07:42:46.432855",
+      "last_checked": "2026-06-19T07:43:35.051819",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"3fef6510065e0cb7a9f61625b72f1a59\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/shared.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/isavailable.json": {
       "hash": "d4ad6c442690bcecd049a44c0fd338d0882dfcc6db562a59e2e4193240283dd3",
-      "last_checked": "2026-06-16T07:42:46.604880",
+      "last_checked": "2026-06-19T07:43:35.263198",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"b41c354c2116a87eede937a50b117b70\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/isavailable.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/isrecording.json": {
       "hash": "f34445f5afbbb53e1e8598f93d9e5fe74521e6dcf3045808655d80da2eeb091c",
-      "last_checked": "2026-06-16T07:42:46.774394",
+      "last_checked": "2026-06-19T07:43:35.423506",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c13af98acae7fa2d6db2daec8a1ca766\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/isrecording.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/ismicrophoneenabled.json": {
       "hash": "a80cc3fede897b60f250589b3d02978f06dea439c8dddfc429e556bf3db25683",
-      "last_checked": "2026-06-16T07:42:46.943404",
+      "last_checked": "2026-06-19T07:43:35.544705",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"ecafaf3983fc73060a245ae34dbdd0b8\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/ismicrophoneenabled.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/iscameraenabled.json": {
       "hash": "1bf9b5256b9c3e1f70c5826f647998e20e338a3400f5934bf9b42137bb802942",
-      "last_checked": "2026-06-16T07:42:47.081424",
+      "last_checked": "2026-06-19T07:43:35.679277",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"56c3f0ff35c86c97fb994b655ab4f45a\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/iscameraenabled.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/camerapreviewview.json": {
       "hash": "fde3373d3c99d2eb71515b4fd9a7e1b3ecf0485e44a0c023df537ef6d7121fe8",
-      "last_checked": "2026-06-16T07:42:47.274102",
+      "last_checked": "2026-06-19T07:43:35.847810",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"714744ae6ebea68061482edec0a64b1e\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/camerapreviewview.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/cameraposition.json": {
       "hash": "0f7b551da9debcde716f44805b3f5392b7d479d5437feb5088d3ddb13e0a11df",
-      "last_checked": "2026-06-16T07:42:47.464792",
+      "last_checked": "2026-06-19T07:43:36.021214",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"26ef1545b53773e86c158844f028fe4d\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/cameraposition.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition.json": {
       "hash": "aec461cc5c4f2b4626448c38cb527e12acc26278aa5a50885d2be370ae1f0529",
-      "last_checked": "2026-06-16T07:42:47.662332",
+      "last_checked": "2026-06-19T07:43:36.142669",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"ca1e6994bc2bf0486352410b72bc8486\"",
       "file_path": "documentation/ReplayKit/rpcameraposition.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/delegate.json": {
       "hash": "7c7289bb98f4aed867c4cf2232a1699faf544833210543f9ccc9ac36cb666bca",
-      "last_checked": "2026-06-16T07:42:47.847447",
+      "last_checked": "2026-06-19T07:43:36.335186",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c0b282021641b20656fd14fa99baf4b2\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/delegate.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate.json": {
       "hash": "1ad9fbe5a444245f724346271387d6af7cc8b7f0c7873208ceca5f5939ff7bbe",
-      "last_checked": "2026-06-16T07:42:48.022054",
+      "last_checked": "2026-06-19T07:43:36.497999",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6ced2084a0569202a691dc27f045a3be\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorderdelegate.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startrecording(handler:).json": {
       "hash": "1ca7cea7edcfa8541a59647f6b378786ef67ab0cbf76fbffa78765a0bebc0a6b",
-      "last_checked": "2026-06-16T07:42:48.215201",
+      "last_checked": "2026-06-19T07:43:36.799686",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e3c6b4e1b14778e4b95523e2f7b2bd66\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/startrecording-handler.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stoprecording(handler:).json": {
       "hash": "c209510188d564da434500dc939ee875c1ae280959b37ae74de3c587aa0dab32",
-      "last_checked": "2026-06-16T07:42:48.346519",
+      "last_checked": "2026-06-19T07:43:36.956436",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c60dc412c17c805b40a65f3586ae507b\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/stoprecording-handler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stoprecording(withoutput:completionhandler:).json": {
       "hash": "6d1c547392d1a0ef2453865412fde021e5309b4af67439c2fd792847150d3aa5",
-      "last_checked": "2026-06-16T07:42:48.527893",
+      "last_checked": "2026-06-19T07:43:37.121894",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"5a0e67dbbf683c8737ec8d1f163c5551\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/stoprecording-withoutputcompletionhandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startcapture(handler:completionhandler:).json": {
       "hash": "1bf07bd4b61f2e0c4f0df5a7d977edf170ff78e5740f17588e0192cc7044df43",
-      "last_checked": "2026-06-16T07:42:48.699362",
+      "last_checked": "2026-06-19T07:43:37.274297",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"1ffe23b743bebc40f81b8f0caf1a46a2\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/startcapture-handlercompletionhandler.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype.json": {
       "hash": "ddd03c3171041dd81d1eb16beac1ce17d27155bde4e44df4b9e479c66f0b5230",
-      "last_checked": "2026-06-16T07:42:48.887597",
+      "last_checked": "2026-06-19T07:43:37.401577",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"792dbd30aaf169159d4a46cce67c9064\"",
       "file_path": "documentation/ReplayKit/rpsamplebuffertype.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stopcapture(handler:).json": {
       "hash": "67de4f8e373cfc82bb02498d4d9be74a03e979f6fa1203fd0c70bacfcf2aa2b2",
-      "last_checked": "2026-06-16T07:42:49.016997",
+      "last_checked": "2026-06-19T07:43:37.519974",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"dfd54b714615533144fec6b19a39acea\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/stopcapture-handler.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/discardrecording(handler:).json": {
       "hash": "0e8afd378b2bcfc2d6e8d0d0ee342abdd9ec9b722f52b5e1ba5132fc1eb74ffe",
-      "last_checked": "2026-06-16T07:42:49.245526",
+      "last_checked": "2026-06-19T07:43:37.671796",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"daebf4fb83c01b3077874ed8ab1f6378\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/discardrecording-handler.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startrecording(withmicrophoneenabled:handler:).json": {
       "hash": "e6ae1c58bac9ad161e2c4dbc302362560fd393f42b58edff53e802851030dc68",
-      "last_checked": "2026-06-16T07:42:49.413288",
+      "last_checked": "2026-06-19T07:43:37.864831",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"9a261c7f47161e265f2c55d9167415d2\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/startrecording-withmicrophoneenabledhandler.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/startclipbuffering(completionhandler:).json": {
       "hash": "251738eba408a0a5bbd03657d73caf5c55dd77ac23bd9edc84b2504d85d2fcec",
-      "last_checked": "2026-06-16T07:42:49.596796",
+      "last_checked": "2026-06-19T07:43:38.008118",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"f91ae99ea7a5800adb6a4ee79b769fc2\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/startclipbuffering-completionhandler.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/stopclipbuffering(completionhandler:).json": {
       "hash": "4a0fe28881b4997b49712590c220024f3fa76b483edc87ea5158a77f233f715a",
-      "last_checked": "2026-06-16T07:42:49.767801",
+      "last_checked": "2026-06-19T07:43:38.165517",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"8a6e707889a97fd6cb25c85397b63c77\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/stopclipbuffering-completionhandler.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorder/exportclip(to:duration:completionhandler:).json": {
       "hash": "508ec411173ad3ad78ee0875fd9ecb6416e9702555ef90156906ef0906b5ec28",
-      "last_checked": "2026-06-16T07:42:49.953508",
+      "last_checked": "2026-06-19T07:43:38.303242",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"9e6e1bb412e2af176f5190b88d5fbb1c\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorder/exportclip-todurationcompletionhandler.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller/mode.json": {
       "hash": "94381bded8a144f0b6a9e143a5b17fad4127feb775cf25634c0564ae243d960d",
-      "last_checked": "2026-06-16T07:42:50.075119",
+      "last_checked": "2026-06-19T07:43:38.476536",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a20de88068fe90e49ef7d4544e6355e9\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontroller/mode.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode.json": {
       "hash": "32440f4a558aecdd094ad0698aa20a0932a1cea53d95107db27c8795bddaca1a",
-      "last_checked": "2026-06-16T07:42:50.281223",
+      "last_checked": "2026-06-19T07:43:38.604492",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"1501b8023dab88f1dcb94b5ca06df07a\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollermode.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontroller/previewcontrollerdelegate.json": {
       "hash": "dbdee2162ef50cb536ab8ece7d4b6c39c99be2e2c2dc9ca14019b71cf9ad7f2b",
-      "last_checked": "2026-06-16T07:42:50.459141",
+      "last_checked": "2026-06-19T07:43:38.758429",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"cbf11a533669ada0d1170aec1972fc53\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontroller/previewcontrollerdelegate.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate.json": {
       "hash": "c9bc944c0b05b859466b063e2ad43137623237c831d5ece6916da7879674d310",
-      "last_checked": "2026-06-16T07:42:50.633555",
+      "last_checked": "2026-06-19T07:43:38.886382",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e0703b6387e203d3473938c4d276d6e1\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollerdelegate.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/broadcasturl.json": {
       "hash": "cb127e9894909c32ad7e23e7db24547aaaeaeb79fc7aab359d06795e59fd76b8",
-      "last_checked": "2026-06-16T07:42:50.834496",
+      "last_checked": "2026-06-19T07:43:39.015483",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"715107b43ea0fb44eb8ddf3889f58d76\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/broadcasturl.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/startbroadcast(handler:).json": {
       "hash": "7be1531920603cfe09a24792e9202b674c734321ddaa092ffc98d4566679c201",
-      "last_checked": "2026-06-16T07:42:50.961704",
+      "last_checked": "2026-06-19T07:43:39.310720",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d2452722fb45a24136b1f02f585c1191\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/startbroadcast-handler.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/pausebroadcast().json": {
       "hash": "e042c630e7ab833e3b03ccc3901347561ac42737e1567f7a13a8f58d07b7c6f0",
-      "last_checked": "2026-06-16T07:42:51.094775",
+      "last_checked": "2026-06-19T07:43:39.472972",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"3c504329c5070ee219e824bf4e09a2bd\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/pausebroadcast.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/resumebroadcast().json": {
       "hash": "9146ca40e3544cc72bf6039538ed1aaa150ffdac00e089ca021adf852a8f474c",
-      "last_checked": "2026-06-16T07:42:51.247942",
+      "last_checked": "2026-06-19T07:43:39.643862",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"30c9453f5ad0abc8b3491584b0217c34\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/resumebroadcast.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/finishbroadcast(handler:).json": {
       "hash": "04ea3d0912033b16a439714a27e843aa126a09cc3cd1afffab07f747ff7007a3",
-      "last_checked": "2026-06-16T07:42:51.412517",
+      "last_checked": "2026-06-19T07:43:39.827636",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d846f296691efa8fa315a7a440c5f1f6\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/finishbroadcast-handler.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/serviceinfo.json": {
       "hash": "04f669c64f20bd5aee32b6c367c205aee226d6ed8c4187b558330590eed6bc10",
-      "last_checked": "2026-06-16T07:42:51.586706",
+      "last_checked": "2026-06-19T07:43:39.989634",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a7db442ee470903d7c8f5b52c96ce203\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/serviceinfo.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/broadcastextensionbundleid.json": {
       "hash": "e50b31811cca07f9b5020d8c17d755f45367c5a9c77266306b119a8bb2c3816a",
-      "last_checked": "2026-06-16T07:42:51.763915",
+      "last_checked": "2026-06-19T07:43:40.118307",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"b0ed3590a80a141cbe24fc640fc30597\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/broadcastextensionbundleid.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/isbroadcasting.json": {
       "hash": "4e5e6f02f656687be2d4cb98a7b88e70206b5fbddc0c07b84a7303b6a3db5fea",
-      "last_checked": "2026-06-16T07:42:51.933227",
+      "last_checked": "2026-06-19T07:43:40.234377",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"fbc680f79783fc415d220d5955765fe4\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/isbroadcasting.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/ispaused.json": {
       "hash": "85c497e82bc0eadc96d94a3e9548f74997b6878f7bfaee45b27cfee28ab7ad03",
-      "last_checked": "2026-06-16T07:42:52.118934",
+      "last_checked": "2026-06-19T07:43:40.404635",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"ef5f118da4c382a6eb123fc86924f2b3\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/ispaused.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontroller/delegate.json": {
       "hash": "d7eb77cc82448ff03eabb53c435b278f53b129ba889e0d4b3fb722a9187acdbc",
-      "last_checked": "2026-06-16T07:42:52.252461",
+      "last_checked": "2026-06-19T07:43:40.519195",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"7bb0523410a33515890eb32d3e36e319\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontroller/delegate.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate.json": {
       "hash": "8bc868078a74fe5c2576d711407bea23b08219ad0daba43ef0a561433298c53b",
-      "last_checked": "2026-06-16T07:42:52.394480",
+      "last_checked": "2026-06-19T07:43:40.706162",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e97816554bf9c33e6e24c2a0397ff43a\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontrollerdelegate.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler/updateserviceinfo(_:).json": {
       "hash": "be568264a6f04d2c5d30c5e9d067846641df3437d0efa36f8d3b155403421b29",
-      "last_checked": "2026-06-16T07:42:52.555786",
+      "last_checked": "2026-06-19T07:43:40.881723",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"53f83eaab33b7ffbde670e4436907e90\"",
       "file_path": "documentation/ReplayKit/rpbroadcasthandler/updateserviceinfo.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcasthandler/updatebroadcast(_:).json": {
       "hash": "ce4950c42646c29412cfc3927d9248f68720721d9b0bcbe013fd3f7dec12d9ba",
-      "last_checked": "2026-06-16T07:42:52.740750",
+      "last_checked": "2026-06-19T07:43:40.997306",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"627ff7229afa1fe53b65ed2dd7489771\"",
       "file_path": "documentation/ReplayKit/rpbroadcasthandler/updatebroadcast.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcaststarted(withsetupinfo:).json": {
       "hash": "081862689bcdbcb3fe46e43a1a508a545cead992a22e1c78656c2176e8f34ba4",
-      "last_checked": "2026-06-16T07:42:52.904437",
+      "last_checked": "2026-06-19T07:43:41.137249",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"0fbb619cc64d8378031fbd9a7c63fe31\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/broadcaststarted-withsetupinfo.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastpaused().json": {
       "hash": "884badca757188a8f3f118534324a54391bc7875d051599379fea2e10081c8ab",
-      "last_checked": "2026-06-16T07:42:53.024550",
+      "last_checked": "2026-06-19T07:43:41.315296",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"509d7b05eab35e4ab236eae48a1c42cd\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/broadcastpaused.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastresumed().json": {
       "hash": "7a44758b2a1f644f939b58e8bf774f853dc6c623d163e29be566525d0eb573c8",
-      "last_checked": "2026-06-16T07:42:53.175341",
+      "last_checked": "2026-06-19T07:43:41.440578",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"51477d69911f241fe958c93765de2d9a\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/broadcastresumed.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastfinished().json": {
       "hash": "3498fa2ab422919c8cdf062dae7d7220b610ccbc69e9fdbac8387d7a2660bf92",
-      "last_checked": "2026-06-16T07:42:53.296121",
+      "last_checked": "2026-06-19T07:43:41.553281",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"9ad13f49a2f17c586bea161194827e67\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/broadcastfinished.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/broadcastannotated(withapplicationinfo:).json": {
       "hash": "d7ace3aad92e2b5d69337cf76644690d04dac983de8a6c3725ce2a920db69a2b",
-      "last_checked": "2026-06-16T07:42:53.425534",
+      "last_checked": "2026-06-19T07:43:41.700440",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e460697339902809eed3d8078dc3d2d9\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/broadcastannotated-withapplicationinfo.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpapplicationinfobundleidentifierkey.json": {
       "hash": "e4344f2ad168e528438f8611dd33d104b27fd17880420dc27725a5e29f629ded",
-      "last_checked": "2026-06-16T07:42:53.567591",
+      "last_checked": "2026-06-19T07:43:41.816098",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a2eee3f0a14004dbe1d43a7c536beb38\"",
       "file_path": "documentation/ReplayKit/rpapplicationinfobundleidentifierkey.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/processsamplebuffer(_:with:).json": {
       "hash": "1961453c7591d2f2d0ca247d74bbc32186daa0258f0418576c9f2708a32c2696",
-      "last_checked": "2026-06-16T07:42:53.724313",
+      "last_checked": "2026-06-19T07:43:41.956898",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"1e5fa6123ca70fe0a20bcc8cf619f9d5\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/processsamplebuffer-with.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpvideosampleorientationkey.json": {
       "hash": "0aac8de51bb4ebda949d7379eb62dbc84b8fcd690c12f927d88e6d497fc7a1a7",
-      "last_checked": "2026-06-16T07:42:53.894673",
+      "last_checked": "2026-06-19T07:43:42.109892",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"de13462b2c5f8c47f8f45b5fa707bcce\"",
       "file_path": "documentation/ReplayKit/rpvideosampleorientationkey.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastsamplehandler/finishbroadcastwitherror(_:).json": {
       "hash": "7a5ba36d87e63e336bb3ae376de3eddac5f1358b2899c4545c1d61addf74e1bd",
-      "last_checked": "2026-06-16T07:42:54.044348",
+      "last_checked": "2026-06-19T07:43:42.390300",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"31c7774f9e30b51a975bd232404c7f0a\"",
       "file_path": "documentation/ReplayKit/rpbroadcastsamplehandler/finishbroadcastwitherror.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler/finishedprocessingmp4clip(withupdatedbroadcastconfiguration:error:).json": {
       "hash": "893eb9378b9f2c65b93d5c00a4dc0949892a69853f0d3daacc3c7d5362cac634",
-      "last_checked": "2026-06-16T07:42:54.352695",
+      "last_checked": "2026-06-19T07:43:42.557952",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"840fd873a7b882905d83b20c78c484d7\"",
       "file_path": "documentation/ReplayKit/rpbroadcastmp4cliphandler/finishedprocessingmp4clip-withupdatedbroadcastconfigurationerror.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastmp4cliphandler/processmp4clip(with:setupinfo:finished:).json": {
       "hash": "d717965233c2b1fe71c91f1b8ee8d170a8a33fb40dc475033a17c6a35220035c",
-      "last_checked": "2026-06-16T07:42:54.489288",
+      "last_checked": "2026-06-19T07:43:42.754041",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"918cfdd68023f2c412335bbffdce4e08\"",
       "file_path": "documentation/ReplayKit/rpbroadcastmp4cliphandler/processmp4clip-withsetupinfofinished.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/load(handler:).json": {
       "hash": "c522e69dbea6dab683d8dfab917163e798e397819310a17846aa4349ee24fcd4",
-      "last_checked": "2026-06-16T07:42:54.611529",
+      "last_checked": "2026-06-19T07:43:43.053378",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"0f889bfdd9eacccbecf6abd1d326d4c4\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontroller/load-handler.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/load(withpreferredextension:handler:).json": {
       "hash": "339cf90d7d7e8b50aef2af5f509f72cd8063d4ce92f1da9d935c05ab43aa92c2",
-      "last_checked": "2026-06-16T07:42:54.747758",
+      "last_checked": "2026-06-19T07:43:43.226023",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"57d822fec5a96001e0b986d5ce11b429\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontroller/load-withpreferredextensionhandler.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontroller/delegate.json": {
       "hash": "d56845a0cbced493236db3ae75f4e135974dc9c68f715d62f79ce75fdd23a5e3",
-      "last_checked": "2026-06-16T07:42:54.890949",
+      "last_checked": "2026-06-19T07:43:43.377019",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"fa2e5cb2a5cac5339ff5a770daa3634f\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontroller/delegate.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate.json": {
       "hash": "bde67f5f1dada23108152933395b2fad410cc69d066b9dfc449bea66b7e508e0",
-      "last_checked": "2026-06-16T07:42:55.019448",
+      "last_checked": "2026-06-19T07:43:43.532192",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"403fce5441610a3ea376fa9ea49a9160\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontrollerdelegate.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview/preferredextension.json": {
       "hash": "6dcaaab2acda7170bdd5cabb0ab1de4ca68f59fba7eaa844dd24d189290443b5",
-      "last_checked": "2026-06-16T07:42:55.205043",
+      "last_checked": "2026-06-19T07:43:43.662639",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"44fd3d9c28c4a3c256db50ea44e5a794\"",
       "file_path": "documentation/ReplayKit/rpsystembroadcastpickerview/preferredextension.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsystembroadcastpickerview/showsmicrophonebutton.json": {
       "hash": "1ea356cda83a9a55312cae818c1805b16eb83b87f5aee89c7fbd279b293b702a",
-      "last_checked": "2026-06-16T07:42:55.383609",
+      "last_checked": "2026-06-19T07:43:43.974736",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"32134264ff408e8da589906bde4d586a\"",
       "file_path": "documentation/ReplayKit/rpsystembroadcastpickerview/showsmicrophonebutton.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller/showbroadcastpicker(at:from:preferredextensionidentifier:completionhandler:).json": {
       "hash": "3f40f409c98078669eed47e1e774ef6214451502e13b5edc3d0e5711f09ddff4",
-      "last_checked": "2026-06-16T07:42:55.522404",
+      "last_checked": "2026-06-19T07:43:44.142928",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c83e8f2e65e9e97ef0929951a044a4f4\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivitycontroller/showbroadcastpicker-atfrompreferredextensionidentifiercompletionhandler.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontroller/delegate.json": {
       "hash": "34ac4834c5928c31c6bfb03bfff6f6277eb01f0646ed810944d01b19a3ce7d74",
-      "last_checked": "2026-06-16T07:42:55.658506",
+      "last_checked": "2026-06-19T07:43:44.432365",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"3d9d5888c40356307a2941ed1117299c\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivitycontroller/delegate.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller(_:didfinishwith:error:).json": {
       "hash": "97aeb554f08731c0fc190e287262a068d1e51625e263140199f30c5fe2d7a10f",
-      "last_checked": "2026-06-16T07:42:55.794239",
+      "last_checked": "2026-06-19T07:43:44.754820",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"dd1851c8e4f57dbec9e9e8c2dfdc2c18\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivitycontrollerdelegate/broadcastactivitycontroller-didfinishwitherror.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration/clipduration.json": {
       "hash": "41607c1be56fee719b6052d7ff888380ec0dd4217378273b32bafd4aca6e2a14",
-      "last_checked": "2026-06-16T07:42:55.929976",
+      "last_checked": "2026-06-19T07:43:44.874860",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"7a7f89b9f55dc48d0045a04e3ba3d356\"",
       "file_path": "documentation/ReplayKit/rpbroadcastconfiguration/clipduration.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration/videocompressionproperties.json": {
       "hash": "cf36495c2950068a16dacd2eb65eab6d8b03ccaf56d35f2365c17a7167026355",
-      "last_checked": "2026-06-16T07:42:56.069524",
+      "last_checked": "2026-06-19T07:43:44.992809",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a48da0cac172401f04e416dce3d425a7\"",
       "file_path": "documentation/ReplayKit/rpbroadcastconfiguration/videocompressionproperties.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/activephonecall.json": {
       "hash": "af3f8491e4e16544f588f2bcf450bd3d72c230dc1575904226ea8bc263b38cf7",
-      "last_checked": "2026-06-16T07:42:56.363285",
+      "last_checked": "2026-06-19T07:43:45.309481",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"11e78ed7d21323c320bc5df885f6dd1b\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/activephonecall.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/attempttostartinrecordingstate.json": {
       "hash": "d7b769fa8e662a1feaaf354f0e2ec79f473690c698eb6d29aea4e78b81b5cd9b",
-      "last_checked": "2026-06-16T07:42:56.484030",
+      "last_checked": "2026-06-19T07:43:45.475314",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6de66382b0d515f1f7280e4fb5f0cdaf\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/attempttostartinrecordingstate.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/attempttostopnonrecording.json": {
       "hash": "a28b58eaf372f16ae7cd75865703b894859a7ebd804a619140fb154a59d52899",
-      "last_checked": "2026-06-16T07:42:56.623135",
+      "last_checked": "2026-06-19T07:43:45.590523",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"b14783035136a46d811ee505bbb2c05a\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/attempttostopnonrecording.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/broadcastinvalidsession.json": {
       "hash": "e57295b3f5b7876fa3bbd64891e20e1d124ebbbaecfaf5eea11b8d17391c2046",
-      "last_checked": "2026-06-16T07:42:56.748202",
+      "last_checked": "2026-06-19T07:43:45.728287",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c8fef5ee46f3ae60f79414bc08716666\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/broadcastinvalidsession.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/broadcastsetupfailed.json": {
       "hash": "943b34afa75b1bbe5a6a430bae18569cf4ac951e85170e25db807b2c6d997234",
-      "last_checked": "2026-06-16T07:42:56.869456",
+      "last_checked": "2026-06-19T07:43:45.847859",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"35c77504027cfa45b2fe62c919bd776b\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/broadcastsetupfailed.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/carplay.json": {
       "hash": "41aa4fdf7d56922785b3021fd7476e41cbcd1ced1bc011b227099b480da40ef8",
-      "last_checked": "2026-06-16T07:42:57.038132",
+      "last_checked": "2026-06-19T07:43:46.162153",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d4de2cf5005a3b17980099e26839d2cd\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/carplay.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/codesuccessful.json": {
       "hash": "78a38621ad66e566a1bc8cd2891b46f8428cc579dc520eb51081ce02bded5d1f",
-      "last_checked": "2026-06-16T07:42:57.229986",
+      "last_checked": "2026-06-19T07:43:46.297451",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"14db8177f6507c5333926bf7fd0ecc6f\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/codesuccessful.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/contentresize.json": {
       "hash": "09e67e3a132802dce365cb0981c2e029a9a8e084ec416196dbfce51ad8713e3d",
-      "last_checked": "2026-06-16T07:42:57.350508",
+      "last_checked": "2026-06-19T07:43:46.430481",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d112a8f0a19cc11f429d8a3de269daa6\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/contentresize.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/disabled.json": {
       "hash": "4e417d02c2ffcc4281ad8c3b90f990f7c99d860a87da32bd6128426aad5169ef",
-      "last_checked": "2026-06-16T07:42:57.495622",
+      "last_checked": "2026-06-19T07:43:46.555510",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6717f52338f386f19cd5e24ccc1a7f3b\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/disabled.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/entitlements.json": {
       "hash": "97db6479e2bf16a7ff1f08800445b958894c4766a86e896ad31c0b956a1196d8",
-      "last_checked": "2026-06-16T07:42:57.646891",
+      "last_checked": "2026-06-19T07:43:46.760426",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"afc2fffa181e0cfc513c4a15f4f4739f\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/entitlements.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failed.json": {
       "hash": "68bdfe01bbdbd0977069fbde3f33aa57ab7a15297d8560fd85ae5f8db425ad9d",
-      "last_checked": "2026-06-16T07:42:57.790049",
+      "last_checked": "2026-06-19T07:43:46.868495",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"cc091d950e1e88cc56a87294c2ddf393\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failed.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninterrupted.json": {
       "hash": "2e0280e3e92dc52a39a2db62737aeb2463856010e9e7a808736b9dec488bc18a",
-      "last_checked": "2026-06-16T07:42:57.911493",
+      "last_checked": "2026-06-19T07:43:47.050362",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"498adaa77578b3ae8b9a743521313eb8\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedapplicationconnectioninterrupted.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedapplicationconnectioninvalid.json": {
       "hash": "1a5fe28b56fbf20d203ba8b282a9403c2f34694765beb790f001501ac3e746df",
-      "last_checked": "2026-06-16T07:42:58.041054",
+      "last_checked": "2026-06-19T07:43:47.216248",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"f174fd31e36c652c45760dae010a652e\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedapplicationconnectioninvalid.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportcanceled.json": {
       "hash": "d5647939f19217cd1a4164194aa92d1a8b3c6486a5969216f67ea937d67889fb",
-      "last_checked": "2026-06-16T07:42:58.214749",
+      "last_checked": "2026-06-19T07:43:47.371874",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6e27981e6847e222d62009556adb28fc\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedassetwriterexportcanceled.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterexportfailed.json": {
       "hash": "a51b618a79f7268be483d6cd12649b89c31061991705d8b256b34722d308edf0",
-      "last_checked": "2026-06-16T07:42:58.337618",
+      "last_checked": "2026-06-19T07:43:47.484349",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"43137eb644a93e109afe621acd32f63b\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedassetwriterexportfailed.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterfailedtosave.json": {
       "hash": "4e47f4f139f46a5528364c2a2beb9206cb593f016f93f526b427eb8a4a35f247",
-      "last_checked": "2026-06-16T07:42:58.464791",
+      "last_checked": "2026-06-19T07:43:47.647293",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"49e104b78251f214110a0bed6413abac\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedassetwriterfailedtosave.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedassetwriterinwrongstate.json": {
       "hash": "8ec1a62eb723bd48bbfb3c93dc33f0a919d70aac4637a9d8e32f527695e6a17a",
-      "last_checked": "2026-06-16T07:42:58.592948",
+      "last_checked": "2026-06-19T07:43:47.826362",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"7505e6645b8f5ce0b992d07662c8e59f\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedassetwriterinwrongstate.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedincorrecttimestamps.json": {
       "hash": "6e5936a91c41c228f5950643e841c27bd6893a3cd714c8f1f9b34794f69837c0",
-      "last_checked": "2026-06-16T07:42:58.741117",
+      "last_checked": "2026-06-19T07:43:47.994489",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"0b050d6513d59021bb9481b676bc2357\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedincorrecttimestamps.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedmediaservicesfailure.json": {
       "hash": "378eec2b2134466968a72f756599455a873c263808ee1fb536f7f7490d74e7b8",
-      "last_checked": "2026-06-16T07:42:58.884682",
+      "last_checked": "2026-06-19T07:43:48.121738",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"19de32596e2e3bb006955870ede71ca2\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedmediaservicesfailure.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failednoassetwriter.json": {
       "hash": "fcc57b023e9ce158afba829955dfbb90eda6fd437a9a07d49c80c0c8a514e159",
-      "last_checked": "2026-06-16T07:42:59.007413",
+      "last_checked": "2026-06-19T07:43:48.304315",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"9939bc172f997bd69664cce2a91a613e\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failednoassetwriter.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failednomatchingapplicationcontext.json": {
       "hash": "27cf8e362c9db731727ab03af64642e30f9c8e9ed19f84aaa791934e8374aa74",
-      "last_checked": "2026-06-16T07:42:59.182148",
+      "last_checked": "2026-06-19T07:43:48.423837",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"8440266b935b8540188dbfed92e091d9\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failednomatchingapplicationcontext.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoobtainurl.json": {
       "hash": "908ba5707acc8fa3f22a9a5112e5caefd3dbd5c51a29abaf3818fe1722b49105",
-      "last_checked": "2026-06-16T07:42:59.364521",
+      "last_checked": "2026-06-19T07:43:48.595711",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"798a3ee4c83664c1ce7d13a505b528fe\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtoobtainurl.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoprocessfirstsample.json": {
       "hash": "f2109b24d9191bf5872f2b676dd30ca69f7f46b4eba1e9d566fcf9fe34b1c7c1",
-      "last_checked": "2026-06-16T07:42:59.486604",
+      "last_checked": "2026-06-19T07:43:48.768826",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"f9c3836a1139cfab7ad25d8c16b93a7f\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtoprocessfirstsample.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtoremovefile.json": {
       "hash": "60f315de748168d8714c41524a4206189284aa636620ddb9dd3cbe113fc181d1",
-      "last_checked": "2026-06-16T07:42:59.643469",
+      "last_checked": "2026-06-19T07:43:48.911191",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d650b620f97da1bc7962a14ef9e4fdaf\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtoremovefile.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtostartcapturestack.json": {
       "hash": "2d5ca187c362145c5f6898bc6ec3469ddd8aac1cdb68036e87ecf97ef59da0e5",
-      "last_checked": "2026-06-16T07:42:59.813587",
+      "last_checked": "2026-06-19T07:43:49.222551",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"7b783027d5ade0e0add9d28d0d610663\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtostartcapturestack.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtostart.json": {
       "hash": "7cbd401b92d43dd54f288877126609da275db1bffd49381bbacdb47b033cc59f",
-      "last_checked": "2026-06-16T07:42:59.950674",
+      "last_checked": "2026-06-19T07:43:49.403667",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"373120745a248a9f8a58bb19615163e8\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtostart.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/failedtosave.json": {
       "hash": "78e614256333a5b85762d0e50f932ad2fe3a198e5457dc58b59e68622f019826",
-      "last_checked": "2026-06-16T07:43:00.068124",
+      "last_checked": "2026-06-19T07:43:49.529364",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"604b084b7c8ddd69cc2ae18b7fbeae82\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/failedtosave.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/filepermissions.json": {
       "hash": "83f63e83681ebd9c2b8cbdcb72fc7e90ef976680ae86b2b6a8b864d22b565104",
-      "last_checked": "2026-06-16T07:43:00.192939",
+      "last_checked": "2026-06-19T07:43:49.653725",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"ab4936cc9e39f10953446ea0f8c8861d\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/filepermissions.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/insufficientstorage.json": {
       "hash": "4babe5c95da295ec897f81922a1ccaf3f804074748577f1236f1194f50125798",
-      "last_checked": "2026-06-16T07:43:00.354509",
+      "last_checked": "2026-06-19T07:43:49.836333",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"901ce18957a7339b398e1aee7fb0adf0\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/insufficientstorage.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/interrupted.json": {
       "hash": "6d756bdbee7c6923094ad9805a5ea1458046f7b08fb335b7a9fb39b1146404f8",
-      "last_checked": "2026-06-16T07:43:00.481158",
+      "last_checked": "2026-06-19T07:43:49.964701",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"943f333a7e30ee89892c00253d1c1485\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/interrupted.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/invalidparameter.json": {
       "hash": "85582cff42253ec4e8a0cf3cdc985ef54f9a1abfd171a7ba905584bb07676cb0",
-      "last_checked": "2026-06-16T07:43:00.646106",
+      "last_checked": "2026-06-19T07:43:50.130778",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"35f292b5db0289688c655be166cf753c\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/invalidparameter.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/photofailure.json": {
       "hash": "3dccb0c706000165b2a81b1eb3c9498aae1a54ad71ff4dfc13b0db0d5455b404",
-      "last_checked": "2026-06-16T07:43:00.781088",
+      "last_checked": "2026-06-19T07:43:50.274893",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c17724bb648c02d7163b6fc94204d328\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/photofailure.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/recordinginvalidsession.json": {
       "hash": "3d5bed47a598cf2b7a0b7e1c60d7f69fadd9d30ca794e118c6f3f4e8ca3e3e41",
-      "last_checked": "2026-06-16T07:43:00.927223",
+      "last_checked": "2026-06-19T07:43:50.399460",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"eaead04a6270e9cb61113d6f49bb3cf7\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/recordinginvalidsession.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/systemdormancy.json": {
       "hash": "14f2e0376915aca02619f0b4cdb021d1a98fcf8fcf13579333deb96971f6e08b",
-      "last_checked": "2026-06-16T07:43:01.085059",
+      "last_checked": "2026-06-19T07:43:50.574933",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"63ae77572b1c47882c26a3a64e06c36b\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/systemdormancy.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/unknown.json": {
       "hash": "e88879a787bee2a6f5453c232fc44420021a0d8cc1a4169d76dc126613cdb6e7",
-      "last_checked": "2026-06-16T07:43:01.215190",
+      "last_checked": "2026-06-19T07:43:50.719135",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"61faee765933569dcdb1992f48eab919\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/unknown.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/userdeclined.json": {
       "hash": "e11bc5e2d8a61d473a952b2d994b1fbbf77d8876b45d4b551aa05b1a5f406551",
-      "last_checked": "2026-06-16T07:43:01.352228",
+      "last_checked": "2026-06-19T07:43:50.849039",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"18e34db8371cbb1fe889d072fa3c369e\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/userdeclined.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/videomixingfailure.json": {
       "hash": "6ac0790f0d50803905228c324a956abed14bfc172188c6ef46d43efa74eb914a",
-      "last_checked": "2026-06-16T07:43:01.491797",
+      "last_checked": "2026-06-19T07:43:50.962305",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"0924896d52b9714ffc0fc0e60186a48c\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/videomixingfailure.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/exportcliptourlinprogress.json": {
       "hash": "996ab3f9b947b48473fa0f5093483d3af87e3e6c3ad1ee83dd35c46f19235f10",
-      "last_checked": "2026-06-16T07:43:01.630195",
+      "last_checked": "2026-06-19T07:43:51.138788",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"530f0859744f97ef5bf05330cf40122d\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/exportcliptourlinprogress.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrorcode/init(rawvalue:).json": {
       "hash": "5d8c1a36e93b3718fc0ac392ba6d6886bba0e32baa9b732990a5ce6b8bd1318e",
-      "last_checked": "2026-06-16T07:43:01.753618",
+      "last_checked": "2026-06-19T07:43:51.254943",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"b96f8d4be4920bd838e3d5cc0e3c5845\"",
       "file_path": "documentation/ReplayKit/rprecordingerrorcode/init-rawvalue.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rprecordingerrordomain.json": {
       "hash": "8b9e9f280e91bfb13a673ea430a39a0ac410bc467e379dc0c1d5ab5d6de0b04a",
-      "last_checked": "2026-06-16T07:42:46.065158",
+      "last_checked": "2026-06-19T07:43:34.613989",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"77249dbca9cc7d017879622ad5cd9f4e\"",
       "file_path": "documentation/ReplayKit/rprecordingerrordomain.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/scstreamerrordomain.json": {
       "hash": "b253e1899fe87f9899f5b1c2c54505372e16d6447e24af505411d8baef224d20",
-      "last_checked": "2026-06-16T07:42:46.252713",
+      "last_checked": "2026-06-19T07:43:34.723146",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a9fdfcae887775bca730b5ed1f82de91\"",
       "file_path": "documentation/ReplayKit/scstreamerrordomain.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/back.json": {
       "hash": "4075d336905b34dcb14bc48d5a67b71658cef50a431236ec5ee2fa5fdb310a00",
-      "last_checked": "2026-06-16T07:43:01.938206",
+      "last_checked": "2026-06-19T07:43:51.384345",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"4dbb5f38502fa697c8fc497b5de0db38\"",
       "file_path": "documentation/ReplayKit/rpcameraposition/back.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/front.json": {
       "hash": "38708577e25f399c782dd126845e3a037b33c069f98072393583236377852572",
-      "last_checked": "2026-06-16T07:43:02.073337",
+      "last_checked": "2026-06-19T07:43:51.704379",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"c22c623105773102e4609e4bb25a4f56\"",
       "file_path": "documentation/ReplayKit/rpcameraposition/front.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpcameraposition/init(rawvalue:).json": {
       "hash": "dca28ee1115ab08778037412eacdc5af8f96f6eb4a32ea4dab83233f013d4613",
-      "last_checked": "2026-06-16T07:43:02.257086",
+      "last_checked": "2026-06-19T07:43:52.002960",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"4758f4e0193f9b2652b1dbf494292719\"",
       "file_path": "documentation/ReplayKit/rpcameraposition/init-rawvalue.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwith:error:).json": {
       "hash": "655b6876ab48d7bdfec3dc808f078f0fa6fff2460698842060cb1473bdb8c32c",
-      "last_checked": "2026-06-16T07:43:02.393492",
+      "last_checked": "2026-06-19T07:43:52.192899",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"89bdadf8f0e2e6b40df14a43637ec850\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorderdelegate/screenrecorder-didstoprecordingwitherror.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorderdidchangeavailability(_:).json": {
       "hash": "36040ad67fb8a874319f3f3d4abf226ec0bbfb8c32b7553a128dda8f4c5ccad7",
-      "last_checked": "2026-06-16T07:43:02.524313",
+      "last_checked": "2026-06-19T07:43:52.351270",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"5332b02e85800082bfcda32a4cddb4c5\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorderdelegate/screenrecorderdidchangeavailability.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpscreenrecorderdelegate/screenrecorder(_:didstoprecordingwitherror:previewviewcontroller:).json": {
       "hash": "99f5f3b441081ec7ebb6ba64bcbbb6935064b30d675143f2b78da9cd2ed7ddc0",
-      "last_checked": "2026-06-16T07:43:02.665501",
+      "last_checked": "2026-06-19T07:43:52.484998",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d7b9a23216b560d1b2b3f3898734e54c\"",
       "file_path": "documentation/ReplayKit/rpscreenrecorderdelegate/screenrecorder-didstoprecordingwitherrorpreviewviewcontroller.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/audioapp.json": {
       "hash": "dc5b6e415aa33bdc3ea35c1effe97c654feecf520f8af11d68371284be194fad",
-      "last_checked": "2026-06-16T07:43:02.856475",
+      "last_checked": "2026-06-19T07:43:52.642314",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"93522e8648be2aada28e1586bfc8f630\"",
       "file_path": "documentation/ReplayKit/rpsamplebuffertype/audioapp.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/audiomic.json": {
       "hash": "3c401183f0a1d30702956e9d662aa5ec12737cb0441a802958394b73dacb91b0",
-      "last_checked": "2026-06-16T07:43:03.037541",
+      "last_checked": "2026-06-19T07:43:52.770483",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6a9646c64159893cb1115d17b4d6ec19\"",
       "file_path": "documentation/ReplayKit/rpsamplebuffertype/audiomic.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/video.json": {
       "hash": "ab80fd462c722e2c0272c73bb1d0f207377cbe1f3e0fff43f3069189f4f95455",
-      "last_checked": "2026-06-16T07:43:03.187305",
+      "last_checked": "2026-06-19T07:43:52.930104",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e2a4aab58987bc77f0b6d72bd17fe555\"",
       "file_path": "documentation/ReplayKit/rpsamplebuffertype/video.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpsamplebuffertype/init(rawvalue:).json": {
       "hash": "28b8faca97bf26b46528edbb633802a6b0e065518d8c91a0c509fc576835bd7f",
-      "last_checked": "2026-06-16T07:43:03.363343",
+      "last_checked": "2026-06-19T07:43:53.108638",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"be7eac60fbdc9fc6922cb7c13131edb9\"",
       "file_path": "documentation/ReplayKit/rpsamplebuffertype/init-rawvalue.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/preview.json": {
       "hash": "e9737e568f54e3750bc48dfc702a8fa44b6a7114edaa233e057868fab4a1762d",
-      "last_checked": "2026-06-16T07:43:03.488150",
+      "last_checked": "2026-06-19T07:43:53.268115",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"8062a2cbdc7f6dd5f5c29a6d80d20197\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollermode/preview.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/share.json": {
       "hash": "f1baffe6ed6a6b07f6b9d0b384ab3d5e67544a1ce5a7068cd4c8e6067146ed35",
-      "last_checked": "2026-06-16T07:43:03.631513",
+      "last_checked": "2026-06-19T07:43:53.460201",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"e9fe4b7e36179e95745d923c27c45ca7\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollermode/share.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollermode/init(rawvalue:).json": {
       "hash": "510488fc34b04ce9670bf31b3289f84e56430c3ac6a8194d8c00e18609547446",
-      "last_checked": "2026-06-16T07:43:03.755669",
+      "last_checked": "2026-06-19T07:43:53.627504",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"d283fa142650244421eb5d65a57e7813\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollermode/init-rawvalue.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontrollerdidfinish(_:).json": {
       "hash": "9873144e2f98ea6902f5a1326a6f45a326658f899c808fc2d84e5cfeb08d7b78",
-      "last_checked": "2026-06-16T07:43:03.879688",
+      "last_checked": "2026-06-19T07:43:53.794347",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"6bb86864a46e61996e8d67bf028de551\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollerdelegate/previewcontrollerdidfinish.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rppreviewviewcontrollerdelegate/previewcontroller(_:didfinishwithactivitytypes:).json": {
       "hash": "b6a6cf14f54e3c39dcfdfcd600402a149fe09a774bfec07fb084fbd681032775",
-      "last_checked": "2026-06-16T07:43:03.998782",
+      "last_checked": "2026-06-19T07:43:53.972894",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"fb477d69030c1754f37551d85d25c0df\"",
       "file_path": "documentation/ReplayKit/rppreviewviewcontrollerdelegate/previewcontroller-didfinishwithactivitytypes.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didfinishwitherror:).json": {
       "hash": "48fb4b7d1e63ebd6295a4505bf12407f8b2a15d358f122f5602731961ba14e83",
-      "last_checked": "2026-06-16T07:43:04.136978",
+      "last_checked": "2026-06-19T07:43:54.135852",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"8eea4dbe3ae26c6ea8e3ef8796a68028\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontrollerdelegate/broadcastcontroller-didfinishwitherror.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdateserviceinfo:).json": {
       "hash": "9d626fec52d29f68c2c64dc91b4e8b06c9fe2510af11052ecf3cb19c40b68dde",
-      "last_checked": "2026-06-16T07:43:04.267960",
+      "last_checked": "2026-06-19T07:43:54.305978",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"a8f377fef5c2596deab2782481e0afac\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontrollerdelegate/broadcastcontroller-didupdateserviceinfo.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastcontrollerdelegate/broadcastcontroller(_:didupdatebroadcast:).json": {
       "hash": "8c84bd3b87036b8e4d14712c1ac02ba0aca66d43a0c021fd46439fbe4eeb8159",
-      "last_checked": "2026-06-16T07:43:04.406759",
+      "last_checked": "2026-06-19T07:43:54.492963",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"3b0c4d6c84003536cd7d1599b78b672f\"",
       "file_path": "documentation/ReplayKit/rpbroadcastcontrollerdelegate/broadcastcontroller-didupdatebroadcast.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller(_:didfinishwith:error:).json": {
       "hash": "46c7b7499269e1651c283d356c14204d089846182ef70920fc12dd3edca97993",
-      "last_checked": "2026-06-16T07:43:04.552778",
+      "last_checked": "2026-06-19T07:43:54.619993",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"8892d0b3bc83635cd38bd83033566f1d\"",
       "file_path": "documentation/ReplayKit/rpbroadcastactivityviewcontrollerdelegate/broadcastactivityviewcontroller-didfinishwitherror.md"
     },
@@ -2509,9 +2509,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/replaykit/rpbroadcastconfiguration/init(coder:).json": {
       "hash": "b141d4a57295ef891ce624a967462547d9477596e8c98a2e099dcd7426cb97f0",
-      "last_checked": "2026-06-16T07:42:56.200460",
+      "last_checked": "2026-06-19T07:43:45.147739",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:42:43.139850",
+      "session_id": "2026-06-19T07:43:31.599077",
       "etag": "W/\"be6bbc6bb7a85c4023c39d0c07fa2127\"",
       "file_path": "documentation/ReplayKit/rpbroadcastconfiguration/init-coder.md"
     },

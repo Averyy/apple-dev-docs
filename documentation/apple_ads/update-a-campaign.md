@@ -51,10 +51,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370642,
   "orgId": 40669820,
   "name": "TripTrek campaign 7",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "500",
     "currency": "USD"
@@ -123,10 +119,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370642,
   "orgId": 40669820,
   "name": "TripTrek campaign 2",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "500",
     "currency": "USD"
@@ -171,12 +163,8 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 {
   "clearGeoTargetingOnCountryOrRegionChange": true,
   "campaign": {
-    "name”: “TripTrek campaign 1",
-    "budgetAmount": {
-      "amount": "2000",
-      "currency": "USD"
-    },
-    "dailyBudgetAmount": {
+    “name”: “TripTrek campaign 1”,
+    “dailyBudgetAmount”: {
       "amount": "250",
       "currency": "USD"
     },
@@ -208,10 +196,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370539,
   "orgId": 40669820,
   "name": "TripTrek campaign 1",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "250",
     "currency": "USD"
@@ -285,10 +269,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370642,
   "orgId": 40669820,
   "name": "TripTrek campaign 2",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "500",
     "currency": "USD"
@@ -326,7 +306,7 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 }
 ```
 
-##### Payload Example Update a Campaign Budget Amount or Daily Budget Amount
+##### Payload Example Update a Campaign Daily Budget Amount
 
 **Request**:
 
@@ -335,7 +315,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
 
 {
   "campaign": {
-    "budgetAmount": null,
     "dailyBudgetAmount": {
       "amount": "300",
       "currency": "USD"
@@ -352,7 +331,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
     "id": 586640439,
     "orgId": 39879640,
     "name": "TripTrek campaign",
-    "budgetAmount": null,
     "dailyBudgetAmount": {
       "amount": "300",
       "currency": "USD"
@@ -415,10 +393,6 @@ PUT https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370642,
   "orgId": 40669820,
   "name": "TripTrek campaign 2",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "500",
     "currency": "USD"

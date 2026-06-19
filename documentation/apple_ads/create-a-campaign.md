@@ -20,7 +20,7 @@ Essential points for creating campaigns are:
 
 - Use [`Search for iOS apps`](search-for-ios-apps.md) to retrieve your `adamId` to use in the request payload.
 - Use [`Find App Eligibility Records`](find-app-eligibility-records.md) to determine your app eligibility to run in campaigns.
-- A `dailyBudgetAmount` is a required field to manage the daily budget of your campaigns. Use an optional `budgetAmount` to manage your campaign’s total budget. You can only add a `budgetAmount` using the Create a Campaign endpoint. You can’t update a campaign to use a `budgetAmount`.
+- A `dailyBudgetAmount` is a required field to manage the daily budget of your campaigns.
 - Use the `countriesOrRegions` attribute to assign App Store locations. To advertise in multiple markets, group countries and regions into a single campaign using ISO alpha-2 country code values.
 - See the [`Campaign`](campaign.md) object and [`SupplySource`](supplysource.md) for descriptions of attributes.
 
@@ -39,10 +39,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns
     "startTime": "2026-11-08T17:00:00.000",
     "endTime": "2026-11-09T17:00:00.000",
     "billingEvent": "TAPS",
-    "budgetAmount": {
-        "amount": "1500.00",
-        "currency": "MXN"
-    },
     "dailyBudgetAmount": {
         "amount": "250.00",
         "currency": "MXN"
@@ -63,10 +59,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns
     "id": 886873328,
     "orgId": 19173940,
     "name": "Manual campaign example",
-    "budgetAmount": {
-      "amount": "1500",
-      "currency": "MXN"
-    },
     "dailyBudgetAmount": {
       "amount": "250",
       "currency": "MXN"
@@ -126,10 +118,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns
   "startTime": "2025-05-08T17:00:00.000",
   "endTime": "2025-05-09T17:00:00.000",
   "billingEvent": "TAPS",
-  "budgetAmount": {
-    "amount": "1500.00",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "250.00",
     "currency": "USD"
@@ -160,10 +148,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns
     "id": 585885088,
     "orgId": 39879640,
     "name": "TripTrek Campaign",
-    "budgetAmount": {
-      "amount": "1500",
-      "currency": "USD"
-    },
     "dailyBudgetAmount": {
       "amount": "250",
       "currency": "USD"

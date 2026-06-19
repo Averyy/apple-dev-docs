@@ -14,9 +14,9 @@ Apps on an alternative marketplace aren’t required to use MarketplaceKit, but 
 
 #### Add the Required Target Property
 
-If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](transactionreporting.md) API. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
+If your app offers the purchase of digital goods or services, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration in Xcode with a value of `YES`. Also, report each offered purchase to Apple using the [`TransactionReporting`](transactionreporting.md) API. For more information, see [`Reporting transactions for the Core Technology Commission`](reporting-transactions-for-core-technology-commission.md).
 
-If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration with a value of `NO`.
+If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration with a value of `NO`.
 
 #### Customize Your App Depending on the Installation Source
 

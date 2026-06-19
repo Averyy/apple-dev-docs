@@ -6,17 +6,11 @@ Manage the addition and removal of apps available on your alternative marketplac
 
 #### Overview
 
-When your app completes Notarization in App Store Connect, you can host it for download on your website or distribute it on an app marketplace. Either case requires you to facilitate getting the approved app to the location that it installs from.
+When an alternative distribution app completes Notarization, App Store Connect makes the app available for download in the form of an *alternative distribution package* (ADP). The developer of the app can download the ADP manually, or enable notifications in App Store Connect to send the app information automatically to an alternative app marketplace that distributes the app.
 
-The developer of an approved app can download it and provide it manually, either to the alternative marketplace, or to their web server back end. The approved app is in the form of an *alternative distribution package*, which the distributor of the app needs to assemble before the system can install it onto a device. For more information on the assembly process, see [`Ingesting an alternative distribution package`](ingesting-an-alternative-distribution-package.md).
+To receive notifications, the marketplace developer implements an endpoint, or webhook, on their marketplace server back end, and defines the webhook URL in App Store Connect.
 
-Or, the developer can enable notifications in App Store Connect to send the app to the marketplace(s) they choose. When notifications are enabled, App Store Connect sends newly available app versions automatically to the alternative marketplace(s) that the developer chooses.
-
-To receive notifications in an alternative app marketplace that you develop, implement an endpoint, or *webook*, and define the webhook URL in App Store Connect. The three conditions under which App Store Connect sends a notification are:
-
-- A new app version is available.
-- An app version needs to be removed.
-- All versions of an app need to be removed.
+App Store Connect includes information in notifications about newly available app versions, and the identifiers of one or more versions of an app to be removed.
 
 #### Meet the Criteria for Notifications
 

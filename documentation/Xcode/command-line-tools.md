@@ -19,6 +19,9 @@ You can use command-line tools to perform some actions in Terminal without runni
   Select the version of Xcode you want to use for command-line tools, in either Xcode settings or Terminal.
 - [Xcode command-line tool reference](xcode-command-line-tool-reference.md)
   Use command-line tools that require you to install Xcode and set the app as the active developer directory.
+### Debugging
+- [Resetting access to protected resources in macOS](resetting-access-to-protected-resources-in-macos.md)
+  Use Terminal to remove your app’s authorization access to protected resources during testing.
 
 ## See Also
 

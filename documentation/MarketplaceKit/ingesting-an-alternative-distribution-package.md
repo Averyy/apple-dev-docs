@@ -179,7 +179,7 @@ The variants reside at the top of the manifest. The first variant in the example
 GET https://api.appstoreconnect.apple.com/alternativeDistributionPackageVariants/219750db-80c2-4c75-aecc-fa67835f384d
 ```
 
-For more information about the `alternativeDistributionPackageVariants` endpoint, see [`Read Information for an Alternative Distribution Package Variants`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVariants-_id_).
+For more information about the `alternativeDistributionPackageVariants` endpoint, see [`Read variant information for an alternative distribution package`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-alternativeDistributionPackageVariants-_id_).
 
 Example response:
 

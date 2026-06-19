@@ -386,7 +386,7 @@ In Maximize Conversions bidding strategy in campaigns, you can use `biddingStrat
 **Request**:
 
 ```http
-POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/ads
+POST https://api.searchads.apple.com/api/v5/reports/campaigns/{campaignId}/adgroups
 
 {
   "startTime": "2025-10-23",

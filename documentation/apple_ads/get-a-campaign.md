@@ -27,10 +27,6 @@ GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}
   "id": 542370642,
   "orgId": 40669820,
   "name": "TripTrek campaign 1",
-  "budgetAmount": {
-    "amount": "2000",
-    "currency": "USD"
-  },
   "dailyBudgetAmount": {
     "amount": "500",
     "currency": "USD"

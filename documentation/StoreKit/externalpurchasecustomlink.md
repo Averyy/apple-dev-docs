@@ -37,7 +37,18 @@ For more information, see:
 
 - [`Communication and promotion of offers on the App Store in the EU`](https://developer.apple.comhttps://developer.apple.com/support/communication-and-promotion-of-offers-on-the-app-store-in-the-eu/)
 - [`Distributing music streaming apps in the EEA that provide an external purchase link`](https://developer.apple.comhttps://developer.apple.com/support/music-streaming-services-entitlement-eea/)
+- [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil)
 - [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan)
+
+##### Implement External Purchase for Apps Available in Brazil
+
+If your account receives the StoreKit External Custom Purchase Link Regions entitlement, in Brazil your app can use the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to implement external purchases starting in iOS 26.5.  To use this API, complete the following steps:
+
+- Configure the [`com.apple.developer.storekit.custom-purchase-link.allowed-regions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.custom-purchase-link.allowed-regions) entitlement for your app.
+- Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the [`ExternalPurchaseCustomLink`](externalpurchasecustomlink.md) API to determine whether the API is available at runtime. If the value is `false`, don’t continue to use this API. For more information, see  [`isEligible`](externalpurchasecustomlink/iseligible.md).
+- Call the [`token(for:)`](externalpurchasecustomlink/token(for:).md) function before every potential transaction to request external purchase tokens, using the token types `IN_APP` or `LINK_OUT`. For more information, see [`token(for:)`](externalpurchasecustomlink/token(for:).md).
+- Before routing customers to external purchase options, display an in-app disclosure sheet that lets people know they’ll be transacting with you and not Apple. For more information, including downloadable resources, see the “In-app disclosure sheet” section of [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
+- Report the external purchase tokens and the transactions associated with the tokens using the [`External Purchase Server API`](https://developer.apple.com/documentation/ExternalPurchaseServerAPI). Otherwise, report transactions as indicated in [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil).
 
 ##### Implement External Purchase for Apps Available in Japan
 
@@ -63,7 +74,7 @@ For information about testing in the sandbox environment, see [`Testing transact
 
 ##### Implement External Purchase for Music Streaming Apps in the European Economic Area Eea
 
-If your account receives the Music Streaming Services EEA entitlement, in the EEA your music-streaming app can use the `ExternalPurchaseCustomLink` API to implement external purchases. To use this API, complete the following steps:
+If your account receives the Music Streaming Services EEA entitlement, in the EEA your music streaming app can use the `ExternalPurchaseCustomLink` API to implement external purchases. To use this API, complete the following steps:
 
 - Configure the [`com.apple.developer.storekit.external-purchase-link-streaming`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.storekit.external-purchase-link-streaming) entitlement for your app and the [`SKExternalPurchaseLinkStreamingRegions`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SKExternalPurchaseLinkStreamingRegions) property list key, providing the country code for each permitted region where your app implements external purchases.
 - Check the [`isEligible`](externalpurchasecustomlink/iseligible.md) property of the `ExternalPurchaseCustomLink` API to determine whether external purchase is available at runtime. If the value is false, don’t continue to use this API. See [`isEligible`](externalpurchasecustomlink/iseligible.md) for more details.
@@ -73,7 +84,7 @@ If your account receives the Music Streaming Services EEA entitlement, in the EE
 
 ##### Check Eligibility and Request Tokens for Apps Available in the Eu
 
-When your app launches, check whether its eligible to use the `ExternalPurchaseCustomLink` API. For more information, see [`isEligible`](externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](appstore/canmakepayments.md).
+When your app launches, check whether it’s eligible to use the `ExternalPurchaseCustomLink` API. For more information, see [`isEligible`](externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](appstore/canmakepayments.md).
 
 If your app is eligible, request both the `ACQUISITION` and `SERVICES` external purchase tokens. Associate and store these tokens with a customer account on your server. Use the tokens to report transactions to Apple.
 
@@ -107,7 +118,9 @@ for tokenType in tokenTypes {
 
 ##### Display the Disclosure Notice Before Displaying External Purchases
 
-The following SwiftUI code example shows how to check for eligibility, and then show the disclosure notice to determine whether to continue to display external purchases:
+The following SwiftUI code example shows how to check for eligibility, and then show the disclosure notice to determine whether to continue to display external purchases.
+
+> **Note**: For more information on displaying developer- or system-provided disclosure notices in Brazil and Japan, see the *User disclosures* section in [`Payment options on the App Store in Brazil`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-brazil) or [`Payment options on the App Store in Japan`](https://developer.apple.comhttps://developer.apple.com/support/payment-options-on-the-app-store-in-japan).
 
 ```swift
 struct MyView: View {

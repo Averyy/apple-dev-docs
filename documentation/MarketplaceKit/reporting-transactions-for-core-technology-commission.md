@@ -14,7 +14,7 @@ To receive reminders to report your tokens and transactions, sign up for App Sto
 
 #### Add the Required Target Property
 
-As a one-time setup task, add the [`MKSellsDigitalGoods`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration in Xcode. Assign the property a value of `YES` to indicate that your app offers the purchase of digital goods or services. If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/information-property-list/mksellsdigitalgoods) property to your app’s target configuration with a value of `NO`.
+As a one-time setup task, add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration in Xcode. Assign the property a value of `YES` to indicate that your app offers the purchase of digital goods or services. If your app doesn’t sell digital goods or services, you still need to add the [`MKSellsDigitalGoods`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/MKSellsDigitalGoods) property to your app’s target configuration with a value of `NO`.
 
 #### Request a Core Technology Token
 

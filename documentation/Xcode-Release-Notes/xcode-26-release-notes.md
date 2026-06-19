@@ -668,7 +668,7 @@ Also in Xcode 26:
 
 ## See Also
 
-- [Xcode 26.6 RC Release Notes](xcode-26_6-release-notes.md)
+- [Xcode 26.6 RC 2 Release Notes](xcode-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.5 Release Notes](xcode-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

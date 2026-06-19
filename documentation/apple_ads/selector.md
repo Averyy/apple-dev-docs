@@ -34,7 +34,6 @@ POST https://api.searchads.apple.com/api/v5/campaigns/find
     "id",
     "name",
     "adamId",
-    "budgetAmount",
     "dailyBudgetAmount",
     "status",
     "servingStatus"

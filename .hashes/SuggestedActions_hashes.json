@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:44:48.601143",
+    "last_updated": "2026-06-19T07:45:30.636471",
     "total_pages": 18,
-    "session_id": "2026-06-16T07:44:46.417036"
+    "session_id": "2026-06-19T07:45:29.005107"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SuggestedActions.json": {
       "hash": "b5091be601f5d0bce9cdcafc9a055e7fdf695ac629a32ca1ee6a25354e3d47b6",
-      "last_checked": "2026-06-16T07:44:46.807275",
+      "last_checked": "2026-06-19T07:45:29.252260",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"6ebfe89e54c3011cf60fdbafcbed44b8\"",
       "file_path": "documentation/SuggestedActions/SuggestedActions.md"
     },
     "https://developer.apple.com/documentation/SuggestedActions": {
       "hash": "b5091be601f5d0bce9cdcafc9a055e7fdf695ac629a32ca1ee6a25354e3d47b6",
-      "last_checked": "2026-06-16T07:44:46.725631",
+      "last_checked": "2026-06-19T07:45:29.155862",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"6ebfe89e54c3011cf60fdbafcbed44b8\"",
       "file_path": "documentation/SuggestedActions/SuggestedActions.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsview.json": {
       "hash": "d19569c53554047d37ca51578c2831bd42042c9756767956ffe0bfe81b439e66",
-      "last_checked": "2026-06-16T07:44:47.182323",
+      "last_checked": "2026-06-19T07:45:29.572231",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"72991660b17cb1f93b26b77a2b3c2bed\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsview.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsview/init(message:previousmessages:).json": {
       "hash": "a436a686a52a28e552e680e960f485ca989216e1df5f1040c7da9d78869d1d14",
-      "last_checked": "2026-06-16T07:44:47.376805",
+      "last_checked": "2026-06-19T07:45:29.706414",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"953cdb993861242ea56d73024591a623\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsview/init-messagepreviousmessages.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsview/generate(message:previousmessages:).json": {
       "hash": "4e619a1672a2f6526fb46d788df48a3d28779721b335efa0853f84ff32ebc2a7",
-      "last_checked": "2026-06-16T07:44:47.659320",
+      "last_checked": "2026-06-19T07:45:29.822799",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"fc48c150bc74c9c861d185ff42f69a2c\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsview/generate-messagepreviousmessages.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage.json": {
       "hash": "44cd5a6639f2b4b9c10aa90ebc5dff7aff26717831621cb87ee3d7220d41efa4",
-      "last_checked": "2026-06-16T07:44:47.859274",
+      "last_checked": "2026-06-19T07:45:30.010810",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"f5ef1930d79faba8130dd2a8544d72a1\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsmessage.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/init(id:date:subject:body:sender:recipients:).json": {
       "hash": "cb1c5725c9d6e732395dc4b87a8a36f4ab9c71152e9024ffab63e4b5fe9574c2",
-      "last_checked": "2026-06-16T07:44:48.036266",
+      "last_checked": "2026-06-19T07:45:30.196116",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"9c82aa5142911a747704ddf113136aec\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsmessage/init-iddatesubjectbodysenderrecipients.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/participant.json": {
       "hash": "941de869a467aa7d042a5b6373c4a4a929786cb7d926dc50d9f9cc75f4fd6063",
-      "last_checked": "2026-06-16T07:44:48.225407",
+      "last_checked": "2026-06-19T07:45:30.357058",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"59426fe0385368898f58f4f300b2b0a1\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/previousmessageslimit.json": {
       "hash": "50b711b1d6312bb7156b453794e65ccc40024fffe0c31a7a7e108159bb130b12",
-      "last_checked": "2026-06-16T07:44:48.401476",
+      "last_checked": "2026-06-19T07:45:30.480534",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"e1ddf05e2977ff317c582699dfcf794b\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsmessage/previousmessageslimit.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/suggestedactions/suggestedactionsmessage/participant/init(name:handle:isuser:).json": {
       "hash": "65103baa5683f1089f5e36383afa2dd4abc523aa9ffa26a59e611acd10813ab9",
-      "last_checked": "2026-06-16T07:44:48.583537",
+      "last_checked": "2026-06-19T07:45:30.633653",
       "status": "new",
-      "session_id": "2026-06-16T07:44:46.417036",
+      "session_id": "2026-06-19T07:45:29.005107",
       "etag": "W/\"09cdfec00e725b0cf29109da999d0d90\"",
       "file_path": "documentation/SuggestedActions/suggestedactionsmessage/participant/init-namehandleisuser.md"
     },

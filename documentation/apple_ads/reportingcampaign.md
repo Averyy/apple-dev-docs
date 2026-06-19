@@ -47,7 +47,7 @@ object ReportingCampaign
 - `servingStatus` (string): The status of the campaign. You can use the `EQUALS` [`Selector`](selector.md) [`Condition`](condition.md) operator with [`Get Campaign-Level Reports`](get-campaign-level-reports.md).
 - `supplySources` ([string]): The ad placements for a campaign. See [`SupplySource`](supplysource.md) for value descriptions and validations. You can use the `CONTAINS_ANY`, `CONTAINS_ALL`, and `EQUALS` [`Selector`](selector.md) [`Condition`](condition.md) operators with [`Get Campaign-Level Reports`](get-campaign-level-reports.md).
 - `targetCpa` (ReportingCampaign.TargetCpa): The target cost-per-acquisition for `MAX_CONVERSIONS` campaigns. The Target CPA is the average amount you want to spend per tap-through install. This amount is used to calculate optimal bids for each search query, with the goal of maximizing the number of installs near your target CPA.
-- `totalBudget` (Money): The total campaign budget amount. This is the equivalent of `budgetAmount` in your [`Campaign`](campaign.md).
+- `totalBudget` (Money)
 
 ## See Also
 

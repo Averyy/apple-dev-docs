@@ -11,7 +11,7 @@ The Retention Messaging report shows how users respond to retention messages dis
 - Territories: Worldwide
 - Platforms: iOS, iPadOS, visionOS
 - Availability: - Daily: Every day.
-- Completeness: Within 3 days.
+- Completeness: Within 4 days.
 - History: On request, data is available beginning from April 20, 2026.
 - Privacy: No privacy measures are applied as the report does not include fields related to uniquely identifiable user data.
 

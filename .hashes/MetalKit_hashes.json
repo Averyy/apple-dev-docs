@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-16T07:43:37.059149",
+    "last_updated": "2026-06-19T07:44:19.608355",
     "total_pages": 239,
-    "session_id": "2026-06-16T07:43:14.273110"
+    "session_id": "2026-06-19T07:43:58.451717"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MetalKit.json": {
       "hash": "bc5bdacdbb5f44cad6329e55a77126ec9511f97e84055f8f4aa24407b7edf4fd",
-      "last_checked": "2026-06-16T07:43:14.551261",
+      "last_checked": "2026-06-19T07:43:58.705973",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"2ab06ad5631cbe913655e28eae669d5c\"",
       "file_path": "documentation/MetalKit/MetalKit.md"
     },
     "https://developer.apple.com/documentation/MetalKit": {
       "hash": "bc5bdacdbb5f44cad6329e55a77126ec9511f97e84055f8f4aa24407b7edf4fd",
-      "last_checked": "2026-06-16T07:43:14.433061",
+      "last_checked": "2026-06-19T07:43:58.601609",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"2ab06ad5631cbe913655e28eae669d5c\"",
       "file_path": "documentation/MetalKit/MetalKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview.json": {
       "hash": "a1a7ae6203b3f748092a7d4b958a6a6164f12371b429b489b6f195ca23b61f4b",
-      "last_checked": "2026-06-16T07:43:14.842894",
+      "last_checked": "2026-06-19T07:43:59.113390",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"69345f5b36b7f5b82c452f80ef85f0f4\"",
       "file_path": "documentation/MetalKit/mtkview.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkviewdelegate.json": {
       "hash": "34c57484f8dfa1d1bcc4b63d14296369fd8354d84425e7fe681677484e55dd4d",
-      "last_checked": "2026-06-16T07:43:15.003876",
+      "last_checked": "2026-06-19T07:43:59.276630",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"611ee1ed640c33299b8386878b9f6ebe\"",
       "file_path": "documentation/MetalKit/mtkviewdelegate.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader.json": {
       "hash": "c21c3c8e7709d520a1b6d454831851f88a160738684dfcc93440f0f3bd6056d2",
-      "last_checked": "2026-06-16T07:43:15.125964",
+      "last_checked": "2026-06-19T07:43:59.411186",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"4e7dbf3a001232d93aef10e57a5fc377\"",
       "file_path": "documentation/MetalKit/mtktextureloader.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh.json": {
       "hash": "0377aa960bfa5b6bf65a821165e42341a15a681ea874f4e734d298d3f2a92ed5",
-      "last_checked": "2026-06-16T07:43:15.286226",
+      "last_checked": "2026-06-19T07:43:59.519270",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5a5c8980935bc869f9ee82a00b351aae\"",
       "file_path": "documentation/MetalKit/mtkmesh.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer.json": {
       "hash": "13b52428b009631273218bafbc41af36b620e515a46fe233f888fec0cc03a7a2",
-      "last_checked": "2026-06-16T07:43:15.460210",
+      "last_checked": "2026-06-19T07:43:59.661838",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"c9d479f1f32ec3839b984433be440ad1\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbufferallocator.json": {
       "hash": "e5b21c1705e3bf75b68e9511805d5471af0b5781815c43854a122fc268d9874f",
-      "last_checked": "2026-06-16T07:43:15.767485",
+      "last_checked": "2026-06-19T07:43:59.783556",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"49aa8fa939c5b23650469fffe18a711a\"",
       "file_path": "documentation/MetalKit/mtkmeshbufferallocator.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh.json": {
       "hash": "cb6f945e89b9364e1c7358678376d3525ea9899e75d26b299ee503f0e4e52afe",
-      "last_checked": "2026-06-16T07:43:15.884556",
+      "last_checked": "2026-06-19T07:43:59.955927",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"764548d1eff6e3ca81a1e24c7bcb39d7\"",
       "file_path": "documentation/MetalKit/mtksubmesh.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/conversion-functions.json": {
       "hash": "902ea4474c8c9d4ba5be7d82f20b20c2f70513f53d0f2a83a29aece4b6a309ec",
-      "last_checked": "2026-06-16T07:43:16.023615",
+      "last_checked": "2026-06-19T07:44:00.265323",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"52e96f0e39eb8a3218a55ca2ed44d0d0\"",
       "file_path": "documentation/MetalKit/conversion-functions.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/model-errors.json": {
       "hash": "371106b2acee3735c99a6e28303afa46815ec88718dfc0887f0ad6520493849e",
-      "last_checked": "2026-06-16T07:43:16.195122",
+      "last_checked": "2026-06-19T07:44:00.566904",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"6834b8b5fb8ce3fe9170d8e5a05d9008\"",
       "file_path": "documentation/MetalKit/model-errors.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/metalkit-functions.json": {
       "hash": "237b831e0a7f0da532653aa6266f2abd34dee5b458ab45cdbc75d1e6029fb463",
-      "last_checked": "2026-06-16T07:43:16.326682",
+      "last_checked": "2026-06-19T07:44:00.691459",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"ba6ad5c9b1645a1f9efaddafd76e292d\"",
       "file_path": "documentation/MetalKit/metalkit-functions.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/init(coder:).json": {
       "hash": "588be4ec1144c6733e390bea951b93546d63c09a4e142665f8c91d9fe1de9279",
-      "last_checked": "2026-06-16T07:43:16.452608",
+      "last_checked": "2026-06-19T07:44:00.814251",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"aa6c940170c097610eb500d6bdb158b1\"",
       "file_path": "documentation/MetalKit/mtkview/init-coder.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/init(frame:device:).json": {
       "hash": "37b24b6952b078e39cef655b201c3bb99f1220dc3278f59bfaf8705ad533be7a",
-      "last_checked": "2026-06-16T07:43:16.632651",
+      "last_checked": "2026-06-19T07:44:01.002251",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"efcaccca86b649ca3b1288b9bec3fdc0\"",
       "file_path": "documentation/MetalKit/mtkview/init-framedevice.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/delegate.json": {
       "hash": "2826061daf7e30e2d6842c3370c92959718f72d997ff908828e284b02f8d5aca",
-      "last_checked": "2026-06-16T07:43:16.754433",
+      "last_checked": "2026-06-19T07:44:01.125958",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"38b148247bca9b6bf312c640521a487e\"",
       "file_path": "documentation/MetalKit/mtkview/delegate.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/device.json": {
       "hash": "9f37bea5f8debe23e34b48fa3da183db9662676b5a79e40e58accf259804a099",
-      "last_checked": "2026-06-16T07:43:16.909908",
+      "last_checked": "2026-06-19T07:44:01.319607",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"16ba32d9d4bec867da808c3833450177\"",
       "file_path": "documentation/MetalKit/mtkview/device.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/preferreddevice.json": {
       "hash": "b3633c789d271429933acb1538184f25f6ee523175e9ca767d58ce1800eaac6f",
-      "last_checked": "2026-06-16T07:43:17.096394",
+      "last_checked": "2026-06-19T07:44:01.520713",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"29009dfd6a87a7269568cc3af4421bd5\"",
       "file_path": "documentation/MetalKit/mtkview/preferreddevice.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/colorpixelformat.json": {
       "hash": "17715de9a4935f45d702486c82bc5551f10363c5d54beb4e9675c75d1c84ae93",
-      "last_checked": "2026-06-16T07:43:17.217784",
+      "last_checked": "2026-06-19T07:44:01.634564",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"3200e5bf8d706d57d8cf43446ed9d8b4\"",
       "file_path": "documentation/MetalKit/mtkview/colorpixelformat.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/colorspace.json": {
       "hash": "53bebc2f00407348ddf914384f08a6554dd26ad0b3c7e5bf27e50bd7b3f53807",
-      "last_checked": "2026-06-16T07:43:17.403414",
+      "last_checked": "2026-06-19T07:44:01.766271",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"54b414ddf561a9f7757048cdac6dcf61\"",
       "file_path": "documentation/MetalKit/mtkview/colorspace.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/framebufferonly.json": {
       "hash": "667a83eff291a55059806498cb435f80a9a6ccb2ab4087fcba93c2c96a4891b7",
-      "last_checked": "2026-06-16T07:43:17.534706",
+      "last_checked": "2026-06-19T07:44:02.100590",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"f45196dd573afdd8613824c5e1a6ec96\"",
       "file_path": "documentation/MetalKit/mtkview/framebufferonly.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/drawablesize.json": {
       "hash": "554308862fc01368bd8e9c4024319e20d8a10c5becab3074e185624d59d74df6",
-      "last_checked": "2026-06-16T07:43:17.686938",
+      "last_checked": "2026-06-19T07:44:02.395708",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"538b036cd1a3d329fac1f6d532931035\"",
       "file_path": "documentation/MetalKit/mtkview/drawablesize.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/preferreddrawablesize.json": {
       "hash": "1dbdf9d1f6ea18e41f2d067c89fbe37ac38288323152d0d2283cfd4fddc47929",
-      "last_checked": "2026-06-16T07:43:17.845632",
+      "last_checked": "2026-06-19T07:44:02.559836",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"091b16104c1d491572f204e1bfd82d5d\"",
       "file_path": "documentation/MetalKit/mtkview/preferreddrawablesize.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/autoresizedrawable.json": {
       "hash": "a98be89c39ac00797fcd2feb62b4afb405e6ccf68bc7a9d8cf431199da4c650b",
-      "last_checked": "2026-06-16T07:43:17.972768",
+      "last_checked": "2026-06-19T07:44:02.715079",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"06c28a787dde01c319542549e7714c84\"",
       "file_path": "documentation/MetalKit/mtkview/autoresizedrawable.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/clearcolor.json": {
       "hash": "6220877df59bb7717785e997fbc694a5089d7431f88b4807df3ba93eb68edf0a",
-      "last_checked": "2026-06-16T07:43:18.111141",
+      "last_checked": "2026-06-19T07:44:02.890980",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"cccd7e8ff166d34fe89a249747e01ccf\"",
       "file_path": "documentation/MetalKit/mtkview/clearcolor.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/depthstencilpixelformat.json": {
       "hash": "ce8b325a0a99aef677a2e0c569f860d08becf415cf8dadd41b89e99ac2c92979",
-      "last_checked": "2026-06-16T07:43:18.277657",
+      "last_checked": "2026-06-19T07:44:02.998880",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"97d5233ce4c07df912a0b447ee38b1b7\"",
       "file_path": "documentation/MetalKit/mtkview/depthstencilpixelformat.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/depthstencilattachmenttextureusage.json": {
       "hash": "05dea2dbc6fdb679765a40a7a261b96eb188c45cf8f29445769ef6968ebb07d1",
-      "last_checked": "2026-06-16T07:43:18.398479",
+      "last_checked": "2026-06-19T07:44:03.124218",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"6804d88c9dd4f25202ec6f1ba7891189\"",
       "file_path": "documentation/MetalKit/mtkview/depthstencilattachmenttextureusage.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/cleardepth.json": {
       "hash": "da95afc324b9a7026477e0c3c8695d01b0b1c64234c0a4dc0da4a1301e3d4836",
-      "last_checked": "2026-06-16T07:43:18.687081",
+      "last_checked": "2026-06-19T07:44:03.438801",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"6987141600f135a43040b28ff685464f\"",
       "file_path": "documentation/MetalKit/mtkview/cleardepth.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/clearstencil.json": {
       "hash": "44a47e42791cfa92b86596b28e21cbdbfbcab8f6c11113a25ad0b45bd56f6f65",
-      "last_checked": "2026-06-16T07:43:18.808755",
+      "last_checked": "2026-06-19T07:44:03.549320",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"9c8fe6175aad771e0d2c603c5a26bef9\"",
       "file_path": "documentation/MetalKit/mtkview/clearstencil.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/samplecount.json": {
       "hash": "bb255f54b7c771544c5a34e6276388cd166adca9dc35afdcb3dbc64982525ea2",
-      "last_checked": "2026-06-16T07:43:18.988059",
+      "last_checked": "2026-06-19T07:44:03.733698",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"0717f0ba4e10c184e6b5d3b11262bf1c\"",
       "file_path": "documentation/MetalKit/mtkview/samplecount.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/multisamplecolorattachmenttextureusage.json": {
       "hash": "2c54fe1804eab99a3e19cc39408b13dda87d373bb3436515f7306e4eda2f1598",
-      "last_checked": "2026-06-16T07:43:19.122808",
+      "last_checked": "2026-06-19T07:44:03.860034",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"91a190bff71d6a71a2427bb4e116b9f3\"",
       "file_path": "documentation/MetalKit/mtkview/multisamplecolorattachmenttextureusage.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/currentrenderpassdescriptor.json": {
       "hash": "7640bafdf6a573eafc4e65a662b48ab16eee123af35ddf1c0ea50e91bcb5536f",
-      "last_checked": "2026-06-16T07:43:19.256986",
+      "last_checked": "2026-06-19T07:44:03.992370",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"91914db5b3d84b1c3f027ff13962993b\"",
       "file_path": "documentation/MetalKit/mtkview/currentrenderpassdescriptor.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/currentdrawable.json": {
       "hash": "75a10cffc058bebb262b11287bcd5d40af63c2c6ebedeb2fa9df62d36c3586d6",
-      "last_checked": "2026-06-16T07:43:19.370117",
+      "last_checked": "2026-06-19T07:44:04.108062",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"a84ba2850c29ba4c47d5b9b9761212cb\"",
       "file_path": "documentation/MetalKit/mtkview/currentdrawable.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/depthstenciltexture.json": {
       "hash": "d7ee93c06ae60f1e8bf3e64bf6a7b1e20c993c96421c14e3ddce45ad298d5c9d",
-      "last_checked": "2026-06-16T07:43:19.539492",
+      "last_checked": "2026-06-19T07:44:04.295147",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"79e8a720883bc8f4b47bd3e98b5dc2c2\"",
       "file_path": "documentation/MetalKit/mtkview/depthstenciltexture.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/depthstencilstoragemode.json": {
       "hash": "477dc2e751609048b3b7ec88433d5d83b3375160da7e88110f66b52da01f9bd9",
-      "last_checked": "2026-06-16T07:43:19.691228",
+      "last_checked": "2026-06-19T07:44:04.436680",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"aa3fdd031987f79a153242fddb74fc72\"",
       "file_path": "documentation/MetalKit/mtkview/depthstencilstoragemode.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/multisamplecolortexture.json": {
       "hash": "1c82e6ef6583712aeddfc0306201a28191fbbd0480208f4d40655b99c3237114",
-      "last_checked": "2026-06-16T07:43:19.806071",
+      "last_checked": "2026-06-19T07:44:04.608137",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"9ed40539c06bc15711b63ce89600f3e5\"",
       "file_path": "documentation/MetalKit/mtkview/multisamplecolortexture.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/preferredframespersecond.json": {
       "hash": "a37977d9f6519b5871877f66b9eb1dbfbe8671aaf4a8c0b0b31a795851c4c244",
-      "last_checked": "2026-06-16T07:43:19.931810",
+      "last_checked": "2026-06-19T07:44:04.789310",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"4d152f087997e5a5333a3c28fe70d243\"",
       "file_path": "documentation/MetalKit/mtkview/preferredframespersecond.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/ispaused.json": {
       "hash": "381ecd76c8f35b38d0bb91a361532a450bc5193a41b9fab0ca2320751267299c",
-      "last_checked": "2026-06-16T07:43:20.069245",
+      "last_checked": "2026-06-19T07:44:04.944908",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"f212c5029d1cb3fa4810fb8f50b221cc\"",
       "file_path": "documentation/MetalKit/mtkview/ispaused.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/enablesetneedsdisplay.json": {
       "hash": "ea25d6590af170b85899c1dbc94e56b42e44da15e6f889973dfdcd854bdaa45d",
-      "last_checked": "2026-06-16T07:43:20.246194",
+      "last_checked": "2026-06-19T07:44:05.120989",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"cdaaa26cb6e74f12bac45bd5f68ab695\"",
       "file_path": "documentation/MetalKit/mtkview/enablesetneedsdisplay.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/draw().json": {
       "hash": "d8289afdd14f19fff6c39779d60effc0bd83c2264562541b25fec9fc2efc7a8b",
-      "last_checked": "2026-06-16T07:43:20.437838",
+      "last_checked": "2026-06-19T07:44:05.254616",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"990da0862925123efb1f0639100b1945\"",
       "file_path": "documentation/MetalKit/mtkview/draw.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/presentswithtransaction.json": {
       "hash": "8d96fc8cfa075d0138e2ed53205e5f05e9bf73de0e65386c042d0da9eeac9f4c",
-      "last_checked": "2026-06-16T07:43:20.623871",
+      "last_checked": "2026-06-19T07:44:05.373771",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"39654e8f997e6396ab440c374b3fb713\"",
       "file_path": "documentation/MetalKit/mtkview/presentswithtransaction.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/releasedrawables().json": {
       "hash": "de7c8f881d761fef6c6de20314902c83c6913215ab588c93568cf92e49fca3e9",
-      "last_checked": "2026-06-16T07:43:20.783313",
+      "last_checked": "2026-06-19T07:44:05.493638",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"7168acde145f97baecd0f1db2b69748c\"",
       "file_path": "documentation/MetalKit/mtkview/releasedrawables.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/currentmtl4renderpassdescriptor.json": {
       "hash": "47e7c42f5041186668dace0adf4fa8bb65c6111a9ddda8d799cedd47425807ca",
-      "last_checked": "2026-06-16T07:43:20.954214",
+      "last_checked": "2026-06-19T07:44:05.627082",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"4fed12c43d6a1fe35dd43c5c8499b013\"",
       "file_path": "documentation/MetalKit/mtkview/currentmtl4renderpassdescriptor.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkviewdelegate/mtkview(_:drawablesizewillchange:).json": {
       "hash": "b6474321746d129d4f08991c7d57c5aa5f5c86478b3e94d565469530eef05f80",
-      "last_checked": "2026-06-16T07:43:21.454721",
+      "last_checked": "2026-06-19T07:44:05.953351",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"b6e5d8b032781de3ab20bdfd91a29610\"",
       "file_path": "documentation/MetalKit/mtkviewdelegate/mtkview-drawablesizewillchange.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkviewdelegate/draw(in:).json": {
       "hash": "e70b5227fd963582b97d034e997e142f66182e6a42fccdc609d12fe91f795f6e",
-      "last_checked": "2026-06-16T07:43:21.640968",
+      "last_checked": "2026-06-19T07:44:06.088057",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"2c86f1aced1bd19abf1467c8fa713bed\"",
       "file_path": "documentation/MetalKit/mtkviewdelegate/draw-in.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/init(device:).json": {
       "hash": "1c39f51941de8ae8529d825a5af9b781844c8af5b02361f1fb48fc8046d947d5",
-      "last_checked": "2026-06-16T07:43:21.792203",
+      "last_checked": "2026-06-19T07:44:06.261496",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"d6bc693f64a42fc6dba5f61d8c7caaba\"",
       "file_path": "documentation/MetalKit/mtktextureloader/init-device.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/device.json": {
       "hash": "9f7c4f42a5da88dd65297bd9a47f3ff438febfcef71bdb2d4f3a2e836e1832f5",
-      "last_checked": "2026-06-16T07:43:21.984459",
+      "last_checked": "2026-06-19T07:44:06.426642",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"8245a00cb25db60cee197f946b9ea110\"",
       "file_path": "documentation/MetalKit/mtktextureloader/device.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(url:options:).json": {
       "hash": "3fc6d6aeaba83ce16f9736304cd10ee5a8b6c74f34dfee6d1a454853d130f7f3",
-      "last_checked": "2026-06-16T07:43:22.163052",
+      "last_checked": "2026-06-19T07:44:06.549743",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"1f42cfd353e20258f90e948826c7c0f9\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-urloptions.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(url:options:completionhandler:).json": {
       "hash": "609d4a3acc1318aa8bccbe873d1dbfa852679bd8bdb2ca5d59f36b7596822468",
-      "last_checked": "2026-06-16T07:43:22.506298",
+      "last_checked": "2026-06-19T07:44:06.718197",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"52158541d3536d18cff22f6f5fe694e2\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-urloptionscompletionhandler.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtextures(urls:options:error:).json": {
       "hash": "e4120b4169a9c30875c372c522fd4f44976bccd00d7ac6f50578a4e5a6b566ef",
-      "last_checked": "2026-06-16T07:43:22.803543",
+      "last_checked": "2026-06-19T07:44:06.832489",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"aa207c822c8675080463cab53545a68d\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtextures-urlsoptionserror.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtextures(urls:options:completionhandler:).json": {
       "hash": "1a6e0c2657902e11c18d4e54b3ce9ad91735c948528afe6e815d0a610eb52b0c",
-      "last_checked": "2026-06-16T07:43:23.093680",
+      "last_checked": "2026-06-19T07:44:06.966919",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"c03180c69b9544f2f2cd93c6d8564bcd\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtextures-urlsoptionscompletionhandler.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(name:scalefactor:bundle:options:).json": {
       "hash": "09cd8e013e368115d003fadf2ff112d836c8130eccbc5d1c871bbb0b42f163d9",
-      "last_checked": "2026-06-16T07:43:23.403842",
+      "last_checked": "2026-06-19T07:44:07.092935",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"723875406eeabd06fd6a93f110b9fe5b\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-namescalefactorbundleoptions.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(name:scalefactor:bundle:options:completionhandler:).json": {
       "hash": "db91a782fc445b8bbf7e10405010daf8e460a71138f5cb5a1ad3b17f2da74e6e",
-      "last_checked": "2026-06-16T07:43:23.631383",
+      "last_checked": "2026-06-19T07:44:07.210918",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"baac2516012c5782ea5be327510b0261\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-namescalefactorbundleoptionscompletionhandler.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtextures(names:scalefactor:bundle:options:completionhandler:).json": {
       "hash": "6efee9d60af6f463aec9badddb7b40ff94855ed9792129d9d154ab782658890a",
-      "last_checked": "2026-06-16T07:43:23.828277",
+      "last_checked": "2026-06-19T07:44:07.409357",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"522a2ddfd98187bdd7b6c4014dee2fc2\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtextures-namesscalefactorbundleoptionscompletionhandler.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(name:scalefactor:displaygamut:bundle:options:).json": {
       "hash": "9fe86acd9a1a966c0ea42118db40e53e1f96cd54d389a0d8a7b544c922aacbf3",
-      "last_checked": "2026-06-16T07:43:24.010103",
+      "last_checked": "2026-06-19T07:44:07.544570",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"9eebaa4d8c93afd3221fbd3611f333d4\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-namescalefactordisplaygamutbundleoptions.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(name:scalefactor:displaygamut:bundle:options:completionhandler:).json": {
       "hash": "839878cc0062426d30e656e308506ec50f1b047387869ed629d84372d4b17b80",
-      "last_checked": "2026-06-16T07:43:24.296286",
+      "last_checked": "2026-06-19T07:44:07.724745",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"ea307920924e66d2dc63167c565b6297\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-namescalefactordisplaygamutbundleoptionscompletionhandler.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtextures(names:scalefactor:displaygamut:bundle:options:completionhandler:).json": {
       "hash": "a4e9fb8c3a091644281495835ef2670a2866033e19695bfeb24248bacad04f19",
-      "last_checked": "2026-06-16T07:43:24.488451",
+      "last_checked": "2026-06-19T07:44:07.920350",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"48e6c214600fd624da00e98166d5bf16\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtextures-namesscalefactordisplaygamutbundleoptionscompletionhandler.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(cgimage:options:).json": {
       "hash": "3d222a7f6609d54c2c27fc885f4e4c45a7972e08410991e8eec07b1ca73ab2ab",
-      "last_checked": "2026-06-16T07:43:24.780257",
+      "last_checked": "2026-06-19T07:44:08.081746",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5465c3480a8664abf6cd81394c4e7e00\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-cgimageoptions.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(cgimage:options:completionhandler:).json": {
       "hash": "4e30f74cf77280844371f67318691b6972d58bd8ebbc83f6dd965e9b2d150637",
-      "last_checked": "2026-06-16T07:43:24.994906",
+      "last_checked": "2026-06-19T07:44:08.246685",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"e05a2d87a2e1593c72f40b3ac7213a2f\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-cgimageoptionscompletionhandler.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(data:options:).json": {
       "hash": "99ac5cedeeafa2a53d6f7fa97ec788729aa85a20415e85945c4591b1baf788bd",
-      "last_checked": "2026-06-16T07:43:25.164581",
+      "last_checked": "2026-06-19T07:44:08.354795",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"af7d51ac8d52cd6650b0caf4b0d2182e\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-dataoptions.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(data:options:completionhandler:).json": {
       "hash": "fa4a6052c69c0330f70ebc188daba64b5d2ef198747d4559d52fbc2f2e9f44f5",
-      "last_checked": "2026-06-16T07:43:25.353174",
+      "last_checked": "2026-06-19T07:44:08.523781",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"fe3f19133237d5aa8b02b5b51495ee96\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-dataoptionscompletionhandler.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(texture:options:).json": {
       "hash": "6f25d48b4763f94122876157d53497a72d5e4749936326b0f7049c6299bf1b0a",
-      "last_checked": "2026-06-16T07:43:25.528409",
+      "last_checked": "2026-06-19T07:44:08.686299",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"465270bfba45470c32955a5473f0351b\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-textureoptions.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/newtexture(texture:options:completionhandler:).json": {
       "hash": "b66945c0a582531fc15b753d382b28e33c4225313a4e37f7fdd1c82faf7c19ff",
-      "last_checked": "2026-06-16T07:43:25.827616",
+      "last_checked": "2026-06-19T07:44:08.821285",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"88417c2129342bffae540e6d9080ca12\"",
       "file_path": "documentation/MetalKit/mtktextureloader/newtexture-textureoptionscompletionhandler.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option.json": {
       "hash": "f5776fcde67ee1ba489c3903d956a61649c731cd6c3db03be8cf26f22b385d9a",
-      "last_checked": "2026-06-16T07:43:26.171284",
+      "last_checked": "2026-06-19T07:44:08.988503",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"813d10173f08284f149cf0f0c57f5a37\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/arraycallback.json": {
       "hash": "01f7769c0b8bd03fc1031da127c447d3b8468010205d36308a11bc950de2fc95",
-      "last_checked": "2026-06-16T07:43:26.388577",
+      "last_checked": "2026-06-19T07:44:09.098940",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"87022cb569ce0be2d4eafb67c882e790\"",
       "file_path": "documentation/MetalKit/mtktextureloader/arraycallback.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/callback.json": {
       "hash": "22046dfa17abfc4685a378f67b552d96bc1b02da8c485e310fc5368239ae8ce5",
-      "last_checked": "2026-06-16T07:43:26.549443",
+      "last_checked": "2026-06-19T07:44:09.228246",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"e24e6aca7ed25e2da041a4dc261fa2c1\"",
       "file_path": "documentation/MetalKit/mtktextureloader/callback.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/error.json": {
       "hash": "47735de508d927d175658be525a2e94728f1b372103badf11e21106dc8558ffd",
-      "last_checked": "2026-06-16T07:43:26.727724",
+      "last_checked": "2026-06-19T07:44:09.365051",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"3fb3d3f7f817e7fb781410708fd003ed\"",
       "file_path": "documentation/MetalKit/mtktextureloader/error.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/init(mesh:device:).json": {
       "hash": "810b0a1d9a7c429f07acc4cd8661433ff6363897d36617e02b49ed3c41347e8d",
-      "last_checked": "2026-06-16T07:43:26.897881",
+      "last_checked": "2026-06-19T07:44:09.472882",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"a7d08657093acac39b0b98db81052e5a\"",
       "file_path": "documentation/MetalKit/mtkmesh/init-meshdevice.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/newmeshes(asset:device:).json": {
       "hash": "4463103123fe9ed4bdcfc9842b9cf8150b4018c5fab8abe202ecfd30df114fec",
-      "last_checked": "2026-06-16T07:43:27.191707",
+      "last_checked": "2026-06-19T07:44:09.625709",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5eedea91a1ffae04fff1c8459223643d\"",
       "file_path": "documentation/MetalKit/mtkmesh/newmeshes-assetdevice.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/submeshes.json": {
       "hash": "1c748ec4f9d0634dd20d48ebe6532aee7e68d27e5f1110c857e8636a4c33ffde",
-      "last_checked": "2026-06-16T07:43:27.371094",
+      "last_checked": "2026-06-19T07:44:09.749413",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"ed2545d99be6ac7686c369d11ae6ff50\"",
       "file_path": "documentation/MetalKit/mtkmesh/submeshes.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/vertexbuffers.json": {
       "hash": "6c569eefa9f950e88f444532db47f2eff56e00760bb837c7ae42723c02caba14",
-      "last_checked": "2026-06-16T07:43:27.536461",
+      "last_checked": "2026-06-19T07:44:09.874427",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5a738dd42160099eb1bbb17c8d2a1761\"",
       "file_path": "documentation/MetalKit/mtkmesh/vertexbuffers.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/vertexcount.json": {
       "hash": "b4daa53ded649ed1f3addac8f0d29d0dfa06d37144eb678e42eba83a49ea551f",
-      "last_checked": "2026-06-16T07:43:27.719495",
+      "last_checked": "2026-06-19T07:44:10.012342",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"0975022a0d0f83b3118d69a2cefa9320\"",
       "file_path": "documentation/MetalKit/mtkmesh/vertexcount.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/vertexdescriptor.json": {
       "hash": "5cc1e1c458899cbb25b32fe7888002e2db55fe6fd8da360f75eb6d2412b1e316",
-      "last_checked": "2026-06-16T07:43:27.883393",
+      "last_checked": "2026-06-19T07:44:10.137067",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"bf7ba8492919d7ae1e7517d58a75246d\"",
       "file_path": "documentation/MetalKit/mtkmesh/vertexdescriptor.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmesh/name.json": {
       "hash": "2e682f80168e8476cac89b8b0dd6135525d37e906da5af06e510dfd5bc654ac4",
-      "last_checked": "2026-06-16T07:43:28.091066",
+      "last_checked": "2026-06-19T07:44:10.440934",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"99c709c6d8eafd664d0cd3421cb9b3c5\"",
       "file_path": "documentation/MetalKit/mtkmesh/name.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mesh-error-handling.json": {
       "hash": "26718007e94cfb0290cdf0c1a058c9145b476840374a214a08c526e0200cf43a",
-      "last_checked": "2026-06-16T07:43:28.249248",
+      "last_checked": "2026-06-19T07:44:10.565652",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"934d659d826cf8fdd8fdf8e0e4942a31\"",
       "file_path": "documentation/MetalKit/mesh-error-handling.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/allocator.json": {
       "hash": "c90d1c66fac3136f7b2cd892914d8b023ed7cc71ca710644ec945544dd2dadaf",
-      "last_checked": "2026-06-16T07:43:28.425289",
+      "last_checked": "2026-06-19T07:44:10.689090",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"525a13cdd692388614a6b4fd104536b6\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/allocator.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/type.json": {
       "hash": "8386b97740eeed39acbc54b2ac361e9383e0dcac02059246f06f394d0926c5db",
-      "last_checked": "2026-06-16T07:43:28.608232",
+      "last_checked": "2026-06-19T07:44:10.822961",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5db4b4874e433656fee4908c4f510fc7\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/type.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/buffer.json": {
       "hash": "4db7bed30d91e7218582584e0b0c7e9272c6b43dc1fc98f32e0384e3d749f0d1",
-      "last_checked": "2026-06-16T07:43:28.792275",
+      "last_checked": "2026-06-19T07:44:10.961083",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"421aaf0e35b6fe8cfe4ff17eaa792a90\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/buffer.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/length.json": {
       "hash": "fd8889348b4fe5cb1d07f4b98470e6ae4175d99abb7733576968fe87163fe076",
-      "last_checked": "2026-06-16T07:43:28.975800",
+      "last_checked": "2026-06-19T07:44:11.130596",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"5c1a22c74ced0c89dc18779ff0f91008\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/length.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/offset.json": {
       "hash": "6af59b1be9013335bb6618ea289054a07921341138214bb20e739e73db600a22",
-      "last_checked": "2026-06-16T07:43:29.149177",
+      "last_checked": "2026-06-19T07:44:11.251168",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"f0b4e9b8bfd55cb350a3979f48d9ffdb\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/offset.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbuffer/zone().json": {
       "hash": "0357b001339d1c986eddec31dd54eb8de19919867fd6af78d7242a8eb4f7184c",
-      "last_checked": "2026-06-16T07:43:29.332219",
+      "last_checked": "2026-06-19T07:44:11.550580",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"8019d34dd23fbf661015385fe44771b9\"",
       "file_path": "documentation/MetalKit/mtkmeshbuffer/zone.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbufferallocator/init(device:).json": {
       "hash": "34b1929f7bea134f102ca380099b877053c2bee8b69718d1eebb65dd6a0866e3",
-      "last_checked": "2026-06-16T07:43:29.501652",
+      "last_checked": "2026-06-19T07:44:11.686811",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"fb17ea0f882eb142769a23c0faaf8cc7\"",
       "file_path": "documentation/MetalKit/mtkmeshbufferallocator/init-device.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmeshbufferallocator/device.json": {
       "hash": "27d78b940525985669e535a37350372270cc7ab3c82bac52456219133ff5f413",
-      "last_checked": "2026-06-16T07:43:29.674047",
+      "last_checked": "2026-06-19T07:44:11.861312",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"001c6256494522ef365716d3ef4e92e0\"",
       "file_path": "documentation/MetalKit/mtkmeshbufferallocator/device.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/mesh.json": {
       "hash": "0bdf1df5f1be49cb297eaaf0ccb2e33e42fff90f698c97e37adf1901d089b1a5",
-      "last_checked": "2026-06-16T07:43:29.848734",
+      "last_checked": "2026-06-19T07:44:12.034281",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"d38cd6aa6ac06ed0faf2fda7ad7775be\"",
       "file_path": "documentation/MetalKit/mtksubmesh/mesh.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/indexbuffer.json": {
       "hash": "be1ab29b6f28cdca394d4b09c2094e738a4493ae30c3cf302f45b8bbd7ef1fe8",
-      "last_checked": "2026-06-16T07:43:30.045173",
+      "last_checked": "2026-06-19T07:44:12.212584",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"d2424c2470e04fbb5fe58d07cf7f035e\"",
       "file_path": "documentation/MetalKit/mtksubmesh/indexbuffer.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/indexcount.json": {
       "hash": "8f084c391e3f502b573e4a1992eb43dc8b8d530edb8152907635aaa24488740f",
-      "last_checked": "2026-06-16T07:43:30.226036",
+      "last_checked": "2026-06-19T07:44:12.336098",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"41779251914d77ab8a542966f8663deb\"",
       "file_path": "documentation/MetalKit/mtksubmesh/indexcount.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/indextype.json": {
       "hash": "62d2f991d9d74635d5c6d30411e617f25fdcf8f758f8094cd268dacb16ebcc14",
-      "last_checked": "2026-06-16T07:43:30.396051",
+      "last_checked": "2026-06-19T07:44:12.663654",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"6d0e00848393c9b965bcb4dce43dae49\"",
       "file_path": "documentation/MetalKit/mtksubmesh/indextype.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/primitivetype.json": {
       "hash": "dc4b3be33d4d09f08e75979f15fac58aff98686899189ab75de8b13391287fcf",
-      "last_checked": "2026-06-16T07:43:30.561442",
+      "last_checked": "2026-06-19T07:44:13.074647",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"4e57fc2b8908ac6af028a6507e319201\"",
       "file_path": "documentation/MetalKit/mtksubmesh/primitivetype.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtksubmesh/name.json": {
       "hash": "4f80009a36c94c77e6d53023f71f2117fdce266d4a36a331dc25c673a2a1d7fc",
-      "last_checked": "2026-06-16T07:43:30.737661",
+      "last_checked": "2026-06-19T07:44:13.201468",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"0e2c1a052bd2babcfa76115583d8d5bd\"",
       "file_path": "documentation/MetalKit/mtksubmesh/name.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmetalvertexdescriptorfrommodelio(_:).json": {
       "hash": "0162b551f260f9bc8b55a63469686b19145767033b1280f67a5c9ad2bd85ffb3",
-      "last_checked": "2026-06-16T07:43:30.913662",
+      "last_checked": "2026-06-19T07:44:13.375615",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"62c47763f04242c1879ff92833b2dadf\"",
       "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodelio.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodeliovertexdescriptorfrommetal(_:).json": {
       "hash": "764751aad8cc59ea4f59f4c6029d6d8ccf1c21e645e10b57f3eb3770f4679c96",
-      "last_checked": "2026-06-16T07:43:31.071182",
+      "last_checked": "2026-06-19T07:44:13.680469",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"86d4f163afe090ec51e8b1d5e76ee524\"",
       "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetal.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmetalvertexformatfrommodelio(_:).json": {
       "hash": "c5e96e8732c1024b42a0c2513030aec0b8d191d50ec8c14bde285c4c2b20dff4",
-      "last_checked": "2026-06-16T07:43:31.244703",
+      "last_checked": "2026-06-19T07:44:13.981349",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"b47d0767e4e9b7dd38db0fd13af8bd3e\"",
       "file_path": "documentation/MetalKit/mtkmetalvertexformatfrommodelio.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodeliovertexformatfrommetal(_:).json": {
       "hash": "719d79b9dffedabfed8f456836cfd4b6e33bc539161e984caf36f969b2821bdc",
-      "last_checked": "2026-06-16T07:43:31.425233",
+      "last_checked": "2026-06-19T07:44:14.149916",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"41345020d80f46a6fb69b0b830500238\"",
       "file_path": "documentation/MetalKit/mtkmodeliovertexformatfrommetal.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodelerror.json": {
       "hash": "7fa6b3cc6f35c9d03add89e848c5fcb9b3e241ce8a2f6131d4beff1e0412ca47",
-      "last_checked": "2026-06-16T07:43:31.610544",
+      "last_checked": "2026-06-19T07:44:14.493010",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"3280033a27a2a80bb5405e19aedb8b6a\"",
       "file_path": "documentation/MetalKit/mtkmodelerror.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmetalvertexdescriptorfrommodeliowitherror(_:).json": {
       "hash": "512bc719952d7d6e9a8d71e092445da5681018f65a43dfd09392869dbc9cef47",
-      "last_checked": "2026-06-16T07:43:31.878324",
+      "last_checked": "2026-06-19T07:44:14.650514",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"fe4200aaad7a7b880d59bdc99f468c48\"",
       "file_path": "documentation/MetalKit/mtkmetalvertexdescriptorfrommodeliowitherror.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodeliovertexdescriptorfrommetalwitherror(_:).json": {
       "hash": "9cc5b2559bc9f3674566df56205c44adac5dd90c3cdb941c58868ea8a05c12b8",
-      "last_checked": "2026-06-16T07:43:32.079323",
+      "last_checked": "2026-06-19T07:44:14.887444",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"de0c21769c7340c4af8b750f7d37e678\"",
       "file_path": "documentation/MetalKit/mtkmodeliovertexdescriptorfrommetalwitherror.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/init(rawvalue:).json": {
       "hash": "3381e81eeb331f302e5e5bb2722fccbe193f0ec11e6328eaeacfb9224bfa7673",
-      "last_checked": "2026-06-16T07:43:32.380668",
+      "last_checked": "2026-06-19T07:44:15.009287",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"d6d5f5bb234913217c5877d218a10124\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/init-rawvalue.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/allocatemipmaps.json": {
       "hash": "c915af7b57b0611c48f4e35722844321a1635db9998193c93f64be34c75354b4",
-      "last_checked": "2026-06-16T07:43:32.681479",
+      "last_checked": "2026-06-19T07:44:15.324584",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"550641f625dbba8799383b757b762995\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/allocatemipmaps.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/generatemipmaps.json": {
       "hash": "f4a182fdb0a4b51f6a1252af1e0a13af5ff861da96db5be71d1b380906f05a4a",
-      "last_checked": "2026-06-16T07:43:32.869456",
+      "last_checked": "2026-06-19T07:44:15.491295",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"84e2100c3f4367882b43065317a7071a\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/generatemipmaps.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/texturecpucachemode.json": {
       "hash": "14f44e6047e64b84e20304b32a7b720385c805169b80151d953ac5c2864f7d4a",
-      "last_checked": "2026-06-16T07:43:33.168918",
+      "last_checked": "2026-06-19T07:44:15.652513",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"ccf2bc599352a24c7c3fe4bb88dd90d5\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/texturecpucachemode.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/texturestoragemode.json": {
       "hash": "3d827b8d79f3a86c01bb96792de4368a10724db0cc5ab425a758ac4aa515dd81",
-      "last_checked": "2026-06-16T07:43:33.332739",
+      "last_checked": "2026-06-19T07:44:15.824711",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"910c4983ebdcd9ce271c642441e81662\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/texturestoragemode.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/textureusage.json": {
       "hash": "6b4000d98ae6f17ef9f0ce2f87a8e83028fd8932894d76a65e9633d9ed97c9d9",
-      "last_checked": "2026-06-16T07:43:33.514163",
+      "last_checked": "2026-06-19T07:44:16.000103",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"82f5a44d193f9ea224012734b0f115d2\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/textureusage.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/origin.json": {
       "hash": "c45b9ebc49838ecf28e1686ef80972e65a20745b52aa31325acfe6c6d0fdd9ee",
-      "last_checked": "2026-06-16T07:43:33.688395",
+      "last_checked": "2026-06-19T07:44:16.216388",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"794313c30cd35b8b07cf0ceeec63605a\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/origin.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/origin.json": {
       "hash": "6ae7c600f0a595e6b79fecfe94c630463ba5e69e5fcc07ff95ffc03923082f75",
-      "last_checked": "2026-06-16T07:43:33.859124",
+      "last_checked": "2026-06-19T07:44:16.385509",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"419bd03cceff1d685dd54801c835578a\"",
       "file_path": "documentation/MetalKit/mtktextureloader/origin.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/cubelayout.json": {
       "hash": "9bdd097f9922705595f5997c3c2b855a7ef4d43255109d14b2c49e02ceee3b76",
-      "last_checked": "2026-06-16T07:43:34.037290",
+      "last_checked": "2026-06-19T07:44:16.575786",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"641f330bcca467b775f4e477755eb70e\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/cubelayout.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/cubelayout.json": {
       "hash": "964c09181c5abd46ce3780767076ce651640bd3fe33a4ed659f9d3064c11e2a0",
-      "last_checked": "2026-06-16T07:43:34.254333",
+      "last_checked": "2026-06-19T07:44:16.715141",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"46e666bbbf8e70a76b2014a5646db36e\"",
       "file_path": "documentation/MetalKit/mtktextureloader/cubelayout.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/srgb.json": {
       "hash": "e238282060e6d121eb628a504d025df452a4e77091d54469cdbf822698d2cc98",
-      "last_checked": "2026-06-16T07:43:34.424965",
+      "last_checked": "2026-06-19T07:44:16.879585",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"38164bb51e116093cc7d73b09f8f9d43\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/srgb.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/option/loadasarray.json": {
       "hash": "b66790c1088870bbcfb6a550732e5085765b4d9fe566643f7aa3ff84244e4d36",
-      "last_checked": "2026-06-16T07:43:34.609383",
+      "last_checked": "2026-06-19T07:44:17.046257",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"261f5f6c9675d5e14acc0bb0c8d40ee1\"",
       "file_path": "documentation/MetalKit/mtktextureloader/option/loadasarray.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/error/init(rawvalue:).json": {
       "hash": "9e83a3332d7789d2955b9b6b3dbfe1d03692378a088040144f79637954f3bcfe",
-      "last_checked": "2026-06-16T07:43:34.785156",
+      "last_checked": "2026-06-19T07:44:17.360478",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"a0ab5a84cfd944cf3a1c65bc53d4530b\"",
       "file_path": "documentation/MetalKit/mtktextureloader/error/init-rawvalue.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/error/domain.json": {
       "hash": "4969a0f53903a3a83c4d98dd26153712ba0dcdad380550c2aaeae617dc64211f",
-      "last_checked": "2026-06-16T07:43:34.980228",
+      "last_checked": "2026-06-19T07:44:17.507989",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"b1f424b9fc1bf6f551bd4707689ebda8\"",
       "file_path": "documentation/MetalKit/mtktextureloader/error/domain.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/error/key.json": {
       "hash": "78e1ba74abe5f7d79f9efb1330424f427be1f09ce0a1b17522921b522593e711",
-      "last_checked": "2026-06-16T07:43:35.158052",
+      "last_checked": "2026-06-19T07:44:17.706238",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"736d9360286c067af62cf1e33755c88d\"",
       "file_path": "documentation/MetalKit/mtktextureloader/error/key.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodelerror/domain.json": {
       "hash": "a883b7f7860039beda160a0f43df20cc3cad5a951664a7a13036dad5d0753230",
-      "last_checked": "2026-06-16T07:43:35.342582",
+      "last_checked": "2026-06-19T07:44:17.862859",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"8c5c5250c92b89ae40dae92749eababe\"",
       "file_path": "documentation/MetalKit/mtkmodelerror/domain.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodelerror/key.json": {
       "hash": "bd938132fbd16518b1b5a85bf51dade61c87b86c3de6c8e48deb542e083d22e4",
-      "last_checked": "2026-06-16T07:43:35.518142",
+      "last_checked": "2026-06-19T07:44:18.028291",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"b989a8c8e5e3857044010dad25d01dac\"",
       "file_path": "documentation/MetalKit/mtkmodelerror/key.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkmodelerror/init(rawvalue:).json": {
       "hash": "a46096b454c7c03f6ba26bf2275b68ce30d93e34e9b20ada24938a2df0e255fc",
-      "last_checked": "2026-06-16T07:43:35.744646",
+      "last_checked": "2026-06-19T07:44:18.190106",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"820bbd0dca0ff87f43ef6c4179ec9597\"",
       "file_path": "documentation/MetalKit/mtkmodelerror/init-rawvalue.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/origin/init(rawvalue:).json": {
       "hash": "7ac79b69883009819e2e0eb2e1ad0c5e80d56522c6f3fd3c6f763beb934e6fa7",
-      "last_checked": "2026-06-16T07:43:35.929354",
+      "last_checked": "2026-06-19T07:44:18.504671",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"44a2f5778adebd3a9c62454a7d873be3\"",
       "file_path": "documentation/MetalKit/mtktextureloader/origin/init-rawvalue.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/origin/topleft.json": {
       "hash": "5f5f4975fb4d508c844f3fea575e1d3f65b98a39d3e6a2a4c0e72362011d0725",
-      "last_checked": "2026-06-16T07:43:36.226145",
+      "last_checked": "2026-06-19T07:44:18.808968",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"84c8fca4ff1764e2479d841e771c1232\"",
       "file_path": "documentation/MetalKit/mtktextureloader/origin/topleft.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/origin/bottomleft.json": {
       "hash": "9726dcf20d9f51ea17085c77c1ccc91877dd4d98385943fe05a725414b3cae3a",
-      "last_checked": "2026-06-16T07:43:36.402400",
+      "last_checked": "2026-06-19T07:44:19.118332",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"de83f31a69f20f2de8244be621fd2d0a\"",
       "file_path": "documentation/MetalKit/mtktextureloader/origin/bottomleft.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/origin/flippedvertically.json": {
       "hash": "084f1d843048b57869ee77f0cf266f88fc28fece690056cb97c38472f15e5b52",
-      "last_checked": "2026-06-16T07:43:36.579433",
+      "last_checked": "2026-06-19T07:44:19.278657",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"1d1925d89b2c0a894878aeddcf04e625\"",
       "file_path": "documentation/MetalKit/mtktextureloader/origin/flippedvertically.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/cubelayout/init(rawvalue:).json": {
       "hash": "9be0af630a35ecdba6f40072428261cc82c2d0409d78cc5046f17a153b89c333",
-      "last_checked": "2026-06-16T07:43:36.873565",
+      "last_checked": "2026-06-19T07:44:19.437196",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"15524ed8b443f73e010c92617b19de07\"",
       "file_path": "documentation/MetalKit/mtktextureloader/cubelayout/init-rawvalue.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtktextureloader/cubelayout/vertical.json": {
       "hash": "8261fe43953750c0a69bdcffd028ae6542b97bbbd3607f3cafda212e8c36a1b2",
-      "last_checked": "2026-06-16T07:43:37.041495",
+      "last_checked": "2026-06-19T07:44:19.605584",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"8be4f856c208f72e769ef37921896f84\"",
       "file_path": "documentation/MetalKit/mtktextureloader/cubelayout/vertical.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/metalkit/mtkview/residencyset.json": {
       "hash": "68d5baa8f4307e58b7b8e6c91971590197a319490373491dc903ca65f828219c",
-      "last_checked": "2026-06-16T07:43:21.255092",
+      "last_checked": "2026-06-19T07:44:05.787957",
       "status": "unchanged",
-      "session_id": "2026-06-16T07:43:14.273110",
+      "session_id": "2026-06-19T07:43:58.451717",
       "etag": "W/\"2bf4eac9ac99c8f0f14f45a660949aad\"",
       "file_path": "documentation/MetalKit/mtkview/residencyset.md"
     },
