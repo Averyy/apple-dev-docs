@@ -36,6 +36,8 @@ You can also use [`automatic`](textfieldstyle/automatic.md) to construct this st
 
 ## See Also
 
+- [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
+  A text field style with a system-defined border.
 - [struct PlainTextFieldStyle](plaintextfieldstyle.md)
   A text field style with no decoration.
 - [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)

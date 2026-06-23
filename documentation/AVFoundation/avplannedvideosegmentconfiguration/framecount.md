@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The number of frames in this planned video segment.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,10 +18,6 @@
 ```swift
 var frameCount: Int { get }
 ```
-
-#### Discussion
-
-The number of frames in this planned video segment.
 
 
 ---

@@ -63,6 +63,8 @@ Using the Accessory Transport Extension framework with [`Accessory Notifications
   A structure that carries key material for a secure channel between the system and an accessory.
 - [enum AccessoryTransport](accessorytransport.md)
   Transport methods for communicating with an accessory.
+### Protocols
+- [protocol AccessoryFeatureSession](accessoryfeaturesession.md)
 
 
 ---

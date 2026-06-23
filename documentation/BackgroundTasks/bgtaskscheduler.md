@@ -11,7 +11,6 @@ A class for scheduling tasks that add background support to your app’s most cr
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 26.0+
 
 ## Declaration
 

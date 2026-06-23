@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns a Boolean value indicating whether two `RawSpan` instances refer to the same region in memory.
+Returns a Boolean value indicating whether two instances refer to the same memory region.
 
 **Availability**:
 - iOS 12.2+
@@ -19,6 +19,20 @@ Returns a Boolean value indicating whether two `RawSpan` instances refer to the 
 ```swift
 func isIdentical(to other: RawSpan) -> Bool
 ```
+
+#### Return Value
+
+Whether `self` and `other` reference the same region in memory.
+
+#### Discussion
+
+Two spans are identical if they reference the same starting address and have the same number of bytes.
+
+> **Note**: O(1)
+
+## Parameters
+
+- `other`: A span to compare with this one.
 
 
 ---

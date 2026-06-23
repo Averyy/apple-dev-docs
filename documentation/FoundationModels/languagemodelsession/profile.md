@@ -31,7 +31,6 @@ A profile binds [`DynamicInstructions`](dynamicinstructions.md) to a set of sess
 Profile {
     // Custom instructions and tools for a creative task.
 }
-.model(PrivateCloudComputeLanguageModel())
 // Use a higher creative temperature value when a person likes poetry.
 .temperature(likesPoetry ? 0.8 : 0.1)
 // Perform deeper reasoning when a person likes astronomy.
@@ -68,6 +67,7 @@ Profile {
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

@@ -21,7 +21,7 @@ func viewWillLayoutSubviews()
 ## Mentions
 
 - [Displaying and managing views with a view controller](displaying-and-managing-views-with-a-view-controller.md)
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Discussion
 
@@ -29,7 +29,7 @@ When a view’s bounds change, the view adjusts the position of its subviews. Yo
 
 In iOS 18 and later, UIKit supports automatic trait tracking inside this method for traits from this view controller’s `traitCollection` and the `traitCollection` of its [`view`](uiviewcontroller/view.md). For more information, see [`Automatic trait tracking`](automatic-trait-tracking.md).
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 

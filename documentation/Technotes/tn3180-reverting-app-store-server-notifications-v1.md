@@ -10,7 +10,7 @@ When you enable your server to receive App Store Server Notifications, you confi
 
 > **Note**: The [`App Store Server Notifications V1`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V1) endpoint and version 1 notifications are deprecated. Implement the [`App Store Server Notifications V2`](https://developer.apple.com/documentation/AppStoreServerNotifications/App-Store-Server-Notifications-V2) endpoint on your server to receive version 2 notifications instead.
 
-In the unusual case that you need to revert from version 2 to version 1 of App Store Server Notifications, use the [`Modify an App`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-apps-_id_) endpoint.
+In the unusual case that you need to revert from version 2 to version 1 of App Store Server Notifications, use the [`Modify an app`](https://developer.apple.com/documentation/AppStoreConnectAPI/PATCH-v1-apps-_id_) endpoint.
 
 #### Create the App Modification Request
 

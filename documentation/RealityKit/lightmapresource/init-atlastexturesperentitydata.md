@@ -16,7 +16,6 @@ Initializes the resource with the given atlases and entity descriptors. The reso
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(atlasTextures: [TextureResource], perEntityData: [LightmapResource.EntityLightmapDescriptor]) throws
 ```
 

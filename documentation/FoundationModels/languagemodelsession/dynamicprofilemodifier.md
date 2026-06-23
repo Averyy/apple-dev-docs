@@ -42,6 +42,7 @@ protocol DynamicProfileModifier
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)

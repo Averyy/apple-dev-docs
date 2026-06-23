@@ -34,6 +34,7 @@ The default value of this property is [`false`](https://developer.apple.com/docu
 - [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
+  A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
 - [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
   The threshold for using tightening as an alternative to truncation.
 

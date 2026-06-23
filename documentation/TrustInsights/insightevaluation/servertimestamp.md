@@ -1,6 +1,6 @@
 # serverTimestamp
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 The server-side timestamp that indicates when the server processed the evaluation, in UTC.
@@ -9,7 +9,6 @@ The server-side timestamp that indicates when the server processed the evaluatio
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

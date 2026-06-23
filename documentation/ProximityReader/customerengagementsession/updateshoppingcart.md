@@ -16,10 +16,6 @@ Updates the shopping cart on the customer’s device.
 final func updateShoppingCart(_ shoppingCart: CustomerEngagement.ShoppingCart) async throws -> CustomerEngagement.ShoppingCartToken
 ```
 
-## Mentions
-
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
-
 #### Return Value
 
 [`CustomerEngagement.ShoppingCartToken`](customerengagement/shoppingcarttoken.md) for making payment request using [`requestPayment(for:using:delegate:)`](customerengagementsession/requestpayment(for:using:delegate:).md).
@@ -35,11 +31,6 @@ When there isn’t any form, like a sign-up form being displayed, the screen def
 ## Parameters
 
 - `shoppingCart`: A structure of the shopping cart, consisting of shopping cart items and the summary.
-
-## See Also
-
-- [func updateStatus(CustomerEngagement.Status) async throws](customerengagementsession/updatestatus(_:).md)
-  Updates the status on the customer’s screen.
 
 
 ---

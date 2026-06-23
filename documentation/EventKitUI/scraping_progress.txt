@@ -1,4 +1,4 @@
 Completed scraping EventKit UI!
-Total pages scraped: 0
-Pages skipped (unchanged): 52
+Total pages scraped: 48
+Pages skipped (unchanged): 4
 Pages failed: 0

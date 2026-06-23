@@ -1,7 +1,7 @@
 # FoveatedStreamingProvider
 
 **Framework**: Foveated Streaming  
-**Kind**: protocol
+**Kind**: struct
 
 Protocol that streaming provider system extensions must implement.
 
@@ -12,47 +12,38 @@ Protocol that streaming provider system extensions must implement.
 
 ```swift
 @MainActor
-protocol FoveatedStreamingProvider
+@preconcurrency struct FoveatedStreamingProvider
 ```
 
 #### Overview
 
-This may only be used by App Extensions with the `com.apple.developer.foveated-streaming-provider` entitlement.
+This may only be used by App Extensions with the [`Foveated Streaming Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-provider) entitlement. To request access for your protocol, visit the entitlement request form [`Requesting the Foveated Streaming Provider Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/foveated-streaming-provider/).
 
 ## Topics
 
-### Associated Types
-- [associatedtype Content : View](foveatedstreamingprovider/content.md)
-  The type of the view that renders the streamed content.
+### Classes
+- [FoveatedStreamingProvider.Context](foveatedstreamingprovider/context.md)
+  Context object provided to a streaming provider during initialization.
+### Protocols
+- [FoveatedStreamingProvider.Delegate](foveatedstreamingprovider/delegate.md)
+  Protocol that streaming provider extensions must implement.
+### Structures
+- [FoveatedStreamingProvider.FocusRegion](foveatedstreamingprovider/focusregion.md)
+  Eye input data that describes the approximate region that the end user is looking, relative to the device pose.
 ### Initializers
-- [init(context: any FoveatedStreamingProviderContext) async throws](foveatedstreamingprovider/init(context:).md)
-  Initialize the streaming provider and connect to the provided endpoint.
-### Instance Properties
-- [var immersiveScene: Self.Content](foveatedstreamingprovider/immersivescene.md)
-  The SwiftUI view that renders the streamed content.
-- [var remoteSceneFromImmersiveSpaceTransform: simd_float4x4](foveatedstreamingprovider/remotescenefromimmersivespacetransform.md)
-  Transform matrix from the remote scene’s coordinate space to the immersive space.
-### Instance Methods
-- [func closeMessageChannel(channelId: String)](foveatedstreamingprovider/closemessagechannel(channelid:).md)
-  Closes a message channel.
-- [func disconnect() async throws](foveatedstreamingprovider/disconnect.md)
-  Disconnect from the streaming endpoint.
-- [func openMessageChannel(channelId: String) throws](foveatedstreamingprovider/openmessagechannel(channelid:).md)
-  Opens a message channel with the given identifier.
-- [func sendDataOnChannel(channelId: String, data: Data) throws](foveatedstreamingprovider/senddataonchannel(channelid:data:).md)
-  Sends data on an open message channel.
-
-## See Also
-
-- [func streamingProviderScene<Provider>(providerType: Provider.Type) -> some AppExtensionScene](streamingproviderscene(providertype:).md)
-  Creates a complete app extension scene for a foveated streaming provider extension.
-- [protocol FoveatedStreamingProviderContext](foveatedstreamingprovidercontext.md)
-- [enum FoveatedStreamingProviderEndpoint](foveatedstreamingproviderendpoint.md)
+- [init<Provider>(delegateType: Provider.Type)](foveatedstreamingprovider/init(delegatetype:).md)
+### Enumerations
+- [FoveatedStreamingProvider.Endpoint](foveatedstreamingprovider/endpoint.md)
   The streaming endpoint provided to a [`FoveatedStreamingProvider`](foveatedstreamingprovider.md) extension.
-- [struct FocusRegion](focusregion.md)
-  Eye input data that describes where the end user is looking, relative to the device pose.
-- [enum StreamingProviderStatus](streamingproviderstatus.md)
+- [FoveatedStreamingProvider.Status](foveatedstreamingprovider/status.md)
   An enum describing the state of a [`FoveatedStreamingProvider`](foveatedstreamingprovider.md).
+
+## Relationships
+
+### Conforms To
+- [AppExtensionScene](../ExtensionKit/AppExtensionScene.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

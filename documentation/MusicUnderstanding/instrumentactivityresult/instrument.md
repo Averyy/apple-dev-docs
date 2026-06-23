@@ -1,6 +1,6 @@
 # InstrumentActivityResult.Instrument
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A type that identifies a specific instrument category.

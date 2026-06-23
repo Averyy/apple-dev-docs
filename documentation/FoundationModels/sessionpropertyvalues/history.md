@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The transcript of the session.
+The history portion of the session’s transcript.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,11 +18,6 @@ The transcript of the session.
 ```swift
 final var history: ArraySlice<Transcript.Entry> { get set }
 ```
-
-## See Also
-
-- [var rootDynamicInstructions: any DynamicInstructions](sessionpropertyvalues/rootdynamicinstructions.md)
-  The root dynamic instructions.
 
 
 ---

@@ -24,6 +24,8 @@ static var isEligible: Bool { get async throws }
 
 Always check the value of this property before calling [`startSession()`](credentialsession/startsession().md) to dynamically determine if the current device and user configuration can use the Secure Element credential service.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is temporarily unavailable.
+
 
 ---
 

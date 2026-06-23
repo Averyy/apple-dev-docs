@@ -18,10 +18,16 @@ A text field style with a system-defined rounded border.
 static var roundedBorder: RoundedBorderTextFieldStyle { get }
 ```
 
+#### Discussion
+
+Use [`textFieldStyle(_:)`](view/textfieldstyle(_:).md) to apply the [`bordered`](textfieldstyle/bordered.md) style with [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) to apply the [`roundedRectangle`](textinputbordershape/roundedrectangle.md) shape instead.
+
 ## See Also
 
 - [static var automatic: DefaultTextFieldStyle](textfieldstyle/automatic.md)
   The default text field style, based on the text field’s context.
+- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
+  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
 - [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
   A text field style with no decoration.
 - [static var squareBorder: SquareBorderTextFieldStyle](textfieldstyle/squareborder.md)

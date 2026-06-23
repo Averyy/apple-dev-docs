@@ -38,13 +38,6 @@ enum CookiePolicy
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [func getCookiePolicy((WKHTTPCookieStore.CookiePolicy) -> Void)](wkhttpcookiestore/getcookiepolicy(_:).md)
-  Returns a cookie policy that indicates whether the cookie store allows cookie storage.
-- [func setCookiePolicy(WKHTTPCookieStore.CookiePolicy, completionHandler: (() -> Void)?)](wkhttpcookiestore/setcookiepolicy(_:completionhandler:).md)
-  Sets a cookie policy that indicates whether the cookie store allows cookie storage.
-
 
 ---
 

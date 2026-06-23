@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The text blocks that contain the paragraph.
+
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+

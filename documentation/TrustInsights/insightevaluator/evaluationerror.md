@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Errors the framework can return if there are errors processing an evaluation request.
@@ -9,7 +9,6 @@ Errors the framework can return if there are errors processing an evaluation req
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -27,7 +27,6 @@ struct EnumSchema
 - [AssistantSchemas.Enum](assistantschemas/enum.md)
 - [AssistantSchemas.Model](assistantschemas/model.md)
 - [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
-- [AssistantSchemas.PresentationEnum](assistantschemas/presentationenum.md)
 - [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)
 - [AssistantSchemas.WhiteboardEnum](assistantschemas/whiteboardenum.md)
 - [Copyable](../Swift/Copyable.md)

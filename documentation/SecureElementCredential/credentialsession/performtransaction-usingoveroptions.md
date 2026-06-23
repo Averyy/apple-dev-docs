@@ -35,6 +35,9 @@ If not ended sooner, card emulation expires after 60 seconds and the credential 
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
+> **Note**: An [`CredentialSession.ErrorCode`](credentialsession/errorcode.md). The most common errors are: - [`CredentialSession.ErrorCode.userCanceledAuthorization`](credentialsession/errorcode/usercanceledauthorization.md): The user dismissed the authorization sheet.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable. The session transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.

@@ -10,9 +10,7 @@ Identifies intent schemas in the system domain.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- tvOS 18.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 
@@ -26,6 +24,8 @@ protocol SystemIntent : AppSchema.Kind
 - [var open: some AppSchemaIntent](appschema/systemintent/open.md)
   An intent schema that opens an item in the application.
 - [var search: some AppSchemaIntent](appschema/systemintent/search.md)
+  An intent schema that navigates to search results.
+- [var searchInApp: some AppSchemaIntent](appschema/systemintent/searchinapp.md)
   An intent schema that navigates to search results.
 
 ## Relationships

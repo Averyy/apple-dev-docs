@@ -16,6 +16,7 @@ Creates a builder with the an array of prompts.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildArray(_ instructions: [some InstructionsRepresentable]) -> Instructions
 ```
 

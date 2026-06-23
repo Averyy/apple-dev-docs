@@ -41,6 +41,7 @@ The web view derives the default value of this property from the content of the 
   A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.
 - [var themeColor: UIColor?](wkwebview/themecolor.md)
   The theme color that the system gets from the first valid meta tag in the webpage.
+- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
 
 
 ---

@@ -13,7 +13,7 @@ Registers the calling app for background launch whenever the device’s quick sw
 ## Declaration
 
 ```swift
-func registerForLaunchOnQuickSwitchStateEvents() async throws
+class func registerForLaunchOnQuickSwitchStateEvents() async throws
 ```
 
 #### Discussion
@@ -34,7 +34,7 @@ The framework calls the completion handler with a non-`nil` error if the app is 
 
 ## See Also
 
-- [func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
+- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
   Removes the calling app’s registration for background launch on quick switch state changes.
 
 

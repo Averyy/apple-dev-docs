@@ -10,7 +10,7 @@ You can diagnose problems with your matchmaking rules using the metrics endpoint
 
 ##### View Match Requests on the Queue
 
-First, confirm that your game submits requests to the correct queue using the [`Get Match Request Time in Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_-metrics-matchmakingRequests) endpoint. In the query parameters, pass the Game Center details `id` and pass a value for the `granularity` parameter that returns the level of information you want. To get the Game Center detail `id`, use the [`Enable Game Center for an App`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterDetails) or [`List Apps`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-apps) endpoint.
+First, confirm that your game submits requests to the correct queue using the [`Get Match Request Time in Queue`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingQueues-_id_-metrics-matchmakingRequests) endpoint. In the query parameters, pass the Game Center details `id` and pass a value for the `granularity` parameter that returns the level of information you want. To get the Game Center detail `id`, use the [`Enable game center for an app`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-gameCenterDetails) or [`List apps`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-apps) endpoint.
 
 ```other
 GET /v1/gameCenterMatchmakingQueues/8fb73d41-1ca1-1cbf-2538-9df424beb10b/metrics/matchmakingRequests?granularity=PT15M
@@ -61,7 +61,7 @@ To get the matchmaking rule `id`, use the [`Create a Rule`](https://developer.ap
 
 ##### Check If Your Rules Are Too Restrictive
 
-Your matchmaking rules should strike a balance between finding the best players and reducing wait times. Check whether your rules are too restrictive by getting the frequency that your rules reject candidate matches using the [`Get Boolean Rule Results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingBooleanRuleResults) and [`Get Numeric Rule Results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingNumberRuleResults) endpoints. Pass the matchmaking rule `id,` pass a `granularity` query parameter, and to organize the results by type, set the `groupBy` query parameter to `result`.
+Your matchmaking rules should strike a balance between finding the best players and reducing wait times. Check whether your rules are too restrictive by getting the frequency that your rules reject candidate matches using the [`Get boolean rule results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingBooleanRuleResults) and [`Get Numeric Rule Results`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-gameCenterMatchmakingRules-_id_-metrics-matchmakingNumberRuleResults) endpoints. Pass the matchmaking rule `id,` pass a `granularity` query parameter, and to organize the results by type, set the `groupBy` query parameter to `result`.
 
 ```other
 GET /v1/gameCenterMatchmakingRules/0f0fcbf9-43b6-429d-8c08-fcaf66a52872/metrics/matchmakingBooleanRuleResults?granularity=PT15M&groupBy=result

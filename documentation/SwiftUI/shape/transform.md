@@ -39,8 +39,12 @@ Affine transforms present a mathematical approach to applying combinations of ro
   Trims this shape by a fractional amount based on its representation as a path.
 - [func size(CGSize) -> some Shape](shape/size(_:).md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of `size`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(CGSize, anchor: UnitPoint) -> some Shape](shape/size(_:anchor:).md)
+  Returns a new version of self representing the same shape, but within a rect of `size` instead of the container size.
 - [func size(width: CGFloat, height: CGFloat) -> some Shape](shape/size(width:height:).md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of size `(width, height)`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](shape/size(width:height:anchor:).md)
+  Returns a new version of self representing the same shape, but within a rect of `(width, height)` instead of the container size.
 - [func scale(CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(_:anchor:).md)
   Scales this shape without changing its bounding frame.
 - [func scale(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(x:y:anchor:).md)

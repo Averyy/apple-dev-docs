@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-mutating func takeDeformationUpdate(id: DeformationID) -> DeformationData.Update?
+mutating func takeDeformationUpdate(id: USDPlayer.DeformationID) -> USDPlayer.DeformationData.Update?
 ```
 
 

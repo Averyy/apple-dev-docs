@@ -42,16 +42,35 @@ You can define shapes in relation to an implicit frame of reference, such as the
   A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
 - [static var ellipse: Ellipse](shape/ellipse.md)
   An ellipse aligned inside the frame of the view containing it.
+- [static var textInputBorder: TextInputBorderShape](shape/textinputborder.md)
+  A shape that defers to the environment to determine the resolved text input border shape.
+### Getting rectangles
 - [static var rect: Rectangle](shape/rect.md)
   A rectangular shape aligned inside the frame of the view containing it.
 - [static func rect(cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle) -> Self](shape/rect(cornerradii:style:).md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
 - [static func rect(cornerRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(cornerradius:style:).md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
+- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](shape/rect(corners:isuniform:).md)
+  Creates a rectangle with the same corner style set on four corners.
 - [static func rect(cornerSize: CGSize, style: RoundedCornerStyle) -> Self](shape/rect(cornersize:style:).md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
+- [static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(topleadingcorner:toptrailingcorner:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with individual styles for each corner.
 - [static func rect(topLeadingRadius: CGFloat, bottomLeadingRadius: CGFloat, bottomTrailingRadius: CGFloat, topTrailingRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(topleadingradius:bottomleadingradius:bottomtrailingradius:toptrailingradius:style:).md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
+- [static func rect(uniformBottomCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformbottomcorners:topleadingcorner:toptrailingcorner:).md)
+  Creates a rectangle with a corner style set on the two bottom corners uniformly, and two other styles for the two top corners respectively.
+- [static func rect(uniformLeadingCorners: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:toptrailingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two leading corners, and two other styles for the two trailing corners respectively.
+- [static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:uniformtrailingcorners:).md)
+  Creates a rectangle with a corner style uniformly set on the two leading corners, and another style uniformly set on the two trailing corners.
+- [static func rect(uniformTopCorners: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two top corners, and two other styles for the bottom two corners respectively.
+- [static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:uniformbottomcorners:).md)
+  Creates a rectangle with a corner style uniformly set on the two top corners, and another style uniformly set on the two bottom corners.
+- [static func rect(uniformTrailingCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtrailingcorners:topleadingcorner:bottomleadingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two trailing corners, and two other styles for the two leading corners respectively.
 ### Defining a shape’s size and path
 - [func sizeThatFits(ProposedViewSize) -> CGSize](shape/sizethatfits(_:).md)
   Returns the size of the view that will render the shape, given a proposed size.
@@ -64,8 +83,12 @@ You can define shapes in relation to an implicit frame of reference, such as the
   Applies an affine transform to this shape.
 - [func size(CGSize) -> some Shape](shape/size(_:).md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of `size`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(CGSize, anchor: UnitPoint) -> some Shape](shape/size(_:anchor:).md)
+  Returns a new version of self representing the same shape, but within a rect of `size` instead of the container size.
 - [func size(width: CGFloat, height: CGFloat) -> some Shape](shape/size(width:height:).md)
   Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of size `(width, height)`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](shape/size(width:height:anchor:).md)
+  Returns a new version of self representing the same shape, but within a rect of `(width, height)` instead of the container size.
 - [func scale(CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(_:anchor:).md)
   Scales this shape without changing its bounding frame.
 - [func scale(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(x:y:anchor:).md)
@@ -113,28 +136,6 @@ You can define shapes in relation to an implicit frame of reference, such as the
   Returns a new shape with filled regions either from this shape or the given shape, but not in both.
 - [func union<T>(T, eoFill: Bool) -> some Shape](shape/union(_:eofill:).md)
   Returns a new shape with filled regions in either this shape or the given shape.
-### Instance Methods
-- [func size(CGSize, anchor: UnitPoint) -> some Shape](shape/size(_:anchor:).md)
-  Returns a new version of self representing the same shape, but within a rect of `size` instead of the container size.
-- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](shape/size(width:height:anchor:).md)
-  Returns a new version of self representing the same shape, but within a rect of `(width, height)` instead of the container size.
-### Type Methods
-- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](shape/rect(corners:isuniform:).md)
-  Creates a rectangle with the same corner style set on four corners.
-- [static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(topleadingcorner:toptrailingcorner:bottomleadingcorner:bottomtrailingcorner:).md)
-  Creates a rectangle with individual styles for each corner.
-- [static func rect(uniformBottomCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformbottomcorners:topleadingcorner:toptrailingcorner:).md)
-  Creates a rectangle with a corner style set on the two bottom corners uniformly, and two other styles for the two top corners respectively.
-- [static func rect(uniformLeadingCorners: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:toptrailingcorner:bottomtrailingcorner:).md)
-  Creates a rectangle with a corner style uniformly set on the two leading corners, and two other styles for the two trailing corners respectively.
-- [static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:uniformtrailingcorners:).md)
-  Creates a rectangle with a corner style uniformly set on the two leading corners, and another style uniformly set on the two trailing corners.
-- [static func rect(uniformTopCorners: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:bottomleadingcorner:bottomtrailingcorner:).md)
-  Creates a rectangle with a corner style uniformly set on the two top corners, and two other styles for the bottom two corners respectively.
-- [static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:uniformbottomcorners:).md)
-  Creates a rectangle with a corner style uniformly set on the two top corners, and another style uniformly set on the two bottom corners.
-- [static func rect(uniformTrailingCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtrailingcorners:topleadingcorner:bottomleadingcorner:).md)
-  Creates a rectangle with a corner style uniformly set on the two trailing corners, and two other styles for the two leading corners respectively.
 
 ## Relationships
 
@@ -161,6 +162,7 @@ You can define shapes in relation to an implicit frame of reference, such as the
 - [RotatedShape](rotatedshape.md)
 - [RoundedRectangle](roundedrectangle.md)
 - [ScaledShape](scaledshape.md)
+- [TextInputBorderShape](textinputbordershape.md)
 - [TransformedShape](transformedshape.md)
 - [UnevenRoundedRectangle](unevenroundedrectangle.md)
 

@@ -1,6 +1,6 @@
 # authorizationStatus(for:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: method
 
 Returns an authorization status that indicates whether a person permitted the app to request evaluations for the given context.
@@ -9,7 +9,6 @@ Returns an authorization status that indicates whether a person permitted the ap
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

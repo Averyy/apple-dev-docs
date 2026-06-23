@@ -21,9 +21,9 @@ struct BloomComponent
 
 #### Overview
 
-Note: On visionOS, Bloom only works in an immersive space and will have no effect in a shared space.
+Bloom is available on devices with Apple7 GPU family feature support. Note: On visionOS, Bloom only works in an immersive space and will have no effect in a shared space.
 
-To adjust the appearance of the bloom effect, you also need a `BloomSettingsComponent`
+To adjust the appearance of the bloom effect, you also need a `BloomOptionsComponent`
 
 Example Code:
 
@@ -34,13 +34,13 @@ var bloomComponent = BloomComponent()
 bloomComponent.scope = .unbounded
 self.root.components.set(bloomComponent)
 
-// Add the bloom settings component to the root.
+// Add the bloom options component to the root.
 // Set strength 1 for a bright effect and threshold 0 so that
 // everything blooms no matter how dim.
-var bloomSettingsComponent = BloomSettingsComponent()
-bloomSettingsComponent.strength = 1
-bloomSettingsComponent.threshold = 0
-self.root.components.set(bloomSettingsComponent)
+var bloomOptionsComponent = BloomOptionsComponent()
+bloomOptionsComponent.strength = 1
+bloomOptionsComponent.threshold = 0
+self.root.components.set(bloomOptionsComponent)
 ```
 
 ## Topics
@@ -64,8 +64,6 @@ self.root.components.set(bloomSettingsComponent)
 ## See Also
 
 - [struct BloomOptionsComponent](bloomoptionscomponent.md)
-  A component that sets the properties for the bloom post-processing effects.
-- [struct BloomSettingsComponent](bloomsettingscomponent.md)
   A component that sets the properties for the bloom post-processing effects.
 - [struct ToneMappingComponent](tonemappingcomponent.md)
 

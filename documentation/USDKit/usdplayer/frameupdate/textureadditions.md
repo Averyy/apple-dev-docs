@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let textureAdditions: [TextureID]
+let textureAdditions: [USDPlayer.TextureID]
 ```
 
 

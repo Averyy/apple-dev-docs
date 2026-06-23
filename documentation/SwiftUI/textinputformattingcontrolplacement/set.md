@@ -24,7 +24,7 @@ struct Set
 
 ### Type Properties
 - [static let accessoryBar: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/accessorybar.md)
-  Text formatting controls placed beneath the window toolbar.
+  Text formatting controls placed beneath the window toolbar on macOS.
 - [static let all: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/all.md)
 - [static let contextMenu: TextInputFormattingControlPlacement.Set](textinputformattingcontrolplacement/set/contextmenu.md)
   Text formatting controls placed in the context menu, and the edit menu on iOS.

@@ -33,7 +33,6 @@ protocol AppSchemaEnum : AppSchema.Kind
   App enum schema conformance for types you use for camera functionality.
 - [static var clock: some AppSchema.ClockEnum](appschemaenum/clock.md)
   App enum schema conformance for types you use for clock functionality.
-- [static var imageGeneration: some AppSchema.ImageGenerationEnum](appschemaenum/imagegeneration.md)
 - [static var mail: some AppSchema.MailEnum](appschemaenum/mail.md)
   App enum schema conformance for types you use for mail functionality.
 - [static var maps: some AppSchema.MapsEnum](appschemaenum/maps.md)

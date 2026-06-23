@@ -51,6 +51,7 @@ class SCScreenshotOutput
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
   An object that contains screenshot properties such as output width, height, and image quality specifications.
+- [class SCVideoEffectOutput](scvideoeffectoutput.md)
 
 
 ---

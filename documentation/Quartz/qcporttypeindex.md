@@ -14,6 +14,10 @@ The port type for an index value.
 let QCPortTypeIndex: String
 ```
 
+#### Discussion
+
+The associated value can be an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object or any object that responds to the `-intValue`, `-floatValue`, or `-doubleValue` methods.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

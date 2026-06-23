@@ -44,6 +44,14 @@ For example, you might use these methods to restrict navigation from specific li
   A type that specifies the behaviors to use when loading and rendering page content.
 - [WebPage.FrameInfo](webpage/frameinfo.md)
   A type that contains information about a frame on a webpage.
+- [WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/contentmode.md)
+  Options to indicate how to render web view content.
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/upgradetohttpspolicy.md)
+  Preference for loading a webpage with HTTPS, and how failures should be handled.
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+  Security restriction modes for WebView content.
+- [WebPage.FormInfo](webpage/forminfo.md)
+  A type that contains information about a form submission from a webpage.
 
 
 ---

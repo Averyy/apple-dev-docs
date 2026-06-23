@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef uint32_t IOVersion;
+typedef UInt32 IOVersion;
 ```
 
 ## See Also

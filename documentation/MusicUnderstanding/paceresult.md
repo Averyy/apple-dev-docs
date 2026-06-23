@@ -1,6 +1,6 @@
 # PaceResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A pace analysis results for the song.
@@ -29,8 +29,6 @@ The results indicate the energy and momentum of the music over time. Parts of a 
 ### Getting the range
 - [let ranges: [MusicUnderstandingSession.RangedValue<Double>]](paceresult/ranges.md)
   The pace for a range of a song.
-### Instance Properties
-- [var debugDescription: String](paceresult/debugdescription.md)
 
 ## Relationships
 

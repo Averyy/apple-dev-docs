@@ -10,9 +10,7 @@ Identifies intent schemas in the calendar domain.
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,7 +23,7 @@ protocol CalendarIntent : AppSchema.Kind
 ### Instance Properties
 - [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
   An intent schema that creates a calendar event.
-- [var deleteEvents: some AppSchemaIntent](appschema/calendarintent/deleteevents.md)
+- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
   An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
@@ -41,8 +39,6 @@ protocol CalendarIntent : AppSchema.Kind
 
 - [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
   An intent schema that creates a calendar event.
-- [var deleteEvents: some AppSchemaIntent](appschema/calendarintent/deleteevents.md)
-  An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 

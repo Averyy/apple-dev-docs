@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The subtitle of the view. Default is `nil`. If `nil`, no subtitle will be displayed.
+The subtitle of the launch view. Default is `nil`. If `nil`, no subtitle will be displayed.
 
 **Availability**:
 - iOS 27.0+ (Beta)

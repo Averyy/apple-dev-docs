@@ -23,7 +23,7 @@ Dynamically provide app entity identifiers for a custom view where your app mana
 
 If your custom view shows content you can describe with a single app entity, use the `appEntityIdentifier` property instead to associate the app entity with your custom view.
 
-For more information, refer to doc:Making-onscreen-content-available-to-siri-and-apple-intelligence and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](https://developer.apple.com/documentation/AppIntents).
 
 
 ---

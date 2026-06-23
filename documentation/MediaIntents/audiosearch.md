@@ -28,7 +28,7 @@ struct AudioSearch
 
 People use Apple Intelligence and Siri to find and play audio. By integrating your app’s audio catalog with Apple Intelligence and Siri using the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework, the system forwards search and playback requests to your app, and your app returns audio search results and allows the system to play your app’s songs, podcasts, audiobooks, and so on.
 
-The `AudioSearch` structure captures a person’s audio search and playback request — music, podcasts, audiobooks, or other audio content — along with any Spotlight results the system finds.
+The `AudioSearch` structure captures a person’s audio search and playback request — music, podcasts, audiobooks, or other audio content.
 
 Use `AudioSearch` in your [`IntentValueQuery`](https://developer.apple.com/documentation/AppIntents/IntentValueQuery) implementation to find matching audio content in your app’s media catalog.
 
@@ -41,13 +41,12 @@ For more information about allowing people to find audio content in your app wit
   The search criteria for the audio request.
 - [AudioSearch.Criteria](audiosearch/criteria-swift.enum.md)
   The metadata and classification of a person’s audio search that the system provides.
-### Accessing Spotlight search results
-- [var spotlightSearchResults: [AudioSearch.SpotlightResult]](audiosearch/spotlightsearchresults.md)
-- [AudioSearch.SpotlightResult](audiosearch/spotlightresult.md)
 ### Providing default implementations
-- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [AudioSearch.SpotlightResult])](audiosearch/init(criteria:spotlightsearchresults:).md)
-  Creates an audio search with a person’s search criteria and Spotlight results.
+- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])](audiosearch/init(criteria:spotlightsearchresults:).md)
 - [static let defaultResolverSpecification: EmptyResolverSpecification<AudioSearch>](audiosearch/defaultresolverspecification.md)
+### Initializers
+- [init(criteria: AudioSearch.Criteria)](audiosearch/init(criteria:).md)
+  Creates an audio search with a person’s search criteria.
 ### Type Aliases
 - [AudioSearch.Specification](audiosearch/specification.md)
 - [AudioSearch.UnwrappedType](audiosearch/unwrappedtype.md)

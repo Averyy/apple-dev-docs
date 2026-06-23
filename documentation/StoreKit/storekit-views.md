@@ -150,7 +150,6 @@ For more information on configuring your In-App Purchase metadata, see [`Manage 
   Selects a subscription offer to apply to a purchase that a customer makes from a subscription store view, a store view, or a product view.
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View
 ](../SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:).md)
-  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 ### Configuring purchase options and product descriptions
 - [func inAppPurchaseOptions(((Product) async -> Set<Product.PurchaseOption>)?) -> some View
 ](../SwiftUI/View/inAppPurchaseOptions(_:).md)

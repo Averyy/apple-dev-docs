@@ -37,7 +37,6 @@ enum KeyboardType
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 
 

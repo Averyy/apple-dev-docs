@@ -9,7 +9,6 @@ Initializes a required resource for a Continuous Background Task by raw value.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta Release Notes
+# iOS & iPadOS 27 Beta 2 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -20,13 +20,27 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2.  (178280323)
 
+##### Airport Utility
+
+###### Deprecations
+
+- AirPort Utility will no longer be available for new downloads from the App Store. If you previously downloaded the app, you can still re-download it. When using AirPort Utility on iOS 27 and later, functionality is not guaranteed.  (158364073)
+
 ##### App Intents
+
+###### New Features
+
+- You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas.  (173431080)
 
 ###### Known Issues
 
 - Non-SF Symbol custom images for app entities might not always appear in Siri.  (175031314)
 - Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195) **Workaround:** Provide a default value explicitly using `@Parameter`, such as an empty set.
 - Entities you register using `RelevantEntities` for the workout audio context might not appear as suggestions in Fitness media picker.  (177996973)
+
+###### Deprecations
+
+- The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`.  (176751155)
 
 ##### Apple Intelligence Report
 
@@ -67,6 +81,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Under certain configurations, `CPMapPanel` might not dismiss when you tap the close button.  (177592347)
 - The symbol button handler of `CPMapPanelButtonConfiguration` might not be called.  (177595560)
 - Your vehicle’s next and previous track steering wheel buttons might not function correctly in CarPlay.   (177832695) **Workaround:** Use the on-screen playback controls in CarPlay to advance or go back to the previous track.
+- In CarPlay, playback of Stereo music content may be silent after playback of Spatial music content.  (178189709) **Workaround:** A reconnect of the CarPlay will play stereo again, until a Spatial Audio content plays.  If possible, avoid mixed playlisting Spatial and stereo media contents for this release.  This prevents the issue from occurring.
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions.   (178952858) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 
 ##### Clock
@@ -83,22 +98,31 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Core Ai
 
+###### New Features
+
+- iOS 27 includes Neural Engine improvements for Apple Intelligence capable devices. The system now restricts background access to the Neural Engine, similar to GPU usage restrictions. Large model loading (over 1 GB) performance is improved on the Neural Engine. Neural Engine memory usage is now attributed to your app process instead of the system, and appears in the Allocations instrument.  (174796039)
+
+###### Resolved Issues
+
+- Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751)
+
 ###### Known Issues
 
 - `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (169746264)
+- `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (174769929)
 - When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU.  (175789258)
 - Certain weight and activation configurations may not run on the Neural Engine, such as FP8-quantized weights and activations, palettized weights with quantized (non-Float16) values, and sparse weights. Affected models may run on the CPU or GPU instead.  (176210080)
 - When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213) **Workaround:** If you know what the output shape will be, pre-allocate the output and provide it through the `outputViews` arguments on `InferenceFunction.run`.
 - Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
 - Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
-- When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751) **Workaround:** In Xcode, disable Metal API Validation. From the command line, ensure the `MTL_DEBUG_LAYER` environment variable is not set.
 - Models with custom Metal kernels will fail to load.  (178056451)
+- You cannot access the Neural Engine when your app is in the background.  (179282606) **Workaround:** Restrict your models to CPU only or prefer GPU with the appropriate [`Background GPU Access entitlement.`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu)
 
 ##### Core Bluetooth
 
-###### Known Issues
+###### Resolved Issues
 
-- The Channel Sounding API in Core Bluetooth is not returning ranging results.  (178333845)
+- Fixed: The Channel Sounding API in Core Bluetooth is not returning ranging results.  (178333845)
 
 ##### Developer Settings
 
@@ -152,13 +176,16 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Foundation Models
 
+###### Resolved Issues
+
+- Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
+- Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
+- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+
 ###### Known Issues
 
 - Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
-- `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
-- Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
-- `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488) **Workaround:** Always specify instructions in a `Profile`.
 - `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
 - Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978) **Workaround:** Import the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) package, which contains a built-in workaround that will compile your code.
 
@@ -178,6 +205,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### New Features
 
+- HealthKit now supports heart rate and cycling power zones.  (135746152)
 - HealthKit adds support for tracking menopausal state and bleeding after menopause; two new sample types are available. HKCategoryTypeIdentifierMenopausalState records a person’s current menopausal state. Values defined by HKCategoryValueMenopausalState are menopause, perimenopause, and none. HKCategoryTypeIdentifierBleedingAfterMenopause records bleeding episodes occurring after menopause. Values use the existing vaginal bleeding flow levels: unspecified, light, medium, and heavy. Both types are read/write, classified under Reproductive Health, and require the standard HealthKit category type authorization.  (178532053)
 
 ##### Hearing Test
@@ -220,6 +248,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - After dismissing Lock Screen, the Lock Screen grabber might appear in the incorrect location or orientation.  (178174745)
 - Starting a Vision Pro Guest Mode session might result in two Live Activities on screen at the same time.  (178200601) **Workaround:** Dismiss the Lock Screen and re-lock the device.
+- Siri and Search may still be available when locked even if they are disabled under “Allow Access When Locked” in Settings.  (178283603)
+
+##### Mail
+
+###### Known Issues
+
+- Emails might display content that doesn’t match their subject line.  (169101671)
 
 ##### Mail Banners
 
@@ -274,9 +309,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Nearby Interaction
 
-###### Known Issues
+###### Resolved Issues
 
-- The Channel Sounding API in Nearby Interaction does not return ranging results.  (178073051)
+- Fixed: The Channel Sounding API in Nearby Interaction does not return ranging results.  (178073051)
 
 ##### Network Security
 
@@ -338,6 +373,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - The disclaimer “Siri found in Mail or Photos. Not shared with card issuer” does not appear below displayed transaction related receipts in Wallet for Apple Pay, Apple Card, and Apple Cash.  (178202101)
 
+##### Reminders
+
+###### Known Issues
+
+- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field.  (180040003) **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
+
 ##### Safari
 
 ###### Known Issues
@@ -345,6 +386,18 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - The Safari tab bar might enter a state where it does not appear on screen.  (177812052) **Workaround:** Quit and relaunch Safari.
 - Safari Intelligence features might appear as available before assets are fully downloaded. If you use the feature before assets are available, it won’t function correctly.  (178099724) **Workaround:** Wait for assets to finish downloading. You can check download progress in Settings > Apple Intelligence & Siri.
 - On iPad, the tip prompting users to automatically organize their tabs might not appear in Safari.  (178280800) **Workaround:** In the tab overview, tap the “…” button and choose Organize Tabs > Automatically Create Topics.
+
+##### Safari Extensions
+
+###### Known Issues
+
+- Turning on or off Safari extensions created via the “Describe an Extension” feature might not take  effect until Safari is relaunched.  (179293939) **Workaround:** Quit and relaunch Safari.
+
+##### Screen Time
+
+###### Known Issues
+
+- Screen Time restrictions might not apply to child accounts despite being configured.  (175437403)
 
 ##### Sensorkit
 
@@ -408,12 +461,19 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - In CarPlay, when Apple Intelligence enabled, Siri requests for directions in Maps might fail to start navigation.  (178459481) **Workaround:** Tap the Go button to start navigation.
 - Siri might not respond to your voice correctly.  (178489724) **Workaround:** Force quit the Siri app and relaunch it.
 - In the Siri app, conversations might be deleted a few minutes after receiving streaming responses.  (178560562)
+- When you say “Save Parking Location,” the parking location information displays with reduced detail compared to Beta 1.  (179195692)
 
 ##### Siri Spotlight and Mail App Search
 
 ###### Known Issues
 
 - Mail older than 6 months might not be searchable by body content, but is still searchable by sender and subject.  (177942110)
+
+##### Sleep Focus
+
+###### Known Issues
+
+- Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device.  (179960164) **Workaround:** Toggle Sleep Focus manually in Control Center after unlocking the device.
 
 ##### Standby
 
@@ -438,10 +498,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs.  (154390284) (FB18403150)
 - Fixed: Subscription upgrades performed with the Xcode Transaction Manager are not reported in `Transaction.updates`.  (160698598) (FB20269723)
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
+- Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
+- Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 
 ###### Known Issues
 
-- When using StoreKit Testing in Xcode, `pricingTerms.commitmentInfo.price` returns an incorrect price for monthly subscriptions billed as a 12-month commitment.  (177942756)
+- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Suggestions in Messages
 
@@ -482,9 +544,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Swiftdata
 
-###### Known Issues
+###### Resolved Issues
 
-- You might experience a deadlock for `@Query` when saving a `ModelContext` on a background actor while scheduling new async tasks for a `ModelActor`.  (178113288)
+- Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor.  (178113288)
 
 ##### Swiftui
 
@@ -541,8 +603,18 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - You can use `.toolbarVisibility(hideStatusBar ? .hidden : .automatic, for: .statusBar)` to conditionally hide the status bar.  (165329279)
 - The menu bar on iPadOS 27.0 and macOS 27.0, as well as context menus on macOS 27.0, present a reduced set of menu item images. By default, SwiftUI now hides all menu item symbol images in most contexts, while non-symbol images remain visible. Review the updated Human Interface Guidelines to determine which menu items in your app should still display images. Use the `labelStyle(_:)` view modifier with the `.titleAndIcon` style to indicate that a menu item `Label`’s icon should always be shown — such as when the menu item represents an object or a concept rather than an action. SwiftUI continues to automatically provide default visible menu item images for certain common system-wide menu items, such as Settings, Share, and Print.  (170480710)
 - The `TabsPickerStyle` style is now available for pickers that represent tab-based navigation and content selection. This style is similar to the `.segmented` style, but VoiceOver reads it as “tabs,” and on macOS it has a distinct visual appearance that distinguishes it from pickers that represent value selection — for example, a text alignment picker in an inspector.  (173211711)
+- You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - In apps built with the iOS 27.0 SDK, you can display non-interactive content on external display scenes using the `.sceneAccessory` view modifier with an `ExternalNonInteractiveAccessory` type.  (175548901)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
+- The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
+- You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
+- You can now use the `Document` protocol for representing documents in `DocumentGroup`. This protocol combines `ReadableDocument` and `WritableDocument` for common read-and-write cases. Use `Document` instead of `ReferenceFileDocument` and `FileDocument`, which are now deprecated.  (177458781)
+- `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
+- You can use `toolbarMinimizationBehavior` to control bar minimization behavior. This modifier replaces `toolbarMinimizeBehavior`.  (177954148)
+- In macOS apps built with the macOS 27 SDK, the action retrieved from the `\.newDocument` environment value accepts an in-memory `ReadableDocument` produced by an autoclosure. SwiftUI presents a new document window populated with the supplied instance, instead of invoking the document group’s default factory. Use this to implement “New from Template” commands and similar flows.  (180300890)
+- A new `fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)` modifier exports a collection of values that conform to `WritableDocument` whose `Writer.Destination` is `URL`. The system presents a single export dialog, writes each document to the chosen destination, and reports the resulting URLs through `onCompletion`.  (180301165)
+- The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter.  (180301399)
+- `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`.  (180301692)
 
 ###### Resolved Issues
 
@@ -558,6 +630,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - Progress reported in `DocumentReader.read(from:progress:)` and `DocumentWriter.write(snapshot:to:previous:progress:)` might not be presented.  (158441261)
+
+###### Deprecations
+
+- The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing.  (178776840)
 
 ##### System
 
@@ -575,6 +651,14 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - When Siri is off and your iPad is extended to an external display where Spotlight is on screen, disconnecting the display might cause the system to crash.   (176281601) **Workaround:** Dismiss Spotlight before disconnecting the external display, or turn on Siri.
 - After using iPhone Mirroring or other non-main display experiences, a black pill may appear on the CarPlay screen.  (177893758) **Workaround:** Reboot.
+
+##### System Stability
+
+###### Known Issues
+
+- Devices might freeze or panic when idle. ```None
+(178343305)
+```
 
 ##### Textkit
 
@@ -660,6 +744,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - Writing Tools becomes unresponsive when you interact with the Plus button while Writing Tools is in use.  (177097101) **Workaround:** Force quit Messages to resolve the issue.
+
+##### Xcode
+
+###### Known Issues
+
+- The Simulator might display a black wallpaper and blank app icons temporarily during first boot.  (179746601)
 
 
 ---

@@ -1,6 +1,6 @@
 # instrumentActivity
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated instrument activity results, identifying which instruments are present and when they’re active.

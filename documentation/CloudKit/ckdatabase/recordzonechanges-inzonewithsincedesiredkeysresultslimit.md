@@ -31,7 +31,7 @@ A tuple with the following named elements:
 
 #### Discussion
 
-This method fetches record changes in the specfied record zone, such as those that occur during record creation, modification, and deletion. It throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual record errors.
+This method fetches record changes in the specified record zone, such as those that occur during record creation, modification, and deletion. It throws an error if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account; otherwise, the returned tuple includes any individual record errors.
 
 Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the record zone’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
 

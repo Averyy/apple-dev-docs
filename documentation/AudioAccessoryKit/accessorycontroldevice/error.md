@@ -36,7 +36,6 @@ Use error cases to identify the cause of failures when registering devices or up
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

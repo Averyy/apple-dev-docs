@@ -91,8 +91,6 @@ For more information on creating custom materials and writing shader functions, 
   A boolean value that determines whether this material performs the depth test by reading RealityKit’s depth buffer.
 - [var writesDepth: Bool](custommaterial/writesdepth.md)
   A boolean value that determines whether this material writes its depth into RealityKit’s depth buffer.
-### Applying post-lighting shading
-- [CustomMaterial.PostLightingShader](custommaterial/postlightingshader.md)
 ### Classes
 - [CustomMaterial.Program](custommaterial/program-swift.class.md)
   An object that represents the backing shader compilation required for custom materials.

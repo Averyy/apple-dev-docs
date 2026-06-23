@@ -40,6 +40,9 @@ Each instance of [`AVExternalSyncDevice`](avexternalsyncdevice.md) corresponds t
   A unique identifier for an external sync device.
 - [var vendorID: UInt32](avexternalsyncdevice/vendorid.md)
   The USB vendor identifier associated with the external sync device.
+### Instance Properties
+- [var isSignalCompensationDelaySupported: Bool](avexternalsyncdevice/issignalcompensationdelaysupported.md)
+  Whether adjusting the signal compensation delay property is currently supported.
 
 ## Relationships
 

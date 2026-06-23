@@ -53,6 +53,7 @@ To draw multiple copies of the mesh in a single draw call, assign a [`LowLevelIn
   The bounds of this mesh instance, in model space, or `nil` to derive bounds from the mesh part.
 - [var transform: simd_float4x4](lowlevelmeshinstance/transform.md)
   The local-to-world transform applied to this mesh instance.
+- [var triangleFillMode: MTLTriangleFillMode](lowlevelmeshinstance/trianglefillmode.md)
 
 ## See Also
 

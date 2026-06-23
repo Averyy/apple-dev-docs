@@ -63,6 +63,7 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
   A number used as the document’s default tab spacing.
 ### Setting text blocks and lists
 - [var textBlocks: [NSTextBlock]](nsmutableparagraphstyle/textblocks.md)
+  The text blocks that contain the paragraph.
 - [var textLists: [NSTextList]](nsmutableparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
 ### Setting line-break information
@@ -73,6 +74,7 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
 - [var hyphenationFactor: Float](nsmutableparagraphstyle/hyphenationfactor.md)
   The paragraph’s threshold for hyphenation.
 - [var usesDefaultHyphenation: Bool](nsmutableparagraphstyle/usesdefaulthyphenation.md)
+  A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
 - [var tighteningFactorForTruncation: Float](../AppKit/NSMutableParagraphStyle/tighteningFactorForTruncation.md)
   The threshold for using tightening as an alternative to truncation.
 - [var allowsDefaultTighteningForTruncation: Bool](nsmutableparagraphstyle/allowsdefaulttighteningfortruncation.md)

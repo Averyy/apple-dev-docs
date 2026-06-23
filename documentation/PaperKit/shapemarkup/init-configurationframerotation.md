@@ -24,6 +24,11 @@ init(configuration: ShapeConfiguration, frame: CGRect, rotation: CGFloat = 0.0)
 - `frame`: The frame of the shape.
 - `rotation`: The rotation in radians of the shape. Defaults to `0.0` (no rotation).
 
+## See Also
+
+- [init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat, fillColor: CGColor?, strokeColor: CGColor?, lineWidth: CGFloat, opacity: CGFloat, startLineMarker: ShapeMarkup.LineMarker, endLineMarker: ShapeMarkup.LineMarker, attributedText: AttributedString, allowedInteractions: MarkupInteractions, autoresizing: MarkupAutoresizing, id: MarkupID<ShapeMarkup>)](shapemarkup/init(shape:frame:rotation:fillcolor:strokecolor:linewidth:opacity:startlinemarker:endlinemarker:attributedtext:allowedinteractions:autoresizing:id:).md)
+  Initializes and returns a new shape markup from the specified parameters.
+
 
 ---
 

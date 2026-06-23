@@ -25,6 +25,7 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
 ### Creating a paragraph style
 - [class var `default`: NSParagraphStyle](nsparagraphstyle/default.md)
   The default paragraph style.
+- [init?(coder: NSCoder)](nsparagraphstyle/init(coder:).md)
 ### Accessing style information
 - [var alignment: NSTextAlignment](nsparagraphstyle/alignment.md)
   The text alignment of the paragraph.
@@ -87,8 +88,6 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   The base writing direction for the paragraph.
 - [enum NSWritingDirection](nswritingdirection.md)
   Constants that specify the writing direction.
-### Initializers
-- [init?(coder: NSCoder)](nsparagraphstyle/init(coder:).md)
 
 ## Relationships
 
@@ -116,12 +115,6 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   A tab in a paragraph.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
-- [class NSTextTable](nstexttable.md)
-  An object that represents a text table as a whole.
-- [class NSTextTableBlock](nstexttableblock.md)
-  A text block that appears as a cell in a text table.
-- [class NSTextBlock](nstextblock.md)
-  A block of text laid out in a subregion of the text container.
 
 
 ---

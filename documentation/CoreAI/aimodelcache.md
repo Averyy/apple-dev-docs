@@ -32,7 +32,7 @@ The cache holds the optimized, device-specific artifacts that [`AIModel`](aimode
   Creates a cache that shares specialized assets across an app group.
 ### Instance Methods
 - [func deleteAll() throws](aimodelcache/deleteall.md)
-  Deletes all entries in the cache for the current build version.
+  Deletes all entries in the cache.
 - [func deleteEntries(for: URL) throws](aimodelcache/deleteentries(for:).md)
   Deletes all cache entries for a specific model, regardless of specialization options.
 - [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)

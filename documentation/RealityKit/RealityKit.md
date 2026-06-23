@@ -149,10 +149,33 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [Low-level rendering](low-level-rendering.md)
   Drive the renderer directly to build custom drawing pipelines, meshes, buffers, and textures when higher-level rendering does not give you the control you need.
 ### Classes
+- [class ComputeGraphResource](computegraphresource.md)
+  A loaded compute graph resource containing the graph definition, compiled pipelines, and all associated rendering assets.
+- [class ComputeGraphSharedUniforms](computegraphshareduniforms.md)
+  A transient component that stores typed uniform values shared across all ComputeGraph simulations.
 - [class GaussianSplatResource](gaussiansplatresource.md)
   A component that renders 3D Gaussian splat data.
+- [class MaterialXTarget](materialxtarget.md)
+- [class ShaderGraph](shadergraph.md)
 ### Structures
+- [struct ComputeGraphComponent](computegraphcomponent.md)
+  A component that drives a compute graph–based particle simulation on an entity.
+- [struct ComputeGraphOutputComponent](computegraphoutputcomponent.md)
+  A transient component that identifies the compute graph output associated with an entity.
+- [struct ComputeGraphRuntimeComponent](computegraphruntimecomponent.md)
+  Manages the live GPU simulation for an entity’s `ComputeGraphComponent_v1`.
+- [struct ComputeGraphViewpointComponent](computegraphviewpointcomponent.md)
+  A transient component that provides camera viewpoint information to the particle simulation.
 - [struct GaussianSplatComponent](gaussiansplatcomponent.md)
+- [struct MaterialDecodingConfiguration](materialdecodingconfiguration.md)
+- [struct MaterialXVersion](materialxversion.md)
+### Enumerations
+- [enum GaussianSplatEvents](gaussiansplatevents.md)
+  Events associated with Gaussian Splat component
+- [enum MaterialXAvailability](materialxavailability.md)
+- [enum SGBlending](sgblending.md)
+- [enum SGDataType](sgdatatype.md)
+- [enum SGLightingModel](sglightingmodel.md)
 
 
 ---

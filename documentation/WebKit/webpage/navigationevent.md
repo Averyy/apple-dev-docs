@@ -42,6 +42,10 @@ enum NavigationEvent
 
 - [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
   An observable representation of a webpage’s previously loaded resources.
+- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+  A representation of a resource that a webpage previously visited.
+- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+  An opaque type representing the identifier for an item.
 
 
 ---

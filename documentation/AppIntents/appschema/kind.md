@@ -21,8 +21,6 @@ protocol Kind
 ## Relationships
 
 ### Inherited By
-- [AppSchema.AppStoreEntity](appschema/appstoreentity.md)
-- [AppSchema.AppStoreIntent](appschema/appstoreintent.md)
 - [AppSchema.AssistantIntent](appschema/assistantintent.md)
 - [AppSchema.AudioEntity](appschema/audioentity.md)
 - [AppSchema.AudioEnum](appschema/audioenum.md)
@@ -43,9 +41,6 @@ protocol Kind
 - [AppSchema.ClockIntent](appschema/clockintent.md)
 - [AppSchema.FilesEntity](appschema/filesentity.md)
 - [AppSchema.FilesIntent](appschema/filesintent.md)
-- [AppSchema.ImageGenerationEntity](appschema/imagegenerationentity.md)
-- [AppSchema.ImageGenerationEnum](appschema/imagegenerationenum.md)
-- [AppSchema.ImageGenerationIntent](appschema/imagegenerationintent.md)
 - [AppSchema.JournalEntity](appschema/journalentity.md)
 - [AppSchema.JournalIntent](appschema/journalintent.md)
 - [AppSchema.MailEntity](appschema/mailentity.md)

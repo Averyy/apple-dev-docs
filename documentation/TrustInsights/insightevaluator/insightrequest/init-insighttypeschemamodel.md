@@ -1,6 +1,6 @@
 # init(insightType:schema:model:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: init
 
 Initializes a new insight request with the provided insight type, schema, and model versions.
@@ -9,7 +9,6 @@ Initializes a new insight request with the provided insight type, schema, and mo
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

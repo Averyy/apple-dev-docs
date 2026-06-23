@@ -1,6 +1,6 @@
 # MusicUnderstandingSession.SessionResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 The aggregated results for all analysis types that a music understanding session performs.

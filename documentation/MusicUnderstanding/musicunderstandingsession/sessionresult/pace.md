@@ -1,6 +1,6 @@
 # pace
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated pace results, describing the energy and momentum variations over time.

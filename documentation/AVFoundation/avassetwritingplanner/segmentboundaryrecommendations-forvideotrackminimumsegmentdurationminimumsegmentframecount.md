@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Returns segment boundary recommendations for a given source video asset track.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -23,17 +25,15 @@ Array of AVPlannedVideoSegmentConfigurations.
 
 #### Discussion
 
-Returns segment boundary recommendations for a given source video asset track.
-
 This is a convenience method that can help clients to pick optimal segmentation boundaries for a given source video AVAssetTrack based on the structure of the track and the minimumSegmentDuration and minimumSegmentFrameCount values provided.
 
-The client needs to ensure that the minimumSegmentDuration is greater than or equal to the segment boundary guidelines for the codec type.  The client should also ensure that minimumSegmentFrameCount also exceeds the segment boundary guidelines.
+The client needs to ensure that the minimumSegmentDuration is greater than or equal to the segment boundary guidelines for the codec type. The client should also ensure that minimumSegmentFrameCount also exceeds the segment boundary guidelines.
 
-The segments returned will satisfy both the minimumSegmentDuration and minimumSegmentFrameCount requirements.  The only exception is the very last segment, which may be shorter.
+The segments returned will satisfy both the minimumSegmentDuration and minimumSegmentFrameCount requirements. The only exception is the very last segment, which may be shorter.
 
 The returned array will ensure that segment boundaries occur on sample boundaries.
 
-Clients can use these results to fill in the AVPlannedVideoSegmentConfiguration for this asset track, if the output maintains the source timing.  If the output timing differs from the source, then the returned AVPlannedVideoSegmentConfiguration array’s results need to be modified accordingly by the client.
+Clients can use these results to fill in the AVPlannedVideoSegmentConfiguration for this asset track, if the output maintains the source timing. If the output timing differs from the source, then the returned AVPlannedVideoSegmentConfiguration array’s results need to be modified accordingly by the client.
 
 This method throws NSInvalidArgumentException if minimumSegmentDuration is not numeric or is less than or equal to zero, or if minimumSegmentFrameCount is less than or equal to 0.
 

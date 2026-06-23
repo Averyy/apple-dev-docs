@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight.SchemaVersion
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 An enumeration of insight values present in the available schema versions.
@@ -9,7 +9,6 @@ An enumeration of insight values present in the available schema versions.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 
@@ -27,7 +26,6 @@ An enumeration of insight values present in the available schema versions.
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

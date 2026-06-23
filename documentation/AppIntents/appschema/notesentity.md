@@ -10,9 +10,7 @@ Identifies entity schemas in the notes domain.
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -29,8 +27,6 @@ protocol NotesEntity : AppSchema.Kind
   An entity schema for a folder.
 - [var note: some AppSchemaEntity](appschema/notesentity/note.md)
   An entity schema for a note.
-- [var tag: some AppSchemaEntity](appschema/notesentity/tag.md)
-  An entity schema for a tag.
 
 ## Relationships
 
@@ -47,8 +43,6 @@ protocol NotesEntity : AppSchema.Kind
   An entity schema for a folder.
 - [var note: some AppSchemaEntity](appschema/notesentity/note.md)
   An entity schema for a note.
-- [var tag: some AppSchemaEntity](appschema/notesentity/tag.md)
-  An entity schema for a tag.
 
 
 ---

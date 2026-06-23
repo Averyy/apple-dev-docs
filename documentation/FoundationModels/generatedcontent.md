@@ -47,7 +47,6 @@ Generated content may contain a single value, an array, or key-value pairs with 
   Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
-- [static let null: GeneratedContent](generatedcontent/null.md)
 ### Accessing the content
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
   The representation of the generated content.
@@ -70,14 +69,20 @@ Generated content may contain a single value, an array, or key-value pairs with 
   A unique id that is stable for the duration of a generated response.
 - [struct GenerationID](generationid.md)
   A unique identifier that is stable for the duration of a response, but not across responses.
+### Default Implementations
+- [ConvertibleFromGeneratedContent Implementations](generatedcontent/convertiblefromgeneratedcontent-implementations.md)
+- [ConvertibleToGeneratedContent Implementations](generatedcontent/convertibletogeneratedcontent-implementations.md)
+- [CustomDebugStringConvertible Implementations](generatedcontent/customdebugstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [ConvertibleFromGeneratedContent](convertiblefromgeneratedcontent.md)
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Generable](generable.md)
 - [InstructionsRepresentable](instructionsrepresentable.md)
 - [PromptRepresentable](promptrepresentable.md)

@@ -105,6 +105,8 @@ Typical construction of `Duration` values should be created via the static metho
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomLocalizedStringResourceConvertible](../Foundation/CustomLocalizedStringResourceConvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)

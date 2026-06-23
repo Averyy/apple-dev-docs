@@ -157,8 +157,6 @@ Core Graphics supports several kinds of color spaces:
   Handling options for colors that are not located within the destination color space of a graphics context.
 ### Instance Methods
 - [func isHDR() -> Bool](cgcolorspace/ishdr.md)
-### Enumerations
-- [CGColorSpace.CodingKeys](cgcolorspace/codingkeys.md)
 
 ## Relationships
 

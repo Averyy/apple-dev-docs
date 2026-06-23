@@ -16,6 +16,9 @@ Note that documentation describing the leading dimension as the first dimension 
 
 ## Topics
 
+### Fortran interoperability
+- [Using the Fortran 90 wrappers for Accelerate BLAS and LAPACK](usingthefortran90wrappers.md)
+  Call BLAS and LAPACK routines from Fortran 90 source code.
 ### Specifying the threading model
 - [struct BLAS](blas.md)
   An enumeration that acts as a namespace for Swift overlays to BLAS.

@@ -151,6 +151,8 @@ On 32-bit platforms, `UInt` is the same size as `UInt32`, and on 64-bit platform
 - [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)
 - [CustomStringConvertible](customstringconvertible.md)

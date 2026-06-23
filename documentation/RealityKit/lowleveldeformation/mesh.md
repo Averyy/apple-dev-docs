@@ -21,7 +21,7 @@ struct Mesh
 ## Topics
 
 ### Setting vertex data
-- [func setVertices(any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws(LowLevelDeformation.Error)](lowleveldeformation/mesh/setvertices(_:offset:semantic:).md)
+- [func setVertices(any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws](lowleveldeformation/mesh/setvertices(_:offset:semantic:).md)
   Binds a Metal buffer to the vertex attribute with the specified semantic.
 
 ## See Also

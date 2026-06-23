@@ -47,7 +47,7 @@ If `property` isa multi-value list property, this method checks to see if the va
   Returns a copy of the given record.
 - [func ABRecordIsReadOnly(ABRecordRef!) -> Bool](abrecordisreadonly(_:).md)
   Returns whether or not the record is read-only.
-- [func ABRecordRemoveValue(ABRecord!, ABPropertyID, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abrecordremovevalue(_:_:).md)
+- [func ABRecordRemoveValue(ABRecord!, ABPropertyID, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abrecordremovevalue(_:_:_:).md)
   Removes the value of the given property.
 - [func ABRemoveRecord(ABAddressBookRef!, ABRecordRef!) -> Bool](abremoverecord(_:_:).md)
   Removes the specified record from the Address Book database.
@@ -55,4 +55,4 @@ If `property` isa multi-value list property, this method checks to see if the va
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecordsetvalue(_:_:_:_:))*

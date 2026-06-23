@@ -39,7 +39,6 @@ struct Destination
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -47,9 +46,9 @@ struct Destination
 ## See Also
 
 - [var destination: ReorderDifference<ItemID, CollectionID>.Destination](reorderdifference/destination-swift.property.md)
-  The end position of items moved during a reordering operation.
+  The end position of items to move during a reordering operation.
 - [var sources: [ItemID]](reorderdifference/sources.md)
-  The identifiers of items moved during a reordering operation.
+  The identifiers of items to move during a reordering operation.
 
 
 ---

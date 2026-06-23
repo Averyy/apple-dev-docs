@@ -27,6 +27,13 @@ struct ImmersiveEnvironment
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [struct WebViewImmersiveEnvironmentView](webviewimmersiveenvironmentview.md)
+  A SwiftUI view that renders a specific website-provided immersive environment.
+- [var allowsImmersiveEnvironments: Bool](webpage/configuration/allowsimmersiveenvironments.md)
+  Indicates whether website immersive environments are allowed.
+
 
 ---
 

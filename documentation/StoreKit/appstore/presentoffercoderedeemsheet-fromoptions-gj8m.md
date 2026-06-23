@@ -15,6 +15,10 @@ Presents a sheet that enables users to redeem subscription offer codes that you 
 static func presentOfferCodeRedeemSheet(from window: NSWindow, options: Set<RedeemOption> = []) async throws -> VerificationResult<Transaction>
 ```
 
+## Mentions
+
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+
 #### Return Value
 
 A [`VerificationResult`](verificationresult.md) containing the [`Transaction`](transaction.md) that the redemption produces.

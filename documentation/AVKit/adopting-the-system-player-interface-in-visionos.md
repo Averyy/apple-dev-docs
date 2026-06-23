@@ -163,7 +163,9 @@ private func addTimeObserver() {
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVViewport](avviewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 - [class AVPortalViewport](avportalviewport.md)
+  A viewport configuration used when displaying content in portals.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

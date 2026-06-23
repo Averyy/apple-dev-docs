@@ -106,6 +106,9 @@ Most of these properties are optional. A File Provider extension doesn’t need 
   A value that indicates that the item is not ranked.
 - [var typeAndCreator: NSFileProviderTypeAndCreator](nsfileprovideritemprotocol/typeandcreator.md)
   The file type and creator codes for the item.
+### Instance Properties
+- [var namespacePolicy: NSFileProviderNamespacePolicy](nsfileprovideritemprotocol/namespacepolicy.md)
+  Declarative API to define the item namespace policy according to the available NSFileProviderNamespacePolicy
 
 ## Relationships
 

@@ -1,9 +1,7 @@
-# ComputeNodeGraph.ValueType.structure(typeName:layout:)
+# structure(typeName:layout:)
 
 **Framework**: ComputeGraph  
-**Kind**: case
-
-Value is a structure with the given layout
+**Kind**: method
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,7 +15,7 @@ Value is a structure with the given layout
 ## Declaration
 
 ```swift
-case structure(typeName: String, layout: ComputeNodeGraph.StructureLayout)
+static func structure(typeName: String, layout: ComputeNodeGraph.StructureLayout) -> ComputeNodeGraph.ValueType
 ```
 
 

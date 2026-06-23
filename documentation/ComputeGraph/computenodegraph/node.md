@@ -30,7 +30,6 @@ struct Node
   Optional user-provided label for the node
 - [var metadata: ComputeNodeGraph.Metadata?](computenodegraph/node/metadata.md)
   Node metadata – data which is not needed during compilation but might be useful at edit time.
-- [var sequence: [ComputeNodeGraph.NodeID]?](computenodegraph/node/sequence.md)
 - [var uniforms: [Data?]](computenodegraph/node/uniforms.md)
   Uniform values for the node.
 ### Instance Methods

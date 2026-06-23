@@ -21,6 +21,13 @@ A Boolean value that determines whether the web view allows immersive environmen
 
 Set this property to YES to enable support for website-provided immersive environments. If NO, requests to present immersive environments are ignored. If YES, requests are routed to your `WKImmersiveEnvironmentDelegate`. The default value is NO.
 
+## See Also
+
+- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
+- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+
 
 ---
 

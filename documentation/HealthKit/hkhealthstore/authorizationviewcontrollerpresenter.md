@@ -43,6 +43,10 @@ By default, the system infers the correct view controller to show HealthKit’s 
   Asynchronously requests permission to read a data type that requires per-object authorization (such as vision prescriptions).
 - [func handleAuthorizationForExtension(completion: (Bool, (any Error)?) -> Void)](hkhealthstore/handleauthorizationforextension(completion:).md)
   Requests permission to save and read the data types specified by an extension.
+- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+  Returns the earliest date that the framework permits your app to save or read samples.
 
 
 ---

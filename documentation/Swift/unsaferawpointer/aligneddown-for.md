@@ -17,7 +17,7 @@ Obtain the preceding pointer properly aligned to store a value of type `T`.
 ## Declaration
 
 ```swift
-func alignedDown<T>(for type: T.Type) -> UnsafeRawPointer where T : ~Copyable
+func alignedDown<T>(for type: T.Type) -> UnsafeRawPointer where T : ~Copyable, T : ~Escapable
 ```
 
 #### Return Value

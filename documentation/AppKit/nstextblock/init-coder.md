@@ -12,6 +12,11 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+- [init()](nstextblock/init.md)
+  Initializes and returns an empty text block object.
+
 
 ---
 

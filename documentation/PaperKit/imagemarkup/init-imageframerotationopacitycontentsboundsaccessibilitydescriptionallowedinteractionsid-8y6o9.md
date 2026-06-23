@@ -32,6 +32,13 @@ Image content is shown scaled to fill.
 - `allowedInteractions`: The flags controlling the interactions users can perform. Defaults to `.all`.
 - `id`: The identity of the image. Defaults to a unique id.
 
+## See Also
+
+- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:orientation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:).md)
+  Initializes and returns a new image markup from the specified parameters.
+- [init?(image: NSImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-1ggjv.md)
+  Initializes and returns a new image markup from the specified parameters.
+
 
 ---
 

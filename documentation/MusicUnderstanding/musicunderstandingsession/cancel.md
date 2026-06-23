@@ -1,6 +1,6 @@
 # cancel()
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: method
 
 Cancels any ongoing analysis.

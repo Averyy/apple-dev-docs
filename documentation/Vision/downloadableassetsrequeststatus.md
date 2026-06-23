@@ -20,7 +20,6 @@ enum DownloadableAssetsRequestStatus
 ## Topics
 
 ### Enumeration Cases
-- [DownloadableAssetsRequestStatus.downloading(_:)](downloadableassetsrequeststatus/downloading(_:).md)
 - [DownloadableAssetsRequestStatus.error(_:)](downloadableassetsrequeststatus/error(_:).md)
 - [DownloadableAssetsRequestStatus.notReady](downloadableassetsrequeststatus/notready.md)
 - [DownloadableAssetsRequestStatus.ready](downloadableassetsrequeststatus/ready.md)

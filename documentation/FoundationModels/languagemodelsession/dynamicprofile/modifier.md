@@ -21,7 +21,7 @@ func modifier<Modifier>(_ modifier: Modifier) -> some LanguageModelSession.Dynam
 
 ## See Also
 
-- [func model(some LanguageModel) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/model(_:).md)
+- [func model(_:)](languagemodelsession/dynamicprofile/model(_:).md)
   Sets the model.
 - [func temperature(Double?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/temperature(_:).md)
   Sets the model temperature.

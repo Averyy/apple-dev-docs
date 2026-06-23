@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let textureRemovals: [TextureID]
+let textureRemovals: [USDPlayer.TextureID]
 ```
 
 

@@ -59,10 +59,10 @@ When you build in Xcode 27 and later for any version of SwiftUI, the system cons
 - [static buildBlock(_:)](viewbuilder/buildblock(_:).md)
   Passes a single piece of content written as a child view through unmodified.
 ### Conditionally building content
-- [static buildEither(first:)](viewbuilder/buildeither(first:).md)
-  Builds a partial result from a condition that’s true.
-- [static buildEither(second:)](viewbuilder/buildeither(second:).md)
-  Builds a partial result from a condition that’s false.
+- [static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(first:).md)
+  Produces content for a conditional statement in a multi-statement closure when the condition is true.
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(second:).md)
+  Produces content for a conditional statement in a multi-statement closure when the condition is false.
 - [static buildIf(_:)](viewbuilder/buildif(_:).md)
   Produces optional content for conditional statements in multi-statement closures that’s only included when the condition evaluates to true.
 - [static buildLimitedAvailability(_:)](viewbuilder/buildlimitedavailability(_:).md)

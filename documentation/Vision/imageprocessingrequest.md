@@ -75,7 +75,6 @@ protocol ImageProcessingRequest : VisionRequest
 - [GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
 - [GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
-- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 - [RecognizeAnimalsRequest](recognizeanimalsrequest.md)
 - [RecognizeDocumentsRequest](recognizedocumentsrequest.md)
 - [RecognizeTextRequest](recognizetextrequest.md)

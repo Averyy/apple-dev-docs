@@ -40,17 +40,8 @@ The core workflow involves creating a [`FoveatedStreamingSession`](foveatedstrea
 ](../SwiftUI/View/foveatedStreamingPauseSheet(session:).md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
 ### Streaming provider extensions
-- [func streamingProviderScene<Provider>(providerType: Provider.Type) -> some AppExtensionScene](streamingproviderscene(providertype:).md)
-  Creates a complete app extension scene for a foveated streaming provider extension.
-- [protocol FoveatedStreamingProvider](foveatedstreamingprovider.md)
+- [struct FoveatedStreamingProvider](foveatedstreamingprovider.md)
   Protocol that streaming provider system extensions must implement.
-- [protocol FoveatedStreamingProviderContext](foveatedstreamingprovidercontext.md)
-- [enum FoveatedStreamingProviderEndpoint](foveatedstreamingproviderendpoint.md)
-  The streaming endpoint provided to a [`FoveatedStreamingProvider`](foveatedstreamingprovider.md) extension.
-- [struct FocusRegion](focusregion.md)
-  Eye input data that describes where the end user is looking, relative to the device pose.
-- [enum StreamingProviderStatus](streamingproviderstatus.md)
-  An enum describing the state of a [`FoveatedStreamingProvider`](foveatedstreamingprovider.md).
 
 
 ---

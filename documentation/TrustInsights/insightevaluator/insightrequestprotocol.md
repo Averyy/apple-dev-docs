@@ -1,6 +1,6 @@
 # InsightEvaluator.InsightRequestProtocol
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: protocol
 
 A protocol that insight evaluation types conform to.
@@ -9,7 +9,6 @@ A protocol that insight evaluation types conform to.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: MetricKit  
 **Kind**: struct
 
-A diagnostic for a fatal memory exception.
+A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 
 **Availability**:
 - iOS 27.0+ (Beta)

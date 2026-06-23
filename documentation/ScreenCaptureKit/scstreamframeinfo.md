@@ -75,6 +75,7 @@ let scaleFactor = attachments[.scaleFactor] as? Double ?? 0.0
   Constants that represent output types for a stream frame.
 - [enum SCFrameStatus](scframestatus.md)
   Status values for a frame from a stream.
+- [class SCClipBufferingOutput](scclipbufferingoutput.md)
 
 
 ---

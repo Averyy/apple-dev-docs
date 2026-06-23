@@ -9,7 +9,7 @@ The height of the output.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
-- macOS 13.0+
+- macOS 12.3+
 - tvOS 27.0+ (Beta)
 
 ## Declaration

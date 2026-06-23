@@ -1,6 +1,6 @@
 # AnalysisType
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 The analysis type for each session.

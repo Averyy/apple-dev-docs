@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Exchange the elements at the two given indices.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,15 @@
 ```swift
 mutating func swapAt(unchecked i: MutableSpan<Element>.Index, unchecked j: MutableSpan<Element>.Index)
 ```
+
+#### Discussion
+
+This function does not validate `i` or `j`; this is an unsafe operation.
+
+## Parameters
+
+- `i`: A valid index into this span.
+- `j`: A valid index into this span.
 
 
 ---

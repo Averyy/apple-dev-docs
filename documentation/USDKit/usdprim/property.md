@@ -62,7 +62,7 @@ struct Property
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage-4sfi1/object/metadatacollection.md)
+- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
 
 ## See Also
 

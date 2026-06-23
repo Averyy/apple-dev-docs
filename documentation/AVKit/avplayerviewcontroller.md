@@ -116,7 +116,9 @@ Use the [`AVContentProposal`](avcontentproposal.md) class to describe the propos
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 ### Presenting the visionOS trimming UI
 - [var canBeginTrimming: Bool](avplayerviewcontroller/canbegintrimming.md)
   A Boolean value that indicates whether the current media supports trimming.

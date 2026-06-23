@@ -21,7 +21,7 @@ struct TextEditor
 
 #### Overview
 
-A text editor view allows you to display and edit multiline, scrollable text in your app’s user interface. By default, the text editor view styles the text using characteristics inherited from the environment, like [`font(_:)`](view/font(_:).md), [`foregroundColor(_:)`](view/foregroundcolor(_:).md), and [`multilineTextAlignment(_:)`](view/multilinetextalignment(_:).md).
+A text editor view allows you to display and edit multiline, scrollable text in your app’s user interface. By default, the text editor view styles the text using characteristics inherited from the environment, like [`font(_:)`](view/font(_:).md), [`foregroundColor(_:)`](view/foregroundcolor(_:).md), and [`multilineTextAlignment(_:)`](view/multilinetextalignment(_:).md). The text editor view supports attributed text formatting when initialized with [`init(text:selection:)`](texteditor/init(text:selection:)-11r0a.md).
 
 You create a text editor by adding a `TextEditor` instance to the body of your view, and initialize it by passing in a [`Binding`](binding.md) to a string variable in your app:
 
@@ -65,6 +65,14 @@ struct TextEditingView: View {
     }
 }
 ```
+
+##### Text Formatting
+
+When initialized with [`init(text:selection:)`](texteditor/init(text:selection:)-11r0a.md), `TextEditor` supports editing and formatting styled text.
+
+By default, `TextEditor` shows system text formatting controls in the context menu and in the keyboard toolbar on iOS. Use [`textInputFormattingControlVisibility(_:for:)`](view/textinputformattingcontrolvisibility(_:for:).md) to configure visibility of system text formatting controls.
+
+For more information on formatting attributed text with `TextEditor`, see [`init(text:selection:)`](texteditor/init(text:selection:)-11r0a.md).
 
 ## Topics
 

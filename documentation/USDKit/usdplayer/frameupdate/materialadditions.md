@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let materialAdditions: [MaterialID]
+let materialAdditions: [USDPlayer.MaterialID]
 ```
 
 

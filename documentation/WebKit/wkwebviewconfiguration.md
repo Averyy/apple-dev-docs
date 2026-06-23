@@ -131,6 +131,13 @@ You create a [`WKWebViewConfiguration`](wkwebviewconfiguration.md) object in you
   An object that encapsulates the standard behaviors to apply to websites.
 - [class WKWebpagePreferences](wkwebpagepreferences.md)
   An object that specifies the behaviors to use when loading and rendering page content.
+- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+  Constants that indicate how to render web view content.
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
+- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+  An enumeration that lists policies for how a web view that’s not in a window handles tasks.
+- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

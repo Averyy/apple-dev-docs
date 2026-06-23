@@ -24,7 +24,7 @@ final class FoveatedStreamingSession
 
 Use `FoveatedStreamingSession` to establish and manage streaming connections from Apple Vision Pro to local or remote endpoints. The session handles connection life cycle, monitors streaming status, and provides access to bidirectional message channels for custom data exchange.
 
-You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`com.apple.developer.foveated-streaming-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement.
+You create a `FoveatedStreamingSession` object directly, typically on app initialization. After creating your session object, use it to initialize the [`ImmersiveSpace`](https://developer.apple.com/documentation/SwiftUI/ImmersiveSpace) that displays the streamed content. To begin streaming spatial content, call the [`connect(endpoint:)`](foveatedstreamingsession/connect(endpoint:).md) function. The connection will fail if your app doesn’t have the [`Foveated Streaming Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement.
 
 The following example shows how to connect to a stream and present its content in an immersive space:
 
@@ -70,6 +70,8 @@ struct FoveatedStreamingApp: App {
   An optional set of behaviors which assist in automatically presenting the session’s immersive space.
 - [var immersiveSpaceFromRemoteSceneTransform: simd_float4x4](foveatedstreamingsession/immersivespacefromremotescenetransform.md)
   A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
+- [var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4](foveatedstreamingsession/immersivespacefromremotespacetransform.md)
+  A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
 - [var isMicrophoneEnabled: Bool](foveatedstreamingsession/ismicrophoneenabled.md)
   Whether the microphone is currently enabled for this session.
 - [var status: FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.property.md)
@@ -88,7 +90,7 @@ struct FoveatedStreamingApp: App {
 - [func resume() async throws](foveatedstreamingsession/resume.md)
   Resumes a previously paused session.
 ### Type Methods
-- [static func queryStreamingProviders() async -> Set<FoveatedStreamingSession.StreamingProvider>](foveatedstreamingsession/querystreamingproviders.md)
+- [static func queryStreamingProviders() async -> [FoveatedStreamingSession.StreamingProvider]](foveatedstreamingsession/querystreamingproviders.md)
   Returns a list of currently-available streaming providers.
 ### Enumerations
 - [FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.enum.md)

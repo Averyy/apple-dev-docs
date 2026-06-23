@@ -1,6 +1,6 @@
 # reportConsumption(_:insightsUsed:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: method
 
 Reports the consumption status, and optionally provide one or more associated insights.
@@ -9,7 +9,6 @@ Reports the consumption status, and optionally provide one or more associated in
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

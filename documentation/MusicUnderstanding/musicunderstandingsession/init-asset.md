@@ -1,6 +1,6 @@
 # init(asset:)
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: init
 
 Creates a music understanding session from an audio asset.

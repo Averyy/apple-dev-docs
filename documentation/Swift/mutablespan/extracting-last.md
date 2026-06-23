@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Returns a span containing the trailing elements of the span, up to the given maximum length.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,24 @@
 ```swift
 mutating func extracting(last maxLength: Int) -> MutableSpan<Element>
 ```
+
+#### Return Value
+
+A span with at most `maxLength` elements.
+
+#### Discussion
+
+If the maximum length exceeds the length of this span, the result contains all the elements.
+
+The returned span represents a mutation of this span.
+
+The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
+
+> **Note**: O(1)
+
+## Parameters
+
+- `maxLength`: The maximum number of elements to return. `maxLength` must be greater than or equal to zero.
 
 
 ---

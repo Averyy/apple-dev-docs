@@ -29,7 +29,7 @@ struct MusicRecentlyPlayedRequest<MusicItemType> where MusicItemType : MusicRece
 - [var limit: Int?](musicrecentlyplayedrequest/limit.md)
   A limit for the number of items to return in the response that contains items the user has recently played.
 - [var offset: Int?](musicrecentlyplayedrequest/offset.md)
-  An offet for the request.
+  An offset for the request.
 ### Instance Methods
 - [func response() async throws -> MusicRecentlyPlayedResponse<MusicItemType>](musicrecentlyplayedrequest/response.md)
   Fetches items the user has recently played.

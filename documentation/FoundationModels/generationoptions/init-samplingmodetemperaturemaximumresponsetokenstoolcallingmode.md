@@ -28,7 +28,6 @@ init(samplingMode: GenerationOptions.SamplingMode? = nil, temperature: Double? =
 ## See Also
 
 - [init(samplingMode: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(samplingmode:temperature:maximumresponsetokens:).md)
-  Creates generation options that control token sampling behavior.
 - [init(sampling: GenerationOptions.SamplingMode?, temperature: Double?, maximumResponseTokens: Int?)](generationoptions/init(sampling:temperature:maximumresponsetokens:).md)
   Creates generation options that control token sampling behavior.
 

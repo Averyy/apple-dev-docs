@@ -16,6 +16,7 @@ Creates a builder with a block.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<each P>(_ components: repeat each P) -> Prompt where repeat each P : PromptRepresentable
 ```
 

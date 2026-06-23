@@ -402,7 +402,7 @@ HEADER_SEARCH_PATHS = $(SRCROOT)/include \
 ###### Known Issues
 
 - Shazam Catalog recognition doesn’t work in simulated devices. (77564423) **Workaround**: Use a physical device.
-- [`MusicKit`](https://developer.apple.com/documentation/musickit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s MusicKit functionality on a physical device.
+- [`MusicKit`](https://developer.apple.com/documentation/MusicKit) functionality, such as loading content with music requests, doesn’t work in simulated devices. (78559381) **Workaround**: Test your app’s MusicKit functionality on a physical device.
 - Simulated iPhone mini devices might incorrectly render partial screen updates resulting in visual glitches. (82423740) (FB9569039) **Workaround**: Use a non-mini simulated device.
 - Some content may disappear or visual artifacts may appear when the content updates in Always On mode in simulated watchOS devices. (82732227) **Workaround**: Test on device to confirm Always On behavior.
 

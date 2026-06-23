@@ -34,6 +34,13 @@ enum PlaceholderPolicy
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [class WKDownload](wkdownload.md)
+  An object that represents the download of a web resource.
+- [protocol WKDownloadDelegate](wkdownloaddelegate.md)
+  A protocol you implement to track download progress and handle redirects, authentication challenges, and failures.
+
 
 ---
 

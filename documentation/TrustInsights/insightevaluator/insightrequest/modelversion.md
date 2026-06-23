@@ -1,6 +1,6 @@
 # modelVersion
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 The requested model version.
@@ -9,7 +9,6 @@ The requested model version.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # beats
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The timestamp of each detected beat.

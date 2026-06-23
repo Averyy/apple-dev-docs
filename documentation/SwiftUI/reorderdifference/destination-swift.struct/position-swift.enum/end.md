@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: case
 
-The end of the collection. Source items should be appended to the end of the collection.
+The end of the collection. Append source items to the end of the collection.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -27,7 +27,7 @@ case end
 ## See Also
 
 - [ReorderDifference.Destination.Position.before(_:)](reorderdifference/destination-swift.struct/position-swift.enum/before(_:).md)
-  The position of the item with the associated identifier in its collection. Source items should be moved to the index of this item.
+  The position of the item with the associated identifier in its collection. Move source items to the index of this item.
 
 
 ---

@@ -26,6 +26,13 @@ The actions are displayed in the document browser navigation bar when a document
 
 - `menu`: Items representing the content of the menu.
 
+## See Also
+
+- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
+
 
 ---
 

@@ -19,6 +19,13 @@ weak var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)? { g
 
 The delegate that manages immersive environment presentation.
 
+## See Also
+
+- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
+- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
+- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
+
 
 ---
 

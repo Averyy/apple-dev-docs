@@ -11,7 +11,6 @@ Submits a background task request to be scheduled with a completion handler.
 - Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

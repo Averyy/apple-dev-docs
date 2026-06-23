@@ -46,10 +46,10 @@ defer {
 
 ##### Select a Compression Algorithm
 
-The code in this example uses the [`COMPRESSION_LZFSE`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZFSE) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations.
+The code in this example uses the [`COMPRESSION_LZMESH`](https://developer.apple.com/documentation/Compression/COMPRESSION_LZMESH) algorithm, which provides the compression ratio of zlib level 5, but with much higher energy efficiency and speed (between 2x and 3x) for both encode and decode operations:
 
 ```swift
-let algorithm = COMPRESSION_LZFSE
+let algorithm = COMPRESSION_LZMESH
 ```
 
 For apps that require interoperability with non-Apple devices, use [`COMPRESSION_ZLIB`](https://developer.apple.com/documentation/Compression/COMPRESSION_ZLIB) instead. For more information on other compression algorithms, see [`compression_algorithm`](https://developer.apple.com/documentation/Compression/compression_algorithm).
@@ -80,7 +80,7 @@ You may elect to handle this situation differently, for example, by displaying a
 The code below writes the encoded data to a file in the the app’s temporary directory on macOS:
 
 ```swift
-let encodedFileName = "stringEncoded.LZFSE"
+let encodedFileName = "stringEncoded.LZMESH"
 
 let tempDirURL = NSURL(fileURLWithPath: NSTemporaryDirectory())
 

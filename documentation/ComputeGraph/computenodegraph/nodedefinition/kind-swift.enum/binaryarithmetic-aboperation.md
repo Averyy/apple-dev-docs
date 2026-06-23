@@ -17,7 +17,7 @@ An arithmetic node with two operands of the given type, performing the specified
 ## Declaration
 
 ```swift
-case binaryArithmetic(a: MTLDataType, b: MTLDataType, operation: BinaryOperation)
+case binaryArithmetic(a: ComputeNodeGraph.DataType, b: ComputeNodeGraph.DataType, operation: BinaryOperation)
 ```
 
 

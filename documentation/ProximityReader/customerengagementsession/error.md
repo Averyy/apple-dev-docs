@@ -16,10 +16,6 @@ Errors that can occur during the engagement session.
 enum Error
 ```
 
-## Mentions
-
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
-
 ## Topics
 
 ### Enumeration Cases
@@ -27,6 +23,8 @@ enum Error
   An error occurred while connecting to the customer.
 - [CustomerEngagementSession.Error.expiredCredential](customerengagementsession/error/expiredcredential.md)
   The credential used to create the session has expired.
+- [CustomerEngagementSession.Error.incompatibleRequest](customerengagementsession/error/incompatiblerequest.md)
+  An error that indicates the request is not compatible with the connected client type or version.
 - [CustomerEngagementSession.Error.internalError](customerengagementsession/error/internalerror.md)
   An error that occurs internally within the session.
 - [CustomerEngagementSession.Error.invalidCredential](customerengagementsession/error/invalidcredential.md)
@@ -37,6 +35,8 @@ enum Error
   An error that indicates the request validation failed.
 - [CustomerEngagementSession.Error.invalidSession](customerengagementsession/error/invalidsession.md)
   The session is no longer active or is invalidated.
+- [CustomerEngagementSession.Error.networkError](customerengagementsession/error/networkerror.md)
+  This error can occur if the system can’t reach a necessary server. Your app needs to ask the user to check their network settings and allow them to try again.
 - [CustomerEngagementSession.Error.notReady](customerengagementsession/error/notready.md)
   The session has not yet received the `.ready` event from the customer. The merchant must wait for the `.ready` event before sending requests.
 - [CustomerEngagementSession.Error.notSupported](customerengagementsession/error/notsupported.md)
@@ -65,7 +65,6 @@ enum Error
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -21,7 +21,6 @@ protocol AppSchemaEntity : AppSchema.Kind
 ## Topics
 
 ### Type Properties
-- [static var appStore: some AppSchema.AppStoreEntity](appschemaentity/appstore.md)
 - [static var audio: some AppSchema.AudioEntity](appschemaentity/audio.md)
   App entity schema conformance for types you use for audio functionality.
 - [static var books: some AppSchema.BooksEntity](appschemaentity/books.md)
@@ -34,7 +33,6 @@ protocol AppSchemaEntity : AppSchema.Kind
   App entity schema conformance for types you use for clock functionality.
 - [static var files: some AppSchema.FilesEntity](appschemaentity/files.md)
   App entity schema conformance for types you use for files functionality.
-- [static var imageGeneration: some AppSchema.ImageGenerationEntity](appschemaentity/imagegeneration.md)
 - [static var journal: some AppSchema.JournalEntity](appschemaentity/journal.md)
   App entity schema conformance for types you use for journal functionality.
 - [static var mail: some AppSchema.MailEntity](appschemaentity/mail.md)

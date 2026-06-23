@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-Create an OutputRawSpan with zero capacity
+Create an OutputRawSpan with zero capacity.
 
 **Availability**:
 - iOS 12.2+

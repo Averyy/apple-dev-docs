@@ -33,6 +33,8 @@ struct DynamicInstructionsBuilder
   Creates a builder with a list of tools expression.
 - [static func buildOptional<Content>(Content?) -> Content?](dynamicinstructionsbuilder/buildoptional(_:).md)
   Creates a builder with an optional component.
+- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](dynamicinstructionsbuilder/buildlimitedavailability(_:).md)
+  Creates a builder with limited availability dynamic instructions.
 
 ## See Also
 
@@ -44,8 +46,6 @@ struct DynamicInstructionsBuilder
   A dynamic instructions type that’s type-erased.
 - [struct TupleDynamicInstructions](tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
-- [struct AnyTool](anytool.md)
-  A tool that the framework invokes in dynamic instructions.
 
 
 ---

@@ -11,7 +11,6 @@ The JSON data doesn’t match the expected evaluation result format.
 - Mac Catalyst ?+
 - macOS ?+
 - visionOS ?+
-- watchOS ?+
 
 ## Declaration
 

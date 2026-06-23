@@ -19,6 +19,15 @@ Creates an empty animation library.
 init(automaticallyPlaysDefaultAnimation: Bool)
 ```
 
+#### Example
+
+```swift
+var library = AnimationLibraryComponent(automaticallyPlaysDefaultAnimation: true)
+library.animations["walk"] = walkAnimation
+library.defaultKey = "walk"
+entity.components.set(library)
+```
+
 ## Parameters
 
 - `automaticallyPlaysDefaultAnimation`: Whether to automatically play the default animation when the entity is added to a scene and enabled. When `true`, the animation system plays the default animation automatically. When `false`, animations require manual playback. See [`automaticallyPlaysDefaultAnimation`](animationlibrarycomponent/automaticallyplaysdefaultanimation.md) for details.
@@ -29,8 +38,6 @@ init(automaticallyPlaysDefaultAnimation: Bool)
   Whether to automatically play the default animation when the entity is added to a scene and enabled. Default value is false, meaning the default animation will not be automatically played by default. This value can only be set when initializing `AnimationLibraryComponent`
 - [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
-- [init(dictionaryLiteral: (String, AnimationResource)..., automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(dictionaryliteral:automaticallyplaysdefaultanimation:).md)
-  Creates an animation library from a variadic list of key-value pairs
 
 
 ---

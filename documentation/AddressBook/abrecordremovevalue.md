@@ -46,7 +46,7 @@ The value for `property` in `record`.The type of the returned value depends on t
   Returns a copy of the given record.
 - [func ABRecordIsReadOnly(ABRecordRef!) -> Bool](abrecordisreadonly(_:).md)
   Returns whether or not the record is read-only.
-- [func ABRecordSetValue(ABRecord!, ABPropertyID, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abrecordsetvalue(_:_:_:).md)
+- [func ABRecordSetValue(ABRecord!, ABPropertyID, CFTypeRef!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abrecordsetvalue(_:_:_:_:).md)
   Sets the value of a given property for a record.
 - [func ABRemoveRecord(ABAddressBookRef!, ABRecordRef!) -> Bool](abremoverecord(_:_:).md)
   Removes the specified record from the Address Book database.
@@ -54,4 +54,4 @@ The value for `property` in `record`.The type of the returned value depends on t
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abrecordremovevalue(_:_:_:))*

@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus.usedEvaluationOnly
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates the app used the insights for evaluation of their usefulness or for model training with no impact on a decision process.
@@ -9,7 +9,6 @@ A value that indicates the app used the insights for evaluation of their usefuln
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

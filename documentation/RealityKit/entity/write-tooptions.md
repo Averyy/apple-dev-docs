@@ -34,7 +34,7 @@ After writing, individual scenes can be loaded using the [`init(contentsOf:withN
 
 Logs with the prefix [RealityKit File Compatibility Info] will be posted to the console whenever a component or asset requires a compatibility adjustment.
 
-> **Note**: `WriteError/missingSceneName` if any entity in the array has an empty name.
+> **Note**: An error if any entity in the array has an empty name.
 
 > ❗ **Important**:  During its initial setup phase, this method can indirectly block the main thread, and also has the potential to block it for the full duration of the call if the system has additional work it needs to do there.
 
@@ -48,7 +48,6 @@ Logs with the prefix [RealityKit File Compatibility Info] will be posted to the 
 - [func write(to: URL, options: Entity.WriteOptions) async throws](entity/write(to:options:).md)
 - [Entity.WriteOptions](entity/writeoptions.md)
   Options for writing an entity to a RealityKit file.
-- [Entity.WriteError](entity/writeerror.md)
 
 
 ---

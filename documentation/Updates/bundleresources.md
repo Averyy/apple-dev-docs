@@ -13,7 +13,7 @@ Browse notable changes in [`Bundle Resources`](https://developer.apple.com/docum
 ##### New Entitlements
 
 - Access Private Cloud Compute in your [`Foundation Models`](https://developer.apple.com/documentation/FoundationModels) app using the [`com.apple.developer.private-cloud-compute`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.private-cloud-compute) entitlement.
-- Request insights relating to transactional activities using the [`TrustInsights`](https://developer.apple.com/documentation/TrustInsights) framework with the [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base) entitlement.
+- Request insights relating to transactional activities using the [`Trust Insights`](https://developer.apple.com/documentation/TrustInsights) framework with the [`Trust Insights`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.trustinsights.base) entitlement.
 - Display energy device names and usage statistics in the Home app using the [`EnergyKit`](https://developer.apple.com/documentation/EnergyKit) framework with the [`EnergyKit LoadEvents Entitlement`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.energykit.loadevents-experience) entitlement.
 - Add suggested actions to your messaging app based on message content with the [`Suggested Actions`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.suggested-actions) entitlement and the [`Suggested Actions`](https://developer.apple.com/documentation/SuggestedActions) framework.
 - Integrate a third-party media sharing protocol into the system route picker with the [`com.apple.developer.media-device-extension`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.media-device-extension) entitlement.
@@ -57,7 +57,6 @@ Browse notable changes in [`Bundle Resources`](https://developer.apple.com/docum
 - Share a coordinate space with other devices with the [`Shared Coordinate Space access`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.shared-coordinate-space.allow) entitlement.
 - Stop the system from capturing your app’s content with the [`App-Protected Content`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.protected-content) entitlement.
 - Lock your app’s windows in place relative to a person with the [`Window Follow Mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow) entitlement.
-- Add custom adapters to the Foundation Models framework with the doc://com.apple.documentation/documentation/bundleresources/entitlements/com.apple.developer.foundation-model-adapter entitlement.
 - Indicate that your app can be the default dialer app on someone’s device with the [`Default Dialer App`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.dialing-app) entitlement.
 
 ##### New Information Property List Keys

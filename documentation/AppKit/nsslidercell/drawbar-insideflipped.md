@@ -14,6 +14,10 @@ Draws the slider’s bar—but not its bezel or knob—inside the specified rect
 func drawBar(inside rect: NSRect, flipped: Bool)
 ```
 
+## Mentions
+
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+
 #### Discussion
 
 You should not call this method explicitly. It’s included so you can override it in a subclass.

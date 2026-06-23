@@ -32,6 +32,11 @@ Use this method to perform the web presentment transaction after calling `perfor
 
 > **Note**: When performing a [`transceive(_:)`](credentialsession/transceive(_:).md) call, the system grants your app a 15-second grace period from invalidating the session, in the event your app goes into the background.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.invalidSessionState`](credentialsession/errorcode/invalidsessionstate.md): The session isn’t in the [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md) state.
+- [`CredentialSession.ErrorCode.commandNotSupported`](credentialsession/errorcode/commandnotsupported.md): The APDU represents an unsupported Secure Element command.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable. The session transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+- [`CredentialSession.ErrorCode.acquiredResourceRelinquished`](credentialsession/errorcode/acquiredresourcerelinquished.md): The shared system resource was relinquished during the operation.
+
 ## Parameters
 
 - `data`: The APDU as a [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance.

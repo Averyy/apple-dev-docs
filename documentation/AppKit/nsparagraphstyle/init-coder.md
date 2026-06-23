@@ -12,6 +12,11 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+- [class var `default`: NSParagraphStyle](nsparagraphstyle/default.md)
+  The default paragraph style.
+
 
 ---
 

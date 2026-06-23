@@ -1,6 +1,6 @@
 # KeyResult.Mode
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: enum
 
 The mode of a musical key.

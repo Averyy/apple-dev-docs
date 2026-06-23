@@ -15,14 +15,14 @@ An effect that slides the pointer under the view and disappears as the view scal
 ## Declaration
 
 ```swift
-static let lift: HoverEffect
+static var lift: HoverEffect { get }
 ```
 
 ## See Also
 
-- [static let automatic: HoverEffect](hovereffect/automatic.md)
+- [static var automatic: HoverEffect](hovereffect/automatic.md)
   An effect  that attempts to determine the effect automatically. This is the default effect.
-- [static let highlight: HoverEffect](hovereffect/highlight.md)
+- [static var highlight: HoverEffect](hovereffect/highlight.md)
   An effect  that morphs the pointer into a platter behind the view and shows a light source indicating position.
 
 

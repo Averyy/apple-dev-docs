@@ -1,6 +1,6 @@
 # Trust Insights
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: module
 
 Evaluate transactions for potential coercive activity while preserving people’s privacy.

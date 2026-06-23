@@ -37,8 +37,8 @@ Access device-specific information like battery state, proximity sensor data, an
 - [class UIStatusBarManager](uistatusbarmanager.md)
   An object that describes the configuration of the status bar.
 ### Data observation
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and UIKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 - [Automatic observation tracking](automatic-observation-tracking.md)
   Simplify updating views when data changes by making updates in methods that support automatic observation tracking.
 ### Adaptivity and traits

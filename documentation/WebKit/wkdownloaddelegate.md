@@ -52,6 +52,7 @@ protocol WKDownloadDelegate : NSObjectProtocol
 
 - [class WKDownload](wkdownload.md)
   An object that represents the download of a web resource.
+- [WKDownload.PlaceholderPolicy](wkdownload/placeholderpolicy.md)
 
 
 ---

@@ -103,7 +103,6 @@ The general category of a scalar is its “first-order, most usual categorizatio
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

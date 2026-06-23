@@ -20,7 +20,7 @@ You can override this method to perform tasks to follow the completion of layout
 
 The default implementation of this method does nothing.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in AppKit`](updating-views-automatically-with-observation-tracking-in-appkit.md).
 
 ## See Also
 

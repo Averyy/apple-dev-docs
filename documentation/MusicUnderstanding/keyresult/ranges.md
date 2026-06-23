@@ -1,6 +1,6 @@
 # ranges
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The detected key for each time range.

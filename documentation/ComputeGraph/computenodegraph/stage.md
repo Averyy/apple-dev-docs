@@ -31,6 +31,9 @@ Stages define the order and purpose of computation passes. In particle systems, 
 ### Instance Properties
 - [let name: String](computenodegraph/stage/name.md)
   The identifier for this stage
+### Instance Methods
+- [func canAddNode(with: ComputeNodeGraph.NodeDefinition) -> Bool](computenodegraph/stage/canaddnode(with:).md)
+  Whether a node with the given definition can be used in this stage.
 ### Type Properties
 - [static let compute: ComputeNodeGraph.Stage](computenodegraph/stage/compute.md)
   A general-purpose computation stage.

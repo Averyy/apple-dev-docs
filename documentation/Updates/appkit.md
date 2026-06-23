@@ -25,7 +25,7 @@ Browse notable changes in [`AppKit`](https://developer.apple.comhttps://develope
 
 ##### Swift and Swiftui
 
-- Update views automatically in response to [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model changes using the guidance in [`Updating views automatically with observation tracking`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking).
+- Update views automatically in response to [`Observable`](https://developer.apple.com/documentation/Observation/Observable) model changes using the guidance in [`Updating views automatically with observation tracking in AppKit`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking-in-appkit).
 - Limit a SwiftUI gesture to specific types of input, such as touch or mouse, using [`GestureInputKinds`](https://developer.apple.com/documentation/SwiftUI/GestureInputKinds).
 
 ##### Information Property List

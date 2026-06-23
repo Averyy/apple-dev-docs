@@ -1,6 +1,6 @@
 # peak
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The peak amplitude of the song in decibels (dB).

@@ -14,6 +14,10 @@ The port type for a color value.
 let QCPortTypeColor: String
 ```
 
+#### Discussion
+
+The associated value must be an [`NSColor`](https://developer.apple.com/documentation/AppKit/NSColor) object.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

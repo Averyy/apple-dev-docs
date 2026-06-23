@@ -15,7 +15,7 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 ## Topics
 
 ### tvOS 27
-- [tvOS 27 Beta Release Notes](tvos-27-release-notes.md)
+- [tvOS 27 Beta 2 Release Notes](tvos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### tvOS 26
 - [tvOS 26.6 Beta 2 Release Notes](tvos-26_6-release-notes.md)
@@ -132,6 +132,9 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 - [tvOS 12.1.1 Release Notes](tvos-12_1_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [tvOS 12 Release Notes](tvos-12-release-notes.md)
+  Update your apps to use new features, and test your apps against API changes.
+### Articles
+- [tvOS 26.6 Beat Release Notes](tvos-26_6_beat-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 
 

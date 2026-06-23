@@ -25,14 +25,14 @@ A valid MPSGraphTensor array of datatype dataType
 
 #### Discussion
 
-Convert the float `tensor` to an i8 or u8 tensor by applying a scale + bias transform: result = (tensor / scaleTensor) + zeroPointTensor
+Convert the float `tensor` to a quantized tensor by applying a scale + bias transform: result = round(tensor / scaleTensor) + zeroPointTensor
 
 ## Parameters
 
 - `tensor`: Input tensor to be quantized
 - `scaleTensor`: Scale scalar or 1D Tensor parameter with size == tensor.shape[axis]
 - `zeroPointTensor`: Bias scalar or 1D Tensor parameter with size == tensor.shape[axis]
-- `dataType`: Integer data type of the result tensor.
+- `dataType`: Data type of the result tensor. Supports `MPSDataTypeInt8`, `MPSDataTypeUInt8`, `MPSDataTypeFloat8E4M3`, and `MPSDataTypeFloat8E5M2`. Float8 output requires symmetric quantization (zeroPointTensor = 0).
 - `axis`: Axis on which the scale 1D value is being broadcasted
 - `name`: The name for the operation.
 

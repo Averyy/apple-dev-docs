@@ -1,6 +1,6 @@
 # MusicUnderstandingError.invalidAsset
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The error that occurs when someone initializes a session with an invalid asset.

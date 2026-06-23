@@ -14,6 +14,10 @@ The key for the port minimum value.
 let QCPortAttributeMinimumValueKey: String
 ```
 
+#### Discussion
+
+The associated value is an [`NSNumber`](https://developer.apple.com/documentation/Foundation/NSNumber) object that specifies the  minimum numerical value accepted by the port.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

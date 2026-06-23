@@ -52,7 +52,6 @@ Playgrounds and the debugger will show a representation similar to the one used 
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

@@ -17,7 +17,7 @@ func deactivateItem(_ item: FSItem) async throws
 
 #### Discussion
 
-This method gives a file system a chance to release resources associated with an item. However, this method prescribes no specific action; it’s acceptable to defer all reclamation until [`reclaimItem(_:replyHandler:)`](fsvolume/operations/reclaimitem(_:replyhandler:).md). This method is the equivalent of VFS’s `VNOP_INACTIVE`.
+This method gives a file system a chance to release resources associated with an item. However, this method prescribes no specific action; it’s acceptable to defer all reclamation until `FSVolume/Operations/reclaimItem(_:)`. This method is the equivalent of VFS’s `VNOP_INACTIVE`.
 
 FSKit restricts calls to this method based on the current value of [`itemDeactivationPolicy`](fsvolume/itemdeactivation/itemdeactivationpolicy.md).
 

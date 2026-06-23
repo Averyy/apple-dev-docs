@@ -16,7 +16,7 @@ Creates a diffuse probe resource from arrays of probe data.
 ## Declaration
 
 ```swift
-@MainActor
+nonisolated
 convenience init(positions: [SIMD3<Float>], coefficients: [InlineArray<3, SIMD4<Float>>], tetrahedronIndices: [SIMD4<UInt16>]) throws
 ```
 

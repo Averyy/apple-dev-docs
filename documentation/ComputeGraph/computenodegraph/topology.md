@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: enum
 
+The primitive topology used to assemble output geometry for an output stage.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -18,15 +20,25 @@
 enum Topology
 ```
 
+#### Overview
+
+Set on an output stage via the `topology` property. The output’s topology determines how the compute graph emits vertex data for each element and how that data is consumed by the render pipeline.
+
 ## Topics
 
 ### Enumeration Cases
 - [ComputeNodeGraph.Topology.instances](computenodegraph/topology/instances.md)
+  Elements are rendered as instanced meshes.
 - [ComputeNodeGraph.Topology.octagon](computenodegraph/topology/octagon.md)
+  Each element emits eight vertices, rendered as an octagon.
 - [ComputeNodeGraph.Topology.point](computenodegraph/topology/point.md)
+  Each element emits a single vertex.
 - [ComputeNodeGraph.Topology.quad](computenodegraph/topology/quad.md)
+  Each element emits four vertices, rendered as a quad (two triangles).
 - [ComputeNodeGraph.Topology.strip](computenodegraph/topology/strip.md)
+  Elements share vertices in a triangle-strip winding order. Requires a simulation with a grouping of `strips`.
 - [ComputeNodeGraph.Topology.triangle](computenodegraph/topology/triangle.md)
+  Each element emits three vertices, rendered as an independent triangle.
 
 ## Relationships
 

@@ -26,7 +26,7 @@ Use this to declare what your model can do, like tool calling and guided generat
 ```swift
 struct MyLanguageModel: LanguageModel {
     var capabilities: LanguageModelCapabilities {
-        LanguageModelCapabilities(capabilities: [
+        LanguageModelCapabilities([
             .toolCalling,
             .guidedGeneration,
             .reasoning
@@ -50,6 +50,8 @@ When a model doesn’t support a capability, the framework can refuse to dispatc
 ## Topics
 
 ### Creating an instance
+- [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
+  Specify a list of supported capabilities
 - [init(capabilities: [LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(capabilities:).md)
   Specify a list of supported capabilities
 - [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)

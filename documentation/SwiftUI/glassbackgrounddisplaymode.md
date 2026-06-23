@@ -32,7 +32,6 @@ Use a value of this type to indicate when to display a glass background that you
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -33,6 +33,8 @@ Resuming from a continuation more than once is undefined behavior. Never resumin
 ## Topics
 
 ### Initializers
+- [init(consuming Continuation<T, E>, function: String)](checkedcontinuation/init(_:function:).md)
+  Convert a non-copyable continuation to a [`CheckedContinuation`](checkedcontinuation.md)
 - [init(continuation: UnsafeContinuation<T, E>, function: String)](checkedcontinuation/init(continuation:function:).md)
   Creates a checked continuation from an unsafe continuation.
 ### Instance Methods

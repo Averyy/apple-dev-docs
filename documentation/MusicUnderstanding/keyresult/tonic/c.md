@@ -1,6 +1,6 @@
 # KeyResult.Tonic.c
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 Indicates that the song is in a C key.

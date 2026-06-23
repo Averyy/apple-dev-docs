@@ -45,7 +45,6 @@ This structure captures both the position and direction of a mouse cursor projec
 
 ## See Also
 
-- [enum Topology](topology.md)
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
 - [enum StripOrientation](striporientation.md)

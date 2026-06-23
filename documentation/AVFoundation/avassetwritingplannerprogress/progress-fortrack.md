@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: method
 
+Returns the progress for a specific track identified by its assemblyTrackID.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -22,8 +24,6 @@ func progress(forTrack assemblyTrackID: CMPersistentTrackID) -> Float
 A float value between 0.0 and 1.0 representing the percentage of duration completed for the track. Returns 0.0 if the track ID is not found.
 
 #### Discussion
-
-Returns the progress for a specific track identified by its assemblyTrackID.
 
 The progress is calculated as the ratio of completed duration to total duration for the track.
 

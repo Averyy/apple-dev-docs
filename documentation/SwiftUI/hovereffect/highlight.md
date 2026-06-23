@@ -15,7 +15,7 @@ An effect  that morphs the pointer into a platter behind the view and shows a li
 ## Declaration
 
 ```swift
-static let highlight: HoverEffect
+static var highlight: HoverEffect { get }
 ```
 
 #### Discussion
@@ -24,9 +24,9 @@ On tvOS, it applies a projection effect accompanied with a specular highlight on
 
 ## See Also
 
-- [static let automatic: HoverEffect](hovereffect/automatic.md)
+- [static var automatic: HoverEffect](hovereffect/automatic.md)
   An effect  that attempts to determine the effect automatically. This is the default effect.
-- [static let lift: HoverEffect](hovereffect/lift.md)
+- [static var lift: HoverEffect](hovereffect/lift.md)
   An effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

@@ -29,9 +29,9 @@ protocol NSTextLayoutManagerDelegate : NSObjectProtocol
   The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
 ### Reusing text attachment view providers
 - [func textLayoutManager(NSTextLayoutManager, cacheTextAttachmentViewProvider: NSTextAttachmentViewProvider, for: NSTextAttachment)](nstextlayoutmanagerdelegate/textlayoutmanager(_:cachetextattachmentviewprovider:for:).md)
+  Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
 - [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](nstextlayoutmanagerdelegate/textlayoutmanager(_:retrievecachedtextattachmentviewproviderfor:).md)
-### Instance Methods
-- [func textLayoutManager(NSTextLayoutManager, textViewportLayoutControllerFor: NSTextContainer) -> NSTextViewportLayoutController?](nstextlayoutmanagerdelegate/textlayoutmanager(_:textviewportlayoutcontrollerfor:).md)
+  Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
 ## Relationships
 

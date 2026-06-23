@@ -31,7 +31,7 @@ static var automatic: AutomaticNavigationTransition { get }
 - [static func zoom(sourceID: some Hashable, in: Namespace.ID) -> ZoomNavigationTransition](navigationtransition/zoom(sourceid:in:).md)
   A navigation transition that zooms the appearing view from a given source view.
 - [struct ZoomNavigationTransition](zoomnavigationtransition.md)
-  A navigation transition that zooms the appearing view from a given source view. Indicate the source view using the `View/matchedTransitionSource(id:namespace:)` modifier.
+  A navigation transition that zooms the appearing view from a given source view.
 
 
 ---

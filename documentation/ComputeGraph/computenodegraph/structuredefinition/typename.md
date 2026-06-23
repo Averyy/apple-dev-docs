@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: property
 
+The name used to refer to the structure type.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,6 +19,10 @@
 ```swift
 var typeName: String
 ```
+
+#### Discussion
+
+This is the identifier that appears in generated Metal source and in graph serialization, for example `"Particle"` or `"EmitterUniforms"`.
 
 
 ---

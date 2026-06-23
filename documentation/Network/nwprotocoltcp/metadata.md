@@ -27,6 +27,9 @@ class Metadata
   The number of available bytes in the TCP send buffer.
 - [var availableReceiveBuffer: UInt32](nwprotocoltcp/metadata/availablereceivebuffer.md)
   The number of available bytes in the TCP receive buffer.
+### Instance Methods
+- [func setMaxPacingRate(UInt64) throws](nwprotocoltcp/metadata/setmaxpacingrate(_:).md)
+  Set the maximum pacing rate for this TCP connection, in bytes per second.
 
 ## Relationships
 

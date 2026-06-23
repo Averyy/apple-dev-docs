@@ -28,8 +28,6 @@ Use this structure to specify the data sources, guidance, and options for [`Spot
 
 ## Topics
 
-### Creating the configuration object
-- [init(sources: [SearchSource], guide: SpotlightSearchTool.Guide?, contactResolver: (any ContactResolver)?, customStages: [any CustomStage])](spotlightsearchtool/configuration-swift.struct/init(sources:guide:contactresolver:customstages:).md)
 ### Configuring the search sources
 - [var sources: [SearchSource]](spotlightsearchtool/configuration-swift.struct/sources.md)
   The data sources and options to use during a search.
@@ -41,6 +39,11 @@ Use this structure to specify the data sources, guidance, and options for [`Spot
   Options you use to guide the search process that the tool uses to retrieve results.
 - [var customStages: [any CustomStage]](spotlightsearchtool/configuration-swift.struct/customstages.md)
   Custom pipeline stages you use to help the Spotlight search tool generate results.
+### Initializers
+- [init(sources: [SearchSource], guide: SpotlightSearchTool.Guide?, contactResolver: (any ContactResolver)?, customStages: [any CustomStage], maximumResponseSize: Int?)](spotlightsearchtool/configuration-swift.struct/init(sources:guide:contactresolver:customstages:maximumresponsesize:).md)
+### Instance Properties
+- [var maximumResponseSize: Int?](spotlightsearchtool/configuration-swift.struct/maximumresponsesize.md)
+  The maximum number of UTF-8 characters of rendered tool output the search tool sends back to the model on a single call.
 
 ## Relationships
 

@@ -162,6 +162,8 @@ Fetch metadata for an app from the catalog by using its identifier.
 
 ## See Also
 
+- [Get Metadata for Your Authenticated Purchases](get-v1-catalog-_storefront_-stoken-authenticated-purchases.md)
+  Fetch metadata for your authenticated purchases by using their identifiers with a specified resource type.
 - [Get Metadata for Your Apps](get-your-apps-metadata.md)
   Fetch metadata for your apps by using their identifiers.
 - [Get Metadata for Your Books](get-your-books-metadata.md)

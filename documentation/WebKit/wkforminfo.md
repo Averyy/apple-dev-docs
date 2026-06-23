@@ -45,6 +45,21 @@ An instance of this class is a transient, data-only object; it does not uniquely
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [protocol WKNavigationDelegate](wknavigationdelegate.md)
+  Methods for accepting or rejecting navigation changes, and for tracking the progress of navigation requests.
+- [class WKBackForwardList](wkbackforwardlist.md)
+  An object that manages the list of previously loaded webpages, which the web view uses for forward and backward navigation.
+- [class WKBackForwardListItem](wkbackforwardlistitem.md)
+  A representation of a webpage that the web view previously visited.
+- [class WKNavigation](wknavigation.md)
+  An object that tracks the loading progress of a webpage.
+- [class WKNavigationAction](wknavigationaction.md)
+  An object that contains information about an action that causes navigation to occur.
+- [class WKNavigationResponse](wknavigationresponse.md)
+  An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
+
 
 ---
 

@@ -40,6 +40,7 @@ Use the object in this property to validate the webpage’s certificate and asso
   The theme color that the system gets from the first valid meta tag in the webpage.
 - [var underPageBackgroundColor: UIColor!](wkwebview/underpagebackgroundcolor.md)
   The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
+- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
 
 
 ---

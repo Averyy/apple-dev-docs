@@ -36,6 +36,7 @@ struct Attribute
 - [init?(USDPrim.Property)](usdprim/attribute/init(_:)-8mm8c.md)
   Casts a property handle to an attribute handle.
 ### Instance Properties
+- [var connections: [USDLayer.Path]](usdprim/attribute/connections.md)
 - [var isValid: Bool](usdprim/attribute/isvalid.md)
   A Boolean value indicating whether this attribute is valid.
 - [var name: USDToken](usdprim/attribute/name.md)
@@ -62,7 +63,7 @@ struct Attribute
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage-4sfi1/object/metadatacollection.md)
+- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
 
 ## See Also
 
@@ -72,8 +73,6 @@ struct Attribute
 - [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
 - [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
 - [func makeAttribute(named: USDToken, as: USDPrim.Attribute.ValueType, custom: Bool, variability: USDPrim.Property.Variability) -> USDPrim.Attribute](usdprim/makeattribute(named:as:custom:variability:).md)
-- [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:).md)
-  Access or modify the value of a named attribute on this prim.
 
 
 ---

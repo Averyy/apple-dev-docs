@@ -1,6 +1,6 @@
 # mode
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The mode of the musical key.

@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let deformationAdditions: [DeformationID]
+let deformationAdditions: [USDPlayer.DeformationID]
 ```
 
 

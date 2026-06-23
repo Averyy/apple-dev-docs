@@ -32,6 +32,8 @@ The request for a list of devices.
   Get a list of devices that are managed by the server.
 - [Sync the List of Devices](sync-devices.md)
   Get updates about the list of devices the server manages.
+- [Get Replacement Details](get-replacement-details.md)
+  Get information about the device that a replacement device replaces.
 - [Get Beta Enrollment Tokens](get-beta-enrollment-tokens.md)
   Retrieves the beta enrollment tokens available for the organization.
 

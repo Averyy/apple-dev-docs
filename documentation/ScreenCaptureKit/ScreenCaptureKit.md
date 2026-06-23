@@ -3,17 +3,27 @@
 **Framework**: ScreenCaptureKit  
 **Kind**: module
 
-Filter and select screen content and stream it to your app.
+Stream screen content and audio to your app with fine-grained control over what you capture.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 18.2+
 - macOS 12.3+
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 #### Overview
 
-Use the ScreenCaptureKit framework to add support for high-performance frame capture of screen and audio content to your Mac app. The framework gives you fine-grained control to select and stream only the content that you want to capture. As a stream captures new video frames and audio samples, it passes them to your app as [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects that contain the media data and its related metadata. ScreenCaptureKit also provides a macOS-integrated picker for streaming selection and management, [`SCContentSharingPicker`](sccontentsharingpicker.md).
+Use ScreenCaptureKit to capture high-performance video and audio across iOS, iPadOS, macOS, tvOS, and visionOS. The framework gives you fine-grained control to select and stream only the content you want to capture, delivering media to your app as [`CMSampleBuffer`](https://developer.apple.com/documentation/CoreMedia/CMSampleBuffer) objects with the associated metadata.
 
-> **Note**:  Session 10156: [`Meet ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10156) Session 10155: [`Take ScreenCaptureKit to the next level`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10155) Session 10136: [`What’s new in ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10136/)
+> ❗ **Important**: ScreenCaptureKit replaces ReplayKit for screen streaming and mirroring. A broadcast extension is no longer necessary.
+
+Use [`SCContentSharingPicker`](sccontentsharingpicker.md), the system screen-sharing control, as the recommended approach for letting people select content sources and manage active streams, rather than building your own selection UI. To capture content while your app is in the background, configure the appropriate [`Configuring background execution modes`](https://developer.apple.com/documentation/Xcode/configuring-background-execution-modes) in the Signing & Capabilities pane in Xcode.
+
+Request screen recording permission from the person before capturing content. In the Info pane of the Xcode target editor, add a `NSScreenCaptureUsageDescription` key with a description of why your app requires screen recording access.
+
+> **Note**: For related WWDC sessions, see [`Meet ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10156) (WWDC22 Session 10156), [`Take ScreenCaptureKit to the next level`](https://developer.apple.comhttps://developer.apple.com/wwdc22/10155) (WWDC22 Session 10155), and [`What’s new in ScreenCaptureKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2023/10136/) (WWDC23 Session 10136).
 
 ## Topics
 
@@ -52,6 +62,7 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
   An object that contains screenshot properties such as output width, height, and image quality specifications.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
   An object that contains all images requested by the client.
+- [class SCVideoEffectOutput](scvideoeffectoutput.md)
 ### Output processing
 - [protocol SCStreamOutput](scstreamoutput.md)
   A delegate protocol your app implements to receive capture stream output events.
@@ -61,6 +72,7 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
   An instance that defines metadata keys for a stream frame.
 - [enum SCFrameStatus](scframestatus.md)
   Status values for a frame from a stream.
+- [class SCClipBufferingOutput](scclipbufferingoutput.md)
 ### System content-sharing picker
 - [class SCContentSharingPicker](sccontentsharingpicker.md)
   An instance of a picker presented by the operating system for managing frame-capture streams.
@@ -70,15 +82,13 @@ Use the ScreenCaptureKit framework to add support for high-performance frame cap
   Available modes for selecting streaming content from a picker presented by the operating system.
 - [protocol SCContentSharingPickerObserver](sccontentsharingpickerobserver.md)
   An observer protocol your app implements to receive messages from the operating system’s content picker.
-### Stream errors
+### Stream errors (Swift)
 - [let SCStreamErrorDomain: String](scstreamerrordomain.md)
   A string representation of the error domain.
 - [struct SCStreamError](scstreamerror.md)
   An instance representing a ScreenCaptureKit framework error.
 ### Classes
-- [class SCClipBufferingOutput](scclipbufferingoutput.md)
 - [class SCRecordingEditor](screcordingeditor.md)
-- [class SCVideoEffectOutput](scvideoeffectoutput.md)
 ### Protocols
 - [protocol SCClipBufferingOutputDelegate](scclipbufferingoutputdelegate.md)
 - [protocol SCRecordingEditorDelegate](screcordingeditordelegate.md)

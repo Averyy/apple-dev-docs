@@ -107,6 +107,22 @@ You can associate a controller with [`WKWebView`](wkwebview.md) using the [`webE
   An object that represents the runtime environment for a web extension.
 - [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
+- [WKWebExtension.Action](wkwebextension/action.md)
+  An object that encapsulates the properties for an individual web extension action.
+- [WKWebExtension.Command](wkwebextension/command.md)
+  An object that encapsulates the properties for an individual web extension command.
+- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+  An object that represents a way to specify groups of URLs.
+- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+  An object that manages message-based communication with a web extension.
+- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+  An object that represents a record of stored data for a specific web extension context.
+- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+  An object that encapsulates configuration options for a tab in an extension.
+- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+  An object that encapsulates configuration options for a window in an extension.
+- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 
 
 ---

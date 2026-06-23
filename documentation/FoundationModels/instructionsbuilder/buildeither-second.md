@@ -16,6 +16,7 @@ Creates a builder with the second component.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither(second component: some InstructionsRepresentable) -> Instructions
 ```
 

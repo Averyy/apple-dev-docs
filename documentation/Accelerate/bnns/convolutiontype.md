@@ -32,7 +32,6 @@ enum ConvolutionType
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 

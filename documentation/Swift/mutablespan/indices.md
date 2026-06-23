@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+The range of valid indices for subscripting the span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

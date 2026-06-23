@@ -10,9 +10,7 @@ Identifies enum schemas in the clock domain.
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -25,6 +23,8 @@ protocol ClockEnum : AppSchema.Kind
 ### Instance Properties
 - [var alarmTriggerState: some AppSchemaEnum](appschema/clockenum/alarmtriggerstate.md)
   An enum schema for an alarm trigger state parameter.
+- [var stopwatchState: some AppSchemaEnum](appschema/clockenum/stopwatchstate.md)
+  An enum schema for a stopwatch state parameter.
 - [var timerState: some AppSchemaEnum](appschema/clockenum/timerstate.md)
   An enum schema for a timer state parameter.
 

@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
+Elements share vertices in a triangle-strip winding order. Requires a simulation with a grouping of `strips`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

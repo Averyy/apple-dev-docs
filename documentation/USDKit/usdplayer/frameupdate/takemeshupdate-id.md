@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-mutating func takeMeshUpdate(id: MeshID) -> MeshData.Update?
+mutating func takeMeshUpdate(id: USDPlayer.MeshID) -> USDPlayer.MeshData.Update?
 ```
 
 

@@ -3,7 +3,7 @@
 **Framework**: MusicKit  
 **Kind**: property
 
-An offet for the request.
+An offset for the request.
 
 **Availability**:
 - iOS 15.0+

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: init
 
+Creates a vector with the given components.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+A span over the single element of this collection.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,14 @@
 ```swift
 var span: Span<Element> { get }
 ```
+
+#### Return Value
+
+A `Span` over the element of this collection.
+
+#### Discussion
+
+> **Note**: O(1)
 
 
 ---

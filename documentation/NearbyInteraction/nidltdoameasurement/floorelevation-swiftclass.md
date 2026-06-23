@@ -30,8 +30,7 @@ Negative [`floorNumber`](nidltdoameasurement/floorelevation-swift.class/floornum
 - [var height: Double](nidltdoameasurement/floorelevation-swift.class/height.md)
   The height above the floor in meters.
 ### Creating a floor elevation
-- [init?(coder: NSCoder)](nidltdoameasurement/floorelevation-swift.class/init(coder:).md)
-  Initializes a floor elevation from a decoder.
+- [init?(coder: NSCoder)](nidltdoameasurement/init(coder:).md)
 
 ## Relationships
 
@@ -43,10 +42,8 @@ Negative [`floorNumber`](nidltdoameasurement/floorelevation-swift.class/floornum
 - [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
-- [NSCoding](../Foundation/NSCoding.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

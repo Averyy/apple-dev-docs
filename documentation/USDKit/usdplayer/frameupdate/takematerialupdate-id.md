@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-mutating func takeMaterialUpdate(id: MaterialID) -> MaterialData.Update?
+mutating func takeMaterialUpdate(id: USDPlayer.MaterialID) -> USDPlayer.MaterialData.Update?
 ```
 
 

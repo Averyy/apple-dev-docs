@@ -1,6 +1,6 @@
 # MusicUnderstandingError.emptyAnalysisSet
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The error that occurs when someone requests and analysis of an empty analysis set.

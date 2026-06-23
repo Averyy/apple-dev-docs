@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: init
 
+Create an empty span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

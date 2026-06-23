@@ -3,7 +3,7 @@
 **Framework**: Evaluations  
 **Kind**: init
 
-Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that must not be called.
+Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the agent must not call.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -11,7 +11,6 @@ Creates a trajectory expectation with ordered and unordered requirements, plus s
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,7 +26,7 @@ Additional tool calls beyond the expected ones are always allowed when using dis
 
 - `ordered`: Steps that must be satisfied in sequential order.
 - `unordered`: Tool calls that must occur at some point, regardless of position.
-- `disallowed`: Tools that must NOT be called.
+- `disallowed`: Tools that the agent must not call.
 
 ## See Also
 

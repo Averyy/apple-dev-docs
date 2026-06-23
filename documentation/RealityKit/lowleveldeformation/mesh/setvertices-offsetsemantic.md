@@ -15,7 +15,7 @@ Binds a Metal buffer to the vertex attribute with the specified semantic.
 ## Declaration
 
 ```swift
-func setVertices(_ buffer: any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws(LowLevelDeformation.Error)
+func setVertices(_ buffer: any MTLBuffer, offset: Int, semantic: LowLevelDeformation.VertexSemantic) throws
 ```
 
 #### Discussion

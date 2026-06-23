@@ -1,6 +1,6 @@
 # KeyResult.KeySignature
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 The set of sharp and flat symbols for the notes.

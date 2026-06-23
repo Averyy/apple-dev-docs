@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+Must be consistent with results from `isEqual:` while also avoiding hash collisions.
+
 **Availability**:
 - macOS 12.0+
 

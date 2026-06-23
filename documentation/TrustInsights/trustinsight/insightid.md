@@ -1,6 +1,6 @@
 # insightID
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property  
 **Required**: Yes
 
@@ -10,7 +10,6 @@ The insight ID.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

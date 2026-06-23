@@ -214,7 +214,7 @@ func endDocumentCapture() {
 }
 ```
 
-The log handle returned by [`logHandle(category:)`](metricmanager/loghandle(category:).md) configures persistence so that all signposts emitted using this handle are collected and aggregated by MetricKit. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](signpostintervalmetric.md) objects.
+The log handle that [`logHandle(category:)`](metricmanager/loghandle(category:).md) returns is persistent. So, MetricKit collects and aggregates all the signposts that this log handle emits. The signpost name and category identify this interval in the resulting [`SignpostIntervalMetric`](signpostintervalmetric.md) objects. You can also use [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter) with this handle, but only [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) populates the [`SignpostIntervalMetric`](signpostintervalmetric.md) measurement properties such as CPU time, memory usage, and logical writes.
 
 The expense report detail view begins the interval when the person taps the button to scan a receipt, and ends it when the scanner sheet dismisses:
 

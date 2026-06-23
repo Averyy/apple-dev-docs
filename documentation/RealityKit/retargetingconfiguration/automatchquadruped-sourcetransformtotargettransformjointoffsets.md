@@ -16,7 +16,6 @@ Creates a retargeting configuration for quadrupedal characters using automatic j
 ## Declaration
 
 ```swift
-@MainActor
 static func automatchQuadruped(_ sourceSkeleton: SkeletonResource, sourceTransform: Transform = .identity, to targetSkeleton: SkeletonResource, targetTransform: Transform = .identity, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 

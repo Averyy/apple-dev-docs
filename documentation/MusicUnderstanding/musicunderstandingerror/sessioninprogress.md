@@ -1,6 +1,6 @@
 # MusicUnderstandingError.sessionInProgress
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The error that occurs when someone requests analysis while a session is already in progress.

@@ -54,7 +54,7 @@ Some methods in [`THClient`](thclient.md) use the *team ID*, a string that you s
 - [func storeCredentials(forBorderAgent: Data, activeOperationalDataSet: Data, completion: ((any Error)?) -> Void)](thclient/storecredentials(forborderagent:activeoperationaldataset:completion:).md)
   Stores Thread network credentials into the framework database that a Border Agent provides.
 ### Instance Methods
-- [func enableCredentialSharingMode((String?, (any Error)?) -> Void)](thclient/enablecredentialsharingmode(_:).md)
+- [func enableCredentialSharingMode(withExtendedPANId: Data, completion: ((any Error)?) -> Void)](thclient/enablecredentialsharingmode(withextendedpanid:completion:).md)
   Triggers Credential Share mode on a nearby eligible Apple Border Router (tvOS(27.0)).
 
 ## Relationships

@@ -14,6 +14,10 @@ Overridden by subclasses to draw the view’s image within the specified rectang
 func draw(_ dirtyRect: NSRect)
 ```
 
+## Mentions
+
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+
 #### Discussion
 
 Use this method to draw the specified portion of your view’s content. Your implementation of this method should be as fast as possible and do as little work as possible. The `dirtyRect` parameter helps you achieve better performance by specifying the portion of the view that needs to be drawn. You should always limit drawing to the content inside this rectangle. For even better performance, you can call the [`getRectsBeingDrawn(_:count:)`](nsview/getrectsbeingdrawn(_:count:).md) method and use the list of rectangles returned by that method to limit drawing even further. You can also use the [`needsToDraw(_:)`](nsview/needstodraw(_:).md) method to test whether objects in a particular rectangle need to be drawn.
@@ -26,7 +30,7 @@ If your custom view is a direct `NSView` subclass, you do not need to call `supe
 
 For more information, see [`Drawing`](nsview-drawing.md).
 
-This method also supports automatic observation tracking. See [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method also supports automatic observation tracking. See [`Updating views automatically with observation tracking in AppKit`](updating-views-automatically-with-observation-tracking-in-appkit.md).
 
 ## Parameters
 
@@ -42,8 +46,8 @@ This method also supports automatic observation tracking. See [`Updating views a
   Displays the view and all its subviews if possible, invoking each of the `NSView` methods [`lockFocus()`](nsview/lockfocus().md), [`draw(_:)`](nsview/draw(_:).md), and [`unlockFocus()`](nsview/unlockfocus().md) as necessary.
 - [var isFlipped: Bool](nsview/isflipped.md)
   A Boolean value indicating whether the view uses a flipped coordinate system.
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 - [func layout()](nsview/layout.md)
   Perform layout in concert with the constraint-based layout system.
 - [func updateConstraints()](nsview/updateconstraints.md)

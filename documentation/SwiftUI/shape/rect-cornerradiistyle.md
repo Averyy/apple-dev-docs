@@ -22,26 +22,30 @@ static func rect(cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle = 
 
 ## See Also
 
-- [static var buttonBorder: ButtonBorderShape](shape/buttonborder.md)
-  A shape that defers to the environment to determine the resolved button border shape.
-- [static var capsule: Capsule](shape/capsule.md)
-  A capsule shape aligned inside the frame of the view containing it.
-- [static func capsule(style: RoundedCornerStyle) -> Self](shape/capsule(style:).md)
-  A capsule shape aligned inside the frame of the view containing it.
-- [static var circle: Circle](shape/circle.md)
-  A circle centered on the frame of the view containing it.
-- [static var containerRelative: ContainerRelativeShape](shape/containerrelative.md)
-  A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
-- [static var ellipse: Ellipse](shape/ellipse.md)
-  An ellipse aligned inside the frame of the view containing it.
 - [static var rect: Rectangle](shape/rect.md)
   A rectangular shape aligned inside the frame of the view containing it.
 - [static func rect(cornerRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(cornerradius:style:).md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
+- [static func rect(corners: Edge.Corner.Style, isUniform: Bool) -> Self](shape/rect(corners:isuniform:).md)
+  Creates a rectangle with the same corner style set on four corners.
 - [static func rect(cornerSize: CGSize, style: RoundedCornerStyle) -> Self](shape/rect(cornersize:style:).md)
   A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
+- [static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(topleadingcorner:toptrailingcorner:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with individual styles for each corner.
 - [static func rect(topLeadingRadius: CGFloat, bottomLeadingRadius: CGFloat, bottomTrailingRadius: CGFloat, topTrailingRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(topleadingradius:bottomleadingradius:bottomtrailingradius:toptrailingradius:style:).md)
   A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
+- [static func rect(uniformBottomCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformbottomcorners:topleadingcorner:toptrailingcorner:).md)
+  Creates a rectangle with a corner style set on the two bottom corners uniformly, and two other styles for the two top corners respectively.
+- [static func rect(uniformLeadingCorners: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:toptrailingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two leading corners, and two other styles for the two trailing corners respectively.
+- [static func rect(uniformLeadingCorners: Edge.Corner.Style, uniformTrailingCorners: Edge.Corner.Style) -> Self](shape/rect(uniformleadingcorners:uniformtrailingcorners:).md)
+  Creates a rectangle with a corner style uniformly set on the two leading corners, and another style uniformly set on the two trailing corners.
+- [static func rect(uniformTopCorners: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:bottomleadingcorner:bottomtrailingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two top corners, and two other styles for the bottom two corners respectively.
+- [static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edge.Corner.Style) -> Self](shape/rect(uniformtopcorners:uniformbottomcorners:).md)
+  Creates a rectangle with a corner style uniformly set on the two top corners, and another style uniformly set on the two bottom corners.
+- [static func rect(uniformTrailingCorners: Edge.Corner.Style, topLeadingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style) -> Self](shape/rect(uniformtrailingcorners:topleadingcorner:bottomleadingcorner:).md)
+  Creates a rectangle with a corner style uniformly set on the two trailing corners, and two other styles for the two leading corners respectively.
 
 
 ---

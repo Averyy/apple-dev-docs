@@ -10,9 +10,7 @@ An intent schema that posts the provided photos or files and optional comment to
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- tvOS 18.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

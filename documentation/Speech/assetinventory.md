@@ -61,6 +61,8 @@ When your app no longer needs assets for a particular locale, call [`release(res
 
 ## See Also
 
+- [Speech updates](../Updates/Speech.md)
+  Learn about important changes to Speech.
 - [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
   Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)

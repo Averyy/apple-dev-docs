@@ -21,7 +21,6 @@ protocol AppSchemaIntent : AppSchema.Kind
 ## Topics
 
 ### Type Properties
-- [static var appStore: some AppSchema.AppStoreIntent](appschemaintent/appstore.md)
 - [static var assistant: some AppSchema.AssistantIntent](appschemaintent/assistant.md)
   The collection of intent schemas in the assistant domain.
 - [static var audio: some AppSchema.AudioIntent](appschemaintent/audio.md)
@@ -38,7 +37,6 @@ protocol AppSchemaIntent : AppSchema.Kind
   The collection of intent schemas in the clock domain.
 - [static var files: some AppSchema.FilesIntent](appschemaintent/files.md)
   The collection of intent schemas in the files domain.
-- [static var imageGeneration: some AppSchema.ImageGenerationIntent](appschemaintent/imagegeneration.md)
 - [static var journal: some AppSchema.JournalIntent](appschemaintent/journal.md)
   The collection of intent schemas in the journal domain.
 - [static var mail: some AppSchema.MailIntent](appschemaintent/mail.md)

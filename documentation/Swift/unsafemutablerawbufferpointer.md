@@ -78,7 +78,9 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 - [var baseAddress: UnsafeMutableRawPointer?](unsafemutablerawbufferpointer/baseaddress.md)
   A pointer to the first byte of the buffer.
 - [var bytes: RawSpan](unsafemutablerawbufferpointer/bytes.md)
+  A span over the bytes of this buffer.
 - [var mutableBytes: MutableRawSpan](unsafemutablerawbufferpointer/mutablebytes.md)
+  A mutable span over the bytes of this buffer.
 ### Instance Methods
 - [func assumingMemoryBound<T>(to: T.Type) -> UnsafeMutableBufferPointer<T>](unsafemutablerawbufferpointer/assumingmemorybound(to:).md)
   Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
@@ -101,7 +103,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
   Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/loadunaligned(frombyteoffset:as:)-7883k.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/loadunaligned(frombyteoffset:as:)-9iyyx.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawbufferpointer/loadunaligned(frombyteoffset:as:)-q4sv.md)
 - [func moveInitializeMemory<T>(as: T.Type, fromContentsOf: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T>](unsafemutablerawbufferpointer/moveinitializememory(as:fromcontentsof:)-3gs5r.md)
@@ -134,6 +136,7 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Escapable](escapable.md)

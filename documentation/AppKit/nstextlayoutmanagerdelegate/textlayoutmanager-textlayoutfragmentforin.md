@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
+Returns a text layout fragment for the specified location in the text element.
 
 **Availability**:
 - macOS 12.0+
@@ -16,7 +16,13 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, textLa
 
 #### Return Value
 
-An [`NSTextLayoutFragment`](nstextlayoutfragment.md).
+A layout fragment for the location, or `nil` to use the default.
+
+#### Discussion
+
+The delegate can provide an [`NSTextLayoutFragment`](nstextlayoutfragment.md) specialized for an [`NSTextElement`](nstextelement.md) subclass targeted for the rendering surface.
+
+The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
 
 #### Discussion
 
@@ -24,16 +30,16 @@ Use this to provide an [`NSTextLayoutFragment`](nstextlayoutfragment.md) special
 
 ## Parameters
 
-- `textLayoutManager`: The text layout manager.
-- `location`: The [`NSTextLocation`](nstextlocation.md) of the link in the text element.
-- `textElement`: The [`NSTextElement`](nstextelement.md) that the method could return a custom [`NSTextLayoutFragment`](nstextlayoutfragment.md) from.
+- `textLayoutManager`: The text layout manager sending the message.
+- `location`: The document location.
+- `textElement`: The text element containing the location.
 
 ## See Also
 
 - [func textLayoutManager(NSTextLayoutManager, renderingAttributesForLink: Any, at: any NSTextLocation, defaultAttributes: [NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]?](nstextlayoutmanagerdelegate/textlayoutmanager(_:renderingattributesforlink:at:defaultattributes:).md)
-  The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
+  Returns a dictionary of rendering attributes for rendering a link.
 - [func textLayoutManager(NSTextLayoutManager, shouldBreakLineBefore: any NSTextLocation, hyphenating: Bool) -> Bool](nstextlayoutmanagerdelegate/textlayoutmanager(_:shouldbreaklinebefore:hyphenating:).md)
-  The method the framework calls to determine the soft line break point.
+  Invoked while determining the soft line break point.
 
 
 ---

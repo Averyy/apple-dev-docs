@@ -18,6 +18,13 @@ The type of element in the set.
 typealias Element = any Markup
 ```
 
+## See Also
+
+- [MarkupOrderedSet.ElementID](markuporderedset/elementid.md)
+  The markup ID types supported in a markup ordered set.
+- [MarkupOrderedSet.ElementIDs](markuporderedset/elementids.md)
+  A view of a set’s ids.
+
 
 ---
 

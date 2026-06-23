@@ -144,6 +144,7 @@ Because floating-point types such as `Float` and `Double` are their own `Stride`
 - [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
 - [BidirectionalCollection](bidirectionalcollection.md)
 - [Collection](collection.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)

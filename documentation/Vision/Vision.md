@@ -186,9 +186,6 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 ### Structures
 - [struct BarcodeReaderTool](barcodereadertool.md)
   A tool that scans machine-readable codes in an image.
-- [struct DownloadableAssetsProgress](downloadableassetsprogress.md)
-- [struct GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
-  Generates a segmentation mask based on the provided points, rectangle, mask or scribble The request supports a maximum of 14 points or 12 points and a box
 - [struct OCRTool](ocrtool.md)
   A tool that recognizes text in an image.
 ### Enumerations

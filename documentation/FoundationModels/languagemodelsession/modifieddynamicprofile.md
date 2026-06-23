@@ -36,6 +36,7 @@ struct ModifiedDynamicProfile<Content, Modifier> where Content : LanguageModelSe
 - [LanguageModelSession.DynamicProfileBuilder](languagemodelsession/dynamicprofilebuilder.md)
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
+- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

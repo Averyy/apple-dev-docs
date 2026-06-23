@@ -83,8 +83,6 @@ Task { [weak self] in
   An array of visual adornments that appear on the markup canvas.
 - [func adornmentFrame(for: UUID) -> CGRect?](papermarkupviewcontroller/adornmentframe(for:).md)
   Returns the current frame of the specified adornment.
-- [func frame(forAdornmentWithID: UUID) -> CGRect?](papermarkupviewcontroller/frame(foradornmentwithid:).md)
-  Returns the current frame of the specified adornment.
 ### Scrolling and zooming
 - [var scrollConfiguration: PaperMarkupViewController.ScrollConfiguration](papermarkupviewcontroller/scrollconfiguration-swift.property.md)
   The configuration object that provides access to scroll view functionality.

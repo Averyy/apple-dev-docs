@@ -1,0 +1,21 @@
+# SGDataType.token
+
+**Framework**: RealityKit  
+**Kind**: case
+
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+- tvOS ?+
+- visionOS ?+
+
+## Declaration
+
+```swift
+case token
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit/sgdatatype/token)*

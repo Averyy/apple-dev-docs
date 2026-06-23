@@ -32,6 +32,13 @@ Present a [`WKWebView`](wkwebview.md) object from your custom view hierarchies a
   An object that encapsulates the standard behaviors to apply to websites.
 - [class WKWebpagePreferences](wkwebpagepreferences.md)
   An object that specifies the behaviors to use when loading and rendering page content.
+- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+  Constants that indicate how to render web view content.
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
+- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+  An enumeration that lists policies for how a web view that’s not in a window handles tasks.
+- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
 ### Web data management
 - [class WKWebsiteDataStore](wkwebsitedatastore.md)
   An object that manages cookies, disk and memory caches, and other types of data for a web view.
@@ -58,11 +65,13 @@ Present a [`WKWebView`](wkwebview.md) object from your custom view hierarchies a
   An object that contains information about an action that causes navigation to occur.
 - [class WKNavigationResponse](wknavigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
+- [class WKFormInfo](wkforminfo.md)
 ### Downloads
 - [class WKDownload](wkdownload.md)
   An object that represents the download of a web resource.
 - [protocol WKDownloadDelegate](wkdownloaddelegate.md)
   A protocol you implement to track download progress and handle redirects, authentication challenges, and failures.
+- [WKDownload.PlaceholderPolicy](wkdownload/placeholderpolicy.md)
 ### Page content
 - [class WKUserContentController](wkusercontentcontroller.md)
   An object for managing interactions between JavaScript code and your web view, and for filtering content in your web view.
@@ -76,6 +85,13 @@ Present a [`WKWebView`](wkwebview.md) object from your custom view hierarchies a
   An object that identifies the origin of a particular resource.
 - [class WKUserScript](wkuserscript.md)
   A script that the web view injects into a webpage.
+- [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
+- [class WKJSHandle](wkjshandle.md)
+  A WKJSHandle object contains a reference to a JavaScript object.
+- [class WKJSScriptingBuffer](wkjsscriptingbuffer.md)
+  A WKJSScriptingBuffer object exposes an application controlled data buffer to JavaScript.
+- [class WKJSSerializedNode](wkjsserializednode.md)
+  A `WKJSSerializedNode` object contains the serialized representation of a DOM node
 ### Page-level search
 - [class WKFindConfiguration](wkfindconfiguration.md)
   The configuration parameters to use when searching the contents of the web view.
@@ -102,14 +118,51 @@ Present a [`WKWebView`](wkwebview.md) object from your custom view hierarchies a
   An object that manages a set of loaded extension contexts.
 - [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
   A group of methods you use to customize web extension interactions.
+- [WKWebExtension.Action](wkwebextension/action.md)
+  An object that encapsulates the properties for an individual web extension action.
+- [WKWebExtension.Command](wkwebextension/command.md)
+  An object that encapsulates the properties for an individual web extension command.
+- [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
+  An object that represents a way to specify groups of URLs.
+- [WKWebExtension.MessagePort](wkwebextension/messageport.md)
+  An object that manages message-based communication with a web extension.
+- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+  An object that represents a record of stored data for a specific web extension context.
+- [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
+  An object that encapsulates configuration options for a tab in an extension.
+- [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)
+  An object that encapsulates configuration options for a window in an extension.
+- [WKWebExtensionController.Configuration](wkwebextensioncontroller/configuration-swift.class.md)
+  A [`WKWebExtensionController.Configuration`](wkwebextensioncontroller/configuration-swift.class.md) object with which to initialize a web extension controller.
 ### Errors
 - [WKError.Code](wkerror/code.md)
   Possible error values that WebKit APIs can return.
 - [struct WKError](wkerror.md)
   Possible error values that WebKit APIs can return.
+### Immersive environments
+- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
+- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
+- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Web extension errors
+- [WKWebExtension.Error.Code](wkwebextension/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) domain.
+- [WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](wkwebextensioncontext.md) domain.
+- [WKWebExtension.DataRecord.Error.Code](wkwebextension/datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
+- [WKWebExtension.DataRecord.Error](wkwebextension/datarecord/error.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
+- [WKWebExtension.MatchPattern.Error.Code](wkwebextension/matchpattern/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
+- [WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+- [WKWebExtension.MessagePort.Error](wkwebextension/messageport/error.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
 
 ## See Also
 

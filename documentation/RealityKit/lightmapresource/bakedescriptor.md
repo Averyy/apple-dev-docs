@@ -28,6 +28,12 @@ enum BakeDescriptor
 - [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](lightmapresource/bakedescriptor/ambientocclusion(_:).md)
 - [var bakeType: LightmapResource.BakeType](lightmapresource/bakedescriptor/baketype.md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [LightmapResource.FinalShadedColorBakeDescriptor](lightmapresource/finalshadedcolorbakedescriptor.md)

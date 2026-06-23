@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The quality of the soft shadows this light casts.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,6 +18,12 @@
 ```swift
 var quality: SpotLightComponent.Shadow.QualityMode { get set }
 ```
+
+#### Discussion
+
+Higher quality modes use more samples per shadow, which increases GPU work. Excessive use of higher shadow quality lights may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding scenes. Monitor the thermal state to lower quality as a mitigation, if necessary. Apps can monitor thermal state changes by subscribing to the [`thermalStateDidChange`](https://developer.apple.comhttps://developer.apple.com/documentation/foundation/notificationcenter/messageidentifier/thermalstatedidchange) notification.
+
+To stay responsive to the device’s available thermal headroom, read `ProcessInfo.processInfo.thermalState` and observe `ProcessInfo.thermalStateDidChangeNotification` to react when it changes. As the reported state moves from `.fair` toward `.serious` and `.critical` switch the light to a lower quality.
 
 ## See Also
 

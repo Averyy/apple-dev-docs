@@ -3,7 +3,7 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
-Value is a primitive with the given type
+Legacy. Do not construct in new code.
 
 **Availability**:
 - iOS 27.0+ (Beta)

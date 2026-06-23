@@ -102,7 +102,7 @@ if let container = bouncingBall.parent {
 
 The [`DragGesture`](https://developer.apple.com/documentation/SwiftUI/DragGesture) structure’s initializer,  [`init(minimumDistance:coordinateSpace3D:)`](https://developer.apple.com/documentation/SwiftUI/DragGesture/init(minimumDistance:coordinateSpace3D:)), is a spatial SwiftUI gesture that supports motion in three dimensions. During the gesture, switch the physics body to [`PhysicsBodyMode.kinematic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/kinematic) mode, to allow manual positioning. While dragging, the ball follows your index finger using an [`AnchorEntity`](https://developer.apple.com/documentation/RealityKit/AnchorEntity) which ARKit attaches to your right finger tip making it appear as if you are moving the bouncing ball with your hand. On release, switch the physics body to [`PhysicsBodyMode.dynamic`](https://developer.apple.com/documentation/RealityKit/PhysicsBodyMode/dynamic) mode to re-engage physics simulation on the ball and provide an impulse the app bases on the calculating the velocity from position and time deltas. With this interaction, you can throw the ball in a natural gesture.
 
-> **Note**: For a more complete hand tracking sample with throwing support, see doc://com.apple.developer/documentation/realitykit/integrating-virtual-objects-with-your-environment.
+> **Note**: For a more complete hand tracking sample with throwing support, see [`Integrating virtual objects with your environment`](https://developer.apple.com/documentation/RealityKit/integrating-virtual-objects-with-your-environment).
 
 #### Define How the Ball Interacts with the Scene
 

@@ -31,7 +31,7 @@ struct MusicPersonalRecommendationsRequest
 - [var limit: Int?](musicpersonalrecommendationsrequest/limit.md)
   A limit for the number of recommendations to return in the personal recommendations response.
 - [var offset: Int?](musicpersonalrecommendationsrequest/offset.md)
-  An offet for the request.
+  An offset for the request.
 ### Instance Methods
 - [func response() async throws -> MusicPersonalRecommendationsResponse](musicpersonalrecommendationsrequest/response.md)
   Fetches the music recommendations based on the user’s library and listening history.

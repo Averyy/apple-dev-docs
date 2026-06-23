@@ -21,8 +21,10 @@ protocol NSTextLocation : NSObjectProtocol
   Compares and returns the logical ordering to location.
 ### Instance Properties
 - [var hash: Int](nstextlocation/hash.md)
+  Must be consistent with results from `isEqual:` while also avoiding hash collisions.
 ### Instance Methods
 - [func isEqual(Any?) -> Bool](nstextlocation/isequal(_:).md)
+  Returns `true` for locations representing the same document position.
 
 ## Relationships
 
@@ -37,6 +39,8 @@ protocol NSTextLocation : NSObjectProtocol
   A class that represents a single logical selection context that corresponds to an insertion point.
 - [class NSTextSelectionNavigation](nstextselectionnavigation.md)
   An interface you use to expose methods for obtaining results from actions performed on text selections.
+- [class NSTextSelectionManager](nstextselectionmanager.md)
+  An object that coordinates text selection behavior for custom text views.
 
 
 ---

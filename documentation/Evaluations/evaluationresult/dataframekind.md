@@ -11,7 +11,6 @@ The kind of DataFrame to convert for JSON serialization.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -37,7 +36,6 @@ let kind: EvaluationResult.DataFrameKind = .summary
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

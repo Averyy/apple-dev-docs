@@ -22,33 +22,31 @@ var utf8Span: UTF8Span { get }
 
 #### Return Value
 
-A `UTF8Span` over the code units of this substring.
+A `UTF8Span` over the code units of this `Substring`.
 
 #### Discussion
 
-> **Note**: In the case of bridged UTF-16 string instances (on Apple platforms) this property needs to transcode the code units every time it’s called.
-
-For example, if `string` has the bridged UTF-16 representation, the following code is accidentally quadratic because of this issue:
+> **Note**: On Apple platforms, this property must transcode the code units of bridged UTF-16 `String` instances on every access. For example, if `string` has the bridged UTF-16 representation,
 
 ```swift
-for word in string.split(separator: " ") {
-    useSpan(word.span)
-}
+  for word in string.split(separator: " ") {
+      useSpan(word.span)
+  }
 ```
 
-A workaround is to explicitly convert the string into its native UTF-8 representation:
+is accidentally quadratic because of this issue. A workaround is to explicitly convert the string into its native UTF-8 representation:
 
 ```swift
-var nativeString = consume string
-nativeString.makeContiguousUTF8()
-for word in nativeString.split(separator: " ") {
-    useSpan(word.span)
-}
+  var nativeString = consume string
+  nativeString.makeContiguousUTF8()
+  for word in nativeString.split(separator: " ") {
+      useSpan(word.span)
+  }
 ```
 
 This second option has linear time complexity, as expected.
 
-> **Note**: O(1) for native UTF-8 strings, O(n) for bridged UTF-16 strings.
+> **Note**: O(1) for native UTF-8 strings, O(*n*) for bridged UTF-16 strings.
 
 
 ---

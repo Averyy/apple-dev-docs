@@ -41,8 +41,6 @@ struct EmptyDynamicInstructions
   A dynamic instructions type that’s type-erased.
 - [struct TupleDynamicInstructions](tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
-- [struct AnyTool](anytool.md)
-  A tool that the framework invokes in dynamic instructions.
 
 
 ---

@@ -41,8 +41,6 @@ HealthKit stores a temporary [`HKDeletedObject`](hkdeletedobject.md) entry, lett
   Deletes the specified objects from the HealthKit store.
 - [func deleteObjects(of: HKObjectType, predicate: NSPredicate, withCompletion: (Bool, Int, (any Error)?) -> Void)](hkhealthstore/deleteobjects(of:predicate:withcompletion:).md)
   Deletes objects saved by this application that match the provided type and predicate.
-- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
-  Returns the earliest date permitted for samples.
 - [func save(HKObject, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/save(_:withcompletion:)-6fmtg.md)
   Saves the provided object to the HealthKit store.
 - [func save([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/save(_:withcompletion:)-47iwb.md)

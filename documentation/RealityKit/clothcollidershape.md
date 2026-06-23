@@ -33,6 +33,13 @@ enum ClothColliderShape
 - [ClothColliderShape.mesh(_:)](clothcollidershape/mesh(_:).md)
   A mesh collider shape.
 
+## Relationships
+
+### Conforms To
+- [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [struct ClothColliderComponent](clothcollidercomponent.md)

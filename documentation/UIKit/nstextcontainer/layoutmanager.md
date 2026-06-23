@@ -27,6 +27,7 @@ Avoid assigning a layout manager directly through this property. Instead, use th
 - [func addTextContainer(NSTextContainer)](nslayoutmanager/addtextcontainer(_:).md)
   Appends the specified text container to the series of text containers where the layout manager arranges text.
 - [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
+  The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
 - [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)

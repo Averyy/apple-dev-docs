@@ -17,7 +17,7 @@ An arithmetic node with one operand of the given data type, performing the speci
 ## Declaration
 
 ```swift
-case unaryArithmetic(type: MTLDataType, operation: UnaryOperation)
+case unaryArithmetic(type: ComputeNodeGraph.DataType, operation: UnaryOperation)
 ```
 
 

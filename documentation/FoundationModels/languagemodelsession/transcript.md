@@ -16,7 +16,7 @@ A full history of interactions, including user inputs and model responses.
 ## Declaration
 
 ```swift
-final var transcript: Transcript { get }
+final var transcript: Transcript { get set }
 ```
 
 ## Mentions

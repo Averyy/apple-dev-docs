@@ -14,7 +14,7 @@ A type that represents a number of bytes in a 32-bit address space.
 ## Declaration
 
 ```swift
-typedef uint32_t IOByteCount32;
+typedef UInt32 IOByteCount32;
 ```
 
 ## See Also

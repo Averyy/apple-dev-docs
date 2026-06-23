@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.serverError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates the framework couldn’t complete the evaluation due to server or network issues.
@@ -9,7 +9,6 @@ An error that indicates the framework couldn’t complete the evaluation due to 
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

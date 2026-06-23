@@ -577,6 +577,8 @@ Access sandbox testing through Developer Mode settings on your device, or config
 
 - [com.apple.developer.declared-age-range](../BundleResources/Entitlements/com.apple.developer.declared-age-range.md)
   A Boolean value indicating whether your app may request a person’s age range.
+- [Implementing age assurance and permissions](implementing-age-assurance-and-permissions.md)
+  Create a significant change flow to inform people about important updates in your app and request age-related permissions.
 
 
 ---

@@ -2,7 +2,13 @@
 
 **Framework**: ProximityReader
 
-Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
+Read and verify mobile driver’s license information without any additional hardware.
+
+**Availability**:
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- Xcode 15.0+
 
 #### Overview
 

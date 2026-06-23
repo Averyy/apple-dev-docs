@@ -16,15 +16,15 @@ In Xcode, when you run your app on a simulated or physical device, Device Hub op
 
 For more controls, expand the Device Hub compact window to show the sidebar, canvas, and inspector areas separately. Use the inspector to change the appearance of a device, get basic information (such as the name, operating system version, and device ID), download diagnostic files, and more.
 
-To manage your devices, select a device in the sidebar to see the status in the canvas. To add physical devices, use Device Hub to pair devices wirelessly or using a cable connected to your Mac. For more information, see [`Pairing your devices with your Mac`](pairing-your-devices-with-your-mac.md).
+To manage your simulated and physical devices, select a device in the sidebar to see the status in the canvas. To add physical devices, use Device Hub to pair devices wirelessly or using a cable connected to your Mac. For more information, see [`Managing your simulated and physical devices in Device Hub`](managing-your-simulated-and-physical-devices-in-device-hub.md).
 
 ## Topics
 
 ### Essentials
 - [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Pairing your devices with your Mac](pairing-your-devices-with-your-mac.md)
-  Pair physical devices to your Mac so you can choose them as run destinations in Xcode.
+- [Managing your simulated and physical devices in Device Hub](managing-your-simulated-and-physical-devices-in-device-hub.md)
+  Add custom simulators and pair physical devices with your Mac so you can choose them as run destinations in Xcode.
 - [Enabling Developer Mode on a device](enabling-developer-mode-on-a-device.md)
   Grant or deny permission for locally installed apps to run in iOS, iPadOS, watchOS, and visionOS.
 ### Device interactions

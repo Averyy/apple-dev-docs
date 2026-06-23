@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns the indices within `self` where the memory represented by `other` is located, or `nil` if `other` is not located within `self`.
+Returns the indices within this span where the memory represented by other is located, or nil if other is not located within this span.
 
 **Availability**:
 - iOS 12.2+
@@ -22,11 +22,11 @@ func indices(of other: borrowing Span<Element>) -> Range<Span<Element>.Index>?
 
 #### Return Value
 
-A range of indices within `self`, or `nil`
+A range of indices within `self`, or `nil`.
 
-#### Discussion
+## Parameters
 
-- other: a span that may be a subrange of `self`
+- `other`: A span that may be a subrange of `self`
 
 
 ---

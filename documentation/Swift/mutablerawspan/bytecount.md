@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+The number of bytes in the span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

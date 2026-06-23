@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Remove the last N elements, returning the memory they occupy to the uninitialized state.
+Remove the last n bytes from this span, returning the memory they occupy to the uninitialized state.
 
 **Availability**:
 - iOS 12.2+
@@ -17,12 +17,16 @@ Remove the last N elements, returning the memory they occupy to the uninitialize
 ## Declaration
 
 ```swift
-mutating func removeLast(_ k: Int)
+mutating func removeLast(_ n: Int)
 ```
 
 #### Discussion
 
-`n` must not be greater than `count`
+`n` must not be greater than `byteCount`.
+
+## Parameters
+
+- `n`: The number of bytes to remove. `n` must not be negative or greater than `byteCount`.
 
 
 ---

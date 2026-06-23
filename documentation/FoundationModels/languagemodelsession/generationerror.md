@@ -11,6 +11,7 @@ An error that may occur while generating a response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -52,6 +53,8 @@ enum GenerationError
 ### Getting the recovery suggestion
 - [var recoverySuggestion: String?](languagemodelsession/generationerror/recoverysuggestion.md)
   A string representation of the recovery suggestion.
+### Default Implementations
+- [LocalizedError Implementations](languagemodelsession/generationerror/localizederror-implementations.md)
 
 ## Relationships
 
@@ -66,7 +69,7 @@ enum GenerationError
 - [LanguageModelSession.Error](languagemodelsession/error.md)
   A failure caused by incorrect use of a language model session.
 - [LanguageModelSession.ToolCallError](languagemodelsession/toolcallerror.md)
-  An error that occurs while a system language model is calling a tool.
+  An error that occurs while a language model is calling a tool.
 
 
 ---

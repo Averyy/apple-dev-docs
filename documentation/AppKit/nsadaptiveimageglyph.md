@@ -63,6 +63,7 @@ Typically, you receive new [`NSAdaptiveImageGlyph`](nsadaptiveimageglyph.md) obj
   The values for the attachment characteristics of attributed strings and related objects.
 - [class NSTextAttachmentViewProvider](nstextattachmentviewprovider.md)
   A container object that associates a text attachment at a particular document location with a view object.
+- [struct NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy.md)
 - [protocol NSTextAttachmentContainer](nstextattachmentcontainer.md)
   A set of methods that defines the interface to text attachment objects from a layout manager.
 - [protocol NSTextAttachmentLayout](nstextattachmentlayout.md)

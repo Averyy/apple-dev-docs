@@ -56,7 +56,14 @@ struct AccessibilitySettings
   A Boolean value that indicates whether Assistive Access is running.
 ### Creating an accessibility settings structure
 - [init()](accessibilitysettings/init.md)
+### Structures
+- [AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage](accessibilitysettings/applicationaccessibilityenableddidchangemessage.md)
+  A type- and concurrency-safe `NotificationCenter` message posted when the value of [`isApplicationAccessibilityEnabled`](accessibilitysettings/isapplicationaccessibilityenabled.md) changes.
 ### Type Properties
+- [static let applicationAccessibilityEnabledDidChangeNotification: NSNotification.Name](accessibilitysettings/applicationaccessibilityenableddidchangenotification.md)
+  Posted when the value returned by `AXApplicationAccessibilityEnabled()` changes.
+- [static var isApplicationAccessibilityEnabled: Bool](accessibilitysettings/isapplicationaccessibilityenabled.md)
+  Returns whether application accessibility is currently enabled for this process.
 - [static var isReduceHighlightingEffectsEnabled: Bool](accessibilitysettings/isreducehighlightingeffectsenabled.md)
 - [static var prefersActionSliderAlternative: Bool](accessibilitysettings/prefersactionslideralternative.md)
 - [static let prefersActionSliderAlternativeDidChangeNotification: NSNotification.Name](accessibilitysettings/prefersactionslideralternativedidchangenotification.md)

@@ -10,9 +10,7 @@ An intent schema that warms up an audio item by setting the queue without starti
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

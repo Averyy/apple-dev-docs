@@ -21,7 +21,7 @@ struct Instructions
 
 #### Overview
 
-Instructions are typically provided to define the role and behavior of the model. Apple trains the model to obey instructions over any commands it receives in prompts. This is a security mechanism to help mitigate prompt injection attacks.
+Instructions are typically provided to define the role and behavior of the model. The model is typically trained to obey instructions over any commands it receives in prompts. This is a security mechanism to help mitigate prompt injection attacks.
 
 ## Topics
 
@@ -72,7 +72,6 @@ Instructions are typically provided to define the role and behavior of the model
 - [Transcript.ToolOutput](transcript/tooloutput.md)
   A tool output provided back to the model.
 - [Transcript.CustomSegment](transcript/customsegment.md)
-  A segment whose content is defined by a custom content.
 
 
 ---

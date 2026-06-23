@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.evaluationResultSignatureInvalid
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates the payload signature for the evaluation result from the server was invalid.
@@ -9,7 +9,6 @@ An error that indicates the payload signature for the evaluation result from the
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

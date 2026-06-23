@@ -76,13 +76,6 @@ In addition to indexing content, iOS provides additional strategies for making y
   The behavior configuration to use for a search query.
 - [class CSSuggestion](cssuggestion.md)
   The kind of suggestion to use in a query.
-### Type resolution
-- [class UTTypeHierarchyStrategy](uttypehierarchystrategy.md)
-  Strategy for resolving UTTypes by walking the LaunchServices type hierarchy using BFS traversal
-- [struct UTTypeResolutionResult](uttyperesolutionresult.md)
-  Result of a UTType resolution operation with confidence metrics and context
-- [protocol UTTypeResolutionStrategy](uttyperesolutionstrategy.md)
-  Protocol for pluggable UTType resolution strategies
 ### Errors
 - [struct CSIndexError](csindexerror.md)
   Index errors returned by Core Spotlight.

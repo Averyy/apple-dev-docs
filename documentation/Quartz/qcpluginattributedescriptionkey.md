@@ -14,6 +14,10 @@ The key for the custom patch description.
 let QCPlugInAttributeDescriptionKey: String
 ```
 
+#### Discussion
+
+The associated value is an [`NSString`](https://developer.apple.com/documentation/Foundation/NSString) object.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

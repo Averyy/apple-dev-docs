@@ -1,6 +1,6 @@
 # InsightEvaluator.AuthorizationStatus.unavailable
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates insights aren’t available on the current device.
@@ -9,7 +9,6 @@ A value that indicates insights aren’t available on the current device.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

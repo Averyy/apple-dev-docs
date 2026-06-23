@@ -16,6 +16,7 @@ Creates a builder with an optional component.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildOptional(_ instructions: Instructions?) -> Instructions
 ```
 

@@ -1,6 +1,6 @@
 # init(audioProvider:)
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: init
 
 Creates a music understanding session that accepts streaming audio buffers.

@@ -53,14 +53,6 @@ class NSTextTableBlock
 
 ## See Also
 
-- [class NSParagraphStyle](nsparagraphstyle.md)
-  The paragraph or ruler attributes for an attributed string.
-- [class NSMutableParagraphStyle](nsmutableparagraphstyle.md)
-  An object for changing the values of the subattributes in a paragraph style attribute.
-- [class NSTextTab](nstexttab.md)
-  A tab in a paragraph.
-- [class NSTextList](nstextlist.md)
-  A section of text that forms a single list.
 - [class NSTextTable](nstexttable.md)
   An object that represents a text table as a whole.
 - [class NSTextBlock](nstextblock.md)

@@ -15,6 +15,10 @@ Enqueues a request on an isochronous endpoint.
 func enqueueIORequest(with data: NSMutableData, frameList: UnsafeMutablePointer<IOUSBHostIsochronousFrame>, frameListCount: Int, firstFrameNumber: UInt64) async throws -> (IOReturn, UnsafeMutablePointer<IOUSBHostIsochronousFrame>)
 ```
 
+#### Return Value
+
+`YES` if the request queues successfully; otherwise, `NO`.
+
 #### Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift

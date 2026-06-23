@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: method
 
+Subscribes to a serializable action event and returns a `ActionResult`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,6 +18,20 @@
 ```swift
 @MainActor
 @preconcurrency static func subscribe(to eventType: ActionEventType, _ handler: @escaping @MainActor (ActionEvent<Self>) -> ActionResult)
+```
+
+#### Discussion
+
+For example, you can call this method to subscribe to the update event, which the system calls each frame it evaluates the action:
+
+```swift
+struct MyAction: BehaviorTreeAction, Codable {
+    ...
+}
+MyAction.subscribe(to: .updated) { event in
+    // Return value is the action result.
+    return .success
+}
 ```
 
 

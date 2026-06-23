@@ -37,7 +37,6 @@ This class is the parent of, and contains common properties and methods for [`Cu
 
 ### Conforming Types
 - [CustomMaterial.GeometryModifier](custommaterial/geometrymodifier.md)
-- [CustomMaterial.PostLightingShader](custommaterial/postlightingshader.md)
 - [CustomMaterial.SurfaceShader](custommaterial/surfaceshader.md)
 
 ## See Also

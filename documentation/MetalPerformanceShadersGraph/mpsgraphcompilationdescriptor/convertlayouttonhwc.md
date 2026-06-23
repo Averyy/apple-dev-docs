@@ -3,7 +3,7 @@
 **Framework**: Metal Performance Shaders Graph  
 **Kind**: method
 
-Turns on Automatic Layout Conversion (for conv like operations) for GPU. DEPRECATED: Layout conversion is now default, so this function is a no-op.
+Turns on Automatic Layout Conversion (for conv like operations) for GPU.
 
 **Availability**:
 - iOS 26.4+

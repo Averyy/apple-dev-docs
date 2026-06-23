@@ -26,8 +26,8 @@ Use `shape` if you need consistent relative proportions that don’t change when
 
 ```swift
 var shape = ShapeMarkup(
-    frame: CGRect(x: 0, y: 0, width: 100, height: 100),
-    type: .roundedRectangle(cornerRadius: 0.2)
+    shape: .roundedRectangle(cornerRadius: 0.2),
+    frame: CGRect(x: 0, y: 0, width: 100, height: 100)
 )
 
 // shapeScaled returns .roundedRectangle(cornerRadius: 20.0) // 20 points
@@ -35,6 +35,12 @@ var shape = ShapeMarkup(
 shape.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
 // shapeScaled now returns .roundedRectangle(cornerRadius: 40.0) // 40 points
 ```
+
+## See Also
+
+- [var shape: ShapeMarkup.Shape](shapemarkup/shape-swift.property.md)
+  The type of the shape.
+- [ShapeMarkup.Shape](shapemarkup/shape-swift.enum.md)
 
 
 ---

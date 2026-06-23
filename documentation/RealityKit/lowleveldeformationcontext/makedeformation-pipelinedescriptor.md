@@ -29,13 +29,6 @@ The pipeline must originate from this context.
 - `pipeline`: The compiled pipeline to bind the deformation to.
 - `descriptor`: An object that describes the per-frame data requirements.
 
-## See Also
-
-- [func makePipeline(desc: LowLevelDeformation.Pipeline.Descriptor) throws -> LowLevelDeformation.Pipeline](lowleveldeformationcontext/makepipeline(desc:)-9riyx.md)
-  Creates a compute pipeline synchronously.
-- [func makePipeline(desc: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline](lowleveldeformationcontext/makepipeline(desc:)-4ybrk.md)
-  Creates a compute pipeline asynchronously.
-
 
 ---
 

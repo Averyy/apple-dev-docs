@@ -56,6 +56,10 @@ The HealthKit framework is available on devices running iPadOS 16 and earlier an
   Requests permission to save and read the data types specified by an extension.
 - [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
+- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+  Returns the earliest date that the framework permits your app to save or read samples.
 
 
 ---

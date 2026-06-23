@@ -50,7 +50,6 @@ protocol StatefulRequest : VisionRequest
 - [DetectHumanBodyPose3DRequest](detecthumanbodypose3drequest.md)
 - [DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
-- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 - [TrackHomographicImageRegistrationRequest](trackhomographicimageregistrationrequest.md)
 - [TrackObjectRequest](trackobjectrequest.md)
 - [TrackOpticalFlowRequest](trackopticalflowrequest.md)

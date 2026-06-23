@@ -22,7 +22,7 @@ var byteCount: Int { get }
 
 #### Discussion
 
-To check whether the span is empty, use its `isEmpty` property instead of comparing `count` to zero.
+To check whether the span is empty, use its `isEmpty` property instead of comparing `byteCount` to zero.
 
 > **Note**: O(1)
 

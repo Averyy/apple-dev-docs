@@ -1,6 +1,6 @@
 # rawValue
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The raw value string.

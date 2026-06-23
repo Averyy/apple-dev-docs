@@ -73,7 +73,6 @@ enum Result<Success, Failure> where Failure : Error, Success : ~Copyable, Succes
 - [Equatable](equatable.md)
 - [Escapable](escapable.md)
 - [Hashable](hashable.md)
-- [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

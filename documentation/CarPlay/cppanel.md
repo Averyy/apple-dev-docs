@@ -19,8 +19,11 @@ class CPPanel
 ### Initializers
 - [init?(coder: NSCoder)](cppanel/init(coder:).md)
 ### Instance Properties
-- [var identifier: UUID](cppanel/identifier.md)
-  A unique identifier for this panel.
+- [var showsCloseButton: Bool](cppanel/showsclosebutton.md)
+  A Boolean value indicating whether the close button is allowed to appear.
+### Type Properties
+- [class var maximumPanelItemsCount: Int](cppanel/maximumpanelitemscount.md)
+  The maximum panel items count.
 
 ## Relationships
 

@@ -16,6 +16,7 @@ Runs an action whenever a tool is called within this dynamic profile.
 ## Declaration
 
 ```swift
+@export(implementation)
 func onToolCall(perform action: nonisolated(nonsending) sending @escaping () async throws -> Void) -> some LanguageModelSession.DynamicProfile
 ```
 

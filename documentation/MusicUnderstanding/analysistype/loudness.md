@@ -1,6 +1,6 @@
 # loudness
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 A value that identifies the loudness music analysis type.

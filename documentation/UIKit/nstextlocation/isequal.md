@@ -4,6 +4,8 @@
 **Kind**: method  
 **Required**: Yes
 
+Returns `true` for locations representing the same document position.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -17,6 +19,10 @@
 ```swift
 func isEqual(_ location: Any?) -> Bool
 ```
+
+#### Discussion
+
+Must not depend on auxiliary state such as affinity or visual-edge preference. Locations from different data source methods are compared using `isEqual:` and must agree when they refer to the same position.
 
 
 ---

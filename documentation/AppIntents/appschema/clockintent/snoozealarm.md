@@ -10,9 +10,7 @@ An intent schema that snoozes the firing alarm.
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

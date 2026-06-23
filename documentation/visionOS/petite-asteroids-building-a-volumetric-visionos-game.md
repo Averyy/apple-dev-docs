@@ -688,6 +688,8 @@ The design of the music scoring separates linear and nonlinear categories. The l
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 - [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
   Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
+- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 
 
 ---

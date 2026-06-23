@@ -22,6 +22,12 @@ struct FinalShadedColorBakeDescriptor
 ### Creating a bake descriptor
 - [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/finalshadedcolorbakedescriptor/init(sourceatlasreference:).md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [LightmapResource.BakeDescriptor](lightmapresource/bakedescriptor.md)

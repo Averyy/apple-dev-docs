@@ -39,7 +39,9 @@ let b = a + CollectionOfOne(toAdd)
   Creates an instance containing just the given element.
 ### Instance Properties
 - [var mutableSpan: MutableSpan<Element>](collectionofone/mutablespan.md)
+  A mutable span over the single element of this collection.
 - [var span: Span<Element>](collectionofone/span.md)
+  A span over the single element of this collection.
 ### Instance Methods
 - [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](collectionofone/withbytes(_:).md)
 ### Default Implementations
@@ -57,8 +59,11 @@ let b = a + CollectionOfOne(toAdd)
 
 ### Conforms To
 - [BidirectionalCollection](bidirectionalcollection.md)
+- [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)

@@ -43,7 +43,7 @@ The style dictionary determines the pass type. To provide the upgraded boarding 
 
 #### Add the Required Semantic Tags
 
-![An image of a mock boarding pass with a semantic tag diagram.](https://docs-assets.developer.apple.com/published/32687ac26da2d61cd838654322120195/pass-fields-layout-airline-boarding-pass-semantic%402x.png)
+![An image of a mock boarding pass with a semantic tag diagram.](https://docs-assets.developer.apple.com/published/76d88e5390205af2733c370fefad8cb9/pass-fields-layout-airline-boarding-pass-semantic%402x.png)
 
 Semantic tags are objects that contain machine-readable metadata the system uses to offer a pass and suggest related actions. For the semantic boarding pass style, the following list of semantic tags is required. If you omit any of the tags, your pass falls back to the legacy boarding pass style. For more information on semantic tags, see [`SemanticTags`](semantictags.md).
 

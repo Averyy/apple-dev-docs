@@ -17,11 +17,11 @@ func createFile(name: FSFileName, in directory: FSItem, attributes: FSItem.SetAt
 
 #### Discussion
 
-This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
+This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`. Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 
 Packing extents in this method requires that `attributes` defines a size greater than 0.
 
-An implementation that doesn’t supply the extents can ignore the packer and call the corresponding method in the [`FSVolume.Operations`](fsvolume/operations.md) protocol, [`createItem(named:type:inDirectory:attributes:replyHandler:)`](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md).
+An implementation that doesn’t supply the extents can ignore the packer and call the corresponding method in the [`FSVolume.Operations`](fsvolume/operations.md) protocol, `FSVolume/Operations/createItem(named:type:inDirectory:attributes:)`.
 
 ## Parameters
 

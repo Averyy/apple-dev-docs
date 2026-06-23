@@ -22,6 +22,12 @@ struct IndirectDiffuseIrradianceBakeDescriptor
 ### Creating a descriptor
 - [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/indirectdiffuseirradiancebakedescriptor/init(sourceatlasreference:).md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [LightmapResource.BakeDescriptor](lightmapresource/bakedescriptor.md)

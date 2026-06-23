@@ -60,7 +60,7 @@ struct OrderAlbum: AppIntent {
 }
 ```
 
-In addition to this protocol, you can define intents that support common actions. System-defined schemas define the requirements needed to support common actions, including the app intent protocol your type needs to adopt and any parameters it needs to define. For example, the `AssistantSchemas.PhotosIntent.openAlbum` intent requires conformance to the [`OpenIntent`](openintent.md) protocol and a property with an [`AppEntity`](appentity.md) type for the photo album. For information about the available schemas, see doc:app-intent-domains.
+In addition to this protocol, you can define intents that support common actions. System-defined schemas define the requirements needed to support common actions, including the app intent protocol your type needs to adopt and any parameters it needs to define. For example, the `AssistantSchemas.PhotosIntent.openAlbum` intent requires conformance to the [`OpenIntent`](openintent.md) protocol and a property with an [`AppEntity`](appentity.md) type for the photo album. For information about the available schemas, see [`App schema domains`](app-schema-domains.md).
 
 For additional app intent protocols you can adopt in your app, see [`App intent types`](app-intent-types.md). For information on how to create an app intent, see [`Creating your first app intent`](creating-your-first-app-intent.md).
 

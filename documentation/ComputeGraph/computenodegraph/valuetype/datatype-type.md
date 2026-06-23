@@ -3,7 +3,7 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
-Value is stored as a metal primitive data type.
+Legacy. Do not construct in new code.
 
 **Availability**:
 - iOS 27.0+ (Beta)

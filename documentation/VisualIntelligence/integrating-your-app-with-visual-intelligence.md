@@ -41,7 +41,7 @@ struct LandmarkEntity: IndexedEntity {
 }
 ```
 
-For additional information about display representations, refer to doc://com.apple.documentation/documentation/appintents/integrating-custom-types-into-your-intents#Provide-a-visual-representation-for-your-entity.
+For additional information about display representations, refer to [`Defining app entities for your custom data types`](https://developer.apple.com/documentation/AppIntents/defining-app-entities-for-your-custom-data-types).
 
 ##### Provide Search Results
 
@@ -110,7 +110,7 @@ struct OpenLandmarkIntent: OpenIntent {
 
 Adopting the `OpenIntent` protocol isn’t specific to integrating your app with visual intelligence. Adopting App Intents, including one or more `OpenIntent` implementations, is a best practice for modern apps that offer additional integration with system experiences. If you’ve already adopted App Intents, you might be able to reuse existing code to open an item in your app with an `OpenIntent`.
 
-For more information about adopting App Intents in your app, refer to [`App Intents`](https://developer.apple.com/documentation/AppIntents) and doc://com.apple.documentation/documentation/appintents/making-actions-and-content-discoverable-and-widely-available.
+For more information about adopting App Intents in your app, refer to [`App Intents`](https://developer.apple.com/documentation/AppIntents) and [`Making actions and content discoverable by Apple Intelligence`](https://developer.apple.com/documentation/AppIntents/making-actions-and-content-discoverable-by-apple-intelligence).
 
 ##### Return Different Values in One Query
 

@@ -26,6 +26,10 @@ This property is async because an in-memory `CGImage` is not always loaded from 
 
 ## See Also
 
+- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+  Replaces the contents of this image markup with an image file.
+- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+  Replaces the contents of this image markup with a `CGImage`.
 - [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
   The orientation of the image content.
 - [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)

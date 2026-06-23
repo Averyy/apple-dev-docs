@@ -15,7 +15,7 @@ Sets the buffer containing per-vertex influence weights.
 ## Declaration
 
 ```swift
-func setInfluenceWeights(_ buffer: any MTLBuffer, offset: Int) throws(LowLevelDeformation.Error)
+func setInfluenceWeights(_ buffer: any MTLBuffer, offset: Int) throws
 ```
 
 #### Discussion
@@ -31,12 +31,12 @@ The buffer must contain `influencesPerVertex × vertexCount` Float values.
 
 ## See Also
 
-- [func setJointTransforms(any MTLBuffer, offset: Int) throws(LowLevelDeformation.Error)](lowleveldeformation/skinning-swift.struct/setjointtransforms(_:offset:).md)
+- [func setJointTransforms(any MTLBuffer, offset: Int) throws](lowleveldeformation/skinning-swift.struct/setjointtransforms(_:offset:).md)
   Sets the buffer containing joint transform matrices.
-- [func setInverseBindPoses(any MTLBuffer, offset: Int) throws(LowLevelDeformation.Error)](lowleveldeformation/skinning-swift.struct/setinversebindposes(_:offset:).md)
+- [func setInverseBindPoses(any MTLBuffer, offset: Int) throws](lowleveldeformation/skinning-swift.struct/setinversebindposes(_:offset:).md)
   Sets the buffer containing inverse bind-pose matrices.
-- [func replaceInfluenceJointIndices<R>((inout MutableRawSpan) -> R) throws(LowLevelDeformation.Error) -> R](lowleveldeformation/skinning-swift.struct/replaceinfluencejointindices(_:).md)
-  Fills the influence joint index buffer using the given closure.
+- [func replaceInfluenceJointIndices<R>((inout MutableRawSpan) -> R) throws -> R](lowleveldeformation/skinning-swift.struct/replaceinfluencejointindices(_:).md)
+  Fills the influence joint index buffer using the given closure.    /// After the closure returns, the framework validates every index. An out-of-range index causes a throw.
 
 
 ---

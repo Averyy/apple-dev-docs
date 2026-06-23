@@ -1,6 +1,6 @@
 # InsightError.rateLimitError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates that the app has reached the rate limit for the particular insight type.
@@ -9,7 +9,6 @@ An error that indicates that the app has reached the rate limit for the particul
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

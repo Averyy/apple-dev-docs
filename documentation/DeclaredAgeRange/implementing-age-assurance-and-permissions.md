@@ -130,6 +130,13 @@ if change.introducedInVersion.compare(originalAppVersion, options: .numeric) != 
 }
 ```
 
+## See Also
+
+- [com.apple.developer.declared-age-range](../BundleResources/Entitlements/com.apple.developer.declared-age-range.md)
+  A Boolean value indicating whether your app may request a person’s age range.
+- [Requesting people’s age range information in your app](requesting-people-share-their-age-range-with-your-app.md)
+  Ask people to share their age range with your app, and tailor features for adults, teens, and children while preserving privacy.
+
 
 ---
 

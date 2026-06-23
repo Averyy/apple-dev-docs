@@ -10,9 +10,7 @@ An intent schema that creates a calendar event.
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst ?+
 - macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -54,8 +52,6 @@ For more information about the App Intents framework and the experiences it supp
 
 ## See Also
 
-- [var deleteEvents: some AppSchemaIntent](appschema/calendarintent/deleteevents.md)
-  An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 - [AppSchema.CalendarIntent](appschema/calendarintent.md)

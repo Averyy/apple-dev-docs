@@ -25,6 +25,8 @@ struct HeightData
 - [var vertices: [SIMD3<Float>]](navigationmeshresource/heightdata-swift.struct/vertices.md)
 - [var triangleIndices: [[Int]]](navigationmeshresource/heightdata-swift.struct/triangleindices.md)
 - [var polygonTriangleIndices: [Int]](navigationmeshresource/heightdata-swift.struct/polygontriangleindices.md)
+### Initializers
+- [init()](navigationmeshresource/heightdata-swift.struct/init.md)
 
 ## See Also
 

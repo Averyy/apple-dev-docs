@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Returns a span over all but the given number of initial elements.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,24 @@
 ```swift
 mutating func extracting(droppingFirst k: Int) -> MutableSpan<Element>
 ```
+
+#### Return Value
+
+A span starting after the specified number of elements.
+
+#### Discussion
+
+If the number of elements to drop exceeds the number of elements in the span, the result is an empty span.
+
+The returned span represents a mutation of this span.
+
+The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
+
+> **Note**: O(1)
+
+## Parameters
+
+- `k`: The number of elements to drop from the beginning of the span. `k` must be greater than or equal to zero.
 
 
 ---

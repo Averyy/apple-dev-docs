@@ -8,7 +8,8 @@ A component that renders 3D Gaussian splat data.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration
@@ -24,6 +25,8 @@ Use `GaussianSplatComponent` to display volumetric imagery captured from real en
 Unlike mesh-based rendering with `ModelComponent`, a `GaussianSplatComponent` doesn’t use developer-visible shaders. Instead, the framework renders each splat as an ellipsoid during the transparency render pass, blending splats back-to-front according to the resource’s sorting mode.
 
 > ❗ **Important**: Scene lighting doesn’t affect a Gaussian splat asset. The color of the rendered output reflects the lighting conditions present during the original capture.
+
+Gaussian splats are available on devices with Apple7 GPU family feature support.
 
 #### Providing Splat Data
 

@@ -11,6 +11,7 @@ Result is returned as a gray mask image. It can be nil if there is nothing to se
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

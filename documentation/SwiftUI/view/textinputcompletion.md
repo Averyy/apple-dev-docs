@@ -51,6 +51,10 @@ TextField("Location", text: $addressText)
   Sets how often the shift key in the keyboard is automatically enabled.
 - [struct TextInputAutocapitalization](textinputautocapitalization.md)
   The kind of autocapitalization behavior applied during text input.
+- [func textInputBorderShape(TextInputBorderShape) -> some View](view/textinputbordershape(_:).md)
+  Sets the border shape for text input controls in the view hierarchy.
+- [struct TextInputBorderShape](textinputbordershape.md)
+  A shape used to draw the border of a text input control.
 - [func textInputSuggestions<S>(() -> S) -> some View](view/textinputsuggestions(_:).md)
   Configures the text input suggestions for this view.
 - [func textInputSuggestions<Data, Content>(Data, content: (Data.Element) -> Content) -> some View](view/textinputsuggestions(_:content:).md)
@@ -63,10 +67,6 @@ TextField("Location", text: $addressText)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on macOS.
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
-- [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
-  Define which system text formatting controls are available.
-- [struct TextInputFormattingControlPlacement](textinputformattingcontrolplacement.md)
-  A structure defining the system text formatting controls available on each platform.
 
 
 ---

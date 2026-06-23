@@ -38,6 +38,8 @@ Repetitive acquisition of the assertion mechanism may result in a cooldown befor
 
 The exclusive use of the presentment intent expires after a predetermined timeout period. When this happens, the credential session’s event stream produces a [`CredentialSession.Event.presentmentIntentAssertionTimeout`](credentialsession/event/presentmentintentassertiontimeout.md) event.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is unavailable, or another entity is currently presenting a credential.
+
 ## See Also
 
 - [CredentialSession.PresentmentIntentAssertion](credentialsession/presentmentintentassertion.md)

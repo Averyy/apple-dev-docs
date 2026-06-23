@@ -3,8 +3,6 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
-Value is a `strided_buffer<element>`, a flexible method for referencing buffer data.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,10 +17,6 @@ Value is a `strided_buffer<element>`, a flexible method for referencing buffer d
 ```swift
 case pointer(type: ComputeNodeGraph.PointerDefinition)
 ```
-
-#### Discussion
-
-The type is set at compile time, and you configure the buffer’s address, stride, and count at runtime.
 
 
 ---

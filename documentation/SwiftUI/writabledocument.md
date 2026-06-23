@@ -20,7 +20,7 @@ protocol WritableDocument : AnyObject
 
 #### Overview
 
-Conform to `WritableDocument` in addition to [`ReadableDocument`](readabledocument.md) to support saving. You can also conform your type to `Document` protocol which conforms both to `WritableDocument` and `ReadableDocument`.
+If your document already conforms to [`ReadableDocument`](readabledocument.md), you can conform your type to [`Document`](document.md) protocol which conforms both to `WritableDocument` and `ReadableDocument`.
 
 Your implementation:
 
@@ -42,8 +42,14 @@ Your implementation:
 - [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
   Creates a snapshot of the document’s current state to be saved.
 
+## Relationships
+
+### Inherited By
+- [Document](document.md)
+
 ## See Also
 
+- [protocol Document](document.md)
 - [protocol ReadableDocument](readabledocument.md)
   A type that you use to read documents from file.
 - [class URLDocumentConfiguration](urldocumentconfiguration.md)

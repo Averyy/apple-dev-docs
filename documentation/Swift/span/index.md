@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: typealias
 
-The representation for a position in `Span`.
+The representation for an index in `Span`.
 
 **Availability**:
 - iOS 12.2+

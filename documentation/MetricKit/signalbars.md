@@ -30,9 +30,6 @@ This type replaces [`MXUnitSignalBars`](mxunitsignalbars.md).
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](signalbars/init(coder:).md)
-- [init(symbol: String, converter: UnitConverter)](signalbars/init(symbol:converter:).md)
 ### Type Methods
 - [static func baseUnit() -> SignalBars](signalbars/baseunit.md)
 

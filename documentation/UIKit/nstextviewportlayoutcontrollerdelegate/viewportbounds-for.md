@@ -36,6 +36,7 @@ A [`CGRect`](https://developer.apple.com/documentation/CoreFoundation/CGRect).
 - [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerwilllayout(_:).md)
   The method the framework calls before the text viewport layout controller starts its layout process.
 - [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+  Triggers relayout of the view.
 
 
 ---

@@ -10,7 +10,7 @@
 ## Declaration
 
 ```swift
-func requestPermission(for url: URL, referrerURL: URL?, presenting presentingView: UIView?) async throws -> BEWebContentFilterPermissionDecision
+func requestPermission(for url: URL, referrerURL: URL?, presenting presentingView: UIView?) async throws -> BEWebContentFilter.PermissionDecision
 ```
 
 #### Discussion

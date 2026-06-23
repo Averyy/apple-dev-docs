@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus.usedUnchangedFriction
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates the app evaluated the insights, but the insights didn’t have any impact on the decision or user flow.
@@ -9,7 +9,6 @@ A value that indicates the app evaluated the insights, but the insights didn’t
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

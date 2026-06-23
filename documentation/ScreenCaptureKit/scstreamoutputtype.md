@@ -49,6 +49,7 @@ enum SCStreamOutputType
   An instance that defines metadata keys for a stream frame.
 - [enum SCFrameStatus](scframestatus.md)
   Status values for a frame from a stream.
+- [class SCClipBufferingOutput](scclipbufferingoutput.md)
 
 
 ---

@@ -36,6 +36,8 @@ You can also use [`plain`](textfieldstyle/plain.md) to construct this style.
 
 ## See Also
 
+- [struct BorderedTextFieldStyle](borderedtextfieldstyle.md)
+  A text field style with a system-defined border.
 - [struct DefaultTextFieldStyle](defaulttextfieldstyle.md)
   The default text field style, based on the text field’s context.
 - [struct RoundedBorderTextFieldStyle](roundedbordertextfieldstyle.md)

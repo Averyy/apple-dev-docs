@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The identifiers of items moved during a reordering operation.
+The identifiers of items to move during a reordering operation.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -23,7 +23,7 @@ var sources: [ItemID]
 ## See Also
 
 - [var destination: ReorderDifference<ItemID, CollectionID>.Destination](reorderdifference/destination-swift.property.md)
-  The end position of items moved during a reordering operation.
+  The end position of items to move during a reordering operation.
 - [ReorderDifference.Destination](reorderdifference/destination-swift.struct.md)
   The destination value of a reordering operation.
 

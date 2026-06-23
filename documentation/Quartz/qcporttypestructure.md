@@ -14,6 +14,10 @@ The port type for a collection.
 let QCPortTypeStructure: String
 ```
 
+#### Discussion
+
+The port type for an array, dictionary, or other structure, such as an [`NSArray`](https://developer.apple.com/documentation/Foundation/NSArray) or [`NSDictionary`](https://developer.apple.com/documentation/Foundation/NSDictionary) object.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

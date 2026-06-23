@@ -39,6 +39,13 @@ class NSViewCornerRadii
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [class NSViewCornerConfiguration](nsviewcornerconfiguration.md)
+  A configuration object that defines the corner styles of a view’s overall shape.
+- [class NSViewCornerRadius](nsviewcornerradius.md)
+  Represents a radius used to round a corner. It supports fixed and adaptive configurations.
+
 
 ---
 

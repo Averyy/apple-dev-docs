@@ -134,6 +134,8 @@ For more information, see [`Image I/O Programming Guide`](https://developer.appl
 - [let kCGImagePropertyBCEncoder: CFString](kcgimagepropertybcencoder.md)
 - [let kCGImagePropertyBCFormat: CFString](kcgimagepropertybcformat.md)
 - [let kCGImagePropertyEncoder: CFString](kcgimagepropertyencoder.md)
+- [let kCGImagePropertyIPTCExtAISystemUsed: CFString](kcgimagepropertyiptcextaisystemused.md)
+- [let kCGImagePropertyIPTCExtAISystemVersionUsed: CFString](kcgimagepropertyiptcextaisystemversionused.md)
 - [let kCGImagePropertyOpenEXRCompression: CFString](kcgimagepropertyopenexrcompression.md)
 - [let kCGImagePropertyPVREncoder: CFString](kcgimagepropertypvrencoder.md)
 - [let kCGImageProviderPreferredTileHeight: CFString](kcgimageproviderpreferredtileheight.md)

@@ -1,6 +1,6 @@
 # time
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The time at which the value applies.

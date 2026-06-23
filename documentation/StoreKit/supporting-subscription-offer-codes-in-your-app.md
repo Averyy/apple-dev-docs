@@ -10,9 +10,9 @@ To help you acquire, retain, and win back customers, you can use offer codes. Of
 
 Create and configure offer codes in App Store Connect, and distribute them to your customers. Customers can redeem offer codes throught a redemption URL, or by entering the code directly in the App Store, or within your app if it implements one of the following APIs:
 
-- [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) on iOS, iPadOS, macOS, and visionOS
-- [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) on iOS, iPadOS, and visionOS
-- [`presentOfferCodeRedeemSheet(from:)`](appstore/presentoffercoderedeemsheet(from:).md) on macOS
+- Call [`offerCodeRedemption(options:isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(options:isPresented:onCompletion:)) if your app uses SwiftUI.
+- Call [`presentOfferCodeRedeemSheet(from:options:)`](appstore/presentoffercoderedeemsheet(from:options:)-89agc.md) if your app uses UIKit.
+- Call [`presentOfferCodeRedeemSheet(from:options:)`](appstore/presentoffercoderedeemsheet(from:options:)-gj8m.md) if your app uses AppKit for macOS.
 
 When customers redeem a valid offer code, your app receives a successful transaction. If customers redeem offer codes in the App Store and don’t have your app installed, they’re prompted to download it as part of the redemption flow. Successfully redeeming an offer code entitles the customer to the product, the same as a purchase does. Your app needs to provide service for the product.
 
@@ -28,13 +28,15 @@ For more information on creating and distributing offer codes, and to learn whic
 
 To display the system sheet for customers to redeem offer codes within your app, call one of the redemption APIs, depending on your app’s UI implementation:
 
-- Call [`offerCodeRedemption(isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(isPresented:onCompletion:)) if your app uses SwiftUI.
-- Call [`presentOfferCodeRedeemSheet(in:)`](appstore/presentoffercoderedeemsheet(in:).md) if your app uses UIKit.
-- Call [`presentOfferCodeRedeemSheet(from:)`](appstore/presentoffercoderedeemsheet(from:).md) if your app uses AppKit for macOS.
+- Call [`offerCodeRedemption(options:isPresented:onCompletion:)`](https://developer.apple.com/documentation/SwiftUI/View/offerCodeRedemption(options:isPresented:onCompletion:)) if your app uses SwiftUI.
+- Call [`presentOfferCodeRedeemSheet(from:options:)`](appstore/presentoffercoderedeemsheet(from:options:)-89agc.md) if your app uses UIKit.
+- Call [`presentOfferCodeRedeemSheet(from:options:)`](appstore/presentoffercoderedeemsheet(from:options:)-gj8m.md) if your app uses AppKit for macOS.
 
 The redemption sheet takes care of the redemption flow, including alerting customers about invalid entries, as appropriate. For example, an entry may be invalid if the offer code is expired or invalid, or if redeeming the code would result in a subscription downgrade.
 
-When customers redeem an offer code, StoreKit emits the resulting transaction in [`updates`](transaction/updates.md).  To ensure your app receives all the transactions that `updates` emits, set up the task to listen for transactions as soon as your app launches. See [`updates`](transaction/updates.md) for a code example.
+When a customer redeems an offer code, StoreKit delivers the resulting transaction as a [`VerificationResult`](verificationresult.md). For UIKit and AppKit, the method returns the transaction directly. For SwiftUI, the system delivers it through the `onCompletion` closure. Update your UI to grant the purchased content without delay, and call [`finish()`](transaction/finish().md).
+
+If your app can’t process the redemption immediately, StoreKit emits the transaction in [`updates`](transaction/updates.md) on the next app launch. To avoid missing any transactions, set up a [`Task`](https://developer.apple.com/documentation/Swift/Task) to listen for [`updates`](transaction/updates.md) as soon as your app launches. See [`updates`](transaction/updates.md) for a code example.
 
 Including the redemption sheet in your app is recommended, but optional. For more guidance on supporting offer code redemption within your app, see Human Interface Guidelines > [`In-app purchase`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/in-app-purchase).
 

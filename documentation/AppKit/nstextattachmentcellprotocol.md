@@ -64,6 +64,7 @@ With the exceptions of [`cellBaselineOffset()`](nstextattachmentcellprotocol/cel
   The values for the attachment characteristics of attributed strings and related objects.
 - [class NSTextAttachmentViewProvider](nstextattachmentviewprovider.md)
   A container object that associates a text attachment at a particular document location with a view object.
+- [struct NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy.md)
 - [class NSAdaptiveImageGlyph](nsadaptiveimageglyph.md)
   A data object for an emoji-like image that can appear in attributed text.
 - [protocol NSTextAttachmentContainer](nstextattachmentcontainer.md)

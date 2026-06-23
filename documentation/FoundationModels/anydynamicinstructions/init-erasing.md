@@ -16,6 +16,7 @@ Creates an instance from the dynamic instructions you specify.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(erasing dynamicInstructions: some DynamicInstructions)
 ```
 

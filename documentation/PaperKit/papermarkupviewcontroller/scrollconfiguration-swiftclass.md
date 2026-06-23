@@ -20,8 +20,6 @@ final class ScrollConfiguration
 
 ## Topics
 
-### Creating a scroll configuration
-- [init()](papermarkupviewcontroller/scrollconfiguration-swift.class/init.md)
 ### Configuring scroll indicators
 - [var visibleScrollIndicators: PaperMarkupViewController.ScrollConfiguration.Axis](papermarkupviewcontroller/scrollconfiguration-swift.class/visiblescrollindicators.md)
   The axes for which scroll indicators are visible.

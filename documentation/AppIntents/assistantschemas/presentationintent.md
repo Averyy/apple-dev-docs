@@ -41,14 +41,12 @@ protocol PresentationIntent : AssistantSchemas.Model
   The app intent conforms to the schema for creating a new slide for a presentation.
 - [var deleteSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/deleteslide.md)
   The app intent conforms to the schema for deleting a slide.
-- [var export: some AssistantSchemas.Intent](assistantschemas/presentationintent/export.md)
 - [var open: some AssistantSchemas.Intent](assistantschemas/presentationintent/open.md)
   The app intent conforms to the schema for opening a presentation.
 - [var openSlide: some AssistantSchemas.Intent](assistantschemas/presentationintent/openslide.md)
   The app intent conforms to the schema for opening a slide of a presentation.
 - [var setSlideTitle: some AssistantSchemas.Intent](assistantschemas/presentationintent/setslidetitle.md)
   The app intent conforms to the schema for setting the title of a slide.
-- [var showPresenterNotes: some AssistantSchemas.Intent](assistantschemas/presentationintent/showpresenternotes.md)
 - [var startPlayback: some AssistantSchemas.Intent](assistantschemas/presentationintent/startplayback.md)
   The app intent conforms to the schema for starting a presentation.
 - [var stopPlayback: some AssistantSchemas.Intent](assistantschemas/presentationintent/stopplayback.md)

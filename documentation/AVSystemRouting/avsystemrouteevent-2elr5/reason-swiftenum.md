@@ -28,7 +28,6 @@ enum Reason
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -37,8 +36,6 @@ enum Reason
 
 - [class AVSystemRouteEvent](avsystemrouteevent-2elr5.md)
   An object that represents an event that occurs on a system route.
-- [enum AVSystemRouteEventReason](avsystemrouteeventreason.md)
-  Values that indicate the reason for a routing event.
 
 
 ---

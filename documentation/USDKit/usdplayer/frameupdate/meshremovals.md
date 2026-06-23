@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let meshRemovals: [MeshID]
+let meshRemovals: [USDPlayer.MeshID]
 ```
 
 

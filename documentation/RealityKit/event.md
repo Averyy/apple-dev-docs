@@ -100,6 +100,7 @@ struct RealityGame: View {
 - [ComponentEvents.DidChange](componentevents/didchange.md)
 - [ComponentEvents.WillDeactivate](componentevents/willdeactivate.md)
 - [ComponentEvents.WillRemove](componentevents/willremove.md)
+- [GaussianSplatEvents.RenderingChanged](gaussiansplatevents/renderingchanged.md)
 - [ImagePresentationEvents.TransitionCompleted](imagepresentationevents/transitioncompleted.md)
 - [ImagePresentationEvents.TransitionStarted](imagepresentationevents/transitionstarted.md)
 - [ManipulationEvents.DidHandOff](manipulationevents/didhandoff.md)

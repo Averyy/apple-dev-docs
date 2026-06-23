@@ -38,7 +38,7 @@ class MPSGraphCompilationDescriptor
   Flag that makes the compile or specialize call blocking till the entire compilation is complete, defaults to NO.
 ### Instance Methods
 - [func convertLayoutToNHWC()](mpsgraphcompilationdescriptor/convertlayouttonhwc.md)
-  Turns on Automatic Layout Conversion (for conv like operations) for GPU. DEPRECATED: Layout conversion is now default, so this function is a no-op.
+  Turns on Automatic Layout Conversion (for conv like operations) for GPU.
 - [func disableAutoLayoutConversion()](mpsgraphcompilationdescriptor/disableautolayoutconversion.md)
   Turns off Automatic Layout Conversion (for conv like operations) for GPU.
 - [func disableTypeInference()](mpsgraphcompilationdescriptor/disabletypeinference.md)

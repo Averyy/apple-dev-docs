@@ -22,9 +22,12 @@ protocol NSTextStorageObserving : NSObjectProtocol
 
 ### Accessing the text storage
 - [var textStorage: NSTextStorage?](nstextstorageobserving/textstorage.md)
+  The document text storage object.
 ### Managing the editing process
 - [func performEditingTransaction(for: NSTextStorage, using: () -> Void)](nstextstorageobserving/performeditingtransaction(for:using:).md)
+  Performs an editing transaction on the text storage.
 - [func processEditing(for: NSTextStorage, edited: NSTextStorage.EditActions, range: NSRange, changeInLength: Int, invalidatedRange: NSRange)](nstextstorageobserving/processediting(for:edited:range:changeinlength:invalidatedrange:).md)
+  Notifies the observer that the text storage has been edited.
 
 ## Relationships
 

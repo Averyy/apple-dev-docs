@@ -73,8 +73,6 @@ Use the [`routeDataChannel`](avsystemroute-5s2um/routedatachannel.md) property t
   An object that manages a single media playback session on a remote device.
 - [AVSystemRoute.LaunchMode](avsystemroute-5s2um/launchmode.md)
   The mode that determines how media playback launches on a remote device.
-- [enum AVSystemRouteLaunchMode](avsystemroutelaunchmode.md)
-  The mode that determines how media playback launches on a remote device.
 
 
 ---

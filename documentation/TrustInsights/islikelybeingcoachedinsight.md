@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: struct
 
 An insight to request to examine indications that someone may be actively coaching a person to perform actions.
@@ -9,7 +9,6 @@ An insight to request to examine indications that someone may be actively coachi
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

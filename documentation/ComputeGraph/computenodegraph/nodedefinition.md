@@ -22,6 +22,7 @@ struct NodeDefinition
 
 ### Initializers
 - [init(name: String, bundle: String?, inputs: [ComputeNodeGraph.PortDefinition], outputs: [ComputeNodeGraph.PortDefinition], kind: ComputeNodeGraph.NodeDefinition.Kind)](computenodegraph/nodedefinition/init(name:bundle:inputs:outputs:kind:).md)
+- [init(name: String, inputs: [ComputeNodeGraph.PortDefinition], outputs: [ComputeNodeGraph.PortDefinition], kind: ComputeNodeGraph.NodeDefinition.Kind)](computenodegraph/nodedefinition/init(name:inputs:outputs:kind:).md)
 ### Instance Properties
 - [var bundle: String?](computenodegraph/nodedefinition/bundle.md)
 - [var inputs: [ComputeNodeGraph.PortDefinition]](computenodegraph/nodedefinition/inputs.md)

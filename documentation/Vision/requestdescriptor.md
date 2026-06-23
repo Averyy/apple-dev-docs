@@ -102,7 +102,6 @@ enum RequestDescriptor
   A descriptor that describes a Core ML request.
 ### Enumeration Cases
 - [case generateIterativeSegmentationRequest(GenerateIterativeSegmentationRequest.Revision)](requestdescriptor/generateiterativesegmentationrequest(_:).md)
-- [case generateSelectedObjectSegmentationRequest(GenerateSelectedObjectSegmentationRequest.Revision)](requestdescriptor/generateselectedobjectsegmentationrequest(_:).md)
 
 ## Relationships
 

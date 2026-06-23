@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Update every element of this span to the given value.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,10 @@
 ```swift
 mutating func update(repeating repeatedValue: consuming Element)
 ```
+
+## Parameters
+
+- `repeatedValue`: The value to set for every element.
 
 
 ---

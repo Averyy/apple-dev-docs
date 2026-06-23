@@ -112,8 +112,6 @@ To play one of the animations in your app, create an entity from the `.reality` 
   Creates an empty animation library.
 - [init(animations: [String : AnimationResource], automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(animations:automaticallyplaysdefaultanimation:).md)
   Creates an animation library from a dictionary that associates an animation’s data with its name.
-- [init(dictionaryLiteral: (String, AnimationResource)..., automaticallyPlaysDefaultAnimation: Bool)](animationlibrarycomponent/init(dictionaryliteral:automaticallyplaysdefaultanimation:).md)
-  Creates an animation library from a variadic list of key-value pairs
 ### Structures
 - [AnimationLibraryComponent.AnimationCollection](animationlibrarycomponent/animationcollection.md)
   A collection of animations an entity can play.

@@ -29,7 +29,7 @@ Use this view modifier to receive instances in a particular scene within your ap
 
 The action closure is called before the app is foregrounded. If the app intent implements a perform() method, it will be called after the action closure. This can be useful if your app intent supports running in the background via the AppIntent.IntentModes API.
 
-> **Note**: Usage of the app intent instance provided to the action closure is limited to inspecting parameter values, interactive requests like [`requestValue(_:)`](https://developer.apple.com/documentation/AppIntents/IntentParameter/requestValue(_:)-592nd) or <doc://com.apple.documentation/documentation/appintents/intentparameter/needsvalueerror(_:) will not work.
+> **Note**: Usage of the app intent instance provided to the action closure is limited to inspecting parameter values, interactive requests like [`requestValue(_:)`](https://developer.apple.com/documentation/AppIntents/IntentParameter/requestValue(_:)-592nd) or [`needsValueError(_:)`](https://developer.apple.com/documentation/AppIntents/IntentParameter/needsValueError(_:)) doesn’t work.
 
 ## Parameters
 

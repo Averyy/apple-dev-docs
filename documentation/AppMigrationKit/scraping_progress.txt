@@ -1,4 +1,4 @@
 Completed scraping AppMigrationKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 66
+Total pages scraped: 61
+Pages skipped (unchanged): 5
 Pages failed: 0

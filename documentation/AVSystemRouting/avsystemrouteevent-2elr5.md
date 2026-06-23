@@ -41,8 +41,6 @@ final class AVSystemRouteEvent
 
 - [AVSystemRouteEvent.Reason](avsystemrouteevent-2elr5/reason-swift.enum.md)
   Values that indicate the reason for a routing event.
-- [enum AVSystemRouteEventReason](avsystemrouteeventreason.md)
-  Values that indicate the reason for a routing event.
 
 
 ---

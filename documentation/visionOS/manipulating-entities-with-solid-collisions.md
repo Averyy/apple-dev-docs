@@ -121,6 +121,8 @@ entity.components.set(ForceEffectComponent(effects: [
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
   Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
+- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 
 
 ---

@@ -29,7 +29,7 @@ Get the signature algorithms supported by the peer. Clients may call this in res
 ## Parameters
 
 - `metadata`: A `sec_protocol_metadata_t` instance.
-- `handler`: A block to invoke one or more times with OCSP data
+- `handler`: A block to invoke one or more times, once per signature algorithm advertised by the peer. Each `signature_algorithm` is a TLS SignatureScheme codepoint (the on-the-wire 2-byte value) from the IANA “TLS SignatureScheme” registry — see RFC 8446 §4.2.3.
 
 
 ---

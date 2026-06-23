@@ -86,8 +86,6 @@ Prompting the model with tools contributes to the available context window size.
 ### Inherits From
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-### Conforming Types
-- [AnyTool](anytool.md)
 
 ## See Also
 

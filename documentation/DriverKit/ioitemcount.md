@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef uint32_t IOItemCount;
+typedef UInt32 IOItemCount;
 ```
 
 ## See Also

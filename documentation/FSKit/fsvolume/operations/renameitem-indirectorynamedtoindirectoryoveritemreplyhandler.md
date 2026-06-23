@@ -38,7 +38,7 @@ Implement renaming along the lines of this algorithm:
 - `sourceName`: The name of the item within the source directory.
 - `destinationName`: The new name of the item as it appears in `destinationDirectory`.
 - `destinationDirectory`: The directory to contain the renamed object, which may be the same as `sourceDirectory`.
-- `overItem`: The file system object if the destination exists, as discovered in a prior lookup. If this parameter is non-`nil`, mark `overItem` as deleted, so the file system can free its allocated space on the next call to [`reclaimItem(_:replyHandler:)`](fsvolume/operations/reclaimitem(_:replyhandler:).md). After doing so, ensure the operation finishes without errors.
+- `overItem`: The file system object if the destination exists, as discovered in a prior lookup. If this parameter is non-`nil`, mark `overItem` as deleted, so the file system can free its allocated space on the next call to `reclaimItem(_:)`. After doing so, ensure the operation finishes without errors.
 - `reply`: A block or closure to indicate success or failure. If renaming succeeds, pass the [`FSFileName`](fsfilename.md) as it exists within `destinationDirectory` and a `nil` error. If renaming fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](fsfilename.md) or throw an error.
 
 

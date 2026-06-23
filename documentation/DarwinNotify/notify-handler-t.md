@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typedef void (^)(int) notify_handler_t;
+typealias notify_handler_t = (Int32) -> Void
 ```
 
 

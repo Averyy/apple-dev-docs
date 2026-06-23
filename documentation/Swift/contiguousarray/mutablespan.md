@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+A mutable span over the elements of this array.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,14 @@
 ```swift
 var mutableSpan: MutableSpan<Element> { mutating get }
 ```
+
+#### Return Value
+
+A `MutableSpan` over the elements of this array.
+
+#### Discussion
+
+> **Note**: O(1) when the array’s storage is uniquely referenced, O(*n*) otherwise.
 
 
 ---

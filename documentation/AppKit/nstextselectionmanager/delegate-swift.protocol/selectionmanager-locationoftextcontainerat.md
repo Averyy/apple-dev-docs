@@ -20,7 +20,7 @@ The text location for the text container at the point, or `nil` if no container 
 
 #### Discussion
 
-Implement this method to support layouts with multiple text containers, such as multi-column or paginated layouts. For full multiple-text-container support, also implement `selectionManager:frameOfTextContainerAtPoint:`.
+Implement this method when your view hosts multiple text containers, such as multi-column or paginated layouts, so the selection manager can identify which container a gesture targets. Also implement `selectionManager:frameOfTextContainerAtPoint:` so the selection manager can convert gesture points into the correct container’s local coordinates.
 
 ## Parameters
 

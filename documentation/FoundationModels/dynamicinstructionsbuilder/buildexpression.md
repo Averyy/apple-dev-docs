@@ -16,6 +16,7 @@ Creates a builder with a list of tools expression.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression(_ tools: [any Tool]) -> some DynamicInstructions
 ```
 
@@ -31,6 +32,8 @@ static func buildExpression(_ tools: [any Tool]) -> some DynamicInstructions
   Creates a builder with the second component.
 - [static func buildOptional<Content>(Content?) -> Content?](dynamicinstructionsbuilder/buildoptional(_:).md)
   Creates a builder with an optional component.
+- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](dynamicinstructionsbuilder/buildlimitedavailability(_:).md)
+  Creates a builder with limited availability dynamic instructions.
 
 
 ---

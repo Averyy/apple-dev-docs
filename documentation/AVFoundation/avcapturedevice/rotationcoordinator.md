@@ -37,6 +37,9 @@ Correctly rotate the photos and movies your app captures, and optionally, a live
   The capture device the coordinator monitors to track its physical rotation.
 - [var previewLayer: CALayer?](avcapturedevice/rotationcoordinator/previewlayer.md)
   The layer that displays a camera preview the coordinator calculates a video rotation angle for.
+### Instance Methods
+- [func videoRotationAngleRelative(toDeviceOrientation: AVCaptureVideoOrientation) -> CGFloat](avcapturedevice/rotationcoordinator/videorotationanglerelative(todeviceorientation:).md)
+  Returns a video rotation angle in degrees from this camera relative to the provided orientation.
 
 ## Relationships
 

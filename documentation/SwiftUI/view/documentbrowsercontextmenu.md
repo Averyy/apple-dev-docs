@@ -74,8 +74,16 @@ The actions are displayed in the document browser navigation bar when a document
 
 - [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
   A launch scene for document-based applications.
+- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
 - [struct DocumentLaunchView](documentlaunchview.md)
   A view to present when launching document-related user experience.
+- [func documentLaunchTitle(_:)](view/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
 - [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)
   A proxy for access to the frame of the scene and its title view.
 - [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)

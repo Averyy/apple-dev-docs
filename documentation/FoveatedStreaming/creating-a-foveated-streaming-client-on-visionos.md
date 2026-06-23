@@ -24,7 +24,7 @@ Common use cases include:
 
 #### Configure the Sample Code Project
 
-This sample project requires use of the [`com.apple.developer.foveated-streaming-session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement. Add the entitlement to the Xcode project in the Signing & Capabilities tab.
+This sample project requires use of the [`Foveated Streaming Session`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.foveated-streaming-session) entitlement. Add the entitlement to the Xcode project in the Signing & Capabilities tab.
 
 Because this sample app uses foveated streaming, you can’t run this sample in Simulator — you’ll need to run it on a device. To run this sample, you’ll need the following:
 

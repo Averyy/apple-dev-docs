@@ -1,6 +1,6 @@
 # LoudnessResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A structure that contains perceptual loudness measurements for a song, including integrated, momentary, short-term, and peak values.
@@ -41,8 +41,6 @@ When used in the streaming `loudnessResults` context, the framework delivers mul
   The peak amplitude of the song in decibels (dB).
 - [let shortTerm: [MusicUnderstandingSession.TimedValue<Float>]](loudnessresult/shortterm.md)
   An array of short-term loudness measurements sampled across the song in LUFS.
-### Instance Properties
-- [var debugDescription: String](loudnessresult/debugdescription.md)
 
 ## Relationships
 

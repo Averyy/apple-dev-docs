@@ -30,6 +30,7 @@ enum Error
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
@@ -42,7 +43,7 @@ enum Error
 ## See Also
 
 - [LanguageModelSession.ToolCallError](languagemodelsession/toolcallerror.md)
-  An error that occurs while a system language model is calling a tool.
+  An error that occurs while a language model is calling a tool.
 - [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
   An error that may occur while generating a response.
 

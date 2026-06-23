@@ -20,6 +20,10 @@ A reference to a conversation, such as a mail or messaging thread.
 
 Set this conversation context before the keyboard appears; the keyboard uses this context to initialize its conversation context value. When your conversation updates, update the smart reply by setting this property.
 
+## See Also
+
+- [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
+
 
 ---
 

@@ -69,14 +69,13 @@ struct PresentationInstructions: DynamicInstructions {
   A dynamic instructions type that’s type-erased.
 - [struct TupleDynamicInstructions](tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
-- [struct AnyTool](anytool.md)
-  A tool that the framework invokes in dynamic instructions.
 
 ## Relationships
 
 ### Conforming Types
 - [AnyDynamicInstructions](anydynamicinstructions.md)
 - [ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
+- [DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [EmptyDynamicInstructions](emptydynamicinstructions.md)
 - [Instructions](instructions.md)
 - [TupleDynamicInstructions](tupledynamicinstructions.md)
@@ -87,6 +86,7 @@ struct PresentationInstructions: DynamicInstructions {
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
 - [Origami: Crafting a dynamic tutorial for Apple Intelligence](origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

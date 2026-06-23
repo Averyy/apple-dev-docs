@@ -46,8 +46,6 @@ The Wallet app allows users to organize their boarding passes, tickets, gift car
 - [struct ApplePayMerchandisingStyle](applepaymerchandisingstyle.md)
   Styling layout of the ApplePayMerchandisingView
 - [struct ApplePayMerchandisingView](applepaymerchandisingview.md)
-### Variables
-- [let PKTTRComponentIDCarKeys: String](pkttrcomponentidcarkeys.md)
 
 ## See Also
 

@@ -26,29 +26,28 @@ The system provides this information to help you understand the reliability and 
 ### Determining the age set method
 - [AgeRangeService.AgeRangeDeclaration.selfDeclared](agerangeservice/agerangedeclaration/selfdeclared.md)
   Indicates the person signed in to iCloud to set their own age range.
+- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
+  Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
+- [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
+  Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
+### Deprecated
 - [AgeRangeService.AgeRangeDeclaration.paymentChecked](agerangeservice/agerangedeclaration/paymentchecked.md)
   Indicates the person set their own age range using a payment method, like a credit card.
 - [AgeRangeService.AgeRangeDeclaration.governmentIDChecked](agerangeservice/agerangedeclaration/governmentidchecked.md)
   Indicates the person set their own age range using a government ID.
 - [AgeRangeService.AgeRangeDeclaration.checkedByOtherMethod](agerangeservice/agerangedeclaration/checkedbyothermethod.md)
   Indicates the person set their own age range using an unspecified method.
-- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
-  Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
 - [AgeRangeService.AgeRangeDeclaration.guardianPaymentChecked](agerangeservice/agerangedeclaration/guardianpaymentchecked.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a payment method, like a credit card.
 - [AgeRangeService.AgeRangeDeclaration.guardianGovernmentIDChecked](agerangeservice/agerangedeclaration/guardiangovernmentidchecked.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using a government ID.
 - [AgeRangeService.AgeRangeDeclaration.guardianCheckedByOtherMethod](agerangeservice/agerangedeclaration/guardiancheckedbyothermethod.md)
   Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range using an unspecified method.
-### Enumeration Cases
-- [AgeRangeService.AgeRangeDeclaration.confirmed](agerangeservice/agerangedeclaration/confirmed.md)
-  Indicates a user’s age range was set using a scrutinized method, like a credit card or government ID.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

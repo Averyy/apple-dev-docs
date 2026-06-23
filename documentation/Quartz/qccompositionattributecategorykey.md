@@ -14,6 +14,10 @@ A key representing a composition category.
 let QCCompositionAttributeCategoryKey: String
 ```
 
+#### Discussion
+
+The associated value is a category constant. See [`Composition Categories`](composition-categories.md).
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

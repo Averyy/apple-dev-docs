@@ -20,6 +20,7 @@ let hasExceededStateLimit: Bool
 ## Mentions
 
 - [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
+- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
 
 #### Discussion
 

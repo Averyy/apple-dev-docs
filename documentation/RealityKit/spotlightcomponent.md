@@ -60,7 +60,7 @@ The following table shows some real-world scenarios, to better explain how you c
   A platform-specific type used to define color for a spotlight.
 ### Specifying the render layers
 - [var layers: RenderLayer.Set](spotlightcomponent/layers.md)
-  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
 ### Defining the light contribution
 - [SpotLightComponent.SurroundingsLight](spotlightcomponent/surroundingslight.md)
   A component that specifies that the spot light illuminates the physical and immersive environment.

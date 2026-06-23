@@ -42,14 +42,21 @@ enum InactiveSchedulingPolicy
 
 ## See Also
 
-- [var tabFocusesLinks: Bool](wkpreferences/tabfocuseslinks.md)
-  A Boolean value that indicates whether pressing the tab key changes the focus to links and form controls.
-- [var isTextInteractionEnabled: Bool](wkpreferences/istextinteractionenabled.md)
-  A Boolean value that indicates whether to allow people to select or otherwise interact with text.
-- [var isElementFullscreenEnabled: Bool](wkpreferences/iselementfullscreenenabled.md)
-  A Boolean value that indicates whether a web view can display content full screen.
-- [var inactiveSchedulingPolicy: WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.property.md)
-  A policy you set to specify how a web view that’s not in a window handles tasks.
+- [class WKWebViewConfiguration](wkwebviewconfiguration.md)
+  A collection of properties that you use to initialize a web view.
+- [class WKWindowFeatures](wkwindowfeatures.md)
+  Display-related attributes that a webpage requests for its window.
+- [class WKProcessPool](wkprocesspool.md)
+  An opaque token that you use to run multiple web views in a single process.
+- [class WKPreferences](wkpreferences.md)
+  An object that encapsulates the standard behaviors to apply to websites.
+- [class WKWebpagePreferences](wkwebpagepreferences.md)
+  An object that specifies the behaviors to use when loading and rendering page content.
+- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+  Constants that indicate how to render web view content.
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
+- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

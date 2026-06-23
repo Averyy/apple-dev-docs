@@ -11,7 +11,6 @@ A handler called shortly before the task’s background time expires.
 - Mac Catalyst 13.1+
 - tvOS 13.0+
 - visionOS 1.0+
-- watchOS 26.0+
 
 ## Declaration
 

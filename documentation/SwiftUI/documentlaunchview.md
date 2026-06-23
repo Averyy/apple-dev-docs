@@ -90,6 +90,14 @@ extension UTType {
 
 - [struct DocumentGroupLaunchScene](documentgrouplaunchscene.md)
   A launch scene for document-based applications.
+- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
+- [func documentLaunchTitle(_:)](view/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 - [struct DocumentLaunchGeometryProxy](documentlaunchgeometryproxy.md)

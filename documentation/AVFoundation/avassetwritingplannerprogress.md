@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
+AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,16 +21,16 @@ class AVAssetWritingPlannerProgress
 
 #### Overview
 
-AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
-
 This class provides per-track progress information as a percentage of the total duration completed. Progress can be queried by assemblyTrackID.
 
 ## Topics
 
 ### Instance Properties
 - [var overallProgress: Float](avassetwritingplannerprogress/overallprogress.md)
+  The overall progress across all tracks.
 ### Instance Methods
 - [func progress(forTrack: CMPersistentTrackID) -> Float](avassetwritingplannerprogress/progress(fortrack:).md)
+  Returns the progress for a specific track identified by its assemblyTrackID.
 
 ## Relationships
 

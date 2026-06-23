@@ -3,7 +3,7 @@
 **Framework**: CarPlay  
 **Kind**: property
 
-Title of card presented to configure waypoints along a route. If no title is provided, the card title will default to “Trip Overview”.
+Title of panel presented to configure waypoints along a route. If no panel is provided, the panel title will default to “Add Stop”.
 
 **Availability**:
 - iOS 27.0+ (Beta)

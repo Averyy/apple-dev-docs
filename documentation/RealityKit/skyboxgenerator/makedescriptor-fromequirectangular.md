@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Returns a recommended skybox cube texture descriptor (for `MTLCommandBuffer.generateSkybox`).
+Returns a recommended skybox cube texture descriptor (for [`generateSkybox(using:fromEquirectangular:quality:into:)`](skyboxgenerator/generateskybox(using:fromequirectangular:quality:into:).md)).
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,7 +20,9 @@ func makeDescriptor(fromEquirectangular texture: any MTLTexture) throws -> MTLTe
 
 #### Discussion
 
-The dimensions of the cubemap are chosen so that the resolution of the input texture is approximately preserved. This method allocates mipmap by default, as mipmaps are needed by `generateImageBasedLightDiffuse` and `generateImageBasedLightSpecular`.
+The dimensions of the cubemap are chosen so that the resolution of the input texture is approximately preserved. This method allocates mipmap by default, as mipmaps are needed by [`generateDiffuse(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:).md) and [`generateSpecular(using:fromSkyboxCube:quality:into:)`](imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:).md).
+
+> **Note**: If `texture` is not a 2D Metal texture.
 
 ## See Also
 

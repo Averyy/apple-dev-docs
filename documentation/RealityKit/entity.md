@@ -215,7 +215,6 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
   Exports an array of entities as separate scenes within a single RealityKit file.
 - [Entity.WriteOptions](entity/writeoptions.md)
   Options for writing an entity to a RealityKit file.
-- [Entity.WriteError](entity/writeerror.md)
 ### Playing spatial audio
 - [func playAudio(AudioResource, at: AVAudioTime) throws -> AudioPlaybackController](entity/playaudio(_:at:).md)
   Asynchronously prepares and plays a new audio playback instance at a specified time on this entity.

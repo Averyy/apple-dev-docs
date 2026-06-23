@@ -47,8 +47,12 @@ On iOS, it shows a New Document button in the document browser. The [`isEditabl
 
 ## See Also
 
+- [init(allowCreating:editor:makeDocument:)](documentgroup/init(allowcreating:editor:makedocument:).md)
+  Creates a document group capable of creating, viewing, and editing documents.
 - [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
   Creates a document group capable of viewing file documents.
+- [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(viewer:makereadabledocument:).md)
+  Creates a document group capable of opening and viewing read-only documents.
 
 
 ---

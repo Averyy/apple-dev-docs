@@ -9,7 +9,6 @@ The ways your app suggests the system handle your task’s submission under vary
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

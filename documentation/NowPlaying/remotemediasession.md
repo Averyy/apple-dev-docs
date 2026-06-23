@@ -31,6 +31,8 @@ You can also donate remote sessions to the system through push notifications, fo
 
 In that case, use APNs to send a push notification to the user’s device that informs the system of a `start`, `update`, or `end` event.
 
+For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+
 The following example shows how to start a session:
 
 ```swift

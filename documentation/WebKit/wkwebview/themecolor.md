@@ -36,6 +36,7 @@ var themeColor: NSColor? { get }
   A Boolean value that indicates whether the web view loaded all resources on the page through securely encrypted connections.
 - [var underPageBackgroundColor: UIColor!](wkwebview/underpagebackgroundcolor.md)
   The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
+- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
 
 
 ---

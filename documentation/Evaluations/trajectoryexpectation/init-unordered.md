@@ -11,7 +11,6 @@ Creates a trajectory expectation with only unordered requirements.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -36,7 +35,7 @@ Additional calls are always allowed for unordered-only expectations.
 - [init(ordered: [ToolExpectation], unordered: [ToolExpectation], allowsAdditionalToolCalls: Bool)](trajectoryexpectation/init(ordered:unordered:allowsadditionaltoolcalls:).md)
   Creates a trajectory expectation with ordered and unordered requirements, and controls whether unmatched tool calls are permitted.
 - [init(ordered: [ToolExpectation], unordered: [ToolExpectation], disallowed: [ToolExpectation])](trajectoryexpectation/init(ordered:unordered:disallowed:).md)
-  Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that must not be called.
+  Creates a trajectory expectation with ordered and unordered requirements, plus specific tools that the agent must not call.
 
 
 ---

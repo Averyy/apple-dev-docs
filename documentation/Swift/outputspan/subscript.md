@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: subscript
 
-Accesses the element at the specified position.
+Accesses the element at the specified index.
 
 **Availability**:
 - iOS 12.2+

@@ -43,7 +43,7 @@ let prompt = "Making homemade bread"
 let response = try await session.respond(to: prompt)
 ```
 
-Apple trains the model to obey instructions over any commands it receives in prompts, so don’t include untrusted content in instructions. For more on how instructions impact generation quality and safety, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
+Don’t include untrusted content in instructions: the model is typically trained to obey instructions over any commands it receives in prompts. For more on how instructions impact generation quality and safety, see [`Improving the safety of generative model output`](improving-the-safety-of-generative-model-output.md).
 
 All input to the model contributes tokens to the context window of the [`LanguageModelSession`](languagemodelsession.md) — including the [`Instructions`](instructions.md), [`Prompt`](prompt.md), [`Tool`](tool.md), and [`Generable`](generable.md) types, and the model’s responses. If your session exceeds the available context size, it throws  [`LanguageModelError.contextSizeExceeded(_:)`](languagemodelerror/contextsizeexceeded(_:).md).
 

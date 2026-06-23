@@ -60,14 +60,26 @@ Contains properties and methods to handle message exchanges with a web extension
 
 ## See Also
 
+- [class WKWebExtension](wkwebextension.md)
+  An object that encapsulates a web extension’s resources that the manifest file defines.
+- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+  A protocol with methods that represent a tab to web extensions.
+- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+  A protocol with methods that represent a window to web extensions.
+- [class WKWebExtensionContext](wkwebextensioncontext.md)
+  An object that represents the runtime environment for a web extension.
+- [class WKWebExtensionController](wkwebextensioncontroller.md)
+  An object that manages a set of loaded extension contexts.
+- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+  A group of methods you use to customize web extension interactions.
 - [WKWebExtension.Action](wkwebextension/action.md)
   An object that encapsulates the properties for an individual web extension action.
 - [WKWebExtension.Command](wkwebextension/command.md)
   An object that encapsulates the properties for an individual web extension command.
-- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
-  An object that represents a record of stored data for a specific web extension context.
 - [WKWebExtension.MatchPattern](wkwebextension/matchpattern.md)
   An object that represents a way to specify groups of URLs.
+- [WKWebExtension.DataRecord](wkwebextension/datarecord.md)
+  An object that represents a record of stored data for a specific web extension context.
 - [WKWebExtension.TabConfiguration](wkwebextension/tabconfiguration.md)
   An object that encapsulates configuration options for a tab in an extension.
 - [WKWebExtension.WindowConfiguration](wkwebextension/windowconfiguration.md)

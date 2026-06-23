@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
+Each element emits four vertices, rendered as a quad (two triangles).
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

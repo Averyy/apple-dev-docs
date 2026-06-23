@@ -71,7 +71,8 @@ struct FeatureSet
   A configuration that specifies the appearance of a shape.
 - [struct RenderingOptions](renderingoptions.md)
   The rendering options for drawing paper data models.
-- [enum PaperDocumentDisplayMode](paperdocumentdisplaymode.md)
+- [struct MarkupAutoresizing](markupautoresizing.md)
+  Automatic sizing behaviors for this markup.
 
 
 ---

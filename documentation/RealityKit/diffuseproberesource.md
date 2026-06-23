@@ -16,7 +16,7 @@ A resource containing baked diffuse lighting data organized as a tetrahedral pro
 ## Declaration
 
 ```swift
-class DiffuseProbeResource
+final class DiffuseProbeResource
 ```
 
 #### Overview

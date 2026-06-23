@@ -1,6 +1,6 @@
 # insightTypeIdentifier
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 The identifier for the type of insight requested.
@@ -9,7 +9,6 @@ The identifier for the type of insight requested.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -176,13 +176,13 @@ let numberPointer = UnsafeMutableRawPointer(&number)
   Initializes the memory referenced by this pointer with the given value, binds the memory to the value’s type, and returns a typed pointer to the initialized memory.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/loadunaligned(frombyteoffset:as:)-3rcfy.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/loadunaligned(frombyteoffset:as:)-3v1mk.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsafemutablerawpointer/loadunaligned(frombyteoffset:as:)-4br03.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func moveInitializeMemory<T>(as: T.Type, from: UnsafeMutablePointer<T>, count: Int) -> UnsafeMutablePointer<T>](unsafemutablerawpointer/moveinitializememory(as:from:count:).md)
   Initializes the memory referenced by this pointer with the values starting at the given pointer, binds the memory to the values’ type, deinitializes the source memory, and returns a typed pointer to the newly initialized memory.
-- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawpointer/storebytes(of:tobyteoffset:as:)-3chnc.md)
+- [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawpointer/storebytes(of:tobyteoffset:as:)-9j7bo.md)
   Stores the given value’s bytes into raw memory at the specified offset.
 - [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawpointer/storebytes(of:tobyteoffset:as:)-9mpot.md)
   Stores the given value’s bytes into raw memory at the specified offset.
@@ -210,6 +210,7 @@ let numberPointer = UnsafeMutableRawPointer(&number)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)

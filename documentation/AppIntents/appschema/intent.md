@@ -21,7 +21,6 @@ struct Intent
 ## Relationships
 
 ### Conforms To
-- [AppSchema.AppStoreIntent](appschema/appstoreintent.md)
 - [AppSchema.AssistantIntent](appschema/assistantintent.md)
 - [AppSchema.AudioIntent](appschema/audiointent.md)
 - [AppSchema.BooksIntent](appschema/booksintent.md)
@@ -30,7 +29,6 @@ struct Intent
 - [AppSchema.CameraIntent](appschema/cameraintent.md)
 - [AppSchema.ClockIntent](appschema/clockintent.md)
 - [AppSchema.FilesIntent](appschema/filesintent.md)
-- [AppSchema.ImageGenerationIntent](appschema/imagegenerationintent.md)
 - [AppSchema.JournalIntent](appschema/journalintent.md)
 - [AppSchema.Kind](appschema/kind.md)
 - [AppSchema.MailIntent](appschema/mailintent.md)

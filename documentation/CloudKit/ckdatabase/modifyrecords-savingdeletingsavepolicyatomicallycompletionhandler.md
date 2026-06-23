@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: method
 
-Modifies the specified records and delivers the results to a completion hander.
+Modifies the specified records and delivers the results to a completion handler.
 
 **Availability**:
 - iOS 15.0+

@@ -43,7 +43,7 @@ The decrypting party is responsible for generating the new keys and certificate 
 To create a payment processing certificate, use the following resources:
 
 - **Apple Developer Portal:** Use [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list).
-- **App Store Connect API:** Use [`Create a Certificate`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-certificates) to create a certificate. For more information, see [`Managing merchant IDs and Payment Processing certificates`](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-payment-processing-certificates).
+- **App Store Connect API:** Use [`Create a certificate`](https://developer.apple.com/documentation/AppStoreConnectAPI/POST-v1-certificates) to create a certificate. For more information, see [`Managing merchant IDs and Payment Processing certificates`](https://developer.apple.com/documentation/AppStoreConnectAPI/managing-payment-processing-certificates).
 
 When generating the CSR for payment processing, use the appropriate key type for your region:
 
@@ -119,7 +119,7 @@ Once downloaded, add the new certificate to your keychain or keystore. It can be
 To view the status and expiration date of each certificate, use the following resources:
 
 - **Apple Developer Portal:** Use [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list).
-- **App Store Connect API:** Use [`List and Download Certificates`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-certificates) to find and list certificates, or [`Read and Download Certificate Information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-certificates-_id_) to retrieve details about a specific certificate.
+- **App Store Connect API:** Use [`List and download certificates`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-certificates) to find and list certificates, or [`Read and download certificate information`](https://developer.apple.com/documentation/AppStoreConnectAPI/GET-v1-certificates-_id_) to retrieve details about a specific certificate.
 
 > 💡 **Tip**: Proactively renew certificates at least 30 days before expiration. Apple sends expiration reminder notifications to Account Holder and Admin [`roles`](https://developer.apple.comhttps://developer.apple.com/help/account/access/roles/) 30, 15, and 7 days before a certificate expires. To ensure you receive all notifications, maintain up to date and accurate contact details for these roles.
 
@@ -130,7 +130,7 @@ Certificates can be rotated manually in the [`Certificates, Identifiers & Profil
 You can revoke certificates in the following resources:
 
 - **Apple Developer Portal:** Use [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources/identifiers/list).
-- **App Store Connect API:** Use [`Revoke a Certificate`](https://developer.apple.com/documentation/AppStoreConnectAPI/DELETE-v1-certificates-_id_) to revoke a specific certificate.
+- **App Store Connect API:** Use [`Revoke a certificate`](https://developer.apple.com/documentation/AppStoreConnectAPI/DELETE-v1-certificates-_id_) to revoke a specific certificate.
 
 **To manually revoke an identity certificate:**
 

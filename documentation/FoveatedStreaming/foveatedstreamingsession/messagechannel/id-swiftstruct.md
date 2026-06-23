@@ -17,8 +17,15 @@ struct ID
 ## Topics
 
 ### Initializers
-- [init(UUID)](foveatedstreamingsession/messagechannel/id-swift.struct/init(_:).md)
+- [init(String)](foveatedstreamingsession/messagechannel/id-swift.struct/init(_:)-5o0sl.md)
+  Constructs an ID from a String.
+- [init(UUID)](foveatedstreamingsession/messagechannel/id-swift.struct/init(_:)-5qq8b.md)
   Constructs an ID from a UUID.
+### Instance Properties
+- [var stringRepresentation: String](foveatedstreamingsession/messagechannel/id-swift.struct/stringrepresentation.md)
+  The String representation of this ID.
+- [var uuidRepresentation: UUID?](foveatedstreamingsession/messagechannel/id-swift.struct/uuidrepresentation.md)
+  The UUID representation of this ID, if it can be represented as one.
 
 ## Relationships
 

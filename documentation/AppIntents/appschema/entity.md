@@ -21,14 +21,12 @@ struct Entity
 ## Relationships
 
 ### Conforms To
-- [AppSchema.AppStoreEntity](appschema/appstoreentity.md)
 - [AppSchema.AudioEntity](appschema/audioentity.md)
 - [AppSchema.BooksEntity](appschema/booksentity.md)
 - [AppSchema.BrowserEntity](appschema/browserentity.md)
 - [AppSchema.CalendarEntity](appschema/calendarentity.md)
 - [AppSchema.ClockEntity](appschema/clockentity.md)
 - [AppSchema.FilesEntity](appschema/filesentity.md)
-- [AppSchema.ImageGenerationEntity](appschema/imagegenerationentity.md)
 - [AppSchema.JournalEntity](appschema/journalentity.md)
 - [AppSchema.Kind](appschema/kind.md)
 - [AppSchema.MailEntity](appschema/mailentity.md)

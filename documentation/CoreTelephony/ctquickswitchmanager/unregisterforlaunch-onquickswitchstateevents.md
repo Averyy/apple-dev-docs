@@ -13,7 +13,7 @@ Removes the calling app’s registration for background launch on quick switch s
 ## Declaration
 
 ```swift
-func unregisterForLaunchOnQuickSwitchStateEvents() async throws
+class func unregisterForLaunchOnQuickSwitchStateEvents() async throws
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ After this call succeeds, the system no longer launches the app  in the backgrou
 
 ## See Also
 
-- [func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
+- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
   Registers the calling app for background launch whenever the device’s quick switch state changes.
 
 

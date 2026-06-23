@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+The valid byte offsets for accessing this span, in ascending order.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,10 @@
 ```swift
 var byteOffsets: Range<Int> { get }
 ```
+
+#### Discussion
+
+> **Note**: O(1)
 
 
 ---

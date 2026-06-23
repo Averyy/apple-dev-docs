@@ -3,8 +3,6 @@
 **Framework**: ProximityReader  
 **Kind**: struct
 
-A customer’s address collected during a customer engagement session.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -18,7 +16,7 @@ struct Address
 
 ## Topics
 
-### Getting customer details
+### Instance Properties
 - [let emailAddress: String?](customerengagement/address/emailaddress.md)
   The customer’s email address.
 - [let name: PersonNameComponents](customerengagement/address/name.md)
@@ -33,15 +31,6 @@ struct Address
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [CustomerEngagement.CustomerInfo](customerengagement/customerinfo.md)
-  Contact information and Wallet pass data shared by a customer during an engagement session.
-- [CustomerEngagement.SignUp](customerengagement/signup.md)
-  Contact information and marketing consent selections a customer provides during a sign-up request.
-- [CustomerEngagement.ShoppingCart](customerengagement/shoppingcart.md)
-  A structure that describes the shopping cart content.
 
 
 ---

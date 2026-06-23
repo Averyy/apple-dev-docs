@@ -1,4 +1,4 @@
 Completed scraping DriverKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 2892
+Total pages scraped: 2949
+Pages skipped (unchanged): 14
 Pages failed: 0

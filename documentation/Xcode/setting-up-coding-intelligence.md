@@ -32,7 +32,7 @@ If you have an account, sign in:
 
 For more information about an agent, click the privacy policy and terms of use links that appear at the bottom of the agent settings.
 
-To enable an agent that doesn’t appear in Intelligence settings and supports the Agent Client Protocol, click Add an Agent under Agents, enter information in the next sheet, and click Add.
+To enable an agent that doesn’t appear in Intelligence settings and supports the Agent Client Protocol (ACP), click Add an Agent under Agents, enter information in the next sheet, and click Add.
 
 ![A screenshot of the Add an ACP Agent sheet with the agent settings and Add button below.](https://docs-assets.developer.apple.com/published/73c89c50f2b7d7d7db19f782a1cb1152/intelligence-settings-add-agent%402x.png)
 

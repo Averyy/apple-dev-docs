@@ -1,4 +1,4 @@
 Completed scraping Observation!
-Total pages scraped: 0
-Pages skipped (unchanged): 38
+Total pages scraped: 35
+Pages skipped (unchanged): 3
 Pages failed: 0

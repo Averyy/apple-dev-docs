@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+Borrow the underlying initialized memory for read-only access.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

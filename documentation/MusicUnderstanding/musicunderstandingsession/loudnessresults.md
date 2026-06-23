@@ -1,6 +1,6 @@
 # loudnessResults
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 An async sequence that yields loudness analysis results as they become available.

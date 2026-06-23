@@ -30,17 +30,9 @@ enum PeerClientType
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [CustomerEngagementSession.CustomerConfiguration](customerengagementsession/customerconfiguration-swift.struct.md)
-  A structure that contains configuration details for the connected customer device.
-- [var customerConfiguration: CustomerEngagementSession.CustomerConfiguration?](customerengagementsession/customerconfiguration-swift.property.md)
-  A structure containing configuration information of the customer device.
 
 
 ---

@@ -31,10 +31,6 @@ The source indicates whether the system generated the zones automatically, the p
 
 - [HKWorkoutZoneConfiguration.Source](hkworkoutzoneconfiguration/source-swift.enum.md)
   An enumeration that identifies the origin of the zone configuration.
-- [var configurationType: HKWorkoutZoneConfiguration.ConfigurationType](hkworkoutzoneconfiguration/configurationtype-swift.property.md)
-  A property that identifies the origin of this zone configuration.
-- [HKWorkoutZoneConfiguration.ConfigurationType](hkworkoutzoneconfiguration/configurationtype-swift.enum.md)
-  An enumeration that identifies the origin of the zone configuration.
 
 
 ---

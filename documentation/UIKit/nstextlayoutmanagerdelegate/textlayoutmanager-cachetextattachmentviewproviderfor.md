@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,9 +18,20 @@
 optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, cacheTextAttachmentViewProvider viewProvider: NSTextAttachmentViewProvider, for textAttachment: NSTextAttachment)
 ```
 
+#### Discussion
+
+The delegate can use this to cache the view provider.
+
+## Parameters
+
+- `textLayoutManager`: The text layout manager sending the message.
+- `viewProvider`: The view provider being invalidated.
+- `textAttachment`: The attachment associated with the view provider.
+
 ## See Also
 
 - [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](nstextlayoutmanagerdelegate/textlayoutmanager(_:retrievecachedtextattachmentviewproviderfor:).md)
+  Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
 
 ---

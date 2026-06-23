@@ -52,7 +52,7 @@ When your app launches, the document view controller displays a view that contai
   Creates an action that uses the specified intent.
 ### Instance Properties
 - [var subtitle: String?](uidocumentviewcontroller/launchoptions-swift.class/subtitle.md)
-  The subtitle of the view. Default is `nil`. If `nil`, no subtitle will be displayed.
+  The subtitle of the launch view. Default is `nil`. If `nil`, no subtitle will be displayed.
 
 ## Relationships
 

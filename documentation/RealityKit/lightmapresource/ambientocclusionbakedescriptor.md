@@ -22,6 +22,12 @@ struct AmbientOcclusionBakeDescriptor
 ### Creating a descriptor
 - [init(sourceAtlasReference: LightmapResource.AtlasReference)](lightmapresource/ambientocclusionbakedescriptor/init(sourceatlasreference:).md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [LightmapResource.BakeDescriptor](lightmapresource/bakedescriptor.md)

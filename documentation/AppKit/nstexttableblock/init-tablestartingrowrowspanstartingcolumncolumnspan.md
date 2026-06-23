@@ -23,6 +23,8 @@ This is the designated initializer.
 - `table`: The text table containing this text table block.
 - `row`: The table row at which the text table block starts.
 - `rowSpan`: How many rows the text table block covers.
+- `column`: The table column at which the text table block starts.
+- `columnSpan`: How many columns the text table block covers.
 
 ## See Also
 

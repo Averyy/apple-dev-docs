@@ -20,6 +20,10 @@ Call the given closure with the unsafe buffer pointer addressed by this OutputRa
 mutating func withUnsafeMutableBytes<E, R>(_ body: (UnsafeMutableRawBufferPointer, inout Int) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
+#### Return Value
+
+The return value of the `body` closure.
+
 #### Discussion
 
 This method provides a way to process or populate an `OutputRawSpan` using unsafe operations, such as dispatching to code written in legacy (memory-unsafe) languages.
@@ -27,9 +31,13 @@ This method provides a way to process or populate an `OutputRawSpan` using unsaf
 The supplied closure may process the buffer in any way it wants; however, when it finishes (whether by returning or throwing), it must leave the buffer in a state that satisfies the invariants of the output span:
 
 1. The inout integer passed in as the second argument must be the exact number of initialized bytes in the buffer passed in as the first argument.
-2. These initialized elements must be located in a single contiguous region starting at the beginning of the buffer. The rest of the buffer must hold uninitialized memory.
+2. These initialized bytes must be located in a single contiguous region starting at the beginning of the buffer. The rest of the buffer must hold uninitialized memory.
 
 This function cannot verify these two invariants, and therefore this is an unsafe operation. Violating the invariants of `OutputRawSpan` may result in undefined behavior.
+
+## Parameters
+
+- `body`: A closure that can read from and write to the buffer and update the initialized count.
 
 
 ---

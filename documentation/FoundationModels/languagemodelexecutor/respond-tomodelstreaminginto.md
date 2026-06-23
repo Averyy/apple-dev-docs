@@ -23,7 +23,7 @@ nonisolated
 
 #### Discussion
 
-> **Note**: If the model declares that it does not have a given capability via [`capabilities`](languagemodel/capabilities.md), then the system will automatically throw a `LanguageModelSession.GenerationError.unsupportedCapability` instead of invoking this method. You do not need to manually validate the request for any functionality captured by [`LanguageModelCapabilities`](languagemodelcapabilities.md).
+> **Note**: If the model declares that it does not have a given capability via [`capabilities`](languagemodel/capabilities.md), then the system will automatically throw an error instead of invoking this method. You do not need to manually validate the request for any functionality captured by [`LanguageModelCapabilities`](languagemodelcapabilities.md).
 
 ## Parameters
 

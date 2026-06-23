@@ -28,7 +28,6 @@ func postToPhotosSharedAlbumSheet(isPresented: Binding<Bool>, items: [PHPickerRe
 ## See Also
 
 - [func offerCodeRedemption(isPresented: Binding<Bool>, onCompletion: (Result<Void, any Error>) -> Void) -> some View](view/offercoderedemption(ispresented:oncompletion:).md)
-  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 - [func subscriptionPromotionalOffer(offer: (Product, Product.SubscriptionInfo) -> Product.SubscriptionOffer?, signature: (Product, Product.SubscriptionInfo, Product.SubscriptionOffer) async throws -> Product.SubscriptionOffer.Signature) -> some View](view/subscriptionpromotionaloffer(offer:signature:).md)
   Selects a promotional offer to apply to a purchase a customer makes from a subscription store view.
 

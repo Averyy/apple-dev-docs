@@ -37,6 +37,11 @@ This method is asynchronous, which requires that you call it with the `await` ke
 
 Sessions start in the [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) state. An app can have only one active session at a time. When your app no longer needs the credential session, call [`invalidate()`](credentialsession/invalidate().md). If your app goes into the background, the system automatically invalidates your session after a short delay.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is temporarily unavailable.
+- [`CredentialSession.ErrorCode.accessDenied`](credentialsession/errorcode/accessdenied.md): The user declined to grant access to the Secure Element.
+- [`CredentialSession.ErrorCode.ineligible`](credentialsession/errorcode/ineligible.md): The device or user configuration doesn’t support this service.
+- [`CredentialSession.ErrorCode.conditionsNotSatisfied`](credentialsession/errorcode/conditionsnotsatisfied.md): The iCloud account or passcode conditions aren’t met.
+
 ## See Also
 
 - [func invalidate() async throws](credentialsession/invalidate.md)

@@ -76,7 +76,6 @@ Load an audio file resource, like an audio file stored in .aiff or other format,
 - [AudioResource](audioresource.md)
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Resource](resource.md)
 - [Sendable](../Swift/Sendable.md)

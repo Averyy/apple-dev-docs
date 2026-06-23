@@ -1,6 +1,6 @@
 # key
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated key results, identifying the central note (tonic) and mode around which a piece of music is organized.

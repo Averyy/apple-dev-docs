@@ -16,7 +16,7 @@ func es_set_deadline_min_milliseconds(_ client: OpaquePointer, _ events: UnsafeP
 
 #### Return Value
 
-ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure or if client is not a descendants client
+ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure, if client is not a descendants client, or if any event in the array is a bootstrap auth event.
 
 #### Discussion
 
@@ -31,7 +31,7 @@ This allows descendants clients to configure a deadline floor so that deadlines 
 ## Parameters
 
 - `client`: The client to configure. Must be a descendants client created with es_new_descendants_client().
-- `events`: Array of event types to configure deadlines for
+- `events`: Array of event types to configure deadlines for. May not include ES_EVENT_TYPE_AUTH_BOOTSTRAP_CHECK_IN or ES_EVENT_TYPE_AUTH_BOOTSTRAP_LOOK_UP.
 - `event_count`: Number of events in the events array
 - `milliseconds`: The minimum deadline in milliseconds
 

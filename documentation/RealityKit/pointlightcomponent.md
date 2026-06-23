@@ -75,7 +75,7 @@ The point light illuminates entities based on its distance from them. Here is a 
   A platform-specific type used to define color for a point light.
 ### Assigning render layers
 - [var layers: RenderLayer.Set](pointlightcomponent/layers.md)
-  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
 ### Lighting the surroundings
 - [PointLightComponent.SurroundingsLight](pointlightcomponent/surroundingslight.md)
   A component that specifies that the point light illuminates the physical and immersive environment.

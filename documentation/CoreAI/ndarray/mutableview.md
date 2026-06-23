@@ -63,6 +63,9 @@ struct MutableView<Element> where Element : BitwiseCopyable
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 - [func slice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-qyjq.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Subscripts
+- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/mutableview/subscript(scalarat:).md)
+  Access the element at a multi-dimensional `index`.
 
 ## See Also
 

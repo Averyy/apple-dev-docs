@@ -12,6 +12,8 @@ Integrate handwriting recognition into your app to identify written text across 
 
 #### Overview
 
+![A screenshot showing the word heart handwritten in English on the canvas, with PencilKit displaying its Chinese character translation at the top of the screen.](https://docs-assets.developer.apple.com/published/a3e04b5df12d580b40b58d09edf00d2b/building-a-handwriting-recognition-experience-with-pencilkit%402x.png)
+
 > **Note**: This sample code project is associated with WWDC26 session [`203: Read Between the Strokes with PencilKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc26/203/).
 
 This sample code project must be run on a physical device with Apple Pencil.

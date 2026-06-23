@@ -1,4 +1,4 @@
 Completed scraping Music Understanding!
-Total pages scraped: 0
-Pages skipped (unchanged): 95
+Total pages scraped: 89
+Pages skipped (unchanged): 1
 Pages failed: 0

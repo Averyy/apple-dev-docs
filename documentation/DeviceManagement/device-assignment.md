@@ -22,6 +22,8 @@ Manage devices for your students and employees.
   Get updates about the list of devices the server manages.
 - [Disown Devices](disown-devices.md)
   Notify Apple’s servers that your organization no longer owns the specified devices.
+- [Get Replacement Details](get-replacement-details.md)
+  Get information about the device that a replacement device replaces.
 - [Get Beta Enrollment Tokens](get-beta-enrollment-tokens.md)
   Retrieves the beta enrollment tokens available for the organization.
 ### Profile management

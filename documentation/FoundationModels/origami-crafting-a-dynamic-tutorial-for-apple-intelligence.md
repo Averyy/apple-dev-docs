@@ -373,6 +373,7 @@ Origami also draws on other parts of the Foundation Models framework, like tool 
   Adapt sessions dynamically at runtime by loading instructions and tools based on the state of your app.
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

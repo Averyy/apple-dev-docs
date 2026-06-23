@@ -19,10 +19,6 @@ The URL of the original image asset, if the attachment was created from a URL.
 var url: URL? { get }
 ```
 
-#### Discussion
-
-This is `nil` if the attachment was created from a `CGImage`, `CIImage`, or `CVPixelBuffer`.
-
 ## See Also
 
 - [var cgImage: CGImage](transcript/imageattachment/cgimage.md)

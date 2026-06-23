@@ -32,24 +32,40 @@ Use tracking events to observe the progress of mouse interaction as it unfolds â
 
 ### Tracking events
 - [static var trackingBegan: NSControl.Events](nscontrol/events/trackingbegan.md)
+  A tracking began event in the control.
 - [static var trackingRepeated: NSControl.Events](nscontrol/events/trackingrepeated.md)
+  A repeated tracking began event in the control. For this event the click count is greater than one.
 - [static var trackingInside: NSControl.Events](nscontrol/events/trackinginside.md)
+  An event where the pointer or touch moves inside the bounds of the control.
 - [static var trackingOutside: NSControl.Events](nscontrol/events/trackingoutside.md)
+  An event where the pointer or touch moves outside the bounds of the control.
 - [static var trackingEntered: NSControl.Events](nscontrol/events/trackingentered.md)
+  An event where tracking transitions from outside to inside the bounds of the control.
 - [static var trackingExited: NSControl.Events](nscontrol/events/trackingexited.md)
+  An event where tracking transitions from inside to outside the bounds of the control.
 - [static var trackingEndedInside: NSControl.Events](nscontrol/events/trackingendedinside.md)
+  A tracking ended event where the pointer or touch is inside the bounds of the control.
 - [static var trackingEndedOutside: NSControl.Events](nscontrol/events/trackingendedoutside.md)
+  A tracking ended event where the pointer or touch is outside the bounds of the control.
 - [static var trackingCancelled: NSControl.Events](nscontrol/events/trackingcancelled.md)
+  A system event canceling the current tracking for the control.
 ### Semantic events
 - [static var valueChanged: NSControl.Events](nscontrol/events/valuechanged.md)
+  An event where dragging or otherwise manipulating a control causes it to emit a series of different values.
 - [static var primaryActionTriggered: NSControl.Events](nscontrol/events/primaryactiontriggered.md)
+  A semantic action triggered by buttons.
 - [static var menuActionTriggered: NSControl.Events](nscontrol/events/menuactiontriggered.md)
+  A menu action has triggered prior to the menu being presented.
 ### Aggregate events
 - [static var allTrackingEvents: NSControl.Events](nscontrol/events/alltrackingevents.md)
+  All tracking events.
 - [static var allEvents: NSControl.Events](nscontrol/events/allevents.md)
+  All events, including system events.
 ### Reserved ranges
 - [static var applicationReserved: NSControl.Events](nscontrol/events/applicationreserved.md)
+  A range of control-event values available for app use.
 - [static var systemReserved: NSControl.Events](nscontrol/events/systemreserved.md)
+  A range of control-event values reserved for internal framework use.
 ### Initializers
 - [init(rawValue: UInt)](nscontrol/events/init(rawvalue:).md)
 

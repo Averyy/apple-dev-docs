@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus.usedReducedFriction
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates the app evaluated the insights and they were a factor in making the operation easier for the user.
@@ -9,7 +9,6 @@ A value that indicates the app evaluated the insights and they were a factor in 
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

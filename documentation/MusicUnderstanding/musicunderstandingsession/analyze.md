@@ -1,6 +1,6 @@
 # analyze()
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: method
 
 Performs all available analyses on the session’s audio source.

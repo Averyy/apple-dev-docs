@@ -1,4 +1,4 @@
 Completed scraping IdentityDocumentServicesUI!
-Total pages scraped: 0
-Pages skipped (unchanged): 31
+Total pages scraped: 28
+Pages skipped (unchanged): 3
 Pages failed: 0

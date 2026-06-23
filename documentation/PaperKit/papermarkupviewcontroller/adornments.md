@@ -29,8 +29,6 @@ Adornments are supplementary visual elements you place on the canvas above the p
 
 - [func adornmentFrame(for: UUID) -> CGRect?](papermarkupviewcontroller/adornmentframe(for:).md)
   Returns the current frame of the specified adornment.
-- [func frame(forAdornmentWithID: UUID) -> CGRect?](papermarkupviewcontroller/frame(foradornmentwithid:).md)
-  Returns the current frame of the specified adornment.
 
 
 ---

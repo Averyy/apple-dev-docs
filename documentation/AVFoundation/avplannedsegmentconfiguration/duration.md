@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The duration of this planned segment.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,10 +18,6 @@
 ```swift
 var duration: CMTime { get }
 ```
-
-#### Discussion
-
-The duration of this planned segment.
 
 
 ---

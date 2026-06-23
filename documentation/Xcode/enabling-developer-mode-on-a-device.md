@@ -10,7 +10,7 @@ Enable Developer Mode on a device to run your app on the device through Xcode. D
 
 The feature doesn’t affect ordinary installation techniques, such as buying apps from the App Store or participating in a TestFlight team. Instead, Developer Mode focuses on scenarios like building and running an app from Xcode, or installing an `.ipa` file with [`Apple Configurator`](https://developer.apple.comhttps://support.apple.com/apple-configurator). In these cases, the device explicitly asks the person using it to confirm that they’re a developer, and aware of the risks of installing development-signed software.
 
-When you start pairing a device, Device Hub displays a message when you need to turn on Developer Mode or when Developer Mode is turned off on a previously paired device. For more information, see [`Pairing your devices with your Mac`](pairing-your-devices-with-your-mac.md).
+When you start pairing a device, Device Hub displays a message when you need to turn on Developer Mode or when Developer Mode is turned off on a previously paired device. For more information, see [`Managing your simulated and physical devices in Device Hub`](managing-your-simulated-and-physical-devices-in-device-hub.md).
 
 After you turn on Developer Mode, Developer settings appear on the device that help you test and debug your app.
 
@@ -32,8 +32,8 @@ To turn off Developer Mode, turn off the Developer Mode switch in Settings > Pri
 
 - [Running your app on simulated or physical devices](running-your-app-on-simulated-or-physical-devices.md)
   Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
-- [Pairing your devices with your Mac](pairing-your-devices-with-your-mac.md)
-  Pair physical devices to your Mac so you can choose them as run destinations in Xcode.
+- [Managing your simulated and physical devices in Device Hub](managing-your-simulated-and-physical-devices-in-device-hub.md)
+  Add custom simulators and pair physical devices with your Mac so you can choose them as run destinations in Xcode.
 
 
 ---

@@ -27,6 +27,10 @@ Preview an NSViewController.
 - [var NS_USER_ACTIVITY_SUPPORTED: Int32](ns_user_activity_supported.md)
 - [macro Preview(String?, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> NSView)](preview(_:traits:body:)-7pfjp.md)
   Preview an NSView.
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSView)](preview(_:traits:arguments:body:)-5hzef.md)
+  Creates a group of previews of an NSView.
+- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSViewController)](preview(_:traits:arguments:body:)-7h191.md)
+  Creates a group of previews of an NSViewController.
 
 
 ---

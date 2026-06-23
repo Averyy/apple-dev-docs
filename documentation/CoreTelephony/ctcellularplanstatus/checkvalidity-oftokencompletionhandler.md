@@ -3,7 +3,7 @@
 **Framework**: Core Telephony  
 **Kind**: method
 
-Checks for a valid ICCID associated with the token.
+Checks the validity of the ICCID associated with the token.
 
 **Availability**:
 - iOS 26.0+
@@ -18,7 +18,12 @@ class func checkValidity(ofToken token: String) async throws -> Bool
 
 #### Discussion
 
-This boolean returns `YES` if the ICCID associated with the token is present and turned-on.
+The `isValid` parameter in the completion handler is `true` when the ICCID associated with the token is present and turned on.
+
+## Parameters
+
+- `token`: The token to validate.
+- `completionHandler`: A closure the framework calls with a Boolean indicating whether the ICCID is present and turned on, and any error that occurs.
 
 
 ---

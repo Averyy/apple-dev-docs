@@ -27,6 +27,7 @@ When the handler doesn’t return a value, the action status is preserved: the v
 ## See Also
 
 - [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> ActionResult)](behaviortreeaction/subscribe(to:_:)-9mrvx.md)
+  Subscribes to a serializable action event and returns a `ActionResult`.
 
 
 ---

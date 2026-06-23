@@ -30,6 +30,12 @@ You can call this method in any session state. The state transitions to [`Creden
 
 The caller must invoke [`invalidate()`](credentialtransaction/configuration/invalidate().md) after completing each transaction.
 
+> **Note**: An [`CredentialSession.ErrorCode`](credentialsession/errorcode.md). The most common errors are: - [`CredentialSession.ErrorCode.invalidView`](credentialsession/errorcode/invalidview.md): The transaction has no associated scene.
+- [`CredentialSession.ErrorCode.credentialDoesNotExist`](credentialsession/errorcode/credentialdoesnotexist.md): The specified credential doesn’t exist or the caller doesn’t have access to it.
+- [`CredentialSession.ErrorCode.instanceDoesNotExist`](credentialsession/errorcode/instancedoesnotexist.md): The specified instance identifier doesn’t exist in the target credential.
+- [`CredentialSession.ErrorCode.userCanceledAuthorization`](credentialsession/errorcode/usercanceledauthorization.md): The user dismissed the authorization sheet.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable.
+
 ## Parameters
 
 - `credential`: The installed credential to enter wired mode with.

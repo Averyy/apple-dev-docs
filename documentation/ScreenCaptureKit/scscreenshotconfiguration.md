@@ -83,6 +83,7 @@ class SCScreenshotConfiguration
   An instance for the capture of single frames from a stream.
 - [class SCScreenshotOutput](scscreenshotoutput.md)
   An object that contains all images requested by the client.
+- [class SCVideoEffectOutput](scvideoeffectoutput.md)
 
 
 ---

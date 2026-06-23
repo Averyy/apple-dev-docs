@@ -1,6 +1,6 @@
 # InstrumentActivityResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A structure containing the activity levels and detected time ranges for instruments in a song.
@@ -32,7 +32,6 @@ The [`activity`](instrumentactivityresult/activity.md) property provides a conti
 ### Instance Properties
 - [let activity: [InstrumentActivityResult.Instrument : [MusicUnderstandingSession.TimedValue<Float>]]](instrumentactivityresult/activity.md)
   The activity level of each instrument over time, as values from 0.0 to 1.0.
-- [var debugDescription: String](instrumentactivityresult/debugdescription.md)
 - [let ranges: [InstrumentActivityResult.Instrument : [CMTimeRange]]](instrumentactivityresult/ranges.md)
   The time ranges during which the framework detects each instrument.
 

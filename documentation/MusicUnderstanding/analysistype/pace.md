@@ -1,6 +1,6 @@
 # pace
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 A value that identifies the pace music analysis type.

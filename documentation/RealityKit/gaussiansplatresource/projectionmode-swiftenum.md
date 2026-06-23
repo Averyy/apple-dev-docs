@@ -8,7 +8,8 @@ Controls how 2D splat footprints are computed from 3D Gaussian primitives:
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration
@@ -32,7 +33,6 @@ enum ProjectionMode
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 

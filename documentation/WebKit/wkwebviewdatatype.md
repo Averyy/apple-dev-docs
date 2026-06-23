@@ -35,6 +35,11 @@ struct WKWebViewDataType
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
+## See Also
+
+- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
+
 
 ---
 

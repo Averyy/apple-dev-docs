@@ -1,6 +1,6 @@
 # requestedInsight
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 The insight you’re requesting.
@@ -9,7 +9,6 @@ The insight you’re requesting.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
+Enables reordering views from this content within and between sections in the scope of a reorderable container modifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -26,9 +26,9 @@ func reorderable(collectionID: some Hashable & Sendable) -> some DynamicViewCont
 
 #### Discussion
 
-Declare this modifier on [`DynamicViewContent`](dynamicviewcontent.md) within a reorderable container to allow your users to reorder the items in the content using a system drag gesture.
+Declare this modifier on [`DynamicViewContent`](dynamicviewcontent.md) within a reorderable container to allow people to reorder the items in the content using a system drag gesture. A reorderable container is a list, stack, grid, or custom layout that you define with the [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
 
-Provide a collection identifier when you have multiple collections in the container and need to uniquely refer to each one. If your container only has a single collection, you can use the default identifier.
+Use this modifier when you have multiple collections in the container. Provide a collection identifier to uniquely identify the collection. If your container has a single collection, provide [`ReorderableSingleCollectionIdentifier`](reorderablesinglecollectionidentifier.md) as the identifier, or use [`reorderable()`](dynamicviewcontent/reorderable().md) instead.
 
 This example shows a sectioned list of reminders:
 
@@ -56,7 +56,9 @@ struct ContentView: View {
 }
 ```
 
-- collectionID: The identifier that represents this collection. Its value is used in the destination value when reordering.
+## Parameters
+
+- `collectionID`: The identifier that represents this collection. Its value is used in the destination value when reordering.
 
 ## See Also
 
@@ -64,23 +66,23 @@ struct ContentView: View {
   Move cards between positions in a card game using drag, drop, and reordering modifiers.
 - [func reorderable() -> some DynamicViewContent<Self.Data>
 ](dynamicviewcontent/reorderable.md)
-  Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
+  Enables reordering of views from this content inside the scope of a reorderable container modifier.
 - [struct ReorderableSingleCollectionIdentifier](reorderablesinglecollectionidentifier.md)
-  An opaque, empty type used to identify reorderable containers and modifiers expecting only a single collection.
+  An opaque, empty type used to identify reorderable containers and modifiers with only a single collection.
 - [func reorderContainer<Item>(for: Item.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views.
 - [func reorderContainer<Item, CollectionID>(for: Item.Type, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:in:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type you specify to identify sections.
 - [func reorderContainer<Item, ItemID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, isEnabled: Bool, move: (ReorderDifference<ItemID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:itemid:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type and keypath you specify to identify items.
 - [func reorderContainer<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<ItemID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:itemid:in:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type and keypath you use to identify items and a type you use to identify collections.
 - [func reorderDestination<Item, CollectionID>(for: Item.Type, in: CollectionID.Type) -> ReorderDifference<Item.ID, CollectionID>.Destination?](dropsession/reorderdestination(for:in:).md)
   Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
 - [func reorderDestination<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type) -> ReorderDifference<ItemID, CollectionID>.Destination?](dropsession/reorderdestination(for:itemid:in:).md)
   Provides the destination value of a reordering operation that occurred in the container associated with this drop destination modifier.
 - [struct ReorderDifference](reorderdifference.md)
-  The difference produced by a reordering operation.
+  The difference that a reordering operation produces.
 
 
 ---

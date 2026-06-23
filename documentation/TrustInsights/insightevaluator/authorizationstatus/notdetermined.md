@@ -1,6 +1,6 @@
 # InsightEvaluator.AuthorizationStatus.notDetermined
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A person hasn’t yet consented to allow this app to request evaluations.
@@ -9,7 +9,6 @@ A person hasn’t yet consented to allow this app to request evaluations.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -14,6 +14,10 @@ The key for the composition origin.
 let QCCompositionAttributeBuiltInKey: String
 ```
 
+#### Discussion
+
+The associated value is an `NSNumber` object that contains a Boolean value. [`true`](https://developer.apple.com/documentation/Swift/true) indicates the composition is built-in (provided by macOS).
+
 ## See Also
 
 - [let QCCompositionAttributeCategoryKey: String](qccompositionattributecategorykey.md)

@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
-
 ## Declaration
 
 ```swift
@@ -15,9 +13,7 @@ object ServiceConfigResponse
 
 ### Dictionaries
 - [object ServiceConfigResponse.Limits](serviceconfigresponse/limits-data.dictionary.md)
-  Request limits for the managed location. Each entry maps a limit name to its current integer value.
 - [object ServiceConfigResponse.Urls](serviceconfigresponse/urls-data.dictionary.md)
-  Service URLs for the managed location. Each entry maps a URL name to its corresponding endpoint.
 
 ## Properties
 

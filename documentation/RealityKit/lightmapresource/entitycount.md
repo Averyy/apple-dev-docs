@@ -16,7 +16,7 @@ Total number of entities in this lightmap.
 ## Declaration
 
 ```swift
-var entityCount: Int { get }
+final var entityCount: Int { get }
 ```
 
 ## See Also

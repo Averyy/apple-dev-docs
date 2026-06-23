@@ -28,8 +28,6 @@ The return value of the `body` closure parameter.
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeBytes(_:)`. Do not store or return the pointer for later use.
 
-Note: For an empty `RawSpan`, the closure always receives a `nil` pointer.
-
 ## Parameters
 
 - `body`: A closure with an `UnsafeRawBufferPointer` parameter that points to the viewed contiguous storage. If `body` has a return value, that value is also used as the return value for the `withUnsafeBytes(_:)` method. The closure’s parameter is valid only for the duration of its execution.

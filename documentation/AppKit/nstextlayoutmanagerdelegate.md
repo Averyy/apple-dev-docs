@@ -14,19 +14,24 @@ Optional methods that delegates implement to respond to layout changes.
 protocol NSTextLayoutManagerDelegate : NSObjectProtocol
 ```
 
+#### Overview
+
+Optional methods that delegates implement to respond to layout changes.
+
 ## Topics
 
 ### Responding to layout changes
 - [func textLayoutManager(NSTextLayoutManager, renderingAttributesForLink: Any, at: any NSTextLocation, defaultAttributes: [NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]?](nstextlayoutmanagerdelegate/textlayoutmanager(_:renderingattributesforlink:at:defaultattributes:).md)
-  The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
+  Returns a dictionary of rendering attributes for rendering a link.
 - [func textLayoutManager(NSTextLayoutManager, shouldBreakLineBefore: any NSTextLocation, hyphenating: Bool) -> Bool](nstextlayoutmanagerdelegate/textlayoutmanager(_:shouldbreaklinebefore:hyphenating:).md)
-  The method the framework calls to determine the soft line break point.
+  Invoked while determining the soft line break point.
 - [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
-  The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
+  Returns a text layout fragment for the specified location in the text element.
 ### Instance Methods
 - [func textLayoutManager(NSTextLayoutManager, cacheTextAttachmentViewProvider: NSTextAttachmentViewProvider, for: NSTextAttachment)](nstextlayoutmanagerdelegate/textlayoutmanager(_:cachetextattachmentviewprovider:for:).md)
+  Notifies the delegate that a view provider associated with a text attachment is about to be invalidated.
 - [func textLayoutManager(NSTextLayoutManager, retrieveCachedTextAttachmentViewProviderFor: NSTextAttachment) -> NSTextAttachmentViewProvider?](nstextlayoutmanagerdelegate/textlayoutmanager(_:retrievecachedtextattachmentviewproviderfor:).md)
-- [func textLayoutManager(NSTextLayoutManager, textViewportLayoutControllerFor: NSTextContainer) -> NSTextViewportLayoutController?](nstextlayoutmanagerdelegate/textlayoutmanager(_:textviewportlayoutcontrollerfor:).md)
+  Returns a cached `NSTextAttachmentViewProvider` to be associated with a particular attachment.
 
 ## Relationships
 

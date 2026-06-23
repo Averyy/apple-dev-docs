@@ -18,6 +18,8 @@ var isOrdered: Bool { get }
   Returns the list options mask value of the receiver.
 - [NSTextList.Options](nstextlist/options.md)
   Values that available options for text list items.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the contents.
 
 
 ---

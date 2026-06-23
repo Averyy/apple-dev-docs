@@ -27,6 +27,7 @@ struct ComputeNodeGraph
 - [ComputeNodeGraph.ArrayDefinition](computenodegraph/arraydefinition.md)
 - [ComputeNodeGraph.Assembly](computenodegraph/assembly.md)
   Fully assembled configuration of compute graph nodes.
+- [ComputeNodeGraph.DataType](computenodegraph/datatype.md)
 - [ComputeNodeGraph.Edge](computenodegraph/edge.md)
 - [ComputeNodeGraph.LibraryReference](computenodegraph/libraryreference.md)
   A Metal library and an optional bundle identifier that locates shader functions.
@@ -47,12 +48,13 @@ struct ComputeNodeGraph
 - [ComputeNodeGraph.StateDefinition](computenodegraph/statedefinition.md)
   A declaration of a named state value and where it lives in the simulation.
 - [ComputeNodeGraph.StructureDefinition](computenodegraph/structuredefinition.md)
+  A named structure type, pairing a type name with its in-memory layout.
 - [ComputeNodeGraph.StructureLayout](computenodegraph/structurelayout.md)
 - [ComputeNodeGraph.SwizzleChannels](computenodegraph/swizzlechannels.md)
 ### Initializers
 - [init()](computenodegraph/init.md)
-- [init(structureOf: ComputeNodeGraph)](computenodegraph/init(structureof:).md)
-  Initializes a new graph with only the structure from another graph.
+- [init(data: Data) throws](computenodegraph/init(data:).md)
+  Creates a graph by decoding a computegraph.
 ### Instance Properties
 - [var edges: [ComputeNodeGraph.Edge]](computenodegraph/edges.md)
 - [var nodes: [ComputeNodeGraph.NodeID : ComputeNodeGraph.Node]](computenodegraph/nodes.md)
@@ -68,6 +70,8 @@ struct ComputeNodeGraph
   Returns whether the graph contains the given edge.
 - [func contains(node: ComputeNodeGraph.NodeID) -> Bool](computenodegraph/contains(node:).md)
   Returns whether the graph contains a node with the given key.
+- [func data(using: ComputeNodeGraph.Format) throws -> Data](computenodegraph/data(using:).md)
+  Returns the graph encoded in the specified format.
 - [func removeEdge(ComputeNodeGraph.Edge) -> Bool](computenodegraph/removeedge(_:).md)
   Removes an edge from the graph.
 - [func removeNode(ComputeNodeGraph.NodeID) throws](computenodegraph/removenode(_:).md)
@@ -82,9 +86,13 @@ struct ComputeNodeGraph
 ### Type Aliases
 - [ComputeNodeGraph.NodeID](computenodegraph/nodeid.md)
 ### Enumerations
+- [ComputeNodeGraph.Format](computenodegraph/format.md)
+  A serialization format used to encode a compute node graph.
 - [ComputeNodeGraph.Port](computenodegraph/port.md)
 - [ComputeNodeGraph.StateType](computenodegraph/statetype.md)
+  The shape of a value stored in a compute graph’s state.
 - [ComputeNodeGraph.Topology](computenodegraph/topology.md)
+  The primitive topology used to assemble output geometry for an output stage.
 - [ComputeNodeGraph.ValueType](computenodegraph/valuetype.md)
   Describes the storage and layout of a port’s value, ranging from Metal primitives and structures to opaque references and stateful bindings.
 

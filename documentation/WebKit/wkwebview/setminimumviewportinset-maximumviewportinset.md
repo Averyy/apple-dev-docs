@@ -20,6 +20,7 @@ func setMinimumViewportInset(_ minimumViewportInset: NSEdgeInsets, maximumViewpo
 
 - [var minimumViewportInset: UIEdgeInsets](wkwebview/minimumviewportinset.md)
 - [var maximumViewportInset: UIEdgeInsets](wkwebview/maximumviewportinset.md)
+- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
 
 
 ---

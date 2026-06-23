@@ -175,6 +175,8 @@ The `CIContext` manages various internal state such as `MTLCommandQueue` and cac
   Given a Core Image image, use the receiving Core Image context to calculate its HDR statistics (content headroom and content average light level) and then return a new Core Image image that has the calculated values.
 - [func createCGImage(CIImage, from: CGRect, format: CIFormat, colorSpace: CGColorSpace?, deferred: Bool, calculateHDRStats: Bool) -> CGImage?](cicontext/createcgimage(_:from:format:colorspace:deferred:calculatehdrstats:).md)
   Creates a Core Graphics image from a region of a Core Image image instance with an option for calculating HDR statistics.
+- [func estimateRender(CIImage, from: CGRect, to: CIRenderDestination, at: CGPoint) throws -> CIRenderTask](cicontext/estimaterender(_:from:to:at:).md)
+  Returns a task with estimated resource statistics for a render, without executing the render.
 ### Default Implementations
 - [CIContext Implementations](cicontext/cicontext-implementations.md)
 

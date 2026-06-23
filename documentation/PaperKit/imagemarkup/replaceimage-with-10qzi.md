@@ -28,6 +28,17 @@ Image content is shown scaled to fill.
 
 - `url`: The URL of the image file to load and display.
 
+## See Also
+
+- [var image: CGImage?](imagemarkup/image.md)
+  The image content displayed by this markup.
+- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+  Replaces the contents of this image markup with a `CGImage`.
+- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+  The orientation of the image content.
+- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+  The portion of the image to display, in normalized coordinates.
+
 
 ---
 

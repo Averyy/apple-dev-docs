@@ -42,6 +42,8 @@ Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
+- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
+  Interact with detailed 3D models using manipulation and clipping controls.
 
 
 ---

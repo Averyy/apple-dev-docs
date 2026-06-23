@@ -1,6 +1,6 @@
 # encode(to:)
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: method
 
 Encodes the ranged value into the given encoder.

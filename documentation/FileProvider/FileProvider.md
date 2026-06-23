@@ -85,6 +85,8 @@ After you set these keys, other apps can open and edit the contents of your `Doc
 - [struct NSFileProviderUserInfoKey](nsfileprovideruserinfokey.md)
 - [struct NSFileProviderVolumeUnsupportedReason](nsfileprovidervolumeunsupportedreason.md)
   Constants that describe why an external volume might not be eligible for storing a domain.
+### Enumerations
+- [enum NSFileProviderNamespacePolicy](nsfileprovidernamespacepolicy.md)
 
 
 ---

@@ -16,7 +16,6 @@ A configuration for retargeting skeletal animations between different skeletons.
 ## Declaration
 
 ```swift
-@MainActor
 class RetargetingConfiguration
 ```
 
@@ -76,12 +75,6 @@ do {
   The skeleton the source animation targets.
 - [var targetSkeleton: SkeletonResource](retargetingconfiguration/targetskeleton.md)
   The skeleton the retargeting animates.
-
-## Relationships
-
-### Conforms To
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

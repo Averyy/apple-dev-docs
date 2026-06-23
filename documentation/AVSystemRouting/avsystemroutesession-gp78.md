@@ -62,8 +62,6 @@ Report playback metadata to `MPNowPlayingInfoCenter` to ensure the system displa
   An active media route to a remote device that manages connection and communication for media playback and data exchange.
 - [AVSystemRoute.LaunchMode](avsystemroute-5s2um/launchmode.md)
   The mode that determines how media playback launches on a remote device.
-- [enum AVSystemRouteLaunchMode](avsystemroutelaunchmode.md)
-  The mode that determines how media playback launches on a remote device.
 
 
 ---

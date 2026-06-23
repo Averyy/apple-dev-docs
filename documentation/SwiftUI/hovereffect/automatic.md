@@ -15,14 +15,14 @@ An effect  that attempts to determine the effect automatically. This is the defa
 ## Declaration
 
 ```swift
-static let automatic: HoverEffect
+static var automatic: HoverEffect { get }
 ```
 
 ## See Also
 
-- [static let highlight: HoverEffect](hovereffect/highlight.md)
+- [static var highlight: HoverEffect](hovereffect/highlight.md)
   An effect  that morphs the pointer into a platter behind the view and shows a light source indicating position.
-- [static let lift: HoverEffect](hovereffect/lift.md)
+- [static var lift: HoverEffect](hovereffect/lift.md)
   An effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 
 

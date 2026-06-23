@@ -1,6 +1,6 @@
 # StructureResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A song’s structural boundary information, including sections, segments, and phrases.
@@ -27,7 +27,6 @@ The `StructureResult` describes a song’s structure in terms of sections, segme
 ## Topics
 
 ### Instance Properties
-- [var debugDescription: String](structureresult/debugdescription.md)
 - [let phrases: [CMTimeRange]](structureresult/phrases.md)
   The time range of each phrase in the song.
 - [let sections: [CMTimeRange]](structureresult/sections.md)

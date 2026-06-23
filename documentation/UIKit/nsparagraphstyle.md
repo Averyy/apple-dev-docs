@@ -62,6 +62,7 @@ The [`NSParagraphStyle`](nsparagraphstyle.md) class manages an immutable set of 
   The documentwide default tab interval.
 ### Getting text block and list information
 - [var textBlocks: [NSTextBlock]](nsparagraphstyle/textblocks.md)
+  The text blocks that contain the paragraph, nested from outermost to innermost.
 - [var textLists: [NSTextList]](nsparagraphstyle/textlists.md)
   The text lists that contain the paragraph.
 ### Getting line-break information

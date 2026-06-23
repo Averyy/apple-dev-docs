@@ -16,7 +16,7 @@ optional func preallocateSpace(for file: FSItem, at offset: off_t, length: Int, 
 
 #### Discussion
 
-This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md).
+This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`.
 
 > ❗ **Important**: Only implement this method if your file system conforms to [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md).
 

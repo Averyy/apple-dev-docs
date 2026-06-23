@@ -30,7 +30,7 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [class FSItem](fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 - [class FSActivateResult](fsactivateresult.md)
-  Result class for [`activate(options:replyHandler:)`](fsvolume/handler/activate(options:replyhandler:).md)
+  The result of an activate call.
 - [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/deactivate(options:replyhandler:).md)
   Tears down a previously initialized volume instance.
 - [struct FSDeactivateOptions](fsdeactivateoptions.md)

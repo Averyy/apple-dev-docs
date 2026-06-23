@@ -3,7 +3,7 @@
 **Framework**: Vision  
 **Kind**: init
 
-Initializer
+Instantiates with a seed point.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -11,6 +11,7 @@ Initializer
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -18,9 +19,9 @@ Initializer
 init(seedPoint: NormalizedPoint, _ revision: GenerateIterativeSegmentationRequest.Revision? = nil)
 ```
 
-## Parameters
+#### Discussion
 
-- `revision`: The specific algorithm or implementation revision that is to be used to perform the request.
+Note: This point is counted toward the number of total points that can be added.
 
 
 ---

@@ -3,8 +3,6 @@
 **Framework**: Media Intents  
 **Kind**: init
 
-Creates an audio search with a person’s search criteria and Spotlight results.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,13 +15,8 @@ Creates an audio search with a person’s search criteria and Spotlight results.
 ## Declaration
 
 ```swift
-init(criteria: AudioSearch.Criteria, spotlightSearchResults: [AudioSearch.SpotlightResult])
+init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])
 ```
-
-## Parameters
-
-- `criteria`: The search criteria for the audio request.
-- `spotlightSearchResults`: Spotlight results the system provides for entity resolution.
 
 ## See Also
 

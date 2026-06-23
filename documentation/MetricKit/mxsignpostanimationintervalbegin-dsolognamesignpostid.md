@@ -18,6 +18,10 @@ Posts the start time of an animation interval to the log system.
 func mxSignpostAnimationIntervalBegin(dso: UnsafeRawPointer = #dsohandle, log: OSLog, name: StaticString, signpostID: OSSignpostID = .exclusive, _ format: StaticString = "isAnimation=YES \n%{public, signpost:metrics}@", _ arguments: [any CVarArg] = [Unmanaged<NSObject>.fromOpaque(_MXSignpostMetricsSnapshot()).takeUnretainedValue()])
 ```
 
+## Mentions
+
+- [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+
 #### Discussion
 
 Call this function to mark the beginning of an animation interval in the metric kit log. Provide a `log` that you create with [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md), a `name` for the event, and variable `arguments` for [`os_signpost_event_emit`](https://developer.apple.com/documentation/os/os_signpost_event_emit). Don’t alter the parameters `dso`, `signpostID`, or `format`.

@@ -1,6 +1,6 @@
 # shortTerm
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 An array of short-term loudness measurements sampled across the song in LUFS.

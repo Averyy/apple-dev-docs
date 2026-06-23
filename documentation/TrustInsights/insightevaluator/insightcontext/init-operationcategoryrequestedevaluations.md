@@ -1,6 +1,6 @@
 # init(operationCategory:requestedEvaluations:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: init
 
 Creates the context with which to request insights.
@@ -9,7 +9,6 @@ Creates the context with which to request insights.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -20,8 +20,7 @@ static let defaultResolverSpecification: EmptyResolverSpecification<AudioSearch>
 
 ## See Also
 
-- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [AudioSearch.SpotlightResult])](audiosearch/init(criteria:spotlightsearchresults:).md)
-  Creates an audio search with a person’s search criteria and Spotlight results.
+- [init(criteria: AudioSearch.Criteria, spotlightSearchResults: [Never])](audiosearch/init(criteria:spotlightsearchresults:).md)
 
 
 ---

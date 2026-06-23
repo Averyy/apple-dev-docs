@@ -16,10 +16,6 @@ A secure token that you receive from your participating payment service provider
 struct Token
 ```
 
-## Mentions
-
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
-
 #### Overview
 
 You must create a secure token to use Tap to Pay on iPhone. Your payment service provider supplies the string you use to create this token. Create your token and pass it to the [`prepare(using:)`](paymentcardreader/prepare(using:).md) method to configure the current device to read cards.

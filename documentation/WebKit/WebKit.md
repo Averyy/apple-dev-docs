@@ -47,23 +47,6 @@ For more information about WebKit, go to [`https://webkit.org`](https://develope
   Enhance testing of your web content using Safari’s enhancements to WebDriver.
 - [Testing with WebDriver in Safari](testing-with-webdriver-in-safari.md)
   Enable WebDriver and run a test.
-### Classes
-- [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
-- [class WKFormInfo](wkforminfo.md)
-- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
-- [class WKJSHandle](wkjshandle.md)
-  A WKJSHandle object contains a reference to a JavaScript object.
-- [class WKJSScriptingBuffer](wkjsscriptingbuffer.md)
-  A WKJSScriptingBuffer object exposes an application controlled data buffer to JavaScript.
-- [class WKJSSerializedNode](wkjsserializednode.md)
-  A `WKJSSerializedNode` object contains the serialized representation of a DOM node
-### Protocols
-- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
-### Structures
-- [struct WebViewImmersiveEnvironmentView](webviewimmersiveenvironmentview.md)
-  A SwiftUI view that renders a specific website-provided immersive environment.
-### Enumerations
-- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
 
 
 ---

@@ -28,8 +28,22 @@ final class USDPlayer
 - [func update(timeCode: USDStage.TimeCode) -> sending USDPlayer.FrameUpdate?](usdplayer/update(timecode:).md)
 - [USDPlayer.FrameUpdate](usdplayer/frameupdate.md)
 ### Supplying lighting
-- [func importCustomIBLTexture(data: Data) -> TextureData?](usdplayer/importcustomibltexture(data:).md)
-  Import a custom IBL texture with CPU import processing. Returns the texture data directly; returns nil on failure.
+- [func importCustomIBLTexture(data: Data) throws -> USDPlayer.TextureData](usdplayer/importcustomibltexture(data:).md)
+  Import a custom IBL texture with CPU import processing. Throws `USDRenderError` on failure.
+### Structures
+- [USDPlayer.DeformationData](usdplayer/deformationdata.md)
+- [USDPlayer.DeformationID](usdplayer/deformationid.md)
+  Deformation resource identifier
+- [USDPlayer.MaterialData](usdplayer/materialdata.md)
+- [USDPlayer.MaterialID](usdplayer/materialid.md)
+  Material resource identifier
+- [USDPlayer.MeshData](usdplayer/meshdata.md)
+- [USDPlayer.MeshID](usdplayer/meshid.md)
+  Mesh resource identifier
+- [USDPlayer.TextureData](usdplayer/texturedata.md)
+- [USDPlayer.TextureID](usdplayer/textureid.md)
+  Texture resource identifier
+- [USDPlayer.TextureLevelInfo](usdplayer/texturelevelinfo.md)
 
 ## See Also
 

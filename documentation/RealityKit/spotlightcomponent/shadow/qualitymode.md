@@ -42,6 +42,7 @@ struct QualityMode
 ## See Also
 
 - [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
+  The quality of the soft shadows this light casts.
 - [var lightSize: Float](spotlightcomponent/shadow/lightsize.md)
   The light size that determines the softness of the shadows Larger size would mean a larger penumbra and a larger transition range from fully shadowed to lit. It is the radius of the light in world space units. It is also modulated by the attenaution radius, i.e., lights with larger attenuation radius need larger light size.
 

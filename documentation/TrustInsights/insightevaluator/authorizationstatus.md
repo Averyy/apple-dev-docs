@@ -1,6 +1,6 @@
 # InsightEvaluator.AuthorizationStatus
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Values that indicate the status of the app’s authorization to request evaluations.
@@ -9,7 +9,6 @@ Values that indicate the status of the app’s authorization to request evaluati
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 
@@ -35,7 +34,6 @@ Values that indicate the status of the app’s authorization to request evaluati
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

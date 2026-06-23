@@ -5,7 +5,7 @@
 ## Topics
 
 ### Constants
-- [NOTIFY_REUSE](notify_reuse.md)
+- [var NOTIFY_REUSE: Int32](notify_reuse.md)
 
 ## See Also
 

@@ -71,6 +71,7 @@ byteArray += someBytes[n..<someBytes.count]
 - [var baseAddress: UnsafeRawPointer?](unsaferawbufferpointer/baseaddress.md)
   A pointer to the first byte of the buffer.
 - [var bytes: RawSpan](unsaferawbufferpointer/bytes.md)
+  A span over the bytes of this buffer.
 ### Instance Methods
 - [func assumingMemoryBound<T>(to: T.Type) -> UnsafeBufferPointer<T>](unsaferawbufferpointer/assumingmemorybound(to:).md)
   Returns a typed buffer to the memory referenced by this buffer, assuming that the memory is already bound to the specified type.
@@ -82,7 +83,7 @@ byteArray += someBytes[n..<someBytes.count]
   Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, read from the buffer pointer’s raw memory at the specified byte offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-2r9sy.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-4ll4e.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-95fln.md)
 - [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsaferawbufferpointer/withbytes(_:).md)
@@ -104,6 +105,7 @@ byteArray += someBytes[n..<someBytes.count]
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [DataProtocol](../Foundation/DataProtocol.md)

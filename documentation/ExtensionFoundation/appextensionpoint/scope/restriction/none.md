@@ -6,11 +6,7 @@
 A value that allows app extensions in any app to bind to the host app.
 
 **Availability**:
-- iOS 26.0+
-- iPadOS 26.0+
-- Mac Catalyst 26.0+
 - macOS 26.0+
-- visionOS 1.1+
 
 ## Declaration
 

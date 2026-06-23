@@ -21,10 +21,12 @@ protocol BehaviorTreeAction : EntityAction
 
 ### Subscribing to events
 - [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> ActionResult)](behaviortreeaction/subscribe(to:_:)-9mrvx.md)
+  Subscribes to a serializable action event and returns a `ActionResult`.
 - [static func subscribe(to: ActionEventType, (ActionEvent<Self>) -> Void)](behaviortreeaction/subscribe(to:_:)-3p0pj.md)
   Shadows the `EntityAction.subscribe(to:_:)` overload that takes a `-> Void` closure.
 ### Type Methods
 - [static subscribe(to:_:)](behaviortreeaction/subscribe(to:_:).md)
+  Subscribes to a serializable action event and returns a `ActionResult`.
 
 ## Relationships
 

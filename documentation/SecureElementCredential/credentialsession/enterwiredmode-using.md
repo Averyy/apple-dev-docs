@@ -20,6 +20,9 @@ func enterWiredMode(using credential: CredentialSession.Credential) async throws
 
 You can call this method in any session state. If successful, the state transitions to [`CredentialSession.State.wired(credential:)`](credentialsession/state-swift.enum/wired(credential:).md). The state transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) if the call encounters a [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md) error; otherwise the state remains unchanged.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.invalidCredentialState`](credentialsession/errorcode/invalidcredentialstate.md): The credential isn’t in the [`CredentialSession.Credential.State.installed(instances:)`](credentialsession/credential/state-swift.enum/installed(instances:).md) state.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable. The session transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+
 ## Parameters
 
 - `credential`: The installed credential with which to enter wired mode.

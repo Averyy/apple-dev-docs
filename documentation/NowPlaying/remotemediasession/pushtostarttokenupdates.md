@@ -23,7 +23,7 @@ static var pushToStartTokenUpdates: AsyncStream<Data> { get }
 
 #### Discussion
 
-Use push notifications to start new remote sessions and update ongoing ones.
+Use push notifications to start new remote sessions and update ongoing ones. For additional information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
 
 
 ---

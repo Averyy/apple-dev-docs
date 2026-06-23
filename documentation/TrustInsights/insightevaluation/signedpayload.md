@@ -1,6 +1,6 @@
 # signedPayload
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 A signed data object that contains details about the insight.
@@ -9,7 +9,6 @@ A signed data object that contains details about the insight.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

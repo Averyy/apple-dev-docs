@@ -1,4 +1,4 @@
 Completed scraping Media Intents!
-Total pages scraped: 0
-Pages skipped (unchanged): 19
+Total pages scraped: 14
+Pages skipped (unchanged): 1
 Pages failed: 0

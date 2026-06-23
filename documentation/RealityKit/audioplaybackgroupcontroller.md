@@ -60,8 +60,6 @@ To be notified when the group finishes playing, subscribe to [`AudioEvents.Playb
 - [func seek(to: Duration)](audioplaybackgroupcontroller/seek(to:).md)
   Sets the playback position to the specified time.
 ### Accessing playback state
-- [var playbackPosition: TimeInterval](audioplaybackgroupcontroller/playbackposition.md)
-  The playback controller’s current time. Setting this is equivalent to seeking.
 - [let resourcesAndEntities: [(AudioResource, Entity)]](audioplaybackgroupcontroller/resourcesandentities.md)
   The resource and entity tuples that comprise the playback group
 ### Instance Properties

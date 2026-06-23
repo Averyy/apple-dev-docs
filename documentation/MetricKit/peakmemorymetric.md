@@ -47,7 +47,7 @@ This metric corresponds to the [`MetricResult.peakMemory(_:)`](metricresult/peak
 - [struct SuspendedMemoryMetric](suspendedmemorymetric.md)
   A metric that measures average suspended memory footprint with statistical data.
 - [struct MemoryExceptionDiagnostic](memoryexceptiondiagnostic.md)
-  A diagnostic for a fatal memory exception.
+  A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 
 
 ---

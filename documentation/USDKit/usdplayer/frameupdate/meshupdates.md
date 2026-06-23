@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let meshUpdates: [MeshID]
+let meshUpdates: [USDPlayer.MeshID]
 ```
 
 

@@ -229,6 +229,8 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 ### Type Properties
 - [static var accessoryDidConnect: NotificationCenter.BaseMessageIdentifier<EAAccessoryManager.AccessoryDidConnectMessage>](notificationcenter/messageidentifier/accessorydidconnect.md)
 - [static var accessoryDidDisconnect: NotificationCenter.BaseMessageIdentifier<EAAccessoryManager.AccessoryDidDisconnectMessage>](notificationcenter/messageidentifier/accessorydiddisconnect.md)
+- [static var applicationAccessibilityEnabledDidChange: NotificationCenter.BaseMessageIdentifier<AccessibilitySettings.ApplicationAccessibilityEnabledDidChangeMessage>](notificationcenter/messageidentifier/applicationaccessibilityenableddidchange.md)
+  Shorthand identifier for `AccessibilitySettings/ApplicationAccessibilityEnabledDidChangeMessage`.
 - [static var boundsDidChange: NotificationCenter.BaseMessageIdentifier<NSView.BoundsDidChangeMessage>](notificationcenter/messageidentifier/boundsdidchange.md)
 - [static var colorDidChange: NotificationCenter.BaseMessageIdentifier<NSColorPanel.ColorDidChangeMessage>](notificationcenter/messageidentifier/colordidchange.md)
 - [static var colorSpaceDidChange: NotificationCenter.BaseMessageIdentifier<NSScreen.ColorSpaceDidChangeMessage>](notificationcenter/messageidentifier/colorspacedidchange.md)

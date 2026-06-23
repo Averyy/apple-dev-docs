@@ -67,7 +67,7 @@ This type replaces the `crashDiagnostics`, `hangDiagnostics`, `cpuExceptionDiagn
 - [struct AppLaunchDiagnostic](applaunchdiagnostic.md)
   A diagnostic report for an app launch.
 - [struct MemoryExceptionDiagnostic](memoryexceptiondiagnostic.md)
-  A diagnostic for a fatal memory exception.
+  A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 ### Enumeration Cases
 - [case appLaunch(AppLaunchDiagnostic)](diagnosticresult/applaunch(_:).md)
 - [case cpuException(CPUExceptionDiagnostic)](diagnosticresult/cpuexception(_:).md)

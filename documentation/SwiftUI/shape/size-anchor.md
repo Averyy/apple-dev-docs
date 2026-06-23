@@ -34,6 +34,29 @@ The `anchor` parameter determines how the shape will be positioned within the co
 - `size`: The size to constrain the shape to.
 - `anchor`: The anchor to use to determine how to position the new shape.
 
+## See Also
+
+- [func trim(from: CGFloat, to: CGFloat) -> some Shape](shape/trim(from:to:).md)
+  Trims this shape by a fractional amount based on its representation as a path.
+- [func transform(CGAffineTransform) -> TransformedShape<Self>](shape/transform(_:).md)
+  Applies an affine transform to this shape.
+- [func size(CGSize) -> some Shape](shape/size(_:).md)
+  Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of `size`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(width: CGFloat, height: CGFloat) -> some Shape](shape/size(width:height:).md)
+  Returns a new version of self representing the same shape, but that will ask it to create its path from a rect of size `(width, height)`. This does not affect the layout properties of any views created from the shape (e.g. by filling it).
+- [func size(width: CGFloat, height: CGFloat, anchor: UnitPoint) -> some Shape](shape/size(width:height:anchor:).md)
+  Returns a new version of self representing the same shape, but within a rect of `(width, height)` instead of the container size.
+- [func scale(CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(_:anchor:).md)
+  Scales this shape without changing its bounding frame.
+- [func scale(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> ScaledShape<Self>](shape/scale(x:y:anchor:).md)
+  Scales this shape without changing its bounding frame.
+- [func rotation(Angle, anchor: UnitPoint) -> RotatedShape<Self>](shape/rotation(_:anchor:).md)
+  Rotates this shape around an anchor point at the angle you specify.
+- [func offset(_:)](shape/offset(_:).md)
+  Changes the relative position of this shape using the specified point.
+- [func offset(x: CGFloat, y: CGFloat) -> OffsetShape<Self>](shape/offset(x:y:).md)
+  Changes the relative position of this shape using the specified point.
+
 
 ---
 

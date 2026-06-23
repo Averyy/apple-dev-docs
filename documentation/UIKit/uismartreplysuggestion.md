@@ -58,6 +58,8 @@ Use the [`smartReply`](uismartreplysuggestion/smartreply.md) string as a signal 
   A class that represents a message in a message conversation.
 - [class UIInputSuggestion](uiinputsuggestion.md)
   A base class you use to handle suggestions from the keyboard or system.
+- [class UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
+  An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
 
 
 ---

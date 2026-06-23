@@ -120,11 +120,8 @@ Support for alternative browser engines varies by geographic region:
   Report download progress to the system to keep your networking extension active.
 - [class BEDownloadMonitor](bedownloadmonitor-9bwls.md)
   An object that reports the status of web downloads to the system.
-### Variables
-- [var BEWEBCONTENTFILTERPERMISSIONDECISION_DEFINED: Int32](bewebcontentfilterpermissiondecision_defined.md)
 ### Enumerations
 - [enum BEAccessibilityOrientation](beaccessibilityorientation.md)
-- [enum BEWebContentFilterPermissionDecision](bewebcontentfilterpermissiondecision.md)
 
 
 ---

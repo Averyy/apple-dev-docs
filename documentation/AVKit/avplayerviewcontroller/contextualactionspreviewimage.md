@@ -38,7 +38,9 @@ Use this to enhance a contextual action with more context. For example, if the a
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 
 
 ---

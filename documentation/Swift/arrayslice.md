@@ -100,7 +100,9 @@ In particular, note that `j`, the index of the second day with absences, was fou
 - [var capacity: Int](arrayslice/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 - [var mutableSpan: MutableSpan<Element>](arrayslice/mutablespan.md)
+  A mutable span over the elements of this array slice.
 - [var span: Span<Element>](arrayslice/span.md)
+  A span over the elements of this array slice.
 ### Instance Methods
 - [func insert(Element, at: Int)](arrayslice/insert(_:at:).md)
   Inserts a new element at the specified position.

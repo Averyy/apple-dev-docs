@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-var bundle: String?
+var bundle: String? { get }
 ```
 
 

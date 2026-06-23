@@ -16,7 +16,6 @@ Creates a retargeting configuration for bipedal characters with custom root tran
 ## Declaration
 
 ```swift
-@MainActor
 static func automatchBiped(_ sourceSkeleton: SkeletonResource, sourceTransform: Transform = .identity, to targetSkeleton: SkeletonResource, targetTransform: Transform = .identity, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 

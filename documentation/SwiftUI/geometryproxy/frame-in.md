@@ -24,6 +24,12 @@ func frame(in coordinateSpace: some CoordinateSpaceProtocol) -> CGRect
 
 - [func bounds(of: NamedCoordinateSpace) -> CGRect?](geometryproxy/bounds(of:).md)
   Returns the given coordinate space’s bounds rectangle, converted to the local coordinate space.
+- [var concentricCornerRadii: RectangleCornerRadii?](geometryproxy/concentriccornerradii.md)
+  The concentric corner radii for this view’s bounds relative to the container shape.
+- [func concentricCornerRadii(in: CGRect) -> RectangleCornerRadii?](geometryproxy/concentriccornerradii(in:).md)
+  Returns the concentric corner radii for the specified frame relative to the container shape.
+- [var containerCornerInsets: RectangleCornerInsets](geometryproxy/containercornerinsets.md)
+  Returns the corner insets of the container view. Use this value to adjust the geometry of a view based on the overlapping corner insets of the container view. Corner insets may include pieces of system UI as well as the corner radii for windows and presentations.
 - [var size: CGSize](geometryproxy/size.md)
   The size of the container view.
 - [var safeAreaInsets: EdgeInsets](geometryproxy/safeareainsets.md)

@@ -20,6 +20,8 @@ var securityDomainCounter: Int { get async throws }
 
 Accessing this property fetches the latest counter from the remote hardware.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system service is temporarily unavailable.
+
 
 ---
 

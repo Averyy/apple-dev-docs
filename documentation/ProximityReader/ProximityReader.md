@@ -5,10 +5,14 @@
 
 Read contactless physical and digital wallet cards using your iPhone.
 
+**Availability**:
+- iOS 15.4+
+- iPadOS 15.4+
+- Mac Catalyst 15.4+
+
 ## Mentions
 
 - [Adding support for Tap to Pay on iPhone to your app](adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
 - [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
 
 #### Overview
@@ -64,7 +68,7 @@ The use of this framework requires you to coordinate with a participating paymen
 - [Generating reader tokens for the Verifier API](generating-reader-tokens-for-the-verifier-api.md)
   Configure your server to generate reader tokens to prepare a device for mobile document reading.
 - [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
+  Read and verify mobile driver’s license information without any additional hardware.
 - [class MobileDocumentReader](mobiledocumentreader.md)
   An object for configuring mobile document reading on the current device.
 - [class MobileDocumentReaderSession](mobiledocumentreadersession.md)
@@ -98,21 +102,18 @@ The use of this framework requires you to coordinate with a participating paymen
   A type that describes a data request for any mobile document from a group of requests.
 - [struct MobileDocumentAnyOfRawDataRequest](mobiledocumentanyofrawdatarequest.md)
   A type that describes a raw data request for any mobile document from a group of requests.
-### Tap to Share
-- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
-  Request and share customer information on device.
-- [enum CustomerEngagement](customerengagement.md)
-  An enumeration of the shared data between the merchant and customer.
-- [class CustomerEngagementSession](customerengagementsession.md)
-  The object you use to share and request customer information.
 ### Errors
 - [enum PaymentCardReaderError](paymentcardreadererror.md)
   An error type that indicates problems with the configuration of the reader.
 - [enum MobileDocumentReaderError](mobiledocumentreadererror.md)
   An error type that indicates problems when preparing a mobile document reader session and performing document requests.
+### Classes
+- [class CustomerEngagementSession](customerengagementsession.md)
 ### Structures
 - [struct MobileDocumentHolderName](mobiledocumentholdername.md)
   A type that represents the mobile identity document holder’s name.
+### Enumerations
+- [enum CustomerEngagement](customerengagement.md)
 
 
 ---

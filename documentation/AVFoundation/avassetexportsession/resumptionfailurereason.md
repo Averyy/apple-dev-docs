@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: struct
 
+An enum that identifies various reasons why resumable export configuration has failed.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,10 +18,6 @@
 ```swift
 struct ResumptionFailureReason
 ```
-
-#### Overview
-
-An enum that identifies various reasons why resumable export configuration has failed.
 
 ## Topics
 

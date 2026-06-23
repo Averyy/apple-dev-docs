@@ -57,6 +57,7 @@ Use `NSTextAttachmentViewProvider` when you need to represent document locations
 
 - [class NSTextAttachment](nstextattachment.md)
   The values for the attachment characteristics of attributed strings and related objects.
+- [struct NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy.md)
 - [class NSAdaptiveImageGlyph](nsadaptiveimageglyph.md)
   A data object for an emoji-like image that can appear in attributed text.
 - [protocol NSTextAttachmentContainer](nstextattachmentcontainer.md)

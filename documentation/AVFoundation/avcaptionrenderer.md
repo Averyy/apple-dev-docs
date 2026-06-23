@@ -42,6 +42,7 @@ This object renders a caption scene for a given time from a collection of captio
 - [init()](avcaptionrenderer/init.md)
 ### Type Methods
 - [class func captionPreview(forProfileID: String, extendedLanguageTag: String?, renderSize: CGSize) -> NSAttributedString](avcaptionrenderer/captionpreview(forprofileid:extendedlanguagetag:rendersize:).md)
+  Generate a caption preview attributed string for the specified profile ID.
 
 ## Relationships
 

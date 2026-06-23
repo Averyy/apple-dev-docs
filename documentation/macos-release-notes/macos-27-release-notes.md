@@ -1,4 +1,4 @@
-# macOS Golden Gate 27 Beta Release Notes
+# macOS 27 Golden Gate Beta 2 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running Golden Gate 27 beta. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running 27 Golden Gate beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Accessory Access
 
@@ -21,12 +21,26 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 - You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2.  (178280323)
 
+##### Airport Utility
+
+###### Deprecations
+
+- AirPort Utility is no longer included with new clean installations of macOS. However, if you update macOS when AirPort Utility is already installed, it remains on your system but functionality is not guaranteed starting in macOS 27.  (158248382)
+
 ##### App Intents
+
+###### New Features
+
+- You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas.  (173431080)
 
 ###### Known Issues
 
 - Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195) **Workaround:** Provide a default value explicitly using `@Parameter`, such as an empty set.
 - If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri.    (177198033) **Workaround:** Adopt an IntentValueQuery that takes the AudioSearch input, or index your entities in Spotlight.
+
+###### Deprecations
+
+- The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`.  (176751155)
 
 ##### Appkit
 
@@ -55,6 +69,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 - Fixed: An `NSTextField` whose `textColor` is set to `nil` displays inconsistent text colors while in editing mode.  (175095850) (FB22546245)
 - Fixed: `-[NSFilePromiseReceiver receivePromisedFilesAtDestination:options:operationQueue:reader:]` asserts that it is called during `-prepareForDragOperation:`, `-performDragOperation:`, or `-concludeDragOperation:`. If `receivePromisedFilesAtDestination:...` is called at other times, your application will throw an exception and terminate.  (176048351)
 - Fixed: The base `NSGestureRecognizer` implementation of `locationInView:` previously returned the current mouse location converted into the view’s coordinate system, which is incorrect for touch-driven gestures. It now returns `NSZeroPoint` and logs an error pointing the developer at the missing override. Custom `NSGestureRecognizer` subclasses must provide their own `locationInView:` implementation.  (176395420)
+- Fixed: Some NSMenu APIs, such as `highlightedItem`, will not work in context menus.  (178288949)
 
 ###### Known Issues
 
@@ -86,16 +101,25 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 ##### Core Ai
 
+###### New Features
+
+- iOS 27 includes Neural Engine improvements for Apple Intelligence capable devices. The system now restricts background access to the Neural Engine, similar to GPU usage restrictions. Large model loading (over 1 GB) performance is improved on the Neural Engine. Neural Engine memory usage is now attributed to your app process instead of the system, and appears in the Allocations instrument.  (174796039)
+
+###### Resolved Issues
+
+- Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751)
+
 ###### Known Issues
 
 - `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (169746264)
+- `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (174769929)
 - When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU.  (175789258)
 - Certain weight and activation configurations may not run on the Neural Engine, such as FP8-quantized weights and activations, palettized weights with quantized (non-Float16) values, and sparse weights. Affected models may run on the CPU or GPU instead.  (176210080)
 - When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213) **Workaround:** If you know what the output shape will be, pre-allocate the output and provide it through the `outputViews` arguments on `InferenceFunction.run`.
 - Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
 - Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
-- When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751) **Workaround:** In Xcode, disable Metal API Validation. From the command line, ensure the `MTL_DEBUG_LAYER` environment variable is not set.
 - Models with custom Metal kernels will fail to load.  (178056451)
+- You cannot access the Neural Engine when your app is in the background.  (179282606) **Workaround:** Restrict your models to CPU only or prefer GPU with the appropriate [`Background GPU Access entitlement.`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu)
 
 ##### Corestorage
 
@@ -120,12 +144,19 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 ###### Known Issues
 
 - While using an app in full screen, the Dock might persist when entering and exiting Mission Control.   (174992242)
+- The Dock might incorrectly indicate that some applications (such as Device Hub) are running in the background when they are not.  (179502922)
 
 ##### Drag and Drop
 
 ###### Resolved Issues
 
 - Fixed: When you call `enumerateDraggingItemsWithOptions:...` during `draggingSession:willBeginAtPoint:`, the returned `NSDraggingItem` might have an incorrect `draggingFrame` value.  (177839494)
+
+##### Dvdplayback
+
+###### Deprecations
+
+- The `DVDPlayback ` framework has been removed from the macOS 27 Golden Gate SDK and apps cannot build against it. The framework will be removed in a future macOS release.  (179136240)
 
 ##### Ecosystemui
 
@@ -158,12 +189,15 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 ##### Foundation Models
 
+###### Resolved Issues
+
+- Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
+- Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
+- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+
 ###### Known Issues
 
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
-- `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
-- Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
-- `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488) **Workaround:** Always specify instructions in a `Profile`.
 - `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
 - Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978) **Workaround:** Import the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) package, which contains a built-in workaround that will compile your code.
 
@@ -326,6 +360,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 ###### Known Issues
 
+- After you load certain 3D models, materials for most other 3D models might not appear properly and display an error pattern instead.  (177483209) **Workaround:** Quit and restart Preview.
 - When you drag an annotation in a 3D document, such as a USD file, and release the mouse button, the cursor might remain in the open-hand state instead of returning to the arrow cursor.  (177754200) **Workaround:** Move the cursor outside the 3D viewport — for example, over the sidebar, inspector, toolbar, or outside the window — to reset it to the arrow cursor. Pressing the keyboard shortcuts Option-W, Option-E, or Option-R to change the active 3D tool also resets the cursor.
 
 ##### Realitykit
@@ -343,7 +378,17 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 - Some MaterialX 1.39 nodes are not supported.  (172875414)
 - `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 
+##### Reminders
+
+###### Known Issues
+
+- After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field.  (180040003) **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
+
 ##### Rosetta
+
+###### New Features
+
+- On launch, Applications previously set to “Open using Rosetta” by a user will have the application launch natively. Any compatibility issues requiring Rosetta from the past should be re-assessed on macOS 27.  (168097174)
 
 ###### Deprecations
 
@@ -357,6 +402,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 - Selecting “Rename” or “Edit Address…” from the context menu in the sidebar has no effect.  (177470803) **Workaround:** To edit bookmarks, use the bookmarks view by choosing Bookmarks > Edit Bookmarks.
 - Safari Intelligence features might appear as available before assets are fully downloaded. If you use the feature before assets are available, it won’t function correctly.  (178099724) **Workaround:** Wait for assets to finish downloading. You can check download progress in Settings > Apple Intelligence & Siri.
+
+##### Safari Extensions
+
+###### Known Issues
+
+- Turning on or off Safari extensions created via the “Describe an Extension” feature might not take  effect until Safari is relaunched.  (179293939) **Workaround:** Quit and relaunch Safari.
 
 ##### Setup Assistant
 
@@ -449,11 +500,14 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs.  (154390284) (FB18403150)
 - Fixed: Subscription upgrades performed with the Xcode Transaction Manager are not reported in `Transaction.updates`.  (160698598) (FB20269723)
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
+- Fixed: Calls to `Transaction.requestRefund()` fail in StoreKit Testing in Xcode and `AppStore.presentOfferCodeRedeemSheet(from:options:)` targets the sandbox environment instead of StoreKit Testing.  (173406202)
+- Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
+- Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
+- Fixed: Purchases and fetching the unified app receipt sometimes fails with an unknown error when using StoreKit Testing in Xcode.  (178555835)
 
 ###### Known Issues
 
-- When using StoreKit Testing in Xcode on Mac, calls to `Transaction.requestRefund()` fail, and `AppStore.presentOfferCodeRedeemSheet(from:options:)` targets the sandbox environment instead of StoreKit Testing.  (173406202)
-- When using StoreKit Testing in Xcode, `pricingTerms.commitmentInfo.price` returns an incorrect price for monthly subscriptions billed as a 12-month commitment.  (177942756)
+- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Swift Charts
 
@@ -488,14 +542,15 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 ##### Swiftdata
 
-###### Known Issues
+###### Resolved Issues
 
-- You might experience a deadlock for `@Query` when saving a `ModelContext` on a background actor while scheduling new async tasks for a `ModelActor`.  (178113288)
+- Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor.  (178113288)
 
 ##### Swiftui
 
 ###### New Features
 
+- Bordered `Menu` and `Picker` buttons now support better label customization and no longer use `NSPopUpButton` in their implementation.  (68559433) (FB8657381)
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new`AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks.  (78212597)
 - A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s life time. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compiles: ```None
  struct StickerPageView: View {
@@ -545,24 +600,42 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 - In apps built with the latest SDKs, the appearance of `TabViews` in inspectors now matches their appearance in sidebars, and in both contexts automatically uses the new `.tabs` picker style.  (170678002)
 - Disabled Toggles using the `.checkbox` style are no longer tinted in macOS, so you can more easily distinguish them from their enabled state.  (172689844)
 - The `TabsPickerStyle` style is now available for pickers that represent tab-based navigation and content selection. This style is similar to the `.segmented` style, but VoiceOver reads it as “tabs,” and on macOS it has a distinct visual appearance that distinguishes it from pickers that represent value selection — for example, a text alignment picker in an inspector.  (173211711)
+- You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - On macOS, the `Slider` implementation no longer uses `NSSlider`.  (173990195)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
+- The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
+- You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
+- You can now use the `Document` protocol for representing documents in `DocumentGroup`. This protocol combines `ReadableDocument` and `WritableDocument` for common read-and-write cases. Use `Document` instead of `ReferenceFileDocument` and `FileDocument`, which are now deprecated.  (177458781)
+- `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
+- In macOS apps built with the macOS 27 SDK, the action retrieved from the `\.newDocument` environment value accepts an in-memory `ReadableDocument` produced by an autoclosure. SwiftUI presents a new document window populated with the supplied instance, instead of invoking the document group’s default factory. Use this to implement “New from Template” commands and similar flows.  (180300890)
+- A new `fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)` modifier exports a collection of values that conform to `WritableDocument` whose `Writer.Destination` is `URL`. The system presents a single export dialog, writes each document to the chosen destination, and reports the resulting URLs through `onCompletion`.  (180301165)
+- The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter.  (180301399)
+- `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`.  (180301692)
 
 ###### Resolved Issues
 
 - In apps built with the macOS 27.0 SDK, `TextField` respects custom font and color styling applied to its prompt. Apply styling to the `Text` provided to `TextField`’s `prompt` parameter at initialization.  (86580365)
 - Fixed: A custom `TextRenderer` applied via `.textRenderer(_:)` now takes effect on a `Text` view that also has `.textSelection(.enabled)` applied. Previously, the custom renderer was dropped on selectable text, falling back to default rendering.  (151015350)
 - Fixed: When you apply both `.fileExporter(_:...)` and `.fileMover(_:...)` modifiers to a view, some dialogs might not present correctly.  (154080867)
+- Fixed: Section backgrounds in the `.grouped` form style don’t display a border when the “Show borders” accessibility setting is turned on.  (155906280)
 - Fixed: In macOS, buttons using the `.glass` and `.glassProminent` styles don’t display a hover state when used outside of a toolbar.  (158800693)
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied.  (165913417)
 - Fixed: In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are not reset to their default values in sheets and popovers.  (167448274)
 - Fixed: Dual-axis scroll views align to `.center` instead of the `.topLeading` unit point, which disagrees with documentation. Additionally, specifying `.defaultScrollAnchor(_:)` on dual-axis scroll views results in incorrect placement.  (171755081)
 - Fixed: On macOS, a Menu composed with a `.plain` or custom button style uses the AXDescription (Label) attribute instead of the AXTitle attribute.  (171831601)
+- Fixed: Buttons with `keyboardShortcut(.defaultAction)` remain tinted when disabled.  (174278196)
 - In macOS apps built with the macOS 27 SDK, `List` accepts drops in two cases that previously didn’t work: drags with compatible transfer representations are accepted into reorderable content even when the `.reorderableItem` transfer type isn’t present, and a `.dropDestination(...)` modifier declared on a list item now performs the drop. These behaviors match the existing iOS `List` behavior.  (174628712)
+- Fixed: The “Settings…” menu item does not display an icon.  (175053352)
+- Fixed: An app might crash if a submenu within the toolbar overflow menu is an `NSHostingMenu` and a user tries to open the overflow menu.  (177616606)
+- Fixed: Buttons with `keyboardShortcut(.defaultAction)` and a `.destructive` role don’t appear as a destructive button in sheet toolbars.  (178957869)
 
 ###### Known Issues
 
 - Progress reported in `DocumentReader.read(from:progress:)` and `DocumentWriter.write(snapshot:to:previous:progress:)` might not be presented.  (158441261)
+
+###### Deprecations
+
+- The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing.  (178776840)
 
 ##### System
 
@@ -579,12 +652,19 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 ###### New Features
 
 - Accessing files in other developer teams’ app data containers and app group containers no longer prompts the user for authorization; such accesses are denied by default and can be managed by the user in Privacy & Security settings.   (161835690)
+- XProtect may now restrict access to app data that is commonly targeted by malicious software.  Accessing files created by other developer teams’ apps may be denied by default but may be managed by the user in Privacy & Security settings.  (178668601)
 
 ##### Tcc
 
 ###### Deprecations
 
 - Apps can no longer access the local TCC database directly.  (90775556)
+
+##### Terminal
+
+###### Known Issues
+
+- Terminal might hang when you click Terminate in the “Do you want to terminate running process…” dialog, but recovers after a delay.  (179656565) **Workaround:** Click Cancel in the dialog, stop any running processes in Terminal, then quit Terminal.
 
 ##### Thunderbolt
 
@@ -619,6 +699,10 @@ The macOS 27 SDK provides support to develop apps for Mac computers running Gold
 
 - Some types of USD attributes cannot be read or modified.  (170653056)
 - Array, vector, matrix, and quaternion types cannot be authored using USDKit.  (178071414)
+
+###### Deprecations
+
+- Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and meshes from Beta 2 cannot be decoded by Beta 1.  (177417812)
 
 ##### Videotoolbox
 

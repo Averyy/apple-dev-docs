@@ -35,7 +35,9 @@ Use this property to coordinate a group experience among participating view cont
 - [var experienceController: AVExperienceController](avplayerviewcontroller/experiencecontroller.md)
   The experience controller for this view controller.
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 
 
 ---

@@ -5,8 +5,8 @@
 ## Topics
 
 ### Functions
-- [notify_is_valid_token](notify_is_valid_token.md)
-- [notify_register_file_descriptor](notify_register_file_descriptor.md)
+- [func notify_is_valid_token(Int32) -> Bool](notify_is_valid_token(_:).md)
+- [func notify_register_file_descriptor(UnsafePointer<CChar>!, UnsafeMutablePointer<Int32>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_file_descriptor(_:_:_:_:).md)
 
 ## See Also
 

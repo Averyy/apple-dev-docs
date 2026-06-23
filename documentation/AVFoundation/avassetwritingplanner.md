@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
+AVAssetWritingPlanner orchestrates incremental writing of media files.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,8 +21,6 @@ class AVAssetWritingPlanner
 
 #### Overview
 
-AVAssetWritingPlanner orchestrates incremental writing of media files.
-
 AVAssetWritingPlanner orchestrates an incremental and resumable asset file writing session. It keeps track of the progress of the incremental segments, and can resume the writing from the last checkpoint. This is NOT intended for any real time applications. Also, not all tracks can be written incrementally. The workflow is as follows:
 
 1. The client creates the planner with a unique directoryForTemporaryFiles.
@@ -36,11 +36,13 @@ AVAssetWritingPlanner is able to recognize when a plan-in-progress matching the 
 
 ### Structures
 - [AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelines.md)
+  AVPlannedVideoSegmentBoundaryGuidelines provides guidance on determining planned segment boundaries for a video track in an incremental writing session executed by the AVAssetWritingPlanner.
 ### Initializers
 - [convenience init(directoryForTemporaryFiles: URL) throws](avassetwritingplanner/init(directoryfortemporaryfiles:).md)
   Creates an instance of AVAssetWritingPlanner given a unique file directory to host all incremental segment files and other intermediate files.
 ### Instance Properties
 - [var progress: AVAssetWritingPlannerProgress](avassetwritingplanner/progress.md)
+  The current progress of the AVAssetWritingPlanner.
 ### Instance Methods
 - [func executePlan() async throws -> AVComposition](avassetwritingplanner/executeplan.md)
   Starts the incremental segment writing.
@@ -50,6 +52,7 @@ AVAssetWritingPlanner is able to recognize when a plan-in-progress matching the 
 - [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelinesforvideo(codectype:encoderspecification:).md)
   Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
 - [class func segmentBoundaryRecommendations(forVideoTrack: AVAssetTrack, minimumSegmentDuration: CMTime, minimumSegmentFrameCount: Int) -> [AVPlannedVideoSegmentConfiguration]](avassetwritingplanner/segmentboundaryrecommendations(forvideotrack:minimumsegmentduration:minimumsegmentframecount:).md)
+  Returns segment boundary recommendations for a given source video asset track.
 ### Enumerations
 - [AVAssetWritingPlanner.SegmentResult](avassetwritingplanner/segmentresult.md)
   Result type for manual segment completion control.

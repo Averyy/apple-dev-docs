@@ -82,7 +82,6 @@ protocol VisionRequest : CustomStringConvertible, Hashable, Sendable
 - [GenerateObjectnessBasedSaliencyImageRequest](generateobjectnessbasedsaliencyimagerequest.md)
 - [GeneratePersonInstanceMaskRequest](generatepersoninstancemaskrequest.md)
 - [GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
-- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 - [RecognizeAnimalsRequest](recognizeanimalsrequest.md)
 - [RecognizeDocumentsRequest](recognizedocumentsrequest.md)
 - [RecognizeTextRequest](recognizetextrequest.md)

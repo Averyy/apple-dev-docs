@@ -1064,7 +1064,6 @@ struct Name
 - [static let NSApplicationShouldEndSuppressingHighDynamicRangeContent: NSNotification.Name](nsnotification/name-swift.struct/nsapplicationshouldendsuppressinghighdynamicrangecontent.md)
 - [static let NSProcessInfoPerformanceProfileDidChange: NSNotification.Name](nsnotification/name-swift.struct/nsprocessinfoperformanceprofiledidchange.md)
 - [static let NSSpellCheckerDidChangeAutomaticInlinePrediction: NSNotification.Name](nsnotification/name-swift.struct/nsspellcheckerdidchangeautomaticinlineprediction.md)
-- [static let USDStageKitRenderComplete: Notification.Name](nsnotification/name-swift.struct/usdstagekitrendercomplete.md)
 
 ## Relationships
 

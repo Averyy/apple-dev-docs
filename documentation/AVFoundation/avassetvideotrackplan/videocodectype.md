@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+Video codec type of this track
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,10 +18,6 @@
 ```swift
 var videoCodecType: AVVideoCodecType { get }
 ```
-
-#### Discussion
-
-Video codec type of this track
 
 
 ---

@@ -20,9 +20,20 @@ struct ImageMarkup
 
 ## Topics
 
+### Creating an image markup
+- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:orientation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:).md)
+  Initializes and returns a new image markup from the specified parameters.
+- [init?(image: NSImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-1ggjv.md)
+  Initializes and returns a new image markup from the specified parameters.
+- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-8y6o9.md)
+  Initializes and returns a new image markup from the specified parameters.
 ### Accessing image content
 - [var image: CGImage?](imagemarkup/image.md)
   The image content displayed by this markup.
+- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+  Replaces the contents of this image markup with an image file.
+- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+  Replaces the contents of this image markup with a `CGImage`.
 - [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
   The orientation of the image content.
 - [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
@@ -35,18 +46,6 @@ struct ImageMarkup
 ### Identifying markup
 - [var id: MarkupID<ImageMarkup>](imagemarkup/id.md)
   Stable unique identity of the markup.
-### Initializers
-- [init?(image: NSImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-1ggjv.md)
-  Initializes and returns a new image markup from the specified parameters.
-- [init?(image: UIImage, frame: CGRect, rotation: CGFloat, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:)-8y6o9.md)
-  Initializes and returns a new image markup from the specified parameters.
-- [init(image: CGImage, frame: CGRect, rotation: CGFloat, orientation: CGImagePropertyOrientation, opacity: CGFloat, contentsBounds: CGRect, accessibilityDescription: String?, allowedInteractions: MarkupInteractions, id: MarkupID<ImageMarkup>)](imagemarkup/init(image:frame:rotation:orientation:opacity:contentsbounds:accessibilitydescription:allowedinteractions:id:).md)
-  Initializes and returns a new image markup from the specified parameters.
-### Instance Methods
-- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
-  Replaces the contents of this image markup with an image file.
-- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
-  Replaces the contents of this image markup with a `CGImage`.
 
 ## Relationships
 

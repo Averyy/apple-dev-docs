@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -15,6 +17,10 @@
 ```swift
 var includesTextListMarkers: Bool { get set }
 ```
+
+#### Discussion
+
+Utilizes `NSTextList.includesTextListMarkers` as the default value.
 
 
 ---

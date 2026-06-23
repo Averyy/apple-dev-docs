@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-An error that occurs while a system language model is calling a tool.
+An error that occurs while a language model is calling a tool.
 
 **Availability**:
 - iOS 26.0+
@@ -11,6 +11,7 @@ An error that occurs while a system language model is calling a tool.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -36,6 +37,8 @@ struct ToolCallError
 ### Getting the underlying error
 - [var underlyingError: any Error](languagemodelsession/toolcallerror/underlyingerror.md)
   The underlying error that was thrown during a tool call.
+### Default Implementations
+- [LocalizedError Implementations](languagemodelsession/toolcallerror/localizederror-implementations.md)
 
 ## Relationships
 

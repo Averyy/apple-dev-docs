@@ -8,7 +8,7 @@ Simplify updating views when data changes by making updates in methods that supp
 
 Use automatic observation tracking to update your views in response to model object changes without manually invalidating views. Mark your model classes with the [`Observable`](https://developer.apple.com/documentation/Observation/Observable) macro, then read model properties in methods like [`updateProperties()`](uiview/updateproperties().md) or [`layoutSubviews()`](uiview/layoutsubviews().md). UIKit tracks which properties you access and automatically calls these methods again when those properties change. This approach eliminates the need to manually call methods like [`setNeedsLayout()`](uiview/setneedslayout().md) or [`setNeedsDisplay()`](uiview/setneedsdisplay().md) after updating model data, reducing opportunities for bugs and outdated displays.
 
-These methods support automatic observation tracking in views, view controllers, presentation controllers, buttons, collection view cells, table view cells, and table view headers and footers. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+These methods support automatic observation tracking in views, view controllers, presentation controllers, buttons, collection view cells, table view cells, and table view headers and footers. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## Topics
 
@@ -67,8 +67,8 @@ These methods support automatic observation tracking in views, view controllers,
 
 ## See Also
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and UIKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 
 
 ---

@@ -24,6 +24,13 @@ A glyph info object for the specified glyph or `nil` if the glyph information is
 - `font`: The font containing the glyph.
 - `string`: A string containing the character represented by the glyph.
 
+## See Also
+
+- [init?(CGGlyph: CGGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(cgglyph:forfont:basestring:).md)
+- [init?(coder: NSCoder)](nsglyphinfo/init(coder:).md)
+- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(glyph:for:basestring:).md)
+- [init?(glyphName: String, for: NSFont, baseString: String)](nsglyphinfo/init(glyphname:for:basestring:).md)
+
 
 ---
 

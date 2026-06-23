@@ -1,79 +1,79 @@
 {
   "metadata": {
-    "last_updated": "2026-06-19T07:45:30.167292",
+    "last_updated": "2026-06-23T07:31:54.338466",
     "total_pages": 20,
-    "session_id": "2026-06-19T07:45:28.249324"
+    "session_id": "2026-06-23T07:31:52.832500"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppTrackingTransparency.json": {
-      "hash": "371b0c8566ce7375cef71180a7978820c7afd4ffcc540d42320aa93bff77eca8",
-      "last_checked": "2026-06-19T07:45:28.508383",
+      "hash": "775d7592f6d31d163849e4efa57e94bcaa5f36c036cf426123024473a99e8a8a",
+      "last_checked": "2026-06-23T07:31:53.067605",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"2beebec11e773b985074f65283653e6c\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"1f96dd2933e8a3f199a89ef069e2e963\"",
       "file_path": "documentation/AppTrackingTransparency/AppTrackingTransparency.md"
     },
     "https://developer.apple.com/documentation/AppTrackingTransparency": {
-      "hash": "371b0c8566ce7375cef71180a7978820c7afd4ffcc540d42320aa93bff77eca8",
-      "last_checked": "2026-06-19T07:45:28.393201",
+      "hash": "775d7592f6d31d163849e4efa57e94bcaa5f36c036cf426123024473a99e8a8a",
+      "last_checked": "2026-06-23T07:31:52.983842",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"2beebec11e773b985074f65283653e6c\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"1f96dd2933e8a3f199a89ef069e2e963\"",
       "file_path": "documentation/AppTrackingTransparency/AppTrackingTransparency.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager.json": {
-      "hash": "988c111cbe9af9184eb0578ca2c466c28590a64290a5a8e28c3a2e3604601c1f",
-      "last_checked": "2026-06-19T07:45:28.732392",
+      "hash": "9e625ff64bef7545db0c55ae70bf57b371ae9032e8ec3a86ad6c8f1ef1003d20",
+      "last_checked": "2026-06-23T07:31:53.287160",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"b4f392700e1dcbdec7de2107f47451f4\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"2f867699c8d6288af400458b105b9500\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager": {
-      "hash": "988c111cbe9af9184eb0578ca2c466c28590a64290a5a8e28c3a2e3604601c1f",
-      "last_checked": "2026-06-09T07:30:31.457859",
+      "hash": "9e625ff64bef7545db0c55ae70bf57b371ae9032e8ec3a86ad6c8f1ef1003d20",
+      "last_checked": "2026-06-23T07:31:53.287235",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"b4f392700e1dcbdec7de2107f47451f4\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"2f867699c8d6288af400458b105b9500\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:).json": {
-      "hash": "86a6f1278c0e0596d9f0af035986fca9884610d9b9802eae8af5875cb6a48d24",
-      "last_checked": "2026-06-19T07:45:28.874560",
+      "hash": "2a276a744606f1b7de22297ae323d3694d23e3466dd4bf4642d994bda23c16ef",
+      "last_checked": "2026-06-23T07:31:53.460627",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"9260be9c7bc113abd3bdf70dd091492e\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"20bc6866c0ec607290dffc5874ac96eb\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-completionhandler.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/requesttrackingauthorization(completionhandler:)": {
-      "hash": "86a6f1278c0e0596d9f0af035986fca9884610d9b9802eae8af5875cb6a48d24",
-      "last_checked": "2026-06-09T07:30:31.568488",
+      "hash": "2a276a744606f1b7de22297ae323d3694d23e3466dd4bf4642d994bda23c16ef",
+      "last_checked": "2026-06-23T07:31:53.460722",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"9260be9c7bc113abd3bdf70dd091492e\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"20bc6866c0ec607290dffc5874ac96eb\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/requesttrackingauthorization-completionhandler.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus.json": {
-      "hash": "3fb88b1a91607c5a97e3423654aadd3cf0dd403c6e9da7e5ea5cb3591b2eebd5",
-      "last_checked": "2026-06-19T07:45:29.041275",
+      "hash": "efb1bbe22ef618115dc3870b206f0da52dd74a19787299b42922e31b32d09457",
+      "last_checked": "2026-06-23T07:31:53.525174",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"03fe4b7e18fc77c3dbbc7c17c095def1\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"6a2d31af7b6b6d07a05ef064a0737bbe\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/trackingauthorizationstatus.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/trackingauthorizationstatus": {
-      "hash": "3fb88b1a91607c5a97e3423654aadd3cf0dd403c6e9da7e5ea5cb3591b2eebd5",
-      "last_checked": "2026-06-09T07:30:31.696452",
+      "hash": "efb1bbe22ef618115dc3870b206f0da52dd74a19787299b42922e31b32d09457",
+      "last_checked": "2026-06-23T07:31:53.525278",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"03fe4b7e18fc77c3dbbc7c17c095def1\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"6a2d31af7b6b6d07a05ef064a0737bbe\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/trackingauthorizationstatus.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus.json": {
       "hash": "d6a8545cc6700f5d0e5adec943fcfbfb8c54e28bc8c2bca313f3a2cf426ca5a8",
-      "last_checked": "2026-06-19T07:45:29.207201",
+      "last_checked": "2026-06-23T07:31:53.550107",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
+      "session_id": "2026-06-23T07:31:52.832500",
       "etag": "W/\"31fe144eb7a2f4376a0334aa6a24596d\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus.md"
     },
@@ -86,26 +86,26 @@
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/authorized.json": {
-      "hash": "b845438bc2b5dd53ecbc26b5c76969eb746e1ae10fe5806f9eaa89d0eebbb2ac",
-      "last_checked": "2026-06-19T07:45:29.424062",
+      "hash": "2044e48ac015c83471cebaa0c25b51796353575efea634c31bae089bb9db72c0",
+      "last_checked": "2026-06-23T07:31:53.790917",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"3816729e0e69a70b4e6de8c7d04306c4\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"8b1f8a4b894dd01f5e9c44f2d8b3fe6c\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/authorized.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/authorized": {
-      "hash": "b845438bc2b5dd53ecbc26b5c76969eb746e1ae10fe5806f9eaa89d0eebbb2ac",
-      "last_checked": "2026-06-09T07:30:32.032697",
+      "hash": "2044e48ac015c83471cebaa0c25b51796353575efea634c31bae089bb9db72c0",
+      "last_checked": "2026-06-23T07:31:53.791036",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"3816729e0e69a70b4e6de8c7d04306c4\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"8b1f8a4b894dd01f5e9c44f2d8b3fe6c\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/authorized.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/denied.json": {
       "hash": "0fd8efae0acc68472a31bff31f934a712643459c31759bfa17af039a2d2bd560",
-      "last_checked": "2026-06-19T07:45:29.617656",
+      "last_checked": "2026-06-23T07:31:53.824890",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
+      "session_id": "2026-06-23T07:31:52.832500",
       "etag": "W/\"6b45392c0e9087f8b810cef35f6c2a3c\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/denied.md"
     },
@@ -118,51 +118,51 @@
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/denied.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/notdetermined.json": {
-      "hash": "8f3209d8d46e879fef8019bd4f5a55c02a6e6d1df73c93e3173f91d6c6ce9fdd",
-      "last_checked": "2026-06-19T07:45:29.787284",
+      "hash": "b1eced348562be0a18fa47fcda859bfac77d94d58af216898b98588ad203af75",
+      "last_checked": "2026-06-23T07:31:54.123764",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"9b19d5bba7e4534a3ee225a07e3b1124\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"0ed042f25504b8aa6e1098168046aad0\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/notdetermined.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/notdetermined": {
-      "hash": "8f3209d8d46e879fef8019bd4f5a55c02a6e6d1df73c93e3173f91d6c6ce9fdd",
-      "last_checked": "2026-06-09T07:30:32.384622",
+      "hash": "b1eced348562be0a18fa47fcda859bfac77d94d58af216898b98588ad203af75",
+      "last_checked": "2026-06-23T07:31:54.123877",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"9b19d5bba7e4534a3ee225a07e3b1124\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"0ed042f25504b8aa6e1098168046aad0\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/notdetermined.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/restricted.json": {
-      "hash": "2154cc3a9b844700ba5ec104e2cd5332b21ce1979b456f95199fe7651e04a7bc",
-      "last_checked": "2026-06-19T07:45:29.921444",
+      "hash": "fc62cf04513a7fd9150152c08a30ca30751a29e96742cb537bbb27a922621c2b",
+      "last_checked": "2026-06-23T07:31:54.236268",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"d836ce6608234612448543b1a77117fa\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"4ec5d96ca76cdd6052cdd08ee3c814c1\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/restricted.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/restricted": {
-      "hash": "2154cc3a9b844700ba5ec104e2cd5332b21ce1979b456f95199fe7651e04a7bc",
-      "last_checked": "2026-06-09T07:30:32.520825",
+      "hash": "fc62cf04513a7fd9150152c08a30ca30751a29e96742cb537bbb27a922621c2b",
+      "last_checked": "2026-06-23T07:31:54.236373",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"d836ce6608234612448543b1a77117fa\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"4ec5d96ca76cdd6052cdd08ee3c814c1\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/restricted.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/init(rawvalue:).json": {
-      "hash": "e98e50285eb9b1eb1de67f1486814933e16b5683ea62b9b982579f137eeb0516",
-      "last_checked": "2026-06-19T07:45:30.130130",
+      "hash": "a7c7e258d6e9253ad5c518284073dd3a28fdb5c0e7931dd1fde16f7ac30d7b27",
+      "last_checked": "2026-06-23T07:31:54.336006",
       "status": "unchanged",
-      "session_id": "2026-06-19T07:45:28.249324",
-      "etag": "W/\"aa84e3aa768acdb576c85114cfd5fbb9\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"0bb624ef0c034d7e3d9a4d9fd223e165\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init-rawvalue.md"
     },
     "https://developer.apple.com/documentation/apptrackingtransparency/attrackingmanager/authorizationstatus/init(rawvalue:)": {
-      "hash": "e98e50285eb9b1eb1de67f1486814933e16b5683ea62b9b982579f137eeb0516",
-      "last_checked": "2026-06-09T07:30:32.638584",
+      "hash": "a7c7e258d6e9253ad5c518284073dd3a28fdb5c0e7931dd1fde16f7ac30d7b27",
+      "last_checked": "2026-06-23T07:31:54.336101",
       "status": "unchanged",
-      "session_id": "2026-06-09T07:30:30.921587",
-      "etag": "W/\"aa84e3aa768acdb576c85114cfd5fbb9\"",
+      "session_id": "2026-06-23T07:31:52.832500",
+      "etag": "W/\"0bb624ef0c034d7e3d9a4d9fd223e165\"",
       "file_path": "documentation/AppTrackingTransparency/attrackingmanager/authorizationstatus/init-rawvalue.md"
     }
   }

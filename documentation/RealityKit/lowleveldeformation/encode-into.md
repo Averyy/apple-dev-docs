@@ -15,7 +15,7 @@ Encodes the configured deformation passes into the given command encoder.
 ## Declaration
 
 ```swift
-final func encode(into encoder: any MTLComputeCommandEncoder) throws(LowLevelDeformation.Error)
+final func encode(into encoder: any MTLComputeCommandEncoder) throws
 ```
 
 #### Discussion

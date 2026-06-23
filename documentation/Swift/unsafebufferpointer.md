@@ -49,6 +49,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 - [let count: Int](unsafebufferpointer/count.md)
   The number of elements in the buffer.
 - [var span: Span<Element>](unsafebufferpointer/span.md)
+  A span over the elements of this buffer.
 ### Instance Methods
 - [func deallocate()](unsafebufferpointer/deallocate.md)
   Deallocates the memory block previously allocated at this buffer pointer’s base address.
@@ -84,6 +85,7 @@ An `UnsafeBufferPointer` instance is a view into memory and does not own the mem
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [DataProtocol](../Foundation/DataProtocol.md)

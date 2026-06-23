@@ -107,6 +107,11 @@ final class NWParameters
 - [var allowUltraConstrainedPaths: Bool](nwparameters/allowultraconstrainedpaths.md)
   Allow connection to use interfaces considered ultra-constrained by the system
 - [var attribution: NWParameters.Attribution](nwparameters/attribution-swift.property.md)
+- [var wifiAware: WAParameters](nwparameters/wifiaware.md)
+  Get and set Wi-Fi Aware specific connection parameters.
+### Instance Methods
+- [func wifiAware((inout WAParameters) -> Void) -> Self](nwparameters/wifiaware(_:).md)
+  Configure Wi-Fi Aware properties on an `NWParameters` object.
 ### Type Properties
 - [class var applicationService: NWParameters](nwparameters/applicationservice.md)
   The default parameters for connecting with other, local devices that are running your app.

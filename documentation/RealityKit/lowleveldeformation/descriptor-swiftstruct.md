@@ -20,27 +20,27 @@ struct Descriptor
 
 ## Topics
 
-### Creating a descriptor
-- [init(vertexCount: Int, blending: LowLevelDeformation.Descriptor.Blending?, skinning: LowLevelDeformation.Descriptor.Skinning?, renormalizing: LowLevelDeformation.Descriptor.Renormalizing?)](lowleveldeformation/descriptor-swift.struct/init(vertexcount:blending:skinning:renormalizing:).md)
-  Creates a deformation descriptor.
 ### Specifying the vertex count
 - [var vertexCount: Int](lowleveldeformation/descriptor-swift.struct/vertexcount.md)
   The number of vertices in the input and output meshes.
-### Configuring blending
-- [var blending: LowLevelDeformation.Descriptor.Blending?](lowleveldeformation/descriptor-swift.struct/blending-swift.property.md)
-  The blend-shape configuration, or `nil` if blending is not used.
-- [LowLevelDeformation.Descriptor.Blending](lowleveldeformation/descriptor-swift.struct/blending-swift.struct.md)
-  The blend-shape data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
 ### Configuring skinning
 - [var skinning: LowLevelDeformation.Descriptor.Skinning?](lowleveldeformation/descriptor-swift.struct/skinning-swift.property.md)
   The skinning configuration, or `nil` if skinning is not used.
 - [LowLevelDeformation.Descriptor.Skinning](lowleveldeformation/descriptor-swift.struct/skinning-swift.struct.md)
   The skinning data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
-### Configuring renormalizing
-- [var renormalizing: LowLevelDeformation.Descriptor.Renormalizing?](lowleveldeformation/descriptor-swift.struct/renormalizing-swift.property.md)
-  The renormalization configuration, or `nil` if renormalization is not used.
-- [LowLevelDeformation.Descriptor.Renormalizing](lowleveldeformation/descriptor-swift.struct/renormalizing-swift.struct.md)
+### Structures
+- [LowLevelDeformation.Descriptor.BlendShape](lowleveldeformation/descriptor-swift.struct/blendshape-swift.struct.md)
+  The blend-shape data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
+- [LowLevelDeformation.Descriptor.Renormalization](lowleveldeformation/descriptor-swift.struct/renormalization-swift.struct.md)
   The renormalization data dimensions for a [`LowLevelDeformation`](lowleveldeformation.md).
+### Initializers
+- [init(vertexCount: Int, blendShape: LowLevelDeformation.Descriptor.BlendShape?, skinning: LowLevelDeformation.Descriptor.Skinning?, renormalization: LowLevelDeformation.Descriptor.Renormalization?)](lowleveldeformation/descriptor-swift.struct/init(vertexcount:blendshape:skinning:renormalization:).md)
+  Creates a deformation descriptor.
+### Instance Properties
+- [var blendShape: LowLevelDeformation.Descriptor.BlendShape?](lowleveldeformation/descriptor-swift.struct/blendshape-swift.property.md)
+  The blend-shape configuration, or `nil` if blend-shape deformation is not used.
+- [var renormalization: LowLevelDeformation.Descriptor.Renormalization?](lowleveldeformation/descriptor-swift.struct/renormalization-swift.property.md)
+  The renormalization configuration, or `nil` if renormalization is not used.
 
 ## Relationships
 

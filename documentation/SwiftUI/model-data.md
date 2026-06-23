@@ -63,8 +63,6 @@ The framework provides tools, like state variables and bindings, for connecting 
 ### Managing dynamic data
 - [protocol DynamicProperty](dynamicproperty.md)
   An interface for a stored variable that updates an external property of a view.
-### Supporting types
-- [struct LazyState](lazystate.md)
 
 ## See Also
 

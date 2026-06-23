@@ -36,7 +36,6 @@ The methods of [`PaymentMethodBinding`](paymentmethodbinding.md) may return thes
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

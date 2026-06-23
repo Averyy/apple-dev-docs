@@ -22,7 +22,7 @@ func extracting(_: UnboundedRange) -> RawSpan
 
 #### Return Value
 
-A span over all the bytes of this span.
+A `RawSpan` over all the bytes of this span.
 
 #### Discussion
 

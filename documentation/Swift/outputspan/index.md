@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: typealias
 
-The type that represents an initialized position in an `OutputSpan`.
+The type that represents an initialized index in an `OutputSpan`.
 
 **Availability**:
 - iOS 12.2+

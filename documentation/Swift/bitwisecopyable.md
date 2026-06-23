@@ -21,6 +21,7 @@ protocol BitwiseCopyable : ~Escapable
 ## Relationships
 
 ### Inherited By
+- [ConvertibleFromBytes](convertiblefrombytes.md)
 - [SIMDScalar](simdscalar.md)
 ### Conforming Types
 - [AtomicLoadOrdering](../synchronization/atomicloadordering.md)
@@ -28,8 +29,10 @@ protocol BitwiseCopyable : ~Escapable
 - [AtomicUpdateOrdering](../synchronization/atomicupdateordering.md)
 - [AutoreleasingUnsafeMutablePointer](autoreleasingunsafemutablepointer.md)
 - [Bool](bool.md)
+- [ByteOrder](byteorder.md)
 - [CVaListPointer](cvalistpointer.md)
 - [CollectionDifference.Index](collectiondifference/index.md)
+- [CollectionOfOne](collectionofone.md)
 - [DiscardingTaskGroup](discardingtaskgroup.md)
 - [Double](double.md)
 - [Double.SIMD16Storage](double/simd16storage.md)
@@ -106,7 +109,12 @@ protocol BitwiseCopyable : ~Escapable
 - [ObjectIdentifier](objectidentifier.md)
 - [OpaquePointer](opaquepointer.md)
 - [Optional](optional.md)
+- [PartialRangeFrom](partialrangefrom.md)
+- [PartialRangeFrom.Iterator](partialrangefrom/iterator.md)
+- [PartialRangeThrough](partialrangethrough.md)
+- [PartialRangeUpTo](partialrangeupto.md)
 - [RawSpan](rawspan.md)
+- [Ref](ref.md)
 - [SIMD16](simd16.md)
 - [SIMD2](simd2.md)
 - [SIMD3](simd3.md)

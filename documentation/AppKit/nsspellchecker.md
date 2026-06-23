@@ -139,6 +139,7 @@ To handle all its spell checking, an app needs only one instance of [`NSSpellChe
 - [func preventsAutocorrection(before: String, language: String?) -> Bool](nsspellchecker/preventsautocorrection(before:language:).md)
 - [func requestCandidates(forSelectedRange: NSRange, in: String, types: NSTextCheckingTypes, options: [NSSpellChecker.OptionKey : Any]?, inSpellDocumentWithTag: Int, completionHandler: ((Int, [NSTextCheckingResult]) -> Void)?) -> Int](nsspellchecker/requestcandidates(forselectedrange:in:types:options:inspelldocumentwithtag:completionhandler:).md)
 - [func showInlinePrediction(forCandidates: [NSTextCheckingResult], client: any NSTextInputClient)](nsspellchecker/showinlineprediction(forcandidates:client:).md)
+- [func ignoreGrammarRange(NSRange, inSentence: String, inSpellDocumentWithTag: Int)](nsspellchecker/ignoregrammarrange(_:insentence:inspelldocumentwithtag:).md)
 ### Structures
 - [NSSpellChecker.DidChangeAutomaticCapitalizationMessage](nsspellchecker/didchangeautomaticcapitalizationmessage.md)
 - [NSSpellChecker.DidChangeAutomaticDashSubstitutionMessage](nsspellchecker/didchangeautomaticdashsubstitutionmessage.md)

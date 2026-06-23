@@ -3,8 +3,6 @@
 **Framework**: Foundation Models  
 **Kind**: protocol
 
-A segment whose content is defined by a custom content.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -26,8 +24,6 @@ protocol CustomSegment : InstructionsRepresentable, PromptRepresentable, CustomS
   The segment’s content.
 - [associatedtype Content : Decodable, Encodable, Equatable, Sendable](transcript/customsegment/content-swift.associatedtype.md)
 - [var id: String](transcript/customsegment/id.md)
-### Comparing segments
-- [func isEqual(to: some Transcript.CustomSegment) -> Bool](transcript/customsegment/isequal(to:).md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](transcript/customsegment/customstringconvertible-implementations.md)
 

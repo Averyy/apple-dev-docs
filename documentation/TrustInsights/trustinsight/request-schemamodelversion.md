@@ -1,6 +1,6 @@
 # request(schema:modelVersion:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: method
 
 Creates an insight request for the given insight type.
@@ -9,7 +9,6 @@ Creates an insight request for the given insight type.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

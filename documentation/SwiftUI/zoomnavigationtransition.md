@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-A navigation transition that zooms the appearing view from a given source view. Indicate the source view using the `View/matchedTransitionSource(id:namespace:)` modifier.
+A navigation transition that zooms the appearing view from a given source view.
 
 **Availability**:
 - iOS 18.0+
@@ -18,6 +18,12 @@ A navigation transition that zooms the appearing view from a given source view. 
 ```swift
 struct ZoomNavigationTransition
 ```
+
+#### Overview
+
+Indicate the source view using the [`matchedTransitionSource(id:in:)`](view/matchedtransitionsource(id:in:).md) modifier.
+
+> **Note**: The zoom transition is not supported in tvOS. Navigation uses [`automatic`](navigationtransition/automatic.md) instead.
 
 ## Relationships
 

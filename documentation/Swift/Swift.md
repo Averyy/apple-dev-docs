@@ -106,26 +106,54 @@ Swift is developed in the open. To learn more about the open source Swift projec
   A type that provides borrowed access to the values of a borrowing sequence.
 - [protocol BorrowingSequence](borrowingsequence.md)
   A type that provides sequential, borrowing access to its elements.
+- [protocol ConvertibleFromBytes](convertiblefrombytes.md)
+  A protocol for types whose memory can safely be populated from raw bytes, resulting in a valid instance.
+- [protocol ConvertibleToBytes](convertibletobytes.md)
+  A protocol for types whose memory can safely be read as individual raw bytes.
 ### Structures
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+- [struct Continuation](continuation.md)
+  A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
+- [struct MutableRef](mutableref.md)
+  A safe mutable reference allowing in-place mutation to an exclusive value.
+- [struct Ref](ref.md)
+  A safe reference allowing in-place reads to a shared value.
 - [struct SpanIterator](spaniterator.md)
+- [struct UniqueBox](uniquebox.md)
+  A smart pointer type that uniquely owns an instance of `Value` on the heap.
 ### Functions
+- [func bitCast<T, U>(T, to: U.Type) -> U](bitcast(_:to:).md)
+  Returns the bits of the given instance, interpreted as having the specified type.
 - [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
   Invokes the passed in closure with a checked continuation for the current task.
 - [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
 - [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
   Invokes the passed in closure with a checked continuation for the current task.
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
 - [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 - [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
   Enters a scope in which a task cancellation shield is active.
 - [func withTaskCancellationShield<Value, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Value) async throws(Failure) -> Value](withtaskcancellationshield(operation:)-8zlgh.md)
   Enters a scope in which a task cancellation shield is active.
+- [func withTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (inout OutputRawSpan) throws(E) -> R) throws(E) -> R](withtemporaryallocation(bytecount:alignment:_:).md)
+- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](withtemporaryallocation(of:capacity:_:).md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
+  Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
   Invokes the passed in closure with a unsafe continuation for the current task.
 - [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
   Invokes the passed in closure with a unsafe continuation for the current task.
 - [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
+### Type Aliases
+- [typealias FullyInhabited](fullyinhabited.md)
+  A protocol for types whose memory can safely be written as or read from raw bytes.
+### Enumerations
+- [enum ByteOrder](byteorder.md)
+  A byte ordering in memory.
 
 
 ---

@@ -24,8 +24,8 @@ Controls whether the markup automatically adjusts its dimensions to fit content 
 
 ```swift
 var textBox = ShapeMarkup(
-    frame: CGRect(x: 0, y: 0, width: 100, height: 50),
     shape: .rectangle,
+    frame: CGRect(x: 0, y: 0, width: 100, height: 50),
     attributedText: AttributedString("Short"),
     autoresizing: [.flexibleWidth]
 )
@@ -36,7 +36,7 @@ textBox.attributedText = AttributedString("This is much longer text")
 
 ## Topics
 
-### Type Properties
+### Resizing options
 - [static let flexibleHeight: MarkupAutoresizing](markupautoresizing/flexibleheight.md)
   Automatically adjust height to fit content changes.
 - [static let flexibleWidth: MarkupAutoresizing](markupautoresizing/flexiblewidth.md)
@@ -52,6 +52,15 @@ textBox.attributedText = AttributedString("This is much longer text")
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
+
+## See Also
+
+- [struct FeatureSet](featureset.md)
+  The features PaperKit supports in its UI and data models.
+- [struct ShapeConfiguration](shapeconfiguration.md)
+  A configuration that specifies the appearance of a shape.
+- [struct RenderingOptions](renderingoptions.md)
+  The rendering options for drawing paper data models.
 
 
 ---

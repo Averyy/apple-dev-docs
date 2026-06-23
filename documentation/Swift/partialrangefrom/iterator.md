@@ -33,6 +33,11 @@ struct Iterator
 ## Relationships
 
 ### Conforms To
+- [BitwiseCopyable](bitwisecopyable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
+- [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [IteratorProtocol](iteratorprotocol.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

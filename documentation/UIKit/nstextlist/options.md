@@ -43,6 +43,7 @@ struct Options
 ## See Also
 
 - [var isOrdered: Bool](nstextlist/isordered.md)
+  A Boolean value that indicates whether the list is ordered.
 - [var listOptions: NSTextList.Options](nstextlist/listoptions.md)
   Returns the list options mask value of the receiver.
 

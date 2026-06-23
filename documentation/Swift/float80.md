@@ -58,6 +58,7 @@ struct Float80
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CVarArg](cvararg.md)
 - [Comparable](comparable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)

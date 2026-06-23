@@ -44,7 +44,6 @@ This initializer provides a convenient way to create content from its kind repre
   Creates equivalent content from a JSON string.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
-- [static let null: GeneratedContent](generatedcontent/null.md)
 
 
 ---

@@ -26,6 +26,8 @@ final var indexableContent: String? { get async }
 
 The string may contain multiple concatenated candidate matches for recognized text in the drawing.
 
+> ❗ **Important**: This query runs low-priority background recognition. Interactive queries can cancel it, in which case it returns nil. Use the indexing query when the person isn’t interacting with the device.
+
 ## See Also
 
 - [func recognizedText(strokeIDs: Set<UUID>?) async -> String?](pkstrokerecognizer/recognizedtext(strokeids:).md)

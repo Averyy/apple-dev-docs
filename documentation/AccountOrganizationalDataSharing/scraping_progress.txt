@@ -1,4 +1,4 @@
 Completed scraping Account & Organizational Data Sharing!
-Total pages scraped: 0
-Pages skipped (unchanged): 11
+Total pages scraped: 8
+Pages skipped (unchanged): 3
 Pages failed: 0

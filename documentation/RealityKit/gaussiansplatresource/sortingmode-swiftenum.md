@@ -8,7 +8,8 @@ Correct blending of splat opacity requires rendering them in a specific order. Y
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
+- Mac Catalyst ?+
+- macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration
@@ -32,7 +33,6 @@ enum SortingMode
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 

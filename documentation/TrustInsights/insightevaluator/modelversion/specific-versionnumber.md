@@ -1,6 +1,6 @@
 # InsightEvaluator.ModelVersion.specific(versionNumber:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that defines a specific model version intended to be run in parallel with the latest version.
@@ -9,7 +9,6 @@ A value that defines a specific model version intended to be run in parallel wit
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -61,6 +61,7 @@ Use a [`WKNavigationResponse`](wknavigationresponse.md) object to make policy de
   An object that tracks the loading progress of a webpage.
 - [class WKNavigationAction](wknavigationaction.md)
   An object that contains information about an action that causes navigation to occur.
+- [class WKFormInfo](wkforminfo.md)
 
 
 ---

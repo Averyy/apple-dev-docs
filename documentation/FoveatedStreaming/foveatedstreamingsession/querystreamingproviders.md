@@ -12,7 +12,7 @@ Returns a list of currently-available streaming providers.
 
 ```swift
 @MainActor
-static func queryStreamingProviders() async -> Set<FoveatedStreamingSession.StreamingProvider>
+static func queryStreamingProviders() async -> [FoveatedStreamingSession.StreamingProvider]
 ```
 
 

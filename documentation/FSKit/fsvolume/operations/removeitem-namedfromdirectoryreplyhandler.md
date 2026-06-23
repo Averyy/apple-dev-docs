@@ -17,7 +17,7 @@ func removeItem(_ item: FSItem, named name: FSFileName, fromDirectory directory:
 
 #### Discussion
 
-Don’t actually remove the item object itself in your implementation; instead, only remove the given item name from the given directory. Remove and deallocate the item in [`reclaimItem(_:replyHandler:)`](fsvolume/operations/reclaimitem(_:replyhandler:).md).
+Don’t actually remove the item object itself in your implementation; instead, only remove the given item name from the given directory. Remove and deallocate the item in `reclaimItem(_:)`.
 
 ## Parameters
 

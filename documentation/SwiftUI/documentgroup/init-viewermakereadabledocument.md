@@ -23,6 +23,15 @@ init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocume
 
 - `viewer`: The viewing UI for the provided document.
 
+## See Also
+
+- [init(allowCreating:editor:makeDocument:)](documentgroup/init(allowcreating:editor:makedocument:).md)
+  Creates a document group capable of creating, viewing, and editing documents.
+- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
+  Creates a document group for creating and editing file documents.
+- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
+  Creates a document group capable of viewing file documents.
+
 
 ---
 

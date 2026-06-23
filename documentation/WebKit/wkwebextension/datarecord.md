@@ -58,6 +58,18 @@ Contains properties and methods to query the data types and sizes.
 
 ## See Also
 
+- [class WKWebExtension](wkwebextension.md)
+  An object that encapsulates a web extension’s resources that the manifest file defines.
+- [protocol WKWebExtensionTab](wkwebextensiontab.md)
+  A protocol with methods that represent a tab to web extensions.
+- [protocol WKWebExtensionWindow](wkwebextensionwindow.md)
+  A protocol with methods that represent a window to web extensions.
+- [class WKWebExtensionContext](wkwebextensioncontext.md)
+  An object that represents the runtime environment for a web extension.
+- [class WKWebExtensionController](wkwebextensioncontroller.md)
+  An object that manages a set of loaded extension contexts.
+- [protocol WKWebExtensionControllerDelegate](wkwebextensioncontrollerdelegate.md)
+  A group of methods you use to customize web extension interactions.
 - [WKWebExtension.Action](wkwebextension/action.md)
   An object that encapsulates the properties for an individual web extension action.
 - [WKWebExtension.Command](wkwebextension/command.md)

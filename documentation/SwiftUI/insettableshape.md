@@ -57,6 +57,7 @@ protocol InsettableShape : Shape
 - [Rectangle](rectangle.md)
 - [RotatedShape](rotatedshape.md)
 - [RoundedRectangle](roundedrectangle.md)
+- [TextInputBorderShape](textinputbordershape.md)
 - [UnevenRoundedRectangle](unevenroundedrectangle.md)
 
 ## See Also

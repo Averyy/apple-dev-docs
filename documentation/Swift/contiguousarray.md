@@ -42,7 +42,9 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
 - [var capacity: Int](contiguousarray/capacity.md)
   The total number of elements that the array can contain without allocating new storage.
 - [var mutableSpan: MutableSpan<Element>](contiguousarray/mutablespan.md)
+  A mutable span over the elements of this array.
 - [var span: Span<Element>](contiguousarray/span.md)
+  A span over the elements of this array.
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](contiguousarray/append(addingcapacity:initializingwith:).md)
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.

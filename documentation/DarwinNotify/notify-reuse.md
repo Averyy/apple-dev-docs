@@ -1,7 +1,7 @@
 # NOTIFY_REUSE
 
 **Framework**: Darwin Notify  
-**Kind**: macro
+**Kind**: var
 
 **Availability**:
 - iOS ?+
@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-#define NOTIFY_REUSE
+var NOTIFY_REUSE: Int32 { get }
 ```
 
 #### Discussion

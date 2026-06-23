@@ -80,6 +80,13 @@ enum Shape
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var shape: ShapeMarkup.Shape](shapemarkup/shape-swift.property.md)
+  The type of the shape.
+- [var shapeScaled: ShapeMarkup.Shape](shapemarkup/shapescaled.md)
+  The type of the shape with values scaled to the current frame.
+
 
 ---
 

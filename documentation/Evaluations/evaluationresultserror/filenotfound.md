@@ -11,7 +11,6 @@ The specified file URL is not findable on disk.
 - Mac Catalyst ?+
 - macOS ?+
 - visionOS ?+
-- watchOS ?+
 
 ## Declaration
 

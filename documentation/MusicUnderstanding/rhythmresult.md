@@ -1,6 +1,6 @@
 # RhythmResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A structure that describes a song’s rhythm results in terms of beats, bars, and beats per minute (BPM).
@@ -35,8 +35,6 @@ struct RhythmResult
   The timestamp of each detected beat.
 - [let beatsPerMinute: Float?](rhythmresult/beatsperminute.md)
   The tempo of the song in beats per minute.
-### Instance Properties
-- [var debugDescription: String](rhythmresult/debugdescription.md)
 
 ## Relationships
 

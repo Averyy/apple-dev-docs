@@ -1,6 +1,6 @@
 # InsightEvaluator.AuthorizationStatus.deniedRequestable
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates a person has previously denied authorization to use the framework, but the app can present a request again at a later time.
@@ -9,7 +9,6 @@ A value that indicates a person has previously denied authorization to use the f
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

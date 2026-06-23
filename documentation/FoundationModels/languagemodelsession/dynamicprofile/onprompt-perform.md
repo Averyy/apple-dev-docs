@@ -16,6 +16,7 @@ Runs an action before the model is invoked for this dynamic profile.
 ## Declaration
 
 ```swift
+@export(implementation)
 func onPrompt(perform action: nonisolated(nonsending) sending @escaping () async throws -> Void) -> some LanguageModelSession.DynamicProfile
 ```
 

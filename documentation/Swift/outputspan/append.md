@@ -20,6 +20,10 @@ Append a single element to this span.
 mutating func append(_ value: consuming Element)
 ```
 
+## Parameters
+
+- `value`: The element to append.
+
 
 ---
 

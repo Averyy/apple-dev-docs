@@ -47,6 +47,7 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
   Returns the computed value for a specific ordinal position in the list.
 ### Getting list options
 - [var isOrdered: Bool](nstextlist/isordered.md)
+  A Boolean value that indicates whether the list is ordered.
 - [var listOptions: NSTextList.Options](nstextlist/listoptions.md)
   Returns the list options mask value of the receiver.
 - [NSTextList.Options](nstextlist/options.md)
@@ -59,6 +60,7 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
   Specifies that a nested list should include the marker for its enclosing superlist before its own marker.
 ### Type Properties
 - [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the contents.
 
 ## Relationships
 

@@ -55,6 +55,13 @@ class NSViewCornerConfiguration
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [class NSViewCornerRadii](nsviewcornerradii.md)
+  Provides a structured way to define custom corner radii for each corner of a view, along with a corner curve.
+- [class NSViewCornerRadius](nsviewcornerradius.md)
+  Represents a radius used to round a corner. It supports fixed and adaptive configurations.
+
 
 ---
 

@@ -83,6 +83,7 @@ To use Apple Foundation Models, people need to turn on Apple Intelligence on the
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

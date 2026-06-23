@@ -18,6 +18,10 @@ Presents a sheet that enables users to redeem subscription offer codes that you 
 static func presentOfferCodeRedeemSheet(from viewController: UIViewController, options: Set<RedeemOption> = []) async throws -> VerificationResult<Transaction>
 ```
 
+## Mentions
+
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+
 #### Return Value
 
 A [`VerificationResult`](verificationresult.md) containing the [`Transaction`](transaction.md) that the redemption produces.
@@ -30,6 +34,14 @@ A [`VerificationResult`](verificationresult.md) containing the [`Transaction`](t
 
 - `viewController`: The `UIViewController` that StoreKit uses to display the offer code redemption sheet.
 - `options`: A set of [`RedeemOption`](redeemoption.md) values to configure the offer code redemption.
+
+## See Also
+
+- [Supporting offer codes in your app](supporting-offer-codes-in-your-app.md)
+  Enable customers to redeem offer codes through the App Store or within your app.
+- [func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>, onCompletion: (Result<VerificationResult<Transaction>, any Error>) -> Void) -> some View
+](../SwiftUI/View/offerCodeRedemption(options:isPresented:onCompletion:).md)
+  Presents a sheet that enables customers to redeem offer codes that you configure in App Store Connect.
 
 
 ---

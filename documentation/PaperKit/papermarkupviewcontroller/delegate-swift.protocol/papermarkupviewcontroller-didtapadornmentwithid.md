@@ -16,13 +16,13 @@ Tells the delegate when a person taps an adornment.
 ## Declaration
 
 ```swift
-func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, didTapAdornmentWithID adornmentID: UUID)
+func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, didTapAdornmentWithID id: UUID)
 ```
 
 ## Parameters
 
 - `paperMarkupViewController`: The `PaperMarkupViewController` containing the adornment.
-- `adornmentID`: The ID of the adornment the person tapped.
+- `id`: The ID of the adornment the person tapped.
 
 ## See Also
 

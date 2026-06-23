@@ -72,7 +72,6 @@ The set ensures all elements have unique `id` values.
   The markup ID types supported in a markup ordered set.
 - [MarkupOrderedSet.ElementIDs](markuporderedset/elementids.md)
   A view of a set’s ids.
-### Type Aliases
 - [MarkupOrderedSet.Element](markuporderedset/element.md)
   The type of element in the set.
 ### Default Implementations

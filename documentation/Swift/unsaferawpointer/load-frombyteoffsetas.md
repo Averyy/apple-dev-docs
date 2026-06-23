@@ -17,7 +17,7 @@ Returns a new instance of the given type, constructed from the raw memory at the
 ## Declaration
 
 ```swift
-func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T
+func load<T>(fromByteOffset offset: Int = 0, as type: T.Type) -> T where T : ~Escapable
 ```
 
 #### Return Value

@@ -42,6 +42,7 @@ struct Relationship
   The complete path to the nearest prim that contains this relationship.
 - [var stage: USDStage](usdprim/relationship/stage.md)
   The stage that owns this relationship.
+- [var targets: [USDLayer.Path]](usdprim/relationship/targets.md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](usdprim/relationship/customstringconvertible-implementations.md)
 
@@ -53,7 +54,7 @@ struct Relationship
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage-4sfi1/object/metadatacollection.md)
+- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
 
 ## See Also
 

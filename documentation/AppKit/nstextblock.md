@@ -23,6 +23,7 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 ### Creating text blocks
 - [init()](nstextblock/init.md)
   Initializes and returns an empty text block object.
+- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
 ### Working with dimensions of content
 - [func setValue(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Dimension)](nstextblock/setvalue(_:type:for:).md)
   Sets a dimension of the text block.
@@ -41,14 +42,11 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 - [NSTextBlock.ValueType](nstextblock/valuetype.md)
   The following constants specify values used by the methods [`setValue(_:type:for:)`](nstextblock/setvalue(_:type:for:).md) and [`valueType(for:)`](nstextblock/valuetype(for:).md) to specify text block value types.
 ### Getting and setting margins, borders, and padding
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](nstextblock/setwidth(_:type:for:edge:).md)
-  Sets the width of a specified edge of a specified layer of the text block.
 - [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
   Sets the width of all edges of a specified layer of the text block.
-- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](nstextblock/width(for:edge:).md)
-  Returns the width of an edge of a specified layer of the text block.
-- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:edge:).md)
-  Returns the value type of an edge of a specified layer of the text block.
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](nstextblock/setwidth(_:type:for:rectedge:).md)
+- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](nstextblock/width(for:rectedge:).md)
+- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
 - [NSTextBlock.Layer](nstextblock/layer.md)
   The following constants specify values used by the properties and methods [`contentWidthValueType`](nstextblock/contentwidthvaluetype.md), [`setWidth(_:type:for:edge:)`](nstextblock/setwidth(_:type:for:edge:).md), [`setWidth(_:type:for:)`](nstextblock/setwidth(_:type:for:).md), [`width(for:edge:)`](nstextblock/width(for:edge:).md), and [`widthValueType(for:edge:)`](nstextblock/widthvaluetype(for:edge:).md) to specify text block layer values.
 ### Getting and setting alignment
@@ -59,10 +57,10 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 ### Working with color
 - [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
   The background color of the text block.
-- [func setBorderColor(NSColor?, for: NSRectEdge)](nstextblock/setbordercolor(_:for:).md)
-  Sets the border color of the specified edge of the text block.
 - [func setBorderColor(NSColor?)](nstextblock/setbordercolor(_:).md)
   Sets the color of all borders of the text block.
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
 ### Determining size and position of a text block
 - [func rectForLayout(at: NSPoint, in: NSRect, textContainer: NSTextContainer, characterRange: NSRange) -> NSRect](nstextblock/rectforlayout(at:in:textcontainer:characterrange:).md)
   Returns the rectangle within which glyphs should be laid out for the specified arguments.
@@ -71,15 +69,16 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 ### Drawing colors and decorations
 - [func drawBackground(withFrame: NSRect, in: NSView?, characterRange: NSRange, layoutManager: NSLayoutManager)](nstextblock/drawbackground(withframe:in:characterrange:layoutmanager:).md)
   Called by the layout manager to draw any colors and other decorations before the text is drawn.
-### Initializers
-- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
-### Instance Methods
+### Deprecated
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](nstextblock/setwidth(_:type:for:edge:).md)
+  Sets the width of a specified edge of a specified layer of the text block.
+- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](nstextblock/width(for:edge:).md)
+  Returns the width of an edge of a specified layer of the text block.
+- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:edge:).md)
+  Returns the value type of an edge of a specified layer of the text block.
 - [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-273pl.md)
-- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
-- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
-- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, rectEdge: CGRectEdge)](nstextblock/setwidth(_:type:for:rectedge:).md)
-- [func width(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> CGFloat](nstextblock/width(for:rectedge:).md)
-- [func widthValueType(for: NSTextBlock.Layer, rectEdge: CGRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:rectedge:).md)
+- [func setBorderColor(NSColor?, for: NSRectEdge)](nstextblock/setbordercolor(_:for:).md)
+  Sets the border color of the specified edge of the text block.
 
 ## Relationships
 
@@ -101,14 +100,6 @@ A text block appears as an attribute of a paragraph, and as part of the paragrap
 
 ## See Also
 
-- [class NSParagraphStyle](nsparagraphstyle.md)
-  The paragraph or ruler attributes for an attributed string.
-- [class NSMutableParagraphStyle](nsmutableparagraphstyle.md)
-  An object for changing the values of the subattributes in a paragraph style attribute.
-- [class NSTextTab](nstexttab.md)
-  A tab in a paragraph.
-- [class NSTextList](nstextlist.md)
-  A section of text that forms a single list.
 - [class NSTextTable](nstexttable.md)
   An object that represents a text table as a whole.
 - [class NSTextTableBlock](nstexttableblock.md)

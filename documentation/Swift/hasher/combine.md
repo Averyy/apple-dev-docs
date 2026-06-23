@@ -17,7 +17,7 @@ Adds the given value to this hasher, mixing its essential parts into the hasher 
 ## Declaration
 
 ```swift
-mutating func combine<H>(_ value: borrowing H) where H : Hashable, H : ~Copyable
+mutating func combine<H>(_ value: borrowing H) where H : Hashable, H : ~Copyable, H : ~Escapable
 ```
 
 ## Parameters

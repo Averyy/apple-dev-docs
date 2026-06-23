@@ -17,7 +17,7 @@ Reinterpret one type scalar or vector type as another of the same number of size
 ## Declaration
 
 ```swift
-case reinterpret(from: MTLDataType, to: MTLDataType)
+case reinterpret(from: ComputeNodeGraph.DataType, to: ComputeNodeGraph.DataType)
 ```
 
 #### Discussion

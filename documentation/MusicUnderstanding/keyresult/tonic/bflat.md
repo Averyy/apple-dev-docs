@@ -1,6 +1,6 @@
 # KeyResult.Tonic.bFlat
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 Indicates that the song is in a B-flat key.

@@ -27,6 +27,8 @@ Use this enumeration to specify whether content has a finite duration or is a li
 ## Topics
 
 ### Enumeration Cases
+- [MediaDuration.continuous](mediaduration/continuous.md)
+  Content with no defined duration that isn’t a live broadcast.
 - [case finite(TimeInterval)](mediaduration/finite(_:).md)
   Content with a known duration.
 - [MediaDuration.live](mediaduration/live.md)

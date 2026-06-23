@@ -20,6 +20,10 @@ Append a single byte to this span.
 mutating func append(_ value: UInt8)
 ```
 
+## Parameters
+
+- `value`: The byte to append.
+
 
 ---
 

@@ -25,11 +25,28 @@ A valid [`MPSGraphTensor`](mpsgraphtensor.md) array of datatype `dataType`.
 
 #### Discussion
 
-Convert the i8, u8, i4 or u4 `tensor` to a float tensor by applying a scale and bias transform:
+Convert the quantized `tensor` to a float tensor by applying a scale and bias transform:
 
 ```md
-result = scaleTensor(tensor - zeroPointTensor).
+result = scaleTensor * (tensor - zeroPointTensor)
 ```
+
+The quantization mode is determined by the element type of `scaleTensor`:
+
+**Regular blockwise** (`scaleTensor` type is an MPSGraph float type):
+
+- Supported input types: `MPSDataTypeInt4`, `MPSDataTypeUInt4`, `MPSDataTypeInt8`, `MPSDataTypeUInt8`, `MPSDataTypeFloat8E4M3`, `MPSDataTypeFloat8E5M2`.
+- `zeroPointTensor` type must match the input `tensor` type.
+- `scaleTensor` shape: leading dims of `tensor` with the last dim replaced by `tensor.shape[last] / blockSize`.
+
+**MX mode** (`scaleTensor` type is `MPSDataTypeFloat8E8M0`):
+
+- Supported input types: `MPSDataTypeFloat4E2M1`, `MPSDataTypeFloat8E4M3`, `MPSDataTypeFloat8E5M2`.
+- Block size 32, symmetric (zero point must be 0).
+
+**F4 with F8E4M3 scale** (`scaleTensor` type is `MPSDataTypeFloat8E4M3`, input type is `MPSDataTypeFloat4E2M1`):
+
+- Block size 16, symmetric (zero point must be 0).
 
 ## Parameters
 

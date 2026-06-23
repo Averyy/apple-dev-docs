@@ -37,10 +37,6 @@ class PKAddCarKeyPassConfiguration
   A one-time password that the vehicle manufacturer provides.
 ### Setting the provisioning template
 - [var provisioningTemplateIdentifier: String?](pkaddcarkeypassconfiguration/provisioningtemplateidentifier.md)
-### Instance Properties
-- [var ownerPairingToken: String?](pkaddcarkeypassconfiguration/ownerpairingtoken.md)
-- [var region: String?](pkaddcarkeypassconfiguration/region.md)
-- [var vehicleIdentifier: String?](pkaddcarkeypassconfiguration/vehicleidentifier.md)
 
 ## Relationships
 

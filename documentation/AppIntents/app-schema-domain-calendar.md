@@ -13,7 +13,7 @@ The following table maps example phrases that apply to each schema:
 | Calendar intent schemas | Example phrases |
 | --- | --- |
 | [`createEvent`](appschema/calendarintent/createevent.md) | “Create an event.” or “Schedule a meeting with Bill tomorrow at 2 PM.” |
-| [`deleteEvents`](appschema/calendarintent/deleteevents.md) | “Delete this event.” or “Cancel the meeting.” |
+| `AppSchema/CalendarIntent/deleteEvents` | “Delete this event.” or “Cancel the meeting.” |
 | [`updateEvent`](appschema/calendarintent/updateevent.md) | “Reschedule the meeting.” or “Move the meeting to tomorrow.” |
 
 > 💡 **Tip**: Xcode generates a template implementation when you type `calendar_` and select a schema from the suggestions list.
@@ -28,8 +28,6 @@ For more information about making your app’s actions available to Apple Intell
 ### Actions
 - [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
   An intent schema that creates a calendar event.
-- [var deleteEvents: some AppSchemaIntent](appschema/calendarintent/deleteevents.md)
-  An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 - [AppSchema.CalendarIntent](appschema/calendarintent.md)

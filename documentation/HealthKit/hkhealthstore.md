@@ -26,7 +26,7 @@ class HKHealthStore
 
 #### Overview
 
-Use a [`HKHealthStore`](hkhealthstore.md) object to request permission to share or read HealthKit data. After you have permission, you can use the HealthKit store to save new samples to the store, or to manage the samples that your app saved. Additionally, you can use the HealthKit store to start, stop, and manage queries.
+Use a [`HKHealthStore`](hkhealthstore.md) object to request permission to share or read HealthKit data. People can grant your app full access to a data type, limited access restricted to a recent window of data, or no access at all. After requesting authorization, you can check the scope of your read access for specific data types before making queries. You can also use the HealthKit store to save new samples to the store, manage the samples that your app saves, and start, stop, and manage queries.
 
 For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 
@@ -55,6 +55,10 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   Requests permission to save and read the data types specified by an extension.
 - [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
+- [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
+  Returns the earliest date that the framework permits your app to save or read samples.
 ### Querying HealthKit data
 - [func execute(HKQuery)](hkhealthstore/execute(_:).md)
   Starts executing the provided query.
@@ -80,8 +84,6 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   Deletes the specified objects from the HealthKit store.
 - [func deleteObjects(of: HKObjectType, predicate: NSPredicate, withCompletion: (Bool, Int, (any Error)?) -> Void)](hkhealthstore/deleteobjects(of:predicate:withcompletion:).md)
   Deletes objects saved by this application that match the provided type and predicate.
-- [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
-  Returns the earliest date permitted for samples.
 - [func save(HKObject, withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/save(_:withcompletion:)-6fmtg.md)
   Saves the provided object to the HealthKit store.
 - [func save([HKObject], withCompletion: (Bool, (any Error)?) -> Void)](hkhealthstore/save(_:withcompletion:)-47iwb.md)

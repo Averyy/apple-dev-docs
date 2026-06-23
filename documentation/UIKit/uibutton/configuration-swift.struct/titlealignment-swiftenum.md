@@ -38,7 +38,6 @@ If your button displays both [`title`](uibutton/configuration-swift.struct/title
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 
 ## See Also

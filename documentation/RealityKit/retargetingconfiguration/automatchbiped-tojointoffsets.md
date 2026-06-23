@@ -16,7 +16,6 @@ Creates a retargeting configuration for bipedal characters using automatic joint
 ## Declaration
 
 ```swift
-@MainActor
 static func automatchBiped(_ sourceSkeleton: SkeletonResource, to targetSkeleton: SkeletonResource, jointOffsets: [String : simd_quatf] = [:]) throws -> RetargetingConfiguration
 ```
 

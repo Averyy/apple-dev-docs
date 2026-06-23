@@ -23,7 +23,7 @@ struct UTF8View
 
 ### Instance Properties
 - [var span: Span<UTF8.CodeUnit>](substring/utf8view/span.md)
-  A span over the UTF8 code units that make up this substring.
+  A span over the UTF-8 code units that make up this substring.
 ### Instance Methods
 - [func isTriviallyIdentical(to: Substring.UTF8View) -> Bool](substring/utf8view/istriviallyidentical(to:).md)
   Returns a boolean value indicating whether this UTF8 view is trivially identical to `other`.

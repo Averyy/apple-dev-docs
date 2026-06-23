@@ -16,13 +16,13 @@ Tells the delegate when a drag session ends for an adornment.
 ## Declaration
 
 ```swift
-func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, didUpdateAdornmentWithID adornmentID: UUID, toAnchor anchor: MarkupAdornment.Anchor)
+func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, didUpdateAdornmentWithID id: UUID, toAnchor anchor: MarkupAdornment.Anchor)
 ```
 
 ## Parameters
 
 - `paperMarkupViewController`: The `PaperMarkupViewController` containing the adornment.
-- `adornmentID`: The ID of the adornment that moved.
+- `id`: The ID of the adornment that moved.
 - `anchor`: The updated anchor for the adornment.
 
 ## See Also

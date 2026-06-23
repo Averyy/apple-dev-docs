@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-An administrator for a subscription.
-
 ## Declaration
 
 ```swift
@@ -43,9 +41,7 @@ object ResponseSubscriptionAdmin
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
-  Request body for adding or removing subscription administrators.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
-  Confirmation response returned after adding or removing subscription administrators.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
 - [object EventResponse](eventresponse.md)

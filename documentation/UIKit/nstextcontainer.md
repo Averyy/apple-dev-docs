@@ -35,6 +35,7 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 - [var layoutManager: NSLayoutManager?](nstextcontainer/layoutmanager.md)
   The text container’s layout manager.
 - [var textLayoutManager: NSTextLayoutManager?](nstextcontainer/textlayoutmanager.md)
+  The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
 - [func replaceLayoutManager(NSLayoutManager)](nstextcontainer/replacelayoutmanager(_:).md)
   Replaces the layout manager for the group of text system objects that contains the text container.
 - [var textView: NSTextView?](../AppKit/NSTextContainer/textView.md)

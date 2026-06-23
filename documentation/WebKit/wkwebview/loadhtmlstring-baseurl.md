@@ -37,6 +37,8 @@ This method sets the source of this load request for app activity data to [`NSUR
 
 - [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
   Loads the content of the specified data object and navigates to it.
+- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
+- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
 - [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](wkwebview/loadfilerequest(_:allowingreadaccessto:).md)
   Loads the web content from the file the URL request object specifies and navigates to that content.
 - [func loadFileURL(URL, allowingReadAccessTo: URL) -> WKNavigation?](wkwebview/loadfileurl(_:allowingreadaccessto:).md)

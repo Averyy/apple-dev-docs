@@ -17,7 +17,7 @@ Convert from one primitive MTLDataType to another.
 ## Declaration
 
 ```swift
-case convert(from: MTLDataType, to: MTLDataType)
+case convert(from: ComputeNodeGraph.DataType, to: ComputeNodeGraph.DataType)
 ```
 
 #### Discussion

@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight.Value.high
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A result that indicates there’s a high risk that a third party is coaching a person in some form.
@@ -9,7 +9,6 @@ A result that indicates there’s a high risk that a third party is coaching a p
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

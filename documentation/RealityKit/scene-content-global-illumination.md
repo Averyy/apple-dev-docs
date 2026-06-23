@@ -31,10 +31,11 @@ This collection gathers the tools for adding precomputed and environment-based l
   A component that receives diffuse lighting from a referenced probe group.
 ### Environment texture generation
 - [class ImageBasedLightTextureGenerator](imagebasedlighttexturegenerator.md)
-  An object for generating based light textures. Computes an image based light’s diffuse and specular textures from a skybox texture.
+  An object that generates image-based-lighting diffuse and specular cube textures from a skybox.
 - [class SkyboxGenerator](skyboxgenerator.md)
-  An object for generating skybox textures.
+  An object that generates a skybox cube texture from an equirectangular source.
 - [enum TextureSamplingQuality](texturesamplingquality.md)
+  A discrete trade-off between generation time and texture quality, used by [`SkyboxGenerator`](skyboxgenerator.md) and [`ImageBasedLightTextureGenerator`](imagebasedlighttexturegenerator.md).
 
 ## See Also
 

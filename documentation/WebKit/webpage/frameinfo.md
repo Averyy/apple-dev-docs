@@ -45,6 +45,14 @@ struct FrameInfo
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
 - [WebPage.NavigationPreferences](webpage/navigationpreferences.md)
   A type that specifies the behaviors to use when loading and rendering page content.
+- [WebPage.NavigationPreferences.ContentMode](webpage/navigationpreferences/contentmode.md)
+  Options to indicate how to render web view content.
+- [WebPage.NavigationPreferences.UpgradeToHTTPSPolicy](webpage/navigationpreferences/upgradetohttpspolicy.md)
+  Preference for loading a webpage with HTTPS, and how failures should be handled.
+- [WebPage.NavigationPreferences.SecurityRestrictionMode](webpage/navigationpreferences/securityrestrictionmode-swift.enum.md)
+  Security restriction modes for WebView content.
+- [WebPage.FormInfo](webpage/forminfo.md)
+  A type that contains information about a form submission from a webpage.
 
 
 ---

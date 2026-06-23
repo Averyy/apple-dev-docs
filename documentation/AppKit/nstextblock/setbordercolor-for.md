@@ -27,10 +27,13 @@ This setting has no visible effect unless the border width is larger than the de
 
 - [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer)](nstextblock/setwidth(_:type:for:).md)
   Sets the width of all edges of a specified layer of the text block.
-- [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
-  The background color of the text block.
-- [func setBorderColor(NSColor?)](nstextblock/setbordercolor(_:).md)
-  Sets the color of all borders of the text block.
+- [func setWidth(CGFloat, type: NSTextBlock.ValueType, for: NSTextBlock.Layer, edge: NSRectEdge)](nstextblock/setwidth(_:type:for:edge:).md)
+  Sets the width of a specified edge of a specified layer of the text block.
+- [func width(for: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat](nstextblock/width(for:edge:).md)
+  Returns the width of an edge of a specified layer of the text block.
+- [func widthValueType(for: NSTextBlock.Layer, edge: NSRectEdge) -> NSTextBlock.ValueType](nstextblock/widthvaluetype(for:edge:).md)
+  Returns the value type of an edge of a specified layer of the text block.
+- [func borderColor(for: NSRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-273pl.md)
 
 
 ---

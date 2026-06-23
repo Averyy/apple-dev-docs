@@ -26,6 +26,10 @@ Values are normalized from `0.0` to `1.0`, where `(0, 0)` is the top-left and `(
 
 - [var image: CGImage?](imagemarkup/image.md)
   The image content displayed by this markup.
+- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+  Replaces the contents of this image markup with an image file.
+- [func replaceImage(with: CGImage)](imagemarkup/replaceimage(with:)-6eb53.md)
+  Replaces the contents of this image markup with a `CGImage`.
 - [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
   The orientation of the image content.
 

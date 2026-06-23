@@ -89,6 +89,8 @@ builder.insertSibling(refreshMenuItem, beforeMenu: .close)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](uiaccessibilityidentification.md)
 - [UIMenuLeaf](uimenuleaf.md)
 

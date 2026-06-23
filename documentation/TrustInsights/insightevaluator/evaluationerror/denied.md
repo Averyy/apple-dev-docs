@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.denied
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates evaluations are unavailable due to a person’s options.
@@ -9,7 +9,6 @@ An error that indicates evaluations are unavailable due to a person’s options.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -16,6 +16,7 @@ Creates a builder with the first component.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<TrueContent, FalseContent>(first content: TrueContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent> where TrueContent : LanguageModelSession.DynamicProfile, FalseContent : LanguageModelSession.DynamicProfile
 ```
 
@@ -25,6 +26,7 @@ static func buildEither<TrueContent, FalseContent>(first content: TrueContent) -
   Creates a builder with a block.
 - [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](languagemodelsession/dynamicprofilebuilder/buildeither(second:).md)
   Creates a builder with the second component.
+- [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](languagemodelsession/dynamicprofilebuilder/buildlimitedavailability(_:).md)
 
 
 ---

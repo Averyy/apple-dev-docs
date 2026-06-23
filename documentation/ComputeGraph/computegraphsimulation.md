@@ -38,10 +38,8 @@ This class is independent of the output, which makes for simpler testing.
   Initialize a ComputeGraphSimulation for the given pipelines
 ### Instance Properties
 - [var commandQueue: any MTLCommandQueue](computegraphsimulation/commandqueue.md)
-- [var graphParametersBuffer: (any MTLBuffer)!](computegraphsimulation/graphparametersbuffer.md)
 - [var graphUniforms: any MTLBuffer](computegraphsimulation/graphuniforms.md)
   Returns a read-only copy of the uniforms buffer.
-- [var outputIds: [Int]](computegraphsimulation/outputids.md)
 - [var pipelines: ComputeNodeGraph.Pipelines](computegraphsimulation/pipelines.md)
 - [var simulationRate: ComputeGraphSimulation.SimulationRate](computegraphsimulation/simulationrate-swift.property.md)
   Specifies the current simulation rate.

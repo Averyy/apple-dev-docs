@@ -28,8 +28,8 @@ This setting has no visible effect unless the border width is larger than the de
   Sets the width of all edges of a specified layer of the text block.
 - [var backgroundColor: NSColor?](nstextblock/backgroundcolor.md)
   The background color of the text block.
-- [func setBorderColor(NSColor?, for: NSRectEdge)](nstextblock/setbordercolor(_:for:).md)
-  Sets the border color of the specified edge of the text block.
+- [func setBorderColor(NSColor?, rectEdge: CGRectEdge)](nstextblock/setbordercolor(_:rectedge:).md)
+- [func borderColor(for: CGRectEdge) -> NSColor?](nstextblock/bordercolor(for:)-5m8cr.md)
 
 
 ---

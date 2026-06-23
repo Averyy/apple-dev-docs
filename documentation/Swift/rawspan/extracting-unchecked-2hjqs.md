@@ -22,7 +22,7 @@ func extracting(unchecked bounds: ClosedRange<Int>) -> RawSpan
 
 #### Return Value
 
-A span over the bytes within `bounds`
+A `RawSpan` over the bytes within `bounds`.
 
 #### Discussion
 

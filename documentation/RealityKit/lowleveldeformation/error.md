@@ -28,7 +28,7 @@ struct Error
 
 ## See Also
 
-- [func encode(into: any MTLComputeCommandEncoder) throws(LowLevelDeformation.Error)](lowleveldeformation/encode(into:).md)
+- [func encode(into: any MTLComputeCommandEncoder) throws](lowleveldeformation/encode(into:).md)
   Encodes the configured deformation passes into the given command encoder.
 - [LowLevelDeformation.Pipeline](lowleveldeformation/pipeline.md)
   A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.

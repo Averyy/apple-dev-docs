@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-Text formatting controls placed beneath the window toolbar.
+Text formatting controls placed beneath the window toolbar on macOS.
 
 **Availability**:
 - macOS 26.0+

@@ -3,6 +3,8 @@
 **Framework**: PassKit (Apple Pay and Wallet)  
 **Kind**: property
 
+A Jaywan payment card.
+
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
@@ -16,6 +18,10 @@
 ```swift
 static let jaywan: PKPaymentNetwork
 ```
+
+## Mentions
+
+- [Complying with regional regulations](complying-with-regional-regulations.md)
 
 
 ---

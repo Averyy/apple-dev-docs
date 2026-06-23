@@ -20,7 +20,7 @@ protocol ReadableDocument : AnyObject
 
 #### Overview
 
-To create a read-only document type, conform to `ReadableDocument` and implement the required methods and properties. For a read-write document, also conform to [`WritableDocument`](writabledocument.md), or use the `Document` typealias.
+To create a read-only document type, conform to `ReadableDocument` and implement the required methods and properties. For a read-write document, also conform to [`WritableDocument`](writabledocument.md), or use the [`Document`](document.md) typealias.
 
 Your implementation:
 
@@ -45,8 +45,14 @@ Your implementation:
 - [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
   By default, a document that supports reading also supports writing the same content types.
 
+## Relationships
+
+### Inherited By
+- [Document](document.md)
+
 ## See Also
 
+- [protocol Document](document.md)
 - [protocol WritableDocument](writabledocument.md)
   A type that you use to write documents to file.
 - [class URLDocumentConfiguration](urldocumentconfiguration.md)

@@ -16,6 +16,7 @@ Creates a builder with a block.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<T>(_ content: T) -> T where T : LanguageModelSession.DynamicProfile
 ```
 
@@ -25,6 +26,7 @@ static func buildBlock<T>(_ content: T) -> T where T : LanguageModelSession.Dyna
   Creates a builder with the first component.
 - [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> LanguageModelSession.ConditionalDynamicProfile<TrueContent, FalseContent>](languagemodelsession/dynamicprofilebuilder/buildeither(second:).md)
   Creates a builder with the second component.
+- [static func buildLimitedAvailability(some LanguageModelSession.DynamicProfile) -> LanguageModelSession.AnyDynamicProfile](languagemodelsession/dynamicprofilebuilder/buildlimitedavailability(_:).md)
 
 
 ---

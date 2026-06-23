@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+A Boolean value that indicates whether TextKit includes text list markers in the contents.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -16,6 +18,10 @@
 ```swift
 class var includesTextListMarkers: Bool { get }
 ```
+
+#### Discussion
+
+The default value is `false`.
 
 
 ---

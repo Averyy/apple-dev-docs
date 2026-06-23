@@ -36,16 +36,8 @@ A capsule shape is equivalent to a rounded rectangle where the corner radius is 
   A shape that is replaced by an inset version of the current container shape. If no container shape was defined, is replaced by a rectangle.
 - [static var ellipse: Ellipse](shape/ellipse.md)
   An ellipse aligned inside the frame of the view containing it.
-- [static var rect: Rectangle](shape/rect.md)
-  A rectangular shape aligned inside the frame of the view containing it.
-- [static func rect(cornerRadii: RectangleCornerRadii, style: RoundedCornerStyle) -> Self](shape/rect(cornerradii:style:).md)
-  A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
-- [static func rect(cornerRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(cornerradius:style:).md)
-  A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
-- [static func rect(cornerSize: CGSize, style: RoundedCornerStyle) -> Self](shape/rect(cornersize:style:).md)
-  A rectangular shape with rounded corners, aligned inside the frame of the view containing it.
-- [static func rect(topLeadingRadius: CGFloat, bottomLeadingRadius: CGFloat, bottomTrailingRadius: CGFloat, topTrailingRadius: CGFloat, style: RoundedCornerStyle) -> Self](shape/rect(topleadingradius:bottomleadingradius:bottomtrailingradius:toptrailingradius:style:).md)
-  A rectangular shape with rounded corners with different values, aligned inside the frame of the view containing it.
+- [static var textInputBorder: TextInputBorderShape](shape/textinputborder.md)
+  A shape that defers to the environment to determine the resolved text input border shape.
 
 
 ---

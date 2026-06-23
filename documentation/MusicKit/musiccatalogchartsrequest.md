@@ -33,7 +33,7 @@ struct MusicCatalogChartsRequest
 - [var limit: Int?](musiccatalogchartsrequest/limit.md)
   A limit for the number of items to return in the catalog search response.
 - [var offset: Int?](musiccatalogchartsrequest/offset.md)
-  An offet for the request.
+  An offset for the request.
 - [var types: [any MusicCatalogChartRequestable.Type]](musiccatalogchartsrequest/types.md)
   The list of requested types for the catalog charts response.
 ### Instance Methods

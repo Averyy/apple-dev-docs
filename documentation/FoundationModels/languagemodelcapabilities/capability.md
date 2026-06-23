@@ -41,6 +41,8 @@ struct Capability
 
 ## See Also
 
+- [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
+  Specify a list of supported capabilities
 - [init(capabilities: [LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(capabilities:).md)
   Specify a list of supported capabilities
 

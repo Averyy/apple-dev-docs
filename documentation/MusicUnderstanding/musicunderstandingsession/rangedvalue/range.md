@@ -1,6 +1,6 @@
 # range
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The time range over which the value applies.

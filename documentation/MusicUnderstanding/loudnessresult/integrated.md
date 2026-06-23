@@ -1,6 +1,6 @@
 # integrated
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The integrated loudness of the song, measured in LUFS over its full duration.

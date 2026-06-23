@@ -42,16 +42,12 @@ AVSystemRouting is the app-side counterpart to the [`Media Device`](https://deve
   An object that represents an event that occurs on a system route.
 - [AVSystemRouteEvent.Reason](avsystemrouteevent-2elr5/reason-swift.enum.md)
   Values that indicate the reason for a routing event.
-- [enum AVSystemRouteEventReason](avsystemrouteeventreason.md)
-  Values that indicate the reason for a routing event.
 ### Routes and sessions
 - [class AVSystemRoute](avsystemroute-5s2um.md)
   An active media route to a remote device that manages connection and communication for media playback and data exchange.
 - [class AVSystemRouteSession](avsystemroutesession-gp78.md)
   An object that manages a single media playback session on a remote device.
 - [AVSystemRoute.LaunchMode](avsystemroute-5s2um/launchmode.md)
-  The mode that determines how media playback launches on a remote device.
-- [enum AVSystemRouteLaunchMode](avsystemroutelaunchmode.md)
   The mode that determines how media playback launches on a remote device.
 ### Playback and communication
 - [class AVSystemRouteMediaSession](avsystemroutemediasession-98ioq.md)

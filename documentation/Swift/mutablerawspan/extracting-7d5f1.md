@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Constructs a new span over all the bytes of this span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,18 @@
 ```swift
 mutating func extracting(_: UnboundedRange) -> MutableRawSpan
 ```
+
+#### Return Value
+
+A `MutableRawSpan` over all the bytes of this span.
+
+#### Discussion
+
+The returned span represents a mutation of this span.
+
+The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
+
+> **Note**: O(1)
 
 
 ---

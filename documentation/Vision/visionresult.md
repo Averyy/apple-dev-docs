@@ -108,7 +108,6 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
   A result from encountering a framework error.
 ### Enumeration Cases
 - [case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBufferObservation)](visionresult/generateiterativesegmentation(_:_:).md)
-- [case generateSelectedObjectSegmentation(GenerateSelectedObjectSegmentationRequest, PixelBufferObservation)](visionresult/generateselectedobjectsegmentation(_:_:).md)
 
 ## Relationships
 

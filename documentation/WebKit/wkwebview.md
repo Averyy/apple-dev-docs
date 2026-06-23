@@ -101,6 +101,8 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 ### Loading web content
 - [func load(Data, mimeType: String, characterEncodingName: String, baseURL: URL) -> WKNavigation?](wkwebview/load(_:mimetype:characterencodingname:baseurl:).md)
   Loads the content of the specified data object and navigates to it.
+- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
+- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
 - [func loadHTMLString(String, baseURL: URL?) -> WKNavigation?](wkwebview/loadhtmlstring(_:baseurl:).md)
   Loads the contents of the specified HTML string and navigates to it.
 - [func loadFileRequest(URLRequest, allowingReadAccessTo: URL) -> WKNavigation](wkwebview/loadfilerequest(_:allowingreadaccessto:).md)
@@ -155,6 +157,7 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
   The theme color that the system gets from the first valid meta tag in the webpage.
 - [var underPageBackgroundColor: UIColor!](wkwebview/underpagebackgroundcolor.md)
   The color the web view displays behind the active page, visible when the user scrolls beyond the bounds of the page.
+- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
 ### Scaling content
 - [var pageZoom: CGFloat](wkwebview/pagezoom.md)
   The scale factor by which the web view scales content relative to its bounds.
@@ -186,6 +189,9 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
   Changes whether the webpage is using the microphone to capture audio.
 - [enum WKMediaCaptureState](wkmediacapturestate.md)
   An enumeration that describes whether a media device, like a camera or microphone, is currently capturing audio or video.
+### Presenting immersive environments
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
+- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
 ### Searching the current page’s content
 - [func find(String, configuration: WKFindConfiguration, completionHandler: (WKFindResult) -> Void)](wkwebview/find(_:configuration:completionhandler:).md)
   Searches for the specified string in the web view’s content.
@@ -254,24 +260,19 @@ If your app has the [`com.apple.developer.web-browser`](https://developer.apple.
 - [func setMinimumViewportInset(UIEdgeInsets, maximumViewportInset: UIEdgeInsets)](wkwebview/setminimumviewportinset(_:maximumviewportinset:).md)
 - [var minimumViewportInset: UIEdgeInsets](wkwebview/minimumviewportinset.md)
 - [var maximumViewportInset: UIEdgeInsets](wkwebview/maximumviewportinset.md)
-### Examining data types
+- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
+### Saving and restoring data
+- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
 - [struct WKWebViewDataType](wkwebviewdatatype.md)
+### Supporting Writing Tools
+- [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
+- [var conversationContext: UIConversationContext](wkwebview/conversationcontext.md)
+### Supporting Screen Time
+- [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
 ### Deprecated
 - [Deprecated symbols](wkwebview-deprecated-symbols.md)
   Review unsupported symbols and their replacements.
-### Instance Properties
-- [var conversationContext: UIConversationContext](wkwebview/conversationcontext.md)
-- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
-- [var isBlockedByScreenTime: Bool](wkwebview/isblockedbyscreentime.md)
-- [var isWritingToolsActive: Bool](wkwebview/iswritingtoolsactive.md)
-- [var obscuredContentInsets: UIEdgeInsets](wkwebview/obscuredcontentinsets.md)
-- [var refreshController: NSRefreshController?](wkwebview/refreshcontroller.md)
-### Instance Methods
-- [func dismissImmersiveEnvironment(completionHandler: () -> Void)](wkwebview/dismissimmersiveenvironment(completionhandler:).md)
-- [func fetchData(of: WKWebViewDataType, completionHandler: (Data?, (any Error)?) -> Void)](wkwebview/fetchdata(of:completionhandler:).md)
-- [func load(URL) -> WKNavigation?](wkwebview/load(_:)-4xx8m.md)
-- [func load(URLRequest) -> WKNavigation?](wkwebview/load(_:)-5siv6.md)
-- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
 
 ## Relationships
 

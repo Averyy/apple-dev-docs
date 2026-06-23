@@ -44,7 +44,8 @@ struct RenderingOptions
   The features PaperKit supports in its UI and data models.
 - [struct ShapeConfiguration](shapeconfiguration.md)
   A configuration that specifies the appearance of a shape.
-- [enum PaperDocumentDisplayMode](paperdocumentdisplaymode.md)
+- [struct MarkupAutoresizing](markupautoresizing.md)
+  Automatic sizing behaviors for this markup.
 
 
 ---

@@ -44,6 +44,8 @@ struct ElementIDs
 
 - [MarkupOrderedSet.ElementID](markuporderedset/elementid.md)
   The markup ID types supported in a markup ordered set.
+- [MarkupOrderedSet.Element](markuporderedset/element.md)
+  The type of element in the set.
 
 
 ---

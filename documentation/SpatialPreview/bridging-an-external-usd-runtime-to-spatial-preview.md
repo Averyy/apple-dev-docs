@@ -6,7 +6,7 @@ Sync edits between an application with its own OpenUSD runtime and a Spatial Pre
 
 #### Overview
 
-Spatial Preview uses [`USDKit`](https://developer.apple.com/documentation/USDKit) to manage a [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage-4sfi1) on the Mac. Applications that use USDKit for accessing USD data will automatically have edits to the USD data synced with Spatial Preview Sessions. When your app has its own USD runtime, the two applications don’t share memory or a stage cache. Writing a USD file to disk doesn’t notify USDKit of changes, and edits made on the connected Apple Vision Pro aren’t automatically visible to your app.
+Spatial Preview uses [`USDKit`](https://developer.apple.com/documentation/USDKit) to manage a doc://com.apple.documentation/documentation/usdkit/usdstage-4sfi1 on the Mac. Applications that use USDKit for accessing USD data will automatically have edits to the USD data synced with Spatial Preview Sessions. When your app has its own USD runtime, the two applications don’t share memory or a stage cache. Writing a USD file to disk doesn’t notify USDKit of changes, and edits made on the connected Apple Vision Pro aren’t automatically visible to your app.
 
 Bridge the two runtimes using a shared [`USDLayer`](https://developer.apple.com/documentation/USDKit/USDLayer) as an exchange mechanism. For each direction, app to device and device to app, the pattern is the same: write overrides into a thin edit layer, export it to disk, and use [`copy(from:to:in:)`](https://developer.apple.com/documentation/USDKit/USDLayer/copy(from:to:in:)) to propagate the changes into USDKit’s stage. [`USDPreviewSession`](usdpreviewsession.md) watches the `UsdStage` for mutations and syncs only the changed data to the device.
 
@@ -55,7 +55,7 @@ When you read edits from the Spatial Preview stage and apply them to the `UsdSta
 
 Batch and pass edits from an external OpenUSD runtime to the bridge layer at some reasonable time period (30ms for example) to prevent locking the `@MainActor` thread.
 
-For apps that can’t produce a minimal edit layer, export the complete scene and call [`reload()`](https://developer.apple.com/documentation/USDKit/USDStage-4sfi1/reload()) or [`reload()`](https://developer.apple.com/documentation/USDKit/USDLayer/reload()) on the USDKit side. USDKit diffs the old and new stage internally; [`USDPreviewSession`](usdpreviewsession.md) syncs only the deltas. This approach requires less bridging code but exports the full scene on every change, which can be slow for large scenes:
+For apps that can’t produce a minimal edit layer, export the complete scene and call doc://com.apple.documentation/documentation/usdkit/usdstage-4sfi1/reload() or [`reload()`](https://developer.apple.com/documentation/USDKit/USDLayer/reload()) on the USDKit side. USDKit diffs the old and new stage internally; [`USDPreviewSession`](usdpreviewsession.md) syncs only the deltas. This approach requires less bridging code but exports the full scene on every change, which can be slow for large scenes:
 
 ```swift
 @MainActor

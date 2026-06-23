@@ -65,7 +65,6 @@ struct AttachmentSegment
 - [Transcript.ToolOutput](transcript/tooloutput.md)
   A tool output provided back to the model.
 - [Transcript.CustomSegment](transcript/customsegment.md)
-  A segment whose content is defined by a custom content.
 
 
 ---

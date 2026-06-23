@@ -14,6 +14,10 @@ Draws the slider knob in the given rectangle.
 func drawKnob(_ knobRect: NSRect)
 ```
 
+## Mentions
+
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+
 #### Discussion
 
 Before this message is sent, a [`lockFocus()`](nsview/lockfocus().md) message must be sent to the cell’s control view.

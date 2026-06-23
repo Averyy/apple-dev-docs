@@ -1,6 +1,6 @@
 # InsightEvaluator.OperationCategory.payment
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates some form of payment or purchase.
@@ -9,7 +9,6 @@ A value that indicates some form of payment or purchase.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

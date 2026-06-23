@@ -16,6 +16,11 @@
 func fetchData(of dataTypes: WKWebViewDataType) async throws -> Data
 ```
 
+## See Also
+
+- [func restoreData(Data, completionHandler: ((any Error)?) -> Void)](wkwebview/restoredata(_:completionhandler:).md)
+- [struct WKWebViewDataType](wkwebviewdatatype.md)
+
 
 ---
 

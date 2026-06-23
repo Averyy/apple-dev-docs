@@ -178,7 +178,7 @@ case .deactivate:
 }
 ```
 
-On [`AVSystemRouteEventReason.activate`](avsystemrouteeventreason/activate.md), store [`route`](avsystemrouteevent-2elr5/route.md) as your [`AVSystemRoute`](avsystemroute-5s2um.md) reference. The route’s `protocolType` identifies which device extension protocol is in use. Use [`routeDisplayName`](avsystemroute-5s2um/routedisplayname.md) and [`routeSymbolName`](avsystemroute-5s2um/routesymbolname.md) to reflect the destination in your app’s interface.
+On `AVSystemRouteEventReason/activate`, store [`route`](avsystemrouteevent-2elr5/route.md) as your [`AVSystemRoute`](avsystemroute-5s2um.md) reference. The route’s `protocolType` identifies which device extension protocol is in use. Use [`routeDisplayName`](avsystemroute-5s2um/routedisplayname.md) and [`routeSymbolName`](avsystemroute-5s2um/routesymbolname.md) to reflect the destination in your app’s interface.
 
 ##### Start a Media Session
 

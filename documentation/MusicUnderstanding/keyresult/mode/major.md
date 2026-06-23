@@ -1,6 +1,6 @@
 # KeyResult.Mode.major
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The major keys.

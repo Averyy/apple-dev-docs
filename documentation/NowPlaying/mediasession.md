@@ -29,6 +29,8 @@ class MediaSession<Representable> where Representable : MediaSessionRepresentabl
 
 Use a session to represent media playback happening on the current device. The session automatically observes your [`MediaSessionRepresentable`](mediasessionrepresentable.md) model and syncs changes to the system’s Now Playing interface.
 
+For more information, see [`Publishing media sessions`](publishing-media-sessions.md)
+
 Create a session by providing a session representable:
 
 ```swift

@@ -24,7 +24,7 @@ final class MetricManager
 
 #### Discussion
 
-`MetricManager` is an instantiable class rather than a shared singleton. Create an instance and hold it for as long as you need reports.
+`MetricManager` is an instantiable class rather than a shared singleton. Create an instance and hold it for as long as you need reports. Share that instance across your app rather than creating multiple instances with the same domains. If you create more than one `MetricManager`, two tasks concurrently iterating the same sequence both receive a non-deterministic subset of reports rather than a full copy.
 
 Metric reports arrive through [`metricReports`](metricmanager/metricreports.md), and diagnostic reports through [`diagnosticReports`](metricmanager/diagnosticreports.md). Both are typed `AsyncSequence` properties that never throw, so you iterate them with `for await` in long-lived tasks:
 

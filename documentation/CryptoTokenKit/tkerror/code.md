@@ -44,6 +44,8 @@ enum Code
 - [static var TKErrorAuthenticationFailed: TKError.Code](tkerror/code/tkerrorauthenticationfailed.md)
 - [static var TKErrorObjectNotFound: TKError.Code](tkerror/code/tkerrorobjectnotfound.md)
 - [static var TKErrorTokenNotFound: TKError.Code](tkerror/code/tkerrortokennotfound.md)
+### Enumeration Cases
+- [TKError.Code.invalidatedDeviceKey](tkerror/code/invalidateddevicekey.md)
 ### Initializers
 - [init?(rawValue: Int)](tkerror/code/init(rawvalue:).md)
 

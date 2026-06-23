@@ -1,6 +1,6 @@
 # insight
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 Result values and errors for the requested insights.
@@ -9,7 +9,6 @@ Result values and errors for the requested insights.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

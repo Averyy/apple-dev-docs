@@ -20,13 +20,13 @@ func updateProperties()
 
 ## Mentions
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Overview
 
 Override this method to configure content and styling in your view subclass. Don’t call this method directly; instead, call [`setNeedsUpdateProperties()`](uiview/setneedsupdateproperties().md) to schedule an update.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in UIKit`](updating-views-automatically-with-observation-tracking-in-uikit.md).
 
 ## See Also
 

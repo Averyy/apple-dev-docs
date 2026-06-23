@@ -1,6 +1,6 @@
 # isUsingCurrentModel
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 A Boolean value that indicates whether the framework created the insight with the newest available model version.
@@ -9,7 +9,6 @@ A Boolean value that indicates whether the framework created the insight with th
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

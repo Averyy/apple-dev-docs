@@ -26,6 +26,8 @@ The default style represents the recommended style based on the current platform
 
 ## See Also
 
+- [static var bordered: BorderedTextFieldStyle](textfieldstyle/bordered.md)
+  A text field style with a system-defined border whose shape is determined by the [`textInputBorderShape(_:)`](view/textinputbordershape(_:).md) modifier.
 - [static var plain: PlainTextFieldStyle](textfieldstyle/plain.md)
   A text field style with no decoration.
 - [static var roundedBorder: RoundedBorderTextFieldStyle](textfieldstyle/roundedborder.md)

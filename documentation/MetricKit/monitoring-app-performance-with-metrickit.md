@@ -70,6 +70,8 @@ reporter.reportTransition(to: nil)
 
 MetricKit only surfaces stable metadata. You can also pass `volatileMetadata` to your [`StateReporter`](https://developer.apple.com/documentation/StateReporting/StateReporter), which is available to other diagnostic tools such as Instruments, but is not visible to MetricKit. For more information, see [`StateReporting`](https://developer.apple.com/documentation/StateReporting).
 
+The system enforces limits on the number of unique states MetricKit aggregates in a single reporting period. When your app exceeds this limit, [`hasExceededStateLimit`](metricreport/environment-swift.struct/hasexceededstatelimit.md) is `true` in the resulting report. Metrics for states beyond the limit appear in the full-day interval entry rather than in [`stateEntries`](metricreport/stateentries.md). Check this flag when processing reports and design your reporting scheme to handle the case where some state entries may not appear. Keep property names and string values in your `@ReportableMetadata` types concise. The system enforces length constraints on both, and concise names reduce noise when analyzing performance data. Design states around distinct, stable user experiences - meaningful state definitions make performance data easier to interpret when you analyze reports.
+
 #### Observe Metric Reports
 
 Use `for await` to consume each [`MetricReport`](metricreport.md) as it arrives. Each report provides two complementary views of your performance data: [`stateEntries`](metricreport/stateentries.md) with metrics segmented by app state, and [`intervalEntries`](metricreport/intervalentries.md) with metrics aggregated over time windows. Iterate both to capture the full picture:
@@ -105,6 +107,21 @@ for await report in manager.metricReports {
 ```
 
 Include an `@unknown default` case in each switch statement to handle any additional metrics.
+
+> **Note**: To generate reports during development without waiting for the daily delivery schedule, choose Debug > Simulate MetricKit Payloads in Xcode. Simulated reports contain sample data, not actual data from your app, for all domains registered with that [`MetricManager`](metricmanager.md) instance. Use simulated reports to understand the structure of MetricKit reports and to test your in-app implementation for report handling.
+
+To process each report in multiple independent workflows, dispatch concurrent work within a single iteration using `async let`:
+
+```swift
+for await report in manager.metricReports {
+    async let upload: Void = uploadToCloudKit(report: report)
+    async let save: Void = saveToFilesApp(report: report)
+
+    _ = await (upload, save)
+}
+```
+
+Both tasks start immediately and run in parallel. The next iteration waits for both to complete. For a dynamic number of concurrent tasks, use [`withTaskGroup(of:returning:isolation:body:)`](https://developer.apple.com/documentation/Swift/withTaskGroup(of:returning:isolation:body:)) instead.
 
 When you don’t register any state reporting domains, [`stateEntries`](metricreport/stateentries.md) is empty and all performance data appears in the full-day interval entry, accessible through [`fullDayEntry`](https://developer.apple.com/documentation/Swift/Array/fullDayEntry), with an empty [`states`](metricreport/intervalentry/states.md) array.
 
@@ -163,6 +180,8 @@ case let .signpostInterval(metric):
 ```
 
 [`SignpostIntervalMetric`](signpostintervalmetric.md) also exposes optional resource-consumption properties — [`cpuTime`](signpostintervalmetric/cputime.md), [`logicalWrites`](signpostintervalmetric/logicalwrites.md), [`averageMemory`](signpostintervalmetric/averagememory.md), [`hitchTimeRatio`](signpostintervalmetric/hitchtimeratio.md), [`totalHitchTime`](signpostintervalmetric/totalhitchtime.md), and [`totalAnimationTime`](signpostintervalmetric/totalanimationtime.md) — which MetricKit populates when it has enough data to report them.
+
+You can also use [`OSSignposter`](https://developer.apple.com/documentation/os/OSSignposter) with the handle from [`logHandle(category:)`](metricmanager/loghandle(category:).md), but it doesn’t populate the [`SignpostIntervalMetric`](signpostintervalmetric.md) measurement properties. Use [`mxSignpost(_:dso:log:name:signpostID:_:_:)`](mxsignpost(_:dso:log:name:signpostid:_:_:).md) to populate properties like CPU time, memory usage, and logical writes. To tag a signpost as an animation interval and populate [`hitchTimeRatio`](signpostintervalmetric/hitchtimeratio.md), [`totalHitchTime`](signpostintervalmetric/totalhitchtime.md), and [`totalAnimationTime`](signpostintervalmetric/totalanimationtime.md), use [`mxSignpostAnimationIntervalBegin(dso:log:name:signpostID:_:_:)`](mxsignpostanimationintervalbegin(dso:log:name:signpostid:_:_:).md) instead.
 
 #### Measure Extended Launch
 

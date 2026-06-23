@@ -18,22 +18,20 @@ enum Status
 
 ## Topics
 
-### Getting the status
+### Enumeration Cases
+- [CustomerEngagement.Status.checkoutCompleted](customerengagement/status/checkoutcompleted.md)
+  A screen indicating the checkout is complete.
 - [CustomerEngagement.Status.paymentCompleted](customerengagement/status/paymentcompleted.md)
   A screen indicating a payment is complete.
 - [CustomerEngagement.Status.paymentFailed](customerengagement/status/paymentfailed.md)
   A screen indicating a payment failure.
 - [CustomerEngagement.Status.ready](customerengagement/status/ready.md)
   A screen indicating the session is ready for customer interaction.
-### Enumeration Cases
-- [CustomerEngagement.Status.checkoutCompleted](customerengagement/status/checkoutcompleted.md)
-  A screen indicating the checkout is complete.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

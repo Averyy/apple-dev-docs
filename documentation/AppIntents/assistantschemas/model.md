@@ -43,7 +43,6 @@ protocol Model
 - [AssistantSchemas.PhotosEnum](assistantschemas/photosenum.md)
 - [AssistantSchemas.PhotosIntent](assistantschemas/photosintent.md)
 - [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
-- [AssistantSchemas.PresentationEnum](assistantschemas/presentationenum.md)
 - [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
 - [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)
 - [AssistantSchemas.ReaderEnum](assistantschemas/readerenum.md)

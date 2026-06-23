@@ -272,6 +272,8 @@ To override the normal limits, create an analyzer with a [`SpeechAnalyzer.Option
 
 ## See Also
 
+- [Speech updates](../Updates/Speech.md)
+  Learn about important changes to Speech.
 - [Recognizing speech in live audio](recognizing-speech-in-live-audio.md)
   Perform speech recognition and transcription on audio captured from the microphone of an iOS device.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)

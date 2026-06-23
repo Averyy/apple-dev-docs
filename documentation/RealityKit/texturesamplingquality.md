@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
+A discrete trade-off between generation time and texture quality, used by [`SkyboxGenerator`](skyboxgenerator.md) and [`ImageBasedLightTextureGenerator`](imagebasedlighttexturegenerator.md).
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 enum TextureSamplingQuality
 ```
+
+#### Overview
+
+Higher quality reduces noise and banding at the cost of proportionally more GPU work.
 
 ## Topics
 
@@ -39,9 +45,9 @@ enum TextureSamplingQuality
 ## See Also
 
 - [class ImageBasedLightTextureGenerator](imagebasedlighttexturegenerator.md)
-  An object for generating based light textures. Computes an image based light’s diffuse and specular textures from a skybox texture.
+  An object that generates image-based-lighting diffuse and specular cube textures from a skybox.
 - [class SkyboxGenerator](skyboxgenerator.md)
-  An object for generating skybox textures.
+  An object that generates a skybox cube texture from an equirectangular source.
 
 
 ---

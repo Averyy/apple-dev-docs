@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
 
 **Availability**:
 - iOS 27.0+ (Beta)

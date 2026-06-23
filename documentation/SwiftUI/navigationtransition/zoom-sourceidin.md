@@ -21,7 +21,9 @@ static func zoom(sourceID: some Hashable, in namespace: Namespace.ID) -> ZoomNav
 
 #### Discussion
 
-Indicate the source view using the `View/matchedTransitionSource(id:namespace:)` modifier.
+Indicate the source view using the [`matchedTransitionSource(id:in:)`](view/matchedtransitionsource(id:in:).md) modifier.
+
+> **Note**: The zoom transition is not supported in tvOS. Navigation uses [`automatic`](navigationtransition/automatic.md) instead.
 
 ## Parameters
 
@@ -39,7 +41,7 @@ Indicate the source view using the `View/matchedTransitionSource(id:namespace:)`
 - [struct CrossFadeNavigationTransition](crossfadenavigationtransition.md)
   A navigation transition that cross-fades between the appearing view and the disappearing view.
 - [struct ZoomNavigationTransition](zoomnavigationtransition.md)
-  A navigation transition that zooms the appearing view from a given source view. Indicate the source view using the `View/matchedTransitionSource(id:namespace:)` modifier.
+  A navigation transition that zooms the appearing view from a given source view.
 
 
 ---

@@ -40,6 +40,13 @@ These modes determine how the text selection manager handles user interaction wi
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var textSelectionMode: NSTextSelectionManager.Mode](nstextselectionmanager/textselectionmode.md)
+  The interaction mode for text selection.
+- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
+  The data source that provides text layout information to the selection manager.
+
 
 ---
 

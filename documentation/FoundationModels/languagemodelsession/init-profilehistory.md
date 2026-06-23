@@ -42,6 +42,7 @@ convenience init(profile: sending some LanguageModelSession.DynamicProfile, hist
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Remove all this span’s elements and return its memory to the uninitialized state.
+Remove all this span’s bytes and return its memory to the uninitialized state.
 
 **Availability**:
 - iOS 12.2+

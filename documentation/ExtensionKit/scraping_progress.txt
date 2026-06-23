@@ -1,4 +1,4 @@
 Completed scraping ExtensionKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 40
+Total pages scraped: 37
+Pages skipped (unchanged): 3
 Pages failed: 0

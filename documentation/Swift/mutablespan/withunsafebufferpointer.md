@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Call a closure with a pointer to the viewed contiguous storage.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,18 @@
 ```swift
 func withUnsafeBufferPointer<E, Result>(_ body: (UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
+
+#### Return Value
+
+The return value of the `body` closure parameter.
+
+#### Discussion
+
+The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeBufferPointer(_:)`. Do not store or return the pointer for later use.
+
+## Parameters
+
+- `body`: A closure with an `UnsafeBufferPointer` parameter that points to the viewed contiguous storage. If `body` has a return value, that value is also used as the return value for the `withUnsafeBufferPointer(_:)` method. The closure’s parameter is valid only for the duration of its execution.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Consume the output span (relinquishing its control over the buffer it is addressing), and return the number of initialized bytes in it.
+Consume the output span and return the number of initialized bytes.
 
 **Availability**:
 - iOS 12.2+

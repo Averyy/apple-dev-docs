@@ -37,6 +37,11 @@ An app extension calling this method needs to have the [`Digital Credentials API
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
+> **Note**: An [`CredentialSession.ErrorCode`](credentialsession/errorcode.md). The most common errors are: - [`CredentialSession.ErrorCode.credentialDoesNotExist`](credentialsession/errorcode/credentialdoesnotexist.md): The specified credential doesn’t exist or the caller doesn’t have access to it.
+- [`CredentialSession.ErrorCode.instanceDoesNotExist`](credentialsession/errorcode/instancedoesnotexist.md): The specified instance identifier doesn’t exist in the target credential.
+- [`CredentialSession.ErrorCode.userCanceledAuthorization`](credentialsession/errorcode/usercanceledauthorization.md): The user dismissed the authorization sheet.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable. The session transitions to [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md).
+
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state with.

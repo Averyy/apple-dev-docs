@@ -41,8 +41,13 @@ Always check [`availableSliceAppCategories`](ctslicingmanager/availablesliceappc
 - [var description: String](ctslicingmanager/appcategory/description.md)
   A string representation of the application category.
 ### Enumeration Cases
-- [CTSlicingManager.AppCategory.browsers](ctslicingmanager/appcategory/browsers.md)
 - [CTSlicingManager.AppCategory.missionCritical](ctslicingmanager/appcategory/missioncritical.md)
+  An application category for mission-critical applications requiring guaranteed reliability.
+- [CTSlicingManager.AppCategory.webBrowser](ctslicingmanager/appcategory/webbrowser.md)
+  An application category for web browsing traffic.
+### Type Properties
+- [static var allCases: [CTSlicingManager.AppCategory]](ctslicingmanager/appcategory/allcases.md)
+  All application categories supported at the current OS version.
 
 ## Relationships
 

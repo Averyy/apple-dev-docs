@@ -8,7 +8,7 @@ Requests access to the specified share URLs, and returns the results to an await
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst 15.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-The range of initialized positions for this `OutputSpan`.
+The range of initialized indices for this `OutputSpan`.
 
 **Availability**:
 - iOS 12.2+

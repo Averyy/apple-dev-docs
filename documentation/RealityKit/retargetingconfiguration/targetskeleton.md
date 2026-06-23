@@ -16,7 +16,6 @@ The skeleton the retargeting animates.
 ## Declaration
 
 ```swift
-@MainActor
 var targetSkeleton: SkeletonResource { get }
 ```
 

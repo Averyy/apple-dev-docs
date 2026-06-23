@@ -255,6 +255,7 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 - [TextEditor](texteditor.md)
 - [TextField](textfield.md)
 - [TextFieldLink](textfieldlink.md)
+- [TextInputBorderShape](textinputbordershape.md)
 - [TimelineView](timelineview.md)
 - [Toggle](toggle.md)
 - [ToggleStyleConfiguration.Label](togglestyleconfiguration/label-swift.struct.md)

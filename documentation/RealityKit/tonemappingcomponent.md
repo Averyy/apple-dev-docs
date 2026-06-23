@@ -47,8 +47,6 @@ struct ToneMappingComponent
   The `BloomComponent` adds a luminous glow effect around bright objects in the scene by extracting and blurring the brightest parts of the image, then combining them back with the original rendering. If scope is set to `unbounded` Bloom will be computed on the entire screen. If scope is set to `hierarchical` multiple Bloom Components can be used to opt in only the regions around certain objects for blooming.
 - [struct BloomOptionsComponent](bloomoptionscomponent.md)
   A component that sets the properties for the bloom post-processing effects.
-- [struct BloomSettingsComponent](bloomsettingscomponent.md)
-  A component that sets the properties for the bloom post-processing effects.
 
 
 ---

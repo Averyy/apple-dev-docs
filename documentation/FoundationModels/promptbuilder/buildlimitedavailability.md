@@ -16,6 +16,7 @@ Creates a builder with a limited availability prompt.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ prompt: some PromptRepresentable) -> Prompt
 ```
 

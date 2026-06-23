@@ -152,6 +152,7 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [CVAttachmentValueRepresentable](../CoreVideo/CVAttachmentValueRepresentable.md)
 - [CVarArg](cvararg.md)
 - [ConvertibleFromGeneratedContent](../FoundationModels/ConvertibleFromGeneratedContent.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [ConvertibleToGeneratedContent](../FoundationModels/ConvertibleToGeneratedContent.md)
 - [Copyable](copyable.md)
 - [CustomReflectable](customreflectable.md)

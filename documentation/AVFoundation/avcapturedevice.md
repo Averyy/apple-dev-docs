@@ -232,6 +232,9 @@ A capture device provides several configuration options. Before attempting to co
   Whether the device’s video frame rate (expressed as a duration) is currently locked.
 - [var minSupportedLockedVideoFrameDuration: CMTime](avcapturedevice/minsupportedlockedvideoframeduration.md)
   The maximum frame rate (expressed as a minimum duration) that can be set on an input associated with this device.
+### Instance Properties
+- [var isAdjustingSignalCompensationDelayWhileRunningSupported: Bool](avcapturedevice/isadjustingsignalcompensationdelaywhilerunningsupported.md)
+  Whether adjusting the signal compensation delay property of an external sync device is supported while the session is running.
 ### Type Properties
 - [class var isEdgeLightActive: Bool](avcapturedevice/isedgelightactive.md)
   A class property indicating whether the edge light UI is actively being shown on a screen.

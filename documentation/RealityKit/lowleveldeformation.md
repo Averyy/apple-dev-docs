@@ -43,21 +43,23 @@ final class LowLevelDeformation
   The skinning data accessors for this deformation.
 - [LowLevelDeformation.Skinning](lowleveldeformation/skinning-swift.struct.md)
   An accessor for the skinning buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
-- [var blending: LowLevelDeformation.Blending](lowleveldeformation/blending-swift.property.md)
-  The blend-shape data accessors for this deformation.
-- [LowLevelDeformation.Blending](lowleveldeformation/blending-swift.struct.md)
-  An accessor for the blend-shape buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
-- [var renormalizing: LowLevelDeformation.Renormalizing](lowleveldeformation/renormalizing-swift.property.md)
-  The renormalization data accessors for this deformation.
-- [LowLevelDeformation.Renormalizing](lowleveldeformation/renormalizing-swift.struct.md)
-  An accessor for the renormalization buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
 ### Encoding deformation work
-- [func encode(into: any MTLComputeCommandEncoder) throws(LowLevelDeformation.Error)](lowleveldeformation/encode(into:).md)
+- [func encode(into: any MTLComputeCommandEncoder) throws](lowleveldeformation/encode(into:).md)
   Encodes the configured deformation passes into the given command encoder.
 - [LowLevelDeformation.Pipeline](lowleveldeformation/pipeline.md)
   A compiled compute pipeline for a specific combination of mesh layouts and deformer stages.
 - [LowLevelDeformation.Error](lowleveldeformation/error.md)
   The error type thrown by every throwing method and initializer.
+### Structures
+- [LowLevelDeformation.BlendShape](lowleveldeformation/blendshape-swift.struct.md)
+  An accessor for the blend-shape buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
+- [LowLevelDeformation.Renormalization](lowleveldeformation/renormalization-swift.struct.md)
+  An accessor for the renormalization buffers of a [`LowLevelDeformation`](lowleveldeformation.md).
+### Instance Properties
+- [var blendShape: LowLevelDeformation.BlendShape](lowleveldeformation/blendshape-swift.property.md)
+  The blend-shape data accessors for this deformation.
+- [var renormalization: LowLevelDeformation.Renormalization](lowleveldeformation/renormalization-swift.property.md)
+  The renormalization data accessors for this deformation.
 
 ## See Also
 

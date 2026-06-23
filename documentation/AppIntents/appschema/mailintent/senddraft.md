@@ -10,9 +10,7 @@ An intent schema that sends an email draft or schedules it to be sent later.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- tvOS 18.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

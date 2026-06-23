@@ -21,7 +21,7 @@ Set up your implementation to release any resources allocated for the volume ins
 
 Avoid performing any I/O in this method. Prior to calling this method, FSKit has already issued a sync call to perform any cleanup-related I/O.
 
-FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](fsvolume/operations/unmount(replyhandler:).md) prior to the deactivate callback.
+FSKit unmounts any mounted volume with a call to `unmount()` prior to the deactivate callback.
 
 ## Parameters
 

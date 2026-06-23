@@ -13,11 +13,17 @@ Read images from video, export to alternative formats, and perform sample-level 
   An object that exports assets in a format that you specify using an export preset.
 ### Planned export
 - [class AVAssetTrackPlan](avassettrackplan.md)
+  AVAssetTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
 - [class AVAssetVideoTrackPlan](avassetvideotrackplan.md)
+  AVAssetVideoTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
 - [class AVPlannedSegmentConfiguration](avplannedsegmentconfiguration.md)
+  AVPlannedSegmentConfiguration describes the requirements for a planned segment in an incremental writing session executed by the AVAssetWritingPlanner. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 - [class AVPlannedVideoSegmentConfiguration](avplannedvideosegmentconfiguration.md)
+  AVPlannedVideoSegmentConfiguration describes the requirements for a planned video segment in an incremental writing session executed by the AVAssetWritingPlanner.
 - [class AVPlannedSegmentWritingRequest](avplannedsegmentwritingrequest.md)
+  AVPlannedSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental track segment.
 - [class AVPlannedVideoSegmentWritingRequest](avplannedvideosegmentwritingrequest.md)
+  AVPlannedVideoSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental video track segment with compression.
 ### Image generation
 - [Creating images from a video asset](creating-images-from-a-video-asset.md)
   Display images for specific times within the media timeline by generating images from a video’s frames.

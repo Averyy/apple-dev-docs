@@ -24,7 +24,7 @@ final func deleteEntry(for modelURL: URL, options: SpecializationOptions) throws
 
 #### Discussion
 
-> **Note**: If no [`AIModel`](aimodel.md) instance currently references the entry, deletion happens immediately. Otherwise, the system deletes the entry when the last [`AIModel`](aimodel.md) releases it.
+> **Note**: If no [`AIModel`](aimodel.md) instance currently references the entry, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](aimodel.md) releases it.
 
 ## Parameters
 

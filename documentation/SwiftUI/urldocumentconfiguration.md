@@ -46,6 +46,7 @@ final class URLDocumentConfiguration
 
 ## See Also
 
+- [protocol Document](document.md)
 - [protocol ReadableDocument](readabledocument.md)
   A type that you use to read documents from file.
 - [protocol WritableDocument](writabledocument.md)

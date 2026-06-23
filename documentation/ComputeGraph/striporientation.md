@@ -51,7 +51,6 @@ enum StripOrientation
 
 ## See Also
 
-- [enum Topology](topology.md)
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
 - [struct Viewpoint](viewpoint-swift.struct.md)

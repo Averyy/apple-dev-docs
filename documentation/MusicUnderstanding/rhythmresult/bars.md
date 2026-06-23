@@ -1,6 +1,6 @@
 # bars
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The start time of each bar. A bar is a musical unit typically containing several beats.

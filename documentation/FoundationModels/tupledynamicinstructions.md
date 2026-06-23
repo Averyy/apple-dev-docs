@@ -39,8 +39,6 @@ struct TupleDynamicInstructions<each Content> where repeat each Content : Dynami
   A dynamic instructions type that conditionally selects between two conditions.
 - [struct AnyDynamicInstructions](anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
-- [struct AnyTool](anytool.md)
-  A tool that the framework invokes in dynamic instructions.
 
 
 ---

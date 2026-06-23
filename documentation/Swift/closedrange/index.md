@@ -40,7 +40,6 @@ Valid indices consist of the position of every element and a “past the end” 
 ### Conforms To
 - [Comparable](comparable.md)
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

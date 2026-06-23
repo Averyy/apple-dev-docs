@@ -32,7 +32,6 @@ Use this enumeration with [`init(url:mode:)`](avsystemroutesession-gp78/init(url
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -43,8 +42,6 @@ Use this enumeration with [`init(url:mode:)`](avsystemroutesession-gp78/init(url
   An active media route to a remote device that manages connection and communication for media playback and data exchange.
 - [class AVSystemRouteSession](avsystemroutesession-gp78.md)
   An object that manages a single media playback session on a remote device.
-- [enum AVSystemRouteLaunchMode](avsystemroutelaunchmode.md)
-  The mode that determines how media playback launches on a remote device.
 
 
 ---

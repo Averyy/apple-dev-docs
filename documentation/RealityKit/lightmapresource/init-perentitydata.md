@@ -14,7 +14,6 @@
 ## Declaration
 
 ```swift
-@MainActor
 convenience init(perEntityData: [LightmapResource.EntityLightmapDescriptor]) throws
 ```
 

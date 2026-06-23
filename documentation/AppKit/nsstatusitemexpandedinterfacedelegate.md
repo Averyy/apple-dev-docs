@@ -23,6 +23,10 @@ protocol NSStatusItemExpandedInterfaceDelegate : NSObjectProtocol
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [class NSStatusItemExpandedInterfaceSession](nsstatusitemexpandedinterfacesession.md)
+
 
 ---
 

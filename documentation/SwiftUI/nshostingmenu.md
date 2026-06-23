@@ -77,6 +77,8 @@ List(directoryContents, selection: $selection) { entry in
 ### Instance Properties
 - [var rootView: Content](nshostingmenu/rootview.md)
   The root view of the SwiftUI view hierarchy managed by this menu.
+### Instance Methods
+- [func copy(with: NSZone?) -> Any](nshostingmenu/copy(with:).md)
 
 ## Relationships
 

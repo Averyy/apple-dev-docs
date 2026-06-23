@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: class
 
-Result class for [`activate(options:replyHandler:)`](fsvolume/handler/activate(options:replyhandler:).md)
+The result of an activate call.
 
 **Availability**:
 - macOS 27.0+ (Beta)
@@ -14,11 +14,15 @@ Result class for [`activate(options:replyHandler:)`](fsvolume/handler/activate(o
 class FSActivateResult
 ```
 
+#### Overview
+
+Use this type in your implementation of [`activate(options:replyHandler:)`](fsvolume/handler/activate(options:replyhandler:).md).
+
 ## Topics
 
 ### Creating an activate result
 - [init?(rootItem: FSItem)](fsactivateresult/init(rootitem:).md)
-  Creates a result instance with all required properties populated.
+  Creates an activate result instance.
 - [class FSItem](fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 

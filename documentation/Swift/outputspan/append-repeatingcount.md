@@ -20,6 +20,11 @@ Repeatedly append an element to this span.
 mutating func append(repeating repeatedValue: Element, count: Int)
 ```
 
+## Parameters
+
+- `repeatedValue`: The element to append repeatedly.
+- `count`: The number of times to append `repeatedValue`. `count` must not exceed `freeCapacity`.
+
 
 ---
 

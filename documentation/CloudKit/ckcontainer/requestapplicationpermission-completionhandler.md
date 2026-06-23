@@ -26,7 +26,7 @@ To implement social features in your app, it’s possible to correlate a user re
 
 The first time you request a permission on any of the user’s devices, the user receives a prompt to grant or deny the request. After the user grants or denies a permission, subsequent requests for the same permission (on the same or separate devices), don’t prompt the user again.
 
-This method runs asynchronously, and the system calls your completion handler on an arbitary queue and provides the outcome.
+This method runs asynchronously, and the system calls your completion handler on an arbitrary queue and provides the outcome.
 
 ## Parameters
 

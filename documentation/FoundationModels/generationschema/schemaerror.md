@@ -38,6 +38,8 @@ enum SchemaError
 ### Getting the recovery suggestion
 - [var recoverySuggestion: String?](generationschema/schemaerror/recoverysuggestion.md)
   A suggestion that indicates how to handle the error.
+### Default Implementations
+- [LocalizedError Implementations](generationschema/schemaerror/localizederror-implementations.md)
 
 ## Relationships
 

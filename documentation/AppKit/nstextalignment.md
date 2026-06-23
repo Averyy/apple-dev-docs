@@ -28,7 +28,6 @@ enum NSTextAlignment
 - [NSTextAlignment.natural](nstextalignment/natural.md)
   Text uses the default alignment for the current localization of the app.
 ### Initializers
-- [init(CTTextAlignment)](nstextalignment/init(_:).md)
 - [init?(rawValue: Int)](nstextalignment/init(rawvalue:).md)
 
 ## Relationships

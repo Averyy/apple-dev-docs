@@ -47,7 +47,9 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [let count: Int](unsafemutablebufferpointer/count.md)
   The number of elements in the buffer.
 - [var mutableSpan: MutableSpan<Element>](unsafemutablebufferpointer/mutablespan.md)
+  A mutable span over the elements of this buffer.
 - [var span: Span<Element>](unsafemutablebufferpointer/span.md)
+  A span over the elements of this buffer.
 ### Instance Methods
 - [func assign(repeating: Element)](unsafemutablebufferpointer/assign(repeating:).md)
 - [func deallocate()](unsafemutablebufferpointer/deallocate.md)
@@ -118,6 +120,7 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Collection](collection.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Escapable](escapable.md)

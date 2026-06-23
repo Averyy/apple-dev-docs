@@ -17,7 +17,7 @@ Invokes the given closure with a mutable buffer pointer covering the raw bytes o
 ## Declaration
 
 ```swift
-func withUnsafeMutableBytes<T, E, Result>(of value: inout T, _ body: (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, Result : ~Copyable
+func withUnsafeMutableBytes<T, E, Result>(of value: inout T, _ body: (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, T : ~Escapable, Result : ~Copyable
 ```
 
 #### Return Value
@@ -41,8 +41,6 @@ The buffer pointer argument to the `body` closure provides a collection interfac
   Invokes the given closure with a pointer to the given argument.
 - [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5zxtl.md)
-  Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 

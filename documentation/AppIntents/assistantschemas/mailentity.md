@@ -31,7 +31,6 @@ protocol MailEntity : AssistantSchemas.Model
   The app entity describes an email mailbox.
 - [var message: some AssistantSchemas.Entity](assistantschemas/mailentity/message.md)
   The app entity describes an email message.
-- [var thread: some AssistantSchemas.Entity](assistantschemas/mailentity/thread.md)
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
+AVAssetVideoTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,9 +21,7 @@ class AVAssetVideoTrackPlan
 
 #### Overview
 
-AVAssetVideoTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
-
-Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method to add an AVAssetTrackPlan to the planner’s plan to include it in the incremental writing session. Use this class instead of the base class AVAssetTrackPlan if you are setting up AVAssetWriter with video compression. This configuration hints to the planner that it must coordinate segment boundaries transitions between segments.  This is abstracted from the client via using either the createResumableAVAssetWriterInputWithMediaType or createResumableCompressionSessionWithAllocator helper functions within the AVPlannedVideoSegmentWritingRequest.
+Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method to add an AVAssetTrackPlan to the planner’s plan to include it in the incremental writing session. Use this class instead of the base class AVAssetTrackPlan if you are setting up AVAssetWriter with video compression. This configuration hints to the planner that it must coordinate segment boundaries transitions between segments. This is abstracted from the client via using either the resumableAssetWriterInputWithMediaType or createResumableCompressionSessionWithAllocator helper functions within the AVPlannedVideoSegmentWritingRequest.
 
 ## Topics
 
@@ -30,6 +30,7 @@ Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method t
   Creates an instance of AVAssetVideoTrackPlan.
 ### Inspecting the video track plan
 - [var videoCodecType: AVVideoCodecType](avassetvideotrackplan/videocodectype.md)
+  Video codec type of this track
 
 ## Relationships
 
@@ -46,10 +47,15 @@ Call AVAssetWritingPlanner’s “planTrack:withSegmentsGeneratedBy:” method t
 ## See Also
 
 - [class AVAssetTrackPlan](avassettrackplan.md)
+  AVAssetTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
 - [class AVPlannedSegmentConfiguration](avplannedsegmentconfiguration.md)
+  AVPlannedSegmentConfiguration describes the requirements for a planned segment in an incremental writing session executed by the AVAssetWritingPlanner. Subclasses of this type that are used from Swift must fulfill the requirements of a Sendable type.
 - [class AVPlannedVideoSegmentConfiguration](avplannedvideosegmentconfiguration.md)
+  AVPlannedVideoSegmentConfiguration describes the requirements for a planned video segment in an incremental writing session executed by the AVAssetWritingPlanner.
 - [class AVPlannedSegmentWritingRequest](avplannedsegmentwritingrequest.md)
+  AVPlannedSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental track segment.
 - [class AVPlannedVideoSegmentWritingRequest](avplannedvideosegmentwritingrequest.md)
+  AVPlannedVideoSegmentWritingRequest encompasses a request from the AVAssetWritingPlanner to the client code to write one incremental video track segment with compression.
 
 
 ---

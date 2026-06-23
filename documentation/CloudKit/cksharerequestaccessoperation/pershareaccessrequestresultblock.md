@@ -8,7 +8,7 @@ The closure to execute when CloudKit processes a share access request.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
+- Mac Catalyst ?+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

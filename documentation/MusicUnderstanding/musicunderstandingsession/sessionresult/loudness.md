@@ -1,6 +1,6 @@
 # loudness
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated loudness results, providing information about volume levels throughout the audio.

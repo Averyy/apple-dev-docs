@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+An array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,14 +19,12 @@
 var segmentConfigurations: [AVPlannedSegmentConfiguration] { get }
 ```
 
-#### Discussion
-
-An array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
-
 ## See Also
 
 - [var mediaType: AVMediaType](avassettrackplan/mediatype.md)
+  The media type of this track.
 - [var assemblyTrackID: CMPersistentTrackID](avassettrackplan/assemblytrackid.md)
+  This is the track ID of this track when it is included in the assemblyComposition the planner passes to the completion handler to assemble all planned segments of all tracks into a single AVComposition.
 
 
 ---

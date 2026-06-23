@@ -1,6 +1,6 @@
 # MusicUnderstandingSession.TimedValue
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A structure that pairs a value with a time.

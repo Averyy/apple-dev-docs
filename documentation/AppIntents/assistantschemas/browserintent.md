@@ -35,12 +35,10 @@ protocol BrowserIntent : AssistantSchemas.Model
   The app intent conforms to the schema for closing one or more browser windows.
 - [var createTab: some AssistantSchemas.Intent](assistantschemas/browserintent/createtab.md)
   The app intent conforms to the schema for creating a browser tab.
-- [var createTabGroup: some AssistantSchemas.Intent](assistantschemas/browserintent/createtabgroup.md)
 - [var createWindow: some AssistantSchemas.Intent](assistantschemas/browserintent/createwindow.md)
   The app intent conforms to the schema for creating a new browser window.
 - [var deleteBookmarks: some AssistantSchemas.Intent](assistantschemas/browserintent/deletebookmarks.md)
   The app intent conforms to the schema for deleting a bookmark.
-- [var deleteTabGroups: some AssistantSchemas.Intent](assistantschemas/browserintent/deletetabgroups.md)
 - [var findOnPage: some AssistantSchemas.Intent](assistantschemas/browserintent/findonpage.md)
   The app intent conforms to the schema for finding text on a web page.
 - [var openBookmark: some AssistantSchemas.Intent](assistantschemas/browserintent/openbookmark.md)

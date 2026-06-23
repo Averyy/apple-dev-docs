@@ -30,6 +30,8 @@ Returns `nil` if the method can’t map `textElement` to an [`NSAttributedString
 
 - [func textElement(for: NSAttributedString) -> NSTextElement?](nstextcontentstorage/textelement(for:).md)
   Returns the text element corresponding to object’s attributed string.
+- [var includesTextListMarkers: Bool](nstextcontentstorage/includestextlistmarkers.md)
+  When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
 
 
 ---

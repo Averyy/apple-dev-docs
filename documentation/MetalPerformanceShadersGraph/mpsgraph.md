@@ -277,9 +277,9 @@ An MPSGraph is a symbolic representation of operations to be utilized to execute
 - [func depthwiseConvolution3DWeightsGradient(MPSGraphTensor, source: MPSGraphTensor, outputShape: [NSNumber], descriptor: MPSGraphDepthwiseConvolution3DOpDescriptor, name: String?) -> MPSGraphTensor](mpsgraph/depthwiseconvolution3dweightsgradient(_:source:outputshape:descriptor:name:).md)
   Creates a 3D depthwise convolution gradient for weights operation and returns the result tensor.
 - [func dequantize(MPSGraphTensor, LUTTensor: MPSGraphTensor, axis: Int, name: String?) -> MPSGraphTensor](mpsgraph/dequantize(_:luttensor:axis:name:).md)
-  Creates a vector lookup-table based quantization operation and returns the result tensor.
+  Creates a vector lookup-table based dequantize operation and returns the result tensor.
 - [func dequantize(MPSGraphTensor, LUTTensor: MPSGraphTensor, name: String?) -> MPSGraphTensor](mpsgraph/dequantize(_:luttensor:name:).md)
-  Creates a lookup-table based quantization operation and returns the result tensor.
+  Creates a lookup-table based dequantize operation and returns the result tensor.
 - [func dequantize(MPSGraphTensor, scale: Double, zeroPoint: Double, dataType: MPSDataType, name: String?) -> MPSGraphTensor](mpsgraph/dequantize(_:scale:zeropoint:datatype:name:).md)
   Creates Dequantize operation and returns the result tensor.
 - [func dequantize(MPSGraphTensor, scaleTensor: MPSGraphTensor, dataType: MPSDataType, name: String?) -> MPSGraphTensor](mpsgraph/dequantize(_:scaletensor:datatype:name:).md)

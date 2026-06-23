@@ -27,8 +27,11 @@ protocol NSTextViewportLayoutControllerDelegate : NSObjectProtocol
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
 ### Instance Methods
 - [func textViewportLayoutController(NSTextViewportLayoutController, cacheRenderingSurface: any NSTextViewportRenderingSurface, for: any NSTextViewportRenderingSurfaceKey)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:cacherenderingsurface:for:).md)
+  Asks the delegate to cache a rendering surface for later retrieval.
 - [func textViewportLayoutController(NSTextViewportLayoutController, retrieveCachedRenderingSurfaceFor: any NSTextViewportRenderingSurfaceKey) -> any NSTextViewportRenderingSurface](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontroller(_:retrievecachedrenderingsurfacefor:).md)
+  Asks the delegate to return a previously cached rendering surface.
 - [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+  Triggers relayout of the view.
 
 ## Relationships
 

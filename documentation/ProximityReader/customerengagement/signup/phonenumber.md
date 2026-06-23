@@ -16,17 +16,6 @@ The customer’s phone number.
 let phoneNumber: CNPhoneNumber?
 ```
 
-## See Also
-
-- [let emailAddress: String?](customerengagement/signup/emailaddress.md)
-  The customer’s email address
-- [let emailOptInSelection: Bool](customerengagement/signup/emailoptinselection.md)
-  A Boolean value that indicates if the customer opted-in to email marketing.
-- [let name: PersonNameComponents?](customerengagement/signup/name.md)
-  The customer’s full name.
-- [let smsOptInSelection: Bool](customerengagement/signup/smsoptinselection.md)
-  A Boolean value that indicates if the customer opted-in to SMS marketing.
-
 
 ---
 

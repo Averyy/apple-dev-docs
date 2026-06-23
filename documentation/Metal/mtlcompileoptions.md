@@ -64,6 +64,7 @@ You can compile a library with your compile options instance by calling an [`MTL
 ### Instance Properties
 - [var allowReferencingUndefinedSymbols: Bool](mtlcompileoptions/allowreferencingundefinedsymbols.md)
 - [var compileSymbolVisibility: MTLCompileSymbolVisibility](mtlcompileoptions/compilesymbolvisibility.md)
+- [var floatingPointConversionRoundingMode: MTLFloatingPointConversionRoundingMode](mtlcompileoptions/floatingpointconversionroundingmode.md)
 - [var maxTotalThreadsPerThreadgroup: Int](mtlcompileoptions/maxtotalthreadsperthreadgroup.md)
 - [var requiredThreadsPerThreadgroup: MTLSize](mtlcompileoptions/requiredthreadsperthreadgroup.md)
 

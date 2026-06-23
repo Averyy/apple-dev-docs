@@ -16,7 +16,7 @@ struct FSDirectoryCookie
 
 #### Overview
 
-Your implementation of `FSVolume/Handler/enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)` defines the semantics of this value; it’s opaque to FSKit.
+Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
 
 ## Topics
 

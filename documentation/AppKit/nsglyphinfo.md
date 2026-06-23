@@ -25,6 +25,10 @@ Glyph attributes are integer values that the layout manager uses to denote speci
 ### Creating a glyph info object
 - [init?(cgGlyph: CGGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(cgglyph:for:basestring:).md)
   Creates a glyph info object from the specified glyph identifier and font informaton.
+- [init?(CGGlyph: CGGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(cgglyph:forfont:basestring:).md)
+- [init?(coder: NSCoder)](nsglyphinfo/init(coder:).md)
+- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(glyph:for:basestring:).md)
+- [init?(glyphName: String, for: NSFont, baseString: String)](nsglyphinfo/init(glyphname:for:basestring:).md)
 ### Getting information about a glyph info object
 - [var baseString: String](nsglyphinfo/basestring.md)
   The string containing the character represented by the glyph.
@@ -45,11 +49,6 @@ Glyph attributes are integer values that the layout manager uses to denote speci
   The receiver’s glyph name.
 - [enum NSCharacterCollection](nscharactercollection.md)
   Values that map character identifiers to glyphs.
-### Initializers
-- [init?(CGGlyph: CGGlyph, forFont: NSFont, baseString: String)](nsglyphinfo/init(cgglyph:forfont:basestring:).md)
-- [init?(coder: NSCoder)](nsglyphinfo/init(coder:).md)
-- [init?(glyph: NSGlyph, for: NSFont, baseString: String)](nsglyphinfo/init(glyph:for:basestring:).md)
-- [init?(glyphName: String, for: NSFont, baseString: String)](nsglyphinfo/init(glyphname:for:basestring:).md)
 ### Default Implementations
 - [NSGlyphInfo Implementations](nsglyphinfo/nsglyphinfo-implementations.md)
 

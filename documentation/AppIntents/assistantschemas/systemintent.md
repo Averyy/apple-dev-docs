@@ -23,7 +23,6 @@ protocol SystemIntent : AssistantSchemas.Model
 ## Topics
 
 ### Instance Properties
-- [var open: some AssistantSchemas.Intent](assistantschemas/systemintent/open.md)
 - [var search: some AssistantSchemas.Intent](assistantschemas/systemintent/search.md)
 
 ## Relationships

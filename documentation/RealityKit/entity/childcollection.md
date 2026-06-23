@@ -54,7 +54,7 @@ A collection of child entities.
 - [var startIndex: Int](entity/childcollection/startindex.md)
   The position of the first element in a nonempty collection. (See `Collection.startIndex`.)
 - [var endIndex: Int](entity/childcollection/endindex.md)
-  The collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
+  TThe collection’s “past the end” position—that is, the position one greater than the last valid subscript argument. (See `Collection.endIndex`.)
 - [func index(after: Int) -> Int](entity/childcollection/index(after:).md)
   Returns the position immediately after the given index. (See `Collection.index`.)
 ### Instance Methods

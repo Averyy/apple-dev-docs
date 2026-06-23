@@ -29,9 +29,6 @@ Each section contains a title, a collection of content items, and an optional it
   The items displayed in this section, or @c nil if the section does not contain items.
 - [var title: String?](cpmappanelsection/title.md)
   The title of the section.
-### Instance Methods
-- [func updateItems([CPMapPanelItem])](cpmappanelsection/updateitems(_:).md)
-  Update the items in this section. If this section is currently visible in a panel, the panel will refresh to show the new items.
 
 ## Relationships
 

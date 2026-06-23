@@ -11,7 +11,6 @@ The JSON file exists but contains no data.
 - Mac Catalyst ?+
 - macOS ?+
 - visionOS ?+
-- watchOS ?+
 
 ## Declaration
 

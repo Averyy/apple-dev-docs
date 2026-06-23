@@ -34,6 +34,7 @@ protocol SceneAccessoryContent
 ### Conforming Types
 - [EmptyView](emptyview.md)
 - [ExternalNonInteractiveAccessory](externalnoninteractiveaccessory.md)
+- [ForEach](foreach.md)
 - [Group](group.md)
 - [TupleContent](tuplecontent.md)
 

@@ -30,6 +30,11 @@ protocol IntentValueQuery : PersistentlyIdentifiable, _SupportsAppDependencies, 
 - [init()](intentvaluequery/init.md)
 ### Instance Methods
 - [func values(for: Self.Input) async throws -> Self.Result](intentvaluequery/values(for:).md)
+### Type Aliases
+- [IntentValueQuery.ExecutionTargets](intentvaluequery/executiontargets.md)
+### Type Properties
+- [static var allowedExecutionTargets: IntentExecutionTargets](intentvaluequery/allowedexecutiontargets.md)
+  A set of targets that can run this query.
 
 ## Relationships
 

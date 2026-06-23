@@ -32,7 +32,7 @@ When present, the tuple contains the following named elements:
 - **`changeToken`**: The change token that corresponds to the fetch results’ most recent change.
 - **`moreComing`**: A Boolean value that indicates whether the server has additional changes for you to fetch.
 
-This method fetches record changes in the specfied record zone, such as those that occur during record creation, modification, and deletion.
+This method fetches record changes in the specified record zone, such as those that occur during record creation, modification, and deletion.
 
 Along with the fetched changes, CloudKit supplies a *change token*, which is an opaque token that denotes a specific point in the record zone’s history. Store this token and provide it the next time you execute this method. Change tokens conform to [`NSSecureCoding`](https://developer.apple.com/documentation/Foundation/NSSecureCoding) and are safe to cache on-disk. Don’t infer any behavior or order from a token’s contents.
 

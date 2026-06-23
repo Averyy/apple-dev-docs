@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+The [`NSTextLayoutManager`](nstextlayoutmanager.md) owning the text container.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -15,6 +17,10 @@
 ```swift
 weak var textLayoutManager: NSTextLayoutManager? { get }
 ```
+
+#### Discussion
+
+When non-nil, the legacy `layoutManager` should be `nil`.
 
 ## See Also
 

@@ -30,6 +30,10 @@ The caller needs to invoke [`invalidate()`](credentialtransaction/configuration/
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
+> **Note**: An [`CredentialSession.ErrorCode`](credentialsession/errorcode.md). The most common errors are: - [`CredentialSession.ErrorCode.invalidView`](credentialsession/errorcode/invalidview.md): The transaction has no associated scene.
+- [`CredentialSession.ErrorCode.userCanceledAuthorization`](credentialsession/errorcode/usercanceledauthorization.md): The user dismissed the authorization sheet.
+- [`CredentialSession.ErrorCode.resourceUnavailable`](credentialsession/errorcode/resourceunavailable.md): The system resource is unavailable.
+
 ## Parameters
 
 - `credential`: The credential to activate and transition into card emulation state.

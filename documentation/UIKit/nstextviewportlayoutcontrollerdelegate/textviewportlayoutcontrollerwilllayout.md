@@ -29,6 +29,7 @@ optional func textViewportLayoutControllerWillLayout(_ textViewportLayoutControl
 - [func textViewportLayoutControllerDidLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerdidlayout(_:).md)
   The method the framework calls when the text viewport layout controller finishes its layout process.
 - [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+  Triggers relayout of the view.
 - [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](nstextviewportlayoutcontrollerdelegate/viewportbounds(for:).md)
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
 

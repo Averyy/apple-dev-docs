@@ -41,7 +41,6 @@ protocol PhotosIntent : AssistantSchemas.Model
   The app intent conforms to the schema for deleting an asset.
 - [var duplicateAssets: some AssistantSchemas.Intent](assistantschemas/photosintent/duplicateassets.md)
   The app intent conforms to the schema for duplicating an asset.
-- [var editAsset: some AssistantSchemas.Intent](assistantschemas/photosintent/editasset.md)
 - [var openAlbum: some AssistantSchemas.Intent](assistantschemas/photosintent/openalbum.md)
   The app intent conforms to the schema for opening an album.
 - [var openAsset: some AssistantSchemas.Intent](assistantschemas/photosintent/openasset.md)

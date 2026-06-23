@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Values describing the usage of insight evaluation.
@@ -9,7 +9,6 @@ Values describing the usage of insight evaluation.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

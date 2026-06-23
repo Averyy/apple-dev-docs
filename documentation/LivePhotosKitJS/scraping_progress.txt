@@ -1,4 +1,4 @@
 Completed scraping LivePhotosKit JS!
-Total pages scraped: 0
-Pages skipped (unchanged): 58
+Total pages scraped: 55
+Pages skipped (unchanged): 3
 Pages failed: 0

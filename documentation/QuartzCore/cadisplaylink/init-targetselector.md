@@ -9,7 +9,6 @@ Creates a display link for a target that calls its selector.
 - iOS 3.1+
 - iPadOS 3.1+
 - Mac Catalyst 13.1+
-- macOS 14.0+
 - tvOS 9.0+
 - visionOS 1.0+
 

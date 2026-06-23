@@ -19,6 +19,13 @@ func dismissImmersiveEnvironment() async
 
 Dismisses the currently presented immersive environment.
 
+## See Also
+
+- [class WKImmersiveEnvironment](wkimmersiveenvironment.md)
+- [protocol WKImmersiveEnvironmentDelegate](wkimmersiveenvironmentdelegate.md)
+- [var allowsImmersiveEnvironments: Bool](wkwebviewconfiguration/allowsimmersiveenvironments.md)
+- [var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)?](wkwebview/immersiveenvironmentdelegate.md)
+
 
 ---
 

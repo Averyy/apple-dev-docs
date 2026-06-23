@@ -16,13 +16,6 @@ A screen indicating a payment failure.
 case paymentFailed
 ```
 
-## See Also
-
-- [CustomerEngagement.Status.paymentCompleted](customerengagement/status/paymentcompleted.md)
-  A screen indicating a payment is complete.
-- [CustomerEngagement.Status.ready](customerengagement/status/ready.md)
-  A screen indicating the session is ready for customer interaction.
-
 
 ---
 

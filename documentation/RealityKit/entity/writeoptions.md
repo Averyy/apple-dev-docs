@@ -6,12 +6,12 @@
 Options for writing an entity to a RealityKit file.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
+- iOS 26.0+
+- iPadOS 26.0+
+- Mac Catalyst 26.0+
+- macOS 26.0+
+- tvOS 26.0+
+- visionOS 26.0+
 
 ## Declaration
 
@@ -43,7 +43,6 @@ struct WriteOptions
 - [func write(to: URL, options: Entity.WriteOptions) async throws](entity/write(to:options:).md)
 - [static func write([Entity], to: URL, options: Entity.WriteOptions) async throws](entity/write(_:to:options:).md)
   Exports an array of entities as separate scenes within a single RealityKit file.
-- [Entity.WriteError](entity/writeerror.md)
 
 
 ---

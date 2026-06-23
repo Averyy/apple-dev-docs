@@ -35,7 +35,7 @@ FSKit unmounts any mounted volume with a call to [`unmount(replyHandler:)`](fsvo
 - [class FSItem](fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 - [class FSActivateResult](fsactivateresult.md)
-  Result class for [`activate(options:replyHandler:)`](fsvolume/handler/activate(options:replyhandler:).md)
+  The result of an activate call.
 - [struct FSDeactivateOptions](fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
 

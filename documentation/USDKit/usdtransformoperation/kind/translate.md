@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+Translation along X, Y, and Z axes.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

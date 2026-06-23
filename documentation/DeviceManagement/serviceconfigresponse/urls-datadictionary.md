@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Service URLs for the managed location. Each entry maps a URL name to its corresponding endpoint.
-
 ## Declaration
 
 ```swift

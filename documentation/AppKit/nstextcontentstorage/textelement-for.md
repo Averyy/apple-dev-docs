@@ -30,6 +30,8 @@ Returns `nil` when `attributedString` contains attributes not mappable to [`NSTe
 
 - [func attributedString(for: NSTextElement) -> NSAttributedString?](nstextcontentstorage/attributedstring(for:).md)
   Returns a new attributed string for the text element.
+- [var includesTextListMarkers: Bool](nstextcontentstorage/includestextlistmarkers.md)
+  When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
 
 
 ---

@@ -31,7 +31,7 @@ This is the preferred initializer for [`MediaOutputDevice`](mediaoutputdevice.md
 - `capabilities`: The set of media capabilities the device supports, such as real-time audio/video streaming, URL playback, or application launch.
 - `canGroupWithCurrentlyActivatedDevices`: Whether this device can be added to a group with other currently active devices via `MediaDeviceExtension/activateDevice(_:for:)`. Defaults to `true`.
 - `deviceType`: The type of device, which determines the icon shown in user interfaces. Defaults to `.tv`.
-- `volumeControl`: The type of volume control the device supports. Defaults to `.absolute`.
+- `volumeControl`: The type of volume control the device supports. Defaults to `.relative`.
 - `canMute`: Whether the device supports muting audio output. Defaults to `true`.
 - `networkEndpoints`: The network endpoints used to communicate with this device. Must contain at least one endpoint or the initializer returns `nil`.
 - `txtRecords`: TXT records containing device metadata discovered via network protocols. Defaults to an empty array.

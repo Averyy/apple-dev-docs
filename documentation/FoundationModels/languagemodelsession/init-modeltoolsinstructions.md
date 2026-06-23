@@ -11,6 +11,7 @@ Start a new session in blank slate state with instructions builder.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

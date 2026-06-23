@@ -31,6 +31,9 @@ A *continuation* is an opaque representation of program state. To create a conti
 
 ## Topics
 
+### Initializers
+- [init(consuming Continuation<T, E>)](unsafecontinuation/init(_:).md)
+  Convert a non-copyable continuation to an [`UnsafeContinuation`](unsafecontinuation.md).
 ### Instance Methods
 - [func resume()](unsafecontinuation/resume.md)
   Resume the task that’s awaiting the continuation by returning.

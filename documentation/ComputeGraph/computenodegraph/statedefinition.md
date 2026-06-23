@@ -28,6 +28,8 @@ State definitions are used by `ComputeNodeGraph/Node/Kind/loadState(definition:)
 
 ### Structures
 - [ComputeNodeGraph.StateDefinition.Options](computenodegraph/statedefinition/options-swift.struct.md)
+### Initializers
+- [init(scope: ComputeNodeGraph.Scope, options: ComputeNodeGraph.StateDefinition.Options, type: ComputeNodeGraph.StateType)](computenodegraph/statedefinition/init(scope:options:type:).md)
 ### Instance Properties
 - [var options: ComputeNodeGraph.StateDefinition.Options](computenodegraph/statedefinition/options-swift.property.md)
   Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefinition.Options`](computenodegraph/statedefinition/options-swift.struct.md).

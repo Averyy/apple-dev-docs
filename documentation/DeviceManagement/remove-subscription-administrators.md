@@ -34,10 +34,8 @@ Send a POST request to revoke administrator access from users for specific subsc
 
 ### Request
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
-  Request body for adding or removing subscription administrators.
 ### Response
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
-  Confirmation response returned after adding or removing subscription administrators.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata

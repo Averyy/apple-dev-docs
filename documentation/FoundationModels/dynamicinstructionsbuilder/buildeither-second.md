@@ -16,6 +16,7 @@ Creates a builder with the second component.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<TrueContent, FalseContent>(second content: FalseContent) -> ConditionalDynamicInstructions<TrueContent, FalseContent> where TrueContent : DynamicInstructions, FalseContent : DynamicInstructions
 ```
 
@@ -31,6 +32,8 @@ static func buildEither<TrueContent, FalseContent>(second content: FalseContent)
   Creates a builder with a list of tools expression.
 - [static func buildOptional<Content>(Content?) -> Content?](dynamicinstructionsbuilder/buildoptional(_:).md)
   Creates a builder with an optional component.
+- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](dynamicinstructionsbuilder/buildlimitedavailability(_:).md)
+  Creates a builder with limited availability dynamic instructions.
 
 
 ---

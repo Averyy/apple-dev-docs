@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
+Elements are rendered as instanced meshes.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

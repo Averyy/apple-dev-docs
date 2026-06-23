@@ -17,9 +17,9 @@ Agentic [`Coding intelligence`](https://developer.apple.com/documentation/Xcode/
 
 ![Screenshot of Xcode 27.](https://docs-assets.developer.apple.com/published/8626b81c01b9d410df9b8c80ddbeb324/xcode-hero%402x.png)
 
-- Xcode works closely with your AI agents of choice.  Read [`Giving external agents access to Xcode`](https://developer.apple.com/documentation/Xcode/giving-external-agents-access-to-xcode) to discover how to connect your AI agents to your Xcode project and workspace. Learn about [`Extending and customizing agents`](https://developer.apple.com/documentation/Xcode/extending-and-customizing-agents) to understand how Xcode 27 uses skills to supercharge your coding with agents.
+- Xcode works closely with your AI agents of choice.  Read [`Setting up coding intelligence`](https://developer.apple.com/documentation/Xcode/setting-up-coding-intelligence) to discover how to connect your AI agents to your Xcode project and workspace. Learn about [`Extending and customizing agents`](https://developer.apple.com/documentation/Xcode/extending-and-customizing-agents) to understand how Xcode 27 uses skills to supercharge your coding with agents.
 - Learn about [`Writing code with intelligence in Xcode`](https://developer.apple.com/documentation/Xcode/writing-code-with-intelligence-in-xcode) and [`Using coding intelligence in the source editor`](https://developer.apple.com/documentation/Xcode/using-coding-intelligence-in-the-source-editor) to explore new ideas, migrate to new API, and speed your development workflow.
-- Read  [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices) to learn how to setup your devices in the new [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub). Manage all your physical and simulated devices in one place.
+- Read [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices) and [`Managing your simulated and physical devices in Device Hub`](https://developer.apple.com/documentation/Xcode/managing-your-simulated-and-physical-devices-in-device-hub) to learn about the new [`Device Hub`](https://developer.apple.com/documentation/Xcode/device-hub).
 - Reach more people all over the world by having Xcode help you with [`Localizing your app using agents`](https://developer.apple.com/documentation/Xcode/localizing-your-app-using-agents). This improved localizing workflow is integrated directly into Xcode, bringing your apps to a wider market much faster and easier.
 
 ###### Performance and Analysis
@@ -36,7 +36,7 @@ The 27 platform releases include powerful new developer features that supercharg
 
 ###### Siri Intents and Spotlight
 
-The 27 platform releases can integrate your app with Apple Intelligence in many new workflows. Leverage [`App Intents`](https://developer.apple.com/documentation/AppIntents) to make core features of your app available to Siri, Spotlight, and Shortcuts across Apple platforms. Widgets and Live Activities also use intents to interact with your core app.
+Your app can integrate with Apple Intelligence in the 27 releases across Apple platforms by leveraging [`App Intents`](https://developer.apple.com/documentation/AppIntents), which make the core features of your app available to Siri, Spotlight, and Shortcuts. Widgets and Live Activities also interact with your core app through its intents.
 
 - Read the new [`Getting started with the App Intents framework`](https://developer.apple.com/documentation/AppIntents/getting-started-with-the-app-intents-framework) guide to acclimate yourself to app intents. And the new [`Creating your first app intent`](https://developer.apple.com/documentation/AppIntents/Creating-your-first-app-intent) article gets you familiar with using intents in your own code.
 - Learn how to connect your app into [`Apple Intelligence and Siri AI`](https://developer.apple.com/documentation/AppIntents/apple-intelligence-and-siri-ai), and explore the code in a sample messaging app in [`Integrating your messaging app with Apple Intelligence`](https://developer.apple.com/documentation/AppIntents/integrating-your-messaging-app-with-apple-intelligence).
@@ -115,7 +115,7 @@ LazyVStack {
 ##### Appkit
 
 - Create events similar to UIControl events on NSControl with the new [`NSControl.Events`](https://developer.apple.com/documentation/AppKit/NSControl/Events) type.
-- Update views automatically in response to Observable model changes using the guidance in [`Updating views automatically with observation tracking`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking).
+- Update views automatically in response to Observable model changes using the guidance in [`Updating views automatically with observation tracking in AppKit`](https://developer.apple.com/documentation/AppKit/updating-views-automatically-with-observation-tracking-in-appkit).
 - macOS 27 improves the touch experience when your Mac app is running on an iPad as a Sidecar display. Read [`TN3212: Adopting gesture recognizers for Sidecar touch support`](https://developer.apple.com/documentation/Technotes/tn3212-adopting-gesture-recognizers-for-sidecar-touch-support) for best practices to ensure your app behaves as expected on a Sidecar display.
 
 ---
@@ -129,7 +129,7 @@ LazyVStack {
 
 ##### Privacy and Security
 
-- Developers of sensitive and secure apps can use the [`TrustInsights`](https://developer.apple.com/documentation/TrustInsights) framework to request an evaluation from the system to help detect if someone is at risk of a social engineering threat. This information can be used in combination with other factors to enable a developer to help keep their users more protected.
+- Developers of sensitive and secure apps can use the [`Trust Insights`](https://developer.apple.com/documentation/TrustInsights) framework to request an evaluation from the system to help detect if someone is at risk of a social engineering threat. This information can be used in combination with other factors to enable a developer to help keep their users more protected.
 
 ---
 
@@ -137,7 +137,7 @@ LazyVStack {
 
 - Use the [`Spatial Preview`](https://developer.apple.com/documentation/SpatialPreview) framework to work with 3D spatial content from a macOS app within a connected visionOS device in real time.
 - Track generic spatial accessories (purpose-built devices like medical instruments or industrial tooling) and augment them with virtual content in visionOS. Read [`Preparing spatial accessories for tracking in your visionOS app`](https://developer.apple.com/documentation/ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app) to create a reference file for your accessory. Read [`Working with generic spatial accessories`](https://developer.apple.com/documentation/visionOS/working-with-generic-spatial-accessories) to bundle that accessory file and track the device with ARKit.
-- The new [`MusicUnderstanding`](https://developer.apple.com/documentation/MusicUnderstanding) framework gives you the power to analyze and fully understand the technical details of audio content with details such as rhythm, pace, loudness, key, and instrument activity.
+- The new [`Music Understanding`](https://developer.apple.com/documentation/MusicUnderstanding) framework gives you the power to analyze and fully understand the technical details of audio content with details such as rhythm, pace, loudness, key, and instrument activity.
 - Use the new [`Now Playing`](https://developer.apple.com/documentation/NowPlaying) framework to let the system control playback of your media in the standard playback interface across the Lock Screen, in Control Center, on Apple Watch, and in CarPlay. Read [`Publishing media sessions`](https://developer.apple.com/documentation/NowPlaying/publishing-media-sessions) to see how you can take advantage of this framework in your own media app.
 - Hardware vendors can use the new [`Media Device`](https://developer.apple.com/documentation/MediaDevice) framework to create an extension that enables any app to stream to their device using built-in system affordances. Read [`Creating a media device extension`](https://developer.apple.com/documentation/MediaDevice/creating-a-media-device-extension) to see how you can create an extension to stream to your unique hardware.
 - The [`AVSystemRouting`](https://developer.apple.com/documentation/AVSystemRouting) framework adds new API to easily send media to all sorts of devices that implement a media device extension. Read [`Routing media to third-party devices`](https://developer.apple.com/documentation/AVSystemRouting/routing-media-to-third-party-devices) to see how to route media from your own apps.
@@ -309,6 +309,8 @@ LazyVStack {
   Learn about important changes in ShazamKit.
 - [SiriKit updates](sirikit.md)
   Learn about important changes in SiriKit.
+- [Speech updates](speech.md)
+  Learn about important changes to Speech.
 - [StoreKit updates](storekit.md)
   Learn about important changes in StoreKit.
 - [Swift updates](swift.md)

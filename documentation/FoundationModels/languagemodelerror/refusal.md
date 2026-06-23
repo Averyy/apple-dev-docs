@@ -26,10 +26,13 @@ Refusal failures indicate that the model chose not to respond to a prompt.
 ## Topics
 
 ### Creating an error instance
-- [init(debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/refusal/init(debugdescription:metadata:).md)
+- [init(explanation: String, debugDescription: String, metadata: [String : any Sendable])](languagemodelerror/refusal/init(explanation:debugdescription:metadata:).md)
 ### Inspecting refusal errors
 - [var metadata: [String : any Sendable]](languagemodelerror/refusal/metadata.md)
 - [var debugDescription: String](languagemodelerror/refusal/debugdescription.md)
+### Getting a refusal explanation
+- [var explanation: LanguageModelSession.Response<String>](languagemodelerror/refusal/explanation.md)
+- [var explanationStream: LanguageModelSession.ResponseStream<String>](languagemodelerror/refusal/explanationstream.md)
 
 ## Relationships
 

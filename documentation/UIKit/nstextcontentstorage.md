@@ -50,6 +50,7 @@ TextKit uses the abstract [`NSTextLocation`](nstextlocation.md) protocol to iden
   Returns a new attributed string for the text element.
 ### Instance Properties
 - [var includesTextListMarkers: Bool](nstextcontentstorage/includestextlistmarkers.md)
+  When `true`, `NSTextContentStorage` assumes the paragraph with `NSTextList` includes the text list marker string.
 
 ## Relationships
 

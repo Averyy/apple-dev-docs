@@ -47,7 +47,6 @@ This structure represents a camera or observer’s position and viewing directio
 
 ## See Also
 
-- [enum Topology](topology.md)
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
 - [enum StripOrientation](striporientation.md)

@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let materialRemovals: [MaterialID]
+let materialRemovals: [USDPlayer.MaterialID]
 ```
 
 

@@ -1,6 +1,6 @@
 # Value
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: associatedtype  
 **Required**: Yes
 
@@ -10,7 +10,6 @@ The result type for this particular insight which will typically be an enumerati
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

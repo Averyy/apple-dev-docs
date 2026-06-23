@@ -22,13 +22,19 @@ enum Kind
 ## Topics
 
 ### Enumeration Cases
+- [USDTransformOperation.Kind.orientation](usdtransformoperation/kind/orientation.md)
+  A rotation expressed as a quaternion.
+- [USDTransformOperation.Kind.scale](usdtransformoperation/kind/scale.md)
+  Scaling around X, Y, and Z axes.
+- [USDTransformOperation.Kind.transform](usdtransformoperation/kind/transform.md)
+  A 4x4 matrix transformation.
 - [USDTransformOperation.Kind.translate](usdtransformoperation/kind/translate.md)
+  Translation along X, Y, and Z axes.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

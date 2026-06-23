@@ -115,12 +115,18 @@ Different lighting environments light the portal crossing entities based on whic
 - [var lightingBlendDistance: Float](portalcomponent/lightingblenddistance.md)
   The lighting blend distance from the clipping/crossing plane.
 ### Structures
+- [PortalComponent.BoundaryStyle](portalcomponent/boundarystyle.md)
+  Describes the clipping and crossing boundary shape for a portal.
 - [PortalComponent.ClippingPlane](portalcomponent/clippingplane-swift.struct.md)
   A representation of a portal as an infinite plane.
 - [PortalComponent.Options](portalcomponent/options.md)
   Options to toggle the portal features on and off.
 - [PortalComponent.Plane](portalcomponent/plane.md)
   A representation of a portal as an infinite plane.
+- [PortalComponent.Portal](portalcomponent/portal.md)
+  A configured portal surface and its associated world entity.
+- [PortalComponent.SurfaceStyle](portalcomponent/surfacestyle.md)
+  Describes the surface geometry of the portal mesh.
 ### Initializers
 - [init(target: Entity, clippingMode: PortalComponent.ClippingMode, crossingMode: PortalComponent.CrossingMode)](portalcomponent/init(target:clippingmode:crossingmode:).md)
   Creates a portal component with a target entity, clipping mode, and crossing mode.
@@ -137,7 +143,14 @@ Different lighting environments light the portal crossing entities based on whic
   The crossing behavior of the portal component.
 - [var targetEntity: Entity?](portalcomponent/targetentity.md)
   The root entity for the portal’s target world.
+### Type Methods
+- [static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle, boundaryMode: PortalComponent.BoundaryMode)](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md)
+  Sets components on an existing portal surface entity and its world entity, replacing any previously set `WorldComponent`, `ModelComponent`, or `PortalComponent`.
+- [static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle, boundaryMode: PortalComponent.BoundaryMode) -> PortalComponent.Portal](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md)
+  Creates a complete portal with new entities.
 ### Enumerations
+- [PortalComponent.BoundaryMode](portalcomponent/boundarymode.md)
+  Controls whether a portal clips portal content, enables entity crossing, both, or neither.
 - [PortalComponent.ClippingMode](portalcomponent/clippingmode-swift.enum.md)
   Specifies the mode of clipping for a portal.
 - [PortalComponent.CrossingMode](portalcomponent/crossingmode-swift.enum.md)

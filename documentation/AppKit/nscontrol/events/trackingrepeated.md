@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+A repeated tracking began event in the control. For this event the click count is greater than one.
+
 **Availability**:
 - macOS 27.0+ (Beta)
 
@@ -15,13 +17,21 @@ static var trackingRepeated: NSControl.Events { get }
 ## See Also
 
 - [static var trackingBegan: NSControl.Events](nscontrol/events/trackingbegan.md)
+  A tracking began event in the control.
 - [static var trackingInside: NSControl.Events](nscontrol/events/trackinginside.md)
+  An event where the pointer or touch moves inside the bounds of the control.
 - [static var trackingOutside: NSControl.Events](nscontrol/events/trackingoutside.md)
+  An event where the pointer or touch moves outside the bounds of the control.
 - [static var trackingEntered: NSControl.Events](nscontrol/events/trackingentered.md)
+  An event where tracking transitions from outside to inside the bounds of the control.
 - [static var trackingExited: NSControl.Events](nscontrol/events/trackingexited.md)
+  An event where tracking transitions from inside to outside the bounds of the control.
 - [static var trackingEndedInside: NSControl.Events](nscontrol/events/trackingendedinside.md)
+  A tracking ended event where the pointer or touch is inside the bounds of the control.
 - [static var trackingEndedOutside: NSControl.Events](nscontrol/events/trackingendedoutside.md)
+  A tracking ended event where the pointer or touch is outside the bounds of the control.
 - [static var trackingCancelled: NSControl.Events](nscontrol/events/trackingcancelled.md)
+  A system event canceling the current tracking for the control.
 
 
 ---

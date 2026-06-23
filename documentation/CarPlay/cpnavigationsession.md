@@ -69,6 +69,10 @@ When CarPlay pauses, finishes, or cancels route guidance, you must call the corr
 ### Instance Properties
 - [var currentSegment: CPRouteSegment](cpnavigationsession/currentsegment.md)
   The current route segment.
+- [var isRouteSharingEnabled: Bool](cpnavigationsession/isroutesharingenabled.md)
+  Whether the vehicle is presently using route data for any features in its built-in navigation system.
+- [var isRouteSharingSupported: Bool](cpnavigationsession/isroutesharingsupported.md)
+  Whether the connected vehicle supports the route sharing feature.
 - [var optionsPanel: CPMapPanel?](cpnavigationsession/optionspanel.md)
   The options panel to display when the ellipsis button on the travel estimates is tapped.
 - [var routeSegments: [CPRouteSegment]](cpnavigationsession/routesegments.md)

@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The document text storage object.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+

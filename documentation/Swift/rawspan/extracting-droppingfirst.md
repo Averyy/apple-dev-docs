@@ -26,7 +26,7 @@ A span starting after the specified number of bytes.
 
 #### Discussion
 
-If the number of elements to drop exceeds the number of bytes in the span, the result is an empty span.
+If the number of bytes to drop exceeds the number of bytes in the span, the result is an empty span.
 
 The returned span’s first byte is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
 

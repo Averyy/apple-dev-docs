@@ -46,6 +46,14 @@ enum MTLTensorDataType
   A 4-bit signed integer format data type.
 - [MTLTensorDataType.int8](mtltensordatatype/int8.md)
   An 8-bit signed integer data type.
+- [MTLTensorDataType.metalFloat4e2m1](mtltensordatatype/metalfloat4e2m1.md)
+  A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and 1 sign bit.
+- [MTLTensorDataType.metalFloat8e4m3](mtltensordatatype/metalfloat8e4m3.md)
+  An 8-bit floating point format data type with 4 exponent bits, 3 mantissa bits and 1 sign bit.
+- [MTLTensorDataType.metalFloat8e5m2](mtltensordatatype/metalfloat8e5m2.md)
+  An 8-bit floating point format data type with 5 exponent bits, 2 mantissa bits and 1 sign bit.
+- [MTLTensorDataType.metalFloat8ue8m0](mtltensordatatype/metalfloat8ue8m0.md)
+  An 8-bit floating point format data type with 8 exponent bits.
 - [MTLTensorDataType.none](mtltensordatatype/none.md)
   An invalid data type.
 - [MTLTensorDataType.uint16](mtltensordatatype/uint16.md)

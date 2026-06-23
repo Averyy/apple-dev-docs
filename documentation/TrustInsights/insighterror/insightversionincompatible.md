@@ -1,6 +1,6 @@
 # InsightError.insightVersionIncompatible
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates that the version you requested isn’t available on this device and OS combination.
@@ -9,7 +9,6 @@ An error that indicates that the version you requested isn’t available on this
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

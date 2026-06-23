@@ -20,7 +20,7 @@ func setNeedsUpdateProperties()
 
 ## Mentions
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+- [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 ## See Also
 

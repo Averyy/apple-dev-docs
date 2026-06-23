@@ -19,6 +19,10 @@ Configuration used to compile a [`PortalMaterial.Program`](portalmaterial/progra
 struct Descriptor
 ```
 
+#### Overview
+
+Marked `@unchecked Sendable` because it holds class-backed values like `MTLFunctionConstantValues` and texture resources. This is safe as long as callers build a descriptor, hand it to [`init(descriptor:)`](portalmaterial/program-swift.struct/init(descriptor:).md), and don’t mutate it afterward.
+
 ## Topics
 
 ### Creating a descriptor
@@ -36,6 +40,8 @@ struct Descriptor
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

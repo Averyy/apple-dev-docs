@@ -42,6 +42,10 @@ enum URLSchemeTaskResult
   A type representing a valid URL scheme.
 - [protocol URLSchemeHandler](urlschemehandler.md)
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
+- [WebPage.Configuration.MediaPlaybackBehavior](webpage/configuration/mediaplaybackbehavior-swift.enum.md)
+  The behavior used when playing HTML video within a page.
+- [WebPage.DeviceSensorAuthorization.Permission](webpage/devicesensorauthorization/permission.md)
+  The kind of sensor permission a web resource may request to access.
 
 
 ---

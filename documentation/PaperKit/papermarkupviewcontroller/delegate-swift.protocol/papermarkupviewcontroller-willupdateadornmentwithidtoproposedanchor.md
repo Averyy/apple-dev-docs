@@ -16,7 +16,7 @@ Asks the delegate to validate and potentially adjust an adornment’s proposed a
 ## Declaration
 
 ```swift
-func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, willUpdateAdornmentWithID adornmentID: UUID, toProposedAnchor proposedAnchor: MarkupAdornment.Anchor) -> MarkupAdornment.Anchor?
+func paperMarkupViewController(_ paperMarkupViewController: PaperMarkupViewController, willUpdateAdornmentWithID id: UUID, toProposedAnchor proposedAnchor: MarkupAdornment.Anchor) -> MarkupAdornment.Anchor?
 ```
 
 #### Return Value
@@ -26,7 +26,7 @@ The final anchor position to use for the adornment, or `nil` to deny the move.
 ## Parameters
 
 - `paperMarkupViewController`: The `PaperMarkupViewController` containing the adornment.
-- `adornmentID`: The unique identifier of the adornment the person is moving.
+- `id`: The unique identifier of the adornment the person is moving.
 - `proposedAnchor`: The proposed new anchor position for the adornment.
 
 ## See Also

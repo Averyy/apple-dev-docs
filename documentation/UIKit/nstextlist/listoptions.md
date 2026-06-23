@@ -26,6 +26,7 @@ The list options mask value of the receiver.
 ## See Also
 
 - [var isOrdered: Bool](nstextlist/isordered.md)
+  A Boolean value that indicates whether the list is ordered.
 - [NSTextList.Options](nstextlist/options.md)
   Values that available options for text list items.
 

@@ -24,6 +24,12 @@ The coordinate values of the shape type are relative to the unit coordinate spac
 
 Use `shapeScaled` for a shape type with scaled values relative to the shape’s `frame`.
 
+## See Also
+
+- [var shapeScaled: ShapeMarkup.Shape](shapemarkup/shapescaled.md)
+  The type of the shape with values scaled to the current frame.
+- [ShapeMarkup.Shape](shapemarkup/shape-swift.enum.md)
+
 
 ---
 

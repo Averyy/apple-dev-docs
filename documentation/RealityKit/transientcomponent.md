@@ -62,6 +62,10 @@ In networked AR experiences, RealityKit sends transient components to peers when
 - [Component](component.md)
 ### Conforming Types
 - [ARKitAnchorComponent](arkitanchorcomponent.md)
+- [ComputeGraphOutputComponent](computegraphoutputcomponent.md)
+- [ComputeGraphRuntimeComponent](computegraphruntimecomponent.md)
+- [ComputeGraphSharedUniforms](computegraphshareduniforms.md)
+- [ComputeGraphViewpointComponent](computegraphviewpointcomponent.md)
 - [PresentationComponent](presentationcomponent.md)
 - [ViewAttachmentComponent](viewattachmentcomponent.md)
 

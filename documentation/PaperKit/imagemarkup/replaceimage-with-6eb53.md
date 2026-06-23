@@ -26,6 +26,17 @@ Image content is shown scaled to fill.
 
 - `image`: The new image to display.
 
+## See Also
+
+- [var image: CGImage?](imagemarkup/image.md)
+  The image content displayed by this markup.
+- [func replaceImage(with: URL) throws](imagemarkup/replaceimage(with:)-10qzi.md)
+  Replaces the contents of this image markup with an image file.
+- [var orientation: CGImagePropertyOrientation](imagemarkup/orientation.md)
+  The orientation of the image content.
+- [var contentsBounds: CGRect](imagemarkup/contentsbounds.md)
+  The portion of the image to display, in normalized coordinates.
+
 
 ---
 

@@ -11,7 +11,6 @@ Creates a group of expectations that must all be satisfied at the same sequentia
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

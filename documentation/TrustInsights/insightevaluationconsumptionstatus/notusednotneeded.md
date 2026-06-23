@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus.notUsedNotNeeded
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates the app canceled the operation, so no decision required.
@@ -9,7 +9,6 @@ A value that indicates the app canceled the operation, so no decision required.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -15,6 +15,10 @@ Enqueues an input/output request on the pipe.
 func enqueueIORequest(with data: NSMutableData?, completionTimeout: TimeInterval) async throws -> (IOReturn, Int)
 ```
 
+#### Return Value
+
+`YES` if the request completes successfully; otherwise, `NO`.
+
 #### Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration: ```swift

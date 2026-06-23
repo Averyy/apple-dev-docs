@@ -12,7 +12,7 @@ When a person opens the media device picker, the system launches your extension 
 
 When the person selects a device, the system calls [`activateDevice(_:session:for:)`](mediadeviceextension/activatedevice(_:session:for:).md). Your extension connects to the device and reports the result through [`routingManager(for:)`](mediadeviceroutingmanager/routingmanager(for:).md): call [`activatedDevice(_:session:)`](mediadeviceroutingmanager/activateddevice(_:session:).md) on success, or [`failedToActivateDevice(_:session:error:)`](mediadeviceroutingmanager/failedtoactivatedevice(_:session:error:).md) on failure.
 
-> ❗ **Important**: Only connect to devices the system has activated. Don’t try to connect from discovery alone.
+> ❗ **Important**: Only maintain connections to devices the system has activated. Don’t make persistent connections that extend beyond the purpose of discovery before the system notifies you that the person has made a selection and activated a device.
 
 When the device is active, your extension is ready to receive media. Media apps that support your protocol use [`AVSystemRoute`](https://developer.apple.com/documentation/AVSystemRouting/AVSystemRoute-5s2um) to start playback on the device. If your extension conforms to [`RealtimeSampleHandling`](realtimesamplehandling.md), the system also routes real-time audio or video samples to it.
 

@@ -14,6 +14,10 @@ The port type for an image.
 let QCPortTypeImage: String
 ```
 
+#### Discussion
+
+The associated value can be an [`NSImage`](https://developer.apple.com/documentation/AppKit/NSImage) object or a [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage)  object.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

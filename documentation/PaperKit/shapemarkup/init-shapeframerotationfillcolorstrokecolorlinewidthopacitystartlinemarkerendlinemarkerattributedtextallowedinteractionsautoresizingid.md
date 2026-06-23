@@ -34,6 +34,11 @@ init(shape: ShapeMarkup.Shape, frame: CGRect, rotation: CGFloat = 0.0, fillColor
 - `autoresizing`: The flags controlling autoresize behavior. Defaults to `[]`.
 - `id`: The identity of the shape. Defaults to a unique id.
 
+## See Also
+
+- [init(configuration: ShapeConfiguration, frame: CGRect, rotation: CGFloat)](shapemarkup/init(configuration:frame:rotation:).md)
+  Initializes and returns a new shape markup from the specified parameters.
+
 
 ---
 

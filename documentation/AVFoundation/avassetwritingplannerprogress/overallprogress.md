@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+The overall progress across all tracks.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -18,8 +20,6 @@ var overallProgress: Float { get }
 ```
 
 #### Discussion
-
-The overall progress across all tracks.
 
 Returns a float value between 0.0 and 1.0 representing the overall progress. This is calculated as the average progress of all tracks weighted by their durations.
 

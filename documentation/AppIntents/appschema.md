@@ -21,8 +21,6 @@ struct AppSchema
 ## Topics
 
 ### Protocols
-- [AppSchema.AppStoreEntity](appschema/appstoreentity.md)
-- [AppSchema.AppStoreIntent](appschema/appstoreintent.md)
 - [AppSchema.AssistantIntent](appschema/assistantintent.md)
   Assistant schema conformance for app intents that offer support for the side button on iPhone in Japan.
 - [AppSchema.AudioEntity](appschema/audioentity.md)
@@ -63,9 +61,6 @@ struct AppSchema
   Identifies entity schemas in the files domain.
 - [AppSchema.FilesIntent](appschema/filesintent.md)
   Identifies intent schemas in the files domain.
-- [AppSchema.ImageGenerationEntity](appschema/imagegenerationentity.md)
-- [AppSchema.ImageGenerationEnum](appschema/imagegenerationenum.md)
-- [AppSchema.ImageGenerationIntent](appschema/imagegenerationintent.md)
 - [AppSchema.JournalEntity](appschema/journalentity.md)
   Identifies entity schemas in the journal domain.
 - [AppSchema.JournalIntent](appschema/journalintent.md)

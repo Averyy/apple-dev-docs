@@ -1,6 +1,6 @@
 # InsightEvaluator.ModelVersion
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Values that define the required model version of the insight.
@@ -9,7 +9,6 @@ Values that define the required model version of the insight.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

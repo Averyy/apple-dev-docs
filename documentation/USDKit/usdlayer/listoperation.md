@@ -22,10 +22,14 @@ struct ListOperation<T> where T : USDLayer._ListOperationElement
 ## Topics
 
 ### Initializers
-- [init(explicitItems: [T])](usdlayer/listoperation/init(explicititems:).md)
+- [init(explicitItems: [T])](usdlayer/listoperation/init(explicititems:)-4klr9.md)
   Creates an explicit-mode list operation with the given items.
-- [init(prependedItems: [T], appendedItems: [T], deletedItems: [T])](usdlayer/listoperation/init(prependeditems:appendeditems:deleteditems:).md)
+- [init(explicitItems: [Int])](usdlayer/listoperation/init(explicititems:)-6l0al.md)
+- [init(explicitItems: [UInt])](usdlayer/listoperation/init(explicititems:)-7iesv.md)
+- [init(prependedItems: [T], appendedItems: [T], deletedItems: [T])](usdlayer/listoperation/init(prependeditems:appendeditems:deleteditems:)-1tkyo.md)
   Creates a list operation with the given prepended/appended/deleted items. Pass no arguments for an empty operation with no slots authored.
+- [init(prependedItems: [Int], appendedItems: [Int], deletedItems: [Int])](usdlayer/listoperation/init(prependeditems:appendeditems:deleteditems:)-8poys.md)
+- [init(prependedItems: [UInt], appendedItems: [UInt], deletedItems: [UInt])](usdlayer/listoperation/init(prependeditems:appendeditems:deleteditems:)-ngyh.md)
 ### Instance Properties
 - [var appliedItems: [T]](usdlayer/listoperation/applieditems.md)
   The composed result of applying all operations from strongest to weakest opinion.

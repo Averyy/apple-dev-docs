@@ -272,13 +272,13 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Sets the spring loading behavior this view.
 ### Reordering
 - [func reorderContainer<Item>(for: Item.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views.
 - [func reorderContainer<Item, CollectionID>(for: Item.Type, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<Item.ID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:in:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type you specify to identify sections.
 - [func reorderContainer<Item, ItemID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, isEnabled: Bool, move: (ReorderDifference<ItemID, ReorderableSingleCollectionIdentifier>) -> ()) -> some View](view/reordercontainer(for:itemid:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type and keypath you specify to identify items.
 - [func reorderContainer<Item, ItemID, CollectionID>(for: Item.Type, itemID: KeyPath<Item, ItemID>, in: CollectionID.Type, isEnabled: Bool, move: (ReorderDifference<ItemID, CollectionID>) -> ()) -> some View](view/reordercontainer(for:itemid:in:isenabled:move:).md)
-  Defines a container that allows its items to be reordered.
+  Defines a container of reorderable views, with a type and keypath you use to identify items and a type you use to identify collections.
 ### Submission
 - [func onAssignedDocumentDidSubmit((URL) -> Void) -> some View](view/onassigneddocumentdidsubmit(_:).md)
   Adds an action to perform after submitting an assigned document.

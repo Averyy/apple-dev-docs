@@ -44,10 +44,18 @@ enum Code
 
 ## See Also
 
-- [WKWebExtension.MatchPattern.Error](wkwebextension/matchpattern/error.md)
-  Constants that indicate errors in the [`WKWebExtension.MatchPattern`](wkwebextension/matchpattern.md) domain.
-- [class let errorDomain: String](wkwebextension/matchpattern/errordomain.md)
-  A string that identifies the error domain.
+- [WKWebExtension.Error.Code](wkwebextension/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension`](wkwebextension.md) domain.
+- [WKWebExtensionContext.Error.Code](wkwebextensioncontext/error/code.md)
+  Constants that indicate errors in the [`WKWebExtensionContext`](wkwebextensioncontext.md) domain.
+- [WKWebExtension.DataRecord.Error.Code](wkwebextension/datarecord/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
+- [WKWebExtension.DataRecord.Error](wkwebextension/datarecord/error.md)
+  Constants that indicate errors in the [`WKWebExtension.DataRecord`](wkwebextension/datarecord.md) domain.
+- [WKWebExtension.MessagePort.Error.Code](wkwebextension/messageport/error/code.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
+- [WKWebExtension.MessagePort.Error](wkwebextension/messageport/error.md)
+  Constants that indicate errors in the [`WKWebExtension.MessagePort`](wkwebextension/messageport.md) domain.
 
 
 ---

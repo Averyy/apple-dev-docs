@@ -1,6 +1,6 @@
 # phrases
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The time range of each phrase in the song.

@@ -111,7 +111,9 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
 - [var isEmpty: Bool](inlinearray/isempty.md)
   A Boolean value indicating whether the array is empty.
 - [var mutableSpan: MutableSpan<Element>](inlinearray/mutablespan.md)
+  A mutable span over the elements of this array.
 - [var span: Span<Element>](inlinearray/span.md)
+  A span over the elements of this array.
 - [var startIndex: InlineArray<count, Element>.Index](inlinearray/startindex.md)
   The position of the first element in a nonempty array.
 ### Instance Methods
@@ -139,7 +141,10 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
 - [BitwiseCopyable](bitwisecopyable.md)
 - [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
+- [Escapable](escapable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

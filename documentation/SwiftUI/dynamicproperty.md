@@ -44,7 +44,6 @@ The view gives values to these properties prior to recomputing the view’s [`bo
 - [FocusedObject](focusedobject.md)
 - [FocusedValue](focusedvalue.md)
 - [GestureState](gesturestate.md)
-- [LazyState](lazystate.md)
 - [NSApplicationDelegateAdaptor](nsapplicationdelegateadaptor.md)
 - [Namespace](namespace.md)
 - [ObservedObject](observedobject.md)

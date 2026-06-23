@@ -14,6 +14,10 @@ The current event.
 let QCPlugInExecutionArgumentEventKey: String
 ```
 
+#### Discussion
+
+The current [`NSEvent`](https://developer.apple.com/documentation/AppKit/NSEvent) if available.
+
 ## See Also
 
 - [let QCCompositionAttributeBuiltInKey: String](qccompositionattributebuiltinkey.md)

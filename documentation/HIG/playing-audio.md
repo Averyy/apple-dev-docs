@@ -79,7 +79,7 @@ In watchOS, the system manages audio playback. An app can play short audio clips
 #### Developer documentation
 [Configuring your app for media playback](../AVFoundation/configuring-your-app-for-media-playback.md) — AVFoundation
 [AVAudioSession](../AVFAudio/AVAudioSession.md) — AVFAudio
-[MusicKit](../musickit.md) — MusicKit
+[MusicKit](../MusicKit.md) — MusicKit
 
 #### Videos
 - [Integrate MusicKit into your app](https://developer.apple.com/videos/play/wwdc2026/254) - Bring the power of Apple Music into your app using MusicKit. We’ll cover authorization, subscription-status checks, music selection, playback control, and cross-storefront song sharing. Learn how to use the new Music Picker to let people browse the Apple Music catalog and their personal libraries. We’ll also break down the differences between SystemMusicPlayer and ApplicationMusicPlayer, and show you how to observe playback state. 

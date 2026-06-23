@@ -1,6 +1,6 @@
 # structure
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 A value that identifies the structure music analysis type.

@@ -3,7 +3,7 @@
 **Framework**: Metal Performance Shaders Graph  
 **Kind**: method
 
-Creates a vector lookup-table based quantization operation and returns the result tensor.
+Creates a vector lookup-table based dequantize operation and returns the result tensor.
 
 **Availability**:
 - iOS 18.0+
@@ -25,19 +25,24 @@ A valid [`MPSGraphTensor`](mpsgraphtensor.md) object.
 
 #### Discussion
 
-Converts a u8 or u4 `tensor` to a float tensor by applying a lookup operation, where each input index defines a vector of values. The operation reads the vector values from the last dimension of the lookup table tensor and stores them into the dimension defined by `axis` on the result tensor.
+Converts a `tensor` of integer indices to a float tensor by applying a lookup operation, where each input index defines a vector of values. The operation reads the vector values from the last dimension of the lookup table tensor and stores them into the dimension defined by `axis` on the result tensor.
 
 ```md
 result[i1, ... , i_axis, ..., in] = LUTTensor[i1', ..., in', tensor[i1, ..., in], i_axis]
 ```
 
-Note: The operation supports LUT groups up to the last 2 dimensions for `tensor`.
+Supported `tensor` index types and required second-to-last-dimension size of `LUTTensor`:
+
+- `MPSDataTypeUInt4`: 16 entries
+- `MPSDataTypeUInt8`: 256 entries
+
+`LUTTensor` (and result) element types: `MPSDataTypeFloat16`, `MPSDataTypeFloat32`, `MPSDataTypeBFloat16`, `MPSDataTypeFloat8E4M3`, `MPSDataTypeFloat8E5M2`, `MPSDataTypeInt8`. The input `tensor` must be a graph constant. The operation supports LUT groups up to the last 2 dimensions for `tensor`.
 
 ## Parameters
 
-- `tensor`: Input tensor to be dequantized.
-- `LUTTensor`: The lookup table to use - for u4 the second to last dimension should have 16 elements, and for u8 256 elements.
-- `axis`: Axis on which the scale 1D value is being broadcasted.
+- `tensor`: Input constant integer-index tensor to be dequantized.
+- `LUTTensor`: The lookup table to use.
+- `axis`: The result axis into which the LUT vector values are written.
 - `name`: The name for the operation.
 
 

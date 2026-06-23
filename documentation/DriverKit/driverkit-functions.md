@@ -49,6 +49,7 @@
 - [IOThreadLocalStorageKeyDelete](iothreadlocalstoragekeydelete.md)
 - [IOThreadLocalStorageSet](iothreadlocalstorageset.md)
 - [movqueue](movqueue.md)
+- [operator new](operator_new.md)
 - [OSConstPtrCast](osconstptrcast-4ob3v.md)
 - [OSConstPtrCast](osconstptrcast-5xl80.md)
 - [OSStaticPtrCast](osstaticptrcast-45klz.md)

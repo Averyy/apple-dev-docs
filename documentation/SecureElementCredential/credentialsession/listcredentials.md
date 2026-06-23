@@ -30,6 +30,9 @@ When you call this method, the framework caches a snapshot of these credentials.
 
 > **Note**: When you call this method from an app extension that has the [`Digital Credentials API - Mobile Document Provider`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.identity-document-services.document-provider.mobile-document-types) entitlement, the returned array contains only credentials configured as Government ID credentials on the [`Apple Business Register`](https://developer.apple.comhttps://register.apple.com/login) (ABR) portal.
 
+- The most common errors are: - [`CredentialSession.ErrorCode.sessionInvalidated`](credentialsession/errorcode/sessioninvalidated.md): The credential session has been invalidated.
+- [`CredentialSession.ErrorCode.invalidSessionState`](credentialsession/errorcode/invalidsessionstate.md): The session isn’t in the [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) state.
+
 ## See Also
 
 - [CredentialSession.Credential](credentialsession/credential.md)

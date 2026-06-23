@@ -20,6 +20,10 @@ func deleteCredential(_ credential: CredentialSession.Credential) async throws
 
 - [Accessing and using secure element credentials](accessing-and-using-secure-element-credentials.md)
 
+#### Discussion
+
+- The most common errors are: - [`CredentialSession.ErrorCode.invalidSessionState`](credentialsession/errorcode/invalidsessionstate.md): The session isn’t in the [`CredentialSession.State.management`](credentialsession/state-swift.enum/management.md) state.
+
 ## Parameters
 
 - `credential`: The credential to delete.

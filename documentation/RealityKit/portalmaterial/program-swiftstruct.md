@@ -19,6 +19,10 @@ A compiled shader program that drives the appearance of a portal’s surface and
 struct Program
 ```
 
+#### Overview
+
+Marked `@unchecked Sendable` because it stores a class reference (`__MaterialResource`). This is safe as long as the reference is never reassigned after `init`, and the underlying CoreRE asset uses thread-safe reference counting, so sharing a `Program` across threads is fine.
+
 ## Topics
 
 ### Configuring the program

@@ -179,9 +179,9 @@ let numberPointer = UnsafeRawPointer(&number)
   Deallocates the previously allocated memory block referenced by this pointer.
 - [func load<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawpointer/load(frombyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawpointer/loadunaligned(frombyteoffset:as:)-5wi7f.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawpointer/loadunaligned(frombyteoffset:as:)-5iviy.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawpointer/loadunaligned(frombyteoffset:as:)-8a8c8.md)
+- [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawpointer/loadunaligned(frombyteoffset:as:)-5wi7f.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func withMemoryRebound<T, E, Result>(to: T.Type, capacity: Int, (UnsafePointer<T>) throws(E) -> Result) throws(E) -> Result](unsaferawpointer/withmemoryrebound(to:capacity:_:).md)
   Executes the given closure while temporarily binding memory to the specified number of instances of type `T`.
@@ -203,6 +203,7 @@ let numberPointer = UnsafeRawPointer(&number)
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomReflectable](customreflectable.md)

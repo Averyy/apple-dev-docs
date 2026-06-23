@@ -16,7 +16,7 @@ func updateConstraints()
 
 ## Mentions
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
 
 #### Discussion
 
@@ -30,14 +30,14 @@ Your implementation must be as efficient as possible. Do not deactivate all your
 
 Do not set the [`needsUpdateConstraints`](nsview/needsupdateconstraints.md) property inside your implementation. Setting [`needsUpdateConstraints`](nsview/needsupdateconstraints.md) to [`true`](https://developer.apple.com/documentation/Swift/true) schedules another update pass, creating a feedback loop.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in AppKit`](updating-views-automatically-with-observation-tracking-in-appkit.md).
 
 > ❗ **Important**:  Call `[super updateConstraints]` as the final step in your implementation.
 
 ## See Also
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 - [func layout()](nsview/layout.md)
   Perform layout in concert with the constraint-based layout system.
 - [func updateLayer()](nsview/updatelayer.md)

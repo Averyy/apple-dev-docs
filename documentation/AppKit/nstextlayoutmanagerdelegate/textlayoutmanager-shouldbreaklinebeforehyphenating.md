@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-The method the framework calls to determine the soft line break point.
+Invoked while determining the soft line break point.
 
 **Availability**:
 - macOS 12.0+
@@ -16,7 +16,13 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, should
 
 #### Return Value
 
-A Boolean value that indicates if the framework should break the line at the current location.
+`true` to allow the break; `false` to prevent it.
+
+#### Discussion
+
+When `hyphenating` is `false`, [`NSTextLayoutManager`](nstextlayoutmanager.md) tries to find the next line break opportunity before location. When `hyphenating` is `true`, it is an auto-hyphenation point.
+
+The method the framework calls to determine the soft line break point.
 
 #### Discussion
 
@@ -24,16 +30,16 @@ When `hyphenating` is `false`, `NSTextLayoutManager` tries to find the next line
 
 ## Parameters
 
-- `textLayoutManager`: The text layout manager.
-- `location`: The location of the proposed line break.
-- `hyphenating`: A Boolean value that indicates the current hyphenation mode.
+- `textLayoutManager`: The text layout manager sending the message.
+- `location`: The candidate break location.
+- `hyphenating`: `true` if this is an auto-hyphenation point.
 
 ## See Also
 
 - [func textLayoutManager(NSTextLayoutManager, renderingAttributesForLink: Any, at: any NSTextLocation, defaultAttributes: [NSAttributedString.Key : Any]) -> [NSAttributedString.Key : Any]?](nstextlayoutmanagerdelegate/textlayoutmanager(_:renderingattributesforlink:at:defaultattributes:).md)
-  The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
+  Returns a dictionary of rendering attributes for rendering a link.
 - [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
-  The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
+  Returns a text layout fragment for the specified location in the text element.
 
 
 ---

@@ -1,4 +1,4 @@
-# notify_register_signal
+# notify_register_signal(_:_:_:)
 
 **Framework**: Darwin Notify  
 **Kind**: func
@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-extern uint32_t notify_register_signal(const char *name, int sig, int *out_token);
+func notify_register_signal(_ name: UnsafePointer<CChar>!, _ sig: Int32, _ out_token: UnsafeMutablePointer<Int32>!) -> UInt32
 ```
 
 #### Return Value
@@ -36,19 +36,19 @@ A client may request signal notification for multiple names. After a signal is d
 
 ## See Also
 
-- [notify_cancel](notify_cancel.md)
-- [notify_check](notify_check.md)
-- [notify_get_state](notify_get_state.md)
-- [notify_post](notify_post.md)
-- [notify_register_check](notify_register_check.md)
-- [notify_register_dispatch](notify_register_dispatch.md)
+- [func notify_cancel(Int32) -> UInt32](notify_cancel(_:).md)
+- [func notify_check(Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_check(_:_:).md)
+- [func notify_get_state(Int32, UnsafeMutablePointer<UInt64>!) -> UInt32](notify_get_state(_:_:).md)
+- [func notify_post(UnsafePointer<CChar>!) -> UInt32](notify_post(_:).md)
+- [func notify_register_check(UnsafePointer<CChar>!, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_check(_:_:).md)
+- [func notify_register_dispatch(UnsafePointer<CChar>!, UnsafeMutablePointer<Int32>!, dispatch_queue_t!, notify_handler_t!) -> UInt32](notify_register_dispatch(_:_:_:_:).md)
   Request notification delivery to a dispatch queue.
-- [notify_register_mach_port](notify_register_mach_port.md)
-- [notify_resume](notify_resume.md)
-- [notify_set_state](notify_set_state.md)
-- [notify_suspend](notify_suspend.md)
+- [func notify_register_mach_port(UnsafePointer<CChar>!, UnsafeMutablePointer<mach_port_t>!, Int32, UnsafeMutablePointer<Int32>!) -> UInt32](notify_register_mach_port(_:_:_:_:).md)
+- [func notify_resume(Int32) -> UInt32](notify_resume(_:).md)
+- [func notify_set_state(Int32, UInt64) -> UInt32](notify_set_state(_:_:).md)
+- [func notify_suspend(Int32) -> UInt32](notify_suspend(_:).md)
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/darwinnotify/notify_register_signal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/darwinnotify/notify_register_signal(_:_:_:))*

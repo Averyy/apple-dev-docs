@@ -3,7 +3,7 @@
 **Framework**: Core AI  
 **Kind**: method
 
-Deletes all entries in the cache for the current build version.
+Deletes all entries in the cache.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -26,7 +26,7 @@ final func deleteAll() throws
 
 Use this method to reclaim storage when the app no longer needs any of its specialized models, or to reset the cache during testing.
 
-> **Note**: For each entry, if no [`AIModel`](aimodel.md) instance currently references it, deletion happens immediately. Otherwise, the system deletes the entry when the last [`AIModel`](aimodel.md) releases it.
+> **Note**: For each entry, if no [`AIModel`](aimodel.md) instance currently references it, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](aimodel.md) releases it.
 
 
 ---

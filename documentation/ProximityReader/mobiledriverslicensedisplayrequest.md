@@ -16,10 +16,6 @@ A mobile driver’s license request that retrieves elements from the holder and 
 struct MobileDriversLicenseDisplayRequest
 ```
 
-## Mentions
-
-- [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
-
 ## Topics
 
 ### Creating a display request

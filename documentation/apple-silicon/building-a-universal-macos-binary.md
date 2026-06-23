@@ -142,7 +142,7 @@ x86_64 arm64
 
 To obtain more information about each architecture, pass the `-detailed_info` argument to `lipo`.
 
-For information about how to determine whether your app is running as a translated binary, see doc:about-the-rosetta-translation-environment#Determine-Whether-Your-App-Is-Running-as-a-Translated-Binary.
+For information about how to determine whether your app is running as a translated binary, see [`Determine whether your app is running as a translated binary`](about-the-rosetta-translation-environment#Determine-whether-your-app-is-running-as-a-translated-binary.md).
 
 ##### Specify the Launch Behavior of Your App
 

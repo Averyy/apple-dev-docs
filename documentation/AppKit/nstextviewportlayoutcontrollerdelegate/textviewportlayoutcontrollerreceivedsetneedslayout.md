@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: method
 
+Triggers relayout of the view.
+
 **Availability**:
 - macOS 12.0+
 
@@ -11,6 +13,10 @@
 ```swift
 optional func textViewportLayoutControllerReceivedSetNeedsLayout(_ textViewportLayoutController: NSTextViewportLayoutController)
 ```
+
+## Parameters
+
+- `textViewportLayoutController`: The viewport layout controller requesting a relayout.
 
 
 ---

@@ -24,8 +24,8 @@ func ABGroupAddMember(_ group: ABGroupRef!, _ personToAdd: ABPersonRef!) -> Bool
 ## Parameters
 
 - `group`: The group you wish to add `person` to.
-- `personToAdd`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
 - `person`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
+- `personToAdd`: The person to add to `group`. If `person` is `NULL`, this function raises an exception.
 
 ## See Also
 
@@ -47,7 +47,7 @@ func ABGroupAddMember(_ group: ABGroupRef!, _ personToAdd: ABPersonRef!) -> Bool
   Creates an ABSearchElement object that specifies a queryfor ABGroup records.
 - [func ABGroupRemoveGroup(ABGroupRef!, ABGroupRef!) -> Bool](abgroupremovegroup(_:_:).md)
   Removes a subgroup from a group.
-- [func ABGroupRemoveMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupremovemember(_:_:).md)
+- [func ABGroupRemoveMember(ABRecord!, ABRecord!, UnsafeMutablePointer<Unmanaged<CFError>?>!) -> Bool](abgroupremovemember(_:_:_:).md)
   Removes a person from a group.
 - [func ABGroupSetDistributionIdentifier(ABGroupRef!, ABPersonRef!, CFString!, CFString!) -> Bool](abgroupsetdistributionidentifier(_:_:_:_:).md)
   Assigning a specific distribution identifier for a person’smulti-value list property so that the group can be used as a distributionlist (mailing list, in the case of an email property).
@@ -55,4 +55,4 @@ func ABGroupAddMember(_ group: ABGroupRef!, _ personToAdd: ABPersonRef!) -> Bool
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/addressbook/abgroupaddmember(_:_:_:))*

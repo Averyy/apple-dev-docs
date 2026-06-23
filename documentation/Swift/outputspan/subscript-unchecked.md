@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: subscript
 
-Accesses the element at the specified position.
+Accesses the element at the specified index.
 
 **Availability**:
 - iOS 12.2+
@@ -22,7 +22,7 @@ subscript(unchecked index: OutputSpan<Element>.Index) -> Element { get set }
 
 #### Overview
 
-This subscript does not validate `position`; this is an unsafe operation.
+This subscript does not validate `index`; this is an unsafe operation.
 
 > **Note**: O(1)
 

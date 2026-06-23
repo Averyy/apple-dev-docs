@@ -27,7 +27,6 @@ struct Enum
 - [AppSchema.CalendarEnum](appschema/calendarenum.md)
 - [AppSchema.CameraEnum](appschema/cameraenum.md)
 - [AppSchema.ClockEnum](appschema/clockenum.md)
-- [AppSchema.ImageGenerationEnum](appschema/imagegenerationenum.md)
 - [AppSchema.Kind](appschema/kind.md)
 - [AppSchema.MailEnum](appschema/mailenum.md)
 - [AppSchema.MapsEnum](appschema/mapsenum.md)

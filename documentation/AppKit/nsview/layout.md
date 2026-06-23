@@ -16,7 +16,7 @@ func layout()
 
 ## Mentions
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
 
 #### Discussion
 
@@ -26,12 +26,12 @@ You may not invalidate any constraints as part of your layout phase, nor invalid
 
 You must call `[super layout]` as part of your implementation.
 
-This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking`](updating-views-automatically-with-observation-tracking.md).
+This method supports automatic observation tracking. For more information, see [`Updating views automatically with observation tracking in AppKit`](updating-views-automatically-with-observation-tracking-in-appkit.md).
 
 ## See Also
 
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 - [func updateConstraints()](nsview/updateconstraints.md)
   Update constraints for the view.
 - [func updateLayer()](nsview/updatelayer.md)

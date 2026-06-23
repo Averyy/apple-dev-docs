@@ -446,6 +446,9 @@ When creating a [`CSSearchableItem`](cssearchableitem.md), it’s important to f
 ### Deprecated
 - [init(itemContentType: String)](cssearchableitemattributeset/init(itemcontenttype:).md)
   Creates an attribute set for the specified content type.
+### Instance Properties
+- [var relatedAppEntityIdentifier: EntityIdentifier?](cssearchableitemattributeset/relatedappentityidentifier.md)
+  The identifier of the related indexed entity for this searchable item’s attribute set.
 
 ## Relationships
 

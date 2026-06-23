@@ -72,10 +72,6 @@ windowEntity.components.set(clipping)
   A component that defines which layers an entity participates in.
 - [struct RenderLayer](renderlayer.md)
   A structured representation of render layers that provides type safety and clear semantics.
-- [enum PortalFactory](portalfactory.md)
-  A factory for creating portal entities with simplified configuration.
-- [struct ClippingPrimitiveComponent](clippingprimitivecomponent.md)
-  Use ClippingComponent instead
 - [struct OcclusionCullingComponent](occlusioncullingcomponent.md)
   A component that controls whether the system performs occlusion culling on the owning Entity and its descendants.
 

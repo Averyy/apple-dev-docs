@@ -1,6 +1,6 @@
 # structure
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated structure results, identifying musical sections and their boundaries.

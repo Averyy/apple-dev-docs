@@ -20,11 +20,6 @@ The resource and entity tuples that comprise the playback group
 @preconcurrency final let resourcesAndEntities: [(AudioResource, Entity)]
 ```
 
-## See Also
-
-- [var playbackPosition: TimeInterval](audioplaybackgroupcontroller/playbackposition.md)
-  The playback controller’s current time. Setting this is equivalent to seeking.
-
 
 ---
 

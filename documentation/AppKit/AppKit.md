@@ -103,29 +103,6 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
   Data types for use with multiple classes.
 - [Macros](macros.md)
   Macros for use with multiple classes.
-### Classes
-- [class NSRefreshController](nsrefreshcontroller.md)
-  A controller that provides pull-to-refresh functionality for scroll views.
-- [class NSStatusItemExpandedInterfaceSession](nsstatusitemexpandedinterfacesession.md)
-- [class NSTextSelectionManager](nstextselectionmanager.md)
-  An object that coordinates text selection behavior for custom text views.
-- [class NSViewCornerConfiguration](nsviewcornerconfiguration.md)
-  A configuration object that defines the corner styles of a view’s overall shape.
-- [class NSViewCornerRadii](nsviewcornerradii.md)
-  Provides a structured way to define custom corner radii for each corner of a view, along with a corner curve.
-- [class NSViewCornerRadius](nsviewcornerradius.md)
-  Represents a radius used to round a corner. It supports fixed and adaptive configurations.
-### Protocols
-- [protocol NSStatusItemExpandedInterfaceDelegate](nsstatusitemexpandedinterfacedelegate.md)
-- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
-- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
-### Structures
-- [struct NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy.md)
-### Macros
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSView)](preview(_:traits:arguments:body:)-5hzef.md)
-  Creates a group of previews of an NSView.
-- [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> NSViewController)](preview(_:traits:arguments:body:)-7h191.md)
-  Creates a group of previews of an NSViewController.
 
 
 ---

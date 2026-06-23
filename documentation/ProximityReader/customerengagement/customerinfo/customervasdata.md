@@ -20,15 +20,6 @@ let customerVASData: Data?
 
 The encrypted content of the pass stored in Wallet, which contains the loyalty or reward pass identifier. See [`VASReadResult.ReadEntry`](vasreadresult/readentry.md).
 
-## See Also
-
-- [let barcodeMessage: String?](customerengagement/customerinfo/barcodemessage.md)
-  A message for the barcode.
-- [let emailAddress: String?](customerengagement/customerinfo/emailaddress.md)
-  The customer’s email address or Hide My Email address if supported.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/customerinfo/phonenumber.md)
-  The customer’s phone number, if provided.
-
 
 ---
 

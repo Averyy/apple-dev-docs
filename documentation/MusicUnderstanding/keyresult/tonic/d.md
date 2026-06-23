@@ -1,6 +1,6 @@
 # KeyResult.Tonic.d
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 Indicates that the song is in a D key.

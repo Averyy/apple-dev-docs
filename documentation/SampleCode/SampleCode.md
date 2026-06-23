@@ -252,7 +252,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Build Mail App Extensions](../MailKit/build-mail-app-extensions.md)
   Create app extensions that block content, perform message and composing actions, and help message security.
 - [Checking IDs with the Verifier API](../ProximityReader/checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
+  Read and verify mobile driver’s license information without any additional hardware.
 - [Configuring a home automation device](../HomeKit/configuring-a-home-automation-device.md)
   Give users a familiar experience when they manage HomeKit accessories.
 - [Configuring the PencilKit tool picker](../PencilKit/configuring-the-pencilkit-tool-picker.md)
@@ -417,7 +417,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Add Spatial Audio editing capabilities with the Audio Mix API in the Cinematic framework.
 - [Encoding and decoding audio](../AudioToolbox/encoding-and-decoding-audio.md)
   Convert audio formats to efficiently manage data and quality.
-- [Explore more content with MusicKit](../musickit/explore_more_content_with_musickit.md)
+- [Explore more content with MusicKit](../MusicKit/explore-more-content-with-musickit.md)
   Track your outdoor runs with access to the Apple Music catalog, personal recommendations, and your own personal music library.
 - [Generating spatial audio from a multichannel audio stream](../AudioToolbox/generating-spatial-audio-from-a-multichannel-audio-stream.md)
   Convert 8-channel audio to 2-channel spatial audio by using a spatial mixer audio unit.

@@ -1,4 +1,4 @@
 Completed scraping CoreAudioKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 63
+Total pages scraped: 59
+Pages skipped (unchanged): 4
 Pages failed: 0

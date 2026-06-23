@@ -16,7 +16,7 @@ Encapsulates a GPU device resource created by the application. On visionOS, reso
 ## Declaration
 
 ```swift
-class LowLevelDeviceResource
+final class LowLevelDeviceResource
 ```
 
 ## Topics

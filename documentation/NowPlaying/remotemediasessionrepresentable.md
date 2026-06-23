@@ -34,6 +34,8 @@ Your app donates remote sessions to the system in two ways: from the main app, o
 
 See [`RemoteMediaSession`](remotemediasession.md) for the in-app API to donate a remote session.
 
+To start, update, or end remote sessions using push notifications, see: [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+
 The following example shows a basic implementation:
 
 ```swift

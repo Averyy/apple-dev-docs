@@ -144,6 +144,9 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [IOStateReporter](iostatereporter.md)
 - [OSBundle](osbundle.md)
 - [OSMappedFile](osmappedfile.md)
+- [IOEventLink](ioeventlink.md)
+- [IOExtensiblePaniclog](ioextensiblepaniclog.md)
+- [IOWorkGroup](ioworkgroup.md)
 ### Reference
 - [DriverKit Structures](driverkit-structures.md)
 - [DriverKit Enumerations](driverkit-enumerations.md)
@@ -153,6 +156,12 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [DriverKit Namespaces](driverkit-namespaces.md)
 ### Macros
 - [Macros](driverkit-macros.md)
+- [IOKIT](iokit.md)
+- [IOPhysSize](iophyssize.md)
+- [IOPhysical32](iophysical32.md)
+- [IO_NULL_VM_TASK](io_null_vm_task.md)
+- [IO_OBJECT_NULL](io_object_null.md)
+- [PRIIOByteCount](priiobytecount.md)
 - [SERIALIZABLE](serializable.md)
 - [kIOConfigOrderKey](kioconfigorderkey.md)
 - [kIOPropertyHashTypeKey](kiopropertyhashtypekey.md)
@@ -166,10 +175,21 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [kIOUserServrMaxPanicReasonLength](kiouserservrmaxpanicreasonlength.md)
 - [queue_extend_first](queue_extend_first.md)
 - [queue_extend_last](queue_extend_last.md)
+### Structures
+- [IONamedValue](ionamedvalue.md)
+- [IOPhysicalRange](iophysicalrange.md)
+- [IOVirtualRange](iovirtualrange.md)
 ### Functions
 - [IOSysCtlByName](iosysctlbyname.md)
 - [getpid](getpid.md)
 ### Enumeration Cases
+- [kIOConnectMethodVarOutputSize](kioconnectmethodvaroutputsize.md)
+- [kIOEventLinkAssociateCurrentThread](kioeventlinkassociatecurrentthread.md)
+- [kIOEventLinkAssociateOnWait](kioeventlinkassociateonwait.md)
+- [kIOEventLinkClockMachAbsoluteTime](kioeventlinkclockmachabsolutetime.md)
+- [kIOEventLinkMaxNameLength](kioeventlinkmaxnamelength.md)
+- [kIOExtensiblePaniclogOptionsNone](kioextensiblepaniclogoptionsnone.md)
+- [kIOExtensiblePaniclogOptionsWithBuffer](kioextensiblepaniclogoptionswithbuffer.md)
 - [kIOMemoryMapCacheModePostedCombinedReordered](kiomemorymapcachemodepostedcombinedreordered.md)
 - [kIORPCMessageDeepSerialization](kiorpcmessagedeepserialization.md)
 - [kIOServicePMAssertionCPUBit](kioservicepmassertioncpubit.md)
@@ -177,12 +197,26 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 - [kIOServicePMAssertionForceFullWakeupBit](kioservicepmassertionforcefullwakeupbit.md)
   kIOServicePMAssertionForceFullWakeupBit When set, the system will immediately do a full wakeup after going to sleep.
 - [kIOServicePowerCapabilityLPW](kioservicepowercapabilitylpw.md)
+- [kIOWorkGroupMaxNameLength](kioworkgroupmaxnamelength.md)
 - [kSCSICmd_ATA_PASS_THROUGH](kscsicmd_ata_pass_through.md)
 - [kSCSICmd_ATA_PASS_THROUGH_EXT](kscsicmd_ata_pass_through_ext.md)
+- [kTickScale](ktickscale.md)
 ### Type Aliases
+- [IOAddressRange](ioaddressrange.md)
+- [IOAlignment](ioalignment.md)
+- [IODeviceNumber](iodevicenumber.md)
+- [IOLogicalAddress](iologicaladdress.md)
 - [OSSerializationPortCopyInHandler](osserializationportcopyinhandler.md)
 - [OSSerializationPortCopyOutHandler](osserializationportcopyouthandler.md)
+- [io_connect_t](io_connect_t.md)
+- [io_enumerator_t](io_enumerator_t.md)
+- [io_ident_t](io_ident_t.md)
+- [io_iterator_t](io_iterator_t.md)
+- [io_object_t](io_object_t.md)
+- [io_registry_entry_t](io_registry_entry_t.md)
+- [io_service_t](io_service_t.md)
 - [pid_t](pid_t.md)
+- [uext_object_t](uext_object_t.md)
 
 
 ---

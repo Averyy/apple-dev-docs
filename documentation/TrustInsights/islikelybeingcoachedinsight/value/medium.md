@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight.Value.medium
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A result that indicates there’s a medium chance that a third party is coaching a person in some form.
@@ -9,7 +9,6 @@ A result that indicates there’s a medium chance that a third party is coaching
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -92,7 +92,7 @@ Profile {
 - [func toolCallingMode(GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/toolcallingmode(_:).md)
 - [func toolCalling(GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/toolcalling(_:).md)
 ### Configuring the model
-- [func model(some LanguageModel) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/model(_:).md)
+- [func model(_:)](languagemodelsession/dynamicprofile/model(_:).md)
   Sets the model.
 - [func temperature(Double?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/temperature(_:).md)
   Sets the model temperature.
@@ -111,6 +111,7 @@ Profile {
 ## Relationships
 
 ### Conforming Types
+- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
 - [LanguageModelSession.ConditionalDynamicProfile](languagemodelsession/conditionaldynamicprofile.md)
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
@@ -124,6 +125,7 @@ Profile {
   Build interactive experiences with Foundation Models and Private Cloud Compute using multimodal prompts.
 - [protocol DynamicInstructions](dynamicinstructions.md)
   A type that represents dynamic instructions.
+- [struct DynamicInstructionsForEach](dynamicinstructionsforeach.md)
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)
   A protocol for creating reusable wrappers around dynamic profile content.
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)

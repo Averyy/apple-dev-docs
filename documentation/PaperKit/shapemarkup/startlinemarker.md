@@ -24,6 +24,13 @@ Line markers are only visible on open paths. Use `shape.supportsLineMarkers` to 
 
 Default is `.none`.
 
+## See Also
+
+- [var endLineMarker: ShapeMarkup.LineMarker](shapemarkup/endlinemarker.md)
+  The line marker used at the end of an open shape path.
+- [ShapeMarkup.LineMarker](shapemarkup/linemarker.md)
+  A marker that can be attached to a line.
+
 
 ---
 

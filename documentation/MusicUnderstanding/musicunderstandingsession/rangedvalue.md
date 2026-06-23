@@ -1,6 +1,6 @@
 # MusicUnderstandingSession.RangedValue
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A structure that pairs a value over a time range.

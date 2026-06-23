@@ -1,6 +1,6 @@
 # beatsPerMinute
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The tempo of the song in beats per minute.

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns a span containing the initial bytes of this span, up to the specified maximum byte count.
+Returns a span containing the initial bytes of this span, up to the specified maximum length.
 
 **Availability**:
 - iOS 12.2+

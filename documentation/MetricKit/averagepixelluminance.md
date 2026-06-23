@@ -25,9 +25,6 @@ This type replaces [`MXUnitAveragePixelLuminance`](mxunitaveragepixelluminance.m
 
 ## Topics
 
-### Initializers
-- [init?(coder: NSCoder)](averagepixelluminance/init(coder:).md)
-- [init(symbol: String, converter: UnitConverter)](averagepixelluminance/init(symbol:converter:).md)
 ### Type Methods
 - [static func baseUnit() -> AveragePixelLuminance](averagepixelluminance/baseunit.md)
 

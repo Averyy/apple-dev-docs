@@ -16,7 +16,7 @@ All bake types used by entities in this lightmap.
 ## Declaration
 
 ```swift
-var bakeTypes: [LightmapResource.BakeType] { get }
+final var bakeTypes: [LightmapResource.BakeType] { get }
 ```
 
 ## See Also

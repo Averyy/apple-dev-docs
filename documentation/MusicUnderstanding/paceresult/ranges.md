@@ -1,6 +1,6 @@
 # ranges
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The pace for a range of a song.

@@ -1,6 +1,6 @@
 # InsightError.insightUnavailable
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicate the requested insight isn’t available.
@@ -9,7 +9,6 @@ An error that indicate the requested insight isn’t available.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

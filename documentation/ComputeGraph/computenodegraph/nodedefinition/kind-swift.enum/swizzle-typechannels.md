@@ -17,7 +17,7 @@ A swizzle operation for the given vector data type and channel specification
 ## Declaration
 
 ```swift
-case swizzle(type: MTLDataType, channels: ComputeNodeGraph.SwizzleChannels)
+case swizzle(type: ComputeNodeGraph.DataType, channels: ComputeNodeGraph.SwizzleChannels)
 ```
 
 

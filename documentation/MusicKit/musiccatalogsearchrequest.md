@@ -31,7 +31,7 @@ struct MusicCatalogSearchRequest
 - [var limit: Int?](musiccatalogsearchrequest/limit.md)
   A limit for the number of items to return in the catalog search response.
 - [var offset: Int?](musiccatalogsearchrequest/offset.md)
-  An offet for the request.
+  An offset for the request.
 - [let term: String](musiccatalogsearchrequest/term.md)
   The search term for the request.
 - [var types: [any MusicCatalogSearchable.Type]](musiccatalogsearchrequest/types.md)

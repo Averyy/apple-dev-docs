@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: method
 
+Triggers relayout of the view.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -15,6 +17,10 @@
 ```swift
 optional func textViewportLayoutControllerReceivedSetNeedsLayout(_ textViewportLayoutController: NSTextViewportLayoutController)
 ```
+
+## Parameters
+
+- `textViewportLayoutController`: The viewport layout controller requesting a relayout.
 
 ## See Also
 

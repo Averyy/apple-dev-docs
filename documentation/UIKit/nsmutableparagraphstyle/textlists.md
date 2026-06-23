@@ -22,6 +22,7 @@ var textLists: [NSTextList] { get set }
 ## See Also
 
 - [var textBlocks: [NSTextBlock]](nsmutableparagraphstyle/textblocks.md)
+  The text blocks that contain the paragraph.
 
 
 ---

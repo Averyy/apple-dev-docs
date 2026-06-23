@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init(vertices: [SIMD3<Float>] = [], triangleIndices: [[Int]] = [], polygonTriangleIndices: [Int] = [])
+init(vertices: [SIMD3<Float>], triangleIndices: [[Int]], polygonTriangleIndices: [Int])
 ```
 
 

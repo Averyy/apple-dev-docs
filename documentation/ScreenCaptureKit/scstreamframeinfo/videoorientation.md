@@ -20,6 +20,8 @@ static let videoOrientation: SCStreamFrameInfo
 
 The key for the CFDictionary attached to the CMSampleBuffer for the video orientation.
 
+The orientation value follows the CGImagePropertyOrientation enum.
+
 
 ---
 

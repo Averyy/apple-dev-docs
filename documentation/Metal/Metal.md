@@ -134,6 +134,7 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
 ### Variables
 - [let MTLDeviceErrorDomain: String](mtldeviceerrordomain.md)
 ### Enumerations
+- [enum MTLFloatingPointConversionRoundingMode](mtlfloatingpointconversionroundingmode.md)
 - [enum MTLTensorPlaneType](mtltensorplanetype.md)
   The possible tensor plane types.
 

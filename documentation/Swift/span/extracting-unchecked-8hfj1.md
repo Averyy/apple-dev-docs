@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Constructs a new span over the items within the supplied range of positions within this span.
+Constructs a new span over the items within the supplied range of indices within this span.
 
 **Availability**:
 - iOS 12.2+
@@ -22,7 +22,7 @@ func extracting(unchecked bounds: Range<Span<Element>.Index>) -> Span<Element>
 
 #### Return Value
 
-A `Span` over the items within `bounds`
+A `Span` over the items within `bounds`.
 
 #### Discussion
 
@@ -34,7 +34,7 @@ This function does not validate `bounds`; this is an unsafe operation.
 
 ## Parameters
 
-- `bounds`: A valid range of positions. Every position in this range must be within the bounds of this `Span`.
+- `bounds`: A valid range of indices. Every index in this range must be within the bounds of this `Span`.
 
 
 ---

@@ -163,6 +163,8 @@ You can load content from an arbitrary Apple Music API endpoint with [`MusicData
 - [class AnyMusicProperty](anymusicproperty.md)
   A type-erased identifier for a music item property, from any root type to any resulting value type.
 ### Articles
+- [Explore more content with MusicKit](explore-more-content-with-musickit.md)
+  Track your outdoor runs with access to the Apple Music catalog, personal recommendations, and your own personal music library.
 - [Integrating MusicKit into your app](integrating-musickit-into-your-app.md)
   Enhance your workouts with Apple Music playback.
 ### Classes

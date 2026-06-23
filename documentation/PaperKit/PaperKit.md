@@ -38,7 +38,8 @@ Configure PaperKit to match your app’s specific needs by providing a [`Feature
   A configuration that specifies the appearance of a shape.
 - [struct RenderingOptions](renderingoptions.md)
   The rendering options for drawing paper data models.
-- [enum PaperDocumentDisplayMode](paperdocumentdisplaymode.md)
+- [struct MarkupAutoresizing](markupautoresizing.md)
+  Automatic sizing behaviors for this markup.
 ### Data model
 - [struct PaperMarkup](papermarkup.md)
   The data model object for storing markup data created from a `PaperViewController`.
@@ -65,9 +66,6 @@ Configure PaperKit to match your app’s specific needs by providing a [`Feature
 ### Error handling
 - [enum MarkupError](markuperror.md)
   The error thrown for encoding / decoding data models.
-### Structures
-- [struct MarkupAutoresizing](markupautoresizing.md)
-  Automatic sizing behaviors for this markup.
 
 
 ---

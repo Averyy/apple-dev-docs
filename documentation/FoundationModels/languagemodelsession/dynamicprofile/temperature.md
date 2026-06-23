@@ -21,7 +21,7 @@ func temperature(_ temperature: Double?) -> some LanguageModelSession.DynamicPro
 
 ## See Also
 
-- [func model(some LanguageModel) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/model(_:).md)
+- [func model(_:)](languagemodelsession/dynamicprofile/model(_:).md)
   Sets the model.
 - [func samplingMode(GenerationOptions.SamplingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/samplingmode(_:).md)
   Sets the samping mode.

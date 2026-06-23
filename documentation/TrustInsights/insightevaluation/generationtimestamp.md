@@ -1,6 +1,6 @@
 # generationTimestamp
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 The timestamp that indicates when the framework created the on-device portion of the assessment, in UTC.
@@ -9,7 +9,6 @@ The timestamp that indicates when the framework created the on-device portion of
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

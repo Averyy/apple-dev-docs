@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: enum
 
+Special value for the trackID property of AVAudioMixInputParameters.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -18,18 +20,13 @@
 enum AVAudioMixInputParametersTrackID
 ```
 
-#### Overview
-
-Special value for the trackID property of AVAudioMixInputParameters.
-
-Indicates that the specified input parameters should be applied to the mix of all audio tracks rather than to a single specific audio track. This is particularly useful for setting up volume ramps or an audio tap for streaming playback.
-
 ## Topics
 
 ### Creating a track identifier
 - [init?(rawValue: CMPersistentTrackID)](avaudiomixinputparameterstrackid/init(rawvalue:).md)
 ### Track identifiers
 - [AVAudioMixInputParametersTrackID.mixID](avaudiomixinputparameterstrackid/mixid.md)
+  Indicates that the specified input parameters should be applied to the mix of all audio tracks rather than to a single specific audio track. This is particularly useful for setting up volume ramps or an audio tap for streaming playback.
 
 ## Relationships
 

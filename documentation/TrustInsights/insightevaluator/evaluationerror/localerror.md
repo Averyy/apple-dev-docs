@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.localError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates the framework couldn’t complete the evaluation.
@@ -9,7 +9,6 @@ An error that indicates the framework couldn’t complete the evaluation.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

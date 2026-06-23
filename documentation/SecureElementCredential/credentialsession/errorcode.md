@@ -72,6 +72,9 @@ enum ErrorCode
   One or more parameters is invalid.
 - [CredentialSession.ErrorCode.internalError](credentialsession/errorcode/internalerror.md)
   The framework encountered an internal error.
+### Enumeration Cases
+- [CredentialSession.ErrorCode.invalidProductConfigID](credentialsession/errorcode/invalidproductconfigid.md)
+  The product configuration ID is invalid.
 ### Instance Properties
 - [var failureReason: String?](credentialsession/errorcode/failurereason.md)
   A string representation of the error code.
@@ -81,7 +84,6 @@ enum ErrorCode
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)

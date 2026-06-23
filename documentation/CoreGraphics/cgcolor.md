@@ -83,8 +83,6 @@ Color objects provide a fast and convenient way to manage and set colors, especi
 - [init?(headroom: Float, colorSpace: CGColorSpace, red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)](cgcolor/init(headroom:colorspace:red:green:blue:alpha:).md)
 ### Instance Properties
 - [var contentHeadroom: Float](cgcolor/contentheadroom.md)
-### Enumerations
-- [CGColor.CodingKeys](cgcolor/codingkeys.md)
 
 ## Relationships
 

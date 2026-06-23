@@ -80,6 +80,7 @@ print(pairs.elements)
   Creates a new `KeyValuePairs` instance from the given dictionary literal.
 ### Instance Properties
 - [var span: Span<KeyValuePairs<Key, Value>.Element>](keyvaluepairs/span.md)
+  A span over the key-value pairs of this collection.
 ### Default Implementations
 - [BidirectionalCollection Implementations](keyvaluepairs/bidirectionalcollection-implementations.md)
 - [Collection Implementations](keyvaluepairs/collection-implementations.md)

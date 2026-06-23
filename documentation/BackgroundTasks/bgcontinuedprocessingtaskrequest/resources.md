@@ -9,7 +9,6 @@ Options that specify additional system resources a background task needs.
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

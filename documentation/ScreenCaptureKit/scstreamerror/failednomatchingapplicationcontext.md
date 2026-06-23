@@ -8,7 +8,7 @@ An error message that indicates there isn’t a matching app context for streami
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 15.4+
+- Mac Catalyst 18.2+
 - macOS 12.3+
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)

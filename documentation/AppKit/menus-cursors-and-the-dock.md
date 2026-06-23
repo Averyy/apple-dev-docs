@@ -24,6 +24,9 @@ Implement menus and cursors to facilitate interactions with your app, and use yo
   An individual element displayed in the system menu bar.
 - [class NSStatusBarButton](nsstatusbarbutton.md)
   The appearance and behavior of an item in the systemwide menu bar.
+### Expanded interface
+- [class NSStatusItemExpandedInterfaceSession](nsstatusitemexpandedinterfacesession.md)
+- [protocol NSStatusItemExpandedInterfaceDelegate](nsstatusitemexpandedinterfacedelegate.md)
 ### Cursors
 - [class NSCursor](nscursor.md)
   A pointer (also called a cursor).

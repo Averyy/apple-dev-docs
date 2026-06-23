@@ -39,6 +39,7 @@ struct Shadow
   The light’s culling mode for shadow map rendering.
 ### Configuring shadow quality
 - [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
+  The quality of the soft shadows this light casts.
 - [SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode.md)
   The quality for the shadows. Low uses shadows that don’t change with light size and the distance between light-blocker-receiver Medium and high allow soft shadows with varying sample counts
 - [var lightSize: Float](spotlightcomponent/shadow/lightsize.md)

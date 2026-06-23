@@ -1,6 +1,6 @@
 # requestEvaluation(context:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: method
 
 Requests the evaluation of insights.
@@ -9,7 +9,6 @@ Requests the evaluation of insights.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

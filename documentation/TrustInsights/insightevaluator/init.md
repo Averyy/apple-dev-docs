@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: init
 
 Creates a new insight evaluator object you use to request insights.
@@ -9,7 +9,6 @@ Creates a new insight evaluator object you use to request insights.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

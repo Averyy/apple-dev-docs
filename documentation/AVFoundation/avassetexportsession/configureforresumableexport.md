@@ -53,6 +53,7 @@ try await exportSession.export(to: outputURL, as: .mov)
 ## See Also
 
 - [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+  An enum that identifies various reasons why resumable export configuration has failed.
 
 
 ---

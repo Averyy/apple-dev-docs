@@ -24,13 +24,11 @@ protocol DownloadableAssetsRequest
 ### Instance Methods
 - [func downloadAssets() async throws](downloadableassetsrequest/downloadassets.md)
 - [func downloadAssets(progress: consuming Subprogress) async throws](downloadableassetsrequest/downloadassets(progress:).md)
-- [func downloadAssetsWithProgress() throws -> DownloadableAssetsProgress](downloadableassetsrequest/downloadassetswithprogress.md)
 
 ## Relationships
 
 ### Conforming Types
 - [GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
-- [GenerateSelectedObjectSegmentationRequest](generateselectedobjectsegmentationrequest.md)
 
 
 ---

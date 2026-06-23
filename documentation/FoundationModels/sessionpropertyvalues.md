@@ -54,9 +54,7 @@ Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom sessi
 
 ### Accessing the session history and instructions
 - [var history: ArraySlice<Transcript.Entry>](sessionpropertyvalues/history.md)
-  The transcript of the session.
-- [var rootDynamicInstructions: any DynamicInstructions](sessionpropertyvalues/rootdynamicinstructions.md)
-  The root dynamic instructions.
+  The history portion of the session’s transcript.
 ### Accessing the subscript
 - [subscript<K>(K.Type) -> K.Value](sessionpropertyvalues/subscript(_:).md)
 

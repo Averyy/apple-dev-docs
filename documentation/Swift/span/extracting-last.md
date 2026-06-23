@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Returns a span containing the final elements of the span, up to the given maximum length.
+Returns a span containing the trailing elements of the span, up to the given maximum length.
 
 **Availability**:
 - iOS 12.2+

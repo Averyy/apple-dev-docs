@@ -51,6 +51,9 @@ For additional information about how to use views and controls, see [`Human Inte
   A multipage interface that displays one page at a time.
 - [Scroll View](scroll-view.md)
   Provide an interface for navigating content that is too large to fit in the available space.
+### Pull to refresh
+- [class NSRefreshController](nsrefreshcontroller.md)
+  A controller that provides pull-to-refresh functionality for scroll views.
 ### Content views
 - [Browser View](browser-view.md)
   Provide a column-based interface for viewing and navigating hierarchical information.
@@ -114,8 +117,8 @@ For additional information about how to use views and controls, see [`Human Inte
 - [class NSGlassEffectContainerView](nsglasseffectcontainerview.md)
   A view that efficiently merges descendant glass effect views together when they are within a specified proximity to each other.
 ### Observing data in views
-- [Updating views automatically with observation tracking](updating-views-automatically-with-observation-tracking.md)
-  Use Swift Observation and AppKit’s automatic tracking to update your views in response to model data updates.
+- [Updating views automatically with observation tracking in AppKit](updating-views-automatically-with-observation-tracking-in-appkit.md)
+  Use Swift Observation and automatic tracking to update your views in response to model data updates.
 - [func layout()](nsview/layout.md)
   Perform layout in concert with the constraint-based layout system.
 - [func updateConstraints()](nsview/updateconstraints.md)
@@ -134,6 +137,13 @@ For additional information about how to use views and controls, see [`Human Inte
 ### Interacting with adjacent views
 - [class NSBackgroundExtensionView](nsbackgroundextensionview.md)
   A view that extends content to fill its own bounds.
+### Corner configuration
+- [class NSViewCornerConfiguration](nsviewcornerconfiguration.md)
+  A configuration object that defines the corner styles of a view’s overall shape.
+- [class NSViewCornerRadii](nsviewcornerradii.md)
+  Provides a structured way to define custom corner radii for each corner of a view, along with a corner curve.
+- [class NSViewCornerRadius](nsviewcornerradius.md)
+  Represents a radius used to round a corner. It supports fixed and adaptive configurations.
 ### Visual adornments
 - [class NSVisualEffectView](nsvisualeffectview.md)
   A view that adds translucency and vibrancy effects to the views in your interface.

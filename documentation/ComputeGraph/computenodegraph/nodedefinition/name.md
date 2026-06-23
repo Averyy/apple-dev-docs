@@ -22,7 +22,7 @@ var name: String
 
 #### Discussion
 
-Definitions whose kind is [`ComputeNodeGraph.NodeDefinition.Kind.function`](computenodegraph/nodedefinition/kind-swift.enum/function.md)  will match their MTLFunction via name.
+Definitions whose kind is `ComputeNodeGraph/NodeDefinition/Kind/function`  will match their MTLFunction via name.
 
 
 ---

@@ -1,4 +1,4 @@
 Completed scraping Endpoint Security!
-Total pages scraped: 0
-Pages skipped (unchanged): 1586
+Total pages scraped: 1620
+Pages skipped (unchanged): 1
 Pages failed: 0

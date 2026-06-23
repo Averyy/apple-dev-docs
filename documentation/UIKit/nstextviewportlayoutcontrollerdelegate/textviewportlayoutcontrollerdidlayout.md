@@ -33,6 +33,7 @@ Layout information on `textViewportLayoutController` is up-to-date at the point 
 - [func textViewportLayoutControllerWillLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerwilllayout(_:).md)
   The method the framework calls before the text viewport layout controller starts its layout process.
 - [func textViewportLayoutControllerReceivedSetNeedsLayout(NSTextViewportLayoutController)](nstextviewportlayoutcontrollerdelegate/textviewportlayoutcontrollerreceivedsetneedslayout(_:).md)
+  Triggers relayout of the view.
 - [func viewportBounds(for: NSTextViewportLayoutController) -> CGRect](nstextviewportlayoutcontrollerdelegate/viewportbounds(for:).md)
   Returns the current viewport, which is the view visible bounds plus the overdraw area.
 

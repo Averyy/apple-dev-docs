@@ -34,11 +34,15 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [EndpointSecurity Structures](endpointsecurity-structures.md)
 - [EndpointSecurity Enumerations](endpointsecurity-enumerations.md)
 ### Structures
+- [struct es_bootstrap_target_type_t](es_bootstrap_target_type_t.md)
 - [struct es_cs_validation_category_t](es_cs_validation_category_t.md)
   es_cs_validation_category
 - [struct es_deadline_miss_mode_t](es_deadline_miss_mode_t.md)
   Deadline miss mode for ES clients
+- [struct es_event_bootstrap_check_in_t](es_event_bootstrap_check_in_t.md)
+- [struct es_event_bootstrap_look_up_t](es_event_bootstrap_look_up_t.md)
 - [struct es_event_tcc_modify_t](es_event_tcc_modify_t.md)
+- [struct es_lightweight_code_requirement_t](es_lightweight_code_requirement_t.md)
 - [struct es_tcc_authorization_reason_t](es_tcc_authorization_reason_t.md)
   ess_tcc_authorization_reason_t
 - [struct es_tcc_authorization_right_t](es_tcc_authorization_right_t.md)
@@ -47,6 +51,8 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [struct es_tcc_identity_type_t](es_tcc_identity_type_t.md)
   es_tcc_identity_type_t
 ### Variables
+- [var ES_BOOTSTRAP_TARGET_TYPE_JOB: es_bootstrap_target_type_t](es_bootstrap_target_type_job.md)
+- [var ES_BOOTSTRAP_TARGET_TYPE_PROCESS: es_bootstrap_target_type_t](es_bootstrap_target_type_process.md)
 - [var ES_CS_VALIDATION_CATEGORY_APP_STORE: es_cs_validation_category_t](es_cs_validation_category_app_store.md)
 - [var ES_CS_VALIDATION_CATEGORY_DEVELOPER_ID: es_cs_validation_category_t](es_cs_validation_category_developer_id.md)
 - [var ES_CS_VALIDATION_CATEGORY_DEVELOPMENT: es_cs_validation_category_t](es_cs_validation_category_development.md)
@@ -64,6 +70,11 @@ Develop your system extension with Endpoint Security and package it in an app th
   Allow the operation when client fails to respond, but don’t kill the client
 - [var ES_DEADLINE_MISS_MODE_KILL: es_deadline_miss_mode_t](es_deadline_miss_mode_kill.md)
   Kill the client when it fails to respond to an auth event (default behavior)
+- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_CHECK_IN: es_event_type_t](es_event_type_auth_bootstrap_check_in.md)
+- [var ES_EVENT_TYPE_AUTH_BOOTSTRAP_LOOK_UP: es_event_type_t](es_event_type_auth_bootstrap_look_up.md)
+- [var ES_EVENT_TYPE_AUTH_XPC_CONNECT: es_event_type_t](es_event_type_auth_xpc_connect.md)
+- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_CHECK_IN: es_event_type_t](es_event_type_notify_bootstrap_check_in.md)
+- [var ES_EVENT_TYPE_NOTIFY_BOOTSTRAP_LOOK_UP: es_event_type_t](es_event_type_notify_bootstrap_look_up.md)
 - [var ES_EVENT_TYPE_NOTIFY_TCC_MODIFY: es_event_type_t](es_event_type_notify_tcc_modify.md)
 - [var ES_EVENT_TYPE_RESERVED_0: es_event_type_t](es_event_type_reserved_0.md)
 - [var ES_EVENT_TYPE_RESERVED_1: es_event_type_t](es_event_type_reserved_1.md)
@@ -115,6 +126,7 @@ Develop your system extension with Endpoint Security and package it in an app th
 - [var ES_TCC_IDENTITY_TYPE_FILE_PROVIDER_DOMAIN_ID: es_tcc_identity_type_t](es_tcc_identity_type_file_provider_domain_id.md)
 - [var ES_TCC_IDENTITY_TYPE_POLICY_ID: es_tcc_identity_type_t](es_tcc_identity_type_policy_id.md)
 ### Functions
+- [func es_exec_entitlements(UnsafePointer<es_event_exec_t>) -> xpc_object_t?](es_exec_entitlements(_:).md)
 - [func es_get_deadline_max_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_max_milliseconds(_:_:_:).md)
   Get the current maximum deadline in milliseconds for a specific event type
 - [func es_get_deadline_min_milliseconds(OpaquePointer, es_event_type_t, UnsafeMutablePointer<UInt32>) -> es_return_t](es_get_deadline_min_milliseconds(_:_:_:).md)

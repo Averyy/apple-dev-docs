@@ -84,6 +84,8 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
 
 - [Using TextKit 2 to interact with text](../UIKit/using-textkit-2-to-interact-with-text.md)
   Interact with text by managing text selection and inserting custom text elements.
+- [Managing viewport layout and attachment reuse in text views](../UIKit/managing-viewport-layout-and-attachment-reuse-in-a-text-view-subclass.md)
+  Customize layout and preserve attachment views in your text view subclass.
 - [class NSTextLayoutManager](nstextlayoutmanager.md)
   The primary class that you use to manage text layout and presentation for custom text displays.
 - [class NSTextLayoutFragment](nstextlayoutfragment.md)
@@ -94,6 +96,10 @@ You can access instances of the [`NSTextContainer`](nstextcontainer.md), [`NSLay
   Manages the layout process inside the viewport interacting with its delegate.
 - [protocol NSTextLayoutOrientationProvider](nstextlayoutorientationprovider.md)
   A set of methods that define the orientation of text for an object.
+- [protocol NSTextViewportRenderingSurface](nstextviewportrenderingsurface.md)
+  A protocol that identifies a view or layer as a drawable element for a text layout fragment.
+- [protocol NSTextViewportRenderingSurfaceKey](nstextviewportrenderingsurfacekey.md)
+  A protocol that lets you use an object to identify a rendering surface when storing or retrieving it.
 
 
 ---

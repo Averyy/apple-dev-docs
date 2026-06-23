@@ -1,6 +1,6 @@
 # InsightEvaluator.AuthorizationStatus.denied
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates a person denied permission to use the framework.
@@ -9,7 +9,6 @@ A value that indicates a person denied permission to use the framework.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

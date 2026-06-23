@@ -3,6 +3,8 @@
 **Framework**: AVKit  
 **Kind**: property
 
+A configuration object that manages viewport settings for different presentation modes.
+
 **Availability**:
 - visionOS 27.0+ (Beta)
 
@@ -11,10 +13,6 @@
 ```swift
 var viewport: AVViewport { get }
 ```
-
-#### Discussion
-
-A configuration object that manages viewport settings for different presentation modes.
 
 ## See Also
 
@@ -35,6 +33,7 @@ A configuration object that manages viewport settings for different presentation
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
 - [class AVViewport](avviewport.md)
+  A configuration object that manages viewport settings for different presentation modes.
 
 
 ---

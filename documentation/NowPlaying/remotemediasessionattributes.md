@@ -27,6 +27,8 @@ Conform to this protocol to define the data that configures your remote sessions
 
 Your host app’s [`RemoteMediaSession`](remotemediasession.md) and your [`RemoteMediaSessionExtension`](remotemediasessionextension.md) share the same attributes type: the host encodes it when starting or updating a session, and the extension decodes it to create or refresh a session.
 
+For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+
 ## Topics
 
 ### Instance Properties

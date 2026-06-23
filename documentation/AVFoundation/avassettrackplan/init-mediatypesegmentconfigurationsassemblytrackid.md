@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: init
 
+Returns an instance of AVAssetTrackPlan
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -18,8 +20,6 @@ init(mediaType: AVMediaType, segmentConfigurations: [AVPlannedSegmentConfigurati
 ```
 
 #### Discussion
-
-Returns an instance of AVAssetTrackPlan
 
 This initializer throws NSInvalidArgumentException if trackID is kCMPersistentTrackID_Invalid.
 

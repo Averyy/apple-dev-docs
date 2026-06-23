@@ -30,7 +30,7 @@ A custom view where your app manages state for the user interface or you use cus
 
 When your app uses a custom view and your app manages its state or you use custom drawing to render a UI element, you need to implement your own `appEntityUIElementProvider`. This closure provides the system with `AppEntityUIElement` objects that combine the app entity for your content and additional information with spatial and state information to help the system understand onscreen content.
 
-For more information, refer to doc:Making-onscreen-content-available-to-siri-and-apple-intelligence and [`App Intents`](AppIntents.md).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](AppIntents.md).
 
 ## Topics
 

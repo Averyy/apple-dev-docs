@@ -20,9 +20,19 @@ Returns a Boolean value indicating whether two instances refer to the same memor
 func isTriviallyIdentical(to other: Span<Element>) -> Bool
 ```
 
+#### Return Value
+
+Whether `self` and `other` reference the same region in memory.
+
 #### Discussion
 
+Two spans are identical if they reference the same starting address and have the same number of elements.
+
 > **Note**: O(1)
+
+## Parameters
+
+- `other`: A span to compare with this one.
 
 
 ---

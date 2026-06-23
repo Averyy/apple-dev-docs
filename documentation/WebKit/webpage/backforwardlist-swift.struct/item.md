@@ -45,6 +45,15 @@ Two items with equal titles, urls, and initial urls may not necessarily be equal
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+  An observable representation of a webpage’s previously loaded resources.
+- [WebPage.NavigationEvent](webpage/navigationevent.md)
+  A particular state that occurs during the progression of a navigation.
+- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+  An opaque type representing the identifier for an item.
+
 
 ---
 

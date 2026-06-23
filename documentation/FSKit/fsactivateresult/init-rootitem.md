@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: init
 
-Creates a result instance with all required properties populated.
+Creates an activate result instance.
 
 **Availability**:
 - macOS 27.0+ (Beta)

@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: init
 
+Creates an instance of AVPlannedSegmentConfiguration specifying the duration of the planned segment.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -22,8 +24,6 @@ init(duration: CMTime)
 An instance of AVPlannedSegmentConfiguration, or nil if initialization fails.
 
 #### Discussion
-
-Creates an instance of AVPlannedSegmentConfiguration specifying the duration of the planned segment.
 
 The duration parameter must be numeric and greater than 0. Otherwise, the initializer throws NSInvalidArgumentException.
 

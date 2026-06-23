@@ -112,7 +112,6 @@ func newContextualSession(with originalSession: LanguageModelSession) -> Languag
 - [Transcript.ToolOutput](transcript/tooloutput.md)
   A tool output provided back to the model.
 - [Transcript.CustomSegment](transcript/customsegment.md)
-  A segment whose content is defined by a custom content.
 ### Accessing the transcript history
 - [var history: ArraySlice<Transcript.Entry>](transcript/history.md)
   The transcript entries excluding the leading instructions entry, if present.

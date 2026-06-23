@@ -41,8 +41,6 @@ struct AnyDynamicInstructions
   A dynamic instructions type that conditionally selects between two conditions.
 - [struct TupleDynamicInstructions](tupledynamicinstructions.md)
   A dynamic instructions type that represents a tuple.
-- [struct AnyTool](anytool.md)
-  A tool that the framework invokes in dynamic instructions.
 
 
 ---

@@ -1,6 +1,6 @@
 # momentary
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 An array of momentary loudness measurements sampled across the song in LUFS.

@@ -46,14 +46,14 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
   Returns the list options mask value of the receiver.
 - [NSTextList.Options](nstextlist/options.md)
   Values that available options for text list items.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the contents.
 ### Managing item numbering
 - [var startingItemNumber: Int](nstextlist/startingitemnumber.md)
   Sets the starting item number for the text list.
 ### Constants
 - [static var prependEnclosingMarker: NSTextList.Options](nstextlist/options/prependenclosingmarker.md)
   Specifies that a nested list should include the marker for its enclosing superlist before its own marker.
-### Type Properties
-- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
 
 ## Relationships
 
@@ -78,12 +78,6 @@ In addition, [`NSAttributedString`](https://developer.apple.com/documentation/Fo
   An object for changing the values of the subattributes in a paragraph style attribute.
 - [class NSTextTab](nstexttab.md)
   A tab in a paragraph.
-- [class NSTextTable](nstexttable.md)
-  An object that represents a text table as a whole.
-- [class NSTextTableBlock](nstexttableblock.md)
-  A text block that appears as a cell in a text table.
-- [class NSTextBlock](nstextblock.md)
-  A block of text laid out in a subregion of the text container.
 
 
 ---

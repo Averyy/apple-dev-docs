@@ -95,6 +95,7 @@ struct PKPaymentNetwork
 - [static let elCorteIngles: PKPaymentNetwork](pkpaymentnetwork/elcorteingles.md)
 - [static let himyan: PKPaymentNetwork](pkpaymentnetwork/himyan.md)
 - [static let jaywan: PKPaymentNetwork](pkpaymentnetwork/jaywan.md)
+  A Jaywan payment card.
 - [static let myDebit: PKPaymentNetwork](pkpaymentnetwork/mydebit.md)
 
 ## Relationships

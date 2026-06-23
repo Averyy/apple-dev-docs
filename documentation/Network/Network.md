@@ -207,10 +207,6 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: () -> ApplicationProtocol, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-4wpc9.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-7skhi.md)
 - [func withNetworkConnection<ApplicationProtocol>(to: NWEndpoint, using: NWParametersBuilder<ApplicationProtocol>, (NetworkConnection<ApplicationProtocol>) async throws -> Void) async throws](withnetworkconnection(to:using:_:)-887ho.md)
-### Type Aliases
-- [typealias NetworkActorInterruptionHandler](networkactorinterruptionhandler.md)
-  A handler that is invoked when the underlying connection is interrupted. An attempt at creating a new connection will occur if another remote call is invoked on the same remote instance of an actor.
-- [typealias NetworkActorInvalidationHandler](networkactorinvalidationhandler.md)
 
 
 ---

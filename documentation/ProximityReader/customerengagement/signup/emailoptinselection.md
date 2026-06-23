@@ -16,17 +16,6 @@ A Boolean value that indicates if the customer opted-in to email marketing.
 let emailOptInSelection: Bool
 ```
 
-## See Also
-
-- [let emailAddress: String?](customerengagement/signup/emailaddress.md)
-  The customer’s email address
-- [let name: PersonNameComponents?](customerengagement/signup/name.md)
-  The customer’s full name.
-- [let phoneNumber: CNPhoneNumber?](customerengagement/signup/phonenumber.md)
-  The customer’s phone number.
-- [let smsOptInSelection: Bool](customerengagement/signup/smsoptinselection.md)
-  A Boolean value that indicates if the customer opted-in to SMS marketing.
-
 
 ---
 

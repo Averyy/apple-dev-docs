@@ -3,6 +3,8 @@
 **Framework**: AVKit  
 **Kind**: property
 
+The viewport configuration to use when immersive content is displayed in a portal.
+
 **Availability**:
 - visionOS 27.0+ (Beta)
 
@@ -14,17 +16,14 @@ var portal: AVPortalViewport? { get set }
 
 #### Discussion
 
-The viewport configuration to use when immersive content is displayed in a portal.
-
 Set this property to customize how content appears within a portal frame. When nil, the system uses default portal settings.
 
-```None
-		Spatial videos are not supported by portal viewports.
-```
+> **Note**: Spatial videos do not support portal viewport settings.
 
 ## See Also
 
 - [class AVPortalViewport](avportalviewport.md)
+  A viewport configuration used when displaying content in portals.
 
 
 ---

@@ -373,11 +373,13 @@ You typically let Xcode manage the entitlements file for you. For information on
   A Boolean value that indicates whether your app can use the TV Provider Authentication service.
 - [com.apple.smoot.subscriptionservice](entitlements/com.apple.smoot.subscriptionservice.md)
   A Boolean value that indicates whether your app meets the requirements of the video-partner program.
-### Vision
+### visionOS
 - [Low-Latency Streaming](entitlements/com.apple.developer.low-latency-streaming.md)
   A Boolean value indicating whether your app may use low-latency wireless networking.
-- [com.apple.developer.foveated-streaming-session](entitlements/com.apple.developer.foveated-streaming-session.md)
+- [Foveated Streaming Session](entitlements/com.apple.developer.foveated-streaming-session.md)
   An entitlement that allows a visionOS app to initiate real-time streaming of spatial content from a cloud streaming endpoint via the Foveated Streaming framework.
+- [Foveated Streaming Provider](entitlements/com.apple.developer.foveated-streaming-provider.md)
+  An entitlement that allows other apps to use privacy-sensitive foveation data for streaming from remote endpoints to Apple Vision Pro.
 ### Wallet
 - [Pass Type IDs Entitlement](entitlements/com.apple.developer.pass-type-identifiers.md)
   A list of identifiers that specify pass types that your app can access in Wallet.

@@ -67,6 +67,7 @@ if let statusRawValue = attachments[SCStreamFrameInfo.status] as? Int {
   Constants that represent output types for a stream frame.
 - [struct SCStreamFrameInfo](scstreamframeinfo.md)
   An instance that defines metadata keys for a stream frame.
+- [class SCClipBufferingOutput](scclipbufferingoutput.md)
 
 
 ---

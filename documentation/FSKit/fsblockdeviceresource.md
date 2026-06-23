@@ -22,6 +22,8 @@ This class wraps a file descriptor for a disk device or partition. Its fundament
 
 When you use a `FSBlockDeviceResource`, your file system implementation also conforms to a maintenance operation protocol. These protocols add support for checking, repairing, and optionally formatting file systems. The system doesn’t mount block device file systems until they pass a file system check. For an [`FSUnaryFileSystem`](fsunaryfilesystem.md) that uses `FSBlockDeviceResource`, conform to `FSManageableResourceMaintenanceOperations`.
 
+> ❗ **Important**: Don’t mix direct I/O operations (`read(into:startingAt:length:)` and `write(from:startingAt:length:)`) with metadata operations ([`metadataRead(into:startingAt:length:)`](fsblockdeviceresource/metadataread(into:startingat:length:).md), [`metadataWrite(from:startingAt:length:)`](fsblockdeviceresource/metadatawrite(from:startingat:length:).md), and [`delayedMetadataWrite(from:startingAt:length:)`](fsblockdeviceresource/delayedmetadatawrite(from:startingat:length:).md)) on the same range. Direct I/O bypasses the buffer cache, so mixing the two may result in stale or inconsistent data.
+
 ## Topics
 
 ### Accessing resource properties

@@ -1,6 +1,6 @@
 # KeyResult.Tonic
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: enum
 
 The root note of a musical key.

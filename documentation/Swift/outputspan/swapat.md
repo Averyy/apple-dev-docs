@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: method
 
-Exchange the elements at the two given offsets
+Exchange the elements at the two given indices.
 
 **Availability**:
 - iOS 12.2+

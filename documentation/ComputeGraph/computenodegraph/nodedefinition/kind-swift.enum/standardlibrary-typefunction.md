@@ -17,7 +17,7 @@ A call to a standard library function with the specified data type.
 ## Declaration
 
 ```swift
-case standardLibrary(type: MTLDataType, function: StandardLibraryFunction)
+case standardLibrary(type: ComputeNodeGraph.DataType, function: StandardLibraryFunction)
 ```
 
 

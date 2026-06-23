@@ -28,7 +28,7 @@ return AppEntityUIElement( identifier: EntityIdentifier( for: PhotoModel.self, i
 If your custom view shows content you can describe with a single app entity, use the ``appEntityIdentifier`` property instead to
 associate the app entity with your custom view.
 
-For more information, refer to <doc:Making-onscreen-content-available-to-siri-and-apple-intelligence> and
+For more information, refer to <doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri> and
 <doc://com.apple.documentation/documentation/appintents>.
 ```
 

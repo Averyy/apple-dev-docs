@@ -16,7 +16,6 @@ The skeleton the source animation targets.
 ## Declaration
 
 ```swift
-@MainActor
 var sourceSkeleton: SkeletonResource { get }
 ```
 

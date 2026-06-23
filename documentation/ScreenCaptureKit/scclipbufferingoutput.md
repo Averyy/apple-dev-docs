@@ -42,6 +42,17 @@ SCClipBufferingOutput represents a clip buffering session on a SCStream.
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [protocol SCStreamOutput](scstreamoutput.md)
+  A delegate protocol your app implements to receive capture stream output events.
+- [enum SCStreamOutputType](scstreamoutputtype.md)
+  Constants that represent output types for a stream frame.
+- [struct SCStreamFrameInfo](scstreamframeinfo.md)
+  An instance that defines metadata keys for a stream frame.
+- [enum SCFrameStatus](scframestatus.md)
+  Status values for a frame from a stream.
+
 
 ---
 

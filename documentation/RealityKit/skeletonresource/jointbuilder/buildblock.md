@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: method
 
+Combines all joints declared in the closure body into the parent’s `children`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

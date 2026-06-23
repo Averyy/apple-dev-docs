@@ -63,8 +63,6 @@ enum AssistantSchemas
   Assistant schema conformance for app intents that offer photo and video functionality.
 - [AssistantSchemas.PresentationEntity](assistantschemas/presentationentity.md)
   Assistant schema conformance for app entities that describe presentation data.
-- [AssistantSchemas.PresentationEnum](assistantschemas/presentationenum.md)
-  Assistant schema conformance for types you use for presentation functionality.
 - [AssistantSchemas.PresentationIntent](assistantschemas/presentationintent.md)
   Assistant schema conformance for app intents that offer presentation functionality.
 - [AssistantSchemas.ReaderEntity](assistantschemas/readerentity.md)

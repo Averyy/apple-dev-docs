@@ -1,6 +1,6 @@
 # SchemaVersion
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: associatedtype  
 **Required**: Yes
 
@@ -10,7 +10,6 @@ A value that represents one of the available schema versions for the particular 
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

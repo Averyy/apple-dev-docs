@@ -9,7 +9,6 @@ An option that fails the submission of a continuous background task if the syste
 - iOS 26.0+
 - iPadOS 26.0+
 - Mac Catalyst 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

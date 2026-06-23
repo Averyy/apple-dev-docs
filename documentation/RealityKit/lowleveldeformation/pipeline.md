@@ -30,7 +30,7 @@ Create a pipeline once and reuse it across frames.
 
 ## See Also
 
-- [func encode(into: any MTLComputeCommandEncoder) throws(LowLevelDeformation.Error)](lowleveldeformation/encode(into:).md)
+- [func encode(into: any MTLComputeCommandEncoder) throws](lowleveldeformation/encode(into:).md)
   Encodes the configured deformation passes into the given command encoder.
 - [LowLevelDeformation.Error](lowleveldeformation/error.md)
   The error type thrown by every throwing method and initializer.

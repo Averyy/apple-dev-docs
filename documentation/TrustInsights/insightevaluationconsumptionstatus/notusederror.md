@@ -1,6 +1,6 @@
 # InsightEvaluationConsumptionStatus.notUsedError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 A value that indicates the app couldn’t use the insights because of a technical failure, they arrived too late to be of use, or other issue.
@@ -9,7 +9,6 @@ A value that indicates the app couldn’t use the insights because of a technica
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

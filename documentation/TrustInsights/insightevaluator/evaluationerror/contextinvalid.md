@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.contextInvalid(_:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates the framework couldn’t produce an evaluation for the provided context.
@@ -9,7 +9,6 @@ An error that indicates the framework couldn’t produce an evaluation for the p
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

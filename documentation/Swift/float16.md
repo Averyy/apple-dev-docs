@@ -77,6 +77,8 @@ On macOS, `Float16` is only available when targeting Apple silicon. On other sup
 - [BinaryFloatingPoint](binaryfloatingpoint.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)
@@ -100,6 +102,9 @@ On macOS, `Float16` is only available when targeting Apple silicon. On other sup
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
 - [TextOutputStreamable](textoutputstreamable.md)
+- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
+- [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also
 

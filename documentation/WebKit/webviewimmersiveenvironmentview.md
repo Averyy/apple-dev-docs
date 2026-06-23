@@ -34,6 +34,13 @@ Place this view in your app’s Immersive Space hierarchy. Initialize it with th
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [View](../SwiftUI/View.md)
 
+## See Also
+
+- [WebPage.ImmersiveEnvironment](webpage/immersiveenvironment.md)
+  An object representing a website-provided immersive environment that is ready for presentation.
+- [var allowsImmersiveEnvironments: Bool](webpage/configuration/allowsimmersiveenvironments.md)
+  Indicates whether website immersive environments are allowed.
+
 
 ---
 

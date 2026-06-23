@@ -58,6 +58,10 @@ Manage apps, books, and subscriptions for your students and employees.
   Add administrators for subscriptions.
 - [Remove Subscription Administrators](remove-subscription-administrators.md)
   Remove administrators from subscriptions.
+- [Get In-App Purchases](get-in-app-purchases.md)
+- [Get In-App Assignments](get-in-app-assignments.md)
+- [Associate In-App Purchases](associate-in-app-purchases.md)
+- [Disassociate In-App Purchases](disassociate-in-app-purchases.md)
 ### User management
 - [Get Users](get-users-4mwln.md)
   Get information about a set of users.
@@ -94,11 +98,8 @@ Manage apps, books, and subscriptions for your students and employees.
 - [object ManageSubscriptionsRequest](managesubscriptionsrequest.md)
   The request for subscription management.
 - [object ManageSubscriptionAdminsRequest](managesubscriptionadminsrequest.md)
-  Request body for adding or removing subscription administrators.
 - [object ManageSubscriptionAdminsResponse](managesubscriptionadminsresponse.md)
-  Confirmation response returned after adding or removing subscription administrators.
 - [object ResponseSubscriptionAdmin](responsesubscriptionadmin.md)
-  An administrator for a subscription.
 - [object MdmInfo](mdminfo.md)
   Information about the MDM client.
 - [object EventResponse](eventresponse.md)
@@ -106,7 +107,6 @@ Manage apps, books, and subscriptions for your students and employees.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 - [object StatusResponse](statusresponse.md)
-  Status of an asynchronous event, including event type, current status, completion counts, and any failure details.
 ### Legacy API
 - [App and book management (Legacy)](app-and-book-management-legacy.md)
   Manage apps and books for your students and employees.

@@ -8,18 +8,21 @@ Build, test, and submit your app with Apple’s integrated development environme
 
 Xcode is the suite of tools you use to build apps for Apple platforms. Use Xcode to manage your entire development workflow — from creating your app to testing, optimizing, and submitting it to the App Store.
 
-![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/e1b60f9edde6ed1d1f80b5578dba24c0/xcode-overview-landmarks-hero%402x.png)
+![Screenshot of MacBook Pro running Xcode that shows SwiftUI with a preview and running the app on an iPhone device.](https://docs-assets.developer.apple.com/published/d09691fa90c63e90ebf65ece8199ed50/xcode-overview-hero%402x.png)
 
-Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Use coding intelligence to explain and write code, analyze bugs, and generate fixes. Add playground macros to run code snippets, and add previews to see your UI as you build it.
+Xcode includes a world-class source editor with code completion, source control, and a powerful debugger. Add playground macros to run code snippets, and add previews to see your UI as you build it. Customize the toolbar and apply themes to your workspace or projects.
+
+Use coding intelligence from anywhere in your project to explain and write code, analyze bugs, and generate fixes. Use agents that iterate and refine your code with Xcode guidance, skills, and other expertise. You can also use coding intelligence to localize your app or make it more accessible for people who use VoiceOver.
 
 Xcode also includes several tools to help you rapidly develop and test your app:
 
-- Run your entire app on a simulated device without using a physical device.
+- Run your app on a simulated or physical device using Device Hub.
 - Create a single, multilayer icon for your app using the Icon Composer app.
 - Use Instruments to profile and analyze your app, improve performance, and investigate system resource usage.
 - Construct 3D content with Reality Composer.
 - Train custom machine learning models with Create ML.
 - Identify areas of your app that aren’t accessible with Accessibility Inspector.
+- Use Xcode Cloud to build and test your app. Later, join the Apple Developer Program to distribute it.
 
 > **Note**: Download the latest version of Xcode from the [`Mac App Store`](https://developer.apple.comhttps://apps.apple.com/us/app/xcode/id497799835). Download beta versions of Xcode from the [`Apple Developer website`](https://developer.apple.comhttps://developer.apple.com/xcode/).
 

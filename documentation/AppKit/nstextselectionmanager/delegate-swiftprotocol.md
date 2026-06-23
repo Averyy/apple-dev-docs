@@ -42,6 +42,11 @@ Delegates are responsible for managing the text selection state and can customiz
 ### Inherits From
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [var delegate: (any NSTextSelectionManager.Delegate)?](nstextselectionmanager/delegate-swift.property.md)
+  The delegate of the text selection manager.
+
 
 ---
 

@@ -21,7 +21,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-A prim’s validity is connected to a [`USDStage`](usdstage-4sfi1.md). A prim becomes invalid when the lifetime of its stage ends.
+A prim’s validity is connected to a [`USDStage`](usdstage.md). A prim becomes invalid when the lifetime of its stage ends.
 
 A prim will also expire if its stage no longer defines that prim. `isValid` is false if this prim has expired.
 

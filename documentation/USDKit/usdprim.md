@@ -80,8 +80,6 @@ struct USDPrim
 - [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
 - [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
 - [func makeAttribute(named: USDToken, as: USDPrim.Attribute.ValueType, custom: Bool, variability: USDPrim.Property.Variability) -> USDPrim.Attribute](usdprim/makeattribute(named:as:custom:variability:).md)
-- [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:).md)
-  Access or modify the value of a named attribute on this prim.
 - [USDPrim.Attribute](usdprim/attribute.md)
 ### Accessing relationships
 - [func relationship(named: USDToken) -> USDPrim.Relationship?](usdprim/relationship(named:).md)
@@ -121,6 +119,21 @@ struct USDPrim
   A handle to a prim definition stored in a layer.
 - [USDPrim.PseudoRootSpec](usdprim/pseudorootspec.md)
   A handle to a layer’s pseudo-root — the implicit parent of all top-level prims in a layer.
+### Instance Methods
+- [func hasAPISchema(USDToken) -> Bool](usdprim/hasapischema(_:).md)
+  Returns true if this prim has a particular API schema applied.
+- [func isSchema(USDToken) -> Bool](usdprim/isschema(_:).md)
+  Returns true if this prim has the given type or a more derived type.
+- [func makeRelationship(named: USDToken, custom: Bool) -> USDPrim.Relationship](usdprim/makerelationship(named:custom:).md)
+- [func resetTransform(to: AffineTransform3D)](usdprim/resettransform(to:).md)
+  Resets this prim’s transform stack to a given transform.
+### Subscripts
+- [subscript(USDToken, as _: Int.Type) -> Int?](usdprim/subscript(_:as:)-127jz.md)
+- [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:)-1frls.md)
+  Access or modify the value of a named attribute on this prim.
+- [subscript(USDToken, as _: USDArray<UInt>.Type) -> USDArray<UInt>?](usdprim/subscript(_:as:)-2pr71.md)
+- [subscript(USDToken, as _: USDArray<Int>.Type) -> USDArray<Int>?](usdprim/subscript(_:as:)-7uc7b.md)
+- [subscript(USDToken, as _: UInt.Type) -> UInt?](usdprim/subscript(_:as:)-okns.md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](usdprim/customstringconvertible-implementations.md)
 
@@ -132,11 +145,11 @@ struct USDPrim
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
-- [USDStage.Object.MetadataCollection](usdstage-4sfi1/object/metadatacollection.md)
+- [USDStage.Object.MetadataCollection](usdstage/object/metadatacollection.md)
 
 ## See Also
 
-- [struct USDStage](usdstage-4sfi1.md)
+- [struct USDStage](usdstage.md)
   A composed, runtime view of a USD scene assembled from one or more layers.
 - [struct USDLayer](usdlayer.md)
   A single USD document that stores scene description in a file or in memory.

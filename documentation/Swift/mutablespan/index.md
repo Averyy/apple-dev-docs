@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: typealias
 
+The type that represents an index in a `MutableSpan`.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

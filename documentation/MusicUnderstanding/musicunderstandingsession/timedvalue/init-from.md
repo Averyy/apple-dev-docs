@@ -1,6 +1,6 @@
 # init(from:)
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: init
 
 Creates a timed value by decoding from the given decoder.

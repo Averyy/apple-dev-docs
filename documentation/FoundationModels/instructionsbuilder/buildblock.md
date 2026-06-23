@@ -16,6 +16,7 @@ Creates a builder with a block.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<each I>(_ components: repeat each I) -> Instructions where repeat each I : InstructionsRepresentable
 ```
 

@@ -1,6 +1,6 @@
 # Music Understanding
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: module
 
 Analyze audio content and extract music information.

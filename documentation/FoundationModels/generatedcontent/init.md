@@ -39,7 +39,6 @@ This is used to satisfy `Generable.init(_:)`.
   Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
-- [static let null: GeneratedContent](generatedcontent/null.md)
 
 
 ---

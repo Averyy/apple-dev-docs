@@ -112,6 +112,10 @@ Because [`backForwardList`](webpage/backforwardlist-swift.property.md) is an obs
 
 - [WebPage.NavigationEvent](webpage/navigationevent.md)
   A particular state that occurs during the progression of a navigation.
+- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+  A representation of a resource that a webpage previously visited.
+- [WebPage.BackForwardList.Item.ID](webpage/backforwardlist-swift.struct/item/id-swift.struct.md)
+  An opaque type representing the identifier for an item.
 
 
 ---

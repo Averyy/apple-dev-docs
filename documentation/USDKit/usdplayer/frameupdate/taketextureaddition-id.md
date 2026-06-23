@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-mutating func takeTextureAddition(id: TextureID) -> TextureData?
+mutating func takeTextureAddition(id: USDPlayer.TextureID) -> USDPlayer.TextureData?
 ```
 
 

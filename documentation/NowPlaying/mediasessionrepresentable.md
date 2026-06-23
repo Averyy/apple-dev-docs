@@ -31,6 +31,8 @@ Conform to this protocol to provide the media content description, playback stat
 
 The framework observes your `@Observable` model and automatically updates the system’s Now Playing interface when your properties change.
 
+For more information, see [`Publishing media sessions`](publishing-media-sessions.md)
+
 The following example shows a basic session representable:
 
 ```swift

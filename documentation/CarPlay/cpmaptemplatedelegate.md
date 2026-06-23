@@ -93,6 +93,8 @@ protocol CPMapTemplateDelegate : NSObjectProtocol
   Tells the delegate that a person is rotating the map.
 - [func mapTemplate(CPMapTemplate, didShareDestinationFor: CPTrip)](cpmaptemplatedelegate/maptemplate(_:didsharedestinationfor:).md)
   Called when a vehicle successfully handled a shared trip’s destination
+- [func mapTemplate(CPMapTemplate, didUpdateRouteSharingEnabled: Bool)](cpmaptemplatedelegate/maptemplate(_:didupdateroutesharingenabled:).md)
+  Called when the route sharing enabled status has been updated by the built-in system. Route sharing enabled is set to true when any vehicle features are enabled that rely on a route provided by the built‑in navigation system to func‑ tion.
 - [func mapTemplate(CPMapTemplate, didUpdateZoomGestureWithCenter: CGPoint, scale: CGFloat, velocity: CGFloat)](cpmaptemplatedelegate/maptemplate(_:didupdatezoomgesturewithcenter:scale:velocity:).md)
   Tells the delegate that a person is zooming on the map.
 - [func mapTemplate(CPMapTemplate, pitchEndedWithCenter: CGPoint)](cpmaptemplatedelegate/maptemplate(_:pitchendedwithcenter:).md)

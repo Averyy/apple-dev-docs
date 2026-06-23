@@ -158,7 +158,16 @@ For more information about how to use these modifiers, see [`Modal presentations
 ### Foveated streaming
 - [func foveatedStreamingPauseSheet(session: Binding<FoveatedStreamingSession?>) -> some View](view/foveatedstreamingpausesheet(session:).md)
   Tells the system to present a sheet with controls for resuming or ending the foveated streaming session when it pauses.
+### Screen capture
+- [func recordingEditor(Binding<URL?>) -> some View](view/recordingeditor(_:).md)
+  Presents the recording editor for the given recording URL.
+- [func recordingEditor(Binding<URL?>, mode: SCRecordingEditor.Mode) -> some View](view/recordingeditor(_:mode:).md)
+  Presents the recording editor for the given recording URL with a specific mode.
 ### Document browser
+- [func documentLaunchTitle(_:)](view/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](view/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
 - [func documentBrowserContextMenu(([URL]?) -> some View) -> some View](view/documentbrowsercontextmenu(_:).md)
   Adds to a `DocumentLaunchView` actions that accept a list of selected files as their parameter.
 ### Inspectors

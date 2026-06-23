@@ -11,7 +11,6 @@ Errors the framework throws when parsing evaluation results.
 - Mac Catalyst ?+
 - macOS ?+
 - visionOS ?+
-- watchOS ?+
 
 ## Declaration
 

@@ -34,6 +34,12 @@ struct AtlasReference
 ### Initializers
 - [init()](lightmapresource/atlasreference/init.md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [var entityCount: Int](lightmapresource/entitycount.md)

@@ -1,6 +1,6 @@
 # InsightEvaluation
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: class
 
 The insight result that an evaluation request returns.
@@ -9,7 +9,6 @@ The insight result that an evaluation request returns.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

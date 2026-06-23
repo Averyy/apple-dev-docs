@@ -1,6 +1,6 @@
 # requestID
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 An optional identifier you can use to tie an assessment to a specific transaction.
@@ -9,7 +9,6 @@ An optional identifier you can use to tie an assessment to a specific transactio
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

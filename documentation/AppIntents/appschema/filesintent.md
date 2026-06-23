@@ -10,9 +10,7 @@ Identifies intent schemas in the files domain.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- tvOS 18.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 
@@ -33,8 +31,6 @@ protocol FilesIntent : AppSchema.Kind
   An intent schema that opens a selected file or folder.
 - [var renameFile: some AppSchemaIntent](appschema/filesintent/renamefile.md)
   An intent schema that renames an existing file or folder.
-- [var showDocumentScanner: some AppSchemaIntent](appschema/filesintent/showdocumentscanner.md)
-  An intent schema that scans a document.
 
 ## Relationships
 

@@ -16,6 +16,7 @@ Creates a builder with an optional component.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildOptional<Content>(_ content: Content?) -> Content? where Content : DynamicInstructions
 ```
 
@@ -31,6 +32,8 @@ static func buildOptional<Content>(_ content: Content?) -> Content? where Conten
   Creates a builder with the second component.
 - [static buildExpression(_:)](dynamicinstructionsbuilder/buildexpression(_:).md)
   Creates a builder with a list of tools expression.
+- [static func buildLimitedAvailability(some DynamicInstructions) -> AnyDynamicInstructions](dynamicinstructionsbuilder/buildlimitedavailability(_:).md)
+  Creates a builder with limited availability dynamic instructions.
 
 
 ---

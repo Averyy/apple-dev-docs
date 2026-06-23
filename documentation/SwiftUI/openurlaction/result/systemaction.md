@@ -1,9 +1,9 @@
-# systemAction(_:)
+# systemAction
 
 **Framework**: SwiftUI  
-**Kind**: method
+**Kind**: property
 
-The handler asks the system to open the modified URL.
+The handler asks the system to open the original URL.
 
 **Availability**:
 - iOS 15.0+
@@ -17,16 +17,12 @@ The handler asks the system to open the modified URL.
 ## Declaration
 
 ```swift
-static func systemAction(_ url: URL) -> OpenURLAction.Result
+static let systemAction: OpenURLAction.Result
 ```
 
 #### Discussion
 
 The action invokes its completion handler with a value that depends on the outcome of the system’s attempt to open the URL.
-
-## Parameters
-
-- `url`: The URL that the handler asks the system to open.
 
 ## See Also
 
@@ -34,10 +30,10 @@ The action invokes its completion handler with a value that depends on the outco
   The handler discarded the URL.
 - [static let handled: OpenURLAction.Result](openurlaction/result/handled.md)
   The handler opened the URL.
-- [static let systemAction: OpenURLAction.Result](openurlaction/result/systemaction.md)
-  The handler asks the system to open the original URL.
+- [static func systemAction(URL) -> OpenURLAction.Result](openurlaction/result/systemaction(_:).md)
+  The handler asks the system to open the modified URL.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/openurlaction/result/systemaction(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui/openurlaction/result/systemaction)*

@@ -87,6 +87,8 @@ To learn more about the kinds of views that you use to display text and the ways
   Controls whether people can select text within this view.
 - [func textSelectionAffinity(TextSelectionAffinity) -> some View](view/textselectionaffinity(_:).md)
   Sets the direction of a selection or cursor relative to a text character.
+### Data detection
+- [func dataDetection(DataDetector.MatchType, options: DataDetector.Options) -> some View](view/datadetection(_:options:).md)
 ### Text entry
 - [func autocorrectionDisabled(Bool) -> some View](view/autocorrectiondisabled(_:).md)
   Sets whether to disable autocorrection for this view.
@@ -96,6 +98,8 @@ To learn more about the kinds of views that you use to display text and the ways
   Configures the behavior in which scrollable content interacts with the software keyboard.
 - [func textInputAutocapitalization(TextInputAutocapitalization?) -> some View](view/textinputautocapitalization(_:).md)
   Sets how often the shift key in the keyboard is automatically enabled.
+- [func textInputBorderShape(TextInputBorderShape) -> some View](view/textinputbordershape(_:).md)
+  Sets the border shape for text input controls in the view hierarchy.
 - [func textInputCompletion(String) -> some View](view/textinputcompletion(_:).md)
   Associates a fully formed string with the value of this view when used as a text input suggestion
 - [func textInputSuggestions<S>(() -> S) -> some View](view/textinputsuggestions(_:).md)
@@ -113,7 +117,7 @@ To learn more about the kinds of views that you use to display text and the ways
 - [func textContentType(UITextContentType?) -> some View](view/textcontenttype(_:)-ufdv.md)
   Sets the text content type for this view, which the system uses to offer suggestions while the user enters text on an iOS or tvOS device.
 - [func textInputFormattingControlVisibility(Visibility, for: TextInputFormattingControlPlacement.Set) -> some View](view/textinputformattingcontrolvisibility(_:for:).md)
-  Define which system text formatting controls are available.
+  Specifies which system text formatting controls are available for people to format text.
 ### Find and replace
 - [func findNavigator(isPresented: Binding<Bool>) -> some View](view/findnavigator(ispresented:).md)
   Programmatically presents the find and replace interface for text editor views.

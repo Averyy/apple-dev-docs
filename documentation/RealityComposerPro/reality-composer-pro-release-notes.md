@@ -79,6 +79,11 @@ Reality Composer Pro Beta is now a standalone app you can download from the [`Ap
 
 - `ComputeGraphComponent` instances stored in a Reality file do not render when you load the file. (177674901)
 
+## See Also
+
+- [Reality Composer Pro Beta 2 Release Notes](reality-composer-pro-beta-2-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
+
 
 ---
 

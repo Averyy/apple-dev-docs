@@ -35,7 +35,6 @@ init<S>(elements: S, id: GenerationID? = nil) where S : Sequence, S.Element == a
   Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
-- [static let null: GeneratedContent](generatedcontent/null.md)
 
 
 ---

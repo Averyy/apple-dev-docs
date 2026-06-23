@@ -12,7 +12,7 @@
 ## Declaration
 
 ```swift
-typedef uint32_t IOOptionBits;
+typedef UInt32 IOOptionBits;
 ```
 
 ## See Also

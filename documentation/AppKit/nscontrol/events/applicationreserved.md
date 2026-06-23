@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+A range of control-event values available for app use.
+
 **Availability**:
 - macOS 27.0+ (Beta)
 
@@ -15,6 +17,7 @@ static var applicationReserved: NSControl.Events { get }
 ## See Also
 
 - [static var systemReserved: NSControl.Events](nscontrol/events/systemreserved.md)
+  A range of control-event values reserved for internal framework use.
 
 
 ---

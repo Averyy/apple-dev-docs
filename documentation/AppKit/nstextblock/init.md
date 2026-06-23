@@ -26,6 +26,7 @@ This is the designated initializer for `NSTextBlock`.
 
 - [class NSTextTableBlock](nstexttableblock.md)
   A text block that appears as a cell in a text table.
+- [init?(coder: NSCoder)](nstextblock/init(coder:).md)
 
 
 ---

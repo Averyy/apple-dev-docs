@@ -70,6 +70,8 @@ Configure the system keyboard, create your own keyboards to handle input, or det
   A class that represents a message in a message conversation.
 - [class UIInputSuggestion](uiinputsuggestion.md)
   A base class you use to handle suggestions from the keyboard or system.
+- [class UIPhotoSearchSuggestion](uiphotosearchsuggestion.md)
+  An input suggestion that carries photo search metadata for people, subjects, locations, and time periods.
 - [class UISmartReplySuggestion](uismartreplysuggestion.md)
   A class you use to handle a Smart Reply suggestion.
 ### Text tokenizer

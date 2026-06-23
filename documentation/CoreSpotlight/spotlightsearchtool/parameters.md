@@ -18,6 +18,10 @@ Dynamic schema: use the native tool’s schema based on capabilities.
 var parameters: GenerationSchema { get }
 ```
 
+#### Discussion
+
+For `.rag(profile)` we dispatch to the domain-specific schema so the model only sees fields relevant to that domain.  Returning the generic `RAGSearchArguments` for every domain inflates the prompt past on-device’s context window and ignores the developer’s explicit domain selection.
+
 ## See Also
 
 - [var includesSchemaInInstructions: Bool](spotlightsearchtool/includesschemaininstructions.md)

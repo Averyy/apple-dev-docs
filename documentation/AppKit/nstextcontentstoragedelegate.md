@@ -14,11 +14,15 @@ The optional methods that delegates of content storage objects implement to hand
 protocol NSTextContentStorageDelegate : NSTextContentManagerDelegate
 ```
 
+#### Overview
+
+The optional methods that delegates of content storage objects implement to handle content processing.
+
 ## Topics
 
 ### Working with paragraphs
 - [func textContentStorage(NSTextContentStorage, textParagraphWith: NSRange) -> NSTextParagraph?](nstextcontentstoragedelegate/textcontentstorage(_:textparagraphwith:).md)
-  Returns a custom paragraph for a range that you provide from the object’s attributed string.
+  Returns a custom `NSTextParagraph` for the specified range in the content storage’s attributed string.
 
 ## Relationships
 

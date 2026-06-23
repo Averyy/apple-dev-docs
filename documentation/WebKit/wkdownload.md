@@ -36,8 +36,6 @@ class WKDownload
 ### Instance Properties
 - [var isUserInitiated: Bool](wkdownload/isuserinitiated.md)
 - [var originatingFrame: WKFrameInfo](wkdownload/originatingframe.md)
-### Enumerations
-- [WKDownload.PlaceholderPolicy](wkdownload/placeholderpolicy.md)
 
 ## Relationships
 
@@ -57,6 +55,7 @@ class WKDownload
 
 - [protocol WKDownloadDelegate](wkdownloaddelegate.md)
   A protocol you implement to track download progress and handle redirects, authentication challenges, and failures.
+- [WKDownload.PlaceholderPolicy](wkdownload/placeholderpolicy.md)
 
 
 ---

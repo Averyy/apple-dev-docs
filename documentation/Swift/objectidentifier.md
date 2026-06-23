@@ -50,6 +50,7 @@ In Swift, only instances of classes, instances of actors, and metatypes have uni
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [Comparable](comparable.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Equatable](equatable.md)

@@ -19,7 +19,7 @@ func completeIO(for file: FSItem, offset: off_t, length: Int, status: any Error,
 
 Implement this method by updating a file’s metadata, such as its size and modification time.
 
-FSKit may call this method without an earlier call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). In this case, the `operationID` is `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift).
+FSKit may call this method without an earlier call to `blockmapFile(_:offset:length:flags:operationID:packer:)`. In this case, the `operationID` is `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift).
 
 ## Parameters
 
@@ -28,7 +28,7 @@ FSKit may call this method without an earlier call to [`blockmapFile(_:offset:le
 - `length`: The length of the I/O range (in bytes).
 - `status`: Any error that occurred during the operation. If no error occurred, this parameter is `nil`.
 - `flags`: Flags that affect the behavior of the complete I/O operation.
-- `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift) corresponds to a previous call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md) with the same `operationID`.
+- `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift) corresponds to a previous call to `blockmapFile(_:offset:length:flags:operationID:packer:)` with the same `operationID`.
 - `reply`: A block or closure to indicate success or failure. If completing I/O fails, pass an error as the one parameter to the reply handler. If completing I/O succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
 

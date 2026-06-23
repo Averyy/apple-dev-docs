@@ -4,6 +4,16 @@
 
 Use agents to help you explore code, add features, refine your interface, and leverage skills, such as localization and accessibility.
 
+#### Overview
+
+You interact with an agent or large language model of your choice by entering a series of natural language prompts to ask questions and give instructions. The agent or model refines its responses to your prompts based on previous interactions and any project context that you give it. Xcode presents the responses and changes that it makes to your project files for your review. You can enter another prompt or undo changes, and you can later roll back changes to a previous state. Xcode preserves all your interactions in conversations that you can refer to and organize into groups.
+
+You can access Xcode intelligence from anywhere in your project, including the source editor, and it blends seamlessly into your workspace. The conversation sidebar behaves like the Project navigator. You can lay out and create tabs for the transcript and artifacts panes, similar to editor panes. You can arrange your workspace to run multiple agents in parallel while editing files in another pane.
+
+![A screenshot of the project window with the conversation sidebar on the left, a transcript in the middle with a message text field below, and the artifacts pane on the right.](https://docs-assets.developer.apple.com/published/a29e305b85b67458132b62f223be61c3/coding-assistant-anatomy%402x.png)
+
+Before you begin, set up an agent or model in Intelligence settings and choose it in the coding assistant sidebar. For more information, see [`Setting up coding intelligence`](setting-up-coding-intelligence.md).
+
 ## Topics
 
 ### Essentials

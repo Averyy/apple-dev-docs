@@ -23,10 +23,6 @@ final class LowLevelDeformationContext
 ### Creating deformation pipelines
 - [func makeDeformation(pipeline: LowLevelDeformation.Pipeline, descriptor: LowLevelDeformation.Descriptor) throws -> LowLevelDeformation](lowleveldeformationcontext/makedeformation(pipeline:descriptor:).md)
   Creates a deformation bound to a compiled pipeline.
-- [func makePipeline(desc: LowLevelDeformation.Pipeline.Descriptor) throws -> LowLevelDeformation.Pipeline](lowleveldeformationcontext/makepipeline(desc:)-9riyx.md)
-  Creates a compute pipeline synchronously.
-- [func makePipeline(desc: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline](lowleveldeformationcontext/makepipeline(desc:)-4ybrk.md)
-  Creates a compute pipeline asynchronously.
 ### Accessing the device
 - [let device: any MTLDevice](lowleveldeformationcontext/device.md)
   The Metal device this context targets.
@@ -34,7 +30,7 @@ final class LowLevelDeformationContext
 - [init(any MTLDevice) throws](lowleveldeformationcontext/init(_:).md)
   Creates a context targeting the specified Metal device.
 ### Instance Methods
-- [func makePipeline(desc:)](lowleveldeformationcontext/makepipeline(desc:).md)
+- [func makePipeline(_:)](lowleveldeformationcontext/makepipeline(_:).md)
   Creates a compute pipeline asynchronously.
 
 ## See Also

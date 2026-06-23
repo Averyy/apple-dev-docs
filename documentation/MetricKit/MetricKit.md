@@ -86,7 +86,7 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
 - [struct SuspendedMemoryMetric](suspendedmemorymetric.md)
   A metric that measures average suspended memory footprint with statistical data.
 - [struct MemoryExceptionDiagnostic](memoryexceptiondiagnostic.md)
-  A diagnostic for a fatal memory exception.
+  A diagnostic MetricKit generates when your app or extension terminates because it exceeds the memory limit.
 ### GPU and display metrics
 - [struct GPUTimeMetric](gputimemetric.md)
   A metric that measures the total GPU time used by the app.

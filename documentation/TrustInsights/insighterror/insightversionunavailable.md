@@ -1,6 +1,6 @@
 # InsightError.insightVersionUnavailable
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates that the insight version you requested isn’t available.
@@ -9,7 +9,6 @@ An error that indicates that the insight version you requested isn’t available
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

@@ -42,6 +42,8 @@ The credential session state must be [`CredentialSession.State.wired(credential:
 
 > ❗ **Important**: Calling this method may generate a billable event to the credential provider.
 
+> **Note**: An [`CredentialSession.ErrorCode`](credentialsession/errorcode.md). The most common errors are: - [`CredentialSession.ErrorCode.userCanceledAuthorization`](credentialsession/errorcode/usercanceledauthorization.md): The user dismissed the authorization sheet.
+
 ## Parameters
 
 - `scene`: The [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) the authentication sheet appears over.

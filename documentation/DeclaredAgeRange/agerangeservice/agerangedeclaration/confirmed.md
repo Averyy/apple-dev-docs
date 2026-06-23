@@ -17,6 +17,13 @@ Indicates a user’s age range was set using a scrutinized method, like a credit
 case confirmed
 ```
 
+## See Also
+
+- [AgeRangeService.AgeRangeDeclaration.selfDeclared](agerangeservice/agerangedeclaration/selfdeclared.md)
+  Indicates the person signed in to iCloud to set their own age range.
+- [AgeRangeService.AgeRangeDeclaration.guardianDeclared](agerangeservice/agerangedeclaration/guardiandeclared.md)
+  Indicates a parent, guardian, or Family Organizer in a Family Sharing group set the age range.
+
 
 ---
 

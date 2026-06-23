@@ -40,6 +40,8 @@ struct Options
 - [var isOrdered: Bool](nstextlist/isordered.md)
 - [var listOptions: NSTextList.Options](nstextlist/listoptions.md)
   Returns the list options mask value of the receiver.
+- [class var includesTextListMarkers: Bool](nstextlist/includestextlistmarkers.md)
+  A Boolean value that indicates whether TextKit includes text list markers in the contents.
 
 
 ---

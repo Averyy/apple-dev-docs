@@ -1,6 +1,6 @@
 # MusicUnderstandingError.internalError
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The error that occurs when an unexpected internal failure prevents the session from completing.

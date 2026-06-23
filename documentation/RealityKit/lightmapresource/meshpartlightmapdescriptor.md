@@ -24,6 +24,12 @@ struct MeshPartLightmapDescriptor
 ### Creating a descriptor
 - [init(bakeDescriptor: LightmapResource.BakeDescriptor) throws](lightmapresource/meshpartlightmapdescriptor/init(bakedescriptor:).md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [convenience init(atlasTextures: [TextureResource], perEntityData: [LightmapResource.EntityLightmapDescriptor]) throws](lightmapresource/init(atlastextures:perentitydata:).md)

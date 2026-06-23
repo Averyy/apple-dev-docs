@@ -18,6 +18,11 @@ Automatically adjust width to fit content changes.
 static let flexibleWidth: MarkupAutoresizing
 ```
 
+## See Also
+
+- [static let flexibleHeight: MarkupAutoresizing](markupautoresizing/flexibleheight.md)
+  Automatically adjust height to fit content changes.
+
 
 ---
 

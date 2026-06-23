@@ -1,6 +1,6 @@
 # KeyResult.Tonic.e
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 Indicates that the song is in an E key.

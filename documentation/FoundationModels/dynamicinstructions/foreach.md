@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-typealias ForEach
+typealias ForEach = DynamicInstructionsForEach
 ```
 
 ## See Also

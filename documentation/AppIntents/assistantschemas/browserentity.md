@@ -25,10 +25,8 @@ protocol BrowserEntity : AssistantSchemas.Model
 ### Instance Properties
 - [var bookmark: some AssistantSchemas.Entity](assistantschemas/browserentity/bookmark.md)
   The app entity describes a bookmark.
-- [var readingListItem: some AssistantSchemas.Entity](assistantschemas/browserentity/readinglistitem.md)
 - [var tab: some AssistantSchemas.Entity](assistantschemas/browserentity/tab.md)
   The app entity describes a browser tab.
-- [var tabGroup: some AssistantSchemas.Entity](assistantschemas/browserentity/tabgroup.md)
 - [var window: some AssistantSchemas.Entity](assistantschemas/browserentity/window.md)
   The app entity describes a browser window.
 

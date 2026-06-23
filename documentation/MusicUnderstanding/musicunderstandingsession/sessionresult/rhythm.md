@@ -1,6 +1,6 @@
 # rhythm
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The aggregated rhythm results, including detected beats, bars, and BPM.

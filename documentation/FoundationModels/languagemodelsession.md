@@ -71,6 +71,7 @@ Use Instruments to analyze token consumption while your app is running and to lo
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 ### Preloading the model
@@ -159,7 +160,7 @@ Use Instruments to analyze token consumption while your app is running and to lo
 - [LanguageModelSession.Error](languagemodelsession/error.md)
   A failure caused by incorrect use of a language model session.
 - [LanguageModelSession.ToolCallError](languagemodelsession/toolcallerror.md)
-  An error that occurs while a system language model is calling a tool.
+  An error that occurs while a language model is calling a tool.
 - [LanguageModelSession.GenerationError](languagemodelsession/generationerror.md)
   An error that may occur while generating a response.
 

@@ -21,7 +21,7 @@ var isValid: Bool { get }
 
 #### Discussion
 
-A property’s validity is connected to a [`USDStage`](usdstage-4sfi1.md). A property becomes invalid when the lifetime of its stage ends.
+A property’s validity is connected to a [`USDStage`](usdstage.md). A property becomes invalid when the lifetime of its stage ends.
 
 A property will also expire if its stage no longer defines a value for the property. `isValid` is false if this property has expired.
 

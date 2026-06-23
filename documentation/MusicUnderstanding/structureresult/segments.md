@@ -1,6 +1,6 @@
 # segments
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The time range of each segment in the song.

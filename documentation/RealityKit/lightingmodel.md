@@ -21,7 +21,7 @@ enum LightingModel
 
 #### Overview
 
-This must match the type of the surface output node in the `ShaderGraph`. For example, a graph whose surface node is a PBR surface shader requires `.lit`.
+This must match the type of the surface output node in the [`ShaderGraph`](shadergraph.md). For example, a graph whose surface node is a PBR surface shader requires `.lit`.
 
 ## Topics
 

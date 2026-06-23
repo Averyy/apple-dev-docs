@@ -1,6 +1,6 @@
 # KeyResult.Tonic.gSharp
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 Indicates that the song is in a G-sharp key.

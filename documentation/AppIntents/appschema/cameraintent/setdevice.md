@@ -10,9 +10,7 @@ An intent schema that changes the camera to the specified position.
 - iPadOS 18.0+
 - Mac Catalyst ?+
 - macOS 15.0+
-- tvOS 18.0+
 - visionOS 2.0+
-- watchOS 11.0+
 
 ## Declaration
 

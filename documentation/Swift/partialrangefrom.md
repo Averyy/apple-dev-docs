@@ -106,6 +106,9 @@ The behavior of incrementing indefinitely is determined by the type of `Bound`. 
 
 ### Conforms To
 - [BNNSGraph.Builder.SliceIndex](../Accelerate/BNNSGraph/Builder/SliceIndex.md)
+- [BitwiseCopyable](bitwisecopyable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomTestStringConvertible](../Testing/CustomTestStringConvertible.md)
 - [Decodable](decodable.md)

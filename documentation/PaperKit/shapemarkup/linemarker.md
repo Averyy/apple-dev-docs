@@ -30,10 +30,16 @@ enum LineMarker
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var startLineMarker: ShapeMarkup.LineMarker](shapemarkup/startlinemarker.md)
+  The line marker used at the start of an open shape path.
+- [var endLineMarker: ShapeMarkup.LineMarker](shapemarkup/endlinemarker.md)
+  The line marker used at the end of an open shape path.
 
 
 ---

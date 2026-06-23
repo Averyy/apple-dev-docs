@@ -155,6 +155,8 @@ extension MyCustomType: Transition {
 ### Styling the scene
 - [func immersionStyle(selection: Binding<any ImmersionStyle>, in: any ImmersionStyle...) -> some Scene](scene/immersionstyle(selection:in:).md)
   Sets the style for an immersive space.
+- [func menuBarExtraStyle<S>(S) -> some Scene](scene/menubarextrastyle(_:).md)
+  Sets the style for menu bar extra created by this scene.
 - [func upperLimbVisibility(Visibility) -> some Scene](scene/upperlimbvisibility(_:).md)
   Sets the preferred visibility of the user’s upper limbs, while an [`ImmersiveSpace`](immersivespace.md) scene is presented.
 - [func windowStyle<S>(S) -> some Scene](scene/windowstyle(_:).md)
@@ -167,6 +169,13 @@ extension MyCustomType: Transition {
   Sets the label style of items in a toolbar and enables user customization.
 - [func windowToolbarLabelStyle(fixed: ToolbarLabelStyle) -> some Scene](scene/windowtoolbarlabelstyle(fixed:).md)
   Sets the label style of items in a toolbar.
+### Configuring a document launcher scene
+- [func documentBrowserContextMenu(([URL]?) -> some View) -> some Scene](scene/documentbrowsercontextmenu(_:).md)
+  Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected files as their parameter.
+- [func documentLaunchTitle(_:)](scene/documentlaunchtitle(_:).md)
+  Sets the title displayed on the document launch card.
+- [func documentLaunchSubtitle(_:)](scene/documentlaunchsubtitle(_:).md)
+  Sets the subtitle displayed beneath the title on the document launch card.
 ### Configuring a data model
 - [func modelContext(ModelContext) -> some Scene](scene/modelcontext(_:).md)
   Sets the model context in this scene’s environment.
@@ -195,18 +204,14 @@ extension MyCustomType: Transition {
 ### Supporting drag behavior
 - [func windowBackgroundDragBehavior(WindowInteractionBehavior) -> some Scene](scene/windowbackgrounddragbehavior(_:).md)
   Configures the behavior of dragging a window by its background.
-### Deprecated symbols
-- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
-  Adds an action to perform when the given value changes.
-### Instance Methods
-- [func documentBrowserContextMenu(([URL]?) -> some View) -> some Scene](scene/documentbrowsercontextmenu(_:).md)
-  Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected files as their parameter.
+### Configuring immersive scenes
 - [func immersiveContentBrightness(ImmersiveContentBrightness) -> some Scene](scene/immersivecontentbrightness(_:).md)
   Sets the content brightness of an immersive space.
 - [func immersiveEnvironmentBehavior(ImmersiveEnvironmentBehavior) -> some Scene](scene/immersiveenvironmentbehavior(_:).md)
   Sets the immersive environment behavior that should apply when this scene opens.
-- [func menuBarExtraStyle<S>(S) -> some Scene](scene/menubarextrastyle(_:).md)
-  Sets the style for menu bar extra created by this scene.
+### Deprecated symbols
+- [func onChange<V>(of: V, perform: (V) -> Void) -> some Scene](scene/onchange(of:perform:).md)
+  Adds an action to perform when the given value changes.
 
 ## Relationships
 

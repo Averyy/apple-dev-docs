@@ -26,6 +26,8 @@ final class RemoteMediaSessionExtensionConfiguration<Extension> where Extension 
 
 This class manages the lifecycle of remote sessions within your app extension. It handles XPC communication, session registration, attribute updates, and automatic observation of session state changes.
 
+For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+
 Create an instance of this class in your extension’s `configuration` property:
 
 ```swift

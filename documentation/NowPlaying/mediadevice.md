@@ -27,6 +27,8 @@ Use this type to represent playback devices in your remote sessions.
 
 The system displays device information including the name, type, and volume level in the Now Playing interface.
 
+For more information, see [`Publishing remote media sessions`](publishing-remote-media-sessions.md)
+
 ## Topics
 
 ### Structures

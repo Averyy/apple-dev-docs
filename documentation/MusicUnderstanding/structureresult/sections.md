@@ -1,6 +1,6 @@
 # sections
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The time ranges of each section in the song.

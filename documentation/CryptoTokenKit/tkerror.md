@@ -46,6 +46,7 @@ struct TKError
 - [static var TKErrorTokenNotFound: TKError.Code](tkerror/tkerrortokennotfound.md)
 ### Type Properties
 - [static var errorDomain: String](tkerror/errordomain.md)
+- [static var invalidatedDeviceKey: TKError.Code](tkerror/invalidateddevicekey.md)
 
 ## Relationships
 

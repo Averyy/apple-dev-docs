@@ -1,6 +1,6 @@
 # KeyResult.Mode.minor
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: case
 
 The minor keys.

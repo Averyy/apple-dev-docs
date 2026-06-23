@@ -20,6 +20,10 @@ Call the given closure with the unsafe buffer pointer addressed by this OutputSp
 mutating func withUnsafeMutableBufferPointer<E, R>(_ body: (UnsafeMutableBufferPointer<Element>, inout Int) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
+#### Return Value
+
+The return value of the `body` closure.
+
 #### Discussion
 
 This method provides a way to process or populate an `OutputSpan` using unsafe operations, such as dispatching to code written in legacy (memory-unsafe) languages.
@@ -30,6 +34,10 @@ The supplied closure may process the buffer in any way it wants; however, when i
 2. These initialized elements must be located in a single contiguous region starting at the beginning of the buffer. The rest of the buffer must hold uninitialized memory.
 
 This function cannot verify these two invariants, and therefore this is an unsafe operation. Violating the invariants of `OutputSpan` may result in undefined behavior.
+
+## Parameters
+
+- `body`: A closure that can read from and write to the buffer and update the initialized count.
 
 
 ---

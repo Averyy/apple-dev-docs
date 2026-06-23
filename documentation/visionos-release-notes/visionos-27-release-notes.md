@@ -1,4 +1,4 @@
-# visionOS 27 Beta Release Notes
+# visionOS 27 Beta 2 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,17 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 27 beta. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The visionOS 27 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+
+##### App Intents
+
+###### New Features
+
+- You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas.  (173431080)
+
+###### Deprecations
+
+- The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`.  (176751155)
 
 ##### Apple Intelligence Report
 
@@ -19,12 +29,6 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - For room anchors delivered by the `RoomTrackingProvider` Swift API, `RoomAnchor.planeAnchorID`s and `RoomAnchor.meshAnchorID`s are always empty. Likewise, for the `room_tracking.h` C API, `ar_room_anchor_get_plane_anchor_identifiers` and `ar_room_anchor_get_mesh_anchor_identifiers` always return an empty list of identifiers.  (173005535) **Workaround:** Compute the containment of plane and mesh anchors explicitly using the room anchor’s geometry — `RoomAnchor.geometry` in Swift, or the `ar_mesh_geometry_t` returned by `ar_room_anchor_get_geometry` in the C API.
-
-##### Auto Unlock
-
-###### Known Issues
-
-- After successfully pairing and unlocking iPhone with a nearby Apple Vision Pro, the Active toggle might remain “on” despite attempts to unpair.  (177989500)
 
 ##### Background Assets
 
@@ -52,15 +56,18 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Foundation Models
 
+###### Resolved Issues
+
+- Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
+- Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
+- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+- Fixed: Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978)
+
 ###### Known Issues
 
 - Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
-- `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
-- Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
-- `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488) **Workaround:** Always specify instructions in a `Profile`.
 - `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
-- Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978) **Workaround:** Import the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) package, which contains a built-in workaround that will compile your code.
 
 ##### Foveated Streaming
 
@@ -97,6 +104,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - When donning the Apple Vision Pro it may sometimes disconnect instead of resuming the session.  (178359724) **Workaround:** Reconnect the Mac Virtual Display session through Control Center or using the Mac Virtual Display Widget.
+
+##### Mail
+
+###### Known Issues
+
+- Emails might display content that doesn’t match their subject line.  (169101671)
 
 ##### Metal
 
@@ -145,6 +158,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - Fixed: The `.highlight` hover effect style highlights the entire RealityKit entity hierarchy during direct interactions, rather than only the entity being targeted.  (158462269) (FB19680952)
 - Fixed: Content in a portal incorrectly receives outside environment probe lighting contribution.  (175363970)
+- RealityRenderer’s `isToneMappingEnabled` property will correctly enable and disable tone mapping if apps are rebuilt with the 27.0 SDK. Apps built with earlier versions of the SDK will not see a behavior change.  (177283932)
 - Fixed: Opaque ShaderGraph materials appear darker than Physically Based Materials when lit by dynamic lights.  (177974279)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 - Fixed: Shadow rendering memory is not counted against each application’s memory limit, which might prevent apps from consistently using up to 8 shadowed directional and spot lights depending on what other apps are running.  (177984485)
@@ -180,7 +194,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### New Features
 
-- You can now activate Siri by looking at the Siri “orb” and speaking, as an alternative to using “Hey Siri” or “Siri”. This feature is disabled in Beta 1.  (177137200)
+- You can now activate Siri by looking at the Siri “orb” and speaking, as an alternative to using “Hey Siri” or “Siri”. This feature is enabled in Beta 2.  (177137200)
 
 ###### Known Issues
 
@@ -203,6 +217,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Siri “orb” and UI does not correctly follow the system breakthrough behavior when near another window.  (178265130) **Workaround:** Move Siri “orb” and UI further from other windows.
 - Conversation cards might disappear after you return from a conversation view using the back button.  (178342580) **Workaround:** Scroll the conversations by swiping left and right, or close and reopen the app.
 - If you pin the Siri “orb” and then reboot the device, saying “Hey Siri” might summon two “orbs”.   (178383647) **Workaround:** Unpin the pinned “orb” and let it auto dismiss, or force quit Siri using the force quit menu.
+- Tapping an inactive Siri “orb” or the microphone button in the Siri app might not turn on Siri.  (180066367) **Workaround:** Try tapping on Siri again. If Siri still doesn’t respond, close and reopen the conversation.
 
 ##### Siri Setup
 
@@ -234,6 +249,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - WebXR might not render when you use Simulator.  (178666073) **Workaround:** Use an Apple Vision Pro device instead of Simulator.
 
+##### Status Bar
+
+###### Known Issues
+
+- Battery percentage might not be up-to-date in the status bar.  (174929463) **Workaround:** Open Control Center to update the battery percentage.
+
 ##### Storekit
 
 ###### New Features
@@ -251,10 +272,13 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs.  (154390284) (FB18403150)
 - Fixed: Subscription upgrades performed with the Xcode Transaction Manager are not reported in `Transaction.updates`.  (160698598) (FB20269723)
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
+- Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
+- Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 
 ###### Known Issues
 
-- When using StoreKit Testing in Xcode, `pricingTerms.commitmentInfo.price` returns an incorrect price for monthly subscriptions billed as a 12-month commitment.  (177942756)
+- StoreKit UI actions (manage subscriptions, redeem offer code, and refund request) don’t perform the desired action on visionOS when using StoreKit Testing in Xcode.  (172677527)
+- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Swift Charts
 
@@ -289,9 +313,9 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Swiftdata
 
-###### Known Issues
+###### Resolved Issues
 
-- You might experience a deadlock for `@Query` when saving a `ModelContext` on a background actor while scheduling new async tasks for a `ModelActor`.  (178113288)
+- Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor.  (178113288)
 
 ##### Swiftui
 
@@ -342,13 +366,29 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 ``` In rare situations, the automatic inference of generic argument of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
 - In apps built with the 27.0 SDKs, the new `ReadableDocument` and `WritableDocument` protocols support asynchronous reading and writing, progress reporting, and direct access to document URLs. New `DocumentGroup` initializers that adopt these protocols let you disable document creation for editing-only apps and present custom UI before any document is opened. The initializers expose an `Observable` `URLDocumentConfiguration` and integrate with Swift concurrency and the `Observation` framework. New applications should prefer `ReadableDocument` and `WritableDocument` over `ReferenceFileDocument`, which remains available.  (158441552)
 - The `TabsPickerStyle` style is now available for pickers that represent tab-based navigation and content selection. This style is similar to the `.segmented` style, but VoiceOver reads it as “tabs,” and on macOS it has a distinct visual appearance that distinguishes it from pickers that represent value selection — for example, a text alignment picker in an inspector.  (173211711)
+- You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
+- The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
+- You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
+- You can now use the `Document` protocol for representing documents in `DocumentGroup`. This protocol combines `ReadableDocument` and `WritableDocument` for common read-and-write cases. Use `Document` instead of `ReferenceFileDocument` and `FileDocument`, which are now deprecated.  (177458781)
+- `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
+- In macOS apps built with the macOS 27 SDK, the action retrieved from the `\.newDocument` environment value accepts an in-memory `ReadableDocument` produced by an autoclosure. SwiftUI presents a new document window populated with the supplied instance, instead of invoking the document group’s default factory. Use this to implement “New from Template” commands and similar flows.  (180300890)
+- A new `fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)` modifier exports a collection of values that conform to `WritableDocument` whose `Writer.Destination` is `URL`. The system presents a single export dialog, writes each document to the chosen destination, and reports the resulting URLs through `onCompletion`.  (180301165)
+- The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter.  (180301399)
+- `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`.  (180301692)
 
 ###### Resolved Issues
 
 - Fixed: When you apply both `.fileExporter(_:...)` and `.fileMover(_:...)` modifiers to a view, some dialogs might not present correctly.  (154080867)
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied.  (165913417)
 - Fixed: In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are not reset to their default values in sheets and popovers.  (167448274)
+- The `read(from:progress:)` and `write(content:to:previous:progress:)` requirements of `DocumentReader` and `DocumentWriter` are declared with `@concurrent` instead of `nonisolated`. With approachable-concurrency defaults that infer `MainActor` isolation, an unannotated `nonisolated` async method runs on the main actor, defeating the intent of off-main reading and writing. Conforming types that previously used `nonisolated` should switch to `@concurrent` to match.  (180302015)
+- The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains.  (180302065)
+- `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor.  (180302075)
+
+###### Deprecations
+
+- The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing.  (178776840)
 
 ##### System
 
@@ -359,6 +399,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 ###### Known Issues
 
 - Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_:_:)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors.   (177911316) **Workaround:** Migrate to the new Swift `stat()` methods, or disambiguate using `Darwin.stat()` and `Darwin.stat(_:_:)`. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.
+
+##### Testflight
+
+###### Known Issues
+
+- Apps installed via TestFlight may launch into a blank window with no content. The TestFlight “What to Test” introductory screen may not appear before the app, or the app’s window may render empty.  (179387790) **Workaround:** Close the blank window and relaunch the app from the Home View. The launch typically succeeds within 1–3 attempts. If an app remains stuck, force-quit it (long-press the Digital Crown) and launch again from the Home View.
 
 ##### Textkit
 
@@ -387,12 +433,22 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Some types of USD attributes cannot be read or modified.  (170653056)
 - Array, vector, matrix, and quaternion types cannot be authored using USDKit.  (178071414)
 
+###### Deprecations
+
+- Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and meshes from Beta 2 cannot be decoded by Beta 1.  (177417812)
+
 ##### Videotoolbox
 
 ###### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
+
+##### View Capture
+
+###### Known Issues
+
+- With High Quality Recording enabled, capturing a High Quality recording while the device is warm may fail silently. No recording is saved and no error or feedback is shown.  (170105618) **Workaround:** Allow the device to cool down and try the capture again.
 
 ##### Webkit
 

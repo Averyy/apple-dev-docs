@@ -17,7 +17,7 @@ A type that can be hashed into a `Hasher` to produce an integer hash value.
 ## Declaration
 
 ```swift
-protocol Hashable : Equatable, ~Copyable
+protocol Hashable : Equatable, ~Copyable, ~Escapable
 ```
 
 ## Mentions
@@ -123,6 +123,7 @@ if tappedPoints.contains(nextTap) {
 - [AtomicUpdateOrdering](../synchronization/atomicupdateordering.md)
 - [AutoreleasingUnsafeMutablePointer](autoreleasingunsafemutablepointer.md)
 - [Bool](bool.md)
+- [ByteOrder](byteorder.md)
 - [Character](character.md)
 - [ClosedRange](closedrange.md)
 - [ClosedRange.Index](closedrange/index.md)

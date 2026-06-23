@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+A Boolean value that indicates whether the paragraph style uses the system hyphenation settings.
+
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
@@ -16,6 +18,10 @@
 ```swift
 var usesDefaultHyphenation: Bool { get set }
 ```
+
+#### Discussion
+
+The system determines the exact hyphenation logic dynamically by examining the layout context such as language, platform, etc. When `true`, it affects the return value from [`hyphenationFactor`](nsmutableparagraphstyle/hyphenationfactor.md) when the property is set to `0.0`.
 
 ## See Also
 

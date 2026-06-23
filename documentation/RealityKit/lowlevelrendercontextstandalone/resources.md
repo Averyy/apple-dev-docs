@@ -24,6 +24,12 @@ struct Resources
 - [init(device: any MTLDevice) async throws](lowlevelrendercontextstandalone/resources/init(device:).md)
   Asynchronously compiles the shared shader and pipeline resources for the given device.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)

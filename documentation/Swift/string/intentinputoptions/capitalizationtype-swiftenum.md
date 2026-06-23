@@ -36,7 +36,6 @@ enum CapitalizationType
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 
 

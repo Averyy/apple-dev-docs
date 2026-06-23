@@ -1,6 +1,6 @@
 # InsightEvaluator.InsightRequest
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: struct
 
 A structure you use to make a request for a specific insight.
@@ -9,7 +9,6 @@ A structure you use to make a request for a specific insight.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

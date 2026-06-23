@@ -75,7 +75,9 @@ AVFoundation combines several major technology areas that together encompass a w
 - [Macros](avfoundation-macros.md)
 ### Classes
 - [class AVAssetWritingPlanner](avassetwritingplanner.md)
+  AVAssetWritingPlanner orchestrates incremental writing of media files.
 - [class AVAssetWritingPlannerProgress](avassetwritingplannerprogress.md)
+  AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
 - [class AVProVideoStorage](avprovideostorage.md)
   A class to track and manage pre-allocated storage for high data rate video capture.
 ### Variables

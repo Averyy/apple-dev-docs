@@ -1,6 +1,6 @@
 # KeyResult
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: struct
 
 A value describing the musical key detected over a time range.

@@ -49,6 +49,9 @@ You may also use a text checker to obtain completions for partially entered word
 ### Getting the Available Languages
 - [class var availableLanguages: [String]](uitextchecker/availablelanguages.md)
   Returns the languages that the text checker’s class can perform spell-checking for.
+### Instance Methods
+- [func ignoreGrammarRange(NSRange, inSentence: String)](uitextchecker/ignoregrammarrange(_:insentence:).md)
+- [func requestGrammarChecking(of: String, range: NSRange, waitForAllResults: Bool, completionHandler: (([NSTextCheckingResult]) -> Void)?)](uitextchecker/requestgrammarchecking(of:range:waitforallresults:completionhandler:).md)
 
 ## Relationships
 

@@ -1,6 +1,6 @@
 # tonic
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: property
 
 The root note of the musical key.

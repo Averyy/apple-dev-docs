@@ -68,6 +68,9 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Work with materials in Reality Composer Pro to enhance the appearance of your model.
 - [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
+### Particle Emitter
+- [Creating particle systems in Reality Composer Pro](creating-particle-systems-in-reality-composer-pro.md)
+  Add Particle Emitters and Particles to scenes to create nearly any type of visual effect.
 ### Script graph
 - [Getting started with script graphs](getting-started-with-script-graphs.md)
   Build interactive, code-free 3D experiences using the visual node-based script graph editor.
@@ -84,6 +87,8 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Connect an AI model to Reality Composer Pro to generate assets, organize scenes, and get feature guidance.
 ### Release notes
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 2 Release Notes](reality-composer-pro-beta-2-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

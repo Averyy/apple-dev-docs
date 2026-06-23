@@ -21,21 +21,21 @@ class NSTextSelectionManager
 
 ## Topics
 
-### Protocols
-- [NSTextSelectionManager.Delegate](nstextselectionmanager/delegate-swift.protocol.md)
-  A set of methods that manage text selection state and let you customize selection behavior.
-### Instance Properties
+### Setting a delegate
 - [var delegate: (any NSTextSelectionManager.Delegate)?](nstextselectionmanager/delegate-swift.property.md)
   The delegate of the text selection manager.
-- [var gesturesForFailureRequirements: [NSGestureRecognizer]](nstextselectionmanager/gesturesforfailurerequirements.md)
-  The gesture recognizers managed by the selection manager.
-- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
-  The data source that provides text layout information to the selection manager.
+- [NSTextSelectionManager.Delegate](nstextselectionmanager/delegate-swift.protocol.md)
+  A set of methods that manage text selection state and let you customize selection behavior.
+### Configuring text selection
 - [var textSelectionMode: NSTextSelectionManager.Mode](nstextselectionmanager/textselectionmode.md)
   The interaction mode for text selection.
-### Enumerations
 - [NSTextSelectionManager.Mode](nstextselectionmanager/mode.md)
   Values for text selection interaction modes.
+- [var textSelectionDataSource: (any NSTextSelectionDataSource)?](nstextselectionmanager/textselectiondatasource.md)
+  The data source that provides text layout information to the selection manager.
+### Managing gesture recognizers
+- [var gesturesForFailureRequirements: [NSGestureRecognizer]](nstextselectionmanager/gesturesforfailurerequirements.md)
+  The gesture recognizers managed by the selection manager.
 
 ## Relationships
 
@@ -49,6 +49,17 @@ class NSTextSelectionManager
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [class NSTextRange](nstextrange.md)
+  A class that represents a contiguous range between two locations inside document contents.
+- [class NSTextSelection](nstextselection.md)
+  A class that represents a single logical selection context that corresponds to an insertion point.
+- [class NSTextSelectionNavigation](nstextselectionnavigation.md)
+  An interface you use to expose methods for obtaining results from actions performed on text selections.
+- [protocol NSTextLocation](nstextlocation.md)
+  An interface you implement that represents an abstract location inside your document’s content.
 
 
 ---

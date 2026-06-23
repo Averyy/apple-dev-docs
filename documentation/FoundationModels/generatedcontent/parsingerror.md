@@ -35,8 +35,10 @@ struct ParsingError
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Error](../Swift/Error.md)
+- [Escapable](../Swift/Escapable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -57,7 +59,6 @@ struct ParsingError
   Creates equivalent content from a JSON string.
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
   Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
-- [static let null: GeneratedContent](generatedcontent/null.md)
 
 
 ---

@@ -36,6 +36,7 @@ struct ConditionalDynamicProfile<TrueContent, FalseContent> where TrueContent : 
   A type that represents a dynamic profile builder.
 - [LanguageModelSession.DynamicProfileModifierContent](languagemodelsession/dynamicprofilemodifiercontent.md)
 - [LanguageModelSession.ModifiedDynamicProfile](languagemodelsession/modifieddynamicprofile.md)
+- [LanguageModelSession.AnyDynamicProfile](languagemodelsession/anydynamicprofile.md)
 - [LanguageModelSession.Profile](languagemodelsession/profile.md)
   A profile that contains dynamic instructions.
 

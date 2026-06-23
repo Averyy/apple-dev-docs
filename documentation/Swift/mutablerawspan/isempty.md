@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+A Boolean value indicating whether the span is empty.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+

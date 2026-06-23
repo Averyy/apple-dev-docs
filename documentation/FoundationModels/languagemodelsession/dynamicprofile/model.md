@@ -16,7 +16,7 @@ Sets the model.
 ## Declaration
 
 ```swift
-func model(_ model: some LanguageModel) -> some LanguageModelSession.DynamicProfile
+func model(_ model: any LanguageModel) -> some LanguageModelSession.DynamicProfile
 ```
 
 ## See Also

@@ -38,13 +38,6 @@ This is available on the [`CustomerEngagementSession.Event.ready`](customerengag
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [var customerConfiguration: CustomerEngagementSession.CustomerConfiguration?](customerengagementsession/customerconfiguration-swift.property.md)
-  A structure containing configuration information of the customer device.
-- [CustomerEngagementSession.PeerClientType](customerengagementsession/peerclienttype.md)
-  A value that indicates the type of connected peer client.
-
 
 ---
 

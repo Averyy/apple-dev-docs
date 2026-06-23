@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Constructs a new span over the bytes within the supplied range of positions within this span.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,24 @@
 ```swift
 mutating func extracting(unchecked bounds: ClosedRange<Int>) -> MutableRawSpan
 ```
+
+#### Return Value
+
+A `MutableRawSpan` over the bytes within `bounds`.
+
+#### Discussion
+
+The returned span represents a mutation of this span.
+
+The returned span’s first item is always at offset 0; unlike buffer slices, extracted spans do not share their indices with the span from which they are extracted.
+
+This function does not validate `bounds`; this is an unsafe operation.
+
+> **Note**: O(1)
+
+## Parameters
+
+- `bounds`: A valid range of positions. Every position in this range must be within the bounds of this `MutableRawSpan`.
 
 
 ---

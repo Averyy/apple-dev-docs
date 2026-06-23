@@ -56,7 +56,6 @@ The closure you provide to the `AsyncStream` in `init(_:bufferingPolicy:_:)` rec
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

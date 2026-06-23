@@ -42,8 +42,6 @@ Create a [`WKWebpagePreferences`](wkwebpagepreferences.md) object when you want 
 - [var overrideReferrer: String?](wkwebpagepreferences/overridereferrer.md)
 - [var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/preferredhttpsnavigationpolicy.md)
 - [var securityRestrictionMode: WKSecurityRestrictionMode](wkwebpagepreferences/securityrestrictionmode.md)
-### Enumerations
-- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
 
 ## Relationships
 
@@ -68,6 +66,13 @@ Create a [`WKWebpagePreferences`](wkwebpagepreferences.md) object when you want 
   An opaque token that you use to run multiple web views in a single process.
 - [class WKPreferences](wkpreferences.md)
   An object that encapsulates the standard behaviors to apply to websites.
+- [WKWebpagePreferences.ContentMode](wkwebpagepreferences/contentmode.md)
+  Constants that indicate how to render web view content.
+- [WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/upgradetohttpspolicy.md)
+- [enum WKSecurityRestrictionMode](wksecurityrestrictionmode.md)
+- [WKPreferences.InactiveSchedulingPolicy](wkpreferences/inactiveschedulingpolicy-swift.enum.md)
+  An enumeration that lists policies for how a web view that’s not in a window handles tasks.
+- [WKWebView.FullscreenState](wkwebview/fullscreenstate-swift.enum.md)
 
 
 ---

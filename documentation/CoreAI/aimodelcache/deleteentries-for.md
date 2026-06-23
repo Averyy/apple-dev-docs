@@ -26,7 +26,7 @@ final func deleteEntries(for modelURL: URL) throws
 
 A model may have multiple entries in the cache. For example, one with [`cpuOnly`](specializationoptions/cpuonly.md) and another with [`default`](specializationoptions/default.md). This method deletes all of them.
 
-> **Note**: For each entry, if no [`AIModel`](aimodel.md) instance currently references it, deletion happens immediately. Otherwise, the system deletes the entry when the last [`AIModel`](aimodel.md) releases it.
+> **Note**: For each entry, if no [`AIModel`](aimodel.md) instance currently references it, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](aimodel.md) releases it.
 
 ## Parameters
 

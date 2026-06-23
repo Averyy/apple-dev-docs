@@ -75,6 +75,8 @@ class NSTextSelection
   A class that represents a contiguous range between two locations inside document contents.
 - [class NSTextSelectionNavigation](nstextselectionnavigation.md)
   An interface you use to expose methods for obtaining results from actions performed on text selections.
+- [class NSTextSelectionManager](nstextselectionmanager.md)
+  An object that coordinates text selection behavior for custom text views.
 - [protocol NSTextLocation](nstextlocation.md)
   An interface you implement that represents an abstract location inside your document’s content.
 

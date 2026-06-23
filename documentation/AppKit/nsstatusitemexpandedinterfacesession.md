@@ -29,6 +29,10 @@ class NSStatusItemExpandedInterfaceSession
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [protocol NSStatusItemExpandedInterfaceDelegate](nsstatusitemexpandedinterfacedelegate.md)
+
 
 ---
 

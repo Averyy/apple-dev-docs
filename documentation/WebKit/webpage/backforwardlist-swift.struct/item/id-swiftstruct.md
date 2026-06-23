@@ -26,6 +26,15 @@ struct ID
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [WebPage.BackForwardList](webpage/backforwardlist-swift.struct.md)
+  An observable representation of a webpage’s previously loaded resources.
+- [WebPage.NavigationEvent](webpage/navigationevent.md)
+  A particular state that occurs during the progression of a navigation.
+- [WebPage.BackForwardList.Item](webpage/backforwardlist-swift.struct/item.md)
+  A representation of a resource that a webpage previously visited.
+
 
 ---
 

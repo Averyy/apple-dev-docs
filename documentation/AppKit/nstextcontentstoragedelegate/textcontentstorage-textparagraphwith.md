@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-Returns a custom paragraph for a range that you provide from the object’s attributed string.
+Returns a custom `NSTextParagraph` for the specified range in the content storage’s attributed string.
 
 **Availability**:
 - macOS 12.0+
@@ -17,6 +17,12 @@ optional func textContentStorage(_ textContentStorage: NSTextContentStorage, tex
 #### Return Value
 
 A new [`NSTextParagraph`](nstextparagraph.md), or `nil`.
+
+#### Discussion
+
+When non-nil, `textContentStorage` uses the text paragraph instead of creating the standard [`NSTextParagraph`](nstextparagraph.md) with the attributed substring in range. The attributed string for a custom text paragraph must have `range.length`.
+
+Returns a custom paragraph for a range that you provide from the object’s attributed string.
 
 #### Discussion
 

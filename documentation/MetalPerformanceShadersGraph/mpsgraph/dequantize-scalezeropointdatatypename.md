@@ -25,7 +25,9 @@ A valid MPSGraphTensor array of datatype dataType
 
 #### Discussion
 
-Convert the i8 or u8 `tensor` to a float tensor by applying a scale + bias transform: result = scale(tensor - zeroPoint)
+Convert the quantized `tensor` to a float tensor by applying a scale + bias transform: result = scale * (tensor - zeroPoint)
+
+Supported input types: `MPSDataTypeInt4`, `MPSDataTypeUInt4`, `MPSDataTypeInt8`, `MPSDataTypeUInt8`, `MPSDataTypeFloat8E4M3`, `MPSDataTypeFloat8E5M2`. The scale type and `dataType` must match (`MPSDataTypeFloat16`, `MPSDataTypeFloat32`, or `MPSDataTypeBFloat16`).
 
 ## Parameters
 

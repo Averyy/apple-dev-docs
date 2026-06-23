@@ -101,7 +101,7 @@ case let .metalFrameRate(metric):
 
 #### Extract Diagnostic Details
 
-Each [`DiagnosticReport`](diagnosticreport.md) wraps a single [`DiagnosticResult`](diagnosticresult.md) case. Switch over the result to access the type-specific properties of each diagnostic. [`MemoryExceptionDiagnostic`](memoryexceptiondiagnostic.md) is only available on iOS.
+Each [`DiagnosticReport`](diagnosticreport.md) wraps a single [`DiagnosticResult`](diagnosticresult.md) case. Switch over the result to access the type-specific properties of each diagnostic. MetricKit generates a [`MemoryExceptionDiagnostic`](memoryexceptiondiagnostic.md) when your app or extension terminates because it exceeds the memory limit.  [`MemoryExceptionDiagnostic`](memoryexceptiondiagnostic.md) is only available on iOS.
 
 ```swift
 switch report.result {

@@ -1,6 +1,6 @@
 # InsightEvaluator.EvaluationError.notAvailable
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 An error that indicates evaluations are not available on this device.
@@ -9,7 +9,6 @@ An error that indicates evaluations are not available on this device.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

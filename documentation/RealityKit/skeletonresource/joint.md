@@ -53,13 +53,15 @@ let arm = try Joint("shoulder") {
 
 ### Conforms To
 - [Identifiable](../Swift/Identifiable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var rootJoint: SkeletonResource.Joint](skeletonresource/rootjoint.md)
   The root joint of the skeleton hierarchy.
 - [SkeletonResource.JointBuilder](skeletonresource/jointbuilder.md)
-  A result builder for declaratively constructing joint hierarchies.
+  A result builder for declaratively constructing the children of a joint.
 
 
 ---

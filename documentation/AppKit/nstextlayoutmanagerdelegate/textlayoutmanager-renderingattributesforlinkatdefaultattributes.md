@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: method
 
-The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
+Returns a dictionary of rendering attributes for rendering a link.
 
 **Availability**:
 - macOS 12.0+
@@ -16,21 +16,27 @@ optional func textLayoutManager(_ textLayoutManager: NSTextLayoutManager, render
 
 #### Return Value
 
-A dictionary of attributes.
+A dictionary of rendering attributes for the link, or `nil` to use defaults.
+
+#### Discussion
+
+Just as other rendering attributes, specifying [`NSNull`](https://developer.apple.com/documentation/Foundation/NSNull) removes the attribute from the final attributes used for rendering. It has priority over the general rendering attributes.
+
+The method the framework calls to return a dictionary of attributes for rendering a link attribute name.
 
 ## Parameters
 
-- `textLayoutManager`: The `NSTextLayoutManager`.
-- `link`: The link.
-- `location`: The [`NSTextLocation`](nstextlocation.md) of the link.
-- `renderingAttributes`: A dictionary of attributes whose keys are [`NSAttributedString.Key`](https://developer.apple.com/documentation/Foundation/NSAttributedString/Key) values.
+- `textLayoutManager`: The text layout manager sending the message.
+- `link`: The link object.
+- `location`: The document location of the link.
+- `renderingAttributes`: The default rendering attributes.
 
 ## See Also
 
 - [func textLayoutManager(NSTextLayoutManager, shouldBreakLineBefore: any NSTextLocation, hyphenating: Bool) -> Bool](nstextlayoutmanagerdelegate/textlayoutmanager(_:shouldbreaklinebefore:hyphenating:).md)
-  The method the framework calls to determine the soft line break point.
+  Invoked while determining the soft line break point.
 - [func textLayoutManager(NSTextLayoutManager, textLayoutFragmentFor: any NSTextLocation, in: NSTextElement) -> NSTextLayoutFragment](nstextlayoutmanagerdelegate/textlayoutmanager(_:textlayoutfragmentfor:in:).md)
-  The method the framework calls to give the delegate an opportunity to return a custom text layout fragment.
+  Returns a text layout fragment for the specified location in the text element.
 
 
 ---

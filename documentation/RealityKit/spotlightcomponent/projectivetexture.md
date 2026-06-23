@@ -21,7 +21,7 @@ struct ProjectiveTexture
 
 #### Overview
 
-Cookie lights or projective lights in RealityKit are essentially a light mask added to our SpotLights that allows us to create a shadow that can illuminate an area uniformly by modifying the characteristics of the light. To illustrate the concept, we can think of a piece of gelatin paper wrapped around a light. The final illumination of the objects lit by this light will be a combination of the characteristics of the color of the light and the paper.
+Cookie lights or projective lights in RealityKit are essentially a light mask added to our SpotLights that allows us to create a shadow that can illuminate an area uniformly by modifying the characteristics of the light. To illustrate the concept, we can think of a piece of gelatin paper wrapped around a light. The final illumination of the objects lit by this light will be a combination of the characteristics of the color of the light and the paper. Projective lights are available on devices with Apple6 GPU family feature support.
 
 ## Topics
 

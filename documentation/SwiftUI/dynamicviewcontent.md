@@ -39,10 +39,10 @@ protocol DynamicViewContent<Data> : View
 ### Reordering
 - [func reorderable() -> some DynamicViewContent<Self.Data>
 ](dynamicviewcontent/reorderable.md)
-  Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
+  Enables reordering of views from this content inside the scope of a reorderable container modifier.
 - [func reorderable(collectionID: some Hashable & Sendable) -> some DynamicViewContent<Self.Data>
 ](dynamicviewcontent/reorderable(collectionid:).md)
-  Enables the views of this content to be reordered when used within the scope of a [`reorderContainer(for:in:isEnabled:move:)`](view/reordercontainer(for:in:isenabled:move:).md) modifier.
+  Enables reordering views from this content within and between sections in the scope of a reorderable container modifier.
 ### Deprecated symbols
 - [func onInsert(of: [String], perform: (Int, [NSItemProvider]) -> Void) -> some DynamicViewContent](dynamicviewcontent/oninsert(of:perform:)-40hwa.md)
   Sets the insert action for the dynamic view.

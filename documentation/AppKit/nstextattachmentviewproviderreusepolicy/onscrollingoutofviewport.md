@@ -12,6 +12,10 @@
 static var onScrollingOutOfViewport: NSTextAttachmentViewProviderReusePolicy { get }
 ```
 
+## See Also
+
+- [static var onEditingInlineParagraphs: NSTextAttachmentViewProviderReusePolicy](nstextattachmentviewproviderreusepolicy/oneditinginlineparagraphs.md)
+
 
 ---
 

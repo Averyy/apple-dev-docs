@@ -1,6 +1,6 @@
 # requestAuthorization(for:)
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: method
 
 Requests authorization from a person to generate evaluations.
@@ -9,7 +9,6 @@ Requests authorization from a person to generate evaluations.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

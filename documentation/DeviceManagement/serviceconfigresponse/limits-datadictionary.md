@@ -3,8 +3,6 @@
 **Framework**: Device Management  
 **Kind**: dictionary
 
-Request limits for the managed location. Each entry maps a limit name to its current integer value.
-
 ## Declaration
 
 ```swift

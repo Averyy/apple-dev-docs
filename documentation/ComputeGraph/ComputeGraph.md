@@ -71,7 +71,6 @@ At runtime, [`ComputeGraphSimulation`](computegraphsimulation.md) drives GPU exe
 - [enum AddressSpace](addressspace.md)
   A GPU memory address space.
 ### Geometry and simulation inputs
-- [enum Topology](topology.md)
 - [enum CoordinateSpace](coordinatespace.md)
   Simulation coordinate space, controlling how positions and orientations are stored.
 - [enum StripOrientation](striporientation.md)

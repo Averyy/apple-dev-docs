@@ -16,6 +16,7 @@ Creates a builder with a prompt expression.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression(_ expression: Prompt) -> Prompt
 ```
 

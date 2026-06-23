@@ -22,6 +22,7 @@ var lightSize: Float { get set }
 ## See Also
 
 - [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
+  The quality of the soft shadows this light casts.
 - [SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode.md)
   The quality for the shadows. Low uses shadows that don’t change with light size and the distance between light-blocker-receiver Medium and high allow soft shadows with varying sample counts
 

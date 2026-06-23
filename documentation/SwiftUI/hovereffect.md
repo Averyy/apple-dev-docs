@@ -21,11 +21,11 @@ struct HoverEffect
 ## Topics
 
 ### Getting hover effects
-- [static let automatic: HoverEffect](hovereffect/automatic.md)
+- [static var automatic: HoverEffect](hovereffect/automatic.md)
   An effect  that attempts to determine the effect automatically. This is the default effect.
-- [static let highlight: HoverEffect](hovereffect/highlight.md)
+- [static var highlight: HoverEffect](hovereffect/highlight.md)
   An effect  that morphs the pointer into a platter behind the view and shows a light source indicating position.
-- [static let lift: HoverEffect](hovereffect/lift.md)
+- [static var lift: HoverEffect](hovereffect/lift.md)
   An effect that slides the pointer under the view and disappears as the view scales up and gains a shadow.
 ### Initializers
 - [init<E>(E)](hovereffect/init(_:).md)

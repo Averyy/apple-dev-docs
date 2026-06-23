@@ -1,6 +1,6 @@
 # schemaVersion
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: property
 
 An integer that indicates the schema version the framework should use to perform the evaluation.
@@ -9,7 +9,6 @@ An integer that indicates the schema version the framework should use to perform
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

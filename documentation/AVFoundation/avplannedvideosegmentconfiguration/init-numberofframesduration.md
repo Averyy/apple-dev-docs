@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: init
 
+Creates an instance of AVPlannedVideoSegmentConfiguration specifying the number of frames in and total duration of the segment.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -22,8 +24,6 @@ init(numberOfFrames frameCount: Int, duration: CMTime)
 An instance of AVPlannedVideoSegmentConfiguration.
 
 #### Discussion
-
-Creates an instance of AVPlannedVideoSegmentConfiguration specifying the number of frames in and total duration of the segment.
 
 For best results, frameCount and duration should be greater or equal to the minimumFrameCount and minimumDuration of AVPlannedVideoSegmentBoundaryGuidelines respectively. This initializer throws NSInvalidArgumentException if frameCount is less than or equal to 0, or duration is not numeric, or duration is less than or equal to 0.
 

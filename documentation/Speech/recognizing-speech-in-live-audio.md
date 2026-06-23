@@ -229,6 +229,8 @@ The remaining high-level steps — training data preparation and transcriber con
 
 ## See Also
 
+- [Speech updates](../Updates/Speech.md)
+  Learn about important changes to Speech.
 - [Bringing advanced speech-to-text capabilities to your app](bringing-advanced-speech-to-text-capabilities-to-your-app.md)
   Learn how to incorporate live speech-to-text transcription into your app with SpeechAnalyzer.
 - [actor SpeechAnalyzer](speechanalyzer.md)

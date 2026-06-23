@@ -28,6 +28,12 @@ struct PathNode
 - [var label: String](navigationmeshresource/pathnode/label.md)
 - [var position: SIMD3<Float>](navigationmeshresource/pathnode/position.md)
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.struct.md)

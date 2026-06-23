@@ -53,7 +53,6 @@ Set a preferred appearance for a particular view hierarchy to override the userâ
 ### Conforms To
 - [CaseIterable](../Swift/CaseIterable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

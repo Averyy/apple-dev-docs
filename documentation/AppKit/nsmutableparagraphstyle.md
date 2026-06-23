@@ -103,12 +103,6 @@ The [`NSMutableParagraphStyle`](nsmutableparagraphstyle.md) class adds methods t
   A tab in a paragraph.
 - [class NSTextList](nstextlist.md)
   A section of text that forms a single list.
-- [class NSTextTable](nstexttable.md)
-  An object that represents a text table as a whole.
-- [class NSTextTableBlock](nstexttableblock.md)
-  A text block that appears as a cell in a text table.
-- [class NSTextBlock](nstextblock.md)
-  A block of text laid out in a subregion of the text container.
 
 
 ---

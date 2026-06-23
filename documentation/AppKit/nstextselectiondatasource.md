@@ -44,6 +44,9 @@ protocol NSTextSelectionDataSource : NSObjectProtocol
   Returns the layout orientation at the location you specify.
 - [NSTextSelectionNavigation.LayoutOrientation](nstextselectionnavigation/layoutorientation.md)
   Values that describe the possible layout orientations.
+### Instance Methods
+- [func convertInteractionPoint(CGPoint, toContainerAt: any NSTextLocation) -> CGPoint](nstextselectiondatasource/convertinteractionpoint(_:tocontainerat:).md)
+  Converts an interaction point from display space into the text container’s coordinate system.
 
 ## Relationships
 

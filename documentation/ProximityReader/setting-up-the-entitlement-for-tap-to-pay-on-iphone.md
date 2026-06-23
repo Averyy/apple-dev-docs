@@ -10,7 +10,7 @@ Tap to Pay on iPhone lets merchants accept contactless payments using an app on 
 
 To integrate with ProximityReader and use Tap to Pay on iPhone, you need to request the [`Tap to Pay on iPhone Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/tap-to-pay-on-iphone/). To access the request form, you need to have an organization-level Apple Developer account and be logged in as the Account Holder. Apple reviews each application using predefined criteria. If your request meets the criteria, Apple adds the entitlement to your developer account using managed capabilities. For more information, see [`Provisioning with capabilities`](https://developer.apple.comhttps://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities).
 
-After you receive the entitlement, you need to configure your Xcode project to use it, which involves several steps. You create or update an App ID, generate a provisioning profile, and add the entitlement to your app’s information property list. Your project’s code signing settings might also require minor changes. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
+After you receive the entitlement, you need to configure your Xcode project to use it, which involves several steps. You create or update an App ID, generate a provisioning profile, and add the entitlement to the `Info.plist` file for your target. Your project’s code signing settings might also require minor changes.
 
 > **Note**: TestFlight beta testing and App Store submissions require an entitlement that allows distribution. If you’ve already completed your testing with the nondistribution entitlement, respond to the original email and rerequest the [`Tap to Pay on iPhone Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/tap-to-pay-on-iphone/).
 
@@ -62,8 +62,6 @@ The following example shows the contents of an app’s `.entitlements` file with
 <key>com.apple.developer.proximity-reader.payment.acceptance</key>
 <true/>
 ```
-
-Once you add your entitlements file, add the file to your app’s information property list. For more information, see [`Managing your app’s information property list values`](https://developer.apple.com/documentation/BundleResources/managing-your-app-s-information-property-list).
 
 ## See Also
 

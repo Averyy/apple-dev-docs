@@ -3,6 +3,8 @@
 **Framework**: UIKit  
 **Kind**: property
 
+A Boolean value that indicates whether the list is ordered.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

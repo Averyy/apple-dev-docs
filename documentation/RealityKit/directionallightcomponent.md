@@ -75,7 +75,7 @@ The directional light illuminates entities evenly in the direction it derives fr
   A platform-specific type used to define color for a directional light.
 ### Assigning render layers
 - [var layers: RenderLayer.Set](directionallightcomponent/layers.md)
-  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated.
+  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
 ### Structures
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
   A directional light component that adds shadows to entities that it illuminates

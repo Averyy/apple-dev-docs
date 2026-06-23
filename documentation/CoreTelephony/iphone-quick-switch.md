@@ -198,9 +198,9 @@ The following examples show how to create a `CTQuickSwitchManager`, register and
 - [CTQuickSwitchManager.Delegate](ctquickswitchmanager/delegate-swift.protocol.md)
   Methods you implement to respond to changes in a device’s quick switch state.
 ### Registering and unregistering for quick switch events
-- [func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
+- [class func registerForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/registerforlaunch(onquickswitchstateevents:).md)
   Registers the calling app for background launch whenever the device’s quick switch state changes.
-- [func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
+- [class func unregisterForLaunch(onQuickSwitchStateEvents: ((any Error)?) -> Void)](ctquickswitchmanager/unregisterforlaunch(onquickswitchstateevents:).md)
   Removes the calling app’s registration for background launch on quick switch state changes.
 ### Responding to quick switch state changes
 - [func quickSwitchManager(CTQuickSwitchManager, didChangeTo: CTQuickSwitchState)](ctquickswitchmanager/delegate-swift.protocol/quickswitchmanager(_:didchangeto:).md)

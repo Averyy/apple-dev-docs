@@ -1,4 +1,4 @@
 Completed scraping BrowserEngineCore!
-Total pages scraped: 0
-Pages skipped (unchanged): 17
+Total pages scraped: 15
+Pages skipped (unchanged): 2
 Pages failed: 0

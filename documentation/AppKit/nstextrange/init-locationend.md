@@ -14,10 +14,14 @@ Creates a new text range with the starting and ending locations you specify.
 init?(location: any NSTextLocation, end endLocation: (any NSTextLocation)?)
 ```
 
+#### Discussion
+
+Returns an empty range when `endLocation` is `nil`.
+
 ## Parameters
 
 - `location`: The starting location.
-- `endLocation`: The ending location.
+- `endLocation`: The ending location, or `nil` for an empty range.
 
 ## See Also
 

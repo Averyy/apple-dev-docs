@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: method
 
+Calls the given closure with a mutable pointer to the underlying bytes of the viewed contiguous storage.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
@@ -17,6 +19,18 @@
 ```swift
 mutating func withUnsafeMutableBytes<E, Result>(_ body: (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
+
+#### Return Value
+
+The return value of the `body` closure parameter.
+
+#### Discussion
+
+The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeMutableBytes(_:)`. Do not store or return the pointer for later use.
+
+## Parameters
+
+- `body`: A closure with an `UnsafeMutableRawBufferPointer` parameter that points to the viewed contiguous storage. If `body` has a return value, that value is also used as the return value for the `withUnsafeMutableBytes(_:)` method. The closure’s parameter is valid only for the duration of its execution.
 
 
 ---

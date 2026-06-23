@@ -21,7 +21,7 @@ protocol UITableViewAppIntentsDataSource : AnyObject
 
 #### Overview
 
-For more information, refer to doc:Making-onscreen-content-available-to-siri-and-apple-intelligence and [`App Intents`](AppIntents.md).
+For more information, refer to doc:providing-contextual-cues-to-Apple-Intelligence-and-Siri and [`App Intents`](AppIntents.md).
 
 ## Topics
 

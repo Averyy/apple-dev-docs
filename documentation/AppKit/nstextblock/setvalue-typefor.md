@@ -16,7 +16,8 @@ func setValue(_ value: CGFloat, type: NSTextBlock.ValueType, for dimension: NSTe
 
 ## Parameters
 
-- `type`: The type of value being provided. This controls how `val` is interpreted.
+- `value`: The new value for the dimension.
+- `type`: The type of value being provided. This controls how `value` is interpreted.
 - `dimension`: The dimension to set.
 
 ## See Also

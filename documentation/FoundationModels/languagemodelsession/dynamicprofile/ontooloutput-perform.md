@@ -16,6 +16,7 @@ Runs an action whenever a tool call output is received within this dynamic profi
 ## Declaration
 
 ```swift
+@export(implementation)
 func onToolOutput(perform action: nonisolated(nonsending) sending @escaping () async throws -> Void) -> some LanguageModelSession.DynamicProfile
 ```
 

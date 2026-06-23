@@ -52,6 +52,9 @@ struct View<Element> where Element : BitwiseCopyable
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 - [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.View<Element>](ndarray/view/slice(at:)-4yomr.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Subscripts
+- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/view/subscript(scalarat:).md)
+  Access the element at a multi-dimensional `index`.
 
 ## See Also
 

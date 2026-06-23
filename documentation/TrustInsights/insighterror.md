@@ -1,6 +1,6 @@
 # InsightError
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Error values the framework returns for specific insights within the overall evaluation.
@@ -9,7 +9,6 @@ Error values the framework returns for specific insights within the overall eval
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

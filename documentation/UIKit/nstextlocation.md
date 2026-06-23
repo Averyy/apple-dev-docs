@@ -26,8 +26,10 @@ protocol NSTextLocation : NSObjectProtocol
   Compares and returns the logical ordering to location.
 ### Instance Properties
 - [var hash: Int](nstextlocation/hash.md)
+  Must be consistent with results from `isEqual:` while also avoiding hash collisions.
 ### Instance Methods
 - [func isEqual(Any?) -> Bool](nstextlocation/isequal(_:).md)
+  Returns `true` for locations representing the same document position.
 
 ## Relationships
 

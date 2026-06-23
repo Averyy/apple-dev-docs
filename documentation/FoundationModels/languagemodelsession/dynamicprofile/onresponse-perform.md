@@ -16,6 +16,7 @@ Runs an action after this dynamic profile produces a response.
 ## Declaration
 
 ```swift
+@export(implementation)
 func onResponse(perform action: nonisolated(nonsending) sending @escaping () async throws -> Void) -> some LanguageModelSession.DynamicProfile
 ```
 

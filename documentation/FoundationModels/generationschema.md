@@ -25,7 +25,7 @@ struct GenerationSchema
 
 #### Overview
 
-Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguagemodel.md) to deterministically ensure the output is in the desired format.
+Generation schemas guide the output of a language model to deterministically ensure the output is in the desired format.
 
 ## Topics
 
@@ -40,6 +40,9 @@ Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguage
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
   Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+### Accessing the name
+- [var name: String](generationschema/name.md)
+  The name of this generation schema.
 ### Errors
 - [GenerationSchema.SchemaError](generationschema/schemaerror.md)
   A error that occurs when there is a problem creating a generation schema.
@@ -47,9 +50,11 @@ Generation  schemas guide the output of a [`SystemLanguageModel`](systemlanguage
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
 - [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
+- [Escapable](../Swift/Escapable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

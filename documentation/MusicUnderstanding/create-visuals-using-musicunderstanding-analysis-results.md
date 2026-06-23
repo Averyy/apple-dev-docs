@@ -1,6 +1,6 @@
 # Creating visuals with Music Understanding analysis results
 
-**Framework**: MusicUnderstanding
+**Framework**: Music Understanding
 
 Create a multiplatform app that presents analysis results from the Music Understanding framework.
 

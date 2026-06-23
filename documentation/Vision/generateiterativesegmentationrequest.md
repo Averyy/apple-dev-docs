@@ -22,30 +22,22 @@ final class GenerateIterativeSegmentationRequest
 ## Topics
 
 ### Initializers
-- [init(seed: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seed:_:)-15ott.md)
-- [init(seed: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seed:_:)-1q4nb.md)
-- [init(seed: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seed:_:)-5rwm4.md)
-  Initializer
 - [init(seedBox: NormalizedRect, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedbox:_:).md)
+  Instantiates with a seed box.
 - [init(seedPoint: NormalizedPoint, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedpoint:_:).md)
-  Initializer
+  Instantiates with a seed point.
 - [init(seedScribbleBuffer: CVReadOnlyPixelBuffer, GenerateIterativeSegmentationRequest.Revision?)](generateiterativesegmentationrequest/init(seedscribblebuffer:_:).md)
+  Instantiates with a scribble buffer.
 ### Instance Properties
 - [var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.property.md)
   Controls the resolution of the produced mask.
 - [let revision: GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.property.md)
   The request’s configured revision.
 ### Instance Methods
-- [func addExcludedPoint(NormalizedPoint)](generateiterativesegmentationrequest/addexcludedpoint(_:)-p2ft.md)
-  Refine the mask with a point that is excluded from the desired segmentation.
-- [func addExcludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addexcludedpoint(_:)-wuo8.md)
+- [func addExcludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addexcludedpoint(_:).md)
   Refines the mask with a point that is excluded from the desired segmentation. Throws an error if the total number of added points exceeded the limitation. (13 points when seedPoint or seedScribbleBuffer were used or 11 points when seedBox was used)
-- [func addIncludedPoint(NormalizedPoint)](generateiterativesegmentationrequest/addincludedpoint(_:)-4ecfz.md)
-  Refine the mask with a point that is part of the desired segmentation.
-- [func addIncludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addincludedpoint(_:)-4l3rd.md)
+- [func addIncludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addincludedpoint(_:).md)
   Refines the mask with a point that is part of the desired segmentation. Throws an error if the total number of added points exceeded the limitation. (13 points when seedPoint or seedScribbleBuffer were used or 11 points when seedBox was used)
-- [func excludePoint(NormalizedPoint)](generateiterativesegmentationrequest/excludepoint(_:).md)
-- [func includePoint(NormalizedPoint)](generateiterativesegmentationrequest/includepoint(_:).md)
 ### Type Aliases
 - [GenerateIterativeSegmentationRequest.Result](generateiterativesegmentationrequest/result.md)
   Result is returned as a gray mask image. It can be nil if there is nothing to segment.

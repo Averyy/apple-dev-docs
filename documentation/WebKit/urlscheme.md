@@ -49,6 +49,10 @@ Scheme names are case sensitive, must start with an ASCII letter, and may contai
   A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 - [enum URLSchemeTaskResult](urlschemetaskresult.md)
   A value used as part of a sequence of results from a [`URLSchemeHandler`](urlschemehandler.md), which can either be a `Data` or a `URLResponse`.
+- [WebPage.Configuration.MediaPlaybackBehavior](webpage/configuration/mediaplaybackbehavior-swift.enum.md)
+  The behavior used when playing HTML video within a page.
+- [WebPage.DeviceSensorAuthorization.Permission](webpage/devicesensorauthorization/permission.md)
+  The kind of sensor permission a web resource may request to access.
 
 
 ---

@@ -56,7 +56,6 @@ The closure you provide to the `AsyncThrowingStream` in `init(_:bufferingPolicy:
 
 ### Conforms To
 - [Equatable](equatable.md)
-- [Escapable](escapable.md)
 - [Hashable](hashable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)

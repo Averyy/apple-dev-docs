@@ -226,7 +226,6 @@ Provides the full list of web service URLs, notification types, request limits, 
 
 ### Response
 - [object ServiceConfigResponse](serviceconfigresponse.md)
-  Service configuration, including request limits, available URLs, supported notification types, and error code reference information.
 - [object ErrorResponse](errorresponse.md)
   The response that contains the error that occurs.
 ### Content Metadata

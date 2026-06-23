@@ -43,6 +43,11 @@ Note: The behavior is a preference and does not always have to be honored by the
 
 - `behavior`: A immersive environment behavior that should be applied by the system when this scene opens.
 
+## See Also
+
+- [func immersiveContentBrightness(ImmersiveContentBrightness) -> some Scene](scene/immersivecontentbrightness(_:).md)
+  Sets the content brightness of an immersive space.
+
 
 ---
 

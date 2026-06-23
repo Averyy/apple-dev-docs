@@ -24,7 +24,7 @@ final var rootJoint: SkeletonResource.Joint { get }
 - [SkeletonResource.Joint](skeletonresource/joint.md)
   Describes a single joint of a `Skeleton`
 - [SkeletonResource.JointBuilder](skeletonresource/jointbuilder.md)
-  A result builder for declaratively constructing joint hierarchies.
+  A result builder for declaratively constructing the children of a joint.
 
 
 ---

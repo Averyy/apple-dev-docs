@@ -3,6 +3,8 @@
 **Framework**: AppKit  
 **Kind**: property
 
+All events, including system events.
+
 **Availability**:
 - macOS 11.0+
 
@@ -15,6 +17,7 @@ static var allEvents: NSControl.Events { get }
 ## See Also
 
 - [static var allTrackingEvents: NSControl.Events](nscontrol/events/alltrackingevents.md)
+  All tracking events.
 
 
 ---

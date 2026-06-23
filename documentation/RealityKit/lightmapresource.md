@@ -16,7 +16,7 @@ A resource containing references to lightmap texture atlases and descriptions of
 ## Declaration
 
 ```swift
-class LightmapResource
+final class LightmapResource
 ```
 
 #### Overview

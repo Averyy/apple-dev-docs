@@ -46,7 +46,7 @@ Maintain a strong reference to a session object for the duration of the document
 - [Generating reader tokens for the Verifier API](generating-reader-tokens-for-the-verifier-api.md)
   Configure your server to generate reader tokens to prepare a device for mobile document reading.
 - [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
+  Read and verify mobile driver’s license information without any additional hardware.
 - [class MobileDocumentReader](mobiledocumentreader.md)
   An object for configuring mobile document reading on the current device.
 

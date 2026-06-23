@@ -21,6 +21,8 @@ init(capabilities: [LanguageModelCapabilities.Capability])
 
 ## See Also
 
+- [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
+  Specify a list of supported capabilities
 - [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)
   A capability that a given language model may or may not have.
 

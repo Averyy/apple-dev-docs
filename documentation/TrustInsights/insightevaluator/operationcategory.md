@@ -1,6 +1,6 @@
 # InsightEvaluator.OperationCategory
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 Values that represent the types of operation it’s possible to request evaluations for.
@@ -9,7 +9,6 @@ Values that represent the types of operation it’s possible to request evaluati
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 
@@ -43,7 +42,6 @@ The framework may display a message based on this in the transparency logs showi
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

@@ -16,7 +16,8 @@ func setContentWidth(_ contentWidth: CGFloat, type: NSTextBlock.ValueType)
 
 ## Parameters
 
-- `type`: The type of value being provided. This controls how `val` is interpreted.
+- `contentWidth`: The new value for the width.
+- `type`: The type of value being provided. This controls how `contentWidth` is interpreted.
 
 ## See Also
 

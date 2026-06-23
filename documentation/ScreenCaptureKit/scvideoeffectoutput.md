@@ -39,6 +39,23 @@ SCVideoEffectOutput represents a camera video effect session on a SCStream. Crea
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
+## See Also
+
+- [class SCStream](scstream.md)
+  An instance that represents a stream of shareable content.
+- [class SCStreamConfiguration](scstreamconfiguration.md)
+  An instance that provides the output configuration for a stream.
+- [class SCContentFilter](sccontentfilter.md)
+  An instance that filters the content a stream captures.
+- [protocol SCStreamDelegate](scstreamdelegate.md)
+  A delegate protocol your app implements to respond to stream events.
+- [class SCScreenshotManager](scscreenshotmanager.md)
+  An instance for the capture of single frames from a stream.
+- [class SCScreenshotConfiguration](scscreenshotconfiguration.md)
+  An object that contains screenshot properties such as output width, height, and image quality specifications.
+- [class SCScreenshotOutput](scscreenshotoutput.md)
+  An object that contains all images requested by the client.
+
 
 ---
 

@@ -37,7 +37,7 @@ A [`CTCarrier`](ctcarrier.md) object gives you information about the user’s ce
   The type of cellular plan available for an eSIM.
 ### SIM
 - [class CTCellularPlanStatus](ctcellularplanstatus.md)
-  An object used for retrieving and checking the validity of a token.
+  An object that validates tokens for UPI device verification or checks the availability of cellular plans for a phone number.
 ### Subscriber information
 - [class CTSubscriber](ctsubscriber.md)
   A cellular network subscriber.

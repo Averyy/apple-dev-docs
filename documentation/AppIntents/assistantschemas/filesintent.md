@@ -33,7 +33,6 @@ protocol FilesIntent : AssistantSchemas.Model
   The app intent conforms to the schema for opening a file.
 - [var renameFile: some AssistantSchemas.Intent](assistantschemas/filesintent/renamefile.md)
   The app intent conforms to the schema for renaming a file.
-- [var showDocumentScanner: some AssistantSchemas.Intent](assistantschemas/filesintent/showdocumentscanner.md)
 
 ## Relationships
 

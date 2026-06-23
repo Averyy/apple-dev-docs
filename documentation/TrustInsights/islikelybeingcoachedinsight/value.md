@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight.Value
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: enum
 
 The levels of trust the framework returns for the “is likely being coached” insight.
@@ -9,7 +9,6 @@ The levels of trust the framework returns for the “is likely being coached” 
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

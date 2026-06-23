@@ -31,8 +31,6 @@ For more information about making your app’s actions available to Apple Intell
   An entity schema for a folder.
 - [var note: some AppSchemaEntity](appschema/notesentity/note.md)
   An entity schema for a note.
-- [var tag: some AppSchemaEntity](appschema/notesentity/tag.md)
-  An entity schema for a tag.
 - [AppSchema.NotesEntity](appschema/notesentity.md)
   Identifies entity schemas in the notes domain.
 

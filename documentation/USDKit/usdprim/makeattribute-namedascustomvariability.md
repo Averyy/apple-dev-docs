@@ -25,8 +25,6 @@ func makeAttribute(named name: USDToken, as type: USDPrim.Attribute.ValueType, c
 - [func attribute(named: USDToken) -> USDPrim.Attribute](usdprim/attribute(named:).md)
 - [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
 - [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
-- [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:).md)
-  Access or modify the value of a named attribute on this prim.
 - [USDPrim.Attribute](usdprim/attribute.md)
 
 

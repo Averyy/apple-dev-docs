@@ -61,6 +61,7 @@ Opaque pointers are used to represent C pointers to types that cannot be represe
 - [AtomicRepresentable](../synchronization/atomicrepresentable.md)
 - [BitwiseCopyable](bitwisecopyable.md)
 - [CVarArg](cvararg.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [Equatable](equatable.md)

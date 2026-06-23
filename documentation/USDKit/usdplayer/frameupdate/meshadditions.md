@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-let meshAdditions: [MeshID]
+let meshAdditions: [USDPlayer.MeshID]
 ```
 
 

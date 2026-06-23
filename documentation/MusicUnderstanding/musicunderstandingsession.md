@@ -1,6 +1,6 @@
 # MusicUnderstandingSession
 
-**Framework**: MusicUnderstanding  
+**Framework**: Music Understanding  
 **Kind**: class
 
 An object that performs music analysis on an audio source and provides the results.

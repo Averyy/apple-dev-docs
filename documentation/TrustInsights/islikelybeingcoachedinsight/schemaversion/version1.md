@@ -1,6 +1,6 @@
 # IsLikelyBeingCoachedInsight.SchemaVersion.version1
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: case
 
 Values available in schema version1.
@@ -9,7 +9,6 @@ Values available in schema version1.
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

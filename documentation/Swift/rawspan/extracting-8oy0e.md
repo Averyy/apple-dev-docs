@@ -22,7 +22,7 @@ func extracting(_ bounds: some RangeExpression<Int>) -> RawSpan
 
 #### Return Value
 
-A span over the bytes within `bounds`
+A `RawSpan` over the bytes within `bounds`.
 
 #### Discussion
 

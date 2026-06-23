@@ -54,6 +54,7 @@ A [`WKNavigation`](wknavigation.md) object uniquely identifies a load request fo
   An object that contains information about an action that causes navigation to occur.
 - [class WKNavigationResponse](wknavigationresponse.md)
   An object that contains the response to a navigation request, and which you use to make navigation-related policy decisions.
+- [class WKFormInfo](wkforminfo.md)
 
 
 ---

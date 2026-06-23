@@ -1,6 +1,6 @@
 # InsightEvaluator.InsightContext
 
-**Framework**: TrustInsights  
+**Framework**: Trust Insights  
 **Kind**: struct
 
 A structure that provides details about the evaluations to request and provides information the framework requires for the evaluation to take place.
@@ -9,7 +9,6 @@ A structure that provides details about the evaluations to request and provides 
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
-- visionOS ?+
 
 ## Declaration
 

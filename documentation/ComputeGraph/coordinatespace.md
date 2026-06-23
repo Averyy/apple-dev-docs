@@ -44,7 +44,6 @@ enum CoordinateSpace
 
 ## See Also
 
-- [enum Topology](topology.md)
 - [enum StripOrientation](striporientation.md)
   An enumeration that specifies how a strip should be oriented.
 - [struct Viewpoint](viewpoint-swift.struct.md)

@@ -3,6 +3,8 @@
 **Framework**: ComputeGraph  
 **Kind**: case
 
+Each element emits eight vertices, rendered as an octagon.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

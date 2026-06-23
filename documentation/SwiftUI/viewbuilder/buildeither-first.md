@@ -3,35 +3,27 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Builds a partial result from a condition that’s true.
+Produces content for a conditional statement in a multi-statement closure when the condition is true.
 
 **Availability**:
-- iOS 16.0+
-- iPadOS 16.0+
-- Mac Catalyst 16.0+
-- macOS 13.0+
-- tvOS 16.0+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
 - visionOS 1.0+
-- watchOS 9.0+
+- watchOS 6.0+
 
 ## Declaration
 
 ```swift
-static func buildEither<T1, T2>(first: T1) -> BuilderConditional<T1, T2> where T1 : ChartContent, T2 : ChartContent
+static func buildEither<TrueContent, FalseContent>(first: TrueContent) -> _ConditionalContent<TrueContent, FalseContent>
 ```
-
-#### Discussion
-
-This method provides support for `if` statements with an `else` clause and `switch` statements. It produces optional chart content that is visible when the condition evaluates to `true`.
-
-## Parameters
-
-- `first`: The content to use if the condition is `true`.
 
 ## See Also
 
-- [static buildEither(second:)](viewbuilder/buildeither(second:).md)
-  Builds a partial result from a condition that’s false.
+- [static func buildEither<TrueContent, FalseContent>(second: FalseContent) -> _ConditionalContent<TrueContent, FalseContent>](viewbuilder/buildeither(second:).md)
+  Produces content for a conditional statement in a multi-statement closure when the condition is false.
 - [static buildIf(_:)](viewbuilder/buildif(_:).md)
   Produces optional content for conditional statements in multi-statement closures that’s only included when the condition evaluates to true.
 - [static buildLimitedAvailability(_:)](viewbuilder/buildlimitedavailability(_:).md)

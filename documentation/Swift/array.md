@@ -548,7 +548,9 @@ When the destination array’s element type is a nonclass type that bridges to a
 - [var fullDayEntry: MetricReport.IntervalEntry](array/fulldayentry.md)
   The full day interval entry spanning the entire report collection period.
 - [var mutableSpan: MutableSpan<Element>](array/mutablespan.md)
+  A mutable span over the elements of this array.
 - [var span: Span<Element>](array/span.md)
+  A span over the elements of this array.
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.

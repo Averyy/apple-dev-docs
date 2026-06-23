@@ -3,6 +3,8 @@
 **Framework**: Swift  
 **Kind**: property
 
+The total number of bytes that this output span can contain.
+
 **Availability**:
 - iOS 12.2+
 - iPadOS 12.2+
