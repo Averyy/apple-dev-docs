@@ -40,6 +40,8 @@ This feature only supports USB2 devices drawing a maximum 500mA and supports the
   A Boolean value indicating whether your app’s windows will follow the person.
 - [Apple Neural Engine access](entitlements/com.apple.developer.coreml.neural-engine-access.md)
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
+- [Visual Fidelity monitoring](entitlements/com.apple.developer.arkit.visual-fidelity.allow.md)
+  A Boolean value that indicates whether your app can monitor visual fidelity.
 
 
 ---

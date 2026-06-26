@@ -6,7 +6,7 @@ Assign and revoke app and book licenses across your organization.
 
 #### Overview
 
-Assets are the apps, books, and subscriptions that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with mobile device management (MDM) software.
+Assets are the apps and books that an organization owns. The asset management endpoints allow for asynchronous management of these assets to users and devices with mobile device management (MDM) software.
 
 ##### Retrieve Asset Information
 
@@ -96,7 +96,7 @@ The code above results in a response like the following:
 
 You can identify assets by the unique pair of store identifier and quality properties in `RequestAsset`. Assets in the [`GetAssetsResponse`](getassetsresponse.md) have additional fields regarding quantity and assignability in [`ResponseAsset`](responseasset.md). For pagination response fields, see [`Using paginated endpoints`](using-paginated-endpoints.md).
 
-Organizations can opt in to allow unlimited assignments of free apps and books without making explicit purchases. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the location return with a `totalCount` value of `2147483647`, the maximum integer value.
+Free apps and books will allow for unlimited assignment by default, however organizations may decide to use their existing fixed inventory on an organization unit basis. Use the `unlimited` query parameter to filter for unlimited assets. When set to `true`, the response includes a separate `unlimitedAssets` array containing [`UnlimitedResponseAsset`](unlimitedresponseasset.md) objects with unlimited licenses. When set to `false`, the response excludes unlimited assets. If the `unlimited` parameter is omitted, any unlimited free assets in the location return with a `totalCount` value of `2147483647`, the maximum integer value.
 
 The Get Assets endpoint supports several additional query parameters for filtering results:
 

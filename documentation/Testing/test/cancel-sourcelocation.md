@@ -17,8 +17,8 @@ static func cancel(_ comment: Comment? = nil, sourceLocation: SourceLocation = #
 
 ## Mentions
 
-- [Enabling and disabling tests](enablinganddisabling.md)
 - [Migrating a test from XCTest](migratingfromxctest.md)
+- [Enabling and disabling tests](enablinganddisabling.md)
 
 #### Discussion
 

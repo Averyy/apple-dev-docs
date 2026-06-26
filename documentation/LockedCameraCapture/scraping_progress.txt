@@ -1,4 +1,4 @@
 Completed scraping LockedCameraCapture!
-Total pages scraped: 31
-Pages skipped (unchanged): 3
+Total pages scraped: 33
+Pages skipped (unchanged): 1
 Pages failed: 0

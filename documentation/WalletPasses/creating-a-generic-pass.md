@@ -42,7 +42,7 @@ The following images show the different layout options for a generic pass and a 
 
 | Generic pass layout | Poster generic pass layout |
 | --- | --- |
-| ![An illustration showing the generic pass layout option with separate secondary and auxiliary sections and a rectangular barcode](https://docs-assets.developer.apple.com/published/04a42ba466f637bc1bdf9a67deb3e15a/pass-fields-layout-generic-pass%402x.png) | ![An illustration showing a generic pass layout option with a combined secondary and auxiliary section and a square barcode.](https://docs-assets.developer.apple.com/published/2e4b973884e95ac6f23c4ec7330f08d0/pass-fields-layout-poster-generic%402x.png) |
+| ![An illustration showing the generic pass layout option with separate secondary and auxiliary sections and a rectangular barcode](https://docs-assets.developer.apple.com/published/04a42ba466f637bc1bdf9a67deb3e15a/pass-fields-layout-generic-pass%402x.png) | ![An illustration showing a generic pass layout option with a combined secondary and auxiliary section and a square barcode.](https://docs-assets.developer.apple.com/published/67f2ccba4d6fc356394ba6b995efff67/pass-fields-layout-poster-generic%402x.png) |
 
 The pass style determines the maximum number of pass fields that can appear on the front of a pass. A generic pass can have up to three header fields, a single primary field, a thumbnail field, and up to four secondary and auxiliary fields combined. The text length in each pass field determines how many fields appear on the front of the pass. If the text is too long, Wallet won’t display all of it.
 

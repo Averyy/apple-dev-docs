@@ -1,4 +1,4 @@
 Completed scraping Matter!
-Total pages scraped: 24328
-Pages skipped (unchanged): 30
+Total pages scraped: 24356
+Pages skipped (unchanged): 2
 Pages failed: 0

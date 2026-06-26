@@ -662,6 +662,8 @@ The design of the music scoring separates linear and nonlinear categories. The l
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
+- [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
+  Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 - [BOT-anist](bot-anist.md)
   Build a multiplatform app that uses windows, volumes, and animations to create a robot botanist’s greenhouse.
 - [Swift Splash](swift-splash.md)
@@ -688,8 +690,6 @@ The design of the music scoring separates linear and nonlinear categories. The l
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
 - [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
   Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
-- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
-  Interact with detailed 3D models using manipulation and clipping controls.
 
 
 ---

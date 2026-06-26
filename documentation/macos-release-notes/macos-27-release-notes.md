@@ -282,9 +282,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running 27 G
 
 - Metal 4.1 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (176468465)
 
+###### Resolved Issues
+
+- Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
+
 ###### Known Issues
 
-- When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
 - On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero.  (177318505)
 
 ##### Music %7c Macos

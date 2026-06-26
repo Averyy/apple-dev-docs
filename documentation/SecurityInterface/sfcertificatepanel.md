@@ -88,6 +88,8 @@ Note that for macOS 10.4 and later, this class displays the evaluation status fo
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
 - [NSUserInterfaceItemIdentification](../AppKit/NSUserInterfaceItemIdentification.md)
 - [NSUserInterfaceValidations](../AppKit/NSUserInterfaceValidations.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

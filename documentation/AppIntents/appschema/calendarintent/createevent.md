@@ -52,6 +52,8 @@ For more information about the App Intents framework and the experiences it supp
 
 ## See Also
 
+- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
+  An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 - [AppSchema.CalendarIntent](appschema/calendarintent.md)

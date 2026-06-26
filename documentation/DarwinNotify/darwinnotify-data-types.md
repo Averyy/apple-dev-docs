@@ -5,7 +5,7 @@
 ## Topics
 
 ### Data Types
-- [notify_handler_t](notify_handler_t.md)
+- [typealias notify_handler_t](notify_handler_t.md)
 
 ## See Also
 

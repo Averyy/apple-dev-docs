@@ -16,6 +16,8 @@ Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
+- [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
+  Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -42,8 +44,6 @@ Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
-- [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
-  Interact with detailed 3D models using manipulation and clipping controls.
 
 
 ---

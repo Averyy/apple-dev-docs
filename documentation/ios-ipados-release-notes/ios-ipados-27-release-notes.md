@@ -288,9 +288,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Metal 4.1 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (176468465)
 
+###### Resolved Issues
+
+- Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
+
 ###### Known Issues
 
-- When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
 - On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero.  (177318505)
 
 ##### Metrickit
@@ -417,6 +420,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.   (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.   (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- Writing Tools actions are unavailable in Shortcuts.  (179846468)
 
 ##### Siri
 

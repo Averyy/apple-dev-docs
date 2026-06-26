@@ -40,6 +40,8 @@ A Boolean value that indicates whether an app can use ARKit to detect, position,
   A Boolean value that indicates whether an app can use the Apple Neural Engine to speed up CoreML.
 - [UVC Device Access on visionOS](entitlements/com.apple.developer.avfoundation.uvc-device-access.md)
   A Boolean value that indicates whether the app can stream USB UVC devices connected to the Developer strap.
+- [Visual Fidelity monitoring](entitlements/com.apple.developer.arkit.visual-fidelity.allow.md)
+  A Boolean value that indicates whether your app can monitor visual fidelity.
 
 
 ---

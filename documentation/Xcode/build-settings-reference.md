@@ -1232,6 +1232,12 @@ The path at which all products will be rooted when performing an install build. 
 
 Typically this path is not set per target, but is provided as an option on the command line when performing an `xcodebuild install`. It may also be set in a build configuration in special circumstances.
 
+##### Dsymutilembedresources
+
+**Setting name:** `DSYMUTIL_EMBED_RESOURCES`
+
+A list of resources to embed into the dSYM bundle. Each entry has the form ‘=’ where the source path is a file or directory on disk and the destination path is relative to the bundle’s Contents/Resources directory.
+
 ##### Other Dtrace Flags
 
 **Setting name:** `DTRACE_OTHER_FLAGS`
@@ -1386,7 +1392,7 @@ When set, enables outgoing network connections.
 
 **Setting name:** `ENABLE_POINTER_AUTHENTICATION`
 
-Builds the target with pointer authentication enabled. Adds an additional architectural slice (arm64e) with pointer authentication instructions.
+Builds the target with pointer authentication enabled. Adds an additional architectural slice (arm64e) with pointer authentication instructions to `ARCHS_STANDARD`. Has no effect if `ARCHS` has been overridden to not be based on `ARCHS_STANDARD`
 
 ##### Audio Input
 
@@ -2164,17 +2170,17 @@ Specifies whether the header map contains a framework-name/path entry for every 
 
 Specifies whether the header map contains a name/path entry for every header in the project, regardless of the headers’ target membership.
 
-##### Header Dependencies
-
-**Setting name:** `HEADER_DEPENDENCIES`
-
-Header files this target depends on.
-
 ##### Header Search Paths
 
 **Setting name:** `HEADER_SEARCH_PATHS`
 
 This is a list of paths to folders to be searched by the compiler for included or imported header files when compiling C, Objective-C, C++, or Objective-C++. Paths are delimited by whitespace, so any paths with spaces in them need to be properly quoted.
+
+##### Compiler Mode for Cocoatouch Documents
+
+**Setting name:** `IBC_COCOATOUCH_COMPILER_MODE`
+
+Instructs the compiler on which compilation mode to use.
 
 ##### Auto Activate Custom Fonts
 
@@ -2241,6 +2247,12 @@ Strips an Interface Builder NIB to reduce its size for deployment.  The resultin
 **Setting name:** `IBC_WARNINGS`
 
 Show warnings encountered during the compilation of XIB files.
+
+##### Compiler Mode for Cocoatouch Documents
+
+**Setting name:** `IBSC_COCOATOUCH_COMPILER_MODE`
+
+Instructs the compiler on which compilation mode to use.
 
 ##### Auto Activate Custom Fonts
 
@@ -3292,12 +3304,6 @@ Specifies the directory that contains the product’s Clang module maps and Swif
 **Setting name:** `MODULE_CACHE_DIR`
 
 Absolute path of folder in which compiler stores its cached modules—this cache is a performance improvement.
-
-##### Module Dependencies
-
-**Setting name:** `MODULE_DEPENDENCIES`
-
-Other modules this target depends on.
 
 ##### Module Identifier
 

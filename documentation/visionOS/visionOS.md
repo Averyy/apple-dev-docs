@@ -63,6 +63,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 ### RealityKit and Reality Composer Pro
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
+- [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
+  Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)

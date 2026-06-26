@@ -1,4 +1,4 @@
 Completed scraping Service Management!
-Total pages scraped: 47
-Pages skipped (unchanged): 3
+Total pages scraped: 49
+Pages skipped (unchanged): 1
 Pages failed: 0

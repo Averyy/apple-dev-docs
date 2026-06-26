@@ -1,9 +1,9 @@
-# removeFirst()
+# removeFirst(_:)
 
 **Framework**: Swift  
 **Kind**: method
 
-Removes and returns the first element of the collection.
+Removes the specified number of elements from the beginning of the collection.
 
 **Availability**:
 - iOS 8.0+
@@ -17,21 +17,18 @@ Removes and returns the first element of the collection.
 ## Declaration
 
 ```swift
-@discardableResult
-mutating func removeFirst() -> Self.Element
+mutating func removeFirst(_ k: Int)
 ```
-
-#### Return Value
-
-The first element of the collection.
 
 #### Discussion
 
-The collection must not be empty.
+> **Note**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the specified number of elements.
 
-> **Note**: O(1)
+## Parameters
+
+- `k`: The number of elements to remove. `k` must be greater than or equal to zero, and must be less than or equal to the number of elements in the collection.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/anycollection/removefirst())*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/anycollection/removefirst(_:))*

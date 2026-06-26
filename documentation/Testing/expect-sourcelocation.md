@@ -25,9 +25,9 @@ Check that an expectation has passed after a condition has been evaluated.
 
 ## Mentions
 
+- [Migrating a test from XCTest](migratingfromxctest.md)
 - [Describing and reflecting values](describing-values.md)
 - [Testing for errors in Swift code](testing-for-errors-in-swift-code.md)
-- [Migrating a test from XCTest](migratingfromxctest.md)
 
 #### Overview
 

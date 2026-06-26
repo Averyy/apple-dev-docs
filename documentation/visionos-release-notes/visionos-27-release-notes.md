@@ -113,9 +113,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ##### Metal
 
+###### Resolved Issues
+
+- Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
+
 ###### Known Issues
 
-- When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
 - On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero.  (177318505)
 
 ##### Network Security
@@ -136,12 +139,6 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - Spatial Personas may appear laggy during High Quality Recording.  (178441141)
 
-##### Preview on Visionos
-
-###### Known Issues
-
-- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is not yet available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes).  (179045352)
-
 ##### Quick Look
 
 ###### Known Issues
@@ -151,6 +148,12 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Annotation text might become blank, preventing you from creating, selecting, or deleting additional annotations.   (177726175) **Workaround:** Close and reopen the file to remove the blank annotation. Alternatively, add a new annotation to replace the blank annotation.
 - In annotation mode, annotations don’t respond to direct touch input and flicker when directly touched.  (178087194) **Workaround:** Use indirect pinch gestures to interact with annotation UI elements.
 - In annotation mode, the Delete button sometimes switches the annotation to the editing UI.  (178087667) **Workaround:** Cancel the editing UI and try again, or delete the annotation in Preview.
+
+##### Reality Composer Pro Preview on Visionos
+
+###### Known Issues
+
+- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is not yet available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes).  (179045352)
 
 ##### Realitykit
 
@@ -175,6 +178,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Known Issues
 
+- With High Quality Recording enabled, capturing a High Quality recording while the device is warm may fail silently. No recording is saved and no error or feedback is shown.  (170105618) **Workaround:** Allow the device to cool down and try the capture again.
 - When you switch between High Quality Recording and Standard Recording in Screen Recording settings, the recording subsystem may enter an unrecoverable state; subsequent screen recordings from Control Center might not start.  (178467174) **Workaround:** Restart your device.
 
 ##### Shadergraph
@@ -196,12 +200,15 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - You can now activate Siri by looking at the Siri “orb” and speaking, as an alternative to using “Hey Siri” or “Siri”. This feature is enabled in Beta 2.  (177137200)
 
+###### Resolved Issues
+
+- Fixed: When you enable Guest User Mode on Apple Vision Pro, Siri becomes unavailable.  (177104604)
+
 ###### Known Issues
 
 - Siri ignores custom values for navigation preferences, transport, and incident types in apps that use `maps.startNavigation` or `maps.reportIncident` intent schemas.  (175230813)
 - If you select the Ask Siri button in context menus or the text edit bar multiple times, multiple instances of Siri might appear and overlap with each other.  (175372716) **Workaround:** Allow Siri to dismiss by looking away before selecting Ask Siri again.
 - On visionOS, when Type to Siri is selected, dragging and dropping an image to Siri might not add the image to the Ask Siri input field.  (176312944) **Workaround:** Add the image from Photos using “Add an attachment”.
-- When you enable Guest User Mode on Apple Vision Pro, Siri becomes unavailable.  (177104604) **Workaround:** End Guest User Mode to restore Siri functionality.
 - When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues.  (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
 - When you ask Siri to send a message to a contact that doesn’t exist on your device, Siri might draft a message to an unrelated contact.  (177356158)
 - Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215) **Workaround:** Index the entity in Spotlight, or provide an `IntentValueQuery` if applicable.
@@ -443,12 +450,6 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
-
-##### View Capture
-
-###### Known Issues
-
-- With High Quality Recording enabled, capturing a High Quality recording while the device is warm may fail silently. No recording is saved and no error or feedback is shown.  (170105618) **Workaround:** Allow the device to cool down and try the capture again.
 
 ##### Webkit
 

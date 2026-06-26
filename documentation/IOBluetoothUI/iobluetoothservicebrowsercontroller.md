@@ -78,6 +78,8 @@ This NSWindowController subclass will bring up a generic Bluetooth search and SD
 - [NSStandardKeyBindingResponding](../AppKit/NSStandardKeyBindingResponding.md)
 - [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [NSUserActivityRestoring](../AppKit/NSUserActivityRestoring.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

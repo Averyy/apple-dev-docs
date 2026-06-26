@@ -1,4 +1,4 @@
 Completed scraping Sound Analysis!
-Total pages scraped: 59
-Pages skipped (unchanged): 4
+Total pages scraped: 62
+Pages skipped (unchanged): 1
 Pages failed: 0

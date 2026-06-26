@@ -14,6 +14,84 @@ XCTest and the testing library are available from different modules. Instead of 
 
 A single source file can contain tests written with XCTest as well as other tests written with the testing library. Import both XCTest and Testing if a source file contains mixed test content.
 
+##### Use Interoperability Between Swift Testing and Xctest
+
+You can use interoperability to share test helpers between XCTest and Swift Testing tests. Interoperability is a feature that enables XCTest’s assertions to work with Swift Testing, and Swift Testing’s expectations to work with XCTest.
+
+For example, you can replace [`XCTAssert()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/1500669-xctassert) with [`expect(_:_:sourceLocation:)`](expect(_:_:sourcelocation:).md) in your XCTests and immediately get the benefits of Swift Testing. In the meantime, you can incrementally migrate the rest of your test infrastructure to use Swift Testing at your own pace.
+
+```swift
+class UniqueElementsTests: XCTestCase {
+  func testDups() {
+    // This test is expected to fail.
+    assertUnique([1, 2, 1])
+  }
+}
+
+@Test func `Duplicate elements`() {
+  // Without interoperability the test passes despite the `XCTAssertEqual` failure in the helper.
+  // With interoperability, the test fails.
+  assertUnique([1, 2, 1])
+}
+
+func assertUnique(_ elements: [Int]) {
+  XCTAssertEqual(Set(elements).count, elements.count)
+
+  // With interoperability you can safely replace `XCTAssertEqual` with `#expect`.
+  // The replacement is: `#expect(Set(elements).count == elements.count)`.
+}
+```
+
+A *cross-library issue* is an issue created by an XCTest assertion in a Swift Testing test case, or a Swift Testing expectation in an XCTest test case.
+
+In the example above, `assertUnique` wraps [`XCTAssertEqual()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctassertequal(_:_:_:file:line:)). So, calling `assertUnique` in the `Duplicate elements` Swift Testing test case creates a *cross-library issue from XCTest*.
+
+##### Select an Interoperability Mode
+
+Interoperability has multiple modes that control how Swift Testing reports cross-library issues:
+
+- **`none`**: Interoperability is off. Swift Testing and XCTest ignore cross-library issues.
+- **`limited`**: Cross-library issues from Swift Testing maintain their original severity. Cross-library issues from XCTest are warnings and are accompanied by modernization hints.
+- **`complete`**: All cross-library issues maintain their original severity. Cross-library issues from XCTest are accompanied by modernization hints.
+- **`strict`**: Cross-library issues from Swift Testing maintain their original severity. Cross-library issues from XCTest are reported with [`fatalError()`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/fatalerror(_:file:line:)).
+
+The default interoperability mode depends on your toolchain and the `swift-tools-version` declared in your package.
+
+| Toolchain version | `swift-tools-version` | Default interoperability mode |
+| --- | --- | --- |
+| <6.4 | Any | `none` |
+| >=6.4 | <6.4 | `limited` |
+| >=6.4 | >=6.4 | `complete` |
+
+To explicitly choose an interoperability mode, set the `SWIFT_TESTING_XCTEST_INTEROP_MODE` environment variable to the name of the mode before running tests.
+
+In the `limited`, `complete`, and `strict` interoperability modes, cross-library issues from Swift Testing maintain their original severity. So, in the following example, the test failure message is `❌ "Interop failure"` – except when the interoperability mode is `none`, then there is no test failure message.
+
+```swift
+// Cross-library issues from Swift Testing
+class InteropTests: XCTestCase {
+  func testInterop() {
+    Issue.record("Interop failure")
+  }
+}
+```
+
+Use `complete` mode to ensure cross-library issues from XCTest maintain their original severity.
+
+```swift
+// Cross-library issues from XCTest
+@Test func `Test Interop`() {
+  XCTFail("Interop failure")
+}
+```
+
+| Interoperability mode | Test failure message |
+| --- | --- |
+| `none` | No message |
+| `limited` | ⚠️ “Interop failure”, ⚠️ Replace XCTest API … |
+| `complete` | ❌ “Interop failure”, ⚠️ Replace XCTest API … |
+| `strict` | `fatalError`: Replace XCTest API … |
+
 ##### Convert Test Classes
 
 XCTest groups related sets of test methods in test classes: classes that inherit from the [`XCTestCase`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctestcase) class provided by the [`XCTest`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest) framework. The testing library doesn’t require that test functions be instance members of types. Instead, they can be *free* or *global* functions, or can be `static` or `class` members of a type.
@@ -34,7 +112,7 @@ The use of `async` and `throws` is optional. If teardown is needed, declare your
 
 The testing library represents individual tests as functions, similar to how they are represented in XCTest. However, the syntax for declaring a test function is different. In XCTest, a test method must be a member of a test class and its name must start with `test`. The testing library doesn’t require a test function to have any particular name. Instead, it identifies a test function by the presence of the `@Test` attribute:
 
-As with XCTest, the testing library allows test functions to be marked `async`, `throws`, or `async`-`throws`, and to be isolated to a global actor (for example, by using the `@MainActor` attribute.)
+As with XCTest, the testing library allows test functions to be marked `async`, `throws`, or `async`-`throws`, and to be isolated to a global actor (for example, by using the `@MainActor` attribute).
 
 > **Note**: XCTest runs synchronous test methods on the main actor by default, while the testing library runs all test functions on an arbitrary task. If a test function must run on the main thread, isolate it to the main actor with `@MainActor`, or run the thread-sensitive code inside a call to [`MainActor.run(resultType:body:)`](https://developer.apple.comhttps://developer.apple.com/documentation/swift/mainactor/run(resulttype:body:)).
 
@@ -52,7 +130,7 @@ XCTest also has a function, [`XCTUnwrap()`](https://developer.apple.comhttps://d
 
 XCTest has a function, [`XCTFail()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/1500970-xctfail), that causes a test to fail immediately and unconditionally. This function is useful when the syntax of the language prevents the use of an `XCTAssert()` function. To record an unconditional issue using the testing library, use the [`record(_:severity:sourceLocation:)`](issue/record(_:severity:sourcelocation:).md) function:
 
-The following table includes a list of the various `XCTAssert()` functions and their equivalents in the testing library:
+The following table includes a list of the various [`XCTAssert()`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/1500669-xctassert) functions and their equivalents in the testing library:
 
 | XCTest | Swift Testing |
 | --- | --- |
@@ -110,6 +188,30 @@ When using XCTest, the [`XCTSkip`](https://developer.apple.comhttps://developer.
 
 If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](test/cancel(_:sourcelocation:).md) instead of [`XCTSkip`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/xctskip) to cancel the task associated with the current test:
 
+Interoperability allows [`cancel(_:sourceLocation:)`](test/cancel(_:sourcelocation:).md) to also end XCTest test functions early. This lets you share cancellation logic between testing libraries using test helper functions:
+
+```swift
+func skipIfEmptyRegister() throws {
+  let cashRegister = CashRegister()
+  let drawer = cashRegister.open()
+  if drawer.isEmpty {
+    try Test.cancel("Cash register is empty")
+  }
+}
+
+// XCTest
+func testCashRegister() throws {
+  try skipIfEmptyRegister()
+  ...
+}
+
+// Swift Testing
+@Test func cashRegister() throws {
+  try skipIfEmptyRegister()
+  ...
+}
+```
+
 ##### Annotate Known Issues
 
 A test may have a known issue that sometimes or always prevents it from passing. When written using XCTest, such tests can call [`XCTExpectFailure(_:options:failingBlock:)`](https://developer.apple.comhttps://developer.apple.com/documentation/xctest/3727246-xctexpectfailure) to tell XCTest and its infrastructure that the issue shouldn’t cause the test to fail. The testing library has an equivalent function with synchronous and asynchronous variants:
@@ -134,6 +236,16 @@ The testing library includes overloads of `withKnownIssue()` that take additiona
 - [`withKnownIssue(_:isIntermittent:isolation:sourceLocation:_:when:matching:)`](withknownissue(_:isintermittent:isolation:sourcelocation:_:when:matching:).md)
 
 To conditionally enable known-issue matching or to match only certain kinds of issues:
+
+Interoperability allows `withKnownIssue()` to also match XCTest issues:
+
+```swift
+@Test func `Mark an XCTest assertion failure as known`() {
+  withKnownIssue {
+    XCTFail("Interop failure")
+  }
+}
+```
 
 ##### Run Tests Sequentially
 

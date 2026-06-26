@@ -56,6 +56,8 @@ For more information about the App Intents framework and the experiences it supp
 
 - [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
   An intent schema that creates a calendar event.
+- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
+  An intent schema that deletes a calendar event.
 - [AppSchema.CalendarIntent](appschema/calendarintent.md)
   Identifies intent schemas in the calendar domain.
 

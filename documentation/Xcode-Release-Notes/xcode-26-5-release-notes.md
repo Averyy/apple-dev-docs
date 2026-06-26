@@ -110,7 +110,7 @@ Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, mac
 
 ## See Also
 
-- [Xcode 26.6 RC 2 Release Notes](xcode-26_6-release-notes.md)
+- [Xcode 26.6 Release Notes](xcode-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [Xcode 26.4.1 Release Notes](xcode-26_4_1-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

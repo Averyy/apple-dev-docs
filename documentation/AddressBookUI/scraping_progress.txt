@@ -1,4 +1,4 @@
 Completed scraping Address Book UI!
-Total pages scraped: 67
-Pages skipped (unchanged): 2
+Total pages scraped: 68
+Pages skipped (unchanged): 1
 Pages failed: 0

@@ -43,6 +43,15 @@ The schema supports the following system experiences:
 
 For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
 
+## See Also
+
+- [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
+  An intent schema that creates a calendar event.
+- [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
+  An intent schema that updates a calendar event.
+- [AppSchema.CalendarIntent](appschema/calendarintent.md)
+  Identifies intent schemas in the calendar domain.
+
 
 ---
 

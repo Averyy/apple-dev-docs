@@ -65,6 +65,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Move cards between positions in a card game using drag, drop, and reordering modifiers.
 - [Manipulating models with RealityKit](../RealityKit/manipulating-models-with-realitykit.md)
   Interact with detailed 3D models using manipulation and clipping controls.
+- [Measuring distance between devices using Channel Sounding](../CoreBluetooth/measuring-distance-between-devices-using-channel-sounding.md)
+  Measure the distance between two Bluetooth Low Energy devices in real time with Channel Sounding.
 - [Mixing spatial music](../RealityKit/mixing-spatial-music.md)
   Preview ray-traced reverb by adjusting a spatialized multitrack audio mix in an immersive scene.
 - [Origami: Crafting a dynamic tutorial for Apple Intelligence](../FoundationModels/origami-crafting-a-dynamic-tutorial-for-apple-intelligence.md)

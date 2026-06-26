@@ -39,6 +39,8 @@ protocol CalendarIntent : AppSchema.Kind
 
 - [var createEvent: some AppSchemaIntent](appschema/calendarintent/createevent.md)
   An intent schema that creates a calendar event.
+- [var deleteEvent: some AppSchemaIntent](appschema/calendarintent/deleteevent.md)
+  An intent schema that deletes a calendar event.
 - [var updateEvent: some AppSchemaIntent](appschema/calendarintent/updateevent.md)
   An intent schema that updates a calendar event.
 

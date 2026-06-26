@@ -1,4 +1,4 @@
-# watchOS 27 Beta Release Notes
+# watchOS 27 Beta 2 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Av Conference Telephony
 
@@ -28,19 +28,35 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ##### Foundation Models
 
+###### Resolved Issues
+
+- Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
+- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+
 ###### Known Issues
 
 - Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
-- Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
-- `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488) **Workaround:** Always specify instructions in a `Profile`.
 - `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
 - Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978) **Workaround:** Import the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) package, which contains a built-in workaround that will compile your code.
+- Foundation Models framework cannot be imported when building for watchOS in Xcode 27 beta 2.  (179949809)
 
 ##### Foundation Models Framework
 
-###### Known Issues
+###### Resolved Issues
 
-- Using `@Generable` on an `enum` fails to compile for watchOS.  (178244470) **Workaround:** Copy the macro expansion into your code and remove the `else` branch in `init(_:)`.
+- Fixed: Using `@Generable` on an `enum` fails to compile for watchOS.  (178244470)
+
+##### Health
+
+###### Resolved Issues
+
+- When a third-party heart rate monitor is active, Apple Watch pauses background heart rate measurements and heart rate notifications (irregular rhythm, high heart rate, and low heart rate) for the duration of the session.  (162788761)
+
+##### Healthkit
+
+###### New Features
+
+- HealthKit now supports heart rate and cycling power zones.  (135746152)
 
 ##### Network Security
 
@@ -53,6 +69,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Known Issues
 
 - Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215) **Workaround:** Index the entity in Spotlight, or provide an `IntentValueQuery` if applicable.
+
+##### Sleep Focus
+
+###### Known Issues
+
+- Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device.  (179960164) **Workaround:** Toggle Sleep Focus manually in Control Center after unlocking the device.
 
 ##### Smart Stack
 
@@ -82,10 +104,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs.  (154390284) (FB18403150)
 - Fixed: Subscription upgrades performed with the Xcode Transaction Manager are not reported in `Transaction.updates`.  (160698598) (FB20269723)
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
+- Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
+- Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
 
 ###### Known Issues
 
-- When using StoreKit Testing in Xcode, `pricingTerms.commitmentInfo.price` returns an incorrect price for monthly subscriptions billed as a 12-month commitment.  (177942756)
+- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Swift Charts
 
@@ -165,7 +189,11 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
      }
  }
 ``` In rare situations, the automatic inference of generic argument of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
+- You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
+- The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
+- You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
+- `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
 
 ###### Resolved Issues
 

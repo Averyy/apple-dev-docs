@@ -106,7 +106,7 @@ Both the generic pass and the generic poster pass use pass fields, but they have
 
 Generic poster passes put the primary focus on the background image of the pass, which is why the layout is slightly different than the generic pass.
 
-![An illustration of a generic pass for a museum with the various fields highlighted.](https://docs-assets.developer.apple.com/published/2e4b973884e95ac6f23c4ec7330f08d0/pass-fields-layout-poster-generic%402x.png)
+![An illustration of a generic pass for a museum with the various fields highlighted.](https://docs-assets.developer.apple.com/published/67f2ccba4d6fc356394ba6b995efff67/pass-fields-layout-poster-generic%402x.png)
 
 On a generic pass, the primary fields appear larger in the top section of the pass. They don’t extend across the pass to leave room for the thumbnail image.
 
