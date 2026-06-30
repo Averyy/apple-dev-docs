@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: class
 
-A URL session that creates and executes asset download tasks.
+A URL session that creates and manages asset download tasks.
 
 **Availability**:
 - iOS 9.0+
@@ -18,6 +18,18 @@ A URL session that creates and executes asset download tasks.
 ```swift
 class AVAssetDownloadURLSession
 ```
+
+#### Overview
+
+Create an [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md) by calling [`init(configuration:assetDownloadDelegate:delegateQueue:)`](avassetdownloadurlsession/init(configuration:assetdownloaddelegate:delegatequeue:).md) with a background [`URLSessionConfiguration`](https://developer.apple.com/documentation/Foundation/URLSessionConfiguration). The background configuration supports reliable downloading while the app is in a suspended state.
+
+> ❗ **Important**: The standard `URLSession` initializers and task-creation methods are unavailable on this class. Use [`init(configuration:assetDownloadDelegate:delegateQueue:)`](avassetdownloadurlsession/init(configuration:assetdownloaddelegate:delegatequeue:).md) to create a session and [`makeAssetDownloadTask(downloadConfiguration:)`](avassetdownloadurlsession/makeassetdownloadtask(downloadconfiguration:).md) to create download tasks.
+
+Background sessions persist across app launches. The system manages downloads out-of-process so they continue while your app is in a suspended state. If the system terminates your app while downloads are in progress, it relaunches the app and calls [`application(_:handleEventsForBackgroundURLSession:completionHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:handleEventsForBackgroundURLSession:completionHandler:)) with the session identifier. Recreate the [`AVAssetDownloadURLSession`](avassetdownloadurlsession.md) using the same background configuration identifier to reconnect to the running session and receive pending delegate callbacks. Call the provided completion handler after all callbacks finish. If a person force-quits your app, the system cancels all active downloads and doesn’t relaunch the app.
+
+Mark the background session configuration as discretionary to let the system defer downloads until network and battery conditions are favorable. You can only start a non-discretionary download task while your app is in the foreground. Reserve non-discretionary sessions for downloads that a person explicitly starts. Use a discretionary session for opportunistic downloads that happen without a person’s direct involvement.
+
+Assign an [`AVAssetDownloadDelegate`](avassetdownloaddelegate.md) to the session to receive download progress, media-selection resolution, and completion callbacks for every download task the session creates.
 
 ## Topics
 
@@ -70,7 +82,7 @@ class AVAssetDownloadURLSession
 - [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadTask](avassetdownloadtask.md)
-  A session used to download HTTP Live Streaming assets.
+  A URL session task that downloads a remote asset to the device for offline playback.
 - [class AVAggregateAssetDownloadTask](avaggregateassetdownloadtask.md)
   A task that downloads multiple media selections for an asset.
 

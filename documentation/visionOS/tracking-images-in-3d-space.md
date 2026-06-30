@@ -66,7 +66,7 @@ If you know the real-world dimensions of the images you’re tracking, use the [
 - [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
-  Use generic spatial accessories to track purpose-built devices in your visionOS app.
+  Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 
 
 ---

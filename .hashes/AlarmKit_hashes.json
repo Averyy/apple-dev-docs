@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:29:46.660706",
+    "last_updated": "2026-06-30T07:42:02.576890",
     "total_pages": 574,
-    "session_id": "2026-06-26T07:29:36.890528"
+    "session_id": "2026-06-30T07:41:40.606059"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AlarmKit.json": {
       "hash": "1693360576b9171a76f0391b9fa723e6b2226046cbed06130ea5965d48047271",
-      "last_checked": "2026-06-26T07:29:37.131765",
+      "last_checked": "2026-06-30T07:41:40.833662",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9f7c386d14c3420a26e5d35eefac78e4\"",
       "file_path": "documentation/AlarmKit/AlarmKit.md"
     },
     "https://developer.apple.com/documentation/AlarmKit": {
       "hash": "1693360576b9171a76f0391b9fa723e6b2226046cbed06130ea5965d48047271",
-      "last_checked": "2026-06-26T07:29:37.025430",
+      "last_checked": "2026-06-30T07:41:40.738627",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9f7c386d14c3420a26e5d35eefac78e4\"",
       "file_path": "documentation/AlarmKit/AlarmKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/scheduling-an-alarm-with-alarmkit.json": {
       "hash": "e588a02b351ecbf29692647e4f6ea8ddd4d1fb9332ea4cb8bf066fb11d08b6b4",
-      "last_checked": "2026-06-26T07:29:37.382843",
+      "last_checked": "2026-06-30T07:41:41.112135",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"36f3d2074f9ac502da1bb02885b133cb\"",
       "file_path": "documentation/AlarmKit/scheduling-an-alarm-with-alarmkit.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager.json": {
       "hash": "680eb88519c3124fa6120007e7cc847470af58cfd91e31bdfbf36755fc22704b",
-      "last_checked": "2026-06-26T07:29:37.494909",
+      "last_checked": "2026-06-30T07:41:41.387387",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"671d38fe72b123666e1734e51fec92db\"",
       "file_path": "documentation/AlarmKit/alarmmanager.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm.json": {
       "hash": "35ddff36f45ad0a071bd75f19b0298b780687e9513573c9190996fe352f05a0a",
-      "last_checked": "2026-06-26T07:29:37.567418",
+      "last_checked": "2026-06-30T07:41:41.656893",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"772970dd8dd72d297f56989f99c62e79\"",
       "file_path": "documentation/AlarmKit/alarm.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton.json": {
       "hash": "4c117e5325c411ed3d347c48a9261d43fe32f459e9f944799848d918579a7752",
-      "last_checked": "2026-06-26T07:29:37.646224",
+      "last_checked": "2026-06-30T07:41:41.928543",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"504d636f446e75fa75032c0771d82aa8\"",
       "file_path": "documentation/AlarmKit/alarmbutton.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation.json": {
       "hash": "528608664f423db5b25bf2185217e4d903ed0dc91530c1fdca900e034fca2bd3",
-      "last_checked": "2026-06-26T07:29:37.707694",
+      "last_checked": "2026-06-30T07:41:42.103969",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"7303432c46e4a10ac25b3af9fa066980\"",
       "file_path": "documentation/AlarmKit/alarmpresentation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate.json": {
       "hash": "1b571b3a96327ba5aa7ea83c546eea3fd0c46e48f826ef6a19cf3ec3d5e0115c",
-      "last_checked": "2026-06-26T07:29:37.774757",
+      "last_checked": "2026-06-30T07:41:42.272577",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8352a4a239a9d40122aa2192afb26219\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes.json": {
       "hash": "e8aa1aa97a304018c1d793abb662f125ca63d746f0f18264fe9c89e2691f791e",
-      "last_checked": "2026-06-26T07:29:37.871642",
+      "last_checked": "2026-06-30T07:41:42.579674",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4f449b8f03db81a529df8251cdd448f2\"",
       "file_path": "documentation/AlarmKit/alarmattributes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmetadata.json": {
       "hash": "01d5cc596dfde2be9f837dd56fd19a20059264e2fa8865b0b56c369b06a2da80",
-      "last_checked": "2026-06-26T07:29:37.923539",
+      "last_checked": "2026-06-30T07:41:42.844951",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"58a174b4fd8e6896e86c9d6a27822d85\"",
       "file_path": "documentation/AlarmKit/alarmmetadata.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/shared.json": {
       "hash": "5e50de5db998fe8c4c8d4f70ec8de0e17bfa894bd1b39ef5e0f10bd47df52477",
-      "last_checked": "2026-06-26T07:29:38.047445",
+      "last_checked": "2026-06-30T07:41:43.126832",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4b324e395766870ca1ce223d967670a4\"",
       "file_path": "documentation/AlarmKit/alarmmanager/shared.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct.json": {
       "hash": "0076cb7cc02c0756424bb0d1536e45b55d0438d7000be2979ad327d436547ca0",
-      "last_checked": "2026-06-26T07:29:38.128154",
+      "last_checked": "2026-06-30T07:41:43.282807",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"056bab4b6b52ceddda0760bfaee7ef30\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftstruct.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.property.json": {
       "hash": "4c1881b815d5c56714c1a98ea464b60a845b508b4ddc287a18ede7670b752e4c",
-      "last_checked": "2026-06-26T07:29:38.201781",
+      "last_checked": "2026-06-30T07:41:43.413717",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"1d7cb64f97d19ebff771b50e5ac7ba74\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swiftproperty.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarms.json": {
       "hash": "5d1238544b6208e2a1a2b8c9d969fa741931103da0cf946a0501c89ab92d85fd",
-      "last_checked": "2026-06-26T07:29:38.277979",
+      "last_checked": "2026-06-30T07:41:43.552604",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"7fb4484ae6d405ff20b828cb2497406e\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarms.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/schedule(id:configuration:).json": {
       "hash": "3a65e788a8cff2603b6405e72281dc240cbd3065604bff06d24ea9187f6a8548",
-      "last_checked": "2026-06-26T07:29:38.395910",
+      "last_checked": "2026-06-30T07:41:43.723866",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"51fc76980dadd9c21e90a5e76f2f6402\"",
       "file_path": "documentation/AlarmKit/alarmmanager/schedule-idconfiguration.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration.json": {
       "hash": "5dd083c453894ce933c33e95ad08cc8e4035852547e1cdf29c1e40a3ba0b22b6",
-      "last_checked": "2026-06-26T07:29:38.472469",
+      "last_checked": "2026-06-30T07:41:44.010328",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"60505be3378756051e40786d52089f98\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/requestauthorization().json": {
       "hash": "a4963ab0ea27625d7dd8ee38ba274e679d6bea53d7e96dd96dd39adbb4138564",
-      "last_checked": "2026-06-26T07:29:38.588819",
+      "last_checked": "2026-06-30T07:41:44.191738",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"18667306de5472f21e4e306169da563c\"",
       "file_path": "documentation/AlarmKit/alarmmanager/requestauthorization.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates.json": {
       "hash": "a234b99d54f50a87c0be28721bf43d42c4bf73e1df486cc01cb9f115016830d6",
-      "last_checked": "2026-06-26T07:29:38.637236",
+      "last_checked": "2026-06-30T07:41:44.360056",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"fb531e2b94dc3090fcc4f1944f006b3e\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationupdates.json": {
       "hash": "a6b8b693bbf5c525234743cf7d5434e3aa01a0e023e68cd656c83c1d2d75c396",
-      "last_checked": "2026-06-26T07:29:38.733146",
+      "last_checked": "2026-06-30T07:41:44.520105",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"cf7d053a6cdce4f4a3d5127f4d4a5754\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationupdates.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum.json": {
       "hash": "210de6e95587f191eff362bcc2bb56308eae737fc34d9c96e5cb04eefee172b8",
-      "last_checked": "2026-06-26T07:29:38.787154",
+      "last_checked": "2026-06-30T07:41:44.797558",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f2ab14c33221e991ba82670ad775a1fd\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftenum.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.property.json": {
       "hash": "3a1d1646bca8f6a9efa4b8ae498da1cdcc291ecc44feb65c35ff36e09db71b7f",
-      "last_checked": "2026-06-26T07:29:38.868789",
+      "last_checked": "2026-06-30T07:41:45.074285",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"539103773bd719bc78ab32a53b748c43\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swiftproperty.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/cancel(id:).json": {
       "hash": "446b086449d69f1c00ddb2e6c06c78880aa1318ec835bac1f40400c1ac3d6275",
-      "last_checked": "2026-06-26T07:29:39.102284",
+      "last_checked": "2026-06-30T07:41:45.359455",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"584e3bf257559f9c20a406858d63b669\"",
       "file_path": "documentation/AlarmKit/alarmmanager/cancel-id.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/countdown(id:).json": {
       "hash": "b1bf278eb25301f2962ed42ec5c409e69cc071800f7c5216c1ef5886f8d4f072",
-      "last_checked": "2026-06-26T07:29:39.200044",
+      "last_checked": "2026-06-30T07:41:45.559671",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9eb4ba30f71ad02427ff4389e86ecbbb\"",
       "file_path": "documentation/AlarmKit/alarmmanager/countdown-id.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/pause(id:).json": {
       "hash": "866b123aa90775b461120b69f0610e8fc8260c528e4a3533e4383bf813fc49f7",
-      "last_checked": "2026-06-26T07:29:39.249407",
+      "last_checked": "2026-06-30T07:41:45.736139",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"5afa26a49efdab34022c9304019af5d9\"",
       "file_path": "documentation/AlarmKit/alarmmanager/pause-id.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/resume(id:).json": {
       "hash": "e0b4f55c8f828a81e8d418eca162604d7dbb66affe629955c5ecd024582272b0",
-      "last_checked": "2026-06-26T07:29:39.368255",
+      "last_checked": "2026-06-30T07:41:45.903044",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"453d40b03444e63cfdfeb6731373e191\"",
       "file_path": "documentation/AlarmKit/alarmmanager/resume-id.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/stop(id:).json": {
       "hash": "1ccf460126257459c5e3bcb4a3f758ca14341835e9c9112cf0c367ac6a09a60b",
-      "last_checked": "2026-06-26T07:29:39.415590",
+      "last_checked": "2026-06-30T07:41:46.016125",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"89253afb797ade9618e85813684d031d\"",
       "file_path": "documentation/AlarmKit/alarmmanager/stop-id.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmerror.json": {
       "hash": "b667251259e4cb30d8d202af6d58a0c0dcdec899d6f9fb452638ad95cce934d6",
-      "last_checked": "2026-06-26T07:29:39.493588",
+      "last_checked": "2026-06-30T07:41:46.196632",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8517922bb9920a01ab893d52a14bd8a2\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmerror.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct.json": {
       "hash": "d55541a7a82b014b306f81fd8add1fcd6a238402a5a69db494dd86a89a6f8531",
-      "last_checked": "2026-06-26T07:29:39.541830",
+      "last_checked": "2026-06-30T07:41:46.302396",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b35fd4c611dd9dcb01ec9a983af93fa9\"",
       "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftstruct.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.property.json": {
       "hash": "c54d159c05ddff20aa2bb2603ccab1e7a9b98c520e5a46bdef2d0967eef4fa1f",
-      "last_checked": "2026-06-26T07:29:39.613787",
+      "last_checked": "2026-06-30T07:41:46.614112",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"a7e1c96c6633cdc989a082185e7e22a4\"",
       "file_path": "documentation/AlarmKit/alarm/countdownduration-swiftproperty.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum.json": {
       "hash": "391ca7f39aa229fcc8864b7a90bbd2ff72b462bb83d641c23189aaa1aa75cd70",
-      "last_checked": "2026-06-26T07:29:39.782690",
+      "last_checked": "2026-06-30T07:41:46.987681",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"63404f4dfadc85c359a14bcd937572c1\"",
       "file_path": "documentation/AlarmKit/alarm/state-swiftenum.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.property.json": {
       "hash": "a52f778781afb9ca7e241b13f7f50e4c37f172dbfe009b9eebb5248139948fdb",
-      "last_checked": "2026-06-26T07:29:39.889326",
+      "last_checked": "2026-06-30T07:41:47.150834",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4dde0a4c994faf667dc93a7af86134fd\"",
       "file_path": "documentation/AlarmKit/alarm/state-swiftproperty.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum.json": {
       "hash": "b8239399551b0e8bcd9d9a2846c6c9d717f8bf69d3959037a672a747b3c11cc5",
-      "last_checked": "2026-06-26T07:29:39.946812",
+      "last_checked": "2026-06-30T07:41:47.277518",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"a8e54f915ce0130ee35176336b1331f5\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swiftenum.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.property.json": {
       "hash": "d9f4cb37b97de74241e38f8a7ad59a7911202f443e83674a6f8e53f8cd03cecc",
-      "last_checked": "2026-06-26T07:29:40.002708",
+      "last_checked": "2026-06-30T07:41:47.455180",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"a8b3e439d785fd1e07977b50505249ce\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swiftproperty.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/init(text:textcolor:systemimagename:).json": {
       "hash": "1968ad75ba1b3e23fa741dad93ff6b6d1fa53c70fab97ac72bf76d4323dfafc7",
-      "last_checked": "2026-06-26T07:29:40.073554",
+      "last_checked": "2026-06-30T07:41:47.613198",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"5873299b177db56c86e8f890d11db64f\"",
       "file_path": "documentation/AlarmKit/alarmbutton/init-texttextcolorsystemimagename.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/systemimagename.json": {
       "hash": "33a2b790a9e52712028c43deea363bc540d165744c1b6c7dd7e9a0b8661737ed",
-      "last_checked": "2026-06-26T07:29:40.135782",
+      "last_checked": "2026-06-30T07:41:47.784577",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"ac34d8eed93c3d53b2f1eb072243e7fa\"",
       "file_path": "documentation/AlarmKit/alarmbutton/systemimagename.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/textcolor.json": {
       "hash": "2217fad2f4c8606658a1416e7291f4bca7aac8b7982b61f224631973a04a6ca6",
-      "last_checked": "2026-06-26T07:29:40.246417",
+      "last_checked": "2026-06-30T07:41:48.063887",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9e0b915a8d5b4eb3556308c4d3cb694a\"",
       "file_path": "documentation/AlarmKit/alarmbutton/textcolor.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/text.json": {
       "hash": "3695623e404ebcfbcadbe37fa28d4ebe988b9647b2b73dc5bb6c6d4f8e2c1d54",
-      "last_checked": "2026-06-26T07:29:40.330028",
+      "last_checked": "2026-06-30T07:41:48.396876",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"491e77c67ebd77998d5be0eb57987ab0\"",
       "file_path": "documentation/AlarmKit/alarmbutton/text.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/encode(to:).json": {
       "hash": "6f6c75fb0a6bea1f839523cb3275c5fd517df9be755ed36651eeaf6e68f57eae",
-      "last_checked": "2026-06-26T07:29:40.374738",
+      "last_checked": "2026-06-30T07:41:48.553712",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"25b3dd15b81daa9023f8ce04d5fb1c47\"",
       "file_path": "documentation/AlarmKit/alarmbutton/encode-to.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmbutton/init(from:).json": {
       "hash": "bd8583a58cc5debc837479e3f04d85c7d90a918ccdebf0282c7f904ce8e3c236",
-      "last_checked": "2026-06-26T07:29:40.445396",
+      "last_checked": "2026-06-30T07:41:48.656328",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"32dfefaf42d9eeda9f01061b45d47b7c\"",
       "file_path": "documentation/AlarmKit/alarmbutton/init-from.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/init(alert:countdown:paused:).json": {
       "hash": "47e2b7a04e865b1534d8295ae4eb22e8b0c99edc99a245f0b92bcb98a7ba4e99",
-      "last_checked": "2026-06-26T07:29:40.504522",
+      "last_checked": "2026-06-30T07:41:48.828426",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"1a0f84815a80d485ff4f433e10b4c742\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/init-alertcountdownpaused.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.property.json": {
       "hash": "1ddd6c22670870cf1c92f7875275add8db519910363c19b56160351ed2b8e7a5",
-      "last_checked": "2026-06-26T07:29:40.564043",
+      "last_checked": "2026-06-30T07:41:48.937996",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"11867bf0b239eab978fa83e402a07beb\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftproperty.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.property.json": {
       "hash": "62b2d4a7b7e87f472a55e1ddb9c1c5a4d4a0abf9dfe885f8a4d21eb020f9ffb3",
-      "last_checked": "2026-06-26T07:29:40.654760",
+      "last_checked": "2026-06-30T07:41:49.267231",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b5942f3edbe209a6a5a76e797e6311ab\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftproperty.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.property.json": {
       "hash": "093536baf01d68ef015af52c46bbec3ea24410aa0c5ac5ad1bf1cf2ec06fe04f",
-      "last_checked": "2026-06-26T07:29:40.704237",
+      "last_checked": "2026-06-30T07:41:49.435197",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"ed69acd6079500b9f14d3a92d3f37f5f\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftproperty.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct.json": {
       "hash": "c1202577d1dd8618e702c760fde9d33f6ffabf12a612d16faeb7e2395ab58802",
-      "last_checked": "2026-06-26T07:29:40.761302",
+      "last_checked": "2026-06-30T07:41:49.632190",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"d6ddecdea8b7bb962486325f75559cb3\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swiftstruct.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct.json": {
       "hash": "fe96b53f45d9b97b20e363c86e7c8e11dd9fdf9d35b1c67bbdb62279b57d77cd",
-      "last_checked": "2026-06-26T07:29:40.834911",
+      "last_checked": "2026-06-30T07:41:49.805269",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"5d6198ea387cc25b66d3ee441c1a3a89\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swiftstruct.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct.json": {
       "hash": "1c61403f51c10649d642383906b097491faf20ff4d0eac3ee7e0cce750d04842",
-      "last_checked": "2026-06-26T07:29:40.888633",
+      "last_checked": "2026-06-30T07:41:49.975994",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"bf6ea717e187cb223e9d227b45aad105\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/paused-swiftstruct.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/init(alarmid:mode:).json": {
       "hash": "4e0a1536975e26abb4f49a2f206e06ea6968e5f5a1a08fa276a1a37f4865f37e",
-      "last_checked": "2026-06-26T07:29:40.960507",
+      "last_checked": "2026-06-30T07:41:50.149596",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"87aee1f6057a23e9eeccb7b6f8180f4e\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/init-alarmidmode.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/alarmid.json": {
       "hash": "af09074ec02902236731616f5a591307c3209d1333c2195ee2b78fc1fa3bd013",
-      "last_checked": "2026-06-26T07:29:41.028535",
+      "last_checked": "2026-06-30T07:41:50.317517",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"c4144c7fa5eae8330c112a4ad30404c6\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/alarmid.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.property.json": {
       "hash": "a4f7dd604d6ca85b17d61d89e7b380b339b546e225735d1bb9d9e62fedcb420f",
-      "last_checked": "2026-06-26T07:29:41.092255",
+      "last_checked": "2026-06-30T07:41:50.469798",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4680ea6259dc4718e94707ed5d722411\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftproperty.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum.json": {
       "hash": "8898a2ce20ad86cfc081d6b377d42c3d529bf9877aa6a506d79e2e7b5dd6dee9",
-      "last_checked": "2026-06-26T07:29:41.167459",
+      "last_checked": "2026-06-30T07:41:50.646586",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f378bcdcf9d51cb97ff71111f63fa069\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swiftenum.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/init(presentation:metadata:tintcolor:).json": {
       "hash": "2370fb9503d882dc503469bf9923dac2e16ff2b8e808c91ba818498311fbfde6",
-      "last_checked": "2026-06-26T07:29:41.265784",
+      "last_checked": "2026-06-30T07:41:50.752365",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"bb4b1105bedaef46f5ed379cc5f681e1\"",
       "file_path": "documentation/AlarmKit/alarmattributes/init-presentationmetadatatintcolor.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/tintcolor.json": {
       "hash": "5d466fcb535bff0be19f38ddcaccbfb53b1235923139d853952defe1606e1cad",
-      "last_checked": "2026-06-26T07:29:41.368815",
+      "last_checked": "2026-06-30T07:41:50.912685",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"52820f3be272447c3abc64aec4872e20\"",
       "file_path": "documentation/AlarmKit/alarmattributes/tintcolor.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/presentation.json": {
       "hash": "da04e54c417a9fa94d3fecd65aff8b7bda4494dee9a6fabfeda88ecc5d8a4c2f",
-      "last_checked": "2026-06-26T07:29:41.423327",
+      "last_checked": "2026-06-30T07:41:51.012815",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"c94163be62ef9205d7166e5a8dd9b8d2\"",
       "file_path": "documentation/AlarmKit/alarmattributes/presentation.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/metadata.json": {
       "hash": "99315837456c90a4b159e2a5c8bd9487e60822383166cd2cd39b0cb09ae4114e",
-      "last_checked": "2026-06-26T07:29:41.485563",
+      "last_checked": "2026-06-30T07:41:51.188003",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"002d329e8238c0ed4d449db58f9e2bde\"",
       "file_path": "documentation/AlarmKit/alarmattributes/metadata.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/contentstate.json": {
       "hash": "ceefddeb463f3c6789e5b47ba8059000b9e87e67edbba593f462fb2c0f7886a8",
-      "last_checked": "2026-06-26T07:29:41.555952",
+      "last_checked": "2026-06-30T07:41:51.337624",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"427eb33cd06d4634f54617052ba97c1b\"",
       "file_path": "documentation/AlarmKit/alarmattributes/contentstate.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/init(from:).json": {
       "hash": "5dfb61e5c654721fdcdab71e1970767047b88db6925487492780b2c75de8e09b",
-      "last_checked": "2026-06-26T07:29:41.680103",
+      "last_checked": "2026-06-30T07:41:51.499396",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"136d3957358eefedc367e1b4dd7d756d\"",
       "file_path": "documentation/AlarmKit/alarmattributes/init-from.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmattributes/encode(to:).json": {
       "hash": "c65ae3087790229549e59ce14d6e12933da57d6ff2abfc6da92a68098c2cd469",
-      "last_checked": "2026-06-26T07:29:41.736644",
+      "last_checked": "2026-06-30T07:41:51.663835",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"54131ff9003886cd171761d48b94eb2c\"",
       "file_path": "documentation/AlarmKit/alarmattributes/encode-to.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/iterator.json": {
       "hash": "6ae17d6af8b0011ace4d3e4a11b662d07d44f0d33aca602f1f50fa40ca67c690",
-      "last_checked": "2026-06-26T07:29:41.824819",
+      "last_checked": "2026-06-30T07:41:51.821247",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"bda35471fa1eac1dc5072769cf3a1148\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/makeasynciterator().json": {
       "hash": "9f30f0229b0b2eda426a2f4d813992bfcedd9d8862ef75e01565b129a5b4ec50",
-      "last_checked": "2026-06-26T07:29:41.875109",
+      "last_checked": "2026-06-30T07:41:51.938866",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"46d5928be78bf4e9cec2ba2fcfe3f733\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/makeasynciterator.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/element.json": {
       "hash": "8068f09e53f2749849c738b231b2fe5e1285cc7172aed3a75a55a8eefa31e1e0",
-      "last_checked": "2026-06-26T07:29:41.965563",
+      "last_checked": "2026-06-30T07:41:52.122575",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"3aaa5ac156bce6d862ac72149c81dfa7\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/element.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:stopintent:secondaryintent:sound:).json": {
       "hash": "6dd4c56592a4a545f99ce33bb9ed5682cebe253d575a038312dce7fe757a9ac4",
-      "last_checked": "2026-06-26T07:29:42.031743",
+      "last_checked": "2026-06-30T07:41:52.284446",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"0dc0ecf9f954a1b49254432628e429a3\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesstopintentsecondaryintentsound.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:stopintent:secondaryintent:sound:).json": {
       "hash": "678d94d10b321e5d1a5e2dc9c944d9616c858267e0d80872ee7308f6841a5ca7",
-      "last_checked": "2026-06-26T07:29:42.094279",
+      "last_checked": "2026-06-30T07:41:52.448833",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"be98e5614c4717be434d1730a876d383\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesstopintentsecondaryintentsound.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:stopintent:secondaryintent:sound:).json": {
       "hash": "bafc8c73350e24991c53194d78101f0e04d068cbeb5f5facb38b607c1094d6dd",
-      "last_checked": "2026-06-26T07:29:42.166323",
+      "last_checked": "2026-06-30T07:41:52.610280",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"265dcd94addf57321ba9f16a78eb8703\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesstopintentsecondaryintentsound.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/iterator.json": {
       "hash": "4307b25a5cc27012e56a368fd1d9995c23769c50ef07d5c3dcf61267ffcb4bfa",
-      "last_checked": "2026-06-26T07:29:42.430150",
+      "last_checked": "2026-06-30T07:41:53.222605",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9ad97818a695ed43aad4761e589cdae0\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator().json": {
       "hash": "0b7a69ffd3cedba10ce575311ffa3f8d5917b37a75fc8e8ac893b97fc7e6ac86",
-      "last_checked": "2026-06-26T07:29:42.479045",
+      "last_checked": "2026-06-30T07:41:53.355744",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"3201114559e1ed143007b5e6d78cef95\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/makeasynciterator.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/element.json": {
       "hash": "704aeb40d3b0164d23e26b7ce2c060d8385503f8639540201fdc3f55b6e84107",
-      "last_checked": "2026-06-26T07:29:42.560457",
+      "last_checked": "2026-06-30T07:41:53.481239",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"d9c013e87d9fd5024c49ce6478cd70a8\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/element.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum/authorized.json": {
       "hash": "4e03134ffa4e5207ad3d1f4541da77a6d9df26aa675d8a638e094f002ecffbac",
-      "last_checked": "2026-06-26T07:29:42.621720",
+      "last_checked": "2026-06-30T07:41:53.650935",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"2ee93955ff70111a9a0111ddba191cbe\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.enum/authorized.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum/denied.json": {
       "hash": "217873b406a32e8eaedb868705fa83e0b322b323cbce2ce3a3def917362dea2d",
-      "last_checked": "2026-06-26T07:29:42.689554",
+      "last_checked": "2026-06-30T07:41:53.822506",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"293ad8fc74474bf237cb7c35eee837df\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.enum/denied.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/authorizationstate-swift.enum/notdetermined.json": {
       "hash": "35c762d8c3b6a3a514b1b088d7b36386d086584921bc453ce93c6d0d10834d42",
-      "last_checked": "2026-06-26T07:29:42.794209",
+      "last_checked": "2026-06-30T07:41:53.992392",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4507d88de0c53c86980a81c559256649\"",
       "file_path": "documentation/AlarmKit/alarmmanager/authorizationstate-swift.enum/notdetermined.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmerror/maximumlimitreached.json": {
       "hash": "e3060c7fa18c3ddd7897ba7beb5838477226713e8be7a5f82571cf8124124c2c",
-      "last_checked": "2026-06-26T07:29:42.837298",
+      "last_checked": "2026-06-30T07:41:54.166678",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"68ec811779e5c44913e7f9d97613d56c\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmerror/maximumlimitreached.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct/init(prealert:postalert:).json": {
       "hash": "0d7b4b3dc20848b3611685e64266bdf122cc49151c9305463ccdf5b5ef25ec78",
-      "last_checked": "2026-06-26T07:29:42.907449",
+      "last_checked": "2026-06-30T07:41:54.348632",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"5abae1e34d9ab34ad539eb1a27d45b26\"",
       "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/init-prealertpostalert.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct/postalert.json": {
       "hash": "04af8c1707bbed2be4fe00b8196486f8c4573ea2f16f2049883683a338038638",
-      "last_checked": "2026-06-26T07:29:42.975706",
+      "last_checked": "2026-06-30T07:41:54.496944",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"6db34c6869224fd87e8b55ea6ae51ff0\"",
       "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/postalert.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/countdownduration-swift.struct/prealert.json": {
       "hash": "89f948519f3dc6284cc6ddedd1c4d31504aeb1a81438bbdf80894ba22c3cde91",
-      "last_checked": "2026-06-26T07:29:43.037011",
+      "last_checked": "2026-06-30T07:41:54.619542",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f40c0e4129c5cfb6a23ecd081ce46bb7\"",
       "file_path": "documentation/AlarmKit/alarm/countdownduration-swift.struct/prealert.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum/alerting.json": {
       "hash": "25dc176104fec24fede8a0051c4d8ad31da58d9cfd1baaba7a3916b23b96d461",
-      "last_checked": "2026-06-26T07:29:43.115387",
+      "last_checked": "2026-06-30T07:41:54.813362",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8970de2137a88a4a3fe866e6f0c65aa8\"",
       "file_path": "documentation/AlarmKit/alarm/state-swift.enum/alerting.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum/countdown.json": {
       "hash": "37aa7283ce9d051976f3df1d0ef02fe13a35ecc28672b13b48f947ff54cfd6af",
-      "last_checked": "2026-06-26T07:29:43.164719",
+      "last_checked": "2026-06-30T07:41:54.991504",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"af3c982bb3d2b0e4227738ddf52904be\"",
       "file_path": "documentation/AlarmKit/alarm/state-swift.enum/countdown.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum/paused.json": {
       "hash": "58ea30590ce18f432e6f431b07d0c1dac00d485c36aad6f686fd7d00a8b5231b",
-      "last_checked": "2026-06-26T07:29:43.227139",
+      "last_checked": "2026-06-30T07:41:55.106525",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"83252365ddab5f80e2be69a224bff70b\"",
       "file_path": "documentation/AlarmKit/alarm/state-swift.enum/paused.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/state-swift.enum/scheduled.json": {
       "hash": "cda56a6af3becbdfb0441b4c167fba5e499e4672233f7bba1356af32276c4f81",
-      "last_checked": "2026-06-26T07:29:43.287467",
+      "last_checked": "2026-06-30T07:41:55.290690",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"c57ea0a1b2c7e7303d816b61ff2892be\"",
       "file_path": "documentation/AlarmKit/alarm/state-swift.enum/scheduled.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative.json": {
       "hash": "5f8775d9acd0b6c9efd9da36c32a522972f647130f8c4bdb0488631b263d6ec7",
-      "last_checked": "2026-06-26T07:29:43.354631",
+      "last_checked": "2026-06-30T07:41:55.442961",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"991ecb669658e4c8b31c3d2393978b16\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/fixed(_:).json": {
       "hash": "863d27b2767510a80a3cd974096574b578761d294953e77c8b537f7e8ef65485",
-      "last_checked": "2026-06-26T07:29:43.481015",
+      "last_checked": "2026-06-30T07:41:55.597077",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4c8234fa0da00a30e9be02a52bf5ae16\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/fixed.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative(_:).json": {
       "hash": "27b0a859e6186e37ee534cbd54643301606344775f441c7f99b77deac49532e8",
-      "last_checked": "2026-06-26T07:29:43.528143",
+      "last_checked": "2026-06-30T07:41:55.741264",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b0bdea984e5594dad3374093ca260dd4\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:stopbutton:secondarybutton:secondarybuttonbehavior:).json": {
       "hash": "68f046241decbc65ebedda42514cbfb7ccc1e51eb965f6d332754be36a041bd9",
-      "last_checked": "2026-06-26T07:29:43.961805",
+      "last_checked": "2026-06-30T07:41:56.649488",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"1056cef54e67e244ee1ca1536c4cbc61\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlestopbuttonsecondarybuttonsecondarybuttonbehavior.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/stopbutton.json": {
       "hash": "60f2123e503de88f725fee0e488be1fe2a802ae2bafaa57840d6d7ce1173902c",
-      "last_checked": "2026-06-26T07:29:44.026557",
+      "last_checked": "2026-06-30T07:41:56.781499",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"66e3fe5ab705f6e4d3b5f1324f67a17e\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/stopbutton.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/title.json": {
       "hash": "7cee2c16e91ed0e8522e927981f519612c630f17c38dcf802c579b33a1854ea1",
-      "last_checked": "2026-06-26T07:29:43.650126",
+      "last_checked": "2026-06-30T07:41:56.054754",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"e0cd5daf577d931f33d816e4faa36206\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/title.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybutton.json": {
       "hash": "42448b66a8380747e25a27f42e2c141c63978a9779f95b0acd0c3430fb3d06ce",
-      "last_checked": "2026-06-26T07:29:43.701692",
+      "last_checked": "2026-06-30T07:41:56.228878",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"d6fc63ba07f818ee66d3e6662e42ff5e\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybutton.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.property.json": {
       "hash": "cef0d4fe1974dd9c4ad763a19c539f7ae742ea318afabfa80a5f9340ec3a6635",
-      "last_checked": "2026-06-26T07:29:43.776236",
+      "last_checked": "2026-06-30T07:41:56.379114",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"e17b246cf189653c470c609ad6351693\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftproperty.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum.json": {
       "hash": "c80d4910385acefd2beed7e63595f4adede07a45189167ea356df7c2dc710afc",
-      "last_checked": "2026-06-26T07:29:43.915240",
+      "last_checked": "2026-06-30T07:41:56.543359",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"a8e614d16ac663b962d0488fa1dedb34\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swiftenum.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct/init(title:pausebutton:).json": {
       "hash": "364bfb7d3666ead2736a9bc4450b51488009b9ee3d4de125adebd52c90df0727",
-      "last_checked": "2026-06-26T07:29:44.081454",
+      "last_checked": "2026-06-30T07:41:56.959305",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"bf64a8cff96dcbb793ecb1e0599a8a3d\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/init-titlepausebutton.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct/pausebutton.json": {
       "hash": "b87c07b0f2782b994191beec7e5ac07510232a7b871db09a8e6517fd378a7306",
-      "last_checked": "2026-06-26T07:29:44.143054",
+      "last_checked": "2026-06-30T07:41:57.118869",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8301ef7e5b0da41a4b256aff424c792a\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/pausebutton.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/countdown-swift.struct/title.json": {
       "hash": "b5320c62be134c292e3cc5d22e8cfc88028779a335aaa8d84f75bb88d4cf63b2",
-      "last_checked": "2026-06-26T07:29:44.213283",
+      "last_checked": "2026-06-30T07:41:57.284350",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f8f1c99c9efcd9d4dfa530f4a468c10f\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/countdown-swift.struct/title.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct/init(title:resumebutton:).json": {
       "hash": "ac88348577661095409368139f5c7d467cb112271abc69d73c8edc6a3fda02cf",
-      "last_checked": "2026-06-26T07:29:44.293101",
+      "last_checked": "2026-06-30T07:41:57.442549",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"3937972d4ef68c4e1a3f5c9661e1d409\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/init-titleresumebutton.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct/resumebutton.json": {
       "hash": "e3a6b42149faad7c7fed1b47a262e10c91fe131d2db9fc30008a584da720c3d7",
-      "last_checked": "2026-06-26T07:29:44.388840",
+      "last_checked": "2026-06-30T07:41:57.567677",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"e25a36b68411a06cbca9b86f6ff65468\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/resumebutton.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/paused-swift.struct/title.json": {
       "hash": "986d477efda531a9ffdd2c59ca2a0424fcc6a319372e5ebd4c16d009bba0e2eb",
-      "last_checked": "2026-06-26T07:29:44.448893",
+      "last_checked": "2026-06-30T07:41:57.690623",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"afb005198ad1a3dd699c064b49d43c51\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/paused-swift.struct/title.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown.json": {
       "hash": "4541a07c007c0d69b4b35e4db3e8e851ccc7febe6c5c831690c3d5a71b75e785",
-      "last_checked": "2026-06-26T07:29:44.493737",
+      "last_checked": "2026-06-30T07:41:57.866984",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"fa555f0e79ba379e3781763acbd0e90d\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown(_:).json": {
       "hash": "4c98dec0d9e142382593537312bea9dc3700cdc0bf0ac43c6cd6ea981828c182",
-      "last_checked": "2026-06-26T07:29:44.570358",
+      "last_checked": "2026-06-30T07:41:58.034380",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b6420876acc8eb4ca0e0c8d8004cb223\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert.json": {
       "hash": "3df53ea1b41c307ce2cd36230f38dcf523965df372f035321a64acee809d4774",
-      "last_checked": "2026-06-26T07:29:44.673578",
+      "last_checked": "2026-06-30T07:41:58.186860",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b931814ee5cca3a682408803446f9a0c\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert(_:).json": {
       "hash": "69d0a788d5af3034a4ff0aa04e5f08b5f3b502e4264f5203ecd12e401a820302",
-      "last_checked": "2026-06-26T07:29:44.721801",
+      "last_checked": "2026-06-30T07:41:58.307431",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"deffc5e35dfa18827734c3a0aef4e6ee\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused.json": {
       "hash": "99aa5ae244422f97770d621b65e32990f42590a22540a919ffc8b11bb229633a",
-      "last_checked": "2026-06-26T07:29:44.802898",
+      "last_checked": "2026-06-30T07:41:58.474276",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4469e29b9b256639210b02672b50b81a\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused(_:).json": {
       "hash": "bc49850a217613613bf6d3b95a8419eda64a8f84fcb1031700d79a5e2aab457a",
-      "last_checked": "2026-06-26T07:29:44.850653",
+      "last_checked": "2026-06-30T07:41:58.627697",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"dcd3adce21a3c691506142123cd5eac4\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmupdates-swift.struct/iterator/next().json": {
       "hash": "5d69b8d28cabd7763c4c7a5ae8338c3434fcef16020c538618465a1b0b86907c",
-      "last_checked": "2026-06-26T07:29:44.921450",
+      "last_checked": "2026-06-30T07:41:58.990464",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"714c5823348cc67813589e8f28d58a8f\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmupdates-swift.struct/iterator/next.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmauthorizationstateupdates/iterator/next().json": {
       "hash": "9a5d7106ea2b96b141a15ffd49857f1a0ae96e318412b39f487717feca372fa5",
-      "last_checked": "2026-06-26T07:29:45.022457",
+      "last_checked": "2026-06-30T07:41:59.102884",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"befd810a61b3aece30d67ea6069a2f4a\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmauthorizationstateupdates/iterator/next.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/init(time:repeats:).json": {
       "hash": "e2f7a72780edc1b3e05f05f3188fd43f33696f58d2888456fdf4d543ad526199",
-      "last_checked": "2026-06-26T07:29:45.074872",
+      "last_checked": "2026-06-30T07:41:59.273953",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"ba14fee667e18efa06188ee1cfdb8318\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/init-timerepeats.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct.json": {
       "hash": "a751d4abe862a58d8be4b6b88205e217a015d53c727c756ec1f7d1f5f7017c76",
-      "last_checked": "2026-06-26T07:29:45.122830",
+      "last_checked": "2026-06-30T07:41:59.376670",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"b64e362b82623a560014972e4f2d1d84\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftstruct.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/repeats.json": {
       "hash": "b8e8cbe94a41e7fb9c01bea7cca2a67e11936a845ba3459a24a0a4cbcc10b33c",
-      "last_checked": "2026-06-26T07:29:45.189885",
+      "last_checked": "2026-06-30T07:41:59.553125",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"1ef9907497a2d33763d8d67c73485df0\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/repeats.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.property.json": {
       "hash": "d605a8a27bf74f505dbd7f1e6fe28af672b6dc2cfa7e2fcfd35e3453d33be0e8",
-      "last_checked": "2026-06-26T07:29:45.278202",
+      "last_checked": "2026-06-30T07:41:59.727032",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"dc0a0446548db080eee14e3deec33227\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swiftproperty.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence.json": {
       "hash": "e21a56fbe59a17c0d699159d0e8323650e3441e5ab7c2d4a278f8796b0d2da3a",
-      "last_checked": "2026-06-26T07:29:45.377985",
+      "last_checked": "2026-06-30T07:41:59.895621",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"58d44a56efca971645acde54e188479b\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/countdown.json": {
       "hash": "03a06aebbcb5753521a7ea83995e8e252020c5ec0360ff55dbbca9e55b37bed6",
-      "last_checked": "2026-06-26T07:29:45.424648",
+      "last_checked": "2026-06-30T07:42:00.075247",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"33b6246b53d247d9c887b6efd881c43b\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/countdown.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.json": {
       "hash": "99afc724f8ba4bc237644d5eeeed81cbaa0bdebfe08ffe2f8da9a44a5d5d87aa",
-      "last_checked": "2026-06-26T07:29:45.493105",
+      "last_checked": "2026-06-30T07:42:00.175019",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"2adf355bd5212f07a643d1516554f04c\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/secondarybuttonbehavior-swift.enum/custom.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/init(totalcountdownduration:previouslyelapsedduration:startdate:firedate:).json": {
       "hash": "d67e1d38a283ef7044f61a7662c1b463975a06127a8eed4b9f8533148ba263ec",
-      "last_checked": "2026-06-26T07:29:45.562477",
+      "last_checked": "2026-06-30T07:42:00.317423",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f46445e6636156beb9a0f9db8ceab7c5\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/init-totalcountdowndurationpreviouslyelapseddurationstartdatefiredate.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/firedate.json": {
       "hash": "c36d540fe3490fd052f1ccc46f07bcc47bd6625e447bbacbdd68718b31c9fafd",
-      "last_checked": "2026-06-26T07:29:45.661628",
+      "last_checked": "2026-06-30T07:42:00.476241",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"9d2cec86d1894db1c57f9b5e2e0d05f4\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/firedate.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration.json": {
       "hash": "14e758eb57b7371613ff14c03bc1eae275de1f9604485bc83e3ac26b2dcd607a",
-      "last_checked": "2026-06-26T07:29:45.706226",
+      "last_checked": "2026-06-30T07:42:00.707536",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"227e5167a9b54cffbe58ddf0a59fb492\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/previouslyelapsedduration.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/startdate.json": {
       "hash": "4d9265a95ffdefe52802410b7c5bbf06a0228e950f71d7f55efad1dd6afa9db4",
-      "last_checked": "2026-06-26T07:29:45.765151",
+      "last_checked": "2026-06-30T07:42:00.867381",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f7940ad7afa5ace40d67b5e92d44d09d\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/startdate.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/countdown/totalcountdownduration.json": {
       "hash": "edfa016f8f04e88d523c8707974df1ea861fc0b3aef23adf951ce9730d90b6dc",
-      "last_checked": "2026-06-26T07:29:45.844128",
+      "last_checked": "2026-06-30T07:42:00.987795",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"2c0e3e6e22f6fdb3ee048aa4c6c382e8\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/countdown/totalcountdownduration.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/init(time:).json": {
       "hash": "f7c2215bf02b52c6cd734d6adcdc574c19b872309fbe165601ce4cb3f84d8e5d",
-      "last_checked": "2026-06-26T07:29:45.907801",
+      "last_checked": "2026-06-30T07:42:01.164318",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"5a1cd7a3c1a8efba7f86fb99eb9ffd42\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/init-time.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/alert/time.json": {
       "hash": "1d64d9b3225e1f1d9756fd6a030a1a1e278bb0cbdc8e01219dd9f2511f3e7277",
-      "last_checked": "2026-06-26T07:29:45.988677",
+      "last_checked": "2026-06-30T07:42:01.319742",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"7f6fa1e1523ecf2263c48e44ff84cfda\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/alert/time.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/init(totalcountdownduration:previouslyelapsedduration:).json": {
       "hash": "1fc0e3398f0f544f60452a15c1eae352e8731ad75dfe7f7a199e35c7c0ca46fa",
-      "last_checked": "2026-06-26T07:29:46.043500",
+      "last_checked": "2026-06-30T07:42:01.425672",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"75e9c83265010e90f2efda754c9e8b2e\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/init-totalcountdowndurationpreviouslyelapsedduration.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/previouslyelapsedduration.json": {
       "hash": "5a7e8bc0c1b68493c866c4f361e7ca832bba27bb7232ad7f3e1c52742128b6b5",
-      "last_checked": "2026-06-26T07:29:46.103695",
+      "last_checked": "2026-06-30T07:42:01.604057",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"4f302b9ef541dd1871c03fd7a5174212\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/previouslyelapsedduration.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentationstate/mode-swift.enum/paused/totalcountdownduration.json": {
       "hash": "d8e8d29f1a2a41521d23dc2cca5920d630ed9ce2bfdc41c4ef5eff936759c1ac",
-      "last_checked": "2026-06-26T07:29:46.172815",
+      "last_checked": "2026-06-30T07:42:01.753652",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"3503fcf2e68620122b845dab66946e68\"",
       "file_path": "documentation/AlarmKit/alarmpresentationstate/mode-swift.enum/paused/totalcountdownduration.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/init(hour:minute:).json": {
       "hash": "bad3eb65fe705726ee0c3e270acbf3c318180706d2b9f30f039755c53eab1eb7",
-      "last_checked": "2026-06-26T07:29:46.322713",
+      "last_checked": "2026-06-30T07:42:01.919002",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"d6e0b44f203ae36cbfd90200e0f0cc10\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/init-hourminute.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/hour.json": {
       "hash": "24f0551071d21ab0b744b6fc16b51cc5c38a033cf989e12d4513ea0a8e176d04",
-      "last_checked": "2026-06-26T07:29:46.431098",
+      "last_checked": "2026-06-30T07:42:02.080305",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"dedf8436dbfa38b5c45d75dccc1f10b8\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/hour.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/time-swift.struct/minute.json": {
       "hash": "c0f1ed72214d0eeed6676b37995b8f1d4c11f36feb64c11b43e70db6d7dcc45c",
-      "last_checked": "2026-06-26T07:29:46.479273",
+      "last_checked": "2026-06-30T07:42:02.256561",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"2d34bea34a70f2f7b0d9f4df814c7428\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/time-swift.struct/minute.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence/never.json": {
       "hash": "d3ed8773bf67dcb169cb1e209fd64c751bad1c13fae5533ffc2cee2f1a2baf3b",
-      "last_checked": "2026-06-26T07:29:46.609356",
+      "last_checked": "2026-06-30T07:42:02.403586",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"6385c9720070717511087708c6b25245\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/never.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/schedule-swift.enum/relative/recurrence/weekly(_:).json": {
       "hash": "3e970b271465266d78aa8fa9f24704095c8876df6a76b5a06d539aa22f3d145d",
-      "last_checked": "2026-06-26T07:29:46.656864",
+      "last_checked": "2026-06-30T07:42:02.571211",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"c388e2b0c56a149b0ff55fd9dbd43ac4\"",
       "file_path": "documentation/AlarmKit/alarm/schedule-swift.enum/relative/recurrence/weekly.md"
     },
@@ -4519,9 +4519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarm/id.json": {
       "hash": "6f75a4aa324b657996f8aef67a785d98ddcf73fab94d988006b68f497aa2c227",
-      "last_checked": "2026-06-26T07:29:39.687045",
+      "last_checked": "2026-06-30T07:41:46.776171",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8ad5f2759a887a894ca58ed0ae87634f\"",
       "file_path": "documentation/AlarmKit/alarm/id.md"
     },
@@ -4535,9 +4535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmpresentation/alert-swift.struct/init(title:secondarybutton:secondarybuttonbehavior:).json": {
       "hash": "564189bf9b7d39c07808d4a01c74818426a2c22561d083951f9f6dac7e8a789c",
-      "last_checked": "2026-06-26T07:29:43.577607",
+      "last_checked": "2026-06-30T07:41:55.917479",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"8a5b5a16cde752162a68005b9ed63a21\"",
       "file_path": "documentation/AlarmKit/alarmpresentation/alert-swift.struct/init-titlesecondarybuttonsecondarybuttonbehavior.md"
     },
@@ -4551,9 +4551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/init(countdownduration:schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "hash": "62f9f40e946390acc905aaa3af9b222346489d98f2a9bec812a17803dbb537fd",
-      "last_checked": "2026-06-26T07:29:42.237835",
+      "last_checked": "2026-06-30T07:41:52.767738",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"f97f78b46e1fa8ddd4dfeafb36ce8591\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/init-countdowndurationscheduleattributesappentityidentifierstopintentsecondaryintentsound.md"
     },
@@ -4567,9 +4567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/alarm(schedule:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "hash": "043d5a6897da7a54e08b2147ab1a2d0bed4fb29e0051467f07081a1b67821a03",
-      "last_checked": "2026-06-26T07:29:42.302761",
+      "last_checked": "2026-06-30T07:41:52.944914",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"a8e0eecd09de5bcdefbbfde051d80143\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/alarm-scheduleattributesappentityidentifierstopintentsecondaryintentsound.md"
     },
@@ -4583,9 +4583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/alarmkit/alarmmanager/alarmconfiguration/timer(duration:attributes:appentityidentifier:stopintent:secondaryintent:sound:).json": {
       "hash": "ce3b01c5cb755880fa1c8c2ea2fcf5bf9979530eead5acc38d7b6a90241211e3",
-      "last_checked": "2026-06-26T07:29:42.365994",
+      "last_checked": "2026-06-30T07:41:53.048486",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:29:36.890528",
+      "session_id": "2026-06-30T07:41:40.606059",
       "etag": "W/\"6bf2ed84499c825b6b323dca94328b40\"",
       "file_path": "documentation/AlarmKit/alarmmanager/alarmconfiguration/timer-durationattributesappentityidentifierstopintentsecondaryintentsound.md"
     },

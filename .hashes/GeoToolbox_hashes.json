@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:31:27.234924",
+    "last_updated": "2026-06-30T07:44:37.160493",
     "total_pages": 84,
-    "session_id": "2026-06-26T07:31:24.991099"
+    "session_id": "2026-06-30T07:44:33.806343"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/GeoToolbox.json": {
       "hash": "47dff52da998da64a800cb377b5cd1a5ae6c352a0c857caf89d7932ed461a833",
-      "last_checked": "2026-06-26T07:31:25.227507",
+      "last_checked": "2026-06-30T07:44:34.079761",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"18bc64dac4dc1e13191a428320505060\"",
       "file_path": "documentation/GeoToolbox/GeoToolbox.md"
     },
     "https://developer.apple.com/documentation/GeoToolbox": {
       "hash": "47dff52da998da64a800cb377b5cd1a5ae6c352a0c857caf89d7932ed461a833",
-      "last_checked": "2026-06-26T07:31:25.110052",
+      "last_checked": "2026-06-30T07:44:33.961210",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"18bc64dac4dc1e13191a428320505060\"",
       "file_path": "documentation/GeoToolbox/GeoToolbox.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor.json": {
       "hash": "f59d59f858ac0039333d6ea770eb976d05fbccf656bccdace61b1c119be6a471",
-      "last_checked": "2026-06-26T07:31:25.438049",
+      "last_checked": "2026-06-30T07:44:34.320559",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"5c5c5cdefa03cdfbe633babfc7e2592a\"",
       "file_path": "documentation/GeoToolbox/placedescriptor.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/init(item:).json": {
       "hash": "16f8b67047d04a8010fe7eec8fff728f79b93fcf1cf22b96736651a0ce5e9ca0",
-      "last_checked": "2026-06-26T07:31:25.533295",
+      "last_checked": "2026-06-30T07:44:34.462394",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"777ed570ff46840ce1083a42a522c578\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/init-item.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/init(representations:commonname:supportingrepresentations:).json": {
       "hash": "bbb30e7691028c16252066fd2a5cc68c0823e0bc0a3e443bb7e4797c12dbb0da",
-      "last_checked": "2026-06-26T07:31:25.663016",
+      "last_checked": "2026-06-30T07:44:34.606915",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"5865e1e12cae26235040eaaa4ccb9834\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/init-representationscommonnamesupportingrepresentations.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/placerepresentation.json": {
       "hash": "5007cb447b1619e9a27bb0cbbf51e372d82b29829210248ed507baac5583cf8b",
-      "last_checked": "2026-06-26T07:31:25.713323",
+      "last_checked": "2026-06-30T07:44:34.728501",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"48db21a1d36d67d32f3c73a84f3a7cbd\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/placerepresentation.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/supportingplacerepresentation.json": {
       "hash": "0cce897a74c42cacf6cdbe414525bad52b8ca63e95826df4f1485bc5b815c6c2",
-      "last_checked": "2026-06-26T07:31:25.771470",
+      "last_checked": "2026-06-30T07:44:34.879295",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"ca62e0a7bef48b0e596a6e62273f9090\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/supportingplacerepresentation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/commonname.json": {
       "hash": "750c1570a8dc0e319a5a9c1b33d149c1e7afef5e1f460b849d1089d693813d6e",
-      "last_checked": "2026-06-26T07:31:25.907194",
+      "last_checked": "2026-06-30T07:44:35.024114",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"51bbe53cbe0cdb45ddf22e9cbe019376\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/commonname.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/address.json": {
       "hash": "05887121d6923d6a0f19dde11d1fc2204b33731a18aba0a92956709587b6ac70",
-      "last_checked": "2026-06-26T07:31:26.013025",
+      "last_checked": "2026-06-30T07:44:35.246394",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"8a321afd9c840b5cae30da59a7daeb49\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/address.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/coordinate.json": {
       "hash": "9ae8ed56e5f015e81f3abac4cf34bdbc559583632c49b4333f7aa154b2ae4e71",
-      "last_checked": "2026-06-26T07:31:26.118236",
+      "last_checked": "2026-06-30T07:44:35.358176",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"53606e893c3de62cb399944012dde511\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/coordinate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/representations.json": {
       "hash": "a934947c97b3cfdd66680ff6c634c757ee1e6995b525e10188b7aa5388d2c90f",
-      "last_checked": "2026-06-26T07:31:26.201450",
+      "last_checked": "2026-06-30T07:44:35.480412",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"f65d5c7381d26467d8fc1d94002f9193\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/representations.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/supportingrepresentations.json": {
       "hash": "1cb87bcd64677e091b65780e43e144d9a8014a3603786e9dc3cee837af362702",
-      "last_checked": "2026-06-26T07:31:26.314820",
+      "last_checked": "2026-06-30T07:44:35.621534",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"7150a0227e95840feef2fafe4a36bf5b\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/supportingrepresentations.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/serviceidentifier(for:).json": {
       "hash": "44d52f1db189bddf4f8700fd56359937d6ee3b1029f36951aa495711e5d714a2",
-      "last_checked": "2026-06-26T07:31:26.421423",
+      "last_checked": "2026-06-30T07:44:35.745629",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"bcbbae600a294c8acfa962dadf9cc938\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/serviceidentifier-for.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/specification.json": {
       "hash": "0557e42dd46dc7cc135b40d5c6d20828181dd23dcdde86c6fa7b64b54b8d16d9",
-      "last_checked": "2026-06-26T07:31:26.503777",
+      "last_checked": "2026-06-30T07:44:35.900612",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"7a7965c3aad2901ef3b9acd43fd7aab0\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/specification.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/unwrappedtype.json": {
       "hash": "25e5bcad6e24aa29b4fff3b0273c336afb0688ee4d9fb9d4a17dafe873687d55",
-      "last_checked": "2026-06-26T07:31:26.616547",
+      "last_checked": "2026-06-30T07:44:36.037632",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"63d17626ed600916b23a5c309bf9f582\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/unwrappedtype.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/valuetype.json": {
       "hash": "768b8802c11daf9bfef9ecc8d37283b4fe68d69a9a122a882732568639743bc6",
-      "last_checked": "2026-06-26T07:31:26.856059",
+      "last_checked": "2026-06-30T07:44:36.176021",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"63b3035ef00345cde800eda495694728\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/valuetype.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/defaultresolverspecification.json": {
       "hash": "24c14b53f2df38b1fbcc5989a20d6e02054ef0d578a1f7909f88a5c8522fce6b",
-      "last_checked": "2026-06-26T07:31:26.920338",
+      "last_checked": "2026-06-30T07:44:36.277099",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"093f84b247442e60aa882586d41aaa12\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/defaultresolverspecification.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/placerepresentation/address(_:).json": {
       "hash": "625c791978e5df1400ea2c50a8545d6b1199d06bc9070f68f680468d07ebe718",
-      "last_checked": "2026-06-26T07:31:26.968134",
+      "last_checked": "2026-06-30T07:44:36.418112",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"f901d85b581774fca008bbd4043195df\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/placerepresentation/address.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/placerepresentation/coordinate(_:).json": {
       "hash": "93de1b37a174a34392f11cb016abd4162f2fbb9703c5f3110062055cc6e55b86",
-      "last_checked": "2026-06-26T07:31:27.019904",
+      "last_checked": "2026-06-30T07:44:36.688275",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"37c817f9d19974ac8e649cedfe8fdf84\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/placerepresentation/coordinate.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/placerepresentation/devicelocation(_:).json": {
       "hash": "1239a801ebacbc7a1043d3a9108128db3df115059ecd1426f73297229c703cef",
-      "last_checked": "2026-06-26T07:31:27.095506",
+      "last_checked": "2026-06-30T07:44:36.856752",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"75ae21ef0a2caea040ffe48675478ae0\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/placerepresentation/devicelocation.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/geotoolbox/placedescriptor/supportingplacerepresentation/serviceidentifiers(_:).json": {
       "hash": "a31875943c07d0266daf68e2e24b8199c6458c0c0074ff947582ed2ef725f5d2",
-      "last_checked": "2026-06-26T07:31:27.233856",
+      "last_checked": "2026-06-30T07:44:37.157183",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:24.991099",
+      "session_id": "2026-06-30T07:44:33.806343",
       "etag": "W/\"13621299e4768d7d9b269d6fa011a8ee\"",
       "file_path": "documentation/GeoToolbox/placedescriptor/supportingplacerepresentation/serviceidentifiers.md"
     },

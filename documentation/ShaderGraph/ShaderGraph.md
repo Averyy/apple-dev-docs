@@ -27,7 +27,7 @@ Build your material using the nodes that achieve your desired visual and geometr
 
 Shader Graph uses MaterialX 1.38 conventions to improve interoperability with content creation applications that can read and author MaterialX within USD files.
 
-Shader Graph also includes several nodes that are unique to RealityKit. Some of these nodes are available as standard MaterialX definitions that you can use within your content creation workflow. To download these definitions, see [`MaterialX definitions`](https://developer.apple.comhttps://developer.apple.com/augmented-reality/realitykit/files/MaterialX-definitions.zip).
+Shader Graph also includes several nodes that are unique to RealityKit. Some of these nodes are available as standard MaterialX definitions that you can use within your content creation workflow. To download these definitions, see [`MaterialX definitions`](https://developer.apple.comhttps://developer.apple.com/download/files/MaterialX-definitions.zip).
 
 ## Topics
 

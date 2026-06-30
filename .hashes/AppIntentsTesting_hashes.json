@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:30:56.425868",
+    "last_updated": "2026-06-30T07:44:02.985713",
     "total_pages": 238,
-    "session_id": "2026-06-26T07:30:47.358666"
+    "session_id": "2026-06-30T07:43:43.598505"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppIntentsTesting.json": {
       "hash": "774f8958b67cdeb38b2792bfc00ae9f3d3c1f24a599d2dcbd906e7cb0ceb76f3",
-      "last_checked": "2026-06-26T07:30:47.679377",
+      "last_checked": "2026-06-30T07:43:43.901753",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0e38d6e3205c53e956cc77bfda680c99\"",
       "file_path": "documentation/AppIntentsTesting/AppIntentsTesting.md"
     },
     "https://developer.apple.com/documentation/AppIntentsTesting": {
       "hash": "774f8958b67cdeb38b2792bfc00ae9f3d3c1f24a599d2dcbd906e7cb0ceb76f3",
-      "last_checked": "2026-06-26T07:30:47.509920",
+      "last_checked": "2026-06-30T07:43:43.787608",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0e38d6e3205c53e956cc77bfda680c99\"",
       "file_path": "documentation/AppIntentsTesting/AppIntentsTesting.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/testing-your-app-intents-code.json": {
       "hash": "486133e843e85e3472076fff93df6a71805b19c9e8aae2d01e7c7402d52b7d6c",
-      "last_checked": "2026-06-26T07:30:47.908501",
+      "last_checked": "2026-06-30T07:43:44.115799",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"c0eb5f6cb33c4d7b62a5e9678db355d5\"",
       "file_path": "documentation/AppIntentsTesting/testing-your-app-intents-code.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions.json": {
       "hash": "74672694ebde8d28b032457d3eecc55b3f7d3b48246b5a4efc55ab1984f82238",
-      "last_checked": "2026-06-26T07:30:48.001482",
+      "last_checked": "2026-06-30T07:43:44.429468",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"8c1e2575e0243688cd520daf8339312e\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult.json": {
       "hash": "31d629fd25f074f6acb822623bb7b7d225957584d63def287d8f1686529a2dc7",
-      "last_checked": "2026-06-26T07:30:48.057920",
+      "last_checked": "2026-06-30T07:43:44.601449",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"6f45d615f477ab15e6394485cbec9c27\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedvaluequeryresult.json": {
       "hash": "2182d2170cba378769d06d229d531808a9063e72023a5e0e047cc28a0dcfc00b",
-      "last_checked": "2026-06-26T07:30:48.186107",
+      "last_checked": "2026-06-30T07:43:44.765002",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"743933184f3444d35be28e84e0be82ff\"",
       "file_path": "documentation/AppIntentsTesting/resolvedvaluequeryresult.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/viewannotation.json": {
       "hash": "a08ad3cd163612b0d6d8b18c097770587969f8c155c4adf57c798cc0a73bd4af",
-      "last_checked": "2026-06-26T07:30:48.261057",
+      "last_checked": "2026-06-30T07:43:44.923049",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"969df2dd52011a87a320c893eba981f2\"",
       "file_path": "documentation/AppIntentsTesting/viewannotation.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent.json": {
       "hash": "a45e2a43aa5e05b506a4b480206a03388fdb46caebe2a2bca399571f656877f8",
-      "last_checked": "2026-06-26T07:30:48.346946",
+      "last_checked": "2026-06-30T07:43:45.086712",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"6b0296f6e384d6124e67adf3070f404b\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity.json": {
       "hash": "0aae4573bc3d3e05b52302e07aa70fc0f87b06fcfca7feb109f32a63a7ff4e7e",
-      "last_checked": "2026-06-26T07:30:48.426922",
+      "last_checked": "2026-06-30T07:43:45.228207",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"2d822cdb3c31347f75db508639e8dd38\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyentityquery.json": {
       "hash": "455b21e8c486e7100b348a393bb05fcf6eebe33042829b219c1344ec408525c7",
-      "last_checked": "2026-06-26T07:30:48.533875",
+      "last_checked": "2026-06-30T07:43:45.388753",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"535859ba1265d86a1057cc6d513fd002\"",
       "file_path": "documentation/AppIntentsTesting/anyentityquery.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum.json": {
       "hash": "9a15f869c2b7197530a28ad0179972333e48caebc5d26f543aecf2c66c4d3f67",
-      "last_checked": "2026-06-26T07:30:48.678829",
+      "last_checked": "2026-06-30T07:43:45.579998",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"58939fe0f28c27e2b01bab0c68b51daf\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity.json": {
       "hash": "66e0ac3a44614b557671c7ce8d4912b2534e9addfec4a017d7e323c5feb832ba",
-      "last_checked": "2026-06-26T07:30:48.749261",
+      "last_checked": "2026-06-30T07:43:45.743560",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"e24e148f4c9af840e1cc82fa4de95917\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintenttypedefinition.json": {
       "hash": "4a42149a902ad6b66a61967adbbb1ed381f2b201c03999c498d7eb67431be27f",
-      "last_checked": "2026-06-26T07:30:48.800911",
+      "last_checked": "2026-06-30T07:43:45.903135",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"6d4dac4f4cebcc83bc89233ce657ccf7\"",
       "file_path": "documentation/AppIntentsTesting/appintenttypedefinition.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath.json": {
       "hash": "6263af6f88d0d2393d567ada69ed6b16a91c6006135c74de7e04552343861709",
-      "last_checked": "2026-06-26T07:30:48.892610",
+      "last_checked": "2026-06-30T07:43:46.194745",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"1abe7bf6ed3a5a1ba60eba1328530f22\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection.json": {
       "hash": "ec3bb0d5e8bcaf72782b7b7c80aa864c20c1f4a5ee45a010e4c2fa84cdebb019",
-      "last_checked": "2026-06-26T07:30:48.966577",
+      "last_checked": "2026-06-30T07:43:46.346683",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"df73c1cdf4d44af8063b2a08c5290dd4\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluepropertiescallable.json": {
       "hash": "319864fc1c7060c6a8ddac0d7b0e1037b8fa0b3cf7c7531aafc04c73eac50240",
-      "last_checked": "2026-06-26T07:30:49.043107",
+      "last_checked": "2026-06-30T07:43:46.518107",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"26e56315a38a9cf07442c15f98153c46\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluepropertiescallable.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/init(bundleidentifier:).json": {
       "hash": "c34253428eb42fcccbc795aa2dec0e8108def8c060fb97add5b9fb958162cc73",
-      "last_checked": "2026-06-26T07:30:49.093744",
+      "last_checked": "2026-06-30T07:43:46.664913",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"f5f108e147720bc126944a6fca51a751\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/init-bundleidentifier.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/bundleidentifier.json": {
       "hash": "00c10f380f505cfc0aeb1bc46fae11f0a548af7db1704a7d678161ba3982b27b",
-      "last_checked": "2026-06-26T07:30:49.173610",
+      "last_checked": "2026-06-30T07:43:46.838544",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3fdbb224536ae6a33215a61029613bb9\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/bundleidentifier.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/intents.json": {
       "hash": "ede81674e202187c6699979e2c0036d9ab5ad9d2dff564cce4133c38703d765f",
-      "last_checked": "2026-06-26T07:30:49.237388",
+      "last_checked": "2026-06-30T07:43:46.995425",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"221d83932b1427da7619af55e961d0d2\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/intents.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintentdefinition.json": {
       "hash": "2293809a165277e7b03cf113965f37c1e5ff414f1509b50991d157b34c0c0ac3",
-      "last_checked": "2026-06-26T07:30:49.296822",
+      "last_checked": "2026-06-30T07:43:47.194231",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"dc0b49481690c4c9dcb02e806dbd69e8\"",
       "file_path": "documentation/AppIntentsTesting/appintentdefinition.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/entities.json": {
       "hash": "d6d64c74f1f4c99862619e2509875a6870264cdf066a0344a29280bd54e89d08",
-      "last_checked": "2026-06-26T07:30:49.384434",
+      "last_checked": "2026-06-30T07:43:47.306384",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"14b7a0d261a42b1f015f9ffe4c38ff0c\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/entities.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition.json": {
       "hash": "69d40e3cbc55f4958760a5fbfdc2c95ced762f0e88f4f0a9f1d8a75673bf93b2",
-      "last_checked": "2026-06-26T07:30:49.454627",
+      "last_checked": "2026-06-30T07:43:47.473539",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"5c9b5e2f168d05ec5eee0d08019ea36a\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/valuequeries.json": {
       "hash": "73c560b1fbca7d68580f675723eaf56aa13dbac16fd6e8cad4adb6ac3845f063",
-      "last_checked": "2026-06-26T07:30:49.559630",
+      "last_checked": "2026-06-30T07:43:47.597863",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"fc62d2d3670c12cab08c9c0eb4a7df3b\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/valuequeries.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluequerydefinition.json": {
       "hash": "06567c3dc4d3c167e840705fce62244de01d76908e1b844e644df35b7cb50b15",
-      "last_checked": "2026-06-26T07:30:49.663006",
+      "last_checked": "2026-06-30T07:43:47.712488",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"141e4817024d78cb8c6d6b3ec57a39db\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluequerydefinition.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/transiententities.json": {
       "hash": "2f214c6e201ce06963b367acbe8132b979e6e268a72cf1fd756cfb0f5b860d58",
-      "last_checked": "2026-06-26T07:30:49.763502",
+      "last_checked": "2026-06-30T07:43:47.945676",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"e595e3bfb7bc2ef9d0bb0c54aea37d05\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/transiententities.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition.json": {
       "hash": "c6be2b7fb4f22e71b202e443263a266e167c515b44449095aad176153f7dde5d",
-      "last_checked": "2026-06-26T07:30:49.841746",
+      "last_checked": "2026-06-30T07:43:48.146388",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"ea61686980f95ad832c408cb30f49341\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/enums.json": {
       "hash": "fe9b6d0379563f945350100ca8bd3fc9be0a7e997a4cff1b7db0f6657e48d091",
-      "last_checked": "2026-06-26T07:30:49.952467",
+      "last_checked": "2026-06-30T07:43:48.326896",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"4300329c143973b896950853c975e371\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/enums.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition.json": {
       "hash": "e1ceca898c426cb143579231a92f9b1b1960908107f5f82b2816b8e551be5a2b",
-      "last_checked": "2026-06-26T07:30:50.058367",
+      "last_checked": "2026-06-30T07:43:48.435017",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"54b9967b7682dbb248c4456be31d1b6c\"",
       "file_path": "documentation/AppIntentsTesting/appenumdefinition.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/definitioncollection.json": {
       "hash": "1e004db9802012256c56342265ded0e4dfb5af5b57a5f6f4c4f9fbfeb8df37ff",
-      "last_checked": "2026-06-26T07:30:50.109575",
+      "last_checked": "2026-06-30T07:43:48.631328",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3b6587b4eaf5bc2a9e2bf9e5b355f3ab\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/definitioncollection.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult/valuekeypath.json": {
       "hash": "61425ae3f1160149ad27c5f162088ad9c21196537e7fafaaebd51cffbef7e594",
-      "last_checked": "2026-06-26T07:30:50.182253",
+      "last_checked": "2026-06-30T07:43:48.916897",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"799fcaeddf9760e8ab66bbf9537e8afb\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult/valuekeypath.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult/subscript(dynamicmember:)-69dzb.json": {
       "hash": "6f93816895d2512101e510f0c2b61c029f188803352c11ed3fa53e7fcd3bc6bf",
-      "last_checked": "2026-06-26T07:30:50.271325",
+      "last_checked": "2026-06-30T07:43:49.083809",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"2db52196b9e69fc2018f18bc443f1222\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult/subscript-dynamicmember-69dzb.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult/subscript(dynamicmember:)-7og7e.json": {
       "hash": "67e0be67db2b9b43ba1a7b6966fad73bcedfe468e72afbfe8312e74d59c3f403",
-      "last_checked": "2026-06-26T07:30:50.322457",
+      "last_checked": "2026-06-30T07:43:49.225109",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"ab4801f4fbf7b8fb45ce62b17ccd7e91\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult/subscript-dynamicmember-7og7e.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult/subscript(dynamicmember:)-kbqk.json": {
       "hash": "15d9ddb6beed05f3bcb92dd8084b283ba85453c31d570b24b6fe85aec32d5fd9",
-      "last_checked": "2026-06-26T07:30:50.431293",
+      "last_checked": "2026-06-30T07:43:49.411362",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"a9efd52bad8d6e9b6d9889d22b3ff1e7\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult/subscript-dynamicmember-kbqk.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedvaluequeryresult/items.json": {
       "hash": "1cf669624c13b31906322dfbaede40c0f2eeb2d8ccfa568e24c128487b332d06",
-      "last_checked": "2026-06-26T07:30:50.483498",
+      "last_checked": "2026-06-30T07:43:49.511473",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"a763852de51e43039679f12b579bbd85\"",
       "file_path": "documentation/AppIntentsTesting/resolvedvaluequeryresult/items.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/viewannotation/entity.json": {
       "hash": "dbc9e23e7905fd6c376bc4cffd0cace0e8353331f6f0bae5e6258ed576272791",
-      "last_checked": "2026-06-26T07:30:50.558566",
+      "last_checked": "2026-06-30T07:43:49.673339",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"b3e7bff3828772a135ed7c46af9114dc\"",
       "file_path": "documentation/AppIntentsTesting/viewannotation/entity.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/viewannotation/isselected.json": {
       "hash": "431dee0eea17ea8b74148f280bbc9a910ee3473dd87feb05f50d65c38824c819",
-      "last_checked": "2026-06-26T07:30:50.608737",
+      "last_checked": "2026-06-30T07:43:49.840849",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"78ec68eb2d721383cf52c3547095e60a\"",
       "file_path": "documentation/AppIntentsTesting/viewannotation/isselected.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/bundleidentifier.json": {
       "hash": "2b7b13f3d7fbf543e20803f9cfd1b0283d00dd6e332ddab2661436a3c6f55f29",
-      "last_checked": "2026-06-26T07:30:50.689027",
+      "last_checked": "2026-06-30T07:43:50.019643",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"782d5356d87965e824e2e6531ee5770d\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/bundleidentifier.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/identifier.json": {
       "hash": "c13bab07bdb06a7929c3429118fd371e33548e5aed1cf0739eadd4028f8a2a15",
-      "last_checked": "2026-06-26T07:30:50.738147",
+      "last_checked": "2026-06-30T07:43:50.195457",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"2b462ad29ea00d426b6463d200ab2045\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/identifier.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/run().json": {
       "hash": "ec5dee188fe5824df5e22af17f3bafba6117c42a515b842ac6a32bd94d359b51",
-      "last_checked": "2026-06-26T07:30:50.793629",
+      "last_checked": "2026-06-30T07:43:50.373456",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"122b72a959f0fa165f0ae414b95a644a\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/run.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/subscript(dynamicmember:)-127ab.json": {
       "hash": "0c8a2b5e289f7e0eee7a7820a23f7b90cfc55b4a4d4db6b8ef339e4d3de69a19",
-      "last_checked": "2026-06-26T07:30:50.892419",
+      "last_checked": "2026-06-30T07:43:50.551989",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3e27f5aaf3b49f6c5f1b0c32f809d88f\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/subscript-dynamicmember-127ab.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/subscript(dynamicmember:)-7agfn.json": {
       "hash": "3c89b66c7f03af229310c0f933ce7e6bbd31fe63b163ab1aab4f421ad55c1367",
-      "last_checked": "2026-06-26T07:30:50.945530",
+      "last_checked": "2026-06-30T07:43:50.717097",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"19042ffecddfb13487f7138cfe742224\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/subscript-dynamicmember-7agfn.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/subscript(dynamicmember:)-8l8h0.json": {
       "hash": "e0b35aa3e953c09df4decd1a35a267681a04e1871ca265cbcff55645b0eefd33",
-      "last_checked": "2026-06-26T07:30:51.032270",
+      "last_checked": "2026-06-30T07:43:50.878334",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"b64bb23cae50641134d058ec9d476e04\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/subscript-dynamicmember-8l8h0.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/customstringconvertible-implementations.json": {
       "hash": "09c71ae1344fe29ba2432c8e01a23c91016f062d9d57f32667d95dc2c81e0579",
-      "last_checked": "2026-06-26T07:30:51.107373",
+      "last_checked": "2026-06-30T07:43:51.039047",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"edf63654f5cfd2b17a29eb9e89ceba68\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/customstringconvertible-implementations.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/identifier.json": {
       "hash": "643dd43e1168bec234098f11287f7534fcd4d24303ebd6481c46aab2209cbbe5",
-      "last_checked": "2026-06-26T07:30:51.155135",
+      "last_checked": "2026-06-30T07:43:51.222474",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"ebd3f351cdf5ac7e383cfb25b3fabb30\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/identifier.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/exported(as:)-54w7m.json": {
       "hash": "27d9063546ffcd32d05cfab838118b3a930b4bb5a39699507b06c0d3b47daa61",
-      "last_checked": "2026-06-26T07:30:51.224976",
+      "last_checked": "2026-06-30T07:43:51.402943",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"c29aeea04a74d573a2ea0535cc4a7d63\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/exported-as-54w7m.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/exported(as:)-7pg2q.json": {
       "hash": "5edd281698111a59413d7a4c49b82402ce0017fd0604bf8223bc26d2fc0d21b8",
-      "last_checked": "2026-06-26T07:30:51.271866",
+      "last_checked": "2026-06-30T07:43:51.553972",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"64ff2c7f92bac5919e23cf0ebfb33ab9\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/exported-as-7pg2q.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/exported(as:)-8qa8k.json": {
       "hash": "75e138e57f4c1bf35d7fef0b3905b9d08d1eb13a437415a80a56f4b4083e56c1",
-      "last_checked": "2026-06-26T07:30:51.330159",
+      "last_checked": "2026-06-30T07:43:51.792646",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"cae93bd94a984e1d786db6ccf62d5cbd\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/exported-as-8qa8k.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/subscript(dynamicmember:)-4bdp1.json": {
       "hash": "c4d4ceb2c0c184c2caa6e822880eb9ff5fc3911fa0cf317d7dd3976b8c92fe4a",
-      "last_checked": "2026-06-26T07:30:51.399876",
+      "last_checked": "2026-06-30T07:43:51.940122",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"a5a19515800ebad3e6f65db468b5bd4e\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/subscript-dynamicmember-4bdp1.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/subscript(dynamicmember:)-5twll.json": {
       "hash": "2f9ad4ec33fc28428545742d93254c6e07710630d6ec0b86b26f72cba8348173",
-      "last_checked": "2026-06-26T07:30:51.466838",
+      "last_checked": "2026-06-30T07:43:52.055894",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"a45609893de8e42deec8825d75b7f452\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/subscript-dynamicmember-5twll.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappentity/subscript(dynamicmember:)-yuv.json": {
       "hash": "5bc1bc99f1397c5ec4b25c35f9636c2cd02ce65c592a415dfead59a6bae32d66",
-      "last_checked": "2026-06-26T07:30:51.540106",
+      "last_checked": "2026-06-30T07:43:52.215643",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"02702619ebc1b0663124fa4d14218c9b\"",
       "file_path": "documentation/AppIntentsTesting/anyappentity/subscript-dynamicmember-yuv.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/init(typeidentifier:rawvalue:).json": {
       "hash": "7b01097d60e9be17760afd0c97756f8c568daf00d78dec81656c2b9fb1bfe1ba",
-      "last_checked": "2026-06-26T07:30:51.614674",
+      "last_checked": "2026-06-30T07:43:52.351396",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"30bd67032abbbdfa59cfa22adb1d4c93\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/init-typeidentifierrawvalue.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/init(typeidentifier:value:).json": {
       "hash": "f35c97d91ffbb7a21b00d8cc9a727ee814d6043ee68ac089066a75d3c7546c7b",
-      "last_checked": "2026-06-26T07:30:51.668909",
+      "last_checked": "2026-06-30T07:43:52.449702",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"61a4732bf17a6e90abc49f3c61d81664\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/init-typeidentifiervalue.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/typeidentifier.json": {
       "hash": "891308d773c654629c08abfe41fad9e97624622742e9579f30bd1baddd0eb1ea",
-      "last_checked": "2026-06-26T07:30:51.745776",
+      "last_checked": "2026-06-30T07:43:52.642880",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0595da1ce88c589f0ede42e9b1876c7c\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/typeidentifier.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/rawvalue.json": {
       "hash": "109ae2e39793278a380d919171bcc80220d7a900096c20e3d4df6dba6948f9c5",
-      "last_checked": "2026-06-26T07:30:51.793643",
+      "last_checked": "2026-06-30T07:43:52.804400",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"8b5168f59756fbdb1019814b707ff4b4\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/rawvalue.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/as(_:).json": {
       "hash": "a6c42d13a2f210249e815e8c653e8c0e1d5fd3669f2931e61ef6878f19f1f778",
-      "last_checked": "2026-06-26T07:30:51.855956",
+      "last_checked": "2026-06-30T07:43:52.962710",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"f682e9ecbd386d9dfdd3c63eb2308a87\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/as.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/customstringconvertible-implementations.json": {
       "hash": "0ad8104e22c44dedc4650eb9dd2a727d8f5145123e8b4045fb8b3b6494be7fed",
-      "last_checked": "2026-06-26T07:30:51.903574",
+      "last_checked": "2026-06-30T07:43:53.125899",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d5eff2ae5a1590d5859beff53d4f4d14\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/customstringconvertible-implementations.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/entitytype.json": {
       "hash": "4f93f907f867b90c754ca6e2d16725a633ceef31b6661d74a3e12b7ea7ba0c89",
-      "last_checked": "2026-06-26T07:30:51.994824",
+      "last_checked": "2026-06-30T07:43:53.418523",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d0c33e8f49890f634689dc71a862604e\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/entitytype.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/exported(as:)-2rmw6.json": {
       "hash": "5435673908db9f6371700d7ab55ae4a30b111804612c0c19f75736ec222d83e4",
-      "last_checked": "2026-06-26T07:30:52.046028",
+      "last_checked": "2026-06-30T07:43:53.577227",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"1c9ca341361ad578acd0989b0baa9417\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/exported-as-2rmw6.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/exported(as:)-7mrbg.json": {
       "hash": "72fabdce720c7fbfcb728ac4d87b656b6096e4ffa40ff680135239098044ebac",
-      "last_checked": "2026-06-26T07:30:52.174116",
+      "last_checked": "2026-06-30T07:43:53.740811",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"9a89da6384161a749d217ee9a0b04390\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/exported-as-7mrbg.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/exported(as:)-8zhnu.json": {
       "hash": "0dad2b0153fc7c389402f1d836e70191d46d1d090bf8001ec89c818f890d878e",
-      "last_checked": "2026-06-26T07:30:52.226608",
+      "last_checked": "2026-06-30T07:43:53.911742",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0618da7d80b0016e9c97fc10e23fe0ed\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/exported-as-8zhnu.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/subscript(dynamicmember:)-5ygut.json": {
       "hash": "b7856255a297750f3acc989a2a2b5fe3de11c47eb2232053493e90c54c5dd4dc",
-      "last_checked": "2026-06-26T07:30:52.295536",
+      "last_checked": "2026-06-30T07:43:54.065917",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"918908eb606f7706069c33e841f44a46\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/subscript-dynamicmember-5ygut.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/subscript(dynamicmember:)-63vyv.json": {
       "hash": "084079b5662c90e105214f7b91f95c320f510831f5c64dbe5764126667905c72",
-      "last_checked": "2026-06-26T07:30:52.363951",
+      "last_checked": "2026-06-30T07:43:54.232376",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"43ca7390ace107d46753031bacd8e7e5\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/subscript-dynamicmember-63vyv.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anytransientappentity/subscript(dynamicmember:)-8pfwv.json": {
       "hash": "2d67077c6fe5cdaa1c3fe8bf7d127bd3a508ec13d5035209c072f5a77169f473",
-      "last_checked": "2026-06-26T07:30:52.448637",
+      "last_checked": "2026-06-30T07:43:54.400177",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"819e0f072f09bc1f3cf31b7d3980df61\"",
       "file_path": "documentation/AppIntentsTesting/anytransientappentity/subscript-dynamicmember-8pfwv.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintenttypedefinition/instance.json": {
       "hash": "fd076f6fa5db967ccccd595e20cd8458f9a6aa46709fae61cdc2b334112c9723",
-      "last_checked": "2026-06-26T07:30:52.508786",
+      "last_checked": "2026-06-30T07:43:54.560120",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"7f9963612c1f89a5526e2761d938317c\"",
       "file_path": "documentation/AppIntentsTesting/appintenttypedefinition/instance.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintenttypedefinition/isinstance(_:).json": {
       "hash": "452dfecbf062156b0006ff05460793194c516ddfb4e7381b0cbabbfdc4a1f096",
-      "last_checked": "2026-06-26T07:30:52.576518",
+      "last_checked": "2026-06-30T07:43:54.719080",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"008f6115582cb3f6875d9360169fc97b\"",
       "file_path": "documentation/AppIntentsTesting/appintenttypedefinition/isinstance.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/as(_:)-5po1a.json": {
       "hash": "f234ff6a1acb14fa137fc1747185e86b179eea864b6c02eaf655372270091cd8",
-      "last_checked": "2026-06-26T07:30:52.660268",
+      "last_checked": "2026-06-30T07:43:54.870257",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3eb6e40d55d5edb486cee0e37c1c5fbc\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/as-5po1a.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/as(_:)-6n9rh.json": {
       "hash": "fead0235b85c723fc71341a76171f8a710bdb840cab2a539c453329d21b460e0",
-      "last_checked": "2026-06-26T07:30:52.707852",
+      "last_checked": "2026-06-30T07:43:55.156100",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"fbd5966346e097964c96e10dd0de16ad\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/as-6n9rh.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(_:)-1hj9z.json": {
       "hash": "e747fb16ed668cfbae464bbbe44019d425b267b14ee7979d6fd18ccd5289e7c8",
-      "last_checked": "2026-06-26T07:30:52.757089",
+      "last_checked": "2026-06-30T07:43:55.262524",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"f2ca82df8ed4410185392e3e15a53929\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-1hj9z.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(_:)-4bof1.json": {
       "hash": "de8e53826e4ec45b1ca45e20ebc7844a6eba8e08725bdb2f6ec5ef6852d424bc",
-      "last_checked": "2026-06-26T07:30:52.832736",
+      "last_checked": "2026-06-30T07:43:55.401018",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"4622f2360f44cfa16a9e354e931a3713\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-4bof1.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(_:)-kiay.json": {
       "hash": "757fc9ffc77086a052c7cd7f865a81802da58a66976ea85d16dd5262d8dd3028",
-      "last_checked": "2026-06-26T07:30:52.884592",
+      "last_checked": "2026-06-30T07:43:55.583755",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"e9ab504ba37a1327533c30fc739a1863\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-kiay.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(dynamicmember:)-aj9z.json": {
       "hash": "f518a23dcdae2b2bcf73fa584327afe8ee19c3d683526094c8fb4f82397f7203",
-      "last_checked": "2026-06-26T07:30:52.943101",
+      "last_checked": "2026-06-30T07:43:55.750656",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"1e971dac02f01338fb3990de2777f46a\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-dynamicmember-aj9z.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(dynamicmember:)-hqdv.json": {
       "hash": "46f91f677c93c9d4fd1119a89b788f5759e556a592a4e7a9fd4e392ed95a2824",
-      "last_checked": "2026-06-26T07:30:53.027405",
+      "last_checked": "2026-06-30T07:43:56.047991",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0f71ecb9729ce20868b361759bf4de13\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-dynamicmember-hqdv.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypath/subscript(dynamicmember:)-lizi.json": {
       "hash": "0971404546decb617f1576edd23ddd34493c5aed5ed91c9e8f622c02d3993b87",
-      "last_checked": "2026-06-26T07:30:53.079668",
+      "last_checked": "2026-06-30T07:43:56.250406",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"2896c97a00b11610ad2e0b485a04bae8\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypath/subscript-dynamicmember-lizi.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection/count.json": {
       "hash": "771d5c43b16f8e704a62ef4b93d3dae5a035fa854f3e61d12980e4237041ca09",
-      "last_checked": "2026-06-26T07:30:53.127120",
+      "last_checked": "2026-06-30T07:43:56.409958",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"119db1a0d45bb969bb70bc3cc3dce843\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection/count.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection/isempty.json": {
       "hash": "0a5900db618b342ec90f1235c0aff3c3ec8c38d3d141f068e2812938edcc1740",
-      "last_checked": "2026-06-26T07:30:53.197905",
+      "last_checked": "2026-06-30T07:43:56.510653",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"788806a23ec234e7912a2d8a5604b643\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection/isempty.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection/subscript(_:)-6t8mq.json": {
       "hash": "199d90a2d1c78279a3c7b795a199a475e9c207b0b36ce143ae727b7f724551ff",
-      "last_checked": "2026-06-26T07:30:53.254552",
+      "last_checked": "2026-06-30T07:43:56.729923",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"29c017ddb1973907a6bc836b5d4c5b16\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection/subscript-6t8mq.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection/subscript(_:)-700kp.json": {
       "hash": "ae5113df1bada5213dba136ce07c01c4d0cc55aab16cd88b24a1aaac7d8a6d52",
-      "last_checked": "2026-06-26T07:30:53.317131",
+      "last_checked": "2026-06-30T07:43:56.871948",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"510005d5080d08cecd68ee46bb93f78e\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection/subscript-700kp.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/dynamicpropertypathcollection/subscript(_:)-8h9mv.json": {
       "hash": "a841f4fe51142b8583a879978ab85d2ec09182ceb6cd90b8ef1e78e2b2713dd4",
-      "last_checked": "2026-06-26T07:30:53.387067",
+      "last_checked": "2026-06-30T07:43:57.038329",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"521af5acef34b5da24427b9264f2d128\"",
       "file_path": "documentation/AppIntentsTesting/dynamicpropertypathcollection/subscript-8h9mv.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluepropertiescallable/dynamicallycall(withkeywordarguments:).json": {
       "hash": "12d46a874fb9c1a0f0e471540b40801cb989bf7c45e1fd28d941540c5fe7a658",
-      "last_checked": "2026-06-26T07:30:53.461857",
+      "last_checked": "2026-06-30T07:43:57.155964",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"85d2788a7d19eaf45eec679d3279ab77\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluepropertiescallable/dynamicallycall-withkeywordarguments.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintentdefinition/makeintent.json": {
       "hash": "2cdedf175dc7979ae9d0b6a5f8c5d392c0b4db982eba382d628052ac330f7a03",
-      "last_checked": "2026-06-26T07:30:53.527468",
+      "last_checked": "2026-06-30T07:43:57.277483",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"a7be4e4016f6563a1aca58cd7113e008\"",
       "file_path": "documentation/AppIntentsTesting/appintentdefinition/makeintent.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintentdefinition/identifier.json": {
       "hash": "b7610e895524e41a06c0d06cc344ba0a15d95d898e39de90f058981fa714cf0c",
-      "last_checked": "2026-06-26T07:30:53.598318",
+      "last_checked": "2026-06-30T07:43:57.394802",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"f0e7a79b437547404b780b5c05c39562\"",
       "file_path": "documentation/AppIntentsTesting/appintentdefinition/identifier.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintentdefinition/bundleidentifier.json": {
       "hash": "d2dfdf353e610549514eee35d9e844c58c23a9502b807698a2c3c020ff567e2f",
-      "last_checked": "2026-06-26T07:30:53.653249",
+      "last_checked": "2026-06-30T07:43:57.584421",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"7d19a7834e5459711a915bafafa07a4d\"",
       "file_path": "documentation/AppIntentsTesting/appintentdefinition/bundleidentifier.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appintentdefinition/withparameters.json": {
       "hash": "e94fcc04a173c881d8d1169dac631aa71f054806c2a883feba3bcc242eabfa25",
-      "last_checked": "2026-06-26T07:30:53.822730",
+      "last_checked": "2026-06-30T07:43:57.702201",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d21387c4c3c72667d6705a923ce75a46\"",
       "file_path": "documentation/AppIntentsTesting/appintentdefinition/withparameters.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/makereference(identifier:).json": {
       "hash": "b884536a5cf766d7c3045cbc2e0eed7a2f2cb23448548f3118711d09c0a02282",
-      "last_checked": "2026-06-26T07:30:53.897276",
+      "last_checked": "2026-06-30T07:43:57.867871",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"e5a7944ca969d6a6b324fe0bf9e0f6e5\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/makereference-identifier.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/allentities().json": {
       "hash": "52af2bf14ad8902c161f551ea94d185c62cdb9d9b3b05ffd3d2b9ccd955738ed",
-      "last_checked": "2026-06-26T07:30:53.952761",
+      "last_checked": "2026-06-30T07:43:58.053673",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"daa7b794a57d6807573de2f66c72f386\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/allentities.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/allentitiesquery().json": {
       "hash": "078a252e064be0f5bf67739db99abe83d382a5de47628dc6a3f8366e52ea0743",
-      "last_checked": "2026-06-26T07:30:54.013077",
+      "last_checked": "2026-06-30T07:43:58.148973",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3aa8ea3038f3e7b8a6cc0e1ee72e5274\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/allentitiesquery.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/entities(identifiers:).json": {
       "hash": "c4cdc7599c3f6cc68694956d609c3f1ab36e5773a7be12be7d6d92a5a5eb34e0",
-      "last_checked": "2026-06-26T07:30:54.071098",
+      "last_checked": "2026-06-30T07:43:58.288947",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"aebad02547afdfbdb0e7723daed741b0\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/entities-identifiers.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/entityquery(identifiers:).json": {
       "hash": "bdfd698797aa292ab1a5c4ecb7955781b0667e4e8e01418dd197331426882cf3",
-      "last_checked": "2026-06-26T07:30:54.121484",
+      "last_checked": "2026-06-30T07:43:58.431630",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"166b6ef983382085b96b535256f05235\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/entityquery-identifiers.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/entities(matching:).json": {
       "hash": "63855f141e86fda9c8b2e64a62845fa3d0814e051aed004b5105000535d386ba",
-      "last_checked": "2026-06-26T07:30:54.201123",
+      "last_checked": "2026-06-30T07:43:58.554431",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"63248b940763081bfe8ecc18f3c39d76\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/entities-matching.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/entityquery(matching:).json": {
       "hash": "12116188eb232e5ced199ed4c647ff3386104e103b2e9f5a932be23ddca5cb93",
-      "last_checked": "2026-06-26T07:30:54.252774",
+      "last_checked": "2026-06-30T07:43:58.675557",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"9562579373ee1f3a63acf00da297c853\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/entityquery-matching.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/spotlightquery(_:).json": {
       "hash": "196c34232b9684c5f0bf147c98d8bb2b01ac03c4aef77c5696b5c013f147d22d",
-      "last_checked": "2026-06-26T07:30:54.324267",
+      "last_checked": "2026-06-30T07:43:58.925496",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d1faa9a1cd601cc485a361d8d1ca9674\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/spotlightquery.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/suggestedentities().json": {
       "hash": "02c4147f6c318ac637aacb46ccf838c29371c199f2f2e634c2b311d279c205c5",
-      "last_checked": "2026-06-26T07:30:54.392061",
+      "last_checked": "2026-06-30T07:43:59.034858",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3a424f425116e0ac0a72afdb7ee3c21b\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/suggestedentities.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/suggestedentitiesquery().json": {
       "hash": "87e72eacbe3c8d25c5330ba7e12546e553819eaec75ce271dac6b76d1f64ffd3",
-      "last_checked": "2026-06-26T07:30:54.437493",
+      "last_checked": "2026-06-30T07:43:59.146459",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"16ca6bbf2f1c3da791a64804766154e2\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/suggestedentitiesquery.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/viewannotations().json": {
       "hash": "7a9a97dcd393b59ccaf3b8770b5a2107c01b9e44101b8a366f260b6141aeb5b8",
-      "last_checked": "2026-06-26T07:30:54.505288",
+      "last_checked": "2026-06-30T07:43:59.271558",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"001db67c21758e6076dd7b0b164b76cc\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/viewannotations.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/typeidentifier.json": {
       "hash": "25c77c8b2731db825140226ee0bf6440710e3f81547d8e350745e14a03816d77",
-      "last_checked": "2026-06-26T07:30:54.573813",
+      "last_checked": "2026-06-30T07:43:59.407018",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"0b300310602130a55b81b7491b4fb178\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/typeidentifier.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/bundleidentifier.json": {
       "hash": "7005824d3fac22ad835f228ab1335fa597a63032bb717eaa81b55f1d2982802d",
-      "last_checked": "2026-06-26T07:30:54.684631",
+      "last_checked": "2026-06-30T07:43:59.526140",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"96dbd5f8a5d7ba34bcbab6d7aada42c2\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/bundleidentifier.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/resolved(from:)-2fld0.json": {
       "hash": "61ac20808fae44a472be4bcd0bc30b4f00a5967fd90483f9d4a3d3730337b166",
-      "last_checked": "2026-06-26T07:30:54.742984",
+      "last_checked": "2026-06-30T07:43:59.700523",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3f55ecc6b816cedf59a8bdebe2032a79\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/resolved-from-2fld0.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/resolved(from:)-4yp5n.json": {
       "hash": "d52834f363b29c3a50709156b19f6e84bb17d4943ace1a3ca54abe29a66b328b",
-      "last_checked": "2026-06-26T07:30:54.788480",
+      "last_checked": "2026-06-30T07:43:59.867174",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"ef890082ca1be47ca4b2d685d92b2ff2\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/resolved-from-4yp5n.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/resolved(from:)-7c04a.json": {
       "hash": "6b72a7369981e2c90e67d211aa14c6b4533d1957c9464b16b16b8e815ab1e67e",
-      "last_checked": "2026-06-26T07:30:54.850273",
+      "last_checked": "2026-06-30T07:44:00.034582",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"85217ded66cd0c7d22c088e1695822c8\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/resolved-from-7c04a.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/appintenttypedefinition-implementations.json": {
       "hash": "1b5d5da8d558d6761fd6a5f7531d5999ef1fdd63a5b570baf5906eaac6b32de3",
-      "last_checked": "2026-06-26T07:30:54.933949",
+      "last_checked": "2026-06-30T07:44:00.198303",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"4da9f058535205e6180a31c4fc2d5822\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/appintenttypedefinition-implementations.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluequerydefinition/values(for:).json": {
       "hash": "625d39401d86c57c9af147718f1f5ef3d5522398995b6ad0c076869f7eb3c130",
-      "last_checked": "2026-06-26T07:30:55.055807",
+      "last_checked": "2026-06-30T07:44:00.300000",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"7b4bd3a42f44bf0bdbed8327ce20dc78\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluequerydefinition/values-for.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluequerydefinition/bundleidentifier.json": {
       "hash": "d47f3114ce18c2ec1310fadd0c9e01032d24b350ba0f126347a3e18fdafa2a33",
-      "last_checked": "2026-06-26T07:30:55.102197",
+      "last_checked": "2026-06-30T07:44:00.425693",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"87ae1597d6357b1ead896cdf6142464d\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluequerydefinition/bundleidentifier.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentvaluequerydefinition/queryidentifier.json": {
       "hash": "3d4853932fb275738b60f175693570e755e48ff997d673928037377d5a6abab5",
-      "last_checked": "2026-06-26T07:30:55.186424",
+      "last_checked": "2026-06-30T07:44:00.555969",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"b293ee6e3d6a2ec41d12005ac37629d4\"",
       "file_path": "documentation/AppIntentsTesting/intentvaluequerydefinition/queryidentifier.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/makeentity.json": {
       "hash": "c31cb8f71e31ebf3b783ac340916607db1fec8f1f8c5be0438713e2076d9a0e7",
-      "last_checked": "2026-06-26T07:30:55.237304",
+      "last_checked": "2026-06-30T07:44:00.676770",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"b7bf7f40bbe381cd4dce89b96222ea97\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/makeentity.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/bundleidentifier.json": {
       "hash": "cedb5da13e5485f46dc852dafeb6ad2b2fae0eb60955a0c440ab969172104f28",
-      "last_checked": "2026-06-26T07:30:55.305948",
+      "last_checked": "2026-06-30T07:44:00.858849",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"55559ad393922eb9a71213de0be9d19f\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/bundleidentifier.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/typeidentifier.json": {
       "hash": "27a6e3da61c2fd8cf4fe2e290d0b740cfb9feb563f460acc91da92ff1fccf5e8",
-      "last_checked": "2026-06-26T07:30:55.359736",
+      "last_checked": "2026-06-30T07:44:01.017955",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d46a1af922d2b1e0db10af492189ec8f\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/typeidentifier.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/resolved(from:)-1lap2.json": {
       "hash": "f55bbb0394b5f9a97e80cbcf9c91c26b4b57b416f74beb134ab9c64720fd397d",
-      "last_checked": "2026-06-26T07:30:55.415905",
+      "last_checked": "2026-06-30T07:44:01.122306",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"d09ef9beaac00b7c5b42759cac0c35e4\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/resolved-from-1lap2.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/resolved(from:)-3jjpx.json": {
       "hash": "cc56856a48ccb51e23ebb27cf0f71dbdbada860a722fa9c3e6c17d0e2ddb3f2c",
-      "last_checked": "2026-06-26T07:30:55.474541",
+      "last_checked": "2026-06-30T07:44:01.239317",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"7fd9a1efe26838885ba73b3dc5abcca7\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/resolved-from-3jjpx.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/resolved(from:)-6xsjl.json": {
       "hash": "bd8d1a3ff64b099e967b1ec0144e275f541d2406b37f568c4b8d5ac81140c312",
-      "last_checked": "2026-06-26T07:30:55.533584",
+      "last_checked": "2026-06-30T07:44:01.386427",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"26e6fb15475442a37a31d2de9cbbfa53\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/resolved-from-6xsjl.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/appintenttypedefinition-implementations.json": {
       "hash": "cf04df4b76ab9965f1ef29d19867ef31c9bec4b34006d638d403a6b708cb4a35",
-      "last_checked": "2026-06-26T07:30:55.598311",
+      "last_checked": "2026-06-30T07:44:01.512916",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"4c2f4e9ec5ac1dbd5a6e9456a48c3620\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/appintenttypedefinition-implementations.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition/makecase(_:).json": {
       "hash": "0c05c5de737c6030cf1cf927178882dcf40d67bc7515591ffbd0c50dab0b7972",
-      "last_checked": "2026-06-26T07:30:55.724576",
+      "last_checked": "2026-06-30T07:44:01.647207",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"7d9a109361d5311f0ca3d3aa35cab8a3\"",
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/makecase.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition/typeidentifier.json": {
       "hash": "38a8e19591ef86ce7d6f130e4b3dd6aeaa2eff9d15848d4c4473ad6fe6e37312",
-      "last_checked": "2026-06-26T07:30:55.839857",
+      "last_checked": "2026-06-30T07:44:01.774106",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"36a730047dac57a0f71d9251bfa57e1c\"",
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/typeidentifier.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition/appintenttypedefinition-implementations.json": {
       "hash": "5e335b8f8a6ad28ca83c248441f4cc964dd79bde477fb9f24b5d824f699c60ad",
-      "last_checked": "2026-06-26T07:30:55.907264",
+      "last_checked": "2026-06-30T07:44:01.914708",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"3dcedf27f74d76d52b8ba6fe1f0b274a\"",
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/appintenttypedefinition-implementations.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/intentdefinitions/definitioncollection/subscript(_:).json": {
       "hash": "96ff73b06472b96c9502867f5965ad4177835282d7f901274707544ff4533715",
-      "last_checked": "2026-06-26T07:30:56.017106",
+      "last_checked": "2026-06-30T07:44:02.061853",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"40dd98baf570f3595bed8abe5d8c5148\"",
       "file_path": "documentation/AppIntentsTesting/intentdefinitions/definitioncollection/subscript.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/resolvedintentresult/valuekeypath/value.json": {
       "hash": "8a5c4ef55877090fbd226039b6e1d582e0c50f80af8bc36626d9147186dedef7",
-      "last_checked": "2026-06-26T07:30:56.063567",
+      "last_checked": "2026-06-30T07:44:02.226803",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"1ca64421a1ec3cec87c2993ce6c3270c\"",
       "file_path": "documentation/AppIntentsTesting/resolvedintentresult/valuekeypath/value.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappintent/description.json": {
       "hash": "4ac544df3e6d97ea69236ebcb4f4ec75b27e40156b8d6b4804a70ca68c6b22c5",
-      "last_checked": "2026-06-26T07:30:56.130672",
+      "last_checked": "2026-06-30T07:44:02.355626",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"537330e91bbce028cda3c72d8077f4ea\"",
       "file_path": "documentation/AppIntentsTesting/anyappintent/description.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/anyappenum/description.json": {
       "hash": "dfc71b5f07c2a945dd751afbf48acfd48d871f2973920b16e4ce5ffa0ca7e4c4",
-      "last_checked": "2026-06-26T07:30:56.175572",
+      "last_checked": "2026-06-30T07:44:02.531725",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"097a8afc0e3dee768c86f50835f354d1\"",
       "file_path": "documentation/AppIntentsTesting/anyappenum/description.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appentitydefinition/isinstance(_:).json": {
       "hash": "7e6ce646713f52b8d6889c9ff0d751c302993459b9bc5ac9be4a74518e086169",
-      "last_checked": "2026-06-26T07:30:56.262301",
+      "last_checked": "2026-06-30T07:44:02.694874",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"faac607641cea22a798aa0df15d79c5e\"",
       "file_path": "documentation/AppIntentsTesting/appentitydefinition/isinstance.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/transientappentitydefinition/isinstance(_:).json": {
       "hash": "d9eec1f361f26c63f91f4f832ff7402792bc674dcd84bcb1941fa5e2b2edbd36",
-      "last_checked": "2026-06-26T07:30:56.317032",
+      "last_checked": "2026-06-30T07:44:02.866032",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"b9b30710ebebf53f0cf32b3efdb04222\"",
       "file_path": "documentation/AppIntentsTesting/transientappentitydefinition/isinstance.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/appintentstesting/appenumdefinition/isinstance(_:).json": {
       "hash": "72ede54f69aac25f914552927cd370778aeb51e6e4dfa447f78ad3747b7c607d",
-      "last_checked": "2026-06-26T07:30:56.424873",
+      "last_checked": "2026-06-30T07:44:02.976521",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:47.358666",
+      "session_id": "2026-06-30T07:43:43.598505",
       "etag": "W/\"9ff28ba5496d4ec10aa04f77453a6b61\"",
       "file_path": "documentation/AppIntentsTesting/appenumdefinition/isinstance.md"
     },

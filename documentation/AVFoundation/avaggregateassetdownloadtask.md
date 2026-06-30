@@ -45,9 +45,9 @@ class AVAggregateAssetDownloadTask
 - [Using AVFoundation to play and persist HTTP live streams](using-avfoundation-to-play-and-persist-http-live-streams.md)
   Play HTTP Live Streams and persist streams on disk for offline playback using AVFoundation.
 - [class AVAssetDownloadURLSession](avassetdownloadurlsession.md)
-  A URL session that creates and executes asset download tasks.
+  A URL session that creates and manages asset download tasks.
 - [class AVAssetDownloadTask](avassetdownloadtask.md)
-  A session used to download HTTP Live Streaming assets.
+  A URL session task that downloads a remote asset to the device for offline playback.
 
 
 ---

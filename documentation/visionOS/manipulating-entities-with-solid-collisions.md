@@ -97,6 +97,8 @@ entity.components.set(ForceEffectComponent(effects: [
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
+- [Designing no-code games with Reality Composer Pro 3](designing-no-code-games-in-reality-composer-pro-3.md)
+  Build a video game in Reality Composer Pro without code using Script Graphs.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -121,8 +123,6 @@ entity.components.set(ForceEffectComponent(effects: [
   Create engaging interactions by training models to recognize and track real-world objects in people’s surroundings.
 - [Placing entities using head and device transform](placing-entities-using-head-and-device-transform.md)
   Query and react to changes in the position and rotation of Apple Vision Pro.
-- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
-  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 
 ---

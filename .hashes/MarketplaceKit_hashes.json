@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:30:25.305506",
+    "last_updated": "2026-06-30T07:42:58.878387",
     "total_pages": 433,
-    "session_id": "2026-06-26T07:30:07.057096"
+    "session_id": "2026-06-30T07:42:33.723979"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MarketplaceKit.json": {
       "hash": "88a0447b125da4234cb099cfa92be9955cecc6e0675083f5384845945bde16ea",
-      "last_checked": "2026-06-26T07:30:07.316220",
+      "last_checked": "2026-06-30T07:42:33.944917",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d9f00fee73f2a7de6ab3729213656eab\"",
       "file_path": "documentation/MarketplaceKit/MarketplaceKit.md"
     },
     "https://developer.apple.com/documentation/MarketplaceKit": {
       "hash": "88a0447b125da4234cb099cfa92be9955cecc6e0675083f5384845945bde16ea",
-      "last_checked": "2026-06-26T07:30:07.235106",
+      "last_checked": "2026-06-30T07:42:33.855699",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d9f00fee73f2a7de6ab3729213656eab\"",
       "file_path": "documentation/MarketplaceKit/MarketplaceKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/creating-an-alternative-app-marketplace.json": {
       "hash": "c5aae8e097117d7bbf526b2569830e98087d50f9b7ce0cb97ccefa9480b8fb7e",
-      "last_checked": "2026-06-26T07:30:07.566525",
+      "last_checked": "2026-06-30T07:42:34.171861",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"3b8eb4f03ac5d27f7be4f80a64405ede\"",
       "file_path": "documentation/MarketplaceKit/creating-an-alternative-app-marketplace.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-from-your-website.json": {
       "hash": "1a1e6ef9af1f99c68fa3481f6b0cf21b30ebcf1b873c9f584d2b923c334ab4da",
-      "last_checked": "2026-06-26T07:30:07.795469",
+      "last_checked": "2026-06-30T07:42:34.250717",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a1b3a8a5633b937fca320da1c3c7e1f0\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-from-your-website.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/distributing-your-app-on-an-alternative-marketplace.json": {
       "hash": "56d515128ad0a7e372cac990bf5bef72ee8eb39377f319eb817f94b46b54f150",
-      "last_checked": "2026-06-26T07:30:08.036194",
+      "last_checked": "2026-06-30T07:42:34.489295",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"dc8a05cb9a1d12691f4e4ef1732e1b29\"",
       "file_path": "documentation/MarketplaceKit/distributing-your-app-on-an-alternative-marketplace.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/processing-alternative-marketplace-notifications.json": {
       "hash": "b755c5da3f79f05c15e16bedfe37e88e2ddb763249010c3f5f8818cd63f6a7df",
-      "last_checked": "2026-06-26T07:30:08.085928",
+      "last_checked": "2026-06-30T07:42:34.642043",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4b194b4495cdafa8e49e7d99b9be5c5a\"",
       "file_path": "documentation/MarketplaceKit/processing-alternative-marketplace-notifications.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/ingesting-an-alternative-distribution-package.json": {
       "hash": "2e767ea3875d8cddb6a058ec2439b81f5542986084ce4bb1be5d5c615087a67e",
-      "last_checked": "2026-06-26T07:30:08.304994",
+      "last_checked": "2026-06-30T07:42:34.742620",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d3295f818c8e61258f46dfef215ff0b4\"",
       "file_path": "documentation/MarketplaceKit/ingesting-an-alternative-distribution-package.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-your-app-from-your-website.json": {
       "hash": "7eb8f10b6a7afcbd63830a3ab96962afdae17397387812e85ac8a8ab3ca9ab21",
-      "last_checked": "2026-06-26T07:30:08.539286",
+      "last_checked": "2026-06-30T07:42:34.868837",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"12b2204144355e66898d4e89f1f99be6\"",
       "file_path": "documentation/MarketplaceKit/installing-your-app-from-your-website.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installing-apps-from-an-alternative-marketplace.json": {
       "hash": "d2119e005afee99882ff7df1cf4cbda473cc4f86bd11b8dd6121a4bddcbfa9fc",
-      "last_checked": "2026-06-26T07:30:08.603242",
+      "last_checked": "2026-06-30T07:42:34.945739",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8e824da3cdb323d3638ce87beff7bf96\"",
       "file_path": "documentation/MarketplaceKit/installing-apps-from-an-alternative-marketplace.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/supplying-an-install-verification-token.json": {
       "hash": "5862ae548682a7f6753a93df5ac80ab93c1c9f55ad6aa753558e25cca14a4e34",
-      "last_checked": "2026-06-26T07:30:08.820916",
+      "last_checked": "2026-06-30T07:42:35.321411",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f526e5daf9bd4162bfc4c8bf4366f2c9\"",
       "file_path": "documentation/MarketplaceKit/supplying-an-install-verification-token.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/reauthenticating-a-person-to-manage-apps.json": {
       "hash": "d52361e327c112f9b15c69a005fc4851665faa1dfb3c772028842bdb296fdd3e",
-      "last_checked": "2026-06-26T07:30:08.928731",
+      "last_checked": "2026-06-30T07:42:35.430764",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e91a83798cd939c8c982b344302d6830\"",
       "file_path": "documentation/MarketplaceKit/reauthenticating-a-person-to-manage-apps.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/enabling-alternative-distribution-app-installation-in-a-browser.json": {
       "hash": "7035d15c7efa7fb2d9411322281137ad4464c9245cdd9c505db434ff14893751",
-      "last_checked": "2026-06-26T07:30:09.211259",
+      "last_checked": "2026-06-30T07:42:35.701241",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"09b6c9750787c09a8d8939ae42a77091\"",
       "file_path": "documentation/MarketplaceKit/enabling-alternative-distribution-app-installation-in-a-browser.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary.json": {
       "hash": "14990a7f08535fb2addc3d55bfa343a458dd48f0f44df540fa2deb49f29b0b36",
-      "last_checked": "2026-06-26T07:30:09.265273",
+      "last_checked": "2026-06-30T07:42:35.809964",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6ed054afa50e41e71c2daf2f3495f076\"",
       "file_path": "documentation/MarketplaceKit/applibrary.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion.json": {
       "hash": "055e7d0b1bf76d47fa4b4bc85391526ac122d2f9574e4c441bcde576b9d25bea",
-      "last_checked": "2026-06-26T07:30:09.386887",
+      "last_checked": "2026-06-30T07:42:35.933696",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1e9fee6b0e754c34c2191109806d3f1b\"",
       "file_path": "documentation/MarketplaceKit/appversion.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate.json": {
       "hash": "770d60b73b63ecab22766b418134ec1c52f4d91a934e7994ed2e215dad8d5b19",
-      "last_checked": "2026-06-26T07:30:09.449930",
+      "last_checked": "2026-06-30T07:42:36.071601",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"716ff39c42b8542ab76dfed4ad567491\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements.json": {
       "hash": "7a470336bfff7d2a7f89a424e81d675ce8e60cc6c8a870a6fbbaa01bdf9c7d93",
-      "last_checked": "2026-06-26T07:30:09.532294",
+      "last_checked": "2026-06-30T07:42:36.231579",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5edab23ee8a418117b8310c7cc94229c\"",
       "file_path": "documentation/MarketplaceKit/installrequirements.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleitemid.json": {
       "hash": "36e1143cb6bcfeb5202505b9cb7f1ed20b3fe138837b4fdcda55eb33edce72d8",
-      "last_checked": "2026-06-26T07:30:09.770679",
+      "last_checked": "2026-06-30T07:42:36.389476",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9b201efa53766e90074bf29981c1ba96\"",
       "file_path": "documentation/MarketplaceKit/appleitemid.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appleversionid.json": {
       "hash": "6f17dcc5ba035807503f2ba98969ac11d7ecb1cd2ba9aef6430705bf7e4e9447",
-      "last_checked": "2026-06-26T07:30:09.877985",
+      "last_checked": "2026-06-30T07:42:36.495282",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0dd1a26933ff75c65a47c271538912c0\"",
       "file_path": "documentation/MarketplaceKit/appleversionid.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiturischeme.json": {
       "hash": "572be23417c9816b79dc5d89610d005b1d0425a975fd77292f081fce7de8a46c",
-      "last_checked": "2026-06-26T07:30:09.992515",
+      "last_checked": "2026-06-30T07:42:36.619689",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0217070c3e44140cb7d0d0608d421613\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiturischeme.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension.json": {
       "hash": "8342d4830180865d7539fb7f858fb59f32620c2b9adbba9415373f03a1c3f1f6",
-      "last_checked": "2026-06-26T07:30:11.721525",
+      "last_checked": "2026-06-30T07:42:38.690046",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4094548e7a851d8799f8d9a4b95894bb\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextensionconfiguration.json": {
       "hash": "6955f2c5cb1011065a56f6f50e4488e88fc2a23106a7df1a53c7cebc73f4ce09",
-      "last_checked": "2026-06-26T07:30:11.822197",
+      "last_checked": "2026-06-30T07:42:38.833028",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"57f408b1ee320a87f1c0d6623a183c5c\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextensionconfiguration.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton.json": {
       "hash": "045f469ed12ecea343bafb3d4529a179c415c9756a71f236b940a5fef6a0fc45",
-      "last_checked": "2026-06-26T07:30:10.267606",
+      "last_checked": "2026-06-30T07:42:37.043565",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e26dc635e3e3e89572d716dbefba2f0c\"",
       "file_path": "documentation/MarketplaceKit/actionbutton.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata.json": {
       "hash": "e6ed21a6224ed18b4748605061d8661a863d1f1d826b98cf5ccce3ec498b453e",
-      "last_checked": "2026-06-26T07:30:10.327449",
+      "last_checked": "2026-06-30T07:42:37.151273",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4fd49aeaaa715829d097648a08408c7f\"",
       "file_path": "documentation/MarketplaceKit/installmetadata.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration.json": {
       "hash": "fb2014db854873390ff922706c87e38dee60eb8329721eae8699c6cd8cedaa7f",
-      "last_checked": "2026-06-26T07:30:10.454566",
+      "last_checked": "2026-06-30T07:42:37.271803",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"cfec124989b77c4a8a64930f812d51e3\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult.json": {
       "hash": "1c655332950bdfd63c240ed53453bc2c5b37dcc690c52a07cc1e7ce13c08f839",
-      "last_checked": "2026-06-26T07:30:10.509548",
+      "last_checked": "2026-06-30T07:42:37.404525",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"df6040e33dec5d360dbb62021223f9f2\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration.json": {
       "hash": "e97777c2afad40444e89f538463b11d63133fcfc446a9c8cd4ca99fe00148890",
-      "last_checked": "2026-06-26T07:30:10.637282",
+      "last_checked": "2026-06-30T07:42:37.555867",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"683a6ce5711e8e30ccb208f8a3305bed\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult.json": {
       "hash": "4c7a69bc2b2005ff5d4e212a4e2f53df5e51b6b1acd4095c345405cfae847056",
-      "last_checked": "2026-06-26T07:30:10.733336",
+      "last_checked": "2026-06-30T07:42:37.666127",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"affee7dc7483b4753f722a7e16e33c81\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption.json": {
       "hash": "30fd9341b6f2dfb78c96235dc2dfcf8d9184c2a1b7372728776558f7e6fcd1b0",
-      "last_checked": "2026-06-26T07:30:10.806979",
+      "last_checked": "2026-06-30T07:42:37.782061",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4f35e62fc41452451fb49133747b490a\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate.json": {
       "hash": "97ba36b70cb536804afada6c82b2df8cb304d890e18dd074e9f1eed7f0981232",
-      "last_checked": "2026-06-26T07:30:10.853232",
+      "last_checked": "2026-06-30T07:42:37.890192",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d92adb50b719dfdb454d271064cb5e42\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor.json": {
       "hash": "1f7b84550cc2435c5bfe7a5db011b499e82048b72ad239f1585e7dc14b6eedb4",
-      "last_checked": "2026-06-26T07:30:11.011426",
+      "last_checked": "2026-06-30T07:42:38.047354",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f2d2b357e3083efea8903e59e5683e50\"",
       "file_path": "documentation/MarketplaceKit/appdistributor.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror.json": {
       "hash": "5c8b0f30415ddb0d60d751edd822c03d35cbc43cdb7a1e027a9204a5ddd87342",
-      "last_checked": "2026-06-26T07:30:11.543857",
+      "last_checked": "2026-06-30T07:42:38.457817",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"b8dfa159c97e08ecde6cf4f3ffdafaef\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/searchterritory.json": {
       "hash": "2d64a53d8e2cc052598cfd5f6a5eafa558d94b8d1411a539ef2d56f7359ac1a7",
-      "last_checked": "2026-06-26T07:30:13.026479",
+      "last_checked": "2026-06-30T07:42:40.727026",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"7e87e59dc3d5842a417687d82b220124\"",
       "file_path": "documentation/MarketplaceKit/applibrary/searchterritory.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/setsearchterritory(_:).json": {
       "hash": "bfbc69aa26e25a0036f5512dd0611cf21d701ac5507d44945c99d1a1cd7b1c2a",
-      "last_checked": "2026-06-26T07:30:13.098941",
+      "last_checked": "2026-06-30T07:42:40.857842",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"540595e71289388622cd6acba6de2c7e\"",
       "file_path": "documentation/MarketplaceKit/applibrary/setsearchterritory.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app.json": {
       "hash": "4b520a583ee5f45d463c689b165c4bdbb75e587e17d7729b7f1e15990f015051",
-      "last_checked": "2026-06-26T07:30:12.021264",
+      "last_checked": "2026-06-30T07:42:39.282942",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e615880697002fa3d1de67090e4f491f\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest.json": {
       "hash": "54bcb8c96b22a6e9dc3aad11f2d390915e6d81b08d30e58f7dbb0e74ed9b2c44",
-      "last_checked": "2026-06-26T07:30:12.071555",
+      "last_checked": "2026-06-30T07:42:39.443739",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"eef3b50934fc1e74f6ba0a34db9f578f\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installedapps.json": {
       "hash": "adb34cb5dfef9def823e00eee0eeecbff02920e63bef5b34cc590c8b524fb221",
-      "last_checked": "2026-06-26T07:30:12.601327",
+      "last_checked": "2026-06-30T07:42:40.231399",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d87519fd01cc0e6f57654d76b209dd12\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installedapps.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installingapps.json": {
       "hash": "22bbc1f02125caa777fdb1bc94494ee715843d16f8848ad12f2c571722495f83",
-      "last_checked": "2026-06-26T07:30:12.199736",
+      "last_checked": "2026-06-30T07:42:39.559760",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"779289c518e4e5af29ee7ccce37187e8\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installingapps.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/isloading.json": {
       "hash": "571a7a0c67e8560402e8f513ea453a7a1d6b304bdcca859cd4e4f286ae541196",
-      "last_checked": "2026-06-26T07:30:12.302476",
+      "last_checked": "2026-06-30T07:42:39.721074",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"258983270e036386dd0d34039a0e4983\"",
       "file_path": "documentation/MarketplaceKit/applibrary/isloading.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app(forappleitemid:).json": {
       "hash": "c066c9653d0d7f82e182a7aa78db20698dbbe2880810f49dbc2114f30d810eb9",
-      "last_checked": "2026-06-26T07:30:12.485255",
+      "last_checked": "2026-06-30T07:42:40.095634",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e3d64ecaa1d1f2f17148f07ffaa4811b\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app-forappleitemid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/didauthenticate(account:).json": {
       "hash": "e0446f3ad4fb5c6f766dc1b08c98a7b5e8e66acd38c868228c7b35e72627cd8e",
-      "last_checked": "2026-06-26T07:30:11.944912",
+      "last_checked": "2026-06-30T07:42:39.130529",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f356b2e8de8cc9f2cdef59293d88e318\"",
       "file_path": "documentation/MarketplaceKit/applibrary/didauthenticate-account.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(_:).json": {
       "hash": "b28ef74f6b4f35baf85748e048b0b64b927843dedd563a2d3b31e400c7a6f852",
-      "last_checked": "2026-06-26T07:30:12.355757",
+      "last_checked": "2026-06-30T07:42:39.872797",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"db6d9f874097d07cf5b0aebdbc861086\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallation(for:account:installverificationtoken:).json": {
       "hash": "06026c7878177f91c2792f58f7966e42e743307ec4cb7f59f349ef54b292f55d",
-      "last_checked": "2026-06-26T07:30:13.419030",
+      "last_checked": "2026-06-30T07:42:41.348876",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e5cd3cd4da6b5b7899574d226bdb4e09\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallation-foraccountinstallverificationtoken.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappinstallationfrombrowser(for:referrer:).json": {
       "hash": "cdee7411bda08bff90fa4e031c402638fec2c7524471cd3c3a5a9474bed2103e",
-      "last_checked": "2026-06-26T07:30:12.407408",
+      "last_checked": "2026-06-30T07:42:39.980905",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"806d7bf876f3ad27e8f5d60ba5f32a9d\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappinstallationfrombrowser-forreferrer.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(_:).json": {
       "hash": "044777bbb900fbf4ac56b080e89041bca2d5f6f31b87d914b2c63e6ea4b25e8b",
-      "last_checked": "2026-06-26T07:30:13.199634",
+      "last_checked": "2026-06-30T07:42:40.998751",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a7db5897beccd1aef8b49f97ea057239\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestappupdate(for:account:installverificationtoken:).json": {
       "hash": "caaa77996806c3eac7928da7dbc650ddca73add69e3045d12b436b2eb2f627b1",
-      "last_checked": "2026-06-26T07:30:13.497932",
+      "last_checked": "2026-06-30T07:42:41.485638",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d4d90558b8c6fdaaa3350acda4543980\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestappupdate-foraccountinstallverificationtoken.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/requestlicenserenewal(appleitemids:).json": {
       "hash": "225ddfeb83f31b3429a0b334320176f98efd0d4afb9db61056bbb969936053e0",
-      "last_checked": "2026-06-26T07:30:13.252365",
+      "last_checked": "2026-06-30T07:42:41.130874",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"147165d865a3b5282567267981029630\"",
       "file_path": "documentation/MarketplaceKit/applibrary/requestlicenserenewal-appleitemids.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/current.json": {
       "hash": "42b38ee93609a3b87ca52f661101929517546036139640ee867364aec456d562",
-      "last_checked": "2026-06-26T07:30:11.866890",
+      "last_checked": "2026-06-30T07:42:39.028371",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"486f181d0fb8a9074f3837fe9063134e\"",
       "file_path": "documentation/MarketplaceKit/applibrary/current.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/init(appleitemid:appleversionid:).json": {
       "hash": "fc3390fc8780846ac19cf16ba80b1283b0a0e80d24647e54df50dccb7fb11e64",
-      "last_checked": "2026-06-26T07:30:13.564262",
+      "last_checked": "2026-06-30T07:42:41.602683",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4928ad32dcafb2f3109c2d0558fdd8f3\"",
       "file_path": "documentation/MarketplaceKit/appversion/init-appleitemidappleversionid.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleitemid.json": {
       "hash": "613d612d807f388984c956ba36738d17ea135e558789b910b4444c903f4b06c5",
-      "last_checked": "2026-06-26T07:30:13.633083",
+      "last_checked": "2026-06-30T07:42:41.782546",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"80fd3406dc0bc2b0e7258a2813e9348f\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleitemid.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appversion/appleversionid.json": {
       "hash": "c5b920d7a493f5d2edd232427eb8b4c263474e5a5550597f4665c99ae6286526",
-      "last_checked": "2026-06-26T07:30:13.714977",
+      "last_checked": "2026-06-30T07:42:41.882353",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e31dc477ad5a598a0d7c51fe2557ed37\"",
       "file_path": "documentation/MarketplaceKit/appversion/appleversionid.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/init(appleitemid:alternativedistributionpackage:account:installverificationtoken:).json": {
       "hash": "dd7b2f570c7bce3d27a796289d335842f5ab32acfb99ff1c781064411e19058a",
-      "last_checked": "2026-06-26T07:30:13.824778",
+      "last_checked": "2026-06-30T07:42:42.006519",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c598663f119b22bd3d08bdb569615992\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/init-appleitemidalternativedistributionpackageaccountinstallverificationtoken.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/account.json": {
       "hash": "f012ee60638e9cf947250c34eb953e92648df29352101c7f1b8501b7d92aac60",
-      "last_checked": "2026-06-26T07:30:13.874386",
+      "last_checked": "2026-06-30T07:42:42.158331",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5a01aedbe2e02a2e3b20d0527d02990a\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/account.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/alternativedistributionpackage.json": {
       "hash": "5f901f5a759ec41219fcee6caf2c17588ae89ac828c88b814bbafa068945ea15",
-      "last_checked": "2026-06-26T07:30:13.928360",
+      "last_checked": "2026-06-30T07:42:42.280953",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0e7af6607eafa9d0c85671fc925cdc49\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/alternativedistributionpackage.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appshareurl.json": {
       "hash": "f8d96fab0a91c77e9710f9d84d29ef89cfee4e75bad2744e809fc7c71418760b",
-      "last_checked": "2026-06-26T07:30:14.006669",
+      "last_checked": "2026-06-30T07:42:42.396754",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"baa5bba62b6a49b3733c72138ce6bf1c\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appshareurl.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/appleitemid.json": {
       "hash": "1115288350d4a0590ebed35f7df149a6d7a116f0bca11147bad967100653111f",
-      "last_checked": "2026-06-26T07:30:14.113915",
+      "last_checked": "2026-06-30T07:42:42.541936",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"31bbf51a21ee01a56f2142144865dbb0\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/appleitemid.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/automaticupdate/installverificationtoken.json": {
       "hash": "847893b3709918bf9a6b1b209ddfeb98cce68652b8b65a3b46c60f2d64aa68bc",
-      "last_checked": "2026-06-26T07:30:14.160109",
+      "last_checked": "2026-06-30T07:42:42.671463",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6d6c417d88bedee53b23be2a1e9d8b4e\"",
       "file_path": "documentation/MarketplaceKit/automaticupdate/installverificationtoken.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/init().json": {
       "hash": "f97a1709fbccba527bef78894275e911c07dce120aeb7801648c34fa78a915c7",
-      "last_checked": "2026-06-26T07:30:14.225914",
+      "last_checked": "2026-06-30T07:42:42.806856",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d3cf71b359774db0dadc3eb2368c90b6\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/init.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/ageratingrank.json": {
       "hash": "82ee4a220234929b340ae0b5fe85eb5ec2e692282d5a671503971bc22f7095ea",
-      "last_checked": "2026-06-26T07:30:14.354770",
+      "last_checked": "2026-06-30T07:42:42.918850",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"ea2af444b697eecbc7c32f12594ec520\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/ageratingrank.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/expectedinstallsize.json": {
       "hash": "c19577f268df450dc056d2c9cdc0e0796a1e16d1527dfbab5449e4c1c358facf",
-      "last_checked": "2026-06-26T07:30:14.400697",
+      "last_checked": "2026-06-30T07:42:43.025555",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"34829da97291c544f26d6d3d46dad15c\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/expectedinstallsize.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/minimumsystemversion.json": {
       "hash": "dd21c3680fa2547c40ba35f32a6ee0abbeac3285ca43b30f8ea7143a857ec746",
-      "last_checked": "2026-06-26T07:30:14.514807",
+      "last_checked": "2026-06-30T07:42:43.174739",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f55b95a75ec57f5f38d82baf6a8d5415\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/minimumsystemversion.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/requireddevicecapabilities.json": {
       "hash": "12b13de14b044c289ce40ad8677af8b1399db9ca079898ffb7c3666f3b29bd91",
-      "last_checked": "2026-06-26T07:30:14.629082",
+      "last_checked": "2026-06-30T07:42:43.324496",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4297fae5aa4d7685d4ecb236ac8112ae\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/requireddevicecapabilities.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installrequirements/satisfiedbydevice().json": {
       "hash": "5a30d309bc917a7cd16f595ede8fd559476d5a4c15e3082a2cf9fe1d23cb8bf7",
-      "last_checked": "2026-06-26T07:30:14.727615",
+      "last_checked": "2026-06-30T07:42:43.433019",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"33548620b7cc050ad3badeed12cf727f\"",
       "file_path": "documentation/MarketplaceKit/installrequirements/satisfiedbydevice.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/additionalheaders(for:account:).json": {
       "hash": "697429313791fedfb7a34927007846fa3429f874fbd9396ea23916b1d14cc108",
-      "last_checked": "2026-06-26T07:30:21.993284",
+      "last_checked": "2026-06-30T07:42:53.233113",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"742a0f4406d7ffc779fb201e85c0629b\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/additionalheaders-foraccount.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/automaticupdates(for:).json": {
       "hash": "b99464109d45e3bd6eec23a4ea5b23d6c3e9e050a64cf234851d5144de800006",
-      "last_checked": "2026-06-26T07:30:22.052069",
+      "last_checked": "2026-06-30T07:42:53.377826",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"347407df75ad5e2d59e3736a7fb7c531\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/automaticupdates-for.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/availableappversions(forappleitemids:).json": {
       "hash": "9c35812dbef045d18002974a9c263bd0df5b33ae697a559bc9c9a7bb585b726a",
-      "last_checked": "2026-06-26T07:30:22.126714",
+      "last_checked": "2026-06-30T07:42:53.503974",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d105adf1e4fbc986507e09a07edd0008\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/availableappversions-forappleitemids.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceextension/requestfailed(with:).json": {
       "hash": "f4f609ea4bb12cfda43e73a2cd303fcd01180838de2bfeffa5499c21f79ae304",
-      "last_checked": "2026-06-26T07:30:22.227221",
+      "last_checked": "2026-06-30T07:42:53.625007",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d152c3003aab2b8c04a76ab8da00a84f\"",
       "file_path": "documentation/MarketplaceKit/marketplaceextension/requestfailed-with.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/init(action:).json": {
       "hash": "5c7bf1e9fd5e5119e49add84e416d5bc6a532a04431071e8d9dbc480b49566cf",
-      "last_checked": "2026-06-26T07:30:15.331583",
+      "last_checked": "2026-06-30T07:42:44.220567",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c8f1829072e7efc9b63f406a9c4071b3\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/init-action.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.property.json": {
       "hash": "1a0cad77cc77befa3b7dba17546768d7779efd900f5a4283d09c2b87cf2265f5",
-      "last_checked": "2026-06-26T07:30:15.501353",
+      "last_checked": "2026-06-30T07:42:44.352661",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f1ac3646ddb9c95c01f9a8dbdbe6bd8f\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swiftproperty.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/backgroundcolor.json": {
       "hash": "459ba7f25d51b3467efade1cf73868ccceb6f990eed5a3ebcf2f3c15c5cdc961",
-      "last_checked": "2026-06-26T07:30:15.558700",
+      "last_checked": "2026-06-30T07:42:44.476238",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8b7173dc62a949aa9f89d39700cf8b63\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/backgroundcolor.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/bordercolor.json": {
       "hash": "3d2dc4dbb847c9b506222231b29711055070dcaa6d052b65bd97a1ab39a0ccb7",
-      "last_checked": "2026-06-26T07:30:15.615793",
+      "last_checked": "2026-06-30T07:42:44.593872",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4ab0dce9cd1fffd2ac83b90a986a0816\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/bordercolor.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/borderwidth.json": {
       "hash": "990dbc546a221788d153bba724ef44cbb39ee2ad895485d4367a77da26fcf033",
-      "last_checked": "2026-06-26T07:30:15.717527",
+      "last_checked": "2026-06-30T07:42:44.721349",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f7aa060eb7fd22214a4475bd8e17f7dd\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/borderwidth.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/cornerradius.json": {
       "hash": "4da9254b63b69e7b72afdd66dd6984b2d40962c78f37d3986ceafefdd712de71",
-      "last_checked": "2026-06-26T07:30:15.764379",
+      "last_checked": "2026-06-30T07:42:44.840962",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5e8600110e5ad1f1bfb0a9972b650081\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/cornerradius.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/fontsize.json": {
       "hash": "7db6e3b6fb26dfeb0af068b455688e741f4568670a856cc64d83b898b56776b7",
-      "last_checked": "2026-06-26T07:30:15.890571",
+      "last_checked": "2026-06-30T07:42:44.956462",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"cdf01b6d47bcae171dabf7f989e31903\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/fontsize.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imagename.json": {
       "hash": "ee731e047ce2201ff4e4719d3cbb388cf5e5915bc0116dc4075a652f57c8701f",
-      "last_checked": "2026-06-26T07:30:15.992980",
+      "last_checked": "2026-06-30T07:42:45.090635",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1feeddf8bb72ff6c78859173b14b18a3\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imagename.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/imageplacement.json": {
       "hash": "58615587b7449b1bf4084edc768fd2c79cc5b89675ed67400cd6652a7cdb4cdd",
-      "last_checked": "2026-06-26T07:30:16.039724",
+      "last_checked": "2026-06-30T07:42:45.234414",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"2b44fe90938a59bdf0a614dc5847df86\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/imageplacement.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/isenabled.json": {
       "hash": "d672db2528f9fb1957ce7604030a77dd1e709ab48700df417f5d0ff05e775023",
-      "last_checked": "2026-06-26T07:30:16.145365",
+      "last_checked": "2026-06-30T07:42:45.341472",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"544455d99591c8cb98cf16f13754f432\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/isenabled.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/ishighlighted.json": {
       "hash": "8d9b1921ffd4a87d002878af8a4022ef7f8397dfe4868860ec593990fec87ce1",
-      "last_checked": "2026-06-26T07:30:16.246215",
+      "last_checked": "2026-06-30T07:42:45.466330",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5d192751d6e11ff390e55cd058d3c977\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/ishighlighted.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/label.json": {
       "hash": "de075e0063eb60966ee65c5875ed2ef39cdf1d81ae2110f3745aa8614134364f",
-      "last_checked": "2026-06-26T07:30:16.345894",
+      "last_checked": "2026-06-30T07:42:45.600361",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a7ea3ace17f57f4cc74f248352c39118\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/label.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/size.json": {
       "hash": "c6c4c71128fc8443479d229d902be6cc16f70ae46471b0a24b141de1b5420360",
-      "last_checked": "2026-06-26T07:30:16.444845",
+      "last_checked": "2026-06-30T07:42:45.729140",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8ef49b5b0f37132f33fdf129bd8e3895\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/size.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/tintcolor.json": {
       "hash": "abfceef1477f92b2bb64c5369e37eb6da75f4df7a94363d545042b0681d9a1b4",
-      "last_checked": "2026-06-26T07:30:16.491558",
+      "last_checked": "2026-06-30T07:42:45.857847",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"eecc882c53dfc03de50641f37f97b27e\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/tintcolor.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum.json": {
       "hash": "2418a61170ff76fd90ec19905d6886a77a33b3a056b7a30f76d6919663524578",
-      "last_checked": "2026-06-26T07:30:16.595105",
+      "last_checked": "2026-06-30T07:42:45.999345",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0dfade521d91b388baac1f011d2fbc7e\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swiftenum.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement.json": {
       "hash": "aef325bd39a020a2a3e465f58b6b8b64cd029e80d6892bb56177c0b08fecdc9f",
-      "last_checked": "2026-06-26T07:30:16.694521",
+      "last_checked": "2026-06-30T07:42:46.126276",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"2e6f135aad9aebe9caeb2a981ae893f1\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:).json": {
       "hash": "4b08c328dd7aa54b70335444fa1012de7330cb4609015cbf5a7cf3b7ac44e12a",
-      "last_checked": "2026-06-26T07:30:16.795222",
+      "last_checked": "2026-06-30T07:42:46.246569",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6225192132bf8459deb41c0610d684e6\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init-accountappleitemidalternativedistributionpackageisupdate.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/account.json": {
       "hash": "4b5719e2cf3cf745016bb010f26093412ce974261adb7717dd927cf86c6d1a68",
-      "last_checked": "2026-06-26T07:30:17.309362",
+      "last_checked": "2026-06-30T07:42:47.042817",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9714e14fccfe8948160500f98588aa7f\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/account.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/alternativedistributionpackage.json": {
       "hash": "d30e07dbab1d35629e8a0120e494f56adcc707baff97ad5733f7052eb9c21559",
-      "last_checked": "2026-06-26T07:30:17.080412",
+      "last_checked": "2026-06-30T07:42:46.636443",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e8a14e6460d17ad7a694955cf4bab336\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/alternativedistributionpackage.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appshareurl.json": {
       "hash": "72afed9c9c44070756986fbc58552f089cab62056f909792ed56a8c2fe37cf2b",
-      "last_checked": "2026-06-26T07:30:17.183604",
+      "last_checked": "2026-06-30T07:42:46.765309",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"092212745915dc1c2df7f3c447b600d1\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appshareurl.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/appleitemid.json": {
       "hash": "eaa12e25946ee53f7ca56d57120358ed2b1bd996251f2291f49b05ae4ee9dd51",
-      "last_checked": "2026-06-26T07:30:17.021632",
+      "last_checked": "2026-06-30T07:42:46.500051",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4020c9b6dbff2be35931198decaf9cef\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/appleitemid.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/isupdate.json": {
       "hash": "c5cdea1a0b08cfc6ab2df119b3aa12ec09d93997c072492627e703a49aa11a98",
-      "last_checked": "2026-06-26T07:30:17.232240",
+      "last_checked": "2026-06-30T07:42:46.899522",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"fa6801e8d9e83b156bb9cde65b61c9a3\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/isupdate.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/init(install:confirminstall:).json": {
       "hash": "f1c7610cc710aedd889ffe24cd141e62e4f78a79c531bb4545aa172930f8189c",
-      "last_checked": "2026-06-26T07:30:17.538537",
+      "last_checked": "2026-06-30T07:42:47.306283",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9d10d546cd97b3a1a4367003dbdbe70a\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/init-installconfirminstall.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/confirminstall.json": {
       "hash": "3fb395675dc136b2001f4b83275bf117cd4f7fbad455c9a4b123a7ae934779b7",
-      "last_checked": "2026-06-26T07:30:17.583110",
+      "last_checked": "2026-06-30T07:42:47.440255",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"299de616a016d48f977e3d461fdcc851\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/confirminstall.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfiguration/install.json": {
       "hash": "a64724f576c79a9ddb5940a3beee2f0e65901d17d12395c2112170701c97eff8",
-      "last_checked": "2026-06-26T07:30:17.700979",
+      "last_checked": "2026-06-30T07:42:47.554236",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"97c405e43f02691d0b69d2d9c8c70f81\"",
       "file_path": "documentation/MarketplaceKit/installconfiguration/install.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/cancel.json": {
       "hash": "44692e62b9fd553d0a898c77e081909aaa98e6b7047c58c475935b7e8c4e62b1",
-      "last_checked": "2026-06-26T07:30:17.841053",
+      "last_checked": "2026-06-30T07:42:47.666259",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"3d5bbc20c1c7ba6179649a64112bdd66\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/cancel.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installconfirmationresult/confirmed(installverificationtoken:authenticationcontext:).json": {
       "hash": "db6fbee1b43c6586b0da26511e0ecf3c24b2dec636c992b93c8e416c55628d4d",
-      "last_checked": "2026-06-26T07:30:17.955885",
+      "last_checked": "2026-06-30T07:42:47.802986",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"cef453d2db5eafc954f52ddc3455c082\"",
       "file_path": "documentation/MarketplaceKit/installconfirmationresult/confirmed-installverificationtokenauthenticationcontext.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/init(installs:confirminstall:).json": {
       "hash": "11c0c9ecbf3592ca6f207dcd227fae354dd2c4f91d20c745db365d94f30a25f6",
-      "last_checked": "2026-06-26T07:30:18.058619",
+      "last_checked": "2026-06-30T07:42:47.951744",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5f14df662293dcfedb18371ccab84a11\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/init-installsconfirminstall.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/confirminstall.json": {
       "hash": "c5cce9bddb22ae76727ede80e85f7955e74259add905490dde55c915fc33420a",
-      "last_checked": "2026-06-26T07:30:18.114671",
+      "last_checked": "2026-06-30T07:42:48.075001",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"04c8dbd6e553862be82e9213e3d76e29\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/confirminstall.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfiguration/installs.json": {
       "hash": "de025b074dcc0aa6026fcbfab6f028880df9a123c9be54ea02caa2b841e8183f",
-      "last_checked": "2026-06-26T07:30:18.221589",
+      "last_checked": "2026-06-30T07:42:48.184498",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"3e96895ec8c83689e04630a819d633d3\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfiguration/installs.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/cancel.json": {
       "hash": "52c5e460381422fdd6640bc580972e88501523a1200bbe404ddcb4a90ae37666",
-      "last_checked": "2026-06-26T07:30:18.328281",
+      "last_checked": "2026-06-30T07:42:48.306573",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"aa36018a3134b25ab687d999d6dcb2a3\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/cancel.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/batchinstallconfirmationresult/confirmed(installverificationtokens:authenticationcontext:).json": {
       "hash": "8780b48edf7eb31c1af51a2968a2d4bf73d7c7860ac24f8ffadb4b50cfad51fd",
-      "last_checked": "2026-06-26T07:30:18.437712",
+      "last_checked": "2026-06-30T07:42:48.448050",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9a830405d8871d6eccde27e7c0540cf3\"",
       "file_path": "documentation/MarketplaceKit/batchinstallconfirmationresult/confirmed-installverificationtokensauthenticationcontext.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/authentication(account:).json": {
       "hash": "40a8529fa30189cd6d3dfde3bf9394174dfc7fa45ed434b24ec23f12ad2a3373",
-      "last_checked": "2026-06-26T07:30:18.490662",
+      "last_checked": "2026-06-30T07:42:48.618803",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6442026b38f14e951747f5e47c87704b\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/authentication-account.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/productpage(appleitemid:appleversionid:).json": {
       "hash": "282bc7d813648f0708fcd9b5c4d3bc4a10718f51699ac945fe4b0b3c8e3ee8ad",
-      "last_checked": "2026-06-26T07:30:18.636769",
+      "last_checked": "2026-06-30T07:42:48.738457",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"84f05e4a4054d3008913c6047906cadc\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/productpage-appleitemidappleversionid.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacedisplayoption/searchresults(query:).json": {
       "hash": "f6f147dcac8f84dde26b8b9001b4d5328eb4354841a9cef250163dd14b559613",
-      "last_checked": "2026-06-26T07:30:18.732737",
+      "last_checked": "2026-06-30T07:42:48.852972",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"3e623a5ae2216447580282382da340a8\"",
       "file_path": "documentation/MarketplaceKit/marketplacedisplayoption/searchresults-query.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacescenedelegate/scene(_:askedtodisplay:).json": {
       "hash": "e2ead18dae906274b697382a33c1bcb9c270652b14b71698cb13f1a1d02b657a",
-      "last_checked": "2026-06-26T07:30:18.838855",
+      "last_checked": "2026-06-30T07:42:48.999167",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1349ebc08cdfd0c7201b8885402a5fbf\"",
       "file_path": "documentation/MarketplaceKit/marketplacescenedelegate/scene-askedtodisplay.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/appstore.json": {
       "hash": "b6e207bbf492e04aca34db7307b73f5fb6b48c83afe0a7f0943557bee9a39056",
-      "last_checked": "2026-06-26T07:30:18.886585",
+      "last_checked": "2026-06-30T07:42:49.139352",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"ac2d96d4b4fca0246521f326107856f0\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/appstore.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/marketplace(_:).json": {
       "hash": "0f5a0ea57a89429d297be81c7a0eecd82cbdff14cbbb1bdcd9abc27887a23178",
-      "last_checked": "2026-06-26T07:30:18.980262",
+      "last_checked": "2026-06-30T07:42:49.263053",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"28b89913aedd7e11b900c5ab49dd6519\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/marketplace.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/other.json": {
       "hash": "17a678dbecffc7a34ba29a0f07e2845d27326a67e2ff4b2bc17aedb44abe782b",
-      "last_checked": "2026-06-26T07:30:19.080468",
+      "last_checked": "2026-06-30T07:42:49.383211",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"fe6d4e2bf7a3e7f7a61aca564fd59886\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/other.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/testflight.json": {
       "hash": "a518fe68934698b2124f92caeb9d694cccd652ce935623af0650a69f97339b9a",
-      "last_checked": "2026-06-26T07:30:19.181285",
+      "last_checked": "2026-06-30T07:42:49.494106",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c3c25b3bea9538e2d6f05b0731020467\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/testflight.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/web.json": {
       "hash": "b1452e8427efba209a77f66f66352d3e8de2ab85d98b66b5992f738001e69b2f",
-      "last_checked": "2026-06-26T07:30:19.227484",
+      "last_checked": "2026-06-30T07:42:49.623779",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d080ff76533516f4ff8fdf1119cbf3bc\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/web.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/current.json": {
       "hash": "783492653ed7c7c8f237d52796eb8e7cad82b453bfc659fa249daa80d893d0dc",
-      "last_checked": "2026-06-26T07:30:19.285736",
+      "last_checked": "2026-06-30T07:42:49.753595",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f6868bccd8ce5fdbc9b0da6eb2ab958f\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/current.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/appnotinstalled.json": {
       "hash": "6abd91526f06f3414690ac3284d27463fe8d139e8eddef44b6720d3a11cb0824",
-      "last_checked": "2026-06-26T07:30:20.378431",
+      "last_checked": "2026-06-30T07:42:50.911626",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4e5b090058266f7fdbc41faf79e4d449\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/appnotinstalled.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/cancelled.json": {
       "hash": "85914394efcdc4a7563c765b7af8177d2944cd3e7da03854ec573e99c56e0c76",
-      "last_checked": "2026-06-26T07:30:21.608586",
+      "last_checked": "2026-06-30T07:42:52.637321",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"55fff3a4cec79cfda5e9916e74605fcb\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/cancelled.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/featureunavailable.json": {
       "hash": "78c3cf7005450babfa0662e6a25b1b86bb079a8cd79bfc6443fc2c60a1f6beb3",
-      "last_checked": "2026-06-26T07:30:21.712272",
+      "last_checked": "2026-06-30T07:42:52.739846",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"dc09fd2ff38f6f219328c35ac03dff89\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/featureunavailable.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationofmarketplacedenied.json": {
       "hash": "408d924f6f6e873dd1e73800d3bbace55d1a9f5050a27449511992e98dc9402d",
-      "last_checked": "2026-06-26T07:30:20.528922",
+      "last_checked": "2026-06-30T07:42:51.052505",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0b025b0dd7cd679841cb3999ed29d902\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationofmarketplacedenied.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/installationrestricted.json": {
       "hash": "c28bb55102002820929818ed3b304c70167f463168e04ce3f6e90e96465cb824",
-      "last_checked": "2026-06-26T07:30:20.578603",
+      "last_checked": "2026-06-30T07:42:51.164736",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1e0061e6d6572d101cc75a4eab1264c8\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/installationrestricted.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/insufficientstoragespace(_:).json": {
       "hash": "9dc779303216a47176eb71bbc5143cee1e1645d176a5d3ed30f97d67ad5a6501",
-      "last_checked": "2026-06-26T07:30:20.327114",
+      "last_checked": "2026-06-30T07:42:50.796038",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"b97053804e23f956aaf67a8614dc0dd4\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/insufficientstoragespace.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackagesignature.json": {
       "hash": "56dacafa7f0e647f4846122e68b6dd3afecfdcf7ec5fcb926b02f7b52b6df7f3",
-      "last_checked": "2026-06-26T07:30:20.846156",
+      "last_checked": "2026-06-30T07:42:51.561747",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"998c7fcb67f39ac22410c77c2d6b8b29\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackagesignature.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidalternativedistributionpackageurl.json": {
       "hash": "625336a271d07aa95160ae68182fdca860c6e2888deccb4a11b75f37e5e5f012",
-      "last_checked": "2026-06-26T07:30:21.007017",
+      "last_checked": "2026-06-30T07:42:51.703691",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"dfd66b1c69eada0cebc04c26e5aee6a3\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidalternativedistributionpackageurl.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidlicense.json": {
       "hash": "c47e12a832c75dc1324c70f78978cc9ab7f75e07e78c0c7f23dcfa08df6c647a",
-      "last_checked": "2026-06-26T07:30:21.109951",
+      "last_checked": "2026-06-30T07:42:51.834136",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"222e991e774096611bd6b84acc3728fe\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidlicense.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidmanifest.json": {
       "hash": "f001966b8aa435aa214a9c547dd17d9446022a10b654b4f580da664996a86bf2",
-      "last_checked": "2026-06-26T07:30:21.158363",
+      "last_checked": "2026-06-30T07:42:51.971505",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c67740b3efc4cb2b05d98d6a948f5f15\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidmanifest.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/invalidurl.json": {
       "hash": "3c2fd642e7bdeb8a8f82a7495a497de1f361bdaade6a7150aa28e2de695d86b9",
-      "last_checked": "2026-06-26T07:30:21.294886",
+      "last_checked": "2026-06-30T07:42:52.093740",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"02d7dd23b7dd26f2688871548e20dbf4\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/invalidurl.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/minimumplatformversionnotsatisfied(_:).json": {
       "hash": "ef2de375bdf359828b56cba033fd94dcaff298aa2f44826831afea65db762594",
-      "last_checked": "2026-06-26T07:30:19.717618",
+      "last_checked": "2026-06-30T07:42:50.291632",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"286ff7861a5e41424dd4587f624fb391\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/minimumplatformversionnotsatisfied.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/mismatchedinstalltype.json": {
       "hash": "cf1eaeb26f39013c8b20b4e0ca7b007e50b2ffdeebedde3e1ab9151b48a778da",
-      "last_checked": "2026-06-26T07:30:20.686091",
+      "last_checked": "2026-06-30T07:42:51.287461",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"49ef4d1abfc7e83568197065394adf4d\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/mismatchedinstalltype.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missingcapabilities(_:).json": {
       "hash": "fb7e8dab78f43ea18505e9ddfb8e004afda9a7f8e062e2d7f11c6ebd3de1811c",
-      "last_checked": "2026-06-26T07:30:20.063743",
+      "last_checked": "2026-06-30T07:42:50.392315",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"880f545ba4d417a5e6a74afd58585d29\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingcapabilities.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missinginstallverificationtoken.json": {
       "hash": "76926dd63376b0cd1e2ed826d7c85c1f02dbf34f756a7bdd8844c300ff550ec4",
-      "last_checked": "2026-06-26T07:30:20.796468",
+      "last_checked": "2026-06-30T07:42:51.429267",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"749c40c3569e3094b530242cfdd4645f\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missinginstallverificationtoken.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/networkerror.json": {
       "hash": "c05aad3c5266a7dbaac9cba9a8f19dbce4520f7722930d2acdfcf082e45fb13f",
-      "last_checked": "2026-06-26T07:30:21.765157",
+      "last_checked": "2026-06-30T07:42:52.862685",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0a027c58809099e466ade7be6f8924b9\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/networkerror.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/nosupportedvariant.json": {
       "hash": "0587c1b682d57c1d6990055fbac0b9cc30e6abf25f045e4728433e489182229d",
-      "last_checked": "2026-06-26T07:30:20.168605",
+      "last_checked": "2026-06-30T07:42:50.547209",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"69c64115edf5b22dce6f253eb197993e\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/nosupportedvariant.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/oauthtokenerror.json": {
       "hash": "140c10e6a4bfff01940ef1a0774035725c89359d4e675feac4b8e33bacfd04ce",
-      "last_checked": "2026-06-26T07:30:21.869077",
+      "last_checked": "2026-06-30T07:42:52.995139",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1b5c958619d25ec337044bca42574370\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/oauthtokenerror.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/ratingrestricted.json": {
       "hash": "9b0f2cb0c5c55217552ba767783a93a002977cd0801628f580f50b6e67358a49",
-      "last_checked": "2026-06-26T07:30:21.559082",
+      "last_checked": "2026-06-30T07:42:52.501116",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a26908b5e6d311bd0043a8d0e2f17851\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ratingrestricted.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unknown.json": {
       "hash": "dfb47cb78473ffdfbe939dc0414b026cd5d71ceecd3a4a307dc526f28d82345d",
-      "last_checked": "2026-06-26T07:30:21.921198",
+      "last_checked": "2026-06-30T07:42:53.110578",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"176d1b10df35cd231075e4de14c822dd\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unknown.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/unsupportedplatform.json": {
       "hash": "0a10d67ddc04497731139b1370901a4877cb63cf44dc6baadd69b17d2f6d1bc8",
-      "last_checked": "2026-06-26T07:30:20.224717",
+      "last_checked": "2026-06-30T07:42:50.661134",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c52cdab218c1e76de10f0f8c450f40bd\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/unsupportedplatform.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct.json": {
       "hash": "4c97498dca2571db27419435d984fef0016cebb70f99372802ae54a18c4e3e1e",
-      "last_checked": "2026-06-26T07:30:22.540635",
+      "last_checked": "2026-06-30T07:42:54.156542",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e345b3a350e9c521dcd590cfa72614c3\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swiftstruct.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata.json": {
       "hash": "be14647abe693f964decb4c241e07c8624f219a1686a2260577fd38eda83f08c",
-      "last_checked": "2026-06-26T07:30:22.393200",
+      "last_checked": "2026-06-30T07:42:53.882720",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a8073176b653072f1b1a320cf619467a\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.property.json": {
       "hash": "c66475a9d1ece01307f756901507259ad17a80a91a198ba8660abbcf7491d7df",
-      "last_checked": "2026-06-26T07:30:22.491418",
+      "last_checked": "2026-06-30T07:42:54.030171",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"acfdb016f72de49acbb504c15f5d1a9b\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swiftproperty.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installationerror.json": {
       "hash": "e78ddc748e05ef394a91e0d099aba3ae53dee6213e936ecca7621cb7d385dbfa",
-      "last_checked": "2026-06-26T07:30:22.919454",
+      "last_checked": "2026-06-30T07:42:54.676573",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"cdf3491ffc9f82f42b201494a49430b4\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installationerror.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installedmetadata.json": {
       "hash": "77568d8d80994d773c24624f228d3c7f434a44ff6b623e9e8d6aa3c067f54fba",
-      "last_checked": "2026-06-26T07:30:22.294570",
+      "last_checked": "2026-06-30T07:42:53.749530",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"06f3b1cef79fdb5a658eef3f8f43568b\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installedmetadata.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalled.json": {
       "hash": "786c6c39dd9a2031ad6a3d47112c57acab5da8755df506093b5234575a8920f4",
-      "last_checked": "2026-06-26T07:30:22.647015",
+      "last_checked": "2026-06-30T07:42:54.279765",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"43b1651aea266cb84c8a57a3801b8592\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalled.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isinstalling.json": {
       "hash": "4dc90ab40ddb10b6387b2c383456732a07df3ba1c3a8ae12ba9ca2c30ab04f9f",
-      "last_checked": "2026-06-26T07:30:22.750123",
+      "last_checked": "2026-06-30T07:42:54.421857",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"35aa62bec6c5d48433599e521898c157\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isinstalling.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/isupdating.json": {
       "hash": "6fc7fad6ec2381ae025d993e09361da71854efe71e7e0dbdd9bbf296e38fd026",
-      "last_checked": "2026-06-26T07:30:22.804564",
+      "last_checked": "2026-06-30T07:42:54.564655",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6d5ebaf6193e2854d24b26c9f40ede9c\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/isupdating.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/init(alternativedistributionpackageurl:account:installverificationtoken:).json": {
       "hash": "b57d4320a63dd009defdbd4a511d33cbba37c64dd225f2cf674f0bf361f8e65e",
-      "last_checked": "2026-06-26T07:30:23.168762",
+      "last_checked": "2026-06-30T07:42:55.087685",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e4e850debb7b735b7d316fcce82109df\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/init-alternativedistributionpackageurlaccountinstallverificationtoken.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/account.json": {
       "hash": "eea9cd71c501db3c0dd72db56fd668dad4d7882198c3f1e2d888d07bb390f783",
-      "last_checked": "2026-06-26T07:30:23.234705",
+      "last_checked": "2026-06-30T07:42:55.209092",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"920df6780d5f07e8f3fb9c2f74354393\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/account.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/alternativedistributionpackageurl.json": {
       "hash": "e9389d4566841def320891b5f5e7669cc98ba84fd79f701228e2fac83cdd32d7",
-      "last_checked": "2026-06-26T07:30:23.296289",
+      "last_checked": "2026-06-30T07:42:55.339780",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"fe73f2784e80f57eec3979c8c9777c20\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/alternativedistributionpackageurl.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/appshareurl.json": {
       "hash": "a81448138816dae7897c1243191222e72e314d26d17fb09c49fa72340796ed1c",
-      "last_checked": "2026-06-26T07:30:23.346941",
+      "last_checked": "2026-06-30T07:42:55.461954",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"24f39587fb557e0a916371734b72efd5\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/appshareurl.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/installationrequest/installverificationtoken.json": {
       "hash": "a3ed6c9ea8dda269678a864bffeb7ba956aa860d1e3129db8b5985793fb5f00a",
-      "last_checked": "2026-06-26T07:30:23.479043",
+      "last_checked": "2026-06-30T07:42:55.574415",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9508e76e4d743705eb6b90fcd937753b\"",
       "file_path": "documentation/MarketplaceKit/applibrary/installationrequest/installverificationtoken.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/batchinstall(_:).json": {
       "hash": "350b00adff71832ea1d51bd05ac62613b7a37aec80f34d8d6992e2037b2d4ccd",
-      "last_checked": "2026-06-26T07:30:23.828645",
+      "last_checked": "2026-06-30T07:42:56.074072",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"09cea32088b9949dae8651c7c8900ad5\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/batchinstall.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/delete(_:).json": {
       "hash": "3e2a17dc8bd5ba4a3fe8129c9a7775aa4e4077deddcdb99393e70a7c480d014e",
-      "last_checked": "2026-06-26T07:30:23.965709",
+      "last_checked": "2026-06-30T07:42:56.404591",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8d9335c613df22fd6606896b01207a96\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/delete.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/install(_:).json": {
       "hash": "5c9a624c2a81fa9cfd89c79f0655b04c6bbc09c54e5eefe133e148d192f34c0c",
-      "last_checked": "2026-06-26T07:30:24.064399",
+      "last_checked": "2026-06-30T07:42:56.516432",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"284419c5714adf2c1c0b0ae940bed385\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/install.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/action-swift.enum/launch(_:).json": {
       "hash": "7503db8bcaf647711cdd3cfe7f58a2f3e38cadbb514e9e90ae7edc2cbabdbb3b",
-      "last_checked": "2026-06-26T07:30:24.148491",
+      "last_checked": "2026-06-30T07:42:56.645383",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a1022b1e46dc104989ff2f39a56e87d5\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/action-swift.enum/launch.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/bottom.json": {
       "hash": "11724e2728fabe543f7562edd600ca5e66b71fe0200da9d974af0aff9c97b172",
-      "last_checked": "2026-06-26T07:30:24.209094",
+      "last_checked": "2026-06-30T07:42:56.765415",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"2cc338e16f21bccfb1d1721a3ac56860\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/bottom.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/leading.json": {
       "hash": "bc84f3542e2bd383eb97fbc3d7c43d45ed4f3ef41cd3845ca4e33981fc75e7e4",
-      "last_checked": "2026-06-26T07:30:24.280802",
+      "last_checked": "2026-06-30T07:42:57.071670",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"d94438b04cb9cacc3d84e0bfaf1c6238\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/leading.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/top.json": {
       "hash": "d638bfb253e6f1d3edef0d46270525a808250614a8f3b948af95ae4b7b352082",
-      "last_checked": "2026-06-26T07:30:24.372497",
+      "last_checked": "2026-06-30T07:42:57.189854",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"86597c294830e17e98a4045fbd39b4ec\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/top.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/actionbutton/buttonimageplacement/trailing.json": {
       "hash": "cc7d77126fd9cfc2bc8bdc9de4d4a3e97ee10623034abc144ed75f485408fbba",
-      "last_checked": "2026-06-26T07:30:24.423560",
+      "last_checked": "2026-06-30T07:42:57.356846",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c01954149b4ac5d4c36d440ba4a566c1\"",
       "file_path": "documentation/MarketplaceKit/actionbutton/buttonimageplacement/trailing.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/installation-swift.struct/progress.json": {
       "hash": "c47c81b17812bdfc685758224aeaf34b5abd79d6fe64b34e5327523e32931077",
-      "last_checked": "2026-06-26T07:30:25.008874",
+      "last_checked": "2026-06-30T07:42:58.464851",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6c5cbf0f509fd39194cad2fb0245ae2f\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/installation-swift.struct/progress.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/account.json": {
       "hash": "de4e768d1dc1df5f3645a8828e6e1eca1bbe7cf3fd7b661cf0bf21a8b32745b5",
-      "last_checked": "2026-06-26T07:30:24.605785",
+      "last_checked": "2026-06-30T07:42:57.616394",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"27172ed27241b41d9c3eee2424ef07a7\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/account.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/appleversionid.json": {
       "hash": "adbfd4254046c1bc18c5df3e054fcc52a40435cd67e03e9b92971dc2a7d28fc2",
-      "last_checked": "2026-06-26T07:30:24.764318",
+      "last_checked": "2026-06-30T07:42:57.714611",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c5680530f1f4100869ef33ddb7c5a53b\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/appleversionid.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/shortversion.json": {
       "hash": "f4196e04800bff2c31f86612592dbdec633cb8e95d1e6830599897e0646b2e74",
-      "last_checked": "2026-06-26T07:30:24.868368",
+      "last_checked": "2026-06-30T07:42:57.904795",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"27c31cf2c527294c39e2a2091774fff7\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/shortversion.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/metadata/version.json": {
       "hash": "2eb7c034eb0d672dab1af9a3e99a20b3ade2295814414fd3efa8f2d7fb5ff248",
-      "last_checked": "2026-06-26T07:30:24.962338",
+      "last_checked": "2026-06-30T07:42:58.182993",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f442a7b1d1094f4c7e10cdf6b9978320\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/metadata/version.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/providing-age-rating-appropriate-content.json": {
       "hash": "d91ee722bac84713c46d717ae77f236be60d8cece734d895e8d8187bd34851e6",
-      "last_checked": "2026-06-26T07:30:08.988715",
+      "last_checked": "2026-06-30T07:42:35.495527",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c608a58f93f6badb35512da119ec337f\"",
       "file_path": "documentation/MarketplaceKit/providing-age-rating-appropriate-content.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension.json": {
       "hash": "c14ca82759a3665d97e5ca38ef33b6ab58af1506269e8fb70c5356dce82c2037",
-      "last_checked": "2026-06-26T07:30:10.219398",
+      "last_checked": "2026-06-30T07:42:36.900013",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"6ab662011b6f82ad2c9efb851558fcd2\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/reporting-transactions-for-core-technology-commission.json": {
       "hash": "30e34f8a558189e1325560a012356db729f8bf69bd3b69c7838d376791dc98de",
-      "last_checked": "2026-06-26T07:30:11.253093",
+      "last_checked": "2026-06-30T07:42:38.184857",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"017fbbc01ae2bf5437204f76ed4936ae\"",
       "file_path": "documentation/MarketplaceKit/reporting-transactions-for-core-technology-commission.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting.json": {
       "hash": "02a4be236c8521f15e09d46afa06984e67cc6885480f8ff52e0efd11f6746ea1",
-      "last_checked": "2026-06-26T07:30:11.304972",
+      "last_checked": "2026-06-30T07:42:38.301347",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"06e830d7c752680f41dd3fa5461e15aa\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/participating-in-alternative-distribution-for-specific-regions.json": {
       "hash": "d671c42f0d6e231bc4f2967ca2e1f7cd0ba6d47fa3734a23b558ef2ddca26dd5",
-      "last_checked": "2026-06-26T07:30:11.603015",
+      "last_checked": "2026-06-30T07:42:38.565230",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c514ffa874e9ebffb01e129a86174354\"",
       "file_path": "documentation/MarketplaceKit/participating-in-alternative-distribution-for-specific-regions.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/maximumallowedagerating.json": {
       "hash": "4e3eaadccfb5a4347de1df2f7d2f81cb10ed137881ee23dbe7887a3a12df2262",
-      "last_checked": "2026-06-26T07:30:12.652667",
+      "last_checked": "2026-06-30T07:42:40.341371",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"beb8a139732eeeb9205daf349db011f2\"",
       "file_path": "documentation/MarketplaceKit/applibrary/maximumallowedagerating.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest.json": {
       "hash": "8eb6805768d7b54c6a726b9ce91e55f4771ad9b6326aa225e8e8dabe2d27d181",
-      "last_checked": "2026-06-26T07:30:12.828347",
+      "last_checked": "2026-06-30T07:42:40.473721",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"e85ca1b47bdb1d6f6f7ba069ccd36395\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/currentageexceptionrequests().json": {
       "hash": "2e35a46a63efdfe83315b8d0ab5b1dd4b56bb5b247ee43a59e9ce7dbe6b640b8",
-      "last_checked": "2026-06-26T07:30:12.927448",
+      "last_checked": "2026-06-30T07:42:40.600209",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"31d64b246ccf40f989c6a9935a5c838a\"",
       "file_path": "documentation/MarketplaceKit/applibrary/currentageexceptionrequests.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/catalogregion.json": {
       "hash": "13567a07e4263007ab9c01591b9c7133ee61ef2eec86facf42eb03818459c797",
-      "last_checked": "2026-06-26T07:30:13.368542",
+      "last_checked": "2026-06-30T07:42:41.246677",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"a6ff67c80e2e00ce48ccb0bcbfebeefa\"",
       "file_path": "documentation/MarketplaceKit/applibrary/catalogregion.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/additionalheaders(for:account:).json": {
       "hash": "5ecef517bea31d04a953bcb7fcbdb6e33832d64817a65fa4926c1bfe84a3da22",
-      "last_checked": "2026-06-26T07:30:14.926716",
+      "last_checked": "2026-06-30T07:42:43.697324",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"0dc3a3782586d59074a968845df2c070\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/additionalheaders-foraccount.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/automaticupdates(for:).json": {
       "hash": "faaaae78a3d5ef2e3170dcec79420485656ae5245212e0f7470a7ca83816cbd0",
-      "last_checked": "2026-06-26T07:30:14.972733",
+      "last_checked": "2026-06-30T07:42:43.833490",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8c585ee353d816b18a651c24b4bbe783\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/automaticupdates-for.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/availableappversions(forappleitemids:).json": {
       "hash": "aa750dd7d5b476a4dacb5c6c1dcf7d38e85e5400c98e5a3cbcf404fb4430dc2b",
-      "last_checked": "2026-06-26T07:30:15.220329",
+      "last_checked": "2026-06-30T07:42:43.948382",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f582b60dc8477bec949db59aa2b65b0e\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/availableappversions-forappleitemids.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplaceappextension/requestfailed(response:).json": {
       "hash": "5e18e301562a8890d2adc2f2b640c04d8a97b4903c7f01bca2bf1d7d0488660b",
-      "last_checked": "2026-06-26T07:30:15.269044",
+      "last_checked": "2026-06-30T07:42:44.088657",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8e08a590ad7058960c9245504c6329ac\"",
       "file_path": "documentation/MarketplaceKit/marketplaceappextension/requestfailed-response.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/init(account:appleitemid:alternativedistributionpackage:isupdate:appshareurl:requestageexception:).json": {
       "hash": "f6d14b0d4375da6207f7ea8f680b840faeafe95ab569cc43a0767fd1488415ab",
-      "last_checked": "2026-06-26T07:30:16.894087",
+      "last_checked": "2026-06-30T07:42:46.372590",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"06e32fc2dfa2232f006b30eb990c4f1a\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/init-accountappleitemidalternativedistributionpackageisupdateappshareurlrequestageexception.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/installmetadata/requestageexception.json": {
       "hash": "545cd50a537a5d1671def5fbeb09c98c00656b18aeab140ceea4a34ced5b31cf",
-      "last_checked": "2026-06-26T07:30:17.421125",
+      "last_checked": "2026-06-30T07:42:47.177658",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"c0beafe5f8f8ccef1a4177573742cf4f\"",
       "file_path": "documentation/MarketplaceKit/installmetadata/requestageexception.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/token(for:).json": {
       "hash": "2c10f36717eaaa2223c08a3cd4301dc0b524217fbab22c28900e1fc84e89a06a",
-      "last_checked": "2026-06-26T07:30:19.516673",
+      "last_checked": "2026-06-30T07:42:50.004657",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"37f93b99ebbfaf4af9150fac52c5d83d\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/token-for.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/tokentype.json": {
       "hash": "1291ab7f081d7d54940139a88100947028befb95b3623bf412b22f0a826cac5f",
-      "last_checked": "2026-06-26T07:30:19.617105",
+      "last_checked": "2026-06-30T07:42:50.135007",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"b7c2636491d1b60bc6529b1d3c9360ce\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/ageratingexceptionnotneeded.json": {
       "hash": "37b934bd69434633d5df2d749440d2cb4c3c0ff4d411eca07f11ff58e48929c4",
-      "last_checked": "2026-06-26T07:30:21.373951",
+      "last_checked": "2026-06-30T07:42:52.226212",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"5c5819cc04fe1d4c5f1e91bbe80a42ed\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/ageratingexceptionnotneeded.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/marketplacekiterror/missingageratingexceptionrequest.json": {
       "hash": "b4fb1eab0347ad2152126836a0457b7f394e0983fffb842507f13c5371d941ab",
-      "last_checked": "2026-06-26T07:30:21.419365",
+      "last_checked": "2026-06-30T07:42:52.360320",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"b269e11dd7d75d5d1b5b1cd87efd057e\"",
       "file_path": "documentation/MarketplaceKit/marketplacekiterror/missingageratingexceptionrequest.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/presentageexceptionapproveinpersonsheet().json": {
       "hash": "f22282d388e863c5fdcac3e41b924aefc7689a74fade803dbc7a12cae13bb025",
-      "last_checked": "2026-06-26T07:30:23.025579",
+      "last_checked": "2026-06-30T07:42:54.819221",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"94fd77f8708a6b207b28aaf0c6e72d32\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/presentageexceptionapproveinpersonsheet.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/appleitemid.json": {
       "hash": "7922ad1cba3446f749750ffe4802354270039d9f3ee84573101209c1c4ea9999",
-      "last_checked": "2026-06-26T07:30:23.579563",
+      "last_checked": "2026-06-30T07:42:55.693367",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"72f6e56a8d7398a02a556ca150e4688a\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/appleitemid.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.property.json": {
       "hash": "66f9a73bce9ffc359d87186dbed234d190282100648e81f1f096688ff9fa3fa8",
-      "last_checked": "2026-06-26T07:30:23.674727",
+      "last_checked": "2026-06-30T07:42:55.822268",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4a761e350e90f0abd66d9d440ae8d8cf\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swiftproperty.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum.json": {
       "hash": "588f3c1d65815031aa111e8ba7365328b7c7bffd1f048f20a39d2f4219350e64",
-      "last_checked": "2026-06-26T07:30:23.782695",
+      "last_checked": "2026-06-30T07:42:55.973121",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9a1a4b02ab7beb2b4232a186f09efd48\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swiftenum.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/transactionreporting/tokentype/coretechnology.json": {
       "hash": "3923d96a11e34bd3a08d03e43bb761d6c1496de382ba01b784f3f984983e091c",
-      "last_checked": "2026-06-26T07:30:24.560875",
+      "last_checked": "2026-06-30T07:42:57.458811",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"fe50b18f8c29e928b69926e0d491d036\"",
       "file_path": "documentation/MarketplaceKit/transactionreporting/tokentype/coretechnology.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/approved.json": {
       "hash": "037bde3c9a3906081b1604f603752cdd27e8c75f759a3162edd4feae49e71aba",
-      "last_checked": "2026-06-26T07:30:25.060319",
+      "last_checked": "2026-06-30T07:42:58.575588",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"599cba13c9b4a4e390b6eaf9cf9542a3\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/approved.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/declined.json": {
       "hash": "200176d52820acce745ec0dfc714c7db05d67f5f16be7d9d11229b8d7f1d9b63",
-      "last_checked": "2026-06-26T07:30:25.180886",
+      "last_checked": "2026-06-30T07:42:58.736869",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"9e81de7c943729fbd9e8dbe65114f18a\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/declined.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/exceptionrequest/status-swift.enum/pending.json": {
       "hash": "76da9462aded1f26b6a153ef729f58381c84d608a72073f41cc5e8af2a112103",
-      "last_checked": "2026-06-26T07:30:25.298616",
+      "last_checked": "2026-06-30T07:42:58.870308",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"4cc793b7cced19522edd1cea0b367cff\"",
       "file_path": "documentation/MarketplaceKit/applibrary/exceptionrequest/status-swift.enum/pending.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/appdistributor/eligibilityregion.json": {
       "hash": "2290d5a08b82529ad68810787241c9200256e7d305967ff27524ccd850a50555",
-      "last_checked": "2026-06-26T07:30:19.417751",
+      "last_checked": "2026-06-30T07:42:49.882903",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"1d40d7651fef76cef9c2c451fffe0f32\"",
       "file_path": "documentation/MarketplaceKit/appdistributor/eligibilityregion.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/requestappdeletionaction.json": {
       "hash": "3cc4b5f810d72bba671d38fc6f330fed3521ba01a0ece4f0b5d4abf19a09aa11",
-      "last_checked": "2026-06-26T07:30:10.111734",
+      "last_checked": "2026-06-30T07:42:36.760626",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"83d83f967cf73d66d779d136684f8297\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/requestappdeletionaction/callasfunction(_:).json": {
       "hash": "0a3844a20d1e62c500c40ffcc80879315069ce5ab77127fe3b5d86543b4aa563",
-      "last_checked": "2026-06-26T07:30:14.827320",
+      "last_checked": "2026-06-30T07:42:43.598301",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"8e300f042f20e86dd95199732b6c5f6c\"",
       "file_path": "documentation/MarketplaceKit/requestappdeletionaction/callasfunction.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/marketplacekit/applibrary/app/requestdeletion(in:).json": {
       "hash": "851149c4311c4a2eb120a2b060f3c93bd98baf88b5c654b906fe9a7f9b3380e9",
-      "last_checked": "2026-06-26T07:30:23.106028",
+      "last_checked": "2026-06-30T07:42:54.951537",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:30:07.057096",
+      "session_id": "2026-06-30T07:42:33.723979",
       "etag": "W/\"f42464827b04a11693af31abc9ef066d\"",
       "file_path": "documentation/MarketplaceKit/applibrary/app/requestdeletion-in.md"
     },

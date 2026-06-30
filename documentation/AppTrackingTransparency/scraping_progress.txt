@@ -1,4 +1,4 @@
 Completed scraping App Tracking Transparency!
-Total pages scraped: 10
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 11
 Pages failed: 0

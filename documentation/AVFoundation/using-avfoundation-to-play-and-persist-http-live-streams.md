@@ -223,9 +223,9 @@ var totalDurationWatched: Double {
 ## See Also
 
 - [class AVAssetDownloadURLSession](avassetdownloadurlsession.md)
-  A URL session that creates and executes asset download tasks.
+  A URL session that creates and manages asset download tasks.
 - [class AVAssetDownloadTask](avassetdownloadtask.md)
-  A session used to download HTTP Live Streaming assets.
+  A URL session task that downloads a remote asset to the device for offline playback.
 - [class AVAggregateAssetDownloadTask](avaggregateassetdownloadtask.md)
   A task that downloads multiple media selections for an asset.
 

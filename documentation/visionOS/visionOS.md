@@ -65,6 +65,8 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Build, design, and orchestrate 3D content for your RealityKit apps.
 - [Chaparral Village: Building an immersive visionOS adventure game](chaparral-village-building-an-immersive-visionos-adventure-game.md)
   Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
+- [Designing no-code games with Reality Composer Pro 3](designing-no-code-games-in-reality-composer-pro-3.md)
+  Build a video game in Reality Composer Pro without code using Script Graphs.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -121,7 +123,7 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
 - [Preparing spatial accessories for tracking in your visionOS app](../ARKit/preparing-spatial-accessories-for-tracking-in-your-visionos-app.md)
   Prepare a spatial accessory for tracking by training a reference accessory file and integrating it into your visionOS app.
 - [Working with generic spatial accessories](working-with-generic-spatial-accessories.md)
-  Use generic spatial accessories to track purpose-built devices in your visionOS app.
+  Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 ### SharePlay
 - [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md)
   Create a team-based guessing game for visionOS using Group Activities.
@@ -192,6 +194,9 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
+### Articles
+- [Monitoring fit and field of view coverage](monitoring-fit-and-field-of-view-coverage.md)
+  Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
 
 
 ---

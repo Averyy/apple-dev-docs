@@ -24,6 +24,7 @@ The second category focuses on platform control to help you get the most out of 
 - **[`Object-tracking parameter adjustment`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.object-tracking-parameter-adjustment.allow)**: Optimize known object detection and tracking using configurable parameters.
 - **[`Increased performance headroom`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.app-compute-category)**: Use increased power of the CPU and GPU for high-compute needs, with a tradeoff of increased thermal usage and reduced battery life.
 - **[`Window Follow Mode`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.window-body-follow)**: Allow windows to follow the user to their next destination.
+- **[`Visual Fidelity monitoring`](https://developer.apple.com/documentation/BundleResources/Entitlements/com.apple.developer.arkit.visual-fidelity.allow)**: Monitor fit and field of view coverage on Apple Vision Pro.
 
 > **Note**: Each of these entitlements allows a device to operate outside the default configuration. When using these features, be aware that they may impact the performance of other apps.
 
@@ -56,6 +57,20 @@ To add an entitlement in Xcode:
 4. Double-click the entitlement to add it to the Signing section. This creates a `.entitlements` file with the relevant capability, such as `com.apple.developer.arkit.main-camera-access.allow` for “Main camera access”.
 
 After you add the `.license` and `.entitlements` files, you can implement and test the APIs you have approval to use. For more information, see [`Adding capabilities to your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/adding-capabilities-to-your-app).
+
+##### Verify Your Apps License and Entitlements
+
+Your app can use the VisionEntitlementServices framework to confirm that your enterprise API license is valid and that your app is approved for a specific enterprise entitlement.
+
+```swift
+import VisionEntitlementServices
+
+if EnterpriseLicenseDetails.shared.licenseStatus != .valid {
+    // Enterprise API license is invalid.
+} else if !EnterpriseLicenseDetails.shared.isApproved(for: .mainCameraAccess) {
+    // Enterprise API license isn't approved for the specified entitlement.
+}
+```
 
 ## See Also
 

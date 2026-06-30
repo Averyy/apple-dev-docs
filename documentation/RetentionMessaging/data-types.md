@@ -95,6 +95,8 @@ Refer to these data types for request and response payloads.
 ### Advanced commerce information
 - [type advancedCommerceData](advancedcommercedata.md)
   A Base64-encoded JSON object which contains a JWS with information describing an offer or switch-plan recommendation.
+### Alternate product information
+- [type billingPlanType](billingplantype.md)
 
 
 ---

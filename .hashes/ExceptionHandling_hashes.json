@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:31:31.374943",
+    "last_updated": "2026-06-30T07:44:42.799968",
     "total_pages": 76,
-    "session_id": "2026-06-26T07:31:27.102029"
+    "session_id": "2026-06-30T07:44:37.042388"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ExceptionHandling.json": {
       "hash": "c9b3c537e6ce1df3b89de0659d3aa5a5c10750ceb867c3be606ffe4adac0b6c7",
-      "last_checked": "2026-06-26T07:31:27.493367",
+      "last_checked": "2026-06-30T07:44:37.415457",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"8cd4989a94c7c28d8a03f2bc4cf3979c\"",
       "file_path": "documentation/ExceptionHandling/ExceptionHandling.md"
     },
     "https://developer.apple.com/documentation/ExceptionHandling": {
       "hash": "c9b3c537e6ce1df3b89de0659d3aa5a5c10750ceb867c3be606ffe4adac0b6c7",
-      "last_checked": "2026-06-26T07:31:27.391515",
+      "last_checked": "2026-06-30T07:44:37.292826",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"8cd4989a94c7c28d8a03f2bc4cf3979c\"",
       "file_path": "documentation/ExceptionHandling/ExceptionHandling.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler.json": {
       "hash": "779accc1d0a4df3d7bce5706c54e154f357cd239a700b56d633362d0ba142e3b",
-      "last_checked": "2026-06-26T07:31:27.726067",
+      "last_checked": "2026-06-30T07:44:37.811491",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"c3452f6c027b361c66d04f73103b94a8\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandlerdelegate.json": {
       "hash": "1240f4f545972860c52e5f41ab2188ee6a34778c6c6a6bd79eec81b9c17e0c23",
-      "last_checked": "2026-06-26T07:31:27.845802",
+      "last_checked": "2026-06-30T07:44:37.994425",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"14c000171e7b75bc9de3de6eedc2ecbd\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandlerdelegate.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exceptionhandling-enumerations.json": {
       "hash": "990aae1f822e73b935abfa4c30c074261ef83b9ad64617d247e822319869bf56",
-      "last_checked": "2026-06-26T07:31:28.100872",
+      "last_checked": "2026-06-30T07:44:38.112696",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"9a7da47a83ef75b9afb5107dbeba7320\"",
       "file_path": "documentation/ExceptionHandling/exceptionhandling-enumerations.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exceptionhandling-constants.json": {
       "hash": "5f2a700f48405c9795a16d16eaf53d7a811c04d5369ef608584affd005be1482",
-      "last_checked": "2026-06-26T07:31:28.206295",
+      "last_checked": "2026-06-30T07:44:38.262258",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"abd6973a2afd90a41de6579533d9d56f\"",
       "file_path": "documentation/ExceptionHandling/exceptionhandling-constants.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exceptionhandling-functions.json": {
       "hash": "ed0590be2fe892f775897c9daec12b2e16944d1fb5893e8bd1a93a207fb5ee73",
-      "last_checked": "2026-06-26T07:31:28.428688",
+      "last_checked": "2026-06-30T07:44:38.390585",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"ae9bc4005e6194e12989a6dbf959c2f8\"",
       "file_path": "documentation/ExceptionHandling/exceptionhandling-functions.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/default().json": {
       "hash": "9d145f755b821c848b811194be6c78fa041561aeba430de270c5141590affecf",
-      "last_checked": "2026-06-26T07:31:28.539040",
+      "last_checked": "2026-06-30T07:44:38.573199",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"c4b185adf5c2abb4f1210b87cbaaeee3\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/default.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/exceptionhandlingmask().json": {
       "hash": "8092275598e240b60894294b988871551bfd9bfe57be85cca8e0d4debd5b9fc7",
-      "last_checked": "2026-06-26T07:31:28.644648",
+      "last_checked": "2026-06-30T07:44:38.869998",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"6e32d971dcde036c4ecf54c45dcb5cbb\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/exceptionhandlingmask.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/exceptionhangingmask().json": {
       "hash": "a76331c31596a8976092ec594837abd075b1be8318ba6cb0cfccdbb9eb7dd875",
-      "last_checked": "2026-06-26T07:31:28.701331",
+      "last_checked": "2026-06-30T07:44:39.016222",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"6e72bde52a06499e4d2f55f68b36ab7e\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/exceptionhangingmask.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/setexceptionhandlingmask(_:).json": {
       "hash": "4a5dbad6838570623c59faeef947bdfd0aaf7c9520b5c54db3357a0d51d0aaaf",
-      "last_checked": "2026-06-26T07:31:28.804670",
+      "last_checked": "2026-06-30T07:44:39.191548",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"bc08cc2629816dac118492e68fb6dc50\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/setexceptionhandlingmask.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/setexceptionhangingmask(_:).json": {
       "hash": "11aabfaf1e7b956c90f4ba416db6b8da7c6ea2cb968a21e1c4277dcc10ef8eb8",
-      "last_checked": "2026-06-26T07:31:28.909579",
+      "last_checked": "2026-06-30T07:44:39.491123",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"6656348b9e96df3b00b39b4a5dfa5d80\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/setexceptionhangingmask.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/delegate().json": {
       "hash": "bcb6862187de8e878ea6d6e88a252cabe0f82cb6dc093f067827fc65d9f7cec1",
-      "last_checked": "2026-06-26T07:31:29.013667",
+      "last_checked": "2026-06-30T07:44:39.602854",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"f7a63bcae6437fee45549941fda49adc\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/delegate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandler/setdelegate(_:).json": {
       "hash": "69a518971cd44bf9a2b8c650adad2d3ca29ada15b7ce1c0a392f500d3ecde892",
-      "last_checked": "2026-06-26T07:31:29.138751",
+      "last_checked": "2026-06-30T07:44:39.716571",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"1549c7f20557a23d0a9822b7c0739e67\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandler/setdelegate.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/logging-and-handling-constants.json": {
       "hash": "3216c9a9f9f395bfe8c1b66ebc65f999c546acd537dbfeb0442f8c264de3237f",
-      "last_checked": "2026-06-26T07:31:29.186047",
+      "last_checked": "2026-06-30T07:44:39.900452",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"341ffbf2b931f6fa0914267608819aa5\"",
       "file_path": "documentation/ExceptionHandling/logging-and-handling-constants.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/system-hang-constants.json": {
       "hash": "29e233d96bfc8d27fc4f9eabee5399a3c42eae5b8a2045f0fa15916ae792346d",
-      "last_checked": "2026-06-26T07:31:29.299467",
+      "last_checked": "2026-06-30T07:44:40.069354",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"9ad4c9a326762934814de67cb88f0172\"",
       "file_path": "documentation/ExceptionHandling/system-hang-constants.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/exception-global-string-constants.json": {
       "hash": "f74c19dcdc0c3687525bdc6490140dbd2e68e06e1c0f3c408d82b3641d88c78f",
-      "last_checked": "2026-06-26T07:31:29.349066",
+      "last_checked": "2026-06-30T07:44:40.179239",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"222aaa3b9a27b0c3ca493697718ae84e\"",
       "file_path": "documentation/ExceptionHandling/exception-global-string-constants.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsstacktracekey.json": {
       "hash": "65add6c7cf911214ffc01806af4a201b93d0a131e2bd9465959480b50e44a77b",
-      "last_checked": "2026-06-26T07:31:29.487479",
+      "last_checked": "2026-06-30T07:44:40.372191",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"f593c8972b7afec1203672a28842c22e\"",
       "file_path": "documentation/ExceptionHandling/nsstacktracekey.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsuncaughtruntimeerrorexception.json": {
       "hash": "23cb16245d77b7aaaa45e9e4b2dd5479f01815982200e10e58e8543a94ed25f8",
-      "last_checked": "2026-06-26T07:31:29.708217",
+      "last_checked": "2026-06-30T07:44:40.490422",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"3396c2d4e317ab1248742d7dc94451e8\"",
       "file_path": "documentation/ExceptionHandling/nsuncaughtruntimeerrorexception.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsuncaughtsystemexceptionexception.json": {
       "hash": "50723b4a83831c4010e256f53e956a90557fcb1574b1bdc1bc5b81b71436c465",
-      "last_checked": "2026-06-26T07:31:29.871878",
+      "last_checked": "2026-06-30T07:44:40.605951",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"c27e1ee48a484d5608ef314bf8f3789b\"",
       "file_path": "documentation/ExceptionHandling/nsuncaughtsystemexceptionexception.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsexceptionhandlerresume().json": {
       "hash": "d1594d85839a11dbb1219c307577f8f07c0344585c697f6c527257ad9b17307b",
-      "last_checked": "2026-06-26T07:31:30.003531",
+      "last_checked": "2026-06-30T07:44:40.749952",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"67e9ae0488f8ccb607b9df4077e5a780\"",
       "file_path": "documentation/ExceptionHandling/nsexceptionhandlerresume.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsloguncaughtexceptionmask.json": {
       "hash": "87011bdc2bef19912c7065a6e3086c7ec37a061bcfd3505df8912092d2997e95",
-      "last_checked": "2026-06-26T07:31:30.060004",
+      "last_checked": "2026-06-30T07:44:40.872261",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"f6ffd0147539ff73d6fe631918ef5c36\"",
       "file_path": "documentation/ExceptionHandling/nsloguncaughtexceptionmask.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshandleuncaughtexceptionmask.json": {
       "hash": "95ce03cb70d6f6d8b6ff601decc23367c4c724433fca2aee6067a8efd4d966e2",
-      "last_checked": "2026-06-26T07:31:30.119988",
+      "last_checked": "2026-06-30T07:44:41.017741",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"19e693312ccccfe498008c0e7b489ac4\"",
       "file_path": "documentation/ExceptionHandling/nshandleuncaughtexceptionmask.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsloguncaughtsystemexceptionmask.json": {
       "hash": "38a328f0fd7b3332932e2ea52258d69fe84e57951cbc3073c9d3ab94e8e20af1",
-      "last_checked": "2026-06-26T07:31:30.180039",
+      "last_checked": "2026-06-30T07:44:41.152593",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"0407058a28a7be7d41b9a97bf95121ad\"",
       "file_path": "documentation/ExceptionHandling/nsloguncaughtsystemexceptionmask.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshandleuncaughtsystemexceptionmask.json": {
       "hash": "9483a1468d906c8968be176753bb8c4779b3f13837fa49c7578b8820ee79ab7b",
-      "last_checked": "2026-06-26T07:31:30.245824",
+      "last_checked": "2026-06-30T07:44:41.276791",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"54c0a437acacf52e74d8f6540131ca8b\"",
       "file_path": "documentation/ExceptionHandling/nshandleuncaughtsystemexceptionmask.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nsloguncaughtruntimeerrormask.json": {
       "hash": "e50acbf35092e822f3422ace79264efef849c5927bb99f3fb76f13b4976af3b6",
-      "last_checked": "2026-06-26T07:31:30.366148",
+      "last_checked": "2026-06-30T07:44:41.444096",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"83de0d17c79697f3415e44b2c39073c2\"",
       "file_path": "documentation/ExceptionHandling/nsloguncaughtruntimeerrormask.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshandleuncaughtruntimeerrormask.json": {
       "hash": "1ed14eae4d9d286719aa534ae3d335487b15516a24d93fdbf9b6a5c995d33569",
-      "last_checked": "2026-06-26T07:31:30.433077",
+      "last_checked": "2026-06-30T07:44:41.548920",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"292b8ac053a23d712d76c160117ee14d\"",
       "file_path": "documentation/ExceptionHandling/nshandleuncaughtruntimeerrormask.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nslogtoplevelexceptionmask.json": {
       "hash": "511892ee170cbb9cd1ebbcd814220bdc097dd9832fca4166d32a1e9a30a5d896",
-      "last_checked": "2026-06-26T07:31:30.554816",
+      "last_checked": "2026-06-30T07:44:41.729211",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"0896149e903c549face3c210b768fda5\"",
       "file_path": "documentation/ExceptionHandling/nslogtoplevelexceptionmask.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshandletoplevelexceptionmask.json": {
       "hash": "7a32d3601f4868a0fdbccf4258bfceb72998a195461128c241c895d3d19c8374",
-      "last_checked": "2026-06-26T07:31:30.646038",
+      "last_checked": "2026-06-30T07:44:41.843989",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"6e5f3d47df781a5ec5df1ae483a3da56\"",
       "file_path": "documentation/ExceptionHandling/nshandletoplevelexceptionmask.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nslogotherexceptionmask.json": {
       "hash": "7c74c84973ab35d6aaf77b694abce04dbc6ece45e0c8dc5d32930d616072ff45",
-      "last_checked": "2026-06-26T07:31:30.762046",
+      "last_checked": "2026-06-30T07:44:41.966479",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"4b40ed9e653b1254804e1fc5bbcc130e\"",
       "file_path": "documentation/ExceptionHandling/nslogotherexceptionmask.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshandleotherexceptionmask.json": {
       "hash": "9a1abae0edf8e949aba84ffe7d442ad37bcd544a8d891c0f9c239d2fd15320c0",
-      "last_checked": "2026-06-26T07:31:30.933750",
+      "last_checked": "2026-06-30T07:44:42.113294",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"dc5cad98337fcacc177efab93b1f8354\"",
       "file_path": "documentation/ExceptionHandling/nshandleotherexceptionmask.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangonuncaughtexceptionmask.json": {
       "hash": "09093f71cb5c0f6d2e0be32d161f54db7e00856cda41db0bf24934adb3847606",
-      "last_checked": "2026-06-26T07:31:31.041046",
+      "last_checked": "2026-06-30T07:44:42.243708",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"83efa24ffdc672e0c9f3ec0a4584910e\"",
       "file_path": "documentation/ExceptionHandling/nshangonuncaughtexceptionmask.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangonuncaughtsystemexceptionmask.json": {
       "hash": "1aead1848615d1a5fe3c7d0159f9f872a1fa9e87e2ab594a0b3effd3dd0ce678",
-      "last_checked": "2026-06-26T07:31:31.134660",
+      "last_checked": "2026-06-30T07:44:42.373205",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"7130f0203e4ca6bbd8b12d748a210ef9\"",
       "file_path": "documentation/ExceptionHandling/nshangonuncaughtsystemexceptionmask.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangonuncaughtruntimeerrormask.json": {
       "hash": "4691e63acf201f37ea27ca9bf0cb9019d52a73a6322761aa79b91720977130d2",
-      "last_checked": "2026-06-26T07:31:31.187116",
+      "last_checked": "2026-06-30T07:44:42.502203",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"3d6fda4c476c2d71a033163393754d61\"",
       "file_path": "documentation/ExceptionHandling/nshangonuncaughtruntimeerrormask.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangontoplevelexceptionmask.json": {
       "hash": "df3fd3342251f3328651b9ae226c06e94b5d8487d73fd002ffa54ed6d2ee8975",
-      "last_checked": "2026-06-26T07:31:31.312768",
+      "last_checked": "2026-06-30T07:44:42.655581",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"07be0a2d97ff0ad08ad76dbbfb987cb1\"",
       "file_path": "documentation/ExceptionHandling/nshangontoplevelexceptionmask.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/exceptionhandling/nshangonotherexceptionmask.json": {
       "hash": "cd1702ba5ef1ea9f4b672619e487e7eef5554367e35ed6673d7cae99ae4ee7f3",
-      "last_checked": "2026-06-26T07:31:31.373690",
+      "last_checked": "2026-06-30T07:44:42.779577",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:27.102029",
+      "session_id": "2026-06-30T07:44:37.042388",
       "etag": "W/\"376e192dd9d3fa29da85c591030aa74e\"",
       "file_path": "documentation/ExceptionHandling/nshangonotherexceptionmask.md"
     },

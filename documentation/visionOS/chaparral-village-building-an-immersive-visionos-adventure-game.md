@@ -16,6 +16,8 @@ Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 
 - [Reality Composer Pro](../RealityComposerPro/RealityComposerPro.md)
   Build, design, and orchestrate 3D content for your RealityKit apps.
+- [Designing no-code games with Reality Composer Pro 3](designing-no-code-games-in-reality-composer-pro-3.md)
+  Build a video game in Reality Composer Pro without code using Script Graphs.
 - [Petite Asteroids: Building a volumetric visionOS game](petite-asteroids-building-a-volumetric-visionos-game.md)
   Use the latest RealityKit APIs to create a beautiful video game for visionOS.
 - [BOT-anist](bot-anist.md)
@@ -42,8 +44,6 @@ Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
   Query and react to changes in the position and rotation of Apple Vision Pro.
 - [Manipulating entities with solid collisions](manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
-- [Gaussian splats on visionOS](gaussian-splats-on-visionos.md)
-  Use the new Gaussian splat APIs available in RealityKit in visionOS 27.
 
 
 ---

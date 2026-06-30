@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-26T07:31:35.510563",
+    "last_updated": "2026-06-30T07:44:49.956955",
     "total_pages": 46,
-    "session_id": "2026-06-26T07:31:33.410044"
+    "session_id": "2026-06-30T07:44:46.308627"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ManagedSettingsUI.json": {
       "hash": "3b4afce918e8ad54d153b445c2548ab3b6360ee2d252e01ec086d25f1686c494",
-      "last_checked": "2026-06-26T07:31:33.685808",
+      "last_checked": "2026-06-30T07:44:46.586565",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"c8a674a83fd815a2a49c556f800b6e1e\"",
       "file_path": "documentation/ManagedSettingsUI/ManagedSettingsUI.md"
     },
     "https://developer.apple.com/documentation/ManagedSettingsUI": {
       "hash": "3b4afce918e8ad54d153b445c2548ab3b6360ee2d252e01ec086d25f1686c494",
-      "last_checked": "2026-06-26T07:31:33.578244",
+      "last_checked": "2026-06-30T07:44:46.467115",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"c8a674a83fd815a2a49c556f800b6e1e\"",
       "file_path": "documentation/ManagedSettingsUI/ManagedSettingsUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource.json": {
       "hash": "10f9bf6c76402e4ea5834717e8a471fbef871992d8b69ab64e4f29496954e6ec",
-      "last_checked": "2026-06-26T07:31:33.975911",
+      "last_checked": "2026-06-30T07:44:46.961713",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"4f1920ef1963454739c410477deaa1a9\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration.json": {
       "hash": "be3123dbdea850caa1305a1d6d468bb6a156d8dfd32eb73749b8827ba59cc730",
-      "last_checked": "2026-06-26T07:31:33.906750",
+      "last_checked": "2026-06-30T07:44:46.797058",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"c351b5df82650cf4db6ab620dfed2449\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource/configuration(shielding:)-5uqm1.json": {
       "hash": "f1d5014ba021889553368b2893c2beb1cbef477fdd1fb559c863f737c2d48f7c",
-      "last_checked": "2026-06-26T07:31:35.024090",
+      "last_checked": "2026-06-30T07:44:48.836771",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"643da8f477700eb872d2b01e47962223\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource/configuration-shielding-5uqm1.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource/configuration(shielding:in:)-ia14.json": {
       "hash": "ae8737476ed376fb273259d98e467a8aa481208df111056c8f45155883040f30",
-      "last_checked": "2026-06-26T07:31:35.096879",
+      "last_checked": "2026-06-30T07:44:49.024522",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"3b100c943779748d923a33c581f7c3c3\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource/configuration-shieldingin-ia14.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource/configuration(shielding:)-18i24.json": {
       "hash": "96c2e37601bdb4dfdefea5db23b8adc03549c9d053321838a66b81aa008d9b8b",
-      "last_checked": "2026-06-26T07:31:35.189593",
+      "last_checked": "2026-06-30T07:44:49.136705",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"cf698c3b01123fb11ffcb97ca24d3841\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource/configuration-shielding-18i24.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource/configuration(shielding:in:)-6n6rd.json": {
       "hash": "645d569e778bc3d69c4d7b76b7d682bb70714cffb210d4e38b375323ece93066",
-      "last_checked": "2026-06-26T07:31:35.257307",
+      "last_checked": "2026-06-30T07:44:49.348620",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"4afea8fe674ab41504a452a5fb40d48c\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource/configuration-shieldingin-6n6rd.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfigurationdatasource/init().json": {
       "hash": "f2ccb9f87035060ca861508b2f145159818b477d3ca107e67e6ffbb6552f06c3",
-      "last_checked": "2026-06-26T07:31:35.306065",
+      "last_checked": "2026-06-30T07:44:49.474619",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"5f588becddde76854181eed033f2d940\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfigurationdatasource/init.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/backgroundblurstyle.json": {
       "hash": "62ca81d54cc696e75beda18906a562af0a168a3beaa6793551e7874dfa76ca8d",
-      "last_checked": "2026-06-26T07:31:34.257433",
+      "last_checked": "2026-06-30T07:44:47.424477",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"3f7b7caaad0afa178ef983763d872b5c\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/backgroundblurstyle.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/backgroundcolor.json": {
       "hash": "02730d90550bb7f80d51eafbd122b1e84078b79b5ee17d14e0439c5437123b39",
-      "last_checked": "2026-06-26T07:31:34.304989",
+      "last_checked": "2026-06-30T07:44:47.589334",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"72dd610b2bc145d6e9af822f57e10f8f\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/backgroundcolor.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/icon.json": {
       "hash": "96af683be41a0531c155f07ec22189ee35068d1b507509bb51240d046557bfcf",
-      "last_checked": "2026-06-26T07:31:34.373607",
+      "last_checked": "2026-06-30T07:44:47.783407",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"23ea363e54a40384163d559b31106193\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/icon.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/primarybuttonbackgroundcolor.json": {
       "hash": "1391502c8416d839379c7b8d6bac70d926d2b298fde5d97b0ebf063235760413",
-      "last_checked": "2026-06-26T07:31:34.812956",
+      "last_checked": "2026-06-30T07:44:48.418547",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"07478f7ced18bd4f78d2cc9f399639be\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/primarybuttonbackgroundcolor.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/primarybuttonlabel.json": {
       "hash": "d3e72704fb7db51c2c53445f89d9376e182ece5f9aea958c87bc496fa86769ba",
-      "last_checked": "2026-06-26T07:31:34.728257",
+      "last_checked": "2026-06-30T07:44:48.292110",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"8862f67b568db9a9729ab195aea9d083\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/primarybuttonlabel.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/secondarybuttonlabel.json": {
       "hash": "31ab3fba10ae5da8dcd250fc21ffaf3d38eca3fc85d2845e50a46a17e22171dd",
-      "last_checked": "2026-06-26T07:31:34.902902",
+      "last_checked": "2026-06-30T07:44:48.539573",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"a2612bb0fb4ac7ba8e460db46b27bc2e\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/secondarybuttonlabel.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/subtitle.json": {
       "hash": "953e36fec7f20511c54c1445d4a79c3752073932909cc3c6d3f8dcb664cbc0eb",
-      "last_checked": "2026-06-26T07:31:34.589711",
+      "last_checked": "2026-06-30T07:44:47.996889",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"65f2841184bad2c7ab5fefa32f79dd38\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/subtitle.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/title.json": {
       "hash": "5bfba0c7b9b3e8b8468f77064b24d55dc777a78e00a7e0b2ca32de287148c75d",
-      "last_checked": "2026-06-26T07:31:34.531458",
+      "last_checked": "2026-06-30T07:44:47.884072",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"bfedb84e4b6a9566c95b27831712c06b\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/title.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/label.json": {
       "hash": "c60f3da21457f7e3e2a46ab387a663dd9d2831840d0078cb2252a48a0dd8dd3b",
-      "last_checked": "2026-06-26T07:31:34.668371",
+      "last_checked": "2026-06-30T07:44:48.178199",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"05192ef45d17c1734d51900c53f00351\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/label.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/init(backgroundblurstyle:backgroundcolor:icon:title:subtitle:primarybuttonlabel:primarybuttonbackgroundcolor:secondarybuttonlabel:).json": {
       "hash": "7d5f773274696ba599eb257ab94c42bcb58e433779c7776719766a593664fdb8",
-      "last_checked": "2026-06-26T07:31:34.078408",
+      "last_checked": "2026-06-30T07:44:47.104473",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"94865e6cdf576ab53dc27e17e29f994e\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/init-backgroundblurstylebackgroundcoloricontitlesubtitleprimarybuttonlabelprimarybuttonbackgroundcolorsecondarybuttonlabel.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/label/init(text:color:).json": {
       "hash": "a5cc5df74dcffbf9e96d232686fd371205e6995553aa1a19b271c60173fdc363",
-      "last_checked": "2026-06-26T07:31:35.400718",
+      "last_checked": "2026-06-30T07:44:49.642809",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"fc9ea43501904c1953ef788fd9b404ec\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/label/init-textcolor.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/label/color.json": {
       "hash": "c71b67d212076f7a1bf7c55d0a6a674f5c247044fe43d13d6915d857e2a28b17",
-      "last_checked": "2026-06-26T07:31:35.466062",
+      "last_checked": "2026-06-30T07:44:49.821137",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"0a82b644554d499c34a28303b93328ca\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/label/color.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/label/text.json": {
       "hash": "ec02f44f8d30a8012f35ec4a77dbe84201594b8fd71776891bca6cda5057e31c",
-      "last_checked": "2026-06-26T07:31:35.509515",
+      "last_checked": "2026-06-30T07:44:49.927991",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"763c9da0aeedf49089d062e4264af267\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/label/text.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/init(backgroundblurstyle:backgroundcolor:icon:title:subtitle:primarybuttonlabel:primarybuttonbackgroundcolor:secondarybuttonlabel:secondarybuttonsubmenuitems:).json": {
       "hash": "e285ca1167e8a4e9920116953d712fdc670b50292eb4a2f8ca7b47e42f362782",
-      "last_checked": "2026-06-26T07:31:34.182986",
+      "last_checked": "2026-06-30T07:44:47.308455",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"83b7ceb32a98465c0a6dd4614b54dc5e\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/init-backgroundblurstylebackgroundcoloricontitlesubtitleprimarybuttonlabelprimarybuttonbackgroundcolorsecondarybuttonlabelsecondarybuttonsubmenuitems.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/managedsettingsui/shieldconfiguration/secondarybuttonsubmenuitems.json": {
       "hash": "7f22961874b3b040c647e20edfe760b6878a4e5805331cfe648ec42ef6964319",
-      "last_checked": "2026-06-26T07:31:34.976290",
+      "last_checked": "2026-06-30T07:44:48.715797",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:33.410044",
+      "session_id": "2026-06-30T07:44:46.308627",
       "etag": "W/\"339b08e2c19791b5e7afc84ac3572132\"",
       "file_path": "documentation/ManagedSettingsUI/shieldconfiguration/secondarybuttonsubmenuitems.md"
     },
