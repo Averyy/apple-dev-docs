@@ -1,74 +1,53 @@
-# TN3187: Migrating to the UIKit scene-based life cycle
+# Transitioning to the UIKit scene-based life cycle
 
 **Framework**: Technotes
 
-Update your app to receive scene-based life-cycle events and manage your user interface using scene objects and methods.
+Adopt the scene-based life cycle to replace the app delegate life cycle in UIKit.
 
 #### Overview
 
-A scene represents an instance of your app’s user interface. In a document-based app, such as a text editor, each open document can be displayed in its own scene, enabling users to work on multiple documents side by side.
+The UIKit scene-based life cycle separates the app process life cycle from the UI life cycle, allowing apps to manage multiple instances of UI independently. For example, a document-based app, such as a text editor, can display each open document in its own scene, letting people work on multiple documents side by side. Your app process launches once and [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) handles it, but each piece of visible UI — each *scene* — has its own independent life cycle that [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) and [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate) coordinate. [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate) handles basic life-cycle events that apply to all scenes, while [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate) takes care of UI-specific events like window controls and geometry changes. A scene can go to the background while another stays active, and the system can create, destroy, and arrange scenes without affecting others.
 
-In iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, tvOS 18.4, visionOS 2.4 and later, UIKit logs the following message for apps that haven’t adopted the scene-based life-cycle:
+UIKit represents each scene as a [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) object. For your app’s code, this means life-cycle events no longer occur globally — they occur per scene. Tasks like saving state or updating your UI happen at the scene level rather than the app level.
 
-```None
+> ❗ **Important**:  Adopting the scene-based life cycle is required. Beginning in iOS 27, iPadOS 27, Mac Catalyst 27, tvOS 27, and visionOS 27, apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch.
+
+For more information about configuring scene support, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/uikit/specifying-the-scenes-your-app-supports).
+
+Starting in iOS 18.4, iPadOS 18.4, Mac Catalyst 18.4, tvOS 18.4, and visionOS 2.4, UIKit logs this message for apps that haven’t migrated:
+
+```other
 This process does not adopt UIScene lifecycle. 
 This will become an assert in a future version.
 ```
 
-In iOS 26, iPadOS 26, Mac Catalyst 26, tvOS 26, visionOS 26 , the log message has been updated to:
+In iOS 26, iPadOS 26, Mac Catalyst 26, tvOS 26, and visionOS 26, the message changes to:
 
-```None
-UIScene lifecycle will soon be required. 
+```other
+UIScene lifecycle will soon be required.
 Failure to adopt will result in an assert in the future.
 ```
 
-In the next major release following iOS 26, UIScene lifecycle will be required when building with the latest SDK; otherwise, your app won’t launch. While supporting multiple scenes is encouraged, only adoption of scene life-cycle is required.
+#### Determine If Your App Needs to Migrate
 
-This guide will help you add scene support to your app so you can receive scene-specific life-cycle events from UIKit and manage your user interface using scene objects and methods. For more information about how to configure scene support, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/UIKit/specifying-the-scenes-your-app-supports).
+Migrate to the scene-based life cycle if your app meets either of the following conditions:
 
-#### Determine If Your App Should Migrate
-
-Migrate to the scene-based life-cycle if your app meets either of the following conditions:
-
-- The [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key is missing from your [`Information Property List`](https://developer.apple.com/documentation/BundleResources/Information-Property-List) or it has no specified configurations.
-- You haven’t implemented the [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) method in your app delegate.
-
-#### Understand the Scene Based Life Cycle
-
-A scene contains the windows and view controllers for presenting one instance of your UI. UIKit manages each instance of your app’s UI using a [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) object.
-
-You can specify a [`UIWindowScene`](https://developer.apple.com/documentation/UIKit/UIWindowScene) object by including the class name for the scene in the `Info.plist` scene manifest.
-
-Alternatively, you can specify the class name when creating a [`UISceneConfiguration`](https://developer.apple.com/documentation/UIKit/UISceneConfiguration) object in your app delegate’s `application(:configurationForConnecting:options:)` method. When the user interacts with your app, the system creates an appropriate scene object based on the configuration data you provided. To request a scene programmatically, call the [`activateSceneSession(for:errorHandler:)`](https://developer.apple.com/documentation/UIKit/UIApplication/activateSceneSession(for:errorHandler:)) method of [`UIApplication`](https://developer.apple.com/documentation/UIKit/UIApplication).
-
-In a scene-based app:
-
-- UIKit usually creates a `UIWindowScene` object instead of a [`UIScene`](https://developer.apple.com/documentation/UIKit/UIScene) object. When configuring your app’s scene support, specify `UIWindowScene` objects instead of `UIScene` objects.
-- Use [`CPTemplateApplicationScene`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationScene) if your app is adopting scenes for CarPlay. To learn how to add a CarPlay scene see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/CarPlay/displaying-content-in-carplay).
-- [`UISceneSession`](https://developer.apple.com/documentation/UIKit/UISceneSession) contains a unique identifier and the configuration details of the scene.
-- `UISceneDelegate` and [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/UIKit/UIWindowSceneDelegate) both handle scene-specific life-cycle events.
-- `UISceneConfiguration` defines how to create and configure scenes.
-
-Unlike the `UIApplicationDelegate` object, which manages a single app-wide life-cycle, the scene-based life-cycle divides your app’s overall life cycle into two components:
-
-- The application life cycle, such as when your app process launches.
-- The life cycle of when an app has UI visible on screen, embodied by a scene.
+- The [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key is missing from your information property list, or it has no specified configurations.
+- Your app delegate doesn’t implement [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)).
 
 #### Adopt the Scene Based Life Cycle
 
-The simplest way to configure your app’s scenes is to add a `UIApplicationSceneManifest` key with a scene configuration in the `Info.plist` file.
+To configure your app’s scenes, add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key with a scene configuration to your information property list. If your app requires dynamic scene configurations — such as customizing scenes based on user activities, or handling different scene roles — implement [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) in your app delegate instead.
 
-Apps that require dynamic scene configurations, such as supporting multiple scenes, customizing scenes based on user activities, or handling different scene roles can implement the `application(_:configurationForConnecting:options:)` method in the app delegate.
+##### Configure the Information Property List for Scene Support
 
-##### Configure the Infoplist for Scene Support
-
-To configure your `Info.plist` for scene support, you should add a `UIApplicationSceneManifest` key with a scene configuration:
+Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key with a scene configuration to your information property list:
 
 1. Open your Xcode project.
 2. Select your app target.
-3. Navigate to the General settings for your app target.
+3. Go to the General settings for your app target.
 4. Select “Scene manifest” in the Deployment Info section.
-5. Edit the Info.plist file and add a `UIApplicationSceneManifest` key
+5. Add a [`UIApplicationSceneManifest`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest) key to the information property list.
 
 For example:
 
@@ -76,7 +55,7 @@ For example:
 <key>UIApplicationSceneManifest</key>
 <dict>
     <key>UIApplicationSupportsMultipleScenes</key>
-    <false/> 
+    <false/>
     <key>UISceneConfigurations</key>
     <dict>
         <key>UIWindowSceneSessionRoleApplication</key>
@@ -87,23 +66,21 @@ For example:
                 <key>UISceneDelegateClassName</key>
                 <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
                 <key>UISceneStoryboardFile</key>
-                <string>Main</string> 
+                <string>Main</string>
             </dict>
         </array>
     </dict>
 </dict>
 ```
 
-> **Note**: Supporting multiple scenes is optional. Adopting multiple scenes may require restructuring your app to make your data model more scene-specific. Consider whether your app’s user experience would benefit from it before supporting multiple scenes.
+> **Note**: Supporting multiple scenes is optional, and may require restructuring your app’s data model to be scene-specific. Consider whether your app’s user experience benefits from multiple scenes before enabling it. To support multiple scenes, set [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) to `true` and give each [`UISceneConfiguration`](https://developer.apple.com/documentation/uikit/uisceneconfiguration) a unique configuration name.
 
-To support multiple scenes, include the [`UIApplicationSupportsMultipleScenes`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UIApplicationSupportsMultipleScenes) key with its `Boolean` value set to `true`, which indicates that the app supports two or more scenes simultaneously. Each `UISceneConfiguration` should have a unique configuration name when supporting multiple scenes.
+##### Provide Scene Configurations From Your App Delegate
 
-##### Provide Scene Configurations From Your App Delegate for Dynamic Configuration
-
-Implement the `application(_:configurationForConnecting:options:)` method in your app delegate if you don’t include scene-configuration data in your app’s `Info.plist` file or if your app requires dynamic scene configuration—such as, loading different scenes based on user activity or session specific data.
+Implement [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)) in your app delegate if your app doesn’t include scene-configuration data in its information property list, or if it requires dynamic scene configuration — such as loading different scenes based on session-specific data:
 
 ```swift
-@UIApplicationMain
+@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(
         _ application: UIApplication,
@@ -111,12 +88,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
 
-        // Each UISceneConfiguration have a unique configuration name.
-        // The configuration name is a app-specific name
-        // you use to identify the scene, and it corresponds to entries
-        // in the `Info.plist` scene manifest.
-        var configurationName: String!
-    
+        // Each `UISceneConfiguration` must have a unique configuration name
+        // that corresponds to an entry in the information property list scene manifest.
+        let configurationName: String
+
         switch options.userActivities.first?.activityType {
         case UserActivity.GalleryOpenInspectorActivityType:
             // Create a photo inspector window scene.
@@ -125,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Create a default gallery window scene.
             configurationName = "Default Configuration"
         }
-        
+
         return UISceneConfiguration(
             name: configurationName,
             sessionRole: connectingSceneSession.role
@@ -134,28 +109,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
-In this example, through the use of a unique [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType), the app can distinguish which new scene to create.
+In this example, the app uses the [`activityType`](https://developer.apple.com/documentation/Foundation/NSUserActivity/activityType) property to determine which scene to create. For more information about configuring your app for different scene types, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/uikit/specifying-the-scenes-your-app-supports). For information about creating multiple windows programmatically, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/uikit/supporting-multiple-windows-on-ipad).
 
-To learn more about how to configure your app for different scene types and customize scene behavior, see [`Specifying the scenes your app supports`](https://developer.apple.com/documentation/UIKit/specifying-the-scenes-your-app-supports), and for more information about how to create multiple windows programmatically, see [`Supporting multiple windows on iPad`](https://developer.apple.com/documentation/UIKit/supporting-multiple-windows-on-ipad).
+##### Configure Your Window Scene
 
-If your root view controller is loaded from the storyboard, ensure that the storyboard name is provided in the `UISceneConfigurations` key in the `Info.plist` scene manifest. The system automatically configures your window scene and its root view controller.
+UIKit creates a [`UIWindowScene`](https://developer.apple.com/documentation/uikit/uiwindowscene) object for each scene instance. When configuring scene support, specify `UIWindowScene` objects rather than [`UIScene`](https://developer.apple.com/documentation/uikit/uiscene) objects. If your app adopts scenes for CarPlay, use [`CPTemplateApplicationScene`](https://developer.apple.com/documentation/CarPlay/CPTemplateApplicationScene) instead. To learn how to add a CarPlay scene, see [`Displaying Content in CarPlay`](https://developer.apple.com/documentation/CarPlay/displaying-content-in-carplay).
 
-If your window’s root view controller is loaded programmatically, use [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/scene(_:willConnectTo:options:)) to create a `UIWindow` and associate it with the specified scene object.
+If you load your root view controller from the storyboard, include the storyboard name in the [`UISceneConfigurations`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations) key in your information property list scene manifest. The system automatically configures your window scene and root view controller.
+
+If you load your root view controller programmatically, implement [`scene(_:willConnectTo:options:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scene(_:willconnectto:options:)) to create a [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) and associate it with the scene:
 
 ```swift
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    
+
     func scene(
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        // Confirm the scene is a window scene in iOS or iPadOS.
         guard let windowScene = scene as? UIWindowScene else { return }
-                
+
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = YourRootViewController()
         window?.makeKeyAndVisible()
@@ -163,46 +139,83 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-This example uses a [`UIResponder`](https://developer.apple.com/documentation/UIKit/UIResponder) subclass conforming to the `UIWindowSceneDelegate` protocol called `SceneDelegate` to create the app’s primary window scene. For more information about how to prepare your app at launch time, see [`Responding to the launch of your app`](https://developer.apple.com/documentation/UIKit/responding-to-the-launch-of-your-app).
+`SceneDelegate` is a [`UIResponder`](https://developer.apple.com/documentation/uikit/uiresponder) subclass that conforms to [`UIWindowSceneDelegate`](https://developer.apple.com/documentation/uikit/uiwindowscenedelegate). For more information about preparing your app at launch time, see [`Responding to the launch of your app`](https://developer.apple.com/documentation/uikit/responding-to-the-launch-of-your-app).
 
-#### Support External Display Scenes
+#### Migrate App Life Cycle Logic
 
-When an [`external display`](https://developer.apple.comhttps://support.apple.com/guide/ipad/move-an-app-to-an-external-display-ipad8baf19a7/26/ipados/26) is connected and your app is running on the embedded display, the system may offer your app a scene with the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/UIKit/UISceneSession/Role-swift.struct/windowExternalDisplayNonInteractive) role.
+Move your app’s existing life-cycle methods from [`UIApplicationDelegate`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate) to [`UISceneDelegate`](https://developer.apple.com/documentation/uikit/uiscenedelegate):
 
-On [`compatible iPad models`](https://developer.apple.comhttps://support.apple.com/guide/ipad/aside/ipad3de50547/26/ipados/26) with extended display supported and enabled, the system presents your app’s scenes in windows on the external display. For iPhone and iPad models that don’t support extended displays, the system mirrors your app’s primary display on the external display.
+| UIApplicationDelegate | UISceneDelegate |
+| --- | --- |
+| [`applicationDidBecomeActive(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidbecomeactive(_:)) | [`sceneDidBecomeActive(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenedidbecomeactive(_:)) |
+| [`applicationWillResignActive(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillresignactive(_:)) | [`sceneWillResignActive(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenewillresignactive(_:)) |
+| [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationdidenterbackground(_:)) | [`sceneDidEnterBackground(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenedidenterbackground(_:)) |
+| [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/applicationwillenterforeground(_:)) | [`sceneWillEnterForeground(_:)`](https://developer.apple.com/documentation/uikit/uiscenedelegate/scenewillenterforeground(_:)) |
 
-If your app doesn’t present custom content on an external display, you don’t need to provide a scene configuration for the `windowExternalDisplayNonInteractive` role. The system continues to mirror your app’s primary display automatically. For example:
+After migrating, test your app in Full Screen Apps, Windowed Apps, and Stage Manager on iPad. To learn how to respond to state transitions, see [`Managing your app’s life cycle`](https://developer.apple.com/documentation/uikit/managing-your-app-s-life-cycle).
+
+#### Support Noninteractive External Display Scenes
+
+If your app doesn’t present noninteractive custom content on an external display, you don’t need to configure this scene role. To present noninteractive custom content on an external display, configure your app to handle the scene role that UIKit offers.
+
+When an external display is connected, the system may offer your app a scene with the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive) role. On compatible iPad models with extended display enabled, the system presents your app in windows on the external display. On devices that don’t support extended displays, it mirrors your app’s primary display.
+
+To suppress mirroring by presenting custom content, handle the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive) role in your scene delegate:
 
 ```swift
-import UIKit
+func scene(
+    _ scene: UIScene,
+    willConnectTo session: UISceneSession,
+    options connectionOptions: UIScene.ConnectionOptions
+) {
+    guard let windowScene = scene as? UIWindowScene else { return }
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    var window: UIWindow?
-    
-    func scene(
-        _ scene: UIScene,
-        willConnectTo session: UISceneSession,
-        options connectionOptions: UIScene.ConnectionOptions
-    ) {
-        guard let windowScene = scene as? UIWindowScene else { return }
-        
-        if session.role == .windowApplication {
-            window = UIWindow(windowScene: windowScene)
-            window?.rootViewController = YourRootViewController()
-            window?.makeKeyAndVisible()
-        } else if session.role == .windowExternalDisplayNonInteractive {
-            // Provide a window to present noninteractive content on the external display.
-            // Otherwise, ignore this role to keep the mirroring behavior.
-        }
+    switch session.role {
+    case .windowApplication:
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = YourRootViewController()
+        window?.makeKeyAndVisible()
+    case .windowExternalDisplayNonInteractive:
+        // Provide a window to present noninteractive content on the external display.
+        // Otherwise, ignore this role to preserve default behavior.
+        break
+    default:
+        break
     }
 }
 ```
 
-To present custom content on the external display, provide a scene configuration for the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/UIKit/UISceneSession/Role-swift.struct/windowExternalDisplayNonInteractive) role and attach a [`UIWindow`](https://developer.apple.com/documentation/UIKit/UIWindow) to the scene the system provides. When your app presents content for the `windowExternalDisplayNonInteractive` scene, it spans the full screen. Attaching a window to the external display scene disables screen mirroring. To restore the system’s default behavior, either extended display or screen mirroring, set the `windowScene` property of that [`UIWindow`](https://developer.apple.com/documentation/UIKit/UIWindow) to `nil`. For example:
+Alternatively, return an empty `UISceneConfiguration()` for the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive) role from your app delegate. This suppresses custom content and preserves default behavior, and also prevents UIKit from instantiating a scene delegate for this role:
 
 ```swift
-import UIKit
+func application(
+    _ application: UIApplication,
+    configurationForConnecting connectingSceneSession: UISceneSession,
+    options: UIScene.ConnectionOptions
+) -> UISceneConfiguration {
+    if connectingSceneSession.role == .windowExternalDisplayNonInteractive {
+        return UISceneConfiguration()
+    }
 
+    let configurationName: String
+
+    switch options.userActivities.first?.activityType {
+    case UserActivity.GalleryOpenInspectorActivityType:
+        configurationName = "Inspector Configuration"
+    default:
+        configurationName = "Default Configuration"
+    }
+
+    return UISceneConfiguration(
+        name: configurationName,
+        sessionRole: connectingSceneSession.role
+    )
+}
+```
+
+To present custom content on the external display, provide a scene configuration for the [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive) role and attach a [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) to the scene. Content for this role spans the full screen, and attaching a window to the external display scene turns off mirroring if enabled. To restore the default behavior, set the [`windowScene`](https://developer.apple.com/documentation/uikit/uiwindow/windowscene) property of the external [`UIWindow`](https://developer.apple.com/documentation/uikit/uiwindow) to `nil`:
+
+```swift
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
     var externalWindow: UIWindow?
@@ -214,14 +227,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         guard let windowScene = scene as? UIWindowScene else { return }
 
-        if session.role == .windowApplication {
+        switch session.role {
+        case .windowApplication:
             window = UIWindow(windowScene: windowScene)
             window?.rootViewController = YourRootViewController()
             window?.makeKeyAndVisible()
-        } else if session.role == .windowExternalDisplayNonInteractive {
+        case .windowExternalDisplayNonInteractive:
             externalWindow = UIWindow(windowScene: windowScene)
             externalWindow?.rootViewController = YourExternalDisplayViewController()
             externalWindow?.makeKeyAndVisible()
+        default:
+            break
         }
     }
 
@@ -233,66 +249,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-If your app needs to override the system’s screen mirroring or present custom content on the external display, provide a scene configuration for the `windowExternalDisplayNonInteractive` role in either of the following ways:
+To provide the scene configuration, either add a [`windowExternalDisplayNonInteractive`](https://developer.apple.com/documentation/uikit/uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive) entry to [`UISceneConfiguration`](https://developer.apple.com/documentation/uikit/uisceneconfiguration) in your information property list, or return a [`UISceneConfiguration`](https://developer.apple.com/documentation/uikit/uisceneconfiguration) for this role from [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/application(_:configurationforconnecting:options:)).
 
-- Add a [`UIWindowSceneSessionRoleExternalDisplayNonInteractive`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/UIApplicationSceneManifest/UISceneConfigurations/UIWindowSceneSessionRoleExternalDisplayNonInteractive) entry to `UISceneConfiguration` in your `Info.plist` file.
-- Inspect [`UISceneSession.Role`](https://developer.apple.com/documentation/UIKit/UISceneSession/Role-swift.struct) in [`application(_:configurationForConnecting:options:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/application(_:configurationForConnecting:options:)) and return a `UISceneConfiguration` configured for the `windowExternalDisplayNonInteractive` role.
-
-For more information about presenting content on connected displays, see [`Presenting content on a connected display`](https://developer.apple.com/documentation/UIKit/presenting-content-on-a-connected-display).
-
-#### Migrate App Life Cycle Logic
-
-Move your app’s existing life-cycle methods from `UIApplicationDelegate` to `UISceneDelegate`:
-
-| UIApplicationDelegate | UISceneDelegate |
-| --- | --- |
-| [`applicationDidBecomeActive(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidBecomeActive(_:)) | [`sceneDidBecomeActive(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneDidBecomeActive(_:)) |
-| [`applicationWillResignActive(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillResignActive(_:)) | [`sceneWillResignActive(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneWillResignActive(_:)) |
-| [`applicationDidEnterBackground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationDidEnterBackground(_:)) | [`sceneDidEnterBackground(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneDidEnterBackground(_:)) |
-| [`applicationWillEnterForeground(_:)`](https://developer.apple.com/documentation/UIKit/UIApplicationDelegate/applicationWillEnterForeground(_:)) | [`sceneWillEnterForeground(_:)`](https://developer.apple.com/documentation/UIKit/UISceneDelegate/sceneWillEnterForeground(_:)) |
-
-Migrating to a scene-based life-cycle modernizes your app and helps it to take full advantage of iOS multitasking features. After adopting scene-based life-cycle ensure to test your app in Split View, Slide Over, and Stage Manager on iPad.
-
-To learn how to respond to state transitions within your app, see [`Managing your app’s life cycle`](https://developer.apple.com/documentation/UIKit/managing-your-app-s-life-cycle).
-
-#### Revision History
-
-- **2026-03-16** Added information about supporting external display scenes.
-- **2025-06-23** Added information about the requirements in the major release following iOS 26.
-- **2025-05-05** First published.
+For more information about presenting content on connected displays, see [`Presenting content on a connected display`](https://developer.apple.com/documentation/uikit/presenting-content-on-a-connected-display).
 
 ## See Also
 
-- [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
-  Test your app and improve compatibility with iPhone Mirroring.
-- [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
-  Update existing code for two foundational changes in SwiftUI built with Xcode 27.
-- [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
-  Use gesture recognizers to handle Sidecar touch input and update your event-handling code for macOS 27.
-- [TN3208: Preparing your app’s launch screen to meet App Store requirements](tn3208-preparing-your-apps-launch-screen-to-meet-app-store-requirements.md)
-  Understand the launch screen requirement for App Store submission starting in iOS 27 and iPadOS 27.
-- [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
-  Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
-- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
-  Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
-  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
-- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
-  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
-- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
-  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
-- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
-  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
-- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
-  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
-- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
-  Learn which networking API is best for you.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
-  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
+- [Managing your app’s life cycle](../uikit/managing-your-app-s-life-cycle.md)
+  Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events.
+- [Responding to the launch of your app](../uikit/responding-to-the-launch-of-your-app.md)
+  Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system.
+- [class UIApplication](../uikit/uiapplication.md)
+  The centralized point of control and coordination for apps running in iOS.
+- [protocol UIApplicationDelegate](../uikit/uiapplicationdelegate.md)
+  A set of methods to manage shared behaviors for your app.
+- [Scenes](../uikit/scenes.md)
+  Manage multiple instances of your app’s UI simultaneously, and direct resources to the appropriate instance of your UI.
 
 
 ---

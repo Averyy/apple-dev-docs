@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-30T07:44:47.654601",
+    "last_updated": "2026-07-03T07:45:13.033326",
     "total_pages": 58,
-    "session_id": "2026-06-30T07:44:43.004917"
+    "session_id": "2026-07-03T07:45:08.787229"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CrashReportExtension.json": {
       "hash": "e406c9899ba5e43b5d1079d7a635c8f57eff53ef3634fae87a338b67c7f229fd",
-      "last_checked": "2026-06-30T07:44:43.356414",
+      "last_checked": "2026-07-03T07:45:09.025567",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"9acaedbe2102d432a381d63234deef24\"",
       "file_path": "documentation/CrashReportExtension/CrashReportExtension.md"
     },
     "https://developer.apple.com/documentation/CrashReportExtension": {
       "hash": "e406c9899ba5e43b5d1079d7a635c8f57eff53ef3634fae87a338b67c7f229fd",
-      "last_checked": "2026-06-30T07:44:43.271799",
+      "last_checked": "2026-07-03T07:45:08.922784",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"9acaedbe2102d432a381d63234deef24\"",
       "file_path": "documentation/CrashReportExtension/CrashReportExtension.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreporterextension.json": {
       "hash": "e544c115a2cfef3756d8b2bbb750f724aa198af38c767dae5736d3b7404fa0f7",
-      "last_checked": "2026-06-30T07:44:43.649880",
+      "last_checked": "2026-07-03T07:45:09.243002",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"b5cf3531e75b4ccd0b3445889a3c7a33\"",
       "file_path": "documentation/CrashReportExtension/crashreporterextension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreporterextension/processcrashreport(process:).json": {
       "hash": "29256756ae44aff82072cd949643ecf0abef0bbfb03c6f3b2d2c10578a7a63d4",
-      "last_checked": "2026-06-30T07:44:43.751408",
+      "last_checked": "2026-07-03T07:45:09.421888",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"88c6ff34aef4dc0ab9c5bf028a080ad8\"",
       "file_path": "documentation/CrashReportExtension/crashreporterextension/processcrashreport-process.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess.json": {
       "hash": "12e31b0be1965f0a379227141221fb91aa39b91c1b15b41267f5d4904c7f91df",
-      "last_checked": "2026-06-30T07:44:44.064830",
+      "last_checked": "2026-07-03T07:45:09.534056",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"e871c541b321c42328f8457610c895f2\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/reason.json": {
       "hash": "2d31b38c082ab0436266dca0bee0ca51a569ae667feb27a65618b3600a8ae0a2",
-      "last_checked": "2026-06-30T07:44:44.173497",
+      "last_checked": "2026-07-03T07:45:09.672555",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"8feae2e5b1e208e3a3eea3ea58993f58\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/reason.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreason.json": {
       "hash": "66c92482f8e54a02cc76fa082c52021c45a6118c14913b66e4a30ebbd1ff8891",
-      "last_checked": "2026-06-30T07:44:44.379373",
+      "last_checked": "2026-07-03T07:45:09.812147",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"c740ffd81ef00d0f07a086ffddddb49b\"",
       "file_path": "documentation/CrashReportExtension/crashreason.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/binaryimages.json": {
       "hash": "4fdb6983d20f89e169a99245a7fecdb13cc0a680d3f17b0a260159da4a66febd",
-      "last_checked": "2026-06-30T07:44:44.513555",
+      "last_checked": "2026-07-03T07:45:09.925417",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"65d31eea1522ede42580265500c43c8e\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/binaryimages.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo.json": {
       "hash": "b2807ed8a4b41ff5140d920b1d7262eb06eb5247648bb9c7ae393650b17039b8",
-      "last_checked": "2026-06-30T07:44:44.638469",
+      "last_checked": "2026-07-03T07:45:10.102844",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"55e0e46cd97770897794982d3f0f708c\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/corpseport.json": {
       "hash": "6dfccd21e6c5880b6921b189bb4e01bf2aab40defd9901296703606be082975d",
-      "last_checked": "2026-06-30T07:44:44.819181",
+      "last_checked": "2026-07-03T07:45:10.242454",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"182ccbaba0ab4242b6e1491d3796ff48\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/corpseport.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/symbolicateaddress(_:).json": {
       "hash": "bac19d7bda5a5a805c22970cdeffcf5b50eb93daa4cf5b6c893d34a0ff950056",
-      "last_checked": "2026-06-30T07:44:44.939564",
+      "last_checked": "2026-07-03T07:45:10.364554",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"0d56b23f39f8d57d59cfc243b89a3c31\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/symbolicateaddress.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/symbolicateaddresses(_:).json": {
       "hash": "a05a8053737e1905880d667a38f78ef8bfc6c3563c73d3083ea17a1584cb49e5",
-      "last_checked": "2026-06-30T07:44:45.058899",
+      "last_checked": "2026-07-03T07:45:10.488061",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"bb0655d19c8b4134e3209d8991dd6b9a\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/symbolicateaddresses.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe.json": {
       "hash": "a83a8192942b60494a9b047a803752510933ac9d80891f4714d89dc3619b1278",
-      "last_checked": "2026-06-30T07:44:45.172246",
+      "last_checked": "2026-07-03T07:45:10.662126",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"32030a102983cc1b1c89177621ebb457\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashedprocess/symboladdress(imagename:symbolname:).json": {
       "hash": "bd2853c6aadeb9cee251e4863e91eae973152045282819939a1aa1b72baeb9a1",
-      "last_checked": "2026-06-30T07:44:45.382658",
+      "last_checked": "2026-07-03T07:45:10.773301",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"6e230cb115472921f6be6921c1c511fd\"",
       "file_path": "documentation/CrashReportExtension/crashedprocess/symboladdress-imagenamesymbolname.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreason/init(exception:codes:).json": {
       "hash": "e58eefde12a4c6ad39c887f9c9b8da75ea6264c72784c9cc8c79e2ec956f0e29",
-      "last_checked": "2026-06-30T07:44:45.544923",
+      "last_checked": "2026-07-03T07:45:10.941565",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"75eb59012e39892335896177bf5fe0b0\"",
       "file_path": "documentation/CrashReportExtension/crashreason/init-exceptioncodes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreason/codes.json": {
       "hash": "b2fa9f7c72a5e955990ca8bdef0543187fdc9d19124bd4c6ae6f77e5cd688a84",
-      "last_checked": "2026-06-30T07:44:45.717405",
+      "last_checked": "2026-07-03T07:45:11.056594",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"9a6fe7e501ad68ba2e4b3cbed60b4a4b\"",
       "file_path": "documentation/CrashReportExtension/crashreason/codes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/crashreason/exception.json": {
       "hash": "ed20acf63dd9f0ce6a59da1cadb301895e412c3014367e8fb943b0582b9fea23",
-      "last_checked": "2026-06-30T07:44:45.830475",
+      "last_checked": "2026-07-03T07:45:11.181170",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"0da19c24e5c74e3ff132b1bdc2c652de\"",
       "file_path": "documentation/CrashReportExtension/crashreason/exception.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/init(path:uuid:baseaddress:size:cputype:cpusubtype:).json": {
       "hash": "ece1bdf6be2829d9729f3ab56eaaa65fc9ea24dff0bfa30f29f274885a3df8b8",
-      "last_checked": "2026-06-30T07:44:45.982918",
+      "last_checked": "2026-07-03T07:45:11.298673",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"502cd8beffa90742616fcff6efc19c83\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/init-pathuuidbaseaddresssizecputypecpusubtype.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/baseaddress.json": {
       "hash": "124ce18a6567edbaf5e1aa53e35058d21a3a10a63ad6c8f244f5e07af2f1deb1",
-      "last_checked": "2026-06-30T07:44:46.120727",
+      "last_checked": "2026-07-03T07:45:11.437380",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"1587ebb047130e9652037f73c31714cd\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/baseaddress.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/cpusubtype.json": {
       "hash": "edc3578b77109a18c6a0ef62141b8e3e93706589534d77a0e396ce89c223c7ad",
-      "last_checked": "2026-06-30T07:44:46.266493",
+      "last_checked": "2026-07-03T07:45:11.540550",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"a4451a1c1d8a5362568915a600070aeb\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/cpusubtype.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/cputype.json": {
       "hash": "dec49ebced7597e4e6cea113de25da6468aded7cf15568bdf9dba8c5f025ba7b",
-      "last_checked": "2026-06-30T07:44:46.406038",
+      "last_checked": "2026-07-03T07:45:11.676431",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"50b9a8594024c4cff24490dd7679310f\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/cputype.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/path.json": {
       "hash": "a4b359b6e5fe27d6b3f1e83c9ede185d233eb3bd781f06ee51c297020be7f4e4",
-      "last_checked": "2026-06-30T07:44:46.560145",
+      "last_checked": "2026-07-03T07:45:11.806077",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"6f8a33b6224e475aa97910cabdfb3e71\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/path.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/size.json": {
       "hash": "42320f1afd9af1b991124c6dc48a46a0180581e7eb902b77c5e473ce96d8be4a",
-      "last_checked": "2026-06-30T07:44:46.694548",
+      "last_checked": "2026-07-03T07:45:11.955127",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"07cb8494f83b75549e6278d6ac9efe35\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/size.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/binaryimageinfo/uuid.json": {
       "hash": "8729dbb70d816fb42758c5b8683a6c7079a9dbad13617b49da176abcbbe7b815",
-      "last_checked": "2026-06-30T07:44:46.849532",
+      "last_checked": "2026-07-03T07:45:12.080715",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"23c5795d49f5294364e616fa8c9be010\"",
       "file_path": "documentation/CrashReportExtension/binaryimageinfo/uuid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/init(symbol:symboloffset:sourcefile:sourceline:isinline:).json": {
       "hash": "2768dd0a330d46a511e1db16b9bcf3ad67095b1533198131c75f3b1c71e39530",
-      "last_checked": "2026-06-30T07:44:46.959016",
+      "last_checked": "2026-07-03T07:45:12.280474",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"2d53b0e14134da91bc15bc957b422b6d\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/init-symbolsymboloffsetsourcefilesourcelineisinline.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/sourcefile.json": {
       "hash": "6054388582f6c6dcd1114400f56272694ebf1b20c09f4dc0b0bda1e2a1822e4a",
-      "last_checked": "2026-06-30T07:44:47.098789",
+      "last_checked": "2026-07-03T07:45:12.448929",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"95ea0ca4c933b82a8e727f393e9d6b23\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/sourcefile.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/sourceline.json": {
       "hash": "283d51b2aa36f561451a9e096022af304e9805120c6ea94d33c46eccef679f1d",
-      "last_checked": "2026-06-30T07:44:47.219397",
+      "last_checked": "2026-07-03T07:45:12.624747",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"eec6c1210c5c57cbe5fee46eadf11555\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/sourceline.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/symbol.json": {
       "hash": "dfc99afc8c31309f1e8b1f786a513c02399a8aebf678a642e4fbe8b26106103c",
-      "last_checked": "2026-06-30T07:44:47.340196",
+      "last_checked": "2026-07-03T07:45:12.748867",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"f2b8f343e77a0df13068fa7503a38a3f\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/symbol.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/symboloffset.json": {
       "hash": "43d426671e0c17f0f22a50849dace86eeff7a7d6e54adeab96fa62bf7f08a9aa",
-      "last_checked": "2026-06-30T07:44:47.480526",
+      "last_checked": "2026-07-03T07:45:12.886273",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"f48d56738ee44f49b9855de73af01485\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/symboloffset.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/crashreportextension/symbolicatedframe/isinline.json": {
       "hash": "19cb1455c34d833de25bbed1e4b8945ea423911a3297c21080c18942cf2bcb6d",
-      "last_checked": "2026-06-30T07:44:47.648987",
+      "last_checked": "2026-07-03T07:45:13.010139",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:43.004917",
+      "session_id": "2026-07-03T07:45:08.787229",
       "etag": "W/\"73bbcae3c216b204e16d949bd905954a\"",
       "file_path": "documentation/CrashReportExtension/symbolicatedframe/isinline.md"
     },

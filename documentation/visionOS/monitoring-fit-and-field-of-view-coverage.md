@@ -118,6 +118,15 @@ When `currentFieldOfViewAnchor` changes, `ImmersiveView` positions a pool of sph
 
 Use the visualization to compare presets and confirm which one covers the regions your app depends on.
 
+## See Also
+
+- [Accessing the main camera](accessing-the-main-camera.md)
+  Add camera-based features to enterprise apps.
+- [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
+  Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
+- [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
+  Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
+
 
 ---
 

@@ -194,7 +194,6 @@ Explore the core concepts for all visionOS apps with Hello World. Understand how
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
 - [Locating and decoding barcodes in 3D space](locating-and-decoding-barcodes-in-3d-space.md)
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
-### Articles
 - [Monitoring fit and field of view coverage](monitoring-fit-and-field-of-view-coverage.md)
   Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
 

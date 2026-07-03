@@ -168,6 +168,8 @@ The sample code project can’t read barcodes that are too small to appear clear
   Add camera-based features to enterprise apps.
 - [Building spatial experiences for business apps with enterprise APIs for visionOS](building-spatial-experiences-for-business-apps-with-enterprise-apis.md)
   Grant enhanced sensor access and increased platform control to your visionOS app by using entitlements.
+- [Monitoring fit and field of view coverage](monitoring-fit-and-field-of-view-coverage.md)
+  Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
 
 
 ---

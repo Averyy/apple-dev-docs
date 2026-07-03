@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-06-30T07:44:40.459007",
+    "last_updated": "2026-07-03T07:45:06.336508",
     "total_pages": 96,
-    "session_id": "2026-06-30T07:44:33.275458"
+    "session_id": "2026-07-03T07:44:58.649634"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/NotificationCenter.json": {
       "hash": "9aa48c37b41a2ed516ef256f3e173388ef4d8d629aaed8ad62b642ff2d87432b",
-      "last_checked": "2026-06-30T07:44:33.504473",
+      "last_checked": "2026-07-03T07:44:58.898756",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"6f6539a9a8d856afa11f0664f6715081\"",
       "file_path": "documentation/NotificationCenter/NotificationCenter.md"
     },
     "https://developer.apple.com/documentation/NotificationCenter": {
       "hash": "9aa48c37b41a2ed516ef256f3e173388ef4d8d629aaed8ad62b642ff2d87432b",
-      "last_checked": "2026-06-30T07:44:33.408464",
+      "last_checked": "2026-07-03T07:44:58.788544",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"6f6539a9a8d856afa11f0664f6715081\"",
       "file_path": "documentation/NotificationCenter/NotificationCenter.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding.json": {
       "hash": "68d8b726c09c5b5b3b5ff4cd374a03a7782fc5e7b80218718fff0699b78ef838",
-      "last_checked": "2026-06-30T07:44:33.732231",
+      "last_checked": "2026-07-03T07:44:59.193393",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"56e0f02f5f3be4489ef3e8dded14bb14\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetcontroller.json": {
       "hash": "665b26b49699789cb34f9c169bfef8d69c8c73eacc962582ea52a55a646c7652",
-      "last_checked": "2026-06-30T07:44:33.925370",
+      "last_checked": "2026-07-03T07:44:59.307917",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"b05f397679fa014cf6e31c4efca60d17\"",
       "file_path": "documentation/NotificationCenter/ncwidgetcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller.json": {
       "hash": "fc9f0fb5014ba7ba3c29a4144aad5c3efe66301aa2bc0e085619a942da7c50ab",
-      "last_checked": "2026-06-30T07:44:34.047831",
+      "last_checked": "2026-07-03T07:44:59.481128",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"3f97a7683ba00ee2ad97a8696e738715\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewdelegate.json": {
       "hash": "48bc54c2cd1d3633b898e4a8034f8b94ad9bc3e781838359a6f706fc5c90676d",
-      "last_checked": "2026-06-30T07:44:34.184348",
+      "last_checked": "2026-07-03T07:44:59.613654",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"3240ab0c2ee4ec2e373fa904a068f9fd\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller.json": {
       "hash": "411123f6489089a43c11b91876068d60ae63c0a35e880b1ca82b55ff3fe83a4e",
-      "last_checked": "2026-06-30T07:44:34.350678",
+      "last_checked": "2026-07-03T07:44:59.754635",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"0e8c5b45baa19bc0972b4627b6d2ee55\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetmargininsets(forproposedmargininsets:).json": {
       "hash": "e838a09aa06495dfc27b8a233d3af3758435f382b3d1edf443a1893afed287a3",
-      "last_checked": "2026-06-30T07:44:34.497827",
+      "last_checked": "2026-07-03T07:44:59.888005",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"7ddc62f5718ec51da89e5c940b42a7c9\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetmargininsets-forproposedmargininsets.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetactivedisplaymodedidchange(_:withmaximumsize:).json": {
       "hash": "912b40d6bb7e320f8db8c0f93fc564f5d56e932d9c0ec470acb990d31d245bf6",
-      "last_checked": "2026-06-30T07:44:34.637278",
+      "last_checked": "2026-07-03T07:45:00.018152",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"1cc22ddb5be6168e66988bcd1f15a394\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetactivedisplaymodedidchange-withmaximumsize.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetdisplaymode.json": {
       "hash": "33729aac65bdbde131e37254a64679b56202927a1820920bf53639ccf44a863d",
-      "last_checked": "2026-06-30T07:44:34.758177",
+      "last_checked": "2026-07-03T07:45:00.132091",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"83402828c246c24deece39b65bcdb71c\"",
       "file_path": "documentation/NotificationCenter/ncwidgetdisplaymode.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetperformupdate(completionhandler:).json": {
       "hash": "d3c7839b630764a809f8b3792b8554d9f626dd028dbae13e35b4929cbc929d13",
-      "last_checked": "2026-06-30T07:44:34.899511",
+      "last_checked": "2026-07-03T07:45:00.312146",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"69abc5e02b9d67d4870abea3941d9bee\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetperformupdate-completionhandler.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncupdateresult.json": {
       "hash": "8d0e853ebc67fd05660e1f88b4b0cb9cace4d279733d955cdcae5a3a3d7021ae",
-      "last_checked": "2026-06-30T07:44:35.010577",
+      "last_checked": "2026-07-03T07:45:00.609834",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"7e223ae7957c32f6eafff41b0d26968b\"",
       "file_path": "documentation/NotificationCenter/ncupdateresult.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetallowsediting.json": {
       "hash": "f505aee3c7bb205cefe6995adb62d1220ec2de44b4491d06c1cc8566908e96c6",
-      "last_checked": "2026-06-30T07:44:35.127886",
+      "last_checked": "2026-07-03T07:45:00.741264",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"a89fd320b106df67065f9e81ee966069\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetallowsediting.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetdidbeginediting().json": {
       "hash": "054b10706f4cf13aad95da733887916045bbe3f2687af5759e7dd2b914fa31df",
-      "last_checked": "2026-06-30T07:44:35.259436",
+      "last_checked": "2026-07-03T07:45:00.885582",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"1f13627b02ca073f11e95a949aa46ae1\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetdidbeginediting.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetproviding/widgetdidendediting().json": {
       "hash": "36b721b2c9ae0f31b0dada190fd7cc30bbb538be59c85fafb2601cc7b5291d40",
-      "last_checked": "2026-06-30T07:44:35.386892",
+      "last_checked": "2026-07-03T07:45:01.009840",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"75160332da36700b7d3c4354db6e0ce0\"",
       "file_path": "documentation/NotificationCenter/ncwidgetproviding/widgetdidendediting.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetcontroller/widgetcontroller().json": {
       "hash": "5f419dc78f5bba850d4e7d2891925c08ab257e26a2b896f4145b644ad087d8f9",
-      "last_checked": "2026-06-30T07:44:35.529851",
+      "last_checked": "2026-07-03T07:45:01.137257",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"7d7ce2304e0c21cfbf0da637b1466497\"",
       "file_path": "documentation/NotificationCenter/ncwidgetcontroller/widgetcontroller.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetcontroller/sethascontent(_:forwidgetwithbundleidentifier:).json": {
       "hash": "d27267841ebc1b382095d0c3650ef92824e58bcd1b3fc13793943e9b2a689627",
-      "last_checked": "2026-06-30T07:44:35.657007",
+      "last_checked": "2026-07-03T07:45:01.298732",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"450cfb36782a722a8586d44ff194dbb1\"",
       "file_path": "documentation/NotificationCenter/ncwidgetcontroller/sethascontent-forwidgetwithbundleidentifier.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetcontroller/default().json": {
       "hash": "a26b41eb35f8568a86e262cbda9aaa4869b04d6897dde7e69be17c1baa4a39a0",
-      "last_checked": "2026-06-30T07:44:35.795287",
+      "last_checked": "2026-07-03T07:45:01.458933",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"ee4d275355cdbc137d6462a7aed9ea01\"",
       "file_path": "documentation/NotificationCenter/ncwidgetcontroller/default.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller/delegate.json": {
       "hash": "87df0b4a145acd4e8f0b4ac85546fc892493e48d458370b4f1f9eb5764b29b70",
-      "last_checked": "2026-06-30T07:44:36.021114",
+      "last_checked": "2026-07-03T07:45:01.729855",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"bc9133ce7cf4da64da56a8701422daa0\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller/delegate.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller/searchdescription.json": {
       "hash": "3ada539d2c3a5e6ed61af084300caa252e55b8dcca01359921ed1c5ada9e4e7d",
-      "last_checked": "2026-06-30T07:44:36.144598",
+      "last_checked": "2026-07-03T07:45:02.037597",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"6415cde2c43cd9f6ba9cb647198304eb\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller/searchdescription.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller/searchresultsplaceholderstring.json": {
       "hash": "51376c6cadc5e2b34952ae434f8de008d4ca1d08b08e43a148c282e82d9048ab",
-      "last_checked": "2026-06-30T07:44:36.285366",
+      "last_checked": "2026-07-03T07:45:02.141053",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"52c6b931986c9331b12f7d812ae08d0e\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller/searchresultsplaceholderstring.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller/searchresultkeypath.json": {
       "hash": "8b7e10d003eabbbfadb74aaf9eeb443c7f752fc6fc86b4f3ae63d6f7f2b373b8",
-      "last_checked": "2026-06-30T07:44:36.417026",
+      "last_checked": "2026-07-03T07:45:02.439098",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"8a3faf7f4a9a46176f3393fd528f003c\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller/searchresultkeypath.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewcontroller/searchresults.json": {
       "hash": "6e70118ea61a45a81c1211deab70d18d1f533080e279acdf6541395328f063e9",
-      "last_checked": "2026-06-30T07:44:36.523567",
+      "last_checked": "2026-07-03T07:45:02.610424",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"e37d6bc5791513b861f88f803a149931\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewcontroller/searchresults.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewdelegate/widgetsearch(_:searchforterm:maxresults:).json": {
       "hash": "8a51c58e307c02ea17b68ce355d8e47301c2d2329e1ee8e6fa7f3653caab908d",
-      "last_checked": "2026-06-30T07:44:36.839744",
+      "last_checked": "2026-07-03T07:45:02.787187",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"e6486e14f4253879bcb684409aa0a6ce\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate/widgetsearch-searchfortermmaxresults.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewdelegate/widgetsearch(_:resultselected:).json": {
       "hash": "aabd66c68fe0a6830cd23c29c71a462e490d5c8c053be431e513f9465de4bd06",
-      "last_checked": "2026-06-30T07:44:36.942563",
+      "last_checked": "2026-07-03T07:45:02.912188",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"fc7751fda2fdea43e2297f9ef6bf9558\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate/widgetsearch-resultselected.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetsearchviewdelegate/widgetsearchtermcleared(_:).json": {
       "hash": "21c2f3cd086d739800fc4714b0d7527e41d68c4b6d9333a499d18f266c101dc3",
-      "last_checked": "2026-06-30T07:44:37.279894",
+      "last_checked": "2026-07-03T07:45:03.056948",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"f6b92c2ec71c102f28cb08a0d9fe95ee\"",
       "file_path": "documentation/NotificationCenter/ncwidgetsearchviewdelegate/widgetsearchtermcleared.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/delegate.json": {
       "hash": "39e16528403500efed0da729e531b168638b1eca4527ca2e8480e26b01191375",
-      "last_checked": "2026-06-30T07:44:37.390215",
+      "last_checked": "2026-07-03T07:45:03.231194",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"0fc9d91e07367031618321f7121fb130\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/delegate.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate.json": {
       "hash": "b4f3830f36cb91ddbd97d0feee86f29ceb02e4bb87fc7957e8d018e1b8503ae0",
-      "last_checked": "2026-06-30T07:44:37.513226",
+      "last_checked": "2026-07-03T07:45:03.402415",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"6cb4601f8084b3c2b0b79648cc88c509\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/contents.json": {
       "hash": "fc56e9a011dbf3f31976f447531679b2ab13929e3ad0a32499776dbf5d6f3f3f",
-      "last_checked": "2026-06-30T07:44:37.634778",
+      "last_checked": "2026-07-03T07:45:03.539863",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"9ac4b66885a86f945eb10f01e74de849\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/contents.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/row(for:).json": {
       "hash": "ee62957b423f9dd0b06aa0a3315c662e4cfd39f1ff0baf93d09754e51aefd195",
-      "last_checked": "2026-06-30T07:44:37.770913",
+      "last_checked": "2026-07-03T07:45:03.711295",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"96d79c6e5f81812e635b2560268b33a6\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/row-for.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/viewcontroller(atrow:makeifnecessary:).json": {
       "hash": "90834f6de5961a10445e0a308b78e894d29d98ee88a71e5090a204cd09c51b2e",
-      "last_checked": "2026-06-30T07:44:37.878558",
+      "last_checked": "2026-07-03T07:45:03.830291",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"475f32b78e62fda1a91aa0e5b45efaaf\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/viewcontroller-atrowmakeifnecessary.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/minimumvisiblerowcount.json": {
       "hash": "4a6f89bf12bd244f3512107d12b9e7e78413e063f2426405c4bc7f4c30ef733b",
-      "last_checked": "2026-06-30T07:44:38.003947",
+      "last_checked": "2026-07-03T07:45:04.004737",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"15c49a34bf5bec90ad1bb65512a2e481\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/minimumvisiblerowcount.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/hasdividerlines.json": {
       "hash": "ebbf755bf501bfcef7c221b6a98999ca6a7b27dd0d8eceb87fffaa005b57898c",
-      "last_checked": "2026-06-30T07:44:38.119894",
+      "last_checked": "2026-07-03T07:45:04.144557",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"249fa01927f56d4479d5b7873fa609f3\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/hasdividerlines.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/editing.json": {
       "hash": "b4342366fd347d08f3b818a33d707633cf69088934932c543d3f4cbb748e1b38",
-      "last_checked": "2026-06-30T07:44:38.315103",
+      "last_checked": "2026-07-03T07:45:04.305574",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"a84d04f74c62e1918c2e71ea1930a059\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/editing.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewcontroller/showsaddbuttonwhenediting.json": {
       "hash": "16961ea0eef36dbfb06ec085a8f646ef904e3919ad108e08e82907cc78c047f9",
-      "last_checked": "2026-06-30T07:44:38.484738",
+      "last_checked": "2026-07-03T07:45:04.430817",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"46696d30e4504e8d5d5710a8b2585109\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewcontroller/showsaddbuttonwhenediting.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetdisplaymode/compact.json": {
       "hash": "35cdfb43ab5fd9bcbacd85836bf868c87bf30f2f4341c1adece9d2018912d4e0",
-      "last_checked": "2026-06-30T07:44:38.596662",
+      "last_checked": "2026-07-03T07:45:04.586742",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"45ef5c01aa6fa45281574bc1630beb51\"",
       "file_path": "documentation/NotificationCenter/ncwidgetdisplaymode/compact.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetdisplaymode/expanded.json": {
       "hash": "6660deb1a30da2921f5c8e85004ac5f7b8377cce320ad609d04cf72d0626e3c1",
-      "last_checked": "2026-06-30T07:44:38.907953",
+      "last_checked": "2026-07-03T07:45:04.696867",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"fa17b654a2f0dfa546c0c833864fad0e\"",
       "file_path": "documentation/NotificationCenter/ncwidgetdisplaymode/expanded.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetdisplaymode/init(rawvalue:).json": {
       "hash": "6d4c0774fb4597bdab254ff4adeb0fd2cdbe7c688e9abe06d025660ca331a30f",
-      "last_checked": "2026-06-30T07:44:39.018514",
+      "last_checked": "2026-07-03T07:45:04.815167",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"f1f1f711248ddb32ed75c32fbb70eb5f\"",
       "file_path": "documentation/NotificationCenter/ncwidgetdisplaymode/init-rawvalue.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncupdateresult/newdata.json": {
       "hash": "5f60ea2881ab409aa14a5da5198dd971d9bbc5e365e520cdfc13d27df62bf231",
-      "last_checked": "2026-06-30T07:44:39.187879",
+      "last_checked": "2026-07-03T07:45:04.981009",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"21b6561790835f38f0e0235a35a42ab7\"",
       "file_path": "documentation/NotificationCenter/ncupdateresult/newdata.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncupdateresult/nodata.json": {
       "hash": "a441cbc329165e9b1202475f124e9615f098606d43c6e7955d5284c1b91a6b77",
-      "last_checked": "2026-06-30T07:44:39.346874",
+      "last_checked": "2026-07-03T07:45:05.084184",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"15f137f3e0abc273f036c3d810c67d14\"",
       "file_path": "documentation/NotificationCenter/ncupdateresult/nodata.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncupdateresult/failed.json": {
       "hash": "e5cfedfcd100cba507f2328b9e53dc12af287b1432897a04f1dcd391ae4a595c",
-      "last_checked": "2026-06-30T07:44:39.465192",
+      "last_checked": "2026-07-03T07:45:05.218213",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"e8ee1166b5cdbc022d15000e8b2d5727\"",
       "file_path": "documentation/NotificationCenter/ncupdateresult/failed.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncupdateresult/init(rawvalue:).json": {
       "hash": "42f0c3e558edaf8948c7803180c2185f88a619ea6ff8ecbb2b459cccce660b7f",
-      "last_checked": "2026-06-30T07:44:39.586493",
+      "last_checked": "2026-07-03T07:45:05.345485",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"13d19e293906e25ef2428ac577231e7d\"",
       "file_path": "documentation/NotificationCenter/ncupdateresult/init-rawvalue.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlist(_:viewcontrollerforrow:).json": {
       "hash": "857e3f3447ec60552f24ff5ab08c2e8bdc10ffd049611a1fe971aa119ec9f0cc",
-      "last_checked": "2026-06-30T07:44:39.701371",
+      "last_checked": "2026-07-03T07:45:05.535357",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"d94d5ef747b551f7dafb223963b97f77\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlist-viewcontrollerforrow.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlist(_:didremoverow:).json": {
       "hash": "9dc7a2401764cd525e3fa1972b792559426f798a40188672e829abb088af377e",
-      "last_checked": "2026-06-30T07:44:39.833770",
+      "last_checked": "2026-07-03T07:45:05.671934",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"d0e4a6802fc0e23436d2157ce6de66e9\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlist-didremoverow.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlist(_:shouldremoverow:).json": {
       "hash": "e7924da049ff8f82ff1a04ab28d14a52986e13b5047a6395bcdba06a4001bed5",
-      "last_checked": "2026-06-30T07:44:40.022512",
+      "last_checked": "2026-07-03T07:45:05.854141",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"76f5e0f38b2f51d75c82c05ac4c9f30c\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlist-shouldremoverow.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlistperformaddaction(_:).json": {
       "hash": "84f7ee74237ee412fd287ec35968997f3aa4775f69790114c17c59ac9b724b10",
-      "last_checked": "2026-06-30T07:44:40.147640",
+      "last_checked": "2026-07-03T07:45:06.029947",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"f2da392d7c0452ae7e4e70bc6538f2c2\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlistperformaddaction.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlist(_:didreorderrow:torow:).json": {
       "hash": "e8a5575d0490d83eba8ce3aa94e1d1d9d6c7c53f204cfd3b4fefbf78ca38afaf",
-      "last_checked": "2026-06-30T07:44:40.264871",
+      "last_checked": "2026-07-03T07:45:06.199177",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"ecd70647f07c4c69571b4f8fd0da6eec\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlist-didreorderrowtorow.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetlistviewdelegate/widgetlist(_:shouldreorderrow:).json": {
       "hash": "d5155b5ca0ad7a0dfa2e4287055a9fccee598c3aa45e1050fe563d32d553b90f",
-      "last_checked": "2026-06-30T07:44:40.452556",
+      "last_checked": "2026-07-03T07:45:06.321732",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"ef6b988be21ce372fbfd3f5532610376\"",
       "file_path": "documentation/NotificationCenter/ncwidgetlistviewdelegate/widgetlist-shouldreorderrow.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/notificationcenter/ncwidgetcontroller/init().json": {
       "hash": "4405bc208be21f30b2bd2225f1b51ec5fc2a2e1229b81e39d0fb1969167f00a0",
-      "last_checked": "2026-06-30T07:44:35.912092",
+      "last_checked": "2026-07-03T07:45:01.570376",
       "status": "unchanged",
-      "session_id": "2026-06-30T07:44:33.275458",
+      "session_id": "2026-07-03T07:44:58.649634",
       "etag": "W/\"47bb6db6d4373352486396421edb910f\"",
       "file_path": "documentation/NotificationCenter/ncwidgetcontroller/init.md"
     },
