@@ -94,3 +94,5 @@ profile_*
 
 # Personal notes with sensitive info
 TODO_VPS_MIGRATION.md
+# codex-dobby MCP run artifacts
+.codex-dobby/

@@ -2,10 +2,10 @@
 
 > **Note:** This is an independent project not affiliated with, endorsed by, or sponsored by Apple Inc. Documentation content is © Apple Inc. and provided for development use only.
 
-An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 370+ frameworks, 335K+ documents, sub-3ms search.
+An MCP server that gives Claude and other AI assistants instant access to Apple's complete developer documentation. 390+ frameworks, 322K+ documents, sub-3ms search.
 
-[![Frameworks](https://img.shields.io/badge/frameworks-370%2B-blue)](https://xdocs.dev)
-[![Documents](https://img.shields.io/badge/documents-335K%2B-green)](https://xdocs.dev)
+[![Frameworks](https://img.shields.io/badge/frameworks-390%2B-blue)](https://xdocs.dev)
+[![Documents](https://img.shields.io/badge/documents-322K%2B-green)](https://xdocs.dev)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
 [![Twice Weekly Scrape](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml/badge.svg)](https://github.com/Averyy/apple-dev-docs/actions/workflows/scheduled-scrape.yml)
 
@@ -71,11 +71,11 @@ Apple's developer documentation website uses aggressive lazy-loading, rendering 
 
 This project provides a complete, searchable mirror of Apple's documentation in a clean, AI-friendly format. All content is unchanged from the original source - we've simply made it accessible.
 
-**Last updated:** January 2026 (includes WWDC 2025)
+**Updated automatically** twice weekly (Tue/Fri) from Apple's live documentation — includes WWDC 2026 content.
 
 ## Features
 
-- **370+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
+- **390+ frameworks** - SwiftUI, UIKit, Metal, ARKit, Core ML, and more
 - **Human Interface Guidelines** - Apple's design documentation for all platforms
 - **Swift Language Guide** - The Swift Programming Language book, API Design Guidelines, C++ Interop
 - **MLX & CoreML Tools** - Apple's ML framework documentation
@@ -105,7 +105,7 @@ file_path: "Button" or "documentation/SwiftUI/View.md"
 ```
 
 ### `list_frameworks`
-Browse all 370+ frameworks with document counts.
+Browse all 390+ frameworks with document counts.
 
 ```
 query: "UI" (optional filter)
@@ -136,7 +136,7 @@ cd mcp-server
 docker compose up -d
 
 # Server available at http://localhost:8000/mcp
-# First run indexes ~335K docs (~2 hours)
+# First run indexes ~322K docs (up to ~2 hours)
 ```
 
 ### Local Development
@@ -149,7 +149,7 @@ pip install -r mcp-server/requirements.txt
 docker run -d -p 7700:7700 \
   -e MEILI_MASTER_KEY=$(openssl rand -hex 32) \
   -v $(pwd)/meilisearch:/meili_data \
-  getmeili/meilisearch:v1.33
+  getmeili/meilisearch:v1.49
 
 # Index documents (~2 hours)
 cd scripts && python3 index_to_meilisearch.py
@@ -164,12 +164,13 @@ cd ../mcp-server && python3 apple_docs_mcp.py
 |----------|----------|-------------|
 | `MEILI_MASTER_KEY` | Yes | Meilisearch auth key (`openssl rand -hex 32`) |
 | `MCP_API_KEY` | No | API key for rate limit bypass |
+| `ALLOWED_HOSTS` | No | Comma-separated public hostnames accepted in the Host header (default: `xdocs.dev,www.xdocs.dev`; localhost always allowed, others get 421) |
 | `HTTP_PORT` | No | Server port (default: 8000) |
 | `MEILI_TIMEOUT` | No | Meilisearch connection timeout in seconds (default: 10) |
 | `MEILI_MAX_RETRIES` | No | Max retries for transient errors (default: 2) |
 | `RATE_LIMIT_REQUESTS` | No | Requests per minute per IP (default: 60) |
-| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 300000) |
-| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 334000) |
+| `MIN_EXPECTED_DOCS` | No | Minimum docs for "healthy" status (default: 290000) |
+| `EXPECTED_FULL_INDEX_SIZE` | No | Expected full index size for progress calc (default: 322000) |
 
 ## Updating Documentation
 
@@ -206,7 +207,7 @@ cd scripts && python3 index_to_meilisearch.py
 
 - Python 3.11+ or Docker
 - 1.5GB RAM (4GB+ recommended for indexing)
-- 1GB disk space
+- ~5GB disk space (1.5GB documentation + Meilisearch index + Docker image)
 
 ## License
 

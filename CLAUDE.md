@@ -28,12 +28,15 @@ curl -X POST https://xdocs.dev/mcp \
 - URL: `https://xdocs.dev/mcp`
 - Transport: Streamable HTTP (native MCP)
 - Rate Limit: 60 req/min per IP (bypassed with API key)
+- Host allow-list: `ALLOWED_HOSTS` env, default `xdocs.dev,www.xdocs.dev` (localhost always allowed; any other Host header gets 421 from fastmcp's guard)
 
 **Health endpoint status codes:**
-- `200 OK` with `status: healthy` - Ready for use (335K+ docs indexed)
+- `200 OK` with `status: healthy` - Ready for use (322K+ docs indexed)
 - `200 OK` with `status: indexing` - Index building (check `documents` and `progress`)
-- `503 Service Unavailable` with `status: degraded` - Partial index (<300K docs)
+- `503 Service Unavailable` with `status: degraded` - Partial index (<290K docs)
 - `503 Service Unavailable` with `status: unhealthy` - Meilisearch unavailable
+
+**Container healthcheck:** Docker health curls the MCP app itself (`localhost:$HTTP_PORT/health`) with `Host: ${ALLOWED_HOSTS%%,*}`, so app-level failures (e.g. Host header rejection) show as `unhealthy` in `docker ps`. During a full reindex the app returns 503 below the serving threshold, so the container honestly reports unhealthy until the index is ready — that's intentional, not a bug.
 
 **Health endpoint timestamps:**
 - `last_docs_change` - When docs were last updated (most recent file mtime)
@@ -57,12 +60,14 @@ GitHub Actions deploys via `docker compose down && docker compose up -d`, which 
 **Important:** If deploy happens during indexing:
 1. Container is destroyed mid-indexing
 2. New container starts with low doc count
-3. `startup_check.py` sees <90% of expected docs (needs ~301K to skip rebuild)
-4. Full rebuild triggers (~2 hours for 335K docs)
+3. `startup_check.py` sees <90% of expected docs (needs ~290K to skip rebuild)
+4. Full rebuild triggers (~2 hours for 322K docs)
 
-Once index completes (335K+ docs), subsequent deploys will be fast (incremental updates only).
+Once index completes (322K+ docs), subsequent deploys will be fast (incremental updates only).
 
 **Scrape schedule:** Tue/Fri at 2:07 AM EST (7:07 AM UTC), triggered via VPS cron
+
+**Meilisearch volume:** Production data lives in the `meilisearch_v149` named volume (renamed from `meilisearch` for the v1.33→v1.49 engine upgrade — a Meilisearch database is only readable by the version that created it, so engine upgrades need a fresh volume + full reindex; the old volume is kept for rollback until the new one has served traffic).
 
 ## Rate Limiting Notes
 
@@ -77,7 +82,7 @@ If issues persist, consider:
 
 ## Project Overview
 
-MCP server for Apple Developer Documentation with Meilisearch backend. 370+ frameworks, 334K+ documents, sub-3ms search.
+MCP server for Apple Developer Documentation with Meilisearch backend. 390+ frameworks, 322K+ documents, sub-3ms search.
 
 ## Critical Rules
 
@@ -86,7 +91,7 @@ MCP server for Apple Developer Documentation with Meilisearch backend. 370+ fram
 - **NEVER replace existing code with simplified versions** - fix the actual problem
 - **ALWAYS find root cause** - don't create workarounds
 - **NEVER dismiss issues as "pre-existing"** - All issues must be fixed when discovered. No issue is someone else's problem. If you find a bug during unrelated work, fix it or flag it clearly — never wave it away as "pre-existing" or "out of scope"
-- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 370+ frameworks means no special cases
+- **NEVER SUGGEST SPECIAL HANDLING FOR SPECIFIC PATTERNS** - 390+ frameworks means no special cases
 - Update existing files, don't create new ones unless necessary
 - Use relative paths in scripts
 - Follow MCP spec from https://modelcontextprotocol.io/specification/
@@ -131,9 +136,9 @@ uv pip install -r requirements.txt
 ## Architecture
 
 - **Scraper**: Uses Apple's JSON API (not HTML)
-- **Search**: Meilisearch (<3ms latency)
+- **Search**: Meilisearch (<3ms latency; engine version pinned in `mcp-server/Dockerfile`, Python client pinned in both requirements files — keep them matched)
 - **MCP Server**: FastMCP with Streamable HTTP transport
-- **Indexing**: ~2 hours for 335K+ documents (streaming batches)
+- **Indexing**: ~2 hours for 322K+ documents (streaming batches; Meilisearch v1.49 measured much faster locally)
 
 ## Core Commands
 
@@ -176,7 +181,7 @@ docker exec apple-docs-mcp tail -f /data/logs/mcp-server.log
 docker ps | grep apple-docs
 
 # Check indexing progress (real-time stats from Meilisearch)
-docker exec apple-docs-mcp curl -s localhost:7700/indexes/apple_docs/stats
+docker exec apple-docs-mcp curl -s localhost:7700/indexes/apple-docs/stats
 
 # Redeploy with latest image
 docker pull ghcr.io/averyy/apple-dev-docs:latest
@@ -190,14 +195,14 @@ docker stop apple-docs-mcp && docker rm apple-docs-mcp
 
 The landing page and health API show slightly different document counts - this is expected:
 
-- **Landing page** (`find` count): Number of markdown files on disk (~334K)
-- **Health API** (Meilisearch count): Number of indexed documents (~334.3K)
+- **Landing page** (`find` count): Number of markdown files on disk (~322.2K)
+- **Health API** (Meilisearch count): Number of indexed documents (~322.4K)
 
 The difference (~300-400) is because `DocumentProcessor` chunks large files (>50KB) into multiple Meilisearch documents. One markdown file can produce multiple indexed documents. This is intentional for search performance.
 
 ## Local Testing
 
-Run locally with a separate compose file (2GB memory limit for stress testing):
+Run locally with a separate compose file (3GB memory limit for stress testing; builds the host's native architecture — the amd64 Meilisearch release binary segfaults under QEMU emulation on Apple Silicon):
 
 ```bash
 cd mcp-server
