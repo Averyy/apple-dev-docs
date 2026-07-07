@@ -1,4 +1,4 @@
 Completed scraping IOKit!
-Total pages scraped: 1
-Pages skipped (unchanged): 582
+Total pages scraped: 0
+Pages skipped (unchanged): 583
 Pages failed: 0

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T13:39:39.898558",
+    "last_updated": "2026-07-07T21:57:29.164497",
     "total_files": 826,
     "source": "scrape_mlx_docs.py"
   },
@@ -13,7 +13,7 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/dev/mlx_in_cpp.html": "00f1d489547533bf0739db51cb4f7b20f829da048bea2e33eb6db3156b03699f",
     "MLX:https://ml-explore.github.io/mlx/build/html/examples/linear_regression.html": "a5dd861649ba89f335a50239a437c6e5389a7e2502360748ef5bd03ffcce2072",
     "MLX:https://ml-explore.github.io/mlx/build/html/examples/llama-inference.html": "3e0d1f74cf4b470b525d955ca1121c7a1be3628d1ec6cbe4b0c3f38a6aa52a81",
-    "MLX:https://ml-explore.github.io/mlx/build/html/examples/mlp.html": "b3d3085f7a0b42df9b99f6b2f33046e184b7a6b0bd2efeaf4653418de6830789",
+    "MLX:https://ml-explore.github.io/mlx/build/html/examples/mlp.html": "cd9a68deefa595e1bc781fb41341dfc3e4a548686e80087b86e91608b7825aa1",
     "MLX:https://ml-explore.github.io/mlx/build/html/index.html": "faf389f3553a58234a4a9b0fb081723e4b9953ab1e6d1e1bed7842cec2572efe",
     "MLX:https://ml-explore.github.io/mlx/build/html/install.html": "e2a68dde79af8be35a438725c73ba2265eb217adf6add56f28249f5b91d7b0dd",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.Device.html": "0c4290fef18222d6900196086035e9d8747104081426ecb03812716dd35ed88a",

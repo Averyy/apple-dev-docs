@@ -1,7 +1,7 @@
 ---
 source: coremltools
 framework: coremltools
-url: https://apple.github.io/coremltools/docs-guides/index.html
+url: https://apple.github.io/coremltools/docs-guides/
 ---
 
 # Core ML Tools

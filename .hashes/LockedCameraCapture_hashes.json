@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T18:15:42.033290",
+    "last_updated": "2026-07-07T20:46:07.533726",
     "total_pages": 70,
-    "session_id": "2026-07-07T18:15:37.264487"
+    "session_id": "2026-07-07T20:46:01.612310"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/LockedCameraCapture.json": {
       "hash": "d41997fd1fbe3b920de0ef3adc3b91740b278c34a151a8471857eedd44356916",
-      "last_checked": "2026-07-07T18:15:37.789108",
+      "last_checked": "2026-07-07T20:46:01.916390",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"9767d05e704bb014fe0cb25663524ea4\"",
       "file_path": "documentation/LockedCameraCapture/LockedCameraCapture.md"
     },
     "https://developer.apple.com/documentation/LockedCameraCapture": {
       "hash": "d41997fd1fbe3b920de0ef3adc3b91740b278c34a151a8471857eedd44356916",
-      "last_checked": "2026-07-07T18:15:37.683902",
+      "last_checked": "2026-07-07T20:46:01.855950",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"9767d05e704bb014fe0cb25663524ea4\"",
       "file_path": "documentation/LockedCameraCapture/LockedCameraCapture.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/creating-a-camera-experience-for-the-lock-screen.json": {
       "hash": "c4ce1472d5cd098652f70701d051fe00003f091390d350a88be7d0d3aadbd84b",
-      "last_checked": "2026-07-07T18:15:38.049695",
+      "last_checked": "2026-07-07T20:46:02.218179",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"c329f3e1e0f5f8f27c6219e256b50af8\"",
       "file_path": "documentation/LockedCameraCapture/creating-a-camera-experience-for-the-lock-screen.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureuiscene.json": {
       "hash": "8edb1734645fc8c3a203148dec8efa59992f0fffb048bbcd61e8a1cddb58b92b",
-      "last_checked": "2026-07-07T18:15:38.197185",
+      "last_checked": "2026-07-07T20:46:02.532429",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"5eb60497f48fbb84e6f92eb860dc4b95\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession.json": {
       "hash": "98111a6c4e60fc0032d5cd3d202434e44348cf89f7dc69445626a8906505828b",
-      "last_checked": "2026-07-07T18:15:38.160168",
+      "last_checked": "2026-07-07T20:46:02.735050",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"57ff09dfc710b55a4f1bc27dbdeb46bd\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager.json": {
       "hash": "b3b3cac2a3e7875af3d272eb15c8c6b4b4ecf4cb07ba0ae04dfdaaa04899be97",
-      "last_checked": "2026-07-07T18:15:38.396892",
+      "last_checked": "2026-07-07T20:46:02.905615",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"3608a0c6bf9bf3b18cef44d91eb6aa13\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/nsuseractivitytypelockedcameracapture.json": {
       "hash": "80ad32826809ddac53abb239b1d49610665e512ab95abef75b00c0fbd978fb3b",
-      "last_checked": "2026-07-07T18:15:38.346070",
+      "last_checked": "2026-07-07T20:46:03.067607",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"d64ed48ce3d0fa18360f1895d00e95e2\"",
       "file_path": "documentation/LockedCameraCapture/nsuseractivitytypelockedcameracapture.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureextension.json": {
       "hash": "fa2b5cda11d220f9ddc34226414be3a7aad3366fad137639f2ef46e11d1fbf1d",
-      "last_checked": "2026-07-07T18:15:38.415976",
+      "last_checked": "2026-07-07T20:46:03.207437",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"df90360259d6e49a2dc5df992a9b7905\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureextension.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureextensionscene.json": {
       "hash": "eea9ca40147d17f264eabfebc37450807c755a76b131963b6a55ba6bc4d04cd7",
-      "last_checked": "2026-07-07T18:15:38.673187",
+      "last_checked": "2026-07-07T20:46:03.505350",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"73ee6fb8a1695b8a670a4c811435a2ca\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureextensionscene.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureuiscene/init(content:).json": {
       "hash": "e42679b691431a8c7e004718adf2ddbb031a3170cf2ef54fd5b95a85c645a049",
-      "last_checked": "2026-07-07T18:15:39.187939",
+      "last_checked": "2026-07-07T20:46:03.666530",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"79614c4e65df0e65b337cebb125c17fd\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene/init-content.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureuiscene/session.json": {
       "hash": "66b66e54db2effc0dc4b35ef40adca7a96e3e100ce4412e23585217d15185265",
-      "last_checked": "2026-07-07T18:15:39.275138",
+      "last_checked": "2026-07-07T20:46:03.949395",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"02e51634951c8e3bbfaab54e27fbf513\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene/session.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/sessioncontenturl.json": {
       "hash": "bb9b46ea80188acc896e22d89535cfa6a90f1d7e63dad80bdcaeda569c46b995",
-      "last_checked": "2026-07-07T18:15:38.866636",
+      "last_checked": "2026-07-07T20:46:04.121112",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"7cd2ab52a774d8ce362d2eed627a20af\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/sessioncontenturl.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/invalidatesessioncontent().json": {
       "hash": "dd203ea03f8b1fdc0cff7f5791a2938647cd1dd3517d381593a225a2930e7fff",
-      "last_checked": "2026-07-07T18:15:38.956441",
+      "last_checked": "2026-07-07T20:46:04.252851",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"a863e95648f709451323469c22418309\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/invalidatesessioncontent.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/openapplication(for:).json": {
       "hash": "c8f0cc831aaa06ca845f1f370c778c53bec1f6cde7e4ec4c51dd91f0d4cb4f16",
-      "last_checked": "2026-07-07T18:15:39.009354",
+      "last_checked": "2026-07-07T20:46:04.393414",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"4e94019575c24f62da351f21a1979bce\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/openapplication-for.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror.json": {
       "hash": "7614d954d0e40a0889a77bb06766690b4f394aea3a5194683b1e94e9b37353ef",
-      "last_checked": "2026-07-07T18:15:39.068233",
+      "last_checked": "2026-07-07T20:46:04.563495",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"5ad34272ed3543b0d9e53f4712e815ae\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontenturls.json": {
       "hash": "1702ee8243d38a2d54e511be09eb06020022740f27af712f06abd14cba5e0e0f",
-      "last_checked": "2026-07-07T18:15:39.555463",
+      "last_checked": "2026-07-07T20:46:04.736547",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"962748be2a1ef9f9eb5f2394773ed178\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontenturls.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontentupdates.json": {
       "hash": "f5d54357511ad2026b4d1bd400d943f7e19cab0f8fbf7977a1357c22ca306052",
-      "last_checked": "2026-07-07T18:15:39.637110",
+      "last_checked": "2026-07-07T20:46:04.896440",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"a4301b6a8e4744a680140312702a5445\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontentupdates.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/begindelayingappearance().json": {
       "hash": "cdbb3189e9f04b38eaf868ae6ab9a1189ba07701a6350cb16dae3576fa36ea56",
-      "last_checked": "2026-07-07T18:15:39.587192",
+      "last_checked": "2026-07-07T20:46:05.033107",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"fe41c389dce37a8c8dd58505794919bd\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/begindelayingappearance.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/enddelayingappearance().json": {
       "hash": "f58fa3f4a6d4ad1e40460679a3a0f91f88fb8e1c45b2ddd717f84311b502e346",
-      "last_checked": "2026-07-07T18:15:39.623295",
+      "last_checked": "2026-07-07T20:46:05.174172",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"282034abcb75ec11988d6149f3084464\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/enddelayingappearance.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/invalidatesessioncontent(at:).json": {
       "hash": "99bebeff1c71b51c7a6dedea83e2d9276ff14ca8948eba8ab1b021cc16ba810d",
-      "last_checked": "2026-07-07T18:15:39.725560",
+      "last_checked": "2026-07-07T20:46:05.316727",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"69d91c9e26a30a6b47d10b87d3eab5d2\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/invalidatesessioncontent-at.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/shared.json": {
       "hash": "be1e2364a392d713d544cfa9bf4ab06b642e100dc2d730c38a96778e33d09923",
-      "last_checked": "2026-07-07T18:15:39.882587",
+      "last_checked": "2026-07-07T20:46:05.486725",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"4fd352a508953c280189610a2d27f27a\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/shared.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontentupdate.json": {
       "hash": "ccab690a9b305a699fd2d7df3443534186f653572cdef74575d4d840583e7002",
-      "last_checked": "2026-07-07T18:15:39.821803",
+      "last_checked": "2026-07-07T20:46:05.604168",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"395f5999b90c7d4080a4680521a79cc2\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontentupdate.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureextension/body-swift.associatedtype.json": {
       "hash": "4f1449ea59d73c1939b9946851aeb290974b93d1ff2c9da7edd80ae746999fc8",
-      "last_checked": "2026-07-07T18:15:39.876136",
+      "last_checked": "2026-07-07T20:46:05.774763",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"71a88630750add00bfc3f795fffa58ff\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureextension/body-swiftassociatedtype.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureextension/body-swift.property.json": {
       "hash": "041927223d140988eca741d46231a799ba15908d94733a5918e3943006476d27",
-      "last_checked": "2026-07-07T18:15:39.896215",
+      "last_checked": "2026-07-07T20:46:05.921500",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"d83ff1951755134d39fa7ee6042d7f1b\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureextension/body-swiftproperty.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/applicationnotfound.json": {
       "hash": "a7493c4382749fa4b0c4cc9cdf13008ac73a468b1ed1d832c773fe4af05c73c4",
-      "last_checked": "2026-07-07T18:15:40.967674",
+      "last_checked": "2026-07-07T20:46:06.092647",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"6dc3bf61736d793e2f69f8a5846e3e6f\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/applicationnotfound.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/authenticationfailed.json": {
       "hash": "994bf945af2b4c5f59d9a5a51665e60767e218e6dc065ad64e11005f83c464c4",
-      "last_checked": "2026-07-07T18:15:41.021518",
+      "last_checked": "2026-07-07T20:46:06.222352",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"7e926f3d8a4c73613b6ca95683286692\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/authenticationfailed.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/unknown.json": {
       "hash": "c2daaea4d7e78698f4c527b4ca75301c343017a8722e6f08172570f6f4432739",
-      "last_checked": "2026-07-07T18:15:41.144078",
+      "last_checked": "2026-07-07T20:46:06.353084",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"f334c1bd6e1e8b777c5db26519125d32\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/unknown.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/errorcode.json": {
       "hash": "31e5de158a0a688211a981b61b551c63b2477e0085bd4bb02038af5bf192e7cd",
-      "last_checked": "2026-07-07T18:15:41.200097",
+      "last_checked": "2026-07-07T20:46:06.513855",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"a1645b29dc9672a9cc31c339256c1781\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/errorcode.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/failurereason.json": {
       "hash": "0b6a6f3a5fe7d888c35440abf7b9cf0bdd7302d37a1ff6918340a07b775f3492",
-      "last_checked": "2026-07-07T18:15:41.280544",
+      "last_checked": "2026-07-07T20:46:06.834263",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"ee724bbe72fbc5194e3bc1d6f8f1dbe8\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/failurereason.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturesession/applicationlauncherror/errordomain.json": {
       "hash": "ec4f4bd67a2668fc1226f197a6589bbb075dabe57730bd745a95a4ae7c2fd9f4",
-      "last_checked": "2026-07-07T18:15:41.474588",
+      "last_checked": "2026-07-07T20:46:07.037971",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"cad4cbf9946dbd8b78e830624741d63f\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturesession/applicationlauncherror/errordomain.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontentupdate/added(url:).json": {
       "hash": "937bfca2646213c9d5e7552c525009e5ac42a85eda557e42e818acaa8d134464",
-      "last_checked": "2026-07-07T18:15:41.536282",
+      "last_checked": "2026-07-07T20:46:07.178090",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"a7650b65ba11daf166e901dc32836e0a\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontentupdate/added-url.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontentupdate/initial(urls:).json": {
       "hash": "a37f5a7d16e333689ead6a27f079a56e828324d0f8bfdf7b967a9f16b3b706cf",
-      "last_checked": "2026-07-07T18:15:41.459972",
+      "last_checked": "2026-07-07T20:46:07.339464",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"c6d402d741615615d3afe184d9059c2b\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontentupdate/initial-urls.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracapturemanager/sessioncontentupdate/removed(url:).json": {
       "hash": "6cdc929ec91338e8742d1fdbbf433a4092f33cd33e4fe48dec20b94ca8980068",
-      "last_checked": "2026-07-07T18:15:41.671030",
+      "last_checked": "2026-07-07T20:46:07.512036",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"e59d74a7402af2fbda6b9dba817c2050\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracapturemanager/sessioncontentupdate/removed-url.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/lockedcameracapture/lockedcameracaptureuiscene/body.json": {
       "hash": "7862bb5d53e77c4f089e8e9da8f27ef5eb7e3196068354dd762320c71aa04b9b",
-      "last_checked": "2026-07-07T18:15:39.246209",
+      "last_checked": "2026-07-07T20:46:03.822309",
       "status": "unchanged",
-      "session_id": "2026-07-07T18:15:37.264487",
+      "session_id": "2026-07-07T20:46:01.612310",
       "etag": "W/\"984188e457c1b8c4334edea608542e66\"",
       "file_path": "documentation/LockedCameraCapture/lockedcameracaptureuiscene/body.md"
     },

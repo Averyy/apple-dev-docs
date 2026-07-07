@@ -1,4 +1,4 @@
 Completed scraping MailKit!
-Total pages scraped: 3
-Pages skipped (unchanged): 187
+Total pages scraped: 0
+Pages skipped (unchanged): 190
 Pages failed: 0

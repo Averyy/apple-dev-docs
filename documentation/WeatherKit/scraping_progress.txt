@@ -1,4 +1,4 @@
 Completed scraping WeatherKit!
-Total pages scraped: 1
-Pages skipped (unchanged): 430
+Total pages scraped: 0
+Pages skipped (unchanged): 431
 Pages failed: 0

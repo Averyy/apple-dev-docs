@@ -1,4 +1,4 @@
 Completed scraping AVSystemRouting!
-Total pages scraped: 7
-Pages skipped (unchanged): 47
+Total pages scraped: 0
+Pages skipped (unchanged): 54
 Pages failed: 0

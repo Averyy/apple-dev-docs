@@ -1,4 +1,4 @@
 Completed scraping Force Feedback!
-Total pages scraped: 40
-Pages skipped (unchanged): 247
+Total pages scraped: 0
+Pages skipped (unchanged): 287
 Pages failed: 0
