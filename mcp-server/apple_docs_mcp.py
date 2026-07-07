@@ -56,6 +56,15 @@ HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")
 
+# Host header validation (fastmcp 3.x DNS rebinding protection)
+# localhost/127.0.0.1/::1 are always allowed; these are additional public hostnames
+_DEFAULT_ALLOWED_HOSTS = "xdocs.dev,www.xdocs.dev"
+ALLOWED_HOSTS = [h.strip() for h in os.getenv("ALLOWED_HOSTS", _DEFAULT_ALLOWED_HOSTS).split(",") if h.strip()]
+if not ALLOWED_HOSTS:
+    # An empty list would 421 all public traffic (localhost-only) — fail safe
+    logger.warning("ALLOWED_HOSTS is empty; falling back to defaults %s", _DEFAULT_ALLOWED_HOSTS)
+    ALLOWED_HOSTS = [h.strip() for h in _DEFAULT_ALLOWED_HOSTS.split(",")]
+
 # Rate limiting config
 MCP_API_KEY = os.getenv("MCP_API_KEY", "")
 # Increased from 30 to 60 - Claude Desktop makes rapid tool calls
@@ -65,8 +74,8 @@ RATE_LIMIT_REQUESTS = int(os.getenv("RATE_LIMIT_REQUESTS", "60"))
 MAX_TOKEN_BUDGET = 25000
 
 # Health check thresholds
-MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "300000"))
-EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "334000"))
+MINIMUM_EXPECTED_DOCS = int(os.getenv("MIN_EXPECTED_DOCS", "290000"))
+EXPECTED_FULL_INDEX_SIZE = int(os.getenv("EXPECTED_FULL_INDEX_SIZE", "322000"))
 
 # Meilisearch connection settings
 MEILI_TIMEOUT = int(os.getenv("MEILI_TIMEOUT", "10"))  # seconds
@@ -889,9 +898,12 @@ class RateLimitMiddleware(BaseHTTPMiddleware):
         self._cleanup_interval = 300  # Clean up all stale entries every 5 minutes
 
     def _get_client_ip(self, request) -> str:
+        # Use the RIGHTMOST X-Forwarded-For token: Caddy appends the real
+        # client IP as the last value, while leftmost tokens are
+        # client-supplied and would let attackers rotate rate-limit buckets.
         forwarded = request.headers.get("x-forwarded-for")
         if forwarded:
-            return forwarded.split(",")[0].strip()
+            return forwarded.split(",")[-1].strip()
         return request.client.host if request.client else "unknown"
 
     def _is_authenticated(self, request) -> bool:
@@ -1100,12 +1112,15 @@ def main():
         )
     ]
 
+    logger.info(f"Allowed hosts: {ALLOWED_HOSTS} (+ localhost)")
+
     # Create ASGI app with middleware attached
     app = mcp.http_app(
         path="/mcp",
         middleware=middleware,
         transport="streamable-http",
         stateless_http=True,  # Stateless for HTTP scalability
+        allowed_hosts=ALLOWED_HOSTS,  # fastmcp 3.x rejects unknown Host headers with 421
     )
 
     # Run with uvicorn

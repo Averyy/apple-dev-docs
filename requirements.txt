@@ -1,19 +1,21 @@
+# ALL versions pinned exactly — see note in mcp-server/requirements.txt.
+# Shared packages must match mcp-server/requirements.txt (both files install
+# into the same Docker image, second install wins on conflicts).
+
 # Core dependencies - Scraping
-httpx>=0.27.1
-aiohttp>=3.10.0,<4.0
+httpx==0.28.1
+aiohttp==3.14.1
 beautifulsoup4==4.12.3
-markdownify==0.12.1
+markdownify==0.12.1   # 1.x changes markdown output — would churn scraped docs
 asyncio-throttle==1.0.2
 
 # Data handling
 jsonschema==4.21.1
-PyYAML>=6.0
+PyYAML==6.0.3
 
 # Data processing
-openai>=1.0.0
-tiktoken>=0.5.0
-python-dotenv>=1.0.0
-meilisearch==0.36.0
+python-dotenv==1.2.2
+meilisearch==0.42.0
 
 # Development tools
 mypy==1.8.0
@@ -25,7 +27,7 @@ ruff==0.2.1
 
 # Logging and monitoring
 structlog==24.1.0
-rich>=13.9.4
+rich==15.0.0
 
 # Type stubs
 types-beautifulsoup4==4.12.0.20240229
