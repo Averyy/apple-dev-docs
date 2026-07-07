@@ -1,5 +1,6 @@
 """JSON-based Apple documentation scraper that uses Apple's data endpoints."""
 
+import asyncio
 import json
 import time
 from datetime import datetime
@@ -8,6 +9,7 @@ from typing import Any, Dict, List, Optional, Set
 from urllib.parse import urljoin, urlparse
 
 from scraper.base import BaseAppleScraper
+from scraper.config import Config
 from scraper.utils.logger import get_logger
 from scraper.utils.markdown_converter import AppleDocMarkdownConverter
 
@@ -19,6 +21,8 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
     
     # Base URL for JSON data
     JSON_BASE_URL = "https://developer.apple.com/tutorials/data/documentation"
+    # DocC navigator index (full page tree per framework, one request)
+    INDEX_BASE_URL = "https://developer.apple.com/tutorials/data/index"
     
     def __init__(self, framework_id: str, framework_name: Optional[str] = None, 
                  include_cross_refs: bool = False) -> None:
@@ -40,6 +44,10 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         self.topic_hierarchy: Dict[str, Dict[str, List[str]]] = {}  # Track topic organization
         self.include_cross_refs = include_cross_refs
         self.cross_framework_refs: Dict[str, Set[str]] = {}  # Track cross-framework references
+        # Index-based discovery state (DISCOVERY_MODE=index): the set of doc
+        # paths Apple's navigator index lists, or None when crawling.
+        self._index_paths: Optional[Set[str]] = None
+        self._index_misses = 0
     
     def _convert_doc_url_to_json_url(self, doc_url: str) -> str:
         """Convert a documentation URL to its JSON data URL.
@@ -149,9 +157,27 @@ class AppleJSONDocumentationScraper(BaseAppleScraper):
         progress_file.write_text(f"Scraping main page: {main_doc_url}\n")
         await self._scrape_and_save_url(main_doc_url)
         
+        # Enumerate all pages upfront from Apple's navigator index when enabled;
+        # fall back to link-crawling for this framework if that fails.
+        initial_urls = [framework_json_url]
+        if Config.DISCOVERY_MODE == "index":
+            index_urls = await self._enumerate_from_index()
+            if index_urls is not None:
+                initial_urls.extend(index_urls)
+                logger.info(
+                    "index_discovery_enabled",
+                    framework=self.framework_id,
+                    pages=len(index_urls),
+                )
+            else:
+                logger.warning(
+                    "index_discovery_fallback_to_crawl",
+                    framework=self.framework_id,
+                )
+
         # Use iterative approach instead of recursion to avoid stack overflow
         try:
-            await self._discover_and_scrape_iterative(framework_json_url, progress_file)
+            await self._discover_and_scrape_iterative(initial_urls, progress_file)
         finally:
             # Final progress update - ALWAYS execute this even if an error occurs
             self._update_progress_file(progress_file, "COMPLETED", final=True)
@@ -245,162 +271,263 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         except json.JSONDecodeError:
             logger.warning("failed_to_parse_json", url=json_url)
     
-    async def _discover_and_scrape_iterative(self, initial_json_url: str, progress_file) -> None:
+    async def _enumerate_from_index(self) -> Optional[List[str]]:
+        """Enumerate every page of this framework from Apple's navigator index.
+
+        Returns JSON URLs for all internal pages, or None if the index is
+        unavailable/implausible (caller falls back to crawl discovery).
+        Side effect: stores the doc-path set in self._index_paths for the
+        index_miss audit.
+        """
+        index_url = f"{self.INDEX_BASE_URL}/{self.framework_id.lower()}"
+        try:
+            result = await self.fetch_page_with_etag(index_url, use_etag=False)
+        except Exception as e:
+            logger.warning("index_fetch_failed", framework=self.framework_id, error=str(e))
+            result = None
+        finally:
+            # The index endpoint is not a documentation page — keep fetch
+            # bookkeeping (e.g. mark_error entries) out of the hash file.
+            self.hash_manager.remove(index_url)
+        if not result:
+            return None
+        try:
+            data = json.loads(result[0])
+        except Exception as e:
+            logger.warning("index_parse_failed", framework=self.framework_id, error=str(e))
+            return None
+
+        paths: Set[str] = set()
+
+        def walk(nodes: List[Dict[str, Any]]) -> None:
+            for node in nodes:
+                path = node.get("path")
+                if path and not node.get("external"):
+                    paths.add(path.lower())
+                walk(node.get("children") or [])
+
+        try:
+            for roots in data.get("interfaceLanguages", {}).values():
+                walk(roots)
+        except Exception as e:
+            logger.warning("index_parse_failed", framework=self.framework_id, error=str(e))
+            return None
+
+        if not paths:
+            return None
+
+        self._index_paths = paths
+        # Only enumerate pages we already track. The navigator index is a
+        # SUPERSET of the curated docs for legacy frameworks — it lists
+        # uncurated legacy symbols (old macros, numeric-ID pages) that the
+        # crawl never surfaces and that shouldn't silently join the corpus.
+        # New pages keep entering the proven way: links from changed pages.
+        urls = []
+        extras = 0
+        for path in sorted(paths):
+            rel = path.removeprefix("/documentation/")
+            rel = self._escape_dot_path_segments(rel)
+            json_url = f"{self.JSON_BASE_URL}/{rel}.json"
+            if json_url in self.hash_manager.hashes:
+                urls.append(json_url)
+            else:
+                extras += 1
+                logger.debug("index_extra_skipped", framework=self.framework_id, path=path)
+        if extras:
+            logger.info(
+                "index_extras_not_enumerated",
+                framework=self.framework_id,
+                extras=extras,
+                enumerated=len(urls),
+            )
+        return urls
+
+    async def _discover_and_scrape_iterative(self, initial_json_urls, progress_file) -> None:
         """Iterative version of discovery to avoid recursion depth issues with optimized ETag usage."""
         from collections import deque
-        
+
         # Queue of URLs to process
-        url_queue = deque([initial_json_url])
-        
-        logger.info(f"starting_iterative_discovery", initial_url=initial_json_url)
+        if isinstance(initial_json_urls, str):
+            initial_json_urls = [initial_json_urls]
+        url_queue = deque(initial_json_urls)
+
+        logger.info(f"starting_iterative_discovery", initial_urls=len(initial_json_urls))
         
         # Track queue size for monitoring
         max_queue_size = 0
         processed_count = 0
         
-        while url_queue:
-            # Monitor queue growth for debugging
-            current_queue_size = len(url_queue)
-            max_queue_size = max(max_queue_size, current_queue_size)
-            
-            # Get next URL to process
-            json_url = url_queue.popleft()
-            
-            # Skip if already processed
-            if json_url in self.processed_urls:
-                continue
-                
-            self.processed_urls.add(json_url)
-            processed_count += 1
-            
-            # Log progress periodically
-            if processed_count % 100 == 0:
-                logger.info(
-                    "iterative_discovery_progress",
-                    processed=processed_count,
-                    queue_size=current_queue_size,
-                    max_queue_size=max_queue_size
-                )
-            
-            try:
-                # OPTIMIZED: Fetch JSON with ETag support for discovery
-                result = await self.fetch_page_with_etag(json_url, use_etag=True)
-                
-                if not result:
-                    # Got 304 Not Modified - content unchanged
-                    doc_url = self._convert_json_url_to_doc_url(json_url)
-                    logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
-                    self.stats['pages_skipped'] += 1
-                    
-                    # Update hash with file path for orphan detection even though content unchanged
-                    # We can calculate file path from URL alone since it's deterministic
-                    file_path = self._get_organized_file_path(doc_url, {})
-                    # Note: We don't have response_text for 304, but we can still update session info
-                    if json_url in self.hash_manager.hashes:
-                        # Get existing hash data and update with new session/file path
-                        existing_data = self.hash_manager.hashes[json_url]
-                        existing_data['session_id'] = self.hash_manager.session_id
-                        existing_data['file_path'] = str(file_path)
-                        existing_data['last_checked'] = datetime.utcnow().isoformat()
-                        self.hash_manager._modified = True
-                    
-                    # IMPORTANT: Still need to discover child pages!
-                    # The main page might be unchanged but children could be new/updated
-                    
-                    # Check if we have cached discovery data for this page
-                    if json_url in self.hash_manager.hashes:
-                        # We've seen this page before - need to rediscover its children
-                        # Fetch without ETag to get content for discovery
-                        discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
-                        if discovery_result:
-                            try:
-                                data = json.loads(discovery_result[0])
-                                # Extract URLs for discovery
-                                new_urls = self._extract_urls_from_json_data(data)
-                                for new_url in new_urls:
-                                    if new_url not in self.processed_urls:
-                                        url_queue.append(new_url)
-                                logger.debug("rediscovered_child_urls", parent=json_url, count=len(new_urls))
-                            except json.JSONDecodeError:
-                                logger.warning("failed_to_parse_json_for_rediscovery", url=json_url)
-                    
-                    # Update progress
-                    if self.stats['pages_skipped'] % 50 == 0:
-                        self._update_progress_file(progress_file, f"{doc_url} (skipped)")
+        # Worker pool: process up to INTRA_FRAMEWORK_CONCURRENCY pages of this
+        # framework at once (see todo-concurrency.md). asyncio is single-threaded,
+        # so shared state (queue, processed_urls, stats, hash_manager) is safe;
+        # URLs are marked processed before any await, preventing duplicates.
+        in_flight: Set[asyncio.Task] = set()
+
+        while url_queue or in_flight:
+            # Launch tasks up to the concurrency limit
+            while url_queue and len(in_flight) < Config.INTRA_FRAMEWORK_CONCURRENCY:
+                max_queue_size = max(max_queue_size, len(url_queue))
+                json_url = url_queue.popleft()
+                if json_url in self.processed_urls:
                     continue
-                
-                # Got 200 OK - content is new or changed
-                response_text, etag = result
-                
-                # Parse JSON for discovery
-                try:
-                    data = json.loads(response_text)
-                except json.JSONDecodeError:
-                    logger.warning("failed_to_parse_json", url=json_url)
-                    continue
-                
-                # Process and save this page
-                doc_url = self._convert_json_url_to_doc_url(json_url)
-                
-                # Check if we need to process based on content hash
-                if self.hash_manager.has_changed(json_url, response_text, etag):
-                    # Extract and save page data
-                    page_data = self._extract_from_json(data, doc_url)
-                    if page_data:
-                        # Calculate file path for hash updates
-                        file_path = self._get_organized_file_path(doc_url, page_data)
-                        
-                        # Update hashes before saving with file path
-                        self.hash_manager.update_hash(json_url, response_text, etag, file_path)
-                        self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
-                        
-                        await self.save_page_data(doc_url, page_data, file_path)
-                        self.stats['pages_scraped'] += 1
-                        
-                        # Update progress
-                        self._update_progress_file(progress_file, doc_url)
-                        
-                        # Log progress every 10 files
-                        if self.stats['pages_scraped'] % 10 == 0:
-                            logger.info(
-                                "scraping_progress",
-                                scraped=self.stats['pages_scraped'],
-                                skipped=self.stats['pages_skipped'],
-                                failed=self.stats['pages_failed'],
-                                queue_size=current_queue_size
-                            )
-                else:
-                    # Content hasn't changed according to hash
-                    logger.debug("content_unchanged_via_hash", url=doc_url)
-                    self.stats['pages_skipped'] += 1
-                    
-                    # Still need to update hash with file path for orphan detection
-                    page_data = self._extract_from_json(data, doc_url)
-                    if page_data:
-                        file_path = self._get_organized_file_path(doc_url, page_data)
-                        # Update hash with current session info even though content unchanged
-                        self.hash_manager.update_hash(json_url, response_text, etag, file_path)
-                        self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
-                
-                # Extract new URLs for discovery (regardless of whether we saved)
-                new_urls = self._extract_urls_from_json_data(data)
-                
-                # Filter and add new URLs to queue
-                for new_url in new_urls:
-                    if new_url not in self.processed_urls:
-                        url_queue.append(new_url)
-                        
-            except Exception as e:
-                logger.error("error_processing_url", url=json_url, error=str(e))
-                continue
-        
+                self.processed_urls.add(json_url)
+                processed_count += 1
+                if processed_count % 100 == 0:
+                    logger.info(
+                        "iterative_discovery_progress",
+                        processed=processed_count,
+                        queue_size=len(url_queue),
+                        max_queue_size=max_queue_size,
+                    )
+                in_flight.add(asyncio.create_task(
+                    self._process_queued_url(json_url, url_queue, progress_file)
+                ))
+
+            if not in_flight:
+                continue  # queue contained only already-processed URLs
+
+            done, in_flight = await asyncio.wait(in_flight, return_when=asyncio.FIRST_COMPLETED)
+            for task in done:
+                exc = task.exception()
+                if exc:
+                    logger.error("worker_task_error", error=str(exc))
+
         logger.info(
             "iterative_discovery_complete",
             total_processed=processed_count,
             max_queue_size=max_queue_size,
-            framework=self.framework_name
+            framework=self.framework_name,
+            index_misses=self._index_misses,
         )
-    
+
+    async def _process_queued_url(self, json_url: str, url_queue, progress_file) -> None:
+        """Process a single discovered URL: fetch, save if changed, enqueue children."""
+        try:
+            # OPTIMIZED: Fetch JSON with ETag support for discovery
+            result = await self.fetch_page_with_etag(json_url, use_etag=True)
+
+            if not result:
+                # Got 304 Not Modified - content unchanged
+                doc_url = self._convert_json_url_to_doc_url(json_url)
+                logger.debug("content_unchanged_skip_scrape", json_url=json_url, doc_url=doc_url)
+                self.stats['pages_skipped'] += 1
+
+                # Update hash session info for orphan detection even though
+                # content unchanged. PRESERVE the recorded file path: paths can
+                # be data-dependent (kind-suffix disambiguation uses symbol_kind),
+                # so recomputing from the URL alone with empty data would record
+                # a wrong path and get the real file orphan-deleted.
+                if json_url in self.hash_manager.hashes:
+                    existing_data = self.hash_manager.hashes[json_url]
+                    if not existing_data.get('file_path'):
+                        existing_data['file_path'] = str(self._get_organized_file_path(doc_url, {}))
+                    existing_data['session_id'] = self.hash_manager.session_id
+                    existing_data['last_checked'] = datetime.utcnow().isoformat()
+                    self.hash_manager._modified = True
+
+                # IMPORTANT: Still need to discover child pages!
+                # The main page might be unchanged but children could be new/updated.
+                # In index mode every page is already enumerated upfront, so the
+                # discovery refetch is unnecessary — a 304 proves the page (and
+                # therefore its links) is byte-identical.
+                if self._index_paths is None and json_url in self.hash_manager.hashes:
+                    # We've seen this page before - need to rediscover its children
+                    # Fetch without ETag to get content for discovery
+                    discovery_result = await self.fetch_page_with_etag(json_url, use_etag=False)
+                    if discovery_result:
+                        try:
+                            data = json.loads(discovery_result[0])
+                            # Extract URLs for discovery
+                            new_urls = self._extract_urls_from_json_data(data)
+                            for new_url in new_urls:
+                                if new_url not in self.processed_urls:
+                                    url_queue.append(new_url)
+                            logger.debug("rediscovered_child_urls", parent=json_url, count=len(new_urls))
+                        except json.JSONDecodeError:
+                            logger.warning("failed_to_parse_json_for_rediscovery", url=json_url)
+
+                # Update progress
+                if self.stats['pages_skipped'] % 50 == 0:
+                    self._update_progress_file(progress_file, f"{doc_url} (skipped)")
+                return
+
+            # Got 200 OK - content is new or changed
+            response_text, etag = result
+
+            # Parse JSON for discovery
+            try:
+                data = json.loads(response_text)
+            except json.JSONDecodeError:
+                logger.warning("failed_to_parse_json", url=json_url)
+                return
+
+            # Process and save this page
+            doc_url = self._convert_json_url_to_doc_url(json_url)
+
+            # Check if we need to process based on content hash
+            if self.hash_manager.has_changed(json_url, response_text, etag):
+                # Extract and save page data
+                page_data = self._extract_from_json(data, doc_url)
+                if page_data:
+                    # Calculate file path for hash updates
+                    file_path = self._get_organized_file_path(doc_url, page_data)
+
+                    # Update hashes before saving with file path
+                    self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                    self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
+
+                    await self.save_page_data(doc_url, page_data, file_path)
+                    self.stats['pages_scraped'] += 1
+
+                    # Update progress
+                    self._update_progress_file(progress_file, doc_url)
+
+                    # Log progress every 10 files
+                    if self.stats['pages_scraped'] % 10 == 0:
+                        logger.info(
+                            "scraping_progress",
+                            scraped=self.stats['pages_scraped'],
+                            skipped=self.stats['pages_skipped'],
+                            failed=self.stats['pages_failed'],
+                            queue_size=len(url_queue)
+                        )
+            else:
+                # Content hasn't changed according to hash
+                logger.debug("content_unchanged_via_hash", url=doc_url)
+                self.stats['pages_skipped'] += 1
+
+                # Still need to update hash with file path for orphan detection
+                page_data = self._extract_from_json(data, doc_url)
+                if page_data:
+                    file_path = self._get_organized_file_path(doc_url, page_data)
+                    # Update hash with current session info even though content unchanged
+                    self.hash_manager.update_hash(json_url, response_text, etag, file_path)
+                    self.hash_manager.update_hash(doc_url, response_text, etag, file_path)
+
+            # Extract new URLs for discovery (regardless of whether we saved)
+            new_urls = self._extract_urls_from_json_data(data)
+
+            # Filter and add new URLs to queue
+            for new_url in new_urls:
+                if new_url not in self.processed_urls:
+                    # Audit: in index mode, a crawled link absent from the
+                    # navigator index means the index is incomplete — the URL
+                    # is still scraped (hybrid safety), just logged.
+                    if self._index_paths is not None:
+                        doc_path = ("/" + new_url.removeprefix(f"{self.JSON_BASE_URL}/")
+                                    .removesuffix(".json").replace("'", "")).lower()
+                        if f"/documentation{doc_path}" not in self._index_paths:
+                            self._index_misses += 1
+                            logger.warning(
+                                "index_miss",
+                                framework=self.framework_id,
+                                url=new_url,
+                            )
+                    url_queue.append(new_url)
+
+        except Exception as e:
+            logger.error("error_processing_url", url=json_url, error=str(e))
+
     def _extract_urls_from_json_data(self, data: Dict[str, Any]) -> List[str]:
         """Extract all URLs from JSON data without recursing."""
         urls = []
@@ -636,14 +763,17 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             # Remove .json suffix properly (not rstrip which removes chars)
             if doc_url.endswith('.json'):
                 doc_url = doc_url[:-5]
-            file_path = self._get_organized_file_path(doc_url, {})
-            
-            # Track this URL in the current session
+
+            # Track this URL in the current session. Preserve any recorded file
+            # path (it can be data-dependent via kind-suffix disambiguation);
+            # only compute from the URL as a fallback for new entries.
             if json_url not in self.hash_manager.hashes:
                 self.hash_manager.hashes[json_url] = {}
-            self.hash_manager.hashes[json_url]['session_id'] = self.hash_manager.session_id
-            self.hash_manager.hashes[json_url]['file_path'] = str(file_path)
-            self.hash_manager.hashes[json_url]['last_checked'] = datetime.utcnow().isoformat()
+            entry = self.hash_manager.hashes[json_url]
+            if not entry.get('file_path'):
+                entry['file_path'] = str(self._get_organized_file_path(doc_url, {}))
+            entry['session_id'] = self.hash_manager.session_id
+            entry['last_checked'] = datetime.utcnow().isoformat()
             if etag:
                 self.hash_manager.hashes[json_url]['etag'] = etag
             self.hash_manager._modified = True
@@ -1190,7 +1320,7 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
             file_path: Optional pre-calculated file path
         """
         # Ensure topic hierarchy is extracted for the main framework page
-        if url == f'https://developer.apple.com/documentation/{self.framework_id}' and not self.topic_hierarchy:
+        if url.lower() == f'https://developer.apple.com/documentation/{self.framework_id}'.lower() and not self.topic_hierarchy:
             framework_json_url = f"{self.JSON_BASE_URL}/{self.framework_id}.json"
             await self._extract_topic_hierarchy(framework_json_url)
         
@@ -1200,6 +1330,16 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         # Determine organized file path if not provided
         if file_path is None:
             file_path = self._get_organized_file_path(url, data)
+
+        # Containment guard: never write outside the framework output dir
+        # (mirrors the MLX scraper's is_safe_path; traversal is neutralized
+        # upstream, this is defense in depth at the write sink).
+        resolved = file_path.resolve()
+        output_root = self.output_dir.resolve()
+        if resolved != output_root and output_root not in resolved.parents:
+            logger.error("unsafe_file_path_skipped", url=url, path=str(file_path))
+            return
+
         file_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Save markdown file
@@ -1232,23 +1372,15 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         Returns:
             Path object for the organized file location following URL structure
         """
-        # Extract the path components from URL (handle case-insensitive framework names)
-        # WatchKit URLs use 'WatchKit' but framework_id is 'watchkit'
-        framework_variants = [
-            self.framework_id,
-            self.framework_id.capitalize(),
-            self.framework_id.upper(),
-            self.framework_id.lower(),
-            'WatchKit' if self.framework_id.lower() == 'watchkit' else self.framework_id
-        ]
-        
-        framework_patterns = [f'https://developer.apple.com/documentation/{variant}' for variant in set(framework_variants)]
-        
+        # Match the framework prefix case-insensitively: Apple emits URL
+        # casing inconsistently over time ('XCTest' vs 'xctest'), but the
+        # URL space itself is case-insensitive.
+        prefix = f'https://developer.apple.com/documentation/{self.framework_id}'.lower()
         url_path = None
-        for pattern in framework_patterns:
-            if url.startswith(pattern):
-                url_path = url.replace(pattern, '').lstrip('/')
-                break
+        if url.lower().startswith(prefix):
+            rest = url[len(prefix):]
+            if rest == '' or rest.startswith('/'):
+                url_path = rest.lstrip('/')
         
         # Fallback if no pattern matches
         if url_path is None:
@@ -1268,6 +1400,12 @@ Progress: {self.stats['pages_scraped']} scraped, {self.stats['pages_skipped']} s
         if len(path_segments) == 1:
             # Single segment: watchkit/enabling-background-sessions.md
             filename = self._create_clean_filename(path_segments[0], data)
+            if filename.lower() == self.framework_id.lower():
+                # A symbol named like its framework (e.g. the XCTest class in
+                # the XCTest framework) would collide case-insensitively with
+                # the framework root file on case-insensitive filesystems.
+                kind = self._slugify(data.get('symbol_kind', '')) or 'page'
+                filename = f"{filename}-{kind}"
             return self.output_dir / f"{filename}.md"
         else:
             # Multiple segments: watchkit/wkapplication/shared.md

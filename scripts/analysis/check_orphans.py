@@ -214,11 +214,18 @@ def cleanup_framework_orphans(framework_name: str, manual_approval: bool = False
                 logger.error(f"Failed to delete {orphan}: {e}")
         
         if deleted_count > 0:
+            # Prune hash entries for the deleted files — otherwise entries
+            # outlive their files and accumulate forever.
+            pruned = hash_manager.prune_missing_files()
+            if pruned:
+                hash_manager.save()
+                logger.info(f"Pruned {pruned} hash entries for deleted files in {framework_name}")
+
             if manual_approval:
                 print(f"✅ Deleted {deleted_count} orphaned files from {framework_name}")
             else:
                 logger.info(f"Auto-cleaned {deleted_count} orphaned files from {framework_name}")
-        
+
         return deleted_count
         
     except Exception as e:

@@ -104,9 +104,20 @@ class HashManager:
         if url not in self.hashes:
             logger.debug("new_content", url=url)
             return True
-        
+
         stored_data = self.hashes[url]
-        
+
+        # Self-heal: if the recorded output file is gone (e.g. deleted by
+        # orphan cleanup while the hash entry survived), the page must be
+        # re-scraped regardless of what ETags/hashes say.
+        if self._output_file_missing(stored_data):
+            logger.info(
+                "output_file_missing_rescrape",
+                url=url,
+                file=stored_data.get("file_path"),
+            )
+            return True
+
         # Primary: ETag comparison (fast, server-validated)
         if etag and "etag" in stored_data:
             if etag == stored_data["etag"]:
@@ -148,9 +159,64 @@ class HashManager:
             Stored ETag or None if not available
         """
         if url in self.hashes:
-            return self.hashes[url].get("etag")
+            entry = self.hashes[url]
+            # Never send If-None-Match when the output file is missing — a
+            # 304 would short-circuit the re-scrape needed to restore it.
+            if self._output_file_missing(entry):
+                return None
+            return entry.get("etag")
         return None
-    
+
+    @staticmethod
+    def _output_file_missing(entry: Dict[str, str]) -> bool:
+        """True if the entry records an output file that no longer exists.
+
+        Falls back to a case-insensitive sibling check so this agrees with
+        get_orphaned_files' view of existence when recorded casing drifts
+        from on-disk casing (e.g. hash files shared across macOS/Linux).
+        """
+        file_path = entry.get("file_path")
+        if not file_path:
+            return False
+        path = Path(file_path)
+        if path.exists():
+            return False
+        parent = path.parent
+        if parent.is_dir():
+            wanted = path.name.lower()
+            try:
+                return not any(child.name.lower() == wanted for child in parent.iterdir())
+            except OSError:
+                return True
+        return True
+
+    def remove(self, url: str) -> bool:
+        """Remove a single entry, persisting the removal on next save.
+
+        Returns True if the entry existed.
+        """
+        if url in self.hashes:
+            del self.hashes[url]
+            self._modified = True
+            return True
+        return False
+
+    def prune_missing_files(self) -> int:
+        """Remove entries whose recorded output file no longer exists.
+
+        Called after orphan cleanup deletes files, so entries don't outlive
+        their files and accumulate forever.
+
+        Returns:
+            Number of entries removed.
+        """
+        dead = [url for url, entry in self.hashes.items() if self._output_file_missing(entry)]
+        for url in dead:
+            del self.hashes[url]
+        if dead:
+            self._modified = True
+        return len(dead)
+
     def update_hash(self, url: str, content: str, etag: Optional[str] = None, file_path: Optional[Path] = None) -> None:
         """Update hash and ETag for a URL.
         

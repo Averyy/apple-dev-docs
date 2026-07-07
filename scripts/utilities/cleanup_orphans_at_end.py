@@ -13,9 +13,27 @@ from typing import Dict, List, Tuple
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from analysis.check_orphans import HashManager
+from scraper.config import Config
 from scraper.utils.logger import get_logger
 
 logger = get_logger(__name__)
+
+
+def prune_hash_entries(framework_names) -> int:
+    """Remove hash entries whose output files no longer exist, for the given
+    frameworks. Called after orphan deletion so entries don't outlive files
+    (unpruned entries previously accumulated by the tens of thousands)."""
+    total = 0
+    for framework in framework_names:
+        hash_file = Config.get_hash_file(framework)
+        if not hash_file.exists():
+            continue
+        hash_manager = HashManager(hash_file)
+        pruned = hash_manager.prune_missing_files()
+        if pruned:
+            hash_manager.save()
+            total += pruned
+    return total
 
 
 def collect_all_orphans() -> Dict[str, List[Path]]:
@@ -115,6 +133,10 @@ def cleanup_orphans_with_approval(orphans_by_framework: Dict[str, List[Path]]) -
                 logger.error(f"Failed to delete {orphan}: {e}")
     
     print(f"\n✅ Deleted {deleted_count} orphaned files")
+    if deleted_count:
+        pruned = prune_hash_entries(orphans_by_framework.keys())
+        if pruned:
+            print(f"🧹 Pruned {pruned} hash entries for deleted files")
     return deleted_count
 
 

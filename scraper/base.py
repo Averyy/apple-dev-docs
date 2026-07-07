@@ -35,6 +35,7 @@ class BaseAppleScraper(ABC):
             framework_name: Human-readable name of the framework
             base_url: Base URL for the framework documentation
         """
+        framework_id = self._canonical_framework_id(framework_id)
         self.framework_id = framework_id
         self.framework_name = framework_name
         self.base_url = base_url or f"{Config.DOCUMENTATION_URL}/{framework_id}"
@@ -64,6 +65,41 @@ class BaseAppleScraper(ABC):
             base_url=self.base_url
         )
     
+    @staticmethod
+    def _canonical_framework_id(framework_id: str) -> str:
+        """Reconcile framework id casing with any existing hash file.
+
+        Apple's technologies.json changes URL casing between runs (e.g.
+        'cryptokit' vs 'CryptoKit'). Framework identity is case-insensitive,
+        so an existing hash file's casing wins over the incoming one to keep
+        one directory and one hash file per framework.
+        """
+        suffix = "_hashes.json"
+        hash_dir = Config.get_hash_file(framework_id).parent
+        if not hash_dir.exists():
+            return framework_id
+        wanted = f"{framework_id.lower()}{suffix}"
+        candidates = [
+            p.name[: -len(suffix)]
+            for p in hash_dir.glob(f"*{suffix}")
+            if p.name.lower() == wanted
+        ]
+        if not candidates or framework_id in candidates:
+            return framework_id
+        if len(candidates) > 1:
+            logger.warning(
+                "multiple_casing_candidates",
+                requested=framework_id,
+                candidates=sorted(candidates),
+            )
+        existing_id = sorted(candidates)[0]
+        logger.info(
+            "framework_id_casing_reconciled",
+            requested=framework_id,
+            using=existing_id,
+        )
+        return existing_id
+
     async def __aenter__(self) -> "BaseAppleScraper":
         """Async context manager entry."""
         self.session = httpx.AsyncClient(

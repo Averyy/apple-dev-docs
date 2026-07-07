@@ -36,6 +36,28 @@ class Config:
     LOG_FORMAT = os.getenv("LOG_FORMAT", "console")
     LOG_FILE = Path(os.getenv("LOG_FILE", "./scraper.log")) if os.getenv("LOG_FILE") else None
     
+    # Concurrent page fetches within a single framework, used by the JSON
+    # scraper's streaming discovery path (the main production path). Default
+    # 1 = sequential, the long-standing behavior (GitHub Actions keeps this).
+    # Raise via env for faster manual runs. Note: MAX_CONCURRENT_REQUESTS
+    # above governs only the legacy batching path in base.scrape_framework.
+    INTRA_FRAMEWORK_CONCURRENCY = max(1, int(os.getenv("INTRA_FRAMEWORK_CONCURRENCY", "1")))
+
+    # Page discovery strategy:
+    # "crawl" (default) — follow links from each page's JSON, refetching
+    #   unchanged pages once more for child discovery (long-standing behavior).
+    # "index" — enumerate ALREADY-TRACKED pages upfront from Apple's navigator
+    #   index (/tutorials/data/index/<framework>), skip the discovery refetch
+    #   on 304s (halves requests), audit-log crawl/index set differences, and
+    #   fall back to crawl per framework if the index fetch fails.
+    #   Trade-offs vs crawl (why the default stays "crawl" until soaked):
+    #   NEW pages are only discovered via links on CHANGED pages — normally
+    #   equivalent (linking a new child changes the parent), but a new page
+    #   whose only referrer somehow returns 304 would be missed until that
+    #   referrer changes; and a page whose hash entry was pruned cannot
+    #   re-enter via enumeration alone.
+    DISCOVERY_MODE = os.getenv("DISCOVERY_MODE", "crawl").lower()
+
     # Development settings
     DEBUG = os.getenv("DEBUG", "false").lower() == "true"
     TEST_MODE = os.getenv("TEST_MODE", "false").lower() == "true"

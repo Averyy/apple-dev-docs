@@ -24,6 +24,7 @@ Usage:
 
 import argparse
 import asyncio
+import hashlib
 import json
 import logging
 import os
@@ -849,9 +850,30 @@ async def scrape_source(
 
     console.print(f"  Found {len(pages)} pages")
 
+    # Map every page to its target file, disambiguating names that collide
+    # case-insensitively (e.g. mlx.core.PrintOptions vs mlx.core.printoptions)
+    # so the tree stays usable on case-insensitive filesystems. EVERY member
+    # of a collision set gets a suffix derived from its own relative path —
+    # per-page deterministic, so set membership changes never rename siblings.
+    planned: Dict[str, Optional[Path]] = {
+        url: url_to_filepath(url, source.base_url, output_dir) for url in sorted(pages)
+    }
+    by_folded: Dict[str, List[str]] = {}
+    for page_url, fp in planned.items():
+        if fp is not None:
+            by_folded.setdefault(str(fp).lower(), []).append(page_url)
+    for colliding in by_folded.values():
+        if len(colliding) < 2:
+            continue
+        for page_url in colliding:
+            fp = planned[page_url]
+            assert fp is not None
+            suffix = hashlib.sha1(str(fp.relative_to(output_dir)).encode()).hexdigest()[:5]
+            planned[page_url] = fp.with_name(f"{fp.stem}-{suffix}{fp.suffix}")
+
     # Process each page
     for url in sorted(pages):
-        filepath = url_to_filepath(url, source.base_url, output_dir)
+        filepath = planned[url]
 
         # Skip if path validation failed
         if filepath is None:
@@ -869,9 +891,11 @@ async def scrape_source(
             stats["errors"] += 1
             continue
 
-        # Check if content changed (hash the HTML)
+        # Check if content changed (hash the HTML). Only honor the skip when
+        # the planned output file actually exists — otherwise a renamed target
+        # (collision disambiguation) or deleted file would never be written.
         content_hash = compute_hash(html)
-        if not force and hash_key in hashes and hashes[hash_key] == content_hash:
+        if not force and hash_key in hashes and hashes[hash_key] == content_hash and filepath.exists():
             stats["skipped"] += 1
             continue
 

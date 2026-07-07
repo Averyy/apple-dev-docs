@@ -253,15 +253,15 @@ async def scrape_everything():
             print("🔍 Checking for orphaned files...")
             
             # Import and run the cleanup
-            from cleanup_orphans_at_end import collect_all_orphans, cleanup_orphans_with_approval
-            
+            from cleanup_orphans_at_end import collect_all_orphans, cleanup_orphans_with_approval, prune_hash_entries
+
             orphans = collect_all_orphans()
             if orphans:
                 if '--auto-cleanup' in sys.argv:
                     # Auto-approve deletions
                     total_orphans = sum(len(files) for files in orphans.values())
                     print(f"🗑️  Auto-cleaning {total_orphans} orphaned files across {len(orphans)} frameworks...")
-                    
+
                     deleted_count = 0
                     for framework, files in orphans.items():
                         for orphan in files:
@@ -271,6 +271,9 @@ async def scrape_everything():
                             except OSError:
                                 pass
                     print(f"✅ Auto-deleted {deleted_count} orphaned files")
+                    pruned = prune_hash_entries(orphans.keys())
+                    if pruned:
+                        print(f"🧹 Pruned {pruned} hash entries for deleted files")
                 else:
                     cleanup_orphans_with_approval(orphans)
             else:
