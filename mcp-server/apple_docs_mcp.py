@@ -51,7 +51,7 @@ from mcp.types import ToolAnnotations
 MEILISEARCH_URL = os.getenv("MEILI_HTTP_ADDR", "http://localhost:7700")
 MEILISEARCH_API_KEY = os.getenv("MEILI_SEARCH_KEY", os.getenv("MEILI_MASTER_KEY", ""))
 INDEX_NAME = "apple-docs"
-SERVER_VERSION = "2.4.0"
+SERVER_VERSION = "2.5.0"
 HTTP_PORT = int(os.getenv("HTTP_PORT", "8000"))
 BUILD_TIME = os.getenv("BUILD_TIME", "unknown")
 DOCS_UPDATED = os.getenv("DOCS_UPDATED", "unknown")

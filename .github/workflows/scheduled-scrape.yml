@@ -86,13 +86,13 @@ jobs:
           # Validate counts, use fallbacks if suspicious
           if [[ ! "$DOC_COUNT" =~ ^[0-9]+$ ]] || [ "$DOC_COUNT" -lt 300000 ]; then
             echo "::warning::Unexpected document count ($DOC_COUNT), using fallback"
-            DOC_DISPLAY="334,000+"
+            DOC_DISPLAY="322,000+"
           else
             DOC_DISPLAY=$(echo "$DOC_COUNT" | sed ':a;s/\B[0-9]\{3\}\>$/,&/;ta')
           fi
           if [[ ! "$FRAMEWORK_COUNT" =~ ^[0-9]+$ ]] || [ "$FRAMEWORK_COUNT" -lt 300 ]; then
             echo "::warning::Unexpected framework count ($FRAMEWORK_COUNT), using fallback"
-            FRAMEWORK_COUNT="370+"
+            FRAMEWORK_COUNT="390+"
           fi
 
           echo "Documents: $DOC_DISPLAY, Frameworks: $FRAMEWORK_COUNT, Date: $MONTH_DAY"
