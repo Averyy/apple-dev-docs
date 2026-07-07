@@ -4,8 +4,9 @@ services:
     build:
       context: ..
       dockerfile: mcp-server/Dockerfile
-      platforms:
-        - linux/amd64
+      # No platform pin: local builds run the host's native architecture
+      # (arm64 on Apple Silicon — the amd64 Meilisearch release binary
+      # segfaults under QEMU emulation). CI builds linux/amd64 for prod.
     container_name: apple-docs-mcp-local
     ports:
       - "8001:8000"
@@ -29,11 +30,12 @@ services:
           memory: 3G
           cpus: "3"
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      # Same app-level health semantics as production compose
+      test: ["CMD-SHELL", "curl -f -H \"Host: $${ALLOWED_HOSTS%%,*}\" \"http://localhost:$${HTTP_PORT:-8000}/health\""]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 60s
+      start_period: 120s
 
 volumes:
   meilisearch-local:

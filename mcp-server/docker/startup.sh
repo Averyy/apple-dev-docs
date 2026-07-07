@@ -109,10 +109,10 @@ if curl -s http://localhost:7700/health > /dev/null 2>&1; then
         http://localhost:7700/indexes/apple-docs/stats 2>/dev/null | \
         python3 -c "import sys, json; data=json.load(sys.stdin); print(data.get('numberOfDocuments', 0))" 2>/dev/null || echo "0")
     
-    if [ "$DOC_COUNT" -gt 300000 ]; then
+    if [ "$DOC_COUNT" -gt 290000 ]; then
         echo "📊 Documents indexed: $(printf "%'d" $DOC_COUNT) ✅"
     elif [ "$DOC_COUNT" -gt 0 ]; then
-        echo "⚠️  Only $DOC_COUNT documents indexed (expected >300,000)"
+        echo "⚠️  Only $DOC_COUNT documents indexed (expected >290,000)"
         echo "   Run indexing script: cd /app/scripts && python3 index_to_meilisearch.py"
     else
         echo "📋 No documents indexed yet"

@@ -22,20 +22,27 @@ services:
       - MEILI_HTTP_ADDR=${MEILI_HTTP_ADDR:-http://localhost:7700}
       - MEILI_EXPERIMENTAL_REDUCE_INDEXING_MEMORY_USAGE=true
       - RATE_LIMIT_REQUESTS=${RATE_LIMIT_REQUESTS:-60}
+      - ALLOWED_HOSTS=${ALLOWED_HOSTS:-xdocs.dev,www.xdocs.dev}
       - PYTHONUNBUFFERED=1
       - DOCUMENTATION_PATH=/data/documentation
       - MEILISEARCH_PATH=/data/meilisearch
     volumes:
-      # Named volumes for persistence
-      - meilisearch:/data/meilisearch
+      # Named volumes for persistence.
+      # meilisearch_v149: fresh volume for the v1.49 engine — a v1.49 binary
+      # cannot open the old v1.33 database. First deploy triggers a full
+      # reindex (~2h); the old 'meilisearch' volume is kept for rollback.
+      - meilisearch_v149:/data/meilisearch
       - logs:/data/logs
       # Documentation and hashes come from the image (no volumes)
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:7700/health"]
+      # Check the MCP app with the public hostname (not Meilisearch on :7700)
+      # so app-level failures surface as unhealthy. $$ defers expansion to the
+      # container shell, which has ALLOWED_HOSTS/HTTP_PORT in its environment.
+      test: ["CMD-SHELL", "curl -f -H \"Host: $${ALLOWED_HOSTS%%,*}\" \"http://localhost:$${HTTP_PORT:-8000}/health\""]
       interval: 30s
       timeout: 10s
       retries: 3
-      start_period: 60s
+      start_period: 120s
     logging:
       driver: "json-file"
       options:
@@ -48,7 +55,7 @@ services:
           cpus: '3.0'  # Max 3 cores, keeps 1 free for SSH/system
 
 volumes:
-  meilisearch:
+  meilisearch_v149:
     driver: local
   logs:
     driver: local

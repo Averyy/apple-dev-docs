@@ -51,15 +51,26 @@ LABEL maintainer="averyy"
 # RUN useradd -m -u 1000 -s /bin/bash mcpuser
 # USER mcpuser
 
-# Install runtime dependencies, timezone data, and Meilisearch
+# Install runtime dependencies, timezone data, and Meilisearch.
+# TARGETARCH (set by buildx) picks the matching release asset so local arm64
+# builds run natively (the amd64 release binary segfaults under QEMU
+# emulation); CI builds linux/amd64 for production. The trailing --version
+# call makes a broken binary fail the build instead of the container start.
+ARG TARGETARCH
 RUN apt-get update && apt-get install -y \
     supervisor \
     curl \
     tzdata \
     wget \
     && rm -rf /var/lib/apt/lists/* \
-    && wget -qO /usr/bin/meilisearch https://github.com/meilisearch/meilisearch/releases/download/v1.33.0/meilisearch-linux-amd64 \
-    && chmod +x /usr/bin/meilisearch
+    && case "$TARGETARCH" in \
+         arm64) MEILI_ARCH=aarch64; MEILI_SHA256=84028a6cd8874ffb539e3309dbe04028781ea6e9c74b36cc136c6fdf53efa861 ;; \
+         *) MEILI_ARCH=amd64; MEILI_SHA256=4b9733aedbfa9a6dc0c2b07e38a58369f713a3603a27f409e6cb40081a180e26 ;; \
+       esac \
+    && wget -qO /usr/bin/meilisearch "https://github.com/meilisearch/meilisearch/releases/download/v1.49.0/meilisearch-linux-${MEILI_ARCH}" \
+    && echo "${MEILI_SHA256}  /usr/bin/meilisearch" | sha256sum -c - \
+    && chmod +x /usr/bin/meilisearch \
+    && /usr/bin/meilisearch --version
 
 # Copy Python dependencies from builder
 COPY --from=builder /root/.local /root/.local
@@ -104,6 +115,8 @@ ENV MEILI_HTTP_ADDR=http://localhost:7700
 ENV MEILI_DB_PATH=/data/meilisearch
 # Rate limiting (requests per minute)
 ENV RATE_LIMIT_REQUESTS=60
+# Public hostnames accepted by fastmcp's Host header guard (localhost always allowed)
+ENV ALLOWED_HOSTS=xdocs.dev,www.xdocs.dev
 # Default timezone to US Eastern (EST/EDT)
 ENV TZ=America/New_York
 # Build timestamps for health endpoint
@@ -113,9 +126,12 @@ ENV DOCS_UPDATED=${DOCS_UPDATED}
 # Expose HTTP port for native MCP server
 EXPOSE 8000
 
-# Health check for Meilisearch
+# Health check against the MCP app itself, using the public hostname so
+# app-level failures (e.g. Host header rejection) surface as unhealthy.
+# The app returns 503 while the index is below serving threshold, so the
+# container honestly reports unhealthy during an initial full reindex.
 HEALTHCHECK --interval=30s --timeout=10s --start-period=120s --retries=3 \
-    CMD curl -f http://localhost:7700/health || exit 1
+    CMD curl -f -H "Host: ${ALLOWED_HOSTS%%,*}" "http://localhost:${HTTP_PORT:-8000}/health" || exit 1
 
 # Use startup script
 ENTRYPOINT ["/app/startup.sh"]
