@@ -61,7 +61,7 @@ GitHub Actions deploys via `docker compose down && docker compose up -d`, which 
 1. Container is destroyed mid-indexing
 2. New container starts with low doc count
 3. `startup_check.py` sees <90% of expected docs (needs ~290K to skip rebuild)
-4. Full rebuild triggers (~2 hours for 322K docs)
+4. Full rebuild triggers (~15-20 min on Meilisearch v1.49; was ~2h on v1.33)
 
 Once index completes (322K+ docs), subsequent deploys will be fast (incremental updates only).
 
@@ -138,7 +138,7 @@ uv pip install -r requirements.txt
 - **Scraper**: Uses Apple's JSON API (not HTML)
 - **Search**: Meilisearch (<3ms latency; engine version pinned in `mcp-server/Dockerfile`, Python client pinned in both requirements files — keep them matched)
 - **MCP Server**: FastMCP with Streamable HTTP transport
-- **Indexing**: ~2 hours for 322K+ documents (streaming batches; Meilisearch v1.49 measured much faster locally)
+- **Indexing**: ~15-20 minutes for 322K+ documents on Meilisearch v1.49 (measured in production 2026-07-07; was ~2 hours on v1.33)
 
 ## Core Commands
 

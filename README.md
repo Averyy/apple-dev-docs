@@ -136,7 +136,7 @@ cd mcp-server
 docker compose up -d
 
 # Server available at http://localhost:8000/mcp
-# First run indexes ~322K docs (up to ~2 hours)
+# First run indexes ~322K docs (~15-20 minutes)
 ```
 
 ### Local Development
@@ -151,7 +151,7 @@ docker run -d -p 7700:7700 \
   -v $(pwd)/meilisearch:/meili_data \
   getmeili/meilisearch:v1.49
 
-# Index documents (~2 hours)
+# Index documents (~15-20 minutes)
 cd scripts && python3 index_to_meilisearch.py
 
 # Run server
